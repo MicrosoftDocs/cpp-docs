@@ -1,16 +1,10 @@
 ---
-title: "Control Containment Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Control Containment Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.controls.containment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["control containment classes"]
 ms.assetid: e0812aee-c078-4ced-b967-247976552b9a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Control Containment Classes
 

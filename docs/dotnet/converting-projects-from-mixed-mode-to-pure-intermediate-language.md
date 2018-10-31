@@ -1,15 +1,8 @@
 ---
-title: "Converting Projects from Mixed Mode to Pure Intermediate Language | Microsoft Docs"
-ms.custom: ""
+title: "Converting Projects from Mixed Mode to Pure Intermediate Language"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["intermediate language, mixed-mode applications", "mixed-mode applications", "mixed-mode applications, intermediate language", "projects [C++], converting to intermediate language"]
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Converting projects from mixed mode to pure intermediate language
 

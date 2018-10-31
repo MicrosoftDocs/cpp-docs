@@ -1,16 +1,9 @@
 ---
-title: "nothrow_t Structure | Microsoft Docs"
-ms.custom: ""
+title: "nothrow_t Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["nothrow_t"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nothrow_t class"]
 ms.assetid: dc7d5d42-ed5a-4919-88fe-bbad519b7a1d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # nothrow_t Structure
 

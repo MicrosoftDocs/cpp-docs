@@ -1,16 +1,9 @@
 ---
-title: "is_base_of Class | Microsoft Docs"
-ms.custom: ""
+title: "is_base_of Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_base_of"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_base_of class", "is_base_of"]
 ms.assetid: 436f6213-1d4c-4ffc-a588-fc7c4887dd86
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_base_of Class
 

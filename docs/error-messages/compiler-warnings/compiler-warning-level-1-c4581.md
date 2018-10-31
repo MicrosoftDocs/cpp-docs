@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4581 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4581"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4581"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4581"]
 ms.assetid: 598bcd87-257d-4eb3-94e4-15bb31aadc99
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4581
 

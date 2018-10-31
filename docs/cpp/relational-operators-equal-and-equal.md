@@ -1,16 +1,9 @@
 ---
-title: "Relational Operators: &lt;, &gt;, &lt;=, and &gt;= | Microsoft Docs"
-ms.custom: ""
+title: "Relational Operators: &lt;, &gt;, &lt;=, and &gt;="
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["<", ">"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["> operator", "less than operator", "relational operators [C++], syntax", ">= operator", "greater than or equal to operators [C++]", "greater than operators [C++]", "< operator", "less than or equal to operator", "<= operator"]
 ms.assetid: d346b53d-f14d-4962-984f-89d39a17ca0f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Relational Operators: &lt;, &gt;, &lt;=, and &gt;=
 

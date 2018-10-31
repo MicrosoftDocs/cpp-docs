@@ -1,16 +1,9 @@
 ---
-title: "Window, Dialog, and Control Classes | Microsoft Docs"
-ms.custom: ""
+title: "Window, Dialog, and Control Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.mfc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["windows [MFC], dialog and control classes"]
 ms.assetid: b3610da6-9644-49b7-adbf-0e04f0d6d2b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Window, Dialog, and Control Classes
 

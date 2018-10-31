@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2545 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2545"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2545"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2545"]
 ms.assetid: 51598eb9-0c57-4306-a0cd-3862980f3672
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2545
 

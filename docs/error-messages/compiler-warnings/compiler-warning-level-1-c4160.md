@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4160 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4160"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4160"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4160"]
 ms.assetid: a9610cb7-cac4-4a74-8b4e-049030ebb92b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4160
 

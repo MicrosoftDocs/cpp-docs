@@ -1,16 +1,9 @@
 ---
-title: "operation_timed_out Class | Microsoft Docs"
-ms.custom: ""
+title: "operation_timed_out Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["operation_timed_out", "CONCRT/concurrency::operation_timed_out", "CONCRT/concurrency::operation_timed_out::operation_timed_out"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operation_timed_out class"]
 ms.assetid: 963efe1d-a6e0-477c-9a70-d93d8412c897
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # operation_timed_out Class
 

@@ -1,16 +1,9 @@
 ---
-title: "setlocale | Microsoft Docs"
-ms.custom: ""
+title: "setlocale"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["setlocale_CPP", "vc-pragma.setlocale"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, setlocale", "setlocale pragma"]
 ms.assetid: e60b43d9-fbdf-4c4e-ac85-805523a13b86
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # setlocale
 

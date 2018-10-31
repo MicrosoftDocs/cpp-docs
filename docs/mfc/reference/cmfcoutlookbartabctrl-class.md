@@ -1,16 +1,9 @@
 ---
-title: "CMFCOutlookBarTabCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCOutlookBarTabCtrl Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCOutlookBarTabCtrl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::AddControl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::CanShowFewerPageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::CanShowMorePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::Create", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableAnimation", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableInPlaceEdit", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableScrollButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::GetBorderSize", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::GetVisiblePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::IsAnimation", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::IsMode2003", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowFewerPageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowMorePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowOptions", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetActiveTab", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetBorderSize", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetPageButtonTextAlign", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetToolbarImageList", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetVisiblePageButtons"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCOutlookBarTabCtrl [MFC], AddControl", "CMFCOutlookBarTabCtrl [MFC], CanShowFewerPageButtons", "CMFCOutlookBarTabCtrl [MFC], CanShowMorePageButtons", "CMFCOutlookBarTabCtrl [MFC], Create", "CMFCOutlookBarTabCtrl [MFC], EnableAnimation", "CMFCOutlookBarTabCtrl [MFC], EnableInPlaceEdit", "CMFCOutlookBarTabCtrl [MFC], EnableScrollButtons", "CMFCOutlookBarTabCtrl [MFC], GetBorderSize", "CMFCOutlookBarTabCtrl [MFC], GetVisiblePageButtons", "CMFCOutlookBarTabCtrl [MFC], IsAnimation", "CMFCOutlookBarTabCtrl [MFC], IsMode2003", "CMFCOutlookBarTabCtrl [MFC], OnShowFewerPageButtons", "CMFCOutlookBarTabCtrl [MFC], OnShowMorePageButtons", "CMFCOutlookBarTabCtrl [MFC], OnShowOptions", "CMFCOutlookBarTabCtrl [MFC], SetActiveTab", "CMFCOutlookBarTabCtrl [MFC], SetBorderSize", "CMFCOutlookBarTabCtrl [MFC], SetPageButtonTextAlign", "CMFCOutlookBarTabCtrl [MFC], SetToolbarImageList", "CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons"]
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBarTabCtrl Class
 

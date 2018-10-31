@@ -1,16 +1,9 @@
 ---
-title: "_bstr_t::_bstr_t | Microsoft Docs"
-ms.custom: ""
+title: "_bstr_t::_bstr_t"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::_bstr_t"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BSTR object", "_bstr_t method [C++]", "_bstr_t class"]
 ms.assetid: 116d994e-5a72-4351-afbe-866c80b4c165
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _bstr_t::_bstr_t
 

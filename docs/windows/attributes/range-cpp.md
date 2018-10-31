@@ -1,16 +1,9 @@
 ---
-title: "range  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "range  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.range"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["range attribute"]
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # range (C++)
 

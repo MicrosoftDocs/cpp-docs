@@ -1,16 +1,9 @@
 ---
-title: "User Interface Features, MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "User Interface Features, MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.ui"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard, user interface features"]
 ms.assetid: 59e7b829-a665-42eb-be23-3f2a36eb2dad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # User Interface Features, MFC Application Wizard
 

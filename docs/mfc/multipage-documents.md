@@ -1,15 +1,8 @@
 ---
-title: "Multipage Documents | Microsoft Docs"
-ms.custom: ""
+title: "Multipage Documents"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pagination [MFC]", "overriding [MFC], View class functions for printing", "OnPrepareDC method [MFC]", "CPrintInfo structure [MFC], multipage documents", "OnEndPrinting method [MFC]", "protocols [MFC], printing protocol", "document pages vs. printer pages [MFC]", "printer mode [MFC]", "printing [MFC], multipage documents", "printers [MFC], printer mode", "documents [MFC], printing", "OnPreparePrinting method [MFC]", "OnPrint method [MFC]", "DoPreparePrinting method and pagination [MFC]", "OnDraw method [MFC], printing", "pagination [MFC], printing multipage documents", "printing [MFC], protocol", "pages [MFC], printing", "OnBeginPrinting method [MFC]", "multipage documents [MFC]", "printing [MFC], pagination", "documents [MFC], paginating"]
 ms.assetid: 69626b86-73ac-4b74-b126-9955034835ef
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multipage Documents
 

@@ -1,14 +1,7 @@
 ---
-title: "Example Program | Microsoft Docs"
-ms.custom: ""
+title: "Example Program"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: fc22ef82-9caa-425f-b201-2891bc123d1f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Example Program
 

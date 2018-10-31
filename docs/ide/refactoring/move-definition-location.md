@@ -1,13 +1,7 @@
 ---
-title: "Move Definition Location | Microsoft Docs"
-ms.custom: ""
+title: "Move Definition Location"
 ms.date: "11/16/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Move Definition Location

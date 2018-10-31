@@ -1,15 +1,8 @@
 ---
-title: "Compiler Command-Line Syntax | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Command-Line Syntax"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["syntax, CL compiler command line", "cl.exe compiler, command-line syntax"]
 ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Command-Line Syntax
 

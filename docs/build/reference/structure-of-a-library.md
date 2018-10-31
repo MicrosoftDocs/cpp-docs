@@ -1,15 +1,8 @@
 ---
-title: "Structure of a Library | Microsoft Docs"
-ms.custom: ""
+title: "Structure of a Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["libraries, structure"]
 ms.assetid: a5fda8e8-4a1b-4499-9095-0df935262ce4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Structure of a Library
 

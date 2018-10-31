@@ -1,15 +1,8 @@
 ---
-title: "Using Contained Windows | Microsoft Docs"
-ms.custom: ""
+title: "Using Contained Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, windows", "windows [C++], ATL", "contained windows in ATL"]
 ms.assetid: 7b3d79e5-b569-413f-9b98-df4f14efbe2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Contained Windows
 

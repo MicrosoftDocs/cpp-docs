@@ -1,15 +1,8 @@
 ---
-title: "Activation: Verbs | Microsoft Docs"
-ms.custom: ""
+title: "Activation: Verbs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["verbs [MFC]", "OLE [MFC], activation", "edit verb [MFC]", "activation [MFC], verbs", "OLE [MFC], editing", "Primary verb [MFC]", "OLE activation {MFC]"]
 ms.assetid: eb56ff23-1de8-43ad-abeb-dc7346ba7b70
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Activation: Verbs
 

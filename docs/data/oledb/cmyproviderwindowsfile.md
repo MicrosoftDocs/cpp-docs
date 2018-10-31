@@ -1,16 +1,9 @@
 ---
-title: "CCustomWindowsFile | Microsoft Docs"
-ms.custom: ""
+title: "CCustomWindowsFile"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["cmyproviderwindowsfile", "ccustomwindowsfile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMyProviderWindowsFile class", "OLE DB providers, wizard-generated files", "CCustomWindowsFile class"]
 ms.assetid: 0e9e72ac-1e1e-445f-a7ac-690c20031f9d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCustomWindowsFile
 

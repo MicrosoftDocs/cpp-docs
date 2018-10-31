@@ -1,15 +1,8 @@
 ---
-title: "SQL | Microsoft Docs"
-ms.custom: ""
+title: "SQL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["database classes [C++], SQL statements", "SQL [C++]", "SQL [C++], ODBC", "ODBC [C++], SQL implementation"]
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # SQL
 

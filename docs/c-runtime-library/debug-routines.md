@@ -1,16 +1,9 @@
 ---
-title: "Debug routines | Microsoft Docs"
-ms.custom: ""
+title: "Debug routines"
 ms.date: "04/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["c.debug"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["debugging [CRT], using macros", "macros, debugging with", "debug routines", "debug macros", "debugging [CRT], runtime routines"]
 ms.assetid: cb4d2664-10f3-42f7-a516-595558075471
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Debug routines
 

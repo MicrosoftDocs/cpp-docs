@@ -1,15 +1,8 @@
 ---
-title: "__func__ | Microsoft Docs"
-ms.custom: ""
+title: "__func__"
 ms.date: "10/19/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__func__"]
-dev_langs: ["C++"]
 ms.assetid: a5299b8d-f0ee-4af2-91dd-8fb165e68798
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __func__
 

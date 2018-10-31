@@ -1,15 +1,8 @@
 ---
-title: "C Postfix Increment and Decrement Operators | Microsoft Docs"
-ms.custom: ""
+title: "C Postfix Increment and Decrement Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["increment operators, syntax", "scalar operators", "types [C], scalar"]
 ms.assetid: 56ba218d-65f9-405f-8684-caccc0ca33aa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Postfix Increment and Decrement Operators
 

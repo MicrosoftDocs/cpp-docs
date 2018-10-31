@@ -1,14 +1,8 @@
 ---
-title: "&lt;ostream&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;ostream&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["ostream/std::operator&lt;&lt;"]
-dev_langs: ["C++"]
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;ostream&gt; operators
 

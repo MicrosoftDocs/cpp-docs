@@ -1,16 +1,9 @@
 ---
-title: "collate_byname Class | Microsoft Docs"
-ms.custom: ""
+title: "collate_byname Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["locale/std::collate_byname"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["collate_byname class"]
 ms.assetid: 3dc380df-867c-4763-b60e-ba62a8e63ca7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # collate_byname Class
 

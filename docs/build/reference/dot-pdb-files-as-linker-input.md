@@ -1,15 +1,8 @@
 ---
-title: ".Pdb Files as Linker Input | Microsoft Docs"
-ms.custom: ""
+title: ".Pdb Files as Linker Input"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: [".pdb files, as linker input", "PDB files, as linker input"]
 ms.assetid: c1071478-2369-4b03-9df8-71761cf82f3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .Pdb Files as Linker Input
 

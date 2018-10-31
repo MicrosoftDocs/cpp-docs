@@ -1,15 +1,8 @@
 ---
-title: "ATL Database Classes (OLE DB Templates) | Microsoft Docs"
-ms.custom: ""
+title: "ATL Database Classes (OLE DB Templates)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB templates [C++], ATL database classes", "database classes [C++], OLE DB", "database classes [C++], ATL"]
 ms.assetid: 219766aa-e18a-405f-9e36-d7a0fdb31b2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ATL Database Classes (OLE DB Templates)
 

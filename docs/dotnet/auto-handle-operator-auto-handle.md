@@ -1,16 +1,10 @@
 ---
-title: "auto_handle::operator auto_handle | Microsoft Docs"
-ms.custom: ""
+title: "auto_handle::operator auto_handle"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr.auto_handle.operator auto_handle", "operator auto_handle", "msclr::auto_handle::operator auto_handle", "auto_handle.operator auto_handle", "auto_handle::operator auto_handle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator auto_handle"]
 ms.assetid: 2f8b35d1-2783-4d91-b6fb-eae551270fb8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::operator auto_handle
 

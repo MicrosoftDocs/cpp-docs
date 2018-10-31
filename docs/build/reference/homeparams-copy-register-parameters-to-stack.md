@@ -1,16 +1,9 @@
 ---
-title: "-homeparams (Copy Register Parameters to Stack) | Microsoft Docs"
-ms.custom: ""
+title: "/homeparams (Copy Register Parameters to Stack)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/homeparams"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/homeparams compiler option [C++]", "-homeparams compiler option [C++]"]
 ms.assetid: 51067de4-24f7-436b-b8d9-bc867a7d53aa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /homeparams (Copy Register Parameters to Stack)
 

@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Error D8027 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Error D8027"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D8027"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D8027"]
 ms.assetid: f228220f-0c7f-49a6-a6e0-1f7bd4745aa6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8027
 

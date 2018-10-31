@@ -1,14 +1,7 @@
 ---
-title: "Expression Evaluator Errors CXX0000 Through CXX0072 | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluator Errors CXX0000 Through CXX0072"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: a47a9866-7fb2-4b21-978c-2b77402c7105
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Errors CXX0000 Through CXX0072
 

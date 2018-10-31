@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4414 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4414"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4414"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4414"]
 ms.assetid: bc81d3ad-55dc-4a6b-a6f2-ec0ef38347df
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4414
 

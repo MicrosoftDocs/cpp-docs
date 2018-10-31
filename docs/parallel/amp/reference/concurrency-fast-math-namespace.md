@@ -1,15 +1,8 @@
 ---
-title: "Concurrency::fast_math Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency::fast_math Namespace"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["amp_math/Concurrency::fast_math"]
-dev_langs: ["C++"]
 ms.assetid: 54fed939-9902-49db-9f29-e98fd9821508
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency::fast_math Namespace
 

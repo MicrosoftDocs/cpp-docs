@@ -1,14 +1,7 @@
 ---
-title: "A.22   Using the default(none) Clause | Microsoft Docs"
-ms.custom: ""
+title: "A.22   Using the default(none) Clause"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: a3fa4e62-1e92-4896-ae3f-be268067d917
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.22   Using the default(none) Clause
 

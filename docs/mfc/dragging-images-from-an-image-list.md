@@ -1,15 +1,8 @@
 ---
-title: "Dragging Images from an Image List | Microsoft Docs"
-ms.custom: ""
+title: "Dragging Images from an Image List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CImageList class [MFC], dragging images from", "dragging images from image lists [MFC]", "image lists [MFC], dragging images from", "images [MFC], dragging from image lists"]
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dragging Images from an Image List
 

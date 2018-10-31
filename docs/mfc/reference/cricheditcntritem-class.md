@@ -1,16 +1,9 @@
 ---
-title: "CRichEditCntrItem Class | Microsoft Docs"
-ms.custom: ""
+title: "CRichEditCntrItem Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRichEditCntrItem", "AFXRICH/CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::SyncToRichEditObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRichEditCntrItem [MFC], CRichEditCntrItem", "CRichEditCntrItem [MFC], SyncToRichEditObject"]
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRichEditCntrItem Class
 

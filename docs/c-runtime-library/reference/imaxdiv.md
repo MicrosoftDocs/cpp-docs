@@ -1,19 +1,12 @@
 ---
-title: "imaxdiv | Microsoft Docs"
-ms.custom: ""
+title: "imaxdiv"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["imaxdiv"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["imaxdiv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["imaxdiv function"]
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # imaxdiv
 

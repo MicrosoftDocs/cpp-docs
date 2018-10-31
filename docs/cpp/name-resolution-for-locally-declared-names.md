@@ -1,14 +1,7 @@
 ---
-title: "Name Resolution for Locally Declared Names | Microsoft Docs"
-ms.custom: ""
+title: "Name Resolution for Locally Declared Names"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Name Resolution for Locally Declared Names
 

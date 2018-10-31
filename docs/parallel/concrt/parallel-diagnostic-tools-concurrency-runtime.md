@@ -1,15 +1,8 @@
 ---
-title: "Parallel Diagnostic Tools (Concurrency Runtime) | Microsoft Docs"
-ms.custom: ""
+title: "Parallel Diagnostic Tools (Concurrency Runtime)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Parallel Diagnostic Tools [Concurrency Runtime]"]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parallel Diagnostic Tools (Concurrency Runtime)
 

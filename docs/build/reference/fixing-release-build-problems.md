@@ -1,15 +1,8 @@
 ---
-title: "Fixing Release Build Problems | Microsoft Docs"
-ms.custom: ""
+title: "Fixing Release Build Problems"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["release builds, troubleshooting", "debug builds, memory overwrites", "memory, overwrites", "troubleshooting Visual C++, release builds", "troubleshooting release builds"]
 ms.assetid: a0c0818e-4c47-4fe0-a611-50d61a41bd88
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fixing Release Build Problems
 

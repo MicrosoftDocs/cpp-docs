@@ -1,14 +1,7 @@
 ---
-title: "malloc Alignment | Microsoft Docs"
-ms.custom: ""
+title: "malloc Alignment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: a8d1d1b4-5122-456f-9a64-a50e105e55a5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # malloc Alignment
 

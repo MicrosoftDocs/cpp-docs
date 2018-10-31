@@ -1,16 +1,9 @@
 ---
-title: "WM_ Messages: T - Z | Microsoft Docs"
-ms.custom: ""
+title: "WM_ Messages: T - Z"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["ON_WM_TCARD", "ON_WM_WININICHANGE", "ON_WM_VSCROLLCLIPBOARD", "ON_WM_VSCROLL", "ON_WM_WINDOWPOSCHANGED", "ON_WM_TIMECHANGE", "ON_WM_TIMER", "ON_WM_VKEYTOITEM", "ON_WM_WINDOWPOSCHANGING"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ON_WM_VSCROLLCLIPBOARD [MFC]", "ON_WM_WININICHANGE [MFC]", "ON_WM_WINDOWPOSCHANGED [MFC]", "ON_WM_TCARD [MFC]", "ON_WM_TIMECHANGE [MFC]", "ON_WM_TIMER [MFC]", "WM_ messages [MFC]", "ON_WM_WINDOWPOSCHANGING [MFC]", "ON_WM_VKEYTOITEM [MFC]", "ON_WM_VSCROLL"]
 ms.assetid: c528bb2e-ddb5-4da6-b652-432a387408b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # WM_ Messages: T - Z
 

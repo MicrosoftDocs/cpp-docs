@@ -1,16 +1,9 @@
 ---
-title: "Using abort | Microsoft Docs"
-ms.custom: ""
+title: "Using abort"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["Abort"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["abort function"]
 ms.assetid: 3ba39b78-ef74-4a8d-8dee-2d62442de174
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using abort
 

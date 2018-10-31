@@ -1,16 +1,10 @@
 ---
-title: "property  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "property  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["property_cpp", "property"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["property keyword [C++]"]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # property  (C++/CLI and C++/CX)
 

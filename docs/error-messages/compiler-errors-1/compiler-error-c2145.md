@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2145 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2145"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2145"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2145"]
 ms.assetid: 158e5809-8adb-4195-8ca5-684501defbc8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2145
 

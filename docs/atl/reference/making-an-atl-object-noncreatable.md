@@ -1,16 +1,9 @@
 ---
-title: "Making an ATL Object Noncreatable | Microsoft Docs"
-ms.custom: ""
+title: "Making an ATL Object Noncreatable"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.ATL.objects"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["noncreatable ATL objects", "ATL projects, noncreatable objects"]
 ms.assetid: 80d0bca2-dea0-4801-9a85-6243124437f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Making an ATL Object Noncreatable
 

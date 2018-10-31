@@ -1,16 +1,9 @@
 ---
-title: "CRBMap Class | Microsoft Docs"
-ms.custom: ""
+title: "CRBMap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CRBMap", "ATLCOLL/ATL::CRBMap", "ATLCOLL/ATL::CRBMap::CRBMap", "ATLCOLL/ATL::CRBMap::Lookup", "ATLCOLL/ATL::CRBMap::RemoveKey", "ATLCOLL/ATL::CRBMap::SetAt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRBMap class"]
 ms.assetid: 658e94dc-e835-4356-aed1-1513e1f66969
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRBMap Class
 

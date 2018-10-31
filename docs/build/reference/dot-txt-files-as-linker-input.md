@@ -1,15 +1,8 @@
 ---
-title: ".Txt Files as Linker Input | Microsoft Docs"
-ms.custom: ""
+title: ".Txt Files as Linker Input"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: [".txt files, linker input", "text files, linker input", "txt files, linker input"]
 ms.assetid: 220b5a59-8b78-43f6-a8c3-f3134ccddf9e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .Txt Files as Linker Input
 

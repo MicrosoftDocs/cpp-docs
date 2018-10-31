@@ -1,15 +1,8 @@
 ---
-title: "ATL Macros | Microsoft Docs"
-ms.custom: ""
+title: "ATL Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, macros", "macros, ATL"]
 ms.assetid: 788bd803-e7dc-4dc5-9e8d-31649471415b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Macros
 

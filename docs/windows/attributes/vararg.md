@@ -1,16 +1,9 @@
 ---
-title: "vararg (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "vararg (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.vararg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["vararg attribute"]
 ms.assetid: 20fc3244-18e9-411c-990e-d5b4fa29a570
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # vararg
 

@@ -1,16 +1,9 @@
 ---
-title: "User Records | Microsoft Docs"
-ms.custom: ""
+title: "User Records"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["COLUMN_ENTRY_MAP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets [C++], accessors", "COLUMN_ENTRY macro", "COLUMN_ENTRY_MAP macro", "user records, OLE DB consumer templates", "OLE DB consumer templates, user records", "CAccessor class, example", "BEGIN_ACCESSOR_MAP macro", "accessors [C++], rowsets", "accessors [C++], static", "BEGIN_ACCESSOR macro, example"]
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # User Records
 

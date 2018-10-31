@@ -1,14 +1,8 @@
 ---
-title: "/JMC (Just My Code debugging) | Microsoft Docs"
-ms.custom: "08/20/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "/JMC (Just My Code debugging)"
+ms.date: "08/20/2018"
 f1_keywords: ["/JMC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/JMC compiler option [C++]", "Just my code [C++]", "-JMC compiler option [C++]", "User code, debugging", "JMC compiler option [C++]"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /JMC (Just My Code debugging)
 

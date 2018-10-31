@@ -1,16 +1,9 @@
 ---
-title: "Supporting IDispatch and IErrorInfo | Microsoft Docs"
-ms.custom: ""
+title: "Supporting IDispatch and IErrorInfo"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["IErrorInfo", "IDispatch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ISupportErrorInfoImpl method", "IErrorInfo class suppor in ATL", "IDispatchImpl class", "IDispatch class support in ATL"]
 ms.assetid: 7db2220f-319d-4ce9-9382-d340019f14f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Supporting IDispatch and IErrorInfo
 

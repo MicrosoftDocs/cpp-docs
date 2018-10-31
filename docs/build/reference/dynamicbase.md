@@ -1,16 +1,9 @@
 ---
-title: "-DYNAMICBASE | Microsoft Docs"
-ms.custom: ""
+title: "/DYNAMICBASE"
 ms.date: "06/12/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/dynamicbase"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-DYNAMICBASE editbin option", "DYNAMICBASE editbin option", "/DYNAMICBASE editbin option"]
 ms.assetid: edb3df90-7b07-42fb-a94a-f5a4c1d325d6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DYNAMICBASE
 

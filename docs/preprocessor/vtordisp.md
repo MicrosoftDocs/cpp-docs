@@ -1,16 +1,9 @@
 ---
-title: "vtordisp | Microsoft Docs"
-ms.custom: ""
+title: "vtordisp"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.vtordisp", "vtordisp_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, vtordisp", "vtordisp pragma"]
 ms.assetid: 05b7d73c-43fa-4b62-8c8a-170a9e427391
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # vtordisp
 

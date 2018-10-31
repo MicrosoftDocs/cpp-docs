@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3005 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3005"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3005"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3005"]
 ms.assetid: 30bad565-e79f-4c3f-82cb-a74bd0baab8f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3005
 

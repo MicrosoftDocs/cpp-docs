@@ -1,15 +1,8 @@
 ---
-title: "Container Class::clear | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::clear"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["clear method"]
 ms.assetid: 725f2717-5dc2-428f-a19a-05f046aafb2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::clear
 

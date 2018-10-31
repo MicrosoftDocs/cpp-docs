@@ -1,15 +1,8 @@
 ---
-title: "Enhancing the Simple Read-Only Provider | Microsoft Docs"
-ms.custom: ""
+title: "Enhancing the Simple Read-Only Provider"
 ms.date: "10/26/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["read-only poviders [C++]", "IRowsetLocate class", "IRowsetLocate class, adding to OLE DB template providers", "simple read-only poviders [C++]"]
 ms.assetid: cba0e09f-44c1-41c1-9456-332aa13dc158
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Enhancing the Simple Read-Only Provider
 

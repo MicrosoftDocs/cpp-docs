@@ -1,14 +1,8 @@
 ---
-title: "&lt;istream&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;istream&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["istream/std::operator&gt;&gt;"]
-dev_langs: ["C++"]
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;istream&gt; operators
 

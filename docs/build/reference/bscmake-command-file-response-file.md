@@ -1,15 +1,8 @@
 ---
-title: "BSCMAKE Command File (Response File) | Microsoft Docs"
-ms.custom: ""
+title: "BSCMAKE Command File (Response File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["BSCMAKE, response file", "BSCMAKE, command file", "response files, BSCMAKE", "command files, BSCMAKE", "response files", "command files"]
 ms.assetid: abdffeea-35c7-4f2d-8c17-7d0d80bac314
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Command File (Response File)
 

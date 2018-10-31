@@ -1,16 +1,9 @@
 ---
-title: "CComSafeArrayBound Class | Microsoft Docs"
-ms.custom: ""
+title: "CComSafeArrayBound Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComSafeArrayBound", "ATLSAFE/ATL::CComSafeArrayBound", "ATLSAFE/ATL::GetCount", "ATLSAFE/ATL::GetLowerBound", "ATLSAFE/ATL::GetUpperBound", "ATLSAFE/ATL::SetCount", "ATLSAFE/ATL::SetLowerBound"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComSafeArrayBound class"]
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComSafeArrayBound Class
 

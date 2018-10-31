@@ -1,16 +1,9 @@
 ---
-title: "-FORCE (Force File Output) | Microsoft Docs"
-ms.custom: ""
+title: "/FORCE (Force File Output)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.ForceLink", "/force"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["FORCE linker option", "file output in linker", "/FORCE linker option", "-FORCE linker option"]
 ms.assetid: b1e9a218-a5eb-4e60-a4a4-65b4be15e5da
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FORCE (Force File Output)
 

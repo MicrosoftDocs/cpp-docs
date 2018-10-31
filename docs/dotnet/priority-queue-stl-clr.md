@@ -1,16 +1,10 @@
 ---
-title: "priority_queue (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "priority_queue (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["cliext::priority_queue", "cliext::priority_queue::assign", "cliext::priority_queue::const_reference", "cliext::priority_queue::container_type", "cliext::priority_queue::difference_type", "cliext::priority_queue::empty", "cliext::priority_queue::generic_container", "cliext::priority_queue::generic_value", "cliext::priority_queue::get_container", "cliext::priority_queue::operator=", "cliext::priority_queue::pop", "cliext::priority_queue::priority_queue", "cliext::priority_queue::push", "cliext::priority_queue::reference", "cliext::priority_queue::size", "cliext::priority_queue::size_type", "cliext::priority_queue::to_array", "cliext::priority_queue::top", "cliext::priority_queue::top_item", "cliext::priority_queue::value_comp", "cliext::priority_queue::value_compare", "cliext::priority_queue::value_type" ]
-dev_langs: ["C++"]
-helpviewer_keywords: ["priority_queue class [STL/CLR]", "<queue> header [STL/CLR]", "<cliext/queue> header [STL/CLR]", "assign member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]",  "empty member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "priority_queue member [STL/CLR]", "push member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "to_array member [STL/CLR]", "top member [STL/CLR]", "top_item member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]" ]
+f1_keywords: ["cliext::priority_queue", "cliext::priority_queue::assign", "cliext::priority_queue::const_reference", "cliext::priority_queue::container_type", "cliext::priority_queue::difference_type", "cliext::priority_queue::empty", "cliext::priority_queue::generic_container", "cliext::priority_queue::generic_value", "cliext::priority_queue::get_container", "cliext::priority_queue::operator=", "cliext::priority_queue::pop", "cliext::priority_queue::priority_queue", "cliext::priority_queue::push", "cliext::priority_queue::reference", "cliext::priority_queue::size", "cliext::priority_queue::size_type", "cliext::priority_queue::to_array", "cliext::priority_queue::top", "cliext::priority_queue::top_item", "cliext::priority_queue::value_comp", "cliext::priority_queue::value_compare", "cliext::priority_queue::value_type"]
+helpviewer_keywords: ["priority_queue class [STL/CLR]", "<queue> header [STL/CLR]", "<cliext/queue> header [STL/CLR]", "assign member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "priority_queue member [STL/CLR]", "push member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "to_array member [STL/CLR]", "top member [STL/CLR]", "top_item member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 4d0000d3-68ff-4c4b-8157-7060540136f5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # priority_queue (STL/CLR)
 

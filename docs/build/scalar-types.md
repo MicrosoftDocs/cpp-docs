@@ -1,14 +1,7 @@
 ---
-title: "Scalar Types | Microsoft Docs"
-ms.custom: ""
+title: "Scalar Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 07c9195e-b6c7-4083-8ef0-8a93032e4d1e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Scalar Types
 

@@ -1,16 +1,9 @@
 ---
-title: "__readeflags | Microsoft Docs"
-ms.custom: ""
+title: "__readeflags"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__readeflags"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__readeflags intrinsic"]
 ms.assetid: f9d2f4d8-c428-491f-b8de-04d0566b2b6b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __readeflags
 

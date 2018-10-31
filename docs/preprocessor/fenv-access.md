@@ -1,16 +1,9 @@
 ---
-title: "fenv_access | Microsoft Docs"
-ms.custom: ""
+title: "fenv_access"
 ms.date: "03/12/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.fenv_access", "fenv_access_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, fenv_access", "fenv_access pragma"]
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fenv_access
 Disables (**on**) or enables (**off**) optimizations that could change floating-point environment flag tests and mode changes.

@@ -1,16 +1,10 @@
 ---
-title: "MessageHandler | Microsoft Docs"
-ms.custom: ""
+title: "MessageHandler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["MessageHandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MessageHandler function"]
 ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MessageHandler
 

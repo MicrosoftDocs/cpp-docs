@@ -1,15 +1,8 @@
 ---
-title: "Method Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "Method Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["method attributes", "attributes [C++/CLI], reference topics"]
 ms.assetid: b2313352-480d-488b-8c35-6242ffd3a549
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Method Attributes
 

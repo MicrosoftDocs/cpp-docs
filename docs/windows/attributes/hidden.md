@@ -1,16 +1,9 @@
 ---
-title: "hidden (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "hidden (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.hidden"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["hidden attribute"]
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # hidden
 

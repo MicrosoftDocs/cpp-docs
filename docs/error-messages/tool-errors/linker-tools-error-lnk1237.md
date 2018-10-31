@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1237 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1237"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1237"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1237"]
 ms.assetid: 8722ffa8-096a-4bb0-85f9-f3aa0e10872a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1237
 

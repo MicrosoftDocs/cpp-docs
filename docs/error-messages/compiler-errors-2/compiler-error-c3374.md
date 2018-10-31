@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3374 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3374"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3374"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3374"]
 ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3374
 

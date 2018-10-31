@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2720 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2720"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2720"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2720"]
 ms.assetid: 9ee3aab7-711b-4f5a-b2f1-cb62b130f1ce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2720
 

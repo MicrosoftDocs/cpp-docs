@@ -1,15 +1,8 @@
 ---
-title: "Scheduler Instances | Microsoft Docs"
-ms.custom: ""
+title: "Scheduler Instances"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler instances"]
 ms.assetid: 4819365f-ef99-49cc-963e-50a2a35a8d6b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scheduler Instances
 

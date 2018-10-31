@@ -1,14 +1,7 @@
 ---
-title: "C++/CLI Tasks | Microsoft Docs"
-ms.custom: ""
+title: "C++/CLI Tasks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 5851b113-91f9-4062-9427-c0669f333636
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # C++/CLI Tasks
 

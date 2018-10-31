@@ -1,15 +1,8 @@
 ---
-title: "Adding an MFC Class from a Type Library | Microsoft Docs"
-ms.custom: ""
+title: "Adding an MFC Class from a Type Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [MFC], adding MFC", "MFC, adding classes from type libraries", "type libraries, adding MFC classes from"]
 ms.assetid: aba40476-3cfb-47af-990e-ae2e9e0d79cf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an MFC Class from a Type Library
 

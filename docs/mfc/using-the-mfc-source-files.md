@@ -1,15 +1,8 @@
 ---
-title: "Using the MFC Source Files | Microsoft Docs"
-ms.custom: ""
+title: "Using the MFC Source Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["public members", "source files", "MFC, source files", "MFC source files", "comments, MFC", "private member access", "protected member access", "source files, MFC"]
 ms.assetid: 3230e8fb-3b69-4ddf-9538-365ac7ea5e72
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using the MFC Source Files
 

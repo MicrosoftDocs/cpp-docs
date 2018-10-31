@@ -1,16 +1,9 @@
 ---
-title: "Output (Device Context) Classes | Microsoft Docs"
-ms.custom: ""
+title: "Output (Device Context) Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.output"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["device contexts [MFC], classes", "screen output classes [MFC]", "printing classes [MFC]", "window drawing classes [MFC]", "painting classes [MFC]", "output classes [MFC]"]
 ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Output (Device Context) Classes
 

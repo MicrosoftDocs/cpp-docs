@@ -1,15 +1,9 @@
 ---
-title: "C-Style Casts with -clr (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "C-Style Casts with -clr (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C-style casts and /clr"]
 ms.assetid: d2a4401a-156a-4da9-8d12-923743e26913
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # C-Style Casts with /clr (C++/CLI)
 

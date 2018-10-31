@@ -1,16 +1,9 @@
 ---
-title: "Compiler Errors C2800 Through C2899 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Errors C2800 Through C2899"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2816", "C2820", "C2822", "C2826", "C2832", "C2836", "C2837", "C2840", "C2841", "C2848", "C2851", "C2852", "C2853", "C2866", "C2880", "C2887", "C2889", "C2895", "C2899"]
 helpviewer_keywords: ["C2816", "C2820", "C2822", "C2826", "C2832", "C2836", "C2837", "C2840", "C2841", "C2848", "C2851", "C2852", "C2853", "C2866", "C2880", "C2887", "C2889", "C2895", "C2899"]
-dev_langs: ["C++"]
 ms.assetid: e5de1e92-746a-4315-a331-c5d9efb76dbb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2800 Through C2899
 

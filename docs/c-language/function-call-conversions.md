@@ -1,15 +1,8 @@
 ---
-title: "Function-Call Conversions | Microsoft Docs"
-ms.custom: ""
+title: "Function-Call Conversions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function calls, converting", "function calls, argument type conversions", "functions [C], argument conversions"]
 ms.assetid: 04ea0f81-509a-4913-8b12-0937a81babcf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function-Call Conversions
 

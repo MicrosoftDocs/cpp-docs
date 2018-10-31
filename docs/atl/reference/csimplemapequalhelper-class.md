@@ -1,16 +1,9 @@
 ---
-title: "CSimpleMapEqualHelper Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleMapEqualHelper Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleMapEqualHelper", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualKey", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleMapEqualHelper class"]
 ms.assetid: 9bb2968a-d609-405c-8272-ff3b42df6164
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleMapEqualHelper Class
 

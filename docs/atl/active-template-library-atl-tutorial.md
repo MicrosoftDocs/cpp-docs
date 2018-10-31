@@ -1,15 +1,9 @@
 ---
-title: "Active Template Library (ATL) Tutorial | Microsoft Docs"
+title: "Active Template Library (ATL) Tutorial"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, tutorials", "controls [ATL], tutorials", "ATL tutorial", "tutorials [ATL]", "ATL, tutorials"]
 ms.assetid: f921a121-09c8-4812-9317-e15b2f1471fa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Template Library (ATL) Tutorial
 

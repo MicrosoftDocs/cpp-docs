@@ -1,15 +1,8 @@
 ---
-title: "Snap-In Object Macros | Microsoft Docs"
-ms.custom: ""
+title: "Snap-In Object Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlsnap/ATL::BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP", "atlsnap/ATL::BEGIN_SNAPINTOOLBARID_MAP", "atlsnap/ATL::END_EXTENSION_SNAPIN_NODEINFO_MAP", "atlsnap/ATL::END_SNAPINTOOLBARID_MAP", "atlsnap/ATL::EXTENSION_SNAPIN_DATACLASS", "atlsnap/ATL::EXTENSION_SNAPIN_NODEINFO_ENTRY", "atlsnap/ATL::SNAPINMENUID", "atlsnap/ATL::SNAPINTOOLBARID_ENTRY"]
-dev_langs: ["C++"]
 ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Snap-In Object Macros
 

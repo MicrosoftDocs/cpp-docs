@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets in MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["WINSOCK.DLL", "sockets [MFC], programming models", "MFC, Windows Sockets", "Windows Sockets [MFC], MFC support", "Windows Sockets [MFC], programming models", "WSOCK32.DLL", "sockets [MFC], MFC"]
 ms.assetid: 1f3c476a-9c68-49fe-9a25-d22971a334d0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets in MFC
 

@@ -1,15 +1,8 @@
 ---
-title: "/Zc:twoPhase- (disable two-phase name lookup) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:twoPhase- (disable two-phase name lookup)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["twoPhase", "/Zc:twoPhase", "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["twoPhase", "disable two-phase name lookup", "/Zc:twoPhase"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:twoPhase- (disable two-phase name lookup)
 

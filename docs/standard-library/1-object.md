@@ -1,16 +1,9 @@
 ---
-title: "_1 Object | Microsoft Docs"
-ms.custom: ""
+title: "_1 Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["_1", "std::_1", "functional/std::_1"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_1 object"]
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _1 Object
 

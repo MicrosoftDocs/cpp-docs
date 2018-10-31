@@ -1,15 +1,8 @@
 ---
-title: "ATL Operators | Microsoft Docs"
-ms.custom: ""
+title: "ATL Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [ATL]"]
 ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Operators
 

@@ -1,16 +1,9 @@
 ---
-title: "CSocketFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CSocketFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSocketFile", "AFXSOCK/CSocketFile", "AFXSOCK/CSocketFile::CSocketFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSocketFile [MFC], CSocketFile"]
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSocketFile Class
 

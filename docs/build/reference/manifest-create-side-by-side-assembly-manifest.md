@@ -1,16 +1,9 @@
 ---
-title: "-MANIFEST (Create Side-by-Side Assembly Manifest) | Microsoft Docs"
-ms.custom: ""
+title: "/MANIFEST (Create Side-by-Side Assembly Manifest)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateManifest"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-MANIFEST linker option", "/MANIFEST linker option", "MANIFEST linker option"]
 ms.assetid: 98c52e1e-712c-4f49-b149-4d0a3501b600
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MANIFEST (Create Side-by-Side Assembly Manifest)
 

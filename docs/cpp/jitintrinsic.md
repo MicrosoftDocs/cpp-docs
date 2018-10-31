@@ -1,16 +1,9 @@
 ---
-title: "jitintrinsic | Microsoft Docs"
-ms.custom: ""
+title: "jitintrinsic"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["jitintrinsic", "jitintrinsic_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], jitintrinsic", "jitintrinsic __declspec modifier"]
 ms.assetid: 23dbe416-7ef6-442b-b16d-9a81aab04fa6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # jitintrinsic
 

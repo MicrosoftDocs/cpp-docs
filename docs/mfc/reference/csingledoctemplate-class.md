@@ -1,15 +1,9 @@
 ---
-title: "CSingleDocTemplate Class | Microsoft Docs"
-ms.custom: ""
+title: "CSingleDocTemplate Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSingleDocTemplate", "AFXWIN/CSingleDocTemplate", "AFXWIN/CSingleDocTemplate::CSingleDocTemplate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSingleDocTemplate [MFC], CSingleDocTemplate"]
 ms.assetid: 4f3a8212-81ee-48a0-ad22-e0ed7c36a391
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # CSingleDocTemplate Class
 

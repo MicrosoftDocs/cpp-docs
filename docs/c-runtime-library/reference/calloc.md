@@ -1,19 +1,12 @@
 ---
-title: "calloc | Microsoft Docs"
-ms.custom: ""
+title: "calloc"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["calloc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["calloc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory allocation, arrays", "calloc function"]
 ms.assetid: 17bb79a1-98cf-4096-90cb-1f9365cd6829
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # calloc
 

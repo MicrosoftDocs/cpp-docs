@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Tracking References in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Tracking References in C++/CLI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CLR types, passing by reference"]
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Tracking References in C++/CLI
 

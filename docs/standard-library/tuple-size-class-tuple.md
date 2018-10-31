@@ -1,16 +1,9 @@
 ---
-title: "tuple_size Class; | Microsoft Docs"
-ms.custom: ""
+title: "tuple_size Class;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["tuple_size", "std::tuple_size", "utility/std::tuple_size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::tuple_size"]
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # tuple_size Class;
 

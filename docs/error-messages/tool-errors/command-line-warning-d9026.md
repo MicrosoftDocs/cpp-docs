@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Warning D9026 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Warning D9026"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D9026"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D9026"]
 ms.assetid: 149fe5e3-5329-4be8-b871-49dfd423aaba
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9026
 

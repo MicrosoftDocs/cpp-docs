@@ -1,16 +1,9 @@
 ---
-title: "binder1st Class | Microsoft Docs"
-ms.custom: ""
+title: "binder1st Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::binder1st"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["binder1st class"]
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # binder1st Class
 

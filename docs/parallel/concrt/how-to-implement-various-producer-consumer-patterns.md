@@ -1,15 +1,8 @@
 ---
-title: "How to: Implement Various Producer-Consumer Patterns | Microsoft Docs"
-ms.custom: ""
+title: "How to: Implement Various Producer-Consumer Patterns"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["producer-consumer patterns, implementing [Concurrency Runtime]", "implementing producer-consumer patterns [Concurrency Runtime]"]
 ms.assetid: 75f2c7cc-5399-49ea-98eb-847fe6747169
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Implement Various Producer-Consumer Patterns
 

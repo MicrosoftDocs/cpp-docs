@@ -1,16 +1,9 @@
 ---
-title: "TOOLTIPTEXT Structure | Microsoft Docs"
-ms.custom: ""
+title: "TOOLTIPTEXT Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["TOOLTIPTEXT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TOOLTIPTEXT structure [MFC]", "tool tips [MFC], notifications"]
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TOOLTIPTEXT Structure
 

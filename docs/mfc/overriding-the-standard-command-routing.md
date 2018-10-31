@@ -1,15 +1,8 @@
 ---
-title: "Overriding the Standard Command Routing | Microsoft Docs"
-ms.custom: ""
+title: "Overriding the Standard Command Routing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "command routing [MFC], overriding", "command handling [MFC], routing commands", "overriding, standard command routing"]
 ms.assetid: 872b698a-7432-40c4-9008-68721e8effa5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overriding the Standard Command Routing
 

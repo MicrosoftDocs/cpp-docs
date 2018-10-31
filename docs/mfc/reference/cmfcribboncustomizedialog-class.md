@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonCustomizeDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonCustomizeDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonCustomizeDialog [MFC], CMFCRibbonCustomizeDialog"]
 ms.assetid: ce67de7f-5eaa-4c75-9b94-f290f36df073
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCustomizeDialog Class
 

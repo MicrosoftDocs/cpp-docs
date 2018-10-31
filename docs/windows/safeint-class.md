@@ -1,16 +1,10 @@
 ---
-title: "SafeInt Class | Microsoft Docs"
-ms.custom: ""
+title: "SafeInt Class"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeInt", "SafeInt::SafeInt", "SafeInt.SafeInt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SafeInt class", "SafeInt class, constructor"]
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Class
 

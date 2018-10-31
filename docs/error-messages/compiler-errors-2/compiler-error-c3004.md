@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3004 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3004"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3004"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3004"]
 ms.assetid: 819c2b57-8366-4ca7-9135-1f0c5e5b6bb6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3004
 

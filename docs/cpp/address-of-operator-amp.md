@@ -1,16 +1,9 @@
 ---
-title: "Address-of Operator: &amp; | Microsoft Docs"
-ms.custom: ""
+title: "Address-of Operator: &amp;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["&"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["address-of operator (&)", "& operator", "& operator [C++], address-of operator"]
 ms.assetid: 2828221a-15f6-4acc-87fe-25e34feebb88
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Address-of Operator: &amp;
 

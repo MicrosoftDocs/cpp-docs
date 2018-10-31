@@ -1,16 +1,10 @@
 ---
-title: "Platform::InvalidCastException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::InvalidCastException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::InvalidCastException::InvalidCastException", "VCCORLIB/Platform::InvalidCastException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::InvalidCastException"]
 ms.assetid: 0215131d-1251-4913-9561-824410e045b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::InvalidCastException Class
 

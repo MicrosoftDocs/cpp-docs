@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4503 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4503"
 ms.date: "05/14/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4503"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4503"]
 ms.assetid: 7c5a98ae-5b6d-41d8-b881-12d3ffd5e392
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4503
 

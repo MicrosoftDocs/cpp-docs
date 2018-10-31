@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2910 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2910"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2910"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2910"]
 ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2910
 

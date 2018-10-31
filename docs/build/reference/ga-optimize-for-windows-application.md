@@ -1,16 +1,9 @@
 ---
-title: "-GA (Optimize for Windows Application) | Microsoft Docs"
-ms.custom: ""
+title: "/GA (Optimize for Windows Application)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.OptimizeForWindowsApplication", "/ga"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/GA compiler option [C++]", "GA compiler option [C++]", "-GA compiler option [C++]", "Optimize for Windows compiler options"]
 ms.assetid: be97323e-15a0-4836-862c-95980b51926a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GA (Optimize for Windows Application)
 

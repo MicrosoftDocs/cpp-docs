@@ -1,16 +1,9 @@
 ---
-title: "money_get Class | Microsoft Docs"
-ms.custom: ""
+title: "money_get Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocmon/std::money_get", "xlocmon/std::money_get::char_type", "xlocmon/std::money_get::iter_type", "xlocmon/std::money_get::string_type", "xlocmon/std::money_get::do_get", "xlocmon/std::money_get::get"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::money_get [C++]", "std::money_get [C++], char_type", "std::money_get [C++], iter_type", "std::money_get [C++], string_type", "std::money_get [C++], do_get", "std::money_get [C++], get"]
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # money_get Class
 

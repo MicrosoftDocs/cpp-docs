@@ -1,16 +1,9 @@
 ---
-title: "_com_error::WCode | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::WCode"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::WCode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WCode method [C++]"]
 ms.assetid: f3b21852-f8ea-4e43-bff1-11c2d35454c4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::WCode
 

@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Adding Stock Methods | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Adding Stock Methods"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], stock methods", "MFC ActiveX controls [MFC], methods", "DoClick method [MFC]"]
 ms.assetid: bc4fad78-cabd-4cc0-a798-464b1a682f0b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Methods
 

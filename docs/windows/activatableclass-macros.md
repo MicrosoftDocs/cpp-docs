@@ -1,16 +1,10 @@
 ---
-title: "ActivatableClass Macros | Microsoft Docs"
-ms.custom: ""
+title: "ActivatableClass Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["ActivatableClass", "ActivatableClassWithFactory", "ActivatableClassWithFactoryEx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActivatableClassWithFactory", "ActivatableClass", "ActivatableClassWithFactoryEx"]
 ms.assetid: 9bd64709-ec2c-4678-8c96-ea5982622bdd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivatableClass Macros
 

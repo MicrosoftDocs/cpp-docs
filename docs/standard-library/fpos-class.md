@@ -1,16 +1,9 @@
 ---
-title: "fpos Class | Microsoft Docs"
-ms.custom: ""
+title: "fpos Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["iosfwd/std::fpos", "iosfwd/std::fpos::seekpos", "iosfwd/std::fpos::state", "iosfwd/std::fpos::operator streamoff"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::fpos [C++]", "std::fpos [C++], seekpos", "std::fpos [C++], state"]
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fpos Class
 

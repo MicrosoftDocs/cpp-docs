@@ -1,16 +1,9 @@
 ---
-title: "IDispEventImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDispEventImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IDispEventImpl", "ATLCOM/ATL::IDispEventImpl", "ATLCOM/ATL::IDispEventImpl::IDispEventImpl", "ATLCOM/ATL::IDispEventImpl::GetFuncInfoFromId", "ATLCOM/ATL::IDispEventImpl::GetIDsOfNames", "ATLCOM/ATL::IDispEventImpl::GetTypeInfo", "ATLCOM/ATL::IDispEventImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispEventImpl::GetUserDefinedType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDispEventImpl class"]
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IDispEventImpl Class
 

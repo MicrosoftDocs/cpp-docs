@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3073 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3073"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3073"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3073"]
 ms.assetid: b24b9b8b-f9fb-4c3c-a1a0-97fad2081bfc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3073
 

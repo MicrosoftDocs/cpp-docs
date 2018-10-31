@@ -1,16 +1,9 @@
 ---
-title: "LoadLibrary and AfxLoadLibrary | Microsoft Docs"
-ms.custom: ""
+title: "LoadLibrary and AfxLoadLibrary"
 ms.date: "05/24/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["LoadLibrary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DLLs [C++], AfxLoadLibrary", "DLLs [C++], LoadLibrary", "AfxLoadLibrary method", "LoadLibrary method", "explicit linking [C++]"]
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # LoadLibrary and AfxLoadLibrary
 

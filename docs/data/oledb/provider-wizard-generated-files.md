@@ -1,15 +1,8 @@
 ---
-title: "Provider Wizard-Generated Files | Microsoft Docs"
-ms.custom: ""
+title: "Provider Wizard-Generated Files"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, wizard-generated files"]
 ms.assetid: 6e1ac94b-eb90-4abf-82b3-06944b947ebc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Provider Wizard-Generated Files
 

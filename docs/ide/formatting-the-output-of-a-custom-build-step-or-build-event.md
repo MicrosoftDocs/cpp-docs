@@ -1,15 +1,8 @@
 ---
-title: "Formatting the Output of a Custom Build Step or Build Event | Microsoft Docs"
-ms.custom: ""
+title: "Formatting the Output of a Custom Build Step or Build Event"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["builds [C++], build events", "custom build steps [C++], output format", "events [C++], build", "build events [C++], output format", "build steps [C++], output format", "builds [C++], custom build steps"]
 ms.assetid: 92ad3e38-24d7-4b89-90e6-5a16f5f998da
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Formatting the Output of a Custom Build Step or Build Event
 

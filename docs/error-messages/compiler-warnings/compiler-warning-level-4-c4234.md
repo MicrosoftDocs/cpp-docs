@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4234 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4234"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4234"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4234"]
 ms.assetid: f7fecd5c-8248-4fde-8446-502aedc357ca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4234
 

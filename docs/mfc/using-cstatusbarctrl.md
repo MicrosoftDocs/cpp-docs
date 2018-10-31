@@ -1,16 +1,9 @@
 ---
-title: "Using CStatusBarCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CStatusBarCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CStatusBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStatusBarCtrl class [MFC], using", "status bar controls [MFC], about status bar controls"]
 ms.assetid: 08b39f83-580d-439a-b93e-7ef9e2a5702a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CStatusBarCtrl
 

@@ -1,16 +1,9 @@
 ---
-title: "DRAWITEMSTRUCT Structure | Microsoft Docs"
-ms.custom: ""
+title: "DRAWITEMSTRUCT Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["DRAWITEMSTRUCT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DRAWITEMSTRUCT structure [MFC]"]
 ms.assetid: ba9ef1d4-aebb-45e9-b956-4b81a02e50f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DRAWITEMSTRUCT Structure
 

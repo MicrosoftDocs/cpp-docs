@@ -1,13 +1,7 @@
 ---
-title: "Change Signature | Microsoft Docs"
-ms.custom: ""
+title: "Change Signature"
 ms.date: "11/16/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Change Signature

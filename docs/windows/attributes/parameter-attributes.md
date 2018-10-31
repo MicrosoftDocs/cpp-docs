@@ -1,15 +1,8 @@
 ---
-title: "Parameter Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "Parameter Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI], parameter attributes", "parameter attributes"]
 ms.assetid: 024c2dd5-49d7-4ced-a17a-c56c1bc485b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Parameter Attributes
 

@@ -1,16 +1,9 @@
 ---
-title: "volatile (C++) | Microsoft Docs"
-ms.custom: ""
+title: "volatile (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["volatile_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["interrupt handlers and volatile keyword [C++]", "volatile keyword [C++]", "volatile objects", "objects [C++], volatile"]
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # volatile (C++)
 

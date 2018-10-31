@@ -1,16 +1,9 @@
 ---
-title: "/Zc:inline (Remove unreferenced COMDAT) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:inline (Remove unreferenced COMDAT)"
 ms.date: "03/01/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:inline", "VC.Project.VCCLCompilerTool.RemoveUnreferencedCodeData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "/Zc compiler options (C++)", "Zc compiler options (C++)", "/Zc:inline"]
 ms.assetid: a4c94224-1d73-4bea-a9d5-4fa73dc924df
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:inline (Remove unreferenced COMDAT)
 

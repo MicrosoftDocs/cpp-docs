@@ -1,14 +1,7 @@
 ---
-title: "/POGOSAFEMODE (Run PGO in thread safe mode) | Microsoft Docs"
-ms.custom: ""
+title: "/POGOSAFEMODE (Run PGO in thread safe mode)"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 f1_keywords: ["POGOSAFEMODE"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /POGOSAFEMODE (Run PGO in thread safe mode)
 

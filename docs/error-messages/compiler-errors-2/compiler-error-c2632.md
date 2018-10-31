@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2632 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2632"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2632"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2632"]
 ms.assetid: b15a6b1b-42d2-4e1b-8660-e6bfde61052d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2632
 

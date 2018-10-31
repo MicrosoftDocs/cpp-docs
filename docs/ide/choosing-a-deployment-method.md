@@ -1,15 +1,8 @@
 ---
-title: "Choosing a Deployment Method | Microsoft Docs"
-ms.custom: ""
+title: "Choosing a Deployment Method"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["redistributing DLLs", "manifests [C++]", "DLLs [C++], redistributing", "side-by-side assemblies [C++]", "dynamic linking [C++]", "application deployment [C++], methods", "deploying applications [C++], methods", "static linking [C++]", "libraries [C++], application deployment issues"]
 ms.assetid: fd8eb956-f4a0-4ffb-b401-328c73e66986
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Choosing a Deployment Method
 

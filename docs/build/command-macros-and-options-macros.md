@@ -1,15 +1,8 @@
 ---
-title: "Command Macros and Options Macros | Microsoft Docs"
-ms.custom: ""
+title: "Command Macros and Options Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["options macros", "command macros in NMAKE", "macros, options macros", "macros, command macros"]
 ms.assetid: 50dff03c-0dc3-4a8a-9a17-57e0e4ea9bac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command Macros and Options Macros
 

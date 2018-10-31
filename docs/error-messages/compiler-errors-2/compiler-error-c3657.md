@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3657 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3657"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3657"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3657"]
 ms.assetid: 89a28a18-4c17-43a1-bda6-deb52c32d203
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3657
 

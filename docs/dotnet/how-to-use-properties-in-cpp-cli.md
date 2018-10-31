@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Properties in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Properties in C++/CLI"
 ms.date: "07/21/2017"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["simple properties", "properties [C++], simple"]
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Properties in C++/CLI
 

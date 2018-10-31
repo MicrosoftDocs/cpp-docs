@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonApplicationButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonApplicationButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::SetImage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonApplicationButton [MFC], CMFCRibbonApplicationButton", "CMFCRibbonApplicationButton [MFC], SetImage"]
 ms.assetid: beb81757-fabd-4641-9130-876ba8505b78
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonApplicationButton Class
 

@@ -1,16 +1,9 @@
 ---
-title: "is_fundamental Class | Microsoft Docs"
-ms.custom: ""
+title: "is_fundamental Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_fundamental"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_fundamental class", "is_fundamental"]
 ms.assetid: b84eee84-2fb2-4611-beaf-b384074d8b6a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_fundamental Class
 

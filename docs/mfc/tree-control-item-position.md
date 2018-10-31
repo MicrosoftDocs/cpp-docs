@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Item Position | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Item Position"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTreeCtrl class [MFC], item position", "item position in tree controls", "tree controls [MFC], item position", "position, CTreeCtrl items"]
 ms.assetid: cd264344-2cf9-4d90-9ea8-c6900b6f60e7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Item Position
 

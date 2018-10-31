@@ -1,15 +1,8 @@
 ---
 title: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
-ms.custom: ""
 ms.date: "05/30/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:__cplusplus"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc:__cplusplus compiler option (C++)", "__cplusplus macro (C++)"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:__cplusplus (Enable updated __cplusplus macro)
 

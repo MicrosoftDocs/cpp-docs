@@ -1,19 +1,12 @@
 ---
-title: "_CrtIsMemoryBlock | Microsoft Docs"
-ms.custom: ""
+title: "_CrtIsMemoryBlock"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtIsMemoryBlock"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CrtlsMemoryBlock", "_CrtIsMemoryBlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_CrtIsMemoryBlock function", "CrtIsMemoryBlock function"]
 ms.assetid: f7cbbc60-3690-4da0-a07b-68fd7f250273
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtIsMemoryBlock
 

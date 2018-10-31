@@ -1,16 +1,9 @@
 ---
-title: "LIB Input Files | Microsoft Docs"
-ms.custom: ""
+title: "LIB Input Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["Lib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["input files, LIB"]
 ms.assetid: e1236f0d-cd90-446b-b900-f311f456085c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # LIB Input Files
 

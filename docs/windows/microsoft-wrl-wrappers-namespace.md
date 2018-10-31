@@ -1,16 +1,10 @@
 ---
-title: "Microsoft::WRL::Wrappers Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Microsoft::WRL::Wrappers Namespace"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Wrappers namespace"]
 ms.assetid: 36ac38c7-1fc3-42da-a879-5c68661dc9e1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Microsoft::WRL::Wrappers Namespace
 

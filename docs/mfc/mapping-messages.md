@@ -1,15 +1,8 @@
 ---
-title: "Mapping Messages | Microsoft Docs"
-ms.custom: ""
+title: "Mapping Messages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message maps [MFC], about message maps", "mappings [MFC], commands", "commands [MFC], mapping", "command mapping [MFC]", "message handling [MFC], connecting to handler functions", "commands [MFC], connecting to handler functions", "mappings [MFC], messages", "messages [MFC], mapping"]
 ms.assetid: 996f0652-0698-4b8c-b893-cdaa836d9d0f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Mapping Messages
 

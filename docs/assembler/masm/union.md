@@ -1,16 +1,9 @@
 ---
-title: "UNION | Microsoft Docs"
-ms.custom: ""
+title: "UNION"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["union"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["UNION directive"]
 ms.assetid: 52504abf-7dc1-47c5-944c-b886803a0c6a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # UNION
 

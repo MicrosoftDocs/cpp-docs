@@ -1,15 +1,8 @@
 ---
-title: "Testing for Extraction Errors | Microsoft Docs"
-ms.custom: ""
+title: "Testing for Extraction Errors"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["extraction errors"]
 ms.assetid: 6a681028-adba-4557-8f7b-f137932905f8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Testing for Extraction Errors
 

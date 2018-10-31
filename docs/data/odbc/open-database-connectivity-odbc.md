@@ -1,15 +1,8 @@
 ---
-title: "Open Database Connectivity (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Open Database Connectivity (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [C++]", "databases [C++], ODBC", "data access [C++], ODBC"]
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Open Database Connectivity (ODBC)
 

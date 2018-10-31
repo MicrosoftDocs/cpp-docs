@@ -1,16 +1,9 @@
 ---
-title: "include  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "include  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.include"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["include attribute"]
 ms.assetid: d23f8b91-fe5b-48fa-9371-8bd73af7b8e3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # include (C++)
 

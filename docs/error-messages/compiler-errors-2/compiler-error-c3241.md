@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3241 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3241"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3241"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3241"]
 ms.assetid: 2ca14879-bba0-4a23-b22a-72cfff92d6a4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3241
 

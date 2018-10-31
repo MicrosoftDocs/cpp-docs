@@ -1,15 +1,8 @@
 ---
-title: "Exchanging Data | Microsoft Docs"
-ms.custom: ""
+title: "Exchanging Data"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["property sheets [MFC], data exchange", "exchanging data with property sheets [MFC]", "DDX (dialog data exchange) [MFC], property sheets"]
 ms.assetid: 689f02d0-51a9-455b-8ffb-5b44f0aefa28
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exchanging Data
 

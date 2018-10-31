@@ -1,15 +1,8 @@
 ---
-title: "Destroying the Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Destroying the Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [MFC], deleting", "destruction, dialog box", "dialog boxes [MFC], destroying", "dialog boxes [MFC], removing", "modeless dialog boxes [MFC], destroying", "MFC dialog boxes [MFC], destroying", "modal dialog boxes [MFC], destroying"]
 ms.assetid: dabceee7-3639-4d85-bf34-73515441b3d0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Destroying the Dialog Box
 

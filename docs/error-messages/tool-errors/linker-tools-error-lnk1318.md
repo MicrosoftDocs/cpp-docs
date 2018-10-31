@@ -1,15 +1,8 @@
 ---
-title: "Linker Tools Error LNK1318 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1318"
 ms.date: "05/29/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1318"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1318"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1318
 

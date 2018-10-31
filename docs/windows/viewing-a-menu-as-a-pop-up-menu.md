@@ -1,15 +1,8 @@
 ---
-title: "Viewing a Menu as a Pop-up Menu (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Viewing a Menu as a Pop-up Menu (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pop-up menus", "menus [C++], pop-up"]
 ms.assetid: 220a16dd-a6e8-4362-af85-68fbfce2870e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Viewing a Menu as a Pop-up Menu
 

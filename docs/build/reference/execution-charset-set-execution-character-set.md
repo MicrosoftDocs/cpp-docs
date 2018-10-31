@@ -1,16 +1,9 @@
 ---
-title: "-execution-charset (Set Execution Character Set) | Microsoft Docs"
-ms.custom: ""
+title: "/execution-charset (Set Execution Character Set)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["execution-charset", "/execution-charset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/execution-charset compiler option", "-execution-charset compiler option"]
 ms.assetid: 0e02f487-2236-45bc-95f3-5760933a8f96
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /execution-charset (Set Execution Character Set)
 

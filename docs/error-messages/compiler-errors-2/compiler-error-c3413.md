@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3413 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3413"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3413"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3413"]
 ms.assetid: de6c9b05-c373-4bd8-8cb0-12c2cd2e5674
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3413
 

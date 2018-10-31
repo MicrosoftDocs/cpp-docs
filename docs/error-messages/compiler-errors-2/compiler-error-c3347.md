@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3347 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3347"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3347"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3347"]
 ms.assetid: e939ad29-0b78-4681-9618-9bdae5675cee
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3347
 

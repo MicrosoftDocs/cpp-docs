@@ -1,16 +1,9 @@
 ---
-title: "OpenMP data types | Microsoft Docs"
-ms.custom: ""
+title: "OpenMP data types"
 ms.date: "10/23/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "reference"
 f1_keywords: ["OpenMP data types", "omp_lock_t", "omp_nest_lock_t"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OpenMP data types", "omp_lock_t OpenMP data type", "omp_nest_lock_t OpenMP data type"]
 ms.assetid: cf1e1045-4d12-4d03-80b7-d5843b80ef85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OpenMP data types
 

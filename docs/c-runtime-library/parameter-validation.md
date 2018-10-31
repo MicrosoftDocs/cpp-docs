@@ -1,15 +1,8 @@
 ---
-title: "Parameter Validation | Microsoft Docs"
-ms.custom: ""
+title: "Parameter Validation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parameters, validation"]
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Parameter Validation
 

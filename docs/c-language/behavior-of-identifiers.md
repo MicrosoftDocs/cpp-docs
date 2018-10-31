@@ -1,14 +1,7 @@
 ---
-title: "Behavior of Identifiers | Microsoft Docs"
-ms.custom: ""
+title: "Behavior of Identifiers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 2ce0890f-9f04-47d8-9c77-187627576b94
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Behavior of Identifiers
 

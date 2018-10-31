@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2842 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2842"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2842"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2842"]
 ms.assetid: 8674f08d-9f50-46ad-9229-abc6b74fa0e5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2842
 

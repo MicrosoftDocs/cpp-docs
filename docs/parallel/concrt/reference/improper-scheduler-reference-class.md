@@ -1,16 +1,9 @@
 ---
-title: "improper_scheduler_reference Class | Microsoft Docs"
-ms.custom: ""
+title: "improper_scheduler_reference Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["improper_scheduler_reference", "CONCRT/concurrency::improper_scheduler_reference", "CONCRT/concurrency::improper_scheduler_reference::improper_scheduler_reference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["improper_scheduler_reference class"]
 ms.assetid: 434a7512-7796-4255-92a7-f3bf71c6a7a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # improper_scheduler_reference Class
 

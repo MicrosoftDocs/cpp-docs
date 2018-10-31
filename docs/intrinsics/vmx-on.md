@@ -1,16 +1,9 @@
 ---
-title: "__vmx_on | Microsoft Docs"
-ms.custom: ""
+title: "__vmx_on"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__vmx_on"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VMXON instruction", "__vmx_on intrinsic"]
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __vmx_on
 

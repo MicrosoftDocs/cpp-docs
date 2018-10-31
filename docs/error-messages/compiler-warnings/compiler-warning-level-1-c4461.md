@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4461 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4461"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4461"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4461"]
 ms.assetid: 104ffecc-3dd4-4cb1-89a8-81154fbe46d9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4461
 

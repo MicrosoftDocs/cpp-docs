@@ -1,15 +1,8 @@
 ---
-title: "future_error Class | Microsoft Docs"
-ms.custom: ""
+title: "future_error Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["future/std::future_error"]
-dev_langs: ["C++"]
 ms.assetid: 6071c545-ac2a-49ef-9967-07b0125da861
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # future_error Class
 

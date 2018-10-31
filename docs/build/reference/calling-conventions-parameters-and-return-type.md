@@ -1,15 +1,8 @@
 ---
-title: "Calling Conventions, Parameters, and Return Type | Microsoft Docs"
-ms.custom: ""
+title: "Calling Conventions, Parameters, and Return Type"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["calling conventions, helper functions", "helper functions, calling conventions", "helper functions, return types"]
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Calling Conventions, Parameters, and Return Type
 

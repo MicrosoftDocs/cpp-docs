@@ -1,15 +1,8 @@
 ---
-title: "Creating and Setting Guides and Margins | Microsoft Docs"
-ms.custom: ""
+title: "Creating and Setting Guides and Margins"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["guides, clearing", "guides", "Dialog Editor [C++], guides and margins", "dialog box controls [C++], placement", "controls [C++], guides and margins", "guides, creating", "guides, moving", "margins, moving"]
 ms.assetid: fafa4545-8f00-436f-b590-300e76601156
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating and Setting Guides and Margins
 

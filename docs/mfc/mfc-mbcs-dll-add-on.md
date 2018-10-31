@@ -1,14 +1,7 @@
 ---
-title: "MFC MBCS DLL Add-on | Microsoft Docs"
-ms.custom: ""
+title: "MFC MBCS DLL Add-on"
 ms.date: "1/04/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS", "MFC"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC MBCS DLL Add-on
 

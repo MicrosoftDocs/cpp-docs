@@ -1,15 +1,8 @@
 ---
-title: "Manifest Tool Configuration Properties (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Manifest Tool Configuration Properties (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCManifestTool.MergeRulesFile", "VC.Project.VCManifestTool.UseUnicodeResponseFiles", "VC.Project.VCManifestTool.SuppressStartupBanner", "VC.Project.VCManifestTool.UseFAT32Workaround", "VC.Project.VCManifestTool.VerboseOutput", "VC.Project.VCManifestTool.AssemblyIdentity"]
-dev_langs: ["C++"]
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # General, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 

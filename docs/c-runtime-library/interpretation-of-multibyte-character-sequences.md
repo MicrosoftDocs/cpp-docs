@@ -1,16 +1,9 @@
 ---
-title: "Interpretation of Multibyte-Character Sequences | Microsoft Docs"
-ms.custom: ""
+title: "Interpretation of Multibyte-Character Sequences"
 ms.date: "04/11/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["c.character.multibyte"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS [C++], locale code page"]
 ms.assetid: da9150de-70ea-4d2f-90e6-ddb9202dd80b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Interpretation of Multibyte-Character Sequences
 

@@ -1,15 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4226 | Microsoft Docs"
+title: "Compiler Warning (level 1) C4226"
 ms.date: "10/25/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4226"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4226"]
 ms.assetid: 69d6bbde-1300-4e48-8a9c-3648c80ab441
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4226
 

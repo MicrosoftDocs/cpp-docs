@@ -1,15 +1,8 @@
 ---
-title: "Use native multi-targeting in Visual Studio to build old projects | Microsoft Docs"
-ms.custom: ""
+title: "Use native multi-targeting in Visual Studio to build old projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ native multi-targeting", "upgrading Visual C++ applications, retargeting"]
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Use native multi-targeting in Visual Studio to build old projects
 

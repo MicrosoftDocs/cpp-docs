@@ -1,15 +1,8 @@
 ---
-title: "&lt;typeindex&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;typeindex&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<typeindex>"]
-dev_langs: ["C++"]
 ms.assetid: a9551137-f74b-4f02-af64-ff00214cea1f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;typeindex&gt;
 

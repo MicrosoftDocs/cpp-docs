@@ -1,15 +1,8 @@
 ---
-title: "Tools.ini and NMAKE | Microsoft Docs"
-ms.custom: ""
+title: "Tools.ini and NMAKE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, reading files", "Tools.ini and NMake"]
 ms.assetid: ebd5eab6-ddf4-430e-bf4a-1db5bb84e344
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Tools.ini and NMAKE
 

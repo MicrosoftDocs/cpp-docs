@@ -1,16 +1,9 @@
 ---
-title: "-SUBSYSTEM (Specify Subsystem) | Microsoft Docs"
-ms.custom: ""
+title: "/SUBSYSTEM (Specify Subsystem)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/subsystem", "VC.Project.VCLinkerTool.SubSystem", "VC.Project.VCLinkerTool.SubSystemVersion"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/SUBSYSTEM linker option", "SUBSYSTEM linker option", "-SUBSYSTEM linker option", "subsystem specifications"]
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SUBSYSTEM (Specify Subsystem)
 

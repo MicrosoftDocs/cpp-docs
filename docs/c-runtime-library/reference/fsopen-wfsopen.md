@@ -1,19 +1,12 @@
 ---
-title: "_fsopen, _wfsopen | Microsoft Docs"
-ms.custom: ""
+title: "_fsopen, _wfsopen"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wfsopen", "_fsopen"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wfsopen", "fsopen", "tfsopen", "_tfsopen", "_wfsopen", "_fsopen"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["opening files, streams", "fsopen function", "tfsopen function", "wfsopen function", "_fsopen function", "files [C++], opening", "_tfsopen function", "_wfsopen function", "file sharing [C++]"]
 ms.assetid: 5e4502ab-48a9-4bee-a263-ebac8d638dec
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _fsopen, _wfsopen
 

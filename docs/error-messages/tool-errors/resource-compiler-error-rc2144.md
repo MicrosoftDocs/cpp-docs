@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2144 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2144"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2144"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2144"]
 ms.assetid: 1b3ff39a-92cd-4a04-b1a3-b1fa6a805813
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2144
 

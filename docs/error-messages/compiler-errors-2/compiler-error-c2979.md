@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2979 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2979"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2979"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2979"]
 ms.assetid: 98bd9043-ec44-451e-a482-3a8e35fc7464
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2979
 

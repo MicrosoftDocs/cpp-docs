@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3641 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3641"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3641"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3641"]
 ms.assetid: e8d3613e-5e8d-46fe-a516-eb7d1de7cd21
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3641
 

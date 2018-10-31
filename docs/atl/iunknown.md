@@ -1,16 +1,10 @@
 ---
-title: "IUnknown | Microsoft Docs"
-ms.custom: ""
+title: "IUnknown"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["IUnknown"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM interfaces, base interface", "IUnknown interface"]
 ms.assetid: e6b85472-e54b-4b8c-b19f-4454d6c05a8f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IUnknown
 

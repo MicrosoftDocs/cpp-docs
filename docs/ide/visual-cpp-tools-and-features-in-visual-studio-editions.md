@@ -1,15 +1,8 @@
 ---
-title: "Visual C++ Tools and Features in Visual Studio Editions | Microsoft Docs"
-ms.custom: ""
+title: "Visual C++ Tools and Features in Visual Studio Editions"
 ms.date: "02/28/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["versions [C++]", "Visual C++, versions", "editions [C++]"]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ Tools and Features in Visual Studio Editions
 

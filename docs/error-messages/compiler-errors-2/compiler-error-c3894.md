@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3894 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3894"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3894"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3894"]
 ms.assetid: 6d5ac903-1dea-431d-8e3a-cebca4342983
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3894
 

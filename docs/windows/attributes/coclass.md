@@ -1,16 +1,9 @@
 ---
-title: "coclass (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "coclass (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.coclass"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["coclass attribute"]
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # coclass
 

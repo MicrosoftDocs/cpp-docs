@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2333 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2333"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2333"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2333"]
 ms.assetid: 2636fc1e-d3e7-4e68-8628-3c81a99ba813
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2333
 

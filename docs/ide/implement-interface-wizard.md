@@ -1,16 +1,9 @@
 ---
-title: "Implement Interface Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Implement Interface Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.impl.interface.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Implement Interface Wizard [C++]"]
 ms.assetid: 947c329e-0815-4ca7-835e-c41dfeb75f9e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implement Interface Wizard
 

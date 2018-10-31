@@ -1,16 +1,10 @@
 ---
-title: "CreateActivationFactory Function | Microsoft Docs"
-ms.custom: ""
+title: "CreateActivationFactory Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::CreateActivationFactory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CreateActivationFactory function"]
 ms.assetid: a1a53e04-6757-4faf-a4c8-ecf06e43b959
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # CreateActivationFactory Function
 

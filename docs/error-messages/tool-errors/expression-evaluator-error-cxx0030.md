@@ -1,16 +1,9 @@
 ---
-title: "Expression Evaluator Error CXX0030 | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluator Error CXX0030"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["CXX0030"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAN0030", "CXX0030"]
 ms.assetid: ada8b48c-09c8-49bf-ae23-313ed663c4fe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0030
 

@@ -1,15 +1,9 @@
 ---
-title: "Callback Function (WRL) | Microsoft Docs"
-ms.custom: ""
+title: "Callback Function (WRL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Callback"]
-dev_langs: ["C++"]
 ms.assetid: afb15d25-3230-44f7-b321-e17c54872943
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Callback Function (WRL)
 

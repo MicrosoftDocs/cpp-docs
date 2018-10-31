@@ -1,15 +1,8 @@
 ---
-title: "Transaction Object Interfaces | Microsoft Docs"
-ms.custom: ""
+title: "Transaction Object Interfaces"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interfaces, OLE DB", "transaction object interfaces", "OLE DB, interfaces", "OLE DB providers, transaction support", "OLE DB provider templates, object interfaces", "interfaces, list of"]
 ms.assetid: d2ce99ce-6f7a-4ff9-bc6e-acda3633d5c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction Object Interfaces
 

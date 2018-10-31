@@ -1,16 +1,9 @@
 ---
-title: "CMFCCustomColorsPropertyPage Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCCustomColorsPropertyPage Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCCustomColorsPropertyPage", "AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage", "AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage::Setup"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCCustomColorsPropertyPage [MFC], Setup"]
 ms.assetid: 46a45ba2-1fda-440d-8018-d4dcd44f5816
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCCustomColorsPropertyPage Class
 

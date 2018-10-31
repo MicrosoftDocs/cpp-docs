@@ -1,15 +1,8 @@
 ---
-title: "Testing the Read-Only Provider | Microsoft Docs"
-ms.custom: ""
+title: "Testing the Read-Only Provider"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, calling", "OLE DB providers, testing"]
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Testing the Read-Only Provider
 

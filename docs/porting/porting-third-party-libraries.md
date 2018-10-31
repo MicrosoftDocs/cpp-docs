@@ -1,15 +1,8 @@
 ---
-title: "Porting Third-Party Libraries | Microsoft Docs"
-ms.custom: ""
+title: "Porting Third-Party Libraries"
 ms.date: "01/10/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["3rd-party libraries", "vspkg"]
 ms.assetid: b055ed20-8a9e-45b2-ac2a-e3d94271c009
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Porting third-party libraries
 

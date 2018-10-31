@@ -1,15 +1,8 @@
 ---
-title: "Handle structured exceptions in C++ | Microsoft Docs"
-ms.custom: ""
+title: "Handle structured exceptions in C++"
 ms.date: "08/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structured exception handling [C++], vs. C++ exception handling", "structured exception handling [C++], vs. unstructured", "exceptions [C++], wrapper class", "C++ exception handling [C++], vs. structured exception handling", "wrapper classes [C++], C exception"]
 ms.assetid: f21d1944-4810-468e-b02a-9f77da4138c9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handle structured exceptions in C++
 

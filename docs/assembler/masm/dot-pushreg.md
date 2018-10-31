@@ -1,16 +1,9 @@
 ---
-title: ".PUSHREG | Microsoft Docs"
-ms.custom: ""
+title: ".PUSHREG"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".PUSHREG"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".PUSHREG directive"]
 ms.assetid: e0c83758-dfed-40ea-afe6-cb833c8d2d30
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .PUSHREG
 

@@ -1,15 +1,8 @@
 ---
-title: "Explicit Overrides (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Explicit Overrides (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["virtual functions [C++], explicit overrides", "overriding, functions", "derived classes [C++], virtual functions", "explicit virtual function overrides", "explicit override of virtual function"]
 ms.assetid: ee583234-5cda-4e90-b55e-3f9fbf079ced
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Explicit Overrides (C++)
 

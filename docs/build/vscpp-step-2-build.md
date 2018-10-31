@@ -1,16 +1,11 @@
 ---
-title: Build and run a C++ console app project | Microsoft Docs
+title: Build and run a C++ console app project
 description: "Build and run a Hello World console app in Visual C++"
 ms.custom: "mvc"
 ms.date: 12/12/2017
 ms.topic: "tutorial"
-ms.technology: ["cpp-tools"]
 ms.devlang: "C++"
-dev_langs: ["C++"]
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Build and run a C++ console app project
 

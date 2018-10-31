@@ -1,16 +1,9 @@
 ---
-title: "_WAIT_CHILD, _WAIT_GRANDCHILD | Microsoft Docs"
-ms.custom: ""
+title: "_WAIT_CHILD, _WAIT_GRANDCHILD"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_WAIT_GRANDCHILD", "WAIT_CHILD", "WAIT_GRANDCHILD", "_WAIT_CHILD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WAIT_CHILD constant", "WAIT_GRANDCHILD constant", "_WAIT_CHILD constant", "_WAIT_GRANDCHILD constant"]
 ms.assetid: 7acd96fa-d118-4339-bb00-e5afaf286945
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _WAIT_CHILD, _WAIT_GRANDCHILD
 

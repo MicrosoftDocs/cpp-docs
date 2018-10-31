@@ -1,16 +1,9 @@
 ---
-title: "__svm_vmsave | Microsoft Docs"
-ms.custom: ""
+title: "__svm_vmsave"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__svm_vmsave"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VMSAVE instruction", "__svm_vmsave intrinsic"]
 ms.assetid: 617a60bd-8514-4ba1-8066-bcf4dd481030
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __svm_vmsave
 

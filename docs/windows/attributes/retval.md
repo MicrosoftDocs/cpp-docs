@@ -1,16 +1,9 @@
 ---
-title: "retval (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "retval (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.retval"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["retval attribute"]
 ms.assetid: bfa16f08-157d-4eea-afde-1232c54b8501
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # retval
 

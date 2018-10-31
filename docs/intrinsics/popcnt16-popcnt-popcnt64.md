@@ -1,16 +1,9 @@
 ---
-title: "__popcnt16, __popcnt, __popcnt64 | Microsoft Docs"
-ms.custom: ""
+title: "__popcnt16, __popcnt, __popcnt64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__popcnt64", "__popcnt", "__popcnt16"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["popcnt instruction", "__popcnt16", "__popcnt64", "__popcnt"]
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __popcnt16, __popcnt, __popcnt64
 

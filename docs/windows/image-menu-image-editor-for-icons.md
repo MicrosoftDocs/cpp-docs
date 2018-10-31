@@ -1,16 +1,9 @@
 ---
-title: "Image Menu (C++ Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Image Menu (C++ Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.bitmap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Image menu"]
 ms.assetid: ac2b4d53-1919-4fd1-a0af-d3c085c45af2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Image Menu (C++ Image Editor for Icons)
 

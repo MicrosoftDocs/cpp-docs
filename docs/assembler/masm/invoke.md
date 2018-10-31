@@ -1,16 +1,9 @@
 ---
-title: "INVOKE | Microsoft Docs"
-ms.custom: ""
+title: "INVOKE"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["Invoke"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["INVOKE directive"]
 ms.assetid: 12d9bb40-33b9-411e-b801-45a1d675967e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # INVOKE
 

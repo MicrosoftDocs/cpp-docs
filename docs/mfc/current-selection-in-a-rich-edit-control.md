@@ -1,15 +1,8 @@
 ---
-title: "Current Selection in a Rich Edit Control | Microsoft Docs"
-ms.custom: ""
+title: "Current Selection in a Rich Edit Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["current selection in CRichEditCtrls", "CRichEditCtrl class [MFC], current selection in", "rich edit controls [MFC], current selection in", "selection, current in CRichEditCtrl"]
 ms.assetid: f6b2a2b6-5481-4ad3-9720-6dd772ea6fc8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Current Selection in a Rich Edit Control
 

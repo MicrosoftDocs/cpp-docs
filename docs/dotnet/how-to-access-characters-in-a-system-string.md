@@ -1,15 +1,9 @@
 ---
-title: "How to: Access Characters in a System::String | Microsoft Docs"
+title: "How to: Access Characters in a System::String"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["characters [C++], accessing in System::String", "examples [C++], strings", "strings [C++], accessing characters"]
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Access Characters in a System::String
 

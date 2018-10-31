@@ -1,15 +1,8 @@
 ---
-title: "Compiler COM Support | Microsoft Docs"
-ms.custom: ""
+title: "Compiler COM Support"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, COM support", "COM, compiler support"]
 ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Compiler COM Support
 

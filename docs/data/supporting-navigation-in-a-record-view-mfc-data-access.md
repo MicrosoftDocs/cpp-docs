@@ -1,15 +1,8 @@
 ---
-title: "Supporting Navigation in a Record View  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Supporting Navigation in a Record View  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["records [C++], navigating", "record views, navigation", "navigation [C++], in record view"]
 ms.assetid: 227f2a6d-87c9-4656-807a-8e246965bcce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Navigation in a Record View  (MFC Data Access)
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2767 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2767"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2767"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2767"]
 ms.assetid: e8f84178-a160-4d71-a236-07e4fcc11e96
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2767
 

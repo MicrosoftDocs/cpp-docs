@@ -1,15 +1,8 @@
 ---
-title: "A Portrait of the Document-View Architecture | Microsoft Docs"
-ms.custom: ""
+title: "A Portrait of the Document-View Architecture"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], views", "multiple views [MFC], updating from document", "document/view architecture [MFC]", "views [MFC], and user input", "documents [MFC], accessing data from view", "views [MFC], updating", "input [MFC], view class", "documents [MFC], multiple views", "document/view architecture [MFC], accessing data from view", "document/view architecture [MFC], about document/view architecture", "views [MFC], accessing document data from"]
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A Portrait of the Document/View Architecture
 

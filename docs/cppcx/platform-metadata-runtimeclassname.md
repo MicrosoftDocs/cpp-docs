@@ -1,15 +1,10 @@
 ---
-title: "Platform::Metadata::RuntimeClassName | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Metadata::RuntimeClassName"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Metadata::RuntimeClassName"]
 helpviewer_keywords: ["RuntimeClassName", "Platform::Metadata::RuntimeClassName"]
 ms.assetid: fdef8f85-ab94-4edd-ba50-ee0da9358ff6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::RuntimeClassName
 

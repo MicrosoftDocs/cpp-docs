@@ -1,14 +1,7 @@
 ---
-title: "Sample Container Typedefs | Microsoft Docs"
-ms.custom: ""
+title: "Sample Container Typedefs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 9fc02c4c-d835-4266-a391-f12b40ba43fa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Sample Container Typedefs
 

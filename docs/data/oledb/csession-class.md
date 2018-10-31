@@ -1,16 +1,9 @@
 ---
-title: "CSession Class | Microsoft Docs"
-ms.custom: ""
+title: "CSession Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CSession", "ATL::CSession", "ATL.CSession", "CSession.Abort", "CSession::Abort", "ATL.CSession.Abort", "ATL::CSession::Abort", "CSession::Close", "ATL.CSession.Close", "CSession.Close", "ATL::CSession::Close", "CSession.Commit", "ATL.CSession.Commit", "ATL::CSession::Commit", "CSession::Commit", "GetTransactionInfo", "CSession.GetTransactionInfo", "ATL.CSession.GetTransactionInfo", "CSession::GetTransactionInfo", "ATL::CSession::GetTransactionInfo", "ATL::CSession::Open", "CSession::Open", "CSession.Open", "ATL.CSession.Open", "CSession::StartTransaction", "StartTransaction", "ATL.CSession.StartTransaction", "CSession.StartTransaction", "ATL::CSession::StartTransaction"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSession class", "Abort method", "Close method", "Commit method", "GetTransactionInfo method", "Open method", "StartTransaction method"]
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSession Class
 

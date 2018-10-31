@@ -1,15 +1,8 @@
 ---
-title: "&lt;future&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;future&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<future>"]
-dev_langs: ["C++"]
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;future&gt;
 

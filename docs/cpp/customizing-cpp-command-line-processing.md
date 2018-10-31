@@ -1,16 +1,9 @@
 ---
-title: "Customizing C++ Command-Line Processing | Microsoft Docs"
-ms.custom: ""
+title: "Customizing C++ Command-Line Processing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_setenvp", "_setargv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["command line [C++], processing", "command-line processing", "startup code, customizing command-line processing", "environment, environment-processing routine", "_setargv function", "command line [C++], processing arguments", "suppressing environment processing", "_setenvp function"]
 ms.assetid: aae01cbb-892b-48b8-8e1f-34f22421f263
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Customizing C++ Command-Line Processing
 

@@ -1,16 +1,10 @@
 ---
-title: "Platform::Type Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Type Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Type::GetTypeCode", "VCCORLIB/Platform::Type::FullName"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Type Class"]
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Type Class
 

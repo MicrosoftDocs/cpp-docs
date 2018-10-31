@@ -1,15 +1,8 @@
 ---
-title: "Adding Items to the Control | Microsoft Docs"
-ms.custom: ""
+title: "Adding Items to the Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListCtrl class [MFC], adding items"]
 ms.assetid: 715994bd-340d-4ad2-9882-411654137830
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Items to the Control
 

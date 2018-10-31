@@ -1,15 +1,8 @@
 ---
-title: "Type int | Microsoft Docs"
-ms.custom: ""
+title: "Type int"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["int data type", "type int", "portability [C++], type int", "signed integers"]
 ms.assetid: 0067ce9a-281e-491a-ae63-632952981e13
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type int
 

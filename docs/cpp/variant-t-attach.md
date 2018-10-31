@@ -1,16 +1,9 @@
 ---
-title: "_variant_t::Attach | Microsoft Docs"
-ms.custom: ""
+title: "_variant_t::Attach"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_variant_t::Attach", "_variant_t.Attach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Attach method [C++]", "VARIANT object [C++], attach", "VARIANT object"]
 ms.assetid: 2f02bd08-2306-4477-aa88-d2a5dee2b859
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _variant_t::Attach
 

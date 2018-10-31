@@ -1,14 +1,7 @@
 ---
-title: "Rich Edit Control Examples | Microsoft Docs"
-ms.custom: ""
+title: "Rich Edit Control Examples"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: ac98bf45-ca74-459c-9b3e-df278a67a00f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Rich Edit Control Examples
 

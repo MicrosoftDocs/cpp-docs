@@ -1,15 +1,8 @@
 ---
-title: "Operands and Expressions | Microsoft Docs"
-ms.custom: ""
+title: "Operands and Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], syntax", "operands, definition", "operands"]
 ms.assetid: 8453b095-a017-4c70-9a64-e3b2bd1e35e5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Operands and Expressions
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3296 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3296"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3296"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3296"]
 ms.assetid: fc4c9dcd-16cf-4eee-a1ac-c43e7c29e443
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3296
 

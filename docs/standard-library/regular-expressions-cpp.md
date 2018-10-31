@@ -1,15 +1,8 @@
 ---
-title: "Regular Expressions (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Regular Expressions (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, regular expressions", "regular expressions, Visual C++", "regular expressions"]
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Regular Expressions (C++)
 

@@ -1,16 +1,9 @@
 ---
-title: "MACRO | Microsoft Docs"
-ms.custom: ""
+title: "MACRO"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["MACRO"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MACRO directive"]
 ms.assetid: 89434f7c-bc2c-4e91-8940-fe2db8785233
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MACRO
 

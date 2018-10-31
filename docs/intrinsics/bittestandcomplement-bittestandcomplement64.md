@@ -1,16 +1,9 @@
 ---
-title: "_bittestandcomplement, _bittestandcomplement64 | Microsoft Docs"
-ms.custom: ""
+title: "_bittestandcomplement, _bittestandcomplement64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_bittestandcomplement64", "_bittestandcomplement64_cpp", "_bittestandcomplement_cpp", "_bittestandcomplement"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["btc instruction", "_bittestandcomplement intrinsic", "_bittestandcomplement64 intrinsic"]
 ms.assetid: 53fa12dd-835e-4e5d-baec-a431c8678806
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _bittestandcomplement, _bittestandcomplement64
 

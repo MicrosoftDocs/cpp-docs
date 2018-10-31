@@ -1,14 +1,8 @@
 ---
-title: "Key WRL APIs by Category | Microsoft Docs"
-ms.custom: ""
+title: "Key WRL APIs by Category"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 7367bacf-6b7c-4ecd-a0ce-a662db46fc66
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Key WRL APIs by Category
 

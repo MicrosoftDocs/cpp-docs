@@ -1,15 +1,8 @@
 ---
-title: "Deploy a Visual C++ Application By Using a Setup Project | Microsoft Docs"
-ms.custom: ""
+title: "Deploy a Visual C++ Application By Using a Setup Project"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["deployment for Visual C++"]
 ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using a Setup Project
 

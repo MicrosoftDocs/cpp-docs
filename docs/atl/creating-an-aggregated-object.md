@@ -1,15 +1,8 @@
 ---
-title: "Creating an Aggregated Object | Microsoft Docs"
-ms.custom: ""
+title: "Creating an Aggregated Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregation [C++], creating aggregated objects", "aggregate objects [C++], creating"]
 ms.assetid: fc29d7aa-fd53-4276-9c2f-37379f71b179
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an Aggregated Object
 

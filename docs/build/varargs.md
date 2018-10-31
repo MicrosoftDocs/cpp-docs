@@ -1,14 +1,7 @@
 ---
-title: "Varargs | Microsoft Docs"
-ms.custom: ""
+title: "Varargs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: aac0c54b-0a2d-4a22-b1de-ee41381a3eb1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Varargs
 

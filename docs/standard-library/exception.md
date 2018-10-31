@@ -1,16 +1,9 @@
 ---
-title: "&lt;exception&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;exception&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<exception>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception header"]
 ms.assetid: 28900768-5dd7-4834-b907-5e37ab3407db
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;exception&gt;
 

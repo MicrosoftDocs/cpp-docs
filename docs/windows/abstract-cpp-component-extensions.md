@@ -1,16 +1,10 @@
 ---
-title: "abstract  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "abstract  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["abstract", "abstract_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["abstract keyword [C++]"]
 ms.assetid: cbae3408-0378-4ac8-b70d-c016b381a6d5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # abstract  (C++/CLI and C++/CX)
 

@@ -1,15 +1,8 @@
 ---
-title: "Library Support for Multithreading | Microsoft Docs"
-ms.custom: ""
+title: "Library Support for Multithreading"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], library support", "threading [C++], library support"]
 ms.assetid: 54cf10d5-b800-481b-a149-b0ee373f41a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Library Support for Multithreading
 

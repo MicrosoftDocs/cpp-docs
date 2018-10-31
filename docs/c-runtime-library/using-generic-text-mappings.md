@@ -1,16 +1,9 @@
 ---
-title: "Using Generic-Text Mappings | Microsoft Docs"
-ms.custom: ""
+title: "Using Generic-Text Mappings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_UNICODE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_TXCHAR type", "TINT type", "_TCHAR type", "TSCHAR type", "TEXT type", "TCHAR type", "TCHAR.H data types, mappings defined in", "generic-text data types", "_TINT type", "TUCHAR type", "_UNICODE constant", "TXCHAR type", "generic-text mappings", "_TSCHAR type", "T type", "mappings, generic-text", "_TUCHAR type", "MBCS data type", "_MBCS data type", "_TEXT type", "UNICODE constant", "_T type"]
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using Generic-Text Mappings
 

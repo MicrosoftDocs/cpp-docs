@@ -1,15 +1,8 @@
 ---
-title: "Recordset: How Recordsets Update Records (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: How Recordsets Update Records (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["records, updating", "ODBC recordsets, updating", "recordsets, editing records", "updating recordsets", "recordsets, updating"]
 ms.assetid: 5ceecc06-7a86-43b1-93db-a54fb1e717c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: How Recordsets Update Records (ODBC)
 

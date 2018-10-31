@@ -1,16 +1,10 @@
 ---
-title: "marshal_context Class | Microsoft Docs"
-ms.custom: ""
+title: "marshal_context Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["marshal_context"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["marshal_context class [C++]"]
 ms.assetid: 241b0cf6-4ca4-4812-aaee-d671c11dc034
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # marshal_context Class
 

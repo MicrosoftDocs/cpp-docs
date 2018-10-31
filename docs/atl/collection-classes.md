@@ -1,15 +1,9 @@
 ---
-title: "ATL Collection Classes | Microsoft Docs"
-ms.custom: ""
+title: "ATL Collection Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["collection classes"]
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Collection Classes
 

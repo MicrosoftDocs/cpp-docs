@@ -1,16 +1,9 @@
 ---
-title: "not_equal_to Struct | Microsoft Docs"
-ms.custom: ""
+title: "not_equal_to Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::not_equal_to"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["not_equal_to function", "not_equal_to struct"]
 ms.assetid: 333fce09-4f51-44e0-ba26-533bccffd485
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # not_equal_to Struct
 

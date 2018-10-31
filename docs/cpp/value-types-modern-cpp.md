@@ -1,14 +1,8 @@
 ---
-title: "Value Types (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Value Types (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f63bb62c-60da-40d5-ac14-4366608fe260
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Value Types (Modern C++)
 

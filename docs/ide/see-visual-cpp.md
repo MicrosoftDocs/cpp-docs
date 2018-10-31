@@ -1,16 +1,9 @@
 ---
-title: "&lt;see&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;see&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["<see>", "see"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<see> C++ XML tag", "see C++ XML tag"]
 ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;see&gt; (Visual C++)
 

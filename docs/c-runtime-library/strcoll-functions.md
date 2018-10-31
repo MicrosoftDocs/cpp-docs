@@ -1,18 +1,11 @@
 ---
-title: "strcoll Functions | Microsoft Docs"
-ms.custom: ""
+title: "strcoll Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll"]
 apitype: "DLLExport"
 f1_keywords: ["strcoll"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["code pages, using for string comparisons", "string comparison [C++], culture-specific", "strcoll functions", "strings [C++], comparing by code page"]
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strcoll Functions
 

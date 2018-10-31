@@ -1,18 +1,11 @@
 ---
-title: "_ismbb Routines | Microsoft Docs"
-ms.custom: ""
+title: "_ismbb Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ismbb", "ismbb"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ismbb routines", "_ismbb routines"]
 ms.assetid: d63c232e-3fe4-4844-aafd-2133846ece4b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _ismbb Routines
 

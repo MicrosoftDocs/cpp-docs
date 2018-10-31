@@ -1,15 +1,8 @@
 ---
-title: "C Identifiers | Microsoft Docs"
-ms.custom: ""
+title: "C Identifiers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["identifiers, C", "naming identifiers", "identifiers", "symbols, C identifiers", "identifiers, case sensitivity", "symbols, case sensitivity"]
 ms.assetid: d02edbbc-85a0-4118-997b-84ee6b972eb6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Identifiers
 

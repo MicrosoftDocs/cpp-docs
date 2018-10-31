@@ -1,16 +1,9 @@
 ---
-title: "Event Handler Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Event Handler Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.eventhandler.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Event Handler Wizard [C++]"]
 ms.assetid: af8e1835-94b1-4d9a-b353-c519e011d3a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Event Handler Wizard
 

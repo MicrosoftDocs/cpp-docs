@@ -1,15 +1,8 @@
 ---
-title: "Creating the Provider | Microsoft Docs"
-ms.custom: ""
+title: "Creating the Provider"
 ms.date: "10/15/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, creating"]
 ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating the Provider
 

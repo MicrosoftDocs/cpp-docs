@@ -1,15 +1,8 @@
 ---
-title: "Document Templates and the Document-View Creation Process | Microsoft Docs"
-ms.custom: ""
+title: "Document Templates and the Document-View Creation Process"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["icons, for multiple document templates", "document templates [MFC], and views", "document/view architecture [MFC], creating document/view", "single document template", "MFC, document templates", "multiple document template", "CDocTemplate class [MFC]", "templates [MFC], document templates"]
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document Templates and the Document/View Creation Process
 

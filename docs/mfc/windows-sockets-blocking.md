@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Blocking | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Blocking"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sockets [MFC], blocking mode", "Windows Sockets [MFC], Windows platforms", "Windows Sockets [MFC], blocking mode", "sockets [MFC], behavior on different Windows platforms", "blocking mode sockets"]
 ms.assetid: 10aca9b1-bfba-41a8-9c55-ea8082181e63
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Blocking
 

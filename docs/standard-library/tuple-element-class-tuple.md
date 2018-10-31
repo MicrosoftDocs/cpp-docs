@@ -1,16 +1,9 @@
 ---
-title: "tuple_element Class | Microsoft Docs"
-ms.custom: ""
+title: "tuple_element Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["utility/std::tuple_element"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::tuple_element"]
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # tuple_element Class
 

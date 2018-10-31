@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4047 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4047"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4047"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4047"]
 ms.assetid: b75ad6fb-5c93-4434-a85f-c4083051a5de
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4047
 

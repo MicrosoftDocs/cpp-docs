@@ -1,14 +1,7 @@
 ---
-title: "-INTEGRITYCHECK (Require Signature Check) | Microsoft Docs"
-ms.custom: ""
+title: "/INTEGRITYCHECK (Require Signature Check)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /INTEGRITYCHECK (Require Signature Check)
 

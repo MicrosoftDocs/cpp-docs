@@ -1,16 +1,9 @@
 ---
-title: "CReBar vs. CReBarCtrl | Microsoft Docs"
-ms.custom: ""
+title: "CReBar vs. CReBarCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CReBar", "CReBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CReBar class [MFC], vs. CReBarCtrl", "rebar controls [MFC], CReBarCtrl class [MFC]", "GetReBarCtrl class [MFC]"]
 ms.assetid: 7f9c1d7e-5d5f-4956-843c-69ed3df688d0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CReBar vs. CReBarCtrl
 

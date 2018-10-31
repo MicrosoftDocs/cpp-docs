@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4621 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4621"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4621"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4621"]
 ms.assetid: 40931bd9-cb89-497e-86f0-cec9f016c63c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4621
 

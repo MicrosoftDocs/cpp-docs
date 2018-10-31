@@ -1,16 +1,9 @@
 ---
-title: "event Class | Microsoft Docs"
-ms.custom: ""
+title: "event Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["event", "CONCRT/concurrency::event", "CONCRT/concurrency::event::reset", "CONCRT/concurrency::event::set", "CONCRT/concurrency::event::wait", "CONCRT/concurrency::event::wait_for_multiple", "CONCRT/concurrency::event::timeout_infinite"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event class"]
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # event Class
 

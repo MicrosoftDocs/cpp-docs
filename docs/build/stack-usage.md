@@ -1,14 +1,7 @@
 ---
-title: "Stack Usage | Microsoft Docs"
-ms.custom: ""
+title: "Stack Usage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 383f0072-0438-489f-8829-cca89582408c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Stack Usage
 

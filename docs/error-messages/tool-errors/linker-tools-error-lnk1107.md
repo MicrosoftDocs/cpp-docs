@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1107 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1107"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1107"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1107"]
 ms.assetid: a37a893d-5efa-4eba-8f40-6c5518b4b9d0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1107
 

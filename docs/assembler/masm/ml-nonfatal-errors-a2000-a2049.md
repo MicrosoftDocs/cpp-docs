@@ -1,14 +1,8 @@
 ---
-title: "ML Nonfatal Errors A2000-A2049 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Errors A2000-A2049"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: 1ab0e263-7138-4fa5-9702-91237e1d6df2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Errors A2000-A2049
 

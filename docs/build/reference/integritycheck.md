@@ -1,15 +1,8 @@
 ---
-title: "/INTEGRITYCHECK | Microsoft Docs"
-ms.custom: ""
+title: "/INTEGRITYCHECK"
 ms.date: "12/28/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/INTEGRITYCHECK"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-INTEGRITYCHECK editbin options", "/INTEGRITYCHECK editbin options", "INTEGRITYCHECK editbin options"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /INTEGRITYCHECK
 

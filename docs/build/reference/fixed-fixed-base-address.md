@@ -1,16 +1,9 @@
 ---
-title: "-FIXED (Fixed Base Address) | Microsoft Docs"
-ms.custom: ""
+title: "/FIXED (Fixed Base Address)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/fixed", "VC.Project.VCLinkerTool.FixedBaseAddress"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["preferred base address for loading program", "/FIXED linker option", "-FIXED linker option", "FIXED linker option"]
 ms.assetid: 929bba5e-b7d8-40ed-943e-056aa3710fc5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FIXED (Fixed Base Address)
 

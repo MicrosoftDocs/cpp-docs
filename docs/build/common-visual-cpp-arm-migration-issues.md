@@ -1,14 +1,7 @@
 ---
-title: "Common Visual C++ ARM Migration Issues | Microsoft Docs"
-ms.custom: ""
+title: "Common Visual C++ ARM Migration Issues"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 0f4c434e-0679-4331-ba0a-cc15dd435a46
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Common Visual C++ ARM Migration Issues
 

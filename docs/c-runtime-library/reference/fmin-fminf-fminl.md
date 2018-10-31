@@ -1,18 +1,12 @@
 ---
-title: "fmin, fminf, fminl | Microsoft Docs"
-ms.custom: ""
+title: "fmin, fminf, fminl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["fmin", "fminf", "fminl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fmin", "fminf", "fminl", "math/fmin", "math/fminf", "math/fminl"]
 helpviewer_keywords: ["fmin function", "fminf function", "fminl function"]
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fmin, fminf, fminl
 

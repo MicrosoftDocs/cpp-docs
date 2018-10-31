@@ -1,19 +1,12 @@
 ---
-title: "__getmainargs, __wgetmainargs | Microsoft Docs"
-ms.custom: ""
+title: "__getmainargs, __wgetmainargs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["__wgetmainargs", "__getmainargs"]
 apilocation: ["msvcr100.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__wgetmainargs", "__getmainargs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__wgetmainargs", "__getmainargs"]
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __getmainargs, __wgetmainargs
 

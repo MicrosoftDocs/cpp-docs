@@ -1,16 +1,9 @@
 ---
-title: "_CRT_DISABLE_PERFCRIT_LOCKS | Microsoft Docs"
-ms.custom: ""
+title: "_CRT_DISABLE_PERFCRIT_LOCKS"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_CRT_DISABLE_PERFCRIT_LOCKS", "CRT_DISABLE_PERFCRIT_LOCKS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRT_DISABLE_PERFCRIT_LOCKS constant", "_CRT_DISABLE_PERFCRIT_LOCKS constant"]
 ms.assetid: 36cc2d86-cdb1-4b2b-a03c-c0d3818e7c6f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CRT_DISABLE_PERFCRIT_LOCKS
 

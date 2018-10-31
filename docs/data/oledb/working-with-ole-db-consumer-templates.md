@@ -1,15 +1,8 @@
 ---
-title: "Working with OLE DB Consumer Templates | Microsoft Docs"
-ms.custom: ""
+title: "Working with OLE DB Consumer Templates"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sample applications [C++], OLE DB Templates", "OLE DB consumer templates, about consumer templates"]
 ms.assetid: 526aa897-5961-4396-85cb-c84f77113551
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Working with OLE DB Consumer Templates
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (Level 1) C4789 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (Level 1) C4789"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4789"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4789"]
 ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4789
 

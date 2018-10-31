@@ -1,16 +1,9 @@
 ---
-title: "nothrow (C++) | Microsoft Docs"
-ms.custom: ""
+title: "nothrow (C++)"
 ms.date: "01/03/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["nothrow_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], nothrow", "nothrow __declspec keyword"]
 ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # nothrow (C++)
 

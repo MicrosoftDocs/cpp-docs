@@ -1,16 +1,9 @@
 ---
-title: "Expression Evaluator Error CXX0029 | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluator Error CXX0029"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["CXX0029"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CXX0029", "CAN0029"]
 ms.assetid: 562b2132-e9cb-4591-a5bf-bc7179a7f40e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0029
 

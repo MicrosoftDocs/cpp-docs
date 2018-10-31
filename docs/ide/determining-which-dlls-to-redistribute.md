@@ -1,15 +1,8 @@
 ---
-title: "Determining Which DLLs to Redistribute | Microsoft Docs"
-ms.custom: ""
+title: "Determining Which DLLs to Redistribute"
 ms.date: "06/08/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["redistributing DLLs", "DLLs [C++], redistributing", "dependencies [C++], application deployment and", "application deployment [C++], DLL redistribution", "deploying applications [C++], DLL redistribution"]
 ms.assetid: f7a2cb42-fb48-42ab-abd2-b35e2fd5601a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Determining Which DLLs to Redistribute
 

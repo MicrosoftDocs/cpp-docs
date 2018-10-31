@@ -1,15 +1,9 @@
 ---
-title: "Compiler Error C3615 | Microsoft Docs"
+title: "Compiler Error C3615"
 ms.date: "10/24/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3615"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3615"]
 ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3615
 

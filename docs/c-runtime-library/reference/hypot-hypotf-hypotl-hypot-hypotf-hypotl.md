@@ -1,19 +1,12 @@
 ---
-title: "hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl | Microsoft Docs"
-ms.custom: ""
+title: "hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_hypotf", "hypot", "hypotf", "_hypot", "_hypotl", "hypotl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["hypotf", "hypotl", "_hypotl", "hypot", "_hypot", "_hypotf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["hypotenuse calculation", "hypot function", "hypotf function", "triangles, calculating hypotenuse", "hypotl function", "calculating hypotenuses", "_hypot function"]
 ms.assetid: 6a13887f-bd53-43fc-9d77-5b42d6e49925
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
 

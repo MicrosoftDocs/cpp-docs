@@ -1,15 +1,8 @@
 ---
-title: "constexpr lambda expressions in C++ | Microsoft Docs"
-ms.custom: ""
+title: "constexpr lambda expressions in C++"
 ms.date: "07/19/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lambda expressions [C++], constexpr"]
 ms.assetid: b56346cd-fbff-475f-aeaa-ed2010c6d6f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # constexpr lambda expressions in C++
 

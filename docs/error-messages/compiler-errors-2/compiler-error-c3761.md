@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3761 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3761"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3761"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3761"]
 ms.assetid: 0c16f093-7a78-4838-b90b-0c67ef6e9270
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3761
 

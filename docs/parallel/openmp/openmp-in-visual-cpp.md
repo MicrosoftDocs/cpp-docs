@@ -1,15 +1,8 @@
 ---
-title: "OpenMP in Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "OpenMP in Visual C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OpenMP in Visual C++", "explicit parallelization", "explicit parallelization, OpenMP in Visual C++"]
 ms.assetid: 54d8d0da-1f47-4312-9f25-5875c7dc08ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OpenMP in Visual C++
 

@@ -1,15 +1,9 @@
 ---
-title: "String  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "String  (C++/CLI and C++/CX)"
 ms.date: "10/08/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["string support with /clr", "/clr compiler option [C++], string support"]
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # String  (C++/CLI and C++/CX)
 

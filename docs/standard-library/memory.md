@@ -1,16 +1,9 @@
 ---
-title: "&lt;memory&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;memory&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["memory/std::<memory>", "<memory>", "std::<memory>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory header"]
 ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;memory&gt;
 

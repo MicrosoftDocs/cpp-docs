@@ -1,16 +1,9 @@
 ---
-title: "@ (Specify a Compiler Response File) | Microsoft Docs"
-ms.custom: ""
+title: "@ (Specify a Compiler Response File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["@"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["response files, C/C++ compiler", "@ compiler option", "cl.exe compiler, specifying response files"]
 ms.assetid: 400fffee-909d-4f60-bf76-45833e822685
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # @ (Specify a Compiler Response File)
 

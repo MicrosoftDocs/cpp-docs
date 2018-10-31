@@ -1,15 +1,8 @@
 ---
-title: "Function Template Instantiation | Microsoft Docs"
-ms.custom: ""
+title: "Function Template Instantiation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["templates, instantiation", "function templates, instantiation", "instantiation, function templates"]
 ms.assetid: f22a07c7-3ad1-465a-84f5-8737e274bd47
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function Template Instantiation
 

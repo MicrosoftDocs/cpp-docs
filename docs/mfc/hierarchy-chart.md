@@ -1,16 +1,9 @@
 ---
-title: "Hierarchy Chart | Microsoft Docs"
-ms.custom: ""
+title: "Hierarchy Chart"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["object models, MFC", "classes [MFC], MFC hierarchy", "MFC, object model"]
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Hierarchy Chart
 

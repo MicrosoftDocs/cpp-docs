@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2380 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2380"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2380"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2380"]
 ms.assetid: 717b1e6e-ddfe-4bac-a5f3-7f9a4dcb1572
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2380
 

@@ -1,16 +1,9 @@
 ---
-title: "__uuidof Operator | Microsoft Docs"
-ms.custom: ""
+title: "__uuidof Operator"
 ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__LIBID_cpp", "__uuidof_cpp", "__uuidof", "_uuidof"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__uuidof keyword [C++]", "__LIBID_ keyword [C++]"]
 ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __uuidof Operator
 

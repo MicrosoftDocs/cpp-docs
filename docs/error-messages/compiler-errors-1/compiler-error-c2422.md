@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2422 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2422"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2422"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2422"]
 ms.assetid: ef0ec302-4028-4778-b134-0b8cea4bcad9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2422
 

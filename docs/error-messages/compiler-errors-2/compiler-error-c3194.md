@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3194 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3194"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3194"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3194"]
 ms.assetid: 49d3ffc6-eff6-4b46-865b-18811692a8bb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3194
 

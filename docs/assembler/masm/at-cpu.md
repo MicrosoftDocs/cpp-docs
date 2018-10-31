@@ -1,16 +1,9 @@
 ---
-title: "@Cpu | Microsoft Docs"
-ms.custom: ""
+title: "@Cpu"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["@Cpu"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["@Cpu symbol"]
 ms.assetid: 04f9fdf6-9772-407e-9c09-c12bed29087b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # @Cpu
 

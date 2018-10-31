@@ -1,15 +1,8 @@
 ---
-title: "Expressions with Unary Operators | Microsoft Docs"
-ms.custom: ""
+title: "Expressions with Unary Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], unary operators", "unary operators [C++], expressions with", "expressions [C++], operators"]
 ms.assetid: 1217685b-b85d-4b48-9ff4-d90f56a26c1b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expressions with Unary Operators
 

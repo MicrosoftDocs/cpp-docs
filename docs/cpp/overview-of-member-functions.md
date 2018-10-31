@@ -1,15 +1,8 @@
 ---
-title: "Overview of Member Functions | Microsoft Docs"
-ms.custom: ""
+title: "Overview of Member Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["this pointer, and nonstatic member functions", "nonstatic member functions [C++]", "inline functions [C++], treating member functions as", "member functions [C++], definition in class declaration"]
 ms.assetid: 9f77a438-500e-40bb-a6c6-544678f3f4c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overview of Member Functions
 

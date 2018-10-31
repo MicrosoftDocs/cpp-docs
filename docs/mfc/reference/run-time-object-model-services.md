@@ -1,16 +1,9 @@
 ---
-title: "Run-Time Object Model Services | Microsoft Docs"
-ms.custom: ""
+title: "Run-Time Object Model Services"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["run-time object model services macros"]
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Run-Time Object Model Services
 

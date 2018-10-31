@@ -1,16 +1,7 @@
 ---
-title: "Writing and refactoring code (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Writing and refactoring code (C++)"
 ms.date: "04/30/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Writing and refactoring code (C++)
 

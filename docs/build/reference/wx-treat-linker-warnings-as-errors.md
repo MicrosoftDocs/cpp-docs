@@ -1,16 +1,9 @@
 ---
-title: "-WX (Treat Linker Warnings as Errors) | Microsoft Docs"
-ms.custom: ""
+title: "/WX (Treat Linker Warnings as Errors)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/WX"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/WX linker option", "-WX linker option", "WX linker option"]
 ms.assetid: e4ba97c7-93f7-43ae-a4bb-d866790926c9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WX (Treat Linker Warnings as Errors)
 

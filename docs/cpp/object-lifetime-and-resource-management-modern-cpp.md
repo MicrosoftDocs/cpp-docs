@@ -1,14 +1,8 @@
 ---
-title: "Object Lifetime And Resource Management (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Object Lifetime And Resource Management (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Object Lifetime And Resource Management (Modern C++)
 

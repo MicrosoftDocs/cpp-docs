@@ -1,14 +1,9 @@
 ---
-title: "How to: Create and Use weak_ptr Instances | Microsoft Docs"
+title: "How to: Create and Use weak_ptr Instances"
 ms.custom: "how-to"
 ms.date: "07/12/2018"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 8dd6909b-b070-4afa-9696-f2fc94579c65
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create and Use weak_ptr Instances
 

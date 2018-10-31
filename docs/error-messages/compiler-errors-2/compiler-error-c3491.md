@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3491 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3491"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3491"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3491"]
 ms.assetid: 7f0e71b2-46a0-4d25-bd09-6158a280f509
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3491
 

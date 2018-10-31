@@ -1,16 +1,9 @@
 ---
-title: "CMFCColorMenuButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCColorMenuButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCColorMenuButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::CMFCColorMenuButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableAutomaticButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableDocumentColors", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableOtherButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableTearOff", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetAutomaticColor", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetColor", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetColorByCmdID", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnChangeParentWnd", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::OpenColorDialog", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColor", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColorByCmdID", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColorName", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColumnsNumber", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::CopyFrom", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::CreatePopupMenu", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::IsEmptyMenuAllowed", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnDraw", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnDrawOnCustomizeList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorMenuButton [MFC], CMFCColorMenuButton", "CMFCColorMenuButton [MFC], EnableAutomaticButton", "CMFCColorMenuButton [MFC], EnableDocumentColors", "CMFCColorMenuButton [MFC], EnableOtherButton", "CMFCColorMenuButton [MFC], EnableTearOff", "CMFCColorMenuButton [MFC], GetAutomaticColor", "CMFCColorMenuButton [MFC], GetColor", "CMFCColorMenuButton [MFC], GetColorByCmdID", "CMFCColorMenuButton [MFC], OnChangeParentWnd", "CMFCColorMenuButton [MFC], OpenColorDialog", "CMFCColorMenuButton [MFC], SetColor", "CMFCColorMenuButton [MFC], SetColorByCmdID", "CMFCColorMenuButton [MFC], SetColorName", "CMFCColorMenuButton [MFC], SetColumnsNumber", "CMFCColorMenuButton [MFC], CopyFrom", "CMFCColorMenuButton [MFC], CreatePopupMenu", "CMFCColorMenuButton [MFC], IsEmptyMenuAllowed", "CMFCColorMenuButton [MFC], OnDraw", "CMFCColorMenuButton [MFC], OnDrawOnCustomizeList"]
 ms.assetid: 42685704-e994-4f7b-9553-62283c27b754
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCColorMenuButton Class
 

@@ -1,16 +1,9 @@
 ---
-title: "complex&lt;long double&gt; | Microsoft Docs"
-ms.custom: ""
+title: "complex&lt;long double&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["std::complex<long double>", "complex<long double>", "std.complex<long double>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["complex<long double> function"]
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # complex&lt;long double&gt;
 

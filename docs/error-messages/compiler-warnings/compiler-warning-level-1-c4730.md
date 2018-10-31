@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (Level 1) C4730 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (Level 1) C4730"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4730"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4730"]
 ms.assetid: 11303e3f-162b-4b19-970a-479686123a68
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4730
 

@@ -1,15 +1,8 @@
 ---
-title: "Shrinking or Stretching an Entire Image (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Shrinking or Stretching an Entire Image (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Image editor [C++], shrinking and stretching images", "images [C++], stretching", "images [C++], shrinking"]
 ms.assetid: accdef79-c77e-493f-b8e8-a5ef033a4e9e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Shrinking or Stretching an Entire Image (Image Editor for Icons)
 

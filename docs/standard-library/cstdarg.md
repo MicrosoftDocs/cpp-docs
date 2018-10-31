@@ -1,16 +1,9 @@
 ---
-title: "&lt;cstdarg&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cstdarg&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cstdarg>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cstdarg header"]
 ms.assetid: 639b4ef7-8408-4640-9343-41631f0ab663
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cstdarg&gt;
 

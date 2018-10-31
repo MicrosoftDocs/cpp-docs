@@ -1,16 +1,9 @@
 ---
-title: "TN020: ID Naming and Numbering Conventions | Microsoft Docs"
-ms.custom: ""
+title: "TN020: ID Naming and Numbering Conventions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.id"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN020", "resource identifiers, naming and numbering", "resource identifiers"]
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN020: ID Naming and Numbering Conventions
 

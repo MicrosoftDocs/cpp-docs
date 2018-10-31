@@ -1,16 +1,9 @@
 ---
-title: "IOleInPlaceObjectWindowlessImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IOleInPlaceObjectWindowlessImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IOleInPlaceObjectWindowlessImpl", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetDropTarget", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetWindow", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::OnWindowMessage", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::SetObjectRects", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::UIDeactivate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IOleInPlaceObjectWindowless, ATL implementation", "activation [C++], ATL", "IOleInPlaceObjectWindowlessImpl class", "ActiveX controls [C++], communication between container and control", "controls [ATL], windowless", "deactivating ATL"]
 ms.assetid: a2e0feb4-bc59-4adf-aab2-105457bbdbb4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IOleInPlaceObjectWindowlessImpl Class
 

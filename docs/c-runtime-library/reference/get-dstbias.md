@@ -1,19 +1,12 @@
 ---
-title: "_get_dstbias | Microsoft Docs"
-ms.custom: ""
+title: "_get_dstbias"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_get_dstbias", "__dstbias"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__dstbias", "_get_dstbias", "get_dstbias"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__dstbias", "daylight saving time offset", "get_dstbias function", "_get_dstbias function"]
 ms.assetid: e751358c-1ecc-411b-ae2c-81b2ec54ea45
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _get_dstbias
 

@@ -1,16 +1,9 @@
 ---
-title: "__sptr, __uptr | Microsoft Docs"
-ms.custom: ""
+title: "__sptr, __uptr"
 ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__uptr_cpp", "__sptr_cpp", "__uptr", "__sptr", "_uptr", "_sptr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__sptr modifier", "__uptr modifier"]
 ms.assetid: c7f5f3b2-9106-4a0b-a6de-d1588ab153ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __sptr, __uptr
 

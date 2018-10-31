@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4358 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4358"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4358"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4358"]
 ms.assetid: a9848f84-14b3-405e-81bf-ee3e91a51511
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4358
 

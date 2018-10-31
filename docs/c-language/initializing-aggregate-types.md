@@ -1,15 +1,8 @@
 ---
-title: "Initializing Aggregate Types | Microsoft Docs"
-ms.custom: ""
+title: "Initializing Aggregate Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregate types [C++]", "union keyword [C], declarations", "types [C], initializing", "union keyword [C]", "aggregates [C++], initializing"]
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializing Aggregate Types
 

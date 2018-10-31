@@ -1,16 +1,9 @@
 ---
-title: "ANSI C Compliance | Microsoft Docs"
-ms.custom: ""
+title: "ANSI C Compliance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["Ansi"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["underscores, leading", "compatibility [C++], ANSI C", "compliance with ANSI C", "conventions [C++], Microsoft extensions", "underscores", "naming conventions [C++], Microsoft library", "ANSI [C++], C standard", "Microsoft extensions naming conventions"]
 ms.assetid: 6be271bf-eecf-491a-a928-0ee2dd60e3b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ANSI C Compliance
 

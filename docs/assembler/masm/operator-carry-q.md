@@ -1,16 +1,9 @@
 ---
-title: "operator CARRY? | Microsoft Docs"
-ms.custom: ""
+title: "operator CARRY?"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["CARRY?", "operator CARRY?"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator CARRY?", "CARRY? operator"]
 ms.assetid: 5b195de7-3f66-436a-b75a-4b8d7c3c83b7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator CARRY?
 

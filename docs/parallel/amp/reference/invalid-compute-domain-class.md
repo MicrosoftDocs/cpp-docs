@@ -1,16 +1,9 @@
 ---
-title: "invalid_compute_domain Class | Microsoft Docs"
-ms.custom: ""
+title: "invalid_compute_domain Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["invalid_compute_domain", "AMPRT/invalid_compute_domain", "AMPRT/Concurrency::invalid_compute_domain::invalid_compute_domain"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_compute_domain class"]
 ms.assetid: ac7a7166-8bdb-4db1-8caf-ea129ab5117e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # invalid_compute_domain Class
 

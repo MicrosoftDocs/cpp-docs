@@ -1,16 +1,9 @@
 ---
-title: "IRowsetIdentityImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetIdentityImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IsSameRow", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow", "ATL::IRowsetIdentityImpl::IsSameRow"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetIdentityImpl class", "IsSameRow method"]
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetIdentityImpl Class
 

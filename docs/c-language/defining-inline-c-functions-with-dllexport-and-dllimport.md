@@ -1,15 +1,8 @@
 ---
-title: "Defining Inline C Functions with dllexport and dllimport | Microsoft Docs"
-ms.custom: ""
+title: "Defining Inline C Functions with dllexport and dllimport"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inline functions [C++], with dllexport and dllimport", "dllimport attribute [C++], inline functions", "dllexport attribute [C++], inline functions", "dllexport attribute [C++]"]
 ms.assetid: 41418f7c-1c11-470b-bb2e-1f8269a239f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Defining Inline C Functions with dllexport and dllimport
 

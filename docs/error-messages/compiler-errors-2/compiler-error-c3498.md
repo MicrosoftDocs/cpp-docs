@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3498 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3498"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3498"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3498"]
 ms.assetid: 0a5a7817-0872-4119-83bf-980a19113374
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3498
 

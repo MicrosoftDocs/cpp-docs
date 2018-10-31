@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1166 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1166"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1166"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1166"]
 ms.assetid: d69548a8-0efb-44e1-90b7-b27636a4b575
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1166
 

@@ -1,15 +1,8 @@
 ---
-title: "Setting Properties in Your Provider | Microsoft Docs"
-ms.custom: ""
+title: "Setting Properties in Your Provider"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, properties", "properties [C++], OLE DB provider"]
 ms.assetid: 26a8b493-7ec4-4686-96d0-9ad5d2bca5ac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Setting Properties in Your Provider
 

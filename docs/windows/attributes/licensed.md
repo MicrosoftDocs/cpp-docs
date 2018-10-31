@@ -1,16 +1,9 @@
 ---
-title: "licensed (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "licensed (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.licensed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["licensed attribute"]
 ms.assetid: 09cf3b4a-d3f2-43e3-9180-d420333b23bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # licensed
 

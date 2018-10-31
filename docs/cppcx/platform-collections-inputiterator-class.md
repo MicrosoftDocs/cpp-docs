@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::InputIterator Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections::InputIterator Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::InputIterator::InputIterator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["InputIterator Class"]
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::InputIterator Class
 

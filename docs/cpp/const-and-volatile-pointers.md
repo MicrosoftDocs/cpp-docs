@@ -1,15 +1,8 @@
 ---
-title: "const and volatile Pointers | Microsoft Docs"
-ms.custom: ""
+title: "const and volatile Pointers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["volatile keyword [C++], and pointers", "pointers, and const", "pointers, and volatile", "const keyword [C++], volatile pointers"]
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # const and volatile Pointers
 

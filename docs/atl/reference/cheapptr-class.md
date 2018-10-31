@@ -1,16 +1,9 @@
 ---
-title: "CHeapPtr Class | Microsoft Docs"
-ms.custom: ""
+title: "CHeapPtr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CHeapPtr", "ATLCORE/ATL::CHeapPtr", "ATLCORE/ATL::CHeapPtr::CHeapPtr", "ATLCORE/ATL::CHeapPtr::Allocate", "ATLCORE/ATL::CHeapPtr::Reallocate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHeapPtr class"]
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHeapPtr Class
 

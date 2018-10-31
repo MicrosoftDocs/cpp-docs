@@ -1,15 +1,8 @@
 ---
-title: "typeid Operator | Microsoft Docs"
-ms.custom: ""
+title: "typeid Operator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["typeid operator"]
 ms.assetid: 8871cee6-d6b9-4301-a5cb-bf3dc9798d61
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # typeid Operator
 

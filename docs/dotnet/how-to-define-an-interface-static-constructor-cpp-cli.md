@@ -1,15 +1,8 @@
 ---
-title: "How to: Define an Interface Static Constructor (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Define an Interface Static Constructor (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["constructors [C++]", "static constructors, interface", "interface static constructor"]
 ms.assetid: 1f031cb2-e94f-43dc-819b-44cf2faaaa49
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Define an Interface Static Constructor (C++/CLI)
 

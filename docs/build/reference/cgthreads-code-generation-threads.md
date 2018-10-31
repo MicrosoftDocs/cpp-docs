@@ -1,16 +1,9 @@
 ---
-title: "-cgthreads (Code Generation Threads) | Microsoft Docs"
-ms.custom: ""
+title: "/cgthreads (Code Generation Threads)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/cgthreads"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/cgthreads compiler option (C++)", "-cgthreads compiler option (C++)", "cgthreads compiler option (C++)", "cgthreads"]
 ms.assetid: 64bc768c-6caa-4baf-9dea-7cfa1ffb01c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /cgthreads (Code Generation Threads)
 

@@ -1,16 +1,9 @@
 ---
-title: "nonbrowsable (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "nonbrowsable (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.nonbrowsable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nonbrowsable attribute"]
 ms.assetid: e71a98e7-4b65-454a-9829-342b9f2a84be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # nonbrowsable
 

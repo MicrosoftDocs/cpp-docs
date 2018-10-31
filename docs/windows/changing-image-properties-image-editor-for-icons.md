@@ -1,15 +1,8 @@
 ---
-title: "Changing Image Properties (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Changing Image Properties (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["images [C++], properties", "Image editor [C++], Properties window", "Properties window, image editor"]
 ms.assetid: f6172bf1-08c4-4dfd-b542-dd8749e83fe6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing Image Properties (Image Editor for Icons)
 

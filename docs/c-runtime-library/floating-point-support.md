@@ -1,16 +1,9 @@
 ---
-title: "Math and floating-point support | Microsoft Docs"
-ms.custom: ""
+title: "Math and floating-point support"
 ms.date: "04/06/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.math"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["floating-point numbers, math routines", "math routines", "floating-point numbers"]
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Math and floating-point support
 

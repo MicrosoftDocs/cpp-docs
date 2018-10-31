@@ -1,15 +1,8 @@
 ---
-title: "Intrinsics available on all architectures | Microsoft Docs"
-ms.custom: ""
+title: "Intrinsics available on all architectures"
 ms.date: "04/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, intrinsics"]
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Intrinsics available on all architectures
 

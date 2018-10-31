@@ -1,16 +1,9 @@
 ---
-title: "checked_array_iterator Class | Microsoft Docs"
-ms.custom: ""
+title: "checked_array_iterator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["iterator/checked_array_iterator", "iterator/stdext::checked_array_iterator::difference_type", "iterator/stdext::checked_array_iterator::pointer", "iterator/stdext::checked_array_iterator::reference", "iterator/stdext::checked_array_iterator::base"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::checked_array_iterator [C++], difference_type", "stdext::checked_array_iterator [C++], pointer", "stdext::checked_array_iterator [C++], reference", "stdext::checked_array_iterator [C++], base"]
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # checked_array_iterator Class
 

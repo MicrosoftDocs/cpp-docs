@@ -1,16 +1,9 @@
 ---
-title: "ISpecifyPropertyPagesImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "ISpecifyPropertyPagesImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["property pages, CLSIDs associated with", "ISpecifyPropertyPages", "ISpecifyPropertyPagesImpl class"]
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ISpecifyPropertyPagesImpl Class
 

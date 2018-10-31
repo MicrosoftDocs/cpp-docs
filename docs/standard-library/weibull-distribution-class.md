@@ -1,16 +1,9 @@
 ---
-title: "weibull_distribution Class | Microsoft Docs"
-ms.custom: ""
+title: "weibull_distribution Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::weibull_distribution", "random/std::weibull_distribution::reset", "random/std::weibull_distribution::a", "random/std::weibull_distribution::b", "random/std::weibull_distribution::param", "random/std::weibull_distribution::min", "random/std::weibull_distribution::max", "random/std::weibull_distribution::operator()", "random/std::weibull_distribution::param_type", "random/std::weibull_distribution::param_type::a", "random/std::weibull_distribution::param_type::b", "random/std::weibull_distribution::param_type::operator==", "random/std::weibull_distribution::param_type::operator!="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::weibull_distribution [C++]", "std::weibull_distribution [C++], reset", "std::weibull_distribution [C++], a", "std::weibull_distribution [C++], b", "std::weibull_distribution [C++], param", "std::weibull_distribution [C++], min", "std::weibull_distribution [C++], max", "std::weibull_distribution [C++], param_type", "std::weibull_distribution [C++], param_type"]
 ms.assetid: f20b49d3-1b9a-41af-8db4-baf800eaa02b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # weibull_distribution Class
 

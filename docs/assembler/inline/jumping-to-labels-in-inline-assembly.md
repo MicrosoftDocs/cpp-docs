@@ -1,15 +1,8 @@
 ---
-title: "Jumping to Labels in Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Jumping to Labels in Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inline assembly, jumping to labels", "labels, in inline assembly", "__asm keyword [C++], labels", "case sensitivity, labels in inline assembly", "labels, in __asm blocks", "jumping to labels in inline assembly"]
 ms.assetid: 36c18b97-8981-4631-9dfd-af6c14a04297
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Jumping to Labels in Inline Assembly
 

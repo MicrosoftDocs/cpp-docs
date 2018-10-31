@@ -1,16 +1,9 @@
 ---
-title: "VERSION (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "VERSION (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VERSION"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VERSION .def file statement"]
 ms.assetid: 3533b97c-5183-45f9-9ca8-4e63462b5d26
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # VERSION (C/C++)
 

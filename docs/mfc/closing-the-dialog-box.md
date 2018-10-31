@@ -1,15 +1,8 @@
 ---
-title: "Closing the Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Closing the Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], closing", "dialog boxes [MFC], closing"]
 ms.assetid: 946f5675-c482-46a4-a5dd-34fe138ffae5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Closing the Dialog Box
 

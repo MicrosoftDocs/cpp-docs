@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2493 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2493"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2493"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2493"]
 ms.assetid: 68316cd5-682b-49c3-b6ea-23c4e5d296cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2493
 

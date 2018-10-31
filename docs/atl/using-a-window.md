@@ -1,15 +1,8 @@
 ---
-title: "Using a Window (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Using a Window (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, windows", "CWindow class, about CWindow class", "windows [C++], ATL"]
 ms.assetid: b3b9cc8e-4287-486b-b080-38852bc2943a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using a Window
 

@@ -1,12 +1,8 @@
 ---
-title: "Compiler Warning C4868 | Microsoft Docs"
+title: "Compiler Warning C4868"
 ms.date: "10/26/2017"
-ms.topic: "error-reference"
 f1_keywords: ["C4868"]
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4868
 

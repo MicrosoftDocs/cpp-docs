@@ -1,15 +1,8 @@
 ---
-title: "Finding an Entry in an Accelerator Table (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Finding an Entry in an Accelerator Table (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["searching, in accelarator tables", "accelerator tables [C++], finding entries"]
 ms.assetid: 98146b12-571e-48ea-a660-eb6b1834a79b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Finding an Entry in an Accelerator Table
 

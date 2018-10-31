@@ -1,10 +1,7 @@
 ---
-title: "&lt;tuple&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;tuple&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["tuple/std::operator!=", "tuple/std::operator>", "tuple/std::operator>=", "tuple/std::operator<", "tuple/std::operator<=", "tuple/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
 ---
 # &lt;tuple&gt; operators

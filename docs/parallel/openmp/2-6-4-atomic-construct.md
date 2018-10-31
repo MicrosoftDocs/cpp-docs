@@ -1,14 +1,7 @@
 ---
-title: "2.6.4 atomic Construct | Microsoft Docs"
-ms.custom: ""
+title: "2.6.4 atomic Construct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: e4232ef1-4058-42ce-9de0-0ca788312aba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.6.4 atomic Construct
 

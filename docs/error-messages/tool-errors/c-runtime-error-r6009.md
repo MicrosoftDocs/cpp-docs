@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6009 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6009"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6009"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6009"]
 ms.assetid: edfb1f8b-3807-48f4-a994-318923b747ae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6009
 

@@ -1,16 +1,9 @@
 ---
-title: "OLE Server Classes | Microsoft Docs"
-ms.custom: ""
+title: "OLE Server Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE server applications [MFC], server classes", "OLE server documents", "COM components, classes [MFC]", "component classes [MFC]"]
 ms.assetid: 8e9b67a2-c0ff-479c-a8d6-19b36c5e6fc6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Server Classes
 

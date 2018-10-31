@@ -1,14 +1,7 @@
 ---
-title: "Image Format | Microsoft Docs"
-ms.custom: ""
+title: "Image Format"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 3ca3654b-42fe-4253-9f2e-723644041aa0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Image Format
 

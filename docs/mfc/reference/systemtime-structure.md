@@ -1,16 +1,9 @@
 ---
-title: "SYSTEMTIME Structure | Microsoft Docs"
-ms.custom: ""
+title: "SYSTEMTIME Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["SYSTEMTIME"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SYSTEMTIME structure [MFC]"]
 ms.assetid: 9aaef4d6-de79-4fa1-8158-86b245ef5bff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # SYSTEMTIME Structure
 

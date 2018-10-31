@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4001 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4001"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4001"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4001"]
 ms.assetid: 414a47fe-d597-425e-9374-6a569231dc0a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4001
 

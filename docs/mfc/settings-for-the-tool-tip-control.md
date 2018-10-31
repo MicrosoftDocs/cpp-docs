@@ -1,15 +1,8 @@
 ---
-title: "Settings for the Tool Tip Control | Microsoft Docs"
-ms.custom: ""
+title: "Settings for the Tool Tip Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tool tips [MFC], activating", "CToolTipCtrl class [MFC], settings"]
 ms.assetid: ff8c5c46-2047-403a-bd98-ffec3d21ee3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Settings for the Tool Tip Control
 

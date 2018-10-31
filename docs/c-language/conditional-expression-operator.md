@@ -1,15 +1,8 @@
 ---
-title: "Conditional-Expression Operator | Microsoft Docs"
-ms.custom: ""
+title: "Conditional-Expression Operator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["conditional operators", "operators [C++], conditional", "expressions [C++], conditional"]
 ms.assetid: c4f1a5ca-0844-44a7-a384-eca584d4e3dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Conditional-Expression Operator
 

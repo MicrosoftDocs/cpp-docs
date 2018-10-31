@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Warning U4004 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Warning U4004"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U4004"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U4004"]
 ms.assetid: 5086bbcb-42d7-4677-a877-1a02202a86a2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Warning U4004
 

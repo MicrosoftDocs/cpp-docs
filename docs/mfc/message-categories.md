@@ -1,15 +1,8 @@
 ---
-title: "Message Categories | Microsoft Docs"
-ms.custom: ""
+title: "Message Categories"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages [MFC], categories", "control-notification messages [MFC]", "Windows messages [MFC], categories", "controls [MFC], notifications", "command messages [MFC]", "messages [MFC], Windows", "message handling [MFC], message types"]
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Categories
 

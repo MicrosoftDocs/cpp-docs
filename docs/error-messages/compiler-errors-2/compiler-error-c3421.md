@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3421 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3421"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3421"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3421"]
 ms.assetid: b52050c6-17a4-424a-8894-337b0cec7010
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3421
 

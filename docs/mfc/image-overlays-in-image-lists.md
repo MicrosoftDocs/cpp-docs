@@ -1,15 +1,8 @@
 ---
-title: "Image Overlays in Image Lists | Microsoft Docs"
-ms.custom: ""
+title: "Image Overlays in Image Lists"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["overlays [MFC]", "image lists [MFC], image overlays in", "CImageList class [MFC], image overlays in"]
 ms.assetid: aaf4e1c4-cd12-42c8-9af4-1bb458889b4e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Image Overlays in Image Lists
 

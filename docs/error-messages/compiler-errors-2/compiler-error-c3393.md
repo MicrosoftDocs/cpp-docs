@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3393 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3393"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3393"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3393"]
 ms.assetid: d57f7c69-0a02-4fe3-9e45-bc62644fd77c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3393
 

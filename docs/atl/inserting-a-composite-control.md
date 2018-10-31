@@ -1,15 +1,8 @@
 ---
-title: "Inserting a Composite Control | Microsoft Docs"
-ms.custom: ""
+title: "Inserting a Composite Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["composite controls, inserting with ATL Object Wizard", "composite controls", "ATL Control Wizard"]
 ms.assetid: f10b1927-9fc6-40a7-ac29-efdac70584fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Inserting a Composite Control
 

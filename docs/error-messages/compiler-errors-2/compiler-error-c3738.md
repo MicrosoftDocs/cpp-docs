@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3738 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3738"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3738"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3738"]
 ms.assetid: dd3ee011-e204-4264-bf3a-da32c4ef7038
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3738
 

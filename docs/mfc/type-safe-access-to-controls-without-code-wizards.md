@@ -1,15 +1,8 @@
 ---
-title: "Type-Safe Access to Controls Without Code Wizards | Microsoft Docs"
-ms.custom: ""
+title: "Type-Safe Access to Controls Without Code Wizards"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [MFC], accessing controls", "dialog box controls [MFC], accessing"]
 ms.assetid: 325b4927-d49b-42b4-8e0b-fc84f31fb059
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type-Safe Access to Controls Without Code Wizards
 

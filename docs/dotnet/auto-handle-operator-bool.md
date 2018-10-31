@@ -1,16 +1,10 @@
 ---
-title: "auto_handle::operator bool | Microsoft Docs"
-ms.custom: ""
+title: "auto_handle::operator bool"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_handle.operator bool", "msclr.auto_handle.operator bool", "operator bool", "msclr::auto_handle::operator bool", "auto_handle::operator bool"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_handle::operator bool"]
 ms.assetid: 2e535e99-cf87-4008-b588-02c587d77453
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::operator bool
 

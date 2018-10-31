@@ -1,15 +1,8 @@
 ---
-title: "Assignment Conversions | Microsoft Docs"
-ms.custom: ""
+title: "Assignment Conversions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["conversions, assignment", "assignment conversions"]
 ms.assetid: 4ee01013-de32-4aae-b12e-0051d0cde927
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Assignment Conversions
 

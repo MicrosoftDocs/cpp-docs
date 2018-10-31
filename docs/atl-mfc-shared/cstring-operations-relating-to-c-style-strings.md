@@ -1,15 +1,8 @@
 ---
-title: "CString Operations Relating to C-Style Strings | Microsoft Docs"
-ms.custom: ""
+title: "CString Operations Relating to C-Style Strings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CString objects, basic operations", "MFC [C++], string handling class", "string conversion [C++], C-style strings", "strings [C++], string operations", "standard run-time library string functions", "null values, Null-terminated string conversion", "string functions", "strings [C++], in C", "string arguments", "C-style strings", "strings [C++], class CString", "casting CString objects"]
 ms.assetid: 5048de8a-5298-4891-b8a0-c554b5a3ac1b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CString Operations Relating to C-Style Strings
 

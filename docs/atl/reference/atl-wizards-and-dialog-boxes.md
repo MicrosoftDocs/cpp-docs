@@ -1,15 +1,8 @@
 ---
-title: "ATL Wizards and Dialog Boxes | Microsoft Docs"
-ms.custom: ""
+title: "ATL Wizards and Dialog Boxes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, class wizards"]
 ms.assetid: 51cf002a-83bc-41ba-aeb8-364ea2331375
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Wizards and Dialog Boxes
 

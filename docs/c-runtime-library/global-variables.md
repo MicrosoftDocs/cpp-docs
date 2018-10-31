@@ -1,16 +1,9 @@
 ---
-title: "Global Variables | Microsoft Docs"
-ms.custom: ""
+title: "Global Variables"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.variables"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["global variables", "variables, global", "global variables, Microsoft run-time library"]
 ms.assetid: 01d1551c-2f0c-4f72-935c-6442caccf84f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Global Variables
 

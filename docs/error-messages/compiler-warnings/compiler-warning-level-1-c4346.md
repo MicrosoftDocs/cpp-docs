@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4346 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4346"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4346"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4346"]
 ms.assetid: 68ee562d-cca9-4a2a-9a1b-14ad1a1e7396
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4346
 

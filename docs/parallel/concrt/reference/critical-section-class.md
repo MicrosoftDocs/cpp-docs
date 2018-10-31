@@ -1,16 +1,9 @@
 ---
-title: "critical_section Class | Microsoft Docs"
-ms.custom: ""
+title: "critical_section Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["critical_section", "CONCRT/concurrency::critical_section", "CONCRT/concurrency::critical_section::critical_section::scoped_lock Class", "CONCRT/concurrency::critical_section::critical_section", "CONCRT/concurrency::critical_section::lock", "CONCRT/concurrency::critical_section::native_handle", "CONCRT/concurrency::critical_section::try_lock", "CONCRT/concurrency::critical_section::try_lock_for", "CONCRT/concurrency::critical_section::unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["critical_section class"]
 ms.assetid: fa3c89d6-be5d-4d1b-bddb-8232814e6cf6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # critical_section Class
 

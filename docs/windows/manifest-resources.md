@@ -1,15 +1,8 @@
 ---
-title: "Manifest Resources (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Manifest Resources (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["manifest resources [C++]", "resources [C++], manifest"]
 ms.assetid: 8615334c-22a0-44c0-93e0-5924528c9917
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Manifest Resources (C++)
 

@@ -1,15 +1,8 @@
 ---
-title: "Deployment in Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "Deployment in Visual C++"
 ms.date: "05/11/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]"]
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Deployment in Visual C++
 

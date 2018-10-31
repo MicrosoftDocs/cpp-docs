@@ -1,15 +1,8 @@
 ---
-title: "Date and Time: Automation Support | Microsoft Docs"
-ms.custom: ""
+title: "Date and Time: Automation Support"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["adding dates", "calculating dates and times", "formatting [Visual Studio], dates", "dates, Automation support", "elapsed time, calculating in Automation", "COleDateTime class, Automation date/time support", "COleDateTimeSpan class, Automation date/time support", "Automation, date and time support", "formatting [Visual Studio], time", "calculations, date and time", "time [Visual Studio], Automation support"]
 ms.assetid: 6eee94c4-943d-4ffc-bf7c-bdda89337ab0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Date and Time: Automation Support
 

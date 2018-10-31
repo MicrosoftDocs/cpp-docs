@@ -1,16 +1,9 @@
 ---
-title: "CMFCButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCButton Class"
 ms.date: "08/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCButton", "AFXBUTTON/CMFCButton", "AFXBUTTON/CMFCButton::CleanUp", "AFXBUTTON/CMFCButton::EnableFullTextTooltip", "AFXBUTTON/CMFCButton::EnableMenuFont", "AFXBUTTON/CMFCButton::EnableWindowsTheming", "AFXBUTTON/CMFCButton::GetToolTipCtrl", "AFXBUTTON/CMFCButton::IsAutoCheck", "AFXBUTTON/CMFCButton::IsAutorepeatCommandMode", "AFXBUTTON/CMFCButton::IsCheckBox", "AFXBUTTON/CMFCButton::IsChecked", "AFXBUTTON/CMFCButton::IsHighlighted", "AFXBUTTON/CMFCButton::IsPressed", "AFXBUTTON/CMFCButton::IsPushed", "AFXBUTTON/CMFCButton::IsRadioButton", "AFXBUTTON/CMFCButton::IsWindowsThemingEnabled", "AFXBUTTON/CMFCButton::SetAutorepeatMode", "AFXBUTTON/CMFCButton::SetCheckedImage", "AFXBUTTON/CMFCButton::SetFaceColor", "AFXBUTTON/CMFCButton::SetImage", "AFXBUTTON/CMFCButton::SetMouseCursor", "AFXBUTTON/CMFCButton::SetMouseCursorHand", "AFXBUTTON/CMFCButton::SetStdImage", "AFXBUTTON/CMFCButton::SetTextColor", "AFXBUTTON/CMFCButton::SetTextHotColor", "AFXBUTTON/CMFCButton::SetTooltip", "AFXBUTTON/CMFCButton::SizeToContent", "AFXBUTTON/CMFCButton::OnDraw", "AFXBUTTON/CMFCButton::OnDrawBorder", "AFXBUTTON/CMFCButton::OnDrawFocusRect", "AFXBUTTON/CMFCButton::OnDrawText", "AFXBUTTON/CMFCButton::OnFillBackground", "AFXBUTTON/CMFCButton::SelectFont", "AFXBUTTON/CMFCButton::m_bDrawFocus", "AFXBUTTON/CMFCButton::m_bHighlightChecked", "AFXBUTTON/CMFCButton::m_bRightImage", "AFXBUTTON/CMFCButton::m_bTransparent", "AFXBUTTON/CMFCButton::m_nAlignStyle", "AFXBUTTON/CMFCButton::m_nFlatStyle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCButton [MFC], CleanUp", "CMFCButton [MFC], EnableFullTextTooltip", "CMFCButton [MFC], EnableMenuFont", "CMFCButton [MFC], EnableWindowsTheming", "CMFCButton [MFC], GetToolTipCtrl", "CMFCButton [MFC], IsAutoCheck", "CMFCButton [MFC], IsAutorepeatCommandMode", "CMFCButton [MFC], IsCheckBox", "CMFCButton [MFC], IsChecked", "CMFCButton [MFC], IsHighlighted", "CMFCButton [MFC], IsPressed", "CMFCButton [MFC], IsPushed", "CMFCButton [MFC], IsRadioButton", "CMFCButton [MFC], IsWindowsThemingEnabled", "CMFCButton [MFC], SetAutorepeatMode", "CMFCButton [MFC], SetCheckedImage", "CMFCButton [MFC], SetFaceColor", "CMFCButton [MFC], SetImage", "CMFCButton [MFC], SetMouseCursor", "CMFCButton [MFC], SetMouseCursorHand", "CMFCButton [MFC], SetStdImage", "CMFCButton [MFC], SetTextColor", "CMFCButton [MFC], SetTextHotColor", "CMFCButton [MFC], SetTooltip", "CMFCButton [MFC], SizeToContent", "CMFCButton [MFC], OnDraw", "CMFCButton [MFC], OnDrawBorder", "CMFCButton [MFC], OnDrawFocusRect", "CMFCButton [MFC], OnDrawText", "CMFCButton [MFC], OnFillBackground", "CMFCButton [MFC], SelectFont", "CMFCButton [MFC], m_bDrawFocus", "CMFCButton [MFC], m_bHighlightChecked", "CMFCButton [MFC], m_bRightImage", "CMFCButton [MFC], m_bTransparent", "CMFCButton [MFC], m_nAlignStyle", "CMFCButton [MFC], m_nFlatStyle"]
 ms.assetid: 4b32f57c-7a53-4734-afb9-d47e3359f62e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCButton Class
 

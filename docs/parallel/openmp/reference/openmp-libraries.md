@@ -1,14 +1,7 @@
 ---
-title: "OpenMP libraries | Microsoft Docs"
-ms.custom: ""
+title: "OpenMP libraries"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: f89abf97-67e3-4327-bc30-43f85b9533a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OpenMP libraries
 

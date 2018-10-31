@@ -1,16 +1,9 @@
 ---
-title: "_bstr_t::Attach | Microsoft Docs"
-ms.custom: ""
+title: "_bstr_t::Attach"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::Attach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Attach method [C++]"]
 ms.assetid: 8cad867e-40fc-435b-841f-0d412c2f58d3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _bstr_t::Attach
 

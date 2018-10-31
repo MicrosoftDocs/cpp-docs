@@ -1,16 +1,9 @@
 ---
-title: "/CLRIMAGETYPE (Specify Type of CLR Image) | Microsoft Docs"
-ms.custom: ""
+title: "/CLRIMAGETYPE (Specify Type of CLR Image)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/CLRIMAGETYPE", "VC.Project.VCLinkerTool.CLRImageType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/CLRIMAGETYPE linker option", "-CLRIMAGETYPE linker option"]
 ms.assetid: 04c60ee6-9dd7-4391-bc03-6926ad0fa116
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /CLRIMAGETYPE (Specify Type of CLR Image)
 

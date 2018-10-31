@@ -1,16 +1,9 @@
 ---
-title: "CAutoVectorPtr Class | Microsoft Docs"
-ms.custom: ""
+title: "CAutoVectorPtr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr::CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr::Allocate", "ATLBASE/ATL::CAutoVectorPtr::Attach", "ATLBASE/ATL::CAutoVectorPtr::Detach", "ATLBASE/ATL::CAutoVectorPtr::Free", "ATLBASE/ATL::CAutoVectorPtr::m_p"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoVectorPtr class"]
 ms.assetid: 0030362b-6bc4-4a47-9b5b-3c3899dceab4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAutoVectorPtr Class
 

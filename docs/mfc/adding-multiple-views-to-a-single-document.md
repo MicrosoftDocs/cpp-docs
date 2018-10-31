@@ -1,15 +1,8 @@
 ---
-title: "Adding Multiple Views to a Single Document | Microsoft Docs"
-ms.custom: ""
+title: "Adding Multiple Views to a Single Document"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multiple views [MFC], SDI applications", "documents [MFC], multiple views", "single document interface (SDI), adding views", "views [MFC], SDI applications"]
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Multiple Views to a Single Document
 

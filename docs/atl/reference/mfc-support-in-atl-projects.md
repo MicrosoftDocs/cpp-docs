@@ -1,16 +1,9 @@
 ---
-title: "MFC Support in ATL Projects | Microsoft Docs"
-ms.custom: ""
+title: "MFC Support in ATL Projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.atl.addmfc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, MFC support"]
 ms.assetid: f90b4276-cb98-4c11-902c-9ebcfe6f954b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Support in ATL Projects
 

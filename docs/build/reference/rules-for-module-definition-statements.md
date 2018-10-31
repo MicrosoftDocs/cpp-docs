@@ -1,16 +1,9 @@
 ---
-title: "Rules for Module-Definition Statements | Microsoft Docs"
-ms.custom: ""
+title: "Rules for Module-Definition Statements"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: [".def"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["module definition files, statement syntax", "module definition files"]
 ms.assetid: f65cd3a7-65d7-4d06-939f-a8b1ecd50f2d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Rules for Module-Definition Statements
 

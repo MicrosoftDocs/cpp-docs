@@ -1,16 +1,9 @@
 ---
-title: "Invoking Scripts (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Invoking Scripts (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["StringRegister"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["StringRegister method", "scripts, invoking registry in ATL"]
 ms.assetid: eabd41ee-586b-4266-9e92-5aaad04b73a4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Invoking Scripts
 

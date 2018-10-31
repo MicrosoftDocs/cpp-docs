@@ -1,14 +1,7 @@
 ---
-title: "Arguments to main | Microsoft Docs"
-ms.custom: ""
+title: "Arguments to main"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 39824fef-05ad-461d-ae82-49447dda8060
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Arguments to main
 

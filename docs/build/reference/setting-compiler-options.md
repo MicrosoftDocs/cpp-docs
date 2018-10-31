@@ -1,15 +1,8 @@
 ---
-title: "Setting Compiler Options | Microsoft Docs"
-ms.custom: ""
+title: "Setting Compiler Options"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compiler options, setting", "cl.exe compiler, setting options"]
 ms.assetid: 4b079f5b-0017-4124-aad6-0d2b58e427e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Setting Compiler Options
 

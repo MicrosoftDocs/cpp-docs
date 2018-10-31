@@ -1,12 +1,7 @@
 ---
-title: "ATL HTTP Utility Functions | Microsoft Docs"
-ms.custom: ""
+title: "ATL HTTP Utility Functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL HTTP Utility Functions
 

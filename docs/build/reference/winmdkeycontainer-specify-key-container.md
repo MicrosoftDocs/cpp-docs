@@ -1,15 +1,8 @@
 ---
-title: "-WINMDKEYCONTAINER (Specify Key Container) | Microsoft Docs"
-ms.custom: ""
+title: "/WINMDKEYCONTAINER (Specify Key Container)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.WINMDKEYCONTAINER"]
-dev_langs: ["C++"]
 ms.assetid: c2fc44dc-7cb5-42b9-897f-1b124928f2f7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WINMDKEYCONTAINER (Specify Key Container)
 

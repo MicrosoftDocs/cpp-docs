@@ -1,19 +1,12 @@
 ---
-title: "_CrtMemDumpStatistics | Microsoft Docs"
-ms.custom: ""
+title: "_CrtMemDumpStatistics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtMemDumpStatistics"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CrtMemDumpStatistics", "_CrtMemDumpStatistics"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_CrtMemDumpStatistics function", "CrtMemDumpStatistics function"]
 ms.assetid: 27b9d731-3184-4a2d-b9a7-6566ab28a9fe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtMemDumpStatistics
 

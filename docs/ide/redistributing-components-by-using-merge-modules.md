@@ -1,15 +1,8 @@
 ---
-title: "Redistributing Components By Using Merge Modules | Microsoft Docs"
-ms.custom: ""
+title: "Redistributing Components By Using Merge Modules"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["merge modules, using", "redistributing applications, using merge modules"]
 ms.assetid: 93b84211-bf9b-4a78-9f22-474ac2ef7840
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Redistributing Components By Using Merge Modules
 

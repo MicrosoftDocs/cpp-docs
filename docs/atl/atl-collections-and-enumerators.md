@@ -1,15 +1,8 @@
 ---
-title: "ATL Collections and Enumerators | Microsoft Docs"
-ms.custom: ""
+title: "ATL Collections and Enumerators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["enumerator interfaces", "collections, ATL classes", "enumerators, ATL classes", "collection interfaces"]
 ms.assetid: b2d37119-3ab2-4e0a-b65b-f377f07e4098
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Collections and Enumerators
 

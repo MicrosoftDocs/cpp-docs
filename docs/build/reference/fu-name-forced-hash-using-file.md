@@ -1,16 +1,9 @@
 ---
-title: "-FU (Name Forced #using File) | Microsoft Docs"
-ms.custom: ""
+title: "/FU (Name Forced #using File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ForcedUsingFiles", "/FU", "VC.Project.VCNMakeTool.ForcedUsingAssemblies"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-FU compiler option [C++]", "FU compiler option [C++]", "/FU compiler option [C++]"]
 ms.assetid: 698f8603-457f-435a-baff-5ac9243d6ca1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FU (Name Forced #using File)
 

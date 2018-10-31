@@ -1,16 +1,9 @@
 ---
-title: "-PROFILE (Performance Tools Profiler) | Microsoft Docs"
-ms.custom: ""
+title: "/PROFILE (Performance Tools Profiler)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.Profile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-PROFILE linker option", "/PROFILE linker option"]
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /PROFILE (Performance Tools Profiler)
 

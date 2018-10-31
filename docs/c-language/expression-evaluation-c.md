@@ -1,15 +1,8 @@
 ---
-title: "Expression Evaluation (C) | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluation (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expression evaluation", "expressions [C++], evaluating"]
 ms.assetid: 9493f8cc-64a2-4284-9aaf-26eec11c4f40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluation (C)
 

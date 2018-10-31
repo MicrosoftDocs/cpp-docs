@@ -1,16 +1,9 @@
 ---
-title: "Control Names, MFC ActiveX Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Control Names, MFC ActiveX Control Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.ctl.names"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX Control Wizard, control names"]
 ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Control Names, MFC ActiveX Control Wizard
 

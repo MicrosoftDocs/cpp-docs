@@ -1,15 +1,8 @@
 ---
-title: "Localized Resources in MFC Applications: Satellite DLLs | Microsoft Docs"
-ms.custom: ""
+title: "Localized Resources in MFC Applications: Satellite DLLs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multiple language support [C++]", "localization [C++], MFC resources", "localized resources [C++]", "MFC DLLs [C++], localizing", "DLLs [C++], localizing MFC", "resources [MFC], localizing", "resource-only DLLs [C++]", "resource-only DLLs [C++], MFC applications", "satellite DLLs [C++]"]
 ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Localized Resources in MFC Applications: Satellite DLLs
 

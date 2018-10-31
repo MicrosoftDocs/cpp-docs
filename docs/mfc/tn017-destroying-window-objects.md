@@ -1,16 +1,9 @@
 ---
-title: "TN017: Destroying Window Objects | Microsoft Docs"
-ms.custom: ""
+title: "TN017: Destroying Window Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.objects"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["destroying windows", "TN017", "PostNcDestroy method [MFC]"]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN017: Destroying Window Objects
 

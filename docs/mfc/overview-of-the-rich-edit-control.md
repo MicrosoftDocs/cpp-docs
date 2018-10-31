@@ -1,15 +1,8 @@
 ---
-title: "Overview of the Rich Edit Control | Microsoft Docs"
-ms.custom: ""
+title: "Overview of the Rich Edit Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rich edit controls [MFC]"]
 ms.assetid: ad589b9f-a3fd-4820-bf1f-6b1965997e68
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overview of the Rich Edit Control
 

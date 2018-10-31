@@ -1,16 +1,9 @@
 ---
-title: "-DELAYLOAD (Delay Load Import) | Microsoft Docs"
-ms.custom: ""
+title: "/DELAYLOAD (Delay Load Import)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/delayload", "VC.Project.VCLinkerTool.DelayLoadDLLS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DELAYLOAD linker option", "-DELAYLOAD linker option", "/DELAYLOAD linker option", "delayed loading of DLLs, /DELAYLOAD option"]
 ms.assetid: 39ea0f1e-5c01-450f-9c75-2d9761ff9b28
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DELAYLOAD (Delay Load Import)
 

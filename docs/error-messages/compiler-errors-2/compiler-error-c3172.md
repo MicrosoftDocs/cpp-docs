@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3172 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3172"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3172"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3172"]
 ms.assetid: 1834e2fd-6036-4c33-aff2-b51bc7c99441
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3172
 

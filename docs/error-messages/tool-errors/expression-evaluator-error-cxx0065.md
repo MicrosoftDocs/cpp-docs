@@ -1,16 +1,9 @@
 ---
-title: "Expression Evaluator Error CXX0065 | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluator Error CXX0065"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["CXX0065"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAN0065", "CXX0065"]
 ms.assetid: aac68f87-0b90-4c19-afa6-1c587625a5fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0065
 

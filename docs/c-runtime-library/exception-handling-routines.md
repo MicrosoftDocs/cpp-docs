@@ -1,16 +1,9 @@
 ---
-title: "Exception Handling Routines | Microsoft Docs"
-ms.custom: ""
+title: "Exception Handling Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.exceptions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling, routines"]
 ms.assetid: f60548c6-850a-4e1e-a79b-a2a6a541ab62
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Exception Handling Routines
 

@@ -1,10 +1,7 @@
 ---
-title: "&lt;hash_set&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;hash_set&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["hash_set/std::operator!=", "hash_set/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
 ---
 # &lt;hash_set&gt; operators

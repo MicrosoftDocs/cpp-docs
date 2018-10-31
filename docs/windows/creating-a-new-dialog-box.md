@@ -1,16 +1,9 @@
 ---
-title: "Creating a New Dialog Box (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Creating a New Dialog Box (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [C++], creating", "Dialog Editor [C++], creating dialog boxes"]
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a New Dialog Box (C++)
 

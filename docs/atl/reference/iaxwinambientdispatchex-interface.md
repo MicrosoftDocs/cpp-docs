@@ -1,16 +1,9 @@
 ---
-title: "IAxWinAmbientDispatchEx Interface | Microsoft Docs"
-ms.custom: ""
+title: "IAxWinAmbientDispatchEx Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IAxWinAmbientDispatchEx", "ATLIFACE/ATL::IAxWinAmbientDispatchEx", "ATLIFACE/ATL::SetAmbientDispatch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAxWinAmbientDispatchEx interface"]
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IAxWinAmbientDispatchEx Interface
 

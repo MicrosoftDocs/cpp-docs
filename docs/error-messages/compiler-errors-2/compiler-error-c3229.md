@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3229 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3229"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3229"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3229"]
 ms.assetid: f2d90923-aa8b-444f-ab10-1f37dbb864e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3229
 

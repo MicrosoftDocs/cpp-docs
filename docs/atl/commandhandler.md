@@ -1,16 +1,10 @@
 ---
-title: "CommandHandler | Microsoft Docs"
-ms.custom: ""
+title: "CommandHandler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CommandHandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CommandHandler function"]
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CommandHandler
 

@@ -1,16 +1,9 @@
 ---
-title: "TYPEDEF (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "TYPEDEF (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["typedef"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TYPEDEF directive"]
 ms.assetid: 0c659890-c9a5-485a-a680-e4fb3272032c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # TYPEDEF (MASM)
 

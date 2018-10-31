@@ -1,15 +1,8 @@
 ---
-title: "Examples of Lambda Expressions | Microsoft Docs"
-ms.custom: ""
+title: "Examples of Lambda Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lambda expressions [C++], examples"]
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Examples of Lambda Expressions
 

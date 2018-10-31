@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3354 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3354"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3354"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3354"]
 ms.assetid: 185de401-231e-4999-a149-172ee4c69d84
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3354
 

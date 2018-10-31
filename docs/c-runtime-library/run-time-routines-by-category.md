@@ -1,16 +1,9 @@
 ---
-title: "Universal C runtime routines by category | Microsoft Docs"
-ms.custom: ""
+title: "Universal C runtime routines by category"
 ms.date: "04/06/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.runtime"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["routines, run-time", "functions [CRT], run-time", "categories, run-time functions", "functions [CRT]"]
 ms.assetid: de6f5ac4-2226-4dad-be9f-deeb31138c9d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Universal C runtime routines by category
 

@@ -1,8 +1,6 @@
 ---
-title: "&lt;string&gt; typedefs | Microsoft Docs"
-ms.custom: ""
+title: "&lt;string&gt; typedefs"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["string/std::string", "string/std::u16string", "string/std::u32string", "string/std::wstring"]
 ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
 ---

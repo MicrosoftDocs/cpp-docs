@@ -1,19 +1,12 @@
 ---
-title: "tan, tanf, tanl | Microsoft Docs"
-ms.custom: ""
+title: "tan, tanf, tanl"
 ms.date: "04/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["tan", "tanf", "tanl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["tan", "tanf", "_tanl", "tanl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tanl function", "_tanl function", "tan function", "calculating tangents", "tangent", "tanf function", "trigonometric functions"]
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # tan, tanf, tanl
 

@@ -1,16 +1,9 @@
 ---
-title: "Linker Options | Microsoft Docs"
-ms.custom: ""
+title: "Linker Options"
 ms.date: "08/20/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["link"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Options
 

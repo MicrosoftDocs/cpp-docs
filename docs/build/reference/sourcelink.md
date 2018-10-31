@@ -1,15 +1,8 @@
 ---
-title: "/SOURCELINK (Include Sourcelink file in PDB) | Microsoft Docs"
-ms.custom: ""
+title: "/SOURCELINK (Include Sourcelink file in PDB)"
 ms.date: "08/20/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/sourcelink"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/SOURCELINK linker option", "/SOURCELINK"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SOURCELINK (Include Sourcelink file in PDB)
 

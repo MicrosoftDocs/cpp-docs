@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3021 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3021"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3021"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3021"]
 ms.assetid: 0cef6d97-e267-438a-ac8b-0daf5bbbc2cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3021
 

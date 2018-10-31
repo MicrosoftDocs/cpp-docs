@@ -1,16 +1,10 @@
 ---
-title: "auto_gcroot::swap | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot::swap"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr.auto_gcroot.swap", "msclr::auto_gcroot::swap", "auto_gcroot::swap", "auto_gcroot.swap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_gcroot::swap"]
 ms.assetid: 4915c629-6a53-432c-8155-3a7511dc70cb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::swap
 

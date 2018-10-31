@@ -1,15 +1,8 @@
 ---
-title: "List Items and Image Lists | Microsoft Docs"
-ms.custom: ""
+title: "List Items and Image Lists"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CImageList class [MFC], and list items", "image lists [MFC], list items", "CListCtrl class [MFC], image lists", "list items [MFC], image lists"]
 ms.assetid: 317d095f-f978-47da-acb6-7bfe7dd3bc69
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # List Items and Image Lists
 

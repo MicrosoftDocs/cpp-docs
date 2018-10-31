@@ -1,16 +1,9 @@
 ---
-title: "Unicode: The Wide-Character Set | Microsoft Docs"
-ms.custom: ""
+title: "Unicode: The Wide-Character Set"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.international"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Unicode [C++], wide character set", "wide characters [C++], Unicode"]
 ms.assetid: b6a05a21-59a5-4d30-8c85-2dbe185f7a74
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unicode: The Wide-Character Set
 

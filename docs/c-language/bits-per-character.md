@@ -1,14 +1,7 @@
 ---
-title: "Bits per Character | Microsoft Docs"
-ms.custom: ""
+title: "Bits per Character"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: ce317fce-67bf-4963-9e6d-13682cda5f3f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Bits per Character
 

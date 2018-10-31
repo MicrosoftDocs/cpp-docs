@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3908 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3908"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3908"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3908"]
 ms.assetid: 3c322482-c79e-4197-a578-2ad9bc379d1a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3908
 

@@ -1,16 +1,10 @@
 ---
-title: "auto_handle::release | Microsoft Docs"
-ms.custom: ""
+title: "auto_handle::release"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr::auto_handle::release", "auto_handle.release", "msclr.auto_handle.release", "auto_handle::release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_handle::release"]
 ms.assetid: d4848150-859e-4c61-a946-09d24d3d6577
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::release
 

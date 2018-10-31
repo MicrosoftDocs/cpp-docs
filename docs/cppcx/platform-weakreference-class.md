@@ -1,14 +1,9 @@
 ---
-title: "Platform::WeakReference Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::WeakReference Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["Platform::WeakReference"]
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::WeakReference Class
 

@@ -1,16 +1,9 @@
 ---
-title: "_com_ptr_t Class | Microsoft Docs"
-ms.custom: ""
+title: "_com_ptr_t Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_com_ptr_t class"]
 ms.assetid: 3753a8a0-03d4-4cfd-8a9a-74872ea53971
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t Class
 

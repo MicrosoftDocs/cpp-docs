@@ -1,15 +1,8 @@
 ---
-title: "Inline Assembler (C) | Microsoft Docs"
-ms.custom: ""
+title: "Inline Assembler (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["__asm keyword [C]", "inline assembler [C]"]
 ms.assetid: 821acc77-60b1-434c-ba54-2ba930a25ab4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Inline Assembler (C)
 

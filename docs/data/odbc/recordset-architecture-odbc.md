@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Architecture (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Architecture (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets, data members", "field data members, recordset architecture", "field data members", "m_nParams data member, recordsets", "recordsets, architecture", "parameter data members in recordsets", "m_nFields data member", "ODBC recordsets, architecture", "m_nParams data member", "m_nFields data member, recordsets"]
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Architecture (ODBC)
 

@@ -1,14 +1,7 @@
 ---
-title: "3.1.9 omp_set_nested Function | Microsoft Docs"
-ms.custom: ""
+title: "3.1.9 omp_set_nested Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: e4afc3aa-bb96-4314-9849-fd5df5f437d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.1.9 omp_set_nested Function
 

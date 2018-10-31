@@ -1,15 +1,8 @@
 ---
-title: "ATL Registrar and Backus Nauer Form (BNF) Syntax | Microsoft Docs"
-ms.custom: ""
+title: "ATL Registrar and Backus Nauer Form (BNF) Syntax"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["BNF notation", "Backus Nauer Form (BNF) syntax"]
 ms.assetid: 994bbef0-9077-4aa8-bdfe-b7e830af9acc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Understanding Backus Nauer Form (BNF) Syntax
 

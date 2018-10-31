@@ -1,16 +1,9 @@
 ---
-title: "db_table (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "db_table (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.db_table"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["db_table attribute"]
 ms.assetid: ff9eb957-4e6d-4175-afcc-fd8ea916cec0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # db_table
 

@@ -1,16 +1,10 @@
 ---
-title: "EventSource Class | Microsoft Docs"
-ms.custom: ""
+title: "EventSource Class"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource", "event/Microsoft::WRL::EventSource::Add", "event/Microsoft::WRL::EventSource::addRemoveLock_", "event/Microsoft::WRL::EventSource::EventSource", "event/Microsoft::WRL::EventSource::GetSize", "event/Microsoft::WRL::EventSource::InvokeAll", "event/Microsoft::WRL::EventSource::Remove", "event/Microsoft::WRL::EventSource::targets_", "event/Microsoft::WRL::EventSource::targetsPointerLock_"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::EventSource class", "Microsoft::WRL::EventSource::Add method", "Microsoft::WRL::EventSource::addRemoveLock_ data member", "Microsoft::WRL::EventSource::EventSource, constructor", "Microsoft::WRL::EventSource::GetSize method", "Microsoft::WRL::EventSource::InvokeAll method", "Microsoft::WRL::EventSource::Remove method", "Microsoft::WRL::EventSource::targets_ data member", "Microsoft::WRL::EventSource::targetsPointerLock_ data member"]
 ms.assetid: 91f1c072-6af4-44e6-b6d8-ac6d0c688dde
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource Class
 

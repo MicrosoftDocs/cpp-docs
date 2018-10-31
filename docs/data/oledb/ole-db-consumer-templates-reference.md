@@ -1,16 +1,9 @@
 ---
-title: "OLE DB Consumer Templates Reference | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Consumer Templates Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param", "vc-attr.db_column", "vc-attr.db_accessor", "vc-attr.db_command", "vc-attr.db_table", "vc.templates.ole", "vc-attr.db_source"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumer templates, classes"]
 ms.assetid: cfc7f698-1a0e-4a09-a4d3-ccb99e6654fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumer Templates Reference
 

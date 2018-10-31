@@ -1,15 +1,8 @@
 ---
-title: "Thread-Specific Hot Keys | Microsoft Docs"
-ms.custom: ""
+title: "Thread-Specific Hot Keys"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHotKeyCtrl class [MFC], thread-specific hot keys", "keyboard shortcuts [MFC], hot keys", "threading [MFC], hot keys in CHotKeyCtrl", "access keys [MFC], hot keys"]
 ms.assetid: b6021274-1498-483f-bcbf-ba5723547cc8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Thread-Specific Hot Keys
 

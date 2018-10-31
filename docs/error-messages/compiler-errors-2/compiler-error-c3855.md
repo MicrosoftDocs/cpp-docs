@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3855 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3855"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3855"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3855"]
 ms.assetid: ed90f8c0-4154-4243-b066-493913df5727
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3855
 

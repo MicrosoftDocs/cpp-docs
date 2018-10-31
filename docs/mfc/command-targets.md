@@ -1,15 +1,8 @@
 ---
-title: "Command Targets | Microsoft Docs"
-ms.custom: ""
+title: "Command Targets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["command targets", "command mapping", "messages, command [MFC]", "command routing [MFC], command targets"]
 ms.assetid: b0f784e5-c6dc-4391-9e71-aa7b7dcbe9f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command Targets
 

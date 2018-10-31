@@ -1,15 +1,8 @@
 ---
-title: "Benefits and Tradeoffs of the Method Used to Link to the CRT | Microsoft Docs"
-ms.custom: ""
+title: "Benefits and Tradeoffs of the Method Used to Link to the CRT"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ATL_MIN_CRT macro"]
 ms.assetid: 49b485f7-9487-49e4-b12a-0f710b620e2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Benefits and Tradeoffs of the Method Used to Link to the CRT
 

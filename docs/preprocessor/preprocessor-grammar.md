@@ -1,15 +1,8 @@
 ---
-title: "Preprocessor Grammar | Microsoft Docs"
-ms.custom: ""
+title: "Preprocessor Grammar"
 ms.date: "09/04/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor", "grammar, preprocessor", "preprocessor, grammar"]
 ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Preprocessor Grammar
 

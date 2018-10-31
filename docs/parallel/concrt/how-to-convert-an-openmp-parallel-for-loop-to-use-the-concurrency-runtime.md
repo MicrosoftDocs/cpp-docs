@@ -1,15 +1,8 @@
 ---
-title: "How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, parallel for loops", "converting from OpenMP to the Concurrency Runtime, parallel loops", "parallel for loops, converting from OpenMP to the Concurrency Runtime", "parallel loops, converting from OpenMP to the Concurrency Runtime"]
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime
 

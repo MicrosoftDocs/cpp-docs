@@ -1,15 +1,8 @@
 ---
-title: "Destructors (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Destructors (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["objects [C++], destroying", "Visual C++, destructors", "destroying objects, destructors", "~ operator [C++], specifying destructors", "destructors, about destructors", "destructors, C++"]
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Destructors (C++)
 

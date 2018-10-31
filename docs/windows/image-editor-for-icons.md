@@ -1,16 +1,9 @@
 ---
-title: "Image Editor for Icons | Microsoft Docs"
-ms.custom: ""
+title: "Image Editor for Icons"
 ms.date: "10/17/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["editors, images", "resource editors [C++], graphics", "Image editor [C++]", "resource editors [C++], Image editor"]
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Image Editor for Icons
 

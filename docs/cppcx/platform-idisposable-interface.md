@@ -1,16 +1,10 @@
 ---
-title: "Platform::IDisposable Interface | Microsoft Docs"
-ms.custom: ""
+title: "Platform::IDisposable Interface"
 ms.date: "02/03/2017"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::IDisposable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IDisposable Interface"]
 ms.assetid: f4344056-7030-42ed-bc98-b140edffddcd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::IDisposable Interface
 

@@ -1,14 +1,7 @@
 ---
-title: "2.7.2.5 default | Microsoft Docs"
-ms.custom: ""
+title: "2.7.2.5 default"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c856df07-705c-4ad3-9105-a268dd33e939
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.7.2.5 default
 

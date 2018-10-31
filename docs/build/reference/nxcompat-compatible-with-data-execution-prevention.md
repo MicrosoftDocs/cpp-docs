@@ -1,15 +1,8 @@
 ---
-title: "/NXCOMPAT (Compatible with Data Execution Prevention) | Microsoft Docs"
-ms.custom: ""
+title: "/NXCOMPAT (Compatible with Data Execution Prevention)"
 ms.date: "12/29/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/NXCOMPAT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/NXCOMPAT linker option", "-NXCOMPAT linker option", "NXCOMPAT linker option"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /NXCOMPAT (Compatible with Data Execution Prevention)
 

@@ -1,15 +1,8 @@
 ---
-title: "L-Value and R-Value Expressions | Microsoft Docs"
-ms.custom: ""
+title: "L-Value and R-Value Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["L-values", "member-selection expressions", "R-value expressions", "subscript expressions"]
 ms.assetid: b790303e-ec6f-4d0d-bc55-df42da267172
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # L-Value and R-Value Expressions
 

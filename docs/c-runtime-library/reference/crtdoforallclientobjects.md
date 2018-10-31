@@ -1,19 +1,12 @@
 ---
-title: "_CrtDoForAllClientObjects | Microsoft Docs"
-ms.custom: ""
+title: "_CrtDoForAllClientObjects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtDoForAllClientObjects"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CrtDoForAllClientObjects", "CrtDoForAllClientObjects", "crtdbg/_CrdDoForAllClientObjects"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_CrtDoForAllClientObjects function", "CrtDoForAllClientObjects function"]
 ms.assetid: d0fdb835-3cdc-45f1-9a21-54208e8df248
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtDoForAllClientObjects
 

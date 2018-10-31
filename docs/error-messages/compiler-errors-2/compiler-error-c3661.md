@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3661 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3661"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3661"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3661"]
 ms.assetid: 50793fd1-1829-4b29-ad0d-094ef2068b43
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3661
 

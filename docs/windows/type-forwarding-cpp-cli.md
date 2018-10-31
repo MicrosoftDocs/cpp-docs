@@ -1,15 +1,9 @@
 ---
-title: "Type Forwarding (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Type Forwarding (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["type forwarding, C++"]
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Type Forwarding (C++/CLI)
 

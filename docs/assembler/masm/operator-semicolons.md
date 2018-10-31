@@ -1,16 +1,9 @@
 ---
-title: "operator ;; | Microsoft Docs"
-ms.custom: ""
+title: "operator ;;"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["%3B%3B", "operator %3B%3B"]
-dev_langs: ["C++"]
 helpviewer_keywords: [";; operator", "operator ;;"]
 ms.assetid: 94320c71-70df-4e71-8c22-e36797294e2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator ;;
 

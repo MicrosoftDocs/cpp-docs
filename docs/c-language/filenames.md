@@ -1,14 +1,7 @@
 ---
-title: "Filenames | Microsoft Docs"
-ms.custom: ""
+title: "Filenames"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: f08d2b81-4bfc-49bc-986c-bfb2face8138
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Filenames
 

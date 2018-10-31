@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6016 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6016"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6016"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6016"]
 ms.assetid: 7bd3f274-d9c4-4bc4-8252-80bf168c4c3a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6016
 

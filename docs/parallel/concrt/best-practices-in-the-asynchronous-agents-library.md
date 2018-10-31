@@ -1,15 +1,8 @@
 ---
-title: "Best Practices in the Asynchronous Agents Library | Microsoft Docs"
-ms.custom: ""
+title: "Best Practices in the Asynchronous Agents Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["best practices, Asynchronous Agents Library", "Asynchronous Agents Library, best practices", "Asynchronous Agents Library, practices to avoid", "practices to avoid, Asynchronous Agents Library"]
 ms.assetid: 85f52354-41eb-4b0d-98c5-f7344ee8a8cf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Best Practices in the Asynchronous Agents Library
 

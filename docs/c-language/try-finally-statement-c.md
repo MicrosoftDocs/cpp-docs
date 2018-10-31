@@ -1,15 +1,8 @@
 ---
-title: "try-finally Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "try-finally Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["try-finally keyword [C]", "__finally keyword [C], try-finally statement syntax", "__finally keyword [C]", "structured exception handling, try-finally"]
 ms.assetid: 514400c1-c322-4bf3-9e48-3047240b8a82
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # try-finally Statement (C)
 

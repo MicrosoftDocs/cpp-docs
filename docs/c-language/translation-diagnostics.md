@@ -1,14 +1,7 @@
 ---
-title: "Translation: Diagnostics | Microsoft Docs"
-ms.custom: ""
+title: "Translation: Diagnostics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 3730ca7c-0147-452d-bd4a-6a1e97e9793e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Translation: Diagnostics
 

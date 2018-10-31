@@ -1,15 +1,8 @@
 ---
-title: "Pointer Subtraction | Microsoft Docs"
-ms.custom: ""
+title: "Pointer Subtraction"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointer subtraction"]
 ms.assetid: 4d515690-088a-43f6-bb8c-57b849f7ccf7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Pointer Subtraction
 

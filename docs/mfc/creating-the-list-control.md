@@ -1,15 +1,8 @@
 ---
-title: "Creating the List Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating the List Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListCtrl class [MFC], creating control", "list controls [MFC]"]
 ms.assetid: a4cb1729-31b6-4d2b-a44b-367474848a39
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating the List Control
 

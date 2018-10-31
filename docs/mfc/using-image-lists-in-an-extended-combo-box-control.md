@@ -1,15 +1,8 @@
 ---
-title: "Using Image Lists in an Extended Combo Box Control | Microsoft Docs"
-ms.custom: ""
+title: "Using Image Lists in an Extended Combo Box Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["image lists [MFC], combo boxes", "extended combo boxes [MFC], images", "images [MFC], combo box items"]
 ms.assetid: dfff25fe-af70-47a2-8032-3901d1e6842d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Image Lists in an Extended Combo Box Control
 

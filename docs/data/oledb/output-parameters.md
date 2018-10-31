@@ -1,15 +1,8 @@
 ---
-title: "Output Parameters | Microsoft Docs"
-ms.custom: ""
+title: "Output Parameters"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, stored procedures", "stored procedures, calling", "stored procedures, parameters", "procedure calls", "procedure calls, stored procedures"]
 ms.assetid: 4f7c2700-1c2d-42f3-8c9f-7e83962b2442
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Output Parameters
 

@@ -1,15 +1,8 @@
 ---
-title: "Implementing the Simple Read-Only Provider | Microsoft Docs"
-ms.custom: ""
+title: "Implementing the Simple Read-Only Provider"
 ms.date: "10/26/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["read-only provider"]
 ms.assetid: 22a8adb5-19da-43b5-9733-0ea72bb8684c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Implementing the Simple Read-Only Provider
 

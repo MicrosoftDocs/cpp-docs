@@ -1,15 +1,8 @@
 ---
-title: "Compiler Error C2813 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2813"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2813"]
 ms.assetid: 6cf2135f-7b82-42d1-909a-5e864308a09c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2813
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3195 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3195"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3195"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3195"]
 ms.assetid: 97e4f681-812b-49e8-ba57-24b7817e3cd8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3195
 

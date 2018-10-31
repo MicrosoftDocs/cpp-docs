@@ -1,15 +1,8 @@
 ---
-title: "White-Space Characters | Microsoft Docs"
-ms.custom: ""
+title: "White-Space Characters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["white space, characters", "characters, white space"]
 ms.assetid: 030ccbdc-2db3-4dd0-88c8-f5c2669ddebf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # White-Space Characters
 

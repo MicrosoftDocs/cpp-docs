@@ -1,15 +1,8 @@
 ---
-title: "Receiving Notifications | Microsoft Docs"
-ms.custom: ""
+title: "Receiving Notifications"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["notifications [C++], OLE DB consumers", "receiving notifications in OLE DB", "events [C++], notifications in OLE DB", "notifications [C++], events", "OLE DB consumers, notifications", "rowsets, event notifications", "OLE DB providers, notifications"]
 ms.assetid: 305a1103-0c87-40c8-94bc-7fbbdd52ae32
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Receiving Notifications
 

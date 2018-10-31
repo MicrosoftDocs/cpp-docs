@@ -1,15 +1,8 @@
 ---
-title: "Stand-Alone Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "Stand-Alone Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["standalone attributes", "attributes [C++/CLI], standalone"]
 ms.assetid: 0d72e84e-236c-43b3-ac9a-d9b91fcd6794
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Stand-Alone Attributes
 

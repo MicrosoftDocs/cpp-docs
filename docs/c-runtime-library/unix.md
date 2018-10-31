@@ -1,16 +1,9 @@
 ---
-title: "UNIX | Microsoft Docs"
-ms.custom: ""
+title: "UNIX"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["unix"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["UNIX", "POSIX compatibility", "POSIX file names", "UNIX, compatibility"]
 ms.assetid: 40792414-7a5b-415d-bfa8-2bfb1ebb3731
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # UNIX
 

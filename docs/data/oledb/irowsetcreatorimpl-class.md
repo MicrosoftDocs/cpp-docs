@@ -1,16 +1,9 @@
 ---
-title: "IRowsetCreatorImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetCreatorImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetCreatorImpl", "ATL.IRowsetCreatorImpl", "ATL::IRowsetCreatorImpl<T>", "ATL.IRowsetCreatorImpl<T>", "IRowsetCreatorImpl", "IRowsetCreatorImpl.SetSite", "IRowsetCreatorImpl<T>::SetSite", "IRowsetCreatorImpl::SetSite", "SetSite", "ATL.IRowsetCreatorImpl.SetSite", "ATL::IRowsetCreatorImpl<T>::SetSite", "ATL::IRowsetCreatorImpl::SetSite", "ATL.IRowsetCreatorImpl<T>.SetSite"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetCreatorImpl class", "SetSite method"]
 ms.assetid: 92cc950f-7978-4754-8d9a-defa63867d82
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetCreatorImpl Class
 

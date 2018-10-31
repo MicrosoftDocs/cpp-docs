@@ -1,15 +1,8 @@
 ---
-title: "Troubleshooting the Dialog Editor (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Troubleshooting the Dialog Editor (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], troubleshooting", "Dialog Editor [C++], troubleshooting", "dialog boxes [C++], troubleshooting"]
 ms.assetid: 21882868-5ac4-4a41-a4a6-eaaa059402ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Troubleshooting the Dialog Editor (C++)
 

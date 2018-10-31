@@ -1,15 +1,8 @@
 ---
-title: "Modifying WINVER and _WIN32_WINNT | Microsoft Docs"
-ms.custom: ""
+title: "Modifying WINVER and _WIN32_WINNT"
 ms.date: "09/04/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["WINVER in an upgraded Visual C++ project", "_WIN32_WINNT in an upgraded Visual C++ project"]
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Modifying WINVER and _WIN32_WINNT
 

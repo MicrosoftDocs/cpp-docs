@@ -1,16 +1,9 @@
 ---
-title: "CSemaphore Class | Microsoft Docs"
-ms.custom: ""
+title: "CSemaphore Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSemaphore", "AFXMT/CSemaphore", "AFXMT/CSemaphore::CSemaphore"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSemaphore [MFC], CSemaphore"]
 ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSemaphore Class
 

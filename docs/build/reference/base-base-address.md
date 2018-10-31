@@ -1,16 +1,9 @@
 ---
-title: "-BASE (Base Address) | Microsoft Docs"
-ms.custom: ""
+title: "/BASE (Base Address)"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/base", "VC.Project.VCLinkerTool.BaseAddress"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["base addresses [C++]", "programs [C++], preventing relocation", "semicolon [C++], specifier", "-BASE linker option", "key address size", "environment variables [C++], LIB", "programs [C++], base address", "LIB environment variable", "BASE linker option", "DLLs [C++], linking", "/BASE linker option", "@ symbol for base address", "executable files [C++], base address", "at sign symbol for base address"]
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /BASE (Base Address)
 

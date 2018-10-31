@@ -1,16 +1,9 @@
 ---
-title: "_WriteBarrier | Microsoft Docs"
-ms.custom: ""
+title: "_WriteBarrier"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_WriteBarrier"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WriteBarrier intrinsic", "_WriteBarrier intrinsic"]
 ms.assetid: a5ffdad9-0ca1-4eb7-b2f3-0f092c4bf4b5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _WriteBarrier
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 2) C4056 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 2) C4056"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4056"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4056"]
 ms.assetid: a3c3a9b8-ec30-452d-96cb-3694adcce789
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4056
 

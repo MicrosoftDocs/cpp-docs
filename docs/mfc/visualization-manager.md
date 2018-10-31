@@ -1,15 +1,8 @@
 ---
-title: "Visualization Manager | Microsoft Docs"
-ms.custom: ""
+title: "Visualization Manager"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visualization Manager"]
 ms.assetid: c9dd1365-27ac-42e5-8caa-1004525b4129
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visualization Manager
 

@@ -1,16 +1,9 @@
 ---
-title: "DUMPBIN Options | Microsoft Docs"
-ms.custom: ""
+title: "DUMPBIN Options"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["dumpbin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DUMPBIN program, options"]
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # DUMPBIN Options
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2512 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2512"
 ms.date: "02/09/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2512"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2512"]
 ms.assetid: 15206da9-1164-451a-b869-280e00711aad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2512
 

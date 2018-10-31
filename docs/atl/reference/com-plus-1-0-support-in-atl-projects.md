@@ -1,16 +1,9 @@
 ---
-title: "COM+ 1.0 Support in ATL Projects | Microsoft Docs"
-ms.custom: ""
+title: "COM+ 1.0 Support in ATL Projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.ATL.MTS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, COM+ 1.0 support"]
 ms.assetid: 51fb08ac-d632-4657-a4e0-d3f989f0b6f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COM+ 1.0 Support in ATL Projects
 

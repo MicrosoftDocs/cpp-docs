@@ -1,16 +1,9 @@
 ---
-title: "runtime_exception Class | Microsoft Docs"
-ms.custom: ""
+title: "runtime_exception Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["runtime_exception", "AMPRT/runtime_exception", "AMPRT/Concurrency::runtime_exception", "AMPRT/Concurrency::runtime_exception::get_error_code"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["runtime_exception class"]
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # runtime_exception Class
 

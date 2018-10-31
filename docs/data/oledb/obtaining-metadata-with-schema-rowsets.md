@@ -1,15 +1,8 @@
 ---
-title: "Obtaining Metadata with Schema Rowsets | Microsoft Docs"
-ms.custom: ""
+title: "Obtaining Metadata with Schema Rowsets"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["schema rowsets, getting OLE DB provider metadata", "OLE DB consumer templates, getting provider metadata", "metadata, getting (OLE DB Templates)"]
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Obtaining Metadata with Schema Rowsets
 

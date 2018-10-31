@@ -1,15 +1,8 @@
 ---
-title: "Features of Record View Classes  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Features of Record View Classes  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["record views, classes", "record view classes"]
 ms.assetid: e7b2820f-09c4-483f-83c0-317e8be42bdf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Features of Record View Classes  (MFC Data Access)
 

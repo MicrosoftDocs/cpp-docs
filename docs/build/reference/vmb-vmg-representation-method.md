@@ -1,16 +1,9 @@
 ---
-title: "-vmb, -vmg (Representation Method) | Microsoft Docs"
-ms.custom: ""
+title: "/vmb, -vmg (Representation Method)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/vmb", "/vmg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["vmb compiler option [C++]", "-vmg compiler option [C++]", "vmg compiler option [C++]", "-vmb compiler option [C++]", "/vmb compiler option [C++]", "representation method compiler options [C++]", "/vmg compiler option [C++]"]
 ms.assetid: ecdb391c-7dab-40b1-916b-673d10889fd4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /vmb, /vmg (Representation Method)
 

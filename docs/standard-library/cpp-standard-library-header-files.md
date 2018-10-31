@@ -1,15 +1,8 @@
 ---
-title: "C++ Standard Library Header Files | Microsoft Docs"
-ms.custom: ""
+title: "C++ Standard Library Header Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["header files, C++ Standard Library", "wrappers", "headers, C++ Standard Library", "libraries, C++ header files", "C++ Standard Library, header files", "Visual C++, header files"]
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C++ Standard Library Header Files
 

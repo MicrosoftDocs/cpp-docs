@@ -1,16 +1,10 @@
 ---
-title: "ptr::CreateInstance | Microsoft Docs"
-ms.custom: ""
+title: "ptr::CreateInstance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["ptr.CreateInstance", "msclr::com::ptr::CreateInstance", "msclr.com.ptr.CreateInstance", "ptr::CreateInstance"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ptr::CreateInstance"]
 ms.assetid: 9e8e4c4c-1651-4839-8829-5857d74470fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::CreateInstance
 

@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK2008 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK2008"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK2008"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2008"]
 ms.assetid: bbcd83c5-c8ae-439e-a033-63643a5bb373
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2008
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Errors C3100 Through C3199 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Errors C3100 Through C3199"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3188", "C3191", "C3193"]
 helpviewer_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3188", "C3191", "C3193"]
-dev_langs: ["C++"]
 ms.assetid: 7bc40c2f-6a8d-488a-b665-f39375afee77
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C3100 Through C3199
 

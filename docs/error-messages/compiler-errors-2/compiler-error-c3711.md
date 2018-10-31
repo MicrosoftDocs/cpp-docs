@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3711 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3711"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3711"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3711"]
 ms.assetid: 26d581cc-2153-4ee0-b814-a371184be3e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3711
 

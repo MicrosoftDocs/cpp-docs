@@ -1,14 +1,7 @@
 ---
-title: "A.8   Specifying Parallel Sections | Microsoft Docs"
-ms.custom: ""
+title: "A.8   Specifying Parallel Sections"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: cf399304-121e-4c07-9829-47e0dbc2ef10
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.8   Specifying Parallel Sections
 

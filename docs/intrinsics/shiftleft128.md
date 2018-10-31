@@ -1,16 +1,9 @@
 ---
-title: "__shiftleft128 | Microsoft Docs"
-ms.custom: ""
+title: "__shiftleft128"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__shiftleft128"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__shiftleft128 intrinsic"]
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __shiftleft128
 

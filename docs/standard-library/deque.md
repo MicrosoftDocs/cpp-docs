@@ -1,16 +1,9 @@
 ---
-title: "&lt;deque&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;deque&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<deque>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["deque header"]
 ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;deque&gt;
 

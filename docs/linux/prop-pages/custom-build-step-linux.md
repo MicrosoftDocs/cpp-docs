@@ -1,14 +1,7 @@
 ---
-title: "Custom Build Step Properties (Linux C++) | Microsoft Docs"
-ms.custom: ""
+title: "Custom Build Step Properties (Linux C++)"
 ms.date: "10/17/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 77a9c1fb-7c41-4a9b-9418-18ac17ce4e74
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 # Custom Build Step Properties (Linux C++)
 

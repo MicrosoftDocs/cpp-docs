@@ -1,16 +1,10 @@
 ---
-title: "Platform::MTAThreadAttribute Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::MTAThreadAttribute Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::MTAThreadAttribute::Equals", "VCCORLIB/Platform::MTAThreadAttribute::GetHashCode", "VCCORLIB/Platform::MTAThreadAttribute::ToString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::MTAThreadAttribute Class"]
 ms.assetid: bfc546a7-4333-4407-85b4-4721565e1f44
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::MTAThreadAttribute Class
 

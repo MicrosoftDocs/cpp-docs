@@ -1,16 +1,9 @@
 ---
-title: "Subscript Operator [] | Microsoft Docs"
-ms.custom: ""
+title: "Subscript Operator []"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["[]"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], subscript", "postfix operators [C++]", "[] operator", "subscript operator [C++], syntax"]
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Subscript Operator []
 

@@ -1,15 +1,8 @@
 ---
-title: "Installing and Getting Started with ODBC | Microsoft Docs"
-ms.custom: ""
+title: "Installing and Getting Started with ODBC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["installing ODBC", "ODBC, installing"]
 ms.assetid: 6b473481-1d68-468f-89f6-82b0fd7716fd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Installing and Getting Started with ODBC
 

@@ -1,16 +1,9 @@
 ---
-title: "Using CProgressCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CProgressCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CProgressCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["progress controls [MFC]", "CProgressCtrl class [MFC], using", "progress controls [MFC], CProgressCtrl", "progress controls [MFC], using"]
 ms.assetid: 61473270-196b-41ab-bf2b-467f46673539
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CProgressCtrl
 

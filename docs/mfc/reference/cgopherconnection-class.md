@@ -1,16 +1,9 @@
 ---
-title: "CGopherConnection Class | Microsoft Docs"
-ms.custom: ""
+title: "CGopherConnection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CGopherConnection", "AFXINET/CGopherConnection", "AFXINET/CGopherConnection::CGopherConnection", "AFXINET/CGopherConnection::CreateLocator", "AFXINET/CGopherConnection::GetAttribute", "AFXINET/CGopherConnection::OpenFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherConnection [MFC], CGopherConnection", "CGopherConnection [MFC], CreateLocator", "CGopherConnection [MFC], GetAttribute", "CGopherConnection [MFC], OpenFile"]
 ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CGopherConnection Class
 

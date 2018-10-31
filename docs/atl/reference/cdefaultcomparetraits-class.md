@@ -1,16 +1,9 @@
 ---
-title: "CDefaultCompareTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CDefaultCompareTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CDefaultCompareTraits", "ATLCOLL/ATL::CDefaultCompareTraits", "ATLCOLL/ATL::CDefaultCompareTraits::CompareElements", "ATLCOLL/ATL::CDefaultCompareTraits::CompareElementsOrdered"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDefaultCompareTraits class"]
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDefaultCompareTraits Class
 

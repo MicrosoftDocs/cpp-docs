@@ -1,15 +1,8 @@
 ---
-title: "Spin Button Member Functions | Microsoft Docs"
-ms.custom: ""
+title: "Spin Button Member Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["spin button control, methods", "CSpinButtonCtrl class [MFC], methods"]
 ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Spin Button Member Functions
 

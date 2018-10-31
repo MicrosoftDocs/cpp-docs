@@ -1,15 +1,8 @@
 ---
-title: "Help Files (HTML Help) | Microsoft Docs"
-ms.custom: ""
+title: "Help Files (HTML Help)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["file types [C++], HTML Help files"]
 ms.assetid: d30a1b1b-318f-4a78-8b60-93da53a224a8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Help Files (HTML Help)
 

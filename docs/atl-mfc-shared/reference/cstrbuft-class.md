@@ -1,16 +1,9 @@
 ---
-title: "CStrBufT Class | Microsoft Docs"
-ms.custom: ""
+title: "CStrBufT Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CStrBufT", "ATLSIMPSTR/ATL::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::SetLength", "ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH", "ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], custom memory management", "CStrBufT class", "shared classes, CStrBufT"]
 ms.assetid: 6b50fa8f-87e8-4ed4-a229-157ce128710f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStrBufT Class
 

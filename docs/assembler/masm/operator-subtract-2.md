@@ -1,16 +1,9 @@
 ---
-title: "operator - | Microsoft Docs"
-ms.custom: ""
+title: "operator -"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator -"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["- operator, syntax", "subtraction operator, syntax", "operators [MASM], subtraction", "arithmetic operators [C++], subtraction"]
 ms.assetid: 474607cb-e48d-4c91-bef6-91ff0971d5cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator -
 

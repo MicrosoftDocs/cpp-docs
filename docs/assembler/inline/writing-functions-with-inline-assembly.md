@@ -1,15 +1,8 @@
 ---
-title: "Writing Functions with Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Writing Functions with Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++], inline assembly", "inline assembly [C++], writing functions", "assembler [C++], writing functions", "__asm keyword [C++], in functions"]
 ms.assetid: b5df8a04-fdc7-4622-8c9e-e4b618927497
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Writing Functions with Inline Assembly
 

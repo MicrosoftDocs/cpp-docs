@@ -1,15 +1,8 @@
 ---
-title: "ATL Connection Points | Microsoft Docs"
-ms.custom: ""
+title: "ATL Connection Points"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["connections, connection points", "ATL, connection points", "connection points [C++], about connection points"]
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Connection Points
 

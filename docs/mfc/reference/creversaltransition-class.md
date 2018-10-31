@@ -1,16 +1,9 @@
 ---
-title: "CReversalTransition Class | Microsoft Docs"
-ms.custom: ""
+title: "CReversalTransition Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition::CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition::Create", "AFXANIMATIONCONTROLLER/CReversalTransition::m_duration"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CReversalTransition [MFC], CReversalTransition", "CReversalTransition [MFC], Create", "CReversalTransition [MFC], m_duration"]
 ms.assetid: e89516be-2d07-4885-95a8-fc278f46e3ad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CReversalTransition Class
 

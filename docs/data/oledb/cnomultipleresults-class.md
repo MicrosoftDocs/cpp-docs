@@ -1,16 +1,9 @@
 ---
-title: "CNoMultipleResults Class | Microsoft Docs"
-ms.custom: ""
+title: "CNoMultipleResults Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CNoMultipleResults", "ATL.CNoMultipleResults", "ATL::CNoMultipleResults"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CNoMultipleResults class"]
 ms.assetid: 343e77c4-b319-476e-b592-901ab9b2f34e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CNoMultipleResults Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Modules Button | Microsoft Docs"
-ms.custom: ""
+title: "Modules Button"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Modules button"]
 ms.assetid: 51552765-865a-4acc-aeae-f78afb73289a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Modules Button
 

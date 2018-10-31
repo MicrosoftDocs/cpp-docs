@@ -1,16 +1,10 @@
 ---
-title: "Platform::ObjectDisposedException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::ObjectDisposedException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ObjectDisposedException", "VCCORLIB/Platform::ObjectDisposedException::ObjectDisposedException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ObjectDisposedException"]
 ms.assetid: 68506fe4-d09c-4407-999f-1e3edb261d41
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::ObjectDisposedException Class
 

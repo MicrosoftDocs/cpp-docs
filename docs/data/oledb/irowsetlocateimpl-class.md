@@ -1,16 +1,9 @@
 ---
-title: "IRowsetLocateImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetLocateImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IRowsetLocateImpl", "ATL.IRowsetLocateImpl.Compare", "IRowsetLocateImpl::Compare", "IRowsetLocateImpl.Compare", "ATL::IRowsetLocateImpl::Compare", "GetRowsAt", "IRowsetLocateImpl.GetRowsAt", "ATL::IRowsetLocateImpl::GetRowsAt", "IRowsetLocateImpl::GetRowsAt", "ATL.IRowsetLocateImpl.GetRowsAt", "IRowsetLocateImpl::GetRowsByBookmark", "IRowsetLocateImpl.GetRowsByBookmark", "GetRowsByBookmark", "IRowsetLocateImpl::Hash", "IRowsetLocateImpl.Hash", "m_rgBookmarks", "IRowsetLocateImpl::m_rgBookmarks", "ATL.IRowsetLocateImpl.m_rgBookmarks", "ATL::IRowsetLocateImpl::m_rgBookmarks", "IRowsetLocateImpl.m_rgBookmarks"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["providers, bookmarks", "IRowsetLocateImpl class", "bookmarks, OLE DB", "Compare method", "GetRowsAt method", "GetRowsByBookmark method", "Hash method", "m_rgbookmarks"]
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetLocateImpl Class
 

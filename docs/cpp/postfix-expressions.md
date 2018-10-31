@@ -1,15 +1,8 @@
 ---
-title: "Postfix Expressions | Microsoft Docs"
-ms.custom: ""
+title: "Postfix Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], postfix", "postfix expressions", "expressions [C++], postfix"]
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Postfix Expressions
 

@@ -1,19 +1,12 @@
 ---
-title: "iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l | Microsoft Docs"
-ms.custom: ""
+title: "iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["iscntrl", "_iswcntrl_l", "_iscntrl_l", "iswcntrl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_istcntrl_l", "_iswcntrl_l", "iswcntrl", "_iscntrl_l", "iscntrl", "_istcntrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["iscntrl function", "_iscntrl_l function", "_iswcntrl_l function", "_istcntrl function", "istcntrl function", "iswcntrl function", "_istcntrl_l function"]
 ms.assetid: 616eebf9-aed4-49ba-ba2c-8677c8fe6fb5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 

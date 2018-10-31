@@ -1,14 +1,7 @@
 ---
-title: "FpCsr | Microsoft Docs"
-ms.custom: ""
+title: "FpCsr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: dff95d5d-7589-4432-82db-64b459c24352
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # FpCsr
 

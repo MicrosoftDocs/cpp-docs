@@ -1,15 +1,9 @@
 ---
-title: "&lt;bitset&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;bitset&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["bitset/std::operator&amp;", "bitset/std::operator&gt;&gt;", "bitset/std::operator&lt;&lt;", "bitset/std::operator^", "bitset/std::operator|"]
-dev_langs: ["C++"]
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset)"]
-ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt; operators
 

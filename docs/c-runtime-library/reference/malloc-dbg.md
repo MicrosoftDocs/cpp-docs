@@ -1,19 +1,12 @@
 ---
-title: "_malloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_malloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_malloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["malloc_dbg", "_malloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["malloc_dbg function", "memory allocation", "_malloc_dbg function"]
 ms.assetid: c97eca51-140b-4461-8bd2-28965b49ecdb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _malloc_dbg
 

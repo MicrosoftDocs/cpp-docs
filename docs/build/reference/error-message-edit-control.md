@@ -1,15 +1,8 @@
 ---
-title: "Error Message Edit Control | Microsoft Docs"
-ms.custom: ""
+title: "Error Message Edit Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Error Message edit control"]
 ms.assetid: 79320694-c30e-4c37-bb94-6cb36c32d4e6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Error Message Edit Control
 

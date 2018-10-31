@@ -1,16 +1,9 @@
 ---
-title: "-DELAYSIGN (Partially Sign an Assembly) | Microsoft Docs"
-ms.custom: ""
+title: "/DELAYSIGN (Partially Sign an Assembly)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/delaysign", "VC.Project.VCLinkerTool.DelaySign"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/DELAYSIGN linker option", "DELAYSIGN linker option", "-DELAYSIGN linker option"]
 ms.assetid: 15244d30-3ecb-492f-a408-ffe81f38de20
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DELAYSIGN (Partially Sign an Assembly)
 

@@ -1,15 +1,8 @@
 ---
-title: "Precedence in Inference Rules | Microsoft Docs"
-ms.custom: ""
+title: "Precedence in Inference Rules"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inference rules in NMAKE", "rules, inference", "precedence, inference rule"]
 ms.assetid: 69e3dc02-0815-4c3a-b02b-1cb85fceaf24
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Precedence in Inference Rules
 

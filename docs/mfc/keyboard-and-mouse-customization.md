@@ -1,15 +1,8 @@
 ---
-title: "Keyboard and Mouse Customization | Microsoft Docs"
-ms.custom: ""
+title: "Keyboard and Mouse Customization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["customizations [MFC], keyboard and mouse (MFC Extensions)", "keyboard and mouse customizations (MFC Extensions)"]
 ms.assetid: 1f789f1b-5f2e-4b11-b974-e3e2a2e49d82
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Keyboard and Mouse Customization
 

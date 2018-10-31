@@ -1,16 +1,9 @@
 ---
-title: "CCmdUI Class | Microsoft Docs"
-ms.custom: ""
+title: "CCmdUI Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCmdUI", "AFXWIN/CCmdUI", "AFXWIN/CCmdUI::ContinueRouting", "AFXWIN/CCmdUI::Enable", "AFXWIN/CCmdUI::SetCheck", "AFXWIN/CCmdUI::SetRadio", "AFXWIN/CCmdUI::SetText", "AFXWIN/CCmdUI::m_nID", "AFXWIN/CCmdUI::m_nIndex", "AFXWIN/CCmdUI::m_pMenu", "AFXWIN/CCmdUI::m_pOther", "AFXWIN/CCmdUI::m_pSubMenu"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCmdUI [MFC], ContinueRouting", "CCmdUI [MFC], Enable", "CCmdUI [MFC], SetCheck", "CCmdUI [MFC], SetRadio", "CCmdUI [MFC], SetText", "CCmdUI [MFC], m_nID", "CCmdUI [MFC], m_nIndex", "CCmdUI [MFC], m_pMenu", "CCmdUI [MFC], m_pOther", "CCmdUI [MFC], m_pSubMenu"]
 ms.assetid: 04eaaaf5-f510-48ab-b425-94665ba24766
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCmdUI Class
 

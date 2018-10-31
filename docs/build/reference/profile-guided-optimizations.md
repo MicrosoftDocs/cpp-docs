@@ -1,15 +1,8 @@
 ---
-title: "Profile-Guided Optimizations | Microsoft Docs"
-ms.custom: ""
+title: "Profile-Guided Optimizations"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["profile-guided optimizations", "optimization, profile-guided [C++]"]
 ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Profile-Guided Optimizations
 

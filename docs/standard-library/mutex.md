@@ -1,15 +1,8 @@
 ---
-title: "&lt;mutex&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;mutex&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<mutex>"]
-dev_langs: ["C++"]
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;mutex&gt;
 

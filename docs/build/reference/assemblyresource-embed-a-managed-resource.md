@@ -1,16 +1,9 @@
 ---
-title: "-ASSEMBLYRESOURCE (Embed a Managed Resource) | Microsoft Docs"
-ms.custom: ""
+title: "/ASSEMBLYRESOURCE (Embed a Managed Resource)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.EmbedManagedResourceFile", "/ASSEMBLYRESOURCE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ASSEMBLYRESOURCE linker option", "assemblies [C++]", "-ASSEMBLYRESOURCE linker option", "assemblies [C++], linking resource files", "/ASSEMBLYRESOURCE linker option"]
 ms.assetid: 0ce6e1fb-921b-4b1b-a59c-d35388d789f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ASSEMBLYRESOURCE (Embed a Managed Resource)
 

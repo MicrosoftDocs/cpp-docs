@@ -1,16 +1,9 @@
 ---
-title: "&lt;locale&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;locale&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<locale>", "locale/std::<locale>", "std::<locale>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["locale header"]
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;locale&gt;
 

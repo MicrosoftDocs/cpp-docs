@@ -1,16 +1,9 @@
 ---
-title: "CMFCDropDownToolbarButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCDropDownToolbarButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCDropDownToolbarButton", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::CMFCDropDownToolbarButton", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::CopyFrom", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::DropDownToolbar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::ExportToMenuButton", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::GetDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::IsDropDown", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::IsExtraSize", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnCalculateSize", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnChangeParentWnd", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnClick", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnClickUp", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnContextHelp", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnCustomizeMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnDraw", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnDrawOnCustomizeList", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::Serialize", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::SetDefaultCommand", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::m_uiShowBarDelay"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDropDownToolbarButton [MFC], CMFCDropDownToolbarButton", "CMFCDropDownToolbarButton [MFC], CopyFrom", "CMFCDropDownToolbarButton [MFC], DropDownToolbar", "CMFCDropDownToolbarButton [MFC], ExportToMenuButton", "CMFCDropDownToolbarButton [MFC], GetDropDownToolBar", "CMFCDropDownToolbarButton [MFC], IsDropDown", "CMFCDropDownToolbarButton [MFC], IsExtraSize", "CMFCDropDownToolbarButton [MFC], OnCalculateSize", "CMFCDropDownToolbarButton [MFC], OnChangeParentWnd", "CMFCDropDownToolbarButton [MFC], OnClick", "CMFCDropDownToolbarButton [MFC], OnClickUp", "CMFCDropDownToolbarButton [MFC], OnContextHelp", "CMFCDropDownToolbarButton [MFC], OnCustomizeMenu", "CMFCDropDownToolbarButton [MFC], OnDraw", "CMFCDropDownToolbarButton [MFC], OnDrawOnCustomizeList", "CMFCDropDownToolbarButton [MFC], Serialize", "CMFCDropDownToolbarButton [MFC], SetDefaultCommand", "CMFCDropDownToolbarButton [MFC], m_uiShowBarDelay"]
 ms.assetid: bc9d69e6-bd3e-4c15-9368-e80a504a0ba7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCDropDownToolbarButton Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Implementing a Property Page (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Implementing a Property Page (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["property pages, implementing"]
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Example: Implementing a Property Page
 

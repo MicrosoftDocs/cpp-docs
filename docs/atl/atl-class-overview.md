@@ -1,16 +1,9 @@
 ---
-title: "ATL Class Overview | Microsoft Docs"
-ms.custom: ""
+title: "ATL Class Overview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.atl.classes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], ATL", "ATL, class reference"]
 ms.assetid: c38ac93d-c3a2-4ce7-8153-f1d34c0f0fa6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Class Overview
 

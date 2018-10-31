@@ -1,16 +1,9 @@
 ---
-title: "__cpuid, __cpuidex | Microsoft Docs"
-ms.custom: ""
+title: "__cpuid, __cpuidex"
 ms.date: "03/22/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__cpuid_cpp", "__cpuid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__cpuid intrinsic", "cpuid instruction", "cpuid intrinsic"]
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __cpuid, __cpuidex
 

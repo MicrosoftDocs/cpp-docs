@@ -1,16 +1,9 @@
 ---
-title: "CVTRES Warning CVT4001 | Microsoft Docs"
-ms.custom: ""
+title: "CVTRES Warning CVT4001"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["CVT4001"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CVT4001"]
 ms.assetid: 39c13bc2-92fa-4d79-8171-039b27329dcc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # CVTRES Warning CVT4001
 

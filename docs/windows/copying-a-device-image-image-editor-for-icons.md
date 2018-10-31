@@ -1,15 +1,8 @@
 ---
-title: "Copying a Device Image (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Copying a Device Image (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["display devices [C++], copying images", "cursors [C++], copying", "icons, copying"]
 ms.assetid: 0510c20c-f820-4770-92a5-e9263a63d8be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Copying a Device Image (Image Editor for Icons)
 

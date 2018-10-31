@@ -1,16 +1,9 @@
 ---
-title: "max_variable_size Class | Microsoft Docs"
-ms.custom: ""
+title: "max_variable_size Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::max_variable_size", "allocators/stdext::max_variable_size::allocated", "allocators/stdext::max_variable_size::deallocated", "allocators/stdext::max_variable_size::full", "allocators/stdext::max_variable_size::released", "allocators/stdext::max_variable_size::saved"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::max_variable_size", "stdext::max_variable_size [C++], allocated", "stdext::max_variable_size [C++], deallocated", "stdext::max_variable_size [C++], full", "stdext::max_variable_size [C++], released", "stdext::max_variable_size [C++], saved"]
 ms.assetid: 9f2e9df0-4148-4b37-bc30-f8eca0ef86ae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # max_variable_size Class
 

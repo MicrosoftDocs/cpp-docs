@@ -1,16 +1,9 @@
 ---
-title: "-Os, -Ot (Favor Small Code, Favor Fast Code) | Microsoft Docs"
-ms.custom: ""
+title: "/Os, /Ot (Favor Small Code, Favor Fast Code)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.FavorSizeOrSpeed", "/os", "VC.Project.VCCLCompilerTool.FavorSizeOrSpeed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["favor fast code compiler option [C++]", "/Os compiler option [C++]", "Ot compiler option [C++]", "/Ot compiler option [C++]", "small machine code", "-Ot compiler option [C++]", "fast code", "favor small code compiler option [C++]", "Os compiler option [C++]", "-Os compiler option [C++]"]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Os, /Ot (Favor Small Code, Favor Fast Code)
 

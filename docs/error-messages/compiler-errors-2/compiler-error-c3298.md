@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3298 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3298"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3298"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3298"]
 ms.assetid: 458c2680-95bb-4d5e-895f-ce4115844193
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3298
 

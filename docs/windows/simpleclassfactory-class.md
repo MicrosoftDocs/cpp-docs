@@ -1,16 +1,10 @@
 ---
-title: "SimpleClassFactory Class | Microsoft Docs"
-ms.custom: ""
+title: "SimpleClassFactory Class"
 ms.date: "09/7/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::SimpleClassFactory", "module/Microsoft::WRL::SimpleClassFactory::CreateInstance"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::SimpleClassFactory class", "Microsoft::WRL::SimpleClassFactory::CreateInstance method"]
 ms.assetid: 6edda1b2-4e44-4e14-9364-72f519249962
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleClassFactory Class
 

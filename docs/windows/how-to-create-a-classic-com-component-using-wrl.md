@@ -1,14 +1,8 @@
 ---
-title: "How to: Create a Classic COM Component Using WRL | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create a Classic COM Component Using WRL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 5efe7690-90d5-4c3c-9e53-11a14cefcb19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Create a Classic COM Component Using WRL
 

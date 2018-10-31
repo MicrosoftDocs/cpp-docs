@@ -1,19 +1,12 @@
 ---
-title: "_mkgmtime, _mkgmtime32, _mkgmtime64 | Microsoft Docs"
-ms.custom: ""
+title: "_mkgmtime, _mkgmtime32, _mkgmtime64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_mkgmtime32", "_mkgmtime64", "_mkgmtime"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_mkgmtime64", "mkgmtime32", "_mkgmtime32", "mkgmtime", "mkgmtime64", "_mkgmtime"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mkgmtime32 function", "time functions", "mkgmtime function", "_mkgmtime function", "converting times", "mkgmtime64 function", "_mkgmtime64 function", "_mkgmtime32 function", "time, converting"]
 ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mkgmtime, _mkgmtime32, _mkgmtime64
 

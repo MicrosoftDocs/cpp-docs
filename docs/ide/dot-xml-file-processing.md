@@ -1,15 +1,8 @@
 ---
-title: ".Xml File Processing | Microsoft Docs"
-ms.custom: ""
+title: ".Xml File Processing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["XML documentation, processing XML file"]
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # .Xml File Processing
 

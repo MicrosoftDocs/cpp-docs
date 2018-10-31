@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2567 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2567"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2567"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2567"]
 ms.assetid: 9c140ac9-7059-47e6-9ba1-e7939c8c0dc3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2567
 

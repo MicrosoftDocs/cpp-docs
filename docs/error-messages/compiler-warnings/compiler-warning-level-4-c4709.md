@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4709 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4709"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4709"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4709"]
 ms.assetid: 8abfdd45-8c70-4c27-b0fb-ca0c3f0fccf9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4709
 

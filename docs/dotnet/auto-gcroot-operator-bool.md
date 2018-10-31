@@ -1,16 +1,10 @@
 ---
-title: "auto_gcroot::operator bool | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot::operator bool"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_gcroot.operator bool", "auto_gcroot::operator bool", "msclr.auto_gcroot.operator bool", "msclr::auto_gcroot::operator bool", "operator bool"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bool operator"]
 ms.assetid: 87d38498-4221-4de8-8d02-c2dd2e6274ec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::operator bool
 

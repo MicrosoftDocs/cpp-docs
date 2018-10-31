@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3270 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3270"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3270"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3270"]
 ms.assetid: 70e6e76b-7415-48f5-a61e-2ed50caf08e4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3270
 

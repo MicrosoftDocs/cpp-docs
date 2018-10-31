@@ -1,15 +1,9 @@
 ---
-title: "How to: Pin Pointers and Arrays | Microsoft Docs"
-ms.custom: ""
+title: "How to: Pin Pointers and Arrays"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointers, pinning", "arrays [C++], pinning"]
 ms.assetid: ee783260-e676-46b8-a38e-11a06f1d57b0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Pin Pointers and Arrays
 

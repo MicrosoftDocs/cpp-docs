@@ -1,14 +1,9 @@
 ---
-title: "How to: Create and Use shared_ptr Instances | Microsoft Docs"
+title: "How to: Create and Use shared_ptr Instances"
 ms.custom: "how-to"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create and Use shared_ptr Instances
 

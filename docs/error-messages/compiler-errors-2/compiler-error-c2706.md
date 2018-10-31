@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2706 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2706"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2706"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2706"]
 ms.assetid: e18da924-c42d-4b09-8e29-f4e0382d7dc6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2706
 

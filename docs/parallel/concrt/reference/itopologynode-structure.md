@@ -1,16 +1,9 @@
 ---
-title: "ITopologyNode Structure | Microsoft Docs"
-ms.custom: ""
+title: "ITopologyNode Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["ITopologyNode", "CONCRTRM/concurrency::ITopologyNode", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetExecutionResourceCount", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetFirstExecutionResource", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetId", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNext", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNumaNode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ITopologyNode structure"]
 ms.assetid: 92e7e032-04f6-4c7c-be36-8f9a35fc4734
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ITopologyNode Structure
 

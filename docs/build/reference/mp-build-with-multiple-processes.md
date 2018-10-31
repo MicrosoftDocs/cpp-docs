@@ -1,15 +1,8 @@
 ---
-title: "/MP (Build with Multiple Processes) | Microsoft Docs"
-ms.custom: ""
+title: "/MP (Build with Multiple Processes)"
 ms.date: "02/22/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.MultiProcessorCompilation"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-MP compiler option (C++)", "/MP compiler option (C++)", "MP compiler option (C++)", "cl.exe compiler, multi-process build"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MP (Build with Multiple Processes)
 

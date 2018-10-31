@@ -1,19 +1,12 @@
 ---
-title: "_aligned_recalloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_recalloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_recalloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_aligned_recalloc_dbg", "aligned_recalloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_recalloc_dbg function", "_aligned_recalloc_dbg function"]
 ms.assetid: 55c3c27e-561c-4d6b-9bf9-1e34cc556e4b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_recalloc_dbg
 

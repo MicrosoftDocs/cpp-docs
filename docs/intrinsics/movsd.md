@@ -1,16 +1,9 @@
 ---
-title: "__movsd | Microsoft Docs"
-ms.custom: ""
+title: "__movsd"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__movsd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rep movsd instruction", "__movsd intrinsic", "movsd instruction"]
 ms.assetid: eb5cccf3-aa76-47f0-b9fc-eeca38fd943f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __movsd
 

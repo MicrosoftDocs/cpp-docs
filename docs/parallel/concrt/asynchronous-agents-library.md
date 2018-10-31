@@ -1,15 +1,8 @@
 ---
-title: "Asynchronous Agents Library | Microsoft Docs"
-ms.custom: ""
+title: "Asynchronous Agents Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Agents Library", "Asynchronous Agents Library"]
 ms.assetid: d2a72a31-8ba6-4220-ad7a-e403a6acaa42
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Asynchronous Agents Library
 

@@ -1,16 +1,9 @@
 ---
-title: "ctype&lt;char&gt; Class | Microsoft Docs"
-ms.custom: ""
+title: "ctype&lt;char&gt; Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["ctype<char>", "locale/std::ctype<char>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ctype<char> class"]
 ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ctype&lt;char&gt; Class
 

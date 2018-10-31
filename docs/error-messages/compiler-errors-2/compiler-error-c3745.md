@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3745 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3745"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3745"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3745"]
 ms.assetid: 1e64aec5-7e53-47e5-bc7d-3905230cfc66
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3745
 

@@ -1,15 +1,8 @@
 ---
-title: "MFC DLL Frequently Asked Questions | Microsoft Docs"
-ms.custom: ""
+title: "MFC DLL Frequently Asked Questions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["troubleshooting [C++], DLLs", "DLLs [C++], frequently asked questions", "FAQs [C++], DLLs"]
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # DLL Frequently Asked Questions
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3741 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3741"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3741"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3741"]
 ms.assetid: ed311315-cc32-49c9-97fa-01b293d81526
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3741
 

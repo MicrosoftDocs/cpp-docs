@@ -1,15 +1,8 @@
 ---
-title: "How to: Set LIB.EXE Options in the Visual Studio Development Environment | Microsoft Docs"
-ms.custom: ""
+title: "How to: Set LIB.EXE Options in the Visual Studio Development Environment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lib.exe options, setting in the Visual Studio Development Environment"]
 ms.assetid: b00da2bb-19e2-4078-a912-0d2e9294d7a7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to: Set LIB.EXE Options in the Visual Studio Development Environment
 

@@ -1,15 +1,8 @@
 ---
-title: "Allocating Zero Memory | Microsoft Docs"
-ms.custom: ""
+title: "Allocating Zero Memory"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory allocation, zero memory", "zero memory"]
 ms.assetid: 768f2ab9-83a1-4887-8eb5-c094c18489a8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Allocating Zero Memory
 

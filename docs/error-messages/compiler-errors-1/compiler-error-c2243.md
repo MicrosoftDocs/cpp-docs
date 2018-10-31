@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2243 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2243"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2243"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2243"]
 ms.assetid: b90065bb-d251-4ba9-8b4c-280ee13fa9c0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2243
 

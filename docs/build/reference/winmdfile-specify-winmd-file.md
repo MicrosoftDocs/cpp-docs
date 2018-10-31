@@ -1,15 +1,8 @@
 ---
-title: "-WINMDFILE (Specify winmd File) | Microsoft Docs"
-ms.custom: ""
+title: "/WINMDFILE (Specify winmd File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateWindowsMetadataFile"]
-dev_langs: ["C++"]
 ms.assetid: 062b41b3-14d6-432c-a361-fdb66e918931
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WINMDFILE (Specify winmd File)
 

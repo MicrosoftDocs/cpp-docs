@@ -1,15 +1,8 @@
 ---
-title: "Environment-Variable Macros | Microsoft Docs"
-ms.custom: ""
+title: "Environment-Variable Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, environment variable macros", "environment variables, macros in NMAKE", "macros, environment-variable"]
 ms.assetid: f8e96635-0906-47b0-9f56-12a6fdf5e347
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Environment-Variable Macros
 

@@ -1,15 +1,8 @@
 ---
-title: "New Project From Existing Code Release Configuration | Microsoft Docs"
-ms.custom: ""
+title: "New Project From Existing Code Release Configuration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.importwiz.releasesettings"]
-dev_langs: ["C++"]
 ms.assetid: 3e2fc73c-bdbd-4790-b2bd-d31731f0cece
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard
 

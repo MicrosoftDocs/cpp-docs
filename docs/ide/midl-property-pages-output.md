@@ -1,16 +1,9 @@
 ---
-title: "MIDL Property Pages: Output | Microsoft Docs"
-ms.custom: ""
+title: "MIDL Property Pages: Output"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCMidlTool.ProxyFileName", "VC.Project.VCMidlTool.GenerateTypeLibrary", "VC.Project.VCMidlTool.HeaderFileName", "VC.Project.VCMidlTool.InterfaceIdentifierFileName", "VC.Project.VCMidlTool.OutputDirectory", "VC.Project.VCMidlTool.DLLDataFileName", "VC.Project.VCMidlTool.TypeLibraryName"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MIDL, property pages"]
 ms.assetid: b850b21b-ed38-46dd-a712-807e8eabd9aa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MIDL Property Pages: Output
 

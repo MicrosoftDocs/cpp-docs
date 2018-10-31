@@ -1,16 +1,9 @@
 ---
-title: "case  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "case  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.case"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["case attribute"]
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # case (C++)
 

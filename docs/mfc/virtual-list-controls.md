@@ -1,15 +1,8 @@
 ---
-title: "Virtual List Controls | Microsoft Docs"
-ms.custom: ""
+title: "Virtual List Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cache, virtual list control item data", "list controls [MFC], virtual", "list controls [MFC], List view", "virtual list controls"]
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Virtual List Controls
 

@@ -1,16 +1,9 @@
 ---
-title: "__vmx_vmptrld | Microsoft Docs"
-ms.custom: ""
+title: "__vmx_vmptrld"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__vmx_vmptrld"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__vmx_vmptrld intrinsic", "VMPTRLD instruction"]
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __vmx_vmptrld
 

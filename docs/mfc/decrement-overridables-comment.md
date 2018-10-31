@@ -1,15 +1,8 @@
 ---
-title: "-- Overridables Comment | Microsoft Docs"
-ms.custom: ""
+title: "-- Overridables Comment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Overridables comment in MFC source files", "MFC source files, Overridables comment", "overriding, Overridables comment in MFC source files", "comments, MFC"]
 ms.assetid: 8968dea5-0d94-451f-bcb2-991580e65ba2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # // Overridables Comment
 

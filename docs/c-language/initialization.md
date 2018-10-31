@@ -1,15 +1,8 @@
 ---
-title: "Initialization | Microsoft Docs"
-ms.custom: ""
+title: "Initialization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["initializers, variable", "types [C], initializing", "initializing variables", "initializers"]
 ms.assetid: f009ee12-3df6-4260-b7e4-a6149ebb95aa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initialization
 

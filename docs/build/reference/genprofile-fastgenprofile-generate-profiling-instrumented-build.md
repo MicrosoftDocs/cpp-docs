@@ -1,15 +1,9 @@
 ---
-title: "/GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build) | Microsoft Docs"
-ms.custom: ""
+title: "/GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["GENPROFILE", "FASTGENPROFILE", "/GENPROFILE", "/FASTGENPROFILE"]
 helpviewer_keywords: ["GENPROFILE", "FASTGENPROFILE"]
 ms.assetid: deff5ce7-46f5-448a-b9cd-a7a83a6864c6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)
 

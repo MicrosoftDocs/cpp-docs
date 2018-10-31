@@ -1,16 +1,9 @@
 ---
-title: "CToolTipCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CToolTipCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CToolTipCtrl", "AFXCMN/CToolTipCtrl", "AFXCMN/CToolTipCtrl::CToolTipCtrl", "AFXCMN/CToolTipCtrl::Activate", "AFXCMN/CToolTipCtrl::AddTool", "AFXCMN/CToolTipCtrl::AdjustRect", "AFXCMN/CToolTipCtrl::Create", "AFXCMN/CToolTipCtrl::CreateEx", "AFXCMN/CToolTipCtrl::DelTool", "AFXCMN/CToolTipCtrl::GetBubbleSize", "AFXCMN/CToolTipCtrl::GetCurrentTool", "AFXCMN/CToolTipCtrl::GetDelayTime", "AFXCMN/CToolTipCtrl::GetMargin", "AFXCMN/CToolTipCtrl::GetMaxTipWidth", "AFXCMN/CToolTipCtrl::GetText", "AFXCMN/CToolTipCtrl::GetTipBkColor", "AFXCMN/CToolTipCtrl::GetTipTextColor", "AFXCMN/CToolTipCtrl::GetTitle", "AFXCMN/CToolTipCtrl::GetToolCount", "AFXCMN/CToolTipCtrl::GetToolInfo", "AFXCMN/CToolTipCtrl::HitTest", "AFXCMN/CToolTipCtrl::Pop", "AFXCMN/CToolTipCtrl::Popup", "AFXCMN/CToolTipCtrl::RelayEvent", "AFXCMN/CToolTipCtrl::SetDelayTime", "AFXCMN/CToolTipCtrl::SetMargin", "AFXCMN/CToolTipCtrl::SetMaxTipWidth", "AFXCMN/CToolTipCtrl::SetTipBkColor", "AFXCMN/CToolTipCtrl::SetTipTextColor", "AFXCMN/CToolTipCtrl::SetTitle", "AFXCMN/CToolTipCtrl::SetToolInfo", "AFXCMN/CToolTipCtrl::SetToolRect", "AFXCMN/CToolTipCtrl::SetWindowTheme", "AFXCMN/CToolTipCtrl::Update", "AFXCMN/CToolTipCtrl::UpdateTipText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CToolTipCtrl [MFC], CToolTipCtrl", "CToolTipCtrl [MFC], Activate", "CToolTipCtrl [MFC], AddTool", "CToolTipCtrl [MFC], AdjustRect", "CToolTipCtrl [MFC], Create", "CToolTipCtrl [MFC], CreateEx", "CToolTipCtrl [MFC], DelTool", "CToolTipCtrl [MFC], GetBubbleSize", "CToolTipCtrl [MFC], GetCurrentTool", "CToolTipCtrl [MFC], GetDelayTime", "CToolTipCtrl [MFC], GetMargin", "CToolTipCtrl [MFC], GetMaxTipWidth", "CToolTipCtrl [MFC], GetText", "CToolTipCtrl [MFC], GetTipBkColor", "CToolTipCtrl [MFC], GetTipTextColor", "CToolTipCtrl [MFC], GetTitle", "CToolTipCtrl [MFC], GetToolCount", "CToolTipCtrl [MFC], GetToolInfo", "CToolTipCtrl [MFC], HitTest", "CToolTipCtrl [MFC], Pop", "CToolTipCtrl [MFC], Popup", "CToolTipCtrl [MFC], RelayEvent", "CToolTipCtrl [MFC], SetDelayTime", "CToolTipCtrl [MFC], SetMargin", "CToolTipCtrl [MFC], SetMaxTipWidth", "CToolTipCtrl [MFC], SetTipBkColor", "CToolTipCtrl [MFC], SetTipTextColor", "CToolTipCtrl [MFC], SetTitle", "CToolTipCtrl [MFC], SetToolInfo", "CToolTipCtrl [MFC], SetToolRect", "CToolTipCtrl [MFC], SetWindowTheme", "CToolTipCtrl [MFC], Update", "CToolTipCtrl [MFC], UpdateTipText"]
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CToolTipCtrl Class
 

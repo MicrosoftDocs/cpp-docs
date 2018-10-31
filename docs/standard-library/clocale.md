@@ -1,16 +1,9 @@
 ---
-title: "&lt;clocale&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;clocale&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<clocale>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["clocale header"]
 ms.assetid: 5bde3e01-cf67-4f1f-a383-447ec814d00e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;clocale&gt;
 

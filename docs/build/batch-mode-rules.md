@@ -1,15 +1,8 @@
 ---
-title: "Batch-Mode Rules | Microsoft Docs"
-ms.custom: ""
+title: "Batch-Mode Rules"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inference rules in NMAKE", "NMAKE program, inference rules", "batch-mode inference rules in NMAKE"]
 ms.assetid: 0650b547-ef19-4455-9bba-fa567dcf88f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Batch-Mode Rules
 

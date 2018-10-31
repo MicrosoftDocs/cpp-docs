@@ -1,15 +1,8 @@
 ---
-title: "ATL Support for DHTML Controls | Microsoft Docs"
-ms.custom: ""
+title: "ATL Support for DHTML Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["HTML controls, ATL support", "DHTML controls, ATL support", "DHTML controls"]
 ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Support for DHTML Controls
 

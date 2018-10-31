@@ -1,15 +1,8 @@
 ---
-title: "Preparing a Test Machine To Run a Debug Executable | Microsoft Docs"
-ms.custom: ""
+title: "Preparing a Test Machine To Run a Debug Executable"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["debug executable, preparing a test machine to run"]
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Preparing a Test Machine To Run a Debug Executable
 

@@ -1,16 +1,9 @@
 ---
-title: "Options, ATL Property Page Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Options, ATL Property Page Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.ppg.options"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Property Page Wizard, options"]
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Options, ATL Property Page Wizard
 

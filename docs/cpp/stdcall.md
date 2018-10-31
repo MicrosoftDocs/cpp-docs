@@ -1,16 +1,9 @@
 ---
-title: "__stdcall | Microsoft Docs"
-ms.custom: ""
+title: "__stdcall"
 ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__stdcall_cpp", "__stdcall", "_stdcall"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__stdcall keyword [C++]"]
 ms.assetid: e212594b-1827-4d07-9527-7d412b300df8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __stdcall
 

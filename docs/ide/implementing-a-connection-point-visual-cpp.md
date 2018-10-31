@@ -1,15 +1,8 @@
 ---
-title: "Implementing a Connection Point (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Implementing a Connection Point (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Implement Connection Point Wizard [C++]", "connection points [C++], implementing"]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing a Connection Point (Visual C++)
 

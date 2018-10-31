@@ -1,16 +1,9 @@
 ---
-title: "-DEF (Specify Module-Definition File) | Microsoft Docs"
-ms.custom: ""
+title: "/DEF (Specify Module-Definition File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.ModuleDefinitionFile", "/def"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["module definition files, specifying", "DEF linker option", "-DEF linker option", "module definition files", "/DEF linker option"]
 ms.assetid: 6497fa68-65f0-48ca-8f66-b87166fc631a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DEF (Specify Module-Definition File)
 

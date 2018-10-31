@@ -1,8 +1,6 @@
 ---
-title: "&lt;chrono&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;chrono&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["chrono/std::operator modulo"]
 ms.assetid: c5a19267-4684-40c1-b7a9-cc1012b058f3
 ---

@@ -1,16 +1,9 @@
 ---
-title: "-LOADCONFIG | Microsoft Docs"
-ms.custom: ""
+title: "/LOADCONFIG"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/loadconfig"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LOADCONFIG dumpbin option", "-LOADCONFIG dumpbin option", "/LOADCONFIG dumpbin option"]
 ms.assetid: 24667afe-9bee-4f6e-ae72-f534c0050428
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /LOADCONFIG
 

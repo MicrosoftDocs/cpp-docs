@@ -1,14 +1,7 @@
 ---
-title: "Types and Storage | Microsoft Docs"
-ms.custom: ""
+title: "Types and Storage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 7fe008b2-520f-4b71-8cb5-35fd513146ce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Types and Storage
 

@@ -1,15 +1,8 @@
 ---
-title: "Filling a List Box from a Second Recordset  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Filling a List Box from a Second Recordset  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["record views, filling list boxes", "list boxes, filling from second recordset", "recordsets [C++], filling list boxes or combo boxes", "CComboBox class, filling object from second rowset", "ODBC recordsets [C++], filling list boxes or combo boxes", "combo boxes [C++], filling from second recordset", "CListCtrl class, filling from second recordset"]
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Filling a List Box from a Second Recordset  (MFC Data Access)
 

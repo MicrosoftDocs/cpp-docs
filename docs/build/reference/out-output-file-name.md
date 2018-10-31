@@ -1,16 +1,9 @@
 ---
-title: "-OUT (Output File Name) | Microsoft Docs"
-ms.custom: ""
+title: "/OUT (Output File Name)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.OutputFile", "/out"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["output files, name linker option", "-OUT linker option", "OUT linker option", "/OUT C++ linker option", "linker [C++], output files"]
 ms.assetid: 976210a4-e51f-4cfb-af5e-c16344455834
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /OUT (Output File Name)
 

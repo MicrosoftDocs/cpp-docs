@@ -1,16 +1,9 @@
 ---
-title: "-DIRECTIVES | Microsoft Docs"
-ms.custom: ""
+title: "/DIRECTIVES"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/directives"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/DIRECTIVES dumpbin option", "DIRECTIVES dumpbin option", "-DIRECTIVES dumpbin option"]
 ms.assetid: cb85d679-6d20-4244-ba0b-6f495228e970
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DIRECTIVES
 

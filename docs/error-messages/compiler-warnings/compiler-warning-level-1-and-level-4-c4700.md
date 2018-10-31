@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1 and level 4) C4700 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1 and level 4) C4700"
 ms.date: "02/21/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4700"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4700"]
 ms.assetid: 2da0deb4-77dd-4b05-98d3-b78d74ac4ca7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1 and level 4) C4700
 

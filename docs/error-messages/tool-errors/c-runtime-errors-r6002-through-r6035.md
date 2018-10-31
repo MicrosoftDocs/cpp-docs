@@ -1,15 +1,8 @@
 ---
-title: "C Runtime Errors R6002 through R6035 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Errors R6002 through R6035"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["c.errors"]
-dev_langs: ["C++"]
 ms.assetid: 78019050-9a30-4b61-8250-a5702e0e2393
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Errors R6002 through R6035
 

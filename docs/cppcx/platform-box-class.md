@@ -1,15 +1,9 @@
 ---
-title: "Platform::Box Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Box Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Box"]
-dev_langs: ["C++"]
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Box Class
 

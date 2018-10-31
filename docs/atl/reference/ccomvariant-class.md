@@ -1,16 +1,9 @@
 ---
-title: "CComVariant Class | Microsoft Docs"
-ms.custom: ""
+title: "CComVariant Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComVariant", "ATLCOMCLI/ATL::CComVariant", "ATLCOMCLI/ATL::CComVariant::CComVariant", "ATLCOMCLI/ATL::CComVariant::Attach", "ATLCOMCLI/ATL::CComVariant::ChangeType", "ATLCOMCLI/ATL::CComVariant::Clear", "ATLCOMCLI/ATL::CComVariant::Copy", "ATLCOMCLI/ATL::CComVariant::CopyTo", "ATLCOMCLI/ATL::CComVariant::Detach", "ATLCOMCLI/ATL::CComVariant::GetSize", "ATLCOMCLI/ATL::CComVariant::ReadFromStream", "ATLCOMCLI/ATL::CComVariant::SetByRef", "ATLCOMCLI/ATL::CComVariant::WriteToStream"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VARIANT macro", "CComVariant class", "VARIANT macro, ATL"]
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComVariant Class
 

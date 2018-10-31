@@ -1,15 +1,8 @@
 ---
-title: "ATL Composite Control Fundamentals | Microsoft Docs"
-ms.custom: ""
+title: "ATL Composite Control Fundamentals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["composite controls, about composite controls"]
 ms.assetid: 2ac78cdd-1ec4-4d78-871c-1bcc23b5253e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Composite Control Fundamentals
 

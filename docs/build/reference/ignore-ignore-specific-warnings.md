@@ -1,16 +1,9 @@
 ---
-title: "-IGNORE (Ignore Specific Warnings) | Microsoft Docs"
-ms.custom: ""
+title: "/IGNORE (Ignore Specific Warnings)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/OVERWRITE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/IGNORE linker option"]
 ms.assetid: 37e77387-8838-4697-898f-d376ac641124
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /IGNORE (Ignore Specific Warnings)
 

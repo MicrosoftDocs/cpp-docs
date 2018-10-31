@@ -1,14 +1,8 @@
 ---
-title: "String and I-O Formatting (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "String and I-O Formatting (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # String and I/O Formatting (Modern C++)
 

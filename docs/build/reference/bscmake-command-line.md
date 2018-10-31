@@ -1,15 +1,8 @@
 ---
-title: "BSCMAKE Command Line | Microsoft Docs"
-ms.custom: ""
+title: "BSCMAKE Command Line"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["BSCMAKE, command line"]
 ms.assetid: 8006e8cf-8bfe-4c23-868a-b0a25e6bbf0f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Command Line
 

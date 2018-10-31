@@ -1,16 +1,9 @@
 ---
-title: "User-Defined Handlers | Microsoft Docs"
-ms.custom: ""
+title: "User-Defined Handlers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.handlers"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ON_REGISTERED_MESSAGE macro [MFC]", "ON_MESSAGE macro [MFC]", "user-defined handlers [MFC]"]
 ms.assetid: 99478294-bef0-4ba7-a369-25a6abdcdb62
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # User-Defined Handlers
 

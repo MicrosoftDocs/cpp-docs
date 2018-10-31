@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4405 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4405"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4405"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4405"]
 ms.assetid: 155c64d6-58ae-4455-b61f-ccd711c5da96
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4405
 

@@ -1,19 +1,12 @@
 ---
-title: "btowc | Microsoft Docs"
-ms.custom: ""
+title: "btowc"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["btowc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["btowc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["btowc function"]
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # btowc
 

@@ -1,15 +1,8 @@
 ---
-title: "Container Class::size_type | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::size_type"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["size_type typedef"]
 ms.assetid: e02de8af-e175-45a2-b006-835814a40e68
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::size_type
 

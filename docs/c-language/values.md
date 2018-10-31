@@ -1,14 +1,7 @@
 ---
-title: "Values | Microsoft Docs"
-ms.custom: ""
+title: "Values"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 24003f89-220f-4f93-be7a-b650c26157d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Values
 

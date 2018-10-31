@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2108 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2108"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2108"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2108"]
 ms.assetid: c84f0b47-5e2c-47d2-8edb-427a40e17c36
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2108
 

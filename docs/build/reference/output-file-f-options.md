@@ -1,16 +1,9 @@
 ---
-title: "Output-File (-F) Options | Microsoft Docs"
-ms.custom: ""
+title: "Output-File (-F) Options"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/f"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["output files", "output files, compiler options [C++]", "cl.exe compiler, output files"]
 ms.assetid: f6367f30-2710-4178-b43a-639eed824acb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Output-File (/F) Options
 

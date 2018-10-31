@@ -1,15 +1,9 @@
 ---
-title: "Generics and Templates (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Generics and Templates (C++/CLI)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["generics [C++], vs. templates", "templates, C++"]
 ms.assetid: 63adec79-b1dc-4a1a-a21d-b8a72a8fce31
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Generics and Templates (C++/CLI)
 

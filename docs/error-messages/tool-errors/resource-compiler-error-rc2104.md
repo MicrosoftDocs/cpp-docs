@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2104 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2104"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2104"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2104"]
 ms.assetid: 792a3bd8-cb4c-4817-b288-4ce37082b582
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2104
 

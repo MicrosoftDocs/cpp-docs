@@ -1,16 +1,9 @@
 ---
-title: "CCRTAllocator Class | Microsoft Docs"
-ms.custom: ""
+title: "CCRTAllocator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CCRTAllocator", "ATLCORE/ATL::CCRTAllocator", "ATLCORE/ATL::CCRTAllocator::Allocate", "ATLCORE/ATL::CCRTAllocator::Free", "ATLCORE/ATL::CCRTAllocator::Reallocate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCRTAllocator class"]
 ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCRTAllocator Class
 

@@ -1,13 +1,7 @@
 ---
-title: "Namespaces and Type Visibility (C++/CX ) | Microsoft Docs"
-ms.custom: ""
+title: "Namespaces and Type Visibility (C++/CX )"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Namespaces and Type Visibility (C++/CX )
 

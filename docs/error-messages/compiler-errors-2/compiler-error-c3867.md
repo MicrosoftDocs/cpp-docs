@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3867 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3867"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3867"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3867"]
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3867
 

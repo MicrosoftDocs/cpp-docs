@@ -1,19 +1,12 @@
 ---
-title: "fwrite | Microsoft Docs"
-ms.custom: ""
+title: "fwrite"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["fwrite"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fwrite"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["streams, writing data to", "fwrite function"]
 ms.assetid: 7afacf3a-72d7-4a50-ba2e-bea1ab9f4124
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fwrite
 

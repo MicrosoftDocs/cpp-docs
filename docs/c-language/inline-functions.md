@@ -1,15 +1,8 @@
 ---
-title: "Inline Functions | Microsoft Docs"
-ms.custom: ""
+title: "Inline Functions"
 ms.date: "10/16/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["fast code", "inline functions, __inline keyword", "functions [C++], inline functions"]
 ms.assetid: 00f4b2ff-8ad0-4165-9f4c-2ef157d03f31
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Inline Functions
 

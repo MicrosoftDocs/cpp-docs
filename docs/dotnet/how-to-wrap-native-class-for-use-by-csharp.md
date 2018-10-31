@@ -1,15 +1,9 @@
 ---
-title: "How to: Wrap Native Class for Use by C# | Microsoft Docs"
+title: "How to: Wrap Native Class for Use by C#"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["native code [C++], Visual C# and", "classes [C++], Visual C# and"]
 ms.assetid: 988819ae-cc6a-4453-8ff5-be369210d962
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Wrap Native Class for Use by C#
 

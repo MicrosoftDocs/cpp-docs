@@ -1,16 +1,9 @@
 ---
-title: "propput (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "propput (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.propput"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["propput attribute"]
 ms.assetid: 1f84dda9-9cce-4e16-aaf0-b2c5219827f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # propput
 

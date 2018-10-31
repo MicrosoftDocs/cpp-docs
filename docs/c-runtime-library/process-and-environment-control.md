@@ -1,16 +1,9 @@
 ---
-title: "Process and Environment Control | Microsoft Docs"
-ms.custom: ""
+title: "Process and Environment Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.programs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["processes, stopping", "processes, administrative tasks", "parent process", "processes, starting", "environment control routines", "process control routines"]
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Process and Environment Control
 

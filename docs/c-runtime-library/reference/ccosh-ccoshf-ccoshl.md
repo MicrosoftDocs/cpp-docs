@@ -1,19 +1,12 @@
 ---
-title: "ccosh, ccoshf, ccoshl | Microsoft Docs"
-ms.custom: ""
+title: "ccosh, ccoshf, ccoshl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["ccosh", "ccoshf", "ccoshl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["ccosh", "ccoshf", "ccoshl", "complex/ccosh", "complex/ccoshf", "complex/ccoshl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ccosh function", "ccoshf function", "ccoshl function"]
 ms.assetid: 79667449-4edf-4948-bf6b-720adf2b3f3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ccosh, ccoshf, ccoshl
 

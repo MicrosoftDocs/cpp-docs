@@ -1,15 +1,8 @@
 ---
-title: "C Function Definitions | Microsoft Docs"
-ms.custom: ""
+title: "C Function Definitions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function declarators", "function definitions", "declaring functions, about function declarations", "declaring functions, declarators", "functions [C], parameters", "declarators, functions", "function parameters, function definitions", "function body", "declaring functions, variables"]
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Function Definitions
 

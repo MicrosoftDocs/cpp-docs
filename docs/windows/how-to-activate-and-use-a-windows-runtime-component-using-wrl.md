@@ -1,14 +1,8 @@
 ---
-title: "How to: Activate and Use a Windows Runtime Component Using WRL | Microsoft Docs"
-ms.custom: ""
+title: "How to: Activate and Use a Windows Runtime Component Using WRL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 54828f02-6af3-45d1-b965-d0104442f8d5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Activate and Use a Windows Runtime Component Using WRL
 

@@ -1,16 +1,9 @@
 ---
-title: "__writecr4 | Microsoft Docs"
-ms.custom: ""
+title: "__writecr4"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_writecr4"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_writecr4 intrinsic"]
 ms.assetid: ab7651d7-b86b-4be7-a0a0-7263099c70fc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writecr4
 

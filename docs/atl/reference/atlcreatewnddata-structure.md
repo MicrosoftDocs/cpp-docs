@@ -1,16 +1,9 @@
 ---
-title: "_AtlCreateWndData Structure | Microsoft Docs"
-ms.custom: ""
+title: "_AtlCreateWndData Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["ATL::_AtlCreateWndData", "ATL._AtlCreateWndData", "_AtlCreateWndData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_AtlCreateWndData structure", "AtlCreateWndData structure"]
 ms.assetid: 76ed5382-bfbf-4b8b-8a29-912688dfd2ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _AtlCreateWndData Structure
 

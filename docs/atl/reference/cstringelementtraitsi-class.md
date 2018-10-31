@@ -1,16 +1,9 @@
 ---
-title: "CStringElementTraitsI Class | Microsoft Docs"
-ms.custom: ""
+title: "CStringElementTraitsI Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CStringElementTraitsI", "ATLCOLL/ATL::CStringElementTraitsI", "ATLCOLL/ATL::CStringElementTraitsI::INARGTYPE", "ATLCOLL/ATL::CStringElementTraitsI::OUTARGTYPE", "ATLCOLL/ATL::CStringElementTraitsI::CompareElements", "ATLCOLL/ATL::CStringElementTraitsI::CompareElementsOrdered", "ATLCOLL/ATL::CStringElementTraitsI::Hash"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStringElementTraitsI class"]
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStringElementTraitsI Class
 

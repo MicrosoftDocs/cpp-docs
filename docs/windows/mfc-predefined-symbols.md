@@ -1,15 +1,8 @@
 ---
-title: "MFC Predefined Symbols | Microsoft Docs"
-ms.custom: ""
+title: "MFC Predefined Symbols"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC symbols", "symbols [C++], MFC"]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # MFC Predefined Symbols
 
