@@ -1,16 +1,9 @@
 ---
-title: "Web References Property Page | Microsoft Docs"
-ms.custom: ""
+title: "Web References Property Page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCSDLTool.Output", "VC.Project.VCWebServiceProxyGeneratorTool.SuppressStartupBanner", "VC.Project.VCWebServiceProxyGeneratorTool.Output", "VC.Project.VCWebServiceProxyGeneratorTool.GeneratedProxyLanguage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Web references, properties"]
 ms.assetid: b80f7c77-af88-4551-9943-99748ebacf09
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Web References Property Page
 

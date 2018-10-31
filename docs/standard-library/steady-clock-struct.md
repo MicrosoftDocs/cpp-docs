@@ -1,15 +1,8 @@
 ---
-title: "steady_clock struct | Microsoft Docs"
-ms.custom: ""
+title: "steady_clock struct"
 ms.date: "05/22/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::steady_clock"]
-dev_langs: ["C++"]
 ms.assetid: 970d12ec-fc80-4391-a2f7-b57b2aec668d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # steady_clock struct
 

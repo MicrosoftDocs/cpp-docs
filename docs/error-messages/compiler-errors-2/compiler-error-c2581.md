@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2581 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2581"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2581"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2581"]
 ms.assetid: 24a4e4c1-24d3-4e42-b760-7dcaf9740b16
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2581
 

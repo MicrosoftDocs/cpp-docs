@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Methods | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Methods"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], methods"]
 ms.assetid: e20271de-6ffa-4ba0-848b-bafe6c9e510c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Methods
 

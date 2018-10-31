@@ -1,15 +1,8 @@
 ---
-title: "Adding an Entry to an Accelerator Table (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Adding an Entry to an Accelerator Table (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator tables [C++], adding entries", "New Accelerator command"]
 ms.assetid: 559c2415-8323-4339-9447-6966665f8288
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding an Entry to an Accelerator Table (C++)
 

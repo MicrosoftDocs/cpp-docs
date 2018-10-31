@@ -1,15 +1,8 @@
 ---
-title: "Property Sheets and Property Pages (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Property Sheets and Property Pages (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], tabs", "property pages [MFC], property sheets", "CPropertyPage class [MFC], property sheets and pages", "CPropertySheet class [MFC], property sheets and pages", "property sheets, propert pages"]
 ms.assetid: de8fea12-6c35-4cef-8625-b8073a379446
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Sheets and Property Pages (MFC)
 

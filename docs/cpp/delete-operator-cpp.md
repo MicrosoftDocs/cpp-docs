@@ -1,16 +1,9 @@
 ---
-title: "delete Operator (C++) | Microsoft Docs"
-ms.custom: ""
+title: "delete Operator (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["delete_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["delete keyword [C++], syntax", "delete keyword [C++], deallocating objects", "delete keyword [C++]"]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # delete Operator (C++)
 

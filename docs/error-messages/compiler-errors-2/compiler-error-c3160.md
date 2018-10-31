@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3160 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3160"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3160"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3160"]
 ms.assetid: a250c433-8adf-43b9-8dee-c3794e09b0a5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3160
 

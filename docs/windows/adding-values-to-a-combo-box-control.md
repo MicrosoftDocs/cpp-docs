@@ -1,16 +1,9 @@
 ---
-title: "Adding Values to a Combo Box Control | Microsoft Docs"
-ms.custom: ""
+title: "Adding Values to a Combo Box Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.combo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["combo boxes [C++], Data property", "controls [C++], testing values in combo boxes", "combo boxes [C++], adding values", "combo boxes [C++], previewing values", "Data property", "combo boxes [C++], testing values"]
 ms.assetid: 22a78f98-fada-48b3-90d8-7fa0d8e4de51
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Values to a Combo Box Control
 

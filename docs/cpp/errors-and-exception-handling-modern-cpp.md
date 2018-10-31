@@ -1,14 +1,8 @@
 ---
-title: "Errors and Exception Handling (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Errors and Exception Handling (Modern C++)"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Errors and Exception Handling (Modern C++)
 

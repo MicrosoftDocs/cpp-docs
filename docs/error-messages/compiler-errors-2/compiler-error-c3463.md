@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3463 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3463"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3463"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3463"]
 ms.assetid: 153efcc0-085c-4615-84ea-d22942618bdf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3463
 

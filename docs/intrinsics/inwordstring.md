@@ -1,16 +1,9 @@
 ---
-title: "__inwordstring | Microsoft Docs"
-ms.custom: ""
+title: "__inwordstring"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__inwordstring", "__inwordstring_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__inwordstring intrinsic", "rep insw instruction"]
 ms.assetid: 6de37939-017a-4740-9e3d-7de78a30daba
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __inwordstring
 

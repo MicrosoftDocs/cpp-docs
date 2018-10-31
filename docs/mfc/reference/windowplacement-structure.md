@@ -1,16 +1,9 @@
 ---
-title: "WINDOWPLACEMENT Structure | Microsoft Docs"
-ms.custom: ""
+title: "WINDOWPLACEMENT Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["WINDOWPLACEMENT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WINDOWPLACEMENT structure [MFC]"]
 ms.assetid: ea7d61f6-eb57-478e-9b08-7c1d07091aa8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # WINDOWPLACEMENT Structure
 

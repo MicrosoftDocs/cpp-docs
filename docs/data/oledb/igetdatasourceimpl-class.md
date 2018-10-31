@@ -1,16 +1,9 @@
 ---
-title: "IGetDataSourceImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IGetDataSourceImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IGetDataSourceImpl", "ATL.IGetDataSourceImpl<T>", "ATL.IGetDataSourceImpl", "ATL::IGetDataSourceImpl", "ATL::IGetDataSourceImpl<T>", "GetDataSource", "IGetDataSourceImpl.GetDataSource", "IGetDataSourceImpl::GetDataSource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IGetDataSourceImpl class", "GetDataSource method"]
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IGetDataSourceImpl Class
 

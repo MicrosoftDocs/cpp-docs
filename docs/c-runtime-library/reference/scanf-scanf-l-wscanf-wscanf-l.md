@@ -1,19 +1,12 @@
 ---
-title: "scanf, _scanf_l, wscanf, _wscanf_l | Microsoft Docs"
-ms.custom: ""
+title: "scanf, _scanf_l, wscanf, _wscanf_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wscanf_l", "scanf", "_scanf_l", "wscanf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tscanf", "_scanf_l", "wscanf", "_wscanf_l", "scanf", "_tscanf_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tscanf_l function", "_tscanf_l function", "reading data [C++], from input streams", "_tscanf function", "data [C++], reading from input stream", "scanf_l function", "scanf function", "wscanf function", "_scanf_l function", "tscanf function", "formatted data [C++], from input streams", "wscanf_l function", "_wscanf_l function"]
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # scanf, _scanf_l, wscanf, _wscanf_l
 

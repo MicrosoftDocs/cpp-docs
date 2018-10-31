@@ -1,15 +1,8 @@
 ---
-title: "Printing | Microsoft Docs"
-ms.custom: ""
+title: "Printing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["view classes [MFC], print operations", "documents [MFC], printing", "printing [MFC], from framework", "printing [MFC]"]
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Printing
 

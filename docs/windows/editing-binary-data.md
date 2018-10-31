@@ -1,16 +1,9 @@
 ---
-title: "Editing Binary Data (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Editing Binary Data (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["binary data, editing", "binary data"]
 ms.assetid: 0fd429de-baf1-4871-b5e4-42bf868a3261
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Binary Data
 

@@ -1,16 +1,9 @@
 ---
-title: "BSCMAKE Error BK1503 | Microsoft Docs"
-ms.custom: ""
+title: "BSCMAKE Error BK1503"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["BK1503"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BK1503"]
 ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Error BK1503
 

@@ -1,16 +1,9 @@
 ---
-title: "How to: Add MFC Support to Resource Script Files (C++) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Add MFC Support to Resource Script Files (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.add.MFC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rc files [C++], adding MFC support", ".rc files [C++], adding MFC support", "MFC, adding support to resource scripts files", "resource script files [C++], adding MFC support"]
 ms.assetid: 599dfe9d-ad26-4e34-899c-49b56599e37f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Add MFC Support to Resource Script Files (C++)
 

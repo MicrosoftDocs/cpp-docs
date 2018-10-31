@@ -1,15 +1,8 @@
 ---
-title: "Manipulating the Progress Control | Microsoft Docs"
-ms.custom: ""
+title: "Manipulating the Progress Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CProgressCtrl class [MFC], working with", "progress controls [MFC], manipulating", "CProgressCtrl class [MFC], manipulating", "controlling progress controls [MFC]", "CProgressCtrl class [MFC], using"]
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Manipulating the Progress Control
 

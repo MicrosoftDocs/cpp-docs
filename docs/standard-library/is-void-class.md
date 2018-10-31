@@ -1,16 +1,9 @@
 ---
-title: "is_void Class | Microsoft Docs"
-ms.custom: ""
+title: "is_void Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_void"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_void class", "is_void"]
 ms.assetid: 99b0de3b-1b38-4949-b053-080e5363174e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_void Class
 

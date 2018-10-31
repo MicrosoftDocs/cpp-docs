@@ -1,16 +1,10 @@
 ---
-title: "Error Information Classe  (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Error Information Classe  (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.errors"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["error handling, error information classes", "error handling, classes", "error information, classes"]
 ms.assetid: ba40c8fb-81fd-4f61-8f47-fa2cb540e274
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Error Information Classes
 

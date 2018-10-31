@@ -1,19 +1,12 @@
 ---
-title: "_matherr | Microsoft Docs"
-ms.custom: ""
+title: "_matherr"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_matherr"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_matherr", "matherr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_matherr function", "matherr function"]
 ms.assetid: b600d66e-165a-4608-a856-8fb418d46760
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _matherr
 

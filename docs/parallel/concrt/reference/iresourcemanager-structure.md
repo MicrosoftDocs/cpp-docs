@@ -1,16 +1,9 @@
 ---
-title: "IResourceManager Structure | Microsoft Docs"
-ms.custom: ""
+title: "IResourceManager Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["IResourceManager", "CONCRTRM/concurrency::IResourceManager", "CONCRTRM/concurrency::IResourceManager::IResourceManager::OSVersion", "CONCRTRM/concurrency::IResourceManager::IResourceManager::CreateNodeTopology", "CONCRTRM/concurrency::IResourceManager::IResourceManager::GetAvailableNodeCount", "CONCRTRM/concurrency::IResourceManager::IResourceManager::GetFirstNode", "CONCRTRM/concurrency::IResourceManager::IResourceManager::Reference", "CONCRTRM/concurrency::IResourceManager::IResourceManager::RegisterScheduler", "CONCRTRM/concurrency::IResourceManager::IResourceManager::Release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IResourceManager structure"]
 ms.assetid: 3dd5ec2c-fe53-4121-ae77-1bc1d1167ff4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IResourceManager Structure
 

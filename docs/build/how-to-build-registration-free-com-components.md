@@ -1,15 +1,8 @@
 ---
-title: "How to: Build Registration-Free COM Components | Microsoft Docs"
-ms.custom: ""
+title: "How to: Build Registration-Free COM Components"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM components, registration-free"]
 ms.assetid: 7e585d6a-0314-45b2-8f1b-cae9ac4df037
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to: Build Registration-Free COM Components
 

@@ -1,14 +1,7 @@
 ---
-title: "Alignment (C++ Declarations) | Microsoft Docs"
-ms.custom: ""
+title: "Alignment (C++ Declarations)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Alignment (C++ Declarations)
 

@@ -1,15 +1,8 @@
 ---
-title: "Toolbars | Microsoft Docs"
-ms.custom: ""
+title: "Toolbars"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["toolbars [MFC]", "command bars [MFC], MFC toolbars"]
 ms.assetid: c22ecc5b-a84c-4979-8d1a-8e3e71d5ce33
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Toolbars
 

@@ -1,13 +1,7 @@
 ---
-title: "Containers (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Containers (Modern C++)"
 ms.date: "1/18/2018"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers (Modern C++)
 

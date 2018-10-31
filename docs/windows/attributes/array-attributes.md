@@ -1,15 +1,8 @@
 ---
-title: "Array Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "Array Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [C++], attributes"]
 ms.assetid: 36f80b76-7f20-41ae-a6bf-460e5379f26b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Array Attributes
 

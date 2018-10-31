@@ -1,16 +1,9 @@
 ---
-title: "numpunct_byname Class | Microsoft Docs"
-ms.custom: ""
+title: "numpunct_byname Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocnum/std::numpunct_byname"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["numpunct_byname class"]
 ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # numpunct_byname Class
 

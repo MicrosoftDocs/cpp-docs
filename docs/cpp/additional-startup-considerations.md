@@ -1,15 +1,8 @@
 ---
-title: "Additional Startup Considerations | Microsoft Docs"
-ms.custom: ""
+title: "Additional Startup Considerations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["program startup [C++]", "startup code", "initializing before main"]
 ms.assetid: 0e942aa6-8342-447c-b068-8980ed7622bd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Additional Startup Considerations
 

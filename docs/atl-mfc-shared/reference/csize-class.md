@@ -1,16 +1,9 @@
 ---
-title: "CSize Class | Microsoft Docs"
-ms.custom: ""
+title: "CSize Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSize", "ATLTYPES/ATL::CSize", "ATLTYPES/ATL::CSize::CSize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SIZE", "dimensions, MFC", "dimensions", "CSize class"]
 ms.assetid: fb2cf85a-0bc1-46f8-892b-309c108b52ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSize Class
 

@@ -1,16 +1,9 @@
 ---
-title: "EOF, WEOF | Microsoft Docs"
-ms.custom: ""
+title: "EOF, WEOF"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["EOF"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EOF function", "WEOF function", "end of file"]
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EOF, WEOF
 

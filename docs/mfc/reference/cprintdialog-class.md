@@ -1,16 +1,9 @@
 ---
-title: "CPrintDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CPrintDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPrintDialog", "AFXDLGS/CPrintDialog", "AFXDLGS/CPrintDialog::CPrintDialog", "AFXDLGS/CPrintDialog::CreatePrinterDC", "AFXDLGS/CPrintDialog::DoModal", "AFXDLGS/CPrintDialog::GetCopies", "AFXDLGS/CPrintDialog::GetDefaults", "AFXDLGS/CPrintDialog::GetDeviceName", "AFXDLGS/CPrintDialog::GetDevMode", "AFXDLGS/CPrintDialog::GetDriverName", "AFXDLGS/CPrintDialog::GetFromPage", "AFXDLGS/CPrintDialog::GetPortName", "AFXDLGS/CPrintDialog::GetPrinterDC", "AFXDLGS/CPrintDialog::GetToPage", "AFXDLGS/CPrintDialog::PrintAll", "AFXDLGS/CPrintDialog::PrintCollate", "AFXDLGS/CPrintDialog::PrintRange", "AFXDLGS/CPrintDialog::PrintSelection", "AFXDLGS/CPrintDialog::m_pd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPrintDialog [MFC], CPrintDialog", "CPrintDialog [MFC], CreatePrinterDC", "CPrintDialog [MFC], DoModal", "CPrintDialog [MFC], GetCopies", "CPrintDialog [MFC], GetDefaults", "CPrintDialog [MFC], GetDeviceName", "CPrintDialog [MFC], GetDevMode", "CPrintDialog [MFC], GetDriverName", "CPrintDialog [MFC], GetFromPage", "CPrintDialog [MFC], GetPortName", "CPrintDialog [MFC], GetPrinterDC", "CPrintDialog [MFC], GetToPage", "CPrintDialog [MFC], PrintAll", "CPrintDialog [MFC], PrintCollate", "CPrintDialog [MFC], PrintRange", "CPrintDialog [MFC], PrintSelection", "CPrintDialog [MFC], m_pd"]
 ms.assetid: 5bdb2424-adf8-433d-a97c-df11a83bc4e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPrintDialog Class
 
@@ -63,7 +56,7 @@ Common print dialog boxes provide an easy way to implement Print and Print Setup
 > [!NOTE]
 >  The `CPrintDialogEx` class encapsulates the services provided by the Windows Print property sheet. For more information see the [CPrintDialogEx](../../mfc/reference/cprintdialogex-class.md) overview.
 
-`CPrintDialog`'s functionality is superceded by that of [CPageSetupDialog](../../mfc/reference/cpagesetupdialog-class.md), which is designed to provide you with a common dialog box for both print setup and page setup.
+`CPrintDialog`'s functionality is superseded by that of [CPageSetupDialog](../../mfc/reference/cpagesetupdialog-class.md), which is designed to provide you with a common dialog box for both print setup and page setup.
 
 You can rely on the framework to handle many aspects of the printing process for your application. In this case, the framework automatically displays the Windows common dialog box for printing. You can also have the framework handle printing for your application but override the common Print dialog box with your own print dialog box. For more information about using the framework to handle printing tasks, see the article [Printing](../../mfc/printing.md).
 

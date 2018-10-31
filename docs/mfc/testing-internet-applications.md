@@ -1,15 +1,8 @@
 ---
-title: "Testing Internet Applications | Microsoft Docs"
-ms.custom: ""
+title: "Testing Internet Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Web applications [MFC], testing", "debugging Web applications [MFC], testing applications", "testing [MFC], Internet applications", "debugging [MFC], Web applications", "Internet debugging and testing"]
 ms.assetid: ac4c74e3-d4ad-4e19-8f6c-e270de067f01
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Testing Internet Applications
 

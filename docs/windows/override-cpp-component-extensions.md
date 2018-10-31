@@ -1,15 +1,9 @@
 ---
-title: "override  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "override  (C++/CLI and C++/CX)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["overriding, override keyword [C++]", "override keyword [C++]"]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # override  (C++/CLI and C++/CX)
 

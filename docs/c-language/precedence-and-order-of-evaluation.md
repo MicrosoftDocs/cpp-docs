@@ -1,15 +1,8 @@
 ---
-title: "Precedence and Order of Evaluation | Microsoft Docs"
-ms.custom: ""
+title: "Precedence and Order of Evaluation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["associativity of operators [C++]", "precedence [C++], operators", "data binding [C++], operator precedence", "operators [C++], precedence"]
 ms.assetid: 201f7864-0c51-4c55-9d6f-39c5d013bcb0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Precedence and Order of Evaluation
 

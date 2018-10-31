@@ -1,16 +1,9 @@
 ---
-title: "-LIBPATH (Additional Libpath) | Microsoft Docs"
-ms.custom: ""
+title: "/LIBPATH (Additional Libpath)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/libpath", "VC.Project.VCLinkerTool.AdditionalLibraryDirectories"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LIBPATH linker option", "/LIBPATH linker option", "Additional Libpath linker option", "environment library path override", "-LIBPATH linker option", "library path linker option"]
 ms.assetid: 7240af0b-9a3d-4d53-8169-2a92cd6958ba
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /LIBPATH (Additional Libpath)
 

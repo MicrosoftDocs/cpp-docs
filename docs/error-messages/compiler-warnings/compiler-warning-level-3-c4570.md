@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4570 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4570"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4570"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4570"]
 ms.assetid: feec1225-e6ad-4995-8d96-c22e864a77bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4570
 

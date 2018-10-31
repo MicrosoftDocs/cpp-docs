@@ -1,15 +1,8 @@
 ---
-title: "Exporting from a DLL Using DEF Files | Microsoft Docs"
-ms.custom: ""
+title: "Exporting from a DLL Using DEF Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs", "exporting DLLs [C++], DEF files"]
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Exporting from a DLL Using DEF Files
 

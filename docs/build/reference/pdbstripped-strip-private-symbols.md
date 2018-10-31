@@ -1,16 +1,9 @@
 ---
-title: "-PDBSTRIPPED (Strip Private Symbols) | Microsoft Docs"
-ms.custom: ""
+title: "/PDBSTRIPPED (Strip Private Symbols)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/pdbstripped", "VC.Project.VCLinkerTool.StripPrivateSymbols"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/PDBSTRIPPED linker option", "-PDBSTRIPPED linker option", ".pdb files, stripping private symbols", "PDB files, stripping private symbols", "PDBSTRIPPED linker option"]
 ms.assetid: 9b9e0070-6a13-4142-8180-19c003fbbd55
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /PDBSTRIPPED (Strip Private Symbols)
 

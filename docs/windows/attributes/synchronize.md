@@ -1,16 +1,9 @@
 ---
-title: "synchronize (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "synchronize (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.synchronize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["synchronize attribute"]
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # synchronize
 

@@ -1,15 +1,8 @@
 ---
-title: "Working with Documents and Views | Microsoft Docs"
-ms.custom: ""
+title: "Working with Documents and Views"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], documents", "MFC [C++], views", "views [C++], MFC", "documents [C++], MFC"]
 ms.assetid: 349b142d-1c5a-4b99-9de4-241e41d3d2f1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Working with Documents and Views
 

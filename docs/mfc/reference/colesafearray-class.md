@@ -1,16 +1,9 @@
 ---
-title: "COleSafeArray Class | Microsoft Docs"
-ms.custom: ""
+title: "COleSafeArray Class"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleSafeArray", "AFXDISP/COleSafeArray", "AFXDISP/COleSafeArray::COleSafeArray", "AFXDISP/COleSafeArray::AccessData", "AFXDISP/COleSafeArray::AllocData", "AFXDISP/COleSafeArray::AllocDescriptor", "AFXDISP/COleSafeArray::Attach", "AFXDISP/COleSafeArray::Clear", "AFXDISP/COleSafeArray::Copy", "AFXDISP/COleSafeArray::Create", "AFXDISP/COleSafeArray::CreateOneDim", "AFXDISP/COleSafeArray::Destroy", "AFXDISP/COleSafeArray::DestroyData", "AFXDISP/COleSafeArray::DestroyDescriptor", "AFXDISP/COleSafeArray::Detach", "AFXDISP/COleSafeArray::GetByteArray", "AFXDISP/COleSafeArray::GetDim", "AFXDISP/COleSafeArray::GetElement", "AFXDISP/COleSafeArray::GetElemSize", "AFXDISP/COleSafeArray::GetLBound", "AFXDISP/COleSafeArray::GetOneDimSize", "AFXDISP/COleSafeArray::GetUBound", "AFXDISP/COleSafeArray::Lock", "AFXDISP/COleSafeArray::PtrOfIndex", "AFXDISP/COleSafeArray::PutElement", "AFXDISP/COleSafeArray::Redim", "AFXDISP/COleSafeArray::ResizeOneDim", "AFXDISP/COleSafeArray::UnaccessData", "AFXDISP/COleSafeArray::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleSafeArray [MFC], COleSafeArray", "COleSafeArray [MFC], AccessData", "COleSafeArray [MFC], AllocData", "COleSafeArray [MFC], AllocDescriptor", "COleSafeArray [MFC], Attach", "COleSafeArray [MFC], Clear", "COleSafeArray [MFC], Copy", "COleSafeArray [MFC], Create", "COleSafeArray [MFC], CreateOneDim", "COleSafeArray [MFC], Destroy", "COleSafeArray [MFC], DestroyData", "COleSafeArray [MFC], DestroyDescriptor", "COleSafeArray [MFC], Detach", "COleSafeArray [MFC], GetByteArray", "COleSafeArray [MFC], GetDim", "COleSafeArray [MFC], GetElement", "COleSafeArray [MFC], GetElemSize", "COleSafeArray [MFC], GetLBound", "COleSafeArray [MFC], GetOneDimSize", "COleSafeArray [MFC], GetUBound", "COleSafeArray [MFC], Lock", "COleSafeArray [MFC], PtrOfIndex", "COleSafeArray [MFC], PutElement", "COleSafeArray [MFC], Redim", "COleSafeArray [MFC], ResizeOneDim", "COleSafeArray [MFC], UnaccessData", "COleSafeArray [MFC], Unlock"]
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleSafeArray Class
 

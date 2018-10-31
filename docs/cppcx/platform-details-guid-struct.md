@@ -1,16 +1,10 @@
 ---
-title: "Platform::Details::__GUID Struct | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Details::__GUID Struct"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details::__GUID"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::__GUID Struct"]
 ms.assetid: 507cc577-b34d-4952-b1a9-ff4ae98bb6dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Details::__GUID Struct
 

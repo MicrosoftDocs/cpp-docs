@@ -1,15 +1,9 @@
 ---
-title: "How to: Modify Reference Class in a Native Function | Microsoft Docs"
+title: "How to: Modify Reference Class in a Native Function"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["platform invoke, reference class", "reference types, modifying in a C++ native function"]
 ms.assetid: c701145b-62a0-4c4b-b32a-db8d69a59720
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Modify Reference Class in a Native Function
 

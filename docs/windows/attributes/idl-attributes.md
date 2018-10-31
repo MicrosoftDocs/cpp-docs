@@ -1,15 +1,8 @@
 ---
-title: "IDL Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "IDL Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI], reference topics", "IDL attributes", ".idl files [C++], attributes", "IDL files [C++], attributes", ".idl files [C++]"]
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # IDL Attributes
 

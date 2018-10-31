@@ -1,16 +1,9 @@
 ---
-title: "CPaintDC Class | Microsoft Docs"
-ms.custom: ""
+title: "CPaintDC Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPaintDC", "AFXWIN/CPaintDC", "AFXWIN/CPaintDC::CPaintDC", "AFXWIN/CPaintDC::m_ps", "AFXWIN/CPaintDC::m_hWnd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPaintDC [MFC], CPaintDC", "CPaintDC [MFC], m_ps", "CPaintDC [MFC], m_hWnd"]
 ms.assetid: 7e245baa-bf9b-403e-a637-7218adf28fab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPaintDC Class
 

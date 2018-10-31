@@ -1,16 +1,10 @@
 ---
-title: "ModuleBase Class | Microsoft Docs"
-ms.custom: ""
+title: "ModuleBase Class"
 ms.date: "09/21/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ModuleBase", "implements/Microsoft::WRL::Details::ModuleBase::DecrementObjectCount", "implements/Microsoft::WRL::Details::ModuleBase::IncrementObjectCount", "implements/Microsoft::WRL::Details::ModuleBase::ModuleBase", "implements/Microsoft::WRL::Details::ModuleBase::~ModuleBase"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ModuleBase class", "Microsoft::WRL::Details::ModuleBase::DecrementObjectCount method", "Microsoft::WRL::Details::ModuleBase::IncrementObjectCount method", "Microsoft::WRL::Details::ModuleBase::ModuleBase, constructor", "Microsoft::WRL::Details::ModuleBase::~ModuleBase, destructor"]
 ms.assetid: edce7591-6893-46f7-94a7-382827775548
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ModuleBase Class
 

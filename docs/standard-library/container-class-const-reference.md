@@ -1,15 +1,8 @@
 ---
-title: "Container Class::const_reference | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::const_reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["const_reference method"]
 ms.assetid: 7a5cfddb-3abf-4c98-b4ad-bbe4da9a5c1b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::const_reference
 

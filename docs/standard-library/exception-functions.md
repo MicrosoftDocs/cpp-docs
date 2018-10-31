@@ -1,8 +1,6 @@
 ---
-title: "&lt;exception&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;exception&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["exception/std::current_exception", "exception/std::get_terminate", "exception/std::get_unexpected", "exception/std::make_exception_ptr", "exception/std::rethrow_exception", "exception/std::set_terminate", "exception/std::set_unexpected", "exception/std::terminate", "exception/std::uncaught_exception", "exception/std::unexpected"]
 ms.assetid: c09ac569-5e35-4fe8-872d-ca5810274dd7
 helpviewer_keywords: ["std::current_exception [C++]", "std::get_terminate [C++]", "std::get_unexpected [C++]", "std::make_exception_ptr [C++]", "std::rethrow_exception [C++]", "std::set_terminate [C++]", "std::set_unexpected [C++]", "std::terminate [C++]", "std::uncaught_exception [C++]", "std::unexpected [C++]"]

@@ -1,16 +1,10 @@
 ---
-title: "marshal_as | Microsoft Docs"
-ms.custom: ""
+title: "marshal_as"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["marshal_as", "msclr.interop.marshal_as", "msclr::interop::marshal_as"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["marshal_as template [C++]"]
 ms.assetid: 2ed717da-2b11-41e5-981d-47d251771989
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # marshal_as
 

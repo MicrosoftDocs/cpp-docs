@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2249 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2249"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2249"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2249"]
 ms.assetid: bdd6697c-e04b-49b9-8e40-d9eb6d74f2b6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2249
 

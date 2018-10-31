@@ -1,15 +1,8 @@
 ---
-title: "Creating an OLE DB Consumer Using a Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Creating an OLE DB Consumer Using a Wizard"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumers, creating"]
 ms.assetid: efefd4c0-4491-4072-aa9b-59545641efb3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating an OLE DB Consumer Using a Wizard
 

@@ -1,16 +1,9 @@
 ---
-title: "_com_error::GUID | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::GUID"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::GUID"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["GUID method [C++]"]
 ms.assetid: e84c2c23-d02e-48f8-b776-9bd6937296d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::GUID
 

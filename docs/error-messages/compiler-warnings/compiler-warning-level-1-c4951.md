@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4951 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4951"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4951"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4951"]
 ms.assetid: 669d8bb7-5efa-4ba9-99db-4e65addbf054
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4951
 

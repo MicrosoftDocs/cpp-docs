@@ -1,15 +1,8 @@
 ---
-title: "Remote Archive Properties (C++ Linux) | Microsoft Docs"
-ms.custom: ""
+title: "Remote Archive Properties (C++ Linux)"
 ms.date: "9/26/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 5ee1e44c-8337-4c3a-b2f3-35e4be954f9f
-author: "mikeblome"
-ms.author: "mblome"
 f1_keywords: []
-ms.workload: ["cplusplus", "linux"]
 ---
 
 # Remote Archive Properties (C++ Linux)

@@ -1,16 +1,9 @@
 ---
-title: "Other LIB Output | Microsoft Docs"
-ms.custom: ""
+title: "Other LIB Output"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["Lib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["output files, LIB"]
 ms.assetid: 656864a6-0b7a-4633-8dc6-ee3b1766d836
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Other LIB Output
 

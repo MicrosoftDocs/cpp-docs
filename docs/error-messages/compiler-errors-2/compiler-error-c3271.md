@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3271 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3271"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3271"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3271"]
 ms.assetid: 16d8bd1d-2e30-4c6a-a07f-0c4f3342fab5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3271
 

@@ -1,15 +1,8 @@
 ---
-title: "Initializers | Microsoft Docs"
-ms.custom: ""
+title: "Initializers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["array-element initializers", "initializing arrays [C++], initializers", "arrays [C++], array-element initializers", "declarators, as initializers", "initializers, array element"]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializers
 

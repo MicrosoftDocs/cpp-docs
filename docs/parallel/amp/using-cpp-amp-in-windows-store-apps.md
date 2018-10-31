@@ -1,14 +1,7 @@
 ---
-title: "Using C++ AMP in UWP Apps | Microsoft Docs"
-ms.custom: ""
+title: "Using C++ AMP in UWP Apps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 85577298-2c28-4209-9470-eb21048615db
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using C++ AMP in UWP Apps
 

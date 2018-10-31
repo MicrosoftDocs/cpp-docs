@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3390 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3390"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3390"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3390"]
 ms.assetid: 84800a87-c8e6-45aa-82ae-02f816dc8d97
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3390
 

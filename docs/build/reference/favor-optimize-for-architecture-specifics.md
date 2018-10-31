@@ -1,16 +1,9 @@
 ---
-title: "-favor (Optimize for Architecture Specifics) | Microsoft Docs"
-ms.custom: ""
+title: "/favor (Optimize for Architecture Specifics)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/favor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-favor compiler option [C++]", "/favor compiler option [C++]"]
 ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /favor (Optimize for Architecture Specifics)
 

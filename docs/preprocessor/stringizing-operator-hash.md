@@ -1,16 +1,9 @@
 ---
-title: "Stringizing Operator (#) | Microsoft Docs"
-ms.custom: ""
+title: "Stringizing Operator (#)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor, operators", "arguments [C++], converting to strings", "stringizing operator", "preprocessor", "string literals, converting macro parameters to", "macros [C++], converting parameters to strings", "# preprocessor operator"]
 ms.assetid: 1175dd19-4538-43b3-ad97-a008ab80e7b1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Stringizing Operator (#)
 

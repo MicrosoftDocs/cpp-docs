@@ -1,16 +1,9 @@
 ---
-title: "scoped_allocator_adaptor Class | Microsoft Docs"
-ms.custom: ""
+title: "scoped_allocator_adaptor Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["scoped_allocator/std::scoped_allocator_adaptor", "scoped_allocator/std::scoped_allocator_adaptor::rebind Struct", "scoped_allocator/std::scoped_allocator_adaptor::allocate", "scoped_allocator/std::scoped_allocator_adaptor::construct", "scoped_allocator/std::scoped_allocator_adaptor::deallocate", "scoped_allocator/std::scoped_allocator_adaptor::destroy", "scoped_allocator/std::scoped_allocator_adaptor::inner_allocator", "scoped_allocator/std::scoped_allocator_adaptor::max_size", "scoped_allocator/std::scoped_allocator_adaptor::outer_allocator", "scoped_allocator/std::scoped_allocator_adaptor::select_on_container_copy_construction"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::scoped_allocator_adaptor", "std::scoped_allocator_adaptor::allocate", "std::scoped_allocator_adaptor::construct", "std::scoped_allocator_adaptor::deallocate", "std::scoped_allocator_adaptor::destroy", "std::scoped_allocator_adaptor::inner_allocator", "std::scoped_allocator_adaptor::max_size", "std::scoped_allocator_adaptor::outer_allocator", "std::scoped_allocator_adaptor::select_on_container_copy_construction"]
 ms.assetid: 0d9b06a1-9a4a-4669-9470-8805cae48e89
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # scoped_allocator_adaptor Class
 

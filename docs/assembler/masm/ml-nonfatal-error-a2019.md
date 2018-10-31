@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2019 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2019"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2019"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2019"]
 ms.assetid: 7dff209b-6d91-4e39-88a3-5d6329bac537
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2019
 

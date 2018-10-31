@@ -1,15 +1,9 @@
 ---
-title: "Platform::StringReference Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::StringReference Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::StringReference::StringReference", "VCCORLIB/Platform::StringReference::Data", "VCCORLIB/Platform::StringReference::Length", "VCCORLIB/Platform::StringReference::GetHSTRING", "VCCORLIB/Platform::StringReference::GetString"]
-dev_langs: ["C++"]
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::StringReference Class
 

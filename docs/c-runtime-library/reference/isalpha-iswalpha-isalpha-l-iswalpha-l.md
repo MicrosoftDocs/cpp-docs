@@ -1,19 +1,12 @@
 ---
-title: "isalpha, iswalpha, _isalpha_l, _iswalpha_l | Microsoft Docs"
-ms.custom: ""
+title: "isalpha, iswalpha, _isalpha_l, _iswalpha_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["iswalpha", "_iswalpha_l", "isalpha", "_isalpha_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_istalpha", "_ismbcalpha_l", "isalpha", "_isalpha_l", "iswalpha", "_istalpha_l", "_iswalpha_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_iswalpha_l function", "_isalpha_l function", "_ismbcalpha_l function", "_istalpha_l function", "_ismbcalpha function", "isalpha function", "iswalpha function", "istalpha function", "_istalpha function"]
 ms.assetid: ed6cc2be-c4b0-4475-87ac-bc06d8c23064
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # isalpha, iswalpha, _isalpha_l, _iswalpha_l
 

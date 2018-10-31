@@ -1,16 +1,9 @@
 ---
-title: "-BIND | Microsoft Docs"
-ms.custom: ""
+title: "/BIND"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/bind"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-BIND editbin option", "entry points, addresses", "BIND editbin option", "entry points", "/BIND editbin option", "import address table"]
 ms.assetid: 3772b330-1868-4c90-857d-c31faa867982
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /BIND
 

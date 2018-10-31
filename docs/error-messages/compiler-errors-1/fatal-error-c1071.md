@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1071 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1071"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1071"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1071"]
 ms.assetid: 489f1786-370e-4ecd-af67-538fe6e5bd4e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1071
 

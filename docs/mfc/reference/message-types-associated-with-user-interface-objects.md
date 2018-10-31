@@ -1,16 +1,9 @@
 ---
-title: "Message Types Associated with User-Interface Objects | Microsoft Docs"
-ms.custom: ""
+title: "Message Types Associated with User-Interface Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.uiobject.msgs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message types and user interface objects [MFC]"]
 ms.assetid: 681ee1a7-f6e6-4ea0-9fc6-1fb53a35516e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Types Associated with User-Interface Objects
 

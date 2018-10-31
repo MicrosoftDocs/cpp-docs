@@ -1,15 +1,8 @@
 ---
-title: "Working with Window Objects | Microsoft Docs"
-ms.custom: ""
+title: "Working with Window Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["child windows [MFC], working with", "window objects [MFC], working with"]
 ms.assetid: f73aa254-90e3-46a9-8e9b-d78b7054a331
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Working with Window Objects
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2683 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2683"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2683"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2683"]
 ms.assetid: db605e4f-601b-4d05-92a1-c43ca24de08d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2683
 

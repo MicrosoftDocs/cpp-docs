@@ -1,22 +1,15 @@
 ---
-title: "ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container | Microsoft Docs"
-ms.custom: ""
+title: "ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX control containers [MFC], accessing ActiveX controls", "Confirm Classes dialog box", "wrapper classes [MFC], ActiveX controls", "ActiveX control containers [MFC], wrapper classes", "ActiveX controls [MFC], accessing", "MFC ActiveX controls [MFC], accessing in containers", "header files [MFC], for ActiveX control wrapper class", "wrapper classes [MFC], using", "ActiveX controls [MFC], wrapper classes"]
 ms.assetid: ef9b2480-92d6-4191-b16e-8055c4fd7b73
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container
 
 This article describes the process for accessing the exposed [methods](../mfc/mfc-activex-controls-methods.md) and [properties](../mfc/mfc-activex-controls-properties.md) of embedded ActiveX controls.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 Basically, you will follow these steps:
 

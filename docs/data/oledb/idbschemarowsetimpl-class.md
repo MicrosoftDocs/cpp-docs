@@ -1,16 +1,9 @@
 ---
-title: "IDBSchemaRowsetImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDBSchemaRowsetImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["IDBSchemaRowsetImpl", "CheckRestrictions", "IDBSchemaRowsetImpl::CheckRestrictions", "IDBSchemaRowsetImpl.CheckRestrictions", "IDBSchemaRowsetImpl::CreateSchemaRowset", "ATL::IDBSchemaRowsetImpl::CreateSchemaRowset", "CreateSchemaRowset", "IDBSchemaRowsetImpl.CreateSchemaRowset", "ATL.IDBSchemaRowsetImpl.CreateSchemaRowset", "IDBSchemaRowsetImpl::SetRestrictions", "SetRestrictions", "IDBSchemaRowsetImpl.SetRestrictions", "ATL::IDBSchemaRowsetImpl::GetRowset", "ATL.IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl<SessionClass>::GetRowset",                                   "IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl::GetRowset", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetRowset", "GetRowset", "ATL::IDBSchemaRowsetImpl::GetSchemas", "GetSchemas", "IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "ATL.IDBSchemaRowsetImpl.GetSchemas", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "IDBSchemaRowsetImpl.GetSchemas", "IDBSchemaRowsetImpl::GetSchemas"]
-dev_langs: ["C++"]
+f1_keywords: ["IDBSchemaRowsetImpl", "CheckRestrictions", "IDBSchemaRowsetImpl::CheckRestrictions", "IDBSchemaRowsetImpl.CheckRestrictions", "IDBSchemaRowsetImpl::CreateSchemaRowset", "ATL::IDBSchemaRowsetImpl::CreateSchemaRowset", "CreateSchemaRowset", "IDBSchemaRowsetImpl.CreateSchemaRowset", "ATL.IDBSchemaRowsetImpl.CreateSchemaRowset", "IDBSchemaRowsetImpl::SetRestrictions", "SetRestrictions", "IDBSchemaRowsetImpl.SetRestrictions", "ATL::IDBSchemaRowsetImpl::GetRowset", "ATL.IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl<SessionClass>::GetRowset", "IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl::GetRowset", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetRowset", "GetRowset", "ATL::IDBSchemaRowsetImpl::GetSchemas", "GetSchemas", "IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "ATL.IDBSchemaRowsetImpl.GetSchemas", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "IDBSchemaRowsetImpl.GetSchemas", "IDBSchemaRowsetImpl::GetSchemas"]
 helpviewer_keywords: ["IDBSchemaRowsetImpl class", "CheckRestrictions method", "CreateSchemaRowset method", "SetRestrictions method", "GetRowset method", "GetSchemas method"]
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBSchemaRowsetImpl Class
 

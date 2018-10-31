@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3739 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3739"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3739"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3739"]
 ms.assetid: acffe894-08b8-4bf2-9249-9501e6e2bad3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3739
 

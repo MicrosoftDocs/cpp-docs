@@ -1,16 +1,9 @@
 ---
-title: "ENDS (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "ENDS (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["ENDS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ENDS directive"]
 ms.assetid: 30f68c58-de1f-4bdd-ac83-4658bdbaad65
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ENDS (MASM)
 

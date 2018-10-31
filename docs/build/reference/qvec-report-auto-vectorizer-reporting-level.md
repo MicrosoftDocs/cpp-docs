@@ -1,14 +1,7 @@
 ---
-title: "-Qvec-report (Auto-Vectorizer Reporting Level) | Microsoft Docs"
-ms.custom: ""
+title: "/Qvec-report (Auto-Vectorizer Reporting Level)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Qvec-report (Auto-Vectorizer Reporting Level)
 

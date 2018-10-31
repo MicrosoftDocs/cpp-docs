@@ -1,16 +1,9 @@
 ---
-title: "is_pointer Class | Microsoft Docs"
-ms.custom: ""
+title: "is_pointer Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_pointer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_pointer class", "is_pointer"]
 ms.assetid: 44e0a403-7241-4e0a-8922-32877bcb9a4c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_pointer Class
 

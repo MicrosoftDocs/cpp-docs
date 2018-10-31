@@ -1,15 +1,8 @@
 ---
-title: "Building C/C++ Side-by-side Assemblies | Microsoft Docs"
-ms.custom: ""
+title: "Building C/C++ Side-by-side Assemblies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["side-by-side applications [C++]"]
 ms.assetid: 7fa20b16-3737-4f76-a0b5-1dacea19a1e8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Building C/C++ Side-by-side Assemblies
 

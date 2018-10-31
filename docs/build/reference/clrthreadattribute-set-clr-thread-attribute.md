@@ -1,16 +1,9 @@
 ---
-title: "-CLRTHREADATTRIBUTE (Set CLR Thread Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.CLRThreadAttribute"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/CLRTHREADATTRIBUTE linker option", "-CLRTHREADATTRIBUTE linker option"]
 ms.assetid: 4907e9ef-5031-446c-aecf-0a0b32fae1e8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /CLRTHREADATTRIBUTE (Set CLR Thread Attribute)
 

@@ -1,19 +1,12 @@
 ---
-title: "csin, csinf, csinl | Microsoft Docs"
-ms.custom: ""
+title: "csin, csinf, csinl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["csin", "csinf", "csinl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["csin", "csinf", "csinl", "complex/csin", "complex/csinf", "complex/csinl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["csin function", "csinf function", "csinl function"]
 ms.assetid: 3ed475e8-9aae-42ba-a25c-7ae656a0fd4d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # csin, csinf, csinl
 

@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Fatal Error RC1002 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Fatal Error RC1002"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC1002"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC1002"]
 ms.assetid: b43dfece-0dc3-4d0b-9d8f-509699b9ae80
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1002
 

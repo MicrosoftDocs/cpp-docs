@@ -1,14 +1,7 @@
 ---
-title: "2.7.2.7 copyin | Microsoft Docs"
-ms.custom: ""
+title: "2.7.2.7 copyin"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 76cfb9f8-bf65-4585-adbf-fd933f5606b4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.7.2.7 copyin
 

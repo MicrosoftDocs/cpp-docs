@@ -1,16 +1,9 @@
 ---
-title: "&lt;complex&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;complex&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<complex>", "std::<complex>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["complex header"]
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;complex&gt;
 

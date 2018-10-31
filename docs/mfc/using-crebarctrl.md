@@ -1,16 +1,9 @@
 ---
-title: "Using CReBarCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CReBarCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CReBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["child windows [MFC], rebar controls", "combo boxes [MFC], in rebar controls", "rebar controls"]
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CReBarCtrl
 

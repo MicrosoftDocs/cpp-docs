@@ -1,16 +1,9 @@
 ---
-title: "CREATESTRUCT Structure | Microsoft Docs"
-ms.custom: ""
+title: "CREATESTRUCT Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CREATESTRUCT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CREATESTRUCT structure [MFC]"]
 ms.assetid: 028c7b5e-4fdc-48da-a550-d3e4f9e6cc85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CREATESTRUCT Structure
 

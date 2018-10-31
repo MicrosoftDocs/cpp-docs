@@ -1,16 +1,10 @@
 ---
-title: "Platform::ValueType Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::ValueType Class"
 ms.date: "02/03/2017"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ValueType::ToString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ValueType Class"]
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::ValueType Class
 

@@ -1,16 +1,9 @@
 ---
-title: "WSADATA Structure | Microsoft Docs"
-ms.custom: ""
+title: "WSADATA Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["WSADATA"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WSADATA structure [MFC]"]
 ms.assetid: 80cc60e5-f9ae-4290-8ed5-07003136627d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # WSADATA Structure
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 2) C4099 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 2) C4099"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4099"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4099"]
 ms.assetid: 00bb803d-cae7-4ab8-8969-b46f54139ac8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4099
 

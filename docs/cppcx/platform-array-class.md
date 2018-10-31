@@ -1,16 +1,10 @@
 ---
-title: "Platform::Array Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Array Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Array Constructors", "VCCORLIB/Namespace not found::Platform::Array::Value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Array Class"]
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Array Class
 

@@ -1,15 +1,8 @@
 ---
-title: "new Operator (C++) | Microsoft Docs"
-ms.custom: ""
+title: "new Operator (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["new keyword [C++]"]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # new Operator (C++)
 

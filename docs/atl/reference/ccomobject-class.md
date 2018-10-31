@@ -1,16 +1,9 @@
 ---
-title: "CComObject Class | Microsoft Docs"
-ms.custom: ""
+title: "CComObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComObject", "ATLCOM/ATL::CComObject", "ATLCOM/ATL::CComObject::CComObject", "ATLCOM/ATL::CComObject::AddRef", "ATLCOM/ATL::CComObject::CreateInstance", "ATLCOM/ATL::CComObject::QueryInterface", "ATLCOM/ATL::CComObject::Release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComObject class"]
 ms.assetid: e2b6433b-6349-4749-b4bc-acbd7a22c8b0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComObject Class
 

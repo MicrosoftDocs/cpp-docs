@@ -1,16 +1,10 @@
 ---
-title: "Semaphore Class | Microsoft Docs"
-ms.custom: ""
+title: "Semaphore Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Semaphore", "corewrappers/Microsoft::WRL::Wrappers::Semaphore::Lock", "corewrappers/Microsoft::WRL::Wrappers::Semaphore::operator=", "corewrappers/Microsoft::WRL::Wrappers::Semaphore::Semaphore"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::Semaphore class", "Microsoft::WRL::Wrappers::Semaphore::Lock method", "Microsoft::WRL::Wrappers::Semaphore::operator= operator", "Microsoft::WRL::Wrappers::Semaphore::Semaphore, constructor"]
 ms.assetid: ded53526-17b4-4381-9c60-ea5e77363db6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Semaphore Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4325 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4325"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4325"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4325"]
 ms.assetid: 8127a08c-d626-481b-aa7b-04a3fdc9a9ec
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4325
 

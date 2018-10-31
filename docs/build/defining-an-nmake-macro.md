@@ -1,15 +1,8 @@
 ---
-title: "Defining an NMAKE Macro | Microsoft Docs"
-ms.custom: ""
+title: "Defining an NMAKE Macro"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["macros, NMAKE", "defining NMAKE macros", "NMAKE macros, defining"]
 ms.assetid: 45aae451-9d33-4a3d-8799-2e0cae17070d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Defining an NMAKE Macro
 

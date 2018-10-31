@@ -1,19 +1,12 @@
 ---
-title: "qsort_s | Microsoft Docs"
-ms.custom: ""
+title: "qsort_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["qsort_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["qsort_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [C++], sorting", "quick-sort algorithm", "qsort_s function", "sorting arrays"]
 ms.assetid: 6ee817b0-4408-4355-a5d4-6605e419ab91
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # qsort_s
 

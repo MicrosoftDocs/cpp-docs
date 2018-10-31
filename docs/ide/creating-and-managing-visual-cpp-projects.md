@@ -1,16 +1,9 @@
 ---
-title: "Creating and Managing Visual C++ Projects | Microsoft Docs"
-ms.custom: ""
+title: "Creating and Managing Visual C++ Projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vcprojects", "creatingmanagingVC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "Visual C++ projects, creating", "projects [C++], creating", "Visual C++ projects", "ATL projects"]
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating and Managing MSBuild-based Visual C++ Projects
 

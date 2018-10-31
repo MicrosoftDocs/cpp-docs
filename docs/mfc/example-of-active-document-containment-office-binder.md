@@ -1,15 +1,8 @@
 ---
-title: "Example of Active Document Containment: Office Binder | Microsoft Docs"
-ms.custom: ""
+title: "Example of Active Document Containment: Office Binder"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], containers", "examples [MFC], active document containment", "containers [MFC], active document", "active document containers [MFC], examples", "Office Binder [MFC]", "MFC COM, active document containment"]
 ms.assetid: 70dd8568-e8bc-44ac-bf5e-678767efe8e3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Example of Active Document Containment: Office Binder
 

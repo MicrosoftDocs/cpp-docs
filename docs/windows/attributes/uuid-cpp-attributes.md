@@ -1,16 +1,9 @@
 ---
-title: "uuid (C++ Attributes) | Microsoft Docs"
-ms.custom: ""
+title: "uuid (C++ Attributes)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.uuid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["uuid attribute"]
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # uuid (C++ Attributes)
 

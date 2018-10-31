@@ -1,16 +1,9 @@
 ---
-title: "CWindowDC Class | Microsoft Docs"
-ms.custom: ""
+title: "CWindowDC Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CWindowDC", "AFXWIN/CWindowDC", "AFXWIN/CWindowDC::CWindowDC", "AFXWIN/CWindowDC::m_hWnd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CWindowDC [MFC], CWindowDC", "CWindowDC [MFC], m_hWnd"]
 ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWindowDC Class
 

@@ -1,19 +1,12 @@
 ---
-title: "strchr, wcschr, _mbschr, _mbschr_l | Microsoft Docs"
-ms.custom: ""
+title: "strchr, wcschr, _mbschr, _mbschr_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["strchr", "wcschr", "_mbschr_l", "_mbschr"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_ftcschr", "strchr", "wcschr", "_tcschr", "_mbschr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], searching", "mbschr function", "_ftcschr function", "_mbschr function", "characters [C++], finding in strings", "_mbschr_l function", "ftcschr function", "wcschr function", "strchr function", "_tcschr function", "tcschr function", "mbschr_l function"]
 ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strchr, wcschr, _mbschr, _mbschr_l
 

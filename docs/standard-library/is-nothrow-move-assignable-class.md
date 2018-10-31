@@ -1,16 +1,9 @@
 ---
-title: "is_nothrow_move_assignable Class | Microsoft Docs"
-ms.custom: ""
+title: "is_nothrow_move_assignable Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_nothrow_move_assignable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_nothrow_move_assignable"]
 ms.assetid: 000baa02-cbba-49de-9870-af730033348e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_nothrow_move_assignable Class
 

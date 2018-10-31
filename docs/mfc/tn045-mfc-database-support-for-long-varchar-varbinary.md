@@ -1,16 +1,9 @@
 ---
-title: "TN045: MFC-Database Support for Long Varchar-Varbinary | Microsoft Docs"
-ms.custom: ""
+title: "TN045: MFC-Database Support for Long Varchar-Varbinary"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.data"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN045", "Varbinary data type", "Varchar data type"]
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN045: MFC/Database Support for Long Varchar/Varbinary
 

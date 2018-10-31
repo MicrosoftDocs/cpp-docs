@@ -1,15 +1,10 @@
 ---
-title: "Attributes by Group | Microsoft Docs"
+title: "Attributes by Group"
 ms.custom: "index-page"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI]"]
 ms.assetid: 9f4dd43f-9909-43d6-91d2-05734643876e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Attributes by Group
 

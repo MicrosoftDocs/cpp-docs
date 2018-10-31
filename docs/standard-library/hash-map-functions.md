@@ -1,8 +1,6 @@
 ---
-title: "&lt;hash_map&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;hash_map&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["hash_map/std::swap", "hash_map/std::swap (hash_map)"]
 ms.assetid: 28748cd0-71f7-41b9-b068-579183645fba
 ---

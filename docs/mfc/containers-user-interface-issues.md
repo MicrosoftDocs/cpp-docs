@@ -1,15 +1,8 @@
 ---
-title: "Containers: User-Interface Issues | Microsoft Docs"
-ms.custom: ""
+title: "Containers: User-Interface Issues"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["containers [MFC], user-interface issues", "OLE containers [MFC], user interface", "user interface issues"]
 ms.assetid: c833c249-a633-4f1c-82d6-ec6b4892863a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: User-Interface Issues
 

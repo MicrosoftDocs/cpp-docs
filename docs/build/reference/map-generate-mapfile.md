@@ -1,16 +1,9 @@
 ---
-title: "-MAP (Generate Mapfile) | Microsoft Docs"
-ms.custom: ""
+title: "/MAP (Generate Mapfile)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/map", "VC.Project.VCLinkerTool.MapFileName", "VC.Project.VCLinkerTool.GenerateMapFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mapfiles, creating linker", "generate mapfile linker option", "mapfile linker option", "mapfiles, information about program being linked", "MAP linker option", "-MAP linker option", "mapfiles, specifying file name", "/MAP linker option"]
 ms.assetid: 9ccce53d-4e36-43da-87b0-7603ddfdea63
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MAP (Generate Mapfile)
 

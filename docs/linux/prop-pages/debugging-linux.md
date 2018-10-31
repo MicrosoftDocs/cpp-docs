@@ -1,14 +1,7 @@
 ---
 title: "Debugger Properties (Linux C++)| Microsoft Docs"
-ms.custom: ""
 ms.date: "9/26/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 # C++ Debugging Properties (Linux C++)
 

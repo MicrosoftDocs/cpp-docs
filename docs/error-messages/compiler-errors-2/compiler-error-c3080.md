@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3080 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3080"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3080"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3080"]
 ms.assetid: ff62a3f7-9b3b-44bd-b8d9-f3a8e5354560
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3080
 

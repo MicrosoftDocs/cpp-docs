@@ -1,16 +1,9 @@
 ---
-title: "__int8, __int16, __int32, __int64 | Microsoft Docs"
-ms.custom: ""
+title: "__int8, __int16, __int32, __int64"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__int8_cpp", "__int16_cpp", "__int32_cpp", "__int64_cpp", "__int8", "__int16", "__int32", "__int64", "_int8", "_int16", "_int32", "_int64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__int16 keyword [C++]", "integer data type [C++], integer types in C++", "__int32 keyword [C++]", "integer types [C++]", "__int8 keyword [C++]", "__int64 keyword [C++]"]
 ms.assetid: 8e384602-2578-4980-8cc8-da63842356b2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __int8, __int16, __int32, __int64
 

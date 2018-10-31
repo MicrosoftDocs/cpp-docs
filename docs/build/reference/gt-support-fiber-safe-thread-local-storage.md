@@ -1,16 +1,9 @@
 ---
-title: "-GT (Support Fiber-Safe Thread-Local Storage) | Microsoft Docs"
-ms.custom: ""
+title: "/GT (Support Fiber-Safe Thread-Local Storage)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableFiberSafeOptimizations", "/gt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/GT compiler option [C++]", "GT compiler option [C++]", "thread-local storage", "static thread-local storage and fiber safety", "-GT compiler option [C++]", "fiber-safe static thread-local storage compiler option [C++]"]
 ms.assetid: 071fec79-c701-432b-9970-457344133159
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GT (Support Fiber-Safe Thread-Local Storage)
 

@@ -1,15 +1,8 @@
 ---
-title: "Differences in Exception Handling Behavior Under -CLR | Microsoft Docs"
-ms.custom: ""
+title: "Differences in Exception Handling Behavior Under -CLR"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["EXCEPTION_CONTINUE_EXECUTION macro", "set_se_translator function"]
 ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Differences in Exception Handling Behavior Under /CLR
 

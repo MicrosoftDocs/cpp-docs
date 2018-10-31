@@ -1,15 +1,8 @@
 ---
-title: "Programmatically Create a Table in an ODBC Data Source | Microsoft Docs"
-ms.custom: ""
+title: "Programmatically Create a Table in an ODBC Data Source"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["programmatically creating ODBC tables [C++]", "tables [C++]", "ODBC data sources, creating tables in", "tables [C++], creating programmatically"]
 ms.assetid: 9ca68fb5-c3df-424a-a75c-e3fb01cc1b18
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Programmatically Creating a Table in an ODBC Data Source
 

@@ -1,15 +1,8 @@
 ---
-title: "Adding an Interface to Your Provider | Microsoft Docs"
-ms.custom: ""
+title: "Adding an Interface to Your Provider"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB provider templates, object interfaces"]
 ms.assetid: b0fc7cf8-428a-4584-9d64-ce9074d0eb66
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Adding an Interface to Your Provider
 

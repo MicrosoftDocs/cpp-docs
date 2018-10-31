@@ -1,16 +1,10 @@
 ---
-title: "Platform::Agile Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Agile Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["AGILE/Platform::Platform", "AGILE/Platform::Platform::Agile::Agile", "AGILE/Platform::Platform::Agile::Get", "AGILE/Platform::Platform::Agile::GetAddressOf", "AGILE/Platform::Platform::Agile::GetAddressOfForInOut", "AGILE/Platform::Platform::Agile::Release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Agile"]
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Agile Class
 

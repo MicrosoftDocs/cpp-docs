@@ -1,15 +1,8 @@
 ---
-title: "signal Function (C) | Microsoft Docs"
-ms.custom: ""
+title: "signal Function (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["signal function"]
 ms.assetid: d3ce419a-50b2-4233-bb50-99312293f9f3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # signal Function (C)
 

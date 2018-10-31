@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Creating an Automation Server | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Creating an Automation Server"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Automation servers [MFC], MFC ActiveX controls", "ActiveX controls [MFC], Automation server", "MFC ActiveX controls [MFC], Automation server"]
 ms.assetid: e0c24ed2-d61c-49ad-a4fa-4e1098d1d39b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Creating an Automation Server
 

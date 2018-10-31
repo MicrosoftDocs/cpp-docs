@@ -1,15 +1,8 @@
 ---
-title: "How to: Customize the Application Button | Microsoft Docs"
-ms.custom: ""
+title: "How to: Customize the Application Button"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["application button [MFC], customizing"]
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Customize the Application Button
 

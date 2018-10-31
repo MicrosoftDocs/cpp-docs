@@ -1,16 +1,9 @@
 ---
-title: "Load Palette Colors Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Load Palette Colors Dialog Box (C++) (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.loadcolorpalette"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["color palettes", "Load Palette Colors dialog box [C++]"]
 ms.assetid: a1b17203-3e02-4498-91de-4ed089156df1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Load Palette Colors Dialog Box (C++) (Image Editor for Icons)
 

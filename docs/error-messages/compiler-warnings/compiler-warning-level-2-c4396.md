@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 2) C4396 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 2) C4396"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4396"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4396"]
 ms.assetid: 7cd6b283-db17-4574-b299-03e0b913ad70
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4396
 

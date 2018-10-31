@@ -1,18 +1,12 @@
 ---
-title: "ilogb, ilogbf, ilogbl2 | Microsoft Docs"
-ms.custom: ""
+title: "ilogb, ilogbf, ilogbl2"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["ilogb", "ilogbf", "ilogbl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["ilogb", "ilogbf", "ilogbl", "math/ilogb", "math/ilogbf", "math/ilogbl"]
 helpviewer_keywords: ["ilogb function", "ilogbf function", "ilogbl function"]
 ms.assetid: 9ef19d57-1caa-41d5-8233-2faad3562fcb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ilogb, ilogbf, ilogbl
 

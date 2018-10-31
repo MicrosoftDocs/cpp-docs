@@ -1,16 +1,9 @@
 ---
-title: "&lt;example&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;example&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["<example>", "example"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<example> C++ XML tag", "example C++ XML tag"]
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;example&gt; (Visual C++)
 

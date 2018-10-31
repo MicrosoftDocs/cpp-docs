@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2148 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2148"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2148"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2148"]
 ms.assetid: e510c2c9-7b57-4ce8-be03-ba363e2cc5d9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2148
 

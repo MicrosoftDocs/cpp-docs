@@ -1,15 +1,8 @@
 ---
-title: "Debugging Tips (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Debugging Tips (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, debugging", "services, debugging"]
 ms.assetid: 48c60244-d0ce-4466-85fa-6fa65fcfe86c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Debugging Tips
 

@@ -1,14 +1,7 @@
 ---
-title: "Uniform Initialization and Delegating Constructors | Microsoft Docs"
-ms.custom: ""
+title: "Uniform Initialization and Delegating Constructors"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: aa4daa64-eaec-4a3c-ade4-d9325e31e9d4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Uniform Initialization and Delegating Constructors
 

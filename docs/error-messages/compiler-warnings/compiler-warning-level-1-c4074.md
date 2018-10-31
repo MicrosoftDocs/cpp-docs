@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4074 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4074"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4074"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4074"]
 ms.assetid: cd510e66-c338-4a86-a4d7-bfa1df9b16c3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4074
 

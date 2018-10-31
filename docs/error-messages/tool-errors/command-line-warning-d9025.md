@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Warning D9025 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Warning D9025"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D9025"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D9025"]
 ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9025
 

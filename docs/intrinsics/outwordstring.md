@@ -1,16 +1,9 @@
 ---
-title: "__outwordstring | Microsoft Docs"
-ms.custom: ""
+title: "__outwordstring"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__outwordstring"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rep outsw instruction", "__outwordstring intrinsic", "outsw instruction"]
 ms.assetid: b470c7a0-1de9-4370-886a-b2c3a1f842f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __outwordstring
 

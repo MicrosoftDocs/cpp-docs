@@ -1,15 +1,8 @@
 ---
-title: "Contexts | Microsoft Docs"
-ms.custom: ""
+title: "Contexts"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["contexts [Concurrency Runtime]"]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Contexts
 

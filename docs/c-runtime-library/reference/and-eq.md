@@ -1,18 +1,11 @@
 ---
-title: "and_eq | Microsoft Docs"
-ms.custom: ""
+title: "and_eq"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["and_eq", "std.and_eq", "std::and_eq"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["and_eq macro"]
 ms.assetid: 11091772-e359-4c2b-95c6-00841ac04354
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # and_eq
 

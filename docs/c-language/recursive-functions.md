@@ -1,15 +1,8 @@
 ---
-title: "Recursive Functions | Microsoft Docs"
-ms.custom: ""
+title: "Recursive Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C], recursive", "function calls, recursive", "functions [C], calling recursively", "recursive function calls"]
 ms.assetid: 59739040-3081-4006-abbc-9d8423992bce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Recursive Functions
 

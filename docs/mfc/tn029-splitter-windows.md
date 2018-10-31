@@ -1,16 +1,9 @@
 ---
-title: "TN029: Splitter Windows | Microsoft Docs"
-ms.custom: ""
+title: "TN029: Splitter Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.windows.splitter"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN029", "splitter windows [MFC], about splitter windows"]
 ms.assetid: 2c57ce99-2a3c-4eff-9cea-baccb13af075
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN029: Splitter Windows
 

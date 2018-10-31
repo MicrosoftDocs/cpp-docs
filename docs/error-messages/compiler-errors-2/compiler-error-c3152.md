@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3152 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3152"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3152"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3152"]
 ms.assetid: 4ee6e2cd-5d19-4b73-833d-765c35797e4b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3152
 

@@ -1,16 +1,9 @@
 ---
-title: "/FA, /Fa (Listing File) | Microsoft Docs"
-ms.custom: ""
+title: "/FA, /Fa (Listing File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.AssemblerListingLocation", "VC.Project.VCCLCompilerTool.ConfigureASMListing", "VC.Project.VCCLWCECompilerTool.AssemblerOutput", "VC.Project.VCCLCompilerTool.AssemblerListingLocation", "/fa", "VC.Project.VCCLCompilerTool.AssemblerOutput", "VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["FA compiler option [C++]", "/FA compiler option [C++]", "-FA compiler option [C++]", "listing file type", "assembly-only listing"]
 ms.assetid: c7507d0e-c69d-44f9-b8e2-d2c398697402
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FA, /Fa (Listing File)
 

@@ -1,14 +1,7 @@
 ---
-title: "2.6.2 critical Construct | Microsoft Docs"
-ms.custom: ""
+title: "2.6.2 critical Construct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c46ecd00-b4a2-4a5e-ba92-288c329e773a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.6.2 critical Construct
 

@@ -1,15 +1,9 @@
 ---
-title: "Threading and Marshaling (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Threading and Marshaling (C++/CX)"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 f1_keywords: ["C4451"]
 helpviewer_keywords: ["threading issues, C++/CX", "agility, C++/CX", "C++/CX, threading issues"]
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Threading and Marshaling (C++/CX)
 

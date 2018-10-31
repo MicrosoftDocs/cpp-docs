@@ -1,16 +1,9 @@
 ---
-title: "_BitScanForward, _BitScanForward64 | Microsoft Docs"
-ms.custom: ""
+title: "_BitScanForward, _BitScanForward64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_BitScanForward", "_BitScanForward_cpp", "_BitScanForward64_cpp", "_BitScanForward64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_BitScanForward intrinsic", "bsf instruction", "BitScanForward intrinsic"]
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _BitScanForward, _BitScanForward64
 

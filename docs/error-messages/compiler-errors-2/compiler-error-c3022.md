@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3022 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3022"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3022"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3022"]
 ms.assetid: 9f1d444c-6c6e-48d9-9346-69128390aa33
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3022
 

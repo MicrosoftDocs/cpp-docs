@@ -1,16 +1,9 @@
 ---
-title: "__writefsbyte, __writefsdword, __writefsqword, __writefsword | Microsoft Docs"
-ms.custom: ""
+title: "__writefsbyte, __writefsdword, __writefsqword, __writefsword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__writefsword", "__writefsbyte", "__writefsqword", "__writefsdword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["writefsbyte intrinsic", "__writefsword intrinsic", "writefsqword intrinsic", "writefsdword intrinsic", "__writefsdword intrinsic", "__writefsqword intrinsic", "__writefsbyte intrinsic", "writefsword intrinsic"]
 ms.assetid: 23ac6e8e-bc91-4e90-a4c6-da02993637ad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writefsbyte, __writefsdword, __writefsqword, __writefsword
 

@@ -1,15 +1,8 @@
 ---
-title: "C Relational and Equality Operators | Microsoft Docs"
-ms.custom: ""
+title: "C Relational and Equality Operators"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["relational operators, syntax", "equality operator", "operators [C], equality", "equality operator, syntax", "operators [C], relational"]
 ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Relational and Equality Operators
 

@@ -1,14 +1,7 @@
 ---
-title: "3.1.7 omp_set_dynamic Function | Microsoft Docs"
-ms.custom: ""
+title: "3.1.7 omp_set_dynamic Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 1fba961b-b82c-4a1e-ab0f-e4be826e50ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.1.7 omp_set_dynamic Function
 

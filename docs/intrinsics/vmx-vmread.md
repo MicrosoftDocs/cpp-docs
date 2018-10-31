@@ -1,16 +1,9 @@
 ---
-title: "__vmx_vmread | Microsoft Docs"
-ms.custom: ""
+title: "__vmx_vmread"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__vmx_vmread"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VMREAD instruction", "__vmx_vmread intrinsic"]
 ms.assetid: 08bdd7a0-6435-4ea6-b9a0-f592d870e5aa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __vmx_vmread
 

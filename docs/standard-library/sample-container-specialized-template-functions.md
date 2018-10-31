@@ -1,14 +1,7 @@
 ---
-title: "&lt;sample container&gt; Specialized Template Functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;sample container&gt; Specialized Template Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 853d4b30-167a-471b-8325-86a868943568
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;sample container&gt; Specialized Template Functions
 

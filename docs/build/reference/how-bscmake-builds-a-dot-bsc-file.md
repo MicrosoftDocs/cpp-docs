@@ -1,15 +1,8 @@
 ---
-title: "How BSCMAKE Builds a .Bsc File | Microsoft Docs"
-ms.custom: ""
+title: "How BSCMAKE Builds a .Bsc File"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["browse information files (.bsc), building"]
 ms.assetid: 8512b33e-c856-44a2-87bd-01ab10b52a95
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How BSCMAKE Builds a .Bsc File
 

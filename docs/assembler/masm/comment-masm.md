@@ -1,16 +1,9 @@
 ---
-title: "COMMENT (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "COMMENT (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["Comment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COMMENT directive"]
 ms.assetid: b255ebf2-99b0-401c-a2c3-50ce57533578
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # COMMENT (MASM)
 

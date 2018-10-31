@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2275 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2275"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2275"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2275"]
 ms.assetid: c1eafa71-48de-46e0-82f3-b575538ef205
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2275
 

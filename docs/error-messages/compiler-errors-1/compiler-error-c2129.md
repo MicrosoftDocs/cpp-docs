@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2129 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2129"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2129"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2129"]
 ms.assetid: 21a8223e-1d22-4baa-9ca1-922b7f751dd0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2129
 

@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1223 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1223"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1223"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1223"]
 ms.assetid: c4728c36-daee-462f-a1c7-8733dcdec88e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1223
 

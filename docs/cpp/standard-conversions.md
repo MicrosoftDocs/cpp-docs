@@ -1,15 +1,8 @@
 ---
-title: "Standard Conversions | Microsoft Docs"
-ms.custom: ""
+title: "Standard Conversions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["standard conversions, categories of", "L-values [C++]", "conversions, standard"]
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Standard Conversions
 

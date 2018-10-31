@@ -1,15 +1,8 @@
 ---
-title: "ActiveX Control Containers: Connecting an ActiveX Control to a Member Variable | Microsoft Docs"
-ms.custom: ""
+title: "ActiveX Control Containers: Connecting an ActiveX Control to a Member Variable"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX control containers [MFC], accessing ActiveX controls", "ActiveX controls [MFC], member variables of project", "connecting ActiveX controls to container member variables", "ActiveX controls [MFC], accessing", "member variables [MFC], ActiveX controls in project", "ActiveX control containers [MFC], ActiveX controls as member variables"]
 ms.assetid: 7898a336-440d-4a60-be43-cb062b807aee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Connecting an ActiveX Control to a Member Variable
 

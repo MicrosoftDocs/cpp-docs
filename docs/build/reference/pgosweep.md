@@ -1,15 +1,8 @@
 ---
-title: "pgosweep | Microsoft Docs"
-ms.custom: ""
+title: "pgosweep"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pgosweep program", "profile-guided optimizations, pgosweep"]
 ms.assetid: f39dd3b7-1cd9-4c3b-8e8b-fb794744b757
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # pgosweep
 

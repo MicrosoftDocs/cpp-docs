@@ -1,16 +1,9 @@
 ---
-title: "CComQIPtr Class | Microsoft Docs"
-ms.custom: ""
+title: "CComQIPtr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComQIPtr", "ATLCOMCLI/ATL::CComQIPtr", "ATLCOMCLI/ATL::CComQIPtr::CComQIPtr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComQIPtr class"]
 ms.assetid: 969cacb5-05b6-4af4-b683-24911d70242d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComQIPtr Class
 

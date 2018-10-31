@@ -1,15 +1,8 @@
 ---
-title: "Use Database Forms (Record Views) with ODBC | Microsoft Docs"
-ms.custom: ""
+title: "Use Database Forms (Record Views) with ODBC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC, record views", "record views, ODBC"]
 ms.assetid: 6a2ce346-8104-4ccd-b06e-ca0859a132fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Use Database Forms (Record Views) with ODBC
 

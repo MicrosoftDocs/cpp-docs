@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2268 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2268"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2268"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2268"]
 ms.assetid: 0ed055c9-3c6f-4df2-a5b6-85cf0e01a249
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2268
 

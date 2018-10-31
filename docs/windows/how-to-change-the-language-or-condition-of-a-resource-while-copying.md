@@ -1,16 +1,9 @@
 ---
-title: "How to: Change the Language or Condition of a Resource While Copying (C++) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Change the Language or Condition of a Resource While Copying (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.resource.changing"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Language property [C++]"]
 ms.assetid: 8f622ab0-bac2-468f-ae70-78911afc4759
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Change the Language or Condition of a Resource While Copying (C++)
 

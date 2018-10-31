@@ -1,16 +1,10 @@
 ---
-title: "ptr::GetInterface | Microsoft Docs"
-ms.custom: ""
+title: "ptr::GetInterface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["ptr::GetInterface", "msclr::com::ptr::GetInterface", "GetInterface", "msclr.com.ptr.GetInterface", "ptr.GetInterface"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["GetInterface method"]
 ms.assetid: d85553ec-fb88-4fd6-9df2-ddcaa8b2dc70
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::GetInterface
 

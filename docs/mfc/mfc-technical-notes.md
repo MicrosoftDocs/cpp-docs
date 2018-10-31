@@ -1,16 +1,9 @@
 ---
-title: "MFC Technical Notes | Microsoft Docs"
-ms.custom: ""
+title: "MFC Technical Notes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.technotes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, technical notes", "technical notes, MFC", "technical notes [MFC]"]
 ms.assetid: 8aa01d66-0b07-4d0a-a080-4bb00c7baaac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Technical Notes
 

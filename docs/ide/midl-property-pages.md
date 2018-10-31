@@ -1,15 +1,8 @@
 ---
-title: "MIDL Property Pages | Microsoft Docs"
-ms.custom: ""
+title: "MIDL Property Pages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MIDL", "MIDL, property pages", "property pages, MIDL"]
 ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MIDL Property Pages
 

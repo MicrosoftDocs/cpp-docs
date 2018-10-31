@@ -1,15 +1,8 @@
 ---
-title: "Adding Functionality to the Composite Control | Microsoft Docs"
-ms.custom: ""
+title: "Adding Functionality to the Composite Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handlers [C++], ActiveX controls", "composite controls, handling events", "ActiveX controls [C++], events"]
 ms.assetid: 98f85681-9564-480d-af38-03f9733fe58b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Functionality to the Composite Control
 

@@ -1,16 +1,9 @@
 ---
-title: "CODBCFieldInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CODBCFieldInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CODBCFieldInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [MFC], data source information", "CODBCFieldInfo structure [MFC]"]
 ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CODBCFieldInfo Structure
 

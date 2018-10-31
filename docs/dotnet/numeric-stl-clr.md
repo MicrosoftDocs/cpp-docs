@@ -1,16 +1,10 @@
 ---
-title: "numeric (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "numeric (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["<cliext/numeric>", "cliext::accumulate", "cliext::adjacent_difference", "cliext::inner_product", "cliext::partial_sum"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["numeric functions [STL/CLR]", "<cliext/numeric> header [STL/CLR]", "<numeric> header [STL/CLR]", "accumulate function [STL/CLR]", "adjacent_difference function [STL/CLR]", "inner_product function [STL/CLR]", "partial_sum function [STL/CLR]"]
 ms.assetid: 1dc4d9a3-e734-459c-9678-5d9be0ef4c79
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # numeric (STL/CLR)
 

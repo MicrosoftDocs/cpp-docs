@@ -1,13 +1,6 @@
 ---
-title: "ARM64 exception handling | Microsoft Docs"
-ms.custom: ""
+title: "ARM64 exception handling"
 ms.date: "07/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ARM64 exception handling
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2505 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2505"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2505"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2505"]
 ms.assetid: b19f5c53-399d-425e-90db-fe3ca9b40858
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2505
 

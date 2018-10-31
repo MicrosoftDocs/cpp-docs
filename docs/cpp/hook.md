@@ -1,16 +1,9 @@
 ---
-title: "__hook | Microsoft Docs"
-ms.custom: ""
+title: "__hook"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__hook_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__hook keyword [C++]", "event handlers [C++], connecting events to"]
 ms.assetid: f4cabb10-d293-4c0e-a1d2-4745ef9cc22c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __hook
 

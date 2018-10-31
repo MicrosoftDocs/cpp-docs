@@ -1,16 +1,9 @@
 ---
-title: "moneypunct Class | Microsoft Docs"
-ms.custom: ""
+title: "moneypunct Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocmon/std::moneypunct", "xlocmon/std::moneypunct::char_type", "xlocmon/std::moneypunct::string_type", "xlocmon/std::moneypunct::curr_symbol", "xlocmon/std::moneypunct::decimal_point", "xlocmon/std::moneypunct::do_curr_symbol", "xlocmon/std::moneypunct::do_decimal_point", "xlocmon/std::moneypunct::do_frac_digits", "xlocmon/std::moneypunct::do_grouping", "xlocmon/std::moneypunct::do_neg_format", "xlocmon/std::moneypunct::do_negative_sign", "xlocmon/std::moneypunct::do_pos_format", "xlocmon/std::moneypunct::do_positive_sign", "xlocmon/std::moneypunct::do_thousands_sep", "xlocmon/std::moneypunct::frac_digits", "xlocmon/std::moneypunct::grouping", "xlocmon/std::moneypunct::neg_format", "xlocmon/std::moneypunct::negative_sign", "xlocmon/std::moneypunct::pos_format", "xlocmon/std::moneypunct::positive_sign", "xlocmon/std::moneypunct::thousands_sep"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::moneypunct [C++]", "std::moneypunct [C++], char_type", "std::moneypunct [C++], string_type", "std::moneypunct [C++], curr_symbol", "std::moneypunct [C++], decimal_point", "std::moneypunct [C++], do_curr_symbol", "std::moneypunct [C++], do_decimal_point", "std::moneypunct [C++], do_frac_digits", "std::moneypunct [C++], do_grouping", "std::moneypunct [C++], do_neg_format", "std::moneypunct [C++], do_negative_sign", "std::moneypunct [C++], do_pos_format", "std::moneypunct [C++], do_positive_sign", "std::moneypunct [C++], do_thousands_sep", "std::moneypunct [C++], frac_digits", "std::moneypunct [C++], grouping", "std::moneypunct [C++], neg_format", "std::moneypunct [C++], negative_sign", "std::moneypunct [C++], pos_format", "std::moneypunct [C++], positive_sign", "std::moneypunct [C++], thousands_sep"]
 ms.assetid: cf2650da-3e6f-491c-95d5-23e57f582ee6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # moneypunct Class
 

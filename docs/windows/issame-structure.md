@@ -1,16 +1,10 @@
 ---
-title: "IsSame Structure | Microsoft Docs"
-ms.custom: ""
+title: "IsSame Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::IsSame", "internal/Microsoft::WRL::Details::IsSame::value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::IsSame structure", "Microsoft::WRL::Details::IsSame::value constant"]
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # IsSame Structure
 

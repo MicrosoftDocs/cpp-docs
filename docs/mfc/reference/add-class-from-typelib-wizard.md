@@ -1,16 +1,9 @@
 ---
-title: "Add Class from Typelib Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Add Class from Typelib Wizard"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.typelib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Add Class from TypeLib Wizard [MFC]", "COM interfaces, adding classes"]
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Add Class from Typelib Wizard
 

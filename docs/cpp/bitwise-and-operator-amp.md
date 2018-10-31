@@ -1,16 +1,9 @@
 ---
-title: "Bitwise AND Operator: &amp; | Microsoft Docs"
-ms.custom: ""
+title: "Bitwise AND Operator: &amp;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["bitand"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["AND operator", "bitwise operators [C++], AND operator", "& operator [C++], bitwise operators"]
 ms.assetid: 76f40de3-c417-47b9-8a77-532f3fc990a5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Bitwise AND Operator: &amp;
 

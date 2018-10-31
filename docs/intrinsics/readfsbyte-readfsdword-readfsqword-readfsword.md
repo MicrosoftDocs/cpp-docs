@@ -1,16 +1,9 @@
 ---
-title: "__readfsbyte, __readfsdword, __readfsqword, __readfsword | Microsoft Docs"
-ms.custom: ""
+title: "__readfsbyte, __readfsdword, __readfsqword, __readfsword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__readfsword", "__readfsdword", "__readfsbyte", "__readfsqword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__readfsword intrinsic", "readfsword intrinsic", "__readfsdword intrinsic", "readfsbyte intrinsic", "__readfsbyte intrinsic", "readfsdword intrinsic", "readfsqword intrinsic", "__readfsqword intrinsic"]
 ms.assetid: f6ee7203-4179-402c-a464-0746c84ce6ac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __readfsbyte, __readfsdword, __readfsqword, __readfsword
 

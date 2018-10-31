@@ -1,16 +1,9 @@
 ---
-title: "Compiler Errors C3000 Through C3099 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Errors C3000 Through C3099"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
 helpviewer_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
-dev_langs: ["C++"]
 ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C3000 Through C3099
 

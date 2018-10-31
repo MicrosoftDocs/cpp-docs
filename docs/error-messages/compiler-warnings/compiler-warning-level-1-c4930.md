@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4930 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4930"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4930"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4930"]
 ms.assetid: 89a206c9-c536-4186-8e81-1cde3e7f4f5b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4930
 

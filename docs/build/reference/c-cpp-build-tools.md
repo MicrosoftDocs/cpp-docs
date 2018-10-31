@@ -1,16 +1,9 @@
 ---
-title: "C/C++ Build Tools | Microsoft Docs"
-ms.custom: ""
+title: "C/C++ Build Tools"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["c.build"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["builds [C++], C/C++ tools", "tools [C++], build"]
 ms.assetid: 48d9daf4-6bbf-473a-8ce2-bf2923b69f80
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C/C++ Build Tools
 

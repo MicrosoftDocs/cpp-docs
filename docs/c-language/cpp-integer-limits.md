@@ -1,15 +1,8 @@
 ---
-title: "C++ Integer Limits | Microsoft Docs"
-ms.custom: ""
+title: "C++ Integer Limits"
 ms.date: "01/29/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["limits, integer", "limits, integer constants", "integer limits"]
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C++ Integer Limits
 

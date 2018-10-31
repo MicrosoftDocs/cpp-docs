@@ -1,14 +1,7 @@
 ---
-title: "A.2   Specifying Conditional Compilation | Microsoft Docs"
-ms.custom: ""
+title: "A.2   Specifying Conditional Compilation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: de4a21b9-f987-4738-9f13-c4795f6f2dff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.2   Specifying Conditional Compilation
 

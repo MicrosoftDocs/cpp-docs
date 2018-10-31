@@ -1,16 +1,9 @@
 ---
-title: "Document Template Strings, MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Document Template Strings, MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.doctemp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard, document template strings"]
 ms.assetid: 8109f662-3182-4682-977a-2503321c678a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document Template Strings, MFC Application Wizard
 

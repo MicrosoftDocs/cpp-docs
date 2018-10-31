@@ -1,15 +1,8 @@
 ---
-title: "Statements (C) | Microsoft Docs"
-ms.custom: ""
+title: "Statements (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["statements, C", "Visual C, statements", "statements"]
 ms.assetid: df3891cd-6195-4663-aecf-7fe7dc3ed9c3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Statements (C)
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2279 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2279"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2279"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2279"]
 ms.assetid: 1b5c88ef-2336-49b8-9ddb-d61f97c73e14
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2279
 

@@ -1,16 +1,9 @@
 ---
-title: "-FPO | Microsoft Docs"
-ms.custom: ""
+title: "/FPO"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/fpo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/FPO dumpbin option", "-FPO dumpbin option", "FPO dumpbin option"]
 ms.assetid: ee67f08b-bc5a-475a-bee3-c5614721755a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FPO
 

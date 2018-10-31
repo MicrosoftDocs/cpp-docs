@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2196 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2196"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2196"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2196"]
 ms.assetid: fd2f6a58-48ce-4e58-96f8-e37720feb8e7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2196
 

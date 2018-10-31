@@ -1,16 +1,10 @@
 ---
-title: "TerminateMap Function | Microsoft Docs"
-ms.custom: ""
+title: "TerminateMap Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::TerminateMap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TerminateMap function"]
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # TerminateMap Function
 

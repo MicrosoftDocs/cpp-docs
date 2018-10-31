@@ -1,16 +1,9 @@
 ---
-title: "CWinTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CWinTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CWinTraits", "ATLWIN/ATL::CWinTraits", "ATLWIN/ATL::CWinTraits::GetWndExStyle", "ATLWIN/ATL::CWinTraits::GetWndStyle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMDIChildWinTraits class", "window styles, default values for ATL", "CWinTraits class", "CFrameWinTraits class", "CControlWinTraits class"]
 ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWinTraits Class
 

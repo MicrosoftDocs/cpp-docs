@@ -1,15 +1,8 @@
 ---
-title: "Macros and C++ | Microsoft Docs"
-ms.custom: ""
+title: "Macros and C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["macros, C++", "macros"]
 ms.assetid: 83a344c1-73c9-4ace-8b93-cccfb62c6133
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Macros and C++
 C++ offers new capabilities, some of which supplant those offered by the ANSI C preprocessor. These new capabilities enhance the type safety and predictability of the language:

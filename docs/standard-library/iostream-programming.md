@@ -1,15 +1,8 @@
 ---
-title: "iostream Programming | Microsoft Docs"
-ms.custom: ""
+title: "iostream Programming"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["text output [C++]", "text [C++], formatting", "console [C++], writing to", "console [C++], reading from", "console applications [C++]", "reading data [C++], iostream programming", "output [C++]", "console [C++], text", "data [C++], reading", "I/O [C++], iostream programming", "iostream library", "printing [C++], printing to console", "programming [C++], iostream programming", "text input [C++]"]
 ms.assetid: 1aa0a0be-4dd8-4dac-ac1f-d2afdaeab769
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # iostream Programming
 

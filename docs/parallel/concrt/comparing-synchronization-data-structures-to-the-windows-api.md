@@ -1,15 +1,8 @@
 ---
-title: "Comparing Synchronization Data Structures to the Windows API | Microsoft Docs"
-ms.custom: ""
+title: "Comparing Synchronization Data Structures to the Windows API"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["synchronization data structures, compared to Windows API", "event class, example"]
 ms.assetid: 8b0b1a3a-ef80-408c-91fa-93e6af920b4e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Comparing Synchronization Data Structures to the Windows API
 

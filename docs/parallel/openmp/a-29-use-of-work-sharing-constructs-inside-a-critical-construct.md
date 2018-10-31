@@ -1,14 +1,7 @@
 ---
-title: "A.29   Use of Work-Sharing Constructs Inside a critical Construct | Microsoft Docs"
-ms.custom: ""
+title: "A.29   Use of Work-Sharing Constructs Inside a critical Construct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: d5c8a83f-2f51-4f23-8ddf-d267e347507f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.29   Use of Work-Sharing Constructs Inside a critical Construct
 

@@ -1,15 +1,8 @@
 ---
-title: "Handling Commands in the Document | Microsoft Docs"
-ms.custom: ""
+title: "Handling Commands in the Document"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message maps [MFC], in document class", "command handling [MFC]", "documents [MFC], message maps", "message handling [MFC], WM_COMMAND messages", "command handling [MFC], commands in documents", "documents [MFC], handling messages in"]
 ms.assetid: c7375584-27af-4275-b2fd-afea476785d0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handling Commands in the Document
 

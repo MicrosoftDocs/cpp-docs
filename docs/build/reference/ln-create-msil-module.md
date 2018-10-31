@@ -1,16 +1,9 @@
 ---
-title: "-LN (Create MSIL Module) | Microsoft Docs"
-ms.custom: ""
+title: "/LN (Create MSIL Module)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/LN"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-LN compiler option [C++]", "/LN compiler option [C++]"]
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /LN (Create MSIL Module)
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4812 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4812"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4812"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4812"]
 ms.assetid: a7f5721f-2019-44de-ad62-ed30bac8b1f3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4812
 

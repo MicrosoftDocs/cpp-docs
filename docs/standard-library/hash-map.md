@@ -1,15 +1,8 @@
 ---
-title: "&lt;hash_map&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;hash_map&gt;"
 ms.date: "01/18/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<hash_map>", "std::<hash_map>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["hash_map header"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;hash_map&gt;
 

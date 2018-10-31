@@ -1,15 +1,8 @@
 ---
-title: "Semantics of Expressions | Microsoft Docs"
-ms.custom: ""
+title: "Semantics of Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["grammar, expressions", "expressions [C++], semantics", "expression evaluation", "expression evaluation, about expression evaluation"]
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Semantics of Expressions
 

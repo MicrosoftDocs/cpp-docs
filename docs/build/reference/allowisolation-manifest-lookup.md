@@ -1,16 +1,9 @@
 ---
-title: "-ALLOWISOLATION (Manifest Lookup) | Microsoft Docs"
-ms.custom: ""
+title: "/ALLOWISOLATION (Manifest Lookup)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/ALLOWISOLATION", "VC.Project.VCLinkerTool.AllowIsolation"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-ALLOWISOLATION linker option", "/ALLOWISOLATION linker option"]
 ms.assetid: 6d41851e-b3c1-4bdf-beaa-031773089d6f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ALLOWISOLATION (Manifest Lookup)
 

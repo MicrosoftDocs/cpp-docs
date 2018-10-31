@@ -1,14 +1,7 @@
 ---
-title: "3.1.10 omp_get_nested Function | Microsoft Docs"
-ms.custom: ""
+title: "3.1.10 omp_get_nested Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 48736a25-5c6e-4e2d-aad0-421087663a3c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.1.10 omp_get_nested Function
 

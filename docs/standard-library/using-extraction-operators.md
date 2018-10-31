@@ -1,15 +1,8 @@
 ---
-title: "Using Extraction Operators | Microsoft Docs"
-ms.custom: ""
+title: "Using Extraction Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["extraction operators [C++]", "&gt;&gt; operator [C++], extraction operators", "operators [C++], extraction"]
 ms.assetid: a961e1a9-4897-41de-b210-89d5b2d051ae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using Extraction Operators
 

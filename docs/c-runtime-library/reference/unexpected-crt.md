@@ -1,19 +1,12 @@
 ---
-title: "unexpected (CRT) | Microsoft Docs"
-ms.custom: ""
+title: "unexpected (CRT)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["unexpected"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["unexpected"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["unexpected function"]
 ms.assetid: 2f873763-15ad-4556-a924-dcf28f2b52b4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # unexpected (CRT)
 

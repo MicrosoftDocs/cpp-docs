@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3388 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3388"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3388"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3388"]
 ms.assetid: 34336545-ed13-4d81-ab5f-f869799fe4c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3388
 

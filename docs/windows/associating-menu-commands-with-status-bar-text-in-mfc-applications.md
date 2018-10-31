@@ -1,15 +1,8 @@
 ---
-title: "Associating Menu Commands with Status Bar Text in MFC Applications | Microsoft Docs"
-ms.custom: ""
+title: "Associating Menu Commands with Status Bar Text in MFC Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["status bars [C++], associating menu items", "menus [C++], status bar text"]
 ms.assetid: 757c0e02-bc97-493f-bccd-6cc6887ebc64
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Associating Menu Commands with Status Bar Text in MFC Applications
 

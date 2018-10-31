@@ -1,16 +1,10 @@
 ---
-title: "Platform::Metadata Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Metadata Namespace"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Metadata"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Metadata Namespace"]
 ms.assetid: e3e114d8-a4b0-47f0-865a-9ce9d7212e86
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata Namespace
 

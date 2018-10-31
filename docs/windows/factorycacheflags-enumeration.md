@@ -1,15 +1,9 @@
 ---
-title: "FactoryCacheFlags Enumeration | Microsoft Docs"
-ms.custom: ""
+title: "FactoryCacheFlags Enumeration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::FactoryCacheFlags"]
-dev_langs: ["C++"]
 ms.assetid: 6f54258f-0144-4264-9608-414e5905f6fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # FactoryCacheFlags Enumeration
 

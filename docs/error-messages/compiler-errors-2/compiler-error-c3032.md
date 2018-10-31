@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3032 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3032"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3032"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3032"]
 ms.assetid: 6a92bd8e-319f-4a99-aef4-a9021f6f9928
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3032
 

@@ -1,16 +1,9 @@
 ---
-title: "-TSAWARE (Create Terminal Server Aware Application) | Microsoft Docs"
-ms.custom: ""
+title: "/TSAWARE (Create Terminal Server Aware Application)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/tsaware", "VC.Project.VCLinkerTool.TerminalServerAware"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Terminal Server", "/TSAWARE linker option", "Terminal Server, Terminal Server-aware applications", "-TSAWARE linker option", "TSAWARE linker option"]
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /TSAWARE (Create Terminal Server Aware Application)
 

@@ -1,16 +1,9 @@
 ---
-title: "EDITBIN Reference | Microsoft Docs"
-ms.custom: ""
+title: "EDITBIN Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["editbin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["binary data, editing", "object files, modifying", "EDITBIN program", "COFF files, editing"]
 ms.assetid: efdda03b-3dfc-4d31-90e6-caf5b3977914
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EDITBIN Reference
 

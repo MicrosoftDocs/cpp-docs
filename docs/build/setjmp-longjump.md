@@ -1,14 +1,7 @@
 ---
-title: "setjmp-longjump | Microsoft Docs"
-ms.custom: ""
+title: "setjmp-longjump"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: b0e21902-095d-4198-8f9a-b6326525721a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # setjmp/longjump
 

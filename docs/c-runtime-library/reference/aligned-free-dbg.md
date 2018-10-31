@@ -1,19 +1,12 @@
 ---
-title: "_aligned_free_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_free_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_free_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_aligned_free_dbg", "aligned_free_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_aligned_free_dbg function", "aligned_free_dbg function"]
 ms.assetid: eb0cb3c8-0992-4db8-bac3-65f1b8311ca6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_free_dbg
 

@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Creating an Agent-Based Application | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Creating an Agent-Based Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["asynchronous agents, creating", "agent class, example"]
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating an Agent-Based Application
 

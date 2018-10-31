@@ -1,16 +1,9 @@
 ---
-title: "FWORD | Microsoft Docs"
-ms.custom: ""
+title: "FWORD"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["FWORD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["FWORD directive"]
 ms.assetid: 8fd33d12-d49d-4e2a-80ac-0f55792e99be
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # FWORD
 

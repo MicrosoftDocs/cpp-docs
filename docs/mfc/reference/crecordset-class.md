@@ -1,16 +1,9 @@
 ---
-title: "CRecordset Class | Microsoft Docs"
-ms.custom: ""
+title: "CRecordset Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRecordset", "AFXDB/CRecordset", "AFXDB/CRecordset::CRecordset", "AFXDB/CRecordset::AddNew", "AFXDB/CRecordset::CanAppend", "AFXDB/CRecordset::CanBookmark", "AFXDB/CRecordset::Cancel", "AFXDB/CRecordset::CancelUpdate", "AFXDB/CRecordset::CanRestart", "AFXDB/CRecordset::CanScroll", "AFXDB/CRecordset::CanTransact", "AFXDB/CRecordset::CanUpdate", "AFXDB/CRecordset::CheckRowsetError", "AFXDB/CRecordset::Close", "AFXDB/CRecordset::Delete", "AFXDB/CRecordset::DoBulkFieldExchange", "AFXDB/CRecordset::DoFieldExchange", "AFXDB/CRecordset::Edit", "AFXDB/CRecordset::FlushResultSet", "AFXDB/CRecordset::GetBookmark", "AFXDB/CRecordset::GetDefaultConnect", "AFXDB/CRecordset::GetDefaultSQL", "AFXDB/CRecordset::GetFieldValue", "AFXDB/CRecordset::GetODBCFieldCount", "AFXDB/CRecordset::GetODBCFieldInfo", "AFXDB/CRecordset::GetRecordCount", "AFXDB/CRecordset::GetRowsetSize", "AFXDB/CRecordset::GetRowsFetched", "AFXDB/CRecordset::GetRowStatus", "AFXDB/CRecordset::GetSQL", "AFXDB/CRecordset::GetStatus", "AFXDB/CRecordset::GetTableName", "AFXDB/CRecordset::IsBOF", "AFXDB/CRecordset::IsDeleted", "AFXDB/CRecordset::IsEOF", "AFXDB/CRecordset::IsFieldDirty", "AFXDB/CRecordset::IsFieldNull", "AFXDB/CRecordset::IsFieldNullable", "AFXDB/CRecordset::IsOpen", "AFXDB/CRecordset::Move", "AFXDB/CRecordset::MoveFirst", "AFXDB/CRecordset::MoveLast", "AFXDB/CRecordset::MoveNext", "AFXDB/CRecordset::MovePrev", "AFXDB/CRecordset::OnSetOptions", "AFXDB/CRecordset::OnSetUpdateOptions", "AFXDB/CRecordset::Open", "AFXDB/CRecordset::RefreshRowset", "AFXDB/CRecordset::Requery", "AFXDB/CRecordset::SetAbsolutePosition", "AFXDB/CRecordset::SetBookmark", "AFXDB/CRecordset::SetFieldDirty", "AFXDB/CRecordset::SetFieldNull", "AFXDB/CRecordset::SetLockingMode", "AFXDB/CRecordset::SetParamNull", "AFXDB/CRecordset::SetRowsetCursorPosition", "AFXDB/CRecordset::SetRowsetSize", "AFXDB/CRecordset::Update", "AFXDB/CRecordset::m_hstmt", "AFXDB/CRecordset::m_nFields", "AFXDB/CRecordset::m_nParams", "AFXDB/CRecordset::m_pDatabase", "AFXDB/CRecordset::m_strFilter", "AFXDB/CRecordset::m_strSort"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRecordset [MFC], CRecordset", "CRecordset [MFC], AddNew", "CRecordset [MFC], CanAppend", "CRecordset [MFC], CanBookmark", "CRecordset [MFC], Cancel", "CRecordset [MFC], CancelUpdate", "CRecordset [MFC], CanRestart", "CRecordset [MFC], CanScroll", "CRecordset [MFC], CanTransact", "CRecordset [MFC], CanUpdate", "CRecordset [MFC], CheckRowsetError", "CRecordset [MFC], Close", "CRecordset [MFC], Delete", "CRecordset [MFC], DoBulkFieldExchange", "CRecordset [MFC], DoFieldExchange", "CRecordset [MFC], Edit", "CRecordset [MFC], FlushResultSet", "CRecordset [MFC], GetBookmark", "CRecordset [MFC], GetDefaultConnect", "CRecordset [MFC], GetDefaultSQL", "CRecordset [MFC], GetFieldValue", "CRecordset [MFC], GetODBCFieldCount", "CRecordset [MFC], GetODBCFieldInfo", "CRecordset [MFC], GetRecordCount", "CRecordset [MFC], GetRowsetSize", "CRecordset [MFC], GetRowsFetched", "CRecordset [MFC], GetRowStatus", "CRecordset [MFC], GetSQL", "CRecordset [MFC], GetStatus", "CRecordset [MFC], GetTableName", "CRecordset [MFC], IsBOF", "CRecordset [MFC], IsDeleted", "CRecordset [MFC], IsEOF", "CRecordset [MFC], IsFieldDirty", "CRecordset [MFC], IsFieldNull", "CRecordset [MFC], IsFieldNullable", "CRecordset [MFC], IsOpen", "CRecordset [MFC], Move", "CRecordset [MFC], MoveFirst", "CRecordset [MFC], MoveLast", "CRecordset [MFC], MoveNext", "CRecordset [MFC], MovePrev", "CRecordset [MFC], OnSetOptions", "CRecordset [MFC], OnSetUpdateOptions", "CRecordset [MFC], Open", "CRecordset [MFC], RefreshRowset", "CRecordset [MFC], Requery", "CRecordset [MFC], SetAbsolutePosition", "CRecordset [MFC], SetBookmark", "CRecordset [MFC], SetFieldDirty", "CRecordset [MFC], SetFieldNull", "CRecordset [MFC], SetLockingMode", "CRecordset [MFC], SetParamNull", "CRecordset [MFC], SetRowsetCursorPosition", "CRecordset [MFC], SetRowsetSize", "CRecordset [MFC], Update", "CRecordset [MFC], m_hstmt", "CRecordset [MFC], m_nFields", "CRecordset [MFC], m_nParams", "CRecordset [MFC], m_pDatabase", "CRecordset [MFC], m_strFilter", "CRecordset [MFC], m_strSort"]
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRecordset Class
 
@@ -1192,7 +1185,7 @@ The following table lists the possible values for *wFetchType*, the rowset that 
 |SQL_FETCH_BOOKMARK|The rowset starting at the row whose bookmark value corresponds to *nRows*.|[SetBookmark](#setbookmark)|
 
 > [!NOTE]
->  For foward-only recordsets, `Move` is only valid with a value of SQL_FETCH_NEXT for *wFetchType*.
+>  For forward-only recordsets, `Move` is only valid with a value of SQL_FETCH_NEXT for *wFetchType*.
 
 > [!CAUTION]
 >  Calling `Move` throws an exception if the recordset has no records. To determine whether the recordset has any records, call [IsBOF](#isbof) and [IsEOF](#iseof).

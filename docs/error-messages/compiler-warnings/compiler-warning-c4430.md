@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4430 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4430"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4430"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4430"]
 ms.assetid: 12efbfff-aa58-4a86-a7d6-2c6a12d01dd3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4430
 

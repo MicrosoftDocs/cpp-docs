@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Structures Using C++ Interop | Microsoft Docs"
+title: "How to: Marshal Structures Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Interop, structures", "structures [C++], marshaling", "data marshaling [C++], structures", "interop [C++], structures", "marshaling [C++], structures"]
 ms.assetid: c2080200-f983-4d6e-a557-cd870f060a54
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Structures Using C++ Interop
 

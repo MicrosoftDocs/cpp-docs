@@ -1,15 +1,8 @@
 ---
-title: "Commonly Overridden Member Functions | Microsoft Docs"
-ms.custom: ""
+title: "Commonly Overridden Member Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDialog class [MFC], members", "OnInitDialog function", "dialog classes [MFC], commonly overridden member functions", "OnCancel function", "overriding, dialog class members", "OnOK function", "MFC dialog boxes [MFC], overriding member functions"]
 ms.assetid: 78eb566c-e361-4c86-8db5-c7e2791b249a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Commonly Overridden Member Functions
 

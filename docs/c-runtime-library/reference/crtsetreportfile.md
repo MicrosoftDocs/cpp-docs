@@ -1,19 +1,12 @@
 ---
-title: "_CrtSetReportFile | Microsoft Docs"
-ms.custom: ""
+title: "_CrtSetReportFile"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtSetReportFile"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CrtSetReportFile", "_CrtSetReportFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CrtSetReportFile function", "_CrtSetReportFile function"]
 ms.assetid: 3126537e-511b-44af-9c1c-0605265eabc4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtSetReportFile
 

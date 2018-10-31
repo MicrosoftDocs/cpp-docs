@@ -1,16 +1,9 @@
 ---
-title: "ATL OLE DB Provider Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL OLE DB Provider Wizard"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.provider.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL OLE DB Provider Wizard", "ATL projects, adding ATL OLE DB providers"]
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL OLE DB Provider Wizard
 

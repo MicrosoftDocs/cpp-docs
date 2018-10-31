@@ -1,19 +1,12 @@
 ---
-title: "_configthreadlocale | Microsoft Docs"
-ms.custom: ""
+title: "_configthreadlocale"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_configthreadlocale"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_configthreadlocale", "configthreadlocale"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["configthreadlocale function", "locales, per-thread", "_configthreadlocale function", "per-thread locale", "thread locale"]
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _configthreadlocale
 

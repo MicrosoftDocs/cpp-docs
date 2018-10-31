@@ -1,16 +1,10 @@
 ---
-title: "Platform::OutOfMemoryException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::OutOfMemoryException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::OutOfMemoryException", "VCCORLIB/Platform::OutOfMemoryException::OutOfMemoryException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OutOfMemoryException"]
 ms.assetid: 49c19f6b-f66c-4448-b861-91dcbf32de2c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfMemoryException Class
 

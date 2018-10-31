@@ -1,16 +1,9 @@
 ---
-title: "ICommandPropertiesImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "ICommandPropertiesImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl", "ICommandPropertiesImpl::GetProperties", "ICommandPropertiesImpl.GetProperties", "GetProperties", "ICommandPropertiesImpl.SetProperties", "ICommandPropertiesImpl::SetProperties", "SetProperties"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandPropertiesImpl class", "GetProperties method", "SetProperties method"]
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandPropertiesImpl Class
 

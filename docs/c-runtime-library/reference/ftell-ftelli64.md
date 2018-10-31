@@ -1,19 +1,12 @@
 ---
-title: "ftell, _ftelli64 | Microsoft Docs"
-ms.custom: ""
+title: "ftell, _ftelli64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_ftelli64", "ftell"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ftelli64", "ftell"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ftell function", "ftelli64 function", "_ftelli64 function", "file pointers [C++], getting current position", "file pointers [C++]"]
 ms.assetid: 40149cd8-65f2-42ff-b70c-68e3e918cdd7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ftell, _ftelli64
 

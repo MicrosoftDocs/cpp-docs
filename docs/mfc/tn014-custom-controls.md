@@ -1,16 +1,9 @@
 ---
-title: "TN014: Custom Controls | Microsoft Docs"
-ms.custom: ""
+title: "TN014: Custom Controls"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.controls"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN014", "custom controls [MFC]"]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN014: Custom Controls
 

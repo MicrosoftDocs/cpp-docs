@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Image Lists | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Image Lists"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["images [MFC], lists in tree controls", "tree controls [MFC], image lists", "CTreeCtrl class [MFC], image lists"]
 ms.assetid: f560c4f2-20d2-4d28-ac33-4017e65fb0a6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Image Lists
 

@@ -1,15 +1,8 @@
 ---
-title: "Programming with CComBSTR (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Programming with CComBSTR (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComBSTR class, programming with", "Unicode, using CComBSTR [ATL]"]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Programming with CComBSTR (ATL)
 

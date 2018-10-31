@@ -1,16 +1,9 @@
 ---
-title: "-Od (Disable (Debug)) | Microsoft Docs"
-ms.custom: ""
+title: "/Od (Disable (Debug))"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/od"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no optimizations", "fast compiling", "/Od compiler option [C++]", "disable optimizations", "Od compiler option [C++]", "-Od compiler option [C++]", "disable (debug) compiler option [C++]"]
 ms.assetid: b1ac31b7-e086-4eeb-be5e-488f7513f5f5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Od (Disable (Debug))
 

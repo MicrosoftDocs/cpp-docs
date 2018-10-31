@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3628 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3628"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3628"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3628"]
 ms.assetid: 0ff5a4a4-fcc9-47a0-a4d8-8af9cf2815f6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3628
 

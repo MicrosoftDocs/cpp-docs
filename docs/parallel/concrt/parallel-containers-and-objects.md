@@ -1,15 +1,8 @@
 ---
-title: "Parallel Containers and Objects | Microsoft Docs"
-ms.custom: ""
+title: "Parallel Containers and Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parallel objects", "parallel containers", "concurrent containers"]
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parallel Containers and Objects
 

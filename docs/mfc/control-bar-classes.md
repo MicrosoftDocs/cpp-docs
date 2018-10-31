@@ -1,16 +1,9 @@
 ---
-title: "Control Bar Classes | Microsoft Docs"
-ms.custom: ""
+title: "Control Bar Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.control"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["control bars [MFC], classes"]
 ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Control Bar Classes
 

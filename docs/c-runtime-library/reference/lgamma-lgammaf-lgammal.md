@@ -1,19 +1,12 @@
 ---
-title: "lgamma, lgammaf, lgammal | Microsoft Docs"
-ms.custom: ""
+title: "lgamma, lgammaf, lgammal"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["lgamma", "lgammaf", "lgammal"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["lgamma", "lgammaf", "lgammal", "math/lgamma", "math/lgammaf", "math/lgammal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lgamma function", "lgammal function", "lgammaf function"]
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # lgamma, lgammaf, lgammal
 

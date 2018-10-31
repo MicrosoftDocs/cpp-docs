@@ -1,16 +1,10 @@
 ---
-title: "DeferrableEventArgs Class | Microsoft Docs"
-ms.custom: ""
+title: "DeferrableEventArgs Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::DeferrableEventArgs", "event/Microsoft::WRL::DeferrableEventArgs::GetDeferral", "event/Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::DeferrableEventArgs class", "Microsoft::WRL::DeferrableEventArgs::GetDeferral method", "Microsoft::WRL::DeferrableEventArgs::InvokeAllFinished method"]
 ms.assetid: ece89267-7b72-40e1-8185-550c865b070a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # DeferrableEventArgs Class
 

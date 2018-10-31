@@ -1,16 +1,9 @@
 ---
-title: "Compiler Errors C2700 Through C2799 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Errors C2700 Through C2799"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
 helpviewer_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
-dev_langs: ["C++"]
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C2700 Through C2799
 

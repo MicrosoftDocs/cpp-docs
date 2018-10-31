@@ -1,14 +1,7 @@
 ---
-title: "A.15   Determining the Number of Threads Used | Microsoft Docs"
-ms.custom: ""
+title: "A.15   Determining the Number of Threads Used"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 026bb59a-f668-40db-a7cb-69a1bae83d2d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.15   Determining the Number of Threads Used
 

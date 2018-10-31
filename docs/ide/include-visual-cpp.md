@@ -1,16 +1,9 @@
 ---
-title: "&lt;include&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;include&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["include", "<include>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["include C++ XML tag", "<include> C++ XML tag"]
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;include&gt; (Visual C++)
 

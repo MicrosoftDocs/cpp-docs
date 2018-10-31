@@ -1,19 +1,12 @@
 ---
-title: "erf, erff, erfl, erfc, erfcf, erfcl | Microsoft Docs"
-ms.custom: ""
+title: "erf, erff, erfl, erfc, erfcf, erfcl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["erff", "erfl", "erf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["erfl", "erf", "erff"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["erfl function", "erff function", "erf function"]
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # erf, erff, erfl, erfc, erfcf, erfcl
 

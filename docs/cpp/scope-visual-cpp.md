@@ -1,15 +1,8 @@
 ---
-title: "Scope (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Scope (C++)"
 ms.date: "04/08/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], scope", "scope [C++]", "function prototypes [C++], scope", "class scope", "prototype scope", "functions [C++], scope", "scope, C++ names"]
 ms.assetid: 81fecbb0-338b-4325-8332-49f33e716352
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scope (C++)
 
@@ -25,7 +18,7 @@ There are six kinds of scope:
 
 - **Local scope** A name declared within a function or lambda, including the parameter names, have local scope. They are often referred to as "locals". They are only visible from their point of declaration to the end of the function or lambda body. Local scope is a kind of block scope, which is discussed later in this article.
 
-- **Class scope** Names of class members have class scope, which extends throughout the class definition regardless of the point of declaration. Class member accessibility is futher controlled by the **public**, **private**, and **protected** keywords. Public or protected members can be accessed only by using the member-selection operators (**.** or **->**) or pointer-to-member operators (**.**<strong>\*</strong> or **->**<strong>\*</strong>).
+- **Class scope** Names of class members have class scope, which extends throughout the class definition regardless of the point of declaration. Class member accessibility is further controlled by the **public**, **private**, and **protected** keywords. Public or protected members can be accessed only by using the member-selection operators (**.** or **->**) or pointer-to-member operators (**.**<strong>\*</strong> or **->**<strong>\*</strong>).
 
 - **Statement scope** Names declared in a **for**, **if**, **while**, or **switch** statement are visible until the end of the statement block.
 

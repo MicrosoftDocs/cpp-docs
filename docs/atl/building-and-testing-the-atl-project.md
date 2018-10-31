@@ -1,15 +1,8 @@
 ---
-title: "Building and Testing the ATL Project | Microsoft Docs"
-ms.custom: ""
+title: "Building and Testing the ATL Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["composite controls, building and testing the project", "composite controls, containers for"]
 ms.assetid: 5c1541f8-f6cb-4c22-bd22-c66bcfbaa077
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Building and Testing the ATL Project
 

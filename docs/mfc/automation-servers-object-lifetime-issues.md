@@ -1,15 +1,8 @@
 ---
-title: "Automation Servers: Object-Lifetime Issues | Microsoft Docs"
-ms.custom: ""
+title: "Automation Servers: Object-Lifetime Issues"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["objects [MFC], lifetime", "lifetime, automation server", "Automation servers, object lifetime", "servers, lifetime of Automation"]
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Automation Servers: Object-Lifetime Issues
 

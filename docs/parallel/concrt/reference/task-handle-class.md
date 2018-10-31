@@ -1,16 +1,9 @@
 ---
-title: "task_handle Class | Microsoft Docs"
-ms.custom: ""
+title: "task_handle Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["task_handle", "PPL/concurrency::task_handle", "PPL/concurrency::task_handle::task_handle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["task_handle class"]
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # task_handle Class
 

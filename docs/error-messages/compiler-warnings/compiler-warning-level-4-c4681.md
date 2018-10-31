@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4681 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4681"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4681"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4681"]
 ms.assetid: a4e6d85f-3e21-4b45-a551-c23d3c554d3f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4681
 

@@ -1,15 +1,8 @@
 ---
-title: "Consumer Wizard-Generated Classes | Microsoft Docs"
-ms.custom: ""
+title: "Consumer Wizard-Generated Classes"
 ms.date: "10/17/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "command classes in OLE DB consumer", "classes [C++], OLE DB Consumer Wizard-generated", "consumer wizard-generated classes and methods", "user record classes in OLE DB consumer"]
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Consumer Wizard-Generated Classes
 

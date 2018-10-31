@@ -1,23 +1,16 @@
 ---
-title: "MFC ActiveX Controls: Localizing an ActiveX Control | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Localizing an ActiveX Control"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["LocaleID", "AfxOleRegisterTypeLib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["localization, ActiveX controls", "MFC ActiveX controls [MFC], localizing", "LocaleID ambient property [MFC]", "LOCALIZE sample [MFC]"]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Localizing an ActiveX Control
 
 This article discusses procedures for localizing ActiveX control interfaces.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 If you want to adapt an ActiveX control to an international market, you may want to localize the control. Windows supports many languages in addition to the default English, including German, French, and Swedish. This can present problems for the control if its interface is in English only.
 

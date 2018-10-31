@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Putting Controls On Toolbars | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Putting Controls On Toolbars"
 ms.date: "09/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Customize dialog box, adding controls", "toolbars [MFC], adding controls"]
 ms.assetid: 8fc94bdf-0da7-45d9-8bc4-52b7b1edf205
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Putting Controls On Toolbars
 

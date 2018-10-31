@@ -1,16 +1,9 @@
 ---
-title: "input_iterator_tag Struct | Microsoft Docs"
-ms.custom: ""
+title: "input_iterator_tag Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xutility/std::input_iterator_tag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["input_iterator_tag class", "input_iterator_tag struct"]
 ms.assetid: ad68a4c6-f315-4ce1-8b74-c1fc71bd1577
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # input_iterator_tag Struct
 

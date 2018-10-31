@@ -1,15 +1,8 @@
 ---
-title: "Using the 256-Color Palette (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Using the 256-Color Palette (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["256-color palette", "colors [C++], icons and cursors", "cursors [C++], color", "color palettes, 256-color", "palettes, 256-color", "icons, color"]
 ms.assetid: 1506ed00-669b-4a21-b1a4-39b6a84a78bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Using the 256-Color Palette (Image Editor for Icons)
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3708 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3708"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3708"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3708"]
 ms.assetid: 45e71564-9c7f-437f-98d8-a735ce162ed0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3708
 

@@ -1,16 +1,9 @@
 ---
-title: "CSecurityDesc Class | Microsoft Docs"
-ms.custom: ""
+title: "CSecurityDesc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc::CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc::FromString", "ATLSECURITY/ATL::CSecurityDesc::GetControl", "ATLSECURITY/ATL::CSecurityDesc::GetDacl", "ATLSECURITY/ATL::CSecurityDesc::GetGroup", "ATLSECURITY/ATL::CSecurityDesc::GetOwner", "ATLSECURITY/ATL::CSecurityDesc::GetPSECURITY_DESCRIPTOR", "ATLSECURITY/ATL::CSecurityDesc::GetSacl", "ATLSECURITY/ATL::CSecurityDesc::IsDaclAutoInherited", "ATLSECURITY/ATL::CSecurityDesc::IsDaclDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsDaclPresent", "ATLSECURITY/ATL::CSecurityDesc::IsDaclProtected", "ATLSECURITY/ATL::CSecurityDesc::IsGroupDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsOwnerDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsSaclAutoInherited", "ATLSECURITY/ATL::CSecurityDesc::IsSaclDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsSaclPresent", "ATLSECURITY/ATL::CSecurityDesc::IsSaclProtected", "ATLSECURITY/ATL::CSecurityDesc::IsSelfRelative", "ATLSECURITY/ATL::CSecurityDesc::MakeAbsolute", "ATLSECURITY/ATL::CSecurityDesc::MakeSelfRelative", "ATLSECURITY/ATL::CSecurityDesc::SetControl", "ATLSECURITY/ATL::CSecurityDesc::SetDacl", "ATLSECURITY/ATL::CSecurityDesc::SetGroup", "ATLSECURITY/ATL::CSecurityDesc::SetOwner", "ATLSECURITY/ATL::CSecurityDesc::SetSacl", "ATLSECURITY/ATL::CSecurityDesc::ToString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSecurityDesc class"]
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSecurityDesc Class
 

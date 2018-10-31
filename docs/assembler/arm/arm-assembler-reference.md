@@ -1,14 +1,7 @@
 ---
-title: "ARM Assembler Reference | Microsoft Docs"
-ms.custom: ""
+title: "ARM Assembler Reference"
 ms.date: "08/28/2017"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: f8a076cc-9627-4328-a34a-9c44f7a3aab1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ARM Assembler Reference
 

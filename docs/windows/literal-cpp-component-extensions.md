@@ -1,16 +1,10 @@
 ---
-title: "literal (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "literal (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["literal", "literal_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["literal keyword [C++]"]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # literal (C++/CLI and C++/CX)
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2489 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2489"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2489"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2489"]
 ms.assetid: 67d8cd98-db7e-4f7f-86b4-4af7bc89ec8b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2489
 

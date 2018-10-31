@@ -1,15 +1,8 @@
 ---
-title: "Adding Controls By Hand | Microsoft Docs"
-ms.custom: ""
+title: "Adding Controls By Hand"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows common controls [MFC], adding", "dialog box controls [MFC], adding to dialog boxes", "controlling input focus", "input focus control", "focus, controlling input [MFC]", "controls [MFC], adding to dialog boxes", "common controls [MFC], adding"]
 ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Controls By Hand
 

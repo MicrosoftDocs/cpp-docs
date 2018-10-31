@@ -1,15 +1,8 @@
 ---
-title: "Advantages of the Document-View Architecture | Microsoft Docs"
-ms.custom: ""
+title: "Advantages of the Document-View Architecture"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["views [MFC], advantages", "document/view architecture [MFC], advantages of"]
 ms.assetid: 0bc27071-e120-4889-939c-ce1e61fb9cb3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Advantages of the Document/View Architecture
 

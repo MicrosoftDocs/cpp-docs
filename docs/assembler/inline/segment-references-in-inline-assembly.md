@@ -1,15 +1,8 @@
 ---
-title: "Segment References in Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Segment References in Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["references, inline assembly", "segment references in inline assembly", "inline assembly, segment references", "registers", "inline assembly, registers", "registers, inline assembly"]
 ms.assetid: c63e6bb4-49d9-4fa1-bb22-eea21b5cbc0f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Segment References in Inline Assembly
 

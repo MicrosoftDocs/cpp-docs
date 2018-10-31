@@ -1,19 +1,12 @@
 ---
-title: "_msize | Microsoft Docs"
-ms.custom: ""
+title: "_msize"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_msize"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["msize", "_msize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory blocks", "msize function", "_msize function"]
 ms.assetid: 02b1f89e-d0d7-4f12-938a-9eeba48a0f88
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _msize
 

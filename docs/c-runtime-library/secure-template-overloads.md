@@ -1,16 +1,9 @@
 ---
-title: "Secure Template Overloads | Microsoft Docs"
-ms.custom: ""
+title: "Secure Template Overloads"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES", "_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES", "_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES", "_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES", "_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT", "secure template overloads"]
 ms.assetid: 562741d0-39c0-485e-8529-73d740f29f8f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Secure Template Overloads
 

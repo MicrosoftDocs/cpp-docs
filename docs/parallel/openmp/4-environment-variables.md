@@ -1,14 +1,7 @@
 ---
-title: "4. Environment Variables | Microsoft Docs"
-ms.custom: ""
+title: "4. Environment Variables"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 4ec7ed81-e9ca-46a1-84f8-8f9ce4587346
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 4. Environment Variables
 

@@ -1,15 +1,8 @@
 ---
-title: "Function Call (C) | Microsoft Docs"
-ms.custom: ""
+title: "Function Call (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function calls, C functions", "functions [C], calling", "function calls"]
 ms.assetid: 35c66719-3f15-4d3b-97da-4e19dc97b308
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function Call (C)
 

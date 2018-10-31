@@ -1,14 +1,7 @@
 ---
-title: "Porting and Upgrading: Examples and Case Studies | Microsoft Docs"
-ms.custom: ""
+title: "Porting and Upgrading: Examples and Case Studies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: d48bbff9-1ea7-467f-8c8b-758601f01573
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Porting and Upgrading: Examples and Case Studies
 

@@ -1,19 +1,12 @@
 ---
-title: "wcrtomb_s | Microsoft Docs"
-ms.custom: ""
+title: "wcrtomb_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["wcrtomb_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wcrtomb_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wide characters, converting", "wcrtomb_s function", "multibyte characters", "characters, converting"]
 ms.assetid: 9a8a1bd0-1d60-463d-a3a2-d83525eaf656
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # wcrtomb_s
 

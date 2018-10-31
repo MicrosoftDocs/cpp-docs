@@ -1,15 +1,8 @@
 ---
-title: "Tips for Improving Time-Critical Code | Microsoft Docs"
-ms.custom: ""
+title: "Tips for Improving Time-Critical Code"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_lsearch function", "qsort function", "background tasks", "standard sort routines", "clock cycle losses", "code, time-critical", "memory [C++], monitoring usage", "execution, speed improvements", "local heap performance", "optimization [C++], time-critical code", "performance [C++], time-critical code", "threading [C++], performance", "cache [C++], hits and misses", "linear search performance", "page faults", "best practices, time-critical code", "searching [C++], improving performance", "sorting data, improving performance", "threading [C++], best practices", "threading [C++], background tasks", "lists, sorting", "bsearch function", "MFC [C++], performance", "sort routines", "programs [C++], performance", "_lfind function", "heap allocation, time-critical code performance"]
 ms.assetid: 3e95a8cc-6239-48d1-9d6d-feb701eccb54
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Tips for Improving Time-Critical Code
 

@@ -1,15 +1,8 @@
 ---
-title: "Manifest Tool Input and Output Properties (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "Manifest Tool Input and Output Properties (Visual C++)"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCManifestTool.OutputManifestFile", "VC.Project.VCManifestTool.InputResourceManifests", "VC.Project.VCManifestTool.EmbedManifest", "VC.Project.VCManifestTool.AdditionalManifestFiles", "VC.Project.VCManifestTool.DependencyInformationFile", "VC.Project.VCManifestTool.OutputResourceManifest", "VC.Project.VCManifestTool.GenerateCatalogFiles"]
-dev_langs: ["C++"]
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Input and Output, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 

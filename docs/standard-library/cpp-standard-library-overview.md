@@ -1,15 +1,8 @@
 ---
-title: "C++ Standard Library Overview | Microsoft Docs"
-ms.custom: ""
+title: "C++ Standard Library Overview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["headers, C++ library", "C++ Standard Library", "libraries, Standard C++", "C++ Standard Library, headers"]
 ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C++ Standard Library Overview
 

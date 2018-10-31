@@ -1,16 +1,9 @@
 ---
-title: "Saving and Loading Different Color Palettes (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Saving and Loading Different Color Palettes (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.color"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["color palettes [C++]", "palettes", "palettes, Image editor", "colors [C++], Image editor", "Image editor [C++], palettes"]
 ms.assetid: 694b6346-e606-4f19-aa01-9b4ceb47f423
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Saving and Loading Different Color Palettes (Image Editor for Icons)
 

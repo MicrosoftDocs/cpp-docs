@@ -1,15 +1,8 @@
 ---
-title: "Compiler Warning (level 1) C4910 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4910"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4910"]
 ms.assetid: 67963560-fbca-4ca7-93db-06beaf7055f0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4910
 

@@ -1,15 +1,8 @@
 ---
-title: "Changing the Default Class Factory and Aggregation Model | Microsoft Docs"
-ms.custom: ""
+title: "Changing the Default Class Factory and Aggregation Model"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactory class, making the default", "aggregation [C++], using ATL", "aggregation [C++], aggregation models", "defaults [C++], aggregation model in ATL", "default class factory", "class factories, changing default", "CComCoClass class, default class factory and aggregation model", "default class factory, ATL", "defaults [C++], class factory"]
 ms.assetid: 6e040e95-0f38-4839-8a8b-c9800dd47e8c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Changing the Default Class Factory and Aggregation Model
 

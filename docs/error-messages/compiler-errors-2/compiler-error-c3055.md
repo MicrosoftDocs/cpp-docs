@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3055 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3055"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3055"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3055"]
 ms.assetid: 60446ee0-18dd-48fc-9059-f0a14229dce8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3055
 

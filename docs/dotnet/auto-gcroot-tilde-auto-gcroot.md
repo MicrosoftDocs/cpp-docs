@@ -1,16 +1,10 @@
 ---
-title: "auto_gcroot::~auto_gcroot | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot::~auto_gcroot"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_gcroot::~auto_gcroot", "~auto_gcroot", "auto_gcroot.~auto_gcroot", "msclr::auto_gcroot::~auto_gcroot", "msclr.auto_gcroot.~auto_gcroot"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_gcroot::~auto_gcroot"]
 ms.assetid: 3c970d43-0cb1-4b27-8bee-0394d91b4739
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::~auto_gcroot
 

@@ -1,16 +1,9 @@
 ---
-title: "ABC Structure | Microsoft Docs"
-ms.custom: ""
+title: "ABC Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["ABC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ABC structure [MFC]"]
 ms.assetid: 32663839-c3b7-4f47-896c-b15329c96bc8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ABC Structure
 

@@ -1,15 +1,8 @@
 ---
-title: "Strong Name Assemblies (Assembly Signing) (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Strong Name Assemblies (Assembly Signing) (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["assemblies [C++]", "signing assemblies", ".NET Framework [C++], assembly signing", "assemblies [C++], signing", "linker [C++], assembly signing", "strong-named assemblies [C++]"]
 ms.assetid: c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Strong Name Assemblies (Assembly Signing) (C++/CLI)
 

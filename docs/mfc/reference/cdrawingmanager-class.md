@@ -1,16 +1,9 @@
 ---
-title: "CDrawingManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CDrawingManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDrawingManager", "AFXDRAWMANAGER/CDrawingManager", "AFXDRAWMANAGER/CDrawingManager::CDrawingManager", "AFXDRAWMANAGER/CDrawingManager::CreateBitmap_32", "AFXDRAWMANAGER/CDrawingManager::DrawAlpha", "AFXDRAWMANAGER/CDrawingManager::DrawRotated", "AFXDRAWMANAGER/CDrawingManager::DrawEllipse", "AFXDRAWMANAGER/CDrawingManager::DrawGradientRing", "AFXDRAWMANAGER/CDrawingManager::DrawRect", "AFXDRAWMANAGER/CDrawingManager::DrawShadow", "AFXDRAWMANAGER/CDrawingManager::Fill4ColorsGradient", "AFXDRAWMANAGER/CDrawingManager::FillGradient", "AFXDRAWMANAGER/CDrawingManager::FillGradient2", "AFXDRAWMANAGER/CDrawingManager::GrayRect", "AFXDRAWMANAGER/CDrawingManager::HighlightRect", "AFXDRAWMANAGER/CDrawingManager::HLStoRGB_ONE", "AFXDRAWMANAGER/CDrawingManager::HLStoRGB_TWO", "AFXDRAWMANAGER/CDrawingManager::HSVtoRGB", "AFXDRAWMANAGER/CDrawingManager::HuetoRGB", "AFXDRAWMANAGER/CDrawingManager::MirrorRect", "AFXDRAWMANAGER/CDrawingManager::PixelAlpha", "AFXDRAWMANAGER/CDrawingManager::PrepareShadowMask", "AFXDRAWMANAGER/CDrawingManager::RGBtoHSL", "AFXDRAWMANAGER/CDrawingManager::RGBtoHSV", "AFXDRAWMANAGER/CDrawingManager::SetAlphaPixel", "AFXDRAWMANAGER/CDrawingManager::SetPixel", "AFXDRAWMANAGER/CDrawingManager::SmartMixColors"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDrawingManager [MFC], CDrawingManager", "CDrawingManager [MFC], CreateBitmap_32", "CDrawingManager [MFC], DrawAlpha", "CDrawingManager [MFC], DrawRotated", "CDrawingManager [MFC], DrawEllipse", "CDrawingManager [MFC], DrawGradientRing", "CDrawingManager [MFC], DrawRect", "CDrawingManager [MFC], DrawShadow", "CDrawingManager [MFC], Fill4ColorsGradient", "CDrawingManager [MFC], FillGradient", "CDrawingManager [MFC], FillGradient2", "CDrawingManager [MFC], GrayRect", "CDrawingManager [MFC], HighlightRect", "CDrawingManager [MFC], HLStoRGB_ONE", "CDrawingManager [MFC], HLStoRGB_TWO", "CDrawingManager [MFC], HSVtoRGB", "CDrawingManager [MFC], HuetoRGB", "CDrawingManager [MFC], MirrorRect", "CDrawingManager [MFC], PixelAlpha", "CDrawingManager [MFC], PrepareShadowMask", "CDrawingManager [MFC], RGBtoHSL", "CDrawingManager [MFC], RGBtoHSV", "CDrawingManager [MFC], SetAlphaPixel", "CDrawingManager [MFC], SetPixel", "CDrawingManager [MFC], SmartMixColors"]
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDrawingManager Class
 

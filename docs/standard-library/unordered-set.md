@@ -1,16 +1,9 @@
 ---
-title: "&lt;unordered_set&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;unordered_set&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<unordered_set>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["unordered_set header"]
 ms.assetid: a3364d54-147d-4796-8728-9e62a2e4c226
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;unordered_set&gt;
 

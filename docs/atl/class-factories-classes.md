@@ -1,16 +1,10 @@
 ---
-title: " ATL Class Factories Classes | Microsoft Docs"
-ms.custom: ""
+title: " ATL Class Factories Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.classes.factories"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["class factories", "class factories, ATL classes"]
 ms.assetid: 1d8c2ae2-2c37-452c-a02d-1ecbdd309f84
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Class Factories Classes
 

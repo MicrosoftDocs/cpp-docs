@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3037 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3037"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3037"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3037"]
 ms.assetid: 9ba8a890-d3c7-4cce-93c5-d358e2bfad28
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3037
 

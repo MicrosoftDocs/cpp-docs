@@ -1,16 +1,9 @@
 ---
-title: "__readdr | Microsoft Docs"
-ms.custom: ""
+title: "__readdr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__readdr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__readdr intrinsic"]
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __readdr
 

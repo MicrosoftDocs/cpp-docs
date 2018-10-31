@@ -1,16 +1,9 @@
 ---
-title: "auto (C++) | Microsoft Docs"
-ms.custom: ""
+title: "auto (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 f1_keywords: ["auto_CPP", "auto"]
 helpviewer_keywords: ["auto keyword [C++]"]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # auto (C++)
 
@@ -91,7 +84,7 @@ In the previous example, myAuto is an int, not an int reference, so the output i
 
 ## Type deduction with braced initializers (C++14)
 
-The following code exmample shows how to intialize an auto variable using braces. Note the difference between B and C and between A and E.
+The following code example shows how to initialize an auto variable using braces. Note the difference between B and C and between A and E.
 
 ```cpp
 #include <initializer_list>

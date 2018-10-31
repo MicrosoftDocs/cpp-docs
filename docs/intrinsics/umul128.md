@@ -1,16 +1,9 @@
 ---
-title: "_umul128 | Microsoft Docs"
-ms.custom: ""
+title: "_umul128"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__umul128"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__umul128 intrinsic"]
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _umul128
 

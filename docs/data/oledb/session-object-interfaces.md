@@ -1,15 +1,8 @@
 ---
-title: "Session Object Interfaces | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Session Object Interfaces"
+ms.date: "10/24/2018"
 helpviewer_keywords: ["session objects [OLE DB]", "session objects [OLE DB], interfaces", "OLE DB provider templates, object interfaces", "interfaces, session object", "interfaces, list of"]
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Session Object Interfaces
 
@@ -42,4 +35,4 @@ The session object creates a rowset object. If the provider supports commands, t
 
 ## See Also
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

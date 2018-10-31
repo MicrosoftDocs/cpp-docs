@@ -1,16 +1,9 @@
 ---
-title: "Build System Changes | Microsoft Docs"
-ms.custom: ""
+title: "Build System Changes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.msbuild.changes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Build system changes, project file (.vcxprog)", "Build system changes, custom build rules", "Build system changes, MSBuild", "MSBuild, build system changes", "Build system changes, .vsprops", "Build system changes, $(Inherit)", "Build system changes, $(NoInherit)"]
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Build System Changes
 

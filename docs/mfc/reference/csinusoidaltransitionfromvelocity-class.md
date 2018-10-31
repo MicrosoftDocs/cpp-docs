@@ -1,16 +1,9 @@
 ---
-title: "CSinusoidalTransitionFromVelocity Class | Microsoft Docs"
-ms.custom: ""
+title: "CSinusoidalTransitionFromVelocity Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSinusoidalTransitionFromVelocity [MFC], CSinusoidalTransitionFromVelocity", "CSinusoidalTransitionFromVelocity [MFC], Create", "CSinusoidalTransitionFromVelocity [MFC], m_duration", "CSinusoidalTransitionFromVelocity [MFC], m_period"]
 ms.assetid: cc885f17-b84b-45ee-8f1f-36a8bbb7adad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSinusoidalTransitionFromVelocity Class
 

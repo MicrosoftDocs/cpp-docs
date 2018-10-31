@@ -1,15 +1,8 @@
 ---
-title: "Function Objects in the C++ Standard Library | Microsoft Docs"
-ms.custom: ""
+title: "Function Objects in the C++ Standard Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functors", "C++ Standard Library, functors", "C++ Standard Library, function objects", "function objects"]
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Function Objects in the C++ Standard Library
 

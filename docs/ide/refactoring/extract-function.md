@@ -1,13 +1,7 @@
 ---
-title: "Extract Function | Microsoft Docs"
-ms.custom: ""
+title: "Extract Function"
 ms.date: "11/16/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Extract Function
@@ -34,7 +28,7 @@ ms.workload: ["cplusplus"]
 
 1. In the **Extract Function/Method (Experimental)** window, enter the new function name, select where you want the code to be placed, and click the **OK** button.
 
-   ![Extract function function](images/extractfunction_dialog.png)
+   ![Extract function dialog](images/extractfunction_dialog.png)
 
 1. The new function will be created where you specified, a function prototype in the corresponding header file, and the original code will be changed to call that function.
 

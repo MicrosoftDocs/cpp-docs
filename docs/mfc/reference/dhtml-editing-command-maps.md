@@ -1,14 +1,7 @@
 ---
-title: "DHTML Editing Command Maps | Microsoft Docs"
-ms.custom: ""
+title: "DHTML Editing Command Maps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DHTML Editing Command Maps
 

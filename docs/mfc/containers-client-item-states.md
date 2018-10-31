@@ -1,15 +1,8 @@
 ---
-title: "Containers: Client-Item States | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Client-Item States"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE containers [MFC], client-item states", "states, OLE container client-item", "lifetime, lifetime states and OLE container client items", "client items and OLE containers"]
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Client-Item States
 

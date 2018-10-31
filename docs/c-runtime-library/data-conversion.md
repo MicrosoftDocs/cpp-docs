@@ -1,16 +1,9 @@
 ---
-title: "Data Conversion | Microsoft Docs"
-ms.custom: ""
+title: "Data Conversion"
 ms.date: "03/21/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["c.conversions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["data conversion routines [C++]", "converting data"]
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Data Conversion
 

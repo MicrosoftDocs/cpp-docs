@@ -1,16 +1,9 @@
 ---
-title: "OnIdle Member Function | Microsoft Docs"
-ms.custom: ""
+title: "OnIdle Member Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["OnIdle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["processing messages [MFC]", "OnIdle method [MFC]", "idle loop processing [MFC]", "CWinApp class [MFC], OnIdle method [MFC]", "message handling [MFC], OnIdle method [MFC]"]
 ms.assetid: 51adc874-0075-4f76-be1c-79283f46c10b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OnIdle Member Function
 

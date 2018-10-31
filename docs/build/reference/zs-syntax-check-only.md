@@ -1,16 +1,9 @@
 ---
-title: "-Zs (Syntax Check Only) | Microsoft Docs"
-ms.custom: ""
+title: "/Zs (Syntax Check Only)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/zs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zs compiler option [C++]", "Syntax Check Only compiler option", "Zs compiler option", "/Zs compiler option [C++]"]
 ms.assetid: b4b41e6a-3f41-4d09-9cb6-fde5aa2cfecf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zs (Syntax Check Only)
 

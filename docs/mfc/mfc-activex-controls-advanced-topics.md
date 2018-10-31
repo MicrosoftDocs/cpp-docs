@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Advanced Topics | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Advanced Topics"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "MFC ActiveX controls [MFC], accessing invisible dialog controls", "MFC ActiveX controls [MFC], advanced topics", "FireError method [MFC]", "MFC ActiveX controls [MFC], database classes", "MFC ActiveX controls [MFC], special keys", "PreTranslateMessage method [MFC]", "MFC ActiveX controls [MFC], parameterized property", "ThrowError method [MFC]"]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Advanced Topics
 
@@ -26,7 +19,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
 - [Accessing Dialog Controls That Are Invisible at Run Time](#_core_accessing_dialog_controls_that_are_invisible_at_run_time)
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 ##  <a name="_core_using_database_classes_in_activex_controls"></a> Using Database Classes in ActiveX Controls
 

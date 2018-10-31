@@ -1,16 +1,9 @@
 ---
-title: "in  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "in  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.in"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["in attribute"]
 ms.assetid: 7b450cc4-4d2e-4910-a195-7487c6b7c373
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # in (C++)
 

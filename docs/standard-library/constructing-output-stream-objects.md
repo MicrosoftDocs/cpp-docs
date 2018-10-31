@@ -1,15 +1,8 @@
 ---
-title: "Constructing Output Stream Objects | Microsoft Docs"
-ms.custom: ""
+title: "Constructing Output Stream Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["output stream objects"]
 ms.assetid: 93c8eab6-610c-4f48-b76d-1d960cac7641
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Constructing Output Stream Objects
 

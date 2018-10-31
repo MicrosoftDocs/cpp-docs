@@ -1,16 +1,9 @@
 ---
-title: "32-Bit Windows Time-Date Formats | Microsoft Docs"
-ms.custom: ""
+title: "32-Bit Windows Time-Date Formats"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.time"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["32-bit Windows"]
 ms.assetid: ef1589db-84d7-4b24-8799-7c7a22cfe2bf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # 32-Bit Windows Time/Date Formats
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2220 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2220"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2220"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2220"]
 ms.assetid: d610802c-64d7-40ad-a2a6-0ed0b6815a6c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2220
 

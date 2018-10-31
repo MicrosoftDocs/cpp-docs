@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2509 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2509"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2509"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2509"]
 ms.assetid: 339c1fcd-ec4a-456c-9f18-a9b24d9921af
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2509
 

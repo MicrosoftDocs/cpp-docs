@@ -1,16 +1,9 @@
 ---
-title: "DUMPBIN Reference | Microsoft Docs"
-ms.custom: ""
+title: "DUMPBIN Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["dumpbin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["binary data, binary file dumper", "DUMPBIN program", "Microsoft COFF binary file dumper", "COFF files, displaying information about", "binary file dumper"]
 ms.assetid: 4bc06822-5330-44b4-8a3f-6180dfd41dfb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # DUMPBIN Reference
 

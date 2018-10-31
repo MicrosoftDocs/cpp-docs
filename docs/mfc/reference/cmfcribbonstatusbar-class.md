@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonStatusBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonStatusBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonStatusBar", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddDynamicElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddExtendedElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddSeparator", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::Create", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::CreateEx", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::FindByID", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::FindElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetCount", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExCount", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExtendedArea", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetSpace", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsBottomFrame", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsExtendedElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsInformationMode", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RecalcLayout", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveAll", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::SetInformation", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::OnDrawInformation"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonStatusBar [MFC], AddDynamicElement", "CMFCRibbonStatusBar [MFC], AddElement", "CMFCRibbonStatusBar [MFC], AddExtendedElement", "CMFCRibbonStatusBar [MFC], AddSeparator", "CMFCRibbonStatusBar [MFC], Create", "CMFCRibbonStatusBar [MFC], CreateEx", "CMFCRibbonStatusBar [MFC], FindByID", "CMFCRibbonStatusBar [MFC], FindElement", "CMFCRibbonStatusBar [MFC], GetCount", "CMFCRibbonStatusBar [MFC], GetElement", "CMFCRibbonStatusBar [MFC], GetExCount", "CMFCRibbonStatusBar [MFC], GetExElement", "CMFCRibbonStatusBar [MFC], GetExtendedArea", "CMFCRibbonStatusBar [MFC], GetSpace", "CMFCRibbonStatusBar [MFC], IsBottomFrame", "CMFCRibbonStatusBar [MFC], IsExtendedElement", "CMFCRibbonStatusBar [MFC], IsInformationMode", "CMFCRibbonStatusBar [MFC], RecalcLayout", "CMFCRibbonStatusBar [MFC], RemoveAll", "CMFCRibbonStatusBar [MFC], RemoveElement", "CMFCRibbonStatusBar [MFC], SetInformation", "CMFCRibbonStatusBar [MFC], OnDrawInformation"]
 ms.assetid: 921eb57f-3b40-49fa-a38c-3f2fb6dc2893
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonStatusBar Class
 

@@ -1,19 +1,12 @@
 ---
-title: "_get_pgmptr | Microsoft Docs"
-ms.custom: ""
+title: "_get_pgmptr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_get_pgmptr"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["get_pgmptr", "_get_pgmptr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["get_pgmptr function", "_get_pgmptr function", "pgmptr global variable", "_pgmptr global variable"]
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _get_pgmptr
 

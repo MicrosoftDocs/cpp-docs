@@ -1,16 +1,9 @@
 ---
-title: "Overview of LIB | Microsoft Docs"
-ms.custom: ""
+title: "Overview of LIB"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["Lib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LIB [C++], modes"]
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Overview of LIB
 

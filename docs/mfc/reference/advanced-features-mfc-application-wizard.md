@@ -1,16 +1,9 @@
 ---
-title: "Advanced Features, MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Advanced Features, MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.advanced"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard, advanced features"]
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Advanced Features, MFC Application Wizard
 

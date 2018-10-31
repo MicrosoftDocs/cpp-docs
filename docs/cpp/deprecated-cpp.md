@@ -1,16 +1,9 @@
 ---
-title: "deprecated (C++) | Microsoft Docs"
-ms.custom: ""
+title: "deprecated (C++)"
 ms.date: "03/28/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["deprecated_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], deprecated", "deprecated __declspec keyword"]
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # deprecated (C++)
 

@@ -1,16 +1,9 @@
 ---
-title: "Memory Allocation | Microsoft Docs"
-ms.custom: ""
+title: "Memory Allocation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.memory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory allocation, routines", "memory, managing", "memory, allocation"]
 ms.assetid: b4470556-a128-4782-9943-2ccf7a7d9979
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Memory Allocation
 

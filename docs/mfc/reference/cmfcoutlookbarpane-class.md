@@ -1,16 +1,9 @@
 ---
-title: "CMFCOutlookBarPane Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCOutlookBarPane Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCOutlookBarPane", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::AddButton", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::CanBeAttached", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::ClearAll", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::Create", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnablePageScrollMode", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::GetRegularColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::IsBackgroundTexture", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::IsDrawShadedHighlight", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveButton", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetBackColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetBackImage", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetDefaultState", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetExtraSpace", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTextColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTransparentColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnableContextMenuItems", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveAllButtons"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCOutlookBarPane [MFC], AddButton", "CMFCOutlookBarPane [MFC], CanBeAttached", "CMFCOutlookBarPane [MFC], ClearAll", "CMFCOutlookBarPane [MFC], Create", "CMFCOutlookBarPane [MFC], EnablePageScrollMode", "CMFCOutlookBarPane [MFC], GetRegularColor", "CMFCOutlookBarPane [MFC], IsBackgroundTexture", "CMFCOutlookBarPane [MFC], IsDrawShadedHighlight", "CMFCOutlookBarPane [MFC], RemoveButton", "CMFCOutlookBarPane [MFC], SetBackColor", "CMFCOutlookBarPane [MFC], SetBackImage", "CMFCOutlookBarPane [MFC], SetDefaultState", "CMFCOutlookBarPane [MFC], SetExtraSpace", "CMFCOutlookBarPane [MFC], SetTextColor", "CMFCOutlookBarPane [MFC], SetTransparentColor", "CMFCOutlookBarPane [MFC], EnableContextMenuItems", "CMFCOutlookBarPane [MFC], RemoveAllButtons"]
 ms.assetid: 094e2ef3-a118-487e-a4cc-27626108fe08
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBarPane Class
 

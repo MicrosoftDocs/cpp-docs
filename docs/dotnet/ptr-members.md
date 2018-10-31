@@ -1,14 +1,8 @@
 ---
-title: "ptr Members | Microsoft Docs"
-ms.custom: ""
+title: "ptr Members"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 84607ea2-149b-4c6d-b802-282f7f59d42d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr Members
 

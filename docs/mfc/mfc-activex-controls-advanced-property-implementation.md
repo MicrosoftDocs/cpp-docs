@@ -1,22 +1,15 @@
 ---
-title: "MFC ActiveX Controls: Advanced Property Implementation | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Advanced Property Implementation"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "properties [MFC], ActiveX controls", "MFC ActiveX controls [MFC], properties"]
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Advanced Property Implementation
 
 This article describes topics related to implementing advanced properties in an ActiveX control.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 - [Read-only and write-only properties](#_core_read2donly_and_write2donly_properties)
 

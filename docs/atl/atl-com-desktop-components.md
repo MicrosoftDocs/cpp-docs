@@ -1,15 +1,8 @@
 ---
-title: "ATL COM Desktop Components | Microsoft Docs"
-ms.custom: ""
+title: "ATL COM Desktop Components"
 ms.date: "10/19/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, reference", "ATL, about ATL"]
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL COM Desktop Components
 

@@ -1,16 +1,10 @@
 ---
-title: "Mutex Class | Microsoft Docs"
-ms.custom: ""
+title: "Mutex Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Mutex", "corewrappers/Microsoft::WRL::Wrappers::Mutex::Lock", "corewrappers/Microsoft::WRL::Wrappers::Mutex::Mutex", "corewrappers/Microsoft::WRL::Wrappers::Mutex::operator="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::Mutex class", "Microsoft::WRL::Wrappers::Mutex::Lock method", "Microsoft::WRL::Wrappers::Mutex::Mutex, constructor", "Microsoft::WRL::Wrappers::Mutex::operator= operator"]
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Mutex Class
 

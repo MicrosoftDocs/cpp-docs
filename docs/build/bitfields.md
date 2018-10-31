@@ -1,15 +1,8 @@
 ---
-title: "Bitfields | Microsoft Docs"
-ms.custom: ""
+title: "Bitfields"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["bitfields"]
 ms.assetid: e9a1010d-1e1b-487f-9943-3c574e08f544
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Bitfields
 

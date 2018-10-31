@@ -1,16 +1,10 @@
 ---
-title: "AsyncBase Class | Microsoft Docs"
-ms.custom: ""
+title: "AsyncBase Class"
 ms.date: "10/08/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase", "async/Microsoft::WRL::AsyncBase::AsyncBase", "async/Microsoft::WRL::AsyncBase::Cancel", "async/Microsoft::WRL::AsyncBase::CheckValidStateForDelegateCall", "async/Microsoft::WRL::AsyncBase::CheckValidStateForResultsCall", "async/Microsoft::WRL::AsyncBase::Close", "async/Microsoft::WRL::AsyncBase::ContinueAsyncOperation", "async/Microsoft::WRL::AsyncBase::CurrentStatus", "async/Microsoft::WRL::AsyncBase::ErrorCode", "async/Microsoft::WRL::AsyncBase::FireCompletion", "async/Microsoft::WRL::AsyncBase::FireProgress", "async/Microsoft::WRL::AsyncBase::get_ErrorCode", "async/Microsoft::WRL::AsyncBase::get_Id", "async/Microsoft::WRL::AsyncBase::get_Status", "async/Microsoft::WRL::AsyncBase::GetOnComplete", "async/Microsoft::WRL::AsyncBase::GetOnProgress", "async/Microsoft::WRL::AsyncBase::OnCancel", "async/Microsoft::WRL::AsyncBase::OnClose", "async/Microsoft::WRL::AsyncBase::OnStart", "async/Microsoft::WRL::AsyncBase::put_Id", "async/Microsoft::WRL::AsyncBase::PutOnComplete", "async/Microsoft::WRL::AsyncBase::PutOnProgress", "async/Microsoft::WRL::AsyncBase::Start", "async/Microsoft::WRL::AsyncBase::TryTransitionToCompleted", "async/Microsoft::WRL::AsyncBase::TryTransitionToError"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::AsyncBase class", "Microsoft::WRL::AsyncBase::AsyncBase, constructor", "Microsoft::WRL::AsyncBase::Cancel method", "Microsoft::WRL::AsyncBase::CheckValidStateForDelegateCall method", "Microsoft::WRL::AsyncBase::CheckValidStateForResultsCall method", "Microsoft::WRL::AsyncBase::Close method", "Microsoft::WRL::AsyncBase::ContinueAsyncOperation method", "Microsoft::WRL::AsyncBase::CurrentStatus method", "Microsoft::WRL::AsyncBase::ErrorCode method", "Microsoft::WRL::AsyncBase::FireCompletion method", "Microsoft::WRL::AsyncBase::FireProgress method", "Microsoft::WRL::AsyncBase::get_ErrorCode method", "Microsoft::WRL::AsyncBase::get_Id method", "Microsoft::WRL::AsyncBase::get_Status method", "Microsoft::WRL::AsyncBase::GetOnComplete method", "Microsoft::WRL::AsyncBase::GetOnProgress method", "Microsoft::WRL::AsyncBase::OnCancel method", "Microsoft::WRL::AsyncBase::OnClose method", "Microsoft::WRL::AsyncBase::OnStart method", "Microsoft::WRL::AsyncBase::put_Id method", "Microsoft::WRL::AsyncBase::PutOnComplete method", "Microsoft::WRL::AsyncBase::PutOnProgress method", "Microsoft::WRL::AsyncBase::Start method", "Microsoft::WRL::AsyncBase::TryTransitionToCompleted method", "Microsoft::WRL::AsyncBase::TryTransitionToError method"]
 ms.assetid: 64259b9b-f427-4ffd-a611-e7a2f82362b2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase Class
 

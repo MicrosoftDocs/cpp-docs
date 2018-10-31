@@ -1,16 +1,9 @@
 ---
-title: "operator&gt; (&lt;sample container&gt;) | Microsoft Docs"
-ms.custom: ""
+title: "operator&gt; (&lt;sample container&gt;)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["std::operator>", "operator>", "std::>", ">"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["> operator, comparing specific objects", "operator >"]
 ms.assetid: 49bd417a-3305-4ffa-9884-39d3904ed87d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator&gt; (&lt;sample container&gt;)
 

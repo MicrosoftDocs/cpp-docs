@@ -1,16 +1,10 @@
 ---
-title: "Module::ReleaseNotifier Class | Microsoft Docs"
-ms.custom: ""
+title: "Module::ReleaseNotifier Class"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier", "module/Microsoft::WRL::Module::ReleaseNotifier::Invoke", "module/Microsoft::WRL::Module::ReleaseNotifier::Release", "module/Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Module::ReleaseNotifier class", "Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier, destructor", "Microsoft::WRL::Module::ReleaseNotifier::Invoke method", "Microsoft::WRL::Module::ReleaseNotifier::Release method", "Microsoft::WRL::Module::ReleaseNotifier::ReleaseNotifier, constructor"]
 ms.assetid: 17249cd1-4d88-42e3-8146-da9e942d12bd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier Class
 

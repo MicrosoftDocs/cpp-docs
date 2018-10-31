@@ -1,15 +1,8 @@
 ---
-title: "Event Handling in COM | Microsoft Docs"
-ms.custom: ""
+title: "Event Handling in COM"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handling [C++], COM", "event handling [C++], about event handling", "declaring events", "event handlers [C++], COM", "event handlers", "COM, events", "event receivers, in event handling", "event handling [C++]", "hooking events", "event receivers, name and signature matching", "event sources, in event handling", "declaring events, in COM", "declaring events, event handling in COM"]
 ms.assetid: 6b4617d4-a58e-440c-a8a6-1ad1c715b2bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Event Handling in COM
 

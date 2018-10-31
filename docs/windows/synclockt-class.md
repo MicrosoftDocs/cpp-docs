@@ -1,16 +1,10 @@
 ---
-title: "SyncLockT Class | Microsoft Docs"
-ms.custom: ""
+title: "SyncLockT Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::IsLocked", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::sync_", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT", "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::Details::SyncLockT class", "Microsoft::WRL::Wrappers::Details::SyncLockT::IsLocked method", "Microsoft::WRL::Wrappers::Details::SyncLockT::sync_ data member", "Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT, constructor", "Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT, destructor", "Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock method"]
 ms.assetid: a967f6f7-3555-43d1-b210-2bb65d63d15e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockT Class
 

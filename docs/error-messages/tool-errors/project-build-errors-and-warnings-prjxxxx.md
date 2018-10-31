@@ -1,14 +1,7 @@
 ---
-title: "Project Build Errors and Warnings (PRJxxxx) | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Errors and Warnings (PRJxxxx)"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: 79d223ed-986a-4536-8299-aec8356b449c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Errors and Warnings (PRJxxxx)
 

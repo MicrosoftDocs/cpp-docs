@@ -1,16 +1,9 @@
 ---
-title: "logical_and Struct | Microsoft Docs"
-ms.custom: ""
+title: "logical_and Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::logical_and"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["logical_and class", "logical_and struct"]
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # logical_and Struct
 

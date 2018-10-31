@@ -1,16 +1,9 @@
 ---
-title: "CNonStatelessWorker Class | Microsoft Docs"
-ms.custom: ""
+title: "CNonStatelessWorker Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker::RequestType", "ATLUTIL/ATL::CNonStatelessWorker::Execute", "ATLUTIL/ATL::CNonStatelessWorker::Initialize", "ATLUTIL/ATL::CNonStatelessWorker::Terminate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CNonStatelessWorker class"]
 ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CNonStatelessWorker Class
 

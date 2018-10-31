@@ -1,16 +1,9 @@
 ---
-title: "Locale Names, Languages, and Country-Region Strings | Microsoft Docs"
-ms.custom: ""
+title: "Locale Names, Languages, and Country-Region Strings"
 ms.date: "08/13/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.strings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["country/region strings", "localization, locale", "locales", "setlocale function", "language strings"]
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Locale Names, Languages, and Country/Region Strings
 

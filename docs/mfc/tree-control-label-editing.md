@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Label Editing | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Label Editing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["editing tree control labels", "CTreeCtrl class [MFC], editing labels", "label editing in CTreeCtrl class [MFC]", "tree controls [MFC], label editing"]
 ms.assetid: 6cde2ac3-43ee-468f-bac2-cf1a228ad32d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Label Editing
 

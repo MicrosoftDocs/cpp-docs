@@ -1,15 +1,8 @@
 ---
-title: "Changing the Font of Text on an Image (Image Editor for Icons) | Microsoft Docs"
-ms.custom: ""
+title: "Changing the Font of Text on an Image (Image Editor for Icons)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["fonts, changing on an image"]
 ms.assetid: b8849d40-d401-4e06-808f-e615cb2bee3b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing the Font of Text on an Image (Image Editor for Icons)
 

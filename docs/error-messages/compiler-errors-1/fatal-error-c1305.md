@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1305 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1305"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1305"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1305"]
 ms.assetid: 1629c850-e2db-4678-83d8-9bfc85323bc5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1305
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3539 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3539"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3539"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3539"]
 ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3539
 

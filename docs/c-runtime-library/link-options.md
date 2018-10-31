@@ -1,15 +1,8 @@
 ---
-title: "Link Options | Microsoft Docs"
-ms.custom: ""
+title: "Link Options"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["nothrownew.obj", "newmode.obj", "noenv.obj", "psetargv.obj", "loosefpmath.obj", "smallheap.obj", "fp10.obj", "nochkclr.obj", "chkstk.obj", "pcommode.obj", "pnoenv.obj", "link options [C++]", "invalidcontinue.obj", "pnothrownew.obj", "pwsetargv.obj", "pinvalidcontinue.obj", "wsetargv.obj", "binmode.obj", "setargv.obj", "noarg.obj", "pnewmode.obj", "commode.obj", "pthreadlocale.obj", "pbinmode.obj", "threadlocale.obj", "pnoarg.obj"]
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Link Options
 
@@ -22,6 +15,7 @@ CLR pure mode versions of these objects are deprecated in Visual Studio 2015 and
 |binmode.obj|pbinmode.obj|Sets the default file-translation mode to binary. See [_fmode](../c-runtime-library/fmode.md).|
 |chkstk.obj|n/a|Provides stack-checking and alloca support when not using the CRT.|
 |commode.obj|pcommode.obj|Sets the global commit flag to "commit". See [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md) and [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md).|
+|exe_initialize_mta.lib|n/a|Initializes the MTA apartment during EXE startup, which allows the use of COM objects in global smart pointers. Because this option leaks an MTA apartment reference during shutdown, do not use it for DLLs. Linking to this is equivalent to including combase.h and defining _EXE_INITIALIZE_MTA. |
 |fp10.obj|n/a|Changes the default precision control to 64 bits. See [Floating-Point Support](../c-runtime-library/floating-point-support.md).|
 |invalidcontinue.obj|pinvalidcontinue.obj|Sets a default invalid parameter handler that does nothing, meaning that invalid parameters passed to CRT functions will just set errno and return an error result.|
 |loosefpmath.obj|n/a|Ensures that floating point code tolerates denormal values.|

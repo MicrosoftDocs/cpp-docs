@@ -1,16 +1,9 @@
 ---
-title: "missing_wait Class | Microsoft Docs"
-ms.custom: ""
+title: "missing_wait Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["missing_wait", "CONCRT/concurrency::missing_wait", "CONCRT/concurrency::missing_wait::missing_wait"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["missing_wait class"]
 ms.assetid: ff981875-bd43-47e3-806f-b03c9f418b18
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # missing_wait Class
 

@@ -1,14 +1,8 @@
 ---
-title: "Putting the Control on a Web Page (ATL Tutorial, Part 7) | Microsoft Docs"
+title: "Putting the Control on a Web Page (ATL Tutorial, Part 7)"
 ms.custom: "get-started-article"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Putting the Control on a Web Page (ATL Tutorial, Part 7)
 

@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1352 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1352"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1352"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1352"]
 ms.assetid: d044e8b0-b6ef-4d57-8eb5-6254071be707
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1352
 

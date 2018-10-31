@@ -1,15 +1,8 @@
 ---
-title: "adopt_lock_t Structure | Microsoft Docs"
-ms.custom: ""
+title: "adopt_lock_t Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["mutex/std::adopt_lock_t"]
-dev_langs: ["C++"]
 ms.assetid: 549972fb-e2e9-4415-8657-c159b09aa3f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # adopt_lock_t Structure
 

@@ -1,14 +1,7 @@
 ---
-title: "3.2.5 omp_test_lock and omp_test_nest_lock Functions | Microsoft Docs"
-ms.custom: ""
+title: "3.2.5 omp_test_lock and omp_test_nest_lock Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 36818945-c22c-4c24-b754-4e73eba6f3f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3.2.5 omp_test_lock and omp_test_nest_lock Functions
 

@@ -1,15 +1,8 @@
 ---
-title: "Adding an ATL Active Server Page Component | Microsoft Docs"
-ms.custom: ""
+title: "Adding an ATL Active Server Page Component"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ASP components, adding", "ASP components", "ATL, ASP components", "ATL ASP components"]
 ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Active Server Page Component
 

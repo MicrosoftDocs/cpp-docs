@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3766 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3766"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3766"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3766"]
 ms.assetid: b5af2089-2e1e-4e45-a41d-495b6c55656e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3766
 

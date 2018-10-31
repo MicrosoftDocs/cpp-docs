@@ -1,14 +1,7 @@
 ---
-title: "Range of Integer Values | Microsoft Docs"
-ms.custom: ""
+title: "Range of Integer Values"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 0e9c6161-8f3f-4bfb-9fcc-a6c8dc97d702
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Range of Integer Values
 

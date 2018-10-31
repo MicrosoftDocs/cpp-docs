@@ -1,16 +1,9 @@
 ---
-title: "CMFCWindowsManagerDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCWindowsManagerDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog::CMFCWindowsManagerDialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCWindowsManagerDialog [MFC], CMFCWindowsManagerDialog"]
 ms.assetid: 35b4b0db-33c4-4b22-94d8-5e3396341340
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCWindowsManagerDialog Class
 

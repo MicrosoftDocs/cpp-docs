@@ -1,16 +1,9 @@
 ---
-title: "-KEYFILE (Specify Key or Key Pair to Sign an Assembly) | Microsoft Docs"
-ms.custom: ""
+title: "/KEYFILE (Specify Key or Key Pair to Sign an Assembly)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/keyfile", "VC.Project.VCLinkerTool.KeyFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/KEYFILE linker option", "-KEYFILE linker option", "KEYFILE linker option"]
 ms.assetid: 9b71f8c0-541c-4fe5-a0c7-9364f42ecb06
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /KEYFILE (Specify Key or Key Pair to Sign an Assembly)
 

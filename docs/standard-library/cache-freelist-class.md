@@ -1,16 +1,9 @@
 ---
-title: "cache_freelist Class | Microsoft Docs"
-ms.custom: ""
+title: "cache_freelist Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::cache_freelist", "allocators/stdext::cache_freelist::allocate", "allocators/stdext::cache_freelist::deallocate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::cache_freelist", "stdext::cache_freelist [C++], allocate", "stdext::cache_freelist [C++], deallocate"]
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # cache_freelist Class
 

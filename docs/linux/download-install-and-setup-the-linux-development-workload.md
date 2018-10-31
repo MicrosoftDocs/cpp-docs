@@ -1,15 +1,8 @@
 ---
-title: "Install the C++ Linux workload in Visual Studio | Microsoft Docs"
+title: "Install the C++ Linux workload in Visual Studio"
 description: "Describes how to download, install, and setup the Linux workload for C++ in Visual Studio."
-ms.custom: ""
 ms.date: "10/12/2018"
-ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 
 # Download, install, and setup the Linux workload

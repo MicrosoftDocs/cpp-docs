@@ -1,15 +1,8 @@
 ---
-title: "Rowset Object Interfaces | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Rowset Object Interfaces"
+ms.date: "10/24/2018"
 helpviewer_keywords: ["interfaces, OLE DB", "OLE DB, interfaces", "rowset objects [OLE DB]", "OLE DB provider templates, object interfaces", "interfaces, list of"]
 ms.assetid: 0d7a5d48-2fe4-434f-a84b-157c1fdc3494
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Rowset Object Interfaces
 
@@ -46,4 +39,4 @@ The wizard-generated rowset object implements `IAccessor`, `IRowset`, and `IRows
 
 ## See Also
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "once | Microsoft Docs"
-ms.custom: ""
+title: "once"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.once", "once_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["once pragma", "pragmas, once"]
 ms.assetid: c7517556-6403-4b16-8898-f2aa0a6f685f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # once
 Specifies that the file will be included (opened) only once by the compiler when compiling a source code file.

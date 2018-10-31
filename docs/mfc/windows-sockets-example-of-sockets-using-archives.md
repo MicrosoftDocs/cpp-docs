@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Example of Sockets Using Archives | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Example of Sockets Using Archives"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sockets [MFC], with archives", "examples [MFC], Windows Sockets", "Windows Sockets [MFC], with archives"]
 ms.assetid: 2e3c9bb2-7e7b-4f28-8dc5-6cb7a484edac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Example of Sockets Using Archives
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2555 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2555"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2555"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2555"]
 ms.assetid: 5e49ebb8-7c90-457a-aa12-7ca7ab6574b2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2555
 

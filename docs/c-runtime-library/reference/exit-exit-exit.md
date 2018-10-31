@@ -1,18 +1,11 @@
 ---
-title: "exit, _Exit, _exit | Microsoft Docs"
-ms.custom: ""
+title: "exit, _Exit, _exit"
 ms.date: "1/02/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_exit", "exit"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["Exit", "_exit", "process/exit", "process/_Exit", "stdlib/exit", "stdlib/_Exit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exit function", "_exit function", "processes, terminating", "function calls, terminating", "process termination, calling"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # exit, _Exit, _exit
 

@@ -1,16 +1,9 @@
 ---
-title: "new and delete Operators | Microsoft Docs"
-ms.custom: ""
+title: "new and delete Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["delete_cpp", "new"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["new keyword [C++], dynamic allocation of objects", "nothrownew.obj", "delete keyword [C++], syntax"]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # new and delete Operators
 

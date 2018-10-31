@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Throwing Exceptions from Your Own Functions | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Throwing Exceptions from Your Own Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["throwing exceptions [MFC], from functions", "functions [MFC], throwing exceptions", "exceptions [MFC], throwing"]
 ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Throwing Exceptions from Your Own Functions
 

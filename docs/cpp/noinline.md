@@ -1,16 +1,9 @@
 ---
-title: "noinline | Microsoft Docs"
-ms.custom: ""
+title: "noinline"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["noinline_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["noinline __declspec keyword", "__declspec keyword [C++], noinline"]
 ms.assetid: f259d55b-dec7-4bde-8cf9-14521e4fdc42
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # noinline
 

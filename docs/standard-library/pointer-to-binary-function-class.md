@@ -1,16 +1,9 @@
 ---
-title: "pointer_to_binary_function Class | Microsoft Docs"
-ms.custom: ""
+title: "pointer_to_binary_function Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xfunctional/std::pointer_to_binary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointer_to_binary_function function", "pointer_to_binary_function class"]
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # pointer_to_binary_function Class
 

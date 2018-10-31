@@ -1,18 +1,11 @@
 ---
-title: "_set_abort_behavior | Microsoft Docs"
-ms.custom: ""
+title: "_set_abort_behavior"
 ms.date: "1/02/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_set_abort_behavior"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_set_abort_behavior", "set_abort_behavior"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aborting programs", "_set_abort_behavior function", "set_abort_behavior function"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _set_abort_behavior
 

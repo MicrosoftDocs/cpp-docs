@@ -1,15 +1,8 @@
 ---
-title: "Regular MFC DLLs Statically Linked to MFC | Microsoft Docs"
-ms.custom: ""
+title: "Regular MFC DLLs Statically Linked to MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["regular MFC DLLs [C++]", "DLLs [C++], regular", "USRDLLs", "USRDLLs, statically linked to MFC", "statically linked DLLs [C++]", "regular MFC DLLs [C++], statically linked to MFC"]
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Regular MFC DLLs Statically Linked to MFC
 

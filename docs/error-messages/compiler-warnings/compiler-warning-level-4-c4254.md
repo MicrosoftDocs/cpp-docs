@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4254 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4254"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["c4254"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4254"]
 ms.assetid: c7dcef24-d535-4c98-bb41-fc3d2b88fd11
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4254
 

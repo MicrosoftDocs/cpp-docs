@@ -1,16 +1,9 @@
 ---
-title: "CDialogBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CDialogBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDialogBar", "AFXEXT/CDialogBar", "AFXEXT/CDialogBar::CDialogBar", "AFXEXT/CDialogBar::Create"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDialogBar [MFC], CDialogBar", "CDialogBar [MFC], Create"]
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDialogBar Class
 

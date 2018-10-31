@@ -1,16 +1,9 @@
 ---
-title: "is_array Class | Microsoft Docs"
-ms.custom: ""
+title: "is_array Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_array"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_array class", "is_array"]
 ms.assetid: 61fb2201-8de3-4746-9721-617f02df170f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_array Class
 

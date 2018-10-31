@@ -1,19 +1,12 @@
 ---
-title: "creal, crealf, creall | Microsoft Docs"
-ms.custom: ""
+title: "creal, crealf, creall"
 ms.date: "03/30/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["creal", "crealf", "creall"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["creal", "crealf", "creall", "complex/creal", "complex/crealf", "complex/creall"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["creal function", "crealf function", "creall function"]
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # creal, crealf, creall
 

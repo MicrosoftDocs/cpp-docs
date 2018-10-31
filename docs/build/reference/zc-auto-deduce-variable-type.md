@@ -1,16 +1,9 @@
 ---
-title: "-Zc:auto (Deduce Variable Type) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:auto (Deduce Variable Type)"
 ms.date: "02/28/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:auto"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "Deduce variable type (C++)", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:auto (Deduce Variable Type)
 

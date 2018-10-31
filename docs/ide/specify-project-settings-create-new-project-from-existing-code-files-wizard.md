@@ -1,16 +1,9 @@
 ---
-title: "Specify Project Settings, Create New Project From Existing Code Files Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Specify Project Settings, Create New Project From Existing Code Files Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.importwiz.appsettings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Create New Project From Existing Code Files Wizard, project settings"]
 ms.assetid: 9b8860c9-d35f-4f18-9565-2934d3d7f569
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Specify Project Settings, Create New Project From Existing Code Files Wizard
 

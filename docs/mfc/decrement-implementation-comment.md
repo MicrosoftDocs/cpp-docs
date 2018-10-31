@@ -1,15 +1,8 @@
 ---
-title: "-- Implementation Comment | Microsoft Docs"
-ms.custom: ""
+title: "-- Implementation Comment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Implementation comment in MFC source files", "comments, MFC", "MFC source files, Implementation comment", "comments, Implementation comments"]
 ms.assetid: 4d799c07-8e71-4a6b-90ab-8282d6ff48ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # // Implementation Comment
 

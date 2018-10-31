@@ -1,15 +1,8 @@
 ---
-title: "Resource Files (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Resource Files (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["resource files", "resources [C++]", "file types [C++], resource files"]
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Resource Files (C++)
 

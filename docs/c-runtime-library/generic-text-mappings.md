@@ -1,16 +1,9 @@
 ---
-title: "Generic-Text Mappings | Microsoft Docs"
-ms.custom: ""
+title: "Generic-Text Mappings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.mappings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["generic-text mappings", "mappings, generic-text"]
 ms.assetid: 1ed02e02-3649-42dd-a697-e1b4af25bb02
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Generic-Text Mappings
 

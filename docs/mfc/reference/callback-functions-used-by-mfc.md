@@ -1,16 +1,9 @@
 ---
-title: "Callback Functions Used by MFC | Microsoft Docs"
-ms.custom: ""
+title: "Callback Functions Used by MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.functions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["callback functions [MFC], MFC", "MFC, callback functions", "functions [MFC], callback", "callback functions [MFC]"]
 ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Callback Functions Used by MFC
 

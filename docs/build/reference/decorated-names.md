@@ -1,15 +1,8 @@
 ---
-title: "Decorated Names | Microsoft Docs"
-ms.custom: ""
+title: "Decorated Names"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["decorated names, definition", "name decoration [C++]", "names [C++], decorated"]
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Decorated Names
 

@@ -1,16 +1,9 @@
 ---
-title: "CSimpleMapEqualHelperFalse Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleMapEqualHelperFalse Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleMapEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualKey", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleMapEqualHelperFalse class"]
 ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleMapEqualHelperFalse Class
 

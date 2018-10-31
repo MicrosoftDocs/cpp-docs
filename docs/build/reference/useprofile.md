@@ -1,14 +1,7 @@
 ---
-title: "/USEPROFILE (Use PGO data with LTCG) | Microsoft Docs"
-ms.custom: ""
+title: "/USEPROFILE (Use PGO data with LTCG)"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 f1_keywords: ["USEPROFILE"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /USEPROFILE (Run PGO in thread safe mode)
 

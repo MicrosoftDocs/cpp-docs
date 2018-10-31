@@ -1,16 +1,9 @@
 ---
-title: "Date and Time: SYSTEMTIME Support | Microsoft Docs"
-ms.custom: ""
+title: "Date and Time: SYSTEMTIME Support"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["SYSTEMTIME"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["system time", "FILETIME structure, with CTime class", "time [C++], formatting", "SYSTEMTIME structure", "dates [C++], MFC", "formatting [C++], time"]
 ms.assetid: 201528e4-2ffa-48fc-af8f-203aa86d942a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Date and Time: SYSTEMTIME Support
 

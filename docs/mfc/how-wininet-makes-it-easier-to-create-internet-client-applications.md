@@ -1,15 +1,8 @@
 ---
-title: "How WinInet Makes It Easier to Create Internet Client Applications | Microsoft Docs"
-ms.custom: ""
+title: "How WinInet Makes It Easier to Create Internet Client Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows Sockets [MFC], vs. WinInet", "WinInet classes [MFC], vs. WinSock", "WinInet classes [MFC], Internet client applications"]
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How WinInet Makes It Easier to Create Internet Client Applications
 

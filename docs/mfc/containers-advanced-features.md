@@ -1,15 +1,8 @@
 ---
-title: "Containers: Advanced Features | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Advanced Features"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["links [MFC], to embedded OLE objects", "containers [MFC], links to embedded OLE objects", "containers [MFC], advanced features", "container/server applications [MFC]", "embedded objects [MFC]", "OLE controls [MFC], containers", "OLE containers [MFC], advanced features", "server/container applications [MFC]", "containers [MFC], container applications"]
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Advanced Features
 

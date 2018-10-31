@@ -1,16 +1,9 @@
 ---
-title: "Adding Functionality with Code Wizards (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Adding Functionality with Code Wizards (C++)"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.classes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["code wizards [C++]", "wizards [C++], code", "Visual C++ projects, adding functionality", "projects [C++], adding functionality", "class wizards [C++]"]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Functionality with Code Wizards (C++)
 

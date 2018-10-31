@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Embedded Pointers Using C++ Interop | Microsoft Docs"
+title: "How to: Marshal Embedded Pointers Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structures [C++], marshaling embedded pointers", "interop [C++], embedded pointers", "C++ Interop, embedded pointers", "marshaling [C++], embedded pointers", "pointers [C++], marshaling", "data marshaling [C++], embedded pointers"]
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Embedded Pointers Using C++ Interop
 

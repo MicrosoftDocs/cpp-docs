@@ -1,15 +1,8 @@
 ---
-title: "Using Tree Controls | Microsoft Docs"
-ms.custom: ""
+title: "Using Tree Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTreeCtrl class [MFC], using", "tree controls [MFC], about tree controls"]
 ms.assetid: 4e92941a-e477-4fb1-b1ce-4abeafbef1c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Tree Controls
 

@@ -1,16 +1,9 @@
 ---
-title: "-volatile (volatile Keyword Interpretation) | Microsoft Docs"
-ms.custom: ""
+title: "/volatile (volatile Keyword Interpretation)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/volatile:iso", "/volatile:ms", "/volatile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/volatile compiler option", "/volatile compiler option [C++]", "-volatile compiler option", "volatile compiler option [C++]", "volatile compiler option", "-volatile compiler option [C++]"]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /volatile (volatile Keyword Interpretation)
 

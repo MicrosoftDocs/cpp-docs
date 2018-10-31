@@ -1,15 +1,8 @@
 ---
-title: "Accessing XML Data | Microsoft Docs"
-ms.custom: ""
+title: "Accessing XML Data"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data access [C++], XML data", "XML [C++], accessing data", "CXMLAccessor class, retrieving XML data", "data [C++], XML data access", "rowsets [C++], retrieving XML data", "CStreamRowset class, retrieving XML data"]
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Accessing XML Data
 

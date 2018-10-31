@@ -1,15 +1,8 @@
 ---
-title: "Type-Cast Conversions | Microsoft Docs"
-ms.custom: ""
+title: "Type-Cast Conversions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data type conversion [C++], type-cast conversions", "conversions [C++], type-cast", "type casts", "explicit type conversions", "type casts [C++], about type-cast conversion", "type-cast conversions [C++]"]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type-Cast Conversions
 

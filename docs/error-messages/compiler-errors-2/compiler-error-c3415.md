@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3415 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3415"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3415"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3415"]
 ms.assetid: fa2db8ab-2820-4ec3-a740-fb5e2adcfb29
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3415
 

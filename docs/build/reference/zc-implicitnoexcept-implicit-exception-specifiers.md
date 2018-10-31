@@ -1,16 +1,9 @@
 ---
-title: "/Zc:implicitNoexcept (Implicit Exception Specifiers) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:implicitNoexcept (Implicit Exception Specifiers)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:implicitNoexcept"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc:implicitNoexcept", "Zc:implicitNoexcept", "-Zc:implicitNoexcept"]
 ms.assetid: 71807652-6f9d-436b-899e-f52daa6f500b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:implicitNoexcept (Implicit Exception Specifiers)
 

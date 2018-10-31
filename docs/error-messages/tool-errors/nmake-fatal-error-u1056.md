@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Fatal Error U1056 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Fatal Error U1056"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U1056"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U1056"]
 ms.assetid: da855728-b69e-413c-83ed-df912126215e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1056
 

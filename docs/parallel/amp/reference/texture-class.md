@@ -1,15 +1,8 @@
 ---
-title: "texture Class | Microsoft Docs"
-ms.custom: ""
+title: "texture Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["texture", "AMP_GRAPHICS/texture", "AMP_GRAPHICS/concurrency::graphics::texture::texture", "AMP_GRAPHICS/concurrency::graphics::texture::copy_to", "AMP_GRAPHICS/concurrency::graphics::texture::data", "AMP_GRAPHICS/concurrency::graphics::texture::get", "AMP_GRAPHICS/concurrency::graphics::texture::get_associated_accelerator_view", "AMP_GRAPHICS/concurrency::graphics::texture::get_depth_pitch", "AMP_GRAPHICS/concurrency::graphics::texture::get_row_pitch", "AMP_GRAPHICS/concurrency::graphics::texture::set", "AMP_GRAPHICS/concurrency::graphics::texture::rank", "AMP_GRAPHICS/concurrency::graphics::texture::associated_accelerator_view", "AMP_GRAPHICS/concurrency::graphics::texture::depth_pitch", "AMP_GRAPHICS/concurrency::graphics::texture::row_pitch"]
-dev_langs: ["C++"]
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # texture Class
 

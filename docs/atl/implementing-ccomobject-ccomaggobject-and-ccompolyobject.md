@@ -1,16 +1,9 @@
 ---
-title: "Implementing CComObject, CComAggObject, and CComPolyObject | Microsoft Docs"
-ms.custom: ""
+title: "Implementing CComObject, CComAggObject, and CComPolyObject"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["CComPolyObject", "CComAggObject", "CComObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComPolyObject class, implementing", "CreateInstance method", "CComAggObject class", "CComObject class, implementing"]
 ms.assetid: 5aabe938-104d-492e-9c41-9f7fb1c62098
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing CComObject, CComAggObject, and CComPolyObject
 

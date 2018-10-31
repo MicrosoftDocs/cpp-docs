@@ -1,16 +1,9 @@
 ---
-title: "LINGER Structure | Microsoft Docs"
-ms.custom: ""
+title: "LINGER Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["LINGER"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LINGER structure [MFC]"]
 ms.assetid: 1fb1c5bf-a64e-4a6c-89d6-1734e4fdbb1b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # LINGER Structure
 

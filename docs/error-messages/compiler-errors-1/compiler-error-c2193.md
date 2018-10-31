@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2193 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2193"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2193"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2193"]
 ms.assetid: 9813e853-d581-4f51-bb75-4e242298a844
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2193
 

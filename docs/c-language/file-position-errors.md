@@ -1,15 +1,8 @@
 ---
-title: "File Position Errors | Microsoft Docs"
-ms.custom: ""
+title: "File Position Errors"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["file pointers [C++], file position errors"]
 ms.assetid: d5e59d8b-08c0-4927-a338-0b2d8234ce24
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # File Position Errors
 

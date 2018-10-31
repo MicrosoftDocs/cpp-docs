@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Adapting Existing Code to Use Lightweight Tasks | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Adapting Existing Code to Use Lightweight Tasks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["using lightweight tasks [Concurrency Runtime]", "lightweight tasks, using [Concurrency Runtime]"]
 ms.assetid: 1edfe818-d274-46de-bdd3-e92967c9bbe0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Adapting Existing Code to Use Lightweight Tasks
 

@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Using the New MFC Shell Controls | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Using the New MFC Shell Controls"
 ms.date: "09/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["shell controls (MFC)"]
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using the New MFC Shell Controls
 

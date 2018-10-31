@@ -1,16 +1,9 @@
 ---
-title: "false (C++) | Microsoft Docs"
-ms.custom: ""
+title: "false (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["false_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["false keyword [C++]"]
 ms.assetid: cc13aec5-1f02-4d38-8dbf-5473ea2b354f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # false (C++)
 

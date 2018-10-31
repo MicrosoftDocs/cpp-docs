@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1004 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1004"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1004"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1004"]
 ms.assetid: dbe034b0-6eb0-41b4-a50c-2fccf9e78ad4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1004
 

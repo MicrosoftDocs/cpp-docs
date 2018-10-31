@@ -1,16 +1,9 @@
 ---
-title: "is_move_assignable Class | Microsoft Docs"
-ms.custom: ""
+title: "is_move_assignable Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_move_assignable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_move_assignable"]
 ms.assetid: f33137f2-0639-4912-8745-bc0f9fd18d28
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_move_assignable Class
 

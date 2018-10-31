@@ -1,15 +1,8 @@
 ---
-title: "ODBC: The ODBC Cursor Library | Microsoft Docs"
-ms.custom: ""
+title: "ODBC: The ODBC Cursor Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cursor library [ODBC]", "snapshots, support in ODBC", "timestamps, ODBC timestamp columns", "ODBC cursor library [ODBC]", "static cursors", "ODBC drivers, Level 1", "ODBC drivers, cursor support", "positioned updates", "cursors, ODBC cursor library", "Level 1 ODBC drivers", "cursor library [ODBC], snapshots", "ODBC, timestamp", "positioning cursors"]
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC: The ODBC Cursor Library
 

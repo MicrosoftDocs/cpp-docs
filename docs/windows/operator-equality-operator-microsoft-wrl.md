@@ -1,15 +1,9 @@
 ---
-title: "operator== Operator (Microsoft::WRL) | Microsoft Docs"
-ms.custom: ""
+title: "operator== Operator (Microsoft::WRL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 94f383a5-17a9-40c7-9d9c-778acdc54b27
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # operator== Operator (Microsoft::WRL)
 

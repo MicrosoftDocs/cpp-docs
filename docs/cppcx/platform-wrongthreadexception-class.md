@@ -1,16 +1,10 @@
 ---
-title: "Platform::WrongThreadException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::WrongThreadException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::WrongThreadException", "VCCORLIB/Platform::WrongThreadException::WrongThreadException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::WrongThreadException"]
 ms.assetid: c193f97e-0392-4535-a4c4-0711e4e4a836
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::WrongThreadException Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3222 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3222"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3222"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3222"]
 ms.assetid: 5624bde8-2fd0-4b8b-92ce-5dfbaf91cf93
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3222
 

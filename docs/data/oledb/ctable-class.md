@@ -1,16 +1,9 @@
 ---
-title: "CTable Class | Microsoft Docs"
-ms.custom: ""
+title: "CTable Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::CTable", "ATL.CTable", "CTable", "ATL.CTable.Open", "ATL::CTable::Open", "CTable::Open", "CTable.Open"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTable class", "Open method"]
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CTable Class
 

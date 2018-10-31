@@ -1,14 +1,7 @@
 ---
-title: "1.2 Definition of Terms | Microsoft Docs"
-ms.custom: ""
+title: "1.2 Definition of Terms"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: fcaa8eb8-bbbf-4a24-ad0e-e299c442db79
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 1.2 Definition of Terms
 

@@ -1,22 +1,15 @@
 ---
-title: "MFC ActiveX Controls: Property Pages | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Property Pages"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DDP_ functions [MFC]", "MFC ActiveX controls [MFC], properties", "property pages [MFC], MFC ActiveX controls", "DoDataExchange method [MFC]", "OLEIVERB_PROPERTIES", "CPropertyPageDialog class [MFC]", "MFC ActiveX controls [MFC], property pages"]
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Property Pages
 
 Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 ActiveX control property pages are displayed in two ways:
 

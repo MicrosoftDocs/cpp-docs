@@ -1,19 +1,12 @@
 ---
-title: "_recalloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_recalloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_recalloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["recalloc_dbg", "_recalloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_recalloc_dbg function", "recalloc_dbg function"]
 ms.assetid: 43c3e9b2-be6d-4508-9b0f-3220c8a47ca3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _recalloc_dbg
 

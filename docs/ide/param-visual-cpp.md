@@ -1,16 +1,9 @@
 ---
-title: "&lt;param&gt; (Visual C++) | Microsoft Docs"
-ms.custom: ""
+title: "&lt;param&gt; (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 f1_keywords: ["param", "<param>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["param C++ XML tag", "<param> C++ XML tag"]
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # &lt;param&gt; (Visual C++)
 

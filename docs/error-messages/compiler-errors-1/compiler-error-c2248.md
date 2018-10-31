@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2248 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2248"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2248"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2248"]
 ms.assetid: 7a3ba0e8-d3b9-4bb9-95db-81ef17e31d23
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2248
 

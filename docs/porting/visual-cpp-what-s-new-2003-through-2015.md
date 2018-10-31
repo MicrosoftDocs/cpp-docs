@@ -1,14 +1,7 @@
 ---
-title: "Visual C++ What&#39;s New 2003 through 2015 | Microsoft Docs"
-ms.custom: ""
+title: "Visual C++ What&#39;s New 2003 through 2015"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ What&#39;s New 2003 through 2015
 
@@ -2090,7 +2083,7 @@ The compiler has breaking changes in this release.
 - `/CLRIMAGETYPE` (Specify Type of CLR Image) linker option has been added.
 - `/CLRSUPPORTLASTERROR` (Preserve Last Error Code for PInvoke Calls) linker option has been added.
 - `/CLRTHREADATTRIBUTE` (Set CLR Thread Attribute) linker option has been added.
-- `/CLRUNMANAGEDCODECHECK` (Add SupressUnmanagedCodeSecurityAttribute) linker option has been added.
+- `/CLRUNMANAGEDCODECHECK` (Add SuppressUnmanagedCodeSecurityAttribute) linker option has been added.
 - `/ERRORREPORT` (Report Internal Linker Errors) linker option has been added.
 - `/EXETYPE` linker option has been removed. The linker no longer supports creating Windows 95 and Windows 98 device drivers. Use an appropriate DDK to create these device drivers. The EXETYPE keyword is no longer valid for module definition files.
 - `/FUNCTIONPADMIN` (Create Hotpatchable Image) linker option has been added.

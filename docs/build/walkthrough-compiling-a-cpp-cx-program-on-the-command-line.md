@@ -1,14 +1,7 @@
 ---
-title: "Walkthrough: Compiling a C++/CX Program on the Command Line | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Compiling a C++/CX Program on the Command Line"
 ms.date: "09/24/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compiling a C++/CX Program on the Command Line
 

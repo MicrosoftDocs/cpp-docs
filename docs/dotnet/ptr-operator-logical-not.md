@@ -1,16 +1,10 @@
 ---
-title: "ptr::operator! | Microsoft Docs"
-ms.custom: ""
+title: "ptr::operator!"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["ptr::operator!", "msclr::com::ptr::operator!", "ptr.operator!", "msclr.com.ptr.operator!"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ptr::operator!"]
 ms.assetid: 7f4101dc-2045-42e7-abb1-6a30e17147f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::operator!
 

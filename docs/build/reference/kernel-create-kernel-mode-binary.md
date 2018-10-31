@@ -1,15 +1,8 @@
 ---
-title: "-kernel (Create Kernel Mode Binary) | Microsoft Docs"
-ms.custom: ""
+title: "/kernel (Create Kernel Mode Binary)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/kernel", "/kernel-"]
-dev_langs: ["C++"]
 ms.assetid: 6d7fdff0-c3d1-4b78-9367-4da588ce8b05
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /kernel (Create Kernel Mode Binary)
 

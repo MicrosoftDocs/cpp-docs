@@ -1,14 +1,7 @@
 ---
-title: "Blank Lines | Microsoft Docs"
-ms.custom: ""
+title: "Blank Lines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 793a7b8f-6e8a-4641-a354-9f66e3c96ee2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Blank Lines
 

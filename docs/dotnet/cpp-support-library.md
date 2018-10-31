@@ -1,15 +1,9 @@
 ---
-title: "C++ Support Library | Microsoft Docs"
-ms.custom: ""
+title: "C++ Support Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Managed Support Library", "C++ Support Library", "Visual C++ Support Library"]
 ms.assetid: fe6246eb-9ac7-478d-a272-dc9b09b14788
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # C++ Support Library
 

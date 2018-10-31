@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Adding Animation to an MFC Project | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Adding Animation to an MFC Project"
 ms.date: "09/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["animation [MFC]", "MFC, animation"]
 ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Adding Animation to an MFC Project
 

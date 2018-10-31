@@ -1,16 +1,9 @@
 ---
-title: "ICommandTextImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "ICommandTextImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ICommandText", "GetCommandText", "ICommandTextImpl.GetCommandText", "ICommandTextImpl::GetCommandText", "ATL::ICommandTextImpl::m_strCommandText", "ICommandTextImpl<T>::m_strCommandText", "m_strCommandText", "ICommandTextImpl.m_strCommandText", "ICommandTextImpl::m_strCommandText", "ATL::ICommandTextImpl<T>::m_strCommandText", "ATL.ICommandTextImpl.m_strCommandText", "ICommandTextImpl.SetCommandText", "ICommandTextImpl::SetCommandText", "SetCommandText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandText class", "GetCommandText method", "m_strCommandText", "SetCommandText method"]
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandTextImpl Class
 

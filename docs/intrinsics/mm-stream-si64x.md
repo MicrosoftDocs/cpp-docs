@@ -1,16 +1,9 @@
 ---
-title: "_mm_stream_si64x | Microsoft Docs"
-ms.custom: ""
+title: "_mm_stream_si64x"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_stream_si64x"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["movnti instruction", "_mm_stream_si64x intrinsic"]
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_stream_si64x
 

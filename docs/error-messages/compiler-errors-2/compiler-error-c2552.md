@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2552 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2552"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2552"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2552"]
 ms.assetid: 0e0ab759-788a-4faf-9337-80d4b9e2e8c9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2552
 

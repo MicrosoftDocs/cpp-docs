@@ -1,15 +1,8 @@
 ---
-title: "Sequential-Evaluation Operator | Microsoft Docs"
-ms.custom: ""
+title: "Sequential-Evaluation Operator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], sequential-evaluation", "sequential-evaluation operator", "comma operator"]
 ms.assetid: 587514f4-c8e2-44e9-81a8-7a553ce1453a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Sequential-Evaluation Operator
 

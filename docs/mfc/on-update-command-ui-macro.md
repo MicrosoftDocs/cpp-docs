@@ -1,16 +1,9 @@
 ---
-title: "ON_UPDATE_COMMAND_UI Macro | Microsoft Docs"
-ms.custom: ""
+title: "ON_UPDATE_COMMAND_UI Macro"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["ON_UPDATE_COMMAND_UI"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ON_UPDATE_COMMAND_UI macro [MFC]", "update handlers [MFC]", "command-handler macros", "updating user-interface objects [MFC]"]
 ms.assetid: 3e72b50f-4119-4c82-81cf-6e09b132de05
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ON_UPDATE_COMMAND_UI Macro
 

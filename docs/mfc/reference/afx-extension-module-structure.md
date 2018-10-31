@@ -1,16 +1,9 @@
 ---
-title: "AFX_EXTENSION_MODULE Structure | Microsoft Docs"
-ms.custom: ""
+title: "AFX_EXTENSION_MODULE Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["AFX_EXTENSION_MODULE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["AFX_EXTENSION_MODULE structure [MFC]"]
 ms.assetid: b85a989c-d0c5-4b28-b53c-dad45b75704e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # AFX_EXTENSION_MODULE Structure
 

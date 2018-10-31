@@ -1,16 +1,9 @@
 ---
-title: "NAME (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "NAME (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["name"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["NAME .def file statement"]
 ms.assetid: 5c9b6bd8-9275-46a5-afba-f17a5936dc26
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NAME (C/C++)
 

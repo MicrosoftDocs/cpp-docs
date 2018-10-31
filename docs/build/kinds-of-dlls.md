@@ -1,15 +1,8 @@
 ---
-title: "Kinds of DLLs | Microsoft Docs"
-ms.custom: ""
+title: "Kinds of DLLs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC DLLs [C++], types", "DLLs [C++], types", "DLLs [C++], MFC"]
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Kinds of DLLs
 

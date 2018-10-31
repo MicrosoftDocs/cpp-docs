@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (Level 1) C4739 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (Level 1) C4739"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4739"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4739"]
 ms.assetid: 600873b3-7c85-4cd4-944e-cd8e01bfcbb0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4739
 

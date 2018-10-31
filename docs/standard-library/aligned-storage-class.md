@@ -1,16 +1,9 @@
 ---
-title: "aligned_storage Class | Microsoft Docs"
-ms.custom: ""
+title: "aligned_storage Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::aligned_storage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_storage class", "aligned_storage"]
 ms.assetid: f255e345-1f05-4d07-81e4-017f420839fb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # aligned_storage Class
 

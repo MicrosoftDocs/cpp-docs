@@ -1,16 +1,10 @@
 ---
-title: "cliext Namespace | Microsoft Docs"
-ms.custom: ""
+title: "cliext Namespace"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["STL/CLR, namespace", "namespaces [C++], C++", "namespaces [C++], STL/CLR", "cliext namespace"]
 ms.assetid: 75a0c1f8-6e21-46d5-adaf-899845c15b38
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # cliext Namespace
 

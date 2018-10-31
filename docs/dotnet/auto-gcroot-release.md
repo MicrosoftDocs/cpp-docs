@@ -1,16 +1,10 @@
 ---
-title: "auto_gcroot::release | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot::release"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr::auto_gcroot::release", "auto_gcroot::release", "auto_gcroot.release", "msclr.auto_gcroot.release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["release method"]
 ms.assetid: 40b253f0-154e-4d79-80a4-ff13199c3ff0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::release
 

@@ -1,15 +1,8 @@
 ---
-title: "Using Insertion Operators and Controlling Format | Microsoft Docs"
-ms.custom: ""
+title: "Using Insertion Operators and Controlling Format"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["insertion operators"]
 ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using Insertion Operators and Controlling Format
 

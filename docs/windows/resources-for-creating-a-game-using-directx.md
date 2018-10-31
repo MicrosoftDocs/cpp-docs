@@ -1,15 +1,8 @@
 ---
-title: "Resources for Creating a C++ Game Using DirectX | Microsoft Docs"
-ms.custom: ""
+title: "Resources for Creating a C++ Game Using DirectX"
 ms.date: "06/08/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["games [C++]", "Windows applications [C++], games", "DirectX [C++]"]
 ms.assetid: 863090ed-6091-45db-aabb-7fd02f76c1df
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Resources for Creating a C++ Game Using DirectX
 

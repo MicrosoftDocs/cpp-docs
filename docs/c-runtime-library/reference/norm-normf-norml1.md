@@ -1,19 +1,12 @@
 ---
-title: "norm, normf, norml | Microsoft Docs"
-ms.custom: ""
+title: "norm, normf, norml"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["norm", "normf", "norml"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["norm", "normf", "norml", "complex/norm", "complex/normf", "complex/norml"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["norm function", "normf function", "norml function"]
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # norm, normf, norml
 

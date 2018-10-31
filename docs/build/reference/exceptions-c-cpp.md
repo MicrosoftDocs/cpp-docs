@@ -1,16 +1,9 @@
 ---
-title: "Exceptions (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["ERROR_MOD_NOT_FOUND", "vcppException", "ERROR_SEVERITY_ERROR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["vcppException", "C++ exception handling, delayed loading of DLLs", "delayed loading of DLLs, exceptions", "ERROR_SEVERITY_ERROR exception", "ERROR_MOD_NOT_FOUND exception"]
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions (C/C++)
 

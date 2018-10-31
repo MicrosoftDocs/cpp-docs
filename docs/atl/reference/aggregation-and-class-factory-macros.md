@@ -1,16 +1,9 @@
 ---
-title: "Aggregation and Class Factory Macros | Microsoft Docs"
-ms.custom: ""
+title: "Aggregation and Class Factory Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::DECLARE_AGGREGATABLE", "atlcom/ATL::DECLARE_CLASSFACTORY", "atlcom/ATL::DECLARE_CLASSFACTORY_EX", "atlcom/ATL::DECLARE_CLASSFACTORY_AUTO_THREAD", "atlcom/ATL::DECLARE_CLASSFACTORY_SINGLETON", "atlcom/ATL::DECLARE_GET_CONTROLLING_UNKNOWN", "atlcom/ATL::DECLARE_NOT_AGGREGATABLE", "atlcom/ATL::DECLARE_ONLY_AGGREGATABLE", "atlcom/ATL::DECLARE_POLY_AGGREGATABLE", "atlcom/ATL::DECLARE_PROTECT_FINAL_CONSTRUCT", "atlcom/ATL::DECLARE_VIEW_STATUS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["class factories, ATL macros", "aggregation [C++], ATL macros"]
 ms.assetid: d99d379a-0eec-481f-8daa-252dac18f163
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Aggregation and Class Factory Macros
 

@@ -1,15 +1,9 @@
 ---
-title: "ref class and ref struct (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "ref class and ref struct (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ref class keyword [C++]", "value class keyword [C++]", "value struct keyword [C++]", "ref struct keyword [C++]"]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ref class and ref struct  (C++/CLI and C++/CX)
 

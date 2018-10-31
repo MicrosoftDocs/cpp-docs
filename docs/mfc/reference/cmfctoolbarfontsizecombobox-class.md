@@ -1,16 +1,9 @@
 ---
-title: "CMFCToolBarFontSizeComboBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCToolBarFontSizeComboBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::GetTwipSize", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::RebuildFontSizes", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::SetTwipSize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarFontSizeComboBox [MFC], CMFCToolBarFontSizeComboBox", "CMFCToolBarFontSizeComboBox [MFC], GetTwipSize", "CMFCToolBarFontSizeComboBox [MFC], RebuildFontSizes", "CMFCToolBarFontSizeComboBox [MFC], SetTwipSize"]
 ms.assetid: 72e0c44c-6a0e-4194-a71f-ab64e3afb9b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarFontSizeComboBox Class
 

@@ -1,16 +1,10 @@
 ---
-title: "ActivationFactory Class | Microsoft Docs"
-ms.custom: ""
+title: "ActivationFactory Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ActivationFactory", "module/Microsoft::WRL::ActivationFactory::ActivationFactory", "module/Microsoft::WRL::ActivationFactory::AddRef", "module/Microsoft::WRL::ActivationFactory::GetIids", "module/Microsoft::WRL::ActivationFactory::GetRuntimeClassName", "module/Microsoft::WRL::ActivationFactory::GetTrustLevel", "module/Microsoft::WRL::ActivationFactory::QueryInterface", "module/Microsoft::WRL::ActivationFactory::Release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::ActivationFactory class", "Microsoft::WRL::ActivationFactory::ActivationFactory, constructor", "Microsoft::WRL::ActivationFactory::AddRef method", "Microsoft::WRL::ActivationFactory::GetIids method", "Microsoft::WRL::ActivationFactory::GetRuntimeClassName method", "Microsoft::WRL::ActivationFactory::GetTrustLevel method", "Microsoft::WRL::ActivationFactory::QueryInterface method", "Microsoft::WRL::ActivationFactory::Release method"]
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory Class
 

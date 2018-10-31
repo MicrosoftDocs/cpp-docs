@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1158 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1158"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1158"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1158"]
 ms.assetid: 45febf16-d9e1-42db-af91-532e2717fd6a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1158
 

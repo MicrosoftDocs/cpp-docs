@@ -1,15 +1,8 @@
 ---
-title: "String Literals in Primary Expressions | Microsoft Docs"
-ms.custom: ""
+title: "String Literals in Primary Expressions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["string literals, in primary expressions"]
 ms.assetid: 3ec31278-527b-40d2-8c83-6b09e2d81ca6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # String Literals in Primary Expressions
 

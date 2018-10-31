@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2441 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2441"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2441"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2441"]
 ms.assetid: ffbd6573-777a-48dd-892f-5cf4a758dcab
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2441
 

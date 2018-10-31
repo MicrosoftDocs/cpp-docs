@@ -1,16 +1,10 @@
 ---
-title: "ptr::operator bool | Microsoft Docs"
-ms.custom: ""
+title: "ptr::operator bool"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["ptr::operator bool", "ptr.operator bool", "operator bool", "msclr::com::ptr::operator bool", "msclr.com.ptr.operator bool"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ptr::operator bool"]
 ms.assetid: 31123377-6ecd-4cef-9b75-3db3996fbcd1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::operator bool
 

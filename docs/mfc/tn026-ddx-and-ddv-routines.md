@@ -1,16 +1,9 @@
 ---
-title: "TN026: DDX and DDV Routines | Microsoft Docs"
-ms.custom: ""
+title: "TN026: DDX and DDV Routines"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["DDX", "DDV"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DDX (dialog data exchange), procedures", "TN026", "DDV (dialog data validation), procedures"]
 ms.assetid: c2eba87a-4b47-4083-b28b-e2fa77dfb4c4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN026: DDX and DDV Routines
 

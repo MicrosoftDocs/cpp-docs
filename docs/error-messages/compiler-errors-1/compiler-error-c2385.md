@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2385 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2385"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2385"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2385"]
 ms.assetid: 6d3dd1f2-e56d-49d7-865c-6a9acdb17417
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2385
 

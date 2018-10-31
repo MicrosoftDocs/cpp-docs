@@ -1,16 +1,9 @@
 ---
 title: "Finding a String Resource (C++)| Microsoft Docs"
-ms.custom: ""
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.string"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], searching", "strings [C++]"]
 ms.assetid: c2497173-f356-4f77-97d6-f0ac41782510
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Finding a String Resource (C++)
 

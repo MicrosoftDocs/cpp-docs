@@ -1,19 +1,12 @@
 ---
-title: "cacos, cacosf, cacosl | Microsoft Docs"
-ms.custom: ""
+title: "cacos, cacosf, cacosl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["cacos", "cacosf", "cacosl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["cacos", "cacosf", "cacosl", "complex/cacos", "complex/cacosf", "complex/cacosl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cacos function", "cacosf function", "cacosl function"]
 ms.assetid: 78118c00-0a07-49c1-8a13-4bf19ce3aea8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # cacos, cacosf, cacosl
 

@@ -1,15 +1,8 @@
 ---
-title: "Providing Flicker-Free Activation | Microsoft Docs"
-ms.custom: ""
+title: "Providing Flicker-Free Activation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], flicker-free", "flicker, MFC ActiveX controls", "activation [MFC], flicker-free"]
 ms.assetid: bcb24b77-31d8-44a0-8c58-2ea6213b4c43
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Providing Flicker-Free Activation
 

@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1083 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1083"
 ms.date: "09/01/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1083"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1083"]
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1083
 

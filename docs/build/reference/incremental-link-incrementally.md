@@ -1,16 +1,9 @@
 ---
-title: "-INCREMENTAL (Link Incrementally) | Microsoft Docs"
-ms.custom: ""
+title: "/INCREMENTAL (Link Incrementally)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/incremental", "VC.Project.VCLinkerTool.LinkIncremental"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/INCREMENTAL linker option", "-INCREMENTAL linker option", "INCREMENTAL linker option", "link incrementally option", "LINK tool [C++], options for full linking", "incremental linking"]
 ms.assetid: 135656ff-94fa-4ad4-a613-22e1a2a5d16b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /INCREMENTAL (Link Incrementally)
 

@@ -1,15 +1,8 @@
 ---
-title: "Modifying the ATL DHTML Control | Microsoft Docs"
-ms.custom: ""
+title: "Modifying the ATL DHTML Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["HTML controls, modifying", "DHTML controls", "DHTML controls, modifying"]
 ms.assetid: c053f35f-8629-4600-9595-721f5956777a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Modifying the ATL DHTML Control
 

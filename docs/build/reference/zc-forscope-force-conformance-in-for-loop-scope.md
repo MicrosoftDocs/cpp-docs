@@ -1,16 +1,9 @@
 ---
-title: "/Zc:forScope (Force Conformance in for Loop Scope) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:forScope (Force Conformance in for Loop Scope)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ForceConformanceInForLoopScope", "VC.Project.VCCLWCECompilerTool.ForceConformanceInForLoopScope", "/zc:forScope"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ms.assetid: 3031f02d-3b14-4ad0-869e-22b0110c3aed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:forScope (Force Conformance in for Loop Scope)
 

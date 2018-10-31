@@ -1,15 +1,8 @@
 ---
-title: "Adding an ATL COM+ 1.0 Component | Microsoft Docs"
-ms.custom: ""
+title: "Adding an ATL COM+ 1.0 Component"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL COM+ 1.0", "ATL projects, adding components", "components [C++], adding ATL COM+ 1.0", "objects [C++], supporting ATL COM+ 1.0"]
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL COM+ 1.0 Component
 

@@ -1,16 +1,9 @@
 ---
-title: "is_member_pointer Class | Microsoft Docs"
-ms.custom: ""
+title: "is_member_pointer Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_member_pointer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_member_pointer class", "is_member_pointer"]
 ms.assetid: da07ff4e-9ee0-4baa-ad93-1741f10913d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_member_pointer Class
 

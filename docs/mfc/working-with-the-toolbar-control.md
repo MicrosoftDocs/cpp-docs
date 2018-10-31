@@ -1,15 +1,8 @@
 ---
-title: "Working with the Toolbar Control | Microsoft Docs"
-ms.custom: ""
+title: "Working with the Toolbar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["GetToolBarCtrl method [MFC]", "toolbars [MFC], accessing common control", "CToolBarCtrl class [MFC], accessing toolbar", "toolbar controls [MFC], accessing"]
 ms.assetid: b19409d5-3831-42c7-80ae-195c49dc9085
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Working with the Toolbar Control
 

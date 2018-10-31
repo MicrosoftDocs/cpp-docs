@@ -1,19 +1,12 @@
 ---
-title: "_CIsin | Microsoft Docs"
-ms.custom: ""
+title: "_CIsin"
 ms.date: "04/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_CIsin"]
 apilocation: ["msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CIsin", "_CIsin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_CIsin intrinsic", "CIsin intrinsic"]
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CIsin
 

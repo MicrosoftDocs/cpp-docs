@@ -1,15 +1,9 @@
 ---
-title: "RemoveIUnknown Class | Microsoft Docs"
-ms.custom: ""
+title: "RemoveIUnknown Class"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::RemoveIUnknown"]
-dev_langs: ["C++"]
 ms.assetid: 998e711a-7d1a-44c6-a016-e6167aa40863
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # RemoveIUnknown Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Transaction Object Interfaces | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Transaction Object Interfaces"
+ms.date: "10/24/2018"
 helpviewer_keywords: ["interfaces, OLE DB", "transaction object interfaces", "OLE DB, interfaces", "OLE DB providers, transaction support", "OLE DB provider templates, object interfaces", "interfaces, list of"]
 ms.assetid: d2ce99ce-6f7a-4ff9-bc6e-acda3633d5c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction Object Interfaces
 
@@ -25,4 +18,4 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 
 ## See Also
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

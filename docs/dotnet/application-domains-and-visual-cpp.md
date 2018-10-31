@@ -1,15 +1,8 @@
 ---
-title: "Application Domains and Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "Application Domains and Visual C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], application domains", "application domains [C++], C++", "/clr compiler option [C++], application domains", "interoperability [C++], application domains", "mixed assemblies [C++], application domains"]
 ms.assetid: 75a08efc-9b02-40ba-99b7-dcbd71010bbf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Application domains and Visual C++
 

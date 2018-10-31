@@ -1,16 +1,9 @@
 ---
-title: "IAxWinHostWindowLic Interface | Microsoft Docs"
-ms.custom: ""
+title: "IAxWinHostWindowLic Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IAxWinHostWindowLic", "ATLIFACE/ATL::IAxWinHostWindowLic", "ATLIFACE/ATL::CreateControlLic", "ATLIFACE/ATL::CreateControlLicEx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAxWinHostWindowLic interface"]
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IAxWinHostWindowLic Interface
 

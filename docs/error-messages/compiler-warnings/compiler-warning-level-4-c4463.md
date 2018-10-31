@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4463 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4463"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4463"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4463"]
 ms.assetid: a07ae70c-db4e-472b-8b58-9137d9997323
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4463
 

@@ -1,18 +1,11 @@
 ---
-title: "String to Numeric Value Functions | Microsoft Docs"
-ms.custom: ""
+title: "String to Numeric Value Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr80.dll", "msvcr110.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tcstoui64", "_tcstoi64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["parsing, numeric strings", "string conversion, to numeric values"]
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # String to Numeric Value Functions
 

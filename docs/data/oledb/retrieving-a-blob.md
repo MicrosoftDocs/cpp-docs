@@ -1,15 +1,8 @@
 ---
-title: "Retrieving a BLOB | Microsoft Docs"
-ms.custom: ""
+title: "Retrieving a BLOB"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["retrieving BLOBs", "BLOB (binary large object), retrieving", "OLE DB, BLOBs (binary large objects)"]
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Retrieving a BLOB
 

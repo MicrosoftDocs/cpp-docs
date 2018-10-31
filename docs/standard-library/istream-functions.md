@@ -1,13 +1,8 @@
 ---
-title: "&lt;istream&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;istream&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["istream/std::swap", "istream/std::ws"]
 ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;istream&gt; functions
 

@@ -1,14 +1,7 @@
 ---
-title: "Porting Guide: Spy++ | Microsoft Docs"
-ms.custom: ""
+title: "Porting Guide: Spy++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Porting Guide: Spy++
 
@@ -36,7 +29,7 @@ Upon building a newly converted project, one of the first things you'll often fi
 
 One of the files that couldn't be found in Spy++ was verstamp.h. From an Internet search, we determined that this came from a DAO SDK, an obsolete data technology. We wanted to find out what symbols were being used from that header file, to see if that file was really needed or if those symbols were defined elsewhere, so we commented out the header file declaration and recompiled. It turns out there is just one symbol that is needed, VER_FILEFLAGSMASK.
 
-```
+```Output
 1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\common.ver(212): error RC2104: undefined keyword or key name: VER_FILEFLAGSMASK
 ```
 
@@ -64,7 +57,7 @@ The next error indicates that WINVER version is no longer supported in MFC. WINV
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h(40): fatal error C1189: #error:  MFC does not support WINVER less than 0x0501.  Please change the definition of WINVER in your project properties or precompiled header.
 ```
 
-Windows XP is no longer supported by Microsoft, so even though targeting it is allowed in Visual Studio 2015, you should be phasing out support for it in your applications, and encouraging your users to adopt new versions of Windows.
+Windows XP is no longer supported by Microsoft, so even though targeting it is allowed in Visual Studio, you should be phasing out support for it in your applications, and encouraging your users to adopt new versions of Windows.
 
 To get rid of the error, define WINVER by updating the **Project Properties** setting to the lowest version of Windows you currently want to target. Find a table of values for various Windows releases [here](/windows/desktop/WinProg/using-the-windows-headers).
 
@@ -86,7 +79,7 @@ WINVER we will set to Windows 7. It’s easier to read the code later if you use
 
 With these changes, the SpyHk (DLL) project builds but produces a linker error.
 
-```
+```Output
 LINK : warning LNK4216: Exported entry point _DLLEntryPoint@12
 ```
 
@@ -111,7 +104,9 @@ Given a project with many compilation errors that you are gradually eliminating,
 
 The next error is common with old C++ code that uses iostreams.
 
+```Output
 mstream.h(40): fatal error C1083: Cannot open include file: 'iostream.h': No such file or directory
+```
 
 The issue is that the old iostreams library has been removed and replaced. We have to replace the old iostreams with the newer standards.
 
@@ -186,7 +181,7 @@ MOUT << _T(" chUser:'") << chUser
 << _T("' (") << (INT)(UCHAR)chUser << _T(')');
 ```
 
-The macro MOUT resolves to \*g_pmout which is an object of type `mstream`. The `mstream` class is derived from the standard output string class, `std::basic_ostream<TCHAR>.` However with _T around the string literal, which we put in in preparation for converting to Unicode, the overload resolution for **operator <<** fails with the following error message:
+The macro MOUT resolves to `*g_pmout` which is an object of type `mstream`. The `mstream` class is derived from the standard output string class, `std::basic_ostream<TCHAR>`. However with \_T around the string literal, which we put in preparation for converting to Unicode, the overload resolution for **operator <<** fails with the following error message:
 
 ```Output
 1>winmsgs.cpp(4612): error C2666: 'mstream::operator <<': 2 overloads have similar conversions
@@ -257,7 +252,7 @@ This type of conversion was allowed under the older, less strict compiler, but m
 
 We also get many errors like the following:
 
-```
+```Output
 error C2440: 'static_cast': cannot convert from 'UINT (__thiscall CHotLinkCtrl::* )(CPoint)' to 'LRESULT (__thiscall CWnd::* )(CPoint)'
 ```
 
@@ -517,7 +512,7 @@ msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\Sp
 
 Now let us actually update the old Multi-byte Character Set (MBCS) code to Unicode. Since this is a Windows application, intimately tied to the Windows desktop platform, we will port it to UTF-16 Unicode that Windows uses. If you are writing cross-platform code or porting a Windows application to another platform, you might want to consider porting to UTF-8, which is widely used on other operating systems.
 
-Porting to UTF-16 Unicode, we must decide whether we still want the option to compile to MBCS or not.  If we want to have the option to support MBCS, we should use the TCHAR macro as the character type, which resolves to either **char** or **wchar_t**, depending on whether _MBCS or _UNICODE is defined during compilation. Switching to TCHAR and the TCHAR versions of various APIs instead of **wchar_t** and its associated APIs means that you can get back to an MBCS version of your code simply by defining _MBCS macro instead of _UNICODE. In addition to TCHAR, a variety of TCHAR versions of such as widely used typedefs, macros, and functions exists. For example, LPCTSTR instead of LPCSTR, and so on. In the project properties dialog, under **Configuration Properties**, in the **General** section, change the **Character Set** property from **Use MBCS Character Set** to **Use Unicode Character Set**. This setting affects which macro is predefined during compilation. There is both a UNICODE macro and a _UNICODE macro. The project property affects both consistently. Windows headers use UNICODE where Visual C++ headers such as MFC use _UNICODE, but when one is defined, the other is always defined.
+Porting to UTF-16 Unicode, we must decide whether we still want the option to compile to MBCS or not.  If we want to have the option to support MBCS, we should use the TCHAR macro as the character type, which resolves to either **char** or **wchar_t**, depending on whether \_MBCS or \_UNICODE is defined during compilation. Switching to TCHAR and the TCHAR versions of various APIs instead of **wchar_t** and its associated APIs means that you can get back to an MBCS version of your code simply by defining \_MBCS macro instead of \_UNICODE. In addition to TCHAR, a variety of TCHAR versions of such as widely used typedefs, macros, and functions exists. For example, LPCTSTR instead of LPCSTR, and so on. In the project properties dialog, under **Configuration Properties**, in the **General** section, change the **Character Set** property from **Use MBCS Character Set** to **Use Unicode Character Set**. This setting affects which macro is predefined during compilation. There is both a UNICODE macro and a \_UNICODE macro. The project property affects both consistently. Windows headers use UNICODE where Visual C++ headers such as MFC use \_UNICODE, but when one is defined, the other is always defined.
 
 A good [guide](https://msdn.microsoft.com/library/cc194801.aspx) to porting from MBCS to UTF-16 Unicode using TCHAR exists. We choose this route. First, we change the **Character Set** property to **Use Unicode Character Set** and rebuild the project.
 
@@ -535,13 +530,13 @@ Here’s an example of code that produces this:
 wsprintf(szTmp, "%d.%2.2d.%4.4d", rmj, rmm, rup);
 ```
 
-We put _T around the string literal to remove the error.
+We put \_T around the string literal to remove the error.
 
 ```cpp
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-The _T macro has the effect of making a string literal compile as a **char** string or a **wchar_t** string, depending on the setting of MBCS or UNICODE. To replace all strings with _T in Visual Studio, first open the **Quick Replace** (Keyboard: **Ctrl**+**F**) box or the **Replace In Files** (Keyboard: **Ctrl**+**Shift**+**H**), then choose the **Use Regular Expressions** checkbox. Enter `((\".*?\")|('.+?'))` as the search text and `_T($1)` as the replacement text. If you already have the _T macro around some strings, this procedure will add it again, and it might also find cases where you don't want _T, such as when you use `#include`, so it's best to use **Replace Next** rather than **Replace All**.
+The \_T macro has the effect of making a string literal compile as a **char** string or a **wchar_t** string, depending on the setting of MBCS or UNICODE. To replace all strings with \_T in Visual Studio, first open the **Quick Replace** (Keyboard: **Ctrl**+**F**) box or the **Replace In Files** (Keyboard: **Ctrl**+**Shift**+**H**), then choose the **Use Regular Expressions** checkbox. Enter `((\".*?\")|('.+?'))` as the search text and `_T($1)` as the replacement text. If you already have the \_T macro around some strings, this procedure will add it again, and it might also find cases where you don't want \_T, such as when you use `#include`, so it's best to use **Replace Next** rather than **Replace All**.
 
 This particular function, [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa), is actually defined in the Windows headers, and the documentation for it recommends that it not be used, due to possible buffer overrun. No size is given for the `szTmp` buffer, so there is no way for the function to check that the buffer can hold all the data to be written to it. See the next section about porting to the Secure CRT, in which we fix other similar problems. We ended up replacing it with [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).
 
@@ -569,7 +564,7 @@ Similarly, we changed LPSTR (Long Pointer to STRing) and LPCSTR (Long Pointer to
 
 In some cases we had to replace a type to use a version that resolves correctly (WNDCLASS instead of WNDCLASSA for example).
 
-In many cases we had to use the generic version (macro) of a Win32 API like `GetClassName` (instead of `GetClassNameA`). In message handler switch statement, some messages are MBCS or Unicode specific, in those cases, we had to change the code to explicitly call the MBCS version, because we replaced the generically named functions with **A** and **W** specific functions, and added a macro for the generic name that resolves to the correct **A** or **W** name based on whether UNICODE is defined.  In many parts of the code, when we switched to define _UNICODE, the W version is now chosen even when the **A** version is what's wanted.
+In many cases we had to use the generic version (macro) of a Win32 API like `GetClassName` (instead of `GetClassNameA`). In message handler switch statement, some messages are MBCS or Unicode specific, in those cases, we had to change the code to explicitly call the MBCS version, because we replaced the generically named functions with **A** and **W** specific functions, and added a macro for the generic name that resolves to the correct **A** or **W** name based on whether UNICODE is defined.  In many parts of the code, when we switched to define \_UNICODE, the W version is now chosen even when the **A** version is what's wanted.
 
 There are a few places where special actions had to be taken. Any use of `WideCharToMultiByte` or `MultiByteToWideChar` might require a closer look. Here's one example where `WideCharToMultiByte` was being used.
 
@@ -635,7 +630,7 @@ With these techniques, it took about half a day to convert the code to use the s
 
 ##  <a name="deprecated_forscope"></a> Step 13. /Zc:forScope- is deprecated
 
-Since Visual C++ 6.0, the compiler conforms to the current standard, which limits the scope of variables declared in a  loop to the scope of the loop. The compiler option [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) (**Force Conformance for Loop Scope** in the project properties) controls whether or not this is reported as an error. We should update our code to be conformant, and add declarations just outside the loop. To avoid making the code changes, you can change that setting in the **Language** section of the C++ project properties to `No (/Zc:forScope-)`. However, keep in mind that `/Zc:forScope-` might be removed in a future release of Visual C++, so eventually your code will need to change to conform to the standard.
+Since Visual C++ 6.0, the compiler conforms to the current standard, which limits the scope of variables declared in a loop to the scope of the loop. The compiler option [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) (**Force Conformance for Loop Scope** in the project properties) controls whether or not this is reported as an error. We should update our code to be conformant, and add declarations just outside the loop. To avoid making the code changes, you can change that setting in the **Language** section of the C++ project properties to `No (/Zc:forScope-)`. However, keep in mind that `/Zc:forScope-` might be removed in a future release of Visual C++, so eventually your code will need to change to conform to the standard.
 
 These issues are relatively easy to fix, but depending on your code, it might affect a lot of code. Here's a typical issue.
 

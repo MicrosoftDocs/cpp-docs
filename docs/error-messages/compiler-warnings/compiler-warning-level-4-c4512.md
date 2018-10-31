@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4512 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4512"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4512"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4512"]
 ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4512
 

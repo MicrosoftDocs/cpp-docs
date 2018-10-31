@@ -1,15 +1,8 @@
 ---
-title: "How to: Use combinable to Combine Sets | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use combinable to Combine Sets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["combinable class, example", "combining sets with combinable [Concurrency Runtime]"]
 ms.assetid: 66ffe8e3-6bbb-4e9f-b790-b612922a68a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use combinable to Combine Sets
 

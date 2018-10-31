@@ -1,15 +1,8 @@
 ---
-title: "Handling Windows Messages in Your Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Handling Windows Messages in Your Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], Windows messages", "Windows messages [MFC], handling", "message handling [MFC], in dialog boxes"]
 ms.assetid: 4af0c9cb-09da-4b15-97df-a1cfb89def79
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handling Windows Messages in Your Dialog Box
 

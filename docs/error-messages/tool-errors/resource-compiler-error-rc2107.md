@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2107 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2107"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2107"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2107"]
 ms.assetid: f1786128-aa86-4cdb-a095-05a0b66b5608
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2107
 

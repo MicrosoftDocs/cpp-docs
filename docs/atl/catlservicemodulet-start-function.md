@@ -1,16 +1,9 @@
 ---
-title: "CAtlServiceModuleT::Start Function | Microsoft Docs"
-ms.custom: ""
+title: "CAtlServiceModuleT::Start Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["CServiceModule.Start", "CServiceModule::Start"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Start method"]
 ms.assetid: b5193a23-41bc-42d2-8d55-3eb43dc62238
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlServiceModuleT::Start Function
 

@@ -1,16 +1,10 @@
 ---
-title: "ML Fatal Error A1007 | Microsoft Docs"
-ms.custom: ""
+title: "ML Fatal Error A1007"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A1007"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A1007"]
 ms.assetid: bcf9c826-beb3-4e93-91fe-1ffd34995fbf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Fatal Error A1007
 

@@ -1,8 +1,6 @@
 ---
-title: "&lt;new&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;new&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["new/std::nothrow", "new/std::set_new_handler"]
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
 ---

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4867 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4867"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4867"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4867"]
 ms.assetid: 8a257d70-c3a7-462d-b285-e57c952a8bf7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4867
 

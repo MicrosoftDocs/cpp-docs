@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1075 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1075"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1075"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1075"]
 ms.assetid: 69a74e3d-b53f-4526-a440-2c94e6403355
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1075
 

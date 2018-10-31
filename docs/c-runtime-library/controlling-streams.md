@@ -1,16 +1,9 @@
 ---
-title: "Controlling Streams | Microsoft Docs"
-ms.custom: ""
+title: "Controlling Streams"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["Controlling Streams"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["streams, controlling", "controlling streams", "streams"]
 ms.assetid: 267e9013-9afc-45f6-91e3-ca093230d9d9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Controlling Streams
 

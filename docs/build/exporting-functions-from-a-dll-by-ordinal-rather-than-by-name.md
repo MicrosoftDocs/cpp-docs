@@ -1,16 +1,9 @@
 ---
-title: "Exporting Functions from a DLL by Ordinal Rather Than by Name | Microsoft Docs"
-ms.custom: ""
+title: "Exporting Functions from a DLL by Ordinal Rather Than by Name"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["NONAME"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exporting functions [C++], ordinal values", "ordinal exports [C++]", "exporting DLLs [C++], ordinal values", "NONAME attribute"]
 ms.assetid: 679719fd-d965-4df3-9f7a-7d86ad831702
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Exporting Functions from a DLL by Ordinal Rather Than by Name
 

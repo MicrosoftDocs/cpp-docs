@@ -1,16 +1,9 @@
 ---
-title: "-MANIFESTUAC (Embeds UAC information in manifest) | Microsoft Docs"
-ms.custom: ""
+title: "/MANIFESTUAC (Embeds UAC information in manifest)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.UACUIAccess", "VC.Project.VCLinkerTool.UACExecutionLevel", "VC.Project.VCLinkerTool.EnableUAC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/MANIFESTUAC linker option", "MANIFESTUAC linker option", "-MANIFESTUAC linker option"]
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MANIFESTUAC (Embeds UAC information in manifest)
 

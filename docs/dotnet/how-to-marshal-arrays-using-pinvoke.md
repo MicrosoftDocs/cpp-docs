@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Arrays Using PInvoke | Microsoft Docs"
+title: "How to: Marshal Arrays Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["marshaling [C++], arrays", "platform invoke [C++], arrays", "interop [C++], arrays", "data marshaling [C++], arrays"]
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Arrays Using PInvoke
 

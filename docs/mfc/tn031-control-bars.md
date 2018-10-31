@@ -1,16 +1,9 @@
 ---
-title: "TN031: Control Bars | Microsoft Docs"
-ms.custom: ""
+title: "TN031: Control Bars"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.controls.bars"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["control bars [MFC], styles", "CStatusBar class [MFC], Tech Note 31 usage", "CControlBar class [MFC], Tech Note 31 usage", "CControlBar class [MFC], deriving from", "control bars [MFC], classes [MFC]", "CDialogBar class [MFC], Tech Note 31 usage", "CToolBar class [MFC], Tech Note 31 usage", "TN031", "styles [MFC], control bars"]
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN031: Control Bars
 

@@ -1,8 +1,6 @@
 ---
-title: "&lt;streambuf&gt; typedefs | Microsoft Docs"
-ms.custom: ""
+title: "&lt;streambuf&gt; typedefs"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["iosfwd/std::streambuf", "iosfwd/std::wstreambuf"]
 ms.assetid: 2678e18f-f0f0-4995-bc53-f1bc7dfc4ec6
 ---

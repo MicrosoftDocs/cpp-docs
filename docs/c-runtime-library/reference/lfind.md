@@ -1,19 +1,12 @@
 ---
-title: "_lfind | Microsoft Docs"
-ms.custom: ""
+title: "_lfind"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_lfind"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["lfind", "_lfind"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["linear searching", "lfind function", "arrays [CRT], searching", "searching, linear", "finding keys in arrays", "_lfind function"]
 ms.assetid: a40ece70-1674-4b75-94bd-9f57cfff18f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _lfind
 

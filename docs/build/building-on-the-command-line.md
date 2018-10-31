@@ -1,15 +1,9 @@
 ---
-title: "Build C/C++ Code on the Command Line | Microsoft Docs"
+title: "Build C/C++ Code on the Command Line"
 ms.custom: "conceptual"
 ms.date: "06/21/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Build C/C++ code on the command line
 

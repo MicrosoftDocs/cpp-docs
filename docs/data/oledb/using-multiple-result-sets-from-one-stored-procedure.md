@@ -1,15 +1,8 @@
 ---
-title: "Using Multiple Result Sets from One Stored Procedure | Microsoft Docs"
-ms.custom: ""
+title: "Using Multiple Result Sets from One Stored Procedure"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["stored procedures, returning result sets", "multiple result sets"]
 ms.assetid: c450c12c-a76c-4ae4-9675-071a41eeac05
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Multiple Result Sets from One Stored Procedure
 

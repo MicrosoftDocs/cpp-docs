@@ -1,16 +1,10 @@
 ---
-title: "ImplementsBase Structure | Microsoft Docs"
-ms.custom: ""
+title: "ImplementsBase Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ImplementsBase"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ImplementsBase structure"]
 ms.assetid: f898eb17-136d-4c87-b3ea-771319314641
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ImplementsBase Structure
 

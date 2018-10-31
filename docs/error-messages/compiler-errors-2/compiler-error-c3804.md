@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3804 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3804"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3804"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3804"]
 ms.assetid: 7c4cda28-ec96-4d04-937b-36dbd9944722
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3804
 

@@ -1,15 +1,8 @@
 ---
-title: "Blocks | Microsoft Docs"
-ms.custom: ""
+title: "Blocks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function definitions, blocks in code", "blocks", "compound statements", "statements, compound"]
 ms.assetid: be231a92-c712-464e-ae25-a4becb20f7f5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Blocks
 

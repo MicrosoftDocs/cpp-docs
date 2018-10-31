@@ -1,16 +1,9 @@
 ---
-title: "_ReadBarrier | Microsoft Docs"
-ms.custom: ""
+title: "_ReadBarrier"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_ReadBarrier"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ReadBarrier intrinsic"]
 ms.assetid: f9e54a92-61bc-4f55-8195-b8932065a796
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _ReadBarrier
 

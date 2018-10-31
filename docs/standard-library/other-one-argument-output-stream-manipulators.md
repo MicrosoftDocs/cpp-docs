@@ -1,15 +1,8 @@
 ---
-title: "Other One-Argument Output Stream Manipulators | Microsoft Docs"
-ms.custom: ""
+title: "Other One-Argument Output Stream Manipulators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["output streams, one-argument manipulators"]
 ms.assetid: e381dee8-6b16-4cef-805a-4a6a1d2b696b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Other One-Argument Output Stream Manipulators
 

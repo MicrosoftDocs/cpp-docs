@@ -1,19 +1,12 @@
 ---
-title: "_aligned_realloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_realloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_realloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["aligned_realloc_dbg", "_aligned_realloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_aligned_realloc_dbg function", "aligned_realloc_dbg function"]
 ms.assetid: 8aede920-991e-44cd-867f-83dc2165db47
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_realloc_dbg
 

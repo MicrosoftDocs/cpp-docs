@@ -1,15 +1,8 @@
 ---
-title: "Input-Output Streams | Microsoft Docs"
-ms.custom: ""
+title: "Input-Output Streams"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["I/O [C++], stream", "stream I/O"]
 ms.assetid: 21a97566-91a7-42d6-b2f8-a4c16bc926f1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Input/Output Streams
 

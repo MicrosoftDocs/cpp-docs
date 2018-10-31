@@ -1,15 +1,8 @@
 ---
-title: "Implementation-Defined Behavior | Microsoft Docs"
-ms.custom: ""
+title: "Implementation-Defined Behavior"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C, portability of Microsoft C", "portability [C++], Microsoft C to ANSI C", "ANSI [C++], C standard", "implementation-defined behavior"]
 ms.assetid: c9f50670-23cb-401f-8ad7-136972012eb9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementation-Defined Behavior
 

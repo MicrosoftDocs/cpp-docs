@@ -1,19 +1,12 @@
 ---
-title: "strtol, wcstol, _strtol_l, _wcstol_l | Microsoft Docs"
-ms.custom: ""
+title: "strtol, wcstol, _strtol_l, _wcstol_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["strtol", "wcstol", "_strtol_l", "_wcstol_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wcstol_l", "strtol", "_tcstol", "wcstol", "_strtol_l", "_tcstol_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wcstol function", "wcstol_l function", "_tcstol function", "string conversion, to integers", "tcstol function", "strtol_l function", "_wcstol_l function", "_strtol_l function", "strtol function"]
 ms.assetid: 1787c96a-f283-4a83-9325-33cfc1c7e240
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strtol, wcstol, _strtol_l, _wcstol_l
 

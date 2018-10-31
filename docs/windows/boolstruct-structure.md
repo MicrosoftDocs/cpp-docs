@@ -1,16 +1,10 @@
 ---
-title: "BoolStruct Structure | Microsoft Docs"
-ms.custom: ""
+title: "BoolStruct Structure"
 ms.date: "09/21/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::BoolStruct", "internal/Microsoft::WRL::Details::BoolStruct::Member"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft::WRL::Details::BoolStruct structure", "Microsoft::WRL::Details::BoolStruct::Member data member"]
 ms.assetid: 666eae78-e81d-4fb7-a9e4-1ba617d6d4cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # BoolStruct Structure
 

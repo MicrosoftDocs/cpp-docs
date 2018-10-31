@@ -1,16 +1,9 @@
 ---
-title: "Scheduler Class | Microsoft Docs"
-ms.custom: ""
+title: "Scheduler Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["Scheduler", "CONCRT/concurrency::Scheduler", "CONCRT/concurrency::Scheduler::Scheduler", "CONCRT/concurrency::Scheduler::Attach", "CONCRT/concurrency::Scheduler::Create", "CONCRT/concurrency::Scheduler::CreateScheduleGroup", "CONCRT/concurrency::Scheduler::GetNumberOfVirtualProcessors", "CONCRT/concurrency::Scheduler::GetPolicy", "CONCRT/concurrency::Scheduler::Id", "CONCRT/concurrency::Scheduler::IsAvailableLocation", "CONCRT/concurrency::Scheduler::Reference", "CONCRT/concurrency::Scheduler::RegisterShutdownEvent", "CONCRT/concurrency::Scheduler::Release", "CONCRT/concurrency::Scheduler::ResetDefaultSchedulerPolicy", "CONCRT/concurrency::Scheduler::ScheduleTask", "CONCRT/concurrency::Scheduler::SetDefaultSchedulerPolicy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Scheduler class"]
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scheduler Class
 

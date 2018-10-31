@@ -1,15 +1,8 @@
 ---
-title: "C Constant Expressions | Microsoft Docs"
-ms.custom: ""
+title: "C Constant Expressions"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["constant expressions, syntax", "constant expressions", "expressions [C++], constant"]
 ms.assetid: d48a6c47-e44c-4be2-9c8b-7944c7ef8de7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Constant Expressions
 

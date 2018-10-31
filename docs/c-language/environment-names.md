@@ -1,14 +1,7 @@
 ---
-title: "Environment Names | Microsoft Docs"
-ms.custom: ""
+title: "Environment Names"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 9af409a5-e724-465a-9a21-88d3586c2e92
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Environment Names
 

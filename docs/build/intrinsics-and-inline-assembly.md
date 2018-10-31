@@ -1,14 +1,7 @@
 ---
-title: "Intrinsics and Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Intrinsics and Inline Assembly"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 8affd4bb-279d-46f3-851f-8be0a9c5ed3f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Intrinsics and Inline Assembly
 

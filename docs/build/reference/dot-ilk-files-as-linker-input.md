@@ -1,15 +1,8 @@
 ---
-title: ".Ilk Files as Linker Input | Microsoft Docs"
-ms.custom: ""
+title: ".Ilk Files as Linker Input"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ILK files", ".ilk files"]
 ms.assetid: 7324c104-9e5d-423d-b268-b59f92607bf2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .Ilk Files as Linker Input
 

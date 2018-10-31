@@ -1,15 +1,8 @@
 ---
-title: "Compiler COM Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "Compiler COM Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, COM support", "COM, compiler support"]
 ms.assetid: 74449d26-50a2-47c7-b175-7cf2cf83533e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Compiler COM Global Functions
 

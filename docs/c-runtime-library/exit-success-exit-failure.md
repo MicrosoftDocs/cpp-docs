@@ -1,16 +1,9 @@
 ---
-title: "EXIT_SUCCESS, EXIT_FAILURE | Microsoft Docs"
-ms.custom: ""
+title: "EXIT_SUCCESS, EXIT_FAILURE"
 ms.date: "06/25/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["EXIT_FAILURE", "EXIT_SUCCESS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EXIT_SUCCESS constant", "EXIT_FAILURE constant"]
 ms.assetid: ff2c82cb-c0bb-4556-a812-59aa278bfac5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EXIT_SUCCESS, EXIT_FAILURE
 

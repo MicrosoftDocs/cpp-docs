@@ -1,15 +1,8 @@
 ---
-title: "Include Files for Multithreading | Microsoft Docs"
-ms.custom: ""
+title: "Include Files for Multithreading"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["threading [C++], include files", "include files, multithreading", "multithreading [C++], include files"]
 ms.assetid: 98d764f9-71f4-4da5-8f3a-8d2d26e96799
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Include Files for Multithreading
 

@@ -1,15 +1,8 @@
 ---
-title: "Catalog Information  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Catalog Information  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tables [C++], catalog information", "tables [C++]", "ODBC [C++], catalog information", "catalog information database [C++]", "databases [C++], catalog information database"]
 ms.assetid: c184e80f-ff17-409f-9df8-05275080bb8d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Catalog Information  (MFC Data Access)
 

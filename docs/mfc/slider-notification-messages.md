@@ -1,15 +1,8 @@
 ---
-title: "Slider Notification Messages | Microsoft Docs"
-ms.custom: ""
+title: "Slider Notification Messages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSliderCtrl class [MFC], notifications", "slider controls [MFC], notification messages", "messages, notification", "notifications [MFC], CSliderCtrl"]
 ms.assetid: b9121104-3889-4a10-92bf-f3723f1af9d0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Slider Notification Messages
 

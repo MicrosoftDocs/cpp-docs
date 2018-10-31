@@ -1,15 +1,8 @@
 ---
-title: "Calling C++ Functions in Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Calling C++ Functions in Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++], calling in inline assembly", "function calls, C++ functions", "function calls, in inline assembly", "Visual C++, functions", "inline assembly, calling functions", "__asm keyword [C++], calling functions"]
 ms.assetid: 1f0d1eb3-54cf-45d5-838d-958188616b38
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Calling C++ Functions in Inline Assembly
 

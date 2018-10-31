@@ -1,14 +1,7 @@
 ---
-title: "-arch (ARM) | Microsoft Docs"
-ms.custom: ""
+title: "/arch (ARM)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 4f1406ff-f174-487c-a126-8ab06cf447c1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /arch (ARM)
 

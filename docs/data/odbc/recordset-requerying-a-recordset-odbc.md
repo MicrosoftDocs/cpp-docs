@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Requerying a Recordset (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Requerying a Recordset (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets, requerying", "requerying recordsets", "Requery method", "ODBC recordsets, requerying", "refreshing recordsets"]
 ms.assetid: 4ebc3b5b-5b91-4f51-a967-245223c6b8e1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Requerying a Recordset (ODBC)
 

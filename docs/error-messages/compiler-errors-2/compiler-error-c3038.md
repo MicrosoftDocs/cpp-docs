@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3038 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3038"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3038"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3038"]
 ms.assetid: 140ada3e-5636-43ef-a4ee-22a9f66a771f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3038
 

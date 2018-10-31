@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4717 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4717"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4717"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4717"]
 ms.assetid: 5ef3c6c7-8599-4714-a973-0f5b69cdab3c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4717
 

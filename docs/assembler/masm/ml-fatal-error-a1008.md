@@ -1,16 +1,10 @@
 ---
-title: "ML Fatal Error A1008 | Microsoft Docs"
-ms.custom: ""
+title: "ML Fatal Error A1008"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A1008"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A1008"]
 ms.assetid: fe592f9d-c37b-4cd8-a51d-e3c15ddcab83
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Fatal Error A1008
 

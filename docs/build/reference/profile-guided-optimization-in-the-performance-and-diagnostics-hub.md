@@ -1,14 +1,7 @@
 ---
-title: "Profile Guided Optimization in the Performance and Diagnostics Hub | Microsoft Docs"
-ms.custom: ""
+title: "Profile Guided Optimization in the Performance and Diagnostics Hub"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: dc3a1914-dbb6-4401-bc63-10665a8c8943
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Profile Guided Optimization in the Visual Studio 2013 Performance and Diagnostics Hub
 

@@ -1,15 +1,8 @@
 ---
-title: "How to: Open a Manifest Resource (C++) | Microsoft Docs"
-ms.custom: ""
+title: "How to: Open a Manifest Resource (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["manifest resources [C++]", "resources [C++], opening"]
 ms.assetid: bd6f9c47-2a1e-417d-9d2a-c1ad7d3b9635
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Open a Manifest Resource
 

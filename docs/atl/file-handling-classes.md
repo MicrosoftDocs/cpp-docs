@@ -1,15 +1,9 @@
 ---
-title: "File Handling Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "File Handling Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["file classes [C++]"]
 ms.assetid: 94355eb1-daa3-4825-b183-7392b3899561
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # File Handling Classes
 

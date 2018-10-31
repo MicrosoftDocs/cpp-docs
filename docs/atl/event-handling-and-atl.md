@@ -1,15 +1,8 @@
 ---
-title: "Event Handling and ATL | Microsoft Docs"
-ms.custom: ""
+title: "Event Handling and ATL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handling, about event handling"]
 ms.assetid: e4812b0d-6fdd-4e8c-bdb8-378a25c7bde2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Event Handling and ATL
 

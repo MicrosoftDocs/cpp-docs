@@ -1,15 +1,8 @@
 ---
-title: "Linker Support for Delay-Loaded DLLs | Microsoft Docs"
-ms.custom: ""
+title: "Linker Support for Delay-Loaded DLLs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["delayed loading of DLLs, linker support"]
 ms.assetid: b2d7e449-2809-42b1-9c90-2c0ca5e31a14
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Support for Delay-Loaded DLLs
 

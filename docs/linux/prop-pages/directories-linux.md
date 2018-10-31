@@ -1,14 +1,7 @@
 ---
-title: "VC++ Directories (Linux C++) | Microsoft Docs"
-ms.custom: ""
+title: "VC++ Directories (Linux C++)"
 ms.date: "9/26/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 12d45b93-0a5c-455e-b12a-9b9aad9a6d6c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 # VC++ Directories (Linux C++)
 

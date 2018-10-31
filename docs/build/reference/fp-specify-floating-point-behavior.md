@@ -1,16 +1,9 @@
 ---
-title: "-fp (Specify Floating-Point Behavior) | Microsoft Docs"
-ms.custom: ""
+title: "/fp (Specify Floating-Point Behavior)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.floatingPointModel", "VC.Project.VCCLWCECompilerTool.FloatingPointExceptions", "/fp", "VC.Project.VCCLWCECompilerTool.floatingPointModel", "VC.Project.VCCLCompilerTool.FloatingPointExceptions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-fp compiler option [C++]", "/fp compiler option [C++]"]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /fp (Specify Floating-Point Behavior)
 

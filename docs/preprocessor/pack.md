@@ -1,16 +1,9 @@
 ---
-title: "pack | Microsoft Docs"
-ms.custom: ""
+title: "pack"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["pack_CPP", "vc-pragma.pack"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, pack", "pack pragma"]
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # pack
 Specifies packing alignment for structure, union, and class members.

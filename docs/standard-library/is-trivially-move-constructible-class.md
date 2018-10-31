@@ -1,16 +1,9 @@
 ---
-title: "is_trivially_move_constructible Class | Microsoft Docs"
-ms.custom: ""
+title: "is_trivially_move_constructible Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_trivially_move_constructible"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_move_constructible"]
 ms.assetid: 740bdec7-65e5-47b3-b94f-a2479ceac3ec
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_trivially_move_constructible Class
 

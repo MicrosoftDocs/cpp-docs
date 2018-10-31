@@ -1,16 +1,9 @@
 ---
-title: "displaybind (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "displaybind (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.displaybind"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["displaybind attribute"]
 ms.assetid: b3d70396-78e4-43d9-9583-16ddb8c9bb1f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # displaybind
 

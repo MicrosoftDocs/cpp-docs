@@ -1,19 +1,12 @@
 ---
-title: "memcpy_s, wmemcpy_s | Microsoft Docs"
-ms.custom: ""
+title: "memcpy_s, wmemcpy_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["memcpy_s", "wmemcpy_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wmemcpy_s", "memcpy_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memcpy_s function", "wmemcpy_s function"]
 ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # memcpy_s, wmemcpy_s
 

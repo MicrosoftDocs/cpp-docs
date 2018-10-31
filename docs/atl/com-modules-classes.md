@@ -1,16 +1,10 @@
 ---
-title: "COM Modules Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "COM Modules Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.atl.COM"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM modules classes"]
 ms.assetid: 0a8a82dd-a153-47cd-9bbe-1a1ad5d1a6ff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COM Modules Classes
 

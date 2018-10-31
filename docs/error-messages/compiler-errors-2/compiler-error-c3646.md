@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3646 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3646"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3646"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3646"]
 ms.assetid: 4391ead2-9637-4ca3-aeda-5a991b18d66d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3646
 

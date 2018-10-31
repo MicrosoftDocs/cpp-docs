@@ -1,15 +1,8 @@
 ---
-title: "Exception Handling in Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "Exception Handling in Visual C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["try-catch keyword [C++], exception handling"]
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exception Handling in Visual C++
 

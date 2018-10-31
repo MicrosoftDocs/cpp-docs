@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6019 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6019"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6019"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6019"]
 ms.assetid: 8129923e-7db2-40ee-9602-def9365f8d28
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6019
 

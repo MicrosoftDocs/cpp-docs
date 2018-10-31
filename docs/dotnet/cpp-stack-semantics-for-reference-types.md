@@ -1,15 +1,8 @@
 ---
-title: "C++ Stack Semantics for Reference Types | Microsoft Docs"
-ms.custom: ""
+title: "C++ Stack Semantics for Reference Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["reference types, C++ stack semantics for"]
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # C++ Stack Semantics for Reference Types
 

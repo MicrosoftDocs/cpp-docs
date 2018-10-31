@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3458 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3458"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3458"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3458"]
 ms.assetid: 940202fd-8dcc-4042-9c96-3f9e9127d2f1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3458
 

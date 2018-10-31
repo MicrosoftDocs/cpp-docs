@@ -1,16 +1,9 @@
 ---
-title: "ALIAS (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "ALIAS (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["Alias"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ALIAS directive"]
 ms.assetid: d9725c49-58de-41da-ab01-b06a56cf5cf2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ALIAS (MASM)
 

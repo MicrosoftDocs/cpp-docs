@@ -1,25 +1,20 @@
 ---
-title: "Configure a Linux CMake project in Visual Studio | Microsoft Docs"
+title: "Configure a Linux CMake project in Visual Studio"
 description: "How to configure a Linux CMake project in Visual Studio"
-ms.custom: ""
-ms.date: "10/26/2018"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
+ms.date: "11/01/2018"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 
 # Configure a Linux CMake project
 
 **Visual Studio 2017 version 15.4 and later**<br/>
-When you install the Linux C++ workload for Visual Studio, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio. Visual Studio does not modify the CMakeLists.txt files, so that others working on the same project can continue to use whatever tools they are already using. Local configuration and debugging settings are stored in JSON files that can optionally be shared with others who are using Visual Studio.
+When you install the Linux C++ workload for Visual Studio, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio. For example, you can edit, debug and profile your code on Windows using Visual Studio, then quickly retarget the project for Linux to do further testing. 
 
-This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
+When you open a folder that contains a CMake project, Visual Studio uses the metadata that CMake produces to configure IntelliSense and builds automatically. Local configuration and debugging settings are stored in JSON files that can optionally be shared with others who are using Visual Studio. 
+
+Visual Studio does not modify the CMakeLists.txt files or the original CMake cache, so that others working on the same project can continue to use whatever tools they are already using.  
+
+This topic assumes you have read [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 > [!NOTE]
 > The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).

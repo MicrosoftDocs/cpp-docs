@@ -1,19 +1,12 @@
 ---
-title: "copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl | Microsoft Docs"
-ms.custom: ""
+title: "copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["copysignf", "copysignl", "_copysignl", "_copysign", "_copysignf", "copysign"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_copysignl", "copysign", "copysignf", "_copysign", "copysignl", "_copysignf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["copysignl function", "_copysignl function", "copysign function", "_copysignf function", "_copysign function", "copysignf function"]
 ms.assetid: 009216d6-72a2-402d-aa6c-91d924b2c9e4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
 

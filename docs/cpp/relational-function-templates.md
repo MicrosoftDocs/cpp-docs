@@ -1,15 +1,8 @@
 ---
-title: "Relational Function Templates | Microsoft Docs"
-ms.custom: ""
+title: "Relational Function Templates"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["relational function templates"]
 ms.assetid: 57893a51-9adb-41fc-941d-2ca97687db2a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Relational Function Templates
 

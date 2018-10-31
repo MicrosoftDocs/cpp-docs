@@ -1,14 +1,7 @@
 ---
-title: "3. Run-time Library Functions | Microsoft Docs"
-ms.custom: ""
+title: "3. Run-time Library Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 3. Run-time Library Functions
 

@@ -1,16 +1,9 @@
 ---
-title: ".ENDPROLOG | Microsoft Docs"
-ms.custom: ""
+title: ".ENDPROLOG"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".ENDPROLOG"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".ENDPROLOG directive"]
 ms.assetid: 61a2474c-9527-46e6-9f9d-bc4b42c10f35
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .ENDPROLOG
 

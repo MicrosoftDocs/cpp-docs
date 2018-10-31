@@ -1,15 +1,8 @@
 ---
-title: "Linker Tools Errors and Warnings | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Errors and Warnings"
 ms.date: "11/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["errors [C++]", "linker [C++], errors and warnings", "errors [C++], linker"]
 ms.assetid: d4b12c0f-4dae-48b2-9b9e-fedf94c94cb0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Errors and Warnings
 

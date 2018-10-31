@@ -1,15 +1,8 @@
 ---
-title: "Compiler Limits | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Limits"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, limits for language constructs"]
 ms.assetid: f1fa59c6-55b4-414b-80c5-3df72952160d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Limits
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4129 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4129"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4129"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4129"]
 ms.assetid: a4190c64-4bfb-48fd-8e98-52720bc0d878
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4129
 

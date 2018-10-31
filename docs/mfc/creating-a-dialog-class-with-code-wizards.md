@@ -1,15 +1,8 @@
 ---
-title: "Creating a Dialog Class with Code Wizards | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Dialog Class with Code Wizards"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [MFC], creating", "MFC dialog boxes, creating", "code wizards", "dialog classes [MFC], creating"]
 ms.assetid: a7157b9d-f1a8-4381-a4cf-180cd2c7f1b2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a Dialog Class with Code Wizards
 

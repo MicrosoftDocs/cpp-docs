@@ -1,15 +1,8 @@
 ---
-title: "Tabs and Tab Control Attributes | Microsoft Docs"
-ms.custom: ""
+title: "Tabs and Tab Control Attributes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [MFC], reference topics", "tab controls [MFC], attributes", "tabs [MFC]", "tabs [MFC], attributes", "CTabCtrl class [MFC], tab control attributes"]
 ms.assetid: ecf190cb-f323-4751-bfdb-766dbe6bb553
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tabs and Tab Control Attributes
 

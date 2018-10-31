@@ -1,16 +1,9 @@
 ---
-title: "CTypedPtrMap Class | Microsoft Docs"
-ms.custom: ""
+title: "CTypedPtrMap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTypedPtrMap", "AFXTEMPL/CTypedPtrMap", "AFXTEMPL/CTypedPtrMap::GetNextAssoc", "AFXTEMPL/CTypedPtrMap::Lookup", "AFXTEMPL/CTypedPtrMap::RemoveKey", "AFXTEMPL/CTypedPtrMap::SetAt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTypedPtrMap [MFC], GetNextAssoc", "CTypedPtrMap [MFC], Lookup", "CTypedPtrMap [MFC], RemoveKey", "CTypedPtrMap [MFC], SetAt"]
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTypedPtrMap Class
 

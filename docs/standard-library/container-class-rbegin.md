@@ -1,15 +1,8 @@
 ---
-title: "Container Class::rbegin | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::rbegin"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rbegin method"]
 ms.assetid: c1f0d60c-93aa-4313-81b9-04e3f9c796c2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::rbegin
 

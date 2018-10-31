@@ -1,15 +1,8 @@
 ---
-title: "Using a Common Control as a Child Window | Microsoft Docs"
-ms.custom: ""
+title: "Using a Common Control as a Child Window"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [MFC], using as child windows", "windows [MFC], common controls as", "child windows [MFC], common controls as", "common controls [MFC], child windows", "Windows common controls [MFC], child windows"]
 ms.assetid: 608f7d47-7854-4fce-bde9-856c51e76753
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using a Common Control as a Child Window
 

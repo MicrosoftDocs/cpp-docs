@@ -1,22 +1,15 @@
 ---
-title: "Containers for ActiveX Controls | Microsoft Docs"
-ms.custom: ""
+title: "Containers for ActiveX Controls"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX control containers [MFC], application support"]
 ms.assetid: 5ff0bf37-07f4-49aa-ad9c-c63d3756243a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers for ActiveX Controls
 
 You can use ActiveX controls developed in Visual C++ in other applications, as long as they support ActiveX control containment. A number of Microsoft applications, beginning with the versions listed, support ActiveX control containment.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 > [!NOTE]
 >  The following list is not a complete list of applications that support ActiveX controls but represents the set used most often in testing:

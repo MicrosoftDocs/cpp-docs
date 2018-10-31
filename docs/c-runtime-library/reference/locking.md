@@ -1,19 +1,12 @@
 ---
-title: "_locking | Microsoft Docs"
-ms.custom: ""
+title: "_locking"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_locking"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_locking"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["locking function", "bytes [C++], locking file", "files [C++], locking bytes", "files [C++], locking", "_locking function"]
 ms.assetid: 099aaac1-d4ca-4827-aed6-24dff9844150
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _locking
 

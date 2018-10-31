@@ -1,16 +1,9 @@
 ---
-title: "MFC ODBC Consumer Wizard | Microsoft Docs"
-ms.custom: ""
+title: "MFC ODBC Consumer Wizard"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.mfc.consumer.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ODBC Consumer Wizard", "wizards [MFC]"]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ODBC Consumer Wizard
 

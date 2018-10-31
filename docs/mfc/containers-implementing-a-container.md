@@ -1,15 +1,8 @@
 ---
-title: "Containers: Implementing a Container | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Implementing a Container"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [OLE], OLE container", "OLE containers [MFC], implementing"]
 ms.assetid: af1e2079-619a-4eac-9327-985ad875823a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Implementing a Container
 

@@ -1,16 +1,9 @@
 ---
-title: "-Qfast_transcendentals (Force Fast Transcendentals) | Microsoft Docs"
-ms.custom: ""
+title: "/Qfast_transcendentals (Force Fast Transcendentals)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Qfast_transcendentals"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Qfast_transcendentals", "Force Fast Transcendentals"]
 ms.assetid: 4de24bd1-38e6-49d4-9a05-04c9937d24ac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Qfast_transcendentals (Force Fast Transcendentals)
 

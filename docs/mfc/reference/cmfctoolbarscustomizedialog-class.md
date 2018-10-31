@@ -1,16 +1,9 @@
 ---
-title: "CMFCToolBarsCustomizeDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCToolBarsCustomizeDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillAllCommandsList", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillCategoriesComboBox", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillCategoriesListBox", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetCommandName", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetCountInCategory", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetFlags", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::OnInitDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::PostNcDestroy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarsCustomizeDialog [MFC], CMFCToolBarsCustomizeDialog", "CMFCToolBarsCustomizeDialog [MFC], FillAllCommandsList", "CMFCToolBarsCustomizeDialog [MFC], FillCategoriesComboBox", "CMFCToolBarsCustomizeDialog [MFC], FillCategoriesListBox", "CMFCToolBarsCustomizeDialog [MFC], GetCommandName", "CMFCToolBarsCustomizeDialog [MFC], GetCountInCategory", "CMFCToolBarsCustomizeDialog [MFC], GetFlags", "CMFCToolBarsCustomizeDialog [MFC], OnInitDialog", "CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy"]
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarsCustomizeDialog Class
 

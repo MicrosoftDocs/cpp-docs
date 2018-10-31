@@ -1,15 +1,8 @@
 ---
-title: "Migrating from OpenMP to the Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "Migrating from OpenMP to the Concurrency Runtime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, migrating from OpenMP", "OpenMP, migrating to the Concurrency Runtime"]
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Migrating from OpenMP to the Concurrency Runtime
 

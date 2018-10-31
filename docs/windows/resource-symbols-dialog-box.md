@@ -1,16 +1,9 @@
 ---
-title: "Resource Symbols Dialog Box (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Resource Symbols Dialog Box (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resourcesymbols"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["New Symbol dialog box [C++]", "Resource Symbols dialog box [C++]", "Change Symbol dialog box [C++]"]
 ms.assetid: 9706cde3-1f48-4fcd-bedb-2b03b455e3c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Resource Symbols Dialog Box (C++)
 

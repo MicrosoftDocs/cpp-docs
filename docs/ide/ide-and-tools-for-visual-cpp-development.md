@@ -1,16 +1,9 @@
 ---
-title: "IDE and Tools for Visual C++ Development | Microsoft Docs"
+title: "IDE and Tools for Visual C++ Development"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
-ms.custom: ""
 ms.date: "09/27/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, development tools"]
 ms.assetid: 56eabafb-1956-4f0f-bec5-29b887763559
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IDE and Compiler Tools for Visual C++ Development
 
@@ -41,7 +34,7 @@ Source control enables you to coordinate work among multiple developers, isolate
 
 ![Team Explorer](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
 
-For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
+For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
 
 ## Create user interfaces with designers
 

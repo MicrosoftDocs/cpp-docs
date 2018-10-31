@@ -1,19 +1,12 @@
 ---
-title: "_spawnvpe, _wspawnvpe | Microsoft Docs"
-ms.custom: ""
+title: "_spawnvpe, _wspawnvpe"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_spawnvpe", "_wspawnvpe"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_spawnvpe", "wspawnvpe", "spawnvpe", "_wspawnvpe"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_wspawnvpe function", "processes, creating", "_spawnvpe function", "processes, executing new", "wspawnvpe function", "process creation", "spawnvpe function"]
 ms.assetid: 3db6394e-a955-4837-97a1-fab1db1e6092
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _spawnvpe, _wspawnvpe
 

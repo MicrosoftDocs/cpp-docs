@@ -1,15 +1,8 @@
 ---
-title: "MDI Tabbed Groups | Microsoft Docs"
-ms.custom: ""
+title: "MDI Tabbed Groups"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["mdi [MFC], tabbed groups", "tabbed grous [MFC]"]
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MDI Tabbed Groups
 

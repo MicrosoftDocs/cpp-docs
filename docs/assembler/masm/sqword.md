@@ -1,16 +1,9 @@
 ---
-title: "SQWORD | Microsoft Docs"
-ms.custom: ""
+title: "SQWORD"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["SQWORD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SQWORD directive"]
 ms.assetid: 329245f1-af34-4540-a912-73e9045c47fa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # SQWORD
 

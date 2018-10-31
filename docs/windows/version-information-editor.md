@@ -1,16 +1,9 @@
 ---
-title: "Version Information Editor (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Version Information Editor (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version.F1"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Version Information editor [C++], about Version Information editor", "editors, Version Information", "resource editors [C++], Version Information editor"]
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Version Information Editor (C++)
 

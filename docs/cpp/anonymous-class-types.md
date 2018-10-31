@@ -1,15 +1,8 @@
 ---
-title: "Anonymous Class Types | Microsoft Docs"
-ms.custom: ""
+title: "Anonymous Class Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["class types [C++], anonymous", "anonymous class types"]
 ms.assetid: 9ba667b2-8c2a-4c29-82a6-fa120b9233c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Anonymous Class Types
 

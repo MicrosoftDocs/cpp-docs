@@ -1,15 +1,8 @@
 ---
-title: "Deploy an App By Using the Redistributable Package (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Deploy an App By Using the Redistributable Package (C++)"
 ms.date: "09/17/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4835 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4835"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4835"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4835"]
 ms.assetid: d2e44c62-7b0e-4a45-943d-97903e27ed9d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4835
 

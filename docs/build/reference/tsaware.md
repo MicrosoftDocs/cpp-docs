@@ -1,16 +1,9 @@
 ---
-title: "-TSAWARE | Microsoft Docs"
-ms.custom: ""
+title: "/TSAWARE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/tsaware"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-TSAWARE editbin option", "/TSAWARE editbin option", "TSAWARE editbin option"]
 ms.assetid: 84715050-c907-4118-8cff-2973411ae931
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /TSAWARE
 

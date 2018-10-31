@@ -1,16 +1,9 @@
 ---
-title: "SUBSTR | Microsoft Docs"
-ms.custom: ""
+title: "SUBSTR"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["substr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SUBSTR directive"]
 ms.assetid: d1aa9a7d-a03a-4213-93ad-ee92635fd58a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # SUBSTR
 

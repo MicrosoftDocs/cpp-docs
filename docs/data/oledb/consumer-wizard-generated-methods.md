@@ -1,15 +1,8 @@
 ---
-title: "Consumer Wizard-Generated Methods | Microsoft Docs"
-ms.custom: ""
+title: "Consumer Wizard-Generated Methods"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OpenAll method", "attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "methods [C++], OLE DB Consumer Wizard-generated", "CloseDataSource method", "consumer wizard-generated classes and methods", "OpenDataSource method", "CloseAll method", "OpenRowset method", "GetRowsetProperties method"]
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Consumer Wizard-Generated Methods
 

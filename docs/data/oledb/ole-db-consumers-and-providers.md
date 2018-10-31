@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Consumers and Providers | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Consumers and Providers"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, OLE DB data architecture", "OLE DB providers", "OLE DB consumers, OLE DB data architecture", "OLE DB consumers", "OLE DB, data model"]
 ms.assetid: 886cb39d-652b-4557-93f0-4b1b0754d8bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumers and Providers
 

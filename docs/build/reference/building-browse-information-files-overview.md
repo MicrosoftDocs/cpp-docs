@@ -1,15 +1,8 @@
 ---
-title: "Building Browse Information Files: Overview | Microsoft Docs"
-ms.custom: ""
+title: "Building Browse Information Files: Overview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: [".bsc files, about .bsc files", "bsc files, about bsc files", "browse information files (.bsc)", "browse information files (.bsc), creating"]
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Building Browse Information Files: Overview
 

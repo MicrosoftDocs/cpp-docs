@@ -1,15 +1,8 @@
 ---
-title: "Container Class::reverse_iterator | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::reverse_iterator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["reverse_iterator method"]
 ms.assetid: 1d190c41-56b1-462e-b564-793b2a883c26
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::reverse_iterator
 

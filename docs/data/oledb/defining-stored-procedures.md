@@ -1,15 +1,8 @@
 ---
-title: "Defining Stored Procedures | Microsoft Docs"
-ms.custom: ""
+title: "Defining Stored Procedures"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["stored procedures, syntax", "OLE DB, stored procedures", "stored procedures, defining", "stored procedures, OLE DB"]
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Defining Stored Procedures
 

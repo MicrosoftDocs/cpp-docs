@@ -1,16 +1,9 @@
 ---
-title: "&lt;scoped_allocator&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;scoped_allocator&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<scoped_allocator>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["scoped_allocator Header"]
 ms.assetid: d20175b8-96be-4896-8141-3faba45e0005
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;scoped_allocator&gt;
 

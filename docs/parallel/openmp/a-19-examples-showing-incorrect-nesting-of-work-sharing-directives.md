@@ -1,14 +1,7 @@
 ---
-title: "A.19   Examples Showing Incorrect Nesting of Work-sharing Directives | Microsoft Docs"
-ms.custom: ""
+title: "A.19   Examples Showing Incorrect Nesting of Work-sharing Directives"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 906e900d-9259-44d6-a095-c1ba9135d269
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # A.19   Examples Showing Incorrect Nesting of Work-sharing Directives
 

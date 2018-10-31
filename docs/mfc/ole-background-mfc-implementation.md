@@ -1,16 +1,9 @@
 ---
-title: "OLE Background: MFC Implementation | Microsoft Docs"
-ms.custom: ""
+title: "OLE Background: MFC Implementation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["IMarshall", "IMoniker"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC libraries, implementing", "OLE MFC library implementation", "OLE IMarshal interface", "IMoniker interface, MFC", "IMarshall class [MFC]", "OLE, compound files", "OLE IMoniker interface", "OLE IUnknown"]
 ms.assetid: 2b67016a-d78e-4d60-925f-c28ec8fb6180
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Background: MFC Implementation
 

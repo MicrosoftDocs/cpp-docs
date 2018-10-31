@@ -1,15 +1,8 @@
 ---
-title: "How User Account Control (UAC) Affects Your Application | Microsoft Docs"
-ms.custom: ""
+title: "How User Account Control (UAC) Affects Your Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["UAC [C++]", "security [C++], User Account Control", "user accounts [C++]", "User Account Control [C++]"]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How User Account Control (UAC) Affects Your Application
 

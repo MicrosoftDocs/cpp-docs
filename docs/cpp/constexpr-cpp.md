@@ -1,15 +1,8 @@
 ---
-title: "constexpr (C++) | Microsoft Docs"
-ms.custom: ""
+title: "constexpr (C++)"
 ms.date: "04/06/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["constexpr_cpp"]
-dev_langs: ["C++"]
 ms.assetid: c6458ccb-51c6-4a16-aa61-f69e6f4e04f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # constexpr (C++)
 

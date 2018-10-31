@@ -1,16 +1,9 @@
 ---
-title: "accelerator_view Class | Microsoft Docs"
-ms.custom: ""
+title: "accelerator_view Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["accelerator_view", "AMPRT/accelerator_view", "AMPRT/Concurrency::accelerator_view:accelerator_view", "AMPRT/Concurrency::accelerator_view:create_marker", "AMPRT/Concurrency::accelerator_view:flush", "AMPRT/Concurrency::accelerator_view:get_accelerator", "AMPRT/Concurrency::accelerator_view:get_is_auto_selection", "AMPRT/Concurrency::accelerator_view:get_is_debug", "AMPRT/Concurrency::accelerator_view:get_queuing_mode", "AMPRT/Concurrency::accelerator_view:get_version", "AMPRT/Concurrency::accelerator_view:wait", "AMPRT/Concurrency::accelerator_view:accelerator", "AMPRT/Concurrency::accelerator_view:is_auto_selection", "AMPRT/Concurrency::accelerator_view:is_debug", "AMPRT/Concurrency::accelerator_view:queuing_mode", "AMPRT/Concurrency::accelerator_view:version"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator_view class"]
 ms.assetid: 9f298c21-bf62-46e0-88b8-01c5c78ef144
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # accelerator_view Class
 

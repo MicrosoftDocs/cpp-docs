@@ -1,14 +1,7 @@
 ---
-title: "x64 (amd64) Intrinsics List | Microsoft Docs"
-ms.custom: ""
+title: "x64 (amd64) Intrinsics List"
 ms.date: "06/01/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl-exe compiler, intrinsics", "intrinsics, x64", "intrinsics, amd64"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # x64 (amd64) Intrinsics List
 

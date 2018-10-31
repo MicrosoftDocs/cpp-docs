@@ -1,14 +1,7 @@
 ---
-title: "Stack Allocation | Microsoft Docs"
-ms.custom: ""
+title: "Stack Allocation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 098e51f2-eda6-40d0-b149-0b618aa48b47
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Stack Allocation
 

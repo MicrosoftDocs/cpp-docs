@@ -1,16 +1,9 @@
 ---
-title: "COleLinkingDoc Class | Microsoft Docs"
-ms.custom: ""
+title: "COleLinkingDoc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleLinkingDoc", "AFXOLE/COleLinkingDoc", "AFXOLE/COleLinkingDoc::COleLinkingDoc", "AFXOLE/COleLinkingDoc::Register", "AFXOLE/COleLinkingDoc::Revoke", "AFXOLE/COleLinkingDoc::OnFindEmbeddedItem", "AFXOLE/COleLinkingDoc::OnGetLinkedItem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleLinkingDoc [MFC], COleLinkingDoc", "COleLinkingDoc [MFC], Register", "COleLinkingDoc [MFC], Revoke", "COleLinkingDoc [MFC], OnFindEmbeddedItem", "COleLinkingDoc [MFC], OnGetLinkedItem"]
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleLinkingDoc Class
 

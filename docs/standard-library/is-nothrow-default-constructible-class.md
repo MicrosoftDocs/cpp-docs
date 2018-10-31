@@ -1,16 +1,9 @@
 ---
-title: "is_nothrow_default_constructible Class | Microsoft Docs"
-ms.custom: ""
+title: "is_nothrow_default_constructible Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_nothrow_default_constructible"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_nothrow_default_constructible"]
 ms.assetid: c576fcc9-5be1-43aa-b93a-64d3f1848887
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_nothrow_default_constructible Class
 

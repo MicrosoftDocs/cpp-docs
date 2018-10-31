@@ -1,14 +1,7 @@
 ---
-title: "Unprototyped Functions | Microsoft Docs"
-ms.custom: ""
+title: "Unprototyped Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 34200b8c-5b52-4f0d-aff8-9f70d82868ed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unprototyped Functions
 

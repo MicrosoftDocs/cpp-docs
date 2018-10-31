@@ -1,19 +1,12 @@
 ---
-title: "isnan, _isnan, _isnanf | Microsoft Docs"
-ms.custom: ""
+title: "isnan, _isnan, _isnanf"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_isnan", "_isnanf", "isnan"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_isnan", "isnan", "math/isnan", "math/_isnan", "math/_isnanf", "_isnanf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["NAN (not a number)", "_isnan function", "IEEE floating-point representation", "Not a Number (NANs)", "isnan function"]
 ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # isnan, _isnan, _isnanf
 

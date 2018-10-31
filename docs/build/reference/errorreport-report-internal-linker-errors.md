@@ -1,16 +1,9 @@
 ---
-title: "-ERRORREPORT (Report Internal Linker Errors) | Microsoft Docs"
-ms.custom: ""
+title: "/ERRORREPORT (Report Internal Linker Errors)"
 ms.date: "12/28/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/ERRORREPORT", "VC.Project.VCLinkerTool.ErrorReporting"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/ERRORREPORT linker option", "ERRORREPORT linker option", "-ERRORREPORT linker option"]
 ms.assetid: f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ERRORREPORT (Report Internal Linker Errors)
 

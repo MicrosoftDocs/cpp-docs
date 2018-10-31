@@ -1,16 +1,9 @@
 ---
-title: "fseek, _lseek Constants | Microsoft Docs"
-ms.custom: ""
+title: "fseek, _lseek Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["SEEK_END", "SEEK_SET", "SEEK_CUR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SEEK_SET constant", "SEEK_END constant", "SEEK_CUR constant"]
 ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fseek, _lseek Constants
 

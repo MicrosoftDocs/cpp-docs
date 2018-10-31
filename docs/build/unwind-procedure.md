@@ -1,14 +1,7 @@
 ---
-title: "Unwind Procedure | Microsoft Docs"
-ms.custom: ""
+title: "Unwind Procedure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 82c5d0ca-70be-4d1a-a306-bfe01c29159f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unwind Procedure
 

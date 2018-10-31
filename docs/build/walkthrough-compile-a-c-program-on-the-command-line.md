@@ -1,14 +1,9 @@
 ---
-title: "Walkthrough: Compile a C program on the command line | Microsoft Docs"
+title: "Walkthrough: Compile a C program on the command line"
 ms.custom: "conceptual"
 ms.date: "09/24/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compile a C program on the command line
 

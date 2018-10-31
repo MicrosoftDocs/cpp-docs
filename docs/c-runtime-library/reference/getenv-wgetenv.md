@@ -1,19 +1,12 @@
 ---
-title: "getenv, _wgetenv | Microsoft Docs"
-ms.custom: ""
+title: "getenv, _wgetenv"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["getenv", "_wgetenv"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wgetenv", "getenv", "_tgetenv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["getenv function", "tgetenv function", "wgetenv function", "environment values", "environment variables", "_tgetenv function", "_wgetenv function"]
 ms.assetid: 3b9cb9ab-a126-4e0e-a44f-6c5a7134daf4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # getenv, _wgetenv
 

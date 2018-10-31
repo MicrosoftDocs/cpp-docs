@@ -1,15 +1,8 @@
 ---
-title: "Truncation of Floating-Point Values | Microsoft Docs"
-ms.custom: ""
+title: "Truncation of Floating-Point Values"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["floating-point numbers, truncation"]
 ms.assetid: 051a6e22-c636-4af8-9ac4-40160f4affca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Truncation of Floating-Point Values
 

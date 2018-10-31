@@ -1,15 +1,8 @@
 ---
-title: "Initializing Strings | Microsoft Docs"
-ms.custom: ""
+title: "Initializing Strings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["character arrays, initializing", "strings [C++], initializing", "initializing arrays, strings"]
 ms.assetid: 0ab8079d-d0d3-48f9-afd1-36a7bb439b29
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializing Strings
 

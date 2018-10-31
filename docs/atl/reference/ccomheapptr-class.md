@@ -1,16 +1,9 @@
 ---
-title: "CComHeapPtr Class | Microsoft Docs"
-ms.custom: ""
+title: "CComHeapPtr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComHeapPtr", "ATLBASE/ATL::CComHeapPtr", "ATLBASE/ATL::CComHeapPtr::CComHeapPtr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComHeapPtr class"]
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComHeapPtr Class
 

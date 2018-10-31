@@ -1,16 +1,9 @@
 ---
-title: "IPersistPropertyBagImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IPersistPropertyBagImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IPersistPropertyBagImpl", "ATLCOM/ATL::IPersistPropertyBagImpl", "ATLCOM/ATL::IPersistPropertyBagImpl::GetClassID", "ATLCOM/ATL::IPersistPropertyBagImpl::InitNew", "ATLCOM/ATL::IPersistPropertyBagImpl::Load", "ATLCOM/ATL::IPersistPropertyBagImpl::Save"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IPersistPropertyBagImpl class"]
 ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IPersistPropertyBagImpl Class
 

@@ -1,15 +1,8 @@
 ---
-title: "Manifest Generation at the Command Line | Microsoft Docs"
-ms.custom: ""
+title: "Manifest Generation at the Command Line"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["manifests [C++]", "manifest tool (mt.exe)"]
 ms.assetid: fc2ff255-82b1-4c44-af76-8405c5850292
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Manifest Generation at the Command Line
 

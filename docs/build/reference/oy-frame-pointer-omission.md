@@ -1,16 +1,9 @@
 ---
-title: "-Oy (Frame-Pointer Omission) | Microsoft Docs"
-ms.custom: ""
+title: "/Oy (Frame-Pointer Omission)"
 ms.date: "09/22/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.OmitFramePointers", "/oy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["omit frame pointer", "Oy compiler option [C++]", "stack frame pointer compiler option [C++]", "-Oy compiler option [C++]", "frame pointer omission compiler option [C++]", "suppress frame pointer creation", "/Oy compiler option [C++]"]
 ms.assetid: c451da86-5297-4c5a-92bc-561d41379853
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Oy (Frame-Pointer Omission)
 

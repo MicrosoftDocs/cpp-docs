@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Implementing Futures | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Implementing Futures"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["implementing futures [Concurrency Runtime]", "futures, implementing [Concurrency Runtime]"]
 ms.assetid: 82ea75cc-aaec-4452-b10d-8abce0a87e5b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Implementing Futures
 

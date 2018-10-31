@@ -1,14 +1,7 @@
 ---
-title: "Return Values (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Return Values (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 53583524-b337-4228-a9c6-c9bf516babe8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Return Values (C++)
 

@@ -1,19 +1,12 @@
 ---
-title: "feholdexcept | Microsoft Docs"
-ms.custom: ""
+title: "feholdexcept"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["feholdexcept"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["feholdexcept", "fenv/feholdexcept"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["feholdexcept function"]
 ms.assetid: 88e512ae-b5d8-452c-afe9-c824cd3ef1d8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # feholdexcept
 

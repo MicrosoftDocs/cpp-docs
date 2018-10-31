@@ -1,16 +1,9 @@
 ---
-title: "uuid (C++) | Microsoft Docs"
-ms.custom: ""
+title: "uuid (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["uuid_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], uuid", "uuid __declspec keyword"]
 ms.assetid: 9d004621-09bc-4a8d-871b-648f5d5102d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # uuid (C++)
 

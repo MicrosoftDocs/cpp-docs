@@ -1,13 +1,7 @@
 ---
-title: "Concurrency namespace operators (AMP) | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency namespace operators (AMP)"
 ms.date: "11/04/2016"
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 77f1ae17-1eb2-480d-8fe5-66d4c24bb91e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency namespace operators (AMP)
 

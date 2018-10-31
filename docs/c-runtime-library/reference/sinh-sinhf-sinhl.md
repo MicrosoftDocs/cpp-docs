@@ -1,18 +1,11 @@
 ---
-title: "sinh, sinhf, sinhl | Microsoft Docs"
-ms.custom: ""
+title: "sinh, sinhf, sinhl"
 ms.date: "04/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["sinhl", "sinhf", "sinhl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["sinh", "sinhf", "sinhl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sinh function", "sinhl function", "sinhf function", "calculating hyperbolic sines", "trigonometric functions", "sinhf function", "sinhl function", "hyperbolic functions"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # sinh, sinhf, sinhl
 

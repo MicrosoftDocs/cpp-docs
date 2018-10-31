@@ -1,16 +1,10 @@
 ---
-title: "Platform::Details::HeapAllocationTrackingLevel Enumeration | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Details::HeapAllocationTrackingLevel Enumeration"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details::HeapAllocationTrackingLevel"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::HeapAllocationTrackingLevel Enumeration"]
 ms.assetid: dc341bc0-b47b-4eb2-9445-fbaf788e7b1a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Details::HeapAllocationTrackingLevel Enumeration
 

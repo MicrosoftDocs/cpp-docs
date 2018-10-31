@@ -1,15 +1,8 @@
 ---
-title: "Command Modifiers | Microsoft Docs"
-ms.custom: ""
+title: "Command Modifiers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["NMAKE program, command modifiers", "command modifiers"]
 ms.assetid: b661c432-210f-4f05-bc56-744a46e0fc0b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command Modifiers
 

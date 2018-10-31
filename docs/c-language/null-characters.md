@@ -1,15 +1,8 @@
 ---
-title: "Null Characters | Microsoft Docs"
-ms.custom: ""
+title: "Null Characters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["null values, appended to binary stream"]
 ms.assetid: bca3fc78-0347-41bd-9e3e-94d646104bad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Null Characters
 

@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Creating a Custom Message Block | Microsoft Docs"
-ms.custom: ""
+title: "Walkthrough: Creating a Custom Message Block"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["creating custom message blocks Concurrency Runtime]", "custom message blocks, creating [Concurrency Runtime]"]
 ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating a Custom Message Block
 

@@ -1,16 +1,9 @@
 ---
-title: "Linker Options | Microsoft Docs"
-ms.custom: ""
+title: "Linker Options"
 ms.date: "08/20/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["link"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Options
 
@@ -46,7 +39,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/CLRIMAGETYPE](../../build/reference/clrimagetype-specify-type-of-clr-image.md)|Sets the type (IJW, pure, or safe) of a CLR image.|
 |[/CLRSUPPORTLASTERROR](../../build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md)|Preserves the last error code of functions that are called through the P/Invoke mechanism.|
 |[/CLRTHREADATTRIBUTE](../../build/reference/clrthreadattribute-set-clr-thread-attribute.md)|Specifies the threading attribute to apply to the entry point of your CLR program.|
-|[/CLRUNMANAGEDCODECHECK](../../build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute.md)|Specifies whether the linker will apply the SuppressUnmanagedCodeSecurity attribute to linker-generated PInvoke stubs that call from managed code into native DLLs.|
+|[/CLRUNMANAGEDCODECHECK](../../build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md)|Specifies whether the linker will apply the SuppressUnmanagedCodeSecurity attribute to linker-generated PInvoke stubs that call from managed code into native DLLs.|
 |[/DEBUG](../../build/reference/debug-generate-debug-info.md)|Creates debugging information.|
 |[/DEBUGTYPE](../../build/reference/debugtype-debug-info-options.md)|Specifies which data to include in debugging information.|
 |[/DEF](../../build/reference/def-specify-module-definition-file.md)|Passes a module-definition (.def) file to the linker.|

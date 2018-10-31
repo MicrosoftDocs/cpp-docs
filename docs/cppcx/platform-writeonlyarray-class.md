@@ -1,16 +1,10 @@
 ---
-title: "Platform::WriteOnlyArray Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::WriteOnlyArray Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::WriteOnlyArray::begin", "VCCORLIB/Platform::WriteOnlyArray::Data", "VCCORLIB/Platform::WriteOnlyArray::end", "VCCORLIB/Platform::WriteOnlyArray::FastPass", "VCCORLIB/Platform::WriteOnlyArray::Length", "VCCORLIB/Platform::WriteOnlyArray::set"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::WriteOnlyArray Class"]
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::WriteOnlyArray Class
 

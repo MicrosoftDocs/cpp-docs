@@ -1,15 +1,11 @@
 ---
-title: "Visual C++ in Visual Studio | Microsoft Docs"
+title: "Visual C++ in Visual Studio"
 description: "Visual C++ is the name for the Microsoft C++ compiler, code editor, and related tools in the Visual Studio IDE. Use Visual C++ to develop programs for Windows, Linux, Android and iOS."
-ms.custom: ""
 ms.date: "09/26/2018"
 ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, home page"]
 author: "mikeblome"
 ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ in Visual Studio
 

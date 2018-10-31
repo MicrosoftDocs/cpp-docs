@@ -1,15 +1,8 @@
 ---
-title: "Using Custom Format Strings in a Date and Time Picker Control | Microsoft Docs"
-ms.custom: ""
+title: "Using Custom Format Strings in a Date and Time Picker Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDateTimeCtrl class [MFC], display styles", "DateTimePicker control [MFC], display styles", "DateTimePicker control [MFC]"]
 ms.assetid: 7d577f03-6ca0-4597-9093-50b78f304719
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Custom Format Strings in a Date and Time Picker Control
 

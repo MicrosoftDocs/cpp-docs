@@ -1,15 +1,8 @@
 ---
-title: "WinInet Basics | Microsoft Docs"
-ms.custom: ""
+title: "WinInet Basics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OnStatusCallback method [MFC]", "WinInet classes [MFC], displaying progress", "WinInet classes [MFC], about WinInet classes"]
 ms.assetid: 665de5ac-e80d-427d-8d91-2ae466885940
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # WinInet Basics
 

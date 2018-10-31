@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonCustomizePropertyPage Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonCustomizePropertyPage Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::AddCustomCategory", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::OnOK"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonCustomizePropertyPage [MFC], CMFCRibbonCustomizePropertyPage", "CMFCRibbonCustomizePropertyPage [MFC], AddCustomCategory", "CMFCRibbonCustomizePropertyPage [MFC], OnOK"]
 ms.assetid: ea32a99a-dfbe-401e-8975-aa191552532f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCustomizePropertyPage Class
 

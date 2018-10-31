@@ -1,16 +1,9 @@
 ---
-title: "Setting the Mode of a CStatusBarCtrl Object | Microsoft Docs"
-ms.custom: ""
+title: "Setting the Mode of a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CStatusBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["simple mode and status bar controls", "IsSimple method, using", "SetSimple method [MFC]", "status bar controls [MFC], simple and nonsimple modes", "non-simple mode and status bar controls", "CStatusBarCtrl class [MFC], simple and nonsimple modes"]
 ms.assetid: ca6076e5-1501-4e33-8d35-9308941e46c0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Setting the Mode of a CStatusBarCtrl Object
 

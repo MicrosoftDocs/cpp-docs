@@ -1,16 +1,10 @@
 ---
-title: "lock::lock | Microsoft Docs"
-ms.custom: ""
+title: "lock::lock"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["lock::lock", "lock.lock", "msclr.lock.lock", "msclr::lock::lock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lock constructor"]
 ms.assetid: c9ad6c71-36ec-49c5-8ebd-f5c3a0cc94f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::lock
 

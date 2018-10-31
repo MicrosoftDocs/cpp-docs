@@ -1,14 +1,7 @@
 ---
-title: "2.7.2.6 reduction | Microsoft Docs"
-ms.custom: ""
+title: "2.7.2.6 reduction"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: e7630a15-2978-4dbe-a29b-3a46371a0151
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 2.7.2.6 reduction
 

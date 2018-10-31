@@ -1,16 +1,9 @@
 ---
-title: "Strings, ATL Property Page Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Strings, ATL Property Page Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.ppg.strings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Property Page Wizard, strings"]
 ms.assetid: 00547db6-911f-49eb-92e1-2ba67079d4df
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Strings, ATL Property Page Wizard
 

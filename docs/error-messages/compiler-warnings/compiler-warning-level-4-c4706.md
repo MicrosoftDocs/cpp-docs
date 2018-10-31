@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4706 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4706"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4706"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4706"]
 ms.assetid: 89cd3f4f-812c-4a4b-9426-65a5a6d1b99c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4706
 

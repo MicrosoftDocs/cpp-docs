@@ -1,16 +1,9 @@
 ---
-title: "operator &lt; (MASM Run Time) | Microsoft Docs"
-ms.custom: ""
+title: "operator &lt; (MASM Run Time)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator <"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator <", "< operator, comparing specific objects"]
 ms.assetid: 1d5fc8f1-a62f-4a3d-824d-619c6f421a04
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator &lt; (MASM Run Time)
 

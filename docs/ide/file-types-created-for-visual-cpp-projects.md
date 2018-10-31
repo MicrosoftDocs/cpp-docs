@@ -1,15 +1,8 @@
 ---
-title: "File Types Created for Visual C++ Projects | Microsoft Docs"
-ms.custom: ""
+title: "File Types Created for Visual C++ Projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["header files [C++], Visual C++ projects", "ActiveX controls [C++], Help files", "def files", "project items [C++], files", "Visual C++ projects, files and directories", "resource files, created by wizard", "files [C++], extensions", "Help files, for ActiveX controls", "Web projects [C++], adding items", ".def files", "licensing ActiveX controls"]
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # File Types Created for Visual C++ Projects
 

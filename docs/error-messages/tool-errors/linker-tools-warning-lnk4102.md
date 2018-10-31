@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4102 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4102"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4102"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4102"]
 ms.assetid: bfd1b17e-05c7-4bc2-80d6-2888b1a425b2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4102
 

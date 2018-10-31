@@ -1,15 +1,9 @@
 ---
-title: "User-Defined Attributes  (C++/CLI and C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "User-Defined Attributes  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["metadata, extending", "custom attributes, extending metadata"]
 ms.assetid: 98b29048-a3ea-4698-8441-f149cdaec9fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # User-Defined Attributes  (C++/CLI and C++/CX)
 

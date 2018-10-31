@@ -1,14 +1,7 @@
 ---
-title: "1.6 Organization | Microsoft Docs"
-ms.custom: ""
+title: "1.6 Organization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 80c6c3a4-3b08-4b0b-a25d-7ca9b1afcaa7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # 1.6 Organization
 

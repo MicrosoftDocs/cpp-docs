@@ -1,16 +1,9 @@
 ---
-title: "swap (&lt;sample container&gt;) | Microsoft Docs"
-ms.custom: ""
+title: "swap (&lt;sample container&gt;)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["std.swap", "std::swap", "swap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["swap function"]
 ms.assetid: d8dd6436-fb97-46ed-bec5-052cfd710462
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # swap (&lt;sample container&gt;)
 

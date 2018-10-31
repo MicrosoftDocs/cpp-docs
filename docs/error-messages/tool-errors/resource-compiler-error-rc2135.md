@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2135 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2135"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2135"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2135"]
 ms.assetid: 1509a0fa-1cb7-4654-bcb3-ad5ac973e659
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2135
 

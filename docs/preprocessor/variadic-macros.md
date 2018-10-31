@@ -1,15 +1,8 @@
 ---
-title: "Variadic Macros | Microsoft Docs"
-ms.custom: ""
+title: "Variadic Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["variadic macros [C++]", "__VA_ARGS__ variadic macro specifier"]
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Variadic Macros
 

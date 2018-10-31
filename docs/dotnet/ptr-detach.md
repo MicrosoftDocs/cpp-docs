@@ -1,16 +1,10 @@
 ---
-title: "ptr::Detach | Microsoft Docs"
-ms.custom: ""
+title: "ptr::Detach"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["ptr.Detach", "msclr.com.ptr.Detach", "ptr::Detach", "msclr::com::ptr::Detach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ptr::Detach"]
 ms.assetid: 23370c8a-8f79-4880-9fa1-46e110c1a92c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::Detach
 

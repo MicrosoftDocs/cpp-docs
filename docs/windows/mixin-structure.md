@@ -1,16 +1,10 @@
 ---
-title: "MixIn Structure | Microsoft Docs"
-ms.custom: ""
+title: "MixIn Structure"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::MixIn"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MixIn structure"]
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # MixIn Structure
 

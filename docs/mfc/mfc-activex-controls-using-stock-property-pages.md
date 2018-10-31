@@ -1,23 +1,16 @@
 ---
-title: "MFC ActiveX Controls: Using Stock Property Pages | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Using Stock Property Pages"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CLSID_CPicturePropPage", "CLSID_CColorPropPage", "CLSID_CFontPropPage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["picture stock property pages [MFC]", "CLSID_CFontPropPage [MFC]", "color stock property pages [MFC]", "CLSID_CColorPropPage [MFC]", "fonts [MFC], ActiveX controls", "stock properties [MFC], stock property pages", "CLSID_CPicturePropPage [MFC]", "MFC ActiveX controls [MFC], property pages"]
 ms.assetid: 22638d86-ff3e-4124-933e-54b7c2a25968
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Using Stock Property Pages
 
 This article discusses the stock property pages available for ActiveX controls and how to use them.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 For more information on using property pages in an ActiveX control, see the following articles:
 

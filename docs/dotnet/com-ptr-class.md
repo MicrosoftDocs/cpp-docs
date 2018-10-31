@@ -1,16 +1,10 @@
 ---
-title: "com::ptr Class | Microsoft Docs"
-ms.custom: ""
+title: "com::ptr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["com::ptr", "msclr::com::ptr", "msclr.com.ptr", "com.ptr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ptr class"]
 ms.assetid: 0144d0e4-919c-45f9-a3f8-fbc9edba32bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # com::ptr Class
 

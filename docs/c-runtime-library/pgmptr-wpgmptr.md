@@ -1,16 +1,9 @@
 ---
-title: "_pgmptr, _wpgmptr | Microsoft Docs"
-ms.custom: ""
+title: "_pgmptr, _wpgmptr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["pgmptr", "_pgmptr", "wpgmptr", "_wpgmptr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wpgmptr function", "_wpgmptr function", "_pgmptr function", "pgmptr function"]
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _pgmptr, _wpgmptr
 

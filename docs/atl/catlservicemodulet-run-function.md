@@ -1,16 +1,9 @@
 ---
-title: "CAtlServiceModuleT::Run Function | Microsoft Docs"
-ms.custom: ""
+title: "CAtlServiceModuleT::Run Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
 f1_keywords: ["CServiceModule::Run", "CServiceModule.Run", "CSecurityDescriptor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL services, security"]
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlServiceModuleT::Run Function
 

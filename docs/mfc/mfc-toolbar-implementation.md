@@ -1,15 +1,8 @@
 ---
-title: "MFC Toolbar Implementation | Microsoft Docs"
-ms.custom: ""
+title: "MFC Toolbar Implementation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["toolbars [MFC], creating", "buttons [MFC], MFC toolbars", "toolbars [MFC], docking", "CToolBar class [MFC], creating toolbars", "MFC toolbars", "floating toolbars [MFC]", "toolbars [MFC], floating", "docking toolbars [MFC]", "bitmaps [MFC], toolbar", "toolbar controls [MFC]", "CToolBarCtrl class [MFC], implementing toolbars", "tool tips [MFC], enabling", "toolbars [MFC]", "toolbars [MFC], implementing MFC toolbars"]
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Toolbar Implementation
 

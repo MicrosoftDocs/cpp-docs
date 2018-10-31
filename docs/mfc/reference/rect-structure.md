@@ -1,16 +1,9 @@
 ---
-title: "RECT Structure | Microsoft Docs"
-ms.custom: ""
+title: "RECT Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["LPRECT", "RECT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RECT structure [MFC]", "LPRECT structure [MFC]"]
 ms.assetid: 1b3160de-64e9-40d1-89eb-af3e0fd6acf0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # RECT Structure
 

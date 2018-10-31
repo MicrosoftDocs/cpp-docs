@@ -1,14 +1,7 @@
 ---
-title: "Function Types | Microsoft Docs"
-ms.custom: ""
+title: "Function Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 7e33d5f4-dabb-406d-afb3-13777b995028
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Function Types
 

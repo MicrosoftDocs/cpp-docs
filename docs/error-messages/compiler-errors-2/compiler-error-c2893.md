@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2893 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2893"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2893"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2893"]
 ms.assetid: ec0cbe43-005d-45da-8742-aaeb9b81d28e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2893
 

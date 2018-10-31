@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3104 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3104"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3104"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3104"]
 ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3104
 

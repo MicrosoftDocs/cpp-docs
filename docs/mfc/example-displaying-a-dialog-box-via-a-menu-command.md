@@ -1,15 +1,8 @@
 ---
-title: "Example: Displaying a Dialog Box via a Menu Command | Microsoft Docs"
-ms.custom: ""
+title: "Example: Displaying a Dialog Box via a Menu Command"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], examples", "MFC dialog boxes [MFC], displaying", "modeless dialog boxes [MFC], displaying", "dialog boxes [MFC], MFC", "modal dialog boxes [MFC], displaying", "examples [MFC], dialog boxes", "menu items [MFC], examples"]
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Example: Displaying a Dialog Box via a Menu Command
 

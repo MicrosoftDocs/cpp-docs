@@ -1,15 +1,8 @@
 ---
-title: "Drag and Drop: Implementing a Drop Target | Microsoft Docs"
-ms.custom: ""
+title: "Drag and Drop: Implementing a Drop Target"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE drag and drop [MFC], implementing drop targets", "OLE drag and drop [MFC], drop target", "drag and drop [MFC], drop target"]
 ms.assetid: 0689f1ec-5326-4008-b226-4b373c881358
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Drag and Drop: Implementing a Drop Target
 
