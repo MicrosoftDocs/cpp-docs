@@ -260,7 +260,7 @@ int main()
 ```
 
 ```Output
-money_put( ) = "EUR1.000,12"
+money_put() = "EUR1.000,12"
 ```
 
 ## <a name="string_type"></a>  money_put::string_type
