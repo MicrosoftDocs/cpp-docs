@@ -101,7 +101,7 @@ int main( void )
     printf( "Function: atoi( \"%s\" ) = %d\n", str, value );
 
     // Another example of the atoi function
-    // with an overflow condition occuring.
+    // with an overflow condition occurring.
     str = "3336402735171707160320";
     value = atoi( str );
     printf( "Function: atoi( \"%s\" ) = %d\n", str, value );
