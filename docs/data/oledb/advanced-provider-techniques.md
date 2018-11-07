@@ -1,6 +1,6 @@
 ---
 title: "Advanced Provider Techniques"
-ms.date: "11/04/2016"
+ms.date: "10/29/2018"
 helpviewer_keywords: ["OLE DB providers, using"]
 ms.assetid: 002a9731-7e06-49ac-be50-3cc26aa43759
 ---

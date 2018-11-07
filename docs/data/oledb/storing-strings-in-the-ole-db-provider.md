@@ -6,38 +6,44 @@ ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
 ---
 # Storing Strings in the OLE DB Provider
 
-In MyProviderRS.h, the **ATL OLE DB Provider Wizard** creates a default user record called `CWindowsFile`. To handle the two strings, either modify `CWindowsFile` or add your own user record as shown in the following code:
+In *Custom*RS.h, the **ATL OLE DB Provider Wizard** creates a default user record called `CWindowsFile`. To handle the two strings, modify `CWindowsFile` as shown in the following code:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
-class CAgentMan: 
+class CCustomWindowsFile:
    public WIN32_FIND_DATA
-   DWORD dwBookmark;              // Add this
-   TCHAR szCommand[256];          // Add this
-   TCHAR szText[256];             // Add this
-   TCHAR szCommand2[256];         // Add this
-   TCHAR szText2[256];            // Add this
-  
 {
 public:
-BEGIN_PROVIDER_COLUMN_MAP()
-   PROVIDER_COLUMN_ENTRY_STR(OLESTR("Command"), 1, 256, GUID_NULL, CAgentMan, szCommand)
-   PROVIDER_COLUMN_ENTRY_STR(OLESTR("Text"), 2, 256, GUID_NULL, CAgentMan, szText) 
-   PROVIDER_COLUMN_ENTRY_STR(OLESTR("Command2"), 3, 256, GUID_NULL, CAgentMan, szCommand2)
-   PROVIDER_COLUMN_ENTRY_STR(OLESTR("Text2"),4, 256, GUID_NULL, CAgentMan, szText2)
+DWORD dwBookmark;
+static const int iSize = 256;    // Add this
+TCHAR szCommand[iSize];          // Add this
+TCHAR szText[iSize];             // Add this
+TCHAR szCommand2[iSize];         // Add this
+TCHAR szText2[iSize];            // Add this
+
+BEGIN_PROVIDER_COLUMN_MAP(CCustomWindowsFile)
+   PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)
+   PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)
+   PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)
+   PROVIDER_COLUMN_ENTRY_STR("FileName", 4, cFileName)
+   PROVIDER_COLUMN_ENTRY_STR("AltFileName", 5, cAlternateFileName)
+
+   PROVIDER_COLUMN_ENTRY_STR("Command", 6, szCommand)    // Add this
+   PROVIDER_COLUMN_ENTRY_STR("Text", 7, szText)          // Add this
+   PROVIDER_COLUMN_ENTRY_STR("Command2", 8, szCommand2)  // Add this
+   PROVIDER_COLUMN_ENTRY_STR("Text2", 9, szText2)        // Add this
 END_PROVIDER_COLUMN_MAP()
-   bool operator==(const CAgentMan& am) // This is optional 
+
+   bool operator==(const CCustomWindowsFile& am) // This is optional
    {
-      return (lstrcmpi(cFileName, wf.cFileName) == 0);
+      return (lstrcmpi(cFileName, am.cFileName) == 0);
    }
 };
 ```
 
 The data members `szCommand` and `szText` represent the two strings, with `szCommand2` and `szText2` with additional columns if needed. The data member `dwBookmark` isn't needed for this simple read-only provider but is used later to add an `IRowsetLocate` interface; see [Enhancing the Simple Read Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md). The `==` operator compares instances (implementing this operator is optional).
 
-When this is done, your provider should be ready to compile and run. To test the provider, you need a consumer with matching functionality. [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md) shows how to create such a test consumer. Run the test consumer with the provider. Verify that the test consumer retrieves the proper strings from the provider when you click the **Run** button in the **Test Consumer** dialog box.
-
-When you've successfully tested your provider, you might want to enhance its functionality by implementing additional interfaces. An example is shown in [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md).
+When this is done, you can add the functionality of [Reading Strings into the OLE DB Provider](../../data/oledb/reading-strings-into-the-ole-db-provider.md).
 
 ## See Also
 
