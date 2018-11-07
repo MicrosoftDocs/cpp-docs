@@ -10,7 +10,7 @@ This article assumes that you are familiar with CMake, a cross-platform, open-so
 
 In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://cmake.org/cmake/help/v3.9/manual/cmake-generators.7.html) to generate MSBuild project files, which the IDE then consumes for IntelliSense, browsing, and compilation.
 
-Starting in Visual Studio 2017, the **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes.
+Visual Studio 2017 introduces rich support for CMake. The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes.
 
 **Visual Studio 2017 version 15.3**: Support is provided for both Ninja and Visual Studio generators.
 
@@ -103,7 +103,7 @@ All executable CMake targets are shown in the **Startup Item** dropdown in the *
 
 You can also start a debug session from the CMake menus.
 
-To customize the debugger settings for any executable CMake target in your project, right-click on the specific CMakeLists.txt file and select **Debug and Launch Settings**. When you select a CMake target in the submenu, a file called launch.vs.json is created. This file is pre-populated with information about the CMake target you have selected and allows you to specify additional parameters such as program arguments or debugger type. To reference any key in a CMakeSettings.json file, preface it with "CMake." in launch.vs.json. The following example shows a simple launch.vs.json file that pulls in the value of the "remoteCopySources" key in the CMakeSettings.json file for the currently selected configuration:
+To customize the debugger settings for any executable CMake target in your project, right-click on the specific CMakeLists.txt file and select **Debug and Launch Settings**. When you select a CMake target in the submenu, a file called launch.vs.json is created. This file is pre-populated with information about the CMake target you have selected and allows you to specify additional parameters such as program arguments or debugger type. To reference any key in a CMakeSettings.json file, preface it with `cmake.` in launch.vs.json. The following example shows a simple launch.vs.json file that pulls in the value of the `remoteCopySources` key in the CMakeSettings.json file for the currently selected configuration:
 
 ```json
 {
@@ -123,7 +123,7 @@ To customize the debugger settings for any executable CMake target in your proje
 
 As soon as you save the launch.vs.json file, an entry is created in the **Startup Item** dropdown with the new name. By editing the launch.vs.json file, you can create as many debug configurations as you like for any number of CMake targets.
 
-**Visual Studio 2017 version 15.4**: Launch.vs.json supports variables that are declared in CMakeSettings.json (see below) and that are applicable to the currently-selected configuration. It also has a key named "currentDir", which sets the current directory of the launching app:
+**Visual Studio 2017 version 15.4**: Launch.vs.json supports variables that are declared in CMakeSettings.json (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app:
 
 ```json
 {
