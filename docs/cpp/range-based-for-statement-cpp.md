@@ -11,7 +11,7 @@ Executes `statement` repeatedly and sequentially for each element in `expression
 
 ```
 for ( for-range-declaration : expression )
-   statement
+   statement
 ```
 
 ## Remarks

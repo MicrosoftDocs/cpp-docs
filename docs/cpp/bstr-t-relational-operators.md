@@ -14,7 +14,7 @@ Compares two `_bstr_t` objects.
 ## Syntax
 
 ```
-bool operator!( ) const throw( ); 
+bool operator!( ) const throw( );
 bool operator==(const _bstr_t& str) const throw( );
 bool operator!=(const _bstr_t& str) const throw( );
 bool operator<(const _bstr_t& str) const throw( );

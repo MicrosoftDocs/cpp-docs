@@ -15,7 +15,7 @@ Set the value of the **errno** global variable.
 ## Syntax
 
 ```C
-errno_t _set_errno( int error_value );
+errno_t _set_errno( int error_value );
 ```
 
 ### Parameters

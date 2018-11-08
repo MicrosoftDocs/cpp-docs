@@ -28,5 +28,5 @@ While both instructions work on 64-bit operands, `QWORD` is the type for 64-bit 
 ## Example
 
 ```asm
-    movq     mm0, mmword ptr [ebx]
+    movq     mm0, mmword ptr [ebx]
 ```

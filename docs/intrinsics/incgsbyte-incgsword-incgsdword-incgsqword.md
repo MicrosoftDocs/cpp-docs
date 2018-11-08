@@ -14,17 +14,17 @@ Add one to the value at a memory location specified by an offset relative to the
 ## Syntax
 
 ```
-void __incgsbyte( 
-   unsigned long Offset 
-);
-void __incgsword( 
-   unsigned long Offset 
-);
-void __incgsdword( 
+void __incgsbyte(
    unsigned long Offset
 );
-void __incgsqword( 
-   unsigned long Offset 
+void __incgsword(
+   unsigned long Offset
+);
+void __incgsdword(
+   unsigned long Offset
+);
+void __incgsqword(
+   unsigned long Offset
 );
 ```
 

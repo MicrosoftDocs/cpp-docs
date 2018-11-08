@@ -93,7 +93,7 @@ Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms72
 ### Syntax
 
 ```cpp
-HRESULT GetBasicErrorInfo(ULONG ulRecordNum, 
+HRESULT GetBasicErrorInfo(ULONG ulRecordNum,
    ERRORINFO* pErrorInfo) const throw();
 ```
 
@@ -112,7 +112,7 @@ Calls [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/m
 ### Syntax
 
 ```cpp
-HRESULT GetCustomErrorObject(ULONG ulRecordNum, 
+HRESULT GetCustomErrorObject(ULONG ulRecordNum,
    REFIID riid,IUnknown** ppObject) const throw();
 ```
 
@@ -131,7 +131,7 @@ Calls [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230)
 ### Syntax
 
 ```cpp
-HRESULT GetErrorInfo(ULONG ulRecordNum, 
+HRESULT GetErrorInfo(ULONG ulRecordNum,
    LCID lcid,IErrorInfo** ppErrorInfo) const throw();
 ```
 
@@ -150,7 +150,7 @@ Calls [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms7
 ### Syntax
 
 ```cpp
-HRESULT GetErrorParameters(ULONG ulRecordNum, 
+HRESULT GetErrorParameters(ULONG ulRecordNum,
    DISPPARAMS* pdispparams) const throw();
 ```
 
@@ -169,8 +169,8 @@ Gets error records for the specified object.
 ### Syntax
 
 ```cpp
-HRESULT GetErrorRecords(IUnknown* pUnk, 
-   const IID& iid, 
+HRESULT GetErrorRecords(IUnknown* pUnk,
+   const IID& iid,
    ULONG* pcRecords) throw();
 
 HRESULT GetErrorRecords(ULONG* pcRecords) throw();

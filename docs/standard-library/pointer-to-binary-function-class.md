@@ -36,7 +36,7 @@ The right object that the *\*pfunc* is called on.
 
 ## Return Value
 
-The template class stores a copy of `pfunc`. It defines its member function `operator()` as returning (\* **pfunc**)(_ *Left*, \_ *Right*).
+The template class stores a copy of `pfunc`. It defines its member function `operator()` as returning `(* pfunc)(Left, right)`.
 
 ## Remarks
 

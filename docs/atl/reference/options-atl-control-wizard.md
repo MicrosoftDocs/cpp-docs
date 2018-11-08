@@ -7,8 +7,6 @@ ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
 ---
 # Options, ATL Control Wizard
 
-Insert "Search Results" summary here.
-
 Use this page of the wizard to define the type of control you are creating and the level of interface support it contains.
 
 ## UIElement List

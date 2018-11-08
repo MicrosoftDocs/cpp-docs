@@ -266,11 +266,11 @@ An object of type `auto_ptr`.
 
 ### Return Value
 
-A reference to an object of type `auto_ptr`\< **Type**>.
+A reference to an object of type `auto_ptr<Type>`.
 
 ### Remarks
 
-The assignment evaluates the expression `delete myptr`, but only if the stored pointer `myptr` changes as a result of the assignment. It then transfers ownership of the pointer stored in _ *Right*, by storing \_ *Right*. [release](#release) in `myptr`. The function returns **\*this**.
+The assignment evaluates the expression `delete myptr`, but only if the stored pointer `myptr` changes as a result of the assignment. It then transfers ownership of the pointer stored in *right*, by storing *right*.[release](#release) in `myptr`. The function returns __\*this__.
 
 ### Example
 

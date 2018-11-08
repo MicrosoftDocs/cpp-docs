@@ -9,9 +9,10 @@ ms.assetid: debfbdd9-63fa-4c58-a18e-a4d203d241d7
 The use of documentation tags requires delimiters, which indicate to the compiler where a documentation comment begins and ends.
 
 You can use the following kinds of delimiters with the XML documentation tags:
-|||
+
+| | |
 |-|-|
-|`///`  | This is the form that is shown in documentation examples and used by the Visual C++ project templates.  |
+| `///` | This is the form that is shown in documentation examples and used by the Visual C++ project templates.  |
 | `/** */`  | These are multiline delimiters.  |
 
 There are some formatting rules when using the `/** */` delimiters:

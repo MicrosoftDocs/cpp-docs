@@ -7,7 +7,7 @@ ms.assetid: 05d33b4d-7232-4643-a108-87dda8ff5f22
 ---
 # BITMAP Structure
 
-The **BITMAP** structure defines the height, width, color format, and bit values of a logical bitmap**.**
+The **BITMAP** structure defines the height, width, color format, and bit values of a logical bitmap.
 
 ## Syntax
 

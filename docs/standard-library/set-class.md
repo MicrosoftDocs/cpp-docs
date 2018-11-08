@@ -400,7 +400,7 @@ The key of the elements to be matched from the set.
 
 The member function returns the number of elements in the following range:
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) ).
+\[ lower_bound(*key*), upper_bound(*key*) ).
 
 ### Example
 

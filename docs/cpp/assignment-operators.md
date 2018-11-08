@@ -12,7 +12,7 @@ ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
 *expression* *assignment-operator* *expression*
 
 *assignment-operator* : one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>=   *=   /=   %=   +=   -=   \<\<=   >>=   &=   ^=   \|=</strong>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>=&nbsp;&nbsp;&nbsp;*=&nbsp;&nbsp;&nbsp;/=&nbsp;&nbsp;&nbsp;%=&nbsp;&nbsp;&nbsp;+=&nbsp;&nbsp;&nbsp;-=&nbsp;&nbsp;&nbsp;\<\<=&nbsp;&nbsp;&nbsp;>>=&nbsp;&nbsp;&nbsp;&=&nbsp;&nbsp;&nbsp;^=&nbsp;&nbsp;&nbsp;\|=</strong>
 
 ## Remarks
 

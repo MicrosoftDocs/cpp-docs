@@ -44,7 +44,7 @@ Typical uses for parameters include:
 
    Your recordset's filter string, stored in `m_strFilter`, might look like this:
 
-    ```
+    ```cpp
     "StudentID = ?"
     ```
 
@@ -52,7 +52,7 @@ Typical uses for parameters include:
 
    Assign the parameter value as follows:
 
-    ```
+    ```cpp
     strInputID = "100";
     ...
     m_strParam = strInputID;
@@ -60,7 +60,7 @@ Typical uses for parameters include:
 
    You would not want to set up a filter string this way:
 
-    ```
+    ```cpp
     m_strFilter = "StudentID = 100";   // 100 is incorrectly quoted
                                        // for some drivers
     ```
@@ -69,15 +69,15 @@ Typical uses for parameters include:
 
    The parameter value is different each time you requery the recordset for a new student ID.
 
-    > [!TIP]
-    >  Using a parameter is more efficient than simply a filter. For a parameterized recordset, the database must process a SQL **SELECT** statement only once. For a filtered recordset without parameters, the **SELECT** statement must be processed each time you `Requery` with a new filter value.
+   > [!TIP]
+   > Using a parameter is more efficient than simply a filter. For a parameterized recordset, the database must process a SQL **SELECT** statement only once. For a filtered recordset without parameters, the **SELECT** statement must be processed each time you `Requery` with a new filter value.
 
 For more information about filters, see [Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).
 
 ##  <a name="_core_parameterizing_your_recordset_class"></a> Parameterizing Your Recordset Class
 
 > [!NOTE]
->  This section applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, implementing parameters is a similar process. For more information, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> This section applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If you are using bulk row fetching, implementing parameters is a similar process. For more information, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 Before you create your recordset class, determine what parameters you need, what their data types are, and how the recordset uses them.
 
@@ -106,7 +106,7 @@ Before you create your recordset class, determine what parameters you need, what
 
 1. Modify the [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) member function definition in the .cpp file. Add an RFX function call for each parameter data member you added to the class. For information about writing your RFX functions, see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). Precede the RFX calls for the parameters with a single call to:
 
-    ```
+    ```cpp
     pFX->SetFieldType( CFieldExchange::param );
     // RFX calls for parameter data members
     ```
@@ -120,11 +120,10 @@ Before you create your recordset class, determine what parameters you need, what
    At run time, "?" placeholders are filled, in order, by the parameter values you pass. The first parameter data member set after the [SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) call replaces the first "?" in the SQL string, the second parameter data member replaces the second "?", and so on.
 
 > [!NOTE]
->  Parameter order is important: the order of RFX calls for parameters in your `DoFieldExchange` function must match the order of the parameter placeholders in your SQL string.
+> Parameter order is important: the order of RFX calls for parameters in your `DoFieldExchange` function must match the order of the parameter placeholders in your SQL string.
 
 > [!TIP]
-
->  The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) data member, but some ODBC drivers might allow parameters in other SQL clauses.
+> The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) data member, but some ODBC drivers might allow parameters in other SQL clauses.
 
 ##  <a name="_core_passing_parameter_values_at_run_time"></a> Passing Parameter Values at Run Time
 

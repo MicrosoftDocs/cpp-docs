@@ -53,9 +53,9 @@ The mode must be **_IOFBF**, **_IOLBF**, or **_IONBF**. If *mode* is **_IOFBF** 
 
 |*mode* value|Meaning|
 |-|-|
-**_IOFBF**|Full buffering; that is, *buffer* is used as the buffer and *size* is used as the size of the buffer. If *buffer* is **NULL**, an automatically allocated buffer *size* bytes long is used.
-**_IOLBF**|For some systems, this provides line buffering. However, for Win32, the behavior is the same as **_IOFBF** - Full Buffering.
-**_IONBF**|No buffer is used, regardless of *buffer* or *size*.
+| **_IOFBF** | Full buffering; that is, *buffer* is used as the buffer and *size* is used as the size of the buffer. If *buffer* is **NULL**, an automatically allocated buffer *size* bytes long is used. |
+| **_IOLBF** | For some systems, this provides line buffering. However, for Win32, the behavior is the same as **_IOFBF** - Full Buffering. |
+| **_IONBF** | No buffer is used, regardless of *buffer* or *size*. |
 
 ## Requirements
 

@@ -242,7 +242,7 @@ virtual iter_type do_put(iter_type next,
 
 behaves the same as the first, except that it generates a Boolean output field from *val*.
 
-A Boolean output field takes one of two forms. If **iosbase**. **flags** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) is **false**, the member function returns `do_put`(_ *Next*, \_ *Iosbase*, \_ *Fill*, ( **long**) `val`), which typically produces a generated sequence of either 0 (for **false**) or 1 (for **true**). Otherwise, the generated sequence is either **fac**. [falsename](../standard-library/numpunct-class.md#falsename)`)` (for **false**), or **fac**. [truename](../standard-library/numpunct-class.md#truename) (for **true**).
+A Boolean output field takes one of two forms. If `iosbase.flags & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) is **false**, the member function returns `do_put(_Next, _Iosbase, _Fill, (long)val)`, which typically produces a generated sequence of either 0 (for **false**) or 1 (for **true**). Otherwise, the generated sequence is either *fac*.[falsename](../standard-library/numpunct-class.md#falsename) (for **false**), or *fac*.[truename](../standard-library/numpunct-class.md#truename) (for **true**).
 
 The seventh virtual protected member function:
 

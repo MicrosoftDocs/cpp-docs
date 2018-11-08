@@ -12,7 +12,7 @@ The **__if_not_exists** statement tests whether the specified identifier exists.
 ## Syntax
 
 ```
-__if_not_exists ( identifier ) { 
+__if_not_exists ( identifier ) {
 statements
 };
 ```

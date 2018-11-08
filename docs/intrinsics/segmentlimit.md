@@ -14,8 +14,8 @@ Generates the `lsl` (Load Segment Limit) instruction.
 ## Syntax
 
 ```
-unsigned long __segmentlimit( 
-   unsigned long a 
+unsigned long __segmentlimit(
+   unsigned long a
 );
 ```
 

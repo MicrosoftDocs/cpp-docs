@@ -244,12 +244,12 @@ The following table shows a group of conversions, called trivial conversions, th
 |-----------------------|---------------------|
 |*type-name*|*type-name* **&**|
 |*type-name* **&**|*type-name*|
-|*type-name* **[ ]**|*type-name\**|
-|*type-name* **(** *argument-list* **)**|**(** *\*type-name* **) (** *argument-list* **)**|
+|*type-name* **[ ]**|*type-name* __\*__|
+|*type-name* **(** *argument-list* **)**|**(** __\*__ *type-name* **) (** *argument-list* **)**|
 |*type-name*|**const** *type-name*|
 |*type-name*|**volatile** *type-name*|
-|*type-name\**|**const** *type-name\**|
-|*type-name\**|**volatile** *type-name\**|
+|*type-name* __\*__|**const** *type-name* __\*__|
+|*type-name* __\*__|**volatile** *type-name* __\*__|
 
 The sequence in which conversions are attempted is as follows:
 

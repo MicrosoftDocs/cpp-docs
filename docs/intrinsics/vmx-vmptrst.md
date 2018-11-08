@@ -14,8 +14,8 @@ Stores the pointer to the current virtual-machine control structure (VMCS) at th
 ## Syntax
 
 ```
-void __vmx_vmptrst( 
-   unsigned __int64 *VmcsPhysicalAddress 
+void __vmx_vmptrst(
+   unsigned __int64 *VmcsPhysicalAddress
 );
 ```
 

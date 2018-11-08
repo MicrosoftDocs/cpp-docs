@@ -5,7 +5,8 @@ ms.assetid: 341d8297-03eb-4351-9ed0-138ec59b375c
 ---
 # Summary of Keywords
 
-*keyword* : one of<br/>
+*keyword* : one of
+
 |||||
 |-|-|-|-|
 |**auto**|**double**|**int**|**struct**|

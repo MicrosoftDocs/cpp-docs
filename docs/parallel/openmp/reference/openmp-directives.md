@@ -547,7 +547,7 @@ Identifies code sections to be divided among all threads.
    #pragma omp section
    {
       code_block
-   } 
+   }
 }
 ```
 
@@ -600,7 +600,7 @@ Hello from thread 0
 Lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.
 
 ```
-#pragma omp single [clauses] 
+#pragma omp single [clauses]
 {
    code_block
 }

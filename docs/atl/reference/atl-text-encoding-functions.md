@@ -323,7 +323,7 @@ The length in characters of the caller-allocated buffer.
 *dwFlags*<br/>
 ATL_ESC Flags describing how the conversion is to be performed.
 
-- ATL_ESC_FLAG_NONE Default behavior. Quote marks and apostrophes are not converted.
+- ATL_ESC_FLAG_NONE Default behavior. Quote marks and apostrophes are not converted.
 - ATL_ESC_FLAG_ATTR Quote marks and apostrophes are converted to `&quot;` and `&apos;` respectively.
 
 ### Return Value

@@ -13,8 +13,8 @@ The **struct** keyword defines a structure type and/or a variable of a structure
 
 ```
 [template-spec] struct[ms-decl-spec] [tag [: base-list ]]
-{ 
-   member-list 
+{
+   member-list
 } [declarators];
 [struct] tag declarators;
 ```

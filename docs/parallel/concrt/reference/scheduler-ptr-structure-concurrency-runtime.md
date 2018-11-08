@@ -59,7 +59,8 @@ scheduler_interface* get() const;
 
 Test whether the scheduler pointer is non-null
 
-```operator bool() const;
+```
+operator bool() const;
 ```
 
 ##  <a name="operator_ptr"></a>  scheduler_ptr::operator-&gt;

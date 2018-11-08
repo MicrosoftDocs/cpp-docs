@@ -14,10 +14,10 @@ Generates the `rep outsb` instruction,which sends the first `Count` bytes of dat
 ## Syntax
 
 ```
-void __outbytestring( 
-   unsigned short Port, 
-   unsigned char* Buffer, 
-   unsigned long Count 
+void __outbytestring(
+   unsigned short Port,
+   unsigned char* Buffer,
+   unsigned long Count
 );
 ```
 

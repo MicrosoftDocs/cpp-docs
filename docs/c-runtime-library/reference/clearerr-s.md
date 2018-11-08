@@ -85,15 +85,16 @@ int main( void )
 }
 ```
 
-```Output
+### Input
 
+```Input
 n
-
 ```
 
-```Output
+### Output
 
-      nWrite error: Bad file descriptor
+```Output
+Write error: Bad file descriptor
 Will input cause an error? n
 ```
 

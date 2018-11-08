@@ -19,24 +19,24 @@ Controls conditional branching. Statements in the *if-block* are executed only i
 ```cpp
 if ( expression )
 {
-   statement1;
+   statement1;
    ...
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 
 // Visual Studio 2017 version 15.3 and later:
 if ( initialization; expression )
 {
-   statement1;
+   statement1;
    ...
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 
@@ -48,7 +48,7 @@ if constexpr (expression)
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 ```

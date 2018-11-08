@@ -36,7 +36,7 @@ The negation of the unary function.
 
 ## Remarks
 
-The template class stores a copy of a unary function object _ *Func.* It defines its member function `operator()` as returning **!**\_ *Func(left).*
+The template class stores a copy of a unary function object *\_Func*. It defines its member function `operator()` as returning `!_Func(left)`.
 
 The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1) provides an easier way to declare and use the **unary_negator** adaptor predicate.
 

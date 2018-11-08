@@ -13,9 +13,9 @@ For more information on ml64.exe, see [MASM for x64 (ml64.exe)](../../assembler/
 
 ## Syntax
 
-> ML [[*options*]] *filename* [[ [[*options*]]  *filename*]]
-
-> ML64 [[*options*]] *filename* [[ [[*options*]]  *filename*]] ... [[/link *linkoptions*]]
+> ML \[*options*] *filename* \[ \[*options*]  *filename*]
+>
+> ML64 \[*options*] *filename* \[ \[*options*]  *filename*] ... \[/link *linkoptions*]
 
 ### Parameters
 

@@ -13,7 +13,7 @@ The **bad_typeid** exception is thrown by the [typeid operator](../cpp/typeid-op
 
 ```
 catch (bad_typeid)
-   statement
+   statement
 ```
 
 ## Remarks

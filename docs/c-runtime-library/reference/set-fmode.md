@@ -15,8 +15,8 @@ Sets the default file translation mode for file I/O operations.
 ## Syntax
 
 ```C
-errno_t _set_fmode( 
-   int mode 
+errno_t _set_fmode(
+   int mode
 );
 ```
 

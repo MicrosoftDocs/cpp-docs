@@ -202,9 +202,9 @@ Constructs a priority_queue that is empty or that is a copy of a range of a base
 ```cpp
 priority_queue();
 
-explicit priority_queue(const Traits&_comp);
+explicit priority_queue(const Traits& _comp);
 
-priority_queue(const Traits&_comp, const container_type& _Cont);
+priority_queue(const Traits& _comp, const container_type& _Cont);
 
 priority_queue(const priority_queue& right);
 
@@ -212,15 +212,15 @@ template <class InputIterator>
 priority_queue(InputIterator first, InputIterator last);
 
 template <class InputIterator>
-priority_queue(InputIterator first, InputIterator last, const Traits&_comp);
+priority_queue(InputIterator first, InputIterator last, const Traits& _comp);
 
 template <class InputIterator>
-priority_queue(InputIterator first, InputIterator last, const Traits&_comp, const container_type& _Cont);
+priority_queue(InputIterator first, InputIterator last, const Traits& _comp, const container_type& _Cont);
 ```
 
 ### Parameters
 
-*_ comp*<br/>
+*_comp*<br/>
 The comparison function of type **constTraits** used to order the elements in the priority_queue, which defaults to compare function of the base container.
 
 *_Cont*<br/>
@@ -241,7 +241,7 @@ Each of the first three constructors specifies an empty initial priority_queue, 
 
 The fourth constructor specifies a copy of the priority_queue *right*.
 
-The last three constructors copy the range [ * first,  last*) of some container and use the values to initialize a priority_queue with increasing explicitness in specifying the type of comparison function of class **Traits** and `container_type`.
+The last three constructors copy the range \[*first*, *last*) of some container and use the values to initialize a priority_queue with increasing explicitness in specifying the type of comparison function of class `Traits` and `container_type`.
 
 ### Example
 

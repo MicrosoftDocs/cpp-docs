@@ -14,17 +14,17 @@ Add a value to a memory location specified by an offset relative to the beginnin
 ## Syntax
 
 ```
-void __addfsbyte( 
-   unsigned long Offset, 
-   unsigned char Data 
+void __addfsbyte(
+   unsigned long Offset,
+   unsigned char Data
 );
-void __addfsword( 
-   unsigned long Offset, 
-   unsigned short Data 
+void __addfsword(
+   unsigned long Offset,
+   unsigned short Data
 );
-void __addfsdword( 
-   unsigned long Offset, 
-   unsigned long Data 
+void __addfsdword(
+   unsigned long Offset,
+   unsigned long Data
 );
 ```
 

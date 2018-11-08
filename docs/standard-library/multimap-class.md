@@ -427,7 +427,7 @@ The number of elements whose sort keys match the parameter key; 0 if the multima
 
 The member function returns the number of elements in the range
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) )
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 that have a key value *key*.
 

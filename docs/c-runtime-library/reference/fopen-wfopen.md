@@ -86,12 +86,12 @@ The character string *mode* specifies the kind of access that is requested for t
 
 |*mode*|Access|
 |-|-|
-**"r"**|Opens for reading. If the file does not exist or cannot be found, the **fopen** call fails.
-**"w"**|Opens an empty file for writing. If the given file exists, its contents are destroyed.
-**"a"**|Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it does not exist.
-**"r+"**|Opens for both reading and writing. The file must exist.
-**"w+"**|Opens an empty file for both reading and writing. If the file exists, its contents are destroyed.
-**"a+"**|Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist.
+| **"r"** | Opens for reading. If the file does not exist or cannot be found, the **fopen** call fails. |
+| **"w"** | Opens an empty file for writing. If the given file exists, its contents are destroyed. |
+| **"a"** | Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it does not exist. |
+| **"r+"** | Opens for both reading and writing. The file must exist. |
+| **"w+"** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
+| **"a+"** | Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist. |
 
 When a file is opened by using the **"a"** access type or the **"a+"** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or [rewind](rewind.md), but is always moved back to the end of the file before any write operation is performed. Therefore, existing data cannot be overwritten.
 
@@ -103,8 +103,8 @@ In addition to the earlier values, the following characters can be appended to *
 
 |*mode* modifier|Translation mode|
 |-|-|
-**t**|Open in text (translated) mode.
-**b**|Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.
+| **t** | Open in text (translated) mode. |
+| **b** | Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed. |
 
 In text mode, CTRL+Z is interpreted as an EOF character on input. In files that are opened for reading/writing by using **"a+"**, **fopen** checks for a CTRL+Z at the end of the file and removes it, if it is possible. This is done because using [fseek](fseek-fseeki64.md) and **ftell** to move within a file that ends with CTRL+Z may cause [fseek](fseek-fseeki64.md) to behave incorrectly near the end of the file.
 
@@ -118,14 +118,14 @@ The following options can be appended to *mode* to specify additional behaviors.
 
 |*mode* modifier|Behavior|
 |-|-|
-**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called.
-**n**|Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
-**N**|Specifies that the file is not inherited by child processes.
-**S**|Specifies that caching is optimized for, but not restricted to, sequential access from disk.
-**R**|Specifies that caching is optimized for, but not restricted to, random access from disk.
-**T**|Specifies a file as temporary. If possible, it is not flushed to disk.
-**D**|Specifies a file as temporary. It is deleted when the last file pointer is closed.
-**ccs=**_encoding_|Specifies the encoded character set to use (one of **UTF-8**, **UTF-16LE**, or **UNICODE**) for this file. Leave unspecified if you want ANSI encoding.
+| **c** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called. |
+| **n** | Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)). |
+| **N** | Specifies that the file is not inherited by child processes. |
+| **S** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
+| **R** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
+| **T** | Specifies a file as temporary. If possible, it is not flushed to disk. |
+| **D** | Specifies a file as temporary. It is deleted when the last file pointer is closed. |
+| **ccs=**_encoding_ | Specifies the encoded character set to use (one of **UTF-8**, **UTF-16LE**, or **UNICODE**) for this file. Leave unspecified if you want ANSI encoding. |
 
 Valid characters for the *mode* string that is used in **fopen** and **_fdopen** correspond to *oflag* arguments that are used in [_open](open-wopen.md) and [_sopen](sopen-wsopen.md), as follows.
 

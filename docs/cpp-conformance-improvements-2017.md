@@ -216,9 +216,9 @@ The following example shows C++14 conformant behavior:
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {};
@@ -236,9 +236,9 @@ The following example shows C++17 behavior in Visual Studio version 15.7 in **/s
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {
@@ -1364,7 +1364,7 @@ Static constexpr data members are now implicitly inline, which means that their 
 
 ```cpp
 struct X {
-    static constexpr int size = 3;
+    static constexpr int size = 3;
 };
 const int X::size; // C5041
 ```

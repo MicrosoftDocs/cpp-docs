@@ -13,7 +13,7 @@ Executes *statement* repeatedly until *expression* evaluates to zero.
 
 ```
 while ( expression )
-   statement
+   statement
 ```
 
 ## Remarks

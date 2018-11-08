@@ -80,7 +80,7 @@ Each of the structure fields is of type **int**, as shown in the following table
 
 |Routine|Required C header|Required C++ header|
 |-------------|---------------------|-|
-|**gmtime_s**|, **_gmtime32_s**, **_gmtime64_s**|\<time.h>|\<ctime> or \<time.h>|
+|**gmtime_s**, **_gmtime32_s**, **_gmtime64_s**|\<time.h>|\<ctime> or \<time.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

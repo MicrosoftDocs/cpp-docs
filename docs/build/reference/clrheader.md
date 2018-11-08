@@ -15,9 +15,8 @@ Display CLR-specific information.
 
 ### Arguments
 
-|||
-|-|-|
-*file*| An image file built with [/clr](../../build/reference/clr-common-language-runtime-compilation.md).
+*file*<br/>
+An image file built with [/clr](../../build/reference/clr-common-language-runtime-compilation.md).
 
 ## Remarks
 

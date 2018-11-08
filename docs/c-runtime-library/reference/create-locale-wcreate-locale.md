@@ -43,16 +43,16 @@ The **_create_locale** function allows you to create an object that represents c
 
 **_wcreate_locale** is a wide-character version of **_create_locale**; the *locale* argument to **_wcreate_locale** is a wide-character string. **_wcreate_locale** and **_create_locale** behave identically otherwise.
 
-The *category* argument specifies the parts of the locale-specific behavior that are affected. The flags used for *category* and the parts of the program they affect are as shown in the following table.
+The *category* argument specifies the parts of the locale-specific behavior that are affected. The flags used for *category* and the parts of the program they affect are as shown in this table:
 
-|*category* flag|Affects|
-|-|-|
-**LC_ALL**|All categories, as listed below.
-**LC_COLLATE**|The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions.
-**LC_CTYPE**|The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected).
-**LC_MONETARY**|Monetary-formatting information returned by the **localeconv** function.
-**LC_NUMERIC**|Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
-**LC_TIME**|The **strftime** and **wcsftime** functions.
+| *category* flag | Affects |
+|-----------------|---------|
+| **LC_ALL** |All categories, as listed below. |
+| **LC_COLLATE** |The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions. |
+| **LC_CTYPE** | The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected). |
+| **LC_MONETARY** | Monetary-formatting information returned by the **localeconv** function. |
+| **LC_NUMERIC** | Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md). |
+| **LC_TIME** | The **strftime** and **wcsftime** functions. |
 
 This function validates the *category* and *locale* parameters. If the category parameter is not one of the values given in the previous table or if *locale* is **NULL**, the function returns **NULL**.
 

@@ -12,8 +12,8 @@ The first operator forces the *expression* to be treated as having the specified
 ## Syntax
 
 > *type* PTR *expression*
-
-> [[*distance*]] PTR *type*
+>
+> \[*distance*] PTR *type*
 
 ## See also
 

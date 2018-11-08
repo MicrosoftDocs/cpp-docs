@@ -10,7 +10,7 @@ helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bit
 ||||
 |-|-|-|
 |[operator&amp;](#op_amp)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator^](#op_xor)|[operator|](#op_or)|
+|[operator^](#op_xor)|[operator&#124;](#op_or)| |
 
 ## <a name="op_amp"></a>  operator&amp;
 
@@ -69,7 +69,6 @@ bitset 3: 0001
 Inserts a text representation of the bit sequence into the output stream.
 
 ```
-
 template <class CharType, class Traits, size_t N>
 basic_ostream<CharType, Traits>& operator<<(
     basic_ostream<CharType, Traits>& ostr,
@@ -127,7 +126,6 @@ int main( )
 Reads a string of bit characters into a bitset.
 
 ```
-
 template <class CharType, class Traits, size_t Bits>
 basic_istream<CharType, Traits>& operator>> (
     basic_istream<CharType, Traits>&
@@ -261,7 +259,7 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a>  operator|
+## <a name="op_or"></a>  operator&#124;
 
 Performs a bitwise `OR` between two bitsets.
 

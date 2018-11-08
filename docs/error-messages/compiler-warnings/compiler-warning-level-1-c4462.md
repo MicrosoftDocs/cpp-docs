@@ -24,18 +24,18 @@ This sample generates warning C4462:
 ```cpp
 namespace N
 {
-       public ref struct EventArgs sealed {};
-       public ref struct R sealed
-       {
-              R() {}
-              event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
-       };
+    public ref struct EventArgs sealed {};
+    public ref struct R sealed
+    {
+        R() {}
+        event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
+    };
 }
 
 [Platform::MTAThread]
 int main()
 {
-     auto x = ref new N::R();
+    auto x = ref new N::R();
 }
 ```
 

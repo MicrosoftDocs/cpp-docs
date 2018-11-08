@@ -14,21 +14,21 @@ Add a value to a memory location specified by an offset relative to the beginnin
 ## Syntax
 
 ```
-void __addgsbyte( 
-   unsigned long Offset, 
-   unsigned char Data 
+void __addgsbyte(
+   unsigned long Offset,
+   unsigned char Data
 );
-void __addgsword( 
-   unsigned long Offset, 
-   unsigned short Data 
+void __addgsword(
+   unsigned long Offset,
+   unsigned short Data
 );
-void __addgsdword( 
-   unsigned long Offset, 
-   unsigned long Data 
+void __addgsdword(
+   unsigned long Offset,
+   unsigned long Data
 );
-void __addgsqword( 
-   unsigned long Offset, 
-   unsigned __int64 Data 
+void __addgsqword(
+   unsigned long Offset,
+   unsigned __int64 Data
 );
 ```
 

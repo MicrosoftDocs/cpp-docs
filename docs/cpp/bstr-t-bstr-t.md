@@ -14,7 +14,7 @@ Constructs a `_bstr_t` object.
 ## Syntax
 
 ```
-_bstr_t( ) throw( ); 
+_bstr_t( ) throw( );
 _bstr_t(
    const _bstr_t& s1
 ) throw( );

@@ -263,10 +263,10 @@ A map containing the original data for the deferred operation.
 ### Syntax
 
 ```cpp
-CAtlMap< 
-   HROW hRow,  
-   Storage* pData 
-> 
+CAtlMap<
+   HROW hRow, 
+   Storage* pData
+>
 m_mapCachedData;
 ```
 

@@ -15,8 +15,8 @@ Gets the current value of the **_wpgmptr** global variable.
 ## Syntax
 
 ```C
-errno_t _get_wpgmptr( 
-   wchar_t **pValue 
+errno_t _get_wpgmptr(
+   wchar_t **pValue
 );
 ```
 

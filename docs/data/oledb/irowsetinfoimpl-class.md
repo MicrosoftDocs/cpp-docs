@@ -14,7 +14,7 @@ Provides an implementation for the [IRowsetInfo](/previous-versions/windows/desk
 ```cpp
 template <class T, class PropClass = T>
 class ATL_NO_VTABLE IRowsetInfoImpl :
-   public IRowsetInfo,  
+   public IRowsetInfo, 
    public CUtlProps<PropClass>
 ```
 

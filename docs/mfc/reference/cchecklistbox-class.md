@@ -50,13 +50,13 @@ If you want to handle Windows notification messages sent by a list box to its pa
 
 Each message-map entry takes the following form:
 
-**ON_**Notification **(**`id`, `memberFxn`**)**
+**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
 
 where `id` specifies the child window ID of the control sending the notification and `memberFxn` is the name of the parent member function you have written to handle the notification.
 
 The parent's function prototype is as follows:
 
-**afx_msg** `void` `memberFxn` **( );**
+`afx_msg void memberFxn();`
 
 There is only one message-map entry that pertains specifically to `CCheckListBox` (but see also the message-map entries for [CListBox](../../mfc/reference/clistbox-class.md)):
 

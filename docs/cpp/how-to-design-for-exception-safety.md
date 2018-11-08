@@ -20,60 +20,60 @@ No matter how a function handles an exception, to help guarantee that it is "exc
 When you encapsulate manual resource management in classes, use a class that does nothing else to manage each resource; otherwise, you might introduce leaks. Use [smart pointers](../cpp/smart-pointers-modern-cpp.md) when possible, as shown in the following example. This example is intentionally artificial and simplistic to highlight the differences when `shared_ptr` is used.
 
 ```cpp
-// old-style new/delete version
-class NDResourceClass {
+// old-style new/delete version
+class NDResourceClass {
 private:
-    int*   m_p;
-    float* m_q;
+    int*   m_p;
+    float* m_q;
 public:
-    NDResourceClass() : m_p(0), m_q(0) {
-        m_p = new int;
-        m_q = new float;
-    }
+    NDResourceClass() : m_p(0), m_q(0) {
+        m_p = new int;
+        m_q = new float;
+    }
 
-    ~NDResourceClass() {
-        delete m_p;
-        delete m_q;
-    }
-    // Potential leak! When a constructor emits an exception, 
-    // the destructor will not be invoked.   
+    ~NDResourceClass() {
+        delete m_p;
+        delete m_q;
+    }
+    // Potential leak! When a constructor emits an exception,
+    // the destructor will not be invoked.
 };
 
-// shared_ptr version
-#include <memory>
+// shared_ptr version
+#include <memory>
 
-using namespace std;
+using namespace std;
 
-class SPResourceClass {
+class SPResourceClass {
 private:
-    shared_ptr<int> m_p;
-    shared_ptr<float> m_q;
+    shared_ptr<int> m_p;
+    shared_ptr<float> m_q;
 public:
-    SPResourceClass() : m_p(new int), m_q(new float) { }
-    // Implicitly defined dtor is OK for these members, 
-    // shared_ptr will clean up and avoid leaks regardless.
+    SPResourceClass() : m_p(new int), m_q(new float) { }
+    // Implicitly defined dtor is OK for these members,
+    // shared_ptr will clean up and avoid leaks regardless.
 };
 
-// A more powerful case for shared_ptr
+// A more powerful case for shared_ptr
 
-class Shape {
-    // ...
+class Shape {
+    // ...
 };
 
-class Circle : public Shape {
-    // ...
+class Circle : public Shape {
+    // ...
 };
 
-class Triangle : public Shape {
-    // ...
+class Triangle : public Shape {
+    // ...
 };
 
-class SPShapeResourceClass {
+class SPShapeResourceClass {
 private:
-    shared_ptr<Shape> m_p;
-    shared_ptr<Shape> m_q;
+    shared_ptr<Shape> m_p;
+    shared_ptr<Shape> m_q;
 public:
-    SPShapeResourceClass() : m_p(new Circle), m_q(new Triangle) { }
+    SPShapeResourceClass() : m_p(new Circle), m_q(new Triangle) { }
 };
 ```
 

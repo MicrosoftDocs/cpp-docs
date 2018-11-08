@@ -10,8 +10,8 @@ ms.assetid: b53ea5da-d0b4-40dc-98f3-0aa52d548293
 ## Syntax
 
 ```
-expression * expression 
-expression / expression 
+expression * expression
+expression / expression
 expression % expression
 ```
 

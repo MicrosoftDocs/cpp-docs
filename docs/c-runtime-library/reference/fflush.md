@@ -81,17 +81,13 @@ int main( void )
 }
 ```
 
-```Output
-
-      This is a test
+```Input
 This is a test
-
+This is a test
 ```
 
 ```Output
-
-      This is a test
-This is a testEnter a sentence of four words with scanf: This is a test
+Enter a sentence of four words with scanf: This is a test
 This
 is
 a

@@ -14,7 +14,7 @@ Writes the specified value to the specified field in the current virtual machine
 ## Syntax
 
 ```
-unsigned char __vmx_vmwrite( 
+unsigned char __vmx_vmwrite(
    size_t Field,
    size_t FieldValue
 );

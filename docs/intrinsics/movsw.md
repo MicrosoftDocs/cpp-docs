@@ -14,10 +14,10 @@ Generates a Move String (`rep movsw`) instruction.
 ## Syntax
 
 ```
-void __movsw( 
-   unsigned short* Dest, 
-   unsigned short* Source, 
-   size_t Count 
+void __movsw(
+   unsigned short* Dest,
+   unsigned short* Source,
+   size_t Count
 );
 ```
 

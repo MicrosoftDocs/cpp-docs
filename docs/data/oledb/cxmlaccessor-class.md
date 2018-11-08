@@ -76,7 +76,7 @@ Retrieves the entire contents of a table as XML-formatted string data, by row.
 ### Syntax
 
 ```cpp
-HRESULT GetXMLRowData(CSimpleStringW& strOutput, 
+HRESULT GetXMLRowData(CSimpleStringW& strOutput,
    bool bAppend = false) throw();
 ```
 

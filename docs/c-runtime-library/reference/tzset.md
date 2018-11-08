@@ -29,11 +29,11 @@ The **_tzset** function uses the current setting of the environment variable **T
 
 |Parameter|Description|
 |-|-|
-*tzn*|Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC.
-*hh*|Difference in hours between UTC and local time. Sign (+) optional for positive values.
-*mm*|Minutes. Separated from *hh* by a colon (**:**).
-*ss*|Seconds. Separated from *mm* by a colon (**:**).
-*dzn*|Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *dzn*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST).
+| *tzn* | Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC. |
+| *hh* | Difference in hours between UTC and local time. Sign (+) optional for positive values. |
+| *mm* | Minutes. Separated from *hh* by a colon (**:**). |
+| *ss* | Seconds. Separated from *mm* by a colon (**:**). |
+| *dzn* | Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *dzn*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST). |
 
 > [!NOTE]
 > Take care in computing the sign of the time difference. Because the time difference is the offset from local time to UTC (rather than the reverse), its sign may be the opposite of what you might intuitively expect. For time zones ahead of UTC, the time difference is negative; for those behind UTC, the difference is positive.

@@ -37,10 +37,10 @@ If *command* is **NULL** and the command interpreter is found, returns a nonzero
 
 |||
 |-|-|
-**E2BIG**|The argument list (which is system-dependent) is too big.
-**ENOENT**|The command interpreter cannot be found.
-**ENOEXEC**|The command-interpreter file cannot be executed because the format is not valid.
-**ENOMEM**|Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call was not allocated correctly.
+| **E2BIG** | The argument list (which is system-dependent) is too big. |
+| **ENOENT** | The command interpreter cannot be found. |
+| **ENOEXEC** | The command-interpreter file cannot be executed because the format is not valid. |
+| **ENOMEM** | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call was not allocated correctly. |
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about these return codes.
 

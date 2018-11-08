@@ -14,8 +14,8 @@ Writes the value `Data` to the CR4 register.
 ## Syntax
 
 ```
-void writecr4( 
-   unsigned __int64 Data 
+void writecr4(
+   unsigned __int64 Data
 );
 ```
 

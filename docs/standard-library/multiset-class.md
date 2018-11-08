@@ -394,7 +394,7 @@ The number of elements in the multiset whose sort key matches the parameter key.
 
 The member function returns the number of elements *x* in the range
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) ).
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 ### Example
 

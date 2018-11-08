@@ -14,9 +14,9 @@ Generates the `out` instruction, which sends 1 byte specified by `Data` out the 
 ## Syntax
 
 ```
-void __outbyte( 
-   unsigned short Port, 
-   unsigned char Data 
+void __outbyte(
+   unsigned short Port,
+   unsigned char Data
 );
 ```
 

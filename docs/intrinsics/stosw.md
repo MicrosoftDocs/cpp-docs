@@ -14,10 +14,10 @@ Generates a store string instruction (`rep stosw`).
 ## Syntax
 
 ```
-void __stosw( 
-   unsigned short* Dest, 
-   unsigned short Data, 
-   size_t Count 
+void __stosw(
+   unsigned short* Dest,
+   unsigned short Data,
+   size_t Count
 );
 ```
 

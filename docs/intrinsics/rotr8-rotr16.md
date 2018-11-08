@@ -14,13 +14,13 @@ Rotate the input values to the right to the least significant bit (LSB) by a spe
 ## Syntax
 
 ```
-unsigned char _rotr8( 
-   unsigned char value, 
-   unsigned char shift 
+unsigned char _rotr8(
+   unsigned char value,
+   unsigned char shift
 );
-unsigned short _rotr16( 
-   unsigned short value, 
-   unsigned char shift 
+unsigned short _rotr16(
+   unsigned short value,
+   unsigned char shift
 );
 ```
 

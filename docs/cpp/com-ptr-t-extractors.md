@@ -14,11 +14,11 @@ Extract the encapsulated COM interface pointer.
 ## Syntax
 
 ```
-operator Interface*( ) const throw( ); 
-operator Interface&( ) const; 
-Interface& operator*( ) const; 
-Interface* operator->( ) const; 
-Interface** operator&( ) throw( ); 
+operator Interface*( ) const throw( );
+operator Interface&( ) const;
+Interface& operator*( ) const;
+Interface* operator->( ) const;
+Interface** operator&( ) throw( );
 operator bool( ) const throw( );
 ```
 

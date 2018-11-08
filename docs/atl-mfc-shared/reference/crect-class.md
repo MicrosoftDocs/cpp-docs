@@ -1,6 +1,6 @@
 ---
 title: "CRect Class"
-ms.date: "11/04/2016"
+ms.date: "11/06/2018"
 f1_keywords: ["CRect", "ATLTYPES/ATL::CRect", "ATLTYPES/ATL::CRect::CRect", "ATLTYPES/ATL::CRect::BottomRight", "ATLTYPES/ATL::CRect::CenterPoint", "ATLTYPES/ATL::CRect::CopyRect", "ATLTYPES/ATL::CRect::DeflateRect", "ATLTYPES/ATL::CRect::EqualRect", "ATLTYPES/ATL::CRect::Height", "ATLTYPES/ATL::CRect::InflateRect", "ATLTYPES/ATL::CRect::IntersectRect", "ATLTYPES/ATL::CRect::IsRectEmpty", "ATLTYPES/ATL::CRect::IsRectNull", "ATLTYPES/ATL::CRect::MoveToX", "ATLTYPES/ATL::CRect::MoveToXY", "ATLTYPES/ATL::CRect::MoveToY", "ATLTYPES/ATL::CRect::NormalizeRect", "ATLTYPES/ATL::CRect::OffsetRect", "ATLTYPES/ATL::CRect::PtInRect", "ATLTYPES/ATL::CRect::SetRect", "ATLTYPES/ATL::CRect::SetRectEmpty", "ATLTYPES/ATL::CRect::Size", "ATLTYPES/ATL::CRect::SubtractRect", "ATLTYPES/ATL::CRect::TopLeft", "ATLTYPES/ATL::CRect::UnionRect", "ATLTYPES/ATL::CRect::Width"]
 helpviewer_keywords: ["LPCRECT data type", "CRect class", "LPRECT operator", "RECT structure"]
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
@@ -61,8 +61,8 @@ class CRect : public tagRECT
 |[CRect::operator !=](#operator_neq)|Determines whether `CRect` is not equal to a rectangle.|
 |[CRect::operator &amp;](#operator_amp)|Creates the intersection of `CRect` and a rectangle and returns the resulting `CRect`.|
 |[CRect::operator &amp;=](#operator_amp_eq)|Sets `CRect` equal to the intersection of `CRect` and a rectangle.|
-|[CRect::operator |](#operator_or)|Creates the union of `CRect` and a rectangle and returns the resulting `CRect`.|
-|[CRect::operator |=](#operator_or_eq)|Sets `CRect` equal to the union of `CRect` and a rectangle.|
+|[CRect::operator &#124;](#operator_or)|Creates the union of `CRect` and a rectangle and returns the resulting `CRect`.|
+|[CRect::operator &#124;=](#operator_or_eq)|Sets `CRect` equal to the union of `CRect` and a rectangle.|
 |[CRect::operator +](#operator_add)|Adds the given offsets to `CRect` or inflates `CRect` and returns the resulting `CRect`.|
 |[CRect::operator +=](#operator_add_eq)|Adds the specified offsets to `CRect` or inflates `CRect`.|
 |[CRect::operator =](#operator_eq)|Copies the dimensions of a rectangle to `CRect`.|
@@ -76,7 +76,7 @@ class CRect : public tagRECT
 A `CRect` object can be passed as a function parameter wherever a `RECT` structure, `LPCRECT`, or `LPRECT` can be passed.
 
 > [!NOTE]
->  This class is derived from the `tagRECT` structure. (The name `tagRECT` is a less-commonly-used name for the `RECT` structure.) This means that the data members (`left`, `top`, `right`, and `bottom`) of the `RECT` structure are accessible data members of `CRect`.
+> This class is derived from the `tagRECT` structure. (The name `tagRECT` is a less-commonly-used name for the `RECT` structure.) This means that the data members (`left`, `top`, `right`, and `bottom`) of the `RECT` structure are accessible data members of `CRect`.
 
 A `CRect` contains member variables that define the top-left and bottom-right points of a rectangle.
 

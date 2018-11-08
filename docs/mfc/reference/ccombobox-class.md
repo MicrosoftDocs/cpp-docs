@@ -98,7 +98,7 @@ If you want to handle Windows notification messages sent by a combo box to its p
 
 Each message-map entry takes the following form:
 
-**ON_**Notification **(**`id`**,**`memberFxn`**)**
+**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
 
 where `id` specifies the child-window ID of the combo-box control sending the notification and `memberFxn` is the name of the parent member function you have written to handle the notification.
 

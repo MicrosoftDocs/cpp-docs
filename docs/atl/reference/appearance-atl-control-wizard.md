@@ -7,8 +7,6 @@ ms.assetid: cc16d7ff-74d7-4c15-9ebd-4b19201ff457
 ---
 # Appearance, ATL Control Wizard
 
-Insert "Search Results" summary here.
-
 Use this page of the wizard to identify additional user element options for the control. This page is available for controls identified as **Standard controls** under **Control type** on the [Options, ATL Control Wizard](../../atl/reference/options-atl-control-wizard.md) page.
 
 ## UIElement List
