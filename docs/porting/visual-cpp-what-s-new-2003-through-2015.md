@@ -546,7 +546,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-  -or-
+  \-or-
 
    ```cpp
     class base;  // as above
@@ -580,7 +580,7 @@ Although these differences can affect your source code or other build artifacts,
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'
    ```
 
-      Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
+   Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
 
 - **Calling 'operator *type*()' (user-defined conversion) on non-class types**  Previous versions of the compiler allowed 'operator *type*()' to be called on non-class types while silently ignoring it. This old behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2228 instead.
 
@@ -1667,10 +1667,10 @@ This improved support for ISO C/C++ standards may require changes to existing co
 - Scoped enumerations support. The C++ enum class enum-key is now supported. The following code demonstrates how this enum-key differs from previous enum behavior.
 
    ```cpp
-enum class Element { Hydrogen, Helium, Lithium, Beryllium };
-void func1(Element e);
-func1(Hydrogen); // error C2065: 'Hydrogen' : undeclared identifier
-func1(Element::Helium); // OK
+  enum class Element { Hydrogen, Helium, Lithium, Beryllium };
+  void func1(Element e);
+  func1(Hydrogen); // error C2065: 'Hydrogen' : undeclared identifier
+  func1(Element::Helium); // OK
    ```
 
 ### Windows Runtime App Development Support

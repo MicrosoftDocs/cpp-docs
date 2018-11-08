@@ -279,7 +279,6 @@ Constructing Sample(3)
 Constructing Sample(42)
 Deleting Sample(42)
 Deleting Sample(3)
-
 ```
 
 ## <a name="reset"></a>  unique_ptr::reset

@@ -39,7 +39,6 @@ long double fdiml(
    long double x,
    long double y
 );
-
 ```
 
 ### Parameters

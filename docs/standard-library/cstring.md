@@ -13,7 +13,6 @@ Includes the Standard C library header \<string.h> and adds the associated names
 
 ```cpp
 #include <cstring>
-
 ```
 
 ## Remarks

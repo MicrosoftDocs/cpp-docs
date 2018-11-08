@@ -13,7 +13,6 @@ Defines the template class basic_istream, which mediates extractions for the ios
 
 ```cpp
 #include <istream>
-
 ```
 
 ### Typedefs

@@ -17,7 +17,6 @@ Returns the total number of errors that can be detected by run-time error checks
 ```C
 
 int _RTC_NumErrors( void );
-
 ```
 
 ## Return Value

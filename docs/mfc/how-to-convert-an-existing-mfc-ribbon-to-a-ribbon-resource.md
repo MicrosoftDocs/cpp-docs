@@ -16,7 +16,6 @@ You must have an existing MFC project that has code that uses the MFC ribbon cla
 
 ```
     m_wndRibbonBar.SaveToXMLFile("RibbonOutput.xml");
-
 ```
 
    Save and close the file.
@@ -33,7 +32,6 @@ You must have an existing MFC project that has code that uses the MFC ribbon cla
 
 ```
     m_wndRibbonBar.LoadFromResource(IDR_RIBBON1);
-
 ```
 
 1. Build the project and run the program.

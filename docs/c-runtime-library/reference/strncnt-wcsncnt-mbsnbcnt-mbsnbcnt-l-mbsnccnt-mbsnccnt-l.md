@@ -44,7 +44,6 @@ size_t _mbsnccnt_l(
    size_t count,
    _locale_t locale
 );
-
 ```
 
 ### Parameters

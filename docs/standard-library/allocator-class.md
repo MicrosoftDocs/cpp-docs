@@ -27,7 +27,7 @@ All the C++ Standard Library containers have a template parameter that defaults 
 
 For example, an allocator object might allocate storage on a private heap or in shared memory, or it might optimize for small or large object sizes. It might also specify, through the type definitions it supplies, that elements be accessed through special accessor objects that manage shared memory, or perform automatic garbage collection. Hence, a class that allocates storage using an allocator object should use these types for declaring pointer and reference objects, as the containers in the C++ Standard Library do.
 
-**(C_++98/03 only)**When you derive from allocator class, you have to provide a [rebind](#rebind) struct, whose `_Other` typedef references your newly-derived class.
+<strong>(C++98/03 only)</strong> When you derive from allocator class, you have to provide a [rebind](#rebind) struct, whose `_Other` typedef references your newly-derived class.
 
 Thus, an allocator defines the following types:
 

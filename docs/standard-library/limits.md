@@ -13,7 +13,6 @@ Defines the template class `numeric_limits` and two enumerations concerning floa
 
 ```cpp
 #include <limits>
-
 ```
 
 ## Remarks

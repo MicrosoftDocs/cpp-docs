@@ -13,7 +13,6 @@ Include the iostreams standard header \<streambuf> to define the template class 
 
 ```cpp
 #include <streambuf>
-
 ```
 
 ### Typedefs

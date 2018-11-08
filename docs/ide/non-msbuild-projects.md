@@ -183,6 +183,7 @@ All custom and default environment variables are also available in tasks.vs.json
 #### Macros
 
 You have access to the following built-in macros inside CppProperties.json:
+
 |||
 |-|-|
 |`${workspaceRoot}`| the full path to the workspace folder|

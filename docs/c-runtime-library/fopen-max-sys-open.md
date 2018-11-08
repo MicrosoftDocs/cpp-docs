@@ -12,7 +12,6 @@ ms.assetid: 39cf5196-250a-459d-ae90-ce3d99f79039
 ```
 
 #include <stdio.h>
-
 ```
 
 ## Remarks

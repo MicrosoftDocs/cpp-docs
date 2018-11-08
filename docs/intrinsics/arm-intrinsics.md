@@ -218,7 +218,6 @@ void __iso_volatile_store16(volatile __int16 * Location, __int16 Value)
 void __iso_volatile_store32(volatile __int32 * Location, __int32 Value)
 void __iso_volatile_store64(volatile __int64 * Location, __int64 Value)
 void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
-
 ```
 
 #### Parameters
@@ -266,7 +265,6 @@ int _MoveFromCoprocessor2(
       unsigned int crm,
       unsigned int opcode2
 );
-
 ```
 
 #### Parameters
@@ -306,7 +304,6 @@ unsigned __int64 _MoveFromCoprocessor64(
       unsigned int opcode1,
       unsigned int crm,
 );
-
 ```
 
 #### Parameters
@@ -352,7 +349,6 @@ void _MoveToCoprocessor2(
       unsigned int crm,
       unsigned int opcode2
 );
-
 ```
 
 #### Parameters
@@ -396,7 +392,6 @@ void _MoveFromCoprocessor64(
       unsigned int opcode1,
       unsigned int crm,
 );
-
 ```
 
 #### Parameters

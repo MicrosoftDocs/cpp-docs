@@ -13,7 +13,6 @@ Include the standard header \<typeinfo> to define several types associated with 
 
 ```cpp
 #include <typeinfo>
-
 ```
 
 ## Remarks

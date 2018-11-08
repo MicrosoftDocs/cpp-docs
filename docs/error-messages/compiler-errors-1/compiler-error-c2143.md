@@ -25,7 +25,6 @@ class MyClass
     {
     };
 };
-
 ```
 
 By default, C++ assumes that `Ty::PutFuncType` isn't a template; therefore, the following `<` is interpreted as a less-than sign.  You must tell the compiler explicitly that `PutFuncType` is a template so that it can correctly parse the angle bracket. To correct this error, use the `template` keyword on the dependent type's name, as shown here:
@@ -38,7 +37,6 @@ class MyClass
     {
     };
 };
-
 ```
 
 C2143 can occur when **/clr** is used and a `using` directive has a syntax error:

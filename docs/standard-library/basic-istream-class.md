@@ -204,16 +204,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 a
-
 ```
 
 ```Output
-
-      aType the letter 'a':
-a
+Type the letter 'a': a
 1
 ```
 
@@ -297,7 +293,6 @@ int main( )
 ```
 
 ```Output
-
 1111
 ```
 
@@ -363,7 +358,6 @@ int main( )
 ```
 
 ```Output
-
 121
 ```
 
@@ -601,15 +595,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 abcde
-
 ```
 
 ```Output
-
-      abcdeType 'abcde': abcde
+Type 'abcde': abcde
 a abcde
 ```
 
@@ -656,7 +647,6 @@ int main( )
 ```
 
 ```Output
-
 qwq
 ```
 
@@ -712,15 +702,12 @@ int main()
 }
 ```
 
-```Output
-
+```Input
 abcde
-
 ```
 
 ```Output
-
-      abcdeType 'abcde': abcde
+Type 'abcde': abcde
 abcde
 ```
 
@@ -971,15 +958,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 abc
-
 ```
 
 ```Output
-
-      abcType 'abc': abc
+Type 'abc': abc
 abc
 ```
 

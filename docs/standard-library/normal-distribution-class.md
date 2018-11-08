@@ -128,7 +128,6 @@ int main()
 
     test(m_dist, s_dist, samples);
 }
-
 ```
 
 ```Output

@@ -126,7 +126,6 @@ Function: atoll("  -27182818284 ") = -27182818284
 Function: atoll("314127.64") = 314127
 Function: atoll("3336402735171707160320") = 9223372036854775807
 Overflow condition occurred.
-
 ```
 
 ## See also

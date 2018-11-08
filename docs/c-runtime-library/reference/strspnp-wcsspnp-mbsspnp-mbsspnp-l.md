@@ -35,7 +35,6 @@ unsigned char *_mbsspnp_l(
    const unsigned char *charset,
    _locale_t locale
 );
-
 ```
 
 ### Parameters

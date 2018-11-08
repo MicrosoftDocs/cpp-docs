@@ -11,7 +11,6 @@ In effect, includes the C++ Standard Library headers \<ccomplex> and \<cmath>, w
 
 ```cpp
 #include <ctgmath>
-
 ```
 
 ## Remarks

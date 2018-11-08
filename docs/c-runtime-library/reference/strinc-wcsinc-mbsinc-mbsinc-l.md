@@ -33,7 +33,6 @@ unsigned char *_mbsinc_l(
    const unsigned char *current,
    _locale_t locale
 );
-
 ```
 
 ### Parameters

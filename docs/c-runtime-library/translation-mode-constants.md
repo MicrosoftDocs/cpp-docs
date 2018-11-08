@@ -12,7 +12,6 @@ ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
 ```
 
 #include <fcntl.h>
-
 ```
 
 ## Remarks

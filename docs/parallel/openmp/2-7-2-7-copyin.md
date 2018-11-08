@@ -12,7 +12,6 @@ The **copyin** clause provides a mechanism to assign the same value to **threadp
 copyin(
 variable-list
 )
-
 ```
 
 The restrictions to the **copyin** clause are as follows:

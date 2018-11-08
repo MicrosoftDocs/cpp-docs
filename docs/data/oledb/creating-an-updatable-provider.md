@@ -54,17 +54,22 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
 
 1. Add the following to your COM map (`BEGIN_COM_MAP ... END_COM_MAP`):
 
-   |If you implement|Add to COM map|
-   |----------------------|--------------------|
-   |`IRowsetChangeImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)`|
-   |`IRowsetUpdateImpl`|`COM_INTERFACE_ENTRY(IRowsetUpdate)`|
+   |  If you implement   |           Add to COM map             |
+   |---------------------|--------------------------------------|
+   | `IRowsetChangeImpl` | `COM_INTERFACE_ENTRY(IRowsetChange)` |
+   | `IRowsetUpdateImpl` | `COM_INTERFACE_ENTRY(IRowsetUpdate)` |
+
+   | If you implement | Add to property set map |
+   |----------------------|-----------------------------|
+   | `IRowsetChangeImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)` |
+   | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
 1. In your command, add the following to your property set map (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):
 
-   |If you implement|Add to property set map|
-   |----------------------|-----------------------------|
-   |`IRowsetChangeImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`|
-   |`IRowsetUpdateImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)`|
+   |  If you implement   |                                             Add to property set map                                              |
+   |---------------------|------------------------------------------------------------------------------------------------------------------|
+   | `IRowsetChangeImpl` |                            `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`                             |
+   | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
 1. In your property set map, you should also include all of the following settings as they appear below:
 
@@ -121,8 +126,8 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
 
    - `DBPROP_MAXPENDINGROWS`.
 
-      > [!NOTE]
-      > If you support notifications, you might also have some other properties as well; see the section on `IRowsetNotifyCP` for this list.
+   > [!NOTE]
+   > If you support notifications, you might also have some other properties as well; see the section on `IRowsetNotifyCP` for this list.
 
 ##  <a name="vchowwritingtothedatasource"></a> Writing to the Data Source
 

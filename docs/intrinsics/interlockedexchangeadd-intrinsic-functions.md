@@ -94,7 +94,6 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
    __int64 volatile * Addend,
    __int64 Value
 );
-
 ```
 
 #### Parameters

@@ -13,7 +13,6 @@ Defines several classes that support iostreams operations on sequences stored in
 
 ```cpp
 #include <strstream>
-
 ```
 
 ## Remarks

@@ -13,7 +13,6 @@ Includes the Standard C library header \<time.h> and adds the associated names t
 
 ```cpp
 #include <ctime>
-
 ```
 
 ## Remarks

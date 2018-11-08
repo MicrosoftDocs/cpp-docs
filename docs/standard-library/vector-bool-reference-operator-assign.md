@@ -81,7 +81,6 @@ int main()
     cout << "The original value of the 3rd element still stored in a bool: " << b3 << endl;
     cout << endl;
 }
-
 ```
 
 ## Output

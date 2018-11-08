@@ -670,7 +670,6 @@ int main()
     // The next line causes a debug assertion when it executes.
     copy(v.begin(), v.end(), stdext::make_checked_array_iterator(dest, dest_size));
 }
-
 ```
 
 ## <a name="make_move_iterator"></a>  make_move_iterator
@@ -769,7 +768,6 @@ int main()
 
     delete[] dest;
 }
-
 ```
 
 ## <a name="next"></a>  next

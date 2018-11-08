@@ -28,7 +28,6 @@ int __wgetmainargs (
    wchar_t ***_Env,
    int _DoWildCard,
    _startupinfo * _StartInfo)
-
 ```
 
 #### Parameters

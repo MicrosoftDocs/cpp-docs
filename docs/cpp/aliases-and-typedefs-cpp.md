@@ -61,7 +61,6 @@ using func = void(*)(int);
 // func can be assigned to a function pointer value
 void actual_function(int arg) { /* some code */ }
 func fptr = &actual_function;
-
 ```
 
 A limitation of the **typedef** mechanism is that it doesn't work with templates. However, the type alias syntax in C++11 enables the creation of alias templates:
@@ -71,7 +70,6 @@ template<typename T> using ptr = T*;
 
 // the name 'ptr<T>' is now an alias for pointer to T
 ptr<int> ptr_int;
-
 ```
 
 ## Example

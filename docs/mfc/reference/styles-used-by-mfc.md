@@ -185,6 +185,7 @@ The following message-box styles are available.
 |MB_ICONINFORMATION|An icon consisting of an "I" in a circle appears in the message box.|
 |MB_ICONQUESTION|A question-mark icon appears in the message box.|
 |MB_ICONSTOP|A stop-sign icon appears in the message box.|
+
 ### Message-box default buttons
 
 |Style|Description|

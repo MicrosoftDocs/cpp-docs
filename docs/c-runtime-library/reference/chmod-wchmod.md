@@ -129,7 +129,6 @@ int main( void )
 ```Output
 
 A line of text.
-
 ```
 
 ```Output

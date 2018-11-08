@@ -13,7 +13,6 @@ Includes the Standard C library header \<stddef.h> and adds the associated names
 
 ```cpp
 #include <cstddef>
-
 ```
 
 ## Remarks

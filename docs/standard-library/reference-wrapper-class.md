@@ -64,6 +64,7 @@ The helper functions [std::ref](functional-functions.md#ref) and [std::cref](fun
 |-|-|
 |[reference_wrapper::operator Ty&amp;](#op_ty_amp)|Gets a pointer to the wrapped reference.|
 |[reference_wrapper::operator()](#op_call)|Calls the wrapped reference.|
+
 ## Requirements
 
 **Header:** \<functional>

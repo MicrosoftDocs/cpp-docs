@@ -31,8 +31,11 @@ Starting in Visual Studio 2017, the **Visual C++ Tools for CMake** component use
 When you choose **File | Open | Folder** to open a folder containing a CMakeLists.txt file, the following things happen:
 
 - Visual Studio adds a **CMake** menu item to the main menu, with commands for viewing and editing CMake scripts.
+
 - **Solution Explorer** displays the folder structure and files.
+
 - Visual Studio runs CMake.exe and generates the CMake cache for the default *configuration*, which is x86 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.  **Visual Studio 2017 version 15.7 and later**: Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
+
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
 You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" CMakeLists.txt files in your workspace. CMake operations (configure, build, debug) as well as C++ IntelliSense and browsing are available to all CMake projects in your workspace.
@@ -70,7 +73,9 @@ Not everything in the cache is imported.  Properties such as the generator and t
 To build a CMake project, you have these choices:
 
 1. Select the target in the **Debug** dropdown and press **F5**, or click the **Run** (green triangle) button. The project automatically builds first, just like a Visual Studio solution.
+
 1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
+
 1. From the main menu, select **Build | Build Solution** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
@@ -175,20 +180,25 @@ The following example shows a sample configuration, which you can use as the sta
       "buildCommandArgs": "-v",
       "ctestCommandArgs": ""
     },
-
 ```
 
 1. **name**: the name that appears in the C++ configuration dropdown. This property value can also be used as a macro, `${name}`, to specify other property values. For an example, see the **buildRoot** definition in CMakeSettings.json.
 
 1. **generator**: maps to the **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, to help specify other property values. Visual Studio currently supports the following CMake generators:
 
-    - "Ninja"
-    - "Visual Studio 14 2015"
-    - "Visual Studio 14 2015 ARM"
-    - "Visual Studio 14 2015 Win64"
-    - "Visual Studio 15 2017"
-    - "Visual Studio 15 2017 ARM"
-    - "Visual Studio 15 2017 Win64"
+   - "Ninja"
+
+   - "Visual Studio 14 2015"
+
+   - "Visual Studio 14 2015 ARM"
+
+   - "Visual Studio 14 2015 Win64"
+
+   - "Visual Studio 15 2017"
+
+   - "Visual Studio 15 2017 ARM"
+
+   - "Visual Studio 15 2017 Win64"
 
 Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate a Visual Studio project instead.
 
@@ -225,11 +235,17 @@ CMakeSettings.json also supports consuming environment variables in any of the p
 You also have access to built-in macros inside this file:
 
 - `${workspaceRoot}` – provides the full path of the workspace folder
+
 - `${workspaceHash}` – hash of workspace location; useful for creating a unique identifier for the current workspace (for example, to use in folder paths)
+
 - `${projectFile}` – the full path of the root CMakeLists.txt file
+
 - `${projectDir}` – the full path of the folder of the root CMakeLists.txt file
+
 - `${thisFile}` – the full path of the CMakeSettings.json file
+
 - `${name}` – the name of the configuration
+
 - `${generator}` – the name of the CMake generator used in this configuration
 
 ### Ninja command line arguments
@@ -386,9 +402,11 @@ If you need more information about the state of the CMake cache to diagnose a pr
 ![CMake single file compilation](media/cmake-single-file-compile.png)
 
 ## Run CMake from the command line
+
 If you have installed CMake from the Visual Studio Installer, you can run it from the command line by following these steps:
 
 1. Run the appropriate vsdevcmd.bat (x86/x64). See [Building on the Command Line](../build/building-on-the-command-line.md) for more information.
-1. Switch to your output folder.
-1. Run CMake to build/configure your app.
 
+1. Switch to your output folder.
+
+1. Run CMake to build/configure your app.

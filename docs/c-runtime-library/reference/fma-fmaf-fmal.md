@@ -44,7 +44,6 @@ long double fmal(
    long double  y,
    long double z
 );
-
 ```
 
 ### Parameters

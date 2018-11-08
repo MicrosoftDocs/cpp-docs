@@ -17,5 +17,4 @@ The following sample generates C4829:
 // C4829.cpp
 // compile by using: cl /EHsc /ZW /W4 /c C4829.cpp
 int main(Platform::String ^ s) {}   // C4829
-
 ```

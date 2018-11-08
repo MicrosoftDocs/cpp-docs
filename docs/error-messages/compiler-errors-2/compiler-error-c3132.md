@@ -21,5 +21,4 @@ void f( [ParamArray] Int32[,] );   // C3132
 void g( [ParamArray] Int32[] );   // C3132
 
 void h( [ParamArray] array<Char ^> ^ MyArray );   // OK
-
 ```

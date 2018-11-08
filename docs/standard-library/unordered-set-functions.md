@@ -91,7 +91,6 @@ std::cout << std::endl;
 
 return (0);
 }
-
 ```
 
 ```Output
@@ -99,7 +98,6 @@ return (0);
 [c] [b] [a]
 [f] [e] [d]
 [c] [b] [a]
-
 ```
 
 ## <a name="swap_unordered_multiset"></a>  swap (unordered_multiset)
@@ -185,7 +183,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -193,7 +190,6 @@ int main()
 [c] [b] [a]
 [f] [e] [d]
 [c] [b] [a]
-
 ```
 
 ## See also

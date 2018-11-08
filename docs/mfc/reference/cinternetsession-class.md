@@ -284,12 +284,12 @@ Pointer to a null-terminated string that specifies the name of the user to log i
 *pstrPassword*<br/>
 A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are NULL, the default anonymous password is the user's email name. If *pstrPassword* is NULL (or an empty string) but *pstrUserName* is not NULL, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:
 
-|*pstrUserName*|*pstrPassword*|Username sent to FTP server|Password sent to FTP server|
-|--------------------|--------------------|---------------------------------|---------------------------------|
-|NULL or " "|NULL or " "|"anonymous"|User's email name|
-|Non-NULL String|NULL or " "|*pstrUserName*|" "|
-|NULL|Non-NULL String|ERROR|ERROR||
-|Non-NULL String|Non-NULL String|*pstrUserName*|*pstrPassword*|
+| *pstrUserName*  | *pstrPassword*  | Username sent to FTP server | Password sent to FTP server |
+|-----------------|-----------------|-----------------------------|-----------------------------|
+|   NULL or " "   |   NULL or " "   |         "anonymous"         |      User's email name      |
+| Non-NULL String |   NULL or " "   |       *pstrUserName*        |             " "             |
+|      NULL       | Non-NULL String |            ERROR            |            ERROR            |
+| Non-NULL String | Non-NULL String |       *pstrUserName*        |       *pstrPassword*        |
 
 *nPort*<br/>
 A number that identifies the TCP/IP port to use on the server.

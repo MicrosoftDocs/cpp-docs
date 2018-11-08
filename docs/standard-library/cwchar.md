@@ -13,7 +13,6 @@ Includes the Standard C library header \<wchar.h> and adds the associated names 
 
 ```cpp
 #include <cwchar>
-
 ```
 
 ## Remarks

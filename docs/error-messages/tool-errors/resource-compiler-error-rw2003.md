@@ -43,10 +43,10 @@ Generation Error
 
    For Windows 3.1 a resource cannot exceed approximately 65000 bytes. If your resource does, then you will not be able to compile it with Visual C++ or the command-line resource compiler. This limit does not apply to cursors, icons, bitmaps, or other file-based resources.
 
-9. **Resource file is not in 3.00 format**
+1. **Resource file is not in 3.00 format**
 
    A cursor or icon used a format earlier than version 3.00. The resource must be converted or redrawn using the format for version 3.00 or later.
 
-10. **Unable to open temporary file**
+1. **Unable to open temporary file**
 
    The Resource Compiler/Visual C++ was unable to open a temporary file. The probable cause is either that you do not have write permissions for the directory or that the directory does not exist. The Resource Compiler/Visual C++ attempts to use these files in the directory specified by the **TMP** environment variable or the current directory if none is specified.

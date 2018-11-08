@@ -16,7 +16,6 @@ Reads the CR0 register and returns its value.
 ```
 unsigned long __readcr0(void);  /* X86 */
 unsigned __int64 __readcr0(void);  /* X64 */
-
 ```
 
 ## Return Value

@@ -13,7 +13,6 @@ Declares objects that control reading from and writing to the standard streams. 
 
 ```cpp
 #include <iostream>
-
 ```
 
 ## Remarks
@@ -139,7 +138,6 @@ int main()
 ```Output
 
 2
-
 ```
 
 ###  <a name="clog"></a>  clog

@@ -13,7 +13,6 @@ Includes the Standard C library header \<signal.h> and adds the associated names
 
 ```cpp
 #include <csignal>
-
 ```
 
 ## Remarks

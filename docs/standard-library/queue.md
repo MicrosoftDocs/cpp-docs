@@ -13,7 +13,6 @@ Defines the template classes priority_queue and queue and several supporting tem
 
 ```cpp
 #include <queue>
-
 ```
 
 ### Operators

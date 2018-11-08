@@ -13,7 +13,6 @@ Includes the Standard C library header \<wctype.h> and adds the associated names
 
 ```cpp
 #include <cwctype>
-
 ```
 
 ## Remarks

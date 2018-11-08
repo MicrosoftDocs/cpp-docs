@@ -21,7 +21,6 @@ The `METHOD_PROLOGUE` macro is defined as:
     theClass* pThis = \
     ((theClass*)((BYTE*)this - offsetof(theClass, m_x##localClass))); \
     AFX_MANAGE_STATE(pThis->m_pModuleState) \
-
 ```
 
 The portion of the macro concerned with managing the global state is:

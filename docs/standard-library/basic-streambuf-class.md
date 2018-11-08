@@ -593,15 +593,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 3
-
 ```
 
 ```Output
-
-      33
+33
 51
 ```
 
@@ -871,14 +868,11 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 aa
-
 ```
 
 ```Output
-
 aa97
 ```
 

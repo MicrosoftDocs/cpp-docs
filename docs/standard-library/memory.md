@@ -13,7 +13,6 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ```cpp
 #include <memory>
-
 ```
 
 ## Members

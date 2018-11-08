@@ -75,7 +75,6 @@ To override this functionality and the way that a Help context is determined, yo
 ```
 
 afx_msg LRESULT CWnd::OnCommandHelp(WPARAM wParam, LPARAM lParam)
-
 ```
 
 WM_COMMANDHELP is a private Windows MFC message that is received by the active window when Help is requested. When the window receives this message, it may call `CWinApp::WinHelp` with context that matches the window's internal state.

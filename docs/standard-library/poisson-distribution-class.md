@@ -119,7 +119,6 @@ int main()
 
     test(p_dist, samples);
 }
-
 ```
 
 First test:

@@ -23,5 +23,4 @@ int main() {
    unsigned int i = (unsigned int) p;   // C4311 for 64-bit targets
    unsigned long long j = (unsigned long long) p;   // OK
 }
-
 ```

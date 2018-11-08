@@ -45,7 +45,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## Output

@@ -77,7 +77,6 @@ int main( )
     myAuto = 12;
     cout << count << endl;
 }
-
 ```
 
 In the previous example, myAuto is an int, not an int reference, so the output is `11 11`, not `11 12` as would be the case if the reference qualifier had not been dropped by **auto**.
