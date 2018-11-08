@@ -10,6 +10,8 @@
 # [Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)
 # [Open Folder projects](non-msbuild-projects.md)
 # [CMake projects](cmake-tools-for-visual-cpp.md)
+## [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
+## [Customizing CMake configurations and other settings](customizing-cmake-settings.md)
 # [MSBuild Projects](creating-and-managing-visual-cpp-projects.md)
 ## [Project Types in Visual C++](visual-cpp-project-types.md)
 ## [Add New Item Templates in Visual C++](using-visual-cpp-add-new-item-templates.md)
