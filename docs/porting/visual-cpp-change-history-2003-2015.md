@@ -109,7 +109,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    To add this library to your linker input in the IDE, open the context menu for the project node, choose **Properties**, then in the **Project Properties** dialog box, choose **Linker**, and edit the **Linker Input** to add `legacy_stdio_definitions.lib` to the semi-colon-separated list.
 
-   If your project links with static libraries that were compiled with a release of Visual Studio earlier than 2015, the linker might report an unresolved external symbol. These errors might reference internal stdio definitions for _iob, _iob_func, or related imports for certain stdio functions in the form of _imp\_*. Microsoft recommends that you recompile all static libraries with the latest version of the C++ compiler and libraries when you upgrade a project. If the library is a third-party library for which source is not available, you should either request an updated binary from the third party or encapsulate your usage of that library into a separate DLL that you compile with the older version of the compiler and libraries.
+   If your project links with static libraries that were compiled with a release of Visual Studio earlier than 2015, the linker might report an unresolved external symbol. These errors might reference internal stdio definitions for `_iob`, `_iob_func`, or related imports for certain stdio functions in the form of _imp_\*. Microsoft recommends that you recompile all static libraries with the latest version of the C++ compiler and libraries when you upgrade a project. If the library is a third-party library for which source is not available, you should either request an updated binary from the third party or encapsulate your usage of that library into a separate DLL that you compile with the older version of the compiler and libraries.
 
     > [!WARNING]
     > If you are linking with Windows SDK 8.1 or earlier, you might encounter these unresolved external symbol errors. In that case, you should resolve the error by adding legacy_stdio_definitions.lib to the linker input as described previously.
@@ -164,8 +164,16 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
     printf("%.0f\n", pow(2.0, 80))
     ```
 
+   Old output:
+
     ```Output
-        Old:  1208925819614629200000000    New:  1208925819614629174706176
+    1208925819614629200000000
+    ```
+
+   New output:
+
+    ```Output
+    1208925819614629174706176
     ```
 
    The old parsing algorithms would consider only up to 17 significant digits from the input string and would discard the rest of the digits. This is sufficient to generate a very close approximation of the value represented by the string, and the result is usually very close to the correctly rounded result. The new implementation considers all present digits and produces the correctly rounded result for all inputs (up to 768 digits in length). In addition, these functions now respect the rounding mode (controllable via fesetround).  This is a potentially breaking behavior change because these functions might output different results. The new results are always more correct than the old results.
@@ -634,7 +642,7 @@ Although these differences can affect your source code or other build artifacts,
    For example, suppose your code defines both a **placement new** and a **placement delete**:
 
     ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
     ```
 

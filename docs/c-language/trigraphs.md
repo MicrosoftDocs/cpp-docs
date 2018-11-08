@@ -16,29 +16,29 @@ The following table shows the nine trigraph sequences. All occurrences in a sour
 
 ### Trigraph Sequences
 
-|Trigraph|Punctuation Character|
-|--------------|---------------------------|
-|??=|#|
-|??(|[|
-|??/|\|
-|??)|]|
-|??'|^|
-|??\<|{|
-|??!|&#124;|
-|??>|}|
-|??-|~|
+| Trigraph | Punctuation Character |
+|----------|-----------------------|
+| ??= | # |
+| ??( | \[ |
+| ??/ | \\ |
+| ??) | ] |
+| ??' | ^ |
+| ??\< | { |
+| ??! | &#124; |
+| ??> | } |
+| ??- | ~ |
 
 A trigraph is always treated as a single source character. The translation of trigraphs takes place in the first [translation phase](../preprocessor/phases-of-translation.md), before the recognition of escape characters in string literals and character constants. Only the nine trigraphs shown in the above table are recognized. All other character sequences are left untranslated.
 
 The character escape sequence, **\\?**, prevents the misinterpretation of trigraph-like character sequences. (For information about escape sequences, see [Escape Sequences](../c-language/escape-sequences.md).) For example, if you attempt to print the string `What??!` with this `printf` statement
 
-```
+```C
 printf( "What??!\n" );
 ```
 
 the string printed is `What|` because `??!` is a trigraph sequence that is replaced with the `|` character. Write the statement as follows to correctly print the string:
 
-```
+```C
 printf( "What?\?!\n" );
 ```
 

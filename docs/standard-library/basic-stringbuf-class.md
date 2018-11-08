@@ -151,7 +151,7 @@ If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it ret
 
 ### Remarks
 
-If _ *Meta* does not compare equal to **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the protected virtual member function tries to insert the element **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*) into the output buffer. It can do so in various ways:
+If *\_Meta* does not compare equal to **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the protected virtual member function tries to insert the element **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) into the output buffer. It can do so in various ways:
 
 - If a write position is available, it can store the element into the write position and increment the next pointer for the output buffer.
 

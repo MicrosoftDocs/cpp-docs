@@ -11,8 +11,8 @@ Returns *expression1* minus *expression2*. The second operator reverses the sign
 
 ## Syntax
 
-> expression1 - expression2
-
+> *expression1* - *expression2*
+>
 > -*expression*
 
 ## See also

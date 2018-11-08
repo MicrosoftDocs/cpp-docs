@@ -26,7 +26,7 @@ The preemptive model and cooperative scheduling models are two common ways to en
 
 ### Preemptive and Cooperative Scheduling
 
-*Preemptive scheduling* is a round-robin, priority-based mechanism that gives every task exclusive access to a computing resource for a given time period, and then switches to another task. Preemptive scheduling is common in multitasking operating systems such as Windows*. Cooperative scheduling* is a mechanism that gives every task exclusive access to a computing resource until the task finishes or until the task yields its access to the resource. The Concurrency Runtime uses cooperative scheduling together with the preemptive scheduler of the operating system to achieve maximum usage of processing resources.
+*Preemptive scheduling* is a round-robin, priority-based mechanism that gives every task exclusive access to a computing resource for a given time period, and then switches to another task. Preemptive scheduling is common in multitasking operating systems such as Windows. *Cooperative scheduling* is a mechanism that gives every task exclusive access to a computing resource until the task finishes or until the task yields its access to the resource. The Concurrency Runtime uses cooperative scheduling together with the preemptive scheduler of the operating system to achieve maximum usage of processing resources.
 
 ### Differences Between Preemptive and Cooperative Schedulers
 

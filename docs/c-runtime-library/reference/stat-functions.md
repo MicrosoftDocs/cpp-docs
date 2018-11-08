@@ -123,17 +123,17 @@ The **_stat** structure, defined in SYS\STAT.H, includes the following fields.
 
 |Field||
 |-|-|
-**st_gid**|Numeric identifier of group that owns the file (UNIX-specific) This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
-**st_atime**|Time of last access of file. Valid on NTFS but not on FAT formatted disk drives.
-**st_ctime**|Time of creation of file. Valid on NTFS but not on FAT formatted disk drives.
-**st_dev**|Drive number of the disk containing the file (same as **st_rdev**).
-**st_ino**|Number of the information node (the **inode**) for the file (UNIX-specific). On UNIX file systems, the **inode** describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same **inode**. The **inode**, and therefore **st_ino**, has no meaning in the FAT, HPFS, or NTFS file systems.
-**st_mode**|Bit mask for file-mode information. The **_S_IFDIR** bit is set if *path* specifies a directory; the **_S_IFREG** bit is set if *path* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension.
-**st_mtime**|Time of last modification of file.
-**st_nlink**|Always 1 on non-NTFS file systems.
-**st_rdev**|Drive number of the disk containing the file (same as **st_dev**).
-**st_size**|Size of the file in bytes; a 64-bit integer for variations with the **i64** suffix.
-**st_uid**|Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
+| **st_gid** | Numeric identifier of group that owns the file (UNIX-specific) This field will always be zero on Windows systems. A redirected file is classified as a Windows file. |
+| **st_atime** | Time of last access of file. Valid on NTFS but not on FAT formatted disk drives. |
+| **st_ctime** | Time of creation of file. Valid on NTFS but not on FAT formatted disk drives. |
+| **st_dev** | Drive number of the disk containing the file (same as **st_rdev**). |
+| **st_ino** | Number of the information node (the **inode**) for the file (UNIX-specific). On UNIX file systems, the **inode** describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same **inode**. The **inode**, and therefore **st_ino**, has no meaning in the FAT, HPFS, or NTFS file systems. |
+| **st_mode** | Bit mask for file-mode information. The **_S_IFDIR** bit is set if *path* specifies a directory; the **_S_IFREG** bit is set if *path* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension. |
+| **st_mtime** | Time of last modification of file. |
+| **st_nlink** | Always 1 on non-NTFS file systems. |
+| **st_rdev** | Drive number of the disk containing the file (same as **st_dev**). |
+| **st_size** | Size of the file in bytes; a 64-bit integer for variations with the **i64** suffix. |
+| **st_uid** | Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on Windows systems. A redirected file is classified as a Windows file. |
 
 If *path* refers to a device, the **st_size**, various time fields, **st_dev**, and **st_rdev** fields in the **_stat** structure are meaningless. Because STAT.H uses the [_dev_t](../../c-runtime-library/standard-types.md) type that is defined in TYPES.H, you must include TYPES.H before STAT.H in your code.
 

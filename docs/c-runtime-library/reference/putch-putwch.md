@@ -19,10 +19,11 @@ Writes a character to the console.
 
 ```C
 int _putch(
-int c
+   int c
 );
+
 wint_t _putwch(
-   wchar_t c
+   wchar_t c
 );
 ```
 

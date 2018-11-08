@@ -14,7 +14,7 @@ Returns the encapsulated interface pointer.
 ## Syntax
 
 ```
-Interface* GetInterfacePtr( ) const throw( ); 
+Interface* GetInterfacePtr( ) const throw( );
 Interface*& GetInterfacePtr() throw();
 ```
 

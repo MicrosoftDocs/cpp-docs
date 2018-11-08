@@ -15,8 +15,8 @@ Gets the current value of the **_pgmptr** global variable.
 ## Syntax
 
 ```C
-errno_t _get_pgmptr( 
-   char **pValue 
+errno_t _get_pgmptr(
+   char **pValue
 );
 ```
 

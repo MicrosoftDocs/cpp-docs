@@ -24,11 +24,11 @@ int _heapchk( void );
 
 |Return value|Condition|
 |-|-|
-**_HEAPBADBEGIN**|Initial header information is bad or cannot be found.
-**_HEAPBADNODE**|Bad node has been found or heap is damaged.
-**_HEAPBADPTR**|Pointer into heap is not valid.
-**_HEAPEMPTY**|Heap has not been initialized.
-**_HEAPOK**|Heap appears to be consistent.
+| **_HEAPBADBEGIN** | Initial header information is bad or cannot be found. |
+| **_HEAPBADNODE** | Bad node has been found or heap is damaged. |
+| **_HEAPBADPTR** | Pointer into heap is not valid. |
+| **_HEAPEMPTY** | Heap has not been initialized. |
+| **_HEAPOK** | Heap appears to be consistent. |
 
 In addition, if an error occurs, **_heapchk** sets **errno** to **ENOSYS**.
 

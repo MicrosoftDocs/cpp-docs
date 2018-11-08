@@ -47,9 +47,9 @@ Returns the values of properties in the Data Source, Data Source Information, an
 ### Syntax
 
 ```cpp
-STDMETHOD(GetProperties)(ULONG cPropertySets, 
-   const DBPROPIDSET rgPropertySets[], 
-   ULONG * pcProperties, 
+STDMETHOD(GetProperties)(ULONG cPropertySets,
+   const DBPROPIDSET rgPropertySets[],
+   ULONG * pcProperties,
    DBPROPSET ** prgProperties);
 ```
 
@@ -77,10 +77,10 @@ Returns property information supported by the data source.
 ### Syntax
 
 ```cpp
-STDMETHOD(GetPropertyInfo)(ULONG cPropertySets, 
-   const DBPROPIDSET rgPropertySets[], 
-   ULONG * pcPropertyInfoSets, 
-   DBPROPINFOSET ** prgPropertyInfoSets, 
+STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
+   const DBPROPIDSET rgPropertySets[],
+   ULONG * pcPropertyInfoSets,
+   DBPROPINFOSET ** prgPropertyInfoSets,
    OLECHAR ** ppDescBuffer);
 ```
 
@@ -106,7 +106,7 @@ Sets properties in the Data Source and Initialization property groups, for data 
 ### Syntax
 
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets, 
+STDMETHOD(SetProperties)(ULONG cPropertySets,
    DBPROPSET rgPropertySets[]);
 ```
 

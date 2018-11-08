@@ -50,7 +50,7 @@ These are the assumptions made in the exception handling description:
 
 For frame chained functions, the fp and lr pair can be saved at any position in the local variable area depending on optimization considerations. The goal is to maximize the number of locals that can be reached by one single instruction based on frame pointer (r29) or stack pointer (sp). However for `alloca` functions, it must be chained and r29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register aave areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<r29, lr> pair) and outgoing parameter size, respectively.
 
-1. Chained, #localsz <= 512
+1. Chained, #localsz \<= 512
 
     ```asm
         stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
@@ -89,7 +89,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         sub    sp,#framesz-72           // allocate the remaining local area
     ```
 
-   All locals are accessed based on SP. \<r29,lr> points to the previous frame. For frame size <= 512, the "sub sp, ..." can be optimized away if the regs saved area is moved to the bottom of stack. The downside of that is that it is not consistent with other layouts above, and saved regs take part of the range for pair-regs and pre- and post-indexed offset addressing mode.
+   All locals are accessed based on SP. \<r29,lr> points to the previous frame. For frame size \<= 512, the "sub sp, ..." can be optimized away if the regs saved area is moved to the bottom of stack. The downside of that is that it is not consistent with other layouts above, and saved regs take part of the range for pair-regs and pre- and post-indexed offset addressing mode.
 
 1. Unchained, non-leaf functions (lr is saved in Int saved area)
 
@@ -125,7 +125,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
 
    All locals are accessed based on SP. \<r29> points to the previous frame.
 
-1. Chained, #framesz <= 512, #outsz = 0
+1. Chained, #framesz \<= 512, #outsz = 0
 
     ```asm
         stp    r29, lr, [sp, -#framesz]!    // pre-indexed, save <r29,lr>
@@ -277,40 +277,40 @@ If exceptions were guaranteed to only ever occur within a function body (and nev
 
 The unwind codes are encoded according to the table below. All unwind codes are a single/double byte, except the one that allocates a huge stack. Totally there are 21 unwind code. Each unwind code maps exactly one instruction in the prolog/epilog in order to allow for unwinding of partially executed prologs and epilogs.
 
-Unwind code|Bits and interpretation
+|Unwind code|Bits and interpretation|
 |-|-|
-`alloc_s`|000xxxxx: allocate small stack with size < 512 (2^5 * 16).
-`save_r19r20_x`|    001zzzzz: save \<r19,r20> pair at [sp-#Z*8]!, pre-indexed offset >= -248
-`save_fplr`|        01zzzzzz: save \<r29,lr> pair at [sp+#Z*8],  offset <= 504.
-`save_fplr_x`|        10zzzzzz: save \<r29,lr> pair at [sp-(#Z+1)*8]!, pre-indexed offset >= -512
-`alloc_m`|        11000xxx\|xxxxxxxx: allocate large stack with size < 16k (2^11 * 16).
-`save_regp`|        110010xx\|xxzzzzzz: save r(19+#X) pair at [sp+#Z*8], offset <= 504
-`save_regp_x`|        110011xx\|xxzzzzzz: save pair r(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -512
-`save_reg`|        110100xx\|xxzzzzzz: save reg r(19+#X) at [sp+#Z*8], offset <=504
-`save_reg_x`|        1101010x\|xxxzzzzz: save reg r(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -256
-`save_lrpair`|         1101011x\|xxzzzzzz: save pair \<r19+2*#X,lr> at [sp+#Z*8], offset <= 504
-`save_fregp`|        1101100x\|xxzzzzzz: save pair d(8+#X) at [sp+#Z*8], offset <=504
-`save_fregp_x`|        1101101x\|xxzzzzzz: save pair d(8+#X), at [sp-(#Z+1)*8]!, pre-indexed offset >= -512
-`save_freg`|        1101110x\|xxzzzzzz: save reg d(8+#X) at [sp+#Z*8], offset <=504
-`save_freg_x`|        11011110\|xxxzzzzz: save reg d(8+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -256
-`alloc_l`|         11100000\|xxxxxxxx\|xxxxxxxx\|xxxxxxxx: allocate large stack with size < 256M (2^24 *16)
-`set_fp`|        11100001: set up r29: with: mov r29,sp
-`add_fp`|        11100010\|xxxxxxxx: set up r29 with: add r29,sp,#x*8
-`nop`|            11100011: no unwind operation is required.
-`end`|            11100100: end of unwind code. Implies ret in epilog.
-`end_c`|        11100101: end of unwind code in current chained scope.
-`save_next`|        11100110: save next non-volatile Int or FP register pair.
-`arithmetic(add)`|    11100111\| 000zxxxx: add cookie reg(z) to lr (0=x28, 1=sp); add lr, lr, reg(z)
-`arithmetic(sub)`|    11100111\| 001zxxxx: sub cookie reg(z) from lr (0=x28, 1=sp); sub lr, lr, reg(z)
-`arithmetic(eor)`|    11100111\| 010zxxxx: eor lr with cookie reg(z) (0=x28, 1=sp); eor lr, lr, reg(z)
-`arithmetic(rol)`|    11100111\| 0110xxxx: simulated rol of lr with cookie reg (x28); xip0 = neg x28; ror lr, xip0
-`arithmetic(ror)`|    11100111\| 100zxxxx: ror lr with cookie reg(z) (0=x28, 1=sp); ror lr, lr, reg(z)
-||            11100111: xxxz----: ---- reserved
-||              11101xxx: reserved for custom stack cases below only generated for asm routines
-||              11101001: Custom stack for MSFT_OP_TRAP_FRAME
-||              11101010: Custom stack for MSFT_OP_MACHINE_FRAME
-||              11101011: Custom stack for MSFT_OP_CONTEXT
-||              1111xxxx: reserved
+|`alloc_s`|000xxxxx: allocate small stack with size \< 512 (2^5 * 16).|
+|`save_r19r20_x`|    001zzzzz: save \<r19,r20> pair at [sp-#Z*8]!, pre-indexed offset >= -248 |
+|`save_fplr`|        01zzzzzz: save \<r29,lr> pair at [sp+#Z*8],  offset \<= 504. |
+|`save_fplr_x`|        10zzzzzz: save \<r29,lr> pair at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
+|`alloc_m`|        11000xxx'xxxxxxxx: allocate large stack with size \< 16k (2^11 * 16). |
+|`save_regp`|        110010xx'xxzzzzzz: save r(19+#X) pair at [sp+#Z*8], offset \<= 504 |
+|`save_regp_x`|        110011xx'xxzzzzzz: save pair r(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
+|`save_reg`|        110100xx'xxzzzzzz: save reg r(19+#X) at [sp+#Z*8], offset \<= 504 |
+|`save_reg_x`|        1101010x'xxxzzzzz: save reg r(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -256 |
+|`save_lrpair`|         1101011x'xxzzzzzz: save pair \<r19+2*#X,lr> at [sp+#Z*8], offset \<= 504 |
+|`save_fregp`|        1101100x'xxzzzzzz: save pair d(8+#X) at [sp+#Z*8], offset \<= 504 |
+|`save_fregp_x`|        1101101x'xxzzzzzz: save pair d(8+#X), at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
+|`save_freg`|        1101110x'xxzzzzzz: save reg d(8+#X) at [sp+#Z*8], offset \<= 504 |
+|`save_freg_x`|        11011110'xxxzzzzz: save reg d(8+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -256 |
+|`alloc_l`|         11100000'xxxxxxxx'xxxxxxxx'xxxxxxxx: allocate large stack with size \< 256M (2^24 *16) |
+|`set_fp`|        11100001: set up r29: with: mov r29,sp |
+|`add_fp`|        11100010'xxxxxxxx: set up r29 with: add r29,sp,#x*8 |
+|`nop`|            11100011: no unwind operation is required. |
+|`end`|            11100100: end of unwind code. Implies ret in epilog. |
+|`end_c`|        11100101: end of unwind code in current chained scope. |
+|`save_next`|        11100110: save next non-volatile Int or FP register pair. |
+|`arithmetic(add)`|    11100111'000zxxxx: add cookie reg(z) to lr (0=x28, 1=sp); add lr, lr, reg(z) |
+|`arithmetic(sub)`|    11100111'001zxxxx: sub cookie reg(z) from lr (0=x28, 1=sp); sub lr, lr, reg(z) |
+|`arithmetic(eor)`|    11100111'010zxxxx: eor lr with cookie reg(z) (0=x28, 1=sp); eor lr, lr, reg(z) |
+|`arithmetic(rol)`|    11100111'0110xxxx: simulated rol of lr with cookie reg (x28); xip0 = neg x28; ror lr, xip0 |
+|`arithmetic(ror)`|    11100111'100zxxxx: ror lr with cookie reg(z) (0=x28, 1=sp); ror lr, lr, reg(z) |
+| |            11100111: xxxz----: ---- reserved |
+| |              11101xxx: reserved for custom stack cases below only generated for asm routines |
+| |              11101001: Custom stack for MSFT_OP_TRAP_FRAME |
+| |              11101010: Custom stack for MSFT_OP_MACHINE_FRAME |
+| |              11101011: Custom stack for MSFT_OP_CONTEXT |
+| |              1111xxxx: reserved |
 
 In instructions with large values covering multiple bytes, the most significant bits are stored first. The unwind codes above are designed such that by simply looking up the first byte of the code, it is possible to know the total size in bytes of the unwind code. Given that each unwind code is exactly mapped to an instruction in prolog/epilog, to compute the size of the prolog or epilog, all that needs to be done is to walk from the start of the sequence to the end, using a lookup table or similar device to determine how long the corresponding opcode is.
 
@@ -376,7 +376,7 @@ Step #|Flag values|# of instructions|Opcode|Unwind Code
 5d|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz <= 4088|1|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
 5e|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
 
-\*: If **CR** == 01 and **RegI** is an odd number, Step 2 and last save_rep in step 1 are merged into one save_regp.
+\* If **CR** == 01 and **RegI** is an odd number, Step 2 and last save_rep in step 1 are merged into one save_regp.
 
 \*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first stp for the floating-point does the predecrement.
 

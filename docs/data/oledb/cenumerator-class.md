@@ -12,13 +12,13 @@ Uses an OLE DB enumerator object, which exposes the [ISourcesRowset](/previous-v
 ## Syntax
 
 ```cpp
-class CEnumerator : 
+class CEnumerator :
    public CAccessorRowset< CAccessor <CEnumeratorAccessor >>
 ```
 
 ## Requirements
 
-**Header:**atldbcli.h
+**Header:** atldbcli.h
 
 ## Members
 
@@ -66,7 +66,7 @@ Parses the display name to extract the component of the string that can be conve
 ```cpp
 HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();
 
-HRESULT GetMoniker(LPMONIKER* ppMoniker, 
+HRESULT GetMoniker(LPMONIKER* ppMoniker,
    LPCTSTR lpszDisplayName) const throw();
 ```
 

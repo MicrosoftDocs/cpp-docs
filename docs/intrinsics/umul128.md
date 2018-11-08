@@ -14,10 +14,10 @@ Multiplies two 64-bit unsigned integers passed in as the first two arguments and
 ## Syntax
 
 ```
-unsigned __int64 _umul128( 
-   unsigned __int64 Multiplier, 
-   unsigned __int64 Multiplicand, 
-   unsigned __int64 *HighProduct 
+unsigned __int64 _umul128(
+   unsigned __int64 Multiplier,
+   unsigned __int64 Multiplicand,
+   unsigned __int64 *HighProduct
 );
 ```
 

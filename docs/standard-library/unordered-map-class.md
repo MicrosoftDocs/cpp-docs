@@ -1996,7 +1996,7 @@ A reference to the data value of the inserted element.
 
 If the argument key value is not found, then it is inserted along with the default value of the data type.
 
-`operator[]` may be used to insert elements into a map *m* using *m*[_ *Key*] = `DataValue`; where `DataValue` is the value of the `mapped_type` of the element with a key value of \_ *Key*.
+`operator[]` may be used to insert elements into a map *m* using *m*[*Key*] = `DataValue`; where `DataValue` is the value of the `mapped_type` of the element with a key value of *Key*.
 
 When using `operator[]` to insert elements, the returned reference does not indicate whether an insertion is changing a pre-existing element or creating a new one. The member functions [find](../standard-library/map-class.md#find) and [insert](../standard-library/map-class.md#insert) can be used to determine whether an element with a specified key is already present before an insertion.
 

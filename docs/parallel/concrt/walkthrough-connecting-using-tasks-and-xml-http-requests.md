@@ -80,9 +80,8 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
    [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]
 
-    > [!TIP]
-
-    >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation-token-class.md#none) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.
+   > [!TIP]
+   > If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation-token-class.md#none) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.
 
 1. In MainPage.xaml.cpp, implement the `MainPage::ProcessHttpRequest` method.
 

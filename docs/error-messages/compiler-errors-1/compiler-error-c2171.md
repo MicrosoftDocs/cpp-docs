@@ -40,8 +40,8 @@ public:
 
    void D() {}
    void DTF() {
-      (*TF)();   // C2171
-      (this->*TF)();   // OK
+      (*TF)();   // C2171
+      (this->*TF)();   // OK
    }
 
    void STF(void (A::*fnc)()) {

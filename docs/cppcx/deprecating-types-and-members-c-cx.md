@@ -33,7 +33,7 @@ public:
 
 The following table lists the constructs to which the Deprecated attribute may be applied:
 
-||
+| |
 |-|
 |XAML control|
 |delegate|

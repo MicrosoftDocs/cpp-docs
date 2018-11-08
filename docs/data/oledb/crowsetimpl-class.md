@@ -16,13 +16,13 @@ template <
    class T,
    class Storage,
    class CreatorClass,
-   class ArrayType = CAtlArray<Storage>, 
-   class RowClass = CSimpleRow, 
-   class RowsetInterface = IRowsetImpl <T, IRowset> 
+   class ArrayType = CAtlArray<Storage>,
+   class RowClass = CSimpleRow,
+   class RowsetInterface = IRowsetImpl <T, IRowset>
 >
-class CRowsetImpl :  
-   public CComObjectRootEx<CreatorClass::_ThreadModel>, 
-   public CRowsetBaseImpl<T, Storage, ArrayType, RowsetInterface>, 
+class CRowsetImpl : 
+   public CComObjectRootEx<CreatorClass::_ThreadModel>,
+   public CRowsetBaseImpl<T, Storage, ArrayType, RowsetInterface>,
    public IRowsetInfoImpl<T, CreatorClass::_PropClass>
 ```
 

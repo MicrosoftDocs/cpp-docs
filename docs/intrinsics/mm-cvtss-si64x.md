@@ -14,8 +14,8 @@ Generates the x64 extended version of the Convert Scalar Single Precision Floati
 ## Syntax
 
 ```
-__int64 _mm_cvtss_si64x( 
-   __m128 value 
+__int64 _mm_cvtss_si64x(
+   __m128 value
 );
 ```
 

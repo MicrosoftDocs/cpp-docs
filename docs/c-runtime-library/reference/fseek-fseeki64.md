@@ -48,9 +48,9 @@ The **fseek** and **_fseeki64** functions moves the file pointer (if any) associ
 
 |origin value|Meaning|
 |-|-|
-**SEEK_CUR**|Current position of file pointer.
-**SEEK_END**|End of file.
-**SEEK_SET**|Beginning of file.
+| **SEEK_CUR** | Current position of file pointer. |
+| **SEEK_END** | End of file. |
+| **SEEK_SET** | Beginning of file. |
 
 You can use **fseek** and **_fseeki64** to reposition the pointer anywhere in a file. The pointer can also be positioned beyond the end of the file. **fseek** and **_fseeki64** clears the end-of-file indicator and negates the effect of any prior [ungetc](ungetc-ungetwc.md) calls against *stream*.
 

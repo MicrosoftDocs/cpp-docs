@@ -487,7 +487,7 @@ The key value of the elements to be matched from the map.
 
 The member function returns the number of elements *x* in the range
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) )
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 which is 0 or 1 in the case of map, which is a unique associative container.
 

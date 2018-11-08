@@ -31,7 +31,7 @@ Where:
 For example:
 
 > C:\\*sourcefile.cpp*(134) : error C2143: syntax error : missing ';' before '}'
-
+>
 > LINK : fatal error LNK1104: cannot open file '*somelib.lib*'
 
 ## See also

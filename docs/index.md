@@ -374,7 +374,7 @@ ms.author: "mblome"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Component Extensions</h3>
-                                                    <p>Component extensions to C++:  C++/CLI for .NET programming and C++/CX for UWP programming.</p>
+                                                    <p>Component extensions to C++: C++/CLI for .NET programming and C++/CX for UWP programming.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -462,11 +462,11 @@ The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
-If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(*\_Meta*).
 
 ### Remarks
 
-The protected virtual member function puts back an element into the input buffer and then makes it the current element (pointed to by the next pointer). If _ *Meta* **== traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*). The function can put back an element in various ways:
+The protected virtual member function puts back an element into the input buffer and then makes it the current element (pointed to by the next pointer). If *\_Meta* **== traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*). The function can put back an element in various ways:
 
 - If a putback position is available, and the element stored there compares equal to `ch`, it can decrement the next pointer for the input buffer.
 

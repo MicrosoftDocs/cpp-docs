@@ -14,9 +14,9 @@ Generates the Write to Model Specific Register (`wrmsr`) instruction.
 ## Syntax
 
 ```
-void __writemsr( 
-   unsigned long Register, 
-   unsigned __int64 Value 
+void __writemsr(
+   unsigned long Register,
+   unsigned __int64 Value
 );
 ```
 

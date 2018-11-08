@@ -19,12 +19,12 @@ ms.assetid: c40f394a-8b2c-4896-ab30-6922863ddbb5
 
    |To get this|Type this|
    |-----------------|---------------|
-   |New line|\n|
-   |Carriage return|\r|
-   |Tab|\t|
-   |Backslash (\\)|\\\|
-   |ASCII character|\ddd (octal notation)|
-   |Alert (bell)|\a|
+   | New line | \\n |
+   | Carriage return | \\r |
+   | Tab | \\t |
+   | Backslash (\\) | \\\\ |
+   | ASCII character | \\ddd (octal notation) |
+   | Alert (bell) | \\a |
 
 > [!NOTE]
 > The **String** editor does not support the full set of escaped ASCI characters. You can only use those listed above.

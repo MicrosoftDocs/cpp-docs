@@ -73,7 +73,7 @@ This function behaves the same as the C++ Standard Library numeric function `adj
 
 Computes the sum of the element-wise product of two ranges and adds it to a specified initial value or computes the result of a generalized procedure where the sum and product binary operations are replaced by other specified binary operations.
 
-###Syntax
+### Syntax
 
 ```cpp
 template<class _InIt1, class _InIt2, class _Ty> inline

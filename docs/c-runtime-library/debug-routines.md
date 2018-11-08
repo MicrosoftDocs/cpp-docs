@@ -51,7 +51,7 @@ To use these routines, the [_DEBUG](../c-runtime-library/debug.md) flag must be 
 |[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|Allocate a specified number of memory blocks on the heap with additional space for a debugging header and overwrite buffers|
 |[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|Resize a specified block of memory on the heap by expanding or contracting the block|
 |[_free_dbg](../c-runtime-library/reference/free-dbg.md)|Free a block of memory on the heap|
-|[_fullpath_dbg, _wfullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|Create an absolute or full path name for the specified relative path name, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|[System::IO::File::Create](https://msdn.microsoft.com/library/system.io.file.create.aspx)|
+|[_fullpath_dbg, _wfullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|Create an absolute or full path name for the specified relative path name, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|
 |[_getcwd_dbg, _wgetcwd_dbg](../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md)|Get the current working directory, using [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) to allocate memory.|
 |[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|Allocate a block of memory on the heap with additional space for a debugging header and overwrite buffers|
 |[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|Calculate the size of a block of memory on the heap|

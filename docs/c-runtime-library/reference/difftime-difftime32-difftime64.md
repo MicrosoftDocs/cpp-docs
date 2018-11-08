@@ -100,13 +100,12 @@ int main( void )
    elapsed_time = difftime( finish, start );
    printf( "\nProgram takes %6.0f seconds.\n", elapsed_time );
 }
-
 ```
 
 ```Output
-Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038Multiplying 2 floating point numbers 100 million times...Program takes      3 seconds.Multiplying 2 floating point numbers 500 million times...
-
-Program takes      5 seconds.
+Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038
+Multiplying 2 floating point numbers 100 million times...
+Program takes      3 seconds.
 ```
 
 ## See also

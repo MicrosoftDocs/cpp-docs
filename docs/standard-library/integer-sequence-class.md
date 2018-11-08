@@ -29,7 +29,7 @@ A non-type parameter pack that represents a sequence of values of integral type 
 |||
 |-|-|
 |`static size_t size() noexcept`|The number of elements in the sequence.|
-|typedef T value_type|The type of each element in the sequence. Must be an integral type.|
+|`typedef T value_type`|The type of each element in the sequence. Must be an integral type.|
 
 ## Remarks
 
@@ -41,10 +41,9 @@ The following example is based on the original proposal [N3658](http://open-std.
 
 In the `a2t` function, an `index_sequence` is an alias of `integer_sequence` based on the `size_t` integral type. `make_index_sequence` is an alias that at compile time creates a zero-based `index_sequence` with the same number of elements as the array that is passed in by the caller. `a2t` passes the `index_sequence` by value to `a2t_` , where the expression `a[I]...` unpacks `I`, and then the elements are being fed to `make_tuple` which consumes them as individual arguments. For example, if the sequence contains three elements, then `make_tuple` is called as make_tuple(a[0], a[1], a[2]). The array elements themselves can of course be any type.
 
-The apply function accepts a [std::tuple](../standard-library/tuple-class.md), and produces an integer_sequence by using the `tuple_size` helper class. Note that [std::decay_t](../standard-library/decay-class.md)_is necessary because [tuple_size](../standard-library/tuple-size-class-tuple.md) does not work with reference types. The `apply_` function unpacks the tuple members and forwards them as separate arguments to a function call. In this example the function is a simple lambda expression that prints out the values.
+The apply function accepts a [std::tuple](../standard-library/tuple-class.md), and produces an `integer_sequence` by using the `tuple_size` helper class. Note that [std::decay_t](../standard-library/decay-class.md) is necessary because [tuple_size](../standard-library/tuple-size-class-tuple.md) does not work with reference types. The `apply_` function unpacks the tuple members and forwards them as separate arguments to a function call. In this example the function is a simple lambda expression that prints out the values.
 
-```
-
+```cpp
 #include <stddef.h>
 #include <iostream>
 #include <tuple>
@@ -98,7 +97,6 @@ int main()
     char c;
     cin >> c;
 }
-
 ```
 
 To make an `index_sequence` for a parameter pack, use `index_sequence_for`\<T...> which is an alias for `make_index_sequence`\<sizeof...(T)>

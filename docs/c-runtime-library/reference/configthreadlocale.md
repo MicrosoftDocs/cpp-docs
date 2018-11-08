@@ -31,11 +31,11 @@ The previous per-thread locale status (**_DISABLE_PER_THREAD_LOCALE** or **_ENAB
 
 The **_configurethreadlocale** function is used to control the use of thread-specific locales. Use one of these *per_thread_locale_type* options to specify or determine the per-thread locale status:
 
-|||
+| Option | Description |
 |-|-|
-**_ENABLE_PER_THREAD_LOCALE**|Make the current thread use a thread-specific locale. Subsequent calls to **setlocale** in this thread affect only the thread's own locale.
-**_DISABLE_PER_THREAD_LOCALE**|Make the current thread use the global locale. Subsequent calls to **setlocale** in this thread affect other threads using the global locale.
-**0**|Retrieves the current setting for this particular thread.
+| **_ENABLE_PER_THREAD_LOCALE** | Make the current thread use a thread-specific locale. Subsequent calls to **setlocale** in this thread affect only the thread's own locale. |
+| **_DISABLE_PER_THREAD_LOCALE** | Make the current thread use the global locale. Subsequent calls to **setlocale** in this thread affect other threads using the global locale. |
+| **0** | Retrieves the current setting for this particular thread. |
 
 These functions affect the behavior of **setlocale**, **_tsetlocale**, **_wsetlocale**, and **_setmbcp**. When per-thread locale is disabled, any subsequent call to **setlocale** or **_wsetlocale** changes the locale of all threads that use the global locale. When per-thread locale is enabled, **setlocale** or **_wsetlocale** only affects the current thread's locale.
 

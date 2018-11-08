@@ -14,9 +14,9 @@ Generates the `out` instruction, which sends the word `Data` out the I/O port sp
 ## Syntax
 
 ```
-void __outword( 
-   unsigned short Port, 
-   unsigned short Data 
+void __outword(
+   unsigned short Port,
+   unsigned short Data
 );
 ```
 

@@ -149,11 +149,11 @@ int a, *b, c[5], **d, &e=a;
 
 - A `declarator` is defined as one of:
 
-  - identifier 
-  - qualified-name 
+  - identifier
+  - qualified-name
   - declarator ( argument-list ) [cv-qualfiers] [exception-spec]
   - declarator [ [ constant-expression ] ]
-  - pointer-operator declarator 
+  - pointer-operator declarator
   - ( declarator )
 
 - and *pointer-operator* is one of:

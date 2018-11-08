@@ -14,10 +14,10 @@ Generates the `rep outsd` instruction, which sends `Count` doublewords starting 
 ## Syntax
 
 ```
-void __outdwordstring( 
-   unsigned short Port, 
-   unsigned long* Buffer, 
-   unsigned long Count 
+void __outdwordstring(
+   unsigned short Port,
+   unsigned long* Buffer,
+   unsigned long Count
 );
 ```
 

@@ -93,7 +93,7 @@ int main() {
 
    // Cast to a CMyClass pointer so that the destructor gets called
       CMyClass *p = dynamic_cast<CMyClass *>(pIMyInt1);
-      delete p;
+      delete p;
 }
 ```
 

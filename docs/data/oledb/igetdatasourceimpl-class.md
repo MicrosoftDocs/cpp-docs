@@ -44,7 +44,7 @@ Returns an interface pointer on the data source object that created the session.
 ### Syntax
 
 ```cpp
-STDMETHOD(GetDataSource)(REFIID riid, 
+STDMETHOD(GetDataSource)(REFIID riid,
    IUnknown ** ppDataSource);
 ```
 

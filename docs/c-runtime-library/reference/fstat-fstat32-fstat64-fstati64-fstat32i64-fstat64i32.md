@@ -59,14 +59,14 @@ The **_fstat** function obtains information about the open file associated with 
 
 |Field|Meaning|
 |-|-|
-**st_atime**|Time of the last file access.
-**st_ctime**|Time of the creation of the file.
-**st_dev**|If a device, *fd*; otherwise 0.
-**st_mode**|Bit mask for file-mode information. The **_S_IFCHR** bit is set if *fd* refers to a device. The **_S_IFREG** bit is set if *fd* refers to an ordinary file. The read/write bits are set according to the file's permission mode. **_S_IFCHR** and other constants are defined in SYS\Stat.h.
-**st_mtime**|Time of the last modification of the file.
-**st_nlink**|Always 1 on non-NTFS file systems.
-**st_rdev**|If a device, *fd*; otherwise 0.
-**st_size**|Size of the file in bytes.
+| **st_atime** | Time of the last file access. |
+| **st_ctime** | Time of the creation of the file. |
+| **st_dev** | If a device, *fd*; otherwise 0. |
+| **st_mode** | Bit mask for file-mode information. The **_S_IFCHR** bit is set if *fd* refers to a device. The **_S_IFREG** bit is set if *fd* refers to an ordinary file. The read/write bits are set according to the file's permission mode. **_S_IFCHR** and other constants are defined in SYS\Stat.h. |
+| **st_mtime** | Time of the last modification of the file. |
+| **st_nlink** | Always 1 on non-NTFS file systems. |
+| **st_rdev** | If a device, *fd*; otherwise 0. |
+| **st_size** | Size of the file in bytes. |
 
 If *fd* refers to a device, the **st_atime**, **st_ctime**, **st_mtime**, and **st_size** fields are not meaningful.
 

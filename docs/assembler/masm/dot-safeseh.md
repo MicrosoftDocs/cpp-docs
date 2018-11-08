@@ -23,9 +23,9 @@ For example, to register a safe exception handler, create a new MASM file (as fo
 
 ```asm
 .386
-.model  flat
-MyHandler   proto
-.safeseh    MyHandler
+.model  flat
+MyHandler   proto
+.safeseh    MyHandler
 end
 ```
 

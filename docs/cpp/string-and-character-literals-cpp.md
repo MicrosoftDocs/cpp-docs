@@ -31,7 +31,7 @@ int main()
 
     // Raw string literals containing unescaped \ and "
     auto R0 =   R"("Hello \ world")"; // const char*
-    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
+    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
     auto R2 =  LR"("Hello \ world")"; // const wchar_t*
     auto R3 =  uR"("Hello \ world")"; // const char16_t*, encoded as UTF-16
     auto R4 =  UR"("Hello \ world")"; // const char32_t*, encoded as UTF-32
@@ -88,15 +88,22 @@ Character literals are encoded differently based their prefix.
 
 There are three kinds of escape sequences: simple, octal, and hexadecimal. Escape sequences may be any of the following:
 
-|Value|Escape sequence|Value|Escape sequence|
-|-----------|---------------------|-----------|---------------------|
-|newline|\n|backslash|\\\|
-|horizontal tab|\t|question mark|? or \\?|
-|vertical tab|\v|single quote|\\'|
-|backspace|\b|double quote|\\"|
-|carriage return|\r|the null character|\0|
-|form feed|\f|octal|\ooo|
-|alert (bell)|\a|hexadecimal|\xhhh|
+|Value|Escape sequence|
+|-----------|---------------------|
+| newline | \\n |
+| backslash | \\\\ |
+| horizontal tab | \\t |
+| question mark | ? or \\? |
+| vertical tab | \\v |
+| single quote | \\' |
+| backspace | \\b |
+| double quote | \\" |
+| carriage return | \\r |
+| the null character | \\0 |
+| form feed | \\f |
+| octal | \\ooo |
+| alert (bell) | \\a |
+| hexadecimal | \\xhhh |
 
 The following code shows some examples of escaped characters using ordinary character literals. The same escape sequence syntax is valid for the other character literal types.
 
@@ -235,7 +242,7 @@ A raw string literal is a null-terminated array—of any character type—that c
 // represents the string: An unescaped \ character
 const char* raw_narrow = R"(An unescaped \ character)";
 const wchar_t* raw_wide = LR"(An unescaped \ character)";
-const char*       raw_utf8  = u8R"(An unescaped \ character)";
+const char*       raw_utf8  = u8R"(An unescaped \ character)";
 const char16_t* raw_utf16 = uR"(An unescaped \ character)";
 const char32_t* raw_utf32 = UR"(An unescaped \ character)";
 ```

@@ -65,11 +65,11 @@ A signed integer variable. If this variable would otherwise be shared, it is imp
 *logical-op*<br/>
 One of the following:
 
-<
+\<
 
 \<=
 
->
+\>
 
 \>=
 

@@ -12,7 +12,7 @@ The **this** pointer is a pointer accessible only within the nonstatic member fu
 ## Syntax
 
 ```
-this 
+this
 this->member-identifier
 ```
 

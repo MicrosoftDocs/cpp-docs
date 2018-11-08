@@ -27,7 +27,8 @@ You can use any build system in Visual C++ and still enjoy the advantages of the
 ## Configuring Open Folder projects
 
 You can customize an Open Folder project through three JSON files:
-|||
+
+| | |
 |-|-|
 |CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder.|
 |launch.vs.json|Specify command line arguments. Accessed via the **Solution Explorer** context menu item **Debug and Launch Settings**.|
@@ -52,6 +53,7 @@ IntelliSense and browsing behavior partly depends on the active build configurat
   ]
 }
 ```
+
 A configuration may have any of the following properties:
 
 |||
@@ -129,6 +131,7 @@ You can define custom environment variables in CppProperties.json either globall
   ]
 }
 ```
+
 You can also define an **environments** property inside a configuration, so that it applies only to that configuration, and overrides any global variables of the same name. In the following example, the x64 configuration defines a local **INCLUDE** variable that overrides the global value:
 
 ```json
@@ -252,11 +255,13 @@ This creates (or opens) the `tasks.vs.json` file in the .vs folder which Visual 
   ]
 }
 ```
+
 After saving tasks.vs.json, you can right-click any .cpp file in the folder, choose **Echo filename** from the context menu, and see the file name displayed in the Output window.
 
 #### appliesTo
 
 You can create tasks for any file or folder by specifying its name in the `appliesTo` field, for example `"appliesTo" : "hello.cpp"`. The following file masks can be used as values:
+
 |||
 |-|-|
 |`"*"`| task is available to all files and folders in the workspace|
@@ -334,4 +339,3 @@ When you save this file, the new configuration appears in the Debug Target dropd
 ## See Also
 
 [IDE and Tools for Visual C++ Development](ide-and-tools-for-visual-cpp-development.md)
-

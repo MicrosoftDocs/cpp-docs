@@ -52,7 +52,7 @@ Returns the text command set by the last call to [SetCommandText](../../data/ole
 ### Syntax
 
 ```cpp
-STDMETHOD(GetCommandText)(GUID * pguidDialect, 
+STDMETHOD(GetCommandText)(GUID * pguidDialect,
    LPOLESTR * ppwszCommand);
 ```
 
@@ -67,7 +67,7 @@ Sets the command text, replacing the existing command text.
 ### Syntax
 
 ```cpp
-STDMETHOD(SetCommandText)(REFGUID rguidDialect, 
+STDMETHOD(SetCommandText)(REFGUID rguidDialect,
    LPCOLESTR pwszCommand);
 ```
 

@@ -14,9 +14,9 @@ Returns the high 64 bits of the product of two 64-bit signed integers.
 ## Syntax
 
 ```
-__int64 __mulh( 
-   __int64 a, 
-   __int64 b 
+__int64 __mulh(
+   __int64 a,
+   __int64 b
 );
 ```
 

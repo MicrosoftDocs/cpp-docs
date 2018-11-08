@@ -42,7 +42,7 @@ Notifies the consumer of any change to the value of a column.
 ### Syntax
 
 ```cpp
-STDMETHOD(OnFieldChange)( 
+STDMETHOD(OnFieldChange)(
 /* [in] */ IRowset* /* pRowset */,
 /* [in] */ HROW /* hRow */,
 /* [in] */ DBORDINAL /* cColumns */,
@@ -71,7 +71,7 @@ Notifies the consumer of the first change to a row or of any change that affects
 ### Syntax
 
 ```cpp
-STDMETHOD(OnRowChange)( 
+STDMETHOD(OnRowChange)(
 /* [in] */ IRowset* /* pRowset */,
 /* [in] */ DBCOUNTITEM /* cRows */,
 /* [size_is][in] */ const HROW /* rghRows*/ [] ,
@@ -99,7 +99,7 @@ Notifies the consumer of any change affecting the entire rowset.
 ### Syntax
 
 ```cpp
-STDMETHOD(OnRowsetChange)( 
+STDMETHOD(OnRowsetChange)(
 /* [in] */ IRowset* /* pRowset */,
 /* [in] */ DBREASON /* eReason */,
 /* [in] */ DBEVENTPHASE /* ePhase */,

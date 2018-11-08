@@ -59,9 +59,9 @@ void F() {}
 class Measure {
 public:
    void SetTrackingFunction(void (Measure::*fnc)()) {
-      TrackingFunction = this->*fnc;   // C2298
-      TrackingFunction = fnc;   // OK
-      GlobalTracker = F;   // OK
+      TrackingFunction = this->*fnc;   // C2298
+      TrackingFunction = fnc;   // OK
+      GlobalTracker = F;   // OK
    }
 private:
    void (Measure::*TrackingFunction)(void);

@@ -14,10 +14,10 @@ Shifts a 128-bit quantity, represented as two 64-bit quantities `LowPart` and `H
 ## Syntax
 
 ```
-unsigned __int64 __shiftleft128( 
-   unsigned __int64 LowPart, 
-   unsigned __int64 HighPart, 
-   unsigned char Shift 
+unsigned __int64 __shiftleft128(
+   unsigned __int64 LowPart,
+   unsigned __int64 HighPart,
+   unsigned char Shift
 );
 ```
 

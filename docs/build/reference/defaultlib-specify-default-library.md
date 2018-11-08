@@ -15,9 +15,8 @@ Specify a default library to search to resolve external references.
 
 ### Arguments
 
-|Argument|Description|
-|-|-|
-*library*|The name of a library to search when resolving external references.
+*library*<br/>
+The name of a library to search when resolving external references.
 
 ## Remarks
 

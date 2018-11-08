@@ -33,7 +33,7 @@ for (auto num : vec)
 
 There are five categories of iterators. In order of increasing power, the categories are:
 
-- **Output**. An *output iterator* `X` can iterate forward over a sequence by using the **++** operator, and can write an element only once, by using the **&ast;** operator.
+- **Output**. An *output iterator* `X` can iterate forward over a sequence by using the **++** operator, and can write an element only once, by using the __\*__ operator.
 
 - **Input**. An *input iterator* `X` can iterate forward over a sequence by using the ++ operator, and can read an element any number of times by using the **&ast;** operator. You can compare input iterators by using the **++** and **!=** operators. After you increment any copy of an input iterator, none of the other copies can safely be compared, dereferenced, or incremented thereafter.
 

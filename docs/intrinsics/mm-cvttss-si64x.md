@@ -14,8 +14,8 @@ Emits the x64 extended version of the Convert with Truncation Single-Precision F
 ## Syntax
 
 ```
-__int64 _mm_cvttss_si64x( 
-   __m128 value 
+__int64 _mm_cvttss_si64x(
+   __m128 value
 );
 ```
 

@@ -467,7 +467,7 @@ The number of elements in the hash_multiset with the parameter-specified key.
 
 The member function returns the number of elements in the following range:
 
-[ `lower_bound` (_ `Key` ), `upper_bound` (\_ `Key` ) ).
+\[ lower_bound(*key*), upper_bound(*key*) ).
 
 ### Example
 

@@ -1,6 +1,6 @@
 ---
 title: "time, _time32, _time64"
-ms.date: "11/04/2016"
+ms.date: "11/06/2018"
 apiname: ["time", "_time64", "_time32"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -38,8 +38,8 @@ The **time** function returns the number of seconds elapsed since midnight (00:0
 ## Requirements
 
 |Routine|Required C header|Required C++ header|
-|-------------|---------------------|
-|**time**, **_time32**, **_time64**|\<time.h>|\<ctime> or \<time.h>|
+|-------|------|---------------------|
+|**time**, **\_time32**, **\_time64**|\<time.h>|\<ctime> or \<time.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

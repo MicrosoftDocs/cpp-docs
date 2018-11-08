@@ -140,11 +140,10 @@ You can pass a `task_continuation_context` object to the [task::then](reference/
 The following section shows an app that reads a file from disk, finds the most common words in that file, and then shows the results in the UI. The final operation, updating the UI, occurs on the UI thread.
 
 > [!IMPORTANT]
->  This behavior is specific to UWP apps. For desktop apps, you do not control where continuations run. Instead, the scheduler chooses a worker thread on which to run each continuation.
+> This behavior is specific to UWP apps. For desktop apps, you do not control where continuations run. Instead, the scheduler chooses a worker thread on which to run each continuation.
 
 > [!IMPORTANT]
-
->  Do not call [concurrency::task::wait](reference/task-class.md#wait) in the body of a continuation that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](reference/task-class.md#get) method to receive the result of the antecedent task in a task-based continuation.
+> Do not call [concurrency::task::wait](reference/task-class.md#wait) in the body of a continuation that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](reference/task-class.md#get) method to receive the result of the antecedent task in a task-based continuation.
 
 ##  <a name="example-app"></a> Example: Controlling Execution in a Windows Runtime App with C++ and XAML
 

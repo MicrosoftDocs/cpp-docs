@@ -15,7 +15,7 @@ The **class** keyword declares a class type or defines an object of a class type
 [template-spec]
 class [ms-decl-spec] [tag [: base-list ]]
 {
-   member-list
+   member-list
 } [declarators];
 [ class ] tag declarators;
 ```

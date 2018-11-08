@@ -14,7 +14,7 @@ Accesses elements of a rowset using array syntax.
 ```cpp
 template < class TAccessor >
 class CArrayRowset :
-   public CVirtualBuffer <TAccessor>, 
+   public CVirtualBuffer <TAccessor>,
    protected CBulkRowset <TAccessor>
 ```
 

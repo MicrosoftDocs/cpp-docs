@@ -9,26 +9,26 @@ ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
 C++ [iostreams](../standard-library/iostream.md) are capable of formatted string I/O. For example, the following code shows how to set cout to format an integer to output in hexadecimal, first saving off the current state and re-setting afterwards, because once state formatting is passed to cout, it stays that way until changed, not just for the one line of code.
 
 ```cpp
-#include <iostream>
-#include <iomanip>
+#include <iostream>
+#include <iomanip>
 
-using namespace std;
+using namespace std;
 
-int main() 
+int main()
 {
-    ios state(nullptr);
+    ios state(nullptr);
 
-    cout << "The answer in decimal is: " << 42 << endl;
+    cout << "The answer in decimal is: " << 42 << endl;
 
-    state.copyfmt(cout); // save current formatting
-    cout << "In hex: 0x" // now load up a bunch of formatting modifiers
-        << hex 
-        << uppercase 
-        << setw(8) 
-        << setfill('0') 
-        << 42            // the actual value we wanted to print out
-        << endl;
-    cout.copyfmt(state); // restore previous formatting
+    state.copyfmt(cout); // save current formatting
+    cout << "In hex: 0x" // now load up a bunch of formatting modifiers
+        << hex
+        << uppercase
+        << setw(8)
+        << setfill('0')
+        << 42            // the actual value we wanted to print out
+        << endl;
+    cout.copyfmt(state); // restore previous formatting
 }
 ```
 
@@ -47,13 +47,13 @@ Although Boost.Format is built on C++ [iostreams](../standard-library/iostream-p
 The following code demonstrates some of the Boost formatting features.
 
 ```cpp
-    string s = str( format("%2% %2% %1%\n") % "world" % "hello" );
-    // s contains "hello hello world"  
+    string s = str( format("%2% %2% %1%\n") % "world" % "hello" );
+    // s contains "hello hello world"
 
-    for( auto i = 0; i < names.size(); ++i )
-        cout << format("%1% %2% %|40t|%3%\n") % first[i] % last[i] % tel[i];
-    // Georges Benjamin Clemenceau             +33 (0) 123 456 789
-    // Jean de Lattre de Tassigny              +33 (0) 987 654 321
+    for( auto i = 0; i < names.size(); ++i )
+        cout << format("%1% %2% %|40t|%3%\n") % first[i] % last[i] % tel[i];
+    // Georges Benjamin Clemenceau             +33 (0) 123 456 789
+    // Jean de Lattre de Tassigny              +33 (0) 987 654 321
 ```
 
 ## See also

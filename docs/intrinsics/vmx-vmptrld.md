@@ -14,8 +14,8 @@ Loads the pointer to the current virtual-machine control structure (VMCS) from t
 ## Syntax
 
 ```
-int __vmx_vmptrld( 
-   unsigned __int64 *VmcsPhysicalAddress 
+int __vmx_vmptrld(
+   unsigned __int64 *VmcsPhysicalAddress
 );
 ```
 

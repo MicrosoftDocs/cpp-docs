@@ -24,7 +24,7 @@ The linker issues an error if *address* is not a multiple of 64K. You can option
 
 On the command line, another way to specify the base address is by using a base address response file. A base address response file is a text file that contains the base addresses and optional sizes of all the DLLs your program will use, and a unique text key for each base address. To specify a base address by using a response file, use an at sign (**\@**) followed by the name of the response file, *filename*, followed by a comma, then the *key* value for the base address to use in the file. The linker looks for *filename* in either the specified path, or if no path is specified, in the directories specified in the LIB environment variable. Each line in *filename* represents one DLL and has the following syntax:
 
-> *key* *address* [*size*] **;** *comment*
+> *key* *address* [*size*] **;** *comment*
 
 The *key* is a string of alphanumeric characters and is not case sensitive. It is usually the name of a DLL, but it need not be. The *key* is followed by a base *address* in C-language, hexadecimal, or decimal notation and an optional maximum *size*. All three arguments are separated by spaces or tabs. The linker issues a warning if the specified *size* is less than the virtual address space required by the program. A *comment* is specified by a semicolon (**;**) and can be on the same or a separate line. The linker ignores all text from the semicolon to the end of the line. This example shows part of such a file:
 

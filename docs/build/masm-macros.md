@@ -23,7 +23,7 @@ Here is a sample function prolog with proper usage of the macros:
 
 ```asm
 SkFrame struct
-Fill    dq ?; fill to 8 mod 16
+Fill    dq ?; fill to 8 mod 16
 SavedRdi dq ?; saved register RDI
 SavedRsi dq ?; saved register RSI
 SkFrame ends

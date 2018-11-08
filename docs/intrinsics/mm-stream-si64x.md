@@ -14,9 +14,9 @@ Generates the MOVNTI instruction. Writes the data in `Source` to a memory locati
 ## Syntax
 
 ```
-void _mm_stream_si64x( 
-   __int64 * Dest, 
-   __int64 Source 
+void _mm_stream_si64x(
+   __int64 * Dest,
+   __int64 Source
 );
 ```
 

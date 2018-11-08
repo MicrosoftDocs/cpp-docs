@@ -60,12 +60,12 @@ The **freopen** function closes the file currently associated with *stream* and 
 
 |*mode*|Access|
 |-|-|
-**"r"**|Opens for reading. If the file does not exist or cannot be found, the **freopen** call fails.
-**"w"**|Opens an empty file for writing. If the given file exists, its contents are destroyed.
-**"a"**|Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it does not exist.
-**"r+"**|Opens for both reading and writing. The file must exist.
-**"w+"**|Opens an empty file for both reading and writing. If the file exists, its contents are destroyed.
-**"a+"**|Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist.
+| **"r"** | Opens for reading. If the file does not exist or cannot be found, the **freopen** call fails. |
+| **"w"** | Opens an empty file for writing. If the given file exists, its contents are destroyed. |
+| **"a"** | Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it does not exist. |
+| **"r+"** | Opens for both reading and writing. The file must exist. |
+| **"w+"** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
+| **"a+"** | Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist. |
 
 Use the **"w"** and **"w+"** types with care, as they can destroy existing files.
 
@@ -77,8 +77,8 @@ When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading 
 
 |*mode* modifier|Translation mode|
 |-|-|
-**t**|Open in text (translated) mode.
-**b**|Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.
+| **t** | Open in text (translated) mode. |
+| **b** | Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed. |
 
 In text (translated) mode, carriage return-linefeed (CR-LF) combinations are translated into single linefeed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with **"a+"**, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and [ftell](ftell-ftelli64.md) to move within a file may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file. The **t** option is a Microsoft extension that should not be used where ANSI portability is desired.
 
