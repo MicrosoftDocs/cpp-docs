@@ -1,9 +1,9 @@
 ---
-title: "Customizing CMake configurations in Visual Studio"
+title: "Customize CMake settings in Visual Studio"
 ms.date: "11/08/2018"
 helpviewer_keywords: ["CMake settings"]
 ---
-# Customizing CMake configurations and other settings
+# Customizing CMake settings
 
 By default, Visual Studio provides six default CMake configurations ("x86-Debug", "x86-Release", "x64-Debug", "x64-Release", "Linux-Debug" and "Linux-Release"). These configurations define how CMake.exe is invoked to create the CMake cache for a given project. To modify these configurations, or create a new custom configuration, choose **CMake | Change CMake Settings**, and then choose the CMakeLists.txt file that the settings apply to. The **Change CMake Settings** command is also available on the file's context menu in **Solution Explorer**. This command creates a CMakeSettings.json file in the project folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation.
 
