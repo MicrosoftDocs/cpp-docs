@@ -51,4 +51,4 @@ For more information, see the following topics:
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [Data Access](../data-access-in-cpp.md)<br/>
 [OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784)<br/>
-[OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643)
+[OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)

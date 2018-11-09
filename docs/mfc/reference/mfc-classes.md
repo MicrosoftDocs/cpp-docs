@@ -1004,7 +1004,7 @@ Used for OLE visual editing servers, automation servers, and link containers (ap
 Used for a special case of the OLE Edit Links dialog box, which should be used when you need to update only existing linked or embedded objects in a document.
 
 [COleVariant Class](../../mfc/reference/colevariant-class.md)<br/>
-Encapsulates the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type.
+Encapsulates the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type.
 
 [CPagerCtrl Class](../../mfc/reference/cpagerctrl-class.md)<br/>
 The `CPagerCtrl` class wraps the Windows pager control, which can scroll into view a contained window that does not fit the containing window.

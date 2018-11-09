@@ -31,6 +31,6 @@ In general, the rules for allocating and releasing memory allocated for `BSTR`s 
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)<br/>
-[SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)<br/>
-[SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
+[SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)<br/>
+[SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
 
