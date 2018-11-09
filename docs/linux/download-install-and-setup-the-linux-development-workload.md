@@ -7,11 +7,7 @@ ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 
 # Download, install, and setup the Linux workload
 
-You can use the Visual Studio 2017 IDE in Windows to create, edit and debug C++ projects that execute on a Linux physical computer, virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about). 
-
-You can work on your existing code base that uses CMake or any other build system without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio. For example, you can edit, debug and profile your code on Windows using Visual Studio, then quickly retarget the project for Linux to do further testing. The Linux header files are automatically copied to your local machine where Visual Studio uses them to provide full IntelliSense support (Statement Completion, Go to Definition, and so on).
- 
-For any of these scenarios, the **Linux development with C++** workload is required. 
+You can use the Visual Studio IDE in Windows to create, edit and debug C++ projects that execute on a Linux physical computer, virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about). For any of these scenarios, first install the **Linux development with C++** workload.
 
 ## Visual Studio setup
 
@@ -22,8 +18,6 @@ For any of these scenarios, the **Linux development with C++** workload is requi
    ![Visual C++ for Linux Development workload](media/linuxworkload.png)
 
 1. If you use CMake or you are targeting IoT or embedded platforms, go to the **Installation details** pane on the right, under **Linux development with C++**, expand **Optional Components** and choose the components you need.
-
-    **Visual Studio 2017 version 15.4 and later**<br/>: When you install the Linux C++ workload for Visual Studio, CMake support for Linux is selected by default.
 
 1. Click **Modify** to continue with the installation.
 
@@ -64,9 +58,4 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
    `sudo systemctl start sshd`
 
    This starts the service and runs it in the background, ready to accept connections.
-
-## Ensure you have CMake 3.8 on the remote Linux machine
-
-Your Linux distro may have an older version of CMake. The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries to your Linux machine at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
-
 
