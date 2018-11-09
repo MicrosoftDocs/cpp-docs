@@ -10,11 +10,11 @@ A [transaction](../../data/transactions-mfc-data-access.md) is a way to group, o
 
 OLE DB supports transactions with the following three methods:
 
-- [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786)
+- [ITransactionLocal::StartTransaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms709786(v=vs.85))
 
-- [ITransaction::Commit](/previous-versions/windows/desktop/ms713008)
+- [ITransaction::Commit](https://docs.microsoft.com/previous-versions/windows/desktop/ms713008(v=vs.85))
 
-- [ITransaction::Abort](/previous-versions/windows/desktop/ms709833)
+- [ITransaction::Abort](https://docs.microsoft.com/previous-versions/windows/desktop/ms709833(v=vs.85))
 
 ## Relationship of Sessions and Transactions
 
@@ -36,7 +36,7 @@ Calling `ITransaction::Commit` or `ITransaction::Abort` ends the transaction. `C
 
 ## Nested Transactions
 
-A [nested transaction](/previous-versions/windows/desktop/ms716985) occurs when you start a new local transaction when an active transaction already exists on the session. The new transaction is started as a nested transaction below the current transaction. If the provider doesn't support nested transactions, calling `StartTransaction` when there's already an active transaction on the session returns XACT_E_XTIONEXISTS.
+A [nested transaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms716985(v=vs.85)) occurs when you start a new local transaction when an active transaction already exists on the session. The new transaction is started as a nested transaction below the current transaction. If the provider doesn't support nested transactions, calling `StartTransaction` when there's already an active transaction on the session returns XACT_E_XTIONEXISTS.
 
 ## Distributed Transactions
 

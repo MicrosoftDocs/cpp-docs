@@ -6,7 +6,7 @@ ms.assetid: 08e366c0-74d8-463b-93a6-d58a8dc195f8
 ---
 # Overriding Provider Service Defaults
 
-The provider's registry value for OLEDB_SERVICES is returned as the default value for the [DBPROP_INIT_OLEDBSERVICES](/previous-versions/windows/desktop/ms716898) initialization property on the data source object.
+The provider's registry value for OLEDB_SERVICES is returned as the default value for the [DBPROP_INIT_OLEDBSERVICES](https://docs.microsoft.com/previous-versions/windows/desktop/ms716898(v=vs.85)) initialization property on the data source object.
 
 As long as the registry entry exists, the provider's objects is aggregated. The user can override the provider's default setting for enabled services by setting the DBPROP_INIT_OLEDBSERVICES property before initialization. To enable or disable a particular service, the user gets the current value of the DBPROP_INIT_OLEDBSERVICES property, sets or clears the bit for the particular property to be enabled or disabled, and resets the property. DBPROP_INIT_OLEDBSERVICES can be set directly in OLE DB or in the connection string passed to ADO or `IDataInitialize::GetDatasource`. The corresponding values to enable/disable individual services are listed in the following table.
 
@@ -22,7 +22,7 @@ If the registry entry doesn't exist for the provider, the Component Managers won
 
 ## See Also
 
-[Resource Pooling](/previous-versions/windows/desktop/ms713655)<br/>
-[How Consumers Use Resource Pooling](/previous-versions/windows/desktop/ms715907)<br/>
-[How Providers Work Effectively with Resource Pooling](/previous-versions/windows/desktop/ms714906)<br/>
+[Resource Pooling](https://docs.microsoft.com/previous-versions/windows/desktop/ms713655(v=vs.85))<br/>
+[How Consumers Use Resource Pooling](https://docs.microsoft.com/previous-versions/windows/desktop/ms715907(v=vs.85))<br/>
+[How Providers Work Effectively with Resource Pooling](https://docs.microsoft.com/previous-versions/windows/desktop/ms714906(v=vs.85))<br/>
 [Enabling and Disabling OLE DB Services](../../data/oledb/enabling-and-disabling-ole-db-services.md)<br/>

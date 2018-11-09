@@ -221,7 +221,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 [in] The parameter number (offset from 1). Parameter 0 is reserved for return values. The parameter number is the index of the parameter based on its order in the SQL or stored procedure call. See [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) for an example.
 
 *pStatus*<br/>
-[out] A pointer to the variable containing the DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
+[out] A pointer to the variable containing the DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
 
 ### Remarks
 
@@ -333,7 +333,7 @@ A templated parameter that is the data type.
 [in] The pointer to the memory containing the data to be written to the buffer.
 
 *status*<br/>
-[in] The DBSTATUS column status. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
+[in] The DBSTATUS column status. For information on DBSTATUS values, see [Status](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
 
 ### Return Value
 
@@ -381,7 +381,7 @@ bool SetParamStatus(DBORDINAL nParam,
 [in] The parameter number (offset from 1). Parameter 0 is reserved for return values. The parameter number is the index of the parameter based on its order in the SQL or stored procedure call. See [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) for an example.
 
 *status*<br/>
-[in] The DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
+[in] The DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
 
 ### Remarks
 
@@ -410,7 +410,7 @@ bool SetParamString(DBORDINAL nParam,
 [in] A pointer to the ANSI (**CHAR**) or Unicode (**WCHAR**) string data of the specified parameter. See DBSTATUS in oledb.h.
 
 *status*<br/>
-[in] The DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
+[in] The DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
 
 ### Remarks
 
