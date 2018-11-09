@@ -8,7 +8,7 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 
 This article assumes that you are familiar with CMake, a cross-platform, open-source tool for defining build processes that run on multiple platforms. For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
-In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://cmake.org/cmake/help/v3.9/manual/cmake-generators.7.html) to generate MSBuild project files, which the IDE then consumes for IntelliSense, browsing, and compilation.
+In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) to generate MSBuild project files, which the IDE then consumes for IntelliSense, browsing, and compilation.
 
 Visual Studio 2017 introduces rich support for CMake, including cross-platform CMake projects. The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes.
 
@@ -34,7 +34,7 @@ When you choose **File | Open | Folder** to open a folder containing a CMakeList
 
 - Visual Studio adds a **CMake** menu item to the main menu, with commands for viewing and editing CMake scripts.
 - **Solution Explorer** displays the folder structure and files.
-- Visual Studio runs CMake.exe and generates the CMake cache for the default *configuration*, which is x86 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.  **Visual Studio 2017 version 15.7 and later**: Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
+- Visual Studio runs CMake.exe and generates the CMake cache for the default *configuration*, which is x86-Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.  **Visual Studio 2017 version 15.7 and later**: Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
 You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" CMakeLists.txt files in your workspace. CMake operations (configure, build, debug) as well as C++ IntelliSense and browsing are available to all CMake projects in your workspace.
@@ -77,9 +77,9 @@ To build a CMake project, you have these choices:
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
 
-You can customize configurations and environment variables without modifying the CMakeLists.txt file by using the CMakeSettings.txt file. For more information, see [Customizing CMake configurations and other settings](customizing-cmake-settings.md).
+You can customize configurations and environment variables without modifying the CMakeLists.txt file by using the CMakeSettings.json file. For more information, see [Customizing CMake configurations and other settings](customizing-cmake-settings.md).
 
-When a Visual Studio generator is selected for the active configuration, MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the CMakeSettings.json file, you can specify additional command line arguments to be passed to the build system via the `buildCommandArgs` property:
+When a Visual Studio generator is selected for the active configuration, MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the CMakeSettings.json file, you can specify additional [MSBuild command line arguments](../build/msbuild-visual-cpp-overview.md) to be passed to the build system via the `buildCommandArgs` property:
 
 ```json
 "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
