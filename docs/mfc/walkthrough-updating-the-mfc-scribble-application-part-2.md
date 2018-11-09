@@ -113,25 +113,25 @@ The original Scribble application lets the user select pen widths from a dialog 
 
    1. Add the following code to `CScribbleDoc::OnPenThinWidth`.
 
-    ```cpp
-    // Get a pointer to the ribbon bar
-    CMFCRibbonBar* pRibbon = ((CMDIFrameWndEx*) AfxGetMainWnd())->GetRibbonBar();
-    ASSERT_VALID(pRibbon);
+        ```cpp
+        // Get a pointer to the ribbon bar
+        CMFCRibbonBar* pRibbon = ((CMDIFrameWndEx*) AfxGetMainWnd())->GetRibbonBar();
+        ASSERT_VALID(pRibbon);
 
-    // Get a pointer to the Thin Width combo box
-    CMFCRibbonComboBox* pThinComboBox = DYNAMIC_DOWNCAST(
-    CMFCRibbonComboBox, pRibbon->FindByID(ID_PEN_THIN_WIDTH));
+        // Get a pointer to the Thin Width combo box
+        CMFCRibbonComboBox* pThinComboBox = DYNAMIC_DOWNCAST(
+        CMFCRibbonComboBox, pRibbon->FindByID(ID_PEN_THIN_WIDTH));
 
-    //Get the selected value
-    int nCurSel = pThinComboBox->GetCurSel();
-    if (nCurSel>= 0)
-    {
-        m_nThinWidth = atoi(CStringA(pThinComboBox->GetItem(nCurSel)));
-    }
+        //Get the selected value
+        int nCurSel = pThinComboBox->GetCurSel();
+        if (nCurSel>= 0)
+        {
+            m_nThinWidth = atoi(CStringA(pThinComboBox->GetItem(nCurSel)));
+        }
 
-    // Create a new pen using the selected width
-    ReplacePen();
-    ```
+        // Create a new pen using the selected width
+        ReplacePen();
+        ```
 
 1. Next, create a menu item and event handlers for the thick pen.
 
@@ -147,23 +147,23 @@ The original Scribble application lets the user select pen widths from a dialog 
 
    1. Add the following code to `CScribbleDoc::OnPenThickWidth`.
 
-      ```cpp
-      // Get a pointer to the ribbon bar
-      CMFCRibbonBar* pRibbon = ((CMDIFrameWndEx *) AfxGetMainWnd())->GetRibbonBar();
-      ASSERT_VALID(pRibbon);
+        ```cpp
+        // Get a pointer to the ribbon bar
+        CMFCRibbonBar* pRibbon = ((CMDIFrameWndEx *) AfxGetMainWnd())->GetRibbonBar();
+        ASSERT_VALID(pRibbon);
 
-      CMFCRibbonComboBox* pThickComboBox = DYNAMIC_DOWNCAST(
-          CMFCRibbonComboBox, pRibbon->FindByID(ID_PEN_THICK_WIDTH));
-      // Get the selected value
-      int nCurSel = pThickComboBox->GetCurSel();
-      if (nCurSel>= 0)
-      {
-          m_nThickWidth = atoi(CStringA(pThickComboBox->GetItem(nCurSel)));
-      }
+        CMFCRibbonComboBox* pThickComboBox = DYNAMIC_DOWNCAST(
+            CMFCRibbonComboBox, pRibbon->FindByID(ID_PEN_THICK_WIDTH));
+        // Get the selected value
+        int nCurSel = pThickComboBox->GetCurSel();
+        if (nCurSel>= 0)
+        {
+            m_nThickWidth = atoi(CStringA(pThickComboBox->GetItem(nCurSel)));
+        }
 
-      // Create a new pen using the selected width
-      ReplacePen();
-      ```
+        // Create a new pen using the selected width
+        ReplacePen();
+        ```
 
 1. Save the changes, and then build and run the application. New buttons and combo boxes should be displayed. Try using different pen widths to scribble.
 

@@ -10,9 +10,9 @@ ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
 ## Syntax
 
 ```
-FILE *stdin; 
-FILE *stdout; 
-FILE *stderr; 
+FILE *stdin;
+FILE *stdout;
+FILE *stderr;
 #include <stdio.h>
 ```
 

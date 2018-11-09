@@ -67,12 +67,12 @@ The *category* argument specifies the parts of a program's locale information th
 
 |*category* flag|Affects|
 |-|-|
-**LC_ALL**|All categories, as listed below.
-**LC_COLLATE**|The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions.
-**LC_CTYPE**|The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected).
-**LC_MONETARY**|Monetary-formatting information returned by the **localeconv** function.
-**LC_NUMERIC**|Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
-**LC_TIME**|The **strftime** and **wcsftime** functions.
+| **LC_ALL** | All categories, as listed below. |
+| **LC_COLLATE** | The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions. |
+| **LC_CTYPE** | The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected). |
+| **LC_MONETARY** | Monetary-formatting information returned by the **localeconv** function. |
+| **LC_NUMERIC** | Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md). |
+| **LC_TIME** | The **strftime** and **wcsftime** functions. |
 
 This function validates the category parameter. If the category parameter is not one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL** and returns **NULL**.
 

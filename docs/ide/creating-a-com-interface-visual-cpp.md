@@ -45,7 +45,6 @@ Additionally, you can implement new interfaces on your COM control by right-clic
 ```
 interface IMyInterface {
 };
-
 ```
 
 See [Implementing an Interface](../ide/implementing-an-interface-visual-cpp.md) and [Adding Objects and Controls to an ATL Project](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) for more information.

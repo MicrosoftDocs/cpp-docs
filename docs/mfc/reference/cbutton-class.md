@@ -77,13 +77,13 @@ If you want to handle Windows notification messages sent by a button control to 
 
 Each message-map entry takes the following form:
 
-**ON_**Notification **(**`id`, `memberFxn`**)**
+**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
 
-where `id` specifies the child window ID of the control sending the notification and `memberFxn` is the name of the parent member function you have written to handle the notification.
+where *id* specifies the child window ID of the control sending the notification and *memberFxn* is the name of the parent member function you have written to handle the notification.
 
 The parent's function prototype is as follows:
 
-**afx_msg** `void` `memberFxn` **( );**
+`afx_msg void memberFxn();`
 
 Potential message-map entries are as follows:
 

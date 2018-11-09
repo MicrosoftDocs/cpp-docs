@@ -41,10 +41,10 @@ These manifest constants are defined in \<fcntl.h>:
 
 |||
 |-|-|
-**\_O\_APPEND**|Positions a file pointer to the end of the file before every write operation.
-**\_O\_RDONLY**|Opens the file for reading only.
-**\_O\_TEXT**|Opens the file in text (translated) mode.
-**\_O\_WTEXT**|Opens the file in Unicode (translated UTF-16) mode.
+| **\_O\_APPEND** | Positions a file pointer to the end of the file before every write operation. |
+| **\_O\_RDONLY** | Opens the file for reading only. |
+| **\_O\_TEXT** | Opens the file in text (translated) mode. |
+| **\_O\_WTEXT** | Opens the file in Unicode (translated UTF-16) mode. |
 
 The **_open_osfhandle** call transfers ownership of the Win32 file handle to the file descriptor. To close a file opened with **_open_osfhandle**, call [\_close](close.md). The underlying OS file handle is also closed by a call to **_close**, so it is not necessary to call the Win32 function **CloseHandle** on the original handle. If the file descriptor is owned by a **FILE &#42;** stream, then calling [fclose](fclose-fcloseall.md) on that **FILE &#42;** stream also closes both the file descriptor and the underlying handle. In this case, do not call **_close** on the file descriptor.
 

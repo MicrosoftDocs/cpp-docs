@@ -132,7 +132,6 @@ int main()
     //throw bad_alloc();
     terminate();
 }
-
 ```
 
 ## <a name="get_unexpected"></a>  get_unexpected
@@ -189,7 +188,6 @@ int main()
     unexpected(); // library function to force calling the
                   // current unexpected handler
 }
-
 ```
 
 ## <a name="terminate"></a>  terminate

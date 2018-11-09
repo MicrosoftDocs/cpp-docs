@@ -57,7 +57,6 @@ The constructor.
 
 ```cpp
 CBookmark();
- 
 CBookmark(DBLENGTH nSize);
 ```
 

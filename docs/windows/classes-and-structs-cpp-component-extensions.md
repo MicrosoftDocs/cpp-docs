@@ -21,7 +21,6 @@ The **ref class** or **ref struct** extensions declare a class or struct whose *
 class_accessref structnamemodifier :  inherit_accessbase_type {};
 class_accessvalue classnamemodifier :  inherit_accessbase_type {};
 class_accessvalue structnamemodifier :  inherit_accessbase_type {};
-
 ```
 
 ### Parameters

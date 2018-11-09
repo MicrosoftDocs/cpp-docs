@@ -13,7 +13,6 @@ Defines the template class [basic_ostream](../standard-library/basic-ostream-cla
 
 ```cpp
 #include <ostream>
-
 ```
 
 ### Typedefs

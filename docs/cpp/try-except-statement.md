@@ -13,11 +13,11 @@ The **try-except** statement is a Microsoft extension to the C and C++ languages
 
 ## Syntax
 
-> **__try** <br/>
+> **\_\_try**<br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;// guarded code<br/>
 > }<br/>
-> **__except** ( *expression* )<br/>
+> **\_\_except** ( *expression* )<br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;// exception handler code<br/>
 > }<br/>

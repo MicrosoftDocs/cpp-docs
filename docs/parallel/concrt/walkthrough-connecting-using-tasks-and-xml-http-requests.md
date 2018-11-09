@@ -60,35 +60,34 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
    [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]
 
-1. In MainPage.xaml.h, add this `#include` directive:
+2. In MainPage.xaml.h, add this `#include` directive:
 
    [!code-cpp[concrt-using-ixhr2#A2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_5.h)]
 
-1. In MainPage.xaml.h, add these `private` member variables to the `MainPage` class:
+3. In MainPage.xaml.h, add these `private` member variables to the `MainPage` class:
 
    [!code-cpp[concrt-using-ixhr2#A3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_6.h)]
 
-1. In MainPage.xaml.h, declare the `private` method `ProcessHttpRequest`:
+4. In MainPage.xaml.h, declare the `private` method `ProcessHttpRequest`:
 
    [!code-cpp[concrt-using-ixhr2#A4](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_7.h)]
 
-1. In MainPage.xaml.cpp, add these `using` statements:
+5. In MainPage.xaml.cpp, add these `using` statements:
 
    [!code-cpp[concrt-using-ixhr2#A5](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_8.cpp)]
 
-1. In MainPage.xaml.cpp, implement the `GetButton_Click`, `PostButton_Click`, and `CancelButton_Click` methods of the `MainPage` class.
+6. In MainPage.xaml.cpp, implement the `GetButton_Click`, `PostButton_Click`, and `CancelButton_Click` methods of the `MainPage` class.
 
    [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]
 
-    > [!TIP]
-
-    >  If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation-token-class.md#none) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.
+   > [!TIP]
+   > If your app does not require support for cancellation, pass [concurrency::cancellation_token::none](reference/cancellation-token-class.md#none) to the `HttpRequest::GetAsync` and `HttpRequest::PostAsync` methods.
 
 1. In MainPage.xaml.cpp, implement the `MainPage::ProcessHttpRequest` method.
 
    [!code-cpp[concrt-using-ixhr2#A7](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_10.cpp)]
 
-1. In the project properties, under **Linker**, **Input**, specify `shcore.lib` and `msxml6.lib`.
+8. In the project properties, under **Linker**, **Input**, specify `shcore.lib` and `msxml6.lib`.
 
 Here is the running app:
 

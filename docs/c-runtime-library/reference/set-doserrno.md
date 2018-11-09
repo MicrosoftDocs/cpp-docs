@@ -15,7 +15,7 @@ Sets the value of the [_doserrno](../../c-runtime-library/errno-doserrno-sys-err
 ## Syntax
 
 ```C
-errno_t _set_doserrno( int error_value );
+errno_t _set_doserrno( int error_value );
 ```
 
 ### Parameters

@@ -15,8 +15,8 @@ Gets the error value returned by the operating system before it is translated in
 ## Syntax
 
 ```C
-errno_t _get_doserrno( 
-   int * pValue 
+errno_t _get_doserrno(
+   int * pValue
 );
 ```
 

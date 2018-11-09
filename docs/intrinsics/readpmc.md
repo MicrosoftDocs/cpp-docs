@@ -14,8 +14,8 @@ Generates the `rdpmc` instruction, which reads the performance monitoring counte
 ## Syntax
 
 ```
-unsigned __int64 __readpmc( 
-   unsigned long counter 
+unsigned __int64 __readpmc(
+   unsigned long counter
 );
 ```
 

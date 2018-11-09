@@ -13,7 +13,6 @@ Defines the template class stack and two supporting templates.
 
 ```cpp
 #include <stack>
-
 ```
 
 ### Operators

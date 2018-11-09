@@ -14,9 +14,9 @@ Generates the x64 extended version of the Convert 64-Bit Integer to Scalar Singl
 ## Syntax
 
 ```
-__m128 _mm_cvtsi64x_ss( 
-   __m128 a, 
-   __int64 b 
+__m128 _mm_cvtsi64x_ss(
+   __m128 a,
+   __int64 b
 );
 ```
 

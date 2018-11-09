@@ -26,7 +26,6 @@ These methods have internal accessibility—that is, they are only accessible wi
 
 |Name|Description|
 |----------|-----------------|
-
 |[WriteOnlyArray::begin](#begin)|An iterator that points to the first element of the array.|
 |[WriteOnlyArray::Data](#data)|A pointer to the data buffer.|
 |[WriteOnlyArray::end](#end)|An iterator that points to one past the last element in the array.|

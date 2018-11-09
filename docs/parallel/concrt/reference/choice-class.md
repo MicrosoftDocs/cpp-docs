@@ -192,7 +192,6 @@ Checks whether this `choice` messaging block has been initialized with a value y
 
 ```
 bool has_value() const;
-
 ```
 
 ### Return Value

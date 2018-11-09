@@ -27,7 +27,7 @@ When you insert a new form into your application, Visual C++ does the following:
 
      **WS_VISIBLE**=Off
 
-     **WS_CAPTION=**Off
+     **WS_CAPTION**=Off
 
 For applications based on the document/view architecture, the **New Form** command (right-click in Class View) also:
 

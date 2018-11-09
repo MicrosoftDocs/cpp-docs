@@ -11,7 +11,7 @@ ms.author: "mblome"
 
 > [!NOTE]
 > This developer documentation applies to Visual Studio 2015 and Visual Studio 2017.
-
+>
 > If you are looking for a Visual C++ redistributable package so that you can run a program, go to the [Microsoft Download Center](http://www.microsoft.com/download/) and enter **Visual C++** in the search box.
 
 

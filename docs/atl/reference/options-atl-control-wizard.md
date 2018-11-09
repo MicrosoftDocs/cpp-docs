@@ -7,8 +7,6 @@ ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
 ---
 # Options, ATL Control Wizard
 
-Insert "Search Results" summary here.
-
 Use this page of the wizard to define the type of control you are creating and the level of interface support it contains.
 
 ## UIElement List
@@ -21,17 +19,17 @@ The kind of control you want to create.
 
 - **Composite control**: An ActiveX control that can contain (similar to a dialog box) other ActiveX controls or Windows controls. A composite control includes the following:
 
-   - A template for the dialog box that implements the composite control.
+  - A template for the dialog box that implements the composite control.
 
-   - A custom resource, REGISTRY, which automatically registers the composite control when invoked.
+  - A custom resource, REGISTRY, which automatically registers the composite control when invoked.
 
-   - A C++ class that implements the composite control.
+  - A C++ class that implements the composite control.
 
-   - A COM interface, exposed by the composite control.
+  - A COM interface, exposed by the composite control.
 
-   - An HTML test page containing the composite control.
+  - An HTML test page containing the composite control.
 
-   By default, this control sets [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) to true, to indicate that this is a windowed control. It implements a sink map. For more information, see [Support for DHTML Control](../../atl/atl-support-for-dhtml-controls.md).
+    By default, this control sets [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) to true, to indicate that this is a windowed control. It implements a sink map. For more information, see [Support for DHTML Control](../../atl/atl-support-for-dhtml-controls.md).
 
 - **DHTML control**: An ATL DHTML control specifies the user interface, using HTML. The DHTML UI class contains a COM map. By default, this control sets [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) to true, to indicate that this is a windowed control.
 

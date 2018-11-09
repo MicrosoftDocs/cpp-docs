@@ -39,10 +39,10 @@ Number of bytes to lock.
 
 |errno value|Condition|
 |-|-|
-**EACCES**|Locking violation (file already locked or unlocked).
-**EBADF**|Invalid file descriptor.
-**EDEADLOCK**|Locking violation. Returned when the **_LK_LOCK** or **_LK_RLCK** flag is specified and the file cannot be locked after 10 attempts.
-**EINVAL**|An invalid argument was given to **_locking**.
+| **EACCES** | Locking violation (file already locked or unlocked). |
+| **EBADF** | Invalid file descriptor. |
+| **EDEADLOCK** | Locking violation. Returned when the **_LK_LOCK** or **_LK_RLCK** flag is specified and the file cannot be locked after 10 attempts. |
+| **EINVAL** | An invalid argument was given to **_locking**. |
 
 If the failure is due to a bad parameter, such as an invalid file descriptor, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
@@ -54,11 +54,11 @@ The **_locking** function locks or unlocks *nbytes* bytes of the file specified 
 
 |*mode* value|Effect|
 |-|-|
-**_LK_LOCK**|Locks the specified bytes. If the bytes cannot be locked, the program immediately tries again after 1 second. If, after 10 attempts, the bytes cannot be locked, the constant returns an error.
-**_LK_NBLCK**|Locks the specified bytes. If the bytes cannot be locked, the constant returns an error.
-**_LK_NBRLCK**|Same as **_LK_NBLCK**.
-**_LK_RLCK**|Same as **_LK_LOCK**.
-**_LK_UNLCK**|Unlocks the specified bytes, which must have been previously locked.
+| **_LK_LOCK** | Locks the specified bytes. If the bytes cannot be locked, the program immediately tries again after 1 second. If, after 10 attempts, the bytes cannot be locked, the constant returns an error. |
+| **_LK_NBLCK** | Locks the specified bytes. If the bytes cannot be locked, the constant returns an error. |
+| **_LK_NBRLCK** | Same as **_LK_NBLCK**. |
+| **_LK_RLCK** | Same as **_LK_LOCK**. |
+| **_LK_UNLCK** | Unlocks the specified bytes, which must have been previously locked. |
 
 Multiple regions of a file that do not overlap can be locked. A region being unlocked must have been previously locked. **_locking** does not merge adjacent regions; if two locked regions are adjacent, each region must be unlocked separately. Regions should be locked only briefly and should be unlocked before closing a file or exiting the program.
 

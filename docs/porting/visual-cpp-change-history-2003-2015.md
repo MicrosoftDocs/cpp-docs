@@ -57,19 +57,19 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    Functions that were moved:
 
-   - double abs(double) and float abs(float)
+  - double abs(double) and float abs(float)
 
-   - double pow(double, int), float pow(float, float), float pow(float, int), long double pow(long double, long double), long double pow(long double, int)
+  - double pow(double, int), float pow(float, float), float pow(float, int), long double pow(long double, long double), long double pow(long double, int)
 
-   - float and long double versions of floating point functions acos, acosh, asin, asinh, atan, atanh, atan2, cbrt, ceil, copysign, cos, cosh, erf, erfc, exp, exp2, expm1, fabs, fdim, floor, fma, fmax, fmin, fmod, frexp, hypot, ilogb, ldexp, lgamma, llrint, llround, log, log10, log1p, log2, lrint, lround, modf, nearbyint, nextafter, nexttoward, remainder, remquo, rint, round, scalbln, scalbn, sin, sinh, sqrt, tan, tanh, tgamma, trunc
+  - float and long double versions of floating point functions acos, acosh, asin, asinh, atan, atanh, atan2, cbrt, ceil, copysign, cos, cosh, erf, erfc, exp, exp2, expm1, fabs, fdim, floor, fma, fmax, fmin, fmod, frexp, hypot, ilogb, ldexp, lgamma, llrint, llround, log, log10, log1p, log2, lrint, lround, modf, nearbyint, nextafter, nexttoward, remainder, remquo, rint, round, scalbln, scalbn, sin, sinh, sqrt, tan, tanh, tgamma, trunc
 
-   If you have code that uses abs with a floating point type that only includes the math.h header, the floating point versions will no longer be available, so the call, even with a floating point argument, now resolves to abs(int). This produces the error:
+  If you have code that uses abs with a floating point type that only includes the math.h header, the floating point versions will no longer be available, so the call, even with a floating point argument, now resolves to abs(int). This produces the error:
 
     ```Output
     warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
     ```
 
-   The fix for this warning is to replace the call to `abs` with a floating point version of `abs`, such as `fabs` for a double argument or `fabsf` for a float argument, or include the cmath header and continue to use `abs`.
+  The fix for this warning is to replace the call to `abs` with a floating point version of `abs`, such as `fabs` for a double argument or `fabsf` for a float argument, or include the cmath header and continue to use `abs`.
 
 - **Floating point conformance**
 
@@ -109,7 +109,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    To add this library to your linker input in the IDE, open the context menu for the project node, choose **Properties**, then in the **Project Properties** dialog box, choose **Linker**, and edit the **Linker Input** to add `legacy_stdio_definitions.lib` to the semi-colon-separated list.
 
-   If your project links with static libraries that were compiled with a release of Visual Studio earlier than 2015, the linker might report an unresolved external symbol. These errors might reference internal stdio definitions for _iob, _iob_func, or related imports for certain stdio functions in the form of _imp\_*. Microsoft recommends that you recompile all static libraries with the latest version of the C++ compiler and libraries when you upgrade a project. If the library is a third-party library for which source is not available, you should either request an updated binary from the third party or encapsulate your usage of that library into a separate DLL that you compile with the older version of the compiler and libraries.
+   If your project links with static libraries that were compiled with a release of Visual Studio earlier than 2015, the linker might report an unresolved external symbol. These errors might reference internal stdio definitions for `_iob`, `_iob_func`, or related imports for certain stdio functions in the form of _imp_\*. Microsoft recommends that you recompile all static libraries with the latest version of the C++ compiler and libraries when you upgrade a project. If the library is a third-party library for which source is not available, you should either request an updated binary from the third party or encapsulate your usage of that library into a separate DLL that you compile with the older version of the compiler and libraries.
 
     > [!WARNING]
     > If you are linking with Windows SDK 8.1 or earlier, you might encounter these unresolved external symbol errors. In that case, you should resolve the error by adding legacy_stdio_definitions.lib to the linker input as described previously.
@@ -132,27 +132,27 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    In previous versions, infinities and NaNs would be formatted using a set of MSVC-specific sentinel strings.
 
-   - Infinity: 1.#INF
+  - Infinity: 1.#INF
 
-   - Quiet NaN: 1.#QNAN
+  - Quiet NaN: 1.#QNAN
 
-   - Signaling NaN: 1.#SNAN
+  - Signaling NaN: 1.#SNAN
 
-   - Indefinite NaN: 1.#IND
+  - Indefinite NaN: 1.#IND
 
-   Any of these may have been prefixed by a sign and may have been formatted slightly differently depending on field width and precision (sometimes with unusual effects, e.g. `printf("%.2f\n", INFINITY)` would print 1.#J because the #INF would be "rounded" to a precision of 2 digits). C99 introduced new requirements on how infinities and NaNs are to be formatted. The MSVC implementation now conforms to these requirements. The new strings are as follows:
+  Any of these may have been prefixed by a sign and may have been formatted slightly differently depending on field width and precision (sometimes with unusual effects, e.g. `printf("%.2f\n", INFINITY)` would print 1.#J because the #INF would be "rounded" to a precision of 2 digits). C99 introduced new requirements on how infinities and NaNs are to be formatted. The MSVC implementation now conforms to these requirements. The new strings are as follows:
 
-   - Infinity: inf
+  - Infinity: inf
 
-   - Quiet NaN: nan
+  - Quiet NaN: nan
 
-   - Signaling NaN: nan(snan)
+  - Signaling NaN: nan(snan)
 
-   - Indefinite NaN:nan(ind)
+  - Indefinite NaN:nan(ind)
 
-   Any of these may be prefixed by a sign. If a capital format specifier is used (%F instead of %f) then the strings are printed in capital letters (INF instead of inf), as is required.
+  Any of these may be prefixed by a sign. If a capital format specifier is used (%F instead of %f) then the strings are printed in capital letters (INF instead of inf), as is required.
 
-   The [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) functions have been modified to parse these new strings, so these strings will round-trip through printf and scanf.
+  The [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) functions have been modified to parse these new strings, so these strings will round-trip through printf and scanf.
 
 - **Floating point formatting and parsing**
 
@@ -164,8 +164,16 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
     printf("%.0f\n", pow(2.0, 80))
     ```
 
+   Old output:
+
     ```Output
-        Old:  1208925819614629200000000    New:  1208925819614629174706176
+    1208925819614629200000000
+    ```
+
+   New output:
+
+    ```Output
+    1208925819614629174706176
     ```
 
    The old parsing algorithms would consider only up to 17 significant digits from the input string and would discard the rest of the digits. This is sufficient to generate a very close approximation of the value represented by the string, and the result is usually very close to the correctly rounded result. The new implementation considers all present digits and produces the correctly rounded result for all inputs (up to 768 digits in length). In addition, these functions now respect the rounding mode (controllable via fesetround).  This is a potentially breaking behavior change because these functions might output different results. The new results are always more correct than the old results.
@@ -634,7 +642,7 @@ Although these differences can affect your source code or other build artifacts,
    For example, suppose your code defines both a **placement new** and a **placement delete**:
 
     ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
     ```
 

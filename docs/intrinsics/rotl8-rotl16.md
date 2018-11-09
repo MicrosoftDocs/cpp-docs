@@ -14,13 +14,13 @@ Rotate the input values to the left to the most significant bit (MSB) by a speci
 ## Syntax
 
 ```
-unsigned char _rotl8( 
-   unsigned char value, 
-   unsigned char shift 
+unsigned char _rotl8(
+   unsigned char value,
+   unsigned char shift
 );
-unsigned short _rotl16( 
-   unsigned short value, 
-   unsigned char shift 
+unsigned short _rotl16(
+   unsigned short value,
+   unsigned char shift
 );
 ```
 

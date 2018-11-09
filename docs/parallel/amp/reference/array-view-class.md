@@ -295,7 +295,6 @@ array_view(
     int _E1,
     int _E2,
     const value_type* _Src) restrict(amp,cpu);
-
 ```
 
 ### Parameters
@@ -337,7 +336,6 @@ void copy_to(
 
 void copy_to(
     array_view<value_type, _Rank>& _Dest) const;
-
 ```
 
 ### Parameters
@@ -413,7 +411,6 @@ Returns the accelerator_view where the data source of the array_view is located.
 
 ```
 accelerator_view get_source_accelerator_view() const;
-
 ```
 
 ### Return Value

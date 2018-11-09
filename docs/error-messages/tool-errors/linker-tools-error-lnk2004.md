@@ -40,7 +40,6 @@ struct X {
     int     w3;
     int     w4;
 } x  = { 23, 23*2, 23*3, 23*4 };
-
 ```
 
 This error is followed by fatal error `LNK1165`.

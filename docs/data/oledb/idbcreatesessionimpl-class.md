@@ -48,8 +48,8 @@ Creates a new session from the data source object and returns the requested inte
 ### Syntax
 
 ```cpp
-STDMETHOD(CreateSession)(IUnknown * pUnkOuter, 
-   REFIID riid, 
+STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
+   REFIID riid,
    IUnknown ** ppDBSession);
 ```
 

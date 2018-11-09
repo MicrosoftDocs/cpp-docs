@@ -14,17 +14,17 @@ Read memory from a location specified by an offset relative to the beginning of 
 ## Syntax
 
 ```
-unsigned char __readgsbyte( 
-   unsigned long Offset 
-);
-unsigned short __readgsword( 
-   unsigned long Offset 
-);
-unsigned long __readgsdword( 
+unsigned char __readgsbyte(
    unsigned long Offset
 );
-unsigned __int64 __readgsqword( 
-   unsigned long Offset 
+unsigned short __readgsword(
+   unsigned long Offset
+);
+unsigned long __readgsdword(
+   unsigned long Offset
+);
+unsigned __int64 __readgsqword(
+   unsigned long Offset
 );
 ```
 

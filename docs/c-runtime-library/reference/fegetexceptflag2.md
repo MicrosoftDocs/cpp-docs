@@ -19,7 +19,6 @@ int fegetexceptflag(
    fexcept_t* pstatus,
    int excepts
 );
-
 ```
 
 ### Parameters

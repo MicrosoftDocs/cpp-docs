@@ -58,11 +58,11 @@ The return value from a synchronous **_spawnlpe** or **_wspawnlpe** (**_P_WAIT**
 
 |||
 |-|-|
-**E2BIG**|Argument list exceeds 1024 bytes.
-**EINVAL**|*mode* argument is invalid.
-**ENOENT**|File or path is not found.
-**ENOEXEC**|Specified file is not executable or has invalid executable-file format.
-**ENOMEM**|Not enough memory is available to execute the new process.
+| **E2BIG** | Argument list exceeds 1024 bytes. |
+| **EINVAL** | *mode* argument is invalid. |
+| **ENOENT** | File or path is not found. |
+| **ENOEXEC** | Specified file is not executable or has invalid executable-file format. |
+| **ENOMEM** | Not enough memory is available to execute the new process. |
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

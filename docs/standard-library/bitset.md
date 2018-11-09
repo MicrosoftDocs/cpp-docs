@@ -14,7 +14,6 @@ Defines the template class bitset and two supporting template functions for repr
 ```
 
 #include <bitset>
-
 ```
 
 ### Operators

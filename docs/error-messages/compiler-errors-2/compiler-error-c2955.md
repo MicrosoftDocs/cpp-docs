@@ -42,7 +42,6 @@ void CT::CTFunc() {}   // C2955
 // OK - this is how to fix it
 template <class T>
 void CT<T>::CTFunc2() {}
-
 ```
 
 C2955 can also occur when using generics:

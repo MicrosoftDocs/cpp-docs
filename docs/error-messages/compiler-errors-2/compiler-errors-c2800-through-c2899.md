@@ -30,7 +30,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C2812](compiler-error-c2812.md)|#import is not supported with /clr:pure and /clr:safe|
 |[Compiler Error C2813](compiler-error-c2813.md)|#import is not supported with /MP|
 |[Compiler Error C2814](compiler-error-c2814.md)|'*member*': a native type cannot be nested within a managed/WinRT type '*class*'|
-|[Compiler Error C2815](compiler-error-c2815.md)|'operator delete': first formal parameter must be 'void *', but '*type*' was used|
+|[Compiler Error C2815](compiler-error-c2815.md)|'operator delete': first formal parameter must be 'void \*', but '*type*' was used|
 |Compiler Error C2816|Obsolete.|
 |[Compiler Error C2817](compiler-error-c2817.md)|return type for 'operator delete' must be 'void'|
 |[Compiler Error C2818](compiler-error-c2818.md)|application of overloaded 'operator ->' is recursive through type '*class*'|
@@ -39,7 +39,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C2821](compiler-error-c2821.md)|first formal parameter to 'operator new' must be 'size_t'|
 |Compiler Error C2822|local unwind is not supported on this platform|
 |[Compiler Error C2823](compiler-error-c2823.md)|a typedef template/generic is illegal|
-|[Compiler Error C2824](compiler-error-c2824.md)|return type for 'operator new' must be 'void *'|
+|[Compiler Error C2824](compiler-error-c2824.md)|return type for 'operator new' must be 'void \*'|
 |[Compiler Error C2825](compiler-error-c2825.md)|'*identifier*': must be a class or namespace when followed by '::'|
 |Compiler Error C2826|Obsolete.|
 |[Compiler Error C2827](compiler-error-c2827.md)|'operator *operator*' cannot be globally overridden with unary form|

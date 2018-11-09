@@ -32,7 +32,6 @@ float log2f(
 long double log2l(
    long double x
 );
-
 ```
 
 ### Parameters

@@ -394,7 +394,7 @@ The number of elements in the multiset whose sort key matches the parameter key.
 
 The member function returns the number of elements *x* in the range
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) ).
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 ### Example
 
@@ -668,7 +668,6 @@ int main()
     print(s1);
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  multiset::emplace_hint
@@ -1197,7 +1196,6 @@ int main()
     print(s4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  multiset::iterator

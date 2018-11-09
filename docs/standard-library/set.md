@@ -13,7 +13,6 @@ Defines the container template classes set and multiset and their supporting tem
 
 ```cpp
 #include <set>
-
 ```
 
 ## Members

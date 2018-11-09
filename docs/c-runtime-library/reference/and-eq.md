@@ -14,9 +14,7 @@ An alternative to the &= operator.
 ## Syntax
 
 ```C
-
 #define and_eq &=
-
 ```
 
 ## Remarks

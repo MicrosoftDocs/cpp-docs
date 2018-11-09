@@ -112,7 +112,6 @@ Call this function to determine if the calling class is derived from the class s
 
 ```
 BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
-
 ```
 
 ### Parameters

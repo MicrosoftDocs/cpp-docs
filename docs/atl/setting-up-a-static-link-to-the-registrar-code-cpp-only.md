@@ -12,7 +12,7 @@ The simplest way to set up static linking assumes you have specified [DECLARE_RE
 
 ## To create a static link using DECLARE_REGISTRY_RESOURCEID
 
-1. Specify [/D](../build/reference/d-preprocessor-definitions.md)`_ATL_STATIC_REGISTRY` instead of /D**_ATL_DLL**.
+1. Specify [/D](../build/reference/d-preprocessor-definitions.md) **\_ATL\_STATIC\_REGISTRY** instead of **/D \_ATL\_DLL**.
 
 1. Recompile.
 

@@ -122,7 +122,6 @@ int main()
 
     test(k_dist, p_dist, samples);
 }
-
 ```
 
 First run:

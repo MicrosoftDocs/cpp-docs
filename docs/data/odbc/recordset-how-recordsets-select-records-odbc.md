@@ -49,9 +49,8 @@ When you call a recordset object's [Open](../../mfc/reference/crecordset-class.m
 
 - The [sort](../../data/odbc/recordset-sorting-records-odbc.md) order for the recordset, if any, contained in the [m_strSort](../../mfc/reference/crecordset-class.md#m_strsort) data member. The framework uses this string to construct a SQL **ORDER BY** clause.
 
-
-    > [!TIP]
-    >  To use the SQL **GROUP BY** clause (and possibly the **HAVING** clause), append the clauses to the end of your filter string.
+   > [!TIP]
+   > To use the SQL **GROUP BY** clause (and possibly the **HAVING** clause), append the clauses to the end of your filter string.
 
 - The values of any [parameter data members](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) you specify for the class. You set parameter values just before you call `Open` or `Requery`. The framework binds the parameter values to "?" placeholders in the SQL string. At compile time, you specify the string with placeholders. At run time, the framework fills in the details based on the parameter values you pass.
 

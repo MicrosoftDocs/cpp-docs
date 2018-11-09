@@ -883,7 +883,6 @@ int main()
     cout << "c2 = ";
     print(c2);
 }
-
 ```
 
 ```Output

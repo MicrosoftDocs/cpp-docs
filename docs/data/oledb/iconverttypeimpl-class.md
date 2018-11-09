@@ -45,8 +45,8 @@ Gives information on the availability of type conversions on a command or on a r
 ### Syntax
 
 ```cpp
-STDMETHOD(CanConvert)(DBTYPE wFromType, 
-   DBTYPE wToType, 
+STDMETHOD(CanConvert)(DBTYPE wFromType,
+   DBTYPE wToType,
    DBCONVERTFLAGS dwConvertFlags);
 ```
 

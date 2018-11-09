@@ -132,7 +132,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -187,7 +186,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -240,7 +238,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ## <a name="back"></a>  array::back
@@ -282,7 +279,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -329,7 +325,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -434,7 +429,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -480,7 +474,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -526,7 +519,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -572,7 +564,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -712,7 +703,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -758,7 +748,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -809,7 +798,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -858,7 +846,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -950,7 +937,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1001,14 +987,12 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
 it1: 0 1 2 3
 
 it2: 0
-
 ```
 
 ## <a name="max_size"></a>  array::max_size
@@ -1048,7 +1032,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1103,7 +1086,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1158,7 +1140,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1204,7 +1185,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1251,7 +1231,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1297,7 +1276,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1344,7 +1322,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1390,7 +1367,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1435,7 +1411,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1481,7 +1456,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1546,7 +1520,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1597,7 +1570,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

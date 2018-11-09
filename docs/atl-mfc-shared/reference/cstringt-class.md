@@ -12,13 +12,10 @@ This class represents a `CStringT` object.
 ## Syntax
 
 ```
-
 template<typename BaseType, class StringTraits>
 class CStringT :
-public CSimpleStringT<BaseType,
-                      _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>
-                      ::c_bIsMFCDLLTraits>
-
+    public CSimpleStringT<BaseType,
+        _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>::c_bIsMFCDLLTraits>
 ```
 
 #### Parameters
@@ -35,19 +32,19 @@ The character type of the string class. Can be one of the following:
 *StringTraits*<br/>
 Determines if the string class needs C Run-Time (CRT) Library support and where string resources are located. Can be one of the following:
 
-- **StrTraitATL< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; `char` &#124; **TCHAR > >**
+- **StrTraitATL< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    The class requires CRT support and searches for resource strings in the module specified by `m_hInstResource` (a member of the application's module class).
 
-- **StrTraitATL< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; `char` &#124; **TCHAR > >**
+- **StrTraitATL< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    The class does not require CRT support and searches for resource strings in the module specified by `m_hInstResource` (a member of the application's module class).
 
-- **StrTraitMFC< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; `char` &#124; **TCHAR > >**
+- **StrTraitMFC< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    The class requires CRT support and searches for resource strings using the standard MFC search algorithm.
 
-- **StrTraitMFC< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; `char` &#124; **TCHAR > >**
+- **StrTraitMFC< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    The class does not require CRT support and searches for resource strings using the standard MFC search algorithm.
 

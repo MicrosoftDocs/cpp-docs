@@ -13,7 +13,6 @@ Includes the Standard C library header \<math.h> and adds the associated names t
 
 ```cpp
 #include <cmath>
-
 ```
 
 ## Remarks

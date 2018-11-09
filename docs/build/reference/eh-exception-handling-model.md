@@ -15,12 +15,17 @@ Specifies the kind of exception handling used by the compiler, when to optimize 
 
 ## Arguments
 
-|||
-|-|-|
-**a**|The exception-handling model that catches both asynchronous (structured) and synchronous (C++) exceptions by use of C++ `catch(...)` syntax.
-**s**|The exception-handling model that catches synchronous (C++) exceptions only and tells the compiler to assume that functions declared as **extern "C"** may throw an exception.
-**c**|If used with **s** (**/EHsc**), catches C++ exceptions only and tells the compiler to assume that functions declared as **extern "C"** never throw a C++ exception. **/EHca** is equivalent to **/EHa**.
-**r**|Tells the compiler to always generate runtime termination checks for all **noexcept** functions. By default, runtime checks for **noexcept** may be optimized away if the compiler determines the function calls only non-throwing functions.
+**a**<br/>
+The exception-handling model that catches both asynchronous (structured) and synchronous (C++) exceptions by use of C++ `catch(...)` syntax.
+
+**s**<br/>
+The exception-handling model that catches synchronous (C++) exceptions only and tells the compiler to assume that functions declared as **extern "C"** may throw an exception.
+
+**c**<br/>
+If used with **s** (**/EHsc**), catches C++ exceptions only and tells the compiler to assume that functions declared as **extern "C"** never throw a C++ exception. **/EHca** is equivalent to **/EHa**.
+
+**r**<br/>
+Tells the compiler to always generate runtime termination checks for all **noexcept** functions. By default, runtime checks for **noexcept** may be optimized away if the compiler determines the function calls only non-throwing functions.
 
 ## Remarks
 

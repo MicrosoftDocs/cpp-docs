@@ -13,7 +13,7 @@ Executes a *statement* repeatedly until the specified termination condition (the
 
 ```
 do
-   statement
+   statement
 while ( expression ) ;
 ```
 

@@ -13,7 +13,6 @@ Defines the container template classes map and multimap and their supporting tem
 
 ```cpp
 #include <map>
-
 ```
 
 ## Members

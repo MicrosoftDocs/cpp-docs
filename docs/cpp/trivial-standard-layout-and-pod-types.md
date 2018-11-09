@@ -88,7 +88,6 @@ struct Derived : public Base
    int x;
    int y;
 };
-
 ```
 
 In this example `Derived` is standard-layout because `Base` has no non-static data members:

@@ -12,7 +12,7 @@ Specifies dispatch interfaces that are forced to be members of the IDL coclass.
 ## Syntax
 
 ```cpp
-[ implements( 
+[ implements(
    interfaces={interfaces}, dispinterfaces={dispinterfaces})]
 ```
 

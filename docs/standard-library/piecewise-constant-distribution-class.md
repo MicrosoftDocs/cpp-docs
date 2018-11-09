@@ -150,7 +150,6 @@ int main()
 
     test(samples);
 }
-
 ```
 
 ```Output

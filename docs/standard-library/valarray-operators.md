@@ -14,7 +14,7 @@ helpviewer_keywords: ["std::operator!= (valarray), std::operator&amp; (valarray)
 |[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|
 |[operator&lt;=](#op_lt_eq)|[operator*](#op_star)|[operator+](#op_add)|
 |[operator-](#operator-)|[operator/](#op_div)|[operator==](#op_eq_eq)|
-|[operator^](#op_xor)|[operator|](#op_or)|[operator||](#op_lor)|
+|[operator^](#op_xor)|[operator&#124;](#op_or)|[operator&#124;&#124;](#op_lor)|
 
 ## <a name="op_neq"></a>  operator!=
 

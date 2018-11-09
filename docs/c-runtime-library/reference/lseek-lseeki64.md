@@ -50,9 +50,9 @@ The **_lseek** function moves the file pointer associated with *fd* to a new loc
 
 |*origin* value||
 |-|-|
-**SEEK_SET**|Beginning of the file.
-**SEEK_CUR**|Current position of the file pointer.
-**SEEK_END**|End of file.
+| **SEEK_SET** | Beginning of the file. |
+| **SEEK_CUR** | Current position of the file pointer. |
+| **SEEK_END** | End of file. |
 
 You can use **_lseek** to reposition the pointer anywhere in a file or beyond the end of the file.
 

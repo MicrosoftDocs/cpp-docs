@@ -203,7 +203,6 @@ void code_504(int *A) {
     }
 
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode100x"></a> 10xx
@@ -413,7 +412,6 @@ void code_1010()
         A[i]++;
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode110x"></a> 11xx
@@ -562,7 +560,6 @@ void code_1106(int *A)
         }
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode120x"></a> 12xx
@@ -638,7 +635,6 @@ void code_1203(int *A)
         A[i] += A[i*2+2] + 2;  // non-contiguous memory access not vectorized
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode130x"></a> 13xx
@@ -771,7 +767,6 @@ void code_1305( S_1305 *s, S_1305 x)
         s[i] = x;
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode140x"></a> 14xx
@@ -844,7 +839,6 @@ void code_1404(int *A)
         A[i] = A[i] + 1;
     }
 }
-
 ```
 
 ###  <a name="BKMK_ReasonCode150x"></a> 15xx
@@ -973,7 +967,6 @@ void code_1505(int *A, int *B)
         }
     }
 }
-
 ```
 
 ## See Also

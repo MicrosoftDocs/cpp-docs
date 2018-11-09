@@ -14,8 +14,8 @@ Writes the value `Data` to the CR3 register.
 ## Syntax
 
 ```
-void writecr3( 
-   unsigned __int64 Data 
+void writecr3(
+   unsigned __int64 Data
 );
 ```
 

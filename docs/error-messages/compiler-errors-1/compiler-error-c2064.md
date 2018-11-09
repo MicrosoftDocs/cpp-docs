@@ -40,7 +40,6 @@ int main() {
    (funcArray[0])();    // C2064
    (c.*funcArray[0])(); // OK - function called in instance context
 }
-
 ```
 
 Within a class, member function pointers must also indicate the calling object context. The following sample generates C2064 and shows how to fix it:

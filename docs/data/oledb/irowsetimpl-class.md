@@ -13,7 +13,7 @@ Provides an implementation of the `IRowset` interface.
 
 ```cpp
 template <
-   class T, 
+   class T,
    class RowsetInterface,
    class RowClass = CSimpleRow,
    class MapClass = CAtlMap <

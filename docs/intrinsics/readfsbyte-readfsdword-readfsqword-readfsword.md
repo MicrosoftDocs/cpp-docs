@@ -14,17 +14,17 @@ Read memory from a location specified by an offset relative to the beginning of 
 ## Syntax
 
 ```
-unsigned char __readfsbyte( 
-   unsigned long Offset 
-);
-unsigned short __readfsword( 
-   unsigned long Offset 
-);
-unsigned long __readfsdword( 
+unsigned char __readfsbyte(
    unsigned long Offset
 );
-unsigned __int64 __readfsqword( 
-   unsigned long Offset 
+unsigned short __readfsword(
+   unsigned long Offset
+);
+unsigned long __readfsdword(
+   unsigned long Offset
+);
+unsigned __int64 __readfsqword(
+   unsigned long Offset
 );
 ```
 

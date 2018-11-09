@@ -14,9 +14,9 @@ Generates the `out` instruction to send a doubleword `Data` out the port `Port`.
 ## Syntax
 
 ```
-void __outdword( 
-   unsigned short Port, 
-   unsigned long Data 
+void __outdword(
+   unsigned short Port,
+   unsigned long Data
 );
 ```
 

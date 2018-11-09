@@ -13,7 +13,9 @@ Defines the container template classes hash_map and hash_multimap and their supp
 
 ## Syntax
 
-> #include \<hash_map>
+```
+#include <hash_map>
+```
 
 ### Operators
 

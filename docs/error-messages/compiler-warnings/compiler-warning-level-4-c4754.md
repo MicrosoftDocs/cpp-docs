@@ -86,7 +86,6 @@ In this case, the fixed code would resemble this:
 // that all the addition operands are 32-bit, so any overflow
 // is detected by the check.
 if (a + (unsigned long)sizeof(unsigned long) < a)
-
 ```
 
 **Note** The line number referred to in compiler warnings is the last line of a statement. In a warning message about a complex conditional statement that's spread over multiple lines, the line that has the code defect may be several lines before the line that's reported. For example:

@@ -35,13 +35,13 @@ These functions return 0 if the permission setting is successfully changed. A re
 
 The **_chmod** function changes the permission setting of the file specified by *filename*. The permission setting controls the read and write access to the file. The integer expression *pmode* contains one or both of the following manifest constants, defined in SYS\Stat.h.
 
-|*pmode*|Meaning|
+| *pmode* | Meaning |
 |-|-|
-**_S_IREAD**|Only reading permitted.
-**_S_IWRITE**|Writing permitted. (In effect, permits reading and writing.)
-**_S_IREAD** &#124; **_S_IWRITE**|Reading and writing permitted.
+| **\_S\_IREAD** | Only reading permitted. |
+| **\_S\_IWRITE** | Writing permitted. (In effect, permits reading and writing.) |
+| **\_S\_IREAD** &#124; **\_S\_IWRITE** | Reading and writing permitted. |
 
-When both constants are given, they are joined with the bitwise or operator (**|**). If write permission is not given, the file is read-only. Note that all files are always readable; it is not possible to give write-only permission. Thus, the modes **_S_IWRITE** and **_S_IREAD** | **_S_IWRITE** are equivalent.
+When both constants are given, they are joined with the bitwise or operator (**\|**). If write permission is not given, the file is read-only. Note that all files are always readable; it is not possible to give write-only permission. Thus, the modes **_S_IWRITE** and **_S_IREAD** \| **_S_IWRITE** are equivalent.
 
 **_wchmod** is a wide-character version of **_chmod**; the *filename* argument to **_wchmod** is a wide-character string. **_wchmod** and **_chmod** behave identically otherwise.
 
@@ -129,7 +129,6 @@ int main( void )
 ```Output
 
 A line of text.
-
 ```
 
 ```Output

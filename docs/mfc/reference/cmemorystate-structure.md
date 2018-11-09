@@ -129,7 +129,6 @@ Calls the `Dump` function for all objects of a type derived from class `CObject`
 
 ```
 void DumpAllObjectsSince() const;
-
 ```
 
 ### Remarks
@@ -146,7 +145,6 @@ Prints a concise memory statistics report from a `CMemoryState` object that is f
 
 ```
 void DumpStatistics() const;
-
 ```
 
 ### Remarks

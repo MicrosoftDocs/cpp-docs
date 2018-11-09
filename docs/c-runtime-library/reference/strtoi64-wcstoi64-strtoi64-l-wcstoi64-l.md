@@ -74,7 +74,7 @@ The **_strtoi64** function converts *strSource* to an **__int64**. Both function
 |**_tcstoi64**|**_strtoi64**|**_strtoi64**|**_wcstoi64**|
 |**_tcstoi64_l**|**_strtoi64_l**|**_strtoi64_l**|**_wcstoi64_l**|
 
-The locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource**;* for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; **_strtoi64_l** and **_wcstoi64_l** are identical to the corresponding function without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource*; for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; **_strtoi64_l** and **_wcstoi64_l** are identical to the corresponding function without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 

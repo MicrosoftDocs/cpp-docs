@@ -20,34 +20,34 @@ This example shows a **try** block and its handlers. Assume that `GetNetworkReso
 ## Example
 
 ```cpp
-MyData md;
-try {
-   // Code that could throw an exception
-   md = GetNetworkResource();
+MyData md;
+try {
+   // Code that could throw an exception
+   md = GetNetworkResource();
 }
-catch (const networkIOException& e) {
-   // Code that executes when an exception of type
-   // networkIOException is thrown in the try block
-   // ...
-   // Log error message in the exception object
-   cerr << e.what();
+catch (const networkIOException& e) {
+   // Code that executes when an exception of type
+   // networkIOException is thrown in the try block
+   // ...
+   // Log error message in the exception object
+   cerr << e.what();
 }
-catch (const myDataFormatException& e) {
-   // Code that handles another exception type
-   // ...
-   cerr << e.what();
+catch (const myDataFormatException& e) {
+   // Code that handles another exception type
+   // ...
+   cerr << e.what();
 }
 
 // The following syntax shows a throw expression
-MyData GetNetworkResource()
+MyData GetNetworkResource()
 {
-   // ...
-   if (IOSuccess == false)
-      throw networkIOException("Unable to connect");
-   // ...
-   if (readError)
-      throw myDataFormatException("Format error");
-   // ...
+   // ...
+   if (IOSuccess == false)
+      throw networkIOException("Unable to connect");
+   // ...
+   if (readError)
+      throw myDataFormatException("Format error");
+   // ...
 }
 ```
 
@@ -59,14 +59,14 @@ A **throw** expression that has no operand re-throws the exception currently bei
 
 ```cpp
 try {
-   throw CSomeOtherException();
+   throw CSomeOtherException();
 }
 catch(...) {
-   // Catch all exceptions - dangerous!!!
-   // Respond (perhaps only partially) to the exception, then
-   // re-throw to pass the exception to some other handler
-   // ...
-   throw;
+   // Catch all exceptions - dangerous!!!
+   // Respond (perhaps only partially) to the exception, then
+   // re-throw to pass the exception to some other handler
+   // ...
+   throw;
 }
 ```
 

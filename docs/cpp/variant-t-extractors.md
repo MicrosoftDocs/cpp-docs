@@ -14,16 +14,16 @@ Extract data from the encapsulated `VARIANT` object.
 ## Syntax
 
 ```
-operator short( ) const; 
-operator long( ) const; 
-operator float( ) const; 
-operator double( ) const; 
-operator CY( ) const; 
-operator _bstr_t( ) const; 
-operator IDispatch*( ) const; 
-operator bool( ) const; 
-operator IUnknown*( ) const; 
-operator DECIMAL( ) const; 
+operator short( ) const;
+operator long( ) const;
+operator float( ) const;
+operator double( ) const;
+operator CY( ) const;
+operator _bstr_t( ) const;
+operator IDispatch*( ) const;
+operator bool( ) const;
+operator IUnknown*( ) const;
+operator DECIMAL( ) const;
 operator BYTE( ) const;
 operator VARIANT() const throw();
 operator char() const;

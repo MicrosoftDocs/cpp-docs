@@ -924,8 +924,8 @@ See [omp_init_lock](#omp-init-lock) for an example of using `omp_unset_lock`.
 Releases a nestable lock.
 
 ```
-void omp_unset_nest_lock( 
-   omp_nest_lock_t *lock 
+void omp_unset_nest_lock(
+   omp_nest_lock_t *lock
 );
 ```
 

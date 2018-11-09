@@ -400,7 +400,7 @@ The key of the elements to be matched from the set.
 
 The member function returns the number of elements in the following range:
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) ).
+\[ lower_bound(*key*), upper_bound(*key*) ).
 
 ### Example
 
@@ -679,7 +679,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  set::emplace_hint
@@ -754,7 +753,6 @@ int main()
     print(s1);
     cout << endl;
 }
-
 ```
 
 ## <a name="empty"></a>  set::empty
@@ -1015,7 +1013,6 @@ int main()
     cout << "After the element with a key of \"E#\" is deleted, the set s3 is:" << endl;
     printset(s3);
 }
-
 ```
 
 ## <a name="find"></a>  set::find
@@ -1102,7 +1099,6 @@ int main()
     findit(s1, 45);
     findit(s1, 6);
 }
-
 ```
 
 ## <a name="get_allocator"></a>  set::get_allocator
@@ -1347,7 +1343,6 @@ int main()
     print(s4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  set::iterator
@@ -2037,7 +2032,6 @@ int main()
         cout << " " << i;
     cout << endl;
 }
-
 ```
 
 ```Output

@@ -25,5 +25,4 @@ __interface IMyInterface : IUnknown {
 };
 
 HRESULT IMyInterface::mf(int a) {}   // C2861
-
 ```

@@ -22,7 +22,7 @@ Postfix expressions consist of primary expressions or expressions in which postf
 The following syntax describes possible postfix expressions:
 
 ```
-primary-expression 
+primary-expression
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )
 ```
 

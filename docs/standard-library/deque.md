@@ -13,7 +13,6 @@ Defines the container template class deque and several supporting templates.
 
 ```cpp
 #include <deque>
-
 ```
 
 ### Operators

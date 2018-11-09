@@ -21,7 +21,6 @@ struct S {
     std::vector<int> v1;
     std::vector<int> v2{1, 2}; // C2797, VS2013 RTM incorrectly calls 'vector(size_type, const int &)'
 };
-
 ```
 
 This example also generates C2797:
@@ -36,7 +35,6 @@ struct S2 {
     S1 s1;
     S1 s2{0}; // C2797, VS2013 RTM interprets as S1 s2 = S1(0); causing C2664
 };
-
 ```
 
 To fix this issue, you can use explicit construction of inner lists. For example:
@@ -50,7 +48,6 @@ struct S {
     Vector v1;
     Vector v2 = Vector{1, 2};
 };
-
 ```
 
 If you do not require list initialization:
@@ -62,7 +59,6 @@ struct S {
     std::string s1;
     std::string s2 = std::string("");
 };
-
 ```
 
 (The compiler in Visual Studio 2013 does this implicitly prior to Visual Studio 2013 Update 3.)

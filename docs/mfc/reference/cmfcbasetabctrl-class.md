@@ -1550,7 +1550,7 @@ virtual BOOL OnDrop(
 
 ### Parameters
 
-[in] *COleDataObject\**<br/>
+[in] _COleDataObject\*_<br/>
 
 [in] *DROPEFFECT*<br/>
 
@@ -1571,7 +1571,7 @@ virtual DROPEFFECT OnDragOver(
 
 ### Parameters
 
-[in] *COleDataObject\**<br/>
+[in] _COleDataObject\*_<br/>
 
 [in] *DWORD*<br/>
 
@@ -1600,7 +1600,7 @@ virtual DROPEFFECT OnDragEnter(
 
 ### Parameters
 
-[in] *COleDataObject\**<br/>
+[in] _COleDataObject\*_<br/>
 
 [in] *DWORD*<br/>
 

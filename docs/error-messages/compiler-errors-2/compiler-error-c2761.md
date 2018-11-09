@@ -24,7 +24,6 @@ class a {
 
 void a::a;     // C2761
 void a::test;  // C2761
-
 ```
 
 ## Example

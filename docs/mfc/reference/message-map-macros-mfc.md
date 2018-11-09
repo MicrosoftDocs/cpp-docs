@@ -216,31 +216,12 @@ ON_COMMAND_EX(id, memberFxn);
 The command ID.
 
 *memberFxn*<br/>
-The name of the  message-handler  function to which the  command is mapped.
-
-### Remarks
-
-An extended form of  command message  handlers is available  for advanced uses. The  ON_COMMAND_EX macro  is used for such  message handlers, and  it provides a superset  of the [ON_COMMAND] (#on_command)  functionality.  Extended  command-handler member  functions take a single  parameter, a UINT  containing the command  ID, and return a  BOOL. The return  value should be TRUE to
-
-This macro maps a command message to an extended command-handler member function.
-
-### Syntax
-
-```
-ON_COMMAND_EX(id,  memberFxn);
-```
-
-### Parameters
-
-*id*<br/>
-The command ID.
-
-*memberFxn*<br/>
 The name of the message-handler function to which the command is mapped.
 
 ### Remarks
 
 An extended form of command message handlers is available for advanced uses. The ON_COMMAND_EX macro is used for such message handlers, and it provides a superset of the [ON_COMMAND](message-map-macros-mfc.md#on_command) functionality. Extended command-handler member functions take a single parameter, a UINT containing the command ID, and return a BOOL. The return value should be TRUE to indicate that the command has been handled; otherwise routing will continue to other command target objects.
+
 For more information, see Technical Note [TN006: Message Maps]tm006-message-maps.md).
 
 ### Requirements

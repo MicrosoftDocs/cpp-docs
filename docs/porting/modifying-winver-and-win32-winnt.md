@@ -49,4 +49,4 @@ For more information about the meanings of these macros, see [Using the Windows 
 
 ## See Also
 
-[Visual C++ change history](..\porting\visual-cpp-change-history-2003-2015.md)
+[Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)

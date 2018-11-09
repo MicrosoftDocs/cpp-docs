@@ -13,7 +13,6 @@ Includes the Standard C library header \<stdarg.h> and adds the associated names
 
 ```cpp
 #include <cstdarg>
-
 ```
 
 ## Remarks

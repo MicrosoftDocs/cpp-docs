@@ -14,21 +14,21 @@ Write memory to a location specified by an offset relative to the beginning of t
 ## Syntax
 
 ```
-void __writefsbyte( 
-   unsigned long Offset, 
-   unsigned char Data 
+void __writefsbyte(
+   unsigned long Offset,
+   unsigned char Data
 );
-void __writefsword( 
-   unsigned long Offset, 
-   unsigned short Data 
+void __writefsword(
+   unsigned long Offset,
+   unsigned short Data
 );
-void __writefsdword( 
-   unsigned long Offset, 
-   unsigned long Data 
+void __writefsdword(
+   unsigned long Offset,
+   unsigned long Data
 );
-void __writefsqword( 
-   unsigned long Offset, 
-   unsigned __int64 Data 
+void __writefsqword(
+   unsigned long Offset,
+   unsigned __int64 Data
 );
 ```
 

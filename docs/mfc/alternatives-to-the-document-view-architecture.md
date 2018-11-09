@@ -39,15 +39,15 @@ It is strongly recommended that you use the MFC Application Wizard to create app
 
    Declared in `CDocument`:
 
-   - Two `CString` objects.
+  - Two `CString` objects.
 
-   - Three **BOOL**s.
+  - Three **BOOL**s.
 
-   - One `CDocTemplate` pointer.
+  - One `CDocTemplate` pointer.
 
-   - One `CPtrList` object, which contains a list of the document's views.
+  - One `CPtrList` object, which contains a list of the document's views.
 
-   Additionally, the document requires the amount of time to create the document object, its view objects, a frame window, and a document template object.
+  Additionally, the document requires the amount of time to create the document object, its view objects, a frame window, and a document template object.
 
 - Treat both the document and view as unused appendages. Put your data management and drawing code in the frame window rather than the view. This approach is closer to the C-language programming model.
 

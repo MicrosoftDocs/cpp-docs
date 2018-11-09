@@ -340,7 +340,6 @@ Either this macro or [IMPLEMENT_OLECREATE](#implement_olecreate) must appear in 
 ```
 IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
     l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)
-
 ```
 
 ### Parameters

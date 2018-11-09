@@ -28,7 +28,6 @@ In a C# XAML client, you can consume it like this:
     int? a = null;
     int? b = 5;
     var result = obj.Multiply(a,b); //result = null
-
 ```
 
 ## See Also

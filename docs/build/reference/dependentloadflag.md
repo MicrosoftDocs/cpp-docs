@@ -15,9 +15,8 @@ Sets the default load flags used when `LoadLibrary` is used to load DLLs.
 
 ### Arguments
 
-|||
-|-|-|
-*loadflags*|An optional "C"-style 16-bit integer value in decimal, octal with a leading zero, or hexadecimal with a leading `0x`, that specifies the dependent load flags to apply to all [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) calls. The default value is 0.
+*loadflags*<br/>
+An optional "C"-style 16-bit integer value in decimal, octal with a leading zero, or hexadecimal with a leading `0x`, that specifies the dependent load flags to apply to all [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) calls. The default value is 0.
 
 ## Remarks
 

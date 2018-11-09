@@ -82,29 +82,29 @@ The properties in the Project Default section represent default properties that 
 
 - **Configuration Type**
 
-   There are several configuration types from which to choose:
+  There are several configuration types from which to choose:
 
-   - **Application (.exe)**
+  - **Application (.exe)**
 
-      Displays linker toolset (C/C++ Compiler, MIDL, Resource Compiler, Linker, BSCMake, XML Web Service Proxy Generator, custom build, prebuild, prelink, postbuild events).
+     Displays linker toolset (C/C++ Compiler, MIDL, Resource Compiler, Linker, BSCMake, XML Web Service Proxy Generator, custom build, prebuild, prelink, postbuild events).
 
-   - **Dynamic Library (.dll)**
+  - **Dynamic Library (.dll)**
 
-      Displays linker toolset, specifies /DLL linker option, and adds the _WINDLL define to CL.
+     Displays linker toolset, specifies /DLL linker option, and adds the _WINDLL define to CL.
 
-   - **Makefile**
+  - **Makefile**
 
-      Displays makefile toolset (NMake).
+     Displays makefile toolset (NMake).
 
-   - **Static Library (.lib)**
+  - **Static Library (.lib)**
 
-      Displays librarian toolset (same as linker toolset except substitute librarian for linker and omit XML Web Service Proxy Generator).
+     Displays librarian toolset (same as linker toolset except substitute librarian for linker and omit XML Web Service Proxy Generator).
 
-   - **Utility**
+  - **Utility**
 
-      Displays utility toolset (MIDL, custom build, prebuild, postbuild events).
+     Displays utility toolset (MIDL, custom build, prebuild, postbuild events).
 
-   To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.
+  To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>.
 
 - **Use of MFC**
 

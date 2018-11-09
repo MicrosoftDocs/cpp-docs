@@ -13,7 +13,6 @@ Defines the iterator primitives, predefined iterators and stream iterators, as w
 
 ```cpp
 #include <iterator>
-
 ```
 
 ## Remarks

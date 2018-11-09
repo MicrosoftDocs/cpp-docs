@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Matrix Multiplication"
-ms.date: "11/04/2016"
+ms.date: "11/06/2018"
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
 ---
 # Walkthrough: Matrix Multiplication
@@ -21,15 +21,15 @@ Before you start:
 
 1. On the menu bar in Visual Studio, choose **File** > **New** > **Project**.
 
-2. Under **Installed** in the templates pane, select **Visual C++**.
+1. Under **Installed** in the templates pane, select **Visual C++**.
 
-3. Select **Empty Project**, enter `MatrixMultiply` in the **Name** box, and then choose the **OK** button.
+1. Select **Empty Project**, enter *MatrixMultiply* in the **Name** box, and then choose the **OK** button.
 
-4. Choose the **Next** button.
+1. Choose the **Next** button.
 
-5. In **Solution Explorer**, open the shortcut menu for **Source Files**, and then choose **Add** > **New Item**.
+1. In **Solution Explorer**, open the shortcut menu for **Source Files**, and then choose **Add** > **New Item**.
 
-6. In the **Add New Item** dialog box, select **C++ File (.cpp)**, enter `MatrixMultiply.cpp` in the **Name** box, and then choose the **Add** button.
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**, enter *MatrixMultiply.cpp* in the **Name** box, and then choose the **Add** button.
 
 ## Multiplication without tiling
 
@@ -41,7 +41,7 @@ In this section, consider the multiplication of two matrices, A and B, which are
 
 A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B is the following 3-by-3 matrix. The product is calculated by multiplying the rows of A by the columns of B element by element.
 
-![3&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixproductnontiled.png "campmatrixproductnontiled")
+![3&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;by&#45;3 matrix")
 
 ### To multiply without using C++ AMP
 
@@ -73,13 +73,13 @@ void main() {
 }
 ```
 
-    The algorithm is a straightforward implementation of the definition of matrix multiplication. It does not use any parallel or threaded algorithms to reduce the computation time.
+   The algorithm is a straightforward implementation of the definition of matrix multiplication. It does not use any parallel or threaded algorithms to reduce the computation time.
 
-2. On the menu bar, choose **File** > **Save All**.
+1. On the menu bar, choose **File** > **Save All**.
 
-3. Choose the **F5** keyboard shortcut to start debugging and verify that the output is correct.
+1. Choose the **F5** keyboard shortcut to start debugging and verify that the output is correct.
 
-4. Choose **Enter** to exit the application.
+1. Choose **Enter** to exit the application.
 
 ### To multiply by using C++ AMP
 
@@ -118,16 +118,16 @@ void MultiplyWithAMP() {
 }
 ```
 
-    The AMP code resembles the non-AMP code. The call to `parallel_for_each` starts one thread for each element in `product.extent`, and replaces the `for` loops for row and column. The value of the cell at the row and column is available in `idx`. You can access the elements of an `array_view` object by using either the `[]` operator and an index variable, or the `()` operator and the row and column variables. The example demonstrates both methods. The `array_view::synchronize` method copies the values of the `product` variable back to the `productMatrix` variable.
+   The AMP code resembles the non-AMP code. The call to `parallel_for_each` starts one thread for each element in `product.extent`, and replaces the `for` loops for row and column. The value of the cell at the row and column is available in `idx`. You can access the elements of an `array_view` object by using either the `[]` operator and an index variable, or the `()` operator and the row and column variables. The example demonstrates both methods. The `array_view::synchronize` method copies the values of the `product` variable back to the `productMatrix` variable.
 
-2. Add the following `include` and `using` statements at the top of MatrixMultiply.cpp.
+1. Add the following `include` and `using` statements at the top of MatrixMultiply.cpp.
 
 ```cpp
 #include <amp.h>
 using namespace concurrency;
 ```
 
-3. Modify the `main` method to call the `MultiplyWithAMP` method.
+1. Modify the `main` method to call the `MultiplyWithAMP` method.
 
 ```cpp
 void main() {
@@ -137,9 +137,9 @@ void main() {
 }
 ```
 
-4. Choose the **Ctrl**+**F5** keyboard shortcut to start debugging and verify that the output is correct.
+1. Choose the **Ctrl**+**F5** keyboard shortcut to start debugging and verify that the output is correct.
 
-5. Choose the **Spacebar** to exit the application.
+1. Choose the **Spacebar** to exit the application.
 
 ## Multiplication with tiling
 
@@ -153,23 +153,23 @@ Tiling is a technique in which you partition data into equal-sized subsets, whic
 
 To take advantage of tiling in matrix multiplication, the algorithm must partition the matrix into tiles and then copy the tile data into `tile_static` variables for faster access. In this example, the matrix is partitioned into submatrices of equal size. The product is found by multiplying the submatrices. The two matrices and their product in this example are:
 
-![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixatiled.png "campmatrixatiled")
+![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixatiled.png "4&#45;by&#45;4 matrix A")
 
-![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixbtiled.png "campmatrixbtiled")
+![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixbtiled.png "4&#45;by&#45;4 matrix B")
 
-![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixproducttiled.png "campmatrixproducttiled")
+![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;by&#45;4 matrix product")
 
 The matrices are partitioned into four 2x2 matrices, which are defined as follows:
 
-![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.png "campmatrixapartitioned")
+![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices")
 
-![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.png "campmatrixbpartitioned")
+![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices")
 
 The product of A and B can now be written and calculated as follows:
 
-![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.png "campmatrixproductpartitioned")
+![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;by&#45;4 matrix product of A and B")
 
-Because matrices `a` through `h` are 2x2 matrices, all of the products and sums of them are also 2x2 matrices. It also follows that A*B is a 4x4 matrix, as expected. To quickly check the algorithm, calculate the value of the element in the first row, first column in the product. In the example, that would be the value of the element in the first row and first column of `ae + bg`. You only have to calculate the first column, first row of `ae` and `bg` for each term. That value for `ae` is `1*1 + 2*5 = 11`. The value for `bg` is `3*1 + 4*5 = 23`. The final value is `11 + 23 = 34`, which is correct.
+Because matrices `a` through `h` are 2x2 matrices, all of the products and sums of them are also 2x2 matrices. It also follows that the product of A and B is a 4x4 matrix, as expected. To quickly check the algorithm, calculate the value of the element in the first row, first column in the product. In the example, that would be the value of the element in the first row and first column of `ae + bg`. You only have to calculate the first column, first row of `ae` and `bg` for each term. That value for `ae` is `(1 * 1) + (2 * 5) = 11`. The value for `bg` is `(3 * 1) + (4 * 5) = 23`. The final value is `11 + 23 = 34`, which is correct.
 
 To implement this algorithm, the code:
 

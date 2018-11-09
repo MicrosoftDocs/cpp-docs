@@ -13,7 +13,6 @@ Includes the Standard C library header \<iso646.h> and adds the associated names
 
 ```cpp
 #include <ciso646>
-
 ```
 
 ## Remarks

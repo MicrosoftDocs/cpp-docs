@@ -16,6 +16,5 @@ Shows you the structure of the container headers in the C++ Standard Library.
 ```
 
 #include <sample container> // Nonfunctional header
-
 ```
 

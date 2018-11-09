@@ -15,8 +15,8 @@ Gets the current value of the errno global variable.
 ## Syntax
 
 ```C
-errno_t _get_errno( 
-   int * pValue 
+errno_t _get_errno(
+   int * pValue
 );
 ```
 

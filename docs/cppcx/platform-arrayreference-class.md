@@ -56,7 +56,6 @@ Initializes a new instance of the [Platform::ArrayReference](../cppcx/platform-a
 ```cpp
 ArrayReference(TArg* ataArg, unsigned int sizeArg, bool needsInitArg = false);
 ArrayReference(ArrayReference&& otherArg)
-
 ```
 
 ### Parameters

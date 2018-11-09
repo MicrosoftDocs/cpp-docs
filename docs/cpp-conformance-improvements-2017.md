@@ -216,9 +216,9 @@ The following example shows C++14 conformant behavior:
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {};
@@ -236,9 +236,9 @@ The following example shows C++17 behavior in Visual Studio version 15.7 in **/s
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {
@@ -1364,7 +1364,7 @@ Static constexpr data members are now implicitly inline, which means that their 
 
 ```cpp
 struct X {
-    static constexpr int size = 3;
+    static constexpr int size = 3;
 };
 const int X::size; // C5041
 ```
@@ -1593,7 +1593,6 @@ int main() {
     };
     return 0;
 }
-
 ```
 
 In Visual Studio 2017 version 15.7 update 3 and later, the previous example now raises *C2078 too many initializers*. The following example shows how to fix the code. When initializing a `std::array` with nested brace-init-lists, give the inner array a braced-list of its own:
@@ -1612,7 +1611,6 @@ int main() {
     }}; // note double braces
     return 0;
 }
-
 ```
 
 ## <a name="update_158"></a> Bug fixes and behavior changes in Visual Studio 2017 version 15.8
@@ -1668,7 +1666,6 @@ struct S : Base<T> {
         return base_value;
     }
 };
-
 ```
 
 To fix the error, change the `return` statement to `return this->base_value;`.
@@ -1844,7 +1841,6 @@ struct A
 };
 
 A<>::from_template_t<A<int>> a;
-
 ```
 
 In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.d
@@ -1910,7 +1906,6 @@ int main()
 
     return 0;
 }
-
 ```
 
 The previous example raises C2668:
@@ -1972,7 +1967,6 @@ int main()
 
     return 0;
 }
-
 ```
 
 ## See also

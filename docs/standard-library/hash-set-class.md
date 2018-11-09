@@ -477,7 +477,7 @@ The key of the elements to be matched from the hash_set.
 
 The member function returns the number of elements in the following range:
 
-[ **lower_bound** (_ *Key* ), **upper_bound** (\_ *Key* ) ).
+\[ lower_bound(*key*), upper_bound(*key*) ).
 
 ### Example
 
@@ -1446,7 +1446,7 @@ For more information on *Traits* see the [hash_set Class](../standard-library/ha
 
 The stored object defines the member function:
 
-**bool operator**( **const Key&** _ *xVal*, **const Key&** \_ `yVal`);
+`bool operator( const Key& _xVal, const Key& _yVal );`
 
 which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
@@ -2208,7 +2208,7 @@ For more information on *Compare*, see the Remarks section of the [hash_set Clas
 
 The stored object defines the member function:
 
-**bool operator**( **const Key&** _ *xVal*, **const Key&** \_ `yVal`);
+`bool operator( const Key& _xVal, const Key& _yVal );`
 
 which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 

@@ -200,7 +200,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## <a name="at"></a>  vector::at
@@ -892,7 +891,6 @@ int main()
    std::vector<obj> v;
    v.emplace_back(1, 3.14); // obj in created in place in the vector
 }
-
 ```
 
 ## <a name="empty"></a>  vector::empty
@@ -2127,7 +2125,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ```Output

@@ -12,9 +12,9 @@ There are times when you need to process more than one message or control notifi
 
 - You can map ranges of command IDs to:
 
-   - A command handler function.
+  - A command handler function.
 
-   - A command update handler function.
+  - A command update handler function.
 
 - You can map control-notification messages for a range of control IDs to a message handler function.
 
@@ -38,25 +38,25 @@ The message-map entry consists of the following items:
 
 - The message-map range macro:
 
-   - [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range)
+  - [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range)
 
-   - [ON_UPDATE_COMMAND_UI_RANGE](reference/message-map-macros-mfc.md#on_update_command_ui_range)
+  - [ON_UPDATE_COMMAND_UI_RANGE](reference/message-map-macros-mfc.md#on_update_command_ui_range)
 
-   - [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range)
+  - [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range)
 
 - Parameters to the macro:
 
-   The first two macros take three parameters:
+  The first two macros take three parameters:
 
-   - The command ID that starts the range
+  - The command ID that starts the range
 
-   - The command ID that ends the range
+  - The command ID that ends the range
 
-   - The name of the message handler function
+  - The name of the message handler function
 
-   The range of command IDs must be contiguous.
+  The range of command IDs must be contiguous.
 
-   The third macro, `ON_CONTROL_RANGE`, takes an additional first parameter: a control-notification message, such as **EN_CHANGE**.
+  The third macro, `ON_CONTROL_RANGE`, takes an additional first parameter: a control-notification message, such as **EN_CHANGE**.
 
 ##  <a name="_core_declaring_the_handler_function"></a> Declaring the Handler Function
 

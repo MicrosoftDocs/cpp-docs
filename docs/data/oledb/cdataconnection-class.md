@@ -59,7 +59,7 @@ Instantiates and initializes a `CDataConnection` object.
 ### Syntax
 
 ```cpp
-CDataConnection(); 
+CDataConnection();
 CDataConnection(const CDataConnection &ds);
 ```
 

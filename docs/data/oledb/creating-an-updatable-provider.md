@@ -31,7 +31,7 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
 
 1. In your rowset class, inherit from `IRowsetChangeImpl` or `IRowsetUpdateImpl`. These classes provide appropriate interfaces for changing the data store:
 
-     **Adding IRowsetChange**
+   **Adding IRowsetChange**
 
    Add `IRowsetChangeImpl` to your inheritance chain using this form:
 
@@ -41,7 +41,7 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
 
    Also add `COM_INTERFACE_ENTRY(IRowsetChange)` to the `BEGIN_COM_MAP` section in your rowset class.
 
-     **Adding IRowsetUpdate**
+   **Adding IRowsetUpdate**
 
    Add `IRowsetUpdate` to your inheritance chain using this form:
 
@@ -49,22 +49,27 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
     IRowsetUpdateImpl< rowset-name, storage>
     ```
 
-    > [!NOTE]
-    > You should remove the `IRowsetChangeImpl` line from your inheritance chain. This one exception to the directive previously mentioned must include the code for `IRowsetChangeImpl`.
+   > [!NOTE]
+   > You should remove the `IRowsetChangeImpl` line from your inheritance chain. This one exception to the directive previously mentioned must include the code for `IRowsetChangeImpl`.
 
 1. Add the following to your COM map (`BEGIN_COM_MAP ... END_COM_MAP`):
 
-    |If you implement|Add to COM map|
-    |----------------------|--------------------|
-    |`IRowsetChangeImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)`|
-    |`IRowsetUpdateImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)COM_INTERFACE_ENTRY(IRowsetUpdate)`|
+   |  If you implement   |           Add to COM map             |
+   |---------------------|--------------------------------------|
+   | `IRowsetChangeImpl` | `COM_INTERFACE_ENTRY(IRowsetChange)` |
+   | `IRowsetUpdateImpl` | `COM_INTERFACE_ENTRY(IRowsetUpdate)` |
+
+   | If you implement | Add to property set map |
+   |----------------------|-----------------------------|
+   | `IRowsetChangeImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)` |
+   | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
 1. In your command, add the following to your property set map (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):
 
-    |If you implement|Add to property set map|
-    |----------------------|-----------------------------|
-    |`IRowsetChangeImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`|
-    |`IRowsetUpdateImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)`|
+   |  If you implement   |                                             Add to property set map                                              |
+   |---------------------|------------------------------------------------------------------------------------------------------------------|
+   | `IRowsetChangeImpl` |                            `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`                             |
+   | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
 1. In your property set map, you should also include all of the following settings as they appear below:
 
@@ -88,41 +93,41 @@ Note that `IRowsetUpdateImpl` derives from `IRowsetChangeImpl`. Thus, `IRowsetUp
 
    You can find the values used in these macro calls by looking in Atldb.h for the property IDs and values (if Atldb.h differs from the online documentation, Atldb.h supersedes the documentation).
 
-    > [!NOTE]
-    > Many of the `VARIANT_FALSE` and `VARIANT_TRUE` settings are required by the OLE DB templates; the OLE DB specification says they can be read/write, but the OLE DB templates can only support one value.
+   > [!NOTE]
+   > Many of the `VARIANT_FALSE` and `VARIANT_TRUE` settings are required by the OLE DB templates; the OLE DB specification says they can be read/write, but the OLE DB templates can only support one value.
 
-     **If you implement IRowsetChangeImpl**
+   **If you implement IRowsetChangeImpl**
 
    If you implement `IRowsetChangeImpl`, you must set the following properties on your provider. These properties are primarily used to request interfaces through `ICommandProperties::SetProperties`.
 
-    - `DBPROP_IRowsetChange`: Setting this automatically sets `DBPROP_IRowsetChange`.
+   - `DBPROP_IRowsetChange`: Setting this automatically sets `DBPROP_IRowsetChange`.
 
-    - `DBPROP_UPDATABILITY`: A bitmask specifying the supported methods on `IRowsetChange`: `SetData`, `DeleteRows`, or `InsertRow`.
+   - `DBPROP_UPDATABILITY`: A bitmask specifying the supported methods on `IRowsetChange`: `SetData`, `DeleteRows`, or `InsertRow`.
 
-    - `DBPROP_CHANGEINSERTEDROWS`: Consumer can call `IRowsetChange::DeleteRows` or `SetData` for newly inserted rows.
+   - `DBPROP_CHANGEINSERTEDROWS`: Consumer can call `IRowsetChange::DeleteRows` or `SetData` for newly inserted rows.
 
-    - `DBPROP_IMMOBILEROWS`: Rowset will not reorder inserted or updated rows.
+   - `DBPROP_IMMOBILEROWS`: Rowset will not reorder inserted or updated rows.
 
-     **If you implement IRowsetUpdateImpl**
+   **If you implement IRowsetUpdateImpl**
 
    If you implement `IRowsetUpdateImpl`, you must set the following properties on your provider, in addition to setting all the properties for `IRowsetChangeImpl` previously listed:
 
-    - `DBPROP_IRowsetUpdate`.
+   - `DBPROP_IRowsetUpdate`.
 
-    - `DBPROP_OWNINSERT`: Must be READ_ONLY AND VARIANT_TRUE.
+   - `DBPROP_OWNINSERT`: Must be READ_ONLY AND VARIANT_TRUE.
 
-    - `DBPROP_OWNUPDATEDELETE`: Must be READ_ONLY AND VARIANT_TRUE.
+   - `DBPROP_OWNUPDATEDELETE`: Must be READ_ONLY AND VARIANT_TRUE.
 
-    - `DBPROP_OTHERINSERT`: Must be READ_ONLY AND VARIANT_TRUE.
+   - `DBPROP_OTHERINSERT`: Must be READ_ONLY AND VARIANT_TRUE.
 
-    - `DBPROP_OTHERUPDATEDELETE`: Must be READ_ONLY AND VARIANT_TRUE.
+   - `DBPROP_OTHERUPDATEDELETE`: Must be READ_ONLY AND VARIANT_TRUE.
 
-    - `DBPROP_REMOVEDELETED`: Must be READ_ONLY AND VARIANT_TRUE.
+   - `DBPROP_REMOVEDELETED`: Must be READ_ONLY AND VARIANT_TRUE.
 
-    - `DBPROP_MAXPENDINGROWS`.
+   - `DBPROP_MAXPENDINGROWS`.
 
-        > [!NOTE]
-        > If you support notifications, you might also have some other properties as well; see the section on `IRowsetNotifyCP` for this list.
+   > [!NOTE]
+   > If you support notifications, you might also have some other properties as well; see the section on `IRowsetNotifyCP` for this list.
 
 ##  <a name="vchowwritingtothedatasource"></a> Writing to the Data Source
 

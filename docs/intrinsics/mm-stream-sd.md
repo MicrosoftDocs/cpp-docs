@@ -66,7 +66,6 @@ int main()
     _mm_stream_sd(&d[1], vals);
     cout << "d[0] = " << d[0] << ", d[1] = " << d[1] << endl;
 }
-
 ```
 
 ```Output

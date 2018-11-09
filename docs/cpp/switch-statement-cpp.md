@@ -13,8 +13,8 @@ Allows selection among multiple sections of code, depending on the value of an i
 
 ```
    switch ( init; expression )
-   case constant-expression : statement
-   [default  : statement]
+   case constant-expression : statement
+   [default  : statement]
 ```
 
 ## Remarks

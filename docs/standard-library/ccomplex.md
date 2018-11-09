@@ -12,7 +12,6 @@ Includes the C++ Standard Library header [\<complex>](../standard-library/comple
 
 ```cpp
 #include <ccomplex>
-
 ```
 
 ## Remarks

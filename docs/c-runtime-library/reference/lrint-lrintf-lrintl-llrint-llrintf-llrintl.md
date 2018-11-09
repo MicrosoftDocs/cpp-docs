@@ -54,7 +54,6 @@ long long int llrintf(
 long long int llrintl(
    long double x
 );
-
 ```
 
 ### Parameters

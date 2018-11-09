@@ -28,7 +28,6 @@ size_t mbrtoc32(
    size_t max_bytes,
    mbstate_t* state
 );
-
 ```
 
 ### Parameters

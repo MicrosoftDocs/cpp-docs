@@ -58,7 +58,6 @@ template<
 >
 _Ret_ IUnknown *get_texture(
     const texture_view<value_type, _Rank>& _Texture) restrict(cpu);
-
 ```
 
 ### Parameters

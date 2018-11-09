@@ -75,7 +75,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/desktop/menurc/common-control-parameters) under Windows SDK*: SDK Tools*.
+For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/desktop/menurc/common-control-parameters) under Windows SDK: SDK Tools.
 
 For more information on dialog boxes in general, refer to [DialogBox](/windows/desktop/api/winuser/nf-winuser-dialogboxa) and [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) in the Windows SDK.
 
@@ -140,7 +140,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -192,7 +192,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -251,7 +251,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -305,7 +305,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 

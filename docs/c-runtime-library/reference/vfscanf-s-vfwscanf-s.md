@@ -24,7 +24,6 @@ int vfwscanf_s(
    const wchar_t *format,
    va_list arglist
 );
-
 ```
 
 ### Parameters
@@ -127,7 +126,6 @@ int main(void)
         fclose(stream);
     }
 }
-
 ```
 
 ```Output

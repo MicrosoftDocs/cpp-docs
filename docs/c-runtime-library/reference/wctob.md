@@ -71,7 +71,6 @@ int main( void )
                 " be \"%c\".\n", bChar);
     }
 }
-
 ```
 
 ```Output

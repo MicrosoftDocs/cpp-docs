@@ -168,7 +168,6 @@ int main( )
 /* Output:
 Deque c1 is less than or equal to deque c2.
 */
-
 ```
 
 ## <a name="op_eq_eq"></a>  operator==
@@ -226,7 +225,6 @@ int main( )
 The deques are equal.
 The deques are not equal.
 */
-
 ```
 
 ## <a name="op_gt"></a>  operator&gt;
@@ -282,7 +280,6 @@ int main( )
 /* Output:
 Deque c1 is greater than deque c2.
 */
-
 ```
 
 ## <a name="op_gt_eq"></a>  operator&gt;=

@@ -12,7 +12,7 @@ The **__if_exists** statement tests whether the specified identifier exists. If 
 ## Syntax
 
 ```
-__if_exists ( identifier ) { 
+__if_exists ( identifier ) {
 statements
 };
 ```

@@ -14,8 +14,8 @@ Generates the `rdmsr` instruction, which reads the model-specific register speci
 ## Syntax
 
 ```
-__int64 __readmsr( 
-   int register 
+__int64 __readmsr(
+   int register
 );
 ```
 

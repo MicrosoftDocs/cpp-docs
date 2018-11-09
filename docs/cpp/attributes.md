@@ -40,16 +40,16 @@ Attributes represent a standardized alternative to vendor-specific extensions su
 
 - `[[nodiscard]]` **Visual Studio 2017 version 15.3 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) Specifies that a function's return value is not intended to be discarded. Raises warning C4834, as shown in this example:
 
-   ```cpp
-   [[nodiscard]]
-   int foo(int i) { return i * i; }
+    ```cpp
+    [[nodiscard]]
+    int foo(int i) { return i * i; }
 
-   int main()
-   {
-       foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
-       return 0;
-   }
-   ```
+    int main()
+    {
+        foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
+        return 0;
+    }
+    ```
 
 - `[[maybe_unused]]` **Visual Studio 2017 version 15.3 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) Specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may intentionally not be used. The compiler does not warn when an entity marked `[[maybe_unused]]` is not used. An entity that is declared without the attribute can later be redeclared with the attribute and vice versa. An entity is considered marked after its first declaration that is marked is analyzed, and for the remainder of translation of the current translation unit.
 
@@ -70,12 +70,12 @@ Attributes represent a standardized alternative to vendor-specific extensions su
     }
     ```
 
-   The example raises these warnings:
+  The example raises these warnings:
 
-   - 26494 (Type Rule 5: Always initialize an object.)
+  - 26494 (Type Rule 5: Always initialize an object.)
 
-   - 26485 (Bounds Rule 3: No array to pointer decay.)
+  - 26485 (Bounds Rule 3: No array to pointer decay.)
 
-   - 26481 (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
+  - 26481 (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
 
-   The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing [[gsl::suppress(bounds)]] without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they are not wanted.
+  The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing [[gsl::suppress(bounds)]] without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they are not wanted.

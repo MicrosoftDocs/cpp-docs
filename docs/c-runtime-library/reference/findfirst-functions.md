@@ -77,12 +77,12 @@ File information buffer.
 
 If successful, **_findfirst** returns a unique search handle identifying the file or group of files that match the *filespec* specification, which can be used in a subsequent call to [_findnext](findnext-functions.md) or to [_findclose](findclose.md). Otherwise, **_findfirst** returns -1 and sets **errno** to one of the following values.
 
-|errno value|Condition|
+| errno value | Condition |
 |-|-|
-**EINVAL**|Invalid parameter: *filespec* or *fileinfo* was **NULL**. Or, the operating system returned an unexpected error.
-**ENOENT**|File specification that could not be matched.
-**ENOMEM**|Insufficient memory.
-**EINVAL**|Invalid file name specification or the file name given was larger than **MAX_PATH**.
+| **EINVAL** | Invalid parameter: *filespec* or *fileinfo* was **NULL**. Or, the operating system returned an unexpected error. |
+| **ENOENT** | File specification that could not be matched. |
+| **ENOMEM** | Insufficient memory. |
+| **EINVAL** | Invalid file name specification or the file name given was larger than **MAX_PATH**. |
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

@@ -35,7 +35,7 @@ Pointer to **FILE** structure.
 
 ## Return Value
 
-If successful, each of these functions returns the character argument *c*. If *c* cannot be pushed back or if no character has been read, the input stream is unchanged and **_ungetc_nolock** returns **EOF`; **_ungetwc_nolock` returns **WEOF**. If *stream* is **NULL**, **EOF** or **WEOF** is returned and **errno** is set to **EINVAL**.
+If successful, each of these functions returns the character argument *c*. If *c* cannot be pushed back or if no character has been read, the input stream is unchanged and **_ungetc_nolock** returns **EOF**; **_ungetwc_nolock** returns **WEOF**. If *stream* is **NULL**, **EOF** or **WEOF** is returned and **errno** is set to **EINVAL**.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

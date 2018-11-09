@@ -13,7 +13,6 @@ Defines several types and functions related to the handling of exceptions. Excep
 
 ```cpp
 #include <exception>
-
 ```
 
 ### Typedefs

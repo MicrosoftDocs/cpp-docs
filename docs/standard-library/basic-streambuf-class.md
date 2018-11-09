@@ -361,7 +361,7 @@ If the function cannot succeed, it returns **traits_type::eof** or throws an exc
 
 ### Remarks
 
-If _ *Meta* does not compare equal to **traits_type::eof**, the protected virtual member function endeavors to insert the element **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*) into the output stream. It can do so in various ways:
+If *\_Meta* does not compare equal to **traits_type::eof**, the protected virtual member function endeavors to insert the element **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) into the output stream. It can do so in various ways:
 
 - If a `write position` is available, it can store the element into the write position and increment the next pointer for the output buffer.
 
@@ -396,7 +396,7 @@ If the function cannot succeed, it returns **traits_type::eof** or throws an exc
 
 ### Remarks
 
-If _ *Meta* compares equal to **traits_type::eof**, the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*). The function can put back an element in various ways:
+If *\_Meta* compares equal to **traits_type::eof**, the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*). The function can put back an element in various ways:
 
 - If a putback position is available, it can store the element into the putback position and decrement the next pointer for the input buffer.
 
@@ -593,15 +593,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 3
-
 ```
 
 ```Output
-
-      33
+33
 51
 ```
 
@@ -871,14 +868,11 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 aa
-
 ```
 
 ```Output
-
 aa97
 ```
 

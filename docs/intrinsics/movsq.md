@@ -14,10 +14,10 @@ Generates a repeated Move String (`rep movsq`) instruction.
 ## Syntax
 
 ```
-void __movsq( 
-   unsigned char* Dest, 
-   unsigned char* Source, 
-   size_t Count 
+void __movsq(
+   unsigned char* Dest,
+   unsigned char* Source,
+   size_t Count
 );
 ```
 

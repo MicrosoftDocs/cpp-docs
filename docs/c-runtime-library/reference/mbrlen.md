@@ -126,7 +126,6 @@ Character count: 29
 Code page: 932
 ????: Shift-jis hiragana.
 Character count: 25
-
 ```
 
 ## See also

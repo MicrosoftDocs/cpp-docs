@@ -13,7 +13,6 @@ Includes the Standard C library header \<float.h>.
 
 ```cpp
 #include <cfloat>
-
 ```
 
 ## See also

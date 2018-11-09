@@ -140,7 +140,7 @@ List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md)
 |LBS_HASSTRINGS|Specifies an owner-draw list box that contains items consisting of strings. The list box maintains the memory and pointers for the strings so the application can use the `GetText` member function to retrieve the text for a particular item.|
 |LBS_MULTICOLUMN|Specifies a multicolumn list box that is scrolled horizontally. The `SetColumnWidth` member function sets the width of the columns.|
 |LBS_MULTIPLESEL|String selection is toggled each time the user clicks or double-clicks the string. Any number of strings can be selected.|
-|LBS_NODATA|Specifies a no-data list box. Specify this style when the count of items in the list box will exceed one thousand. A no-data list box must also have the LBS_OWNERDRAWFIXED style, but must not have the LBS_SORT or LBS_HASSTRINGS style. <br /></br />A no-data list box resembles an owner-drawn list box except that it contains no string or bitmap data for an item. Commands to add, insert, or delete an item always ignore any given item data; requests to find a string within the list box always fail. The system sends the WM_DRAWITEM message to the owner window when an item must be drawn. The itemID member of the `DRAWITEMSTRUCT` structure passed with the WM_DRAWITEM message specifies the line number of the item to be drawn. A no-data list box does not send a WM_DELETEITEM message.|
+|LBS_NODATA|Specifies a no-data list box. Specify this style when the count of items in the list box will exceed one thousand. A no-data list box must also have the LBS_OWNERDRAWFIXED style, but must not have the LBS_SORT or LBS_HASSTRINGS style.<br/><br/> A no-data list box resembles an owner-drawn list box except that it contains no string or bitmap data for an item. Commands to add, insert, or delete an item always ignore any given item data; requests to find a string within the list box always fail. The system sends the WM_DRAWITEM message to the owner window when an item must be drawn. The itemID member of the `DRAWITEMSTRUCT` structure passed with the WM_DRAWITEM message specifies the line number of the item to be drawn. A no-data list box does not send a WM_DELETEITEM message.|
 |LBS_NOINTEGRALHEIGHT|The size of the list box is exactly the size specified by the application when it created the list box. Usually, Windows sizes a list box so that the list box does not display partial items.|
 |LBS_NOREDRAW|List-box display is not updated when changes are made. This style can be changed at any time by sending a WM_SETREDRAW message.|
 |LBS_NOSEL|Specifies that the list box contains items that can be viewed but not selected.|
@@ -152,7 +152,7 @@ List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md)
 |LBS_USETABSTOPS|Allows a list box to recognize and expand tab characters when drawing its strings. The default tab positions are 32 dialog units. (A dialog unit is a horizontal or vertical distance. One horizontal dialog unit is equal to one-fourth of the current dialog base width unit. The dialog base units are computed based on the height and width of the current system font. The `GetDialogBaseUnits` Windows function returns the current dialog base units in pixels.) This style should not be used with LBS_OWNERDRAWFIXED.|
 |LBS_WANTKEYBOARDINPUT|The owner of the list box receives WM_VKEYTOITEM or WM_CHARTOITEM messages whenever the user presses a key while the list box has input focus. This allows an application to perform special processing on the keyboard input.|
 
-##<a name="message-box-styles"></a>  Message-box styles
+## <a name="message-box-styles"></a>  Message-box styles
 
 Message-box styles apply to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *nType* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [MessageBox Function (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox).
 
@@ -185,6 +185,7 @@ The following message-box styles are available.
 |MB_ICONINFORMATION|An icon consisting of an "I" in a circle appears in the message box.|
 |MB_ICONQUESTION|A question-mark icon appears in the message box.|
 |MB_ICONSTOP|A stop-sign icon appears in the message box.|
+
 ### Message-box default buttons
 
 |Style|Description|

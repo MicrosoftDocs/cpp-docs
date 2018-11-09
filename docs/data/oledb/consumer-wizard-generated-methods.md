@@ -23,7 +23,7 @@ The **ATL OLE DB Consumer Wizard** and the **MFC Application Wizard** generate c
 ## OpenAll and CloseAll
 
 ```cpp
-HRESULT OpenAll(); 
+HRESULT OpenAll();
 
 void CloseAll();
 ```
@@ -68,7 +68,7 @@ If you define a `HasBookmark` method, the `OpenAll` code sets the `DBPROP_IRowse
 ## OpenRowset
 
 ```cpp
-// OLE DB Template version: 
+// OLE DB Template version:
 HRESULT OpenRowset(DBPROPSET* pPropSet = NULL)
 // Attribute-injected version:
 HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand = NULL);
@@ -133,7 +133,7 @@ You shouldn't define a global `GetRowsetProperties` method because it could conf
 ## OpenDataSource and CloseDataSource
 
 ```cpp
-HRESULT OpenDataSource(); 
+HRESULT OpenDataSource();
 
 void CloseDataSource();
 ```

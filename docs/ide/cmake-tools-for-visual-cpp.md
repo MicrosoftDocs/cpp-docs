@@ -33,8 +33,11 @@ For more information, see [Install the C++ Linux workload in Visual Studio](../l
 When you choose **File | Open | Folder** to open a folder containing a CMakeLists.txt file, the following things happen:
 
 - Visual Studio adds a **CMake** menu item to the main menu, with commands for viewing and editing CMake scripts.
+
 - **Solution Explorer** displays the folder structure and files.
-- Visual Studio runs CMake.exe and generates the CMake cache for the default *configuration*, which is x86-Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.  **Visual Studio 2017 version 15.7 and later**: Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
+
+- Visual Studio runs CMake.exe and generates the CMake cache for the default *configuration*, which is x86 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.  **Visual Studio 2017 version 15.7 and later**: Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
+
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
 You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" CMakeLists.txt files in your workspace. CMake operations (configure, build, debug) as well as C++ IntelliSense and browsing are available to all CMake projects in your workspace.
@@ -72,7 +75,9 @@ Not everything in the cache is imported.  Properties such as the generator and t
 To build a CMake project, you have these choices:
 
 1. Select the target in the **Debug** dropdown and press **F5**, or click the **Run** (green triangle) button. The project automatically builds first, just like a Visual Studio solution.
+
 1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
+
 1. From the main menu, select **Build | Build Solution** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
@@ -144,9 +149,11 @@ If you need more information about the state of the CMake cache to diagnose a pr
 ![CMake single file compilation](media/cmake-single-file-compile.png)
 
 ## Run CMake from the command line
+
 If you have installed CMake from the Visual Studio Installer, you can run it from the command line by following these steps:
 
 1. Run the appropriate vsdevcmd.bat (x86/x64). See [Building on the Command Line](../build/building-on-the-command-line.md) for more information.
-1. Switch to your output folder.
-1. Run CMake to build/configure your app.
 
+1. Switch to your output folder.
+
+1. Run CMake to build/configure your app.

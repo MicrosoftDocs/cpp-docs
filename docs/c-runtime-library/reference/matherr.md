@@ -52,12 +52,12 @@ The **type** member specifies the type of math error. It is one of the following
 
 |Macro|Meaning|
 |-|-|
-**_DOMAIN**|Argument domain error
-**_SING**|Argument singularity
-**_OVERFLOW**|Overflow range error
-**_PLOSS**|Partial loss of significance
-**_TLOSS**|Total loss of significance
-**_UNDERFLOW**|The result is too small to be represented. (This condition is not currently supported.)
+| **_DOMAIN** | Argument domain error |
+| **_SING** | Argument singularity |
+| **_OVERFLOW** | Overflow range error |
+| **_PLOSS** | Partial loss of significance |
+| **_TLOSS** | Total loss of significance |
+| **_UNDERFLOW** | The result is too small to be represented. (This condition is not currently supported.) |
 
 The structure member **name** is a pointer to a null-terminated string containing the name of the function that caused the error. The structure members **arg1** and **arg2** specify the values that caused the error. If only one argument is given, it is stored in **arg1**.
 

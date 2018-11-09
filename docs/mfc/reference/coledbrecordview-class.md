@@ -93,7 +93,6 @@ Returns a handle for the **CRowset<>** object associated with the record view.
 
 ```
 virtual CRowset<>* OnGetRowset() = 0;
-
 ```
 
 ### Return Value

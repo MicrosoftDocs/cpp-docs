@@ -64,7 +64,6 @@ The function call operator that the runtime invokes to perform the work of the t
 
 ```
 void operator()() const;
-
 ```
 
 ##  <a name="task_handle__ctor"></a> task_handle

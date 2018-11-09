@@ -1,6 +1,6 @@
 ---
 title: "CRect Class"
-ms.date: "11/04/2016"
+ms.date: "11/06/2018"
 f1_keywords: ["CRect", "ATLTYPES/ATL::CRect", "ATLTYPES/ATL::CRect::CRect", "ATLTYPES/ATL::CRect::BottomRight", "ATLTYPES/ATL::CRect::CenterPoint", "ATLTYPES/ATL::CRect::CopyRect", "ATLTYPES/ATL::CRect::DeflateRect", "ATLTYPES/ATL::CRect::EqualRect", "ATLTYPES/ATL::CRect::Height", "ATLTYPES/ATL::CRect::InflateRect", "ATLTYPES/ATL::CRect::IntersectRect", "ATLTYPES/ATL::CRect::IsRectEmpty", "ATLTYPES/ATL::CRect::IsRectNull", "ATLTYPES/ATL::CRect::MoveToX", "ATLTYPES/ATL::CRect::MoveToXY", "ATLTYPES/ATL::CRect::MoveToY", "ATLTYPES/ATL::CRect::NormalizeRect", "ATLTYPES/ATL::CRect::OffsetRect", "ATLTYPES/ATL::CRect::PtInRect", "ATLTYPES/ATL::CRect::SetRect", "ATLTYPES/ATL::CRect::SetRectEmpty", "ATLTYPES/ATL::CRect::Size", "ATLTYPES/ATL::CRect::SubtractRect", "ATLTYPES/ATL::CRect::TopLeft", "ATLTYPES/ATL::CRect::UnionRect", "ATLTYPES/ATL::CRect::Width"]
 helpviewer_keywords: ["LPCRECT data type", "CRect class", "LPRECT operator", "RECT structure"]
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
@@ -61,8 +61,8 @@ class CRect : public tagRECT
 |[CRect::operator !=](#operator_neq)|Determines whether `CRect` is not equal to a rectangle.|
 |[CRect::operator &amp;](#operator_amp)|Creates the intersection of `CRect` and a rectangle and returns the resulting `CRect`.|
 |[CRect::operator &amp;=](#operator_amp_eq)|Sets `CRect` equal to the intersection of `CRect` and a rectangle.|
-|[CRect::operator |](#operator_or)|Creates the union of `CRect` and a rectangle and returns the resulting `CRect`.|
-|[CRect::operator |=](#operator_or_eq)|Sets `CRect` equal to the union of `CRect` and a rectangle.|
+|[CRect::operator &#124;](#operator_or)|Creates the union of `CRect` and a rectangle and returns the resulting `CRect`.|
+|[CRect::operator &#124;=](#operator_or_eq)|Sets `CRect` equal to the union of `CRect` and a rectangle.|
 |[CRect::operator +](#operator_add)|Adds the given offsets to `CRect` or inflates `CRect` and returns the resulting `CRect`.|
 |[CRect::operator +=](#operator_add_eq)|Adds the specified offsets to `CRect` or inflates `CRect`.|
 |[CRect::operator =](#operator_eq)|Copies the dimensions of a rectangle to `CRect`.|
@@ -76,7 +76,7 @@ class CRect : public tagRECT
 A `CRect` object can be passed as a function parameter wherever a `RECT` structure, `LPCRECT`, or `LPRECT` can be passed.
 
 > [!NOTE]
->  This class is derived from the `tagRECT` structure. (The name `tagRECT` is a less-commonly-used name for the `RECT` structure.) This means that the data members (`left`, `top`, `right`, and `bottom`) of the `RECT` structure are accessible data members of `CRect`.
+> This class is derived from the `tagRECT` structure. (The name `tagRECT` is a less-commonly-used name for the `RECT` structure.) This means that the data members (`left`, `top`, `right`, and `bottom`) of the `RECT` structure are accessible data members of `CRect`.
 
 A `CRect` contains member variables that define the top-left and bottom-right points of a rectangle.
 
@@ -407,11 +407,11 @@ Nonzero if the two rectangles have the same top, left, bottom, and right values;
 ### Example
 
 ```cpp
-   CRect rect1(35, 150, 10, 25);
-   CRect rect2(35, 150, 10, 25);
-   CRect rect3(98, 999, 6, 3);
+CRect rect1(35, 150, 10, 25);
+CRect rect2(35, 150, 10, 25);
+CRect rect3(98, 999, 6, 3);
 ASSERT(rect1.EqualRect(rect2));
-   ASSERT(!rect1.EqualRect(rect3));
+ASSERT(!rect1.EqualRect(rect3));
 // works just fine against RECTs, as well
 
 RECT test;
@@ -448,12 +448,8 @@ The resulting value can be negative.
 CRect rect(20, 30, 80, 70);
 int nHt = rect.Height();
 
-```cpp
-   CRect rect(20, 30, 80, 70);
-int nHt = rect.Height();
-
-   // nHt is now 40
-   ASSERT(nHt == 40);
+// nHt is now 40
+ASSERT(nHt == 40);
 ```
 
 ##  <a name="inflaterect"></a>  CRect::InflateRect
@@ -542,7 +538,6 @@ The intersection is the largest rectangle contained in both existing rectangles.
 CRect rectOne(125, 0, 150, 200);
 CRect rectTwo(0, 75, 350,  95);
 CRect rectInter;
-
 ```cpp
    CRect rectOne(125,  0, 150, 200);
    CRect rectTwo(0, 75, 350, 95);
@@ -581,7 +576,6 @@ A rectangle is empty if the width and/or height are 0 or negative. Differs from 
 ```cpp
 CRect rectNone(0, 0, 0, 0);
 CRect rectSome(35, 50, 135, 150);
-
 ```cpp
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
@@ -612,7 +606,6 @@ Differs from `IsRectEmpty`, which determines whether the rectangle is empty.
 ```cpp
 CRect rectNone(0, 0, 0, 0);
 CRect rectSome(35, 50, 135, 150);
-
 ```cpp
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
@@ -642,7 +635,6 @@ The absolute x-coordinate for the upper-left corner of the rectangle.
 ```cpp
 CRect rect(0, 0, 100, 100);
 rect.MoveToX(10);
-
 ```cpp
    CRect rect(0, 0, 100, 100);
 rect.MoveToX(10);
@@ -676,7 +668,6 @@ A `POINT` structure specifying the absolute upper-left corner of the rectangle.
 ```cpp
 CRect rect(0, 0, 100, 100);
 rect.MoveToXY(10, 10);
-
 ```cpp
    CRect rect(0, 0, 100, 100);
    rect.MoveToXY(10, 10);

@@ -15,8 +15,8 @@ Gets the default file translation mode for file I/O operations.
 ## Syntax
 
 ```C
-errno_t _get_fmode( 
-   int * pmode 
+errno_t _get_fmode(
+   int * pmode
 );
 ```
 

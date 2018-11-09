@@ -118,7 +118,6 @@ You can prevent the compiler from generating an implicit default constructor by 
 ```cpp
     // Default constructor
     Box() = delete;
-
 ```
 
 A compiler-generated default constructor will be defined as deleted if any class members are not default-constructible. For example, all members of class type, and their class-type members, must have a default constructor and destructors that are accessible. All data members of reference type, as well as **const** members must have a default member initializer.

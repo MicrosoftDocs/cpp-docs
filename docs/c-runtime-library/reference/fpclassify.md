@@ -30,7 +30,6 @@ int fpclassify(
 int fpclassify(
    long double x
 ); // C++ only
-
 ```
 
 ### Parameters

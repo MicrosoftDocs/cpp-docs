@@ -55,7 +55,6 @@ You can filter on a pattern, for example **vcpkg search ta**:
 botan       2.0.1      A cryptography library written in C++11
 portaudio   19.0.6.00  PortAudio Portable Cross-platform Audio I/O API P...
 taglib      1.11.1-2   TagLib Audio Meta-Data Library
-
 ```
 
 ### Install a library on your local machine
@@ -74,7 +73,6 @@ The following packages will be built and installed:
   * bzip2:x86-windows
   * zlib:x86-windows
 Additional packages (*) will be installed to complete this operation.
-
 ```
 
 For CMAKE projects, use CMAKE_TOOLCHAIN_FILE to make libraries available with `find_package()`. For example:

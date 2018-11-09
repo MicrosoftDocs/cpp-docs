@@ -13,7 +13,6 @@ Includes the Standard C library header \<assert.h> and adds the associated names
 
 ```cpp
 #include <cassert>
-
 ```
 
 ## Remarks

@@ -173,7 +173,6 @@ Real numbers:
    251.736600 251.74 2.517366e+002 2.517366E+002
 
 Address as:   0012FF78
-
 ```
 
 ## See also

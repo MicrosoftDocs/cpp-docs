@@ -16,7 +16,6 @@ An alternative to the != operator.
 ```C
 
 #define not_eq !=
-
 ```
 
 ## Remarks

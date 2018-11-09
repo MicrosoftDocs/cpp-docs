@@ -21,9 +21,9 @@ They are declared in Time.h as follows.
 ## Syntax
 
 ```
-extern int _daylight; 
-extern int _dstbias; 
-extern long _timezone; 
+extern int _daylight;
+extern int _dstbias;
+extern long _timezone;
 extern char *_tzname[2];
 ```
 

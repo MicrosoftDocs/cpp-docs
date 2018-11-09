@@ -22,7 +22,6 @@ int vwscanf(
    const wchar_t *format,
    va_list arglist
 );
-
 ```
 
 ### Parameters
@@ -111,7 +110,6 @@ int main( void )
     wprintf( L"The number of fields input is %d\n", result );
     wprintf( L"The contents are: %d %f %C %c %hs %s\n", i, fp, c, wc, s, ws);
 }
-
 ```
 
 ```Output

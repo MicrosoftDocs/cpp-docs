@@ -75,15 +75,16 @@ int main( void )
 }
 ```
 
-```Output
+### Input
 
+```Input
 n
-
 ```
 
-```Output
+### Output
 
-      nWrite error: No error
+```Output
+Write error: No error
 Will input cause an error? n
 No read error
 ```

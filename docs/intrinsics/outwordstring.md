@@ -14,10 +14,10 @@ Generates the `rep outsw` instruction, which sends `Count` words starting at `Bu
 ## Syntax
 
 ```
-void __outwordstring( 
-   unsigned short Port, 
-   unsigned short* Buffer, 
-   unsigned long Count 
+void __outwordstring(
+   unsigned short Port,
+   unsigned short* Buffer,
+   unsigned long Count
 );
 ```
 

@@ -61,11 +61,9 @@ ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
 
 ### Equates
 
-||
-|-|
-|[=](../../assembler/masm/equal.md)|
-|[EQU](../../assembler/masm/equ.md)|
-|[TEXTEQU](../../assembler/masm/textequ.md)|
+||||
+|-|-|-|
+|[=](../../assembler/masm/equal.md)|[EQU](../../assembler/masm/equ.md)|[TEXTEQU](../../assembler/masm/textequ.md)|
 
 ### Listing Control
 

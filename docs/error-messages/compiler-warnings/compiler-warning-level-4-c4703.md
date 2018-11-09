@@ -38,7 +38,6 @@ void main()
 ```Output
 c:\src\test.cpp(10) : warning C4701: potentially uninitialized local variable 'p' used
 c:\src\test.cpp(10) : warning C4703: potentially uninitialized local pointer variable 'p' used
-
 ```
 
 To correct this warning, initialize the variable as shown in this example:

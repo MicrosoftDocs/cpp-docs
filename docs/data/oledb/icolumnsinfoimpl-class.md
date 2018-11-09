@@ -14,7 +14,7 @@ Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desk
 ```cpp
 template <class T>
 class ATL_NO_VTABLE IColumnsInfoImpl :
-   public IColumnsInfo,  
+   public IColumnsInfo, 
    public CDBIDOps
 ```
 

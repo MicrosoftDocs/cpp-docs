@@ -39,7 +39,7 @@ For more information, see [Export and Import Using AFX_EXT_CLASS](../../build/ex
 
 ### Requirements
 
-Header: **afxv_**dll.h
+**Header:** afxv_dll.h
 
 ## <a name="afx_manage_state"></a>  AFX_MANAGE_STATE
 

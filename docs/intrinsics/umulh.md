@@ -14,9 +14,9 @@ Return the high 64 bits of the product of two 64-bit unsigned integers.
 ## Syntax
 
 ```
-unsigned __int64 __umulh( 
-   unsigned __int64 a, 
-   unsigned __int64 b 
+unsigned __int64 __umulh(
+   unsigned __int64 a,
+   unsigned __int64 b
 );
 ```
 
