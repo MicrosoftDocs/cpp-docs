@@ -13,7 +13,6 @@ Includes the Standard C library header \<ctype.h> and adds the associated names 
 
 ```cpp
 #include <cctype>
-
 ```
 
 ## Remarks

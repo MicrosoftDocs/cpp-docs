@@ -27,7 +27,6 @@ int _timespec64_get(
     struct _timespec64* const time_spec,
     int const base
 );
-
 ```
 
 ### Parameters

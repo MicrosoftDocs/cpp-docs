@@ -1925,7 +1925,6 @@ This member function implements the behavior of the Win32 macro, [ListView_GetNu
         {
             TRACE(_T("Couldn't allocate enough memory!"));
         }
-
 ```
 
 ## <a name="getoutlinecolor"></a>  CListCtrl::GetOutlineColor

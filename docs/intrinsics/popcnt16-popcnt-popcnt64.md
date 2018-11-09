@@ -74,7 +74,6 @@ int main()
     cout << "__popcnt(0x" << hex << ui[i] << ") = " << dec << uir << endl;
   }
 }
-
 ```
 
 ```Output

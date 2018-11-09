@@ -34,7 +34,6 @@ float log1pf(
 long double log1pl(
    long double x
 );
-
 ```
 
 ### Parameters

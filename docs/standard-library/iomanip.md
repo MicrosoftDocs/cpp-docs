@@ -13,7 +13,6 @@ Include the `iostreams` standard header \<iomanip> to define several manipulator
 
 ```cpp
 #include <iomanip>
-
 ```
 
 ## Remarks

@@ -13,7 +13,6 @@ Defines template classes and functions that C++ programs can use to encapsulate 
 
 ```cpp
 #include <locale>
-
 ```
 
 ### Functions

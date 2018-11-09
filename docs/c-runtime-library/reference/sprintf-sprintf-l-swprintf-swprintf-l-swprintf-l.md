@@ -58,7 +58,6 @@ int _sprintf_l(
    locale_t locale [,
    argument] ...
 ); // C++ only
-
 ```
 
 ### Parameters

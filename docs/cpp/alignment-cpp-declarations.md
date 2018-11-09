@@ -29,7 +29,6 @@ struct x_
    short c;    // 2 bytes
    char d;     // 1 byte
 } MyStruct;
-
 ```
 
 The compiler pads this structure to enforce alignment naturally.

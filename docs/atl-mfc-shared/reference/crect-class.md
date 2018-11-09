@@ -407,11 +407,11 @@ Nonzero if the two rectangles have the same top, left, bottom, and right values;
 ### Example
 
 ```cpp
-   CRect rect1(35, 150, 10, 25);
-   CRect rect2(35, 150, 10, 25);
-   CRect rect3(98, 999, 6, 3);
+CRect rect1(35, 150, 10, 25);
+CRect rect2(35, 150, 10, 25);
+CRect rect3(98, 999, 6, 3);
 ASSERT(rect1.EqualRect(rect2));
-   ASSERT(!rect1.EqualRect(rect3));
+ASSERT(!rect1.EqualRect(rect3));
 // works just fine against RECTs, as well
 
 RECT test;
@@ -448,12 +448,8 @@ The resulting value can be negative.
 CRect rect(20, 30, 80, 70);
 int nHt = rect.Height();
 
-```cpp
-   CRect rect(20, 30, 80, 70);
-int nHt = rect.Height();
-
-   // nHt is now 40
-   ASSERT(nHt == 40);
+// nHt is now 40
+ASSERT(nHt == 40);
 ```
 
 ##  <a name="inflaterect"></a>  CRect::InflateRect
@@ -542,7 +538,6 @@ The intersection is the largest rectangle contained in both existing rectangles.
 CRect rectOne(125, 0, 150, 200);
 CRect rectTwo(0, 75, 350,  95);
 CRect rectInter;
-
 ```cpp
    CRect rectOne(125,  0, 150, 200);
    CRect rectTwo(0, 75, 350, 95);
@@ -581,7 +576,6 @@ A rectangle is empty if the width and/or height are 0 or negative. Differs from 
 ```cpp
 CRect rectNone(0, 0, 0, 0);
 CRect rectSome(35, 50, 135, 150);
-
 ```cpp
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
@@ -612,7 +606,6 @@ Differs from `IsRectEmpty`, which determines whether the rectangle is empty.
 ```cpp
 CRect rectNone(0, 0, 0, 0);
 CRect rectSome(35, 50, 135, 150);
-
 ```cpp
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
@@ -642,7 +635,6 @@ The absolute x-coordinate for the upper-left corner of the rectangle.
 ```cpp
 CRect rect(0, 0, 100, 100);
 rect.MoveToX(10);
-
 ```cpp
    CRect rect(0, 0, 100, 100);
 rect.MoveToX(10);
@@ -676,7 +668,6 @@ A `POINT` structure specifying the absolute upper-left corner of the rectangle.
 ```cpp
 CRect rect(0, 0, 100, 100);
 rect.MoveToXY(10, 10);
-
 ```cpp
    CRect rect(0, 0, 100, 100);
    rect.MoveToXY(10, 10);

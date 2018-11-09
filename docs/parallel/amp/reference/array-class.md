@@ -32,6 +32,7 @@ The rank of the array.
 |----------|-----------------|
 |[array Constructor](#ctor)|Initializes a new instance of the `array` class.|
 |[~array Destructor](#dtor)|Destroys the `array` object.|
+
 ### Public Methods
 
 |Name|Description|

@@ -98,7 +98,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 1. Build and run the project. When you click the button, which is on the Windows Form, code in the MFC application will run.
 
-   Next you will add code to display from the MFC code the value in the text box on the Windows Form.
+    Next you will add code to display from the MFC code the value in the text box on the Windows Form.
 
 1. In the public section of the CHostForWinForm class in CHostForWinForm.h, add the following declaration:
 

@@ -13,7 +13,6 @@ Includes the Standard C library header \<locale.h> and adds the associated names
 
 ```cpp
 #include <clocale>
-
 ```
 
 ## Remarks

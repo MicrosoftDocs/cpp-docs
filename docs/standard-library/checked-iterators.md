@@ -181,7 +181,6 @@ int main()
     transform(v.begin(), v.end(), stdext::make_unchecked_array_iterator(p8), [](int n) { return n * 8; });
     print("a8: ", a8);
 }
-
 ```
 
 When you compile this code by using `cl.exe /EHsc /W4 /MTd checked_iterators_3.cpp` the compiler emits a warning, but compiles without error into an executable:

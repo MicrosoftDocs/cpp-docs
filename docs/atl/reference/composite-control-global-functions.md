@@ -140,7 +140,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -192,7 +192,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -251,7 +251,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -305,7 +305,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 

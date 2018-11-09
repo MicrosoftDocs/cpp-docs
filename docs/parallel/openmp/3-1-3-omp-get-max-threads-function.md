@@ -18,7 +18,6 @@ The following expresses a lower bound on the value of **omp_get_max_threads**:
 
 threads-used-for-next-team
 <= omp_get_max_threads
-
 ```
 
 Note that if a subsequent parallel region uses the **num_threads** clause to request a specific number of threads, the guarantee on the lower bound of the result of **omp_get_max_threads** no long holds.

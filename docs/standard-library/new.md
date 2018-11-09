@@ -13,7 +13,6 @@ Defines several types and functions that control the allocation and freeing of s
 
 ```cpp
 #include <new>
-
 ```
 
 ## Remarks

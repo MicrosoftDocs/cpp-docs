@@ -21,7 +21,6 @@ int _putchar_nolock(
 wint_t _putwchar_nolock(
    wchar_t c
 );
-
 ```
 
 ### Parameters

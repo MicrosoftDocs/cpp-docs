@@ -13,7 +13,6 @@ Includes the Standard C library header \<setjmp.h> and adds the associated names
 
 ```cpp
 #include <csetjmp>
-
 ```
 
 ## Remarks

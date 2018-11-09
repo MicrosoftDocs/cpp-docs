@@ -14,7 +14,6 @@ Constants for file-sharing modes.
 ```
 
 #include <share.h>
-
 ```
 
 ## Remarks

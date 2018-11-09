@@ -11,7 +11,6 @@ Includes the Standard C library header \<stdbool.h> and adds the associated name
 
 ```cpp
 #include <cstdbool>
-
 ```
 
 ## Remarks

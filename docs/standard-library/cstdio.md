@@ -13,7 +13,6 @@ Includes the Standard C library header \<stdio.h> and adds the associated names 
 
 ```cpp
 #include <cstdio>
-
 ```
 
 ## Remarks

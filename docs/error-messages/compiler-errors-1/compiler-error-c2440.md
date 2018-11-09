@@ -66,7 +66,6 @@ struct Derived; // Forward declaration, not defined
 Base * func(Derived * d) {
     return static_cast<Base *>(d); // error C2440: 'static_cast' : cannot convert from 'Derived *' to 'Base *'
 }
-
 ```
 
 ## Example
@@ -231,7 +230,6 @@ int main()
 }
 
 This error can appear in ATL code that uses the SINK_ENTRY_INFO macro defined in <atlcom.h>.
-
 ```
 
 ## Example

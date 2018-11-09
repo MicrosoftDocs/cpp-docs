@@ -230,7 +230,7 @@ void AFX_CDECL InvokeHelper(
 Identifies the method or property to be invoked.
 
 *wFlags*<br/>
-Flags describing the context of the call to `IDispatch::Invoke`. . For a list of possible values, see the *wFlags* parameter in [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) in the Windows SDK.
+Flags describing the context of the call to `IDispatch::Invoke`. . For a list of possible values, see the *wFlags* parameter in [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) in the Windows SDK.
 
 *vtRet*<br/>
 Specifies the type of the return value. For possible values, see the Remarks section.
@@ -268,9 +268,9 @@ Possible values for the *vtRet* argument are taken from the VARENUM enumeration.
 
 The *pbParamInfo* argument is a space-separated list of **VTS_** constants. One or more of these values, separated by spaces (not commas), specifies the function's parameter list. Possible values are listed with the [EVENT_CUSTOM](event-maps.md#event_custom) macro.
 
-This function converts the parameters to VARIANTARG values, then invokes the [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) method. If the call to `Invoke` fails, this function will throw an exception. If the SCODE (status code) returned by `IDispatch::Invoke` is DISP_E_EXCEPTION, this function throws a [COleException](../../mfc/reference/coleexception-class.md) object; otherwise it throws a [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
+This function converts the parameters to VARIANTARG values, then invokes the [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) method. If the call to `Invoke` fails, this function will throw an exception. If the SCODE (status code) returned by `IDispatch::Invoke` is DISP_E_EXCEPTION, this function throws a [COleException](../../mfc/reference/coleexception-class.md) object; otherwise it throws a [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
 
-For more information, see [VARIANTARG](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), and [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.
+For more information, see [VARIANTARG](/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), and [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.
 
 ### Example
 

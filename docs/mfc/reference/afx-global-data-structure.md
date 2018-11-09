@@ -453,7 +453,6 @@ Indicates whether predefined 32-bit icons are supported.
 
 ```
 BOOL Is32BitIcons() const;
-
 ```
 
 ### Return Value

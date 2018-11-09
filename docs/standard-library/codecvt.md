@@ -13,7 +13,6 @@ Defines several template classes that describe objects based on template class [
 
 ```cpp
 #include <codecvt>
-
 ```
 
 ## Remarks

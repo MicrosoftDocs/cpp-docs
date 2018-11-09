@@ -11,7 +11,6 @@ Includes the Standard C library header \<fenv.h> and adds the associated names t
 
 ```cpp
 #include <cfenv>
-
 ```
 
 ## Remarks

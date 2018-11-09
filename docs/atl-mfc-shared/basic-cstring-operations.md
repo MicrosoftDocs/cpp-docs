@@ -79,11 +79,10 @@ For information about converting CString objects to other string types, see [How
 
 To use a CString with `wcout` you must explicitly cast the object to a `const wchar_t*` as shown in the following example:
 
-```
+```cpp
 CString cs("meow");
 
-    wcout <<(const wchar_t*) cs <<endl;
-
+wcout << (const wchar_t*) cs << endl;
 ```
 
 Without the cast, `cs` is treated as a `void*` and `wcout` prints the address of the object. This behavior is caused by subtle interactions between template argument deduction and overload resolution which are in themselves correct and conformant with the C++ standard.

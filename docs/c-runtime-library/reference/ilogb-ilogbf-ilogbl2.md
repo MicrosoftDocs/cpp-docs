@@ -34,7 +34,6 @@ int ilogbf(
 int ilogbl(
    long double x
 );
-
 ```
 
 ### Parameters

@@ -224,7 +224,6 @@ int main( )
     cout.copyfmt( x );
     cout << i << endl;
 }
-
 ```
 
 ## <a name="eof"></a>  basic_ios::eof
@@ -352,7 +351,6 @@ int main( void )
     cout << boolalpha;
     cout << b << endl;
 }
-
 ```
 
 ## <a name="fill"></a>  basic_ios::fill
@@ -910,7 +908,6 @@ int main( )
     y[0] = wcout.widen( z[0] );
     wcout << &y[0] << endl;
 }
-
 ```
 
 ## <a name="swap"></a>  basic_ios::swap

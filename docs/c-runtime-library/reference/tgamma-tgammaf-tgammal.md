@@ -34,7 +34,6 @@ float tgammaf(
 long double tgammal(
    long double x
 );
-
 ```
 
 ### Parameters

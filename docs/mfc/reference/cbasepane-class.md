@@ -148,13 +148,13 @@ The following customization tips pertain to the `CBasePane Class` and any classe
 
 - When you create a pane, you can apply several new styles:
 
-    - AFX_CBRS_FLOAT makes the pane float.
+  - AFX_CBRS_FLOAT makes the pane float.
 
-    - AFX_CBRS_AUTOHIDE enables auto-hide mode.
+  - AFX_CBRS_AUTOHIDE enables auto-hide mode.
 
-    - AFX_CBRS_CLOSE enables the pane to be closed (hidden).
+  - AFX_CBRS_CLOSE enables the pane to be closed (hidden).
 
-   These are flags that you can combine with a bitwise-OR operation.
+  These are flags that you can combine with a bitwise-OR operation.
 
 `CBasePane` implements the following virtual Boolean methods to reflect these flags: [CBasePane::CanBeClosed](#canbeclosed), [CBasePane::CanAutoHide](#canautohide), [CBasePane::CanFloat](#canfloat). You can override them in derived classes to customize their behavior.
 

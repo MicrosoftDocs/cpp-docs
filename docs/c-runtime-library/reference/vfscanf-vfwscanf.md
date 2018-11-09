@@ -124,7 +124,6 @@ int main(void)
         fclose(stream);
     }
 }
-
 ```
 
 ```Output

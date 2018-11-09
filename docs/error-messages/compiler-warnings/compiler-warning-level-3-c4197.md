@@ -42,5 +42,4 @@ void sigproc(int) // ctrl-C
    signal(SIGINT, sigproc);
    s.i = 0;
 }
-
 ```

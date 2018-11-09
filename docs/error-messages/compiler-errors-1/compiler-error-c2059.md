@@ -104,7 +104,6 @@ template <typename T> struct Allocator {
 template <typename X, typename AY> struct Container {
     typedef typename AY::Rebind<X>::Other AX; // error C2059
 };
-
 ```
 
 By default, C++ assumes that `AY::Rebind` isn't a template; therefore, the following `<` is interpreted as a less-than sign.  You must tell the compiler explicitly that `Rebind` is a template so that it can correctly parse the angle bracket. To correct this error, use the `template` keyword on the dependent type's name, as shown here:
@@ -119,5 +118,4 @@ template <typename T> struct Allocator {
 template <typename X, typename AY> struct Container {
     typedef typename AY::template Rebind<X>::Other AX; // correct
 };
-
 ```

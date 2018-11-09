@@ -21,5 +21,4 @@ public:
    X operator! ( X );   // C2808 nonvoid parameter list
    X operator! ( void );   // OK
 };
-
 ```

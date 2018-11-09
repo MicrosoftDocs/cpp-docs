@@ -912,9 +912,8 @@ int main( )
 ```
 
 ```Output
-
+Input a complex number ( try: 2.0 ): 2.0
 2.0
-
 ```
 
 ## See also

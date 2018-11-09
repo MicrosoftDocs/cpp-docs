@@ -16,7 +16,6 @@ An alternative to the &#124;&#124; operator.
 ```C
 
 #define or ||
-
 ```
 
 ## Remarks

@@ -13,7 +13,6 @@ Includes the Standard C library header \<limits.h> and adds the associated names
 
 ```cpp
 #include <climits>
-
 ```
 
 ## Remarks

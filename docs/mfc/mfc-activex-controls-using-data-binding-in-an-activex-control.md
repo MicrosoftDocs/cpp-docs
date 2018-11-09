@@ -30,7 +30,7 @@ This article covers the following topics:
 It is possible to create a data-bound stock property, although it is more likely that you will want a [bindable get/set method](#vchowcreatingbindablegetsetmethod).
 
 > [!NOTE]
->  Stock properties have the `bindable` and `requestedit` attributes by default.
+> Stock properties have the `bindable` and `requestedit` attributes by default.
 
 #### To add a bindable stock property using the Add Property Wizard
 
@@ -59,7 +59,7 @@ You can now build the project, which will register the control. When you insert 
 In addition to a data-bound get/set method, you can also create a [bindable stock property](#vchowcreatingbindablestockproperty).
 
 > [!NOTE]
->  This procedure assumes you have an ActiveX control project that subclasses a Windows control.
+> This procedure assumes you have an ActiveX control project that subclasses a Windows control.
 
 #### To add a bindable get/set method using the Add Property Wizard
 
@@ -81,37 +81,37 @@ In addition to a data-bound get/set method, you can also create a [bindable stoc
 
 1. For **Implementation Type**, click **Get/Set Methods**.
 
-9. Select the following check boxes from the IDL Attributes tab: **bindable**, **requestedit**, **displaybind**, and **defaultbind** to add the attributes to the property definition in the project's .IDL file. These attributes make the control visible to the user and make the stock property the default bindable property.
+1. Select the following check boxes from the IDL Attributes tab: **bindable**, **requestedit**, **displaybind**, and **defaultbind** to add the attributes to the property definition in the project's .IDL file. These attributes make the control visible to the user and make the stock property the default bindable property.
 
-10. Click **Finish**.
+1. Click **Finish**.
 
-11. Modify the body of the `SetMyProp` function so that it contains the following code:
+1. Modify the body of the `SetMyProp` function so that it contains the following code:
 
    [!code-cpp[NVC_MFC_AxData#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_2.cpp)]
 
-12. The parameter passed to the `BoundPropertyChanged` and `BoundPropertyRequestEdit` functions is the dispid of the property, which is the parameter passed to the id() attribute for the property in the .IDL file.
+1. The parameter passed to the `BoundPropertyChanged` and `BoundPropertyRequestEdit` functions is the dispid of the property, which is the parameter passed to the id() attribute for the property in the .IDL file.
 
-13. Modify the [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) function so it contains the following code:
+1. Modify the [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) function so it contains the following code:
 
    [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
 
-14. Modify the `OnDraw` function so that it contains the following code:
+1. Modify the `OnDraw` function so that it contains the following code:
 
    [!code-cpp[NVC_MFC_AxData#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_3.cpp)]
 
-15. To the public section of the header file the header file for your control class, add the following definitions (constructors) for member variables:
+1. To the public section of the header file the header file for your control class, add the following definitions (constructors) for member variables:
 
    [!code-cpp[NVC_MFC_AxData#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_4.h)]
 
-16. Make the following line the last line in the `DoPropExchange` function:
+1. Make the following line the last line in the `DoPropExchange` function:
 
    [!code-cpp[NVC_MFC_AxData#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_5.cpp)]
 
-17. Modify the `OnResetState` function so that it contains the following code:
+1. Modify the `OnResetState` function so that it contains the following code:
 
    [!code-cpp[NVC_MFC_AxData#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_6.cpp)]
 
-18. Modify the `GetMyProp` function so that it contains the following code:
+1. Modify the `GetMyProp` function so that it contains the following code:
 
    [!code-cpp[NVC_MFC_AxData#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_7.cpp)]
 

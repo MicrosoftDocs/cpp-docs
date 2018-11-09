@@ -13,7 +13,6 @@ The header `<cvt/wstring>` in previous versions of Visual Studio defined the tem
 
 ```cpp
 #include <cvt/wstring>
-
 ```
 
 ## Requirements

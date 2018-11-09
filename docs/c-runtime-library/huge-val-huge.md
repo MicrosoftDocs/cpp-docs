@@ -15,7 +15,6 @@ ms.assetid: 3f044b45-02cd-46b2-b1de-87fd0441dd6a
 ```
 
 #include <math.h>
-
 ```
 
 ## Remarks

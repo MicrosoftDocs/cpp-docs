@@ -109,7 +109,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## <a name="op_at"></a>  vector\<bool>::operator[]

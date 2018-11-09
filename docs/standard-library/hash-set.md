@@ -16,7 +16,6 @@ Defines the container template classes hash_set and hash_multiset and their supp
 
 ```cpp
 #include <hash_set>
-
 ```
 
 ## Remarks

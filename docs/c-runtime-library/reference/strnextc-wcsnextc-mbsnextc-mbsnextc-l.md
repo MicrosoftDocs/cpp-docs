@@ -31,7 +31,6 @@ unsigned int _mbsnextc_l(
    const unsigned char *str,
    _locale_t locale
 );
-
 ```
 
 ### Parameters

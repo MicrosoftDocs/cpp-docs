@@ -287,7 +287,6 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
    IClassFactory** factories,
    DWORD* cookies,
    unsigned int count);
-
 ```
 
 ### Parameters

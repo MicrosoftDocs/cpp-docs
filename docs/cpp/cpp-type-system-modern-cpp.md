@@ -80,7 +80,6 @@ Any built-in or user-defined type may be qualified by the const keyword. Additio
 
 const double PI = 3.1415;
 PI = .75 //Error. Cannot modify const variable.
-
 ```
 
 The **const** qualifier is used extensively in function and variable declarations and "const correctness" is an important concept in C++; essentially it means to use **const** to guarantee, at compile time, that values are not modified unintentionally. For more information, see [const](../cpp/const-cpp.md).

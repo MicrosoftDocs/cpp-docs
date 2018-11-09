@@ -74,13 +74,13 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
       **Other:** In **Connect timeout**, specify the number of seconds of idle time allowed before a timeout occurs. In **Access permissions**, specify the access permissions on the data connection.
 
-       For more information about advanced initialization properties, refer to the documentation provided with each specific OLE DB provider.
+      For more information about advanced initialization properties, refer to the documentation provided with each specific OLE DB provider.
 
    - **All** tab
 
       This tab displays a summary of the initialization properties for the data source and connection you have specified. You can edit these values.
 
-   Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.
+      Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.
 
 - **Class**
 

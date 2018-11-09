@@ -27,5 +27,4 @@ public value struct V {
 
    int m_i;
 };
-
 ```

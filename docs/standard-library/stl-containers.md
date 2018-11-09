@@ -109,7 +109,6 @@ int main()
 }
 
 //Output: myNewSet element = 62F
-
 ```
 
 The following member functions in map, multimap, set and multiset have been overloaded to support heterogeneous lookup:

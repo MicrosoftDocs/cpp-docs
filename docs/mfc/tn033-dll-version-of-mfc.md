@@ -162,7 +162,6 @@ protected: \
     public: \
     static AFX_DATA CRuntimeClass class##class_name; \
     virtual CRuntimeClass* GetRuntimeClass() const; \
-
 ```
 
 The line that begins "static `AFX_DATA`" is declaring a static object inside of your class. To export this class correctly and access the runtime information from a client .EXE, you need to export this static object. Because the static object is declared with the modifier `AFX_DATA`, you only need to define `AFX_DATA` to be `__declspec(dllexport)` when building your DLL and define it as `__declspec(dllimport)` when building your client executable.

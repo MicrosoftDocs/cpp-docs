@@ -79,13 +79,13 @@ Reasons for these range limits:
 
 - MFC's internal framework reserves these ranges:
 
-   - 0x7000 through 0x7FFF (see afxres.h)
+  - 0x7000 through 0x7FFF (see afxres.h)
 
-   - 0xE000 through 0xEFFF (see afxres.h)
+  - 0xE000 through 0xEFFF (see afxres.h)
 
-   - 16000 through 18000 (see afxribbonres.h)
+  - 16000 through 18000 (see afxribbonres.h)
 
-   These ranges may change in future MFC implementations.
+  These ranges may change in future MFC implementations.
 
 - Several Windows system commands use the range of 0xF000 through 0xFFFF.
 

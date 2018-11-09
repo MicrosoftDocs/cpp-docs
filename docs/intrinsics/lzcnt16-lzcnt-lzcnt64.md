@@ -77,7 +77,6 @@ int main()
     cout << "__lzcnt(0x" << hex << ui[i] << ") = " << dec << uir << endl;
   }
 }
-
 ```
 
 ```Output

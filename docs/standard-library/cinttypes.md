@@ -11,7 +11,6 @@ Includes the Standard C library header \<inttypes.h>. Including this header also
 
 ```cpp
 #include <cinttypes>
-
 ```
 
 ## Remarks

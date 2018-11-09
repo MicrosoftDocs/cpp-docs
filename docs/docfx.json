@@ -14,7 +14,7 @@
           "**/includes/**"
         ]
       }
-        ],
+    ],
     "resource": [
       {
         "files": [
@@ -35,30 +35,48 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "breadcrumb_path": "~/_breadcrumb/toc.yml",
-            "ROBOTS": "INDEX,FOLLOW",
-            "manager": "wpickett",
-            "ms.date": "11/16/2016",
-            "ms.topic": "conceptual",
-            "audience": "developer",
-            "ms.prod": "visual-cpp",
-            "ms.tgt_pltfrm": "",
-            "ms.workload": ["cplusplus"],
-            "dev_langs": ["C++"],
-            "searchScope": ["C++"],
-            "feedback_system": "GitHub",
-            "feedback_github_repo": "MicrosoftDocs/cpp-docs",
-            "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
+      "breadcrumb_path": "~/_breadcrumb/toc.yml",
+      "ROBOTS": "INDEX,FOLLOW",
+      "manager": "wpickett",
+      "ms.date": "11/16/2016",
+      "ms.topic": "conceptual",
+      "audience": "developer",
+      "ms.prod": "visual-cpp",
+      "ms.tgt_pltfrm": "",
+      "ms.workload": [
+        "cplusplus"
+      ],
+      "dev_langs": [
+        "C++"
+      ],
+      "searchScope": [
+        "C++"
+      ],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/cpp-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
     },
     "fileMetadata": {
       "ms.tgt_pltfrm": {
         "linux/**.md": "Linux"
       },
       "ms.workload": {
-        "data/**.md": ["cplusplus", "data-storage"],
-        "dotnet/**.md": ["cplusplus", "dotnet"],
-        "linux/**.md": ["cplusplus", "linux"],
-        "windows/**.md": ["cplusplus", "uwp"]
+        "data/**.md": [
+          "cplusplus",
+          "data-storage"
+        ],
+        "dotnet/**.md": [
+          "cplusplus",
+          "dotnet"
+        ],
+        "linux/**.md": [
+          "cplusplus",
+          "linux"
+        ],
+        "windows/**.md": [
+          "cplusplus",
+          "uwp"
+        ]
       },
       "ms.topic": {
         "assembler/arm/**.md": "reference",
@@ -161,16 +179,23 @@
         "standard-library/**.md": "corob",
         "text/**.md": "corob",
         "windows/**.md": "mblome"
-      }      
+      }
     },
     "template": [],
-    "xref": ["msdn.4.5.2.zip", "namespaces.4.5.2.zip", "vs.110.zip", "vs.140.zip", "office15.zip"],
+    "xref": [
+      "msdn.4.5.2.zip",
+      "namespaces.4.5.2.zip",
+      "vs.110.zip",
+      "vs.140.zip",
+      "office15.zip"
+    ],
     "dest": "vcppdocs",
     "groups": {
-        "group-vc2015": {
+      "group-vc2015": {
         "moniker_range": ">= vs-2015",
         "dest": "vcppdocs-2015"
       }
-    }
+    },
+    "markdownEngineName": "markdig"
   }
 }

@@ -668,7 +668,6 @@ int main()
     print(s1);
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  multiset::emplace_hint
@@ -1197,7 +1196,6 @@ int main()
     print(s4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  multiset::iterator

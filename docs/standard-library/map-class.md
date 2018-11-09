@@ -779,7 +779,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  map::emplace_hint
@@ -857,7 +856,6 @@ int main()
     print(m1);
     cout << endl;
 }
-
 ```
 
 ## <a name="empty"></a>  map::empty
@@ -1120,7 +1118,6 @@ int main()
     cout << "After the element with a key of 2 is deleted, the map m3 is:" << endl;
     printmap(m3);
 }
-
 ```
 
 ## <a name="find"></a>  map::find
@@ -1208,7 +1205,6 @@ int main()
     findit(m1, 45);
     findit(m1, 6);
 }
-
 ```
 
 ## <a name="get_allocator"></a>  map::get_allocator
@@ -1450,7 +1446,6 @@ int main()
     print(m4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  map::iterator
@@ -1846,7 +1841,6 @@ int main()
         cout << i.first << " " << i.second << ", ";
     cout << endl;
 }
-
 ```
 
 ## <a name="mapped_type"></a>  map::mapped_type

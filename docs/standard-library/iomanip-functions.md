@@ -271,7 +271,6 @@ ss.str()              : \\root\trunk\branch\nest\egg\yolk
 
 Press Enter to exit
 */
-
 ```
 
 ## <a name="resetiosflags"></a>  resetiosflags

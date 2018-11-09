@@ -18,7 +18,6 @@ Determines which of the specified floating-point exception status flags are curr
 int fetestexcept(
    int excepts
 );
-
 ```
 
 ### Parameters

@@ -104,7 +104,6 @@ d2 = ( false false false true true true true )
 The deque which is the disjuction of d1 & d2 is:
 d3 = ( true true false true true true true )
 */
-
 ```
 
 ## Requirements

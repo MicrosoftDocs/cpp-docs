@@ -12,7 +12,6 @@ ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
 ```
 
 #include <locale.h>
-
 ```
 
 ## Remarks

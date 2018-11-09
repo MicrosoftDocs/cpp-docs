@@ -112,7 +112,6 @@ int main( void )
 string = 3.1415926535898This stopped it
    strtold = 3.1415926535898
    Stopped scan at: This stopped it
-
 ```
 
 ## See also

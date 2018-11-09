@@ -124,7 +124,6 @@ int main()
         cout << p << endl;
     }
 }
-
 ```
 
 ## <a name="stod"></a>  stod

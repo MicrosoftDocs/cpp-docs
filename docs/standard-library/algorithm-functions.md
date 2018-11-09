@@ -3501,7 +3501,7 @@ The operation is stable as the relative order of elements within each range is p
 
 The value types of the input iterators need be less-than comparable to be ordered, so that, given two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. When there are equivalent elements in both source ranges, the elements in the first range precede the elements from the second source range in the destination range.
 
-The complexity of the algorithm is linear with at most ( * last1 - first1*) - ( * last2 - first2*) - 1 comparisons.
+The complexity of the algorithm is linear with at most (*last1* - *first1*) - (*last2* - *first2*) - 1 comparisons.
 
 The [list class](../standard-library/list-class.md) provides a member function "merge" to merge the elements of two lists.
 

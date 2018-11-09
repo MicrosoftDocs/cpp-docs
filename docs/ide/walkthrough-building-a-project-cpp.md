@@ -18,15 +18,15 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
 
 1. In Game.cpp, delete the semicolon in the last line so that it resembles the statement:
 
-    `return 0`
+   `return 0`
 
 1. On the menu bar, choose **Build** > **Build Solution**.
 
 1. A message in the **Error List** window indicates that there was an error in the building of the project. The description looks something like the error message:
 
-    `error C2143: syntax error: missing ';' before '}'`
+   `error C2143: syntax error: missing ';' before '}'`
 
-  To view help information about this error, highlight it in the **Error List** window and then choose the **F1** key.
+   To view help information about this error, highlight it in the **Error List** window and then choose the **F1** key.
 
 1. Add the semicolon back to the end of the line that has the syntax error:
 
@@ -34,7 +34,7 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
 
 1. On the menu bar, choose **Build** > **Build Solution**.
 
-  A message in the **Output** window indicates that the project compiled successfully.
+   A message in the **Output** window indicates that the project compiled successfully.
 
     ```Output
     1>------ Build started: Project: Game, Configuration: Debug Win32 ------

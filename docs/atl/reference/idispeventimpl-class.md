@@ -136,7 +136,7 @@ A standard HRESULT value.
 
 ##  <a name="getidsofnames"></a>  IDispEventImpl::GetIDsOfNames
 
-Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs, which can be used on subsequent calls to [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
+Maps a single member and an optional set of argument names to a corresponding set of integer DISPIDs, which can be used on subsequent calls to [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
 
 ```
 STDMETHOD(GetIDsOfNames)(
@@ -149,7 +149,7 @@ STDMETHOD(GetIDsOfNames)(
 
 ### Remarks
 
-See [IDispatch::GetIDsOfNames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.
+See [IDispatch::GetIDsOfNames](/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.
 
 ##  <a name="gettypeinfo"></a>  IDispEventImpl::GetTypeInfo
 
@@ -174,7 +174,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 
 ### Remarks
 
-See [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.
+See [IDispatch::GetTypeInfoCount](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.
 
 ##  <a name="getuserdefinedtype"></a>  IDispEventImpl::GetUserDefinedType
 
@@ -189,7 +189,7 @@ VARTYPE GetUserDefinedType(
 ### Parameters
 
 *pTI*<br/>
-[in] A pointer to the [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface containing the user-defined type.
+[in] A pointer to the [ITypeInfo](/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface containing the user-defined type.
 
 *hrt*<br/>
 [in] A handle to the type description to be retrieved.
@@ -200,7 +200,7 @@ The type of variant.
 
 ### Remarks
 
-See [ITypeInfo::GetRefTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo).
+See [ITypeInfo::GetRefTypeInfo](/windows/desktop/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo).
 
 ##  <a name="idispeventimpl"></a>  IDispEventImpl::IDispEventImpl
 

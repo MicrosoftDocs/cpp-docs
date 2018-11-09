@@ -13,7 +13,6 @@ Includes the Standard C library header \<errno.h> and adds the associated names 
 
 ```cpp
 #include <cerrno>
-
 ```
 
 ## Remarks

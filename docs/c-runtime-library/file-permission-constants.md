@@ -12,7 +12,6 @@ ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
 ```
 
 #include <sys/stat.h>
-
 ```
 
 ## Remarks

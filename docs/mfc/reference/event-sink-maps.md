@@ -214,7 +214,6 @@ Use the ON_PROPNOTIFY macro to define an event sink map entry for handling prope
 
 ```
 ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
-
 ```
 
 ### Parameters
@@ -251,7 +250,6 @@ Use the ON_PROPNOTIFY_RANGE macro to define an event sink map entry for handling
 ```
 
 ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
-
 ```
 
 ### Parameters
@@ -285,7 +283,6 @@ The ON_PROPNOTIFY_REFLECT macro, when used in the event sink map of an OLE contr
 ```
 
 ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
-
 ```
 
 ### Parameters

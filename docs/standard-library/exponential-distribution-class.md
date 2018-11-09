@@ -117,7 +117,6 @@ int main()
 
     test(l_dist, samples);
 }
-
 ```
 
 ```Output

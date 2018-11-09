@@ -14,7 +14,6 @@ The syntax of the **copyprivate** clause is as follows:
 copyprivate(
 variable-list
 )
-
 ```
 
 The effect of the **copyprivate** clause on the variables in its variable-list occurs after the execution of the structured block associated with the **single** construct, and before any of the threads in the team have left the barrier at the end of the construct. Then, in all other threads in the team, for each variable in the *variable-list*, that variable becomes defined (as if by assignment) with the value of the corresponding variable in the thread that executed the construct's structured block.

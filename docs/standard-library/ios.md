@@ -13,7 +13,6 @@ Defines several types and functions basic to the operation of iostreams. This he
 
 ```cpp
 #include <ios>
-
 ```
 
 ## Remarks
