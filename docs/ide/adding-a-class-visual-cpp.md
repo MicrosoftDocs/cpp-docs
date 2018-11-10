@@ -1,38 +1,91 @@
 ---
-title: "Adding a Class (Visual C++)"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.codewiz.classes.adding"]
-helpviewer_keywords: ["ATL projects, adding classes", "classes [C++], creating", "classes [C++], adding"]
+title: "Add a class (Visual C++)"
+ms.date: "11/08/2018"
+f1_keywords: ["vc.codewiz.classes.adding", "vc.addclass"]
+helpviewer_keywords: ["ATL projects, adding classes", "classes [C++], creating", "classes [C++], adding", "Add Class dialog box"]
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
 ---
-# Adding a Class (Visual C++)
+# Add a class (Visual C++)
 
-To add a class in a Visual C++ project, in **Solution Explorer**, right-click the project, click **Add**, and then click **Class**. This opens the [Add Class Dialog Box](../ide/add-class-dialog-box.md) dialog box.
+To add a class in a Visual C++ project, in **Solution Explorer**, right-click the project, choose **Add**, and then choose **Class**. This opens the [Add Class dialog box](#add-class-dialog-box).
 
 When you add a class, you must specify a name that is different from classes that already exist in MFC or ATL. If you specify a name that already exists in either library, the IDE shows an error message.
 
 If your project naming convention requires you to use an existing name, then you can just change the case of one or more letters in the name because C++ is case-sensitive. For example, although you cannot name a class `CDocument`, you can name it `cdocument`.
 
-## What Kind of Class Do You Want to Add?
+## What kind of class do you want to add?
 
 In the **Add Class** dialog box, when you expand the **Visual C++** node in the left pane several groupings of installed templates are displayed. The groups include **CLR**, **ATL**, **MFC**, and **C++**. When you select a group, a list of the available templates in that group is displayed in the middle pane. Each template contains the files and source code that are required for a class.
 
-To generate a new class, select a template in the middle pane, type a name for the class in the **Name** box, and click **Add**. This opens the **Add Class Wizard** so that you can specify options for the class.
+To generate a new class, select a template in the middle pane, type a name for the class in the **Name** box, and select **Add**. This opens the **Add Class Wizard** so that you can specify options for the class.
 
-- For more information about how to create MFC classes, see [MFC Class](../mfc/reference/adding-an-mfc-class.md).
+- For more information about how to create MFC classes, see [MFC class](../mfc/reference/adding-an-mfc-class.md).
 
-- For more information about how to create ATL classes, see [ATL Simple Object](../atl/reference/adding-an-atl-simple-object.md).
+- For more information about how to create ATL classes, see [ATL simple object](../atl/reference/adding-an-atl-simple-object.md).
 
 > [!NOTE]
->  The template **Add ATL Support to MFC** does not create a class, but instead configures the project to use ATL. For more information, see [ATL Support in an MFC Project](../mfc/reference/adding-atl-support-to-your-mfc-project.md).
+> The template **Add ATL Support to MFC** does not create a class, but instead configures the project to use ATL. For more information, see [ATL support in an MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md).
 
-To make a C++ class that does not use MFC, ATL, or CLR, use the **C++ Class** template in the **C++** group of installed templates. For more information, see [Adding a Generic C++ Class](../ide/adding-a-generic-cpp-class.md).
+To make a C++ class that does not use MFC, ATL, or CLR, use the **C++ Class** template in the **C++** group of installed templates. For more information, see [Adding a generic C++ class](../ide/adding-a-generic-cpp-class.md).
 
-Two kinds of form-based C++ classes are available. The first one, [CFormView Class](../mfc/reference/cformview-class.md) creates an MFC class. The second one creates a CLR Windows Forms class.
+Two kinds of form-based C++ classes are available. The first one, [CFormView class](../mfc/reference/cformview-class.md), creates an MFC class. The second one creates a CLR Windows Forms class.
 
-## See Also
+## Add Class dialog box
 
-[Creating a Forms-Based MFC Application](../mfc/reference/creating-a-forms-based-mfc-application.md)<br>
-[Add Class Dialog Box](../ide/add-class-dialog-box.md)<br>
-[Creating Desktop Projects By Using Application Wizards](../ide/creating-desktop-projects-by-using-application-wizards.md)<br>
-[Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)
+The **Add Class** dialog box contains templates that allow you to:
+
+- Open a corresponding code wizard, if one is available. For more information, see [Adding functionality with code wizards](../ide/adding-functionality-with-code-wizards-cpp.md).
+
+   \- or -
+
+- Automatically create your new class by adding the appropriate files and source code to your project.
+
+You can access the **Add Class** dialog box from the **Project** menu, **Solution Explorer**, or [Class View](/visualstudio/ide/viewing-the-structure-of-code).
+
+> [!NOTE]
+> When you attempt to add a class that is not suited to your current project, you will receive an error message. Select **OK** to return to the **Add Class** dialog box.
+
+### Add Class templates
+
+There are four categories of **Add Class** templates: .NET, ATL, MFC, and Generic. When you select a template in the **Templates** pane, text describing your selection will appear under the **Categories** and **Templates** panes.
+
+#### .NET
+
+|Template|Wizard|
+|--------------|------------|
+|ASP.NET Web Service|Not available|
+|Component Class (.NET)|Not available|
+|Installer Class (.NET)|Not available|
+|User Control (.NET)|Not available|
+|Windows Form (.NET)|Not available|
+
+#### ATL
+
+|Template|Wizard|
+|--------------|------------|
+|Add ATL Support to MFC|Not available|
+|ATL Active Server Page Component|[ATL Active Server Page Component Wizard](../atl/reference/atl-active-server-page-component-wizard.md)|
+|ATL Control|[ATL Control Wizard](../atl/reference/atl-control-wizard.md)|
+|ATL Dialog|[ATL Dialog Wizard](../atl/reference/atl-dialog-wizard.md)|
+|ATL COM+ 1.0 Component|[ATL COM+ 1.0 Component Wizard](../atl/reference/atl-com-plus-1-0-component-wizard.md)|
+|ATL OLEDB Consumer|[ATL OLE DB Consumer Wizard](../atl/reference/atl-ole-db-consumer-wizard.md)|
+|ATL OLEDB Provider|[ATL OLE DB Provider Wizard](../atl/reference/atl-ole-db-provider-wizard.md)|
+|ATL Property Page|[ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md)|
+|ATL Simple Object|[ATL Simple Object Wizard](../atl/reference/atl-simple-object-wizard.md)|
+|WMI Event Provider|WMI Event Provider Wizard|
+|WMI Instance Provider|WMI Instance Provider Wizard|
+
+#### MFC
+
+|Template|Wizard|
+|--------------|------------|
+|MFC Class|[MFC Add Class Wizard](../mfc/reference/mfc-add-class-wizard.md)|
+|MFC Class From ActiveX Control|[Add Class From ActiveX Control Wizard](../ide/add-class-from-activex-control-wizard.md)|
+|MFC Class From TypeLib|[Add Class From Typelib Wizard](../mfc/reference/add-class-from-typelib-wizard.md)|
+|MFC ODBC Consumer|[MFC ODBC Consumer Wizard](../mfc/reference/mfc-odbc-consumer-wizard.md)|
+
+#### Generic classes
+
+|Template|Wizard|
+|--------------|------------|
+|Generic C++ Class|[Generic C++ Class Wizard](../ide/generic-cpp-class-wizard.md)|
