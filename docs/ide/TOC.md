@@ -9,6 +9,8 @@
 ## [Rename](refactoring/rename.md)
 # [Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)
 # [Open Folder projects](non-msbuild-projects.md)
+## [CppProperties.json schema reference](cppproperties-schema-reference.md)
+## [Tasks.vs.json schema reference (C++)](tasks-vs-json-schema-reference-cpp.md)
 # [CMake projects](cmake-tools-for-visual-cpp.md)
 ## [Customize CMake settings](customize-cmake-settings.md)
 ## [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
