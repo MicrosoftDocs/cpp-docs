@@ -69,7 +69,7 @@ int main( )
     // Get the current bits
     tmp = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
 
-    // Clear the upper 16 bits and OR in the desired freqency
+    // Clear the upper 16 bits and OR in the desired frequency
     tmp = (tmp & 0x0000FFFF) | _CRTDBG_CHECK_EVERY_16_DF;
 
     // Set the new bits
