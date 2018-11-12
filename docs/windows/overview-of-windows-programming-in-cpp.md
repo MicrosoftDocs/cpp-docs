@@ -64,7 +64,7 @@ You can use Visual C++ to package almost any kind of custom high-performance fun
 
 ## Games
 
-DirectX games can run on the PC or Xbox. For more information, see [DirectX Graphics and Gaming](windows/desktop/directx).
+DirectX games can run on the PC or Xbox. For more information, see [DirectX Graphics and Gaming](/windows/desktop/directx).
 
 ## SDKs, libraries, and header files
 
