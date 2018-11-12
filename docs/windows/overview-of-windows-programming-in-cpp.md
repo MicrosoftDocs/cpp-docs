@@ -19,7 +19,7 @@ There are several broad categories of Windows apps that you can develop with Vis
 
 UWP apps are able to run on all Windows 10 devices such as tablets and mobile phones, as well as on the desktop. On the desktop, they are able to run as a desktop window, instead of always running full-screen. These apps can also run on the Xbox, and on future devices.  UWP apps run on the Windows Runtime, which provides user interface elements, services, and an interface to the diverse hardware devices that are supported on Windows.
 
-You can write UWP apps in C++/CX, a dialect of C++, you can use the [C++/WinRT library](https://moderncpp.com/) for some scenarios. UWP apps compile to native code and have a XAML user interface, or use DirectX. Windows Runtime components that are written in native code that UWP apps written in other languages can consume. For more information, see [Create a Universal Windows Platform app in C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp), and [Creating Windows Runtime components in C++](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh441569\(v=vs.140\)).
+You can write UWP apps in C++/CX, a dialect of C++, you can use the [C++/WinRT library](https://moderncpp.com/) for some scenarios. UWP apps compile to native code and have a XAML user interface, or use DirectX. Windows Runtime components that are written in native code that UWP apps written in other languages can consume. For more information, see [Create a Universal Windows Platform app in C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp), and [Creating Windows Runtime components in C++](https://docs.microsoft.com/previous-versions/windows/apps/hh441569\(v=vs.140\)).
 
    This category also includes using C++ for core components and computational code in the context of server and cloud programming. Sometimes the performance-intensive code at the core of a server or cloud application is written in C++ to maximize performance. You can compile such code into a DLL and use it from C# or Visual Basic.
 
@@ -48,13 +48,13 @@ On Windows 10, you can use Visual C++ to create many kinds of desktop programs:
 
 - Command-line apps and utilities. For more information, see [Console Applications](console-applications-in-visual-cpp.md).
 
-- Consumer applications that have sophisticated graphical user interfaces. For more information, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/ff708696.aspx)
+- Consumer applications that have sophisticated graphical user interfaces. For more information, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)
 
 - Enterprise and line-of-business apps that run on the .NET Framework. Most .NET Framework applications are written in C# or Visual Basic. You can use C++/CLI to create interop layers that enable .NET code to consume native C++ libraries. For more information, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 - SQL database clients that run in native code. For more information, see [SQL Server Native Client](/sql/relational-databases/native-client/odbc/sql-server-native-client-odbc).
 
-- Add-ins for Microsoft Office applications. For more information, see [Building a C++ Add-in for Outlook 2010](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2010/ee941475(v=office.14))
+- Add-ins for Microsoft Office applications. For more information, see [Building a C++ Add-in for Outlook 2010](https://docs.microsoft.com/previous-versions/office/developer/office-2010/ee941475(v=office.14))
 
 - Device drivers. For more information, see [Windows Driver Kit (WDK)](/windows-hardware/drivers/index)
 
