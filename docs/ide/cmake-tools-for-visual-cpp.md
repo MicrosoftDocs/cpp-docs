@@ -6,7 +6,7 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMake projects in Visual Studio
 
-This article assumes that you are familiar with CMake, a cross-platform, open-source tool for defining build processes that run on multiple platforms. For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
+CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. THis article assumes you are familiar with CMake. You can learn more about it at [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) to generate MSBuild project files, which the IDE then consumes for IntelliSense, browsing, and compilation.
 
@@ -82,7 +82,7 @@ To build a CMake project, you have these choices:
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
 
-You can customize configurations and environment variables without modifying the CMakeLists.txt file by using the CMakeSettings.json file. For more information, see [Customizing CMake configurations and other settings](customizing-cmake-settings.md).
+You can customize configurations and environment variables without modifying the CMakeLists.txt file by using the CMakeSettings.json file. For more information, see [Customize CMake settings](customize-cmake-settings.md).
 
 When a Visual Studio generator is selected for the active configuration, MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the CMakeSettings.json file, you can specify additional [MSBuild command line arguments](../build/msbuild-visual-cpp-overview.md) to be passed to the build system via the `buildCommandArgs` property:
 

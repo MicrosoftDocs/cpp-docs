@@ -5,15 +5,25 @@ helpviewer_keywords: ["CMake settings"]
 ---
 # Customizing CMake settings
 
-By default, Visual Studio provides six default CMake configurations ("x86-Debug", "x86-Release", "x64-Debug", "x64-Release", "Linux-Debug" and "Linux-Release"). These configurations define how CMake.exe is invoked to create the CMake cache for a given project. To modify these configurations, or create a new custom configuration, choose **CMake | Change CMake Settings**, and then choose the CMakeLists.txt file that the settings apply to. The **Change CMake Settings** command is also available on the file's context menu in **Solution Explorer**. This command creates a CMakeSettings.json file in the project folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation.
+Visual Studio provides several CMake configurations that define how CMake.exe is invoked to create the CMake cache for a given project. To add a new configuration, click the configuration drop-down in the toolbar and choose **Manage Configurations**:
 
-   ![CMake main menu command for change settings](media/cmake-change-settings.png)
+   ![CMake manage configurations](media/cmake-manage-configurations.png)
+
+You can choose from the list of predefined configurations:
+
+   ![CMake predefined configurations](media/cmake-configurations.png)
+
+The first time you select a configuration, Visual Studio creates a CMakeSettings.json file in your project's root folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation. 
+
+To add an additional configuration, right click CMakeSettings.json and choose **Add Configuration**. 
+
+   ![CMake Add configuration](media/cmake-add-configuration.png "CMake Add Configuration")
 
 JSON IntelliSense helps you edit the CMakeSettings.json file:
 
    ![CMake JSON IntelliSense](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
 
-The following example shows a sample configuration, which you can use as the starting point to create your own in CMakeSettings.json:
+You can also directly edit CMakeSettings.json to create custom configurations The following example shows a sample configuration, which you can use as the starting point:
 
 ```json
     {
