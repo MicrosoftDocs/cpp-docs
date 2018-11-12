@@ -1,6 +1,6 @@
 ---
 title: "Overview of Windows Programming in C++"
-ms.date: "04/06/2018"
+ms.date: "11/13/2018"
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 ---
 # Overview of Windows Programming in C++
@@ -19,7 +19,7 @@ There are several broad categories of Windows apps that you can develop with Vis
 
 UWP apps are able to run on all Windows 10 devices such as tablets and mobile phones, as well as on the desktop. On the desktop, they are able to run as a desktop window, instead of always running full-screen. These apps can also run on the Xbox, and on future devices.  UWP apps run on the Windows Runtime, which provides user interface elements, services, and an interface to the diverse hardware devices that are supported on Windows.
 
-You can write UWP apps in C++/CX, a dialect of C++, you can use the [C++/WinRT library](https://moderncpp.com/) for some scenarios. UWP apps compile to native code and have a XAML user interface, or use DirectX. Windows Runtime components that are written in native code that UWP apps written in other languages can consume. For more information, see [Create a Universal Windows Platform app in C++](http://go.microsoft.com/fwlink/?LinkID=534976), [Create your first UWP game using DirectX](http://go.microsoft.com/fwlink/p/?LinkId=244656), and [Creating Windows Runtime components in C++](http://go.microsoft.com/fwlink/p/?LinkId=244658).
+You can write UWP apps in C++/CX, a dialect of C++, you can use the [C++/WinRT library](https://moderncpp.com/) for some scenarios. UWP apps compile to native code and have a XAML user interface, or use DirectX. Windows Runtime components that are written in native code that UWP apps written in other languages can consume. For more information, see [Create a Universal Windows Platform app in C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp), and [Creating Windows Runtime components in C++](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh441569\(v=vs.140\)).
 
    This category also includes using C++ for core components and computational code in the context of server and cloud programming. Sometimes the performance-intensive code at the core of a server or cloud application is written in C++ to maximize performance. You can compile such code into a DLL and use it from C# or Visual Basic.
 
@@ -38,7 +38,7 @@ If you have an existing Windows 8.1 project and want to port it to Windows 10, s
 
 For more information on UWP in general, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/whats-a-uwp).
 
-For more information on all of these concepts, see [Guide to Windows Universal Apps](http://go.microsoft.com/fwlink/p/?linkid=534605).
+For more information on all of these concepts, see [Guide to Windows Universal Apps](/windows/uwp/get-started/universal-application-platform-guide).
 
 ##  <a name="BK_Native"></a> Desktop and Server applications
 
@@ -46,17 +46,17 @@ To learn the basics of writing Windows client applications for the desktop, see 
 
 On Windows 10, you can use Visual C++ to create many kinds of desktop programs:
 
-- Command-line apps and utilities. For more information, see [Console Applications](../windows/console-applications-in-visual-cpp.md).
+- Command-line apps and utilities. For more information, see [Console Applications](console-applications-in-visual-cpp.md).
 
-- Consumer applications that have sophisticated graphical user interfaces. For more information, see [Hilo: Developing C++ Applications for Windows](http://go.microsoft.com/fwlink/p/?LinkId=256417)
+- Consumer applications that have sophisticated graphical user interfaces. For more information, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/ff708696.aspx)
 
 - Enterprise and line-of-business apps that run on the .NET Framework. Most .NET Framework applications are written in C# or Visual Basic. You can use C++/CLI to create interop layers that enable .NET code to consume native C++ libraries. For more information, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 - SQL database clients that run in native code. For more information, see [SQL Server Native Client](/sql/relational-databases/native-client/odbc/sql-server-native-client-odbc).
 
-- Add-ins for Microsoft Office applications. For more information, see [Building a C++ Add-in for Outlook 2010](http://go.microsoft.com/fwlink/p/?LinkId=256420)
+- Add-ins for Microsoft Office applications. For more information, see [Building a C++ Add-in for Outlook 2010](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2010/ee941475(v=office.14))
 
-- Device drivers. For more information, see [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/p/?LinkId=256421)
+- Device drivers. For more information, see [Windows Driver Kit (WDK)](/windows-hardware/drivers/index)
 
 - Windows services. For more information, see [Introduction to Windows Service Applications](/dotnet/framework/windows-services/introduction-to-windows-service-applications).
 
@@ -64,7 +64,7 @@ You can use Visual C++ to package almost any kind of custom high-performance fun
 
 ## Games
 
-DirectX games can run on the PC or Xbox. For more information, see [DirectX Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=256418).
+DirectX games can run on the PC or Xbox. For more information, see [DirectX Graphics and Gaming](windows/desktop/directx).
 
 ## SDKs, libraries, and header files
 
@@ -91,6 +91,18 @@ Other platforms such as Xbox and Azure have their own SDKs that you may have to 
 ## Development Tools
 
 Visual Studio includes a powerful debugger for native code, static analysis tools, graphics debugging tools, a full-featured code editor, support for unit tests, and many other tools and utilities. For more information, see [Get started developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio), and [IDE and Development Tools](../ide/ide-and-tools-for-visual-cpp-development.md).
+
+## In this section
+|Title|Description|
+|-----------|-----------------|
+|[Windows Desktop Applications in C++](desktop-applications-visual-cpp.md)| How to create traditional desktop applications.|
+|[Active Template Library (ATL)](../atl/TOC.md)|Use the ATL library to create COM components in C++.|
+|[Microsoft Foundation Classes (MFC)](../mfc/TOC.md)|Use MFC to create large or small Windows applications with dialogs and controls|
+|[ATL and MFC Shared Classes](../atl-mfc-shared/TOC.md)|Use classes such as CString that are shared in ATL and MFC.|
+|[.NET Development with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|Create wrappers for native C++ libraries that enable it to communication with .NET applications and components.|
+|[Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)|Reference for syntax elements shared by C++/CX and C++/CLI.|
+|[Universal Windows Apps (C++)](universal-windows-apps-cpp.md)|Write UWP applications using C++/CX or Windows Runtime Template Library (WRL).|
+|[C++ Attributes for COM and .NET](attributes/cpp-attributes-com-net.md)|Non-standard attributes for Windows-only programming using .NET or COM.|
 
 ## Related Articles
 
