@@ -1,11 +1,11 @@
 ---
-title: "Add a method (Visual C++)"
+title: "Add a method"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]
 helpviewer_keywords: ["add method wizard [C++]", "methods [C++], adding", "methods [C++], adding using wizards", "IDL attributes, add method wizard"]
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
 ---
-# Add a method (Visual C++)
+# Add a method
 
 You can use the [add method wizard](#add-method-wizard) to add a method to an interface in your project. If the project contains a class associated with the interface, the wizard modifies the class, too.
 

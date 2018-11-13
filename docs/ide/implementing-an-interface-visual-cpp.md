@@ -1,11 +1,11 @@
 ---
-title: "Implement an interface (Visual C++)"
+title: "Implement an interface"
 ms.date: "11/12/2018"
 f1_keywords: ["vc.codewiz.impl.interface.overview"]
 helpviewer_keywords: ["interfaces, implementing", "implement interface wizard [C++]"]
 ms.assetid: 72f8731b-7e36-45db-8b10-7ef211a773cd
 ---
-# Implement an interface (Visual C++)
+# Implement an interface
 
 To implement an interface, you must have created a project as an ATL COM application or as an MFC application that contains ATL support. You can use the [ATL project wizard](../atl/reference/atl-project-wizard.md) to create an ATL application, or [add an ATL object to your MFC application](../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.
 

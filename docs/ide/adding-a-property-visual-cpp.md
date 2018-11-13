@@ -1,11 +1,11 @@
 ---
-title: "Add a property (Visual C++)"
+title: "Add a property"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.prop.overview", "vc.codewiz.prop.idlattributes"]
 helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces", "names, add property wizard", "IDL attributes, add property wizard", "stock properties, about stock properties", "stock properties"]
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
 ---
-# Add a property (Visual C++)
+# Add a property
 
 You can use the [add property wizard](#names-add-property-wizard) to add a method to an interface in your project.
 

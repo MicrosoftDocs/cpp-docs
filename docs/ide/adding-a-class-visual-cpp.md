@@ -1,11 +1,11 @@
 ---
-title: "Add a class (Visual C++)"
+title: "Add a class"
 ms.date: "11/08/2018"
 f1_keywords: ["vc.codewiz.classes.adding", "vc.addclass"]
 helpviewer_keywords: ["ATL projects, adding classes", "classes [C++], creating", "classes [C++], adding", "Add Class dialog box"]
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
 ---
-# Add a class (Visual C++)
+# Add a class
 
 To add a class in a Visual C++ project, in **Solution Explorer**, right-click the project, choose **Add**, and then choose **Class**. This opens the [Add Class dialog box](#add-class-dialog-box).
 

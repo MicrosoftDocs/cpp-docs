@@ -1,11 +1,11 @@
 ---
-title: "Add a member function (Visual C++)"
+title: "Add a member function"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.classes.member.function", "vc.codewiz.function.overview"]
 helpviewer_keywords: ["member functions, adding to classes", "classes [C++], adding members", "add member function wizard [C++]"]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
 ---
-# Add a member function (Visual C++)
+# Add a member function
 
 In **Class View**, you can add a member function to any class. When you do this, a declaration is added to the header file, and a stub member-function body is added to the class's implementation file, which you can then modify.
 
