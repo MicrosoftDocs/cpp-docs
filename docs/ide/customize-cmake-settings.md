@@ -40,9 +40,9 @@ You can also directly edit CMakeSettings.json to create custom configurations Th
 
 ```
 
-1. **name**: the name that appears in the C++ configuration dropdown. This property value can also be used as a macro, `${name}`, to specify other property values. For an example, see the **buildRoot** definition in CMakeSettings.json.
+1. **name**: the name that appears in the C++ configuration dropdown. The `${name}` macro enables you to use this value when composing other property values such as paths. For an example, see the **buildRoot** definition in CMakeSettings.json.
 
-1. **generator**: maps to the **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, to help specify other property values. Visual Studio currently supports the following CMake generators:
+1. **generator**: maps to the CMake **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, when composing other property values. Visual Studio currently supports the following CMake generators:
 
     - "Ninja"
     - "Visual Studio 14 2015"
@@ -55,6 +55,12 @@ You can also directly edit CMakeSettings.json to create custom configurations Th
     Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate a Visual Studio project instead.
 
     To specify a Visual Studio generator, open the CMakeSettings.json from the main menu by choosing **CMake | Change CMake Settings**. Delete “Ninja” and type “V”. This activates IntelliSense, which enables you to choose the generator you want.
+
+    When the active configuration specifies a Visual Studio generator, by default MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the CMakeSettings.json file, you can specify additional [MSBuild command line arguments](../build/msbuild-visual-cpp-overview.md) to be passed to the build system via the `buildCommandArgs` property:
+    
+    ```json
+    "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
+    ```
 
 1. **buildRoot**: maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
 
@@ -80,6 +86,8 @@ You can also directly edit CMakeSettings.json to create custom configurations Th
 1. **ctestCommandArgs**: specifies additional switches to pass to CTest when running tests.
 
 1. **buildCommandArgs**: specifies additional switches to pass to the underlying build system. For example, passing -v when using the Ninja generator forces Ninja to output command lines.
+
+Additional settings are available for CMake Linux projects. See [Configure a CMake Linux project](../linux/cmake-linux-project.md).
 
 ## Environment variables
 
@@ -175,7 +183,7 @@ In CMakeSettings.json, you can define custom environment variables globally or p
 }
 ```
 
-In the next example, the x86-Debug configuration defines its own value for the **BuildDir** property, and this value overrides the value set by the global **BuildDir** property so that **BuildRoot** evaluates to `D:\custom-builddir\x86-Debug`.
+In the next example, the x86-Debug configuration defines its own value for the **BuildDir** property. This value overrides the value set by the global **BuildDir** property so that **BuildRoot** evaluates to `D:\custom-builddir\x86-Debug`.
 
 ```json
 {

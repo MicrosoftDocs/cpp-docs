@@ -14,6 +14,7 @@
 # [CMake projects](cmake-tools-for-visual-cpp.md)
 ## [Customize CMake settings](customize-cmake-settings.md)
 ## [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
+## [CMake predefined configuration schema reference](cmake-predefined-configuration-reference.md)
 # [MSBuild Projects](creating-and-managing-visual-cpp-projects.md)
 ## [Project Types in Visual C++](visual-cpp-project-types.md)
 ## [Add New Item Templates in Visual C++](using-visual-cpp-add-new-item-templates.md)

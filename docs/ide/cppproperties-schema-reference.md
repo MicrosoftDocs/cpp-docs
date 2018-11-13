@@ -6,7 +6,9 @@ helpviewer_keywords: ["CMake in Visual C++"]
 
 # CppProperties.json schema reference
 
-Some kinds of Open Folder projects that don't use CMake may require certain information about the current build configuration to be stored in a CppProperties.json file in the project folder in order to enable IntelliSense and browsing functionality. The build configuration defines #include paths, compiler switches, and other parameters. By default, Visual Studio provides Debug and Release configurations. You can customize these in CppProperties.json, or create new configurations.
+Open Folder projects that don't use CMake can store project configuration settings in a CppProperties.json file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) 
+
+The Visual Studio IDE uses CppProperties.json for IntelliSense and code navigation. A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. Visual Studio provides predefined configurations called Debug and Release. You can customize these in CppProperties.json, or create new configurations. 
 
 
 A configuration may have any of the following properties:
@@ -52,7 +54,7 @@ You can define custom environment variables in CppProperties.json either globall
   // { "EnvVar1": "Value1", "EnvVar2": "Value2" }
   "environments": [
     {
-      "INCLUDE": "${workspaceRoot}\\src\\includes"
+      "INCLUDE": "${workspaceRoot}\src\includes"
     }
   ],
 
@@ -93,7 +95,7 @@ You can also define an **environments** property inside a configuration, so that
 {
   "environments": [
     {
-      "INCLUDE": "${workspaceRoot}\\src\\includes"
+      "INCLUDE": "${workspaceRoot}\src\includes"
     }
   ],
 
@@ -114,7 +116,7 @@ You can also define an **environments** property inside a configuration, so that
       "environments": [
         {
           // Append 64-bit specific include path to env.INCLUDE.
-          "INCLUDE": "${env.INCLUDE};${workspaceRoot}\\src\\includes64"
+          "INCLUDE": "${env.INCLUDE};${workspaceRoot}\src\includes64"
         }
       ],
 
@@ -154,13 +156,13 @@ For example, if your project has an include folder and also includes windows.h a
       "name": "Windows",
       "includePath": [
         // local include folder
-        "${workspaceRoot}\\include",
+        "${workspaceRoot}\include",
         // Windows SDK and CRT headers
-        "${env.WindowsSdkDir}include\\${env.WindowsSDKVersion}\\ucrt",
-        "${env.NETFXSDKDir}\\include\\um",
-        "${env.WindowsSdkDir}include\\${env.WindowsSDKVersion}\\um",
-        "${env.WindowsSdkDir}include\\${env.WindowsSDKVersion}\\shared",
-        "${env.VCToolsInstallDir}include"
+        "${env.WindowsSdkDir}\include\${env.WindowsSDKVersion}\ucrt",
+        "${env.NETFXSDKDir}\include\um",
+        "${env.WindowsSdkDir}\include\${env.WindowsSDKVersion}\um",
+        "${env.WindowsSdkDir}\include\${env.WindowsSDKVersion}\shared",
+        "${env.VCToolsInstallDir}\include"
       ]
     }
   ]

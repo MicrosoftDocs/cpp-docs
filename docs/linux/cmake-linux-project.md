@@ -63,7 +63,8 @@ To customize your program’s command line arguments, right-click on the executa
 
 ## Configure CMake settings for Linux
 
-To change the default CMake settings, choose **CMake | Change CMake Settings | CMakeLists.txt** from the main menu, or right-click CMakeSettings.txt in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new file in your folder called `CMakeSettings.json` that is populated with the default configurations that are listed in the project settings menu item. The following example shows the default configuration for Linux-Debug based on the previous code example:
+A CMakeSettings.json file in a CMake Linux project can specify all the properties listed in [Customize CMake settings](../ide/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine. 
+To change the default CMake settings, choose **CMake | Change CMake Settings | CMakeLists.txt** from the main menu, or right-click CMakeSettings.txt in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new `CMakeSettings.json` file in your root project folder. The following example shows the default configuration for Linux-Debug based on the previous code example:
 
 ```json
 {

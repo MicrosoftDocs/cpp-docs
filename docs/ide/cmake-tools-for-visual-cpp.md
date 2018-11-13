@@ -82,13 +82,7 @@ To build a CMake project, you have these choices:
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
 
-You can customize configurations and environment variables without modifying the CMakeLists.txt file by using the CMakeSettings.json file. For more information, see [Customize CMake settings](customize-cmake-settings.md).
-
-When a Visual Studio generator is selected for the active configuration, MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the CMakeSettings.json file, you can specify additional [MSBuild command line arguments](../build/msbuild-visual-cpp-overview.md) to be passed to the build system via the `buildCommandArgs` property:
-
-```json
-"buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
-```
+You can customize build configurations, environment variables, command line arguments, and other settings without modifying the CMakeLists.txt file by using the CMakeSettings.json file. For more information, see [Customize CMake settings](customize-cmake-settings.md).
 
 As you would expect, build results are shown in the **Output Window** and **Error List**.
 
