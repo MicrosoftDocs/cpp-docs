@@ -7403,7 +7403,7 @@ int main()
 }
 ```
 
-## <a name="shuffle"></a>  std::shuffle
+## <a name="shuffle"></a>  shuffle
 
 Shuffles (rearranges) elements for a given range by using a random number generator.
 
