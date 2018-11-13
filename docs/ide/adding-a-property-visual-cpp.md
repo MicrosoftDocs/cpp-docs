@@ -155,11 +155,11 @@ Not all options are available to all property types.
 |**source**|Indicates that a member of the property is a source of events. See [source](/windows/desktop/Midl/source) in the *MIDL Reference*.|
 |**hidden**|Indicates that the property exists but shouldn't be displayed in a user-oriented browser. See [hidden](/windows/desktop/Midl/hidden) in the *MIDL Reference*.|
 |**restricted**|Specifies that the property can't be called arbitrarily. See [restricted](/windows/desktop/Midl/restricted) in the *MIDL Reference*.|
-|`local`|Specifies to the MIDL compiler that the property isn't remote. See [local](/windows/desktop/Midl/local) in the *MIDL Reference*.|
+|**local**|Specifies to the MIDL compiler that the property isn't remote. See [local](/windows/desktop/Midl/local) in the *MIDL Reference*.|
 
 ## Stock properties
 
-If you're adding a property to an MFC dispinterface using the [add property wizard](../ide/idl-attributes-add-property-wizard.md), you can choose a stock property from the **Property name** list in the [Names](../ide/names-add-property-wizard.md) page of the wizard. These properties are as follows:
+If you're adding a property to an MFC dispinterface using the [add property wizard](#idl-attributes-add-property-wizard), you can choose a stock property from the **Property name** list in the [Names](../ide/names-add-property-wizard.md) page of the wizard. These properties are as follows:
 
 |Property name|Description|
 |-------------------|-----------------|

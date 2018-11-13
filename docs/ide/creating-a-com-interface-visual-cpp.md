@@ -11,15 +11,15 @@ Visual C++ provides wizards and templates to create projects that use COM defini
 
 You can use these wizards to do the following three common tasks:
 
-- [Add ATL support to your MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md)
+- [Add ATL support to your MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md).
 
   Add ATL support to an MFC application after you create an MFC project using the [MFC application wizard](../mfc/reference/mfc-application-wizard.md) and then running the **Add ATL Support to MFC** code wizard. This support applies only to simple COM objects added to an MFC executable or DLL project. These ATL objects may have more than one interface.
 
-- [Create an MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md)
+- [Create an MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md).
 
   Open the [MFC ActiveX control wizard](../mfc/reference/mfc-activex-control-wizard.md) to create an ActiveX control with a dispinterface and an event map defined in the .idl file and the control class, respectively.
 
-- [Add an ATL control](../atl/reference/adding-an-atl-control.md)
+- [Add an ATL control](../atl/reference/adding-an-atl-control.md).
 
   Use a combination of the [ATL project wizard](../atl/reference/atl-project-wizard.md) and the [ATL control wizard](../atl/reference/atl-control-wizard.md) to create an ATL ActiveX control.
 

@@ -13,7 +13,7 @@ You can add a generic C++ class by using **Class View**. A generic C++ class is 
 
 1. In **Class View**, right-click the project to which you want to add the new class, choose **Add**, and then choose **Class**.
 
-1. In the [Add Class](../ide/add-class-dialog-box.md) dialog box, in the templates pane, select **C++ Class**. Select **Add** to display the [generic C++ class wizard](#generic-cpp-class-wizard).
+1. In the [Add Class](../ide/add-class-dialog-box.md) dialog box, in the templates pane, select **C++ Class**. Select **Add** to display the [generic C++ class wizard](#generic-c-class-wizard).
 
 1. In the wizard, provide a class name, and then define settings or accept the defaults.
 

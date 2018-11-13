@@ -442,7 +442,7 @@
         },
         {
             "source_path": "docs/ide/generic-cpp-class-wizard.md",
-            "redirect_url": "/cpp/ide/adding-a-generic-cpp-class#generic-cpp-class-wizard",
+            "redirect_url": "/cpp/ide/adding-a-generic-cpp-class#generic-c-class-wizard",
             "redirect_document_id": false
         },
         {
@@ -497,7 +497,7 @@
         },
         {
             "source_path": "docs/ide/editing-a-com-interface.md",
-            "redirect_url": "/cpp/ide/creating-a-com-interface-visual-cpp#editing-a-com-interface",
+            "redirect_url": "/cpp/ide/creating-a-com-interface-visual-cpp#edit-a-com-interface",
             "redirect_document_id": false
         },
         {
