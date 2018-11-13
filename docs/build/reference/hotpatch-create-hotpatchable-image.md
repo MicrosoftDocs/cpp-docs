@@ -1,6 +1,6 @@
 ---
 title: "/hotpatch (Create Hotpatchable Image)"
-ms.date: "11/04/2016"
+ms.date: "11/12/2018"
 f1_keywords: ["/hotpatch", "VC.Project.VCCLCompilerTool.CreateHotpatchableImage"]
 helpviewer_keywords: ["hot patching", "-hotpatch compiler option [C++]", "/hotpatch compiler option [C++]", "hotpatching"]
 ms.assetid: aad539b6-c053-4c78-8682-853d98327798
@@ -36,10 +36,6 @@ Because instructions are always two bytes or larger on the ARM architecture, and
 ### To set this compiler option programmatically
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
-
-## Guidance
-
-For more information about update management, see "Security Guidance for Update Management" at [http://www.microsoft.com/technet/security/guidance/PatchManagement.mspx](http://www.microsoft.com/technet/security/guidance/PatchManagement.mspx).
 
 ## See Also
 
