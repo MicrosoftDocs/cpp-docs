@@ -1,7 +1,7 @@
 ---
 title: "Reference-Type Function Arguments"
 ms.date: "08/27/2018"
-helpviewer_keywords: ["arguments [C++], function", "functions [C++], paramters", "function parameters [C++], reference-type", "function arguments [C++], reference-type", "passing parameters [C++], reference-type arguments"]
+helpviewer_keywords: ["arguments [C++], function", "functions [C++], parameters", "function parameters [C++], reference-type", "function arguments [C++], reference-type", "passing parameters [C++], reference-type arguments"]
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
 ---
 # Reference-Type Function Arguments
