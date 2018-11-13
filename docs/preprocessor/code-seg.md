@@ -14,7 +14,7 @@ Specifies the text segment where functions are stored in the .obj file.
 #pragma code_seg( [ [ { push | pop }, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )
 ```
 
-### Paramters
+### Parameters
 
 **push**<br/>
 (Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.
