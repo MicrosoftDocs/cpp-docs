@@ -7,7 +7,7 @@ ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
 ---
 # IRowsetNotifyImpl Class
 
-Implements and registers [IRowsetNotify](/previous-versions/windows/desktop/ms712959) on the consumer (also known as the "sink") so that it can handle notifications.
+Implements and registers [IRowsetNotify](https://docs.microsoft.com/previous-versions/windows/desktop/ms712959(v=vs.85)) on the consumer (also known as the "sink") so that it can handle notifications.
 
 ## Syntax
 
@@ -33,7 +33,7 @@ class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify
 
 See [Receiving Notifications](../../data/oledb/receiving-notifications.md) about implementing the connection point interface on the consumer.
 
-`IRowsetNotifyImpl` provides a dummy implementation for `IRowsetNotify`, with empty functions for the `IRowsetNotify` methods [OnFieldChange](/previous-versions/windows/desktop/ms715961), [OnRowChange](/previous-versions/windows/desktop/ms722694), and [OnRowsetChange](/previous-versions/windows/desktop/ms722669). If you inherit from this class when you implement an `IRowsetNotify` interface, you can implement only the methods you need. You also need to provide empty implementations for the other methods yourself.
+`IRowsetNotifyImpl` provides a dummy implementation for `IRowsetNotify`, with empty functions for the `IRowsetNotify` methods [OnFieldChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715961(v=vs.85)), [OnRowChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722694(v=vs.85)), and [OnRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722669(v=vs.85)). If you inherit from this class when you implement an `IRowsetNotify` interface, you can implement only the methods you need. You also need to provide empty implementations for the other methods yourself.
 
 ## <a name="onfieldchange"></a> IRowsetNotifyImpl::OnFieldChange
 
@@ -54,15 +54,15 @@ STDMETHOD(OnFieldChange)(
 
 #### Parameters
 
-See [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) for parameter descriptions.
+See [IRowsetNotify::OnFieldChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715961(v=vs.85)) for parameter descriptions.
 
 ### Return Value
 
-See [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) for return value descriptions.
+See [IRowsetNotify::OnFieldChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715961(v=vs.85)) for return value descriptions.
 
 ### Remarks
 
-This method wraps the [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) method. See that method's description in the OLE DB Programmer's Reference for details.
+This method wraps the [IRowsetNotify::OnFieldChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715961(v=vs.85)) method. See that method's description in the OLE DB Programmer's Reference for details.
 
 ## <a name="onrowchange"></a> IRowsetNotifyImpl::OnRowChange
 
@@ -82,15 +82,15 @@ STDMETHOD(OnRowChange)(
 
 #### Parameters
 
-See [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694) for parameter descriptions.
+See [IRowsetNotify::OnRowChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722694(v=vs.85)) for parameter descriptions.
 
 ### Return Value
 
-See [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694) for return value descriptions.
+See [IRowsetNotify::OnRowChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722694(v=vs.85)) for return value descriptions.
 
 ### Remarks
 
-This method wraps the [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694) method. See that method's description in the OLE DB Programmer's Reference for details.
+This method wraps the [IRowsetNotify::OnRowChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722694(v=vs.85)) method. See that method's description in the OLE DB Programmer's Reference for details.
 
 ## <a name="onrowsetchange"></a> IRowsetNotifyImpl::OnRowsetChange
 
@@ -108,19 +108,19 @@ STDMETHOD(OnRowsetChange)(
 
 #### Parameters
 
-See [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) for parameter descriptions.
+See [IRowsetNotify::OnRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722669(v=vs.85)) for parameter descriptions.
 
 ### Return Value
 
-See [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) for return value descriptions.
+See [IRowsetNotify::OnRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722669(v=vs.85)) for return value descriptions.
 
 ### Remarks
 
-This method wraps the [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) method. See that method's description in the OLE DB Programmer's Reference for details.
+This method wraps the [IRowsetNotify::OnRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722669(v=vs.85)) method. See that method's description in the OLE DB Programmer's Reference for details.
 
 ## See Also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[IRowsetNotify](/previous-versions/windows/desktop/ms712959)
+[IRowsetNotify](https://docs.microsoft.com/previous-versions/windows/desktop/ms712959(v=vs.85))
 [IRowsetNotifyCP Class](../../data/oledb/irowsetnotifycp-class.md)

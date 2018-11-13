@@ -60,5 +60,5 @@ For more information, see:
 ## See Also
 
 [Data Access](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784)<br/>
-[OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643)<br/>
+[OLE DB SDK Documentation](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
+[OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)<br/>

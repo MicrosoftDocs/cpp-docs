@@ -8,7 +8,7 @@ ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
 
 A basic database operation is to update, or write data to, the data store. In OLE DB, the update mechanism is simple: your consumer application sets the values of bound data members and then writes those values to the rowset; the consumer then requests that the provider update the data store.
 
-Consumers can complete the following kinds of updates on rowset data: setting column values within a row, inserting a row, and deleting a row. To complete these operations, the OLE DB Template class [CRowset](../../data/oledb/crowset-class.md) implements the [IRowsetChange](/previous-versions/windows/desktop/ms715790) interface and overrides the following interface methods:
+Consumers can complete the following kinds of updates on rowset data: setting column values within a row, inserting a row, and deleting a row. To complete these operations, the OLE DB Template class [CRowset](../../data/oledb/crowset-class.md) implements the [IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85)) interface and overrides the following interface methods:
 
 - [SetData](../../data/oledb/crowset-setdata.md) changes column values in a row of a rowset; it equates to the SQL UPDATE command.
 
@@ -197,4 +197,4 @@ Finally, one main reason to defer changes is to be able to undo them. Calling [C
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)<br/>
 [CRowset Class](../../data/oledb/crowset-class.md)<br/>
-[IRowsetChange](/previous-versions/windows/desktop/ms715790)<br/>
+[IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85))<br/>

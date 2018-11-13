@@ -22,7 +22,7 @@ Provides links to the OLE DB Provider Template classes listed by usage.
 [OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)<br/>
 Describes what OLE DB is and discusses Universal Data Access in OLE DB.
 
-[OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643)<br/>
+[OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)<br/>
 Provides links to the Windows SDK documentation on OLE DB.
 
 [OLE DB Templates Samples](../../visual-cpp-samples.md)<br/>

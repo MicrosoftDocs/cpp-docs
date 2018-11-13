@@ -39,7 +39,7 @@ A rowset class.
 |[CAccessorRowset](#caccessorrowset)|Constructor.|
 |[Close](#close)|Closes the rowset and any accessors.|
 |[FreeRecordMemory](#freerecordmemory)|Frees any columns in the current record that need to be freed.|
-|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704).|
+|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)).|
 
 ## Remarks
 
@@ -110,7 +110,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 #### Parameters
 
-See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) in the *OLE DB Programmer's Reference*.
+See [IColumnsInfo::GetColumnInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -120,7 +120,7 @@ A standard HRESULT.
 
 The user must free the returned column information and string buffer. Use the second version of this method when you use [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) and need to override the bindings.
 
-For more information, see [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) in the *OLE DB Programmer's Reference*.
+For more information, see [IColumnsInfo::GetColumnInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## See Also
 
