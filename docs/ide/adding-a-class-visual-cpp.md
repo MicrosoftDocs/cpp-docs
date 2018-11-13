@@ -26,7 +26,7 @@ To generate a new class, select a template in the middle pane, type a name for t
 > [!NOTE]
 > The template **Add ATL Support to MFC** does not create a class, but instead configures the project to use ATL. For more information, see [ATL support in an MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md).
 
-To make a C++ class that does not use MFC, ATL, or CLR, use the **C++ Class** template in the **C++** group of installed templates. For more information, see [Adding a generic C++ class](../ide/adding-a-generic-cpp-class.md).
+To make a C++ class that does not use MFC, ATL, or CLR, use the **C++ Class** template in the **C++** group of installed templates. For more information, see [Add a generic C++ class](../ide/adding-a-generic-cpp-class.md).
 
 Two kinds of form-based C++ classes are available. The first one, [CFormView class](../mfc/reference/cformview-class.md), creates an MFC class. The second one creates a CLR Windows Forms class.
 
@@ -34,7 +34,7 @@ Two kinds of form-based C++ classes are available. The first one, [CFormView cla
 
 The **Add Class** dialog box contains templates that allow you to:
 
-- Open a corresponding code wizard, if one is available. For more information, see [Adding functionality with code wizards](../ide/adding-functionality-with-code-wizards-cpp.md).
+- Open a corresponding code wizard, if one is available. For more information, see [Add functionality with code wizards](../ide/adding-functionality-with-code-wizards-cpp.md).
 
    \- or -
 
@@ -64,28 +64,28 @@ There are four categories of **Add Class** templates: .NET, ATL, MFC, and Generi
 |Template|Wizard|
 |--------------|------------|
 |Add ATL Support to MFC|Not available|
-|ATL Active Server Page Component|[ATL Active Server Page Component Wizard](../atl/reference/atl-active-server-page-component-wizard.md)|
-|ATL Control|[ATL Control Wizard](../atl/reference/atl-control-wizard.md)|
-|ATL Dialog|[ATL Dialog Wizard](../atl/reference/atl-dialog-wizard.md)|
-|ATL COM+ 1.0 Component|[ATL COM+ 1.0 Component Wizard](../atl/reference/atl-com-plus-1-0-component-wizard.md)|
-|ATL OLEDB Consumer|[ATL OLE DB Consumer Wizard](../atl/reference/atl-ole-db-consumer-wizard.md)|
-|ATL OLEDB Provider|[ATL OLE DB Provider Wizard](../atl/reference/atl-ole-db-provider-wizard.md)|
-|ATL Property Page|[ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md)|
-|ATL Simple Object|[ATL Simple Object Wizard](../atl/reference/atl-simple-object-wizard.md)|
-|WMI Event Provider|WMI Event Provider Wizard|
-|WMI Instance Provider|WMI Instance Provider Wizard|
+|ATL Active Server Page Component|[ATL active server page component wizard](../atl/reference/atl-active-server-page-component-wizard.md)|
+|ATL Control|[ATL control wizard](../atl/reference/atl-control-wizard.md)|
+|ATL Dialog|[ATL dialog wizard](../atl/reference/atl-dialog-wizard.md)|
+|ATL COM+ 1.0 Component|[ATL COM+ 1.0 component wizard](../atl/reference/atl-com-plus-1-0-component-wizard.md)|
+|ATL OLEDB Consumer|[ATL OLE DB consumer wizard](../atl/reference/atl-ole-db-consumer-wizard.md)|
+|ATL OLEDB Provider|[ATL OLE DB provider wizard](../atl/reference/atl-ole-db-provider-wizard.md)|
+|ATL Property Page|[ATL property page wizard](../atl/reference/atl-property-page-wizard.md)|
+|ATL Simple Object|[ATL simple object wizard](../atl/reference/atl-simple-object-wizard.md)|
+|WMI Event Provider|WMI event provider wizard|
+|WMI Instance Provider|WMI instance provider wizard|
 
 #### MFC
 
 |Template|Wizard|
 |--------------|------------|
-|MFC Class|[MFC Add Class Wizard](../mfc/reference/mfc-add-class-wizard.md)|
-|MFC Class From ActiveX Control|[Add Class From ActiveX Control Wizard](../ide/add-class-from-activex-control-wizard.md)|
-|MFC Class From TypeLib|[Add Class From Typelib Wizard](../mfc/reference/add-class-from-typelib-wizard.md)|
-|MFC ODBC Consumer|[MFC ODBC Consumer Wizard](../mfc/reference/mfc-odbc-consumer-wizard.md)|
+|MFC Class|[MFC add class wizard](../mfc/reference/mfc-add-class-wizard.md)|
+|MFC Class From ActiveX Control|[Add class from ActiveX control wizard](../ide/add-class-from-activex-control-wizard.md)|
+|MFC Class From TypeLib|[Add class from Typelib wizard](../mfc/reference/add-class-from-typelib-wizard.md)|
+|MFC ODBC Consumer|[MFC ODBC consumer wizard](../mfc/reference/mfc-odbc-consumer-wizard.md)|
 
 #### Generic classes
 
 |Template|Wizard|
 |--------------|------------|
-|Generic C++ Class|[Generic C++ Class Wizard](../ide/generic-cpp-class-wizard.md)|
+|Generic C++ Class|[Generic C++ class wizard](../ide/generic-cpp-class-wizard.md)|

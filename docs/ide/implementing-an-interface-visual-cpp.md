@@ -9,7 +9,7 @@ ms.assetid: 72f8731b-7e36-45db-8b10-7ef211a773cd
 
 To implement an interface, you must have created a project as an ATL COM application or as an MFC application that contains ATL support. You can use the [ATL project wizard](../atl/reference/atl-project-wizard.md) to create an ATL application, or [add an ATL object to your MFC application](../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.
 
-Once you create the project, to implement an interface, you must first add an ATL object. See [Adding objects and controls to an ATL project](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) for a list of wizards that add objects to your ATL project.
+Once you create the project, to implement an interface, you must first add an ATL object. See [Add objects and controls to an ATL project](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) for a list of wizards that add objects to your ATL project.
 
 > [!NOTE]
 > The wizard doesn't support ATL dialog boxes, XML Web services using ATL, performance objects, or performance counters.
@@ -18,7 +18,7 @@ If you [add an ATL control](../atl/reference/adding-an-atl-control.md), you can 
 
 Once you've added the object or control, you can implement other interfaces, located in any available type library, using the Implement Interface Wizard.
 
-If you're adding a new interface, you must add it manually to the project's .idl file. For more information, see [Adding a new interface in an ATL project](../atl/reference/adding-a-new-interface-in-an-atl-project.md).
+If you're adding a new interface, you must add it manually to the project's .idl file. For more information, see [Add a new interface in an ATL project](../atl/reference/adding-a-new-interface-in-an-atl-project.md).
 
 **To implement an interface:**
 

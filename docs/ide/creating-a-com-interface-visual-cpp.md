@@ -11,15 +11,15 @@ Visual C++ provides wizards and templates to create projects that use COM defini
 
 You can use these wizards to do the following three common tasks:
 
-- [Adding ATL support to your MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md)
+- [Add ATL support to your MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md)
 
   Add ATL support to an MFC application after you create an MFC project using the [MFC application wizard](../mfc/reference/mfc-application-wizard.md) and then running the **Add ATL Support to MFC** code wizard. This support applies only to simple COM objects added to an MFC executable or DLL project. These ATL objects may have more than one interface.
 
-- [Creating an MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md)
+- [Create an MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md)
 
   Open the [MFC ActiveX control wizard](../mfc/reference/mfc-activex-control-wizard.md) to create an ActiveX control with a dispinterface and an event map defined in the .idl file and the control class, respectively.
 
-- [Adding an ATL control](../atl/reference/adding-an-atl-control.md)
+- [Add an ATL control](../atl/reference/adding-an-atl-control.md)
 
   Use a combination of the [ATL project wizard](../atl/reference/atl-project-wizard.md) and the [ATL control wizard](../atl/reference/atl-control-wizard.md) to create an ATL ActiveX control.
 
@@ -37,14 +37,14 @@ Once you've an ATL project open, the [Add Class](../ide/add-class-dialog-box.md)
 Additionally, you can implement new interfaces on your COM control. Just right-click the object's control class in Class View and choose [Implement Interface](../ide/implement-interface-wizard.md).
 
 > [!NOTE]
-> Visual Studio doesn't provide a wizard to add an interface to a project. You can add an interface to an ATL project or to an [Adding ATL support to your MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md) by adding a simple object using the [ATL simple object wizard](../atl/reference/atl-simple-object-wizard.md). Alternately, open the project's .idl file and create the interface by typing:
+> Visual Studio doesn't provide a wizard to add an interface to a project. You can add an interface to an ATL project or to an [Add ATL support to your MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md) by adding a simple object using the [ATL simple object wizard](../atl/reference/atl-simple-object-wizard.md). Alternately, open the project's .idl file and create the interface by typing:
 
 ```
 interface IMyInterface {
 };
 ```
 
-For more information, see [Implementing an interface](../ide/implementing-an-interface-visual-cpp.md) and [Adding objects and controls to an ATL project](../atl/reference/adding-objects-and-controls-to-an-atl-project.md).
+For more information, see [Implement an interface](../ide/implementing-an-interface-visual-cpp.md) and [Add objects and controls to an ATL project](../atl/reference/adding-objects-and-controls-to-an-atl-project.md).
 
 Visual C++ provides several ways to view and [edit the COM interfaces](#edit-a-com-interface) defined for your projects. [Class View](/visualstudio/ide/viewing-the-structure-of-code) displays icons for any interface or dispinterface defined in an .idl file in your C++ project.
 
