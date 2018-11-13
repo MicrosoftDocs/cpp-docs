@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed by Category"
-ms.date: "08/20/2018"
+ms.date: "11/12/2018"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -39,7 +39,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Gh](gh-enable-penter-hook-function.md)|Calls hook function `_penter`.|
 |[/GH](gh-enable-pexit-hook-function.md)|Calls hook function `_pexit`.|
 |[/GL](gl-whole-program-optimization.md)|Enables whole program optimization.|
-|[/Gm](gm-enable-minimal-rebuild.md)|Enables minimal rebuild.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
 |[/GR](gr-enable-run-time-type-information.md)|Enables run-time type information (RTTI).|
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|Uses the `__fastcall` calling convention. (x86 only)|
 |[/GS](gs-buffer-security-check.md)|Checks buffer security.|
@@ -195,6 +195,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/clr:noAssembly](clr-common-language-runtime-compilation.md)|Deprecated. Use [/LN (Create MSIL Module)](ln-create-msil-module.md) instead.|
 |[/Fr](fr-fr-create-dot-sbr-file.md)|Deprecated. Creates a browse information file without local variables.|
 |[/Ge](ge-enable-stack-probes.md)|Deprecated. Activates stack probes. On by default.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
 |[/GX](gx-enable-exception-handling.md)|Deprecated. Enables synchronous exception handling. Use [/EH](eh-exception-handling-model.md) instead.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Deprecated. Enables fast checks. Use [/RTC1](rtc-run-time-error-checks.md) instead.|
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
