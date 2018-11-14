@@ -431,6 +431,86 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/add-class-dialog-box.md",
+            "redirect_url": "/cpp/ide/adding-a-class-visual-cpp#add-class-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/add-class-from-activex-control-wizard.md",
+            "redirect_url": "/cpp/ide/adding-a-class-from-an-activex-control-visual-cpp#add-class-from-activex-control-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/generic-cpp-class-wizard.md",
+            "redirect_url": "/cpp/ide/adding-a-generic-cpp-class#generic-c-class-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/add-member-function-wizard.md",
+            "redirect_url": "/cpp/ide/adding-a-member-function-visual-cpp#add-member-function-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/add-member-variable-wizard.md",
+            "redirect_url": "/cpp/ide/adding-a-member-variable-visual-cpp#add-member-variable-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/dialog-box-controls-and-variable-types.md",
+            "redirect_url": "/cpp/ide/adding-a-member-variable-visual-cpp#dialog-box-controls-and-variable-types",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/add-method-wizard.md",
+            "redirect_url": "/cpp/ide/adding-a-method-visual-cpp#add-method-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/idl-attributes-add-method-wizard.md",
+            "redirect_url": "/cpp/ide/adding-a-method-visual-cpp#idl-attributes-add-method-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/names-add-property-wizard.md",
+            "redirect_url": "/cpp/ide/adding-a-property-visual-cpp#names-add-property-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/idl-attributes-add-property-wizard.md",
+            "redirect_url": "/cpp/ide/adding-a-property-visual-cpp#idl-attributes-add-property-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/stock-properties.md",
+            "redirect_url": "/cpp/ide/adding-a-property-visual-cpp#stock-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/add-event-wizard.md",
+            "redirect_url": "/cpp/ide/adding-an-event-visual-cpp#add-event-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/event-handler-wizard.md",
+            "redirect_url": "/cpp/ide/adding-an-event-handler-visual-cpp#event-handler-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/editing-a-com-interface.md",
+            "redirect_url": "/cpp/ide/creating-a-com-interface-visual-cpp#edit-a-com-interface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/implement-connection-point-wizard.md",
+            "redirect_url": "/cpp/ide/implementing-a-connection-point-visual-cpp#implement-connection-point-wizard",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/implement-interface-wizard.md",
+            "redirect_url": "/cpp/ide/implementing-an-interface-visual-cpp#implement-interface-wizard",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/data/oledb/caccessorbase-close.md",
             "redirect_url": "/cpp/data/oledb/caccessorbase-class#close",
             "redirect_document_id": false
