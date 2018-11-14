@@ -4,7 +4,6 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["partial ordering of function templates"]
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
 ---
-
 # Partial Ordering of Function Templates (C++)
 
 Multiple function templates that match the argument list of a function call can be available. C++ defines a partial ordering of function templates to specify which function should be called. The ordering is partial because there can be some templates that are considered equally specialized.

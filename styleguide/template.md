@@ -183,7 +183,7 @@ Lists should be surrounded by blank lines.
 
 ## Horizontal rule
 
----
+___
 
 ## Tables
 
