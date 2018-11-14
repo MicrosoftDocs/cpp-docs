@@ -2002,7 +2002,7 @@ int main( )
       cout << " " << pIter -> second;
    cout << "." << endl;
 
-   // opperator[] will also insert by moving a key
+   // operator[] will also insert by moving a key
    hash_map <string, int> hm2;
    string str("a");
    hm2[move(str)] = 1;
