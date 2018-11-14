@@ -1786,7 +1786,7 @@ int main( )
         << *hms1_rIter << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a hash_multiset in a forward order
+   // through a hash_multiset in a forward order
    cout << "The hash_multiset is: ";
    for ( hms1_Iter = hms1.begin( ) ; hms1_Iter != hms1.end( );
          hms1_Iter++ )
@@ -1794,7 +1794,7 @@ int main( )
    cout << endl;
 
    // rbegin can be used to start an iteration
-   // throught a hash_multiset in a reverse order
+   // through a hash_multiset in a reverse order
    cout << "The reversed hash_multiset is: ";
    for ( hms1_rIter = hms1.rbegin( ) ; hms1_rIter != hms1.rend( );
          hms1_rIter++ )
@@ -1929,7 +1929,7 @@ int main( )
    cout << "." << endl;
 
    // rend can be used to terminate an iteration
-   // throught a hash_multiset in a reverse order
+   // through a hash_multiset in a reverse order
    cout << "The reversed hash_multiset is: ";
    for ( hms1_rIter = hms1.rbegin( ) ; hms1_rIter != hms1.rend( );
          hms1_rIter++ )

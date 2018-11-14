@@ -2002,7 +2002,7 @@ int main( )
       cout << " " << pIter -> second;
    cout << "." << endl;
 
-   // opperator[] will also insert by moving a key
+   // operator[] will also insert by moving a key
    hash_map <string, int> hm2;
    string str("a");
    hm2[move(str)] = 1;
@@ -2673,7 +2673,7 @@ int main( )
    hash_map <int, int> :: iterator pIter;
 
    // value_type can be used to pass the correct type
-   // explicitely to avoid implicit type conversion
+   // explicitly to avoid implicit type conversion
    hm1.insert ( hash_map <int, int> :: value_type ( 1, 10 ) );
 
    // Compare other ways to insert objects into a hash_map

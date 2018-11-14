@@ -1837,15 +1837,14 @@ struct A
   private:
     template <template <typename...> typename Type, typename... Args>
     static constexpr A<Args...> from_template(A<Type<Args...>>);
-
 };
 
 A<>::from_template_t<A<int>> a;
 ```
 
-In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.d
+In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.
 
-To fix the error, declare `a` before `A`.
+To fix the error, declare `from_template` before `from_template_t`.
 
 ### Modules changes
 
