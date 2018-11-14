@@ -1818,14 +1818,14 @@ int main( )
         << m1_rIter -> first << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a multimap in a forward order
+   // through a multimap in a forward order
    cout << "The multimap is: ";
    for ( m1_Iter = m1.begin( ) ; m1_Iter != m1.end( ); m1_Iter++)
       cout << m1_Iter -> first << " ";
       cout << "." << endl;
 
    // rbegin can be used to start an iteration
-   // throught a multimap in a reverse order
+   // through a multimap in a reverse order
    cout << "The reversed multimap is: ";
    for ( m1_rIter = m1.rbegin( ) ; m1_rIter != m1.rend( ); m1_rIter++)
       cout << m1_rIter -> first << " ";
@@ -1958,14 +1958,14 @@ int main( )
         << m1_rIter -> first << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a multimap in a forward order
+   // through a multimap in a forward order
    cout << "The multimap is: ";
    for ( m1_Iter = m1.begin( ) ; m1_Iter != m1.end( ); m1_Iter++)
       cout << m1_Iter -> first << " ";
       cout << "." << endl;
 
    // rbegin can be used to start an iteration
-   // throught a multimap in a reverse order
+   // through a multimap in a reverse order
    cout << "The reversed multimap is: ";
    for ( m1_rIter = m1.rbegin( ) ; m1_rIter != m1.rend( ); m1_rIter++)
       cout << m1_rIter -> first << " ";
