@@ -26,8 +26,9 @@ C++/WinRT is a new, header-only library-based C++ language projection for the Wi
 
 ## UWP Apps that Use the Windows Runtime C++ Template Library (WRL)
 
-The Windows Runtime C++ Template Library provides the low-level COM interfaces by which ISO C++ code can access the Windows Runtime in an exception-free environment. In most cases, we recommend that you use C++/WinRT or C++/CX instead of the Windows Runtime C++ Template Library for UWP app development. For information about the Windows Runtime C++ Template Library, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
+The Windows Runtime C++ Template Library provides the low-level COM interfaces by which ISO C++ code can access the Windows Runtime in an exception-free environment. In most cases, we recommend that you use C++/WinRT or C++/CX instead of the Windows Runtime C++ Template Library for UWP app development. For information about the Windows Runtime C++ Template Library, see [Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md).
 
 ## See also
 
 [Visual C++](../visual-cpp-in-visual-studio.md)<br/>
+[Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)<br/>
