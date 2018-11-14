@@ -1754,7 +1754,7 @@ int main()
     m1.insert(Int_Pair(4, 40));
 
     // Create an empty map m2 with the key comparison
-    // function of geater than, then insert 2 elements
+    // function of greater than, then insert 2 elements
     map <int, int, less<int> > m2;
     m2.insert(Int_Pair(1, 10));
     m2.insert(Int_Pair(2, 20));
