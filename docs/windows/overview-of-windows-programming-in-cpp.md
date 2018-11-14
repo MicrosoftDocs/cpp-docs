@@ -7,35 +7,21 @@ ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 
 There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library as well as third-party C++ libraries can be used in any of them. 
 
-## <a name="command_line"></a> Command line (console) applications
+## Command line (console) applications
 
 C++ console applications run from the command line in a console window and can display text output only. For more information, see [Console Applications](console-applications-in-visual-cpp.md).
  
-## <a name="BK_Native"></a> Native desktop client applications
+## Native desktop client applications
 
-The term *native desktop client applicaton* refers to a C or C++ windowed application that uses the original Windows Win32 APIs to access the operating system. Those APIs are themselves written mostly in C. When creating this kind of application, you have the choice of programming directly against a C-style message loop that processes operating system events, or using *Microsoft Foundation Classes* (MFC), a C++ library that wraps Win32 in a way that is somewhat object-oriented. Each approach is still totally supported and each has millions of lines of code running in the world today.
+The term *native desktop client applicaton* refers to a C or C++ windowed application that uses the original Windows Win32 APIs to access the operating system. Those APIs are themselves written mostly in C. When creating this kind of application, you have the choice of programming directly against a C-style message loop that processes operating system events, or using *Microsoft Foundation Classes* (MFC), a C++ library that wraps Win32 in a way that is somewhat object-oriented. Each neither approach is considered "modern" compared to the Universal Windows Platform (see below), both are still totally supported and have millions of lines of code running in the world today.
 
-If you are just learning Windows C++ programming, it is probably best to start with Win32. After you have a basic understanding of Win32, you will be better able to learn MFC.
-
-For more information, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows) and [MFC Desktop Applications](/mfc/mfc-desktop-applications). For an example of a C++ desktop application that uses sohpisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
-
-### C++ or .NET?
-
-For most desktop application scenarios, we recommend using C# and .NET. This is because .NET programming is generally less complex, less error-prone, and has a more modern object-oriented API than Win32/COM. In most cases, its performance is more than adequate. .NET features the Windows Presentation Foundation (WPF) for rich graphics, and you can consume Win32 as well as the modern Windows Runtime API (see UWP below). If your C# application needs to use a standard C++ library, you can create a .NET-callable wrapper for it by using C++/CLI.
-
-As a general rule, we recomend using C++ when you require:
-
-- precise control over memory usage
-- the utmost economy in power consumption
-- usage of the GPU for general computing
-- access to DirectX
-- heavy usage of standard C++ libraries
+To get started with traditional Windows C++ programming, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows). After you gain some understanding of Win32, it will be easier to learn about [MFC Desktop Applications](/mfc/mfc-desktop-applications). For an example of a traditional C++ desktop application that uses sophisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
 
 ## COM Components
 
 Many parts of the Windows operating system are based on the Component Object Model (COM) which defines a binary standard that enables the component to be consumed from client applications written in any computer language. In C++ you can use the Active Template Library (ATL) to simplify the work of creating your own COM components. For more information, see [Component Object Model (COM)](/windows/desktop/com/component-object-model--com--portal) and [ATL COM desktop components](../atl/atl-com-desktop-components.md).
 
-##  <a name="BK_WindowsUniversal"></a> Windows Universal Apps
+## Windows Universal Apps
 
 The Universal Windows Platform (UWP) is the modern Windows API. UWP apps run on any Windows 10 device, use XAML for the user-interface, and are fully touch-enabled. For more information about UWP, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/whats-a-uwp) and [Guide to Windows Universal Apps](/windows/uwp/get-started/universal-application-platform-guide).
 
