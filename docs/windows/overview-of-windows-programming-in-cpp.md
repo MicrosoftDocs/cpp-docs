@@ -5,17 +5,7 @@ ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 ---
 # Overview of Windows Programming in C++
 
-You can use C++ to write many kinds of Windows programs. However, for most real-world scenarios, we recommend using C# and .NET when creating new applications. This is because .NET programming is generally less complex, less error-prone, and has a more modern object-oriented API than Win32/COM. In most cases, its performance is more than adequate. .NET features the Windows Presentation Foundation (WPF) for rich graphics, and you can consume Win32 as well as the modern Windows Runtime API (see UWP below). If your C# application needs to use a standard C++ library, you can create a .NET-callable wrapper for it by using C++/CLI. 
-
-As a general rule, we recomend using C++ when you require:
-
-- precise control over memory usage
-- the utmost economy in power consumption
-- usage of the GPU for general computing
-- access to DirectX
-- heavy usage of standard C++ libraries
-
-There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library as well as third-party C++ libraries can be used in any of them.
+There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library as well as third-party C++ libraries can be used in any of them. 
 
 ## <a name="command_line"></a> Command line (console) applications
 
@@ -28,6 +18,18 @@ The term *native desktop client applicaton* refers to a C or C++ windowed applic
 If you are just learning Windows C++ programming, it is probably best to start with Win32. After you have a basic understanding of Win32, you will be better able to learn MFC.
 
 For more information, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows) and [MFC Desktop Applications](/mfc/mfc-desktop-applications). For an example of a C++ desktop application that uses sohpisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
+
+### C++ or .NET?
+
+For most desktop application scenarios, we recommend using C# and .NET. This is because .NET programming is generally less complex, less error-prone, and has a more modern object-oriented API than Win32/COM. In most cases, its performance is more than adequate. .NET features the Windows Presentation Foundation (WPF) for rich graphics, and you can consume Win32 as well as the modern Windows Runtime API (see UWP below). If your C# application needs to use a standard C++ library, you can create a .NET-callable wrapper for it by using C++/CLI.
+
+As a general rule, we recomend using C++ when you require:
+
+- precise control over memory usage
+- the utmost economy in power consumption
+- usage of the GPU for general computing
+- access to DirectX
+- heavy usage of standard C++ libraries
 
 ## COM Components
 
