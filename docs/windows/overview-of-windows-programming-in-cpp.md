@@ -17,9 +17,9 @@ The term *native desktop client applicaton* refers to a C or C++ windowed applic
 
 To get started with traditional Windows C++ programming, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows). After you gain some understanding of Win32, it will be easier to learn about [MFC Desktop Applications](/mfc/mfc-desktop-applications). For an example of a traditional C++ desktop application that uses sophisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
 
-For most desktop application scenarios (in other words, not targeting UWP), we recommend using C# and .NET. This is because .NET programming is generally less complex, less error-prone, and has a more modern object-oriented API than Win32/COM. In most cases, its performance is more than adequate. .NET features the Windows Presentation Foundation (WPF) for rich graphics, and you can consume Win32 as well as the modern Windows Runtime API (see UWP below). If your C# application needs to use a standard C++ library, you can create a .NET-callable wrapper for it by using C++/CLI.
+### C++ or .NET? 
 
-As a general rule, we recomend using C++ for desktop applications when you require:
+For most desktop application scenarios (in other words, not targeting UWP), consider using C# and .NET. This is because .NET programming is generally less complex, less error-prone, and has a more modern object-oriented API than Win32 or MFC. In most cases, its performance is more than adequate. .NET features the Windows Presentation Foundation (WPF) for rich graphics, and you can consume Win32 as well as the modern Windows Runtime API (see UWP below). As a general rule, we recommend using C++ for desktop applications when you require:
 
 - precise control over memory usage
 - the utmost economy in power consumption
@@ -35,10 +35,9 @@ Many parts of the Windows operating system are based on the Component Object Mod
 
 The Universal Windows Platform (UWP) is the modern Windows API. UWP apps run on any Windows 10 device, use XAML for the user-interface, and are fully touch-enabled. For more information about UWP, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/whats-a-uwp) and [Guide to Windows Universal Apps](/windows/uwp/get-started/universal-application-platform-guide).
 
-The original C++ support for UWP consisted of (1) C++/CX, a dialect of C++ with syntax extensions, or (2) the Windows Runtime Library (WRL) which is based on standard C++ and COM. Both C++/CX and WRL are still supported, but for new projects we recommend [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt). 
+The original C++ support for UWP consisted of (1) C++/CX, a dialect of C++ with syntax extensions, or (2) the Windows Runtime Library (WRL) which is based on standard C++ and COM. Both C++/CX and WRL are still supported. For new projects we recommend [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) which is entirely based on standard C++ and provides faster performance. 
 
-> [!TIP]
-> For Windows 10, you can package your existing C++ desktop application as-is for deployment through the Microsoft Store. For more information, see [Package desktop applications (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-root).
+For Windows 10, you can package your existing C++ desktop application as-is for deployment through the Microsoft Store. For more information, see [Package desktop applications (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-root).
 
 ## Games
 
@@ -59,7 +58,6 @@ Drivers are low-level components that make data from hardware devices accessible
 ## Windows services
 
 A Windows *service* is a program that can run in the background with little or no user interaction. In UNIX these are called *daemons*. For more information, see [Services](/windows/desktop/services/services).
-
 
 ## SDKs, libraries, and header files
 
