@@ -24,7 +24,7 @@ If you're adding a new interface, you must add it manually to the project's .idl
 
 1. In Class View, right-click the class name for your ATL object.
 
-1. Choose **Add** from the shortcut menu, and then choose **Implement Interface** to display the [implement interface wizard](../ide/implement-interface-wizard.md).
+1. Choose **Add** from the shortcut menu, and then choose **Implement Interface** to display the [implement interface wizard](#implement-interface-wizard).
 
 1. Select the interfaces to implement from the appropriate type libraries and select **Finish**.
 
@@ -32,6 +32,10 @@ If you're adding a new interface, you must add it manually to the project's .idl
 
    > [!NOTE]
    > You can also use the [object browser](/visualstudio/ide/viewing-the-structure-of-code) to examine the members of the interface.
+
+## In this section
+
+- [Implement interface wizard](#implement-interface-wizard)
 
 ## Implement interface wizard
 

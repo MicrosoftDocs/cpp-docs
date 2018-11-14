@@ -19,6 +19,10 @@ In **Class View**, you can add a member function to any class. When you do this,
 
 1. Choose the **Finish** button to generate the member function code.
 
+## In this section
+
+- [Add member function wizard](#add-member-function-wizard)
+
 ## Add member function wizard
 
 This wizard adds a member function declaration to the header file. It also adds a stub member function implementation to the implementation file for the selected class.

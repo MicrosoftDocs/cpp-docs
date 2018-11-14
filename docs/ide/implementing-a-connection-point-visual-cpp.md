@@ -23,7 +23,7 @@ A connectable object (that is, a source) can show a connection point for each of
 
 1. In Class View, right-click the class name for your ATL object.
 
-1. Choose **Add** from the shortcut menu, and then choose **Add Connection Point** to display the [implement connection point wizard](../ide/implement-connection-point-wizard.md).
+1. Choose **Add** from the shortcut menu, and then choose **Add Connection Point** to display the [implement connection point wizard](#implement-connection-point-wizard).
 
 1. Select the connection point interfaces to implement from the appropriate type libraries and select **Finish**.
 
@@ -45,6 +45,10 @@ A connectable object (that is, a source) can show a connection point for each of
    - If you implement a local interface, methods and properties appear in the class body.
 
    - If you implement a connection point for another interface, the definition includes the interface's methods, each preceded by `Fire_`.
+
+## In this section
+
+- [Implement connection point wizard](#implement-connection-point-wizard)
 
 ## Implement connection point wizard
 

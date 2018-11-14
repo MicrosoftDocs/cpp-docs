@@ -13,6 +13,11 @@ When you add a class, you must specify a name that is different from classes tha
 
 If your project naming convention requires you to use an existing name, then you can just change the case of one or more letters in the name because C++ is case-sensitive. For example, although you cannot name a class `CDocument`, you can name it `cdocument`.
 
+## In this section
+
+- [What kind of class do you want to add?](#what-kind-of-class-do-you-want-to-add)
+- [Add Class dialog box](#add-class-dialog-box)
+
 ## What kind of class do you want to add?
 
 In the **Add Class** dialog box, when you expand the **Visual C++** node in the left pane several groupings of installed templates are displayed. The groups include **CLR**, **ATL**, **MFC**, and **C++**. When you select a group, a list of the available templates in that group is displayed in the middle pane. Each template contains the files and source code that are required for a class.

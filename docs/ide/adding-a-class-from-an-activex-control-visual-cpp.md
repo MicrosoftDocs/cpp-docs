@@ -31,6 +31,10 @@ You can add classes from ActiveX controls registered in your system, or you can 
 
 The wizard creates an MFC class, derived from [CWnd](../mfc/reference/cwnd-class.md) or from [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md), for each interface you add from the selected ActiveX control.
 
+## In this section
+
+- [Add class from ActiveX control wizard](#add-class-from-activex-control-wizard)
+
 ## Add class from ActiveX control wizard
 
 Use this wizard to add an MFC class from an available ActiveX control. The wizard creates a class for each interface you add from the selected ActiveX control.

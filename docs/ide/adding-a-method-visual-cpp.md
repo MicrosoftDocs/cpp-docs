@@ -26,6 +26,11 @@ You can use the [add method wizard](#add-method-wizard) to add a method to an in
 
 1. Select **Finish** to add the method.
 
+## In this section
+
+- [Add method wizard](#add-method-wizard)
+- [IDL attributes, add method wizard](#idl-attributes-add-method-wizard)
+
 ## Add method wizard
 
 Use this wizard to add a method to an interface. Depending on the project type or interface type to which you're adding a method, the wizard displays different options.

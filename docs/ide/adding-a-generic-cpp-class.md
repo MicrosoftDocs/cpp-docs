@@ -19,6 +19,10 @@ You can add a generic C++ class by using **Class View**. A generic C++ class is 
 
 1. To close the wizard and view the new generic C++ class in the project, select **Finish**.
 
+## In this section
+
+- [Generic C++ class wizard](#generic-c-class-wizard)
+
 ## Generic C++ class wizard
 
 Adds a generic C++ class to a project. The class doesn't inherit from ATL or MFC.

@@ -56,6 +56,10 @@ In Class View and its shortcut menus, you can work with interfaces as follows:
 - Add methods, properties, and events.
 - Jump directly to an item's interface code by double-clicking the item.
 
+## In this section
+
+- [Edit a COM interface](#edit-a-com-interface)
+
 ## Edit a COM interface
 
 By using commands from the Class View shortcut menu, you can define new methods and properties for the COM interfaces in your Visual C++ projects. From the Toolbox, you can also define events for ActiveX controls.

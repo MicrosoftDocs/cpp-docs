@@ -21,6 +21,10 @@ From Class View, you can add an event using the [add event wizard](#add-event-wi
 
 1. Select **Finish** to add the event to the project.
 
+## In this section
+
+- [Add event wizard](#add-event-wizard)
+
 ## Add event wizard
 
 This wizard adds an event to an MFC ActiveX control project. You can specify your own event, customize a typical stock event, or select from a list of stock events.

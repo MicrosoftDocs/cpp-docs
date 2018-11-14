@@ -30,6 +30,12 @@ The `Get` and `Put` methods of the property are displayed as two icons in Class 
 
 - For MFC dispinterfaces, if you select **Member variable** as the implementation type, a method and a variable are added to the class that implements it. If you select **Get/Set methods** as the implementation type, two methods are added to the class that implements it.
 
+## In this section
+
+- [Names, add property wizard](#names-add-property-wizard)
+- [IDL attributes, add property wizard](#idl-attributes-add-property-wizard)
+- [Stock properties](#stock-properties)
+
 ## Names, add property wizard
 
 Use this wizard to add a property to an interface.

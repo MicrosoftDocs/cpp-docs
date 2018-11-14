@@ -20,7 +20,7 @@ You may add a member variable to a class using Class View. Member variables can 
 
 1. In the dialog box displayed in the Dialog editor, right-click the control to which you want to add the member variable.
 
-1. On the shortcut menu, choose **Add Variable** to display the [add member variable wizard](#add-member-variable-wizard).
+1. On the shortcut menu, choose **Add Variable** to display the [Add member variable wizard](#add-member-variable-wizard).
 
    > [!NOTE]
    > A default value is already provided in **Control ID**.
@@ -40,6 +40,11 @@ You may add a member variable to a class using Class View. Member variables can 
 1. Provide the information in the appropriate wizard boxes. For more information, see [Add member variable wizard](#add-member-variable-wizard).
 
 1. Select **Finish** to add the definition and implementation code to the project and close the wizard.
+
+## In this section
+
+- [Add member variable wizard](#add-member-variable-wizard)
+- [Dialog box controls and variable types](#dialog-box-controls-and-variable-types)
 
 ## Add member variable wizard
 
