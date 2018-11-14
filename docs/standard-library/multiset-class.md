@@ -1373,7 +1373,7 @@ int main( )
            << *ms1_RcIter << "." << endl;
 
    // The element at a specific location in the multiset can be
-   // found using a derefenced iterator addressing the location
+   // found using a dereferenced iterator addressing the location
    ms1_AcIter = ms1.end( );
    ms1_AcIter--;
    ms1_RcIter = ms1.lower_bound( *ms1_AcIter );

@@ -2199,7 +2199,7 @@ int main( )
            << m1_RcIter -> second << "." << endl;
 
    // The element at a specific location in the multimap can be
-   // found using a derefenced iterator addressing the location
+   // found using a dereferenced iterator addressing the location
    m1_AcIter = m1.begin( );
    m1_RcIter = m1.upper_bound( m1_AcIter -> first );
    cout << "The first element of m1 with a key greater than\n"
