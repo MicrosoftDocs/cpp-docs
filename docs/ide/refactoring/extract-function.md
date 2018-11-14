@@ -3,8 +3,8 @@ title: "Extract Function"
 ms.date: "11/16/2016"
 ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
 ---
-
 # Extract Function
+
 **What:** Lets you turn a fragment of code into its own function.
 
 **When:** You have a fragment of existing code in some function that needs to be called from another function.

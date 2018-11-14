@@ -3,7 +3,6 @@ title: "Attributes in C++"
 ms.date: "06/01/2018"
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
 ---
-
 # Attributes in C++
 
 The C++ Standard defines a set of attributes and also allows compiler vendors to define their own attributes (within a vendor-specific namespace), but compilers are required to recognize only those attributes defined in the standard.

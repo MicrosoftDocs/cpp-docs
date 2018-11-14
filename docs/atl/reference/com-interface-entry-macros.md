@@ -5,7 +5,6 @@ f1_keywords: ["atlcom/ATL::COM_INTERFACE_ENTRY", "atlcom/ATL::COM_INTERFACE_ENTR
 helpviewer_keywords: ["COM interfaces, COM interface entry macros"]
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
 ---
-
 # COM_INTERFACE_ENTRY Macros
 
 These macros enter an object's interfaces into its COM map so that they can be accessed by `QueryInterface`. The order of entries in the COM map is the order interfaces will be checked for a matching IID during `QueryInterface`.
