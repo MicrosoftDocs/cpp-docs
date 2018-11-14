@@ -13,9 +13,19 @@ C++ console applications run from the command line in a console window and can d
  
 ## Native desktop client applications
 
-The term *native desktop client applicaton* refers to a C or C++ windowed application that uses the original Windows Win32 APIs to access the operating system. Those APIs are themselves written mostly in C. When creating this kind of application, you have the choice of programming directly against a C-style message loop that processes operating system events, or using *Microsoft Foundation Classes* (MFC), a C++ library that wraps Win32 in a way that is somewhat object-oriented. Each neither approach is considered "modern" compared to the Universal Windows Platform (see below), both are still totally supported and have millions of lines of code running in the world today.
+The term *native desktop client applicaton* refers to a C or C++ windowed application that uses the original Windows Win32 APIs to access the operating system. Those APIs are themselves written mostly in C. When creating this kind of application, you have the choice of programming directly against a C-style message loop that processes operating system events, or using *Microsoft Foundation Classes* (MFC), a C++ library that wraps Win32 in a way that is somewhat object-oriented. Neither approach is considered "modern" compared to the Universal Windows Platform (see below), but both are still totally supported and have millions of lines of code running in the world today.
 
 To get started with traditional Windows C++ programming, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows). After you gain some understanding of Win32, it will be easier to learn about [MFC Desktop Applications](/mfc/mfc-desktop-applications). For an example of a traditional C++ desktop application that uses sophisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
+
+For most desktop application scenarios (in other words, not targeting UWP), we recommend using C# and .NET. This is because .NET programming is generally less complex, less error-prone, and has a more modern object-oriented API than Win32/COM. In most cases, its performance is more than adequate. .NET features the Windows Presentation Foundation (WPF) for rich graphics, and you can consume Win32 as well as the modern Windows Runtime API (see UWP below). If your C# application needs to use a standard C++ library, you can create a .NET-callable wrapper for it by using C++/CLI.
+
+As a general rule, we recomend using C++ for desktop applications when you require:
+
+- precise control over memory usage
+- the utmost economy in power consumption
+- usage of the GPU for general computing
+- access to DirectX
+- heavy usage of standard C++ libraries
 
 ## COM Components
 
