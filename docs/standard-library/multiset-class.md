@@ -1527,7 +1527,7 @@ int main()
     ms1.insert(40);
 
     // Create an empty multiset ms2 with the key comparison
-    // function of geater than, then insert 2 elements
+    // function of greater than, then insert 2 elements
     multiset <int, less<int> > ms2;
     ms2.insert(10);
     ms2.insert(20);
