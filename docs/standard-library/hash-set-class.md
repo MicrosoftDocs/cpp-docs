@@ -1787,7 +1787,7 @@ int main( )
         << *hs1_rIter << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a hash_set in a forward order
+   // through a hash_set in a forward order
    cout << "The hash_set is: ";
    for ( hs1_Iter = hs1.begin( ) ; hs1_Iter != hs1.end( );
          hs1_Iter++ )
@@ -1795,7 +1795,7 @@ int main( )
    cout << endl;
 
    // rbegin can be used to start an iteration
-   // throught a hash_set in a reverse order
+   // through a hash_set in a reverse order
    cout << "The reversed hash_set is: ";
    for ( hs1_rIter = hs1.rbegin( ) ; hs1_rIter != hs1.rend( );
          hs1_rIter++ )
@@ -1922,7 +1922,7 @@ int main( )
         << *hs1_rIter << "." << endl;
 
    // end can be used to terminate an iteration
-   // throught a hash_set in a forward order
+   // through a hash_set in a forward order
    cout << "The hash_set is: ";
    for ( hs1_Iter = hs1.begin( ) ; hs1_Iter != hs1.end( );
          hs1_Iter++ )
