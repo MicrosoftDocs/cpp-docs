@@ -7,7 +7,7 @@ ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
 
 A *desktop application* in C++ is a native application that can access the full set of Windows APIs and either runs in a window or in the system console. Desktop applications in C++ can run on Windows XP through Windows 10 (although Windows XP is no longer officially supported and there are many Windows APIs that have been introduced since then).
 
-A desktop application is distinct from a Universal Windows Platform (UWP) app, which can run on PCs running Windows 10, and also on XBox, Windows Phone, Surface Hub, and other devices. For more information about desktop vs. UWP applications, see [Choose your technology](https://msdn.microsoft.com/library/windows/desktop/dn614993).
+A desktop application is distinct from a Universal Windows Platform (UWP) app, which can run on PCs running Windows 10, and also on XBox, Windows Phone, Surface Hub, and other devices. For more information about desktop vs. UWP applications, see [Choose your technology](/windows/desktop/choose-your-technology).
 
 ### Desktop Bridge
 
@@ -17,7 +17,7 @@ In Visual Studio 2017 version 15.4 and later, you can create a Windows Applicati
 
 ### Terminology
 
-- A *Win32* application is a Windows desktop application in C++ that can make use of native [Windows C APIs and/or COM APIs](https://msdn.microsoft.com/library/windows/desktop/ff818516) CRT and Standard Library  APIs, and 3rd party libraries. A Win32 application that runs in a window requires the developer to work explicitly with Windows messages inside a Windows procedure function. Despite the name, a Win32 application can be compiled as a 32-bit (x86) or 64-bit  (x64) binary. In the Visual Studio IDE, the terms x86 and Win32 are synonymous.
+- A *Win32* application is a Windows desktop application in C++ that can make use of native [Windows C APIs and/or COM APIs](/windows/desktop/apiindex/windows-api-list) CRT and Standard Library  APIs, and 3rd party libraries. A Win32 application that runs in a window requires the developer to work explicitly with Windows messages inside a Windows procedure function. Despite the name, a Win32 application can be compiled as a 32-bit (x86) or 64-bit  (x64) binary. In the Visual Studio IDE, the terms x86 and Win32 are synonymous.
 
 - The [Component Object Model (COM)](/windows/desktop/com/the-component-object-model) is a specification that enables programs written in different languages to communicate with one another. Many Windows components are implemented as COM objects and follow standard COM rules for object creation, interface discovery and object destruction.  Using COM objects from C++ desktop applications is relatively straightforward, but writing your own COM object is more advanced. The [Active Template Library (ATL)](../atl/atl-com-desktop-components.md) provides macros and helper functions that simplify COM development.
 
@@ -25,25 +25,28 @@ In Visual Studio 2017 version 15.4 and later, you can create a Windows Applicati
 
 - A C++/CLI application or component uses extensions to C++ syntax (as allowed by the C++ Specification) to enable interaction between .NET and native C++code.  A C++/CLI application can have parts that run natively and parts that run on the .NET Framework with access to the .NET Base Class Library. C++/CLI is the preferred option when you have native C++ code that needs to work with code written in C# or Visual Basic. It is primarily intended for use in .NET DLLs rather than in user interface code. For more information, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
-Any desktop application in C++ can use C Runtime (CRT) and Standard Library classes and functions, COM objects, and the public Windows functions, which collectively are known as the Windows API. For an introduction to Windows desktop applications in C++, see [Learn to Program for Windows in C++](http://go.microsoft.com/fwlink/p/?LinkId=262281).
+Any desktop application in C++ can use C Runtime (CRT) and Standard Library classes and functions, COM objects, and the public Windows functions, which collectively are known as the Windows API. For an introduction to Windows desktop applications in C++, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows).
 
 ## In this section
 
 |Title|Description|
 |-----------|-----------------|
-|[Console Applications](../windows/console-applications-in-visual-cpp.md)|Contains information about console apps. A Win32 (or Win64) console application has no window of its own and no message loop. It runs in the console window, and input and output are handled through the command line.|
-|[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)|How to create desktop applications that run in windows as opposed to the console.|
-|[Resources for Creating a Game Using DirectX (C++)](../windows/resources-for-creating-a-game-using-directx.md)|Links to content for creating games in C++.|
-|[Walkthrough: Creating and Using a Static Library](../windows/walkthrough-creating-and-using-a-static-library-cpp.md)|How to create a .lib binary file.|
-|[How to: Use the Windows 10 SDK in a Windows Desktop Application](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Contains steps for setting up your project to build using the Windows 10 SDK.|
+|[Windows Console Applications in C++](console-applications-in-visual-cpp.md)|Contains information about console apps. A Win32 (or Win64) console application has no window of its own and no message loop. It runs in the console window, and input and output are handled through the command line.|
+|[Walkthrough: Creating Windows Desktop Applications (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Create a simple Windows desktop application.|
+|[Creating an Empty Windows Desktop Application](creating-an-empty-windows-desktop-application.md)|How to create a Windows desktop project that has no default files.|
+|[Adding Files to an Empty Win32 Applications](adding-files-to-an-empty-win32-applications.md)|How to add files to an empty project.|
+|[Working with Resource Files](working-with-resource-files.md)|How to add images, icons, string tables, and other resources to a desktop application.|
+|[Resources for Creating a Game Using DirectX (C++)](resources-for-creating-a-game-using-directx.md)|Links to content for creating games in C++.|
+|[Walkthrough: Creating and Using a Static Library](walkthrough-creating-and-using-a-static-library-cpp.md)|How to create a .lib binary file.|
+|[How to: Use the Windows 10 SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Contains steps for setting up your project to build using the Windows 10 SDK.|
 
 ## Related Articles
 
 |Title|Description|
 |-----------|-----------------|
-|[Windows Development](http://go.microsoft.com/fwlink/p/?LinkId=262282)|Contains information about the Windows API and COM. (Some Windows APIs and third-party DLLs are implemented as COM objects.)|
-|[Hilo: Developing C++ Applications for Windows 7](http://go.microsoft.com/fwlink/p/?LinkId=262284)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
-|[Visual C++](../visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|
+|[Windows Development](/windows/desktop/index)|Contains information about the Windows API and COM. (Some Windows APIs and third-party DLLs are implemented as COM objects.)|
+|[Hilo: Developing C++ Applications for Windows 7](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
+|[Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)|Describes key features of Windows desktop programming in C++.|
 
 ## See Also
 

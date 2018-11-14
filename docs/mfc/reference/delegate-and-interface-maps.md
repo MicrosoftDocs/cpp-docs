@@ -4,6 +4,9 @@ ms.date: "03/30/2017"
 helpviewer_keywords: ["delegate map macros [MFC]", "event map macros [MFC]", "interface map macros [MFC]"]
 ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
 ---
+# Delegate and interface map macros
+
+MFC supports these macros for delegate and interface maps:
 
 |||
 |-|-|

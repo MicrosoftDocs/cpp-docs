@@ -5,8 +5,8 @@ f1_keywords: ["afxwinforms/uicheckstate"]
 helpviewer_keywords: ["uicheckstate enumeration [MFC]"]
 ms.assetid: 2ac0098c-20e7-410c-9685-5ead5cb02b63
 ---
-
 # UICheckState Enumeration
+
 Describes the check state of a user interface item for the command.
 
 ### Syntax

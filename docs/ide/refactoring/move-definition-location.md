@@ -3,8 +3,8 @@ title: "Move Definition Location"
 ms.date: "11/16/2016"
 ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520
 ---
-
 # Move Definition Location
+
 **What:** Lets you immediately move a function definition to the corresponding header file.
 
 **When:** You have a function that you want to move to a header file.

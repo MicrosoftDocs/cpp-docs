@@ -6,7 +6,7 @@ ms.assetid: bfbb3851-5eed-467a-a179-4a97a9515525
 ---
 # Referencing a Property in Your Provider
 
-Find the property group and property ID for the property you want. For more information, see [OLE DB Properties](/previous-versions/windows/desktop/ms722734) in the **OLE DB Programmer's Reference**.
+Find the property group and property ID for the property you want. For more information, see [OLE DB Properties](https://docs.microsoft.com/previous-versions/windows/desktop/ms722734(v=vs.85)) in the **OLE DB Programmer's Reference**.
 
 The following example assumes that you're trying to get a property from the rowset. The code for using the session or command is similar, but uses a different interface.
 

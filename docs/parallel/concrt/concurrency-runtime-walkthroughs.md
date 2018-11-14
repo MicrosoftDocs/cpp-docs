@@ -11,7 +11,7 @@ The scenario-based topics in this section show how to use many of the features o
 ## In This Section
 
 [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
-Shows how to use the [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) and [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) interfaces together with tasks to send HTTP GET and POST requests to a web service in a Universal Windows Platform (UWP) app.
+Shows how to use the [IXMLHTTPRequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) and [IXMLHTTPRequest2Callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) interfaces together with tasks to send HTTP GET and POST requests to a web service in a Universal Windows Platform (UWP) app.
 
 [Walkthrough: Creating an Agent-Based Application](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br/>
 Describes how to create a basic agent-based application.

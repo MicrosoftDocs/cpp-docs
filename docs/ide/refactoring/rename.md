@@ -3,8 +3,8 @@ title: "Rename"
 ms.date: "11/16/2016"
 ms.assetid: 64b42a88-3bd9-4399-8b96-75bceffc353b
 ---
-
 # Rename
+
 **What:** Lets you rename identifiers for code symbols, such as fields, local variables, methods, namespaces, properties and types.
 
 **When:** You want to safely rename something without having to find all instances, and copy/paste the new name.

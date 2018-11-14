@@ -3,8 +3,8 @@ title: "Create Declaration / Definition"
 ms.date: "10/19/2018"
 ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
 ---
-
 # Create Declaration / Definition
+
 **What:** Lets you immediately generate the declaration or definition of a function.
 
 **When:** You have a function that needs a declaration, or vice-versa.

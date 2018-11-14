@@ -20,7 +20,7 @@ In addition, the [OLE DB consumer attributes](../windows/ole-db-consumer-attribu
 
 Note that the MFC library contains one class, [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), that displays database records in controls. The view is a form view directly connected to a `CRowset` object, and displays the fields of the `CRowset` object in the dialog template's controls.
 
-For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643).
+For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming).
 
 ## See Also
 

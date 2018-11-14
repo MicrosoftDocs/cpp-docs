@@ -7,7 +7,7 @@ ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
 ---
 # CComSafeArrayBound Class
 
-This class is a wrapper for a [SAFEARRAYBOUND](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) structure.
+This class is a wrapper for a [SAFEARRAYBOUND](/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) structure.
 
 ## Syntax
 

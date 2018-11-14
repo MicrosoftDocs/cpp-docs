@@ -65,4 +65,4 @@ A **_com_error** object represents an exception condition detected by the error-
 ## See also
 
 [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)<br/>
-[IErrorInfo Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo)
+[IErrorInfo Interface](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo)
