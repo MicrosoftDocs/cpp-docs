@@ -2309,7 +2309,7 @@ int main( )
    multimap <int, int> :: iterator pIter;
 
    // value_type can be used to pass the correct type
-   // explicitely to avoid implicit type conversion
+   // explicitly to avoid implicit type conversion
    m1.insert ( multimap <int, int> :: value_type ( 1, 10 ) );
 
    // Compare another way to insert objects into a hash_multimap

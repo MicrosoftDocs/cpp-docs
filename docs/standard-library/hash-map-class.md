@@ -2673,7 +2673,7 @@ int main( )
    hash_map <int, int> :: iterator pIter;
 
    // value_type can be used to pass the correct type
-   // explicitely to avoid implicit type conversion
+   // explicitly to avoid implicit type conversion
    hm1.insert ( hash_map <int, int> :: value_type ( 1, 10 ) );
 
    // Compare other ways to insert objects into a hash_map
