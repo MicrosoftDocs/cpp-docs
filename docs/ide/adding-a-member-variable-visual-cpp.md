@@ -52,7 +52,7 @@ This wizard adds a member variable declaration to the header file. Depending on 
 
 - **Access**
 
-  Sets the access to the member variable. Access modifiers are keywords that specify the access other classes have to the member variable. For more information about specifying access, see [member-access control](../cpp/member-access-control-cpp.md). The member variable access level is set to **public** by default.
+  Sets the access to the member variable. Access modifiers are keywords that specify the access other classes have to the member variable. For more information about specifying access, see [member-access control](../cpp/member-access-control-cpp.md). The member variable access level is set to `public` by default.
 
   - [public](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)
@@ -68,11 +68,11 @@ This wizard adds a member variable declaration to the header file. Depending on 
 
     |||
     |-|-|
-    |**char**|**short**|
-    |**double**|**unsigned char**|
-    |**float**|**unsigned int**|
-    |**int**|**unsigned long**|
-    |**long**||
+    |`char`|`short`|
+    |`double`|`unsigned char`|
+    |`float`|`unsigned int`|
+    |`int`|`unsigned long`|
+    |`long`||
 
   - If you're adding a member variable for a dialog box control, this box is filled with the type of object that is returned for a control or value. If you select **Control**, then **Variable type** specifies the base class of the control you select in the **Control ID** box. If the dialog box control can hold a value, and if you select **Value**, then **Variable type** specifies the appropriate type for the value that control can hold. For more information, see [dialog box controls and variable types](#dialog-box-controls-and-variable-types).
 
@@ -109,11 +109,11 @@ This wizard adds a member variable declaration to the header file. Depending on 
 
 - **Min value**
 
-  Available only when the variable type is **BOOL**, `int`, **UINT**, **long**, `DWORD`, **float**, **double**, **BYTE**, **short**, [COLECurrency](../mfc/reference/colecurrency-class.md) or [CTime](../atl-mfc-shared/reference/ctime-class.md). Indicates the lowest value acceptable for a scale or date range.
+  Available only when the variable type is `BOOL`, `int`, `UINT`, `long`, `DWORD`, `float`, `double`, `BYTE`, `short`, [COLECurrency](../mfc/reference/colecurrency-class.md) or [CTime](../atl-mfc-shared/reference/ctime-class.md). Indicates the lowest value acceptable for a scale or date range.
 
 - **Max value**
 
-  Available only when the variable type is **BOOL**, `int`, **UINT**, **long**, `DWORD`, **float**, **double**, **BYTE**, **short**, `COLECurrency`, or `CTime`. Indicates the highest value acceptable for a scale or date range.
+  Available only when the variable type is `BOOL`, `int`, `UINT`, `long`, `DWORD`, `float`, `double`, `BYTE`, `short`, `COLECurrency`, or `CTime`. Indicates the highest value acceptable for a scale or date range.
 
 - **.h file**
 
@@ -137,10 +137,10 @@ The following table describes all the dialog box control types that are supporte
 |-------------|------------------|---------------------------|-------------------------|-----------------------------------------|
 |Animation control|SysAnimate32|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|None; control only|N/A|
 |Button|BUTTON|[CButton](../mfc/reference/cbutton-class.md)|None; control only|N/A|
-|Check box|CHECK|[CButton](../mfc/reference/cbutton-class.md)|**BOOL**|Min value/Max value|
+|Check box|CHECK|[CButton](../mfc/reference/cbutton-class.md)|`BOOL`|Min value/Max value|
 |Combo box|COMBOBOX|[CComboBox](../mfc/reference/ccombobox-class.md)|[CString](../atl-mfc-shared/reference/cstringt-class.md)|Max characters|
 |Date time picker control|SysDateTimePick32|[CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)|[CTime](../atl-mfc-shared/reference/ctime-class.md)|Min value/max value|
-|Edit box|EDIT|[CEdit](../mfc/reference/cedit-class.md)|`CString`, int, UINT, long, DWORD, float, double, BYTE, short, BOOL, `COleDateTime`, or **COleCurrency**|Min value/max value; some support max characters|
+|Edit box|EDIT|[CEdit](../mfc/reference/cedit-class.md)|`CString`, int, UINT, long, DWORD, float, double, BYTE, short, BOOL, `COleDateTime`, or `COleCurrency`|Min value/max value; some support max characters|
 |Hotkey control|msctls_hotkey32|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|None; control only|N/A|
 |List box|LISTBOX|[CListBox](../mfc/reference/clistbox-class.md)|`CString`|Max characters|
 |List control|SysListView32|[CListCtrl](../mfc/reference/clistctrl-class.md)|None; control only|N/A|
