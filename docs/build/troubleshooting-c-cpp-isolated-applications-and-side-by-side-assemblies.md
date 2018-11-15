@@ -28,7 +28,7 @@ If your application is deployed on a computer that doesn't have Visual Studio, a
 
 1. If your application depends on side-by-side assemblies and a manifest is not present, you have to ensure that the linker generates a manifest for your project. Check the linker option **Generate manifest** in the **Project Properties** dialog box for the project.
 
-1. If the manifest is embedded in the binary, ensure that the ID of RT_MANIFEST is correct for this type of the binary. For more information about which resource ID to use, see [Using Side-by-Side Assemblies as a Resource (Windows)](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource). If the manifest is in a separate file, open it in an XML editor or text editor. For more information about manifests and rules for deployment, see [Manifests](https://msdn.microsoft.com/library/aa375365).
+1. If the manifest is embedded in the binary, ensure that the ID of RT_MANIFEST is correct for this type of the binary. For more information about which resource ID to use, see [Using Side-by-Side Assemblies as a Resource (Windows)](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource). If the manifest is in a separate file, open it in an XML editor or text editor. For more information about manifests and rules for deployment, see [Manifests](/windows/desktop/sbscs/manifests).
 
    > [!NOTE]
    > If both an embedded manifest and a separate manifest file are present, the operating system loader uses the embedded manifest and ignores the separate file. However, on Windows XP, the opposite is true—the separate manifest file is used and the embedded manifest is ignored.

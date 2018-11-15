@@ -179,7 +179,7 @@ A handle to a structure that contains the positions of multiple windows. .
 
 ### Remarks
 
-The hdwp structure is initialized by the [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) method.
+The hdwp structure is initialized by the [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) method.
 
 ##  <a name="delayupdateframemenu"></a>  CFrameWndEx::DelayUpdateFrameMenu
 
@@ -1017,7 +1017,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ### Parameters
 
 *lpMMI*<br/>
-[in] Pointer to a [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) structure.
+[in] Pointer to a [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) structure.
 
 ### Remarks
 

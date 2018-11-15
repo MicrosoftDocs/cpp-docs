@@ -495,7 +495,7 @@ The default implementation is to do nothing and return a dummy value ( -1 ) to i
 
 Override this function to implement the effect of an right mouse-button drag and drop. Right mouse-button drag and drop typically displays a menu of choices when the right mouse-button is released.
 
-Your override of `OnDropEx` should query for the right mouse-button. You can call [GetKeyState](https://msdn.microsoft.com/library/windows/desktop/ms646301) or store the right mouse-button state from your [OnDragEnter](#ondragenter) handler.
+Your override of `OnDropEx` should query for the right mouse-button. You can call [GetKeyState](/windows/desktop/api/winuser/nf-winuser-getkeystate) or store the right mouse-button state from your [OnDragEnter](#ondragenter) handler.
 
 - If the right mouse-button is down, your override should display a popup menu which offers the drop effects support by the drop source.
 

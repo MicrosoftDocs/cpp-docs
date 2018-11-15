@@ -202,10 +202,10 @@ Use the [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) m
 [in] Pointer to a device context.
 
 *iPartId*<br/>
-[in] The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210). If this value is 0, the text is drawn in the default font, or a font selected into the device context.
+[in] The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](/windows/desktop/controls/parts-and-states). If this value is 0, the text is drawn in the default font, or a font selected into the device context.
 
 *iStateId*<br/>
-[in] The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210).
+[in] The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](/windows/desktop/controls/parts-and-states).
 
 *strText*<br/>
 [in] The text to draw.
@@ -236,7 +236,7 @@ A theme defines the visual style of an application. A theme is not used to draw 
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COLORREF](/windows/desktop/gdi/colorref)<br/>
-[Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210)<br/>
+[Parts and States](/windows/desktop/controls/parts-and-states)<br/>
 [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)<br/>
 [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
 [Desktop Window Manager](/windows/desktop/dwm/dwm-overview)<br/>
@@ -374,7 +374,7 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ### Parameters
 
 *info*<br/>
-[in, out] A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.
+[in, out] A [NONCLIENTMETRICS](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.
 
 ### Return Value
 
@@ -382,7 +382,7 @@ TRUE if this method succeeds; otherwise, FALSE.
 
 ### See Also
 
-[NONCLIENTMETRICS Structure](https://msdn.microsoft.com/library/windows/desktop/ff729175)
+[NONCLIENTMETRICS Structure](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)
 
 ## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
 

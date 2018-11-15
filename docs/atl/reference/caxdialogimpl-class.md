@@ -158,7 +158,7 @@ INT_PTR DoModal(
 ### Parameters
 
 *hWndParent*<br/>
-[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.
+[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 function.
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.

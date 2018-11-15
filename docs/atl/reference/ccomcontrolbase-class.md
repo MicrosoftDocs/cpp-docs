@@ -1465,7 +1465,7 @@ Returns TRUE if the control successfully receives focus; otherwise, FALSE.
 
 ### Remarks
 
-For a windowed control, the Windows API function [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) is called. For a windowless control, [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) is called. Through this call, a windowless control obtains the keyboard focus and can respond to window messages.
+For a windowed control, the Windows API function [SetFocus](/windows/desktop/api/winuser/nf-winuser-setfocus) is called. For a windowless control, [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) is called. Through this call, a windowless control obtains the keyboard focus and can respond to window messages.
 
 ##  <a name="setdirty"></a>  CComControlBase::SetDirty
 

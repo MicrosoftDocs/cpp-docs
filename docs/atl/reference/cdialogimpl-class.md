@@ -74,7 +74,7 @@ where `MyDlg` is the **Short name** entered in the wizard's **Names** page.
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|
 |Using dialog boxes in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|
-|Dialog boxes|[Dialog Boxes](https://msdn.microsoft.com/library/windows/desktop/ms632588) and subsequent topics in the Windows SDK|
+|Dialog boxes|[Dialog Boxes](/windows/desktop/dlgbox/dialog-boxes) and subsequent topics in the Windows SDK|
 
 ## Requirements
 
@@ -179,7 +179,7 @@ INT_PTR DoModal(
 ### Parameters
 
 *hWndParent*<br/>
-[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.
+[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 function.
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.

@@ -123,7 +123,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    In this function, you write code to handle *messages* that the application receives from Windows when *events* occur. For example, if a user chooses an OK button in your application, Windows will send a message to you and you can write code inside your `WndProc` function that does whatever work is appropriate. It's called *handling* an event. You only handle the events that are relevant for your application.
 
-   For more information, see [Window Procedures](https://msdn.microsoft.com/library/windows/desktop/ms632593).
+   For more information, see [Window Procedures](/windows/desktop/winmsg/window-procedures).
 
 ### To add functionality to the WinMain function
 
@@ -148,7 +148,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    For information about the fields of the structure above, see [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577).
 
-1. Register the `WNDCLASSEX` with Windows so that it knows about your window and how to send messages to it. Use the [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type.
+1. Register the `WNDCLASSEX` with Windows so that it knows about your window and how to send messages to it. Use the [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -228,7 +228,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    return (int) msg.wParam;
    ```
 
-   For more information about the structures and functions in the message loop, see [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
+   For more information about the structures and functions in the message loop, see [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
 
    At this point, the `WinMain` function should resemble the following code.
 

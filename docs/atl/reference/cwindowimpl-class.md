@@ -190,7 +190,7 @@ The result of the message processing.
 
 ### Remarks
 
-By default, `DefWindowProc` calls the [CallWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
+By default, `DefWindowProc` calls the [CallWindowProc](/windows/desktop/api/winuser/nf-winuser-callwindowproca) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
 The function with no parameters automatically retrieves the needed parameters from the current message.
 
