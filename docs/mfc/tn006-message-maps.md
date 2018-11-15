@@ -216,7 +216,7 @@ For advanced usage [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_con
 > [!NOTE]
 > ClassWizard does not support creating an ON_CONTROL or ON_CONTROL_RANGE handler in the user interface. You must manually enter them with the text editor. ClassWizard will parse these entries and let you browse them just like any other message map entries.
 
-The Windows Common Controls use the more powerful [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) for complex control notifications. This version of MFC has direct support for this new message by using the ON_NOTIFY and ON_NOTIFY_RANGE macros. See the product documentation for more information about these macros.
+The Windows Common Controls use the more powerful [WM_NOTIFY](/windows/desktop/controls/wm-notify) for complex control notifications. This version of MFC has direct support for this new message by using the ON_NOTIFY and ON_NOTIFY_RANGE macros. See the product documentation for more information about these macros.
 
 ## See also
 

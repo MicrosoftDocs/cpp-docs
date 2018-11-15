@@ -61,7 +61,7 @@ Specifies the new window's [style](../../mfc/reference/styles-used-by-mfc.md).
 Points to a null-terminated string that specifies the new window's name.
 
 *lpszClass*<br/>
-Points to a null-terminated string that specifies the new window's Windows class name (a [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure; for more information, see the Windows SDK).
+Points to a null-terminated string that specifies the new window's Windows class name (a [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure; for more information, see the Windows SDK).
 
 *dwExStyle*<br/>
 Specifies the [extended style](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) for the new window.

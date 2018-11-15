@@ -182,7 +182,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 
 ### Return Value
 
-A pointer to the [IShellFolder Interface](https://msdn.microsoft.com/library/windows/desktop/bb775075) for the selected object.
+A pointer to the [IShellFolder Interface](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder) for the selected object.
 
 ### Remarks
 

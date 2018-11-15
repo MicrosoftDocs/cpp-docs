@@ -174,7 +174,7 @@ Nonzero if the character is printable, zero if it is not.
 
 ### Remarks
 
-This method fails if a call to [GetKeyboardState](https://msdn.microsoft.com/library/windows/desktop/ms646299) fails.
+This method fails if a call to [GetKeyboardState](/windows/desktop/api/winuser/nf-winuser-getkeyboardstate) fails.
 
 ##  <a name="isshowallaccelerators"></a>  CKeyboardManager::IsShowAllAccelerators
 

@@ -1398,7 +1398,7 @@ A handle to a deferred window position structure, or NULL.
 
 ### Remarks
 
-If you pass NULL as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) or by storing the return value of a previous call to this method.
+If you pass NULL as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) or by storing the return value of a previous call to this method.
 
 ##  <a name="onafterchangeparent"></a>  CBasePane::OnAfterChangeParent
 

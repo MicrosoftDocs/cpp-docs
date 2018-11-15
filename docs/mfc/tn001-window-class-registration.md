@@ -7,7 +7,7 @@ ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
 ---
 # TN001: Window Class Registration
 
-This note describes the MFC routines that register the special [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.
+This note describes the MFC routines that register the special [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.
 
 ## The Problem
 

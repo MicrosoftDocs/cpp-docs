@@ -150,7 +150,7 @@ Returns true if the method succeeds, false if it fails.
 
 ### Remarks
 
-This method calls [GetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa446647).
+This method calls [GetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-getsecuritydescriptorcontrol).
 
 ##  <a name="getdacl"></a>  CSecurityDesc::GetDacl
 
@@ -517,7 +517,7 @@ bool SetControl(
 ### Parameters
 
 *ControlBitsOfInterest*<br/>
-A SECURITY_DESCRIPTOR_CONTROL mask that indicates the control bits to set. For a list of the flags which can be set, see [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582).
+A SECURITY_DESCRIPTOR_CONTROL mask that indicates the control bits to set. For a list of the flags which can be set, see [SetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol).
 
 *ControlBitsToSet*<br/>
 A SECURITY_DESCRIPTOR_CONTROL mask that indicates the new values for the control bits specified by the *ControlBitsOfInterest* mask. This parameter can be a combination of the flags listed for the *ControlBitsOfInterest* parameter.
@@ -528,7 +528,7 @@ Returns true on success, false on failure.
 
 ### Remarks
 
-This method calls [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582).
+This method calls [SetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol).
 
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl
 

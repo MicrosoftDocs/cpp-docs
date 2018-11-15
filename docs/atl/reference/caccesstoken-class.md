@@ -200,7 +200,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreatePrimaryToken` calls [DuplicateTokenEx](https://msdn.microsoft.com/library/windows/desktop/aa446617) to create a new primary token.
+`CreatePrimaryToken` calls [DuplicateTokenEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) to create a new primary token.
 
 ##  <a name="createprocessasuser"></a>  CAccessToken::CreateProcessAsUser
 
@@ -235,7 +235,7 @@ Pointer to a [PROCESS_INFORMATION](/windows/desktop/api/processthreadsapi/ns-pro
 Pointer to a [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) structure that specifies how the main window for the new process should appear.
 
 *dwCreationFlags*<br/>
-Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) for a list of flags.
+Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) for a list of flags.
 
 *bLoadProfile*<br/>
 If TRUE, the user's profile is loaded with [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).
@@ -258,7 +258,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateProcessAsUser` uses the `CreateProcessAsUser` Win32 function to create a new process that runs in the security context of the user represented by the `CAccessToken` object. See the description of the [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) function for a full discussion of the parameters required.
+`CreateProcessAsUser` uses the `CreateProcessAsUser` Win32 function to create a new process that runs in the security context of the user represented by the `CAccessToken` object. See the description of the [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) function for a full discussion of the parameters required.
 
 For this method to succeed, the `CAccessToken` object must hold AssignPrimaryToken (unless it is a restricted token) and IncreaseQuota privileges.
 
@@ -294,7 +294,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateRestrictedToken` uses the [CreateRestrictedToken](https://msdn.microsoft.com/library/windows/desktop/aa446583) Win32 function to create a new `CAccessToken` object, with restrictions.
+`CreateRestrictedToken` uses the [CreateRestrictedToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) Win32 function to create a new `CAccessToken` object, with restrictions.
 
 > [!IMPORTANT]
 >  When using `CreateRestrictedToken`, ensure the following: the existing token is valid (and not entered by the user) and *SidsToDisable* and *PrivilegesToDelete* are both valid (and not entered by the user). If the method returns FALSE, deny functionality.

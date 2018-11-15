@@ -308,7 +308,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_GETIDEALSIZE message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_GETIDEALSIZE message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ##  <a name="getimagelist"></a>  CButton::GetImageList
 
@@ -329,7 +329,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_GETIMAGELIST message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_GETIMAGELIST message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ##  <a name="getnote"></a>  CButton::GetNote
 
@@ -541,7 +541,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_GETTEXTMARGIN message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_GETTEXTMARGIN message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ##  <a name="setbitmap"></a>  CButton::SetBitmap
 
@@ -794,7 +794,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_SETIMAGELIST message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_SETIMAGELIST message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ##  <a name="setnote"></a>  CButton::SetNote
 
@@ -1036,7 +1036,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_SETTEXTMARGIN message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_SETTEXTMARGIN message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ## See Also
 

@@ -7,7 +7,7 @@ ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
 ---
 # CAtlServiceModuleT::Run Function
 
-`Run` contains calls to `PreMessageLoop`, `RunMessageLoop`, and `PostMessageLoop`. After being called, `PreMessageLoop` first stores the service's thread ID. The service will use this ID to close itself by sending a WM_QUIT message using the Win32 API function, [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946).
+`Run` contains calls to `PreMessageLoop`, `RunMessageLoop`, and `PostMessageLoop`. After being called, `PreMessageLoop` first stores the service's thread ID. The service will use this ID to close itself by sending a WM_QUIT message using the Win32 API function, [PostThreadMessage](/windows/desktop/api/winuser/nf-winuser-postthreadmessagea).
 
 `PreMessageLoop` then calls `InitializeSecurity`. By default, `InitializeSecurity` calls [CoInitializeSecurity](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) with the security descriptor set to NULL, which means that any user has access to your object.
 
