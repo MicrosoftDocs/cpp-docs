@@ -470,7 +470,7 @@ Always returns TRUE.
 
 ### Remarks
 
-This function simply calls [UnregisterClass](https://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the Windows SDK.
+This function simply calls [UnregisterClass](/windows/desktop/api/winuser/nf-winuser-unregisterclassa) as described in the Windows SDK.
 
 Call this function to clean up after all existing host windows have been destroyed if you called [AtlAxWinInit](#atlaxwininit) and you no longer need to create host windows. If you don't call this function, the window class will be unregistered automatically when the process terminates.
 

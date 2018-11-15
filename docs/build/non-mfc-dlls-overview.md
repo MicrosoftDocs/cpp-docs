@@ -8,7 +8,7 @@ ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
 
 A non-MFC DLL is a DLL that does not use MFC internally, and the exported functions in the DLL can be called by either MFC or non-MFC executable files. Functions are usually exported from a non-MFC DLL using the standard C interface.
 
-For more information about non-MFC DLLs, see [Dynamic-Link Libraries](https://msdn.microsoft.com/library/windows/desktop/ms682589) in the Windows SDK.
+For more information about non-MFC DLLs, see [Dynamic-Link Libraries](/windows/desktop/dlls/dynamic-link-libraries) in the Windows SDK.
 
 ## What do you want to do?
 

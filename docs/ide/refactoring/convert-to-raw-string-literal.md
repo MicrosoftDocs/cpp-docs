@@ -3,8 +3,8 @@ title: "Convert to Raw String Literal"
 ms.date: "11/16/2016"
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
 ---
-
 # Convert to Raw String Literal
+
 **What:** Lets you turn any string into a C++ raw string literal.
 
 **When:** You have a string with escaped characters which shouldn't be processed as escaped characters.

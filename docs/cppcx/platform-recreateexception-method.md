@@ -6,7 +6,6 @@ f1_keywords: ["VCCORLIB/Platform::Exception"]
 helpviewer_keywords: ["Platform::Exception Class"]
 ms.assetid: fa73d1ab-86e4-4d26-a7d9-81938c1c7e77
 ---
-
 # Platform::ReCreateException Method
 
 This method is for internal use only and is not intended for user code. Use the Exception::CreateException method instead.

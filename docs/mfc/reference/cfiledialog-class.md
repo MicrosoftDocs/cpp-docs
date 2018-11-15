@@ -124,7 +124,7 @@ To use a `CFileDialog` object, first create the object by using the `CFileDialog
 After you initialize the dialog box controls, call the [CFileDialog::DoModal](#domodal) method to display the dialog box so that the user can type the path and file name. `DoModal` returns whether the user clicked the OK (IDOK) or the Cancel (IDCANCEL) button. If `DoModal` returns IDOK, you can use one of the `CFileDialog` public member functions to retrieve the information put in by the user.
 
 > [!NOTE]
-> Under Windows Vista or later, multiple calls to [IFileDialog::SetFileTypes](https://msdn.microsoft.com/library/windows/desktop/bb775980) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return E_UNEXPECTED in Windows Vista or later. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](diagnostic-services.md#assert).
+> Under Windows Vista or later, multiple calls to [IFileDialog::SetFileTypes](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return E_UNEXPECTED in Windows Vista or later. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](diagnostic-services.md#assert).
 
 `CFileDialog` includes several protected members that let you do custom handling of share violations, file name validation, and list-box change notification. These protected members are callback functions that most applications do not have to use because default handling is performed automatically. Message-map entries for these functions are not required because they are standard virtual functions.
 
@@ -717,7 +717,7 @@ The pointer to the internal COM object for the `CFileDialog`. It is your respons
 
 Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to TRUE. This function returns NULL if the `CFileDialog` is not an **Open** dialog box or if *bVistaStyle* is set to FALSE. In this final case, the function only returns NULL in release mode - in debug mode it will throw an assertion.
 
-For more information about the `IFileOpenDialog` interface, see [IFileOpenDialog](https://msdn.microsoft.com/library/windows/desktop/bb775834).
+For more information about the `IFileOpenDialog` interface, see [IFileOpenDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog).
 
 ### Example
 

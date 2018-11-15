@@ -1,7 +1,7 @@
 ---
 title: "IDE and Tools for Visual C++ Development"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
-ms.date: "09/27/2018"
+ms.date: "11/18/2018"
 helpviewer_keywords: ["Visual C++, development tools"]
 ms.assetid: 56eabafb-1956-4f0f-bec5-29b887763559
 ---
@@ -99,14 +99,24 @@ You can also deploy a native C++ desktop to another computer  For more informati
 
 For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers),
 
+## In this section
+
+|||
+|-|-|
+|[Writing and refactoring code (C++)](writing-and-refactoring-code-cpp.md)| How to use the C++ code editor to write, refactor and navigate your code.|
+|[Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|
+|[C++ Open Folder projects in Visual Studio](non-msbuild-projects.md).|Describes how to use any arbitrary C++ build system from Visual Studio.|
+|[CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).|Describes how to build CMake projects in Visual Studio.|
+|[Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ MSBuild-based projects in Visual Studio and links to other articles that explain how to create and manage them.|
+|[Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|
+|[Adding Functionality with Code Wizards (C++)](adding-functionality-with-code-wizards-cpp.md)| Add classes, files, or user interface elements to a project by using wizards to guide you.|
+|[XML Documentation (Visual C++)](xml-documentation-visual-cpp.md)| Create XML documentation for your APIs.|
+|[Building C++ Projects in Visual Studio](building-cpp-projects-in-visual-studio.md)|How to use the Visual Studio IDE to build projects.|
+
 ## Related Articles
 
 |||
 |-|-|
-|[Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|
-|[Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ MSBuild-based projects in Visual Studio and links to other articles that explain how to create and manage them.|
-|[CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).|Describes how to build CMake or other non-MSBuild projects in Visual C++.|
-|[Building C/C++ Programs](../build/building-c-cpp-programs.md)|Describes how to build C++ projects.|
-|[Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|
+|[Building C/C++ Programs](../build/building-c-cpp-programs.md)|In-depth information about building C++ projects.|
 |[Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)|Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.|
 |[Visual C++](../visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|

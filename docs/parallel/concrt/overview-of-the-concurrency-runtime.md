@@ -4,8 +4,8 @@ ms.date: "07/20/2018"
 helpviewer_keywords: ["Concurrency Runtime, requirements", "Concurrency Runtime, architecture", "Concurrency Runtime, overview", "Concurrency Runtime, lambda expressions"]
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
 ---
-
 # Overview of the Concurrency Runtime
+
 This document provides an overview of the Concurrency Runtime. It describes the benefits of the Concurrency Runtime, when to use it, and how its components interact with each other and with the operating system and applications.
 
 ##  <a name="top"></a> Sections

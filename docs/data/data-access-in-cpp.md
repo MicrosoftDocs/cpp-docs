@@ -4,7 +4,6 @@ ms.date: "03/28/2017"
 helpviewer_keywords: ["Visual C++, data access applications", "databases [C++]", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
 ---
-
 # Data Access in Visual C++
 
 Virtually all database products, SQL and NoSQL, provide an interface for native C++ applications. The industry standard interface is ODBC which is supported by all major SQL database products and many NoSQL products. For non-Microsoft products, consult the vendor for more information. Third-party libraries with various license terms are also available.
