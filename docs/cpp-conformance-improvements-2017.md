@@ -1014,7 +1014,7 @@ struct A
 };
 ```
 
-To fix the problem, arrange the intializer list to have the same order as the declarations. A similar warning is raised when one or both initializers refer to base class members.
+To fix the problem, arrange the initializer list to have the same order as the declarations. A similar warning is raised when one or both initializers refer to base class members.
 
 Note that the warning is off-by-default and only affects code compiled with **/Wall**.
 

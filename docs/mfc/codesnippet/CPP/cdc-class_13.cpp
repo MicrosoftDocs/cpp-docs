@@ -25,7 +25,7 @@ void CDCView::DoStartDoc()
       // if it fails, complain and exit gracefully
       if (dcPrinter.StartDoc(&docinfo) < 0)
       {
-        MessageBox(_T("Printer wouldn't initalize"));
+        MessageBox(_T("Printer wouldn't initialize"));
       }
       else
       {
