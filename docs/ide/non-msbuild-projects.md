@@ -7,7 +7,10 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 # Open Folder projects in Visual C++
 
 In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files.
-Powered by Open Folder, Visual C++ can now support not only loose collections of files, but also virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more.
+
+For general information about Open Folder, see [Develop code in Visual Studio without projects or solutions](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
+
+The Open Folder feature effectively decouples the code editor, debugger and analyzers from the build system and the compiler toolset. You can use the C++ code editor with its rich IntelliSense features, the code analyzers, and the Visual Studio debugger with virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. It even works with a single file or a loose collection of files with no build system.
 
 To use Open Folder, from the main menu select *File | Open | Folder* or press *Ctrl + Shift + Alt + O*.
 Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable IntelliSense, navigation, and refactoring features. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index.
