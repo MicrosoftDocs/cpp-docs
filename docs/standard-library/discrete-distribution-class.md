@@ -205,7 +205,7 @@ The default constructor constructs an object whose stored probability value has 
 
 The iterator range constructor that has parameters *firstW* and *lastW* constructs a distribution object by using weight values taken from the iterators over the interval sequence [*firstW*, *lastW*).
 
-The initializer list constructor that has a *weightlist* parameter constructs a distribution object with weights from the intializer list *weightlist*.
+The initializer list constructor that has a *weightlist* parameter constructs a distribution object with weights from the initializer list *weightlist*.
 
 The constructor that has *count*, *low*, *high*, and *weightfunc* parameters constructs a distribution object initialized based on these rules:
 
