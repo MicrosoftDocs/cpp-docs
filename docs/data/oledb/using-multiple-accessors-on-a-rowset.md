@@ -74,7 +74,7 @@ The main code is as follows. Calling `MoveNext` automatically retrieves data fro
 ```cpp
 int main(int argc, char* argv[])
 {
-    // Initalize COM
+    // Initialize COM
     ::CoInitialize(NULL);
 
     // Create instances of the data source and session

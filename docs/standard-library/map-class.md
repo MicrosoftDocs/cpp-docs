@@ -1080,7 +1080,7 @@ int main()
     cout << "After the 2nd element is deleted, the map m1 is:" << endl;
     printmap(m1);
 
-    // Fill in some data to test with, one at a time, using an intializer list
+    // Fill in some data to test with, one at a time, using an initializer list
     mymap m2
     {
         { 10, "Bob" },

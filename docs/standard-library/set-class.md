@@ -976,7 +976,7 @@ int main()
     cout << "After the 2nd element is deleted, the set s1 is:" << endl;
     printset(s1);
 
-    // Fill in some data to test with, one at a time, using an intializer list
+    // Fill in some data to test with, one at a time, using an initializer list
     myset s2{ "meow", "hiss", "purr", "growl", "yowl" };
 
     cout << "Starting data of set s2 is:" << endl;
