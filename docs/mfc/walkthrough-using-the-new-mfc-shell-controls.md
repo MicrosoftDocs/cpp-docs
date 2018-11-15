@@ -122,7 +122,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
     protected:
     virtual void OnActivateView(BOOL bActivate,
         CView* pActivateView,
-        CView* pDeactiveView);
+        CView* pDeactivateView);
     ```
 
    Next, add the definition for the method to the MFCShellControlsView.cpp source file:
@@ -130,7 +130,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
     ```cpp
     void CMFCShellControlsView::OnActivateView(BOOL bActivate,
         CView* pActivateView,
-        CView* pDeactiveView)
+        CView* pDeactivateView)
     {
         if (bActivate&& AfxGetMainWnd() != NULL)
         {
@@ -139,7 +139,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
         CView::OnActivateView(bActivate,
             pActivateView,
-            pDeactiveView);
+            pDeactivateView);
     }
     ```
 

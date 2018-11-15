@@ -217,7 +217,7 @@ Called by the framework when a view is activated or deactivated.
 virtual void OnActivateView(
     BOOL bActivate,
     CView* pActivateView,
-    CView* pDeactiveView);
+    CView* pDeactivateView);
 ```
 
 ### Parameters
@@ -228,14 +228,14 @@ Indicates whether the view is being activated or deactivated.
 *pActivateView*<br/>
 Points to the view object that is being activated.
 
-*pDeactiveView*<br/>
+*pDeactivateView*<br/>
 Points to the view object that is being deactivated.
 
 ### Remarks
 
 The default implementation of this function sets the focus to the view being activated. Override this function if you want to perform special processing when a view is activated or deactivated. For example, if you want to provide special visual cues that distinguish the active view from the inactive views, you would examine the *bActivate* parameter and update the view's appearance accordingly.
 
-The *pActivateView* and *pDeactiveView* parameters point to the same view if the application's main frame window is activated with no change in the active view — for example, if the focus is being transferred from another application to this one, rather than from one view to another within the application or when switching amongst MDI child windows. This allows a view to re-realize its palette, if needed.
+The *pActivateView* and *pDeactivateView* parameters point to the same view if the application's main frame window is activated with no change in the active view — for example, if the focus is being transferred from another application to this one, rather than from one view to another within the application or when switching amongst MDI child windows. This allows a view to re-realize its palette, if needed.
 
 These parameters differ when [CFrameWnd::SetActiveView](../../mfc/reference/cframewnd-class.md#setactiveview) is called with a view that is different from what [CFrameWnd::GetActiveView](../../mfc/reference/cframewnd-class.md#getactiveview) would return. This happens most often with splitter windows.
 
