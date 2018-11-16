@@ -13,7 +13,7 @@ For general information about Open Folder, see [Develop code in Visual Studio wi
 The Open Folder feature effectively decouples the code editor, debugger and analyzers from the build system and the compiler toolset. You can use the C++ code editor with its rich IntelliSense features, the code analyzers, and the Visual Studio debugger with virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. It even works with a single file or a loose collection of files with no build system.
 
 To use Open Folder, from the main menu select *File | Open | Folder* or press *Ctrl + Shift + Alt + O*.
-Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable IntelliSense, navigation, and refactoring features. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index.
+Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable IntelliSense, navigation, and refactoring features. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index. 
 
 ## CMake projects
 
@@ -25,7 +25,7 @@ You can use CMake Tools for Visual C++ to target Qt to build Qt projects, or you
 
 ## gyp, Cons, SCons, Buck, etc
 
-You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for IntelliSense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file.
+You can use any build system in Visual Studio and still enjoy the advantages of the C++ IDE and debugger. When you open the root folder of your project, the C++ code editor uses heuristics to index the source files for IntelliSense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure and invoke your build program by editing the launch.vs.json file.
 
 ## Configuring Open Folder projects
 
@@ -33,11 +33,11 @@ You can customize an Open Folder project through three JSON files:
 
 | | |
 |-|-|
-|CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder.|
-|launch.vs.json|Specify command line arguments. Accessed via the **Solution Explorer** context menu item **Debug and Launch Settings**.|
+|CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder. (Not used in CMake projects.)|
 |tasks.vs.json|Specify custom build commands and compiler switches. Accessed via the **Solution Explorer** context menu item **Configure Tasks**.|
+|launch.vs.json|Specify command line arguments for the debugger. Accessed via the **Solution Explorer** context menu item **Debug and Launch Settings**.|
 
-### Configure IntelliSense with CppProperties.json
+### Configure IntelliSense and browsing hints with CppProperties.json
 
 IntelliSense and browsing behavior partly depends on the active build configuration, which defines #include paths, compiler switches, and other parameters. By default, Visual Studio provides Debug and Release configurations. CMake projects use the CMakeSettings.json file and CMakeLists.txt files for this purpose. For other kinds of Open Folder projects, you may need to create a custom configuration in order for IntelliSense and browsing features to fully comprehend your code. To define a new configuration, create a file called CppProperties.json in the root folder. Here is an example:
 
@@ -58,7 +58,7 @@ IntelliSense and browsing behavior partly depends on the active build configurat
 ```
 For more information, see [CppProperties schema reference](cppproperties-schema-reference.md).
 
-### Define tasks with tasks.vs.json
+### Define build tasks with tasks.vs.json
 
 You can automate build scripts or any other external operations on the files you have in your current workspace by running them as tasks directly in the IDE. You can configure a new task by right-clicking on a file or folder and selecting **Configure Tasks**.
 

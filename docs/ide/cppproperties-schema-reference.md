@@ -1,16 +1,27 @@
 ---
 title: "CppProperties.json schema reference"
-ms.date: "11/12/2018"
+ms.date: "11/18/2018"
 helpviewer_keywords: ["CMake in Visual C++"]
 ---
 
 # CppProperties.json schema reference
 
-Open Folder projects that don't use CMake can store project configuration settings in a CppProperties.json file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) 
+Open Folder projects that don't use CMake can store project configuration settings in a CppProperties.json file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) The Visual Studio IDE uses CppProperties.json for IntelliSense and code navigation. A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. Visual Studio provides predefined configurations called Debug and Release. You can customize these in CppProperties.json, or create new configurations. Each will appear in the configuration dropdown:
 
-The Visual Studio IDE uses CppProperties.json for IntelliSense and code navigation. A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. Visual Studio provides predefined configurations called Debug and Release. You can customize these in CppProperties.json, or create new configurations. 
-
-
+```json
+{
+  "configurations": [
+    {
+      "name": "Windows",
+      ...
+    },
+    {
+      "name": "with EXTERNAL_CODECS",
+      ...
+    }
+  ]
+}
+```
 A configuration may have any of the following properties:
 
 |||
@@ -23,7 +34,7 @@ A configuration may have any of the following properties:
 |`undefines`|the list of macros to be undefined (maps to /U for MSVC)|
 |`intelliSenseMode`|the IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- msvc-x86 (default)<br/>- msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
 
-## Environment variables in CppProperties.json files
+## System environment variables 
 
 CppProperties.json supports system environment variable expansion for include paths and other property values. The syntax is `${env.FOODIR}` to expand an environment variable `%FOODIR%`. The following system-defined variables are also supported:
 
@@ -45,6 +56,8 @@ When the Linux workload is installed, the following environments are available f
 |linux_x86|Target x86 Linux remotely|
 |linux_x64|Target x64 Linux remotely|
 |linux_arm|Target ARM Linux remotely|
+
+## Custom environment variables
 
 You can define custom environment variables in CppProperties.json either globally or per-configuration. The following example shows how default and custom environment variables can be declared and used. The global **environments** property declares a variable named **INCLUDE** that can be used by any configuration:
 
@@ -88,6 +101,7 @@ You can define custom environment variables in CppProperties.json either globall
   ]
 }
 ```
+## Per-configuration environment variables
 
 You can also define an **environments** property inside a configuration, so that it applies only to that configuration, and overrides any global variables of the same name. In the following example, the x64 configuration defines a local **INCLUDE** variable that overrides the global value:
 
@@ -137,7 +151,7 @@ You can also define an **environments** property inside a configuration, so that
 
 All custom and default environment variables are also available in tasks.vs.json and launch.vs.json.
 
-#### Macros
+#### Build-in macros
 
 You have access to the following built-in macros inside CppProperties.json:
 
@@ -172,23 +186,9 @@ For example, if your project has an include folder and also includes windows.h a
 > [!Note]
 > `%WindowsSdkDir%` and `%VCToolsInstallDir%` are not set as global environment variables so make sure you start devenv.exe from a "Developer Command Prompt for VS 2017" that defines these variables.
 
+## Troubleshoot IntelliSense errors
+
 To troubleshoot IntelliSense errors caused by missing include paths, open the **Error List** and filter its output to "IntelliSense only" and error code E1696 "cannot open source file ...".
 
-You can create any number of configurations in CppProperties.json. Each will appear in the configuration dropdown:
-
-```json
-{
-  "configurations": [
-    {
-      "name": "Windows",
-      ...
-    },
-    {
-      "name": "with EXTERNAL_CODECS",
-      ...
-    }
-  ]
-}
-```
 
 
