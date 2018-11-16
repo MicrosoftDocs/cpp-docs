@@ -6,7 +6,115 @@ helpviewer_keywords: ["CMake in Visual C++"]
 
 # CppProperties.json schema reference
 
-Open Folder projects that don't use CMake can store project configuration settings in a CppProperties.json file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) The Visual Studio IDE uses CppProperties.json for IntelliSense and code navigation. A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. Visual Studio provides predefined configurations called Debug and Release. You can customize these in CppProperties.json, or create new configurations. Each will appear in the configuration dropdown:
+Open Folder projects that don't use CMake can store project configuration settings in a CppProperties.json file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) The Visual Studio IDE uses CppProperties.json for IntelliSense and code navigation. A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. 
+
+
+## Default configurations
+
+Visual Studio provides predefined configurations for x86 and x64 Debug and Release. By default, your project has an x86-Debug configuration in CppProperties.json. To add a new configuration, right click on the CppProperties.json file in **Solution Explorer** and choose **Add Configuration**:
+
+![Open Folder add configuration](media/open-folder-add-config.png "Open Folder add new configuration")
+
+The default configurations are shown here:
+
+```json
+{
+  "configurations": [
+    {
+      "inheritEnvironments": [
+        "msvc_x86"
+      ],
+      "name": "x86-Debug",
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "windows-msvc-x86"
+    },
+    {
+      "inheritEnvironments": [
+        "msvc_x86"
+      ],
+      "name": "x86-Release",
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "NDEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "windows-msvc-x86"
+    },
+    {
+      "inheritEnvironments": [
+        "msvc_x64"
+      ],
+      "name": "x64-Debug",
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "windows-msvc-x64"
+    },
+    {
+      "inheritEnvironments": [
+        "msvc_x64"
+      ],
+      "name": "x64-Release",
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "NDEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  ]
+}
+```
+For properties that have a set of allowable values, the code editor shows the available options when you start to type:
+
+![Open Folder IntelliSense](media/open-folder-intellisense-mode.png "Open Folder IntelliSense")
+
+
+
+## Configuation properties
+
+A configuration may have any of the following properties:
+
+|||
+|-|-|
+|`name`|the configuration name that appears in the C++ configuration dropdown|
+|`includePath`|the list of folders that should be specified in the include path (maps to /I for most compilers)|
+|`defines`|the list of macros that should be defined (maps to /D for most compilers)|
+|`compilerSwitches`|one or more additional switches that can influence IntelliSense behavior|
+|`forcedInclude`|header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
+|`undefines`|the list of macros to be undefined (maps to /U for MSVC)|
+|`intelliSenseMode`|the IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- msvc-x86 (default)<br/>- msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+
+## Custom configurations
+
+
+You can customize any of the default configuations in CppProperties.json, or create new configurations. Each will appear in the configuration dropdown:
 
 ```json
 {
@@ -22,17 +130,6 @@ Open Folder projects that don't use CMake can store project configuration settin
   ]
 }
 ```
-A configuration may have any of the following properties:
-
-|||
-|-|-|
-|`name`|the configuration name that appears in the C++ configuration dropdown|
-|`includePath`|the list of folders that should be specified in the include path (maps to /I for most compilers)|
-|`defines`|the list of macros that should be defined (maps to /D for most compilers)|
-|`compilerSwitches`|one or more additional switches that can influence IntelliSense behavior|
-|`forcedInclude`|header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
-|`undefines`|the list of macros to be undefined (maps to /U for MSVC)|
-|`intelliSenseMode`|the IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- msvc-x86 (default)<br/>- msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
 
 ## System environment variables 
 
