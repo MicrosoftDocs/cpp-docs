@@ -6701,6 +6701,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/porting/porting-data-applications.md",
+            "redirect_url": "/cpp/data/data-access-programming-mfc-atl",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/preprocessor/index.md",
             "redirect_url": "/cpp/preprocessor/c-cpp-preprocessor-reference",
             "redirect_document_id": false
