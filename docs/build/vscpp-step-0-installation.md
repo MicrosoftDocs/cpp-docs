@@ -39,7 +39,9 @@ In general, we highly recommend that you use Visual Studio 2017 even if you need
 
 1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you are having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
+   <figure>
    ![Run the Visual Studio 2017 installer](../build/media/vscpp-concierge-run-installer.gif)
+   <figcaption>An animation of the Visual Studio installation process.</figcaption></figure>
 
 1. The installer presents you with a list of workloads, which are groups of related options for specific development areas. Support for C++ is now part of optional workloads that aren't installed by default.
 
