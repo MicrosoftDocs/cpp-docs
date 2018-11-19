@@ -10,7 +10,7 @@ To manage the complex process of creating documents with their associated views 
 
 Some applications support multiple document types. For example, an application might support text documents and graphics documents. In such an application, when the user chooses the New command on the File menu, a dialog box shows a list of possible new document types to open. For each supported document type, the application uses a distinct document template object. The following figure illustrates the configuration of an MDI application that supports two document types and shows several open documents.
 
-![MDI application that has two document types](../mfc/media/vc387h1.gif "vc387h1")
+![MDI application that has two document types](../mfc/media/vc387h1.gif)
 An MDI Application with Two Document Types
 
 Document templates are created and maintained by the application object. One of the key tasks performed during your application's `InitInstance` function is to construct one or more document templates of the appropriate kind. This feature is described in [Document Template Creation](../mfc/document-template-creation.md). The application object stores a pointer to each document template in its template list and provides an interface for adding document templates.

@@ -140,7 +140,7 @@ B1 dtor
 
 Destructors for virtual base classes are called in the reverse order of their appearance in a directed acyclic graph (depth-first, left-to-right, postorder traversal). the following figure depicts an inheritance graph.
 
-![Inheritance graph that shows virtual base classes](../cpp/media/vc392j1.gif "vc392J1")
+![Inheritance graph that shows virtual base classes](../cpp/media/vc392j1.gif)
 
 Inheritance Graph Showing Virtual Base Classes
 

@@ -517,7 +517,7 @@ Reference-type variables can be declared without initializers only in the follow
 
 When initializing a reference-type variable, the compiler uses the decision graph shown in the following figure to select between creating a reference to an object or creating a temporary object to which the reference points.
 
-![Decision graph for initialization of ref types](../cpp/media/vc38s71.gif "vc38S71")
+![Decision graph for initialization of ref types](../cpp/media/vc38s71.gif)
 Decision Graph for Initialization of Reference Types
 
 References to **volatile** types (declared as **volatile** *typename*<strong>&</strong> *identifier*) can be initialized with **volatile** objects of the same type or with objects that have not been declared as **volatile**. They cannot, however, be initialized with **const** objects of that type. Similarly, references to **const** types (declared as **const** *typename*<strong>&</strong> *identifier*) can be initialized with **const** objects of the same type (or anything that has a conversion to that type or with objects that have not been declared as **const**). They cannot, however, be initialized with **volatile** objects of that type.

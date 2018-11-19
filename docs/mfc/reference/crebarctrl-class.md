@@ -89,7 +89,7 @@ The following illustration shows a rebar control that has three bands:
 
 - Band 2 contains a combo box and four standard buttons.
 
-     ![Example of a Rebar menu](../../mfc/reference/media/vc4scc1.gif "vc4scc1")
+     ![Example of a Rebar menu](../../mfc/reference/media/vc4scc1.gif)
 
 ## Rebar control
 

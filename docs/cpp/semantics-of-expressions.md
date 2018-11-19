@@ -33,7 +33,7 @@ int main()
 54
 ```
 
-![Evaluation order in an expression](../cpp/media/vc38zv1.gif "vc38ZV1")
+![Evaluation order in an expression](../cpp/media/vc38zv1.gif)
 Expression-Evaluation Order
 
 The order in which the expression shown in the above figure is evaluated is determined by the precedence and associativity of the operators:
@@ -46,7 +46,7 @@ The order in which the expression shown in the above figure is evaluated is dete
 
 When parentheses are used to group the subexpressions, they alter the precedence and also the order in which the expression is evaluated, as shown in the following figure.
 
-![Evaluation order of expression with parentheses](../cpp/media/vc38zv2.gif "vc38ZV2")
+![Evaluation order of expression with parentheses](../cpp/media/vc38zv2.gif)
 Expression-Evaluation Order with Parentheses
 
 Expressions such as those in the above figure are evaluated purely for their side effects — in this case, to transfer information to the standard output device.

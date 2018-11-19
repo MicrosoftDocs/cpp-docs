@@ -11,7 +11,7 @@ A rebar control acts as a container for child windows. These child windows, ofte
 
 The following illustration shows a rebar control that has two bands. One contains a gripper bar, a text label ("Address"), and a combo box child window. The other band contains a gripper bar, a text label, and a flat toolbar (implemented with a child window).
 
-![Rebar control that has two bands](../mfc/media/vc4ruz1.gif "vc4ruz1")
+![Rebar control that has two bands](../mfc/media/vc4ruz1.gif)
 
 ## What do you want to know more about
 

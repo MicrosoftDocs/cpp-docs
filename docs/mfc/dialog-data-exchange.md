@@ -12,7 +12,7 @@ The same mechanism transfers values from the controls to the member variables wh
 
 The following figure illustrates dialog data exchange.
 
-![Dialog box data exchange](../mfc/media/vc379d1.gif "vc379d1")
+![Dialog box data exchange](../mfc/media/vc379d1.gif)
 Dialog Data Exchange
 
 `UpdateData` works in both directions, as specified by the **BOOL** parameter passed to it. To carry out the exchange, `UpdateData` sets up a `CDataExchange` object and calls your dialog class's override of `CDialog`'s `DoDataExchange` member function. `DoDataExchange` takes an argument of type `CDataExchange`. The `CDataExchange` object passed to `UpdateData` represents the context of the exchange, defining such information as the direction of the exchange.

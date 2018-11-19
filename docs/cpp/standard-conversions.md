@@ -180,7 +180,7 @@ The first case is when the specified base class is accessible and the conversion
 
 Whether a base class is accessible depends on the kind of inheritance used in derivation. Consider the inheritance illustrated in the following figure.
 
-![Inheritance graph showing base&#45;class accessibility](../cpp/media/vc38xa1.gif "vc38XA1")
+![Inheritance graph showing base&#45;class accessibility](../cpp/media/vc38xa1.gif)
 Inheritance Graph for Illustration of Base-Class Accessibility
 
 The following table shows the base-class accessibility for the situation illustrated in the figure.

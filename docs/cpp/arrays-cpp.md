@@ -66,7 +66,7 @@ int i2[5][7];
 
 It specifies an array of type **int**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:
 
-![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "vc38RC1")
+![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif)
 Conceptual Layout of Multidimensional Array
 
 In declarations of multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)), the constant expression that specifies the bounds for the first dimension can be omitted. For example:

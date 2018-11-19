@@ -96,7 +96,7 @@ For a list of the CTraits classes, see [Collection Classes](../atl/collection-cl
 
 The following diagram shows the class hierarchy for the CTraits classes.
 
-![Traits hierarchy for collection classes](../atl/media/vctraitscollectionclasseshierarchy.gif "vctraitscollectionclasseshierarchy")
+![Traits hierarchy for collection classes](../atl/media/vctraitscollectionclasseshierarchy.gif)
 
 ## Collection Classes Samples
 

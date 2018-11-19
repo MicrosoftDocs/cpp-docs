@@ -183,7 +183,7 @@ In most cases the control needs to know when the characteristics of the font obj
 
 If the control uses the stock Font property, its notifications are handled by the `OnFontChanged` member function of `COleControl`. When you add custom font properties, you can have them use the same implementation. In the example in the previous section, this was accomplished by passing &*m_xFontNotification* when initializing the *m_fontHeading* member variable.
 
-![Implementing multiple font object interfaces](../mfc/media/vc373q1.gif "vc373q1")
+![Implementing multiple font object interfaces](../mfc/media/vc373q1.gif)
 Implementing Multiple Font Object Interfaces
 
 The solid lines in the figure above show that both font objects are using the same implementation of `IFontNotification`. This could cause problems if you wanted to distinguish which font changed.

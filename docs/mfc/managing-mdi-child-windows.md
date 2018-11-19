@@ -11,7 +11,7 @@ MDI main frame windows (one per application) contain a special child window call
 
 In an MDI frame window, the frame window manages the MDICLIENT window, repositioning it in conjunction with control bars. The MDICLIENT window, in turn, manages all MDI child frame windows. The following figure shows the relationship between an MDI frame window, its MDICLIENT window, and its child document frame windows.
 
-![Child windows in an MDI frame window](../mfc/media/vc37gb1.gif "vc37gb1")
+![Child windows in an MDI frame window](../mfc/media/vc37gb1.gif)
 MDI Frame Windows and Children
 
 An MDI frame window also works in conjunction with the current MDI child window, if there is one. The MDI frame window delegates command messages to the MDI child before it tries to handle them itself.

@@ -29,7 +29,7 @@ class CReBar : public CControlBar
 
 A rebar object can contain a variety of child windows, usually other controls, including edit boxes, toolbars, and list boxes. A rebar object can display its child windows over a specified bitmap. Your application can automatically resize the rebar, or the user can manually resize the rebar by clicking or dragging its gripper bar.
 
-![Example of RebarMenu](../../mfc/reference/media/vc4sc61.gif "vc4sc61")
+![Example of RebarMenu](../../mfc/reference/media/vc4sc61.gif)
 
 ## Rebar Control
 

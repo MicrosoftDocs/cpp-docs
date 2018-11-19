@@ -67,7 +67,7 @@ Dynamically binding added columns at run time requires the following steps:
 
    One approach is to build one or more dynamic lists, one for the new columns' names, another for their result values, and a third for their data types (if necessary). These lists, particularly the value list, provide the information and the necessary storage for binding. The following figure illustrates building the lists.
 
-   ![Building lists of columns to bind dynamically](../../data/odbc/media/vc37w61.gif "vc37w61")<br/>
+   ![Building lists of columns to bind dynamically](../../data/odbc/media/vc37w61.gif)<br/>
    Building Lists of Columns to Bind Dynamically
 
 1. Add an RFX function call in your main recordset's `DoFieldExchange` function for each added column. These RFX calls do the work of fetching a record, including the additional columns, and binding the columns to recordset data members or to your dynamically supplied storage for them.

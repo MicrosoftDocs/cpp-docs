@@ -13,7 +13,7 @@ In the past, the Component Object Model (COM) defined a general mechanism (`IUnk
 
 A connection has two parts: the object calling the interface, called the source, and the object implementing the interface, called the sink. A connection point is the interface exposed by the source. By exposing a connection point, a source allows sinks to establish connections to itself (the source). Through the connection point mechanism (the `IConnectionPoint` interface), a pointer to the sink interface is passed to the source object. This pointer provides the source with access to the sink's implementation of a set of member functions. For example, to fire an event implemented by the sink, the source can call the appropriate method of the sink's implementation. The following figure demonstrates the connection point just described.
 
-![Implemented connection point](../mfc/media/vc37lh1.gif "vc37lh1")
+![Implemented connection point](../mfc/media/vc37lh1.gif)
 An Implemented Connection Point
 
 MFC implements this model in the [CConnectionPoint](../mfc/reference/cconnectionpoint-class.md) and [CCmdTarget](../mfc/reference/ccmdtarget-class.md) classes. Classes derived from `CConnectionPoint` implement the `IConnectionPoint` interface, used to expose connection points to other objects. Classes derived from `CCmdTarget` implement the `IConnectionPointContainer` interface, which can enumerate all of an object's available connection points or find a specific connection point.
@@ -38,7 +38,7 @@ Finally, add a call to `EnableConnections` in the class's constructor. For examp
 
 Once this code has been inserted, your `CCmdTarget`-derived class exposes a connection point for the `ISampleSink` interface. The following figure illustrates this example.
 
-![Connection point implemented by using MFC](../mfc/media/vc37lh2.gif "vc37lh2")
+![Connection point implemented by using MFC](../mfc/media/vc37lh2.gif)
 A Connection Point Implemented with MFC
 
 Usually, connection points support "multicasting" — the ability to broadcast to multiple sinks connected to the same interface. The following example fragment demonstrates how to multicast by iterating through each sink on a connection point:

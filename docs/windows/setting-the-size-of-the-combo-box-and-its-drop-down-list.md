@@ -23,13 +23,13 @@ You can also set the vertical size of the drop-down portion of the combo box.
 
 1. Click the drop-down arrow button at the right of the combo box.
 
-   ![Arrow on a combo box in an MFC project](../mfc/media/vccomboboxarrow.gif "vcComboBoxArrow")
+   ![Arrow on a combo box in an MFC project](../mfc/media/vccomboboxarrow.gif)
 
    The outline of the control changes to show the size of the combo box with the drop-down list area extended.
 
 2. Use the lower sizing handle to change the initial size of the drop-down list area.
 
-   ![Combo&#45;box sizing in an MFC project](../mfc/media/vccomboboxsizing.gif "vcComboBoxSizing")
+   ![Combo&#45;box sizing in an MFC project](../mfc/media/vccomboboxsizing.gif)
 
 3. Click the drop-down arrow again to close the drop-down list portion of the combo box.
 

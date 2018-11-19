@@ -4868,10 +4868,10 @@ The following shows the various system icons that can be used in a message box:
 
 |||
 |-|-|
-|![Stop &#40;x&#41; icon](../../mfc/reference/media/vc364f1.gif "vc364f1")|MB_ICONHAND, MB_ICONSTOP, and MB_ICONERROR|
-|![Help &#40;&#41; icon](../../mfc/reference/media/vc364f2.gif "vc364f2")|MB_ICONQUESTION|
-|![Important &#40;&#33;&#41; icon](../../mfc/reference/media/vc364f3.gif "vc364f3")|MB_ICONEXCLAMATION and MB_ICONWARNING|
-|![Information &#40;i&#41; icon](../../mfc/reference/media/vc364f4.gif "vc364f4")|MB_ICONASTERISK and MB_ICONINFORMATION|
+|![Stop &#40;x&#41; icon](../../mfc/reference/media/vc364f1.gif)|MB_ICONHAND, MB_ICONSTOP, and MB_ICONERROR|
+|![Help &#40;&#41; icon](../../mfc/reference/media/vc364f2.gif)|MB_ICONQUESTION|
+|![Important &#40;&#33;&#41; icon](../../mfc/reference/media/vc364f3.gif)|MB_ICONEXCLAMATION and MB_ICONWARNING|
+|![Information &#40;i&#41; icon](../../mfc/reference/media/vc364f4.gif)|MB_ICONASTERISK and MB_ICONINFORMATION|
 
 ### Example
 

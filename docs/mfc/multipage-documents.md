@@ -40,7 +40,7 @@ You can do printing-related processing in other functions as well, but these fun
 
 The following figure illustrates the steps involved in the printing process and shows where each of `CView`'s printing member functions are called. The rest of this article explains most of these steps in more detail. Additional parts of the printing process are described in the article [Allocating GDI Resources](../mfc/allocating-gdi-resources.md).
 
-![Printing loop process](../mfc/media/vc37c71.gif "vc37c71")
+![Printing loop process](../mfc/media/vc37c71.gif)
 The Printing Loop
 
 ##  <a name="_core_pagination"></a> Pagination

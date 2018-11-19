@@ -14,7 +14,7 @@ One of the more powerful uses of ActiveX controls is data binding, which allows 
 
 This article covers the control side of your task. Implementing the data binding interactions with the database is the responsibility of the control container. How you manage the database interactions in your container is beyond the scope of this documentation. How you prepare the control for data binding is explained in the rest of this article.
 
-![Conceptual diagram of a data&#45;bound control](../mfc/media/vc374v1.gif "vc374v1")
+![Conceptual diagram of a data&#45;bound control](../mfc/media/vc374v1.gif)
 Conceptual Diagram of a Data-Bound Control
 
 The `COleControl` class provides two member functions that make data binding an easy process to implement. The first function, [BoundPropertyRequestEdit](../mfc/reference/colecontrol-class.md#boundpropertyrequestedit), is used to request permission to change the property value. [BoundPropertyChanged](../mfc/reference/colecontrol-class.md#boundpropertychanged), the second function, is called after the property value has been successfully changed.

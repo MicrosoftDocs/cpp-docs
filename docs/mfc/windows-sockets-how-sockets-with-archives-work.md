@@ -18,7 +18,7 @@ The `CSocketFile` object calls member functions of its `CSocket` object to send 
 
 The following figure shows the relationships among these objects on both sides of the communication.
 
-![CArchive, CSocketFile, and CSocket](../mfc/media/vc38ia1.gif "vc38ia1")
+![CArchive, CSocketFile, and CSocket](../mfc/media/vc38ia1.gif)
 CArchive, CSocketFile, and CSocket
 
 The purpose of this apparent complexity is to shield you from the necessity of managing the details of the socket yourself. You create the socket, the file, and the archive, and then begin sending or receiving data by inserting it to the archive or extracting it from the archive. [CArchive](../mfc/reference/carchive-class.md), [CSocketFile](../mfc/reference/csocketfile-class.md), and [CSocket](../mfc/reference/csocket-class.md) manage the details behind the scenes.

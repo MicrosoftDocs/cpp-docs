@@ -2838,7 +2838,7 @@ A pointer to a `CBrush` object if successful; otherwise NULL.
 
 A halftone brush shows pixels that are alternately foreground and background colors to create a dithered pattern. The following is an example of a dithered pattern created by a halftone brush.
 
-![Detail of a dithered pen stroke](../../mfc/reference/media/vc318s1.gif "vc318s1")
+![Detail of a dithered pen stroke](../../mfc/reference/media/vc318s1.gif)
 
 ##  <a name="getkerningpairs"></a>  CDC::GetKerningPairs
 

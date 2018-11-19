@@ -220,7 +220,7 @@ Friendship is not inherited, meaning that classes derived from `YourOtherClass` 
 
 The following figure shows four class declarations: `Base`, `Derived`, `aFriend`, and `anotherFriend`. Only class `aFriend` has direct access to the private members of `Base` (and to any members `Base` might have inherited).
 
-![Implications of friend relationship](../cpp/media/vc38v41.gif "vc38V41")
+![Implications of friend relationship](../cpp/media/vc38v41.gif)
 Implications of friend Relationship
 
 ## Inline friend definitions

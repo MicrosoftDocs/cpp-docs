@@ -225,7 +225,7 @@ In the preceding example, calling the virtual function `GetState` using a pointe
 
 In multiple-inheritance lattices involving virtual base classes, a given name can be reached through more than one path. Because different access control can be applied along these different paths, the compiler chooses the path that gives the most access. See the following figure.
 
-![Access along paths of an inheritance graph](../cpp/media/vc38v91.gif "vc38V91")
+![Access along paths of an inheritance graph](../cpp/media/vc38v91.gif)
 Access Along Paths of an Inheritance Graph
 
 In the figure, a name declared in class `VBase` is always reached through class `RightPath`. The right path is more accessible because `RightPath` declares `VBase` as a public base class, whereas `LeftPath` declares `VBase` as private.

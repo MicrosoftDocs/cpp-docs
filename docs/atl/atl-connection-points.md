@@ -8,7 +8,7 @@ ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
 
 A connectable object is one that supports outgoing interfaces. An outgoing interface allows the object to communicate with a client. For each outgoing interface, the connectable object exposes a connection point. Each outgoing interface is implemented by a client on an object called a sink.
 
-![Connection points](../atl/media/vc2zw31.gif "vc2zw31")
+![Connection points](../atl/media/vc2zw31.gif)
 
 Each connection point supports the [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) interface. The connectable object exposes its connection points to the client through the [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer) interface.
 

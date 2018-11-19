@@ -113,7 +113,7 @@ int main() {
 }
 ```
 
-![Class hierarchy that shows multiple inheritance](../cpp/media/vc39011.gif "vc39011")
+![Class hierarchy that shows multiple inheritance](../cpp/media/vc39011.gif)
 Class Hierarchy Showing Multiple Inheritance
 
 A pointer to an object of type `D` can be safely cast to `B` or `C`. However, if `D` is cast to point to an `A` object, which instance of `A` would result? This would result in an ambiguous casting error. To get around this problem, you can perform two unambiguous casts. For example:
@@ -134,14 +134,14 @@ void f() {
 
 Further ambiguities can be introduced when you use virtual base classes. Consider the class hierarchy shown in the following figure.
 
-![Class hierarchy that shows virtual base classes](../cpp/media/vc39012.gif "vc39012")
+![Class hierarchy that shows virtual base classes](../cpp/media/vc39012.gif)
 Class Hierarchy Showing Virtual Base Classes
 
 In this hierarchy, `A` is a virtual base class. Given an instance of class `E` and a pointer to the `A` subobject, a **dynamic_cast** to a pointer to `B` will fail due to ambiguity. You must first cast back to the complete `E` object, then work your way back up the hierarchy, in an unambiguous manner, to reach the correct `B` object.
 
 Consider the class hierarchy shown in the following figure.
 
-![Class hierarchy that shows duplicate base classes](../cpp/media/vc39013.gif "vc39013")
+![Class hierarchy that shows duplicate base classes](../cpp/media/vc39013.gif)
 Class Hierarchy Showing Duplicate Base Classes
 
 Given an object of type `E` and a pointer to the `D` subobject, to navigate from the `D` subobject to the left-most `A` subobject, three conversions can be made. You can perform a **dynamic_cast** conversion from the `D` pointer to an `E` pointer, then a conversion (either **dynamic_cast** or an implicit conversion) from `E` to `B`, and finally an implicit conversion from `B` to `A`. For example:
