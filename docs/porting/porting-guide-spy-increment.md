@@ -19,7 +19,7 @@ The project file, two old .dsw files from Visual C++ 6.0, converted easily with 
 
 After upgrading the two projects, our solution looked like this:
 
-![The Spy&#43;&#43; Solution](../porting/media/spyxxsolution.PNG "SpyxxSolution")
+![The Spy&#43;&#43; Solution](../porting/media/spyxxsolution.PNG)
 
 We have two projects, one with a large number of C++ files, and another a DLL that's written in C.
 

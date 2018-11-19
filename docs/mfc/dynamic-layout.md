@@ -11,11 +11,11 @@ With MFC in Visual Studio 2015, you can create dialogs that the user can resize,
 
 When the user resizes a dialog, the controls in the dialog can resize or move in the X and Y directions. The change in size or position of a control when the user resizes a dialog is called dynamic layout. For example, the following is a dialog before being resized:
 
-![Dialog before being resized.](../mfc/media/mfcdynamiclayout4.png "mfcdynamiclayout4")
+![Dialog before being resized.](../mfc/media/mfcdynamiclayout4.png)
 
 After being resized, the listbox area is increased to show more items, and the buttons are moved along with the bottom right corner:
 
-![Dialog after being resized.](../mfc/media/mfcdynamiclayout5.png "mfcdynamiclayout5")
+![Dialog after being resized.](../mfc/media/mfcdynamiclayout5.png)
 
 You can control dynamic layout by specifying the details for each control in the Resource Editor in the IDE, or you can do so programmatically by accessing the `CMFCDynamicLayout` object for a particular control and setting the properties.
 
@@ -27,17 +27,17 @@ You can set the dynamic layout behavior for a dialog box without having to write
 
 1. With an MFC project open, open the dialog you want to work with in the dialog editor.
 
-     ![Open the dialog in the resource editor.](../mfc/media/mfcdynamiclayout3.png "mfcdynamiclayout3")
+     ![Open the dialog in the resource editor.](../mfc/media/mfcdynamiclayout3.png)
 
 2. Select a control and in the properties window, set its dynamic layout properties. The **Dynamic Layout** section in the properties window contains the properties **Moving Type**, **Sizing Type**, and, depending on the values selected for those properties, specific properties that define how much controls move or change size. **Moving Type** determines how a control is moved as the size of the dialog is changed; **Sizing Type** determines how a control is resized as the size of the dialog is changed. **Moving Type** and **Sizing Type** may be **Horizontal**, **Vertical**, **Both**, or **None** depending on the dimensions that you want to change dynamically. Horizontal is the X dimension; Vertical is the Y direction.
 
 3. If you want a control such as a button to be at a fixed size and stay in place at the bottom right, as is common for the **OK** or **Cancel** buttons, set the **Sizing Type** to **None**, and set the **Moving Type** to **Both**. For the **Moving X** and **Moving Y** values under **Moving Type**, set 100% to cause the control to stay a fixed distance from the bottom right corner.
 
-     ![Dynamic Layout](../mfc/media/mfcdynamiclayout1.png "mfcdynamiclayout1")
+     ![Dynamic Layout](../mfc/media/mfcdynamiclayout1.png)
 
 4. Suppose you also have a control that you want to expand as the dialog expands. Typically, a user might expand a dialog in order to expand a multiline editbox to increase the size of the text area, or they might expand a list control to see more data. For this case, set the **Sizing Type** to Both, and set the **Moving Type** to none. Then, set the **Sizing X** and **Sizing Y** values to 100.
 
-     ![Dynamic Layout Settings](../mfc/media/mfcdynamiclayout2.png "mfcdynamiclayout2")
+     ![Dynamic Layout Settings](../mfc/media/mfcdynamiclayout2.png)
 
 5. Experiment with other values that might make sense for your controls. A dialog with a one-line textbox might have the **Sizing Type** set to **Horizontal** only, for example.
 

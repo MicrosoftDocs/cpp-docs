@@ -18,7 +18,7 @@ The Agents Library is composed of three components: *asynchronous agents*, *asyn
 
 The following illustration shows how two agents use message blocks and message-passing functions to communicate. In this illustration, `agent1` sends a message to `agent2` by using the [concurrency::send](reference/concurrency-namespace-functions.md#send) function and a [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object. `agent2` uses the [concurrency::receive](reference/concurrency-namespace-functions.md#receive) function to read the message. `agent2` uses the same method to send a message to `agent1`. Dashed arrows represent the flow of data between agents. Solid arrows connect the agents to the message blocks that they write to or read from.
 
-![The components of the Agents Library](../../parallel/concrt/media/agent_librarycomp.png "agent_librarycomp")
+![The components of the Agents Library](../../parallel/concrt/media/agent_librarycomp.png)
 
 A code example that implements this illustration is shown later in this topic.
 

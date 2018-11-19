@@ -100,7 +100,7 @@ This section describes how to draw the Mandelbrot fractal. This version draws th
 
 The following illustration shows the results of the Mandelbrot application.
 
-![The Mandelbrot Application](../../parallel/concrt/media/mandelbrot.png "mandelbrot")
+![The Mandelbrot Application](../../parallel/concrt/media/mandelbrot.png)
 
 Because the computation for each pixel is computationally expensive, the UI thread cannot process additional messages until the overall computation finishes. This could decrease responsiveness in the application. However, you can relieve this problem by removing work from the UI thread.
 

@@ -66,7 +66,7 @@ class CMFCStatusBar : public CPane
 
 The following diagram shows a figure of the status bar from [Status Bar Demo sample](../../visual-cpp-samples.md) application.
 
-![Example of CMFCStatusBar](../../mfc/reference/media/cmfcstatusbar.png "cmfcstatusbar")
+![Example of CMFCStatusBar](../../mfc/reference/media/cmfcstatusbar.png)
 
 ## Example
 

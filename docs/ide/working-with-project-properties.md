@@ -51,7 +51,7 @@ As stated earlier, the Visual C++ project system is based on [MSBuild](/visualst
 
 The following illustration shows the property pages for a Visual C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are unfortunately called *macros*. These are *not* C/C++ macros but simply compile-time constants. Macros are discussed in the [Property page macros](#bkmkPropertiesVersusMacros) section later in this article.)
 
-![Project property pages](../ide/media/project_property_pages_vc.png "Project_Property_Pages_VC")
+![Project property pages](../ide/media/project_property_pages_vc.png)
 
 > [!WARNING]
 > The **Common Properties** configurations in earlier versions of Visual Studio have been removed. To add a reference to a project, you now use the **Add Reference** dialog in the same way as for managed languages. See [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
@@ -131,11 +131,11 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 You can use the Property Editor to modify certain string properties and select macros as values. To access the Property Editor, select a property on a property page and then choose the down arrow button on the right. If the drop-down list contains **\<Edit>**, then you can choose it to display the Property Editor for that property.
 
-![Property&#95;Editor&#95;Dropdown](../ide/media/property_editor_dropdown.png "Property_Editor_Dropdown")
+![Property&#95;Editor&#95;Dropdown](../ide/media/property_editor_dropdown.png)
 
 In the Property Editor, you can choose the **Macros** button to view the available macros and their current values. The following illustration shows the Property Editor for the **Additional Include Directories** property after the **Macros** button was chosen. When the **Inherit from parent or project defaults** check box is selected and you add a new value, it is appended to any values that are currently being inherited. If you clear the check box, your new value replaces the inherited values. In most cases, leave the check box selected.
 
-![Property editor, Visual C&#43;&#43;](../ide/media/propertyeditorvc.png "PropertyEditorVC")
+![Property editor, Visual C&#43;&#43;](../ide/media/propertyeditorvc.png)
 
 ##  <a name="bkmkPropertySheets"></a> Creating reusable property configurations
 
@@ -152,7 +152,7 @@ To display **Property Manager**, on the menu bar, choose **View**, **Other Windo
 
 If you have a common, frequently used set of properties that you want to apply to multiple projects, you can use **Property Manager** to capture them in a reusable *property sheet* file, which by convention has a .props file name extension. You can apply the sheet (or sheets) to new projects so that you don't have to set its properties from scratch. To access **Property Manager**, on the menu bar, choose **View**, **Property Manager**.
 
-![Property Manager shortcut menu](../ide/media/sharingnew.png "SharingNew")
+![Property Manager shortcut menu](../ide/media/sharingnew.png)
 
 Under each configuration node, you see nodes for each property sheet that applies to that configuration. The system adds property sheets that set values based on options you choose in the app wizard when you create the project. Right-click any node and choose Properties to see the properties that apply to that node. All the property sheets are imported automatically into the project's "master" property sheet (ms.cpp.props) and are evaluated in the order they appear in Property Manager. You can move them to change the evaluation order. Property sheets that are evaluated later will override the values in previously-evaluated sheets.
 

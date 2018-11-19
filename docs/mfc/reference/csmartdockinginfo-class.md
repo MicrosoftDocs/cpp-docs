@@ -47,7 +47,7 @@ class CSmartDockingInfo : public CObject
 
 The framework handles smart docking markers internally. The following illustration shows the standard smart docking markers:
 
-![Standard markers for smart docking](../../mfc/reference/media/nextsdmarkers.png "nextsdmarkers")
+![Standard markers for smart docking](../../mfc/reference/media/nextsdmarkers.png)
 
 In this figure, the image on the left shows a central group smart docking marker that does not have docking to a tab enabled. The image in the middle shows a right edge smart docking marker. The image on the right shows a central group smart docking marker that does have docking to a tab enabled. The central group smart docking marker has a main bitmap and five smart docking marker bitmaps.
 
@@ -65,7 +65,7 @@ You can customize the following parameters of smart docking markers:
 
 The following illustration shows an example of smart docking markers that have been customized:
 
-![Custom markers for smart docking](../../mfc/reference/media/nextsdmarkerscustom.png "nextsdmarkerscustom")
+![Custom markers for smart docking](../../mfc/reference/media/nextsdmarkerscustom.png)
 
 ## Inheritance Hierarchy
 

@@ -37,7 +37,7 @@ The `CMFCImageEditorDialog` class provides a dialog box that includes:
 
 The following illustration shows an image editor dialog box.
 
-![CMFCImageEditorDialog dialog box](../../mfc/reference/media/imageedit.png "imageedit")
+![CMFCImageEditorDialog dialog box](../../mfc/reference/media/imageedit.png)
 
 One way to use a `CMFCImageEditorDialog` object is to pass it a `CBitmap` image to be edited. Do not create a large image because the image editing area has a limited size and the logical pixel size is adjusted to fit the area. Call the `DoModal` method to start a modal dialog box.
 

@@ -12,13 +12,13 @@ When you open the **Dialog** editor in a C++ project, the **Dialog Editor** tool
 
 |Icon|Meaning|Icon|Meaning|
 |----------|-------------|----------|-------------|
-|![Test Dialog button](../mfc/media/vcdialogeditortestdialog.png "vcDialogEditorTestDialog")|Test Dialog|![Space Across button](../mfc/media/vcdialogeditoracross.png "vcDialogEditorAcross")|Across|
-|![Align Lefts button](../mfc/media/vcdialogeditoralignlefts.png "vcDialogEditorAlignLefts")|Align Lefts|![Space Down button](../mfc/media/vcdialogeditordown.png "vcDialogEditorDown")|Down|
-|![Align Rights button](../mfc/media/vcdialogeditoralignrights.png "vcDialogEditorAlignRights")|Align Rights|![Make Same Width button](../mfc/media/vcdialogeditorsamewidth.png "vcDialogEditorSameWidth")|Make Same Width|
-|![Align Tops button](../mfc/media/vcdialogeditoraligntops.png "vcDialogEditorAlignTops")|Align Tops|![Make Same Height button](../mfc/media/vcdialogeditormakesameheight.png "vcDialogEditorMakeSameHeight")|Make Same Height|
-|![Align Bottoms button](../mfc/media/vcdialogeditoralignbottoms.png "vcDialogEditorAlignBottoms")|Align Bottoms|![Make Same Size button](../mfc/media/vcdialogeditorsamesize.png "vcDialogEditorSameSize")|Make Same Size|
-|![Center Vertical button](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|Vertical|![Toggle Grid button](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|Toggle Grid|
-|![Center Horizontal button](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|Horizontal|![Toggle Guides button](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|Toggle Guides|
+|![Test Dialog button](../mfc/media/vcdialogeditortestdialog.png)|Test Dialog|![Space Across button](../mfc/media/vcdialogeditoracross.png)|Across|
+|![Align Lefts button](../mfc/media/vcdialogeditoralignlefts.png)|Align Lefts|![Space Down button](../mfc/media/vcdialogeditordown.png)|Down|
+|![Align Rights button](../mfc/media/vcdialogeditoralignrights.png)|Align Rights|![Make Same Width button](../mfc/media/vcdialogeditorsamewidth.png)|Make Same Width|
+|![Align Tops button](../mfc/media/vcdialogeditoraligntops.png)|Align Tops|![Make Same Height button](../mfc/media/vcdialogeditormakesameheight.png)|Make Same Height|
+|![Align Bottoms button](../mfc/media/vcdialogeditoralignbottoms.png)|Align Bottoms|![Make Same Size button](../mfc/media/vcdialogeditorsamesize.png)|Make Same Size|
+|![Center Vertical button](../mfc/media/vcdialogeditorvertical.png)|Vertical|![Toggle Grid button](../mfc/media/vcdialogeditortogglegrid.png)|Toggle Grid|
+|![Center Horizontal button](../mfc/media/vcdialogeditorhorizontal.png)|Horizontal|![Toggle Guides button](../mfc/media/vcdialogeditortoggleguides.png)|Toggle Guides|
 
 The **Dialog Editor** toolbar contains buttons for arranging the layout of controls on the dialog box, for example size and alignment. **Dialog Editor** toolbar buttons correspond to commands on the **Format** menu. For details, see [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md).
 

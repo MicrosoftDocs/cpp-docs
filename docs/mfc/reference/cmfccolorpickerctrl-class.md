@@ -55,7 +55,7 @@ Standard colors are selected from a hexagonal color palette, and custom colors a
 
 The following illustration depicts several `CMFCColorPickerCtrl` objects.
 
-![CMFCColorPickerCtrl dialog box](../../mfc/reference/media/colorpicker.png "colorpicker")
+![CMFCColorPickerCtrl dialog box](../../mfc/reference/media/colorpicker.png)
 
 The `CMFCColorPickerCtrl` supports two pairs of styles. The HEX and HEX_GREYSCALE styles are appropriate for standard color selection. The PICKER and LUMINANCE styles are appropriate for custom color selection.
 

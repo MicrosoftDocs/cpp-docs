@@ -107,7 +107,7 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 The following illustration shows the `MediaCapture app`.
 
-![MediaCapture app capturing a photo](../windows/media/wrl_media_capture.png "WRL_Media_Capture")
+![MediaCapture app capturing a photo](../windows/media/wrl_media_capture.png)
 
 ## Next Steps
 

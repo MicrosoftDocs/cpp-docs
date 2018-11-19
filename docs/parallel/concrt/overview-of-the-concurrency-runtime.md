@@ -50,7 +50,7 @@ The Concurrency Runtime is divided into four components: the Parallel Patterns L
 
 **Concurrency Runtime Architecture**
 
-![The Concurrency Runtime Architecture](../../parallel/concrt/media/concurrencyrun.png "concurrencyrun")
+![The Concurrency Runtime Architecture](../../parallel/concrt/media/concurrencyrun.png)
 
 > [!IMPORTANT]
 >  The Task Scheduler and Resource Manager components are not available from a Universal Windows Platform (UWP) app or when you use the task class or other types in ppltasks.h.

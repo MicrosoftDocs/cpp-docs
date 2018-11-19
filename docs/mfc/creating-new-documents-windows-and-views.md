@@ -13,7 +13,7 @@ Upon completion of this process, the cooperating objects exist and store pointer
 ![Sequence for creating a document](../mfc/media/vc387l1.gif "vc387l1")
 Sequence in Creating a Document
 
-![Frame Window Creation Sequence](../mfc/media/vc387l2.png "vc387l2")
+![Frame Window Creation Sequence](../mfc/media/vc387l2.png)
 Sequence in Creating a Frame Window
 
 ![Sequence for creating a view](../mfc/media/vc387l3.gif "vc387l3")

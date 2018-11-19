@@ -622,7 +622,7 @@ int main()
 
 The `NumericType` union is arranged in memory (conceptually) as shown in the following figure.
 
-![Storage of data in a numeric type union](../cpp/media/vc38ul1.png "vc38UL1")
+![Storage of data in a numeric type union](../cpp/media/vc38ul1.png)
 Storage of Data in NumericType Union
 
 ## <a name="anonymous_unions"></a> Anonymous unions

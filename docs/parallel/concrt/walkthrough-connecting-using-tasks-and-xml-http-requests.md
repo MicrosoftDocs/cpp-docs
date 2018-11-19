@@ -91,7 +91,7 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
 Here is the running app:
 
-![The running Windows Runtime app](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")
+![The running Windows Runtime app](../../parallel/concrt/media/concrt_usingixhr2.png)
 
 ## Next Steps
 

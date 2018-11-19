@@ -28,7 +28,7 @@ There are six kinds of scope:
 
 You can hide a name by declaring it in an enclosed block. In the following figure, `i` is redeclared within the inner block, thereby hiding the variable associated with `i` in the outer block scope.
 
-![Block&#45;scope name hiding](../cpp/media/vc38sf1.png "vc38SF1")
+![Block&#45;scope name hiding](../cpp/media/vc38sf1.png)
 Block Scope and Name Hiding
 
 The output from the program shown in the figure is:

@@ -154,11 +154,11 @@ To use the `CMFCTasksPane` control in your application, follow these steps:
 
 The following illustration shows a typical task pane control. The first group is a *special* group and its caption is a darker color. The third group is collapsed. The last group is aligned to the bottom of the task pane and has no caption, and the last task in the group is a simple label:
 
-![Example of Task Pane](../../mfc/reference/media/nexttaskpane.png "nexttaskpane")
+![Example of Task Pane](../../mfc/reference/media/nexttaskpane.png)
 
 You can customize the appearance of the task pane by adjusting various margins and offsets. The following illustration clarifies the meaning of these variables:
 
-![Custom task group](../../mfc/reference/media/nexttaskgrpcustom.png "nexttaskgrpcustom")
+![Custom task group](../../mfc/reference/media/nexttaskgrpcustom.png)
 
 ## Example
 

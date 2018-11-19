@@ -9,15 +9,15 @@ ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
 
 The following illustration represents the MFC classes derived from `CObject`:
 
-![Classes Derived From CObject](../mfc/media/mfc_heirarchy_chart1of3.png "mfc_heirarchy_chart1of3")
+![Classes Derived From CObject](../mfc/media/mfc_heirarchy_chart1of3.png)
 
 The following illustration represents the MFC classes derived from `CWnd` and `CCmdTarget`:
 
-![Classes Derived From CCmdTarget or CWnd](../mfc/media/mfc_heirarchy_chart2of3.png "mfc_heirarchy_chart2of3")
+![Classes Derived From CCmdTarget or CWnd](../mfc/media/mfc_heirarchy_chart2of3.png)
 
 The following illustration represents the MFC classes not derived from `CObject`:
 
-![Classes Not Derived From CObject](../mfc/media/mfc_heirarchy_chart3of3.png "mfc_heirarchy_chart3of3")
+![Classes Not Derived From CObject](../mfc/media/mfc_heirarchy_chart3of3.png)
 
 You can download the complete chart from the following location: [MFC Hierarchy Charts Download](https://aka.ms/hxgg8e).
 

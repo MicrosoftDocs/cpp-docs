@@ -38,7 +38,7 @@ This walkthrough contains the following sections:
 
 The dining philosophers problem illustrates how deadlock occurs in an application. In this problem, five philosophers sit at a round table. Every philosopher alternates between thinking and eating. Every philosopher must share a chopstick with the neighbor to the left and another chopstick with the neighbor to the right. The following illustration shows this layout.
 
-![The Dining Philosophers Problem](../../parallel/concrt/media/dining_philosophersproblem.png "dining_philosophersproblem")
+![The Dining Philosophers Problem](../../parallel/concrt/media/dining_philosophersproblem.png)
 
 To eat, a philosopher must hold two chopsticks. If every philosopher holds just one chopstick and is waiting for another one, then no philosopher can eat and all starve.
 

@@ -112,7 +112,7 @@ CMFCRibbonPanel* pPanel = pCategory->AddPanel (
 
 The following diagram shows a figure of the Home category from the RibbonApp sample application.
 
-![CMFCRibbonCategory image](../../mfc/reference/media/cmfcribboncategory.png "cmfcribboncategory")
+![CMFCRibbonCategory image](../../mfc/reference/media/cmfcribboncategory.png)
 
 ## Inheritance Hierarchy
 

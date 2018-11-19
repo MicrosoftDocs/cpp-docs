@@ -18,7 +18,7 @@ _declspec(align(2)) struct {
 }
 ```
 
-![AMD conversion example](../build/media/vcamd_conv_ex_1_block.png "vcAmd_conv_ex_1")
+![AMD conversion example](../build/media/vcamd_conv_ex_1_block.png)
 
 ## Example 2
 
@@ -32,7 +32,7 @@ _declspec(align(8)) struct {
 }
 ```
 
-![AMD conversion example](../build/media/vcamd_conv_ex_2_block.png "vcAmd_conv_ex_2")
+![AMD conversion example](../build/media/vcamd_conv_ex_2_block.png)
 
 ## Example 3
 
@@ -47,7 +47,7 @@ _declspec(align(4)) struct {
 }
 ```
 
-![AMD conversion example](../build/media/vcamd_conv_ex_3_block.png "vcAmd_conv_ex_3")
+![AMD conversion example](../build/media/vcamd_conv_ex_3_block.png)
 
 ## Example 4
 
@@ -61,7 +61,7 @@ _declspec(align(8)) union {
 }
 ```
 
-![AMD conversion example](../build/media/vcamd_conv_ex_4_block.png "vcAmd_conv_ex_4")
+![AMD conversion example](../build/media/vcamd_conv_ex_4_block.png)
 
 ## See also
 

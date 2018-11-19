@@ -11,7 +11,7 @@ A [unique_ptr](../standard-library/unique-ptr-class.md) does not share its point
 
 The following diagram illustrates the transfer of ownership between two `unique_ptr` instances.
 
-![Moving the ownership of a unique&#95;ptr](../cpp/media/unique_ptr.png "unique_ptr")
+![Moving the ownership of a unique&#95;ptr](../cpp/media/unique_ptr.png)
 
 `unique_ptr` is defined in the `<memory>` header in the C++ Standard Library. It is exactly as efficient as a raw pointer and can be used in C++ Standard Library containers. The addition of `unique_ptr` instances to C++ Standard Library containers is efficient because the move constructor of the `unique_ptr` eliminates the need for a copy operation.
 

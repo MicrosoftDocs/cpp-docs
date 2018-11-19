@@ -24,7 +24,7 @@ The second option is to not embed a UAC fragment into the manifest by specifying
 
 The following flowchart describes how your application will run depending on whether UAC is enabled and whether the application has a UAC manifest:
 
-![Windows Vista Loader behavior](media/uacflowchart.png "UACflowchart")
+![Windows Vista Loader behavior](media/uacflowchart.png)
 
 ## See Also
 

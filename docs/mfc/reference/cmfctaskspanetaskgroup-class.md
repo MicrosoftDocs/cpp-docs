@@ -46,19 +46,19 @@ class CMFCTasksPaneTaskGroup : public CObject
 
 The following illustration shows an expanded task group:
 
-![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")
+![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png)
 
 The following illustration shows a collapsed task group:
 
-![Collapsed task group](../../mfc/reference/media/nexttaskgrpcollapse.png "nexttaskgrpcollapse")
+![Collapsed task group](../../mfc/reference/media/nexttaskgrpcollapse.png)
 
 The following illustration shows a task group without a caption:
 
-![Task group without a caption](../../mfc/reference/media/nexttaskgrpnocapt.png "nexttaskgrpnocapt")
+![Task group without a caption](../../mfc/reference/media/nexttaskgrpnocapt.png)
 
 The following illustration shows two task groups. The first task group is marked as special by setting the `m_bIsSpecial` flag to TRUE, while the second task group is not special. Note how the caption for the first task group is darker than the second task group:
 
-![Special task group](../../mfc/reference/media/nexttaskgrpspecial.png "nexttaskgrpspecial")
+![Special task group](../../mfc/reference/media/nexttaskgrpspecial.png)
 
 ## Inheritance Hierarchy
 

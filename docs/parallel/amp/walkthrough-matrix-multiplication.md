@@ -35,9 +35,9 @@ Before you start:
 
 In this section, consider the multiplication of two matrices, A and B, which are defined as follows:
 
-![3&#45;by&#45;2 matrix](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")
+![3&#45;by&#45;2 matrix](../../parallel/amp/media/campmatrixanontiled.png)
 
-![2&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")
+![2&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixbnontiled.png)
 
 A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B is the following 3-by-3 matrix. The product is calculated by multiplying the rows of A by the columns of B element by element.
 

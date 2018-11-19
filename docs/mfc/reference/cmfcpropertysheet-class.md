@@ -70,15 +70,15 @@ Perform the following steps to use the `CMFCPropertySheet` class in your applica
 
 The following illustration depicts a property sheet that is in the style of an embedded Microsoft Outlook toolbar. The Outlook toolbar appears on the left side of the property sheet.
 
-![CMFCPropertySheet color controls](../../mfc/reference/media/cmfcpropertysheet_color.png "cmfcpropertysheet_color")
+![CMFCPropertySheet color controls](../../mfc/reference/media/cmfcpropertysheet_color.png)
 
 The following illustration depicts a property sheet that contains a [CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md) object. That object is a property sheet in the style of a standard common controls property sheet.
 
-![CMFCPropertySheet list and property controls](../../mfc/reference/media/cmfcpropertysheet_list.png "cmfcpropertysheet_list")
+![CMFCPropertySheet list and property controls](../../mfc/reference/media/cmfcpropertysheet_list.png)
 
 The following illustration depicts a property sheet that is in the style of a tree control.
 
-![Peroperty Tree](../../mfc/reference/media/proptree.png "proptree")
+![Peroperty Tree](../../mfc/reference/media/proptree.png)
 
 ## Inheritance Hierarchy
 

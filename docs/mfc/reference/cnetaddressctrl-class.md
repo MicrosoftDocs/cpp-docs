@@ -42,7 +42,7 @@ The `CNetAddressCtrl` class is derived from the [CEdit](../../mfc/reference/cedi
 
 The following figure depicts a dialog that contains a network address control. The text box (1) for the network address control contains an invalid network address. The infotip message (2) is displayed if the network address is invalid.
 
-![Dialog with a network address control and infotip.](../../mfc/reference/media/cnetaddctrl.png "cnetaddctrl")
+![Dialog with a network address control and infotip.](../../mfc/reference/media/cnetaddctrl.png)
 
 ## Example
 

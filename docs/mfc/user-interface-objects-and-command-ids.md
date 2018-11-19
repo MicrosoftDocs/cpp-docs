@@ -13,7 +13,7 @@ Commands in the Framework
 
 The figure "Command Updating in the Framework" below shows how MFC updates user-interface objects such as menu items and toolbar buttons. Before a menu drops down, or during the idle loop in the case of toolbar buttons, MFC routes an update command. In the figure below, the document object calls its update command handler, `OnUpdateEditClearAll`, to enable or disable the user-interface object.
 
-![Command updating in the Framework](../mfc/media/vc385p2.png "vc385p2")
+![Command updating in the Framework](../mfc/media/vc385p2.png)
 Command Updating in the Framework
 
 ## See Also

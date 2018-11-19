@@ -18,11 +18,11 @@ Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was sep
 
 2. Open the shortcut menu for the project node, and choose **Retarget SDK Version**.
 
-   ![Retarget SDK Version](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
+   ![Retarget SDK Version](../windows/media/retargetingwindowssdk1.PNG)
 
    The **Review Solution Actions** dialog appears.
 
-   ![Review Solution Actions](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")
+   ![Review Solution Actions](../windows/media/retargetingwindowssdk2.PNG)
 
 3. In the **Target Platform Version** dropdown list, choose the version of the Windows 10 SDK you want to target. Choose the OK button to apply the change.
 
@@ -34,15 +34,15 @@ Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was sep
 
 4. Open the project properties, and in the **Configuration Properties, General** section, notice the values of **Windows Target Platform Version**. Changing the value here has the same effect as following this procedure. See [General Property Page (Project)](../ide/general-property-page-project.md).
 
-   ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
+   ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG)
 
    This action changes the values of project macros that include paths to header files and library files. To see what changed, in the **Visual C++ Directories** section of the **Project Properties** dialog, choose one of the properties such as the **Include Directories**, choose to open the dropdown list, and choose \<Edit>. The **Include Directories** dialog appears.
 
-   ![Include Directories dialog box](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")
+   ![Include Directories dialog box](../windows/media/retargetingwindowssdk4.PNG)
 
    Choose the **Macros >>** button, and scroll down the list of macros to the Windows SDK macros to see all the new values.
 
-   ![Windows SDK Macros](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
+   ![Windows SDK Macros](../windows/media/retargetingwindowssdk5.PNG)
 
 5. Repeat for other projects, as needed, and rebuild the solution.
 

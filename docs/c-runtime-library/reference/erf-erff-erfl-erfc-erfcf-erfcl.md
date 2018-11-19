@@ -60,7 +60,7 @@ The **erf** functions return the Gauss error function of *x*. The **erfc** funct
 
 The **erf** functions calculate the Gauss error function of *x*, which is defined as:
 
-![The error function of x](media/crt_erf_formula.PNG "CRT_erf_formula")
+![The error function of x](media/crt_erf_formula.PNG)
 
 The complementary Gauss error function is defined as 1 - erf(x). The **erf** functions return a value in the range -1.0 to 1.0. There is no error return. The **erfc** functions return a value in the range 0 to 2. If *x* is too large for **erfc**, the **errno** variable is set to **ERANGE**.
 

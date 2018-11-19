@@ -34,7 +34,7 @@ void abssort(float* x, unsigned n) {
 
 This illustration shows the parts of a lambda:
 
-![Structural elements of a lambda expression](../cpp/media/lambdaexpsyntax.png "LambdaExpSyntax")
+![Structural elements of a lambda expression](../cpp/media/lambdaexpsyntax.png)
 
 1. *capture clause* (Also known as the *lambda-introducer* in the C++ specification.)
 

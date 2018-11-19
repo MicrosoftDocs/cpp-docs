@@ -14,7 +14,7 @@ The Agents Library defines the [concurrency::agent](../../parallel/concrt/refere
 
 Agents have a set life cycle. The [concurrency::agent_status](reference/concurrency-namespace-enums.md#agent_status) enumeration defines the various states of an agent. The following illustration is a state diagram that shows how agents progress from one state to another. In this illustration, solid lines represent methods that you call from your application; dotted lines represent methods that are called from the runtime.
 
-![Agent State Diagram](../../parallel/concrt/media/agentstate.png "agentstate")
+![Agent State Diagram](../../parallel/concrt/media/agentstate.png)
 
 The following table describes each state in the `agent_status` enumeration.
 

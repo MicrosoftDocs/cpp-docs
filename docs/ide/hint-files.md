@@ -231,7 +231,7 @@ The following illustration depicts some of the physical directories in a Visual 
 
 ### Hint File Directories
 
-![Common and project&#45;specific hint file directories.](../ide/media/hintfile.png "HintFile")
+![Common and project&#45;specific hint file directories.](../ide/media/hintfile.png)
 
 ### Directories and Hint File Contents
 
