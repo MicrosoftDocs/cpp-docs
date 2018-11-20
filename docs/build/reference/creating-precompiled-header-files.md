@@ -31,8 +31,6 @@ This topic covers the following precompiled header subjects:
 
 For reference information on the compiler options related to precompiled headers, see [/Y (Precompiled Headers)](../../build/reference/y-precompiled-headers.md).
 
-<a name="when-to-precompile-source-code"></a>
-
 ## When to Precompile Source Code
 
 Precompiled code is useful during the development cycle to reduce compilation time, especially if:
@@ -46,11 +44,9 @@ The first compilation — the one that creates the precompiled header (PCH) file
 You can precompile both C and C++ programs. In C++ programming, it is common practice to separate class interface information into header files. These header files can later be included in programs that use the class. By precompiling these headers, you can reduce the time a program takes to compile.
 
 > [!NOTE]
->  Although you can use only one precompiled header (.pch) file per source file, you can use multiple .pch files in a project.
+> Although you can use only one precompiled header (.pch) file per source file, you can use multiple .pch files in a project.
 
-<a name="two-choices-for-precompiling-code"></a>
-
-# Two Choices for Precompiling Code
+## Two Choices for Precompiling Code
 
 With Visual C++, you can precompile any C or C++ code; you are not limited to precompiling only header files.
 
@@ -62,13 +58,9 @@ The precompiled-header options are [/Yc (Create Precompiled Header File)](../../
 
 The compiler option reference topics for **/Yu** and **/Yc** discuss how to access this functionality in the development environment.
 
-<a name="precompiled-header-consistency-rules"></a>
-
 ## Precompiled Header Consistency Rules
 
 Because PCH files contain information about the machine environment as well as memory address information about the program, you should only use a PCH file on the machine where it was created.
-
-<a name="consistency-rules-for-per-file-use-of-precompiled-headers"></a>
 
 ## Consistency Rules for Per-File Use of Precompiled Headers
 
@@ -123,8 +115,6 @@ These pragmas are retained as part of a precompiled header, and affect the remai
 |`data_seg`|`intrinsic`|`warning`|
 |`function`|`optimize`||
 
-<a name="consistency-rules-for-yc-and-yu"></a>
-
 ## Consistency Rules for /Yc and /Yu
 
 When you use a precompiled header created using /Yc or /Yu, the compiler compares the current compilation environment to the one that existed when you created the PCH file. Be sure to specify an environment consistent with the previous one (using consistent compiler options, pragmas, and so on) for the current compilation. If the compiler detects an inconsistency, it issues a warning and identifies the inconsistency where possible. Such warnings don't necessarily indicate a problem with the PCH file; they simply warn you of possible conflicts. The following sections explain the consistency requirements for precompiled headers.
@@ -144,15 +134,11 @@ This table lists compiler options that might trigger an inconsistency warning wh
 > [!NOTE]
 >  The precompiled header facility is intended for use only in C and C++ source files.
 
-<a name="using-precompiled-headers-in-a-project"></a>
-
 ## Using Precompiled Headers in a Project
 
 Previous sections present an overview of precompiled headers: /Yc and /Yu, the /Fp option, and the [hdrstop](../../preprocessor/hdrstop.md) pragma. This section describes a method for using the manual precompiled-header options in a project; it ends with an example makefile and the code that it manages.
 
 For another approach to using the manual precompiled-header options in a project, study one of the makefiles located in the MFC\SRC directory that is created during the default setup of Visual C++. These makefiles take a similar approach to the one presented in this section but make greater use of Microsoft Program Maintenance Utility (NMAKE) macros, and offer greater control of the build process.
-
-<a name="pch-files-in-the-build-process"></a>
 
 ## PCH Files in the Build Process
 
@@ -176,8 +162,6 @@ Continuing down the diagram, APPLIB.obj represents the support code used in your
 MYAPP.obj represents your final application. It is created from MYAPP.cpp, the files listed in the UNSTABLEHDRS macro, and precompiled code from the precompiled header.
 
 Finally, the executable file (MYAPP.EXE) is created by linking the files listed in the OBJS macro (APPLIB.obj and MYAPP.obj).
-
-<a name="sample-makefile-for-pch"></a>
 
 ## Sample Makefile for PCH
 
@@ -243,8 +227,6 @@ NMAKE DEBUG=0
 ```
 
 For more information on makefiles, see [NMAKE Reference](../../build/nmake-reference.md). Also see [Compiler Options](../../build/reference/compiler-options.md) and the [Linker Options](../../build/reference/linker-options.md).
-
-<a name="example-code-for-pch"></a>
 
 ## Example Code for PCH
 
