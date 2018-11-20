@@ -1,6 +1,6 @@
 ---
 title: "User-defined Tools"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["user-defined tools (MFC Extensions)"]
 ms.assetid: cb887421-78ce-4652-bc67-96a53984ccaa
 ---
@@ -10,7 +10,7 @@ MFC supports user-defined tools. A user-defined tool is a special command that e
 
 If you enabled user-defined tools support, the customization dialog box automatically includes the **Tools** tab. The following illustration shows the **Tools** page.
 
-![Tools tab in the Customize dialog box](../mfc/media/custdialogboxtoolstab.png "custdialogboxtoolstab")
+![Tools tab in the Customize dialog box](../mfc/media/custdialogboxtoolstab.png "Tools tab in the Customize dialog box") <br/>
 Customization dialog box Tools tab
 
 ## Enabling user-defined tools support
@@ -51,4 +51,3 @@ If you want to predefine some tools on the application startup, you must overrid
 [CUserTool Class](../mfc/reference/cusertool-class.md)<br/>
 [CUserToolsManager Class](../mfc/reference/cusertoolsmanager-class.md)<br/>
 [CWinAppEx Class](../mfc/reference/cwinappex-class.md)
-

@@ -1,6 +1,6 @@
 ---
 title: "Multiple Document Types, Views, and Frame Windows"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["static splitter windows [MFC]", "multiple views [MFC]", "multiple document types [MFC]", "multiple views [MFC], frame windows", "document classes [MFC], multiple", "documents [MFC], multiple types of", "splitter windows [MFC], dynamic", "dynamic splitter windows [MFC]", "windows [MFC], dynamic splitter", "windows [MFC], static splitter", "multiple frame windows [MFC]", "splitter windows [MFC], static"]
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
 ---
@@ -46,7 +46,7 @@ MFC supports three common user interfaces requiring multiple views on the same d
 
 The following figure, divided into parts a, b, and c, shows the three user-interface models in the order presented above.
 
-![Multiple&#45;view user interfaces](../mfc/media/vc37a71.gif "vc37a71")
+![Multiple&#45;view user interfaces](../mfc/media/vc37a71.gif "Multiple&#45;view user interfaces") <br/>
 Multiple-View User Interfaces
 
 The framework provides these models by implementing the New Window command and by providing class [CSplitterWnd](../mfc/reference/csplitterwnd-class.md), as discussed in [Splitter Windows](#_core_splitter_windows). You can implement other models using these as your starting point. For sample programs that illustrate different configurations of views, frame windows, and splitters, see [MFC Samples](../visual-cpp-samples.md).

@@ -1,6 +1,6 @@
 ---
 title: "Implementing a Property Page (ATL)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["property pages, implementing"]
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
 ---
@@ -51,7 +51,7 @@ Click **OK** to have the wizard generate your property page.
 
 Now that your property page has been generated, you'll need to add a few controls to the dialog resource representing your page. Add an edit box, a static text control, and a check box and set their IDs as shown below:
 
-![Editing a dialog resource](../atl/media/ppgresourcelabeled.gif "ppgresourcelabeled")
+![Editing a dialog resource](../atl/media/ppgresourcelabeled.gif "Editing a dialog resource")
 
 These controls will be used to display the file name of the document and its read-only status.
 

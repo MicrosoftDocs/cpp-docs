@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Connecting Using Tasks and XML HTTP Requests"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["connecting to web services, UWP apps [C++]", "IXMLHTTPRequest2 and tasks, example", "IXHR2 and tasks, example"]
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
 ---
@@ -91,7 +91,7 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
 Here is the running app:
 
-![The running Windows Runtime app](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")
+![The running Windows Runtime app](../../parallel/concrt/media/concrt_usingixhr2.png "The running Windows Runtime app")
 
 ## Next Steps
 

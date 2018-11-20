@@ -1,6 +1,6 @@
 ---
 title: "Obtaining pointers to data buffers (C++/CX)"
-ms.date: "12/30/2016"
+ms.date: "11/19/2018"
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
 ---
 # Obtaining pointers to data buffers (C++/CX)
@@ -9,7 +9,7 @@ In the Windows Runtime the [Windows::Storage::Streams::IBuffer](https://msdn.mic
 
 The following diagram shows a XAML image element, whose source is a [Windows::UI::Xaml::Media::Imaging WriteableBitmap](https://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx). A client app that's written in any language can pass a reference to the `WriteableBitmap` to C++ code and then C++ can use the reference to get at the underlying buffer. In a Universal Windows Platform app that's written in C++, you can use the function in the following example directly in the source code without packaging it in a Windows Runtime component.
 
-![C&#43;&#43; code accessing pixel data directly](../cppcx/media/ibufferbyteaccessdiagram.png "IBufferByteAccessDiagram")
+![C&#43;&#43; code that accesses pixel data directly](../cppcx/media/ibufferbyteaccessdiagram.png "C&#43;&#43; code that accesses pixel data directly")
 
 ## GetPointerToPixelData
 

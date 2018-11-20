@@ -1,6 +1,6 @@
 ---
 title: "try-finally Statement"
-ms.date: "10/09/2018"
+ms.date: "11/19/2018"
 f1_keywords: ["__try", "_try", "__leave_cpp", "__leave", "__finally_cpp", "__try_cpp", "__finally", "_finally"]
 helpviewer_keywords: ["__try keyword [C++]", "__finally keyword [C++]", "__leave keyword [C++]", "try-catch keyword [C++], try-finally keyword", "try-finally keyword [C++]", "__finally keyword [C++], try-finally statement syntax", "__leave keyword [C++], try-finally statement", "structured exception handling [C++], try-finally"]
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
@@ -46,7 +46,7 @@ If an exception occurs in the **__try** block, the operating system must find a 
 
 For example, suppose a series of function calls links function A to function D, as shown in the following figure. Each function has one termination handler. If an exception is raised in function D and handled in A, the termination handlers are called in this order as the system unwinds the stack: D, C, B.
 
-![Order of termination&#45;handler execution](../cpp/media/vc38cx1.gif "vc38CX1")
+![Order of termination&#45;handler execution](../cpp/media/vc38cx1.gif "Order of termination&#45;handler execution") <br/>
 Order of Termination-Handler Execution
 
 > [!NOTE]

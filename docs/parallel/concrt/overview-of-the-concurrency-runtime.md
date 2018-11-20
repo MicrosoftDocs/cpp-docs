@@ -1,6 +1,6 @@
 ---
 title: "Overview of the Concurrency Runtime"
-ms.date: "07/20/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["Concurrency Runtime, requirements", "Concurrency Runtime, architecture", "Concurrency Runtime, overview", "Concurrency Runtime, lambda expressions"]
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
 ---
@@ -50,10 +50,10 @@ The Concurrency Runtime is divided into four components: the Parallel Patterns L
 
 **Concurrency Runtime Architecture**
 
-![The Concurrency Runtime Architecture](../../parallel/concrt/media/concurrencyrun.png "concurrencyrun")
+![The Concurrency Runtime Architecture](../../parallel/concrt/media/concurrencyrun.png "The Concurrency Runtime Architecture")
 
 > [!IMPORTANT]
->  The Task Scheduler and Resource Manager components are not available from a Universal Windows Platform (UWP) app or when you use the task class or other types in ppltasks.h.
+> The Task Scheduler and Resource Manager components are not available from a Universal Windows Platform (UWP) app or when you use the task class or other types in ppltasks.h.
 
 The Concurrency Runtime is highly *composable*, that is, you can combine existing functionality to do more. The Concurrency Runtime composes many features, such as parallel algorithms, from lower-level components.
 

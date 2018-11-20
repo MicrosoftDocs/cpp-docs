@@ -1,6 +1,6 @@
 ---
 title: "Unions"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["union_cpp"]
 helpviewer_keywords: ["class types [C++], unions as", "union keyword [C++]"]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
@@ -622,7 +622,7 @@ int main()
 
 The `NumericType` union is arranged in memory (conceptually) as shown in the following figure.
 
-![Storage of data in a numeric type union](../cpp/media/vc38ul1.png "vc38UL1")
+![Storage of data in a numeric type union](../cpp/media/vc38ul1.png "Storage of data in a NumericType union") <br/>
 Storage of Data in NumericType Union
 
 ## <a name="anonymous_unions"></a> Anonymous unions
