@@ -289,7 +289,7 @@ Nonzero if initialization is successful; otherwise, 0.
 
 You construct a `CRichEditCtrl` object in two steps. First, call the [CRichEditCtrl](#cricheditctrl) constructor, then call `Create`, which creates the Windows edit control and attaches it to the `CRichEditCtrl` object.
 
-When you create a rich edit control with this function, first you must load the necessary common controls library. To load the libary, call the global function [AfxInitRichEdit](application-information-and-management.md#afxinitrichedit), which in turn initializes the common controls library. You need to call `AfxInitRichEdit` only once in your process.
+When you create a rich edit control with this function, first you must load the necessary common controls library. To load the library, call the global function [AfxInitRichEdit](application-information-and-management.md#afxinitrichedit), which in turn initializes the common controls library. You need to call `AfxInitRichEdit` only once in your process.
 
 When `Create` executes, Windows sends the [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), and [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the edit control.
 
