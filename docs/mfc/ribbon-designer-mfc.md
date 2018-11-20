@@ -1,6 +1,6 @@
 ---
 title: "Ribbon Designer (MFC)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["vc.editors.ribbon.F1"]
 helpviewer_keywords: ["Ribbon Designer (MFC)", "MFC Ribbon Designer"]
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
@@ -9,7 +9,7 @@ ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
 
 The Ribbon Designer lets you create and customize ribbons in MFC applications. A ribbon is a user interface (UI) element that organizes commands into logical groups. These groups appear on separate tabs in a strip across the top of the window. The ribbon replaces the menu bar and toolbars. A ribbon can significantly improve application usability. For more information, see [Ribbons](/windows/desktop/uxguide/cmd-ribbons). The following illustration shows a ribbon.
 
-![MFC Ribbon Resource Control](../mfc/media/ribbon_no_callouts.png "ribbon_no_callouts")
+![MFC Ribbon Resource Control](../mfc/media/ribbon_no_callouts.png "MFC Ribbon Resource Control")
 
 In earlier versions of Visual Studio, ribbons had to be created by writing code that uses the MFC ribbon classes such as [CMFCRibbonBar Class](../mfc/reference/cmfcribbonbar-class.md). In Visual Studio 2010 and later, the ribbon designer provides an alternative method for building ribbons. First, create and customize a ribbon as a resource. Then load the ribbon resource from code in the MFC application. You can even use ribbon resources and MFC ribbon classes together. For example, you can create a ribbon resource, and then programmatically add more elements to it at runtime by using code.
 
@@ -62,7 +62,7 @@ To open a ribbon in the ribbon designer, double-click the ribbon resource in Res
 
 The following illustration shows the various components in the ribbon designer.
 
-![MFC Ribbon Designer](../mfc/media/ribbon_designer.png "ribbon_designer")
+![MFC Ribbon Designer](../mfc/media/ribbon_designer.png "MFC Ribbon Designer")
 
 - **Toolbox:** Contains controls that can be dragged to the designer surface.
 
@@ -86,7 +86,7 @@ The following topics describe how to use the features in the ribbon designer:
 
 ## Definitions of Ribbon Elements
 
-![MFC Ribbon](../mfc/media/ribbon.png "ribbon")
+![MFC Ribbon](../mfc/media/ribbon.png "MFC Ribbon")
 
 - **Application button:** The button that appears on the upper-left corner of a ribbon. The Application button replaces the File menu and is visible even when the ribbon is minimized. When the button is clicked, a menu that has a list of commands is displayed.
 

@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Matrix Multiplication"
-ms.date: "11/06/2018"
+ms.date: "11/19/2018"
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
 ---
 # Walkthrough: Matrix Multiplication
@@ -35,13 +35,13 @@ Before you start:
 
 In this section, consider the multiplication of two matrices, A and B, which are defined as follows:
 
-![3&#45;by&#45;2 matrix](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")
+![3&#45;by&#45;2 matrix A](../../parallel/amp/media/campmatrixanontiled.png "3&#45;by&#45;2 matrix A")
 
-![2&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")
+![2&#45;by&#45;3 matrix B](../../parallel/amp/media/campmatrixbnontiled.png "2&#45;by&#45;3 matrix B")
 
 A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B is the following 3-by-3 matrix. The product is calculated by multiplying the rows of A by the columns of B element by element.
 
-![3&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;by&#45;3 matrix")
+![3&#45;by&#45;3 product matrix](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;by&#45;3 product matrix")
 
 ### To multiply without using C++ AMP
 
@@ -153,21 +153,21 @@ Tiling is a technique in which you partition data into equal-sized subsets, whic
 
 To take advantage of tiling in matrix multiplication, the algorithm must partition the matrix into tiles and then copy the tile data into `tile_static` variables for faster access. In this example, the matrix is partitioned into submatrices of equal size. The product is found by multiplying the submatrices. The two matrices and their product in this example are:
 
-![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixatiled.png "4&#45;by&#45;4 matrix A")
+![4&#45;by&#45;4 matrix A](../../parallel/amp/media/campmatrixatiled.png "4&#45;by&#45;4 matrix A")
 
-![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixbtiled.png "4&#45;by&#45;4 matrix B")
+![4&#45;by&#45;4 matrix B](../../parallel/amp/media/campmatrixbtiled.png "4&#45;by&#45;4 matrix B")
 
-![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;by&#45;4 matrix product")
+![4&#45;by&#45;4 product matrix](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;by&#45;4 product matrix")
 
 The matrices are partitioned into four 2x2 matrices, which are defined as follows:
 
-![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices")
+![4&#45;by&#45;4 matrix A partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;by&#45;4 matrix A partitioned into 2&#45;by&#45;2 sub&#45;matrices")
 
-![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices")
+![4&#45;by&#45;4 matrix B partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;by&#45;4 matrix B partitioned into 2&#45;by&#45;2 sub&#45;matrices")
 
 The product of A and B can now be written and calculated as follows:
 
-![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;by&#45;4 matrix product of A and B")
+![4&#45;by&#45;4 matrix A B partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;by&#45;4 matrix A B partitioned into 2&#45;by&#45;2 sub&#45;matrices")
 
 Because matrices `a` through `h` are 2x2 matrices, all of the products and sums of them are also 2x2 matrices. It also follows that the product of A and B is a 4x4 matrix, as expected. To quickly check the algorithm, calculate the value of the element in the first row, first column in the product. In the example, that would be the value of the element in the first row and first column of `ae + bg`. You only have to calculate the first column, first row of `ae` and `bg` for each term. That value for `ae` is `(1 * 1) + (2 * 5) = 11`. The value for `bg` is `(3 * 1) + (4 * 5) = 23`. The final value is `11 + 23 = 34`, which is correct.
 

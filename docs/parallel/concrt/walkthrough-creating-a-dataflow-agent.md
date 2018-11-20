@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Creating a Dataflow Agent"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["creating dataflow agents [Concurrency Runtime]", "dataflow agents, creating [Concurrency Runtime]"]
 ms.assetid: 9db5ce3f-c51b-4de1-b79b-9ac2a0cbd130
 ---
@@ -76,7 +76,7 @@ The dataflow agent works by creating a network of message buffers, each of which
 
 The following diagram shows the complete dataflow network for the `dataflow_agent` class:
 
-![The dataflow network](../../parallel/concrt/media/concrt_dataflow.png "concrt_dataflow")
+![The dataflow network](../../parallel/concrt/media/concrt_dataflow.png "The dataflow network")
 
 The following table describes the members of the network.
 

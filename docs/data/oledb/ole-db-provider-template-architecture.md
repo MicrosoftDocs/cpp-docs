@@ -1,6 +1,6 @@
 ---
 title: "OLE DB Provider Template Architecture"
-ms.date: "10/24/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["OLE DB [C++], object model", "architecture [C++], OLE DB Provider", "OLE DB provider templates, object model"]
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
 ---
@@ -10,7 +10,7 @@ ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
 
 The OLE DB provider architecture includes a data source object and one or more sessions. The data source object is the initial object that every provider must instantiate. When a consumer application needs data, it co-creates the data source object to start the provider. The data source object creates a session object (using the `IDBCreateSession` interface) through which the consumer connects to the data source object. ODBC programmers can think of the data source object as being equivalent to the `HENV` and the session object as equivalent to the `HDBC`.
 
-![Provider architecture](../../data/oledb/media/vc4twb1.gif "vc4twb1")
+![Provider architecture](../../data/oledb/media/vc4twb1.gif "Provider architecture")
 
 Together with the source files created by the **OLE DB Provider Wizard**, the OLE DB templates implement a data source object. A session is an object that corresponds to the OLE DB `TSession`.
 

@@ -1,6 +1,6 @@
 ---
 title: "Recordset: Dynamically Binding Data Columns (ODBC)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["ODBC recordsets [C++], binding columns dynamically", "data binding [C++], recordset columns", "recordsets [C++], binding data", "data binding [C++], columns in recordsets", "columns [C++], binding to recordsets"]
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
 ---
@@ -67,7 +67,7 @@ Dynamically binding added columns at run time requires the following steps:
 
    One approach is to build one or more dynamic lists, one for the new columns' names, another for their result values, and a third for their data types (if necessary). These lists, particularly the value list, provide the information and the necessary storage for binding. The following figure illustrates building the lists.
 
-   ![Building lists of columns to bind dynamically](../../data/odbc/media/vc37w61.gif "vc37w61")<br/>
+   ![Building lists of columns to bind dynamically](../../data/odbc/media/vc37w61.gif "Building lists of columns to bind dynamically")<br/>
    Building Lists of Columns to Bind Dynamically
 
 1. Add an RFX function call in your main recordset's `DoFieldExchange` function for each added column. These RFX calls do the work of fetching a record, including the additional columns, and binding the columns to recordset data members or to your dynamically supplied storage for them.

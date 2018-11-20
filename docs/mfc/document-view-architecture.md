@@ -1,6 +1,6 @@
 ---
 title: "Document-View Architecture"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["CView class [MFC], view architecture", "CDocument class [MFC]", "MFC, views", "views [MFC], MFC document/view model", "document objects [MFC]", "document objects [MFC], MFC document/view model", "MFC, documents", "documents [MFC], MFC document/view model", "document objects [MFC], document/view architecture"]
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
 ---
@@ -32,7 +32,7 @@ The [CView](../mfc/reference/cview-class.md) (or one of its many derived classes
 
 The following figure shows the relationship between a document and its view.
 
-![View is the part of the document that's displayed](../mfc/media/vc379n1.gif "vc379n1")
+![View is the part of the document that's displayed](../mfc/media/vc379n1.gif "View is the part of the document that's displayed") <br/>
 Document and View
 
 The document/view implementation in the class library separates the data itself from its display and from user operations on the data. All changes to the data are managed through the document class. The view calls this interface to access and update the data.

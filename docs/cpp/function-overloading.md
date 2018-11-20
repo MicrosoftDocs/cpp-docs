@@ -1,6 +1,6 @@
 ---
 title: "Function Overloading"
-ms.date: "1/25/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["function overloading [C++], about function overloading", "function overloading", "declaring functions [C++], overloading"]
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 ---
@@ -271,8 +271,8 @@ The sequence in which conversions are attempted is as follows:
 
    - Conversion from a pointer to a derived class, to a pointer to a base class produces a better match the closer the base class is to a direct base class. Suppose the class hierarchy is as shown in the following figure.
 
-![Preferred conversions](../cpp/media/vc391t1.gif "vc391T1")
-Graph Illustrating Preferred Conversions
+![Graph of preferred conversions](../cpp/media/vc391t1.gif "Graph of preferred conversions") <br/>
+Graph showing preferred conversions
 
 Conversion from type `D*` to type `C*` is preferable to conversion from type `D*` to type `B*`. Similarly, conversion from type `D*` to type `B*` is preferable to conversion from type `D*` to type `A*`.
 
@@ -282,8 +282,8 @@ This same rule applies to pointer-to-member conversions. Conversion from type `T
 
 The preceding rule applies only along a given path of derivation. Consider the graph shown in the following figure.
 
-![Multi&#45;inheritance that shows preferred conversions](../cpp/media/vc391t2.gif "vc391T2")
-Multiple-Inheritance Graph Illustrating Preferred Conversions
+![Multiple&#45;inheritance that shows preferred conversions](../cpp/media/vc391t2.gif "Multiple&#45;inheritance that shows preferred conversions") <br/>
+Multiple-inheritance graph that shows preferred conversions
 
 Conversion from type `C*` to type `B*` is preferable to conversion from type `C*` to type `A*`. The reason is that they are on the same path, and `B*` is closer. However, conversion from type `C*` to type `D*` is not preferable to conversion to type `A*`; there is no preference because the conversions follow different paths.
 

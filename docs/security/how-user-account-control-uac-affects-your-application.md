@@ -1,6 +1,6 @@
 ---
 title: "How User Account Control (UAC) Affects Your Application"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["UAC [C++]", "security [C++], User Account Control", "user accounts [C++]", "User Account Control [C++]"]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
 ---
@@ -24,7 +24,7 @@ The second option is to not embed a UAC fragment into the manifest by specifying
 
 The following flowchart describes how your application will run depending on whether UAC is enabled and whether the application has a UAC manifest:
 
-![Windows Vista Loader behavior](media/uacflowchart.png "UACflowchart")
+![Windows Loader behavior](media/uacflowchart.png "Windows Loader behavior")
 
 ## See Also
 

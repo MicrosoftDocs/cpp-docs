@@ -1,6 +1,6 @@
 ---
 title: "Examples of Structure Alignment"
-ms.date: "03/26/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["structure alignment", "examples [C++], structure alignment"]
 ms.assetid: 03d137bf-5cc4-472e-9583-6498f2534199
 ---
@@ -18,7 +18,7 @@ _declspec(align(2)) struct {
 }
 ```
 
-![AMD conversion example](../build/media/vcamd_conv_ex_1_block.png "vcAmd_conv_ex_1")
+![AMD conversion example 1 structure layout](../build/media/vcamd_conv_ex_1_block.png "AMD conversion example 1 structure layout")
 
 ## Example 2
 
@@ -32,7 +32,7 @@ _declspec(align(8)) struct {
 }
 ```
 
-![AMD conversion example](../build/media/vcamd_conv_ex_2_block.png "vcAmd_conv_ex_2")
+![AMD conversion example 2 structure layout](../build/media/vcamd_conv_ex_2_block.png "AMD conversion example 2 structure layout")
 
 ## Example 3
 
@@ -47,7 +47,7 @@ _declspec(align(4)) struct {
 }
 ```
 
-![AMD conversion example](../build/media/vcamd_conv_ex_3_block.png "vcAmd_conv_ex_3")
+![AMD conversion example 2 structure layout](../build/media/vcamd_conv_ex_3_block.png "AMD conversion example 2 structure layout")
 
 ## Example 4
 
@@ -61,7 +61,7 @@ _declspec(align(8)) union {
 }
 ```
 
-![AMD conversion example](../build/media/vcamd_conv_ex_4_block.png "vcAmd_conv_ex_4")
+![AMD conversion example 4 union layouit](../build/media/vcamd_conv_ex_4_block.png "AMD conversion example 4 union layouit")
 
 ## See also
 

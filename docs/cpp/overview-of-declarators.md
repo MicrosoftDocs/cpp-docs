@@ -1,6 +1,6 @@
 ---
 title: "Overview of Declarators"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["declarators, about declarators"]
 ms.assetid: 0f2e2312-80bd-4154-8345-718bd9ed2173
 ---
@@ -8,8 +8,8 @@ ms.assetid: 0f2e2312-80bd-4154-8345-718bd9ed2173
 
 Declarators are the components of a declaration that specify names of objects or functions. Declarators also specify whether or not the named object is an object, pointer, reference or array.  While declarators do not specify the base type, they do modify the type information in the basic type to specify derived types such as pointers, references, and arrays.  Applied to functions, the declarator works with the type specifier to fully specify the return type of a function to be an object, pointer, or reference. (Specifiers, discussed in [Declarations and Definitions](declarations-and-definitions-cpp.md), convey properties such as type and storage class. Modifiers, discussed in this section and in [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md), modify declarators.) The following figure shows a complete declaration of `MyFunction`, and calls out the components of the declaration.
 
-![Modifiers, specifiers, and declarators](../cpp/media/vc38qy1.gif "vc38QY1")
-Specifiers, Modifiers, and Declarators
+![Modifiers, specifiers, and declarators](../cpp/media/vc38qy1.gif "Modifiers, specifiers, and declarators") <br/>
+Specifiers, modifiers, and declarators
 
 **Microsoft Specific**
 

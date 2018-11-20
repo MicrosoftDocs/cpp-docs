@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Creating an Image-Processing Network"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["image-processing networks, creating [Concurrency Runtime]", "creating image-processing networks [Concurrency Runtime]"]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
 ---
@@ -126,7 +126,7 @@ If your application requires that multiple message blocks process the message, i
 
 The following illustration shows the image processing network:
 
-![Image processing network](../../parallel/concrt/media/concrt_imageproc.png "concrt_imageproc")
+![Image processing network](../../parallel/concrt/media/concrt_imageproc.png "Image processing network")
 
 The `countdown_event` object in this example enables the image processing network to inform the main application when all images have been processed. The `countdown_event` class uses a [concurrency::event](../../parallel/concrt/reference/event-class.md) object to signal when a counter value reaches zero. The main application increments the counter every time that it sends a file name to the network. The terminal node of the network decrements the counter after each image has been processed. After the main application traverses the specified directory, it waits for the `countdown_event` object to signal that its counter has reached zero.
 
@@ -144,7 +144,7 @@ The following code shows the complete example. The `wmain` function manages the 
 
 The following illustration shows sample output. Each source image is above its corresponding modified image.
 
-![Sample output for the example](../../parallel/concrt/media/concrt_imageout.png "concrt_imageout")
+![Sample output for the example](../../parallel/concrt/media/concrt_imageout.png "Sample output for the example")
 
 `Lighthouse` is authored by Tom Alphin and therefore is converted to grayscale. `Chrysanthemum`, `Desert`, `Koala`, and `Tulips` have red as the dominant color and therefore have the blue and green color components removed and are darkened. `Hydrangeas`, `Jellyfish`, and `Penguins` match the default criteria and therefore are sepia toned.
 
