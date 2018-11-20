@@ -52,7 +52,7 @@ This wizard page describes the current application settings for the MFC applicat
 
    - The project provides no support for [Automation](../../mfc/automation.md), [MAPI](../../mfc/mapi-support-in-mfc.md), [Windows Sockets](../../mfc/windows-sockets-in-mfc.md), or Active Accessibility.
 
-   - The project supports an **Explorer** docking pane, an **Ouput** docking pane, and a **Properties** docking pane.
+   - The project supports an **Explorer** docking pane, an **Output** docking pane, and a **Properties** docking pane.
 
 - [Generated Classes, MFC Application Wizard](../../mfc/reference/generated-classes-mfc-application-wizard.md)
 
