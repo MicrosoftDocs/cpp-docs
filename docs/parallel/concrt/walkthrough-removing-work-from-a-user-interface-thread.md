@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Removing Work from a User-Interface Thread"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["user-interface threads, removing work from [Concurrency Runtime]", "removing work from user-interface threads [Concurrency Runtime]"]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
 ---
@@ -96,11 +96,11 @@ This section describes how to draw the Mandelbrot fractal. This version draws th
 
    [!code-cpp[concrt-mandelbrot#8](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_8.cpp)]
 
-9. Verify that the application was updated successfully by building and running it.
+1. Verify that the application was updated successfully by building and running it.
 
 The following illustration shows the results of the Mandelbrot application.
 
-![The Mandelbrot Application](../../parallel/concrt/media/mandelbrot.png "mandelbrot")
+![The Mandelbrot Application](../../parallel/concrt/media/mandelbrot.png "The Mandelbrot Application")
 
 Because the computation for each pixel is computationally expensive, the UI thread cannot process additional messages until the overall computation finishes. This could decrease responsiveness in the application. However, you can relieve this problem by removing work from the UI thread.
 

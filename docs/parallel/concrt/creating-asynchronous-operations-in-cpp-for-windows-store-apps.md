@@ -1,6 +1,6 @@
 ---
 title: "Creating Asynchronous Operations in C++ for UWP Apps"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["Windows 8.x apps, creating C++ async operations", "Creating C++ async operations"]
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
 ---
@@ -116,7 +116,7 @@ The `getPrimesCancellation` and `cancelGetPrimes` methods work together to enabl
 
 The following illustration shows the `Primes` app after each option has been chosen.
 
-![Windows Runtime Primes app](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")
+![Windows Runtime Primes app](../../parallel/concrt/media/concrt_windows_primes.png "Windows Runtime Primes app")
 
 For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) and [Windows 8 Asynchronous Operations in C++ with PPL](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
 
@@ -178,7 +178,7 @@ Modify the `MainPage` constructor to create a chain of continuation tasks that d
 
 The following illustration shows the results of the `CommonWords` app.
 
-![Windows Runtime CommonWords app](../../parallel/concrt/media/concrt_windows_common_words.png "concrt_windows_common_words")
+![Windows Runtime CommonWords app](../../parallel/concrt/media/concrt_windows_common_words.png "Windows Runtime CommonWords app")
 
 In this example, it’s possible to support cancellation because the `task` objects that support `create_async` use an implicit cancellation token. Define your work function to take a `cancellation_token` object if your tasks need to respond to cancellation in a cooperative manner. For more info about cancellation in the PPL, see [Cancellation in the PPL](cancellation-in-the-ppl.md)
 

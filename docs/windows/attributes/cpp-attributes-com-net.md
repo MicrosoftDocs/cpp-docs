@@ -1,7 +1,7 @@
 ---
 title: "C++ Attributes for COM and .NET"
 ms.custom: "index-page"
-ms.date: "10/02/2018"
+ms.date: "11/19/2018"
 ms.topic: "conceptual"
 helpviewer_keywords: ["attributes [C++/CLI], reference topics"]
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
@@ -48,7 +48,7 @@ As before, when the project is built, the compiler parses each C++ source file, 
 
 The following figure demonstrates the relationship between the compiler and the attribute provider.
 
-![Component attribute communication](../media/vccompattrcomm.gif "vcCompAttrComm")
+![Component attribute communication](../media/vccompattrcomm.gif "Component attribute communication")
 
 > [!NOTE]
 > Attribute usage does not alter the contents of the source file. The only time the generated attribute code is visible is during debugging sessions. In addition, for each source file in the project, you can generate a text file that displays the results of the attribute substitution. For more information on this procedure, see [/Fx (Merge Injected Code)](../../build/reference/fx-merge-injected-code.md) and [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).

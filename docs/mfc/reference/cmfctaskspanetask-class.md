@@ -1,6 +1,6 @@
 ---
 title: "CMFCTasksPaneTask Class"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask::CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask::SetACCData", "AFXTASKSPANE/CMFCTasksPaneTask::m_bAutoDestroyWindow", "AFXTASKSPANE/CMFCTasksPaneTask::m_bIsBold", "AFXTASKSPANE/CMFCTasksPaneTask::m_dwUserData", "AFXTASKSPANE/CMFCTasksPaneTask::m_hwndTask", "AFXTASKSPANE/CMFCTasksPaneTask::m_nIcon", "AFXTASKSPANE/CMFCTasksPaneTask::m_nWindowHeight", "AFXTASKSPANE/CMFCTasksPaneTask::m_pGroup", "AFXTASKSPANE/CMFCTasksPaneTask::m_rect", "AFXTASKSPANE/CMFCTasksPaneTask::m_strName", "AFXTASKSPANE/CMFCTasksPaneTask::m_uiCommandID"]
 helpviewer_keywords: ["CMFCTasksPaneTask [MFC], CMFCTasksPaneTask", "CMFCTasksPaneTask [MFC], SetACCData", "CMFCTasksPaneTask [MFC], m_bAutoDestroyWindow", "CMFCTasksPaneTask [MFC], m_bIsBold", "CMFCTasksPaneTask [MFC], m_dwUserData", "CMFCTasksPaneTask [MFC], m_hwndTask", "CMFCTasksPaneTask [MFC], m_nIcon", "CMFCTasksPaneTask [MFC], m_nWindowHeight", "CMFCTasksPaneTask [MFC], m_pGroup", "CMFCTasksPaneTask [MFC], m_rect", "CMFCTasksPaneTask [MFC], m_strName", "CMFCTasksPaneTask [MFC], m_uiCommandID"]
 ms.assetid: c5a7513b-cd8f-4e2e-b16f-650e1fe30954
@@ -49,10 +49,10 @@ class CMFCTasksPaneTask : public CObject
 
 The following illustration shows a task group that contains three tasks:
 
-![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")
+![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "Task group, expanded")
 
 > [!NOTE]
->  If a task does not have a valid command ID, it is treated as a simple label.
+> If a task does not have a valid command ID, it is treated as a simple label.
 
 ## Inheritance Hierarchy
 

@@ -1,6 +1,6 @@
 ---
 title: "Data Exchange for Record Views   (MFC Data Access)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["RFX (record field exchange), data exchange mechanism", "RFX (record field exchange), record views", "record views, data exchange", "DDX (dialog data exchange), record views", "RFX (record field exchange)"]
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
 ---
@@ -12,7 +12,7 @@ DDX for record views works in conjunction with [RFX](../data/odbc/record-field-e
 
 The following figure shows the relationship between DDX and RFX for record views.
 
-![Dialog&#45;data exchange and record&#45;field exchange](../data/media/vc37xt1.gif "vc37xt1")<br/>
+![Dialog&#45;data exchange and record&#45;field exchange](../data/media/vc37xt1.gif "Dialog&#45;data exchange and record&#45;field exchange")<br/>
 Dialog Data Exchange and Record Field Exchange
 
 For more information about DDX, see [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md). For more information about RFX, see [Record Field Exchange (RFX)](../data/odbc/record-field-exchange-rfx.md).

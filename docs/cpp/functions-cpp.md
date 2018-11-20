@@ -1,6 +1,6 @@
 ---
 title: "Functions (C++)"
-ms.date: "01/25/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["defaults, arguments", "function definitions", "function definitions, about function definitions", "default arguments", "declarators, functions"]
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
 ---
@@ -114,8 +114,8 @@ Optional parts of a function declaration are:
 
 The following figure shows the parts of a function definition. The shaded area is the function body.
 
-![Parts of a function definition](../cpp/media/vc38ru1.gif "vc38RU1")
-Parts of a Function Definition
+![Parts of a function definition](../cpp/media/vc38ru1.gif "Parts of a function definition") <br/>
+Parts of a function definition
 
 ## Function definitions
 

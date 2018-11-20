@@ -1,6 +1,6 @@
 ---
 title: "C++ AMP Overview"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, requirements", "C++ Accelerated Massive Parallelism, architecture", "C++ AMP", "C++ Accelerated Massive Parallelism, overview", "C++ Accelerated Massive Parallelism"]
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
 ---
@@ -351,7 +351,7 @@ In typical applications, the elements in a tile are related in some way, and the
 
 The following diagram represents a two-dimensional array of sampling data that is arranged in tiles.
 
-![Index values in a tiled extent](../../parallel/amp/media/camptiledgridexample.png "camptiledgridexample")
+![Index values in a tiled extent](../../parallel/amp/media/camptiledgridexample.png "Index values in a tiled extent")
 
 The following code example uses the sampling data from the previous diagram. The code replaces each value in the tile by the average of the values in the tile.
 

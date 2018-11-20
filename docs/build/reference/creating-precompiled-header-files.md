@@ -1,6 +1,6 @@
 ---
 title: "Creating Precompiled Header Files"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["pch"]
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
@@ -160,8 +160,8 @@ The code base of a software project is usually contained in multiple C or C++ so
 
 The figure uses three diagrammatic devices to show the flow of the build process. Named rectangles represent each file or macro; the three macros represent one or more files. Shaded areas represent each compile or link action. Arrows show which files and macros are combined during the compilation or linking process.
 
-![Makefile that uses a precompiled header file](../../build/reference/media/vc30ow1.gif "Structure of a Makefile That Uses a Precompiled Header File")
-##### Structure of a Makefile That Uses a Precompiled Header File
+![Structure of a makefile that uses a precompiled header file](../../build/reference/media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
+Structure of a Makefile That Uses a Precompiled Header File
 
 Beginning at the top of the diagram, both STABLEHDRS and BOUNDRY are NMAKE macros in which you list files not likely to need recompilation. These files are compiled by the command string
 
