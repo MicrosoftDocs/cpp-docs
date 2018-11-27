@@ -46,12 +46,12 @@ int main()
     // Correct usage: the dereferenced pointer is an lvalue.
     *p = i;
 
-    const int ci = 7;
-    // Incorrect usage: the variable is a non-modifiable lvalue (C3892).
-    ci = 9; // C3892
-
     // Correct usage: the conditional operator returns an lvalue.
     ((i < 3) ? i : j) = 7;
+    
+    // Incorrect usage: the constant ci is a non-modifiable lvalue (C3892).
+    const int ci = 7;
+    ci = 9; // C3892
 }
 ```
 
