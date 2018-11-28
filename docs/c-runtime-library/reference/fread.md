@@ -47,6 +47,8 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 The **fread** function reads up to *count* items of *size* bytes from the input *stream* and stores them in *buffer*. The file pointer associated with *stream* (if there is one) is increased by the number of bytes actually read. If the given stream is opened in text mode, carriage return-linefeed pairs are replaced with single linefeed characters. The replacement has no effect on the file pointer or the return value. The file-pointer position is indeterminate if an error occurs. The value of a partially read item cannot be determined.
 
+When used on a [Text Mode](../../c-runtime-library/text-and-binary-mode-file-i-o.md) stream, the **fread** function will need to conduct a translation on the input to convert Windows-style newlines (CRLF) to Unix-style (LF). In cases where the amount of data requested exceeds the internal FILE \* buffer (default 4096 bytes, configurable with [setvbuf](../../c-runtime-library/reference/setvbuf.md)), the majority of the data will be copied directly into the user-provided buffer and newline translation will be done in that buffer. Since the total translated data read may be shorter than the amount directly copied into the user-provided buffer, data past *buffer[num_read \* size]* may be clobbered with untranslated data from the file (where *num_read* is the return value from **fread**). For this reason, we recommend null terminating character data at *buffer[return_value \* size]* if the intent of the buffer is to act as a C string. See [fopen](fopen-wfopen.md) for details on the effects of Text Mode vs Binary Mode.
+
 This function locks out other threads. If you need a non-locking version, use **_fread_nolock**.
 
 ## Requirements
@@ -110,5 +112,7 @@ Contents of buffer = zyxwvutsrqponmlkjihgfedcb
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+[Text and Binary File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br />
+[fopen](fopen-wfopen.md)<br />
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>
