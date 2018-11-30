@@ -66,6 +66,18 @@ Additionally, LINK performs a full link if any of the following situations occur
 
 1. Modify the **Enable Incremental Linking** property.
 
+### To set this linker option in an msbuild vcxproj
+
+Use the LinkIncremental tag in a Link item.
+
+```
+<ItemDefinitionGroup>
+  <Link>
+    <LinkIncremental>true</LinkIncremental>
+  </Link>
+</ItemDefinitionGroup>
+```
+
 ### To set this linker option programmatically
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkIncremental%2A>.
