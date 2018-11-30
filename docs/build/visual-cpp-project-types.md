@@ -1,14 +1,12 @@
 ---
 title: "Visual C++ Project Types"
-ms.date: "10/30/2017"
+ms.date: "11/29/2018"
 helpviewer_keywords: ["programs [C++], projects", "project templates [Visual Studio], C++", "TODO comments [C++]", "projects [C++], types", "templates [C++], projects", "applications [C++], projects", "Visual C++ projects, types"]
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
 ---
-# Visual C++ Project Types
+# C++ Project Types
 
-You can use a project template to create the basic program structure, menus, toolbars, icons, references, and `#include` statements that are appropriate for the kind of project you want to create. Visual Studio includes several kinds of Visual C++ project templates and provides wizards for many of them so that you can customize your projects as you create them. Immediately after you create a project, you can build it and run the application; it's good practice to build intermittently as you develop your application.
-
-You don't have to use a template to create a project, but in most cases it's more efficient to do so because it's easier to modify the provided project files and structure than it is to create them from scratch.
+Visual Studio project templates generate source code files, compiler options, menus, toolbars, icons, references, and `#include` statements that are appropriate for the kind of project you want to create. Visual Studio includes several kinds of Visual C++ project templates and provides wizards for many of them so that you can customize your projects as you create them. Immediately after you create a project, you can build it and run the application; it's good practice to build intermittently as you develop your application.
 
 > [!NOTE]
 > You can create a C-language project by using C++ project templates. In the generated project, locate files that have a .cpp file name extension and change it to .c. Then, on the **Project Properties** page for the project (not for the solution), expand **Configuration Properties**, **C/C++** and select **Advanced**. Change the **Compile As** setting to **Compile as C Code (/TC)**.
@@ -32,8 +30,8 @@ The project templates included in Visual Studio depend on the product version an
 |Project template|Description|
 |----------------------|-----------------------------|
 |Empty Project|An empty project for creating an application, library, or DLL. You must add any code or resources required.|
-|[Makefile Project](../ide/creating-a-makefile-project.md)|A project for using an external build system.|
-|Shared Items Project|A project used for sharing files between multiple projects.|
+|[Makefile Project](creating-a-makefile-project.md)|A project for importing a makefile into a Visual Studio project. (To open a makefile as-is in Visual Studio, use [Open Folder](non-msbuild-projects.md).|
+|Shared Items Project|A project used for sharing files between multiple projects. This project type does not produce an executable file.|
 
 ### ATL
 
