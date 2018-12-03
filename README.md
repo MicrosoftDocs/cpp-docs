@@ -8,9 +8,9 @@ The documentation for Visual Basic and Visual C# are located in a separate repos
 
 ## Contributing to the documentation
 
-We welcome your contributions to help us improve the Visual C++ docs. For a comprehensive guide to contributing to docs.microsoft.com, please see the [Microsoft Docs contributor guide overview](https://docs.microsoft.com/contribute). For details on how to make a contribution to the Visual C++ documentation, please see the [Contributing](CONTRIBUTING.md) guide.
+We welcome your contributions to help us improve the Visual C++ docs. For a comprehensive guide to contributing to docs.microsoft.com, please see the [Microsoft Docs contributor guide overview](https://docs.microsoft.com/contribute). For details on how to make a contribution to the Visual C++ documentation, please see the [Contributing guide](CONTRIBUTING.md).
 
-Several feature areas of Visual C++ have their own folders in this repository, such as `standard-library` for topics on the C++ Standard Library, `ide` for C++-specific topics on the Visual Studio interactive development environment (IDE), and so forth. The `/media` subfolder in each folder contains art files for the topics. The [Contributing](CONTRIBUTING.md) guide has more information.
+Several feature areas of Visual C++ have their own folders in this repository, such as `standard-library` for topics on the C++ Standard Library, `ide` for C++-specific topics on the Visual Studio interactive development environment (IDE), and so forth. The `/media` subfolder in each folder contains art files for the topics. The [Contributing guide](CONTRIBUTING.md) has more information.
 
 ## Microsoft Open Source Code of Conduct
 
