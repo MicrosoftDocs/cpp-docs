@@ -16,7 +16,7 @@ When a file is selected in **Solution Explorer**, the **General** property page 
 
 - **Tool**
 
-   The tool that will be used to build this file. See [Specifying Custom Build Tools](../ide/specifying-custom-build-tools.md) for more information.
+   The tool that will be used to build this file. See [Specifying Custom Build Tools](specifying-custom-build-tools.md) for more information.
 
    To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.
 
