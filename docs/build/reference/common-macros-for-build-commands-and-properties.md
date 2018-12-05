@@ -52,7 +52,7 @@ This table describes a commonly used subset of the available macros. This list i
 
 ## Obsolete macros
 
-The build system for C++ was significantly changed between Visual Studio 2008 and Visual Studio 2010. Many macros used in earlier project types have been changed to new ones. These macros are no longer used or have been replaced by one or more equivalent properties or [item metadata macro](/visualstudio/msbuild/itemmetadata-element-msbuild) (**%(**_name_**)**) values. Macros that are marked "migrated" can be updated by the project migration tool. If the project that contains the macro is migrated from Visual Studio 2008 or earlier to Visual Studio 2010, Visual Studio converts the macro to the equivalent current macro. Later versions of Visual Studio can't convert projects from Visual Studio 2008 and earlier to the new project type. You must convert these projects in two steps; first convert them to Visual Studio 2010, and then convert the result to your newer version of Visual Studio. For more information, see [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
+The build system for C++ was significantly changed between Visual Studio 2008 and Visual Studio 2010. Many macros used in earlier project types have been changed to new ones. These macros are no longer used or have been replaced by one or more equivalent properties or [item metadata macro](/visualstudio/msbuild/itemmetadata-element-msbuild) (**%(**_name_**)**) values. Macros that are marked "migrated" can be updated by the project migration tool. If the project that contains the macro is migrated from Visual Studio 2008 or earlier to Visual Studio 2010, Visual Studio converts the macro to the equivalent current macro. Later versions of Visual Studio can't convert projects from Visual Studio 2008 and earlier to the new project type. You must convert these projects in two steps; first convert them to Visual Studio 2010, and then convert the result to your newer version of Visual Studio. For more information, see [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
 
 |Macro|Description|
 |-----------|-----------------|
@@ -69,5 +69,5 @@ The build system for C++ was significantly changed between Visual Studio 2008 an
 ## See also
 
 - [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)
-- [Visual C++ porting and upgrading guide](../porting/visual-cpp-porting-and-upgrading-guide.md)
-- [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md)
+- [Visual C++ porting and upgrading guide](../../porting/visual-cpp-porting-and-upgrading-guide.md)
+- [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)

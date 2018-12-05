@@ -17,7 +17,7 @@ To change these defaults, click the [Application Settings](application-settings-
 
 ## See Also
 
-[Creating a Makefile Project](..creating-a-makefile-project.md)<br>
+[Creating a Makefile Project](creating-a-makefile-project.md)<br>
 [NMAKE Reference](../build/nmake-reference.md)<br>
 [Special Characters in a Makefile](../build/special-characters-in-a-makefile.md)<br>
 [Contents of a Makefile](../build/contents-of-a-makefile.md)

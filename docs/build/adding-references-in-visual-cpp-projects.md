@@ -133,5 +133,5 @@ The following properties are found on COM and .NET assembly references, and cann
 
 ## See Also
 
-[Property Pages](property-pages-visual-cpp.md)<br>
+[Property Pages](reference/property-pages-visual-cpp.md)<br>
 [Working with Project Properties](working-with-project-properties.md)

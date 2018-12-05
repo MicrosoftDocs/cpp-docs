@@ -9,7 +9,7 @@ ms.assetid: bd319741-0491-46c4-a428-7c61b4b46a02
 
 For each combination of project configuration and target platform in your project, you can specify a custom step to be performed when the project is built.
 
-For the Linux version of this page, see [Custom Build Step Properties (Linux C++)](../linux/prop-pages/custom-build-step-linux.md).
+For the Linux version of this page, see [Custom Build Step Properties (Linux C++)](../../linux/prop-pages/custom-build-step-linux.md).
 
 ## UIElement List
 

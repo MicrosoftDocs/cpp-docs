@@ -9,7 +9,7 @@ ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
 
 Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Creating reusable property configurations](create-reusable-property-configurations.md).
 
-For the Linux version of this page, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md).
+For the Linux version of this page, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
 To access the **VC++ Directories** property page:
 
@@ -21,7 +21,7 @@ VC++ Directories properties apply to a project, not the top-level solution node.
 
 ![Select the project node](media/vcppdir.png "Select the project node to see the VC++ Directories properties")
 
-Note that the **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md).
+Note that the **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
 If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](working-with-project-properties.md).
 
@@ -72,7 +72,7 @@ Directories in which to search for executable files. Corresponds to the **PATH**
 Directories in which to search for include files that are referenced in the source code. Corresponds to the **INCLUDE** environment variable.
 
 **Reference Directories**<br/>
-Directories in which to search for assembly and module (metadata) files that are referenced in the source code by the [#using](../preprocessor/hash-using-directive-cpp.md) directive. Corresponds to the **LIBPATH** environment variable.
+Directories in which to search for assembly and module (metadata) files that are referenced in the source code by the [#using](../../preprocessor/hash-using-directive-cpp.md) directive. Corresponds to the **LIBPATH** environment variable.
 
 **Library Directories**<br/>
 Directories in which to search for libraries (.lib) files; this includes run-time libraries. Corresponds to the **LIB** environment variable. This setting does not apply to .obj files; to link to an .obj file, on the  **Configuration Properties** > **Linker** > **General** property page, select **Additional Library Dependencies** and then specify the relative path of the file. For more information, see [Linker property pages](linker-property-pages.md).

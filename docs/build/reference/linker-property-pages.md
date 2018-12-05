@@ -7,7 +7,7 @@ ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
 ---
 # Linker Property Pages
 
-This topic discusses the following properties on the **General** linker property page. For the Linux version of this page, see [Linker Properties (Linux C++)](../linux/prop-pages/linker-linux.md).
+This topic discusses the following properties on the **General** linker property page. For the Linux version of this page, see [Linker Properties (Linux C++)](../../linux/prop-pages/linker-linux.md).
 
 ## General page properties
 

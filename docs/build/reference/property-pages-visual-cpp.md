@@ -15,7 +15,7 @@ Not all available pages are necessarily displayed in the **Property Pages** dial
 
 For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
-For non-Windows projects, see [Linux C++ Property Page Reference](../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md)-->.
+For non-Windows projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../../linux/prop-pages-linux.md)-->.
 
 ## Default Properties vs. Modified Properties
 
@@ -79,11 +79,11 @@ Notice that a property page only displays the settings at the current level for 
 
 [HLSL Property Pages](hlsl-property-pages.md)
 
-[HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)
+[HLSL Property Pages: Advanced](hlsl-property-pages-advanced.md)
 
-[HLSL Property Pages: General](../ide/hlsl-property-pages-general.md)
+[HLSL Property Pages: General](hlsl-property-pages-general.md)
 
-[HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)
+[HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)
 
 [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/input-and-output-manifest-tool.md)
 
@@ -97,11 +97,11 @@ Notice that a property page only displays the settings at the current level for 
 
 [MIDL Property Pages](midl-property-pages.md)
 
-[MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md)
+[MIDL Property Pages: Advanced](midl-property-pages-advanced.md)
 
-[MIDL Property Pages: General](../ide/midl-property-pages-general.md)
+[MIDL Property Pages: General](midl-property-pages-general.md)
 
-[MIDL Property Pages: Output](../ide/midl-property-pages-output.md)
+[MIDL Property Pages: Output](midl-property-pages-output.md)
 
 [NMake Property Page](../ide/nmake-property-page.md)
 

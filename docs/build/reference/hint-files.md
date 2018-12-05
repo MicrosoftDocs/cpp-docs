@@ -9,7 +9,7 @@ ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
 
 A *hint file* helps the Visual Studio integrated development environment (IDE) interpret Visual C++ identifiers, such as the names of functions and macros. When you open a Visual C++ project, the IDE's *parsing system* analyzes the code in each source file in the project and gathers information about every identifier. Then the IDE uses that information to support features such as the **Class View** browser and the **Navigation Bar**.
 
-The parsing system, which is introduced in Visual C++ 2010, understands C/C++ syntax but can misinterpret a statement that contains a macro. The statement can be misinterpreted if the macro causes the source code to be syntactically incorrect as written. The statement can become syntactically correct when the source code is compiled and the preprocesser replaces the [macro identifier](../preprocessor/hash-define-directive-c-cpp.md) with its definition. The parsing system works without having to build the project because it uses hint files to interpret macros. Therefore, a browsing feature such as **Class View** is immediately available.
+The parsing system, which is introduced in Visual C++ 2010, understands C/C++ syntax but can misinterpret a statement that contains a macro. The statement can be misinterpreted if the macro causes the source code to be syntactically incorrect as written. The statement can become syntactically correct when the source code is compiled and the preprocesser replaces the [macro identifier](../../preprocessor/hash-define-directive-c-cpp.md) with its definition. The parsing system works without having to build the project because it uses hint files to interpret macros. Therefore, a browsing feature such as **Class View** is immediately available.
 
 A hint file contains user-customizable *hints*, which have the same syntax as C/C++ macro definitions. Visual C++ includes a built-in hint file that is sufficient for most projects, but you can create your own hint files to improve the way Visual Studio handles identifiers.
 
@@ -78,9 +78,9 @@ For a depiction of how hints are gathered, see the `Example` section later in th
 
 ### Syntax
 
-Hints are created and deleted with the same syntax as the preprocessor directives that create and delete macros. In fact, the parsing system uses the C/C++ preprocessor to evaluate the hints. For more information about the preprocessor directives, see [#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md) and [#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md).
+Hints are created and deleted with the same syntax as the preprocessor directives that create and delete macros. In fact, the parsing system uses the C/C++ preprocessor to evaluate the hints. For more information about the preprocessor directives, see [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md) and [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md).
 
-The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These are hint-file specific replacement strings that are used with only *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, `MFC` uses maps to create [message maps](../mfc/reference/message-maps-mfc.md), and `ATL` uses maps to create [object maps](../atl/reference/object-map-macros.md). The hint-file specific replacement strings indicate the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
+The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These are hint-file specific replacement strings that are used with only *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, `MFC` uses maps to create [message maps](../../mfc/reference/message-maps-mfc.md), and `ATL` uses maps to create [object maps](../atl/reference/object-map-macros.md). The hint-file specific replacement strings indicate the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
 
 Hints use the following syntax.
 
@@ -100,7 +100,7 @@ Certain types of macros can interfere with the parsing system. This section desc
 
 ### Disruptive Macros
 
-Some macros cause the parsing system to misinterpret source code, but can be ignored without impairing your browsing experience. For example, the Source Code Annotation Language ([SAL](../c-runtime-library/sal-annotations.md)) macros resolve to C++ attributes that help you find programming bugs. If you want to ignore SAL annotations as you browse code, you might want to create a hint file that hides the annotation.
+Some macros cause the parsing system to misinterpret source code, but can be ignored without impairing your browsing experience. For example, the Source Code Annotation Language ([SAL](../../c-runtime-library/sal-annotations.md)) macros resolve to C++ attributes that help you find programming bugs. If you want to ignore SAL annotations as you browse code, you might want to create a hint file that hides the annotation.
 
 In the following source code, the parameter type for the `FormatWindowClassName()` function is `PXSTR`, and the parameter name is `szBuffer`. However, the parsing system mistakes the `_Pre_notnull_` and `_Post_z_` SAL annotations for either the parameter type or the parameter name.
 
@@ -122,7 +122,7 @@ The strategy in this situation is to treat the SAL annotations as if they did no
 
 ### Concealed C/C++ Language Elements
 
-A typical reason that the parsing system misinterprets source code is if a macro hides a C/C++ [punctuator](../cpp/punctuators-cpp.md) or [keyword](../cpp/keywords-cpp.md) token. That is, a macro might contain half of a pair of punctuators, such as `<>`, `[]`, `{}`, and `()`.
+A typical reason that the parsing system misinterprets source code is if a macro hides a C/C++ [punctuator](../../cpp/punctuators-cpp.md) or [keyword](../../cpp/keywords-cpp.md) token. That is, a macro might contain half of a pair of punctuators, such as `<>`, `[]`, `{}`, and `()`.
 
 In the following source code, the `START_NAMESPACE` macro hides an unpaired left brace (`{`).
 
@@ -310,9 +310,9 @@ The following notes apply to the preceding list.
 ## See Also
 
 [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
-[#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>
-[#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)<br>
-[SAL Annotations](../c-runtime-library/sal-annotations.md)<br>
-[Message Maps](../mfc/reference/message-maps-mfc.md)<br>
+[#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
+[#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
+[SAL Annotations](../../c-runtime-library/sal-annotations.md)<br>
+[Message Maps](../../mfc/reference/message-maps-mfc.md)<br>
 [Message Map Macros](../atl/reference/message-map-macros-atl.md)<br>
 [Object Map Macros](../atl/reference/object-map-macros.md)

@@ -8,15 +8,15 @@ ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
 
 You can use the HLSL compiler (fxc.exe) property pages to configure how individual HLSL shader files are built. The properties are divided into three categories:
 
-- [HLSL Property Pages: General](../ide/hlsl-property-pages-general.md)
+- [HLSL Property Pages: General](hlsl-property-pages-general.md)
 
    Provides properties to specify commonly-used options for the HLSL compiler.
 
-- [HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)
+- [HLSL Property Pages: Advanced](hlsl-property-pages-advanced.md)
 
    Provides properties to specify additional options for the HLSL compiler.
 
-- [HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)
+- [HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)
 
    Provides properties to specify how files are output by the HLSL compiler.
 

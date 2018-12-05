@@ -6,7 +6,7 @@ ms.assetid: 4fdcbd66-66b0-4866-894a-fd7b4c2557e4
 ---
 # Help Files (WinHelp)
 
-The following files are created when you add the WinHelp type of Help support to your application by selecting the **Context-sensitive help** check box and then selecting **WinHelp format** in the [Advanced Features](../mfc/reference/advanced-features-mfc-application-wizard.md) page of the MFC Application Wizard.
+The following files are created when you add the WinHelp type of Help support to your application by selecting the **Context-sensitive help** check box and then selecting **WinHelp format** in the [Advanced Features](../../mfc/reference/advanced-features-mfc-application-wizard.md) page of the MFC Application Wizard.
 
 |File name|Directory location|Solution Explorer location|Description|
 |---------------|------------------------|--------------------------------|-----------------|
@@ -17,7 +17,7 @@ The following files are created when you add the WinHelp type of Help support to
 |Print.rtf|*Projname*\hlp|Help Files|Created if your project includes printing support (the default). Describes the printing commands and dialog boxes.|
 |*.bmp|*Projname*\hlp|Resource Files|Contain images for the different generated help file topics.|
 
-You can add WinHelp support to an MFC ActiveX Control project by selecting **Generate help files** in the [Application Settings](../mfc/reference/application-settings-mfc-activex-control-wizard.md) tab of the MFC ActiveX Control Wizard. The following files are added to your project when you add Help support to an MFC ActiveX control:
+You can add WinHelp support to an MFC ActiveX Control project by selecting **Generate help files** in the [Application Settings](../../mfc/reference/application-settings-mfc-activex-control-wizard.md) tab of the MFC ActiveX Control Wizard. The following files are added to your project when you add Help support to an MFC ActiveX control:
 
 |File name|Directory location|Solution Explorer location|Description|
 |---------------|------------------------|--------------------------------|-----------------|

@@ -12,7 +12,7 @@ When you right-click on a project node in Solution Explorer, and select **Proper
 
 - Project Defaults
 
-For non-Windows projects, see [Linux C++ Property Page Reference](../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md)-->.
+For non-Windows projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../../linux/prop-pages-linux.md)-->.
 
 ## General
 
@@ -26,7 +26,7 @@ The properties in the General section affect the location of files that are crea
 
    For the Windows target platform, this specifies the version of the Windows SDK that your project requires. When you install a C++ Workload by using the Visual Studio installer, the required parts of the Windows SDK are also installed. If you have other Windows SDK versions on your computer, each version of the SDK tools that you have installed appears in the dropdown.
 
-   To target Windows 7 or Windows Vista, use the value **8.1**, since Windows SDK 8.1 is backward compatible to those platforms. In addition, you should define the appropriate value for **_WIN32_WINNT** in targetver.h. For Windows 7, that's 0x0601. See [Modifying WINVER and _WIN32_WINNT](../porting/modifying-winver-and-win32-winnt.md).
+   To target Windows 7 or Windows Vista, use the value **8.1**, since Windows SDK 8.1 is backward compatible to those platforms. In addition, you should define the appropriate value for **_WIN32_WINNT** in targetver.h. For Windows 7, that's 0x0601. See [Modifying WINVER and _WIN32_WINNT](../../porting/modifying-winver-and-win32-winnt.md).
 
    You can install the Windows XP platform toolset included in Visual Studio to use the current version of the libraries to build Windows XP and Windows 2003 Server projects. For information on how to obtain and use this platform toolset, see [Configuring Programs for Windows XP](../build/configuring-programs-for-windows-xp.md). For additional information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
@@ -66,7 +66,7 @@ The properties in the General section affect the location of files that are crea
 
    Allows you to specify a non-default location for the log file that is created whenever you build a project. The default location is specified by the macros $(IntDir)$(MSBuildProjectName).log.
 
-   You can use project macros to change the directory location. See [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md).
+   You can use project macros to change the directory location. See [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
 
 - **Platform Toolset**
 

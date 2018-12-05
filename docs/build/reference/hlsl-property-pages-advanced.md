@@ -21,5 +21,5 @@ To configure the following properties of the HLSL compiler (fxc.exe), use its **
 ## See Also
 
 [HLSL Property Pages](hlsl-property-pages.md)<br>
-[HLSL Property Pages: General](../ide/hlsl-property-pages-general.md)<br>
-[HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)
+[HLSL Property Pages: General](hlsl-property-pages-general.md)<br>
+[HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)

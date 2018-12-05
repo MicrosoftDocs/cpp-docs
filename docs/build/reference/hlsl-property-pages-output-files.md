@@ -41,5 +41,5 @@ This property corresponds to the **/Fo[name]** command-line argument.
 ## See Also
 
 [HLSL Property Pages](../ide/hlsl-property-pages.md)<br>
-[HLSL Property Pages: General](../ide/hlsl-property-pages-general.md)<br>
-[HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)
+[HLSL Property Pages: General](hlsl-property-pages-general.md)<br>
+[HLSL Property Pages: Advanced](hlsl-property-pages-advanced.md)

@@ -22,7 +22,7 @@ When a file is selected in **Solution Explorer**, the **General** property page 
 
 For information on how to access the **General** property page under the **Configuration Properties** node, see [Working with Project Properties](../working-with-project-properties.md).
 
-For non-Windows projects, see [Linux C++ Property Page Reference](../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md)-->.
+For non-Windows projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../../linux/prop-pages-linux.md)-->.
 
 ## See also
 

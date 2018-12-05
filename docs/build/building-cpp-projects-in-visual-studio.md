@@ -41,7 +41,7 @@ To read more about how to build, modify build settings, and specify custom build
 [Understanding Custom Build Steps and Build Events](understanding-custom-build-steps-and-build-events.md)<br>
 Describes how to customize the build process in the integrated development environment.
 
-[Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md)<br>
+[Common Macros for Build Commands and Properties](reference/common-macros-for-build-commands-and-properties.md)<br>
 Lists macros that you can use where strings are accepted.
 
 [Building External Projects](building-external-projects.md)<br>

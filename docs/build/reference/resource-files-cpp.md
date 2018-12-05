@@ -19,7 +19,7 @@ See [Working with Resources](../windows/working-with-resource-files.md) for more
 |*Projname*.ico|*Projname*\res|Resource Files|The icon file for the project or control. This icon appears when the application is minimized. It is also used in the application's **About** box. By default, MFC provides the MFC icon, and ATL provides the ATL icon.|
 |*Projname*Doc.ico|*Projname*\res|Resource Files|The icon file for an MFC project that includes support for the document/view architecture.|
 |Toolbar.bmp|*Projname*\res|Resource Files|The bitmap file representing the application or control in a toolbar or palette. This bitmap is included in the project's resource file. The initial toolbar and status bar are constructed in the **CMainFrame** class.|
-|ribbon.mfcribbon-ms|*Projname*\res|Resource Files|The resource file that contains the XML code that defines the buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md).|
+|ribbon.mfcribbon-ms|*Projname*\res|Resource Files|The resource file that contains the XML code that defines the buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer (MFC)](../../mfc/ribbon-designer-mfc.md).|
 
 ## See Also
 

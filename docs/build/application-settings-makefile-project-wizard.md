@@ -28,7 +28,7 @@ Provide the information for the project. The options you specify are reflected i
 ## See Also
 
 [Makefile Project Wizard](makefile-project-wizard.md)<br>
-[Creating a Makefile Project](..creating-a-makefile-project.md)<br>
+[Creating a Makefile Project](creating-a-makefile-project.md)<br>
 [Visual C++ Project Types](visual-cpp-project-types.md)<br>
 [Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)<br>
-[Property Pages](property-pages-visual-cpp.md)
+[Property Pages](reference/property-pages-visual-cpp.md)

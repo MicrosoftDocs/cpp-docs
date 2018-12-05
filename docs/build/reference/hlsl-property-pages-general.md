@@ -53,5 +53,5 @@ The **/Od** command-line argument to the HLSL compiler implicitly applies the **
 ## See Also
 
 [HLSL Property Pages](hlsl-property-pages.md)<br>
-[HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)<br>
-[HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)
+[HLSL Property Pages: Advanced](hlsl-property-pages-advanced.md)<br>
+[HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)

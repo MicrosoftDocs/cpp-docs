@@ -6,7 +6,7 @@ ms.assetid: d30a1b1b-318f-4a78-8b60-93da53a224a8
 ---
 # Help Files (HTML Help)
 
-The following files are created when you add the HTML Help type of Help support to your application by selecting the **Context-sensitive help** check box and then selecting **HTML Help format** in the [Advanced Features](../mfc/reference/advanced-features-mfc-application-wizard.md) page of the MFC Application Wizard.
+The following files are created when you add the HTML Help type of Help support to your application by selecting the **Context-sensitive help** check box and then selecting **HTML Help format** in the [Advanced Features](../../mfc/reference/advanced-features-mfc-application-wizard.md) page of the MFC Application Wizard.
 
 |File name|Directory location|Solution Explorer location|Description|
 |---------------|------------------------|--------------------------------|-----------------|
