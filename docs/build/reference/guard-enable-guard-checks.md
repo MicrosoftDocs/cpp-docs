@@ -23,7 +23,7 @@ The /GUARD:CF option must be specified to both the compiler and linker to create
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Expand **Configuration Properties**, **Linker**, **Command Line**.
 

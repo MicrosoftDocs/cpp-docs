@@ -24,6 +24,6 @@ You can specify command-line arguments to the HLSL compiler by using the **Addit
 
 ## See Also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
-[Command Line Property Pages](../ide/command-line-property-pages.md)<br>
+[Property Pages](property-pages-visual-cpp.md)<br>
+[Command Line Property Pages](command-line-property-pages.md)<br>
 [Compiling Shaders](http://go.microsoft.com/fwlink/p/?LinkID=258284&clcid=0x409)

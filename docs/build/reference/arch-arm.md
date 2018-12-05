@@ -29,7 +29,7 @@ When you use [/clr](../../build/reference/clr-common-language-runtime-compilatio
 
 ### To set the /arch:ARMv7VE or /arch:VFPv4 compiler option in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Select the **C/C++** folder.
 

@@ -13,7 +13,7 @@ A library is specified to LINK as either a file name argument or a default libra
 
 ## To add .lib files as linker input in the development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Choose the **Input** property page in the **Linker** folder.
 

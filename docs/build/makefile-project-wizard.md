@@ -13,7 +13,7 @@ Use this wizard to create a command line for the build engine to execute. Once y
 
 This wizard page describes the current project settings for the project you are creating. By default, the project is set up to build both debug and release configurations of *ProjName*.exe.
 
-To change these defaults, click the [Application Settings](../ide/application-settings-makefile-project-wizard.md) tab in the left column of the wizard and make the desired changes.
+To change these defaults, click the [Application Settings](application-settings-makefile-project-wizard.md) tab in the left column of the wizard and make the desired changes.
 
 ## See Also
 

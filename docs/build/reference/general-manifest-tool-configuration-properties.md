@@ -31,5 +31,5 @@ To access this property page dialog box, open the property pages for your projec
 ## See Also
 
 [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br>
-[Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)<br>
-[Working with Project Properties](../ide/working-with-project-properties.md)
+[Manifest Tool Property Pages](manifest-tool-property-pages.md)<br>
+[Working with Project Properties](../working-with-project-properties.md)

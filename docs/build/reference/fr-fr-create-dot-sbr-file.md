@@ -33,7 +33,7 @@ If you do not specify `filename`, the .sbr file gets the same base name as the s
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. In the navigation pane, choose the **C/C++**, **Browse Information** property page.
 

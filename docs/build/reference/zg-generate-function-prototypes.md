@@ -36,7 +36,7 @@ The **/Zg** option was deprecated in Visual Studio 2005 and has been removed in 
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 

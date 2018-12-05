@@ -39,7 +39,7 @@ A user's ability to send reports depends on computer and user policy permissions
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 

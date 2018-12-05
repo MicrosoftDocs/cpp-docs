@@ -80,7 +80,7 @@ The **/kernel** option and the **/driver** option operate independently and neit
 
 ### To set the /kernel compiler option in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Select the **C/C++** folder.
 

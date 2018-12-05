@@ -57,7 +57,7 @@ Congratulations, you've built and run a console app in Visual Studio!
 
 ## Next Steps
 
-Once you've built and run this simple app, you're ready for more complex projects. See [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md) for more detailed walkthroughs that explore the capabilities of Visual C++ in Visual Studio.
+Once you've built and run this simple app, you're ready for more complex projects. See [Using the Visual Studio IDE for C++ Desktop Development](using-the-visual-studio-ide-for-cpp-desktop-development.md) for more detailed walkthroughs that explore the capabilities of Visual C++ in Visual Studio.
 
 ## Troubleshooting guide
 

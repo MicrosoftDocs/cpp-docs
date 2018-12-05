@@ -50,7 +50,7 @@ For more information on precompiled headers, see:
 
 1. Specify [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) on a .cpp file in your project.
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 

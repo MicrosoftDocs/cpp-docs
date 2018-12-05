@@ -23,7 +23,7 @@ The **/Zo** switch is available starting in Visual Studio 2013 Update 3, and it 
 
 ### To set the /Zo compiler option in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties**, **C/C++** folder.
 

@@ -26,5 +26,5 @@ This section presents information on why and when you would want to change from 
 
 ## See Also
 
-[Building C++ Projects in Visual Studio](../../ide/building-cpp-projects-in-visual-studio.md)<br/>
+[Building C++ Projects in Visual Studio](../building-cpp-projects-in-visual-studio.md)<br/>
 [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)

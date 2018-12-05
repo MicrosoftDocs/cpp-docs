@@ -7,7 +7,7 @@ ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
 ---
 # &lt;summary&gt; (Visual C++)
 
-The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](../ide/remarks-visual-cpp.md) to add supplemental information to a type description.
+The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](remarks-visual-cpp.md) to add supplemental information to a type description.
 
 ## Syntax
 
@@ -49,4 +49,4 @@ public:
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

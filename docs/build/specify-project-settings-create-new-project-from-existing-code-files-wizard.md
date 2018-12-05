@@ -15,7 +15,7 @@ Use this page of the Create New Project From Existing Code Files wizard to speci
 
 ## Task List
 
-[How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md)
+[How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md)
 
 ## UIElement List
 
@@ -72,5 +72,5 @@ Use this page of the Create New Project From Existing Code Files wizard to speci
 
 ## See Also
 
-[Specify Debug Configuration Settings, Create New Project From Existing Code Files Wizard](../ide/specify-debug-configuration-settings.md)<br>
-[Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard](../ide/specify-release-configuration.md)
+[Specify Debug Configuration Settings, Create New Project From Existing Code Files Wizard](specify-debug-configuration-settings.md)<br>
+[Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard](specify-release-configuration.md)

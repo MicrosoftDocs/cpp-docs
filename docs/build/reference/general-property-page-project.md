@@ -144,4 +144,4 @@ The properties in the Project Default section represent default properties that 
 
 ## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)
+[Property Pages](property-pages-visual-cpp.md)

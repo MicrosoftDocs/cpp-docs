@@ -55,11 +55,11 @@ The **NMake** property page contains the following properties.
 
    Specifies any additional compiler switches for IntelliSense to use when it parses C++ files.
 
-For information about how to access the **NMake** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).
+For information about how to access the **NMake** property page, see [Working with Project Properties](../working-with-project-properties.md).
 
 For information about how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.
 
 ## See Also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
+[Property Pages](property-pages-visual-cpp.md)<br>
 [How to: Enable IntelliSense for Makefile Projects](../ide/how-to-enable-intellisense-for-makefile-projects.md)

@@ -28,7 +28,7 @@ For more information about Data Execution Prevention, see these articles:
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Choose the **Configuration Properties** > **Linker** > **Command Line** property page.
 

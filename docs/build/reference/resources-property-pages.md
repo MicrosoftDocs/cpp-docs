@@ -9,10 +9,10 @@ ms.assetid: dade2f6b-c51f-4c33-9023-41956ae4b5f6
 
 For more information on using the resource compiler, see [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-).
 
-For information on how to access the **Resources** property pages, see [Working with Project Properties](../ide/working-with-project-properties.md).
+For information on how to access the **Resources** property pages, see [Working with Project Properties](../working-with-project-properties.md).
 
 To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
 
 ## See Also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)
+[Property Pages](property-pages-visual-cpp.md)

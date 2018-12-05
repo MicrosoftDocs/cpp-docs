@@ -42,4 +42,4 @@ ANSI C and C++ do not require a specific implementation of the `char` type. This
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Working with Project Properties](../../ide/working-with-project-properties.md)
+[Working with Project Properties](../working-with-project-properties.md)

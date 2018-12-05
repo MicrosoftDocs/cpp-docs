@@ -13,7 +13,7 @@ You can specify project settings so that they apply all build configurations, or
 
 Not all available pages are necessarily displayed in the **Property Pages** dialog box. Which pages are displayed depends on the file types in the project.
 
-For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).
+For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 For non-Windows projects, see [Linux C++ Property Page Reference](../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md)-->.
 
@@ -65,7 +65,7 @@ Notice that a property page only displays the settings at the current level for 
 
 [Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/advanced-manifest-tool.md)
 
-[Command Line Property Pages](../ide/command-line-property-pages.md)
+[Command Line Property Pages](command-line-property-pages.md)
 
 [Custom Build Step Property Page: General](../ide/custom-build-step-property-page-general.md)
 
@@ -77,7 +77,7 @@ Notice that a property page only displays the settings at the current level for 
 
 [General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/general-manifest-tool-configuration-properties.md)
 
-[HLSL Property Pages](../ide/hlsl-property-pages.md)
+[HLSL Property Pages](hlsl-property-pages.md)
 
 [HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)
 
@@ -89,13 +89,13 @@ Notice that a property page only displays the settings at the current level for 
 
 [Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/isolated-com-manifest-tool.md)
 
-[Linker Property Pages](../ide/linker-property-pages.md)
+[Linker Property Pages](linker-property-pages.md)
 
 [Managed Resources Property Page](../ide/managed-resources-property-page.md)
 
-[Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)
+[Manifest Tool Property Pages](manifest-tool-property-pages.md)
 
-[MIDL Property Pages](../ide/midl-property-pages.md)
+[MIDL Property Pages](midl-property-pages.md)
 
 [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md)
 
@@ -105,7 +105,7 @@ Notice that a property page only displays the settings at the current level for 
 
 [NMake Property Page](../ide/nmake-property-page.md)
 
-[Resources Property Pages](../ide/resources-property-pages.md)
+[Resources Property Pages](resources-property-pages.md)
 
 [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md)
 
@@ -113,7 +113,7 @@ Notice that a property page only displays the settings at the current level for 
 
 [XML Data Generator Tool Property Page](../ide/xml-data-generator-tool-property-page.md)
 
-[XML Document Generator Tool Property Pages](../ide/xml-document-generator-tool-property-pages.md)
+[XML Document Generator Tool Property Pages](xml-document-generator-tool-property-pages.md)
 
 ## See also
 

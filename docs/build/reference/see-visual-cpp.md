@@ -7,7 +7,7 @@ ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
 ---
 # &lt;see&gt; (Visual C++)
 
-The \<see> tag lets you specify a link from within text. Use [\<seealso>](../ide/seealso-visual-cpp.md) to indicate text that you might want to appear in a See Also section.
+The \<see> tag lets you specify a link from within text. Use [\<seealso>](seealso-visual-cpp.md) to indicate text that you might want to appear in a See Also section.
 
 ## Syntax
 
@@ -26,9 +26,9 @@ The compiler checks that the given code element exists and resolves `member` to 
 
 Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
-See [\<summary>](../ide/summary-visual-cpp.md) for an example of using \<see>.
+See [\<summary>](summary-visual-cpp.md) for an example of using \<see>.
 
-The Visual C++ compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved. See [\<seealso>](../ide/seealso-visual-cpp.md) for more information.
+The Visual C++ compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved. See [\<seealso>](seealso-visual-cpp.md) for more information.
 
 ## Example
 
@@ -61,4 +61,4 @@ ref class C {};
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

@@ -7,7 +7,7 @@ ms.assetid: c820083b-3192-40ab-9ec8-1472c55b4247
 ---
 # &lt;remarks&gt; (Visual C++)
 
-The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](../ide/summary-visual-cpp.md). This information is displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.
+The \<remarks> tag is used to add information about a type, supplementing the information specified with [\<summary>](summary-visual-cpp.md). This information is displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.
 
 ## Syntax
 
@@ -44,4 +44,4 @@ public ref class MyClass {};
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

@@ -15,7 +15,7 @@ In other types of projects such as UWP projects or C++/CLI projects, or when the
 
 In a native C++ project (ATL) the concept of *references* only applies to other projects in the solution, including shared projects, so that is all you see in **Reference Manager**:
 
-![Visual C&#43;&#43; Reference Manager &#40;ATL Projects&#41;](../ide/media/visual-c---reference-manager--atl-projects-.png "Visual C++ Reference Manager (ATL Projects)")
+![Visual C&#43;&#43; Reference Manager &#40;ATL Projects&#41;](media/visual-c---reference-manager--atl-projects-.png "Visual C++ Reference Manager (ATL Projects)")
 
 In a C++/CLI or Universal Windows Platform project,  the concept of references applies to more kinds of binaries in addition to other projects in the solution.  These are all exposed in **Reference Manager**.
 
@@ -133,5 +133,5 @@ The following properties are found on COM and .NET assembly references, and cann
 
 ## See Also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
+[Property Pages](property-pages-visual-cpp.md)<br>
 [Working with Project Properties](working-with-project-properties.md)

@@ -23,10 +23,10 @@ The **Managed Resources** property page contains the following properties:
 
    Specifies whether the given .resx file contributes to the default resources or to a satellite .dll.
 
-For information on how to access the **Managed Resources** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).
+For information on how to access the **Managed Resources** property page, see [Working with Project Properties](../working-with-project-properties.md).
 
 ## See Also
 
 [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-)<br>
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
+[Property Pages](property-pages-visual-cpp.md)<br>
 [/ASSEMBLYRESOURCE (Embed a Managed Resource)](../build/reference/assemblyresource-embed-a-managed-resource.md)

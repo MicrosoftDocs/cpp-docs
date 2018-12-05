@@ -100,7 +100,7 @@ Even if you use **/GS**, always try to write secure code that has no buffer over
 
 1. In **Solution Explorer**, right-click the project and then click **Properties**.
 
-   For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+   For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. In the **Property Pages** dialog box, click the **C/C++** folder.
 

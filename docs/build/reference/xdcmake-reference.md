@@ -11,14 +11,14 @@ xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc fil
 
 ### To use xdcmake.exe in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Open the **Configuration Properties** folder.
 
 1. Click the **XML Document Comments** property page.
 
 > [!NOTE]
->  xdcmake.exe options at the command line differ from the options when xdcmake.exe is used in the development environment (property pages). For information on using xdcmake.exe in the development environment, see [XML Document Generator Tool Property Pages](../ide/xml-document-generator-tool-property-pages.md).
+>  xdcmake.exe options at the command line differ from the options when xdcmake.exe is used in the development environment (property pages). For information on using xdcmake.exe in the development environment, see [XML Document Generator Tool Property Pages](xml-document-generator-tool-property-pages.md).
 
 ## Syntax
 
@@ -43,8 +43,8 @@ Zero or more of the following:
 
 Visual Studio will invoke xdcmake.exe automatically when building a project. You can also invoke xdcmake.exe at the command line.
 
-See [Recommended Tags for Documentation Comments](../ide/recommended-tags-for-documentation-comments-visual-cpp.md) for more information on adding documentation comments to source code files.
+See [Recommended Tags for Documentation Comments](recommended-tags-for-documentation-comments-visual-cpp.md) for more information on adding documentation comments to source code files.
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

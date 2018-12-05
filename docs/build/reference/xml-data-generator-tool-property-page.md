@@ -23,10 +23,10 @@ The **XML Data Generator Tool** property page contains the following properties:
 
    Determines whether or not to emit managed code.
 
-For information on how to access the **XML Data Generator Tool** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).
+For information on how to access the **XML Data Generator Tool** property page, see [Working with Project Properties](../working-with-project-properties.md).
 
 For information on how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>
 
 ## See Also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)
+[Property Pages](property-pages-visual-cpp.md)

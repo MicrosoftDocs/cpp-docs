@@ -14,15 +14,15 @@ From within the Visual C++ development environment, there are three basic ways t
 
 - **Custom Build Tools**
 
-   A custom build tool is a build rule associated with one or more files. A custom build step can pass input files to a custom build tool, which results in one or more output files. For example, the help files in an MFC application are built with a custom build tool. For more information, see [How to: Add Custom Build Tools to MSBuild Projects](../build/how-to-add-custom-build-tools-to-msbuild-projects.md) and [Specifying Custom Build Tools](../ide/specifying-custom-build-tools.md).
+   A custom build tool is a build rule associated with one or more files. A custom build step can pass input files to a custom build tool, which results in one or more output files. For example, the help files in an MFC application are built with a custom build tool. For more information, see [How to: Add Custom Build Tools to MSBuild Projects](../build/how-to-add-custom-build-tools-to-msbuild-projects.md) and [Specifying Custom Build Tools](specifying-custom-build-tools.md).
 
 - **Build Events**
 
-   Build events let you customize a project's build. There are three build events: *pre-build*, *pre-link*, and *post-build*. A build event lets you specify an action to occur at a specific time in the build process. For example, you could use a build event to register a file with **regsvr32.exe** after the project finishes building. For more information, see [Specifying Build Events](../ide/specifying-build-events.md).
+   Build events let you customize a project's build. There are three build events: *pre-build*, *pre-link*, and *post-build*. A build event lets you specify an action to occur at a specific time in the build process. For example, you could use a build event to register a file with **regsvr32.exe** after the project finishes building. For more information, see [Specifying Build Events](specifying-build-events.md).
 
-[Troubleshooting Build Customizations](../ide/troubleshooting-build-customizations.md) can help you ensure that your custom build steps and build events run as expected.
+[Troubleshooting Build Customizations](troubleshooting-build-customizations.md) can help you ensure that your custom build steps and build events run as expected.
 
-The output format of a custom build step or build event can also enhance the usability of the tool. For more information, see [Formatting the Output of a Custom Build Step or Build Event](../ide/formatting-the-output-of-a-custom-build-step-or-build-event.md).
+The output format of a custom build step or build event can also enhance the usability of the tool. For more information, see [Formatting the Output of a Custom Build Step or Build Event](formatting-the-output-of-a-custom-build-step-or-build-event.md).
 
 Build events and custom build steps run in the following order along with other build steps:
 
@@ -52,5 +52,5 @@ The `custom build step on the project` and a `post-build event` run sequentially
 
 ## See Also
 
-[Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)<br>
-[Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)
+[Building C++ Projects in Visual Studio](building-cpp-projects-in-visual-studio.md)<br>
+[Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md)

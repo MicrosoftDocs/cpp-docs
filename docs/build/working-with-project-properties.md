@@ -10,17 +10,17 @@ In the IDE, all information that is needed to build a project is exposed as *pro
 
 When you create a project, the system assigns values for various properties. The defaults vary somewhat depending on the kind of project and what options you choose in the app wizard. For example, an ATL project has properties related to MIDL files, but these are absent in a basic console application. The default properties are shown in the General pane in the Property Pages:
 
-![Visual C&#43;&#43; Project Defaults](../ide/media/visual-c---project-defaults.png "Visual C++ Project Defaults")
+![Visual C&#43;&#43; Project Defaults](media/visual-c---project-defaults.png "Visual C++ Project Defaults")
 
 Some properties, such as the application name, apply to all build variations, regardless of the target platform or whether it is a debug or release build. But most properties are configuration-dependent. This is because the compiler has to know what specific platform the program will run on and what specific compiler options to use in order to generate the correct code. Therefore, when you set a property, it is important to pay attention to which configuration and platform the new value should apply to. Should it apply only to Debug Win32 builds, or should it also apply to Debug ARM and Debug x64? For example, the **Optimization** property, by default, is set to **Maximize Speed (/O2)** in a Release configuration, but is disabled in the Debug configuration.
 
 The property pages are designed so that you can always see, and if necessary modify, which configuration and platform a property value should apply to. The following illustration shows the property pages with the configuration and platform information in the list boxes at the top. When the **Optimization** property is set here, it will apply only to Debug Win32 builds, which happens to be the active configuration, as shown by the red arrows.
 
-![Visual C&#43;&#43; Property Pages showing active configuration](../ide/media/visual-c---property-pages-showing-active-configuration.png "Visual C++ Property Pages showing active configuration")
+![Visual C&#43;&#43; Property Pages showing active configuration](media/visual-c---property-pages-showing-active-configuration.png "Visual C++ Property Pages showing active configuration")
 
 The following illustration shows the same project property page, but the configuration has been changed to Release. Note the different value for the Optimization property. Also note that the active configuration is still Debug. You can set properties for any configuration here; it doesn't have to be the active one.
 
-![Visual C&#43;&#43; Property Pages showing release config](../ide/media/visual-c---property-pages-showing-release-config.png "Visual C++ Property Pages showing release config")
+![Visual C&#43;&#43; Property Pages showing release config](media/visual-c---property-pages-showing-release-config.png "Visual C++ Property Pages showing release config")
 
 The project system itself is based on MSBuild, which defines file formats and rules for building projects of any kind. MSBuild manages much of the complexity of building for multiple configurations and platforms, but you need to understand a little bit about how it works. This is especially important if you want to define custom configurations or create reusable sets of properties that you can share and import into multiple projects.
 
@@ -30,7 +30,7 @@ Project properties are stored either directly in the project file (*.vcxproj) or
 
 A configuration is just an arbitrary group of properties that are given a name. Visual Studio provides Debug and Release configurations and each sets various properties appropriately for a debug build or release build. You can use the **Configuration Manager** to define custom configurations as a convenient way to group properties for a specific flavor of build. The Property Manager is used for advanced work with properties, but we introduce it here because it helps visualize property configurations. You access it from **View &#124;  Property Manager** or **View &#124; Other Windows &#124; Property Manager** depending on your settings. It has nodes for each configuration/platform pair in the project. Under each of these nodes are nodes for property sheets (.props files) that set some specific properties for that configuration.
 
-![Property Manager](../ide/media/property-manager.png "Property Manager")
+![Property Manager](media/property-manager.png "Property Manager")
 
 If you go to the General pane in the Property Pages (see the illustration above) and set the Character Set property to "Not Set" instead of "Use Unicode" and click **OK**,  Property Manager will show no **Unicode Support** property sheet for the current configuration, but it will still be there for other configurations.
 
@@ -51,7 +51,7 @@ As stated earlier, the Visual C++ project system is based on [MSBuild](/visualst
 
 The following illustration shows the property pages for a Visual C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are unfortunately called *macros*. These are *not* C/C++ macros but simply compile-time constants. Macros are discussed in the [Property page macros](#bkmkPropertiesVersusMacros) section later in this article.)
 
-![Project property pages](../ide/media/project_property_pages_vc.png "Project_Property_Pages_VC")
+![Project property pages](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
 > [!WARNING]
 > The **Common Properties** configurations in earlier versions of Visual Studio have been removed. To add a reference to a project, you now use the **Add Reference** dialog in the same way as for managed languages. See [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
@@ -68,25 +68,25 @@ When you highlight a property in a Property Page, you can press **F1** to go to 
 
 You can find more information about each Property Page in these topics:
 
-- [General Property Page (Project)](../ide/general-property-page-project.md)
+- [General Property Page (Project)](general-property-page-project.md)
 
-- [General Property Page (File)](../ide/general-property-page-file.md)
+- [General Property Page (File)](general-property-page-file.md)
 
-- [Command Line Property Pages](../ide/command-line-property-pages.md)
+- [Command Line Property Pages](command-line-property-pages.md)
 
 - [Project Settings for a C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
 
-- [NMake Property Page](../ide/nmake-property-page.md)
+- [NMake Property Page](nmake-property-page.md)
 
-- [Linker Property Pages](../ide/linker-property-pages.md)
+- [Linker Property Pages](linker-property-pages.md)
 
-- [Resources Property Pages](../ide/resources-property-pages.md)
+- [Resources Property Pages](resources-property-pages.md)
 
-- [MIDL Property Pages](../ide/midl-property-pages.md)
+- [MIDL Property Pages](midl-property-pages.md)
 
-- [Web References Property Page](../ide/web-references-property-page.md)
+- [Web References Property Page](web-references-property-page.md)
 
-- [XML Data Generator Tool Property Page](../ide/xml-data-generator-tool-property-page.md)
+- [XML Data Generator Tool Property Page](xml-data-generator-tool-property-page.md)
 
 ## To quickly browse and search all properties
 
@@ -131,11 +131,11 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 You can use the Property Editor to modify certain string properties and select macros as values. To access the Property Editor, select a property on a property page and then choose the down arrow button on the right. If the drop-down list contains **\<Edit>**, then you can choose it to display the Property Editor for that property.
 
-![Property&#95;Editor&#95;Dropdown](../ide/media/property_editor_dropdown.png "Property_Editor_Dropdown")
+![Property&#95;Editor&#95;Dropdown](media/property_editor_dropdown.png "Property_Editor_Dropdown")
 
 In the Property Editor, you can choose the **Macros** button to view the available macros and their current values. The following illustration shows the Property Editor for the **Additional Include Directories** property after the **Macros** button was chosen. When the **Inherit from parent or project defaults** check box is selected and you add a new value, it is appended to any values that are currently being inherited. If you clear the check box, your new value replaces the inherited values. In most cases, leave the check box selected.
 
-![Property editor, Visual C&#43;&#43;](../ide/media/propertyeditorvc.png "PropertyEditorVC")
+![Property editor, Visual C&#43;&#43;](media/propertyeditorvc.png "PropertyEditorVC")
 
 ##  <a name="bkmkPropertySheets"></a> Creating reusable property configurations
 
@@ -152,7 +152,7 @@ To display **Property Manager**, on the menu bar, choose **View**, **Other Windo
 
 If you have a common, frequently used set of properties that you want to apply to multiple projects, you can use **Property Manager** to capture them in a reusable *property sheet* file, which by convention has a .props file name extension. You can apply the sheet (or sheets) to new projects so that you don't have to set its properties from scratch. To access **Property Manager**, on the menu bar, choose **View**, **Property Manager**.
 
-![Property Manager shortcut menu](../ide/media/sharingnew.png "SharingNew")
+![Property Manager shortcut menu](media/sharingnew.png "SharingNew")
 
 Under each configuration node, you see nodes for each property sheet that applies to that configuration. The system adds property sheets that set values based on options you choose in the app wizard when you create the project. Right-click any node and choose Properties to see the properties that apply to that node. All the property sheets are imported automatically into the project's "master" property sheet (ms.cpp.props) and are evaluated in the order they appear in Property Manager. You can move them to change the evaluation order. Property sheets that are evaluated later will override the values in previously-evaluated sheets.
 
@@ -220,7 +220,7 @@ When you add an include directory to a project, it is important not to override 
 
 ## Setting environment variables for a build
 
-The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says **Set this macro as an environment variable in the build environment**.
+The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the [VC++ Directories Property Page](vcpp-directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says **Set this macro as an environment variable in the build environment**.
 
 ## Setting environment variables for a debugging session
 
@@ -264,6 +264,6 @@ Overriding properties and targets in this way is equivalent to adding the follow
 
 ## See also
 
-[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br/>
+[Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md)<br/>
 [.vcxproj and .props file structure](vcxproj-file-structure.md)<br/>
 [Property page XML files](property-page-xml-files.md)<br/>

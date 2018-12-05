@@ -36,7 +36,7 @@ If you regularly compile your application by using a compiler that builds 64-bit
 
 1. Open the project **Property Pages** dialog box.
 
-   For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+   For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 

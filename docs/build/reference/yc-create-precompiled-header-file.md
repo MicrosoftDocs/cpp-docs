@@ -39,7 +39,7 @@ For more information on precompiled headers, see:
 
 1. Select a .cpp file. The .cpp file must #include the .h file that contains precompiled header information. The project's **/Yc** setting can be overridden at the file level.
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Open the **Configuration Properties**, **C/C++**, **Precompiled Headers** property page.
 

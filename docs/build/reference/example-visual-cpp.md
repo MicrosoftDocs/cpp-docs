@@ -7,7 +7,7 @@ ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
 ---
 # &lt;example&gt; (Visual C++)
 
-The \<example> tag lets you specify an example of how to use a method or other library member. Commonly, this would also involve use of the [\<code>](../ide/code-visual-cpp.md) tag.
+The \<example> tag lets you specify an example of how to use a method or other library member. Commonly, this would also involve use of the [\<code>](code-visual-cpp.md) tag.
 
 ## Syntax
 
@@ -53,4 +53,4 @@ public:
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

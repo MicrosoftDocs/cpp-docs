@@ -39,10 +39,10 @@ to
 #define _WIN32_WINNT 0x0500   //for Windows NT 4.0 or Windows 95 with DCOM
 ```
 
-For information on how to access the **Advanced** property page in the **MIDL** folder, see [Working with Project Properties](../ide/working-with-project-properties.md).
+For information on how to access the **Advanced** property page in the **MIDL** folder, see [Working with Project Properties](../working-with-project-properties.md).
 
 For information on how to programmatically access MIDL options for C++ projects, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>.
 
 ## See Also
 
-[MIDL Property Pages](../ide/midl-property-pages.md)
+[MIDL Property Pages](midl-property-pages.md)

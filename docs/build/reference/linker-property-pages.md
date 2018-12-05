@@ -39,9 +39,9 @@ You can also specify a .obj file by providing the file name and relative path, f
 
 In a large project, when a dependent project produces a .lib file, incremental linking is disabled. If there are many dependent projects that produce .lib files, building the application can take a long time. When this property is set to **Yes**, the project system links in the .obj files for .libs produced by dependent projects, thus enabling incremental linking.
 
-For information about how to access the **General** linker property page, see [Working with Project Properties](../ide/working-with-project-properties.md).
+For information about how to access the **General** linker property page, see [Working with Project Properties](../working-with-project-properties.md).
 
 ## See also
 
 [VC++ Project Settings, Projects and Solutions, Options Dialog Box](/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)<br>
-[Property Pages](../ide/property-pages-visual-cpp.md)
+[Property Pages](property-pages-visual-cpp.md)

@@ -33,7 +33,7 @@ If you want to set both the source character set and the execution character set
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 

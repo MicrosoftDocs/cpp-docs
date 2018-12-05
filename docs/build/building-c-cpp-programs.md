@@ -11,7 +11,7 @@ You can build Visual C++ projects either in Visual Studio or on the command line
 
 ## In This Section
 
-[Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)<br/>
+[Building C++ Projects in Visual Studio](building-cpp-projects-in-visual-studio.md)<br/>
 Discusses how to use the Visual Studio IDE to build your C/C++ project.
 
 [Build C/C++ code on the command line](../build/building-on-the-command-line.md)<br/>

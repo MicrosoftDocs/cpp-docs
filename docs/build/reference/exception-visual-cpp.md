@@ -22,7 +22,7 @@ A reference to an exception that is available from the current compilation envir
 
 Enclose the name in single or double quotation marks.
 
-For information on how to create a cref reference to a generic type, see [\<see>](../ide/see-visual-cpp.md).
+For information on how to create a cref reference to a generic type, see [\<see>](see-visual-cpp.md).
 
 *description*<br/>
 A description.
@@ -31,7 +31,7 @@ A description.
 
 Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
-The Visual C++ compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved. See [\<seealso>](../ide/seealso-visual-cpp.md) for more information.
+The Visual C++ compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved. See [\<seealso>](seealso-visual-cpp.md) for more information.
 
 ## Example
 
@@ -59,4 +59,4 @@ public ref class TestClass {
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

@@ -29,7 +29,7 @@ The `__AVX__` preprocessor symbol is defined when the **/arch:AVX** compiler opt
 
 ### To set the /arch:AVX or /arch:AVX2 compiler option in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties**, **C/C++** folder.
 

@@ -6,7 +6,7 @@ ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
 ---
 # HLSL Property Pages: General
 
-To configure the following properties of the HLSL compiler (fxc.exe), use its **General** property page. For information about how to access the **General** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).
+To configure the following properties of the HLSL compiler (fxc.exe), use its **General** property page. For information about how to access the **General** property page in the HLSL folder, see [Working with Project Properties](../working-with-project-properties.md).
 
 ## UIElement List
 
@@ -52,6 +52,6 @@ The **/Od** command-line argument to the HLSL compiler implicitly applies the **
 
 ## See Also
 
-[HLSL Property Pages](../ide/hlsl-property-pages.md)<br>
+[HLSL Property Pages](hlsl-property-pages.md)<br>
 [HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)<br>
 [HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)

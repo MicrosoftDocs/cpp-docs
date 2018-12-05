@@ -7,7 +7,7 @@ ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
 ---
 # &lt;value&gt; (Visual C++)
 
-The \<value> tag lets you describe a property and property accessor methods. Note that when you add a property with a code wizard in the Visual Studio integrated development environment, it will add a [\<summary>](../ide/summary-visual-cpp.md) tag for the new property. You should then manually add a \<value> tag to describe the value that the property represents.
+The \<value> tag lets you describe a property and property accessor methods. Note that when you add a property with a code wizard in the Visual Studio integrated development environment, it will add a [\<summary>](summary-visual-cpp.md) tag for the new property. You should then manually add a \<value> tag to describe the value that the property represents.
 
 ## Syntax
 
@@ -50,4 +50,4 @@ public:
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

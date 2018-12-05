@@ -9,7 +9,7 @@ ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
 
 This section describes the options available for controlling BSCMAKE. Several options control the content of the browse information file by excluding or including certain information. The exclusion options can allow BSCMAKE to run faster and may result in a smaller .bsc file. Option names are case sensitive (except for **/HELP** and **/NOLOGO**).
 
-Only **/NOLOGO** and **/o** are available from within the Visual Studio development environment.  See [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md) for information on access a project's property pages.
+Only **/NOLOGO** and **/o** are available from within the Visual Studio development environment.  See [Setting Visual C++ Project Properties](../working-with-project-properties.md) for information on access a project's property pages.
 
 **/Ei (** *filename*...**)**<br/>
 Excludes the contents of the specified include files from the browse information file. To specify multiple files, separate the names with a space and enclose the list in parentheses. Parentheses are not necessary if you specify only one *filename*. Use **/Ei** along with the **/Es** option to exclude files not excluded by **/Es**.

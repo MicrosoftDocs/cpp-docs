@@ -31,7 +31,7 @@ The option **/errorreport:send** automatically sends error information to Micros
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Open the **Configuration Properties** > **Linker** > **Advanced** property page.
 

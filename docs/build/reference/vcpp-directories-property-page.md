@@ -49,7 +49,7 @@ You can search for partial or complete matches in the edit box. The following il
 
 Note: The list is populated as you type. Don't press **Enter**.
 
-For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../ide/working-with-project-properties.md).
+For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../working-with-project-properties.md).
 
 For a list of commonly used macros, see [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
 
@@ -75,7 +75,7 @@ Directories in which to search for include files that are referenced in the sour
 Directories in which to search for assembly and module (metadata) files that are referenced in the source code by the [#using](../preprocessor/hash-using-directive-cpp.md) directive. Corresponds to the **LIBPATH** environment variable.
 
 **Library Directories**<br/>
-Directories in which to search for libraries (.lib) files; this includes run-time libraries. Corresponds to the **LIB** environment variable. This setting does not apply to .obj files; to link to an .obj file, on the  **Configuration Properties** > **Linker** > **General** property page, select **Additional Library Dependencies** and then specify the relative path of the file. For more information, see [Linker property pages](../ide/linker-property-pages.md).
+Directories in which to search for libraries (.lib) files; this includes run-time libraries. Corresponds to the **LIB** environment variable. This setting does not apply to .obj files; to link to an .obj file, on the  **Configuration Properties** > **Linker** > **General** property page, select **Additional Library Dependencies** and then specify the relative path of the file. For more information, see [Linker property pages](linker-property-pages.md).
 
 **Library WinRT Directories**<br/>
 Directories to search for WinRT library files for use in Universal Windows Platform (UWP) apps.
@@ -88,4 +88,4 @@ Before each compilation, Visual Studio queries the timestamp on all files to det
 
 ## Sharing the Settings
 
-You can share project properties with other users or across multiple computers. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).
+You can share project properties with other users or across multiple computers. For more information, see [Working with Project Properties](../working-with-project-properties.md).

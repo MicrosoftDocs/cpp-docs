@@ -6,9 +6,9 @@ ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
 ---
 # C/C++ Building Reference
 
-Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual C++ development environment](../../ide/building-cpp-projects-in-visual-studio.md). The other way is to [build from a command prompt using command-line tools](../../build/building-on-the-command-line.md). In either case, you can create your source files using the Visual C++ source editor or a third-party editor of your choice.
+Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual C++ development environment](../building-cpp-projects-in-visual-studio.md). The other way is to [build from a command prompt using command-line tools](../../build/building-on-the-command-line.md). In either case, you can create your source files using the Visual C++ source editor or a third-party editor of your choice.
 
-If your program uses a makefile rather than a .vcxproj file, you can still build it in the development environment as an [external project](../../ide/building-external-projects.md).
+If your program uses a makefile rather than a .vcxproj file, you can still build it in the development environment as an [external project](../building-external-projects.md).
 
 ## In This Section
 
@@ -35,7 +35,7 @@ Introduces the build errors section in the table of contents.
 [C/C++ Preprocessor Reference](../../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 Discusses the preprocessor, which prepares source files for the compiler by translating macros, operators, and directives.
 
-[Understanding Custom Build Steps and Build Events](../../ide/understanding-custom-build-steps-and-build-events.md)<br/>
+[Understanding Custom Build Steps and Build Events](../understanding-custom-build-steps-and-build-events.md)<br/>
 Discusses customizing the build process.
 
 [Building a C/C++ Program](../../build/building-c-cpp-programs.md)<br/>

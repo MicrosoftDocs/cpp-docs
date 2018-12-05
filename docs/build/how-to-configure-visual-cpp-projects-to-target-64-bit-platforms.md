@@ -36,11 +36,11 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
 
   - The [/MACHINE](../build/reference/machine-specify-target-platform.md) linker option is set to **/MACHINE:X64**.
 
-  - **Register Output** is turned OFF. For more information, see [Linker Property Pages](../ide/linker-property-pages.md).
+  - **Register Output** is turned OFF. For more information, see [Linker Property Pages](linker-property-pages.md).
 
-  - **Target Environment** is set to **/env x64**. For more information, see [MIDL Property Pages: General](../ide/midl-property-pages-general.md).
+  - **Target Environment** is set to **/env x64**. For more information, see [MIDL Property Pages: General](midl-property-pages-general.md).
 
-  - **Validate Parameters** is cleared and reset to the default value. For more information, see [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md).
+  - **Validate Parameters** is cleared and reset to the default value. For more information, see [MIDL Property Pages: Advanced](midl-property-pages-advanced.md).
 
   - If **Debug Information Format** was set to **/ZI** in the Win32 project configuration, then it is set to **/Zi** in the 64-bit project configuration. For more information, see [/Z7, /Zi, /ZI (Debug Information Format)](../build/reference/z7-zi-zi-debug-information-format.md).
 

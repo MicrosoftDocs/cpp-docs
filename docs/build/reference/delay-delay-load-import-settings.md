@@ -30,7 +30,7 @@ To specify DLLs to delay load, use the [/DELAYLOAD](../../build/reference/delayl
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Expand **Configuration Properties**, **Linker**, and then select **Advanced**.
 

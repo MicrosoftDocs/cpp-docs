@@ -60,7 +60,7 @@ The optional minimum and default *major* and *minor* version numbers for the sub
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../working-with-project-properties.md).
 
 1. Select the Linker folder.
 

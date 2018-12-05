@@ -40,7 +40,7 @@ It will be necessary for you to use single-threading, for example, if your CLR p
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 

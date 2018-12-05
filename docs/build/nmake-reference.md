@@ -32,6 +32,6 @@ To use NMAKE, you must run it in a Developer Command Prompt window. A Developer 
 
 [Build C/C++ code on the command line](../build/building-on-the-command-line.md)<br/>
 [C/C++ Build Tools](../build/reference/c-cpp-build-tools.md)<br/>
-[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br/>
+[Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md)<br/>
 [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md)

@@ -7,7 +7,7 @@ ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
 ---
 # &lt;c&gt; (Visual C++)
 
-The \<c> tag indicates that text within a description should be marked as code. Use [\<code>](../ide/code-visual-cpp.md) to indicate multiple lines as code.
+The \<c> tag indicates that text within a description should be marked as code. Use [\<code>](code-visual-cpp.md) to indicate multiple lines as code.
 
 ## Syntax
 
@@ -47,4 +47,4 @@ public:
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

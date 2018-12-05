@@ -32,7 +32,7 @@ To build a project that's selected in **Solution Explorer**, you can:
 
 When you build a Visual C++ application in Visual Studio, you can modify many of the build's settings in the project's Property Pages dialog box. For information about how to set project properties, see [Working with Project Properties](working-with-project-properties.md).
 
-For an example about how to use the IDE to create, build, and debug a C++ project, see [Walkthrough: Explore the Visual Studio IDE with C++](/visualstudio/ide/getting-started-with-cpp-in-visual-studio). For an example about how to use the IDE to build a C++/CLR project, see [Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md). For an example about how to use the IDE to create a Windows Runtime app, see [Create your first Windows Runtime app using C++](https://msdn.microsoft.com/library/windows/apps/hh974580.aspx).
+For an example about how to use the IDE to create, build, and debug a C++ project, see [Walkthrough: Explore the Visual Studio IDE with C++](/visualstudio/ide/getting-started-with-cpp-in-visual-studio). For an example about how to use the IDE to build a C++/CLR project, see [Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio](walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md). For an example about how to use the IDE to create a Windows Runtime app, see [Create your first Windows Runtime app using C++](https://msdn.microsoft.com/library/windows/apps/hh974580.aspx).
 
 To read more about how to build, modify build settings, and specify custom build steps, see the following articles.
 
@@ -41,13 +41,13 @@ To read more about how to build, modify build settings, and specify custom build
 [Understanding Custom Build Steps and Build Events](understanding-custom-build-steps-and-build-events.md)<br>
 Describes how to customize the build process in the integrated development environment.
 
-[Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)<br>
+[Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md)<br>
 Lists macros that you can use where strings are accepted.
 
-[Building External Projects](../ide/building-external-projects.md)<br>
+[Building External Projects](building-external-projects.md)<br>
 Discusses building projects that use facilities outside the integrated development environment.
 
-[Project Files](../ide/project-files.md)<br>
+[Project Files](project-files.md)<br>
 Presents the XML structure of a .vcxproj file.
 
 ## Related Sections

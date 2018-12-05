@@ -10,7 +10,7 @@ You can debug a release build of an application.
 
 ### To debug a release build
 
-1. Open the **Property Pages** dialog box for the project. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For details, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Click the **C/C++** node. Set **Debug Information Format** to [C7 compatible (/Z7)](../../build/reference/z7-zi-zi-debug-information-format.md) or **Program Database (/Zi)**.
 

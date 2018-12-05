@@ -20,4 +20,4 @@ For more information on the manifest tool, see [Mt.exe](https://msdn.microsoft.c
 
 ## See Also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)
+[Property Pages](property-pages-visual-cpp.md)

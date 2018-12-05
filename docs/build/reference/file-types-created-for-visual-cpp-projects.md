@@ -12,9 +12,9 @@ This topic describes all the types of files that are associated with Visual C++ 
 
 - [CLR Projects](../ide/files-created-for-clr-projects.md)
 
-- [ATL Program or Control Source and Header Files](../ide/atl-program-or-control-source-and-header-files.md)
+- [ATL Program or Control Source and Header Files](atl-program-or-control-source-and-header-files.md)
 
-- [MFC Program or Control Source and Header Files](../ide/mfc-program-or-control-source-and-header-files.md)
+- [MFC Program or Control Source and Header Files](mfc-program-or-control-source-and-header-files.md)
 
 - [Precompiled Header Files](../ide/precompiled-header-files.md)
 
@@ -77,4 +77,4 @@ When you add an item to a project, you add the item to all configurations for th
 ## See Also
 
 [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br>
-[Visual C++ Project Types](../ide/visual-cpp-project-types.md)<br>
+[Visual C++ Project Types](../visual-cpp-project-types.md)<br>

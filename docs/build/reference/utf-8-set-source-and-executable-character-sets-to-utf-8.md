@@ -23,7 +23,7 @@ By default, Visual Studio detects a byte-order mark to determine if the source f
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 

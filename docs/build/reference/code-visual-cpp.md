@@ -22,14 +22,14 @@ The text you want marked as code.
 
 ## Remarks
 
-Use [\<c>](../ide/c-visual-cpp.md) to indicate a portion of text should be marked as code.
+Use [\<c>](c-visual-cpp.md) to indicate a portion of text should be marked as code.
 
 Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
-See the [\<example>](../ide/example-visual-cpp.md) topic for an example of how to use the \<code> tag.
+See the [\<example>](example-visual-cpp.md) topic for an example of how to use the \<code> tag.
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

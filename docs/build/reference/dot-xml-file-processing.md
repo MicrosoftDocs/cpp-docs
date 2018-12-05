@@ -6,7 +6,7 @@ ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
 ---
 # .Xml File Processing
 
-The compiler generates an ID string for each construct in your code that is tagged to generate documentation. For more information, see [Recommended Tags Documentation Comments](../ide/recommended-tags-for-documentation-comments-visual-cpp.md). The ID string uniquely identifies the construct. Programs that process the .xml file can use the ID string to identify the corresponding .NET Framework metadata or reflection item to which the documentation applies.
+The compiler generates an ID string for each construct in your code that is tagged to generate documentation. For more information, see [Recommended Tags Documentation Comments](recommended-tags-for-documentation-comments-visual-cpp.md). The ID string uniquely identifies the construct. Programs that process the .xml file can use the ID string to identify the corresponding .NET Framework metadata or reflection item to which the documentation applies.
 
 The .xml file is not a hierarchical representation of your code, it is a flat list with a generated ID for each element.
 
@@ -173,4 +173,4 @@ namespace N {
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

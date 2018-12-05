@@ -27,7 +27,7 @@ For general information on build events, see [Understanding Custom Build Steps a
 
    - In **Command Line**, specify a command as if you were specifying it at the command prompt. Specify a valid command or batch file, and any required input or output files. Specify the **call** batch command before the name of a batch file to guarantee that all subsequent commands are executed.
 
-      Multiple input and output files can be specified symbolically with MSBuild macros. For information on how to specify the location of files, or the names of sets of files, see [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md).
+      Multiple input and output files can be specified symbolically with MSBuild macros. For information on how to specify the location of files, or the names of sets of files, see [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
 
       Because the '%' character is reserved by MSBuild, if you specify an environment variable replace each **%** escape character with the **%25** hexadecimal escape sequence. For example, replace **%WINDIR%** with **%25WINDIR%25**. MSBuild replaces each **%25** sequence with the **%** character before it accesses the environment variable.
 
@@ -38,5 +38,5 @@ For general information on build events, see [Understanding Custom Build Steps a
 ## See also
 
 [Understanding Custom Build Steps and Build Events](understanding-custom-build-steps-and-build-events.md)<br>
-[Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)<br>
-[Troubleshooting Build Customizations](../ide/troubleshooting-build-customizations.md)
+[Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md)<br>
+[Troubleshooting Build Customizations](troubleshooting-build-customizations.md)

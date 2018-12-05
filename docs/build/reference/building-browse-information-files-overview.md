@@ -17,7 +17,7 @@ Use [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) or [/Fr](../../bui
 
 You can reduce the time, memory, and disk space required to build a .bsc file by reducing the size of the .bsc file.
 
-See [General Property Page (Project)](../../ide/general-property-page-project.md) for information on how to build a browser file in the development environment.
+See [General Property Page (Project)](../general-property-page-project.md) for information on how to build a browser file in the development environment.
 
 ### To create a smaller .bsc file
 

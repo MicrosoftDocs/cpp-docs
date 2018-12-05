@@ -24,7 +24,7 @@ If this resource ID conflicts with one of your existing resources, you can speci
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 

@@ -16,7 +16,7 @@ Use this page of the Create New Project From Existing Code Files wizard to speci
 
 ## Task List
 
-[How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md)
+[How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md)
 
 ## UIElement List
 
