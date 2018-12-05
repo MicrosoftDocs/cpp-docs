@@ -13,13 +13,13 @@ Build events are executed only if the build successfully reaches those points in
 
 If no files need to be built, no build events occur.
 
-For general information on build events, see [Understanding Custom Build Steps and Build Events](../ide/understanding-custom-build-steps-and-build-events.md).
+For general information on build events, see [Understanding Custom Build Steps and Build Events](understanding-custom-build-steps-and-build-events.md).
 
 ### To specify a build event
 
 1. In **Solution Explorer**, select the project for which you want to specify the build event.
 
-1. Open the project's **Property Pages** dialog box. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Working with Project Properties](working-with-project-properties.md).
 
 1. In the **Build Events** folder, select a build event property page.
 
@@ -37,6 +37,6 @@ For general information on build events, see [Understanding Custom Build Steps a
 
 ## See also
 
-[Understanding Custom Build Steps and Build Events](../ide/understanding-custom-build-steps-and-build-events.md)<br>
+[Understanding Custom Build Steps and Build Events](understanding-custom-build-steps-and-build-events.md)<br>
 [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)<br>
 [Troubleshooting Build Customizations](../ide/troubleshooting-build-customizations.md)

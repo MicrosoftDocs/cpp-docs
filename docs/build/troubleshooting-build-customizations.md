@@ -24,4 +24,4 @@ If your custom build steps or events are not behaving as you expect, there are s
 
 ## See Also
 
-[Understanding Custom Build Steps and Build Events](../ide/understanding-custom-build-steps-and-build-events.md)
+[Understanding Custom Build Steps and Build Events](understanding-custom-build-steps-and-build-events.md)

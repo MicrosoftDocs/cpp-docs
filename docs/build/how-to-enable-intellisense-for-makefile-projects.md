@@ -11,7 +11,7 @@ IntelliSense fails to operate in the IDE for Visual C++ makefile projects when c
 
 ### To enable IntelliSense for makefile projects in the IDE
 
-1. Open the **Property Pages** dialog box. For details, see [Working with Project Properties](../ide/working-with-project-properties.md).
+1. Open the **Property Pages** dialog box. For details, see [Working with Project Properties](working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 

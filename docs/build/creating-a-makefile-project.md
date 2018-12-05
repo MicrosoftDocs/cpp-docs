@@ -31,10 +31,10 @@ The output file that you specify in the project has no effect on the name that t
 
 1. Click **Finish** to close the wizard and open the newly created project in **Solution Explorer**.
 
-You can view and edit the project's properties in its property page. See [Setting Visual C++ Project Properties](../ide/working-with-project-properties.md) for information about displaying the property page.
+You can view and edit the project's properties in its property page. See [Setting Visual C++ Project Properties](working-with-project-properties.md) for information about displaying the property page.
 
 ## See Also
 
-[Makefile Project Wizard](../ide/makefile-project-wizard.md)<br/>
+[Makefile Project Wizard](makefile-project-wizard.md)<br/>
 [Special Characters in a Makefile](../build/special-characters-in-a-makefile.md)<br/>
 [Contents of a Makefile](../build/contents-of-a-makefile.md)<br/>

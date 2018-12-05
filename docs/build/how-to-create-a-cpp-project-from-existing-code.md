@@ -8,7 +8,7 @@ ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
 
 In Visual Studio, you can port your existing code files into a Visual C++ project by using the **Create New Project From Existing Code Files** wizard. This wizard is not available in older Express editions of Visual Studio. This wizard creates a new solution and project that uses the MSBuild system to manage your source files and build configuration.
 
-Porting your existing code files into a Visual C++ project enables you to use all of the native MSBuild project management features built into the IDE. If you prefer to use your existing build system, such as nmake makefiles, CMake, or alternatives, you can use the Open Folder option instead. For more information, see [Open Folder projects in Visual C++](../ide/non-msbuild-projects.md). Both options let you use IDE features such as [IntelliSense](/visualstudio/ide/using-intellisense) and [Project Properties](../ide/working-with-project-properties.md).
+Porting your existing code files into a Visual C++ project enables you to use all of the native MSBuild project management features built into the IDE. If you prefer to use your existing build system, such as nmake makefiles, CMake, or alternatives, you can use the Open Folder option instead. For more information, see [Open Folder projects in Visual C++](../ide/non-msbuild-projects.md). Both options let you use IDE features such as [IntelliSense](/visualstudio/ide/using-intellisense) and [Project Properties](working-with-project-properties.md).
 
 ### To create a C++ project from existing code
 

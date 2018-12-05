@@ -12,7 +12,7 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
 
 1. Open the C++ project that you want to configure.
 
-1. Open the property pages for that project. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).
+1. Open the property pages for that project. For more information, see [Working with Project Properties](working-with-project-properties.md).
 
    > [!NOTE]
    > For .NET projects, make sure that the **Configuration Properties** node, or one of its child nodes, is selected in the **\<Projectname> Property Pages** dialog box; otherwise, the **Configuration Manager** button remains unavailable.
