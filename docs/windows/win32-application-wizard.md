@@ -43,4 +43,4 @@ You can view the files the wizard creates for your project in **Solution Explore
 ## See Also
 
 [Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)<br/>
-[Visual C++ Project Types](../ide/visual-cpp-project-types.md)
+[Visual C++ Project Types](../build/visual-cpp-project-types.md)

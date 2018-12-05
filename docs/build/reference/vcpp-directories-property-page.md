@@ -23,7 +23,7 @@ VC++ Directories properties apply to a project, not the top-level solution node.
 
 Note that the **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
-If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](working-with-project-properties.md).
+If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](../working-with-project-properties.md).
 
 The default settings for **VC++ Directories** properties depend on project type. For desktop projects they include the C++ tools locations for a particular Platform Toolset and the Windows SDK location. You can change the **Platform Toolset** and **Windows SDK version** on the **Configuration Properties** > **General** page.
 
@@ -57,7 +57,7 @@ You can define your own macros in two ways:
 
 - Set environment variables in a developer command prompt. All environment variables are treated as MSBuild properties/macros.
 
-- Define user macros in a .props file. For more information, see [Property page macros](working-with-project-properties.md).
+- Define user macros in a .props file. For more information, see [Property page macros](../working-with-project-properties.md).
 
 For more information, see these blog posts: [VC++ Directories](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [Inherited Properties and Property Sheets](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), and [Visual Studio 2010 C++ Project Upgrade Guide](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).
 

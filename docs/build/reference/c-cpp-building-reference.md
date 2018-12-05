@@ -6,7 +6,7 @@ ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
 ---
 # C/C++ Building Reference
 
-Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual C++ development environment](../building-cpp-projects-in-visual-studio.md). The other way is to [build from a command prompt using command-line tools](../../build/building-on-the-command-line.md). In either case, you can create your source files using the Visual C++ source editor or a third-party editor of your choice.
+Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual C++ development environment](../building-cpp-projects-in-visual-studio.md). The other way is to [build from a command prompt using command-line tools](../building-on-the-command-line.md). In either case, you can create your source files using the Visual C++ source editor or a third-party editor of your choice.
 
 If your program uses a makefile rather than a .vcxproj file, you can still build it in the development environment as an [external project](../building-external-projects.md).
 

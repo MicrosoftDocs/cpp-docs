@@ -19,4 +19,4 @@ These files are located in the *Projname* directory. In Solution Explorer, Stdaf
 ## See Also
 
 [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
-[Working with Project Properties](../ide/working-with-project-properties.md)
+[Working with Project Properties](../working-with-project-properties.md)

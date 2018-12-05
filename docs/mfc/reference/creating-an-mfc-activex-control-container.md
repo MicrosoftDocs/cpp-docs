@@ -28,5 +28,5 @@ Creating an MFC container program using the [MFC Application Wizard](../../mfc/r
 
 ## See Also
 
-[Visual C++ Project Types](../../ide/visual-cpp-project-types.md)
+[Visual C++ Project Types](../../build/visual-cpp-project-types.md)
 

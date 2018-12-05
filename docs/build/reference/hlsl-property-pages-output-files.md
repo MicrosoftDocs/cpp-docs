@@ -6,7 +6,7 @@ ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
 ---
 # HLSL Property Pages: Output Files
 
-To configure the following properties of the HLSL compiler (fxc.exe), use its **Output Files** property. For information about how to access the **Output Files** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).
+To configure the following properties of the HLSL compiler (fxc.exe), use its **Output Files** property. For information about how to access the **Output Files** property page in the HLSL folder, see [Working with Project Properties](../working-with-project-properties.md).
 
 ## UIElement List
 
