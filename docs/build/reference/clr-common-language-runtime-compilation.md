@@ -32,11 +32,11 @@ One or more of the following switches, comma-separated.
 
 - **noAssembly**
 
-   **/clr:noAssembly is deprecated**. Use [/LN (Create MSIL Module)](../../build/reference/ln-create-msil-module.md) instead.
+   **/clr:noAssembly is deprecated**. Use [/LN (Create MSIL Module)](ln-create-msil-module.md) instead.
 
    Specifies that an assembly manifest should not be inserted into the output file. By default, the **noAssembly** option is not in effect.
 
-   A managed program that does not have assembly metadata in the manifest is known as a *module*. The **noAssembly** option can be used only to produce a module. If you compile by using [/c](../../build/reference/c-compile-without-linking.md) and **/clr:noAssembly**, then specify the [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md) option in the linker phase to create a module.
+   A managed program that does not have assembly metadata in the manifest is known as a *module*. The **noAssembly** option can be used only to produce a module. If you compile by using [/c](c-compile-without-linking.md) and **/clr:noAssembly**, then specify the [/NOASSEMBLY](noassembly-create-a-msil-module.md) option in the linker phase to create a module.
 
    Before Visual C++ 2005, **/clr:noAssembly** required **/LD**. **/LD** is now implied when you specify **/clr:noAssembly**.
 
@@ -50,27 +50,27 @@ One or more of the following switches, comma-separated.
 
 ## Remarks
 
-Managed code is code that can be inspected and managed by the CLR. Managed code can access managed objects. For more information, see [/clr Restrictions](../../build/reference/clr-restrictions.md).
+Managed code is code that can be inspected and managed by the CLR. Managed code can access managed objects. For more information, see [/clr Restrictions](clr-restrictions.md).
 
 For information about how to develop applications that define and consume managed types, see [Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md).
 
 An application compiled by using **/clr** may or may not contain managed data.
 
-To enable debugging on a managed application, see [/ASSEMBLYDEBUG (Add DebuggableAttribute)](../../build/reference/assemblydebug-add-debuggableattribute.md).
+To enable debugging on a managed application, see [/ASSEMBLYDEBUG (Add DebuggableAttribute)](assemblydebug-add-debuggableattribute.md).
 
 Only CLR types will be instantiated on the garbage-collected heap. For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md). To compile a function to native code, use the `unmanaged` pragma. For more information, see [managed, unmanaged](../../preprocessor/managed-unmanaged.md).
 
-By default, **/clr** is not in effect. When **/clr** is in effect, **/MD** is also in effect. For more information, see [/MD, /MT, /LD (Use Run-Time Library)](../../build/reference/md-mt-ld-use-run-time-library.md). **/MD** ensures that the dynamically linked, multithreaded versions of the runtime routines are selected from the standard header (.h) files. Multithreading is required for managed programming because the CLR garbage collector runs finalizers in an auxiliary thread.
+By default, **/clr** is not in effect. When **/clr** is in effect, **/MD** is also in effect. For more information, see [/MD, /MT, /LD (Use Run-Time Library)](md-mt-ld-use-run-time-library.md). **/MD** ensures that the dynamically linked, multithreaded versions of the runtime routines are selected from the standard header (.h) files. Multithreading is required for managed programming because the CLR garbage collector runs finalizers in an auxiliary thread.
 
-If you compile by using **/c**, you can specify the CLR type of the resulting output file with [/CLRIMAGETYPE](../../build/reference/clrimagetype-specify-type-of-clr-image.md).
+If you compile by using **/c**, you can specify the CLR type of the resulting output file with [/CLRIMAGETYPE](clrimagetype-specify-type-of-clr-image.md).
 
-**/clr** implies **/EHa**, and no other **/EH** options are supported for **/clr**. For more information, see [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md).
+**/clr** implies **/EHa**, and no other **/EH** options are supported for **/clr**. For more information, see [/EH (Exception Handling Model)](eh-exception-handling-model.md).
 
-For information about how to determine the CLR image type of a file, see [/CLRHEADER](../../build/reference/clrheader.md).
+For information about how to determine the CLR image type of a file, see [/CLRHEADER](clrheader.md).
 
 All modules passed to a given invocation of the linker must be compiled by using the same run-time library compiler option (**/MD** or **/LD**).
 
-Use the [/ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md) linker option to embed a resource in an assembly. [/DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md), [/KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md), and [/KEYFILE](../../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) linker options also let you customize how an assembly is created.
+Use the [/ASSEMBLYRESOURCE](assemblyresource-embed-a-managed-resource.md) linker option to embed a resource in an assembly. [/DELAYSIGN](delaysign-partially-sign-an-assembly.md), [/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md), and [/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) linker options also let you customize how an assembly is created.
 
 When **/clr** is used, the `_MANAGED` symbol is defined to be 1. For more information, see [Predefined Macros](../../preprocessor/predefined-macros.md).
 
@@ -90,5 +90,5 @@ Use ildasm.exe to view metadata.
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

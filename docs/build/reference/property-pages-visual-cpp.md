@@ -41,7 +41,7 @@ When you view the **Property Pages** dialog box for a project and a file is sele
 > [!TIP]
 > To refresh the **Property Pages** dialog box so that it displays the latest selections, choose **Apply**.
 
-Most project defaults are system (platform) defaults. Some project defaults derive from the style sheets that are applied when you update properties in the **Project Defaults** section of the **General** configuration properties page for the project. For more information, see [General Property Page (Project)](../ide/general-property-page-project.md).
+Most project defaults are system (platform) defaults. Some project defaults derive from the style sheets that are applied when you update properties in the **Project Defaults** section of the **General** configuration properties page for the project. For more information, see [General Property Page (Project)](general-property-page-project.md).
 
 ## Specifying User-Defined Values
 
@@ -63,19 +63,19 @@ Notice that a property page only displays the settings at the current level for 
 
 ## In This Section
 
-[Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/advanced-manifest-tool.md)
+[Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](advanced-manifest-tool.md)
 
 [Command Line Property Pages](command-line-property-pages.md)
 
-[Custom Build Step Property Page: General](../ide/custom-build-step-property-page-general.md)
+[Custom Build Step Property Page: General](custom-build-step-property-page-general.md)
 
-[Adding references](../ide/adding-references-in-visual-cpp-projects.md)
+[Adding references](adding-references-in-visual-cpp-projects.md)
 
-[General Property Page (File)](../ide/general-property-page-file.md)
+[General Property Page (File)](general-property-page-file.md)
 
-[General Property Page (Project)](../ide/general-property-page-project.md)
+[General Property Page (Project)](general-property-page-project.md)
 
-[General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/general-manifest-tool-configuration-properties.md)
+[General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](general-manifest-tool-configuration-properties.md)
 
 [HLSL Property Pages](hlsl-property-pages.md)
 
@@ -85,13 +85,13 @@ Notice that a property page only displays the settings at the current level for 
 
 [HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)
 
-[Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/input-and-output-manifest-tool.md)
+[Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](input-and-output-manifest-tool.md)
 
-[Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/isolated-com-manifest-tool.md)
+[Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](isolated-com-manifest-tool.md)
 
 [Linker Property Pages](linker-property-pages.md)
 
-[Managed Resources Property Page](../ide/managed-resources-property-page.md)
+[Managed Resources Property Page](managed-resources-property-page.md)
 
 [Manifest Tool Property Pages](manifest-tool-property-pages.md)
 
@@ -103,15 +103,15 @@ Notice that a property page only displays the settings at the current level for 
 
 [MIDL Property Pages: Output](midl-property-pages-output.md)
 
-[NMake Property Page](../ide/nmake-property-page.md)
+[NMake Property Page](nmake-property-page.md)
 
 [Resources Property Pages](resources-property-pages.md)
 
-[VC++ Directories Property Page](../ide/vcpp-directories-property-page.md)
+[VC++ Directories Property Page](vcpp-directories-property-page.md)
 
-[Web References Property Page](../ide/web-references-property-page.md)
+[Web References Property Page](web-references-property-page.md)
 
-[XML Data Generator Tool Property Page](../ide/xml-data-generator-tool-property-page.md)
+[XML Data Generator Tool Property Page](xml-data-generator-tool-property-page.md)
 
 [XML Document Generator Tool Property Pages](xml-document-generator-tool-property-pages.md)
 

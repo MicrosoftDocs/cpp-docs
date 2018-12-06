@@ -33,8 +33,8 @@ By default, Visual Studio detects a byte-order mark to determine if the source f
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)<br/>
-[/source-charset (Set Source Character Set)](../../build/reference/source-charset-set-source-character-set.md)<br/>
-[/validate-charset (Validate for compatible characters)](../../build/reference/validate-charset-validate-for-compatible-characters.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)<br/>
+[/execution-charset (Set Execution Character Set)](execution-charset-set-execution-character-set.md)<br/>
+[/source-charset (Set Source Character Set)](source-charset-set-source-character-set.md)<br/>
+[/validate-charset (Validate for compatible characters)](validate-charset-validate-for-compatible-characters.md)

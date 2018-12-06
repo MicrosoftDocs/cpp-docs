@@ -15,7 +15,7 @@ ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
 
 /MANIFESTFILE lets you change the default name of the manifest file.  The default name of the manifest file is the file name with .manifest appended.
 
-/MANIFESTFILE will have no effect if you do not also link with [/MANIFEST](../../build/reference/manifest-create-side-by-side-assembly-manifest.md).
+/MANIFESTFILE will have no effect if you do not also link with [/MANIFEST](manifest-create-side-by-side-assembly-manifest.md).
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -35,5 +35,5 @@ ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

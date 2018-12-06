@@ -15,7 +15,7 @@ ms.assetid: 30e37e24-12e4-407e-988a-39d357403598
 
 /ALLOWBIND:NO sets a bit in a DLL's header that indicates to Bind.exe that the image is not allowed to be bound. You may not want a DLL to be bound if it has been digitally signed (binding invalidates the signature).
 
-You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](../../build/reference/allowbind.md) option of the EDITBIN utility.
+You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](allowbind.md) option of the EDITBIN utility.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -31,7 +31,7 @@ You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)<br/>
 [BindImage function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)<br/>
 [BindImageEx function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)

@@ -38,7 +38,7 @@ Under **/fp:strict**, the compiler generates code that allows the program to saf
 
 #### fast
 
-The **/fp:fast** option allows the compiler to reorder, combine, or simplify floating-point operations to optimize floating-point code for speed and space. The compiler may omit rounding at assignment statements, typecasts, or function calls. It may reorder operations or perform algebraic transforms, for example, by use of associative and distributive laws, even if such transformations result in observably different rounding behavior. Because of this enhanced optimization, the result of some floating-point computations may differ from those produced by other **/fp** options. Special values (NaN, +infinity, -infinity, -0.0) may not be propagated or behave strictly according to the IEEE-754 standard. Floating-point contractions may be generated under **/fp:fast**. The compiler is still bound by the underlying architecture under **/fp:fast**, and additional optimizations may be available through use of the [/arch](../../build/reference/arch-minimum-cpu-architecture.md) option.
+The **/fp:fast** option allows the compiler to reorder, combine, or simplify floating-point operations to optimize floating-point code for speed and space. The compiler may omit rounding at assignment statements, typecasts, or function calls. It may reorder operations or perform algebraic transforms, for example, by use of associative and distributive laws, even if such transformations result in observably different rounding behavior. Because of this enhanced optimization, the result of some floating-point computations may differ from those produced by other **/fp** options. Special values (NaN, +infinity, -infinity, -0.0) may not be propagated or behave strictly according to the IEEE-754 standard. Floating-point contractions may be generated under **/fp:fast**. The compiler is still bound by the underlying architecture under **/fp:fast**, and additional optimizations may be available through use of the [/arch](arch-minimum-cpu-architecture.md) option.
 
 Under **/fp:fast**, the compiler generates code intended to run in the default floating-point environment and assumes that the floating-point environment isn’t accessed or modified at runtime. That is, it assumes that the code does not unmask floating-point exceptions, read or write floating-point status registers, or change rounding modes.
 
@@ -54,7 +54,7 @@ Note that **/fp:except** does not enable any floating-point exceptions by itself
 
 Multiple **/fp** options can be specified in the same compiler command line. Only one of **/fp:strict**, **/fp:fast**, and **/fp:precise** options can be in effect at a time. If more than one of these options is specified on the command line, the later option takes precedence and the compiler generates a warning. The **/fp:strict** and **/fp:except** options are not compatible with **/clr**.
 
-The [/Za](../../build/reference/za-ze-disable-language-extensions.md) (ANSI compatibility) option is not compatible with **/fp**.
+The [/Za](za-ze-disable-language-extensions.md) (ANSI compatibility) option is not compatible with **/fp**.
 
 ### Using Pragmas to Control Floating-Point Behavior
 

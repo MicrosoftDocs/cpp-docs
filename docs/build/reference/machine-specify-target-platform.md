@@ -33,5 +33,5 @@ Usually, you don't have to specify the /MACHINE option. LINK infers the machine 
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

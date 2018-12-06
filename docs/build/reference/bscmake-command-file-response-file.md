@@ -33,4 +33,4 @@ file1.sbr file2.sbr file3.sbr file4.sbr
 
 ## See Also
 
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)
+[BSCMAKE Reference](bscmake-reference.md)

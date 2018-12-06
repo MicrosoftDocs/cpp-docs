@@ -14,7 +14,7 @@ Specifies a key container to sign a Windows Metadata (.winmd) file.
 
 ## Remarks
 
-Resembles the [/KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md) linker option that is applied to a (.winmd) file.
+Resembles the [/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md) linker option that is applied to a (.winmd) file.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -28,5 +28,5 @@ Resembles the [/KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-c
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

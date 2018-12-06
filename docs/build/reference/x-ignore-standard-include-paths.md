@@ -17,7 +17,7 @@ Prevents the compiler from searching for include files in directories specified 
 
 ## Remarks
 
-You can use this option with the [/I (Additional Include Directories)](../../build/reference/i-additional-include-directories.md) (**/I**`directory`) option.
+You can use this option with the [/I (Additional Include Directories)](i-additional-include-directories.md) (**/I**`directory`) option.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -43,5 +43,5 @@ CL /X /I \ALT\INCLUDE MAIN.C
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

@@ -21,5 +21,5 @@ When you type the command `dumpbin` without any other command-line input, DUMPBI
 
 ## See Also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-[DUMPBIN Reference](../../build/reference/dumpbin-reference.md)
+[C/C++ Build Tools](c-cpp-build-tools.md)<br/>
+[DUMPBIN Reference](dumpbin-reference.md)

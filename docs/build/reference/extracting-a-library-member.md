@@ -17,4 +17,4 @@ This command creates an .obj file called *objectfile* that contains a copy of a 
 
 ## See Also
 
-[LIB Reference](../../build/reference/lib-reference.md)
+[LIB Reference](lib-reference.md)

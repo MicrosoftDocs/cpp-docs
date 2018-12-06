@@ -7,7 +7,7 @@ ms.assetid: 0fcd7ae0-3031-4c62-a2a8-e154c8685dae
 ---
 # /vmm, /vms, /vmv (General Purpose Representation)
 
-Used when [/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md) is selected as the [representation method](../../build/reference/vmb-vmg-representation-method.md). These options indicate the inheritance model of the not-yet-encountered class definition.
+Used when [/vmb, /vmg (Representation Method)](vmb-vmg-representation-method.md) is selected as the [representation method](vmb-vmg-representation-method.md). These options indicate the inheritance model of the not-yet-encountered class definition.
 
 ## Syntax
 
@@ -45,6 +45,6 @@ When you specify one of these inheritance-model options, that model is used for 
 
 ## See Also
 
-[/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/vmb, /vmg (Representation Method)](vmb-vmg-representation-method.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

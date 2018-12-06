@@ -25,7 +25,7 @@ Unless you plan to explicitly call `_pexit`, you do not need to provide a protot
 void __declspec(naked) __cdecl _pexit( void );
 ```
 
-`_pexit` is similar to `_penter`; see [/Gh (Enable _penter Hook Function)](../../build/reference/gh-enable-penter-hook-function.md) for an example of how to write a `_pexit` function.
+`_pexit` is similar to `_penter`; see [/Gh (Enable _penter Hook Function)](gh-enable-penter-hook-function.md) for an example of how to write a `_pexit` function.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -43,5 +43,5 @@ void __declspec(naked) __cdecl _pexit( void );
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

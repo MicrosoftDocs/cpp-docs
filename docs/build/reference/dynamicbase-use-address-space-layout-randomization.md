@@ -33,7 +33,7 @@ By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICB
 
 ## See also
 
-- [Setting Linker Options](../../build/reference/setting-linker-options.md)
-- [Linker Options](../../build/reference/linker-options.md)
+- [Setting Linker Options](setting-linker-options.md)
+- [Linker Options](linker-options.md)
 - [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)
 - [Windows ISV Software Security Defenses](https://msdn.microsoft.com/library/bb430720.aspx)

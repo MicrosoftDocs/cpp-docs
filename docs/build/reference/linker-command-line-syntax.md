@@ -25,5 +25,5 @@ link.exe returns zero for success (no errors).  Otherwise, the linker returns th
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

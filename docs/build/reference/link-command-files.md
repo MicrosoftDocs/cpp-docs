@@ -15,7 +15,7 @@ The *commandfile* is the name of a text file. No space or tab is allowed between
 
 In the command file, arguments can be separated by spaces or tabs (as on the command line) and by newline characters.
 
-You can specify all or part of the command line in a command file. You can use more than one command file in a LINK command. LINK accepts the command-file input as if it were specified in that location on the command line. Command files cannot be nested. LINK echoes the contents of command files, unless the [/NOLOGO](../../build/reference/nologo-suppress-startup-banner-linker.md) option is specified.
+You can specify all or part of the command line in a command file. You can use more than one command file in a LINK command. LINK accepts the command-file input as if it were specified in that location on the command line. Command files cannot be nested. LINK echoes the contents of command files, unless the [/NOLOGO](nologo-suppress-startup-banner-linker.md) option is specified.
 
 ## Example
 
@@ -27,5 +27,5 @@ link /dll @objlist.txt @liblist.txt @exports.txt
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

@@ -23,4 +23,4 @@ If this function ever fails, you need to isolate at which point the heap was cor
 
 ## See Also
 
-[Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)
+[Fixing Release Build Problems](fixing-release-build-problems.md)

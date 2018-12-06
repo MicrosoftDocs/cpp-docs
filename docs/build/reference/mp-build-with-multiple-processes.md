@@ -39,10 +39,10 @@ The following table lists compiler options and language features that are incomp
 |Option or Language Feature|Description|
 |--------------------------------|-----------------|
 |[#import](../../preprocessor/hash-import-directive-cpp.md) preprocessor directive|Converts the types in a type library into C++ classes, and then writes those classes to a header file.|
-|[/E](../../build/reference/e-preprocess-to-stdout.md), [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to the standard output (**stdout**).|
-|[/Gm](../../build/reference/gm-enable-minimal-rebuild.md)|Enables an incremental rebuild.|
-|[/showIncludes](../../build/reference/showincludes-list-include-files.md)|Writes a list of include files to the standard error (**stderr**).|
-|[/Yc](../../build/reference/yc-create-precompiled-header-file.md)|Writes a precompiled header file.|
+|[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to the standard output (**stdout**).|
+|[/Gm](gm-enable-minimal-rebuild.md)|Enables an incremental rebuild.|
+|[/showIncludes](showincludes-list-include-files.md)|Writes a list of include files to the standard error (**stderr**).|
+|[/Yc](yc-create-precompiled-header-file.md)|Writes a precompiled header file.|
 
 ## Diagnostic Messages
 
@@ -50,7 +50,7 @@ If you specify an option or language feature that is incompatible with the **/MP
 
 |Diagnostic Message|Description|Compiler Behavior|
 |------------------------|-----------------|-----------------------|
-|**C2813**|The **#import** directive is not compatible with the **/MP** option.|The compilation ends unless a [compiler warning level](../../build/reference/compiler-option-warning-level.md) option specifies otherwise.|
+|**C2813**|The **#import** directive is not compatible with the **/MP** option.|The compilation ends unless a [compiler warning level](compiler-option-warning-level.md) option specifies otherwise.|
 |**D9014**|An invalid value is specified for the *processMax* argument.|The compiler ignores the invalid value and assumes a value of 1.|
 |**D9030**|The specified option is incompatible with **/MP**.|The compiler ignores the **/MP** option.|
 

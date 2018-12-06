@@ -21,4 +21,4 @@ The optional `commit` argument is subject to interpretation by the operating sys
 
 ## See Also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

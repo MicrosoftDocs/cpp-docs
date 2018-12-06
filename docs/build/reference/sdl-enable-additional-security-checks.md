@@ -16,7 +16,7 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 
 ## Remarks
 
-**/sdl** enables a superset of the baseline security checks provided by [/GS](../../build/reference/gs-buffer-security-check.md) and overrides **/GS-**. By default, **/sdl** is off. **/sdl-** disables the additional security checks.
+**/sdl** enables a superset of the baseline security checks provided by [/GS](gs-buffer-security-check.md) and overrides **/GS-**. By default, **/sdl** is off. **/sdl-** disables the additional security checks.
 
 ## Compile-time Checks
 
@@ -68,5 +68,5 @@ For more information, see [Warnings, /sdl, and improving uninitialized variable 
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

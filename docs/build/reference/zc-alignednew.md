@@ -95,4 +95,4 @@ For information about conformance issues in Visual C++, see [Nonstandard Behavio
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)
+[/Zc (Conformance)](zc-conformance.md)

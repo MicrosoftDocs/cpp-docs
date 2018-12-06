@@ -62,4 +62,4 @@ free( buf );
 
 ## See Also
 
-[Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)
+[Fixing Release Build Problems](fixing-release-build-problems.md)

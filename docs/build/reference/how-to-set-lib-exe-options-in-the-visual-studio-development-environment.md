@@ -18,4 +18,4 @@ ms.assetid: b00da2bb-19e2-4078-a912-0d2e9294d7a7
 
 ## See Also
 
-[LIB Reference](../../build/reference/lib-reference.md)
+[LIB Reference](lib-reference.md)

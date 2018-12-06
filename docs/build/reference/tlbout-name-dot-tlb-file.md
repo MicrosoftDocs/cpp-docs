@@ -25,7 +25,7 @@ The /TLBOUT option specifies the name and extension of the .tlb file.
 
 The MIDL compiler is called by the Visual C++ linker when linking projects that have the [module](../../windows/module-cpp.md) attribute.
 
-If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](../../build/reference/idlout-name-midl-output-files.md) *filename*. If /IDLOUT is not specified, the .tlb file will be called vc70.tlb.
+If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](idlout-name-midl-output-files.md) *filename*. If /IDLOUT is not specified, the .tlb file will be called vc70.tlb.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -43,8 +43,8 @@ If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](../.
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
-[/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)<br/>
+[/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>
 [Building an Attributed Program](../../windows/building-an-attributed-program.md)

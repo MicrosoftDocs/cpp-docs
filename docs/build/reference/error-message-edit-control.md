@@ -10,4 +10,4 @@ The **Error Message** box contains the text of the system error message or modul
 
 ## See Also
 
-[Value Edit Control](../../build/reference/value-edit-control.md)
+[Value Edit Control](value-edit-control.md)

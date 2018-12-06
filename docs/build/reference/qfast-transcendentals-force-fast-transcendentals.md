@@ -19,7 +19,7 @@ Generates inline code for transcendental functions.
 
 This compiler option forces transcendental functions to be converted to inline code to improve execution speed. This option has an effect only when paired with **/fp:except** or **/fp:precise**. Generating inline code for transcendental functions is already the default behavior under **/fp:fast**.
 
-This option is incompatible with **/fp:strict**. See [/fp (Specify Floating-Point Behavior)](../../build/reference/fp-specify-floating-point-behavior.md) for more information about floating point compiler options.
+This option is incompatible with **/fp:strict**. See [/fp (Specify Floating-Point Behavior)](fp-specify-floating-point-behavior.md) for more information about floating point compiler options.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -37,6 +37,6 @@ This option is incompatible with **/fp:strict**. See [/fp (Specify Floating-Poin
 
 ## See Also
 
-[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

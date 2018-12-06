@@ -26,7 +26,7 @@ For information on how to create a cref reference to a generic type, see [\<see>
 
 ## Remarks
 
-Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 See [\<summary>](summary-visual-cpp.md) for an example of using \<seealso>.
 

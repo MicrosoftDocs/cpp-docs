@@ -15,7 +15,7 @@ ms.assetid: a29756c8-e893-47a9-9750-1f0d25359385
 
 The /LARGEADDRESSAWARE option tells the linker that the application can handle addresses larger than 2 gigabytes. In the 64-bit compilers, this option is enabled by default. In the 32-bit compilers, /LARGEADDRESSAWARE:NO is enabled if /LARGEADDRESSAWARE is not otherwise specified on the linker line.
 
-If an application was linked with /LARGEADDRESSAWARE, DUMPBIN [/HEADERS](../../build/reference/headers.md) will display information to that effect.
+If an application was linked with /LARGEADDRESSAWARE, DUMPBIN [/HEADERS](headers.md) will display information to that effect.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -33,5 +33,5 @@ If an application was linked with /LARGEADDRESSAWARE, DUMPBIN [/HEADERS](../../b
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

@@ -268,6 +268,6 @@ int main()
 
 ## See also
 
-- [/Za, /Ze (Disable Language Extensions)](../../build/reference/za-ze-disable-language-extensions.md)
-- [Compiler Options](../../build/reference/compiler-options.md)
-- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/Za, /Ze (Disable Language Extensions)](za-ze-disable-language-extensions.md)
+- [Compiler Options](compiler-options.md)
+- [Setting Compiler Options](setting-compiler-options.md)

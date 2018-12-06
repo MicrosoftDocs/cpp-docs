@@ -39,5 +39,5 @@ When using the Visual Studio debugger, you may experience a problem due to the f
 
 ## See Also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)<br/>
-[/PDBALTPATH (Use Alternate PDB Path)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)
+[DUMPBIN Options](dumpbin-options.md)<br/>
+[/PDBALTPATH (Use Alternate PDB Path)](pdbaltpath-use-alternate-pdb-path.md)

@@ -20,8 +20,8 @@ The **/ALLOWBIND** option sets a bit in a DLL's header that indicates to Bind.ex
 
 Use **/ALLOWBIND:NO** to prevent Bind.exe from binding the DLL.
 
-For more information, see the [/ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md) linker option.
+For more information, see the [/ALLOWBIND](allowbind-prevent-dll-binding.md) linker option.
 
 ## See Also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

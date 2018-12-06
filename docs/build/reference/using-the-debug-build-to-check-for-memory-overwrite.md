@@ -34,4 +34,4 @@ Depending on the nature of your application, you may find that `afxMemDF` causes
 
 ## See Also
 
-[Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)
+[Fixing Release Build Problems](fixing-release-build-problems.md)

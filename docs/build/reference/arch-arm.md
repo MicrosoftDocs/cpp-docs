@@ -5,7 +5,7 @@ ms.assetid: 4f1406ff-f174-487c-a126-8ab06cf447c1
 ---
 # /arch (ARM)
 
-Specifies the architecture for code generation on ARM. See also [/arch (x86)](../../build/reference/arch-x86.md) and [/arch (x64)](../../build/reference/arch-x64.md).
+Specifies the architecture for code generation on ARM. See also [/arch (x86)](arch-x86.md) and [/arch (x64)](arch-x64.md).
 
 ## Syntax
 
@@ -25,7 +25,7 @@ Enables the use of ARM VFPv4 instructions. If this option is not specified, VFPv
 
 The `_M_ARM_FP` macro (for ARM only) indicates which, if any, **/arch** compiler option was used. For more information, see [Predefined Macros](../../preprocessor/predefined-macros.md).
 
-When you use [/clr](../../build/reference/clr-common-language-runtime-compilation.md) to compile, **/arch** has no effect on code generation for managed functions. **/arch** only affects code generation for native functions.
+When you use [/clr](clr-common-language-runtime-compilation.md) to compile, **/arch** has no effect on code generation for managed functions. **/arch** only affects code generation for native functions.
 
 ### To set the /arch:ARMv7VE or /arch:VFPv4 compiler option in Visual Studio
 
@@ -43,6 +43,6 @@ When you use [/clr](../../build/reference/clr-common-language-runtime-compilatio
 
 ## See Also
 
-[/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/arch (Minimum CPU Architecture)](arch-minimum-cpu-architecture.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

@@ -17,4 +17,4 @@ The output files produced by LIB depend on the mode in which it is being used, a
 
 ## See Also
 
-[Overview of LIB](../../build/reference/overview-of-lib.md)
+[Overview of LIB](overview-of-lib.md)

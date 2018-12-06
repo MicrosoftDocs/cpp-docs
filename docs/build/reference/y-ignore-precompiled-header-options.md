@@ -19,9 +19,9 @@ Causes all other `/Y` compiler options to be ignored (and cannot itself be overr
 
 For more information on precompiled headers, see:
 
-- [/Y (Precompiled Headers)](../../build/reference/y-precompiled-headers.md)
+- [/Y (Precompiled Headers)](y-precompiled-headers.md)
 
-- [Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)
+- [Creating Precompiled Header Files](creating-precompiled-header-files.md)
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -39,5 +39,5 @@ For more information on precompiled headers, see:
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

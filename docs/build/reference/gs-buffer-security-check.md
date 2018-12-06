@@ -80,7 +80,7 @@ The compiler does not make copies of vulnerable parameters in the following situ
 
 - Functions that do not contain a GS buffer.
 
-- Optimizations ([/O options](../../build/reference/o-options-optimize-code.md)) are not enabled.
+- Optimizations ([/O options](o-options-optimize-code.md)) are not enabled.
 
 - Functions that have a variable argument list (...).
 
@@ -141,5 +141,5 @@ int main() {
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

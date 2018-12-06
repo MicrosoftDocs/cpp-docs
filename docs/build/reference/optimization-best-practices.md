@@ -12,19 +12,19 @@ This document describes some best practices for optimization in Visual C++.
 
 ### Profile-guided optimization
 
-Visual C++ supports *profile-guided optimization* (PGO). This optimization uses profile data from training executions of an instrumented version of an application to drive later optimization of the application. Using PGO can be time consuming, so it may not be something that every developer uses, but we do recommend using PGO for the final release build of a product. For more information, see [Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md).
+Visual C++ supports *profile-guided optimization* (PGO). This optimization uses profile data from training executions of an instrumented version of an application to drive later optimization of the application. Using PGO can be time consuming, so it may not be something that every developer uses, but we do recommend using PGO for the final release build of a product. For more information, see [Profile-Guided Optimizations](profile-guided-optimizations.md).
 
 In addition, *Whole Program Optimization* (also knows as Link Time Code Generation) and the **/O1** and **/O2** optimizations have been improved. In general, an application compiled with one of these options will be faster than the same application compiled with an earlier compiler.
 
-For more information, see [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md).
+For more information, see [/GL (Whole Program Optimization)](gl-whole-program-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md).
 
 ### Which level of optimization to use
 
 If at all possible, final release builds should be compiled with Profile Guided Optimizations. If it is not possible to build with PGO, whether due to insufficient infrastructure for running the instrumented builds or not having access to scenarios, then we suggest building with Whole Program Optimization.
 
-The **/Gy** switch is also very useful. It generates a separate COMDAT for each function, giving the linker more flexibility when it comes to removing unreferenced COMDATs and COMDAT folding. The only downside to using **/Gy** is that it can cause issues when debugging. Therefore, it is generally recommended to use it. For more information, see [/Gy (Enable Function-Level Linking)](../../build/reference/gy-enable-function-level-linking.md).
+The **/Gy** switch is also very useful. It generates a separate COMDAT for each function, giving the linker more flexibility when it comes to removing unreferenced COMDATs and COMDAT folding. The only downside to using **/Gy** is that it can cause issues when debugging. Therefore, it is generally recommended to use it. For more information, see [/Gy (Enable Function-Level Linking)](gy-enable-function-level-linking.md).
 
-For linking in 64-bit environments, it is recommended to use the **/OPT:REF,ICF** linker option, and in 32-bit environments, **/OPT:REF** is recommended. For more information, see [/OPT (Optimizations)](../../build/reference/opt-optimizations.md).
+For linking in 64-bit environments, it is recommended to use the **/OPT:REF,ICF** linker option, and in 32-bit environments, **/OPT:REF** is recommended. For more information, see [/OPT (Optimizations)](opt-optimizations.md).
 
 It is also strongly recommended to generate debug symbols, even with optimized release builds. It doesn’t effect the generated code, and it makes it a lot easier to debug your application, if need be.
 
@@ -39,7 +39,7 @@ The **/Op** compiler option has been removed, and the following four compiler op
 |**/fp:strict**|Recommended if precise floating-point exceptions and IEEE behavior is desired. This will result in the slowest performance.|
 |**/fp:except[-]**|Can be used in conjunction with **/fp:strict** or **/fp:precise**, but not **/fp:fast**.|
 
-For more information, see [/fp (Specify Floating-Point Behavior)](../../build/reference/fp-specify-floating-point-behavior.md).
+For more information, see [/fp (Specify Floating-Point Behavior)](fp-specify-floating-point-behavior.md).
 
 ## Optimization declspecs
 
@@ -125,4 +125,4 @@ Lastly, throw exceptions for exceptional cases only. Using exceptions for genera
 
 ## See also
 
-- [Optimizing Your Code](../../build/reference/optimizing-your-code.md)
+- [Optimizing Your Code](optimizing-your-code.md)

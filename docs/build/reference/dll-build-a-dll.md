@@ -17,9 +17,9 @@ The /DLL option builds a DLL as the main output file. A DLL usually contains exp
 
 1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) in the source code
 
-1. An [EXPORTS](../../build/reference/exports.md) statement in a .def file
+1. An [EXPORTS](exports.md) statement in a .def file
 
-1. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
+1. An [/EXPORT](export-exports-a-function.md) specification in a LINK command
 
 A program can use more than one method.
 
@@ -45,5 +45,5 @@ Note that if you create your import library in a preliminary step, before creati
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

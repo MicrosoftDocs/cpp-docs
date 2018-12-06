@@ -16,7 +16,7 @@ The easiest way to create an MFC ActiveX control is to use the [MFC ActiveX Cont
 
 ### To create an MFC ActiveX Control using the MFC ActiveX Control Wizard
 
-1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../../build/creating-desktop-projects-by-using-application-wizards.md).
 
 1. In the **New Project** dialog box, select the **MFC ActiveX Control** icon in the Templates pane to open the MFC ActiveX Control Wizard.
 

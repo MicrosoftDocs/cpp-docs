@@ -29,7 +29,7 @@ Tells the compiler to always generate runtime termination checks for all **noexc
 
 ## Remarks
 
-The **/EHa** compiler option is used to support asynchronous structured exception handling (SEH) with the native C++ `catch(...)` clause. To implement SEH without specifying **/EHa**, you may use the **__try**, **__except**, and **__finally** syntax. Although Windows and Visual C++ support SEH, we strongly recommend that you use ISO-standard C++ exception handling (**/EHs** or **/EHsc**) because it makes code more portable and flexible. Nevertheless, in existing code or for particular kinds of programs—for example, in code compiled to support the common language runtime ([/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md))—you still might have to use SEH. For more information, see [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md).
+The **/EHa** compiler option is used to support asynchronous structured exception handling (SEH) with the native C++ `catch(...)` clause. To implement SEH without specifying **/EHa**, you may use the **__try**, **__except**, and **__finally** syntax. Although Windows and Visual C++ support SEH, we strongly recommend that you use ISO-standard C++ exception handling (**/EHs** or **/EHsc**) because it makes code more portable and flexible. Nevertheless, in existing code or for particular kinds of programs—for example, in code compiled to support the common language runtime ([/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md))—you still might have to use SEH. For more information, see [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md).
 
 Specifying **/EHa** and trying to handle all exceptions by using `catch(...)` can be dangerous. In most cases, asynchronous exceptions are unrecoverable and should be considered fatal. Catching them and proceeding can cause process corruption and lead to bugs that are hard to find and fix.
 
@@ -98,8 +98,8 @@ However, the non-throwing attribute is not a guarantee that no exceptions can be
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)<br/>
 [Errors and Exception Handling](../../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [Exception Specifications (throw)](../../cpp/exception-specifications-throw-cpp.md)<br/>
 [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md)

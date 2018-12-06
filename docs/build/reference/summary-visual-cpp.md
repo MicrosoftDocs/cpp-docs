@@ -24,7 +24,7 @@ A summary of the object.
 
 The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the [Object Browser](/visualstudio/ide/viewing-the-structure-of-code) and in the Code Comment Web Report.
 
-Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 

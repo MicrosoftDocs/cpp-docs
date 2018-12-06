@@ -43,6 +43,6 @@ The option **/errorreport:send** automatically sends error information to Micros
 
 ## See also
 
-[/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md)<br/>
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md)<br/>
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

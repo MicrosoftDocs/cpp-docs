@@ -19,4 +19,4 @@ IMAGE_TLS_DIRECTORY is defined in winnt.h.
 
 ## See Also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

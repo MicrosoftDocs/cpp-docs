@@ -22,7 +22,7 @@ The name of the parameter to refer to.  Enclose the name in single or double quo
 
 ## Remarks
 
-Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 

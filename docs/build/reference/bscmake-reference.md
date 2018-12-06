@@ -20,18 +20,18 @@ If you build your program outside of the development environment, you can still 
 
 This section includes the following topics:
 
-- [Building Browse Information Files: Overview](../../build/reference/building-browse-information-files-overview.md)
+- [Building Browse Information Files: Overview](building-browse-information-files-overview.md)
 
-- [Building a .bsc file](../../build/reference/building-a-dot-bsc-file.md)
+- [Building a .bsc file](building-a-dot-bsc-file.md)
 
-- [BSCMAKE command line](../../build/reference/bscmake-command-line.md)
+- [BSCMAKE command line](bscmake-command-line.md)
 
-- [BSCMAKE command file](../../build/reference/bscmake-command-file-response-file.md)
+- [BSCMAKE command file](bscmake-command-file-response-file.md)
 
-- [BSCMAKE options](../../build/reference/bscmake-options.md)
+- [BSCMAKE options](bscmake-options.md)
 
-- [BSCMAKE exit codes](../../build/reference/bscmake-exit-codes.md)
+- [BSCMAKE exit codes](bscmake-exit-codes.md)
 
 ## See Also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)
+[C/C++ Build Tools](c-cpp-build-tools.md)

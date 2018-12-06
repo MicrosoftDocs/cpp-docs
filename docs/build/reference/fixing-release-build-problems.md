@@ -10,16 +10,16 @@ If your code generates compile errors after switching from debug build to releas
 
 You may receive compiler warnings during an optimized (release) build that you did not receive during a debug build.
 
-- [Examine ASSERT Statements](../../build/reference/using-verify-instead-of-assert.md)
+- [Examine ASSERT Statements](using-verify-instead-of-assert.md)
 
-- [Use the Debug Build To Check for Memory Overwrites](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md)
+- [Use the Debug Build To Check for Memory Overwrites](using-the-debug-build-to-check-for-memory-overwrite.md)
 
-- [Turn on Generation of Debug Information for the Release Build](../../build/reference/how-to-debug-a-release-build.md)
+- [Turn on Generation of Debug Information for the Release Build](how-to-debug-a-release-build.md)
 
-- [Check for Memory Overwrite](../../build/reference/checking-for-memory-overwrites.md)
+- [Check for Memory Overwrite](checking-for-memory-overwrites.md)
 
 ## See Also
 
-[Release Builds](../../build/reference/release-builds.md)<br/>
-[Common Problems When Creating a Release Build](../../build/reference/common-problems-when-creating-a-release-build.md)<br/>
-[Optimizing Your Code](../../build/reference/optimizing-your-code.md)
+[Release Builds](release-builds.md)<br/>
+[Common Problems When Creating a Release Build](common-problems-when-creating-a-release-build.md)<br/>
+[Optimizing Your Code](optimizing-your-code.md)

@@ -126,4 +126,4 @@ Smaller working sets mean better locality of reference, fewer page faults, and m
 
 ## See Also
 
-[Optimizing Your Code](../../build/reference/optimizing-your-code.md)
+[Optimizing Your Code](optimizing-your-code.md)

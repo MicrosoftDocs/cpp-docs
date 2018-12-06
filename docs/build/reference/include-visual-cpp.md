@@ -33,7 +33,7 @@ The ID for the tag that precedes the comments.  Enclose the name in single or do
 
 The \<include> tag uses the XML XPath syntax. Refer to XPath documentation for ways to customize using \<include>.
 
-Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 

@@ -17,4 +17,4 @@ Error and warning messages issued by LIB have the form LNK*nnnn*. The LINK, DUMP
 
 ## See Also
 
-[Overview of LIB](../../build/reference/overview-of-lib.md)
+[Overview of LIB](overview-of-lib.md)

@@ -35,7 +35,7 @@ The MIDL compiler is called by the Visual C++ linker when linking projects that 
 
 - *filename*.h
 
-*filename* is the parameter that you pass to /IDLOUT. If [/TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md) is specified, the .tlb file will get its name from /TLBOUT *filename*.
+*filename* is the parameter that you pass to /IDLOUT. If [/TLBOUT](tlbout-name-dot-tlb-file.md) is specified, the .tlb file will get its name from /TLBOUT *filename*.
 
 If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc70.idl, vc70_p.c, vc70_i.c, and vc70.h.
 
@@ -55,8 +55,8 @@ If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc7
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
-[/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)<br/>
+[/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>
 [Building an Attributed Program](../../windows/building-an-attributed-program.md)

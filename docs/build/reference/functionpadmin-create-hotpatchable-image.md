@@ -20,7 +20,7 @@ The amount of padding to add to the beginning of each function in bytes. On x86 
 
 ## Remarks
 
-In order for the linker to produce a hotpatchable image, the .obj files must have been compiled with [/hotpatch (Create Hotpatchable Image)](../../build/reference/hotpatch-create-hotpatchable-image.md).
+In order for the linker to produce a hotpatchable image, the .obj files must have been compiled with [/hotpatch (Create Hotpatchable Image)](hotpatch-create-hotpatchable-image.md).
 
 When you compile and link an image with a single invocation of cl.exe, **/hotpatch** implies **/functionpadmin**.
 
@@ -38,5 +38,5 @@ When you compile and link an image with a single invocation of cl.exe, **/hotpat
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

@@ -18,7 +18,7 @@ The name of a module-definition file (.def) to be passed to the linker.
 
 ## Remarks
 
-The /DEF option passes a module-definition file (.def) to the linker. Only one .def file can be specified to LINK. For details about .def files, see [Module-Definition Files](../../build/reference/module-definition-dot-def-files.md).
+The /DEF option passes a module-definition file (.def) to the linker. Only one .def file can be specified to LINK. For details about .def files, see [Module-Definition Files](module-definition-dot-def-files.md).
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -38,5 +38,5 @@ To specify a .def file from within the development environment, you should add i
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

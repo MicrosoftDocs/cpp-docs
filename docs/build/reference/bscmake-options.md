@@ -15,7 +15,7 @@ Only **/NOLOGO** and **/o** are available from within the Visual Studio developm
 Excludes the contents of the specified include files from the browse information file. To specify multiple files, separate the names with a space and enclose the list in parentheses. Parentheses are not necessary if you specify only one *filename*. Use **/Ei** along with the **/Es** option to exclude files not excluded by **/Es**.
 
 **/El**<br/>
-Excludes local symbols. The default is to include local symbols. For more information about local symbols, see [Creating an .sbr File](../../build/reference/creating-an-dot-sbr-file.md).
+Excludes local symbols. The default is to include local symbols. For more information about local symbols, see [Creating an .sbr File](creating-an-dot-sbr-file.md).
 
 **/Em**<br/>
 Excludes symbols in the body of macros. Use **/Em** to include only the names of macros in the browse information file. The default is to include both the macro names and the result of the macro expansions.
@@ -29,7 +29,7 @@ Excludes from the browse information file every include file specified with an a
 **/errorreport:**[**none** &#124; **prompt** &#124; **queue** &#124; **send**]<br/>
 Allows you to send information to Microsoft regarding internal errors in bscmake.exe.
 
-For more information on **/errorreport**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+For more information on **/errorreport**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
 
 **/HELP**<br/>
 Displays a summary of the BSCMAKE command-line syntax.
@@ -38,7 +38,7 @@ Displays a summary of the BSCMAKE command-line syntax.
 Includes unreferenced symbols. By default, BSCMAKE does not record any symbols that are defined but not referenced. If an .sbr file has been packed, this option has no effect for that input file because the compiler has already removed the unreferenced symbols.
 
 **/n**<br/>
-Forces a nonincremental build. Use **/n** to force a full build of the browse information file whether or not a .bsc file exists and to prevent .sbr files from being truncated. See [How BSCMAKE Builds a .bsc File](../../build/reference/how-bscmake-builds-a-dot-bsc-file.md).
+Forces a nonincremental build. Use **/n** to force a full build of the browse information file whether or not a .bsc file exists and to prevent .sbr files from being truncated. See [How BSCMAKE Builds a .bsc File](how-bscmake-builds-a-dot-bsc-file.md).
 
 **/NOLOGO**<br/>
 Suppresses the BSCMAKE copyright message.
@@ -63,4 +63,4 @@ BSCMAKE /n /S toolbox.h /o main.bsc file1.sbr file2.sbr file3.sbr
 
 ## See Also
 
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)
+[BSCMAKE Reference](bscmake-reference.md)

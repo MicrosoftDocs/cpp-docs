@@ -20,11 +20,11 @@ Specifies the name of the .pgd file that is used to hold information about the r
 
 ## Remarks
 
-When using the deprecated [/LTCG:PGINSTRUMENT](../../build/reference/ltcg-link-time-code-generation.md) option, use **/PGD** to specify a nondefault name or location for the .pgd file. If you do not specify **/PGD**, the .pgd file base name is the same as the output file (.exe or .dll) base name and is created in the same directory from which the link was invoked.
+When using the deprecated [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) option, use **/PGD** to specify a nondefault name or location for the .pgd file. If you do not specify **/PGD**, the .pgd file base name is the same as the output file (.exe or .dll) base name and is created in the same directory from which the link was invoked.
 
 When using the deprecated **/LTCG:PGOPTIMIZE** option, use the **/PGD** option to specify the name of the .pgd file to use to create the optimized image. The *filename* argument should match the *filename* specified to **/LTCG:PGINSTRUMENT**.
 
-For more information, see [Profile Guided Optimization](../../build/reference/profile-guided-optimizations.md).
+For more information, see [Profile Guided Optimization](profile-guided-optimizations.md).
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -40,5 +40,5 @@ For more information, see [Profile Guided Optimization](../../build/reference/pr
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)<br/>

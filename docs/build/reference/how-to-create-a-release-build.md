@@ -14,4 +14,4 @@ ms.assetid: 6a4c89b1-48f0-44d2-8703-ca0a4b0351bf
 
 ## See Also
 
-[Release Builds](../../build/reference/release-builds.md)
+[Release Builds](release-builds.md)

@@ -29,4 +29,4 @@ For information on how to access the **Managed Resources** property page, see [W
 
 [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-)<br>
 [Property Pages](property-pages-visual-cpp.md)<br>
-[/ASSEMBLYRESOURCE (Embed a Managed Resource)](../build/reference/assemblyresource-embed-a-managed-resource.md)
+[/ASSEMBLYRESOURCE (Embed a Managed Resource)](assemblyresource-embed-a-managed-resource.md)

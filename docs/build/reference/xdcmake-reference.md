@@ -7,7 +7,7 @@ ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac
 ---
 # XDCMake Reference
 
-xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc file is created by the Visual C++ compiler for each source code file when source code is compiled with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) and when the source code file contains documentation comments marked up with XML tags.
+xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc file is created by the Visual C++ compiler for each source code file when source code is compiled with [/doc](doc-process-documentation-comments-c-cpp.md) and when the source code file contains documentation comments marked up with XML tags.
 
 ### To use xdcmake.exe in the Visual Studio development environment
 

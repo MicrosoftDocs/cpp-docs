@@ -12,7 +12,7 @@ Before Visual C++ 6.0, the only way to load a DLL at run time was by using **Loa
 
 Beginning with Visual C++ 6.0, when statically linking with a DLL, the linker provides options to delay load the DLL until the program calls a function in that DLL.
 
-An application can delay load a DLL using the [/DELAYLOAD (Delay Load Import)](../../build/reference/delayload-delay-load-import.md) linker option with a helper function (default implementation provided by Visual C++). The helper function will load the DLL at run time by calling **LoadLibrary** and **GetProcAddress** for you.
+An application can delay load a DLL using the [/DELAYLOAD (Delay Load Import)](delayload-delay-load-import.md) linker option with a helper function (default implementation provided by Visual C++). The helper function will load the DLL at run time by calling **LoadLibrary** and **GetProcAddress** for you.
 
 You should consider delay loading a DLL if:
 
@@ -24,25 +24,25 @@ The delayed loading of a DLL can be specified during the build of either a .EXE 
 
 The following topics describe delay loading DLLs:
 
-- [Specifying DLLs to Delay Load](../../build/reference/specifying-dlls-to-delay-load.md)
+- [Specifying DLLs to Delay Load](specifying-dlls-to-delay-load.md)
 
-- [Explicitly Unloading a Delay-Loaded DLL](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)
+- [Explicitly Unloading a Delay-Loaded DLL](explicitly-unloading-a-delay-loaded-dll.md)
 
-- [Loading All Imports for a Delay-Loaded DLL](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md)
+- [Loading All Imports for a Delay-Loaded DLL](loading-all-imports-for-a-delay-loaded-dll.md)
 
-- [Binding Imports](../../build/reference/binding-imports.md)
+- [Binding Imports](binding-imports.md)
 
-- [Error Handling and Notification](../../build/reference/error-handling-and-notification.md)
+- [Error Handling and Notification](error-handling-and-notification.md)
 
-- [Dumping Delay-Loaded Imports](../../build/reference/dumping-delay-loaded-imports.md)
+- [Dumping Delay-Loaded Imports](dumping-delay-loaded-imports.md)
 
-- [Constraints of Delay Loading DLLs](../../build/reference/constraints-of-delay-loading-dlls.md)
+- [Constraints of Delay Loading DLLs](constraints-of-delay-loading-dlls.md)
 
 - [Understanding the Helper Function](understanding-the-helper-function.md)
 
-- [Developing Your Own Helper Function](../../build/reference/developing-your-own-helper-function.md)
+- [Developing Your Own Helper Function](developing-your-own-helper-function.md)
 
 ## See Also
 
 [DLLs in Visual C++](../../build/dlls-in-visual-cpp.md)<br/>
-[Linking](../../build/reference/linking.md)
+[Linking](linking.md)

@@ -41,5 +41,5 @@ To run PGO profiling in safe mode, you must use either **/GENPROFILE:EXACT** (pr
 
 [/GENPROFILE and /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md)<br/>
-[Environment Variables for Profile-Guided Optimizations](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
+[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
+[Environment Variables for Profile-Guided Optimizations](environment-variables-for-profile-guided-optimizations.md)<br/>

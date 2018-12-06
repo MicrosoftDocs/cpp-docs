@@ -27,7 +27,7 @@ The MFC Application Wizard generates the appropriate classes and files for any o
 
 ### To create an MFC application using the MFC Application Wizard
 
-1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../../build/creating-desktop-projects-by-using-application-wizards.md).
 
 1. In the **New Project** dialog box, select **MFC Application** in the Templates pane to open the wizard.
 

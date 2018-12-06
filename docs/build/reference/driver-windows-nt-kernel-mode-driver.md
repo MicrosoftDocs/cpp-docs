@@ -21,9 +21,9 @@ If **/DRIVER** is not specified, these bits are not set by the linker.
 
 If **/DRIVER** is specified:
 
-- **/FIXED:NO** is in effect. For more information, see [/FIXED (Fixed Base Address)](../../build/reference/fixed-fixed-base-address.md).
+- **/FIXED:NO** is in effect. For more information, see [/FIXED (Fixed Base Address)](fixed-fixed-base-address.md).
 
-- The extension of the output file is set to .sys. Use **/OUT** to change the default filename and extension. For more information, see [/OUT (Output File Name)](../../build/reference/out-output-file-name.md).
+- The extension of the output file is set to .sys. Use **/OUT** to change the default filename and extension. For more information, see [/OUT (Output File Name)](out-output-file-name.md).
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -41,5 +41,5 @@ If **/DRIVER** is specified:
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

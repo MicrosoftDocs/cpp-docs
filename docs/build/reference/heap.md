@@ -17,7 +17,7 @@ reserve[,commit]
 
 ## Remarks
 
-The `reserve` argument specifies the total initial heap allocation in virtual memory. By default, the heap size is 1 MB. [EDITBIN Reference](../../build/reference/editbin-reference.md) rounds up the specified value to the nearest multiple of 4 bytes.
+The `reserve` argument specifies the total initial heap allocation in virtual memory. By default, the heap size is 1 MB. [EDITBIN Reference](editbin-reference.md) rounds up the specified value to the nearest multiple of 4 bytes.
 
 The optional `commit` argument is subject to interpretation by the operating system. On a Windows operating system, it specifies the initial amount of physical memory to allocate, and the amount of additional memory to allocate when the heap must be expanded. Committed virtual memory causes space to be reserved in the paging file. A higher `commit` value allows the system to allocate memory less often when the app needs more heap space but increases the memory requirements and possibly the app startup duration. The `commit` value must be less than or equal to the `reserve` value.
 
@@ -25,4 +25,4 @@ Specify the `reserve` and `commit` values in decimal or C-language hexadecimal o
 
 ## See Also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

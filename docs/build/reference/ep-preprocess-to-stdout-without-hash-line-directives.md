@@ -17,13 +17,13 @@ Preprocesses C and C++ source files and copies the preprocessed files to the sta
 
 ## Remarks
 
-In the process, all preprocessor directives are carried out, macro expansions are performed, and comments are removed. To preserve comments in the preprocessed output, use the [/C (Preserve Comments During Preprocessing)](../../build/reference/c-preserve-comments-during-preprocessing.md) option with **/EP**.
+In the process, all preprocessor directives are carried out, macro expansions are performed, and comments are removed. To preserve comments in the preprocessed output, use the [/C (Preserve Comments During Preprocessing)](c-preserve-comments-during-preprocessing.md) option with **/EP**.
 
-The **/EP** option suppresses compilation. You must resubmit the preprocessed file for compilation. **/EP** also suppresses the output files from the **/FA**, **/Fa**, and **/Fm** options. For more information, see [/FA, /Fa (Listing File)](../../build/reference/fa-fa-listing-file.md) and [/Fm (Name Mapfile)](../../build/reference/fm-name-mapfile.md).
+The **/EP** option suppresses compilation. You must resubmit the preprocessed file for compilation. **/EP** also suppresses the output files from the **/FA**, **/Fa**, and **/Fm** options. For more information, see [/FA, /Fa (Listing File)](fa-fa-listing-file.md) and [/Fm (Name Mapfile)](fm-name-mapfile.md).
 
-Errors generated during later stages of processing refer to the line numbers of the preprocessed file rather than the original source file. If you want line numbers to refer to the original source file, use [/E (Preprocess to stdout)](../../build/reference/e-preprocess-to-stdout.md) instead. The **/E** option adds `#line` directives to the output for this purpose.
+Errors generated during later stages of processing refer to the line numbers of the preprocessed file rather than the original source file. If you want line numbers to refer to the original source file, use [/E (Preprocess to stdout)](e-preprocess-to-stdout.md) instead. The **/E** option adds `#line` directives to the output for this purpose.
 
-To send the preprocessed output, with `#line` directives, to a file, use the [/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md) option instead.
+To send the preprocessed output, with `#line` directives, to a file, use the [/P (Preprocess to a File)](p-preprocess-to-a-file.md) option instead.
 
 To send the preprocessed output to stdout, with `#line` directives, use **/P** and **/EP** together.
 
@@ -53,5 +53,5 @@ CL /EP /C ADD.C
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

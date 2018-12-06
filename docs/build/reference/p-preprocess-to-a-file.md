@@ -17,11 +17,11 @@ Preprocesses C and C++ source files and writes the preprocessed output to a file
 
 ## Remarks
 
-The file has the same base name as the source file and an .i extension. In the process, all preprocessor directives are carried out, macro expansions are performed, and comments are removed. To preserve comments in the preprocessed output, use the [/C (Preserve Comments During Preprocessing)](../../build/reference/c-preserve-comments-during-preprocessing.md) option along with **/P**.
+The file has the same base name as the source file and an .i extension. In the process, all preprocessor directives are carried out, macro expansions are performed, and comments are removed. To preserve comments in the preprocessed output, use the [/C (Preserve Comments During Preprocessing)](c-preserve-comments-during-preprocessing.md) option along with **/P**.
 
-**/P** adds `#line` directives to the output, at the beginning and end of each included file and around lines removed by preprocessor directives for conditional compilation. These directives renumber the lines of the preprocessed file. As a result, errors generated during later stages of processing refer to the line numbers of the original source file rather than lines in the preprocessed file. To suppress the generation of `#line` directives, use [/EP (Preprocess to stdout Without #line Directives)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) as well as **/P**.
+**/P** adds `#line` directives to the output, at the beginning and end of each included file and around lines removed by preprocessor directives for conditional compilation. These directives renumber the lines of the preprocessed file. As a result, errors generated during later stages of processing refer to the line numbers of the original source file rather than lines in the preprocessed file. To suppress the generation of `#line` directives, use [/EP (Preprocess to stdout Without #line Directives)](ep-preprocess-to-stdout-without-hash-line-directives.md) as well as **/P**.
 
-The **/P** option suppresses compilation. It does not produce an .obj file, even if you use [/Fo (Object File Name)](../../build/reference/fo-object-file-name.md). You must resubmit the preprocessed file for compilation. **/P** also suppresses the output files from the **/FA**, **/Fa**, and **/Fm** options. For more information, see [/FA, /Fa (Listing File)](../../build/reference/fa-fa-listing-file.md) and [/Fm (Name Mapfile)](../../build/reference/fm-name-mapfile.md).
+The **/P** option suppresses compilation. It does not produce an .obj file, even if you use [/Fo (Object File Name)](fo-object-file-name.md). You must resubmit the preprocessed file for compilation. **/P** also suppresses the output files from the **/FA**, **/Fa**, and **/Fm** options. For more information, see [/FA, /Fa (Listing File)](fa-fa-listing-file.md) and [/Fm (Name Mapfile)](fm-name-mapfile.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -47,6 +47,6 @@ CL /P /C ADD.C
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/Fi (Preprocess Output File Name)](../../build/reference/fi-preprocess-output-file-name.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)<br/>
+[/Fi (Preprocess Output File Name)](fi-preprocess-output-file-name.md)

@@ -60,11 +60,11 @@ To negate an attribute, precede its character with an exclamation point (!). The
 |K|Cacheable|Marks the section as not cacheable|
 |P|Pageable|Marks the section as not pageable|
 
-K and P are unusual in that the section flags that correspond to them are used in the negative sense. If you specify one of them on the .text section by using the **/SECTION:.text,K** option, there is no difference in the section flags when you run [DUMPBIN](../../build/reference/dumpbin-options.md) with the [/HEADERS](../../build/reference/headers.md) option; the section was already implicitly cached. To remove the default, specify **/SECTION:.text,!K** instead. DUMPBIN reveals section characteristics, including "Not Cached."
+K and P are unusual in that the section flags that correspond to them are used in the negative sense. If you specify one of them on the .text section by using the **/SECTION:.text,K** option, there is no difference in the section flags when you run [DUMPBIN](dumpbin-options.md) with the [/HEADERS](headers.md) option; the section was already implicitly cached. To remove the default, specify **/SECTION:.text,!K** instead. DUMPBIN reveals section characteristics, including "Not Cached."
 
 A section in the PE file that does not have E, R, or W set is probably invalid.
 
-The **ALIGN=**_number_ argument lets you specify an alignment value for a particular section. The _number_ argument is in bytes and must be a power of two. See [/ALIGN](../../build/reference/align-section-alignment.md) for more information.
+The **ALIGN=**_number_ argument lets you specify an alignment value for a particular section. The _number_ argument is in bytes and must be a power of two. See [/ALIGN](align-section-alignment.md) for more information.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -80,5 +80,5 @@ The **ALIGN=**_number_ argument lets you specify an alignment value for a partic
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

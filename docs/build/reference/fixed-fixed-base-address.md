@@ -13,7 +13,7 @@ ms.assetid: 929bba5e-b7d8-40ed-943e-056aa3710fc5
 
 ## Remarks
 
-Tells the operating system to load the program only at its preferred base address. If the preferred base address is unavailable, the operating system does not load the file. For more information, see [/BASE (Base Address)](../../build/reference/base-base-address.md).
+Tells the operating system to load the program only at its preferred base address. If the preferred base address is unavailable, the operating system does not load the file. For more information, see [/BASE (Base Address)](base-base-address.md).
 
 /FIXED:NO is the default setting for a DLL, and /FIXED is the default setting for any other project type.
 
@@ -37,5 +37,5 @@ Specify /FIXED:NO to generate a relocation section in the program.
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

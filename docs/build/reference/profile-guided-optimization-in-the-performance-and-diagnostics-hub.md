@@ -39,21 +39,21 @@ Next, set the build configuration of your app to Release to ready it for the PGO
 
 Open the Performance and Diagnostics Hub—on the menu bar, choose **Analyze**, **Performance and Diagnostics**. This opens a diagnostics session page that has the analysis tools that are available for your project type.
 
-![PGO in the Performance and Diagnostics Hub](../../build/reference/media/pgofig0hub.png "PGO in the Performance and Diagnostics Hub")
+![PGO in the Performance and Diagnostics Hub](media/pgofig0hub.png "PGO in the Performance and Diagnostics Hub")
 
 In **Available Tools**, select the **Profile Guided Optimization** check box. Choose the **Start** button to start the PGO plug-in.
 
-![PGO introduction page](../../build/reference/media/pgofig1start.png "PGO introduction page")
+![PGO introduction page](media/pgofig1start.png "PGO introduction page")
 
 The **Profile Guided Optimization** page describes the steps the plug-in uses to improve the performance of your app. Choose the **Start** button.
 
-![PGO instrumentation page](../../build/reference/media/pgofig2instrument.png "PGO instrumentation page")
+![PGO instrumentation page](media/pgofig2instrument.png "PGO instrumentation page")
 
 In the **Instrumentation** section, you use the **Training is initially enabled** option to choose whether to include the startup phase of your app as part of the training. If this option is not selected, training data is not recorded in a running instrumented app until you explicitly enable training.
 
 Choose the **Instrument** button to build your app with a special set of compiler options. The compiler inserts probe instructions in the generated code. These instructions record profiling data during the training phase.
 
-![PGO instrumented build page](../../build/reference/media/pgofig3build.PNG "PGO instrumented build page")
+![PGO instrumented build page](media/pgofig3build.PNG "PGO instrumented build page")
 
 When the instrumented build of your app is complete, the app is started automatically.
 
@@ -61,22 +61,22 @@ If any errors or warnings occur during the build, correct them and then choose *
 
 When your app is started, you can use the **Start Training** and **Pause Training** links in the **Training** section to control when profiling information is recorded. You can use the **Stop Application** and **Start Application** links to stop and restart the app.
 
-![PGO training page](../../build/reference/media/pgofig4training.PNG "PGO training page")
+![PGO training page](media/pgofig4training.PNG "PGO training page")
 
 During training, go through your user scenarios to capture the profiling information that the PGO plug-in needs to optimize the code. When you have completed the training, close your app or choose the **Stop Application** link. Choose the **Analyze** button to start the analysis step.
 
 When the analysis is complete, the **Analysis** section shows a report of the profiling information that was captured during the user-scenario training phase. You can use this report to examine which functions your app called the most and spent the most time in. The PGO plug-in uses the information to determine which app functions to optimize for speed and which to optimize for size. The PGO plug-in configures build optimizations to create the smallest, fastest app for the user scenarios that you recorded during training.
 
-![PGO analysis page](../../build/reference/media/pgofig5analyze.png "PGO analysis page")
+![PGO analysis page](media/pgofig5analyze.png "PGO analysis page")
 
 If the training captured the expected profiling information, you can choose **Save Changes** to save the analyzed profile data in your project to optimize future builds. To discard the profile data and start the training over from the beginning, choose **Redo Training**.
 
 The profile data file is saved in your project in a **PGO Training Data** folder. This data is used to control the compiler build optimization settings in your app.
 
-![PGO data file in Solution Explorer](../../build/reference/media/pgofig6data.png "PGO data file in Solution Explorer")
+![PGO data file in Solution Explorer](media/pgofig6data.png "PGO data file in Solution Explorer")
 
 After analysis, the PGO plug-in sets build options in your project to use the profile data to selectively optimize your app during compilation. You can continue to modify and build your app with the same profile data. When the app is built, the build output reports how many functions and instructions were optimized by using profile data.
 
-![PGO output diagnostics](../../build/reference/media/pgofig7diagnostics.png "PGO output diagnostics")
+![PGO output diagnostics](media/pgofig7diagnostics.png "PGO output diagnostics")
 
 If you make significant code changes during development, you may have to retrain your app to get the best optimizations. We recommend that you retrain your app when the build output reports that less than 80 percent of functions or instructions were optimized by using profile data.

@@ -7,7 +7,7 @@ ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
 ---
 # /Og (Global Optimizations)
 
-Deprecated. Provides local and global optimizations, automatic-register allocation, and loop optimization. We recommend you use either [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) or [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead.
+Deprecated. Provides local and global optimizations, automatic-register allocation, and loop optimization. We recommend you use either [/O1 (Minimize Size)](o1-o2-minimize-size-maximize-speed.md) or [/O2 (Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) instead.
 
 ## Syntax
 
@@ -15,7 +15,7 @@ Deprecated. Provides local and global optimizations, automatic-register allocati
 
 ## Remarks
 
-**/Og** is deprecated. These optimizations are now generally enabled by default. For more information on optimizations, see [/O1, /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) or [/Ox (Enable Most Speed Optimizations)](../../build/reference/ox-full-optimization.md).
+**/Og** is deprecated. These optimizations are now generally enabled by default. For more information on optimizations, see [/O1, /O2 (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) or [/Ox (Enable Most Speed Optimizations)](ox-full-optimization.md).
 
 The following optimizations are available under **/Og**:
 
@@ -61,7 +61,7 @@ The following optimizations are available under **/Og**:
    > [!NOTE]
    > You can enable or disable global optimization on a function-by-function basis using the `optimize` pragma together with the `g` option.
 
-For related information, see [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md) and [/Ox (Enable Most Speed Optimizations)](../../build/reference/ox-full-optimization.md).
+For related information, see [/Oi (Generate Intrinsic Functions)](oi-generate-intrinsic-functions.md) and [/Ox (Enable Most Speed Optimizations)](ox-full-optimization.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -79,8 +79,8 @@ For related information, see [/Oi (Generate Intrinsic Functions)](../../build/re
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
+[/O Options (Optimize Code)](o-options-optimize-code.md)
 
-[Compiler Options](../../build/reference/compiler-options.md)
+[Compiler Options](compiler-options.md)
 
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Setting Compiler Options](setting-compiler-options.md)

@@ -40,5 +40,5 @@ There is no `#pragma` equivalent to control this option.
 ## See also
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

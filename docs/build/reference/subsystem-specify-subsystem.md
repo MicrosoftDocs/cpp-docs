@@ -29,7 +29,7 @@ Win32 character-mode application. The operating system provides a console for co
 The Extensible Firmware Interface subsystems. See the EFI specification for more information. For examples, see the Intel Web site. The minimum version and default version is 1.0.
 
 **NATIVE**<br/>
-Kernel mode drivers for Windows NT. This option is usually reserved for Windows system components. If [/DRIVER:WDM](../../build/reference/driver-windows-nt-kernel-mode-driver.md) is specified, NATIVE is the default.
+Kernel mode drivers for Windows NT. This option is usually reserved for Windows system components. If [/DRIVER:WDM](driver-windows-nt-kernel-mode-driver.md) is specified, NATIVE is the default.
 
 **POSIX**<br/>
 Application that runs with the POSIX subsystem in Windows NT.
@@ -74,5 +74,5 @@ The optional minimum and default *major* and *minor* version numbers for the sub
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

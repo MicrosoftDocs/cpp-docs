@@ -10,4 +10,4 @@ Click **Look Up** to retrieve the error message that corresponds to the system o
 
 ## See Also
 
-[Value Edit Control](../../build/reference/value-edit-control.md)
+[Value Edit Control](value-edit-control.md)

@@ -40,7 +40,7 @@ Most programs can be linked incrementally. However, some changes are too great, 
 
 - /ORDER is selected
 
-/INCREMENTAL is implied when [/DEBUG](../../build/reference/debug-generate-debug-info.md) is specified.
+/INCREMENTAL is implied when [/DEBUG](debug-generate-debug-info.md) is specified.
 
 Additionally, LINK performs a full link if any of the following situations occur:
 
@@ -72,5 +72,5 @@ Additionally, LINK performs a full link if any of the following situations occur
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

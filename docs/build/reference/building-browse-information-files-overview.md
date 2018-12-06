@@ -10,7 +10,7 @@ To create browse information for symbol browsing, the compiler creates an .sbr f
 
 Generating .sbr and .bsc files takes time, so Visual C++ turns these functions off by default. If you want to browse current information, you must turn the browse options on and build your project again.
 
-Use [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md) or [/Fr](../../build/reference/fr-fr-create-dot-sbr-file.md) to tell the compiler to create .sbr files. To create .bsc files, you can call [BSCMAKE](../../build/reference/bscmake-command-line.md) from the command line. Using BSCMAKE from the command line gives you more precise control over the manipulation of browse information files. See [BSCMAKE Reference](../../build/reference/bscmake-reference.md) for more information.
+Use [/FR](fr-fr-create-dot-sbr-file.md) or [/Fr](fr-fr-create-dot-sbr-file.md) to tell the compiler to create .sbr files. To create .bsc files, you can call [BSCMAKE](bscmake-command-line.md) from the command line. Using BSCMAKE from the command line gives you more precise control over the manipulation of browse information files. See [BSCMAKE Reference](bscmake-reference.md) for more information.
 
 > [!TIP]
 >  You can turn on .sbr file generation but leave .bsc file generation turned off. This provides fast builds but also enables you to create a fresh .bsc file quickly by turning on .bsc file generation and building the project.
@@ -21,7 +21,7 @@ See [General Property Page (Project)](../general-property-page-project.md) for i
 
 ### To create a smaller .bsc file
 
-1. Use [BSCMAKE command-line options](../../build/reference/bscmake-options.md) to exclude information from the browse information file.
+1. Use [BSCMAKE command-line options](bscmake-options.md) to exclude information from the browse information file.
 
 1. Omit local symbols in one or more .sbr files when compiling or assembling.
 
@@ -35,5 +35,5 @@ See [General Property Page (Project)](../general-property-page-project.md) for i
 
 ## See Also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)
+[C/C++ Build Tools](c-cpp-build-tools.md)<br/>
+[BSCMAKE Reference](bscmake-reference.md)

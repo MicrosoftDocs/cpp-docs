@@ -24,7 +24,7 @@ The text you want marked as code.
 
 Use [\<c>](c-visual-cpp.md) to indicate a portion of text should be marked as code.
 
-Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 

@@ -19,9 +19,9 @@ Tells the linker to produce a mapfile containing a list of segments in the order
 
 By default, the mapfile is given the base name of the corresponding C or C++ source file with a .MAP extension.
 
-Specifying **/Fm** has the same effect as if you had specified the [/MAP (Generate Mapfile)](../../build/reference/map-generate-mapfile.md) linker option.
+Specifying **/Fm** has the same effect as if you had specified the [/MAP (Generate Mapfile)](map-generate-mapfile.md) linker option.
 
-If you specify [/c (Compile Without Linking)](../../build/reference/c-compile-without-linking.md) to suppress linking, **/Fm** has no effect.
+If you specify [/c (Compile Without Linking)](c-compile-without-linking.md) to suppress linking, **/Fm** has no effect.
 
 Global symbols in a mapfile usually have one or more leading underscores because the compiler adds a leading underscore to variable names. Many global symbols that appear in the mapfile are used internally by the compiler and the standard libraries.
 
@@ -41,7 +41,7 @@ Global symbols in a mapfile usually have one or more leading underscores because
 
 ## See Also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Specifying the Pathname](../../build/reference/specifying-the-pathname.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Specifying the Pathname](specifying-the-pathname.md)

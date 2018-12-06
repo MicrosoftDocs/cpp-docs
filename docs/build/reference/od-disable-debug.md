@@ -17,7 +17,7 @@ Turns off all optimizations in the program and speeds compilation.
 
 ## Remarks
 
-This option is the default. Because **/Od** suppresses code movement, it simplifies the debugging process. For more information about compiler options for debugging, see [/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md).
+This option is the default. Because **/Od** suppresses code movement, it simplifies the debugging process. For more information about compiler options for debugging, see [/Z7, /Zi, /ZI (Debug Information Format)](z7-zi-zi-debug-information-format.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -35,7 +35,7 @@ This option is the default. Because **/Od** suppresses code movement, it simplif
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md)
+[/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)<br/>
+[/Z7, /Zi, /ZI (Debug Information Format)](z7-zi-zi-debug-information-format.md)

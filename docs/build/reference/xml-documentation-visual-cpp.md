@@ -23,7 +23,7 @@ For details on creating an .xml file with documentation comments, see the follow
 
 |For information about|See|
 |---------------------------|---------|
-|The compiler options to use|[/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)|
+|The compiler options to use|[/doc](doc-process-documentation-comments-c-cpp.md)|
 |Tags you can use to provide commonly used functionality in documentation|[Recommended Tags for Documentation Comments](../ide/recommended-tags-for-documentation-comments-visual-cpp.md)|
 |The ID strings that the compiler produces to identify the constructs in your code|[Processing the .xml File](../ide/dot-xml-file-processing.md)|
 |How to delimit documentation tags|[Delimiters for Visual C++ Documentation Tags](../ide/delimiters-for-visual-cpp-documentation-tags.md)|

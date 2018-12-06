@@ -19,4 +19,4 @@ The operating system requires the checksum for device drivers. It is recommended
 
 ## See Also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

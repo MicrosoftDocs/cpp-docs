@@ -18,7 +18,7 @@ The list below shows the primary differences between a debug and a release (nond
 
 - [Optimizations](#_core_optimizations)
 
-See the [/GZ (Catch Release-Build Errors in Debug Build)](../../build/reference/gz-enable-stack-frame-run-time-error-checking.md) compiler option for information on how to catch release build errors in debug builds.
+See the [/GZ (Catch Release-Build Errors in Debug Build)](gz-enable-stack-frame-run-time-error-checking.md) compiler option for information on how to catch release build errors in debug builds.
 
 ##  <a name="_core_heap_layout"></a> Heap Layout
 
@@ -26,11 +26,11 @@ Heap layout will be the cause of about ninety percent of the apparent problems w
 
 When you build your project for debug, you are using the debug memory allocator. This means that all memory allocations have guard bytes placed around them. These guard bytes detect a memory overwrite. Because heap layout is different between release and debug versions, a memory overwrite might not create any problems in a debug build, but may have catastrophic effects in a release build.
 
-For more information, see [Check for Memory Overwrite](../../build/reference/checking-for-memory-overwrites.md) and [Use the Debug Build To Check for Memory Overwrite](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md).
+For more information, see [Check for Memory Overwrite](checking-for-memory-overwrites.md) and [Use the Debug Build To Check for Memory Overwrite](using-the-debug-build-to-check-for-memory-overwrite.md).
 
 ##  <a name="_core_compilation"></a> Compilation
 
-Many of the MFC macros and much of the MFC implementation changes when you build for release. In particular, the ASSERT macro evaluates to nothing in a release build, so none of the code found in ASSERTs will be executed. For more information, see [Examine ASSERT Statements](../../build/reference/using-verify-instead-of-assert.md).
+Many of the MFC macros and much of the MFC implementation changes when you build for release. In particular, the ASSERT macro evaluates to nothing in a release build, so none of the code found in ASSERTs will be executed. For more information, see [Examine ASSERT Statements](using-verify-instead-of-assert.md).
 
 Some functions are inlined for increased speed in the release build. Optimizations are generally turned on in a release build. A different memory allocator is also being used.
 
@@ -40,9 +40,9 @@ The lack of debugging information removes the padding from your application. In 
 
 ##  <a name="_core_optimizations"></a> Optimizations
 
-Depending on the nature of certain segments of code, the optimizing compiler might generate unexpected code. This is the least likely cause of release build problems, but it does arise on occasion. For a solution, see [Optimizing Your Code](../../build/reference/optimizing-your-code.md).
+Depending on the nature of certain segments of code, the optimizing compiler might generate unexpected code. This is the least likely cause of release build problems, but it does arise on occasion. For a solution, see [Optimizing Your Code](optimizing-your-code.md).
 
 ## See Also
 
-[Release Builds](../../build/reference/release-builds.md)<br/>
-[Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)
+[Release Builds](release-builds.md)<br/>
+[Fixing Release Build Problems](fixing-release-build-problems.md)

@@ -5,7 +5,7 @@ ms.assetid: 4653d1bd-300f-4083-86f5-d1a06f44e61c
 ---
 # Choosing the Format of .netmodule Input Files
 
-An MSIL .obj file (compiled with [/clr](../../build/reference/clr-common-language-runtime-compilation.md)) can also be used as a .netmodule file.  .obj files contain metadata and native symbols.  .netmodules only contain metadata.
+An MSIL .obj file (compiled with [/clr](clr-common-language-runtime-compilation.md)) can also be used as a .netmodule file.  .obj files contain metadata and native symbols.  .netmodules only contain metadata.
 
 You can pass an MSIL .obj file to any other Visual Studio compiler via the /addmodule compiler option (but be aware that the .obj file becomes part of the resulting assembly and must be shipped with the assembly).  For example, Visual C# and Visual Basic have the /addmodule compiler option.
 
@@ -30,4 +30,4 @@ Use the following to determine whether you need to use a .netmodule or a .obj fi
 
 ## See Also
 
-[.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md)
+[.netmodule Files as Linker Input](netmodule-files-as-linker-input.md)

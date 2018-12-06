@@ -11,10 +11,10 @@ By optimizing an executable, you can achieve a balance between fast execution sp
 
 The following topics describe some of the optimization features in the C/C++ language.
 
-[Optimization Pragmas and Keywords](../../build/reference/optimization-pragmas-and-keywords.md)<br/>
+[Optimization Pragmas and Keywords](optimization-pragmas-and-keywords.md)<br/>
 A list of keywords and pragmas that you can use in your code to improve performance.
 
-[Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md)<br/>
+[Compiler Options Listed by Category](compiler-options-listed-by-category.md)<br/>
 A list of **/O** compiler options that specifically affect execution speed or code size.
 
 [Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
@@ -40,10 +40,10 @@ Paradoxically, optimizing a program for speed could cause code to run slower. Th
 
 The following topics discuss good programming practices.
 
-[Tips for Improving Time-Critical Code](../../build/reference/tips-for-improving-time-critical-code.md)<br/>
+[Tips for Improving Time-Critical Code](tips-for-improving-time-critical-code.md)<br/>
 Better coding techniques can yield better performance. This topic suggests coding techniques that can help you make sure that the time-critical parts of your code perform satisfactorily.
 
-[Optimization Best Practices](../../build/reference/optimization-best-practices.md)<br/>
+[Optimization Best Practices](optimization-best-practices.md)<br/>
 Provides general guidelines about how best to optimize your application.
 
 ## Debugging optimized code
@@ -54,19 +54,19 @@ The following topics provide basic information about how to debug.
 
 - [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
 
-- [Common Problems When Creating a Release Build](../../build/reference/common-problems-when-creating-a-release-build.md)
+- [Common Problems When Creating a Release Build](common-problems-when-creating-a-release-build.md)
 
 The following topics provide more advanced information about how to debug.
 
 - [How to: Debug Optimized Code](/visualstudio/debugger/how-to-debug-optimized-code)
 
-- [Why Floating-Point Numbers May Lose Precision](../../build/reference/why-floating-point-numbers-may-lose-precision.md)
+- [Why Floating-Point Numbers May Lose Precision](why-floating-point-numbers-may-lose-precision.md)
 
 The following topics provide information about how to optimize building, loading, and executing your code.
 
-- [Improving Compiler Throughput](../../build/reference/improving-compiler-throughput.md)
+- [Improving Compiler Throughput](improving-compiler-throughput.md)
 
-- [Using Function Name Without () Produces No Code](../../build/reference/using-function-name-without-parens-produces-no-code.md)
+- [Using Function Name Without () Produces No Code](using-function-name-without-parens-produces-no-code.md)
 
 - [Optimizing Inline Assembly](../../assembler/inline/optimizing-inline-assembly.md)
 
@@ -76,4 +76,4 @@ The following topics provide information about how to optimize building, loading
 
 ## See also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+[C/C++ Building Reference](c-cpp-building-reference.md)

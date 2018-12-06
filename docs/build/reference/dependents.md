@@ -15,8 +15,8 @@ ms.assetid: 9b31da2a-75ac-4bbf-a3f1-adf8b0ecbbb4
 
 Dumps the names of the DLLs from which the image imports functions. Does not dump the names of the imported functions.
 
-Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
 ## See Also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

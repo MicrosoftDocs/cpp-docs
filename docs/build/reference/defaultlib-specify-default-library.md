@@ -22,7 +22,7 @@ The name of a library to search when resolving external references.
 
 The **/DEFAULTLIB** option adds one *library* to the list of libraries that LINK searches when resolving references. A library specified with **/DEFAULTLIB** is searched after libraries specified explicitly on the command line and before default libraries named in .obj files.
 
-When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](../../build/reference/nodefaultlib-ignore-libraries.md) option overrides all **/DEFAULTLIB**:*library* options. The **/NODEFAULTLIB**:*library* option overrides **/DEFAULTLIB**:*library* when the same *library* name is specified in both.
+When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](nodefaultlib-ignore-libraries.md) option overrides all **/DEFAULTLIB**:*library* options. The **/NODEFAULTLIB**:*library* option overrides **/DEFAULTLIB**:*library* when the same *library* name is specified in both.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -38,5 +38,5 @@ When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](
 
 ## See also
 
-- [Setting Linker Options](../../build/reference/setting-linker-options.md)
-- [Linker Options](../../build/reference/linker-options.md)
+- [Setting Linker Options](setting-linker-options.md)
+- [Linker Options](linker-options.md)

@@ -30,7 +30,7 @@ By default, the starting address is a function name from the C run-time library.
 |**WinMainCRTStartup** (or **wWinMainCRTStartup**)|An application that uses /SUBSYSTEM:**WINDOWS**; calls `WinMain` (or `wWinMain`), which must be defined to use `__stdcall`|
 |**_DllMainCRTStartup**|A DLL; calls `DllMain` if it exists, which must be defined to use `__stdcall`|
 
-If the [/DLL](../../build/reference/dll-build-a-dll.md) or [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) option is not specified, the linker selects a subsystem and entry point depending on whether `main` or `WinMain` is defined.
+If the [/DLL](dll-build-a-dll.md) or [/SUBSYSTEM](subsystem-specify-subsystem.md) option is not specified, the linker selects a subsystem and entry point depending on whether `main` or `WinMain` is defined.
 
 The functions `main`, `WinMain`, and `DllMain` are the three forms of the user-defined entry point.
 
@@ -54,5 +54,5 @@ For information on how to define your own `DllMain` entry point, see [DLLs and V
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

@@ -6,7 +6,7 @@ ms.assetid: 645912b5-197a-4c36-ba58-64df09444ca0
 ---
 # XML Document Generator Tool Property Pages
 
-The XML Document Generator Tool property page exposes the functionality of xdcmake.exe. xdcmake.exe merges .xdc files into an .xml file when your source code contains documentation comments and [/doc (Process Documentation Comments) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md) is specified,. See [Recommended Tags for Documentation Comments](recommended-tags-for-documentation-comments-visual-cpp.md) for information on adding documentation comments to source code.
+The XML Document Generator Tool property page exposes the functionality of xdcmake.exe. xdcmake.exe merges .xdc files into an .xml file when your source code contains documentation comments and [/doc (Process Documentation Comments) (C/C++)](doc-process-documentation-comments-c-cpp.md) is specified,. See [Recommended Tags for Documentation Comments](recommended-tags-for-documentation-comments-visual-cpp.md) for information on adding documentation comments to source code.
 
 > [!NOTE]
 >  xdcmake.exe options in the development environment (property pages) differ from the options when xdcmake.exe is used at the command line. For information on using xdcmake.exe at the command line, see [XDCMake Reference](../ide/xdcmake-reference.md).

@@ -19,7 +19,7 @@ The default is /MANIFEST.
 
 The /MANIFEST:EMBED option specifies that the linker should embed the manifest file in the image as a resource of type RT_MANIFEST. The optional `ID` parameter is the resource ID to use for the manifest. Use a value of 1 for an executable file. Use a value of 2 for a DLL to enable it to specify private dependencies. If the `ID` parameter is not specified, the default value is 2 if the /DLL option is set; otherwise, the default value is 1.
 
-Beginning with Visual Studio 2008, manifest files for executables contain a section that specifies User Account Control (UAC) information. If you specify /MANIFEST but specify neither [/MANIFESTUAC](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md) nor [/DLL](../../build/reference/dll-build-a-dll.md), a default UAC fragment that has the UAC level set to *asInvoker* is inserted into the manifest. For more information about UAC levels, see [/MANIFESTUAC (Embeds UAC information in manifest)](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md).
+Beginning with Visual Studio 2008, manifest files for executables contain a section that specifies User Account Control (UAC) information. If you specify /MANIFEST but specify neither [/MANIFESTUAC](manifestuac-embeds-uac-information-in-manifest.md) nor [/DLL](dll-build-a-dll.md), a default UAC fragment that has the UAC level set to *asInvoker* is inserted into the manifest. For more information about UAC levels, see [/MANIFESTUAC (Embeds UAC information in manifest)](manifestuac-embeds-uac-information-in-manifest.md).
 
 To change the default behavior for UAC, do one of these:
 
@@ -27,7 +27,7 @@ To change the default behavior for UAC, do one of these:
 
 - Or specify the /MANIFESTUAC:NO option if you do not want to generate a UAC fragment in the manifest.
 
-If you do not specify /MANIFEST but do specify [/MANIFESTDEPENDENCY](../../build/reference/manifestdependency-specify-manifest-dependencies.md) comments, a manifest file is created. A manifest file is not created if you specify /MANIFEST:NO.
+If you do not specify /MANIFEST but do specify [/MANIFESTDEPENDENCY](manifestdependency-specify-manifest-dependencies.md) comments, a manifest file is created. A manifest file is not created if you specify /MANIFEST:NO.
 
 If you specify /MANIFEST, the name of the manifest file is the same as the name of your output file, but with .manifest appended to the file name. For example, if your output file name is MyFile.exe, the manifest file name is MyFile.exe.manifest.  If you specify /MANIFESTFILE:*name*, the name of the manifest is what you specify in *name*.
 
@@ -49,5 +49,5 @@ If you specify /MANIFEST, the name of the manifest file is the same as the name 
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

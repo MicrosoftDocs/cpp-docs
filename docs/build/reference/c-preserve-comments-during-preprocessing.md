@@ -50,8 +50,8 @@ int i;   // a variable
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/E (Preprocess to stdout)](../../build/reference/e-preprocess-to-stdout.md)<br/>
-[/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md)<br/>
-[/EP (Preprocess to stdout Without #line Directives)](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)<br/>
+[/E (Preprocess to stdout)](e-preprocess-to-stdout.md)<br/>
+[/P (Preprocess to a File)](p-preprocess-to-a-file.md)<br/>
+[/EP (Preprocess to stdout Without #line Directives)](ep-preprocess-to-stdout-without-hash-line-directives.md)

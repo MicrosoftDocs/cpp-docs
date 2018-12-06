@@ -56,5 +56,5 @@ You can also use [pack](../../preprocessor/pack.md) to control structure packing
 
 ## See also
 
-- [Compiler Options](../../build/reference/compiler-options.md)
-- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](compiler-options.md)
+- [Setting Compiler Options](setting-compiler-options.md)

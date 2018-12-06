@@ -31,7 +31,7 @@ Describes the MSBuild-based project types that are available in Visual C++.
 [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
 Describes the kinds of files that are used with various MSBuild project types.
 
-[Creating Desktop Projects By Using Application Wizards](../ide/creating-desktop-projects-by-using-application-wizards.md)<br>
+[Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)<br>
 How to use the wizards to create projects with Visual C++.
 
 [Working with Project Properties](../ide/working-with-project-properties.md)<br>

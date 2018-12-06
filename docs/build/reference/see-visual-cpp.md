@@ -24,7 +24,7 @@ The compiler checks that the given code element exists and resolves `member` to 
 
 ## Remarks
 
-Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 See [\<summary>](summary-visual-cpp.md) for an example of using \<see>.
 

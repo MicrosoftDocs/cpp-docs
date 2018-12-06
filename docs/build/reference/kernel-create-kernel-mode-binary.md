@@ -38,7 +38,7 @@ The following table lists changes in compiler behavior when **/kernel** is speci
 |RTTI|Disabled. All instances of the `dynamic_cast` and `typeid` keywords emit a compiler error, unless `dynamic_cast` is used statically.|
 |`new` and `delete`|You must explicitly define the `new()` or `delete()` operator; neither the compiler nor the runtime will supply a default definition.|
 
-Custom calling conventions, the [/GS](../../build/reference/gs-buffer-security-check.md) build option, and all optimizations are permitted when you use the **/kernel** option. Inlining is largely not affected by **/kernel**, with the same semantics honored by the compiler. If you want to make sure that the `__forceinline` inlining qualifier is honored, you must make sure that warning [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) is enabled so that you know when a particular `__forceinline` function is not inlined.
+Custom calling conventions, the [/GS](gs-buffer-security-check.md) build option, and all optimizations are permitted when you use the **/kernel** option. Inlining is largely not affected by **/kernel**, with the same semantics honored by the compiler. If you want to make sure that the `__forceinline` inlining qualifier is honored, you must make sure that warning [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) is enabled so that you know when a particular `__forceinline` function is not inlined.
 
 When the compiler is passed the **/kernel** switch, it predefines a preprocessor macro that's named `_KERNEL_MODE` and has the value **1**. You can use this to conditionally compile code based on whether the execution environment is in user mode or kernel mode. For example, the following code specifies that the class should be in a non-pageable memory segment when it is compiled for kernel mode execution.
 
@@ -90,5 +90,5 @@ The **/kernel** option and the **/driver** option operate independently and neit
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

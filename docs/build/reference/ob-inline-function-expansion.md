@@ -24,7 +24,7 @@ Allows expansion only of functions marked [inline](../../cpp/inline-functions-cp
 **2**<br/>
 The default value. Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function that the compiler chooses.
 
-**/Ob2** is in effect when [/O1, /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) or [/Ox (Enable Most Speed Optimizations)](../../build/reference/ox-full-optimization.md) is used.
+**/Ob2** is in effect when [/O1, /O2 (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) or [/Ox (Enable Most Speed Optimizations)](ox-full-optimization.md) is used.
 
 This option requires that you enable optimizations using **/O1**, **/O2**, **/Ox**, or **/Og**.
 
@@ -35,7 +35,7 @@ The compiler treats the inline expansion options and keywords as suggestions. Th
 You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) directive to exclude functions from consideration as candidates for inline expansion. Also see the `#pragma` [intrinsic](../../preprocessor/intrinsic.md) directive.
 
 > [!NOTE]
-> Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md).
+> Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [Profile-Guided Optimizations](profile-guided-optimizations.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -51,6 +51,6 @@ You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) direc
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

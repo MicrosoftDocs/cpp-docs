@@ -51,4 +51,4 @@ Specify the `attributes` and *alignment* characters as a string with no white sp
 
 ## See Also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

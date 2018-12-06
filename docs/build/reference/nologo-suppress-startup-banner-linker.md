@@ -15,7 +15,7 @@ ms.assetid: 3b20dddd-eca6-4545-a331-9f70bf720197
 
 The /NOLOGO option prevents display of the copyright message and version number.
 
-This option also suppresses echoing of command files. For details, see [LINK Command Files](../../build/reference/link-command-files.md).
+This option also suppresses echoing of command files. For details, see [LINK Command Files](link-command-files.md).
 
 By default, this information is sent by the linker to the Output window. On the command line, it is sent to standard output and can be redirected to a file.
 
@@ -29,5 +29,5 @@ By default, this information is sent by the linker to the Output window. On the 
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

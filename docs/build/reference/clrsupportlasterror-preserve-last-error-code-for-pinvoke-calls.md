@@ -55,7 +55,7 @@ You can minimize the performance impact by linking with **/CLRSUPPORTLASTERROR:S
 > [!NOTE]
 >  Preserving the last error is not supported for unmanaged functions that are consumed by CLR code, in the same module.
 
-- For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
+- For more information, see [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md).
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -143,5 +143,5 @@ GetLastError for system call succeeded (183).
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

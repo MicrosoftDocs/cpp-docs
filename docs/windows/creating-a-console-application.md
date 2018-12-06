@@ -11,7 +11,7 @@ The easiest way to create a Win32 console application is to use the **Win32 Appl
 
 ### To create a Win32 console application
 
-1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../build/creating-desktop-projects-by-using-application-wizards.md).
 
 2. In the **New Project** dialog box, select **Win32 Console Project** in the **Templates** pane to open the wizard.
 
@@ -26,4 +26,4 @@ The easiest way to create a Win32 console application is to use the **Win32 Appl
 
 [Console Projects](/visualstudio/debugger/debugging-preparation-console-projects)<br/>
 [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Property Pages](../ide/property-pages-visual-cpp.md)
+[Property Pages](../build/reference/property-pages-visual-cpp.md)

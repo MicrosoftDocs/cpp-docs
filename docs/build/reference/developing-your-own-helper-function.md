@@ -18,4 +18,4 @@ It will probably be easiest to simply provide a new pointer to a user-supplied n
 
 ## See Also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

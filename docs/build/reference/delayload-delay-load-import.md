@@ -16,9 +16,9 @@ The name of a DLL that you want to delay load.
 
 ## Remarks
 
-The /DELAYLOAD option causes the DLL that's specified by `dllname` to be loaded only on the first call by the program to a function in that DLL. For more information, see [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md). You can use this option as many times as necessary to specify as many DLLs as you choose. You must use Delayimp.lib when you link your program, or you can implement your own delay-load helper function.
+The /DELAYLOAD option causes the DLL that's specified by `dllname` to be loaded only on the first call by the program to a function in that DLL. For more information, see [Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md). You can use this option as many times as necessary to specify as many DLLs as you choose. You must use Delayimp.lib when you link your program, or you can implement your own delay-load helper function.
 
-The [/DELAY](../../build/reference/delay-delay-load-import-settings.md) option specifies binding and loading options for each delay-loaded DLL.
+The [/DELAY](delay-delay-load-import-settings.md) option specifies binding and loading options for each delay-loaded DLL.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -34,5 +34,5 @@ The [/DELAY](../../build/reference/delay-delay-load-import-settings.md) option s
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

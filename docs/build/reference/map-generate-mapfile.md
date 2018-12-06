@@ -34,7 +34,7 @@ A mapfile is a text file that contains the following information about the progr
 
 - The entry point (as *section*:*offset*)
 
-The [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md) option specifies additional information to be included in the mapfile.
+The [/MAPINFO](mapinfo-include-information-in-mapfile.md) option specifies additional information to be included in the mapfile.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -52,5 +52,5 @@ The [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md) 
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

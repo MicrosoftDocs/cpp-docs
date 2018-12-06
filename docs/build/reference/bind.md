@@ -21,4 +21,4 @@ By default, the program loader sets the addresses of entry points when it loads 
 
 ## See Also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

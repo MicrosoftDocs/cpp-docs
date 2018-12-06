@@ -17,7 +17,7 @@ The /RELEASE option sets the Checksum in the header of an .exe file.
 
 The operating system requires the Checksum for device drivers. Set the Checksum for release versions of your device drivers to ensure compatibility with future operating systems.
 
-The /RELEASE option is set by default when the [/SUBSYSTEM:NATIVE](../../build/reference/subsystem-specify-subsystem.md) option is specified.
+The /RELEASE option is set by default when the [/SUBSYSTEM:NATIVE](subsystem-specify-subsystem.md) option is specified.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -35,5 +35,5 @@ The /RELEASE option is set by default when the [/SUBSYSTEM:NATIVE](../../build/r
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

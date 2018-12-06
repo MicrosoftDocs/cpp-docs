@@ -32,4 +32,4 @@ Several keywords and pragmas that you use in your C or C++ code affect optimizat
 
 ## See Also
 
-[Optimizing Your Code](../../build/reference/optimizing-your-code.md)
+[Optimizing Your Code](optimizing-your-code.md)

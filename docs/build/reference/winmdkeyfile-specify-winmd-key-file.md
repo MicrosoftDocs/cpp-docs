@@ -14,7 +14,7 @@ Specifies a key or a key pair to sign a Windows Runtime Metadata (.winmd) file.
 
 ## Remarks
 
-Resembles the [/KEYFILE](../../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) linker option that is applied to a .winmd file.
+Resembles the [/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) linker option that is applied to a .winmd file.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -28,5 +28,5 @@ Resembles the [/KEYFILE](../../build/reference/keyfile-specify-key-or-key-pair-t
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

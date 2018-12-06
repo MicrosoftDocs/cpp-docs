@@ -17,14 +17,14 @@ Deprecated. Enables minimal rebuild, which determines whether C++ source files t
 
 ## Remarks
 
-**/Gm** is deprecated. It may not trigger a build for certain kinds of header file changes. You may safely remove this option from your projects. To improve build times, we recommend you use precompiled headers and incremental and parallel build options instead. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).
+**/Gm** is deprecated. It may not trigger a build for certain kinds of header file changes. You may safely remove this option from your projects. To improve build times, we recommend you use precompiled headers and incremental and parallel build options instead. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
 
 The compiler stores dependency information between source files and class definitions in the project's .idb file during the first compile. (Dependency information tells which source file is dependent on which class definition, and which .h file the definition is located in.) Subsequent compiles use the information stored in the .idb file to determine whether a source file needs to be compiled, even if it includes a modified .h file.
 
 > [!NOTE]
 > Minimal rebuild relies on class definitions not changing between include files. Class definitions must be global for a project (there should be only one definition of a given class), because the dependency information in the .idb file is created for the entire project. If you have more than one definition for a class in your project, disable minimal rebuild.
 
-Because the incremental linker does not support the Windows metadata included in .obj files by using the [/ZW (Windows Runtime Compilation)](../../build/reference/zw-windows-runtime-compilation.md) option, the **/Gm** option is incompatible with **/ZW**.
+Because the incremental linker does not support the Windows metadata included in .obj files by using the [/ZW (Windows Runtime Compilation)](zw-windows-runtime-compilation.md) option, the **/Gm** option is incompatible with **/ZW**.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -40,5 +40,5 @@ Because the incremental linker does not support the Windows metadata included in
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

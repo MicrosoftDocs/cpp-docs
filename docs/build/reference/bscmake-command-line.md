@@ -26,8 +26,8 @@ The following command runs BSCMAKE to build a file called MAIN.bsc from three .s
 BSCMAKE main.sbr file1.sbr file2.sbr
 ```
 
-For related information, see [BSCMAKE Command File](../../build/reference/bscmake-command-file-response-file.md) and [BSCMAKE Options](../../build/reference/bscmake-options.md).
+For related information, see [BSCMAKE Command File](bscmake-command-file-response-file.md) and [BSCMAKE Options](bscmake-options.md).
 
 ## See Also
 
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)
+[BSCMAKE Reference](bscmake-reference.md)

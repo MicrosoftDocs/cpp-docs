@@ -127,7 +127,7 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>
 [noexcept](../../cpp/noexcept-cpp.md)<br/>
 [Exception Specifications (throw)](../../cpp/exception-specifications-throw-cpp.md)<br/>
 [terminate](../../standard-library/exception-functions.md#terminate)<br/>

@@ -21,7 +21,7 @@ The `reserve` value specifies the total stack allocation in virtual memory. For 
 
 Specify the `reserve` and `commit` values in decimal or C-language notation.
 
-Another way to set the size of the stack is with the [STACKSIZE](../../build/reference/stacksize.md) statement in a module-definition (.def) file. **STACKSIZE** overrides the Stack Allocations (/STACK) option if both are specified. You can change the stack size after the .exe file is built by using the [EDITBIN](../../build/reference/editbin-reference.md) tool.
+Another way to set the size of the stack is with the [STACKSIZE](stacksize.md) statement in a module-definition (.def) file. **STACKSIZE** overrides the Stack Allocations (/STACK) option if both are specified. You can change the stack size after the .exe file is built by using the [EDITBIN](editbin-reference.md) tool.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -43,5 +43,5 @@ Another way to set the size of the stack is with the [STACKSIZE](../../build/ref
 
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

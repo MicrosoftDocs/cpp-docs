@@ -22,7 +22,7 @@ The directory to be added to the list of directories searched for include files.
 
 To add more than one directory, use this option more than once. Directories are searched only until the specified include file is found.
 
-You can use this option with the ([/X (Ignore Standard Include Paths)](../../build/reference/x-ignore-standard-include-paths.md)) option.
+You can use this option with the ([/X (Ignore Standard Include Paths)](x-ignore-standard-include-paths.md)) option.
 
 The compiler searches directories in the following order:
 
@@ -54,5 +54,5 @@ CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
 
 ## See Also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

@@ -21,7 +21,7 @@ The **/ALIGN** option specifies the alignment of each section within the linear 
 
 Unless you are writing an application such as a device driver, you should not need to modify the alignment.
 
-It is possible to modify the alignment of a particular section with the align parameter to the [/SECTION](../../build/reference/section-specify-section-attributes.md) option.
+It is possible to modify the alignment of a particular section with the align parameter to the [/SECTION](section-specify-section-attributes.md) option.
 
 The alignment value that you specify cannot be smaller than the largest section alignment.
 
@@ -39,5 +39,5 @@ The alignment value that you specify cannot be smaller than the largest section 
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Setting Linker Options](setting-linker-options.md)<br/>
+[Linker Options](linker-options.md)

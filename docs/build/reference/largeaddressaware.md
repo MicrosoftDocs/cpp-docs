@@ -17,4 +17,4 @@ This option edits the image to indicate that the application can handle addresse
 
 ## See Also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

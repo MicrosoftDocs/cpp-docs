@@ -70,7 +70,7 @@ The properties in the General section affect the location of files that are crea
 
 - **Platform Toolset**
 
-   Allows the project to target a different version of the Visual C++ libraries and compiler. Visual C++ projects can target either the default toolset installed by Visual Studio, or one of the toolsets installed by several previous versions of Visual Studio, including toolsets that create executables that can run on Windowx XP. For information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../build/how-to-modify-the-target-framework-and-platform-toolset.md).
+   Allows the project to target a different version of the Visual C++ libraries and compiler. Visual C++ projects can target either the default toolset installed by Visual Studio, or one of the toolsets installed by several previous versions of Visual Studio, including toolsets that create executables that can run on Windowx XP. For information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - **Enable Managed Incremental Build**
 
@@ -126,7 +126,7 @@ The properties in the Project Default section represent default properties that 
 
 - **Common Language Runtime support**
 
-   Causes the [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option to be used.
+   Causes the [/clr](clr-common-language-runtime-compilation.md) compiler option to be used.
 
    To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>.
 
@@ -136,11 +136,11 @@ The properties in the Project Default section represent default properties that 
 
 - **Whole Program Optimization**
 
-   Specifies the [/GL](../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG](../build/reference/ltcg-link-time-code-generation.md) linker option. By default, this is disabled for Debug configurations, and enabled for Retail configurations.
+   Specifies the [/GL](gl-whole-program-optimization.md) compiler option and [/LTCG](ltcg-link-time-code-generation.md) linker option. By default, this is disabled for Debug configurations, and enabled for Retail configurations.
 
 - **Windows Store App Support**
 
-   Specifies whether this project supports Windows Runtime (Universal Windows Platform) apps. For more information, see [/ZW (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md), and the Windows Developer Center.
+   Specifies whether this project supports Windows Runtime (Universal Windows Platform) apps. For more information, see [/ZW (Windows Runtime Compilation)](zw-windows-runtime-compilation.md), and the Windows Developer Center.
 
 ## See also
 

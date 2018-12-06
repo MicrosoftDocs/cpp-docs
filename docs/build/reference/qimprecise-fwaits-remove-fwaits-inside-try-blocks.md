@@ -7,7 +7,7 @@ ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b
 ---
 # /Qimprecise_fwaits (Remove fwaits Inside Try Blocks)
 
-Removes the `fwait` commands internal to `try` blocks when you use the [/fp:except](../../build/reference/fp-specify-floating-point-behavior.md) compiler option.
+Removes the `fwait` commands internal to `try` blocks when you use the [/fp:except](fp-specify-floating-point-behavior.md) compiler option.
 
 ## Syntax
 
@@ -35,6 +35,6 @@ This option has no effect if **/fp:except** is not also specified. If you specif
 
 ## See Also
 
-[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)

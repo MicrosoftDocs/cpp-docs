@@ -10,21 +10,21 @@ A release build uses optimizations. When you use optimizations to create a relea
 
 This section presents information on why and when you would want to change from a debug build to a release build. It also discusses some of the problems you may encounter when changing from a debug to a release build:
 
-- [Creating a Release Build](../../build/reference/how-to-create-a-release-build.md)
+- [Creating a Release Build](how-to-create-a-release-build.md)
 
-- [Common Problems When Creating a Release Build](../../build/reference/common-problems-when-creating-a-release-build.md)
+- [Common Problems When Creating a Release Build](common-problems-when-creating-a-release-build.md)
 
-- [Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)
+- [Fixing Release Build Problems](fixing-release-build-problems.md)
 
-   - [Examining ASSERT Statements](../../build/reference/using-verify-instead-of-assert.md)
+   - [Examining ASSERT Statements](using-verify-instead-of-assert.md)
 
-   - [Using the Debug Build To Check for Memory Overwrite](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md)
+   - [Using the Debug Build To Check for Memory Overwrite](using-the-debug-build-to-check-for-memory-overwrite.md)
 
-   - [Debugging a Release Build](../../build/reference/how-to-debug-a-release-build.md)
+   - [Debugging a Release Build](how-to-debug-a-release-build.md)
 
-   - [Checking for Memory Overwrites](../../build/reference/checking-for-memory-overwrites.md)
+   - [Checking for Memory Overwrites](checking-for-memory-overwrites.md)
 
 ## See Also
 
 [Building C++ Projects in Visual Studio](../building-cpp-projects-in-visual-studio.md)<br/>
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+[C/C++ Building Reference](c-cpp-building-reference.md)

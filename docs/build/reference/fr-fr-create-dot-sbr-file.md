@@ -26,7 +26,7 @@ During the build process, the Microsoft Browse Information File Maintenance Util
 
 If you do not specify `filename`, the .sbr file gets the same base name as the source file.
 
-**/Fr** is deprecated; use **/FR** instead. For more information, see Deprecated and Removed Compiler Options in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).
+**/Fr** is deprecated; use **/FR** instead. For more information, see Deprecated and Removed Compiler Options in [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
 
 > [!NOTE]
 >  Do not change the .sbr extension. BSCMAKE requires the intermediary files to have that extension.
@@ -45,7 +45,7 @@ If you do not specify `filename`, the .sbr file gets the same base name as the s
 
 ## See Also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Specifying the Pathname](../../build/reference/specifying-the-pathname.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Specifying the Pathname](specifying-the-pathname.md)
