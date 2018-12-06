@@ -30,7 +30,7 @@ An application that consists of multiple libraries and executables, each potenti
 
 ## Importing Your Existing Code
 
-You can use the C++ compiler to build existing code that is set up to compile with or without a makefile and put it into a Visual Studio project. For more information, see [How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md).
+You can use the C++ compiler to build existing code that is set up to compile with or without a makefile and put it into a Visual Studio project. For more information, see [How to: Create a C++ Project from Existing Code](../build/how-to-create-a-cpp-project-from-existing-code.md).
 
 ## Creating a New Project
 

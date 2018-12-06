@@ -13,7 +13,7 @@ This topic lists options for additional features for your application, such as H
 
    Generates a set of help files for context-sensitive help, available by using F1 and a Help menu, or by clicking a **Help** button on a dialog box. Help support requires the help compiler. If you do not have the help compiler, you can install it by rerunning Setup.
 
-   See [HTML Help: Context-Sensitive Help for Your Programs](../../mfc/html-help-context-sensitive-help-for-your-programs.md) and [Help Files (HTML Help)](../../ide/help-files-html-help.md) for more information.
+   See [HTML Help: Context-Sensitive Help for Your Programs](../../mfc/html-help-context-sensitive-help-for-your-programs.md) and [Help Files (HTML Help)](../../build/reference/help-files-html-help.md) for more information.
 
 - **Printing and print preview**
 
