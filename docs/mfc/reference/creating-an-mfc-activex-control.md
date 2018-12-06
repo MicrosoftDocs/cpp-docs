@@ -34,5 +34,5 @@ After you have created your project, you can use the code wizards to add [functi
 ## See Also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Property Pages](../../ide/property-pages-visual-cpp.md)
+[Property Pages](../../build/reference/property-pages-visual-cpp.md)
 

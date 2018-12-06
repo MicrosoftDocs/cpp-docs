@@ -27,6 +27,6 @@ All of these files are located in the *Projname* directory, and in either the He
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
 [ATL Program or Control Source and Header Files](../ide/atl-program-or-control-source-and-header-files.md)<br>
 [CLR Projects](../ide/files-created-for-clr-projects.md)

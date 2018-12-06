@@ -7,7 +7,7 @@ ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
 ---
 # VC++ Directories Property Page (Windows)
 
-Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Creating reusable property configurations](create-reusable-property-configurations.md).
+Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Creating reusable property configurations](../create-reusable-property-configurations.md).
 
 For the Linux version of this page, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
@@ -19,7 +19,7 @@ To access the **VC++ Directories** property page:
 
 VC++ Directories properties apply to a project, not the top-level solution node. If you do not see **VC++ Directories** under **Configuration Properties**, select a C++ project node in the **Solution Explorer** window:
 
-![Select the project node](media/vcppdir.png "Select the project node to see the VC++ Directories properties")
+![Select the project node](../media/vcppdir.png "Select the project node to see the VC++ Directories properties")
 
 Note that the **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
@@ -33,19 +33,19 @@ To view the values for any of the directories:
 1. Choose the down-arrow button at the end of the property value field.
 1. In the drop-down menu, choose **Edit**.
 
-![Edit Library Directories](media/vcppdir_libdir_edit.png "Dialog to edit library paths")
+![Edit Library Directories](../media/vcppdir_libdir_edit.png "Dialog to edit library paths")
 
 You now see a dialog box like this:
 
-![Show Library Directories](media/vcppdir_libdir.png "Dialog to add or remove library paths")
+![Show Library Directories](../media/vcppdir_libdir.png "Dialog to add or remove library paths")
 
-Use this dialog to view the current directories. However, if you want to change or add a directory, it is better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see [Creating reusable property configurations](create-reusable-property-configurations.md).
+Use this dialog to view the current directories. However, if you want to change or add a directory, it is better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see [Creating reusable property configurations](../create-reusable-property-configurations.md).
 
 As shown above, many of the inherited paths are given as macros.  To examine the current value of a macro, choose the **Macros** button in the lower right corner of the dialog box. Note that many macros depend on the configuration type. A macro in a debug build might evaluate to a different path than the same macro in a release build.
 
 You can search for partial or complete matches in the edit box. The following illustration shows all the macros that contain the string "WindowsSDK" and it also shows the current path that the macro evaluates to:
 
-![See macro values](media/vcppdir_libdir_macros.png "Dialog to edit macros")
+![See macro values](../media/vcppdir_libdir_macros.png "Dialog to edit macros")
 
 Note: The list is populated as you type. Don't press **Enter**.
 

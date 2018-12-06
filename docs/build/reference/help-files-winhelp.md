@@ -28,4 +28,4 @@ You can add WinHelp support to an MFC ActiveX Control project by selecting **Gen
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)

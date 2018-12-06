@@ -20,5 +20,5 @@ These frame-window classes work as created, but to enhance their functionality, 
 ## See Also
 
 [Frame-Window Classes](../mfc/frame-window-classes.md)<br/>
-[MFC Program or Control Source and Header Files](../ide/mfc-program-or-control-source-and-header-files.md)
+[MFC Program or Control Source and Header Files](../build/reference/mfc-program-or-control-source-and-header-files.md)
 

@@ -24,14 +24,14 @@ For details on creating an .xml file with documentation comments, see the follow
 |For information about|See|
 |---------------------------|---------|
 |The compiler options to use|[/doc](doc-process-documentation-comments-c-cpp.md)|
-|Tags you can use to provide commonly used functionality in documentation|[Recommended Tags for Documentation Comments](../ide/recommended-tags-for-documentation-comments-visual-cpp.md)|
-|The ID strings that the compiler produces to identify the constructs in your code|[Processing the .xml File](../ide/dot-xml-file-processing.md)|
-|How to delimit documentation tags|[Delimiters for Visual C++ Documentation Tags](../ide/delimiters-for-visual-cpp-documentation-tags.md)|
-|Generating an .xml file from one or more .xdc files.|[XDCMake Reference](../ide/xdcmake-reference.md)|
+|Tags you can use to provide commonly used functionality in documentation|[Recommended Tags for Documentation Comments](recommended-tags-for-documentation-comments-visual-cpp.md)|
+|The ID strings that the compiler produces to identify the constructs in your code|[Processing the .xml File](dot-xml-file-processing.md)|
+|How to delimit documentation tags|[Delimiters for Visual C++ Documentation Tags](delimiters-for-visual-cpp-documentation-tags.md)|
+|Generating an .xml file from one or more .xdc files.|[XDCMake Reference](xdcmake-reference.md)|
 |Links to information about XML as it relates to Visual Studio feature areas|[XML in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)|
 
 If you need to put XML special characters in the text of a documentation comment, you must use XML entities or a CDATA section.
 
 ## See Also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md)

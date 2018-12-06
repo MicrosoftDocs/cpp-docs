@@ -8,7 +8,7 @@ ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
 
 Resources are interface elements that provide information to the user. Bitmaps, icons, toolbars, and cursors are all resources. Some resources can be manipulated to perform an action such as selecting from a menu or entering data in dialog box.
 
-See [Working with Resources](../windows/working-with-resource-files.md) for more information.
+See [Working with Resources](../../windows/working-with-resource-files.md) for more information.
 
 |File name|Directory location|Solution Explorer location|Description|
 |---------------|------------------------|--------------------------------|-----------------|
@@ -23,4 +23,4 @@ See [Working with Resources](../windows/working-with-resource-files.md) for more
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)

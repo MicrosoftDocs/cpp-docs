@@ -11,7 +11,7 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 
 ## View the current properties and macros
 
-To display the currently available macros, on any property page in the **Property Pages** dialog, choose the drop-down arrow at the end of a property row. If **Edit** is available, choose it, and then in the edit dialog box, choose the **Macros** button. The current set of properties and macros visible to Visual Studio is listed along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../ide/property-pages-visual-cpp.md).
+To display the currently available macros, on any property page in the **Property Pages** dialog, choose the drop-down arrow at the end of a property row. If **Edit** is available, choose it, and then in the edit dialog box, choose the **Macros** button. The current set of properties and macros visible to Visual Studio is listed along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../build/reference/property-pages-visual-cpp.md).
 
 ## List of common macros
 

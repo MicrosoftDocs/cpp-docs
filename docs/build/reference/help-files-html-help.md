@@ -20,4 +20,4 @@ The following files are created when you add the HTML Help type of Help support 
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)

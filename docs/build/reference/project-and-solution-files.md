@@ -23,4 +23,4 @@ The following files are created when you create a project in Visual Studio. They
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)

@@ -69,7 +69,7 @@ Notice that a property page only displays the settings at the current level for 
 
 [Custom Build Step Property Page: General](custom-build-step-property-page-general.md)
 
-[Adding references](adding-references-in-visual-cpp-projects.md)
+[Adding references](../adding-references-in-visual-cpp-projects.md)
 
 [General Property Page (File)](general-property-page-file.md)
 
