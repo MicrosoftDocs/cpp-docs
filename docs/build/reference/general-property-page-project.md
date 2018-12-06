@@ -12,7 +12,7 @@ When you right-click on a project node in Solution Explorer, and select **Proper
 
 - Project Defaults
 
-For non-Windows projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md)<!-- or [C++ Cross Platform Property Page Reference](../../linux/prop-pages-linux.md)-->.
+For non-Windows projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md).
 
 ## General
 
@@ -28,7 +28,7 @@ The properties in the General section affect the location of files that are crea
 
    To target Windows 7 or Windows Vista, use the value **8.1**, since Windows SDK 8.1 is backward compatible to those platforms. In addition, you should define the appropriate value for **_WIN32_WINNT** in targetver.h. For Windows 7, that's 0x0601. See [Modifying WINVER and _WIN32_WINNT](../../porting/modifying-winver-and-win32-winnt.md).
 
-   You can install the Windows XP platform toolset included in Visual Studio to use the current version of the libraries to build Windows XP and Windows 2003 Server projects. For information on how to obtain and use this platform toolset, see [Configuring Programs for Windows XP](../build/configuring-programs-for-windows-xp.md). For additional information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../build/how-to-modify-the-target-framework-and-platform-toolset.md).
+   You can install the Windows XP platform toolset included in Visual Studio to use the current version of the libraries to build Windows XP and Windows 2003 Server projects. For information on how to obtain and use this platform toolset, see [Configuring Programs for Windows XP](../configuring-programs-for-windows-xp.md). For additional information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - **Target Platform Min. Version**
 

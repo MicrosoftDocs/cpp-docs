@@ -11,7 +11,7 @@ XML document comment has an ambiguous cross reference
 
 The compiler was unable to unambiguously resolve a reference. To resolve this warning, specify the parameter information necessary to make the reference unambiguous.
 
-For more information, see [XML Documentation](../../ide/xml-documentation-visual-cpp.md).
+For more information, see [XML Documentation](../../build/reference/xml-documentation-visual-cpp.md).
 
 ## Example
 

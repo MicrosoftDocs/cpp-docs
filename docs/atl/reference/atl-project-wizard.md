@@ -35,7 +35,7 @@ Additionally, consider these tasks when you create and enhance an ATL project:
 
 - [Optimize the compiler for an ATL project](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
-You can specify project properties (for example, [whether to link statically to the CRT](../../atl/programming-with-atl-and-c-run-time-code.md)) in the [Project Properties](../../ide/general-property-page-project.md) page, and you can set [build configurations](/visualstudio/ide/understanding-build-configurations) for an ATL project.
+You can specify project properties (for example, [whether to link statically to the CRT](../../atl/programming-with-atl-and-c-run-time-code.md)) in the [Project Properties](../../build/reference/general-property-page-project.md) page, and you can set [build configurations](/visualstudio/ide/understanding-build-configurations) for an ATL project.
 
 ## See Also
 

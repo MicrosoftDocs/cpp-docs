@@ -15,7 +15,7 @@ If two options specify contradictory or incompatible directives, the directive s
 
 If you get this warning when compiling from the development environment, and are not sure where the conflicting options are coming from, consider the following:
 
-- An option can be specified either in code or in the project's project settings. If you look at the compiler's [Command Line Property Pages](../../ide/command-line-property-pages.md) and if you see the conflicting options in the **All Options** field then the options are set in the project's property pages, otherwise, the options are set in source code.
+- An option can be specified either in code or in the project's project settings. If you look at the compiler's [Command Line Property Pages](../../build/reference/command-line-property-pages.md) and if you see the conflicting options in the **All Options** field then the options are set in the project's property pages, otherwise, the options are set in source code.
 
    If the options are set in project's property pages, look on the compiler's Preprocessor property page (with the project node selected in the Solution Explorer).  If you do not see the option set there, check the Preprocessor property page settings for each source code file (in Solution Explorer) to make sure it's not added there.
 

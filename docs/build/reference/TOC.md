@@ -516,7 +516,7 @@
 ## [.Xml File Processing](dot-xml-file-processing.md)
 ## [Delimiters for Visual C++ Documentation Tags](delimiters-for-visual-cpp-documentation-tags.md)
 ## [XDCMake Reference](xdcmake-reference.md)
-## [MSBuild Overview for C++ projects](../msbuild-visual-cpp-overview.md)
+## [MSBuild Overview for C++ projects](msbuild-visual-cpp-overview.md)
 ### [MSBuild Projects](creating-and-managing-visual-cpp-projects.md)
 ### [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md)
 ### [Example Project File](project-files.md)
