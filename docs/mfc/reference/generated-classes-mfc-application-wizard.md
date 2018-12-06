@@ -34,5 +34,5 @@ This topic lists the names of base classes and files that your project generates
 ## See Also
 
 [Advanced Features, MFC Application Wizard](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
-[File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ Projects](../../build/reference/file-types-created-for-visual-cpp-projects.md)
 

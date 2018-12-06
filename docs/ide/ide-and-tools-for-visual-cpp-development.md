@@ -26,7 +26,7 @@ Visual Studio 2017 provides support for any build system or custom build tools t
    In general, you should use these templates for new projects unless you have a specific reason to use CMake or another project system. Some projects have a *wizard* that guides you step-by-step through the process of creating a new project. For more information, see [Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md).
 
 - **CMake** is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop development with C++ workload. For more information, see [CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).
-- Any other C++ build system, including a loose collection of files, is supported via the **Open Folder** feature. You create simple JSON files to invoke your build program and configure debugging sessions. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).
+- Any other C++ build system, including a loose collection of files, is supported via the **Open Folder** feature. You create simple JSON files to invoke your build program and configure debugging sessions. For more information, see [Open Folder projects in Visual C++](../build/non-msbuild-projects.md).
 
 ## Add to source control
 
@@ -67,7 +67,7 @@ For more information on adding and editing resources in native desktop C++ proje
 Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
-For more information about MSBuild configurations, see [Working with Project Properties](working-with-project-properties.md) and [Building C++ Projects in Visual Studio](building-cpp-projects-in-visual-studio.md).
+For more information about MSBuild configurations, see [Working with Project Properties](../build/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](building-cpp-projects-in-visual-studio.md).
 
 You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
@@ -105,7 +105,7 @@ For more information about deploying a C++/CLI program, see [Deployment Guide fo
 |-|-|
 |[Writing and refactoring code (C++)](writing-and-refactoring-code-cpp.md)| How to use the C++ code editor to write, refactor and navigate your code.|
 |[Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|
-|[C++ Open Folder projects in Visual Studio](non-msbuild-projects.md).|Describes how to use any arbitrary C++ build system from Visual Studio.|
+|[C++ Open Folder projects in Visual Studio](../build/non-msbuild-projects.md).|Describes how to use any arbitrary C++ build system from Visual Studio.|
 |[CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).|Describes how to build CMake projects in Visual Studio.|
 |[Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ MSBuild-based projects in Visual Studio and links to other articles that explain how to create and manage them.|
 |[Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|

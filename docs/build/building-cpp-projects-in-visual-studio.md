@@ -52,9 +52,6 @@ Lists macros that you can use where strings are accepted.
 [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)<br>
 Provides information on building within Visual Studio.
 
-[Building C/C++ Programs](build/building-c-cpp-programs.md)<br>
-Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
-
 [C/C++ Building Reference](reference/c-cpp-building-reference.md)<br>
 Provides links to an overview of building programs in C++, compiler and linker options, and additional build tools.
 

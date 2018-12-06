@@ -28,7 +28,7 @@ You can also create new projects by:
 [Visual C++ Project Types](visual-cpp-project-types.md)<br>
 Describes the MSBuild-based project types that are available in Visual C++.
 
-[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for Visual C++ Projects](reference/file-types-created-for-visual-cpp-projects.md)<br>
 Describes the kinds of files that are used with various MSBuild project types.
 
 [Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)<br>

@@ -309,7 +309,7 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 
 ## Non-MSBuild projects with Open Folder
 
-Visual Studio 2017 introduces the **Open Folder** feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it much simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With **Open Folder** you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects in Visual C++](ide/non-msbuild-projects.md).
+Visual Studio 2017 introduces the **Open Folder** feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it much simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With **Open Folder** you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects in Visual C++](build/non-msbuild-projects.md).
 
 - Improvements to the Open Folder experience. You can customize the experience through these .json files:
   - CppProperties.json to customize the IntelliSense and browsing experience.

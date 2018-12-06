@@ -11,7 +11,7 @@ Suppose that when you run the debug version of your MFC application, there are n
 
 This problem can be caused when you place important code in an ASSERT statement to verify that it performs correctly. Because ASSERT statements are commented out in a release build of an MFC program, the code does not run in a release build.
 
-If you are using ASSERT to confirm that a function call succeeded, consider using [VERIFY](../../../mfc/reference/diagnostic-services.md#verify) instead. The VERIFY macro evaluates its own arguments in both debug and release builds of the application.
+If you are using ASSERT to confirm that a function call succeeded, consider using [VERIFY](../../mfc/reference/diagnostic-services.md#verify) instead. The VERIFY macro evaluates its own arguments in both debug and release builds of the application.
 
 Another preferred technique is to assign the function's return value to a temporary variable and then test the variable in an ASSERT statement.
 
