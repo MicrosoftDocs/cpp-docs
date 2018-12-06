@@ -80,7 +80,7 @@ For a depiction of how hints are gathered, see the `Example` section later in th
 
 Hints are created and deleted with the same syntax as the preprocessor directives that create and delete macros. In fact, the parsing system uses the C/C++ preprocessor to evaluate the hints. For more information about the preprocessor directives, see [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md) and [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md).
 
-The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These are hint-file specific replacement strings that are used with only *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, `MFC` uses maps to create [message maps](../../mfc/reference/message-maps-mfc.md), and `ATL` uses maps to create [object maps](../atl/reference/object-map-macros.md). The hint-file specific replacement strings indicate the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
+The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These are hint-file specific replacement strings that are used with only *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, `MFC` uses maps to create [message maps](../../mfc/reference/message-maps-mfc.md), and `ATL` uses maps to create [object maps](../../atl/reference/object-map-macros.md). The hint-file specific replacement strings indicate the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
 
 Hints use the following syntax.
 
@@ -231,7 +231,7 @@ The following illustration depicts some of the physical directories in a Visual 
 
 ### Hint File Directories
 
-![Common and project&#45;specific hint file directories.](../ide/media/hintfile.png "HintFile")
+![Common and project&#45;specific hint file directories.](media/hintfile.png "HintFile")
 
 ### Directories and Hint File Contents
 
@@ -309,10 +309,10 @@ The following notes apply to the preceding list.
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
 [SAL Annotations](../../c-runtime-library/sal-annotations.md)<br>
 [Message Maps](../../mfc/reference/message-maps-mfc.md)<br>
-[Message Map Macros](../atl/reference/message-map-macros-atl.md)<br>
-[Object Map Macros](../atl/reference/object-map-macros.md)
+[Message Map Macros](../../atl/reference/message-map-macros-atl.md)<br>
+[Object Map Macros](../../atl/reference/object-map-macros.md)

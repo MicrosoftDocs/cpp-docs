@@ -11,7 +11,7 @@ The easiest way to create an ATL project is to use the ATL Project Wizard, locat
 
 ## To create an ATL project using the ATL Project Wizard
 
-1. Follow the instructions in the topic [Creating a Project with a Visual C++ Application Wizard](../../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Follow the instructions in the topic [Creating a Project with a Visual C++ Application Wizard](../../build/creating-desktop-projects-by-using-application-wizards.md).
 
 1. Select the **ATL Project** icon in the **Templates** pane to open the **ATL Project Wizard**.
 

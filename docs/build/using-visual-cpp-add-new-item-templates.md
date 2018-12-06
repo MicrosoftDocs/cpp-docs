@@ -46,4 +46,4 @@ The following table is an alphabetical list of Visual C++ Add New Item templates
 
 ## See Also
 
-[Adding Functionality with Code Wizards](adding-functionality-with-code-wizards-cpp.md)
+[Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)

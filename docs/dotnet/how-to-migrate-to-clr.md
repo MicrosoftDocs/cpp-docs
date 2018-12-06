@@ -86,7 +86,7 @@ This step has different implications for projects that use makefiles. In this ca
 **/clr** can be selected in the development environment by following the instructions in [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md). As mentioned previously, this step will automatically disable conflicting project settings.
 
 > [!NOTE]
->  When upgrading a managed library or web service project from Visual C++ 2003, the **/Zl** compiler option will added to the **Command Line** property page. This will cause LNK2001. Remove **/Zl** from the **Command Line** property page to resolve. See [/Zl (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) and [Working with Project Properties](../ide/working-with-project-properties.md) for more information. Or, add msvcrt.lib and msvcmrt.lib to the linker's **Additional Dependencies** property.
+>  When upgrading a managed library or web service project from Visual C++ 2003, the **/Zl** compiler option will added to the **Command Line** property page. This will cause LNK2001. Remove **/Zl** from the **Command Line** property page to resolve. See [/Zl (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) and [Working with Project Properties](../build/working-with-project-properties.md) for more information. Or, add msvcrt.lib and msvcmrt.lib to the linker's **Additional Dependencies** property.
 
 For projects built with makefiles, incompatible compiler options must be disabled manually once **/clr** is added. See /[/clr Restrictions](../build/reference/clr-restrictions.md) for information on compiler options that are not compatible with **/clr**.
 

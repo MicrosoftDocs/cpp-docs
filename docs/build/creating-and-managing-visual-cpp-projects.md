@@ -25,27 +25,27 @@ You can also create new projects by:
 
 ## In This Section
 
-[Visual C++ Project Types](../ide/visual-cpp-project-types.md)<br>
+[Visual C++ Project Types](visual-cpp-project-types.md)<br>
 Describes the MSBuild-based project types that are available in Visual C++.
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
 Describes the kinds of files that are used with various MSBuild project types.
 
 [Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)<br>
 How to use the wizards to create projects with Visual C++.
 
-[Working with Project Properties](../ide/working-with-project-properties.md)<br>
+[Working with Project Properties](working-with-project-properties.md)<br>
 Describes how to use Property Pages and Property Sheets to specify your project settings.
 
 [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
 Describes how to add classes, methods, variables, and other elements to your project to add functionality.
 
-[How to: Organize Project Output Files for Builds](../ide/how-to-organize-project-output-files-for-builds.md)<br>
+[How to: Organize Project Output Files for Builds](how-to-organize-project-output-files-for-builds.md)<br>
 Describes how to organize project output files.
 
 ## Related Sections
 
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br>
+[Building C/C++ Programs](building-c-cpp-programs.md)<br>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
 ## See Also

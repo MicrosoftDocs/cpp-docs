@@ -8,7 +8,7 @@ ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
 
 This topic describes all the types of files that are associated with Visual C++ projects for classic desktop applications. The actual files included in your project depend on the project type and the options you select when using a wizard.
 
-- [Project and Solution Files](../project-and-solution-files.md)
+- [Project and Solution Files]()
 
 - [CLR Projects](files-created-for-clr-projects.md)
 
@@ -61,8 +61,8 @@ The following table shows common files in a Visual C++ project, and identifies t
 |.vap|Project|A Visual Studio Analyzer project file.|
 |.vbg|Solution|A compatible project group file.|
 |.vbp, .vip, .vbproj|Project|The Visual Basic project file.|
-|.vcxitems|Project|Shared Items project for sharing code files between multiple C++ projects. See [Project Files and Makefiles](../project-and-solution-files.md) for more information.|
-|.vcxproj|Project|The Visual C++ project file. See [Project Files and Makefiles](../project-and-solution-files.md) for more information.|
+|.vcxitems|Project|Shared Items project for sharing code files between multiple C++ projects. See [Project Files and Makefiles]() for more information.|
+|.vcxproj|Project|The Visual C++ project file. See [Project Files and Makefiles]() for more information.|
 |.vcxproj.filters|Project|When Solution Explorer is used to add a file to a project, the filters file defines where in the Solution Explorer tree view the file is added, based on its file name extension.|
 |.vdproj|Project|The Visual Studio deployment project file.|
 |.vmx|Project|The macro project file.|

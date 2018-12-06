@@ -43,7 +43,7 @@ For more information about Property Manager and property sheets, see [Creating r
 
 *Target platform* refers to the kind of device and/or operating system that the executable will run on. You can build a project for more than one platform. The available target platforms for C++ projects depend on the kind of project; they include but are not limited to Win32, x64, ARM, Android, and iOS.     The **x86** target platform that you might see in **Configuration Manager** is identical to **Win32** in native C++ projects. Win32 means 32-bit Windows and **x64** means 64-bit Windows. For more information about these two platforms, see [Running 32-bit applications](/windows/desktop/WinProg64/running-32-bit-applications).
 
-The **Any CPU** target platform value that you might see in **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see [/CLRIMAGETYPE (Specify Type of CLR Image)](../build/reference/clrimagetype-specify-type-of-clr-image.md).
+The **Any CPU** target platform value that you might see in **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see [/CLRIMAGETYPE (Specify Type of CLR Image)](clrimagetype-specify-type-of-clr-image.md).
 
 ## Property pages
 
@@ -68,25 +68,25 @@ When you highlight a property in a Property Page, you can press **F1** to go to 
 
 You can find more information about each Property Page in these topics:
 
-- [General Property Page (Project)](general-property-page-project.md)
+- [General Property Page (Project)](reference/general-property-page-project.md)
 
-- [General Property Page (File)](general-property-page-file.md)
+- [General Property Page (File)](reference/general-property-page-file.md)
 
-- [Command Line Property Pages](command-line-property-pages.md)
+- [Command Line Property Pages](reference/command-line-property-pages.md)
 
 - [Project Settings for a C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
 
-- [NMake Property Page](nmake-property-page.md)
+- [NMake Property Page](reference/nmake-property-page.md)
 
-- [Linker Property Pages](linker-property-pages.md)
+- [Linker Property Pages](reference/linker-property-pages.md)
 
-- [Resources Property Pages](resources-property-pages.md)
+- [Resources Property Pages](reference/resources-property-pages.md)
 
-- [MIDL Property Pages](midl-property-pages.md)
+- [MIDL Property Pages](reference/midl-property-pages.md)
 
-- [Web References Property Page](web-references-property-page.md)
+- [Web References Property Page](reference/web-references-property-page.md)
 
-- [XML Data Generator Tool Property Page](xml-data-generator-tool-property-page.md)
+- [XML Data Generator Tool Property Page](reference/xml-data-generator-tool-property-page.md)
 
 ## To quickly browse and search all properties
 
@@ -220,7 +220,7 @@ When you add an include directory to a project, it is important not to override 
 
 ## Setting environment variables for a build
 
-The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the [VC++ Directories Property Page](vcpp-directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says **Set this macro as an environment variable in the build environment**.
+The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the [VC++ Directories Property Page](reference/vcpp-directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says **Set this macro as an environment variable in the build environment**.
 
 ## Setting environment variables for a debugging session
 
@@ -265,5 +265,5 @@ Overriding properties and targets in this way is equivalent to adding the follow
 ## See also
 
 [Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md)<br/>
-[.vcxproj and .props file structure](vcxproj-file-structure.md)<br/>
-[Property page XML files](property-page-xml-files.md)<br/>
+[.vcxproj and .props file structure](reference/vcxproj-file-structure.md)<br/>
+[Property page XML files](reference/property-page-xml-files.md)<br/>

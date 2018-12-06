@@ -19,7 +19,7 @@ Every type of Visual C++ project has an application wizard that helps you genera
 
 1. In the Templates pane, select an icon to choose a project type. A message appears under both panes indicating the type of project you are going to create.
 
-1. Specify your project properties, or skip this step to use Visual Studio default project properties. See [Working with Project Properties](../ide/working-with-project-properties.md) for details.
+1. Specify your project properties, or skip this step to use Visual Studio default project properties. See [Working with Project Properties](../build/working-with-project-properties.md) for details.
 
 1. Click **OK**, and the wizard for your project type opens. If you want to read the help topic for the wizard, press **F1**.
 

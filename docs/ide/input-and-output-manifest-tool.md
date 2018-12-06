@@ -52,4 +52,4 @@ Specifies whether the application is DPI-aware. By default, the setting is **Yes
 
 [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br/>
 [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)<br/>
-[Working with Project Properties](../ide/working-with-project-properties.md)<br/>
+[Working with Project Properties](../build/working-with-project-properties.md)<br/>

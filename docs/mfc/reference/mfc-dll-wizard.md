@@ -29,7 +29,7 @@ You can perform the following tasks and types of enhancements to a basic MFC DLL
 
 [Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
 [Property Pages](../../ide/property-pages-visual-cpp.md)<br/>
-[Working with Project Properties](../../ide/working-with-project-properties.md)<br/>
+[Working with Project Properties](../../build/working-with-project-properties.md)<br/>
 [MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Implementing an Interface](../../ide/implementing-an-interface-visual-cpp.md)<br/>

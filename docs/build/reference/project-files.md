@@ -112,5 +112,5 @@ The following sample .vcxproj file was produced by specifying a **Win32 Console 
 
 ## See Also
 
-[Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)<br>
+[Building C++ Projects in Visual Studio](../building-cpp-projects-in-visual-studio.md)<br>
 [Working with Project Properties](../working-with-project-properties.md)
