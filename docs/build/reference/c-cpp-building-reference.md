@@ -12,19 +12,19 @@ If your program uses a makefile rather than a .vcxproj file, you can still build
 
 ## In This Section
 
-[Compiling a C/C++ Program](../../build/reference/compiling-a-c-cpp-program.md)<br/>
+[Compiling a C/C++ Program](compiling-a-c-cpp-program.md)<br/>
 Describes the compiler, which creates an object file containing machine code, linker directives, sections, external references, and function/data names.
 
-[Linking](../../build/reference/linking.md)<br/>
+[Linking](linking.md)<br/>
 Describes the linker, which combines code from the object files created by the compiler and from statically linked libraries, resolves the name references, and creates an executable file.
 
-[Release Builds](../../build/reference/release-builds.md)<br/>
+[Release Builds](release-builds.md)<br/>
 Presents information on why and when you would want to change from a debug build to a release build and also discusses some of the problems you may encounter when changing from a debug to a release build.
 
-[Optimizing Your Code](../../build/reference/optimizing-your-code.md)<br/>
+[Optimizing Your Code](optimizing-your-code.md)<br/>
 Provides links to topics discussing the mechanisms for optimizing code:
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
+[C/C++ Build Tools](c-cpp-build-tools.md)<br/>
 Provides the following command-line tools for viewing or manipulating build output:
 
 [C/C++ Build Errors](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)<br/>
@@ -38,32 +38,32 @@ Discusses the preprocessor, which prepares source files for the compiler by tran
 [Understanding Custom Build Steps and Build Events](../understanding-custom-build-steps-and-build-events.md)<br/>
 Discusses customizing the build process.
 
-[Building a C/C++ Program](../../build/building-c-cpp-programs.md)<br/>
+[Building a C/C++ Program](../building-c-cpp-programs.md)<br/>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[Setting Compiler Options](setting-compiler-options.md)<br/>
 Describes setting compiler options in the development environment or on the command line.
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[Compiler Options](compiler-options.md)<br/>
 Provides links to topics discussing using compiler options.
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[Setting Linker Options](setting-linker-options.md)<br/>
 Describes setting linker options inside or outside the integrated development environment.
 
-[Linker Options](../../build/reference/linker-options.md)<br/>
+[Linker Options](linker-options.md)<br/>
 Provides links to topics discussing using linker options.
 
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)<br/>
+[BSCMAKE Reference](bscmake-reference.md)<br/>
 Describes the Microsoft Browse Information Maintenance Utility (BSCMAKE.EXE), which builds a browse information file (.bsc) from .sbr files created during compilation.
 
-[LIB Reference](../../build/reference/lib-reference.md)<br/>
+[LIB Reference](lib-reference.md)<br/>
 Describes the Microsoft Library Manager (LIB.exe), which creates and manages a library of Common Object File Format (COFF) object files.
 
-[EDITBIN Reference](../../build/reference/editbin-reference.md)<br/>
+[EDITBIN Reference](editbin-reference.md)<br/>
 Describes the Microsoft COFF Binary File Editor (EDITBIN.EXE), which modifies Common Object File Format (COFF) binary files.
 
-[DUMPBIN Reference](../../build/reference/dumpbin-reference.md)<br/>
+[DUMPBIN Reference](dumpbin-reference.md)<br/>
 Describes the Microsoft COFF Binary File Dumper (DUMPBIN.EXE), which displays information about Common Object File Format (COFF) binary files.
 
-[NMAKE Reference](../../build/nmake-reference.md)<br/>
+[NMAKE Reference](../nmake-reference.md)<br/>
 Describes the Microsoft Program Maintenance Utility (NMAKE.EXE), which is a tool that builds projects based on commands contained in a description file.

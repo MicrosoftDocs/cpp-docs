@@ -16,4 +16,4 @@ For information on how to access the **Command Line** property pages, see [Worki
 ## See Also
 
 [Property Pages](property-pages-visual-cpp.md)<br>
-[.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md)
+[.Lib Files as Linker Input](dot-lib-files-as-linker-input.md)

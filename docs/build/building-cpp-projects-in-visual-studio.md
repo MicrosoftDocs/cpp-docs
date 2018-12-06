@@ -44,24 +44,18 @@ Describes how to customize the build process in the integrated development envir
 [Common Macros for Build Commands and Properties](reference/common-macros-for-build-commands-and-properties.md)<br>
 Lists macros that you can use where strings are accepted.
 
-[Building External Projects](building-external-projects.md)<br>
-Discusses building projects that use facilities outside the integrated development environment.
-
-[Project Files](project-files.md)<br>
-Presents the XML structure of a .vcxproj file.
-
 ## Related Sections
 
-[VC++ Directories, Projects, Options Dialog Box](vcpp-directories-property-page.md)<br>
+[VC++ Directories, Projects, Options Dialog Box](reference/vcpp-directories-property-page.md)<br>
 (MSBuild projects only) Discusses how to modify the search path for executable files, include files, library files, and source code files during a build.
 
 [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)<br>
 Provides information on building within Visual Studio.
 
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br>
+[Building C/C++ Programs](build/building-c-cpp-programs.md)<br>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
-[C/C++ Building Reference](../build/reference/c-cpp-building-reference.md)<br>
+[C/C++ Building Reference](reference/c-cpp-building-reference.md)<br>
 Provides links to an overview of building programs in C++, compiler and linker options, and additional build tools.
 
 [Upgrading Projects from Earlier Versions of Visual C++](../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br>

@@ -34,15 +34,15 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
 
 - When the **New Solution Platform** dialog box is open while you set up a project to target a 64-bit platform, in the **Copy settings from** drop-down list, select **Win32**. These project settings are automatically updated on the project level:
 
-  - The [/MACHINE](../build/reference/machine-specify-target-platform.md) linker option is set to **/MACHINE:X64**.
+  - The [/MACHINE](reference/machine-specify-target-platform.md) linker option is set to **/MACHINE:X64**.
 
-  - **Register Output** is turned OFF. For more information, see [Linker Property Pages](linker-property-pages.md).
+  - **Register Output** is turned OFF. For more information, see [Linker Property Pages](reference/linker-property-pages.md).
 
-  - **Target Environment** is set to **/env x64**. For more information, see [MIDL Property Pages: General](midl-property-pages-general.md).
+  - **Target Environment** is set to **/env x64**. For more information, see [MIDL Property Pages: General](reference/midl-property-pages-general.md).
 
-  - **Validate Parameters** is cleared and reset to the default value. For more information, see [MIDL Property Pages: Advanced](midl-property-pages-advanced.md).
+  - **Validate Parameters** is cleared and reset to the default value. For more information, see [MIDL Property Pages: Advanced](reference/midl-property-pages-advanced.md).
 
-  - If **Debug Information Format** was set to **/ZI** in the Win32 project configuration, then it is set to **/Zi** in the 64-bit project configuration. For more information, see [/Z7, /Zi, /ZI (Debug Information Format)](../build/reference/z7-zi-zi-debug-information-format.md).
+  - If **Debug Information Format** was set to **/ZI** in the Win32 project configuration, then it is set to **/Zi** in the 64-bit project configuration. For more information, see [/Z7, /Zi, /ZI (Debug Information Format)](reference/z7-zi-zi-debug-information-format.md).
 
   > [!NOTE]
   > None of these project properties are changed if they are overridden on the file level.
@@ -50,5 +50,5 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
 ## See Also
 
 [.NET Framework 64-bit Applications](/dotnet/framework/64-bit-apps)<br/>
-[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[Configure Visual C++ for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Debug 64-Bit Applications](/visualstudio/debugger/debug-64-bit-applications)

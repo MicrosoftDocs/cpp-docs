@@ -8,23 +8,23 @@ ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
 
 This topic describes all the types of files that are associated with Visual C++ projects for classic desktop applications. The actual files included in your project depend on the project type and the options you select when using a wizard.
 
-- [Project and Solution Files](../ide/project-and-solution-files.md)
+- [Project and Solution Files](../project-and-solution-files.md)
 
-- [CLR Projects](../ide/files-created-for-clr-projects.md)
+- [CLR Projects](files-created-for-clr-projects.md)
 
 - [ATL Program or Control Source and Header Files](atl-program-or-control-source-and-header-files.md)
 
 - [MFC Program or Control Source and Header Files](mfc-program-or-control-source-and-header-files.md)
 
-- [Precompiled Header Files](../ide/precompiled-header-files.md)
+- [Precompiled Header Files](precompiled-header-files.md)
 
-- [Resource Files](../ide/resource-files-cpp.md)
+- [Resource Files](resource-files-cpp.md)
 
-- [Help Files (WinHelp)](../ide/help-files-winhelp.md)
+- [Help Files (WinHelp)](help-files-winhelp.md)
 
-- [Hint Files](../ide/hint-files.md)
+- [Hint Files](hint-files.md)
 
-When you [create a Visual C++ project](../ide/creating-desktop-projects-by-using-application-wizards.md), you might be creating a new solution, or you might be adding a project to a solution. Non-trivial applications are commonly developed with multiple projects in a solution.
+When you [create a Visual C++ project](../creating-desktop-projects-by-using-application-wizards.md), you might be creating a new solution, or you might be adding a project to a solution. Non-trivial applications are commonly developed with multiple projects in a solution.
 
 Projects usually produce either an EXE or a DLL. Projects can be dependent on each other; during the build process, the Visual C++ environment checks dependencies both within and between projects. Each project has core source code, and depending on the kind of project, it may have many other files containing various aspects of the project. The contents of these files are indicated by the file extension. The Visual Studio development environment uses the file extensions to determine how to handle the file contents during a build.
 
@@ -46,23 +46,23 @@ The following table shows common files in a Visual C++ project, and identifies t
 |.htm, .html, .xsp, .asp, .htc, .hta, .xml|Resource|Common Web files.|
 |.HxC|Project|Help project file.|
 |.ico|Resource|Icon bitmap graphic file.|
-|.idb|Compiling|The state file, containing dependency information between source files and class definitions, which can be used by the compiler during minimal rebuild and incremental compilation. Use the [/Fd](../build/reference/fd-program-database-file-name.md) compiler option to specify the name of the .idb file. See [/Gm (Enable Minimal Rebuild)](../build/reference/gm-enable-minimal-rebuild.md) for more information.|
+|.idb|Compiling|The state file, containing dependency information between source files and class definitions, which can be used by the compiler during minimal rebuild and incremental compilation. Use the [/Fd](fd-program-database-file-name.md) compiler option to specify the name of the .idb file. See [/Gm (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) for more information.|
 |.idl|Compiling|An interface definition language file. See [Interface Definition (IDL) File](/windows/desktop/Rpc/the-interface-definition-language-idl-file) in the Windows SDK for more information.|
-|.ilk|Linking|Incremental link file. See [/INCREMENTAL](../build/reference/incremental-link-incrementally.md) for more information.|
-|.map|Linking|A text file containing linker information. Use the [/Fm](../build/reference/fm-name-mapfile.md) compiler option to name the map file. See [/MAP](../build/reference/map-generate-mapfile.md) for more information.|
-|.mfcribbon-ms|Resource|A resource file that contains the XML code that defines the buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md).|
+|.ilk|Linking|Incremental link file. See [/INCREMENTAL](incremental-link-incrementally.md) for more information.|
+|.map|Linking|A text file containing linker information. Use the [/Fm](fm-name-mapfile.md) compiler option to name the map file. See [/MAP](map-generate-mapfile.md) for more information.|
+|.mfcribbon-ms|Resource|A resource file that contains the XML code that defines the buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer (MFC)](../../mfc/ribbon-designer-mfc.md).|
 |.obj, .o||Object files, compiled but not linked.|
 |.pch|Debug|Precompiled header file.|
-|.rc, .rc2|Resource|[Resource script files](../windows/working-with-resource-files.md) to generate resources.|
-|.sbr|Compiling|Source browser intermediate file. The input file for [BSCMAKE](../build/reference/bscmake-options.md).|
+|.rc, .rc2|Resource|[Resource script files](../../windows/working-with-resource-files.md) to generate resources.|
+|.sbr|Compiling|Source browser intermediate file. The input file for [BSCMAKE](bscmake-options.md).|
 |.sln|Solution|The [solution](/visualstudio/ide/solutions-and-projects-in-visual-studio) file.|
 |.suo|Solution|The solution options file.|
 |.txt|Resource|A text file, usually the "readme" file.|
 |.vap|Project|A Visual Studio Analyzer project file.|
 |.vbg|Solution|A compatible project group file.|
 |.vbp, .vip, .vbproj|Project|The Visual Basic project file.|
-|.vcxitems|Project|Shared Items project for sharing code files between multiple C++ projects. See [Project Files and Makefiles](../ide/project-and-solution-files.md) for more information.|
-|.vcxproj|Project|The Visual C++ project file. See [Project Files and Makefiles](../ide/project-and-solution-files.md) for more information.|
+|.vcxitems|Project|Shared Items project for sharing code files between multiple C++ projects. See [Project Files and Makefiles](../project-and-solution-files.md) for more information.|
+|.vcxproj|Project|The Visual C++ project file. See [Project Files and Makefiles](../project-and-solution-files.md) for more information.|
 |.vcxproj.filters|Project|When Solution Explorer is used to add a file to a project, the filters file defines where in the Solution Explorer tree view the file is added, based on its file name extension.|
 |.vdproj|Project|The Visual Studio deployment project file.|
 |.vmx|Project|The macro project file.|
@@ -76,5 +76,5 @@ When you add an item to a project, you add the item to all configurations for th
 
 ## See Also
 
-[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br>
+[Creating and Managing Visual C++ Projects](../creating-and-managing-visual-cpp-projects.md)<br>
 [Visual C++ Project Types](../visual-cpp-project-types.md)<br>

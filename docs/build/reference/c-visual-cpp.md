@@ -22,7 +22,7 @@ The text you want to indicate as code.
 
 ## Remarks
 
-Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
