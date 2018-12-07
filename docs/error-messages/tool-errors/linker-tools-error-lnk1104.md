@@ -51,7 +51,7 @@ Make sure you have installed every version of the library you need for the confi
 
 ### Cannot open a file built by your project
 
-You may see this error if the file *filename* is built by your solution, but does not yet exist when the linker tries to access it. This can happen when one project depends on another project, but the projects are not built in the correct order. To fix this issue, make sure your project references are set in the project that uses the file so the missing file is built before it is required. For more information, see [Adding references in Visual C++ projects](../../ide/adding-references-in-visual-cpp-projects.md) and [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
+You may see this error if the file *filename* is built by your solution, but does not yet exist when the linker tries to access it. This can happen when one project depends on another project, but the projects are not built in the correct order. To fix this issue, make sure your project references are set in the project that uses the file so the missing file is built before it is required. For more information, see [Adding references in Visual C++ projects](../../build/adding-references-in-visual-cpp-projects.md) and [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
 
 ### Cannot open file 'C:\\Program.obj'
 

@@ -63,4 +63,4 @@ There are three locations where you can access Visual C++ code wizards:
 [Navigating the Class Structure](../ide/navigating-the-class-structure-visual-cpp.md)<br>
 [Creating Desktop Projects By Using Application Wizards](../build/creating-desktop-projects-by-using-application-wizards.md)<br>
 [Visual C++ Project Types](../build/visual-cpp-project-types.md)<br>
-[File Types Created for Visual C++ Projects](../build/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ Projects](../build/reference/file-types-created-for-visual-cpp-projects.md)

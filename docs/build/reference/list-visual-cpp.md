@@ -38,7 +38,7 @@ Each item in the list is specified with an \<item> block. When creating a defini
 
 A list or table can have as many \<item> blocks as needed.
 
-Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
+Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.
 
 ## Example
 
@@ -61,4 +61,4 @@ class MyClass {};
 
 ## See Also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+[XML Documentation](xml-documentation-visual-cpp.md)

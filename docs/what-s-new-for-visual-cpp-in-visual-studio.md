@@ -324,7 +324,7 @@ Visual Studio 2017 introduces the **Open Folder** feature, which enables you to 
 
 ## CMake support via Open Folder
 
-Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md). Opening CMake projects with **Open Folder** automatically configures the environment for C++ editing, building and debugging.
+Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual C++](build/cmake-tools-for-visual-cpp.md). Opening CMake projects with **Open Folder** automatically configures the environment for C++ editing, building and debugging.
 
 - C++ IntelliSense works without the need to create a CppProperties.json file in the root folder. Along with this, we've added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
 
@@ -336,7 +336,7 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
 **Visual Studio 2017 version 15.5**: Support added for importing existing CMake caches.
 
-**Visual Studio 2017 version 15.7**: Support added for CMake 3.11, code analysis in CMake projects, Targets view in Solution Explorer, options for cache generation, and single file compilation. For more information, see [CMake Support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) and [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md).
+**Visual Studio 2017 version 15.7**: Support added for CMake 3.11, code analysis in CMake projects, Targets view in Solution Explorer, options for cache generation, and single file compilation. For more information, see [CMake Support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) and [CMake projects in Visual C++](build/cmake-tools-for-visual-cpp.md).
 
 ## Windows desktop development with C++
 

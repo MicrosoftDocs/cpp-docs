@@ -10,7 +10,7 @@ ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 **Visual Studio 2017 version 15.4 and later**<br/>
 When you install the Linux C++ workload for Visual Studio, CMake support for Linux is selected by default. You can now work on your existing code base that uses CMake without having to convert it to a Visual Studio project. If your code base is cross-platform, you can target both Windows and Linux from within Visual Studio.
 
-This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
+This topic assumes you have basic familiarity with CMake support in Visual Studio. For more information, see [CMake Tools for Visual C++](../build/cmake-tools-for-visual-cpp.md). For more information about CMake itself, see [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 > [!NOTE]
 > The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
@@ -108,4 +108,4 @@ Your Linux distro may have an older version of CMake. The CMake support in Visua
 ## See Also
 
 [Working with Project Properties](../build/working-with-project-properties.md)<br/>
-[CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)
+[CMake Tools for Visual C++](../build/cmake-tools-for-visual-cpp.md)
