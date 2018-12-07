@@ -882,7 +882,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### Parameters
 
 *lpCreateStruct*<br/>
-[in] A pointer to the [CREATESTRUCT Structure](../../mfc/reference/createstruct-structure.md) for the new frame.
+[in] A pointer to the [CREATESTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) for the new frame.
 
 ### Return Value
 
@@ -1524,7 +1524,7 @@ afx_msg void OnSizing(
 [in] The edge of the frame that is moved. See the parameter *wParam* in [WM_SIZING Notification](/windows/desktop/winmsg/wm-sizing).
 
 *pRect*<br/>
-[in, out] Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](../../mfc/reference/rect-structure1.md) structure that contains the frame's coordinates.
+[in, out] Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that contains the frame's coordinates.
 
 ### Remarks
 
@@ -1694,7 +1694,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ### Parameters
 
 *lpwndpos*<br/>
-[in] Pointer to a [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) structure that contains the new size and position.
+[in] Pointer to a [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) structure that contains the new size and position.
 
 ### Remarks
 
@@ -1754,7 +1754,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-[in] A pointer to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
+[in] A pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 

@@ -512,7 +512,7 @@ BOOL ClipCaretRect(LPRECT lpRect);
 ### Parameters
 
 *lpRect*<br/>
-On input, a pointer to a [RECT](../../mfc/reference/rect-structure1.md) structure that contains the caret area to be adjusted. On output, the adjusted caret area, or NULL if the caret rectangle is completely covered.
+On input, a pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that contains the caret area to be adjusted. On output, the adjusted caret area, or NULL if the caret rectangle is completely covered.
 
 ### Return Value
 

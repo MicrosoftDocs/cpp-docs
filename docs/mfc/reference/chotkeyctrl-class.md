@@ -87,7 +87,7 @@ virtual BOOL Create(
 Specifies the hot key control's style. Apply any combination of control styles. See [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK for more information.
 
 *rect*<br/>
-Specifies the hot key control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](../../mfc/reference/rect-structure1.md).
+Specifies the hot key control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect).
 
 *pParentWnd*<br/>
 Specifies the hot key control's parent window, usually a [CDialog](../../mfc/reference/cdialog-class.md). It must not be NULL.

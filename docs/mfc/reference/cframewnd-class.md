@@ -736,7 +736,7 @@ Contains one of the following values from the `enum BorderCmd`:
 - `borderSet` = 3
 
 *lpRectBorder*<br/>
-Pointer to a [RECT](../../mfc/reference/rect-structure1.md) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the coordinates of the border.
+Pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the coordinates of the border.
 
 ### Return Value
 
@@ -794,7 +794,7 @@ virtual BOOL OnCreateClient(
 ### Parameters
 
 *lpcs*<br/>
-A pointer to a Windows [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.
+A pointer to a Windows [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure.
 
 *pContext*<br/>
 A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure.

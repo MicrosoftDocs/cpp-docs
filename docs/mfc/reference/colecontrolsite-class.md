@@ -954,7 +954,7 @@ virtual CWnd* SetFocus(LPMSG lpmsg);
 ### Parameters
 
 *lpmsg*<br/>
-A pointer to a [MSG structure](../../mfc/reference/msg-structure1.md). This structure contains the Windows message triggering the `SetFocus` request for the control contained in the current control site.
+A pointer to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg). This structure contains the Windows message triggering the `SetFocus` request for the control contained in the current control site.
 
 ### Return Value
 

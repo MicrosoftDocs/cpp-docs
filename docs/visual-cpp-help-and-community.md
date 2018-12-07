@@ -38,4 +38,4 @@ Many sections of the documentation are also available in PDF form. These section
 |[Visual C++ Team Blog](https://blogs.msdn.microsoft.com/vcblog/)|Contains posts on various subjects by the experts on the Visual C++ product team.|
 |[Channel 9](https://channel9.msdn.com/)|Contains video interviews and lectures. Use the search box on the Channel 9 home page to find C++ content.|
 |[Visual Studio](https://visualstudio.microsoft.com/)|Contains articles and news about Visual Studio and related development tools.|
-|[MSDN forums](https://social.msdn.microsoft.com/Forums/en-US/home?category=visualc) and [Developer Community](https://developercommunity.visualstudio.com)|Official Microsoft forums where you can post questions about C++ and get answers from Microsoft and from experts in the community.|
+|[MSDN forums](https://social.msdn.microsoft.com/Forums/home?category=visualc) and [Developer Community](https://developercommunity.visualstudio.com)|Official Microsoft forums where you can post questions about C++ and get answers from Microsoft and from experts in the community.|

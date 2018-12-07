@@ -360,7 +360,7 @@ virtual void GetItemRect(
 Index of the item (button or separator) whose rectangle coordinates are to be retrieved.
 
 *lpRect*<br/>
-Address of the [RECT](../../mfc/reference/rect-structure1.md) structure that will contain the item's coordinates.
+Address of the [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that will contain the item's coordinates.
 
 ### Remarks
 

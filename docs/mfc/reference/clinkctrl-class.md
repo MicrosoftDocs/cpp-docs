@@ -98,7 +98,7 @@ Pointer to a zero-terminated string that contains the marked up text to display.
 Specifies the link control's style. Apply any combination of control styles. See [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the `Windows SDK` for more information.
 
 *rect*<br/>
-Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the link control's parent window. It must not be NULL.
@@ -160,7 +160,7 @@ Specifies the extended style of the link control. For a list of extended Windows
 Specifies the link control's style. Apply any combination of control styles. For more information, see [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK.
 
 *rect*<br/>
-Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the link control's parent window. It must not be NULL.
@@ -209,7 +209,7 @@ int GetIdealSize(
 |Parameter|Description|
 |---------------|-----------------|
 |*cxMaxWidth*|[in] The maximum width of the link, in pixels.|
-|[out] \* *pSize*|A pointer to a Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|
+|[out] \* *pSize*|A pointer to a Windows [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|
 
 ### Return Value
 

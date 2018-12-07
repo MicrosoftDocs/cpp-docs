@@ -189,7 +189,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A long pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure. The structure contains information about the item to be drawn and the type of drawing required.
+A long pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure. The structure contains information about the item to be drawn and the type of drawing required.
 
 ### Remarks
 
@@ -456,7 +456,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pSize*|[out] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that receives the description of a rectangle.|
+|*pSize*|[out] Pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that receives the description of a rectangle.|
 
 ### Return Value
 
@@ -930,7 +930,7 @@ BOOL SetSplitSize(LPSIZE pSize);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pSize*|[in] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that describes a bounding rectangle.|
+|*pSize*|[in] Pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that describes a bounding rectangle.|
 
 ### Return Value
 
