@@ -10,6 +10,8 @@ Visual C++ provides two ways of building a C/C++ program. The easiest (and most 
 
 ## In This Section
 
+[MSBuild Overview for C++ projects](msbuild-visual-cpp-overview.md)
+
 [Compiling a C/C++ Program](compiling-a-c-cpp-program.md)<br/>
 Describes the compiler, which creates an object file containing machine code, linker directives, sections, external references, and function/data names.
 
@@ -19,8 +21,14 @@ Describes the linker, which combines code from the object files created by the c
 [Release Builds](release-builds.md)<br/>
 Presents information on why and when you would want to change from a debug build to a release build and also discusses some of the problems you may encounter when changing from a debug to a release build.
 
-[Optimizing Your Code](optimizing-your-code.md)<br/>
-Provides links to topics discussing the mechanisms for optimizing code:
+[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+Describes how to configure both Visual Studio and the command line to use the 64-bit toolset and how to target 64-bit architectures, and discusses common migration issues when code is moved to 64-bit architectures.
+
+[Configure Visual C++ for ARM processors](../build/configuring-programs-for-arm-processors-visual-cpp.md)<br/>
+Describes the conventions used by ARM processors, and discusses common migration issues when code is moved to ARM architectures.
+
+[Configuring Programs for Windows XP](../build/configuring-programs-for-windows-xp.md)<br/>
+Describes how to set the Platform Toolset to target Windows XP development.
 
 [C/C++ Build Tools](c-cpp-build-tools.md)<br/>
 Provides the following command-line tools for viewing or manipulating build output:
