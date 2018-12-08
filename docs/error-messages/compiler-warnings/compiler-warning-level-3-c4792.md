@@ -15,7 +15,7 @@ This warning cannot be resolved in code or by changing the way you compile. Use 
 
 The following sample generates C4792:
 
-```
+```cpp
 // C4792.cpp
 // compile with: /clr /W3
 // C4792 expected

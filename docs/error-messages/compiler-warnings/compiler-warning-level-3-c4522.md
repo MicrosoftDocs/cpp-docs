@@ -17,7 +17,7 @@ Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning
 
 The following sample generates C4522.
 
-```
+```cpp
 // C4522.cpp
 // compile with: /EHsc /W3
 #include <iostream>

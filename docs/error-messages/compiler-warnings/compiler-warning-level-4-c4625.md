@@ -17,7 +17,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4625 and shows how to fix it.
 
-```
+```cpp
 // C4625.cpp
 // compile with: /W4 /c
 #pragma warning(default : 4625)

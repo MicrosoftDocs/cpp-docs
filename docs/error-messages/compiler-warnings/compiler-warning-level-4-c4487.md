@@ -17,7 +17,7 @@ For more information, see [new (new slot in vtable)](../../extensions/new-new-sl
 
 The following sample generates C4487.
 
-```
+```cpp
 // C4487.cpp
 // compile with: /W4 /clr
 using namespace System;

@@ -17,7 +17,7 @@ For more information, see [XML Documentation](../../build/reference/xml-document
 
 The following sample generates C4641.
 
-```
+```cpp
 // C4641.cpp
 // compile with: /W3 /doc /clr /c
 

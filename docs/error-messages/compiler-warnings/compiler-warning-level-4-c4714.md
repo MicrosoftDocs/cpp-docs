@@ -29,7 +29,7 @@ In some cases, the compiler will not inline a particular function for mechanical
 
 The following sample generates C4714:
 
-```
+```cpp
 // C4714.cpp
 // compile with: /Ob1 /GX /W4
 __forceinline void func1()

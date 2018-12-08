@@ -17,7 +17,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4668:
 
-```
+```cpp
 // C4668.cpp
 // compile with: /W4
 #include <stdio.h>

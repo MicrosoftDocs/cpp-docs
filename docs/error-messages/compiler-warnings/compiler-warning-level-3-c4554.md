@@ -11,7 +11,7 @@ ms.assetid: 55bb68f0-2e80-4330-8921-51083c4f8d53
 
 The following sample generates C4554:
 
-```
+```cpp
 // C4554.cpp
 // compile with: /W3 /WX
 int main() {

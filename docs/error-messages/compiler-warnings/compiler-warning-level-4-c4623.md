@@ -17,7 +17,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4623.
 
-```
+```cpp
 // C4623.cpp
 // compile with: /W4
 #pragma warning(default : 4623)

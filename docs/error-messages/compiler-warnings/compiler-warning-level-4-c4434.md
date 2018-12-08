@@ -15,7 +15,7 @@ C4434 indicates that the compiler changed the accessibility of a static construc
 
 The following sample generates C4434.
 
-```
+```cpp
 // C4434.cpp
 // compile with: /W4 /c /clr
 public ref struct R {

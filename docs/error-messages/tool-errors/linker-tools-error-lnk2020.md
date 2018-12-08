@@ -21,7 +21,7 @@ To resolve:
 
 The following sample generates LNK2020.
 
-```
+```cpp
 // LNK2020.cpp
 // compile with: /clr /LD
 ref struct A {
@@ -42,7 +42,7 @@ LNK2020 will also occur if you create a variable of a managed template type, but
 
 The following sample generates LNK2020.
 
-```
+```cpp
 // LNK2020_b.cpp
 // compile with: /clr
 

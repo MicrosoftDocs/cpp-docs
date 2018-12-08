@@ -15,7 +15,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4640:
 
-```
+```cpp
 // C4640.cpp
 // compile with: /W3
 #pragma warning(default:4640)

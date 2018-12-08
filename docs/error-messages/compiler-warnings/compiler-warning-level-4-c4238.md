@@ -13,7 +13,7 @@ For compatibility with previous versions of Visual C++, Microsoft extensions (**
 
 ## Example
 
-```
+```cpp
 // C4238.cpp
 // compile with: /W4 /c
 struct C {

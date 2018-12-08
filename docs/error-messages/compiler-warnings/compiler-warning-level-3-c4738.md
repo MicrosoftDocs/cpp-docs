@@ -21,7 +21,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 The following sample generates C4738:
 
-```
+```cpp
 // C4738.cpp
 // compile with: /c /fp:precise /O2 /W3
 // processor: x86

@@ -13,7 +13,7 @@ The compiler found some problem with the XML tags.  Fix the problem and recompil
 
 The following sample generates C4635:
 
-```
+```cpp
 // C4635.cpp
 // compile with: /doc /clr /W3 /c
 /// <summary>

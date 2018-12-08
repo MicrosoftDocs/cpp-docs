@@ -15,7 +15,7 @@ For more information, see [Classes and Structs](../../extensions/classes-and-str
 
 The following sample generates C4534:
 
-```
+```cpp
 // C4534.cpp
 // compile with: /W3 /clr /WX
 value class MyClass {

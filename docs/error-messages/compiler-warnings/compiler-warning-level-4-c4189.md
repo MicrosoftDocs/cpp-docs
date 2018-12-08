@@ -13,7 +13,7 @@ A variable is declared and initialized but not used.
 
 The following sample generates C4189:
 
-```
+```cpp
 // C4189.cpp
 // compile with: /W4
 int main() {

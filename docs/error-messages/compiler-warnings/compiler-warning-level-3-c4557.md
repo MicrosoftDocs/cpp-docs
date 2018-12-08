@@ -15,7 +15,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4557:
 
-```
+```cpp
 // C4557.cpp
 // compile with: /W3
 #pragma warning(default : 4557)
