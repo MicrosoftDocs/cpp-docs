@@ -18,7 +18,7 @@ The runtime will maintain an association between the handle and the CLR object, 
 
 This sample shows how to create a `gcroot` object on the native stack.
 
-```
+```cpp
 // mcpp_gcroot.cpp
 // compile with: /clr
 #include <vcclr.h>
@@ -45,7 +45,7 @@ hello
 
 This sample shows how to create a `gcroot` object on the native heap.
 
-```
+```cpp
 // mcpp_gcroot_2.cpp
 // compile with: /clr
 // compile with: /clr
@@ -75,7 +75,7 @@ hello
 
 This sample shows how to use `gcroot` to hold references to value types (not reference types) in a native type by using `gcroot` on the boxed type.
 
-```
+```cpp
 // mcpp_gcroot_3.cpp
 // compile with: /clr
 #include < vcclr.h >

@@ -11,7 +11,7 @@ You can obtain a pointer to the array block in a <xref:System.Byte> array by tak
 
 ## Example
 
-```
+```cpp
 // pointer_to_Byte_array.cpp
 // compile with: /clr
 using namespace System;

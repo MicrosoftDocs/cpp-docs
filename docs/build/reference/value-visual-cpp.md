@@ -26,7 +26,7 @@ Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process docu
 
 ## Example
 
-```
+```cpp
 // xml_value_tag.cpp
 // compile with: /LD /clr /doc
 // post-build command: xdcmake xml_value_tag.dll

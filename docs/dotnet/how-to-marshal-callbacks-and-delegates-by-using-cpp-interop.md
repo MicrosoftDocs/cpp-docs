@@ -19,7 +19,7 @@ Notice that is it possible, but not necessary, to pin the delegate using [pin_pt
 
 If a delegate is re-located by a garbage collection, it will not affect the underlaying managed callback, so <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> is used to add a reference to the delegate, allowing relocation of the delegate, but preventing disposal. Using GCHandle instead of pin_ptr reduces fragmentation potential of the managed heap.
 
-```
+```cpp
 // MarshalDelegate1.cpp
 // compile with: /clr
 #include <iostream>
@@ -69,7 +69,7 @@ int main() {
 
 The following example is similar to the previous example, but in this case the provided function pointer is stored by the unmanaged API, so it can be invoked at any time, requiring that garbage collection be suppressed for an arbitrary length of time. As a result, the following example uses a global instance of <xref:System.Runtime.InteropServices.GCHandle> to prevent the delegate from being relocated, independent of function scope. As discussed in the first example, using pin_ptr is unnecessary for these examples, but in this case wouldn't work anyway, as the scope of a pin_ptr is limited to a single function.
 
-```
+```cpp
 // MarshalDelegate2.cpp
 // compile with: /clr
 #include <iostream>

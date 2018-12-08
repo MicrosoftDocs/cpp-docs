@@ -13,7 +13,7 @@ You can pass a reference class with a CLR array to a native function, and modify
 
 Compile the following native library.
 
-```
+```cpp
 // modify_ref_class_in_native_function.cpp
 // compile with: /LD
 #include <stdio.h>
@@ -43,7 +43,7 @@ extern "C"  {
 
 Compile the following assembly.
 
-```
+```cpp
 // modify_ref_class_in_native_function_2.cpp
 // compile with: /clr
 using namespace System;

@@ -14,7 +14,7 @@ For more information, see [Structured Exception Handling (C/C++)](../cpp/structu
 
 The following sample defines a module with two functions, one that throws a native exception, and another that throws an MSIL exception.
 
-```
+```cpp
 // catch_MSIL_in_native.cpp
 // compile with: /clr /c
 void Test() {
@@ -30,7 +30,7 @@ void Test2() {
 
 The following sample defines a module that catches a native and MSIL exception.
 
-```
+```cpp
 // catch_MSIL_in_native_2.cpp
 // compile with: /clr catch_MSIL_in_native.obj
 #include <iostream>

@@ -12,7 +12,7 @@ This topic discusses enums in C++/CLI.
 
 By default, the underlying type of an enumeration is `int`.  However, you can specify the type to be signed or unsigned forms of `int`, `short`, `long`, `__int32`, or `__int64`.  You can also use `char`.
 
-```
+```cpp
 // mcppv2_enum_3.cpp
 // compile with: /clr
 public enum class day_char : char {sun, mon, tue, wed, thu, fri, sat};
@@ -44,7 +44,7 @@ sun
 
 There is no standard conversion between an enum and an integral type; a cast is required.
 
-```
+```cpp
 // mcppv2_enum_4.cpp
 // compile with: /clr
 enum class day {sun, mon, tue, wed, thu, fri, sat};
@@ -87,7 +87,7 @@ The compiler does no static or dynamic checking of the result of an enum operati
 > [!NOTE]
 >  C++11 introduces enum class types in unmanaged code which are significantly different than managed enum classes in C++/CLI. In particular, the C++11 enum class type does not support the same operators as the managed enum class type in C++/CLI, and C++/CLI source code must provide an accessibility specifier in managed enum class declarations in order to distinguish them from unmanaged (C++11) enum class declarations. For more information about enum classes in C++/CLI, C++/CX, and C++11, see [enum class](../extensions/enum-class-cpp-component-extensions.md).
 
-```
+```cpp
 // mcppv2_enum_5.cpp
 // compile with: /clr
 private enum class E { a, b } e, mask;
@@ -103,7 +103,7 @@ int main() {
 }
 ```
 
-```
+```cpp
 // mcppv2_enum_6.cpp
 // compile with: /clr
 private enum class day : int {sun, mon};
