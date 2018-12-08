@@ -13,7 +13,7 @@ You defined an event handler method that did not use the same parameters as the 
 
 The following sample generates C3713:
 
-```
+```cpp
 // C3713.cpp
 // compile with: /c
 [event_source(native)]

@@ -13,7 +13,7 @@ A handle cannot be used as a dereference operator.
 
 The following sample generates C3192:
 
-```
+```cpp
 // C3192.cpp
 // compile with: /clr
 using namespace System;

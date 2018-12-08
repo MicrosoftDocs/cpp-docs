@@ -13,7 +13,7 @@ You cannot use a generic or template class, instead of a symbol, as a generic or
 
 The following sample generates C2943:
 
-```
+```cpp
 // C2943.cpp
 // compile with: /c
 template<class T>

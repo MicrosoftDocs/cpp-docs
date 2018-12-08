@@ -13,7 +13,7 @@ To use the operator, you must overload it for the specified type or define a con
 
 The following sample generates C2677:
 
-```
+```cpp
 // C2677.cpp
 class C {
 public:

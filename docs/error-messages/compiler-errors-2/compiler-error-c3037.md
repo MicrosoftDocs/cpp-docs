@@ -13,7 +13,7 @@ A variable specified in a [reduction](../../parallel/openmp/reference/reduction.
 
 The following sample generates C3037:
 
-```
+```cpp
 // C3037.cpp
 // compile with: /openmp /c
 int g_i;

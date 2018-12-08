@@ -13,7 +13,7 @@ You must define an event interface to use COM events. Note that the `#include` l
 
 The following sample generates C3705:
 
-```
+```cpp
 // C3705.cpp
 // compile with: /c
 #define _ATL_ATTRIBUTES 1

@@ -13,7 +13,7 @@ A Visual C++ [interface](../../cpp/interface.md) cannot have a constructor.
 
 The following sample generates C2846:
 
-```
+```cpp
 // C2846.cpp
 // compile with: /c
 __interface C {

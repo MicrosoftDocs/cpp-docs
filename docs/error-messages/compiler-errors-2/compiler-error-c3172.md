@@ -15,7 +15,7 @@ Identical `idl_module` attributes can be specified in more than one source code 
 
 For example, if the following `idl_module` attributes were found:
 
-```
+```cpp
 // C3172.cpp
 [module(name="MyMod")];
 [ idl_module(name="x", dllname="file.dll", version="1.1") ];
@@ -24,7 +24,7 @@ int main() {}
 
 And then,
 
-```
+```cpp
 // C3172b.cpp
 // compile with: C3172.cpp
 // C3172 expected

@@ -17,7 +17,7 @@ For more information, see [Type visibility](../../dotnet/how-to-define-and-consu
 
 The following sample generates C3381.
 
-```
+```cpp
 // C3381.cpp
 // compile with: /c
 public class A {};   // C3381

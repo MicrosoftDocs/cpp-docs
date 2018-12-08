@@ -15,7 +15,7 @@ A type that derived from <xref:System.Runtime.InteropServices.ComImportAttribute
 
 The following sample generates C3807.
 
-```
+```cpp
 // C3807.cpp
 // compile with: /clr /c
 ref struct S {};

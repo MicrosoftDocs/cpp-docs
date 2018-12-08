@@ -19,7 +19,7 @@ The specified variable does not have an initializer expression.
 
 The following example yields C3531 because variables `x1`, `y1, y2, y3`, and `z2` are not initialized.
 
-```
+```cpp
 // C3531.cpp
 // Compile with /Zc:auto
 int main()

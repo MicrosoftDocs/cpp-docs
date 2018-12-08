@@ -17,7 +17,7 @@ For more information, see [attribute](../../windows/attributes/attribute.md).
 
 The following sample generates C3454.
 
-```
+```cpp
 // C3454.cpp
 // compile with: /clr /c
 using namespace System;

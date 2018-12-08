@@ -17,7 +17,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 The following sample generates C3450 and shows how to fix it.
 
-```
+```cpp
 // C3450.cpp
 // compile with: /clr
 // C3450 expected

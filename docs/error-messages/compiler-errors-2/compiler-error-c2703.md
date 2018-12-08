@@ -13,7 +13,7 @@ A `__leave` statement must be inside a `__try` block.
 
 The following sample generates C2703:
 
-```
+```cpp
 // C2703.cpp
 int main() {
    __leave;   // C2703

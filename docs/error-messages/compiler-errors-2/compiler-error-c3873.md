@@ -15,7 +15,7 @@ The range of characters allowed in an identifier is less restrictive when compil
 
 The following sample generates C3873:
 
-```
+```cpp
 // C3873.cpp
 int main() {
    int \u036F_abc;   // C3873, not in allowed range for initial character

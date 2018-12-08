@@ -13,7 +13,7 @@ An anonymous struct or union has global or namespace scope but is not declared `
 
 The following sample generates C2646 and shows how to fix it:
 
-```
+```cpp
 // C2646.cpp
 // compile with: /c
 union { int i; };   // C2646 not static

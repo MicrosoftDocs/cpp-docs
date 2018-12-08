@@ -13,7 +13,7 @@ A symbol was referenced and then used in a [threadprivate](../../parallel/openmp
 
 The following sample generates C3055:
 
-```
+```cpp
 // C3055.cpp
 // compile with: /openmp
 int x, y;
@@ -30,7 +30,7 @@ void test() {
 
 Possible resolution:
 
-```
+```cpp
 // C3055b.cpp
 // compile with: /openmp /LD
 int x, y, z;

@@ -15,7 +15,7 @@ A call was made to a function through a pointer to a type that does not contain 
 
 The following sample generates C3754:
 
-```
+```cpp
 // C3754a.cpp
 // compile with: /clr
 using namespace System;

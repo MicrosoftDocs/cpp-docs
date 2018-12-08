@@ -15,7 +15,7 @@ A function was called incorrectly.
 
 The following sample generates C3083.
 
-```
+```cpp
 // C3083.cpp
 // compile with: /c
 struct N {

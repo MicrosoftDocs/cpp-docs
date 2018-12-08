@@ -13,7 +13,7 @@ The [sizeof](../../cpp/sizeof-operator.md) operator gets the value of an object 
 
 For example, the following sample generates C2847:
 
-```
+```cpp
 // C2847.cpp
 // compile with: /clr
 ref class A {};

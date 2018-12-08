@@ -15,7 +15,7 @@ The `event` can only be called from the receiving class.
 
 The following sample generates C3718:
 
-```
+```cpp
 // C3718.cpp
 #define _ATL_ATTRIBUTES 1
 #include "atlbase.h"

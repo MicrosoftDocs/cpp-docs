@@ -13,7 +13,7 @@ The compiler detected an ambiguous function call involving surrogates.
 
 The following sample generates C3066:
 
-```
+```cpp
 // C3066.cpp
 template <class T, class U> void func(T*, U*){}
 

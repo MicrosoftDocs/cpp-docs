@@ -13,7 +13,7 @@ A friend function was defined incorrectly for a template or generic.
 
 The following sample generates C3637:
 
-```
+```cpp
 // C3637.cpp
 template <class T>
 void f();
@@ -25,7 +25,7 @@ struct S {
 
 Possible resolution:
 
-```
+```cpp
 // C3637b.cpp
 // compile with: /c
 template <class T>
@@ -38,7 +38,7 @@ struct S {
 
 C3637 can also occur when using generics:
 
-```
+```cpp
 // C3637c.cpp
 // compile with: /clr
 
@@ -52,7 +52,7 @@ struct S {
 
 Possible resolution:
 
-```
+```cpp
 // C3637d.cpp
 // compile with: /clr /c
 generic <class T>

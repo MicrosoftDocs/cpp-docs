@@ -21,7 +21,7 @@ A non-mutable lambda expression cannot modify the value of a variable that is ca
 
 The following example generates C3491 because the body of a non-mutable lambda expression modifies the capture variable `m`:
 
-```
+```cpp
 // C3491a.cpp
 
 int main()
@@ -35,7 +35,7 @@ int main()
 
 The following example resolves C3491 by declaring the lambda expression with the `mutable` keyword:
 
-```
+```cpp
 // C3491b.cpp
 
 int main()

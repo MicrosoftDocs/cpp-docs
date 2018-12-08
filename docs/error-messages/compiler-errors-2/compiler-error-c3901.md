@@ -13,7 +13,7 @@ At least one get method's return type must match the property type. For more inf
 
 The following sample generates C3901:
 
-```
+```cpp
 // C3901.cpp
 // compile with: /clr /c
 using namespace System;

@@ -13,7 +13,7 @@ A literal data member exists on the garbage-collected heap.  An object on the ga
 
 The following sample generates C3890:
 
-```
+```cpp
 // C3890.cpp
 // compile with: /clr
 ref struct Y1 {

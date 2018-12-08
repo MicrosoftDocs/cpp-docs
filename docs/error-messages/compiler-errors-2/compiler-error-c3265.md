@@ -13,7 +13,7 @@ You cannot include a managed object in an unmanaged context.
 
 The following sample reproduces C3265:
 
-```
+```cpp
 // C3265_2.cpp
 // compile with: /clr /LD
 #include <vcclr.h>

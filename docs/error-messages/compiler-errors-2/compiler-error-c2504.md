@@ -17,7 +17,7 @@ The base class is declared but never defined.  Possible causes:
 
 The following sample generates C2504:
 
-```
+```cpp
 // C2504.cpp
 // compile with: /c
 class A;

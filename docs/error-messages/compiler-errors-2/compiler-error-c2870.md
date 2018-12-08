@@ -13,7 +13,7 @@ You defined namespace `name` incorrectly. Namespaces must be defined at file sco
 
 The following sample generates C2870:
 
-```
+```cpp
 // C2870.cpp
 // compile with: /c
 int main() {

@@ -13,7 +13,7 @@ The address of a function was taken in a context other than the creation of a de
 
 The following sample generates C3374:
 
-```
+```cpp
 // C3374.cpp
 // compile with: /clr
 public delegate void MyDel(int i);

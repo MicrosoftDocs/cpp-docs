@@ -13,7 +13,7 @@ A constraint was ill formed.
 
 The following sample generates C3216:
 
-```
+```cpp
 // C3216.cpp
 // compile with: /clr
 interface struct A {};
@@ -27,7 +27,7 @@ ref class C {};
 
 The following example demonstrates a possible resolution:
 
-```
+```cpp
 // C3216b.cpp
 // compile with: /clr /c
 interface struct A {};

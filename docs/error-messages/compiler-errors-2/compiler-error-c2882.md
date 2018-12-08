@@ -13,7 +13,7 @@ You tried to use the name of a namespace in an expression.
 
 The following sample generates C2882:
 
-```
+```cpp
 // C2882.cpp
 // compile with: /c
 namespace A {

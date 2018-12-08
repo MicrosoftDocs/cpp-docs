@@ -11,7 +11,7 @@ ms.assetid: 95c92263-10ac-4ff3-b385-6312dd92adbc
 
 You attempted to apply the [export](../../windows/export.md) attribute to an empty UDT (user-defined type). For example:
 
-```
+```cpp
 // C3139.cpp
 #include "unknwn.h"
 [emitidl];

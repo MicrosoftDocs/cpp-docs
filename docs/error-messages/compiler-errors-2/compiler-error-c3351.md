@@ -13,7 +13,7 @@ The compiler expected the address of a function declared `static`.
 
 The following sample generates C3351:
 
-```
+```cpp
 // C3351a.cpp
 // compile with: /clr
 delegate int D(int, int);

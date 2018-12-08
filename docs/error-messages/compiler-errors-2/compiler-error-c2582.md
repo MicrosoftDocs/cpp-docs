@@ -13,7 +13,7 @@ An attempt was made to assign to an object that does not have an assignment oper
 
 The following sample generates C2582:
 
-```
+```cpp
 // C2582.cpp
 // compile with: /clr
 using namespace System;

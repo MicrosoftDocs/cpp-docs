@@ -19,7 +19,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 The following sample generates C2743.
 
-```
+```cpp
 // C2743.cpp
 // compile with: /clr
 public struct S {

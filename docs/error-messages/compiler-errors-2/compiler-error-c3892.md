@@ -13,7 +13,7 @@ A const variable cannot be changed after it is declared and initialized.
 
 The following sample generates C3892:
 
-```
+```cpp
 // C3892.cpp
 // compile with: /clr
 ref struct Y1 {

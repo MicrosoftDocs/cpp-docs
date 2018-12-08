@@ -15,7 +15,7 @@ For a type to be a constraint, it must be either a value type or reference to a 
 
 The following sample generates C3218.
 
-```
+```cpp
 // C3218.cpp
 // compile with: /clr /c
 class A {};

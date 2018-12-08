@@ -17,7 +17,7 @@ See [How to: Iterate Over a User-Defined Collection with for each](../../dotnet/
 
 The following sample generates C3287.
 
-```
+```cpp
 // C3287.cpp
 // compile with: /clr
 using namespace System;

@@ -11,7 +11,7 @@ must #include \<windows.h> to use multi-threading with events
 
 The windows.h file is required if you use multi-threading with events. To fix this error, add `#include <windows.h>` to the top of the file in which event sources and event receivers are defined.
 
-```
+```cpp
 // C3724.cpp
 // uncomment the following line to resolve
 // #include <windows.h>

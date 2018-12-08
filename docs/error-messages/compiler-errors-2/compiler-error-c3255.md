@@ -13,7 +13,7 @@ Instances of a value type (see [Classes and Structs](../../extensions/classes-an
 
 The following sample generates C3255:
 
-```
+```cpp
 // C3255.cpp
 // compile with: /clr
 using namespace System;

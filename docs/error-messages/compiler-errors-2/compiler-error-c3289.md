@@ -15,7 +15,7 @@ A property was declared incorrectly. Accessors must be defined for an indexed pr
 
 The following sample generates C3289.
 
-```
+```cpp
 // C3289.cpp
 // compile with: /clr
 public ref struct C {

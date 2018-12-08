@@ -17,7 +17,7 @@ The [__uuidof](../../cpp/uuidof-operator.md) operator takes a user-defined type 
 
 The following sample generates C2786:
 
-```
+```cpp
 // C2786.cpp
 struct __declspec(uuid("00000000-0000-0000-0000-000000000000")) A {};
 

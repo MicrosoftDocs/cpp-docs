@@ -11,7 +11,7 @@ __finally cannot be used on an exception block in unmanaged code.
 
 The following sample generates C3273:
 
-```
+```cpp
 // C3273.cpp
 // compile with: /GX
 int main()

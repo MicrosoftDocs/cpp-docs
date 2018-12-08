@@ -13,7 +13,7 @@ ms.assetid: 7d165136-a08b-4497-a76d-60a21bb19404
 
 A native type cannot be nested in a CLR or WinRT type. The following sample generates C2814 and shows how to fix it.
 
-```
+```cpp
 // C2814.cpp
 // compile with: /clr /c
 ref class A {

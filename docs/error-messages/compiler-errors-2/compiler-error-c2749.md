@@ -17,7 +17,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 The following sample generates C2749:
 
-```
+```cpp
 // C2749.cpp
 // compile with: /clr:safe
 ref struct MyStruct {

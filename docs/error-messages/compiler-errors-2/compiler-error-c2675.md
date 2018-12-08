@@ -15,7 +15,7 @@ C2675 can also occur when using a unary operator, and the type does not define t
 
 The following sample generates C2675.
 
-```
+```cpp
 // C2675.cpp
 struct C {
    C(){}

@@ -13,7 +13,7 @@ An [interior_ptr](../../extensions/interior-ptr-cpp-cli.md) or [pin_ptr](../../e
 
 The following sample generates C3833:
 
-```
+```cpp
 // C3833.cpp
 // compile with: /clr
 
@@ -35,7 +35,7 @@ int main() {
 
 The following sample generates C3833:
 
-```
+```cpp
 // C3833b.cpp
 // compile with: /clr /c
 ref class G {

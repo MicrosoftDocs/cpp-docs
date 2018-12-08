@@ -19,7 +19,7 @@ C3867 can be issued from the compiler with a misleading suggested resolution. Wh
 
 The following sample generates C3867 and shows how to fix it.
 
-```
+```cpp
 // C3867_1.cpp
 // compile with: /c
 struct Base {
@@ -41,7 +41,7 @@ void Derived::Bar() {
 
 The following sample generates C3867 and shows how to fix it.
 
-```
+```cpp
 // C3867_2.cpp
 #include<stdio.h>
 
@@ -73,7 +73,7 @@ int main() {
 
 The following sample generates C3867 and shows how to fix it.
 
-```
+```cpp
 // C3867_3.cpp
 class X {
 public:
@@ -92,7 +92,7 @@ int main() {
 
 The following sample generates C3867.
 
-```
+```cpp
 // C3867_4.cpp
 // compile with: /c
 class A {
@@ -116,7 +116,7 @@ public:
 
 The following sample generates C3867.
 
-```
+```cpp
 // C3867_5.cpp
 // compile with: /EHsc
 #include <iostream>

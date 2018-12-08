@@ -15,7 +15,7 @@ The overloaded binary operator member function is declared with more than one pa
 
 The following sample generates C2804 and shows how to fix it.
 
-```
+```cpp
 // C2804.cpp
 // compile by using: cl /c /W4 C2804.cpp
 class X {
@@ -34,7 +34,7 @@ int main() {
 
 The following sample generates C2804 and shows how to fix it.
 
-```
+```cpp
 // C2804_2.cpp
 // compile with: /clr /c
 ref struct Y {

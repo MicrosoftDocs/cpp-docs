@@ -15,7 +15,7 @@ The [typeid](../../extensions/typeid-cpp-component-extensions.md) operator canno
 
 The following example yields C3541.
 
-```
+```cpp
 // C3541.cpp
 // Compile with /Zc:auto
 #include <typeinfo>

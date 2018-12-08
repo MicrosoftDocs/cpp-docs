@@ -13,7 +13,7 @@ The compiler detected an ill-formed explicit instantiation.
 
 The following sample generates C3413:
 
-```
+```cpp
 // C3413.cpp
 template
 class MyClass {};   // C3413
@@ -21,7 +21,7 @@ class MyClass {};   // C3413
 
 Possible resolution:
 
-```
+```cpp
 // C3413b.cpp
 // compile with: /c
 template <class T>

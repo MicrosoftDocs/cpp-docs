@@ -13,7 +13,7 @@ A local class or structure cannot be used to declare `extern` variables.
 
 The following sample generates C2624:
 
-```
+```cpp
 // C2624.cpp
 int main() {
    struct C {};

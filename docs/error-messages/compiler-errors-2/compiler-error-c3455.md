@@ -15,7 +15,7 @@ An invalid value was used to declare an attribute.  See [attribute](../../window
 
 The following sample generates C3455.
 
-```
+```cpp
 // C3455.cpp
 // compile with: /clr /c
 using namespace System;

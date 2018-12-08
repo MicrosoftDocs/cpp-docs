@@ -13,7 +13,7 @@ A symbol was used more than once in one or more clauses in a directive. The symb
 
 The following sample generates C3029:
 
-```
+```cpp
 // C3029.cpp
 // compile with: /openmp /link vcomps.lib
 #include "omp.h"

@@ -13,7 +13,7 @@ You cannot explicitly instantiate an identifier while preventing it from being i
 
 The following sample generates C2929:
 
-```
+```cpp
 // C2929.cpp
 // compile with: /c
 template<typename T>

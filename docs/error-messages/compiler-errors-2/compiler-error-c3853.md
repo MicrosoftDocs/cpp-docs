@@ -13,7 +13,7 @@ Cannot assign to a reference through a function because functions are not lvalue
 
 The following samples generate C3853:
 
-```
+```cpp
 // C3853.cpp
 // compile with: /EHsc
 #include <iostream>

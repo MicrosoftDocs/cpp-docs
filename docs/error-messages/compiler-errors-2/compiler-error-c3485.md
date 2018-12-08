@@ -19,7 +19,7 @@ You cannot use a `const` or `volatile` qualifier as part of the definition of a 
 
 The following example generates C3485 because it uses the `const` qualifier as part of the definition of a lambda expression:
 
-```
+```cpp
 // C3485.cpp
 
 int main()

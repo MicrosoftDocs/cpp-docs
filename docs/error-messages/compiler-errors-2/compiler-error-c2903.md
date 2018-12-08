@@ -13,7 +13,7 @@ Code attempts explicit instantiation of something that is not a template.
 
 The following sample generates C2903:
 
-```
+```cpp
 // C2903.cpp
 // compile with: /c
 namespace N {
@@ -28,7 +28,7 @@ void g() {
 
 C2903 can also occur when using generics:
 
-```
+```cpp
 // C2903b.cpp
 // compile with: /clr /c
 namespace N {

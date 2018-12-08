@@ -15,7 +15,7 @@ A template cannot be specialized at class scope, only in global or namespace sco
 
 The following sample generates C3412.
 
-```
+```cpp
 // C3412.cpp
 template <class T>
 struct S {
@@ -28,7 +28,7 @@ struct S {
 
 The following sample shows a possible resolution.
 
-```
+```cpp
 // C3412b.cpp
 // compile with: /c
 template <class T>

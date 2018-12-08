@@ -13,7 +13,7 @@ The base class has more than one access modifier. Only one access modifier (`pub
 
 The following sample generates C2502:
 
-```
+```cpp
 // C2502.cpp
 // compile with: /c
 class A { };

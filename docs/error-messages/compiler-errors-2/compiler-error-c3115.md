@@ -15,7 +15,7 @@ An attribute was applied to a construct for which it was not intended.  See [Att
 
 The following sample generates C3115.
 
-```
+```cpp
 // C3115.cpp
 // compile with: /c
 #include <unknwn.h>

@@ -13,7 +13,7 @@ The binary operator has no parameters.
 
 The following sample generates C2805:
 
-```
+```cpp
 // C2805.cpp
 // compile with: /c
 class X {

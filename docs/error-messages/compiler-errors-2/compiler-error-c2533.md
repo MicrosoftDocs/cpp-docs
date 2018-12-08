@@ -15,7 +15,7 @@ A common source of this error is a missing semicolon between the end of a class 
 
 The following sample generates C2533, and shows how to fix it:
 
-```
+```cpp
 // C2533.cpp
 // compile with: /c
 class X {

@@ -21,7 +21,7 @@ You must initialize a reference when it was declared, unless it is declared alre
 
 The following sample generates C2530:
 
-```
+```cpp
 // C2530.cpp
 int main() {
    int i = 0;

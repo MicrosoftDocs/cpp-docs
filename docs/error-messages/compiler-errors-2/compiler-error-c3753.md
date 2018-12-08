@@ -17,7 +17,7 @@ For more information, see [Generics](../../extensions/generics-cpp-component-ext
 
 The following sample generates C3753.
 
-```
+```cpp
 // C3753.cpp
 // compile with: /clr /c
 ref struct A {

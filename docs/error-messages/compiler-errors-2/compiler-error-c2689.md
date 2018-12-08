@@ -13,7 +13,7 @@ You can declare but not define a friend function in a local class.
 
 The following sample generates C2689:
 
-```
+```cpp
 // C2689.cpp
 // compile with: /c
 void g() {

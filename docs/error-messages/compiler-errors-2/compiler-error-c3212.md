@@ -13,7 +13,7 @@ An explicit specialization was ill formed.
 
 The following sample generates C3212:
 
-```
+```cpp
 // C3212.cpp
 // compile with: /LD
 template <class T>

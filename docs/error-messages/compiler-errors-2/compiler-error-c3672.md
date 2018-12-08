@@ -15,7 +15,7 @@ A destructor was called incorrectly.  For more information, see [Destructors](..
 
 The following sample generates C3672.
 
-```
+```cpp
 // C3672.cpp
 template<typename T>
 void f(T* pT) {

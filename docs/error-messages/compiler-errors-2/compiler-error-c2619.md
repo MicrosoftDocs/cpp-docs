@@ -13,7 +13,7 @@ A member of an anonymous struct or union is declared `static`.
 
 The following sample generates C2619, and demonstrates how to fix it by removing the static keyword.
 
-```
+```cpp
 // C2619.cpp
 int main() {
    union { static int j; };  // C2619

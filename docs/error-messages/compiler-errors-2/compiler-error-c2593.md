@@ -15,7 +15,7 @@ This error may be fixed if you use an explicit cast on one or more actual parame
 
 The following sample generates C2593:
 
-```
+```cpp
 // C2593.cpp
 struct A {};
 struct B : A {};

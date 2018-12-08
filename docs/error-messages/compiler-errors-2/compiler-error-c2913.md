@@ -13,7 +13,7 @@ You cannot specialize a non-template class.
 
 The following sample generates C2913:
 
-```
+```cpp
 // C2913.cpp
 // compile with: /c
 class X{};

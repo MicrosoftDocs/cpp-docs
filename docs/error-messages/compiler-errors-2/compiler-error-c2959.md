@@ -15,7 +15,7 @@ For more information, see [Windows Runtime and Managed Templates](../../extensio
 
 The following sample generates C2959.
 
-```
+```cpp
 // C2959.cpp
 // compile with: /clr /c
 template <class T> ref struct S {

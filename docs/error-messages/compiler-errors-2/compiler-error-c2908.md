@@ -13,7 +13,7 @@ A specialization of the primary template occurs before the explicit specializati
 
 The following sample generates C2908:
 
-```
+```cpp
 // C2908.cpp
 // compile with: /c
 template<class T> class X {};

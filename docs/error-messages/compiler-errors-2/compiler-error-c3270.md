@@ -13,7 +13,7 @@ A field was marked with **FieldOffset**, which is only allowed when **StructLayo
 
 The following sample generates C3270:
 
-```
+```cpp
 // C3270_2.cpp
 // compile with: /clr /c
 using namespace System::Runtime::InteropServices;

@@ -15,7 +15,7 @@ When using explicit override syntax, the compiler generates an error if a functi
 
 The following sample generates C3671.
 
-```
+```cpp
 // C3671.cpp
 // compile with: /clr /c
 ref struct S {

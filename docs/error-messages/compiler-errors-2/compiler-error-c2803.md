@@ -17,7 +17,7 @@ If both parameters are pointers it will be a pure comparison of pointer addresse
 
 The following sample generates C2803:
 
-```
+```cpp
 // C2803.cpp
 // compile with: /c
 class A{};

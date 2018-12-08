@@ -13,7 +13,7 @@ User-defined type conversions cannot take formal parameters.
 
 The following sample generates C2835:
 
-```
+```cpp
 // C2835.cpp
 class A {
 public:

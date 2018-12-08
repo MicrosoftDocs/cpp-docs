@@ -15,7 +15,7 @@ This error can be caused if braces are improperly matched.
 
 The following sample generates C2939:
 
-```
+```cpp
 // C2939.cpp
 template<class T>
 struct TC { };
@@ -27,7 +27,7 @@ int main() {
 
 C2939 can also occur when using generics:
 
-```
+```cpp
 // C2939b.cpp
 // compile with: /clr
 generic<class T>

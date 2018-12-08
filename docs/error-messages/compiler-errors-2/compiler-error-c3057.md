@@ -13,7 +13,7 @@ The initialized value of a symbol used in a [threadprivate](../../parallel/openm
 
 The following sample generates C3057:
 
-```
+```cpp
 // C3057.cpp
 // compile with: /openmp /c
 extern int f();
@@ -39,7 +39,7 @@ int main() {
 
 The following sample generates C3057:
 
-```
+```cpp
 // C3057b.cpp
 // compile with: /openmp /c
 extern int Initialize();

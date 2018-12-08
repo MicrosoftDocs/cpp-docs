@@ -17,7 +17,7 @@ See [__alignof Operator](../../cpp/alignof-operator.md) for more information.
 
 The following sample generates C2714.
 
-```
+```cpp
 // C2714.cpp
 int main() {
    return __alignof(void);   // C2714

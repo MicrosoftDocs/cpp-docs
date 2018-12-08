@@ -15,7 +15,7 @@ A symbol could not be imported from a referenced assembly because it was previou
 
 The following sample generates C3846:
 
-```
+```cpp
 // C3846a.cpp
 // compile with: /LD /clr
 public ref struct G
@@ -25,7 +25,7 @@ public ref struct G
 
 And then compile this:
 
-```
+```cpp
 // C3846b.cpp
 // compile with: /clr
 #using "c3846a.dll"

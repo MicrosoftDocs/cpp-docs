@@ -13,7 +13,7 @@ This error may be fixed by using pointer syntax and declaring a reference to a p
 
 The following sample generates C2529:
 
-```
+```cpp
 // C2529.cpp
 // compile with: /c
 int i;
