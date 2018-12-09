@@ -1,12 +1,12 @@
 ---
 title: "MSBuild (Visual C++) Overview"
-ms.date: "11/04/2016"
+ms.date: "12/08/2018"
 helpviewer_keywords: ["MSBuild overview"]
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
 ---
 # MSBuild (Visual C++) Overview
 
-MSBuild is the standard build system for Visual C++ projects. When you build a project in the Visual Studio integrated development environment (IDE), it uses the msbuild.exe tool, an XML-based project file, and optional settings files. Although you can use msbuild.exe and a project file on the command line, the IDE provides a user interface so that you can more easily configure settings and build a project. This overview describes how Visual C++ uses the MSBuild system.
+MSBuild is the default build system for C++ projects in Visual Studio. When you build a project in the Visual Studio integrated development environment (IDE), it uses the msbuild.exe tool, an XML-based project file, and optional settings files. Although you can use msbuild.exe and a project file on the command line, the IDE provides a user interface so that you can more easily configure settings and build a project. This overview describes how Visual C++ uses the MSBuild system.
 
 ## Prerequisites
 
@@ -77,11 +77,11 @@ The support file directories contain files with these extensions:
 |.props|Contains `Property Group` and user-defined `Property` XML elements that specify file and parameter settings that are used during a build.<br /><br /> May also contain `ItemDefinitionGroup` and user-defined `Item` XML elements that specify additional settings. Items defined in an item definition group resemble properties, but cannot be accessed from the command line. Visual C++ project files frequently uses items instead of properties to represent settings.<br /><br /> For more information, see [ItemGroup Element (MSBuild)](/visualstudio/msbuild/itemgroup-element-msbuild), [ItemDefinitionGroup Element (MSBuild)](/visualstudio/msbuild/itemdefinitiongroup-element-msbuild), and [Item Element (MSBuild)](/visualstudio/msbuild/item-element-msbuild).|
 |.xml|Contains XML elements that declare and initialize IDE user interface elements such as property sheets and property pages, and text box and list box controls.<br /><br /> The .xml files directly support the IDE, not MSBuild. However, the values of IDE properties are assigned to build properties and items.<br /><br /> Most .xml files are in a locale-specific subdirectory. For example, files for the English-US region are in $(VCTargetsPath)\1033\\.|
 
-## User Targets and Properties
+## User targets and propertyies
 
 To use MSBuild most effectively on the command line, it helps to know which properties and targets are useful and relevant. Most properties and targets help implement the Visual C++ build system, and consequently are not relevant to the user. This section describes some worthwhile user-oriented properties and targets.
 
-### PlatformToolset Property
+### PlatformToolset property
 
 The `PlatformToolset` property determines which Visual C++ toolset is used in the build. By default, the current toolset is used. When this property is set, the value of the property is concatenated with literal strings to form the path of a directory that contains the property and target files that are required to build a project for a particular platform. The platform toolset must be installed to build by using that platform toolset version.
 
@@ -89,7 +89,7 @@ For example, set the `PlatformToolset` property to `v140` to use Visual C++ 2015
 
 `msbuild myProject.vcxproj /p:PlatformToolset=v140`
 
-### PreferredToolArchitecture Property
+### PreferredToolArchitecture property
 
 The `PreferredToolArchitecture` property determines whether the 32-bit or 64-bit compiler and tools are used in the build. This property does not affect the output platform architecture or configuration. By default, MSBuild uses the x86 version of the compiler and tools if this property is not set.
 
@@ -97,7 +97,7 @@ For example, set the `PreferredToolArchitecture` property to `x64` to use the 64
 
 `msbuild myProject.vcxproj /p:PreferredToolArchitecture=x64`
 
-### UseEnv Property
+### UseEnv property
 
 By default, the platform-specific settings for the current project override the PATH, INCLUDE, LIB, LIBPATH, CONFIGURATION, and PLATFORM environment variables. Set the `UseEnv` property to **true** to guarantee that the environment variables are not overridden.
 
