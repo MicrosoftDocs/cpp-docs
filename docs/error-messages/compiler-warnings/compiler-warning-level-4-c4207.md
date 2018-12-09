@@ -13,7 +13,7 @@ With Microsoft extensions (/Ze), you can initialize an unsized array of `char` u
 
 ## Example
 
-```
+```c
 // C4207.c
 // compile with: /W4
 char c[] = { 'a', 'b', "cdefg" }; // C4207

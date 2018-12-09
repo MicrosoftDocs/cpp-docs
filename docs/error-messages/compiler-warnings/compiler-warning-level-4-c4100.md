@@ -15,7 +15,7 @@ C4100 can also be issued when code calls a destructor on a otherwise unreference
 
 The following sample generates C4100:
 
-```
+```cpp
 // C4100.cpp
 // compile with: /W4
 void func(int i) {   // C4100, delete the unreferenced parameter to
