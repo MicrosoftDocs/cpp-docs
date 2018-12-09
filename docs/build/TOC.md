@@ -7,6 +7,7 @@
 ## [Precompiled header files](reference/creating-precompiled-header-files.md)
 ## [Set compiler and build properties](working-with-project-properties.md)
 ### [Create reusable build configurations](create-reusable-property-configurations.md)
+### [Project property inheritance](project-property-inheritance.md)
 ### [Modify properties and targets without changing the project file](modify-project-properties-without-changing-project-file.md)
 ## [Compile and build a project](compile-and-build-a-project.md)
 ## [Organize Project Output Files](how-to-organize-project-output-files-for-builds.md)
