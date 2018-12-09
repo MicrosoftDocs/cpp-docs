@@ -1,35 +1,19 @@
 ---
-title: "Creating Precompiled Header Files"
-ms.date: "11/19/2018"
+title: "Precompiled Header Files"
+ms.date: "12/10/2018"
 f1_keywords: ["pch"]
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 ---
-# Creating Precompiled Header Files
+# Precompiled Header Files
 
-The Microsoft C and C++ compilers provide options for precompiling any C or C++ code, including inline code. Using this performance feature, you can compile a stable body of code, store the compiled state of the code in a file, and, during subsequent compilations, combine the precompiled code with code that is still under development. Each subsequent compilation is faster because the stable code does not need to be recompiled.
+When you create a new project in Visual Studio, a *precompiled header file* named "pch.h" is added to the project. (In earlier versions of Visual Studio, the file was called "stdafx.h".) The purpose of the file is to speed up the build process. Any stable header files, for example Standard Library headers such as `<vector>`, should be included here. The precompiled header is compiled only when it, or any files it includes, are modified. If you only make changes in your project source code, the build will skip compilation for the precompiled header. 
 
-This topic covers the following precompiled header subjects:
+The compiler options for precompiled headers are [/Y](../../build/reference/y-precompiled-headers.md). In the project propery pages, the options are located under **Configuration Properties > C/C++ > Precompiled Headers**. You can choose to not use precompiled headers, and you can specify the header file name and the name and path of the output file. 
 
-- [When to Precompile Source Code](#when-to-precompile-source-code)
+## Custom precompiled code
 
-- [Two Choices for Precompiling Code](#two-choices-for-precompiling-code)
-
-- [Precompiled Header Consistency Rules](#precompiled-header-consistency-rules)
-
-- [Consistency Rules for Per-File Use of Precompiled Headers](#consistency-rules-for-per-file-use-of-precompiled-headers)
-
-- [Consistency Rules for /Yc and /Yu](#consistency-rules-for-yc-and-yu)
-
-- [Using Precompiled Headers in a Project](#using-precompiled-headers-in-a-project)
-
-- [PCH Files in the Build Process](#pch-files-in-the-build-process)
-
-- [Sample Makefile for PCH](#sample-makefile-for-pch)
-
-- [Example Code for PCH](#example-code-for-pch)
-
-For reference information on the compiler options related to precompiled headers, see [/Y (Precompiled Headers)](y-precompiled-headers.md).
+For large projects that take significant time to build, you may want to consider creating custom precompiled files. The Microsoft C and C++ compilers provide options for precompiling any C or C++ code, including inline code. Using this performance feature, you can compile a stable body of code, store the compiled state of the code in a file, and, during subsequent compilations, combine the precompiled code with code that is still under development. Each subsequent compilation is faster because the stable code does not need to be recompiled.
 
 ## When to Precompile Source Code
 
@@ -54,7 +38,7 @@ Precompiling requires planning, but it offers significantly faster compilations 
 
 Precompile code when you know that your source files use common sets of header files but don't include them in the same order, or when you want to include source code in your precompilation.
 
-The precompiled-header options are [/Yc (Create Precompiled Header File)](yc-create-precompiled-header-file.md) and [/Yu (Use Precompiled Header File)](yu-use-precompiled-header-file.md). Use **/Yc** to create a precompiled header. When used with the optional [hdrstop](../../preprocessor/hdrstop.md) pragma, **/Yc** lets you precompile both header files and source code. Select **/Yu** to use an existing precompiled header in the existing compilation. You can also use **/Fp** with the **/Yc** and **/Yu** options to provide an alternative name for the precompiled header.
+The precompiled-header options are [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) and [/Yu (Use Precompiled Header File)](../../build/reference/yu-use-precompiled-header-file.md). Use **/Yc** to create a precompiled header. When used with the optional [hdrstop](../../preprocessor/hdrstop.md) pragma, **/Yc** lets you precompile both header files and source code. Select **/Yu** to use an existing precompiled header in the existing compilation. You can also use **/Fp** with the **/Yc** and **/Yu** options to provide an alternative name for the precompiled header.
 
 The compiler option reference topics for **/Yu** and **/Yc** discuss how to access this functionality in the development environment.
 
@@ -64,7 +48,7 @@ Because PCH files contain information about the machine environment as well as m
 
 ## Consistency Rules for Per-File Use of Precompiled Headers
 
-The [/Yu](yu-use-precompiled-header-file.md) compiler option lets you specify which PCH file to use.
+The [/Yu](../../build/reference/yu-use-precompiled-header-file.md) compiler option lets you specify which PCH file to use.
 
 When you use a PCH file, the compiler assumes the same compilation environment — one that uses consistent compiler options, pragmas, and so on — that was in effect when you created the PCH file, unless you specify otherwise. If the compiler detects an inconsistency, it issues a warning and identifies the inconsistency where possible. Such warnings do not necessarily indicate a problem with the PCH file; they simply warn you of possible conflicts. Consistency requirements for PCH files are described in the following sections.
 
@@ -146,7 +130,7 @@ The code base of a software project is usually contained in multiple C or C++ so
 
 The figure uses three diagrammatic devices to show the flow of the build process. Named rectangles represent each file or macro; the three macros represent one or more files. Shaded areas represent each compile or link action. Arrows show which files and macros are combined during the compilation or linking process.
 
-![Structure of a makefile that uses a precompiled header file](media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
+![Structure of a makefile that uses a precompiled header file](../../build/reference/media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
 Structure of a Makefile That Uses a Precompiled Header File
 
 Beginning at the top of the diagram, both STABLEHDRS and BOUNDRY are NMAKE macros in which you list files not likely to need recompilation. These files are compiled by the command string
@@ -226,7 +210,7 @@ NMAKE
 NMAKE DEBUG=0
 ```
 
-For more information on makefiles, see [NMAKE Reference](../../build/nmake-reference.md). Also see [Compiler Options](compiler-options.md) and the [Linker Options](linker-options.md).
+For more information on makefiles, see [NMAKE Reference](../../build/nmake-reference.md). Also see [Compiler Options](../../build/reference/compiler-options.md) and the [Linker Options](../../build/reference/linker-options.md).
 
 ## Example Code for PCH
 
@@ -314,5 +298,5 @@ int main( void )
 
 ## See Also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Compiler Options](compiler-options.md)
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
+[Compiler Options](../../build/reference/compiler-options.md)

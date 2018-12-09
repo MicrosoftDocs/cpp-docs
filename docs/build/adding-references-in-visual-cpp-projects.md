@@ -1,23 +1,47 @@
 ---
-title: "Adding references in Visual C++ projects"
-ms.date: "11/04/2016"
+title: "Consuming libraries and components in C++ projects"
+ms.date: "12/10/2018"
 f1_keywords: ["VC.Project.References"]
 helpviewer_keywords: ["Add References Dialog Box (C++)", ".NET Framework (C++), Add References Dialog Box"]
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
 ---
-# Adding references in Visual C++ projects
+# Consuming libraries and components
 
-It is very common for programs to call into APIs in other binaries such as DLLs, Windows Runtime components, extension SDKs, COM components, and .NET assemblies. The way that your program finds those other binaries depends both on the type of your project, and the type of the binary.
+Often, a C++ project needs to call functions or access data in a binary file such as static library (.lib files), DLL, Windows Runtime component, COM component, or .NET assembly. In these cases, you have to configure the project so that it can find that binary at build time. The specific steps depend on the type of your project, the type of the binary, and whether the binary is being built in the same solution as your project. 
 
-In a native C++ project, if you are consuming a native DLL or COM component that is not being produced by another project in your solution, you use LoadLibrary or CoCreateInstance to specify the path to the binary, or else let the system locate it by looking in specific well-defined locations.
+## Consuming libraries downloaded via vcpkg
 
-In other types of projects such as UWP projects or C++/CLI projects, or when the binary is produced by another project in your solution, you add a *reference* to the assembly,  component or project.   A reference is essentially a set of data that enables your program to locate and communicate with the binary.       When you add a reference, Visual Studio handles the low level details. To set references from a C++ project to .NET Frameworkassemblies (C++/CLI only), COM components, other projects in your solution including shared projects, or connected services,  right-click on the **References** node in **Solution Explorer** to bring up the **Reference Manager**. What you see in Reference Manager differs depending on your project type.
+To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. See [vcpkg: A C++ package manager for Windows, Linux and MacOS](../vcpkg.md#integrate-with-visual-studio-windows) for more information.
 
-In a native C++ project (ATL) the concept of *references* only applies to other projects in the solution, including shared projects, so that is all you see in **Reference Manager**:
+## Consuming static libraries
 
-![Visual C&#43;&#43; Reference Manager &#40;ATL Projects&#41;](media/visual-c---reference-manager--atl-projects-.png "Visual C++ Reference Manager (ATL Projects)")
+If your static library project is being built in the same solution:
 
-In a C++/CLI or Universal Windows Platform project,  the concept of references applies to more kinds of binaries in addition to other projects in the solution.  These are all exposed in **Reference Manager**.
+1. #include the header file(s) for the static library using quotation marks. In a typical solution the path will start with `../<library project name>`. IntelliSense will help you find it.
+2. Add a reference to the static library project. Right-click on **References** under the application project node in **Solution Explorer** and choose **Add Reference**. 
+
+If the static library is not part of the solution:
+
+1. Right-click on the application project node in **Solution Explorer** and then choose **Properties**. 
+2. In the **VC++ Directories** property page, add the path to the directory where the .lib file is located in **Library Paths** and add the path to the library header file(s) in **Include Directories**.  
+3. In the **Linker > Input** property page, add the name of the .lib file to **Additional Dependencies**.
+
+## Dynamic link libraries
+
+If the DLL is being built as part of the same solution as the application, follow the same steps as for a static library.
+
+If the DLL is not part of the application solution, you need the DLL file, the header(s) with prototypes for the exported functions and classes, and a .lib file that provides the necessary linking information.
+
+1. Copy the DLL to the output folder of your project, or to another folder in the standard Windows search path for DLLs. See [Dynamic-Link Library Search Order](/windows/desktop/dlls/dynamic-link-library-search-order).
+2. Follow steps 1-3 for static libraries to provide the paths to the headers and .lib file.
+
+## COM objects
+
+If your native C++ application needs to consume a COM object, and that object is *registered*, then all you have to do is call CoCreateInstance and pass in the CLSID of the object. The system will find it in the Windows Registry and load it. A C++/CLI project can consume a COM object in the same way, or by adding a reference to it from the **Add References > COM** list and consuming it through its [Runtime callable wrapper](/dotnet/framework/interop/runtime-callable-wrapper). 
+
+## .NET assemblies and Windows Runtime Components
+
+In UWP or C++/CLI projects, you consume .NET assemblies or Windows Runtime Components by adding a *reference* to the assembly or component. Under the **References** node in a UWP or C++/CLI project, you see references to commonly-used components. Right-click on the **References** node in **Solution Explorer** to bring up the **Reference Manager** and browse through additional components that are known to the system. Click the **Browse** button to navigate to any folder where a custom component is located. Because .NET assemblies and Windows Runtime components contain built-in type information, you can view their methods and classes by right-clicking and choosing **View in Object Browser**. 
 
 ## Reference properties
 
@@ -47,9 +71,9 @@ ActiveX reference properties are available only for references to COM components
 
    Displays the tool that is used to build the interop assembly from the referenced COM library or ActiveX control.
 
-### Assembly reference properties
+### Assembly reference properties (C++/CLI)
 
-Assembly reference properties are available only for references to .NET Frameworkassemblies in C++/CLI projects. These properties are displayed only when a .NET Frameworkassembly is selected in the **References** pane. The properties cannot be modified.
+Assembly reference properties are available only for references to .NET Framework assemblies in C++/CLI projects. These properties are displayed only when a .NET Framework assembly is selected in the **References** pane. The properties cannot be modified.
 
 - **Relative Path**
 
@@ -63,7 +87,7 @@ The following properties are available on various kinds of references. They enab
 
    Specifies whether to automatically copy the referenced assembly to the target location during a build.
 
-- **Copy Local Satellite Assemblies**
+- **Copy Local Satellite Assemblies (C++/CLI)**
 
    Specifies whether to automatically copy the satellite assemblies of the referenced assembly to the target location during a build. Only used if **Copy Local** is **true**.
 
@@ -73,7 +97,7 @@ The following properties are available on various kinds of references. They enab
 
 ### Project-to-project reference properties
 
-The following properties define a *project-to-project reference* from the project that is selected in the **References** pane to another project  in the same solution. For more information, see [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
+The following properties define a *project-to-project reference* from the project that is selected in the **References** pane to another project in the same solution. For more information, see [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
 
 - **Link Library Dependencies**
 
@@ -87,7 +111,7 @@ The following properties define a *project-to-project reference* from the projec
 
    When this property is **False**, the project system will not link into the dependent project the .obj files for the library produced by the independent project. Consequently, this value disables incremental linking. Typically, you will specify **False** because building the application can take a long time if there are many independent projects.
 
-### Reference properties
+### Read-only reference properties (COM & .NET)
 
 The following properties are found on COM and .NET assembly references, and cannot be modified.
 
@@ -133,5 +157,5 @@ The following properties are found on COM and .NET assembly references, and cann
 
 ## See Also
 
-[Property Pages](reference/property-pages-visual-cpp.md)<br>
-[Working with Project Properties](working-with-project-properties.md)
+[Property Pages](../ide/property-pages-visual-cpp.md)<br>
+[Working with Project Properties](../ide/working-with-project-properties.md)
