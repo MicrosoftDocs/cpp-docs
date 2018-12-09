@@ -1,17 +1,35 @@
 ---
-title: "Creating and Managing Visual C++ Projects"
-ms.date: "11/04/2016"
+title: "Visual Studio Projects - C++"
+ms.date: "12/10/2018"
 f1_keywords: ["vcprojects", "creatingmanagingVC"]
 helpviewer_keywords: ["ATL projects, creating", "Visual C++ projects, creating", "projects [C++], creating", "Visual C++ projects", "ATL projects"]
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
 ---
-# Creating and Managing MSBuild-based Visual C++ Projects
+# Visual Studio projects - C++
 
-MSBuild is the native build system for Visual C++ and is generally the best build system to use for UWP apps as well as Desktop applications that use MFC or ATL libraries. MSBuild is tightly integrated with the Visual Studio IDE and project system, but you can also use it from the command line. Starting in Visual Studio 2017, Visual C++ supports [CMake and other non-MSBuild systems through the Open Folder feature](non-msbuild-projects.md).
+A *Visual Studio project* is a project based on the MSBuild build system. MSBuild is the native build system for Visual Studio and is generally the best build system to use for UWP apps as well as Desktop applications that use MFC or ATL libraries, COM components, and other Windows-specific programs. MSBuild is tightly integrated with Visual Studio, but you can also use it from the command line. 
 
-An MSBuild-based project has a project file in XML format (.vcxproj) that specifies all the files and resources needed to compile the program, as well as other configuration settings, for example the target platform (x86, x64 or ARM) and whether you are building a release version or debug version of the program. A project (or many projects) are contained in a *Solution*; for example, a solution might contain several Win32 DLL projects, and a single Win32 console application that uses those DLLs. When you build the project, the MSBuild engine consumes the project file and produces the executable file and/or any other custom output you have specified.
+## Create a project
 
-You can create Visual C++ projects by choosing **File &#124; New &#124; Project**, ensuring that Visual C++ is selected in the left pane, and then choosing from the list of project templates in the middle pane. When you click on a template, in many cases a wizard will appear that enables you to set various project properties before the project is created. You can view and modify those properties later by using the project's property pages (**Project &#124; Properties**).
+You can create C++ projects by choosing **File &#124; New &#124; Project**, then choosing Visual C++ in the left pane. In the center pane you see a list of project templates: 
+
+   ![Project Templates](../ide/media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+
+After you create a project, it appears in the **Solution Explorer* window:
+
+
+
+## Add items
+
+## Compile and run
+
+To compile and run the new project, press **F5** or click the *debug dropdown* with the green arrow on the main toolbar. The *configuration dropdown* is where you choose whether to perform a *Debug* or *Release* build (or some other custom configuration).
+
+A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning does not. All errors and warnings will appear both in the Output Window and in the Error List when you build the project. In the Error List, you can press **F1** on a highlighted error to go to its documentation topic.
+
+You can add new files to your project by right-clicking on the project node in **Solution Explorer** and choosing **Add > New Item** to create a new file, or **Add > Existing Item** to add a file that already exists. 
+
+You can add a project to a solution by right-clicking on the solution node and choosing **Add > New Project** or **Add > Existing Project**. Often it is useful to include, for example, a DLL and a client application that uses it in the same solution.
 
 You can also create new projects by:
 
@@ -21,18 +39,21 @@ You can also create new projects by:
 
 - creating an empty project (under the **General** tab) and manually adding source code files by right-clicking on the project node in solution explorer and choosing **Add &#124; Existing Item**.
 
-- using the [Win32 Application Wizard](../windows/win32-application-wizard.md).
+- using the [Windows Desktop Wizard](../windows/win32-application-wizard.md).
+
+
+An MSBuild-based project has a project file in XML format (.vcxproj) that specifies all the files and resources needed to compile the program, as well as other configuration settings, for example the target platform (x86, x64 or ARM) and whether you are building a release version or debug version of the program. A project (or many projects) are contained in a *Solution*; for example, a solution might contain several Win32 DLL projects, and a single Win32 console application that uses those DLLs. When you build the project, the MSBuild engine consumes the project file and produces the executable file and/or any other custom output you have specified.
 
 ## In This Section
 
-[Visual C++ Project Types](visual-cpp-project-types.md)<br>
-Describes the MSBuild-based project types that are available in Visual C++.
+[Visual Studio C++ project templates](visual-cpp-project-types.md)<br>
+Describes the MSBuild-based project types that are available for C++.
 
-[File Types Created for Visual C++ Projects](reference/file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for C++ Projects](reference/file-types-created-for-visual-cpp-projects.md)<br>
 Describes the kinds of files that are used with various MSBuild project types.
 
 [Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)<br>
-How to use the wizards to create projects with Visual C++.
+How to use the wizards to create C++ projects.
 
 [Working with Project Properties](working-with-project-properties.md)<br>
 Describes how to use Property Pages and Property Sheets to specify your project settings.
