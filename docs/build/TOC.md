@@ -26,6 +26,8 @@
 ## [Makefile Project Wizard](makefile-project-wizard.md)
 ## [Application Settings, Makefile Project Wizard](application-settings-makefile-project-wizard.md)
 ## [How to: Enable IntelliSense for Makefile Projects](how-to-enable-intellisense-for-makefile-projects.md)
+# [Release builds](release-builds.md)
+
 # [Use the MSVC toolset from the command line](building-on-the-command-line.md)
 ## [Walkthrough: Compile a Native C++ Program on the Command Line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 ## [Walkthrough: Compile a C program on the command line](walkthrough-compile-a-c-program-on-the-command-line.md)
