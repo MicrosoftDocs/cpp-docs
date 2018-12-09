@@ -13,7 +13,7 @@ An operation involved signed and unsigned variables. This could result in a loss
 
 The following sample generates C4389:
 
-```
+```cpp
 // C4389.cpp
 // compile with: /W4
 #pragma warning(default: 4389)

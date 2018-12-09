@@ -52,7 +52,7 @@ library C4337bLib
 
 The following sample generates C4337:
 
-```
+```cpp
 // C4337.cpp
 // compile with: /W4 /LD
 #import "c4337b.tlb" auto_search   // C4337
