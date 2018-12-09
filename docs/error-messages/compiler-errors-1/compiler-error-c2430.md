@@ -15,7 +15,7 @@ More than one register is scaled. The compiler supports scaled indexing, but you
 
 The following sample generates C2430.
 
-```
+```cpp
 // C2430.cpp
 // processor: x86
 int main() {

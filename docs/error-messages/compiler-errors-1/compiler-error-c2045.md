@@ -13,7 +13,7 @@ The label appears before multiple statements in the same function.
 
 The following sample generates C2045:
 
-```
+```cpp
 // C2045.cpp
 int main() {
    label: {

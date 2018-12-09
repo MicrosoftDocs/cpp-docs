@@ -13,7 +13,7 @@ A call is made to a destructor of incorrect type.
 
 The following sample generates C2325:
 
-```
+```cpp
 // C2325.cpp
 // compile with: /c
 class A {};

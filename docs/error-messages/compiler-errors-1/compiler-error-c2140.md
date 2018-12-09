@@ -17,7 +17,7 @@ For more information, see [Compiler Support for Type Traits](../../extensions/co
 
 The following sample generates C2140.
 
-```
+```cpp
 // C2140.cpp
 // compile with: /clr /c
 template <class T>

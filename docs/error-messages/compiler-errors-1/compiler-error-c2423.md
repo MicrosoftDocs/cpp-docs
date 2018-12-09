@@ -13,7 +13,7 @@ Inline assembly code uses a number other than 1, 2, 4, or 8 to scale a register.
 
 The following sample generates C2423:
 
-```
+```cpp
 // C2423.cpp
 // processor: x86
 int main() {

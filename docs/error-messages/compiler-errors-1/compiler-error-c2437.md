@@ -13,7 +13,7 @@ An object can be initialized only once.
 
 The following sample generates C2437:
 
-```
+```cpp
 // C2437.cpp
 // compile with: /c
 class A {

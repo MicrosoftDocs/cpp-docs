@@ -13,7 +13,7 @@ An operator was passed an invalid type.
 
 The following sample generates C2469:
 
-```
+```cpp
 // C2469.cpp
 int main() {
    int *i = new void;   // C2469

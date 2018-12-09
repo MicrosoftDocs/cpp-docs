@@ -13,7 +13,7 @@ A pure virtual function is declared with incorrect syntax.
 
 The following sample generates C2258:
 
-```
+```cpp
 // C2258.cpp
 // compile with: /c
 class A {

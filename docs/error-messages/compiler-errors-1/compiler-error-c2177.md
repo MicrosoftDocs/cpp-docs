@@ -13,7 +13,7 @@ A constant value is too large for the variable type it is assigned.
 
 The following sample generates C2177:
 
-```
+```cpp
 // C2177.cpp
 int main() {
    int a=18446744073709551616;   // C2177

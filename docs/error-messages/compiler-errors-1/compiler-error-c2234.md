@@ -13,7 +13,7 @@ Because pointers to references are not allowed, arrays of references are not pos
 
 The following sample generates C2234:
 
-```
+```cpp
 // C2234.cpp
 int main() {
    int i = 0, j = 0, k = 0, l = 0;

@@ -15,7 +15,7 @@ The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute
 
 The following sample generates C2262.
 
-```
+```cpp
 // C2262.cpp
 // compile with: /clr /c
 using namespace System::Runtime::CompilerServices;

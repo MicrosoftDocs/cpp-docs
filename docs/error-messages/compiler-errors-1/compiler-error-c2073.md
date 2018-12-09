@@ -13,7 +13,7 @@ Too few initializers were specified for an array of user-defined types or consta
 
 The following sample generates C2073:
 
-```
+```cpp
 // C2073.cpp
 class A {
 public:
@@ -22,7 +22,7 @@ public:
 A a[3] = { A(1), A(2) };   // C2073, no default constructor
 ```
 
-```
+```cpp
 // C2073b.cpp
 // compile with: /c
 class B {

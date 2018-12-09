@@ -17,7 +17,7 @@ The compiler must know the size of a type at compile time in order to allocate s
 
 The following sample generates C2057 and shows how to fix it:
 
-```
+```cpp
 // C2057.cpp
 int i;
 int b[i];   // C2057 - value of i is unknown at compile time

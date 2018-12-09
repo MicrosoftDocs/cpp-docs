@@ -13,7 +13,7 @@ With the **/Za** (ANSI) option, the `delete` operator can delete an entire array
 
 The following sample generates C2203:
 
-```
+```cpp
 // C2203.cpp
 // compile with: /Za
 int main() {

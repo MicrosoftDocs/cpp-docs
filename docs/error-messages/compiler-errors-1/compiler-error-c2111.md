@@ -13,7 +13,7 @@ An attempt was made to add a nonintegral value to a pointer using the plus ( `+`
 
 The following sample generates C2111:
 
-```
+```cpp
 // C2111.cpp
 int main() {
    int *a = 0, *pa = 0, b = 0;

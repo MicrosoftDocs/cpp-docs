@@ -13,7 +13,7 @@ ms.assetid: 72efa03e-615e-4ef9-aede-0a98654b20fd
 
 The following sample generates C2247:
 
-```
+```cpp
 // C2247.cpp
 class A {
 public:
@@ -28,7 +28,7 @@ This error can also be generated as a result of compiler conformance work that w
 
 For code that is valid in both the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, declare the member to be a friend of the type. Public inheritance could also be used.
 
-```
+```cpp
 // C2247b.cpp
 // compile with: /c
 // C2247 expected
@@ -53,7 +53,7 @@ C2247 can also be generated as a result of compiler conformance work that was do
 
 For code that is valid in both the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, use the scope operator.
 
-```
+```cpp
 // C2247c.cpp
 // compile with: /c
 struct A {};

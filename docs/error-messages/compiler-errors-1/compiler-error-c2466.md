@@ -13,7 +13,7 @@ An array is allocated or declared with size zero. The constant expression for th
 
 The following sample generates C2466:
 
-```
+```cpp
 // C2466.cpp
 // compile with: /c
 int i[0];   // C2466

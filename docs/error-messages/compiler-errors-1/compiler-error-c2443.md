@@ -13,7 +13,7 @@ The instruction requires operands to be the same size.
 
 The following sample generates C2443:
 
-```
+```cpp
 // C2443.cpp
 // processor: x86
 short var;

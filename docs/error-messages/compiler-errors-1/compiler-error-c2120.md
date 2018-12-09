@@ -13,7 +13,7 @@ The `void` type is used in a declaration with another type.
 
 The following sample generates C2120:
 
-```
+```cpp
 // C2120.cpp
 int main() {
    void int i;   // C2120

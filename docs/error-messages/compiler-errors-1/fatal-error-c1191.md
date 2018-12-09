@@ -13,7 +13,7 @@ The instruction to import mscorlib.dll into a program that uses /clr programming
 
 The following sample generates C1191:
 
-```
+```cpp
 // C1191.cpp
 // compile with: /clr
 namespace sample {
@@ -23,7 +23,7 @@ namespace sample {
 
 Possible resolution:
 
-```
+```cpp
 // C1191b.cpp
 // compile with: /clr /c
 #using <mscorlib.dll>

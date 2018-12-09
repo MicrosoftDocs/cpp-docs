@@ -13,7 +13,7 @@ The initialization of `identifier` can be skipped in a `switch` statement. You c
 
 The following sample generates C2360:
 
-```
+```cpp
 // C2360.cpp
 int main() {
    int x = 0;
@@ -29,7 +29,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2360b.cpp
 int main() {
    int x = 0;

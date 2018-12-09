@@ -13,7 +13,7 @@ Hexadecimal constants 0x, 0X, and \x are not valid. At least one hex digit must 
 
 The following sample generates C2153:
 
-```
+```cpp
 // C2153.cpp
 int main() {
    int a= 0x;    // C2153

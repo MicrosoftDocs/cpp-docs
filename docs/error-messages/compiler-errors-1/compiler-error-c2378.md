@@ -13,7 +13,7 @@ The identifier was redefined as a `typedef`.
 
 The following sample generates C2378:
 
-```
+```cpp
 // C2378.cpp
 // compile with: /c
 int i;

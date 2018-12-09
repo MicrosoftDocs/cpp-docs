@@ -13,7 +13,7 @@ A function was placed in two different segments using `alloc_text` and `code_seg
 
 The following sample generates C2193:
 
-```
+```cpp
 // C2193.cpp
 // compile with: /c
 extern "C" void MYFUNCTION();

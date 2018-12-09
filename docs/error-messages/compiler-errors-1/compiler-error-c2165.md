@@ -13,7 +13,7 @@ The `__stdcall`, `__cdecl`, or `__fastcall` keyword attempts to modify a pointer
 
 The following sample generates C2165:
 
-```
+```cpp
 // C2165.cpp
 // compile with: /c
 char __cdecl *p;   // C2165

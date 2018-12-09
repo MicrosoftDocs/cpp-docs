@@ -13,7 +13,7 @@ The catch handler for the ellipsis (...) must be the last handler for a throw.
 
 The following sample generates C2311:
 
-```
+```cpp
 // C2311.cpp
 // compile with: /EHsc
 #include <eh.h>

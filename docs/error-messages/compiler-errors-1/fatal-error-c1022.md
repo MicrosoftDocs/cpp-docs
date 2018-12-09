@@ -13,7 +13,7 @@ An `#if`, `#ifdef`, or `#ifndef` directive has no matching `#endif` directive. B
 
 The following sample generates C1022:
 
-```
+```cpp
 // C1022.cpp
 #define true 1
 
@@ -24,7 +24,7 @@ The following sample generates C1022:
 
 Possible resolution:
 
-```
+```cpp
 // C1022b.cpp
 // compile with: /c
 #define true 1

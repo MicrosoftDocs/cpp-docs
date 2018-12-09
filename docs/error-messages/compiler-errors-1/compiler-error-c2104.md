@@ -13,7 +13,7 @@ You cannot take the address of a bit field.
 
 The following sample generates C2104:
 
-```
+```cpp
 // C2104.cpp
 struct X {
    int sb : 1;

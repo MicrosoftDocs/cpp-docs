@@ -13,7 +13,7 @@ A pragma that must be specified at a global level (outside a function body) is w
 
 The following sample generates C2156:
 
-```
+```cpp
 // C2156.cpp
 #pragma optimize( "l", on )   // OK
 int main() {

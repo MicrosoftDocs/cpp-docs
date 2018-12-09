@@ -13,7 +13,7 @@ A conversion function in a Windows Runtime or managed type did not have at least
 
 The following sample generates C2396 and shows how to fix it:
 
-```
+```cpp
 // C2396.cpp
 // compile with: /clr /c
 

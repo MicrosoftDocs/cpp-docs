@@ -15,7 +15,7 @@ A template definition was recursive or exceeded complexity limits.
 
 The following sample generates C1202.
 
-```
+```cpp
 // C1202.cpp
 // processor: x86 IPF
 template<int n>
@@ -32,7 +32,7 @@ Factorial<7> facSeven;
 
 Possible resolution.
 
-```
+```cpp
 // C1202b.cpp
 // compile with: /c
 template<int n>

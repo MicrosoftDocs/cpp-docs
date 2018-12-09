@@ -13,7 +13,7 @@ The array is already declared with a different subscript.
 
 The following sample generates C2369:
 
-```
+```cpp
 // C2369.cpp
 // compile with: /c
 int a[10];

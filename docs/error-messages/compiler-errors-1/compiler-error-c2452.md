@@ -13,7 +13,7 @@ The source type for [safe_cast](../../extensions/safe-cast-cpp-component-extensi
 
 The following sample generates C2452:
 
-```
+```cpp
 // C2452.cpp
 // compile with: /clr
 

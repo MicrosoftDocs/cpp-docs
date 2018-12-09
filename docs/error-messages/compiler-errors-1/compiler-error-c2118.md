@@ -13,7 +13,7 @@ The value defining the array size is larger than the maximum array size or small
 
 The following sample generates C2118:
 
-```
+```cpp
 // C2118.cpp
 int main() {
    int array1[-1];   // C2118

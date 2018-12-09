@@ -13,7 +13,7 @@ The [nothrow](../../cpp/nothrow-cpp.md) extended attribute can be applied to fun
 
 The following sample generates C2495:
 
-```
+```cpp
 // C2495.cpp
 // compile with: /c
 __declspec(nothrow) class X {   // C2495

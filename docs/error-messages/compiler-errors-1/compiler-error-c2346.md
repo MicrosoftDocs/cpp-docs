@@ -23,7 +23,7 @@ For more information, see [managed, unmanaged](../../preprocessor/managed-unmana
 
 The following sample generates C2346.
 
-```
+```cpp
 // C2346.cpp
 // processor: x86
 // compile with: /clr
