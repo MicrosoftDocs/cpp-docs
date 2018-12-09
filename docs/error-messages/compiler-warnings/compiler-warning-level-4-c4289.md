@@ -17,7 +17,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4289:
 
-```
+```cpp
 // C4289.cpp
 // compile with: /W4 /Zc:forScope-
 #pragma warning(default:4289)

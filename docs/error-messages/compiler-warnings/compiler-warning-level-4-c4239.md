@@ -15,7 +15,7 @@ This type conversion is not allowed by the C++ standard, but it is permitted her
 
 The following sample generates C4239.
 
-```
+```cpp
 // C4239.cpp
 // compile with: /W4 /c
 struct C {
@@ -35,7 +35,7 @@ Conversion from integral type to enum type is not strictly allowed.
 
 The following sample generates C4239.
 
-```
+```cpp
 // C4239b.cpp
 // compile with: /W4 /c
 enum E { value };

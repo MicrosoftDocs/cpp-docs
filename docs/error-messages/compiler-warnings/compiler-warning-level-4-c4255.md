@@ -15,7 +15,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4255:
 
-```
+```c
 // C4255.c
 // compile with: /W4 /WX
 #pragma warning (default : 4255)

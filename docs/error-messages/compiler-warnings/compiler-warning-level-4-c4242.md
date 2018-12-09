@@ -17,7 +17,7 @@ For additional information on C4242, see [Common Compiler Errors](/windows/win32
 
 The following sample generates C4242:
 
-```
+```cpp
 // C4242.cpp
 // compile with: /W4
 #pragma warning(4:4242)
