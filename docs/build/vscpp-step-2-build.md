@@ -4,7 +4,7 @@ description: "Build and run a Hello World console app in Visual C++"
 ms.custom: "mvc"
 ms.date: 12/12/2017
 ms.topic: "tutorial"
-ms.devlang: "C++"
+ms.devlang: "cpp"
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
 ---
 # Build and run a C++ console app project

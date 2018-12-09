@@ -922,7 +922,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 ### Parameters
 
 *pSize*<br/>
-A pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that receives the size of the items.
+A pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that receives the size of the items.
 
 ### Return Value
 

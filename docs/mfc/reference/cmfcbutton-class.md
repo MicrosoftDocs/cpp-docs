@@ -485,7 +485,7 @@ virtual void OnDraw(
 [in] A reference to a rectangle that bounds the button.
 
 *uiState*<br/>
-[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](../../mfc/reference/drawitemstruct-structure.md) topic.
+[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) topic.
 
 ### Remarks
 
@@ -511,7 +511,7 @@ virtual void OnDrawBorder(
 [in] A reference to a rectangle that bounds the button.
 
 *uiState*<br/>
-[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](../../mfc/reference/drawitemstruct-structure.md) topic.
+[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) topic.
 
 ### Remarks
 

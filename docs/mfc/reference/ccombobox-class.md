@@ -221,7 +221,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 ### Parameters
 
 *lpCompareItemStruct*<br/>
-A long pointer to a [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) structure.
+A long pointer to a [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) structure.
 
 ### Return Value
 
@@ -273,7 +273,7 @@ virtual BOOL Create(
 Specifies the style of the combo box. Apply any combination of [combo-box styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) to the box.
 
 *rect*<br/>
-Points to the position and size of the combo box. Can be a [RECT structure](../../mfc/reference/rect-structure1.md) or a `CRect` object.
+Points to the position and size of the combo box. Can be a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) or a `CRect` object.
 
 *pParentWnd*<br/>
 Specifies the combo box's parent window (usually a `CDialog`). It must not be NULL.
@@ -340,7 +340,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### Parameters
 
 *lpDeleteItemStruct*<br/>
-A long pointer to a Windows [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) structure that contains information about the deleted item. See [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) for a description of this structure.
+A long pointer to a Windows [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) structure that contains information about the deleted item. See [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) for a description of this structure.
 
 ### Remarks
 
@@ -432,7 +432,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.
+A pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -605,7 +605,7 @@ void GetDroppedControlRect(LPRECT lprect) const;
 ### Parameters
 
 *lprect*<br/>
-Points to the [RECT structure](../../mfc/reference/rect-structure1.md) that is to receive the coordinates.
+Points to the [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that is to receive the coordinates.
 
 ### Example
 
@@ -997,7 +997,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Parameters
 
 *lpMeasureItemStruct*<br/>
-A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.
+A long pointer to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) structure.
 
 ### Remarks
 

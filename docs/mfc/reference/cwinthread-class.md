@@ -406,7 +406,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing the message to process.
+Points to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) containing the message to process.
 
 ### Return Value
 
@@ -432,7 +432,7 @@ virtual BOOL ProcessMessageFilter(
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
 *lpMsg*<br/>
-A pointer to a Windows [MSG structure](../../mfc/reference/msg-structure1.md).
+A pointer to a Windows [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg).
 
 ### Return Value
 
@@ -460,7 +460,7 @@ virtual LRESULT ProcessWndProcException(
 Points to an unhandled exception.
 
 *pMsg*<br/>
-Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing information about the windows message that caused the framework to throw an exception.
+Points to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) containing information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
 

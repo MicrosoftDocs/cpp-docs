@@ -359,7 +359,7 @@ UINT PrintInsideRect(
 Pointer to the printer device context.
 
 *rectLayout*<br/>
-Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) specifying the rectangle in which the text is to be rendered.
+Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) specifying the rectangle in which the text is to be rendered.
 
 *nIndexStart*<br/>
 Index within the buffer of the first character to be rendered.

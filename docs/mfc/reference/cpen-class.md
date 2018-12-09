@@ -230,7 +230,7 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
 ### Parameters
 
 *lpLogPen*<br/>
-Points to the Windows [LOGPEN](../../mfc/reference/logpen-structure.md) structure that contains information about the pen.
+Points to the Windows [LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen) structure that contains information about the pen.
 
 ### Return Value
 

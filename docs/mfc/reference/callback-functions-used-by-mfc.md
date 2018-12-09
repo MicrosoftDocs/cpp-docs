@@ -34,7 +34,7 @@ int CALLBACK EXPORT ObjectFunc(
 ### Parameters
 
 *lpszLogObject*<br/>
-Points to a [LOGPEN](../../mfc/reference/logpen-structure.md) or [LOGBRUSH](../../mfc/reference/logbrush-structure.md) data structure that contains information about the logical attributes of the object.
+Points to a [LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen) or [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) data structure that contains information about the logical attributes of the object.
 
 *lpData*<br/>
 Points to the application-supplied data passed to the `EnumObjects` function.

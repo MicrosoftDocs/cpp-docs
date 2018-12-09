@@ -794,7 +794,7 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 ### Parameters
 
 *lpwsaData*<br/>
-A pointer to a [WSADATA](../../mfc/reference/wsadata-structure.md) structure. If *lpwsaData* is not equal to NULL, then the address of the `WSADATA` structure is filled by the call to `WSAStartup`. This function also ensures that `WSACleanup` is called for you before the application terminates.
+A pointer to a [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) structure. If *lpwsaData* is not equal to NULL, then the address of the `WSADATA` structure is filled by the call to `WSAStartup`. This function also ensures that `WSACleanup` is called for you before the application terminates.
 
 ### Return Value
 

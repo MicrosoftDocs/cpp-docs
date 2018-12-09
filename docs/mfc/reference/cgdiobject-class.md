@@ -215,10 +215,10 @@ The function retrieves a data structure whose type depends on the type of graphi
 
 |Object|Buffer type|
 |------------|-----------------|
-|`CPen`|[LOGPEN](../../mfc/reference/logpen-structure.md)|
-|`CBrush`|[LOGBRUSH](../../mfc/reference/logbrush-structure.md)|
+|`CPen`|[LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen)|
+|`CBrush`|[LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush)|
 |`CFont`|[LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)|
-|`CBitmap`|[BITMAP](../../mfc/reference/bitmap-structure.md)|
+|`CBitmap`|[BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|
 |`CPalette`|WORD|
 |`CRgn`|Not supported|
 
