@@ -1,6 +1,6 @@
 ---
 title: "Visual Studio Projects - C++"
-ms.date: "12/10/2018"
+ms.date: "12/12/2018"
 f1_keywords: ["vcprojects", "creatingmanagingVC"]
 helpviewer_keywords: ["ATL projects, creating", "Visual C++ projects, creating", "projects [C++], creating", "Visual C++ projects", "ATL projects"]
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
@@ -15,34 +15,35 @@ You can create C++ projects by choosing **File &#124; New &#124; Project**, then
 
    ![Project Templates](../ide/media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
 
-After you create a project, it appears in the **Solution Explorer* window:
+For more information about all the default project templates that are included in Visual Studio, see [C++ project templates in Visual Studio](reference/visual-cpp-project-types.md). You can create your own project templates. For more information, see [How to: Create project templates](/visualstudio/ide/how-to-create-project-templates).
 
+After you create a project, it appears in the [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio) window:
 
+   ![Solution Explorer](media/mathlibrary-solution-explorer-153.png) "Visual Studio 2017 Solution Explorer")
+
+When you create a new project, a solution file (.sln) is also created. You can add additional projects to the solution by right-clicking on it in **Solution Explorer**. The solution file is used to coordinate build dependencies when you have multiple related projects but doesn't do much more than that. All the compiler options are set at the project level.
 
 ## Add items
+
+Add source code files, icons, or any other items to your project by right-clicking on the project in **Solution Explorer** and choosing **Add > New** or **Add > Existing**.
+
+## Add third party libraries
+
+To add third-party libraries, use the [vcpkg](../vcpkg.md) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project. 
+
+## Set compiler options and other build properties
+
+To configure build settings for a project, right-click on the project in **Solution Explorer** and choose **Properties**. For more information, see [Set compiler and build properties](working-with-project-properties).
 
 ## Compile and run
 
 To compile and run the new project, press **F5** or click the *debug dropdown* with the green arrow on the main toolbar. The *configuration dropdown* is where you choose whether to perform a *Debug* or *Release* build (or some other custom configuration).
 
-A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning does not. All errors and warnings will appear both in the Output Window and in the Error List when you build the project. In the Error List, you can press **F1** on a highlighted error to go to its documentation topic.
+A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning does not. All errors and warnings will appear both in the Output Window and in the Error List when you build the project. 
 
-You can add new files to your project by right-clicking on the project node in **Solution Explorer** and choosing **Add > New Item** to create a new file, or **Add > Existing Item** to add a file that already exists. 
+   ![Output window and error list](../ide/media/vs2017-output-error-list.png) "Visual Studio 2017 error List")
 
-You can add a project to a solution by right-clicking on the solution node and choosing **Add > New Project** or **Add > Existing Project**. Often it is useful to include, for example, a DLL and a client application that uses it in the same solution.
-
-You can also create new projects by:
-
-- choosing **File &#124; New &#124; Project from Existing Code** and following the prompts to add existing source code files. This option works best for relatively small and simple projects, perhaps 25 source codes files or less with few or no complex dependencies.
-
-- starting with a makefile and choose the Makefile Project template under the General tab.
-
-- creating an empty project (under the **General** tab) and manually adding source code files by right-clicking on the project node in solution explorer and choosing **Add &#124; Existing Item**.
-
-- using the [Windows Desktop Wizard](../windows/win32-application-wizard.md).
-
-
-An MSBuild-based project has a project file in XML format (.vcxproj) that specifies all the files and resources needed to compile the program, as well as other configuration settings, for example the target platform (x86, x64 or ARM) and whether you are building a release version or debug version of the program. A project (or many projects) are contained in a *Solution*; for example, a solution might contain several Win32 DLL projects, and a single Win32 console application that uses those DLLs. When you build the project, the MSBuild engine consumes the project file and produces the executable file and/or any other custom output you have specified.
+In the Error List, you can press **F1** on a highlighted error to go to its documentation topic.
 
 ## In This Section
 
@@ -55,7 +56,7 @@ Describes the kinds of files that are used with various MSBuild project types.
 [Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)<br>
 How to use the wizards to create C++ projects.
 
-[Working with Project Properties](working-with-project-properties.md)<br>
+[Set compiler and build properties](working-with-project-properties.md)<br>
 Describes how to use Property Pages and Property Sheets to specify your project settings.
 
 [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
@@ -64,11 +65,6 @@ Describes how to add classes, methods, variables, and other elements to your pro
 [How to: Organize Project Output Files for Builds](how-to-organize-project-output-files-for-builds.md)<br>
 Describes how to organize project output files.
 
-## Related Sections
-
-[Building C/C++ Programs](building-c-cpp-programs.md)<br>
-Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
-
 ## See Also
 
-[Visual Studio SDK](https://msdn.microsoft.com/vstudio/extend)
+[Building C/C++ Programs](building-c-cpp-programs.md)<br>
