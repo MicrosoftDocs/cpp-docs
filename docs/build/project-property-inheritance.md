@@ -1,10 +1,10 @@
 ---
-title: "Project property inheritance"
+title: "Property inheritance in Visual Studio projects - C++"
 ms.date: "12/10/2018"
 helpviewer_keywords: ["Visual C++ projects, property inheritance"]
 ---
 
-# Project property inheritance
+# Property inheritance in Visual Studio projects
 
 The Visual Studio project system is based on MSBuild, which defines file formats and rules for building projects of any kind. MSBuild manages much of the complexity of building for multiple configurations and platforms, but you need to understand a little bit about how it works. This is especially important if you want to define custom configurations or create reusable sets of properties that you can share and import into multiple projects.
 
@@ -66,13 +66,5 @@ For more information about Property Manager and property sheets, see [Creating r
 > [!TIP]
 > The .user file is a legacy feature and we recommend that you delete it in order to keep properties correctly grouped according to configuration/platform.
 
-## Target platforms
-
-*Target platform* refers to the kind of device and/or operating system that the executable will run on. You can build a project for more than one platform. The available target platforms for C++ projects depend on the kind of project; they include but are not limited to Win32, x64, ARM, Android, and iOS.     The **x86** target platform that you might see in **Configuration Manager** is identical to **Win32** in native C++ projects. Win32 means 32-bit Windows and **x64** means 64-bit Windows. For more information about these two platforms, see [Running 32-bit applications](/windows/desktop/WinProg64/running-32-bit-applications).
-
-The **Any CPU** target platform value that you might see in **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see [/CLRIMAGETYPE (Specify Type of CLR Image)](../build/reference/clrimagetype-specify-type-of-clr-image.md).
 
 
-The **Property Pages** dialog box shows only the property pages that apply to the current project. For example, if the project does not have an .idl file, the MIDL property page is not displayed.
-
-When you highlight a property in a Property Page, you can press **F1** to go to the reference topic for more information about the corresponding compiler or linker switch.

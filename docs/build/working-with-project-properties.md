@@ -28,6 +28,13 @@ The following illustration shows the same project property page, but the configu
 
 ![Visual C&#43;&#43; Property Pages showing release config](../ide/media/visual-c---property-pages-showing-release-config.png "Visual C++ Property Pages showing release config")
 
+## Target platforms
+
+*Target platform* refers to the kind of device and/or operating system that the executable will run on. You can build a project for more than one platform. The available target platforms for C++ projects depend on the kind of project; they include but are not limited to Win32, x64, ARM, Android, and iOS.     The **x86** target platform that you might see in **Configuration Manager** is identical to **Win32** in native C++ projects. Win32 means 32-bit Windows and **x64** means 64-bit Windows. For more information about these two platforms, see [Running 32-bit applications](/windows/desktop/WinProg64/running-32-bit-applications).
+
+The **Any CPU** target platform value that you might see in **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see [/CLRIMAGETYPE (Specify Type of CLR Image)](../build/reference/clrimagetype-specify-type-of-clr-image.md).
+
+
 For more information about setting properties for a Debug build, see:
 
 - [Project settings for a C++ debug configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
@@ -37,9 +44,9 @@ For more information about setting properties for a Debug build, see:
 
 ## C++ compiler and linker options
 
-C++ compiler and linker options are located under the **C/C++** and **Linker** nodes in the left pane under **Configuration Properties**. These translate directly to command-line options that will be passed to the compiler. To read documentation about a specific option, select the option in the center pane and press **F1**. Or, you can browse documentation for all the options at [Compiler Options](../build/reference/compiler-options.md) and [Linker Options](../build/reference/linker-options.md).
+C++ compiler and linker options are located under the **C/C++** and **Linker** nodes in the left pane under **Configuration Properties**. These translate directly to command-line options that will be passed to the compiler. To read documentation about a specific option, select the option in the center pane and press **F1**. Or, you can browse documentation for all the options at [Compiler Options](../build/reference/compiler-options.md) and [Linker Options](../build/reference/linker-options.md). 
 
-For more information about these and the rest of the property pages, see [Property Pages (C++)](../ide/property-pages-visual-cpp.md). When you highlight a property in a Property Page, you can press **F1** to go to the reference topic for more information about the corresponding compiler or linker switch.
+The **Property Pages** dialog box shows only the property pages that are relevant to the current project. For example, if the project does not have an .idl file, the MIDL property page is not displayed. For more information about the setting on each property pages, see [Property Pages (C++)](../ide/property-pages-visual-cpp.md). 
 
 ## Directory and path values
 

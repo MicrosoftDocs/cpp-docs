@@ -1,12 +1,12 @@
 ---
-title: "Create reusable property configurations"
+title: "Share or resuse Visual Studio project settings - C++"
 ms.date: "11/28/2018"
 helpviewer_keywords: ["project properties [C++], reusable"]
 ---
 
-# Create reusable property configurations
+# Share or resuse Visual Studio project settings
 
-Although you can set "global" properties on a per-user, per-computer basis, we no longer recommend it. Instead, we recommend that you use **Property Manager** to create a *property sheet* to store the settings for each kind of project that you want to be able to reuse or share with others. Property sheets also make it less likely that property settings for other project types will be inadvertently changed. Property sheets are discussed in more detail [Creating reusable property configurations](#bkmkPropertySheets).
+To create a custom group of settings that you can share with others or reuse in multiple projects, use **Property Manager** to create a *property sheet* (.props file) to store the settings for each kind of project that you want to be able to reuse or share with others. Using property sheets are far less error-prone than other ways of creating "global" settings. 
 
 > [!IMPORTANT]
 > **.user files and why they are problematic**
@@ -21,7 +21,7 @@ If you have a common, frequently used set of properties that you want to apply t
 
 ![Property Manager shortcut menu](media/sharingnew.png "SharingNew")
 
-Under each configuration node, you see nodes for each property sheet that applies to that configuration. The system adds property sheets that set values based on options you choose in the app wizard when you create the project. Right-click any node and choose Properties to see the properties that apply to that node. All the property sheets are imported automatically into the project's "master" property sheet (ms.cpp.props) and are evaluated in the order they appear in Property Manager. You can move them to change the evaluation order. Property sheets that are evaluated later will override the values in previously-evaluated sheets.
+Under each configuration node, you see nodes for each property sheet that applies to that configuration. The system adds property sheets that set values based on options you choose in the app wizard when you create the project. Right-click any node and choose Properties to see the properties that apply to that node. All the property sheets are imported automatically into the project's "master" property sheet (ms.cpp.props) and are evaluated in the order they appear in Property Manager. You can move them to change the evaluation order. Property sheets that are evaluated later will override the values in previously-evaluated sheets. See [Project property inheritance](project-property-inheritance.md) for more information about the order of evaluation in the .vcxproj file, the .props and .targets files, environment variables and the command line.
 
 If you choose **Add New Project Property Sheet** and then select, for example, the MyProps.props property sheet, a property page dialog box appears. Notice that it applies to the MyProps property sheet; any changes you make are written to the sheet, not to the project file (.vcxproj).
 

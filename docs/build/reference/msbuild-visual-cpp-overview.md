@@ -85,15 +85,14 @@ The following table lists several useful user-oriented targets.
 ## See Also
 
 [MSBuild Task Reference](/visualstudio/msbuild/msbuild-task-reference)<br/>
-[[BscMake Task](/visualstudio/msbuild/bscmake-task)<br/>
-[[CL Task](/visualstudio/msbuild/cl-task)<br/>
-[[CPPClean Task](/visualstudio/msbuild/cppclean-task)<br/>
-[[LIB Task](/visualstudio/msbuild/lib-task)<br/>
-[[Link Task](/visualstudio/msbuild/link-task)<br/>
-[[MIDL Task](/visualstudio/msbuild/midl-task)<br/>
-[[MT Task](/visualstudio/msbuild/mt-task)<br/>
-[[RC Task](/visualstudio/msbuild/rc-task)<br/>
-[[SetEnv Task](/visualstudio/msbuild/setenv-task)<br/>
-[[VCMessage Task](/visualstudio/msbuild/vcmessage-task)<br/>
-[[XDCMake Task](/visualstudio/msbuild/xdcmake-task)<br/>
-[[XSD Task](/visualstudio/msbuild/xsd-task).
+[BscMake Task](/visualstudio/msbuild/bscmake-task)<br/>
+[CL Task](/visualstudio/msbuild/cl-task)<br/>
+[CPPClean Task](/visualstudio/msbuild/cppclean-task)<br/>
+[LIB Task](/visualstudio/msbuild/lib-task)<br/>
+[Link Task](/visualstudio/msbuild/link-task)<br/>
+[MIDL Task](/visualstudio/msbuild/midl-task)<br/>
+[MT Task](/visualstudio/msbuild/mt-task)<br/>
+[RC Task](/visualstudio/msbuild/rc-task)<br/>
+[SetEnv Task](/visualstudio/msbuild/setenv-task)<br/>
+[VCMessage Task](/visualstudio/msbuild/vcmessage-task)<br/>
+[XDCMake Task](/visualstudio/msbuild/xdcmake-task)<br/>
