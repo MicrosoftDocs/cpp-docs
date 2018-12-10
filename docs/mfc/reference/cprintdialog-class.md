@@ -134,7 +134,7 @@ Note that when you call the constructor with *bPrintSetupOnly* set to FALSE, the
 
 ##  <a name="createprinterdc"></a>  CPrintDialog::CreatePrinterDC
 
-Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.
+Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
 
 ```
 HDC CreatePrinterDC();

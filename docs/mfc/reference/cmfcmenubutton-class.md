@@ -152,7 +152,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-[in] Points to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
+[in] Points to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 

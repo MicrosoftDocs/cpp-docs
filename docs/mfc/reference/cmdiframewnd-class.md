@@ -124,7 +124,7 @@ virtual BOOL CreateClient(
 ### Parameters
 
 *lpCreateStruct*<br/>
-A long pointer to a [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.
+A long pointer to a [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure.
 
 *pWindowMenu*<br/>
 A pointer to the Window pop-up menu.

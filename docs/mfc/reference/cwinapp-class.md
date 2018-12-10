@@ -1599,7 +1599,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-A pointer to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
+A pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 
@@ -1621,7 +1621,7 @@ virtual BOOL ProcessMessageFilter(
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
 *lpMsg*<br/>
-A pointer to a Windows [MSG](../../mfc/reference/msg-structure1.md) structure.
+A pointer to a Windows [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure.
 
 ### Return Value
 
@@ -1692,7 +1692,7 @@ virtual LRESULT ProcessWndProcException(
 A pointer to an uncaught exception.
 
 *pMsg*<br/>
-A [MSG](../../mfc/reference/msg-structure1.md) structure that contains information about the windows message that caused the framework to throw an exception.
+A [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
 
@@ -1924,7 +1924,7 @@ void SelectPrinter(
 ### Parameters
 
 *hDevNames*<br/>
-A handle to a [DEVNAMES](../../mfc/reference/devnames-structure.md) structure that identifies the driver, device, and output port names of a specific printer.
+A handle to a [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structure that identifies the driver, device, and output port names of a specific printer.
 
 *hDevMode*<br/>
 A handle to a [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) structure that specifies information about the device initialization and environment of a printer.

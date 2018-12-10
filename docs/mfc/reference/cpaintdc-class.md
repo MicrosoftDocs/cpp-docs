@@ -27,7 +27,7 @@ class CPaintDC : public CDC
 
 |Name|Description|
 |----------|-----------------|
-|[CPaintDC::m_ps](#m_ps)|Contains the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) used to paint the client area.|
+|[CPaintDC::m_ps](#m_ps)|Contains the [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) used to paint the client area.|
 
 ### Protected Data Members
 
@@ -57,7 +57,7 @@ For more information on using `CPaintDC`, see [Device Contexts](../../mfc/device
 
 ##  <a name="cpaintdc"></a>  CPaintDC::CPaintDC
 
-Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure in the [m_ps](#m_ps) member variable.
+Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) structure in the [m_ps](#m_ps) member variable.
 
 ```
 explicit CPaintDC(CWnd* pWnd);
@@ -94,7 +94,7 @@ HWND m_hWnd;
 
 ##  <a name="m_ps"></a>  CPaintDC::m_ps
 
-`m_ps` is a public member variable of type [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md).
+`m_ps` is a public member variable of type [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct).
 
 ```
 PAINTSTRUCT m_ps;

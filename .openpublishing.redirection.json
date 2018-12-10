@@ -156,11 +156,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/mfc/active-documents-on-the-internet.md",
-            "redirect_url": "/cpp/mfc/activex-controls",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/build/naming-conventions-for-mfc-dlls.md",
             "redirect_url": "/cpp/mfc/mfc-library-versions#mfc-static-library-naming-conventions",
             "redirect_document_id": false
@@ -6266,6 +6261,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/active-documents-on-the-internet.md",
+            "redirect_url": "/cpp/mfc/activex-controls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/afxdll-versions.md",
             "redirect_url": "/cpp/mfc/mfc-library-versions",
             "redirect_document_id": false
@@ -6291,6 +6291,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/abc-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/abcfloat-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/bitmap-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/bitmapinfo-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/reference/button-styles.md",
             "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#button-styles",
             "redirect_document_id": false
@@ -6306,13 +6326,38 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/coloradjustment-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/reference/combo-box-styles.md",
             "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#combo-box-styles",
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/compareitemstruct-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/createstruct-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/reference/callback-function-for-cdc-setabortproc.md",
             "redirect_url": "/cpp/mfc/reference/callback-functions-used-by-mfc#setabortproc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/devnames-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/drawitemstruct-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
             "redirect_document_id": false
         },
         {
@@ -6326,6 +6371,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/filetime-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/reference/frame-window-styles-mfc.md",
             "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#frame-window-styles-mfc",
             "redirect_document_id": false
@@ -6336,8 +6386,23 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/linger-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/reference/list-box-styles.md",
             "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#list-box-styles",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/logbrush-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/logpen-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
             "redirect_document_id": false
         },
         {
@@ -6346,13 +6411,88 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/minmaxinfo-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/msg-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/msg-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/nccalcsize-params-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/paintstruct-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/point-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/point-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/rect-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/rect-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/rgndata-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/reference/scroll-bar-styles.md",
             "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#scroll-bar-styles",
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/mfc/reference/sockaddr-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/sockaddr-in-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/mfc/reference/static-styles.md",
             "redirect_url": "/cpp/mfc/reference/styles-used-by-mfc#static-styles",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/systemtime-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/systemtime-structure1.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/mfc/reference/windowplacement-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
             "redirect_document_id": false
         },
         {
@@ -6366,29 +6506,19 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/mfc/reference/rect-structure1.md",
-            "redirect_url": "/cpp/mfc/reference/rect-structure",
-            "redirect_document_id": true
+            "source_path": "docs/mfc/reference/windowpos-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/mfc/reference/windowpos-structure1.md",
-            "redirect_url": "/cpp/mfc/reference/windowpos-structure",
-            "redirect_document_id": true
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
         },
         {
-            "source_path": "docs/mfc/reference/systemtime-structure1.md",
-            "redirect_url": "/cpp/mfc/reference/systemtime-structure",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/mfc/reference/point-structure1.md",
-            "redirect_url": "/cpp/mfc/reference/point-structure",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/mfc/reference/msg-structure1.md",
-            "redirect_url": "/cpp/mfc/reference/msg-structure",
-            "redirect_document_id": true
+            "source_path": "docs/mfc/reference/xform-structure.md",
+            "redirect_url": "/cpp/mfc/reference/structures-used-by-mfc",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/mfc/reference/cacceleratedeceleratetransition-class1.md",

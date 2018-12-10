@@ -734,7 +734,7 @@ CDC* BeginPaint(LPPAINTSTRUCT lpPaint);
 ### Parameters
 
 *lpPaint*<br/>
-Points to the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure that is to receive painting information.
+Points to the [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) structure that is to receive painting information.
 
 ### Return Value
 
@@ -1034,10 +1034,10 @@ void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) 
 ### Parameters
 
 *lpPoint*<br/>
-Points to a [POINT structure](../../mfc/reference/point-structure1.md) or `CPoint` object that contains the client coordinates to be converted.
+Points to a [POINT structure](/windows/desktop/api/windef/ns-windef-tagpoint) or `CPoint` object that contains the client coordinates to be converted.
 
 *lpRect*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) or `CRect` object that contains the client coordinates to be converted.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) or `CRect` object that contains the client coordinates to be converted.
 
 ### Remarks
 
@@ -1241,13 +1241,13 @@ A pointer to the text to be displayed in the control. Sets the value of the cont
 Windows styles. The available styles are listed under Remarks.
 
 *rect*<br/>
-Specifies the control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](../../mfc/reference/rect-structure1.md).
+Specifies the control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect).
 
 *ppt*<br/>
-Points to a [POINT structure](../../mfc/reference/point-structure1.md) or `CPoint` object that contains the upper left corner of the control.
+Points to a [POINT structure](/windows/desktop/api/windef/ns-windef-tagpoint) or `CPoint` object that contains the upper left corner of the control.
 
 *pSize*<br/>
-Points to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object that contains the control's size
+Points to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure or `CSize` object that contains the control's size
 
 *pParentWnd*<br/>
 Specifies the control's parent window. It must not be NULL.
@@ -2157,7 +2157,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint);
 ### Parameters
 
 *lpPaint*<br/>
-Points to a [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure that contains the painting information retrieved by the [BeginPaint](#beginpaint) member function.
+Points to a [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) structure that contains the painting information retrieved by the [BeginPaint](#beginpaint) member function.
 
 ### Remarks
 
@@ -2890,7 +2890,7 @@ void GetClientRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) or a `CRect` object to receive the client coordinates. The `left` and `top` members will be 0. The `right` and `bottom` members will contain the width and height of the window.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) or a `CRect` object to receive the client coordinates. The `left` and `top` members will be 0. The `right` and `bottom` members will contain the width and height of the window.
 
 ### Remarks
 
@@ -2964,7 +2964,7 @@ static const MSG* PASCAL GetCurrentMessage();
 
 ### Return Value
 
-Returns a pointer to the [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message the window is currently processing. Should only be called when in an **On**<em>Message</em> handler.
+Returns a pointer to the [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message the window is currently processing. Should only be called when in an **On**<em>Message</em> handler.
 
 ### Example
 
@@ -4044,7 +4044,7 @@ BOOL GetUpdateRect(
 ### Parameters
 
 *lpRect*<br/>
-Points to a `CRect` object or [RECT structure](../../mfc/reference/rect-structure1.md) that is to receive the client coordinates of the update that encloses the update region.
+Points to a `CRect` object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that is to receive the client coordinates of the update that encloses the update region.
 
 Set this parameter to NULL to determine whether an update region exists within the `CWnd`. If *lpRect* is NULL, the `GetUpdateRect` member function returns nonzero if an update region exists and 0 if one does not. This provides a way to determine whether a WM_PAINT message resulted from an invalid area. Do not set this parameter to NULL in Windows version 3.0 and earlier.
 
@@ -4230,7 +4230,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The `flags` member of the [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) structure retrieved by this function is always 0. If `CWnd` is maximized, the `showCmd` member of `WINDOWPLACEMENT` is SW_SHOWMAXIMIZED. If the window is minimized, it is SW_SHOWMINIMIZED. It is SW_SHOWNORMAL otherwise.
+The `flags` member of the [WINDOWPLACEMENT](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement) structure retrieved by this function is always 0. If `CWnd` is maximized, the `showCmd` member of `WINDOWPLACEMENT` is SW_SHOWMAXIMIZED. If the window is minimized, it is SW_SHOWMINIMIZED. It is SW_SHOWNORMAL otherwise.
 
 ##  <a name="getwindowrect"></a>  CWnd::GetWindowRect
 
@@ -4243,7 +4243,7 @@ void GetWindowRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Points to a `CRect` object or a [RECT structure](../../mfc/reference/rect-structure1.md) that will receive the screen coordinates of the upper-left and lower-right corners.
+Points to a `CRect` object or a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that will receive the screen coordinates of the upper-left and lower-right corners.
 
 ### Remarks
 
@@ -4466,7 +4466,7 @@ void InvalidateRect(
 ### Parameters
 
 *lpRect*<br/>
-Points to a `CRect` object or a [RECT structure](../../mfc/reference/rect-structure1.md) that contains the rectangle (in client coordinates) to be added to the update region. If *lpRect* is NULL, the entire client area is added to the region.
+Points to a `CRect` object or a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that contains the rectangle (in client coordinates) to be added to the update region. If *lpRect* is NULL, the entire client area is added to the region.
 
 *bErase*<br/>
 Specifies whether the background within the update region is to be erased.
@@ -4596,7 +4596,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
 ### Parameters
 
 *lpMsg*<br/>
-Points to an [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to be checked.
+Points to an [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to be checked.
 
 ### Return Value
 
@@ -4829,7 +4829,7 @@ Identifies the window to which points are converted. If this parameter is NULL, 
 Specifies the rectangle whose points are to be converted. The first version of this function is available only for Windows 3.1 and later.
 
 *lpPoint*<br/>
-A pointer to an array of [POINT structure](../../mfc/reference/point-structure1.md) that contain the set of points to be converted.
+A pointer to an array of [POINT structure](/windows/desktop/api/windef/ns-windef-tagpoint) that contain the set of points to be converted.
 
 *nCount*<br/>
 Specifies the number of `POINT` structures in the array pointed to by *lpPoint*.
@@ -5007,7 +5007,7 @@ Specifies the new height of the `CWnd`.
 Specifies whether `CWnd` is to be repainted. If TRUE, `CWnd` receives a [WM_PAINT](/windows/desktop/gdi/wm-paint) message in its [OnPaint](#onpaint) message handler as usual. If this parameter is FALSE, no repainting of any kind occurs. This applies to the client area, to the nonclient area (including the title and scroll bars), and to any part of the parent window uncovered as a result of `CWnd`'s move. When this parameter is FALSE, the application must explicitly invalidate or redraw any parts of `CWnd` and parent window that must be redrawn.
 
 *lpRect*<br/>
-The [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the new size and position.
+The [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that specifies the new size and position.
 
 ### Remarks
 
@@ -5518,7 +5518,7 @@ afx_msg int OnCompareItem(
 The identifier of the control that sent the WM_COMPAREITEM message.
 
 *lpCompareItemStruct*<br/>
-Contains a long pointer to a [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) data structure that contains the identifiers and application-supplied data for two items in the combo or list box.
+Contains a long pointer to a [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) data structure that contains the identifiers and application-supplied data for two items in the combo or list box.
 
 ### Return Value
 
@@ -5626,7 +5626,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### Parameters
 
 *lpCreateStruct*<br/>
-Points to a [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure that contains information about the `CWnd` object being created.
+Points to a [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure that contains information about the `CWnd` object being created.
 
 ### Return Value
 
@@ -5761,7 +5761,7 @@ afx_msg void OnDeleteItem(
 The identifier of the control that sent the WM_DELETEITEM message.
 
 *lpDeleteItemStruct*<br/>
-Specifies a long pointer to a [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) data structure that contains information about the deleted list box item.
+Specifies a long pointer to a [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) data structure that contains information about the deleted list box item.
 
 ### Remarks
 
@@ -5929,7 +5929,7 @@ Specifies a long pointer to a `DRAWITEMSTRUCT` data structure that contains info
 
 ### Remarks
 
-The `itemAction` member of the [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure defines the drawing operation that is to be performed. The data in this member allows the owner of the control to determine what drawing action is required.
+The `itemAction` member of the [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure defines the drawing operation that is to be performed. The data in this member allows the owner of the control to determine what drawing action is required.
 
 Before returning from processing this message, an application should ensure that the device context identified by the *hDC* member of the `DRAWITEMSTRUCT` structure is restored to the default state.
 
@@ -6198,7 +6198,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO* lpMMI);
 ### Parameters
 
 *lpMMI*<br/>
-Points to a `MINMAXINFO` structure that contains information about a window's maximized size and position and its minimum and maximum tracking size. For more about this structure, see the [MINMAXINFO](../../mfc/reference/minmaxinfo-structure.md) structure.
+Points to a `MINMAXINFO` structure that contains information about a window's maximized size and position and its minimum and maximum tracking size. For more about this structure, see the [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) structure.
 
 ### Remarks
 
@@ -6894,7 +6894,7 @@ afx_msg void OnMeasureItem(
 The ID of the control.
 
 *lpMeasureItemStruct*<br/>
-Points to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) data structure that contains the dimensions of the owner-draw control.
+Points to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) data structure that contains the dimensions of the owner-draw control.
 
 ### Remarks
 
@@ -7329,7 +7329,7 @@ afx_msg void OnMoving(
 The edge of window to be moved.
 
 *lpRect*<br/>
-Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](../../mfc/reference/rect-structure1.md) that will contain the item's coordinates.
+Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that will contain the item's coordinates.
 
 ### Remarks
 
@@ -7376,7 +7376,7 @@ afx_msg void OnNcCalcSize(
 Specifies whether the application should specify which part of the client area contains valid information. Windows will copy the valid information to the specified area within the new client area. If this parameter is TRUE, the application should specify which part of the client area is valid.
 
 *lpncsp*<br/>
-Points to a [NCCALCSIZE_PARAMS](../../mfc/reference/nccalcsize-params-structure.md) data structure that contains information an application can use to calculate the new size and position of the `CWnd` rectangle (including client area, borders, caption, scroll bars, and so on).
+Points to a [NCCALCSIZE_PARAMS](/windows/desktop/api/winuser/ns-winuser-tagnccalcsize_params) data structure that contains information an application can use to calculate the new size and position of the `CWnd` rectangle (including client area, borders, caption, scroll bars, and so on).
 
 ### Remarks
 
@@ -7402,7 +7402,7 @@ afx_msg BOOL OnNcCreate(LPCREATESTRUCT lpCreateStruct);
 ### Parameters
 
 *lpCreateStruct*<br/>
-Points to the [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) data structure for `CWnd`.
+Points to the [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) data structure for `CWnd`.
 
 ### Return Value
 
@@ -7971,7 +7971,7 @@ afx_msg void OnPaintClipboard(
 Specifies a pointer to the Clipboard-application window. The pointer may be temporary and should not be stored for later use.
 
 *hPaintStruct*<br/>
-Identifies a [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) data structure that defines what part of the client area to paint.
+Identifies a [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) data structure that defines what part of the client area to paint.
 
 ### Remarks
 
@@ -8590,7 +8590,7 @@ afx_msg void OnSizing(
 The edge of window to be moved.
 
 *lpRect*<br/>
-Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](../../mfc/reference/rect-structure1.md) that will contain the item's coordinates.
+Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that will contain the item's coordinates.
 
 ### Remarks
 
@@ -9382,7 +9382,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
 ### Parameters
 
 *lpwndpos*<br/>
-Points to a [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) data structure that contains information about the window's new size and position.
+Points to a [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) data structure that contains information about the window's new size and position.
 
 ### Remarks
 
@@ -9406,7 +9406,7 @@ Points to a `WINDOWPOS` data structure that contains information about the windo
 
 ### Remarks
 
-An application can prevent changes to the window by setting or clearing the appropriate bits in the **flags** member of the [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) structure.
+An application can prevent changes to the window by setting or clearing the appropriate bits in the **flags** member of the [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) structure.
 
 For a window with the [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) or [WS_THICKFRAME](styles-used-by-mfc.md#window-styles) style, the default implementation sends a [WM_GETMINMAXINFO](/windows/desktop/winmsg/wm-getminmaxinfo) message to the window. This is done to validate the new size and position of the window and to enforce the CS_BYTEALIGNCLIENT and CS_BYTEALIGN client styles. An application can override this functionality by not calling its base class.
 
@@ -9729,7 +9729,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ### Parameters
 
 *cs*<br/>
-A [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.
+A [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure.
 
 ### Return Value
 
@@ -9777,7 +9777,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Points to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
+Points to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 
@@ -9899,7 +9899,7 @@ BOOL RedrawWindow(
 ### Parameters
 
 *lpRectUpdate*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) containing the coordinates of the update rectangle. This parameter is ignored if *prgnUpdate* contains a valid region handle.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) containing the coordinates of the update rectangle. This parameter is ignored if *prgnUpdate* contains a valid region handle.
 
 *prgnUpdate*<br/>
 Identifies the update region. If both *prgnUpdate* and *lpRectUpdate* are NULL, the entire client area is added to the update region.
@@ -10069,10 +10069,10 @@ Can have one of the following values:
 - `CWnd::reposExtra` Adds the values of *lpRectParam* to the client area of *nIDLast* and also performs the layout.
 
 *lpRectParam*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md); the usage of which depends on the value of *nFlag*.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect); the usage of which depends on the value of *nFlag*.
 
 *lpRectClient*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) containing the available client area. If NULL, the window's client area will be used.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) containing the available client area. If NULL, the window's client area will be used.
 
 *bStretch*<br/>
 Indicates whether the bar should be stretched to the size of the frame.
@@ -10119,10 +10119,10 @@ void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) 
 ### Parameters
 
 *lpPoint*<br/>
-Points to a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT structure](../../mfc/reference/point-structure1.md) that contains the screen coordinates to be converted.
+Points to a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT structure](/windows/desktop/api/windef/ns-windef-tagpoint) that contains the screen coordinates to be converted.
 
 *lpRect*<br/>
-Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that contains the screen coordinates to be converted.
+Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that contains the screen coordinates to be converted.
 
 ### Remarks
 
@@ -10153,7 +10153,7 @@ Specifies the amount, in device units, of horizontal scrolling. This parameter m
 Specifies the amount, in device units, of vertical scrolling. This parameter must be a negative value to scroll up.
 
 *lpRect*<br/>
-Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the portion of the client area to be scrolled. If *lpRect* is NULL, the entire client area is scrolled. The caret is repositioned if the cursor rectangle intersects the scroll rectangle.
+Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that specifies the portion of the client area to be scrolled. If *lpRect* is NULL, the entire client area is scrolled. The caret is repositioned if the cursor rectangle intersects the scroll rectangle.
 
 *lpClipRect*<br/>
 Points to a `CRect` object or `RECT` structure that specifies the clipping rectangle to scroll. Only bits inside this rectangle are scrolled. Bits outside this rectangle are not affected even if they are in the *lpRect* rectangle. If *lpClipRect* is NULL, no clipping is performed on the scroll rectangle.
@@ -10192,7 +10192,7 @@ Specifies the amount, in device units, of horizontal scrolling. This parameter m
 Specifies the amount, in device units, of vertical scrolling. This parameter must have a negative value to scroll up.
 
 *lpRectScroll*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the portion of the client area to be scrolled. If this parameter is NULL, the entire client area is scrolled.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that specifies the portion of the client area to be scrolled. If this parameter is NULL, the entire client area is scrolled.
 
 *lpRectClip*<br/>
 Points to a `RECT` structure that specifies the clipping rectangle to scroll. This structure takes precedence over the rectangle pointed to by *lpRectScroll*. Only bits inside this rectangle are scrolled. Bits outside this rectangle are not affected even if they are in the *lpRectScroll* rectangle. If this parameter is NULL, no clipping is performed on the scroll rectangle.
@@ -10991,7 +10991,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT* lpwndpl);
 ### Parameters
 
 *lpwndpl*<br/>
-Points to a [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) structure that specifies the new show state and positions.
+Points to a [WINDOWPLACEMENT](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement) structure that specifies the new show state and positions.
 
 ### Return Value
 
@@ -11484,7 +11484,7 @@ void ValidateRect(LPCRECT lpRect);
 ### Parameters
 
 *lpRect*<br/>
-Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that contains client coordinates of the rectangle to be removed from the update region. If *lpRect* is NULL, the entire window is validated.
+Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that contains client coordinates of the rectangle to be removed from the update region. If *lpRect* is NULL, the entire window is validated.
 
 ### Remarks
 
@@ -11522,7 +11522,7 @@ static CWnd* PASCAL WindowFromPoint(POINT point);
 ### Parameters
 
 *point*<br/>
-Specifies a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT](../../mfc/reference/point-structure1.md) data structure that defines the point to be checked.
+Specifies a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT](/windows/desktop/api/windef/ns-windef-tagpoint) data structure that defines the point to be checked.
 
 ### Return Value
 
