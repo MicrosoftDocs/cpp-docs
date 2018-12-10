@@ -5,15 +5,7 @@ f1_keywords: ["vcbuilding", "buildingaprogramVC"]
 helpviewer_keywords: ["builds [C++]", "Visual C++ projects, building", "projects [C++], building", "builds [C++], options", "Visual C++, build options"]
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ---
-# Building C/C++ Projects
----
-title: "Building C/C++ Programs"
-ms.date: "11/27/2018"
-f1_keywords: ["vcbuilding", "buildingaprogramVC"]
-helpviewer_keywords: ["builds [C++]", "Visual C++ projects, building", "projects [C++], building", "builds [C++], options", "Visual C++, build options"]
-ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
----
-# Building C/C++ Programs
+# Building C/C++ projects
 
 In Visual Studio 2017 and later, the build system and compiler toolset are decoupled from the IDE. This means you can use Visual Studio to edit any existing code base with full IntelliSense support without having to convert that code into a Visual Studio project or use MSVC to compile it. For example, you can edit a CMake project in Visual Studio on your local machine, then compile it using g++ on a remote Linux machine.
 
@@ -58,11 +50,23 @@ You can invoke MSBuild from the command line by passing it a .vcxproj file along
 
 ## In This Section
 
-[Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)<br/>
-Discusses how to use the Visual Studio IDE to build your C/C++ project.
+[Visual Studio projects](creating-and-managing-visual-cpp-projects.md)
+How to create, configure, and build C++ projects in Visual Studio using its native build system (MSBuild).
 
-[Build C/C++ code on the command line](../build/building-on-the-command-line.md)<br/>
-Discusses how to use the C/C++ command-line compiler and build tools that are included in Visual Studio.
+[CMake projects](cmake-tools-for-visual-cpp.md)
+How to code, build, and deploy CMake projects in Visual Studio.
+
+[Open Folder projects](non-msbuild-projects.md)
+How to use Visual Studio to code, build and deploy projects based on any arbitrary build system, or no build system. at all. 
+
+[Release builds](release-builds.md)
+How to create and troubleshoot optimized release builds for deployment to end users.
+
+[Use the MSVC toolset from the command line](../build/building-on-the-command-line.md)<br/>
+Discusses how to use the C/C++ compiler and build tools directly from the command line rather than using the Visual Studio IDE.
+
+[Building DLLs in Visual Studio](dlls-in-visual-cpp.md)
+How to create, debug and deploy C/C++ DLLs (shared libraries) in Visual Studio.
 
 [Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)<br/>
 Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.
@@ -70,14 +74,7 @@ Describes the deployment model for Windows Desktop applications, based on the id
 [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md)<br/>
 Provides links to reference articles about program building in C++, compiler and linker options, and various build tools.
 
-[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
-Describes how to configure both Visual Studio and the command line to use the 64-bit toolset and how to target 64-bit architectures, and discusses common migration issues when code is moved to 64-bit architectures.
 
-[Configure Visual C++ for ARM processors](../build/configuring-programs-for-arm-processors-visual-cpp.md)<br/>
-Describes the conventions used by ARM processors, and discusses common migration issues when code is moved to ARM architectures.
-
-[Configuring Programs for Windows XP](../build/configuring-programs-for-windows-xp.md)<br/>
-Describes how to set the Platform Toolset to target Windows XP development.
 
 ## Related Sections
 
@@ -104,13 +101,8 @@ How to use the C/C++ compiler and build tools directly from the command line.
 [Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)<br/>
 Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.
 
-[Optimizing Your Code](reference/optimizing-your-code.md)
+[Optimizing Your Code](optimizing-your-code.md)
 
 [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md)<br/>
 Provides links to reference articles about program building in C++, compiler and linker options, and various build tools.
 
-
-## Related Sections
-
-[Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)<br/>
-Describes the Visual Studio build system and tools.
