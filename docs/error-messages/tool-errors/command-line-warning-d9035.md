@@ -15,7 +15,7 @@ You specified a compiler option that will be removed in a future release of the 
 
 The specified option still works, but you should update your build configuration now. As a result, your project is more likely to continue to build when you upgrade the compiler.
 
-## See Also
+## See also
 
 [Deprecated and removed compiler options](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options)<br/>
 [Command-Line Warning D9036](command-line-warning-d9036.md)
