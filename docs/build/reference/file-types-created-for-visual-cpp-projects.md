@@ -77,4 +77,4 @@ When you add an item to a project, you add the item to all configurations for th
 ## See Also
 
 [Creating and Managing Visual C++ Projects](../creating-and-managing-visual-cpp-projects.md)<br>
-[Visual C++ Project Types](../visual-cpp-project-types.md)<br>
+[Visual C++ Project Types](visual-cpp-project-types.md)<br>

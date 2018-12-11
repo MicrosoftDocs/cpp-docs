@@ -10,4 +10,4 @@ An inferred dependent is derived from an inference rule and is evaluated before 
 
 ## See Also
 
-[Dependents](reference/dependents.md)
+[Dependents](dependents.md)

@@ -30,7 +30,7 @@ Variables of the following types are tested on a 32-bit operating system as if t
 
 - pointer
 
-If you regularly compile your application by using a compiler that builds 64-bit, x64 code, you can just disable **/Wp64** in your 32-bit compilations because the 64-bit compiler will detect all issues. For more information about how to target a Windows 64-bit operating system, see [Configure Visual C++ for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md).
+If you regularly compile your application by using a compiler that builds 64-bit, x64 code, you can just disable **/Wp64** in your 32-bit compilations because the 64-bit compiler will detect all issues. For more information about how to target a Windows 64-bit operating system, see [Configure Visual C++ for 64-bit, x64 targets](../configuring-programs-for-64-bit-visual-cpp.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

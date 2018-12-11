@@ -43,4 +43,4 @@ bounce.exe : up.obj
 
 ## See Also
 
-[Targets](reference/targets.md)
+[Targets](targets.md)
