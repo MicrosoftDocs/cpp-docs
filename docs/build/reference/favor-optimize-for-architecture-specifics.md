@@ -32,7 +32,7 @@ ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
 > [!NOTE]
 > Intel64 architecture was previously known as Extended Memory 64 Technology, and the corresponding compiler option was **/favor:EM64T**.
 
-For information about how to program for the x64 architecture, see [x64 Software Conventions](../../build/x64-software-conventions.md).
+For information about how to program for the x64 architecture, see [x64 Software Conventions](../x64-software-conventions.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

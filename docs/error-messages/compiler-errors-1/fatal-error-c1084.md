@@ -17,7 +17,7 @@ Performing the following steps may help resolve C1084:
 
 - Ensure the appropriate permissions are set in order to access the specified file.
 
-- Ensure the command-line syntax adheres to the rules outlined under [Compiler Command-Line Syntax](../../build/reference/compiler-command-line-syntax.md).
+- Ensure the command-line syntax adheres to the rules outlined under [Compiler Command-Line Syntax](../../build/compiler-command-line-syntax.md).
 
 - Ensure sure the environment variables **TMP** and **TEMP** are properly set, as well as the appropriate permissions in order to access the directories these environment variables refer to. Also ensure that the drives referenced by the **TMP** and **TEMP** environment variables contain an adequate amount of free space.
 

@@ -29,7 +29,7 @@ To find a particular compiler option, see one of the following lists:
 
 The topic for each compiler option discusses how it can be set in the development environment. For information on specifying options outside the development environment, see:
 
-- [Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+- [Compiler Command-Line Syntax](../compiler-command-line-syntax.md)
 
 - [CL Command Files](../cl-command-files.md)
 
@@ -42,6 +42,5 @@ The topic for each compiler option discusses how it can be set in the developmen
 ## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [Fast Compilation](../fast-compilation.md)<br/>
 [CL Invokes the Linker](../cl-invokes-the-linker.md)

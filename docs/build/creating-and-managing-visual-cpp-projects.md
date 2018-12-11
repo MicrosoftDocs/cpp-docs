@@ -33,7 +33,7 @@ To add third-party libraries, use the [vcpkg](../vcpkg.md) package manager. Run 
 
 ## Set compiler options and other build properties
 
-To configure build settings for a project, right-click on the project in **Solution Explorer** and choose **Properties**. For more information, see [Set compiler and build properties](working-with-project-properties).
+To configure build settings for a project, right-click on the project in **Solution Explorer** and choose **Properties**. For more information, see [Set compiler and build properties](working-with-project-properties.md).
 
 ## Compile and run
 
@@ -47,7 +47,7 @@ In the Error List, you can press **F1** on a highlighted error to go to its docu
 
 ## In This Section
 
-[Visual Studio C++ project templates](visual-cpp-project-types.md)<br>
+[Visual Studio C++ project templates](reference/visual-cpp-project-types.md)<br>
 Describes the MSBuild-based project types that are available for C++.
 
 [File Types Created for C++ Projects](reference/file-types-created-for-visual-cpp-projects.md)<br>

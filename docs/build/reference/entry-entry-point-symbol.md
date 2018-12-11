@@ -36,7 +36,7 @@ The functions `main`, `WinMain`, and `DllMain` are the three forms of the user-d
 
 When creating a managed image, the function specified to /ENTRY must have a signature of (LPVOID *var1*, DWORD *var2*, LPVOID *var3*).
 
-For information on how to define your own `DllMain` entry point, see [DLLs and Visual C++ run-time library behavior](../../build/run-time-library-behavior.md) .
+For information on how to define your own `DllMain` entry point, see [DLLs and Visual C++ run-time library behavior](../run-time-library-behavior.md) .
 
 ### To set this linker option in the Visual Studio development environment
 

@@ -40,7 +40,7 @@ You can also use [pack](../../preprocessor/pack.md) to control structure packing
 
 - [__unaligned](../../cpp/unaligned.md)
 
-- [Examples of Structure Alignment](../../build/examples-of-structure-alignment.md) (x64 specific)
+- [Examples of Structure Alignment](../examples-of-structure-alignment.md) (x64 specific)
 
 ### To set this compiler option in the Visual Studio development environment
 

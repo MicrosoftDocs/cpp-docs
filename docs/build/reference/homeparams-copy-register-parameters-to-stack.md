@@ -19,7 +19,7 @@ Forces parameters passed in registers to be written to their locations on the st
 
 This compiler option is only for the x64 compilers (native and cross compile).
 
-When parameters are passed in an x64 compilation, calling conventions require stackspace for parameters, even for parameters passed in registers. For more information, see [Parameter Passing](../../build/parameter-passing.md). However, by default in a release build, the register parameters will not be written to the stack, into the space that is already provided for the parameters. This makes it difficult to debug an optimized (release) build of your program.
+When parameters are passed in an x64 compilation, calling conventions require stackspace for parameters, even for parameters passed in registers. For more information, see [Parameter Passing](parameter-passing.md). However, by default in a release build, the register parameters will not be written to the stack, into the space that is already provided for the parameters. This makes it difficult to debug an optimized (release) build of your program.
 
 For a release build, use **/homeparams** to ensure that you can debug your application. **/homeparams** does imply a performance disadvantage, because it does require a cycle to load the register parameters on to the stack.
 

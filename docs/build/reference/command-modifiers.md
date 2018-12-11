@@ -16,4 +16,4 @@ You can specify one or more command modifiers preceding a command, optionally se
 
 ## See Also
 
-[Commands in a Makefile](reference/commands-in-a-makefile.md)
+[Commands in a Makefile](commands-in-a-makefile.md)

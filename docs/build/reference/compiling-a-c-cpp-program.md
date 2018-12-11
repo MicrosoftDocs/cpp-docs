@@ -16,7 +16,7 @@ You can set compiler options for each project in its **Property Pages** dialog b
 
 You can set compiler (CL.exe) options:
 
-- [On the command line](compiler-command-line-syntax.md)
+- [On the command line](../compiler-command-line-syntax.md)
 
 - [In command files](../cl-command-files.md)
 
@@ -36,7 +36,7 @@ Compiler options are processed "left to right," and when a conflict is detected,
 
 - [CL Invokes the Linker](../cl-invokes-the-linker.md)
 
-For information on choosing the compiler host and target architecture, see [Configure Visual C++ for 64-bit, x64 targets](../../build/configuring-programs-for-64-bit-visual-cpp.md).
+For information on choosing the compiler host and target architecture, see [Configure Visual C++ for 64-bit, x64 targets](../configuring-programs-for-64-bit-visual-cpp.md).
 
 ## See Also
 

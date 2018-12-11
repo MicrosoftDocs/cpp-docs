@@ -17,7 +17,7 @@ Visual C++ provides the following command-line tools for viewing or manipulating
 
 - [DUMPBIN.EXE](dumpbin-reference.md) displays information (such as a symbol table) about COFF binary files.
 
-- [NMAKE](../../build/nmake-reference.md) reads and executes makefiles.
+- [NMAKE](nmake-reference.md) reads and executes makefiles.
 
 - [ERRLOOK](value-edit-control.md), the Error Lookup utility, retrieves a system error message or module error message based on the value entered.
 

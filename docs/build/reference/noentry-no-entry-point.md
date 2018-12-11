@@ -13,7 +13,7 @@ ms.assetid: 0214dd41-35ad-43ab-b892-e636e038621a
 
 ## Remarks
 
-The /NOENTRY option is required for creating a resource-only DLL that contains no executable code. For more information, see [Creating a Resource-Only DLL](../../build/creating-a-resource-only-dll.md).
+The /NOENTRY option is required for creating a resource-only DLL that contains no executable code. For more information, see [Creating a Resource-Only DLL](../creating-a-resource-only-dll.md).
 
 Use this option to prevent LINK from linking a reference to `_main` into the DLL.
 
@@ -33,6 +33,6 @@ Use this option to prevent LINK from linking a reference to `_main` into the DLL
 
 ## See Also
 
-[Creating a Resource-Only DLL](../../build/creating-a-resource-only-dll.md)<br/>
+[Creating a Resource-Only DLL](../creating-a-resource-only-dll.md)<br/>
 [Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

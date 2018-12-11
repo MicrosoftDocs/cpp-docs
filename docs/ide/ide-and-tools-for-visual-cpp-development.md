@@ -67,7 +67,7 @@ For more information on adding and editing resources in native desktop C++ proje
 Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
-For more information about MSBuild configurations, see [Working with Project Properties](../build/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](../build/building-cpp-projects-in-visual-studio.md).
+For more information about MSBuild configurations, see [Working with Project Properties](../build/working-with-project-properties.md).
 
 You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
@@ -111,7 +111,7 @@ For more information about deploying a C++/CLI program, see [Deployment Guide fo
 |[Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|
 |[Adding Functionality with Code Wizards (C++)](adding-functionality-with-code-wizards-cpp.md)| Add classes, files, or user interface elements to a project by using wizards to guide you.|
 |[XML Documentation (Visual C++)](../build/reference/xml-documentation-visual-cpp.md)| Create XML documentation for your APIs.|
-|[Building C++ Projects in Visual Studio](../build/building-cpp-projects-in-visual-studio.md)|How to use the Visual Studio IDE to build projects.|
+|[Building C/C++ Projects in Visual Studio](../build/building-c-cpp-programs.md)|How to use the Visual Studio IDE to build projects.|
 
 ## Related Articles
 

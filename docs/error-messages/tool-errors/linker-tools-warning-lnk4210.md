@@ -33,4 +33,4 @@ The [/GS](../../build/reference/gs-buffer-security-check.md) compiler option req
 
 ## See also
 
-- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Setting Linker Options](../../build/reference/linking.md)

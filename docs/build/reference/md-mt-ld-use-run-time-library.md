@@ -34,7 +34,7 @@ All modules passed to a given invocation of the linker must have been compiled w
 
 For more information about how to use the debug versions of the run-time libraries, see [C Run-Time Library Reference](../../c-runtime-library/c-run-time-library-reference.md).
 
-For more about DLLs, see [DLLs in Visual C++](../../build/dlls-in-visual-cpp.md).
+For more about DLLs, see [DLLs in Visual C++](../dlls-in-visual-cpp.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

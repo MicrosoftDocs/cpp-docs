@@ -38,4 +38,4 @@ Response files and DEF files can be either UTF-16 with a BOM, or ANSI.
 
 ## See also
 
-[Build C/C++ code on the command line](../../build/building-on-the-command-line.md)
+[Build C/C++ code on the command line](../building-on-the-command-line.md)

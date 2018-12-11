@@ -8,8 +8,6 @@ ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
 
 In the IDE, all information that is needed to build a project is exposed as *properties*. This information includes the application name, extension (such as DLL, LIB, EXE), compiler options, linker options, debugger settings, custom build steps, and many other things. Typically, you use *property pages* ( **Project &#124; Properties**) to view and modify these properties. To access the property pages, choose **Project > \<project name> Properties** from the main menu, or right-click on the project node in **Solution Explorer** and choose **Properties**.
 
-![Visual Studio Project Properties](media/vs2017-project-props.png "C++ project properties")
-
 ## Default properties
 
 When you create a project, the system assigns values for various properties. The defaults vary somewhat depending on the kind of project and what options you choose in the app wizard. For example, an ATL project has properties related to MIDL files, but these are absent in a basic console application. The default properties are shown in the General pane in the Property Pages:
@@ -46,15 +44,15 @@ For more information about setting properties for a Debug build, see:
 
 C++ compiler and linker options are located under the **C/C++** and **Linker** nodes in the left pane under **Configuration Properties**. These translate directly to command-line options that will be passed to the compiler. To read documentation about a specific option, select the option in the center pane and press **F1**. Or, you can browse documentation for all the options at [Compiler Options](reference/compiler-options.md) and [Linker Options](reference/linker-options.md). 
 
-The **Property Pages** dialog box shows only the property pages that are relevant to the current project. For example, if the project does not have an .idl file, the MIDL property page is not displayed. For more information about the setting on each property pages, see [Property Pages (C++)](property-pages-visual-cpp.md). 
+The **Property Pages** dialog box shows only the property pages that are relevant to the current project. For example, if the project does not have an .idl file, the MIDL property page is not displayed. For more information about the setting on each property pages, see [Property Pages (C++)](reference/property-pages-visual-cpp.md). 
 
 ## Directory and path values
 
 MSBuild supports the use of compile-time constants called "macros" for certain string values include directories and paths. These are exposed in the property pages, where you can refer to and modify them by using the [Property Editor](#property_editor). 
 
-The following illustration shows the property pages for a Visual C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](../ide/project-property-inheritance.md). 
+The following illustration shows the property pages for a Visual C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](project-property-inheritance.md). 
 
-![Project property pages](project_property_pages_vc.png "Project_Property_Pages_VC")
+![Project property pages](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
 You can use the Property Editor to view the values of all available macros. Macros are discussed in the [Property page macros](#bkmkPropertiesVersusMacros) section later in this article.)
 
@@ -84,7 +82,7 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 You can use the Property Editor to modify certain string properties and select macros as values. To access the Property Editor, select a property on a property page and then choose the down arrow button on the right. If the drop-down list contains **\<Edit>**, then you can choose it to display the Property Editor for that property.
 
-![Property&#95;Editor&#95;Dropdown](property_editor_dropdown.png "Property_Editor_Dropdown")
+![Property&#95;Editor&#95;Dropdown](media/property_editor_dropdown.png "Property_Editor_Dropdown")
 
 In the Property Editor, you can choose the **Macros** button to view the available macros and their current values. The following illustration shows the Property Editor for the **Additional Include Directories** property after the **Macros** button was chosen. When the **Inherit from parent or project defaults** check box is selected and you add a new value, it is appended to any values that are currently being inherited. If you clear the check box, your new value replaces the inherited values. In most cases, leave the check box selected.
 
@@ -109,7 +107,7 @@ Search only in values (case-insensitive substring).
 
 ## Set environment variables for a build
 
-The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the [VC++ Directories Property Page](vcpp-directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says **Set this macro as an environment variable in the build environment**.
+The Visual C++ compiler (cl.exe) recognizes certain environment variables, specifically LIB, LIBPATH, PATH, and INCLUDE. When you build with the IDE, the properties that are set in the [VC++ Directories Property Page](reference/vcpp-directories-property-page.md) property page are used to set those environment variables. If LIB, LIBPATH, and INCLUDE values have already been set, for example by a Developer Command Prompt, they are replaced with the values of the corresponding MSBuild properties. The build then prepends the value of the VC++ Directories executable directories property to PATH. You can set a user-defined environment variable by created a user-defined macro and then checking the box that says **Set this macro as an environment variable in the build environment**.
 
 ## Set environment variables for a debugging session
 

@@ -36,5 +36,5 @@ To access this property page dialog box, open the property pages for your projec
 
 [Isolated Applications](/windows/desktop/SbsCs/isolated-applications)<br>
 [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br>
-[Manifest Tool Property Pages](manifest-tool-property-pages.md)<br>
-[Working with Project Properties](../working-with-project-properties.md)
+[Manifest Tool Property Pages](reference/manifest-tool-property-pages.md)<br>
+[Working with Project Properties](working-with-project-properties.md)

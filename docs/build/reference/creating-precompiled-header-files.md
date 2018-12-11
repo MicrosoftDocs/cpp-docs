@@ -38,7 +38,7 @@ Precompiling requires planning, but it offers significantly faster compilations 
 
 Precompile code when you know that your source files use common sets of header files but don't include them in the same order, or when you want to include source code in your precompilation.
 
-The precompiled-header options are [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) and [/Yu (Use Precompiled Header File)](../../build/reference/yu-use-precompiled-header-file.md). Use **/Yc** to create a precompiled header. When used with the optional [hdrstop](../../preprocessor/hdrstop.md) pragma, **/Yc** lets you precompile both header files and source code. Select **/Yu** to use an existing precompiled header in the existing compilation. You can also use **/Fp** with the **/Yc** and **/Yu** options to provide an alternative name for the precompiled header.
+The precompiled-header options are [/Yc (Create Precompiled Header File)](yc-create-precompiled-header-file.md) and [/Yu (Use Precompiled Header File)](yu-use-precompiled-header-file.md). Use **/Yc** to create a precompiled header. When used with the optional [hdrstop](../../preprocessor/hdrstop.md) pragma, **/Yc** lets you precompile both header files and source code. Select **/Yu** to use an existing precompiled header in the existing compilation. You can also use **/Fp** with the **/Yc** and **/Yu** options to provide an alternative name for the precompiled header.
 
 The compiler option reference topics for **/Yu** and **/Yc** discuss how to access this functionality in the development environment.
 
@@ -48,7 +48,7 @@ Because PCH files contain information about the machine environment as well as m
 
 ## Consistency Rules for Per-File Use of Precompiled Headers
 
-The [/Yu](../../build/reference/yu-use-precompiled-header-file.md) compiler option lets you specify which PCH file to use.
+The [/Yu](yu-use-precompiled-header-file.md) compiler option lets you specify which PCH file to use.
 
 When you use a PCH file, the compiler assumes the same compilation environment — one that uses consistent compiler options, pragmas, and so on — that was in effect when you created the PCH file, unless you specify otherwise. If the compiler detects an inconsistency, it issues a warning and identifies the inconsistency where possible. Such warnings do not necessarily indicate a problem with the PCH file; they simply warn you of possible conflicts. Consistency requirements for PCH files are described in the following sections.
 
@@ -130,7 +130,7 @@ The code base of a software project is usually contained in multiple C or C++ so
 
 The figure uses three diagrammatic devices to show the flow of the build process. Named rectangles represent each file or macro; the three macros represent one or more files. Shaded areas represent each compile or link action. Arrows show which files and macros are combined during the compilation or linking process.
 
-![Structure of a makefile that uses a precompiled header file](../../build/reference/media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
+![Structure of a makefile that uses a precompiled header file](media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
 Structure of a Makefile That Uses a Precompiled Header File
 
 Beginning at the top of the diagram, both STABLEHDRS and BOUNDRY are NMAKE macros in which you list files not likely to need recompilation. These files are compiled by the command string
@@ -210,7 +210,7 @@ NMAKE
 NMAKE DEBUG=0
 ```
 
-For more information on makefiles, see [NMAKE Reference](../../build/nmake-reference.md). Also see [Compiler Options](../../build/reference/compiler-options.md) and the [Linker Options](../../build/reference/linker-options.md).
+For more information on makefiles, see [NMAKE Reference](nmake-reference.md). Also see [Compiler Options](compiler-options.md) and the [Linker Options](linker-options.md).
 
 ## Example Code for PCH
 
@@ -298,5 +298,5 @@ int main( void )
 
 ## See Also
 
-[C/C++ Building Reference](../../build/c-cpp-building-reference.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)
+[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
+[Compiler Options](compiler-options.md)
