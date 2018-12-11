@@ -13,7 +13,7 @@ The label is defined but never referenced. The compiler ignores the label.
 
 The following sample generates C4102:
 
-```
+```cpp
 // C4102.cpp
 // compile with: /W3
 int main() {

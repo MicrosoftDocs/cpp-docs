@@ -15,7 +15,7 @@ If you get C4390 because of a macro, you should use the [warning](../../preproce
 
 The following sample generates C4390:
 
-```
+```cpp
 // C4390.cpp
 // compile with: /W3
 int main() {

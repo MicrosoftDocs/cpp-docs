@@ -13,7 +13,7 @@ Your code allows **operator->** to call itself.
 
 The following sample generates C4281:
 
-```
+```cpp
 // C4281.cpp
 // compile with: /W3 /WX
 struct A;

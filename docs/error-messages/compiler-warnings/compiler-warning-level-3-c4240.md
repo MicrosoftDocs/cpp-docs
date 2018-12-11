@@ -13,7 +13,7 @@ Under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-ext
 
 ## Example
 
-```
+```cpp
 // C4240.cpp
 // compile with: /W3
 class X
