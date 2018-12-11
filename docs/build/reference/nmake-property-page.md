@@ -62,4 +62,3 @@ For information about how to programmatically access members of this object, see
 ## See Also
 
 [Property Pages](property-pages-visual-cpp.md)<br>
-[How to: Enable IntelliSense for Makefile Projects](../how-to-enable-intellisense-for-makefile-projects.md)

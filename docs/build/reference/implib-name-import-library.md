@@ -42,5 +42,5 @@ LINK ignores /IMPLIB when an import library is not being created. If no exports 
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

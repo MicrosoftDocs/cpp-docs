@@ -40,5 +40,5 @@ This option the default base name for a .mapfile or import library. For details,
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

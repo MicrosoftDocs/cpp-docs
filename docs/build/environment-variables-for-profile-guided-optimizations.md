@@ -14,7 +14,7 @@ There are three environment variables that affect test scenarios on an image cre
 
 - **VCPROFILE_PATH** lets you specify the folder used for .pgc files.
 
-**The PogoSafeMode and VCPROFILE_ALLOC_SCALE environment variables are deprecated starting in Visual Studio 2015.** The linker options [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) and  [/USEPROFILE](useprofile.md) specify the same linker behavior as these environment variables.
+**The PogoSafeMode and VCPROFILE_ALLOC_SCALE environment variables are deprecated starting in Visual Studio 2015.** The linker options [/GENPROFILE or /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) and  [/USEPROFILE](reference/useprofile.md) specify the same linker behavior as these environment variables.
 
 ## PogoSafeMode
 
@@ -63,5 +63,5 @@ Set the *path* parameter to the directory path in which to add .pgc files. For e
 ## See also
 
 [Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
-[/GENPROFILE and /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
-[/USEPROFILE](useprofile.md)<br/>
+[/GENPROFILE and /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
+[/USEPROFILE](reference/useprofile.md)<br/>

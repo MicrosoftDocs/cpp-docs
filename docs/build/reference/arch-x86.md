@@ -76,4 +76,4 @@ r = t + d;     // This should produce the same overall result
 
 [/arch (Minimum CPU Architecture)](arch-minimum-cpu-architecture.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

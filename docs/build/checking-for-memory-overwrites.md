@@ -12,7 +12,7 @@ If you get an access violation on a call to a heap manipulation function, it is 
 Access Violation in _searchseg
 ```
 
-The [_heapchk](../../c-runtime-library/reference/heapchk.md) function is available in both debug and release builds (Windows NT only) for verifying the integrity of the run time library heap. You can use `_heapchk` in much the same way as the `AfxCheckMemory` function to isolate a heap overwrite, for example:
+The [_heapchk](../c-runtime-library/reference/heapchk.md) function is available in both debug and release builds (Windows NT only) for verifying the integrity of the run time library heap. You can use `_heapchk` in much the same way as the `AfxCheckMemory` function to isolate a heap overwrite, for example:
 
 ```
 if(_heapchk()!=_HEAPOK)

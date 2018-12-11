@@ -42,4 +42,4 @@ For more information, see [Introducing /Gw Compiler Switch](http://blogs.msdn.co
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

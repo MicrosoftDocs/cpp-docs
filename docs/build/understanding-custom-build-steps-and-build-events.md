@@ -52,5 +52,5 @@ The `custom build step on the project` and a `post-build event` run sequentially
 
 ## See Also
 
-[Building C++ Projects in Visual Studio](building-cpp-projects-in-visual-studio.md)<br>
+[Building C++ Projects in Visual Studio](creating-and-managing-visual-cpp-projects.md)<br>
 [Common Macros for Build Commands and Properties](reference/common-macros-for-build-commands-and-properties.md)

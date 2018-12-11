@@ -39,5 +39,5 @@ For information about how to determine the CLR image type of a file, see [/CLRHE
 
 ## See also
 
-- [Setting Linker Options](setting-linker-options.md)
+- [Setting Linker Options](linking.md)
 - [Linker Options](linker-options.md)

@@ -51,5 +51,5 @@ You also use [intrinsic](../../preprocessor/intrinsic.md) to create intrinsic fu
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)

@@ -68,6 +68,6 @@ The build system for C++ was significantly changed between Visual Studio 2008 an
 
 ## See also
 
-- [Building C++ Projects in Visual Studio](../building-cpp-projects-in-visual-studio.md)
+- [Building C++ Projects in Visual Studio](../creating-and-managing-visual-cpp-projects.md)
 - [Visual C++ porting and upgrading guide](../../porting/visual-cpp-porting-and-upgrading-guide.md)
 - [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)

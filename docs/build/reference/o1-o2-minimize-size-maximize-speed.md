@@ -45,5 +45,5 @@ The **/O1** and **/O2** compiler options are a quick way to set several specific
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [/EH (Exception Handling Model)](eh-exception-handling-model.md)

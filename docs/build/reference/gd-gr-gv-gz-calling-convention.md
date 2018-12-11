@@ -89,4 +89,4 @@ For C, the `__vectorcall` naming convention uses the function name followed by t
 ## See also
 
 - [Compiler Options](compiler-options.md)
-- [Setting Compiler Options](setting-compiler-options.md)
+- [Compiler Command Line Syntax](../compiler-command-line-syntax.md)

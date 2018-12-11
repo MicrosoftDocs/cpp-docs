@@ -28,5 +28,5 @@ Resembles the [/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

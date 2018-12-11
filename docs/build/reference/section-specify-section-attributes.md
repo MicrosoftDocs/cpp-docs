@@ -80,5 +80,5 @@ The **ALIGN=**_number_ argument lets you specify an alignment value for a partic
 
 ## See also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

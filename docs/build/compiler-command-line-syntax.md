@@ -16,11 +16,11 @@ The following table describes input to the CL command.
 
 |Entry|Meaning|
 |-----------|-------------|
-|*option*|One or more [CL options](compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (-). If an option takes an argument, the option's description documents whether a space is allowed between the option and the arguments. Option names (except for the /HELP option) are case sensitive. See [Order of CL Options](order-of-cl-options.md) for more information.|
+|*option*|One or more [CL options](reference/compiler-options.md). Note that all options apply to all specified source files. Options are specified by either a forward slash (/) or a dash (-). If an option takes an argument, the option's description documents whether a space is allowed between the option and the arguments. Option names (except for the /HELP option) are case sensitive. See [Order of CL Options](order-of-cl-options.md) for more information.|
 |`file`|The name of one or more source files, .obj files, or libraries. CL compiles source files and passes the names of the .obj files and libraries to the linker. See [CL Filename Syntax](cl-filename-syntax.md) for more information.|
 |*lib*|One or more library names. CL passes these names to the linker.|
 |*command-file*|A file that contains multiple options and filenames. See [CL Command Files](cl-command-files.md) for more information.|
-|*link-opt*|One or more [linker options](linker-options.md). CL passes these options to the linker.|
+|*link-opt*|One or more [linker options](reference/linker-options.md). CL passes these options to the linker.|
 
 You can specify any number of options, filenames, and library names, as long as the number of characters on the command line does not exceed 1024, the limit dictated by the operating system.
 
@@ -31,5 +31,4 @@ For information about the return value of cl.exe, see [Return Value of cl.exe](r
 
 ## See Also
 
-[Setting Compiler Options](setting-compiler-options.md)<br/>
-[Compiler Options](compiler-options.md)
+[Compiler Options](reference/compiler-options.md)

@@ -22,14 +22,14 @@ Used in profile-guided optimization to write all profile data from a running pro
 - **/noreset** preserves the count in the runtime data structures.
 
 *image*<br/>
-The full path of an .exe or .dll file that was created by using the [/GENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md), [/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md), or [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) option.
+The full path of an .exe or .dll file that was created by using the [/GENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md), [/FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md), or [/LTCG:PGINSTRUMENT](reference/ltcg-link-time-code-generation.md) option.
 
 *pgcfile*<br/>
 The .pgc file where this command writes out the data counts.
 
 ## Remarks
 
-The **pgosweep** command works on programs that were built by using the [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) option, or the deprecated [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) option. It interrupts a running program and writes the profile data to a new .pgc file. By default, the command resets counts after each write operation. If you specify the **/noreset** option, the command will record the values, but not reset them in the running program. This option gives you duplicate data if you retrieve the profile data later.
+The **pgosweep** command works on programs that were built by using the [/GENPROFILE or /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) option, or the deprecated [/LTCG:PGINSTRUMENT](reference/ltcg-link-time-code-generation.md) option. It interrupts a running program and writes the profile data to a new .pgc file. By default, the command resets counts after each write operation. If you specify the **/noreset** option, the command will record the values, but not reset them in the running program. This option gives you duplicate data if you retrieve the profile data later.
 
 An alternative use for **pgosweep** is to retrieve profile information just for the normal operation of the application. For example, you could run **pgosweep** shortly after you start the application and discard that file. This would remove profile data associated with startup costs. Then, you can run **pgosweep** before ending the application. Now the collected data has profile information only from the time the user could interact with the program.
 

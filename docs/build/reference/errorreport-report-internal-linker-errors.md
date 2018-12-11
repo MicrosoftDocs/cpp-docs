@@ -44,5 +44,5 @@ The option **/errorreport:send** automatically sends error information to Micros
 ## See also
 
 [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md)<br/>
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

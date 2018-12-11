@@ -159,4 +159,4 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

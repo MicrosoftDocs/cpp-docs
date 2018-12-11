@@ -72,5 +72,5 @@ Additionally, LINK performs a full link if any of the following situations occur
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

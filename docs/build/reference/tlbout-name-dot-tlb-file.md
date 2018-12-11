@@ -43,7 +43,7 @@ If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](idlo
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)<br/>
 [/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
 [/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>

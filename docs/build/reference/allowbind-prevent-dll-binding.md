@@ -31,7 +31,7 @@ You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)<br/>
 [BindImage function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)<br/>
 [BindImageEx function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)

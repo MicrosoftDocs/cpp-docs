@@ -32,5 +32,5 @@ The /GUARD:CF option must be specified to both the compiler and linker to create
 ## See Also
 
 [/guard (Enable Control Flow Guard)](guard-enable-control-flow-guard.md)<br/>
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

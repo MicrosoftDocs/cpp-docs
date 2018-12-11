@@ -16,15 +16,15 @@ Visual C++ supports *profile-guided optimization* (PGO). This optimization uses 
 
 In addition, *Whole Program Optimization* (also knows as Link Time Code Generation) and the **/O1** and **/O2** optimizations have been improved. In general, an application compiled with one of these options will be faster than the same application compiled with an earlier compiler.
 
-For more information, see [/GL (Whole Program Optimization)](gl-whole-program-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md).
+For more information, see [/GL (Whole Program Optimization)](reference/gl-whole-program-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](reference/o1-o2-minimize-size-maximize-speed.md).
 
 ### Which level of optimization to use
 
 If at all possible, final release builds should be compiled with Profile Guided Optimizations. If it is not possible to build with PGO, whether due to insufficient infrastructure for running the instrumented builds or not having access to scenarios, then we suggest building with Whole Program Optimization.
 
-The **/Gy** switch is also very useful. It generates a separate COMDAT for each function, giving the linker more flexibility when it comes to removing unreferenced COMDATs and COMDAT folding. The only downside to using **/Gy** is that it can cause issues when debugging. Therefore, it is generally recommended to use it. For more information, see [/Gy (Enable Function-Level Linking)](gy-enable-function-level-linking.md).
+The **/Gy** switch is also very useful. It generates a separate COMDAT for each function, giving the linker more flexibility when it comes to removing unreferenced COMDATs and COMDAT folding. The only downside to using **/Gy** is that it can cause issues when debugging. Therefore, it is generally recommended to use it. For more information, see [/Gy (Enable Function-Level Linking)](reference/gy-enable-function-level-linking.md).
 
-For linking in 64-bit environments, it is recommended to use the **/OPT:REF,ICF** linker option, and in 32-bit environments, **/OPT:REF** is recommended. For more information, see [/OPT (Optimizations)](opt-optimizations.md).
+For linking in 64-bit environments, it is recommended to use the **/OPT:REF,ICF** linker option, and in 32-bit environments, **/OPT:REF** is recommended. For more information, see [/OPT (Optimizations)](reference/opt-optimizations.md).
 
 It is also strongly recommended to generate debug symbols, even with optimized release builds. It doesn’t effect the generated code, and it makes it a lot easier to debug your application, if need be.
 
@@ -39,7 +39,7 @@ The **/Op** compiler option has been removed, and the following four compiler op
 |**/fp:strict**|Recommended if precise floating-point exceptions and IEEE behavior is desired. This will result in the slowest performance.|
 |**/fp:except[-]**|Can be used in conjunction with **/fp:strict** or **/fp:precise**, but not **/fp:fast**.|
 
-For more information, see [/fp (Specify Floating-Point Behavior)](fp-specify-floating-point-behavior.md).
+For more information, see [/fp (Specify Floating-Point Behavior)](reference/fp-specify-floating-point-behavior.md).
 
 ## Optimization declspecs
 
@@ -53,11 +53,11 @@ The `restrict` declspec gives the compiler more information for performing compi
 
 It is worth pointing out that this is a promise to the compiler, not something that the compiler will verify. If your program uses this `restrict` declspec inappropriately, your program may have incorrect behavior.
 
-For more information, see [restrict](../../cpp/restrict.md).
+For more information, see [restrict](../cpp/restrict.md).
 
 The `noalias` declspec is also applied only to functions, and indicates that the function is a semi-pure function. A semi-pure function is one that references or modifies only locals, arguments, and first-level indirections of arguments. This declspec is a promise to the compiler, and if the function references globals or second-level indirections of pointer arguments then the compiler may generate code that breaks the application.
 
-For more information, see [noalias](../../cpp/noalias.md).
+For more information, see [noalias](../cpp/noalias.md).
 
 ## Optimization pragmas
 
@@ -75,17 +75,17 @@ int myFunc() {...}
 #pragma optimize("", on)
 ```
 
-For more information, see [optimize](../../preprocessor/optimize.md).
+For more information, see [optimize](../preprocessor/optimize.md).
 
 Inlining is one of the most important optimizations that the compiler performs and here we talk about a couple of the pragmas that help modify this behavior.
 
-`#pragma inline_recursion` is useful for specifying whether or not you want the application to be able to inline a recursive call. By default it is off. For shallow recursion of small functions you may to turn this on. For more information, see [inline_recursion](../../preprocessor/inline-recursion.md).
+`#pragma inline_recursion` is useful for specifying whether or not you want the application to be able to inline a recursive call. By default it is off. For shallow recursion of small functions you may to turn this on. For more information, see [inline_recursion](../preprocessor/inline-recursion.md).
 
-Another useful pragma for limiting the depth of inlining is `#pragma inline_depth`. This is typically useful in situations where you’re trying to limit the size of a program or function. For more information, see [inline_depth](../../preprocessor/inline-depth.md).
+Another useful pragma for limiting the depth of inlining is `#pragma inline_depth`. This is typically useful in situations where you’re trying to limit the size of a program or function. For more information, see [inline_depth](../preprocessor/inline-depth.md).
 
 ## __restrict and \__assume
 
-There are a couple of keywords in Visual C++ that can help performance: [__restrict](../../cpp/extension-restrict.md) and [__assume](../../intrinsics/assume.md).
+There are a couple of keywords in Visual C++ that can help performance: [__restrict](../cpp/extension-restrict.md) and [__assume](../intrinsics/assume.md).
 
 First, it should be noted that `__restrict` and `__declspec(restrict)` are two different things. While they are somewhat related, their semantics are different. `__restrict` is a type qualifier, like `const` or `volatile`, but exclusively for pointer types.
 
@@ -113,13 +113,13 @@ Intrinsics give the programmer the ability to go deep into the code without havi
 
 - Your code gets the benefit of compiler optimizations. As the compiler gets better, the code generation for the intrinsics improves.
 
-For more information, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md).
+For more information, see [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md).
 
 ## Exceptions
 
 There is a performance hit associated with using exceptions. Some restrictions are introduced when using try blocks that inhibit the compiler from performing certain optimizations. On x86 platforms there is additional performance degradation from try blocks due to additional state information that must be generated during code execution. On the 64-bit platforms, try blocks do not degrade performance as much, but once an exception is thrown, the process of finding the handler and unwinding the stack can be expensive.
 
-Therefore, it is recommended to avoid introducing try/catch blocks into code that does not really need it. If you must use exceptions, use synchronous exceptions if possible. For more information, see [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md).
+Therefore, it is recommended to avoid introducing try/catch blocks into code that does not really need it. If you must use exceptions, use synchronous exceptions if possible. For more information, see [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md).
 
 Lastly, throw exceptions for exceptional cases only. Using exceptions for general control flow will likely make performance suffer.
 

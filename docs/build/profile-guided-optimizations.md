@@ -11,17 +11,17 @@ Profile-guided optimization lets you optimize an output file, where the optimize
 Profile-guided optimizations are only available for x86 or x64 native targets. Profile-guided optimizations are not available for output files that run on the common language runtime. Even if you produce an assembly with mixed native and managed code (by using the **/clr** compiler option), you cannot use profile-guided optimization on just the native code. If you attempt to build a project with these options set in the IDE, a build error results.
 
 > [!NOTE]
-> Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [/Ob (Inline Function Expansion)](ob-inline-function-expansion.md) and [/Os, /Ot (Favor Small Code, Favor Fast Code)](os-ot-favor-small-code-favor-fast-code.md).
+> Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [/Ob (Inline Function Expansion)](reference/ob-inline-function-expansion.md) and [/Os, /Ot (Favor Small Code, Favor Fast Code)](reference/os-ot-favor-small-code-favor-fast-code.md).
 
 ## Steps to optimize your app
 
 To use profile-guided optimization, follow these steps to optimize your app:
 
-- Compile one or more source code files with [/GL](gl-whole-program-optimization.md).
+- Compile one or more source code files with [/GL](reference/gl-whole-program-optimization.md).
 
    Each module built with **/GL** can be examined during profile-guided optimization test runs to capture run-time behavior. Every module in a profile-guided optimization build does not have to be compiled with **/GL**. However, only those modules compiled with **/GL** are instrumented and later available for profile-guided optimizations.
 
-- Link using [/LTCG](ltcg-link-time-code-generation.md) and [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md).
+- Link using [/LTCG](reference/ltcg-link-time-code-generation.md) and [/GENPROFILE or /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md).
 
    Using both **/LTCG** and **/GENPROFILE** or **/FASTGENPROFILE** creates a .pgd file when the instrumented app is run. After test-run data is added to the .pgd file, it can be used as input to the next link step (creating the optimized image). When specifying **/GENPROFILE**, you can optionally add a **PGD=**_filename_ argument to specify a nondefault name or location for the .pgd file. The combination of **/LTCG** and **/GENPROFILE** or **/FASTGENPROFILE** linker options replaces the deprecated **/LTCG:PGINSTRUMENT** linker option.
 
@@ -37,7 +37,7 @@ To use profile-guided optimization, follow these steps to optimize your app:
 
 - Link using **/LTCG** and **/USEPROFILE**.
 
-   Use both the **/LTCG** and [/USEPROFILE](useprofile.md) linker options to create the optimized image. This step takes as input the .pgd file. When you specify **/USEPROFILE**, you can optionally add a **PGD=**_filename_ argument to specify a non-default name or location for the .pgd file. You can also specify this name by using the deprecated **/PGD** linker option. The combination of **/LTCG** and **/USEPROFILE** replaces the deprecated **/LTCG:PGOPTIMIZE** and **/LTCG:PGUPDATE** linker options.
+   Use both the **/LTCG** and [/USEPROFILE](reference/useprofile.md) linker options to create the optimized image. This step takes as input the .pgd file. When you specify **/USEPROFILE**, you can optionally add a **PGD=**_filename_ argument to specify a non-default name or location for the .pgd file. You can also specify this name by using the deprecated **/PGD** linker option. The combination of **/LTCG** and **/USEPROFILE** replaces the deprecated **/LTCG:PGOPTIMIZE** and **/LTCG:PGUPDATE** linker options.
 
 It is even possible to create the optimized output file and later determine that additional profiling would be useful to create a more optimized image. If the instrumented image and its .pgd file are available, you can do additional test runs and rebuild the optimized image with the newer .pgd file, by using the same **/LTCG** and **/USEPROFILE** linker options.
 
@@ -88,4 +88,4 @@ Examples of **pgomgr** usage.
 
 ## See also
 
-[C/C++ Build Tools](c-cpp-build-tools.md)
+[C/C++ Build Tools](reference/c-cpp-build-tools.md)

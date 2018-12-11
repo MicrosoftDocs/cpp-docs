@@ -37,5 +37,5 @@ Specify /FIXED:NO to generate a relocation section in the program.
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

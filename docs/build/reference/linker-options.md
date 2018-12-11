@@ -126,4 +126,4 @@ For more information, see [Compiler-Controlled LINK Options](compiler-controlled
 ## See Also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Setting Linker Options](setting-linker-options.md)
+[Setting Linker Options](linking.md)

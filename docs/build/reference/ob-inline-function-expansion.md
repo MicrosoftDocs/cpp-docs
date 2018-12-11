@@ -35,7 +35,7 @@ The compiler treats the inline expansion options and keywords as suggestions. Th
 You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) directive to exclude functions from consideration as candidates for inline expansion. Also see the `#pragma` [intrinsic](../../preprocessor/intrinsic.md) directive.
 
 > [!NOTE]
-> Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [Profile-Guided Optimizations](profile-guided-optimizations.md).
+> Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -53,4 +53,4 @@ You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) direc
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

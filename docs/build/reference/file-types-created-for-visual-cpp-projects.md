@@ -1,4 +1,4 @@
----
+f---
 title: "File Types Created for Visual C++ Projects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header files [C++], Visual C++ projects", "ActiveX controls [C++], Help files", "def files", "project items [C++], files", "Visual C++ projects, files and directories", "resource files, created by wizard", "files [C++], extensions", "Help files, for ActiveX controls", "Web projects [C++], adding items", ".def files", "licensing ActiveX controls"]
@@ -16,7 +16,7 @@ This topic describes all the types of files that are associated with Visual C++ 
 
 - [MFC Program or Control Source and Header Files](mfc-program-or-control-source-and-header-files.md)
 
-- [Precompiled Header Files](precompiled-header-files.md)
+- [Precompiled Header Files](creating-precompiled-header-files.md)
 
 - [Resource Files](resource-files-cpp.md)
 

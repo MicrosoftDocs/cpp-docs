@@ -24,7 +24,7 @@ When using the deprecated [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md
 
 When using the deprecated **/LTCG:PGOPTIMIZE** option, use the **/PGD** option to specify the name of the .pgd file to use to create the optimized image. The *filename* argument should match the *filename* specified to **/LTCG:PGINSTRUMENT**.
 
-For more information, see [Profile Guided Optimization](profile-guided-optimizations.md).
+For more information, see [Profile Guided Optimization](../profile-guided-optimizations.md).
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -40,5 +40,5 @@ For more information, see [Profile Guided Optimization](profile-guided-optimizat
 
 ## See also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)<br/>

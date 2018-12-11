@@ -34,5 +34,5 @@ Use this option to prevent LINK from linking a reference to `_main` into the DLL
 ## See Also
 
 [Creating a Resource-Only DLL](../../build/creating-a-resource-only-dll.md)<br/>
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

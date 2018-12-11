@@ -14,11 +14,11 @@ Linker options can be set inside or outside of Visual Studio. Within Visual Stud
 
 When you run LINK outside of Visual Studio, you can specify input in one or more ways:
 
-- On the [command line](linker-command-line-syntax.md)
+- On the command line
 
-- Using [command files](link-command-files.md)
+- Using command files
 
-- In [environment variables](link-environment-variables.md)
+- In environment variables
 
 LINK first processes options specified in the LINK environment variable, followed by options in the order they are specified on the command line and in command files. If an option is repeated with different arguments, the last one processed takes precedence.
 
@@ -34,6 +34,8 @@ The `arguments` include options and filenames and can be specified in any order.
 
 > [!NOTE]
 >  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.
+
+## Command line
 
 On the command line, an option consists of an option specifier, either a dash (-) or a forward slash (/), followed by the name of the option. Option names cannot be abbreviated. Some options take an argument, specified after a colon (:). No spaces or tabs are allowed within an option specification, except within a quoted string in the /COMMENT option. Specify numeric arguments in decimal or C-language notation. Option names and their keyword or filename arguments are not case sensitive, but identifiers as arguments are case sensitive.
 

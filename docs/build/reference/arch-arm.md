@@ -45,4 +45,4 @@ When you use [/clr](clr-common-language-runtime-compilation.md) to compile, **/a
 
 [/arch (Minimum CPU Architecture)](arch-minimum-cpu-architecture.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

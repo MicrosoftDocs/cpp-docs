@@ -28,7 +28,7 @@ cl /EHsc hello.cpp
 ```
 Note that here the compiler (cl.exe) automatically invokes the C++ preprocessor and the linker to produce the final output file. 
 
-The MSVC compiler, linker, C++ standard libraries, and related utilities comprise the MSCV toolset. You can download and use the toolset as a standalone package for free from the [MSVC compiler tools download location](). For more information, see [Building from the command line](building-from-the-command-line.md).
+The MSVC compiler, linker, C++ standard libraries, and related utilities comprise the MSCV toolset. You can download and use the toolset as a standalone package for free from the [MSVC compiler tools download location](). For more information, see [Building on the command line](building-on-the-command-line.md).
 
 ## Build systems and projects
 
@@ -83,7 +83,7 @@ Describes the Visual Studio build system and tools.
 
 You can build C++ projects either in Visual Studio or on the command line. The Visual Studio IDE has built-in support for the default project system, [MSBuild](msbuild-visual-cpp.md), as well as for CMake. IDE integration with any other build system is enabled through JSON configuration files.
 
-On the command line, you can use the C/C++ compiler (cl.exe) and linker (link.exe) to build simple projects. To build more complex projects on the command line, you can use MSBuild or [NMAKE](nmake-reference.md). 
+On the command line, you can use the C/C++ compiler (cl.exe) and linker (link.exe) to build simple projects. To build more complex projects on the command line, you can use MSBuild or [NMAKE](reference/nmake-reference.md). 
 
 For an overview about how to use Visual Studio to build projects and solutions, see [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio).
 

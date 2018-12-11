@@ -53,6 +53,6 @@ This wizard page describes the current application settings for the MFC ActiveX 
 ## See Also
 
 [Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ Project Types](../../build/visual-cpp-project-types.md)<br/>
+[Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)<br/>
 [Concepts](../../atl/active-template-library-atl-concepts.md)
 

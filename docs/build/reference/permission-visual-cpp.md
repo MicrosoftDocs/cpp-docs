@@ -22,7 +22,7 @@ A reference to a member or field that is available to be called from the current
 
 The compiler issues a warning if it does not find `member`.
 
-For information on how to create a cref reference to a generic type, see [\<see>](../ide/see-visual-cpp.md).
+For information on how to create a cref reference to a generic type, see [\<see>](see-visual-cpp.md).
 
 *description*<br/>
 A description of the access to the member.

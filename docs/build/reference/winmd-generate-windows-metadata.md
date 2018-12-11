@@ -43,5 +43,5 @@ By default, the output file name has the form *binaryname*.winmd. To specify a d
 [/WINMDKEYFILE (Specify winmd Key File)](winmdkeyfile-specify-winmd-key-file.md)<br/>
 [/WINMDKEYCONTAINER (Specify Key Container)](winmdkeycontainer-specify-key-container.md)<br/>
 [/WINMDDELAYSIGN (Partially Sign a winmd)](winmddelaysign-partially-sign-a-winmd.md)<br/>
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

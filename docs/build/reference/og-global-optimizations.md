@@ -83,4 +83,4 @@ For related information, see [/Oi (Generate Intrinsic Functions)](oi-generate-in
 
 [Compiler Options](compiler-options.md)
 
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

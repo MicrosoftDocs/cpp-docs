@@ -54,5 +54,5 @@ If you do not create a PDB file, /PDBSTRIPPED is ignored.
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

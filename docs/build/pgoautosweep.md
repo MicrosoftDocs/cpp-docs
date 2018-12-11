@@ -27,7 +27,7 @@ The saved profile counter data is placed in a file named *base_name*-*name*!*val
 
 The .pgc files created by `PgoAutoSweep` must be merged into a .pgd file to be used to create an optimized executable. You can use the [pgomgr](pgomgr.md) command to perform the merge.
 
-You can pass the name of the merged .pgd file to the linker during the optimization build by using the **PGD=**_filename_ argument to the [/USEPROFILE](useprofile.md) linker option, or by using the deprecated **/PGD** linker option. If you merge the .pgc files into a file named *base_name*.pgd, you do not need to specify the filename on the command line, because the linker picks up this file name by default.
+You can pass the name of the merged .pgd file to the linker during the optimization build by using the **PGD=**_filename_ argument to the [/USEPROFILE](reference/useprofile.md) linker option, or by using the deprecated **/PGD** linker option. If you merge the .pgc files into a file named *base_name*.pgd, you do not need to specify the filename on the command line, because the linker picks up this file name by default.
 
 The `PgoAutoSweep` function maintains the thread-safety setting specified when the instrumented build is created. If you use the default setting or specify the **NOEXACT** argument to the [/GENPROFILE or /FASTGENPROFILE]() linker option, calls to `PgoAutoSweep` are not thread-safe. The **EXACT** argument creates a thread-safe and more accurate, but slower, instrumented executable.
 

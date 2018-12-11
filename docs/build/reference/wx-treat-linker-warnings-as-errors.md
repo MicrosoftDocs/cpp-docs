@@ -35,5 +35,5 @@ By default, **/WX** is not in effect. To treat linker warnings as errors, specif
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

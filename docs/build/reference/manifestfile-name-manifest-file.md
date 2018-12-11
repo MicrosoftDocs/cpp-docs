@@ -35,5 +35,5 @@ ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

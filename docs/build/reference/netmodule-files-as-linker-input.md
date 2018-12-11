@@ -12,7 +12,7 @@ link.exe now accepts MSIL .obj and .netmodules as input. The output file produce
 
 You must pass to the linker the .obj file from the Visual C++ compilation that created the .netmodule. Passing in a .netmodule is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
-For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](linker-command-line-syntax.md), [Build C/C++ code on the command line](../../build/building-on-the-command-line.md), and [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
+For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](linking.md), [Build C/C++ code on the command line](../../build/building-on-the-command-line.md), and [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
 
 Passing a .netmodule or .dll file to the linker that was compiled by the Visual C++ compiler with **/clr** can result in a linker error. For more information, see [Choosing the Format of .netmodule Input Files](choosing-the-format-of-netmodule-input-files.md).
 

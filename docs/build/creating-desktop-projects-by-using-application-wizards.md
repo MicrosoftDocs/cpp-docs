@@ -27,6 +27,6 @@ When you create a project you can either create a new solution or you can add th
 
 ## See Also
 
-[Creating and Managing Visual C++ Projects](reference/creating-and-managing-visual-cpp-projects.md)<br>
+[Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md)<br>
 [MFC Wizards and Dialog Boxes](../mfc/reference/mfc-wizards-and-dialog-boxes.md)<br>
 [ATL Wizards and Dialog Boxes](../atl/reference/atl-wizards-and-dialog-boxes.md)

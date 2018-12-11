@@ -38,5 +38,5 @@ The following words are reserved by the linker. These names can be used as argum
 
 ## See also
 
-- [Setting Linker Options](setting-linker-options.md)
+- [Setting Linker Options](linking.md)
 - [Linker Options](linker-options.md)

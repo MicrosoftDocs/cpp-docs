@@ -38,5 +38,5 @@ When you compile and link an image with a single invocation of cl.exe, **/hotpat
 
 ## See also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

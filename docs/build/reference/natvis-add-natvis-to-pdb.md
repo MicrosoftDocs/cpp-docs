@@ -35,5 +35,5 @@ LINK ignores /NATVIS when a PDB file is not created by using a [/DEBUG](debug-ge
 ## See Also
 
 [Create custom views of native objects in the Visual Studio debugger](/visualstudio/debugger/create-custom-views-of-native-objects)<br/>
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

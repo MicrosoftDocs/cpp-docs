@@ -48,5 +48,5 @@ CL /P /C ADD.C
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [/Fi (Preprocess Output File Name)](fi-preprocess-output-file-name.md)

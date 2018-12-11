@@ -24,6 +24,6 @@ This change may allow deployment of corresponding DLLs as a [private assembly](/
 
 ## See Also
 
-[Deployment Examples](deployment-examples.md)<br/>
+[Deployment Examples](../ide/deployment-examples.md)<br/>
 [Building C/C++ Isolated Applications](building-c-cpp-isolated-applications.md)<br/>
 [Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

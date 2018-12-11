@@ -56,5 +56,5 @@ Another way to set the base address is by using the *BASE* argument in a [NAME](
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

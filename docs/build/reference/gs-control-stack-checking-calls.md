@@ -54,4 +54,4 @@ You can turn stack probes on or off by using the [check_stack](../../preprocesso
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

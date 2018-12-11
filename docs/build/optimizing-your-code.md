@@ -14,15 +14,15 @@ The following topics describe some of the optimization features in the C/C++ lan
 [Optimization Pragmas and Keywords](optimization-pragmas-and-keywords.md)<br/>
 A list of keywords and pragmas that you can use in your code to improve performance.
 
-[Compiler Options Listed by Category](compiler-options-listed-by-category.md)<br/>
+[Compiler Options Listed by Category](reference/compiler-options-listed-by-category.md)<br/>
 A list of **/O** compiler options that specifically affect execution speed or code size.
 
-[Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
+[Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
 Rvalue references support the implementation of *move semantics*. If move semantics are used to implement template libraries, the performance of applications that use those templates can significantly improve.
 
 ### The optimize pragma
 
-If an optimized section of code causes errors or a slowdown, you can use the [optimize](../../preprocessor/optimize.md) pragma to turn off optimization for that section.
+If an optimized section of code causes errors or a slowdown, you can use the [optimize](../preprocessor/optimize.md) pragma to turn off optimization for that section.
 
 Enclose the code between two pragmas, as shown here:
 
@@ -68,12 +68,12 @@ The following topics provide information about how to optimize building, loading
 
 - [Using Function Name Without () Produces No Code](using-function-name-without-parens-produces-no-code.md)
 
-- [Optimizing Inline Assembly](../../assembler/inline/optimizing-inline-assembly.md)
+- [Optimizing Inline Assembly](../assembler/inline/optimizing-inline-assembly.md)
 
-- [Specifying Compiler Optimization for an ATL Project](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
+- [Specifying Compiler Optimization for an ATL Project](../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
-- [What optimization techniques should I use to improve the client application's performance when loading?](../../build/dll-frequently-asked-questions.md#mfc_optimization)
+- [What optimization techniques should I use to improve the client application's performance when loading?](../build/dll-frequently-asked-questions.md#mfc_optimization)
 
 ## See also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)
+[C/C++ Building Reference](reference/c-cpp-building-reference.md)

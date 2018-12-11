@@ -38,4 +38,4 @@ Using **/GA** for a DLL can result in bad code generation.
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

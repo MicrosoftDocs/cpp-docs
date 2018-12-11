@@ -157,5 +157,5 @@ The following properties are found on COM and .NET assembly references, and cann
 
 ## See Also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
-[Working with Project Properties](../ide/working-with-project-properties.md)
+[Property Pages](property-pages-visual-cpp.md)<br>
+[Working with Project Properties](working-with-project-properties.md)

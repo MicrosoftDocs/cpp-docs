@@ -142,7 +142,7 @@ And to catch more programming mistakes automatically, we recommend you compile b
 
 The compiler, cl.exe, has many more options you can apply to build, optimize, debug, and analyze your code. For a quick list, enter `cl /?` at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](reference/c-cpp-building-reference.md).
 
-You can use NMAKE and makefiles, or MSBuild and project files to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](nmake-reference.md) and [MSBuild](msbuild-visual-cpp.md).
+You can use NMAKE and makefiles, or MSBuild and project files to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](reference/nmake-reference.md) and [MSBuild](msbuild-visual-cpp.md).
 
 The C and C++ languages are similar, but not the same. The Visual C++ compiler uses a simple rule to determine which language to use when it compiles your code. By default, the Visual C++ compiler treats all files that end in .c as C source code, and all files that end in .cpp as C++ source code. To force the compiler to treat all files as C non-dependent of file name extension, use the [/Tc](reference/tc-tp-tc-tp-specify-source-file-type.md) compiler option.
 

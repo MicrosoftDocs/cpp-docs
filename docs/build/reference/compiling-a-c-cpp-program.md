@@ -18,9 +18,9 @@ You can set compiler (CL.exe) options:
 
 - [On the command line](compiler-command-line-syntax.md)
 
-- [In command files](cl-command-files.md)
+- [In command files](../cl-command-files.md)
 
-- [In the CL environment variable](cl-environment-variables.md)
+- [In the CL environment variable](../cl-environment-variables.md)
 
 Options specified in the CL environment variable are used every time you invoke CL. If a command file is named in the CL environment variable or on the command line, the options specified in the command file are used. Unlike either the command line or the CL environment variable, a command file allows you to use multiple lines of options and filenames.
 
@@ -32,9 +32,9 @@ Compiler options are processed "left to right," and when a conflict is detected,
 
 - [Creating Precompiled Header Files](creating-precompiled-header-files.md)
 
-- [Fast Compilation](fast-compilation.md)
+- [Fast Compilation](../fast-compilation.md)
 
-- [CL Invokes the Linker](cl-invokes-the-linker.md)
+- [CL Invokes the Linker](../cl-invokes-the-linker.md)
 
 For information on choosing the compiler host and target architecture, see [Configure Visual C++ for 64-bit, x64 targets](../../build/configuring-programs-for-64-bit-visual-cpp.md).
 

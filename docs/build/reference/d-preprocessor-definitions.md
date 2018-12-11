@@ -83,7 +83,7 @@ TEST defined 1
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [/U, /u (Undefine Symbols)](u-u-undefine-symbols.md)<br/>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br/>
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)

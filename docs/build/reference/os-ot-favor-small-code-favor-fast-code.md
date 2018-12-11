@@ -25,7 +25,7 @@ Minimizes or maximizes the size of EXEs and DLLs.
 If you use **/Os** or **/Ot**, then you must also specify [/Og](og-global-optimizations.md) to optimize the code.
 
 > [!NOTE]
->  Information that is gathered from profiling test runs will override optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, [Profile-Guided Optimizations](profile-guided-optimizations.md).
+>  Information that is gathered from profiling test runs will override optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
 **x86 Specific**
 
@@ -83,4 +83,4 @@ sub    eax, ecx
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

@@ -56,5 +56,5 @@ It will be necessary for you to use single-threading, for example, if your CLR p
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

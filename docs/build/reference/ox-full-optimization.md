@@ -57,4 +57,4 @@ To apply all available file-level optimizations for release builds, we recommend
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

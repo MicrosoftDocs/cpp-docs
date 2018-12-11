@@ -88,5 +88,5 @@ The **/OPT** arguments are often set for projects created by using the **New Pro
 
 ## See also
 
-- [Setting Linker Options](setting-linker-options.md)
+- [Setting Linker Options](linking.md)
 - [Linker Options](linker-options.md)

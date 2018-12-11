@@ -133,7 +133,7 @@ Use MSBuild (msbuild.exe) to build Visual C++ projects and Visual Studio solutio
 [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
 Use DEVENV (devenv.exe) combined with a command-line switch—for example, **/Build** or **/Clean**—to perform certain build commands without displaying the Visual Studio IDE.
 
-[NMAKE](nmake-reference.md)<br/>
+[NMAKE](reference/nmake-reference.md)<br/>
 Use NMAKE (nmake.exe) to automate tasks that build Visual C++ projects by using a traditional makefile.
 
 When you build on the command line, the F1 command is not available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages, or you can use the offline help files. To use the search in [docs.microsoft.com](https://docs.microsoft.com/cpp/), enter your search string in the search box at the top of the page.
@@ -157,7 +157,7 @@ Describes how to create and compile a C++/CX program that uses the Windows Runti
 [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
 Describes how to start a command prompt window that has the required environment variables set for command-line builds that target x86, x64, and ARM platforms by using a 32-bit or 64-bit toolset.
 
-[NMAKE Reference](nmake-reference.md)<br/>
+[NMAKE Reference](reference/nmake-reference.md)<br/>
 Provides links to articles that describe the Microsoft Program Maintenance Utility (NMAKE.EXE).
 
 [MSBuild (Visual C++)](msbuild-visual-cpp.md)<br/>

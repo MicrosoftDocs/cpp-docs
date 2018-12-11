@@ -69,5 +69,5 @@ When this code is compiled with the command `CL /YcMYAPP.H PROG.CPP`, the compil
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [Creating Precompiled Header Files](creating-precompiled-header-files.md)

@@ -46,5 +46,5 @@ If you use /NODEFAULTLIB, for example, to build your program without the C run-t
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

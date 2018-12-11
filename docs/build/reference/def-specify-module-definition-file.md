@@ -38,5 +38,5 @@ To specify a .def file from within the development environment, you should add i
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

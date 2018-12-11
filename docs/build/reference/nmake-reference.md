@@ -8,7 +8,7 @@ ms.assetid: 24fab6e3-7e43-4da4-957a-88afbbcf8661
 
 The Microsoft Program Maintenance Utility (NMAKE.EXE) is a command-line tool included with Visual Studio that builds projects based on commands that are contained in a description file.
 
-To use NMAKE, you must run it in a Developer Command Prompt window. A Developer Command Prompt window has the environment variables set for the tools, libraries, and include file paths required to build at the command line. For details on how to open a Developer Command Prompt window, see [Build C/C++ code on the command line](building-on-the-command-line.md).
+To use NMAKE, you must run it in a Developer Command Prompt window. A Developer Command Prompt window has the environment variables set for the tools, libraries, and include file paths required to build at the command line. For details on how to open a Developer Command Prompt window, see [Build C/C++ code on the command line](../building-on-the-command-line.md).
 
 ## What do you want to know more about?
 
@@ -30,8 +30,8 @@ To use NMAKE, you must run it in a Developer Command Prompt window. A Developer 
 
 ## See Also
 
-[Build C/C++ code on the command line](building-on-the-command-line.md)<br/>
-[C/C++ Build Tools](reference/c-cpp-build-tools.md)<br/>
-[Creating and Managing Visual C++ Projects](reference/creating-and-managing-visual-cpp-projects.md)<br/>
+[Build C/C++ code on the command line](../building-on-the-command-line.md)<br/>
+[C/C++ Build Tools](c-cpp-build-tools.md)<br/>
+[Creating and Managing Visual C++ Projects](../creating-and-managing-visual-cpp-projects.md)<br/>
 [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)<br/>
-[C/C++ Building Reference](reference/c-cpp-building-reference.md)
+[C/C++ Building Reference](c-cpp-building-reference.md)

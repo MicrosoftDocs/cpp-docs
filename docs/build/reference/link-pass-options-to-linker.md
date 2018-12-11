@@ -22,7 +22,7 @@ The linker option or options to be passed to the linker.
 
 ## Remarks
 
-The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linkeroptions`. For more information, see [Setting Linker Options](setting-linker-options.md).
+The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linkeroptions`. For more information, see [Setting Linker Options](linking.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -41,4 +41,4 @@ The **/link** option and its linker options must appear after any file names and
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

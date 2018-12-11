@@ -40,5 +40,5 @@ For more information about Data Execution Prevention, see these articles:
 
 ## See also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

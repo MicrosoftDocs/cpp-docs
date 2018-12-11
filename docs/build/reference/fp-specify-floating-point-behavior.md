@@ -257,5 +257,5 @@ Under **/O2** **/fp:fast** the generated code is simplified, because all type ca
 ## See also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [Microsoft Visual C++ Floating Point Optimization](floating-point-optimization.md)<br/>

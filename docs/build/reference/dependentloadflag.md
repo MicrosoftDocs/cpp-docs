@@ -42,7 +42,7 @@ If you specify the link option `/DEPENDENTLOADFLAG:0xA00` (the value of the comb
 
 ## See also
 
-- [Setting Linker Options](setting-linker-options.md)
+- [Setting Linker Options](linking.md)
 - [Linker Options](linker-options.md)
 - [How to link implicitly to a DLL](../linking-an-executable-to-a-dll.md#linking-implicitly)
 - [Determine which linking method to use](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)

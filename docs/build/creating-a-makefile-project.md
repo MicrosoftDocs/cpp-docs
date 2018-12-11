@@ -27,7 +27,7 @@ The output file that you specify in the project has no effect on the name that t
 
 1. From the Visual Studio start page, type "makefile" in the **New Project** search box. Or, in the **New Project** dialog box, expand **Visual C++** > **General** (Visual Studio 2015) or **Other** (Visual Studio 2017) and then select **Makefile Project** in the Templates pane to open the project wizard.
 
-1. In the [Application Settings](application-settings-makefile-project-wizard.md) page, provide the command, output, clean, and rebuild information for debug and retail builds.
+1. In the **Application Settings** page, provide the command, output, clean, and rebuild information for debug and retail builds.
 
 1. Click **Finish** to close the wizard and open the newly created project in **Solution Explorer**.
 
@@ -78,7 +78,7 @@ The next time you open your makefile project in the Visual Studio development en
 ## See Also
 
 [Using IntelliSense](/visualstudio/ide/using-intellisense)<br>
-[NMAKE Reference](nmake-reference.md)<br>
+[NMAKE Reference](reference/nmake-reference.md)<br>
 [How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md)
-[Special Characters in a Makefile](special-characters-in-a-makefile.md)<br/>
-[Contents of a Makefile](contents-of-a-makefile.md)<br/>
+[Special Characters in a Makefile](reference/special-characters-in-a-makefile.md)<br/>
+[Contents of a Makefile](reference/contents-of-a-makefile.md)<br/>

@@ -49,5 +49,5 @@ The **/USEPROFILE** linker option is new in Visual Studio 2015.
 
 [/GENPROFILE and /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
-[Environment Variables for Profile-Guided Optimizations](environment-variables-for-profile-guided-optimizations.md)<br/>
+[Profile-Guided Optimizations](../profile-guided-optimizations.md)<br/>
+[Environment Variables for Profile-Guided Optimizations](../environment-variables-for-profile-guided-optimizations.md)<br/>

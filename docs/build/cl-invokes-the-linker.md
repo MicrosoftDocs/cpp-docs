@@ -16,7 +16,7 @@ CL automatically invokes the linker after compiling unless the /c option is used
 |/Zg|Generate function prototypes|
 |/Zs|Check syntax|
 
-For further details about linking, see [Linker Options](linker-options.md).
+For further details about linking, see [Linker Options](reference/linker-options.md).
 
 ## Example
 
@@ -34,7 +34,7 @@ To build this program, compile with the following command line:
 CL MAIN.c MOD1.C MOD2.C MYGRAPH.lib
 ```
 
-CL first compiles the C source files and creates the object files MAIN.obj, MOD1.obj, and MOD2.obj. The compiler places the name of the standard library in each .obj file. For more details, see [Use Run-Time Library](md-mt-ld-use-run-time-library.md).
+CL first compiles the C source files and creates the object files MAIN.obj, MOD1.obj, and MOD2.obj. The compiler places the name of the standard library in each .obj file. For more details, see [Use Run-Time Library](reference/md-mt-ld-use-run-time-library.md).
 
 CL passes the names of the .obj files, along with the name MYGRAPH.lib, to the linker. The linker resolves the external references as follows:
 
@@ -46,5 +46,5 @@ CL passes the names of the .obj files, along with the name MYGRAPH.lib, to the l
 
 ## See Also
 
-[Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Options](reference/compiler-options.md)<br/>
+[Setting Compiler Options](compiler-command-line-syntax.md)

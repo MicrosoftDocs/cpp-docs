@@ -37,5 +37,5 @@ This option is the default. Because **/Od** suppresses code movement, it simplif
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [/Z7, /Zi, /ZI (Debug Information Format)](z7-zi-zi-debug-information-format.md)

@@ -66,5 +66,5 @@ You can specify the level and uiAccess values in one step by using the /MANIFEST
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

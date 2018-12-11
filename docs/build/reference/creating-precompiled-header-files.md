@@ -9,7 +9,7 @@ ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 
 When you create a new project in Visual Studio, a *precompiled header file* named "pch.h" is added to the project. (In earlier versions of Visual Studio, the file was called "stdafx.h".) The purpose of the file is to speed up the build process. Any stable header files, for example Standard Library headers such as `<vector>`, should be included here. The precompiled header is compiled only when it, or any files it includes, are modified. If you only make changes in your project source code, the build will skip compilation for the precompiled header. 
 
-The compiler options for precompiled headers are [/Y](../../build/reference/y-precompiled-headers.md). In the project propery pages, the options are located under **Configuration Properties > C/C++ > Precompiled Headers**. You can choose to not use precompiled headers, and you can specify the header file name and the name and path of the output file. 
+The compiler options for precompiled headers are [/Y](y-precompiled-headers.md). In the project propery pages, the options are located under **Configuration Properties > C/C++ > Precompiled Headers**. You can choose to not use precompiled headers, and you can specify the header file name and the name and path of the output file. 
 
 ## Custom precompiled code
 
@@ -298,5 +298,5 @@ int main( void )
 
 ## See Also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
+[C/C++ Building Reference](../../build/c-cpp-building-reference.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)

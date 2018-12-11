@@ -37,4 +37,4 @@ This option has no effect if **/fp:except** is not also specified. If you specif
 
 [/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

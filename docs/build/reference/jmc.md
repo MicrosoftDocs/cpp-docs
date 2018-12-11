@@ -37,4 +37,4 @@ For more information, see [C++ Just My Code](/visualstudio/debugger/just-my-code
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>

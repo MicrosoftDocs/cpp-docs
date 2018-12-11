@@ -38,5 +38,5 @@ When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](
 
 ## See also
 
-- [Setting Linker Options](setting-linker-options.md)
+- [Setting Linker Options](linking.md)
 - [Linker Options](linker-options.md)

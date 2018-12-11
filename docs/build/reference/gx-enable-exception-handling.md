@@ -38,5 +38,5 @@ For more information, see [C++ Exception Handling](../../cpp/cpp-exception-handl
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [/EH (Exception Handling Model)](eh-exception-handling-model.md)

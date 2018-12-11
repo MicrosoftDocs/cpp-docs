@@ -42,4 +42,4 @@ Multiple levels of parallelism can be specified for a build. The msbuild.exe swi
 ## See Also
 
 [Linker Options](linker-options.md)<br/>
-[Setting Linker Options](setting-linker-options.md)
+[Setting Linker Options](linking.md)

@@ -28,5 +28,5 @@ Resembles the [/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-as
 
 ## See Also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

@@ -38,4 +38,4 @@ The **/Zs** option provides a quick way to find and correct syntax errors before
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

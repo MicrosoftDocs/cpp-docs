@@ -39,5 +39,5 @@ The alignment value that you specify cannot be smaller than the largest section 
 
 ## See also
 
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

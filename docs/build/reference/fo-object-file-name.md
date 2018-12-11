@@ -45,5 +45,5 @@ CL /FoB:\OBJECT\ THIS.C
 
 [Output-File (/F) Options](output-file-f-options.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
 [Specifying the Pathname](specifying-the-pathname.md)

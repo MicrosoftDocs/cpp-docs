@@ -43,4 +43,4 @@ Code compiled by using **/guard:cf** can be linked to libraries and object files
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

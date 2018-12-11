@@ -47,4 +47,4 @@ When you specify one of these inheritance-model options, that model is used for 
 
 [/vmb, /vmg (Representation Method)](vmb-vmg-representation-method.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

@@ -53,4 +53,4 @@ This CL command line specifies that TEST1.c, TEST2.cxx, TEST3.huh, and TEST4.o a
 ## See also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[Compiler Command Line Syntax](../compiler-command-line-syntax.md)

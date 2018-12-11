@@ -37,5 +37,5 @@ Note that the command line and the command-file commands are effectively combine
 
 ## See Also
 
-[Setting Compiler Options](setting-compiler-options.md)<br/>
-[Compiler Options](compiler-options.md)
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[Compiler Options](reference/compiler-options.md)

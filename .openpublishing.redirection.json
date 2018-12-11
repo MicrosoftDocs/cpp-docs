@@ -106,6 +106,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/building-cpp-projects-in-visual-studio.md",
+            "redirect_url": "/cpp/build/creating-and-managing-visual-cpp-projects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/reference/link-command-files.md",
+            "redirect_url": "/cpp/build/reference/linking",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/reference/link-environment-variables.md",
+            "redirect_url": "/cpp/build/reference/linking",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/reference/linker-command-line-syntax.md",
+            "redirect_url": "/cpp/build/reference/linking",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/reference/setting-compiler-options.md",
+            "redirect_url": "/cpp/build/compiler-command-line-syntax",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/advantages-of-using-dlls.md",
             "redirect_url": "/cpp/build/dlls-in-visual-cpp#advantages-of-using-dlls",
             "redirect_document_id": false

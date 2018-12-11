@@ -9,9 +9,6 @@ You can create Visual C++ programs that target the Common Language Runtime (CLR)
 
 In this walkthrough, you use a text editor to create a basic C++/CLI program, and then compile it on the command line. (You can use your own C++/CLI program instead of typing the one that's shown, or you can use a C++/CLI code sample from another help article. This technique is useful for building and testing small modules that have no UI elements.)
 
-> [!NOTE]
-> You can also use the Visual Studio IDE to compile C++/CLI programs. For more information, see [Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio](walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md).
-
 ## Prerequisites
 
 You understand the fundamentals of the C++ language.

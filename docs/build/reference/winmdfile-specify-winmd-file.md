@@ -29,5 +29,5 @@ Use the value that is specified in `filename` to override the default .winmd fil
 ## See Also
 
 [/WINMD (Generate Windows Metadata)](winmd-generate-windows-metadata.md)<br/>
-[Setting Linker Options](setting-linker-options.md)<br/>
+[Setting Linker Options](linking.md)<br/>
 [Linker Options](linker-options.md)

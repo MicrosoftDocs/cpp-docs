@@ -18,7 +18,7 @@ The list below shows the primary differences between a debug and a release (nond
 
 - [Optimizations](#_core_optimizations)
 
-See the [/GZ (Catch Release-Build Errors in Debug Build)](gz-enable-stack-frame-run-time-error-checking.md) compiler option for information on how to catch release build errors in debug builds.
+See the [/GZ (Catch Release-Build Errors in Debug Build)](reference/gz-enable-stack-frame-run-time-error-checking.md) compiler option for information on how to catch release build errors in debug builds.
 
 ##  <a name="_core_heap_layout"></a> Heap Layout
 
