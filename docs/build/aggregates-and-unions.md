@@ -49,8 +49,8 @@ The following aggregate alignment rules apply:
 
 - It is possible to align data in such a way as to be greater than the alignment requirements as long as the previous rules are maintained.
 
-- An individual compiler may adjust the packing of a structure for size reasons. For example [/Zp (Struct Member Alignment)](../build/reference/zp-struct-member-alignment.md) allows for adjusting the packing of structures.
+- An individual compiler may adjust the packing of a structure for size reasons. For example [/Zp (Struct Member Alignment)](reference/zp-struct-member-alignment.md) allows for adjusting the packing of structures.
 
 ## See Also
 
-[Types and Storage](../build/types-and-storage.md)
+[Types and Storage](types-and-storage.md)

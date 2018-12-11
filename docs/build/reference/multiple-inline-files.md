@@ -24,4 +24,4 @@ For each file, specify one or more lines of inline text followed by a closing li
 
 ## See Also
 
-[Inline Files in a Makefile](../build/inline-files-in-a-makefile.md)
+[Inline Files in a Makefile](inline-files-in-a-makefile.md)

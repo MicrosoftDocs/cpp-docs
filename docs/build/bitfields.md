@@ -10,4 +10,4 @@ Structure bit fields are limited to 64 bits and can be of type signed int, unsig
 
 ## See Also
 
-[Types and Storage](../build/types-and-storage.md)
+[Types and Storage](types-and-storage.md)

@@ -52,4 +52,4 @@ The current Visual C++ linker issues a warning if it sees CONSTANT in the .def f
 
 ## See Also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+[Importing into an Application](importing-into-an-application.md)

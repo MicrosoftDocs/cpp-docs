@@ -21,13 +21,13 @@ Describes the linker, which combines code from the object files created by the c
 [Release Builds](release-builds.md)<br/>
 Presents information on why and when you would want to change from a debug build to a release build and also discusses some of the problems you may encounter when changing from a debug to a release build.
 
-[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[Configure Visual C++ for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 Describes how to configure both Visual Studio and the command line to use the 64-bit toolset and how to target 64-bit architectures, and discusses common migration issues when code is moved to 64-bit architectures.
 
-[Configure Visual C++ for ARM processors](../build/configuring-programs-for-arm-processors-visual-cpp.md)<br/>
+[Configure Visual C++ for ARM processors](configuring-programs-for-arm-processors-visual-cpp.md)<br/>
 Describes the conventions used by ARM processors, and discusses common migration issues when code is moved to ARM architectures.
 
-[Configuring Programs for Windows XP](../build/configuring-programs-for-windows-xp.md)<br/>
+[Configuring Programs for Windows XP](configuring-programs-for-windows-xp.md)<br/>
 Describes how to set the Platform Toolset to target Windows XP development.
 
 [C/C++ Build Tools](c-cpp-build-tools.md)<br/>

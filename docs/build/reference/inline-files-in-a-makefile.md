@@ -10,14 +10,14 @@ An inline file contains text you specify in the makefile. Its name can be used i
 
 ## What do you want to know more about?
 
-[Specifying an inline file](../build/specifying-an-inline-file.md)
+[Specifying an inline file](specifying-an-inline-file.md)
 
-[Creating inline file text](../build/creating-inline-file-text.md)
+[Creating inline file text](creating-inline-file-text.md)
 
-[Reusing inline files](../build/reusing-inline-files.md)
+[Reusing inline files](reusing-inline-files.md)
 
-[Multiple inline files](../build/multiple-inline-files.md)
+[Multiple inline files](multiple-inline-files.md)
 
 ## See Also
 
-[Commands in a Makefile](../build/commands-in-a-makefile.md)
+[Commands in a Makefile](commands-in-a-makefile.md)

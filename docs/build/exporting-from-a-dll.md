@@ -6,11 +6,11 @@ ms.assetid: a08f86c4-5996-460b-ae54-da2b764045f0
 ---
 # Exporting from a DLL
 
-A DLL file has a layout very similar to an .exe file, with one important difference — a DLL file contains an exports table. The exports table contains the name of every function that the DLL exports to other executables. These functions are the entry points into the DLL; only the functions in the exports table can be accessed by other executables. Any other functions in the DLL are private to the DLL. The exports table of a DLL can be viewed by using the [DUMPBIN](../build/reference/dumpbin-reference.md) tool with the /EXPORTS option.
+A DLL file has a layout very similar to an .exe file, with one important difference — a DLL file contains an exports table. The exports table contains the name of every function that the DLL exports to other executables. These functions are the entry points into the DLL; only the functions in the exports table can be accessed by other executables. Any other functions in the DLL are private to the DLL. The exports table of a DLL can be viewed by using the [DUMPBIN](reference/dumpbin-reference.md) tool with the /EXPORTS option.
 
 You can export functions from a DLL using two methods:
 
-- Create a module definition (.def) file and use the .def file when building the DLL. Use this approach if you want to [export functions from your DLL by ordinal rather than by name](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+- Create a module definition (.def) file and use the .def file when building the DLL. Use this approach if you want to [export functions from your DLL by ordinal rather than by name](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
 
 - Use the keyword **__declspec(dllexport)** in the function's definition.
 
@@ -18,32 +18,32 @@ When exporting functions with either method, make sure to use the [__stdcall](..
 
 ## What do you want to do?
 
-- [Export from a DLL using .def files](../build/exporting-from-a-dll-using-def-files.md)
+- [Export from a DLL using .def files](exporting-from-a-dll-using-def-files.md)
 
-- [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [Export from a DLL using __declspec(dllexport)](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx-ext-class.md)
+- [Export and import using AFX_EXT_CLASS](exporting-and-importing-using-afx-ext-class.md)
 
-- [Export C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [Export C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Export C functions for use in C or C++-language executables](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [Export C functions for use in C or C++-language executables](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [Export functions from a DLL by ordinal rather than by name](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)
+- [Export functions from a DLL by ordinal rather than by name](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)
 
-- [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [Determine which linking method to use](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
-- [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)
+- [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)
 
 ## What do you want to know more about?
 
-- [Importing into an application](../build/importing-into-an-application.md)
+- [Importing into an application](importing-into-an-application.md)
 
-- [Importing and exporting inline functions](../build/importing-and-exporting-inline-functions.md)
+- [Importing and exporting inline functions](importing-and-exporting-inline-functions.md)
 
-- [Mutual imports](../build/mutual-imports.md)
+- [Mutual imports](mutual-imports.md)
 
 ## See Also
 
-[Importing and Exporting](../build/importing-and-exporting.md)
+[Importing and Exporting](importing-and-exporting.md)

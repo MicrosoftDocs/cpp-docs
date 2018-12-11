@@ -11,4 +11,4 @@ The intrinsics supported by the compiler are described in [Compiler Intrinsics](
 
 ## See Also
 
-[x64 Software Conventions](../build/x64-software-conventions.md)
+[x64 Software Conventions](x64-software-conventions.md)

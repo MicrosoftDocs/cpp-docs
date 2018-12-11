@@ -14,16 +14,16 @@ Macros replace a particular string in the makefile with another string. Using ma
 
 - Set environment variables.
 
-You can define [your own macros](../build/defining-an-nmake-macro.md) or use NMAKE's [predefined macros](../build/special-nmake-macros.md).
+You can define [your own macros](defining-an-nmake-macro.md) or use NMAKE's [predefined macros](special-nmake-macros.md).
 
 ## What do you want to know more about?
 
-[Defining an NMAKE macro](../build/defining-an-nmake-macro.md)
+[Defining an NMAKE macro](defining-an-nmake-macro.md)
 
-[Using an NMAKE macro](../build/using-an-nmake-macro.md)
+[Using an NMAKE macro](using-an-nmake-macro.md)
 
-[Special NMAKE macros](../build/special-nmake-macros.md)
+[Special NMAKE macros](special-nmake-macros.md)
 
 ## See Also
 
-[NMAKE Reference](../build/nmake-reference.md)
+[NMAKE Reference](nmake-reference.md)

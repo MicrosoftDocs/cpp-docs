@@ -19,4 +19,4 @@ An UNWIND_INFO item that has UNW_FLAG_CHAININFO set can contain a RUNTIME_FUNCTI
 
 ## See Also
 
-[Unwind Data for Exception Handling, Debugger Support](../build/unwind-data-for-exception-handling-debugger-support.md)
+[Unwind Data for Exception Handling, Debugger Support](unwind-data-for-exception-handling-debugger-support.md)

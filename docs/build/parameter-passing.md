@@ -55,4 +55,4 @@ func4(__m64 a, _m128 b, struct c, float d);
 
 ## See Also
 
-[Calling Convention](../build/calling-convention.md)
+[Calling Convention](calling-convention.md)

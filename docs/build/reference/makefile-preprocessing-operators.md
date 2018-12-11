@@ -58,4 +58,4 @@ Expressions can use the following operators. The operators of equal precedence a
 
 ## See also
 
-- [Expressions in Makefile Preprocessing](../build/expressions-in-makefile-preprocessing.md)
+- [Expressions in Makefile Preprocessing](expressions-in-makefile-preprocessing.md)

@@ -16,10 +16,10 @@ $(macroname:string1=string2)
 
 ## Remarks
 
-Macro substitution is case sensitive and is literal; *string1* and *string2* cannot invoke macros. Substitution does not modify the original definition. You can substitute text in any predefined macro except [$$@](../build/filename-macros.md).
+Macro substitution is case sensitive and is literal; *string1* and *string2* cannot invoke macros. Substitution does not modify the original definition. You can substitute text in any predefined macro except [$$@](filename-macros.md).
 
 No spaces or tabs precede the colon; any after the colon are interpreted as literal. If *string2* is null, all occurrences of *string1* are deleted from the macro's definition string.
 
 ## See Also
 
-[Using an NMAKE Macro](../build/using-an-nmake-macro.md)
+[Using an NMAKE Macro](using-an-nmake-macro.md)

@@ -20,4 +20,4 @@ When the command is run, the angle brackets are replaced by *filename*, if speci
 
 ## See Also
 
-[Inline Files in a Makefile](../build/inline-files-in-a-makefile.md)
+[Inline Files in a Makefile](inline-files-in-a-makefile.md)

@@ -52,4 +52,4 @@ Struct2 func4(int a, double b, int c, float d);
 
 ## See Also
 
-[Calling Convention](../build/calling-convention.md)
+[Calling Convention](calling-convention.md)

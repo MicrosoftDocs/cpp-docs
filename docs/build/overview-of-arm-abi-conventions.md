@@ -199,13 +199,13 @@ Enumerations are 32-bit integer types unless at least one value in the enumerati
 
 ## Stack walking
 
-Windows code is compiled with frame pointers enabled ([/Oy (Frame-Pointer Omission)](../build/reference/oy-frame-pointer-omission.md)) to enable fast stack walking. Generally, the r11 register points to the next link in the chain, which is an {r11, lr} pair that specifies the pointer to the previous frame on the stack and the return address. We recommend that your code also enable frame pointers for improved profiling and tracing.
+Windows code is compiled with frame pointers enabled ([/Oy (Frame-Pointer Omission)](reference/oy-frame-pointer-omission.md)) to enable fast stack walking. Generally, the r11 register points to the next link in the chain, which is an {r11, lr} pair that specifies the pointer to the previous frame on the stack and the return address. We recommend that your code also enable frame pointers for improved profiling and tracing.
 
 ## Exception unwinding
 
 Stack unwinding during exception handling is enabled by the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of the function prologue and epilogue code in an abstract manner, so that the effects of a function’s prologue can be undone in preparation for unwinding to the caller’s stack frame.
 
-The ARM EABI specifies an exception unwinding model that uses unwind codes. However, this specification is not sufficient for unwinding in Windows, which must handle cases where the processor is in the middle of the prologue or epilogue of a function. For more information about Windows on ARM exception data and unwinding, see [ARM Exception Handling](../build/arm-exception-handling.md).
+The ARM EABI specifies an exception unwinding model that uses unwind codes. However, this specification is not sufficient for unwinding in Windows, which must handle cases where the processor is in the middle of the prologue or epilogue of a function. For more information about Windows on ARM exception data and unwinding, see [ARM Exception Handling](arm-exception-handling.md).
 
 We recommend that dynamically generated code be described by using dynamic function tables specified in calls to `RtlAddFunctionTable` and associated functions, so that the generated code can participate in exception handling.
 
@@ -217,5 +217,5 @@ The counter is a true cycle counter, not a clock; therefore, the counting freque
 
 ## See also
 
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)<br/>
-[ARM Exception Handling](../build/arm-exception-handling.md)
+[Common Visual C++ ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM Exception Handling](arm-exception-handling.md)

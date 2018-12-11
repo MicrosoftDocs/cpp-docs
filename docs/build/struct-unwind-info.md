@@ -83,4 +83,4 @@ The UNWIND_INFO structure must be DWORD aligned in memory. The meaning of each f
 
 ## See Also
 
-[Unwind Data for Exception Handling, Debugger Support](../build/unwind-data-for-exception-handling-debugger-support.md)
+[Unwind Data for Exception Handling, Debugger Support](unwind-data-for-exception-handling-debugger-support.md)

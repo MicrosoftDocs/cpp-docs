@@ -19,4 +19,4 @@ Command macros are predefined for Microsoft products. Options macros represent o
 
 ## See Also
 
-[Special NMAKE Macros](../build/special-nmake-macros.md)
+[Special NMAKE Macros](special-nmake-macros.md)

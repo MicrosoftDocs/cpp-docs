@@ -16,10 +16,10 @@ If a macro has multiple definitions, NMAKE uses the highest-precedence definitio
 
 1. A macro defined in the Tools.ini file
 
-1. A predefined macro, such as [CC](../build/command-macros-and-options-macros.md) and [AS](../build/command-macros-and-options-macros.md)
+1. A predefined macro, such as [CC](command-macros-and-options-macros.md) and [AS](command-macros-and-options-macros.md)
 
 Use /E to cause macros inherited from environment variables to override makefile macros with the same name. Use **!UNDEF** to override a command line.
 
 ## See Also
 
-[Defining an NMAKE Macro](../build/defining-an-nmake-macro.md)
+[Defining an NMAKE Macro](defining-an-nmake-macro.md)

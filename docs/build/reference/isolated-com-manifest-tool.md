@@ -12,7 +12,7 @@ To access this property page dialog box, open the property pages for your projec
 
 ## Task List
 
-- [How to: Build Isolated Applications to Consume COM Components](../build/how-to-build-isolated-applications-to-consume-com-components.md)
+- [How to: Build Isolated Applications to Consume COM Components](how-to-build-isolated-applications-to-consume-com-components.md)
 
 ## UIElement List
 

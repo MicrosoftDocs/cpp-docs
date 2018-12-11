@@ -733,5 +733,5 @@ Function:
 
 ## See also
 
-[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)<br/>
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)
+[Overview of ARM ABI Conventions](overview-of-arm-abi-conventions.md)<br/>
+[Common Visual C++ ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)

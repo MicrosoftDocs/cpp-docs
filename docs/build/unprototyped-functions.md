@@ -16,4 +16,4 @@ func2() {   // RCX = 2, RDX = XMM1 = 1.0, and R8 = 7
 
 ## See Also
 
-[Calling Convention](../build/calling-convention.md)
+[Calling Convention](calling-convention.md)

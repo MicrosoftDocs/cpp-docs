@@ -20,12 +20,12 @@ project.obj : project.c project.h ; cl /c project.c
 
 ## What do you want to know more about?
 
-[Command modifiers](../build/command-modifiers.md)
+[Command modifiers](command-modifiers.md)
 
-[Filename-parts syntax](../build/filename-parts-syntax.md)
+[Filename-parts syntax](filename-parts-syntax.md)
 
-[Inline files in a makefile](../build/inline-files-in-a-makefile.md)
+[Inline files in a makefile](inline-files-in-a-makefile.md)
 
 ## See Also
 
-[NMAKE Reference](../build/nmake-reference.md)
+[NMAKE Reference](nmake-reference.md)

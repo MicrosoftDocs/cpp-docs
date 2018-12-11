@@ -5,7 +5,7 @@ ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
 ---
 # Prolog and Epilog
 
-Every function that allocates stack space, calls other functions, saves nonvolatile registers, or uses exception handling must have a prolog whose address limits are described in the unwind data associated with the respective function table entry (see [Exception Handling (x64)](../build/exception-handling-x64.md)). The prolog saves argument registers in their home addresses if required, pushes nonvolatile registers on the stack, allocates the fixed part of the stack for locals and temporaries, and optionally establishes a frame pointer. The associated unwind data must describe the action of the prolog and must provide the information necessary to undo the effect of the prolog code.
+Every function that allocates stack space, calls other functions, saves nonvolatile registers, or uses exception handling must have a prolog whose address limits are described in the unwind data associated with the respective function table entry (see [Exception Handling (x64)](exception-handling-x64.md)). The prolog saves argument registers in their home addresses if required, pushes nonvolatile registers on the stack, allocates the fixed part of the stack for locals and temporaries, and optionally establishes a frame pointer. The associated unwind data must describe the action of the prolog and must provide the information necessary to undo the effect of the prolog code.
 
 If the fixed allocation in the stack is more than one page (that is, greater than 4096 bytes), then it is possible that the stack allocation could span more than one virtual memory page and, therefore, the allocation must be checked before it is actually allocated. A special routine that is callable from the prolog and which does not destroy any of the argument registers is provided for this purpose.
 
@@ -85,4 +85,4 @@ Following these rules allows the unwind code to determine that an epilog is curr
 
 ## See Also
 
-[x64 Software Conventions](../build/x64-software-conventions.md)
+[x64 Software Conventions](x64-software-conventions.md)

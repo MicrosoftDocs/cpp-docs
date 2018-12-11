@@ -62,4 +62,4 @@ On the other hand, for function calls inside a DLL, you do not want to have to u
 
 ## See Also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+[Importing into an Application](importing-into-an-application.md)

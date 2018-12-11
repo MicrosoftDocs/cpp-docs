@@ -24,4 +24,4 @@ When you choose the Automation option in the MFC DLL Wizard, the wizard provides
 
 ## See Also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[DLLs in Visual C++](dlls-in-visual-cpp.md)

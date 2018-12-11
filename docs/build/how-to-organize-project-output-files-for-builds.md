@@ -16,13 +16,13 @@ This topic describes best practices for organizing project output files. Build e
 
    The file specified can be a .dll, .exe, .netmodule, or .obj, as long as it is in MSIL. The referenced component can be built in any language. Using this option, you will have access to IntelliSense since the metadata will be extracted from the MSIL. The file in question must be in the path for the project; otherwise, the project will not compile and IntelliSense will not be available. An easy way to determine whether the file is in the path is to right-click on the #using line and choose the **Open document** command. You will be notified if the file cannot be found.
 
-   If you do not want to put the full path to the file, you can use the **/AI** compiler option to edit the search path for #using references. For more information, see [/AI (Specify Metadata Directories)](../build/reference/ai-specify-metadata-directories.md).
+   If you do not want to put the full path to the file, you can use the **/AI** compiler option to edit the search path for #using references. For more information, see [/AI (Specify Metadata Directories)](reference/ai-specify-metadata-directories.md).
 
 #### To reference assemblies with /FU
 
 1. Instead of referencing an assembly directly from a code file as described above, you can use the **/FU** compiler option. The advantage to this method is that you do not have to add a separate #using statement to every file that references a given assembly.
 
-   To set this option, open the **Properties Pages** for the project. Expand the **Configuration Properties** node, and then expand the **C/C++** node and select **Advanced**. Add the desired assemblies next to **Force #using**. For more information, see [/FU (Name Forced #using File)](../build/reference/fu-name-forced-hash-using-file.md).
+   To set this option, open the **Properties Pages** for the project. Expand the **Configuration Properties** node, and then expand the **C/C++** node and select **Advanced**. Add the desired assemblies next to **Force #using**. For more information, see [/FU (Name Forced #using File)](reference/fu-name-forced-hash-using-file.md).
 
 #### To reference assemblies with Add New Reference
 
@@ -46,7 +46,7 @@ This topic describes best practices for organizing project output files. Build e
 
    1. Anywhere in the system path (the **path** environment variable).
 
-   1. In the side-by-side assembly. For more information, see [Building C/C++ Side-by-side Assemblies](../build/building-c-cpp-side-by-side-assemblies.md).
+   1. In the side-by-side assembly. For more information, see [Building C/C++ Side-by-side Assemblies](building-c-cpp-side-by-side-assemblies.md).
 
 ## Working with Multiple Projects
 

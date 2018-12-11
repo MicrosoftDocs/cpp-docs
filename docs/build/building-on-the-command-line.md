@@ -15,7 +15,7 @@ When you choose one of the C++ workloads in the Visual Studio Installer, it inst
 
 To work correctly, the tools require several specific environment variables to be set. These are used to add them to the path and to set include file, library file, and SDK locations. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files in a command prompt window to set a specific host and target build architecture, Windows SDK version, target platform, and platform toolset. For convenience, the installer also creates shortcuts in your Start menu (or Start page on Windows 8.x) that start developer command prompt windows by using these command files, so all the required environment variables are set and ready to use.
 
-The required environment variables are specific to your installation and to the build architecture you choose, and might be changed by product updates or upgrades. Therefore, we strongly recommend that you use one of the installed command prompt shortcuts or command files instead of setting the environment variables in Windows yourself. For more information, see [Set the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
+The required environment variables are specific to your installation and to the build architecture you choose, and might be changed by product updates or upgrades. Therefore, we strongly recommend that you use one of the installed command prompt shortcuts or command files instead of setting the environment variables in Windows yourself. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md).
 
 The command-line toolsets, command files, and command prompt shortcuts that are installed depend on your computer processor and the options selected during installation. At a minimum, the 32-bit x86-hosted tools that build 32-bit x86-native code and cross tools that build 64-bit x64-native code are installed. If you have 64-bit Windows, the 64-bit x64-hosted tools that build 64-bit native code and cross tools that build 32-bit native code are also installed. If you choose to install the optional C++ Universal Windows Platform tools, then the 32-bit and 64-bit native tools that build ARM code are also installed. Other workloads may install additional tools.
 
@@ -121,19 +121,19 @@ You must adjust the path to reflect your Visual Studio installation directory.
 
 To build a C/C++ project on the command line, Visual Studio provides these command-line tools:
 
-[CL](../build/reference/compiling-a-c-cpp-program.md)<br/>
+[CL](reference/compiling-a-c-cpp-program.md)<br/>
 Use the compiler (cl.exe) to compile and link source code files into apps, libraries, and DLLs.
 
-[Link](../build/reference/linking.md)<br/>
+[Link](reference/linking.md)<br/>
 Use the linker (link.exe) to link compiled object files and libraries into apps and DLLs.
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)<br/>
+[MSBuild (Visual C++)](msbuild-visual-cpp.md)<br/>
 Use MSBuild (msbuild.exe) to build Visual C++ projects and Visual Studio solutions. This is equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE.
 
 [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
 Use DEVENV (devenv.exe) combined with a command-line switch—for example, **/Build** or **/Clean**—to perform certain build commands without displaying the Visual Studio IDE.
 
-[NMAKE](../build/nmake-reference.md)<br/>
+[NMAKE](nmake-reference.md)<br/>
 Use NMAKE (nmake.exe) to automate tasks that build Visual C++ projects by using a traditional makefile.
 
 When you build on the command line, the F1 command is not available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages, or you can use the offline help files. To use the search in [docs.microsoft.com](https://docs.microsoft.com/cpp/), enter your search string in the search box at the top of the page.
@@ -142,41 +142,41 @@ When you build on the command line, the F1 command is not available for instant 
 
 The articles in this section of the documentation show how to build apps on the command line, describe how to customize the command-line build environment to use 64-bit toolsets and target x86, x64, and ARM platforms, and demonstrate how to use the command-line build tools MSBuild and NMAKE.
 
-[Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a Native C++ Program on the Command Line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 Gives an example that shows how to create and compile a simple C++ program on the command line.
 
-[Walkthrough: Compile a C Program on the Command Line](../build/walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
+[Walkthrough: Compile a C Program on the Command Line](walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
 Describes how to compile a program written in the C programming language.
 
-[Walkthrough: Compiling a C++/CLI Program on the Command Line](../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a C++/CLI Program on the Command Line](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
 Describes how to create and compile a C++/CLI program that uses the .NET Framework.
 
-[Walkthrough: Compiling a C++/CX Program on the Command Line](../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a C++/CX Program on the Command Line](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
 Describes how to create and compile a C++/CX program that uses the Windows Runtime.
 
-[Set the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
+[Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
 Describes how to start a command prompt window that has the required environment variables set for command-line builds that target x86, x64, and ARM platforms by using a 32-bit or 64-bit toolset.
 
-[NMAKE Reference](../build/nmake-reference.md)<br/>
+[NMAKE Reference](nmake-reference.md)<br/>
 Provides links to articles that describe the Microsoft Program Maintenance Utility (NMAKE.EXE).
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)<br/>
+[MSBuild (Visual C++)](msbuild-visual-cpp.md)<br/>
 Provides links to articles that discuss how to use MSBuild.EXE.
 
 ## Related Sections
 
-[/MD, /MT, /LD (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md)<br/>
+[/MD, /MT, /LD (Use Run-Time Library)](reference/md-mt-ld-use-run-time-library.md)<br/>
 Describes how to use these compiler options to use a Debug or Release run-time library.
 
-[C/C++ Compiler Options](../build/reference/compiler-options.md)<br/>
+[C/C++ Compiler Options](reference/compiler-options.md)<br/>
 Provides links to articles that discuss the C and C++ compiler options and CL.exe.
 
-[Linker Options](../build/reference/linker-options.md)<br/>
+[Linker Options](reference/linker-options.md)<br/>
 Provides links to articles that discuss the linker options and LINK.exe.
 
-[C/C++ Build Tools](../build/reference/c-cpp-build-tools.md)<br/>
+[C/C++ Build Tools](reference/c-cpp-build-tools.md)<br/>
 Provides links to the C/C++ build tools that are included in Visual Studio.
 
 ## See also
 
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)
+[Building C/C++ Programs](building-c-cpp-programs.md)

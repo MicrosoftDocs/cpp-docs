@@ -10,10 +10,10 @@ You can control the NMAKE session by using preprocessing directives and expressi
 
 ## What do you want to know more about?
 
-[Makefile preprocessing directives](../build/makefile-preprocessing-directives.md)
+[Makefile preprocessing directives](makefile-preprocessing-directives.md)
 
-[Expressions in makefile preprocessing](../build/expressions-in-makefile-preprocessing.md)
+[Expressions in makefile preprocessing](expressions-in-makefile-preprocessing.md)
 
 ## See Also
 
-[NMAKE Reference](../build/nmake-reference.md)
+[NMAKE Reference](nmake-reference.md)

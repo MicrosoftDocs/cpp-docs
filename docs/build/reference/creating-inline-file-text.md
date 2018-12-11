@@ -26,4 +26,4 @@ A temporary file exists for the duration of the session and can be reused by oth
 
 ## See Also
 
-[Inline Files in a Makefile](../build/inline-files-in-a-makefile.md)
+[Inline Files in a Makefile](inline-files-in-a-makefile.md)

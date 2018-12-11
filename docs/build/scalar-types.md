@@ -36,4 +36,4 @@ Although the access of data can stem from any alignment, it is recommended that 
 
 ## See Also
 
-[Types and Storage](../build/types-and-storage.md)
+[Types and Storage](types-and-storage.md)

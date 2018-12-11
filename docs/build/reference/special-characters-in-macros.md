@@ -21,4 +21,4 @@ dir
 
 ## See Also
 
-[Defining an NMAKE Macro](../build/defining-an-nmake-macro.md)
+[Defining an NMAKE Macro](defining-an-nmake-macro.md)

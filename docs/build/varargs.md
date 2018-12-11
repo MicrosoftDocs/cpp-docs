@@ -9,4 +9,4 @@ If parameters are passed via varargs (for example, ellipsis arguments), then ess
 
 ## See Also
 
-[Calling Convention](../build/calling-convention.md)
+[Calling Convention](calling-convention.md)

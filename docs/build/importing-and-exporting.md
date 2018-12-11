@@ -16,7 +16,7 @@ You can import public symbols into an application or export functions from a DLL
 
 A module-definition (.def) file is a text file containing one or more module statements that describe various attributes of a DLL. If you do not use **__declspec(dllimport)** or **__declspec(dllexport)** to export a DLL's functions, the DLL requires a .def file.
 
-You can use .def files to [import into an application](../build/importing-using-def-files.md) or to [export from a DLL](../build/exporting-from-a-dll-using-def-files.md).
+You can use .def files to [import into an application](importing-using-def-files.md) or to [export from a DLL](exporting-from-a-dll-using-def-files.md).
 
 ## Using __declspec
 
@@ -30,10 +30,10 @@ The Win32 Portable Executable format is designed to minimize the number of pages
 
 ## What do you want to do?
 
-- [Import into an Application](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [Import into an Application](importing-into-an-application-using-declspec-dllimport.md)
 
-- [Export from a DLL](../build/exporting-from-a-dll.md)
+- [Export from a DLL](exporting-from-a-dll.md)
 
 ## See Also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[DLLs in Visual C++](dlls-in-visual-cpp.md)

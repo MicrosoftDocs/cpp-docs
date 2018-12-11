@@ -9,4 +9,4 @@ The MMX and floating-point stack registers (MM0-MM7/ST0-ST7) are preserved acros
 
 ## See Also
 
-[Calling Convention](../build/calling-convention.md)
+[Calling Convention](calling-convention.md)

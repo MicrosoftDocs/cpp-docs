@@ -5,7 +5,7 @@ ms.assetid: 21410432-72fc-4795-bc93-e78123f9f14f
 ---
 # MASM Macros
 
-In order to simplify the use of the [Raw Pseudo Operations](../build/raw-pseudo-operations.md), there are a set of macros, defined in ksamd64.inc, which can be used to create typical procedure prologues and epilogues.
+In order to simplify the use of the [Raw Pseudo Operations](raw-pseudo-operations.md), there are a set of macros, defined in ksamd64.inc, which can be used to create typical procedure prologues and epilogues.
 
 ## Remarks
 
@@ -54,4 +54,4 @@ sample2 ENDP
 
 ## See Also
 
-[Unwind Helpers for MASM](../build/unwind-helpers-for-masm.md)
+[Unwind Helpers for MASM](unwind-helpers-for-masm.md)

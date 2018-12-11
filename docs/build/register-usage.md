@@ -38,6 +38,6 @@ On function exit and on function entry to C Runtime Library calls and Windows sy
 
 ## See also
 
-- [x64 Software Conventions](../build/x64-software-conventions.md)
+- [x64 Software Conventions](x64-software-conventions.md)
 - [__vectorcall](../cpp/vectorcall.md)
 - [Direction flag](../c-runtime-library/direction-flag.md)

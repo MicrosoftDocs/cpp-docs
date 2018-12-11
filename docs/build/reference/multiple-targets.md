@@ -26,4 +26,4 @@ leap.exe : jump.obj
 
 ## See Also
 
-[Targets](../build/targets.md)
+[Targets](targets.md)

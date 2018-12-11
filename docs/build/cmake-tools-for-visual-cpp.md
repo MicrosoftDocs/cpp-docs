@@ -405,7 +405,7 @@ If you need more information about the state of the CMake cache to diagnose a pr
 
 If you have installed CMake from the Visual Studio Installer, you can run it from the command line by following these steps:
 
-1. Run the appropriate vsdevcmd.bat (x86/x64). See [Building on the Command Line](../build/building-on-the-command-line.md) for more information.
+1. Run the appropriate vsdevcmd.bat (x86/x64). See [Building on the Command Line](building-on-the-command-line.md) for more information.
 
 1. Switch to your output folder.
 

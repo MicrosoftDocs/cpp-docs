@@ -19,8 +19,8 @@ Extensions are not case sensitive. Macros can be invoked to represent *fromext* 
 
 ## What do you want to know more about?
 
-[Search paths in rules](../build/search-paths-in-rules.md)
+[Search paths in rules](search-paths-in-rules.md)
 
 ## See Also
 
-[Inference Rules](../build/inference-rules.md)
+[Inference Rules](inference-rules.md)

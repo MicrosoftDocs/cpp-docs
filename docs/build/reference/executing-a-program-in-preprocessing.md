@@ -10,4 +10,4 @@ To use a command's exit code during preprocessing, specify the command, with any
 
 ## See Also
 
-[Expressions in Makefile Preprocessing](../build/expressions-in-makefile-preprocessing.md)
+[Expressions in Makefile Preprocessing](expressions-in-makefile-preprocessing.md)

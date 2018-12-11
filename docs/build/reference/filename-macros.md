@@ -28,4 +28,4 @@ To specify part of a predefined filename macro, append a macro modifier and encl
 
 ## See Also
 
-[Special NMAKE Macros](../build/special-nmake-macros.md)
+[Special NMAKE Macros](special-nmake-macros.md)

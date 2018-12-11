@@ -19,7 +19,7 @@ Custom build steps and custom build tools share the information specified in the
 
 ### To define what is executed by the custom build step
 
-1. Add a property group to the project file. In this property group, specify the command, its inputs and outputs, and a message, as shown in the following example. This example creates a .cab file from the main.cpp file you created in [Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md).
+1. Add a property group to the project file. In this property group, specify the command, its inputs and outputs, and a message, as shown in the following example. This example creates a .cab file from the main.cpp file you created in [Walkthrough: Using MSBuild to Create a Visual C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md).
 
     ```
     <ItemDefinitionGroup>
@@ -44,6 +44,6 @@ Custom build steps and custom build tools share the information specified in the
 
 ## See Also
 
-[Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
-[How to: Use Build Events in MSBuild Projects](../build/how-to-use-build-events-in-msbuild-projects.md)<br/>
-[How to: Add Custom Build Tools to MSBuild Projects](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)
+[Walkthrough: Using MSBuild to Create a Visual C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[How to: Use Build Events in MSBuild Projects](how-to-use-build-events-in-msbuild-projects.md)<br/>
+[How to: Add Custom Build Tools to MSBuild Projects](how-to-add-custom-build-tools-to-msbuild-projects.md)

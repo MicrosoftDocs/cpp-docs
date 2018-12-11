@@ -10,4 +10,4 @@ To reuse an inline file, specify <<*filename* where the file is defined and firs
 
 ## See Also
 
-[Inline Files in a Makefile](../build/inline-files-in-a-makefile.md)
+[Inline Files in a Makefile](inline-files-in-a-makefile.md)

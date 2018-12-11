@@ -10,4 +10,4 @@ Function pointers are simply pointers to the label of the respective function. T
 
 ## See Also
 
-[Calling Convention](../build/calling-convention.md)
+[Calling Convention](calling-convention.md)

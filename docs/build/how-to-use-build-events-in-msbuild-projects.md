@@ -31,7 +31,7 @@ The following table lists each *use-in-build* element:
 
 ## Example
 
-The following example can be added inside of the Project element of the myproject.vcxproj file created in [Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *pre-build* event makes a copy of main.cpp; a *pre-link* event makes a copy of main.obj; and a *post-build* event makes a copy of myproject.exe. If the project is built using a release configuration, the build events are executed. If the project is built using a debug configuration, the build events are not executed.
+The following example can be added inside of the Project element of the myproject.vcxproj file created in [Walkthrough: Using MSBuild to Create a Visual C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *pre-build* event makes a copy of main.cpp; a *pre-link* event makes a copy of main.obj; and a *post-build* event makes a copy of myproject.exe. If the project is built using a release configuration, the build events are executed. If the project is built using a debug configuration, the build events are not executed.
 
 ```
 <ItemDefinitionGroup>
@@ -64,5 +64,5 @@ The following example can be added inside of the Project element of the myprojec
 
 ## See Also
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)<br/>
-[Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)
+[MSBuild (Visual C++)](msbuild-visual-cpp.md)<br/>
+[Walkthrough: Using MSBuild to Create a Visual C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)

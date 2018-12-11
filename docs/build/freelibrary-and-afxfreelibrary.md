@@ -13,18 +13,18 @@ In an MFC application, use [AfxFreeLibrary](../mfc/reference/application-informa
 
 ## What do you want to do?
 
-- [How to link implicitly to a DLL](../build/linking-an-executable-to-a-dll.md#linking-implicitly)
+- [How to link implicitly to a DLL](linking-an-executable-to-a-dll.md#linking-implicitly)
 
-- [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [Determine which linking method to use](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
 ## What do you want to know more about?
 
-- [LoadLibrary and AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)
+- [LoadLibrary and AfxLoadLibrary](loadlibrary-and-afxloadlibrary.md)
 
-- [GetProcAddress](../build/getprocaddress.md)
+- [GetProcAddress](getprocaddress.md)
 
 ## See Also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)<br/>
+[DLLs in Visual C++](dlls-in-visual-cpp.md)<br/>
 [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
 [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

@@ -20,8 +20,8 @@ No spaces are allowed. The parentheses are optional if *macroname* is a single c
 
 ## What do you want to know more about?
 
-[Macro substitution](../build/macro-substitution.md)
+[Macro substitution](macro-substitution.md)
 
 ## See Also
 
-[Macros and NMAKE](../build/macros-and-nmake.md)
+[Macros and NMAKE](macros-and-nmake.md)

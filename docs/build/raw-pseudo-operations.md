@@ -11,7 +11,7 @@ This topic lists the pseudo operations.
 
 |Pseudo operation|Description|
 |----------------------|-----------------|
-|PROC FRAME [:ehandler]|Causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.  If ehandler is present, this proc is entered in the .xdata as the language specific handler.<br /><br /> When the FRAME attribute is used, it must be followed by an .ENDPROLOG directive.  If the function is a leaf function (as defined in [Function Types](../build/function-types.md)) the FRAME attribute is unnecessary, as are the remainder of these pseudo-operations.|
+|PROC FRAME [:ehandler]|Causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.  If ehandler is present, this proc is entered in the .xdata as the language specific handler.<br /><br /> When the FRAME attribute is used, it must be followed by an .ENDPROLOG directive.  If the function is a leaf function (as defined in [Function Types](function-types.md)) the FRAME attribute is unnecessary, as are the remainder of these pseudo-operations.|
 |.PUSHREG reg|Generates a UWOP_PUSH_NONVOL unwind code entry for the specified register number using the current offset in the prologue.<br /><br /> This should only be used with nonvolatile integer registers.  For pushes of volatile registers, use an .ALLOCSTACK 8, instead|
 |.SETFRAME reg, offset|Fills in the frame register field and offset in the unwind information using the specified register and offset. The offset must be a multiple of 16 and less than or equal to 240. This directive also generates a UWOP_SET_FPREG unwind code entry for the specified register using the current prologue offset.|
 |.ALLOCSTACK size|Generates a UWOP_ALLOC_SMALL or a UWOP_ALLOC_LARGE with the specified size for the current offset in the prologue.<br /><br /> The size operand must be a multiple of 8.|
@@ -71,4 +71,4 @@ sample ENDP
 
 ## See Also
 
-[Unwind Helpers for MASM](../build/unwind-helpers-for-masm.md)
+[Unwind Helpers for MASM](unwind-helpers-for-masm.md)

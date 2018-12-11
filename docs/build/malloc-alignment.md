@@ -11,6 +11,6 @@ Visual C++ permits types that have *extended alignment*, which are also known as
 
 ## See Also
 
-[Stack Usage](../build/stack-usage.md)<br/>
+[Stack Usage](stack-usage.md)<br/>
 [align](../cpp/align-cpp.md)<br/>
 [__declspec](../cpp/declspec.md)

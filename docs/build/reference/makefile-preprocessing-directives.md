@@ -11,7 +11,7 @@ Preprocessing directives are not case sensitive. The initial exclamation point (
 
 - **!CMDSWITCHES** {**+** &#124; **-**}*option* ...
 
-   Turns each *option* listed on or off. Spaces or tabs must appear before the + or - operator; none can appear between the operator and the [option letters](../build/nmake-options.md). Letters are not case sensitive and are specified without a slash ( / ). To turn some options on and others off, use separate specifications of **!CMDSWITCHES**.
+   Turns each *option* listed on or off. Spaces or tabs must appear before the + or - operator; none can appear between the operator and the [option letters](nmake-options.md). Letters are not case sensitive and are specified without a slash ( / ). To turn some options on and others off, use separate specifications of **!CMDSWITCHES**.
 
    Only /D, /I, /N, and /S can be used in a makefile. In Tools.ini, all options are allowed except /F, /HELP, /NOLOGO, /X, and /?. Changes specified in a description block do not take effect until the next description block. This directive updates **MAKEFLAGS**; changes are inherited during recursion if **MAKEFLAGS** is specified.
 
@@ -65,4 +65,4 @@ Preprocessing directives are not case sensitive. The initial exclamation point (
 
 ## See also
 
-- [Makefile Preprocessing](../build/makefile-preprocessing.md)
+- [Makefile Preprocessing](makefile-preprocessing.md)

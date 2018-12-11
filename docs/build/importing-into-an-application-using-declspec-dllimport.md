@@ -35,14 +35,14 @@ class CLASS_DECLSPEC CExampleA : public CObject
 
 ## What do you want to do?
 
-- [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)
+- [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)
 
 ## What do you want to know more about?
 
-- [Importing and exporting inline functions](../build/importing-and-exporting-inline-functions.md)
+- [Importing and exporting inline functions](importing-and-exporting-inline-functions.md)
 
-- [Mutual imports](../build/mutual-imports.md)
+- [Mutual imports](mutual-imports.md)
 
 ## See Also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+[Importing into an Application](importing-into-an-application.md)

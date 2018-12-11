@@ -53,4 +53,4 @@ You can extend the target platform further by creating a custom platform toolset
 
 ## See Also
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)
+[MSBuild (Visual C++)](msbuild-visual-cpp.md)

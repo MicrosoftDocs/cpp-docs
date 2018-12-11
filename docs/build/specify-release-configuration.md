@@ -36,23 +36,23 @@ Use this page of the Create New Project From Existing Code Files wizard to speci
 
 - **Preprocessor definitions (/D)**
 
-   Defines preprocessor symbols for the new project. For more information, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).
+   Defines preprocessor symbols for the new project. For more information, see [/D (Preprocessor Definitions)](reference/d-preprocessor-definitions.md).
 
 - **Include search path (/I)**
 
-   Specifies directory paths to add to the list of directories that the compiler will search to resolve file references passed to preprocessor directives in the new project. For more information, see [/I (Additional Include Directories)](../build/reference/i-additional-include-directories.md).
+   Specifies directory paths to add to the list of directories that the compiler will search to resolve file references passed to preprocessor directives in the new project. For more information, see [/I (Additional Include Directories)](reference/i-additional-include-directories.md).
 
 - **Forced included files (/FI)**
 
-   Specifies header files to process when building the new project. For more information, see [/FI (Name Forced Include File)](../build/reference/fi-name-forced-include-file.md).
+   Specifies header files to process when building the new project. For more information, see [/FI (Name Forced Include File)](reference/fi-name-forced-include-file.md).
 
 - **.NET assembly search path (/AI)**
 
-   Specifies the directory paths that the compiler will search to resolve .NET assembly references passed to preprocessor directives in the new project. For more information, see [/AI (Specify Metadata Directories)](../build/reference/ai-specify-metadata-directories.md).
+   Specifies the directory paths that the compiler will search to resolve .NET assembly references passed to preprocessor directives in the new project. For more information, see [/AI (Specify Metadata Directories)](reference/ai-specify-metadata-directories.md).
 
 - **Forced using .NET assemblies (/FU)**
 
-   Specifies .NET assemblies to process when building the new project. For more information, see [/FU (Name Forced #using File)](../build/reference/fu-name-forced-hash-using-file.md).
+   Specifies .NET assemblies to process when building the new project. For more information, see [/FU (Name Forced #using File)](reference/fu-name-forced-hash-using-file.md).
 
 ## See Also
 

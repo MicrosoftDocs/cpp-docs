@@ -20,4 +20,4 @@ NMAKE looks for a dependent first in the current directory, and then in director
 
 ## See Also
 
-[Dependents](../build/dependents.md)
+[Dependents](dependents.md)

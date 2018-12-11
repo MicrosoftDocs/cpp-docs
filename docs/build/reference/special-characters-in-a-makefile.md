@@ -20,4 +20,4 @@ To use the dollar sign ($) as a literal character in a command, specify two doll
 
 ## See Also
 
-[Contents of a Makefile](../build/contents-of-a-makefile.md)
+[Contents of a Makefile](contents-of-a-makefile.md)

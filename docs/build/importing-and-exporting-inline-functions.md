@@ -15,20 +15,20 @@ One feature of an imported inline function is that you can take its address in C
 
 ## What do you want to do?
 
-- [Export from a DLL](../build/exporting-from-a-dll.md)
+- [Export from a DLL](exporting-from-a-dll.md)
 
-- [Export from a DLL using .DEF files](../build/exporting-from-a-dll-using-def-files.md)
+- [Export from a DLL using .DEF files](exporting-from-a-dll-using-def-files.md)
 
-- [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [Export from a DLL using __declspec(dllexport)](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx-ext-class.md)
+- [Export and import using AFX_EXT_CLASS](exporting-and-importing-using-afx-ext-class.md)
 
-- [Export C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [Export C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [Import into an application using __declspec(dllimport)](importing-into-an-application-using-declspec-dllimport.md)
 
 ## See Also
 
-[Importing and Exporting](../build/importing-and-exporting.md)
+[Importing and Exporting](importing-and-exporting.md)

@@ -6,7 +6,7 @@ ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
 ---
 # How to: Embed a Manifest Inside a C/C++ Application
 
-It is recommended that a C/C++ application (or library) have its manifest embedded inside the final binary because this guarantees correct runtime behavior in most scenarios. By default, Visual Studio tries to embed the manifest when it builds a project from source files; see [Manifest Generation in Visual Studio](../build/manifest-generation-in-visual-studio.md) for more information. However if an application is built by using nmake, some changes to the existing makefile are necessary. This section demonstrates how to change existing makefiles to automatically embed the manifest inside the final binary.
+It is recommended that a C/C++ application (or library) have its manifest embedded inside the final binary because this guarantees correct runtime behavior in most scenarios. By default, Visual Studio tries to embed the manifest when it builds a project from source files; see [Manifest Generation in Visual Studio](manifest-generation-in-visual-studio.md) for more information. However if an application is built by using nmake, some changes to the existing makefile are necessary. This section demonstrates how to change existing makefiles to automatically embed the manifest inside the final binary.
 
 ## Two approaches
 
@@ -246,4 +246,4 @@ $(_VC_MANIFEST_BASENAME).auto.manifest :
 
 ## See Also
 
-[Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+[Understanding Manifest Generation for C/C++ Programs](understanding-manifest-generation-for-c-cpp-programs.md)

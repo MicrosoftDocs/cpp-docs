@@ -16,4 +16,4 @@ Use recursion macros to call NMAKE recursively. Recursive sessions inherit comma
 
 ## See Also
 
-[Special NMAKE Macros](../build/special-nmake-macros.md)
+[Special NMAKE Macros](special-nmake-macros.md)

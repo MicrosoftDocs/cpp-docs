@@ -9,26 +9,26 @@ This section describes the process that one function (caller) makes call into an
 
 For prototyped functions, all arguments are converted to the expected callee types before passing.
 
-- [Parameter Passing](../build/parameter-passing.md)
+- [Parameter Passing](parameter-passing.md)
 
-- [Varargs](../build/varargs.md)
+- [Varargs](varargs.md)
 
-- [Unprototyped Functions](../build/unprototyped-functions.md)
+- [Unprototyped Functions](unprototyped-functions.md)
 
-- [Return Values](../build/return-values-cpp.md)
+- [Return Values](return-values-cpp.md)
 
-- [Caller/Callee Saved Registers](../build/caller-callee-saved-registers.md)
+- [Caller/Callee Saved Registers](caller-callee-saved-registers.md)
 
-- [Function Pointers](../build/function-pointers.md)
+- [Function Pointers](function-pointers.md)
 
-- [Floating-Point Support for Older Code (Visual C++)](../build/floating-point-support-for-older-code-visual-cpp.md)
+- [Floating-Point Support for Older Code (Visual C++)](floating-point-support-for-older-code-visual-cpp.md)
 
-- [FpCsr](../build/fpcsr.md)
+- [FpCsr](fpcsr.md)
 
-- [MXCSR](../build/mxcsr.md)
+- [MXCSR](mxcsr.md)
 
-- [setjmp/longjump](../build/setjmp-longjump.md)
+- [setjmp/longjump](setjmp-longjump.md)
 
 ## See Also
 
-[x64 Software Conventions](../build/x64-software-conventions.md)
+[x64 Software Conventions](x64-software-conventions.md)

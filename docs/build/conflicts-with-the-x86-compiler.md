@@ -17,5 +17,5 @@ If you require more strict alignment, use `__declspec(align(N)) on your variable
 
 ## See Also
 
-[Types and Storage](../build/types-and-storage.md)<br/>
+[Types and Storage](types-and-storage.md)<br/>
 [align](../cpp/align-cpp.md)

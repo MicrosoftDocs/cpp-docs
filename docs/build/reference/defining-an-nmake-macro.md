@@ -21,14 +21,14 @@ The `string` can be any sequence of zero or more characters. A null string conta
 
 ## What do you want to know more about?
 
-[Special characters in macros](../build/special-characters-in-macros.md)
+[Special characters in macros](special-characters-in-macros.md)
 
-[Null and undefined macros](../build/null-and-undefined-macros.md)
+[Null and undefined macros](null-and-undefined-macros.md)
 
-[Where to define macros](../build/where-to-define-macros.md)
+[Where to define macros](where-to-define-macros.md)
 
-[Precedence in macro definitions](../build/precedence-in-macro-definitions.md)
+[Precedence in macro definitions](precedence-in-macro-definitions.md)
 
 ## See Also
 
-[Macros and NMAKE](../build/macros-and-nmake.md)
+[Macros and NMAKE](macros-and-nmake.md)

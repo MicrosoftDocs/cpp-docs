@@ -19,4 +19,4 @@ target.lib :: four.c five.c
 
 ## See Also
 
-[Targets](../build/targets.md)
+[Targets](targets.md)

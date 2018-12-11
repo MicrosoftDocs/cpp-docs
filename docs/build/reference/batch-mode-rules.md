@@ -82,4 +82,4 @@ Generating Code...
 
 ## See Also
 
-[Inference Rules](../build/inference-rules.md)
+[Inference Rules](inference-rules.md)

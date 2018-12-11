@@ -12,10 +12,10 @@ Expressions can use operators that act on constant values, exit codes from comma
 
 ## What do you want to know more about?
 
-[Makefile preprocessing operators](../build/makefile-preprocessing-operators.md)
+[Makefile preprocessing operators](makefile-preprocessing-operators.md)
 
-[Executing a program in preprocessing](../build/executing-a-program-in-preprocessing.md)
+[Executing a program in preprocessing](executing-a-program-in-preprocessing.md)
 
 ## See Also
 
-[Makefile Preprocessing](../build/makefile-preprocessing.md)
+[Makefile Preprocessing](makefile-preprocessing.md)

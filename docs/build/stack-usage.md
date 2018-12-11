@@ -9,16 +9,16 @@ All memory beyond the current address of RSP is considered volatile: The OS, or 
 
 This section discusses the allocation of stack space for local variables and the **alloca** intrinsic.
 
-- [Stack Allocation](../build/stack-allocation.md)
+- [Stack Allocation](stack-allocation.md)
 
-- [Dynamic Parameter Stack Area Construction](../build/dynamic-parameter-stack-area-construction.md)
+- [Dynamic Parameter Stack Area Construction](dynamic-parameter-stack-area-construction.md)
 
-- [Function Types](../build/function-types.md)
+- [Function Types](function-types.md)
 
-- [malloc Alignment](../build/malloc-alignment.md)
+- [malloc Alignment](malloc-alignment.md)
 
-- [alloca](../build/alloca.md)
+- [alloca](alloca.md)
 
 ## See Also
 
-[x64 Software Conventions](../build/x64-software-conventions.md)
+[x64 Software Conventions](x64-software-conventions.md)

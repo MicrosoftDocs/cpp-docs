@@ -11,14 +11,14 @@ The parameter area is always at the bottom of the stack (even if alloca is used)
 
 If space is dynamically allocated (alloca) in a function, then a nonvolatile register must be used as a frame pointer to mark the base of the fixed part of the stack and that register must be saved and initialized in the prolog. Note that when alloca is used, calls to the same callee from the same caller may have different home addresses for their register parameters.
 
-The stack will always be maintained 16-byte aligned, except within the prolog (for example, after the return address is pushed), and except where indicated in [Function Types](../build/function-types.md) for a certain class of frame functions.
+The stack will always be maintained 16-byte aligned, except within the prolog (for example, after the return address is pushed), and except where indicated in [Function Types](function-types.md) for a certain class of frame functions.
 
 The following is an example of the stack layout where function A calls a non-leaf function B. Function A's prolog has already allocated space for all the register and stack parameters required by B at the bottom of the stack. The call pushes the return address and B's prolog allocates space for its local variables, nonvolatile registers, and the space needed for it to call functions. If B uses alloca, the space is allocated between the local variable/nonvolatile register save area and the parameter stack area.
 
-![AMD conversion example](../build/media/vcamd_conv_ex_5.png "AMD conversion example")
+![AMD conversion example](media/vcamd_conv_ex_5.png "AMD conversion example")
 
 When the function B calls another function, the return address is pushed just below the home address for RCX.
 
 ## See Also
 
-[Stack Usage](../build/stack-usage.md)
+[Stack Usage](stack-usage.md)

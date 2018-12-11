@@ -25,4 +25,4 @@ If an environment variable is defined as a string that would be syntactically in
 
 ## See Also
 
-[Special NMAKE Macros](../build/special-nmake-macros.md)
+[Special NMAKE Macros](special-nmake-macros.md)

@@ -37,7 +37,7 @@ When building your DLL, you typically create a header file that contains the fun
 #define DllExport   __declspec( dllexport )
 ```
 
-**__declspec(dllexport)** stores function names in the DLL's export table. If you want to optimize the table's size, see [Exporting Functions from a DLL by Ordinal Rather Than by Name](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+**__declspec(dllexport)** stores function names in the DLL's export table. If you want to optimize the table's size, see [Exporting Functions from a DLL by Ordinal Rather Than by Name](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
 
 > [!NOTE]
 >  When porting DLL source code from Win16 to Win32, replace each instance of **__export** with **__declspec(dllexport)**.
@@ -46,28 +46,28 @@ As a reference, search through the Win32 Winbase.h header file. It contains exam
 
 ## What do you want to do?
 
-- [Export from a DLL using .def files](../build/exporting-from-a-dll-using-def-files.md)
+- [Export from a DLL using .def files](exporting-from-a-dll-using-def-files.md)
 
-- [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx-ext-class.md)
+- [Export and import using AFX_EXT_CLASS](exporting-and-importing-using-afx-ext-class.md)
 
-- [Export C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [Export C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Export C functions for use in C or C++-language executables](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [Export C functions for use in C or C++-language executables](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [Import into an application using __declspec(dllimport)](importing-into-an-application-using-declspec-dllimport.md)
 
-- [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)
+- [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)
 
 ## What do you want to know more about?
 
 - [The __declspec keyword](../cpp/declspec.md)
 
-- [Importing and exporting inline functions](../build/importing-and-exporting-inline-functions.md)
+- [Importing and exporting inline functions](importing-and-exporting-inline-functions.md)
 
-- [Mutual imports](../build/mutual-imports.md)
+- [Mutual imports](mutual-imports.md)
 
 ## See Also
 
-[Exporting from a DLL](../build/exporting-from-a-dll.md)
+[Exporting from a DLL](exporting-from-a-dll.md)

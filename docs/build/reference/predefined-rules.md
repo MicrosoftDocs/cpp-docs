@@ -26,4 +26,4 @@ Predefined inference rules use NMAKE-supplied command and options macros.
 
 ## See Also
 
-[Inference Rules](../build/inference-rules.md)
+[Inference Rules](inference-rules.md)

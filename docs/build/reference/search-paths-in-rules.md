@@ -50,4 +50,4 @@ An inference rule applies to a dependency only if paths specified in the depende
 
 ## See Also
 
-[Defining a Rule](../build/defining-a-rule.md)
+[Defining a Rule](defining-a-rule.md)

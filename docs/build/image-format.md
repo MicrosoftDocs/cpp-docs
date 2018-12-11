@@ -9,4 +9,4 @@ The executable image format is PE32+. Executable images (both DLLs and EXEs) are
 
 ## See Also
 
-[x64 Software Conventions](../build/x64-software-conventions.md)
+[x64 Software Conventions](x64-software-conventions.md)

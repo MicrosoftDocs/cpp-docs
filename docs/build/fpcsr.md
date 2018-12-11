@@ -27,4 +27,4 @@ There are two exceptions to the rules regarding the non-volatility of the contro
 
 ## See Also
 
-[Calling Convention](../build/calling-convention.md)
+[Calling Convention](calling-convention.md)

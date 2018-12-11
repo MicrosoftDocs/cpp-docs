@@ -15,7 +15,7 @@ Use the **/target** (or **/t**) and **/property** (or **/p**) command-line optio
 
 An essential function of the project file is to specify a *target*, which is a particular operation applied to your project, and the inputs and outputs that are required to perform that operation. A project file can specify one or more targets, which can include a default target.
 
-Each target consists of a sequence of one or more *tasks*. Each task is represented by a .NET Framework class that contains one executable command. For example, the [CL task](/visualstudio/msbuild/cl-task) contains the [cl.exe](../build/reference/compiling-a-c-cpp-program.md) command.
+Each target consists of a sequence of one or more *tasks*. Each task is represented by a .NET Framework class that contains one executable command. For example, the [CL task](/visualstudio/msbuild/cl-task) contains the [cl.exe](reference/compiling-a-c-cpp-program.md) command.
 
 A *task parameter* is a property of the class task and typically represents a command-line option of the executable command. For example, the `FavorSizeOrSpeed` parameter of the `CL` task corresponds to the **/Os** and **/Ot** compiler options.
 
@@ -50,13 +50,13 @@ Describes MSBuild tasks. Especially note these tasks, which are specific to Visu
 
 |Term|Definition|
 |----------|----------------|
-|[Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Demonstrates how to create a Visual C++ project using **MSBuild**.|
-|[How to: Use Build Events in MSBuild Projects](../build/how-to-use-build-events-in-msbuild-projects.md)|Demonstrates how to specify an action that occurs at a particuler stage in the build: before the build starts; before the link step starts; or after the build ends.|
-|[How to: Add a Custom Build Step to MSBuild Projects](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)|Demonstrates how to add a user-defined stage to the build sequence.|
-|[How to: Add Custom Build Tools to MSBuild Projects](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)|Demonstrates how to associate a build tool with a particular file.|
-|[How to: Integrate Custom Tools into the Project Properties](../build/how-to-integrate-custom-tools-into-the-project-properties.md)|Demonstrates how to add options for a custom tool to the project properties.|
-|[How to: Modify the Target Framework and Platform Toolset](../build/how-to-modify-the-target-framework-and-platform-toolset.md)|Demonstrates how to compile a project for multiple frameworks or toolsets.|
+|[Walkthrough: Using MSBuild to Create a Visual C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Demonstrates how to create a Visual C++ project using **MSBuild**.|
+|[How to: Use Build Events in MSBuild Projects](how-to-use-build-events-in-msbuild-projects.md)|Demonstrates how to specify an action that occurs at a particuler stage in the build: before the build starts; before the link step starts; or after the build ends.|
+|[How to: Add a Custom Build Step to MSBuild Projects](how-to-add-a-custom-build-step-to-msbuild-projects.md)|Demonstrates how to add a user-defined stage to the build sequence.|
+|[How to: Add Custom Build Tools to MSBuild Projects](how-to-add-custom-build-tools-to-msbuild-projects.md)|Demonstrates how to associate a build tool with a particular file.|
+|[How to: Integrate Custom Tools into the Project Properties](how-to-integrate-custom-tools-into-the-project-properties.md)|Demonstrates how to add options for a custom tool to the project properties.|
+|[How to: Modify the Target Framework and Platform Toolset](how-to-modify-the-target-framework-and-platform-toolset.md)|Demonstrates how to compile a project for multiple frameworks or toolsets.|
 
 ## See Also
 
-[Build C/C++ code on the command line](../build/building-on-the-command-line.md)
+[Build C/C++ code on the command line](building-on-the-command-line.md)

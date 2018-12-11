@@ -30,4 +30,4 @@ challeng.exe: challeng.obj md4c.obj
 
 ## See Also
 
-[Contents of a Makefile](../build/contents-of-a-makefile.md)
+[Contents of a Makefile](contents-of-a-makefile.md)

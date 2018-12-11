@@ -50,9 +50,9 @@ Note that because the `CWinApp::Run` mechanism does not apply to a DLL, the appl
 
 If your DLL is a regular MFC DLL that is statically linked to MFC, changing it to a regular MFC DLL that is dynamically linked to MFC reduces the file size.
 
-If the DLL has a large number of exported functions, use a .def file to export the functions (instead of using **__declspec(dllexport)**) and use the .def file [NONAME attribute](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) on each exported function. The NONAME attribute causes only the ordinal value and not the function name to be stored in the DLL's export table, which reduces the file size.
+If the DLL has a large number of exported functions, use a .def file to export the functions (instead of using **__declspec(dllexport)**) and use the .def file [NONAME attribute](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) on each exported function. The NONAME attribute causes only the ordinal value and not the function name to be stored in the DLL's export table, which reduces the file size.
 
-DLLs that are implicitly linked to an application are loaded when the application loads. To improve the performance when loading, try dividing the DLL into different DLLs. Put all the functions that the calling application needs immediately after loading into one DLL and have the calling application implicitly link to that DLL. Put the other functions that the calling application does not need right away into another DLL and have the application explicitly link to that DLL. For more information, see [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use).
+DLLs that are implicitly linked to an application are loaded when the application loads. To improve the performance when loading, try dividing the DLL into different DLLs. Put all the functions that the calling application needs immediately after loading into one DLL and have the calling application implicitly link to that DLL. Put the other functions that the calling application does not need right away into another DLL and have the application explicitly link to that DLL. For more information, see [Determine which linking method to use](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use).
 
 ## <a name="memory_leak"></a> There&#39;s a memory leak in my regular MFC DLL, but my code looks fine. How can I find the memory leak?
 
@@ -60,4 +60,4 @@ One possible cause of the memory leak is that MFC creates temporary objects that
 
 ## See Also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[DLLs in Visual C++](dlls-in-visual-cpp.md)

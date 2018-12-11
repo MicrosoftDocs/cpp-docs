@@ -21,4 +21,4 @@ NMAKE returns the following exit codes:
 
 ## See Also
 
-[Running NMAKE](../build/running-nmake.md)
+[Running NMAKE](running-nmake.md)

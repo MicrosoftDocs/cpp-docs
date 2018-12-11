@@ -12,15 +12,15 @@ The Visual C++ command-line build tools require several environment variables th
 
 The Visual C++ command-line tools use the PATH, TMP, INCLUDE, LIB, and LIBPATH environment variables, and also use other environment variables specific to your installed tools, platforms, and SDKs. Even a simple Visual Studio installation may set twenty or more environment variables. Because the values of these environment variables are specific to your installation and your choice of build configuration, and can be changed by product updates or upgrades, we strongly recommend that you use a developer command prompt shortcut or one of the customized command files to set them, instead of setting them in the Windows environment yourself.
 
-To see which environment variables are set by a developer command prompt shortcut, you can use the SET command. Open a plain command prompt window and capture the output of the SET command for a baseline. Open a developer command prompt window and capture the output of the SET command for comparison. A diff tool such as the one built into the Visual Studio IDE can be useful to compare the environment variables and see what is set by the developer command prompt. For information about the specific environment variables used by the compiler and linker, see [CL Environment Variables](../build/reference/cl-environment-variables.md) and [LINK Environment Variables](../build/reference/link-environment-variables.md).
+To see which environment variables are set by a developer command prompt shortcut, you can use the SET command. Open a plain command prompt window and capture the output of the SET command for a baseline. Open a developer command prompt window and capture the output of the SET command for comparison. A diff tool such as the one built into the Visual Studio IDE can be useful to compare the environment variables and see what is set by the developer command prompt. For information about the specific environment variables used by the compiler and linker, see [CL Environment Variables](reference/cl-environment-variables.md) and [LINK Environment Variables](reference/link-environment-variables.md).
 
 > [!NOTE]
 >  Several command-line tools or tool options may require Administrator permission. If you have permission issues when you use them, we recommend that you open the developer command prompt window by using the **Run as Administrator** option. On Windows 10, right-click to open the shortcut menu for the command prompt window, then choose **More**, **Run as administrator**.
 
 ## See Also
 
-[Build C/C++ code on the command line](../build/building-on-the-command-line.md)<br/>
-[Linking](../build/reference/linking.md)<br/>
-[Linker Options](../build/reference/linker-options.md)<br/>
-[Compiling a C/C++ Program](../build/reference/compiling-a-c-cpp-program.md)<br/>
-[Compiler Options](../build/reference/compiler-options.md)
+[Build C/C++ code on the command line](building-on-the-command-line.md)<br/>
+[Linking](reference/linking.md)<br/>
+[Linker Options](reference/linker-options.md)<br/>
+[Compiling a C/C++ Program](reference/compiling-a-c-cpp-program.md)<br/>
+[Compiler Options](reference/compiler-options.md)

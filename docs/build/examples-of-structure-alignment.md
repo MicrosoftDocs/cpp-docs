@@ -18,7 +18,7 @@ _declspec(align(2)) struct {
 }
 ```
 
-![AMD conversion example 1 structure layout](../build/media/vcamd_conv_ex_1_block.png "AMD conversion example 1 structure layout")
+![AMD conversion example 1 structure layout](media/vcamd_conv_ex_1_block.png "AMD conversion example 1 structure layout")
 
 ## Example 2
 
@@ -32,7 +32,7 @@ _declspec(align(8)) struct {
 }
 ```
 
-![AMD conversion example 2 structure layout](../build/media/vcamd_conv_ex_2_block.png "AMD conversion example 2 structure layout")
+![AMD conversion example 2 structure layout](media/vcamd_conv_ex_2_block.png "AMD conversion example 2 structure layout")
 
 ## Example 3
 
@@ -47,7 +47,7 @@ _declspec(align(4)) struct {
 }
 ```
 
-![AMD conversion example 2 structure layout](../build/media/vcamd_conv_ex_3_block.png "AMD conversion example 2 structure layout")
+![AMD conversion example 2 structure layout](media/vcamd_conv_ex_3_block.png "AMD conversion example 2 structure layout")
 
 ## Example 4
 
@@ -61,8 +61,8 @@ _declspec(align(8)) union {
 }
 ```
 
-![AMD conversion example 4 union layouit](../build/media/vcamd_conv_ex_4_block.png "AMD conversion example 4 union layouit")
+![AMD conversion example 4 union layouit](media/vcamd_conv_ex_4_block.png "AMD conversion example 4 union layouit")
 
 ## See also
 
-[Types and Storage](../build/types-and-storage.md)<br/>
+[Types and Storage](types-and-storage.md)<br/>

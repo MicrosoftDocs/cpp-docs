@@ -12,7 +12,7 @@ NMAKE assumes an inferred dependent for a target if an applicable inference rule
 
 - *fromext* matches the extension of a file that has the target's base name and that exists in the current or specified directory.
 
-- *fromext* is in [.SUFFIXES](../build/dot-directives.md); no other *fromext* in a matching rule has a higher **.SUFFIXES** priority.
+- *fromext* is in [.SUFFIXES](dot-directives.md); no other *fromext* in a matching rule has a higher **.SUFFIXES** priority.
 
 - No explicit dependent has a higher **.SUFFIXES** priority.
 
@@ -20,4 +20,4 @@ Inferred dependents can cause unexpected side effects. If the target's descripti
 
 ## See Also
 
-[Inference Rules](../build/inference-rules.md)
+[Inference Rules](inference-rules.md)

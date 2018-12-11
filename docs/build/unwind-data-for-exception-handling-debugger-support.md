@@ -7,14 +7,14 @@ ms.assetid: 68f1e30d-9038-41af-a48f-02129bfe8928
 
 This section discusses the data structures required for exception handling and debugging support.
 
-- [struct RUNTIME_FUNCTION](../build/struct-runtime-function.md)
+- [struct RUNTIME_FUNCTION](struct-runtime-function.md)
 
-- [struct UNWIND_INFO](../build/struct-unwind-info.md)
+- [struct UNWIND_INFO](struct-unwind-info.md)
 
-- [struct UNWIND_CODE](../build/struct-unwind-code.md)
+- [struct UNWIND_CODE](struct-unwind-code.md)
 
-- [Chained Unwind Info Structures](../build/chained-unwind-info-structures.md)
+- [Chained Unwind Info Structures](chained-unwind-info-structures.md)
 
 ## See Also
 
-[Exception Handling (x64)](../build/exception-handling-x64.md)
+[Exception Handling (x64)](exception-handling-x64.md)

@@ -20,7 +20,7 @@ is decorated as `_func@12` in the output.
 
 The C calling convention (`__cdecl`) decorates the name as `_func`.
 
-To get the decorated name, use [/MAP](../build/reference/map-generate-mapfile.md). Use of **__declspec(dllexport)** does the following:
+To get the decorated name, use [/MAP](reference/map-generate-mapfile.md). Use of **__declspec(dllexport)** does the following:
 
 - If the function is exported with the C calling convention (`__cdecl`), it strips the leading underscore ( **\_** ) when the name is exported.
 
@@ -45,18 +45,18 @@ For DLLs to be called by programs written in Visual Basic, the alias technique s
 
 ## What do you want to know more about?
 
-- [Exporting from a DLL](../build/exporting-from-a-dll.md)
+- [Exporting from a DLL](exporting-from-a-dll.md)
 
-- [Exporting from a DLL using .DEF files](../build/exporting-from-a-dll-using-def-files.md)
+- [Exporting from a DLL using .DEF files](exporting-from-a-dll-using-def-files.md)
 
-- [Exporting from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [Exporting from a DLL using __declspec(dllexport)](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [Exporting C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [Exporting C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Determining which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determining which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Decorated names](../build/reference/decorated-names.md)
+- [Decorated names](reference/decorated-names.md)
 
 ## See Also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[DLLs in Visual C++](dlls-in-visual-cpp.md)

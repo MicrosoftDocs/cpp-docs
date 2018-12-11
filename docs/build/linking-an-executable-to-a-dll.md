@@ -62,7 +62,7 @@ To use a DLL by implicit linking, client executables must obtain these files fro
 
 - One or more header files (.h files) that contain the declarations of the exported data, functions and/or C++ classes in the DLL. The classes, functions, and data exported by the DLL must all be marked `__declspec(dllimport)` in the header file. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).
 
-- An import library to link into your executable. The linker creates the import library when the DLL is built. For more information, see [.LIB files](../build/reference/dot-lib-files-as-linker-input.md).
+- An import library to link into your executable. The linker creates the import library when the DLL is built. For more information, see [.LIB files](reference/dot-lib-files-as-linker-input.md).
 
 - The actual DLL file.
 
@@ -125,10 +125,10 @@ Unlike in this example, in most cases you should call `LoadLibrary` and `FreeLib
 
 ## What do you want to know more about?
 
-- [Working with Import Libraries and Export Files](../build/reference/working-with-import-libraries-and-export-files.md)
+- [Working with Import Libraries and Export Files](reference/working-with-import-libraries-and-export-files.md)
 
 - [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
 ## See Also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[DLLs in Visual C++](dlls-in-visual-cpp.md)

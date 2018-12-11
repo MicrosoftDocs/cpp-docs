@@ -24,7 +24,7 @@ The general solution for handling mutual imports is:
 
 The following illustration shows a solution for two mutually importing DLLs, DLL1 and DLL2. Step 1 is to run LIB, with the /DEF option set, on DLL1. Step 1 produces DLL1.lib, an import library, and DLL1.exp. In step 2, the import library is used to build DLL2, which in turn produces an import library for DLL2's symbols. Step 3 builds DLL1, by using DLL1.exp and DLL2.lib as input. Note that an .exp file for DLL2 is not necessary because LIB was not used to build DLL2's import library.
 
-![Using mutual imports to link two DLLs](../build/media/vc37yj1.gif "Using mutual imports to link two DLLs")<br/>
+![Using mutual imports to link two DLLs](media/vc37yj1.gif "Using mutual imports to link two DLLs")<br/>
 Linking Two DLLs with Mutual Imports
 
 ## Limitations of _AFXEXT
@@ -92,24 +92,24 @@ class CExampleA : public CObject
 
 ### What do you want to do?
 
-- [Export from a DLL](../build/exporting-from-a-dll.md)
+- [Export from a DLL](exporting-from-a-dll.md)
 
-- [Export from a DLL using .DEF files](../build/exporting-from-a-dll-using-def-files.md)
+- [Export from a DLL using .DEF files](exporting-from-a-dll-using-def-files.md)
 
-- [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [Export from a DLL using __declspec(dllexport)](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx-ext-class.md)
+- [Export and import using AFX_EXT_CLASS](exporting-and-importing-using-afx-ext-class.md)
 
-- [Export C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [Export C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [Import into an application using __declspec(dllimport)](importing-into-an-application-using-declspec-dllimport.md)
 
 ### What do you want to know more about?
 
-- [The LIB utility and the /DEF option](../build/reference/lib-reference.md)
+- [The LIB utility and the /DEF option](reference/lib-reference.md)
 
 ## See Also
 
-[Importing and Exporting](../build/importing-and-exporting.md)
+[Importing and Exporting](importing-and-exporting.md)

@@ -8,24 +8,24 @@ ms.assetid: 29362adb-d963-4c00-84a6-b38c2ffe6a36
 
 A makefile contains:
 
-- [Description blocks](../build/description-blocks.md)
+- [Description blocks](description-blocks.md)
 
-- [Commands](../build/commands-in-a-makefile.md)
+- [Commands](commands-in-a-makefile.md)
 
-- [Macros](../build/macros-and-nmake.md)
+- [Macros](macros-and-nmake.md)
 
-- [Inference rules](../build/inference-rules.md)
+- [Inference rules](inference-rules.md)
 
-- [Dot directives](../build/dot-directives.md)
+- [Dot directives](dot-directives.md)
 
-- [Preprocessing directives](../build/makefile-preprocessing.md)
+- [Preprocessing directives](makefile-preprocessing.md)
 
 ## Remarks
 
-Other features you can use in a makefile are [wildcards](../build/wildcards-and-nmake.md), [long filenames](../build/long-filenames-in-a-makefile.md), [comments](../build/comments-in-a-makefile.md), and [special characters](../build/special-characters-in-a-makefile.md).
+Other features you can use in a makefile are [wildcards](wildcards-and-nmake.md), [long filenames](long-filenames-in-a-makefile.md), [comments](comments-in-a-makefile.md), and [special characters](special-characters-in-a-makefile.md).
 
-For a sample, see [Sample Makefile](../build/sample-makefile.md).
+For a sample, see [Sample Makefile](sample-makefile.md).
 
 ## See Also
 
-[NMAKE Reference](../build/nmake-reference.md)
+[NMAKE Reference](nmake-reference.md)

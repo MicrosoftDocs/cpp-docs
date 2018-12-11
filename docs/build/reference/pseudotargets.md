@@ -12,4 +12,4 @@ Pseudotarget names follow the filename syntax rules for targets. However, if the
 
 ## See Also
 
-[Targets](../build/targets.md)
+[Targets](targets.md)

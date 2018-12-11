@@ -21,7 +21,7 @@ The project templates included in Visual Studio depend on the product version an
 |----------------------|-----------------------------|
 |[Windows Console Application](../windows/creating-a-console-application.md)|A project for creating a Windows console application.|
 |[Windows Desktop Application](../windows/walkthrough-creating-windows-desktop-applications-cpp.md)|A project for creating a Windows desktop (Win32) application.|
-|[Dynamic-Link Library](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)|A project for creating a dynamic-link library (DLL).|
+|[Dynamic-Link Library](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)|A project for creating a dynamic-link library (DLL).|
 |[Static Library](../windows/walkthrough-creating-and-using-a-static-library-cpp.md)|A project for creating a static library (LIB).|
 |Windows Desktop Wizard|A wizard for creating Windows desktop applications and libraries with additional options.|
 

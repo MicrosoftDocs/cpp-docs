@@ -31,4 +31,4 @@ where *suffixlist* is a list of the additional suffixes, separated by one or mor
 
 ## See Also
 
-[NMAKE Reference](../build/nmake-reference.md)
+[NMAKE Reference](nmake-reference.md)

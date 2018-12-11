@@ -11,10 +11,10 @@ In order to write proper assembly routines, there are a set of pseudo-operations
 
 The following topics are in this section:
 
-- [Raw Pseudo Operations](../build/raw-pseudo-operations.md)
+- [Raw Pseudo Operations](raw-pseudo-operations.md)
 
-- [MASM Macros](../build/masm-macros.md)
+- [MASM Macros](masm-macros.md)
 
 ## See Also
 
-[Exception Handling (x64)](../build/exception-handling-x64.md)
+[Exception Handling (x64)](exception-handling-x64.md)

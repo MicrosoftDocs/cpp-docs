@@ -55,4 +55,4 @@ typedef struct _DISPATCHER_CONTEXT {
 
 ## See Also
 
-[Exception Handling (x64)](../build/exception-handling-x64.md)
+[Exception Handling (x64)](exception-handling-x64.md)

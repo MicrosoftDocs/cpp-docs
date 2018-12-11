@@ -32,4 +32,4 @@ For example, if the filename is c:\prog.exe:
 
 ## See Also
 
-[Commands in a Makefile](../build/commands-in-a-makefile.md)
+[Commands in a Makefile](commands-in-a-makefile.md)
