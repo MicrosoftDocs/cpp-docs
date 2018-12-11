@@ -55,7 +55,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile).|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hotpatchable image.|
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Generates fast transcendentals.|
-|[QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only)|
+|[/QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only)|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|
 |[/Qpar](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops.|
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|Enables reporting levels for automatic parallelization.|
@@ -200,7 +200,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Deprecated. Enables fast checks. Use [/RTC1](rtc-run-time-error-checks.md) instead.|
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
 |[/Og](og-global-optimizations.md)|Deprecated. Uses global optimizations.|
-|[QIfist](qifist-suppress-ftol.md)|Deprecated. Once used to specify how to convert from a floating-point type to an integral type.|
+|[/QIfist](qifist-suppress-ftol.md)|Deprecated. Once used to specify how to convert from a floating-point type to an integral type.|
 |[/V](v-version-number.md)|Deprecated. Sets the .obj file version string.|
 |[/Wp64](wp64-detect-64-bit-portability-issues.md)|Obsolete. Detects 64-bit portability problems.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Deprecated. Places complete debugging information in all object files. Use [/Zi](z7-zi-zi-debug-information-format.md) instead.|
