@@ -33,29 +33,21 @@ The output file that you specify in the project has no effect on the name that t
 
 You can view and edit the project's properties in its property page. See [Working with project properties](working-with-project-properties.md) for information about displaying the property page.
 
-## makefile project wizard
+## Makefile project wizard
 
 After you create a makefile project, you can view and edit each of the following options in the **Nmake** page of the project's property page.
 
-    Build command line
+- **Build command line:** Specifies the command line to run when the user selects Build from the Build menu. Displayed in the Build command line field on the Nmake page of the project's property page.
 
-    Specifies the command line to run when the user selects Build from the Build menu. Displayed in the Build command line field on the Nmake page of the project's property page.
+- **Output:** Specifies the name of the file that will contain the output for the command line. By default, this option is based on the project name. Displayed in the Output field on the Nmake page of the project's property page.
 
-    Output
+- **Clean commands:** Specifies the command line to run when the user selects Clean from the Build menu. Displayed in the Clean command line field on the Nmake page of the project's property page.
 
-    Specifies the name of the file that will contain the output for the command line. By default, this option is based on the project name. Displayed in the Output field on the Nmake page of the project's property page.
-
-    Clean commands
-
-    Specifies the command line to run when the user selects Clean from the Build menu. Displayed in the Clean command line field on the Nmake page of the project's property page.
-
-    Rebuild command line
-
-    Specifies the command line to run when the user selects Rebuild from the Build menu. Displayed in the Rebuild all command line field on the Nmake page of the project's property page.
+- **Rebuild command line:** Specifies the command line to run when the user selects Rebuild from the Build menu. Displayed in the Rebuild all command line field on the Nmake page of the project's property page.
 
 ## How to: Enable IntelliSense for Makefile Projects
 
-IntelliSense fails in makefile projects when certain project settings, or compiler options, are set up incorrectly. Use this procedure to configure makefile projects, so that IntelliSense works as expected:
+IntelliSense fails in makefile projects when certain project settings or compiler options are set up incorrectly. Follow these steps to configure makefile projects so that IntelliSense works as expected:
 
 1. Open the **Property Pages** dialog box. For details, see [Working with Project Properties](working-with-project-properties.md).
 
@@ -67,7 +59,7 @@ IntelliSense fails in makefile projects when certain project settings, or compil
 
    - Set the **Include Search Path** property to specify the list of directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project. See [/I (Additional Include Directories)](reference/i-additional-include-directories.md), for more information.
 
-         For projects that are built using CL.EXE from a Command Window, set the **INCLUDE** environment variable to specify directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project.
+    - For projects that are built using CL.EXE from a Command Window, set the **INCLUDE** environment variable to specify directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project.
 
    - Set the **Forced Includes** property to specify which header files to process when building your makefile project. See [/FI (Name Forced Include File)](reference/fi-name-forced-include-file.md), for more information.
 
