@@ -15,13 +15,13 @@ The resulting funclet name can be too long, and the compiler will truncate it an
 
 To resolve this warning, shorten the original function name. If the function is a C++ template function or method, use a typedef for part of the name. For example:
 
-```
+```cpp
 C1<x, y, z<T>>::C2<a,b,c>::f
 ```
 
 can be replaced by:
 
-```
+```cpp
 typedef C1<x, y, z<T>>::C2<a,b,c> new_class ;
 new_class::f
 ```

@@ -13,7 +13,7 @@ The specified function can potentially not return a value.
 
 ## Example
 
-```
+```cpp
 // C4715a.cpp
 // compile with: /W1 /LD
 int func1( int i )
@@ -25,7 +25,7 @@ int func1( int i )
 
 To prevent this warning, modify the code so that all paths assign a return value to the function:
 
-```
+```cpp
 // C4715b.cpp
 // compile with: /LD
 int func1( int i )
@@ -37,7 +37,7 @@ int func1( int i )
 
 It is possible that your code may contain a call to a function that never returns, as in the following example:
 
-```
+```cpp
 // C4715c.cpp
 // compile with: /W1 /LD
 void fatal()
