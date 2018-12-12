@@ -47,9 +47,6 @@ In the Error List, you can press **F1** on a highlighted error to go to its docu
 
 ## In This Section
 
-[Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)<br>
-How to use the wizards to create C++ projects.
-
 [Set compiler and build properties](working-with-project-properties.md)<br>
 Describes how to use Property Pages and Property Sheets to specify your project settings.
 
@@ -61,4 +58,4 @@ Describes how to organize project output files.
 
 ## See Also
 
-[Building C/C++ Programs](building-c-cpp-programs.md)<br>
+[Building C/C++ Projects in Visual Studio](building-c-cpp-programs.md)<br>

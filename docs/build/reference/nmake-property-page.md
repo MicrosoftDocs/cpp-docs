@@ -7,9 +7,9 @@ ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
 ---
 # NMake Property Page
 
-The **NMake** property page lets you specify build settings for NMake projects.
+The **NMake** property page lets you specify build settings for NMake projects. (NMAKE is the Microsoft implementation of [Make](https://wikipedia.org/wiki/Make_(software)).)
 
-For more information about NMake projects, see [Creating a Makefile Project](../creating-a-makefile-project.md). For non_Windows MakeFile projects, see [MakeFile Project Properties (Linux C++)](../../linux/prop-pages/makefile-linux.md), [General Project Properties (Android C++ Makefile)](/visualstudio/cross-platform/general-makefile-android-prop-page) or [NMake Properties (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
+For more information about NMake projects, see [Creating a Makefile Project](creating-a-makefile-project.md). For non-Windows MakeFile projects, see [MakeFile Project Properties (Linux C++)](../../linux/prop-pages/makefile-linux.md), [General Project Properties (Android C++ Makefile)](/visualstudio/cross-platform/general-makefile-android-prop-page) or [NMake Properties (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
 
 The **NMake** property page contains the following properties.
 

@@ -117,6 +117,6 @@ For more information about deploying a C++/CLI program, see [Deployment Guide fo
 
 |||
 |-|-|
-|[Building C/C++ Programs](../build/building-c-cpp-programs.md)|In-depth information about building C++ projects.|
+|[Building C/C++ Projects in Visual Studio](../build/building-c-cpp-programs.md)|In-depth information about building C++ projects.|
 |[Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)|Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.|
 |[Visual C++](../visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|

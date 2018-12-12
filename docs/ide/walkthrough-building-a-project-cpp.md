@@ -51,4 +51,4 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
 ## See Also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+[Building C/C++ Projects in Visual Studio](../build/building-c-cpp-programs.md)<br/>

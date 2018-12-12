@@ -36,4 +36,4 @@ This section contains topics about targeting 64-bit x64 hardware with the Visual
 
 ## See Also
 
-[Building C/C++ Programs](building-c-cpp-programs.md)
+[Building C/C++ Projects in Visual Studio](building-c-cpp-programs.md)

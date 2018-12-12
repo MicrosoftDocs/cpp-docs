@@ -116,6 +116,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/reference/setting-linker-options.md",
+            "redirect_url": "/cpp/build/reference/linking",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/reference/link-environment-variables.md",
             "redirect_url": "/cpp/build/reference/linking",
             "redirect_document_id": false
@@ -138,6 +143,11 @@
         {
             "source_path": "docs/build/determining-which-linking-method-to-use.md",
             "redirect_url": "/cpp/build/linking-an-executable-to-a-dll#determining-which-linking-method-to-use",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/creating-desktop-projects-by-using-application-wizards.md",
+            "redirect_url": "/cpp/build/creating-and-managing-visual-cpp-projects",
             "redirect_document_id": false
         },
         {
@@ -448,6 +458,21 @@
         {
             "source_path": "docs/c-runtime-library/size-specification.md",
             "redirect_url": "/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions#size",
+            "redirect_document_id": false
+        },      
+        {
+            "source_path": "docs/ide/how-to-enable-intellisense-for-makefile-projects.md",
+            "redirect_url": "/cpp/build/reference/creating-a-makefile-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/makefile-project-wizard.md",
+            "redirect_url": "/cpp/build/reference/creating-a-makefile-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/application-settings-makefile-project-wizard.md",
+            "redirect_url": "/cpp/build/reference/creating-a-makefile-project",
             "redirect_document_id": false
         },
         {
