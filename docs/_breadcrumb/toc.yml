@@ -26,12 +26,12 @@
         - name: ARM
           tocHref: /cpp/assembler/arm/
           topicHref: /cpp/assembler/arm/arm-assembler-reference
-          - name: Inline assembler
-            tocHref: /cpp/assembler/inline/
-            topicHref: /cpp/assembler/inline-assembler
-          - name: MASM
-            tocHref: /cpp/assembler/masm/
-            topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
+        - name: Inline assembler
+          tocHref: /cpp/assembler/inline/
+          topicHref: /cpp/assembler/inline-assembler
+        - name: MASM
+          tocHref: /cpp/assembler/masm/
+          topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
       - name: C Runtime Library
         tocHref: /cpp/c-runtime-library/
         topicHref: /cpp/c-runtime-library/c-run-time-library-reference
