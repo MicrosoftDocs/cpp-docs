@@ -13,7 +13,7 @@ The compiler generated an exception while doing constant arithmetic during compi
 
 The following sample generates C4756:
 
-```
+```cpp
 // C4756.cpp
 // compile with: /W2 /Od
 int main()

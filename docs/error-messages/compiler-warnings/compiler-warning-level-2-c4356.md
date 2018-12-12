@@ -15,7 +15,7 @@ Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning
 
 The following sample generates C4356:
 
-```
+```cpp
 // C4356.cpp
 // compile with: /W2 /EHsc
 #include <iostream>
