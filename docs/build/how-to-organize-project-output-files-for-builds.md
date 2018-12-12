@@ -62,4 +62,4 @@ The location of output files can be a major issue when deploying to a production
 
 ## See Also
 
-[Visual C++ Project Types](visual-cpp-project-types.md)
+[Visual C++ Project Types](reference/visual-cpp-project-types.md)
