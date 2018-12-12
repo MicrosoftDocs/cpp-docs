@@ -1,6 +1,6 @@
 ---
 title: "Building C/C++ Projects in Visual Studio"
-ms.description:"Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system."
+ms.description: "Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system."
 ms.date: "12/08/2018"
 f1_keywords: ["vcbuilding", "buildingaprogramVC"]
 helpviewer_keywords: ["builds [C++]", "Visual C++ projects, building", "projects [C++], building", "builds [C++], options", "Visual C++, build options"]
@@ -75,16 +75,16 @@ How to create, debug and deploy C/C++ DLLs (shared libraries) in Visual Studio.
 [Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.
 
-[Configure Visual C++ for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp)
+[Configure Visual C++ for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)
 How to target 64-bit x64 hardware with the MSVC build tools.
 
-[Configure Visual C++ for ARM processors](configuring-programs-for-arm-processors-visual-cpp)
+[Configure Visual C++ for ARM processors](configuring-programs-for-arm-processors-visual-cpp.md)
 How to use the MSVC build tools to target ARM hardware.
 
 [Optimizing Your Code](optimizing-your-code.md)
 How to optimize your code in various ways including program guided optimizations.
 
-[Configuring Programs for Windows XP](configuring-programs-for-windows-xp)
+[Configuring Programs for Windows XP](configuring-programs-for-windows-xp.md)
 How to target Windows XP with the MSVC build tools.
 
 [C/C++ Building Reference](reference/c-cpp-building-reference.md)<br/>
