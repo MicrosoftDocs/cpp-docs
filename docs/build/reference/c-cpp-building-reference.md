@@ -1,6 +1,6 @@
 ---
 title: "C/C++ Building Reference - Visual Studio"
-description:"Reference content for C/C++ project system and build tools in Visual Studio."
+description: "Reference content for C/C++ project system and build tools in Visual Studio."
 ms.date: "12/10/2018"
 helpviewer_keywords: ["compiling source code [C++], additional information", "cl.exe compiler [C++], building programs", "linker [C++], building reference", "builds [C++], additional information"]
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
