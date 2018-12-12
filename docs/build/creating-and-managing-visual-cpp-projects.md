@@ -47,12 +47,6 @@ In the Error List, you can press **F1** on a highlighted error to go to its docu
 
 ## In This Section
 
-[Visual Studio C++ project templates](reference/visual-cpp-project-types.md)<br>
-Describes the MSBuild-based project types that are available for C++.
-
-[File Types Created for C++ Projects](reference/file-types-created-for-visual-cpp-projects.md)<br>
-Describes the kinds of files that are used with various MSBuild project types.
-
 [Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)<br>
 How to use the wizards to create C++ projects.
 

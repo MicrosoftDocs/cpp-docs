@@ -9,7 +9,6 @@ ms.assetid: 48d9daf4-6bbf-473a-8ce2-bf2923b69f80
 
 Visual C++ provides the following command-line tools for viewing or manipulating build output:
 
-- [BSCMAKE.EXE](bscmake-reference.md) builds a browse information file (.bsc) that contains information about the symbols (classes, functions, data, macros, and types) in your program. You view this information in browse windows within the development environment. (A .bsc file can also be built in the development environment.)
 
 - [LIB.EXE](lib-reference.md) is used to create and manage a library of Common Object File Format (COFF) object files. It can also be used to create export files and import libraries to reference exported definitions.
 
@@ -20,6 +19,10 @@ Visual C++ provides the following command-line tools for viewing or manipulating
 - [NMAKE](nmake-reference.md) reads and executes makefiles.
 
 - [ERRLOOK](value-edit-control.md), the Error Lookup utility, retrieves a system error message or module error message based on the value entered.
+
+- [XDCMake](xdcmake-reference.md). A toolfor processing source code files that contain documentation comments marked up with XML tags.
+
+- [BSCMAKE.EXE](bscmake-reference.md) (provided for backward compatibility only) builds a browse information file (.bsc) that contains information about the symbols (classes, functions, data, macros, and types) in your program. You view this information in browse windows within the development environment. (A .bsc file can also be built in the development environment.)
 
 ## See Also
 

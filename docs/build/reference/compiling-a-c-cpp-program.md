@@ -1,5 +1,6 @@
 ---
-title: "Compiling a C/C++ project in Visual Studio"
+title: "C/C++ compiler reference - Visual Studio"
+description:"MSVC compiler toolset options."
 ms.date: "12/10/2018"
 helpviewer_keywords: ["cl.exe compiler", "cl.exe compiler, setting options"]
 ms.assetid: f3eef5ab-d0be-4fb2-90f9-927e6ed58736
@@ -10,7 +11,7 @@ C and C++ compiler options can be set either in the Visual Studio IDE or on the 
 
 ## In Visual Studio
 
-You can set compiler options for each project in its **Property Pages** dialog box. In the left pane, select **Configuration Properties**, **C/C++** and then choose the compiler option category. The topic for each compiler option describes how it can be set and where it is found in the development environment. See [Compiler Options](compiler-options.md) for a complete list.
+You can set compiler options for each project in its Visual Studio **Property Pages** dialog box. In the left pane, select **Configuration Properties**, **C/C++** and then choose the compiler option category. The topic for each compiler option describes how it can be set and where it is found in the development environment. See [Compiler Options](compiler-options.md) for a complete list.
 
 ## From the command line
 

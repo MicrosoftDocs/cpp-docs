@@ -1,5 +1,6 @@
 ---
 title: "Building C/C++ Projects in Visual Studio"
+ms.description:"Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system."
 ms.date: "12/08/2018"
 f1_keywords: ["vcbuilding", "buildingaprogramVC"]
 helpviewer_keywords: ["builds [C++]", "Visual C++ projects, building", "projects [C++], building", "builds [C++], options", "Visual C++, build options"]
@@ -7,7 +8,7 @@ ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ---
 # Building C/C++ projects
 
-In Visual Studio 2017 and later, the build system and compiler toolset are decoupled from the IDE. This means you can use Visual Studio to edit any existing code base with full IntelliSense support without having to convert that code into a Visual Studio project or use MSVC to compile it. For example, you can edit a CMake project in Visual Studio on your local machine, then compile it using g++ on a remote Linux machine.
+You can use Visual Studio 2017 to edit, compile and build any C++ code base with full IntelliSense support without having to convert that code into a Visual Studio project or use MSVC to compile it. For example, you can edit a CMake project in Visual Studio on your local machine, then compile it using g++ on a remote Linux machine.
 
 ## C++ compilation
 
@@ -57,7 +58,10 @@ How to create, configure, and build C++ projects in Visual Studio using its nati
 How to code, build, and deploy CMake projects in Visual Studio.
 
 [Open Folder projects](non-msbuild-projects.md)
-How to use Visual Studio to code, build and deploy projects based on any arbitrary build system, or no build system. at all. 
+How to use Visual Studio to code, build and deploy C++ projects based on any arbitrary build system, or no build system. at all. 
+
+[Windows makefile projects (NMAKE)](creating-a-makefile-project.md)
+How to use [NMAKE](reference/nmake-reference.md) to build makefile projects on Windows.
 
 [Release builds](release-builds.md)
 How to create and troubleshoot optimized release builds for deployment to end users.
@@ -68,41 +72,20 @@ Discusses how to use the C/C++ compiler and build tools directly from the comman
 [Building DLLs in Visual Studio](dlls-in-visual-cpp.md)
 How to create, debug and deploy C/C++ DLLs (shared libraries) in Visual Studio.
 
-[Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)<br/>
+[Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.
 
-[C/C++ Building Reference](reference/c-cpp-building-reference.md)<br/>
-Provides links to reference articles about program building in C++, compiler and linker options, and various build tools.
+[Configure Visual C++ for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp)
+How to target 64-bit x64 hardware with the MSVC build tools.
 
-
-
-## Related Sections
-
-[Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)<br/>
-Describes the Visual Studio build system and tools.
-
-You can build C++ projects either in Visual Studio or on the command line. The Visual Studio IDE has built-in support for the default project system, [MSBuild](msbuild-visual-cpp.md), as well as for CMake. IDE integration with any other build system is enabled through JSON configuration files.
-
-On the command line, you can use the C/C++ compiler (cl.exe) and linker (link.exe) to build simple projects. To build more complex projects on the command line, you can use MSBuild or [NMAKE](reference/nmake-reference.md). 
-
-For an overview about how to use Visual Studio to build projects and solutions, see [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio).
-
-## In This Section
-
-[Visual Studio Projects (C++)](creating-and-managing-visual-cpp-projects.md)<br/>
-[CMake projects](cmake-tools-for-visual-cpp.md)<br/>
-[Open Folder projects](non-msbuild-projects.md)<br/>
-[Windows makefile projects (NMAKE)](creating-a-makefile-project.md)<br/>
-[Use the MSVC toolset from the command line](building-on-the-command-line.md)<br/>
-How to use the C/C++ compiler and build tools directly from the command line.
-
-[Use MSBuild from the command line](msbuild-visual-cpp.md)
-
-[Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)<br/>
-Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.
+[Configure Visual C++ for ARM processors](configuring-programs-for-arm-processors-visual-cpp)
+How to use the MSVC build tools to target ARM hardware.
 
 [Optimizing Your Code](optimizing-your-code.md)
+How to optimize your code in various ways including program guided optimizations.
+
+[Configuring Programs for Windows XP](configuring-programs-for-windows-xp)
+How to target Windows XP with the MSVC build tools.
 
 [C/C++ Building Reference](reference/c-cpp-building-reference.md)<br/>
 Provides links to reference articles about program building in C++, compiler and linker options, and various build tools.
-

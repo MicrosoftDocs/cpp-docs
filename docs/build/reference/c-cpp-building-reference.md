@@ -1,25 +1,28 @@
 ---
-title: "C/C++ Building Reference"
-ms.date: "11/04/2016"
+title: "C/C++ Building Reference - Visual Studio"
+description:"Reference content for C/C++ project system and build tools in Visual Studio."
+ms.date: "12/10/2018"
 helpviewer_keywords: ["compiling source code [C++], additional information", "cl.exe compiler [C++], building programs", "linker [C++], building reference", "builds [C++], additional information"]
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
 ---
 # C/C++ Building Reference
 
-Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual C++ development environment](../creating-and-managing-visual-cpp-projects.md). The other way is to [build from a command prompt using command-line tools](../building-on-the-command-line.md). In either case, you can create your source files using the Visual C++ source editor or a third-party editor of your choice.
+Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual Studio IDE](../creating-and-managing-visual-cpp-projects.md). The other way is to [build from a command prompt using command-line tools](../building-on-the-command-line.md). In either case, you can create and edit your source files using Visual Studio or a third-party editor of your choice.
 
 ## In This Section
 
-[MSBuild Overview for C++ projects](msbuild-visual-cpp-overview.md)
+[MSBuild reference for C++ projects](msbuild-visual-cpp-overview.md)
 
 [Compiling a C/C++ Program](compiling-a-c-cpp-program.md)<br/>
-Describes the compiler, which creates an object file containing machine code, linker directives, sections, external references, and function/data names.
+Describes the MSVC compiler, which creates an object file containing machine code, linker directives, sections, external references, and function/data names.
 
 [Linking](linking.md)<br/>
 Describes the linker, which combines code from the object files created by the compiler and from statically linked libraries, resolves the name references, and creates an executable file.
 
+[Unicode Support in the Compiler and Linker](unicode-support-in-the-compiler-and-linker.md)
+
 [C/C++ Build Tools](c-cpp-build-tools.md)<br/>
-Provides the following command-line tools for viewing or manipulating build output:
+Additional command-line tools for C++.
 
 [C/C++ Build Errors](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)<br/>
 Introduces the build errors section in the table of contents.

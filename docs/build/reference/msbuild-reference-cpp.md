@@ -22,7 +22,16 @@ Describes macros (compile-time constants) that can be used to define properties 
 [File types created for C++ projects](file-types-created-for-visual-cpp-projects.md)<br/>
 Describes the various kinds of files that Visual Studio creates for different project types.
 
-[Property Pages (C++)](property-pages-visual-cpp.md)<br/>
+[Visual Studio C++ project templates](visual-cpp-project-types.md)<br>
+Describes the MSBuild-based project types that are available for C++.
+
+[C++ new item templates](using-visual-cpp-add-new-item-templates.md)<br>
+Describes source files and other items you can add to a Visual Studio project.
+
+[Precompiled header files](creating-precompiled-header-files.md)
+How to use precompiled header files and how to create your own custom precompiled code to speed up build times.
+
+[Visual Studio project property reference](property-pages-visual-cpp.md)<br/>
 Reference documentation for project properties that are set in the Visual Studio IDE.
 
 ## See Also
