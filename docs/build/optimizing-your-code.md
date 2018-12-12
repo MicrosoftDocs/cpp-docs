@@ -1,6 +1,6 @@
 ---
 title: "Optimizing Your Code"
-ms.date: "12/28/2017"
+ms.date: "12/10/2018"
 helpviewer_keywords: ["performance, optimizing code", "optimization", "cl.exe compiler, performance", "optimization, C++ code", "code, optimizing", "performance, compiler"]
 ---
 # Optimizing your code
@@ -50,17 +50,14 @@ Provides general guidelines about how best to optimize your application.
 
 Because optimization might change the code created by the compiler, we recommend that you debug your application and measure its performance, and then optimize your code.
 
-The following topics provide basic information about how to debug.
+The following topics provide information about how to debug release builds.
 
 - [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
-
-- [Common Problems When Creating a Release Build](common-problems-when-creating-a-release-build.md)
-
-The following topics provide more advanced information about how to debug.
 
 - [How to: Debug Optimized Code](/visualstudio/debugger/how-to-debug-optimized-code)
 
 - [Why Floating-Point Numbers May Lose Precision](why-floating-point-numbers-may-lose-precision.md)
+
 
 The following topics provide information about how to optimize building, loading, and executing your code.
 
@@ -73,6 +70,24 @@ The following topics provide information about how to optimize building, loading
 - [Specifying Compiler Optimization for an ATL Project](../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
 - [What optimization techniques should I use to improve the client application's performance when loading?](../build/dll-frequently-asked-questions.md#mfc_optimization)
+
+
+## In this section
+
+[Optimization Pragmas and Keywords](optimization-pragmas-and-keywords.md)<br/>
+[Improving Compiler Throughput](improving-compiler-throughput.md)<br/>
+[Why Floating-Point Numbers May Lose Precision](why-floating-point-numbers-may-lose-precision.md)<br/>
+[IEEE Floating-Point Representation](ieee-floating-point-representation.md)<br/>
+[Tips for Improving Time-Critical Code](tips-for-improving-time-critical-code.md)<br/>
+[Using Function Name Without () Produces No Code](using-function-name-without-parens-produces-no-code.md)<br/>
+[Optimization Best Practices](optimization-best-practices.md)<br/>
+[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
+[Environment Variables for Profile-Guided Optimizations](environment-variables-for-profile-guided-optimizations.md)<br/>
+[PgoAutoSweep](pgoautosweep.md)<br/>
+[pgomgr](pgomgr.md)<br/>
+[pgosweep](pgosweep.md)<br/>
+[How to: Merge Multiple PGO Profiles into a Single Profile](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)<br/>
+[Visual Studio 2013 PGO Add-in in the Performance and Diagnostics Hub](profile-guided-optimization-in-the-performance-and-diagnostics-hub.md)<br/>
 
 ## See also
 

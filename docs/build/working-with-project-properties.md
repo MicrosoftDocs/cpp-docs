@@ -1,5 +1,6 @@
 ---
 title: "Set C++ compiler and build properties in Visual Studio"
+description: "Use the Visual Studio IDE to change C++ compiler and linker options and other build settings."
 ms.date: "12/10/2018"
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
@@ -115,10 +116,19 @@ In the left pane of the project's **Property Pages** dialog box, expand **Config
 
 In the right pane, modify the **Environment** or **Merge Environment** project settings and then choose the **OK** button.
 
+## In this section
+
+[Share or resuse Visual Studio project settings](create-reusable-property-configurations.md)<br/>
+How to create a .props file with custom build settings that can be shared or resused.
+
+[Project property inheritance](project-property-inheritance.md)<br/>
+Describes the order of evaluation for the .props, .targets, .vcxproj files and environment variables in the build process.
+
+[Modify properties and targets without changing the project file](modify-project-properties-without-changing-project-file.md)<br/>
+How to create temporary build settings without having to modify a project file. 
+
 ## See also
 
 [Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md)<br/>
-[Create reusable build configurations](create-reusable-property-configurations.md)<br/>
-[Modify properties and targets without changing the project file](modify-project-properties-without-changing-project-file.md)<br/>
 [.vcxproj and .props file structure](reference/vcxproj-file-structure.md)<br/>
 [Property page XML files](reference/property-page-xml-files.md)<br/>

@@ -47,14 +47,20 @@ In the Error List, you can press **F1** on a highlighted error to go to its docu
 
 ## In This Section
 
-[Set compiler and build properties](working-with-project-properties.md)<br>
-Describes how to use Property Pages and Property Sheets to specify your project settings.
+[Set compiler and build properties](working-with-project-properties.md)<br/>
+How to use Property Pages and Property Sheets to specify your project settings.
 
-[Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
-Describes how to add classes, methods, variables, and other elements to your project to add functionality.
+[Reference libraries and components at build time](adding-references-in-visual-cpp-projects.md)<br/>
+How to include libs, DLLs, COM and .NET components in a project.
+ 
+[Organize Project Output Files](how-to-organize-project-output-files-for-builds.md)<br/>
+How to customize the location of the executable files created in the build process.
 
-[How to: Organize Project Output Files for Builds](how-to-organize-project-output-files-for-builds.md)<br>
-Describes how to organize project output files.
+[Custom Build Steps and Build Events](understanding-custom-build-steps-and-build-events.md)<br/>
+How to add any arbitrary command to the build process at specified points.
+
+[Create a project from existing code](how-to-create-a-cpp-project-from-existing-code.md)<br/>
+How to create a new Visual Studio project from a loose collection of source files.
 
 ## See Also
 

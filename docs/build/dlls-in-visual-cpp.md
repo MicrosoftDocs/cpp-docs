@@ -1,10 +1,10 @@
 ---
-title: "DLLs in Visual C++"
-ms.date: "11/04/2016"
+title: "Create C/C++ DLLs in Visual Studio"
+ms.date: "12/10/2018"
 helpviewer_keywords: ["executable files [C++]", "dynamic linking [C++]", "linking [C++], dynamic vs. static", "DLLs [C++]", "DLLs [C++], about DLLs"]
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
 ---
-# DLLs in Visual C++
+# Create C/C++ DLLs in Visual Studio
 
 In Windows, a dynamic-link library (DLL) is a kind of executable file that acts as a shared library of functions and resources. Dynamic linking is an operating system capability that enables an executable to call functions or use resources stored in a separate file. These functions and resources can be compiled and deployed separately from the executables that use them. A DLL is not a stand-alone executable; it runs in the context of an application that calls it. The operating system can load the DLL into an application's memory space when the application is loaded (*implicit linking*), or on demand at runtime (*explicit linking*). DLLs also make it easy to share functions and resources across executables. Multiple applications can access the contents of a single copy of a DLL in memory at the same time.
 

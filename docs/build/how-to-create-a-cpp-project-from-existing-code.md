@@ -1,6 +1,6 @@
 ---
 title: "How to: Create a C++ Project from Existing Code"
-ms.date: "11/04/2016"
+ms.date: "12/10/2018"
 helpviewer_keywords: ["C++, creating projects from existing code"]
 ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
 ---
@@ -24,9 +24,9 @@ Porting your existing code files into a Visual C++ project enables you to use al
 
 1. Specify the Release configuration settings to use. For details on this page, see [Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard](specify-release-configuration.md). Choose **Finish** to generate the new project.
 
-## See Also
+## In this section
 
-[Specify Project Location and Source Files, Create New Project From Existing Code Files Wizard](specify-project-location-and-source-files.md)<br>
-[Specify Project Settings, Create New Project From Existing Code Files Wizard](specify-project-settings-create-new-project-from-existing-code-files-wizard.md)<br>
-[Specify Debug Configuration Settings, Create New Project From Existing Code Files Wizard](specify-debug-configuration-settings.md)<br>
-[Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard](specify-release-configuration.md)
+[Specify Project Location and Source Files, Create New Project From Existing Code Files Wizard](specify-project-location-and-source-files.md)<br/>
+[Specify Project Settings, Create New Project From Existing Code Files Wizard](specify-project-settings-create-new-project-from-existing-code-files-wizard.md)<br/>
+[Specify Debug Configuration Settings, Create New Project From Existing Code Files Wizard](specify-debug-configuration-settings.md)<br/>
+[Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard](specify-release-configuration.md)<br/>
