@@ -15,7 +15,7 @@ The embedded_idl attribute of [#import](../../preprocessor/hash-import-directive
 
 The following sample defines a component.
 
-```
+```cpp
 // C4929a.cpp
 // compile with: /LD /link /TLBOUT:C4929a.tlb
 #include <objbase.h>
@@ -49,7 +49,7 @@ struct C : I {
 
 The following sample generates C4929.
 
-```
+```cpp
 // C4929b.cpp
 // compile with: /c /W1
 #import "C4929a.tlb" embedded_idl   // C4929

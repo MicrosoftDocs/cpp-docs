@@ -13,7 +13,7 @@ Attributes that apply to nested UDTs (user-defined type, which could be a typede
 
 The following code shows how this warning would be generated:
 
-```
+```cpp
 // C4912.cpp
 // compile with: /W1
 #include <windows.h>
