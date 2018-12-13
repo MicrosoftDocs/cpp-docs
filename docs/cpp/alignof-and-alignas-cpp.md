@@ -9,7 +9,7 @@ The **alignas** type specifier is a portable, C++ standard way to specify custom
 
 ## Example
 
-You can use **alignas** on a class, struck or union, or on individual members. When multiple **alignas** specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).
+You can use **alignas** on a class, struct or union, or on individual members. When multiple **alignas** specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).
 
 ```cpp
 // alignas_alignof.cpp
