@@ -15,7 +15,7 @@ To fix this warning, either correct the declaration or delete the declaration an
 
 The following sample generates C4392:
 
-```
+```cpp
 // C4392.cpp
 // compile with: /W1
 // processor: x86

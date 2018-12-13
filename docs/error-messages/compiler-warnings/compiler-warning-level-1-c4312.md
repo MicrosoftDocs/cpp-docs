@@ -17,7 +17,7 @@ This warning is only issued for 64-bit compilation targets. For more information
 
 The following code example generates C4312 when it is compiled for 64-bit targets:
 
-```
+```cpp
 // C4312.cpp
 // compile by using: cl /W1 /LD C4312.cpp
 void* f(int i) {

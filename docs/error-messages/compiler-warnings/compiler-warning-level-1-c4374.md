@@ -13,7 +13,7 @@ The compiler expected to find the [virtual](../../cpp/virtual-specifier.md) keyw
 
 The following sample generates C4374:
 
-```
+```cpp
 // C4374.cpp
 // compile with: /clr /W1 /c /WX
 public interface class I {

@@ -11,7 +11,7 @@ __declspec(align()) is ignored on enum
 
 Use of the [align](../../cpp/align-cpp.md) keyword of the [__declspec](../../cpp/declspec.md) modifier is not allowed on an `enum`. The following sample generates C4329:
 
-```
+```cpp
 // C4329.cpp
 // compile with: /W1 /LD
 enum __declspec(align(256)) TestEnum {   // C4329
