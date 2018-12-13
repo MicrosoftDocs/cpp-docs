@@ -143,8 +143,6 @@ When you build on the command line, the F1 command is not available for instant 
 
 ## In This Section
 
-The articles in this section of the documentation show how to build apps on the command line, describe how to customize the command-line build environment to use 64-bit toolsets and target x86, x64, and ARM platforms, and demonstrate how to use the command-line build tools MSBuild and NMAKE.
-
 [Walkthrough: Compiling a Native C++ Program on the Command Line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 Gives an example that shows how to create and compile a simple C++ program on the command line.
 
@@ -160,11 +158,21 @@ Describes how to create and compile a C++/CX program that uses the Windows Runti
 [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
 Describes how to start a command prompt window that has the required environment variables set for command-line builds that target x86, x64, and ARM platforms by using a 32-bit or 64-bit toolset.
 
-[NMAKE Reference](reference/nmake-reference.md)<br/>
-Provides links to articles that describe the Microsoft Program Maintenance Utility (NMAKE.EXE).
+[Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 
-[MSBuild (Visual C++)](msbuild-visual-cpp.md)<br/>
-Provides links to articles that discuss how to use msbuild.exe from the command line.
+[CL Filename Syntax](cl-filename-syntax.md)<br/>
+
+[Order of CL Options](order-of-cl-options.md)<br/>
+
+[Return Value of cl.exe](return-value-of-cl-exe.md)<br/>
+
+[CL Environment Variables](cl-environment-variables.md)<br/>
+
+[CL Command Files](cl-command-files.md)<br/>
+
+[Fast Compilation](fast-compilation.md)<br/>
+
+[CL Invokes the Linker](cl-invokes-the-linker.md)<br/>
 
 ## Related Sections
 

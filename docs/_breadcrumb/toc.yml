@@ -100,9 +100,49 @@
         tocHref: /cpp/build/
         tocHref: /cpp/build/building-c-cpp-programs
         items:
+        - name: Visual Studio projects
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/creating-and-managing-visual-cpp-projects
+          items:
+          - name: Set compiler and build properties
+            tocHref: /cpp/build/
+            topicHref: /cpp/build/working-with-project-properties
+          - name: Custom Build Steps and Build Events
+            tocHref: /cpp/build/
+            topicHref: /cpp/build/understanding-custom-build-steps-and-build-events
+          - name: Create a C++ Project from Existing Code
+            tocHref: /cpp/build/
+            topicHref: /cpp/build/how-to-create-a-cpp-project-from-existing-code
+        - name: CMake projects
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/cmake-tools-for-visual-cpp
+        - name: Open Folder projects
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/non-msbuild-projects
+        - name: Release Builds
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/release-builds
+        - name: Use the MSVC toolset from the command line
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/building-on-the-command-line
+        - name: Use MSBuild from the command line
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/msbuild-visual-cpp
+        - name: Building C/C++ Isolated Applications and Side-by-side Assemblies
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies
+        - name: Configure Visual C++ for 64-bit, x64 targets
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/configuring-programs-for-64-bit-visual-cpp
+        - name: Configure Visual C++ for ARM processors
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/msbuild-visual-cpp
+        - name: Configuring Programs for Windows XP
+          tocHref: /cpp/build/
+          topicHref: /cpp/build/configuring-programs-for-windows-xp
         - name: Build Reference
           tocHref: /cpp/build/reference/
-          topicHref: /cpp/build/reference/c-cpp-building-reference
+          topicHref: /cpp/build/reference/configuring-programs-for-arm-processors-visual-cpp
           items:
             - name: Compiler Errors
               tocHref: /cpp/error-messages/compiler-errors-1/

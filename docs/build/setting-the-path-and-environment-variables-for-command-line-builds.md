@@ -1,5 +1,5 @@
 ---
-title: "Set the Path and Environment Variables for Command-Line Builds"
+title: "Path and Environment Variables for C++ Command-Line Builds - Visual Studio"
 ms.custom: "conceptual"
 ms.date: "11/04/2016"
 f1_keywords: ["include", "Lib", "Path"]
