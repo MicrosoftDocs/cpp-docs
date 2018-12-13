@@ -13,7 +13,7 @@ A dereferenced pointer to a function is missing an argument list.
 
 ## Example
 
-```
+```cpp
 // C4550.cpp
 // compile with: /W1
 bool f()

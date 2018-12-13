@@ -17,7 +17,7 @@ In previous versions, attribute values were accepted whether or not they were en
 
 The following sample generates C4581.
 
-```
+```cpp
 // C4581.cpp
 // compile with: /c /W1
 #include "unknwn.h"
