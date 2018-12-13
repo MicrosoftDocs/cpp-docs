@@ -1208,7 +1208,8 @@ int main( )
       cout << " " << *Iter;
    cout << endl;
 
-   v1.insert( v1.begin( )+1, v1.begin( )+2, v1.begin( )+4 );
+   const auto v2 = v1;
+   v1.insert( v1.begin( )+1, v2.begin( )+2, v2.begin( )+4 );
    cout << "v1 =";
    for (Iter = v1.begin( ); Iter != v1.end( ); Iter++ )
       cout << " " << *Iter;
@@ -1220,7 +1221,6 @@ int main( )
    vv1.insert( vv1.begin(), move( v1 ) );
    if ( vv1.size( ) != 0 && vv1[0].size( ) != 0 )
       {
-      vector < vector <int> >::iterator Iter;
       cout << "vv1[0] =";
       for (Iter = vv1[0].begin( ); Iter != vv1[0].end( ); Iter++ )
          cout << " " << *Iter;
