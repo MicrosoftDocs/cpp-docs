@@ -1,5 +1,5 @@
 ---
-title: "/Oy (Frame-Pointer Omission)"
+title: "/Oy (Frame-Pointer Omission) (C++) - Visual Studio"
 ms.date: "11/19/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.OmitFramePointers", "/oy"]
 helpviewer_keywords: ["omit frame pointer", "Oy compiler option [C++]", "stack frame pointer compiler option [C++]", "-Oy compiler option [C++]", "frame pointer omission compiler option [C++]", "suppress frame pointer creation", "/Oy compiler option [C++]"]

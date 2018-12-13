@@ -1,5 +1,5 @@
 ---
-title: "Profile-Guided Optimizations"
+title: "Profile-Guided Optimizations (C++) - Visual Studio"
 ms.date: "03/14/2018"
 helpviewer_keywords: ["profile-guided optimizations", "optimization, profile-guided [C++]"]
 ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc

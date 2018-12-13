@@ -1,6 +1,6 @@
 ---
-title: "Regular MFC DLLs Dynamically Linked to MFC"
-ms.date: "11/04/2016"
+title: "Regular MFC DLLs Dynamically Linked to MFC (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["regular MFC DLLs [C++], dynamically linked to MFC", "AFX_MANAGE_STATE macro", "DLLs [C++], regular", "shared DLL versions [C++]", "dynamically linked DLLs [C++]"]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
 ---

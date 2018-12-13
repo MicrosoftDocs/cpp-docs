@@ -1,6 +1,6 @@
 ---
-title: "/WHOLEARCHIVE (Include All Library Object Files)"
-ms.date: "11/04/2016"
+title: "/WHOLEARCHIVE (Include All Library Object Files) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
 ---
 # /WHOLEARCHIVE (Include All Library Object Files)

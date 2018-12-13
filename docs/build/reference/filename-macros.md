@@ -1,6 +1,6 @@
 ---
-title: "Filename Macros"
-ms.date: "11/04/2016"
+title: "Filename Macros (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["macros, NMAKE", "filename macros in NMAKE", "NMAKE program, filename macros"]
 ms.assetid: 20afd6b3-5b6c-4e33-9d01-309ce98ef9db
 ---

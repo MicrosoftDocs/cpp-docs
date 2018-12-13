@@ -1,6 +1,6 @@
 ---
-title: "How BSCMAKE Builds a .Bsc File"
-ms.date: "11/04/2016"
+title: "How BSCMAKE Builds a .Bsc File (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["browse information files (.bsc), building"]
 ms.assetid: 8512b33e-c856-44a2-87bd-01ab10b52a95
 ---

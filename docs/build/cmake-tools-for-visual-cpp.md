@@ -1,5 +1,5 @@
 ---
-title: "CMake Projects in Visual C++"
+title: "CMake Projects in Visual Studio"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8

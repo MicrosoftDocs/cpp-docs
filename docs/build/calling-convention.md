@@ -1,6 +1,6 @@
 ---
-title: "Calling Convention"
-ms.date: "11/04/2016"
+title: "Calling Convention (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
 ---
 # Calling Convention

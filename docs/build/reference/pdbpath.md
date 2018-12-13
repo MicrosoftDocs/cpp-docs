@@ -1,6 +1,6 @@
 ---
-title: "/PDBPATH"
-ms.date: "11/04/2016"
+title: "/PDBPATH (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/pdbpath"]
 helpviewer_keywords: [".pdb files, path", "-PDBPATH dumpbin option", "/PDBPATH dumpbin option", "PDBPATH dumpbin option", "PDB files, path"]
 ms.assetid: ccf67dcd-0b23-4250-ad47-06c48acbe82b

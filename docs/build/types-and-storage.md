@@ -1,6 +1,6 @@
 ---
-title: "Types and Storage"
-ms.date: "11/04/2016"
+title: "Types and Storage (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 7fe008b2-520f-4b71-8cb5-35fd513146ce
 ---
 # Types and Storage

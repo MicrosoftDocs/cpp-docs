@@ -1,6 +1,6 @@
 ---
-title: "Overview of x64 Calling Conventions"
-ms.date: "11/04/2016"
+title: "Overview of x64 Calling Conventions (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: a05db5eb-0844-4d9d-8b92-b1b2434be0ea
 ---
 # Overview of x64 Calling Conventions

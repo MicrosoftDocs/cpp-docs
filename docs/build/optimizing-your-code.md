@@ -1,6 +1,6 @@
 ---
-title: "Optimizing Your Code"
-ms.date: "12/10/2018"
+title: "Optimizing Your Code (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["performance, optimizing code", "optimization", "cl.exe compiler, performance", "optimization, C++ code", "code, optimizing", "performance, compiler"]
 ---
 # Optimizing your code

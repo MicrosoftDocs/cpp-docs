@@ -1,6 +1,6 @@
 ---
-title: "/PDB (Use Program Database)"
-ms.date: "11/04/2016"
+title: "/PDB (Use Program Database) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/pdb", "VC.Project.VCLinkerTool.ProgramDatabaseFile"]
 helpviewer_keywords: ["-PDB linker option", "/PDB linker option", "PDB linker option", "PDB files, creating", ".pdb files, creating"]
 ms.assetid: d23db0ce-10cb-427a-bc60-d6b2a852723d

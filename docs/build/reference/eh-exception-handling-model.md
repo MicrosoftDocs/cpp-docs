@@ -1,5 +1,5 @@
 ---
-title: "/EH (Exception Handling Model)"
+title: "/EH (Exception Handling Model) (C++) - Visual Studio"
 ms.date: "08/14/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ExceptionHandling", "/eh", "VC.Project.VCCLCompilerTool.ExceptionHandling"]
 helpviewer_keywords: ["exception handling, compiler model", "cl.exe compiler, exception handling", "EH compiler option [C++]", "-EH compiler option [C++]", "/EH compiler option [C++]"]

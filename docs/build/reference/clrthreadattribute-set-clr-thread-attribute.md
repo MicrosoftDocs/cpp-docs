@@ -1,6 +1,6 @@
 ---
-title: "/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)"
-ms.date: "11/04/2016"
+title: "/CLRTHREADATTRIBUTE (Set CLR Thread Attribute) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.CLRThreadAttribute"]
 helpviewer_keywords: ["/CLRTHREADATTRIBUTE linker option", "-CLRTHREADATTRIBUTE linker option"]
 ms.assetid: 4907e9ef-5031-446c-aecf-0a0b32fae1e8

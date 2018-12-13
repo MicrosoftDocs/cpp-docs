@@ -1,6 +1,6 @@
 ---
-title: "Unwind Data Definitions in C"
-ms.date: "11/04/2016"
+title: "Unwind Data Definitions in C - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 93cb6430-e4cf-43f5-ab60-3b57d1273b2c
 ---
 # Unwind Data Definitions in C

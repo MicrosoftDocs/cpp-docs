@@ -1,6 +1,6 @@
 ---
-title: "DUMPBIN Command Line"
-ms.date: "11/04/2016"
+title: "DUMPBIN Command Line (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["dumpbin"]
 helpviewer_keywords: ["DUMPBIN program, command line"]
 ms.assetid: e6ad17d3-965d-41aa-9dfd-75bb073718d4

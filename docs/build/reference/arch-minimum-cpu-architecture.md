@@ -1,6 +1,6 @@
 ---
-title: "/arch (Minimum CPU Architecture)"
-ms.date: "11/04/2016"
+title: "/arch (Minimum CPU Architecture) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet", "/arch"]
 helpviewer_keywords: ["-arch compiler option [C++]", "/arch compiler option [C++]", "arch compiler option [C++]"]
 ms.assetid: cc17da15-47bd-4e74-b905-4e73c3bdb8a0

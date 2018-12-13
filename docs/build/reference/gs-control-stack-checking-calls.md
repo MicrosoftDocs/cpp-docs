@@ -1,5 +1,5 @@
 ---
-title: "/Gs (Control Stack Checking Calls)"
+title: "/Gs (Control Stack Checking Calls) (C++) - Visual Studio"
 ms.date: "10/25/2018"
 f1_keywords: ["/GS"]
 helpviewer_keywords: ["disabling stack probes", "GS compiler option [C++]", "/GS compiler option [C++]", "stack, stack probes", "stack probes", "-GS compiler option [C++]", "stack checking calls"]

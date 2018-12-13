@@ -1,6 +1,6 @@
 ---
-title: "/I (Additional include directories)"
-ms.date: "11/04/2016"
+title: "/I (Additional include directories) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.AdditionalIncludeDirectories", "VC.Project.VCCLCompilerTool.AdditionalIncludeDirectories", "/I", "VC.Project.VCNMakeTool.IncludeSearchPath"]
 helpviewer_keywords: ["/I compiler option [C++]", "Additional Include Directories compiler option", "I compiler option [C++]", "-I compiler option [C++]", "set include directories", "include directories, compiler option [C++]"]
 ms.assetid: 3e9add2a-5ed8-4d15-ad79-5b411e313a49

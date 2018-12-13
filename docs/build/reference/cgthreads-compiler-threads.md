@@ -1,6 +1,6 @@
 ---
-title: "/CGTHREADS (Compiler Threads)"
-ms.date: "11/04/2016"
+title: "/CGTHREADS (Compiler Threads) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["/CGTHREADS linker option", "-CGTHREADS linker option", "CGTHREADS linker option"]
 ms.assetid: 4b52cfdb-3702-470b-9580-fabeb1417488
 ---

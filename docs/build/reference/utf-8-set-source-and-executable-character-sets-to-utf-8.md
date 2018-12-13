@@ -1,6 +1,6 @@
 ---
-title: "/utf-8 (Set Source and Executable character sets to UTF-8)"
-ms.date: "11/04/2016"
+title: "/utf-8 (Set Source and Executable character sets to UTF-8) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/utf-8"]
 helpviewer_keywords: ["/utf-8 compiler option"]
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504

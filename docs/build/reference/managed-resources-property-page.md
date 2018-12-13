@@ -1,6 +1,6 @@
 ---
 title: "Managed Resources Property Page"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCManagedResourceCompilerTool.ResourceFileName", "VC.Project.VCManagedResourceCompilerTool.OutputFileName", "VC.Project.VCManagedResourceCompilerTool.DefaultLocalizedResources"]
 helpviewer_keywords: ["Managed Resources property page"]
 ms.assetid: 80b80384-ee55-494d-9f0e-907bb98cfc19

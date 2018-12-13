@@ -1,6 +1,6 @@
 ---
-title: "Linker Support for Delay-Loaded DLLs"
-ms.date: "11/04/2016"
+title: "Linker Support for Delay-Loaded DLLs (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["delayed loading of DLLs, linker support"]
 ms.assetid: b2d7e449-2809-42b1-9c90-2c0ca5e31a14
 ---

@@ -1,6 +1,6 @@
 ---
-title: "/vmb, -vmg (Representation Method)"
-ms.date: "11/04/2016"
+title: "/vmb, -vmg (Representation Method) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/vmb", "/vmg"]
 helpviewer_keywords: ["vmb compiler option [C++]", "-vmg compiler option [C++]", "vmg compiler option [C++]", "-vmb compiler option [C++]", "/vmb compiler option [C++]", "representation method compiler options [C++]", "/vmg compiler option [C++]"]
 ms.assetid: ecdb391c-7dab-40b1-916b-673d10889fd4

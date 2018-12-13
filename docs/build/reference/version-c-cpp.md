@@ -1,6 +1,6 @@
 ---
 title: "VERSION (C/C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["VERSION"]
 helpviewer_keywords: ["VERSION .def file statement"]
 ms.assetid: 3533b97c-5183-45f9-9ca8-4e63462b5d26

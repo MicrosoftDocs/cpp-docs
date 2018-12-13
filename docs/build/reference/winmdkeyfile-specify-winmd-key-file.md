@@ -1,6 +1,6 @@
 ---
-title: "/WINMDKEYFILE (Specify winmd Key File)"
-ms.date: "11/04/2016"
+title: "/WINMDKEYFILE (Specify winmd Key File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.WINMDKeyFile"]
 ms.assetid: 65d88fdc-fff9-49ea-8cfc-b2f408741734
 ---

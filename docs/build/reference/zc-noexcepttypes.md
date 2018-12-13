@@ -1,5 +1,5 @@
 ---
-title: "/Zc:noexceptTypes (C++17 noexcept rules)"
+title: "/Zc:noexceptTypes (C++17 noexcept rules) (C++) - Visual Studio"
 ms.date: "11/14/2017"
 f1_keywords: ["/Zc:noexceptTypes"]
 helpviewer_keywords: ["/Zc:noexceptTypes", "Zc:noexceptTypes", "-Zc:noexceptTypes"]

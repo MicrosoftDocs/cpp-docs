@@ -1,6 +1,6 @@
 ---
-title: "Image Format"
-ms.date: "11/04/2016"
+title: "Image Format (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 3ca3654b-42fe-4253-9f2e-723644041aa0
 ---
 # Image Format

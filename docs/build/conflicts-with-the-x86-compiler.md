@@ -1,6 +1,6 @@
 ---
-title: "Conflicts with the x86 Compiler"
-ms.date: "11/04/2016"
+title: "Conflicts with the x86 Compiler (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 8e47f0d3-afe0-42d9-9efa-de239ddd3a05
 ---
 # Conflicts with the x86 Compiler

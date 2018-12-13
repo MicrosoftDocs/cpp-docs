@@ -1,6 +1,6 @@
 ---
-title: "/IDLOUT (Name MIDL Output Files)"
-ms.date: "11/04/2016"
+title: "/IDLOUT (Name MIDL Output Files) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/idlout", "VC.Project.VCLinkerTool.MergedIDLBaseFileName"]
 helpviewer_keywords: ["MIDL, output file names", ".idl files, path", "MIDL", "/IDLOUT linker option", "IDL files, path", "-IDLOUT linker option", "IDLOUT linker option"]
 ms.assetid: 10d00a6a-85b4-4de1-8732-e422c6931509

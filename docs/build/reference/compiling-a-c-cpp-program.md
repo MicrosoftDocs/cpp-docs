@@ -1,7 +1,7 @@
 ---
 title: "C/C++ compiler reference - Visual Studio"
 description: "MSVC compiler toolset options."
-ms.date: "12/10/2018"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["cl.exe compiler", "cl.exe compiler, setting options"]
 ms.assetid: f3eef5ab-d0be-4fb2-90f9-927e6ed58736
 ---

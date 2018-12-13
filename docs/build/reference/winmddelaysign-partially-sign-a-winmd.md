@@ -1,6 +1,6 @@
 ---
-title: "/WINMDDELAYSIGN (Partially Sign a winmd)"
-ms.date: "11/04/2016"
+title: "/WINMDDELAYSIGN (Partially Sign a winmd) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.WINMDDelaySign"]
 ms.assetid: 445cd602-62cb-400a-8e3a-4beb6572724d
 ---

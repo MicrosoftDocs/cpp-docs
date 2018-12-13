@@ -1,6 +1,6 @@
 ---
-title: "/STUB (MS-DOS Stub File Name)"
-ms.date: "11/04/2016"
+title: "/STUB (MS-DOS Stub File Name) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/stub", "VC.Project.VCLinkerTool.DosStub"]
 helpviewer_keywords: ["Win32 [C++], attaching MS-DOS stub program", "STUB linker option", "MS-DOS stub file name linker option", "/STUB linker option", "Windows API [C++], attaching MS-DOS stub program", "-STUB linker option"]
 ms.assetid: 65221ffe-4f9a-4a14-ac69-3cfb79b40b5f

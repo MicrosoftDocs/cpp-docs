@@ -1,5 +1,5 @@
 ---
-title: "/DYNAMICBASE"
+title: "/DYNAMICBASE (C++) - Visual Studio"
 ms.date: "06/12/2018"
 f1_keywords: ["/dynamicbase"]
 helpviewer_keywords: ["-DYNAMICBASE editbin option", "DYNAMICBASE editbin option", "/DYNAMICBASE editbin option"]

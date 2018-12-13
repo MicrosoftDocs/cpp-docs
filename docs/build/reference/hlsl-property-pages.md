@@ -1,6 +1,6 @@
 ---
-title: "HLSL Property Pages"
-ms.date: "11/04/2016"
+title: "HLSL Property Pages (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.FXCompilerTool.AdditionalOptionsPage"]
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
 ---

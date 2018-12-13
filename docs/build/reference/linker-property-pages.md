@@ -1,5 +1,5 @@
 ---
-title: "Linker Property Pages"
+title: "Linker Property Pages (C++) - Visual Studio"
 ms.date: "11/21/2017"
 f1_keywords: ["VC.Project.VCLinkerTool.RegisterOutput", "VC.Project.VCLinkerTool.OVERWRITEImportLibrary", "VC.Project.VCLinkerTool.UseLibraryDependencyInputs", "VC.Project.VCLinkerTool.LinkLibraryDependencies"]
 helpviewer_keywords: ["per-user redirection", "Linker property pages"]

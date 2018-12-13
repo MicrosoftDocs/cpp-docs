@@ -1,6 +1,6 @@
 ---
-title: "Troubleshooting Build Customizations"
-ms.date: "11/04/2016"
+title: "Troubleshooting Build Customizations (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["build events [C++], troubleshooting", "builds [C++], build events", "troubleshooting [C++], builds", "build steps [C++], troubleshooting", "events [C++], build", "builds [C++], troubleshooting", "custom build steps [C++], troubleshooting"]
 ms.assetid: e4ceb177-fbee-4ed3-a7d7-80f0d78c1d07
 ---

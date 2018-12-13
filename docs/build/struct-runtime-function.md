@@ -1,6 +1,6 @@
 ---
-title: "struct RUNTIME_FUNCTION"
-ms.date: "11/04/2016"
+title: "struct RUNTIME_FUNCTION (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 84386527-d3aa-41c5-871d-78e3e1913704
 ---
 # struct RUNTIME_FUNCTION

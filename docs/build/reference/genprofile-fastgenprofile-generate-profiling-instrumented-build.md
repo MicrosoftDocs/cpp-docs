@@ -1,5 +1,5 @@
 ---
-title: "/GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
+title: "/GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build) (C++) - Visual Studio"
 ms.date: "03/14/2018"
 f1_keywords: ["GENPROFILE", "FASTGENPROFILE", "/GENPROFILE", "/FASTGENPROFILE"]
 helpviewer_keywords: ["GENPROFILE", "FASTGENPROFILE"]

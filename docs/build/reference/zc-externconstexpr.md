@@ -1,5 +1,5 @@
 ---
-title: "/Zc:externConstexpr (Enable extern constexpr variables)"
+title: "/Zc:externConstexpr (Enable extern constexpr variables) (C++) - Visual Studio"
 ms.date: "02/28/2018"
 f1_keywords: ["/Zc:externConstexpr"]
 helpviewer_keywords: ["-Zc:externConstexpr compiler option (C++)", "extern constexpr variables (C++)"]

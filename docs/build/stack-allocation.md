@@ -1,6 +1,6 @@
 ---
-title: "Stack Allocation"
-ms.date: "11/04/2016"
+title: "Stack Allocation (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 098e51f2-eda6-40d0-b149-0b618aa48b47
 ---
 # Stack Allocation

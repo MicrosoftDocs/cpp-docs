@@ -1,6 +1,6 @@
 ---
-title: "/DRIVER (Windows NT Kernel Mode Driver)"
-ms.date: "11/04/2016"
+title: "/DRIVER (Windows NT Kernel Mode Driver) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.driver", "/driver"]
 helpviewer_keywords: ["kernel mode driver", "-DRIVER linker option", "DRIVER linker option", "/DRIVER linker option"]
 ms.assetid: aeee8e28-5d97-40f5-ba16-9f370fe8a1b8

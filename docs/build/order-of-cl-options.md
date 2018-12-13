@@ -1,6 +1,6 @@
 ---
-title: "Order of CL Options"
-ms.date: "11/04/2016"
+title: "Order of CL Options (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["cl"]
 helpviewer_keywords: ["cl.exe compiler, setting options"]
 ms.assetid: 300908ce-ae00-4b45-964b-e4e69ff6777b

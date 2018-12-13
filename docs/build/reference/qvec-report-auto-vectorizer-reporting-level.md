@@ -1,6 +1,6 @@
 ---
-title: "/Qvec-report (Auto-Vectorizer Reporting Level)"
-ms.date: "11/04/2016"
+title: "/Qvec-report (Auto-Vectorizer Reporting Level) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a
 ---
 # /Qvec-report (Auto-Vectorizer Reporting Level)

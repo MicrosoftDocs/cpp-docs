@@ -1,6 +1,6 @@
 ---
-title: "Importing into an Application"
-ms.date: "11/04/2016"
+title: "Importing into an Application (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["DLLs [C++], importing", "importing DLLs [C++], applications", "applications [C++], importing into"]
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
 ---

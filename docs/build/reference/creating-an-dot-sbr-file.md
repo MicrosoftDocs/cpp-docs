@@ -1,6 +1,6 @@
 ---
-title: "Creating an .Sbr File"
-ms.date: "11/04/2016"
+title: "Creating an .Sbr File (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["SBR files", "BSCMAKE, input files", ".sbr files", "source browser files", "local symbols in browse information", "symbols"]
 ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
 ---

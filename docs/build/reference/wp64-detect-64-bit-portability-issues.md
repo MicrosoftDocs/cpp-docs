@@ -1,6 +1,6 @@
 ---
-title: "/Wp64 (Detect 64-Bit Portability Issues)"
-ms.date: "11/04/2016"
+title: "/Wp64 (Detect 64-Bit Portability Issues) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.Detect64BitPortabilityProblems", "VC.Project.VCCLCompilerTool.Detect64BitPortabilityProblems", "/wp64"]
 helpviewer_keywords: ["64-bit compiler [C++], detecting portability problems", "/Wp64 compiler option [C++]", "-Wp64 compiler option [C++]", "Wp64 compiler option [C++]"]
 ms.assetid: 331ae5aa-e627-4d03-8f63-dd2c2d76dadd

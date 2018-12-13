@@ -1,6 +1,6 @@
 ---
-title: "/Fp (Name .Pch File)"
-ms.date: "11/04/2016"
+title: "/Fp (Name .Pch File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.PrecompiledHeaderFile", "/fp", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile"]
 helpviewer_keywords: ["Fp compiler option [C++]", "-Fp compiler option [C++]", "naming precompiler header files", "PCH files, naming", "names [C++], PCH", ".pch files, naming", "precompiled header files, naming", "/Fp compiler option [C++]"]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2

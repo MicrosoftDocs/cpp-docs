@@ -1,6 +1,6 @@
 ---
-title: "Consuming libraries and components in C++ projects"
-ms.date: "12/10/2018"
+title: "Consuming libraries and components in C++ projects - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.References"]
 helpviewer_keywords: ["Add References Dialog Box (C++)", ".NET Framework (C++), Add References Dialog Box"]
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5

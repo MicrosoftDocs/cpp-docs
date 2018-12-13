@@ -1,6 +1,6 @@
 ---
-title: "Specifying an Inline File"
-ms.date: "11/04/2016"
+title: "Specifying an Inline File (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["NMAKE program, inline files", "inline files [C++], specifying NMAKE", "files [C++], inline"]
 ms.assetid: 393eccfb-3fc9-4bac-a30c-8ac8d221cca3
 ---

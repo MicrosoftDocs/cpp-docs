@@ -1,5 +1,5 @@
 ---
-title: "/SYMBOLS"
+title: "/SYMBOLS (C++) - Visual Studio"
 ms.date: "09/05/2018"
 f1_keywords: ["/symbols"]
 helpviewer_keywords: ["symbols, dumping", "public symbols", "symbols, displaying COFF symbol table", "symbol tables", "SYMBOLS dumpbin option", "/SYMBOLS dumpbin option", "-SYMBOLS dumpbin option"]

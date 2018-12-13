@@ -1,6 +1,6 @@
 ---
-title: ".Res Files as Linker Input"
-ms.date: "11/04/2016"
+title: ".Res Files as Linker Input (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["RES files as linker input", ".res files as linker input", "linking [C++], resource files", "resource files, linking"]
 ms.assetid: 9c37ab00-97df-4d9a-91cd-6bf132970683
 ---

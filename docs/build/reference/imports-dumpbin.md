@@ -1,6 +1,6 @@
 ---
-title: "/IMPORTS (DUMPBIN)"
-ms.date: "11/04/2016"
+title: "/IMPORTS (DUMPBIN) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/imports"]
 helpviewer_keywords: ["IMPORTS dumpbin option", "/IMPORTS dumpbin option", "-IMPORTS dumpbin option"]
 ms.assetid: 6a296216-2b1b-40f8-8736-cd4553a22456

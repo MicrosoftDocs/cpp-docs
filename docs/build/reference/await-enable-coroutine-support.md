@@ -1,5 +1,5 @@
 ---
-title: "/await (Enable coroutine support)"
+title: "/await (Enable coroutine support) (C++) - Visual Studio"
 ms.date: "08/15/2017"
 f1_keywords: ["/await", "-await"]
 helpviewer_keywords: ["/await enable coroutine support [C++]", "-await enable coroutine support [C++]", "await enable coroutine support [C++]"]

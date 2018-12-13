@@ -1,6 +1,6 @@
 ---
-title: "DLLs and Visual C++ run-time library behavior"
-ms.date: "11/04/2016"
+title: "DLLs and Visual C++ run-time library behavior (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["_DllMainCRTStartup", "CRT_INIT"]
 helpviewer_keywords: ["DLLs [C++], entry point function", "process detach [C++]", "process attach [C++]", "DLLs [C++], run-time library behavior", "DllMain function", "_CRT_INIT macro", "_DllMainCRTStartup method", "run-time [C++], DLL startup sequence", "DLLs [C++], startup sequence"]
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2

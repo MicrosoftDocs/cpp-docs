@@ -1,6 +1,6 @@
 ---
-title: "/FS (Force Synchronous PDB Writes)"
-ms.date: "11/04/2016"
+title: "/FS (Force Synchronous PDB Writes) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/FS"]
 helpviewer_keywords: ["-FS compiler option [C++]", "/FS compiler option [C++]"]
 ms.assetid: b2caaffe-f6e1-4963-b068-648f06b105e0

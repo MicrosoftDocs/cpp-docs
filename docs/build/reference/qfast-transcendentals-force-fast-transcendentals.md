@@ -1,6 +1,6 @@
 ---
-title: "/Qfast_transcendentals (Force Fast Transcendentals)"
-ms.date: "11/04/2016"
+title: "/Qfast_transcendentals (Force Fast Transcendentals) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/Qfast_transcendentals"]
 helpviewer_keywords: ["/Qfast_transcendentals", "Force Fast Transcendentals"]
 ms.assetid: 4de24bd1-38e6-49d4-9a05-04c9937d24ac

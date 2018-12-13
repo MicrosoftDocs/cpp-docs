@@ -1,6 +1,6 @@
 ---
-title: "/RAWDATA"
-ms.date: "11/04/2016"
+title: "/RAWDATA (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/rawdata"]
 helpviewer_keywords: ["RAWDATA dumpbin option", "raw data", "-RAWDATA dumpbin option", "/RAWDATA dumpbin option"]
 ms.assetid: 41cba845-5e1f-415e-9fe4-604a52235983

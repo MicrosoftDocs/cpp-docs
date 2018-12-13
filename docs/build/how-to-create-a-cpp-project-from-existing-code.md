@@ -1,6 +1,6 @@
 ---
-title: "How to: Create a C++ Project from Existing Code"
-ms.date: "12/10/2018"
+title: "How to: Create a C++ Project from Existing Code - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["C++, creating projects from existing code"]
 ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
 ---

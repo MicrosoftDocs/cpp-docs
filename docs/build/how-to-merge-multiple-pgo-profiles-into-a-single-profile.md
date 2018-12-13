@@ -1,5 +1,5 @@
 ---
-title: "How to: Merge Multiple PGO Profiles into a Single Profile"
+title: "How to: Merge Multiple PGO Profiles into a Single Profile (C++) - Visual Studio"
 ms.date: "03/14/2018"
 helpviewer_keywords: ["merging profiles", "profile-guided optimizations, merging profiles"]
 ms.assetid: aab686b5-59dd-40d1-a04b-5064690f65a6

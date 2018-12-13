@@ -1,6 +1,6 @@
 ---
-title: "Aggregates and Unions"
-ms.date: "11/04/2016"
+title: "Aggregates and Unions (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["aggregates [C++], and unions"]
 ms.assetid: 859fc211-b111-4f12-af98-de78e48f9b92
 ---

@@ -1,6 +1,6 @@
 ---
-title: "STUB"
-ms.date: "11/04/2016"
+title: "STUB (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["STUB"]
 helpviewer_keywords: ["STUB .def file statement"]
 ms.assetid: 0a3b9643-19ed-47e9-8173-ee16bc8ed056

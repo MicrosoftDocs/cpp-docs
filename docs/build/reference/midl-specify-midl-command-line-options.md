@@ -1,5 +1,5 @@
 ---
-title: "/MIDL (Specify MIDL Command Line Options)"
+title: "/MIDL (Specify MIDL Command Line Options) (C++) - Visual Studio"
 ms.date: "09/05/2018"
 f1_keywords: ["/midl", "VC.Project.VCLinkerTool.MidlCommandFile"]
 helpviewer_keywords: ["-MIDL linker option", "MIDL", "/MIDL linker option", "MIDL linker option", "MIDL, command line options"]

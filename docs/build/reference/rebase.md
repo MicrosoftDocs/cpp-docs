@@ -1,6 +1,6 @@
 ---
-title: "/REBASE"
-ms.date: "11/04/2016"
+title: "/REBASE (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/rebase"]
 helpviewer_keywords: ["base addresses [C++]", "-REBASE editbin option", "REBASE editbin option", "DLLs [C++], linking", "executable files [C++], base address", "/REBASE editbin option [C++]"]
 ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b

@@ -1,6 +1,6 @@
 ---
-title: "Commands in a Makefile"
-ms.date: "11/04/2016"
+title: "Commands in a Makefile (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["commands, makefiles"]
 ms.assetid: 8085517e-42f4-493b-b8f8-44311fc08c64
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Contents of a Makefile"
-ms.date: "11/04/2016"
+title: "Contents of a Makefile (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["makefiles", "makefiles, contents"]
 ms.assetid: 29362adb-d963-4c00-84a6-b38c2ffe6a36
 ---

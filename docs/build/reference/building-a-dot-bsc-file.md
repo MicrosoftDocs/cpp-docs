@@ -1,6 +1,6 @@
 ---
-title: "Building a .Bsc File"
-ms.date: "11/04/2016"
+title: "Building a .Bsc File (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: [".bsc files, building", "bsc files, building"]
 ms.assetid: 304e240d-692a-4f8b-b9ed-891c01bbb2ad
 ---

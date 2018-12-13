@@ -1,6 +1,6 @@
 ---
-title: "/MANIFESTFILE (Name Manifest File)"
-ms.date: "11/04/2016"
+title: "/MANIFESTFILE (Name Manifest File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.ManifestFile"]
 helpviewer_keywords: ["MANIFESTFILE linker option", "-MANIFESTFILE linker option", "/MANIFESTFILE linker option"]
 ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d

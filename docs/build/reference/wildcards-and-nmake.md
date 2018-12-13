@@ -1,6 +1,6 @@
 ---
-title: "Wildcards and NMAKE"
-ms.date: "11/04/2016"
+title: "Wildcards and NMAKE (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["NMAKE program, wildcards", "wildcards, expanding"]
 ms.assetid: 8f5d4b2a-8fa7-46a9-92ac-c8185c99239b
 ---

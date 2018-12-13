@@ -1,6 +1,6 @@
 ---
-title: "Reserved words"
-ms.date: "11/04/2016"
+title: "Reserved words (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["code", "CONFORMING", "DISCARDABLE", "Description", "base", "APPLOADER", "Data", "DYNAMIC", "DEV386"]
 helpviewer_keywords: [".def files [C++], reserved words", "def files [C++], reserved words", "linker [C++], reserved words", "reserved words [C++]"]
 ms.assetid: 9b9f49e5-0739-45ab-a37e-81e3915ceb25

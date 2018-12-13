@@ -1,6 +1,6 @@
 ---
 title: "&lt;example&gt; (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["<example>", "example"]
 helpviewer_keywords: ["<example> C++ XML tag", "example C++ XML tag"]
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877

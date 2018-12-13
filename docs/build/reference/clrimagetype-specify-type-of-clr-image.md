@@ -1,6 +1,6 @@
 ---
-title: "/CLRIMAGETYPE (Specify Type of CLR Image)"
-ms.date: "11/04/2016"
+title: "/CLRIMAGETYPE (Specify Type of CLR Image) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/CLRIMAGETYPE", "VC.Project.VCLinkerTool.CLRImageType"]
 helpviewer_keywords: ["/CLRIMAGETYPE linker option", "-CLRIMAGETYPE linker option"]
 ms.assetid: 04c60ee6-9dd7-4391-bc03-6926ad0fa116

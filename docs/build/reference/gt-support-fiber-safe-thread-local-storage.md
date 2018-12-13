@@ -1,6 +1,6 @@
 ---
-title: "/GT (Support Fiber-Safe Thread-Local Storage)"
-ms.date: "11/04/2016"
+title: "/GT (Support Fiber-Safe Thread-Local Storage) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableFiberSafeOptimizations", "/gt"]
 helpviewer_keywords: ["/GT compiler option [C++]", "GT compiler option [C++]", "thread-local storage", "static thread-local storage and fiber safety", "-GT compiler option [C++]", "fiber-safe static thread-local storage compiler option [C++]"]
 ms.assetid: 071fec79-c701-432b-9970-457344133159

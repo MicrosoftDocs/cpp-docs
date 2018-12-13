@@ -1,6 +1,6 @@
 ---
-title: "EDITBIN Command Line"
-ms.date: "11/04/2016"
+title: "EDITBIN Command Line (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["editbin"]
 helpviewer_keywords: ["EDITBIN program, command line"]
 ms.assetid: 28ff7f92-6c4e-4e7f-86d8-80d5b2f91662

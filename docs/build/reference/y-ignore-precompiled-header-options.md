@@ -1,6 +1,6 @@
 ---
-title: "/Y- (Ignore Precompiled Header Options)"
-ms.date: "11/04/2016"
+title: "/Y- (Ignore Precompiled Header Options) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/y-"]
 helpviewer_keywords: ["Y- compiler option [C++]", "-Y- compiler option [C++]", "/Y- compiler option [C++]"]
 ms.assetid: cfaecb36-58db-46b8-b04d-cca6072b1b7a

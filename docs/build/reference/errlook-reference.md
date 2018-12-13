@@ -1,6 +1,6 @@
 ---
-title: "ERRLOOK Reference"
-ms.date: "11/04/2016"
+title: "ERRLOOK Reference (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["ErrLook tool", "Error lookup tool"]
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
 ---

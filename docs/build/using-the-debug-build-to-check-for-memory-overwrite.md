@@ -1,6 +1,6 @@
 ---
-title: "Using the Debug Build to Check for Memory Overwrite"
-ms.date: "11/04/2016"
+title: "Using the Debug Build to Check for Memory Overwrite (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["memory, overwrites"]
 ms.assetid: 1345eb4d-24ba-4595-b1cc-2da66986311e
 ---

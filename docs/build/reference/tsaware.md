@@ -1,6 +1,6 @@
 ---
-title: "/TSAWARE"
-ms.date: "11/04/2016"
+title: "/TSAWARE (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/tsaware"]
 helpviewer_keywords: ["-TSAWARE editbin option", "/TSAWARE editbin option", "TSAWARE editbin option"]
 ms.assetid: 84715050-c907-4118-8cff-2973411ae931

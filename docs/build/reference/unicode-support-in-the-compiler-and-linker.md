@@ -1,5 +1,5 @@
 ---
-title: "Unicode Support in the Compiler and Linker"
+title: "Unicode Support in the Compiler and Linker (C++) - Visual Studio"
 ms.date: "12/15/2017"
 f1_keywords: ["VC.Project.VCLinkerTool.UseUnicodeResponseFiles", "VC.Project.VCLibrarianTool.UseUnicodeResponseFiles", "VC.Project.VCCLCompilerTool.UseUnicodeResponseFiles", "VC.Project.VCXDCMakeTool.UseUnicodeResponseFiles"]
 helpviewer_keywords: ["Unicode, Visual C++"]

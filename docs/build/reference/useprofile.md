@@ -1,5 +1,5 @@
 ---
-title: "/USEPROFILE (Use PGO data with LTCG)"
+title: "/USEPROFILE (Use PGO data with LTCG) (C++) - Visual Studio"
 ms.date: "03/14/2018"
 f1_keywords: ["USEPROFILE"]
 ---

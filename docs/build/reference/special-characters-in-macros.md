@@ -1,6 +1,6 @@
 ---
-title: "Special Characters in Macros"
-ms.date: "11/04/2016"
+title: "Special Characters in Macros (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["special characters, in NMAKE macros"]
 ms.assetid: c0a06cfc-7103-4ee2-a585-e8f6e85dccd7
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Tools.ini and NMAKE"
-ms.date: "11/04/2016"
+title: "Tools.ini and NMAKE (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["NMAKE program, reading files", "Tools.ini and NMake"]
 ms.assetid: ebd5eab6-ddf4-430e-bf4a-1db5bb84e344
 ---

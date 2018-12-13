@@ -1,6 +1,6 @@
 ---
-title: "/GUARD (Enable Guard Checks)"
-ms.date: "11/04/2016"
+title: "/GUARD (Enable Guard Checks) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 72758e23-70ac-4616-94d7-d767477406d1
 ---
 # /GUARD (Enable Guard Checks)

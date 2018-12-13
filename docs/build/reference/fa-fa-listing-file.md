@@ -1,6 +1,6 @@
 ---
-title: "/FA, /Fa (Listing File)"
-ms.date: "11/04/2016"
+title: "/FA, /Fa (Listing File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.AssemblerListingLocation", "VC.Project.VCCLCompilerTool.ConfigureASMListing", "VC.Project.VCCLWCECompilerTool.AssemblerOutput", "VC.Project.VCCLCompilerTool.AssemblerListingLocation", "/fa", "VC.Project.VCCLCompilerTool.AssemblerOutput", "VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing"]
 helpviewer_keywords: ["FA compiler option [C++]", "/FA compiler option [C++]", "-FA compiler option [C++]", "listing file type", "assembly-only listing"]
 ms.assetid: c7507d0e-c69d-44f9-b8e2-d2c398697402

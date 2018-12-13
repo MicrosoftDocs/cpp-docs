@@ -1,5 +1,5 @@
 ---
-title: "/Gm (Enable Minimal Rebuild)"
+title: "/Gm (Enable Minimal Rebuild) (C++) - Visual Studio"
 ms.date: "11/12/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.MinimalRebuild", "/Gm", "/FD", "VC.Project.VCCLWCECompilerTool.MinimalRebuild"]
 helpviewer_keywords: ["/Gm compiler option [C++]", "minimal rebuild", "enable minimal rebuild compiler option [C++]", "Gm compiler option [C++]", "-Gm compiler option [C++]"]

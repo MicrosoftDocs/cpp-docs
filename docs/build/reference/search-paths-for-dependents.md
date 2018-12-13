@@ -1,6 +1,6 @@
 ---
-title: "Search Paths for Dependents"
-ms.date: "11/04/2016"
+title: "Search Paths for Dependents (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["NMAKE program, dependents", "dependents, NMAKE"]
 ms.assetid: bf998e47-da74-48b5-891d-d3d8ce57264b
 ---

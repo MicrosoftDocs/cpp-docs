@@ -1,5 +1,5 @@
 ---
-title: "/Zp (Struct Member Alignment)"
+title: "/Zp (Struct Member Alignment) (C++) - Visual Studio"
 ms.date: "04/30/2018"
 f1_keywords: ["/zp", "VC.Project.VCCLCompilerTool.StructMemberAlignment", "VC.Project.VCCLWCECompilerTool.StructMemberAlignment"]
 helpviewer_keywords: ["Struct Member Alignment compiler option", "Zp compiler option", "/Zp compiler option [C++]", "-Zp compiler option [C++]"]

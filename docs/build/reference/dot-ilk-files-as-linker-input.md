@@ -1,6 +1,6 @@
 ---
-title: ".Ilk Files as Linker Input"
-ms.date: "11/04/2016"
+title: ".Ilk Files as Linker Input (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["ILK files", ".ilk files"]
 ms.assetid: 7324c104-9e5d-423d-b268-b59f92607bf2
 ---

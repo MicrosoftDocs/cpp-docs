@@ -1,6 +1,6 @@
 ---
-title: "Module States of a Regular MFC DLL Dynamically Linked to MFC"
-ms.date: "11/04/2016"
+title: "Module States of a Regular MFC DLL Dynamically Linked to MFC (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["regular MFC DLLs [C++], dynamically linked to MFC", "module states [C++]", "MFC DLLs [C++], regular MFC DLLs", "module states [C++], regular MFC DLLs dynamically linked to", "DLLs [C++], module states"]
 ms.assetid: b4493e79-d25e-4b7f-a565-60de5b32c723
 ---

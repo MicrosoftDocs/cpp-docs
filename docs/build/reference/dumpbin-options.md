@@ -1,6 +1,6 @@
 ---
-title: "DUMPBIN Options"
-ms.date: "11/04/2016"
+title: "DUMPBIN Options (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["dumpbin"]
 helpviewer_keywords: ["DUMPBIN program, options"]
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8

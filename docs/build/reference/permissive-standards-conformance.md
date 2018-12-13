@@ -1,5 +1,5 @@
 ---
-title: "/permissive- (Standards conformance)"
+title: "/permissive- (Standards conformance) (C++) - Visual Studio"
 ms.date: "06/21/2018"
 f1_keywords: ["/permissive", "VC.Project.VCCLCompilerTool.ConformanceMode"]
 helpviewer_keywords: ["/permissive compiler options [C++]", "-permissive compiler options [C++]", "Standards conformance compiler options", "permissive compiler options [C++]"]

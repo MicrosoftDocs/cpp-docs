@@ -1,6 +1,6 @@
 ---
-title: "Dynamic Parameter Stack Area Construction"
-ms.date: "11/04/2016"
+title: "Dynamic Parameter Stack Area Construction (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: a9689613-104f-4050-984a-ce79b37161d1
 ---
 # Dynamic Parameter Stack Area Construction

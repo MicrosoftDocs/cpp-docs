@@ -1,6 +1,6 @@
 ---
-title: "Why Floating-Point Numbers May Lose Precision"
-ms.date: "11/04/2016"
+title: "Why Floating-Point Numbers May Lose Precision (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["DBL_EPSILON constant", "FLT_EPSILON constant", "floating-point numbers, precision"]
 ms.assetid: 1acb1add-ac06-4134-a2fd-aff13d8c4c15
 ---

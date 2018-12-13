@@ -1,6 +1,6 @@
 ---
-title: "/Os, /Ot (Favor Small Code, Favor Fast Code)"
-ms.date: "11/04/2016"
+title: "/Os, /Ot (Favor Small Code, Favor Fast Code) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.FavorSizeOrSpeed", "/os", "VC.Project.VCCLCompilerTool.FavorSizeOrSpeed"]
 helpviewer_keywords: ["favor fast code compiler option [C++]", "/Os compiler option [C++]", "Ot compiler option [C++]", "/Ot compiler option [C++]", "small machine code", "-Ot compiler option [C++]", "fast code", "favor small code compiler option [C++]", "Os compiler option [C++]", "-Os compiler option [C++]"]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2

@@ -1,6 +1,6 @@
 ---
-title: "/link (Pass Options to Linker)"
-ms.date: "11/04/2016"
+title: "/link (Pass Options to Linker) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/link"]
 helpviewer_keywords: ["/link compiler option [C++]", "pass options to linker", "link compiler option [C++]", "linker [C++], passing options to", "-link compiler option [C++]", "cl.exe compiler [C++], passing options to linker"]
 ms.assetid: 16902a94-c094-4328-841f-3ac94ca04848

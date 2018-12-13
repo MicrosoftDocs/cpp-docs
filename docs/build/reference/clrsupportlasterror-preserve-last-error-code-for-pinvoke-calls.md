@@ -1,6 +1,6 @@
 ---
-title: "/CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)"
-ms.date: "11/04/2016"
+title: "/CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/CLRSUPPORTLASTERROR"]
 helpviewer_keywords: ["/CLRSUPPORTLASTERROR linker option", "-CLRSUPPORTLASTERROR linker option"]
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575

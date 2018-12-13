@@ -1,6 +1,6 @@
 ---
-title: "HLSL Property Pages: General"
-ms.date: "11/04/2016"
+title: "HLSL Property Pages: General (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.FXCompilerTool.ShaderModel", "VC.Project.FXCompilerTool.PreprocessorDefinitions", "VC.Project.FXCompilerTool.ShaderType", "VC.Project.FXCompilerTool.EnableDebuggingInformation", "VC.Project.FXCompilerTool.AdditionalIncludeDirectories", "VC.Project.FXCompilerTool.DisableOptimizations", "VC.Project.FXCompilerTool.EntryPointName"]
 ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
 ---

@@ -1,6 +1,6 @@
 ---
-title: "/QIfist (Suppress _ftol)"
-ms.date: "11/04/2016"
+title: "/QIfist (Suppress _ftol) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/qifist"]
 helpviewer_keywords: ["QIfist compiler option [C++]", "-QIfist compiler option [C++]", "/QIfist compiler option [C++]"]
 ms.assetid: 1afd32a5-f658-4b66-85f4-e0ce4cb955bd

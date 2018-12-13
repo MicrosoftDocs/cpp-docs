@@ -1,6 +1,6 @@
 ---
-title: "Makefile Preprocessing"
-ms.date: "11/04/2016"
+title: "Makefile Preprocessing (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["preprocessing makefiles", "makefiles, preprocessing"]
 ms.assetid: a9185139-97c9-4adb-b4a9-1ec395cce9f8
 ---

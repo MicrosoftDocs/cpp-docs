@@ -1,6 +1,6 @@
 ---
-title: "Macros and NMAKE"
-ms.date: "11/04/2016"
+title: "Macros and NMAKE (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["NMAKE macros", "macros, NMAKE"]
 ms.assetid: d424fd47-63eb-4982-9410-6f412730c265
 ---

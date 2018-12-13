@@ -1,6 +1,6 @@
 ---
-title: "How to: Debug a Release Build"
-ms.date: "11/04/2016"
+title: "How to: Debug a Release Build (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["debugging [C++], release builds", "release builds, debugging"]
 ms.assetid: d333e4d1-4e6c-4384-84a9-cb549702da25
 ---

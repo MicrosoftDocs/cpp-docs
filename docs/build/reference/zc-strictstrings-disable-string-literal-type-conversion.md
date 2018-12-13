@@ -1,5 +1,5 @@
 ---
-title: "/Zc:strictStrings (Disable string literal type conversion)"
+title: "/Zc:strictStrings (Disable string literal type conversion) (C++) - Visual Studio"
 ms.date: "03/06/2018"
 f1_keywords: ["/Zc:strictStrings", "strictStrings"]
 helpviewer_keywords: ["/Zc:strictStrings", "-Zc compiler options (C++)", "strictStrings", "/Zc compiler options (C++)", "Zc compiler options (C++)"]

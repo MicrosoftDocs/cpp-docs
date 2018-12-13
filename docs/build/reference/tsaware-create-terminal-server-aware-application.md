@@ -1,6 +1,6 @@
 ---
-title: "/TSAWARE (Create Terminal Server Aware Application)"
-ms.date: "11/04/2016"
+title: "/TSAWARE (Create Terminal Server Aware Application) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/tsaware", "VC.Project.VCLinkerTool.TerminalServerAware"]
 helpviewer_keywords: ["Terminal Server", "/TSAWARE linker option", "Terminal Server, Terminal Server-aware applications", "-TSAWARE linker option", "TSAWARE linker option"]
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29

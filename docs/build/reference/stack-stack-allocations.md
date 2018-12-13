@@ -1,6 +1,6 @@
 ---
-title: "/STACK (Stack Allocations)"
-ms.date: "11/04/2016"
+title: "/STACK (Stack Allocations) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.StackReserveSize", "VC.Project.VCLinkerTool.StackCommitSize", "/stack"]
 helpviewer_keywords: ["STACK linker option", "-STACK linker option", "memory allocation, stack", "/STACK linker option", "stack, setting size"]
 ms.assetid: 73283660-e4bd-47cc-b5ca-04c5d739034c

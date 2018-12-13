@@ -1,6 +1,6 @@
 ---
-title: "/FPO"
-ms.date: "11/04/2016"
+title: "/FPO (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/fpo"]
 helpviewer_keywords: ["/FPO dumpbin option", "-FPO dumpbin option", "FPO dumpbin option"]
 ms.assetid: ee67f08b-bc5a-475a-bee3-c5614721755a

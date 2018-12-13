@@ -1,6 +1,6 @@
 ---
-title: "Recursion Macros"
-ms.date: "11/04/2016"
+title: "Recursion Macros (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["NMAKE program, recursion macros", "recursion macros", "macros, recursion"]
 ms.assetid: c53e5ae7-619e-46b1-bdc2-86d8c7798b1d
 ---

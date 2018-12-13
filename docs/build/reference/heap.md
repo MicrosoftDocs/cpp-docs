@@ -1,6 +1,6 @@
 ---
-title: "/HEAP"
-ms.date: "11/04/2016"
+title: "/HEAP (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/heap"]
 helpviewer_keywords: ["heap allocation, setting heap size", "HEAP editbin option", "-HEAP editbin option", "/HEAP editbin option"]
 ms.assetid: 6ce759b5-75b7-44ff-a5fd-3a83a0ba9a48

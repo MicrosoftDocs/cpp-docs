@@ -1,6 +1,6 @@
 ---
-title: "/CLRHEADER"
-ms.date: "11/04/2016"
+title: "/CLRHEADER (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/CLRHEADER"]
 helpviewer_keywords: ["-CLRHEADER dumpbin option", "/CLRHEADER dumpbin option", "CLRHEADER dumpbin option"]
 ms.assetid: cf73424f-4541-47e2-b94e-69b95266ef2a

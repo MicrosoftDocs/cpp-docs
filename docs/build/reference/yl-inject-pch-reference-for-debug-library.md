@@ -1,5 +1,5 @@
 ---
-title: "/Yl (Inject PCH Reference for Debug Library)"
+title: "/Yl (Inject PCH Reference for Debug Library) (C++) - Visual Studio"
 ms.date: "01/29/2018"
 f1_keywords: ["/yl"]
 helpviewer_keywords: ["-Yl compiler option [C++]", "Yl compiler option [C++]", "/Yl compiler option [C++]"]

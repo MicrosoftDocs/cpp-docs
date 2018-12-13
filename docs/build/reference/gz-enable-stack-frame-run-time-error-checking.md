@@ -1,6 +1,6 @@
 ---
-title: "/GZ (Enable Stack Frame Run-Time Error Checking)"
-ms.date: "11/04/2016"
+title: "/GZ (Enable Stack Frame Run-Time Error Checking) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/gz"]
 helpviewer_keywords: ["-GZ compiler option [C++]", "release-build errors", "/GZ compiler option [C++]", "GZ compiler option [C++]", "debug builds, catch release-build errors"]
 ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c

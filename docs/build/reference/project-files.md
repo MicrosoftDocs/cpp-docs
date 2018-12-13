@@ -1,5 +1,5 @@
 ---
-title: "Example Project File"
+title: "Example Project File (C++) - Visual Studio"
 ms.date: "10/09/2018"
 helpviewer_keywords: [".vcxproj files", "C++ projects, project file format"]
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401

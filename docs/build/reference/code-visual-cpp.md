@@ -1,6 +1,6 @@
 ---
 title: "&lt;code&gt; (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["code", "<code>"]
 helpviewer_keywords: ["<code> C++ XML tag", "code C++ XML tag"]
 ms.assetid: 687db3f8-d435-4a90-b781-8da503fa39bc

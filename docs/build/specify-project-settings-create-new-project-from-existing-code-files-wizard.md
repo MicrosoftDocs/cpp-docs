@@ -1,6 +1,6 @@
 ---
-title: "Specify Project Settings, Create New Project From Existing Code Files Wizard"
-ms.date: "11/04/2016"
+title: "Specify Project Settings, Create New Project From Existing Code Files Wizard (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["vc.appwiz.importwiz.appsettings"]
 helpviewer_keywords: ["Create New Project From Existing Code Files Wizard, project settings"]
 ms.assetid: 9b8860c9-d35f-4f18-9565-2934d3d7f569

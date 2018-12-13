@@ -1,6 +1,6 @@
 ---
-title: "Common Visual C++ ARM Migration Issues"
-ms.date: "11/04/2016"
+title: "Common C++ ARM Migration Issues - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 0f4c434e-0679-4331-ba0a-cc15dd435a46
 ---
 # Common Visual C++ ARM Migration Issues

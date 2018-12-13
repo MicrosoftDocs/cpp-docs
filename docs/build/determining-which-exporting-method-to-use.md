@@ -1,6 +1,6 @@
 ---
-title: "Determining Which Exporting Method to Use"
-ms.date: "11/04/2016"
+title: "Determining Which Exporting Method to Use (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["__declspec(dllexport) keyword [C++]", "exporting DLLs [C++], method comparison", "def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs"]
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
 ---

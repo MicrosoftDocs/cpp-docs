@@ -1,6 +1,6 @@
 ---
-title: "/SUBSYSTEM"
-ms.date: "11/04/2016"
+title: "/SUBSYSTEM (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/subsystem"]
 helpviewer_keywords: ["/SUBSYSTEM editbin option", "-SUBSYSTEM editbin option", "SUBSYSTEM editbin option"]
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215

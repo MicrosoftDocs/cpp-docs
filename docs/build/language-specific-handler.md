@@ -1,6 +1,6 @@
 ---
-title: "Language Specific Handler"
-ms.date: "11/04/2016"
+title: "Language Specific Handler (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 6503e0cd-2d3a-4330-a925-8bed8c27c2be
 ---
 # Language Specific Handler

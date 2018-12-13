@@ -1,6 +1,6 @@
 ---
-title: "/ALL"
-ms.date: "11/04/2016"
+title: "/ALL (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/all"]
 helpviewer_keywords: ["/ALL dumpbin option", "-ALL dumpbin option", "ALL dumpbin option"]
 ms.assetid: aa7eb74a-33ba-4d77-8620-3d7ea8b19952

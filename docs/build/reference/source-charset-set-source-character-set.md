@@ -1,6 +1,6 @@
 ---
-title: "/source-charset (Set Source Character Set)"
-ms.date: "11/04/2016"
+title: "/source-charset (Set Source Character Set) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["source-charset", "/source-charset"]
 helpviewer_keywords: ["/execution-charset compiler option"]
 ms.assetid: d3c5bf7f-526d-4ee4-acc5-c1a02a4fc481

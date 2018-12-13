@@ -1,6 +1,6 @@
 ---
-title: "Choosing the Format of .netmodule Input Files"
-ms.date: "11/04/2016"
+title: "Choosing the Format of .netmodule Input Files (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 4653d1bd-300f-4083-86f5-d1a06f44e61c
 ---
 # Choosing the Format of .netmodule Input Files

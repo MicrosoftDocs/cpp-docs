@@ -1,6 +1,6 @@
 ---
-title: "NMake Property Page (Windows C++)| Microsoft Docs"
-ms.date: "11/04/2016"
+title: "NMake Property Page (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCNMakeTool.ReBuildCommandLine", "VC.Project.VCNMakeTool.CleanCommandLine", "VC.Project.VCNMakeTool.Output", "VC.Project.VCNMakeTool.BuildCommandLine"]
 helpviewer_keywords: ["NMake property page"]
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b

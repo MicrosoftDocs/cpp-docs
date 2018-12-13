@@ -1,5 +1,5 @@
 ---
-title: "/LTCG (Link-time Code Generation)"
+title: "/LTCG (Link-time Code Generation) (C++) - Visual Studio"
 ms.date: "03/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.LinkTimeCodeGeneration", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization", "/ltcg", "VC.Project.VCCLCompilerTool.WholeProgramOptimization"]
 helpviewer_keywords: ["link-time code generation in C++ linker", "/LTCG linker option", "-LTCG linker option", "LTCG linker option"]

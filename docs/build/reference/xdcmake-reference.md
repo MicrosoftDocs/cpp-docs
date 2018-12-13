@@ -1,6 +1,6 @@
 ---
-title: "XDCMake Reference"
-ms.date: "11/04/2016"
+title: "XDCMake Reference (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["xdcmake"]
 helpviewer_keywords: ["xdcmake program"]
 ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac

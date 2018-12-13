@@ -1,6 +1,6 @@
 ---
-title: "/LOADCONFIG"
-ms.date: "11/04/2016"
+title: "/LOADCONFIG (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/loadconfig"]
 helpviewer_keywords: ["LOADCONFIG dumpbin option", "-LOADCONFIG dumpbin option", "/LOADCONFIG dumpbin option"]
 ms.assetid: 24667afe-9bee-4f6e-ae72-f534c0050428

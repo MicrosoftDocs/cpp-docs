@@ -1,6 +1,6 @@
 ---
 title: "&lt;paramref&gt; (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["paramref", "<paramref>"]
 helpviewer_keywords: ["paramref C++ XML tag", "<paramref> C++ XML tag"]
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122

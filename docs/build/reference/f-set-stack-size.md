@@ -1,6 +1,6 @@
 ---
-title: "/F (Set Stack Size)"
-ms.date: "11/04/2016"
+title: "/F (Set Stack Size) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/f"]
 helpviewer_keywords: ["set stack size compiler option", "F compiler option [C++]", "-F compiler option [C++]", "/F compiler option [C++]", "stack, setting size"]
 ms.assetid: 17320b6f-8305-445b-9ec2-75833f4b29e0

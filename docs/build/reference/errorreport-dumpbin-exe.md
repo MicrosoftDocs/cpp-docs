@@ -1,6 +1,6 @@
 ---
-title: "/ERRORREPORT (dumpbin.exe)"
-ms.date: "11/04/2016"
+title: "/ERRORREPORT (dumpbin.exe) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/ERRORREPORT"]
 helpviewer_keywords: ["-ERRORREPORT dumpbin option", "ERRORREPORT dumpbin option", "/ERRORREPORT dumpbin option"]
 ms.assetid: 51178c43-4f95-4fda-8f97-50a257d1c948

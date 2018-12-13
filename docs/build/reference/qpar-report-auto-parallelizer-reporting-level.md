@@ -1,6 +1,6 @@
 ---
-title: "/Qpar-report (Auto-Parallelizer Reporting Level)"
-ms.date: "11/04/2016"
+title: "/Qpar-report (Auto-Parallelizer Reporting Level) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
 ---
 # /Qpar-report (Auto-Parallelizer Reporting Level)

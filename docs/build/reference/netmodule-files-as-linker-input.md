@@ -1,6 +1,6 @@
 ---
-title: ".netmodule Files as Linker Input"
-ms.date: "11/04/2016"
+title: ".netmodule Files as Linker Input (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["MSIL linking", "linking [C++], modules", ".netmodules", "modules, Visual C++"]
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
 ---

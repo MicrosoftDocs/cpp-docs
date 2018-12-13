@@ -1,6 +1,6 @@
 ---
-title: "/FI (Name Forced Include File)"
-ms.date: "11/04/2016"
+title: "/FI (Name Forced Include File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCNMakeTool.ForcedIncludes", "VC.Project.VCCLCompilerTool.ForcedIncludeFiles", "VC.Project.VCCLWCECompilerTool.ForcedIncludeFiles", "/fi"]
 helpviewer_keywords: ["FI compiler option [C++]", "-FI compiler option [C++]", "/FI compiler option [C++]", "preprocess header file compiler option [C++]"]
 ms.assetid: 07e79577-8152-4df9-a64c-aae08c603397

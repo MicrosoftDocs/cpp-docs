@@ -1,6 +1,6 @@
 ---
-title: "/Qpar (Auto-Parallelizer)"
-ms.date: "11/04/2016"
+title: "/Qpar (Auto-Parallelizer) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration"]
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
 ---

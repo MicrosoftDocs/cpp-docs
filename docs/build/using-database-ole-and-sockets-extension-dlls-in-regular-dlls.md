@@ -1,6 +1,6 @@
 ---
-title: "Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs"
-ms.date: "11/04/2016"
+title: "Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["DLLs [C++], initializing", "DLLs [C++], extension", "DLLs [C++], regular"]
 ms.assetid: 9f1d14a7-9e2a-4760-b3b6-db014fcdb7ff
 ---

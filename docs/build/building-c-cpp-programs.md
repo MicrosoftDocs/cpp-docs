@@ -1,7 +1,7 @@
 ---
 title: "Building C/C++ Projects in Visual Studio"
 ms.description: "Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system."
-ms.date: "12/08/2018"
+ms.date: "12/14/2018"
 f1_keywords: ["vcbuilding", "buildingaprogramVC"]
 helpviewer_keywords: ["builds [C++]", "Visual C++ projects, building", "projects [C++], building", "builds [C++], options", "Visual C++, build options"]
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008

@@ -1,6 +1,6 @@
 ---
-title: "LIB Reference"
-ms.date: "11/04/2016"
+title: "LIB Reference (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["Lib"]
 helpviewer_keywords: ["static libraries", "static libraries, setting IDE options", "Library Manager", "LIB [C++]", "32-Bit Library Manager"]
 ms.assetid: ecc7f643-bbd4-47a3-8dc6-b360f880db91

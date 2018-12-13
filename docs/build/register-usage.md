@@ -1,6 +1,6 @@
 ---
-title: "Register usage"
-ms.date: "11/04/2016"
+title: "Register usage (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: ce58e2cf-afd3-4068-980e-28a209298265
 ---
 # Register usage

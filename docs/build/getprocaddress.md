@@ -1,6 +1,6 @@
 ---
-title: "GetProcAddress"
-ms.date: "11/04/2016"
+title: "GetProcAddress (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["GetProcAddress"]
 helpviewer_keywords: ["DLLs [C++], GetProcAddress", "ordinal exports [C++]", "GetProcAddress method"]
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af

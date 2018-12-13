@@ -1,6 +1,6 @@
 ---
-title: "Specifying DLLs to Delay Load"
-ms.date: "11/04/2016"
+title: "Specifying DLLs to Delay Load (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["DELAYLOAD linker option", "delayed loading of DLLs", "delayed loading of DLLs, specifying", "/DELAYLOAD linker option"]
 ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
 ---

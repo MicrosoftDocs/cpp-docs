@@ -1,6 +1,6 @@
 ---
-title: "XML Document Generator Tool Property Pages"
-ms.date: "11/04/2016"
+title: "XML Document Generator Tool Property Pages (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCXDCMakeTool.ValidateIntelliSense", "VC.Project.VCXDCMakeTool.SuppressStartupBanner", "VC.Project.VCXDCMakeTool.DocumentLibraryDependencies", "VC.Project.VCXDCMakeTool.OutputDocumentFile", "VC.Project.VCXDCMakeTool.AdditionalDocumentFiles"]
 ms.assetid: 645912b5-197a-4c36-ba58-64df09444ca0
 ---

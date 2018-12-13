@@ -1,6 +1,6 @@
 ---
-title: "@ (Specify a Compiler Response File)"
-ms.date: "11/04/2016"
+title: "@ (Specify a Compiler Response File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["@"]
 helpviewer_keywords: ["response files, C/C++ compiler", "@ compiler option", "cl.exe compiler, specifying response files"]
 ms.assetid: 400fffee-909d-4f60-bf76-45833e822685

@@ -1,6 +1,6 @@
 ---
-title: "Predefined Rules"
-ms.date: "11/04/2016"
+title: "Predefined Rules (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["rules, predefined", "NMAKE program, predefined rules", "predefined rules in NMAKE"]
 ms.assetid: 638cdc3f-4aba-4b4f-96e3-ad65b0364f12
 ---

@@ -1,6 +1,6 @@
 ---
 title: "NAME (C/C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["name"]
 helpviewer_keywords: ["NAME .def file statement"]
 ms.assetid: 5c9b6bd8-9275-46a5-afba-f17a5936dc26

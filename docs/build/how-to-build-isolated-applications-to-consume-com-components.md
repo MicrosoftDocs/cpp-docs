@@ -1,6 +1,6 @@
 ---
-title: "How to: Build Isolated Applications to Consume COM Components"
-ms.date: "11/04/2016"
+title: "How to: Build Isolated Applications to Consume COM Components (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["isolated applications [C++]"]
 ms.assetid: 04587547-1174-44ab-bd99-1292358fba20
 ---

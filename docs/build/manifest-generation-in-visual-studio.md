@@ -1,6 +1,6 @@
 ---
 title: "Manifest Generation in Visual Studio"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["manifests [C++]"]
 ms.assetid: 0af60aa9-d223-42cd-8426-b3fc543a2a81
 ---

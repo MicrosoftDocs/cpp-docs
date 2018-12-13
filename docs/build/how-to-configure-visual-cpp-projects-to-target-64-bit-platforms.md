@@ -1,6 +1,6 @@
 ---
-title: "How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms"
-ms.date: "11/04/2016"
+title: "How to: Configure C++ Projects to Target 64-Bit, x64 Platforms - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["platforms [C++], 64-bit", "64-bit programming [C++], configuring projects", "project configurations [C++]"]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
 ---

@@ -1,6 +1,6 @@
 ---
-title: "/GR (Enable Run-Time Type Information)"
-ms.date: "11/04/2016"
+title: "/GR (Enable Run-Time Type Information) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/gr", "VC.Project.VCCLWCECompilerTool.RuntimeTypeInfo", "VC.Project.VCCLCompilerTool.RuntimeTypeInfo"]
 helpviewer_keywords: ["-Gr compiler option [C++]", "Gr compiler option [C++]", "RTTI compiler option", "/Gr compiler option [C++]", "enable run-time type information compiler option [C++]"]
 ms.assetid: d1f9f850-dcec-49fd-96ef-e72d01148906

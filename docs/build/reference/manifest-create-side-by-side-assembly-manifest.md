@@ -1,6 +1,6 @@
 ---
-title: "/MANIFEST (Create Side-by-Side Assembly Manifest)"
-ms.date: "11/04/2016"
+title: "/MANIFEST (Create Side-by-Side Assembly Manifest) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateManifest"]
 helpviewer_keywords: ["-MANIFEST linker option", "/MANIFEST linker option", "MANIFEST linker option"]
 ms.assetid: 98c52e1e-712c-4f49-b149-4d0a3501b600

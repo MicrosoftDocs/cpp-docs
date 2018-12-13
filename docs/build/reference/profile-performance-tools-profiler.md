@@ -1,6 +1,6 @@
 ---
-title: "/PROFILE (Performance Tools Profiler)"
-ms.date: "11/04/2016"
+title: "/PROFILE (Performance Tools Profiler) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.Profile"]
 helpviewer_keywords: ["-PROFILE linker option", "/PROFILE linker option"]
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699

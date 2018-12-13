@@ -1,6 +1,6 @@
 ---
-title: "/SUBSYSTEM (Specify Subsystem)"
-ms.date: "11/04/2016"
+title: "/SUBSYSTEM (Specify Subsystem) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/subsystem", "VC.Project.VCLinkerTool.SubSystem", "VC.Project.VCLinkerTool.SubSystemVersion"]
 helpviewer_keywords: ["/SUBSYSTEM linker option", "SUBSYSTEM linker option", "-SUBSYSTEM linker option", "subsystem specifications"]
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b

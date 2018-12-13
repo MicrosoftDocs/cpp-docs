@@ -1,6 +1,6 @@
 ---
-title: "Optimization Pragmas and Keywords"
-ms.date: "11/04/2016"
+title: "Optimization Pragmas and Keywords (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["keywords [C++], for optimization", "pragmas, for optimization", "optimization, keywords and pragmas"]
 ms.assetid: 66a94842-ef10-490a-88b3-51d1a568ead5
 ---

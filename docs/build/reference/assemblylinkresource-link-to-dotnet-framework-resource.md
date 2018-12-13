@@ -1,6 +1,6 @@
 ---
-title: "/ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)"
-ms.date: "11/04/2016"
+title: "/ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/ASSEMBLYLINKRESOURCE", "VC.Project.VCLinkerTool.AssemblyLinkResource"]
 helpviewer_keywords: ["-ASSEMBLYLINKRESOURCE linker option", "ASSEMBLYLINKRESOURCE linker option", "/ASSEMBLYLINKRESOURCE linker option"]
 ms.assetid: 8b6ad184-1b33-47a4-8513-4803cf915b64

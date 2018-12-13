@@ -1,6 +1,6 @@
 ---
-title: "XML Documentation (Visual C++)"
-ms.date: "11/04/2016"
+title: "XML Documentation (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["XML documentation", "XML, documentation comments in source code", "comments, C++ source code files", "/// delimiter for C++ documentation"]
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
 ---

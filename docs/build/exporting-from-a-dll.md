@@ -1,6 +1,6 @@
 ---
-title: "Exporting from a DLL"
-ms.date: "11/04/2016"
+title: "Exporting from a DLL (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["exporting DLLs [C++], about exporting from DLLs", "exporting functions [C++], DLLs (exporting from)", "exporting DLLs [C++]", "DLLs [C++], exporting from", "DLL exports [C++]", "functions [C++], exporting", "exports table [C++]"]
 ms.assetid: a08f86c4-5996-460b-ae54-da2b764045f0
 ---

@@ -1,6 +1,6 @@
 ---
-title: "/RTC (Run-Time Error Checks)"
-ms.date: "11/04/2016"
+title: "/RTC (Run-Time Error Checks) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/rtc", "VC.Project.VCCLCompilerTool.SmallerTypeCheck", "VC.Project.VCCLCompilerTool.UninitializedVariableCheck", "VC.Project.VCCLCompilerTool.StackFrameCheck", "VC.Project.VCCLCompilerTool.BasicRuntimeChecks"]
 helpviewer_keywords: ["/RTCs compiler option [C++]", "-RTC1 compiler option [C++]", "run-time errors, error checks", "-RTCu compiler option [C++]", "/RTC1 compiler option [C++]", "/RTCc compiler option [C++]", "/RTCu compiler option [C++]", "__MSVC_RUNTIME_CHECKS macro", "-RTCs compiler option [C++]", "RTCs compiler option", "RTC1 compiler option", "run-time errors, run-time checks", "run-time checks, /RTC option", "RTCu compiler option", "RTCc compiler option", "-RTCc compiler option [C++]"]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368

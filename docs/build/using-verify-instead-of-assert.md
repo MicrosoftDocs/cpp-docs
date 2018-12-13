@@ -1,6 +1,6 @@
 ---
-title: "Using VERIFY Instead of ASSERT"
-ms.date: "11/04/2016"
+title: "Using VERIFY Instead of ASSERT (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["assert"]
 helpviewer_keywords: ["ASSERT statements", "debugging [MFC], ASSERT statements", "VERIFY macro", "assertions, troubleshooting ASSERT statements", "debugging assertions", "assertions, debugging"]
 ms.assetid: 4c46397b-3fb1-49c1-a09b-41a72fae3797

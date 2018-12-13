@@ -1,6 +1,6 @@
 ---
-title: "Fast Compilation"
-ms.date: "11/04/2016"
+title: "Fast Compilation (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["performance, cle.exe compiler", "compilation, performance", "cl.exe compiler, performance", "fast compiling"]
 ms.assetid: 5fead136-ba69-40c8-8e25-236f89d5990a
 ---

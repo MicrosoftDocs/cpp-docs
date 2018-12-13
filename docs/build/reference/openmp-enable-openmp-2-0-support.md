@@ -1,6 +1,6 @@
 ---
-title: "/openmp (Enable OpenMP 2.0 Support)"
-ms.date: "11/04/2016"
+title: "/openmp (Enable OpenMP 2.0 Support) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/openmp", "VC.Project.VCCLCompilerTool.OpenMP"]
 helpviewer_keywords: ["/openmp compiler option [C++]", "-openmp compiler option [C++]"]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13

@@ -1,5 +1,5 @@
 ---
-title: "/DEFAULTLIB (Specify Default Library)"
+title: "/DEFAULTLIB (Specify Default Library) (C++) - Visual Studio"
 ms.date: "05/29/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.DefaultLibraries", "/defaultlib"]
 helpviewer_keywords: ["-DEFAULTLIB linker option", "DEFAULTLIB linker option", "/DEFAULTLIB linker option", "libraries, adding to list of"]

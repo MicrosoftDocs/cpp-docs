@@ -1,6 +1,6 @@
 ---
-title: "MFC DLL Frequently Asked Questions"
-ms.date: "11/04/2016"
+title: "MFC DLL Frequently Asked Questions (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["troubleshooting [C++], DLLs", "DLLs [C++], frequently asked questions", "FAQs [C++], DLLs"]
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
 ---

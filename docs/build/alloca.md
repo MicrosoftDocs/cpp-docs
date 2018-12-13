@@ -1,6 +1,6 @@
 ---
-title: "alloca"
-ms.date: "11/04/2016"
+title: "alloca (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.topic: "reference"
 ms.assetid: 2b209335-e3a0-4934-93f0-3b5925d22918
 ---

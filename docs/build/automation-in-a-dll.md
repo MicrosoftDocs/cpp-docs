@@ -1,6 +1,6 @@
 ---
-title: "Automation in a DLL"
-ms.date: "11/04/2016"
+title: "Automation in a DLL - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["DLLs [C++], Automation", "Automation [C++], DLLs"]
 ms.assetid: 2728ecd1-14e2-4ae0-a946-e749e11dbb74
 ---

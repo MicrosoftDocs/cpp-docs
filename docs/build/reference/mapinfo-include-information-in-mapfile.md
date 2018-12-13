@@ -1,6 +1,6 @@
 ---
-title: "/MAPINFO (Include Information in Mapfile)"
-ms.date: "11/04/2016"
+title: "/MAPINFO (Include Information in Mapfile) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.MapLines", "VC.Project.VCLinkerTool.MapInfoFixups", "VC.Project.VCLinkerTool.MapExports", "/mapinfo"]
 helpviewer_keywords: ["/MAPINFO linker option", "MAPINFO linker option", "-MAPINFO linker option"]
 ms.assetid: 533d2bce-f9b7-4fea-ae1c-0b4864c9d10b

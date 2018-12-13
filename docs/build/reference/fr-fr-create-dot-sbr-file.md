@@ -1,6 +1,6 @@
 ---
-title: "/FR, /Fr (Create .Sbr File)"
-ms.date: "11/04/2016"
+title: "/FR, /Fr (Create .Sbr File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.BrowseInformation", "VC.Project.VCCLCompilerTool.BrowseInformation", "/fr", "VC.Project.VCCLCompilerTool.BrowseInformationFile", "VC.Project.VCCLWCECompilerTool.BrowseInformationFile"]
 helpviewer_keywords: ["/FR compiler option [C++]", "-FR compiler option [C++]", "FR compiler option [C++]", "symbolic browser information"]
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896

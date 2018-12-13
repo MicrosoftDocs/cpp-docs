@@ -1,6 +1,6 @@
 ---
-title: "/GX (Enable Exception Handling)"
-ms.date: "11/04/2016"
+title: "/GX (Enable Exception Handling) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/gx"]
 helpviewer_keywords: ["exception handling, enabling", "/GX compiler option [C++]", "-GX compiler option [C++]", "cl.exe compiler, exception handling", "enable exception handling compiler option [C++]", "GX compiler option [C++]"]
 ms.assetid: 933b43ba-de77-4ff8-a48b-7074de90bc1c

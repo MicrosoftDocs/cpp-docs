@@ -1,6 +1,6 @@
 ---
-title: "/V (Version Number)"
-ms.date: "11/04/2016"
+title: "/V (Version Number) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/v"]
 helpviewer_keywords: ["embedding version strings", "/V compiler option [C++]", "version numbers, specifying for .obj", "V compiler option [C++]", "-V compiler option [C++]"]
 ms.assetid: 3e93fb7a-5dfd-49a6-bd49-3dca8052e0f3

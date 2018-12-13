@@ -1,6 +1,6 @@
 ---
-title: "Look Up Button"
-ms.date: "11/04/2016"
+title: "Look Up Button (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["Look Up button"]
 ms.assetid: 61da61ec-5bb5-462a-85ef-501df5e93551
 ---

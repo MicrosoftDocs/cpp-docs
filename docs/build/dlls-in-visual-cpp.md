@@ -1,6 +1,6 @@
 ---
 title: "Create C/C++ DLLs in Visual Studio"
-ms.date: "12/10/2018"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["executable files [C++]", "dynamic linking [C++]", "linking [C++], dynamic vs. static", "DLLs [C++]", "DLLs [C++], about DLLs"]
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
 ---

@@ -1,5 +1,5 @@
 ---
-title: "/Zc:throwingNew (Assume operator new throws)"
+title: "/Zc:throwingNew (Assume operator new throws) (C++) - Visual Studio"
 ms.date: "03/01/2018"
 f1_keywords: ["throwingNew", "/Zc:throwingNew"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "throwingNew", "Assume operator new Throws", "/Zc compiler options (C++)", "Zc compiler options (C++)"]

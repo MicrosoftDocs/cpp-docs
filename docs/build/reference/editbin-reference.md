@@ -1,6 +1,6 @@
 ---
-title: "EDITBIN Reference"
-ms.date: "11/04/2016"
+title: "EDITBIN Reference (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["editbin"]
 helpviewer_keywords: ["binary data, editing", "object files, modifying", "EDITBIN program", "COFF files, editing"]
 ms.assetid: efdda03b-3dfc-4d31-90e6-caf5b3977914

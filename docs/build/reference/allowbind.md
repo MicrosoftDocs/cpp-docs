@@ -1,6 +1,6 @@
 ---
-title: "/ALLOWBIND"
-ms.date: "11/04/2016"
+title: "/ALLOWBIND (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/allowbind"]
 helpviewer_keywords: ["ALLOWBIND editbin option", "/ALLOWBIND editbin option", "-ALLOWBIND editbin option"]
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8

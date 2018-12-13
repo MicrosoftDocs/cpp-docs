@@ -1,6 +1,6 @@
 ---
-title: "/IGNORE (Ignore Specific Warnings)"
-ms.date: "11/04/2016"
+title: "/OVERWRITE (Ignore Specific Warnings) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/OVERWRITE"]
 helpviewer_keywords: ["/IGNORE linker option"]
 ms.assetid: 37e77387-8838-4697-898f-d376ac641124

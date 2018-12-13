@@ -1,6 +1,6 @@
 ---
-title: "/D (Preprocessor Definitions)"
-ms.date: "11/04/2016"
+title: "/D (Preprocessor Definitions) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCNMakeTool.PreprocessorDefinitions", "VC.Project.VCCLCompilerTool.PreprocessorDefinitions", "/d"]
 helpviewer_keywords: ["preprocessor definition symbols", "constants, defining", "macros, compiling", "/D compiler option [C++]", "-D compiler option [C++]", "D compiler option [C++]"]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba

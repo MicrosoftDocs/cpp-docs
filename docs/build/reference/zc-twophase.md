@@ -1,5 +1,5 @@
 ---
-title: "/Zc:twoPhase- (disable two-phase name lookup)"
+title: "/Zc:twoPhase- (disable two-phase name lookup) (C++) - Visual Studio"
 ms.date: "03/06/2018"
 f1_keywords: ["twoPhase", "/Zc:twoPhase", "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"]
 helpviewer_keywords: ["twoPhase", "disable two-phase name lookup", "/Zc:twoPhase"]

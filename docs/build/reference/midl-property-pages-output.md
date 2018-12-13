@@ -1,6 +1,6 @@
 ---
-title: "MIDL Property Pages: Output"
-ms.date: "11/04/2016"
+title: "MIDL Property Pages: Output (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCMidlTool.ProxyFileName", "VC.Project.VCMidlTool.GenerateTypeLibrary", "VC.Project.VCMidlTool.HeaderFileName", "VC.Project.VCMidlTool.InterfaceIdentifierFileName", "VC.Project.VCMidlTool.OutputDirectory", "VC.Project.VCMidlTool.DLLDataFileName", "VC.Project.VCMidlTool.TypeLibraryName"]
 helpviewer_keywords: ["MIDL, property pages"]
 ms.assetid: b850b21b-ed38-46dd-a712-807e8eabd9aa

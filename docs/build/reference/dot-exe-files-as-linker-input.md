@@ -1,6 +1,6 @@
 ---
-title: ".Exe Files as Linker Input"
-ms.date: "11/04/2016"
+title: ".Exe Files as Linker Input (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["executable files, as linker output", ".exe files"]
 ms.assetid: 73714c30-6f03-4e72-881e-090e5240ba93
 ---

@@ -1,6 +1,6 @@
 ---
-title: ".Pdb Files as Linker Input"
-ms.date: "11/04/2016"
+title: ".Pdb Files as Linker Input (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: [".pdb files, as linker input", "PDB files, as linker input"]
 ms.assetid: c1071478-2369-4b03-9df8-71761cf82f3b
 ---

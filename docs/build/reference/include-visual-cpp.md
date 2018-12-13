@@ -1,6 +1,6 @@
 ---
 title: "&lt;include&gt; (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["include", "<include>"]
 helpviewer_keywords: ["include C++ XML tag", "<include> C++ XML tag"]
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3

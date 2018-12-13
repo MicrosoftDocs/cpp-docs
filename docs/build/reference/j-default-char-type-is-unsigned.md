@@ -1,6 +1,6 @@
 ---
-title: "/J (Default char Type Is unsigned)"
-ms.date: "11/04/2016"
+title: "/J (Default char Type Is unsigned) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.DefaultCharIsUnsigned", "VC.Project.VCCLWCECompilerTool.DefaultCharIsUnsigned", "/j"]
 helpviewer_keywords: ["defaults, char type", "char data type", "-J compiler option [C++]", "/J compiler option [C++]", "J compiler option [C++]", "default char type is unsigned"]
 ms.assetid: 50973667-6638-491e-9c41-bff73acae19f

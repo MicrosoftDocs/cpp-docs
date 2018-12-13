@@ -1,6 +1,6 @@
 ---
-title: "Creating Inline File Text"
-ms.date: "11/04/2016"
+title: "Creating Inline File Text (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["inline files, creating text", "NMAKE program, inline files", "text, inline file"]
 ms.assetid: b8a332ed-8244-4ff8-89e6-029d7f659725
 ---

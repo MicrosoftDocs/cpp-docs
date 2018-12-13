@@ -1,5 +1,5 @@
 ---
-title: "/Zc:inline (Remove unreferenced COMDAT)"
+title: "/Zc:inline (Remove unreferenced COMDAT) (C++) - Visual Studio"
 ms.date: "03/01/2018"
 f1_keywords: ["/Zc:inline", "VC.Project.VCCLCompilerTool.RemoveUnreferencedCodeData"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "/Zc compiler options (C++)", "Zc compiler options (C++)", "/Zc:inline"]

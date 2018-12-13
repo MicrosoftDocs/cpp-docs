@@ -1,6 +1,6 @@
 ---
-title: "Cumulative Dependencies"
-ms.date: "11/04/2016"
+title: "Cumulative Dependencies (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["dependencies, cumulative", "cumulative dependencies in NMAKE", "dependencies"]
 ms.assetid: fa6dd777-80b8-437d-87a7-aec0ed818a49
 ---

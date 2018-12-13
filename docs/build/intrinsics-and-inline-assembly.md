@@ -1,6 +1,6 @@
 ---
-title: "Intrinsics and Inline Assembly"
-ms.date: "11/04/2016"
+title: "Intrinsics and Inline Assembly (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 8affd4bb-279d-46f3-851f-8be0a9c5ed3f
 ---
 # Intrinsics and Inline Assembly

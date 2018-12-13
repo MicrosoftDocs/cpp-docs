@@ -1,6 +1,6 @@
 ---
-title: "/FD (IDE Minimal Rebuild)"
-ms.date: "11/04/2016"
+title: "/FD (IDE Minimal Rebuild) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/FD"]
 helpviewer_keywords: ["/FD compiler option [C++]", "-FD compiler option [C++]", "FD compiler option [C++]"]
 ms.assetid: 7ef21b8c-a448-4bb4-9585-a2a870028e17

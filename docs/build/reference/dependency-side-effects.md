@@ -1,6 +1,6 @@
 ---
-title: "Dependency Side Effects"
-ms.date: "11/04/2016"
+title: "Dependency Side Effects (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["dependencies, side effects", "NMAKE program, dependents"]
 ms.assetid: d4e8db25-fdc0-4d73-81ec-1538f2e1b3e8
 ---

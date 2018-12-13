@@ -1,6 +1,6 @@
 ---
 title: "MSBuild internals for C++ projects in Visual Studio"
-ms.date: "12/08/2018"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["MSBuild overview"]
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
 ---

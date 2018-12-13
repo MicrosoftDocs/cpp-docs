@@ -1,6 +1,6 @@
 ---
-title: "Inline Files in a Makefile"
-ms.date: "11/04/2016"
+title: "Inline Files in a Makefile (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["inline files [C++], in makefiles", "inline files [C++]", "NMAKE program, inline files", "makefiles, inline files", "files [C++], inline"]
 ms.assetid: ff48a64f-773d-410c-9726-f867ad4c8030
 ---

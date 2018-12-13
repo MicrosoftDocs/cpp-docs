@@ -1,5 +1,5 @@
 ---
-title: "Environment Variables for Profile-Guided Optimizations"
+title: "Environment Variables for C++ Profile-Guided Optimizations - Visual Studio"
 ms.date: "03/14/2018"
 helpviewer_keywords: ["profile-guided optimizations, environment variables"]
 ms.assetid: f95a6d1e-49a4-4802-a144-092026b600a3

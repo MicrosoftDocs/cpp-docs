@@ -1,6 +1,6 @@
 ---
-title: "Stack Usage"
-ms.date: "11/04/2016"
+title: "Stack Usage (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 383f0072-0438-489f-8829-cca89582408c
 ---
 # Stack Usage

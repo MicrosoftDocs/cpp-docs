@@ -1,6 +1,6 @@
 ---
-title: "setjmp-longjump"
-ms.date: "11/04/2016"
+title: "setjmp-longjump (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: b0e21902-095d-4198-8f9a-b6326525721a
 ---
 # setjmp/longjump

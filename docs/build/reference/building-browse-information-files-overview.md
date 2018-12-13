@@ -1,6 +1,6 @@
 ---
-title: "Building Browse Information Files: Overview"
-ms.date: "11/04/2016"
+title: "Building Browse Information Files: Overview (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: [".bsc files, about .bsc files", "bsc files, about bsc files", "browse information files (.bsc)", "browse information files (.bsc), creating"]
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
 ---

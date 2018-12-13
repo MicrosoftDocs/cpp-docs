@@ -1,6 +1,6 @@
 ---
-title: "/arch (ARM)"
-ms.date: "11/04/2016"
+title: "/arch (ARM) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 4f1406ff-f174-487c-a126-8ab06cf447c1
 ---
 # /arch (ARM)

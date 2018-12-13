@@ -1,5 +1,5 @@
 ---
-title: "Configuring Programs for Windows XP"
+title: "Configuring C++ Programs for Windows XP - Visual Studio"
 ms.date: "02/02/2018"
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Precompiled Header Files"
-ms.date: "12/10/2018"
+title: "Precompiled Header Files (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["pch"]
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b

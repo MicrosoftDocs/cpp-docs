@@ -1,5 +1,5 @@
 ---
-title: "/sdl (Enable Additional Security Checks)"
+title: "/sdl (Enable Additional Security Checks) (C++) - Visual Studio"
 ms.date: "11/26/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.SDLCheck"]
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826

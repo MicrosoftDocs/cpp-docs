@@ -1,6 +1,6 @@
 ---
-title: "Search Paths in Rules"
-ms.date: "11/04/2016"
+title: "Search Paths in Rules (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["search paths in NMAKE inference rules", "inference rules in NMAKE", "rules, inference"]
 ms.assetid: 38feded6-536d-425d-bf40-fff3173a5506
 ---

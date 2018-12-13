@@ -1,6 +1,6 @@
 ---
-title: "/GL (Whole Program Optimization)"
-ms.date: "11/04/2016"
+title: "/GL (Whole Program Optimization) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/gl", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization"]
 helpviewer_keywords: ["/GL compiler option [C++]", "whole program optimizations and C++ compiler", "-GL compiler option [C++]", "GL compiler option [C++]"]
 ms.assetid: 09d51e2d-9728-4bd0-b5dc-3b8284aca1d1

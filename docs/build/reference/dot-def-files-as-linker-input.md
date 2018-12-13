@@ -1,6 +1,6 @@
 ---
-title: ".Def Files as Linker Input"
-ms.date: "11/04/2016"
+title: ".Def Files as Linker Input (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: [".def files, as linker input", "def files, as linker input"]
 ms.assetid: ecb32d7c-e3be-4782-85a1-1c77d30f6e59
 ---

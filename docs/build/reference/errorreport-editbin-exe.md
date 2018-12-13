@@ -1,6 +1,6 @@
 ---
-title: "/ERRORREPORT (editbin.exe)"
-ms.date: "11/04/2016"
+title: "/ERRORREPORT (editbin.exe) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/ERRORREPORT"]
 helpviewer_keywords: ["-ERRORREPORT editbin option", "ERRORREPORT editbin option", "/ERRORREPORT editbin option"]
 ms.assetid: eca66ac3-b754-4bd7-9dd4-e04fc79a71b6

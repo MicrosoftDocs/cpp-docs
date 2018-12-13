@@ -1,5 +1,5 @@
 ---
-title: "/FILEALIGN (Align sections in files)"
+title: "/FILEALIGN (Align sections in files) (C++) - Visual Studio"
 ms.date: "10/23/2017"
 f1_keywords: ["/filealign"]
 helpviewer_keywords: ["linker align sections", "/FILEALIGN linker option", "-FILEALIGN linker option", "FILEALIGN linker option"]

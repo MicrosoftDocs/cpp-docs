@@ -1,6 +1,6 @@
 ---
-title: "Hint Files"
-ms.date: "11/04/2016"
+title: "Hint Files (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["cpp.hint", "vc.hint.file"]
 helpviewer_keywords: ["stop file", "cpp.hint", "hint file", "cpp.stop", "Class View, hint file"]
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65

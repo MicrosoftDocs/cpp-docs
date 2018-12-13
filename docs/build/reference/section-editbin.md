@@ -1,6 +1,6 @@
 ---
-title: "/SECTION (EDITBIN)"
-ms.date: "11/04/2016"
+title: "/SECTION (EDITBIN) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/section"]
 helpviewer_keywords: ["-SECTION editbin option", "SECTION editbin option", "alignment characters in sections", "/SECTION editbin option"]
 ms.assetid: 4680ab4e-c984-4251-8241-93440cad7615

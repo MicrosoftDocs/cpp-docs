@@ -1,6 +1,6 @@
 ---
-title: "Extension DLLs"
-ms.date: "11/04/2016"
+title: "Extension DLLs (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["afxdll"]
 helpviewer_keywords: ["memory [C++], DLLs", "MFC extension DLLs [C++]", "AFXDLL library", "shared resources [C++]", "MFC DLLs [C++], MFC extension DLLs", "DLLs [C++], extension", "shared DLL versions [C++]", "resource sharing [C++]", "extension DLLs [C++]", "extension DLLs [C++], about MFC extension DLLs"]
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c

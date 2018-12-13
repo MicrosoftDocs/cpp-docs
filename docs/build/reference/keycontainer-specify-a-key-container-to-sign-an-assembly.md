@@ -1,6 +1,6 @@
 ---
-title: "/KEYCONTAINER (Specify a Key Container to Sign an Assembly)"
-ms.date: "11/04/2016"
+title: "/KEYCONTAINER (Specify a Key Container to Sign an Assembly) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.KeyContainer", "/keycontainer"]
 helpviewer_keywords: ["KEYCONTAINER linker option", "/KEYCONTAINER linker option", "-KEYCONTAINER linker option"]
 ms.assetid: 94882d12-b77a-49c7-96d0-18a31aee001e

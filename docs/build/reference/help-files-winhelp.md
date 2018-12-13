@@ -1,6 +1,6 @@
 ---
-title: "Help Files (WinHelp)"
-ms.date: "11/04/2016"
+title: "Help Files (WinHelp) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["file types [C++], WinHelp files"]
 ms.assetid: 4fdcbd66-66b0-4866-894a-fd7b4c2557e4
 ---

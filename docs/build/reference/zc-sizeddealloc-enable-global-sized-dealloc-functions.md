@@ -1,5 +1,5 @@
 ---
-title: "/Zc:sizedDealloc (Enable Global Sized Deallocation Functions)"
+title: "/Zc:sizedDealloc (Enable Global Sized Deallocation Functions) (C++) - Visual Studio"
 ms.date: "03/06/2018"
 f1_keywords: ["sizedDealloc", "/Zc:sizedDealloc"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "sizedDealloc", "Enable Global Sized Deallocation Functions", "/Zc compiler options (C++)", "Zc compiler options (C++)"]

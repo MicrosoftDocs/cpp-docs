@@ -1,6 +1,6 @@
 ---
-title: "/Yu (Use Precompiled Header File)"
-ms.date: "11/04/2016"
+title: "/Yu (Use Precompiled Header File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/yu"]
 helpviewer_keywords: ["Yu compiler option [C++]", "/Yu compiler option [C++]", "-Yu compiler option [C++]", "PCH files, use existing", ".pch files, use existing", "precompiled header files, use existing"]
 ms.assetid: 24f1bd0e-b624-4296-a17e-d4b53e374e1f

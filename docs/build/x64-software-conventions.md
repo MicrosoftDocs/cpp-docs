@@ -1,6 +1,6 @@
 ---
-title: "x64 Software Conventions"
-ms.date: "11/04/2016"
+title: "x64 Software Conventions (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["x64 coding conventions", "Visual C++, x64 calling conventions"]
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
 ---

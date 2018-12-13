@@ -1,5 +1,5 @@
 ---
-title: "/MP (Build with Multiple Processes)"
+title: "/MP (Build with Multiple Processes) (C++) - Visual Studio"
 ms.date: "02/22/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.MultiProcessorCompilation"]
 helpviewer_keywords: ["-MP compiler option (C++)", "/MP compiler option (C++)", "MP compiler option (C++)", "cl.exe compiler, multi-process build"]

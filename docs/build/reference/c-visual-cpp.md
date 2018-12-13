@@ -1,6 +1,6 @@
 ---
 title: "&lt;c&gt; (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["<c>"]
 helpviewer_keywords: ["<c> C++ XML tag", "c C++ XML tag"]
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f

@@ -1,5 +1,5 @@
 ---
-title: "/INTEGRITYCHECK"
+title: "/INTEGRITYCHECK (C++) - Visual Studio"
 ms.date: "12/28/2017"
 f1_keywords: ["/INTEGRITYCHECK"]
 helpviewer_keywords: ["-INTEGRITYCHECK editbin options", "/INTEGRITYCHECK editbin options", "INTEGRITYCHECK editbin options"]

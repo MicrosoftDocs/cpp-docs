@@ -1,6 +1,6 @@
 ---
-title: "Chained Unwind Info Structures"
-ms.date: "11/04/2016"
+title: "Chained Unwind Info Structures (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 176835bf-f118-45d9-9128-9db4b7571864
 ---
 # Chained Unwind Info Structures

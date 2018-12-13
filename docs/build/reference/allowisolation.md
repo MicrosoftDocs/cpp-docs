@@ -1,6 +1,6 @@
 ---
-title: "/ALLOWISOLATION"
-ms.date: "11/04/2016"
+title: "/ALLOWISOLATION (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/ALLOWISOLATION"]
 helpviewer_keywords: ["-ALLOWISOLATION editbin option", "/ALLOWISOLATION editbin option", "ALLOWISOLATION editbin option"]
 ms.assetid: 91430344-f64f-491a-a5a5-7ea3b21cbe68

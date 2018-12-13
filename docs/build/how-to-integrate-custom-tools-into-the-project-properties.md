@@ -1,5 +1,5 @@
 ---
-title: "How to: Integrate Custom Tools into the Project Properties"
+title: "How to: Integrate Custom Tools into the Project Properties (C++) - Visual Studio"
 ms.date: "04/27/2016"
 f1_keywords: ["msbuild.cpp.howto.integratecustomtools"]
 helpviewer_keywords: ["msbuild (c++), howto: integrate custom tools"]

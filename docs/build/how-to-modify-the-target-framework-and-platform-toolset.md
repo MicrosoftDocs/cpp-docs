@@ -1,7 +1,7 @@
 ---
-title: "How to: Modify the Target Framework and Platform Toolset"
+title: "How to: Modify the Target Framework and Platform Toolset (C++) - Visual Studio"
 ms.custom: "conceptual"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["msbuild.cpp.howto.modifytargetframeworkandplatformtoolset"]
 helpviewer_keywords: ["msbuild (c++), howto: modify target framework and platform toolset"]
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe

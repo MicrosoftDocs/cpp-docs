@@ -1,5 +1,5 @@
 ---
-title: "/POGOSAFEMODE (Run PGO in thread safe mode)"
+title: "/POGOSAFEMODE (Run PGO in thread safe mode) (C++) - Visual Studio"
 ms.date: "03/14/2018"
 f1_keywords: ["POGOSAFEMODE"]
 ---

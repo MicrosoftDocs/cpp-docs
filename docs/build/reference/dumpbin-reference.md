@@ -1,6 +1,6 @@
 ---
-title: "DUMPBIN Reference"
-ms.date: "11/04/2016"
+title: "DUMPBIN Reference (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["dumpbin"]
 helpviewer_keywords: ["binary data, binary file dumper", "DUMPBIN program", "Microsoft COFF binary file dumper", "COFF files, displaying information about", "binary file dumper"]
 ms.assetid: 4bc06822-5330-44b4-8a3f-6180dfd41dfb

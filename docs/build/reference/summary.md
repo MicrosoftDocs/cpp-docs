@@ -1,6 +1,6 @@
 ---
-title: "/SUMMARY"
-ms.date: "11/04/2016"
+title: "/SUMMARY (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/summary"]
 helpviewer_keywords: ["-SUMMARY dumpbin option", "/SUMMARY dumpbin option", "SUMMARY dumpbin option"]
 ms.assetid: f33f244c-1f23-4e94-bd85-b26c97a19e6a

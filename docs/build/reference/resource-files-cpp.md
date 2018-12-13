@@ -1,6 +1,6 @@
 ---
 title: "Resource Files (C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["resource files", "resources [C++]", "file types [C++], resource files"]
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
 ---

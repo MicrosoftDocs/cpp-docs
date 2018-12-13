@@ -1,5 +1,5 @@
 ---
-title: "Decorated Names"
+title: "Decorated Names (C++) - Visual Studio"
 ms.date: "09/05/2018"
 helpviewer_keywords: ["decorated names, definition", "name decoration [C++]", "names [C++], decorated"]
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344

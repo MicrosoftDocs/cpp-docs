@@ -1,6 +1,6 @@
 ---
-title: "/E (Preprocess to stdout)"
-ms.date: "11/04/2016"
+title: "/E (Preprocess to stdout) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/e"]
 helpviewer_keywords: ["-E compiler option [C++]", "/E compiler option [C++]", "preprocessor output, copy to stdout", "preprocessor output"]
 ms.assetid: ddbb1725-d950-4978-ab2f-30a5cd7b778c

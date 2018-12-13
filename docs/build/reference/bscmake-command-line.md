@@ -1,6 +1,6 @@
 ---
-title: "BSCMAKE Command Line"
-ms.date: "11/04/2016"
+title: "BSCMAKE Command Line (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["BSCMAKE, command line"]
 ms.assetid: 8006e8cf-8bfe-4c23-868a-b0a25e6bbf0f
 ---

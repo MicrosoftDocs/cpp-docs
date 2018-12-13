@@ -1,6 +1,6 @@
 ---
-title: "/SAFESEH (Image has Safe Exception Handlers)"
-ms.date: "11/04/2016"
+title: "/SAFESEH (Image has Safe Exception Handlers) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/SAFESEH"]
 helpviewer_keywords: ["/SAFESEH linker option", "-SAFESEH linker option", "SAFESEH linker option"]
 ms.assetid: 7722ff99-b833-4c65-a855-aaca902ffcb7

@@ -1,6 +1,6 @@
 ---
-title: "/Za, /Ze (Disable Language Extensions)"
-ms.date: "11/04/2016"
+title: "/Za, /Ze (Disable Language Extensions) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.DisableLanguageExtensions", "/za", "/ze", "VC.Project.VCCLCompilerTool.DisableLanguageExtensions"]
 helpviewer_keywords: ["-Za compiler option [C++]", "Za compiler option [C++]", "language extensions, disabling in compiler", "-Ze compiler option [C++]", "language extensions", "enable language extensions", "/Za compiler option [C++]", "/Ze compiler option [C++]", "Disable Language Extensions compiler option", "Ze compiler option [C++]"]
 ms.assetid: 65e49258-7161-4289-a176-7c5c0656b1a2

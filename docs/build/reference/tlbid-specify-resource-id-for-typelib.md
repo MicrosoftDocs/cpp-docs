@@ -1,6 +1,6 @@
 ---
-title: "/TLBID (Specify Resource ID for TypeLib)"
-ms.date: "11/04/2016"
+title: "/TLBID (Specify Resource ID for TypeLib) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/tlbid", "VC.Project.VCLinkerTool.TypeLibraryResourceID"]
 helpviewer_keywords: ["tlb files, specifying resource ID", "-TLBID linker option", ".tlb files, specifying resource ID", "/TLBID linker option", "TLBID linker option", "type libraries, specifying resource ID"]
 ms.assetid: 434b28a2-4656-4d52-ac82-8b18bf486fb2

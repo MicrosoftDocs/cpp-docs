@@ -1,6 +1,6 @@
 ---
-title: "MFC Program or Control Source and Header Files"
-ms.date: "11/04/2016"
+title: "MFC Program or Control Source and Header Files (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["file types [C++], MFC source and header"]
 ms.assetid: f61419a8-bf69-4bbb-8f7c-1734be5e6db6
 ---

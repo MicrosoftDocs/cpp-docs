@@ -1,6 +1,6 @@
 ---
-title: "/OUT (DUMPBIN)"
-ms.date: "11/04/2016"
+title: "/OUT (DUMPBIN) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/out"]
 helpviewer_keywords: ["/OUT dumpbin option", "OUT dumpbin option", "-OUT dumpbin option"]
 ms.assetid: 984f9ab6-685f-480b-a515-69abe9d83a65

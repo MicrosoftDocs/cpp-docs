@@ -1,6 +1,6 @@
 ---
-title: "Non-MFC DLLs: Overview"
-ms.date: "11/04/2016"
+title: "Non-MFC DLLs: Overview (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["non-MFC DLLs [C++]", "DLLs [C++], non-MFC"]
 ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
 ---

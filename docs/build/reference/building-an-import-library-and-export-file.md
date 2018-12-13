@@ -1,5 +1,5 @@
 ---
-title: "Building an Import Library and Export File"
+title: "Building an Import Library and Export File (C++) - Visual Studio"
 ms.date: "09/05/2018"
 f1_keywords: ["VC.Project.VCLibrarianTool.ModuleDefinitionFile", "VC.Project.VCLibrarianTool.ExportNamedFunctions", "VC.Project.VCLibrarianTool.GenerateDebug", "VC.Project.VCLibrarianTool.ForceSymbolReferences"]
 helpviewer_keywords: ["OUT library manager option", "INCLUDE library manager option", "/DEF library manager option", "exporting data", "import libraries, building", "-INCLUDE library manager option", "/OUT library manager option", "DEF library manager option", "-DEF library manager option", "-OUT library manager option", "/INCLUDE library manager option", "-EXPORT library manager option", "exporting data, export (.exp) files", "/EXPORT library manager option", "EXPORT library manager option", ".lib files", "EXP files"]

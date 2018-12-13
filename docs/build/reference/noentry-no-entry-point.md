@@ -1,6 +1,6 @@
 ---
-title: "/NOENTRY (No Entry Point)"
-ms.date: "11/04/2016"
+title: "/NOENTRY (No Entry Point) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.ResourceOnlyDLL", "/noentry"]
 helpviewer_keywords: ["entry points [C++], linker specifying", "-NOENTRY linker option", "resource-only DLLs [C++], creating", "NOENTRY linker option", "/NOENTRY linker option [C++]", "DLLs [C++], creating"]
 ms.assetid: 0214dd41-35ad-43ab-b892-e636e038621a

@@ -1,6 +1,6 @@
 ---
 title: "Create a C++ makefile project in Visual Studio"
-ms.date: "12/08/2018"
+ms.date: "12/14/2018"
 f1_keywords: ["vc.appwiz.makefile.project"]
 helpviewer_keywords: ["Makefile projects, creating", "project files [C++], Makefile projects"]
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61

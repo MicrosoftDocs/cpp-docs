@@ -1,6 +1,6 @@
 ---
-title: "/EP (Preprocess to stdout Without #line Directives)"
-ms.date: "11/04/2016"
+title: "/EP (Preprocess to stdout Without #line Directives) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/ep", "VC.Project.VCCLCompilerTool.GeneratePreprocessedFileNoLines"]
 helpviewer_keywords: ["copy preprocessor output to stdout", "preprocessor output, copy to stdout", "-EP compiler option [C++]", "EP compiler option [C++]", "/EP compiler option [C++]"]
 ms.assetid: 6ec411ae-e33d-4ef5-956e-0054635eabea

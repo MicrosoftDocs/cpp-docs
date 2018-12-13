@@ -1,6 +1,6 @@
 ---
-title: "/GH (Enable _pexit Hook Function)"
-ms.date: "11/04/2016"
+title: "/GH (Enable _pexit Hook Function) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["_pexit"]
 helpviewer_keywords: ["/Gh compiler option [C++]", "Gh compiler option [C++]", "_pexit function", "-Gh compiler option [C++]"]
 ms.assetid: 93181453-2676-42e5-bf63-3b19e07299b6

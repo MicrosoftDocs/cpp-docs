@@ -1,6 +1,6 @@
 ---
 title: "&lt;para&gt; (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["<para>", "para"]
 helpviewer_keywords: ["<para> C++ XML tag", "para C++ XML tag"]
 ms.assetid: 35f2a1b3-bc14-4f13-bcb0-c39ccbf74d59

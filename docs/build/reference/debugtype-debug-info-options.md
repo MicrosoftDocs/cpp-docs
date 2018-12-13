@@ -1,6 +1,6 @@
 ---
-title: "/DEBUGTYPE (Debug Info Options)"
-ms.date: "11/04/2016"
+title: "/DEBUGTYPE (Debug Info Options) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/debugtype"]
 helpviewer_keywords: ["/DEBUGTYPE linker option", "DEBUGTYPE linker option", "-DEBUGTYPE linker option"]
 ms.assetid: 1ddcb718-7fec-4f92-a319-3f70f04fe742

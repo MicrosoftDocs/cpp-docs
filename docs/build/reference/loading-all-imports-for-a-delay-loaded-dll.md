@@ -1,6 +1,6 @@
 ---
-title: "Loading All Imports for a Delay-Loaded DLL"
-ms.date: "11/04/2016"
+title: "Loading All Imports for a Delay-Loaded DLL (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["__HrLoadAllImportsForDll linker option"]
 ms.assetid: 975fcd97-1a56-4a16-9698-e1a249d2d592
 ---

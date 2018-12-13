@@ -1,5 +1,5 @@
 ---
-title: "/DEPENDENTLOADFLAG (Set default dependent load flags)"
+title: "/DEPENDENTLOADFLAG (Set default dependent load flags) (C++) - Visual Studio"
 description: "The /DEPENDENTLOADFLAG option sets default flags for DLLs loaded using LoadLibrary"
 ms.date: "05/18/2018"
 f1_keywords: ["dependentloadflag"]

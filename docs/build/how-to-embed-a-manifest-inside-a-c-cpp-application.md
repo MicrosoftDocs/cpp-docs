@@ -1,6 +1,6 @@
 ---
-title: "How to: Embed a Manifest Inside a C/C++ Application"
-ms.date: "11/04/2016"
+title: "How to: Embed a Manifest Inside a C/C++ Application - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["manifests [C++]", "embedding manifests", "makefiles, updating to embed manifest"]
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
 ---

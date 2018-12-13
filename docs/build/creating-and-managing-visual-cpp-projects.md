@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio Projects - C++"
+title: "Visual Studio Projects for C++ development"
 ms.date: "12/12/2018"
 f1_keywords: ["vcprojects", "creatingmanagingVC"]
 helpviewer_keywords: ["ATL projects, creating", "Visual C++ projects, creating", "projects [C++], creating", "Visual C++ projects", "ATL projects"]

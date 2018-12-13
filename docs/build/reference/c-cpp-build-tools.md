@@ -1,6 +1,6 @@
 ---
-title: "C/C++ Build Tools"
-ms.date: "11/04/2016"
+title: "C/C++ Build Tools (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["c.build"]
 helpviewer_keywords: ["builds [C++], C/C++ tools", "tools [C++], build"]
 ms.assetid: 48d9daf4-6bbf-473a-8ce2-bf2923b69f80

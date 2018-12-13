@@ -1,6 +1,6 @@
 ---
 title: "Dot Directives"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["NMAKE program, dot directives", "dot directives in NMAKE"]
 ms.assetid: ab35da65-30b6-48b7-87d6-61503d7faf9f
 ---

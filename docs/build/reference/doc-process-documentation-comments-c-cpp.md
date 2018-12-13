@@ -1,6 +1,6 @@
 ---
 title: "/doc (Process Documentation Comments) (C/C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles", "/doc", "VC.Project.VCCLCompilerTool.XMLDocumentationFileName"]
 helpviewer_keywords: ["/doc compiler option [C++]", "comments, C++ code", "XML documentation, comments in source files", "-doc compiler option [C++]"]
 ms.assetid: b54f7e2c-f28f-4f46-9ed6-0db09be2cc63

@@ -1,6 +1,6 @@
 ---
-title: "NMAKE Reference"
-ms.date: "11/04/2016"
+title: "NMAKE Reference (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["Microsoft program maintenance utility", "preprocessing NMAKE", "program execution [C++]", "NMAKE program"]
 ms.assetid: 24fab6e3-7e43-4da4-957a-88afbbcf8661
 ---

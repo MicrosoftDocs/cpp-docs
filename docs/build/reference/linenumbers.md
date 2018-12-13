@@ -1,6 +1,6 @@
 ---
-title: "/LINENUMBERS"
-ms.date: "11/04/2016"
+title: "/LINENUMBERS (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/linenumbers"]
 helpviewer_keywords: ["LINENUMBERS dumpbin option", "line numbers", "-LINENUMBERS dumpbin option", "/LINENUMBERS dumpbin option"]
 ms.assetid: 1681d582-2c2f-484e-9920-109959549055

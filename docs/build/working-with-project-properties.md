@@ -1,7 +1,7 @@
 ---
 title: "Set C++ compiler and build properties in Visual Studio"
 description: "Use the Visual Studio IDE to change C++ compiler and linker options and other build settings."
-ms.date: "12/10/2018"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
 ---

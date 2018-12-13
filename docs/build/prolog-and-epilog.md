@@ -1,6 +1,6 @@
 ---
-title: "Prolog and Epilog"
-ms.date: "11/04/2016"
+title: "Prolog and Epilog (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
 ---
 # Prolog and Epilog

@@ -1,6 +1,6 @@
 ---
-title: "MIDL Property Pages: Advanced"
-ms.date: "11/04/2016"
+title: "MIDL Property Pages: Advanced (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCMidlTool.ErrorCheckBounds", "VC.Project.VCMidlTool.ErrorCheckStubData", "VC.Project.VCMidlTool.ErrorCheckAllocations", "VC.Project.VCMidlTool.CPreprocessOptions", "VC.Project.VCMidlTool.UndefinePreprocessorDefinitions", "VC.Project.VCMidlTool.EnableErrorChecks", "VC.Project.VCMidlTool.RedirectOutputAndErrors", "VC.Project.VCMidlTool.ErrorCheckEnumRange", "VC.Project.VCMidlTool.StructMemberAlignment", "VC.Project.VCMidlTool.ErrorCheckRefPointers", "VC.Project.VCMidlTool.ValidateParameters"]
 helpviewer_keywords: ["MIDL, property pages"]
 ms.assetid: d1c92e01-f403-4ed6-ab45-4043a3c9c6bb

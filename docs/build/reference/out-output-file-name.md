@@ -1,6 +1,6 @@
 ---
-title: "/OUT (Output File Name)"
-ms.date: "11/04/2016"
+title: "/OUT (Output File Name) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.OutputFile", "/out"]
 helpviewer_keywords: ["output files, name linker option", "-OUT linker option", "OUT linker option", "/OUT C++ linker option", "linker [C++], output files"]
 ms.assetid: 976210a4-e51f-4cfb-af5e-c16344455834

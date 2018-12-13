@@ -1,6 +1,6 @@
 ---
-title: "Kinds of DLLs"
-ms.date: "11/04/2016"
+title: "Kinds of DLLs (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["MFC DLLs [C++], types", "DLLs [C++], types", "DLLs [C++], MFC"]
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
 ---

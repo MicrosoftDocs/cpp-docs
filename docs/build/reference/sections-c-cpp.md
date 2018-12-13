@@ -1,6 +1,6 @@
 ---
 title: "SECTIONS (C/C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["SECTIONS"]
 helpviewer_keywords: ["SECTIONS .def file statement"]
 ms.assetid: 7b974366-9ef5-4e57-bbcc-73a1df6f8857

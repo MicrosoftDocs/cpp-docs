@@ -1,6 +1,6 @@
 ---
-title: "Calling Conventions, Parameters, and Return Type"
-ms.date: "11/04/2016"
+title: "Calling Conventions, Parameters, and Return Type (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["calling conventions, helper functions", "helper functions, calling conventions", "helper functions, return types"]
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
 ---

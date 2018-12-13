@@ -1,5 +1,5 @@
 ---
-title: "/ORDER (Put Functions in Order)"
+title: "/ORDER (Put Functions in Order) (C++) - Visual Studio"
 ms.date: "09/05/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.FunctionOrder", "/order"]
 helpviewer_keywords: ["ORDER linker option", "-ORDER linker option", "LINK tool [C++], program optimizing", "/ORDER linker option", "LINK tool [C++], swap tuning", "paging, optimizing"]

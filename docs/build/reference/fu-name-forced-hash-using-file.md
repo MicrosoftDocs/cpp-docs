@@ -1,6 +1,6 @@
 ---
-title: "/FU (Name Forced #using File)"
-ms.date: "11/04/2016"
+title: "/FU (Name Forced #using File) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ForcedUsingFiles", "/FU", "VC.Project.VCNMakeTool.ForcedUsingAssemblies"]
 helpviewer_keywords: ["-FU compiler option [C++]", "FU compiler option [C++]", "/FU compiler option [C++]"]
 ms.assetid: 698f8603-457f-435a-baff-5ac9243d6ca1

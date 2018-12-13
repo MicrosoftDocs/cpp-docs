@@ -1,6 +1,6 @@
 ---
-title: "/APPCONTAINER (UWP/Microsoft Store App)"
-ms.date: "11/04/2016"
+title: "/APPCONTAINER (UWP/Microsoft Store App) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 9a432db5-7640-460b-ab18-6f61fa7daf6f
 ---
 # /APPCONTAINER (Microsoft Store App)

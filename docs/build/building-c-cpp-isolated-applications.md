@@ -1,6 +1,6 @@
 ---
-title: "Building C/C++ Isolated Applications"
-ms.date: "11/04/2016"
+title: "Building C/C++ Isolated Applications (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["isolated applications [C++]"]
 ms.assetid: 8a2fe4fa-0489-433e-bfc6-495844d8d73a
 ---

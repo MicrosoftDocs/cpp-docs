@@ -1,6 +1,6 @@
 ---
-title: "Mutual Imports"
-ms.date: "11/04/2016"
+title: "Mutual Imports (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["mutual DLL imports [C++]", "AFX_DATA", "importing DLLs [C++], mutual imports", "mutually importing executable files [C++]", "AFX_EXT_CLASS macro", "circular imports", "_AFXEXT preprocessor symbol", "DLLs [C++], importing", "executable files [C++], importing", "extension DLLs [C++], mutual imports", "exporting DLLs [C++], mutual imports"]
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
 ---

@@ -1,5 +1,5 @@
 ---
-title: "@ (Specify a Linker Response File)"
+title: "@ (Specify a Linker Response File) (C++) - Visual Studio"
 ms.date: "09/05/2018"
 f1_keywords: ["@"]
 helpviewer_keywords: ["linker [C++], response files", "command files [C++]", "command files [C++], linker response file", "@ linker option", "response files, C/C++ linker"]

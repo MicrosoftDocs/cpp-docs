@@ -1,6 +1,6 @@
 ---
-title: "/DELAY (Delay Load Import Settings)"
-ms.date: "11/04/2016"
+title: "/DELAY (Delay Load Import Settings) (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/delay", "VC.Project.VCLinkerTool.DelayNoBind", "VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL", "VC.Project.VCLinkerTool.DelayUnload"]
 helpviewer_keywords: ["delayed loading of DLLs, /DELAY option", "DELAY linker option", "/DELAY linker option", "-DELAY linker option"]
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c

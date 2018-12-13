@@ -1,6 +1,6 @@
 ---
-title: "struct UNWIND_CODE"
-ms.date: "11/04/2016"
+title: "struct UNWIND_CODE (C++) - Visual Studio"
+ms.date: "12/14/2018"
 ms.assetid: 104955d8-7e33-4c5a-b0c6-3254648f0af3
 ---
 # struct UNWIND_CODE

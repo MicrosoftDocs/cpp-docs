@@ -1,6 +1,6 @@
 ---
-title: "/SWAPRUN"
-ms.date: "11/04/2016"
+title: "/SWAPRUN (C++) - Visual Studio"
+ms.date: "12/14/2018"
 f1_keywords: ["/swaprun"]
 helpviewer_keywords: ["/SWAPRUN editbin option", "-SWAPRUN editbin option", "SWAPRUN editbin option"]
 ms.assetid: 6eefd7f3-ca47-48e3-8509-323d27cf4ae7

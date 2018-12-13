@@ -1,6 +1,6 @@
 ---
 title: "&lt;seealso&gt; (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "12/14/2018"
 f1_keywords: ["<seealso>", "seealso"]
 helpviewer_keywords: ["seealso C++ XML tag", "<seealso> C++ XML tag"]
 ms.assetid: cb33d100-9c50-4485-8d0c-573429eff155

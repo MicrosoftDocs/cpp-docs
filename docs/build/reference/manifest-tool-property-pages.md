@@ -1,6 +1,6 @@
 ---
-title: "Manifest Tool Property Pages"
-ms.date: "11/04/2016"
+title: "Manifest Tool Property Pages (C++) - Visual Studio"
+ms.date: "12/14/2018"
 helpviewer_keywords: ["Manifest Tool property pages"]
 ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
 ---
