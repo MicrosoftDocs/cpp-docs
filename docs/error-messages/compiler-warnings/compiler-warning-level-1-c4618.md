@@ -15,7 +15,7 @@ The pragma was processed without the argument.
 
 The following sample generates C4618:
 
-```
+```cpp
 // C4618.cpp
 // compile with: /W1 /LD
 #pragma code_seg("")   // C4618

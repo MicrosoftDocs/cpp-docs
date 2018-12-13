@@ -13,7 +13,7 @@ The warning number specified in the [warning](../../preprocessor/warning.md) pra
 
 The following sample generates C4616:
 
-```
+```cpp
 // C4616.cpp
 // compile with: /W1 /c
 #pragma warning( disable : 0 )   // C4616
