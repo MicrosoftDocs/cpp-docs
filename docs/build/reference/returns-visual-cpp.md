@@ -1,6 +1,6 @@
 ---
 title: "&lt;returns&gt; (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["returns", "<returns>"]
 helpviewer_keywords: ["returns C++ XML tag", "<returns> C++ XML tag"]
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9

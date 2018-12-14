@@ -1,6 +1,6 @@
 ---
-title: "How to: Add a Custom Build Step to MSBuild Projects (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "How to: Add a Custom Build Step to MSBuild Projects"
+ms.date: "11/04/2016"
 f1_keywords: ["msbuild.cpp.howto.addcustombuildstep"]
 helpviewer_keywords: ["msbuild (c++), howto: add a custom build step"]
 ms.assetid: a20a0c47-4df4-4754-a1f0-a94a99958916

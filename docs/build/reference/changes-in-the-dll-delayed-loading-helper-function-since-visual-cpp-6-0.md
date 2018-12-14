@@ -1,6 +1,6 @@
 ---
 title: "Changes in the DLL Delayed Loading Helper Function Since Visual C++ 6.0"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["delayed loading of DLLs, what's changed", "PFromRva method", "__delayLoadHelper2 function", "helper functions, what's changed"]
 ms.assetid: 99f0be69-105d-49ba-8dd5-3be7939c0c72
 ---

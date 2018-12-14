@@ -1,6 +1,6 @@
 ---
-title: "/OVERWRITEIDL (Don&#39;t Process Attributes into MIDL) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.IgnoreEmbeddedIDL", "/ignoreidl"]
 helpviewer_keywords: ["IGNOREIDL linker option", "-IGNOREIDL linker option", "/IGNOREIDL linker option"]
 ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780

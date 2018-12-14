@@ -1,5 +1,5 @@
 ---
-title: "Makefile Preprocessing Operators (C++) - Visual Studio"
+title: "Makefile Preprocessing Operators"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["operators [C++], makefile preprocessing", "EXIST operator", "preprocessing NMAKE makefile operators", "NMAKE program, operators", "DEFINED operator", "makefiles, preprocessing operators"]
 ms.assetid: a46e4d39-afdb-43c1-ac3b-025d33e6ebdb

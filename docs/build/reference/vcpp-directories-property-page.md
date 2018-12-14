@@ -1,5 +1,5 @@
 ---
-title: "VC++ Directories Property Page (C++) - Visual Studio"
+title: "VC++ Directories Property Page"
 ms.date: "10/09/2018"
 f1_keywords: ["VC.Project.VCDirectories.IncludePath", "VC.Project.VCDirectories.ReferencePath", "VC.Project.VCDirectories.SourcePath", "VC.Project.VCDirectories.LibraryWPath", "VC.Project.VCDirectories.ExecutablePath", "VC.Project.VCDirectories.LibraryPath", "VS.ToolsOptionsPages.Projects.VCDirectories", "VC.Project.VCDirectories.ExcludePath"]
 helpviewer_keywords: ["VC++ Directories Property Page"]

@@ -1,6 +1,6 @@
 ---
-title: "Help Files (HTML Help) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Help Files (HTML Help)"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["file types [C++], HTML Help files"]
 ms.assetid: d30a1b1b-318f-4a78-8b60-93da53a224a8
 ---

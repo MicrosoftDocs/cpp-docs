@@ -1,5 +1,5 @@
 ---
-title: "/Og (Global Optimizations) (C++) - Visual Studio"
+title: "/Og (Global Optimizations)"
 ms.date: "09/22/2017"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GlobalOptimizations", "/og"]
 helpviewer_keywords: ["-Og compiler option [C++]", "global optimizations compiler option [C++]", "automatic register allocation", "/Og compiler option [C++]", "loop structures, optimizing", "common subexpression elimination", "Og compiler option [C++]"]

@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["troubleshooting side-by-side assemblies", "troubleshooting isolated applications", "troubleshooting Visual C++"]
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
 ---

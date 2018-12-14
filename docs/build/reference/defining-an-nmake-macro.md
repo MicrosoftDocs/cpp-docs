@@ -1,6 +1,6 @@
 ---
-title: "Defining an NMAKE Macro (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Defining an NMAKE Macro"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["macros, NMAKE", "defining NMAKE macros", "NMAKE macros, defining"]
 ms.assetid: 45aae451-9d33-4a3d-8799-2e0cae17070d
 ---

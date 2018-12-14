@@ -1,6 +1,6 @@
 ---
-title: "/BIND (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/BIND"
+ms.date: "11/04/2016"
 f1_keywords: ["/bind"]
 helpviewer_keywords: ["-BIND editbin option", "entry points, addresses", "BIND editbin option", "entry points", "/BIND editbin option", "import address table"]
 ms.assetid: 3772b330-1868-4c90-857d-c31faa867982

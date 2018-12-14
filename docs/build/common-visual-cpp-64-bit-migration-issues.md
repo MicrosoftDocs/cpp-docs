@@ -1,6 +1,6 @@
 ---
-title: "Common C++ 64-bit Migration Issues - Visual Studio"
-ms.date: "12/14/2018"
+title: "Common Visual C++ 64-bit Migration Issues"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["64-bit programming [C++], migration", "64-bit compiler [C++], migration", "porting 32-bit code to 64-bit code", "upgrading Visual C++ applications, 32-bit code", "migration [C++], 64-bit code issues", "32-bit code porting [C++]", "64-bit applications [C++]", "64-bit compiler [C++], porting 32-bit code", "Win64 [C++]"]
 ms.assetid: d17fb838-7513-4e2d-8b27-a1666f17ad76
 ---

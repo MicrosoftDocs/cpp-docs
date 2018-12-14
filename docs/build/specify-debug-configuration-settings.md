@@ -1,6 +1,6 @@
 ---
 title: "New Project From Existing Code Debug Setting (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.importwiz.debugsettings"]
 ms.assetid: 607339a8-9d33-458b-8095-dc73f374e29d
 ---

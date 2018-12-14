@@ -1,5 +1,5 @@
 ---
-title: "/Qspectre (C++) - Visual Studio"
+title: "/Qspectre"
 ms.date: "10/12/2018"
 f1_keywords: ["/Qspectre"]
 helpviewer_keywords: ["/Qspectre"]

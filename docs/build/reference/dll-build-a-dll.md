@@ -1,6 +1,6 @@
 ---
-title: "/DLL (Build a DLL) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/DLL (Build a DLL)"
+ms.date: "11/04/2016"
 f1_keywords: ["/dll"]
 helpviewer_keywords: ["-DLL linker option", "/DLL linker option [C++]", "exporting DLLs [C++], specifying exports", "DLLs [C++], building", "DLL linker option [C++]"]
 ms.assetid: c7685aec-31d0-490f-9503-fb5171a23609

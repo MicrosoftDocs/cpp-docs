@@ -1,5 +1,5 @@
 ---
-title: "/fp (Specify floating-point behavior) (C++) - Visual Studio"
+title: "/fp (Specify floating-point behavior)"
 ms.date: "11/09/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.floatingPointModel", "VC.Project.VCCLWCECompilerTool.FloatingPointExceptions", "/fp", "VC.Project.VCCLWCECompilerTool.floatingPointModel", "VC.Project.VCCLCompilerTool.FloatingPointExceptions"]
 helpviewer_keywords: ["-fp compiler option [C++]", "/fp compiler option [C++]"]

@@ -1,6 +1,6 @@
 ---
-title: "Using Visual C++ Add New Item Templates (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Using Visual C++ Add New Item Templates"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["Add New Item", "Add New Item templates", "Add New Item command", "templates, Add New Item"]
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
 ---

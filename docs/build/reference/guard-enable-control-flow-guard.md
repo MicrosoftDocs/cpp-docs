@@ -1,6 +1,6 @@
 ---
-title: "/guard (Enable Control Flow Guard) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/guard (Enable Control Flow Guard)"
+ms.date: "11/04/2016"
 f1_keywords: ["/guard", "VC.Project.VCCLCompilerTool.ControlFlowGuard"]
 ms.assetid: be495323-f59f-4cf3-a6b6-8ee69e6a19dd
 ---

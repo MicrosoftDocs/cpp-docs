@@ -1,5 +1,5 @@
 ---
-title: "Return Value of cl.exe (C++) - Visual Studio"
+title: "Return Value of cl.exe"
 ms.date: "09/05/2018"
 helpviewer_keywords: ["cl.exe compiler, return value"]
 ms.assetid: 7c2d7f33-ee0d-4199-8ef4-75fe2b007670

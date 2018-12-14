@@ -1,5 +1,5 @@
 ---
-title: ".vcxproj and .props file structure (C++) - Visual Studio"
+title: ".vcxproj and .props file structure"
 ms.date: "09/18/2018"
 helpviewer_keywords: [".vcxproj file structure"]
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c

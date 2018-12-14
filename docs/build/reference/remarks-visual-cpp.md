@@ -1,6 +1,6 @@
 ---
 title: "&lt;remarks&gt; (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["remarks", "<remarks>"]
 helpviewer_keywords: ["<remarks> C++ XML tag", "remarks C++ XML tag"]
 ms.assetid: c820083b-3192-40ab-9ec8-1472c55b4247

@@ -1,6 +1,6 @@
 ---
-title: "/APPCONTAINER (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/APPCONTAINER"
+ms.date: "11/04/2016"
 f1_keywords: ["/APPCONTAINER"]
 helpviewer_keywords: ["APPCONTAINER editbin option", "-APPCONTAINER editbin option", "/APPCONTAINER editbin option"]
 ms.assetid: 0ca4f1ec-c8de-4a37-b3e2-deda7af0bb88

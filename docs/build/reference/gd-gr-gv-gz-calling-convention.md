@@ -1,5 +1,5 @@
 ---
-title: "/Gd, /Gr, /Gv, /Gz (Calling Convention) (C++) - Visual Studio"
+title: "/Gd, /Gr, /Gv, /Gz (Calling Convention)"
 ms.date: "09/05/2018"
 f1_keywords: ["/gr", "/Gv", "/gz", "/Gd", "VC.Project.VCCLCompilerTool.CallingConvention"]
 helpviewer_keywords: ["-Gd compiler option [C++]", "-Gv compiler option [C++]", "/Gv compiler option [C++]", "-Gr compiler option [C++]", "Gd compiler option [C++]", "Gr compiler option [C++]", "/Gz compiler option [C++]", "-Gz compiler option [C++]", "/Gd compiler option [C++]", "Gz compiler option [C++]", "Gv compiler option [C++]", "/Gr compiler option [C++]"]

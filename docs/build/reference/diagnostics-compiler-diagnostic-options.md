@@ -1,5 +1,5 @@
 ---
-title: "/diagnostics (Compiler diagnostic options) (C++) - Visual Studio"
+title: "/diagnostics (Compiler diagnostic options)"
 ms.date: "11/11/2016"
 f1_keywords: ["/diagnostics", "VC.Project.VCCLCompilerTool.DiagnosticsFormat"]
 helpviewer_keywords: ["/diagnostics compiler diagnostic options [C++]", "-diagnostics compiler diagnostic options [C++]", "diagnostics compiler diagnostic options [C++]"]

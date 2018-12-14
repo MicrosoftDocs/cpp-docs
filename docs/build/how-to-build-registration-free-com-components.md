@@ -1,6 +1,6 @@
 ---
-title: "How to: Build Registration-Free COM Components (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "How to: Build Registration-Free COM Components"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["COM components, registration-free"]
 ms.assetid: 7e585d6a-0314-45b2-8f1b-cae9ac4df037
 ---

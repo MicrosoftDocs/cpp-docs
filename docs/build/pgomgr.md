@@ -1,5 +1,5 @@
 ---
-title: "pgomgr (C++) - Visual Studio"
+title: "pgomgr"
 ms.date: "03/14/2018"
 helpviewer_keywords: ["pgomgr program", "profile-guided optimizations, pgomgr"]
 ms.assetid: 74589126-df18-42c9-8739-26d60e148d6a

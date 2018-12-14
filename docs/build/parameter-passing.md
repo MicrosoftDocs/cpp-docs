@@ -1,6 +1,6 @@
 ---
-title: "Parameter Passing (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Parameter Passing"
+ms.date: "11/04/2016"
 ms.assetid: e838ee5f-c2fe-40b0-9a23-8023c949c820
 ---
 # Parameter Passing

@@ -1,5 +1,5 @@
 ---
-title: "/OPT (Optimizations) (C++) - Visual Studio"
+title: "/OPT (Optimizations)"
 ms.date: "05/18/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.OptimizeReferences", "/opt", "VC.Project.VCLinkerTool.OptimizeForWindows98", "VC.Project.VCLinkerTool.EnableCOMDATFolding", "VC.Project.VCLinkerTool.OptimizeFolding", "VC.Project.VCLinkerTool.FoldingIterations", "VC.Project.VCLinkerTool.OptimizeFoldingIterations"]
 helpviewer_keywords: ["LINK tool [C++], controlling optimizations", "-OPT linker option", "linker [C++], optimizations", "OPT linker option", "optimization, linker", "/OPT linker option"]

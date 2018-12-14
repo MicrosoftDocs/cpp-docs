@@ -1,6 +1,6 @@
 ---
-title: "Unwind Data for Exception Handling, Debugger Support (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Unwind Data for Exception Handling, Debugger Support"
+ms.date: "11/04/2016"
 ms.assetid: 68f1e30d-9038-41af-a48f-02129bfe8928
 ---
 # Unwind Data for Exception Handling, Debugger Support

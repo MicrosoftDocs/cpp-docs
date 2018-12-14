@@ -1,6 +1,6 @@
 ---
-title: "/PDATA (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/PDATA"
+ms.date: "11/04/2016"
 f1_keywords: ["/pdata"]
 helpviewer_keywords: ["PDATA dumpbin option", "/PDATA dumpbin option", "-PDATA dumpbin option"]
 ms.assetid: 5d41d629-6576-4733-b103-0d61e6b77b50

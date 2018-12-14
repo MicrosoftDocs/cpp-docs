@@ -1,5 +1,5 @@
 ---
-title: "pgosweep (C++) - Visual Studio"
+title: "pgosweep"
 ms.date: "03/14/2018"
 helpviewer_keywords: ["pgosweep program", "profile-guided optimizations, pgosweep"]
 ms.assetid: f39dd3b7-1cd9-4c3b-8e8b-fb794744b757

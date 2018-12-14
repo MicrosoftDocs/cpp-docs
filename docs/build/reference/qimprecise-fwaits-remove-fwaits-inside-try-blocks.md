@@ -1,6 +1,6 @@
 ---
-title: "/Qimprecise_fwaits (Remove fwaits Inside Try Blocks) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Qimprecise_fwaits (Remove fwaits Inside Try Blocks)"
+ms.date: "11/04/2016"
 f1_keywords: ["/Qimprecise_fwaits"]
 helpviewer_keywords: ["-Qimprecise_fwaits compiler option (C++)", "/Qimprecise_fwaits compiler option (C++)"]
 ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b

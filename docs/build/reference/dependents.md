@@ -1,6 +1,6 @@
 ---
-title: "/DEPENDENTS (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/DEPENDENTS"
+ms.date: "11/04/2016"
 f1_keywords: ["/dependents"]
 helpviewer_keywords: ["-DEPENDENTS dumpbin option", "/DEPENDENTS dumpbin option", "DEPENDENTS dumpbin option"]
 ms.assetid: 9b31da2a-75ac-4bbf-a3f1-adf8b0ecbbb4

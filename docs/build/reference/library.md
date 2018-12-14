@@ -1,6 +1,6 @@
 ---
-title: "LIBRARY (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "LIBRARY"
+ms.date: "11/04/2016"
 f1_keywords: ["LIBRARY"]
 helpviewer_keywords: ["LIBRARY .def file statement"]
 ms.assetid: 1d7ccc92-e088-4ef7-9ef0-25c3862cc051

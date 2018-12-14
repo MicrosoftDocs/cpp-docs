@@ -1,6 +1,6 @@
 ---
-title: "/Gw (Optimize Global Data) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Gw (Optimize Global Data)"
+ms.date: "11/04/2016"
 f1_keywords: ["/Gw"]
 helpviewer_keywords: ["/Gw compiler option [C++]", "-Gw compiler option [C++]"]
 ms.assetid: 6f90f4e9-5eb8-4c47-886e-631278a5a4a9

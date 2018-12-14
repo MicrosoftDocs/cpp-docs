@@ -1,5 +1,5 @@
 ---
-title: "/FUNCTIONPADMIN (Create Hotpatchable Image) (C++) - Visual Studio"
+title: "/FUNCTIONPADMIN (Create Hotpatchable Image)"
 ms.date: "03/09/2018"
 f1_keywords: ["/functionpadmin"]
 helpviewer_keywords: ["-FUNCTIONPADMIN linker option", "/FUNCTIONPADMIN linker option"]

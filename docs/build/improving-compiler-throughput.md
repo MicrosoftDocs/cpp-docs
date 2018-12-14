@@ -1,6 +1,6 @@
 ---
-title: "Improving C++ Compiler Throughput - Visual Studio"
-ms.date: "12/14/2018"
+title: "Improving Compiler Throughput"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["throughput, C++ compiler", "cl.exe compiler, performance", "performance, compiler", "cl.exe compiler, throughput"]
 ms.assetid: ba5f884e-9037-4a92-b10e-fc2a3836c5bf
 ---

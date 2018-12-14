@@ -1,6 +1,6 @@
 ---
-title: "Error Handling and Notification (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Error Handling and Notification"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["error handling, and notification"]
 ms.assetid: b621cf60-d869-451a-b05e-dc86d78addaa
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Unprototyped Functions (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Unprototyped Functions"
+ms.date: "11/04/2016"
 ms.assetid: 34200b8c-5b52-4f0d-aff8-9f70d82868ed
 ---
 # Unprototyped Functions

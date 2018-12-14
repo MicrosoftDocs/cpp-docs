@@ -1,5 +1,5 @@
 ---
-title: "/Zc:auto (Deduce Variable Type) (C++) - Visual Studio"
+title: "/Zc:auto (Deduce Variable Type)"
 ms.date: "02/28/2018"
 f1_keywords: ["/Zc:auto"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "Deduce variable type (C++)", "/Zc compiler options (C++)", "Zc compiler options (C++)"]

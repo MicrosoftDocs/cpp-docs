@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Using MSBuild to Create a C++ Project - Visual Studio"
+title: "Walkthrough: Using MSBuild to Create a Visual C++ Project"
 ms.date: "09/24/2018"
 f1_keywords: ["msbuild.cpp.walkthrough.createproject"]
 helpviewer_keywords: ["msbuild (c++), walkthrough: create a project"]

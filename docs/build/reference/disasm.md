@@ -1,5 +1,5 @@
 ---
-title: "/DISASM (C++) - Visual Studio"
+title: "/DISASM"
 ms.date: "1/17/2018"
 f1_keywords: ["/disasm"]
 helpviewer_keywords: ["-DISASM dumpbin option", "DISASM dumpbin option", "/DISASM dumpbin option"]

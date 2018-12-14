@@ -1,6 +1,6 @@
 ---
 title: "/NXCOMPAT"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["/NXCOMPAT"]
 helpviewer_keywords: ["-NXCOMPAT editbin option", "NXCOMPAT editbin option", "/NXCOMPAT editbin option"]
 ms.assetid: 30e6b9bb-1189-4e27-b7c3-587e239437b7

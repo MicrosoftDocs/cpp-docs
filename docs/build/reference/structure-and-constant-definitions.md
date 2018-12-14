@@ -1,6 +1,6 @@
 ---
-title: "Structure and Constant Definitions (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Structure and Constant Definitions"
+ms.date: "11/04/2016"
 ms.assetid: 1df7cf46-b853-4788-a257-100d5c37997f
 ---
 # Structure and Constant Definitions

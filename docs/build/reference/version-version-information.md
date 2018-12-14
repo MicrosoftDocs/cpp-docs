@@ -1,6 +1,6 @@
 ---
-title: "/VERSION (Version Information) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/VERSION (Version Information)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.Version", "/version"]
 helpviewer_keywords: ["-VERSION linker option", "Version Information linker option", "version numbers, specifying in .exe", "/VERSION linker option", "VERSION linker option"]
 ms.assetid: b86d0e86-dca6-4316-aee2-d863ccb9f223

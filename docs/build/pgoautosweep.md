@@ -1,5 +1,5 @@
 ---
-title: "PgoAutoSweep (C++) - Visual Studio"
+title: "PgoAutoSweep"
 ms.date: "03/14/2018"
 f1_keywords: ["PgoAutoSweep", "PogoAutoSweepA", "PogoAutoSweepW"]
 ---

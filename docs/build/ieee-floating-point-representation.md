@@ -1,6 +1,6 @@
 ---
-title: "IEEE Floating-Point Representation (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "IEEE Floating-Point Representation"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["float keyword", "real*8 value", "floating-point numbers, IEEE representation", "double data type, floating-point representation", "IEEE floating point representation", "real*10 value", "long double", "real*4 value"]
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
 ---

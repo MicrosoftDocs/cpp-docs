@@ -1,6 +1,6 @@
 ---
-title: "Targets in Multiple Description Blocks (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Targets in Multiple Description Blocks"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["description blocks", "blocks, multiple description", "multiple description blocks"]
 ms.assetid: 8618dcd9-c11d-4562-91a7-0c904ed438a8
 ---

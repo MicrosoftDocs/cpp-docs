@@ -1,6 +1,6 @@
 ---
-title: "/ALLOWISOLATION (Manifest Lookup) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/ALLOWISOLATION (Manifest Lookup)"
+ms.date: "11/04/2016"
 f1_keywords: ["/ALLOWISOLATION", "VC.Project.VCLinkerTool.AllowIsolation"]
 helpviewer_keywords: ["-ALLOWISOLATION linker option", "/ALLOWISOLATION linker option"]
 ms.assetid: 6d41851e-b3c1-4bdf-beaa-031773089d6f

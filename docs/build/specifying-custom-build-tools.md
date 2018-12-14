@@ -1,5 +1,5 @@
 ---
-title: "Specifying Custom Build Tools (C++) - Visual Studio"
+title: "Specifying Custom Build Tools"
 ms.date: "06/05/2018"
 f1_keywords: ["VC.Project.VCCustomBuildTool.CustomBuildToolBeforeTargets", "VC.Project.VCCustomBuildTool.Outputs", "VC.Project.VCCustomBuildTool.Command", "VC.Project.VCCustomBuildTool.CommandLine", "VC.Project.VCCustomBuildTool.AdditionalDependencies", "VC.Project.VCCustomBuildTool.Message", "VC.Project.VCCustomBuildTool.CustomBuildToolAfterTargets", "VC.Project.VCCustomBuildTool.Description", "VC.Project.VCCustomBuildTool.AdditionalInputs"]
 helpviewer_keywords: ["build tools (C++), specifying", "custom build tools (C++), specifying", "builds (C++), custom build tools"]

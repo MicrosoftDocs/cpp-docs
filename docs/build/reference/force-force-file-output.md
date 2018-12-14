@@ -1,6 +1,6 @@
 ---
-title: "/FORCE (Force File Output) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/FORCE (Force File Output)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.ForceLink", "/force"]
 helpviewer_keywords: ["FORCE linker option", "file output in linker", "/FORCE linker option", "-FORCE linker option"]
 ms.assetid: b1e9a218-a5eb-4e60-a4a4-65b4be15e5da

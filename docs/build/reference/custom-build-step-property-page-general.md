@@ -1,6 +1,6 @@
 ---
-title: "Custom Build Step Property Page: General (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Custom Build Step Property Page: General"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCustomBuildStep.AdditionalInputs", "VC.Project.VCCustomBuildStep.CustomBuildAfterTargets", "VC.Project.VCCustomBuildStep.CustomBuildBeforeTargets", "VC.Project.VCCustomBuildStep.Outputs", "VC.Project.VCCustomBuildStep.Message", "VC.Project.VCCustomBuildStep.Command"]
 helpviewer_keywords: ["project properties, custom build step", "custom build step (general)"]
 ms.assetid: bd319741-0491-46c4-a428-7c61b4b46a02

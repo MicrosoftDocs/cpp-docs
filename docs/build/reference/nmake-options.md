@@ -1,6 +1,6 @@
 ---
-title: "NMAKE Options (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "NMAKE Options"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, options"]
 ms.assetid: 00ba1aec-ef27-44cf-8d82-c5c095e45bae
 ---

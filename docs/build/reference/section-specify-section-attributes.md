@@ -1,5 +1,5 @@
 ---
-title: "/SECTION (Specify Section Attributes) (C++) - Visual Studio"
+title: "/SECTION (Specify Section Attributes)"
 ms.date: "12/29/2017"
 f1_keywords: ["/section"]
 helpviewer_keywords: ["SECTION linker option", "-SECTION linker option", "section attributes", "/SECTION linker option"]

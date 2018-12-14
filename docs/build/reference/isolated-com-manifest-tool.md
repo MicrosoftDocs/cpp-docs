@@ -1,6 +1,6 @@
 ---
 title: "Manifest Tool Isolated COM Properties (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "12/10/2018"
 f1_keywords: ["VC.Project.VCManifestTool.RegistrarScriptFile", "VC.Project.VCManifestTool.ComponentFileName", "VC.Project.VCManifestTool.TypeLibraryFile", "VC.Project.VCManifestTool.ReplacementsFile"]
 ms.assetid: 457582b8-cfde-49c0-92e3-3a6b9e8c08eb
 ---

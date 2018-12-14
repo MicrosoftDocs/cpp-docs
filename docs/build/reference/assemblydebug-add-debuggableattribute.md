@@ -1,6 +1,6 @@
 ---
-title: "/ASSEMBLYDEBUG (Add DebuggableAttribute) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/ASSEMBLYDEBUG (Add DebuggableAttribute)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.AssemblyDebug", "/ASSEMBLYDEBUG"]
 helpviewer_keywords: ["/ASSEMBLYDEBUG linker option", "-ASSEMBLYDEBUG linker option", "ASSEMBLYDEBUG linker option"]
 ms.assetid: 94443af3-470c-41d7-83a0-7434563d7982

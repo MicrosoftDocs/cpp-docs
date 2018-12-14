@@ -1,6 +1,6 @@
 ---
-title: "Advanced, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Advanced, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCManifestTool.KeyFile", "VC.Project.VCManifestTool.UpdateFileHashes", "VC.Project.VCManifestTool.UpdateFileHashesSearchPath", "VC.Project.VCManifestTool.ValidateSignature", "VC.Project.VCManifestTool.KeyContainer"]
 ms.assetid: 3d587366-05ea-4956-a978-313069660735
 ---

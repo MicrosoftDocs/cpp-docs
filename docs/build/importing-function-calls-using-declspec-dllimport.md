@@ -1,6 +1,6 @@
 ---
-title: "Importing Function Calls Using __declspec(dllimport) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Importing Function Calls Using __declspec(dllimport)"
+ms.date: "11/04/2016"
 f1_keywords: ["__declspec", "dllimport"]
 helpviewer_keywords: ["importing function calls [C++]", "dllimport attribute [C++], function call imports", "__declspec(dllimport) keyword [C++]", "function calls [C++], importing"]
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3

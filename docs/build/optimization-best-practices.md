@@ -1,6 +1,6 @@
 ---
-title: "C++ Optimization best practices - Visual Studio"
-ms.date: "12/14/2018"
+title: "Optimization best practices"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["Visual C++, optimization", "optimization, best practices"]
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Raw Pseudo Operations (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Raw Pseudo Operations"
+ms.date: "11/04/2016"
 ms.assetid: 4def1a0e-ec28-4736-91fb-fac95fba1f36
 ---
 # Raw Pseudo Operations

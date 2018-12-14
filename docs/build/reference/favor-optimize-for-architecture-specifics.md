@@ -1,6 +1,6 @@
 ---
-title: "/favor (Optimize for Architecture Specifics) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/favor (Optimize for Architecture Specifics)"
+ms.date: "11/04/2016"
 f1_keywords: ["/favor"]
 helpviewer_keywords: ["-favor compiler option [C++]", "/favor compiler option [C++]"]
 ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a

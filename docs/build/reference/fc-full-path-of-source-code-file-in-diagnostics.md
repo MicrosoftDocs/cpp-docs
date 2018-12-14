@@ -1,6 +1,6 @@
 ---
-title: "/FC (Full Path of Source Code File in Diagnostics) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/FC (Full Path of Source Code File in Diagnostics)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.UseFullPaths", "/FC"]
 helpviewer_keywords: ["/FC compiler option [C++]", "-FC compiler option [C++]"]
 ms.assetid: 1f11414e-cb42-421b-be68-9d369aab036b

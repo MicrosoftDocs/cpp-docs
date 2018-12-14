@@ -1,6 +1,6 @@
 ---
-title: "Environment-Variable Macros (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Environment-Variable Macros"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, environment variable macros", "environment variables, macros in NMAKE", "macros, environment-variable"]
 ms.assetid: f8e96635-0906-47b0-9f56-12a6fdf5e347
 ---

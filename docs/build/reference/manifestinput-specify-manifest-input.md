@@ -1,6 +1,6 @@
 ---
-title: "/MANIFESTINPUT (Specify Manifest Input) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/MANIFESTINPUT (Specify Manifest Input)"
+ms.date: "11/04/2016"
 ms.assetid: a0b0c21e-1f9b-4d8c-bb3f-178f57fa7f1b
 ---
 # /MANIFESTINPUT (Specify Manifest Input)

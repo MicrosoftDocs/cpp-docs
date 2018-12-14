@@ -1,6 +1,6 @@
 ---
-title: "/Ge (Enable Stack Probes) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Ge (Enable Stack Probes)"
+ms.date: "11/04/2016"
 f1_keywords: ["/ge"]
 helpviewer_keywords: ["-Ge compiler option [C++]", "enable stack probes", "/Ge compiler option [C++]", "stack, stack probes", "stack probes", "stack checking calls", "Ge compiler option [C++]"]
 ms.assetid: 4b54deae-4e3c-4bfa-95f3-ba23590f7258

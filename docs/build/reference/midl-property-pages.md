@@ -1,6 +1,6 @@
 ---
-title: "MIDL Property Pages (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "MIDL Property Pages"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["MIDL", "MIDL, property pages", "property pages, MIDL"]
 ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
 ---

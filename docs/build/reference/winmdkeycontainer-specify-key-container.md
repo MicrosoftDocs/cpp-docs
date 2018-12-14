@@ -1,6 +1,6 @@
 ---
-title: "/WINMDKEYCONTAINER (Specify Key Container) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/WINMDKEYCONTAINER (Specify Key Container)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.WINMDKEYCONTAINER"]
 ms.assetid: c2fc44dc-7cb5-42b9-897f-1b124928f2f7
 ---

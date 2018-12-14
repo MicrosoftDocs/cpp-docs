@@ -1,6 +1,6 @@
 ---
-title: "CL Command Files (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "CL Command Files"
+ms.date: "11/04/2016"
 f1_keywords: ["cl"]
 helpviewer_keywords: ["cl.exe compiler, command files", "command files", "command files, CL compiler"]
 ms.assetid: ec3cea06-2af0-4fe9-a94c-119c9d31b3a9

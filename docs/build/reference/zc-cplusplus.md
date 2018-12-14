@@ -1,5 +1,5 @@
 ---
-title: "/Zc:__cplusplus (Enable updated __cplusplus macro) (C++) - Visual Studio"
+title: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
 ms.date: "05/30/2018"
 f1_keywords: ["/Zc:__cplusplus"]
 helpviewer_keywords: ["-Zc:__cplusplus compiler option (C++)", "__cplusplus macro (C++)"]

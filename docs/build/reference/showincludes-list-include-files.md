@@ -1,6 +1,6 @@
 ---
-title: "/showIncludes (List Include Files) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/showIncludes (List Include Files)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ShowIncludes", "VC.Project.VCCLCompilerTool.ShowIncludes", "/showincludes"]
 helpviewer_keywords: ["include files", "/showIncludes compiler option [C++]", "include files, displaying in compilation", "-showIncludes compiler option [C++]", "showIncludes compiler option [C++]"]
 ms.assetid: 0b74b052-f594-45a6-a7c7-09e1a319547d

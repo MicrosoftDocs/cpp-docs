@@ -1,6 +1,6 @@
 ---
-title: "/RELEASE (Set the Checksum) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/RELEASE (Set the Checksum)"
+ms.date: "11/04/2016"
 f1_keywords: ["/release", "VC.Project.VCLinkerTool.SetChecksum"]
 helpviewer_keywords: ["-RELEASE linker option", "/RELEASE linker option", "checksum setting", "RELEASE linker option"]
 ms.assetid: 93bcadf4-29ac-4824-914b-6997e3751d22

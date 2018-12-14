@@ -1,6 +1,6 @@
 ---
-title: "Targets (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Targets"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["targets, specifying in NMAKE"]
 ms.assetid: 826ee849-4278-4c6e-97c3-79a2b5fe6463
 ---

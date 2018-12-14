@@ -1,6 +1,6 @@
 ---
-title: "/Gh (Enable _penter Hook Function) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Gh (Enable _penter Hook Function)"
+ms.date: "11/04/2016"
 f1_keywords: ["_penter"]
 helpviewer_keywords: ["/Gh compiler option [C++]", "Gh compiler option [C++]", "_penter function", "-Gh compiler option [C++]"]
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f

@@ -1,6 +1,6 @@
 ---
-title: "Binding Imports (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Binding Imports"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["/DELAY:NOBIND linker option", "DELAY:NOBIND linker option"]
 ms.assetid: bb766038-deb1-41b1-bcbc-29a30e8c1e2a
 ---

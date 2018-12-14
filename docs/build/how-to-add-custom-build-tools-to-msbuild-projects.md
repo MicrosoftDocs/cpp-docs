@@ -1,6 +1,6 @@
 ---
-title: "How to: Add Custom Build Tools to MSBuild Projects (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "How to: Add Custom Build Tools to MSBuild Projects"
+ms.date: "11/04/2016"
 f1_keywords: ["msbuild.cpp.howto.addcustombuildtools"]
 helpviewer_keywords: ["msbuild (c++), howto: add custom build tools"]
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909

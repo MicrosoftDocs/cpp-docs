@@ -1,6 +1,6 @@
 ---
-title: "Specifying the Pathname (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Specifying the Pathname"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["names [C++], compiler output files", "cl.exe compiler, output files", "output files, specifying pathnames"]
 ms.assetid: 7a6595ce-3383-44ae-957a-466bfa29c343
 ---

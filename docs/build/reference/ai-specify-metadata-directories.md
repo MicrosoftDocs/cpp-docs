@@ -1,6 +1,6 @@
 ---
-title: "/AI (Specify Metadata Directories) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/AI (Specify Metadata Directories)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalUsingDirectories", "VC.Project.VCNMakeTool.AssemblySearchPath", "/AI", "VC.Project.VCCLWCECompilerTool.AdditionalUsingDirectories"]
 helpviewer_keywords: ["/AI compiler option [C++]", "AI compiler option [C++]", "-AI compiler option [C++]"]
 ms.assetid: fb9c1846-504c-4a3b-bb39-c8696de32f6f

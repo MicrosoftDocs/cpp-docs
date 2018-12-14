@@ -1,6 +1,6 @@
 ---
 title: "Command Modifiers"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, command modifiers", "command modifiers"]
 ms.assetid: b661c432-210f-4f05-bc56-744a46e0fc0b
 ---

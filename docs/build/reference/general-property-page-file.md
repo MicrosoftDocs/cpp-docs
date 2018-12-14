@@ -1,6 +1,6 @@
 ---
-title: "General Property Page (File) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "General Property Page (File)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCFileConfiguration.ExcludedFromBuild", "VC.Project.VCFileConfiguration.Tool"]
 ms.assetid: 26e3711e-9e7d-4e8d-bc4c-2474538efdad
 ---

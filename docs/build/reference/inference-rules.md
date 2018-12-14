@@ -1,6 +1,6 @@
 ---
-title: "Inference Rules (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Inference Rules"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["inference rules in NMAKE", "rules, inference", "NMAKE program, inference rules"]
 ms.assetid: caff320f-fb07-4eea-80c3-a6a2133a8492
 ---

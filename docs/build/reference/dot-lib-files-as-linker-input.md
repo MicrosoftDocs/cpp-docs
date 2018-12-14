@@ -1,6 +1,6 @@
 ---
-title: ".Lib Files as Linker Input (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: ".Lib Files as Linker Input"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.AdditionalDependencies"]
 helpviewer_keywords: ["OMF libraries", "linking [C++], OMF libraries", "import libraries, linker files", "libraries [C++], .lib files as linker input", "COFF files, import libraries", "default libraries [C++], linker output", "default libraries [C++]", "defaults [C++], libraries", ".lib files"]
 ms.assetid: dc5d2b1c-2487-41fa-aa71-ad1e0647958b

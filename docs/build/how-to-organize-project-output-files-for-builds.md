@@ -1,6 +1,6 @@
 ---
-title: "How to: Organize Project Output Files for Builds (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "How to: Organize Project Output Files for Builds"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["Visual C++, output files", "output files, organizing"]
 ms.assetid: 521d95ea-2dcc-4da0-b5eb-ac3e57941446
 ---

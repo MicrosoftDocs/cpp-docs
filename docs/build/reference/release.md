@@ -1,6 +1,6 @@
 ---
-title: "/RELEASE (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/RELEASE"
+ms.date: "11/04/2016"
 f1_keywords: ["/release"]
 helpviewer_keywords: ["RELEASE editbin option", "-RELEASE editbin option", "/RELEASE editbin option", "checksum setting"]
 ms.assetid: 183422eb-6b3c-474e-9589-04a0e69dec5d

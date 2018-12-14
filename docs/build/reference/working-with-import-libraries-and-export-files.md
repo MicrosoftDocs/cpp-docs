@@ -1,6 +1,6 @@
 ---
-title: "Working with Import Libraries and Export Files (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Working with Import Libraries and Export Files"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["LIB [C++], /DEF option", "import libraries", "LIB [C++], import libraries and export files", "export files", "import libraries, creating"]
 ms.assetid: d8175596-9773-4c2f-959d-b05b065a5161
 ---

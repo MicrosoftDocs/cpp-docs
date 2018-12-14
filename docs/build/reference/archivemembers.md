@@ -1,6 +1,6 @@
 ---
-title: "/ARCHIVEMEMBERS (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/ARCHIVEMEMBERS"
+ms.date: "11/04/2016"
 f1_keywords: ["/archivemembers"]
 helpviewer_keywords: ["ARCHIVEMEMBERS dumpbin option", "/ARCHIVEMEMBERS dumpbin option", "-ARCHIVEMEMBERS dumpbin option"]
 ms.assetid: 47056a7a-a1ba-42bc-9f2e-0599195ef79a

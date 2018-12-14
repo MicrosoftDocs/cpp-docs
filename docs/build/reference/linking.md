@@ -1,6 +1,6 @@
 ---
 title: "Linking a C++ project in Visual Studio"
-ms.date: "12/14/2018"
+ms.date: "12/10/2018"
 ms.assetid: bb736587-d13b-4f3c-8982-3cc2c015c59c
 ---
 # Linking

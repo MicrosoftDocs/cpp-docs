@@ -1,5 +1,5 @@
 ---
-title: "/hotpatch (Create Hotpatchable Image) (C++) - Visual Studio"
+title: "/hotpatch (Create Hotpatchable Image)"
 ms.date: "11/12/2018"
 f1_keywords: ["/hotpatch", "VC.Project.VCCLCompilerTool.CreateHotpatchableImage"]
 helpviewer_keywords: ["hot patching", "-hotpatch compiler option [C++]", "/hotpatch compiler option [C++]", "hotpatching"]

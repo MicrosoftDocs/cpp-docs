@@ -1,6 +1,6 @@
 ---
-title: "Precedence in Macro Definitions (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Precedence in Macro Definitions"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, precedence in macro definitions", "macros, precedence"]
 ms.assetid: 0c13182d-83cb-4cbd-af2d-f4c916b62aeb
 ---

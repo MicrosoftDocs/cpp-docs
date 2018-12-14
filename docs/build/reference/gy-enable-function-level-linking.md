@@ -1,6 +1,6 @@
 ---
-title: "/Gy (Enable Function-Level Linking) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Gy (Enable Function-Level Linking)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking", "/gy", "VC.Project.VCCLWCECompilerTool.EnableFunctionLevelLinking"]
 helpviewer_keywords: ["enable function-level linking compiler option [C++]", "COMDAT function", "Gy compiler option [C++]", "-Gy compiler option [C++]", "/Gy compiler option [C++]", "packaged functions"]
 ms.assetid: 0d3cf14c-ed7d-4ad3-b4b6-104e56f61046

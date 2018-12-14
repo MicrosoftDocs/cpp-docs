@@ -1,6 +1,6 @@
 ---
-title: "Creating a Resource-Only DLL (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Creating a Resource-Only DLL"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["resource-only DLLs [C++], creating", "DLLs [C++], creating"]
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
 ---

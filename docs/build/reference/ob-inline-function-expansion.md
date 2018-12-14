@@ -1,5 +1,5 @@
 ---
-title: "/Ob (Inline Function Expansion) (C++) - Visual Studio"
+title: "/Ob (Inline Function Expansion)"
 ms.date: "09/25/2017"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.InlineFunctionExpansion", "VC.Project.VCCLCompilerTool.InlineFunctionExpansion", "/ob"]
 helpviewer_keywords: ["inline functions, function expansion compiler option [C++]", "-Ob1 compiler option [C++]", "-Ob0 compiler option [C++]", "/Ob0 compiler option [C++]", "/Ob1 compiler option [C++]", "any suitable compiler option [C++]", "Ob2 compiler option [C++]", "Ob1 compiler option [C++]", "/Ob2 compiler option [C++]", "Ob compiler option [C++]", "-Ob2 compiler option [C++]", "disable compiler option [C++]", "-Ob compiler option [C++]", "/Ob compiler option [C++]", "only __inline compiler option [C++]", "Ob0 compiler option [C++]", "inline expansion, compiler option"]

@@ -1,5 +1,5 @@
 ---
-title: "/NATVIS (Add Natvis to PDB) (C++) - Visual Studio"
+title: "/NATVIS (Add Natvis to PDB)"
 ms.date: "08/10/2017"
 f1_keywords: ["/natvis", "VC.Project.VCLinkerTool.ImportLIbrary"]
 helpviewer_keywords: ["NATVIS linker option", "/NATVIS linker option", "-NATVIS linker option", "Add Natvis file to PDB"]

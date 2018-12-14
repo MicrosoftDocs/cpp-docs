@@ -1,6 +1,6 @@
 ---
-title: "/DIRECTIVES (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/DIRECTIVES"
+ms.date: "11/04/2016"
 f1_keywords: ["/directives"]
 helpviewer_keywords: ["/DIRECTIVES dumpbin option", "DIRECTIVES dumpbin option", "-DIRECTIVES dumpbin option"]
 ms.assetid: cb85d679-6d20-4244-ba0b-6f495228e970

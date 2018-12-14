@@ -1,5 +1,5 @@
 ---
-title: "Linker Options (C++) - Visual Studio"
+title: "Linker Options"
 ms.date: "08/20/2018"
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]

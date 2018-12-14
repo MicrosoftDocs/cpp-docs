@@ -1,6 +1,6 @@
 ---
-title: "Defining a Rule (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Defining a Rule"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, inference rules", "defining inference rules"]
 ms.assetid: 071cd092-3f2e-4065-b0fb-36a9d393cfa8
 ---

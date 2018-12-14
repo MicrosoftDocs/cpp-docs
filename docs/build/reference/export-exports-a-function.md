@@ -1,5 +1,5 @@
 ---
-title: "/EXPORT (Exports a Function) (C++) - Visual Studio"
+title: "/EXPORT (Exports a Function)"
 ms.date: "09/05/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.ExportFunctions", "/export"]
 helpviewer_keywords: ["/EXPORT linker option", "EXPORT linker option", "-EXPORT linker option"]

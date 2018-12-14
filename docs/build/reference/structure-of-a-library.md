@@ -1,6 +1,6 @@
 ---
-title: "Structure of a Library (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Structure of a Library"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["libraries, structure"]
 ms.assetid: a5fda8e8-4a1b-4499-9095-0df935262ce4
 ---

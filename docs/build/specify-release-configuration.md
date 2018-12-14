@@ -1,6 +1,6 @@
 ---
-title: "New Project From Existing Code Release Configuration (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "New Project From Existing Code Release Configuration"
+ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.importwiz.releasesettings"]
 ms.assetid: 3e2fc73c-bdbd-4790-b2bd-d31731f0cece
 ---

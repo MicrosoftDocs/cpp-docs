@@ -1,6 +1,6 @@
 ---
-title: "Comments in a Makefile (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Comments in a Makefile"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["makefiles, comments"]
 ms.assetid: 76fd9e3d-5966-47f4-a091-c9e80b232b49
 ---

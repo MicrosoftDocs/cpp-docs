@@ -1,5 +1,5 @@
 ---
-title: "/Ox (Enable Most Speed Optimizations) (C++) - Visual Studio"
+title: "/Ox (Enable Most Speed Optimizations)"
 ms.date: "10/18/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ToolOptimization", "/Ox", "/Oxs"]
 helpviewer_keywords: ["Ox compiler option [C++]", "fast code [C++]", "/Ox compiler option [C++]", "-Ox compiler option [C++]"]

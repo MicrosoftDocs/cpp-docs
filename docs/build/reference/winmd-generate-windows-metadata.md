@@ -1,6 +1,6 @@
 ---
-title: "/WINMD (Generate Windows Metadata) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/WINMD (Generate Windows Metadata)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateWindowsMetadata"]
 ms.assetid: bcfb4901-411e-4c9e-9f78-23028b6e5fcc
 ---

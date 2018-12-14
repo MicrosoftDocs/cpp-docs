@@ -1,5 +1,5 @@
 ---
-title: "/O Options (Optimize Code) (C++) - Visual Studio"
+title: "/O Options (Optimize Code)"
 ms.date: "09/25/2017"
 f1_keywords: ["VC.Project.VCCLCompilerTool.Optimization", "/o", "VC.Project.VCCLWCECompilerTool.Optimization"]
 helpviewer_keywords: ["performance, cle.exe compiler", "cl.exe compiler, performance"]

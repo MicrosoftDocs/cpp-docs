@@ -1,6 +1,6 @@
 ---
-title: "/Zs (Syntax Check Only) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Zs (Syntax Check Only)"
+ms.date: "11/04/2016"
 f1_keywords: ["/zs"]
 helpviewer_keywords: ["-Zs compiler option [C++]", "Syntax Check Only compiler option", "Zs compiler option", "/Zs compiler option [C++]"]
 ms.assetid: b4b41e6a-3f41-4d09-9cb6-fde5aa2cfecf

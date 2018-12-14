@@ -1,6 +1,6 @@
 ---
-title: "Multiple Targets (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Multiple Targets"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["makefiles, targets", "multiple targets in NMAKE", "targets, multiple in NMAKE", "NMAKE program, targets"]
 ms.assetid: b609a179-0b9f-4b08-9930-998047588ae0
 ---

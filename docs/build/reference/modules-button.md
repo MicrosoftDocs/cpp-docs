@@ -1,6 +1,6 @@
 ---
-title: "Modules Button (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Modules Button"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["Modules button"]
 ms.assetid: 51552765-865a-4acc-aeae-f78afb73289a
 ---

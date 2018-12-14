@@ -1,6 +1,6 @@
 ---
 title: "C++ release builds - Visual Studio"
-ms.date: "12/14/2018"
+ms.date: "12/10/2018"
 helpviewer_keywords: ["debugging [C++], release builds", "release builds", "debug builds, converting to release build"]
 ms.assetid: fa9a78fa-f4b5-4722-baf4-aec655c4ff0f
 ---

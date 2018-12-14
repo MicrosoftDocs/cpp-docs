@@ -1,5 +1,5 @@
 ---
-title: "Profile Guided Optimization in the Performance and Diagnostics Hub (C++) - Visual Studio"
+title: "Profile Guided Optimization in the Performance and Diagnostics Hub"
 ms.date: "11/19/2018"
 ms.assetid: dc3a1914-dbb6-4401-bc63-10665a8c8943
 ---

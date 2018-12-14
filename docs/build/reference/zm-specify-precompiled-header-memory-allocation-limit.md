@@ -1,6 +1,6 @@
 ---
-title: "/Zm (Specify Precompiled Header Memory Allocation Limit) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Zm (Specify Precompiled Header Memory Allocation Limit)"
+ms.date: "11/04/2016"
 f1_keywords: ["/zm"]
 helpviewer_keywords: ["PCH files, memory allocation limit", "Zm compiler option [C++]", "/Zm compiler option [C++]", "precompiled header files, memory allocation limit", "Specify Precompiled Header Memory Allocation Limit compiler option", "cl.exe compiler, memory allocation limit", ".pch files, memory allocation limit", "memory allocation, Memory Allocation Limit compiler option", "-Zm compiler option [C++]"]
 ms.assetid: 94c77d5e-6672-46a7-92e0-3f69e277727d

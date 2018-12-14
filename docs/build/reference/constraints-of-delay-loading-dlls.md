@@ -1,6 +1,6 @@
 ---
-title: "Constraints of Delay Loading DLLs (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Constraints of Delay Loading DLLs"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["constraints [C++], delayed loading of DLLs", "delayed loading of DLLs, constraints", "DLLs [C++], constraints"]
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
 ---

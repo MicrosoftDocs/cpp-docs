@@ -1,6 +1,6 @@
 ---
-title: ".Txt Files as Linker Input (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: ".Txt Files as Linker Input"
+ms.date: "11/04/2016"
 helpviewer_keywords: [".txt files, linker input", "text files, linker input", "txt files, linker input"]
 ms.assetid: 220b5a59-8b78-43f6-a8c3-f3134ccddf9e
 ---

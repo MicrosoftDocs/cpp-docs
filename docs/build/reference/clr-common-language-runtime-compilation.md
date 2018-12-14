@@ -1,5 +1,5 @@
 ---
-title: "/clr (Common Language Runtime Compilation) (C++) - Visual Studio"
+title: "/clr (Common Language Runtime Compilation)"
 ms.date: "09/18/2018"
 f1_keywords: ["/CLR", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
 helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-clr compiler option [C++]", "clr compiler option [C++]", "/clr compiler option [C++]", "Managed Extensions for C++, compiling", "common language runtime, /clr compiler option"]

@@ -1,6 +1,6 @@
 ---
-title: "Inferred Dependents and Rules (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Inferred Dependents and Rules"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["rules, inferred", "inferred dependents in NMAKE", "inferred rules in NMAKE", "dependents, inferred"]
 ms.assetid: 9381e74a-53d9-445c-836d-0ff7ef6112d9
 ---

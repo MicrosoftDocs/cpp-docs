@@ -1,6 +1,6 @@
 ---
-title: "XML Data Generator Tool Property Page (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "XML Data Generator Tool Property Page"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCXMLDataGeneratorTool.GeneratedProxyLanguage", "VC.Project.VCXMLDataGeneratorTool.Output", "VC.Project.VCXMLDataGeneratorTool.SuppressStartupBanner"]
 helpviewer_keywords: ["XML Data Generator Tool property page"]
 ms.assetid: b2ef1c12-3419-429d-bb9d-bd7d9ffe1ffb

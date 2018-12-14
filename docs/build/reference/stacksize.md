@@ -1,6 +1,6 @@
 ---
-title: "STACKSIZE (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "STACKSIZE"
+ms.date: "11/04/2016"
 f1_keywords: ["STACKSIZE"]
 helpviewer_keywords: ["STACKSIZE .def file statement"]
 ms.assetid: 4d8c79bd-1cb4-4e4d-90f2-b5a7a4d20e7a

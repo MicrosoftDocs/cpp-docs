@@ -1,6 +1,6 @@
 ---
-title: "Floating-Point Support for Older C++ Code - Visual Studio"
-ms.date: "12/14/2018"
+title: "Floating-Point Support for Older Code (Visual C++)"
+ms.date: "11/04/2016"
 ms.assetid: a2a26b96-7bc2-418a-981a-51aa1a0294a2
 ---
 # Floating-Point Support for Older Code (Visual C++)

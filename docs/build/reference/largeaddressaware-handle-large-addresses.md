@@ -1,6 +1,6 @@
 ---
-title: "/LARGEADDRESSAWARE (Handle Large Addresses) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/LARGEADDRESSAWARE (Handle Large Addresses)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.LargeAddressAware", "/largeaddressaware"]
 helpviewer_keywords: ["LARGEADDRESSAWARE linker option", "-LARGEADDRESSAWARE linker option", "/LARGEADDRESSAWARE linker option"]
 ms.assetid: a29756c8-e893-47a9-9750-1f0d25359385

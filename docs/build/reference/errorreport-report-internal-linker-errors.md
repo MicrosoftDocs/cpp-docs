@@ -1,5 +1,5 @@
 ---
-title: "/ERRORREPORT (Report Internal Linker Errors) (C++) - Visual Studio"
+title: "/ERRORREPORT (Report Internal Linker Errors)"
 ms.date: "12/28/2017"
 f1_keywords: ["/ERRORREPORT", "VC.Project.VCLinkerTool.ErrorReporting"]
 helpviewer_keywords: ["/ERRORREPORT linker option", "ERRORREPORT linker option", "-ERRORREPORT linker option"]

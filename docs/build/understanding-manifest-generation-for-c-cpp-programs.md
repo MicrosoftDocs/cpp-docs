@@ -1,6 +1,6 @@
 ---
 title: "Understanding Manifest Generation for C/C++ Programs"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["manifests [C++]"]
 ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
 ---

@@ -1,5 +1,5 @@
 ---
-title: "/Zc:referenceBinding (Enforce reference binding rules) (C++) - Visual Studio"
+title: "/Zc:referenceBinding (Enforce reference binding rules)"
 ms.date: "03/06/2018"
 f1_keywords: ["referenceBinding", "/Zc:referenceBinding"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "referenceBinding", "Enforce reference binding rules", "/Zc compiler options (C++)", "Zc compiler options (C++)"]

@@ -1,6 +1,6 @@
 ---
-title: "/execution-charset (Set Execution Character Set) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/execution-charset (Set Execution Character Set)"
+ms.date: "11/04/2016"
 f1_keywords: ["execution-charset", "/execution-charset"]
 helpviewer_keywords: ["/execution-charset compiler option", "-execution-charset compiler option"]
 ms.assetid: 0e02f487-2236-45bc-95f3-5760933a8f96

@@ -1,6 +1,6 @@
 ---
-title: "Exit Codes from NMAKE (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Exit Codes from NMAKE"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, exit codes", "exit codes"]
 ms.assetid: 75f6913c-1da5-4572-a2d3-8a4e058bed15
 ---

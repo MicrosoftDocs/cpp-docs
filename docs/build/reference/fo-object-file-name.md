@@ -1,6 +1,6 @@
 ---
-title: "/Fo (Object File Name) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Fo (Object File Name)"
+ms.date: "11/04/2016"
 f1_keywords: ["/Fo", "VC.Project.VCCLCompilerTool.ObjectFile", "VC.Project.VCCLWCECompilerTool.ObjectFile"]
 helpviewer_keywords: ["Fo compiler option [C++]", "object files, naming", "/Fo compiler option [C++]", "-Fo compiler option [C++]"]
 ms.assetid: 0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6

@@ -1,6 +1,6 @@
 ---
-title: "Resources Property Pages (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Resources Property Pages"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCResourceCompilerTool.ShowProgress", "VC.Project.VCResourceCompilerTool.AdditionalIncludeDirectories", "VC.Project.VCResourceCompilerTool.PreprocessorDefinitions", "VC.Project.VCResourceCompilerTool.OVERWRITEStandardIncludePath", "VC.Project.VCResourceCompilerTool.Culture", "VC.Project.VCResourceCompilerTool.ResourceOutputFileName"]
 helpviewer_keywords: ["Resources property pages"]
 ms.assetid: dade2f6b-c51f-4c33-9023-41956ae4b5f6

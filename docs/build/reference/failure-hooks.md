@@ -1,6 +1,6 @@
 ---
-title: "Failure Hooks (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Failure Hooks"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["delayed loading of DLLs, failure hooks"]
 ms.assetid: 12bb303b-ffe6-4471-bffe-9ef4f8bb2d30
 ---

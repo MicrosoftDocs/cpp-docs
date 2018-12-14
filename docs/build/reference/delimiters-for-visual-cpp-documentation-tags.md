@@ -1,6 +1,6 @@
 ---
-title: "Delimiters for Visual C++ Documentation Tags (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Delimiters for Visual C++ Documentation Tags"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["XML documentation, delimiters"]
 ms.assetid: debfbdd9-63fa-4c58-a18e-a4d203d241d7
 ---

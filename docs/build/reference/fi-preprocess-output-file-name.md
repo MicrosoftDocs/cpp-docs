@@ -1,6 +1,6 @@
 ---
-title: "/Fi (Preprocess Output File Name) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Fi (Preprocess Output File Name)"
+ms.date: "11/04/2016"
 f1_keywords: ["/Fi"]
 helpviewer_keywords: ["Fi compiler option (C++)", "-Fi compiler option (C++)", "/Fi compiler option (C++)", "preprocessing output files, file name"]
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee

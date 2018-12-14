@@ -1,6 +1,6 @@
 ---
-title: "/Zo (Enhance Optimized Debugging) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Zo (Enhance Optimized Debugging)"
+ms.date: "11/04/2016"
 f1_keywords: ["-Zo", "/Zo"]
 helpviewer_keywords: ["Zo compiler option [C++]", "/Zo compiler option [C++]", "-Zo compiler option [C++]"]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f

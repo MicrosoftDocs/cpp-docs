@@ -1,6 +1,6 @@
 ---
-title: "/ALLOWBIND (Prevent DLL Binding) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/ALLOWBIND (Prevent DLL Binding)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.PreventDLLBinding", "/allowbind"]
 helpviewer_keywords: ["/ALLOWBIND linker option", "binding DLLs", "preventing DLL binding", "ALLOWBIND linker option", "-ALLOWBIND linker option", "DLLs [C++], preventing binding"]
 ms.assetid: 30e37e24-12e4-407e-988a-39d357403598

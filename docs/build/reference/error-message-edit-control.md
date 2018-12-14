@@ -1,6 +1,6 @@
 ---
-title: "Error Message Edit Control (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Error Message Edit Control"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["Error Message edit control"]
 ms.assetid: 79320694-c30e-4c37-bb94-6cb36c32d4e6
 ---

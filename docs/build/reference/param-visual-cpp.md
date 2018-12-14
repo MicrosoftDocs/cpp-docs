@@ -1,6 +1,6 @@
 ---
 title: "&lt;param&gt; (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["param", "<param>"]
 helpviewer_keywords: ["param C++ XML tag", "<param> C++ XML tag"]
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb

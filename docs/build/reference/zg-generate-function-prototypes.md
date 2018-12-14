@@ -1,6 +1,6 @@
 ---
-title: "/Zg (Generate Function Prototypes) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Zg (Generate Function Prototypes)"
+ms.date: "11/04/2016"
 f1_keywords: ["/zg"]
 helpviewer_keywords: ["Zg compiler option [C++]", "/Zg compiler option [C++]", "function prototypes, generate function prototypes compiler option", "-Zg compiler option [C++]", "generate function prototypes compiler option"]
 ms.assetid: c8df1b46-24ff-46f2-8356-e0a144b21dd2

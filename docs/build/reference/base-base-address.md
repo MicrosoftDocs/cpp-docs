@@ -1,5 +1,5 @@
 ---
-title: "/BASE (Base Address) (C++) - Visual Studio"
+title: "/BASE (Base Address)"
 ms.date: "09/05/2018"
 f1_keywords: ["/base", "VC.Project.VCLinkerTool.BaseAddress"]
 helpviewer_keywords: ["base addresses [C++]", "programs [C++], preventing relocation", "semicolon [C++], specifier", "-BASE linker option", "key address size", "environment variables [C++], LIB", "programs [C++], base address", "LIB environment variable", "BASE linker option", "DLLs [C++], linking", "/BASE linker option", "@ symbol for base address", "executable files [C++], base address", "at sign symbol for base address"]

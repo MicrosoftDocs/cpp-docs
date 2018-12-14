@@ -1,6 +1,6 @@
 ---
-title: "LINK Output (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "LINK Output"
+ms.date: "11/04/2016"
 f1_keywords: ["link"]
 helpviewer_keywords: ["mapfiles [C++]", "ILK files", "output files [C++], linker", "files [C++], LINK", ".ilk files", "LINK tool [C++], output", "import libraries [C++], creating", "executable files [C++], as linker output", "mapfiles [C++], LINK output", "linker [C++], output files", "DLLs [C++], as linker output", "LINK tool [C++], mapfile"]
 ms.assetid: a98b557c-1947-447a-be1f-616fb45a9580

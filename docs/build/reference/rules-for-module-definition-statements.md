@@ -1,6 +1,6 @@
 ---
-title: "Rules for Module-Definition Statements (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Rules for Module-Definition Statements"
+ms.date: "11/04/2016"
 f1_keywords: [".def"]
 helpviewer_keywords: ["module definition files, statement syntax", "module definition files"]
 ms.assetid: f65cd3a7-65d7-4d06-939f-a8b1ecd50f2d

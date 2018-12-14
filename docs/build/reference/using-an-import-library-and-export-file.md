@@ -1,6 +1,6 @@
 ---
-title: "Using an Import Library and Export File (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Using an Import Library and Export File"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["circular exports", "import libraries, using", "export files"]
 ms.assetid: 2634256a-8aa5-4495-8c9e-6cde10e4ed76
 ---

@@ -1,6 +1,6 @@
 ---
-title: ".Xml File Processing (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: ".Xml File Processing"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["XML documentation, processing XML file"]
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
 ---

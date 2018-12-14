@@ -1,6 +1,6 @@
 ---
-title: "Importing into an Application Using __declspec(dllimport) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Importing into an Application Using __declspec(dllimport)"
+ms.date: "11/04/2016"
 f1_keywords: ["__declspec", "dllimport"]
 helpviewer_keywords: ["__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42

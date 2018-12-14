@@ -1,5 +1,5 @@
 ---
-title: "/CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute) (C++) - Visual Studio"
+title: "/CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute)"
 ms.date: "09/27/2018"
 ms.topic: "reference"
 f1_keywords: ["/CLRUNMANAGEDCODECHECK"]

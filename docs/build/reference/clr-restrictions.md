@@ -1,6 +1,6 @@
 ---
-title: "/clr Restrictions (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/clr Restrictions"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["/clr compiler option [C++], restrictions"]
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
 ---

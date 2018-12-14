@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Compiling a Native C++ Program on the Command Line - Visual Studio"
+title: "Walkthrough: Compiling a Native C++ Program on the Command Line"
 ms.custom: "conceptual"
 ms.date: "09/24/2018"
 helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling programs [C++]", "command-line applications [C++], native"]

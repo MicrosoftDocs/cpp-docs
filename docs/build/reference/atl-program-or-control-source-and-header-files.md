@@ -1,6 +1,6 @@
 ---
-title: "ATL Program or Control Source and Header Files (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "ATL Program or Control Source and Header Files"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["file types [C++], ATL source and headers"]
 ms.assetid: cb65372f-4880-4007-b582-a52eaa568fd1
 ---

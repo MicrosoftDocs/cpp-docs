@@ -1,6 +1,6 @@
 ---
-title: "Dumping Delay-Loaded Imports (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Dumping Delay-Loaded Imports"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["delay-loaded imports, dumping", "imports (delay-loaded)", "delay-loaded imports"]
 ms.assetid: f766acf4-9df8-4b85-8cf6-0be3ffc4c124
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Return Values (C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 ms.assetid: 53583524-b337-4228-a9c6-c9bf516babe8
 ---
 # Return Values (C++)

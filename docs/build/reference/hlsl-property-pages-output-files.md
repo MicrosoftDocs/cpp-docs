@@ -1,6 +1,6 @@
 ---
-title: "HLSL Property Pages: Output Files (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "HLSL Property Pages: Output Files"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.FXCompilerTool.AssemblerOutput", "VC.Project.FXCompilerTool.ObjectFileOutput", "VC.Project.FXCompilerTool.HeaderFileOutput", "VC.Project.FXCompilerTool.VariableName", "VC.Project.FXCompilerTool.AssemblerOutputFile"]
 ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Overview of LIB (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Overview of LIB"
+ms.date: "11/04/2016"
 f1_keywords: ["Lib"]
 helpviewer_keywords: ["LIB [C++], modes"]
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0

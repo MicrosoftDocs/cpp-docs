@@ -1,6 +1,6 @@
 ---
-title: "Null and Undefined Macros (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Null and Undefined Macros"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, undefined macros", "Null macros in NMAKE", "macros, null and undefined", "undefined macros and NMAKE", "NMAKE program, null macros"]
 ms.assetid: 1db4611a-1755-4328-b00f-d35365af8b6c
 ---

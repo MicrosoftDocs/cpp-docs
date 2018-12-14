@@ -1,6 +1,6 @@
 ---
-title: "Description Blocks (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Description Blocks"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["description blocks", "NMAKE program, description blocks", "blocks, description"]
 ms.assetid: 1321f228-d389-40ac-b0cd-4f6e9293602b
 ---

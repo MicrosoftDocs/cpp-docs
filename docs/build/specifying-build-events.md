@@ -1,5 +1,5 @@
 ---
-title: "Specifying Build Events (C++) - Visual Studio"
+title: "Specifying Build Events"
 ms.date: "12/28/2017"
 f1_keywords: ["VC.Project.IVCEventTool.CommandLine", "VC.Project.IVCEventTool.ExcludedFromBuild", "VC.Project.IVCEventTool.Description"]
 helpviewer_keywords: ["Pre-Link event", "build events [C++], specifying", "custom build steps [C++], build events", "builds [C++], events", "events [C++], build", "builds [C++], customizing C++", "build events [C++]", "post-build events"]

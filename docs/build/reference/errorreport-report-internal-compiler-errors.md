@@ -1,6 +1,6 @@
 ---
-title: "/errorReport (Report Internal Compiler Errors) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/errorReport (Report Internal Compiler Errors)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ErrorReporting", "/errorreport"]
 helpviewer_keywords: ["/errorReport compiler option [C++]", "-errorReport compiler option [C++]"]
 ms.assetid: 819828f8-b0a5-412c-9c57-bf822f17e667

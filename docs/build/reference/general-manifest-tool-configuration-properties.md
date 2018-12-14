@@ -1,6 +1,6 @@
 ---
 title: "Manifest Tool Configuration Properties (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCManifestTool.MergeRulesFile", "VC.Project.VCManifestTool.UseUnicodeResponseFiles", "VC.Project.VCManifestTool.SuppressStartupBanner", "VC.Project.VCManifestTool.UseFAT32Workaround", "VC.Project.VCManifestTool.VerboseOutput", "VC.Project.VCManifestTool.AssemblyIdentity"]
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Property inheritance in C++ projects - Visual Studio"
-ms.date: "12/14/2018"
+title: "Property inheritance in Visual Studio projects - C++"
+ms.date: "12/10/2018"
 helpviewer_keywords: ["Visual C++ projects, property inheritance"]
 ---
 

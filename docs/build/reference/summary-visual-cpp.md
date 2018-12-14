@@ -1,6 +1,6 @@
 ---
 title: "&lt;summary&gt; (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["<summary>", "summary"]
 helpviewer_keywords: ["<summary> C++ XML tag", "summary C++ XML tag"]
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726

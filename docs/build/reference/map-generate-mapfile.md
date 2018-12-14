@@ -1,6 +1,6 @@
 ---
-title: "/MAP (Generate Mapfile) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/MAP (Generate Mapfile)"
+ms.date: "11/04/2016"
 f1_keywords: ["/map", "VC.Project.VCLinkerTool.MapFileName", "VC.Project.VCLinkerTool.GenerateMapFile"]
 helpviewer_keywords: ["mapfiles, creating linker", "generate mapfile linker option", "mapfile linker option", "mapfiles, information about program being linked", "MAP linker option", "-MAP linker option", "mapfiles, specifying file name", "/MAP linker option"]
 ms.assetid: 9ccce53d-4e36-43da-87b0-7603ddfdea63

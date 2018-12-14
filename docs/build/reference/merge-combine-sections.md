@@ -1,6 +1,6 @@
 ---
-title: "/MERGE (Combine Sections) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/MERGE (Combine Sections)"
+ms.date: "11/04/2016"
 f1_keywords: ["/merge", "VC.Project.VCLinkerTool.MergeSections"]
 helpviewer_keywords: ["sections, combining", "/MERGE linker option", "sections, naming", "sections", "-MERGE linker option", "MERGE linker option"]
 ms.assetid: 10fb20c2-0b3f-4c8d-98a8-f69aedf03d52

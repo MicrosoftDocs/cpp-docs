@@ -1,5 +1,5 @@
 ---
-title: "/Zc:implicitNoexcept (Implicit Exception Specifiers) (C++) - Visual Studio"
+title: "/Zc:implicitNoexcept (Implicit Exception Specifiers)"
 ms.date: "03/06/2018"
 f1_keywords: ["/Zc:implicitNoexcept"]
 helpviewer_keywords: ["/Zc:implicitNoexcept", "Zc:implicitNoexcept", "-Zc:implicitNoexcept"]

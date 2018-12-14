@@ -1,6 +1,6 @@
 ---
-title: "Macro Substitution (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Macro Substitution"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, macro substitution", "macros, NMAKE", "substitution macros in NMAKE"]
 ms.assetid: 47465cfe-fd92-49db-aebe-7c2d7ecceb73
 ---

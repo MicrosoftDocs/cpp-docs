@@ -1,6 +1,6 @@
 ---
-title: "/Fx (Merge Injected Code) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Fx (Merge Injected Code)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ExpandAttributedSource", "/Fx", "VC.Project.VCCLCompilerTool.ExpandAttributedSource"]
 helpviewer_keywords: ["Fx compiler option [C++]", "-Fx compiler option [C++]", "injected code", "merging injected code", "/Fx compiler option [C++]"]
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560

@@ -1,6 +1,6 @@
 ---
-title: "/IMPLIB (Name Import Library) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/IMPLIB (Name Import Library)"
+ms.date: "11/04/2016"
 f1_keywords: ["/implib", "VC.Project.VCLinkerTool.ImportLIbrary"]
 helpviewer_keywords: ["IMPLIB linker option", "/IMPLIB linker option", "-IMPLIB linker option", "import libraries, overriding default name"]
 ms.assetid: fe8f71ab-7055-41b5-8ef8-2b97cfa4a432

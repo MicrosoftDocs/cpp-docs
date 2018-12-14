@@ -1,6 +1,6 @@
 ---
-title: "/LN (Create MSIL Module) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/LN (Create MSIL Module)"
+ms.date: "11/04/2016"
 f1_keywords: ["/LN"]
 helpviewer_keywords: ["-LN compiler option [C++]", "/LN compiler option [C++]"]
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3

@@ -1,6 +1,6 @@
 ---
-title: "/MACHINE (Specify Target Platform) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/MACHINE (Specify Target Platform)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.TargetMachine", "/machine"]
 helpviewer_keywords: ["mapfiles, creating linker", "target platform", "-MACHINE linker option", "/MACHINE linker option", "MACHINE linker option"]
 ms.assetid: 8d41bf4b-7e53-4ab9-9085-d852b08d31c2

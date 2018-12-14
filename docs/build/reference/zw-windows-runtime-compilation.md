@@ -1,6 +1,6 @@
 ---
-title: "/ZW (Windows Runtime Compilation) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/ZW (Windows Runtime Compilation)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.CompileAsWinRT", "/zw"]
 helpviewer_keywords: ["/ZW", "-ZW compiler option", "/ZW compiler option", "-ZW", "Windows Runtime compiler option"]
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248

@@ -1,6 +1,6 @@
 ---
-title: "Regular MFC DLLs Statically Linked to MFC (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Regular MFC DLLs Statically Linked to MFC"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["regular MFC DLLs [C++]", "DLLs [C++], regular", "USRDLLs", "USRDLLs, statically linked to MFC", "statically linked DLLs [C++]", "regular MFC DLLs [C++], statically linked to MFC"]
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
 ---

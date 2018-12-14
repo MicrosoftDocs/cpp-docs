@@ -1,6 +1,6 @@
 ---
-title: "/WINMDFILE (Specify winmd File) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/WINMDFILE (Specify winmd File)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateWindowsMetadataFile"]
 ms.assetid: 062b41b3-14d6-432c-a361-fdb66e918931
 ---

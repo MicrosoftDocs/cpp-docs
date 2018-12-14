@@ -1,6 +1,6 @@
 ---
-title: "Executing a Program in Preprocessing (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Executing a Program in Preprocessing"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["program execution [C++]"]
 ms.assetid: 5ecf123a-20e5-40cd-b8d8-dd5a9fdd4b24
 ---

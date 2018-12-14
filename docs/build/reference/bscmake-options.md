@@ -1,6 +1,6 @@
 ---
-title: "BSCMAKE Options (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "BSCMAKE Options"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCBscMakeTool.OutputFile", "VC.Project.VCBscMakeTool.SuppressStartupBanner", "VC.Project.VCBscMakeTool.PreserveSBR"]
 helpviewer_keywords: ["/v BSCMAKE option", "Iu BSCMAKE option", "browse information files (.bsc), content", "/Er BSCMAKE option", "NOLOGO BSCMAKE option", "/s BSCMAKE option", "/Ei BSCMAKE option", "/o BSCMAKE option", "/NOLOGO BSCMAKE option", "/Iu BSCMAKE option", "s BSCMAKE option (/s)", "/Em BSCMAKE option", "Em BSCMAKE option", "Es BSCMAKE option", "files [C++], BSCMAKE", "Er BSCMAKE option", "BSCMAKE, options for controlling files", "controlling BSCMAKE options", "El BSCMAKE option", "/El BSCMAKE option", "/Es BSCMAKE option", "Ei BSCMAKE option"]
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2

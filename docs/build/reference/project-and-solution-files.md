@@ -1,6 +1,6 @@
 ---
-title: "Project and Solution Files (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Project and Solution Files"
+ms.date: "11/04/2016"
 f1_keywords: ["vc.files.projectandsolution"]
 helpviewer_keywords: ["project files [C++]", "file types [C++], makefiles", ".sdf, browsing database file", "Makefile projects", "browsing database file, .sdf", "file types [C++], project files"]
 ms.assetid: 5823b954-36cf-42d3-8fd5-25bab3ef63d9

@@ -1,6 +1,6 @@
 ---
-title: "/MANIFESTUAC (Embeds UAC information in manifest) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/MANIFESTUAC (Embeds UAC information in manifest)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.UACUIAccess", "VC.Project.VCLinkerTool.UACExecutionLevel", "VC.Project.VCLinkerTool.EnableUAC"]
 helpviewer_keywords: ["/MANIFESTUAC linker option", "MANIFESTUAC linker option", "-MANIFESTUAC linker option"]
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a

@@ -1,6 +1,6 @@
 ---
-title: "Precedence in Inference Rules (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Precedence in Inference Rules"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["inference rules in NMAKE", "rules, inference", "precedence, inference rule"]
 ms.assetid: 69e3dc02-0815-4c3a-b02b-1cb85fceaf24
 ---

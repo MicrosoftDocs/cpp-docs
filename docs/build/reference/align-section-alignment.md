@@ -1,5 +1,5 @@
 ---
-title: "/ALIGN (Section Alignment) (C++) - Visual Studio"
+title: "/ALIGN (Section Alignment)"
 ms.date: "12/29/2017"
 f1_keywords: ["VC.Project.VCLinkerTool.Alignment", "/align"]
 helpviewer_keywords: ["sections, specifying alignment", "ALIGN linker option", "/ALIGN linker option", "-ALIGN linker option", "section alignment", "sections"]

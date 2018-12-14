@@ -1,6 +1,6 @@
 ---
-title: "/VERBOSE (Print Progress Messages) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/VERBOSE (Print Progress Messages)"
+ms.date: "11/04/2016"
 f1_keywords: ["/verbose", "VC.Project.VCLinkerTool.ShowProgress"]
 helpviewer_keywords: ["-VERBOSE linker option", "linking [C++], session progress information", "Print Progress Messages linker option", "linker [C++], output dependency information", "/VERBOSE linker option", "dependencies [C++], dependency information in linker output", "VERBOSE linker option"]
 ms.assetid: 9c347d98-4c37-4724-a39e-0983934693ab

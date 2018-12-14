@@ -1,6 +1,6 @@
 ---
-title: "MASM Macros (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "MASM Macros"
+ms.date: "11/04/2016"
 ms.assetid: 21410432-72fc-4795-bc93-e78123f9f14f
 ---
 # MASM Macros

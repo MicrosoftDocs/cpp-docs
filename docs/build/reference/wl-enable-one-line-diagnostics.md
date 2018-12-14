@@ -1,6 +1,6 @@
 ---
-title: "/WL (Enable One-Line Diagnostics) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/WL (Enable One-Line Diagnostics)"
+ms.date: "11/04/2016"
 f1_keywords: ["/wl"]
 helpviewer_keywords: ["-WL compiler option [C++]", "/WL compiler option [C++]", "WL compiler option [C++]"]
 ms.assetid: 332cadb4-8ea6-45fe-b67d-33ddec1f2c2e

@@ -1,5 +1,5 @@
 ---
-title: "Property Page XML rule files (C++) - Visual Studio"
+title: "Property Page XML rule files"
 ms.date: "04/27/2017"
 helpviewer_keywords: ["property page XML files"]
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d

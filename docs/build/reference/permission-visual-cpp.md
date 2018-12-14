@@ -1,6 +1,6 @@
 ---
 title: "&lt;permission&gt; (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["permission", "<permission>"]
 helpviewer_keywords: ["<permission> C++ XML tag", "permission C++ XML tag"]
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4

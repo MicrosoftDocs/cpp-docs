@@ -1,6 +1,6 @@
 ---
-title: "Module-Definition (.Def) Files (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Module-Definition (.Def) Files"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["def files", "module definition files", ".def files"]
 ms.assetid: 08c0bc28-c5d2-47aa-9624-7fc68bcaa4d8
 ---

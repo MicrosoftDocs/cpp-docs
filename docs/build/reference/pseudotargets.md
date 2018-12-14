@@ -1,6 +1,6 @@
 ---
-title: "Pseudotargets (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Pseudotargets"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["makefiles, pseudotargets", "pseudotargets and NMAKE", "NMAKE program, pseudotargets", "timestamps, makefile pseudotargets", "NMAKE program, targets"]
 ms.assetid: c8c479dc-0129-4186-8366-bc6251f2b494
 ---

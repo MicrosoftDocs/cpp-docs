@@ -1,5 +1,5 @@
 ---
-title: "/HIGHENTROPYVA (C++) - Visual Studio"
+title: "/HIGHENTROPYVA"
 ms.date: "06/12/2018"
 f1_keywords: ["/HIGHENTROPYVA"]
 helpviewer_keywords: ["HIGHENTROPYVA editbin option", "-HIGHENTROPYVA editbin option", "/HIGHENTROPYVA editbin option"]

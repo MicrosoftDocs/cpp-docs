@@ -1,6 +1,6 @@
 ---
-title: "/NODEFAULTLIB (Ignore Libraries) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/NODEFAULTLIB (Ignore Libraries)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.OVERWRITEAllDefaultLibraries", "VC.Project.VCLinkerTool.OVERWRITEDefaultLibraryNames", "/nodefaultlib"]
 helpviewer_keywords: ["default libraries, removing", "-NODEFAULTLIB linker option", "libraries, ignore", "NODEFAULTLIB linker option", "/NODEFAULTLIB linker option", "ignore libraries linker option"]
 ms.assetid: 7270b673-6711-468e-97a7-c2925ac2be6e

@@ -1,5 +1,5 @@
 ---
-title: "/DYNAMICBASE (Use address space layout randomization) (C++) - Visual Studio"
+title: "/DYNAMICBASE (Use address space layout randomization)"
 ms.date: "06/12/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.RandomizedBaseAddress"]
 helpviewer_keywords: ["-DYNAMICBASE linker option", "/DYNAMICBASE linker option", "DYNAMICBASE linker option"]

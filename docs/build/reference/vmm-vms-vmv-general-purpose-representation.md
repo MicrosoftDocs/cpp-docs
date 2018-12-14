@@ -1,6 +1,6 @@
 ---
-title: "/vmm, -vms, -vmv (General Purpose Representation) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/vmm, -vms, -vmv (General Purpose Representation)"
+ms.date: "11/04/2016"
 f1_keywords: ["/vms", "/vmm", "/vmv"]
 helpviewer_keywords: ["Virtual Inheritance compiler option", "general purpose representation compiler options", "vms compiler option [C++]", "vmm compiler option [C++]", "/vmm compiler option [C++]", "-vmm compiler option [C++]", "-vms compiler option [C++]", "/vms compiler option [C++]", "vmv compiler option [C++]", "/vmv compiler option [C++]", "Single Inheritance compiler option", "-vmv compiler option [C++]"]
 ms.assetid: 0fcd7ae0-3031-4c62-a2a8-e154c8685dae

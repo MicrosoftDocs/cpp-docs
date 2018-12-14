@@ -1,6 +1,6 @@
 ---
-title: "EDITBIN Options (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "EDITBIN Options"
+ms.date: "11/04/2016"
 f1_keywords: ["editbin"]
 helpviewer_keywords: ["EDITBIN program, options"]
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f

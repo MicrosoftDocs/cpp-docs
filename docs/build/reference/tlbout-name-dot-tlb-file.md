@@ -1,6 +1,6 @@
 ---
-title: "/TLBOUT (Name .TLB File) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/TLBOUT (Name .TLB File)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.TypeLibraryFile", "/tlbout"]
 helpviewer_keywords: ["tlb files, renaming", "TLBOUT linker option", "/TLBOUT linker option", ".tlb files, renaming", "-TLBOUT linker option"]
 ms.assetid: 0df6d078-2e48-46c9-a1a5-02674d85dce8

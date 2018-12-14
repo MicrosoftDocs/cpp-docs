@@ -1,6 +1,6 @@
 ---
-title: "/RELOCATIONS (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/RELOCATIONS"
+ms.date: "11/04/2016"
 f1_keywords: ["/relocations"]
 helpviewer_keywords: ["RELOCATIONS dumpbin option", "/RELOCATIONS dumpbin option", "-RELOCATIONS dumpbin option"]
 ms.assetid: 535eba3a-781a-4809-bf33-f67d3060b02c

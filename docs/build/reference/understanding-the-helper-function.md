@@ -1,6 +1,6 @@
 ---
-title: "Understanding the Helper Function (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Understanding the Helper Function"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["delayed loading of DLLs, helper function", "__delayLoadHelper2 function", "delayimp.lib", "__delayLoadHelper function", "delayhlp.cpp", "delayimp.h", "helper functions"]
 ms.assetid: 6279c12c-d908-4967-b0b3-cabfc3e91d3d
 ---

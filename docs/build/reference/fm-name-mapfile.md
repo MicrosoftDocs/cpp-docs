@@ -1,6 +1,6 @@
 ---
-title: "/Fm (Name Mapfile) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Fm (Name Mapfile)"
+ms.date: "11/04/2016"
 f1_keywords: ["/fm"]
 helpviewer_keywords: ["-Fm compiler option [C++]", "mapfiles [C++], creating linker", "files [C++], creating map", "Fm compiler option [C++]", "/Fm compiler option [C++]"]
 ms.assetid: 8154448a-93a7-4546-8e4c-5c44d0aff45d

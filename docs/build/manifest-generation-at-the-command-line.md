@@ -1,6 +1,6 @@
 ---
-title: "Manifest Generation at the Command Line - (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Manifest Generation at the Command Line"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["manifests [C++]", "manifest tool (mt.exe)"]
 ms.assetid: fc2ff255-82b1-4c44-af76-8405c5850292
 ---

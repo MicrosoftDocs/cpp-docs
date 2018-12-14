@@ -1,5 +1,5 @@
 ---
-title: "/analyze (Code Analysis) (C++) - Visual Studio"
+title: "/analyze (Code Analysis)"
 ms.date: "04/26/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"]
 helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]

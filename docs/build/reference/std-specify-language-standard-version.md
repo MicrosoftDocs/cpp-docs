@@ -1,5 +1,5 @@
 ---
-title: "/std (Specify Language Standard Version) (C++) - Visual Studio"
+title: "/std (Specify Language Standard Version)"
 ms.date: "11/26/2018"
 f1_keywords: ["/std", "-std", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd

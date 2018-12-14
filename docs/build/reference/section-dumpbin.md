@@ -1,6 +1,6 @@
 ---
-title: "/SECTION (DUMPBIN) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/SECTION (DUMPBIN)"
+ms.date: "11/04/2016"
 f1_keywords: ["/section"]
 helpviewer_keywords: ["-SECTION dumpbin option", "SECTION option", "/SECTION dumpbin option", "SECTION dumpbin option"]
 ms.assetid: c223d1c6-88ef-411c-9607-c610726b8d66

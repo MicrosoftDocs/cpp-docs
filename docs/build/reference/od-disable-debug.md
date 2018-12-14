@@ -1,6 +1,6 @@
 ---
 title: "/Od (Disable (Debug))"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["/od"]
 helpviewer_keywords: ["no optimizations", "fast compiling", "/Od compiler option [C++]", "disable optimizations", "Od compiler option [C++]", "-Od compiler option [C++]", "disable (debug) compiler option [C++]"]
 ms.assetid: b1ac31b7-e086-4eeb-be5e-488f7513f5f5

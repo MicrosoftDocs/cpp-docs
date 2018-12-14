@@ -1,5 +1,5 @@
 ---
-title: "/Zf (Faster PDB generation) (C++) - Visual Studio"
+title: "/Zf (Faster PDB generation)"
 ms.date: "03/29/2018"
 f1_keywords: ["/Zf"]
 helpviewer_keywords: ["/Zf", "-Zf"]

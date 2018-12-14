@@ -1,5 +1,5 @@
 ---
-title: "/Tc, /Tp, /TC, /TP (Specify Source File Type) (C++) - Visual Studio"
+title: "/Tc, /Tp, /TC, /TP (Specify Source File Type)"
 ms.date: "1/11/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.CompileAs", "VC.Project.VCCLCompilerTool.CompileAs", "/Tp", "/tc"]
 helpviewer_keywords: ["Tp compiler option [C++]", "/Tc compiler option [C++]", "-Tc compiler option [C++]", "source files, specifying to compiler", "Tc compiler option [C++]", "/Tp compiler option [C++]", "-Tp compiler option [C++]"]

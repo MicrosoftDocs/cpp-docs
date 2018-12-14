@@ -1,6 +1,6 @@
 ---
-title: "/bigobj (Increase Number of Sections in .Obj file) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/bigobj (Increase Number of Sections in .Obj file)"
+ms.date: "11/04/2016"
 f1_keywords: ["/bigobj"]
 helpviewer_keywords: ["-bigobj compiler option [C++]", "/bigobj compiler option [C++]", "bigobj compiler option [C++]"]
 ms.assetid: ba94d602-4015-4a8d-86ec-49241ab74c12

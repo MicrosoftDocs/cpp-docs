@@ -1,6 +1,6 @@
 ---
-title: "/kernel (Create Kernel Mode Binary) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/kernel (Create Kernel Mode Binary)"
+ms.date: "11/04/2016"
 f1_keywords: ["/kernel", "/kernel-"]
 ms.assetid: 6d7fdff0-c3d1-4b78-9367-4da588ce8b05
 ---

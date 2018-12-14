@@ -1,6 +1,6 @@
 ---
-title: "Exporting C Functions for Use in C or C++ Language Executables - Visual Studio"
-ms.date: "12/14/2018"
+title: "Exporting C Functions for Use in C or C++ Language Executables"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [C], exporting", "functions [C], C or C++ executables and", "__cplusplus macro", "exporting DLLs [C++], C functions in C++ executables", "exporting functions [C++], C functions in C++ executables"]
 ms.assetid: b51d6e5e-37cf-4c1c-b0bf-fcf188c82f00
 ---

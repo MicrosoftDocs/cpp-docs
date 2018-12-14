@@ -1,6 +1,6 @@
 ---
-title: "/DELAYSIGN (Partially Sign an Assembly) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/DELAYSIGN (Partially Sign an Assembly)"
+ms.date: "11/04/2016"
 f1_keywords: ["/delaysign", "VC.Project.VCLinkerTool.DelaySign"]
 helpviewer_keywords: ["/DELAYSIGN linker option", "DELAYSIGN linker option", "-DELAYSIGN linker option"]
 ms.assetid: 15244d30-3ecb-492f-a408-ffe81f38de20

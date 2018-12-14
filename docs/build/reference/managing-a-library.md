@@ -1,6 +1,6 @@
 ---
-title: "Managing a Library (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Managing a Library"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLibrarianTool.OVERWRITEAllDefaultLibraries", "VC.Project.VCLibrarianTool.AdditionalDependencies", "VC.Project.VCLibrarianTool.RemoveObjects", "VC.Project.VCLibrarianTool.LibraryPaths", "VC.Project.VCLibrarianTool.OutputFile", "VC.Project.VCLibrarianTool.OVERWRITEDefaultLibraryNames", "VC.Project.VCLibrarianTool.AdditionalLibraryDirectories", "VC.Project.VCLibrarianTool.ListContentsFile", "VC.Project.VCLibrarianTool.ListContents", "VC.Project.VCLibrarianTool.SubSystemVersion", "VC.Project.VCLibrarianTool.OVERWRITEDefaultLibraryName", "VC.Project.VCLibrarianTool.SubSystem"]
 helpviewer_keywords: ["/LIBPATH library manager option", "OUT library manager option", "CONVERT library manager option", "LIBPATH library manager option", "/LIST library manager option", "object files, building and modifying", "-LINK50COMPAT library manager option", "REMOVE library manager option", "SUBSYSTEM library manager option", "/LINK50COMPAT library manager option", "/OUT library manager option", "LIB [C++], managing COFF libraries", "-CONVERT library manager option", "LINK50COMPAT library manager option", "-OUT library manager option", "-REMOVE library manager option", "-LIST library manager option", "/SUBSYSTEM library manager option", "-SUBSYSTEM library manager option", "/REMOVE library manager option", "-LIBPATH library manager option", "object files", "LIST library manager option", "/CONVERT library manager option"]
 ms.assetid: f56a8b85-fbdc-4c09-8d8e-00f0ffe1da53

@@ -1,6 +1,6 @@
 ---
-title: "BSCMAKE Exit Codes (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "BSCMAKE Exit Codes"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["exit codes", "BSCMAKE, exit codes"]
 ms.assetid: 1a5ca9d8-a217-43c8-9780-2a41d458b8c0
 ---

@@ -1,5 +1,5 @@
 ---
-title: "/NXCOMPAT (Compatible with Data Execution Prevention) (C++) - Visual Studio"
+title: "/NXCOMPAT (Compatible with Data Execution Prevention)"
 ms.date: "12/29/2017"
 f1_keywords: ["/NXCOMPAT"]
 helpviewer_keywords: ["/NXCOMPAT linker option", "-NXCOMPAT linker option", "NXCOMPAT linker option"]

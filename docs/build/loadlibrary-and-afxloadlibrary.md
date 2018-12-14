@@ -1,5 +1,5 @@
 ---
-title: "LoadLibrary and AfxLoadLibrary (C++) - Visual Studio"
+title: "LoadLibrary and AfxLoadLibrary"
 ms.date: "05/24/2018"
 f1_keywords: ["LoadLibrary"]
 helpviewer_keywords: ["DLLs [C++], AfxLoadLibrary", "DLLs [C++], LoadLibrary", "AfxLoadLibrary method", "LoadLibrary method", "explicit linking [C++]"]

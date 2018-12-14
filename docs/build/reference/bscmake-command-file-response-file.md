@@ -1,6 +1,6 @@
 ---
-title: "BSCMAKE Command File (Response File) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "BSCMAKE Command File (Response File)"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["BSCMAKE, response file", "BSCMAKE, command file", "response files, BSCMAKE", "command files, BSCMAKE", "response files", "command files"]
 ms.assetid: abdffeea-35c7-4f2d-8c17-7d0d80bac314
 ---

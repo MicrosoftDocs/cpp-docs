@@ -1,6 +1,6 @@
 ---
-title: "/RANGE (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/RANGE"
+ms.date: "11/04/2016"
 f1_keywords: ["/RANGE"]
 helpviewer_keywords: ["/RANGE dumpbin option", "-RANGE dumpbin option"]
 ms.assetid: 7eeba266-32be-49cc-a350-96bdf541f98a

@@ -1,6 +1,6 @@
 ---
-title: "Scalar Types (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Scalar Types"
+ms.date: "11/04/2016"
 ms.assetid: 07c9195e-b6c7-4083-8ef0-8a93032e4d1e
 ---
 # Scalar Types

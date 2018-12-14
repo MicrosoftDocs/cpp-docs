@@ -1,5 +1,5 @@
 ---
-title: "/Zc:wchar_t (wchar_t Is Native Type) (C++) - Visual Studio"
+title: "/Zc:wchar_t (wchar_t Is Native Type)"
 ms.date: "03/01/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.TreatWChar_tAsBuiltInType", "VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType", "/Zc:wchar_t"]
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "wchar_t type", "Conformance compiler options", "Zc compiler options [C++]"]

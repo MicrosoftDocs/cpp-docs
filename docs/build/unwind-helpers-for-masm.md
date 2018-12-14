@@ -1,6 +1,6 @@
 ---
-title: "Unwind Helpers for MASM (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Unwind Helpers for MASM"
+ms.date: "11/04/2016"
 ms.assetid: 36591f9d-43d5-47b1-ae09-e45cf127204c
 ---
 # Unwind Helpers for MASM

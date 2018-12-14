@@ -1,5 +1,5 @@
 ---
-title: "/Zc:threadSafeInit (Thread-safe Local Static Initialization) (C++) - Visual Studio"
+title: "/Zc:threadSafeInit (Thread-safe Local Static Initialization)"
 ms.date: "03/14/2018"
 f1_keywords: ["threadSafeInit", "/Zc:threadSafeInit"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "threadSafeInit", "Thread-safe Local Static Initialization", "/Zc compiler options (C++)", "Zc compiler options (C++)"]

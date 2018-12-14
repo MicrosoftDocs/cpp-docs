@@ -1,6 +1,6 @@
 ---
-title: "Calculating Necessary Values (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Calculating Necessary Values"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["helper functions, calculating necessary values"]
 ms.assetid: 4f037d0f-881a-4a48-a9d2-9f8872dfccb7
 ---

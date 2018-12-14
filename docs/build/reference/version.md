@@ -1,6 +1,6 @@
 ---
-title: "/VERSION (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/VERSION"
+ms.date: "11/04/2016"
 f1_keywords: ["/version"]
 helpviewer_keywords: ["/VERSION editbin option", "-VERSION editbin option", "VERSION editbin option"]
 ms.assetid: 1fa08266-3088-4261-8d84-d4408e1cef46

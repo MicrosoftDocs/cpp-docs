@@ -1,6 +1,6 @@
 ---
-title: "/DEF (Specify Module-Definition File) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/DEF (Specify Module-Definition File)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.ModuleDefinitionFile", "/def"]
 helpviewer_keywords: ["module definition files, specifying", "DEF linker option", "-DEF linker option", "module definition files", "/DEF linker option"]
 ms.assetid: 6497fa68-65f0-48ca-8f66-b87166fc631a

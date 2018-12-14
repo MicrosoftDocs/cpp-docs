@@ -1,6 +1,6 @@
 ---
-title: "Notification Hooks (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Notification Hooks"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["delayed loading of DLLs, notification hooks"]
 ms.assetid: e9c291ed-2f2d-4319-a171-09800625256f
 ---

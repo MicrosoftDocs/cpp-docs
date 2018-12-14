@@ -1,6 +1,6 @@
 ---
-title: "Where to Define Macros (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Where to Define Macros"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["defining macros", "macros, NMAKE", "NMAKE program, defining macros"]
 ms.assetid: 0fc59ec5-5f58-4644-b7da-7b021f7001af
 ---

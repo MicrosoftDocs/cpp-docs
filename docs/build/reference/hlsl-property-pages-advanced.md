@@ -1,6 +1,6 @@
 ---
-title: "HLSL Property Pages: Advanced (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "HLSL Property Pages: Advanced"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.FXCompilerTool.SuppressStartupBanner", "VC.Project.FXCompilerTool.TreatWarningAsError"]
 ms.assetid: a4f05aed-2c0e-4e7d-b7a4-bc2f228112c5
 ---

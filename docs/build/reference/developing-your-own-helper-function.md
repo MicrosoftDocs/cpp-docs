@@ -1,6 +1,6 @@
 ---
-title: "Developing Your Own Helper Function (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Developing Your Own Helper Function"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["helper functions"]
 ms.assetid: a845429d-68b1-4e14-aa88-f3f5343bd490
 ---

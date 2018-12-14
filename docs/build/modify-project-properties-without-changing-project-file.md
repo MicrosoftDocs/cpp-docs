@@ -1,5 +1,5 @@
 ---
-title: "How to: Modify C++ project properties and targets without changing the project file (C++) - Visual Studio"
+title: "How to: Modify C++ project properties and targets without changing the project file"
 ms.date: "11/28/2018"
 helpviewer_keywords: ["project properties [C++], modifying outside project file"]
 ---

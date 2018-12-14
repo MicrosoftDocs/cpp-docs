@@ -1,6 +1,6 @@
 ---
-title: "Concepts of Isolated Applications and Side-by-side Assemblies (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Concepts of Isolated Applications and Side-by-side Assemblies"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["side-by-side assemblies [C++]", "isolated assemblies [C++]"]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
 ---

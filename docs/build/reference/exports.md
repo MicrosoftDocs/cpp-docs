@@ -1,5 +1,5 @@
 ---
-title: "EXPORTS (C++) - Visual Studio"
+title: "EXPORTS"
 ms.date: "09/07/2018"
 f1_keywords: ["EXPORTS"]
 helpviewer_keywords: ["EXPORTS .def file statement"]

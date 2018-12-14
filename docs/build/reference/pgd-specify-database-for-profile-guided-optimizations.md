@@ -1,5 +1,5 @@
 ---
-title: "/PGD (Specify Database for Profile-Guided Optimizations) (C++) - Visual Studio"
+title: "/PGD (Specify Database for Profile-Guided Optimizations)"
 ms.date: "03/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.ProfileGuidedDatabase"]
 helpviewer_keywords: ["-PGD linker option", "/PGD linker option"]

@@ -1,7 +1,7 @@
 ---
 title: "Set the Path and Environment Variables for Command-Line Builds"
 ms.custom: "conceptual"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["include", "Lib", "Path"]
 helpviewer_keywords: ["environment variables [C++]", "VCVARS32.bat file", "cl.exe compiler [C++], environment variables", "LINK tool [C++], environment variables", "PATH reserved word", "INCLUDE reserved word", "LINK tool [C++], path", "LIB environment variable", "compiling source code [C++], from command line", "environment variables [C++], CL compiler"]
 ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4

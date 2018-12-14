@@ -1,6 +1,6 @@
 ---
-title: "MIDL Property Pages: General (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "MIDL Property Pages: General"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCMidlTool.PreprocessorDefinitions", "VC.Project.VCMidlTool.DefaultCharType", "VC.Project.VCMidlTool.WarnAsError", "VC.Project.VCMidlTool.AdditionalIncludeDirectories", "VC.Project.VCMidlTool.WarningLevel", "VC.Project.VCMidlTool.MkTypLibCompatible", "VC.Project.VCMidlTool.GenerateStublessProxies", "VC.Project.VCMidlTool.SuppressStartupBanner", "VC.Project.VCMidlTool.TargetEnvironment", "VC.Project.VCMidlTool.OVERWRITEStandardIncludePath"]
 helpviewer_keywords: ["MIDL, property pages"]
 ms.assetid: 0692484c-a7e6-4270-8df7-981589368399

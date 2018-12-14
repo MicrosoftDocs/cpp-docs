@@ -1,6 +1,6 @@
 ---
-title: "Explicitly Unloading a Delay-Loaded DLL (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Explicitly Unloading a Delay-Loaded DLL"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["/DELAY:UNLOAD linker option", "DELAY:UNLOAD linker option", "__FUnloadDelayLoadedDLL2", "delayed loading of DLLs, unloading"]
 ms.assetid: 1c4c5172-fd06-45d3-9e4f-f12343176b3c
 ---

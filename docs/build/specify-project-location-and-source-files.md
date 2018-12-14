@@ -1,6 +1,6 @@
 ---
 title: "New Project From Existing Code - Source Files (Visual C++)"
-ms.date: "12/14/2018"
+ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.importwiz.location"]
 ms.assetid: 29ddffb9-5918-4d72-8c7a-a365f9de96dd
 ---

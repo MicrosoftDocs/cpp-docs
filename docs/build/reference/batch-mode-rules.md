@@ -1,6 +1,6 @@
 ---
-title: "Batch-Mode Rules (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Batch-Mode Rules"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["inference rules in NMAKE", "NMAKE program, inference rules", "batch-mode inference rules in NMAKE"]
 ms.assetid: 0650b547-ef19-4455-9bba-fa567dcf88f2
 ---

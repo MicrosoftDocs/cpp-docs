@@ -1,5 +1,5 @@
 ---
-title: "/O1, /O2 (Minimize Size, Maximize Speed) (C++) - Visual Studio"
+title: "/O1, /O2 (Minimize Size, Maximize Speed)"
 ms.date: "09/25/2017"
 f1_keywords: ["/o2", "/o1"]
 helpviewer_keywords: ["maximize speed compiler option [C++]", "minimize size compiler option [C++]", "-O2 compiler option [C++]", "fast code", "small code", "O2 compiler option [C++]", "/O2 compiler option [C++]", "-O1 compiler option [C++]", "O1 compiler option [C++]", "/O1 compiler option [C++]"]

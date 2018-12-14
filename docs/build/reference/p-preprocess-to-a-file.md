@@ -1,6 +1,6 @@
 ---
-title: "/P (Preprocess to a File) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/P (Preprocess to a File)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GeneratePreprocessedFile", "/p", "VC.Project.VCCLWCECompilerTool.GeneratePreprocessedFile"]
 helpviewer_keywords: ["/P compiler option [C++]", "-P compiler option [C++]", "P compiler option [C++]", "output files, preprocessor", "preprocessing output files"]
 ms.assetid: 123ee54f-8219-4a6f-9876-4227023d83fc

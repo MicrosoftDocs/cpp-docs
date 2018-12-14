@@ -1,6 +1,6 @@
 ---
-title: "/WX (Treat Linker Warnings as Errors) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/WX (Treat Linker Warnings as Errors)"
+ms.date: "11/04/2016"
 f1_keywords: ["/WX"]
 helpviewer_keywords: ["/WX linker option", "-WX linker option", "WX linker option"]
 ms.assetid: e4ba97c7-93f7-43ae-a4bb-d866790926c9

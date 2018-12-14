@@ -1,6 +1,6 @@
 ---
-title: "/LINKERMEMBER (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/LINKERMEMBER"
+ms.date: "11/04/2016"
 f1_keywords: ["/linkermember"]
 helpviewer_keywords: ["/LINKERMEMBER dumpbin option", "LINKERMEMBER dumpbin option", "-LINKERMEMBER dumpbin option"]
 ms.assetid: c96868c1-d70e-4651-ae36-c55b58b16406

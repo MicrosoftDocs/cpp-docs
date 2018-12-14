@@ -1,6 +1,6 @@
 ---
-title: "LINK Input Files (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "LINK Input Files"
+ms.date: "11/04/2016"
 f1_keywords: ["link"]
 helpviewer_keywords: ["files [C++], LINK", "module definition files", "resources [C++], linker files", "LINK tool [C++], input files", "module definition files, linker files", "input files [C++], LINK", "linker [C++], input files", "import libraries [C++], linker files", "command input to linker files [C++]"]
 ms.assetid: bb26fcc5-509a-4620-bc3e-b6c6e603a412

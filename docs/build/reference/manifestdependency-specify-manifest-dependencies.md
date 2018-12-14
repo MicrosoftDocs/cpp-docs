@@ -1,6 +1,6 @@
 ---
-title: "/MANIFESTDEPENDENCY (Specify Manifest Dependencies) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/MANIFESTDEPENDENCY (Specify Manifest Dependencies)"
+ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.AdditionalManifestDependencies"]
 helpviewer_keywords: ["MANIFESTDEPENDENCY linker option", "/MANIFESTDEPENDENCY linker option", "-MANIFESTDEPENDENCY linker option"]
 ms.assetid: e4b68313-33a2-4c3e-908e-ac2b9f7d6a73

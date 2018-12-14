@@ -1,5 +1,5 @@
 ---
-title: "/SOURCELINK (Include Sourcelink file in PDB) (C++) - Visual Studio"
+title: "/SOURCELINK (Include Sourcelink file in PDB)"
 ms.date: "08/20/2018"
 f1_keywords: ["/sourcelink"]
 helpviewer_keywords: ["/SOURCELINK linker option", "/SOURCELINK"]

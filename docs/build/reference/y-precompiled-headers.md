@@ -1,6 +1,6 @@
 ---
-title: "/Y (Precompiled Headers) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/Y (Precompiled Headers)"
+ms.date: "11/04/2016"
 f1_keywords: ["/Y"]
 helpviewer_keywords: ["/Y compiler options [C++]"]
 ms.assetid: 1df5726a-8ebe-42c3-b618-d2f5e1ce8673

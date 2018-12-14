@@ -1,6 +1,6 @@
 ---
-title: "Compiler-Controlled LINK Options (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Compiler-Controlled LINK Options"
+ms.date: "11/04/2016"
 f1_keywords: ["link"]
 helpviewer_keywords: ["LINK tool [C++], compiler-controlled options", "linker [C++], CL compiler control", "linking [C++], affected by CL features", "cl.exe compiler [C++], features that affect linking", "cl.exe compiler [C++], controlling linker"]
 ms.assetid: e4c03896-c99c-4599-8502-e0f4bebe69d0

@@ -1,6 +1,6 @@
 ---
-title: "MxCsr (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "MxCsr"
+ms.date: "11/04/2016"
 ms.assetid: 4f3c229d-0862-4733-acc7-9ed7a0b870ce
 ---
 # MxCsr

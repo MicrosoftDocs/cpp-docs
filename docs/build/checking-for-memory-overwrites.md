@@ -1,6 +1,6 @@
 ---
-title: "Checking for Memory Overwrites (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Checking for Memory Overwrites"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["memory, overwrites"]
 ms.assetid: da7c5d77-a267-415f-a8ab-ee5ce5bfc286
 ---

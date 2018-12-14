@@ -1,6 +1,6 @@
 ---
-title: "Value Edit Control (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Value Edit Control"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["Value edit control"]
 ms.assetid: 129d8f74-2629-4a29-981f-ddb3c1e174cd
 ---

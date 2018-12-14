@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Compiling a C++/CLI Program on the Command Line - Visual Studio"
+title: "Walkthrough: Compiling a C++/CLI Program on the Command Line"
 ms.date: "09/24/2018"
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
 ---

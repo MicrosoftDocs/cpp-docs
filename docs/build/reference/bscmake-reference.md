@@ -1,6 +1,6 @@
 ---
-title: "BSCMAKE Reference (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "BSCMAKE Reference"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["BSCMAKE, reference", "Microsoft Browse Information Maintenance Utility", "browse windows", "browse information files (.bsc), building", ".bsc files, building", "bsc files, building", "BSCMAKE"]
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
 ---

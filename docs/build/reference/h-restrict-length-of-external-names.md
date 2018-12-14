@@ -1,5 +1,5 @@
 ---
-title: "/H (Restrict Length of External Names) (C++) - Visual Studio"
+title: "/H (Restrict Length of External Names)"
 ms.date: "09/05/2018"
 f1_keywords: ["/h"]
 helpviewer_keywords: ["public name length", "/H compiler option [C++]", "H compiler option [C++]", "external names", "-H compiler option [C++]"]

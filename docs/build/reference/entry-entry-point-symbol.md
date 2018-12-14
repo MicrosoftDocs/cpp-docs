@@ -1,6 +1,6 @@
 ---
-title: "/ENTRY (Entry-Point Symbol) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/ENTRY (Entry-Point Symbol)"
+ms.date: "11/04/2016"
 f1_keywords: ["/entry", "VC.Project.VCLinkerTool.EntryPointSymbol"]
 helpviewer_keywords: ["starting address", "-ENTRY linker option", "/ENTRY linker option", "ENTRY linker option"]
 ms.assetid: 26c62ba2-4f52-4882-a7bd-7046a0abf445

@@ -1,6 +1,6 @@
 ---
-title: "Function Pointers (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "Function Pointers"
+ms.date: "11/04/2016"
 helpviewer_keywords: ["function pointers, x64"]
 ms.assetid: 874839ac-ffcd-419f-bcbe-6d492a5c3a61
 ---

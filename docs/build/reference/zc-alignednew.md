@@ -1,5 +1,5 @@
 ---
-title: "/Zc:alignedNew (C++17 over-aligned allocation) (C++) - Visual Studio"
+title: "/Zc:alignedNew (C++17 over-aligned allocation)"
 ms.date: "02/28/2018"
 f1_keywords: ["/Zc:alignedNew"]
 helpviewer_keywords: ["/Zc:alignedNew", "Zc:alignedNew", "-Zc:alignedNew"]

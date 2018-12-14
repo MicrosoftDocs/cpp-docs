@@ -1,5 +1,5 @@
 ---
-title: "/Qsafe_fp_loads (C++) - Visual Studio"
+title: "/Qsafe_fp_loads"
 ms.date: "01/24/2018"
 ---
 # /Qsafe_fp_loads

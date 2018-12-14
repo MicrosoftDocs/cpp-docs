@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Compile a C program on the command line - Visual Studio"
+title: "Walkthrough: Compile a C program on the command line"
 ms.custom: "conceptual"
 ms.date: "09/24/2018"
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]

@@ -1,6 +1,6 @@
 ---
-title: "How to: Use Build Events in MSBuild Projects (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "How to: Use Build Events in MSBuild Projects"
+ms.date: "11/04/2016"
 f1_keywords: ["msbuild.cpp.howto.usebuildevents"]
 helpviewer_keywords: ["msbuild (c++), howto: use build events in projects"]
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218

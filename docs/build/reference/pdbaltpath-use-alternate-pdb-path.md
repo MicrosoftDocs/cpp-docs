@@ -1,6 +1,6 @@
 ---
-title: "/PDBALTPATH (Use Alternate PDB Path) (C++) - Visual Studio"
-ms.date: "12/14/2018"
+title: "/PDBALTPATH (Use Alternate PDB Path)"
+ms.date: "11/04/2016"
 f1_keywords: ["/pdbaltpath"]
 helpviewer_keywords: [".pdb files, path", "PDBALTPATH dumpbin option", "-PDBALTPATH dumpbin option", "/PDBALTPATH dumpbin option", "PDB files, path"]
 ms.assetid: 72e200aa-e2c3-4ad8-b687-25528da1aaaf
