@@ -12,6 +12,7 @@ Specifies that *short_filename* is to be used as an alias for *long_filename*. *
 ## Syntax
 
 > #pragma include_alias("*long_filename*", "*short_filename*")
+> #pragma include_alias(<*long_filename*>, <*short_filename*>)
 
 ## Remarks
 
