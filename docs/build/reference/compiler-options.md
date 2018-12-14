@@ -1,7 +1,7 @@
 ---
 title: "MSVC Compiler Options"
 ms.date: "01/29/2018"
-helpviewer_keywords: ["cl.exe compiler", "x86 Visual C++ compiler", "ARM Visual C++ compiler", "compiler options, C++", "x64 Visual C++ compiler"]
+helpviewer_keywords: ["cl.exe compiler", "x86 MSVC compiler", "ARM MSVC compiler", "compiler options, C++", "x64 MSVC compiler"]
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
 ---
 # Compiler Options

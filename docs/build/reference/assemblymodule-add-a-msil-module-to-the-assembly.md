@@ -46,7 +46,7 @@ Other linker options that affect assembly generation are:
 
 - [/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)
 
-The Visual C++ linker accepts .netmodule files as input and the output file produced by the linker will be an assembly or .netmodule with no run-time dependence on any of the .netmodules that were input to the linker.  For more information, see [.netmodule Files as Linker Input](netmodule-files-as-linker-input.md).
+The MSVC linker accepts .netmodule files as input and the output file produced by the linker will be an assembly or .netmodule with no run-time dependence on any of the .netmodules that were input to the linker.  For more information, see [.netmodule Files as Linker Input](netmodule-files-as-linker-input.md).
 
 ### To set this linker option in the Visual Studio development environment
 

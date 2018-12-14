@@ -28,7 +28,7 @@ Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process docu
 
 See [\<summary>](summary-visual-cpp.md) for an example of using \<see>.
 
-The Visual C++ compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved. See [\<seealso>](seealso-visual-cpp.md) for more information.
+The MSVC compiler will attempt to resolve cref references in one pass through the documentation comments.  Therefore, if using the C++ lookup rules, a symbol is not found by the compiler the reference will be marked as unresolved. See [\<seealso>](seealso-visual-cpp.md) for more information.
 
 ## Example
 

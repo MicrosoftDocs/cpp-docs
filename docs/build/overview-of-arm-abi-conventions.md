@@ -17,7 +17,7 @@ Integer divide support (UDIV/SDIV) is strongly recommended but not required. Pla
 
 ## Endianness
 
-Windows on ARM executes in little-endian mode. Both the Visual C++ compiler and the Windows runtime expect little-endian data at all times. Although the SETEND instruction in the ARM instruction set architecture (ISA) allows even user-mode code to change the current endianness, doing so is discouraged because it's dangerous for an application. If an exception is generated in big-endian mode, the behavior is unpredictable and may lead to an application fault in user mode, or a bugcheck in kernel mode.
+Windows on ARM executes in little-endian mode. Both the MSVC compiler and the Windows runtime expect little-endian data at all times. Although the SETEND instruction in the ARM instruction set architecture (ISA) allows even user-mode code to change the current endianness, doing so is discouraged because it's dangerous for an application. If an exception is generated in big-endian mode, the behavior is unpredictable and may lead to an application fault in user mode, or a bugcheck in kernel mode.
 
 ## Alignment
 

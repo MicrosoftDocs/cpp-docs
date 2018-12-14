@@ -16,11 +16,11 @@ You can pass an MSIL .obj file to any other Visual Studio compiler via the /addm
 
 Other Visual Studio compilers can only consume managed types from a module.
 
-Use the following to determine whether you need to use a .netmodule or a .obj file as module input to the Visual C++ linker:
+Use the following to determine whether you need to use a .netmodule or a .obj file as module input to the MSVC linker:
 
 - If you are building with a Visual Studio compiler other than Visual C++, produce a .netmodule and use the .netmodule as input to the linker.
 
-- If you are using the Visual C++ compiler to produce modules and if the module(s) will be used to build something other than a library, use the .obj files produced by the compiler as module input to the linker; do not use the .netmodule file as input.
+- If you are using the MSVC compiler to produce modules and if the module(s) will be used to build something other than a library, use the .obj files produced by the compiler as module input to the linker; do not use the .netmodule file as input.
 
 - If your modules will be used to build a native (not a managed) library, use .obj files as module input to the linker and generate a .lib library file.
 

@@ -1,12 +1,12 @@
 ---
 title: "File Types Created for Visual C++ Projects"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["header files [C++], Visual C++ projects", "ActiveX controls [C++], Help files", "def files", "project items [C++], files", "Visual C++ projects, files and directories", "resource files, created by wizard", "files [C++], extensions", "Help files, for ActiveX controls", "Web projects [C++], adding items", ".def files", "licensing ActiveX controls"]
+helpviewer_keywords: ["header files [C++], Visual Studio projects", "ActiveX controls [C++], Help files", "def files", "project items [C++], files", "Visual Studio C++ projects, files and directories", "resource files, created by wizard", "files [C++], extensions", "Help files, for ActiveX controls", "Web projects [C++], adding items", ".def files", "licensing ActiveX controls"]
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
 ---
-# File Types Created for Visual C++ Projects
+# File Types Created for Visual Studio C++ Projects
 
-This topic describes all the types of files that are associated with Visual C++ projects for classic desktop applications. The actual files included in your project depend on the project type and the options you select when using a wizard.
+This topic describes all the types of files that are associated with Visual Studio projects for classic desktop applications. The actual files included in your project depend on the project type and the options you select when using a wizard.
 
 - [Project and Solution Files]()
 
@@ -24,11 +24,11 @@ This topic describes all the types of files that are associated with Visual C++ 
 
 - [Hint Files](hint-files.md)
 
-When you [create a Visual C++ project](../creating-desktop-projects-by-using-application-wizards.md), you might be creating a new solution, or you might be adding a project to a solution. Non-trivial applications are commonly developed with multiple projects in a solution.
+When you [create a Visual Studio project](../creating-desktop-projects-by-using-application-wizards.md), you might be creating a new solution, or you might be adding a project to a solution. Non-trivial applications are commonly developed with multiple projects in a solution.
 
-Projects usually produce either an EXE or a DLL. Projects can be dependent on each other; during the build process, the Visual C++ environment checks dependencies both within and between projects. Each project has core source code, and depending on the kind of project, it may have many other files containing various aspects of the project. The contents of these files are indicated by the file extension. The Visual Studio development environment uses the file extensions to determine how to handle the file contents during a build.
+Projects usually produce either an EXE or a DLL. Projects can be dependent on each other; during the build process, the Visual Studio environment checks dependencies both within and between projects. Each project has core source code, and depending on the kind of project, it may have many other files containing various aspects of the project. The contents of these files are indicated by the file extension. The Visual Studio development environment uses the file extensions to determine how to handle the file contents during a build.
 
-The following table shows common files in a Visual C++ project, and identifies them with their file extension.
+The following table shows common files in a Visual Studio project, and identifies them with their file extension.
 
 |File extension|Type|Contents|
 |--------------------|----------|--------------|
@@ -62,7 +62,7 @@ The following table shows common files in a Visual C++ project, and identifies t
 |.vbg|Solution|A compatible project group file.|
 |.vbp, .vip, .vbproj|Project|The Visual Basic project file.|
 |.vcxitems|Project|Shared Items project for sharing code files between multiple C++ projects. See [Project Files and Makefiles]() for more information.|
-|.vcxproj|Project|The Visual C++ project file. See [Project Files and Makefiles]() for more information.|
+|.vcxproj|Project|The Visual Studio project file. See [Project Files and Makefiles]() for more information.|
 |.vcxproj.filters|Project|When Solution Explorer is used to add a file to a project, the filters file defines where in the Solution Explorer tree view the file is added, based on its file name extension.|
 |.vdproj|Project|The Visual Studio deployment project file.|
 |.vmx|Project|The macro project file.|
@@ -70,11 +70,11 @@ The following table shows common files in a Visual C++ project, and identifies t
 
 For information on other files associated with Visual Studio, see [File Types and File Extensions in Visual Studio .NET](/visualstudio/ide/reference/project-and-solution-file-types).
 
-Project files are organized into folders in Solution Explorer. Visual C++ creates a folder for source files, header files, and resource files, but you can reorganize these folders or create new ones. You can use folders to organize explicitly logical clusters of files within the hierarchy of a project. For example, you could create folders to contain all your user interface source files, or specifications, documentation, or test suites. All file folder names should be unique.
+Project files are organized into folders in Solution Explorer. Visual Studio creates a folder for source files, header files, and resource files, but you can reorganize these folders or create new ones. You can use folders to organize explicitly logical clusters of files within the hierarchy of a project. For example, you could create folders to contain all your user interface source files, or specifications, documentation, or test suites. All file folder names should be unique.
 
 When you add an item to a project, you add the item to all configurations for that project, regardless of whether or not the item is buildable. For example, if you have a project named MyProject, adding an item adds it to both the Debug and Release project configurations.
 
 ## See Also
 
-[Creating and Managing Visual C++ Projects](../creating-and-managing-visual-cpp-projects.md)<br>
-[Visual C++ Project Types](visual-cpp-project-types.md)<br>
+[Creating and Managing Visual Studio C++ Projects](../creating-and-managing-visual-cpp-projects.md)<br>
+[Visual Studio C++ Project Types](visual-cpp-project-types.md)<br>

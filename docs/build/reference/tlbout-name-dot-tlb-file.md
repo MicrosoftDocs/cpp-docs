@@ -23,7 +23,7 @@ Specifies the name of the .tlb file created by the MIDL compiler. No file extens
 
 The /TLBOUT option specifies the name and extension of the .tlb file.
 
-The MIDL compiler is called by the Visual C++ linker when linking projects that have the [module](../../windows/module-cpp.md) attribute.
+The MIDL compiler is called by the MSVC linker when linking projects that have the [module](../../windows/module-cpp.md) attribute.
 
 If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](idlout-name-midl-output-files.md) *filename*. If /IDLOUT is not specified, the .tlb file will be called vc70.tlb.
 

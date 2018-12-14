@@ -25,7 +25,7 @@ The compiler observes the following rules when it generates the ID strings:
   | P | property (including indexers or other indexed properties) |
   | M | method (including such special methods as constructors, operators, and so forth) |
   | E | event |
-  | ! | error string<br /><br /> The rest of the string provides information about the error. The Visual C++ compiler generates error information for links that cannot be resolved. |
+  | ! | error string<br /><br /> The rest of the string provides information about the error. The MSVC compiler generates error information for links that cannot be resolved. |
 
 - The second part of the string is the fully qualified name of the item, starting at the root of the namespace. The name of the item, its enclosing type or types, and namespace are separated by periods. If the name of the item itself has periods, they are replaced by the hash-sign ('#'). It is assumed that no item has an hash-sign directly in its name. For example, the fully qualified name of the `String` constructor would be "System.String.#ctor".
 
@@ -39,19 +39,19 @@ The compiler observes the following rules when it generates the ID strings:
 
   - ELEMENT_TYPE_BYREF is represented as a '\@' following the modified type.
 
-  - ELEMENT_TYPE_PINNED is represented as a '^' following the modified type. The Visual C++ compiler never generates this.
+  - ELEMENT_TYPE_PINNED is represented as a '^' following the modified type. The MSVC compiler never generates this.
 
-  - ELEMENT_TYPE_CMOD_REQ is represented as a '&#124;' and the fully qualified name of the modifier class, following the modified type. The Visual C++ compiler never generates this.
+  - ELEMENT_TYPE_CMOD_REQ is represented as a '&#124;' and the fully qualified name of the modifier class, following the modified type. The MSVC compiler never generates this.
 
   - ELEMENT_TYPE_CMOD_OPT is represented as a '!' and the fully qualified name of the modifier class, following the modified type.
 
   - ELEMENT_TYPE_SZARRAY is represented as "[]" following the element type of the array.
 
-  - ELEMENT_TYPE_GENERICARRAY is represented as "[?]" following the element type of the array. The Visual C++ compiler never generates this.
+  - ELEMENT_TYPE_GENERICARRAY is represented as "[?]" following the element type of the array. The MSVC compiler never generates this.
 
   - ELEMENT_TYPE_ARRAY is represented as [*lowerbound*:`size`,*lowerbound*:`size`] where the number of commas is the rank - 1, and the lower bounds and size of each dimension, if known, are represented in decimal. If a lower bound or size is not specified, it is simply omitted. If the lower bound and size for a particular dimension are omitted, the ':' is omitted as well. For example, a 2-dimensional array with 1 as the lower bounds and unspecified sizes is [1:,1:].
 
-  - ELEMENT_TYPE_FNPTR is represented as "=FUNC:`type`(*signature*)", where `type` is the return type, and *signature* is the arguments of the method. If there are no arguments, the parentheses are omitted. The Visual C++ compiler never generates this.
+  - ELEMENT_TYPE_FNPTR is represented as "=FUNC:`type`(*signature*)", where `type` is the return type, and *signature* is the arguments of the method. If there are no arguments, the parentheses are omitted. The MSVC compiler never generates this.
 
   The following signature components are not represented because they are never used for differentiating overloaded methods:
 

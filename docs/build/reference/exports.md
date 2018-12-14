@@ -43,7 +43,7 @@ EXPORTS
    func2=other_module.#42
 ```
 
-Because the Visual C++ compiler uses name decoration for C++ functions, you must either use the decorated name *internal_name* or define the exported functions by using `extern "C"` in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (\_) prefix and a suffix composed of the at sign (\@) followed by the number of bytes (in decimal) in the argument list.
+Because the MSVC compiler uses name decoration for C++ functions, you must either use the decorated name *internal_name* or define the exported functions by using `extern "C"` in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (\_) prefix and a suffix composed of the at sign (\@) followed by the number of bytes (in decimal) in the argument list.
 
 To find the decorated names produced by the compiler, use the [DUMPBIN](dumpbin-reference.md) tool or the linker [/MAP](map-generate-mapfile.md) option. The decorated names are compiler-specific. If you export the decorated names in the .DEF file, executables that link to the DLL must also be built by using the same version of the compiler. This ensures that the decorated names in the caller match the exported names in the .DEF file.
 

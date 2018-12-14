@@ -18,7 +18,7 @@ You understand the fundamentals of the C++ language.
 
 ## Compiling a C++/CX Program
 
-To enable compilation for C++/CX, you must use the [/ZW](reference/zw-windows-runtime-compilation.md) compiler option. The Visual C++ compiler generates an .exe file that targets the Windows Runtime, and links to the required libraries.
+To enable compilation for C++/CX, you must use the [/ZW](reference/zw-windows-runtime-compilation.md) compiler option. The MSVC compiler generates an .exe file that targets the Windows Runtime, and links to the required libraries.
 
 #### To compile a C++/CX application on the command line
 

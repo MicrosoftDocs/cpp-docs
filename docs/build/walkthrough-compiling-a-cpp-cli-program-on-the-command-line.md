@@ -17,7 +17,7 @@ You understand the fundamentals of the C++ language.
 
 The following steps show how to compile a C++/CLI console application that uses .NET Framework classes.
 
-To enable compilation for C++/CLI, you must use the [/clr](reference/clr-common-language-runtime-compilation.md) compiler option. The Visual C++ compiler generates an .exe file that contains MSIL code—or mixed MSIL and native code—and links to the required .NET Framework libraries.
+To enable compilation for C++/CLI, you must use the [/clr](reference/clr-common-language-runtime-compilation.md) compiler option. The MSVC compiler generates an .exe file that contains MSIL code—or mixed MSIL and native code—and links to the required .NET Framework libraries.
 
 ### To compile a C++/CLI application on the command line
 
