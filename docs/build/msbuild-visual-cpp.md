@@ -59,4 +59,4 @@ Describes MSBuild tasks. Especially note these tasks, which are specific to Visu
 
 ## See Also
 
-[Build C/C++ code on the command line](building-on-the-command-line.md)
+[Use the MSVC toolset from the command line](building-on-the-command-line.md)

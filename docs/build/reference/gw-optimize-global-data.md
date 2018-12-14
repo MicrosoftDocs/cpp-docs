@@ -42,4 +42,4 @@ For more information, see [Introducing /Gw Compiler Switch](http://blogs.msdn.co
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

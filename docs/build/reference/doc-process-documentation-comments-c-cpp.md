@@ -41,4 +41,4 @@ To use the generated .xml file with IntelliSense, make the file name of the .xml
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

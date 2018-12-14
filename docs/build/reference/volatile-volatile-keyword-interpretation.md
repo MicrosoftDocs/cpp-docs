@@ -41,4 +41,4 @@ There is no `#pragma` equivalent to control this option.
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

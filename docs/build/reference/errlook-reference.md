@@ -26,5 +26,5 @@ Describes the Look Up button in ERRLOOK.
 
 ## Related Sections
 
-[C/C++ Build Tools](c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 Provides links to topics discussing the C/C++ build tools provided in Visual C++.

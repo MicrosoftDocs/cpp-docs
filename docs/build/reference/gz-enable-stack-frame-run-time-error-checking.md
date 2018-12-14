@@ -38,4 +38,4 @@ Performs the same operations as the [/RTC (Run-Time Error Checks)](rtc-run-time-
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

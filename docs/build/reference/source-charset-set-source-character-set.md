@@ -46,7 +46,7 @@ If you want to set both the source character set and the execution character set
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [/execution-charset (Set Execution Character Set)](execution-charset-set-execution-character-set.md)<br/>
 [/utf-8 (Set Source and Executable character sets to UTF-8)](utf-8-set-source-and-executable-character-sets-to-utf-8.md)<br/>
 [/validate-charset (Validate for compatible characters)](validate-charset-validate-for-compatible-characters.md)

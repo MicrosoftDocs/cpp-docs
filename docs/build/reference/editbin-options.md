@@ -38,5 +38,5 @@ EDITBIN has the following options:
 
 ## See Also
 
-[C/C++ Build Tools](c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 [EDITBIN Reference](editbin-reference.md)

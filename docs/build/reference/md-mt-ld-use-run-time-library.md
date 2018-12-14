@@ -53,4 +53,4 @@ For more about DLLs, see [DLLs in Visual C++](../dlls-in-visual-cpp.md).
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

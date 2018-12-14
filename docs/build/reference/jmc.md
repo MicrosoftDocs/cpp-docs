@@ -37,4 +37,4 @@ For more information, see [C++ Just My Code](/visualstudio/debugger/just-my-code
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>

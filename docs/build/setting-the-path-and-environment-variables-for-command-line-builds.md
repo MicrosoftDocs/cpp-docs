@@ -8,7 +8,7 @@ ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4
 ---
 # Set the Path and Environment Variables for Command-Line Builds
 
-The Visual C++ command-line build tools require several environment variables that are customized for your installation and build configuration. When a C++ workload is installed by the Visual Studio installer, it creates customized command files, or batch files, that set the required environment variables. The installer then uses these command files to create shortcuts for the Windows Start menu to open a developer command prompt window. These shortcuts set up the environment variables for a specific build configuration. When you want to use the command-line tools, you can run one of these shortcuts, or you can open a plain command prompt window and then run one of the custom command files to set the build configuration environment yourself. For more information, see [Build C/C++ Code on the Command Line](building-on-the-command-line.md).
+The Visual C++ command-line build tools require several environment variables that are customized for your installation and build configuration. When a C++ workload is installed by the Visual Studio installer, it creates customized command files, or batch files, that set the required environment variables. The installer then uses these command files to create shortcuts for the Windows Start menu to open a developer command prompt window. These shortcuts set up the environment variables for a specific build configuration. When you want to use the command-line tools, you can run one of these shortcuts, or you can open a plain command prompt window and then run one of the custom command files to set the build configuration environment yourself. For more information, see [Use the MSVC toolset from the command line](building-on-the-command-line.md).
 
 The Visual C++ command-line tools use the PATH, TMP, INCLUDE, LIB, and LIBPATH environment variables, and also use other environment variables specific to your installed tools, platforms, and SDKs. Even a simple Visual Studio installation may set twenty or more environment variables. Because the values of these environment variables are specific to your installation and your choice of build configuration, and can be changed by product updates or upgrades, we strongly recommend that you use a developer command prompt shortcut or one of the customized command files to set them, instead of setting them in the Windows environment yourself.
 
@@ -19,7 +19,7 @@ To see which environment variables are set by a developer command prompt shortcu
 
 ## See Also
 
-[Build C/C++ code on the command line](building-on-the-command-line.md)<br/>
+[Use the MSVC toolset from the command line](building-on-the-command-line.md)<br/>
 [MSVC Linker Reference](reference/linking.md)<br/>
 [MSVC Linker Options](reference/linker-options.md)<br/>
 [MSVC Compiler Reference](reference/compiling-a-c-cpp-program.md)<br/>

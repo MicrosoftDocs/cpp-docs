@@ -93,5 +93,5 @@ The __MSVC_RUNTIME_CHECKS preprocessor directive will be defined when you use an
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks)

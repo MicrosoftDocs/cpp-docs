@@ -41,5 +41,5 @@ ANSI C and C++ do not require a specific implementation of the `char` type. This
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [Set compiler and build properties](../working-with-project-properties.md)

@@ -176,7 +176,7 @@ Provides links to articles that discuss the C and C++ compiler options and CL.ex
 [MSVC Linker Options](reference/linker-options.md)<br/>
 Provides links to articles that discuss the linker options and LINK.exe.
 
-[C/C++ Build Tools](reference/c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](reference/c-cpp-build-tools.md)<br/>
 Provides links to the C/C++ build tools that are included in Visual Studio.
 
 ## See also

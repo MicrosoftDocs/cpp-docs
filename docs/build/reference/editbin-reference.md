@@ -20,4 +20,4 @@ EDITBIN is not available for use on files produced with the [/GL](gl-whole-progr
 
 ## See Also
 
-[C/C++ Build Tools](c-cpp-build-tools.md)
+[Additional MSVC Build Tools](c-cpp-build-tools.md)

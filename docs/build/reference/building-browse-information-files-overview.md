@@ -35,5 +35,5 @@ See [General Property Page (Project)](general-property-page-project.md) for info
 
 ## See Also
 
-[C/C++ Build Tools](c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 [BSCMAKE Reference](bscmake-reference.md)

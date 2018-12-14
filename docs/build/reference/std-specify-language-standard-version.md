@@ -55,4 +55,4 @@ The **/std:c++14** and **/std:c++latest** options are available beginning in Vis
 ## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

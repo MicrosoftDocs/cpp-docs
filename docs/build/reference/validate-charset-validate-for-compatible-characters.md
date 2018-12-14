@@ -36,7 +36,7 @@ Visual Studio uses UTF-8 as the internal character encoding during conversion be
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [/execution-charset (Set Execution Character Set)](execution-charset-set-execution-character-set.md)<br/>
 [/source-charset (Set Source Character Set)](source-charset-set-source-character-set.md)<br/>
 [/utf-8 (Set Source and Executable character sets to UTF-8)](utf-8-set-source-and-executable-character-sets-to-utf-8.md)

@@ -43,4 +43,4 @@ Code compiled by using **/guard:cf** can be linked to libraries and object files
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

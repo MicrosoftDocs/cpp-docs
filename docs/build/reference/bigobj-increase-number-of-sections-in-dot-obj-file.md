@@ -40,4 +40,4 @@ Linkers that shipped prior to Visual C++ 2005 cannot read .obj files that were p
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

@@ -51,5 +51,5 @@ If you regularly compile your application by using a compiler that builds 64-bit
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [Configure Visual C++ for 64-bit, x64 targets](../configuring-programs-for-64-bit-visual-cpp.md)

@@ -270,4 +270,4 @@ int main()
 
 - [/Za, /Ze (Disable Language Extensions)](za-ze-disable-language-extensions.md)
 - [MSVC Compiler Options](compiler-options.md)
-- [Compiler Command Line Syntax](compiler-command-line-syntax.md)
+- [MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)

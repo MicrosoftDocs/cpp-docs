@@ -21,7 +21,7 @@ Describes the linker, which combines code from the object files created by the c
 
 [Unicode Support in the Compiler and Linker](unicode-support-in-the-compiler-and-linker.md)
 
-[C/C++ Build Tools](c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 Additional command-line tools for C++.
 
 [C/C++ Build Errors](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)<br/>
@@ -38,7 +38,7 @@ Discusses customizing the build process.
 [Building a C/C++ Program](../building-c-cpp-programs.md)<br/>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
-[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 Describes setting compiler options in the development environment or on the command line.
 
 [MSVC Compiler Options](compiler-options.md)<br/>
