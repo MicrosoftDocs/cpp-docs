@@ -36,6 +36,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
+      "extendBreadcrumb": "true",
       "ROBOTS": "INDEX,FOLLOW",
       "manager": "wpickett",
       "ms.date": "11/16/2016",
