@@ -1,11 +1,11 @@
 ---
-title: "&lt;see&gt; (Visual C++)"
+title: "&lt;see&gt; (C++ Documentation Comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["<see>", "see"]
 helpviewer_keywords: ["<see> C++ XML tag", "see C++ XML tag"]
 ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
 ---
-# &lt;see&gt; (Visual C++)
+# &lt;see&gt;
 
 The \<see> tag lets you specify a link from within text. Use [\<seealso>](seealso-visual-cpp.md) to indicate text that you might want to appear in a See Also section.
 

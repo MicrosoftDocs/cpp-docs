@@ -19,7 +19,7 @@ The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or execut
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 
@@ -31,7 +31,7 @@ The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or execut
 
 ## See Also
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>
 [Forced Integrity Signing of Portable Executable (PE) files](http://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
 [Kernel-Mode Code Signing Walkthrough](https://msdn.microsoft.com/windows/hardware/gg487328.aspx)<br/>

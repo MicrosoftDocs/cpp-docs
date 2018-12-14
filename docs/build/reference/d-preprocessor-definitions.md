@@ -47,7 +47,7 @@ CL /DTEST=%% TEST.C
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. In the left pane, select **Configuration Properties**, **C/C++**, **Preprocessor**.
 
@@ -83,7 +83,7 @@ TEST defined 1
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [/U, /u (Undefine Symbols)](u-u-undefine-symbols.md)<br/>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br/>
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)

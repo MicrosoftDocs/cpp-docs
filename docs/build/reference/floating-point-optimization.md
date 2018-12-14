@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Visual C++ floating point optimization"
+title: "MSVC floating point optimization"
 ms.date: "03/09/2018"
 ms.topic: "conceptual"
 ---

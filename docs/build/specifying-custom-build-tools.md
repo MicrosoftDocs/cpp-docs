@@ -12,7 +12,7 @@ For general information about custom build tools and custom build steps, see [Un
 
 ### To specify a custom build tool
 
-1. Open the project's **Property Pages** dialog box. For more information, see [Setting Visual C++ Project Properties](working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md).
 
 1. Choose **Configuration Properties** to enable the **Configuration** box. In the **Configuration** box, select the configuration for which you want to specify a custom build tool.
 

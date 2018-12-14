@@ -38,13 +38,13 @@ Discusses customizing the build process.
 [Building a C/C++ Program](../building-c-cpp-programs.md)<br/>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 Describes setting compiler options in the development environment or on the command line.
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 Provides links to topics discussing using compiler options.
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 Describes setting linker options inside or outside the integrated development environment.
 
 [MSVC Linker Options](linker-options.md)<br/>

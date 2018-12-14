@@ -25,7 +25,7 @@ Visual Studio uses UTF-8 as the internal character encoding during conversion be
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
@@ -36,7 +36,7 @@ Visual Studio uses UTF-8 as the internal character encoding during conversion be
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [/execution-charset (Set Execution Character Set)](execution-charset-set-execution-character-set.md)<br/>
 [/source-charset (Set Source Character Set)](source-charset-set-source-character-set.md)<br/>
 [/utf-8 (Set Source and Executable character sets to UTF-8)](utf-8-set-source-and-executable-character-sets-to-utf-8.md)

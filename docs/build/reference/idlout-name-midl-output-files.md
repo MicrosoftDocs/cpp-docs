@@ -41,7 +41,7 @@ If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc7
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -55,7 +55,7 @@ If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc7
 
 ## See Also
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>
 [/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
 [/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>

@@ -84,7 +84,7 @@ However, the non-throwing attribute is not a guarantee that no exceptions can be
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select **Configuration Properties** > **C/C++** > **Code Generation**.
 
@@ -99,7 +99,7 @@ However, the non-throwing attribute is not a guarantee that no exceptions can be
 ## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [Errors and Exception Handling](../../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [Exception Specifications (throw)](../../cpp/exception-specifications-throw-cpp.md)<br/>
 [Structured Exception Handling (C/C++)](../../cpp/structured-exception-handling-c-cpp.md)

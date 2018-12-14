@@ -29,17 +29,17 @@ These options are deprecated starting in Visual Studio 2015:
 (Optional) Disables link-time code generation. This behavior is the same as when **/LTCG** is not specified on the command line.
 
 **PGINSTRUMENT**<br/>
-(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile Guided Optimization](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGI**.
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGI**.
 
 **PGOPTIMIZE**<br/>
-(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  [/USEPROFILE](useprofile.md) to build an optimized image. For more information, see [Profile Guided Optimization](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGO**.
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  [/USEPROFILE](useprofile.md) to build an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGO**.
 
 **PGUPDATE**<br/>
-(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  **/USEPROFILE** to rebuild an optimized image. For more information, see [Profile Guided Optimization](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGU**.
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  **/USEPROFILE** to rebuild an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGU**.
 
 ## Remarks
 
-The **/LTCG** option tells the linker to call the compiler and perform whole-program optimization. You can also do profile guided optimization. For more information, see [Profile Guided Optimization](../profile-guided-optimizations.md).
+The **/LTCG** option tells the linker to call the compiler and perform whole-program optimization. You can also do profile guided optimization. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
 With the following exceptions, you cannot add linker options to the PGO combination of **/LTCG** and **/USEPROFILE** that were not specified in the previous PGO initialization combination of **/LTCG** and **/GENPROFILE** options:
 
@@ -123,7 +123,7 @@ Modules that are compiled by using [/GL](gl-whole-program-optimization.md) and [
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. See [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. See [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **General** property page.
 
@@ -137,5 +137,5 @@ You can also apply **/LTCG** to specific builds by choosing **Build** > **Profil
 
 ## See also
 
-- [Setting Linker Options](linking.md)
+- [MSVC linker reference](linking.md)
 - [MSVC Linker Options](linker-options.md)

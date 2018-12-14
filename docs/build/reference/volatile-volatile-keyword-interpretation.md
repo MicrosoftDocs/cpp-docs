@@ -31,7 +31,7 @@ There is no `#pragma` equivalent to control this option.
 
 ### To set the /volatile compiler option in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -41,4 +41,4 @@ There is no `#pragma` equivalent to control this option.
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

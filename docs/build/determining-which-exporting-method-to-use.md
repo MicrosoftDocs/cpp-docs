@@ -1,10 +1,10 @@
 ---
-title: "Determining Which Exporting Method to Use"
+title: "Determine Which Exporting Method to Use"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__declspec(dllexport) keyword [C++]", "exporting DLLs [C++], method comparison", "def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs"]
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
 ---
-# Determining Which Exporting Method to Use
+# Determine Which Exporting Method to Use
 
 You can export functions in either of two ways—a .def file or the `__declspec(dllexport)` keyword. To help you decide which way is better for your DLL, consider these questions:
 

@@ -23,7 +23,7 @@ SourceLink is a language- and source-control agnostic system for providing sourc
 
 ### To set the /SOURCELINK linker option in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -35,5 +35,5 @@ SourceLink is a language- and source-control agnostic system for providing sourc
 
 ## See also
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

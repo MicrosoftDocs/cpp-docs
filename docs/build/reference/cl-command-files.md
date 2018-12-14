@@ -37,5 +37,5 @@ Note that the command line and the command-file commands are effectively combine
 
 ## See Also
 
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [MSVC Compiler Options](reference/compiler-options.md)

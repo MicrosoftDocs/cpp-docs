@@ -32,5 +32,5 @@ For more information, see [MSVC Compiler Options](compiler-options.md).
 
 ## See Also
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

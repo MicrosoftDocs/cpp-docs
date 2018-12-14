@@ -1,11 +1,11 @@
 ---
-title: "&lt;c&gt; (Visual C++)"
+title: "&lt;c&gt; (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["<c>"]
 helpviewer_keywords: ["<c> C++ XML tag", "c C++ XML tag"]
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
 ---
-# &lt;c&gt; (Visual C++)
+# &lt;c&gt;
 
 The \<c> tag indicates that text within a description should be marked as code. Use [\<code>](code-visual-cpp.md) to indicate multiple lines as code.
 

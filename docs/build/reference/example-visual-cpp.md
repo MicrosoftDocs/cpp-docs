@@ -1,11 +1,11 @@
 ---
-title: "&lt;example&gt; (Visual C++)"
+title: "&lt;example&gt;  (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["<example>", "example"]
 helpviewer_keywords: ["<example> C++ XML tag", "example C++ XML tag"]
 ms.assetid: c821aaa7-7ea7-4bee-9922-6705ad57f877
 ---
-# &lt;example&gt; (Visual C++)
+# &lt;example&gt;
 
 The \<example> tag lets you specify an example of how to use a method or other library member. Commonly, this would also involve use of the [\<code>](code-visual-cpp.md) tag.
 

@@ -26,7 +26,7 @@ The file should contain one MIDL command-line option per line.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Embedded IDL** property page.
 
@@ -38,7 +38,7 @@ The file should contain one MIDL command-line option per line.
 
 ## See Also
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>
 [/IDLOUT (Name MIDL Output Files)](idlout-name-midl-output-files.md)<br/>
 [/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>

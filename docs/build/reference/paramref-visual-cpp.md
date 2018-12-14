@@ -1,11 +1,11 @@
 ---
-title: "&lt;paramref&gt; (Visual C++)"
+title: "&lt;paramref&gt; (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["paramref", "<paramref>"]
 helpviewer_keywords: ["paramref C++ XML tag", "<paramref> C++ XML tag"]
 ms.assetid: c5730dc2-7159-421f-b2d5-bb971e307122
 ---
-# &lt;paramref&gt; (Visual C++)
+# &lt;paramref&gt;
 
 The \<paramref> tag gives you a way to indicate that a word is a parameter. The .xml file can be processed to format this parameter in some distinct way.
 

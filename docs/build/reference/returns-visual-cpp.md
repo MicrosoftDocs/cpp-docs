@@ -1,11 +1,11 @@
 ---
-title: "&lt;returns&gt; (Visual C++)"
+title: "&lt;returns&gt; (C++ Documentation Comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["returns", "<returns>"]
 helpviewer_keywords: ["returns C++ XML tag", "<returns> C++ XML tag"]
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
 ---
-# &lt;returns&gt; (Visual C++)
+# &lt;returns&gt;
 
 The \<returns> tag should be used in the comment for a method declaration to describe the return value.
 

@@ -53,7 +53,7 @@ For DLLs to be called by programs written in Visual Basic, the alias technique s
 
 - [Exporting C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Determining which exporting method to use](determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
 - [Decorated names](reference/decorated-names.md)
 

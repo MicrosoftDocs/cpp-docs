@@ -44,7 +44,7 @@ If you've installed the [Build Tools for Visual Studio 2017](https://go.microsof
 
 An even faster way to open a developer command prompt window is to enter *developer command prompt* in the desktop search box, then choose the desired result.
 
-## <a name="developer_command_prompt_file_locations"></a>Developer command file locations
+## <a name="developer_command_file_locations"></a> Developer command file locations
 
 If you prefer to set the build architecture environment in an existing command prompt window, you can use one of the command files (batch files) created by the installer to set the required environment. We only recommend you do this in a new command prompt window, and we do not recommend you later switch environments in the same command window. The location of these files depends on the version of Visual Studio you have installed, and on location and naming choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit computer is in \Program Files (x86)\Microsoft Visual Studio\2017\\*edition*, where *edition* may be Community, Professional, Enterprise, BuildTools, or another name you supplied. For Visual Studio 2015, the typical installation location is in \Program Files (x86)\Microsoft Visual Studio 14.0.
 

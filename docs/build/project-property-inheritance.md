@@ -61,7 +61,7 @@ To get a better idea of build configurations, open **Property Manager** by choos
 
 If you go to the General pane in the Property Pages and set the Character Set property to "Not Set" instead of "Use Unicode" and click **OK**,  Property Manager will show no **Unicode Support** property sheet for the current configuration, but it will still be there for other configurations.
 
-For more information about Property Manager and property sheets, see [Creating reusable property configurations](create-reusable-property-configurations.md).
+For more information about Property Manager and property sheets, see [Share or resuse Visual Studio C++ project settings](create-reusable-property-configurations.md).
 
 > [!TIP]
 > The .user file is a legacy feature and we recommend that you delete it in order to keep properties correctly grouped according to configuration/platform.

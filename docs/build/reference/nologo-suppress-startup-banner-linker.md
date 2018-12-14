@@ -29,5 +29,5 @@ By default, this information is sent by the linker to the Output window. On the 
 
 ## See Also
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

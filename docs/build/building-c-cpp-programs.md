@@ -35,7 +35,7 @@ Note that here the compiler (cl.exe) automatically invokes the C++ preprocessor 
 
 Most real-world programs use some kind of *build system* to manage complexities of compiling multiple source files for multiple configurations (i.e. debug vs. release), multiple platforms (x86, x64, ARM, and so on), custom build steps, and even multiple executables that must be compiled in a certain order. You make settings in a build configuration file(s), and the build system accepts that file as input before it invoke the compiler. The set of source code files and build configuration files needed to build an executable file is called a *project*. 
 
-The following list shows various options for building C++ projects in Visual Studio:
+The following list shows various options for Visual Studio Projects - C++:
 
 - create a Visual Studio project by using the Visual Studio IDE and configure it by using property pages. Visual Studio projects produce programs that run on Windows. For an overview, see [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio) in the Visual Studio documentation.
 
@@ -74,7 +74,7 @@ How to create, debug and deploy C/C++ DLLs (shared libraries) in Visual Studio.
 [Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.
 
-[Configure Visual C++ for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)
+[Configure C++ projects for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)
 How to target 64-bit x64 hardware with the MSVC build tools.
 
 [Configure Visual C++ for ARM processors](configuring-programs-for-arm-processors-visual-cpp.md)

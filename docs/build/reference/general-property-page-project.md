@@ -144,4 +144,4 @@ The properties in the Project Default section represent default properties that 
 
 ## See also
 
-[Property Pages](property-pages-visual-cpp.md)
+[C++ project property page reference](property-pages-visual-cpp.md)

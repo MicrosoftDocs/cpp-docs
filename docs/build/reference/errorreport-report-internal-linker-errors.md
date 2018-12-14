@@ -31,7 +31,7 @@ The option **/errorreport:send** automatically sends error information to Micros
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Open the **Configuration Properties** > **Linker** > **Advanced** property page.
 
@@ -44,5 +44,5 @@ The option **/errorreport:send** automatically sends error information to Micros
 ## See also
 
 [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md)<br/>
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

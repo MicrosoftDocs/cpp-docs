@@ -33,5 +33,5 @@ LINK issues error and warning messages in the form LNK*nnnn*. This error prefix 
 
 ## See Also
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

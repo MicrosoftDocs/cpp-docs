@@ -9,7 +9,7 @@ ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 
 When you create a new project in Visual Studio, a *precompiled header file* named "pch.h" is added to the project. (In earlier versions of Visual Studio, the file was called "stdafx.h".) The purpose of the file is to speed up the build process. Any stable header files, for example Standard Library headers such as `<vector>`, should be included here. The precompiled header is compiled only when it, or any files it includes, are modified. If you only make changes in your project source code, the build will skip compilation for the precompiled header. 
 
-The compiler options for precompiled headers are [/Y](y-precompiled-headers.md). In the project propery pages, the options are located under **Configuration Properties > C/C++ > Precompiled Headers**. You can choose to not use precompiled headers, and you can specify the header file name and the name and path of the output file. 
+The compiler options for precompiled headers are [/Y](reference/y-precompiled-headers.md). In the project propery pages, the options are located under **Configuration Properties > C/C++ > Precompiled Headers**. You can choose to not use precompiled headers, and you can specify the header file name and the name and path of the output file. 
 
 ## Custom precompiled code
 
@@ -38,7 +38,7 @@ Precompiling requires planning, but it offers significantly faster compilations 
 
 Precompile code when you know that your source files use common sets of header files but don't include them in the same order, or when you want to include source code in your precompilation.
 
-The precompiled-header options are [/Yc (Create Precompiled Header File)](yc-create-precompiled-header-file.md) and [/Yu (Use Precompiled Header File)](yu-use-precompiled-header-file.md). Use **/Yc** to create a precompiled header. When used with the optional [hdrstop](../../preprocessor/hdrstop.md) pragma, **/Yc** lets you precompile both header files and source code. Select **/Yu** to use an existing precompiled header in the existing compilation. You can also use **/Fp** with the **/Yc** and **/Yu** options to provide an alternative name for the precompiled header.
+The precompiled-header options are [/Yc (Create Precompiled Header File)](reference/yc-create-precompiled-header-file.md) and [/Yu (Use Precompiled Header File)](reference/yu-use-precompiled-header-file.md). Use **/Yc** to create a precompiled header. When used with the optional [hdrstop](../preprocessor/hdrstop.md) pragma, **/Yc** lets you precompile both header files and source code. Select **/Yu** to use an existing precompiled header in the existing compilation. You can also use **/Fp** with the **/Yc** and **/Yu** options to provide an alternative name for the precompiled header.
 
 The compiler option reference topics for **/Yu** and **/Yc** discuss how to access this functionality in the development environment.
 
@@ -48,7 +48,7 @@ Because PCH files contain information about the machine environment as well as m
 
 ## Consistency Rules for Per-File Use of Precompiled Headers
 
-The [/Yu](yu-use-precompiled-header-file.md) compiler option lets you specify which PCH file to use.
+The [/Yu](reference/yu-use-precompiled-header-file.md) compiler option lets you specify which PCH file to use.
 
 When you use a PCH file, the compiler assumes the same compilation environment — one that uses consistent compiler options, pragmas, and so on — that was in effect when you created the PCH file, unless you specify otherwise. If the compiler detects an inconsistency, it issues a warning and identifies the inconsistency where possible. Such warnings do not necessarily indicate a problem with the PCH file; they simply warn you of possible conflicts. Consistency requirements for PCH files are described in the following sections.
 
@@ -120,7 +120,7 @@ This table lists compiler options that might trigger an inconsistency warning wh
 
 ## Using Precompiled Headers in a Project
 
-Previous sections present an overview of precompiled headers: /Yc and /Yu, the /Fp option, and the [hdrstop](../../preprocessor/hdrstop.md) pragma. This section describes a method for using the manual precompiled-header options in a project; it ends with an example makefile and the code that it manages.
+Previous sections present an overview of precompiled headers: /Yc and /Yu, the /Fp option, and the [hdrstop](../preprocessor/hdrstop.md) pragma. This section describes a method for using the manual precompiled-header options in a project; it ends with an example makefile and the code that it manages.
 
 For another approach to using the manual precompiled-header options in a project, study one of the makefiles located in the MFC\SRC directory that is created during the default setup of Visual C++. These makefiles take a similar approach to the one presented in this section but make greater use of Microsoft Program Maintenance Utility (NMAKE) macros, and offer greater control of the build process.
 
@@ -139,7 +139,7 @@ Beginning at the top of the diagram, both STABLEHDRS and BOUNDRY are NMAKE macro
 
 only if the precompiled header file (STABLE.pch) does not exist or if you make changes to the files listed in the two macros. In either case, the precompiled header file will contain code only from the files listed in the STABLEHDRS macro. List the last file you want precompiled in the BOUNDRY macro.
 
-The files you list in these macros can be either header files or C or C++ source files. (A single PCH file cannot be used with both C and C++ modules.) Note that you can use the **hdrstop** macro to stop precompilation at some point within the BOUNDRY file. See [hdrstop](../../preprocessor/hdrstop.md) for more information.
+The files you list in these macros can be either header files or C or C++ source files. (A single PCH file cannot be used with both C and C++ modules.) Note that you can use the **hdrstop** macro to stop precompilation at some point within the BOUNDRY file. See [hdrstop](../preprocessor/hdrstop.md) for more information.
 
 Continuing down the diagram, APPLIB.obj represents the support code used in your final application. It is created from APPLIB.cpp, the files listed in the UNSTABLEHDRS macro, and precompiled code from the precompiled header.
 
@@ -210,7 +210,7 @@ NMAKE
 NMAKE DEBUG=0
 ```
 
-For more information on makefiles, see [NMAKE Reference](nmake-reference.md). Also see [MSVC Compiler Options](compiler-options.md) and the [MSVC Linker Options](linker-options.md).
+For more information on makefiles, see [NMAKE Reference](reference/nmake-reference.md). Also see [MSVC Compiler Options](reference/compiler-options.md) and the [MSVC Linker Options](reference/linker-options.md).
 
 ## Example Code for PCH
 
@@ -298,5 +298,5 @@ int main( void )
 
 ## See Also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[MSVC Compiler Options](compiler-options.md)
+[C/C++ Building Reference](reference/c-cpp-building-reference.md)<br/>
+[MSVC Compiler Options](reference/compiler-options.md)

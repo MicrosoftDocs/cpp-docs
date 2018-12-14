@@ -1,11 +1,11 @@
 ---
-title: "&lt;permission&gt; (Visual C++)"
+title: "&lt;permission&gt; (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["permission", "<permission>"]
 helpviewer_keywords: ["<permission> C++ XML tag", "permission C++ XML tag"]
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
 ---
-# &lt;permission&gt; (Visual C++)
+# &lt;permission&gt;
 
 The \<permission> tag lets you document the access of a member. <xref:System.Security.PermissionSet> lets you specify access to a member.
 

@@ -20,4 +20,4 @@ For more information on the manifest tool, see [Mt.exe](/windows/desktop/sbscs/m
 
 ## See Also
 
-[Property Pages](property-pages-visual-cpp.md)
+[C++ project property page reference](property-pages-visual-cpp.md)

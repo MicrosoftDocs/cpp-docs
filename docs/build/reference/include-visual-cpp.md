@@ -1,11 +1,11 @@
 ---
-title: "&lt;include&gt; (Visual C++)"
+title: "&lt;include&gt;  (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["include", "<include>"]
 helpviewer_keywords: ["include C++ XML tag", "<include> C++ XML tag"]
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
 ---
-# &lt;include&gt; (Visual C++)
+# &lt;include&gt;
 
 The \<include> tag lets you refer to comments in another file that describe the types and members in your source code. This is an alternative to placing documentation comments directly in your source code file.  For example, you can use \<include> to insert standard "boilerplate" comments that are used throughout your team or company.
 

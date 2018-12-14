@@ -6,7 +6,7 @@ ms.assetid: a4f05aed-2c0e-4e7d-b7a4-bc2f228112c5
 ---
 # HLSL Property Pages: Advanced
 
-To configure the following properties of the HLSL compiler (fxc.exe), use its **Advanced** property page. For information about how to access the **Advanced** property page in the HLSL folder, see [Set compiler and build properties](../working-with-project-properties.md).
+To configure the following properties of the HLSL compiler (fxc.exe), use its **Advanced** property page. For information about how to access the **Advanced** property page in the HLSL folder, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 ## UIElement List
 

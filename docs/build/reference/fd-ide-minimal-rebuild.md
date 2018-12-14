@@ -15,4 +15,4 @@ If you do not enable **/Gm** in the development environment, **/FD** will be use
 
 [Output-File (/F) Options](output-file-f-options.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

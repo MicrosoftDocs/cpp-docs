@@ -22,7 +22,7 @@ LINK ignores /NATVIS when a PDB file is not created by using a [/DEBUG](debug-ge
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Command Line** property page in the **Linker** folder.
 
@@ -35,5 +35,5 @@ LINK ignores /NATVIS when a PDB file is not created by using a [/DEBUG](debug-ge
 ## See Also
 
 [Create custom views of native objects in the Visual Studio debugger](/visualstudio/debugger/create-custom-views-of-native-objects)<br/>
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

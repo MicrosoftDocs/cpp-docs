@@ -36,4 +36,4 @@ You can combine multiple **/O** options into a single option statement. For exam
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

@@ -42,7 +42,7 @@ By default, the compiler defines the following Microsoft-specific symbols.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -57,7 +57,7 @@ By default, the compiler defines the following Microsoft-specific symbols.
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [/J (Default char Type Is unsigned)](j-default-char-type-is-unsigned.md)<br/>
 [/GR (Enable Run-Time Type Information)](gr-enable-run-time-type-information.md)<br/>
 [/EH (Exception Handling Model)](eh-exception-handling-model.md)<br/>

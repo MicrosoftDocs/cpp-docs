@@ -21,7 +21,7 @@ By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICB
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
@@ -33,7 +33,7 @@ By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICB
 
 ## See also
 
-- [Setting Linker Options](linking.md)
+- [MSVC linker reference](linking.md)
 - [MSVC Linker Options](linker-options.md)
 - [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)
 - [Windows ISV Software Security Defenses](https://msdn.microsoft.com/library/bb430720.aspx)

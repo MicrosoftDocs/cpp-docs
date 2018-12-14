@@ -30,7 +30,7 @@ If you specify the link option `/DEPENDENTLOADFLAG:0xA00` (the value of the comb
 
 ### To set the DEPENDENTLOADFLAG linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -42,7 +42,7 @@ If you specify the link option `/DEPENDENTLOADFLAG:0xA00` (the value of the comb
 
 ## See also
 
-- [Setting Linker Options](linking.md)
+- [MSVC linker reference](linking.md)
 - [MSVC Linker Options](linker-options.md)
 - [How to link implicitly to a DLL](../linking-an-executable-to-a-dll.md#linking-implicitly)
 - [Determine which linking method to use](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)

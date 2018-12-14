@@ -28,7 +28,7 @@ For more information about Data Execution Prevention, see these articles:
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Choose the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -40,5 +40,5 @@ For more information about Data Execution Prevention, see these articles:
 
 ## See also
 
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

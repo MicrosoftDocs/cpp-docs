@@ -1,5 +1,5 @@
 ---
-title: "## MSBuild on the Command Line - C++"
+title: "MSBuild on the Command Line - C++"
 ms.date: "12/12/2018"
 f1_keywords: ["MSBuild"]
 helpviewer_keywords: ["MSBuild"]

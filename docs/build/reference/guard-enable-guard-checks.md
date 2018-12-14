@@ -23,7 +23,7 @@ The /GUARD:CF option must be specified to both the compiler and linker to create
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand **Configuration Properties**, **Linker**, **Command Line**.
 
@@ -32,5 +32,5 @@ The /GUARD:CF option must be specified to both the compiler and linker to create
 ## See Also
 
 [/guard (Enable Control Flow Guard)](guard-enable-control-flow-guard.md)<br/>
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

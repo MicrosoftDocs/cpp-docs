@@ -12,7 +12,7 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
 
 1. Open the C++ project that you want to configure.
 
-1. Open the property pages for that project. For more information, see [Set compiler and build properties](working-with-project-properties.md).
+1. Open the property pages for that project. For more information, see [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md).
 
    > [!NOTE]
    > For .NET projects, make sure that the **Configuration Properties** node, or one of its child nodes, is selected in the **\<Projectname> Property Pages** dialog box; otherwise, the **Configuration Manager** button remains unavailable.
@@ -50,5 +50,5 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
 ## See Also
 
 [.NET Framework 64-bit Applications](/dotnet/framework/64-bit-apps)<br/>
-[Configure Visual C++ for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[Configure C++ projects for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Debug 64-Bit Applications](/visualstudio/debugger/debug-64-bit-applications)

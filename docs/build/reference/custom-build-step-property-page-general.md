@@ -39,7 +39,7 @@ For the Linux version of this page, see [Custom Build Step Properties (Linux C++
 
 ### To specify a custom build step
 
-1. On the menu bar, choose **Project**, **Properties**. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
+1. On the menu bar, choose **Project**, **Properties**. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. In the **Property Pages** dialog box, navigate to the **Configuration Properties**, **Custom Build Step**, **General** page.
 
@@ -47,4 +47,4 @@ For the Linux version of this page, see [Custom Build Step Properties (Linux C++
 
 ## See Also
 
-[Property Pages](property-pages-visual-cpp.md)
+[C++ project property page reference](property-pages-visual-cpp.md)

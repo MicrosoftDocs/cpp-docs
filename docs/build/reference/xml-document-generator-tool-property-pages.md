@@ -31,5 +31,5 @@ The XML Document Generator Tool property page exposes the functionality of xdcma
 
 ## See Also
 
-[Property Pages](property-pages-visual-cpp.md)<br>
-[Property Pages](property-pages-visual-cpp.md)
+[C++ project property page reference](property-pages-visual-cpp.md)<br>
+[C++ project property page reference](property-pages-visual-cpp.md)

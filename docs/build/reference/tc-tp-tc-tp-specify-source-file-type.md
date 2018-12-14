@@ -30,7 +30,7 @@ When either the **TC** or **Tc** option is specified, any specification of the [
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
 
@@ -53,4 +53,4 @@ This CL command line specifies that TEST1.c, TEST2.cxx, TEST3.huh, and TEST4.o a
 ## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

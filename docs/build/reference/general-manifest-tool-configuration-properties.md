@@ -1,5 +1,5 @@
 ---
-title: "Manifest Tool Configuration Properties (Visual C++)"
+title: "Manifest Tool Configuration Properties (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCManifestTool.MergeRulesFile", "VC.Project.VCManifestTool.UseUnicodeResponseFiles", "VC.Project.VCManifestTool.SuppressStartupBanner", "VC.Project.VCManifestTool.UseFAT32Workaround", "VC.Project.VCManifestTool.VerboseOutput", "VC.Project.VCManifestTool.AssemblyIdentity"]
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
@@ -32,4 +32,4 @@ To access this property page dialog box, open the property pages for your projec
 
 [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br>
 [Manifest Tool Property Pages](manifest-tool-property-pages.md)<br>
-[Set compiler and build properties](../working-with-project-properties.md)
+[Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md)

@@ -18,4 +18,4 @@ For information on how to programmatically access MIDL options for C++ projects,
 
 ## See Also
 
-[Property Pages](property-pages-visual-cpp.md)
+[C++ project property page reference](property-pages-visual-cpp.md)

@@ -29,7 +29,7 @@ By default, the output file name has the form *binaryname*.winmd. To specify a d
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Windows Metadata** property page.
 
@@ -43,5 +43,5 @@ By default, the output file name has the form *binaryname*.winmd. To specify a d
 [/WINMDKEYFILE (Specify winmd Key File)](winmdkeyfile-specify-winmd-key-file.md)<br/>
 [/WINMDKEYCONTAINER (Specify Key Container)](winmdkeycontainer-specify-key-container.md)<br/>
 [/WINMDDELAYSIGN (Partially Sign a winmd)](winmddelaysign-partially-sign-a-winmd.md)<br/>
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

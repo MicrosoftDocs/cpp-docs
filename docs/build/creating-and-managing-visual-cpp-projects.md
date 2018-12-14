@@ -33,7 +33,7 @@ To add third-party libraries, use the [vcpkg](../vcpkg.md) package manager. Run 
 
 ## Set compiler options and other build properties
 
-To configure build settings for a project, right-click on the project in **Solution Explorer** and choose **Properties**. For more information, see [Set compiler and build properties](working-with-project-properties.md).
+To configure build settings for a project, right-click on the project in **Solution Explorer** and choose **Properties**. For more information, see [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md).
 
 ## Compile and run
 
@@ -47,7 +47,7 @@ In the Error List, you can press **F1** on a highlighted error to go to its docu
 
 ## In This Section
 
-[Set compiler and build properties](working-with-project-properties.md)<br/>
+[Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md)<br/>
 How to use Property Pages and Property Sheets to specify your project settings.
 
 [Reference libraries and components at build time](adding-references-in-visual-cpp-projects.md)<br/>

@@ -33,13 +33,13 @@ For more information on precompiled headers, see:
 
 - [/Y (Precompiled Headers)](y-precompiled-headers.md)
 
-- [Creating Precompiled Header Files](../creating-precompiled-header-files.md)
+- [Precompiled Header Files](../creating-precompiled-header-files.md)
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Select a .cpp file. The .cpp file must #include the .h file that contains precompiled header information. The project's **/Yc** setting can be overridden at the file level.
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Open the **Configuration Properties**, **C/C++**, **Precompiled Headers** property page.
 
@@ -69,5 +69,5 @@ When this code is compiled with the command `CL /YcMYAPP.H PROG.CPP`, the compil
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
-[Creating Precompiled Header Files](../creating-precompiled-header-files.md)
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[Precompiled Header Files](../creating-precompiled-header-files.md)

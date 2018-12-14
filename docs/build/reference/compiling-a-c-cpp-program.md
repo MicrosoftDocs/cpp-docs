@@ -31,11 +31,11 @@ Compiler options are processed "left to right," and when a conflict is detected,
 
 - [MSVC Compiler Options](compiler-options.md)
 
-- [Creating Precompiled Header Files](../creating-precompiled-header-files.md)
+- [Precompiled Header Files](../creating-precompiled-header-files.md)
 
 - [CL Invokes the Linker](cl-invokes-the-linker.md)
 
-For information on choosing the compiler host and target architecture, see [Configure Visual C++ for 64-bit, x64 targets](../configuring-programs-for-64-bit-visual-cpp.md).
+For information on choosing the compiler host and target architecture, see [Configure C++ projects for 64-bit, x64 targets](../configuring-programs-for-64-bit-visual-cpp.md).
 
 ## See Also
 

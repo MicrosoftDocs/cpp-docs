@@ -78,7 +78,7 @@ The __MSVC_RUNTIME_CHECKS preprocessor directive will be defined when you use an
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -93,5 +93,5 @@ The __MSVC_RUNTIME_CHECKS preprocessor directive will be defined when you use an
 ## See Also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks)

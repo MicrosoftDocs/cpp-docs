@@ -1,10 +1,10 @@
 ---
-title: "CMake Projects in Visual C++"
+title: "CMake Projects in Visual Studio"
 ms.date: "10/18/2018"
-helpviewer_keywords: ["CMake in Visual C++"]
+helpviewer_keywords: ["CMake in Visual Studio"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
-# CMake projects in Visual C++
+# CMake projects in Visual Studio
 
 This article assumes that you are familiar with CMake, a cross-platform, open-source tool for defining build processes that run on multiple platforms.
 

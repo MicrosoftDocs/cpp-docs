@@ -1,11 +1,11 @@
 ---
-title: "&lt;code&gt; (Visual C++)"
+title: "&lt;code&gt;  (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["code", "<code>"]
 helpviewer_keywords: ["<code> C++ XML tag", "code C++ XML tag"]
 ms.assetid: 687db3f8-d435-4a90-b781-8da503fa39bc
 ---
-# &lt;code&gt; (Visual C++)
+# &lt;code&gt;
 
 The \<code> tag gives you a way to indicate one or more lines as code.
 

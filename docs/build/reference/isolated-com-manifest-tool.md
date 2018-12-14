@@ -1,5 +1,5 @@
 ---
-title: "Manifest Tool Isolated COM Properties (Visual C++)"
+title: "Manifest Tool Isolated COM Properties"
 ms.date: "12/10/2018"
 f1_keywords: ["VC.Project.VCManifestTool.RegistrarScriptFile", "VC.Project.VCManifestTool.ComponentFileName", "VC.Project.VCManifestTool.TypeLibraryFile", "VC.Project.VCManifestTool.ReplacementsFile"]
 ms.assetid: 457582b8-cfde-49c0-92e3-3a6b9e8c08eb
@@ -37,4 +37,4 @@ To access this property page dialog box, open the property pages for your projec
 [Isolated Applications](/windows/desktop/SbsCs/isolated-applications)<br>
 [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br>
 [Manifest Tool Property Pages](manifest-tool-property-pages.md)<br>
-[Set compiler and build properties](../working-with-project-properties.md)
+[Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md)

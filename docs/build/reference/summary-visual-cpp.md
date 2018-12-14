@@ -1,11 +1,11 @@
 ---
-title: "&lt;summary&gt; (Visual C++)"
+title: "&lt;summary&gt; (C++ Documentation Comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["<summary>", "summary"]
 helpviewer_keywords: ["<summary> C++ XML tag", "summary C++ XML tag"]
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
 ---
-# &lt;summary&gt; (Visual C++)
+# &lt;summary&gt;
 
 The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](remarks-visual-cpp.md) to add supplemental information to a type description.
 

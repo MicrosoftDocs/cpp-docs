@@ -69,7 +69,7 @@ Has the syntax `%(name)`. For a file, an item macro applies only to that file—
 
 You can create *user-defined macros* to use as variables in project builds. For example, you could create a user-defined macro that provides a value to a custom build step or a custom build tool. A user-defined macro is a name/value pair. In a project file, use the **$(**<em>name</em>**)** notation to access the value.
 
-A user-defined macro is stored in a property sheet. If your project does not already contain a property sheet, you can create one by following the steps under [Creating reusable property configurations](#bkmkPropertySheets).
+A user-defined macro is stored in a property sheet. If your project does not already contain a property sheet, you can create one by following the steps under [Share or resuse Visual Studio C++ project settings](#bkmkPropertySheets).
 
 #### To create a user-defined macro
 
@@ -129,6 +129,6 @@ How to create temporary build settings without having to modify a project file.
 
 ## See also
 
-[Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual Studio Projects - C++](creating-and-managing-visual-cpp-projects.md)<br/>
 [.vcxproj and .props file structure](reference/vcxproj-file-structure.md)<br/>
 [Property page XML files](reference/property-page-xml-files.md)<br/>

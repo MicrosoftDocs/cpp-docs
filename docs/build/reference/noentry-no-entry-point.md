@@ -19,7 +19,7 @@ Use this option to prevent LINK from linking a reference to `_main` into the DLL
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Linker** folder.
 
@@ -34,5 +34,5 @@ Use this option to prevent LINK from linking a reference to `_main` into the DLL
 ## See Also
 
 [Creating a Resource-Only DLL](../creating-a-resource-only-dll.md)<br/>
-[Setting Linker Options](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

@@ -27,8 +27,8 @@ The **Web References** property page contains the following properties:
 
    Specifies the additional DLLs referenced by the proxy DLL.
 
-For information on how to access the **Web Reference** property page, see [Set compiler and build properties](../working-with-project-properties.md).
+For information on how to access the **Web Reference** property page, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 ## See Also
 
-[Property Pages](property-pages-visual-cpp.md)
+[C++ project property page reference](property-pages-visual-cpp.md)

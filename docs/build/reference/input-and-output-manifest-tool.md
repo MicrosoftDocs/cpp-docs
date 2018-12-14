@@ -1,5 +1,5 @@
 ---
-title: "Manifest Tool Input and Output Properties (Visual C++)"
+title: "Manifest Tool C++ Input and Output Properties"
 ms.date: "08/27/2018"
 f1_keywords: ["VC.Project.VCManifestTool.OutputManifestFile", "VC.Project.VCManifestTool.InputResourceManifests", "VC.Project.VCManifestTool.EmbedManifest", "VC.Project.VCManifestTool.AdditionalManifestFiles", "VC.Project.VCManifestTool.DependencyInformationFile", "VC.Project.VCManifestTool.OutputResourceManifest", "VC.Project.VCManifestTool.GenerateCatalogFiles"]
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
@@ -52,4 +52,4 @@ Specifies whether the application is DPI-aware. By default, the setting is **Yes
 
 [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br/>
 [Manifest Tool Property Pages](manifest-tool-property-pages.md)<br/>
-[Set compiler and build properties](../working-with-project-properties.md)<br/>
+[Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md)<br/>

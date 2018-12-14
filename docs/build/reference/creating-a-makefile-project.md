@@ -31,7 +31,7 @@ The output file that you specify in the project has no effect on the name that t
 
 1. Click **Finish** to close the wizard and open the newly created project in **Solution Explorer**.
 
-You can view and edit the project's properties in its property page. See [Set compiler and build properties](../working-with-project-properties.md) for information about displaying the property page.
+You can view and edit the project's properties in its property page. See [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md) for information about displaying the property page.
 
 ## Makefile project wizard
 
@@ -49,7 +49,7 @@ After you create a makefile project, you can view and edit each of the following
 
 IntelliSense fails in makefile projects when certain project settings or compiler options are set up incorrectly. Follow these steps to configure makefile projects so that IntelliSense works as expected:
 
-1. Open the **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
+1. Open the **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 
