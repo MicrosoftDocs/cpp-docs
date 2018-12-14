@@ -13,7 +13,7 @@ The identifier was previously used as a `typedef`. This causes a warning under A
 
 ## Example
 
-```
+```cpp
 // C4224.cpp
 // compile with: /Za /W1 /LD
 typedef int I;

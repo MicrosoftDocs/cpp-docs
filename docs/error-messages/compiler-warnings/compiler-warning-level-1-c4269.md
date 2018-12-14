@@ -13,7 +13,7 @@ A **const** automatic instance of a non-trivial class is initialized with a comp
 
 ## Example
 
-```
+```cpp
 // C4269.cpp
 // compile with: /c /LD /W1
 class X {

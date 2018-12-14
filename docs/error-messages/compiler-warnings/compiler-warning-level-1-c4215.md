@@ -13,7 +13,7 @@ The default Microsoft extensions (/Ze) treat **long float** as **double**. ANSI 
 
 The following sample generates C4215:
 
-```
+```cpp
 // C4215.cpp
 // compile with: /W1 /LD
 long float a;   // C4215

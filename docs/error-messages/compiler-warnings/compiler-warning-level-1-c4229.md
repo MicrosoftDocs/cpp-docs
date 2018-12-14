@@ -13,7 +13,7 @@ Using a Microsoft modifier such as `__cdecl` on a data declaration is an outdate
 
 ## Example
 
-```
+```cpp
 // C4229.cpp
 // compile with: /W1 /LD
 int __cdecl counter;   // C4229 cdecl ignored
