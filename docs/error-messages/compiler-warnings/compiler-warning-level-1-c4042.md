@@ -21,7 +21,7 @@ This warning can be caused by specifying a storage class other than **register**
 
 The following sample generates C4042
 
-```
+```cpp
 // C4042.cpp
 // compile with: /W1 /LD
 int func2( __declspec( thread ) int tls_i )    // C4042

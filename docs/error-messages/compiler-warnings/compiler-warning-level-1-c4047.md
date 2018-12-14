@@ -15,7 +15,7 @@ A pointer can point to a variable (one level of indirection), to another pointer
 
 The following sample generates C4047:
 
-```
+```c
 // C4047.c
 // compile with: /W1
 
@@ -35,7 +35,7 @@ int main() {
 
 The following sample generates C4047:
 
-```
+```c
 // C4047b.c
 // compile with: /W1
 #include <stdio.h>

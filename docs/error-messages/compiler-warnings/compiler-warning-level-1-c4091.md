@@ -15,7 +15,7 @@ The compiler detected a situation where the user probably intended a variable to
 
 A `__declspec` attribute at the beginning of a user-defined type declaration applies to the variable of that type. C4091 indicates no variable is declared. The following sample generates C4091.
 
-```
+```cpp
 // C4091.cpp
 // compile with: /W1 /c
 __declspec(dllimport) class X {}; // C4091
@@ -32,7 +32,7 @@ class __declspec(dllimport) X3 {};
 
 If an identifier is a typedef, it cannot also be a variable name. The following sample generates C4091.
 
-```
+```cpp
 // C4091_b.cpp
 // compile with: /c /W1 /WX
 #define LIST 4
