@@ -41,4 +41,4 @@ This option the default base name for a .mapfile or import library. For details,
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

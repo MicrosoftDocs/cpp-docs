@@ -16,7 +16,7 @@ CL automatically invokes the linker after compiling unless the /c option is used
 |/Zg|Generate function prototypes|
 |/Zs|Check syntax|
 
-For further details about linking, see [Linker Options](reference/linker-options.md).
+For further details about linking, see [MSVC Linker Options](reference/linker-options.md).
 
 ## Example
 
@@ -46,5 +46,5 @@ CL passes the names of the .obj files, along with the name MYGRAPH.lib, to the l
 
 ## See Also
 
-[Compiler Options](reference/compiler-options.md)<br/>
+[MSVC Compiler Options](reference/compiler-options.md)<br/>
 [Setting Compiler Options](compiler-command-line-syntax.md)

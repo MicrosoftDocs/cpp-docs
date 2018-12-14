@@ -39,4 +39,4 @@ When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](
 ## See also
 
 - [Setting Linker Options](linking.md)
-- [Linker Options](linker-options.md)
+- [MSVC Linker Options](linker-options.md)

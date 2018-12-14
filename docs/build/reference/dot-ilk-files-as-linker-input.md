@@ -11,4 +11,4 @@ When linking incrementally, LINK updates the .ilk status file that it created du
 ## See Also
 
 [LINK Input Files](link-input-files.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

@@ -33,4 +33,4 @@ The /GUARD:CF option must be specified to both the compiler and linker to create
 
 [/guard (Enable Control Flow Guard)](guard-enable-control-flow-guard.md)<br/>
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

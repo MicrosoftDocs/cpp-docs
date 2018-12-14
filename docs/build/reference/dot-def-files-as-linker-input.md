@@ -11,4 +11,4 @@ See [Module-definition (.def) files](module-definition-dot-def-files.md) for mor
 ## See Also
 
 [LINK Input Files](link-input-files.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

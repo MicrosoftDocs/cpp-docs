@@ -43,4 +43,4 @@ LINK ignores /IMPLIB when an import library is not being created. If no exports 
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

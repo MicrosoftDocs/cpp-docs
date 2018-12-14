@@ -19,9 +19,9 @@ The following compiler options affect the generation and use of precompiled head
 
 - [/Yu (Use Precompiled Header File)](yu-use-precompiled-header-file.md)
 
-For details on working with precompiled headers, see [Creating Precompiled Header Files](creating-precompiled-header-files.md).
+For details on working with precompiled headers, see [Creating Precompiled Header Files](../creating-precompiled-header-files.md).
 
 ## See Also
 
-[Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
 [Compiler Command Line Syntax](compiler-command-line-syntax.md)

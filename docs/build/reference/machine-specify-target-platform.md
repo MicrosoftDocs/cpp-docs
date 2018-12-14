@@ -34,4 +34,4 @@ Usually, you don't have to specify the /MACHINE option. LINK infers the machine 
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

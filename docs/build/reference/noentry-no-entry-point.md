@@ -35,4 +35,4 @@ Use this option to prevent LINK from linking a reference to `_main` into the DLL
 
 [Creating a Resource-Only DLL](../creating-a-resource-only-dll.md)<br/>
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

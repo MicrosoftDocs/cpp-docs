@@ -43,7 +43,7 @@ For more information about setting properties for a Debug build, see:
 
 ## C++ compiler and linker options
 
-C++ compiler and linker options are located under the **C/C++** and **Linker** nodes in the left pane under **Configuration Properties**. These translate directly to command-line options that will be passed to the compiler. To read documentation about a specific option, select the option in the center pane and press **F1**. Or, you can browse documentation for all the options at [Compiler Options](reference/compiler-options.md) and [Linker Options](reference/linker-options.md). 
+C++ compiler and linker options are located under the **C/C++** and **Linker** nodes in the left pane under **Configuration Properties**. These translate directly to command-line options that will be passed to the compiler. To read documentation about a specific option, select the option in the center pane and press **F1**. Or, you can browse documentation for all the options at [MSVC Compiler Options](reference/compiler-options.md) and [MSVC Linker Options](reference/linker-options.md). 
 
 The **Property Pages** dialog box shows only the property pages that are relevant to the current project. For example, if the project does not have an .idl file, the MIDL property page is not displayed. For more information about the setting on each property pages, see [Property Pages (C++)](reference/property-pages-visual-cpp.md). 
 

@@ -41,4 +41,4 @@ For more information, see [Profile Guided Optimization](../profile-guided-optimi
 ## See also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>

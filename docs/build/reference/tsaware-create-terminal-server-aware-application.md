@@ -44,6 +44,6 @@ If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](headers.md) will 
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
 [Storing User-Specific Information](/windows/desktop/TermServ/storing-user-specific-information)<br/>
 [Legacy Applications in a Terminal Services Environment](https://msdn.microsoft.com/library/aa382957.aspx)

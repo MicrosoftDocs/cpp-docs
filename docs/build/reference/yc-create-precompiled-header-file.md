@@ -33,7 +33,7 @@ For more information on precompiled headers, see:
 
 - [/Y (Precompiled Headers)](y-precompiled-headers.md)
 
-- [Creating Precompiled Header Files](creating-precompiled-header-files.md)
+- [Creating Precompiled Header Files](../creating-precompiled-header-files.md)
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -68,6 +68,6 @@ When this code is compiled with the command `CL /YcMYAPP.H PROG.CPP`, the compil
 
 ## See Also
 
-[Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
 [Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
-[Creating Precompiled Header Files](creating-precompiled-header-files.md)
+[Creating Precompiled Header Files](../creating-precompiled-header-files.md)

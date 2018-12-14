@@ -18,6 +18,7 @@
 ### [Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard](specify-release-configuration.md)
 # [CMake projects](cmake-tools-for-visual-cpp.md)
 # [Open Folder projects](non-msbuild-projects.md)
+# [Precompiled header files](creating-precompiled-header-files.md)
 # [C++ release builds](release-builds.md)
 ## [How to: Create a Release Build](how-to-create-a-release-build.md)
 ## [Common Problems When Creating a Release Build](common-problems-when-creating-a-release-build.md)

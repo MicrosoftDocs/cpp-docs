@@ -43,4 +43,4 @@ For more information, see [.pdb Files as Linker Input](dot-pdb-files-as-linker-i
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

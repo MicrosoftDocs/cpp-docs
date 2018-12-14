@@ -39,4 +39,4 @@ The following words are reserved by the linker. These names can be used as argum
 ## See also
 
 - [Setting Linker Options](linking.md)
-- [Linker Options](linker-options.md)
+- [MSVC Linker Options](linker-options.md)

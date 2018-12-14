@@ -50,4 +50,4 @@ If you specify /MANIFEST, the name of the manifest file is the same as the name 
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

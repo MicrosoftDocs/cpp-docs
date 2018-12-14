@@ -38,4 +38,4 @@ Specify /FIXED:NO to generate a relocation section in the program.
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

@@ -65,6 +65,6 @@ The **/ZI** option forces both the [/Gy (Enable Function-Level Linking)](gy-enab
 
 ## See also
 
-[Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
 [Compiler Command Line Syntax](compiler-command-line-syntax.md)
 

@@ -38,4 +38,4 @@ For more information, see [Manifest Files Reference](/windows/desktop/SbsCs/mani
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

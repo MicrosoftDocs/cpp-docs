@@ -30,4 +30,4 @@ By default, this information is sent by the linker to the Output window. On the 
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

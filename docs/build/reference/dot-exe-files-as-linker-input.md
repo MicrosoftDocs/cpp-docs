@@ -11,4 +11,4 @@ The [MS-DOS Stub File Name](stub-ms-dos-stub-file-name.md) (/STUB) option specif
 ## See Also
 
 [LINK Input Files](link-input-files.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

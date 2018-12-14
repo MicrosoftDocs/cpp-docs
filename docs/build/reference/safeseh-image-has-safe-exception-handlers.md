@@ -103,4 +103,4 @@ const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

@@ -59,5 +59,5 @@ You must also specify **/LTCG** when you specify **/GENPROFILE** or **/FASTGENPR
 ## See also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
 [/LTCG (Link-time Code Generation)](ltcg-link-time-code-generation.md)<br/>

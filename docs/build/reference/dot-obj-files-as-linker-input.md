@@ -20,7 +20,7 @@ For more information about the compiler and linker, see [Unicode Support in the 
 ## See also
 
 [LINK Input Files](link-input-files.md)<br/>
-[Linker Options](linker-options.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
 [Support for Unicode](../../text/support-for-unicode.md)<br/>
 [Unicode Support in the Compiler and Linker](unicode-support-in-the-compiler-and-linker.md)<br/>
 [Unicode standard](http://www.unicode.org/)<br/>

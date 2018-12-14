@@ -42,4 +42,4 @@ The linker sends information about the progress of the linking session to the **
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

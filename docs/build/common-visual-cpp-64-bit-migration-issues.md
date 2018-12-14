@@ -26,7 +26,7 @@ The %x (hex `int` format) `printf` modifier will not work as expected on a 64-bi
 
 For more information, see:
 
-- [Compiler Options](reference/compiler-options.md)
+- [MSVC Compiler Options](reference/compiler-options.md)
 
 - [Migration Tips](/windows/desktop/WinProg64/migration-tips)
 

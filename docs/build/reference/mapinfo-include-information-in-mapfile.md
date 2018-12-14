@@ -32,4 +32,4 @@ The /MAPINFO option tells the linker to include the specified information in a m
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

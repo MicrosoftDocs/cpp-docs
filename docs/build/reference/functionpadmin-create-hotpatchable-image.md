@@ -39,4 +39,4 @@ When you compile and link an image with a single invocation of cl.exe, **/hotpat
 ## See also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

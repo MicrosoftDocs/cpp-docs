@@ -53,4 +53,4 @@ The [/MAPINFO](mapinfo-include-information-in-mapfile.md) option specifies addit
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

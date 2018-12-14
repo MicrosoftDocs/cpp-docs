@@ -54,4 +54,4 @@ It is not possible to create an .exe or .dll that contains debug information. De
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

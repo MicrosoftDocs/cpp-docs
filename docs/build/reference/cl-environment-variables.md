@@ -20,7 +20,7 @@ You can set the CL or \_CL\_ environment variable using the following syntax:
 > SET CL=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 > SET \_CL\_=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 
-For details on the arguments to the CL and \_CL\_ environment variables, see [Compiler Command-Line Syntax](compiler-command-line-syntax.md).
+For details on the arguments to the CL and \_CL\_ environment variables, see [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md).
 
 You can use these environment variables to define the files and options you use most often and use the command line to define specific files and options for specific purposes. The CL and \_CL\_ environment variables are limited to 1024 characters (the command-line input limit).
 
@@ -51,4 +51,4 @@ This has the same effect as the following command line:
 ## See Also
 
 [Setting Compiler Options](compiler-command-line-syntax.md)<br/>
-[Compiler Options](reference/compiler-options.md)
+[MSVC Compiler Options](reference/compiler-options.md)

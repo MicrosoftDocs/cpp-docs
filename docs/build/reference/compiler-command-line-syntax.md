@@ -1,5 +1,5 @@
 ---
-title: "Compiler Command-Line Syntax"
+title: "MSVC Compiler Command-Line Syntax"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["syntax, CL compiler command line", "cl.exe compiler, command-line syntax"]
 ms.assetid: acba2c1c-0803-4a3a-af25-63e849b930a2
@@ -20,7 +20,7 @@ The following table describes input to the CL command.
 |`file`|The name of one or more source files, .obj files, or libraries. CL compiles source files and passes the names of the .obj files and libraries to the linker. See [CL Filename Syntax](reference/cl-filename-syntax.md) for more information.|
 |*lib*|One or more library names. CL passes these names to the linker.|
 |*command-file*|A file that contains multiple options and filenames. See [CL Command Files](reference/cl-command-files.md) for more information.|
-|*link-opt*|One or more [linker options](reference/linker-options.md). CL passes these options to the linker.|
+|*link-opt*|One or more [MSVC Linker Options](reference/linker-options.md). CL passes these options to the linker.|
 
 You can specify any number of options, filenames, and library names, as long as the number of characters on the command line does not exceed 1024, the limit dictated by the operating system.
 
@@ -31,4 +31,4 @@ For information about the return value of cl.exe, see [Return Value of cl.exe](r
 
 ## See Also
 
-[Compiler Options](reference/compiler-options.md)
+[MSVC Compiler Options](reference/compiler-options.md)

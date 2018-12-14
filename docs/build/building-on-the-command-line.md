@@ -173,7 +173,7 @@ Describes how to use these compiler options to use a Debug or Release run-time l
 [C/C++ Compiler Options](reference/compiler-options.md)<br/>
 Provides links to articles that discuss the C and C++ compiler options and CL.exe.
 
-[Linker Options](reference/linker-options.md)<br/>
+[MSVC Linker Options](reference/linker-options.md)<br/>
 Provides links to articles that discuss the linker options and LINK.exe.
 
 [C/C++ Build Tools](reference/c-cpp-build-tools.md)<br/>

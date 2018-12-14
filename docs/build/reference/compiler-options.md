@@ -1,5 +1,5 @@
 ---
-title: "Compiler Options"
+title: "MSVC Compiler Options"
 ms.date: "01/29/2018"
 helpviewer_keywords: ["cl.exe compiler", "x86 Visual C++ compiler", "ARM Visual C++ compiler", "compiler options, C++", "x64 Visual C++ compiler"]
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
@@ -29,7 +29,7 @@ To find a particular compiler option, see one of the following lists:
 
 The topic for each compiler option discusses how it can be set in the development environment. For information on specifying options outside the development environment, see:
 
-- [Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+- [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
 
 - [CL Command Files](cl-command-files.md)
 
@@ -37,10 +37,9 @@ The topic for each compiler option discusses how it can be set in the developmen
 
 ## Related build tools
 
-[Linker options](linker-options.md) also affect how your program is built.
+[MSVC Linker Options](linker-options.md) also affect how your program is built.
 
 ## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Fast Compilation](../fast-compilation.md)<br/>
 [CL Invokes the Linker](cl-invokes-the-linker.md)

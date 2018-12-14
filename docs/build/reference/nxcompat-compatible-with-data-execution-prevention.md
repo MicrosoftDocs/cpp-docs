@@ -41,4 +41,4 @@ For more information about Data Execution Prevention, see these articles:
 ## See also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

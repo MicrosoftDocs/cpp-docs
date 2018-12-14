@@ -28,7 +28,7 @@ Describes the MSBuild-based project types that are available for C++.
 [C++ new item templates](using-visual-cpp-add-new-item-templates.md)<br>
 Describes source files and other items you can add to a Visual Studio project.
 
-[Precompiled header files](creating-precompiled-header-files.md)
+[Precompiled header files](../creating-precompiled-header-files.md)
 How to use precompiled header files and how to create your own custom precompiled code to speed up build times.
 
 [Visual Studio project property reference](property-pages-visual-cpp.md)<br/>

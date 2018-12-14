@@ -44,4 +44,4 @@ Another way to set the size of the stack is with the [STACKSIZE](stacksize.md) s
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

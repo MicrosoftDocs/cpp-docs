@@ -89,4 +89,4 @@ caught non System exception in C++ source code file
 ## See also
 
 - [LINK Input Files](link-input-files.md)
-- [Linker Options](linker-options.md)
+- [MSVC Linker Options](linker-options.md)

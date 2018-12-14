@@ -30,4 +30,4 @@ Use the value that is specified in `filename` to override the default .winmd fil
 
 [/WINMD (Generate Windows Metadata)](winmd-generate-windows-metadata.md)<br/>
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

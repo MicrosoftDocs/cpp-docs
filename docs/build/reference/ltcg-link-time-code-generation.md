@@ -138,4 +138,4 @@ You can also apply **/LTCG** to specific builds by choosing **Build** > **Profil
 ## See also
 
 - [Setting Linker Options](linking.md)
-- [Linker Options](linker-options.md)
+- [MSVC Linker Options](linker-options.md)

@@ -75,4 +75,4 @@ The optional minimum and default *major* and *minor* version numbers for the sub
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

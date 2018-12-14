@@ -210,7 +210,7 @@ NMAKE
 NMAKE DEBUG=0
 ```
 
-For more information on makefiles, see [NMAKE Reference](nmake-reference.md). Also see [Compiler Options](compiler-options.md) and the [Linker Options](linker-options.md).
+For more information on makefiles, see [NMAKE Reference](nmake-reference.md). Also see [MSVC Compiler Options](compiler-options.md) and the [MSVC Linker Options](linker-options.md).
 
 ## Example Code for PCH
 
@@ -299,4 +299,4 @@ int main( void )
 ## See Also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Compiler Options](compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)

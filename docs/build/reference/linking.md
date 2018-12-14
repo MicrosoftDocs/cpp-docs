@@ -78,6 +78,6 @@ The LINK tool uses the following environment variables:
 ## See Also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)
 [Module-Definition (.def) Files](module-definition-dot-def-files.md)
 [Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

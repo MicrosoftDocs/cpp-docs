@@ -36,4 +36,4 @@ The /MERGE option is useful for creating VxDs and overriding the compiler-genera
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

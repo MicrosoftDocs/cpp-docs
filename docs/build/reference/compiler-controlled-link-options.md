@@ -28,9 +28,9 @@ The CL compiler automatically calls LINK unless you specify the /c option. CL pr
 |/Zi or /Z7|Passes /DEBUG|
 |/Zl|Omits default library name from .obj file|
 
-For more information, see [Compiler Options](compiler-options.md).
+For more information, see [MSVC Compiler Options](compiler-options.md).
 
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

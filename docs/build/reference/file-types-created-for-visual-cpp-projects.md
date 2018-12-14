@@ -16,7 +16,7 @@ This topic describes all the types of files that are associated with Visual C++ 
 
 - [MFC Program or Control Source and Header Files](mfc-program-or-control-source-and-header-files.md)
 
-- [Precompiled Header Files](creating-precompiled-header-files.md)
+- [Precompiled Header Files](../creating-precompiled-header-files.md)
 
 - [Resource Files](resource-files-cpp.md)
 

@@ -44,4 +44,4 @@ If a module is compiled with **/clr**, **/FORCE** will not create an image.
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

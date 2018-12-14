@@ -50,4 +50,4 @@ Produces an output file that can be used with the Performance Tools profiler.
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

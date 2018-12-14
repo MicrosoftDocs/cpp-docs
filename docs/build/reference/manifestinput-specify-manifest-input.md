@@ -27,4 +27,4 @@ This option can’t be set directly in Visual Studio. Instead, use the **Additio
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

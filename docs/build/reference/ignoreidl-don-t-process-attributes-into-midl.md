@@ -32,7 +32,7 @@ The /IGNOREIDL option specifies that any [IDL attributes](../../windows/idl-attr
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
 [/IDLOUT (Name MIDL Output Files)](idlout-name-midl-output-files.md)<br/>
 [/TLBOUT (Name .TLB File)](tlbout-name-dot-tlb-file.md)<br/>
 [/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>

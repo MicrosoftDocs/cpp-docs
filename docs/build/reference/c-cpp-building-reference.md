@@ -13,10 +13,10 @@ Visual C++ provides two ways of building a C/C++ program. The easiest (and most 
 
 [MSBuild reference for C++ projects](msbuild-visual-cpp-overview.md)
 
-[Compiling a C/C++ Program](compiling-a-c-cpp-program.md)<br/>
+[MSVC Compiler Reference](compiling-a-c-cpp-program.md)<br/>
 Describes the MSVC compiler, which creates an object file containing machine code, linker directives, sections, external references, and function/data names.
 
-[Linking](linking.md)<br/>
+[MSVC Linker Reference](linking.md)<br/>
 Describes the linker, which combines code from the object files created by the compiler and from statically linked libraries, resolves the name references, and creates an executable file.
 
 [Unicode Support in the Compiler and Linker](unicode-support-in-the-compiler-and-linker.md)
@@ -41,13 +41,13 @@ Provides links to topics describing building your program from the command line 
 [Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 Describes setting compiler options in the development environment or on the command line.
 
-[Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
 Provides links to topics discussing using compiler options.
 
 [Setting Linker Options](linking.md)<br/>
 Describes setting linker options inside or outside the integrated development environment.
 
-[Linker Options](linker-options.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
 Provides links to topics discussing using linker options.
 
 [BSCMAKE Reference](bscmake-reference.md)<br/>

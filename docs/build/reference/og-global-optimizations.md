@@ -81,6 +81,6 @@ For related information, see [/Oi (Generate Intrinsic Functions)](oi-generate-in
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)
 
-[Compiler Options](compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)
 
 [Compiler Command Line Syntax](compiler-command-line-syntax.md)

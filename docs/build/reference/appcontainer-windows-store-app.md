@@ -36,4 +36,4 @@ The /APPCONTAINER option was introduced in Windows 8.
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

@@ -10,7 +10,7 @@ Use precompiled header files to build your project faster. This is important if 
 
 See [/Yc](reference/yc-create-precompiled-header-file.md) and [/Yu](reference/yu-use-precompiled-header-file.md).
 
-For more information on precompiled headers, see [Creating Precompiled Header Files](reference/creating-precompiled-header-files.md).
+For more information on precompiled headers, see [Creating Precompiled Header Files](creating-precompiled-header-files.md).
 
 ## See Also
 

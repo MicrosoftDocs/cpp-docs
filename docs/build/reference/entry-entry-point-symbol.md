@@ -55,4 +55,4 @@ For information on how to define your own `DllMain` entry point, see [DLLs and V
 ## See Also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

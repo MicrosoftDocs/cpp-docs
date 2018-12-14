@@ -47,4 +47,4 @@ See [Secure Coding Guidelines for Unmanaged Code](/dotnet/framework/security/sec
 ## See also
 
 - [Setting Linker Options](linking.md)
-- [Linker Options](linker-options.md)
+- [MSVC Linker Options](linker-options.md)

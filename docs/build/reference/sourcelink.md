@@ -36,4 +36,4 @@ SourceLink is a language- and source-control agnostic system for providing sourc
 ## See also
 
 [Setting Linker Options](linking.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)

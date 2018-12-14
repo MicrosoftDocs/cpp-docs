@@ -11,4 +11,4 @@ Export (.exp) files contain information about exported functions and data items.
 ## See Also
 
 [LINK Input Files](link-input-files.md)<br/>
-[Linker Options](linker-options.md)
+[MSVC Linker Options](linker-options.md)
