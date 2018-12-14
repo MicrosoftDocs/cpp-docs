@@ -7,7 +7,7 @@ ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
 ---
 # include_alias
 
-Specifies that *short_filename* is to be used as an alias for *long_filename*.
+Specifies that *short_filename* is to be used as an alias for *long_filename*. *long_filename* does not have to be long.
 
 ## Syntax
 
