@@ -17,7 +17,7 @@ The C++ standard, in section 2.13.2 discusses escape sequences.
 
 The following sample generates C4129:
 
-```
+```cpp
 // C4129.cpp
 // compile with: /W1
 int main() {

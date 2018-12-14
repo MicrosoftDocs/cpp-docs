@@ -17,7 +17,7 @@ macro name 'name' is reserved; 'Command' ignored
 
 The following sample generates C4117:
 
-```
+```cpp
 // C4117.cpp
 // compile with: /W1
 #define __FILE__ test         // C4117. __FILE__ is a predefined macro

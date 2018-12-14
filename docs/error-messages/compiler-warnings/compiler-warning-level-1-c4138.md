@@ -13,7 +13,7 @@ The closing-comment delimiter is not preceded by an opening-comment delimiter. T
 
 ## Example
 
-```
+```cpp
 // C4138a.cpp
 // compile with: /W1
 int */*comment*/ptr;   // C4138 Ambiguous first delimiter causes warning
@@ -26,7 +26,7 @@ This warning can be caused by trying to nest comments.
 
 This warning may be resolved if you comment out sections of code that contain comments, enclose the code in an **#if/#endif** block, and set the controlling expression to zero:
 
-```
+```cpp
 // C4138b.cpp
 // compile with: /W1
 #if 0

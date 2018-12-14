@@ -13,7 +13,7 @@ The specified function cannot be used as an [intrinsic](../../preprocessor/intri
 
 The following sample generates C4163:
 
-```
+```cpp
 // C4163.cpp
 // compile with: /W1 /LD
 #include <math.h>
