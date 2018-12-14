@@ -73,8 +73,8 @@ Furthermore, the following directive generates an error:
 Note that the filename reported in error messages, or as the value of the predefined `__FILE__` macro, is the name of the file after the substitution has been performed. For example, see the output after the following directives:
 
 ```cpp
-#pragma include_alias( "VeryLongFileName.H", "myfile.h" )
-#include "VeryLongFileName.H"
+#pragma include_alias( "VERYLONGFILENAME.H", "myfile.h" )
+#include "VERYLONGFILENAME.H"
 ```
 
 An error in VERYLONGFILENAME.H produces the following error message:
