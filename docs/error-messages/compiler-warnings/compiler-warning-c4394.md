@@ -19,7 +19,7 @@ C4394 is always issued as an error.  You can turn off this warning with the `#pr
 
 The following sample generates C4394.
 
-```
+```cpp
 // C4394.cpp
 // compile with: /clr /c
 __declspec(dllexport) __declspec(appdomain) int g1 = 0;   // C4394

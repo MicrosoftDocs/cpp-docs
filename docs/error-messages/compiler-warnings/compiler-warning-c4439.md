@@ -17,7 +17,7 @@ C4439 is always issued as an error. You can turn off this warning with the `#pra
 
 The following sample generates C4439.
 
-```
+```cpp
 // C4439.cpp
 // compile with: /clr
 void __stdcall f( System::String^ arg ) {}   // C4439

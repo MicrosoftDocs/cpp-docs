@@ -19,7 +19,7 @@ This warning is always issued as an error. Use the [warning](../../preprocessor/
 
 The following sample generates C4368.
 
-```
+```cpp
 // C4368.cpp
 // compile with: /clr /c
 struct N {};
