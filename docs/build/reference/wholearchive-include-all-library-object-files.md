@@ -21,7 +21,7 @@ The /WHOLEARCHIVE option was introduced in Visual Studio 2015 Update 2.
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Select the **Command Line** property page under **Configuration Properties**, **Linker**.
 

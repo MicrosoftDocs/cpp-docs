@@ -1,5 +1,6 @@
 # [Visual C++ in Visual Studio 2017](visual-cpp-in-visual-studio.md)
 # [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md)
+# [Overview of C++ development in Visual Studio](ide-and-tools-for-visual-cpp-development.md)
 # Visual C++ Tutorial
 ## [Install C++ support in Visual Studio](build/vscpp-step-0-installation.md)
 ## [Create a C++ console app project](build/vscpp-step-1-create.md)
@@ -19,9 +20,9 @@
 # [Data Access](data/data-access-in-cpp.md)
 # [Text and Strings](text/text-and-strings-in-visual-cpp.md)
 # [vcpkg: A Package Manager for C++](vcpkg.md)
-# [IDE and Tools for Visual C++](ide/ide-and-tools-for-visual-cpp-development.md)
-# [Compilers and Build Tools](build/building-c-cpp-programs.md)
-# [Porting and Upgrading Visual C++ Code](porting/visual-cpp-porting-and-upgrading-guide.md)
+
+# [Configure and compile C++ projects](build/building-c-cpp-programs.md)
+# [Port and Upgrade C++ Code](porting/visual-cpp-porting-and-upgrading-guide.md)
 # [Security Best Practices for C++](security/security-best-practices-for-cpp.md)
 ## [Running as a Member of the Users Group](security/running-as-a-member-of-the-users-group.md)
 ## [How User Account Control (UAC) Affects Your Application](security/how-user-account-control-uac-affects-your-application.md)

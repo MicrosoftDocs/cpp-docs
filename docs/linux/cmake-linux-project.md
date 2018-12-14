@@ -107,5 +107,5 @@ Your Linux distro may have an older version of CMake. The CMake support in Visua
 
 ## See Also
 
-[Working with Project Properties](../build/working-with-project-properties.md)<br/>
+[Set compiler and build properties](../build/working-with-project-properties.md)<br/>
 [CMake Tools for Visual C++](../build/cmake-tools-for-visual-cpp.md)

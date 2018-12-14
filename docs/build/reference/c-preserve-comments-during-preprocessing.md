@@ -36,7 +36,7 @@ int i;   // a variable
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -51,7 +51,7 @@ int i;   // a variable
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [/E (Preprocess to stdout)](e-preprocess-to-stdout.md)<br/>
 [/P (Preprocess to a File)](p-preprocess-to-a-file.md)<br/>
 [/EP (Preprocess to stdout Without #line Directives)](ep-preprocess-to-stdout-without-hash-line-directives.md)

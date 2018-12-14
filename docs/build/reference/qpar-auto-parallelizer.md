@@ -39,6 +39,6 @@ For information about how to enable output messages for the auto-parallelizer, s
 [/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
 [/Qpar-report (Auto-Parallelizer Reporting Level)](qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [#pragma loop()](../../preprocessor/loop.md)<br/>
 [Parallel Programming in Native Code](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

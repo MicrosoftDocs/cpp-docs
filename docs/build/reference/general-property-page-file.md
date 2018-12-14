@@ -20,7 +20,7 @@ When a file is selected in **Solution Explorer**, the **General** property page 
 
    To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.
 
-For information on how to access the **General** property page under the **Configuration Properties** node, see [Working with Project Properties](../working-with-project-properties.md).
+For information on how to access the **General** property page under the **Configuration Properties** node, see [Set compiler and build properties](../working-with-project-properties.md).
 
 For non-Windows projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md).
 

@@ -60,7 +60,7 @@ r = t + d;     // This should produce the same overall result
 
 ### To set this compiler option for AVX, AVX2, IA32, SSE, or SSE2 in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties**, **C/C++** folder.
 
@@ -76,4 +76,4 @@ r = t + d;     // This should produce the same overall result
 
 [/arch (Minimum CPU Architecture)](arch-minimum-cpu-architecture.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)

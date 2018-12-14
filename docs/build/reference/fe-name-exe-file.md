@@ -29,7 +29,7 @@ If you specify the [/c (Compile Without Linking)](c-compile-without-linking.md) 
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Open the **Configuration Properties** > **Linker** > **General** property page.
 
@@ -59,5 +59,5 @@ CL /FeC:\BIN\ *.C
 
 [Output-File (/F) Options](output-file-f-options.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [Specifying the Pathname](specifying-the-pathname.md)<br/>

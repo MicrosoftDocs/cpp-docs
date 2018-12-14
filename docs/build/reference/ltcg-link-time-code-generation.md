@@ -123,7 +123,7 @@ Modules that are compiled by using [/GL](gl-whole-program-optimization.md) and [
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. See [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. See [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **General** property page.
 

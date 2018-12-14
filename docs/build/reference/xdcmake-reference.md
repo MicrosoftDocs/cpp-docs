@@ -11,7 +11,7 @@ xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc fil
 
 ### To use xdcmake.exe in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Open the **Configuration Properties** folder.
 

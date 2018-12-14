@@ -19,7 +19,7 @@ By default, .NET projects use the /clr compiler flag and configure the linker to
 
 ### To change the compiler and linker settings
 
-1. Display the project Property Page. For more information, see [Working with Project Properties](../build/working-with-project-properties.md).
+1. Display the project Property Page. For more information, see [Set compiler and build properties](../build/working-with-project-properties.md).
 
 1. On the **General** page under the **Configuration Properties** node, set the **Common Language Runtime Support** property to **Safe MSIL Common Language Runtime Support (/clr:safe)**.
 
@@ -47,7 +47,7 @@ Because verifiable applications cannot use the C run-time libraries (CRT), they 
 
 1. Change _tmain() to Main() in the project's main .cpp file.
 
-1. Display the project Property Page. For more information, see [Working with Project Properties](../build/working-with-project-properties.md).
+1. Display the project Property Page. For more information, see [Set compiler and build properties](../build/working-with-project-properties.md).
 
 1. On the **Advanced** page under the **Linker** node, enter `Main` as the **Entry Point** property value.
 

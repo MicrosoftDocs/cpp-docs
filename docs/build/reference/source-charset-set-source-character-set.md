@@ -35,7 +35,7 @@ If you want to set both the source character set and the execution character set
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
@@ -46,7 +46,7 @@ If you want to set both the source character set and the execution character set
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 [/execution-charset (Set Execution Character Set)](execution-charset-set-execution-character-set.md)<br/>
 [/utf-8 (Set Source and Executable character sets to UTF-8)](utf-8-set-source-and-executable-character-sets-to-utf-8.md)<br/>
 [/validate-charset (Validate for compatible characters)](validate-charset-validate-for-compatible-characters.md)

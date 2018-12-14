@@ -1,7 +1,7 @@
 ---
-title: "IDE and Tools for Visual C++ Development"
+title: "Overview of C++ development in Visual Studio"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
-ms.date: "11/18/2018"
+ms.date: "12/18/2018"
 helpviewer_keywords: ["Visual C++, development tools"]
 ms.assetid: 56eabafb-1956-4f0f-bec5-29b887763559
 ---
@@ -67,7 +67,7 @@ For more information on adding and editing resources in native desktop C++ proje
 Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
-For more information about MSBuild configurations, see [Working with Project Properties](../build/working-with-project-properties.md).
+For more information about MSBuild configurations, see [Set compiler and build properties](../build/working-with-project-properties.md).
 
 You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 

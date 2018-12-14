@@ -11,7 +11,7 @@ Most property page folders contain a **Command Line** property page. This page d
 
 Any command that you enter in the edit box will be passed through to the tool for the folder. No verification or checks will be done on the input, nor will there be any dependency checking.
 
-For information on how to access the **Command Line** property pages, see [Working with Project Properties](../working-with-project-properties.md).
+For information on how to access the **Command Line** property pages, see [Set compiler and build properties](../working-with-project-properties.md).
 
 ## See Also
 

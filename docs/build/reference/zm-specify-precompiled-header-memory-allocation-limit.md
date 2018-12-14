@@ -42,7 +42,7 @@ The following table shows how the *factor* argument affects the memory allocatio
 
 #### To set the /Zm compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. In the navigation pane, select **Configuration Properties**, **C/C++**, **Command Line**.
 
@@ -55,4 +55,4 @@ The following table shows how the *factor* argument affects the memory allocatio
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)

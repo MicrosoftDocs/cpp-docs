@@ -23,7 +23,7 @@ VC++ Directories properties apply to a project, not the top-level solution node.
 
 Note that the **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
-If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](../working-with-project-properties.md).
+If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Set compiler and build properties](../working-with-project-properties.md).
 
 The default settings for **VC++ Directories** properties depend on project type. For desktop projects they include the C++ tools locations for a particular Platform Toolset and the Windows SDK location. You can change the **Platform Toolset** and **Windows SDK version** on the **Configuration Properties** > **General** page.
 
@@ -49,7 +49,7 @@ You can search for partial or complete matches in the edit box. The following il
 
 Note: The list is populated as you type. Don't press **Enter**.
 
-For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../working-with-project-properties.md).
+For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Set compiler and build properties](../working-with-project-properties.md).
 
 For a list of commonly used macros, see [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
 
@@ -88,4 +88,4 @@ Before each compilation, Visual Studio queries the timestamp on all files to det
 
 ## Sharing the Settings
 
-You can share project properties with other users or across multiple computers. For more information, see [Working with Project Properties](../working-with-project-properties.md).
+You can share project properties with other users or across multiple computers. For more information, see [Set compiler and build properties](../working-with-project-properties.md).

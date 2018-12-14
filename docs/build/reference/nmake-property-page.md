@@ -55,7 +55,7 @@ The **NMake** property page contains the following properties.
 
    Specifies any additional compiler switches for IntelliSense to use when it parses C++ files.
 
-For information about how to access the **NMake** property page, see [Working with Project Properties](../working-with-project-properties.md).
+For information about how to access the **NMake** property page, see [Set compiler and build properties](../working-with-project-properties.md).
 
 For information about how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.
 

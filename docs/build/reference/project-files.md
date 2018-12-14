@@ -6,7 +6,7 @@ ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
 ---
 # Project Files
 
-A Visual C++ project file is an XML-based file that has the .vcxproj file name extension and contains information that is required to build a Visual C++ project. Note that the project file imports various project files that have the extension *.props* or *.targets*. These files contain additional build information, and might themselves refer to other *.props* or *.targets* files. The macros in the file path (for example `$(VCTargetsPath)`) are dependent on your Visual Studio installation. For more information about these macros and *.props* and *.targets* files, see [VC++ Directories Property Page](vcpp-directories-property-page.md), [Working with Project Properties](../working-with-project-properties.md) and [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
+A Visual C++ project file is an XML-based file that has the .vcxproj file name extension and contains information that is required to build a Visual C++ project. Note that the project file imports various project files that have the extension *.props* or *.targets*. These files contain additional build information, and might themselves refer to other *.props* or *.targets* files. The macros in the file path (for example `$(VCTargetsPath)`) are dependent on your Visual Studio installation. For more information about these macros and *.props* and *.targets* files, see [VC++ Directories Property Page](vcpp-directories-property-page.md), [Set compiler and build properties](../working-with-project-properties.md) and [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
 
 ## Example
 
@@ -113,4 +113,4 @@ The following sample .vcxproj file was produced by specifying a **Win32 Console 
 ## See Also
 
 [Building C++ Projects in Visual Studio](../creating-and-managing-visual-cpp-projects.md)<br>
-[Working with Project Properties](../working-with-project-properties.md)
+[Set compiler and build properties](../working-with-project-properties.md)

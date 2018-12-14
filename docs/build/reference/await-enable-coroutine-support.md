@@ -34,4 +34,4 @@ The **/await** option is available beginning in Visual Studio 2015.
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)

@@ -38,7 +38,7 @@ Discusses customizing the build process.
 [Building a C/C++ Program](../building-c-cpp-programs.md)<br/>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>
 Describes setting compiler options in the development environment or on the command line.
 
 [Compiler Options](compiler-options.md)<br/>

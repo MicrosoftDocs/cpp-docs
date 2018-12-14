@@ -212,4 +212,4 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)<br/>
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)<br/>

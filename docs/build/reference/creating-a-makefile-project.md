@@ -7,13 +7,13 @@ ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
 ---
 # Create a C++ makefile project
 
-A *makefile* is a text file that contains instructions for how to compile and link (or *build*) a set of C++ source code files. A *make* program reads the makefile and invokes a compiler, linker and possibly other programs to make an executable file. Microsoft's implementation of the *make* program is called [NMAKE]();
+A *makefile* is a text file that contains instructions for how to compile and link (or *build*) a set of C++ source code files. A *make* program reads the makefile and invokes a compiler, linker and possibly other programs to make an executable file. Microsoft's implementation of the *make* program is called [NMAKE](nmake-reference.md);
 
 If you have an existing makefile project, you have these choices if you want to code and/or debug it in the Visual Studio IDE:
 
 - Create a makefile project in Visual Studio that uses your existing makefile to configure a .vcxproj file that Visual Studio will use for IntelliSense. (You will not have all the IDE features that you get with a native MSBuild project.) See [To create a makefile project](#create_a_makefile_project) below.
-- Use the **Create New Project from Existing Code Files** wizard to create a native MSBuild project from your source code. The original makefile will not be used after this. For more information, see [How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md).
-- **Visual Studio 2017 and later**: Use the **Open Folder** feature to edit and build a makefile project as-is without any involvement of the MSBuild system. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).
+- Use the **Create New Project from Existing Code Files** wizard to create a native MSBuild project from your source code. The original makefile will not be used after this. For more information, see [How to: Create a C++ Project from Existing Code](../how-to-create-a-cpp-project-from-existing-code.md).
+- **Visual Studio 2017 and later**: Use the **Open Folder** feature to edit and build a makefile project as-is without any involvement of the MSBuild system. For more information, see [Open Folder projects in Visual C++](../non-msbuild-projects.md).
 
 ## <a name="create_a_makefile_project"> To create a makefile project with the makefile project template
 
@@ -31,7 +31,7 @@ The output file that you specify in the project has no effect on the name that t
 
 1. Click **Finish** to close the wizard and open the newly created project in **Solution Explorer**.
 
-You can view and edit the project's properties in its property page. See [Working with project properties](working-with-project-properties.md) for information about displaying the property page.
+You can view and edit the project's properties in its property page. See [Set compiler and build properties](../working-with-project-properties.md) for information about displaying the property page.
 
 ## Makefile project wizard
 
@@ -49,23 +49,23 @@ After you create a makefile project, you can view and edit each of the following
 
 IntelliSense fails in makefile projects when certain project settings or compiler options are set up incorrectly. Follow these steps to configure makefile projects so that IntelliSense works as expected:
 
-1. Open the **Property Pages** dialog box. For details, see [Working with Project Properties](working-with-project-properties.md).
+1. Open the **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 
 1. Select the **NMake** property page, and then modify properties under **IntelliSense** as appropriate.
 
-   - Set the **Preprocessor Definitions** property to define any preprocessor symbols in your makefile project. See [/D (Preprocessor Definitions)](reference/d-preprocessor-definitions.md), for more information.
+   - Set the **Preprocessor Definitions** property to define any preprocessor symbols in your makefile project. See [/D (Preprocessor Definitions)](d-preprocessor-definitions.md), for more information.
 
-   - Set the **Include Search Path** property to specify the list of directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project. See [/I (Additional Include Directories)](reference/i-additional-include-directories.md), for more information.
+   - Set the **Include Search Path** property to specify the list of directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project. See [/I (Additional Include Directories)](i-additional-include-directories.md), for more information.
 
     - For projects that are built using CL.EXE from a Command Window, set the **INCLUDE** environment variable to specify directories that the compiler will search to resolve file references that are passed to preprocessor directives in your makefile project.
 
-   - Set the **Forced Includes** property to specify which header files to process when building your makefile project. See [/FI (Name Forced Include File)](reference/fi-name-forced-include-file.md), for more information.
+   - Set the **Forced Includes** property to specify which header files to process when building your makefile project. See [/FI (Name Forced Include File)](fi-name-forced-include-file.md), for more information.
 
-   - Set the **Assembly Search Path** property to specify the list of directories that the compiler will search to resolve references to .NET assemblies in your project. See [/AI (Specify Metadata Directories)](reference/ai-specify-metadata-directories.md), for more information.
+   - Set the **Assembly Search Path** property to specify the list of directories that the compiler will search to resolve references to .NET assemblies in your project. See [/AI (Specify Metadata Directories)](ai-specify-metadata-directories.md), for more information.
 
-   - Set the **Forced Using Assemblies** property to specify which .NET assemblies to process when building your makefile project. See [/FU (Name Forced #using File)](reference/fu-name-forced-hash-using-file.md), for more information.
+   - Set the **Forced Using Assemblies** property to specify which .NET assemblies to process when building your makefile project. See [/FU (Name Forced #using File)](fu-name-forced-hash-using-file.md), for more information.
 
    - Set the **Additional Options** property to specify additional compiler switches to be used by IntelliSense when parsing C++ files.
 
@@ -78,7 +78,7 @@ The next time you open your makefile project in the Visual Studio development en
 ## See Also
 
 [Using IntelliSense](/visualstudio/ide/using-intellisense)<br>
-[NMAKE Reference](reference/nmake-reference.md)<br>
-[How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md)
-[Special Characters in a Makefile](reference/special-characters-in-a-makefile.md)<br/>
-[Contents of a Makefile](reference/contents-of-a-makefile.md)<br/>
+[NMAKE Reference](nmake-reference.md)<br>
+[How to: Create a C++ Project from Existing Code](../how-to-create-a-cpp-project-from-existing-code.md)
+[Special Characters in a Makefile](special-characters-in-a-makefile.md)<br/>
+[Contents of a Makefile](contents-of-a-makefile.md)<br/>

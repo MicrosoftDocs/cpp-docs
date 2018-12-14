@@ -7,7 +7,7 @@ ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
 ---
 # C++ project property page reference
 
-By using property pages, you can specify settings for Visual Studio projects. To open the **Property Pages** dialog box for a Visual Studio project, on the **Project** menu, choose **Properties**. For more information about project properties, see [Working with Project Properties](../working-with-project-properties.md).
+By using property pages, you can specify settings for Visual Studio projects. To open the **Property Pages** dialog box for a Visual Studio project, on the **Project** menu, choose **Properties**. For more information about project properties, see [Set compiler and build properties](../working-with-project-properties.md).
 
 For property pages in non-Windows projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md).
 

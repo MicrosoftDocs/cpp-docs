@@ -91,4 +91,4 @@ Use ildasm.exe to view metadata.
 ## See Also
 
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)

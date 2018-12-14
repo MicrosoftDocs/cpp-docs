@@ -22,7 +22,7 @@ To work correctly, the tools require several specific environment variables to b
 
 The required environment variables are specific to your installation and to the build architecture you choose, and might be changed by product updates or upgrades. Therefore, we strongly recommend that you use one of the installed command prompt shortcuts or command files instead of setting the environment variables in Windows yourself. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md).
 
-## Developer command prompt shortcuts
+## <a name="developer_command_prompt_shortcuts"></a> Developer command prompt shortcuts
 
 The command prompt shortcuts are installed in a version-specific Visual Studio folder in your Start menu. Here's a list of the base command prompt shortcuts and the build architectures they support:
 
@@ -36,8 +36,7 @@ The actual Start menu folder and shortcut names vary depending on the version of
 
 If you've installed the [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=875721) (which also includes the Visual Studio 2015 Update 3 compiler toolset), only the architecture-specific native or cross tools developer command prompt options are installed, and not the general **Developer Command Prompt** shortcut.
 
-<a name="developer_command_prompt"></a>
-### To open a developer command prompt window
+## <a name="developer_command_prompt"></a> To open a developer command prompt window
 
 1. On the desktop, open the Windows **Start** menu, and then scroll to find and open the folder for your version of Visual Studio, for example, **Visual Studio 2017**. In some older versions of Visual Studio, the shortcuts are in a subfolder called **Visual Studio Tools**.
 
@@ -45,7 +44,7 @@ If you've installed the [Build Tools for Visual Studio 2017](https://go.microsof
 
 An even faster way to open a developer command prompt window is to enter *developer command prompt* in the desktop search box, then choose the desired result.
 
-## Developer command file locations
+## <a name="developer_command_prompt_file_locations"></a>Developer command file locations
 
 If you prefer to set the build architecture environment in an existing command prompt window, you can use one of the command files (batch files) created by the installer to set the required environment. We only recommend you do this in a new command prompt window, and we do not recommend you later switch environments in the same command window. The location of these files depends on the version of Visual Studio you have installed, and on location and naming choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit computer is in \Program Files (x86)\Microsoft Visual Studio\2017\\*edition*, where *edition* may be Community, Professional, Enterprise, BuildTools, or another name you supplied. For Visual Studio 2015, the typical installation location is in \Program Files (x86)\Microsoft Visual Studio 14.0.
 
@@ -160,19 +159,19 @@ Describes how to start a command prompt window that has the required environment
 
 [Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 
-[CL Filename Syntax](cl-filename-syntax.md)<br/>
+[CL Filename Syntax](reference/cl-filename-syntax.md)<br/>
 
-[Order of CL Options](order-of-cl-options.md)<br/>
+[Order of CL Options](reference/order-of-cl-options.md)<br/>
 
-[Return Value of cl.exe](return-value-of-cl-exe.md)<br/>
+[Return Value of cl.exe](reference/return-value-of-cl-exe.md)<br/>
 
-[CL Environment Variables](cl-environment-variables.md)<br/>
+[CL Environment Variables](reference/cl-environment-variables.md)<br/>
 
-[CL Command Files](cl-command-files.md)<br/>
+[CL Command Files](reference/cl-command-files.md)<br/>
 
-[Fast Compilation](fast-compilation.md)<br/>
+[Fast Compilation](reference/fast-compilation.md)<br/>
 
-[CL Invokes the Linker](cl-invokes-the-linker.md)<br/>
+[CL Invokes the Linker](reference/cl-invokes-the-linker.md)<br/>
 
 ## Related Sections
 

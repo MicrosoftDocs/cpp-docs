@@ -1,5 +1,5 @@
 ---
-title: "Hint Files (C++) - Visual Studio"
+title: "Hint Files for IntelliSense (C++) - Visual Studio"
 ms.date: "12/14/2018"
 f1_keywords: ["cpp.hint", "vc.hint.file"]
 helpviewer_keywords: ["stop file", "cpp.hint", "hint file", "cpp.stop", "Class View, hint file"]

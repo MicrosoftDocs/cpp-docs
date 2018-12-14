@@ -26,7 +26,7 @@ When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 

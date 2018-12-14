@@ -13,7 +13,7 @@ The second option overrides the first.
 
 Mutually exclusive linker options are being specified.  Examine your linker options.  Where linker options are specified depends on how you are building your project.
 
-- If you are building in the development environment, look in the linker property pages for your project, and see where both linker options are being specified.  See [Working with Project Properties](../../build/working-with-project-properties.md) for more information.
+- If you are building in the development environment, look in the linker property pages for your project, and see where both linker options are being specified.  See [Set compiler and build properties](../../build/working-with-project-properties.md) for more information.
 
 - If you build at the command line, look at the linker options specified there.
 

@@ -62,7 +62,7 @@ The **/OPT** arguments are often set for projects created by using the **New Pro
 
 ### To set the OPT:ICF or OPT:REF linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Optimization** property page.
 

@@ -19,7 +19,7 @@ For general information on build events, see [Understanding Custom Build Steps a
 
 1. In **Solution Explorer**, select the project for which you want to specify the build event.
 
-1. Open the project's **Property Pages** dialog box. For more information, see [Working with Project Properties](working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Set compiler and build properties](working-with-project-properties.md).
 
 1. In the **Build Events** folder, select a build event property page.
 

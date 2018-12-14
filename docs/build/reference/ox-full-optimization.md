@@ -43,7 +43,7 @@ To apply all available file-level optimizations for release builds, we recommend
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set compiler and build properties](../working-with-project-properties.md).
 
 1. Under **Configuration Properties**, open **C/C++** and then choose the **Optimization** property page.
 
@@ -57,4 +57,4 @@ To apply all available file-level optimizations for release builds, we recommend
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [Compiler Options](compiler-options.md)<br/>
-[Compiler Command Line Syntax](../compiler-command-line-syntax.md)
+[Compiler Command Line Syntax](compiler-command-line-syntax.md)

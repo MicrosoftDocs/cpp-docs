@@ -29,11 +29,11 @@ To find a particular compiler option, see one of the following lists:
 
 The topic for each compiler option discusses how it can be set in the development environment. For information on specifying options outside the development environment, see:
 
-- [Compiler Command-Line Syntax](../compiler-command-line-syntax.md)
+- [Compiler Command-Line Syntax](compiler-command-line-syntax.md)
 
-- [CL Command Files](../cl-command-files.md)
+- [CL Command Files](cl-command-files.md)
 
-- [CL Environment Variables](../cl-environment-variables.md)
+- [CL Environment Variables](cl-environment-variables.md)
 
 ## Related build tools
 
@@ -43,4 +43,4 @@ The topic for each compiler option discusses how it can be set in the developmen
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
 [Fast Compilation](../fast-compilation.md)<br/>
-[CL Invokes the Linker](../cl-invokes-the-linker.md)
+[CL Invokes the Linker](cl-invokes-the-linker.md)

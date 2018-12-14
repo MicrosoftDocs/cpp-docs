@@ -25,4 +25,4 @@ To access this property page dialog box, open the property pages for your projec
 [\<file> Element](/visualstudio/deployment/file-element-clickonce-application)<br>
 [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br>
 [Manifest Tool Property Pages](manifest-tool-property-pages.md)<br>
-[Working with Project Properties](../working-with-project-properties.md)
+[Set compiler and build properties](../working-with-project-properties.md)
