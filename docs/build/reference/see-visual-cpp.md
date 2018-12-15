@@ -1,5 +1,5 @@
 ---
-title: "&lt;see&gt; (C++ Documentation Comments)"
+title: "\<see> (C++ Documentation Comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["<see>", "see"]
 helpviewer_keywords: ["<see> C++ XML tag", "see C++ XML tag"]
