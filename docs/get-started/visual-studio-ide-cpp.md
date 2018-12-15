@@ -1,11 +1,10 @@
 ---
-title: "Visual Studio overview for C++ developers"
+title: "Overview for C++ developers"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
 ms.date: "12/13/2018"
 helpviewer_keywords: ["Visual C++, development tools"]
-ms.assetid: 56eabafb-1956-4f0f-bec5-29b887763559
 ---
-# Welcome to the Visual Studio IDE and compiler tools for C++ development
+# Welcome to the Visual Studio IDE | C++
 
 As part of the Visual Studio Integrated Development Environment (IDE), Microsoft Visual C++ (MSVC) shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the code editor, and the debugger, are documented under [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or JavaScript. A few windows or tools are only available in Visual Studio Professional or Visual Studio Enterprise editions.
 
@@ -14,8 +13,6 @@ In addition to shared tools in the Visual Studio IDE, MSVC has several tools spe
 ## Create projects
 
 A *project* is basically a set of source code files and resources such as images or data files that are built into an executable file.
-
-Visual Studio 2015 provides support for MSBuild projects. You can download Visual Studio extensions for other build systems such as Qt or CMake.
 
 Visual Studio 2017 provides support for any build system or custom build tools that you wish to use, with full support for IntelliSense, browsing and debugging:
 

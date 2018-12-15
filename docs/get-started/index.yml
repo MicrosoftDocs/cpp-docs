@@ -16,16 +16,16 @@ sections:
     className: cardsM
     columns: 3
     items:
-    - href: ../../build/vscpp-step-0-installation.md
+    - href: ../build/vscpp-step-0-installation.md
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_setup.svg
       title: Install Visual Studio with C++
-    - href: /visualstudio/ide/visual-studio-ide
+    - href: visual-studio-ide-cpp.md
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: A Guided Tour of Visual Studio
+      title: Start a Guided Tour
 - title: C++ tutorials
   items:
   - type: list
