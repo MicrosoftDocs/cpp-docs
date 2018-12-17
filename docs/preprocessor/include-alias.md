@@ -1,6 +1,6 @@
 ---
 title: "include_alias"
-ms.date: "11/04/2016"
+ms.date: "12/16/2018"
 f1_keywords: ["vc-pragma.include_alias", "include_alias_CPP"]
 helpviewer_keywords: ["pragmas, include_alias", "include_alias pragma"]
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
