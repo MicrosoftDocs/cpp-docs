@@ -7,16 +7,16 @@ ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
 ---
 # include_alias
 
-Specifies that *short_filename* is to be used as an alias for *long_filename*. *long_filename* does not have to be long.
+Specifies that when *alias_filename* is found in a `#include` directive, the compiler substitutes *actual_filename* in its place.
 
 ## Syntax
 
-> #pragma include_alias("*long_filename*", "*short_filename*")
-> #pragma include_alias(<*long_filename*>, <*short_filename*>)
+> #pragma include_alias("*alias_filename*", "*actual_filename*")
+> #pragma include_alias(\<*alias_filename*>, \<*actual_filename*>)
 
 ## Remarks
 
-Some file systems allow longer header filenames than the 8.3 FAT file system limit. The compiler cannot simply truncate the longer names to 8.3, because the first eight characters of the longer header filenames may not be unique. Whenever the compiler encounters the *long_filename* string, it substitutes *short_filename*, and looks for the header file *short_filename* instead. This pragma must appear before the corresponding `#include` directives. For example:
+The **include_alias** pragma directive allows you to substitute files that have different names or paths for the file names included by source files. For example, some file systems allow longer header filenames than the 8.3 FAT file system limit. The compiler cannot simply truncate the longer names to 8.3, because the first eight characters of the longer header filenames may not be unique. Whenever the compiler encounters the *alias_filename* string, it substitutes *actual_filename*, and looks for the header file *actual_filename* instead. This pragma must appear before the corresponding `#include` directives. For example:
 
 ```cpp
 // First eight characters of these two files not unique.
