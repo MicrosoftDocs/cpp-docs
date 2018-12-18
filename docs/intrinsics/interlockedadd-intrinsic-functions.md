@@ -1,6 +1,6 @@
 ---
 title: "_InterlockedAdd Intrinsic Functions"
-ms.date: "11/04/2016"
+ms.date: "12/17/2018" 
 f1_keywords: ["_InterlockedAdd64_acq_cpp", "_InterlockedAdd64_acq", "_InterlockedAdd_acq", "_InterlockedAdd_nf", "_InterlockedAdd64_rel", "_InterlockedAdd64", "_InterlockedAdd_cpp", "_InterlockedAdd_rel_cpp", "_InterlockedAdd_rel", "_InterlockedAdd64_rel_cpp", "_InterlockedAdd64_cpp", "_InterlockedAdd_acq_cpp", "_InterlockedAdd64_nf", "_InterlockedAdd"]
 helpviewer_keywords: ["_InterlockedAdd_nf intrinsic", "_InterlockedAdd_rel intrinsic", "_InterlockedAdd intrinsic", "_InterlockedAdd64 intrinsic", "_InterlockedAdd64_acq intrinsic", "_InterlockedAdd64_nf intrinsic", "_InterlockedAdd_acq intrinsic", "_InterlockedAdd64_rel intrinsic"]
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
@@ -144,4 +144,4 @@ Return value: ffff00ffffffff
 ## See Also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
+[Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

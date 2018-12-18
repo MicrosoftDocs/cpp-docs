@@ -1,6 +1,6 @@
 ---
 title: "/homeparams (Copy Register Parameters to Stack)"
-ms.date: "11/04/2016"
+ms.date: "12/17/2018" 
 f1_keywords: ["/homeparams"]
 helpviewer_keywords: ["/homeparams compiler option [C++]", "-homeparams compiler option [C++]"]
 ms.assetid: 51067de4-24f7-436b-b8d9-bc867a7d53aa
@@ -19,7 +19,7 @@ Forces parameters passed in registers to be written to their locations on the st
 
 This compiler option is only for the x64 compilers (native and cross compile).
 
-When parameters are passed in an x64 compilation, calling conventions require stackspace for parameters, even for parameters passed in registers. For more information, see [Parameter Passing](../../build/parameter-passing.md). However, by default in a release build, the register parameters will not be written to the stack, into the space that is already provided for the parameters. This makes it difficult to debug an optimized (release) build of your program.
+When parameters are passed in an x64 compilation, calling conventions require stackspace for parameters, even for parameters passed in registers. For more information, see [Parameter Passing](../../build/calling-convention.md#parameter-passing). However, by default in a release build, the register parameters will not be written to the stack, into the space that is already provided for the parameters. This makes it difficult to debug an optimized (release) build of your program.
 
 For a release build, use **/homeparams** to ensure that you can debug your application. **/homeparams** does imply a performance disadvantage, because it does require a cycle to load the register parameters on to the stack.
 

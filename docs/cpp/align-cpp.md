@@ -1,6 +1,6 @@
 ---
 title: "align (C++)"
-ms.date: "11/04/2016"
+ms.date: "12/17/2018" 
 f1_keywords: ["align_cpp"]
 helpviewer_keywords: ["align __declspec keyword", "__declspec keyword [C++], align"]
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
@@ -69,7 +69,7 @@ For more information, see:
 
 - [How align Works with Data Packing](#vclrfhowalignworkswithdatapacking)
 
-- [Examples of Structure Alignment](../build/examples-of-structure-alignment.md) (x64 specific)
+- [Examples of Structure Alignment](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
 
 ##  <a name="vclrfalignexamples"></a> align Examples
 
@@ -235,4 +235,4 @@ The offset of an object is based on the offset of the previous object and the cu
 
 [__declspec](../cpp/declspec.md)<br/>
 [Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)<br/>
-[Overview of x64 Calling Conventions](../build/overview-of-x64-calling-conventions.md)
+[x64 Software Conventions](../build/x64-software-conventions.md)

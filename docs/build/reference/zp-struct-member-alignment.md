@@ -1,6 +1,6 @@
 ---
 title: "/Zp (Struct Member Alignment)"
-ms.date: "04/30/2018"
+ms.date: "12/17/2018" 
 f1_keywords: ["/zp", "VC.Project.VCCLCompilerTool.StructMemberAlignment", "VC.Project.VCCLWCECompilerTool.StructMemberAlignment"]
 helpviewer_keywords: ["Struct Member Alignment compiler option", "Zp compiler option", "/Zp compiler option [C++]", "-Zp compiler option [C++]"]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
@@ -40,7 +40,7 @@ You can also use [pack](../../preprocessor/pack.md) to control structure packing
 
 - [__unaligned](../../cpp/unaligned.md)
 
-- [Examples of Structure Alignment](../../build/examples-of-structure-alignment.md) (x64 specific)
+- [Examples of Structure Alignment](../../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
 
 ### To set this compiler option in the Visual Studio development environment
 

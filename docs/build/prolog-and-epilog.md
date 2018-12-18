@@ -1,6 +1,6 @@
 ---
 title: "Prolog and Epilog"
-ms.date: "11/04/2016"
+ms.date: "12/17/2018" 
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
 ---
 # Prolog and Epilog
@@ -11,9 +11,11 @@ If the fixed allocation in the stack is more than one page (that is, greater tha
 
 The preferred method for saving nonvolatile registers is to move them onto the stack before the fixed stack allocation. If the fixed stack allocation were performed before the nonvolatile registers were saved, then most probably a 32-bit displacement would be required to address the saved register area (reportedly, pushes of registers are just as fast as moves and should remain so for the foreseeable future in spite of the implied dependency between pushes). Nonvolatile registers can be saved in any order. However, the first use of a nonvolatile register in the prolog must be to save it.
 
+## Prolog code
+
 The code for a typical prolog might be:
 
-```
+```MASM
 mov       [RSP + 8], RCX
 push   R15
 push   R14
@@ -25,9 +27,9 @@ lea      R13, 128[RSP]
 
 This prolog stores the argument register RCX in its home location, saves nonvolatile registers R13-R15, allocates the fixed part of the stack frame, and establishes a frame pointer that points 128 bytes into the fixed allocation area. Using an offset allows more of the fixed allocation area to be addressed with one-byte offsets.
 
-If the fixed allocation size is greater than or equal to one page of memory, then a helper function must be called before modifying RSP. This helper, __chkstk, is responsible for probing the to-be-allocated stack range, to ensure that the stack is extended properly. In that case, the previous prolog example would instead be:
+If the fixed allocation size is greater than or equal to one page of memory, then a helper function must be called before modifying RSP. This helper, `__chkstk`, is responsible for probing the to-be-allocated stack range, to ensure that the stack is extended properly. In that case, the previous prolog example would instead be:
 
-```
+```MASM
 mov       [RSP + 8], RCX
 push   R15
 push   R14
@@ -39,7 +41,9 @@ lea      R13, 128[RSP]
 ...
 ```
 
-The __chkstk helper will not modify any registers other than R10, R11, and the condition codes. In particular, it will return RAX unchanged and leave all nonvolatile registers and argument-passing registers unmodified.
+The `__chkstk` helper will not modify any registers other than R10, R11, and the condition codes. In particular, it will return RAX unchanged and leave all nonvolatile registers and argument-passing registers unmodified.
+
+## Epilog code
 
 Epilog code exists at each exit to a function. Whereas there is normally only one prolog, there can be many epilogs. Epilog code trims the stack to its fixed allocation size (if necessary), deallocates the fixed stack allocation, restores nonvolatile registers by popping their saved values from the stack, and returns.
 
@@ -47,7 +51,7 @@ The epilog code must follow a strict set of rules for the unwind code to reliabl
 
 If no frame pointer is used in the function, then the epilog must first deallocate the fixed part of the stack, the nonvolatile registers are popped, and control is returned to the calling function. For example,
 
-```
+```MASM
 add      RSP, fixed-allocation-size
 pop      R13
 pop      R14
@@ -57,7 +61,7 @@ ret
 
 If a frame pointer is used in the function, then the stack must be trimmed to its fixed allocation prior to the execution of the epilog. This is technically not part of the epilog. For example, the following epilog could be used to undo the prolog previously used:
 
-```
+```MASM
 lea      RSP, -128[R13]
 ; epilogue proper starts here
 add      RSP, fixed-allocation-size
@@ -69,7 +73,7 @@ ret
 
 In practice, when a frame pointer is used, there is no good reason to adjust RSP in two steps, so the following epilog would be used instead:
 
-```
+```MASM
 lea      RSP, fixed-allocation-size - 128[R13]
 pop      R13
 pop      R14
