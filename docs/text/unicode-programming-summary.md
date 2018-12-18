@@ -14,7 +14,7 @@ To take advantage of the MFC and C run-time support for Unicode, you need to:
 
 - Specify entry point.
 
-   On the **Output** page of the **Linker** folder in the project's [Property Pages](../ide/property-pages-visual-cpp.md) dialog box, set the **Entry Point** symbol to `wWinMainCRTStartup`.
+   On the **Advanced** page of the **Linker** folder in the project's [Property Pages](../ide/property-pages-visual-cpp.md) dialog box, set the **Entry Point** symbol to `wWinMainCRTStartup`.
 
 - Use portable run-time functions and types.
 
