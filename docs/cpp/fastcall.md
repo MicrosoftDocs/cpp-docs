@@ -19,11 +19,11 @@ The **__fastcall** calling convention specifies that arguments to functions are 
 |Case-translation convention|No case translation performed.|
 
 > [!NOTE]
->  Future compiler versions may use different registers to store parameters.
+> Future compiler versions may use different registers to store parameters.
 
 Using the [/Gr](../build/reference/gd-gr-gv-gz-calling-convention.md) compiler option causes each function in the module to compile as **__fastcall** unless the function is declared by using a conflicting attribute, or the name of the function is `main`.
 
-The **__fastcall** keyword is accepted and ignored by the compilers that target ARM and x64 architectures; on an x64 chip, by convention, the first four arguments are passed in registers when possible, and additional arguments are passed on the stack. For more information, see [x64 Calling Convention](../build/calling-convention.md). On an ARM chip, up to four integer arguments and eight floating-point arguments may be passed in registers, and additional arguments are passed on the stack.
+The **__fastcall** keyword is accepted and ignored by the compilers that target ARM and x64 architectures; on an x64 chip, by convention, the first four arguments are passed in registers when possible, and additional arguments are passed on the stack. For more information, see [x64 Calling Convention](../build/x64-calling-convention.md). On an ARM chip, up to four integer arguments and eight floating-point arguments may be passed in registers, and additional arguments are passed on the stack.
 
 For non-static class functions, if the function is defined out-of-line, the calling convention modifier does not have to be specified on the out-of-line definition. That is, for class non-static member methods, the calling convention specified during declaration is assumed at the point of definition. Given this class definition:
 

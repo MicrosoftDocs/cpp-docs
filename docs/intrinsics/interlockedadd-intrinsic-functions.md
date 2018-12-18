@@ -9,7 +9,7 @@ ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
 
 **Microsoft Specific**
 
-Perform an atomic addition, which ensures that the operation completes successfully when multiple threads have access to a shared variable.
+These functions perform an atomic addition, which makes sure that the operation completes successfully when more than one thread has access to a shared variable.
 
 ## Syntax
 
@@ -77,13 +77,13 @@ Both functions return the result of the addition.
 
 ## Remarks
 
-The versions of these functions with the `_acq` or `_rel` suffixes perform an interlocked addition following acquire or release semantics. Acquire semantics means that the result of the operation are made visible to all threads and processors before any subsequent memory reads and writes. Acquire is useful when entering a critical section. Release semantics means that all memory reads and writes are forced to be made visible to all threads and processors before the result of the operation is made visible itself. Release is useful when leaving a critical section. The intrinsics with an `_nf` ("no fence") suffix do not act as a memory barrier.
+The versions of these functions with the `_acq` or `_rel` suffixes perform an interlocked addition following acquire or release semantics. *Acquire semantics* means that the result of the operation is made visible to all threads and processors before any later memory reads and writes. Acquire is useful when entering a critical section. *Release semantics* means that all memory reads and writes are forced to be made visible to all threads and processors before the result of the operation is made visible itself. Release is useful when leaving a critical section. The intrinsics with an `_nf` ("no fence") suffix don't act as a memory barrier.
 
 These routines are only available as intrinsics.
 
 ## Example
 
-```
+```cpp
 // interlockedadd.cpp
 // Compile with: /Oi /EHsc
 // processor: ARM
@@ -104,13 +104,13 @@ int main()
 
 ## Output
 
-```
+```Output
 0xffffff00 0xff0000 0xffffff00
 ```
 
 ## Example
 
-```
+```cpp
 // interlockedadd64.cpp
 // compile with: /Oi /EHsc
 // processor: ARM
@@ -134,7 +134,7 @@ int main()
 
 ## Output
 
-```
+```Output
 ff0000000000 + ff0000ffffffff = ffff00ffffffff
 Return value: ffff00ffffffff
 ```
