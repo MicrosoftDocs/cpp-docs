@@ -19,7 +19,7 @@ Describes Unicode, a specification for supporting all character sets, including 
 [Support for Multibyte Character Sets (MBCS)](../text/support-for-multibyte-character-sets-mbcss.md)<br/>
 Discusses MBCS, an alternative to Unicode for supporting character sets, like Japanese and Chinese, that cannot be represented in a single byte.
 
-[Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md)<br/>
+[Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md)<br/>
 Provides Microsoft-specific generic-text mappings for many data types, routines, and other objects.
 
 [How to: Convert Between Various String Types](../text/how-to-convert-between-various-string-types.md)<br/>
