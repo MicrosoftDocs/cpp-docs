@@ -16,7 +16,7 @@ This section contains topics about targeting 64-bit x64 hardware with the Visual
 
 - [Common Visual C++ 64-bit Migration Issues](../build/common-visual-cpp-64-bit-migration-issues.md)
 
-- [x64 Software Conventions](../build/x64-software-conventions.md)
+- [x64 software conventions](../build/x64-software-conventions.md)
 
 ## Related Sections
 
