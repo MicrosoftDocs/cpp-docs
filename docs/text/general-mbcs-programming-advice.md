@@ -9,7 +9,7 @@ ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
 
 Use the following tips:
 
-- For flexibility, use run-time macros such as `_tcschr` and `_tcscpy` when possible. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).
+- For flexibility, use run-time macros such as `_tcschr` and `_tcscpy` when possible. For more information, see [Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md).
 
 - Use the C run-time `_getmbcp` function to get information about the current code page.
 

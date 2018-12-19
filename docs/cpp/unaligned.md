@@ -1,6 +1,6 @@
 ---
 title: "__unaligned"
-ms.date: "10/10/2018"
+ms.date: "12/17/2018" 
 f1_keywords: ["__unaligned_cpp", "__unaligned", "_unaligned"]
 helpviewer_keywords: ["__unaligned keyword [C++]"]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
@@ -27,7 +27,7 @@ For more information about alignment, see:
 
 - [/Zp (Struct Member Alignment)](../build/reference/zp-struct-member-alignment.md)
 
-- [Examples of Structure Alignment](../build/examples-of-structure-alignment.md)
+- [Examples of Structure Alignment](../build/x64-software-conventions.md#examples-of-structure-alignment)
 
 ## See also
 
