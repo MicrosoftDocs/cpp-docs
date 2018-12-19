@@ -1,39 +1,35 @@
 ---
 title: "/homeparams (Copy Register Parameters to Stack)"
-ms.date: "11/04/2016"
+ms.date: "12/17/2018" 
 f1_keywords: ["/homeparams"]
 helpviewer_keywords: ["/homeparams compiler option [C++]", "-homeparams compiler option [C++]"]
 ms.assetid: 51067de4-24f7-436b-b8d9-bc867a7d53aa
 ---
 # /homeparams (Copy Register Parameters to Stack)
 
-Forces parameters passed in registers to be written to their locations on the stack upon function entry.
+Forces parameters passed in registers to also be written to their locations on the stack upon function entry.
 
 ## Syntax
 
-```
-/homeparams
-```
+> **/homeparams**
 
 ## Remarks
 
-This compiler option is only for the x64 compilers (native and cross compile).
+This compiler option is only available in the native and cross-compilers that target x64.
 
-When parameters are passed in an x64 compilation, calling conventions require stackspace for parameters, even for parameters passed in registers. For more information, see [Parameter Passing](../../build/parameter-passing.md). However, by default in a release build, the register parameters will not be written to the stack, into the space that is already provided for the parameters. This makes it difficult to debug an optimized (release) build of your program.
+The x64 calling convention requires stack space to be allocated for all parameters, even for parameters passed in registers. For more information, see [Parameter Passing](../../build/x64-calling-convention.md#parameter-passing). By default, the register parameters aren't copied into the stack space allocated for them in release builds. This makes it difficult to debug an optimized release build of your program.
 
-For a release build, use **/homeparams** to ensure that you can debug your application. **/homeparams** does imply a performance disadvantage, because it does require a cycle to load the register parameters on to the stack.
+For release builds, you can use the **/homeparams** option to force the compiler to copy register parameters to the stack, to ensure that you can debug your application. **/homeparams** does imply a performance disadvantage, because it requires an extra cycle to load the register parameters onto the stack.
 
-In a debug build, the stack is always populated with parameters passed in registers.
+In debug builds, the stack is always populated with parameters passed in registers.
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
+1. Open the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Click the **Command Line** property page.
-
-1. Type the compiler option in the **Additional Options** box.
+1. Enter the compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 

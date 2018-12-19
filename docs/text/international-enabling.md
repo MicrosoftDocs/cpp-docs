@@ -16,7 +16,7 @@ Most traditional C and C++ code makes assumptions about character and string man
 
    - Use the same portable run-time functions that make MFC portable under either environment.
 
-   - Make literal strings and characters portable under either environment, using the `_T` macro. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).
+   - Make literal strings and characters portable under either environment, using the `_T` macro. For more information, see [Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md).
 
    - Take precautions when parsing strings under MBCS. These precautions are not needed under Unicode. For more information, see [MBCS Programming Tips](../text/mbcs-programming-tips.md).
 

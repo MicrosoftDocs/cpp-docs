@@ -26,9 +26,9 @@ Visual C++ supports three kinds of exception handling:
 
 Use the [/EH](../build/reference/eh-exception-handling-model.md) compiler option to specify the type of exception handling to use in a project; C++ exception handling is the default. Do not mix the error handling mechanisms; for example, do not use C++ exceptions with structured exception handling. Using C++ exception handling makes your code more portable, and it allows you to handle exceptions of any type. For more information about the drawbacks of structured exception handling, see [Structured Exception Handling](../cpp/structured-exception-handling-c-cpp.md). For advice about mixing MFC macros and C++ exceptions, see [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).
 
-For information on handling exceptions in CLR applications, see [Exception Handling](../windows/exception-handling-cpp-component-extensions.md).
+For information on handling exceptions in CLR applications, see [Exception Handling (C++/CLI and C++/CX)](../windows/exception-handling-cpp-component-extensions.md).
 
-For information about exception handling on x64 processors, see [Exception Handling (x64)](../build/exception-handling-x64.md).
+For information about exception handling on x64 processors, see [x64 exception handling](../build/exception-handling-x64.md).
 
 ## See also
 

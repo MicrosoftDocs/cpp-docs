@@ -1,6 +1,6 @@
 ---
 title: "pack"
-ms.date: "09/17/2018"
+ms.date: "12/17/2018" 
 f1_keywords: ["pack_CPP", "vc-pragma.pack"]
 helpviewer_keywords: ["pragmas, pack", "pack pragma"]
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
@@ -47,7 +47,7 @@ For more information about how to modify alignment, see these topics:
 
 - [__unaligned](../cpp/unaligned.md)
 
-- [Examples of Structure Alignment](../build/examples-of-structure-alignment.md) (x64 specific)
+- [Examples of Structure Alignment](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
 
    > [!WARNING]
    > Note that in Visual Studio 2015 and later you can use the standard alignas and alignof operators which, unlike `__alignof` and `declspec( align )` are portable across compilers. The C++ standard does not address packing, so you must still use **pack** (or the corresponding extension on other compilers) to specify alignments smaller than the target architecture’s word size.

@@ -1,6 +1,6 @@
 ---
 title: "Argument Passing and Naming Conventions"
-ms.date: "11/04/2016"
+ms.date: "12/17/2018" 
 helpviewer_keywords: ["argument passing [C++], conventions", "arguments [C++], widening", "coding conventions, arguments", "arguments [C++], passing", "registers, return values", "thiscall keyword [C++]", "naming conventions [C++], arguments", "arguments [C++], naming", "passing arguments [C++], conventions", "conventions [C++], argument names"]
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
 ---
@@ -15,11 +15,11 @@ On x86 plaftorms, all arguments are widened to 32 bits when they are passed. Ret
 The compiler generates prolog and epilog code to save and restore the ESI, EDI, EBX, and EBP registers, if they are used in the function.
 
 > [!NOTE]
->  When a struct, union, or class is returned from a function by value, all definitions of the type need to be the same, else the program may fail at runtime.
+> When a struct, union, or class is returned from a function by value, all definitions of the type need to be the same, else the program may fail at runtime.
 
 For information on how to define your own function prolog and epilog code, see [Naked Function Calls](../cpp/naked-function-calls.md).
 
-For information about the default calling conventions in code that targets x64 platforms, see [Overview of x64 Calling Conventions](../build/overview-of-x64-calling-conventions.md). For information about calling convention issues in code that targets ARM platforms, see [Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md).
+For information about the default calling conventions in code that targets x64 platforms, see [x64 Calling Convention](../build/x64-calling-convention.md). For information about calling convention issues in code that targets ARM platforms, see [Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md).
 
 The following calling conventions are supported by the Visual C/C++ compiler.
 
