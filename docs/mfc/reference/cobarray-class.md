@@ -49,7 +49,7 @@ class CObArray : public CObject
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::operator [ ]](#operator_at)|Sets or gets the element at the specified index.|
+|[CObArray::operator \[ \]](#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 
