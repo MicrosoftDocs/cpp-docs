@@ -171,7 +171,7 @@ A pointer to a class object.
 
 The *pobject* parameter should be a pointer to an object and can be **const**. The object pointed to and the class must support `CObject` run-time class information. As an example, to ensure that `pDocument` is a pointer to an object of the `CMyDoc` class, or any of its derivatives, you could code:
 
-[!code-cpp\[NVC_MFCDocView#194](../../mfc/codesnippet/cpp/diagnostic-services_3.cpp)]
+[!code-cpp[NVC_MFCDocView#194](../../mfc/codesnippet/cpp/diagnostic-services_3.cpp)]
 
 Using the `ASSERT_KINDOF` macro is exactly the same as coding:
 
