@@ -86,7 +86,7 @@ Throws <xref:System.ApplicationException> if lock acquisition doesn't occur befo
 
 The first three forms of the constructor try to acquire a lock on `_object` within the specified timeout period (or <xref:System.Threading.Timeout.Infinite> if none is specified).
 
-The fourth form of the constructor doesn't acquire a lock on `_object`. `lock_later` is a member of the [lock_when Enum](../dotnet/lock-when-enum.md). Use [lock::acquire](../dotnet/lock-acquire.md) or [lock::try_acquire](../dotnet/lock-try-acquire.md) to acquire the lock in this case.
+The fourth form of the constructor doesn't acquire a lock on `_object`. `lock_later` is a member of the [lock_when enum](../dotnet/lock-when-enum.md). Use [lock::acquire](../dotnet/lock-acquire.md) or [lock::try_acquire](../dotnet/lock-try-acquire.md) to acquire the lock in this case.
 
 The lock will automatically be released when the destructor is called.
 
