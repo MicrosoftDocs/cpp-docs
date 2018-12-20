@@ -195,7 +195,7 @@ A COM interface pointer.
 
 ### Remarks
 
-The no-argument constructor assigns `nullptr` to the underlying object handle. Future calls to the `com::ptr` will validate the internal object and silently fail until an object is actually created or attached.
+The no-argument constructor assigns `nullptr` to the underlying object handle. Future calls to the `com::ptr` will validate the internal object and silently fail until an object is created or attached.
 
 The one-argument constructor adds a reference to the COM object but doesn't release the caller's reference, so the caller must call `Release` on the COM object to truly give up control. When the `com::ptr`'s destructor is called it will automatically release its references on the COM object.
 
@@ -1151,7 +1151,7 @@ This operator allows you to call methods of the owned COM object. It returns a t
 
 ### Example
 
-This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object. The `WriteDocument` functions uses `operator->` to call the `get_firstChild` member of the document object.
+This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object. The `WriteDocument` function uses `operator->` to call the `get_firstChild` member of the document object.
 
 ```cpp
 // comptr_op_member.cpp
@@ -1356,7 +1356,7 @@ operator bool();
 
 The owned COM object is valid if it's not `nullptr`.
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+This operator converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
 
 ### Example
 
