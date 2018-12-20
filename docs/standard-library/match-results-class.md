@@ -72,7 +72,7 @@ The template class describes an object that controls a non-modifiable sequence o
 |Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Copy a match_results object.|
-|[operator[]](#op_at)|Access a subobject.|
+|[operator\[\]](#op_at)|Access a subobject.|
 
 ## Requirements
 

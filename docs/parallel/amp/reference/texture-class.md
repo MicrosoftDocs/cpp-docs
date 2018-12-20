@@ -56,7 +56,7 @@ The rank of the texture.
 |Name|Description|
 |----------|-----------------|
 |[operator()](#operator_call)|Returns the element value that is specified by the parameters.|
-|[operator[]](#operator_at)|Returns the element that is at the specified index.|
+|[operator\[\]](#operator_at)|Returns the element that is at the specified index.|
 |[operator=](#operator_eq)|Copies the specified [texture](texture-class.md) object to this one.|
 
 ### Public Constants
