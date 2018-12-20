@@ -45,7 +45,7 @@ class CMapStringToOb : public CObject
 
 |Name|Description|
 |----------|-----------------|
-|[CMapStringToOb::operator [ ]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
+|[CMapStringToOb::operator \[ \]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
 
 ## Remarks
 

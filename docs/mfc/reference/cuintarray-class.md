@@ -57,7 +57,7 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::operator [ ]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
+|[CObArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 
