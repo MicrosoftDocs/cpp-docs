@@ -2695,6 +2695,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/mixed-pure-and-verifiable-feature-comparison-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/pure-and-verifiable-code-cpp-cli",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/greater-equal-stl-clr.md",
             "redirect_url": "/cpp/dotnet/functional-stl-clr#greater_equal",
             "redirect_document_id": false
@@ -6728,6 +6733,11 @@
             "source_path": "docs/parallel/amp/reference/index.md",
             "redirect_url": "/cpp/parallel/amp/reference/reference-cpp-amp",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/concrt/convert-an-openmp-loop-that uses-exception-handling.md,
+            "redirect_url": "/cpp/parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/parallel/concrt/index.md",
