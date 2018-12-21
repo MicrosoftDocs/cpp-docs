@@ -6735,7 +6735,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/concrt/convert-an-openmp-loop-that uses-exception-handling.md,
+            "source_path": "docs/parallel/concrt/convert-an-openmp-loop-that uses-exception-handling.md",
             "redirect_url": "/cpp/parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling",
             "redirect_document_id": true
         },
