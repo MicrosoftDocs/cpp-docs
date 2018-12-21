@@ -74,6 +74,6 @@ while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )
 
 You can use [GetXMLColumnData](../../data/oledb/cxmlaccessor-getxmlcolumndata.md) to retrieve the column (data type) information as XML-formatted string data.
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

@@ -46,7 +46,7 @@ For more information, see the following topics:
 
 - [Common OLE DB Consumer Scenarios (Examples)](../../data/oledb/working-with-ole-db-consumer-templates.md)
 
-## See Also
+## See also
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [Data Access](../data-access-in-cpp.md)<br/>

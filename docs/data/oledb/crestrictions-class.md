@@ -79,7 +79,7 @@ You can specify a maximum of seven restrictions on a schema rowset.
 
 See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) for information about the defined restrictions on each schema rowset.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

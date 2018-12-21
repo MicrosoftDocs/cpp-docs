@@ -24,6 +24,6 @@ The OLE DB provider for SQL Server (SQLOLEDB) supports the following mechanisms 
 > [!NOTE]
 > You cannot use stored procedures with the OLE DB provider for Jet because that provider does not support stored procedures; only constants are allowed in query strings.
 
-## See Also
+## See also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

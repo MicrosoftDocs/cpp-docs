@@ -39,6 +39,6 @@ The Microsoft OLE DB Providers ignore the following OLE DB properties:
 
 - `DBPROP_CANHOLDROWS` is ignored; the provider specifies its own limit.
 
-## See Also
+## See also
 
 [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

@@ -96,6 +96,6 @@ When there are no more rows, providers return DB_S_ENDOFROWSET. The DB_S_ENDOFRO
 
 You should now be able to build and test the program.
 
-## See Also
+## See also
 
 [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md)

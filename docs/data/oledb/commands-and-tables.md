@@ -21,6 +21,6 @@ The [ATL OLE DB Consumer Wizard](../../atl/reference/atl-ole-db-consumer-wizard.
 
    `CCommand` has three template arguments: an accessor type, a rowset type, and a result type (`CNoMultipleResults`, by default, or `CMultipleResults`). If you specify `CMultipleResults`, the `CCommand` class supports the `IMultipleResults` interface and handles multiple rowsets. The [DBVIEWER](https://github.com/Microsoft/VCSamples) sample shows how to handle the multiple results.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

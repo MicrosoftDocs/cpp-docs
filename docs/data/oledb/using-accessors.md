@@ -18,6 +18,6 @@ The following topics explain how to determine which type of accessor is best for
 
 - [Accessing XML Data](../../data/oledb/accessing-xml-data.md)
 
-## See Also
+## See also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

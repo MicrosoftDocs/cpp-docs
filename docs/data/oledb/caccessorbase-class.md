@@ -120,7 +120,7 @@ A standard HRESULT.
 
 Called from [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md).
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

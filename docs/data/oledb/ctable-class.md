@@ -93,7 +93,7 @@ A standard HRESULT.
 
 For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

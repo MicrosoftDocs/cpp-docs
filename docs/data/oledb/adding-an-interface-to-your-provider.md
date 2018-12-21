@@ -34,6 +34,6 @@ BEGIN_COM_MAP(CCustomRowset)
 END_COM_MAP()
 ```
 
-## See Also
+## See also
 
 [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

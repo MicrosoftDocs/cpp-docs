@@ -96,6 +96,6 @@ You can retrieve the length of a variable-length column or the status of a colum
 
 When you use `CDynamicAccessor`, the length and status are bound for you automatically. To retrieve the length and status values, use the `GetLength` and `GetStatus` member functions.
 
-## See Also
+## See also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

@@ -27,6 +27,6 @@ product.Open(session, _T("Products"), &propset);
 AtlAdvise(product.m_spRowset, GetUnknown(), IID_IRowsetNotify, &m_dwCookie);
 ```
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

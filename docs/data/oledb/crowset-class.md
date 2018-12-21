@@ -695,7 +695,7 @@ This method requires the optional interface `IRowsetUpdate`, which might not be 
 
 A standard HRESULT.
 
-## See Also
+## See also
 
 [DBViewer Sample](../../visual-cpp-samples.md)<br/>
 [MultiRead Sample](../../visual-cpp-samples.md)<br/>

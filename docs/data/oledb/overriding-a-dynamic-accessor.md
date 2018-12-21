@@ -60,6 +60,6 @@ while (product.MoveNext() == S_OK)
 }
 ```
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

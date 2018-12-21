@@ -47,6 +47,6 @@ product.GetBookmark(&bookmark);
 
 For information about supporting bookmarks in providers, see [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md).
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

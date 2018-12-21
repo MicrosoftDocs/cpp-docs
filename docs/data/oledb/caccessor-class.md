@@ -33,7 +33,7 @@ If your accessor contains fields that point to memory (such as a `BSTR` or inter
 
 **Header:** atldbcli.h
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

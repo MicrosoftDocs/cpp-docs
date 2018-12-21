@@ -13,6 +13,6 @@ In ODBC terminology, dynasets and snapshots are referred to as cursors. A cursor
 > [!NOTE]
 >  For updateable recordsets, your ODBC driver must support either positioned update statements or the `::SQLSetPos` ODBC API function. If both are supported, MFC uses `::SQLSetPos` for efficiency. Alternatively, for snapshots, you can use the cursor library, which provides the required support for updateable snapshots (static cursors and positioned update statements).
 
-## See Also
+## See also
 
 [ODBC Basics](../../data/odbc/odbc-basics.md)

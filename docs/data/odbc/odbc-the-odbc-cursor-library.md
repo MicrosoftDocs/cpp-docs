@@ -46,6 +46,6 @@ The second issue concerns limitations of class [CTime](../../atl-mfc-shared/refe
 
 When you connect to a data source — by calling [CDatabase::OpenEx](../../mfc/reference/cdatabase-class.md#openex) or [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) — you can specify whether to use the cursor library for the data source. If you will be creating snapshots on that data source, specify the `CDatabase::useCursorLib` option in the `dwOptions` parameter to `OpenEx` or specify TRUE for the *bUseCursorLib* parameter to `Open` (the default value is TRUE). If your ODBC driver supports dynasets and you want to open dynasets on the data source, do not use the cursor library (it masks some driver functionality needed for dynasets). In that case, do not specify `CDatabase::useCursorLib` in `OpenEx` or specify FALSE for the *bUseCursorLib* parameter in `Open`.
 
-## See Also
+## See also
 
 [ODBC Basics](../../data/odbc/odbc-basics.md)

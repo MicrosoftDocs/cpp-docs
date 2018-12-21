@@ -20,7 +20,7 @@ As long as the registry entry exists, the provider's objects is aggregated. The 
 
 If the registry entry doesn't exist for the provider, the Component Managers won't collect the provider's objects. No services will be turned on, even if explicitly requested by the user.
 
-## See Also
+## See also
 
 [Resource Pooling](/previous-versions/windows/desktop/ms713655(v=vs.85))<br/>
 [How Consumers Use Resource Pooling](/previous-versions/windows/desktop/ms715907(v=vs.85))<br/>

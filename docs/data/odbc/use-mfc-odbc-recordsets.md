@@ -68,6 +68,6 @@ These topics explain how to work with ODBC recordsets through MFC.
 
 - [Bind data columns in a recordset dynamically at run time](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

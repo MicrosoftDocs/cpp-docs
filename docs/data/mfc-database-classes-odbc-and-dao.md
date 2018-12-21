@@ -21,6 +21,6 @@ For more information, see the following topics:
 
 - [Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md)
 
-## See Also
+## See also
 
 [Data Access Programming (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

@@ -95,7 +95,7 @@ When you finish with your recordset, you must dispose of it and deallocate its m
 
 `Close` frees the recordset's `HSTMT` handle. It does not destroy the C++ object.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Scrolling (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)<br/>

@@ -16,7 +16,7 @@ ms.assetid: 2c7914b6-2dc3-40c3-b2f2-8371da2a4063
 
 1. Referring to the information about using the [toolbar editor](../windows/toolbar-editor.md), edit the toolbar resource to add toolbar buttons for your record navigation commands.
 
-## See Also
+## See also
 
 [Supporting Navigation in a Record View](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)<br/>
 [Using a Record View](../data/using-a-record-view-mfc-data-access.md)

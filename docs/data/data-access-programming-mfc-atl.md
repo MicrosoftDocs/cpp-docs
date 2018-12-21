@@ -22,7 +22,7 @@ If you use C++/CLI, you can continue to use ADO.NET as always. For more informat
 
 For more information about the history of data access technologies on Microsoft Windows, see [Microsoft Data Access Components (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Data_Access_Components).
 
-## See Also
+## See also
 
 [Data Access](data-access-in-cpp.md)<br/>
 [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc)<br/>

@@ -79,6 +79,6 @@ For more complex examples of how to use schema rowset classes, see the [CatDB](h
 
 For information about provider support for schema rowsets, see [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md).
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

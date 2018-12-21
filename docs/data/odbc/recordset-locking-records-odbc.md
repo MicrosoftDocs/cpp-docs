@@ -50,7 +50,7 @@ The new locking mode remains in effect until you change it again or the recordse
 > [!NOTE]
 >  Relatively few ODBC drivers currently support pessimistic locking.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)<br/>

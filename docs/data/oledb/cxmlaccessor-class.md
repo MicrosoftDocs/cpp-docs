@@ -102,7 +102,7 @@ The following shows how the row data is formatted in XML. `DATA` below represent
 
 `</row>`
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

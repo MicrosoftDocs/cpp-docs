@@ -16,6 +16,6 @@ Some providers must make a separate connection for each session. These additiona
 
 Finally, because ADO automatically makes use of OLE DB services, you can use ADO to establish connections and the pooling and enlistment happen automatically.
 
-## See Also
+## See also
 
 [OLE DB Resource Pooling and Services](../../data/oledb/ole-db-resource-pooling-and-services.md)

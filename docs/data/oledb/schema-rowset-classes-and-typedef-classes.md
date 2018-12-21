@@ -794,6 +794,6 @@ The following table lists the class data members and their corresponding OLE DB 
 
 **Header:** atldbsch.h
 
-## See Also
+## See also
 
 [CRestrictions Class](../../data/oledb/crestrictions-class.md)

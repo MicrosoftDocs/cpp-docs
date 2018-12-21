@@ -363,7 +363,7 @@ A standard HRESULT.
 
 This method wraps the OLE DB method [ICommandPrepare::Unprepare](/previous-versions/windows/desktop/ms719635(v=vs.85)).
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

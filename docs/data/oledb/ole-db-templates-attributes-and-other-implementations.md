@@ -42,7 +42,7 @@ The MFC library has one class, [COleDBRecordView](../../mfc/reference/coledbreco
 
 In the cases where the OLE DB Templates don't support OLE DB functionality, you need to use the OLE DB interfaces themselves. For more information, see [OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming) in the Windows SDK.
 
-## See Also
+## See also
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)

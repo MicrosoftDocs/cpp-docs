@@ -253,6 +253,6 @@ END_ACCESSOR_MAP()
 
 When you've updated the code, you should be able to build and execute the provider with the `IRowsetLocate` interface.
 
-## See Also
+## See also
 
 [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

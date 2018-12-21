@@ -13,6 +13,6 @@ The MFC ODBC database classes encapsulate the ODBC API function calls you would 
 
 Although the database classes encapsulate ODBC functionality, they do not provide a one-to-one mapping of ODBC API functions. The database classes provide a higher level of abstraction, modeled after data-access objects found in Microsoft Access and Microsoft Visual Basic. For more information, see [ODBC and MFC](../../data/odbc/odbc-and-mfc.md).
 
-## See Also
+## See also
 
 [ODBC Basics](../../data/odbc/odbc-basics.md)

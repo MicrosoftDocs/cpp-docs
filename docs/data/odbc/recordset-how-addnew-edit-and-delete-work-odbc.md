@@ -137,7 +137,7 @@ When you call `Delete`:
 
 For information about the SQL statements used in update operations, see [SQL](../../data/odbc/sql.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: More About Updates (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>

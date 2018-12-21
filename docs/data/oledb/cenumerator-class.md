@@ -111,7 +111,7 @@ HRESULT Open(const CEnumerator& enumerator) throw();
 
 A standard HRESULT.
 
-## See Also
+## See also
 
 [DBViewer](../../visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

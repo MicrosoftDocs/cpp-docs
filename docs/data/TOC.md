@@ -23,4 +23,3 @@
 ##### [Record View Code Created by Application Wizard (MFC Data Access)](record-view-code-created-by-application-wizard-mfc-data-access.md)
 ##### [Changes You Might Make to the Default Code (MFC Data Access)](changes-you-might-make-to-the-default-code-mfc-data-access.md)
 #### [Filling a List Box from a Second Recordset (MFC Data Access)](filling-a-list-box-from-a-second-recordset-mfc-data-access.md)
-

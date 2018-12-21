@@ -425,6 +425,6 @@ m_rgRowData.Add(trData[0]);
 
 This code specifies, among other things, that the column supports a default value of 0, that it be writeable, and that all data in the column have the same length. If you want the data in a column to have variable length, you would not set this flag.
 
-## See Also
+## See also
 
 [Creating an OLE DB Provider](creating-an-ole-db-provider.md)

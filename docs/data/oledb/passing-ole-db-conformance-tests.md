@@ -43,6 +43,6 @@ The code first checks to see whether the property is linked to another. If the p
 
 You might also want to add the `IsValidValue` routine to your code. The templates call `IsValidValue` when trying to set a property. You would override this method if you require additional processing when setting a property value. You can have one of these methods for each property set.
 
-## See Also
+## See also
 
 [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

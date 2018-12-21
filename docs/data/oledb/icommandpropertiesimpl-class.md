@@ -78,7 +78,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
