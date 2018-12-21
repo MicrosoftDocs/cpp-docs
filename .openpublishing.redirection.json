@@ -6441,12 +6441,12 @@
         }, 
         { 
             "source_path": "docs/dotnet/lock-operator-equality.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#operator==", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-equality", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-operator-inequality.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#operator!=", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-inequality", 
             "redirect_document_id": false 
         },
         { 
