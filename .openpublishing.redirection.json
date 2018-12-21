@@ -6451,82 +6451,82 @@
         },
         { 
             "source_path": "docs/dotnet/marshal-context-marshal-context.md", 
-            "redirect_url": "cpp/dotnet/marshal-context-class#marshal-context", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-context", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md", 
-            "redirect_url": "cpp/dotnet/marshal-context-class#tilde-marshal-context", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#tilde-marshal-context", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/marshal-context-marshal-as.md", 
-            "redirect_url": "cpp/dotnet/marshal-context-class#marshal-as", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-as", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-members.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-ptr.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#ptr", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#ptr", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-tilde-ptr.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#tilde-ptr", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#tilde-ptr", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-attach.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#attach", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#attach", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-createinstance.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#createInstance", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#createInstance", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-detach.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#detach", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#detach", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-getinterface.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#getInterface", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#getInterface", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-queryinterface.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#queryInterface", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#queryInterface", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-release.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#release", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#release", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-operator-assign.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#operator-assign", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-assign", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-operator-arrow.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#operator-arrow", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-arrow", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-operator-logical-not.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#operator-logical-not", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-logical-not", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/ptr-operator-bool.md", 
-            "redirect_url": "cpp/dotnet/com-ptr-class#operator-bool", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-bool", 
             "redirect_document_id": false 
         }, 
         {
