@@ -6406,62 +6406,62 @@
         },
         {  
             "source_path": "docs/dotnet/lock-lock.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::lock", 
+            "redirect_url": "/cpp/dotnet/lock-class#lock", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-tilde-lock.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::~lock", 
+            "redirect_url": "/cpp/dotnet/lock-class#tilde-lock", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-is-locked.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::is_locked", 
+            "redirect_url": "/cpp/dotnet/lock-class#is-locked", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-operator-bool.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::operator&nbsp;bool", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-bool", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-acquire.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::acquire", 
+            "redirect_url": "/cpp/dotnet/lock-class#acquire", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-try-acquire.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::try_acquire", 
+            "redirect_url": "/cpp/dotnet/lock-class#try-acquire", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-release.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::release", 
+            "redirect_url": "/cpp/dotnet/lock-class#release", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-operator-equality.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::operator==", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator==", 
             "redirect_document_id": false 
         }, 
         { 
             "source_path": "docs/dotnet/lock-operator-inequality.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock::operator!=", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator!=", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/marshal-context-marshal-context.md", 
-            "redirect_url": "cpp/dotnet/marshal-context-class#marshal_context", 
+            "redirect_url": "cpp/dotnet/marshal-context-class#marshal-context", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md", 
-            "redirect_url": "cpp/dotnet/marshal-context-class#tilde-marshal_context", 
+            "redirect_url": "cpp/dotnet/marshal-context-class#tilde-marshal-context", 
             "redirect_document_id": false 
         },
         { 
             "source_path": "docs/dotnet/marshal-context-marshal-as.md", 
-            "redirect_url": "cpp/dotnet/marshal-context-class#marshal_as", 
+            "redirect_url": "cpp/dotnet/marshal-context-class#marshal-as", 
             "redirect_document_id": false 
         },
         { 

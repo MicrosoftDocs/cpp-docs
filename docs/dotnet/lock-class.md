@@ -22,17 +22,25 @@ ref class lock;
 
 Internally, the lock class uses <xref:System.Threading.Monitor> to synchronize access. For more information, see the referenced article.
 
+## Members
+
+### Public constructors
+
 |Name|Description|
 |---------|-----------|
 |[lock::lock](#lock)|Constructs a `lock` object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.|
 |[lock::~lock](#tilde-lock)|Destructs a `lock` object.|
 
+### Public methods
+
 |Name|Description|
 |---------|-----------|
-|[lock::is_locked](#is_locked)|Indicates whether a lock is being held.|
 |[lock::acquire](#acquire)|Acquires a lock on an object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.|
-|[lock::try_acquire](#try_acquire)|Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.|
+|[lock::is_locked](#is-locked)|Indicates whether a lock is being held.|
 |[lock::release](#release)|Releases a lock.|
+|[lock::try_acquire](#try-acquire)|Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.|
+
+### Public operators
 
 |Name|Description|
 |---------|-----------|
@@ -284,7 +292,126 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="is_locked"></a>lock::is_locked
+## <a name="acquire"></a>lock::acquire
+
+Acquires a lock on an object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.
+
+```cpp
+void acquire();
+void acquire(
+   int _timeout
+);
+void acquire(
+   System::TimeSpan _timeout
+);
+```
+
+### Parameters
+
+*_timeout*<br/>
+Timeout value in milliseconds or as a <xref:System.TimeSpan>.
+
+### Exceptions
+
+Throws <xref:System.ApplicationException> if lock acquisition doesn't occur before timeout.
+
+### Remarks
+
+If a timeout value isn't supplied, the default timeout is <xref:System.Threading.Timeout.Infinite>.
+
+If a lock has already been acquired, this function does nothing.
+
+### Example
+
+This example uses a single instance of a class across several threads.  The class uses a lock on itself to make sure that accesses to its internal data are consistent for each thread. The main application thread uses a lock on the same instance of the class to periodically check to see if any worker threads still exist. The main application then waits to exit until all worker threads have completed their tasks.
+
+```cpp
+// msl_lock_acquire.cpp
+// compile with: /clr
+#include <msclr/lock.h>
+
+using namespace System;
+using namespace System::Threading;
+using namespace msclr;
+
+ref class CounterClass {
+private:
+   int Counter;
+
+public:
+   property int ThreadCount;
+
+   // function called by multiple threads, use lock to keep Counter consistent
+   // for each thread
+   void UseCounter() {
+      try {
+         lock l(this); // wait infinitely
+
+         Console::WriteLine("In thread {0}, Counter = {1}", Thread::CurrentThread->ManagedThreadId,
+            Counter);
+
+         for (int i = 0; i < 10; i++) {
+            Counter++;
+            Thread::Sleep(10);
+         }
+
+         Console::WriteLine("In thread {0}, Counter = {1}", Thread::CurrentThread->ManagedThreadId,
+            Counter);
+
+         Counter = 0;
+         // lock is automatically released when it goes out of scope and its destructor is called
+      }
+      catch (...) {
+         Console::WriteLine("Couldn't acquire lock!");
+      }
+
+      ThreadCount--;
+   }
+};
+
+int main() {
+   // create a few threads to contend for access to the shared data
+   CounterClass^ cc = gcnew CounterClass;
+   array<Thread^>^ tarr = gcnew array<Thread^>(5);
+   ThreadStart^ startDelegate = gcnew ThreadStart(cc, &CounterClass::UseCounter);
+   for (int i = 0; i < tarr->Length; i++) {
+      tarr[i] = gcnew Thread(startDelegate);
+      cc->ThreadCount++;
+      tarr[i]->Start();
+   }
+
+   // keep our main thread alive until all worker threads have completed
+   lock l(cc, lock_later); // don't lock now, just create the object
+   while (true) {
+      if (l.try_acquire(50)) { // try to acquire lock, don't throw an exception if can't
+         if (0 == cc->ThreadCount) {
+            Console::WriteLine("All threads completed.");
+            break; // all threads are gone, exit while
+         }
+         else {
+            Console::WriteLine("{0} threads exist, continue waiting...", cc->ThreadCount);
+            l.release(); // some threads exist, let them do their work
+         }
+      }
+   }
+}
+```
+
+```Output
+In thread 3, Counter = 0
+In thread 3, Counter = 10
+In thread 5, Counter = 0
+In thread 5, Counter = 10
+In thread 7, Counter = 0
+In thread 7, Counter = 10
+In thread 4, Counter = 0
+In thread 4, Counter = 10
+In thread 6, Counter = 0
+In thread 6, Counter = 10
+All threads completed.
+```
+
+## <a name="is-locked"></a>lock::is_locked
 
 Indicates whether a lock is being held.
 
@@ -294,7 +421,7 @@ bool is_locked();
 
 ### Return value
 
-*true* if a lock is held, *false* otherwise.
+`true` if a lock is held, `false` otherwise.
 
 ### Example
 
@@ -397,15 +524,15 @@ operator bool();
 
 ### Return value
 
-*true* if a lock is held, *false* otherwise.
+`true` if a lock is held, `false` otherwise.
 
 ### Remarks
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than *bool* because it can't be converted to an integral type.
+This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
 
 ### Example
 
-This example uses a single instance of a class across several threads.  The class uses a lock on itself to make sure that accesses to its internal data are consistent for each thread.  The main application thread uses a lock on the same instance of the class to periodically check to see if any worker threads still exist. The main application waits to exit until all worker threads have completed their tasks.
+This example uses a single instance of a class across several threads.  The class uses a lock on itself to make sure that accesses to its internal data are consistent for each thread. The main application thread uses a lock on the same instance of the class to periodically check to see if any worker threads still exist. The main application waits to exit until all worker threads have completed their tasks.
 
 ```cpp
 // msl_lock_op_bool.cpp
@@ -467,241 +594,6 @@ int main() {
    while (true) {
       l.try_acquire(50); // try to acquire lock, don't throw an exception if can't
       if (l) { // use bool operator to check for lock
-         if (0 == cc->ThreadCount) {
-            Console::WriteLine("All threads completed.");
-            break; // all threads are gone, exit while
-         }
-         else {
-            Console::WriteLine("{0} threads exist, continue waiting...", cc->ThreadCount);
-            l.release(); // some threads exist, let them do their work
-         }
-      }
-   }
-}
-```
-
-```Output
-In thread 3, Counter = 0
-In thread 3, Counter = 10
-In thread 5, Counter = 0
-In thread 5, Counter = 10
-In thread 7, Counter = 0
-In thread 7, Counter = 10
-In thread 4, Counter = 0
-In thread 4, Counter = 10
-In thread 6, Counter = 0
-In thread 6, Counter = 10
-All threads completed.
-```
-
-## <a name="acquire"></a>lock::acquire
-
-Acquires a lock on an object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.
-
-```cpp
-void acquire();
-void acquire(
-   int _timeout
-);
-void acquire(
-   System::TimeSpan _timeout
-);
-```
-
-### Parameters
-
-*_timeout*<br/>
-Timeout value in milliseconds or as a <xref:System.TimeSpan>.
-
-### Exceptions
-
-Throws <xref:System.ApplicationException> if lock acquisition doesn't occur before timeout.
-
-### Remarks
-
-If a timeout value isn't supplied, the default timeout is <xref:System.Threading.Timeout.Infinite>.
-
-If a lock has already been acquired, this function does nothing.
-
-### Example
-
-This example uses a single instance of a class across several threads.  The class uses a lock on itself to make sure that accesses to its internal data are consistent for each thread.  The main application thread uses a lock on the same instance of the class to periodically check to see if any worker threads still exist. The main application then waits to exit until all worker threads have completed their tasks.
-
-```cpp
-// msl_lock_acquire.cpp
-// compile with: /clr
-#include <msclr/lock.h>
-
-using namespace System;
-using namespace System::Threading;
-using namespace msclr;
-
-ref class CounterClass {
-private:
-   int Counter;
-
-public:
-   property int ThreadCount;
-
-   // function called by multiple threads, use lock to keep Counter consistent
-   // for each thread
-   void UseCounter() {
-      try {
-         lock l(this); // wait infinitely
-
-         Console::WriteLine("In thread {0}, Counter = {1}", Thread::CurrentThread->ManagedThreadId,
-            Counter);
-
-         for (int i = 0; i < 10; i++) {
-            Counter++;
-            Thread::Sleep(10);
-         }
-
-         Console::WriteLine("In thread {0}, Counter = {1}", Thread::CurrentThread->ManagedThreadId,
-            Counter);
-
-         Counter = 0;
-         // lock is automatically released when it goes out of scope and its destructor is called
-      }
-      catch (...) {
-         Console::WriteLine("Couldn't acquire lock!");
-      }
-
-      ThreadCount--;
-   }
-};
-
-int main() {
-   // create a few threads to contend for access to the shared data
-   CounterClass^ cc = gcnew CounterClass;
-   array<Thread^>^ tarr = gcnew array<Thread^>(5);
-   ThreadStart^ startDelegate = gcnew ThreadStart(cc, &CounterClass::UseCounter);
-   for (int i = 0; i < tarr->Length; i++) {
-      tarr[i] = gcnew Thread(startDelegate);
-      cc->ThreadCount++;
-      tarr[i]->Start();
-   }
-
-   // keep our main thread alive until all worker threads have completed
-   lock l(cc, lock_later); // don't lock now, just create the object
-   while (true) {
-      if (l.try_acquire(50)) { // try to acquire lock, don't throw an exception if can't
-         if (0 == cc->ThreadCount) {
-            Console::WriteLine("All threads completed.");
-            break; // all threads are gone, exit while
-         }
-         else {
-            Console::WriteLine("{0} threads exist, continue waiting...", cc->ThreadCount);
-            l.release(); // some threads exist, let them do their work
-         }
-      }
-   }
-}
-```
-
-```Output
-In thread 3, Counter = 0
-In thread 3, Counter = 10
-In thread 5, Counter = 0
-In thread 5, Counter = 10
-In thread 7, Counter = 0
-In thread 7, Counter = 10
-In thread 4, Counter = 0
-In thread 4, Counter = 10
-In thread 6, Counter = 0
-In thread 6, Counter = 10
-All threads completed.
-```
-
-## <a name="try_acquire"></a>lock::try_acquire
-
-Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.
-
-```cpp
-bool try_acquire(
-   int _timeout_ms
-);
-bool try_acquire(
-   System::TimeSpan _timeout
-);
-```
-
-### Parameters
-
-*_timeout*<br/>
-Timeout value in milliseconds or as a <xref:System.TimeSpan>.
-
-### Return value
-
-*true* if lock was acquired, *false* otherwise.
-
-### Remarks
-
-If a lock has already been acquired, this function does nothing.
-
-### Example
-
-This example uses a single instance of a class across several threads.  The class uses a lock on itself to make sure that accesses to its internal data are consistent for each thread.  The main application thread uses a lock on the same instance of the class to periodically check to see if any worker threads still exist. The main application then waits to exit until all worker threads have completed their tasks.
-
-```cpp
-// msl_lock_try_acquire.cpp
-// compile with: /clr
-#include <msclr/lock.h>
-
-using namespace System;
-using namespace System::Threading;
-using namespace msclr;
-
-ref class CounterClass {
-private:
-   int Counter;
-
-public:
-   property int ThreadCount;
-
-   // function called by multiple threads, use lock to keep Counter consistent
-   // for each thread
-   void UseCounter() {
-      try {
-         lock l(this); // wait infinitely
-
-         Console::WriteLine("In thread {0}, Counter = {1}", Thread::CurrentThread->ManagedThreadId,
-            Counter);
-
-         for (int i = 0; i < 10; i++) {
-            Counter++;
-            Thread::Sleep(10);
-         }
-
-         Console::WriteLine("In thread {0}, Counter = {1}", Thread::CurrentThread->ManagedThreadId,
-            Counter);
-
-         Counter = 0;
-         // lock is automatically released when it goes out of scope and its destructor is called
-      }
-      catch (...) {
-         Console::WriteLine("Couldn't acquire lock!");
-      }
-
-      ThreadCount--;
-   }
-};
-
-int main() {
-   // create a few threads to contend for access to the shared data
-   CounterClass^ cc = gcnew CounterClass;
-   array<Thread^>^ tarr = gcnew array<Thread^>(5);
-   ThreadStart^ startDelegate = gcnew ThreadStart(cc, &CounterClass::UseCounter);
-   for (int i = 0; i < tarr->Length; i++) {
-      tarr[i] = gcnew Thread(startDelegate);
-      cc->ThreadCount++;
-      tarr[i]->Start();
-   }
-
-   // keep our main thread alive until all worker threads have completed
-   lock l(cc, lock_later); // don't lock now, just create the object
-   while (true) {
-      if (l.try_acquire(50)) { // try to acquire lock, don't throw an exception if can't
          if (0 == cc->ThreadCount) {
             Console::WriteLine("All threads completed.");
             break; // all threads are gone, exit while
@@ -833,6 +725,122 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
+## <a name="try-acquire"></a>lock::try_acquire
+
+Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.
+
+```cpp
+bool try_acquire(
+   int _timeout_ms
+);
+bool try_acquire(
+   System::TimeSpan _timeout
+);
+```
+
+### Parameters
+
+*_timeout*<br/>
+Timeout value in milliseconds or as a <xref:System.TimeSpan>.
+
+### Return value
+
+`true` if lock was acquired, `false` otherwise.
+
+### Remarks
+
+If a lock has already been acquired, this function does nothing.
+
+### Example
+
+This example uses a single instance of a class across several threads. The class uses a lock on itself to make sure that accesses to its internal data are consistent for each thread. The main application thread uses a lock on the same instance of the class to periodically check to see if any worker threads still exist. The main application then waits to exit until all worker threads have completed their tasks.
+
+```cpp
+// msl_lock_try_acquire.cpp
+// compile with: /clr
+#include <msclr/lock.h>
+
+using namespace System;
+using namespace System::Threading;
+using namespace msclr;
+
+ref class CounterClass {
+private:
+   int Counter;
+
+public:
+   property int ThreadCount;
+
+   // function called by multiple threads, use lock to keep Counter consistent
+   // for each thread
+   void UseCounter() {
+      try {
+         lock l(this); // wait infinitely
+
+         Console::WriteLine("In thread {0}, Counter = {1}", Thread::CurrentThread->ManagedThreadId,
+            Counter);
+
+         for (int i = 0; i < 10; i++) {
+            Counter++;
+            Thread::Sleep(10);
+         }
+
+         Console::WriteLine("In thread {0}, Counter = {1}", Thread::CurrentThread->ManagedThreadId,
+            Counter);
+
+         Counter = 0;
+         // lock is automatically released when it goes out of scope and its destructor is called
+      }
+      catch (...) {
+         Console::WriteLine("Couldn't acquire lock!");
+      }
+
+      ThreadCount--;
+   }
+};
+
+int main() {
+   // create a few threads to contend for access to the shared data
+   CounterClass^ cc = gcnew CounterClass;
+   array<Thread^>^ tarr = gcnew array<Thread^>(5);
+   ThreadStart^ startDelegate = gcnew ThreadStart(cc, &CounterClass::UseCounter);
+   for (int i = 0; i < tarr->Length; i++) {
+      tarr[i] = gcnew Thread(startDelegate);
+      cc->ThreadCount++;
+      tarr[i]->Start();
+   }
+
+   // keep our main thread alive until all worker threads have completed
+   lock l(cc, lock_later); // don't lock now, just create the object
+   while (true) {
+      if (l.try_acquire(50)) { // try to acquire lock, don't throw an exception if can't
+         if (0 == cc->ThreadCount) {
+            Console::WriteLine("All threads completed.");
+            break; // all threads are gone, exit while
+         }
+         else {
+            Console::WriteLine("{0} threads exist, continue waiting...", cc->ThreadCount);
+            l.release(); // some threads exist, let them do their work
+         }
+      }
+   }
+}
+```
+
+```Output
+In thread 3, Counter = 0
+In thread 3, Counter = 10
+In thread 5, Counter = 0
+In thread 5, Counter = 10
+In thread 7, Counter = 0
+In thread 7, Counter = 10
+In thread 4, Counter = 0
+In thread 4, Counter = 10
+In thread 6, Counter = 0
+In thread 6, Counter = 10
+All threads completed.
+```
+
 ## <a name="operator-equality"></a>lock::operator==
 
 Equality operator.
@@ -850,7 +858,7 @@ The object to compare for equality.
 
 ### Return value
 
-Returns *true* if `t` is the same as the lock's object, *false* otherwise.
+Returns `true` if `t` is the same as the lock's object, `false` otherwise.
 
 ### Example
 
@@ -893,7 +901,7 @@ The object to compare for inequality.
 
 ### Return value
 
-Returns *true* if `t` differs from the lock's object, *false* otherwise.
+Returns `true` if `t` differs from the lock's object, `false` otherwise.
 
 ### Example
 

@@ -145,13 +145,18 @@ int main() {
 ```Output
 <word>persnickety</word>
 ```
+
+## Members
+
 ### Public constructors
+
 |Name|Description| 
 |---------|-----------| 
 |[ptr::ptr](#ptr)|Constructs a `com::ptr` to wrap a COM object.| 
 |[ptr::~ptr](#tilde-ptr)|Destructs a `com::ptr`.| 
 
 ### Public methods
+
 |Name|Description|
 |---------|-----------| 
 |[ptr::Attach](#attach)|Attaches a COM object to a `com::ptr`.| 
@@ -162,12 +167,13 @@ int main() {
 |[ptr::Release](#release)|Releases all owned references on the COM object.|
 
 ### Public operators
+
 |Name|Description|
 |---------|-----------| 
-|[ptr::operator=](#operator-assign)|Attaches a COM object to a `com::ptr`.| 
 |[ptr::operator-&gt;](#operator-arrow)|Member access operator, used to call methods on the owned COM object.| 
-|[ptr::operator!](#operator-logical-not)|Operator to determine if the owned COM object is invalid.| 
+|[ptr::operator=](#operator-assign)|Attaches a COM object to a `com::ptr`.| 
 |[ptr::operator&nbsp;bool](#operator-bool)|Operator for using `com::ptr` in a conditional expression.| 
+|[ptr::operator!](#operator-logical-not)|Operator to determine if the owned COM object is invalid.| 
 
 ## Requirements
 
@@ -1024,111 +1030,6 @@ int main() {
 }
 ```
 
-## <a name="operator-assign"></a>ptr::operator=
-
-Attaches a COM object to a `com::ptr`.
-
-```cpp
-ptr<_interface_type> % operator=(
-   _interface_type * _right
-);
-```
-
-### Parameters
-
-*_right*<br/>
-The COM interface pointer to attach.
-
-### Return value
-
-A tracking reference on the `com::ptr`.
-
-### Exceptions
-
-If the `com::ptr` already owns a reference to a COM object, `operator=` throws <xref:System.InvalidOperationException>.
-
-### Remarks
-
-Assigning a COM object to a `com::ptr` references the COM object but doesn't release the caller's reference to it.
-
-This operator has the same effect as `Attach`.
-
-### Example
-
-This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object.  The `ReplaceDocument` member function first calls `Release` on any previously owned object and then uses `operator=` to attach a new document object.
-
-```cpp
-// comptr_op_assign.cpp
-// compile with: /clr /link msxml2.lib
-#include <msxml2.h>
-#include <msclr\com\ptr.h>
-
-#import <msxml3.dll> raw_interfaces_only
-
-using namespace System;
-using namespace System::Runtime::InteropServices;
-using namespace msclr;
-
-// a ref class that uses a com::ptr to contain an
-// IXMLDOMDocument object
-ref class XmlDocument {
-public:
-   // construct the internal com::ptr with a null interface
-   // and use CreateInstance to fill it
-   XmlDocument(String^ progid) {
-      m_ptrDoc.CreateInstance(progid);
-   }
-
-   // replace currently held COM object with another one
-   void ReplaceDocument(IXMLDOMDocument* pDoc) {
-      // release current document object
-      m_ptrDoc.Release();
-      // attach the new document object
-      m_ptrDoc = pDoc;
-   }
-
-   // note that the destructor will call the com::ptr destructor
-   // and automatically release the reference to the COM object
-
-private:
-   com::ptr<IXMLDOMDocument> m_ptrDoc;
-};
-
-// unmanaged function that creates a raw XML DOM Document object
-IXMLDOMDocument* CreateDocument() {
-   IXMLDOMDocument* pDoc = NULL;
-   Marshal::ThrowExceptionForHR(CoCreateInstance(CLSID_DOMDocument30, NULL,
-      CLSCTX_INPROC_SERVER, IID_IXMLDOMDocument, (void**)&pDoc));
-   return pDoc;
-}
-
-// use the ref class to handle an XML DOM Document object
-int main() {
-   IXMLDOMDocument* pDoc = NULL;
-
-   try {
-      // create the class from a progid string
-      XmlDocument doc("Msxml2.DOMDocument.3.0");
-
-      // get another document object from unmanaged function and
-      // store it in place of the one held by the ref class
-      pDoc = CreateDocument();
-      doc.ReplaceDocument(pDoc);
-      // no further need for raw object reference
-      pDoc->Release();
-      pDoc = NULL;
-   }
-   catch (Exception^ e) {
-      Console::WriteLine(e);
-   }
-   finally {
-      if (NULL != pDoc) {
-         pDoc->Release();
-      }
-   }
-}
-```
-
 ## <a name="operator-arrow"></a>ptr::operator-&gt;
 
 Member access operator, used to call methods on the owned COM object.
@@ -1271,28 +1172,41 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="operator-logical-not"></a>ptr::operator!
+## <a name="operator-assign"></a>ptr::operator=
 
-Operator to determine if the owned COM object is invalid.
+Attaches a COM object to a `com::ptr`.
 
 ```cpp
-bool operator!();
+ptr<_interface_type> % operator=(
+   _interface_type * _right
+);
 ```
+
+### Parameters
+
+*_right*<br/>
+The COM interface pointer to attach.
 
 ### Return value
 
-*true* if the owned COM object is invalid; *false* otherwise.
+A tracking reference on the `com::ptr`.
+
+### Exceptions
+
+If the `com::ptr` already owns a reference to a COM object, `operator=` throws <xref:System.InvalidOperationException>.
 
 ### Remarks
 
-The owned COM object is valid if it's not *nullptr*.
+Assigning a COM object to a `com::ptr` references the COM object but doesn't release the caller's reference to it.
+
+This operator has the same effect as `Attach`.
 
 ### Example
 
-This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object.  The `CreateInstance` member function uses `operator!` to determine if a document object is already owned, and only creates a new instance if the object is invalid.
+This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object.  The `ReplaceDocument` member function first calls `Release` on any previously owned object and then uses `operator=` to attach a new document object.
 
 ```cpp
-// comptr_op_not.cpp
+// comptr_op_assign.cpp
 // compile with: /clr /link msxml2.lib
 #include <msxml2.h>
 #include <msclr\com\ptr.h>
@@ -1307,13 +1221,18 @@ using namespace msclr;
 // IXMLDOMDocument object
 ref class XmlDocument {
 public:
-   void CreateInstance(String^ progid) {
-      if (!m_ptrDoc) {
-         m_ptrDoc.CreateInstance(progid);
-         if (m_ptrDoc) {
-            Console::WriteLine("DOM Document created.");
-         }
-      }
+   // construct the internal com::ptr with a null interface
+   // and use CreateInstance to fill it
+   XmlDocument(String^ progid) {
+      m_ptrDoc.CreateInstance(progid);
+   }
+
+   // replace currently held COM object with another one
+   void ReplaceDocument(IXMLDOMDocument* pDoc) {
+      // release current document object
+      m_ptrDoc.Release();
+      // attach the new document object
+      m_ptrDoc = pDoc;
    }
 
    // note that the destructor will call the com::ptr destructor
@@ -1323,24 +1242,42 @@ private:
    com::ptr<IXMLDOMDocument> m_ptrDoc;
 };
 
+// unmanaged function that creates a raw XML DOM Document object
+IXMLDOMDocument* CreateDocument() {
+   IXMLDOMDocument* pDoc = NULL;
+   Marshal::ThrowExceptionForHR(CoCreateInstance(CLSID_DOMDocument30, NULL,
+      CLSCTX_INPROC_SERVER, IID_IXMLDOMDocument, (void**)&pDoc));
+   return pDoc;
+}
+
 // use the ref class to handle an XML DOM Document object
 int main() {
+   IXMLDOMDocument* pDoc = NULL;
+
    try {
-      XmlDocument doc;
-      // create the instance from a progid string
-      doc.CreateInstance("Msxml2.DOMDocument.3.0");
+      // create the class from a progid string
+      XmlDocument doc("Msxml2.DOMDocument.3.0");
+
+      // get another document object from unmanaged function and
+      // store it in place of the one held by the ref class
+      pDoc = CreateDocument();
+      doc.ReplaceDocument(pDoc);
+      // no further need for raw object reference
+      pDoc->Release();
+      pDoc = NULL;
    }
    catch (Exception^ e) {
       Console::WriteLine(e);
    }
+   finally {
+      if (NULL != pDoc) {
+         pDoc->Release();
+      }
+   }
 }
 ```
 
-```Output
-DOM Document created.
-```
-
-## <a name="ptr::operator-bool"></a> ptr::operator bool
+## <a name="operator-bool"></a> ptr::operator bool
 
 Operator for using `com::ptr` in a conditional expression.
 
@@ -1350,7 +1287,7 @@ operator bool();
 
 ### Return value
 
-*true* if the owned COM object is valid; *false* otherwise.
+`true` if the owned COM object is valid; `false` otherwise.
 
 ### Remarks
 
@@ -1382,6 +1319,75 @@ public:
       if (!m_ptrDoc) {
          m_ptrDoc.CreateInstance(progid);
          if (m_ptrDoc) { // uses operator bool
+            Console::WriteLine("DOM Document created.");
+         }
+      }
+   }
+
+   // note that the destructor will call the com::ptr destructor
+   // and automatically release the reference to the COM object
+
+private:
+   com::ptr<IXMLDOMDocument> m_ptrDoc;
+};
+
+// use the ref class to handle an XML DOM Document object
+int main() {
+   try {
+      XmlDocument doc;
+      // create the instance from a progid string
+      doc.CreateInstance("Msxml2.DOMDocument.3.0");
+   }
+   catch (Exception^ e) {
+      Console::WriteLine(e);
+   }
+}
+```
+
+```Output
+DOM Document created.
+```
+
+## <a name="operator-logical-not"></a>ptr::operator!
+
+Operator to determine if the owned COM object is invalid.
+
+```cpp
+bool operator!();
+```
+
+### Return value
+
+`true` if the owned COM object is invalid; `false` otherwise.
+
+### Remarks
+
+The owned COM object is valid if it's not `nullptr`.
+
+### Example
+
+This example implements a CLR class that uses a `com::ptr` to wrap its private member `IXMLDOMDocument` object.  The `CreateInstance` member function uses `operator!` to determine if a document object is already owned, and only creates a new instance if the object is invalid.
+
+```cpp
+// comptr_op_not.cpp
+// compile with: /clr /link msxml2.lib
+#include <msxml2.h>
+#include <msclr\com\ptr.h>
+
+#import <msxml3.dll> raw_interfaces_only
+
+using namespace System;
+using namespace System::Runtime::InteropServices;
+using namespace msclr;
+
+// a ref class that uses a com::ptr to contain an
+// IXMLDOMDocument object
+ref class XmlDocument {
+public:
+   void CreateInstance(String^ progid) {
+      if (!m_ptrDoc) {
+         m_ptrDoc.CreateInstance(progid);
+         if (m_ptrDoc) {
             Console::WriteLine("DOM Document created.");
          }
       }

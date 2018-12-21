@@ -22,25 +22,29 @@ Use the `marshal_context` class for data conversions that require a context. For
 
 The same `marshal_context` can be used for numerous data conversions. Reusing the context in this manner won't affect the results from previous marshaling calls.
 
+## Members
+
+### Public constructors
+
+|Name|Description| 
+|---------|-----------| 
+|[marshal_context::marshal_context](#marshal-context)|Constructs a `marshal_context` object to use for data conversion between managed and native data types.| 
+|[marshal_context::~marshal_context](#tilde-marshal-context)|Destroys a `marshal_context` object.| 
+
+### Public methods
+
+|Name|Description| 
+|---------|-----------| 
+|[marshal_context::marshal_as](#marshal-as)|Performs the marshaling on a specific data object to convert it between a managed and a native data type.| 
+
+
 ## Requirements
 
 **Header file:** \<msclr\marshal.h>, \<msclr\marshal_windows.h>, \<msclr\marshal_cppstd.h>, or \<msclr\marshal_atl.h>
 
 **Namespace:** msclr::interop
 
-### Public constructors
-
-|Name|Description| 
-|---------|-----------| 
-|[marshal_context::marshal_context](#marshal_context)|Constructs a `marshal_context` object to use for data conversion between managed and native data types.| 
-|[marshal_context::~marshal_context](#tilde-marshal_context)|Destroys a `marshal_context` object.| 
-
-### Public methods
-|Name|Description| 
-|---------|-----------| 
-|[marshal_context::marshal_as](#marshal_as)|Performs the marshaling on a specific data object to convert it between a managed and a native data type.| 
-
-## <a name=:marshal_context"></a>marshal_context::marshal_context
+## <a name="marshal-context"></a>marshal_context::marshal_context
 
 Constructs a `marshal_context` object to use for data conversion between managed and native data types.
 
@@ -57,7 +61,7 @@ Some data conversions require a marshal context. For more information about whic
 See the example for [marshal_context::marshal_as](../dotnet/marshal-context-marshal-as.md).
 
 
-## <a name="tilde-marshal_context"></a>marshal_context::~marshal_context
+## <a name="tilde-marshal-context"></a>marshal_context::~marshal_context
 
 Destroys a `marshal_context` object.
 
@@ -71,7 +75,7 @@ Some data conversions require a marshal context. See [Overview of marshaling in 
 
 Deleting a `marshal_context` object will invalidate the data converted by that context. If you want to preserve your data after a `marshal_context` object is destroyed, you must manually copy the data to a variable that will persist.
 
-## <a name="marshal_as"></a>marshal_context::marshal_as
+## <a name="marshal-as"></a>marshal_context::marshal_as
 
 Performs the marshaling on a specific data object to convert it between a managed and a native data type.
 
