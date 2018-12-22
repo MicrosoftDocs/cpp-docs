@@ -34,6 +34,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [How to: Define and Use Delegates (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md)

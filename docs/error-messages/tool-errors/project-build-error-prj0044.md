@@ -13,6 +13,6 @@ The **Additional Dependencies** property evaluated to an empty string, or to a s
 
 For more information, see [Specifying Custom Build Tools](../../build/specifying-custom-build-tools.md).
 
-## See Also
+## See also
 
 [Project Build Errors and Warnings (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

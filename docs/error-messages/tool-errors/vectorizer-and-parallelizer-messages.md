@@ -969,7 +969,7 @@ void code_1505(int *A, int *B)
 }
 ```
 
-## See Also
+## See also
 
 [Auto-Parallelization and Auto-Vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
 [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>

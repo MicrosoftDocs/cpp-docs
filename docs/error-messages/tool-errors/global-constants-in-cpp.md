@@ -35,6 +35,6 @@ void test() {
 }
 ```
 
-## See Also
+## See also
 
 [Linker Tools Error LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)

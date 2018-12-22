@@ -46,6 +46,6 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [auto Keyword](../../cpp/auto-keyword.md)

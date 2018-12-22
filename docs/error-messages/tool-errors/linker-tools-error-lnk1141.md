@@ -15,6 +15,6 @@ Causes of this error include system problems such as insufficient memory and syn
 
 This error is preceded by another error that gives additional information.
 
-## See Also
+## See also
 
 [.Exp Files as Linker Input](../../build/reference/dot-exp-files-as-linker-input.md)

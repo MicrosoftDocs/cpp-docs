@@ -15,6 +15,6 @@ If you use the `auto` keyword as a placeholder for the return type of a function
 auto myFunction()->int(*)[4];
 ```
 
-## See Also
+## See also
 
 [auto](../../cpp/auto-cpp.md)

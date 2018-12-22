@@ -11,6 +11,6 @@ ms.assetid: f887e4d2-7740-49e4-9972-7edceb8fa77b
 
 A syntax error was detected when a value was assigned to an attribute.
 
-## See Also
+## See also
 
 [Attributes by Usage](../../windows/attributes/attributes-by-usage.md)

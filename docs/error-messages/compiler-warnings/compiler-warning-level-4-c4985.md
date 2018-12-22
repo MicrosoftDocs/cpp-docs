@@ -18,6 +18,6 @@ Notice that the SAL macros will not expand unless the project has the [/analyze]
 
 1. Use the same SAL annotations on the definition of a method and all its declarations.
 
-## See Also
+## See also
 
 [SAL Annotations](../../c-runtime-library/sal-annotations.md)

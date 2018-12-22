@@ -34,6 +34,6 @@ int* test(int* pi) {
 }
 ```
 
-## See Also
+## See also
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

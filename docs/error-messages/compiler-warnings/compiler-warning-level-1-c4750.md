@@ -47,6 +47,6 @@ int main(void)
 }
 ```
 
-## See Also
+## See also
 
 [_alloca](../../c-runtime-library/reference/alloca.md)

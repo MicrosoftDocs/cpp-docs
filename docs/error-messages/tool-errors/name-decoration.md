@@ -27,6 +27,6 @@ Having function prototypes that have mismatched parameters can also cause this e
 
 There is currently no standard for C++ naming between compiler vendors or even between different versions of a compiler. Therefore linking object files compiled with other compilers may not produce the same naming scheme and thus causes unresolved externals.
 
-## See Also
+## See also
 
 [Linker Tools Error LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md)

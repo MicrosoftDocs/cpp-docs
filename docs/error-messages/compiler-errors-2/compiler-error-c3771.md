@@ -39,6 +39,6 @@ namespace NB {
 }
 ```
 
-## See Also
+## See also
 
 [Templates](../../cpp/templates-cpp.md)

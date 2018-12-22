@@ -15,6 +15,6 @@ The *name* data member that is declared with the [literal](../../windows/literal
 
 1. Check that the declared literal data member is a supported type.
 
-## See Also
+## See also
 
 [literal](../../windows/literal-cpp-component-extensions.md)
