@@ -7,7 +7,7 @@
 ## [Migrating from OpenMP to the Concurrency Runtime](migrating-from-openmp-to-the-concurrency-runtime.md)
 ### [How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime](how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
 ### [How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime](convert-an-openmp-loop-that-uses-cancellation.md)
-### [How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime](convert-an-openmp-loop-that uses-exception-handling.md)
+### [How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime](convert-an-openmp-loop-that-uses-exception-handling.md)
 ### [How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime](convert-an-openmp-loop-that-uses-a-reduction-variable.md)
 # [Parallel Patterns Library (PPL)](parallel-patterns-library-ppl.md)
 ## [Task Parallelism (Concurrency Runtime)](task-parallelism-concurrency-runtime.md)
