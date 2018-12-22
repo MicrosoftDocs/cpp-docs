@@ -2,8 +2,8 @@
 title: "auto_gcroot Class"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["msclr::auto_gcroot", "msclr.auto_gcroot", "auto_gcroot", "msclr::auto_gcroot::auto_gcroot", "auto_gcroot::auto_gcroot", "auto_gcroot.auto_gcroot", "msclr.auto_gcroot.auto_gcroot", "auto_gcroot::~auto_gcroot", "~auto_gcroot", "auto_gcroot.~auto_gcroot", "msclr::auto_gcroot::~auto_gcroot", "msclr.auto_gcroot.~auto_gcroot", "msclr::auto_gcroot::get", "msclr.auto_gcroot.get", "auto_gcroot::get", "auto_gcroot.get", "msclr::auto_gcroot::release", "auto_gcroot::release", "auto_gcroot.release", "msclr.auto_gcroot.release", "msclr::auto_gcroot::reset", "auto_gcroot::reset", "msclr.auto_gcroot.reset", "auto_gcroot.reset", ]
-helpviewer_keywords: ["auto_gcroot", "auto_gcroot::auto_gcroot", "auto_gcroot::~auto_gcroot", "auto_gcroot::get", "release method", "reset method",  ]
+f1_keywords: ["msclr::auto_gcroot", "msclr.auto_gcroot", "auto_gcroot", "msclr::auto_gcroot::auto_gcroot", "auto_gcroot::auto_gcroot", "auto_gcroot.auto_gcroot", "msclr.auto_gcroot.auto_gcroot", "auto_gcroot::~auto_gcroot", "~auto_gcroot", "auto_gcroot.~auto_gcroot", "msclr::auto_gcroot::~auto_gcroot", "msclr.auto_gcroot.~auto_gcroot", "msclr::auto_gcroot::get", "msclr.auto_gcroot.get", "auto_gcroot::get", "auto_gcroot.get", "msclr::auto_gcroot::release", "auto_gcroot::release", "auto_gcroot.release", "msclr.auto_gcroot.release", "msclr::auto_gcroot::reset", "auto_gcroot::reset", "msclr.auto_gcroot.reset", "auto_gcroot.reset", "msclr.auto_gcroot.swap", "msclr::auto_gcroot::swap", "auto_gcroot::swap", "auto_gcroot.swap", "auto_gcroot.operator=", "msclr::auto_gcroot::operator=", "msclr.auto_gcroot.operator=", "auto_gcroot::operator=", "auto_gcroot.operator->", "msclr::auto_gcroot::operator->", "auto_gcroot::operator->", "msclr.auto_gcroot.operator->", "msclr.auto_gcroot.operator!", "auto_gcroot.operator!", "msclr::auto_gcroot::operator!", "auto_gcroot::operator!", "auto_gcroot.operator auto_gcroot", "auto_gcroot::operator auto_gcroot", "msclr.auto_gcroot.operator auto_gcroot", "msclr::auto_gcroot::operator auto_gcroot", ]
+helpviewer_keywords: ["auto_gcroot", "auto_gcroot::auto_gcroot", "auto_gcroot::~auto_gcroot", "auto_gcroot::get", "release method", "reset method", "auto_gcroot::swap", "operator=", "operator->", "auto_gcroot::operator!", "auto_gcroot operator",  ]
 ms.assetid: b5790912-265d-463e-a486-47302e91042a
 ---
 # auto_gcroot Class
@@ -22,7 +22,7 @@ class auto_gcroot;
 *_element_type*<br/>
 The managed type to be embedded.
 
-## Members 
+## Members
  
 ### Public constructors 
  
@@ -39,15 +39,19 @@ The managed type to be embedded.
 |[auto_gcroot::attach](#attach)|Attach `auto_gcroot` to an object.| 
 |[auto_gcroot::get](#get)|Gets the contained object.| 
 |[auto_gcroot::release](#release)|Releases the object from `auto_gcroot` management.|
-|[auto_gcroot::reset](#reset)|Destroy the current owned object and optionally take possession of a new object.| 
+|[auto_gcroot::reset](#reset)|Destroy the current owned object and optionally take possession of a new object.|
+|[auto_gcroot::swap](#swap)|Swaps objects with another `auto_gcroot`.| 
+
  
 ### Public operators
  
 |Name|Description| 
-|---------|-----------| 
-|[lock::operator&nbsp;bool](#operator-bool)|Operator for using `lock` in a conditional expression.| 
-|[lock::operator==](#operator-equality)|Equality operator.| 
-|[lock::operator!=](#operator-inequality)|Inequality operator.| 
+|---------|-----------|
+|[auto_gcroot::operator-&gt;](#operator-arrow)|The member access operator.|  
+|[auto_gcroot::operator=](#operator-assign)|Assignment operator.|
+|[auto_gcroot::operator&nbsp;auto_gcroot](#operator-auto-gcroot)|Type-cast operator between `auto_gcroot` and compatible types.| 
+|[auto_gcroot::operator&nbsp;bool](#operator-bool)|Operator for using `auto_gcroot` in a conditional expression.|  
+|[auto_gcroot::operator!](#operator-logical-not)|Operator for using `auto_gcroot` in a conditional expression.| 
 
 ## Requirements
 
@@ -241,7 +245,7 @@ auto_gcroot<_element_type> & attach(
 *_right*<br/>
 The object to attach, or an `auto_gcroot` containing the object to attach.
 
-### Return Value
+### Return value
 
 The current `auto_gcroot`.
 
@@ -322,7 +326,7 @@ Gets the contained object.
 _element_type get() const;
 ```
 
-### Return Value
+### Return value
 
 The contained object.
 
@@ -382,7 +386,7 @@ Releases the object from `auto_gcroot` management.
 _element_type release();
 ```
 
-### Return Value
+### Return value
 
 The released object.
 
@@ -500,4 +504,328 @@ ClassA destructor: first
 Hello from second A!
 ClassA destructor: second
 done
+```
+
+## <a name="swap"></a>auto_gcroot::swap
+
+Swaps objects with another `auto_gcroot`.
+
+```cpp
+void swap(
+   auto_gcroot<_element_type> & _right
+);
+```
+
+### Parameters
+
+*_right*<br/>
+The `auto_gcroot` with which to swap objects.
+
+### Example
+
+```cpp
+// msl_auto_gcroot_swap.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_gcroot<String^> s1 = "string one";
+   auto_gcroot<String^> s2 = "string two";
+
+   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",
+      s1->ToString(), s2->ToString() );
+   s1.swap( s2 );
+   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",
+      s1->ToString(), s2->ToString() );
+}
+```
+
+```Output
+s1 = 'string one', s2 = 'string two'
+s1 = 'string two', s2 = 'string one'
+```
+
+## <a name="operator-arrow"></a>auto_gcroot::operator-&gt;
+
+The member access operator.
+
+```cpp
+_element_type operator->() const;
+```
+
+### Return value
+
+The object that's wrapped by `auto_gcroot`.
+
+### Example
+
+```cpp
+// msl_auto_gcroot_op_arrow.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {}
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+
+   int m_i;
+};
+
+int main() {
+   auto_gcroot<ClassA^> a( gcnew ClassA( "first" ) );
+   a->PrintHello();
+
+   a->m_i = 5;
+   Console::WriteLine( "a->m_i = {0}", a->m_i );
+}
+```
+
+```Output
+Hello from first A!
+a->m_i = 5
+```
+
+## <a name="operator-assign"></a>auto_gcroot::operator=
+
+Assignment operator.
+
+```cpp
+auto_gcroot<_element_type> & operator=(
+   _element_type _right
+);
+auto_gcroot<_element_type> & operator=(
+   auto_gcroot<_element_type> & _right
+);
+template<typename _other_type>
+auto_gcroot<_element_type> & operator=(
+   auto_gcroot<_other_type> & _right
+);
+```
+
+### Parameters
+
+*_right*<br/>
+The object or `auto_gcroot` to be assigned to the current `auto_gcroot`.
+
+### Return value
+
+The current `auto_gcroot`, now owning `_right`.
+
+### Example
+
+```cpp
+// msl_auto_gcroot_operator_equals.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA(String^ s) : m_s(s) {
+      Console::WriteLine( "in ClassA constructor: " + m_s );
+   }
+   ~ClassA() {
+      Console::WriteLine( "in ClassA destructor: " + m_s );
+   }
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+ref class ClassB : ClassA {
+public:
+   ClassB( String^ s ) : ClassA( s ) {}
+   virtual void PrintHello() new {
+      Console::WriteLine( "Hello from {0} B!", m_s );
+   }
+};
+
+int main()
+{
+   auto_gcroot<ClassA^> a;
+   auto_gcroot<ClassA^> a2(gcnew ClassA( "first" ) );
+   a = a2; // assign from same type
+   a->PrintHello();
+
+   ClassA^ ha = gcnew ClassA( "second" );
+   a = ha; // assign from raw handle
+
+   auto_gcroot<ClassB^> b(gcnew ClassB( "third" ) );
+   b->PrintHello();
+   a = b; // assign from derived type
+   a->PrintHello();
+
+   Console::WriteLine("done");
+}
+```
+
+```Output
+in ClassA constructor: first
+Hello from first A!
+in ClassA constructor: second
+in ClassA destructor: first
+in ClassA constructor: third
+Hello from third B!
+in ClassA destructor: second
+Hello from third A!
+done
+in ClassA destructor: third
+```
+
+## <a name="operator-auto-gcroot"></a>auto_gcroot::operator auto_gcroot
+
+Type-cast operator between `auto_gcroot` and compatible types.
+
+```cpp
+template<typename _other_type>
+operator auto_gcroot<_other_type>();
+```
+
+### Return value
+
+The current `auto_gcroot` cast to `auto_gcroot<_other_type>`.
+
+### Example
+
+```cpp
+// msl_auto_gcroot_op_auto_gcroot.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {}
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+ref class ClassB : ClassA {
+public:
+   ClassB( String ^ s) : ClassA( s ) {}
+   virtual void PrintHello() new {
+      Console::WriteLine( "Hello from {0} B!", m_s );
+   }
+};
+
+int main() {
+   auto_gcroot<ClassB^> b = gcnew ClassB("first");
+   b->PrintHello();
+   auto_gcroot<ClassA^> a = (auto_gcroot<ClassA^>)b;
+   a->PrintHello();
+}
+```
+
+```Output
+Hello from first B!
+Hello from first A!
+```
+
+## <a name="operator-bool"></a>auto_gcroot::operator bool
+
+Operator for using `auto_gcroot` in a conditional expression.
+
+```cpp
+operator bool() const;
+```
+
+### Return value
+
+`true` if the wrapped object is valid; `false` otherwise.
+
+### Remarks
+
+This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+
+### Example
+
+```cpp
+// msl_auto_gcroot_operator_bool.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_gcroot<String^> s;
+   if ( s ) Console::WriteLine( "s is valid" );
+   if ( !s ) Console::WriteLine( "s is invalid" );
+   s = "something";
+   if ( s ) Console::WriteLine( "now s is valid" );
+   if ( !s ) Console::WriteLine( "now s is invalid" );
+   s.reset();
+   if ( s ) Console::WriteLine( "now s is valid" );
+   if ( !s ) Console::WriteLine( "now s is invalid" );
+}
+```
+
+```Output
+s is invalid
+now s is valid
+now s is invalid
+```
+
+## <a name="operator-logical-not"></a>auto_gcroot::operator!
+
+Operator for using `auto_gcroot` in a conditional expression.
+
+```cpp
+bool operator!() const;
+```
+
+### Return value
+
+`true` if the wrapped object is invalid; `false` otherwise.
+
+### Example
+
+```cpp
+// msl_auto_gcroot_operator_not.cpp
+// compile with: /clr
+#include <msclr\auto_gcroot.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_gcroot<String^> s;
+   if ( s ) Console::WriteLine( "s is valid" );
+   if ( !s ) Console::WriteLine( "s is invalid" );
+   s = "something";
+   if ( s ) Console::WriteLine( "now s is valid" );
+   if ( !s ) Console::WriteLine( "now s is invalid" );
+   s.reset();
+   if ( s ) Console::WriteLine( "now s is valid" );
+   if ( !s ) Console::WriteLine( "now s is invalid" );
+}
+```
+
+```Output
+s is invalid
+now s is valid
+now s is invalid
 ```
