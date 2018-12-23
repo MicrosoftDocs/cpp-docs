@@ -8415,6 +8415,61 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/auto-gcroot-auto-gcroot.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#auto-gcroot",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-get.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-arrow.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-arrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-assign.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-auto-gcroot.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-auto-gcroot",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-bool.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-bool",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-logical-not.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-logical-not",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-release.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-reset.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#reset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-swap.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-tilde-auto-gcroot.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#tilde-auto-gcroot",
+            "redirect_document_id": false
+        },        
+        {
             "source_path": "docs/windows/srwlock-tilde-srwlock-destructor.md",
             "redirect_url": "/cpp/windows/srwlock-class#tilde-srwlock",
             "redirect_document_id": false
