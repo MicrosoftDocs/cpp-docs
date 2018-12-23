@@ -268,7 +268,7 @@ When you're working with menus in the **Menu Editor**, these symbols will appear
 
 MFC
 
-## See Also
+## See also
 
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
 [ATL Predefined Symbols](../windows/atl-predefined-symbols.md)<br/>

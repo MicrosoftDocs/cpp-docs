@@ -149,7 +149,7 @@ If you want this effect using the **Toolbar Editor**, set the **Prompt** propert
 
 MFC or ATL
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)
 <!--

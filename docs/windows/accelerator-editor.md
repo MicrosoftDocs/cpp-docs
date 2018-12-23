@@ -155,7 +155,7 @@ The procedures below refer to the use of standard property pages, however, both 
 
 Win32
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 [Accelerator Keys](../windows/predefined-accelerator-keys.md)<br/>

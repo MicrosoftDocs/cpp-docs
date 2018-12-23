@@ -51,7 +51,7 @@ __interface A {
 };
 ```
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [Parameter Attributes](parameter-attributes.md)<br/>

@@ -36,7 +36,7 @@ See [bindable](bindable.md) for an example of how to use **immediatebind**.
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>

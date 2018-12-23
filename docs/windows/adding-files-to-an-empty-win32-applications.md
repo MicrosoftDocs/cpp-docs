@@ -21,6 +21,6 @@ To add files that are neither source, header, or resource files to your project,
 > [!NOTE]
 > Before building your project, you will need to specify build options for these files so that they are included correctly in your finished application. For more information, see [Specifying Project Settings with Property Pages](../build/reference/property-pages-visual-cpp.md) and [Building a C/C++ Program](../build/building-c-cpp-programs.md).
 
-## See Also
+## See also
 
 [Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)

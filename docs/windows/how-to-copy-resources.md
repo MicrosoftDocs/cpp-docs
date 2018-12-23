@@ -94,7 +94,7 @@ You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML
 
 Win32
 
-## See Also
+## See also
 
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md)<br/>

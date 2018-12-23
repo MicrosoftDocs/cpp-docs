@@ -129,7 +129,7 @@ You can have more than one group of radio buttons on a dialog box. Add each grou
 
 Win32
 
-## See Also
+## See also
 
 [Manage Dialog Box Controls](controls-in-dialog-boxes.md)<br/>
 [How To: Add, Edit, or Delete Controls](adding-editing-or-deleting-controls.md)<br/>

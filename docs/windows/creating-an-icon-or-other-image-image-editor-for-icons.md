@@ -228,7 +228,7 @@ You can open GIF or JPEG images in the **Image Editor** and save them as bitmaps
 
 None
 
-## See Also
+## See also
 
 [Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
 [How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>

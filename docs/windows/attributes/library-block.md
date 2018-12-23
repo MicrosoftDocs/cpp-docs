@@ -47,7 +47,7 @@ __interface IMyInterface {
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)

@@ -56,7 +56,7 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 
 None
 
-## See Also
+## See also
 
 [Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
 [How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>

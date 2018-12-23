@@ -115,6 +115,6 @@ public ref struct ABC : public Attribute {
 ref struct AStruct{};
 ```
 
-## See Also
+## See also
 
 [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md)

@@ -204,6 +204,6 @@ test
 21
 ```
 
-## See Also
+## See also
 
 [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

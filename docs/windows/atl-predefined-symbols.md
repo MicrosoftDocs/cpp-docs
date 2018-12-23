@@ -27,7 +27,7 @@ When you are working with dialogs and controls in the [Dialog Editor](../windows
 
 ATL
 
-## See Also
+## See also
 
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
 [MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)<br/>

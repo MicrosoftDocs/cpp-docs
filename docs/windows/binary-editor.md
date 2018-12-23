@@ -102,6 +102,6 @@ Another way to create a custom resource is to import an external file as the cus
 
 None
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)

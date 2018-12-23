@@ -64,6 +64,6 @@ The right object.
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
 [Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

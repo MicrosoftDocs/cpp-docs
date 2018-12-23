@@ -66,7 +66,7 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 **Previous:** [Console Applications in Visual C++](../windows/console-applications-in-visual-cpp.md)<br/>
 **Next:** [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 
-## See Also
+## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>

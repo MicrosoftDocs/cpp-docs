@@ -20,6 +20,6 @@ The following language features apply only to C++/CLI:
 
 [Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)
 
-## See Also
+## See also
 
 [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

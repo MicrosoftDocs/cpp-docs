@@ -130,7 +130,7 @@ public:
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [COM Attributes](com-attributes.md)<br/>

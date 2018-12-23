@@ -107,6 +107,6 @@ struct CSalesbyYear {
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [OLE DB Consumer Attributes](ole-db-consumer-attributes.md)

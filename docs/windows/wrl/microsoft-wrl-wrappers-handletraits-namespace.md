@@ -38,6 +38,6 @@ namespace Microsoft::WRL::Wrappers::HandleTraits;
 
 **Namespace:** Microsoft::WRL::Wrappers
 
-## See Also
+## See also
 
 [Microsoft::WRL::Wrappers Namespace](microsoft-wrl-wrappers-namespace.md)

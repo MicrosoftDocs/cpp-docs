@@ -149,7 +149,7 @@ With the resource script file open, in the menu, go to **File** > **Save \<*file
 
 Win32
 
-## See Also
+## See also
 
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [How to: Manage Resources](../windows/how-to-copy-resources.md)<br/>

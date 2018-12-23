@@ -81,7 +81,7 @@ void FuncName(int i);
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)<br/>

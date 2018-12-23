@@ -36,7 +36,7 @@ See the examples for [defaultvalue](defaultvalue.md) and [nonextensible](nonexte
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)

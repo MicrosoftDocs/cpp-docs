@@ -183,7 +183,7 @@ ActiveX controls supplied by independent vendors may come equipped with their ow
 
 Win32
 
-## See Also
+## See also
 
 [Manage Dialog Box Controls](controls-in-dialog-boxes.md)<br/>
 [How To: Layout Controls](arrangement-of-controls-on-dialog-boxes.md)<br/>

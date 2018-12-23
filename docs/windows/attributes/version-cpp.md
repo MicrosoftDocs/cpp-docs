@@ -41,7 +41,7 @@ See the [bindable](bindable.md) example for a sample use of **version**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [Class Attributes](class-attributes.md)

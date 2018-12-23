@@ -14,6 +14,6 @@ The following attributes apply to arrays or `SAFEARRAY`s.
 |[satype](satype.md)|Specifies the data type of the `SAFEARRAY` structure.|
 |[string](string-cpp.md)|Indicates that the one-dimensional **char**, **wchar_t**, `byte` (or equivalent) array or the pointer to such an array must be treated as a string.|
 
-## See Also
+## See also
 
 [Attributes by Usage](attributes-by-usage.md)

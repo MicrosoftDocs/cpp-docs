@@ -37,6 +37,6 @@ int main() {
 ++
 ```
 
-## See Also
+## See also
 
 [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)

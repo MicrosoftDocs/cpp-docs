@@ -68,6 +68,6 @@ Compiler option: `/ZW`
 
 (This language feature does not apply to the Common Language Runtime.)
 
-## See Also
+## See also
 
 [Partial Classes (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023)

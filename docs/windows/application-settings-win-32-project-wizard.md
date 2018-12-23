@@ -40,6 +40,6 @@ Add support for one of the libraries supplied in Visual C++.
 |**ATL**|Builds into the project support for classes in the Active Template Library (ATL). For Win32 console applications only.<br /><br /> **Note** This option does not indicate support for adding ATL objects using the ATL code wizards. You can add ATL objects only to ATL projects or MFC projects with ATL support.|
 |**MFC**|Builds into the project support for the Microsoft Foundation Class (MFC) Library. For Win32 console applications and static libraries only.|
 
-## See Also
+## See also
 
 [Win32 Application Wizard](../windows/win32-application-wizard.md)

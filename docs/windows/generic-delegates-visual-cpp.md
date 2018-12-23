@@ -154,6 +154,6 @@ Invoking the integer delegate: i = 123, j = 123
 Invoking the double delegate: m = 0.123, n = 0.123
 ```
 
-## See Also
+## See also
 
 [Generics](../windows/generics-cpp-component-extensions.md)

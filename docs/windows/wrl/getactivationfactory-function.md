@@ -41,6 +41,6 @@ S_OK if successful; otherwise, an error HRESULT that indicates why this operatio
 
 **Namespace:** Windows::Foundation
 
-## See Also
+## See also
 
 [Windows::Foundation Namespace](windows-foundation-namespace.md)

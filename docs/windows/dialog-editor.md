@@ -99,7 +99,7 @@ Below are the default accelerator keys for the **Dialog Editor** commands.
 
 Win32
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 [How to: Create a Dialog Box](../windows/creating-a-new-dialog-box.md)<br/>

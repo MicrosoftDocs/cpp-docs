@@ -86,7 +86,7 @@ When you test a dialog box, it typically displays at a location that's relative 
 
 Win32
 
-## See Also
+## See also
 
 [Dialog Editor](../windows/dialog-editor.md)<br/>
 [How to: Manage Dialog Box Controls](../windows/controls-in-dialog-boxes.md)<br/>

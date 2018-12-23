@@ -36,7 +36,7 @@ See [call_as](call-as.md) for an example of how to use **local**.
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)<br/>

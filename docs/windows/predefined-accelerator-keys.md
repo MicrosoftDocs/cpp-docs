@@ -73,6 +73,6 @@ Many times, you want a menu item and a keyboard combination to issue the same pr
 
 Win32
 
-## See Also
+## See also
 
 [Accelerator Editor](../windows/accelerator-editor.md)<br/>

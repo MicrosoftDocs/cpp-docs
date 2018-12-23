@@ -134,7 +134,7 @@ You can use in-place editing to change the **ID**, **Value**, and **Caption** pr
 
 Win32
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)
 <!--

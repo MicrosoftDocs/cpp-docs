@@ -201,7 +201,7 @@ You can size a combo box when you add it to the dialog box. You can also specify
 
 Win32
 
-## See Also
+## See also
 
 [Manage Dialog Box Controls](controls-in-dialog-boxes.md)<br/>
 [How To: Add, Edit, or Delete Controls](adding-editing-or-deleting-controls.md)<br/>

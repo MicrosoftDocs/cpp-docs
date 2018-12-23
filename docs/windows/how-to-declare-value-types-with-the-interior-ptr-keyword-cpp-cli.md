@@ -119,6 +119,6 @@ int main() {
 hello
 ```
 
-## See Also
+## See also
 
 [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)

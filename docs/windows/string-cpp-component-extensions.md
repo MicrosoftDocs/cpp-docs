@@ -251,7 +251,7 @@ System.SByte*
 System.String
 ```
 
-## See Also
+## See also
 
 [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)<br/>
 [String and Character Literals](../cpp/string-and-character-literals-cpp.md)<br/>

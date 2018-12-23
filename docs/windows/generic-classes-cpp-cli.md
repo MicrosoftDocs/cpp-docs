@@ -700,6 +700,6 @@ The field is assigned the double value: 0.123
 The field is assigned the string: Hello Generics!
 ```
 
-## See Also
+## See also
 
 [Generics](../windows/generics-cpp-component-extensions.md)

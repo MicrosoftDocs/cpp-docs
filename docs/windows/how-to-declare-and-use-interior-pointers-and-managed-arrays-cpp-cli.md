@@ -46,6 +46,6 @@ ipi points to memory address whose value is: 1
 after incrementing ipi, it points to memory address whose value is: 2
 ```
 
-## See Also
+## See also
 
 [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)

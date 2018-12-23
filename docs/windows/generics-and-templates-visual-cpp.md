@@ -84,6 +84,6 @@ int main() {
 F
 ```
 
-## See Also
+## See also
 
 [Generics](../windows/generics-cpp-component-extensions.md)
