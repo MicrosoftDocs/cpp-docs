@@ -54,7 +54,7 @@ This routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

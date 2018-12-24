@@ -52,7 +52,7 @@ The `__vmx_vmwrite` function is equivalent to the `VMWRITE` machine instruction.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmread](../intrinsics/vmx-vmread.md)

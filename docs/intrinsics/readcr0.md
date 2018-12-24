@@ -36,6 +36,6 @@ This intrinsic is only available in kernel mode, and the routine is only availab
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

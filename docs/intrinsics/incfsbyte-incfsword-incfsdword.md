@@ -44,7 +44,7 @@ These intrinsics are only available in kernel mode, and the routines are only av
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)<br/>
 [__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>

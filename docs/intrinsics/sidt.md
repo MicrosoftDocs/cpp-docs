@@ -37,7 +37,7 @@ The `__sidt` function is equivalent to the `SIDT` machine instruction. For more 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__lidt](../intrinsics/lidt.md)

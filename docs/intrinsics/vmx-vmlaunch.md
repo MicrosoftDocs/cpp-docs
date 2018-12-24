@@ -42,7 +42,7 @@ The `__vmx_vmlaunch` function is equivalent to the `VMLAUNCH` machine instructio
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmresume](../intrinsics/vmx-vmresume.md)<br/>

@@ -43,6 +43,6 @@ This function supports the interaction of a host's virtual machine monitor with 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

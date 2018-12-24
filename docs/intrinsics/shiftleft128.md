@@ -88,7 +88,7 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__shiftright128](../intrinsics/shiftright128.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

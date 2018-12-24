@@ -38,6 +38,6 @@ The `__svm_invlpga` function is equivalent to the `INVLPGA` machine instruction.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

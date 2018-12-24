@@ -50,7 +50,7 @@ These routines are available only as intrinsics.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)<br/>
 [__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>

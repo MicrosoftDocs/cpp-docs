@@ -90,7 +90,7 @@ Rotating unsigned short 0x12 left by 10 bits gives 0x4800
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

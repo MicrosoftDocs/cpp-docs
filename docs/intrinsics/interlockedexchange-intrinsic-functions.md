@@ -136,7 +136,7 @@ For a sample of how to use `_InterlockedExchange`, see [_InterlockedDecrement](.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>

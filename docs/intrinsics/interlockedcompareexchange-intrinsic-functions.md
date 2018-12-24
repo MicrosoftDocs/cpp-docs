@@ -383,7 +383,7 @@ int main(
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)<br/>
 [_InterlockedCompareExchangePointer Intrinsic Functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>

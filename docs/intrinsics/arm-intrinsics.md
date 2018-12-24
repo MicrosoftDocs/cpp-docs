@@ -642,7 +642,7 @@ The plain interlocked bittest intrinsics are common to all platforms. ARM adds `
 
 [[NEON](#top)]
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)<br/>

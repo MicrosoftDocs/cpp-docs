@@ -106,7 +106,7 @@ Unfortunately, this use of `assert` prevents the compiler from performing the de
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)
