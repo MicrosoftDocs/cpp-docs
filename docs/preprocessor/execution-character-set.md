@@ -30,7 +30,7 @@ By default, the compiler encodes narrow characters and narrow strings by using t
 
 By default, Visual Studio uses the current code page as the source character set used to interpret your source code for output. When a file is read in, Visual Studio interprets it according to the current code page unless the file code page was set, or unless a byte-order mark (BOM) or UTF-16 characters are detected at the beginning of the file. Because UTF-8 can't be set as the current code page, when the automatic detection encounters source files encoded as UTF-8 without a BOM, Visual Studio assumes that they are encoded by using the current code page. Characters in the source file that are outside the range of the specified or automatically detected code page can cause compiler warnings and errors.
 
-## See Also
+## See also
 
 [Pragma Directives and the \_\_Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
 [/execution-charset (Set Execution Character Set)](../build/reference/execution-charset-set-execution-character-set.md)<br/>

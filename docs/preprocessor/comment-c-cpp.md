@@ -80,6 +80,6 @@ The following pragma causes the compiler to place the name and version number of
 #pragma comment( user, "Compiled on " __DATE__ " at " __TIME__ )
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

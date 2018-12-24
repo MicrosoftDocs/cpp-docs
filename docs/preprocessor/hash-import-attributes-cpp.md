@@ -42,6 +42,6 @@ The following attributes are available to the `#import` directive.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

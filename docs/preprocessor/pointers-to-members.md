@@ -48,6 +48,6 @@ The *most-general-representation* argument specifies the smallest pointer repres
 
 ## END C++ Specific
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -32,6 +32,6 @@ Other limitations on **alloc_text** are as follows:
 
 - It must be used after the function has been declared, but before the function has been defined.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

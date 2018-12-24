@@ -290,7 +290,7 @@ Preprocessor macros used to determine the ATL or MFC library version are not pre
 
 - **&#95;MFC&#95;VER** Defined in \<afxver_.h> as an integer literal that encodes the MFC version number.
 
-## See Also
+## See also
 
 [Macros (C/C++)](../preprocessor/macros-c-cpp.md)<br/>
 [Preprocessor Operators](../preprocessor/preprocessor-operators.md)<br/>

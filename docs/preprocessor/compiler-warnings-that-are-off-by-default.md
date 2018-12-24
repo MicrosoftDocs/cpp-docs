@@ -161,6 +161,6 @@ This warning was off by default in versions of the compiler before Visual Studio
 |-|-|
 |[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (level 4)|missing type specifier - int assumed. Note: C no longer supports default-int|
 
-## See Also
+## See also
 
 [warning](../preprocessor/warning.md)

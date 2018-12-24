@@ -168,6 +168,6 @@ The preceding code checks to see if the symbolic constant `EXAMPLE_H` is defined
 #endif
 ```
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

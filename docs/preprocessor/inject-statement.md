@@ -28,7 +28,7 @@ The text is placed at the beginning of the namespace declaration that wraps the 
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -25,6 +25,6 @@ For more information, see,
 
 - [Predefined Macros](../preprocessor/predefined-macros.md)
 
-## See Also
+## See also
 
 [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)

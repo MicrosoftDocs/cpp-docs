@@ -105,6 +105,6 @@ The following sample shows how to use the *push*, *pop*, and *show* syntax.
 #pragma pack(show)   // C4810
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

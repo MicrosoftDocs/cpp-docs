@@ -24,6 +24,6 @@ The error message that this directive emits includes the *token-string* paramete
 #endif
 ```
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

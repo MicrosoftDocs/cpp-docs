@@ -104,6 +104,6 @@ When you write header files, you can use *push* and *pop* to guarantee that warn
 
 For more information about compiler options that help you suppress warnings, see [/FI](../build/reference/fi-name-forced-include-file.md) and [/w](../build/reference/compiler-option-warning-level.md).
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

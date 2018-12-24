@@ -84,7 +84,7 @@ For include files that are specified as `#include "path-spec"`, directory search
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)<br/>
 [/I (Additional include directories)](../build/reference/i-additional-include-directories.md)<br/>
