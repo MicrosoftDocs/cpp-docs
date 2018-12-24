@@ -4,7 +4,7 @@ Developers will be reading your documents to learn .NET core, and to use it in t
 Your goal is to create useful documentation that helps the reader on their journey. Our guidelines
 help with that. Our style guide contains four recommendations:
 - [Use a Conversational Tone](#use-a-conversational-tone)
-- [Write in Second Person](#write-in-2nd-person)
+- [Write in Second Person](#write-in-second-person)
 - [Use Active Voice](#use-active-voice)
 - [Target a 5th Grade Reading Level](#target-a-5th-grade-reading-level)
 
@@ -62,7 +62,7 @@ The first sentence uses active voice. The second sentence was written in passive
 
 We recommend active voice because it is more readable. Passive voice can be more difficult to read.
 
-### Target a Fifth Grade Reading Level
+### Target a 5th Grade Reading Level
 
 We provide this final guideline because many of our readers are not native English speakers.
 You are reaching an international audience with your articles. Please take into account that
