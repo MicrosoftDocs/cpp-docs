@@ -8,7 +8,7 @@ ms.assetid: a65604d1-ecbb-44fd-ae2f-696ddeeed9d6
 ---
 # auto_handle Class
 
-Automatic resource management which can be used to embed a virtual handle into a managed type.
+Automatic resource management, which can be used to embed a virtual handle into a managed type.
 
 ## Syntax
 
