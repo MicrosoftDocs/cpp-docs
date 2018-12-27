@@ -9256,7 +9256,7 @@
         },
         {
             "source_path": "docs/dotnet/auto-handle-members.md",
-            "redirect_url": "/cpp/dotnet/auto-handle-class",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#members",
             "redirect_document_id": true
         },
         {

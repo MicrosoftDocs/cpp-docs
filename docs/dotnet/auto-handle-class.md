@@ -22,7 +22,7 @@ ref class auto_handle;
 *_element_type*<br/>
 The managed type to be embedded.
 
-## Members 
+## <a name="members"></a>Members 
 
 ### Public constructors  
 
