@@ -436,7 +436,7 @@ _element_type ^ operator->();
 
 ### Return value
 
-The object that is wrapped by `auto_handle`.
+The object that's wrapped by `auto_handle`.
 
 ### Example
 
