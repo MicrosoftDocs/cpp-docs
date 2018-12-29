@@ -189,7 +189,7 @@ int main()
         cout << printstr << endl;
         // The following line of code is an easier way to
         // display wide character strings:
-        // wcout << (LPCTSTR) ccombstr << endl;
+        wcout << (LPCTSTR) ccombstr << endl;
     }
 
     // Convert a wide wchar_t string to a multibyte CStringA,
