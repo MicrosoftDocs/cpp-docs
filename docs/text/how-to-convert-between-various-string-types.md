@@ -83,8 +83,8 @@ int main()
     CStringW cstring(orig);
     cstring += " (CStringW)";
     // To display a CStringW correctly, use wcout and cast cstring
-    // to (LPCTSTR).
-    wcout << (LPCTSTR)cstring << endl;
+    // to (LPCWSTR).
+    wcout << (LPCWSTR)cstring << endl;
 
     // Convert the C style string to a basic_string and display it.
     string basicstring(orig);
