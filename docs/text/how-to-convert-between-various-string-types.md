@@ -74,7 +74,7 @@ int main()
         cout << printstr << endl;
     }
 
-    // Convert the C style string to a CstringA and display it.
+    // Convert the C style string to a CStringA and display it.
     CStringA cstringa(orig);
     cstringa += " (CStringA)";
     cout << cstringa << endl;
