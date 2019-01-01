@@ -538,8 +538,8 @@ if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
 // Convert to a wide character CComBSTR string from
 // a wide character CStringW string.
 CComBSTR ccombstrw(origw);
-// Append the type of string to it, and display the result.
 
+// Append the type of string to it, and display the result.
 if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
 {
     CW2A printstrw(ccombstrw);
