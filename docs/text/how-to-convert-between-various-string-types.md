@@ -518,7 +518,7 @@ _bstr_t bstrt(origa);
 bstrt += _T(" (_bstr_t)");
 wcout << bstrt << endl;
 
-// Convert to a wide character_bstr_t string from
+// Convert to a wide character _bstr_t string from
 // a wide character CStringW string.
 bstr_t bstrtw(origw);
 bstrtw += " (_bstr_t)";
