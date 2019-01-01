@@ -623,7 +623,7 @@ int main()
     string orig("Hello, World!");
     cout << orig << " (basic_string)" << endl;
 
-    // Convert a wide char basic_string string to a multibyte char*
+    // Convert a wide character basic_string string to a multibyte char*
     // string. To be safe, we allocate two bytes for each character
     // in the original string, including the terminating null.
     const size_t newsize = (strlen(orig.c_str()) + 1)*2;
