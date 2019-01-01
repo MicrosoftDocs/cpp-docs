@@ -738,20 +738,20 @@ int main()
     wcstombs_s(&convertedChars, nstring, newsize, wch, _TRUNCATE);
     cout << nstring << " (char *)" << endl;
 
-    // Convert a wide character system string to a
+    // Convert a wide character System::String to a
     // wide character wchar_t* string.
     const size_t newsizew = origsize;
     wchar_t *wcstring = new wchar_t[newsizew];
     wcscpy_s(wcstring, newsizew, wch);
     wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-    // Convert a wide character system string to a
+    // Convert a wide character System::String to a
     // wide character _bstr_t string.
     _bstr_t bstrt(wch);
     bstrt += " (_bstr_t)";
     cout << bstrt << endl;
 
-    // Convert a wide character system string
+    // Convert a wide character System::String
     // to a wide character CComBSTR string.
     CComBSTR ccombstr(wch);
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
