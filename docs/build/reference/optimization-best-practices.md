@@ -26,7 +26,7 @@ The **/Gy** switch is also very useful. It generates a separate COMDAT for each 
 
 For linking in 64-bit environments, it is recommended to use the **/OPT:REF,ICF** linker option, and in 32-bit environments, **/OPT:REF** is recommended. For more information, see [/OPT (Optimizations)](../../build/reference/opt-optimizations.md).
 
-It is also strongly recommended to generate debug symbols, even with optimized release builds. It doesn’t effect the generated code, and it makes it a lot easier to debug your application, if need be.
+It is also strongly recommended to generate debug symbols, even with optimized release builds. It doesn’t affect the generated code, and it makes it a lot easier to debug your application, if need be.
 
 ### Floating-point switches
 
