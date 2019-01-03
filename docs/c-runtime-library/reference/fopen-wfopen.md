@@ -131,11 +131,11 @@ Valid characters for the *mode* string that is used in **fopen** and **_fdopen**
 
 |Characters in *mode* string|Equivalent *oflag* value for _open/_sopen|
 |-------------------------------|----------------------------------------------------|
-|**a**|**_O_WRONLY** &#124; **_O_APPEND** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_APPEND**)|
+|**a**|**_O_WRONLY** &#124; **_O_APPEND** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124; ** _O_APPEND**)|
 |**a+**|**_O_RDWR** &#124; **_O_APPEND** (usually **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
 |**r**|**_O_RDONLY**|
 |**r+**|**_O_RDWR**|
-|**w**|**_O_WRONLY** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC**)|
+|**w**|**_O_WRONLY** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124; ** _O_TRUNC**)|
 |**w+**|**_O_RDWR** (usually **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
 |**b**|**_O_BINARY**|
 |**t**|**_O_TEXT**|
