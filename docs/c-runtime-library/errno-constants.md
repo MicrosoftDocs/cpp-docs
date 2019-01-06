@@ -10,7 +10,6 @@ ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
 ## Syntax
 
 ```
-
 #include <errno.h>
 ```
 
