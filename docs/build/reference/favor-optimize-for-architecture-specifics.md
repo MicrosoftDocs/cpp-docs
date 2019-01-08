@@ -11,9 +11,7 @@ ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
 
 ## Syntax
 
-```
-/favor:{blend | ATOM | AMD64 | INTEL64}
-```
+> **/favor:**{**blend** | **ATOM** | **AMD64** | **INTEL64**}
 
 ## Remarks
 

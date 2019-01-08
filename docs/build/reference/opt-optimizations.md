@@ -48,7 +48,7 @@ By default, the **/OPT:LBR** option is set when incremental linking is not enabl
 
 ## Remarks
 
-When used at the command line, the linker defaults to **/OPT:REF,ICF,LBR**. If **/DEBUG** is specified, the default is **/OPT:NOREF,NOICR,NOLBR**.
+When used at the command line, the linker defaults to **/OPT:REF,ICF,LBR**. If **/DEBUG** is specified, the default is **/OPT:NOREF,NOICF,NOLBR**.
 
 The **/OPT** optimizations generally decrease the image size and increase the program speed. These improvements can be substantial in larger programs, which is why they are enabled by default for retail builds.
 

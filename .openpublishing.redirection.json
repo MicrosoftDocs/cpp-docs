@@ -675,6 +675,195 @@
             "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#when-to-precompile-source-code",
             "redirect_document_id": false
         },
+
+        {
+            "source_path": "docs/build/calling-convention.md",
+            "redirect_url": "/cpp/build/x64-calling-convention",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/build/parameter-passing.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#parameter-passing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/varargs.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#varargs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/unprototyped-functions.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#unprototyped-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/return-values-cpp.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#return-values",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/caller-callee-saved-registers.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#callercallee-saved-registers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/function-pointers.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#function-pointers",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/floating-point-support-for-older-code-visual-cpp.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#floating-point-support-for-older-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/fpcsr.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#fpcsr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/mxcsr.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#mxcsr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/setjmp-longjump.md",
+            "redirect_url": "/cpp/build/x64-calling-convention#setjmplongjmp",
+            "redirect_document_id": false
+        },
+
+        {
+            "source_path": "docs/build/overview-of-x64-calling-conventions.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#overview-of-x64-calling-conventions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/types-and-storage.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#types-and-storage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/scalar-types.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#scalar-types",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/aggregates-and-unions.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#aggregates-and-unions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/examples-of-structure-alignment.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#examples-of-structure-alignment",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/bitfields.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#bitfields",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/conflicts-with-the-x86-compiler.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#conflicts-with-the-x86-compiler",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/register-usage.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#register-usage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/intrinsics-and-inline-assembly.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#intrinsics-and-inline-assembly",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/image-format.md",
+            "redirect_url": "/cpp/build/x64-software-conventions#image-format",
+            "redirect_document_id": false
+        },
+
+        {
+            "source_path": "docs/build/stack-allocation.md",
+            "redirect_url": "/cpp/build/stack-usage#stack-allocation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/dynamic-parameter-stack-area-construction.md",
+            "redirect_url": "/cpp/build/stack-usage#dynamic-parameter-stack-area-construction",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/function-types.md",
+            "redirect_url": "/cpp/build/stack-usage#function-types",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/malloc-alignment.md",
+            "redirect_url": "/cpp/build/stack-usage#malloc-alignment",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/alloca.md",
+            "redirect_url": "/cpp/build/stack-usage#alloca",
+            "redirect_document_id": false
+        },
+
+        {
+            "source_path": "docs/build/unwind-data-for-exception-handling-debugger-support.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#unwind-data-for-exception-handling-debugger-support",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/struct-runtime-function.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#struct-runtime_function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/struct-unwind-code.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#struct-unwind_code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/struct-unwind-info.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#struct-unwind_info",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/chained-unwind-info-structures.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#chained-unwind-info-structures",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/unwind-procedure.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#unwind-procedure",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/language-specific-handler.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#language-specific-handler",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/unwind-helpers-for-masm.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#unwind-helpers-for-masm",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/raw-pseudo-operations.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#raw-pseudo-operations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/masm-macros.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#masm-macros",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/unwind-data-definitions-in-c.md",
+            "redirect_url": "/cpp/build/exception-handling-x64#unwind-data-definitions-in-c",
+            "redirect_document_id": false
+        },
         {
             "source_path": "docs/c-language/index.md",
             "redirect_url": "/cpp/c-language/c-language-reference",
@@ -3357,6 +3546,11 @@
         },
         {
             "source_path": "docs/dotnet/how-to-migrate-to-clr-safe-cpp-cli.md",
+            "redirect_url": "/cpp/dotnet/pure-and-verifiable-code-cpp-cli",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/mixed-pure-and-verifiable-feature-comparison-cpp-cli.md",
             "redirect_url": "/cpp/dotnet/pure-and-verifiable-code-cpp-cli",
             "redirect_document_id": false
         },
@@ -7394,6 +7588,11 @@
             "source_path": "docs/parallel/amp/reference/index.md",
             "redirect_url": "/cpp/parallel/amp/reference/reference-cpp-amp",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/concrt/convert-an-openmp-loop-that uses-exception-handling.md",
+            "redirect_url": "/cpp/parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/parallel/concrt/index.md",

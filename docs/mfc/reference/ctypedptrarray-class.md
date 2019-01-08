@@ -43,7 +43,7 @@ Type of the elements stored in the base-class array.
 
 |Name|Description|
 |----------|-----------------|
-|[CTypedPtrArray::operator [ ]](#operator_at)|Sets or gets the element at the specified index.|
+|[CTypedPtrArray::operator \[ \]](#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 
