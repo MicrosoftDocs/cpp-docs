@@ -48,10 +48,6 @@ The memory contents of the byte, word, double word, or quadword (as indicated by
 
 **Header file** \<intrin.h>
 
-## Remarks
-
-These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.
-
 **END Microsoft Specific**
 
 ## See Also
