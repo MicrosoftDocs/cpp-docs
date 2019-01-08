@@ -51,6 +51,10 @@ void __writegsqword(
 
 **Header file** \<intrin.h>
 
+## Remarks
+
+These routines are only available as an intrinsic.
+
 **END Microsoft Specific**
 
 ## See Also
