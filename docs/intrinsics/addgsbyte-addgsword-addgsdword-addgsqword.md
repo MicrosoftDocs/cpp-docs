@@ -49,6 +49,10 @@ void __addgsqword(
 |`__addgsdword`|x64|
 |`__addgsqword`|x64|
 
+## Remarks
+
+These routines are only available as an intrinsic.
+
 **END Microsoft Specific**
 
 ## See Also
