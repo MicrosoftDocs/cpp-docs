@@ -21,7 +21,7 @@ void __nop();
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`__nop`|x86, x64|
+|`__nop`|x86, ARM, x64, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -29,7 +29,7 @@ void __nop();
 
 ## Remarks
 
-The `__nop` function is equivalent to the `NOP` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site.
+The `__nop` function is equivalent to the `NOP` machine instruction. For more information on x86 and x64, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site.
 
 ## See Also
 
