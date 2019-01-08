@@ -42,10 +42,6 @@ void __incgsqword(
 |`__incgsdword`|x64|
 |`__incgsqword`|x64|
 
-## Remarks
-
-These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.
-
 **END Microsoft Specific**
 
 ## See Also
