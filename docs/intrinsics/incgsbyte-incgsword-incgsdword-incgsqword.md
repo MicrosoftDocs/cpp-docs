@@ -42,6 +42,10 @@ void __incgsqword(
 |`__incgsdword`|x64|
 |`__incgsqword`|x64|
 
+## Remarks
+
+These routines are only available as an intrinsic.
+
 **END Microsoft Specific**
 
 ## See Also
