@@ -51,10 +51,6 @@ void __writegsqword(
 
 **Header file** \<intrin.h>
 
-## Remarks
-
-These intrinsics are available in kernel mode only, and these routines are only available as intrinsics.
-
 **END Microsoft Specific**
 
 ## See Also
