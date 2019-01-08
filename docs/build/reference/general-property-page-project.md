@@ -66,7 +66,7 @@ The properties in the General section affect the location of files that are crea
 
    Allows you to specify a non-default location for the log file that is created whenever you build a project. The default location is specified by the macros $(IntDir)$(MSBuildProjectName).log.
 
-   You can use project macros to change the directory location. See [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
+   You can use project macros to change the directory location. See [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md).
 
 - **Platform Toolset**
 

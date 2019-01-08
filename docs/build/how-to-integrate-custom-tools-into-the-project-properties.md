@@ -31,4 +31,4 @@ This document explains how to create a file in a set directory that contains pro
 
 ## See Also
 
-[MSBuild (Visual C++)](msbuild-visual-cpp.md)
+[MSBuild on the command line - C++](msbuild-visual-cpp.md)

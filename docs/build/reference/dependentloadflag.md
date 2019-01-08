@@ -44,7 +44,7 @@ If you specify the link option `/DEPENDENTLOADFLAG:0xA00` (the value of the comb
 
 - [MSVC linker reference](linking.md)
 - [MSVC Linker Options](linker-options.md)
-- [How to link implicitly to a DLL](../linking-an-executable-to-a-dll.md#linking-implicitly)
-- [Determine which linking method to use](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [Link an executable to a DLL](../linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Link an executable to a DLL](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 - [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa)
 - [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)

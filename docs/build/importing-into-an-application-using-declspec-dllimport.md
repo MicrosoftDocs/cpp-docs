@@ -1,11 +1,11 @@
 ---
-title: "Importing into an Application Using __declspec(dllimport)"
+title: "Import into an application using __declspec(dllimport)"
 ms.date: "11/04/2016"
 f1_keywords: ["__declspec", "dllimport"]
 helpviewer_keywords: ["__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
 ---
-# Importing into an Application Using __declspec(dllimport)
+# Import into an application using __declspec(dllimport)
 
 A program that uses public symbols defined by a DLL is said to import them. When you create header files for applications that use your DLLs to build with, use **__declspec(dllimport)** on the declarations of the public symbols. The keyword **__declspec(dllimport)** works whether you export with .def files or with the **__declspec(dllexport)** keyword.
 

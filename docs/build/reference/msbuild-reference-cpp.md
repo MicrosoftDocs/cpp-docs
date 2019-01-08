@@ -15,7 +15,7 @@ If for some reason you wish to use MSBuild directly from the command line, see [
 [MSBuild internals for C++ projects](msbuild-visual-cpp-overview.md)<br/>
 Information about how properties and targets are stored and consumed.
 
-[Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md)<br/>
+[Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md)<br/>
 Describes macros (compile-time constants) that can be used to define properties such as paths and product versions.
 
 [File types created for C++ projects](file-types-created-for-visual-cpp-projects.md)<br/>

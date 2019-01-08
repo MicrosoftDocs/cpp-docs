@@ -162,7 +162,7 @@ Describes how to start a command prompt window that has the required environment
 [NMAKE Reference](reference/nmake-reference.md)<br/>
 Provides links to articles that describe the Microsoft Program Maintenance Utility (NMAKE.EXE).
 
-[MSBuild (Visual C++)](msbuild-visual-cpp.md)<br/>
+[MSBuild on the command line - C++](msbuild-visual-cpp.md)<br/>
 Provides links to articles that discuss how to use msbuild.exe from the command line.
 
 ## Related Sections

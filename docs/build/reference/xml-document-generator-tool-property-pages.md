@@ -23,7 +23,7 @@ The XML Document Generator Tool property page exposes the functionality of xdcma
 
 - **Output Document File**
 
-   The name and directory location of the .xml output file. See [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md) for information on using macros to specify directory locations.
+   The name and directory location of the .xml output file. See [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md) for information on using macros to specify directory locations.
 
 - **Document Library Dependencies**
 

@@ -16,7 +16,7 @@ An executable can use either linking method to link to the same DLL. Furthermore
 
 <a name="determining-which-linking-method-to-use"></a>
 
-## Determine which linking method to use
+## Link an executable to a DLL
 
 Whether to use implicit linking or explicit linking is an architectural decision you must make for your application. There are advantages and disadvantages to each method.
 
@@ -56,7 +56,7 @@ Here are two hazards of explicit linking to be aware of:
 
 <a name="linking-implicitly"></a>
 
-## How to link implicitly to a DLL
+## Link an executable to a DLL
 
 To use a DLL by implicit linking, client executables must obtain these files from the provider of the DLL:
 

@@ -51,7 +51,7 @@ Note: The list is populated as you type. Don't press **Enter**.
 
 For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-For a list of commonly used macros, see [Common Macros for Build Commands and Properties](common-macros-for-build-commands-and-properties.md).
+For a list of commonly used macros, see [Common macros for build commands and properties](common-macros-for-build-commands-and-properties.md).
 
 You can define your own macros in two ways:
 

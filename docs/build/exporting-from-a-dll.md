@@ -32,7 +32,7 @@ When exporting functions with either method, make sure to use the [__stdcall](..
 
 - [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Determine which linking method to use](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [Link an executable to a DLL](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
 - [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)
 

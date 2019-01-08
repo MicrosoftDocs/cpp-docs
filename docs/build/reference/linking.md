@@ -1,5 +1,5 @@
 ---
-title: "MSVC Linker Reference"
+title: "MSVC linker reference"
 ms.date: "12/10/2018"
 ms.assetid: bb736587-d13b-4f3c-8982-3cc2c015c59c
 ---

@@ -1,11 +1,11 @@
 ---
-title: "MSBuild on the Command Line - C++"
+title: "MSBuild on the command line - C++"
 ms.date: "12/12/2018"
 f1_keywords: ["MSBuild"]
 helpviewer_keywords: ["MSBuild"]
 ms.assetid: 7a1be7ff-0312-4669-adf2-5f5bf507d560
 ---
-# MSBuild (Visual C++)
+# MSBuild on the command line - C++
 
 In general, we recommend that you use Visual Studio to set project properties and invoke the MSBuild system. However, you can use the **MSBuild** tool directly from the command prompt. The build process is controlled by the information in a project file (.vcxproj) that you can create and edit. The project file specifies build options based on build stages, conditions, and events. In addition, you can specify zero or more command-line *options* arguments.
 

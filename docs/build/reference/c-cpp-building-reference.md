@@ -16,7 +16,7 @@ Visual C++ provides two ways of building a C/C++ program. The easiest (and most 
 [MSVC Compiler Reference](compiling-a-c-cpp-program.md)<br/>
 Describes the MSVC compiler, which creates an object file containing machine code, linker directives, sections, external references, and function/data names.
 
-[MSVC Linker Reference](linking.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 Describes the linker, which combines code from the object files created by the compiler and from statically linked libraries, resolves the name references, and creates an executable file.
 
 [Unicode Support in the Compiler and Linker](unicode-support-in-the-compiler-and-linker.md)

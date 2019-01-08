@@ -22,9 +22,9 @@ If Windows cannot load the DLL, the process can attempt to recover from the erro
 
 ## What do you want to do?
 
-- [How to link implicitly to a DLL](linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Link an executable to a DLL](linking-an-executable-to-a-dll.md#linking-implicitly)
 
-- [Determine which linking method to use](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [Link an executable to a DLL](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
 ## What do you want to know more about?
 
