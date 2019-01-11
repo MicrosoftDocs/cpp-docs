@@ -61,4 +61,4 @@ The following example shows how `shared_ptr` overloads various comparison operat
 
 ## See also
 
-[Smart Pointers](../cpp/smart-pointers-modern-cpp.md)
+[Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)
