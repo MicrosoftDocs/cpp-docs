@@ -16,7 +16,7 @@ In the Concurrency Runtime, when you throw an exception in the body of a work fu
 
 This example demonstrates how to handle exceptions in an OpenMP `parallel` region and in a call to `parallel_for`. The `do_work` function performs a memory allocation request that does not succeed and therefore throws an exception of type [std::bad_alloc](../../standard-library/bad-alloc-class.md). In the version that uses OpenMP, the thread that throws the exception must also catch it. In other words, each iteration of an OpenMP parallel loop must handle the exception. In the version that uses the Concurrency Runtime, the main thread catches an exception that is thrown by another thread.
 
-[!code-cpp[concrt-openmp#3](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that uses-exception-handling_1.cpp)]
+[!code-cpp[concrt-openmp#3](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that-uses-exception-handling_1.cpp)]
 
 This example produces the following output.
 

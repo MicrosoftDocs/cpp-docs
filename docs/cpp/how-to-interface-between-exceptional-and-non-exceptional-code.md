@@ -230,5 +230,5 @@ For more information about lambda expressions, see [Lambda Expressions](../cpp/l
 
 ## See also
 
-[Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Errors and Exception Handling (Modern C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md)<br/>
