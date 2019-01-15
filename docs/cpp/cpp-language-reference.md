@@ -7,7 +7,7 @@ ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
 ---
 # C++ Language Reference
 
-This reference explains the C++ programming language as implemented in Microsoft Visual C++. The organization is based on *The Annotated C++ Reference Manual* by Margaret Ellis and Bjarne Stroustrup and on the ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft-specific implementations of C++ language features are included.
+This reference explains the C++ programming language as implemented in Microsoft Visual C++. The organization is based on [*The Annotated C++ Reference Manual*](http://www.stroustrup.com/arm.html) by Margaret Ellis and Bjarne Stroustrup and on the ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft-specific implementations of C++ language features are included.
 
 For an overview of Modern C++ programming practices, see [Welcome Back to C++](welcome-back-to-cpp-modern-cpp.md).
 

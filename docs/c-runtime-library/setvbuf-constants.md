@@ -10,7 +10,6 @@ ms.assetid: a6ec4dd5-1f24-498c-871a-e874cd28d33c
 ## Syntax
 
 ```
-
 #include <stdio.h>
 ```
 

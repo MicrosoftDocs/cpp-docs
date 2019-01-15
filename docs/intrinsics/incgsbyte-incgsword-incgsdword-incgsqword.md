@@ -44,7 +44,7 @@ void __incgsqword(
 
 ## Remarks
 
-These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.
+These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 
