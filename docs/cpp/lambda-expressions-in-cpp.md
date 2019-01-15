@@ -46,7 +46,7 @@ This illustration shows the parts of a lambda:
 
 1. *trailing-return-type* Optional.
 
-1. *lambda body*)
+1. *lambda body*.
 
 ### Capture Clause
 

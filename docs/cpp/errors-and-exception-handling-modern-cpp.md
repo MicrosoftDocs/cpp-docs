@@ -95,6 +95,6 @@ Exception specifications were introduced in C++ as a way to specify the exceptio
 ## See also
 
 [How to: Interface Between Exceptional and Non-Exceptional Code](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
