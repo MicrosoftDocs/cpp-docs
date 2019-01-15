@@ -24,7 +24,7 @@ struct MixIn;
 ### Parameters
 
 *Derived*<br/>
-A type derived from the [Implements](../windows/implements-structure.md) structure.
+A type derived from the [Implements](implements-structure.md) structure.
 
 *MixInType*<br/>
 A base type.
@@ -48,4 +48,4 @@ If a class is derived from both Windows Runtime and class COM interfaces, the cl
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

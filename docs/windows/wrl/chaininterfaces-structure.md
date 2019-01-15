@@ -89,7 +89,7 @@ A derived type.
 The base type of a derived type.
 
 *hasImplements*<br/>
-A Boolean value that if **true**, means you can't use a [MixIn](../windows/mixin-structure.md) structure with a class that does not derive from the [Implements](../windows/implements-structure.md) stucture.
+A Boolean value that if **true**, means you can't use a [MixIn](mixin-structure.md) structure with a class that does not derive from the [Implements](implements-structure.md) stucture.
 
 ## Members
 

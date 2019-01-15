@@ -89,4 +89,4 @@ The **InterfaceListHelper** template uses template parameter *T0* to define the 
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

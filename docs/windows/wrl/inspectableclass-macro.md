@@ -37,4 +37,4 @@ The **InspectableClass** macro can be used only with Windows Runtime types.
 
 ## See Also
 
-[RuntimeClass Class](../windows/runtimeclass-class.md)
+[RuntimeClass Class](runtimeclass-class.md)

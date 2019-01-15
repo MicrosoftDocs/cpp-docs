@@ -102,7 +102,7 @@ An HRESULT value.
 
 ## Remarks
 
-See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Make](../windows/make-function.md), and for an example.
+See [How to: Instantiate WRL Components Directly](how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Make](make-function.md), and for an example.
 
 ## Requirements
 
@@ -112,4 +112,4 @@ See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

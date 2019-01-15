@@ -24,7 +24,7 @@ class EventTargetArray :
 
 Represents an array of event handlers.
 
-The event handlers that are associated with an [EventSource](../windows/eventsource-class.md) object are stored in a protected `EventTargetArray` data member.
+The event handlers that are associated with an [EventSource](eventsource-class.md) object are stored in a protected `EventTargetArray` data member.
 
 ## Members
 

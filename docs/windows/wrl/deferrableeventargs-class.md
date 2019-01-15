@@ -73,4 +73,4 @@ void InvokeAllFinished()
 
 ### Remarks
 
-You should call this method after the event source calls [InvokeAll](../windows/eventsource-invokeall-method.md). Calling this method prevents further deferrals from being taken and forces the completion handler to execute if no deferrals were taken.
+You should call this method after the event source calls [InvokeAll](eventsource-class.md#invokeall). Calling this method prevents further deferrals from being taken and forces the completion handler to execute if no deferrals were taken.

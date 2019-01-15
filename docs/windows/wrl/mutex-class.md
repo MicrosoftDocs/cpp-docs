@@ -121,4 +121,4 @@ A reference to the current `Mutex` object.
 
 ### Remarks
 
-For more information, see the **Move Semantics** section of [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+For more information, see the **Move Semantics** section of [Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md).

@@ -47,7 +47,7 @@ The second interface.
 
 Utilize `ClassFactory` to provide a user-defined factory implementation.
 
-The following programming pattern demonstrates how to use the [Implements](../windows/implements-structure.md) structure to specify more than three interfaces on a class factory.
+The following programming pattern demonstrates how to use the [Implements](implements-structure.md) structure to specify more than three interfaces on a class factory.
 
 `struct MyFactory : ClassFactory<Implements<I1, I2, I3>, I4, I5>`
 
@@ -138,7 +138,7 @@ S_OK if successful; otherwise, E_FAIL.
 
 ### Remarks
 
-`ClassFactory` keeps track of objects in an underlying instance of the [Module](../windows/module-class.md) class.
+`ClassFactory` keeps track of objects in an underlying instance of the [Module](module-class.md) class.
 
 ## <a name="queryinterface"></a>ClassFactory::QueryInterface
 

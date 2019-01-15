@@ -49,9 +49,9 @@ The second interface.
 
 The following code fragment symbolically illustrates how to use ActivationFactory.
 
-[!code-cpp[wrl-microsoft__wrl__activationfactory#1](../windows/codesnippet/CPP/activationfactory-class_1.cpp)]
+[!code-cpp[wrl-microsoft__wrl__activationfactory#1](../codesnippet/CPP/activationfactory-class_1.cpp)]
 
-The following code fragment shows how to use the [Implements](../windows/implements-structure.md) structure to specify more than three interface IDs.
+The following code fragment shows how to use the [Implements](implements-structure.md) structure to specify more than three interface IDs.
 
 `struct MyFactory : ActivationFactory<Implements<I1, I2, I3>, I4, I5>;`
 

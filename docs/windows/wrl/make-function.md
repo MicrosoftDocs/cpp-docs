@@ -215,11 +215,11 @@ Argument 9 that is passed to the specified runtime class.
 
 ## Return Value
 
-A `ComPtr<T>` object if successful; otherwise, **nullptr**.
+A `ComPtr<T>` object if successful; otherwise, `nullptr`.
 
 ## Remarks
 
-See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md), and for an example.
+See [How to: Instantiate WRL Components Directly](how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Details::MakeAndInitialize](makeandinitialize-function.md), and for an example.
 
 ## Requirements
 
@@ -229,4 +229,4 @@ See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

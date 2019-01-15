@@ -79,7 +79,7 @@ GenericReleaseNotifier(
 A lambda, functor, or pointer-to-function event handler that can be invoked with the parentheses function operator (`()`).
 
 *release*<br/>
-Specify **true** to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) method; otherwise, specify **false**.
+Specify `true` to enable calling the underlying [Module::ReleaseNotifier::Release()](module-releasenotifier-class.md#releasenotifier-release) method; otherwise, specify `false`.
 
 ## <a name="genericreleasenotifier-invoke"></a>Module::GenericReleaseNotifier::Invoke
 

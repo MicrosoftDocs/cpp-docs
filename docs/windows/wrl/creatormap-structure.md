@@ -99,7 +99,7 @@ IUnknown** factory);
 ### Parameters
 
 *currentflags*<br/>
-One of the [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.
+One of the [RuntimeClassType](runtimeclasstype-enumeration.md) enumerators.
 
 *entry*<br/>
 A CreatorMap.

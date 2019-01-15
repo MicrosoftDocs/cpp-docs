@@ -32,4 +32,4 @@ struct EventTraits : HANDLENullTraits;
 
 ## See Also
 
-[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](microsoft-wrl-wrappers-handletraits-namespace.md)

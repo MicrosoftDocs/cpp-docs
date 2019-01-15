@@ -20,11 +20,11 @@ class ComPtrRefBase;
 ### Parameters
 
 *T*<br/>
-A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the `ComPtr`.
+A [ComPtr\<T>](comptr-class.md) type or a type derived from it, not merely the interface represented by the `ComPtr`.
 
 ## Remarks
 
-Represents the base class for the [ComPtrRef](../windows/comptrref-class.md) class.
+Represents the base class for the [ComPtrRef](comptrref-class.md) class.
 
 ## Members
 

@@ -5,8 +5,9 @@ ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::GetModuleBase"]
 ms.assetid: 123d3b14-2eaf-4e02-8dcd-b6567917c6a6
 ---
-# GetModuleBase Function
-Retrieves a [ModuleBase](../windows/modulebase-class.md) pointer that allows for incrementing and decrementing the reference count of a [RuntimeClass](../windows/runtimeclass-class.md) object.
+# GetModuleBase function
+
+Retrieves a [ModuleBase](modulebase-class.md) pointer that allows for incrementing and decrementing the reference count of a [RuntimeClass](runtimeclass-class.md) object.
 
 ## Syntax
 
@@ -14,7 +15,7 @@ Retrieves a [ModuleBase](../windows/modulebase-class.md) pointer that allows for
 inline Details::ModuleBase* GetModuleBase() throw()
 ```
 
-## Return Value
+## Return value
 
 A pointer to a `ModuleBase` object.
 
@@ -22,7 +23,7 @@ A pointer to a `ModuleBase` object.
 
 This function is used internally to increment and decrement object reference counts.
 
-You can use this function to control reference counts by calling [ModuleBase::IncrementObjectCount](../windows/modulebase-incrementobjectcount-method.md) and [ModuleBase::DecrementObjectCount](../windows/modulebase-decrementobjectcount-method.md).
+You can use this function to control reference counts by calling [ModuleBase::IncrementObjectCount](modulebase-class.md#incrementobjectcount) and [ModuleBase::DecrementObjectCount](modulebase-class.md#decrementobjectcount).
 
 ## Requirements
 
@@ -30,6 +31,6 @@ You can use this function to control reference counts by calling [ModuleBase::In
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

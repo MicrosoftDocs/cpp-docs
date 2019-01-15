@@ -26,7 +26,7 @@ class Module<OutOfProc> : public Module<InProc>;
 ### Parameters
 
 *moduleType*<br/>
-A combination of one or more [ModuleType](../windows/moduletype-enumeration.md) enumeration values.
+A combination of one or more [ModuleType](moduletype-enumeration.md) enumeration values.
 
 ## Members
 
@@ -34,9 +34,9 @@ A combination of one or more [ModuleType](../windows/moduletype-enumeration.md) 
 
 Name                                                                                | Description
 ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-[Module::GenericReleaseNotifier](../windows/module-genericreleasenotifier-class.md) | Invokes an event handler when the last object in the current module is released. The event handler is specified by on a lambda, functor, or pointer-to-function.
-[Module::MethodReleaseNotifier](../windows/module-methodreleasenotifier-class.md)   | Invokes an event handler when the last object in the current module is released. The event handler is specified by an object and its pointer-to-a-method member.
-[Module::ReleaseNotifier](../windows/module-releasenotifier-class.md)               | Invokes an event handler when the last object in a module is released.
+[Module::GenericReleaseNotifier](module-genericreleasenotifier-class.md) | Invokes an event handler when the last object in the current module is released. The event handler is specified by on a lambda, functor, or pointer-to-function.
+[Module::MethodReleaseNotifier](module-methodreleasenotifier-class.md)   | Invokes an event handler when the last object in the current module is released. The event handler is specified by an object and its pointer-to-a-method member.
+[Module::ReleaseNotifier](module-releasenotifier-class.md)               | Invokes an event handler when the last object in a module is released.
 
 ### Public Constructors
 
@@ -79,16 +79,16 @@ Name                      | Description
 
 Name                                         | Description
 -------------------------------------------- | --------------------------------------------------------------------------------------------------------
-[Module::objectCount_](#objectcount)         | Keeps track of how many classes have been created with the [Make](../windows/make-function.md) function.
+[Module::objectCount_](#objectcount)         | Keeps track of how many classes have been created with the [Make](make-function.md) function.
 [Module::releaseNotifier_](#releasenotifier) | Holds a pointer to a `ReleaseNotifier` object.
 
 ### Macros
 
 Name                                                                   | Description
 -------------------------------------------------- ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[ActivatableClass](../windows/activatableclass-macros.md)              | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro specifies default factory and group ID parameters.
-[ActivatableClassWithFactory](../windows/activatableclass-macros.md)   | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify a particular factory parameter.
-[ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify particular factory and group ID parameters.
+[ActivatableClass](activatableclass-macros.md)              | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro specifies default factory and group ID parameters.
+[ActivatableClassWithFactory](activatableclass-macros.md)   | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify a particular factory parameter.
+[ActivatableClassWithFactoryEx](activatableclass-macros.md) | Populates an internal cache that contains a factory that can create an instance of the specified class. This macro enables you to specify particular factory and group ID parameters.
 
 ## Inheritance Hierarchy
 
@@ -180,7 +180,7 @@ IID of a runtime class.
 The IActivationFactory for the specified runtime class.
 
 *serverName*<br/>
-The name of a subset of class factories in the current module. Specify the server name used in the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro, or specify `nullptr` to get the default server name.
+The name of a subset of class factories in the current module. Specify the server name used in the [ActivatableClassWithFactoryEx](activatableclass-macros.md) macro, or specify `nullptr` to get the default server name.
 
 ### Return Value
 
@@ -270,7 +270,7 @@ This constructor is protected and cannot be called with the `new` keyword. Inste
 
 ## <a name="objectcount"></a>Module::objectCount_
 
-Keeps track of how many classes have been created with the [Make](../windows/make-function.md) function.
+Keeps track of how many classes have been created with the [Make](make-function.md) function.
 
 ```cpp
 volatile long objectCount_;

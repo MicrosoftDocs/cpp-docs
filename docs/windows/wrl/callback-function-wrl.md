@@ -245,4 +245,4 @@ The base of a delegate object must be `IUnknown`, not `IInspectable`.
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

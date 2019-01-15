@@ -43,4 +43,4 @@ S_OK, if this operation is successful; otherwise, an error HRESULT that indicate
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

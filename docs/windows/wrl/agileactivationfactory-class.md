@@ -7,7 +7,7 @@ ms.assetid: fab98f32-bb93-4c0f-badb-49fbddb194b0
 ---
 # AgileActivationFactory Class
 
-Represents an apartment-friendly activation factory that implements [FtmBase](../windows/ftmbase-class.md).
+Represents an apartment-friendly activation factory that implements [FtmBase](ftmbase-class.md).
 
 ## Syntax
 
@@ -35,5 +35,5 @@ class AgileActivationFactory :
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)<br/>
-[ActivationFactory Class](../windows/activationfactory-class.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)<br/>
+[ActivationFactory Class](activationfactory-class.md)

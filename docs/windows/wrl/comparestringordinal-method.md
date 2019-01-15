@@ -45,4 +45,4 @@ Compares two specified HSTRING objects and returns an integer that indicates the
 
 ## See Also
 
-[Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)
+[Microsoft::WRL::Wrappers::Details Namespace](microsoft-wrl-wrappers-details-namespace.md)

@@ -40,4 +40,4 @@ The following is an example of how **CloakedIid** is used: `struct MyRuntimeClas
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

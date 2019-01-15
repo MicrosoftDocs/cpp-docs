@@ -43,4 +43,4 @@ S_OK if successful; otherwise, an error HRESULT that indicates why this operatio
 
 ## See Also
 
-[Windows::Foundation Namespace](../windows/windows-foundation-namespace.md)
+[Windows::Foundation Namespace](windows-foundation-namespace.md)

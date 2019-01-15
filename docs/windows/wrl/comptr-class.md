@@ -241,7 +241,7 @@ An object of type *U*.
 
 ### Remarks
 
-The first constructor is the default constructor, which implictly creates an empty object. The second constructor specifies [__nullptr](../windows/nullptr-cpp-component-extensions.md), which explicitly creates an empty object.
+The first constructor is the default constructor, which implictly creates an empty object. The second constructor specifies [__nullptr](nullptr-cpp-component-extensions.md), which explicitly creates an empty object.
 
 The third constructor creates an object from the object specified by a pointer.
 
@@ -477,9 +477,9 @@ A reference to another `ComPtr` object.
 
 ### Return Value
 
-The first operator yields **true** if object *a* is equal to object *b*; otherwise, **false**.
+The first operator yields `true` if object *a* is equal to object *b*; otherwise, `false`.
 
-The second and third operators yield **true** if object *a* is equal to **nullptr**; otherwise, **false**.
+The second and third operators yield `true` if object *a* is equal to `nullptr`; otherwise, `false`.
 
 ## <a name="operator-inequality"></a>ComPtr::operator!=
 
@@ -512,9 +512,9 @@ A reference to another `ComPtr` object.
 
 ### Return Value
 
-The first operator yields **true** if object *a* is not equal to object *b*; otherwise, **false**.
+The first operator yields `true` if object *a* is not equal to object *b*; otherwise, `false`.
 
-The second and third operators yield **true** if object *a* is not equal to **nullptr**; otherwise, **false**.
+The second and third operators yield `true` if object *a* is not equal to `nullptr`; otherwise, `false`.
 
 ## <a name="operator-microsoft-wrl-details-booltype"></a>ComPtr::operator Microsoft::WRL::Details::BoolType
 
@@ -526,7 +526,7 @@ WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
 
 ### Return Value
 
-If an interface is associated with this `ComPtr`, the address of the [BoolStruct::Member](../windows/boolstruct-member-data-member.md) data member; otherwise, **nullptr**.
+If an interface is associated with this `ComPtr`, the address of the [BoolStruct::Member](boolstruct-structure.md#member) data member; otherwise, `nullptr`.
 
 ## <a name="ptr"></a>ComPtr::ptr_
 

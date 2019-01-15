@@ -20,7 +20,7 @@ class ComPtrRef : public ComPtrRefBase<T>;
 ### Parameters
 
 *T*<br/>
-A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the `ComPtr`.
+A [ComPtr\<T>](comptr-class.md) type or a type derived from it, not merely the interface represented by the `ComPtr`.
 
 ## Remarks
 
@@ -46,7 +46,7 @@ Name                                                         | Description
 Name                                                                     | Description
 ------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [ComPtrRef::operator InterfaceType**](#operator-interfacetype-star-star) | Deletes the current `ComPtrRef` object and returns a pointer-to-a-pointer to the interface that was represented by the `ComPtrRef` object.
-[ComPtrRef::operator T*](#operator-t-star)                               | Returns the value of the [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member of the current ComPtrRef object.
+[ComPtrRef::operator T*](#operator-t-star)                               | Returns the value of the [ptr_](comptrrefbase-class.md#ptr) data member of the current ComPtrRef object.
 [ComPtrRef::operator void**](#operator-void-star-star)                   | Deletes the current `ComPtrRef` object, casts the pointer to the interface that was represented by the `ComPtrRef` object as a pointer-to-pointer-to `void`, and then returns the cast pointer.
 [ComPtrRef::operator*](#operator-star)                                   | Retrieves the pointer to the interface represented by the current `ComPtrRef` object.
 [ComPtrRef::operator==](#operator-equality)                              | Indicates whether two `ComPtrRef` objects are equal.
@@ -239,7 +239,7 @@ operator T*();
 
 ### Remarks
 
-Returns the value of the [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member of the current `ComPtrRef` object.
+Returns the value of the [ptr_](comptrrefbase-class.md#ptr) data member of the current `ComPtrRef` object.
 
 ## <a name="operator-void-star-star"></a>ComPtrRef::operator void\*\*
 

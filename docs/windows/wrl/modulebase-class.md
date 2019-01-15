@@ -18,7 +18,7 @@ class ModuleBase;
 
 ## Remarks
 
-Represents the base class of the [Module](../windows/module-class.md) classes.
+Represents the base class of the [Module](module-class.md) classes.
 
 ## Members
 

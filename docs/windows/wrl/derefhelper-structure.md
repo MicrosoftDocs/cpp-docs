@@ -51,4 +51,4 @@ Represent a dereferenced pointer to the `T*` template parameter.
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

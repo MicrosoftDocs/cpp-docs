@@ -91,13 +91,13 @@ The eigth interface ID. (Optional)
 The ninth interface ID. (Optional)
 
 *flags*<br/>
-Configuration flags for the class. One or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerations that are specified in a [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) structure.
+Configuration flags for the class. One or more [RuntimeClassType](runtimeclasstype-enumeration.md) enumerations that are specified in a [RuntimeClassFlags](runtimeclassflags-structure.md) structure.
 
 ## Remarks
 
 Derives from the list of specified interfaces and implements helper templates for `QueryInterface` and `GetIid`.
 
-Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `IInspectable`, or the [ChainInterfaces](../windows/chaininterfaces-structure.md) template. The *flags* parameter determines whether support is generated for `IUnknown` or `IInspectable`.
+Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `IInspectable`, or the [ChainInterfaces](chaininterfaces-structure.md) template. The *flags* parameter determines whether support is generated for `IUnknown` or `IInspectable`.
 
 ## Members
 

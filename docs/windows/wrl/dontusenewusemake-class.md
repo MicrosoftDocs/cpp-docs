@@ -18,7 +18,7 @@ class DontUseNewUseMake;
 
 ## Remarks
 
-Prevents using operator `new` in `RuntimeClass`. Consequently, you must use the [Make function](../windows/make-function.md) instead.
+Prevents using operator `new` in `RuntimeClass`. Consequently, you must use the [Make function](make-function.md) instead.
 
 ## Members
 

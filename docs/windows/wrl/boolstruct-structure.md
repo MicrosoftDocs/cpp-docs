@@ -18,7 +18,7 @@ struct BoolStruct;
 
 ## Remarks
 
-The `BoolStruct` structure defines whether a `ComPtr` is managing the object lifetime of an interface. `BoolStruct` is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.
+The `BoolStruct` structure defines whether a `ComPtr` is managing the object lifetime of an interface. `BoolStruct` is used internally by the [BoolType()](comptr-class.md#operator-microsoft-wrl-details-booltype) operator.
 
 ## Members
 
@@ -26,7 +26,7 @@ The `BoolStruct` structure defines whether a `ComPtr` is managing the object lif
 
 Name                          | Description
 ----------------------------- | ------------------------------------------------------------------------------------------------------------------
-[BoolStruct::Member](#member) | Specifies that a [ComPtr](../windows/comptr-class.md) is, or is not, managing the object lifetime of an interface.
+[BoolStruct::Member](#member) | Specifies that a [ComPtr](comptr-class.md) is, or is not, managing the object lifetime of an interface.
 
 ## Inheritance Hierarchy
 
@@ -48,4 +48,4 @@ int Member;
 
 ### Remarks
 
-Specifies that a [ComPtr](../windows/comptr-class.md) is, or is not, managing the object lifetime of an interface.
+Specifies that a [ComPtr](comptr-class.md) is, or is not, managing the object lifetime of an interface.

@@ -52,4 +52,4 @@ Do not use these macros with classic COM unless you use the `#undef` directive t
 
 ## See Also
 
-[Module Class](../windows/module-class.md)
+[Module Class](module-class.md)

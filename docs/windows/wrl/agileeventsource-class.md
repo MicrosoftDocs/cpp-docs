@@ -80,4 +80,4 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

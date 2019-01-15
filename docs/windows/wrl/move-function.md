@@ -35,7 +35,7 @@ Parameter *arg* after reference or rvalue-reference traits, if any, have been re
 
 Moves the specified argument from one location to another.
 
-For more information, see the **Move Semantics** section of [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+For more information, see the **Move Semantics** section of [Rvalue Reference Declarator: &&](../../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## Requirements
 
@@ -45,4 +45,4 @@ For more information, see the **Move Semantics** section of [Rvalue Reference De
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

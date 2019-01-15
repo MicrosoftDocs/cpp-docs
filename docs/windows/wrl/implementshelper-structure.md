@@ -20,7 +20,7 @@ friend struct Details::ImplementsHelper;
 ### Parameters
 
 *RuntimeClassFlagsT*<br/>
-A field of flags that specifies one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.
+A field of flags that specifies one or more [RuntimeClassType](runtimeclasstype-enumeration.md) enumerators.
 
 *ILst*<br/>
 A list of interface IDs.
@@ -30,7 +30,7 @@ Specify **true** if the current instance of `Implements` is a base class of the 
 
 ## Remarks
 
-Helps implement the [Implements](../windows/implements-structure.md) structure.
+Helps implement the [Implements](implements-structure.md) structure.
 
 This template traverses a list of interfaces and adds them as base classes, and as information necessary to enable `QueryInterface`.
 

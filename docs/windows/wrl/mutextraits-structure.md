@@ -8,7 +8,7 @@ ms.assetid: 6582df80-b9ba-4892-948f-d572a3b23d54
 ---
 # MutexTraits Structure
 
-Defines common characteristics of the [Mutex](../windows/mutex-class1.md) class.
+Defines common characteristics of the [Mutex](mutex-class.md) class.
 
 ## Syntax
 

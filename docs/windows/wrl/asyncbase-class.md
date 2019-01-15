@@ -34,7 +34,7 @@ An event handler that is called when an asynchronous operation completes.
 An event handler that is called when a running asynchronous operation reports the current progress of the operation.
 
 *resultType*<br/>
-One of the [AsyncResultType](../windows/asyncresulttype-enumeration.md) enumeration values. By default, `SingleResult`.
+One of the [AsyncResultType](asyncresulttype-enumeration.md) enumeration values. By default, `SingleResult`.
 
 ## Members
 
@@ -241,7 +241,7 @@ The event handler method to invoke.
 
 ### Remarks
 
-`ProgressTraits` is derived from [ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md).
+`ProgressTraits` is derived from [ArgTraitsHelper Structure](argtraitshelper-structure.md).
 
 ## <a name="get-errorcode"></a>AsyncBase::get_ErrorCode
 

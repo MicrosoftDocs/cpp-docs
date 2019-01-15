@@ -23,10 +23,10 @@ template<typename Factory>
 ### Parameters
 
 *flags*<br/>
-A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.
+A combination of one or more [RuntimeClassType](runtimeclasstype-enumeration.md) enumeration values.
 
 *entry*<br/>
-Pointer to a [CreatorMap](../windows/creatormap-structure.md) that contains initialization and registration information about parameter *riid*.
+Pointer to a [CreatorMap](creatormap-structure.md) that contains initialization and registration information about parameter *riid*.
 
 *riid*<br/>
 Reference to an interface ID.

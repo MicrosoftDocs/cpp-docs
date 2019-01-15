@@ -18,7 +18,7 @@ struct ImplementsBase;
 
 ## Remarks
 
-Used to validate template parameter types in [Implements Structure](../windows/implements-structure.md).
+Used to validate template parameter types in [Implements Structure](implements-structure.md).
 
 The **ImplementsBase** structure is empty by design.
 
@@ -34,4 +34,4 @@ The **ImplementsBase** structure is empty by design.
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)
