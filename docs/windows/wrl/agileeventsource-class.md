@@ -31,7 +31,7 @@ An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode
 
 ## Remarks
 
-The vast majority of components in the Windows Runtime are agile components. For more information, see [Threading and Marshaling (C++/CX)](../cppcx/threading-and-marshaling-c-cx.md).
+The vast majority of components in the Windows Runtime are agile components. For more information, see [Threading and Marshaling (C++/CX)](../../cppcx/threading-and-marshaling-c-cx.md).
 
 ## Inheritance Hierarchy
 

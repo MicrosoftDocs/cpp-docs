@@ -50,4 +50,4 @@ An assert error is emitted if template parameter *Factory* doesn't derive from i
 
 ## See Also
 
-[Microsoft::WRL::Wrappers::Details Namespace](../windows/microsoft-wrl-wrappers-details-namespace.md)
+[Microsoft::WRL::Wrappers::Details Namespace](microsoft-wrl-wrappers-details-namespace.md)

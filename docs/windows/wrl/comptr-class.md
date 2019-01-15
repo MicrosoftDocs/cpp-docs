@@ -133,7 +133,7 @@ A `ComPtr` object that represents the interface specified by parameter *U*. Para
 
 ### Remarks
 
-The first template is the form that you should use in your code. The second template is an internal, helper specialization that supports C++ language features such as the [auto](../cpp/auto-cpp.md) type deduction keyword.
+The first template is the form that you should use in your code. The second template is an internal, helper specialization that supports C++ language features such as the [auto](../../cpp/auto-cpp.md) type deduction keyword.
 
 ### Return Value
 
@@ -241,7 +241,7 @@ An object of type *U*.
 
 ### Remarks
 
-The first constructor is the default constructor, which implictly creates an empty object. The second constructor specifies [__nullptr](nullptr-cpp-component-extensions.md), which explicitly creates an empty object.
+The first constructor is the default constructor, which implictly creates an empty object. The second constructor specifies [__nullptr](../nullptr-cpp-component-extensions.md), which explicitly creates an empty object.
 
 The third constructor creates an object from the object specified by a pointer.
 
