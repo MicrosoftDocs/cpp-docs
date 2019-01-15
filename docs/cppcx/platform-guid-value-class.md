@@ -1,6 +1,6 @@
 ---
 title: "Platform::Guid value class"
-ms.date: "12/30/2016"
+ms.date: "01/15/2019"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Guid"]
 helpviewer_keywords: ["Platform::Guid Struct"]
@@ -25,7 +25,7 @@ Guid has the Equals(), GetHashCode(), and ToString() methods derived from the [P
 |[Guid](#ctor)|Initializes a new instance of the Guid struct.|
 |[operator==](#operator-equality)|Equals operator.|
 |[operator!=](#operator-inequality)|Not equals operator.|
-|[operator<](#operator-less)|Less than operator.|
+|[operator&lt;](#operator-less)|Less than operator.|
 |[operator()](#operator-call)|Converts a Guid to a GUID.|
 
 ### Remarks
@@ -140,7 +140,7 @@ static bool Platform::Guid::operator!=(Platform::Guid guid1, Platform::Guid guid
 
 True if the two guids are not equal.
 
-## <a name="operator-less"></a> Guid::operator< Operator
+## <a name="operator-less"></a> Guid::operator&lt; Operator
 
 Compares two guids for ordering.
 
