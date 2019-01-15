@@ -52,4 +52,4 @@ Strips the reference or rvalue-reference trait from the specified class template
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

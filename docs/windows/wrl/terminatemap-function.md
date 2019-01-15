@@ -22,7 +22,7 @@ inline bool TerminateMap(
 ### Parameters
 
 *module*<br/>
-A [module](../windows/module-class.md).
+A [module](module-class.md).
 
 *serverName*<br/>
 The name of a subset of class factories in the module specified by parameter *module*.
@@ -46,4 +46,4 @@ Shuts down the class factories in the specified module.
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

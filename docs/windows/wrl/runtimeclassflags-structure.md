@@ -8,7 +8,7 @@ ms.assetid: 7098d605-bd14-4d51-82f4-3def8296a938
 ---
 # RuntimeClassFlags Structure
 
-Contains the type for an instance of a [RuntimeClass](../windows/runtimeclass-class.md).
+Contains the type for an instance of a [RuntimeClass](runtimeclass-class.md).
 
 ## Syntax
 
@@ -20,7 +20,7 @@ struct RuntimeClassFlags;
 ### Parameters
 
 *flags*<br/>
-A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.
+A [RuntimeClassType Enumeration](runtimeclasstype-enumeration.md) value.
 
 ## Members
 
@@ -28,7 +28,7 @@ A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) val
 
 |Name|Description|
 |----------|-----------------|
-|[RuntimeClassFlags::value Constant](#value-constant)|Contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.|
+|[RuntimeClassFlags::value Constant](#value-constant)|Contains a [RuntimeClassType Enumeration](runtimeclasstype-enumeration.md) value.|
 
 ## Inheritance Hierarchy
 
@@ -42,7 +42,7 @@ A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) val
 
 ## <a name="value-constant"></a>RuntimeClassFlags::value Constant
 
-A field that contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.
+A field that contains a [RuntimeClassType Enumeration](runtimeclasstype-enumeration.md) value.
 
 ```cpp
 static const unsigned int value = flags;

@@ -7,7 +7,7 @@ ms.assetid: 94f383a5-17a9-40c7-9d9c-778acdc54b27
 ---
 # operator== Operator (Microsoft::WRL)
 
-Equality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../windows/comptrref-class.md) objects.
+Equality operator for [ComPtr](comptr-class.md) and [ComPtrRef](comptrref-class.md) objects.
 
 ## Syntax
 
@@ -66,4 +66,4 @@ The right object.
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

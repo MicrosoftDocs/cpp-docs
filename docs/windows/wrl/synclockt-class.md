@@ -26,7 +26,7 @@ The type that can take ownership of a resource.
 
 Represents a type that can take exclusive or shared ownership of a resource.
 
-The `SyncLockT` class is used, for example, to help implement the [SRWLock](../windows/srwlock-class.md) class.
+The `SyncLockT` class is used, for example, to help implement the [SRWLock](srwlock-class.md) class.
 
 ## Members
 

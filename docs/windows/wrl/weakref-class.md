@@ -129,7 +129,7 @@ When this operation completes, an object that represents parameter *U*.
 
 An error is emitted if parameter *U* is `IWeakReference`, or is not derived from `IInspectable`.
 
-The first template is the form that you should use in your code. The second template is an internal, helper specialization that supports C++ language features such as the [auto](../cpp/auto-cpp.md) type deduction keyword.
+The first template is the form that you should use in your code. The second template is an internal, helper specialization that supports C++ language features such as the [auto](../../cpp/auto-cpp.md) type deduction keyword.
 
 Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to `nullptr` if the weak reference could not be obtained, so you should avoid error-checking code that checks the `WeakRef` for `nullptr`. Instead, check *ptr* for `nullptr`.
 
@@ -164,7 +164,7 @@ When this operation completes, an object that represents parameter *riid*.
 
 An error is emitted if parameter *riid* is not derived from `IInspectable`. This error supersedes the return value.
 
-The first template is the form that you should use in your code. The second template (not shown here, but declared in the header file) is an internal, helper specialization that supports C++ language features such as the [auto](../cpp/auto-cpp.md) type deduction keyword.
+The first template is the form that you should use in your code. The second template (not shown here, but declared in the header file) is an internal, helper specialization that supports C++ language features such as the [auto](../../cpp/auto-cpp.md) type deduction keyword.
 
 Starting in the Windows 10 SDK, this method does not set the `WeakRef` instance to `nullptr` if the weak reference could not be obtained, so you should avoid error-checking code that checks the `WeakRef` for `nullptr`. Instead, check *ptr* for `nullptr`.
 

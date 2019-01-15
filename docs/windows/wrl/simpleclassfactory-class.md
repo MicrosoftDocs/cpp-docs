@@ -26,7 +26,7 @@ A base class.
 
 The base class must provide a default constructor.
 
-The following code example demonstrates how to use `SimpleClassFactory` with the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro.
+The following code example demonstrates how to use `SimpleClassFactory` with the [ActivatableClassWithFactoryEx](activatableclass-macros.md) macro.
 
 `ActivatableClassWithFactoryEx(MyClass, SimpleClassFactory, MyServerName);`
 
@@ -99,4 +99,4 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ### Remarks
 
-If `__WRL_STRICT__` is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the ClassicCom or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+If `__WRL_STRICT__` is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](runtimeclass-class.md), or isn't configured with the ClassicCom or WinRtClassicComMix [RuntimeClassType](runtimeclasstype-enumeration.md) enumeration value.

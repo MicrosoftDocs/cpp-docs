@@ -26,7 +26,7 @@ A type that can take exclusive or shared ownership of a resource.
 
 Represents a type that can take exclusive or shared ownership of a resource.
 
-The `SyncLockWithStatusT` class is used to implement the [Mutex](../windows/mutex-class1.md) and [Semaphore](../windows/semaphore-class.md) classes.
+The `SyncLockWithStatusT` class is used to implement the [Mutex](mutex-class.md) and [Semaphore](semaphore-class.md) classes.
 
 ## Members
 
@@ -77,7 +77,7 @@ DWORD GetStatus() const;
 
 ### Return Value
 
-The result of a wait operation on the object that is based on the `SyncLockWithStatusT` class, such as a [Mutex](../windows/mutex-class1.md) or [Semaphore](../windows/semaphore-class.md). Zero (0) indicates the wait operation returned the signaled state; otherwise, another state occurred, such as time-out value elapsed.
+The result of a wait operation on the object that is based on the `SyncLockWithStatusT` class, such as a [Mutex](mutex-class.md) or [Semaphore](semaphore-class.md). Zero (0) indicates the wait operation returned the signaled state; otherwise, another state occurred, such as time-out value elapsed.
 
 ### Remarks
 

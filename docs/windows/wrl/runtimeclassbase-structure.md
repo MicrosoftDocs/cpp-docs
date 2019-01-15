@@ -17,7 +17,7 @@ struct RuntimeClassBase;
 
 ## Remarks
 
-Used to detect `RuntimeClass` in the [Make](../windows/make-function.md) function.
+Used to detect `RuntimeClass` in the [Make](make-function.md) function.
 
 **RuntimeClassBase** is an empty structure.
 
@@ -33,4 +33,4 @@ Used to detect `RuntimeClass` in the [Make](../windows/make-function.md) functio
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

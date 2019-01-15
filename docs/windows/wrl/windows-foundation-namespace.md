@@ -22,8 +22,8 @@ namespace Windows::Foundation;
 
 |Name|Description|
 |----------|-----------------|
-|[ActivateInstance Function](../windows/activateinstance-function.md)|Registers and retrieves an instance of a specified type defined in a specified class ID.|
-|[GetActivationFactory Function](../windows/getactivationfactory-function.md)|Retrieves an activation factory for the type specified by the template parameter.|
+|[ActivateInstance Function](activateinstance-function.md)|Registers and retrieves an instance of a specified type defined in a specified class ID.|
+|[GetActivationFactory Function](getactivationfactory-function.md)|Retrieves an activation factory for the type specified by the template parameter.|
 
 ## Requirements
 

@@ -33,4 +33,4 @@ Used to indicate an unspecified, optional template parameter.
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

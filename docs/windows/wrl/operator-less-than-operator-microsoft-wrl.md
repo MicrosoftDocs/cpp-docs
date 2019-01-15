@@ -38,4 +38,4 @@ The right object.
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

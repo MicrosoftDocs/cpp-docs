@@ -40,4 +40,4 @@ For more information, see the Windows `RaiseException` function.
 
 ## See Also
 
-[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

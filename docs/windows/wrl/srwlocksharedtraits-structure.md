@@ -22,7 +22,7 @@ struct SRWLockSharedTraits;
 
 Name   | Description
 ------ | --------------------------------------------------------------------------
-`Type` | Synonym for a pointer to the [SRWLOCK](../windows/srwlock-class.md) class.
+`Type` | Synonym for a pointer to the [SRWLOCK](srwlock-class.md) class.
 
 ### Public Methods
 

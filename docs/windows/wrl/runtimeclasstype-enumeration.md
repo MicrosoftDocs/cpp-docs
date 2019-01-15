@@ -8,7 +8,7 @@ ms.assetid: d380712d-672e-4ea9-b7c5-cf9fa7dbb770
 ---
 # RuntimeClassType Enumeration
 
-Specifies the type of [RuntimeClass](../windows/runtimeclass-class.md) instance that is supported.
+Specifies the type of [RuntimeClass](runtimeclass-class.md) instance that is supported.
 
 ## Syntax
 
@@ -37,4 +37,4 @@ enum RuntimeClassType;
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

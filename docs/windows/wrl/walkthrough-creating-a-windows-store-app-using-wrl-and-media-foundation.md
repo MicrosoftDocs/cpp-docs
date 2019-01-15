@@ -32,13 +32,13 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 - The `namespace` and `runtimeclass` attributes, and the `NTDDI_WIN8`[version](/windows/desktop/Midl/version) attribute value are important parts of the MIDL definition for a Media Foundation component that uses WRL.
 
-- [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md) is the base class for the custom Media Foundation component. The [Microsoft::WRL::RuntimeClassType::WinRtClassicComMix](../windows/runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a Windows Runtime class and as a classic COM runtime class.
+- [Microsoft::WRL::RuntimeClass](runtimeclass-class.md) is the base class for the custom Media Foundation component. The [Microsoft::WRL::RuntimeClassType::WinRtClassicComMix](runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a Windows Runtime class and as a classic COM runtime class.
 
-- The [InspectableClass](../windows/inspectableclass-macro.md) macro implements basic COM functionality such as reference counting and the `QueryInterface` method, and sets the runtime class name and trust level.
+- The [InspectableClass](inspectableclass-macro.md) macro implements basic COM functionality such as reference counting and the `QueryInterface` method, and sets the runtime class name and trust level.
 
 - Use the Microsoft::WRL::[Module class](module-class.md) to implement DLL entry-point functions such as [DllGetActivationFactory](https://msdn.microsoft.com/library/br205771.aspx), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject).
 
-- Link your component DLL to runtimeobject.lib. Also specify [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.
+- Link your component DLL to runtimeobject.lib. Also specify [/WINMD](../../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.
 
 - Use project references to make WRL components accessible to UWP apps.
 
@@ -52,21 +52,21 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 1. Add this code to GrayscaleTransform.idl:
 
-   [!code-cpp[wrl-media-capture#1](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_1.idl)]
+   [!code-cpp[wrl-media-capture#1](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_1.idl)]
 
 1. Use the following code to replace the contents of `pch.h`:
 
-   [!code-cpp[wrl-media-capture#2](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_2.h)]
+   [!code-cpp[wrl-media-capture#2](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_2.h)]
 
 1. Add a new header file to the project, name it `BufferLock.h`, and then replace the contents with this code:
 
-   [!code-cpp[wrl-media-capture#3](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_3.h)]
+   [!code-cpp[wrl-media-capture#3](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_3.h)]
 
 1. `GrayscaleTransform.h` isn't used in this example. You can remove it from the project if you want to.
 
 1. Use the following code to replace the contents of `GrayscaleTransform.cpp`:
 
-   [!code-cpp[wrl-media-capture#4](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_4.cpp)]
+   [!code-cpp[wrl-media-capture#4](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_4.cpp)]
 
 1. Add a new module-definition file to the project, name it `GrayscaleTransform.def`, and then add this code:
 
@@ -79,7 +79,7 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 1. Use the following code to replace the contents of `dllmain.cpp`:
 
-   [!code-cpp[wrl-media-capture#6](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_6.cpp)]
+   [!code-cpp[wrl-media-capture#6](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_6.cpp)]
 
 1. In the project’s **Property Pages** dialog box, set the following **Linker** properties.
 
@@ -99,15 +99,15 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 1. In `MainPage.xaml`, add this code to the root [Grid](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) element:
 
-   [!code-xml[wrl-media-capture#7](../windows/codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
+   [!code-xml[wrl-media-capture#7](../codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 
 1. Use the following code to replace the contents of `MainPage.xaml.cs`:
 
-   [!code-cs[wrl-media-capture#8](../windows/codesnippet/CSharp/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_8.cs)]
+   [!code-cs[wrl-media-capture#8](../codesnippet/CSharp/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_8.cs)]
 
 The following illustration shows the `MediaCapture app`.
 
-![MediaCapture app capturing a photo](../windows/media/wrl_media_capture.png "WRL_Media_Capture")
+![MediaCapture app capturing a photo](../media/wrl_media_capture.png "WRL_Media_Capture")
 
 ## Next Steps
 
@@ -115,6 +115,6 @@ The example shows how to capture photos from the default webcam one at a time. T
 
 ## See Also
 
-[Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)<br/>
+[Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
 [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>
 [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

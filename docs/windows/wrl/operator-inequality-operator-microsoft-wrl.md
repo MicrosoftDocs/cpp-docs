@@ -7,7 +7,7 @@ ms.assetid: 785435da-87a6-4454-9bce-9d288a96dc26
 ---
 # operator!= Operator (Microsoft::WRL)
 
-Inequality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../windows/comptrref-class.md) objects.
+Inequality operator for [ComPtr](comptr-class.md) and [ComPtrRef](comptrref-class.md) objects.
 
 ## Syntax
 
@@ -66,4 +66,4 @@ The right object.
 
 ## See Also
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)
