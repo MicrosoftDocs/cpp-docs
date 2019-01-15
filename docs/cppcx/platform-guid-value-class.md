@@ -24,12 +24,13 @@ Guid has the Equals(), GetHashCode(), and ToString() methods derived from the [P
 |------------|-----------------|
 |[Guid](#ctor)|Initializes a new instance of the Guid struct.|
 |[operator==](#operator-equality)|Equals operator.|
-|[operator!=](#operator-not-equal)|Not equals operator.|
+|[operator!=](#operator-inequality)|Not equals operator.|
+|[operator<](#operator-less)|Less than operator.|
 |[operator()](#operator-call)|Converts a Guid to a GUID.|
 
 ### Remarks
 
-For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid), see [WinRT component: How to generate a GUID?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)
+For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid), see [WinRT component: How to generate a GUID?](https://www.eternalcoding.com/?p=383)
 
 ### Requirements
 
@@ -106,19 +107,19 @@ The next byte of the GUID.
 The next byte of the GUID.
 
 *m*<br/>
-A GUID as defined.
+A GUID in the form a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931).
 
 *n*<br/>
 The remaining 8 bytes of the GUID.
 
 ## <a name="operator-equality"></a> Guid::operator== Operator
 
-Compares two guids.
+Compares two guids for equality.
 
 ### Syntax
 
 ```cpp
-Platform::Guid::operator==
+static bool Platform::Guid::operator==(Platform::Guid guid1, Platform::Guid guid2);
 ```
 
 ### Return Value
@@ -127,31 +128,47 @@ True if the two guids are equal.
 
 ## <a name="operator-inequality"></a> Guid::operator!= Operator
 
-Compares two guids.
+Compares two guids for inequality.
 
 ### Syntax
 
 ```cpp
-Platform::Guid::operator!=
+static bool Platform::Guid::operator!=(Platform::Guid guid1, Platform::Guid guid2);
 ```
 
 ### Return Value
 
 True if the two guids are not equal.
 
-## <a name="operator-call"></a> Guid::operator() Operator
+## <a name="operator-less"></a> Guid::operator< Operator
 
-Implicitly converts a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931)GUID to a Platform::Guid.
+Compares two guids for ordering.
 
 ### Syntax
 
 ```cpp
-Platform::Guid operator();
+static bool Platform::Guid::operator<(Platform::Guid guid1, Platform::Guid guid2);
 ```
 
 ### Return Value
 
-A Guid struct.
+True if the first guid is ordered before the second guid. The ordering is lexicographic after treating the Guid as if it were an array of four 32-bit unsigned values. Note that this is not the same ordering used by SQL Server, nor is it the same ordering used by the .NET Framework, nor is it the same as lexicographical ordering by string representation.
+
+This operator is provided so that Guid objects can be more easily consumed by the C++ standard library.
+
+## <a name="operator-call"></a> Guid::operator() Operator
+
+Implicitly converts a Platform::Guid to a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931).
+
+### Syntax
+
+```cpp
+const GUID& Platform::Guid::operator();
+```
+
+### Return Value
+
+A [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931).
 
 ## See Also
 
