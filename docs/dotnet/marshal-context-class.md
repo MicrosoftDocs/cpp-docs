@@ -2,7 +2,7 @@
 title: "marshal_context Class"
 ms.date: "12/19/2018"
 ms.topic: "reference"
-f1_keywords: ["marshal_context", "msclr::interop::marshal_context::marshal_context", "marshal_context::marshal_context", "msclr.interop.marshal_context.marshal_context", "marshal_context.marshal_context", "marshal_context::~marshal_context", "msclr.interop.marshal_context.~marshal_context", "marshal_context.~marshal_context", "msclr::interop::marshal_context::~marshal_context", "~marshal_context", "marshal_context::marshal_as", "marshal_context.marshal_as", "msclr.interop.marshal_context.marshal_as", "msclr::interop::marshal_context::marshal_as" ]
+f1_keywords: ["msclr::interop::marshal_context::marshal_context", "msclr::interop::marshal_context::~marshal_context", "msclr::interop::marshal_context::marshal_as" ]
 helpviewer_keywords: ["marshal_context class [C++]", "marshal_context class [C++], operations"]
 ms.assetid: 241b0cf6-4ca4-4812-aaee-d671c11dc034
 ---

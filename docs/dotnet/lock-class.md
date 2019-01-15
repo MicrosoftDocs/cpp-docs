@@ -2,7 +2,7 @@
 title: "lock Class"
 ms.date: "12/20/2018"
 ms.topic: "reference"
-f1_keywords: ["msclr::lock", "msclr.lock", "lock", "lock::lock", "lock.lock", "msclr.lock.lock", "msclr::lock::lock", "~lock", "msclr.lock.~lock", "lock.~lock", "msclr::lock::~lock", "lock::~lock", "is_locked", "msclr::lock::is_locked", "lock::is_locked", "msclr::lock.is_locked", "lock.is_locked", "operator bool", "msclr.lock.operator bool", "lock.operator bool", "msclr::lock::operator bool", "lock::operator bool", "lock::acquire", "acquire", "msclr.lock.acquire", "msclr::lock::acquire", "lock.acquire", "try_acquire", "lock.try_acquire", "msclr.lock.try_acquire", "lock::try_acquire", "msclr::lock::try_acquire", "lock.release", "msclr::lock::release", "lock::release", "msclr.lock.release", "lock::operator==", "msclr.lock.operator==", "msclr::lock::operator==", "lock.operator==", "lock.operator!=", "msclr.lock.operator!=", "msclr::lock::operator!=", "lock::operator!=", ]
+f1_keywords: ["msclr::lock::lock", "msclr::lock::~lock", "msclr::lock::is_locked", "msclr::lock.is_locked", "msclr::lock::operator bool", "msclr::lock::acquire", "msclr::lock::try_acquire", "msclr::lock::release", "msclr::lock::operator==", "msclr::lock::operator!="]
 helpviewer_keywords: ["lock class", "lock constructor", "~lock destructor", "lock::is_locked", "lock::operator bool", "acquire method", "lock::try_acquire", "lock::release", "lock::operator==", "lock::operator!=",  ]
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
 ---
