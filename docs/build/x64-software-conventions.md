@@ -133,7 +133,7 @@ _declspec(align(8)) struct {
 #### Example 3
 
 ```C
-// Total size = 22 bytes, alignment = 4 bytes (doubleword).
+// Total size = 12 bytes, alignment = 4 bytes (doubleword).
 
 _declspec(align(4)) struct {
     char a;       // +0; size = 1 byte
@@ -148,12 +148,12 @@ _declspec(align(4)) struct {
 #### Example 4
 
 ```C
-// Total size = 8 bytes, alignment = 8 bytes (quadword).
+// Total size = 16 bytes, alignment = 8 bytes (quadword).
 
 _declspec(align(8)) union {
     char *p;      // +0; size = 8 bytes
-    short s;      // +0; size = 2 bytes
-    long l;       // +0; size = 4 bytes
+    short s;      // +8; size = 2 bytes
+    long l;       // +12; size = 4 bytes
 }
 ```
 
