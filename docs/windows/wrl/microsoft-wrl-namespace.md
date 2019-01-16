@@ -22,7 +22,7 @@ namespace Microsoft::WRL;
 
 |Name|Description|
 |----------|-----------------|
-|`InhibitWeakReferencePolicy`|`RuntimeClassFlags<WinRt &#124; InhibitWeakReference>`|
+|`InhibitWeakReferencePolicy`|`RuntimeClassFlags<WinRt | InhibitWeakReference>`|
 
 ### Classes
 
