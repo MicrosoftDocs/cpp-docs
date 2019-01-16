@@ -119,7 +119,7 @@ The articles in this part of the documentation provide high-level guidelines and
 
 - [Portability At ABI Boundaries](../cpp/portability-at-abi-boundaries-modern-cpp.md)
 
-For more information, see the StackOverflow article [what C++ idioms are deprecated in C++11](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11).
+For more information, see the Stack Overflow article [Which C++ idioms are deprecated in C++11](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11).
 
 ## See also
 
