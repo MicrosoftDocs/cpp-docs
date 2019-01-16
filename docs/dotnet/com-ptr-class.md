@@ -1,9 +1,9 @@
 ---
 title: "com::ptr Class"
-ms.date: "12/19/2018"
+ms.date: "01/16/2019"
 ms.topic: "reference"
-f1_keywords: ["msclr::com::ptr::ptr", "msclr::com::ptr::~ptr", "msclr::com::ptr::Attach", "msclr::com::ptr::CreateInstance", "msclr::com::ptr::Detach", "msclr::com::ptr::GetInterface", "msclr::com::ptr::QueryInterface", "msclr::com::ptr::Release", "msclr::com::ptr::operator=", "msclr::com::ptr::operator->", "msclr::com::ptr::operator!", "msclr::com::ptr::operator bool"]
-helpviewer_keywords: ["ptr class", "ptr::ptr", "ptr::~ptr", "Attach method", "ptr::CreateInstance", "ptr::Detach", "GetInterface method", "QueryInterface method", "Release method", "operator=", "ptr::operator->", "ptr::operator!", "ptr::operator bool" ]
+f1_keywords: ["msclr::com::ptr::ptr", "msclr::com::ptr::Attach", "msclr::com::ptr::CreateInstance", "msclr::com::ptr::Detach", "msclr::com::ptr::GetInterface", "msclr::com::ptr::QueryInterface", "msclr::com::ptr::Release", "msclr::com::ptr::operator=", "msclr::com::ptr::operator->", "msclr::com::ptr::operator!"]
+helpviewer_keywords: ["msclr::ptr class"]
 ms.assetid: 0144d0e4-919c-45f9-a3f8-fbc9edba32bf
 ---
 # com::ptr Class
