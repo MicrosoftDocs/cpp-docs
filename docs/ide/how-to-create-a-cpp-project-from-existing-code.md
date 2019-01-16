@@ -7,7 +7,7 @@ ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
 ---
 # How to: Create a C++ Project from Existing Code
 
-In Visual Studio, you can port your existing code files into a Visual C++ project by using the **Create New Project From Existing Code Files** wizard. This wizard isn't available in older Express editions of Visual Studio. This wizard creates a solution and project that uses the MSBuild system to manage your source files and build configuration.
+In Visual Studio, you can port existing code files into a Visual C++ project by using the **Create New Project From Existing Code Files** wizard. This wizard isn't available in older Express editions of Visual Studio. The wizard creates a solution and project that uses the MSBuild system to manage your source files and build configuration.
 
 Porting your existing code files into a Visual C++ project enables you to use the native MSBuild project management features built into the IDE. If you prefer to use your existing build system, such as nmake makefiles, CMake, or alternatives, you can use the Open Folder option instead. For more information, see [Open Folder projects in Visual C++](../ide/non-msbuild-projects.md). Both options let you use IDE features such as [IntelliSense](/visualstudio/ide/using-intellisense) and [Project Properties](../ide/working-with-project-properties.md).
 
@@ -21,9 +21,9 @@ Porting your existing code files into a Visual C++ project enables you to use th
 
     | Setting                       | Description |
     | ----------------------------- | ------------------------------------------------- |
-    | **Project file location** | Specifies the directory path of the new project. This location is where the wizard deposits all the files (and subdirectories) of the new project.<br/><br/>Select **Browse** to display the **Project file location** dialog, which helps you specify the directory that contains the new project and enables you to navigate to the right folder. |
+    | **Project file location** | Specifies the directory path of the new project. This location is where the wizard deposits all the files (and subdirectories) of the new project.<br/><br/>Select **Browse** to display the **Project file location** dialog for you to navigate to the right folder and specify the directory that contains the new project. |
     | **Project name** | Specifies the name of the new project. Project files, which have file extensions such as .vcxproj adopts this name and existing code files keep their original name. |
-    | **Add files to the project from these folders** | Check to set the wizard to copy existing code files from their original directories (that are specified in the list box below this control) into the new project.<br/><br/>Check **Add Subfolders** to specify to copy code files from all subdirectories of the directory listed **Folder** column into the new project. This column indicates the path to the directory that contains existing code files to copy into the new project and lists all the directories that the wizard searches for existing code files.<br/><br/>- Select **Add** to display the **Add files to the project from this folder** dialog box, which helps you the specify directories that the wizard searches for existing code files.<br/>- Select **Remove** to delete the directory path that is selected in the list box left of this control.<br/><br/>In the **File types to add to the project** box, specify the kinds of files that the wizard adds to the new project based on the given file extensions. File extensions are preceded with the asterisk wildcard character, and are delimited in the list of file extensions by a semicolon. |
+    | **Add files to the project from these folders** | Check to set the wizard to copy existing code files from their original directories (that are specified in the list box below this control) into the new project.<br/><br/>Check **Add Subfolders** to specify copying code files from all subdirectories into the new project from the directories listed in **Folder** column.<br/>- Select **Add** to display the **Add files to the project from this folder** dialog box, which helps you the specify directories that the wizard searches for existing code files.<br/>- Select **Remove** to delete the directory path that is selected in the list box left of this control.<br/><br/>In the **File types to add to the project** box, specify the kinds of files that the wizard adds to the new project based on the given file extensions. File extensions are preceded with the asterisk wildcard character and are delimited in the list of file extensions by a semicolon. |
     | **Show all files in Solution Explorer** | Specifies that all files in the new project to be visible and displayed in the **Solution Explorer** window. This option is enabled by default. |
 
     ![Project location](media/location.png)
@@ -32,13 +32,13 @@ Porting your existing code files into a Visual C++ project enables you to use th
 
     | Setting                       | Description |
     | ----------------------------- | ------------------------------------------------- |
-    | **Use Visual Studio** | Specifies to use build tools that are included in Visual Studio for building the new project. This option is selected by default.<br/><br/>Select **Project Type** to specify the type of project that the wizard generates. Choose the type of project to generate, from **Windows application project**, indicates an executable Windows application, **Console application project**, indicates a console application, **Dynamically linked library (DLL) project**, indicates an empty dynamic link library application, or **Static library (LIB) project**, indicates a static library application.<br/><br/>Check **Add support for ATL** to add ATL support to the new project.<br/><br/>Check **Add support for MFC** to add MFC support to the new project.<br/><br/>Check **Add support for the Common Language Runtime** to add CLR programming support to the new project. Choose the **Common Language Runtime Support** to specify the type of compliance, such as **Common Language Runtime (old syntax)**, which is compliance with Managed Extensions for C++ syntax, the CLR programming syntax before Visual C++ 2005. |
+    | **Use Visual Studio** | Specifies to use build tools that are included in Visual Studio for building the new project. This option is selected by default.<br/><br/>Select **Project Type** to specify the type of project the wizard generates. Choose **Windows application project** for an executable Windows application, **Console application project** for a console application, **Dynamically linked library (DLL) project** for an empty dynamic link library, or **Static library (LIB) project** for a static library.<br/><br/>Check **Add support for ATL** to add ATL support to the new project.<br/><br/>Check **Add support for MFC** to add MFC support to the new project.<br/><br/>Check **Add support for the Common Language Runtime** to add CLR programming support to the project. Choose the **Common Language Runtime Support** for type of compliance, such as **Common Language Runtime (old syntax)** for compliance with Managed Extensions for C++ syntax, the CLR programming syntax before Visual C++ 2005. |
     | **Use external build system** | Specifies to use build tools that aren't included in Visual Studio for building the new project. When this option is selected, you can specify build command lines on the **Specify Debug Configuration Settings** and **Specify Release Configuration Settings** pages. |
 
     ![Project settings](media/settings.png)
 
     > [!NOTE]
-    > When the **Use External Build System** option is checked, the IDE doesn't build the new project, so the /D, /I, /FI, /AI, or /FU options aren't required for compilation. However, these options must be set correctly in order for IntelliSense to function properly.
+    > When the **Use External Build System** option is checked, the IDE doesn't build the project, so the /D, /I, /FI, /AI, or /FU options aren't required for compilation. However, these options must be set correctly in order for IntelliSense to function properly.
 
 1. Specify the Debug configuration settings to use. Choose **Next** to continue.
 
@@ -49,7 +49,7 @@ Porting your existing code files into a Visual C++ project enables you to use th
     | **Clean command line** | Specifies the command line to delete support files generated by the build tools for the project. |
     | **Output (for debugging)** | Specifies the directory path of the output files for the Debug configuration of the project. |
     | **Preprocessor definitions (/D)** | Defines preprocessor symbols for the project, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md). |
-    | **Include search path (/I)** | Specifies directory paths to add to the list of directories that the compiler searches to resolve file references passed to preprocessor directives in the project, see [/I (Additional Include Directories)](../build/reference/i-additional-include-directories.md). |
+    | **Include search path (/I)** | Specifies directory paths to add to the list of directories the compiler searches to resolve file references passed to preprocessor directives in the project, see [/I (Additional Include Directories)](../build/reference/i-additional-include-directories.md). |
     | **Forced included files (/FI)** | Specifies header files to process when building the project, see [/FI (Name Forced Include File)](../build/reference/fi-name-forced-include-file.md). |
     | **.NET assembly search path (/AI)** | Specifies the directory paths that the compiler searches to resolve .NET assembly references passed to preprocessor directives in the project, see [/AI (Specify Metadata Directories)](../build/reference/ai-specify-metadata-directories.md). |
     | **Forced using .NET assemblies (/FU)** | Specifies .NET assemblies to process when building the project, see [/FU (Name Forced #using File)](../build/reference/fu-name-forced-hash-using-file.md). |
@@ -57,7 +57,7 @@ Porting your existing code files into a Visual C++ project enables you to use th
     ![Project configuration](media/config.png)
 
     > [!NOTE]
-    > The **Build command line**, **Rebuild command line**, **Clean command line**, and **Output (for debugging)** settings are only enabled when the **Use external build system** option is selected in the **Specify Project Settings** page.
+    > The **Build command line**, **Rebuild command line**, **Clean command line**, and **Output (for debugging)** settings are only enabled if the **Use external build system** option is selected on the **Specify Project Settings** page.
 
 1. Specify the Release configuration settings to use, these settings are the same as the Debug configuration settings. Choose **Finish** to generate the new project.
 
