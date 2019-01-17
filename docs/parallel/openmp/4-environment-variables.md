@@ -1,9 +1,9 @@
 ---
-title: "4. Environment Variables"
+title: "4. Environment variables"
 ms.date: "01/16/2019"
 ms.assetid: 4ec7ed81-e9ca-46a1-84f8-8f9ce4587346
 ---
-# 4. Environment Variables
+# 4. Environment variables
 
 This chapter describes the OpenMP C and C++ API environment variables (or similar platform-specific mechanisms) that control the execution of parallel code.  The names of environment variables must be uppercase. The values assigned to them are case insensitive and may have leading and trailing white space.  Modifications to the values after the program has started are ignored.
 
@@ -57,7 +57,7 @@ The number of threads to use is implementation-defined if:
 
 Example:
 
-```shell
+```csh
 setenv OMP_NUM_THREADS 16
 ```
 
@@ -75,7 +75,7 @@ If `OMP_DYNAMIC` is set to `TRUE`, the number of threads that are used for execu
 
 Example:
 
-```shell
+```csh
 setenv OMP_DYNAMIC TRUE
 ```
 
@@ -90,7 +90,7 @@ The `OMP_NESTED` environment variable enables or disables nested parallelism unl
 
 Example:
 
-```shell
+```csh
 setenv OMP_NESTED TRUE
 ```
 
