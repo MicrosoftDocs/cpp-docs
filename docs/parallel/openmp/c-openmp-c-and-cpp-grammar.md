@@ -5,8 +5,8 @@ ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
 ---
 # C. OpenMP C and C++ grammar
 
-[C.1 Notation](#c-1-notation)<br/>
-[C.2 Rules](#c-2-rules)
+[C.1 Notation](#c1-notation)<br/>
+[C.2 Rules](#c2-rules)
 
 ## C.1 Notation
 
