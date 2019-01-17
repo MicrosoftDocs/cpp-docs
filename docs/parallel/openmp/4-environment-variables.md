@@ -9,7 +9,7 @@ This chapter describes the OpenMP C and C++ API environment variables (or simila
 
 The environment variables are as follows:
 
-- [OMP_SCHEDULE](#41-omp_-_schedule) sets the run-time schedule type and chunk size.
+- [OMP_SCHEDULE](#41-omp_schedule) sets the run-time schedule type and chunk size.
 - [OMP_NUM_THREADS](#42-omp_num_threads) sets the number of threads to use during execution.
 - [OMP_DYNAMIC](#43-omp_dynamic) enables or disables the dynamic adjustment of the number of threads.
 - [OMP_NESTED](#44-omp_nested) enables or disables nested parallelism.
@@ -33,7 +33,7 @@ For `for` and `parallel for` directives that have a schedule type other than `ru
 
 Example:
 
-```shell
+```csh
 setenv OMP_SCHEDULE "guided,4"
 setenv OMP_SCHEDULE "dynamic"
 ```
