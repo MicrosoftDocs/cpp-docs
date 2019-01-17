@@ -6446,6 +6446,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/specify-project-location-and-source-files.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-debug-configuration-settings.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-release-configuration.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/intrinsics/index.md",
             "redirect_url": "/cpp/intrinsics/compiler-intrinsics-and-assembly-language",
             "redirect_document_id": false
