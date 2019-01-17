@@ -9819,6 +9819,66 @@
             "source_path": "docs/windows/wrl-reference.md",
             "redirect_url": "/cpp/windows/wrl/wrl-reference",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/1-1-scope.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/1-2-definition-of-terms.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/1-3-execution-model.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/1-4-compliance.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/1-5-normative-references.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/1-6-organization.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/4-1-omp-schedule.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/4-2-omp-num-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/4-3-omp-dynamic.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/4-4-omp-nested.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/c-1-notation.md",
+            "redirect_url": "/cpp/parallel/openmp/c-openmp-c-and-cpp-grammar",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/cpp/parallel/openmp/c-2-rules.md",
+            "redirect_url": "/cpp/parallel/openmp/c-openmp-c-and-cpp-grammar",
+            "redirect_document_id": true
         }
     ]
 }
