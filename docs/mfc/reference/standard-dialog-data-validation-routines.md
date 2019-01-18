@@ -515,7 +515,7 @@ For more information about DDV, see [Dialog Data Exchange and Validation](../../
 
   **Header** afxdd_.h
 
-## See Also
+### See Also
 
 [Standard Dialog Data Exchange Routines](../../mfc/reference/standard-dialog-data-exchange-routines.md)<br/>
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

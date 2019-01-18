@@ -205,7 +205,7 @@ It parses a URL string and returns the type of service and its components, as we
 
   **Header** afxinet.h
 
-## See Also
+### See Also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
 

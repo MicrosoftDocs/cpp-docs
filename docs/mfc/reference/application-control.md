@@ -325,7 +325,7 @@ You must have the following statement in your client's application resource scri
 
 **Header**: afxole.h
 
-## See Also
+### See Also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
 

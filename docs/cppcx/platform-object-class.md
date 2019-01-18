@@ -111,11 +111,11 @@ Use the [typeid](../windows/typeid-cpp-component-extensions.md) operator to retu
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
 
-## See Also
+### See Also
 
 [Platform::Type Class](../cppcx/platform-type-class.md)<br/>
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)<br/>
-[Type System](../cppcx/type-system-c-cx.md
+[Type System](../cppcx/type-system-c-cx.md)
 
 ## <a name="ctor"></a>  Object::Object Constructor
 
