@@ -58,7 +58,7 @@ The [/Za](../../build/reference/za-ze-disable-language-extensions.md) (ANSI comp
 
 ### Using Pragmas to Control Floating-Point Behavior
 
-The compiler provides three pragma directivess to override the floating-point behavior specified on the command-line: [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md), and [fp_contract](../../preprocessor/fp-contract.md). You can use these pragmas to control floating-point behavior at function-level, not within a function. Note that these pragmas do not correspond directly to the **/fp** options. This table shows how the **/fp** options and pragmas map to each other. For more information, see the documentation for the individual options and pragmas.
+The compiler provides three pragma directives to override the floating-point behavior specified on the command-line: [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md), and [fp_contract](../../preprocessor/fp-contract.md). You can use these pragmas to control floating-point behavior at function-level, not within a function. Note that these pragmas do not correspond directly to the **/fp** options. This table shows how the **/fp** options and pragmas map to each other. For more information, see the documentation for the individual options and pragmas.
 
 ||float_control(precise)|float_control(except)|fenv_access|fp_contract|
 |-|-|-|-|-|
