@@ -175,16 +175,8 @@ So now you have seen the same code base, cloned directly from GitHub, build, run
 
 ## Next steps
 
-Learn more about the CMakeSettings and launch.vs.json file schemas:
+Learn more about configuring  and debugging CMake projects in Visual Studio:
 > [!div class="nextstepaction"]
 > [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
 > [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
 
-<!--- Required:
-Tutorials should always have a Next steps H2 that points to the next
-logical tutorial in a series, or, if there are no other tutorials, to
-some other cool thing the customer can do. A single link in the blue box
-format should direct the customer to the next article - and you can
-shorten the title in the boxes if the original one doesn't fit.
-Do not use a "More info section" or a "Resources section" or a "See also
-section". --->

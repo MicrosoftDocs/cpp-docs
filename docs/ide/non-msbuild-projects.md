@@ -1,23 +1,17 @@
 ---
-title: "Open Folder projects in Visual C++"
-ms.date: "06/01/2018"
+title: "Open Folder support for C++ build systems in Visual Studio"
+ms.date: "01/21/2019"
 helpviewer_keywords: ["Open Folder Projects in Visual C++"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
-# Open Folder projects in Visual C++
+# Open Folder projects for C++
 
-In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files.
+In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. For general information about Open Folder, see [Develop code in Visual Studio without projects or solutions](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
 
-For general information about Open Folder, see [Develop code in Visual Studio without projects or solutions](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
+CMake is integrated in the Visual Studio IDE as CMake Tools for Visual C++, a component of the C++ desktop workload. For more information, see [CMake projects in Visual Studio](cmake-tools-for-visual-cpp.md). For any other build system, you can use the Open Folder feature. Open Folder effectively decouples the code editor, debugger and analyzers from the build system and the compiler toolset. You can use the C++ code editor with its rich IntelliSense features, the code analyzers, and the Visual Studio debugger with virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. It even works with a single file or a loose collection of files with no build system.
 
-The Open Folder feature effectively decouples the code editor, debugger and analyzers from the build system and the compiler toolset. You can use the C++ code editor with its rich IntelliSense features, the code analyzers, and the Visual Studio debugger with virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. It even works with a single file or a loose collection of files with no build system.
-
-To use Open Folder, from the main menu select *File | Open | Folder* or press *Ctrl + Shift + Alt + O*.
+To use Open Folder, from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**.
 Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable IntelliSense, navigation, and refactoring features. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index. 
-
-## CMake projects
-
-CMake is integrated in the Visual Studio IDE as CMake Tools for Visual C++, a component of the C++ desktop workload. For more information, see [CMake Tools for Visual C++](cmake-tools-for-visual-cpp.md).
 
 ## QMake projects that target the Qt framework
 
