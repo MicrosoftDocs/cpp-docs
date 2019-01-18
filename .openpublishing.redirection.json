@@ -6446,6 +6446,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/specify-project-location-and-source-files.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-debug-configuration-settings.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-release-configuration.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/intrinsics/index.md",
             "redirect_url": "/cpp/intrinsics/compiler-intrinsics-and-assembly-language",
             "redirect_document_id": false
@@ -9819,6 +9839,66 @@
             "source_path": "docs/windows/wrl-reference.md",
             "redirect_url": "/cpp/windows/wrl/wrl-reference",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-1-scope.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#11-scope",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-2-definition-of-terms.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#12-definition-of-terms",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-3-execution-model.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#13-execution-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-4-compliance.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#14-compliance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-5-normative-references.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#15-normative-references",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-6-organization.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#16-organization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/4-1-omp-schedule.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables#41-omp_schedule",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/4-2-omp-num-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables#42-omp_num_threads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/4-3-omp-dynamic.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables#43-omp_dynamic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/4-4-omp-nested.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables#44-omp_nested",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/c-1-notation.md",
+            "redirect_url": "/cpp/parallel/openmp/c-openmp-c-and-cpp-grammar#c1-notation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/c-2-rules.md",
+            "redirect_url": "/cpp/parallel/openmp/c-openmp-c-and-cpp-grammar#c2-rules",
+            "redirect_document_id": false
         }
     ]
 }
