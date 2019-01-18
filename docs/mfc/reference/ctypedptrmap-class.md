@@ -42,7 +42,7 @@ Class of the object stored in the map.
 
 |Name|Description|
 |----------|-----------------|
-|[CTypedPtrMap::operator [ ]](#operator_at)|Inserts an element into the map.|
+|[CTypedPtrMap::operator \[ \]](#operator_at)|Inserts an element into the map.|
 
 ## Remarks
 

@@ -273,7 +273,7 @@ virtual BOOL Create(
 Specifies the edit control's style. Apply a combination of the window styles listed in the **Remarks** section below, and [edit control styles](/windows/desktop/Controls/edit-control-styles), described in the Windows SDK.
 
 *rect*<br/>
-Specifies the edit control's size and position. Can be a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the edit control's size and position. Can be a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the edit control's parent window (often a [CDialog](../../mfc/reference/cdialog-class.md)). It must not be NULL.
@@ -289,7 +289,7 @@ Nonzero if initialization is successful; otherwise, 0.
 
 You construct a `CRichEditCtrl` object in two steps. First, call the [CRichEditCtrl](#cricheditctrl) constructor, then call `Create`, which creates the Windows edit control and attaches it to the `CRichEditCtrl` object.
 
-When you create a rich edit control with this function, first you must load the necessary common controls library. To load the libary, call the global function [AfxInitRichEdit](application-information-and-management.md#afxinitrichedit), which in turn initializes the common controls library. You need to call `AfxInitRichEdit` only once in your process.
+When you create a rich edit control with this function, first you must load the necessary common controls library. To load the library, call the global function [AfxInitRichEdit](application-information-and-management.md#afxinitrichedit), which in turn initializes the common controls library. You need to call `AfxInitRichEdit` only once in your process.
 
 When `Create` executes, Windows sends the [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), and [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the edit control.
 
@@ -398,7 +398,7 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 ### Parameters
 
 *pDisplayRect*<br/>
-Pointer to a [RECT](../../mfc/reference/rect-structure1.md) or [CRect](../../atl-mfc-shared/reference/crect-class.md) object specifying the area of the device to display the text.
+Pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) or [CRect](../../atl-mfc-shared/reference/crect-class.md) object specifying the area of the device to display the text.
 
 ### Return Value
 
@@ -819,7 +819,7 @@ void GetRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) or pointer to a [RECT](../../mfc/reference/rect-structure1.md) to receive the formatting rectangle of this `CRichEditCtrl` object.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) or pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) to receive the formatting rectangle of this `CRichEditCtrl` object.
 
 ### Remarks
 
@@ -1701,7 +1701,7 @@ void SetRect(LPCRECT lpRect);
 ### Parameters
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) or pointer to a [RECT](../../mfc/reference/rect-structure1.md) that indicates the new bounds for the formatting rectangle.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) or pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) that indicates the new bounds for the formatting rectangle.
 
 ### Remarks
 

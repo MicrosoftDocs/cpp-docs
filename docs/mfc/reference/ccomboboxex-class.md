@@ -209,7 +209,7 @@ The number of items remaining in the control. If *iIndex* is invalid, the functi
 
 ### Remarks
 
-This member function implements the functionality of the message [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem), as described in the Windows SDK. When you call DeleteItem, a [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) message with CBEN_DELETEITEM notification will be sent to the parent window.
+This member function implements the functionality of the message [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem), as described in the Windows SDK. When you call DeleteItem, a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message with CBEN_DELETEITEM notification will be sent to the parent window.
 
 ##  <a name="getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl
 
@@ -335,7 +335,7 @@ The index at which the new item was inserted if successful; otherwise -1.
 
 ### Remarks
 
-When you call `InsertItem`, a [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) message with [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) notification will be sent to the parent window.
+When you call `InsertItem`, a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message with [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) notification will be sent to the parent window.
 
 ##  <a name="setextendedstyle"></a>  CComboBoxEx::SetExtendedStyle
 

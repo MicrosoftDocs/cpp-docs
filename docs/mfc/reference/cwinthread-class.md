@@ -393,7 +393,7 @@ Nonzero if successful; otherwise 0.
 The posted message is mapped to the proper message handler by the message map macro ON_THREAD_MESSAGE.
 
 > [!NOTE]
-> When you call [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946), the message is placed in the thread's message queue. However, because messages posted this way are not associated with a window, MFC will not dispatch them to message or command handlers. In order to handle these messages, override the `PreTranslateMessage()` function of your CWinApp-derived class, and handle the messages manually.
+> When you call [PostThreadMessage](/windows/desktop/api/winuser/nf-winuser-postthreadmessagea), the message is placed in the thread's message queue. However, because messages posted this way are not associated with a window, MFC will not dispatch them to message or command handlers. In order to handle these messages, override the `PreTranslateMessage()` function of your CWinApp-derived class, and handle the messages manually.
 
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage
 
@@ -406,7 +406,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing the message to process.
+Points to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) containing the message to process.
 
 ### Return Value
 
@@ -432,7 +432,7 @@ virtual BOOL ProcessMessageFilter(
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
 *lpMsg*<br/>
-A pointer to a Windows [MSG structure](../../mfc/reference/msg-structure1.md).
+A pointer to a Windows [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg).
 
 ### Return Value
 
@@ -460,7 +460,7 @@ virtual LRESULT ProcessWndProcException(
 Points to an unhandled exception.
 
 *pMsg*<br/>
-Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing information about the windows message that caused the framework to throw an exception.
+Points to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) containing information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
 

@@ -2,9 +2,9 @@
 title: Install C++ support in Visual Studio 2017
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
-ms.date: "09/17/2018"
+ms.date: "11/19/2018"
 ms.topic: "tutorial"
-ms.devlang: "C++"
+ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
 # Install C++ support in Visual Studio
@@ -39,11 +39,11 @@ In general, we highly recommend that you use Visual Studio 2017 even if you need
 
 1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you are having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
-   ![Run the Visual Studio 2017 installer](../build/media/vscpp-concierge-run-installer.gif "Run the Visual Studio installer")
+   ![Download and install the Visual Studio Installer](../build/media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
 
 1. The installer presents you with a list of workloads, which are groups of related options for specific development areas. Support for C++ is now part of optional workloads that aren't installed by default.
 
-   ![Desktop development with C++](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
+   ![Desktop development with C++ workload](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
 
    For C++, select the **Desktop development with C++** workload and then choose **Install**.
 

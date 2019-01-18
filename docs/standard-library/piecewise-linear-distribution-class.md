@@ -273,7 +273,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-constructs a distribution object with intervals from the intializer list *intervals* and weights generated from the function *weightfunc*.
+constructs a distribution object with intervals from the initializer list *intervals* and weights generated from the function *weightfunc*.
 
 The constructor defined as
 

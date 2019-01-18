@@ -6,7 +6,7 @@ ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
 ---
 # Understanding Manifest Generation for C/C++ Programs
 
-A [manifest](https://msdn.microsoft.com/library/aa375365) is an XML document that can be an external XML file or a resource embedded inside an application or an assembly. The manifest of an [isolated application](/windows/desktop/SbsCs/isolated-applications) is used to manage the names and versions of shared side-by-side assemblies to which the application should bind at run time. The manifest of a side-by-side assembly specifies its dependencies on names, versions, resources, and other assemblies.
+A [manifest](/windows/desktop/sbscs/manifests) is an XML document that can be an external XML file or a resource embedded inside an application or an assembly. The manifest of an [isolated application](/windows/desktop/SbsCs/isolated-applications) is used to manage the names and versions of shared side-by-side assemblies to which the application should bind at run time. The manifest of a side-by-side assembly specifies its dependencies on names, versions, resources, and other assemblies.
 
 There are two ways to create a manifest for an isolated application or a side-by-side assembly. First, the author of the assembly can manually create a manifest file following rules and naming requirements. Alternatively, if a program only depends on Visual C++ assemblies such as CRT, MFC, ATL or others, then a manifest can be generated automatically by the linker.
 

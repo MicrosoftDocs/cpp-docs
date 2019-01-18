@@ -2178,7 +2178,7 @@ TRUE if the last command was sent from the button that *pButton* specifies; othe
 
 ### Remarks
 
-This method obtains a pointer to a [MSG Structure](../../mfc/reference/msg-structure1.md) by calling `CWnd::GetCurrentMessage`. It then compares the HWND of the button with the `MSG::lParam` and `MSG::hwnd` members to determine whether the button was the source of the command.
+This method obtains a pointer to a [MSG Structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) by calling `CWnd::GetCurrentMessage`. It then compares the HWND of the button with the `MSG::lParam` and `MSG::hwnd` members to determine whether the button was the source of the command.
 
 ##  <a name="islocked"></a>  CMFCToolBar::IsLocked
 

@@ -1,6 +1,6 @@
 ---
 title: "ARM64 exception handling"
-ms.date: "07/11/2018"
+ms.date: "11/19/2018"
 ---
 # ARM64 exception handling
 

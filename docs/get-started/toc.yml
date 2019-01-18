@@ -1,0 +1,35 @@
+- name: C++ in Visual Studio
+  href: index.yml
+  items:
+  - name: Overview
+    items:
+    - name: About Visual Studio 2017
+      href: visual-studio-ide-cpp.md
+    - name: About the code editor
+      href: /visualstudio/get-started/tutorial-editor
+    - name: About projects and solutions
+      href: /visualstudio/get-started/tutorial-projects-solutions
+    - name: More Visual Studio features
+      href: /visualstudio/ide/advanced-feature-overview?toc=/cpp/get-started/toc.json&bc=/cpp/get-started/breadcrumb/toc.json
+  - name: Tutorials
+    expanded: true
+    items:
+    - name: Create your first C++ app
+      href: tutorial-console-cpp.md
+    - name: Create a UWP app
+      href: /windows/uwp/cpp-and-winrt-apis/get-started
+    - name: Create a Windows Desktop application
+      href: /windows/desktop/learnwin32/learn-to-program-for-windows
+    - name: Create a DirectX game
+      href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
+  - name: Learn Visual Studio
+    items:
+    - name: Write and edit code
+      href: /visualstudio/get-started/tutorial-editor
+    - name: Compile and build
+      href: /visualstudio/ide/compiling-and-building-in-visual-studio
+    - name: Debug your code
+      href: /visualstudio/debugger/getting-started-with-the-debugger-cpp
+    - name: Deploy your project
+      href: /visualstudio/deployment/index
+

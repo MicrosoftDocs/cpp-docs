@@ -1,6 +1,6 @@
 ---
 title: "Destructors (C++)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["objects [C++], destroying", "Visual C++, destructors", "destroying objects, destructors", "~ operator [C++], specifying destructors", "destructors, about destructors", "destructors, C++"]
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
 ---
@@ -140,9 +140,8 @@ B1 dtor
 
 Destructors for virtual base classes are called in the reverse order of their appearance in a directed acyclic graph (depth-first, left-to-right, postorder traversal). the following figure depicts an inheritance graph.
 
-![Inheritance graph that shows virtual base classes](../cpp/media/vc392j1.gif "vc392J1")
-
-Inheritance Graph Showing Virtual Base Classes
+![Inheritance graph that shows virtual base classes](../cpp/media/vc392j1.gif "Inheritance graph that shows virtual base classes") <br/>
+Inheritance graph that shows virtual base classes
 
 The following lists the class heads for the classes shown in the figure.
 

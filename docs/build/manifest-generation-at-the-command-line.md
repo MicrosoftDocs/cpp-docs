@@ -10,7 +10,7 @@ When building C/C++ applications from the command line using nmake or similar to
 
 ## See Also
 
-[Manifests](https://msdn.microsoft.com/library/aa375365)<br/>
+[Manifests](/windows/desktop/sbscs/manifests)<br/>
 [/INCREMENTAL (Link Incrementally)](../build/reference/incremental-link-incrementally.md)<br/>
 [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)<br/>
 [Edit and Continue](/visualstudio/debugger/edit-and-continue)<br/>

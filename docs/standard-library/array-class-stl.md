@@ -64,7 +64,7 @@ class array;
 |Operator|Description|
 |-|-|
 |[array::operator=](#op_eq)|Replaces the controlled sequence.|
-|[array::operator[]](#op_at)|Accesses an element at a specified position.|
+|[array::operator\[\]](#op_at)|Accesses an element at a specified position.|
 
 ## Remarks
 

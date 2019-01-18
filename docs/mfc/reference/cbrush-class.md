@@ -159,7 +159,7 @@ BOOL CreateDIBPatternBrush(
 Identifies a global-memory object containing a packed device-independent bitmap (DIB).
 
 *nUsage*<br/>
-Specifies whether the `bmiColors[]` fields of the [BITMAPINFO](../../mfc/reference/bitmapinfo-structure.md) data structure (a part of the "packed DIB") contain explicit RGB values or indices into the currently realized logical palette. The parameter must be one of the following values:
+Specifies whether the `bmiColors[]` fields of the [BITMAPINFO](/windows/desktop/api/wingdi/ns-wingdi-tagbitmapinfo) data structure (a part of the "packed DIB") contain explicit RGB values or indices into the currently realized logical palette. The parameter must be one of the following values:
 
 - DIB_PAL_COLORS The color table consists of an array of 16-bit indexes.
 

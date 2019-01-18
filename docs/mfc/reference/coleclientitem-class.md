@@ -60,7 +60,7 @@ class COleClientItem : public CDocItem
 |[COleClientItem::GetDocument](#getdocument)|Returns the `COleDocument` object that contains the present item.|
 |[COleClientItem::GetDrawAspect](#getdrawaspect)|Gets the item's current view for rendering.|
 |[COleClientItem::GetExtent](#getextent)|Returns the bounds of the OLE item's rectangle.|
-|[COleClientItem::GetIconFromRegistry](#geticonfromregistry)|Retrives a handle to an icon associated with the server of a particular CLSID.|
+|[COleClientItem::GetIconFromRegistry](#geticonfromregistry)|Retrieves a handle to an icon associated with the server of a particular CLSID.|
 |[COleClientItem::GetIconicMetafile](#geticonicmetafile)|Gets the metafile used for drawing the item's icon.|
 |[COleClientItem::GetInPlaceWindow](#getinplacewindow)|Returns a pointer to the item's in-place editing window.|
 |[COleClientItem::GetItemState](#getitemstate)|Gets the item's current state.|

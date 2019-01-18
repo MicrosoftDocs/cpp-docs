@@ -1014,7 +1014,7 @@ struct A
 };
 ```
 
-To fix the problem, arrange the intializer list to have the same order as the declarations. A similar warning is raised when one or both initializers refer to base class members.
+To fix the problem, arrange the initializer list to have the same order as the declarations. A similar warning is raised when one or both initializers refer to base class members.
 
 Note that the warning is off-by-default and only affects code compiled with **/Wall**.
 
@@ -1837,15 +1837,14 @@ struct A
   private:
     template <template <typename...> typename Type, typename... Args>
     static constexpr A<Args...> from_template(A<Type<Args...>>);
-
 };
 
 A<>::from_template_t<A<int>> a;
 ```
 
-In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.d
+In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.
 
-To fix the error, declare `a` before `A`.
+To fix the error, declare `from_template` before `from_template_t`.
 
 ### Modules changes
 

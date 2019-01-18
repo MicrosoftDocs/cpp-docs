@@ -976,7 +976,7 @@ int main()
     cout << "After the 2nd element is deleted, the set s1 is:" << endl;
     printset(s1);
 
-    // Fill in some data to test with, one at a time, using an intializer list
+    // Fill in some data to test with, one at a time, using an initializer list
     myset s2{ "meow", "hiss", "purr", "growl", "yowl" };
 
     cout << "Starting data of set s2 is:" << endl;
@@ -1693,14 +1693,14 @@ int main( )
         << *s1_rIter << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a set in a forward order
+   // through a set in a forward order
    cout << "The set is:";
    for ( s1_Iter = s1.begin( ) ; s1_Iter != s1.end( ); s1_Iter++ )
       cout << " " << *s1_Iter;
    cout << endl;
 
    // rbegin can be used to start an iteration
-   // throught a set in a reverse order
+   // through a set in a reverse order
    cout << "The reversed set is:";
    for ( s1_rIter = s1.rbegin( ) ; s1_rIter != s1.rend( ); s1_rIter++ )
       cout << " " << *s1_rIter;
@@ -1806,14 +1806,14 @@ int main() {
         << *s1_rIter << "." << endl;
 
    // end can be used to terminate an iteration
-   // throught a set in a forward order
+   // through a set in a forward order
    cout << "The set is: ";
    for ( s1_Iter = s1.begin( ) ; s1_Iter != s1.end( ); s1_Iter++ )
       cout << *s1_Iter << " ";
    cout << "." << endl;
 
    // rend can be used to terminate an iteration
-   // throught a set in a reverse order
+   // through a set in a reverse order
    cout << "The reversed set is: ";
    for ( s1_rIter = s1.rbegin( ) ; s1_rIter != s1.rend( ); s1_rIter++ )
       cout << *s1_rIter << " ";

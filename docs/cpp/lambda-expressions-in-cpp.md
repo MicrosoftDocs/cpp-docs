@@ -1,6 +1,6 @@
 ---
 title: "Lambda Expressions in C++"
-ms.date: "07/19/2017"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["lambda expressions [C++]", "lambda expressions [C++], overview", "lambda expressions [C++], vs. function objects"]
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
 ---
@@ -34,7 +34,7 @@ void abssort(float* x, unsigned n) {
 
 This illustration shows the parts of a lambda:
 
-![Structural elements of a lambda expression](../cpp/media/lambdaexpsyntax.png "LambdaExpSyntax")
+![Structural elements of a lambda expression](../cpp/media/lambdaexpsyntax.png "Structural elements of a lambda expression")
 
 1. *capture clause* (Also known as the *lambda-introducer* in the C++ specification.)
 
@@ -46,7 +46,7 @@ This illustration shows the parts of a lambda:
 
 1. *trailing-return-type* Optional.
 
-1. *lambda body*)
+1. *lambda body*.
 
 ### Capture Clause
 

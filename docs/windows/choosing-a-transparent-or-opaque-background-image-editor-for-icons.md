@@ -1,6 +1,6 @@
 ---
 title: "Choosing a Transparent or Opaque Background (Image Editor for Icons)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["opaque backgrounds [C++]", "colors [C++], image", "Image editor [C++], transparent or opague backgrounds", "images [C++], transparency", "images [C++], opaque background"]
 ms.assetid: 61b743d9-c86b-405d-9a81-0806431b4363
 ---
@@ -10,7 +10,7 @@ When you move or copy a selection from an image, any pixels in the selection tha
 
 You can switch from a transparent background (the default) to an opaque background, and back again. When you use a selection tool, the **Transparent Background** and **Opaque Background** options appear in the **Option** selector on the **Image Editor** toolbar (as seen below).
 
-![Background options &#45; opaque or transparent](../windows/media/vcimageeditoropaqtranspback.gif "vcImageEditorOpaqTranspBack")<br/>
+![Background options &#45; opaque or transparent](../windows/media/vcimageeditoropaqtranspback.gif "Background options &#45; opaque or transparent")<br/>
 **Transparent and Opaque Options** on the **Image Editor Toolbar**
 
 ### To switch between a transparent and opaque background
@@ -21,9 +21,9 @@ You can switch from a transparent background (the default) to an opaque backgrou
 
    - `Transparent Background (T)`: Existing image shows through parts of the selection that match the current background color.
 
-\- or -
+   \- or -
 
-- On the **Image** menu, select or clear **Draw Opaque**.
+1. On the **Image** menu, select or clear **Draw Opaque**.
 
 You can change the background color while a selection is already in effect to change which parts of the image are transparent.
 

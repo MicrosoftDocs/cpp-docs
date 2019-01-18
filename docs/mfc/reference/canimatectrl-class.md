@@ -126,7 +126,7 @@ virtual BOOL Create(
 Specifies the animation control's style. Apply any combination of the windows styles described in the Remarks section below and the animation control styles described in [Animation Control Styles](/windows/desktop/Controls/animation-control-styles) in the Windows SDK.
 
 *rect*<br/>
-Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the animation control's parent window, usually a `CDialog`. It must not be NULL.

@@ -1,6 +1,6 @@
 ---
 title: "Initializers"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["array-element initializers", "initializing arrays [C++], initializers", "arrays [C++], array-element initializers", "declarators, as initializers", "initializers, array element"]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
 ---
@@ -517,8 +517,8 @@ Reference-type variables can be declared without initializers only in the follow
 
 When initializing a reference-type variable, the compiler uses the decision graph shown in the following figure to select between creating a reference to an object or creating a temporary object to which the reference points.
 
-![Decision graph for initialization of ref types](../cpp/media/vc38s71.gif "vc38S71")
-Decision Graph for Initialization of Reference Types
+![Decision graph for initialization of reference types](../cpp/media/vc38s71.gif "Decision graph for initialization of reference types") <br/>
+Decision graph for initialization of reference types
 
 References to **volatile** types (declared as **volatile** *typename*<strong>&</strong> *identifier*) can be initialized with **volatile** objects of the same type or with objects that have not been declared as **volatile**. They cannot, however, be initialized with **const** objects of that type. Similarly, references to **const** types (declared as **const** *typename*<strong>&</strong> *identifier*) can be initialized with **const** objects of the same type (or anything that has a conversion to that type or with objects that have not been declared as **const**). They cannot, however, be initialized with **volatile** objects of that type.
 

@@ -1,6 +1,6 @@
 ---
 title: "Porting Guide: Spy++"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
 ---
 # Porting Guide: Spy++
@@ -19,7 +19,7 @@ The project file, two old .dsw files from Visual C++ 6.0, converted easily with 
 
 After upgrading the two projects, our solution looked like this:
 
-![The Spy&#43;&#43; Solution](../porting/media/spyxxsolution.PNG "SpyxxSolution")
+![The Spy&#43;&#43; Solution](../porting/media/spyxxsolution.PNG "The Spy&#43;&#43; Solution")
 
 We have two projects, one with a large number of C++ files, and another a DLL that's written in C.
 

@@ -21,7 +21,7 @@ Here's how to getting information about how to write C++ code and use the Visual
 |Title|Description|
 |-----------|-----------------|
 |[Visual C++](visual-cpp-in-visual-studio.md)|Contains reference and conceptual documentation about Visual C++. Part of the MSDN Library.|
-|[Windows Developer Center](https://developer.microsoft.com/windows/)|Contains information about how to use C++ and other languages to develop apps for Windows 8. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|
+|[Windows Developer Center](https://developer.microsoft.com/windows/)|Contains information about how to use C++ and other languages to develop apps for Windows 10. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|
 
 ### Online and Offline Documentation
 
@@ -38,4 +38,4 @@ Many sections of the documentation are also available in PDF form. These section
 |[Visual C++ Team Blog](https://blogs.msdn.microsoft.com/vcblog/)|Contains posts on various subjects by the experts on the Visual C++ product team.|
 |[Channel 9](https://channel9.msdn.com/)|Contains video interviews and lectures. Use the search box on the Channel 9 home page to find C++ content.|
 |[Visual Studio](https://visualstudio.microsoft.com/)|Contains articles and news about Visual Studio and related development tools.|
-|[MSDN forums](https://social.msdn.microsoft.com/Forums/en-US/home?category=visualc) and [Developer Community](https://developercommunity.visualstudio.com)|Official Microsoft forums where you can post questions about C++ and get answers from Microsoft and from experts in the community.|
+|[MSDN forums](https://social.msdn.microsoft.com/Forums/home?category=visualc) and [Developer Community](https://developercommunity.visualstudio.com)|Official Microsoft forums where you can post questions about C++ and get answers from Microsoft and from experts in the community.|

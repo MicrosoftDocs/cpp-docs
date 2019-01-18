@@ -11,7 +11,9 @@ A macro that indicates the maximum number of bytes in a multibyte character for 
 
 ## Syntax
 
-`#include <stdlib.h>`
+```
+#include <stdlib.h>
+```
 
 ## Remarks
 

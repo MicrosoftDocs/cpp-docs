@@ -1,6 +1,6 @@
 ---
 title: "Active Document Containers"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["active documents [MFC], containers", "active document containers [MFC]", "containers [MFC], active document", "MFC COM, active document containment"]
 ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
 ---
@@ -44,7 +44,7 @@ The frame object, the view objects, and the container object can optionally impl
 
 The following figure shows the conceptual relationships between a container and its components (at left), and the active document and its views (at right). The active document manages storage and data, and the view displays or optionally prints that data. Interfaces in bold are those required for active document participation; those bold and italic are optional. All other interfaces are required.
 
-![Active document container interfaces](../mfc/media/vc37gj1.gif "vc37gj1")
+![Active document container interfaces](../mfc/media/vc37gj1.gif "Active document container interfaces")
 
 A document that supports only a single view can implement both the view and document components (that is, their corresponding interfaces) on a single concrete class. In addition, a container site that only supports one view at a time can combine the document site and the view site into a single concrete site class. The container's frame object, however, must remain distinct, and the container's document component is merely included here to give a complete picture of the architecture; it is not affected by the active document containment architecture.
 

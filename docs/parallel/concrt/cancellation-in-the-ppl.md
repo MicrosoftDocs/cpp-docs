@@ -1,6 +1,6 @@
 ---
 title: "Cancellation in the PPL"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["parallel algorithms, canceling [Concurrency Runtime]", "canceling parallel algorithms [Concurrency Runtime]", "parallel tasks, canceling [Concurrency Runtime]", "cancellation in the PPL", "parallel work trees [Concurrency Runtime]", "canceling parallel tasks [Concurrency Runtime]"]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
 ---
@@ -45,7 +45,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 
 The PPL uses tasks and task groups to manage fine-grained tasks and computations. You can nest task groups to form *trees* of parallel work. The following illustration shows a parallel work tree. In this illustration, `tg1` and `tg2` represent task groups; `t1`, `t2`, `t3`, `t4`, and `t5` represent the work that the task groups perform.
 
-![A parallel work tree](../../parallel/concrt/media/parallelwork_trees.png "parallelwork_trees")
+![A parallel work tree](../../parallel/concrt/media/parallelwork_trees.png "A parallel work tree")
 
 The following example shows the code that is required to create the tree in the illustration. In this example, `tg1` and `tg2` are [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) objects; `t1`, `t2`, `t3`, `t4`, and `t5` are [concurrency::task_handle](../../parallel/concrt/reference/task-handle-class.md) objects.
 

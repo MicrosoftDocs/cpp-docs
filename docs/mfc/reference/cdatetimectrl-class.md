@@ -339,7 +339,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*psize*|[out] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that contains the ideal size for the control.|
+|*psize*|[out] Pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that contains the ideal size for the control.|
 
 ### Return Value
 

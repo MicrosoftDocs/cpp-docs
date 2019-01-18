@@ -49,7 +49,7 @@ This topic lists options for additional features for your application, such as H
 
 - **Support Restart Manager**
 
-   Adds support for the [Windows Restart Manager](/windows/desktop/RstMgr/using-restart-manager). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](https://msdn.microsoft.com/vstudio/ee886407).
+   Adds support for the [Windows Restart Manager](/windows/desktop/RstMgr/using-restart-manager). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100)).
 
 - **Advanced frame panes**
 

@@ -1,6 +1,6 @@
 ---
 title: "CSplitButton Class"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["CSplitButton", "AFXCMN/CSplitButton", "AFXCMN/CSplitButton::CSplitButton", "AFXCMN/CSplitButton::Create", "AFXCMN/CSplitButton::SetDropDownMenu", "AFXCMN/CSplitButton::OnDropDown"]
 helpviewer_keywords: ["CSplitButton [MFC], CSplitButton", "CSplitButton [MFC], Create", "CSplitButton [MFC], SetDropDownMenu", "CSplitButton [MFC], OnDropDown"]
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
@@ -42,7 +42,7 @@ The `CSplitButton` class is derived from the [CButton](../../mfc/reference/cbutt
 
 The following figure depicts a dialog box that contains a pager control and a (1) split button control. The (2) drop-down arrow has already been clicked and the (3) submenu is displayed.
 
-![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")
+![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "Dialog with a splitbutton and pager control.")
 
 ## Inheritance Hierarchy
 
@@ -172,7 +172,7 @@ The *nMenuId* parameter identifies a menu bar, which is a horizontal list of men
 
 The following figure depicts a dialog box that contains a pager control and a (1) split button control. The (2) drop-down arrow has already been clicked and the (3) submenu is displayed.
 
-![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")
+![Dialog with a splitbutton and pager control.](../../mfc/reference/media/splitbutton_pager.png "Dialog with a splitbutton and pager control.")
 
 ### Example
 

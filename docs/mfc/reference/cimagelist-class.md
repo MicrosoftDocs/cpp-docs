@@ -618,7 +618,7 @@ The zero-based index of the image to be drawn.
 A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y- coordinates where the image will be drawn.
 
 *sz*<br/>
-A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure indicating the size of the image to be drawn.
+A [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure indicating the size of the image to be drawn.
 
 *ptOrigin*<br/>
 A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.

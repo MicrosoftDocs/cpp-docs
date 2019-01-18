@@ -1,6 +1,6 @@
 ---
 title: "C++ Type System (Modern C++)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 ms.topic: "conceptual"
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
 ---
@@ -53,7 +53,7 @@ The fundamental types are recognized by the compiler, which has built-in rules t
 
 The following illustration shows the relative sizes of the built-in types:
 
-![Size in bytes of built&#45;in types](../cpp/media/built-intypesizes.png "Built-inTYpeSizes")
+![Size in bytes of built&#45;in types](../cpp/media/built-intypesizes.png "Size in bytes of built&#45;in types")
 
 The following table lists the most frequently used fundamental types:
 
@@ -64,13 +64,13 @@ The following table lists the most frequently used fundamental types:
 |bool|1 byte|Represents values that can be either true or false.|
 |char|1 byte|Use for ASCII characters in older C-style strings or std::string objects that will never have to be converted to UNICODE.|
 |wchar_t|2 bytes|Represents "wide" character values that may be encoded in UNICODE format (UTF-16 on Windows, other operating systems may differ). This is the character type that is used in strings of type `std::wstring`.|
-|unsigned char|1 byte|C++ has no built-in `byte` type.  Use unsigned char to represent a byte value.|
+|unsigned&nbsp;char|1 byte|C++ has no built-in `byte` type.  Use unsigned char to represent a byte value.|
 |unsigned int|4 bytes|Default choice for bit flags.|
 |long long|8 bytes|Represents very large integer values.|
 
 ## The void type
 
-The **void** type is a special type; you cannot declare a variable of type **void**, but you can declare a variable of type `void *` (pointer to **void**), which is sometimes necessary when allocating raw (un-typed) memory. However, pointers to **void** are not type-safe and generally their use is strongly discouraged in modern C++. In a function declaration, a **void** return value means that the function does not return a value; this is a common and acceptable use of **void**. While the C language required functions that have zero parameters to declare **void** in the parameter list, for example, `fou(void)`, this practice is discouraged in modern C++ and should be declared `fou()`. For more information, see [Type Conversions and Type Safety](../cpp/type-conversions-and-type-safety-modern-cpp.md).
+The **void** type is a special type; you cannot declare a variable of type **void**, but you can declare a variable of type __void \*__ (pointer to **void**), which is sometimes necessary when allocating raw (un-typed) memory. However, pointers to **void** are not type-safe and generally their use is strongly discouraged in modern C++. In a function declaration, a **void** return value means that the function does not return a value; this is a common and acceptable use of **void**. While the C language required functions that have zero parameters to declare **void** in the parameter list, for example, `fou(void)`, this practice is discouraged in modern C++ and should be declared `fou()`. For more information, see [Type Conversions and Type Safety](../cpp/type-conversions-and-type-safety-modern-cpp.md).
 
 ## const type qualifier
 
@@ -164,6 +164,6 @@ For more information about the C++ type system, see the following topics.
 
 ## See also
 
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

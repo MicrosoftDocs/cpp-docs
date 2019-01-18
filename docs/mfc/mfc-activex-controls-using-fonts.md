@@ -1,6 +1,6 @@
 ---
 title: "MFC ActiveX Controls: Using Fonts"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["OnFontChanged", "HeadingFont", "InternalFont"]
 helpviewer_keywords: ["notifications [MFC], MFC ActiveX controls fonts", "OnDraw method, MFC ActiveX controls", "InternalFont method [MFC]", "SetFont method [MFC]", "OnFontChanged method [MFC]", "IPropertyNotifySink class [MFC]", "MFC ActiveX controls [MFC], fonts", "Stock Font property [MFC]", "HeadingFont property [MFC]", "GetFont method [MFC]", "SelectStockFont method [MFC]", "fonts [MFC], ActiveX controls"]
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
@@ -183,7 +183,7 @@ In most cases the control needs to know when the characteristics of the font obj
 
 If the control uses the stock Font property, its notifications are handled by the `OnFontChanged` member function of `COleControl`. When you add custom font properties, you can have them use the same implementation. In the example in the previous section, this was accomplished by passing &*m_xFontNotification* when initializing the *m_fontHeading* member variable.
 
-![Implementing multiple font object interfaces](../mfc/media/vc373q1.gif "vc373q1")
+![Implementing multiple font object interfaces](../mfc/media/vc373q1.gif "Implementing multiple font object interfaces") <br/>
 Implementing Multiple Font Object Interfaces
 
 The solid lines in the figure above show that both font objects are using the same implementation of `IFontNotification`. This could cause problems if you wanted to distinguish which font changed.

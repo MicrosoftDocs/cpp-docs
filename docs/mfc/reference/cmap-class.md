@@ -66,7 +66,7 @@ Data type used for *VALUE* arguments; usually a reference to *VALUE*.
 
 |Name|Description|
 |----------|-----------------|
-|[CMap::operator [ ]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
+|[CMap::operator \[ \]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
 
 ## Remarks
 

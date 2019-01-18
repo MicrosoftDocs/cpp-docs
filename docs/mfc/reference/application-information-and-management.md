@@ -638,7 +638,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 ### Parameters
 
 *lpWndClass*<br/>
-Pointer to a [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.
+Pointer to a [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.
 
 ### Return Value
 
@@ -673,7 +673,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 ### Parameters
 
 *nClassStyle*<br/>
-Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure in the Windows SDK. If NULL, the defaults will be set as follows:
+Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure in the Windows SDK. If NULL, the defaults will be set as follows:
 
 - Sets the mouse style to CS_DBLCLKS, which sends double-click messages to the window procedure when the user double-clicks the mouse.
 
@@ -794,7 +794,7 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 ### Parameters
 
 *lpwsaData*<br/>
-A pointer to a [WSADATA](../../mfc/reference/wsadata-structure.md) structure. If *lpwsaData* is not equal to NULL, then the address of the `WSADATA` structure is filled by the call to `WSAStartup`. This function also ensures that `WSACleanup` is called for you before the application terminates.
+A pointer to a [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) structure. If *lpwsaData* is not equal to NULL, then the address of the `WSADATA` structure is filled by the call to `WSAStartup`. This function also ensures that `WSACleanup` is called for you before the application terminates.
 
 ### Return Value
 

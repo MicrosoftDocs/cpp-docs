@@ -37,7 +37,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ```C
 // crt_getdrives.c
-// This program retrives and lists out
+// This program retrieves and lists out
 // all the logical drives that are
 // currently mounted on the machine.
 

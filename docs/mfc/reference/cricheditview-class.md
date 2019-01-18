@@ -948,7 +948,7 @@ long PrintInsideRect(
 Pointer to a device context for the output area.
 
 *rectLayout*<br/>
-[RECT](../../mfc/reference/rect-structure1.md) or [CRect](../../atl-mfc-shared/reference/crect-class.md) which defines the output area.
+[RECT](/windows/desktop/api/windef/ns-windef-tagrect) or [CRect](../../atl-mfc-shared/reference/crect-class.md) which defines the output area.
 
 *nIndexStart*<br/>
 Zero-based index of the first character to be formatted.

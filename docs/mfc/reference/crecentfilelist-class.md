@@ -39,7 +39,7 @@ class CRecentFileList
 
 |Name|Description|
 |----------|-----------------|
-|[CRecentFileList::operator [ ]](#operator_at)|Returns a `CString` object at a given position.|
+|[CRecentFileList::operator \[ \]](#operator_at)|Returns a `CString` object at a given position.|
 
 ## Remarks
 

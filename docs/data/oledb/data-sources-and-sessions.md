@@ -1,6 +1,6 @@
 ---
 title: "Data Sources and Sessions"
-ms.date: "10/22/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["data sources [C++], OLE DB", "connections [C++], data source", "OLE DB consumer templates [C++], data sources"]
 ms.assetid: 6ee52216-e082-4869-a1d6-ce561cfb76e5
 ---
@@ -8,7 +8,7 @@ ms.assetid: 6ee52216-e082-4869-a1d6-ce561cfb76e5
 
 The following figure shows the classes that support connecting to and accessing a data source. Each class is based on a standard OLE DB component implementation.
 
-![Data source and session classes](../../data/oledb/media/vcdatasourcesessionclasses.gif "vcdatasourcesessionclasses")
+![Data source and session classes](../../data/oledb/media/vcdatasourcesessionclasses.gif "Data source and session classes") <br/>
 Data Source and Session Classes
 
 The classes are:

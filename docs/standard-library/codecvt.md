@@ -51,7 +51,7 @@ For byte streams (stored in a file, transmitted as a byte sequence, or stored wi
 
 **Header:** \<codecvt>
 
-**Namespace:** stdt
+**Namespace:** std
 
 ## See also
 
