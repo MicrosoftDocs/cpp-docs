@@ -4,6 +4,7 @@
 # [Create a new Linux project](create-a-new-linux-project.md)
 # [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md)
 # [Deploy, run, and debug your Linux project](deploy-run-and-debug-your-linux-project.md)
+# [Tutorial: Create C++ cross-platform projects in Visual Studio](../ide/get-started-linux-cmake.md)
 # [Linux Project Property Page Reference](prop-pages-linux.md)
 ## [General Properties (Linux)](prop-pages/general-linux.md)
 ## [Debugging Properties (Linux)](prop-pages/debugging-linux.md)

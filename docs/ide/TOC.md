@@ -12,6 +12,7 @@
 ## [CppProperties.json schema reference](cppproperties-schema-reference.md)
 ## [Tasks.vs.json schema reference (C++)](tasks-vs-json-schema-reference-cpp.md)
 # [CMake projects](cmake-tools-for-visual-cpp.md)
+## [Tutorial: Create C++ cross-platform projects in Visual Studio](get-started-linux-cmake.md)
 ## [Customize CMake settings](customize-cmake-settings.md)
 ## [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
 ## [CMake predefined configuration schema reference](cmake-predefined-configuration-reference.md)
