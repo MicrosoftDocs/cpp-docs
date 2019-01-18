@@ -124,6 +124,7 @@ for (int i = 0 ; i < 5 ; i++) {
 By default, under [/Ze](../build/reference/za-ze-disable-language-extensions.md), a variable declared in a **for** loop remains in scope until the **for** loop's enclosing scope ends.
 
 [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) enables standard behavior of variables declared in for loops without needing to specify `/Za`.
+/ Zc: forScope enables the standard behavior of variables declared in for loops without having to specify `/ Za`.
 
 It is also possible to use the scoping differences of the **for** loop to redeclare variables under `/Ze` as follows:
 
