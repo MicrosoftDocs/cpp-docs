@@ -1,13 +1,13 @@
 ---
 title: "&lt;functional&gt;"
-ms.date: "11/04/2016"
+ms.date: "01/17/2019"
 f1_keywords: ["<functional>", "functional/std::<functional>", "std::<functional>"]
 helpviewer_keywords: ["functors", "functional header"]
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
 ---
 # &lt;functional&gt;
 
-Defines C++ Standard Library functions that help construct *function objects*—also known as functors—and their binders. A function object is an object of a type that defines `operator()`. A function object can be a function pointer, but more typically, the object is used to store additional information that can be accessed during a function call.
+Defines C++ Standard Library functions that help construct *function objects*, also known as *functors*, and their binders. A function object is an object of a type that defines `operator()`. A function object can be a function pointer, but more typically, the object is used to store additional information that can be accessed during a function call.
 
 ## Syntax
 
@@ -17,9 +17,9 @@ Defines C++ Standard Library functions that help construct *function objects*—
 
 ## Remarks
 
-Algorithms require two types of function objects: unary and binary. Unary function objects require one argument, and binary function objects require two arguments. A function object and function pointers can be passed as a predicate to an algorithm, but function objects are also adaptable and increase the scope, flexibility, and efficiency of the C++ Standard Library. If, for example, a value needed to be bound to a function before being passed to an algorithm, then a function pointer could not be used. Function adaptors convert function pointers into adaptable function objects that can be bound to a value. The header \<functional> also contains member function adaptors that allow member functions to be called as adaptable function objects. Functions are adaptable if they have nested type declarations specifying their argument and return types. The C++ Standard requires that this adaptability is implemented by having all standard object classes inherit from the unary_function or binary_function base classes. Function objects and their adaptors allow the C++ Standard Library to upgrade existing applications and help integrate the library into the C++ programming environment.
+Algorithms require two types of function objects: *unary* and *binary*. Unary function objects require one argument, and binary function objects require two arguments. A function object and function pointers can be passed as a predicate to an algorithm, but function objects are also adaptable and increase the scope, flexibility, and efficiency of the C++ Standard Library. If, for example, a value needed to be bound to a function before being passed to an algorithm, then a function pointer could not be used. Function adaptors convert function pointers into adaptable function objects that can be bound to a value. The header \<functional> also contains member function adaptors that allow member functions to be called as adaptable function objects. Functions are adaptable if they have nested type declarations specifying their argument and return types. The C++ Standard requires that this adaptability is implemented by having all standard object classes inherit from the unary_function or binary_function base classes. Function objects and their adaptors allow the C++ Standard Library to upgrade existing applications and help integrate the library into the C++ programming environment.
 
-The Visual C++ implementation of the function objects in \<functional> includes *transparent operator functors*, which are specializations of standard function objects and take no template parameters, and perform perfect forwarding of the function arguments and perfect return of the result. This feature is part of the C++14 Draft Standard specification. These template specializations do not require that you specify argument types when you invoke arithmetic, comparison, logical, and bitwise operator functors. You can overload arithmetic, comparison, logical, or bitwise operators for your own types, or for heterogeneous combinations of types, and then use the transparent operator functors as function arguments. For example, if your type *MyType* implements `operator<`, you can call `sort(my_collection.begin(), my_collection.end(), less<>())` instead of explicitly specifying the type `sort(my_collection.begin(), my_collection.end(), less<MyType>())`.
+The Visual C++ implementation of the function objects in \<functional> includes *transparent operator functors*. which are specializations of standard function objects and take no template parameters, and perform perfect forwarding of the function arguments and perfect return of the result. This feature is part of the C++14 Draft Standard specification. These template specializations do not require that you specify argument types when you invoke arithmetic, comparison, logical, and bitwise operator functors. You can overload arithmetic, comparison, logical, or bitwise operators for your own types, or for heterogeneous combinations of types, and then use the transparent operator functors as function arguments. For example, if your type *MyType* implements `operator<`, you can call `sort(my_collection.begin(), my_collection.end(), less<>())` instead of explicitly specifying the type `sort(my_collection.begin(), my_collection.end(), less<MyType>())`.
 
 ## C++11/C++14 Implementation
 
@@ -68,7 +68,7 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |Class|Description|
 |-|-|
 |[bad_function_call](../standard-library/bad-function-call-class.md)|A class that describes an exception thrown to indicate that a call to `operator()` on a [function](../standard-library/function-class.md) object failed because the object was empty.|
-|[binary_negate](../standard-library/binary-negate-class.md)|A template class providing a member function that negates the return value of a specified binary function.|
+|[binary_negate](../standard-library/binary-negate-class.md)|A template class providing a member function that negates the return value of a specified binary function. Deprecated in C++17. |
 |[binder1st](../standard-library/binder1st-class.md)|A template class providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value.|
 |[binder2nd](../standard-library/binder2nd-class.md)|A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value.|
 |[const_mem_fun_ref_t](../standard-library/const-mem-fun-ref-t-class.md)|An adapter class that allows a const member function that takes no arguments to be called as a unary function object when initialized with a reference argument.|
@@ -86,7 +86,7 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |[pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md)|Converts a binary function pointer into an adaptable binary function.|
 |[pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md)|Converts a unary function pointer into an adaptable unary function.|
 |[reference_wrapper](../standard-library/reference-wrapper-class.md)|A class that wraps a reference.|
-|[unary_negate](../standard-library/unary-negate-class.md)|A template class providing a member function that negates the return value of a specified unary function.|
+|[unary_negate](../standard-library/unary-negate-class.md)|A template class providing a member function that negates the return value of a specified unary function. Deprecated in C++17. |
 
 ### Functions
 
@@ -103,8 +103,9 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |[mem_fn](../standard-library/functional-functions.md#mem_fn)|Generates a simple call wrapper.|
 |[mem_fun](../standard-library/functional-functions.md#mem_fun)|Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments.|
 |[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref)|A helper template function used to construct function object adaptors for member functions when initialized with reference arguments.|
-|[not1](../standard-library/functional-functions.md#not1)|Returns the complement of a unary predicate.|
-|[not2](../standard-library/functional-functions.md#not2)|Returns the complement of a binary predicate.|
+|[not1](../standard-library/functional-functions.md#not1)|Returns the complement of a unary predicate. Deprecated in C++17. |
+|[not2](../standard-library/functional-functions.md#not2)|Returns the complement of a binary predicate. Deprecated in C++17. |
+|[not_fn](../standard-library/functional-functions.md#not_fn)|Returns the complement of the result of its function object. New in C++17. |
 |[ptr_fun](../standard-library/functional-functions.md#ptr_fun)|A helper template function used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions.|
 |[ref](../standard-library/functional-functions.md#ref)|Constructs a `reference_wrapper` from an argument.|
 |[swap](../standard-library/functional-functions.md#swap)|Swaps two `function` objects.|

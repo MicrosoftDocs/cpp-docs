@@ -1,7 +1,7 @@
 ---
 title: "&lt;functional&gt; functions"
-ms.date: "11/04/2016"
-f1_keywords: ["functional/std::bind", "xfunctional/std::bind1st", "xfunctional/std::bind2nd", "xfunctional/std::bit_and", "xfunctional/std::bit_not", "xfunctional/std::bit_or", "xfunctional/std::bit_xor", "functional/std::cref", "type_traits/std::cref", "xfunctional/std::mem_fn", "xfunctional/std::mem_fun_ref", "xfunctional/std::not1", "xfunctional/std::not2", "xfunctional/std::ptr_fun", "functional/std::ref", "functional/std::swap"]
+ms.date: "01/17/2019"
+f1_keywords: ["functional/std::bind", "xfunctional/std::bind1st", "xfunctional/std::bind2nd", "xfunctional/std::bit_and", "xfunctional/std::bit_not", "xfunctional/std::bit_or", "xfunctional/std::bit_xor", "functional/std::cref", "type_traits/std::cref", "xfunctional/std::mem_fn", "xfunctional/std::mem_fun_ref", "xfunctional/std::not1", "xfunctional/std::not2", "functional/std::not_fn", "xfunctional/std::ptr_fun", "functional/std::ref", "functional/std::swap"]
 helpviewer_keywords: ["std::bind [C++]", "std::bind1st", "std::bind2nd", "std::bit_and [C++]", "std::bit_not [C++]", "std::bit_or [C++]", "std::bit_xor [C++]", "std::cref [C++]"]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
 ---
@@ -13,8 +13,8 @@ ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
 |[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|
 |[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|
 |[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[not1](#not1)|
-|[not2](#not2)|[ptr_fun](#ptr_fun)|[ref](#ref)|
-|[swap](#swap)|
+|[not2](#not2)|[not_fn](#not_fn)|[ptr_fun](#ptr_fun)|
+|[ref](#ref)|[swap](#swap)|
 
 ## <a name="bind"></a>  bind
 
@@ -777,7 +777,7 @@ With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13
 
 ## <a name="not1"></a>  not1
 
-Returns the complement of a unary predicate.
+Returns the complement of a unary predicate. Deprecated in favor of [not_fn](#not_fn) in C++17.
 
 ```cpp
 template <class UnaryPredicate>
@@ -849,7 +849,7 @@ The number of elements in v1 not greater than 10 is: 3.
 
 ## <a name="not2"></a>  not2
 
-Returns the complement of a binary predicate.
+Returns the complement of a binary predicate. Deprecated in favor of [not_fn](#not_fn) in C++17.
 
 ```cpp
 template <class BinaryPredicate>
@@ -914,6 +914,117 @@ int main( )
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
       cout << *Iter1 << " ";
    cout << ")" << endl;
+}
+```
+
+```Output
+Original vector v1 = ( 6262 6262 41 18467 6334 26500 19169 )
+Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )
+Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
+```
+
+## <a name="not_fn"></a> not_fn
+
+Intended as a generic replacement for negation function wrappers `std::not1` and `std::not2`, this function template creates a forwarding call wrapper that returns the logical negation of the result of its contained callable object. It preserves the const qualification and value category behavior of the wrapped function object. This template function is new in C++17, and replaces the deprecated `std::not1`, `std::not2`, `std::unary_negate` and `std::binary_negate`.
+
+```cpp
+template <class Callable>
+unspecified not_fn(Callable&& func);
+```
+
+### Parameters
+
+*func*<br/>
+A callable object used to construct the forwarding call wrapper.
+
+### Remarks
+
+The template function returns a call wrapper equivalent to `return call_wrapper(std::forward<Callable>(func))` based on this exposition-only class:
+
+```cpp
+class call_wrapper
+{
+   using FD = decay_t<Callable>;
+   explicit call_wrapper(Callable&& func);
+
+public:
+   call_wrapper(call_wrapper&&) = default;
+   call_wrapper(call_wrapper const&) = default;
+
+   template<class... Args>
+     auto operator()(Args&&...) & -> decltype(!declval<result_of_t<FD&(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) const& -> decltype(!declval<result_of_t<FD const&(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) && -> decltype(!declval<result_of_t<FD(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) const&& -> decltype(!declval<result_of_t<FD const(Args...)>>());
+
+private:
+  FD fd;
+};
+```
+
+The explicit constructor on the callable object *func* requires type `std::decay_t<Callable>` to satisfy the requirements of `MoveConstructible`, and `is_constructible_v<FD, Callable>` must be true. It initializes the wrapped callable object `fd` from `std::forward<Callable>(func)`, and throws any exception thrown by construction of `fd`.
+
+The wrapper exposes call operators distinguished by lvalue or rvalue reference category and const qualification as shown here,
+
+```cpp
+template<class... Args> auto operator()(Args&&... args) & -> decltype(!declval<result_of_t<FD&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const& -> decltype(!declval<result_of_t<FD const&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) && -> decltype(!declval<result_of_t<FD(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const&& -> decltype(!declval<result_of_t<FD const(Args...)>>());
+```
+
+The first two are equivalent to `return !INVOKE(fd, std::forward<Args>(args)...)`, and the second two are equivalent to `return !INVOKE(std::move(fd), std::forward<Args>(args)...)`.
+
+### Example
+
+```cpp
+// functional_not_fn_.cpp
+// compile with: /EHsc /std:c++17
+#include <vector>
+#include <algorithm>
+#include <functional>
+#include <cstdlib>
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+    vector <int> v1;
+
+    int i;
+    v1.push_back( 6262 );
+    v1.push_back( 6262 );
+    for ( i = 0 ; i < 5 ; i++ )
+    {
+        v1.push_back(rand());
+    }
+
+    cout << "Original vector v1 = ( " ;
+    for (const auto& item : v1)
+        cout << item << " ";
+    cout << ")" << endl;
+
+    // To sort in ascending order,
+    // use default binary predicate less<>()
+    sort(v1.begin(), v1.end());
+    cout << "Sorted vector v1 = ( " ;
+    for (const auto& item : v1)
+        cout << item << " ";
+    cout << ")" << endl;
+
+    // To sort in descending order,
+    // use the helper function not_fn
+    sort(v1.begin(), v1.end(), not_fn(less<>()));
+    cout << "Resorted vector v1 = ( " ;
+    for (const auto& item : v1)
+        cout << item << " ";
+    cout << ")" << endl;
 }
 ```
 
