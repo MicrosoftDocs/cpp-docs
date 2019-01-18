@@ -10,7 +10,7 @@ ms.author: mblome
 
 # Tutorial: Create C++ cross-platform projects in Visual Studio 
 
-This tutorial shows how to use Visual Studio for C++ cross platform development based on CMake without having to create or generate Visual Studio projects. When you open a folder that contains a CMakeLists.txt file, Visual Studio configures IntelliSense and build settings automatically. You can quickly be editing, building, and debugging your code locally on Windows, and then switch your configuration to do the same on Linux, all from within Visual Studio.
+Visual Studio C and C++ development isn't just for Windows anymore. This tutorial shows how to use Visual Studio for C++ cross platform development based on CMake without having to create or generate Visual Studio projects. When you open a folder that contains a CMakeLists.txt file, Visual Studio configures IntelliSense and build settings automatically. You can quickly be editing, building, and debugging your code locally on Windows, and then switch your configuration to do the same on Linux, all from within Visual Studio.
 
 In this tutorial, you learn how to:
 
@@ -117,7 +117,7 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 
 6. Move your mouse into the application window, then click a button to trigger the breakpoint. This brings Visual Studio back to the foreground with the editor showing the line where execution is paused. You will be able to inspect the application variables, objects, threads, and memory. You can step through your code interactively. You can click **Continue** to let the application resume and exit it normally or cease execution within Visual Studio using the stop button.
 
-## Add a Linux configuration and connect to the remote machine
+## Add an explicit Windows x64-Debug configuration
 
 So far, you have been using the default **x64-Debug** configuration for Windows. Configurations are how Visual Studio understands what platform target it's going to use for CMake. The default configuration isn't represented on disk. When you explicitly add a configuration, Visual Studio creates a file called CMakeSettings.json that is populated with settings for all the configurations you specify. 
 
@@ -131,8 +131,10 @@ The **Add Configuration to CMakeSettings** dialog will appear.
 
 This dialog shows all the configurations that are included with Visual Studio, as well as any custom configurations that you might create. If you want to continue to use the default **x64-Debug** configuration, that should be the first one you add. By adding that configuration, you will be able to switch back and forth between Windows and Linux configurations. Select **x64-Debug** and click **Select**. This creates the CMakeSettings.json file with a configuration for **x64-Debug** and switches Visual Studio to use that configuration instead of the default. You will see the configuration drop-down no longer says "(default)" as part of the name. You can use whatever names you like for your configurations by changing the name parameter directly in CMakeSettings.json.
 
-2. Now add a Linux configuration. Right-click the CMakeSettings.json file in the **Solution Explorer** view and select **Add Configuration**. You see the same Add Configuration to CMakeSettings dialog as before. Select **Linux-Debug** this time, then save the CMakeSettings.json file. 
-3. Now select **Linux-Debug** in the configuration drop-down.
+##  Add a Linux configuration and connect to the remote machine
+
+1. Now add a Linux configuration. Right-click the CMakeSettings.json file in the **Solution Explorer** view and select **Add Configuration**. You see the same Add Configuration to CMakeSettings dialog as before. Select **Linux-Debug** this time, then save the CMakeSettings.json file. 
+2. Now select **Linux-Debug** in the configuration drop-down.
 
 ![Launch configuration drop-down with X64-Debug and Linux-Debug options](media/cmake-bullet3-linux-configuration-item.png)
 
@@ -140,9 +142,9 @@ Since this is the first time you are connecting to a Linux system, the **Connect
 
 ![Visual Studio Connect to Remote System dialog](media/cmake-bullet3-connection-manager.png)
  
-4. Provide the connection information to your Linux machine and click **Connect**. Visual Studio adds that machine as to CMakeSettings.json as your default for **Linux-Debug**. It will also pull down the headers from your remote machine so that you get IntelliSense specific to that machine when you use it. Now Visual Studio will send your files to the remote machine, then generate the CMake cache there, and when that is done Visual Studio will be configured for using the same source base with that remote Linux machine. These steps may take some time depending on the speed of your network and power of your remote machine. You will know this is complete when the message "Target info extraction done" appears in the CMake output window.
+3. Provide the connection information to your Linux machine and click **Connect**. Visual Studio adds that machine as to CMakeSettings.json as your default for **Linux-Debug**. It will also pull down the headers from your remote machine so that you get IntelliSense specific to that machine when you use it. Now Visual Studio will send your files to the remote machine, then generate the CMake cache there, and when that is done Visual Studio will be configured for using the same source base with that remote Linux machine. These steps may take some time depending on the speed of your network and power of your remote machine. You will know this is complete when the message "Target info extraction done" appears in the CMake output window.
 
-## Set breakpoint, build and run on Linux
+## Set a breakpoint, build and run on Linux
 
 Because this is a desktop application, you need to provide some additional configuration information to the debug configuration. 
 
@@ -171,7 +173,7 @@ In the configuration for AppBasicExampleGui there is a parameter array "pipeArgs
 
 ## What you learned 
 
-So now you have seen the same code base, cloned directly from GitHub, build, run, and debugged on Windows with no modifications. Then with some minor configuration settings build, run and debugged on a remote Linux machine as well. If you are doing cross platform development, we hope you find a lot to love here. Visual Studio C and C++ development isn't just for Windows anymore.
+In this tutorial, you have seen a code base cloned directly from GitHub, and built, run, and debugged on Windows with no modifications. This came code base, with minor configuration changes, was built, run and debugged on a remote Linux machine. 
 
 ## Next steps
 
