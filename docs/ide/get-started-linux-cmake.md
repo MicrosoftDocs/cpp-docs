@@ -66,25 +66,31 @@ As soon as you open the folder, your folder structure will be visible in the **S
 
 This view shows you exactly what is on disk, not a logical or filtered view. By default, it doesn't show hidden files. 
 
-1. To see all the files in the folder, select the **Show all files** button.
+2. Press the **Show all files** button to see all the files in the folder.
 
-![Visual Studio Solution Explorer Show All FIles button](media/cmake-bullet3-show-all-files.png)
+![Visual Studio Solution Explorer Show All Files button](media/cmake-bullet3-show-all-files.png)
 
 ## Switch to targets view
 
-When you open a folder that uses CMake, Visual Studio automatically generates the CMake cache. This operation might take a few moments, depending on the size of your project. The status is displayed in the output window. When the operation is complete, it says "Target info extraction done".
+When you open a folder that uses CMake, Visual Studio automatically generates the CMake cache. This operation might take a few moments, depending on the size of your project. 
+
+1. Monitor the status of the cache generation process in the output window. When the operation is complete, it says "Target info extraction done".
 
 ![Visual Studio Output window showing output from CMake](media/cmake-bullet3-output-window.png)
 
-After this operation completes, IntelliSense is configured, the project can build, and you can debug the application. Visual Studio also now understands the build targets that the CMake project produces and can now provide a logical view of the solution called CMake Targets View. Use the **Solutions and Folders** button in the **Solution Explorer** to switch to this view.
+After this operation completes, IntelliSense is configured, the project can build, and you can debug the application. Visual Studio can now provide a logical view of the solution based on the targets specified in the CMakeLists files. 
 
-![Solutions and Folders button in the Solution Explorer to show CMake targets vie](media/cmake-bullet3-show-targets.png)
+2. Use the **Solutions and Folders** button in the **Solution Explorer** to switch to CMake Targets View.
 
-Here is what that view looks like for the Bullet SDK.
+![Solutions and Folders button in the Solution Explorer to show CMake targets view](media/cmake-bullet3-show-targets.png)
+
+Here is what that view looks like for the Bullet SDK:
 
 ![Solution Explorer CMake targets view](media/cmake-bullet3-targets-view.png)
 
-Targets view provides a more intuitive view of what is in this source base. You can see some targets are libraries and others are executables. You can expand these nodes and see the source that comprises them independent of how it's represented on disk.
+Targets view provides a more intuitive view of what is in this source base. You can see some targets are libraries and others are executables. 
+
+3. Expand a node in CMake Targets View to see its source code files, wherever those files might be located on disk.
 
 ## Set a breakpoint, build, and run
 
@@ -93,15 +99,15 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 1. In **Solution Explorer**, select AppBasicExampleGui and expand it. 
 2. Open the file `BasicExample.cpp`. 
 3. Set a breakpoint that will be hit when you click in the running application. The click event is handled in a method within a helper class. To quickly get there 
-    a. select CommonRigidBodyBase that the struct BasicExample is derived from around line 30.
-    b.  right-click and choose Go to Definition. Now you are in the header CommonRigidBodyBase.h. 
-    c. In the browser view above, your source you should see that you are in the CommonRigidBodyBase. To the right, you can select members to examine. Click the drop-down and select mouseButtonCallback to go to the definition of that function in the header.
+    a. select `CommonRigidBodyBase` that the struct `BasicExample` is derived from around line 30.
+    b.  right-click and choose **Go to Definition**. Now you are in the header CommonRigidBodyBase.h. 
+    c. In the browser view above, your source you should see that you are in the `CommonRigidBodyBase`. To the right, you can select members to examine. Click the drop-down and select `mouseButtonCallback` to go to the definition of that function in the header.
 
 ![Visual Studio member list toolbar](media/cmake-bullet3-member-list-toolbar.png)
 
 3. Place a breakpoint on the first line within this function. This will be hit when you click a mouse button within the window of the application when launched under the Visual Studio debugger.
 
-4. To launch the application, select the launch drop-down with the play icon that says "Select Startup Item" in the toolbar. In the drop-down select AppBasicExampleGui.exe. The executable name now displays on the Launch button:
+4. To launch the application, select the launch drop-down with the play icon that says "Select Startup Item" in the toolbar. In the drop-down select AppBasicExampleGui.exe. The executable name now displays on the launch button:
 
 ![Visual Studio toolbar launch drop-down for Select Startup Item](media/cmake-bullet3-launch-button.png)
 
@@ -109,24 +115,24 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 
 ![Visual Studio debugging a Windows application](media/cmake-bullet3-launched.png)
 
-6. Move your mouse into the application window, then click a button to trigger the breakpoint. This brings Visual Studio back to the foreground with the editor showing the line where execution is paused. You will be able to inspect the application variables, objects, threads, memory, and step through your code interactively using Visual Studio. You can click continue to let the application resume and exit it normally or cease execution within Visual Studio using the stop button.
-
-What you have seen so far is by simply cloning a C++ repo from GitHub you can open the folder with Visual Studio and get an experience that provides IntelliSense, a file view, a logical view based on the build targets, source navigation, build, and debugging with no special configuration or Visual Studio specific project files. If you were to make changes to the source you would get a diff view from the upstream project, make commits, and push them back without leaving Visual Studio. There's more though. Let's use this project with Linux.
-
+6. Move your mouse into the application window, then click a button to trigger the breakpoint. This brings Visual Studio back to the foreground with the editor showing the line where execution is paused. You will be able to inspect the application variables, objects, threads, and memory. You can step through your code interactively. You can click **Continue** to let the application resume and exit it normally or cease execution within Visual Studio using the stop button.
 
 ## Add a Linux configuration and connect to the remote machine
 
-So far, you have been using the default x64-Debug configuration for our CMake project. Configurations are how Visual Studio understands what platform target it's going to use for CMake. The default configuration isn't represented on disk. When you explicitly add a configuration, a file called CMakeSettings.json is created that has parameters Visual Studio uses to control how CMake is run. To add a new configuration, select the Configuration drop-down in the toolbar and select **Manage Configurations…**
+So far, you have been using the default **x64-Debug** configuration for Windows. Configurations are how Visual Studio understands what platform target it's going to use for CMake. The default configuration isn't represented on disk. When you explicitly add a configuration, Visual Studio creates a file called CMakeSettings.json that is populated with settings for all the configurations you specify. 
+
+1. Add a new configuration by clicking the the Configuration drop-down in the toolbar and selecting **Manage Configurations…**
 
 ![Manage Configuration drop-down](media/cmake-bullet3-manage-configurations.png)
 
-The Add Configuration to CMakeSettings dialog will appear.
+The **Add Configuration to CMakeSettings** dialog will appear.
 
 ![Add Configuration to CMakeSettings dialog](media/cmake-bullet3-add-configuration-x64-debug.png)
 
-Here you see Visual Studio has preconfigured options for many of the platforms Visual Studio can be configured to use with CMake. If you want to continue to use the default **x64-Debug** configuration that should be the first one you add. You want that for this tutorial so can switch back and forth between Windows and Linux configurations. Select **x64-Debug** and click **Select**. This creates the CMakeSettings.json file with a configuration for **x64-Debug** and switches Visual Studio to use that configuration instead of the default. You will see the configuration drop-down no longer says "(default)" as part of the name. You can use whatever names you like for your configurations by changing the name parameter in the CMakeSettings.json.
+This dialog shows all the configurations that are included with Visual Studio, as well as any custom configurations that you might create. If you want to continue to use the default **x64-Debug** configuration, that should be the first one you add. By adding that configuration, you will be able to switch back and forth between Windows and Linux configurations. Select **x64-Debug** and click **Select**. This creates the CMakeSettings.json file with a configuration for **x64-Debug** and switches Visual Studio to use that configuration instead of the default. You will see the configuration drop-down no longer says "(default)" as part of the name. You can use whatever names you like for your configurations by changing the name parameter directly in CMakeSettings.json.
 
-After you specify a configuration, Visual Studio adds a CMakeSettings.json file to the project where you can adjust values. To add a Linux configuration, right-click the CMakeSettings.json file in the **Solution Explorer** view and select **Add Configuration**. You see the same Add Configuration to CMakeSettings dialog as before. Select **Linux-Debug** this time, then save the CMakeSettings.json file. Now select **Linux-Debug** in the configuration drop-down.
+2. Now add a Linux configuration. Right-click the CMakeSettings.json file in the **Solution Explorer** view and select **Add Configuration**. You see the same Add Configuration to CMakeSettings dialog as before. Select **Linux-Debug** this time, then save the CMakeSettings.json file. 
+3. Now select **Linux-Debug** in the configuration drop-down.
 
 ![Launch configuration drop-down with X64-Debug and Linux-Debug options](media/cmake-bullet3-linux-configuration-item.png)
 
@@ -134,11 +140,14 @@ Since this is the first time you are connecting to a Linux system, the **Connect
 
 ![Visual Studio Connect to Remote System dialog](media/cmake-bullet3-connection-manager.png)
  
-Provide the connection information to your Linux machine and click **Connect**. Visual Studio adds that machine as to CMakeSettings.json as your default for **Linux-Debug**. It will also pull down the headers from your remote machine so that you get IntelliSense specific to that machine when you use it. Now Visual Studio will send your files to the remote machine, then generate the CMake cache there, and when that is done Visual Studio will be configured for using the same source base with that remote Linux machine. These steps may take some time depending on the speed of your network and power of your remote machine. You will know this is complete when the message "Target info extraction done" appears in the CMake output window.
+4. Provide the connection information to your Linux machine and click **Connect**. Visual Studio adds that machine as to CMakeSettings.json as your default for **Linux-Debug**. It will also pull down the headers from your remote machine so that you get IntelliSense specific to that machine when you use it. Now Visual Studio will send your files to the remote machine, then generate the CMake cache there, and when that is done Visual Studio will be configured for using the same source base with that remote Linux machine. These steps may take some time depending on the speed of your network and power of your remote machine. You will know this is complete when the message "Target info extraction done" appears in the CMake output window.
 
 ## Set breakpoint, build and run on Linux
 
-Because this is a desktop application, you need to provide some additional configuration information to the debug configuration. In the CMake Targets view, right-click AppBasicExampleGui and choose Debug and Launch settings to open `launch.vs.json` that is in the hidden `.vs` subfolder. This file is local to your development environment. You can move it into the root of your project if you wish to check it in and save it with your team. In this file a configuration has been added for AppBasicExampleGui. These default settings work in most cases, as this is a desktop application you need to provide some additional information to launch the program in a way you can see it on our Linux machine. You need to know the value of the environment variable `DISPLAY` on your Linux machine, run this command to get it.
+Because this is a desktop application, you need to provide some additional configuration information to the debug configuration. 
+
+1. In the CMake Targets view, right-click AppBasicExampleGui and choose **Debug and Launch Settings** to open the launch.vs.json file that is in the hidden **.vs** subfolder. This file is local to your development environment. You can move it into the root of your project if you wish to check it in and save it with your team. In this file a configuration has been added for AppBasicExampleGui. These default settings work in most cases, but because this is a desktop application you need to provide some additional information to launch the program in a way you can see it on our Linux machine. 
+2. You need to know the value of the environment variable `DISPLAY` on your Linux machine, run this command to get it.
 
 ```cmd
 echo $DISPLAY
@@ -148,18 +157,15 @@ In the configuration for AppBasicExampleGui there is a parameter array "pipeArgs
 ```cmd
 "export DISPLAY=:1;${debuggerCommand}",
 ```
-Now in order to launch and debug our application, choose the **Select Startup Item** drop-down in the toolbar and choose AppBasicExampleGui. Now press that button or hit **F5**. This will build the application and its dependencies on the remote Linux machine then launch it with the Visual Studio debugger attached. On your remote Linux machine, you should see an application window appear with the same falling bunch of cubes arranged as a single block.
+3. Now in order to launch and debug our application, choose the **Select Startup Item** drop-down in the toolbar and choose AppBasicExampleGui. Now press that button or hit **F5**. This will build the application and its dependencies on the remote Linux machine then launch it with the Visual Studio debugger attached. On your remote Linux machine, you should see an application window appear.
 
-<!--![Linux application launched from Visual Studio](media/browser.png)-->
-
-Move your mouse into the application window, click a button, and the breakpoint will be hit. Program execution pauses, Visual Studio comes back to the foreground, and you will be at your breakpoint. You should also see a Linux Console Window appear in Visual Studio. This window provides output from the remote Linux machine, and it can also accept input for `stdin`. Like any Visual Studio window, it can be docked where you prefer to see it and its position will be persisted in future sessions.
+4. Move your mouse into the application window, click a button, and the breakpoint will be hit. Program execution pauses, Visual Studio comes back to the foreground, and you will be at your breakpoint. You should also see a Linux Console Window appear in Visual Studio. This window provides output from the remote Linux machine, and it can also accept input for `stdin`. Like any Visual Studio window, it can be docked where you prefer to see it and its position will be persisted in future sessions.
 
 ![Visual Studio Linux Console Window](media/cmake-bullet3-linux-console.png)
 
-You can inspect the application variables, objects, threads, memory, and step through your code interactively using Visual Studio. But this time on a remote Linux machine instead of your local Windows environment. You can click continue to let the application resume and exit normally, or you can press the stop button, just as with local execution.
+5. You can inspect the application variables, objects, threads, memory, and step through your code interactively using Visual Studio. But this time you are doing all this on a remote Linux machine instead of your local Windows environment. You can click **Continue** to let the application resume and exit normally, or you can press the stop button, just as with local execution.
 
-Look at the Call Stack window and you will see this time the Calls to x11OpenGLWindow since Visual Studio has launched the application on Linux.
-
+6. Look at the Call Stack window and view the Calls to `x11OpenGLWindow` since Visual Studio launched the application on Linux.
 
 ![Call Stack window showing Linux call stack](media/cmake-bullet3-linux-callstack.png)
 
@@ -169,9 +175,10 @@ So now you have seen the same code base, cloned directly from GitHub, build, run
 
 ## Next steps
 
-Advance to the next article to learn how to create...
+Learn more about the CMakeSettings and launch.vs.json file schemas:
 > [!div class="nextstepaction"]
-> <!--[Next steps button](contribute-get-started-mvc.md)-->
+> [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
+> [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
 
 <!--- Required:
 Tutorials should always have a Next steps H2 that points to the next
