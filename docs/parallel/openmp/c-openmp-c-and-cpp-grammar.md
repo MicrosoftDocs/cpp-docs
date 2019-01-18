@@ -1,12 +1,12 @@
 ---
-title: "C. OpenMP C and C++ Grammar"
-ms.date: "11/04/2016"
+title: "C. OpenMP C and C++ grammar"
+ms.date: "01/16/2019"
 ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
 ---
 # C. OpenMP C and C++ grammar
 
-[C.1 Notation](#c-1-notation)<br/>
-[C.2 Rules](#c-2-rules)
+[C.1 Notation](#c1-notation)<br/>
+[C.2 Rules](#c2-rules)
 
 ## C.1 Notation
 
@@ -16,7 +16,7 @@ The syntactic expression term<sub>opt</sub> indicates that the term is optional 
 
 The syntactic expression *term*<sub>optseq</sub> is equivalent to *term-seq*<sub>opt</sub> with the following additional rules:
 
-*term-seq* :  
+*term-seq*:  
 &nbsp;&nbsp;&nbsp;&nbsp;*term*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*term-seq* *term*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*term-seq*   `,` *term*
@@ -172,7 +172,7 @@ The notation is described in section 6.1 of the C standard. This grammar appendi
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp critical` *region-phrase*<sub>opt</sub> *new-line*
 
 *region-phrase*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*( identifier )*
+&nbsp;&nbsp;&nbsp;&nbsp;*(identifier)*
 
 *barrier-directive*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp barrier` *new-line*
@@ -187,7 +187,7 @@ The notation is described in section 6.1 of the C standard. This grammar appendi
 &nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp flush` *flush-vars*<sub>opt</sub> *new-line*
 
 *flush-vars*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*( variable-list )*
+&nbsp;&nbsp;&nbsp;&nbsp;*(variable-list)*
 
 *ordered-construct*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*ordered-directive structured-block*
