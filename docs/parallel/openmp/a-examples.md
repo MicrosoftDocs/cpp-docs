@@ -112,7 +112,7 @@ The following example demonstrates the [reduction](2-7-2-6-reduction.md) clause:
 
 ## A.8 Specifying parallel sections
 
-In the following example (for [Section 2.4.2](2-4-2-sections-construct.md)), functions *xaxis*, *yaxis*, and *zaxis* can be executed concurrently. The first `section` directive is optional.  All `section` directives need to appear in the lexical extent of the `parallel sections` construct.
+In the following example (for [section 2.4.2](2-4-2-sections-construct.md)), functions *xaxis*, *yaxis*, and *zaxis* can be executed concurrently. The first `section` directive is optional.  All `section` directives need to appear in the lexical extent of the `parallel sections` construct.
 
 ```cpp
 #pragma omp parallel sections
@@ -658,7 +658,7 @@ For more information on the `default` clause, see [section 2.7.2.5](2-7-2-5-defa
 
 It's possible to have many ordered sections with a `for` specified with the `ordered` clause. The first example is noncompliant because the API specifies the following rule:
 
-"An iteration of a loop with a `for` construct must not execute the same `ordered` directive more than once, and it must not execute more than one `ordered` directive." (See [Section 2.6.6](2-6-6-ordered-construct.md) on page 22)
+"An iteration of a loop with a `for` construct must not execute the same `ordered` directive more than once, and it must not execute more than one `ordered` directive." (See [section 2.6.6](2-6-6-ordered-construct.md).)
 
 In this noncompliant example, all iterations execute two ordered sections:
 
