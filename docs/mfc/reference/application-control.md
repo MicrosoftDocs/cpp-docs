@@ -204,11 +204,6 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
 
 **Header:** afxwin.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxOleUnlockControl](#afxoleunlockcontrol)
-
 ##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass
 
 This function allows you to register your server in the OLE system registry.
@@ -325,10 +320,6 @@ You must have the following statement in your client's application resource scri
 
 **Header**: afxole.h
 
-### See Also
-
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
-
 ## <a name="afxoleunlockcontrol"></a> AfxOleUnlockControl
 
 Unlocks the class factory of the specified control.
@@ -368,8 +359,9 @@ AfxOleUnlockControl(_T("MSCAL.Calendar"));
 
 **Header:** afxwin.h
 
-### See Also
+## See Also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxOleLockControl](#afxolelockcontrol)
+[AfxOleLockControl](#afxolelockcontrol)<br/>
+[AfxOleUnlockControl](#afxoleunlockcontrol)
 

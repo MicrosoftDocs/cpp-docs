@@ -78,10 +78,6 @@ For more information on module states and MFC, see "Managing the State Data of M
 
 **Header:** afxstat_.h
 
-### See Also
-
-[AfxGetStaticModuleState](#afxgetstaticmodulestate)
-
 ## <a name="afxoleinitmodule"><a/> AfxOleInitModule
 
 For OLE support from a regular MFC DLL that is dynamically linked to MFC, call this function in your regular MFC DLL's `CWinApp::InitInstance` function to initialize the MFC OLE DLL.
@@ -102,11 +98,6 @@ If you are building an OLE control and are using `COleControlModule`, you should
 
 **Header**: \<afxdll_.h>
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)
-
 ## <a name="afxnetinitmodule"></a>  AfxNetInitModule
 
 For MFC Sockets support from a regular MFC DLL that is dynamically linked to MFC, add a call to this function in your regular MFC DLL's `CWinApp::InitInstance` function to initialize the MFC Sockets DLL.
@@ -124,11 +115,6 @@ The MFC Sockets DLL is an MFC extension DLL; in order for an MFC extension DLL t
 ### Requirements
 
 **Header:** \<afxdll_.h>
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)
 
 ## <a name="afxgetambientactctx"></a> AfxGetAmbientActCtx
 
@@ -155,13 +141,6 @@ The context of a module is determined from its manifest, usually embedded in mod
 ### Requirements
 
 **Header:** afxcomctl32.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AFX_MANAGE_STATE](#afx_manage_state)<br/>
-[Managing the State Data of MFC Modules](../managing-the-state-data-of-mfc-modules.md)<br/>
-[AfxSetAmbientActCtx](#setambientactctx)
 
 ## <a name="afxgetstaticmodulestate"></a> AfxGetStaticModuleState
 
@@ -252,11 +231,6 @@ You can call `AfxTermExtensionModule` to clean up the MFC extension DLL when eac
 
 **Header:** afxdll_.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxTermExtensionModule](#afxtermextensionmodule)
-
 ## <a name="afxsetambientactctx"></a>  AfxSetAmbientActCtx
 
 Use this function to set the per-module state flag, which affects the WinSxS behavior of MFC.
@@ -291,13 +265,6 @@ BOOL CMFCListViewApp::InitInstance()
 ### Requirements
 
 **Header:** afxcomctl32.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxGetAmbientActCtx](#afxgetambientactctx)<br/>
-[AFX_MANAGE_STATE](#afx_manage_state)<br/>
-[Managing the State Data of MFC Modules](../managing-the-state-data-of-mfc-modules.md)
 
 ## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
 
@@ -359,7 +326,14 @@ MFC extension DLLs need to call [AfxInitExtensionModule](#afxinitextensionmodule
 
 **Header:** afxdll_.h
 
-### See Also
+## See Also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxInitExtensionModule](#afxinitextensionmodule)
+[AfxInitExtensionModule](#afxinitextensionmodule)<br/>
+[AfxGetStaticModuleState](#afxgetstaticmodulestate)<br/>
+[AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
+[AFX_MANAGE_STATE](#afx_manage_state)<br/>
+[Managing the State Data of MFC Modules](../managing-the-state-data-of-mfc-modules.md)<br/>
+[AfxSetAmbientActCtx](#setambientactctx)<br/>
+[AfxTermExtensionModule](#afxtermextensionmodule)<br/>
+[AfxGetAmbientActCtx](#afxgetambientactctx)

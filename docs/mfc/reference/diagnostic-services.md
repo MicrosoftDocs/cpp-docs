@@ -298,12 +298,6 @@ If any of these tests fails, an alert message is displayed in the same manner as
 
 **Header:** afx.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[VERIFY](#verify)<br/>
-[ATLENSURE](#altensure)
-
 ## <a name="this_file"></a> THIS_FILE
 
 Expands to the name of the file that is being compiled.
@@ -333,12 +327,6 @@ static char THIS_FILE[] = __FILE__;
 ### Requirements
 
 **Header:** afx.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[ASSERT](#assert)<br/>
-[VERIFY](#verify)
 
 ##  <a name="trace"></a>  TRACE
 
@@ -442,10 +430,6 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 ### Requirements
 
 **Header:** afx.h
-
-### See Also
-
-[CObject::Dump](cobject-class.md#dump)
 
 ##  <a name="afxmemdf"></a>  afxMemDF
 
@@ -559,10 +543,6 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 ### Requirements
 
 **Header:** afx.h
-
-### See Also
-
-[CObject::Dump](cobject-class.md#dump)
 
 ##  <a name="afxdumpstack"></a>  AfxDumpStack
 
@@ -920,4 +900,8 @@ Stack, global, or embedded objects are not enumerated. The pointer passed to `Af
 
 ## See Also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[VERIFY](#verify)<br/>
+[ATLENSURE](#altensure)<br/>
+[ASSERT](#assert)<br/>
+[CObject::Dump](cobject-class.md#dump)

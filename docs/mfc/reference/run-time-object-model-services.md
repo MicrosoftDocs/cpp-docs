@@ -71,11 +71,6 @@ Use this macro to determine whether the Common Controls library the function spe
 
 afxcomctl32.h, afxcomctl32.inl
 
-### See Also
-
-[Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)<br/>
-[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)
-
 ## <a name="afx_comctl32_if_exists2"></a>  AFX_COMCTL32_IF_EXISTS2
 
 Determines whether the Common Controls library implements the specified API (this is the Unicode version of [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)).
@@ -98,11 +93,6 @@ Use this macro to determine whether the Common Controls library the function spe
 ### Requirements
 
 afxcomctl32.h, afxcomctl32.inl
-
-### See Also
-
-[Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)<br/>
-[AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)
 
 ##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
 
@@ -192,10 +182,6 @@ The name of the control class.
 
 **Header:** afxctl.h
 
-### See Also
-
-[IMPLEMENT_OLECTLTYPE](#implement_olectltype)
-
 ## DECLARE_PROPPAGEIDS
 
 Declares that the OLE control provides a list of property pages to display its properties.
@@ -220,11 +206,6 @@ For more information on property pages, see the article [ActiveX Controls: Prope
 ### Requirements
 
 **Header:** afxctl.h
-
-### See Also
-
-[BEGIN_PROPPAGEIDS](#begin_proppageids)<br/>
-[END_PROPPAGEIDS](#end_proppageids)
 
 ##  <a name="declare_serial"></a>  DECLARE_SERIAL
 
@@ -375,12 +356,6 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 
 **Header:** afxdisp.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[DECLARE_OLECREATE](#declare_olecreate)<br/>
-[CLSID Key](/windows/desktop/com/clsid-key-hklm)
-
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
 
 Implements the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
@@ -414,11 +389,6 @@ The `GetUserTypeNameID` member function returns the resource string that identif
 ### Requirements
 
 **Header:** afxctl.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[DECLARE_OLECTLTYPE](#declare_olectltype)
 
 ##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL
 
@@ -543,5 +513,12 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 
 ## See Also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)<br/>
+[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)<br/>
+[IMPLEMENT_OLECTLTYPE](#implement_olectltype)<br/>
+[BEGIN_PROPPAGEIDS](#begin_proppageids)<br/>
+[END_PROPPAGEIDS](#end_proppageids)<br/>
+[DECLARE_OLECREATE](#declare_olecreate)<br/>
+[CLSID Key](/windows/desktop/com/clsid-key-hklm)
 

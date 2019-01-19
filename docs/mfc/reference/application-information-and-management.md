@@ -130,10 +130,6 @@ CContextMenuManager* afxContextMenuManager;
 
 **Header:** afxcontextmenumanager.h
 
-### See Also
-
-[CContextMenuManager Class](ccontextmenumanager-class.md)
-
 ##  <a name="afxendthread"></a>  AfxEndThread
 
 Call this function to terminate the currently executing thread.
@@ -201,10 +197,6 @@ The modules are searched in this order:
 ### Requirements
 
 **Header:** afxwin.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)
 
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary
 
@@ -482,11 +474,6 @@ This method is useful when you have to validate that a function or method parame
 
 **Header:** afxpriv.h
 
-### See Also
-
-[CWnd Class](cwnd-class.md)<br/>
-[CFrameWndEx Class](cframewndex-class.md)
-
 ## <a name="afxismfctoolbar"></a> AfxIsMFCToolBar
 
 Determines whether the given window is a toolbar object.
@@ -514,11 +501,6 @@ This method returns `TRUE` if *pWnd* derives from `CMFCToolBar`. This method is 
 
 **Header:** afxpriv.h
 
-### See Also
-
-[CWnd Class](cwnd-class.md)<br/>
-[CMFCToolBar Class](cmfctoolbar-class.md)
-
 ## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
 
 Pointer to the global [keyboard manager](ckeyboardmanager-class.md).
@@ -532,11 +514,6 @@ CKeyboardManager* afxKeyboardManager;
 ### Requirements
 
 **Header:** afxkeyboardmanager.h
-
-### See Also
-
-[Macros, Global Functions, and Global Variables](mfc-macros-and-globals.md)<br/>
-[CKeyboardManager Class](ckeyboardmanager-class.md)
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
@@ -605,10 +582,6 @@ CMenuTearOffManager* g_pTearOffMenuManager;
 
 **Header:** afxmenutearoffmanager.h
 
-### See Also
-
-[CMenuTearOffManager Class](cmenutearoffmanager-class.md)
-
 ## <a name="afxmousemanager"></a>  AfxMouseManager
 
 Pointer to the global [mouse manager](cmousemanager-class.md).
@@ -622,10 +595,6 @@ CMouseManager* afxMouseManager;
 ### Requirements
 
 **Header:** afxmousemanager.h
-
-### See Also
-
-[CMouseManager Class](cmousemanager-class.md)
 
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass
 
@@ -779,10 +748,6 @@ CShellManager* afxShellManager;
 
 **Header:** afxshellmanager.h
 
-### See Also
-
-[CShellManager Class](cshellmanager-class.md)
-
 ##  <a name="afxsocketinit"></a>  AfxSocketInit
 
 Call this function in your `CWinApp::InitInstance` override to initialize Windows Sockets.
@@ -821,10 +786,6 @@ CUserToolsManager* afxUserToolsManager;
 ### Requirements
 
 **Header:** afxusertoolsmanager.h
-
-### See Also
-
-[CUserToolsManager Class](cusertoolsmanager-class.md)
 
 ##  <a name="afxwininit"></a>  AfxWinInit
 
@@ -872,4 +833,13 @@ If you call `AfxWinInit` yourself, you should declare an instance of a `CWinApp`
 ## See Also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CWinApp Class](../../mfc/reference/cwinapp-class.md)
+[CWinApp Class](../../mfc/reference/cwinapp-class.md)<br/>
+[CContextMenuManager Class](ccontextmenumanager-class.md)<br/>
+[CWnd Class](cwnd-class.md)<br/>
+[CFrameWndEx Class](cframewndex-class.md)<br/>
+[CMFCToolBar Class](cmfctoolbar-class.md)<br/>
+[CKeyboardManager Class](ckeyboardmanager-class.md)<br/>
+[CMenuTearOffManager Class](cmenutearoffmanager-class.md)<br/>
+[CMouseManager Class](cmousemanager-class.md)<br/>
+[CShellManager Class](cshellmanager-class.md)<br/>
+[CUserToolsManager Class](cusertoolsmanager-class.md)

@@ -205,10 +205,6 @@ It parses a URL string and returns the type of service and its components, as we
 
   **Header** afxinet.h
 
-### See Also
-
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
-
 ## <a name="afxgetinternethandletype"></a>  AfxGetInternetHandleType
 
 Use this global function to determine the type of an Internet handle.
@@ -265,11 +261,6 @@ The following list includes possible Internet types returned by `AfxGetInternetH
 
 **Header:** afxinet.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
-
 ## <a name="afxthrowinternetexception"></a>  AfxThrowInternetException
 
 Throws an Internet exception.
@@ -299,9 +290,10 @@ You are responsible for determining the cause based on the operating-system erro
 
 **Header:** afxinet.h
 
-### See Also
+## See Also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [CInternetException Class](cinternetexception-class.md)<br/>
-[THROW](#throw)
+[THROW](#throw)<br/>
+[AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
 
