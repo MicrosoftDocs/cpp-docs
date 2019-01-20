@@ -32,9 +32,9 @@ Use the **/DEBUGTYPE** option to specify inclusion of relocation table data or .
 
 To debug code in user mode, which is typical for applications, the **/DEBUGTYPE** option isn't needed. By default, the compiler switches that specify debugging output ([/Z7, /Zi, /ZI](../../build/reference/z7-zi-zi-debug-information-format.md)) emit all the information needed by the Visual Studio debugger. Use **/DEBUGTYPE:PDATA** or **/DEBUGTYPE:CV,PDATA,FIXUP** to debug code that combines user-mode and kernel-mode components, such as a configuration app for a device driver. For more information about kernel mode debuggers, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)
 
-## See Also
+## See also
 
-[/DEBUG (Generate Debug Info)](../../build/reference/debug-generate-debug-info.md)<br/>
-[/DRIVER (Windows NT Kernel Mode Driver)](../../build/reference/driver-windows-nt-kernel-mode-driver.md)<br/>
-[/PROFILE (Performance Tools Profiler)](../../build/reference/profile-performance-tools-profiler.md)<br/>
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)
+- [/DEBUG (Generate Debug Info)](../../build/reference/debug-generate-debug-info.md)
+- [/DRIVER (Windows NT Kernel Mode Driver)](../../build/reference/driver-windows-nt-kernel-mode-driver.md)
+- [/PROFILE (Performance Tools Profiler)](../../build/reference/profile-performance-tools-profiler.md)
+- [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)

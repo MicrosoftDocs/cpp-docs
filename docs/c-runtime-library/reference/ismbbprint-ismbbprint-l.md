@@ -51,5 +51,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+- [Byte Classification](../../c-runtime-library/byte-classification.md)
+- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

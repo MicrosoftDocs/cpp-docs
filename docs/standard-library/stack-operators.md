@@ -432,4 +432,4 @@ The stack s1 is greater than or equal to the stack s3.
 
 ## See also
 
-[\<stack>](../standard-library/stack.md)<br/>
+- [\<stack>](../standard-library/stack.md)

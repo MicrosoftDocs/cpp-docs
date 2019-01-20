@@ -201,4 +201,4 @@ If two `thread::id` objects compare equal, the inserted text representations of 
 
 ## See also
 
-[\<thread>](../standard-library/thread.md)<br/>
+- [\<thread>](../standard-library/thread.md)

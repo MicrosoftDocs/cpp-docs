@@ -15,4 +15,4 @@ Macro function that finds the first occurrence of *string2* in *string1*, beginn
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

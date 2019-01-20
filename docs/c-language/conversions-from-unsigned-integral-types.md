@@ -61,4 +61,4 @@ For the Microsoft C compiler, the **unsigned int** type is equivalent to the **u
 
 ## See also
 
-[Assignment Conversions](../c-language/assignment-conversions.md)
+- [Assignment Conversions](../c-language/assignment-conversions.md)

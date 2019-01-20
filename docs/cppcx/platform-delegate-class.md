@@ -34,6 +34,6 @@ Use the [delegate](../windows/delegate-cpp-component-extensions.md) keyword to c
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)
+- [Platform namespace](../cppcx/platform-namespace-c-cx.md)

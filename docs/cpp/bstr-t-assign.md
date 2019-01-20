@@ -105,4 +105,4 @@ bstrWrapper2 = some text
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+- [_bstr_t Class](../cpp/bstr-t-class.md)

@@ -110,7 +110,7 @@ Allocated memory successfully
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[calloc](calloc.md)<br/>
-[_malloc_dbg](malloc-dbg.md)<br/>
-[_DEBUG](../../c-runtime-library/debug.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [calloc](calloc.md)
+- [_malloc_dbg](malloc-dbg.md)
+- [_DEBUG](../../c-runtime-library/debug.md)

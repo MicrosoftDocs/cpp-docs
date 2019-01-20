@@ -311,6 +311,6 @@ void SetRadiusY(FLOAT radiusY);
 *radiusY*<br/>
 The y-radius of the gradient ellipse. This value is in the brush's coordinate space
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

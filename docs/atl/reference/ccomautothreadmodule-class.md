@@ -238,7 +238,7 @@ Performs an atomic decrement on the lock count for the module and for the curren
 
 When the module lock count reaches zero, the module can be unloaded.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Module Classes](../../atl/atl-module-classes.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Module Classes](../../atl/atl-module-classes.md)

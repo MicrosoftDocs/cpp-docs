@@ -47,9 +47,9 @@ You also use [intrinsic](../../preprocessor/intrinsic.md) to create intrinsic fu
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableIntrinsicFunctions%2A>.
 
-## See Also
+## See also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)
+- [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)

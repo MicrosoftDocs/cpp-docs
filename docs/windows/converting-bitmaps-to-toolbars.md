@@ -41,8 +41,8 @@ You can also change the command IDs of the buttons on the new toolbar by using t
 
 MFC or ATL
 
-## See Also
+## See also
 
-[Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
-[Toolbar Editor](../windows/toolbar-editor.md)<br/>
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>
+- [Creating New Toolbars](../windows/creating-new-toolbars.md)
+- [Toolbar Editor](../windows/toolbar-editor.md)
+- [Toolbar Button Properties](../windows/toolbar-button-properties.md)

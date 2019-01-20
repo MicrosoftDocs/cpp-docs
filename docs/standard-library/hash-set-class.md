@@ -2335,5 +2335,5 @@ The hash_set has elements: 10 20.
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

@@ -55,10 +55,10 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[norm, normf, norml](norm-normf-norml1.md)<br/>
-[creal, crealf, creall](creal-crealf-creall.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [norm, normf, norml](norm-normf-norml1.md)
+- [creal, crealf, creall](creal-crealf-creall.md)
+- [cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)
+- [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)
+- [carg, cargf, cargl](carg-cargf-cargl.md)
+- [cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)

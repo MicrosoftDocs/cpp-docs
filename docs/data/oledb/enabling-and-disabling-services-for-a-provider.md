@@ -17,6 +17,6 @@ Individual OLE DB services can be enabled or disabled by default for all applica
 |No services|0x00000000|
 |No aggregation, all services disabled|\<missing key>|
 
-## See Also
+## See also
 
-[Enabling and Disabling OLE DB Services](../../data/oledb/enabling-and-disabling-ole-db-services.md)
+- [Enabling and Disabling OLE DB Services](../../data/oledb/enabling-and-disabling-ole-db-services.md)

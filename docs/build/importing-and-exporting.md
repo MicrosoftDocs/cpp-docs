@@ -34,6 +34,6 @@ The Win32 Portable Executable format is designed to minimize the number of pages
 
 - [Export from a DLL](../build/exporting-from-a-dll.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+- [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

@@ -116,8 +116,8 @@ Full path is: C:\Documents and Settings\user\test
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
-[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
-[_makepath, _wmakepath](makepath-wmakepath.md)<br/>
-[_splitpath, _wsplitpath](splitpath-wsplitpath.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_getcwd, _wgetcwd](getcwd-wgetcwd.md)
+- [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)
+- [_makepath, _wmakepath](makepath-wmakepath.md)
+- [_splitpath, _wsplitpath](splitpath-wsplitpath.md)

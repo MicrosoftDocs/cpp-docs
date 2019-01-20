@@ -396,14 +396,14 @@ An application should not call this function to hide a scroll bar while processi
 
   See the example for [CScrollBar::Create](#create).
 
-## See Also
+## See also
 
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CButton Class](../../mfc/reference/cbutton-class.md)<br/>
-[CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>
-[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
-[CListBox Class](../../mfc/reference/clistbox-class.md)<br/>
-[CStatic Class](../../mfc/reference/cstatic-class.md)<br/>
-[CDialog Class](../../mfc/reference/cdialog-class.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CButton Class](../../mfc/reference/cbutton-class.md)
+- [CComboBox Class](../../mfc/reference/ccombobox-class.md)
+- [CEdit Class](../../mfc/reference/cedit-class.md)
+- [CListBox Class](../../mfc/reference/clistbox-class.md)
+- [CStatic Class](../../mfc/reference/cstatic-class.md)
+- [CDialog Class](../../mfc/reference/cdialog-class.md)

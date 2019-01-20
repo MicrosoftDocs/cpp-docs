@@ -767,11 +767,11 @@ A string containing a complete SQL statement, suitable for execution. The syntax
 
 A typical use of `SetSQL` is setting up a querydef object for use in a SQL pass-through query. (For the syntax of SQL pass-through queries on your target DBMS, see the documentation for your DBMS.)
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)<br/>
-[CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)<br/>
-[CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)<br/>
-[CDaoException Class](../../mfc/reference/cdaoexception-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)
+- [CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)
+- [CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)
+- [CDaoException Class](../../mfc/reference/cdaoexception-class.md)

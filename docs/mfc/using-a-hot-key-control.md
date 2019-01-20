@@ -20,8 +20,7 @@ Typical usage of a hot key control follows the pattern below:
 
 - If the hot key control is in a dialog box, it and the `CHotKeyCtrl` object will be destroyed automatically. If not, you need to ensure that both the control and the `CHotKeyCtrl` object are properly destroyed.
 
-## See Also
+## See also
 
-[Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)
+- [Controls](../mfc/controls-mfc.md)

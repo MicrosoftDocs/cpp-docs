@@ -82,6 +82,6 @@ results in a quotient of 1079252848505, and a remainder of 5170
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[div](div.md)<br/>
-[ldiv, lldiv](ldiv-lldiv.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [div](div.md)
+- [ldiv, lldiv](ldiv-lldiv.md)

@@ -71,6 +71,6 @@ Number of spaces: 4
 Number of tabs: 2
 ```
 
-## See Also
+## See also
 
-[Statements](../c-language/statements-c.md)
+- [Statements](../c-language/statements-c.md)

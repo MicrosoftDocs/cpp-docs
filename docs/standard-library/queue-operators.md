@@ -406,4 +406,4 @@ The queue q1 is greater than or equal to the queue q3.
 
 ## See also
 
-[\<queue>](../standard-library/queue.md)<br/>
+- [\<queue>](../standard-library/queue.md)

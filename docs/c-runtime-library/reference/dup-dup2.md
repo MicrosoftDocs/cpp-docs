@@ -115,7 +115,7 @@ This goes to file 'data'
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_close](close.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [_close](close.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [_open, _wopen](open-wopen.md)

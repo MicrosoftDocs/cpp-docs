@@ -45,6 +45,6 @@ The following attributes apply to the [class](../../cpp/class-cpp.md) C++ keywor
 |[version](version-cpp.md)|Identifies a particular version among multiple versions of a class.|
 |[vi_progid](vi-progid.md)|Specifies a version-independent form of the ProgID.|
 
-## See Also
+## See also
 
-[Attributes by Usage](attributes-by-usage.md)
+- [Attributes by Usage](attributes-by-usage.md)

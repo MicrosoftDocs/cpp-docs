@@ -27,7 +27,6 @@ All images in an image list are contained in a single, wide bitmap in screen-dev
 
 - [Image Information in Image Lists](../mfc/image-information-in-image-lists.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

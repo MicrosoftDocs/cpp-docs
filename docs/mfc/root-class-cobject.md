@@ -15,7 +15,6 @@ The ultimate base class of most MFC classes. Supports serializing data and obtai
 [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)<br/>
 Structure used to determine the exact class of an object at run time.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

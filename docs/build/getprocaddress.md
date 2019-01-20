@@ -57,6 +57,6 @@ You can only obtain the export ordinal if the DLL you are linking to is built wi
 
 - [Exporting from a DLL Using DEF Files](../build/exporting-from-a-dll-using-def-files.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+- [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

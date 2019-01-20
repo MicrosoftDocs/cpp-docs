@@ -47,7 +47,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[feclearexcept](feclearexcept1.md)<br/>
-[fesetenv](fesetenv1.md)<br/>
-[feupdateenv](feupdateenv.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [feclearexcept](feclearexcept1.md)
+- [fesetenv](fesetenv1.md)
+- [feupdateenv](feupdateenv.md)

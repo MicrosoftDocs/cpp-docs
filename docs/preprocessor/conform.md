@@ -52,6 +52,6 @@ Specifies the name of the compiler option to be modified. The only valid *name* 
 int main() {}
 ```
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

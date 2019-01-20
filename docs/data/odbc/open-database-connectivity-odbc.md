@@ -67,6 +67,6 @@ These tasks are based on the MFC [ODBC](odbc-basics.md) classes. For more inform
 
 - [Use MFC ODBC Recordsets](use-mfc-odbc-recordsets.md)
 
-## See Also
+## See also
 
-[Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)
+- [Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

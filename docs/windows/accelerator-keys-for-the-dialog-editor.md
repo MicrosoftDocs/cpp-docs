@@ -38,6 +38,6 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[Dialog Editor](../windows/dialog-editor.md)
+- [Dialog Editor](../windows/dialog-editor.md)

@@ -23,8 +23,8 @@ The *origin* argument specifies the initial position and can be one of the follo
 |`SEEK_CUR`|Current position of file pointer|
 |`SEEK_SET`|Beginning of file|
 
-## See Also
+## See also
 
-[fseek, _fseeki64](../c-runtime-library/reference/fseek-fseeki64.md)<br/>
-[_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [fseek, _fseeki64](../c-runtime-library/reference/fseek-fseeki64.md)
+- [_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

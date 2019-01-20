@@ -11,4 +11,4 @@ With the [atexit](../c-runtime-library/reference/atexit.md) function, you can sp
 
 ## See also
 
-[Additional Termination Considerations](../cpp/additional-termination-considerations.md)
+- [Additional Termination Considerations](../cpp/additional-termination-considerations.md)

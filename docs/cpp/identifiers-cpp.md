@@ -88,4 +88,4 @@ Use of two sequential underscore characters ( **__** ) in an identifier, or a si
 
 ## See also
 
-[Lexical Conventions](../cpp/lexical-conventions.md)
+- [Lexical Conventions](../cpp/lexical-conventions.md)

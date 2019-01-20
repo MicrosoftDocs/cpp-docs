@@ -36,10 +36,9 @@ Typically, a frame window has one view, but sometimes, as in splitter windows, t
 > [!NOTE]
 >  A pointer to the main frame window is stored in the [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) member variable of the application object. A call to `OnFileNew` in your override of the `InitInstance` member function of `CWinApp` sets *m_pMainWnd* for you. If you do not call `OnFileNew`, you must set the variable's value in `InitInstance` yourself. (SDI COM component (server) applications may not set the variable if /Embedding is on the command line.) Note that *m_pMainWnd* is now a member of class `CWinThread` rather than `CWinApp`.
 
-## See Also
+## See also
 
-[Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
-[Document Template Creation](../mfc/document-template-creation.md)<br/>
-[Document/View Creation](../mfc/document-view-creation.md)<br/>
-[Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
-
+- [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)
+- [Document Template Creation](../mfc/document-template-creation.md)
+- [Document/View Creation](../mfc/document-view-creation.md)
+- [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)

@@ -119,5 +119,5 @@ Hello world (courtesy of _cputws)!
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_putch, _putwch](putch-putwch.md)<br/>
+- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)
+- [_putch, _putwch](putch-putwch.md)

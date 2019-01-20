@@ -158,4 +158,4 @@ int main( )
 
 ## See also
 
-[\<ios>](../standard-library/ios.md)<br/>
+- [\<ios>](../standard-library/ios.md)

@@ -24,6 +24,6 @@ You can define [your own macros](../build/defining-an-nmake-macro.md) or use NMA
 
 [Special NMAKE macros](../build/special-nmake-macros.md)
 
-## See Also
+## See also
 
-[NMAKE Reference](../build/nmake-reference.md)
+- [NMAKE Reference](../build/nmake-reference.md)

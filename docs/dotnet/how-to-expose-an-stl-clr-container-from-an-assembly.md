@@ -376,6 +376,6 @@ cliext::vector contents:
 20
 ```
 
-## See Also
+## See also
 
-[STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)
+- [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)

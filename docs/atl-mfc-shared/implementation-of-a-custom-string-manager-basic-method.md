@@ -26,7 +26,6 @@ To use this private string manager to manage memory for a `CString` variable, pa
 
 [!code-cpp[NVC_ATLMFC_Utilities#181](../atl-mfc-shared/codesnippet/cpp/implementation-of-a-custom-string-manager-basic-method_2.cpp)]
 
-## See Also
+## See also
 
-[Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)
-
+- [Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)

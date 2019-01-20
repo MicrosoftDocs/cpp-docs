@@ -34,6 +34,6 @@ The following topics provide more information about how transactions are perform
 
 - [Transaction: How Transactions Affect Updates (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

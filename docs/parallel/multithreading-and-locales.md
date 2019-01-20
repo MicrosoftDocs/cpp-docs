@@ -425,14 +425,14 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## See Also
+## See also
 
-[Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)<br/>
-[_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>
-[_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)<br/>
-[setlocale](../preprocessor/setlocale.md)<br/>
-[Internationalization](../c-runtime-library/internationalization.md)<br/>
-[Locale](../c-runtime-library/locale.md)<br/>
-[\<clocale>](../standard-library/clocale.md)<br/>
-[\<locale>](../standard-library/locale.md)<br/>
-[locale Class](../standard-library/locale-class.md)
+- [Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)
+- [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)
+- [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)
+- [setlocale](../preprocessor/setlocale.md)
+- [Internationalization](../c-runtime-library/internationalization.md)
+- [Locale](../c-runtime-library/locale.md)
+- [\<clocale>](../standard-library/clocale.md)
+- [\<locale>](../standard-library/locale.md)
+- [locale Class](../standard-library/locale-class.md)

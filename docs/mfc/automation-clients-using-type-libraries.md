@@ -42,7 +42,6 @@ Visual C++ automatically maintains this type-library file for you if you chose t
 
    The wizard will then write the code for your dispatch classes using the specified class and file names.
 
-## See Also
+## See also
 
-[Automation Clients](../mfc/automation-clients.md)
-
+- [Automation Clients](../mfc/automation-clients.md)

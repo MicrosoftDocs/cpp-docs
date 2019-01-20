@@ -84,9 +84,9 @@ TRUE if the message is fully handled; otherwise, FALSE.
 
 Called by the window procedure of a [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) object or of an object that is dynamically chaining to the message map.
 
-## See Also
+## See also
 
-[CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)<br/>
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
-[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)
+- [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)
+- [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)
+- [Class Overview](../../atl/atl-class-overview.md)

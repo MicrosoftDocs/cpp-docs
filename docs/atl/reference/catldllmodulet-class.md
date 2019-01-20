@@ -203,9 +203,9 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method is called by [CAtlDllModuleT::DllGetClassObject](#dllgetclassobject) and is included for backward compatibility.
 
-## See Also
+## See also
 
-[CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)<br/>
-[CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Module Classes](../../atl/atl-module-classes.md)
+- [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)
+- [CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Module Classes](../../atl/atl-module-classes.md)

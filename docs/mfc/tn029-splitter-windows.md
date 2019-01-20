@@ -132,8 +132,7 @@ The `CView` class uses the following high level commands to delegate to the `CSp
 
    Executes the keyboard split command, usually "Window Split".
 
-## See Also
+## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)
-
+- [Technical Notes by Number](../mfc/technical-notes-by-number.md)
+- [Technical Notes by Category](../mfc/technical-notes-by-category.md)

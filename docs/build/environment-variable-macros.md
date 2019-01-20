@@ -23,6 +23,6 @@ In this example, changing `PATH` changes the corresponding environment variable 
 
 If an environment variable is defined as a string that would be syntactically incorrect in a makefile, no macro is created and no warning is generated. If a variable's value contains a dollar sign ($), NMAKE interprets it as the beginning of a macro invocation. Using the macro can cause unexpected behavior.
 
-## See Also
+## See also
 
-[Special NMAKE Macros](../build/special-nmake-macros.md)
+- [Special NMAKE Macros](../build/special-nmake-macros.md)

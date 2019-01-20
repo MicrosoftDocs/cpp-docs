@@ -95,11 +95,11 @@ You need a `CGopherFile` object to read from a file during a gopher Internet ses
 
 You never create a `CGopherFile` object directly. Instead, call [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) to open a file on a gopher server.
 
-## See Also
+## See also
 
-[CInternetFile Class](../../mfc/reference/cinternetfile-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CInternetFile Class](../../mfc/reference/cinternetfile-class.md)<br/>
-[CGopherLocator Class](../../mfc/reference/cgopherlocator-class.md)<br/>
-[CGopherFileFind Class](../../mfc/reference/cgopherfilefind-class.md)<br/>
-[CGopherConnection Class](../../mfc/reference/cgopherconnection-class.md)
+- [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)
+- [CGopherLocator Class](../../mfc/reference/cgopherlocator-class.md)
+- [CGopherFileFind Class](../../mfc/reference/cgopherfilefind-class.md)
+- [CGopherConnection Class](../../mfc/reference/cgopherconnection-class.md)

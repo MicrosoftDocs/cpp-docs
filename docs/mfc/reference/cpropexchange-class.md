@@ -266,8 +266,7 @@ BOOL IsLoading();
 
 Nonzero if properties are being loaded; otherwise 0.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)

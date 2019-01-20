@@ -50,6 +50,6 @@ The `_PVFV` type is defined as `typedef void (__cdecl *_PVFV)(void)`.
 |-------------|-------------------|
 |__dllonexit|onexit.c|
 
-## See Also
+## See also
 
-[_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)
+- [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)

@@ -330,6 +330,6 @@ A `task_status` value which could be either `completed` or `canceled`. If the ta
 > [!IMPORTANT]
 >  In a Universal Windows Platform (UWP) app, do not call `wait` in code that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](#get) method to receive the result of the antecedent task in a task-based continuation.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

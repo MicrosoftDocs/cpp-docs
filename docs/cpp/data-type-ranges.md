@@ -70,5 +70,5 @@ The range of enumerated types varies depending on the language context and speci
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Fundamental Types](../cpp/fundamental-types-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [Fundamental Types](../cpp/fundamental-types-cpp.md)

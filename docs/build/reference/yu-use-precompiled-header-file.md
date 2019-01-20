@@ -83,7 +83,7 @@ CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
 
 This command specifies a precompiled header file named MYPCH.pch. The compiler uses its contents to restore the precompiled state of all header files up to and including MYAPP.h. The compiler then compiles the code that occurs after the MYAPP.h **include** statement.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

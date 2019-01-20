@@ -28,4 +28,4 @@ These operators can be used to extract the character data that is encapsulated b
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+- [_bstr_t Class](../cpp/bstr-t-class.md)

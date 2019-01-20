@@ -27,7 +27,6 @@ For frame windows, you can use the [LoadFrame](../mfc/reference/cframewnd-class.
 
 - [Creating document frame windows](../mfc/creating-document-frame-windows.md)
 
-## See Also
+## See also
 
-[Creating Windows](../mfc/creating-windows.md)
-
+- [Creating Windows](../mfc/creating-windows.md)

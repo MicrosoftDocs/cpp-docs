@@ -533,10 +533,10 @@ By default, this mode is disabled.
 > [!NOTE]
 >  This function must be called before [CMFCOutlookBar::Create](#create).
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CBaseTabbedPane Class](../../mfc/reference/cbasetabbedpane-class.md)<br/>
-[CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md)<br/>
-[CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CBaseTabbedPane Class](../../mfc/reference/cbasetabbedpane-class.md)
+- [CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md)
+- [CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md)

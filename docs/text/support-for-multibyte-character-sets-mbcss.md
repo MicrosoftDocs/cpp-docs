@@ -57,7 +57,7 @@ For international portability, code your program with [Unicode](../text/support-
 
 - [Learn about generic-text mappings for byte-width portability](../text/generic-text-mappings-in-tchar-h.md)
 
-## See Also
+## See also
 
-[Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
-[MBCS Support in Visual C++](../text/mbcs-support-in-visual-cpp.md)
+- [Text and Strings](../text/text-and-strings-in-visual-cpp.md)
+- [MBCS Support in Visual C++](../text/mbcs-support-in-visual-cpp.md)

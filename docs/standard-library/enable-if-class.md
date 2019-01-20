@@ -130,4 +130,4 @@ C++11 solved this ambiguity by using `enable_if` to make sure `pair<A, B>(const 
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

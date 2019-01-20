@@ -116,9 +116,9 @@ Allocated 1000 bytes of stack at 0x0012FB50
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](calloc.md)<br/>
-[malloc](malloc.md)<br/>
-[realloc](realloc.md)<br/>
-[_resetstkoflw](resetstkoflw.md)<br/>
-[_malloca](malloca.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [calloc](calloc.md)
+- [malloc](malloc.md)
+- [realloc](realloc.md)
+- [_resetstkoflw](resetstkoflw.md)
+- [_malloca](malloca.md)

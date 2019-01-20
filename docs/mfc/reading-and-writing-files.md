@@ -23,7 +23,6 @@ If you've used the C run-time library file-handling functions, MFC reading and w
 > [!NOTE]
 >  You should normally carry out input/output operations within a **try**/**catch** exception handling block. For more information, see [Exception Handling (MFC)](../mfc/exception-handling-in-mfc.md).
 
-## See Also
+## See also
 
-[Files](../mfc/files-in-mfc.md)
-
+- [Files](../mfc/files-in-mfc.md)

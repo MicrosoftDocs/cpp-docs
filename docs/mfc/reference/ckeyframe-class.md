@@ -235,6 +235,6 @@ Stores a pointer to transtion that begins at this keyframe.
 CBaseTransition* m_pTransition;
 ```
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

@@ -60,6 +60,6 @@ extent 1 == 10
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_all_extents Class](../standard-library/remove-all-extents-class.md)<br/>
-[remove_extent Class](../standard-library/remove-extent-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [remove_all_extents Class](../standard-library/remove-all-extents-class.md)
+- [remove_extent Class](../standard-library/remove-extent-class.md)

@@ -344,10 +344,10 @@ You must set the mapping mode to any of the Windows mapping modes except MM_ISOT
 
 [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/cpp/cscrollview-class_6.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)
+- [MFC Sample DIBLOOK](../../visual-cpp-samples.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)

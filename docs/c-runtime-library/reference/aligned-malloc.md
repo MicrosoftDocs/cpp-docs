@@ -131,4 +131,4 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)
+- [Data Alignment](../../c-runtime-library/data-alignment.md)

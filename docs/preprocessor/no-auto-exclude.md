@@ -22,7 +22,7 @@ Type libraries may include definitions of items defined in system headers or oth
 
 **END C++ Specific**
 
-## See Also
+## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)
+- [#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -43,6 +43,6 @@ The Windows Runtime calls this callback function to request an object specified 
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
-[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)
+- [Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

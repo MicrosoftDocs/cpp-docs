@@ -65,5 +65,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_getmbcp](getmbcp.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+- [_getmbcp](getmbcp.md)
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)

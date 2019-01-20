@@ -55,8 +55,7 @@ CNotSupportedException();
 
 Do not use this constructor directly, but rather call the global function [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception). for more information about exception processing, see the article [Exception Handling in MFC](../exception-handling-in-mfc.md).
 
-## See Also
+## See also
 
-[CException Class](cexception-class.md)<br/>
-[Hierarchy Chart](../hierarchy-chart.md)
-
+- [CException Class](cexception-class.md)
+- [Hierarchy Chart](../hierarchy-chart.md)

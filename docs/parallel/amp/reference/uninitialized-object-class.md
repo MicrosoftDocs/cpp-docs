@@ -58,6 +58,6 @@ A description of the error.
 
 The `unsupported_feature` object.
 
-## See Also
+## See also
 
-[Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+- [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

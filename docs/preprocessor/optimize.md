@@ -49,6 +49,6 @@ When you use the *on* parameter, it resets the optimizations to those that you s
 #pragma optimize( "", on )
 ```
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

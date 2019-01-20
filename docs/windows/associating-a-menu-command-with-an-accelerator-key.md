@@ -56,8 +56,8 @@ Type an ampersand (`&`) in front of a letter in the menu name or command name to
 
 Win32
 
-## See Also
+## See also
 
-[Menu Editor](../windows/menu-editor.md)<br/>
-[Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)<br/>
-[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
+- [Menu Editor](../windows/menu-editor.md)
+- [Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)
+- [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)

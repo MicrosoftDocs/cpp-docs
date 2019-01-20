@@ -76,4 +76,4 @@ The following topics provide information about how to optimize building, loading
 
 ## See also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)

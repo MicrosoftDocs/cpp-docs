@@ -107,6 +107,6 @@ Whitetoken = White
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
-[_getch, _getwch](getch-getwch.md)<br/>
+- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)
+- [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)
+- [_getch, _getwch](getch-getwch.md)

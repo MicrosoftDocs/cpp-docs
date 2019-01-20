@@ -109,8 +109,7 @@ You can also add code to the `VerifyLicenseKey` function that provides a customi
 
 For additional discussion of licensing issues, see Licensing Issues in [Upgrading an Existing ActiveX Control](../mfc/upgrading-an-existing-activex-control.md).
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Control Wizard](../mfc/reference/mfc-activex-control-wizard.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX Control Wizard](../mfc/reference/mfc-activex-control-wizard.md)

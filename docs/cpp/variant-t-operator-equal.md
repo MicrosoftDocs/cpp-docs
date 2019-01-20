@@ -145,4 +145,4 @@ The operator assigns a new value to the `_variant_t` object:
 
 ## See also
 
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

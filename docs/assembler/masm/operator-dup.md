@@ -15,4 +15,4 @@ Specifies *count* number of declarations of *initialvalue*.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

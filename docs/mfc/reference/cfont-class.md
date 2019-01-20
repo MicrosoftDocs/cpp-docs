@@ -335,9 +335,8 @@ For more information about using graphic objects, see [Graphic Objects](/windows
 
 [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [MFC Sample HIERSVR](../../visual-cpp-samples.md)
+- [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

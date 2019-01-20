@@ -36,7 +36,7 @@ Provides links into the Visual C++ documentation.
 [Talk to Us](/visualstudio/ide/talk-to-us)<br/>
 Provides links to information on using the documentation set, contacting product support, and employing accessibility features.
 
-## See Also
+## See also
 
-[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)<br/>
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+- [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)
+- [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

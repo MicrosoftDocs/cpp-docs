@@ -106,8 +106,7 @@ Below is the minimum support required to open a dynaset:
 
 In addition, if pessimistic locking is requested, a call to `SQLSetPos` with irow 1, fRefresh FALSE and fLock **SQL_LCK_EXCLUSIVE** will be made.
 
-## See Also
+## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)
-
+- [Technical Notes by Number](../mfc/technical-notes-by-number.md)
+- [Technical Notes by Category](../mfc/technical-notes-by-category.md)

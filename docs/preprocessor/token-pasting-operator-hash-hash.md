@@ -56,6 +56,6 @@ int main()
 token9 = 9
 ```
 
-## See Also
+## See also
 
-[Preprocessor Operators](../preprocessor/preprocessor-operators.md)
+- [Preprocessor Operators](../preprocessor/preprocessor-operators.md)

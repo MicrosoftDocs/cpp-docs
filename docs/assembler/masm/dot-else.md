@@ -17,4 +17,4 @@ See [.IF](../../assembler/masm/dot-if.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

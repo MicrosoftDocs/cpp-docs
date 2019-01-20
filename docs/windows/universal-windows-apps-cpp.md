@@ -30,5 +30,5 @@ The Windows Runtime C++ Template Library provides the low-level COM interfaces b
 
 ## See also
 
-[Visual C++](../visual-cpp-in-visual-studio.md)<br/>
-[Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)<br/>
+- [Visual C++](../visual-cpp-in-visual-studio.md)
+- [Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)

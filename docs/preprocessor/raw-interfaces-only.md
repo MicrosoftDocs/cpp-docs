@@ -24,7 +24,7 @@ This attribute allows you to expose only the low-level contents of the type libr
 
 **END C++ Specific**
 
-## See Also
+## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)
+- [#import Directive](../preprocessor/hash-import-directive-cpp.md)

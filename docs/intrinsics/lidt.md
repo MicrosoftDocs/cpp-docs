@@ -37,7 +37,7 @@ The `__lidt` function is equivalent to the `LIDT` machine instruction, and is av
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__sidt](../intrinsics/sidt.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__sidt](../intrinsics/sidt.md)

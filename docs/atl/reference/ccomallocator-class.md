@@ -95,8 +95,8 @@ Returns a void pointer to the allocated space, or NULL if there is insufficient 
 
 Resizes the amount of allocated memory. See [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc) for more details.
 
-## See Also
+## See also
 
-[CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)<br/>
-[CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)
+- [CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

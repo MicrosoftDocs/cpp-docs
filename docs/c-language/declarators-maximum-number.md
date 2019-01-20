@@ -10,6 +10,6 @@ ms.assetid: f8410673-e11a-4830-89a3-3ffb7bb6562d
 
 Microsoft C does not limit the number of declarators. The number is limited only by available memory.
 
-## See Also
+## See also
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

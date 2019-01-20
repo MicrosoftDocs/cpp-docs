@@ -169,7 +169,7 @@ cat found at 002F0F04
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind](lfind.md)<br/>
-[_lsearch](lsearch.md)<br/>
-[qsort](qsort.md)<br/>
+- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)
+- [_lfind](lfind.md)
+- [_lsearch](lsearch.md)
+- [qsort](qsort.md)

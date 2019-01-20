@@ -25,6 +25,6 @@ Also, you can use attributes to implement the OLE DB consumer templates.
 |Data access programming overview (Visual C++)|[Data Access Programming](../../data/data-access-programming-mfc-atl.md)|
 |ODBC conceptual topics|[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|
 
-## See Also
+## See also
 
-[Data Access](../data-access-in-cpp.md)
+- [Data Access](../data-access-in-cpp.md)

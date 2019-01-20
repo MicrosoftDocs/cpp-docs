@@ -24,8 +24,8 @@ The following articles explain how to use data objects and data sources in your 
 
 [Clipboard](../mfc/clipboard.md)
 
-## See Also
+## See also
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[COleDataObject Class](../mfc/reference/coledataobject-class.md)<br/>
-[COleDataSource Class](../mfc/reference/coledatasource-class.md)
+- [OLE](../mfc/ole-in-mfc.md)
+- [COleDataObject Class](../mfc/reference/coledataobject-class.md)
+- [COleDataSource Class](../mfc/reference/coledatasource-class.md)

@@ -532,4 +532,4 @@ The function returns `wstring(Buf)`.
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
+- [\<string>](../standard-library/string.md)

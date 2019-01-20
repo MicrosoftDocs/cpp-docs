@@ -26,7 +26,6 @@ The following example illustrates the cases:
 
 In summary, if your serializable class defines an embedded `CObject` as a member, you should *not* use the `CArchive` **<\<** and **>>** operators for that object, but should call the `Serialize` function instead. Also, if your serializable class defines a pointer to a `CObject` (or an object derived from `CObject`) as a member, but constructs this other object in its own constructor, you should also call `Serialize`.
 
-## See Also
+## See also
 
-[Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)
-
+- [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)

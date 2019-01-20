@@ -19,8 +19,7 @@ Typical usage of an image list follows the pattern below:
 > [!NOTE]
 >  If the image list was created with the **new** operator, you must destroy the `CImageList` object when you are done with it.
 
-## See Also
+## See also
 
-[Using CImageList](../mfc/using-cimagelist.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CImageList](../mfc/using-cimagelist.md)
+- [Controls](../mfc/controls-mfc.md)

@@ -354,12 +354,12 @@ For `CBrush` objects, `UnrealizeObject` directs the system to reset the origin o
 
 The `UnrealizeObject` function should not be used with stock objects. The `UnrealizeObject` function must be called whenever a new brush origin is set (by means of the [CDC::SetBrushOrg](../../mfc/reference/cdc-class.md#setbrushorg) function). The `UnrealizeObject` function must not be called for the currently selected brush or currently selected palette of any display context.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CBitmap Class](../../mfc/reference/cbitmap-class.md)<br/>
-[CBrush Class](../../mfc/reference/cbrush-class.md)<br/>
-[CFont Class](../../mfc/reference/cfont-class.md)<br/>
-[CPalette Class](../../mfc/reference/cpalette-class.md)<br/>
-[CPen Class](../../mfc/reference/cpen-class.md)<br/>
-[CRgn Class](../../mfc/reference/crgn-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CBitmap Class](../../mfc/reference/cbitmap-class.md)
+- [CBrush Class](../../mfc/reference/cbrush-class.md)
+- [CFont Class](../../mfc/reference/cfont-class.md)
+- [CPalette Class](../../mfc/reference/cpalette-class.md)
+- [CPen Class](../../mfc/reference/cpen-class.md)
+- [CRgn Class](../../mfc/reference/crgn-class.md)

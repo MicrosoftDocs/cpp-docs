@@ -89,4 +89,4 @@ SSE2 enabled.
 
 ## See also
 
-[CRT Library Features](../../c-runtime-library/crt-library-features.md)<br/>
+- [CRT Library Features](../../c-runtime-library/crt-library-features.md)

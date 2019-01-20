@@ -25,9 +25,8 @@ You can also use the [concurrency::ScheduleGroup::ScheduleTask](reference/schedu
 
 For an example that uses schedule groups to control the order of task execution, see [How to: Use Schedule Groups to Influence Order of Execution](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
 
-## See Also
+## See also
 
-[Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
-[Scheduler Instances](../../parallel/concrt/scheduler-instances.md)<br/>
-[How to: Use Schedule Groups to Influence Order of Execution](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)
-
+- [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)
+- [Scheduler Instances](../../parallel/concrt/scheduler-instances.md)
+- [How to: Use Schedule Groups to Influence Order of Execution](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)

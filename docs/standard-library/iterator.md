@@ -90,6 +90,6 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

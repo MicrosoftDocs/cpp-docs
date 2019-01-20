@@ -302,9 +302,9 @@ The object pointer to be added to this array. A **NULL** value is allowed.
 
 For more detailed remarks, see [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow).
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CPtrArray Class](../../mfc/reference/cptrarray-class.md)<br/>
-[CObArray Class](../../mfc/reference/cobarray-class.md)
+- [MFC Sample COLLECT](../../visual-cpp-samples.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CPtrArray Class](../../mfc/reference/cptrarray-class.md)
+- [CObArray Class](../../mfc/reference/cobarray-class.md)

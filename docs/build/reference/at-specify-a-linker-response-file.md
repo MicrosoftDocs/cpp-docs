@@ -30,7 +30,7 @@ See [@ (Specify a Compiler Response File)](../../build/reference/at-specify-a-co
 
 - This linker option cannot be changed programmatically.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)

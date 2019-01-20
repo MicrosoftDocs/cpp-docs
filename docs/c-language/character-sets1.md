@@ -26,4 +26,4 @@ The source character set and execution character set include the ASCII character
 
 ## See also
 
-[Characters](../c-language/characters.md)<br/>
+- [Characters](../c-language/characters.md)

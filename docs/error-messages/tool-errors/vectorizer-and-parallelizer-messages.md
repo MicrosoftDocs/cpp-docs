@@ -969,11 +969,11 @@ void code_1505(int *A, int *B)
 }
 ```
 
-## See Also
+## See also
 
-[Auto-Parallelization and Auto-Vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
-[Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
-[#pragma loop()](../../preprocessor/loop.md)<br/>
-[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
-[/Qvec-report (Auto-Vectorizer Reporting Level)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)
+- [Auto-Parallelization and Auto-Vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md)
+- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)
+- [#pragma loop()](../../preprocessor/loop.md)
+- [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)
+- [/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)
+- [/Qvec-report (Auto-Vectorizer Reporting Level)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

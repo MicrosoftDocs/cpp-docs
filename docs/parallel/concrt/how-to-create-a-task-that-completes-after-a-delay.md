@@ -39,15 +39,14 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 **cl.exe /EHsc task-delay.cpp**
 
-## See Also
+## See also
 
-[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
-[task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)<br/>
-[cancellation_token_source Class](../../parallel/concrt/reference/cancellation-token-source-class.md)<br/>
-[cancellation_token Class](../../parallel/concrt/reference/cancellation-token-class.md)<br/>
-[task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)<br/>
-[timer Class](../../parallel/concrt/reference/timer-class.md)<br/>
-[call Class](../../parallel/concrt/reference/call-class.md)<br/>
-[Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[Cancellation in the PPL](cancellation-in-the-ppl.md)
-
+- [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
+- [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)
+- [cancellation_token_source Class](../../parallel/concrt/reference/cancellation-token-source-class.md)
+- [cancellation_token Class](../../parallel/concrt/reference/cancellation-token-class.md)
+- [task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)
+- [timer Class](../../parallel/concrt/reference/timer-class.md)
+- [call Class](../../parallel/concrt/reference/call-class.md)
+- [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)
+- [Cancellation in the PPL](cancellation-in-the-ppl.md)

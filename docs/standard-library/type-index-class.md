@@ -42,5 +42,5 @@ The constructor initializes `ptr` to `&tinfo`.
 
 ## See also
 
-[Run-Time Type Information](../cpp/run-time-type-information.md)<br/>
-[\<typeindex>](../standard-library/typeindex.md)<br/>
+- [Run-Time Type Information](../cpp/run-time-type-information.md)
+- [\<typeindex>](../standard-library/typeindex.md)

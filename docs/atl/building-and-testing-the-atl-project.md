@@ -10,7 +10,6 @@ As mentioned in [Inserting a Composite Control](../atl/inserting-a-composite-con
 
 You can also test your composite control using the Test Container tool, or any other application that can host an ActiveX control. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access the test container.
 
-## See Also
+## See also
 
-[Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)
-
+- [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)

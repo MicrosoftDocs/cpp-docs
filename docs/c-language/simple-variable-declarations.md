@@ -43,6 +43,6 @@ unsigned long reply, flag; /* Declares two variables
 
 In this example, both the variables, `reply` and `flag`, have `unsigned long` type and hold unsigned integral values.
 
-## See Also
+## See also
 
-[Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)
+- [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

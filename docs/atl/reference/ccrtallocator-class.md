@@ -95,8 +95,8 @@ Returns a void pointer to the allocated space, or NULL if there is insufficient 
 
 Resizes the amount of allocated memory. See [realloc](../../c-runtime-library/reference/realloc.md) for more details.
 
-## See Also
+## See also
 
-[CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
-[CComAllocator Class](../../atl/reference/ccomallocator-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CHeapPtr Class](../../atl/reference/cheapptr-class.md)
+- [CComAllocator Class](../../atl/reference/ccomallocator-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

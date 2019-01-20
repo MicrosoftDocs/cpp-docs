@@ -150,6 +150,6 @@ long remove_ref();
 
 The new value of the reference count.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

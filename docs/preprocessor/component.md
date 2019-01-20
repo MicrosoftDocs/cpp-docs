@@ -75,6 +75,6 @@ LINK : warning LNK4018: too many type indexes in PDB "filename", discarding subs
 
 For more information, see the [Enable Minimal Rebuild](../build/reference/gm-enable-minimal-rebuild.md) (/Gm) compiler option.
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

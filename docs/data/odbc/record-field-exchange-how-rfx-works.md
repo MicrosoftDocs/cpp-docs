@@ -107,10 +107,10 @@ The following table shows the sequence of RFX operations when you add a new reco
 
 When you delete a record, RFX sets all the fields to NULL as a reminder that the record is deleted and you must move off it. You do not need any other RFX sequence information.
 
-## See Also
+## See also
 
-[Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
-[MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
-[Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)<br/>
-[CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange)
+- [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+- [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)
+- [Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)
+- [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)
+- [CRecordset::DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange)

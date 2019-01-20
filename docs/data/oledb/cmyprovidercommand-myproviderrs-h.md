@@ -28,6 +28,6 @@ The command object also provides an implementation of `IColumnsInfo`. OLE DB req
 
 The provider also contains an interface called `IObjectWithSite`. The `IObjectWithSite` interface was implemented in ATL 2.0 and allows the implementer to pass information about itself to its child. The command object uses the `IObjectWithSite` information to tell any generated rowset objects about who created them.
 
-## See Also
+## See also
 
-[Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)
+- [Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)

@@ -67,7 +67,7 @@ class CMyC3 : public IMyI3 {};
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Class Attributes](class-attributes.md)
+- [IDL Attributes](idl-attributes.md)
+- [Class Attributes](class-attributes.md)

@@ -24,5 +24,5 @@ There is also a discussion on [Thread Safety in the C++ Standard Library](../sta
 
 ## See also
 
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
+- [iostreams Conventions](../standard-library/iostreams-conventions.md)

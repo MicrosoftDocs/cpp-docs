@@ -26,4 +26,4 @@ Inline assembly is a special-purpose tool. If you plan to port an application to
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

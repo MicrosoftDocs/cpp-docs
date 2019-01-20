@@ -92,8 +92,8 @@ The only thing that remains is to populate the vector with data. In this simple 
 
 Now, you can test the code with the client of your choice.
 
-## See Also
+## See also
 
-[Collections and Enumerators](../atl/atl-collections-and-enumerators.md)<br/>
-[ATLCollections Sample](../visual-cpp-samples.md)<br/>
-[ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md)
+- [Collections and Enumerators](../atl/atl-collections-and-enumerators.md)
+- [ATLCollections Sample](../visual-cpp-samples.md)
+- [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md)

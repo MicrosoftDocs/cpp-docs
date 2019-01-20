@@ -99,5 +99,5 @@ Due to the danger of performing unchecked casts on top of a relocating garbage c
 
 ## See also
 
-[Casting Operators](../cpp/casting-operators.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Casting Operators](../cpp/casting-operators.md)
+- [Keywords](../cpp/keywords-cpp.md)

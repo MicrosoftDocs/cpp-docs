@@ -59,6 +59,6 @@ The choice of subsystem affects the default starting address for the program. Fo
 
 For more information, including the minimum and default values for the major and minor version numbers for each subsystem, see the [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) linker option.
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+- [EDITBIN Options](../../build/reference/editbin-options.md)

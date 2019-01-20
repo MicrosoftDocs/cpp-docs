@@ -19,4 +19,4 @@ If *name* is defined in the module, it is treated as [PUBLIC](../../assembler/ma
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

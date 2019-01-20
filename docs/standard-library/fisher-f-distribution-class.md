@@ -272,4 +272,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+- [\<random>](../standard-library/random.md)

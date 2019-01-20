@@ -53,7 +53,6 @@ For more information on event sink macros, see [Event Sink Maps](../mfc/referenc
 
 1. Double-click the new handler function from Class View to jump to the event handler code in the implementation (.CPP) file of `CContainerDlg`.
 
-## See Also
+## See also
 
-[ActiveX Control Containers](../mfc/activex-control-containers.md)
-
+- [ActiveX Control Containers](../mfc/activex-control-containers.md)

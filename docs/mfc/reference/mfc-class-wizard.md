@@ -95,6 +95,6 @@ To open the **MFC Class Wizard**, on the **Project** menu, click **Class Wizard*
 
    To display a definition, double-click an item in the **Methods** list. Or, select an item in the **Methods** list and then click the **Go to Definition** button.
 
-## See Also
+## See also
 
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)
+- [Adding a Class](../../ide/adding-a-class-visual-cpp.md)

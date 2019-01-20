@@ -18,6 +18,6 @@ The statements of a C program control the flow of program execution. In C, as in
 |[for statement](../c-language/for-statement-c.md)|[try-finally statement](../c-language/try-finally-statement-c.md)|
 |[goto and labeled statements](../c-language/goto-and-labeled-statements-c.md)|[while statement](../c-language/while-statement-c.md)|
 
-## See Also
+## See also
 
-[C Language Reference](../c-language/c-language-reference.md)
+- [C Language Reference](../c-language/c-language-reference.md)

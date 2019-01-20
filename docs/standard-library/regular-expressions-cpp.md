@@ -479,4 +479,4 @@ A partial match succeeds if the match reaches the end of the target sequence wit
 
 ## See also
 
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
+- [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)

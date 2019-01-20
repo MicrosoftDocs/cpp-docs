@@ -137,6 +137,6 @@ ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
 
 You can now compile and run the enhanced provider. To test the provider, modify the test consumer as described in [Implementing a Simple Consumer](../../data/oledb/implementing-a-simple-consumer.md). Run the test consumer with the provider and verify that the test consumer retrieves the proper strings from the provider.
 
-## See Also
+## See also
 
-[Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>
+- [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md)

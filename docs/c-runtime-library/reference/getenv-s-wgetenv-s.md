@@ -176,7 +176,7 @@ New LIB variable is: c:\mylib;c:\yourlib
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
-[_putenv, _wputenv](putenv-wputenv.md)<br/>
-[_dupenv_s, _wdupenv_s](dupenv-s-wdupenv-s.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [Environmental Constants](../../c-runtime-library/environmental-constants.md)
+- [_putenv, _wputenv](putenv-wputenv.md)
+- [_dupenv_s, _wdupenv_s](dupenv-s-wdupenv-s.md)

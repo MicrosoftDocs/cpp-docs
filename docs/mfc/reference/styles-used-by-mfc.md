@@ -308,23 +308,23 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 |WS_EX_TRANSPARENT|Specifies that a window created with this style is to be transparent. That is, any windows that are beneath the window are not obscured by the window. A window created with this style receives WM_PAINT messages only after all sibling windows beneath it have been updated.|
 |WS_EX_WINDOWEDGE|Specifies that a window has a border with a raised edge.|
 
-## See Also
+## See also
 
-[MFC Class Overview](../../mfc/class-library-overview.md)<br/>
-[CWnd::Create](../../mfc/reference/cwnd-class.md#create)<br/>
-[CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)<br/>
-[CEdit::Create](../../mfc/reference/cedit-class.md#create)<br/>
-[CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)<br/>
-[CStatic::Create](../../mfc/reference/cstatic-class.md#create)<br/>
-[AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
-[CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)<br/>
-[CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)<br/>
-[Button Styles (Windows)](/windows/desktop/Controls/button-styles)<br/>
-[Combo Box Styles (Windows)](/windows/desktop/Controls/combo-box-styles)<br/>
-[Edit Control Styles (Windows)](/windows/desktop/Controls/edit-control-styles)<br/>
-[List Box Styles (Windows)](/windows/desktop/Controls/list-box-styles)<br/>
-[MessageBox Function (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox)<br/>
-[Scroll Bar Control Styles (Windows)](/windows/desktop/Controls/scroll-bar-control-styles)<br/>
-[Static Control Styles (Windows)](/windows/desktop/Controls/static-control-styles)<br/>
-[Window Styles (Windows)](/windows/desktop/winmsg/window-styles)<br/>
-[Extended Window Styles (Windows)](/windows/desktop/winmsg/extended-window-styles)
+- [MFC Class Overview](../../mfc/class-library-overview.md)
+- [CWnd::Create](../../mfc/reference/cwnd-class.md#create)
+- [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)
+- [CEdit::Create](../../mfc/reference/cedit-class.md#create)
+- [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)
+- [CStatic::Create](../../mfc/reference/cstatic-class.md#create)
+- [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)
+- [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)
+- [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)
+- [Button Styles (Windows)](/windows/desktop/Controls/button-styles)
+- [Combo Box Styles (Windows)](/windows/desktop/Controls/combo-box-styles)
+- [Edit Control Styles (Windows)](/windows/desktop/Controls/edit-control-styles)
+- [List Box Styles (Windows)](/windows/desktop/Controls/list-box-styles)
+- [MessageBox Function (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox)
+- [Scroll Bar Control Styles (Windows)](/windows/desktop/Controls/scroll-bar-control-styles)
+- [Static Control Styles (Windows)](/windows/desktop/Controls/static-control-styles)
+- [Window Styles (Windows)](/windows/desktop/winmsg/window-styles)
+- [Extended Window Styles (Windows)](/windows/desktop/winmsg/extended-window-styles)

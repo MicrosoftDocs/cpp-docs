@@ -17,7 +17,6 @@ Serves as the base class for all classes of objects that can receive and respond
 [CCmdUI](../mfc/reference/ccmdui-class.md)<br/>
 Provides a programmatic interface for updating user-interface objects such as menu items or control-bar buttons. The command target object enables, disables, checks, and/or clears the user-interface object with this object.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

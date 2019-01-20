@@ -24,8 +24,7 @@ The following list describes the various notifications sent by the extended comb
 
 - CBEN_INSERTITEM Sent when a new item has been inserted in the control.
 
-## See Also
+## See also
 
-[Using CComboBoxEx](../mfc/using-ccomboboxex.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CComboBoxEx](../mfc/using-ccomboboxex.md)
+- [Controls](../mfc/controls-mfc.md)

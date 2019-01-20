@@ -71,4 +71,4 @@ For information about how memory blocks are allocated, initialized, and managed 
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>
+- [Data Alignment](../../c-runtime-library/data-alignment.md)

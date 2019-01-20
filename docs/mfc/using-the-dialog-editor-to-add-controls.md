@@ -10,8 +10,7 @@ When you create your dialog-template resource with the [dialog editor](../window
 
 You can instead [create controls by hand](../mfc/adding-controls-by-hand.md) if you want. This is more work.
 
-## See Also
+## See also
 
-[Making and Using Controls](../mfc/making-and-using-controls.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Making and Using Controls](../mfc/making-and-using-controls.md)
+- [Controls](../mfc/controls-mfc.md)

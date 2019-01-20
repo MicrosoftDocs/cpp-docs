@@ -80,7 +80,6 @@ If you want to display a toolbar as the result of a command, you'll need to:
 
 - [Using your old toolbars](../mfc/using-your-old-toolbars.md)
 
-## See Also
+## See also
 
-[MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-
+- [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)

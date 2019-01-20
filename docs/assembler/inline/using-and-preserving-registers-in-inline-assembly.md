@@ -27,4 +27,4 @@ Some SSE types require eight-byte stack alignment, forcing the compiler to emit 
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

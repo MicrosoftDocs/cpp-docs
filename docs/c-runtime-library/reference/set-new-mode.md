@@ -49,9 +49,9 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](calloc.md)<br/>
-[free](free.md)<br/>
-[realloc](realloc.md)<br/>
-[_query_new_handler](query-new-handler.md)<br/>
-[_query_new_mode](query-new-mode.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [calloc](calloc.md)
+- [free](free.md)
+- [realloc](realloc.md)
+- [_query_new_handler](query-new-handler.md)
+- [_query_new_mode](query-new-mode.md)

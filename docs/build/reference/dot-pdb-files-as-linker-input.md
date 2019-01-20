@@ -10,7 +10,7 @@ Object (.obj) files compiled using the /Zi option contain the name of a program 
 
 LINK also uses a PDB to hold debugging information for the .exe file or the .dll file. The program's PDB is both an output file and an input file, because LINK updates the PDB when it rebuilds the program.
 
-## See Also
+## See also
 
-[LINK Input Files](../../build/reference/link-input-files.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+- [LINK Input Files](../../build/reference/link-input-files.md)
+- [Linker Options](../../build/reference/linker-options.md)

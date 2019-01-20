@@ -160,7 +160,7 @@ The time in German locale is: 'Mittwoch, 12. Mai 2004'
 
 ## See also
 
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[_beginthread, _beginthreadex](beginthread-beginthreadex.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Multithreading and Locales](../../parallel/multithreading-and-locales.md)<br/>
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)
+- [_beginthread, _beginthreadex](beginthread-beginthreadex.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [Multithreading and Locales](../../parallel/multithreading-and-locales.md)

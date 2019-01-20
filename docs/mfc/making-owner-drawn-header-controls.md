@@ -8,8 +8,7 @@ ms.assetid: 455c113b-e8d0-400c-8690-dbb92cba0d05
 
 You can define individual items of a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Header Controls](/windows/desktop/Controls/header-controls) in the Windows SDK.
 
-## See Also
+## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
+- [Controls](../mfc/controls-mfc.md)

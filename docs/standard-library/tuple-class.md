@@ -332,5 +332,5 @@ x 4
 
 ## See also
 
-[\<tuple>](../standard-library/tuple.md)<br/>
-[make_tuple](../standard-library/tuple-functions.md#make_tuple)<br/>
+- [\<tuple>](../standard-library/tuple.md)
+- [make_tuple](../standard-library/tuple-functions.md#make_tuple)

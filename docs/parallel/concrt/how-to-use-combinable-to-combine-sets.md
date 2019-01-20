@@ -30,9 +30,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc parallel-combine-primes.cpp**
 
-## See Also
+## See also
 
-[Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
-[combinable Class](../../parallel/concrt/reference/combinable-class.md)<br/>
-[combinable::combine_each Method](reference/combinable-class.md#combine_each)
-
+- [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)
+- [combinable Class](../../parallel/concrt/reference/combinable-class.md)
+- [combinable::combine_each Method](reference/combinable-class.md#combine_each)

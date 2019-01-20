@@ -90,6 +90,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[remainder, remainderf, remainderl](remainder-remainderf-remainderl.md)<br/>
-[remquo, remquof, remquol](remquo-remquof-remquol.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [remainder, remainderf, remainderl](remainder-remainderf-remainderl.md)
+- [remquo, remquof, remquol](remquo-remquof-remquol.md)

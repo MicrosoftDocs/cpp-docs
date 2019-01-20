@@ -757,7 +757,7 @@ Swaps the elements at the two positions specified. In debug builds, an assertion
 
 [!code-cpp[NVC_ATL_Utilities#31](../../atl/codesnippet/cpp/catllist-class_19.cpp)]
 
-## See Also
+## See also
 
-[CList Class](../../mfc/reference/clist-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CList Class](../../mfc/reference/clist-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

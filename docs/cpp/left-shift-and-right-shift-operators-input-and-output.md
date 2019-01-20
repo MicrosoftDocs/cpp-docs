@@ -215,5 +215,5 @@ The value of `E1 >> E2` is `E1` right-shifted `E2` bit positions. If `E1` has an
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

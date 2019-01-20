@@ -34,4 +34,4 @@ As of version 4.0, MFC began using the C++ exception handling mechanism. Althoug
 
 ## See also
 
-[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)
+- [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)

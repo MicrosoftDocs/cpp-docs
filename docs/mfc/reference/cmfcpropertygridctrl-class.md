@@ -1487,7 +1487,7 @@ The [CMFCPropertyGridCtrl::EndEditItem](#endedititem) method calls this method t
 
 If you override this method, return TRUE if the specified property data is valid. Otherwise, return FALSE, in which case the framework does not update the property.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

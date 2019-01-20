@@ -33,6 +33,6 @@ You can specify the /J compiler option to change the default **char** type from 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[C Type Specifiers](../c-language/c-type-specifiers.md)
+- [C Type Specifiers](../c-language/c-type-specifiers.md)

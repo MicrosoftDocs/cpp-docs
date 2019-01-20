@@ -41,7 +41,7 @@ The topic for each compiler option discusses how it can be set in the developmen
 
 ## See also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Fast Compilation](../../build/reference/fast-compilation.md)<br/>
-[CL Invokes the Linker](../../build/reference/cl-invokes-the-linker.md)
+- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Fast Compilation](../../build/reference/fast-compilation.md)
+- [CL Invokes the Linker](../../build/reference/cl-invokes-the-linker.md)

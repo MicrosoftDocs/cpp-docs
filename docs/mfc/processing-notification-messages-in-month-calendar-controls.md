@@ -18,8 +18,7 @@ The following list describes the various notifications sent by the month calenda
 
 - MCN_SELECT Notifies the parent that an explicit date selection has been made.
 
-## See Also
+## See also
 
-[Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)
+- [Controls](../mfc/controls-mfc.md)

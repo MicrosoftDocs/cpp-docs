@@ -58,9 +58,9 @@ The following code demonstrates some of the Boost formatting features.
 
 ## See also
 
-[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
-[\<iostream>](../standard-library/iostream.md)<br/>
-[\<limits>](../standard-library/limits.md)<br/>
-[\<iomanip>](../standard-library/iomanip.md)
+- [Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
+- [\<iostream>](../standard-library/iostream.md)
+- [\<limits>](../standard-library/limits.md)
+- [\<iomanip>](../standard-library/iomanip.md)

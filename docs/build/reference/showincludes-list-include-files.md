@@ -48,7 +48,7 @@ The **/showIncludes** option emits to `stderr`, not `stdout`.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ShowIncludes%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

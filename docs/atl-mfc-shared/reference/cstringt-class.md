@@ -1646,9 +1646,8 @@ The `CStringT& TrimRight()` version requires no parameters. It trims any trailin
 
 [!code-cpp[NVC_ATLMFC_Utilities#138](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_42.cpp)]
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
-[CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+- [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md)

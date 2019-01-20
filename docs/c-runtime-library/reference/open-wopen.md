@@ -169,10 +169,10 @@ Open succeeded on output file
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chmod, _wchmod](chmod-wchmod.md)<br/>
-[_close](close.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_dup, _dup2](dup-dup2.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_sopen, _wsopen](sopen-wsopen.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [_chmod, _wchmod](chmod-wchmod.md)
+- [_close](close.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [_dup, _dup2](dup-dup2.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [_sopen, _wsopen](sopen-wsopen.md)

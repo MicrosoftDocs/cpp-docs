@@ -31,6 +31,6 @@ verdate.h c:\src\inc\screen.h
 file1.sbr file2.sbr file3.sbr file4.sbr
 ```
 
-## See Also
+## See also
 
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)
+- [BSCMAKE Reference](../../build/reference/bscmake-reference.md)

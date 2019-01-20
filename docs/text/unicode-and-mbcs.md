@@ -26,7 +26,7 @@ The Microsoft Foundation Classes (MFC) library, the C run-time library for Visua
 
 By definition, the ASCII character set is a subset of all multibyte-character sets. In many multibyte character sets, each character in the range 0x00 - 0x7F is identical to the character that has the same value in the ASCII character set. For example, in both ASCII and MBCS character strings, the 1-byte NULL character ('\0') has value 0x00 and indicates the terminating null character.
 
-## See Also
+## See also
 
-[Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
-[International Enabling](../text/international-enabling.md)
+- [Text and Strings](../text/text-and-strings-in-visual-cpp.md)
+- [International Enabling](../text/international-enabling.md)

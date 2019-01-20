@@ -308,6 +308,6 @@ The first member function reduces the stored tick count modulo Div and returns *
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[duration_values Structure](../standard-library/duration-values-structure.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<chrono>](../standard-library/chrono.md)
+- [duration_values Structure](../standard-library/duration-values-structure.md)

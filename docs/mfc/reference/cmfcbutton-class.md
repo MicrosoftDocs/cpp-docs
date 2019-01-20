@@ -916,10 +916,10 @@ A `CSize` object that contains the new size of the button.
 
 By default, this method calculates a new size that includes a horizontal margin of 10 pixels and a vertical margin of 5 pixels.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCLinkCtrl Class](../../mfc/reference/cmfclinkctrl-class.md)<br/>
-[CMFCColorButton Class](../../mfc/reference/cmfccolorbutton-class.md)<br/>
-[CMFCMenuButton Class](../../mfc/reference/cmfcmenubutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCLinkCtrl Class](../../mfc/reference/cmfclinkctrl-class.md)
+- [CMFCColorButton Class](../../mfc/reference/cmfccolorbutton-class.md)
+- [CMFCMenuButton Class](../../mfc/reference/cmfcmenubutton-class.md)

@@ -101,4 +101,4 @@ A list of links to the reference start pages for the various Visual C++ librarie
 
 ## See also
 
-[C Language Reference](../c-language/c-language-reference.md)
+- [C Language Reference](../c-language/c-language-reference.md)

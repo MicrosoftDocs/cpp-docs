@@ -52,6 +52,6 @@ In addition, this section also describes the following components of STL/CLR:
 |[set (STL/CLR)](../dotnet/set-stl-clr.md)|[stack (STL/CLR)](../dotnet/stack-stl-clr.md)|
 |[utility (STL/CLR)](../dotnet/utility-stl-clr.md)|[vector (STL/CLR)](../dotnet/vector-stl-clr.md)|
 
-## See Also
+## See also
 
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
+- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

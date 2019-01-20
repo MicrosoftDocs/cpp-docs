@@ -205,4 +205,4 @@ In the figure, accessing any member of class `A` through nonvirtual base classes
 
 ## See also
 
-[Inheritance](../cpp/inheritance-cpp.md)
+- [Inheritance](../cpp/inheritance-cpp.md)

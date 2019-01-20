@@ -63,4 +63,4 @@ The type of a static member is not qualified by its class name. Therefore, the t
 
 ## See also
 
-[Classes and Structs](../cpp/classes-and-structs-cpp.md)
+- [Classes and Structs](../cpp/classes-and-structs-cpp.md)

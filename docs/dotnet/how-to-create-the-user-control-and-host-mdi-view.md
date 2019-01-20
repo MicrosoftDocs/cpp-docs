@@ -93,6 +93,6 @@ This procedure assumes that you created a Windows Forms Controls Library project
 
    On the **Debug** menu, click **Start without debugging**.
 
-## See Also
+## See also
 
-[Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)
+- [Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)

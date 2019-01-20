@@ -375,6 +375,6 @@ enum TRANSITION_TYPE;
 
 A transition type is set in the constructor of specific transition. For example, CSinusoidalTransitionFromRange sets its type to SINUSOIDAL_FROM_RANGE.
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

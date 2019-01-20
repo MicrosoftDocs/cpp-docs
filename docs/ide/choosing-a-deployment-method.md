@@ -33,8 +33,8 @@ Incorrect deployment of Visual C++ libraries may cause run-time errors during ex
 
 We recommend that you avoid static linking when you redistribute Visual C++ libraries. Although static linking almost never significantly improves application performance, it almost always makes servicing more expensive. For example, consider an application that's statically linked to a library that's been updated with security enhancements—the application cannot benefit unless it is recompiled and redeployed. Instead, we recommend that you dynamically link your applications to the libraries they depend on so that the libraries can be updated wherever they're deployed.
 
-## See Also
+## See also
 
-[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)<br>
-[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)<br>
-[Deployment Examples](../ide/deployment-examples.md)
+- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
+- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
+- [Deployment Examples](../ide/deployment-examples.md)

@@ -80,6 +80,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>
+- [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)
+- [Directory Control](../../c-runtime-library/directory-control.md)
+- [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

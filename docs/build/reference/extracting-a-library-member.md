@@ -15,6 +15,6 @@ LIB library /EXTRACT:member /OUT:objectfile
 
 This command creates an .obj file called *objectfile* that contains a copy of a `member` of a *library*. The `member` name is case sensitive. You can extract only one member in a single command. The /OUT option is required; there is no default output name. If a file called *objectfile* already exists in the specified directory (or the current directory, if no directory is specified with *objectfile*), the extracted *objectfile* replaces the existing file.
 
-## See Also
+## See also
 
-[LIB Reference](../../build/reference/lib-reference.md)
+- [LIB Reference](../../build/reference/lib-reference.md)

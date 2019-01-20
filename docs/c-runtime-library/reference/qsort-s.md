@@ -238,7 +238,7 @@ table tablet tableux
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](bsearch-s.md)<br/>
-[_lsearch_s](lsearch-s.md)<br/>
-[qsort](qsort.md)<br/>
+- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)
+- [bsearch_s](bsearch-s.md)
+- [_lsearch_s](lsearch-s.md)
+- [qsort](qsort.md)

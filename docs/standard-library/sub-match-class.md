@@ -234,5 +234,5 @@ The typedef is a synonym for `iterator_traits<BidIt>::value_type`.
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[sub_match](../standard-library/sub-match-class.md)<br/>
+- [\<regex>](../standard-library/regex.md)
+- [sub_match](../standard-library/sub-match-class.md)

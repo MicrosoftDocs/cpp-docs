@@ -172,13 +172,13 @@ Directory of C:\test
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](asctime-wasctime.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
-[_futime, _futime32, _futime64](futime-futime32-futime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
-[_stat, _wstat Functions](stat-functions.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+- [Time Management](../../c-runtime-library/time-management.md)
+- [asctime, _wasctime](asctime-wasctime.md)
+- [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)
+- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)
+- [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)
+- [_futime, _futime32, _futime64](futime-futime32-futime64.md)
+- [gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)
+- [localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)
+- [_stat, _wstat Functions](stat-functions.md)
+- [time, _time32, _time64](time-time32-time64.md)

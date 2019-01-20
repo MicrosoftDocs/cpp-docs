@@ -153,9 +153,9 @@ Lines in file: 2
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[\_dup, \_dup2](dup-dup2.md)<br/>
-[fclose, \_fcloseall](fclose-fcloseall.md)<br/>
-[fopen, \_wfopen](fopen-wfopen.md)<br/>
-[freopen, \_wfreopen](freopen-wfreopen.md)<br/>
-[\_open, \_wopen](open-wopen.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [\_dup, \_dup2](dup-dup2.md)
+- [fclose, \_fcloseall](fclose-fcloseall.md)
+- [fopen, \_wfopen](fopen-wfopen.md)
+- [freopen, \_wfreopen](freopen-wfreopen.md)
+- [\_open, \_wopen](open-wopen.md)

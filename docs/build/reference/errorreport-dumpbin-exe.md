@@ -17,6 +17,6 @@ If dumpbin.exe fails at runtime, you can use **/ERRORREPORT** to send informatio
 
 For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+- [DUMPBIN Options](../../build/reference/dumpbin-options.md)

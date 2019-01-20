@@ -65,11 +65,11 @@ library MyLib {
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)<br/>
-[importidl](importidl.md)<br/>
-[importlib](importlib.md)<br/>
-[include](include-cpp.md)<br/>
-[includelib](includelib-cpp.md)
+- [IDL Attributes](idl-attributes.md)
+- [Stand-Alone Attributes](stand-alone-attributes.md)
+- [importidl](importidl.md)
+- [importlib](importlib.md)
+- [include](include-cpp.md)
+- [includelib](includelib-cpp.md)

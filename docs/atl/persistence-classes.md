@@ -20,8 +20,7 @@ The following classes implement object persistence:
 
 [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)<br/>
-[Property Map Macros](../atl/reference/property-map-macros.md)
-
+- [Class Overview](../atl/atl-class-overview.md)
+- [Property Map Macros](../atl/reference/property-map-macros.md)

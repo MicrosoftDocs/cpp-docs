@@ -326,5 +326,5 @@ rwi = 1
 
 ## See also
 
-[cref](../standard-library/functional-functions.md#cref)<br/>
-[ref](../standard-library/functional-functions.md#ref)<br/>
+- [cref](../standard-library/functional-functions.md#cref)
+- [ref](../standard-library/functional-functions.md#ref)

@@ -56,4 +56,4 @@ For more information about type conversion, see [Standard Conversions](../cpp/st
 
 ## See also
 
-[Data Type Ranges](../cpp/data-type-ranges.md)
+- [Data Type Ranges](../cpp/data-type-ranges.md)

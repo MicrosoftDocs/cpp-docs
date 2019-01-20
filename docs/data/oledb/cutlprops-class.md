@@ -194,7 +194,7 @@ HRESULT SetPropValue(const GUID* pguidPropSet,
 
 `Failure` on failure and S_OK if successful.
 
-## See Also
+## See also
 
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -90,7 +90,7 @@ See [IOpenRowset::OpenRowset](https://docs.microsoft.com/previous-versions/windo
 
 This method is not found in ATLDB.H. It is created by the ATL Object Wizard when you create a provider.
 
-## See Also
+## See also
 
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

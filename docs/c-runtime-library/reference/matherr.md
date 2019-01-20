@@ -135,4 +135,4 @@ Normal: log( 0.0 ) = -inf
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)

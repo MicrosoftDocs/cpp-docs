@@ -35,13 +35,13 @@ By default, the output file name has the form *binaryname*.winmd. To specify a d
 
 1. In the **Generate Windows Metadata** drop-down list box, select the option you want.
 
-## See Also
+## See also
 
-[Walkthrough: Creating a Simple Windows Runtime component and calling it from JavaScript](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)<br/>
-[Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)<br/>
-[/WINMDFILE (Specify winmd File)](winmdfile-specify-winmd-file.md)<br/>
-[/WINMDKEYFILE (Specify winmd Key File)](winmdkeyfile-specify-winmd-key-file.md)<br/>
-[/WINMDKEYCONTAINER (Specify Key Container)](winmdkeycontainer-specify-key-container.md)<br/>
-[/WINMDDELAYSIGN (Partially Sign a winmd)](winmddelaysign-partially-sign-a-winmd.md)<br/>
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+- [Walkthrough: Creating a Simple Windows Runtime component and calling it from JavaScript](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)
+- [Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)
+- [/WINMDFILE (Specify winmd File)](winmdfile-specify-winmd-file.md)
+- [/WINMDKEYFILE (Specify winmd Key File)](winmdkeyfile-specify-winmd-key-file.md)
+- [/WINMDKEYCONTAINER (Specify Key Container)](winmdkeycontainer-specify-key-container.md)
+- [/WINMDDELAYSIGN (Partially Sign a winmd)](winmddelaysign-partially-sign-a-winmd.md)
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)

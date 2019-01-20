@@ -70,6 +70,6 @@ Provides links to topics covering issues on upgrading your C++ project to more r
 [Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)
   Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.
 
-## See Also
+## See also
 
-[Universal Windows Apps (C++)](../windows/universal-windows-apps-cpp.md)
+- [Universal Windows Apps (C++)](../windows/universal-windows-apps-cpp.md)

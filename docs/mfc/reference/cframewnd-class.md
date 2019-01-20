@@ -1165,13 +1165,13 @@ void ShowOwnedWindows(BOOL bShow);
 *bShow*<br/>
 Specifies whether the owned windows are to be shown or hidden.
 
-## See Also
+## See also
 
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CMDIFrameWnd Class](../../mfc/reference/cmdiframewnd-class.md)<br/>
-[CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CRuntimeClass Structure](../../mfc/reference/cruntimeclass-structure.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CMDIFrameWnd Class](../../mfc/reference/cmdiframewnd-class.md)
+- [CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [CRuntimeClass Structure](../../mfc/reference/cruntimeclass-structure.md)

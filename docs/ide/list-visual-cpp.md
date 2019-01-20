@@ -59,6 +59,6 @@ Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.
 class MyClass {};
 ```
 
-## See Also
+## See also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+- [XML Documentation](../ide/xml-documentation-visual-cpp.md)

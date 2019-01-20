@@ -51,6 +51,6 @@ and not:
 __FUnloadDelayLoadedDLL2("User32.DLL");.
 ```
 
-## See Also
+## See also
 
-[Understanding the Helper Function](understanding-the-helper-function.md)
+- [Understanding the Helper Function](understanding-the-helper-function.md)

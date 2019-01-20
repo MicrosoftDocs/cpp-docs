@@ -164,6 +164,6 @@ See [Structure and Union Members](../c-language/structure-and-union-members.md) 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)
+- [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

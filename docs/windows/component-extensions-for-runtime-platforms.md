@@ -119,7 +119,7 @@ This section lists additional programming constructs, and topics that pertain to
 |[#using Directive](../preprocessor/hash-using-directive-cpp.md)|Imports external assemblies.|
 |[XML Documentation](../ide/xml-documentation-visual-cpp.md)|Explains XML-based code documentation by using [/doc (Process Documentation Comments) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md)|
 
-## See Also
+## See also
 
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
-[Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)
+- [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+- [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)

@@ -12,6 +12,6 @@ ODBC manages scrolling through recordsets through the Cursor Library. These topi
 
 - [Use the ODBC Cursor Library](../../data/odbc/odbc-the-odbc-cursor-library.md)
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -53,5 +53,5 @@ See the example for [fgetpos](fgetpos.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetpos](fgetpos.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fgetpos](fgetpos.md)

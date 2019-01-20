@@ -33,4 +33,4 @@ These constants can be ORed together in arbitrary combinations.
 
 ## See also
 
-[\<codecvt>](../standard-library/codecvt.md)<br/>
+- [\<codecvt>](../standard-library/codecvt.md)

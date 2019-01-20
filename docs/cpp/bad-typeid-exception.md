@@ -66,5 +66,5 @@ Object is NULL
 
 ## See also
 
-[Run-Time Type Information](../cpp/run-time-type-information.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Run-Time Type Information](../cpp/run-time-type-information.md)
+- [Keywords](../cpp/keywords-cpp.md)

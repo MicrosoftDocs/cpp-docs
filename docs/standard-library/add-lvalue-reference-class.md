@@ -59,5 +59,5 @@ add_lvalue_reference_t<int> == int
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_reference Class](../standard-library/remove-reference-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [remove_reference Class](../standard-library/remove-reference-class.md)

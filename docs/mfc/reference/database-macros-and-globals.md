@@ -149,6 +149,6 @@ The handle to the ODBC environment currently in use by MFC. Can be `SQL_HENV_NUL
 
   **Header** afxdb.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

@@ -131,7 +131,7 @@ The following properties are found on COM and .NET assembly references, and cann
 
    Displays the version of the referenced assembly.
 
-## See Also
+## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
-[Working with Project Properties](../ide/working-with-project-properties.md)
+- [Property Pages](../ide/property-pages-visual-cpp.md)
+- [Working with Project Properties](../ide/working-with-project-properties.md)

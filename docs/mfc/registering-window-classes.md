@@ -19,7 +19,6 @@ In contrast, most window class registration activity is done automatically in an
 
 For more information, see [Technical Note 1](../mfc/tn001-window-class-registration.md).
 
-## See Also
+## See also
 
-[Creating Windows](../mfc/creating-windows.md)
-
+- [Creating Windows](../mfc/creating-windows.md)

@@ -268,4 +268,4 @@ See [ON_OLEVERB](#on_oleverb) for a description of the function prototype to be 
 
 ## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

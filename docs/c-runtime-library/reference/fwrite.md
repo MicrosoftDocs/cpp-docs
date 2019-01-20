@@ -63,8 +63,8 @@ See the example for [fread](fread.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_setmode](setmode.md)<br/>
-[fread](fread.md)<br/>
-[_fwrite_nolock](fwrite-nolock.md)<br/>
-[_write](write.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_setmode](setmode.md)
+- [fread](fread.md)
+- [_fwrite_nolock](fwrite-nolock.md)
+- [_write](write.md)

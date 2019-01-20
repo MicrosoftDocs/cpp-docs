@@ -115,6 +115,6 @@ If both the DLL and .exe file are built with /MD so that only one copy of the CR
 New MYLIB variable is: c:\mylib;c:\yourlib
 ```
 
-## See Also
+## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+- [CRT Library Features](../c-runtime-library/crt-library-features.md)

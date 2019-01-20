@@ -20,7 +20,6 @@ In related topics, the following tables describe the general sequence of operati
 
 For the most part, you can follow these tables as a sequence of steps for creating an MFC application, although some of the steps are alternative options. For example, most applications use one type of view class from the several types available.
 
-## See Also
+## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)
-
+- [General MFC Topics](../mfc/general-mfc-topics.md)

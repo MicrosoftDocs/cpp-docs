@@ -158,4 +158,4 @@ For more information about conformance issues, see [C++ conformance improvements
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)

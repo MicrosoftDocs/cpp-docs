@@ -59,8 +59,8 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
-[attribute](../../windows/cpp-attributes-reference.md)<br/>
-[Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)<br/>
-[Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)
+- [attribute](../../windows/cpp-attributes-reference.md)
+- [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)
+- [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)

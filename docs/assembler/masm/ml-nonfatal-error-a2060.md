@@ -14,4 +14,4 @@ The conditional-error directive [.ERRDIF](../../assembler/masm/dot-errdif.md) or
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

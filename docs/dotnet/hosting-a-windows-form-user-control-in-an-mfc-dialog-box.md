@@ -25,9 +25,9 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 [CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md) &#124; [CDialog Class](../mfc/reference/cdialog-class.md) &#124; [CWnd Class](../mfc/reference/cwnd-class.md) &#124; <xref:System.Windows.Forms.Control>
 
-## See Also
+## See also
 
-[Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)<br/>
-[Windows Forms/MFC Programming Differences](../dotnet/windows-forms-mfc-programming-differences.md)<br/>
-[Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)<br/>
-[Hosting a Windows Form User Control as an MFC Dialog Box](../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md)
+- [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)
+- [Windows Forms/MFC Programming Differences](../dotnet/windows-forms-mfc-programming-differences.md)
+- [Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)
+- [Hosting a Windows Form User Control as an MFC Dialog Box](../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md)

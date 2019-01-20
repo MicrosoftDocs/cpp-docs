@@ -9,6 +9,6 @@ ms.assetid: 8377c8e1-3b7b-4a99-9db9-db7b96edef80
 *punctuator*: one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**\[ ] ( ) { } \* , : = ; . #**
 
-## See Also
+## See also
 
-[Lexical Grammar](../c-language/lexical-grammar.md)
+- [Lexical Grammar](../c-language/lexical-grammar.md)

@@ -620,10 +620,9 @@ When a user saves a document, the application removes the autosaved file because
 
 To use this method, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES must be set in *m_dwRestartManagerSupportFlags*.
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[How to: Add Restart Manager Support](../../mfc/how-to-add-restart-manager-support.md)
-
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [How to: Add Restart Manager Support](../../mfc/how-to-add-restart-manager-support.md)

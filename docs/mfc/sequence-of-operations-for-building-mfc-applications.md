@@ -34,10 +34,9 @@ The following table explains the general sequence you might typically follow as 
 |Add splitter windows.|If you want to support window splitting, add a [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) object to your SDI frame window or MDI child window and hook it up in the window's [OnCreateClient](../mfc/reference/cframewnd-class.md#oncreateclient) member function.|The framework supplies splitter-box controls next to the scroll bars and manages splitting your view into multiple panes. If the user splits a window, the framework creates and attaches additional view objects to the document.|
 |Build, test, and debug your application.|Use the facilities of Visual C++ to build, test, and debug your application.|Visual C++ lets you adjust compile, link, and other options. It also lets you browse your source code and class structure.|
 
-## See Also
+## See also
 
-[Sequence of Operations for Creating OLE Applications](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
-[Sequence of Operations for Creating ActiveX Controls](../mfc/sequence-of-operations-for-creating-activex-controls.md)<br/>
-[Sequence of Operations for Creating Database Applications](../mfc/sequence-of-operations-for-creating-database-applications.md)<br/>
-[Building on the Framework](../mfc/building-on-the-framework.md)
-
+- [Sequence of Operations for Creating OLE Applications](../mfc/sequence-of-operations-for-creating-ole-applications.md)
+- [Sequence of Operations for Creating ActiveX Controls](../mfc/sequence-of-operations-for-creating-activex-controls.md)
+- [Sequence of Operations for Creating Database Applications](../mfc/sequence-of-operations-for-creating-database-applications.md)
+- [Building on the Framework](../mfc/building-on-the-framework.md)

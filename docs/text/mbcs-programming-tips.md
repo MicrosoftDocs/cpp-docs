@@ -23,6 +23,6 @@ In new development, you should use Unicode character encoding for all strings th
 
 - [Buffer Overflow](../text/buffer-overflow.md)
 
-## See Also
+## See also
 
-[Support for Multibyte Character Sets (MBCSs)](../text/support-for-multibyte-character-sets-mbcss.md)
+- [Support for Multibyte Character Sets (MBCSs)](../text/support-for-multibyte-character-sets-mbcss.md)

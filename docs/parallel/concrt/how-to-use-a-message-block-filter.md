@@ -55,9 +55,9 @@ bool (T const &)
 
 To eliminate the unnecessary copying of data, use the second form when you have an aggregate type that is transmitted by value.
 
-## See Also
+## See also
 
-[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Walkthrough: Creating a Dataflow Agent](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>
-[Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
-[transformer Class](../../parallel/concrt/reference/transformer-class.md)
+- [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
+- [Walkthrough: Creating a Dataflow Agent](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)
+- [Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
+- [transformer Class](../../parallel/concrt/reference/transformer-class.md)

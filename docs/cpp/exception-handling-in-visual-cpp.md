@@ -32,4 +32,4 @@ For information about exception handling on x64 processors, see [x64 exception h
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)

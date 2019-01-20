@@ -173,6 +173,6 @@ Describes how to mark public APIs as deprecated by using the same attribute that
 
 For more information, see [Deprecating types and members](../cppcx/deprecating-types-and-members-c-cx.md).
 
-## See Also
+## See also
 
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

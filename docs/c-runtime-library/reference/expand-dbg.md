@@ -130,5 +130,5 @@ The output of this program depends on your computer's ability to expand all the 
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_malloc_dbg](malloc-dbg.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_malloc_dbg](malloc-dbg.md)

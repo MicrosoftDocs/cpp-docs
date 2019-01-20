@@ -77,6 +77,6 @@ Make sure you really need dynamic column binding. You might need it because:
     }
     ```
 
-## See Also
+## See also
 
-[Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)
+- [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

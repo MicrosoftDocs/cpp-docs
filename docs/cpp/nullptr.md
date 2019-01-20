@@ -18,5 +18,5 @@ Avoid using NULL or zero (`0`) as a null pointer constant; **nullptr** is less v
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[nullptr](../windows/nullptr-cpp-component-extensions.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [nullptr](../windows/nullptr-cpp-component-extensions.md)

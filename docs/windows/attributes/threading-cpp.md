@@ -57,10 +57,10 @@ See the [licensed](licensed.md) example for a sample use of **threading**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[COM Attributes](com-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[Multithreading Support for Older Code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
-[Neutral Apartments](/windows/desktop/cossdk/neutral-apartments)
+- [COM Attributes](com-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [Multithreading Support for Older Code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md)
+- [Neutral Apartments](/windows/desktop/cossdk/neutral-apartments)

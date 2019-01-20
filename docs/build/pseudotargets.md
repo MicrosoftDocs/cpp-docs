@@ -10,6 +10,6 @@ A pseudotarget is a label used in place of a filename in a dependency line. It i
 
 Pseudotarget names follow the filename syntax rules for targets. However, if the name does not have an extension (that is, does not contain a period), it can exceed the 8-character limit for filenames and can be up to 256 characters long.
 
-## See Also
+## See also
 
-[Targets](../build/targets.md)
+- [Targets](../build/targets.md)

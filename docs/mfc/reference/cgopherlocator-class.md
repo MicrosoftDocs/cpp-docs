@@ -139,8 +139,8 @@ A character pointer to the string's data.
 
 No characters are copied; only a pointer is returned.
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CGopherFileFind Class](../../mfc/reference/cgopherfilefind-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CGopherFileFind Class](../../mfc/reference/cgopherfilefind-class.md)

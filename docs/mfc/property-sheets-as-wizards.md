@@ -16,7 +16,6 @@ To display all of the default buttons, you mush show the Finish button and move 
 
 [!code-cpp[NVC_MFCDocView#5](../mfc/codesnippet/cpp/property-sheets-as-wizards_1.cpp)]
 
-## See Also
+## See also
 
-[Property Sheets](../mfc/property-sheets-mfc.md)
-
+- [Property Sheets](../mfc/property-sheets-mfc.md)

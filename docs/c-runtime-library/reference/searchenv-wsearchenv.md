@@ -120,7 +120,7 @@ C:\Program Files\Microsoft Visual Studio 8\VC\BIN\CL.EXE
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[getenv, _wgetenv](getenv-wgetenv.md)<br/>
-[_putenv, _wputenv](putenv-wputenv.md)<br/>
-[_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)
+- [getenv, _wgetenv](getenv-wgetenv.md)
+- [_putenv, _wputenv](putenv-wputenv.md)
+- [_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md)

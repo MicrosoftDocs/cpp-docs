@@ -19,7 +19,6 @@ To have the compiler generate an error for the use of `std` for members of the \
 
 When compiling with **/Za**, the compiler generates an error.
 
-## See Also
+## See also
 
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)
-
+- [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)

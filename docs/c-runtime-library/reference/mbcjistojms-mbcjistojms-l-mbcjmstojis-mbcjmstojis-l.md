@@ -71,5 +71,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

@@ -39,8 +39,8 @@ The `__svm_vmload` function is equivalent to the `VMLOAD` machine instruction. T
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__svm_vmrun](../intrinsics/svm-vmrun.md)<br/>
-[__svm_vmsave](../intrinsics/svm-vmsave.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__svm_vmrun](../intrinsics/svm-vmrun.md)
+- [__svm_vmsave](../intrinsics/svm-vmsave.md)

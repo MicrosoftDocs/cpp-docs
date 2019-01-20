@@ -89,8 +89,8 @@ Here's how Windows Runtime types can be used to author a generic interface:
 
 - Templated ref classes must be private. They can implement generic interfaces, and can pass template parameter *T* to generic argument *T*. Each instantiation of a templated ref class is itself a ref class.
 
-## See Also
+## See also
 
-[Type System](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+- [Type System](../cppcx/type-system-c-cx.md)
+- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

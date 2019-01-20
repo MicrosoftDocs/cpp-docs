@@ -36,4 +36,4 @@ The type is a synonym for template class [basic_ostream](../standard-library/bas
 
 ## See also
 
-[\<ostream>](../standard-library/ostream.md)<br/>
+- [\<ostream>](../standard-library/ostream.md)

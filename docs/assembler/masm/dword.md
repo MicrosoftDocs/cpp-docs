@@ -19,6 +19,6 @@ Can also be used as a type specifier anywhere a type is legal.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[SDWORD](../../assembler/masm/sdword.md)<br/>
-[DD](../../assembler/masm/dd.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)
+- [SDWORD](../../assembler/masm/sdword.md)
+- [DD](../../assembler/masm/dd.md)

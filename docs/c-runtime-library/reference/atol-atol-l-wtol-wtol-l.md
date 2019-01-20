@@ -126,11 +126,11 @@ Overflow condition occurred.
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[_ecvt](ecvt.md)<br/>
-[_fcvt](fcvt.md)<br/>
-[_gcvt](gcvt.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [_ecvt](ecvt.md)
+- [_fcvt](fcvt.md)
+- [_gcvt](gcvt.md)
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)
+- [_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)

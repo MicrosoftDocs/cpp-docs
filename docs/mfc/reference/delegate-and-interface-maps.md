@@ -271,6 +271,6 @@ void CMyView::OnInitialUpdate()
 
 ## See also
 
-[How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)<br/>
-[How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
+- [How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
+- [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
+- [Macros and Globals](mfc-macros-and-globals.md)

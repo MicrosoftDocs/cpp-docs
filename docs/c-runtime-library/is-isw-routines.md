@@ -319,10 +319,10 @@ int main( void )
 7f            AS  C                              .
 ```
 
-## See Also
+## See also
 
-[Character Classification](../c-runtime-library/character-classification.md)<br/>
-[Locale](../c-runtime-library/locale.md)<br/>
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[to Functions](../c-runtime-library/to-functions.md)
+- [Character Classification](../c-runtime-library/character-classification.md)
+- [Locale](../c-runtime-library/locale.md)
+- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)
+- [Interpretation of Multibyte-Character Sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [to Functions](../c-runtime-library/to-functions.md)

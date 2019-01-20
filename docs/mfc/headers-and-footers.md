@@ -22,7 +22,6 @@ You cannot print a header, or anything else, from [OnPrepareDC](../mfc/reference
 
 - [Allocating GDI resources for printing](../mfc/allocating-gdi-resources.md)
 
-## See Also
+## See also
 
-[Printing](../mfc/printing.md)
-
+- [Printing](../mfc/printing.md)

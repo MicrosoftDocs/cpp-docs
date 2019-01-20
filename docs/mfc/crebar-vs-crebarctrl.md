@@ -22,8 +22,7 @@ Visual C++ provides two ways to take advantage of the rebar common control.
 
 Either method will give you access to the member functions of the rebar control. When you call `CReBar::GetReBarCtrl`, it returns a reference to a `CReBarCtrl` object so you can use either set of member functions. See [CReBar](../mfc/reference/crebar-class.md) for information on constructing and creating a rebar using `CReBar`.
 
-## See Also
+## See also
 
-[Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CReBarCtrl](../mfc/using-crebarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

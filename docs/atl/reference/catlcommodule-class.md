@@ -167,7 +167,7 @@ Removes information about a type library from the system registry. If the module
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-## See Also
+## See also
 
-[_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)
+- [Class Overview](../../atl/atl-class-overview.md)

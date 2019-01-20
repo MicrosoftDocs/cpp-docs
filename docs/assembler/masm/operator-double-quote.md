@@ -15,4 +15,4 @@ Treats "*text*" as a string.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

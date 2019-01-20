@@ -165,6 +165,6 @@ In ANSI C, the result of an assignment expression is not an l-value. Therefore, 
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Assignment Operators](../c-language/c-assignment-operators.md)
+- [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [C Assignment Operators](../c-language/c-assignment-operators.md)

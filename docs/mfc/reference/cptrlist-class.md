@@ -45,8 +45,8 @@ For more information on using `CPtrList`, see the article [Collections](../../mf
 
 **Header:** afxcoll.h
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CObList Class](../../mfc/reference/coblist-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CObList Class](../../mfc/reference/coblist-class.md)

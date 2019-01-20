@@ -26,7 +26,7 @@ For information on adding resources to managed projects, please see [Resources i
 
 None
 
-## See Also
+## See also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
-[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
+- [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)
+- [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)

@@ -23,5 +23,5 @@ struct is_error_code_enum<Future_errc> : public true_type;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<future>](../standard-library/future.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<future>](../standard-library/future.md)

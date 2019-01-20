@@ -299,4 +299,4 @@ the classes of all the non-static data members of type array of class have trivi
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

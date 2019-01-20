@@ -30,6 +30,6 @@ Snapshots are available only if the ODBC Cursor Library was loaded when the `CDa
 
 For more information about the properties snapshots share with all recordsets, see [Recordset (ODBC)](../../data/odbc/recordset-odbc.md). For more information about ODBC and snapshots, including the ODBC Cursor Library, see [ODBC](../../data/odbc/odbc-basics.md).
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

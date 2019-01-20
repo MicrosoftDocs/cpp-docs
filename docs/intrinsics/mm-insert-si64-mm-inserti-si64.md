@@ -111,7 +111,7 @@ result3 = 0xfffffffff3210fff
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
-[_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

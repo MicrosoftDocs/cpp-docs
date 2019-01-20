@@ -65,4 +65,4 @@ A<int> // a template id
 
 ## See also
 
-[Types of Expressions](../cpp/types-of-expressions.md)
+- [Types of Expressions](../cpp/types-of-expressions.md)

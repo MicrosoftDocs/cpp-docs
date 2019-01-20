@@ -214,7 +214,7 @@ int main() {
 
 Compiler option: `/clr`
 
-## See Also
+## See also
 
-[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)<br/>
-[Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)
+- [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)
+- [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)

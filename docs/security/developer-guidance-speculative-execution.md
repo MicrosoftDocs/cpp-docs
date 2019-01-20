@@ -344,7 +344,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 Another technique that can be used to mitigate speculative execution side channel vulnerabilities is to remove sensitive information from memory. Software developers can look for opportunities to refactor their application such that sensitive information is not accessible during speculative execution. This can be accomplished by refactoring the design of an application to isolate sensitive information into separate processes. For example, a web browser application can attempt to isolate the data associated with each web origin into separate processes, thus preventing one process from being able to access cross-origin data through speculative execution.
 
-## See Also
+## See also
 
-[Guidance to mitigate speculative execution side-channel vulnerabilities](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)<br/>
-[Mitigating speculative execution side channel hardware vulnerabilities](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)
+- [Guidance to mitigate speculative execution side-channel vulnerabilities](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)
+- [Mitigating speculative execution side channel hardware vulnerabilities](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)

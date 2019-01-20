@@ -23,6 +23,6 @@ if( line[--i] != '\n' )
 
 In this example, the variable `i` is decremented before it is used as a subscript to `line`.
 
-## See Also
+## See also
 
-[C Unary Operators](../c-language/c-unary-operators.md)
+- [C Unary Operators](../c-language/c-unary-operators.md)

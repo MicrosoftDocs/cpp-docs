@@ -44,9 +44,8 @@ The following classes provide support for windows:
 
 [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)<br/>
-[Message Map Macros](../atl/reference/message-map-macros-atl.md)<br/>
-[Window Class Macros](../atl/reference/window-class-macros.md)
-
+- [Class Overview](../atl/atl-class-overview.md)
+- [Message Map Macros](../atl/reference/message-map-macros-atl.md)
+- [Window Class Macros](../atl/reference/window-class-macros.md)

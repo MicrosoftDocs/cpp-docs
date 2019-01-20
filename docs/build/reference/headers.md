@@ -17,6 +17,6 @@ This option displays the file header and the header for each section. When used 
 
 Only the **/HEADERS** DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+- [DUMPBIN Options](../../build/reference/dumpbin-options.md)

@@ -26,8 +26,7 @@ The following example assumes that an existing image list object with two images
 
 [!code-cpp[NVC_MFCControlLadenDialog#28](../mfc/codesnippet/cpp/using-an-image-list-with-a-rebar-control_1.cpp)]
 
-## See Also
+## See also
 
-[Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CReBarCtrl](../mfc/using-crebarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

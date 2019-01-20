@@ -125,4 +125,4 @@ _snwscanf converted 2 fields: 15 and 12.000000
 
 ## See also
 
-[scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)<br/>
+- [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md)

@@ -60,6 +60,6 @@ This enables volatile objects to be used for memory locks and releases in multit
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[const](../cpp/const-cpp.md)<br/>
-[const and volatile Pointers](../cpp/const-and-volatile-pointers.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [const](../cpp/const-cpp.md)
+- [const and volatile Pointers](../cpp/const-and-volatile-pointers.md)

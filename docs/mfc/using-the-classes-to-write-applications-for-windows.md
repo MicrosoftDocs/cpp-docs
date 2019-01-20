@@ -58,7 +58,6 @@ Other parts of the framework include:
 
 For a general guide to MFC documentation, see [General MFC Topics](../mfc/general-mfc-topics.md).
 
-## See Also
+## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)
-
+- [General MFC Topics](../mfc/general-mfc-topics.md)

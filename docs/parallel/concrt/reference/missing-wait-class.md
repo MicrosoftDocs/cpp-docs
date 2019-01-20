@@ -54,10 +54,10 @@ missing_wait() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[task_group Class](task-group-class.md)<br/>
-[wait](task-group-class.md)<br/>
-[run_and_wait](task-group-class.md)<br/>
-[structured_task_group Class](structured-task-group-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [task_group Class](task-group-class.md)
+- [wait](task-group-class.md)
+- [run_and_wait](task-group-class.md)
+- [structured_task_group Class](structured-task-group-class.md)

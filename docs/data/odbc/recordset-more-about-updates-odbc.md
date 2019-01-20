@@ -89,10 +89,10 @@ When these exceptions are thrown, you remain in the `AddNew` or `Edit` state you
 
 - AFX_SQL_ERROR_MULTIPLE_ROWS_AFFECTED when the table you are updating has no primary key or unique index and you do not have enough columns in the recordset to uniquely identify a table row.
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
-[Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
-[SQL](../../data/odbc/sql.md)<br/>
-[Exceptions: Database Exceptions](../../mfc/exceptions-database-exceptions.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+- [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+- [SQL](../../data/odbc/sql.md)
+- [Exceptions: Database Exceptions](../../mfc/exceptions-database-exceptions.md)

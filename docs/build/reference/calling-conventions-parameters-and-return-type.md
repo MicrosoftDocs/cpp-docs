@@ -126,6 +126,6 @@ PfnDliHook __pfnDliNotifyHook2 = delayHook;
 */
 ```
 
-## See Also
+## See also
 
-[Understanding the Helper Function](../../build/reference/understanding-the-helper-function.md)
+- [Understanding the Helper Function](../../build/reference/understanding-the-helper-function.md)

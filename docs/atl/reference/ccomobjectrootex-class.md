@@ -347,9 +347,9 @@ To obtain ownership, the thread must call `Lock`. Each call to `Lock` requires a
 
 If the thread model is single-threaded, this method does nothing.
 
-## See Also
+## See also
 
-[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
-[CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
-[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)
+- [CComObject Class](../../atl/reference/ccomobject-class.md)
+- [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

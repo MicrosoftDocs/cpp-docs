@@ -187,8 +187,7 @@ The size, in bytes, of the member variable.
 
 This macro is used in conjunction with the BEGIN_RDX_MAP and END_RDX_MAP macros to associate a member variable with a given registry entry. The global function [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), or the member function of the same name created by the BEGIN_RDX_MAP and END_RDX_MAP macros, should be used to perform exchange of data between the system registry and the member variables in the RDX map.
 
-## See Also
+## See also
 
-[Macros](../../atl/reference/atl-macros.md)<br/>
-[RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)
-
+- [Macros](../../atl/reference/atl-macros.md)
+- [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)

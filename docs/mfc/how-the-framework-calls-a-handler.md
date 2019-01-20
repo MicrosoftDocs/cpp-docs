@@ -20,7 +20,6 @@ The following topics first examine how the framework routes commands, then exami
 
 - [Overriding the Standard Command Routing](../mfc/overriding-the-standard-command-routing.md)
 
-## See Also
+## See also
 
-[Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
-
+- [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)

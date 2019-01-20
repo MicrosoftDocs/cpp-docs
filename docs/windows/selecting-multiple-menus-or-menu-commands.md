@@ -56,6 +56,6 @@ You can move or copy menus and menu commands using the drag-and-drop method or b
 
 Win32
 
-## See Also
+## See also
 
-[Menu Editor](../windows/menu-editor.md)
+- [Menu Editor](../windows/menu-editor.md)

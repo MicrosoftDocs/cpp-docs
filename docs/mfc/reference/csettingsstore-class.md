@@ -422,8 +422,8 @@ TRUE if successful; otherwise FALSE.
 
 In order to write to the registry, you must set *bReadOnly* to a nonzero value when you create a [CSettingsStore](../../mfc/reference/csettingsstore-class.md) object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore).
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)

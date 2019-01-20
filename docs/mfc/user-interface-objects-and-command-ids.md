@@ -16,6 +16,6 @@ The figure "Command Updating in the Framework" below shows how MFC updates user-
 ![Command updating in the Framework](../mfc/media/vc385p2.png "Command updating in the Framework") <br/>
 Command Updating in the Framework
 
-## See Also
+## See also
 
-[Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
+- [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)

@@ -724,8 +724,8 @@ TRUE if the method is successful; otherwise FALSE.
 
 The user category setting is not currently used by the framework.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CPropertySheet Class](../../mfc/reference/cpropertysheet-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CPropertySheet Class](../../mfc/reference/cpropertysheet-class.md)

@@ -42,6 +42,6 @@ C++ Interop therefore requires that data marshaling must be provided explicitly,
 
 For more information about C++ Interop, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
-## See Also
+## See also
 
-[Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)
+- [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)

@@ -33,7 +33,7 @@ class AgileActivationFactory :
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
-[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)<br/>
-[ActivationFactory Class](activationfactory-class.md)
+- [Microsoft::WRL Namespace](microsoft-wrl-namespace.md)
+- [ActivationFactory Class](activationfactory-class.md)

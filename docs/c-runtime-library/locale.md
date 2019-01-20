@@ -57,7 +57,7 @@ More secure versions of the functions in the following table are available, indi
 > [!NOTE]
 > For multibyte routines, the multibyte code page must be equivalent to the locale set with [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md). [_setmbcp](../c-runtime-library/reference/setmbcp.md), with an argument of **_MB_CP_LOCALE** makes the multibyte code page the same as the **setlocale** code page.
 
-## See Also
+## See also
 
-[Internationalization](../c-runtime-library/internationalization.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Internationalization](../c-runtime-library/internationalization.md)
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

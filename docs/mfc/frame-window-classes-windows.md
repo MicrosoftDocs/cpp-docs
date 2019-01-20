@@ -31,7 +31,6 @@ Class `CMenu` provides an interface through which to access your application's m
 [CMenu](../mfc/reference/cmenu-class.md)<br/>
 Encapsulates an `HMENU` handle to the application's menu bar and pop-up menus.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

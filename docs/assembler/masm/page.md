@@ -16,4 +16,4 @@ The first directive sets line *length* and character *width* of the program list
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

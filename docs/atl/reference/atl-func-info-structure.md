@@ -52,9 +52,8 @@ you would define an `_ATL_FUNC_INFO` structure:
 
 Header: atlcom.h
 
-## See Also
+## See also
 
-[Classes and structs](../../atl/reference/atl-classes.md)<br/>
-[IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)<br/>
-[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)
-
+- [Classes and structs](../../atl/reference/atl-classes.md)
+- [IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)
+- [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)

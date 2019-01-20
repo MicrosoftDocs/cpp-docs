@@ -31,9 +31,9 @@ For information on adding resources to managed projects, please see [Resources i
 
 None
 
-## See Also
+## See also
 
-[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+- [Working with Resource Files](../windows/working-with-resource-files.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+- [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

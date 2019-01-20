@@ -31,4 +31,4 @@ These operators compare two `_bstr_t` objects lexicographically. The operators r
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+- [_bstr_t Class](../cpp/bstr-t-class.md)

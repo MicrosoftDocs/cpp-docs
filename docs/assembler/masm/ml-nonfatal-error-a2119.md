@@ -16,4 +16,4 @@ A language type must be declared in each procedure definition or prototype if a 
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

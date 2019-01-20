@@ -34,7 +34,6 @@ This technique is used in the MFC OLE sample program [HIERSVR](../visual-cpp-sam
 
 - [OLE](../mfc/ole-background.md)
 
-## See Also
+## See also
 
-[Clipboard: Using the OLE Clipboard Mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
-
+- [Clipboard: Using the OLE Clipboard Mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)

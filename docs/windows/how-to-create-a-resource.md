@@ -86,6 +86,6 @@ Win32
 
 ## See also
 
-[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)<br/>
+- [Working with Resource Files](../windows/working-with-resource-files.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Editors](../windows/resource-editors.md)

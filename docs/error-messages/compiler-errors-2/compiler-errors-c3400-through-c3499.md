@@ -115,4 +115,3 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler Error C3497|you cannot construct an instance of a lambda|
 |[Compiler Error C3498](compiler-error-c3498.md)|'*identifier*': you cannot capture a variable that has a managed/WinRT type|
 |[Compiler Error C3499](compiler-error-c3499.md)|a lambda that has been specified to have a void return type cannot return a value|
-

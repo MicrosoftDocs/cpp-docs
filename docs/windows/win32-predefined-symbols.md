@@ -29,7 +29,7 @@ These symbols are defined in the Win32 header files, and they support standard W
 
 Win32
 
-## See Also
+## See also
 
-[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+- [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)
+- [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

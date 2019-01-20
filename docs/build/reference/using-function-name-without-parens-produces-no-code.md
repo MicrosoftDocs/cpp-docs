@@ -32,6 +32,6 @@ void funcn() {
 }
 ```
 
-## See Also
+## See also
 
-[Optimizing Your Code](../../build/reference/optimizing-your-code.md)
+- [Optimizing Your Code](../../build/reference/optimizing-your-code.md)

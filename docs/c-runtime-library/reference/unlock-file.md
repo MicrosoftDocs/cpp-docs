@@ -39,7 +39,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_lock_file](lock-file.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [_open, _wopen](open-wopen.md)
+- [_lock_file](lock-file.md)

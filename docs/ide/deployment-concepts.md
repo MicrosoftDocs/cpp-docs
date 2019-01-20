@@ -40,4 +40,3 @@ For deployment examples and suggestions about troubleshooting, see:
 
 - [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
 - [Understanding the Dependencies of a Visual C++ Application](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)
-

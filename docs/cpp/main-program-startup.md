@@ -47,7 +47,7 @@ The types for `argc` and `argv` are defined by the language. The names `argc`, `
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Using wmain Instead of main](../cpp/using-wmain-instead-of-main.md)<br/>
-[main Function Restrictions](../cpp/main-function-restrictions.md)<br/>
-[Parsing C++ Command-Line Arguments](../cpp/parsing-cpp-command-line-arguments.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [Using wmain Instead of main](../cpp/using-wmain-instead-of-main.md)
+- [main Function Restrictions](../cpp/main-function-restrictions.md)
+- [Parsing C++ Command-Line Arguments](../cpp/parsing-cpp-command-line-arguments.md)

@@ -85,7 +85,7 @@ G: (Current directory is G:\)
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdrive](chdrive.md)<br/>
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
-[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)
+- [_chdrive](chdrive.md)
+- [_getcwd, _wgetcwd](getcwd-wgetcwd.md)
+- [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)

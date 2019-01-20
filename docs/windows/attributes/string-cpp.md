@@ -49,8 +49,8 @@ __interface IFireTabCtrl
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Array Attributes](array-attributes.md)<br/>
-[export](export.md)
+- [IDL Attributes](idl-attributes.md)
+- [Array Attributes](array-attributes.md)
+- [export](export.md)

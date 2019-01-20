@@ -50,4 +50,4 @@ The constructor of `pointer_to_unary_function` is rarely used directly. See the 
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

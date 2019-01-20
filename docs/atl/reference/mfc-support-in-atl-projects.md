@@ -42,9 +42,8 @@ int CProjNameApp::ExitInstance()
 
 You can view the application object class and its `InitInstance` and `ExitInstance` functions in Class View.
 
-## See Also
+## See also
 
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
-[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)<br/>
-[Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
-
+- [Adding a Class](../../ide/adding-a-class-visual-cpp.md)
+- [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)
+- [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)

@@ -19,4 +19,4 @@ Equivalent to the combination of [.LIST](../../assembler/masm/dot-list.md), [.LI
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

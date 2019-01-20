@@ -310,10 +310,10 @@ Use this method to customize the list of colors that are used when the auto colo
 
 Use [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) to enable or disable the auto color feature.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[CBaseTabbedPane Class](../../mfc/reference/cbasetabbedpane-class.md)<br/>
-[CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)
+- [CBaseTabbedPane Class](../../mfc/reference/cbasetabbedpane-class.md)
+- [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)

@@ -10,4 +10,4 @@ For more information about ML fatal errors, see [ML Error Messages](../../assemb
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

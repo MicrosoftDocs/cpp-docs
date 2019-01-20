@@ -64,4 +64,4 @@ See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) 
 
 ## See also
 
-[\<exception>](../standard-library/exception.md)<br/>
+- [\<exception>](../standard-library/exception.md)

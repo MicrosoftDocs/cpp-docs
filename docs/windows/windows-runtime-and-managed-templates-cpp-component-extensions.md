@@ -123,6 +123,6 @@ template <>
 class A <int> {};
 ```
 
-## See Also
+## See also
 
-[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)
+- [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

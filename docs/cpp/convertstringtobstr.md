@@ -58,4 +58,4 @@ BSTR text: Test
 
 ## See also
 
-[Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)
+- [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

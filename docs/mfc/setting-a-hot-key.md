@@ -12,8 +12,7 @@ Your application can use the information provided by a hot key ([CHotKeyCtrl](..
 
 - Set up a thread-specific hot key by calling the Windows function [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey).
 
-## See Also
+## See also
 
-[Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)
+- [Controls](../mfc/controls-mfc.md)

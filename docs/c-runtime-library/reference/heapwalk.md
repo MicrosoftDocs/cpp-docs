@@ -148,8 +148,8 @@ OK - end of heap
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[_heapadd](../../c-runtime-library/heapadd.md)<br/>
-[_heapchk](heapchk.md)<br/>
-[_heapmin](heapmin.md)<br/>
-[_heapset](../../c-runtime-library/heapset.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [_heapadd](../../c-runtime-library/heapadd.md)
+- [_heapchk](heapchk.md)
+- [_heapmin](heapmin.md)
+- [_heapset](../../c-runtime-library/heapset.md)

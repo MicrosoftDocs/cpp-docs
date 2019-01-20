@@ -24,4 +24,4 @@ If the point of declaration were *after* the initialization, then the local `dVa
 
 ## See also
 
-[Scope](../cpp/scope-visual-cpp.md)
+- [Scope](../cpp/scope-visual-cpp.md)

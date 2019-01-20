@@ -138,6 +138,6 @@ operator ID2D1BitmapRenderTarget*();
 
 Pointer to an ID2D1BitmapRenderTarget interface or NULL if object is not initialized yet.
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

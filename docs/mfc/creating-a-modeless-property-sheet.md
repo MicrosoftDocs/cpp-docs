@@ -18,9 +18,8 @@ The most convenient way to provide access to property pages within a property sh
 
 There are many user-interface alternatives for determining when the settings of the modeless property sheet should be applied to an external object. One alternative is to apply the settings of the current property page whenever the user changes any value. Another alternative is to provide an Apply button, which allows the user to accumulate changes in the property pages before committing them to the external object. For information on ways to handle the Apply button, see the article [Handling the Apply Button](../mfc/handling-the-apply-button.md).
 
-## See Also
+## See also
 
-[Property Sheets](../mfc/property-sheets-mfc.md)<br/>
-[Exchanging Data](../mfc/exchanging-data.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-
+- [Property Sheets](../mfc/property-sheets-mfc.md)
+- [Exchanging Data](../mfc/exchanging-data.md)
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

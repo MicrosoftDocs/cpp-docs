@@ -14,4 +14,4 @@ Although an `__asm` block can reference C or C++ data types and objects, it cann
 
 ## See also
 
-[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>
+- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)

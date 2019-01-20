@@ -17,8 +17,7 @@ The following example initializes an existing `CStatusBarCtrl` object (`m_Status
 
 For more information on setting the mode of a `CStatusBarCtrl` object to simple, see [Setting the Mode of a CStatusBarCtrl Object](../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md).
 
-## See Also
+## See also
 
-[Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

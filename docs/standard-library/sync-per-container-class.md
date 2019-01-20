@@ -58,4 +58,4 @@ The member function always returns **false**.
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+- [\<allocators>](../standard-library/allocators-header.md)

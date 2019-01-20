@@ -3500,4 +3500,4 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 
 ## See also
 
-[C Run-Time Library Reference](../../c-runtime-library/c-run-time-library-reference.md)<br/>
+- [C Run-Time Library Reference](../../c-runtime-library/c-run-time-library-reference.md)

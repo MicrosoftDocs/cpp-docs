@@ -195,13 +195,13 @@ If you move past the last record in the recordset, the record view continues to 
 > [!CAUTION]
 >  Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, or `OnUpdateRecordPrev` — before the corresponding move operation to determine whether the recordset has any records.
 
-## See Also
+## See also
 
-[CFormView Class](../../mfc/reference/cformview-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)<br/>
-[CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)<br/>
-[CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)<br/>
-[CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)<br/>
-[CDaoWorkspace Class](../../mfc/reference/cdaoworkspace-class.md)<br/>
-[CFormView Class](../../mfc/reference/cformview-class.md)
+- [CFormView Class](../../mfc/reference/cformview-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)
+- [CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)
+- [CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)
+- [CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)
+- [CDaoWorkspace Class](../../mfc/reference/cdaoworkspace-class.md)
+- [CFormView Class](../../mfc/reference/cformview-class.md)

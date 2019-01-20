@@ -119,6 +119,6 @@ public:property String^ Message {    String^ get();}
 
 A description of the exception.
 
-## See Also
+## See also
 
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)
+- [Platform namespace](../cppcx/platform-namespace-c-cx.md)

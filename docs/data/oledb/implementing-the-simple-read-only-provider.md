@@ -12,6 +12,6 @@ The extended example in this topic shows how to edit the wizard-created files to
 
 - [Store the strings in the provider](../../data/oledb/storing-strings-in-the-ole-db-provider.md)
 
-## See Also
+## See also
 
-[Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
+- [Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)

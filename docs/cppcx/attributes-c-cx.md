@@ -37,8 +37,8 @@ The next example shows how to define a custom attribute and then initialize it w
 
 [!code-cpp[cx_attributes#02](../cppcx/codesnippet/CPP/cx_attributes/class1.h#02)]
 
-## See Also
+## See also
 
-[Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+- [Type System (C++/CX)](../cppcx/type-system-c-cx.md)
+- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

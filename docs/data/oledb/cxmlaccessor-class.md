@@ -102,14 +102,14 @@ The following shows how the row data is formatted in XML. `DATA` below represent
 
 `</row>`
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CAccessor Class](../../data/oledb/caccessor-class.md)<br/>
-[CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)<br/>
-[CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
-[CDynamicStringAccessor Class](../../data/oledb/cdynamicstringaccessor-class.md)<br/>
-[CDynamicStringAccessorA Class](../../data/oledb/cdynamicstringaccessora-class.md)<br/>
-[CDynamicStringAccessorW Class](../../data/oledb/cdynamicstringaccessorw-class.md)<br/>
-[CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [CAccessor Class](../../data/oledb/caccessor-class.md)
+- [CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)
+- [CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)
+- [CDynamicStringAccessor Class](../../data/oledb/cdynamicstringaccessor-class.md)
+- [CDynamicStringAccessorA Class](../../data/oledb/cdynamicstringaccessora-class.md)
+- [CDynamicStringAccessorW Class](../../data/oledb/cdynamicstringaccessorw-class.md)
+- [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)

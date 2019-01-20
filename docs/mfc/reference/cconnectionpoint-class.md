@@ -232,8 +232,7 @@ A pointer to the interface pointer identified by *pUnkSink*. If the object does 
 
 A standard HRESULT value.
 
-## See Also
+## See also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

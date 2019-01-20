@@ -1239,10 +1239,10 @@ TRUE if resize succeeds; otherwise FALSE.
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)<br/>
-[CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)
+- [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)

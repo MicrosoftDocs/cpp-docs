@@ -401,6 +401,6 @@ An IVectorView\<T> object.
 
 The first syntax example is the default constructor. The second syntax example is an explicit constructor that is used to construct a VectorViewIterator from an IVectorView\<T> object.
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)
+- [Platform Namespace](platform-namespace-c-cx.md)

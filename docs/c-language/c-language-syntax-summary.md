@@ -11,6 +11,6 @@ This section gives the full description of the C language and the Microsoft-spec
 > [!NOTE]
 >  This syntax summary is not part of the ANSI C standard, but is included for information only. Microsoft-specific syntax is noted in comments following the syntax.
 
-## See Also
+## See also
 
-[C Language Reference](../c-language/c-language-reference.md)
+- [C Language Reference](../c-language/c-language-reference.md)

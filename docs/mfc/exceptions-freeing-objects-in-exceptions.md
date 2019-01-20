@@ -50,7 +50,6 @@ If you call functions that can throw exceptions, you can use **try/catch** block
 
 For more information, see [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
-## See Also
+## See also
 
-[Exception Handling](../mfc/exception-handling-in-mfc.md)
-
+- [Exception Handling](../mfc/exception-handling-in-mfc.md)

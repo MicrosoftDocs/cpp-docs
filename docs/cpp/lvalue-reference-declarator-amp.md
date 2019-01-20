@@ -64,7 +64,7 @@ Bill is 40
 
 ## See also
 
-[References](../cpp/references-cpp.md)<br/>
-[Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)<br/>
-[Reference-Type Function Returns](../cpp/reference-type-function-returns.md)<br/>
-[References to Pointers](../cpp/references-to-pointers.md)
+- [References](../cpp/references-cpp.md)
+- [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)
+- [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)
+- [References to Pointers](../cpp/references-to-pointers.md)

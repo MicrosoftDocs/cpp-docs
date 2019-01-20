@@ -50,6 +50,6 @@ Platform::String ToString();
 
 A Platform::String that represents the value.
 
-## See Also
+## See also
 
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)
+- [Platform namespace](../cppcx/platform-namespace-c-cx.md)

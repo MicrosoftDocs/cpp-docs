@@ -324,10 +324,9 @@ Nonzero if successful; otherwise zero.
 
   See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
 
-## See Also
+## See also
 
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CAnimateCtrl::Create](#create)<br/>
-[ON_CONTROL](message-map-macros-mfc.md#on_control)
-
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CAnimateCtrl::Create](#create)
+- [ON_CONTROL](message-map-macros-mfc.md#on_control)

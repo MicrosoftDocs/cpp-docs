@@ -267,6 +267,6 @@ Nonzero if a connection was disconnected; otherwise 0.
 
 **Header:** afxctl.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

@@ -22,7 +22,6 @@ Use caution in deciding [when to initialize](../mfc/when-to-initialize-cwnd-obje
 
 - [Destroying frame windows](../mfc/destroying-frame-windows.md)
 
-## See Also
+## See also
 
-[Using Frame Windows](../mfc/using-frame-windows.md)
-
+- [Using Frame Windows](../mfc/using-frame-windows.md)

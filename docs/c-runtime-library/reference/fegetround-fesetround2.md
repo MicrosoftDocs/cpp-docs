@@ -76,7 +76,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
-[rint, rintf, rintl](rint-rintf-rintl.md)<br/>
-[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)
+- [rint, rintf, rintl](rint-rintf-rintl.md)
+- [lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)

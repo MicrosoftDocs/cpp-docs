@@ -18,4 +18,4 @@ Similarly, for multidimensional arrays, the address is derived using the followi
 
 ## See also
 
-[Arrays](../cpp/arrays-cpp.md)<br/>
+- [Arrays](../cpp/arrays-cpp.md)

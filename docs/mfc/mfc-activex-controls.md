@@ -101,6 +101,6 @@ By default, the ActiveX control classes and tools are installed in the following
 
 There are also samples for MFC ActiveX controls. For more information about these samples, see [Controls Samples: MFC-Based ActiveX Controls](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

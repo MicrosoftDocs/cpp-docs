@@ -150,6 +150,6 @@ Next, you will add a property page.
 
 [Back to Step 4](../atl/changing-the-drawing-code-atl-tutorial-part-4.md) &#124; [On to Step 6](../atl/adding-a-property-page-atl-tutorial-part-6.md)
 
-## See Also
+## See also
 
-[Tutorial](../atl/active-template-library-atl-tutorial.md)
+- [Tutorial](../atl/active-template-library-atl-tutorial.md)

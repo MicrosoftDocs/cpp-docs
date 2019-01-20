@@ -370,4 +370,4 @@ The destructor calls `get_deleter()(stored_ptr)`.
 
 ## See also
 
-[\<memory>](../standard-library/memory.md)<br/>
+- [\<memory>](../standard-library/memory.md)

@@ -645,11 +645,11 @@ void StoreRecentTabRelatedInfo(
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CPaneContainerManager Class](../../mfc/reference/cpanecontainermanager-class.md)<br/>
-[CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md)<br/>
-[CDockingManager Class](../../mfc/reference/cdockingmanager-class.md)<br/>
-[CBasePane Class](../../mfc/reference/cbasepane-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CPaneContainerManager Class](../../mfc/reference/cpanecontainermanager-class.md)
+- [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md)
+- [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md)
+- [CBasePane Class](../../mfc/reference/cbasepane-class.md)

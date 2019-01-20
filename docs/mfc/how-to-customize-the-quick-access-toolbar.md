@@ -45,6 +45,6 @@ Quick Access Toolbar commands do not appear on the design surface. To view them,
 
 - On the **Ribbon Editor Toolbar**, click **Test Ribbon**.
 
-## See Also
+## See also
 
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+- [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)

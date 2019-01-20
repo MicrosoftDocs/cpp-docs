@@ -88,10 +88,10 @@ For more information about how the Concurrency Runtime compares to OpenMP and ho
 
 [[Top](#top)]
 
-## See Also
+## See also
 
-[Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
-[Overview](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
-[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)
+- [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)
+- [Overview](../../parallel/concrt/asynchronous-message-blocks.md)
+- [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)
+- [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
+- [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)

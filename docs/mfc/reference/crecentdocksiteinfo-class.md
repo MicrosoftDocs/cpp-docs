@@ -239,8 +239,8 @@ virtual void StoreDockInfo(
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CDockSite Class](../../mfc/reference/cdocksite-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CDockSite Class](../../mfc/reference/cdocksite-class.md)

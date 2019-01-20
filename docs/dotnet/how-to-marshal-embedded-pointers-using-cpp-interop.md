@@ -79,6 +79,6 @@ array[8] = 97.754975
 array[9] = 27.370446
 ```
 
-## See Also
+## See also
 
-[Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+- [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

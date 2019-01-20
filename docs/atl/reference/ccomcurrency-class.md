@@ -622,8 +622,8 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 [!code-cpp[NVC_ATL_Utilities#54](../../atl/codesnippet/cpp/ccomcurrency-class_21.cpp)]
 
-## See Also
+## See also
 
-[COleCurrency Class](../../mfc/reference/colecurrency-class.md)<br/>
-[CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [COleCurrency Class](../../mfc/reference/colecurrency-class.md)
+- [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy)
+- [Class Overview](../../atl/atl-class-overview.md)

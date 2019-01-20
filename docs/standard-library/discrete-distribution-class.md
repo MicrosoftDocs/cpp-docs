@@ -273,4 +273,4 @@ This parameter package can be passed to `operator()` to generate the return valu
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+- [\<random>](../standard-library/random.md)

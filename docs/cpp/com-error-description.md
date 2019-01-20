@@ -29,4 +29,4 @@ Calls the `IErrorInfo::GetDescription` function and retrieves `IErrorInfo` recor
 
 ## See also
 
-[_com_error Class](../cpp/com-error-class.md)
+- [_com_error Class](../cpp/com-error-class.md)

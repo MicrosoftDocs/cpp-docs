@@ -18,6 +18,6 @@ The following topics explain more about data sources:
 
 - [Data Source: Determining the Schema of the Data Source (ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -146,7 +146,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-## See Also
+## See also
 
-[Using Accessors](../../data/oledb/using-accessors.md)<br/>
-[User Records](../../data/oledb/user-records.md)
+- [Using Accessors](../../data/oledb/using-accessors.md)
+- [User Records](../../data/oledb/user-records.md)

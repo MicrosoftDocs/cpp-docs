@@ -243,11 +243,11 @@ Number of files closed by _fcloseall: 1
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
-[ferror](ferror.md)<br/>
-[_fileno](fileno.md)<br/>
-[freopen, _wfreopen](freopen-wfreopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_setmode](setmode.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fclose, _fcloseall](fclose-fcloseall.md)
+- [_fdopen, _wfdopen](fdopen-wfdopen.md)
+- [ferror](ferror.md)
+- [_fileno](fileno.md)
+- [freopen, _wfreopen](freopen-wfreopen.md)
+- [_open, _wopen](open-wopen.md)
+- [_setmode](setmode.md)

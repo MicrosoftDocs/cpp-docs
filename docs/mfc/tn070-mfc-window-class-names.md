@@ -33,9 +33,8 @@ The hex digits that replace the `%x` characters are filled in from data from the
 
 The first form (`Afx:%x:%x`) is used when **hCursor**, **hbrBackground**, and **hIcon** are all **NULL**.
 
-## See Also
+## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)<br/>
-[TN020: ID Naming and Numbering Conventions](../mfc/tn020-id-naming-and-numbering-conventions.md)
-
+- [Technical Notes by Number](../mfc/technical-notes-by-number.md)
+- [Technical Notes by Category](../mfc/technical-notes-by-category.md)
+- [TN020: ID Naming and Numbering Conventions](../mfc/tn020-id-naming-and-numbering-conventions.md)

@@ -10,6 +10,6 @@ When the consumer requests a data type that is not supported by the provider, th
 
 If you implement an interface like `IRowsetChange` that requires data conversion, you can call Msdaenum.dll to do the conversion. Use `GetData`, defined in Atldb.h, as an example.
 
-## See Also
+## See also
 
-[Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)
+- [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

@@ -54,8 +54,8 @@ int main(void)
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Keywords](../cpp/keywords-cpp.md)

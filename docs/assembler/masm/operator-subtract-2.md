@@ -17,4 +17,4 @@ Returns *expression1* minus *expression2*. The second operator reverses the sign
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

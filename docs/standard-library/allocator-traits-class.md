@@ -193,6 +193,6 @@ This method is used to specify an allocator when the associated container is cop
 
 ## See also
 
-[\<memory>](../standard-library/memory.md)<br/>
-[pointer_traits Struct](../standard-library/pointer-traits-struct.md)<br/>
-[scoped_allocator_adaptor Class](../standard-library/scoped-allocator-adaptor-class.md)<br/>
+- [\<memory>](../standard-library/memory.md)
+- [pointer_traits Struct](../standard-library/pointer-traits-struct.md)
+- [scoped_allocator_adaptor Class](../standard-library/scoped-allocator-adaptor-class.md)

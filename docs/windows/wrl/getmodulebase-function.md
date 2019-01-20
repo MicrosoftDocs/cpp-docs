@@ -33,4 +33,4 @@ You can use this function to control reference counts by calling [ModuleBase::In
 
 ## See also
 
-[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)
+- [Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

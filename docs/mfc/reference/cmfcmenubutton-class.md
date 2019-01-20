@@ -183,8 +183,8 @@ If you call this function and *bCalcOnly* is TRUE, `SizeToContent` will calculat
 
 The new size of the button is calculated to fit the button text, image, and arrow. The framework also adds in predefined margins of 10 pixels for the horizontal edge and 5 pixels for the vertical edge.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCButton Class](../../mfc/reference/cmfcbutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md)

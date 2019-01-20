@@ -67,4 +67,4 @@ is_copy_constructible<NotCopyable > == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

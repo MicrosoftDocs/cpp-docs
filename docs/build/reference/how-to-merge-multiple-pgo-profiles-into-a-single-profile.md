@@ -33,4 +33,4 @@ If the PGO Manager is run without any .pgc file arguments, it searches the local
 
 ## See also
 
-[Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md)
+- [Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md)

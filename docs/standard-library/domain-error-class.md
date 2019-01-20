@@ -60,5 +60,5 @@ Type: class std::domain_error
 
 ## See also
 
-[logic_error Class](../standard-library/logic-error-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [logic_error Class](../standard-library/logic-error-class.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

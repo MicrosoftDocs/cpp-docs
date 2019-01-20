@@ -30,4 +30,4 @@ Like the library function `sscanf_s`, the `istringstream` class supports input f
 
 ## See also
 
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
+- [iostream Programming](../standard-library/iostream-programming.md)

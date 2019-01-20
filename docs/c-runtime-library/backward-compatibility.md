@@ -15,6 +15,6 @@ For compatibility between product versions, the library OLDNAMES.LIB maps old na
 
 For more information about compiler command-line options, see [Compiler Reference](../build/reference/compiler-options.md).
 
-## See Also
+## See also
 
-[Compatibility](../c-runtime-library/compatibility.md)
+- [Compatibility](../c-runtime-library/compatibility.md)

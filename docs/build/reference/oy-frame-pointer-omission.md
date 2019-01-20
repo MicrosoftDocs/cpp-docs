@@ -37,8 +37,8 @@ The **/Oy** compiler option makes using the debugger more difficult because the 
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers%2A>.
 
-## See Also
+## See also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+- [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

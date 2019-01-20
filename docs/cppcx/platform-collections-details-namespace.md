@@ -29,6 +29,6 @@ Members of this namespace are defined in collection.h and are not displayed in O
 
 **Namespace:** Platform::Collection::Details
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)
+- [Platform Namespace](platform-namespace-c-cx.md)

@@ -50,4 +50,4 @@ A `_bstr_t` object encapsulates the [BSTR data type](/previous-versions/windows/
 
 ## See also
 
-[Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)
+- [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)

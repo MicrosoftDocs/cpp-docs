@@ -15,4 +15,4 @@ Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

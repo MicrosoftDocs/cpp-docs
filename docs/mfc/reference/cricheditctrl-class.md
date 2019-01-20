@@ -2042,10 +2042,10 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
   See the example for [CanUndo](#canundo).
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
-[CRichEditView Class](../../mfc/reference/cricheditview-class.md)
+- [MFC Sample WORDPAD](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CEdit Class](../../mfc/reference/cedit-class.md)
+- [CRichEditView Class](../../mfc/reference/cricheditview-class.md)

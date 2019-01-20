@@ -38,4 +38,4 @@ STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+- [_bstr_t Class](../cpp/bstr-t-class.md)

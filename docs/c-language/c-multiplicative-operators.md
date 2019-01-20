@@ -81,6 +81,6 @@ In each case, `50` and `2` have the same sign.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Multiplicative Operators and the Modulus Operator](../cpp/multiplicative-operators-and-the-modulus-operator.md)
+- [Multiplicative Operators and the Modulus Operator](../cpp/multiplicative-operators-and-the-modulus-operator.md)

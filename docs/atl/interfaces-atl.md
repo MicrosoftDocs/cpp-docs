@@ -16,8 +16,7 @@ Also, each interface is given a unique interface ID (IID). This uniqueness makes
 > [!NOTE]
 >  IIDs for the standard COM and OLE interfaces are predefined.
 
-## See Also
+## See also
 
-[Introduction to COM](../atl/introduction-to-com.md)<br/>
-[COM Objects and Interfaces](/windows/desktop/com/com-objects-and-interfaces)
-
+- [Introduction to COM](../atl/introduction-to-com.md)
+- [COM Objects and Interfaces](/windows/desktop/com/com-objects-and-interfaces)

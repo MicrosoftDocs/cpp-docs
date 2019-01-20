@@ -38,6 +38,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)<br/>
-[_free_locale](free-locale.md)<br/>
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)
+- [_create_locale, _wcreate_locale](create-locale-wcreate-locale.md)
+- [_free_locale](free-locale.md)

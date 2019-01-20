@@ -119,5 +119,5 @@ For the most part, the Microsoft ARM assembler uses the ARM assembly language, w
 
 ## See also
 
-[ARM Assembler Command-Line Reference](../../assembler/arm/arm-assembler-command-line-reference.md)<br/>
-[ARM Assembler Diagnostic Messages](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>
+- [ARM Assembler Command-Line Reference](../../assembler/arm/arm-assembler-command-line-reference.md)
+- [ARM Assembler Diagnostic Messages](../../assembler/arm/arm-assembler-diagnostic-messages.md)

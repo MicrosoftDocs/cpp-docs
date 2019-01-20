@@ -100,8 +100,7 @@ The following topics describe how to use the features in the ribbon designer:
 
 - **Ribbon elements:** Controls in the panels, for example, buttons and combo boxes. To see the various controls that can be hosted on a ribbon, see [RibbonGadgets Sample: Ribbon Gadgets Application](../visual-cpp-samples.md).
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
-[Working with Resource Files](../windows/working-with-resource-files.md)
-
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [Working with Resource Files](../windows/working-with-resource-files.md)

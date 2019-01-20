@@ -15,4 +15,4 @@ The Visual C++ compiler supports all opcodes through the Pentium 4 and AMD Athlo
 
 ## See also
 
-[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>
+- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)

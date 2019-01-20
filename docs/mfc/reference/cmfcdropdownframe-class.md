@@ -168,9 +168,9 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 
 If *bAutoDestroy* is TRUE, then the `CMFCDropDownFrame` destructor destroys the associated drop-down toolbar window. The default value is TRUE.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
-[CMFCDropDownToolbarButton Class](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md)
+- [CMFCDropDownToolbarButton Class](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)

@@ -19,4 +19,4 @@ Your program might make calls to the `spawn` or `exec` family of routines in the
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)
+- [main: Program Startup](../cpp/main-program-startup.md)

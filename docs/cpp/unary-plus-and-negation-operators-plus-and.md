@@ -32,5 +32,5 @@ Unary negation of unsigned quantities is performed by subtracting the value of t
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

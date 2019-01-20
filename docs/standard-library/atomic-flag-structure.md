@@ -67,4 +67,4 @@ The initial value of the flag that is stored in `*this`.
 
 ## See also
 
-[\<atomic>](../standard-library/atomic.md)<br/>
+- [\<atomic>](../standard-library/atomic.md)

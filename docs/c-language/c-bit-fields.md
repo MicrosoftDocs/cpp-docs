@@ -74,6 +74,6 @@ Since the 8086 family of processors stores the low byte of integer values before
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Structure Declarations](../c-language/structure-declarations.md)
+- [Structure Declarations](../c-language/structure-declarations.md)

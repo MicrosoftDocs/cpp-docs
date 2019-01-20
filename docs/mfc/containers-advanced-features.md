@@ -56,8 +56,7 @@ The Links to Embedded Objects feature enables a user to create a document with a
 
 The MFC OLE sample [OCLIENT](../visual-cpp-samples.md) implements this feature. For an example of how this is done, see the `InitInstance` function in the *OCLIENT.CPP* file of this sample application.
 
-## See Also
+## See also
 
-[Containers](../mfc/containers.md)<br/>
-[Servers](../mfc/servers.md)
-
+- [Containers](../mfc/containers.md)
+- [Servers](../mfc/servers.md)

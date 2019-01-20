@@ -12,7 +12,6 @@ Class `CWnd` and its derived classes encapsulate an `HWND`, a handle to a Window
 [CWnd](../mfc/reference/cwnd-class.md)<br/>
 The base class for all windows. You can use one of the classes derived from `CWnd` or derive your own classes directly from it.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

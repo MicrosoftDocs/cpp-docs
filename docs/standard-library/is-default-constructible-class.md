@@ -67,4 +67,4 @@ is_default_constructible<Simple2> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

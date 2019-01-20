@@ -38,4 +38,4 @@ For compatibility with older code, the class also defines the identity function 
 
 ## See also
 
-[\<utility>](../standard-library/utility.md)<br/>
+- [\<utility>](../standard-library/utility.md)

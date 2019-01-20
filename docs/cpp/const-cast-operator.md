@@ -58,5 +58,5 @@ On the line containing the **const_cast**, the data type of the **this** pointer
 
 ## See also
 
-[Casting Operators](../cpp/casting-operators.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Casting Operators](../cpp/casting-operators.md)
+- [Keywords](../cpp/keywords-cpp.md)

@@ -22,5 +22,5 @@ The name `clog`, which is declared in \<complex.h>, is not defined in the `std` 
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)

@@ -26,8 +26,7 @@ In order for the tool tip control to be notified of important messages, such as 
 
 To immediately remove a tool tip window, call the [Pop](../mfc/reference/ctooltipctrl-class.md#pop) member function.
 
-## See Also
+## See also
 
-[Using CToolTipCtrl](../mfc/using-ctooltipctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CToolTipCtrl](../mfc/using-ctooltipctrl.md)
+- [Controls](../mfc/controls-mfc.md)

@@ -42,8 +42,8 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
-[Dialog Editor](../windows/dialog-editor.md)
+- [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)
+- [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
+- [Dialog Editor](../windows/dialog-editor.md)

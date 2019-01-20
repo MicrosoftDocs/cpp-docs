@@ -118,7 +118,7 @@ See [IDBProperties::SetProperties](https://docs.microsoft.com/previous-versions/
 
 If the provider is initialized, this method sets the values of properties in the DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT property groups for the data source object. If the provider is not initialized, it sets DBPROPSET_DBINIT group properties only.
 
-## See Also
+## See also
 
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

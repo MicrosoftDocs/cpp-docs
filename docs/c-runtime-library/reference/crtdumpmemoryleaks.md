@@ -53,4 +53,4 @@ For a sample of how to use **_CrtDumpMemoryLeaks**, see [crt_dbg1](https://githu
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)

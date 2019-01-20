@@ -260,9 +260,9 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Removes the interface from the GIT.
 
-## See Also
+## See also
 
-[Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
-[Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>
-[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)
+- [Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)
+- [When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)
+- [Class Overview](../../atl/atl-class-overview.md)

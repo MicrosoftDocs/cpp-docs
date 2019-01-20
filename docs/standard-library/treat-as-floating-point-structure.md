@@ -27,5 +27,5 @@ struct treat_as_floating_point : is_floating_point<Rep>;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<chrono>](../standard-library/chrono.md)

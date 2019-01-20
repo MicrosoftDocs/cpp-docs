@@ -15,4 +15,4 @@ Returns *expression* with all bits reversed.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

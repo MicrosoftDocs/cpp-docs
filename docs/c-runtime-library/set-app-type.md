@@ -46,4 +46,3 @@ Normally, you do not need to call this function. It is part of the C runtime sta
 |Routine|Required header|
 |-------------|---------------------|
 |_set_app_type|process.h|
-

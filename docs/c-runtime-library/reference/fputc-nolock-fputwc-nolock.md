@@ -85,6 +85,6 @@ This is a test of _fputc_nolock!!
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fgetc, fgetwc](fgetc-fgetwc.md)
+- [putc, putwc](putc-putwc.md)

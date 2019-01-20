@@ -19,7 +19,6 @@ Topics covered in this section include:
 
 - [Recommendations for choosing between ATL and MFC](../atl/recommendations-for-choosing-between-atl-and-mfc.md).
 
-## See Also
+## See also
 
-[Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)
-
+- [Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)

@@ -75,9 +75,9 @@ This textInput was: This text
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
-[_getch, _getwch](getch-getwch.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
-[ungetc, ungetwc](ungetc-ungetwc.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [getc, getwc](getc-getwc.md)
+- [fgetc, fgetwc](fgetc-fgetwc.md)
+- [_getch, _getwch](getch-getwch.md)
+- [putc, putwc](putc-putwc.md)
+- [ungetc, ungetwc](ungetc-ungetwc.md)

@@ -30,9 +30,8 @@ Use this page of the MFC ActiveX Control Wizard to design and add basic features
 
    - The project includes the HLP directory to contain the project help bitmap files and the help topic file (*projname*.rtf). This help topic file contains the standard help topics for the common properties, events, and methods supported by many ActiveX controls. You can edit the .rtf file to add or remove specific help topics.
 
-## See Also
+## See also
 
-[MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[Control Names, MFC ActiveX Control Wizard](../../mfc/reference/control-names-mfc-activex-control-wizard.md)<br/>
-[Control Settings, MFC ActiveX Control Wizard](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)
-
+- [MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)
+- [Control Names, MFC ActiveX Control Wizard](../../mfc/reference/control-names-mfc-activex-control-wizard.md)
+- [Control Settings, MFC ActiveX Control Wizard](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)

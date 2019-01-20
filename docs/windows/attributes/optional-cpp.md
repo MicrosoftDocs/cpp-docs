@@ -49,7 +49,7 @@ __interface IFireTabCtrl : IDispatch
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)
+- [IDL Attributes](idl-attributes.md)
+- [Parameter Attributes](parameter-attributes.md)

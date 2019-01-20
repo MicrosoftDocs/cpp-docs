@@ -173,9 +173,9 @@ Call this function to revoke the document's registration with the OLE system DLL
 
 You should call this function when closing a named file, but you usually do not need to call it directly. `Revoke` is called for you by `COleLinkingDoc`'s implementation of `OnCloseDocument`, `OnNewDocument`, `OnOpenDocument`, and `OnSaveDocument`.
 
-## See Also
+## See also
 
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
-[COleDocument Class](../../mfc/reference/coledocument-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [MFC Sample OCLIENT](../../visual-cpp-samples.md)
+- [COleDocument Class](../../mfc/reference/coledocument-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)

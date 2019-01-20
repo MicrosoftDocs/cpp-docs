@@ -35,6 +35,6 @@ This method is used only by the run-time environment. Do not call the method in 
 
 When this method executes termination handlers, it starts at the current lexical level and works its way up in lexical levels until it reaches the level that is indicated by `stop`. It does not execute termination handlers at the level that is indicated by `stop`.
 
-## See Also
+## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

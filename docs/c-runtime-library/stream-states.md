@@ -34,6 +34,6 @@ The state diagram shows that you must call one of the position functions between
 
 Finally, the state diagram shows that a position operation never decreases the number of valid function calls that can follow.
 
-## See Also
+## See also
 
-[Files and Streams](../c-runtime-library/files-and-streams.md)
+- [Files and Streams](../c-runtime-library/files-and-streams.md)

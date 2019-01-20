@@ -44,6 +44,6 @@ MFC provides two versions of `AfxBeginThread` through parameter overloading: one
 
 - [Processes and Threads](/windows/desktop/ProcThread/processes-and-threads)
 
-## See Also
+## See also
 
-[Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)
+- [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

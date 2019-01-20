@@ -26,6 +26,6 @@ project.obj : project.c project.h ; cl /c project.c
 
 [Inline files in a makefile](../build/inline-files-in-a-makefile.md)
 
-## See Also
+## See also
 
-[NMAKE Reference](../build/nmake-reference.md)
+- [NMAKE Reference](../build/nmake-reference.md)

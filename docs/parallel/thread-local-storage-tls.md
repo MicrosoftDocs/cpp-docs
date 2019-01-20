@@ -94,6 +94,6 @@ The following guidelines must be observed when declaring statically bound thread
 
 - On Windows operating systems before Windows Vista, `__declspec`( thread ) has some limitations. If a DLL declares any data or object as `__declspec`( thread ), it can cause a protection fault if dynamically loaded. After the DLL is loaded with [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), it causes system failure whenever the code references the `__declspec`( thread ) data. Because the global variable space for a thread is allocated at run time, the size of this space is based on a calculation of the requirements of the application plus the requirements of all the DLLs that are statically linked. When you use `LoadLibrary`, you cannot extend this space to allow for the thread local variables declared with `__declspec`( thread ). Use the TLS APIs, such as [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc), in your DLL to allocate TLS if the DLL might be loaded with `LoadLibrary`.
 
-## See Also
+## See also
 
-[Multithreading with C and Win32](multithreading-with-c-and-win32.md)
+- [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

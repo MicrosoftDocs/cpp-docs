@@ -72,6 +72,6 @@ A big black dog. A big black dog.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

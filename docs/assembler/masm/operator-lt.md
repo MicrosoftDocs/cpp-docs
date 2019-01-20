@@ -15,4 +15,4 @@ Returns true (-1) if *expression1* is less than *expression2*, or returns false 
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

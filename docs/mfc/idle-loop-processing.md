@@ -37,7 +37,6 @@ Once the inner loop ends, the outer loop performs idle processing with one or mo
 
 For more information about performing idle processing, see [OnIdle](../mfc/reference/cwinthread-class.md#onidle) in the MFC Library Reference.
 
-## See Also
+## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)
-
+- [General MFC Topics](../mfc/general-mfc-topics.md)

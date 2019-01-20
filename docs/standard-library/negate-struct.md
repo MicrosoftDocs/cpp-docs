@@ -90,5 +90,5 @@ The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

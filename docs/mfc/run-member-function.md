@@ -12,6 +12,6 @@ A framework application spends most of its time in the [Run](../mfc/reference/cw
 
 Message dispatching depends on the kind of message. For more information, see [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md).
 
-## See Also
+## See also
 
-[CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)
+- [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)

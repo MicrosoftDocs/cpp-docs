@@ -73,9 +73,9 @@ class NN : public b
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[Method Attributes](method-attributes.md)<br/>
-[coclass](coclass.md)
+- [IDL Attributes](idl-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [Method Attributes](method-attributes.md)
+- [coclass](coclass.md)

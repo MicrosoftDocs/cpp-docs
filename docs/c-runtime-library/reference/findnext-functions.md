@@ -144,5 +144,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[System Calls](../../c-runtime-library/system-calls.md)<br/>
-[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>
+- [System Calls](../../c-runtime-library/system-calls.md)
+- [Filename Search Functions](../../c-runtime-library/filename-search-functions.md)

@@ -164,10 +164,10 @@ Convert wide-character string:
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
-[wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md)<br/>
-[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)
+- [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)
+- [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)
+- [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md)
+- [WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)

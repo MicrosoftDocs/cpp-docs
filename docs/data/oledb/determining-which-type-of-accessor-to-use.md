@@ -23,6 +23,6 @@ The following table lists the types of accessors provided in the consumer templa
 |`CManualAccessor`|Manual using `AddBindEntry`.|Manually using `AddParameterEntry`.|Fast; parameters and columns bound only once. You determine the type of data to use. (See [DBVIEWER](https://github.com/Microsoft/VCSamples) sample for an example.) Requires more code than `CDynamicAccessor` or `CAccessor`. It's more like calling OLE DB directly.|
 |`CXMLAccessor`|Automatic.|No.|Retrieves data accessed from the data store as string data and formats it as XML-tagged data.|
 
-## See Also
+## See also
 
-[Using Accessors](../../data/oledb/using-accessors.md)
+- [Using Accessors](../../data/oledb/using-accessors.md)

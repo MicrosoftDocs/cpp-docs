@@ -50,6 +50,6 @@ Constructs a `auto_partitioner` object.
 auto_partitioner();
 ```
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

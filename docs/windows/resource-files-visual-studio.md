@@ -63,8 +63,8 @@ This section covers:
 
 Win32
 
-## See Also
+## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+- [Resource Editors](../windows/resource-editors.md)
+- [Working with Resource Files](../windows/working-with-resource-files.md)
+- [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

@@ -30,5 +30,5 @@ A set of COM support global functions and classes is provided to support the `VA
 
 ## See also
 
-[Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)<br/>
-[Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)
+- [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)
+- [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

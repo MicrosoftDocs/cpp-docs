@@ -8,8 +8,7 @@ ms.assetid: 30050732-d53e-4eab-88d7-61aac52914c9
 
 For examples of header controls, see the [Header Controls](/windows/desktop/Controls/header-controls) in the Windows SDK.
 
-## See Also
+## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
+- [Controls](../mfc/controls-mfc.md)

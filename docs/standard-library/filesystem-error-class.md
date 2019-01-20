@@ -96,7 +96,7 @@ const char *what() const noexcept;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[system_error Class](../standard-library/system-error-class.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
-[\<exception>](../standard-library/exception.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [system_error Class](../standard-library/system-error-class.md)
+- [\<filesystem>](../standard-library/filesystem.md)
+- [\<exception>](../standard-library/exception.md)

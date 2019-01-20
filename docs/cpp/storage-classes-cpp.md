@@ -301,4 +301,4 @@ There are several points to note about the program:
 
 ## See also
 
-[Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)
+- [Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)

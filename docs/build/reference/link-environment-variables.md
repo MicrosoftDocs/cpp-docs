@@ -17,9 +17,9 @@ The LINK tool uses the following environment variables:
 
 - TMP, to specify a directory when linking OMF or .res files.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[Build C/C++ code on the command line](../../build/building-on-the-command-line.md)<br/>
-[Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)
+- [Build C/C++ code on the command line](../../build/building-on-the-command-line.md)
+- [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)

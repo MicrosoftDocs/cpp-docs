@@ -27,8 +27,7 @@ The following example demonstrates this technique by assigning an enabled (`m_To
 
 Once the image lists are associated with the `CToolBarCtrl` object, the framework automatically displays the proper button image.
 
-## See Also
+## See also
 
-[Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

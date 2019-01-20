@@ -106,6 +106,6 @@ Drag the button on one side of the space toward the button on the other side of 
 
 MFC or ATL
 
-## See Also
+## See also
 
-[Toolbar Editor](../windows/toolbar-editor.md)
+- [Toolbar Editor](../windows/toolbar-editor.md)

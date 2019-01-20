@@ -29,8 +29,7 @@ The following map entries on the left correspond to the function prototypes on t
 |ON_WM_KEYUP()|afx_msg void [OnKeyUp](../../mfc/reference/cwnd-class.md#onkeyup)(UINT, UINT, UINT);|
 |ON_WM_KILLFOCUS()|afx_msg void [OnKillFocus](../../mfc/reference/cwnd-class.md#onkillfocus)(CWnd*);|
 
-## See Also
+## See also
 
-[Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
-[Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-
+- [Message Maps](../../mfc/reference/message-maps-mfc.md)
+- [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)

@@ -105,9 +105,8 @@ Nonzero if the function is successful; otherwise 0 if no error message text is a
 
 For more information, see [CException::GetErrorMessage](../../mfc/reference/cfileexception-class.md#geterrormessage).
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CException Class](../../mfc/reference/cexception-class.md)<br/>
-[Exception Handling](../../mfc/exception-handling-in-mfc.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CException Class](../../mfc/reference/cexception-class.md)
+- [Exception Handling](../../mfc/exception-handling-in-mfc.md)

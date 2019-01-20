@@ -55,9 +55,8 @@ Provides information about the COM functionality for the object.
 
    Sets the name that containers can use instead of the CLSID of the object.
 
-## See Also
+## See also
 
-[Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)<br/>
-[Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
-[Example: Implementing a Property Page](../../atl/example-implementing-a-property-page.md)
-
+- [Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)
+- [Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)
+- [Example: Implementing a Property Page](../../atl/example-implementing-a-property-page.md)

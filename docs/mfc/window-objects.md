@@ -40,7 +40,6 @@ One of the primary purposes of `CWnd` is to provide an interface for handling Wi
 
 - [Graphic objects](../mfc/graphic-objects.md): pens, brushes, fonts, bitmaps, palettes, regions
 
-## See Also
+## See also
 
-[Windows](../mfc/windows.md)
-
+- [Windows](../mfc/windows.md)

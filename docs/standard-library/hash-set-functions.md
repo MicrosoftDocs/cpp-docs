@@ -76,4 +76,4 @@ See the code example for the member class [hash_multiset::swap](../standard-libr
 
 ## See also
 
-[<hash_set>](../standard-library/hash-set.md)<br/>
+- [<hash_set>](../standard-library/hash-set.md)

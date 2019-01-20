@@ -176,4 +176,4 @@ int main() {
 
 ## See also
 
-[tuple ](../standard-library/tuple-class.md)<br/>
+- [tuple ](../standard-library/tuple-class.md)

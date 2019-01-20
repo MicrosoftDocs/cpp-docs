@@ -82,4 +82,4 @@ ms.assetid: c069cab7-d6b0-4f82-a6ce-0ca3fc7e6428
 
 ## See also
 
-[Microsoft Macro Assembler Reference](microsoft-macro-assembler-reference.md)<br/>
+- [Microsoft Macro Assembler Reference](microsoft-macro-assembler-reference.md)

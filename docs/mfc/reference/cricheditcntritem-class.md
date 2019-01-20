@@ -96,10 +96,10 @@ Reference to an [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) st
 
 For more information, see [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
-[COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)<br/>
-[CRichEditView Class](../../mfc/reference/cricheditview-class.md)
+- [MFC Sample WORDPAD](../../visual-cpp-samples.md)
+- [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)
+- [CRichEditView Class](../../mfc/reference/cricheditview-class.md)

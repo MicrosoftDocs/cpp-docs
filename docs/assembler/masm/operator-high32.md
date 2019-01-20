@@ -15,4 +15,4 @@ Returns the high 32 bits of *expression*. MASM expressions are 64-bit values.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

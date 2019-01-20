@@ -721,7 +721,7 @@ and loc3 (English_United States.1252) are not equal.
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[Code Pages](../c-runtime-library/code-pages.md)<br/>
-[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [\<locale>](../standard-library/locale.md)
+- [Code Pages](../c-runtime-library/code-pages.md)
+- [Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

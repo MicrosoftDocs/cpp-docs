@@ -87,7 +87,6 @@ The final step involves adding code that calls the `SwitchView` method when the 
 
 For more information on adding new menu items and command handler functions, see [Handlers for Commands and Control Notifications](../mfc/handlers-for-commands-and-control-notifications.md).
 
-## See Also
+## See also
 
-[Document/View Architecture](../mfc/document-view-architecture.md)
-
+- [Document/View Architecture](../mfc/document-view-architecture.md)

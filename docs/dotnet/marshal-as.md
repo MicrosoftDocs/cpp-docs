@@ -63,7 +63,7 @@ int main() {
 
 **Namespace:** msclr::interop
 
-## See Also
+## See also
 
-[Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)<br/>
-[marshal_context Class](../dotnet/marshal-context-class.md)
+- [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)
+- [marshal_context Class](../dotnet/marshal-context-class.md)

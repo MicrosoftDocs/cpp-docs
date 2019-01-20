@@ -41,4 +41,4 @@ int main()
 
 ## See also
 
-[Output Streams](../standard-library/output-streams.md)<br/>
+- [Output Streams](../standard-library/output-streams.md)

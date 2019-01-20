@@ -28,6 +28,6 @@ Microsoft allows redefinition of an `extern` identifier as **static**.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[C Storage Classes](../c-language/c-storage-classes.md)
+- [C Storage Classes](../c-language/c-storage-classes.md)

@@ -38,4 +38,4 @@ The topics on statements describe the following C++ keywords:
 
 ## See also
 
-[Statements](../cpp/statements-cpp.md)
+- [Statements](../cpp/statements-cpp.md)

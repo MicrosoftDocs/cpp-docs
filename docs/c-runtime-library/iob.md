@@ -22,6 +22,6 @@ FILE _iob[_IOB_ENTRIES];
 
 `IOB_ENTRIES` is defined as 20 in stdio.h.
 
-## See Also
+## See also
 
-[Global Variables](../c-runtime-library/global-variables.md)
+- [Global Variables](../c-runtime-library/global-variables.md)

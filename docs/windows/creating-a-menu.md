@@ -74,6 +74,6 @@ Right-click on the menu bar and choose **Insert New** from the shortcut menu.
 
 Win32
 
-## See Also
+## See also
 
-[Menu Editor](../windows/menu-editor.md)
+- [Menu Editor](../windows/menu-editor.md)

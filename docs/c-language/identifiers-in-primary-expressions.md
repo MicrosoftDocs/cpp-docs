@@ -12,6 +12,6 @@ The pointer value represented by an array identifier is not a variable, so an ar
 
 An identifier declared as a function represents a pointer whose value is the address of the function. The pointer addresses a function returning a value of a specified type. Thus, function identifiers also cannot be l-values in assignment operations. For more information, see [Identifiers](../c-language/c-identifiers.md).
 
-## See Also
+## See also
 
-[C Primary Expressions](../c-language/c-primary-expressions.md)
+- [C Primary Expressions](../c-language/c-primary-expressions.md)

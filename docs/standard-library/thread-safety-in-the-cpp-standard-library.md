@@ -27,4 +27,4 @@ The standard iostream objects `cin`, `cout`, `cerr`, `clog`, `wcin`, `wcout`, `w
 
 ## See also
 
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
+- [C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)

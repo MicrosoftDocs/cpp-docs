@@ -15,4 +15,4 @@ Marks the end of a module and, optionally, sets the program entry point to *addr
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

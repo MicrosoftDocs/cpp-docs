@@ -70,4 +70,4 @@ bad weak pointer
 
 ## See also
 
-[weak_ptr Class](../standard-library/weak-ptr-class.md)<br/>
+- [weak_ptr Class](../standard-library/weak-ptr-class.md)

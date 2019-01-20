@@ -12,8 +12,7 @@ The [GetImageCount](../mfc/reference/cimagelist-class.md#getimagecount) member f
 
 You can create an icon based on an image and mask in an image list by using the [ExtractIcon](../mfc/reference/cimagelist-class.md#extracticon) member function. The function returns the handle of the new icon.
 
-## See Also
+## See also
 
-[Using CImageList](../mfc/using-cimagelist.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CImageList](../mfc/using-cimagelist.md)
+- [Controls](../mfc/controls-mfc.md)

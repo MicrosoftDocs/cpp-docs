@@ -271,6 +271,6 @@ Destroys the `completion_future` object.
 ~completion_future();
 ```
 
-## See Also
+## See also
 
-[Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+- [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

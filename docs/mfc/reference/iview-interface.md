@@ -67,7 +67,7 @@ void OnUpdate();
 
 This function allows the view to update its display to reflect modifications.
 
-## See Also
+## See also
 
-[CWinFormsView Class](../../mfc/reference/cwinformsview-class.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)
+- [CWinFormsView Class](../../mfc/reference/cwinformsview-class.md)
+- [CView Class](../../mfc/reference/cview-class.md)

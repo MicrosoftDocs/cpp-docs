@@ -31,4 +31,4 @@ C++ expressions are divided into several categories:
 
 ## See also
 
-[Expressions](../cpp/expressions-cpp.md)
+- [Expressions](../cpp/expressions-cpp.md)

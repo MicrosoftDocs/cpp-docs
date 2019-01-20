@@ -54,4 +54,4 @@ __asm push ebp   __asm mov  ebp, esp   __asm sub  esp, __LOCAL_SIZE
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

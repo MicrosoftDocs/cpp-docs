@@ -134,4 +134,4 @@ This member function increments the stored value `_Nblocks`. This member functio
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+- [\<allocators>](../standard-library/allocators-header.md)

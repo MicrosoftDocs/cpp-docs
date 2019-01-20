@@ -59,9 +59,9 @@ The following table shows the ORed values that compose the test conditions for t
 
 The `_ismbb` routines are implemented both as functions and as macros. For more information about how to choose either implementation, see [Recommendations for Choosing Between Functions and Macros](../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
 
-## See Also
+## See also
 
-[Byte Classification](../c-runtime-library/byte-classification.md)<br/>
-[is, isw Routines](../c-runtime-library/is-isw-routines.md)<br/>
-[_mbbtombc, _mbbtombc_l](../c-runtime-library/reference/mbbtombc-mbbtombc-l.md)<br/>
-[_mbctombb, _mbctombb_l](../c-runtime-library/reference/mbctombb-mbctombb-l.md)
+- [Byte Classification](../c-runtime-library/byte-classification.md)
+- [is, isw Routines](../c-runtime-library/is-isw-routines.md)
+- [_mbbtombc, _mbbtombc_l](../c-runtime-library/reference/mbbtombc-mbbtombc-l.md)
+- [_mbctombb, _mbctombb_l](../c-runtime-library/reference/mbctombb-mbctombb-l.md)

@@ -59,5 +59,5 @@ See the example for [_beginthread](beginthread-beginthreadex.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_beginthread, _beginthreadex](beginthread-beginthreadex.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_beginthread, _beginthreadex](beginthread-beginthreadex.md)

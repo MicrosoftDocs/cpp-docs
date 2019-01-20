@@ -241,8 +241,8 @@ HRESULT SetBackgroundColorFromAmbient();
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-## See Also
+## See also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
-[Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComControl Class](../../atl/reference/ccomcontrol-class.md)
+- [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)
+- [Class Overview](../../atl/atl-class-overview.md)

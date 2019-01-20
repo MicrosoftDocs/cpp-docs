@@ -62,4 +62,4 @@ The template function is an algorithm specialized on the container class hash_mu
 
 ## See also
 
-[<hash_map>](../standard-library/hash-map.md)<br/>
+- [<hash_map>](../standard-library/hash-map.md)

@@ -49,10 +49,10 @@ See the example for [feof](feof.md).
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[clearerr](clearerr.md)<br/>
-[_eof](eof.md)<br/>
-[feof](feof.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+- [Error Handling](../../c-runtime-library/error-handling-crt.md)
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [clearerr](clearerr.md)
+- [_eof](eof.md)
+- [feof](feof.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [perror, _wperror](perror-wperror.md)

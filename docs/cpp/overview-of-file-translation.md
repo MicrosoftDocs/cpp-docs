@@ -37,4 +37,4 @@ The C++ preprocessor is a strict superset of the ANSI C preprocessor, but the C+
 
 ## See also
 
-[Lexical Conventions](../cpp/lexical-conventions.md)
+- [Lexical Conventions](../cpp/lexical-conventions.md)

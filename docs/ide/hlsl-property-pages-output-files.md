@@ -38,8 +38,8 @@ This property corresponds to the **/Fo[name]** command-line argument.
 
    This property corresponds to the **/Fc[name]** and **/Fx [name]** command-line arguments.
 
-## See Also
+## See also
 
-[HLSL Property Pages](../ide/hlsl-property-pages.md)<br>
-[HLSL Property Pages: General](../ide/hlsl-property-pages-general.md)<br>
-[HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)
+- [HLSL Property Pages](../ide/hlsl-property-pages.md)
+- [HLSL Property Pages: General](../ide/hlsl-property-pages-general.md)
+- [HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)

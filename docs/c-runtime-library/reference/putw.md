@@ -91,5 +91,5 @@ Wrote ten words
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_getw](getw.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_getw](getw.md)

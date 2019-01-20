@@ -20,7 +20,6 @@ Care must be taken with your own child windows to destroy the C++ window object 
 
 - [Destroying frame windows](../mfc/destroying-frame-windows.md)
 
-## See Also
+## See also
 
-[Window Objects](../mfc/window-objects.md)
-
+- [Window Objects](../mfc/window-objects.md)

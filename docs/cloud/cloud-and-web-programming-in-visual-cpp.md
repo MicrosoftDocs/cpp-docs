@@ -52,5 +52,5 @@ In C++, you have several options for connecting to the web and the cloud.
 
 ## See also
 
-[Visual C++](../visual-cpp-in-visual-studio.md) <br/>
-[Networks and web services](/windows/uwp/networking/)
+- [Visual C++](../visual-cpp-in-visual-studio.md)
+- [Networks and web services](/windows/uwp/networking/)

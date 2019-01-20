@@ -31,6 +31,6 @@ enum filter_mode;
 **Header:** amp_graphics.h
 **Namespace:** Concurrency::graphics
 
-## See Also
+## See also
 
-[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

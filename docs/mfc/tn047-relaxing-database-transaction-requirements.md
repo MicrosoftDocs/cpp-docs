@@ -11,8 +11,7 @@ This tech note, which discussed the transaction requirements of the MFC ODBC dat
 
 Beginning with MFC 4.2, the database classes have relaxed the restriction of requiring cursor preservation. Transactions will be enabled if the driver supports them. However, you must now check the effect of a **CommitTrans** or **Rollback** operation on open recordsets. See the member functions [CDatabase::GetCursorCommitBehavior](../mfc/reference/cdatabase-class.md#getcursorcommitbehavior) and [CDatabase::GetCursorRollbackBehavior](../mfc/reference/cdatabase-class.md#getcursorrollbackbehavior) for more information.
 
-## See Also
+## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)
-
+- [Technical Notes by Number](../mfc/technical-notes-by-number.md)
+- [Technical Notes by Category](../mfc/technical-notes-by-category.md)

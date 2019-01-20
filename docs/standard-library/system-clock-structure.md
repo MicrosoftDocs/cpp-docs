@@ -126,6 +126,6 @@ A [time_point](../standard-library/time-point-class.md) object.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[steady_clock struct](../standard-library/steady-clock-struct.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<chrono>](../standard-library/chrono.md)
+- [steady_clock struct](../standard-library/steady-clock-struct.md)

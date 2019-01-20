@@ -247,6 +247,6 @@ The scope-resolution operator (`::`) forces use of the global **new** operator.
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[new and delete operators](../cpp/new-and-delete-operators.md)
+- [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [new and delete operators](../cpp/new-and-delete-operators.md)

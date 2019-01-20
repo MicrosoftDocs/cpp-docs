@@ -385,8 +385,8 @@ void UpdateColor(COLORREF color);
 
 The `CMFCRibbonColorButton::UpdateColor` method changes the currently selected button's color and notifies its parent by sending a WM_COMMAND message with a BN_CLICKED standard notification. Use the [CMFCRibbonColorButton::GetColor](#getcolor) method to retrieve the selected color.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonGallery Class](../../mfc/reference/cmfcribbongallery-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCRibbonGallery Class](../../mfc/reference/cmfcribbongallery-class.md)

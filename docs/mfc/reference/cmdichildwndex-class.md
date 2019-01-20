@@ -1069,10 +1069,10 @@ virtual void ActivateTopLevelFrame();
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md)<br/>
-[CMFCWindowsManagerDialog Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)<br/>
-[CMDIFrameWndEx Class](../../mfc/reference/cmdiframewndex-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md)
+- [CMFCWindowsManagerDialog Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)
+- [CMDIFrameWndEx Class](../../mfc/reference/cmdiframewndex-class.md)

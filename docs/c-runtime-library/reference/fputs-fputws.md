@@ -81,7 +81,7 @@ Hello world from fputs.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fgets, fgetws](fgets-fgetws.md)<br/>
-[gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[puts, _putws](puts-putws.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fgets, fgetws](fgets-fgetws.md)
+- [gets, _getws](../../c-runtime-library/gets-getws.md)
+- [puts, _putws](puts-putws.md)

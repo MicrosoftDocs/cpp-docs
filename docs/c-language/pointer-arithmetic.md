@@ -12,6 +12,6 @@ This assumption is valid for array members. By definition, an array is a series 
 
 Similarly, when two pointer values are subtracted, the conversion assumes that only values of the same type, with no blanks, lie between the addresses given by the operands.
 
-## See Also
+## See also
 
-[C Additive Operators](../c-language/c-additive-operators.md)
+- [C Additive Operators](../c-language/c-additive-operators.md)

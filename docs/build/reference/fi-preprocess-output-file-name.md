@@ -35,8 +35,8 @@ The following command line preprocesses PROGRAM.cpp, preserves comments, adds [#
 CL /P /FiMYPROCESS.I PROGRAM.CPP
 ```
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md)<br/>
-[Specifying the Pathname](../../build/reference/specifying-the-pathname.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md)
+- [Specifying the Pathname](../../build/reference/specifying-the-pathname.md)

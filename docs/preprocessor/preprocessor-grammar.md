@@ -77,6 +77,6 @@ ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
 > [!NOTE]
 > The following nonterminals are expanded in the [Lexical Conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*: *constant*, *constant-expression*, *identifier*, *keyword*, *operator*, and *punctuator*.
 
-## See Also
+## See also
 
-[Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+- [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

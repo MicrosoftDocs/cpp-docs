@@ -113,8 +113,8 @@ The following procedure adds a custom Click event.
 
 1. Call `FireClick` at appropriate places in your code.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)<br/>
-[COleControl Class](../mfc/reference/colecontrol-class.md)
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)
+- [COleControl Class](../mfc/reference/colecontrol-class.md)

@@ -50,6 +50,6 @@ ms.assetid: 2c7f3b0f-a266-4f0e-b318-d6f1371e04a9
 
 [Boxing (C++/CLI)](../dotnet/boxing-cpp-cli.md)
 
-## See Also
+## See also
 
-[Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)
+- [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)

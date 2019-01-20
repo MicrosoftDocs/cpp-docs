@@ -49,10 +49,10 @@ See the [bindable](bindable.md) example for a sample use of **uuid**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Interface Attributes](interface-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[uuid](/windows/desktop/Midl/uuid)
+- [IDL Attributes](idl-attributes.md)
+- [Interface Attributes](interface-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [uuid](/windows/desktop/Midl/uuid)

@@ -212,13 +212,13 @@ int main()
 
 ## See also
 
-[auto Keyword](../cpp/auto-keyword.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[/Zc:auto (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
-[sizeof Operator](../cpp/sizeof-operator.md)<br/>
-[typeid](../windows/typeid-cpp-component-extensions.md)<br/>
-[operator new](new-operator-cpp.md)<br/>
-[Declarations and Definitions](declarations-and-definitions-cpp.md)<br/>
-[Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)<br/>
-[Initializers](../cpp/initializers.md)<br/>
-[decltype](../cpp/decltype-cpp.md)
+- [auto Keyword](../cpp/auto-keyword.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [/Zc:auto (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md)
+- [sizeof Operator](../cpp/sizeof-operator.md)
+- [typeid](../windows/typeid-cpp-component-extensions.md)
+- [operator new](new-operator-cpp.md)
+- [Declarations and Definitions](declarations-and-definitions-cpp.md)
+- [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)
+- [Initializers](../cpp/initializers.md)
+- [decltype](../cpp/decltype-cpp.md)

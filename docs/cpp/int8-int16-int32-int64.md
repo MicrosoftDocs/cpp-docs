@@ -53,6 +53,6 @@ func
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Fundamental Types](../cpp/fundamental-types-cpp.md)<br/>
-[Data Type Ranges](../cpp/data-type-ranges.md)<br/>
+- [Keywords](../cpp/keywords-cpp.md)
+- [Fundamental Types](../cpp/fundamental-types-cpp.md)
+- [Data Type Ranges](../cpp/data-type-ranges.md)

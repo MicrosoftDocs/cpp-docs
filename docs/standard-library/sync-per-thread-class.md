@@ -100,4 +100,4 @@ bool equals(const sync<Cache>& Other) const;
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+- [\<allocators>](../standard-library/allocators-header.md)

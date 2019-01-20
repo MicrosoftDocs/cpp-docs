@@ -64,6 +64,6 @@ You may use the current [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)
 
 MFC
 
-## See Also
+## See also
 
-[Dialog Editor](../windows/dialog-editor.md)
+- [Dialog Editor](../windows/dialog-editor.md)

@@ -80,8 +80,8 @@ This structure stores pertinent information used to render the appearance of an 
 
 **Header:** atlctl.h
 
-## See Also
+## See also
 
-[Classes and structs](../../atl/reference/atl-classes.md)<br/>
-[IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)<br/>
-[CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
+- [Classes and structs](../../atl/reference/atl-classes.md)
+- [IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)
+- [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)

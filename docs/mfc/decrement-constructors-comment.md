@@ -10,11 +10,10 @@ The `// Constructors` section of an MFC class declaration declares constructors 
 
 For example, class `CStdioFile` has three constructors, one of which is shown in the listing under [An Example of the Comments](../mfc/an-example-of-the-comments.md).
 
-## See Also
+## See also
 
-[Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)<br/>
-[// Implementation Comment](../mfc/decrement-implementation-comment.md)<br/>
-[// Attributes Comment](../mfc/decrement-attributes-comment.md)<br/>
-[// Operations Comment](../mfc/decrement-operations-comment.md)<br/>
-[// Overridables Comment](../mfc/decrement-overridables-comment.md)
-
+- [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)
+- [// Implementation Comment](../mfc/decrement-implementation-comment.md)
+- [// Attributes Comment](../mfc/decrement-attributes-comment.md)
+- [// Operations Comment](../mfc/decrement-operations-comment.md)
+- [// Overridables Comment](../mfc/decrement-overridables-comment.md)

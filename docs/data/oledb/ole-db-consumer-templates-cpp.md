@@ -46,9 +46,9 @@ For more information, see the following topics:
 
 - [Common OLE DB Consumer Scenarios (Examples)](../../data/oledb/working-with-ole-db-consumer-templates.md)
 
-## See Also
+## See also
 
-[OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
-[Data Access](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Documentation](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
-[OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)
+- [OLE DB Programming](../../data/oledb/ole-db-programming.md)
+- [Data Access](../data-access-in-cpp.md)
+- [OLE DB SDK Documentation](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85))
+- [OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)

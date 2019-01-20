@@ -33,5 +33,5 @@ An instance of the type predicate holds true for a referenceable type *T* where 
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_nothrow_assignable Class](../standard-library/is-nothrow-assignable-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_nothrow_assignable Class](../standard-library/is-nothrow-assignable-class.md)

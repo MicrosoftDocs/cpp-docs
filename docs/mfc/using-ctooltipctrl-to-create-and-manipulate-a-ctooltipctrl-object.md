@@ -25,8 +25,7 @@ Here is an example of [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) usa
 
 1. Call [GetToolCount](../mfc/reference/ctooltipctrl-class.md#gettoolcount) to retrieve a count of the tools registered with the tool tip control.
 
-## See Also
+## See also
 
-[Using CToolTipCtrl](../mfc/using-ctooltipctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CToolTipCtrl](../mfc/using-ctooltipctrl.md)
+- [Controls](../mfc/controls-mfc.md)

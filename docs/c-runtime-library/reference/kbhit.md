@@ -76,4 +76,4 @@ Key struck was 'q'
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
+- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)

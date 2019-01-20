@@ -135,9 +135,8 @@ The picture property must be made persistent so that information added at design
 
 After you complete the modifications, rebuild your project to incorporate the new functionality of the custom Picture property and use Test Container to test the new property. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access the test container.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Using Fonts](../mfc/mfc-activex-controls-using-fonts.md)<br/>
-[MFC ActiveX Controls: Property Pages](../mfc/mfc-activex-controls-property-pages.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX Controls: Using Fonts](../mfc/mfc-activex-controls-using-fonts.md)
+- [MFC ActiveX Controls: Property Pages](../mfc/mfc-activex-controls-property-pages.md)

@@ -9,8 +9,7 @@ ms.assetid: 7012d592-9d2f-491a-b417-48e5c2a7680f
 
 This information is obsolete and has been removed.
 
-## See Also
+## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)
-
+- [Technical Notes by Number](../mfc/technical-notes-by-number.md)
+- [Technical Notes by Category](../mfc/technical-notes-by-category.md)

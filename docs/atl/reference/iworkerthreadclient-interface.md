@@ -92,7 +92,7 @@ The following code shows a simple implementation of `IWorkerThreadClient::Execut
 
 [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iworkerthreadclient-interface_2.cpp)]
 
-## See Also
+## See also
 
-[Classes](../../atl/reference/atl-classes.md)<br/>
-[CWorkerThread Class](../../atl/reference/cworkerthread-class.md)
+- [Classes](../../atl/reference/atl-classes.md)
+- [CWorkerThread Class](../../atl/reference/cworkerthread-class.md)

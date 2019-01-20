@@ -94,13 +94,13 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[localeconv](localeconv.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
-[strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>
-[strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>
-[strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>
-[strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [localeconv](localeconv.md)
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)
+- [String to Numeric Value Functions](../../c-runtime-library/string-to-numeric-value-functions.md)
+- [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)
+- [strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)
+- [strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)
+- [strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)
+- [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)

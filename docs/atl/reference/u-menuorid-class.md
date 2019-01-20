@@ -73,6 +73,6 @@ A menu handle.
 
 The argument to the HMENU constructor is stored directly without conversion.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -141,17 +141,17 @@ The Concurrency Runtime does not support the use of concurrency objects in a sha
 
 [[Top](#top)]
 
-## See Also
+## See also
 
-[Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
-[Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
-[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
-[Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)<br/>
-[Comparing Synchronization Data Structures to the Windows API](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)<br/>
-[How to: Use Alloc and Free to Improve Memory Performance](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)<br/>
-[How to: Use Oversubscription to Offset Latency](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)<br/>
-[How to: Use the Context Class to Implement a Cooperative Semaphore](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
-[Walkthrough: Removing Work from a User-Interface Thread](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)<br/>
-[Best Practices in the Parallel Patterns Library](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
-[Best Practices in the Asynchronous Agents Library](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)
+- [Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)
+- [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)
+- [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
+- [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)
+- [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)
+- [Comparing Synchronization Data Structures to the Windows API](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)
+- [How to: Use Alloc and Free to Improve Memory Performance](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
+- [How to: Use Oversubscription to Offset Latency](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)
+- [How to: Use the Context Class to Implement a Cooperative Semaphore](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)
+- [Walkthrough: Removing Work from a User-Interface Thread](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)
+- [Best Practices in the Parallel Patterns Library](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)
+- [Best Practices in the Asynchronous Agents Library](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)

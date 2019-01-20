@@ -29,8 +29,8 @@ The following table lists the constants and their meanings:
 |`_SH_DENYNO`|Permits read and write access|
 |`_SH_SECURE`|Sets secure mode (shared read, exclusive write access).|
 
-## See Also
+## See also
 
-[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)
+- [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

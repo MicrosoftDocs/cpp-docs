@@ -116,6 +116,6 @@ A default instance of the type parameter may be created by using the `()` operat
 
 where `T` is a type parameter in a generic class or method definition, initializes the variable to its default value. If `T` is a ref class it will be a null pointer; if `T` is a value class, the object is initialized to zero. This is called a *default initializer*.
 
-## See Also
+## See also
 
-[Generics](../windows/generics-cpp-component-extensions.md)
+- [Generics](../windows/generics-cpp-component-extensions.md)

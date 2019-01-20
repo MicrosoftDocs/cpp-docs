@@ -20,8 +20,7 @@ When you finish, your dialog-template resource is stored in your application's r
 
 When the dialog box's appearance suits you, create a dialog class and map its messages, as discussed in [Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md).
 
-## See Also
+## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-
+- [Dialog Boxes](../mfc/dialog-boxes.md)
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

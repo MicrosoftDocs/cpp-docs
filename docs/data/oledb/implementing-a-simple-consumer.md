@@ -188,6 +188,6 @@ The previous steps give you bookmark support and a bookmark object with which to
 
 For more information about bookmarks, see [Using Bookmarks](../../data/oledb/using-bookmarks.md). Examples of bookmarks are also shown in [Updating Rowsets](../../data/oledb/updating-rowsets.md).
 
-## See Also
+## See also
 
-[Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+- [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

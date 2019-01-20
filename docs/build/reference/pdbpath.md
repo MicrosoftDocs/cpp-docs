@@ -37,7 +37,7 @@ When using the Visual Studio debugger, you may experience a problem due to the f
 
 - Check in the Windows directory.
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)<br/>
-[/PDBALTPATH (Use Alternate PDB Path)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)
+- [DUMPBIN Options](../../build/reference/dumpbin-options.md)
+- [/PDBALTPATH (Use Alternate PDB Path)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)

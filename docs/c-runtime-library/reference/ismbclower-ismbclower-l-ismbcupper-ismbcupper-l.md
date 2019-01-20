@@ -72,9 +72,9 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[_ismbc Routines](../../c-runtime-library/ismbc-routines.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+- [Character Classification](../../c-runtime-library/character-classification.md)
+- [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [is, isw Routines](../../c-runtime-library/is-isw-routines.md)
+- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

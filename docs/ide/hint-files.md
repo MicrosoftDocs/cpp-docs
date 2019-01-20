@@ -307,12 +307,12 @@ The following notes apply to the preceding list.
 
 - The `#undef` hint in the `A2` directory removed the hints for `OBRACE` and `CBRACE` in the `Debug` directory hint file.
 
-## See Also
+## See also
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
-[#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>
-[#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)<br>
-[SAL Annotations](../c-runtime-library/sal-annotations.md)<br>
-[Message Maps](../mfc/reference/message-maps-mfc.md)<br>
-[Message Map Macros](../atl/reference/message-map-macros-atl.md)<br>
-[Object Map Macros](../atl/reference/object-map-macros.md)
+- [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)
+- [#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)
+- [#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)
+- [SAL Annotations](../c-runtime-library/sal-annotations.md)
+- [Message Maps](../mfc/reference/message-maps-mfc.md)
+- [Message Map Macros](../atl/reference/message-map-macros-atl.md)
+- [Object Map Macros](../atl/reference/object-map-macros.md)

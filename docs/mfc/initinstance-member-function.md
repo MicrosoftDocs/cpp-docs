@@ -26,6 +26,6 @@ You can add your own initialization code or modify the code written by the wizar
 > [!NOTE]
 >  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED).
 
-## See Also
+## See also
 
-[CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)
+- [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)

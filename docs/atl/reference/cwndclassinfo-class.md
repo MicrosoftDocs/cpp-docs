@@ -171,7 +171,7 @@ If you have specified the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd
 
 If you have specified the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro, `Register` registers a superclass — a window class that is based on an existing class but uses a different window procedure. The existing window class's window procedure is returned in *pProc*.
 
-## See Also
+## See also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComControl Class](../../atl/reference/ccomcontrol-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

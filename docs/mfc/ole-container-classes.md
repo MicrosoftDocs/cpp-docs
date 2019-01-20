@@ -35,7 +35,6 @@ Provides client-side access to an OLE item stored in a rich edit control when us
 [COleException](../mfc/reference/coleexception-class.md)<br/>
 An exception resulting from a failure in OLE processing. This class is used by both containers and servers.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

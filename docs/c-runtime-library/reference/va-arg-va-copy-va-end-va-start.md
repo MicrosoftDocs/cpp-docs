@@ -192,5 +192,5 @@ Deviation is: 0.000000
 
 ## See also
 
-[Argument Access](../../c-runtime-library/argument-access.md)<br/>
-[vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>
+- [Argument Access](../../c-runtime-library/argument-access.md)
+- [vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)

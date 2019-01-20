@@ -25,8 +25,8 @@ The **Managed Resources** property page contains the following properties:
 
 For information on how to access the **Managed Resources** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).
 
-## See Also
+## See also
 
-[Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-)<br>
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
-[/ASSEMBLYRESOURCE (Embed a Managed Resource)](../build/reference/assemblyresource-embed-a-managed-resource.md)
+- [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-)
+- [Property Pages](../ide/property-pages-visual-cpp.md)
+- [/ASSEMBLYRESOURCE (Embed a Managed Resource)](../build/reference/assemblyresource-embed-a-managed-resource.md)

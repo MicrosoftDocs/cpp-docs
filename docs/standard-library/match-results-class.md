@@ -554,4 +554,4 @@ The typedef is a synonym for the type `sub_match<BidIt>`.
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
+- [\<regex>](../standard-library/regex.md)

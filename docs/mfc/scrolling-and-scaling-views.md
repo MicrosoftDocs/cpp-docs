@@ -36,7 +36,6 @@ You can specify how much to scroll for a "page" (when the user clicks in a scrol
 
 When you want the view to automatically fit the size of its frame window, you can use `CScrollView` for scaling instead of scrolling. The logical view is stretched or shrunk to fit the window's client area exactly. A scaled view has no scroll bars.
 
-## See Also
+## See also
 
-[Using Views](../mfc/using-views.md)
-
+- [Using Views](../mfc/using-views.md)

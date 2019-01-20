@@ -128,9 +128,9 @@ Converted value: 12000
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](ecvt.md)<br/>
-[_fcvt_s](fcvt-s.md)<br/>
-[_gcvt_s](gcvt-s.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)
+- [_ecvt](ecvt.md)
+- [_fcvt_s](fcvt-s.md)
+- [_gcvt_s](gcvt-s.md)

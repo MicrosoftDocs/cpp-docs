@@ -126,8 +126,8 @@ ATL uses the object's property map to obtain this information.
 
 See [IPerPropertyBrowsing::MapPropertyToPage](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-mappropertytopage) in the Windows SDK.
 
-## See Also
+## See also
 
-[IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)<br/>
-[ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)
+- [ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

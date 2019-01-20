@@ -113,6 +113,6 @@ boy deserves every favor good
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch](bsearch.md)<br/>
-[_lsearch](lsearch.md)<br/>
+- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)
+- [bsearch](bsearch.md)
+- [_lsearch](lsearch.md)

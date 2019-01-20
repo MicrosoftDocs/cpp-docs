@@ -101,6 +101,6 @@ public:String^ ToString();
 
 A string that represents the current object.
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)
+- [Platform Namespace](platform-namespace-c-cx.md)

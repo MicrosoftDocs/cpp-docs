@@ -50,4 +50,4 @@ For more information about Visual C++ run-time libraries, see [CRT Library Featu
 
 ## See also
 
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
+- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

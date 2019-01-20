@@ -18,6 +18,6 @@ The input files expected by LIB depend on the mode in which it is being used, as
 > [!NOTE]
 >  OMF libraries created by the 16-bit version of LIB cannot be used as input to the 32-bit version of LIB.
 
-## See Also
+## See also
 
-[Overview of LIB](../../build/reference/overview-of-lib.md)
+- [Overview of LIB](../../build/reference/overview-of-lib.md)

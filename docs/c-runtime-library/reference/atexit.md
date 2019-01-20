@@ -91,7 +91,7 @@ This is executed next.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [abort](abort.md)
+- [exit, _Exit, _exit](exit-exit-exit.md)
+- [_onexit, _onexit_m](onexit-onexit-m.md)

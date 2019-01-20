@@ -23,4 +23,4 @@ The second directive assigns specified *text* to *name*. The *name* can be assig
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

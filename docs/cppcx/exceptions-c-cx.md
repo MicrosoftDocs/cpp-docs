@@ -97,5 +97,5 @@ C++/CX does not use the `finally` clause.
 
 ## See also
 
-[Visual C++ Language Reference](visual-c-language-reference-c-cx.md)<br/>
-[Namespaces Reference](namespaces-reference-c-cx.md)
+- [Visual C++ Language Reference](visual-c-language-reference-c-cx.md)
+- [Namespaces Reference](namespaces-reference-c-cx.md)

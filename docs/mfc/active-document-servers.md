@@ -20,7 +20,6 @@ A regular MFC server hooks up its own `COleServerItem`-derived class. The MFC Ap
 
 The `COleDocObjectItem` class allows an OLE container to become an active document container. You can use the MFC Application Wizard to create an active document container by selecting the **Active document container** checkbox in the Compound Document Support page of the MFC Application Wizard. For more information, see [Creating an Active Document Container Application](../mfc/creating-an-active-document-container-application.md).
 
-## See Also
+## See also
 
-[Active Document Containment](../mfc/active-document-containment.md)
-
+- [Active Document Containment](../mfc/active-document-containment.md)

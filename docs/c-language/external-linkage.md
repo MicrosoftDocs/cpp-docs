@@ -12,6 +12,6 @@ If the declaration of an identifier for a function has no *storage-class-specifi
 
 An identifier's name with external linkage designates the same function or data object as does any other declaration for the same name with external linkage. The two declarations can be in the same translation unit or in different translation units. If the object or function also has global lifetime, the object or function is shared by the entire program.
 
-## See Also
+## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+- [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)

@@ -49,7 +49,7 @@ invalid_scheduler_policy_thread_specification() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[SchedulerPolicy Class](schedulerpolicy-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [SchedulerPolicy Class](schedulerpolicy-class.md)

@@ -18,8 +18,7 @@ Sometimes circumstances force the server to terminate while a client still has a
 
 In the Windows SDK, see `IUnknown::AddRef` and `IUnknown::Release`.
 
-## See Also
+## See also
 
-[Automation Servers](../mfc/automation-servers.md)<br/>
-[AfxOleCanExitApp](../mfc/reference/application-control.md#afxolecanexitapp)
-
+- [Automation Servers](../mfc/automation-servers.md)
+- [AfxOleCanExitApp](../mfc/reference/application-control.md#afxolecanexitapp)

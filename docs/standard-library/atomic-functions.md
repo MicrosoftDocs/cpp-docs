@@ -915,4 +915,4 @@ The return value is *Arg*. The evaluation of *Arg* does not carry a dependency t
 
 ## See also
 
-[\<atomic>](../standard-library/atomic.md)<br/>
+- [\<atomic>](../standard-library/atomic.md)

@@ -25,4 +25,4 @@ Calls `VariantClear` on the encapsulated `VARIANT` object.
 
 ## See also
 
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

@@ -38,4 +38,4 @@ The inline assembler has much in common with other assemblers. For example, it a
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

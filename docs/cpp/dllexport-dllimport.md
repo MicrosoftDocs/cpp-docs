@@ -64,5 +64,5 @@ For more information, see:
 
 ## See also
 
-[__declspec](../cpp/declspec.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [__declspec](../cpp/declspec.md)
+- [Keywords](../cpp/keywords-cpp.md)

@@ -81,4 +81,4 @@ E:
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)

@@ -322,4 +322,4 @@ Vector v1 is greater than or equal to vector v2.
 
 ## See also
 
-[\<vector>](../standard-library/vector.md)<br/>
+- [\<vector>](../standard-library/vector.md)

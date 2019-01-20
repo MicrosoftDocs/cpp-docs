@@ -24,6 +24,6 @@ In this header file:
 
 [lock_when Enum](../dotnet/lock-when-enum.md)
 
-## See Also
+## See also
 
-[C++ Support Library](../dotnet/cpp-support-library.md)
+- [C++ Support Library](../dotnet/cpp-support-library.md)

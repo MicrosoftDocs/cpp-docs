@@ -46,7 +46,7 @@ Use the following tips:
 
 - You might want to maintain a pointer to the previous character for faster calls to `_mbsdec`.
 
-## See Also
+## See also
 
-[MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
-[Byte Indices](../text/byte-indices.md)
+- [MBCS Programming Tips](../text/mbcs-programming-tips.md)
+- [Byte Indices](../text/byte-indices.md)

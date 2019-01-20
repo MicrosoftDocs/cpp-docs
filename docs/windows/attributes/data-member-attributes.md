@@ -24,6 +24,6 @@ The following attributes apply to the data members in a class, coclass, or inter
 |[readonly](readonly-cpp.md)|Prohibits assignment to a data member.|
 |[requestedit](requestedit.md)|Indicates that the property supports the `OnRequestEdit` notification.|
 
-## See Also
+## See also
 
-[Attributes by Usage](attributes-by-usage.md)
+- [Attributes by Usage](attributes-by-usage.md)

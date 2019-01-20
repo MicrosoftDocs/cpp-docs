@@ -26,4 +26,4 @@ Returns the encapsulated interface pointer, which may be NULL.
 
 ## See also
 
-[_com_ptr_t Class](../cpp/com-ptr-t-class.md)
+- [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

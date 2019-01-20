@@ -57,7 +57,6 @@ A view that contains a Windows list control (see [CListCtrl](../mfc/reference/cl
 [CTreeView](../mfc/reference/ctreeview-class.md)<br/>
 A view that contains a Windows tree control (see [CTreeCtrl](../mfc/reference/ctreectrl-class.md)). A tree control displays icons and strings arranged in a hierarchy in a manner similar to the left pane of File Explorer.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

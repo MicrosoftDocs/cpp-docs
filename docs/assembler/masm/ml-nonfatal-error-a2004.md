@@ -14,4 +14,4 @@ The [EXTERNDEF](../../assembler/masm/externdef.md) or [LABEL](../../assembler/ma
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

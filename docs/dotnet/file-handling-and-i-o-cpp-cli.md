@@ -305,10 +305,10 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+- [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
-[File and Stream I-O](/dotnet/standard/io/index)
+- [File and Stream I-O](/dotnet/standard/io/index)
 
-[System.IO namespace](https://msdn.microsoft.com/library/system.io.aspx)
+- [System.IO namespace](https://msdn.microsoft.com/library/system.io.aspx)

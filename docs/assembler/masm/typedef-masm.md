@@ -15,4 +15,4 @@ Defines a new type called *name*, which is equivalent to *type*.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

@@ -65,7 +65,7 @@ See the example for [floor](floor-floorf-floorl.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
-[fmod, fmodf](fmod-fmodf.md)<br/>
-[round, roundf, roundl](round-roundf-roundl.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [floor, floorf, floorl](floor-floorf-floorl.md)
+- [fmod, fmodf](fmod-fmodf.md)
+- [round, roundf, roundl](round-roundf-roundl.md)

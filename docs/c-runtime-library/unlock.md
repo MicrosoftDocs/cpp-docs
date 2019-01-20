@@ -32,7 +32,7 @@ void __cdecl _unlock(
 
 **Source:** mlock.c
 
-## See Also
+## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_lock](../c-runtime-library/lock.md)
+- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+- [_lock](../c-runtime-library/lock.md)

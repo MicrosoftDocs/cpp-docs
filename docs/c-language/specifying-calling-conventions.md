@@ -11,6 +11,6 @@ For information on calling conventions, see [Calling Conventions Topics](../cpp/
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Function Attributes](../c-language/function-attributes.md)
+- [Function Attributes](../c-language/function-attributes.md)

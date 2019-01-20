@@ -32,6 +32,6 @@ If the first ASSERT succeeds and the second one fails, it means that the memory 
 
 Depending on the nature of your application, you may find that `afxMemDF` causes your program to run too slowly to even test. The `afxMemDF` variable causes `AfxCheckMemory` to be called for every call to new and delete. In that case, you should scatter your own calls to `AfxCheckMemory`( ) as shown above, and try to isolate the memory overwrite that way.
 
-## See Also
+## See also
 
-[Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)
+- [Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)

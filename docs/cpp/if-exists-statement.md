@@ -113,6 +113,6 @@ C::f exists
 
 ## See also
 
-[Selection Statements](../cpp/selection-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[__if_not_exists Statement](../cpp/if-not-exists-statement.md)
+- [Selection Statements](../cpp/selection-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [__if_not_exists Statement](../cpp/if-not-exists-statement.md)

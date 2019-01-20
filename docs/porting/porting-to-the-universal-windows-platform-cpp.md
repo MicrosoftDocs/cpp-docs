@@ -102,5 +102,5 @@ If you created a new UWP project using Visual Studio, you should not see this er
 
 ## See also
 
-[Visual C++ Porting Guide](../porting/porting-to-the-universal-windows-platform-cpp.md)<br/>
-[Develop apps for the Universal Windows Platform (UWP)](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)
+- [Visual C++ Porting Guide](../porting/porting-to-the-universal-windows-platform-cpp.md)
+- [Develop apps for the Universal Windows Platform (UWP)](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)

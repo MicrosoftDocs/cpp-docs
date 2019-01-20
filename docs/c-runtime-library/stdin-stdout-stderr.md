@@ -34,7 +34,7 @@ These pointers can be used as arguments to functions. Some functions, such as [g
 
 These pointers are constants, and cannot be assigned new values. The [freopen](../c-runtime-library/reference/freopen-wfreopen.md) function can be used to redirect the streams to disk files or to other devices. The operating system allows you to redirect a program's standard input and output at the command level.
 
-## See Also
+## See also
 
-[Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [Stream I/O](../c-runtime-library/stream-i-o.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

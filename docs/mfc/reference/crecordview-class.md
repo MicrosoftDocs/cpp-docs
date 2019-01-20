@@ -201,9 +201,9 @@ If you move past the last record in the recordset, the record view continues to 
 > [!CAUTION]
 >  Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, or `OnUpdateRecordPrev` — before the corresponding move operation to determine whether the recordset has any records.
 
-## See Also
+## See also
 
-[CFormView Class](../../mfc/reference/cformview-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CRecordset Class](../../mfc/reference/crecordset-class.md)<br/>
-[CFormView Class](../../mfc/reference/cformview-class.md)
+- [CFormView Class](../../mfc/reference/cformview-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CRecordset Class](../../mfc/reference/crecordset-class.md)
+- [CFormView Class](../../mfc/reference/cformview-class.md)

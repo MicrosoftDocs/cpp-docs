@@ -22,4 +22,4 @@ The `exit` and **return** statements in the preceding example are functionally i
 
 ## See also
 
-[Program Termination](../cpp/program-termination.md)
+- [Program Termination](../cpp/program-termination.md)

@@ -105,7 +105,7 @@ wordlist after _lsearch: hello thanks bye extra
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch](bsearch.md)<br/>
-[_lfind](lfind.md)<br/>
-[_lsearch_s](lsearch-s.md)<br/>
+- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)
+- [bsearch](bsearch.md)
+- [_lfind](lfind.md)
+- [_lsearch_s](lsearch-s.md)

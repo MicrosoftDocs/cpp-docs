@@ -64,8 +64,8 @@ There were 3 streams flushed
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_commit](commit.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[fflush](fflush.md)<br/>
-[setvbuf](setvbuf.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_commit](commit.md)
+- [fclose, _fcloseall](fclose-fcloseall.md)
+- [fflush](fflush.md)
+- [setvbuf](setvbuf.md)

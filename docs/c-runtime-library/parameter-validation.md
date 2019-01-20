@@ -18,7 +18,7 @@ The invalid parameter handler dispatch function in turn calls the currently assi
 
 This behavior can be changed by using the functions [_set_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) or [_set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) to set the invalid parameter handler to your own function. If the function you specify does not terminate the application, control is returned to the function that received the invalid parameters. In the CRT, these functions will normally cease function execution, set `errno` to an error code, and return an error code. In many cases, the `errno` value and the return value are both `EINVAL`, indicating an invalid parameter. In some cases, a more specific error code is returned, such as `EBADF` for a bad file pointer passed in as a parameter. For more information on `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## See Also
+## See also
 
-[Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md)<br/>
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+- [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md)
+- [CRT Library Features](../c-runtime-library/crt-library-features.md)

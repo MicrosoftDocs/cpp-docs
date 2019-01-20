@@ -104,6 +104,6 @@ The `cancellation_token_registration` to compare.
 
 ### Return Value
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

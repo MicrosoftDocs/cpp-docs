@@ -113,12 +113,12 @@ HRESULT Fire_OnRowsetChange(IRowset* pRowset,
 
 See [IRowsetNotify::OnRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms722669(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
-[Notifications (COM)](/windows/desktop/com/notifications)<br/>
-[BEGIN_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#begin_connection_point_map)<br/>
-[END_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#end_connection_point_map)<br/>
-[CONNECTION_POINT_ENTRY](../../atl/reference/connection-point-macros.md#connection_point_entry)<br/>
-[Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)
+- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+- [Notifications (COM)](/windows/desktop/com/notifications)
+- [BEGIN_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#begin_connection_point_map)
+- [END_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#end_connection_point_map)
+- [CONNECTION_POINT_ENTRY](../../atl/reference/connection-point-macros.md#connection_point_entry)
+- [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)

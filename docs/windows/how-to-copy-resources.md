@@ -47,8 +47,8 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[How to: Open a Resource Script File Outside of a Project (Standalone)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)
+- [How to: Open a Resource Script File Outside of a Project (Standalone)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Editors](../windows/resource-editors.md)

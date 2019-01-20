@@ -85,6 +85,6 @@ The type of integer required to hold the maximum size of an array is the size of
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)
+- [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

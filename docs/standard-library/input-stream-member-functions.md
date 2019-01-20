@@ -190,4 +190,4 @@ The `close` member function closes the disk file associated with an input file s
 
 ## See also
 
-[Input Streams](../standard-library/input-streams.md)<br/>
+- [Input Streams](../standard-library/input-streams.md)

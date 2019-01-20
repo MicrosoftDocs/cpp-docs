@@ -62,4 +62,4 @@ int main() {
 
 ## See also
 
-[Additional Termination Considerations](../cpp/additional-termination-considerations.md)
+- [Additional Termination Considerations](../cpp/additional-termination-considerations.md)

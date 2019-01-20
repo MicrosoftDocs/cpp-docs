@@ -17,4 +17,4 @@ The first operator returns *expression* plus the offset of *field* within its st
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

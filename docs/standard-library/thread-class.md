@@ -224,5 +224,5 @@ The third constructor constructs an object that's associated with the thread tha
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<thread>](../standard-library/thread.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<thread>](../standard-library/thread.md)

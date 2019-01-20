@@ -34,9 +34,9 @@ For general information about messages and message queues in Windows, see [Messa
 
 - [How to: Create a Message Map for a Template Class](../mfc/how-to-create-a-message-map-for-a-template-class.md)
 
-## See Also
+## See also
 
-[Concepts](../mfc/mfc-concepts.md)<br/>
-[General MFC Topics](../mfc/general-mfc-topics.md)<br/>
-[CWnd Class](../mfc/reference/cwnd-class.md)<br/>
-[CCmdTarget Class](../mfc/reference/ccmdtarget-class.md)
+- [Concepts](../mfc/mfc-concepts.md)
+- [General MFC Topics](../mfc/general-mfc-topics.md)
+- [CWnd Class](../mfc/reference/cwnd-class.md)
+- [CCmdTarget Class](../mfc/reference/ccmdtarget-class.md)

@@ -30,4 +30,4 @@ Converts an ANSI character string to a Unicode `BSTR` string and assigns it to t
 
 ## See also
 
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

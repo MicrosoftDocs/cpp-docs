@@ -9,6 +9,6 @@ ms.assetid: 899410b4-0db2-4eab-b94e-236b9774de31
 
 A variable declared as `enum` is an `int`.
 
-## See Also
+## See also
 
-[Structures, Unions, Enumerations, and Bit Fields](../c-language/structures-unions-enumerations-and-bit-fields.md)
+- [Structures, Unions, Enumerations, and Bit Fields](../c-language/structures-unions-enumerations-and-bit-fields.md)

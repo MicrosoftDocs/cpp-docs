@@ -49,6 +49,6 @@ The constructor of `mem_fun_t` is not usually used directly; the helper function
 
 ## See also
 
-[\<functional>](../standard-library/functional.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [\<functional>](../standard-library/functional.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

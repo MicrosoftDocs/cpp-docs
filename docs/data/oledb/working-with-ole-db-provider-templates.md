@@ -24,7 +24,7 @@ To learn how to work with the OLE DB provider templates, see the following topic
 
 - [Converting Data Not Supported by the Provider](../../data/oledb/converting-data-not-supported-by-the-provider.md)
 
-## See Also
+## See also
 
-[OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

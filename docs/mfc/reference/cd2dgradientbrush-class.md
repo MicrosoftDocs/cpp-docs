@@ -139,6 +139,6 @@ A pointer to an array of D2D1_GRADIENT_STOP structures.
 ID2D1GradientStopCollection* m_pGradientStops;
 ```
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

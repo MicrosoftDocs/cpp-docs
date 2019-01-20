@@ -94,5 +94,5 @@ Some command-line options to ML and ML64 are placement-sensitive. For example, b
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
-[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+- [Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)

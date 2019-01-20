@@ -15,4 +15,4 @@ Status of parity flag. Used only within [.IF](../../assembler/masm/dot-if.md), [
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

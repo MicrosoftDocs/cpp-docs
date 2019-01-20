@@ -83,4 +83,4 @@ These function templates allow comparison with a smart pointer on the right side
 
 ## See also
 
-[_com_ptr_t Class](../cpp/com-ptr-t-class.md)
+- [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

@@ -35,4 +35,4 @@ The following table lists the limits on the values of floating-point constants. 
 
 ## See also
 
-[Integer Limits](../cpp/integer-limits.md)
+- [Integer Limits](../cpp/integer-limits.md)

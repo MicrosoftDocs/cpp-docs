@@ -33,4 +33,4 @@ An instance of the type predicate holds true if the type *T* is `std::nullptr_t`
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

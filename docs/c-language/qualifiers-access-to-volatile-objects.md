@@ -9,6 +9,6 @@ ms.assetid: b5644d4a-d93a-4f33-880a-76eb88d5ad7a
 
 Any reference to a volatile-qualified type is an access.
 
-## See Also
+## See also
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

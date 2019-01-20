@@ -95,8 +95,8 @@ Length: 25 characters
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[memchr, wmemchr](memchr-wmemchr.md)<br/>
-[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
+- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)
+- [memchr, wmemchr](memchr-wmemchr.md)
+- [memcmp, wmemcmp](memcmp-wmemcmp.md)
+- [memcpy, wmemcpy](memcpy-wmemcpy.md)
+- [memset, wmemset](memset-wmemset.md)

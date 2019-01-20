@@ -26,6 +26,6 @@ assigns the value 0x34 to `y`.
 
 When signed variables are converted to unsigned and vice versa, the bit patterns remain the same. For example, casting -2 (0xFE) to an unsigned value yields 254 (also 0xFE).
 
-## See Also
+## See also
 
-[Integers](../c-language/integers.md)
+- [Integers](../c-language/integers.md)

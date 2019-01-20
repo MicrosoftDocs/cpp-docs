@@ -63,8 +63,8 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
-[dynamic_cast Operator](../../cpp/dynamic-cast-operator.md)<br/>
-[vtordisp](../../preprocessor/vtordisp.md)<br/>
-[Compiler Warning (level 4) C4437](../../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md)
+- [dynamic_cast Operator](../../cpp/dynamic-cast-operator.md)
+- [vtordisp](../../preprocessor/vtordisp.md)
+- [Compiler Warning (level 4) C4437](../../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md)

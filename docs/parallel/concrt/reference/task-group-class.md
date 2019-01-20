@@ -235,8 +235,8 @@ Calling `wait` on a `task_group` object resets it to a clean state where it can 
 
 In the non-exceptional path of execution, you have a mandate to call either this method or the `run_and_wait` method before the destructor of the `task_group` executes.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[structured_task_group Class](structured-task-group-class.md)<br/>
-[task_handle Class](task-handle-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [structured_task_group Class](structured-task-group-class.md)
+- [task_handle Class](task-handle-class.md)

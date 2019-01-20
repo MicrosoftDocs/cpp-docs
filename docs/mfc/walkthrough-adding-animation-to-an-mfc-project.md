@@ -360,4 +360,4 @@ To complete this walkthrough, you must have Visual Studio.
 
 ## See also
 
-[Walkthroughs](../mfc/walkthroughs-mfc.md)
+- [Walkthroughs](../mfc/walkthroughs-mfc.md)

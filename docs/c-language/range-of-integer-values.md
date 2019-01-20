@@ -16,6 +16,6 @@ Integers contain 32 bits (four bytes). Signed integers are represented in two's-
 |`unsigned long`|0 to 4294967295|
 |**signed long**|-2147483648 to 2147483647|
 
-## See Also
+## See also
 
-[Integers](../c-language/integers.md)
+- [Integers](../c-language/integers.md)

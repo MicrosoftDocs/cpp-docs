@@ -41,6 +41,6 @@ S_OK, if this operation is successful; otherwise, an error HRESULT that indicate
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
-[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)
+- [Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

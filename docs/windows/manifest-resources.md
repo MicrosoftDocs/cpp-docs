@@ -38,7 +38,7 @@ You can only have one manifest resource per module.
 
 Win32
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)<br/>
-[Working with Resource Files](../windows/working-with-resource-files.md)
+- [Controls](../mfc/controls-mfc.md)
+- [Working with Resource Files](../windows/working-with-resource-files.md)

@@ -43,6 +43,6 @@ Compares two specified HSTRING objects and returns an integer that indicates the
 
 **Namespace:** Microsoft::WRL::Wrappers::Details
 
-## See Also
+## See also
 
-[Microsoft::WRL::Wrappers::Details Namespace](microsoft-wrl-wrappers-details-namespace.md)
+- [Microsoft::WRL::Wrappers::Details Namespace](microsoft-wrl-wrappers-details-namespace.md)

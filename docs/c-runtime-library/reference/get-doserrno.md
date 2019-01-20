@@ -47,5 +47,5 @@ Possible values of **_doserrno** are defined in \<errno.h>.
 
 ## See also
 
-[_set_doserrno](set-doserrno.md)<br/>
-[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+- [_set_doserrno](set-doserrno.md)
+- [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)

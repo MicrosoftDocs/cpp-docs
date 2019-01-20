@@ -15,5 +15,5 @@ Allocates and optionally initializes a signed word (2 bytes) of storage for each
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[WORD](../../assembler/masm/word.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)
+- [WORD](../../assembler/masm/word.md)

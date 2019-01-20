@@ -421,12 +421,12 @@ The first version of `MDITile`, without parameters, tiles the windows vertically
 
 See the example for [CMDIFrameWnd::MDICascade](#mdicascade).
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
-[CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md)
+- [MFC Sample MDI](../../visual-cpp-samples.md)
+- [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)
+- [MFC Sample SNAPVW](../../visual-cpp-samples.md)
+- [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md)

@@ -12,4 +12,4 @@ On extraction, the `hex` manipulator enables processing of various input formats
 
 ## See also
 
-[Input Streams](../standard-library/input-streams.md)<br/>
+- [Input Streams](../standard-library/input-streams.md)

@@ -150,7 +150,7 @@ The Visual C++ C compiler is compatible with the ISO C99 standard, but not stric
 
 ## See also
 
-[Walkthrough: Creating a Standard C++ Program (C++)](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)<br/>
-[C Language Reference](../c-language/c-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
-[Compatibility](../c-runtime-library/compatibility.md)
+- [Walkthrough: Creating a Standard C++ Program (C++)](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)
+- [C Language Reference](../c-language/c-language-reference.md)
+- [Building C/C++ Programs](../build/building-c-cpp-programs.md)
+- [Compatibility](../c-runtime-library/compatibility.md)

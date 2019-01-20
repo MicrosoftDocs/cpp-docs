@@ -96,8 +96,8 @@ The date and time settings are derived from the computer on which the querydef w
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
-[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)<br/>
-[CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)
+- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+- [CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)
+- [CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)

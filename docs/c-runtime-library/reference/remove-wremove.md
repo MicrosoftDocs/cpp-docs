@@ -88,5 +88,5 @@ Deleted 'CRT_REMOVE.TXT'
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_unlink, _wunlink](unlink-wunlink.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_unlink, _wunlink](unlink-wunlink.md)

@@ -77,5 +77,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[lgamma, lgammaf, lgammal](lgamma-lgammaf-lgammal.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [lgamma, lgammaf, lgammal](lgamma-lgammaf-lgammal.md)

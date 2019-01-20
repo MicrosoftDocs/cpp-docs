@@ -92,8 +92,8 @@ Some of THESE letters are Capitals.
 sOME OF these LETTERS ARE cAPITALS.
 ```
 
-## See Also
+## See also
 
-[Data Conversion](../c-runtime-library/data-conversion.md)<br/>
-[Locale](../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../c-runtime-library/is-isw-routines.md)
+- [Data Conversion](../c-runtime-library/data-conversion.md)
+- [Locale](../c-runtime-library/locale.md)
+- [is, isw Routines](../c-runtime-library/is-isw-routines.md)

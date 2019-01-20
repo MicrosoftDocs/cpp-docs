@@ -12,8 +12,7 @@ If you arrange for some of your list data to be stored in the application rather
 
 In addition, you are responsible for deallocating any image lists you created and associated with the list control object.
 
-## See Also
+## See also
 
-[Using CListCtrl](../mfc/using-clistctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CListCtrl](../mfc/using-clistctrl.md)
+- [Controls](../mfc/controls-mfc.md)

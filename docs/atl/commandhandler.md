@@ -42,9 +42,8 @@ The result of message processing. 0 if successful.
 
 For an example of using this message handler in a message map, see [COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler).
 
-## See Also
+## See also
 
-[Implementing a Window](../atl/implementing-a-window.md)<br/>
-[Message Maps](../atl/message-maps-atl.md)<br/>
-[WM_NOTIFY](/windows/desktop/controls/wm-notify)
-
+- [Implementing a Window](../atl/implementing-a-window.md)
+- [Message Maps](../atl/message-maps-atl.md)
+- [WM_NOTIFY](/windows/desktop/controls/wm-notify)

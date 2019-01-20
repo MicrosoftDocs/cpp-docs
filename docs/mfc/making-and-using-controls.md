@@ -32,7 +32,6 @@ You make most controls for dialog boxes in the Visual C++ [dialog editor](../win
 
 - [Dialog bars](../mfc/dialog-bars.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

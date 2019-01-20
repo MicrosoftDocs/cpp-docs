@@ -30,4 +30,4 @@ These constants define the maximum length for the path and for the individual fi
 
 ## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

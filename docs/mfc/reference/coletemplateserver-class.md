@@ -153,10 +153,10 @@ The information in the arguments *rglpszRegister* and *rglpszOverwrite* is writt
 
 For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[COleObjectFactory Class](../../mfc/reference/coleobjectfactory-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)<br/>
-[COleServerItem Class](../../mfc/reference/coleserveritem-class.md)
+- [MFC Sample HIERSVR](../../visual-cpp-samples.md)
+- [COleObjectFactory Class](../../mfc/reference/coleobjectfactory-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)
+- [COleServerItem Class](../../mfc/reference/coleserveritem-class.md)

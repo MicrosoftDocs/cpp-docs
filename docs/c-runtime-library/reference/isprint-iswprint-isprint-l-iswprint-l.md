@@ -66,6 +66,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
+- [Character Classification](../../c-runtime-library/character-classification.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

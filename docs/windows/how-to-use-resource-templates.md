@@ -56,7 +56,7 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Editors](../windows/resource-editors.md)

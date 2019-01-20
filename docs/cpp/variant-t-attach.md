@@ -30,4 +30,4 @@ Takes ownership of the `VARIANT` by encapsulating it. This member function relea
 
 ## See also
 
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

@@ -57,7 +57,7 @@ These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

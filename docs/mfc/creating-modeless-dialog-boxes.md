@@ -8,7 +8,6 @@ ms.assetid: 70d78c7f-3d40-477b-9f78-0f33c359f88b
 
 For a modeless dialog box, you must provide your own public constructor in your dialog class. To create a modeless dialog box, call your public constructor and then call the dialog object's [Create](../mfc/reference/cdialog-class.md#create) member function to load the dialog resource. You can call **Create** either during or after the constructor call. If the dialog resource has the property **WS_VISIBLE**, the dialog box appears immediately. If not, you must call its [ShowWindow](../mfc/reference/cwnd-class.md#showwindow) member function.
 
-## See Also
+## See also
 
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

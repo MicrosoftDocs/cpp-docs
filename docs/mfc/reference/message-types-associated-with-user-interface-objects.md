@@ -17,13 +17,13 @@ The following table shows the types of objects with which you work, and the type
 |Menu or accelerator identifier|- COMMAND message (executes the program function).<br />- UPDATE_COMMAND_UI message (dynamically updates the menu item).|
 |Control identifier|Control notification messages for the selected control type.|
 
-## See Also
+## See also
 
-[Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)<br/>
-[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
-[Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)<br/>
-[Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
-[Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
-[Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)
+- [Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)
+- [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
+- [Adding a Class](../../ide/adding-a-class-visual-cpp.md)
+- [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)
+- [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)
+- [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)
+- [MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)
+- [Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)

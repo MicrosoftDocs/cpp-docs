@@ -76,5 +76,5 @@ is_member_function_pointer<int (functional::*)()> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_member_pointer Class](../standard-library/is-member-pointer-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_member_pointer Class](../standard-library/is-member-pointer-class.md)

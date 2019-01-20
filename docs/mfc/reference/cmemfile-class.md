@@ -265,8 +265,7 @@ A pointer to the memory block that was reallocated (and possibly moved), or NULL
 
 Override this function to implement custom memory reallocation. If you override this function, you'll probably want to override [Alloc](#alloc) and [Free](#free) as well.
 
-## See Also
+## See also
 
-[CFile Class](../../mfc/reference/cfile-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [CFile Class](../../mfc/reference/cfile-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

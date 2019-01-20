@@ -43,4 +43,4 @@ In the preceding code, `multi` is a three-dimensional array of type **double**. 
 
 ## See also
 
-[Arrays](../cpp/arrays-cpp.md)
+- [Arrays](../cpp/arrays-cpp.md)

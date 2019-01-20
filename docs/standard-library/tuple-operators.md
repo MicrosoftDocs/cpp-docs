@@ -403,4 +403,4 @@ false
 
 ## See also
 
-[\<tuple>](../standard-library/tuple.md)<br/>
+- [\<tuple>](../standard-library/tuple.md)

@@ -25,4 +25,4 @@ Calls `IUnknown::Release` on the encapsulated interface pointer, raising an `E_P
 
 ## See also
 
-[_com_ptr_t Class](../cpp/com-ptr-t-class.md)
+- [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

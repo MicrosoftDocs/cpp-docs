@@ -65,11 +65,10 @@ Define window class utilities.
 [Windows Messages Macros](../../atl/reference/windows-messages-macros.md)<br/>
 Forward window messages.
 
-## See Also
+## See also
 
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
-[Functions](../../atl/reference/atl-functions.md)<br/>
-[Global Variables](../../atl/reference/atl-global-variables.md)<br/>
-[Classes and structs](../../atl/reference/atl-classes.md)<br/>
-[Typedefs](../../atl/reference/atl-typedefs.md)
-
+- [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+- [Functions](../../atl/reference/atl-functions.md)
+- [Global Variables](../../atl/reference/atl-global-variables.md)
+- [Classes and structs](../../atl/reference/atl-classes.md)
+- [Typedefs](../../atl/reference/atl-typedefs.md)

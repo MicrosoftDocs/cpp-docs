@@ -212,11 +212,11 @@ virtual BOOL SetACCData(
 
 TRUE if the *data* parameter was successfully populated with the accessibility data of the current task group; otherwise, FALSE.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCTasksPane Class](../../mfc/reference/cmfctaskspane-class.md)<br/>
-[CMFCTasksPaneTask Class](../../mfc/reference/cmfctaskspanetask-class.md)<br/>
-[CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCTasksPane Class](../../mfc/reference/cmfctaskspane-class.md)
+- [CMFCTasksPaneTask Class](../../mfc/reference/cmfctaskspanetask-class.md)
+- [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)

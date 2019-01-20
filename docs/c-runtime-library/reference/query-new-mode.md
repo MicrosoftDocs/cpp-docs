@@ -42,8 +42,8 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](calloc.md)<br/>
-[free](free.md)<br/>
-[realloc](realloc.md)<br/>
-[_query_new_handler](query-new-handler.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [calloc](calloc.md)
+- [free](free.md)
+- [realloc](realloc.md)
+- [_query_new_handler](query-new-handler.md)

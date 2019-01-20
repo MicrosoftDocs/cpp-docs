@@ -19,4 +19,4 @@ See [MACRO](../../assembler/masm/macro.md), [FOR](../../assembler/masm/for-masm.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

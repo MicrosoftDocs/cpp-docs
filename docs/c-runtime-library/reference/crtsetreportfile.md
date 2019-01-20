@@ -89,4 +89,4 @@ The console is not supported in Universal Windows Platform (UWP) apps. The stand
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)

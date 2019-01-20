@@ -68,6 +68,6 @@ END_ACCESSOR_MAP()
 };
 ```
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

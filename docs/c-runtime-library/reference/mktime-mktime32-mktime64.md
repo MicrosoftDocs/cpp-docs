@@ -116,9 +116,9 @@ In 20 days the time will be Thu May 15 13:34:07 2003
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](asctime-wasctime.md)<br/>
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
-[_mkgmtime, _mkgmtime32, _mkgmtime64](mkgmtime-mkgmtime32-mkgmtime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+- [Time Management](../../c-runtime-library/time-management.md)
+- [asctime, _wasctime](asctime-wasctime.md)
+- [gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)
+- [localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)
+- [_mkgmtime, _mkgmtime32, _mkgmtime64](mkgmtime-mkgmtime32-mkgmtime64.md)
+- [time, _time32, _time64](time-time32-time64.md)

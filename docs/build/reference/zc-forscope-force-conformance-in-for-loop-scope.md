@@ -60,5 +60,5 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
-[/Za, /Ze (Disable Language Extensions)](../../build/reference/za-ze-disable-language-extensions.md)<br/>
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)
+- [/Za, /Ze (Disable Language Extensions)](../../build/reference/za-ze-disable-language-extensions.md)

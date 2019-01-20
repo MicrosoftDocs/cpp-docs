@@ -32,9 +32,9 @@ Once the file is successfully opened, you can then determine whether the stream 
 
 © 1989-2001 by P.J. Plauger and Jim Brodie. All rights reserved.
 
-## See Also
+## See also
 
-[Text and Binary Streams](../c-runtime-library/text-and-binary-streams.md)<br/>
-[Byte and Wide Streams](../c-runtime-library/byte-and-wide-streams.md)<br/>
-[Controlling Streams](../c-runtime-library/controlling-streams.md)<br/>
-[Stream States](../c-runtime-library/stream-states.md)
+- [Text and Binary Streams](../c-runtime-library/text-and-binary-streams.md)
+- [Byte and Wide Streams](../c-runtime-library/byte-and-wide-streams.md)
+- [Controlling Streams](../c-runtime-library/controlling-streams.md)
+- [Stream States](../c-runtime-library/stream-states.md)

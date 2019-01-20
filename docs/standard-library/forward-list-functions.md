@@ -33,4 +33,4 @@ This template function executes `left.swap(right)`.
 
 ## See also
 
-[<forward_list>](../standard-library/forward-list.md)<br/>
+- [<forward_list>](../standard-library/forward-list.md)

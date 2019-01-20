@@ -48,7 +48,7 @@ This has the same effect as the following command line:
 
 > CL FILE1.C FILE2.C FILE3.OBJ
 
-## See Also
+## See also
 
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)

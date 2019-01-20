@@ -117,6 +117,6 @@ For information on adding resources to managed projects, please see [Resources i
 
 None
 
-## See Also
+## See also
 
-[Resource Editors](../windows/resource-editors.md)
+- [Resource Editors](../windows/resource-editors.md)

@@ -81,8 +81,7 @@ The error codes returned by `GetLastError` depend on the specific dialog box dis
 
 See the `DoModal` member function in the derived classes for information about specific error messages.
 
-## See Also
+## See also
 
-[CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

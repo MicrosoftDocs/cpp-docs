@@ -63,6 +63,6 @@ In the following example (which uses the declarations from the preceding example
 f_longer = f_short * f_short;
 ```
 
-## See Also
+## See also
 
-[Storage of Basic Types](../c-language/storage-of-basic-types.md)
+- [Storage of Basic Types](../c-language/storage-of-basic-types.md)

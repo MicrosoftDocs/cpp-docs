@@ -80,5 +80,5 @@ The following example demonstrates how to use armasm in a typical scenario. Firs
 
 ## See also
 
-[ARM Assembler Diagnostic Messages](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>
-[ARM Assembler Directives](../../assembler/arm/arm-assembler-directives.md)<br/>
+- [ARM Assembler Diagnostic Messages](../../assembler/arm/arm-assembler-diagnostic-messages.md)
+- [ARM Assembler Directives](../../assembler/arm/arm-assembler-directives.md)

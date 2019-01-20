@@ -3871,12 +3871,12 @@ The return value of the message dispatched.
 
 Call this function to dispatch specific messages through the control's message map.
 
-## See Also
+## See also
 
-[MFC Sample CIRC3](../../visual-cpp-samples.md)<br/>
-[MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
-[COlePropertyPage Class](../../mfc/reference/colepropertypage-class.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CFontHolder Class](../../mfc/reference/cfontholder-class.md)<br/>
-[CPictureHolder Class](../../mfc/reference/cpictureholder-class.md)<br/>
+- [MFC Sample CIRC3](../../visual-cpp-samples.md)
+- [MFC Sample TESTHELP](../../visual-cpp-samples.md)
+- [COlePropertyPage Class](../../mfc/reference/colepropertypage-class.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CFontHolder Class](../../mfc/reference/cfontholder-class.md)
+- [CPictureHolder Class](../../mfc/reference/cpictureholder-class.md)

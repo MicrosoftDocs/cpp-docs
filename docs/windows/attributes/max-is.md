@@ -41,12 +41,12 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 
 See [first_is](first-is.md) for an example of how to specify a section of an array.
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)<br/>
-[first_is](first-is.md)<br/>
-[last_is](last-is.md)<br/>
-[length_is](length-is.md)<br/>
-[size_is](size-is.md)
+- [IDL Attributes](idl-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [Parameter Attributes](parameter-attributes.md)
+- [first_is](first-is.md)
+- [last_is](last-is.md)
+- [length_is](length-is.md)
+- [size_is](size-is.md)

@@ -26,6 +26,6 @@ The file time and the date are stored individually, using unsigned integers as b
 |Value Range:|0-119|1-12|1-31|
 ||(relative to 1980)|||
 
-## See Also
+## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

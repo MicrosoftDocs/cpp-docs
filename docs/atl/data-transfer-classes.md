@@ -14,7 +14,6 @@ The following classes support various types of data transfer:
 
 - [CBindStatusCallback](../atl/reference/cbindstatuscallback-class.md) Allows an asynchronous moniker to send and receive information about the asynchronous data transfer to and from your object.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

@@ -98,8 +98,8 @@ Hello found
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[_lfind_s](lfind-s.md)<br/>
-[bsearch](bsearch.md)<br/>
-[_lsearch](lsearch.md)<br/>
-[qsort](qsort.md)<br/>
+- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)
+- [_lfind_s](lfind-s.md)
+- [bsearch](bsearch.md)
+- [_lsearch](lsearch.md)
+- [qsort](qsort.md)

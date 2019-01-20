@@ -293,7 +293,7 @@ Destroys the `transformer` messaging block.
 ~transformer();
 ```
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[call Class](call-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [call Class](call-class.md)

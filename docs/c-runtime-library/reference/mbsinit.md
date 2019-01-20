@@ -143,4 +143,4 @@ WC String: AaBbCcxXyYzZ
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+- [Byte Classification](../../c-runtime-library/byte-classification.md)

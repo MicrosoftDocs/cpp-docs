@@ -15,7 +15,7 @@ The maximum permissible length for a `filename` string buffer size.
 #include <stdio.h>
 ```
 
-## See Also
+## See also
 
-[Path Field Limits](../c-runtime-library/path-field-limits.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [Path Field Limits](../c-runtime-library/path-field-limits.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

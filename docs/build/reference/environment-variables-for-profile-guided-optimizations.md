@@ -62,6 +62,6 @@ Set the *path* parameter to the directory path in which to add .pgc files. For e
 
 ## See also
 
-[Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md)<br/>
-[/GENPROFILE and /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
-[/USEPROFILE](useprofile.md)<br/>
+- [Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md)
+- [/GENPROFILE and /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)
+- [/USEPROFILE](useprofile.md)

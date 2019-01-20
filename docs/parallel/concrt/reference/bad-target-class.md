@@ -54,8 +54,7 @@ bad_target() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md)
-
+- [concurrency Namespace](concurrency-namespace.md)
+- [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md)

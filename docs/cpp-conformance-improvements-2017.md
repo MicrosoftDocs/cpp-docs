@@ -1970,4 +1970,4 @@ int main()
 
 ## See also
 
-[Visual C++ Language Conformance](visual-cpp-language-conformance.md)
+- [Visual C++ Language Conformance](visual-cpp-language-conformance.md)

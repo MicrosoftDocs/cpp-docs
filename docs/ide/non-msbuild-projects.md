@@ -337,6 +337,6 @@ To specify additional arguments, just add them in the `args` JSON array as shown
 
 When you save this file, the new configuration appears in the Debug Target dropdown and you can select it to start the debugger. You can create as many debug configurations as you like, for any number of executables. If you press **F5** now, the debugger will launch and hit any breakpoint you may have already set. All the familiar debugger windows and their functionality are now available.
 
-## See Also
+## See also
 
-[IDE and Tools for Visual C++ Development](ide-and-tools-for-visual-cpp-development.md)
+- [IDE and Tools for Visual C++ Development](ide-and-tools-for-visual-cpp-development.md)

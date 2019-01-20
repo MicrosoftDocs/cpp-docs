@@ -63,4 +63,4 @@ The following table shows example input and expected output, demonstrating the r
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)
+- [main: Program Startup](../cpp/main-program-startup.md)

@@ -65,6 +65,6 @@ the address of `x` is stored in `num1` and the address of `y` is stored in `num2
 
 The compiler performs type checking on the arguments to `swap` because the prototype of `swap` includes argument types for each parameter. The identifiers within the parentheses of the prototype and definition can be the same or different. What is important is that the types of the arguments match those of the parameter lists in both the prototype and the definition.
 
-## See Also
+## See also
 
-[Function Calls](../c-language/function-calls.md)
+- [Function Calls](../c-language/function-calls.md)

@@ -109,7 +109,7 @@ _strerror says open failed: No such file or directory
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [clearerr](clearerr.md)
+- [ferror](ferror.md)
+- [strerror, _strerror, _wcserror, \__wcserror](strerror-strerror-wcserror-wcserror.md)

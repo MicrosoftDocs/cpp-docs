@@ -25,12 +25,11 @@ You can perform the following tasks and types of enhancements to a basic MFC DLL
 
 - [Initialize a DLL](../../build/run-time-library-behavior.md#initializing-a-dll)
 
-## See Also
+## See also
 
-[Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md)<br/>
-[Property Pages](../../ide/property-pages-visual-cpp.md)<br/>
-[Working with Project Properties](../../ide/working-with-project-properties.md)<br/>
-[MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>
-[Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)<br/>
-[Implementing an Interface](../../ide/implementing-an-interface-visual-cpp.md)<br/>
-
+- [Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md)
+- [Property Pages](../../ide/property-pages-visual-cpp.md)
+- [Working with Project Properties](../../ide/working-with-project-properties.md)
+- [MFC Class](../../mfc/reference/adding-an-mfc-class.md)
+- [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)
+- [Implementing an Interface](../../ide/implementing-an-interface-visual-cpp.md)

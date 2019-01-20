@@ -55,6 +55,6 @@ Right-click the menu and choose **View as Popup** from the shortcut menu.
 
 Win32
 
-## See Also
+## See also
 
-[Menu Editor](../windows/menu-editor.md)
+- [Menu Editor](../windows/menu-editor.md)

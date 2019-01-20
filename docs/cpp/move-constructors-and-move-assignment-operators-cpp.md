@@ -304,5 +304,5 @@ The [std::move](../standard-library/utility-functions.md#move) function preserve
 
 ## See also
 
-[Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
-[std::move](../standard-library/utility-functions.md#move)
+- [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)
+- [std::move](../standard-library/utility-functions.md#move)

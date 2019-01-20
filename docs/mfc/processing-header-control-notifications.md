@@ -10,8 +10,7 @@ In your view or dialog class, use the Properties window to create an [OnChildNot
 
 The notification messages associated with a header control are listed in [Header Control Reference](/windows/desktop/controls/header-control-reference) in the Windows SDK.
 
-## See Also
+## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
+- [Controls](../mfc/controls-mfc.md)

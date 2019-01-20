@@ -74,4 +74,4 @@ constexpr auto my_duration_unit = 108ms;
 
 ## See also
 
-[\<chrono>](../standard-library/chrono.md)<br/>
+- [\<chrono>](../standard-library/chrono.md)

@@ -67,5 +67,5 @@ is_floating_point<float> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_integral Class](../standard-library/is-integral-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_integral Class](../standard-library/is-integral-class.md)

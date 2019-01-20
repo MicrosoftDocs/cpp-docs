@@ -422,8 +422,8 @@ Use `SetParamString` to set string parameter data in the buffer. Use [SetParam](
 
 ## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CAccessor Class](../../data/oledb/caccessor-class.md)<br/>
-[CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)<br/>
-[CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [CAccessor Class](../../data/oledb/caccessor-class.md)
+- [CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)
+- [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)

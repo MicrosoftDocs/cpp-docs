@@ -14,7 +14,6 @@ What does the handler for a message do It does whatever you want done in respons
 
 You can use all of the facilities of Microsoft Visual C++ and MFC to write your handlers. For a list of all classes, see [Class Library Overview](../mfc/class-library-overview.md) in the *MFC Reference*.
 
-## See Also
+## See also
 
-[Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
-
+- [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)

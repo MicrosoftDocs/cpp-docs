@@ -322,10 +322,10 @@ The following code shows a simple implementation of `IWorkerThreadClient::Execut
 
 [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iviewobjecteximpl-class_2.cpp)]
 
-## See Also
+## See also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
-[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>
-[Tutorial](../../atl/active-template-library-atl-tutorial.md)<br/>
-[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComControl Class](../../atl/reference/ccomcontrol-class.md)
+- [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)
+- [Tutorial](../../atl/active-template-library-atl-tutorial.md)
+- [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)
+- [Class Overview](../../atl/atl-class-overview.md)

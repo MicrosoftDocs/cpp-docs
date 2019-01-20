@@ -233,9 +233,9 @@ The framework calls `OnMessagePending` while the socket is pumping Windows messa
 
 For more information, see [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-## See Also
+## See also
 
-[CAsyncSocket Class](../../mfc/reference/casyncsocket-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CAsyncSocket Class](../../mfc/reference/casyncsocket-class.md)<br/>
-[CSocketFile Class](../../mfc/reference/csocketfile-class.md)
+- [CAsyncSocket Class](../../mfc/reference/casyncsocket-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CAsyncSocket Class](../../mfc/reference/casyncsocket-class.md)
+- [CSocketFile Class](../../mfc/reference/csocketfile-class.md)

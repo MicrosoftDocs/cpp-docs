@@ -48,4 +48,4 @@ Be careful not to invoke macros of this type indiscriminately. For instance, inv
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

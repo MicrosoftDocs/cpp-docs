@@ -35,7 +35,7 @@ For more information, see [Manifest Files Reference](/windows/desktop/SbsCs/mani
 
 1. Modify the **Allow Isolation** property.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)

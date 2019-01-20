@@ -76,7 +76,6 @@ As each copy is destroyed, the reference count in the original object is decreme
 
 You can use the `CString` member functions [CSimpleStringT::LockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) and [CSimpleStringT::UnlockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) to disable or enable reference counting.
 
-## See Also
+## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)
-
+- [General MFC Topics](../mfc/general-mfc-topics.md)

@@ -38,6 +38,6 @@ The type you assign to a constant depends on the value the constant represents. 
 
 - The type assigned to constants with a **u** or **U** and an **l** or **L** suffix is **unsigned long int**.
 
-## See Also
+## See also
 
-[C Integer Constants](../c-language/c-integer-constants.md)
+- [C Integer Constants](../c-language/c-integer-constants.md)

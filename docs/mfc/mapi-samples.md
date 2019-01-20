@@ -12,7 +12,6 @@ See the following sample programs that illustrate Microsoft Messaging Applicatio
 
 - [DRAWCLI](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
-[MAPI](../mfc/mapi.md)
-
+- [MAPI](../mfc/mapi.md)

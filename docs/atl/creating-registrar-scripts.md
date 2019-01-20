@@ -24,7 +24,6 @@ This article covers the following topics related to the registrar scripts:
 
 - [Invoking Scripts](../atl/invoking-scripts.md)
 
-## See Also
+## See also
 
-[Registry Component (Registrar)](../atl/atl-registry-component-registrar.md)
-
+- [Registry Component (Registrar)](../atl/atl-registry-component-registrar.md)

@@ -129,11 +129,11 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CCRTHeap::Free](#free) to free the memory allocated by this method. Implemented using [realloc](../../c-runtime-library/reference/realloc.md).
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[CComHeap Class](../../atl/reference/ccomheap-class.md)<br/>
-[CWin32Heap Class](../../atl/reference/cwin32heap-class.md)<br/>
-[CLocalHeap Class](../../atl/reference/clocalheap-class.md)<br/>
-[CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)<br/>
-[IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [CComHeap Class](../../atl/reference/ccomheap-class.md)
+- [CWin32Heap Class](../../atl/reference/cwin32heap-class.md)
+- [CLocalHeap Class](../../atl/reference/clocalheap-class.md)
+- [CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)
+- [IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)

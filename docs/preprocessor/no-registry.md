@@ -30,7 +30,7 @@ When `auto_search` is specified, the additional `#import`s will be generated wit
 
 **no_registry** is useful if you want to import cross referenced type libraries without the risk of the compiler finding an older version of the file in the registry. **no_registry** is also useful if the type library is not registered.
 
-## See Also
+## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)
+- [#import Directive](../preprocessor/hash-import-directive-cpp.md)

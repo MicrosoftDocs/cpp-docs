@@ -102,5 +102,5 @@ after fsetpos: gets a stream
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fsetpos](fsetpos.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fsetpos](fsetpos.md)

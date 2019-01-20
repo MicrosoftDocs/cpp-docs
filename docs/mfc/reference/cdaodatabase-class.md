@@ -833,13 +833,13 @@ The default value for query timeouts is 60 seconds. Not all databases support th
 
 For related information, see the topic "QueryTimeout Property" in DAO Help.
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDaoWorkspace Class](../../mfc/reference/cdaoworkspace-class.md)<br/>
-[CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)<br/>
-[CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)<br/>
-[CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)<br/>
-[CDatabase Class](../../mfc/reference/cdatabase-class.md)<br/>
-[CDaoException Class](../../mfc/reference/cdaoexception-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDaoWorkspace Class](../../mfc/reference/cdaoworkspace-class.md)
+- [CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)
+- [CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)
+- [CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)
+- [CDatabase Class](../../mfc/reference/cdatabase-class.md)
+- [CDaoException Class](../../mfc/reference/cdaoexception-class.md)

@@ -60,6 +60,6 @@ The following tables list primary Windows Runtime C++ Template Library classes, 
 |[ActivatableClass Macros](activatableclass-macros.md)|Populates an internal cache that contains a factory that can create an instance of the specified class.|
 |[InspectableClass Macro](inspectableclass-macro.md)|Sets the runtime class name and trust level.|
 
-## See Also
+## See also
 
-[Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)
+- [Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)

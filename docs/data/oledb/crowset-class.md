@@ -695,10 +695,10 @@ This method requires the optional interface `IRowsetUpdate`, which might not be 
 
 A standard HRESULT.
 
-## See Also
+## See also
 
-[DBViewer Sample](../../visual-cpp-samples.md)<br/>
-[MultiRead Sample](../../visual-cpp-samples.md)<br/>
-[MultiRead Attributes Sample](../../visual-cpp-samples.md)<br/>
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [DBViewer Sample](../../visual-cpp-samples.md)
+- [MultiRead Sample](../../visual-cpp-samples.md)
+- [MultiRead Attributes Sample](../../visual-cpp-samples.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

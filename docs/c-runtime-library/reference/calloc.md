@@ -88,7 +88,7 @@ Allocated 40 long integers
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[free](free.md)<br/>
-[malloc](malloc.md)<br/>
-[realloc](realloc.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [free](free.md)
+- [malloc](malloc.md)
+- [realloc](realloc.md)

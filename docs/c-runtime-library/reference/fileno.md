@@ -72,8 +72,8 @@ The file descriptor for stderr is 2
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
-[_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[freopen, _wfreopen](freopen-wfreopen.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_fdopen, _wfdopen](fdopen-wfdopen.md)
+- [_filelength, _filelengthi64](filelength-filelengthi64.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [freopen, _wfreopen](freopen-wfreopen.md)

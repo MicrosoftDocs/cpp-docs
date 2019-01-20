@@ -15,4 +15,4 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), defines a stack segm
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

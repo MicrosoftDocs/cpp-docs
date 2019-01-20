@@ -22,7 +22,6 @@ The following topics explain the use of update handlers:
 
 - [The CCmdUI class](../mfc/the-ccmdui-class.md)
 
-## See Also
+## See also
 
-[Menus](../mfc/menus-mfc.md)
-
+- [Menus](../mfc/menus-mfc.md)

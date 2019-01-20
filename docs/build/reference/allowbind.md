@@ -22,6 +22,6 @@ Use **/ALLOWBIND:NO** to prevent Bind.exe from binding the DLL.
 
 For more information, see the [/ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md) linker option.
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+- [EDITBIN Options](../../build/reference/editbin-options.md)

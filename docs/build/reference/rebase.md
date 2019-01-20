@@ -23,6 +23,6 @@ Specify the program's executable files and DLLs in the *files* argument on the E
 |**BASEFILE**|Creates a file named COFFBASE.TXT, which is a text file in the format expected by LINK's /BASE option.|
 |**DOWN**|Tells EDITBIN to reassign base addresses downward from an ending address. The files are reassigned in the order specified, with the first file located in the highest possible address below the end of the address range. BASE must be used with DOWN to ensure sufficient address space for basing the files. To determine the address space needed by the specified files, run EDITBIN with /REBASE on the files and add 64 KB to the displayed total size.|
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+- [EDITBIN Options](../../build/reference/editbin-options.md)

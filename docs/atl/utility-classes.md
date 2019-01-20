@@ -24,7 +24,6 @@ The following MFC-independent utility classes are provided:
 
 - [_U_RECT](../atl/reference/u-rect-class.md) An argument adapter class that allows either `RECT` pointers or references to be passed to a function that is implemented in terms of pointers.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

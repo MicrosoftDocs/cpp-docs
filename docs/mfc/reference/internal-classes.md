@@ -100,7 +100,6 @@ The following classes are used internally in MFC. For completeness, this section
 |`CVSListBoxEditCtrl Class`|Extends standard list box edit control by displaying a small button that opens a dialog box.|
 |`CVSToolsListBox Class`|Extends standard list box control by providing additional buttons to add, delete and move items in the list box.|
 
-## See Also
+## See also
 
-[MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)
-
+- [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)

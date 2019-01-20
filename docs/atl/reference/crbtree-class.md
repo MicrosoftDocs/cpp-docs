@@ -461,6 +461,6 @@ Type used when a value is passed as an output argument.
 typedef VTraits::OUTARGTYPE VOUTARGTYPE;
 ```
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

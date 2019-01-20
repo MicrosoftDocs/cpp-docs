@@ -30,5 +30,5 @@ The **/Zf** option is available beginning in Visual Studio 2017 version 15.1, wh
 
 ## See also
 
-[Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)<br/>
-[/MP (Build with Multiple Processes)](mp-build-with-multiple-processes.md)<br/>
+- [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)
+- [/MP (Build with Multiple Processes)](mp-build-with-multiple-processes.md)

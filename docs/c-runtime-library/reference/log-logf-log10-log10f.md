@@ -116,9 +116,9 @@ Log base 2 of 65536.000000 is 16.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md) <br/>
-[exp, expf, expl](exp-expf.md) <br/>
-[_matherr](matherr.md) <br/>
-[pow, powf, powl](pow-powf-powl.md) <br/>
-[_CIlog](../../c-runtime-library/cilog.md) <br/>
-[_CIlog10](../../c-runtime-library/cilog10.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [exp, expf, expl](exp-expf.md)
+- [_matherr](matherr.md)
+- [pow, powf, powl](pow-powf-powl.md)
+- [_CIlog](../../c-runtime-library/cilog.md)
+- [_CIlog10](../../c-runtime-library/cilog10.md)

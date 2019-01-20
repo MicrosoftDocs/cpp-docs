@@ -15,8 +15,8 @@ ms.assetid: e2286cb8-751d-4557-9650-5c4b98a8f7be
 #include <limits.h>
 ```
 
-## See Also
+## See also
 
-[Environmental Constants](../c-runtime-library/environmental-constants.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)<br/>
-[_get_tzname](../c-runtime-library/reference/get-tzname.md)
+- [Environmental Constants](../c-runtime-library/environmental-constants.md)
+- [Global Constants](../c-runtime-library/global-constants.md)
+- [_get_tzname](../c-runtime-library/reference/get-tzname.md)

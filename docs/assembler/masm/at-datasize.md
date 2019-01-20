@@ -15,4 +15,4 @@ ms.assetid: c31dd6ab-0706-43ed-9a5d-024730f7931b
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

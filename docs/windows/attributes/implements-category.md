@@ -56,8 +56,8 @@ class CMyClass {};
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[COM Attributes](com-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[IMPLEMENTED_CATEGORY](../../atl/reference/category-macros.md#implemented_category)
+- [COM Attributes](com-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [IMPLEMENTED_CATEGORY](../../atl/reference/category-macros.md#implemented_category)

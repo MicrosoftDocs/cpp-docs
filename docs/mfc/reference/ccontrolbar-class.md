@@ -495,12 +495,12 @@ A pointer to a `CWnd` object.
 
 ### Remarks
 
-## See Also
+## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CToolBar Class](../../mfc/reference/ctoolbar-class.md)<br/>
-[CDialogBar Class](../../mfc/reference/cdialogbar-class.md)<br/>
-[CStatusBar Class](../../mfc/reference/cstatusbar-class.md)<br/>
-[CReBar Class](../../mfc/reference/crebar-class.md)
+- [MFC Sample CTRLBARS](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CToolBar Class](../../mfc/reference/ctoolbar-class.md)
+- [CDialogBar Class](../../mfc/reference/cdialogbar-class.md)
+- [CStatusBar Class](../../mfc/reference/cstatusbar-class.md)
+- [CReBar Class](../../mfc/reference/crebar-class.md)

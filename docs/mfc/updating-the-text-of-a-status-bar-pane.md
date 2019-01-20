@@ -59,7 +59,7 @@ Once you define the value of the *m_nPage* member variable (of class `CMainFrame
 
 - [Updating user-interface objects (how to update toolbar buttons and menu items as program conditions change)](../mfc/how-to-update-user-interface-objects.md)
 
-## See Also
+## See also
 
-[Status Bar Implementation in MFC](../mfc/status-bar-implementation-in-mfc.md)<br/>
-[CStatusBar Class](../mfc/reference/cstatusbar-class.md)
+- [Status Bar Implementation in MFC](../mfc/status-bar-implementation-in-mfc.md)
+- [CStatusBar Class](../mfc/reference/cstatusbar-class.md)

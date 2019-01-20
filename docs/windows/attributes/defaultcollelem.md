@@ -49,7 +49,7 @@ __interface IMyForm
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Method Attributes](method-attributes.md)
+- [IDL Attributes](idl-attributes.md)
+- [Method Attributes](method-attributes.md)

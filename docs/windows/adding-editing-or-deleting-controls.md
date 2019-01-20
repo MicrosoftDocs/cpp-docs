@@ -206,17 +206,17 @@ Win32
 
 ## See also
 
-[Controls in Dialog Boxes](controls-in-dialog-boxes.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
+- [Controls in Dialog Boxes](controls-in-dialog-boxes.md)
+- [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
 
 <!-- excluded links
-[Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)<br/>
-[Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Adding a Class](../ide/adding-a-class-visual-cpp.md)<br/>
-[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)<br/>
-[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)<br/>
-[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)
-[Declaring a Variable Based on Your New Control Class](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)<br/>
+- [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)
+- [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)
+- [Adding a Class](../ide/adding-a-class-visual-cpp.md)
+- [Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)
+- [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)
+- [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)
+- [MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)
+- [Declaring a Variable Based on Your New Control Class](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)
 -->

@@ -396,6 +396,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method calls [AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite).
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

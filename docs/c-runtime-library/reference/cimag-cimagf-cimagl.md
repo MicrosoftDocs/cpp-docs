@@ -48,10 +48,10 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[norm, normf, norml](norm-normf-norml1.md)<br/>
-[creal, crealf, creall](creal-crealf-creall.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
-[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [norm, normf, norml](norm-normf-norml1.md)
+- [creal, crealf, creall](creal-crealf-creall.md)
+- [cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)
+- [conj, conjf, conjl](conj-conjf-conjl.md)
+- [carg, cargf, cargl](carg-cargf-cargl.md)
+- [cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)

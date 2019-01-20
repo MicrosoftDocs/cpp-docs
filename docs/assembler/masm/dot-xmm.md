@@ -15,4 +15,4 @@ Enables assembly of Internet Streaming SIMD Extension instructions.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

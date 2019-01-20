@@ -50,9 +50,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc allocators.cpp**
 
-## See Also
+## See also
 
-[Memory Management Functions](../../parallel/concrt/memory-management-functions.md)<br/>
-[Alloc Function](reference/concurrency-namespace-functions.md#alloc)<br/>
-[Free Function](reference/concurrency-namespace-functions.md#free)
-
+- [Memory Management Functions](../../parallel/concrt/memory-management-functions.md)
+- [Alloc Function](reference/concurrency-namespace-functions.md#alloc)
+- [Free Function](reference/concurrency-namespace-functions.md#free)

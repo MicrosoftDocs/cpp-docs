@@ -75,5 +75,5 @@ To specify that functions cannot be overridden and that classes cannot be inheri
 
 ## See also
 
-[final Specifier](../cpp/final-specifier.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [final Specifier](../cpp/final-specifier.md)
+- [Keywords](../cpp/keywords-cpp.md)

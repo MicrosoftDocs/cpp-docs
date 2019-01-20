@@ -52,5 +52,5 @@ This CL command line specifies that TEST1.c, TEST2.cxx, TEST3.huh, and TEST4.o a
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

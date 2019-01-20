@@ -18,6 +18,6 @@ In commands, a percent symbol (%) is a file specifier. To represent % literally 
 
 To use the dollar sign ($) as a literal character in a command, specify two dollar signs ($$). This method can also be used in other situations where ^$ works.
 
-## See Also
+## See also
 
-[Contents of a Makefile](../build/contents-of-a-makefile.md)
+- [Contents of a Makefile](../build/contents-of-a-makefile.md)

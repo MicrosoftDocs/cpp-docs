@@ -46,10 +46,10 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Controls](../mfc/controls-mfc.md)<br/>
-[Control Classes](../mfc/control-classes.md)<br/>
-[Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
+- [Resource Editors](../windows/resource-editors.md)
+- [Controls](../mfc/controls-mfc.md)
+- [Control Classes](../mfc/control-classes.md)
+- [Dialog Box Classes](../mfc/dialog-box-classes.md)
+- [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

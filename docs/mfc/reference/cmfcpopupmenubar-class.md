@@ -394,9 +394,9 @@ void StartPopupMenuTimer(
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md)<br/>
-[CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md)
+- [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md)

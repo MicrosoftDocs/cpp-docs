@@ -18,4 +18,4 @@ The Visual C++ implementation of the OpenMP standard includes the following cons
 
 ## See also
 
-[OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)
+- [OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)

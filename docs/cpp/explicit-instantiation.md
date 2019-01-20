@@ -43,4 +43,4 @@ You can use the **extern** keyword to keep the compiler from generating the same
 
 ## See also
 
-[Function Templates](../cpp/function-templates.md)
+- [Function Templates](../cpp/function-templates.md)

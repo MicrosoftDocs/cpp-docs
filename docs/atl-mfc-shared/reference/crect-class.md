@@ -1463,9 +1463,8 @@ The width can be negative.
    ASSERT(nWid == 60);
 ```
 
-## See Also
+## See also
 
-[CPoint Class](cpoint-class.md)<br/>
-[CSize Class](csize-class.md)<br/>
-[RECT](/windows/desktop/api/windef/ns-windef-tagrect)
-
+- [CPoint Class](cpoint-class.md)
+- [CSize Class](csize-class.md)
+- [RECT](/windows/desktop/api/windef/ns-windef-tagrect)

@@ -44,12 +44,11 @@ For more information, see Windows Sockets Specification: **htonl**, **htons**, *
 
 - [Windows Sockets: Background](../mfc/windows-sockets-background.md)
 
-## See Also
+## See also
 
-[Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
-[CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)<br/>
-[CArchive::operator <<](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
-[CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
-[CArchive::Flush](../mfc/reference/carchive-class.md#flush)<br/>
-[CObject::Serialize](../mfc/reference/cobject-class.md#serialize)
-
+- [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
+- [CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)
+- [CArchive::operator <<](../mfc/reference/carchive-class.md#operator_lt_lt)
+- [CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)
+- [CArchive::Flush](../mfc/reference/carchive-class.md#flush)
+- [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)

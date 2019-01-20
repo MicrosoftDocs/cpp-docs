@@ -56,11 +56,10 @@ void CWebView::OnInitialUpdate()
 }
 ```
 
-## See Also
+## See also
 
-[MFC Sample MFCIE](https://github.com/Microsoft/VCSamples)<br/>
-[MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
-[Working with Project Properties](../../ide/working-with-project-properties.md)<br/>
-[Property Pages](../../ide/property-pages-visual-cpp.md)<br/>
-[Working with Project Properties](../../ide/working-with-project-properties.md)
-
+- [MFC Sample MFCIE](https://github.com/Microsoft/VCSamples)
+- [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)
+- [Working with Project Properties](../../ide/working-with-project-properties.md)
+- [Property Pages](../../ide/property-pages-visual-cpp.md)
+- [Working with Project Properties](../../ide/working-with-project-properties.md)

@@ -821,4 +821,4 @@ int main( )
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
+- [\<string>](../standard-library/string.md)

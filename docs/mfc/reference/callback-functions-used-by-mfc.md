@@ -107,10 +107,9 @@ The return value of the abort-handler function is nonzero if the print job is to
 
 The actual name must be exported as described in the Remarks section of [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc).
 
-## See Also
+## See also
 
-[Structures, Styles, Callbacks, and Message Maps](structures-styles-callbacks-and-message-maps.md)<br/>
-[CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects)<br/>
-[CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)<br/>
-[CDC::GrayString](../../mfc/reference/cdc-class.md#graystring)
-
+- [Structures, Styles, Callbacks, and Message Maps](structures-styles-callbacks-and-message-maps.md)
+- [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects)
+- [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)
+- [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring)

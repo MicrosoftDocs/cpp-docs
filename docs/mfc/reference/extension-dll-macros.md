@@ -328,6 +328,6 @@ MFC extension DLLs need to call [AfxInitExtensionModule](#afxinitextensionmodule
 
 ## See also
 
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
-[Managing the State Data of MFC Modules](../managing-the-state-data-of-mfc-modules.md)<br/>
+- [Macros and Globals](mfc-macros-and-globals.md)
+- [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)
+- [Managing the State Data of MFC Modules](../managing-the-state-data-of-mfc-modules.md)

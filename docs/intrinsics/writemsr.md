@@ -42,6 +42,6 @@ This function may only be used in kernel mode, and this routine is only availabl
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

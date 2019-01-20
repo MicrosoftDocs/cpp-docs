@@ -163,4 +163,4 @@ void utoiRightJustified(TCHAR* szLeft, TCHAR* szRight, unsigned uVal) {
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)

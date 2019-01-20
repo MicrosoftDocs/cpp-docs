@@ -33,4 +33,4 @@ See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for a example using **GetAddress*
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+- [_bstr_t Class](../cpp/bstr-t-class.md)

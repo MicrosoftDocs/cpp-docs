@@ -28,7 +28,6 @@ This scenario would be difficult to code without the separation of data from vie
 
 - [CView::GetDocument](../mfc/reference/cview-class.md#getdocument)
 
-## See Also
+## See also
 
-[Document/View Architecture](../mfc/document-view-architecture.md)
-
+- [Document/View Architecture](../mfc/document-view-architecture.md)

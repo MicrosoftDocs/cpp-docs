@@ -20,9 +20,9 @@ To access this property page dialog box, open the property pages for your projec
 
    Specifies the search path for files that are referenced in `<file>` elements. This option also uses the /hashupdate option.
 
-## See Also
+## See also
 
-[\<file> Element](/visualstudio/deployment/file-element-clickonce-application)<br>
-[ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br>
-[Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)<br>
-[Working with Project Properties](../ide/working-with-project-properties.md)
+- [\<file> Element](/visualstudio/deployment/file-element-clickonce-application)
+- [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)
+- [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)
+- [Working with Project Properties](../ide/working-with-project-properties.md)

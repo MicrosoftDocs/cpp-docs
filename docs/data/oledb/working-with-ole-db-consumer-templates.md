@@ -50,6 +50,6 @@ You can also find examples of how to use the OLE DB Consumer Templates in the fo
 
 - [MultiRead](https://github.com/Microsoft/VCSamples)
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

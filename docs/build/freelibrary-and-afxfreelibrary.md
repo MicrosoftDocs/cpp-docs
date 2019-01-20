@@ -23,8 +23,8 @@ In an MFC application, use [AfxFreeLibrary](../mfc/reference/application-informa
 
 - [GetProcAddress](../build/getprocaddress.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)<br/>
-[FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
-[AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)
+- [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+- [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
+- [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

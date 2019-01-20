@@ -50,7 +50,7 @@ When the template argument is explicitly specified, normal implicit conversions 
 
 ## See also
 
-[Templates](../cpp/templates-cpp.md)<br/>
-[Function Template Instantiation](../cpp/function-template-instantiation.md)<br/>
-[Explicit Instantiation](../cpp/explicit-instantiation.md)<br/>
-[Explicit Specialization of Function Templates](../cpp/explicit-specialization-of-function-templates.md)
+- [Templates](../cpp/templates-cpp.md)
+- [Function Template Instantiation](../cpp/function-template-instantiation.md)
+- [Explicit Instantiation](../cpp/explicit-instantiation.md)
+- [Explicit Specialization of Function Templates](../cpp/explicit-specialization-of-function-templates.md)

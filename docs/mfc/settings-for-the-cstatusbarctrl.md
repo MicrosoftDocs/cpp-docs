@@ -22,8 +22,7 @@ You can set the minimum height of a status window's drawing area by calling [Set
 
 You retrieve the widths of the borders of a status window by calling [GetBorders](../mfc/reference/cstatusbarctrl-class.md#getborders). This member function includes the pointer to a three-element array that receives the width of the horizontal border, the vertical border, and the border between rectangles.
 
-## See Also
+## See also
 
-[Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

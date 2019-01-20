@@ -103,11 +103,11 @@ For more information about reason codes and messages, see [Vectorizer and Parall
 
 For an example showing how the vectorizer works in practice, see [Project Austin Part 2 of 6: Page Curling](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)
 
-## See Also
+## See also
 
-[loop](../preprocessor/loop.md)<br/>
-[Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
-[/Qpar (Auto-Parallelizer)](../build/reference/qpar-auto-parallelizer.md)<br/>
-[/Qpar-report (Auto-Parallelizer Reporting Level)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
-[/Qvec-report (Auto-Vectorizer Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)<br/>
-[Vectorizer and Parallelizer Messages](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)
+- [loop](../preprocessor/loop.md)
+- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)
+- [/Qpar (Auto-Parallelizer)](../build/reference/qpar-auto-parallelizer.md)
+- [/Qpar-report (Auto-Parallelizer Reporting Level)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)
+- [/Qvec-report (Auto-Vectorizer Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)
+- [Vectorizer and Parallelizer Messages](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)

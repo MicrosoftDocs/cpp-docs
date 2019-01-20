@@ -18,6 +18,6 @@ wchar_t wchar = L'x';   /* A wide-character constant for
 
 Wide-character constants are 16 bits wide and specify members of the extended execution character set. They allow you to express characters in alphabets that are too large to be represented by type `char`. See [Multibyte and Wide Characters](../c-language/multibyte-and-wide-characters.md) for more information about wide characters.
 
-## See Also
+## See also
 
-[C Character Constants](../c-language/c-character-constants.md)
+- [C Character Constants](../c-language/c-character-constants.md)

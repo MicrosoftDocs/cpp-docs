@@ -24,8 +24,7 @@ Creating a dialog box for your program requires the following steps:
 
 1. Add data members associated with the dialog box's controls and to specify [dialog data exchange](../mfc/dialog-data-exchange.md) and [dialog data validations](../mfc/dialog-data-validation.md) for the controls.
 
-## See Also
+## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-
+- [Dialog Boxes](../mfc/dialog-boxes.md)
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

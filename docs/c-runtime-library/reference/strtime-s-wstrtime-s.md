@@ -130,11 +130,11 @@ OS date:            04/25/03
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
-[_tzset](tzset.md)<br/>
+- [Time Management](../../c-runtime-library/time-management.md)
+- [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)
+- [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)
+- [gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)
+- [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)
+- [mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)
+- [time, _time32, _time64](time-time32-time64.md)
+- [_tzset](tzset.md)

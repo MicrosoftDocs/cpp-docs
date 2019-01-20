@@ -31,7 +31,7 @@ void __nop();
 
 The `__nop` function is equivalent to the `NOP` machine instruction. For more information on x86 and x64, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site.
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__noop](../intrinsics/noop.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__noop](../intrinsics/noop.md)

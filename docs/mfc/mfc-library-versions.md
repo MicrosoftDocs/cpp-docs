@@ -128,4 +128,4 @@ When you create your DLL project by linking to the MFC static libraries, your DL
 
 ## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)
+- [General MFC Topics](../mfc/general-mfc-topics.md)

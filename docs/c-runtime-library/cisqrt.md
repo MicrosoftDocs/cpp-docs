@@ -28,7 +28,7 @@ The resulting value is pushed onto the top of the stack.
 
 **Platform:** x86
 
-## See Also
+## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)
+- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+- [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)

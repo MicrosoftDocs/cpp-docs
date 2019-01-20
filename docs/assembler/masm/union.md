@@ -17,4 +17,4 @@ Declares a union of one or more data types. The *field-declarations* must be val
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

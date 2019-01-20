@@ -53,8 +53,8 @@ __interface A
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)<br/>
-[pack](../../preprocessor/pack.md)
+- [IDL Attributes](idl-attributes.md)
+- [Stand-Alone Attributes](stand-alone-attributes.md)
+- [pack](../../preprocessor/pack.md)

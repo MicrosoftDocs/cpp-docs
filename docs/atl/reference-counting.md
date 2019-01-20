@@ -21,8 +21,7 @@ Reference counting can also be implemented so that each reference to the object 
 > [!NOTE]
 >  When a `CComObject`-derived object is constructed using the **new** operator, the reference count is 0. Therefore, a call to `AddRef` must be made after successfully creating the `CComObject`-derived object.
 
-## See Also
+## See also
 
-[Introduction to COM](../atl/introduction-to-com.md)<br/>
-[Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)
-
+- [Introduction to COM](../atl/introduction-to-com.md)
+- [Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)

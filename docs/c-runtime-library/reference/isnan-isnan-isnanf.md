@@ -63,9 +63,9 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[fpclassify](fpclassify.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
-[isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
-[isnormal](isnormal.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [fpclassify](fpclassify.md)
+- [_fpclass, _fpclassf](fpclass-fpclassf.md)
+- [isfinite, _finite, _finitef](finite-finitef.md)
+- [isinf](isinf.md)
+- [isnormal](isnormal.md)

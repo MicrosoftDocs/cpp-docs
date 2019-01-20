@@ -9,4 +9,4 @@ For more information, see [Creating Windows Runtime Components in C++](/windows/
 
 ## See also
 
-[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)
+- [Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)

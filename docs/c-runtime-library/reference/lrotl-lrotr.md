@@ -69,5 +69,5 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_rotl, _rotl64, _rotr, _rotr64](rotl-rotl64-rotr-rotr64.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [_rotl, _rotl64, _rotr, _rotr64](rotl-rotl64-rotr-rotr64.md)

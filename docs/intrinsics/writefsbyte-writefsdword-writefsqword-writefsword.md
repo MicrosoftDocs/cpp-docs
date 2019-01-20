@@ -57,7 +57,7 @@ These routines are available only as intrinsics.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

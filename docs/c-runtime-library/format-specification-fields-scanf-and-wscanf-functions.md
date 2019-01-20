@@ -37,9 +37,9 @@ An asterisk (`*`) following the percent sign suppresses assignment of the next i
 
 The secure versions (those with the `_s` suffix) of the `scanf` family of functions require that a buffer size parameter be passed immediately following each parameter of type `c`, `C`, `s`, `S` or `[`. For more information on the secure versions of the `scanf` family of functions, see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
 
-## See Also
+## See also
 
-[scanf Width Specification](../c-runtime-library/scanf-width-specification.md)<br/>
-[scanf Type Field Characters](../c-runtime-library/scanf-type-field-characters.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)
+- [scanf Width Specification](../c-runtime-library/scanf-width-specification.md)
+- [scanf Type Field Characters](../c-runtime-library/scanf-type-field-characters.md)
+- [scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)
+- [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)

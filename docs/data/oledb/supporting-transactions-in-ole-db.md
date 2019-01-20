@@ -42,6 +42,6 @@ A [nested transaction](https://docs.microsoft.com/previous-versions/windows/desk
 
 A distributed transaction is a transaction that updates distributed data; that is, data on more than one networked computer system. If you want to support transactions over a distributed system, you should use the .NET Framework rather than the OLE DB transaction support.
 
-## See Also
+## See also
 
-[Using Accessors](../../data/oledb/using-accessors.md)
+- [Using Accessors](../../data/oledb/using-accessors.md)

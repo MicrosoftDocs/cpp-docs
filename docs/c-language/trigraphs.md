@@ -44,7 +44,7 @@ printf( "What?\?!\n" );
 
 In this `printf` statement, a backslash escape character in front of the second question mark prevents the misinterpretation of `??!` as a trigraph.
 
-## See Also
+## See also
 
-[/Zc:trigraphs (Trigraphs Substitution)](../build/reference/zc-trigraphs-trigraphs-substitution.md)<br/>
-[C Identifiers](../c-language/c-identifiers.md)
+- [/Zc:trigraphs (Trigraphs Substitution)](../build/reference/zc-trigraphs-trigraphs-substitution.md)
+- [C Identifiers](../c-language/c-identifiers.md)

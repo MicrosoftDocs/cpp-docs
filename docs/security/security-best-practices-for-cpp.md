@@ -84,8 +84,8 @@ Using Windows user accounts that belong to the Administrators group exposes deve
 
 For information about how to indentify and mitigate against speculative execution side channel hardware vulnerabilities in C++ software, see [C++ Developer Guidance for Speculative Execution Side Channels](developer-guidance-speculative-execution.md).
 
-## See Also
+## See also
 
-<xref:System.Security> <br/>
-[Security](/dotnet/standard/security/index)<br/>
-[How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)
+- <xref:System.Security> <br/>
+- [Security](/dotnet/standard/security/index)
+- [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)

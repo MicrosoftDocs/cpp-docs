@@ -43,7 +43,7 @@ Do not use this function in a C++ program. It is an intrinsic function that does
 
 ## Requirements
 
-## See Also
+## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[setjmp](../c-runtime-library/reference/setjmp.md)
+- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+- [setjmp](../c-runtime-library/reference/setjmp.md)

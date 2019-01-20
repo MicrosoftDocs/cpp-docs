@@ -24,7 +24,6 @@ Provides reference information about the shared `CStringT` class.
 [MFC Concepts](../mfc/mfc-concepts.md)<br/>
 Provides conceptual and task-based topics to help you program using the MFC Library.
 
-## See Also
+## See also
 
-[ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)
-
+- [ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)

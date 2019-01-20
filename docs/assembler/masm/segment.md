@@ -56,4 +56,4 @@ For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

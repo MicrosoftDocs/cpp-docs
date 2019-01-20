@@ -13,9 +13,8 @@ These classes provide support for exception handling and debugging.
 
 - [CAtlException](../atl/reference/catlexception-class.md) This class defines an ATL exception.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)<br/>
-[Debugging and Error Reporting Global Functions](../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
-[Debugging and Error Reporting Macros](../atl/reference/debugging-and-error-reporting-macros.md)
-
+- [Class Overview](../atl/atl-class-overview.md)
+- [Debugging and Error Reporting Global Functions](../atl/reference/debugging-and-error-reporting-global-functions.md)
+- [Debugging and Error Reporting Macros](../atl/reference/debugging-and-error-reporting-macros.md)

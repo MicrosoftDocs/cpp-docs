@@ -48,4 +48,4 @@ Topics on operators in other sections:
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)

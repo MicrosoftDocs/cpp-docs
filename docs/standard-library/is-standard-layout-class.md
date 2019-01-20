@@ -34,4 +34,4 @@ An instance of this type predicate holds true if the type *Ty* is a class that h
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

@@ -38,13 +38,13 @@ To create an [ActiveX control](../../mfc/activex-controls-on-the-internet.md) wi
 
 9. To edit or delete a message handler, repeat steps 4 through 7. Click the cell containing the handler name to edit or delete and click the appropriate task.
 
-## See Also
+## See also
 
-[Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)<br/>
-[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
-[Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)<br/>
-[Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
-[Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
-[Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)
+- [Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)
+- [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
+- [Adding a Class](../../ide/adding-a-class-visual-cpp.md)
+- [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)
+- [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)
+- [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)
+- [MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)
+- [Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)

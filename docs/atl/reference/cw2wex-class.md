@@ -137,11 +137,11 @@ operator LPWSTR() const throw();
 
 Returns the text string as type LPWSTR.
 
-## See Also
+## See also
 
-[CA2AEX Class](../../atl/reference/ca2aex-class.md)<br/>
-[CA2CAEX Class](../../atl/reference/ca2caex-class.md)<br/>
-[CA2WEX Class](../../atl/reference/ca2wex-class.md)<br/>
-[CW2AEX Class](../../atl/reference/cw2aex-class.md)<br/>
-[CW2CWEX Class](../../atl/reference/cw2cwex-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CA2AEX Class](../../atl/reference/ca2aex-class.md)
+- [CA2CAEX Class](../../atl/reference/ca2caex-class.md)
+- [CA2WEX Class](../../atl/reference/ca2wex-class.md)
+- [CW2AEX Class](../../atl/reference/cw2aex-class.md)
+- [CW2CWEX Class](../../atl/reference/cw2cwex-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

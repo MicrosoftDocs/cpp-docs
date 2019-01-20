@@ -30,11 +30,11 @@ The access types are described in this table:
 
 When the "r+", "w+", or "a+" type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening `fflush`, `fsetpos`, `fseek`, or `rewind` operation. The current position can be specified for the `fsetpos` or `fseek` operation.
 
-## See Also
+## See also
 
-[_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
-[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md)<br/>
-[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)<br/>
-[_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)
+- [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)
+- [freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md)
+- [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)
+- [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

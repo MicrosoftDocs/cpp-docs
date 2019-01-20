@@ -96,4 +96,4 @@ See the example in the [_ASSERT](assert-asserte-assert-expr-macros.md) topic.
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)

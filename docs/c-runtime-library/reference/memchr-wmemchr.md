@@ -126,9 +126,9 @@ Result:      r found at position 12
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
-[strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
+- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)
+- [_memccpy](memccpy.md)
+- [memcmp, wmemcmp](memcmp-wmemcmp.md)
+- [memcpy, wmemcpy](memcpy-wmemcpy.md)
+- [memset, wmemset](memset-wmemset.md)
+- [strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)

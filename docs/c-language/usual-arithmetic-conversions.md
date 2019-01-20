@@ -46,6 +46,6 @@ dVal = ulVal + fVal; /* ulVal converted to float
                       */
 ```
 
-## See Also
+## See also
 
-[C Operators](../c-language/c-operators.md)
+- [C Operators](../c-language/c-operators.md)

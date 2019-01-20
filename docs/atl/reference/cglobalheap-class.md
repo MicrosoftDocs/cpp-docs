@@ -137,11 +137,11 @@ Call [CGlobalHeap::Free](#free) to free the memory allocated by this method.
 
 Implemented using [GlobalReAlloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[CComHeap Class](../../atl/reference/ccomheap-class.md)<br/>
-[CWin32Heap Class](../../atl/reference/cwin32heap-class.md)<br/>
-[CLocalHeap Class](../../atl/reference/clocalheap-class.md)<br/>
-[CCRTHeap Class](../../atl/reference/ccrtheap-class.md)<br/>
-[IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [CComHeap Class](../../atl/reference/ccomheap-class.md)
+- [CWin32Heap Class](../../atl/reference/cwin32heap-class.md)
+- [CLocalHeap Class](../../atl/reference/clocalheap-class.md)
+- [CCRTHeap Class](../../atl/reference/ccrtheap-class.md)
+- [IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)

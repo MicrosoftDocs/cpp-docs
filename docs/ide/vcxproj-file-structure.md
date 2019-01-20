@@ -286,5 +286,5 @@ To make your own property sheet, copy one of the .props files in the VCTargets f
 
 ## See also
 
-[Working with Project Properties](working-with-project-properties.md)<br/>
-[Property Page XML Files](property-page-xml-files.md)
+- [Working with Project Properties](working-with-project-properties.md)
+- [Property Page XML Files](property-page-xml-files.md)

@@ -79,4 +79,4 @@ Please contact the application's support team for more information.
 
 ## See also
 
-[assert Macro, _assert, _wassert](assert-macro-assert-wassert.md)<br/>
+- [assert Macro, _assert, _wassert](assert-macro-assert-wassert.md)

@@ -270,7 +270,7 @@ ATLTRACE and ATLTRACE2 have the same behavior, ATLTRACE is included for backward
 
 [!code-cpp[NVC_ATL_Utilities#111](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_5.cpp)]
 
-## See Also
+## See also
 
-[Macros](../../atl/reference/atl-macros.md)<br/>
-[Debugging and Error Reporting Global Functions](../../atl/reference/debugging-and-error-reporting-global-functions.md)
+- [Macros](../../atl/reference/atl-macros.md)
+- [Debugging and Error Reporting Global Functions](../../atl/reference/debugging-and-error-reporting-global-functions.md)

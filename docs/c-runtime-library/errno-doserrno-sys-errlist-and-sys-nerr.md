@@ -91,14 +91,14 @@ All `errno` values in the following table are predefined constants in \<errno.h>
 
 The `_doserrno`, `_sys_errlist`, and `_sys_nerr` macros are Microsoft extensions. For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
-[Global Variables](../c-runtime-library/global-variables.md)<br/>
-[errno Constants](../c-runtime-library/errno-constants.md)<br/>
-[perror, _wperror](../c-runtime-library/reference/perror-wperror.md)<br/>
-[strerror, _strerror, _wcserror, \__wcserror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)<br/>
-[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)<br/>
-[_get_doserrno](../c-runtime-library/reference/get-doserrno.md)<br/>
-[_set_doserrno](../c-runtime-library/reference/set-doserrno.md)<br/>
-[_get_errno](../c-runtime-library/reference/get-errno.md)<br/>
-[_set_errno](../c-runtime-library/reference/set-errno.md)
+- [Global Variables](../c-runtime-library/global-variables.md)
+- [errno Constants](../c-runtime-library/errno-constants.md)
+- [perror, _wperror](../c-runtime-library/reference/perror-wperror.md)
+- [strerror, _strerror, _wcserror, \__wcserror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)
+- [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)
+- [_get_doserrno](../c-runtime-library/reference/get-doserrno.md)
+- [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)
+- [_get_errno](../c-runtime-library/reference/get-errno.md)
+- [_set_errno](../c-runtime-library/reference/set-errno.md)

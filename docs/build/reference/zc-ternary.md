@@ -149,4 +149,4 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)

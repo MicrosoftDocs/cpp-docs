@@ -57,6 +57,6 @@ int main()
 
 In this example, a `goto` statement transfers control to the point labeled `stop` when `i` equals 5.
 
-## See Also
+## See also
 
-[Statements](../c-language/statements-c.md)
+- [Statements](../c-language/statements-c.md)

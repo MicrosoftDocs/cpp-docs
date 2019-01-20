@@ -221,9 +221,9 @@ CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CTooltipManager Class](../../mfc/reference/ctooltipmanager-class.md)<br/>
-[CMFCToolTipCtrl Class](../../mfc/reference/cmfctooltipctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CTooltipManager Class](../../mfc/reference/ctooltipmanager-class.md)
+- [CMFCToolTipCtrl Class](../../mfc/reference/cmfctooltipctrl-class.md)

@@ -52,9 +52,9 @@ Multiple handlers may be associated with the same event. The event source sequen
 
 The order in which the event source invokes event handlers on event receivers is not guaranteed and may differ from call to call.
 
-## See Also
+## See also
 
-[Type System](../cppcx/type-system-c-cx.md)<br/>
-[Delegates](../cppcx/delegates-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+- [Type System](../cppcx/type-system-c-cx.md)
+- [Delegates](../cppcx/delegates-c-cx.md)
+- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

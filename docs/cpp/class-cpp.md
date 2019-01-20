@@ -134,5 +134,5 @@ int main()
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Classes and Structs](../cpp/classes-and-structs-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [Classes and Structs](../cpp/classes-and-structs-cpp.md)

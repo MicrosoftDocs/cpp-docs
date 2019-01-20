@@ -12,4 +12,4 @@ Formatted text input extraction operators depend on white space to separate inco
 
 ## See also
 
-[Input Streams](../standard-library/input-streams.md)<br/>
+- [Input Streams](../standard-library/input-streams.md)

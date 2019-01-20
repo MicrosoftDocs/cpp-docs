@@ -94,12 +94,12 @@ Arctangent of 0.500000 / 5.000000: 0.099669
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
-[_CIatan](../../c-runtime-library/ciatan.md)<br/>
-[_CIatan2](../../c-runtime-library/ciatan2.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [acos, acosf, acosl](acos-acosf-acosl.md)
+- [asin, asinf, asinl](asin-asinf-asinl.md)
+- [cos, cosf, cosl](cos-cosf-cosl.md)
+- [_matherr](matherr.md)
+- [sin, sinf, sinl](sin-sinf-sinl.md)
+- [tan, tanf, tanl](tan-tanf-tanl.md)
+- [_CIatan](../../c-runtime-library/ciatan.md)
+- [_CIatan2](../../c-runtime-library/ciatan2.md)

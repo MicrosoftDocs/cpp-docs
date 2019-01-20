@@ -76,10 +76,10 @@ By default, `CDocItem` objects are not blank. [COleClientItem](../../mfc/referen
 
 Override this function if you want to implement other actions during serialization.
 
-## See Also
+## See also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleDocument Class](../../mfc/reference/coledocument-class.md)<br/>
-[COleServerItem Class](../../mfc/reference/coleserveritem-class.md)<br/>
-[COleClientItem Class](../../mfc/reference/coleclientitem-class.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleDocument Class](../../mfc/reference/coledocument-class.md)
+- [COleServerItem Class](../../mfc/reference/coleserveritem-class.md)
+- [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)

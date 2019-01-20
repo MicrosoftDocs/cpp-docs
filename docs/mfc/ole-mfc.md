@@ -24,6 +24,6 @@ For more information, see:
 
 - [Trackers](../mfc/trackers.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

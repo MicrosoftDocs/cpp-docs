@@ -135,10 +135,10 @@ The contents are: 36 92.300003 y n Wide characters
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
-[vscanf, vwscanf](vscanf-vwscanf.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)
+- [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)
+- [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)
+- [vscanf, vwscanf](vscanf-vwscanf.md)

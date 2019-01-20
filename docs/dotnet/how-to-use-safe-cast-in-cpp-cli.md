@@ -322,6 +322,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
-[safe_cast](../windows/safe-cast-cpp-component-extensions.md)
+- [safe_cast](../windows/safe-cast-cpp-component-extensions.md)

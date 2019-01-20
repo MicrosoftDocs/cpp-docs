@@ -173,8 +173,7 @@ Nonzero if the thread owned the event object and the event is an automatic event
 
 This member function is called by threads that currently own an automatic event to release it after they are done, if their lock object is to be reused. If the lock object is not to be reused, this function will be called by the lock object's destructor.
 
-## See Also
+## See also
 
-[CSyncObject Class](../../mfc/reference/csyncobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [CSyncObject Class](../../mfc/reference/csyncobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

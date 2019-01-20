@@ -36,11 +36,11 @@ See the example for [bindable](bindable.md) for a sample use of **requestedit**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Method Attributes](method-attributes.md)<br/>
-[Data Member Attributes](data-member-attributes.md)<br/>
-[defaultbind](defaultbind.md)<br/>
-[displaybind](displaybind.md)<br/>
-[immediatebind](immediatebind.md)
+- [IDL Attributes](idl-attributes.md)
+- [Method Attributes](method-attributes.md)
+- [Data Member Attributes](data-member-attributes.md)
+- [defaultbind](defaultbind.md)
+- [displaybind](displaybind.md)
+- [immediatebind](immediatebind.md)

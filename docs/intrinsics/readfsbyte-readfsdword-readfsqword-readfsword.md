@@ -54,7 +54,7 @@ These routines are available only as intrinsics.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

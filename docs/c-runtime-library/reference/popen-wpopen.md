@@ -140,6 +140,6 @@ Process returned 0
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_pclose](pclose.md)<br/>
-[_pipe](pipe.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_pclose](pclose.md)
+- [_pipe](pipe.md)

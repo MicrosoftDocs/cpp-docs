@@ -28,8 +28,7 @@ For non-MFC information about memory management in programs for Windows, see [Me
 
 - [Resizable memory blocks](../mfc/memory-management-resizable-memory-blocks.md)
 
-## See Also
+## See also
 
-[Concepts](../mfc/mfc-concepts.md)<br/>
-[General MFC Topics](../mfc/general-mfc-topics.md)
-
+- [Concepts](../mfc/mfc-concepts.md)
+- [General MFC Topics](../mfc/general-mfc-topics.md)

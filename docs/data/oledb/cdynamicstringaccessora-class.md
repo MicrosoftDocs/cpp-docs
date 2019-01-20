@@ -25,12 +25,12 @@ They both request that the provider fetch all data accessed from the data store 
 
 **Header**: atldbcli.h
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CAccessor Class](../../data/oledb/caccessor-class.md)<br/>
-[CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
-[CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)<br/>
-[CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)<br/>
-[CDynamicStringAccessor Class](../../data/oledb/cdynamicstringaccessor-class.md)<br/>
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [CAccessor Class](../../data/oledb/caccessor-class.md)
+- [CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)
+- [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)
+- [CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)
+- [CDynamicStringAccessor Class](../../data/oledb/cdynamicstringaccessor-class.md)

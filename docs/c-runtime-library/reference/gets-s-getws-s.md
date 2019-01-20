@@ -99,8 +99,8 @@ The line entered was: Hello there!
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[fgets, fgetws](fgets-fgetws.md)<br/>
-[fputs, fputws](fputs-fputws.md)<br/>
-[puts, _putws](puts-putws.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [gets, _getws](../../c-runtime-library/gets-getws.md)
+- [fgets, fgetws](fgets-fgetws.md)
+- [fputs, fputws](fputs-fputws.md)
+- [puts, _putws](puts-putws.md)

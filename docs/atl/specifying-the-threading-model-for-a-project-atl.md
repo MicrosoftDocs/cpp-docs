@@ -26,7 +26,6 @@ The macros affect run-time performance as follows:
 
 See [Options, ATL Simple Object Wizard](../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
 
-## See Also
+## See also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)
-
+- [Concepts](../atl/active-template-library-atl-concepts.md)

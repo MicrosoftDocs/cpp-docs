@@ -325,9 +325,9 @@ Stops the animation that you assigned to the status bar pane.
 void StopAnimation();
 ```
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonButton Class](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
-[CMFCRibbonStatusBar Class](../../mfc/reference/cmfcribbonstatusbar-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCRibbonButton Class](../../mfc/reference/cmfcribbonbutton-class.md)
+- [CMFCRibbonStatusBar Class](../../mfc/reference/cmfcribbonstatusbar-class.md)

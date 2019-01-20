@@ -78,4 +78,4 @@ The following list details erroneous operations on bit fields:
 
 ## See also
 
-[Classes and Structs](../cpp/classes-and-structs-cpp.md)
+- [Classes and Structs](../cpp/classes-and-structs-cpp.md)

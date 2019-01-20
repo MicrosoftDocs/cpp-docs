@@ -30,6 +30,6 @@ Bit fields default to size **long** for the Microsoft C compiler. Structure memb
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Structure Declarations](../c-language/structure-declarations.md)
+- [Structure Declarations](../c-language/structure-declarations.md)

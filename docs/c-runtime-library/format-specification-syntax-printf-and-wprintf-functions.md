@@ -193,8 +193,8 @@ An **hc** or **hC** type specifier is synonymous with **c** in `printf` function
 > **Microsoft Specific**
 > The **I** (uppercase i), **I32**, **I64**, and **w** argument size modifier prefixes are Microsoft extensions and are not ISO C-compatible. The **h** prefix when it's used with data of type `char` and the **l** (lowercase L) prefix when it's used with data of type `double` are Microsoft extensions.
 
-## See Also
+## See also
 
-[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
-[printf_p Positional Parameters](../c-runtime-library/printf-p-positional-parameters.md)
+- [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)
+- [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)
+- [printf_p Positional Parameters](../c-runtime-library/printf-p-positional-parameters.md)

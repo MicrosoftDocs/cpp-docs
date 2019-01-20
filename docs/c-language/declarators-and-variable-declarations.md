@@ -76,6 +76,6 @@ The Microsoft C compiler does not limit the number of declarators that can modif
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+- [Declarations and Types](../c-language/declarations-and-types.md)

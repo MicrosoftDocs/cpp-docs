@@ -179,4 +179,4 @@ Provides links to the C/C++ build tools that are included in Visual Studio.
 
 ## See also
 
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)
+- [Building C/C++ Programs](../build/building-c-cpp-programs.md)

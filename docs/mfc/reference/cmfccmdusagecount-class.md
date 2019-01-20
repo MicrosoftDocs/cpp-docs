@@ -214,8 +214,8 @@ This method sets the shared `CMFCCmdUsageCount` class data members `m_nStartCoun
 
 In Debug builds this method generates an assertion failure if the *nMinUsagePercentage* parameter is larger than or equal to 100.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)

@@ -15,4 +15,4 @@ Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferr
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

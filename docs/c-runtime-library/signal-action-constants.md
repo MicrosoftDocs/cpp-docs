@@ -27,7 +27,7 @@ The `func` argument must be either a function address or one of the manifest con
 | `SIG_ACK`  | Indicates an acknowledgement was received.  |
 | `SIG_ERR`  | A return type from a signal indicating an error has occurred.  |
 
-## See Also
+## See also
 
-[signal](../c-runtime-library/reference/signal.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [signal](../c-runtime-library/reference/signal.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

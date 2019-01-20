@@ -12,8 +12,7 @@ To add additional ActiveX or Windows controls, add a new resource script and the
 
 To handle any necessary events from the ActiveX controls, see [Adding Functionality to the Composite Control](../atl/adding-functionality-to-the-composite-control.md).
 
-## See Also
+## See also
 
-[Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)<br/>
-[How to: Create a Resource Script File](../windows/how-to-create-a-resource-script-file.md)
-
+- [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)
+- [How to: Create a Resource Script File](../windows/how-to-create-a-resource-script-file.md)

@@ -78,6 +78,6 @@ The *compound-statement* is the function body containing local variable declarat
 
 The sections [Function Attributes](../c-language/function-attributes.md), [Storage Class](../c-language/storage-class.md), [Return Type](../c-language/return-type.md), [Parameters](../c-language/parameters.md), and [Function Body](../c-language/function-body.md) describe the components of the function definition in detail.
 
-## See Also
+## See also
 
-[Functions](../c-language/functions-c.md)
+- [Functions](../c-language/functions-c.md)

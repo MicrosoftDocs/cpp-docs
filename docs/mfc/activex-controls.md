@@ -15,6 +15,6 @@ In Visual C++ you can create ActiveX controls using MFC or ATL.
 
 - [ATL](../atl/active-template-library-atl-concepts.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

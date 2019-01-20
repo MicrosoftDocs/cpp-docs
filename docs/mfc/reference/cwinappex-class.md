@@ -1406,12 +1406,12 @@ The *lpszEntry* parameter is the name of a registry entry located under the defa
 
 If the key specified by *lspzEntry* does not exist, this method will create it.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CWinApp Class](../../mfc/reference/cwinapp-class.md)<br/>
-[CMouseManager Class](../../mfc/reference/cmousemanager-class.md)<br/>
-[CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md)<br/>
-[CKeyboardManager Class](../../mfc/reference/ckeyboardmanager-class.md)<br/>
-[CUserToolsManager Class](../../mfc/reference/cusertoolsmanager-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CWinApp Class](../../mfc/reference/cwinapp-class.md)
+- [CMouseManager Class](../../mfc/reference/cmousemanager-class.md)
+- [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md)
+- [CKeyboardManager Class](../../mfc/reference/ckeyboardmanager-class.md)
+- [CUserToolsManager Class](../../mfc/reference/cusertoolsmanager-class.md)

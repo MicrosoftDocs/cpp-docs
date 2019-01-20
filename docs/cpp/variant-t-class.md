@@ -45,4 +45,4 @@ A **_variant_t** object encapsulates the `VARIANT` data type. The class manages 
 
 ## See also
 
-[Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)
+- [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)

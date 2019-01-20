@@ -105,8 +105,8 @@ The following topics explain the details of using recordset objects. The topics 
 
 - [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
-[Transaction (ODBC)](../../data/odbc/transaction-odbc.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)
+- [Transaction (ODBC)](../../data/odbc/transaction-odbc.md)

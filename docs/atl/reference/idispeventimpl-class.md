@@ -222,12 +222,12 @@ typedef tihclass _tihclass;
 
 By default, the class is `CComTypeInfoHolder`. `CComTypeInfoHolder` manages the type information for the class.
 
-## See Also
+## See also
 
-[_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)<br/>
-[IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)<br/>
-[IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)<br/>
-[SINK_ENTRY](composite-control-macros.md#sink_entry)<br/>
-[SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)<br/>
-[SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)
+- [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)
+- [IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)
+- [SINK_ENTRY](composite-control-macros.md#sink_entry)
+- [SINK_ENTRY_EX](composite-control-macros.md#sink_entry_ex)
+- [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)
+- [Class Overview](../../atl/atl-class-overview.md)

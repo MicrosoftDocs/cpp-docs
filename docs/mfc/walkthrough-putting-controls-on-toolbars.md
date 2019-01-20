@@ -90,11 +90,11 @@ To add the combo box button to the toolbar, follow these steps:
 
 In the customization handler `OnViewCustomize`, call [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) to replace the **Find** button (that is, the button with the command ID `ID_EDIT_FIND`) with a `CFindComboButton` object.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../mfc/hierarchy-chart.md)<br/>
-[Classes](../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolBar Class](../mfc/reference/cmfctoolbar-class.md)<br/>
-[CMFCToolBarButton Class](../mfc/reference/cmfctoolbarbutton-class.md)<br/>
-[CMFCToolBarComboBoxButton Class](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)<br/>
-[CMFCToolBarsCustomizeDialog Class](../mfc/reference/cmfctoolbarscustomizedialog-class.md)
+- [Hierarchy Chart](../mfc/hierarchy-chart.md)
+- [Classes](../mfc/reference/mfc-classes.md)
+- [CMFCToolBar Class](../mfc/reference/cmfctoolbar-class.md)
+- [CMFCToolBarButton Class](../mfc/reference/cmfctoolbarbutton-class.md)
+- [CMFCToolBarComboBoxButton Class](../mfc/reference/cmfctoolbarcomboboxbutton-class.md)
+- [CMFCToolBarsCustomizeDialog Class](../mfc/reference/cmfctoolbarscustomizedialog-class.md)

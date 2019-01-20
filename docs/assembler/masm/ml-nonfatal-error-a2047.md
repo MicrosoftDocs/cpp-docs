@@ -16,4 +16,4 @@ For a string to be valid, it must contain 1-255 characters.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

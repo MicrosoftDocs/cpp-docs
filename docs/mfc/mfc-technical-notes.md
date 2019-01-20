@@ -17,7 +17,6 @@ There are two ways to browse through the technical notes:
 
 - [Technical Notes By Category](../mfc/technical-notes-by-category.md)
 
-## See Also
+## See also
 
-[MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
-
+- [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)

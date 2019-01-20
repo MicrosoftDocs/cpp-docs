@@ -112,4 +112,4 @@ bad allocation
 
 ## See also
 
-[\<new>](../standard-library/new.md)<br/>
+- [\<new>](../standard-library/new.md)

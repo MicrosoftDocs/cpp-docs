@@ -59,6 +59,6 @@ for( myCompass = North; myCompass != West; myCompass++ ) // Error
 
 ## See also
 
-[Postfix Expressions](../cpp/postfix-expressions.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Postfix Increment and Decrement Operators](../c-language/c-postfix-increment-and-decrement-operators.md)
+- [Postfix Expressions](../cpp/postfix-expressions.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [C Postfix Increment and Decrement Operators](../c-language/c-postfix-increment-and-decrement-operators.md)

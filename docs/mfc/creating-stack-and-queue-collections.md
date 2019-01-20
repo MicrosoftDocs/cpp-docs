@@ -34,7 +34,6 @@ Because the standard list collection has both a head and a tail, it is also easy
 
    [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
 
-## See Also
+## See also
 
-[Collections](../mfc/collections.md)
-
+- [Collections](../mfc/collections.md)

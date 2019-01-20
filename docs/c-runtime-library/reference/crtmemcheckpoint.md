@@ -47,5 +47,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtMemDifference](crtmemdifference.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_CrtMemDifference](crtmemdifference.md)

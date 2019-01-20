@@ -237,7 +237,7 @@ This operator returns a pointer to the contained `CSession` object, allowing you
 
 See [operator CSession&](../../data/oledb/cdataconnection-operator-csession-amp.md) for a usage example.
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

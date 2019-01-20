@@ -15,4 +15,4 @@ Returns the result of shifting the bits of *expression* right *count* number of 
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

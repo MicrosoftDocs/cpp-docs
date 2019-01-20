@@ -48,6 +48,6 @@ Rowset Classes
 
 [Schema rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) don't access data in the data store but instead access information about the data store, called metadata. Schema rowsets are typically used in situations in which the database structure isn't known at compile time and must be obtained at run time.
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

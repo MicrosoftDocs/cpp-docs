@@ -32,6 +32,6 @@ These topics explain the features in Visual C++ that support the creation of mul
 
 - [Thread local storage (TLS)](thread-local-storage-tls.md)
 
-## See Also
+## See also
 
-[Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)
+- [Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)

@@ -104,4 +104,4 @@ File 'CRT_RENAMER.OBJ' renamed to 'CRT_RENAMER.JBO'
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)

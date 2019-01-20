@@ -651,5 +651,5 @@ type == void
 
 ## See also
 
-[mem_fn](../standard-library/functional-functions.md#mem_fn)<br/>
-[reference_wrapper Class](../standard-library/reference-wrapper-class.md)<br/>
+- [mem_fn](../standard-library/functional-functions.md#mem_fn)
+- [reference_wrapper Class](../standard-library/reference-wrapper-class.md)

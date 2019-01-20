@@ -41,9 +41,9 @@ The **/O1** and **/O2** compiler options are a quick way to set several specific
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
 
-## See Also
+## See also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)
+- [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)

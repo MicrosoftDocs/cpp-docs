@@ -38,6 +38,6 @@ Provides links to different areas of the Visual Studio and Visual C++ documentat
 
 ## See also
 
-[Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)<br/>
-[x86Intrinsics](../../intrinsics/x86-intrinsics-list.md)<br/>
-[x64 (amd64) Intrinsics](../../intrinsics/x64-amd64-intrinsics-list.md)<br/>
+- [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)
+- [x86Intrinsics](../../intrinsics/x86-intrinsics-list.md)
+- [x64 (amd64) Intrinsics](../../intrinsics/x64-amd64-intrinsics-list.md)

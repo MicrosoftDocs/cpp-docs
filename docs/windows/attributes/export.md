@@ -53,7 +53,7 @@ struct MyStruct {
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[Compiler Attributes](compiler-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [Compiler Attributes](compiler-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)

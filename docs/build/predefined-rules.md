@@ -24,6 +24,6 @@ Predefined inference rules use NMAKE-supplied command and options macros.
 |.cxx.obj|$(CXX) $(CXXFLAGS) /c $<|cl /c $<|yes|all|
 |.rc.res|$(RC) $(RFLAGS) /r $<|rc /r $<|no|all|
 
-## See Also
+## See also
 
-[Inference Rules](../build/inference-rules.md)
+- [Inference Rules](../build/inference-rules.md)

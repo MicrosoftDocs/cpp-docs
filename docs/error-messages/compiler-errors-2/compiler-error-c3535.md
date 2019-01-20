@@ -60,7 +60,7 @@ A x;
 auto *p = x;  // C3535
 ```
 
-## See Also
+## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)<br/>
-[Fundamental Types](../../cpp/fundamental-types-cpp.md)
+- [auto Keyword](../../cpp/auto-keyword.md)
+- [Fundamental Types](../../cpp/fundamental-types-cpp.md)

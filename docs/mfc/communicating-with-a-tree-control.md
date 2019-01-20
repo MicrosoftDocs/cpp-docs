@@ -14,8 +14,7 @@ You use different methods for calling member functions in a [CTreeCtrl](../mfc/r
 
 - If you're using a `CTreeView` object, use the function [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#gettreectrl) to get a reference to the tree control. You can initialize another reference with this value or assign the address of the reference to a `CTreeCtrl` pointer.
 
-## See Also
+## See also
 
-[Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CTreeCtrl](../mfc/using-ctreectrl.md)
+- [Controls](../mfc/controls-mfc.md)

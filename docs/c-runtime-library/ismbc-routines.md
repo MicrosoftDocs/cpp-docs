@@ -54,8 +54,8 @@ The following routines are specific to code page 932.
 
 **END Code Page 932 Specific**
 
-## See Also
+## See also
 
-[Character Classification](../c-runtime-library/character-classification.md)<br/>
-[is, isw Routines](../c-runtime-library/is-isw-routines.md)<br/>
-[_ismbb Routines](../c-runtime-library/ismbb-routines.md)
+- [Character Classification](../c-runtime-library/character-classification.md)
+- [is, isw Routines](../c-runtime-library/is-isw-routines.md)
+- [_ismbb Routines](../c-runtime-library/ismbb-routines.md)

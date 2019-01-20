@@ -46,8 +46,7 @@ The functionality of `CComModule` was distributed into several new classes for t
 
    Init and Term methods have moved into the constructors and destructors for the module classes; there is no longer a need to call Init and Term.
 
-## See Also
+## See also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Concepts](../atl/active-template-library-atl-concepts.md)
+- [Class Overview](../atl/atl-class-overview.md)

@@ -1351,16 +1351,16 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
 [!code-cpp[NVC_MFC_CEdit#25](../../mfc/reference/codesnippet/cpp/cedit-class_27.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](cwnd-class.md)<br/>
-[CButton Class](cbutton-class.md)<br/>
-[CComboBox Class](ccombobox-class.md)<br/>
-[CListBox Class](clistbox-class.md)<br/>
-[CScrollBar Class](cscrollbar-class.md)<br/>
-[CStatic Class](cstatic-class.md)<br/>
-[CDialog Class](cdialog-class.md)
+- [MFC Sample CALCDRIV](../../visual-cpp-samples.md)
+- [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](cwnd-class.md)
+- [CButton Class](cbutton-class.md)
+- [CComboBox Class](ccombobox-class.md)
+- [CListBox Class](clistbox-class.md)
+- [CScrollBar Class](cscrollbar-class.md)
+- [CStatic Class](cstatic-class.md)
+- [CDialog Class](cdialog-class.md)

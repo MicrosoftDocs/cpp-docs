@@ -27,8 +27,7 @@ The following map entries correspond to the function prototypes:
 |ON_WM_RENDERALLFORMATS()|afx_msg void [OnRenderAllFormats](../../mfc/reference/cwnd-class.md#onrenderallformats)();|
 |ON_WM_RENDERFORMAT()|afx_msg void [OnRenderFormat](../../mfc/reference/cwnd-class.md#onrenderformat)( UINT );|
 
-## See Also
+## See also
 
-[Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
-[Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-
+- [Message Maps](../../mfc/reference/message-maps-mfc.md)
+- [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)

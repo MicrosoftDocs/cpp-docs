@@ -27,7 +27,6 @@ The following illustration shows a rebar control that has two bands. One contain
 
 - [Processing Notification Messages in a Rebar Control](../mfc/processing-notification-messages-in-a-rebar-control.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

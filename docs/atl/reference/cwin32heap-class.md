@@ -249,11 +249,11 @@ Returns a pointer to the newly allocated memory block.
 
 If *p* is NULL, it's assumed that the memory block has not yet been allocated and [CWin32Heap::Allocate](#allocate) is called, with an argument of *nBytes*.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)<br/>
-[CLocalHeap Class](../../atl/reference/clocalheap-class.md)<br/>
-[CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)<br/>
-[CCRTHeap Class](../../atl/reference/ccrtheap-class.md)<br/>
-[CComHeap Class](../../atl/reference/ccomheap-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)
+- [CLocalHeap Class](../../atl/reference/clocalheap-class.md)
+- [CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)
+- [CCRTHeap Class](../../atl/reference/ccrtheap-class.md)
+- [CComHeap Class](../../atl/reference/ccomheap-class.md)

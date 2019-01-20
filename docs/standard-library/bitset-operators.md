@@ -313,4 +313,4 @@ bitset 3: 0111
 
 ## See also
 
-[\<bitset>](../standard-library/bitset.md)<br/>
+- [\<bitset>](../standard-library/bitset.md)

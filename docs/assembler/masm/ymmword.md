@@ -19,4 +19,4 @@ Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX)
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

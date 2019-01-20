@@ -8,8 +8,7 @@ ms.assetid: f03c3a22-7725-45eb-8f8e-dddb2d15c3ca
 
 The [CMNCTRL1](../visual-cpp-samples.md) sample demonstrates the various attributes of the `CDateTimeCtrl` class. A separate page contains a date and time picker control that the user can manipulate by changing various attributes and testing the basic functionality of the control.
 
-## See Also
+## See also
 
-[Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)
+- [Controls](../mfc/controls-mfc.md)

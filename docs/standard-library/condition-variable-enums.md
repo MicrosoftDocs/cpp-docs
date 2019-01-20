@@ -21,4 +21,4 @@ class cv_status {
 
 ## See also
 
-[<condition_variable>](../standard-library/condition-variable.md)<br/>
+- [<condition_variable>](../standard-library/condition-variable.md)

@@ -31,7 +31,6 @@ The event map associated with the URL.
 
 **Header:** afxdhtml.h
 
-## See Also
+## See also
 
-[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-
+- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)

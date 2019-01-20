@@ -587,6 +587,6 @@ Integer value
 
 Return the minimum numeric value of the arguments
 
-## See Also
+## See also
 
-[Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)
+- [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)

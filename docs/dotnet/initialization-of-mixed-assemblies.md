@@ -227,4 +227,4 @@ Test called so linker does not throw away unused object.
 
 ## See also
 
-[Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)
+- [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)

@@ -117,7 +117,6 @@ Provides a form view directly connected to an Open Database Connectivity (ODBC) 
 [CPrintInfo](../mfc/reference/cprintinfo-structure.md)<br/>
 A structure containing information about a print or print preview job. Used by the printing architecture of [CView](../mfc/reference/cview-class.md).
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

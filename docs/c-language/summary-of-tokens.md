@@ -38,6 +38,6 @@ ms.assetid: 2978cbf6-e66e-46fc-9938-caa052f2ccf7
 &nbsp;&nbsp;&nbsp;&nbsp;*pp-number*  **E**  *sign*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*pp-number*  **.**
 
-## See Also
+## See also
 
-[Lexical Grammar](../c-language/lexical-grammar.md)
+- [Lexical Grammar](../c-language/lexical-grammar.md)

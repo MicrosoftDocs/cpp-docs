@@ -15,6 +15,6 @@ The punctuation and special characters in the C character set have various uses,
 
 These characters have special meanings in C. Their uses are described throughout this book. The pound sign (**#**) can occur only in [preprocessing directives](../preprocessor/preprocessor-directives.md).
 
-## See Also
+## See also
 
-[Elements of C](../c-language/elements-of-c.md)
+- [Elements of C](../c-language/elements-of-c.md)

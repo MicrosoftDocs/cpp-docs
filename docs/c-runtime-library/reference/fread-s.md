@@ -129,6 +129,6 @@ Contents of buffer after write/read:
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fwrite](fwrite.md)<br/>
-[_read](read.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fwrite](fwrite.md)
+- [_read](read.md)

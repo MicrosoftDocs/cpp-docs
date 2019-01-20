@@ -29,7 +29,7 @@ In the preprocessor documentation, the term "argument" refers to the entity that
 
 The term "variable" refers to a simple C-type data object. The term "object" refers to both C++ objects and variables; it is an inclusive term.
 
-## See Also
+## See also
 
-[C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
-[Phases of Translation](../preprocessor/phases-of-translation.md)
+- [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)
+- [Phases of Translation](../preprocessor/phases-of-translation.md)

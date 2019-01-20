@@ -48,6 +48,6 @@ The following table lists some additional types that are defined by the Windows 
 |UIntPtr|(For internal use only.) An unsigned 64-bit value that is used as a pointer.|
 |IntPtr|(For internal use only.)  A signed 64-bit value that is used as a pointer.|
 
-## See Also
+## See also
 
-[Type System](../cppcx/type-system-c-cx.md)
+- [Type System](../cppcx/type-system-c-cx.md)

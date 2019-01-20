@@ -18,8 +18,8 @@ The following table shows the steps you might perform in a typical Internet clie
 |Handle exceptions.|Use the [CInternetException](../mfc/reference/cinternetexception-class.md) class.|Handles all common Internet exception types.|
 |End the Internet session.|Dispose of the [CInternetSession](../mfc/reference/cinternetsession-class.md) object.|Automatically cleans up open file handles and connections.|
 
-## See Also
+## See also
 
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)<br/>
-[Writing an Internet Client Application Using MFC WinInet Classes](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+- [Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)
+- [Writing an Internet Client Application Using MFC WinInet Classes](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

@@ -59,10 +59,10 @@ In the notation used for this example, the character strings are not C string li
 
 Thus, in the multibyte environment, the value of "`env_var_z`" after the first implicit call to `putenv` would be "`string1`", but this value would be overwritten on the second implicit call to `putenv`, when the value of "`env_var_z`" is set to "`string2`". The Unicode environment (in `_wenviron`) and the multibyte environment (in `_environ`) would therefore differ following this series of calls.
 
-## See Also
+## See also
 
-[Global Variables](../c-runtime-library/global-variables.md)<br/>
-[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md)<br/>
-[getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)<br/>
-[_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md)<br/>
-[_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)
+- [Global Variables](../c-runtime-library/global-variables.md)
+- [getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md)
+- [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)
+- [_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md)
+- [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)

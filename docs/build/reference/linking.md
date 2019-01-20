@@ -15,6 +15,6 @@ For information on using the linker, see the following sections:
 
 - [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
 
-## See Also
+## See also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)

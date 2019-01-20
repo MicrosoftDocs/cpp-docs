@@ -1012,7 +1012,7 @@ The two original versions of `SetValue` are marked as ATL_DEPRECATED and should 
 
 The third method calls [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa).
 
-## See Also
+## See also
 
-[DCOM Sample](../../visual-cpp-samples.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [DCOM Sample](../../visual-cpp-samples.md)
+- [Class Overview](../../atl/atl-class-overview.md)

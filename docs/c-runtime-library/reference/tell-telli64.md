@@ -96,6 +96,6 @@ Current file position is: 20
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[ftell, _ftelli64](ftell-ftelli64.md)<br/>
-[_lseek, _lseeki64](lseek-lseeki64.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [ftell, _ftelli64](ftell-ftelli64.md)
+- [_lseek, _lseeki64](lseek-lseeki64.md)

@@ -11,8 +11,8 @@ ms.assetid: 7ef21b8c-a448-4bb4-9585-a2a870028e17
 
 If you do not enable **/Gm** in the development environment, **/FD** will be used. **/FD** ensures that the .idb file has sufficient dependency information. **/FD** is only used by the development environment, and it should not be used from the command line or a build script.
 
-## See Also
+## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Output-File (/F) Options](../../build/reference/output-file-f-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

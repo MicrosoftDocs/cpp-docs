@@ -327,9 +327,9 @@ Returns the executable's return value.
 
 This method can be overridden. If overriding [CAtlExeModuleT::PreMessageLoop](#premessageloop), [CAtlExeModuleT::PostMessageLoop](#postmessageloop), or [CAtlExeModuleT::RunMessageLoop](#runmessageloop) doesn't provide enough flexibility, it's possible to override the `WinMain` function using this method.
 
-## See Also
+## See also
 
-[ATLDuck Sample](../../visual-cpp-samples.md)<br/>
-[CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)<br/>
-[CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [ATLDuck Sample](../../visual-cpp-samples.md)
+- [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)
+- [CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

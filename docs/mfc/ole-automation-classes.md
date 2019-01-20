@@ -15,7 +15,6 @@ Used to call automation servers from your automation client. When adding a class
 [COleDispatchException](../mfc/reference/coledispatchexception-class.md)<br/>
 An exception resulting from an error during OLE automation. Automation exceptions are thrown by automation servers and caught by automation clients.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

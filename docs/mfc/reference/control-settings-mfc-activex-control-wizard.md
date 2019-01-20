@@ -85,9 +85,8 @@ For more information about how to select options on this page to maximize the ef
 
    Enables a reset of any previous asynchronous data and initiates a new load of the asynchronous property of the control.
 
-## See Also
+## See also
 
-[MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[Application Settings, MFC ActiveX Control Wizard](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
-[Control Names, MFC ActiveX Control Wizard](../../mfc/reference/control-names-mfc-activex-control-wizard.md)
-
+- [MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)
+- [Application Settings, MFC ActiveX Control Wizard](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)
+- [Control Names, MFC ActiveX Control Wizard](../../mfc/reference/control-names-mfc-activex-control-wizard.md)

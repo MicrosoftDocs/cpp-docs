@@ -27,7 +27,7 @@ The *mode* argument must be one of the following manifest constants.
 | `_LK_NBRLCK`  | Same as `_LK_NBLCK`.  |
 | `_LK_UNLCK`  | Unlocks the specified bytes. (The bytes must have been previously locked.)  |
 
-## See Also
+## See also
 
-[_locking](../c-runtime-library/reference/locking.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [_locking](../c-runtime-library/reference/locking.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

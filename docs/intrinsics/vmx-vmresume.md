@@ -42,8 +42,8 @@ The `__vmx_vmresume` function is equivalent to the `VMRESUME` machine instructio
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>
-[__vmx_vmclear](../intrinsics/vmx-vmclear.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)
+- [__vmx_vmclear](../intrinsics/vmx-vmclear.md)

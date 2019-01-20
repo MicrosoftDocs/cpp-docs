@@ -36,4 +36,4 @@ An instance of the type predicate holds true if the type *T* is trivially constr
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

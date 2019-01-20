@@ -41,12 +41,12 @@ See the example for [defaultvalue](defaultvalue.md) for an example of how to use
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Interface Attributes](interface-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[Method Attributes](method-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[helpfile](helpfile.md)<br/>
-[helpstring](helpstring.md)
+- [IDL Attributes](idl-attributes.md)
+- [Interface Attributes](interface-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [Method Attributes](method-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [helpfile](helpfile.md)
+- [helpstring](helpstring.md)

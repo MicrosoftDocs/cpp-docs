@@ -62,7 +62,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
-[round, roundf, roundl](round-roundf-roundl.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [floor, floorf, floorl](floor-floorf-floorl.md)
+- [ceil, ceilf, ceill](ceil-ceilf-ceill.md)
+- [round, roundf, roundl](round-roundf-roundl.md)

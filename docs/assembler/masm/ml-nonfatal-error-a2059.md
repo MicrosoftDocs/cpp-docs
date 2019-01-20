@@ -14,4 +14,4 @@ The conditional-error directive [.ERRIDN](../../assembler/masm/dot-erridn.md) or
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

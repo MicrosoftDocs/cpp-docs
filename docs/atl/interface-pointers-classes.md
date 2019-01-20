@@ -20,7 +20,6 @@ The following classes manage a given interface pointer:
 
 - [CComGITPtr](../atl/reference/ccomgitptr-class.md) Provides methods for dealing with interface pointers and the global interface table (GIT).
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

@@ -531,5 +531,5 @@ Destructing 00311B88 Value: 6
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[unique_ptr Class](../standard-library/unique-ptr-class.md)<br/>
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [unique_ptr Class](../standard-library/unique-ptr-class.md)

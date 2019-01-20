@@ -109,8 +109,8 @@ New string: aaaabb
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
+- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)
+- [_memccpy](memccpy.md)
+- [memcpy, wmemcpy](memcpy-wmemcpy.md)
+- [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)
+- [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)

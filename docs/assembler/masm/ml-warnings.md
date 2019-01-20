@@ -10,4 +10,4 @@ For more information about ML warnings, see [ML Error Messages](../../assembler/
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

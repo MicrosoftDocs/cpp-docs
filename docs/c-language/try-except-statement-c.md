@@ -84,6 +84,6 @@ world               /* flow out of handler                  */
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[try-except Statement](../cpp/try-except-statement.md)
+- [try-except Statement](../cpp/try-except-statement.md)

@@ -12,8 +12,7 @@ Process WM_NOTIFY messages from the list control in your view or dialog class. U
 
 For a list of the notifications a list control can send to its parent window, see [List View Control Reference](/windows/desktop/Controls/list-view-control-reference) in the Windows SDK.
 
-## See Also
+## See also
 
-[Using CListCtrl](../mfc/using-clistctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CListCtrl](../mfc/using-clistctrl.md)
+- [Controls](../mfc/controls-mfc.md)

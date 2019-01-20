@@ -342,8 +342,8 @@ The menu command ID of the command that the user chooses; 0 if the user closes t
 
 This method functions as a modal call to display a shortcut menu. The application will not continue to the following line in code until the user either closes the shortcut menu or selects a command. An alternative method that you can use to display a shortcut menu is [CContextMenuManager::ShowPopupMenu](#showpopupmenu). That method is not a modal call and will not return the ID of the selected command.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)

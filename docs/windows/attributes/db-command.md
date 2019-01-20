@@ -243,5 +243,5 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 
 ## See also
 
-[OLE DB Consumer Attributes](ole-db-consumer-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)
+- [OLE DB Consumer Attributes](ole-db-consumer-attributes.md)
+- [Stand-Alone Attributes](stand-alone-attributes.md)

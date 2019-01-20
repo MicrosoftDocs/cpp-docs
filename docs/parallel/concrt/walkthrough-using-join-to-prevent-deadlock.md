@@ -142,11 +142,11 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 [[Top](#top)]
 
-## See Also
+## See also
 
-[Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
-[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)<br/>
-[Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[Message Passing Functions](../../parallel/concrt/message-passing-functions.md)<br/>
-[Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)
+- [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
+- [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
+- [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)
+- [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)
+- [Message Passing Functions](../../parallel/concrt/message-passing-functions.md)
+- [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)

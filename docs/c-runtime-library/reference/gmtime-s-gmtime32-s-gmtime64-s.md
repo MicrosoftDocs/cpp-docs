@@ -130,12 +130,12 @@ Coordinated universal time is Fri Apr 25 20:12:33 2003
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)<br/>
-[_mkgmtime, _mkgmtime32, _mkgmtime64](mkgmtime-mkgmtime32-mkgmtime64.md)<br/>
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+- [Time Management](../../c-runtime-library/time-management.md)
+- [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)
+- [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)
+- [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)
+- [gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)
+- [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)
+- [_mkgmtime, _mkgmtime32, _mkgmtime64](mkgmtime-mkgmtime32-mkgmtime64.md)
+- [mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)
+- [time, _time32, _time64](time-time32-time64.md)

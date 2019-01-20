@@ -199,6 +199,6 @@ When you include setjmpex.h or setjmp.h, all calls to [setjmp](../c-runtime-libr
 
 A call to `setjmp` preserves the current stack pointer, non-volatile registers, and MxCsr registers.  Calls to `longjmp` return to the most recent `setjmp` call site and resets the stack pointer, non-volatile registers, and MxCsr registers, back to the state as preserved by the most recent `setjmp` call.
 
-## See Also
+## See also
 
-[x64 software conventions](../build/x64-software-conventions.md)
+- [x64 software conventions](../build/x64-software-conventions.md)

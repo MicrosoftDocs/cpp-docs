@@ -98,6 +98,6 @@ Status = 0x00080003 - inexact, underflow, denormal
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_clear87, _clearfp](clear87-clearfp.md)<br/>
-[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [_clear87, _clearfp](clear87-clearfp.md)
+- [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)

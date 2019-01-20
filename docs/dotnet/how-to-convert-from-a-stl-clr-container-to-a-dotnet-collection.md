@@ -103,8 +103,8 @@ Key: 42.00 Value: 42
 Key: 74.00 Value: 74
 ```
 
-## See Also
+## See also
 
-[STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)<br/>
-[How to: Convert from a .NET Collection to a STL/CLR Container](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)<br/>
-[range_adapter (STL/CLR)](../dotnet/range-adapter-stl-clr.md)
+- [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)
+- [How to: Convert from a .NET Collection to a STL/CLR Container](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)
+- [range_adapter (STL/CLR)](../dotnet/range-adapter-stl-clr.md)

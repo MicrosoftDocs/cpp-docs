@@ -58,4 +58,4 @@ See [_getmaxstdio](getmaxstdio.md) for an example of using **_setmaxstdio**.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)

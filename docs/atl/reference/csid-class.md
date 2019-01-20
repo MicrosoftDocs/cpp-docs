@@ -549,9 +549,9 @@ Returns the value of the data member that stores a value describing the state of
 
 Call [CSid::LoadAccount](#loadaccount) to update the `CSid` object before calling `SidNameUse` to return its state. `SidNameUse` does not change the state of the object (by calling to `LookupAccountName` or `LookupAccountSid`), but only returns the current state.
 
-## See Also
+## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Security Global Functions](../../atl/reference/security-global-functions.md)<br/>
-[Operators](../../atl/reference/atl-operators.md)
+- [Security Sample](../../visual-cpp-samples.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Security Global Functions](../../atl/reference/security-global-functions.md)
+- [Operators](../../atl/reference/atl-operators.md)

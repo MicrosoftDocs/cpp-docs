@@ -47,6 +47,6 @@ Defines the container template classes hash_map and hash_multimap and their supp
 
 ## See also
 
-[Header Files Reference](cpp-standard-library-header-files.md)<br/>
-[Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](cpp-standard-library-reference.md)
+- [Header Files Reference](cpp-standard-library-header-files.md)
+- [Thread Safety in the C++ Standard Library](thread-safety-in-the-cpp-standard-library.md)
+- [C++ Standard Library Reference](cpp-standard-library-reference.md)

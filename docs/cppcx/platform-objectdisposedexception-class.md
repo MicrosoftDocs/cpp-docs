@@ -30,6 +30,6 @@ For more information, see [COMException](../cppcx/platform-comexception-class.md
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
-[Platform::COMException Class](../cppcx/platform-comexception-class.md)
+- [Platform::COMException Class](../cppcx/platform-comexception-class.md)

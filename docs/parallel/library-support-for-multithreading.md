@@ -10,6 +10,6 @@ All versions of the CRT now support multi threading with the exception of the no
 
 See [CRT Library Features](../c-runtime-library/crt-library-features.md) for more information on CRT versions.
 
-## See Also
+## See also
 
-[Multithreading with C and Win32](multithreading-with-c-and-win32.md)
+- [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

@@ -59,4 +59,4 @@ int main()
 
 ## See also
 
-[Fundamental Types](../cpp/fundamental-types-cpp.md)
+- [Fundamental Types](../cpp/fundamental-types-cpp.md)

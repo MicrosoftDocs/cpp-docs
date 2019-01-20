@@ -9,4 +9,4 @@ For more information about operators in the Microsoft Macro Assembler Language, 
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

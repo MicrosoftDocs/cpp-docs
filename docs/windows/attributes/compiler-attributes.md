@@ -23,6 +23,6 @@ Compiler attributes provide a variety of functionality.
 |[satype](satype.md)|Specifies the data type of the `SAFEARRAY`.|
 |[version](version-cpp.md)|Identifies a particular version among multiple versions of an interface or class.|
 
-## See Also
+## See also
 
-[Attributes by Group](attributes-by-group.md)
+- [Attributes by Group](attributes-by-group.md)

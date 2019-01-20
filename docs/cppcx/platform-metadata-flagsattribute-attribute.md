@@ -34,6 +34,6 @@ public ref class Flags abstract : Attribute
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
-[Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)
+- [Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)

@@ -41,9 +41,9 @@ You must use the [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factor
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
-[CAtlAutoThreadModuleT Class](../../atl/reference/catlautothreadmodulet-class.md)<br/>
-[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Module Classes](../../atl/atl-module-classes.md)
+- [CAtlAutoThreadModuleT Class](../../atl/reference/catlautothreadmodulet-class.md)
+- [IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Module Classes](../../atl/atl-module-classes.md)

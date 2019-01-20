@@ -56,6 +56,6 @@ ms.assetid: ce45d2fe-ec0e-459f-afb1-80ab6a7f0239
 *try-finally-statement*:   /\* Microsoft Specific \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__try**  *compound-statement* **__finally**  *compound-statement*
 
-## See Also
+## See also
 
-[Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)
+- [Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)

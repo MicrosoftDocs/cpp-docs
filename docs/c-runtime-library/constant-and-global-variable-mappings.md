@@ -17,10 +17,10 @@ These generic-text constant, global variable, and standard-type mappings are def
 |`_tenviron`|`_environ`|`_environ`|`_wenviron`|
 |`_tpgmptr`|`_pgmptr`|`_pgmptr`|`_wpgmptr`|
 
-## See Also
+## See also
 
-[Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
-[Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>
-[Routine Mappings](../c-runtime-library/routine-mappings.md)<br/>
-[A Sample Generic-Text Program](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md)
+- [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)
+- [Data Type Mappings](../c-runtime-library/data-type-mappings.md)
+- [Routine Mappings](../c-runtime-library/routine-mappings.md)
+- [A Sample Generic-Text Program](../c-runtime-library/a-sample-generic-text-program.md)
+- [Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md)

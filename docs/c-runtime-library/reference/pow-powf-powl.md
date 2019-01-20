@@ -87,8 +87,8 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md) <br/>
-[exp, expf, expl](exp-expf.md) <br/>
-[log, logf, log10, log10f](log-logf-log10-log10f.md) <br/>
-[sqrt, sqrtf, sqrtl](sqrt-sqrtf-sqrtl.md) <br/>
-[_CIpow](../../c-runtime-library/cipow.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [exp, expf, expl](exp-expf.md)
+- [log, logf, log10, log10f](log-logf-log10-log10f.md)
+- [sqrt, sqrtf, sqrtl](sqrt-sqrtf-sqrtl.md)
+- [_CIpow](../../c-runtime-library/cipow.md)

@@ -14,4 +14,4 @@ A register scale was specified that was not 1, 2, 4, or 8.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

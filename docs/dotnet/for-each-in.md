@@ -146,6 +146,6 @@ abcd
 Testing
 ```
 
-## See Also
+## See also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+- [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

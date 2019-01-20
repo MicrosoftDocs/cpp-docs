@@ -41,6 +41,6 @@ __asm push ebp   __asm mov  ebp, esp   __asm sub  esp, __LOCAL_SIZE
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Function Attributes](../c-language/function-attributes.md)
+- [Function Attributes](../c-language/function-attributes.md)

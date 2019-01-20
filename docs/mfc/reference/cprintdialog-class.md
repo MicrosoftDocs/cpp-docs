@@ -464,9 +464,9 @@ Call this function after calling `DoModal` to determine whether to print only th
 
   See the example for [CPrintDialog::m_pd](#m_pd).
 
-## See Also
+## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
-[CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CPrintInfo Structure](../../mfc/reference/cprintinfo-structure.md)
+- [MFC Sample DIBLOOK](../../visual-cpp-samples.md)
+- [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CPrintInfo Structure](../../mfc/reference/cprintinfo-structure.md)

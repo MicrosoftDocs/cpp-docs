@@ -71,6 +71,6 @@ int main() {
 };
 ```
 
-## See Also
+## See also
 
-[interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)
+- [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)

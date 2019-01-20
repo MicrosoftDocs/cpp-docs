@@ -14,6 +14,6 @@ The double type contains 64 bits: 1 for sign, 11 for the exponent, and 52 for th
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Storage of Basic Types](../c-language/storage-of-basic-types.md)
+- [Storage of Basic Types](../c-language/storage-of-basic-types.md)

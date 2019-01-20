@@ -84,8 +84,7 @@ Once constructed, a `CToolBar` object creates the toolbar image by loading a sin
 
 - The [CToolBar](../mfc/reference/ctoolbar-class.md) and [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) classes
 
-## See Also
+## See also
 
-[Toolbars](../mfc/toolbars.md)<br/>
-[Toolbar Editor](../windows/toolbar-editor.md)
-
+- [Toolbars](../mfc/toolbars.md)
+- [Toolbar Editor](../windows/toolbar-editor.md)

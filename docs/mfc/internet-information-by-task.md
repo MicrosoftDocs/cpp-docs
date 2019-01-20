@@ -41,7 +41,6 @@ The following categories of tasks are listed in this topic:
 
 - [Write a Gopher client application](../mfc/steps-in-a-typical-gopher-client-application.md)
 
-## See Also
+## See also
 
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-
+- [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)

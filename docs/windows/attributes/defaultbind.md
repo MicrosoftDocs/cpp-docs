@@ -36,11 +36,11 @@ See the example for [bindable](bindable.md) for an example of how to use **defau
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Method Attributes](method-attributes.md)<br/>
-[Data Member Attributes](data-member-attributes.md)<br/>
-[displaybind](displaybind.md)<br/>
-[immediatebind](immediatebind.md)<br/>
-[requestedit](requestedit.md)
+- [IDL Attributes](idl-attributes.md)
+- [Method Attributes](method-attributes.md)
+- [Data Member Attributes](data-member-attributes.md)
+- [displaybind](displaybind.md)
+- [immediatebind](immediatebind.md)
+- [requestedit](requestedit.md)

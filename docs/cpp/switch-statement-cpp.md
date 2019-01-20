@@ -154,5 +154,5 @@ The default for Microsoft C is that the Microsoft extensions are enabled. Use th
 
 ## See also
 
-[Selection Statements](../cpp/selection-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Selection Statements](../cpp/selection-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)

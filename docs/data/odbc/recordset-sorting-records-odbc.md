@@ -50,8 +50,8 @@ The recordset contains all of the student records, sorted in descending order (Z
 > [!NOTE]
 >  If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, do not set a sort if your custom string has an **ORDER BY** clause.
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
-[Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)
+- [Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)

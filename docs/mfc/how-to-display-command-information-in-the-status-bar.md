@@ -12,7 +12,6 @@ You can add to this status-bar help by defining prompt strings for menu items th
 
 By default, the Application Wizard adds **AFX_IDS_IDLEMESSAGE**, the ID for a standard "Ready" message, which is displayed when the program is waiting for new messages. If you specify the Context-Sensitive Help option in the Application Wizard, the message is changed to "For Help, press F1."
 
-## See Also
+## See also
 
-[Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
-
+- [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)

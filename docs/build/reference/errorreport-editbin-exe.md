@@ -17,6 +17,6 @@ If editbin.exe fails at runtime, you can use **/ERRORREPORT** to send informatio
 
 For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+- [EDITBIN Options](../../build/reference/editbin-options.md)

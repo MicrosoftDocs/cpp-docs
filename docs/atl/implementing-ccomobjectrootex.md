@@ -15,8 +15,7 @@ You can enter interfaces into the COM map table with the [COM_INTERFACE_ENTRY](r
 
 [!code-cpp[NVC_ATL_COM#1](../atl/codesnippet/cpp/implementing-ccomobjectrootex_1.h)]
 
-## See Also
+## See also
 
-[Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)<br/>
-[COM Map Macros](../atl/reference/com-map-macros.md)
-
+- [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)
+- [COM Map Macros](../atl/reference/com-map-macros.md)

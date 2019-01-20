@@ -70,8 +70,8 @@ To change these default settings, click the appropriate tab title in the left co
 
 After you create an MFC application project, you can add objects or controls to your project using Visual C++ [code wizards](../../ide/adding-functionality-with-code-wizards-cpp.md).
 
-## See Also
+## See also
 
-[Creating an MFC Application](../../mfc/reference/creating-an-mfc-application.md)<br/>
-[MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)<br/>
-[Using the Classes to Write Applications for Windows](../../mfc/using-the-classes-to-write-applications-for-windows.md)
+- [Creating an MFC Application](../../mfc/reference/creating-an-mfc-application.md)
+- [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)
+- [Using the Classes to Write Applications for Windows](../../mfc/using-the-classes-to-write-applications-for-windows.md)

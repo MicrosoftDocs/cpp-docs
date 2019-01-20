@@ -16,6 +16,6 @@ Tool tips for controls in a window that is:
 
 - [Tooltips in Windows not derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

@@ -70,5 +70,5 @@ The following table describes the `_bstr_t` constructors.
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)<br/>
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_bstr_t Class](../cpp/bstr-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

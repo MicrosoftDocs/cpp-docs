@@ -310,11 +310,11 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
 
 Casts a value to a pointer to the [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) structure.
 
-## See Also
+## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
-[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)<br/>
-[LUID](/windows/desktop/api/winnt/ns-winnt-_luid)<br/>
-[LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Security Global Functions](../../atl/reference/security-global-functions.md)
+- [Security Sample](../../visual-cpp-samples.md)
+- [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)
+- [LUID](/windows/desktop/api/winnt/ns-winnt-_luid)
+- [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Security Global Functions](../../atl/reference/security-global-functions.md)

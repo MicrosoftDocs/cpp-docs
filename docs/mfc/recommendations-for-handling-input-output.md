@@ -36,6 +36,6 @@ To support the Open, Save, and Save As commands on the File menu, the framework 
 
 For information about serialization, see [Serialization](../mfc/serialization-in-mfc.md).
 
-## See Also
+## See also
 
-[Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md)
+- [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md)

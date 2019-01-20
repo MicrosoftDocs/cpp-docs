@@ -123,4 +123,4 @@ File time modified
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
+- [Time Management](../../c-runtime-library/time-management.md)

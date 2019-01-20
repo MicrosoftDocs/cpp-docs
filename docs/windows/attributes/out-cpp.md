@@ -36,9 +36,9 @@ See the example for [bindable](bindable.md) for a sample use of **out**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)<br/>
-[defaultvalue](defaultvalue.md)<br/>
-[id](id.md)
+- [IDL Attributes](idl-attributes.md)
+- [Parameter Attributes](parameter-attributes.md)
+- [defaultvalue](defaultvalue.md)
+- [id](id.md)

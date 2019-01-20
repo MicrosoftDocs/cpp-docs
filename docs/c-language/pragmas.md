@@ -18,6 +18,6 @@ The following [C Pragmas](../c-language/c-pragmas.md) are defined for the Micros
 |**code_seg**|**inline_depth**|**optimize**||
 |**comment**|**inline_recursion**|`pack`||
 
-## See Also
+## See also
 
-[Preprocessing Directives](../c-language/preprocessing-directives.md)
+- [Preprocessing Directives](../c-language/preprocessing-directives.md)

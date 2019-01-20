@@ -50,7 +50,6 @@ The simplest and most recommended way to create an active document container app
 
 1. Add any implementation of your own and build the application.
 
-## See Also
+## See also
 
-[Active Document Containment](../mfc/active-document-containment.md)
-
+- [Active Document Containment](../mfc/active-document-containment.md)

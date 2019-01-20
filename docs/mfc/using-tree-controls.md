@@ -22,8 +22,7 @@ Typical usage of a tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md
 
 - When you're done with the control, make sure it's properly destroyed. If the tree control is in a dialog box or if it's a view, it and the `CTreeCtrl` object will be destroyed automatically. If not, you need to ensure that both the control and the `CTreeCtrl` object are properly destroyed.
 
-## See Also
+## See also
 
-[Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CTreeCtrl](../mfc/using-ctreectrl.md)
+- [Controls](../mfc/controls-mfc.md)

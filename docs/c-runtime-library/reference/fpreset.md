@@ -148,8 +148,8 @@ Error 131: Divide by zero
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[signal](signal.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)
+- [signal](signal.md)
+- [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)
+- [system, _wsystem](system-wsystem.md)

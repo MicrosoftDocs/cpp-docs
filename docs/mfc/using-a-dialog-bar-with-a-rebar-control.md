@@ -31,8 +31,7 @@ The following procedure details the steps necessary to achieve transparency with
 
 The new handlers simulate the transparency of the dialog bar by forwarding the WM_ERASEBKGND message to the parent window and forcing a repaint every time the dialog bar object is moved.
 
-## See Also
+## See also
 
-[Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CReBarCtrl](../mfc/using-crebarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

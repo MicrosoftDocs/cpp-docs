@@ -18,6 +18,6 @@ ms.assetid: b27d7444-8f84-4c31-b2fa-03335412d5e6
 
 - [Default Date and Time](../c-language/default-date-and-time.md)
 
-## See Also
+## See also
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

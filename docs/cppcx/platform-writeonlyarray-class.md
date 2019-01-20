@@ -174,7 +174,7 @@ A reference to the element that was just set.
 
 For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes).
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)<br/>
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+- [Platform Namespace](platform-namespace-c-cx.md)
+- [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

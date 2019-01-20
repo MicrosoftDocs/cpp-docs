@@ -20,7 +20,7 @@ LINK first processes options specified in the LINK environment variable, followe
 
 Options apply to the entire build; no options can be applied to specific input files.
 
-## See Also
+## See also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+- [Linker Options](../../build/reference/linker-options.md)

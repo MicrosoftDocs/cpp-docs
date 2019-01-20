@@ -18,6 +18,6 @@ When you use depends.exe, be aware that a DLL might have a dependency on another
 
 When you know which DLLs your application depends on, you can determine the ones that you have to redistribute with your application when you deploy it to another computer. In most cases, you don't have to redistribute system DLLs, but you may have to redistribute DLLs for Visual C++ libraries. For more information, see [Determining Which DLLs to Redistribute](../ide/determining-which-dlls-to-redistribute.md).
 
-## See Also
+## See also
 
-[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
+- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

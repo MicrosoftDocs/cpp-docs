@@ -100,5 +100,5 @@ In _purecall_handler.
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[_purecall](purecall.md)<br/>
+- [Error Handling](../../c-runtime-library/error-handling-crt.md)
+- [_purecall](purecall.md)

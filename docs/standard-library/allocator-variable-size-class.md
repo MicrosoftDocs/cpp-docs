@@ -34,4 +34,4 @@ The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+- [\<allocators>](../standard-library/allocators-header.md)

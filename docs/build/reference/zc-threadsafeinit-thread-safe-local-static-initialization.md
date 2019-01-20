@@ -37,6 +37,6 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)

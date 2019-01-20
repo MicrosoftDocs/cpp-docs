@@ -19,4 +19,4 @@ The starting *position* is optional. Each text item can be a literal string, a c
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

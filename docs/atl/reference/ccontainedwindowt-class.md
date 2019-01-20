@@ -436,11 +436,11 @@ The result of the message processing.
 
 `WindowProc` directs messages to the message map identified by [m_dwMsgMapID](#m_dwmsgmapid). If necessary, `WindowProc` calls [DefWindowProc](#defwindowproc) for additional message processing.
 
-## See Also
+## See also
 
-[CWindow Class](../../atl/reference/cwindow-class.md)<br/>
-[CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>
-[CMessageMap Class](../../atl/reference/cmessagemap-class.md)<br/>
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
-[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CWindow Class](../../atl/reference/cwindow-class.md)
+- [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)
+- [CMessageMap Class](../../atl/reference/cmessagemap-class.md)
+- [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)
+- [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)
+- [Class Overview](../../atl/atl-class-overview.md)

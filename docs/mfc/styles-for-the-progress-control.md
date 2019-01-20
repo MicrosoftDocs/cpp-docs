@@ -32,7 +32,6 @@ With PBS_SMOOTH and PBS_VERTICAL styles:
 
 For more information, see [Window Styles](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) in the *MFC Reference*.
 
-## See Also
+## See also
 
-[Using CProgressCtrl](../mfc/using-cprogressctrl.md)
-
+- [Using CProgressCtrl](../mfc/using-cprogressctrl.md)

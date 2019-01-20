@@ -67,10 +67,10 @@ Returns a reference to the tree control associated with the view.
 CTreeCtrl& GetTreeCtrl() const;
 ```
 
-## See Also
+## See also
 
-[CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
-[CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md)
+- [CCtrlView Class](../../mfc/reference/cctrlview-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [CCtrlView Class](../../mfc/reference/cctrlview-class.md)
+- [CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md)

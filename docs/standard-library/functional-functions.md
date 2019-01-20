@@ -1114,4 +1114,4 @@ val == -3
 
 ## See also
 
-[\<functional>](../standard-library/functional.md)<br/>
+- [\<functional>](../standard-library/functional.md)

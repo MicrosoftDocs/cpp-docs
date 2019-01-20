@@ -123,7 +123,7 @@ For more information, see the Stack Overflow article [Which C++ idioms are depre
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)<br/>
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual C++ language conformance](../visual-cpp-language-conformance.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)
+- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
+- [Visual C++ language conformance](../visual-cpp-language-conformance.md)

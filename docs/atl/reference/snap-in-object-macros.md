@@ -170,6 +170,6 @@ The [BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map) macro marks the begi
 
 See the example for [BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map).
 
-## See Also
+## See also
 
-[Macros](../../atl/reference/atl-macros.md)
+- [Macros](../../atl/reference/atl-macros.md)

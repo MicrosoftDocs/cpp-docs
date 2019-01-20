@@ -54,7 +54,6 @@ Whenever the fixed buffer is not in use, `CFixedStringMgr` ensures that it is in
 
 **Header:** cstringt.h
 
-## See Also
+## See also
 
-[Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)
-
+- [Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)

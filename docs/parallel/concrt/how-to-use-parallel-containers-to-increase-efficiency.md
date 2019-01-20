@@ -60,12 +60,12 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc carmichael-primes.cpp**
 
-## See Also
+## See also
 
-[Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
-[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
-[concurrent_vector Class](../../parallel/concrt/reference/concurrent-vector-class.md)<br/>
-[concurrent_queue Class](../../parallel/concrt/reference/concurrent-queue-class.md)<br/>
-[parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)<br/>
-[parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)<br/>
-[task_group Class](reference/task-group-class.md)
+- [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)
+- [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
+- [concurrent_vector Class](../../parallel/concrt/reference/concurrent-vector-class.md)
+- [concurrent_queue Class](../../parallel/concrt/reference/concurrent-queue-class.md)
+- [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)
+- [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
+- [task_group Class](reference/task-group-class.md)

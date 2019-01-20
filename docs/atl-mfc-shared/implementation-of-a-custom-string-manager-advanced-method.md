@@ -22,7 +22,6 @@ The `CStringData` structure comprises four fields:
 
    When allocating a `CStringData` structure, you must set this field to reflect the type of sharing that is allowed for the buffer. For most implementations, set this value to one. This allows the usual copy-on-write sharing behavior. However, if your string manager does not support sharing the string buffer, set this field to a locked state. This forces `CStringT` to only use this buffer for the instance of `CStringT` that allocated it.
 
-## See Also
+## See also
 
-[Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)
-
+- [Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)

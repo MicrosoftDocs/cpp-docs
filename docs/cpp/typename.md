@@ -53,5 +53,5 @@ int main()
 
 ## See also
 
-[Templates](../cpp/templates-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Templates](../cpp/templates-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)

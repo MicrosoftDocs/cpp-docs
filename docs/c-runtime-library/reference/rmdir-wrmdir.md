@@ -71,6 +71,6 @@ See the example for [_mkdir](mkdir-wmkdir.md).
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](chdir-wchdir.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)
+- [_chdir, _wchdir](chdir-wchdir.md)
+- [_mkdir, _wmkdir](mkdir-wmkdir.md)

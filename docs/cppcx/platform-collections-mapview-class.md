@@ -204,6 +204,6 @@ The second part of the original MapView object.
 
 This method is not operational; it does nothing.
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)
+- [Platform Namespace](platform-namespace-c-cx.md)

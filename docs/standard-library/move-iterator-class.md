@@ -305,7 +305,7 @@ The type is a synonym for the iterator trait `typename iterator_traits<RandomIte
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>
-[Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [\<iterator>](../standard-library/iterator.md)
+- [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)
+- [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

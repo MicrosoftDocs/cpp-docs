@@ -41,7 +41,6 @@ Documents can also contain OLE objects. `CDocItem` is the base class of the serv
 [CDocItem](../mfc/reference/cdocitem-class.md)<br/>
 Abstract base class of [COleClientItem](../mfc/reference/coleclientitem-class.md) and [COleServerItem](../mfc/reference/coleserveritem-class.md). Objects of classes derived from `CDocItem` represent parts of documents.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

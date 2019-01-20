@@ -61,6 +61,6 @@ int main( void )
 
 You could use `_wpgmptr` by changing `%Fs` to `%S` and `main` to `wmain`.
 
-## See Also
+## See also
 
-[Global Variables](../c-runtime-library/global-variables.md)
+- [Global Variables](../c-runtime-library/global-variables.md)

@@ -109,4 +109,4 @@ Resorted vector v1 = (26500 19169 18467 6334 6262 6262 41)
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

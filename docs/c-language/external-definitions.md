@@ -17,6 +17,6 @@ ms.assetid: 41e37bfc-b360-43b1-9972-28af2d365b20
 *function-definition*: /\* Declarator here is the function declarator \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-## See Also
+## See also
 
-[Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)
+- [Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)

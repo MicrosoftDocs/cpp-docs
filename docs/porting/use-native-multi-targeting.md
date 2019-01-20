@@ -56,7 +56,7 @@ For the currently available downloads, see [Download older Visual Studio softwar
 
 When these products are installed, the **Platform Toolset** property drop-down in the **Property Pages** dialog box is automatically updated to show the available toolsets. You can now use the latest version of Visual Studio to build projects for those older versions of the toolset without converting or upgrading them.
 
-## See Also
+## See also
 
-[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)
+- [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
+- [C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)

@@ -67,6 +67,6 @@ ms.assetid: 90c096ab-31df-479e-91d8-289900dc0bff
 
 - [The clock Function](../c-language/clock-function-c.md)
 
-## See Also
+## See also
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

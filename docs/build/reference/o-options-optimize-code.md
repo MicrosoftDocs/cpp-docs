@@ -33,7 +33,7 @@ The **/O** options control various optimizations that help you create code for m
 
 You can combine multiple **/O** options into a single option statement. For example, **/Odi** is the same as **/Od /Oi**. Certain options are mutually exclusive and cause a compiler error if used together. See the individual **/O** options for more information.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

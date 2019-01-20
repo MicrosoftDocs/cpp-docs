@@ -94,4 +94,4 @@ When you export a variable from a DLL by using a .DEF file, you do not have to s
 
 ## See also
 
-[Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)
+- [Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)

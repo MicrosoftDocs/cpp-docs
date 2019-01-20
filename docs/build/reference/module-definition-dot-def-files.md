@@ -36,7 +36,7 @@ See the following sections for more information:
 
 - [Reserved words](../../build/reference/reserved-words.md)
 
-## See Also
+## See also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+- [Linker Options](../../build/reference/linker-options.md)

@@ -75,6 +75,6 @@ namespace Microsoft::WRL;
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
-[Microsoft::WRL::Wrappers Namespace](microsoft-wrl-wrappers-namespace.md)
+- [Microsoft::WRL::Wrappers Namespace](microsoft-wrl-wrappers-namespace.md)

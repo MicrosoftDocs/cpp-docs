@@ -10,4 +10,4 @@ For information about `_bstr_t` member functions, see [_bstr_t Class](../cpp/bst
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+- [_bstr_t Class](../cpp/bstr-t-class.md)

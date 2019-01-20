@@ -1115,9 +1115,9 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CImageList#17](../../mfc/reference/codesnippet/cpp/cimagelist-class_23.cpp)]
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CListCtrl Class](../../mfc/reference/clistctrl-class.md)<br/>
-[CTabCtrl Class](../../mfc/reference/ctabctrl-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CListCtrl Class](../../mfc/reference/clistctrl-class.md)
+- [CTabCtrl Class](../../mfc/reference/ctabctrl-class.md)

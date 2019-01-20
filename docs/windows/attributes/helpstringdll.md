@@ -52,9 +52,9 @@ __interface IMyI
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Interface Attributes](interface-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[Method Attributes](method-attributes.md)
+- [IDL Attributes](idl-attributes.md)
+- [Interface Attributes](interface-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [Method Attributes](method-attributes.md)

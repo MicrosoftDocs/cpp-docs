@@ -86,6 +86,6 @@ The section will resemble the following:
 
 So, the CRT library uses both `__xc_a` and `__xc_z` to determine the start and end of the global initializers list because of the way in which they are laid out in memory after the image is loaded.
 
-## See Also
+## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+- [CRT Library Features](../c-runtime-library/crt-library-features.md)

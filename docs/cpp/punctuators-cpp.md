@@ -19,4 +19,4 @@ The punctuators **[ ]**, **( )**, and **{ }** must appear in pairs after [transl
 
 ## See also
 
-[Lexical Conventions](../cpp/lexical-conventions.md)
+- [Lexical Conventions](../cpp/lexical-conventions.md)

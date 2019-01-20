@@ -33,13 +33,13 @@ When you use Class View to create a new class derived from one of the framework 
 
 To remove a message handler, double-click the handler in the right column and select \<delete>*HandlerName*. The function's code is commented out.
 
-## See Also
+## See also
 
-[MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
-[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
-[Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)<br/>
-[Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
-[Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[Adding Event Handlers for Dialog Box Controls](../../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
-[Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)
+- [MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)
+- [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
+- [Adding a Class](../../ide/adding-a-class-visual-cpp.md)
+- [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)
+- [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)
+- [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)
+- [Adding Event Handlers for Dialog Box Controls](../../windows/adding-event-handlers-for-dialog-box-controls.md)
+- [Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)

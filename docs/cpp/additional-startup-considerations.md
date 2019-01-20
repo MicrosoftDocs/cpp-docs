@@ -24,4 +24,4 @@ Global static objects that are mutually interdependent but in different translat
 
 ## See also
 
-[Startup and Termination](../cpp/startup-and-termination-cpp.md)
+- [Startup and Termination](../cpp/startup-and-termination-cpp.md)

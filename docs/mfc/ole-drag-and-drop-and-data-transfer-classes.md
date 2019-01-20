@@ -21,7 +21,6 @@ Represents the target of a drag-and-drop operation. A `COleDropTarget` object co
 [COleDataObject](../mfc/reference/coledataobject-class.md)<br/>
 Used as the receiver side to `COleDataSource`. `COleDataObject` objects provide access to the data stored by a `COleDataSource` object.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

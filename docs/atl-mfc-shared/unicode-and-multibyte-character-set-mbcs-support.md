@@ -79,7 +79,7 @@ Generic-text function mappings for all of the run-time string-handling routines 
 
 Similarly, `CString` methods are implemented by using generic data type mappings. To enable both MBCS and Unicode, MFC uses TCHAR for **char** or `wchar_t`, LPTSTR for **char**<strong>\*</strong> or `wchar_t*`, and LPCTSTR for **const char**<strong>\*</strong> or `const wchar_t*`. These ensure the correct mappings for either MBCS or Unicode.
 
-## See Also
+## See also
 
-[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
-[String Manipulation](../c-runtime-library/string-manipulation-crt.md)
+- [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
+- [String Manipulation](../c-runtime-library/string-manipulation-crt.md)

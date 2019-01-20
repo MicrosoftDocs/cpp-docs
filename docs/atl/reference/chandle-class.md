@@ -173,6 +173,6 @@ operator HANDLE() const throw();
 
 Returns the value stored in [CHandle::m_h](#m_h).
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

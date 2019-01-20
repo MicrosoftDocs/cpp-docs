@@ -161,6 +161,6 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
 - The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../visual-cpp-samples.md).
 
-## See Also
+## See also
 
-[Walkthroughs](../mfc/walkthroughs-mfc.md)
+- [Walkthroughs](../mfc/walkthroughs-mfc.md)

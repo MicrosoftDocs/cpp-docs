@@ -207,10 +207,10 @@ A license key is required for calling [CreateInstanceLic](#createinstancelic) to
 
 Call [GetLicInfo](#getlicinfo) to retrieve the value of `fRuntimeKeyAvail`.
 
-## See Also
+## See also
 
-[CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
-[CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
-[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)
+- [CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)
+- [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)
+- [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)
+- [Class Overview](../../atl/atl-class-overview.md)

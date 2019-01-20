@@ -32,7 +32,6 @@ How expensive is this routing mechanism Compared to what your handler does in re
 
 Where numbered entries in the second column of the preceding table mention other objects, such as a document, see the corresponding item in the first column. For instance, when you read in the second column that the view forwards a command to its document, see the "Document" entry in the first column to follow the routing further.
 
-## See Also
+## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-
+- [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)

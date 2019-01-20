@@ -72,4 +72,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
+- [Byte Classification](../../c-runtime-library/byte-classification.md)

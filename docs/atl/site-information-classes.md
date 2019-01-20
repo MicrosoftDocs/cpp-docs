@@ -14,7 +14,6 @@ The following classes allow an object to communicate with its site:
 
 - [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) Retrieves and sets a pointer to an object's site. Used for controls.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

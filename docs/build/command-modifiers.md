@@ -14,6 +14,6 @@ You can specify one or more command modifiers preceding a command, optionally se
 |**-**\[*number*] *command*|Turns off error checking for *command*. By default, NMAKE halts when a command returns a nonzero exit code. If -*number* is used, NMAKE stops if the exit code exceeds *number*. Spaces or tabs cannot appear between the dash and *number.* At least one space or tab must appear between `number` and *command*. Use /I to turn off error checking for the entire makefile; use **.IGNORE** to turn off error checking for part of the makefile.|
 |**!** *command*|Executes *command* for each dependent file if *command* uses <strong>$\*\*</strong> (all dependent files in the dependency) or **$?** (all dependent files in the dependency with a later timestamp than the target).|
 
-## See Also
+## See also
 
-[Commands in a Makefile](../build/commands-in-a-makefile.md)
+- [Commands in a Makefile](../build/commands-in-a-makefile.md)

@@ -83,6 +83,6 @@ To summarize, MFC and the run-time library provide the following support for Uni
 
 - The run-time library provides a wide-character version of `main`. Use `wmain` to make your application Unicode-aware.
 
-## See Also
+## See also
 
-[Support for Unicode](../text/support-for-unicode.md)
+- [Support for Unicode](../text/support-for-unicode.md)

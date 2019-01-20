@@ -10,4 +10,4 @@ The **abort** function, also declared in the standard include file \<stdlib.h>, 
 
 ## See also
 
-[Program Termination](../cpp/program-termination.md)
+- [Program Termination](../cpp/program-termination.md)

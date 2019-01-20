@@ -16,6 +16,6 @@ Strings have static storage duration. See [Storage Classes](../c-language/c-stor
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[C String Literals](../c-language/c-string-literals.md)
+- [C String Literals](../c-language/c-string-literals.md)

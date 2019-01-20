@@ -46,7 +46,6 @@ See the following sample programs that illustrate dialog boxes and property shee
 
 - [DLGTEMPL](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)
-
+- [Dialog Boxes](../mfc/dialog-boxes.md)

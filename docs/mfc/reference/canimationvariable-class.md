@@ -398,6 +398,6 @@ A pointer to an animation object that contains this variable.
 
 This method is called internally to establish one-to-one relationship between an animation variable and an animation object that encapsulates it.
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

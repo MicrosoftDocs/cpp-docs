@@ -50,7 +50,7 @@ To open and view the resource file in text format, see [Editing a Resource Scrip
 
 Win32
 
-## See Also
+## See also
 
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Editors](../windows/resource-editors.md)

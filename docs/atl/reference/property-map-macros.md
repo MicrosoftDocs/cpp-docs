@@ -191,6 +191,6 @@ When you create an object with the ATL Project Wizard, the wizard will create an
 
 See the example for [BEGIN_PROP_MAP](#begin_prop_map).
 
-## See Also
+## See also
 
-[Macros](../../atl/reference/atl-macros.md)
+- [Macros](../../atl/reference/atl-macros.md)

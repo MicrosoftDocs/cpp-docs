@@ -24,6 +24,6 @@ The *commandfile* text file (or response file) contains command-line input. Othe
 
 [Exit codes from NMAKE](../build/exit-codes-from-nmake.md)
 
-## See Also
+## See also
 
-[NMAKE Reference](../build/nmake-reference.md)
+- [NMAKE Reference](../build/nmake-reference.md)

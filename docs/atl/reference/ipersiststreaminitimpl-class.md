@@ -134,7 +134,7 @@ ATL uses the object's property map to store this information.
 
 See [IPersistStreamInit::Save](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-save) in the Windows SDK.
 
-## See Also
+## See also
 
-[Storages and Streams](/windows/desktop/Stg/storages-and-streams)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [Storages and Streams](/windows/desktop/Stg/storages-and-streams)
+- [Class Overview](../../atl/atl-class-overview.md)

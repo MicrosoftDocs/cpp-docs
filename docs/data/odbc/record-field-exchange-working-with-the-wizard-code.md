@@ -120,6 +120,6 @@ m_nFields += 3;
 
 This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.
 
-## See Also
+## See also
 
-[Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+- [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)

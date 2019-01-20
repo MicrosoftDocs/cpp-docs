@@ -17,7 +17,7 @@ File I/O operations take place in one of two translation modes, *text* or *binar
 
 When you call a file-open function such as [_open](../c-runtime-library/reference/open-wopen.md), [fopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md), [freopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md), [_fsopen](../c-runtime-library/reference/fsopen-wfsopen.md) or [_sopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md), you can override the current default setting of **_fmode** by specifying the appropriate argument to the function [_set_fmode](../c-runtime-library/reference/set-fmode.md). The **stdin**, **stdout**, and **stderr** streams always open in text mode by default; you can also override this default when opening any of these files. Use [_setmode](../c-runtime-library/reference/setmode.md) to change the translation mode using the file descriptor after the file is open.
 
-## See Also
+## See also
 
-[Input and Output](../c-runtime-library/input-and-output.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Input and Output](../c-runtime-library/input-and-output.md)
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

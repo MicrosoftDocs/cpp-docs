@@ -60,5 +60,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[Math and floating-point support](../floating-point-support.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [Math and floating-point support](../floating-point-support.md)

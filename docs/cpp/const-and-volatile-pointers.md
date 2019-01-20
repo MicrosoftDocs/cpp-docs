@@ -116,4 +116,4 @@ int main() {
 
 ## See also
 
-[Pointers](../cpp/pointers-cpp.md)
+- [Pointers](../cpp/pointers-cpp.md)

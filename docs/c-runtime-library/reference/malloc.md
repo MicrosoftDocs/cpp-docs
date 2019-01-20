@@ -107,8 +107,8 @@ Memory freed
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](calloc.md)<br/>
-[free](free.md)<br/>
-[realloc](realloc.md)<br/>
-[_aligned_malloc](aligned-malloc.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [calloc](calloc.md)
+- [free](free.md)
+- [realloc](realloc.md)
+- [_aligned_malloc](aligned-malloc.md)

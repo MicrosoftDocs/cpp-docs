@@ -15,4 +15,4 @@ The base name of the main file being assembled (text macro).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

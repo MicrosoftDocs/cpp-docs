@@ -41,9 +41,9 @@ The **Custom Color Selector** dialog box allows you to customize the colors you 
 
 None
 
-## See Also
+## See also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
-[Working with Color](../windows/working-with-color-image-editor-for-icons.md)<br/>
-[Image Menu](../windows/image-menu-image-editor-for-icons.md)<br/>
-[Colors Window](../windows/colors-window-image-editor-for-icons.md)
+- [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)
+- [Working with Color](../windows/working-with-color-image-editor-for-icons.md)
+- [Image Menu](../windows/image-menu-image-editor-for-icons.md)
+- [Colors Window](../windows/colors-window-image-editor-for-icons.md)

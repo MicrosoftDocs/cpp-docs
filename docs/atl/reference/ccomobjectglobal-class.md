@@ -148,9 +148,9 @@ In debug builds, `Release` returns a value that may be useful for diagnostics an
 
 By default, `Release` calls `_Module::Unlock`, where `_Module` is the global instance of [CComModule](../../atl/reference/ccommodule-class.md) or a class derived from it.
 
-## See Also
+## See also
 
-[CComObjectStack Class](../../atl/reference/ccomobjectstack-class.md)<br/>
-[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
-[CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComObjectStack Class](../../atl/reference/ccomobjectstack-class.md)
+- [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)
+- [CComObject Class](../../atl/reference/ccomobject-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

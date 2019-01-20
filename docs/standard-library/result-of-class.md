@@ -43,4 +43,4 @@ Use this template to determine at compile time the result type of `Fn`(`ArgTypes
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

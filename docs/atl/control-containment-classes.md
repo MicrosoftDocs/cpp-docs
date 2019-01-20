@@ -22,7 +22,6 @@ The following classes provide containment support for hosting controls:
 
 [ATL Control Containment FAQ](../atl/atl-control-containment-faq.md)
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

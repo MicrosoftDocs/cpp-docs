@@ -36,11 +36,11 @@ See [bindable](bindable.md) for an example of how to use **in**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)<br/>
-[Method Attributes](method-attributes.md)<br/>
-[defaultvalue](defaultvalue.md)<br/>
-[id](id.md)<br/>
-[out](out-cpp.md)
+- [IDL Attributes](idl-attributes.md)
+- [Parameter Attributes](parameter-attributes.md)
+- [Method Attributes](method-attributes.md)
+- [defaultvalue](defaultvalue.md)
+- [id](id.md)
+- [out](out-cpp.md)

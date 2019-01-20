@@ -207,6 +207,6 @@ The default implementation returns NULL. You can override this method with the [
 
 For more information about the ATL Project Wizard, see the article [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md).
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

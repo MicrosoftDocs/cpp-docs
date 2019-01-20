@@ -50,6 +50,6 @@ The `strerror` function generates these messages:
 36  Resource deadlock would occur
 ```
 
-## See Also
+## See also
 
-[Library Functions](../c-language/library-functions.md)
+- [Library Functions](../c-language/library-functions.md)

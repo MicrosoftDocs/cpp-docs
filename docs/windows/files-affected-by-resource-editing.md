@@ -18,6 +18,6 @@ The Visual Studio environment works with the files shown in the following table 
 
 Win32
 
-## See Also
+## See also
 
-[Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)

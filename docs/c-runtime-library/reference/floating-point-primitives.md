@@ -301,15 +301,15 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Floating-point support](../floating-point-support.md)<br/>
-[fpclassify](fpclassify.md)<br/>
-[_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
-[isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
-[isnormal](isnormal.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[frexp, frexpf, frexpl](frexp.md)<br/>
-[ldexp, ldexpf, and ldexpl](ldexp.md)<br/>
-[log, logf, logl, log10, log10f, log10l](log-logf-log10-log10f.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
+- [Floating-point support](../floating-point-support.md)
+- [fpclassify](fpclassify.md)
+- [_fpclass, _fpclassf](fpclass-fpclassf.md)
+- [isfinite, _finite, _finitef](finite-finitef.md)
+- [isinf](isinf.md)
+- [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)
+- [isnormal](isnormal.md)
+- [cos, cosf, cosl](cos-cosf-cosl.md)
+- [frexp, frexpf, frexpl](frexp.md)
+- [ldexp, ldexpf, and ldexpl](ldexp.md)
+- [log, logf, logl, log10, log10f, log10l](log-logf-log10-log10f.md)
+- [sin, sinf, sinl](sin-sinf-sinl.md)

@@ -15,4 +15,4 @@ Returns the result of a bitwise `OR` operation for *expression1* and *expression
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

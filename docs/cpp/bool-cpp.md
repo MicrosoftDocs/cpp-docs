@@ -42,5 +42,5 @@ The **bool** type participates in integral promotions. An r-value of type **bool
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Fundamental Types](../cpp/fundamental-types-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [Fundamental Types](../cpp/fundamental-types-cpp.md)

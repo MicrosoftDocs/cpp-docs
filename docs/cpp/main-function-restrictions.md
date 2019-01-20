@@ -21,4 +21,4 @@ Several restrictions apply to the **main** function that do not apply to any oth
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)
+- [main: Program Startup](../cpp/main-program-startup.md)

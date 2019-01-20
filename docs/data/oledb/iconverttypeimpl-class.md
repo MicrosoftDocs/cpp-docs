@@ -58,7 +58,7 @@ See [IConvertType::CanConvert](https://docs.microsoft.com/previous-versions/wind
 
 Uses OLE DB data conversion in `MSADC.DLL`.
 
-## See Also
+## See also
 
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

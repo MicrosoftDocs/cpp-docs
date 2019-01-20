@@ -67,12 +67,11 @@ Documents, their associated views, and the frame windows that frame the views ar
 
 - [Samples](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
-[Windows](../mfc/windows.md)<br/>
-[Frame Windows](../mfc/frame-windows.md)<br/>
-[Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
-[Document/View Creation](../mfc/document-view-creation.md)<br/>
-[Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
-
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [Windows](../mfc/windows.md)
+- [Frame Windows](../mfc/frame-windows.md)
+- [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)
+- [Document/View Creation](../mfc/document-view-creation.md)
+- [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)

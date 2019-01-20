@@ -856,7 +856,7 @@ typedef StringType::XCHAR XCHAR;
 
 `StringType` is the template parameter to `CPathT`.
 
-## See Also
+## See also
 
-[Classes](../../atl/reference/atl-classes.md)<br/>
-[CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)
+- [Classes](../../atl/reference/atl-classes.md)
+- [CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)

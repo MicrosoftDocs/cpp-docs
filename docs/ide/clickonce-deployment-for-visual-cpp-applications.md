@@ -29,14 +29,14 @@ You may also need to build a bootstrapper (prerequisites installer) for your app
 
 For a more detailed description of the technology, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For a detailed example of ClickOnce deployment, see [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application).
 
-## See Also
+## See also
 
-[Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
-[MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
-[Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/windows/desktop/aa386968)<br>
-[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)<br>
-[Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)<br>
-[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)<br>
-[Creating Bootstrapper Packages](/visualstudio/deployment/creating-bootstrapper-packages)<br>
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br>
-[Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)
+- [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+- [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/windows/desktop/aa386968)
+- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
+- [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)
+- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
+- [Creating Bootstrapper Packages](/visualstudio/deployment/creating-bootstrapper-packages)
+- [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+- [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)

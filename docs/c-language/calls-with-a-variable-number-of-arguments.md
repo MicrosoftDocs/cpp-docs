@@ -18,6 +18,6 @@ This sample declaration is for a function that calls a variable number of argume
 int average( int first, ...);
 ```
 
-## See Also
+## See also
 
-[Function Calls](../c-language/function-calls.md)
+- [Function Calls](../c-language/function-calls.md)

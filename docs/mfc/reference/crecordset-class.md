@@ -1826,9 +1826,9 @@ For details on handling `Update` failures, see the article [Recordset: How Recor
 
 See the article [Transaction: Performing a Transaction in a Recordset (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md).
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDatabase Class](../../mfc/reference/cdatabase-class.md)<br/>
-[CRecordView Class](../../mfc/reference/crecordview-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDatabase Class](../../mfc/reference/cdatabase-class.md)
+- [CRecordView Class](../../mfc/reference/crecordview-class.md)

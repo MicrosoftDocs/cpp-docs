@@ -14,10 +14,9 @@ The document-template constructor specifies what types of documents, windows, an
 
 The pointer to a new `CMultiDocTemplate` object is used as an argument to [AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate). Arguments to the `CMultiDocTemplate` constructor include the resource ID associated with the document type's menus and accelerators, and three uses of the [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) macro. `RUNTIME_CLASS` returns the [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) object for the C++ class named as its argument. The three `CRuntimeClass` objects passed to the document-template constructor supply the information needed to create new objects of the specified classes during the document creation process. The example shows creation of a document template that creates `CScribDoc` objects with `CScribView` objects attached. The views are framed by standard MDI child frame windows.
 
-## See Also
+## See also
 
-[Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
-[Document/View Creation](../mfc/document-view-creation.md)<br/>
-[Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)<br/>
-[Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
-
+- [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)
+- [Document/View Creation](../mfc/document-view-creation.md)
+- [Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)
+- [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)

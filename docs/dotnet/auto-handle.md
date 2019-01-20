@@ -24,6 +24,6 @@ In this header file:
 
 [swap Function (auto_handle)](../dotnet/swap-function-auto-handle.md)
 
-## See Also
+## See also
 
-[C++ Support Library](../dotnet/cpp-support-library.md)
+- [C++ Support Library](../dotnet/cpp-support-library.md)

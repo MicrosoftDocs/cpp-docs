@@ -136,13 +136,13 @@ In `m_strStateNativeOrigin`: "State:S0022,Native:207,Origin:[Microsoft][ODBC SQL
 
 In `m_strError`: "Invalid column name 'ColName'"
 
-## See Also
+## See also
 
-[CException Class](../../mfc/reference/cexception-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDatabase Class](../../mfc/reference/cdatabase-class.md)<br/>
-[CRecordset Class](../../mfc/reference/crecordset-class.md)<br/>
-[CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)<br/>
-[CRecordset::Update](../../mfc/reference/crecordset-class.md#update)<br/>
-[CRecordset::Delete](../../mfc/reference/crecordset-class.md#delete)<br/>
-[CException Class](../../mfc/reference/cexception-class.md)
+- [CException Class](../../mfc/reference/cexception-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDatabase Class](../../mfc/reference/cdatabase-class.md)
+- [CRecordset Class](../../mfc/reference/crecordset-class.md)
+- [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)
+- [CRecordset::Update](../../mfc/reference/crecordset-class.md#update)
+- [CRecordset::Delete](../../mfc/reference/crecordset-class.md#delete)
+- [CException Class](../../mfc/reference/cexception-class.md)

@@ -23,4 +23,4 @@ For more information on the MBCS environment, see [Single-byte and Multibyte Cha
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)
+- [main: Program Startup](../cpp/main-program-startup.md)

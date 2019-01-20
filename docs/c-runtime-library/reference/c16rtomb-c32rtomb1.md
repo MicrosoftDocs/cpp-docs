@@ -60,9 +60,9 @@ For compatibility information, see [Compatibility](../../c-runtime-library/compa
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbrtoc16, mbrtoc32](mbrtoc16-mbrtoc323.md)<br/>
-[wcrtomb](wcrtomb.md)<br/>
-[wcrtomb_s](wcrtomb-s.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [mbrtoc16, mbrtoc32](mbrtoc16-mbrtoc323.md)
+- [wcrtomb](wcrtomb.md)
+- [wcrtomb_s](wcrtomb-s.md)

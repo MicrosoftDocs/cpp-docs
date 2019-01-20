@@ -11,6 +11,6 @@ Microsoft C treats identifiers within a compilation unit as case sensitive.
 
 The Microsoft linker is case sensitive. You must specify all identifiers consistently according to case.
 
-## See Also
+## See also
 
-[Behavior of Identifiers](../c-language/behavior-of-identifiers.md)
+- [Behavior of Identifiers](../c-language/behavior-of-identifiers.md)

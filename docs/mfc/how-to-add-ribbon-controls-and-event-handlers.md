@@ -30,8 +30,7 @@ In this topic, you will open the Ribbon Designer, add a button, and then link an
     MessageBox((LPCTSTR)L"Hello World");
 ```
 
-## See Also
+## See also
 
-[RibbonGadgets Sample: Ribbon Gadgets Application](../visual-cpp-samples.md)<br/>
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
-
+- [RibbonGadgets Sample: Ribbon Gadgets Application](../visual-cpp-samples.md)
+- [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)

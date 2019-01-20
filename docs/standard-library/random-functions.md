@@ -36,4 +36,4 @@ The template function calls `operator()` of *Gen* repeatedly and packs the retur
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+- [\<random>](../standard-library/random.md)

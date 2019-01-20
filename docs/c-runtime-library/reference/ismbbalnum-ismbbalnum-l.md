@@ -56,5 +56,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+- [Byte Classification](../../c-runtime-library/byte-classification.md)
+- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

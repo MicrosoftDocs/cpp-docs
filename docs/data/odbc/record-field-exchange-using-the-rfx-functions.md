@@ -49,11 +49,11 @@ The class library supplies RFX functions for transferring many different data ty
 
 For more information, see the RFX function documentation under [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *Class Library Reference*. For information about how C++ data types map to SQL data types, see the table ANSI SQL Data Types Mapped to C++ Data Types in [SQL: SQL and C++ Data Types (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).
 
-## See Also
+## See also
 
-[Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
-[Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
-[Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>
-[Recordset: Dynamically Binding Data Columns (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)<br/>
-[CRecordset Class](../../mfc/reference/crecordset-class.md)<br/>
-[CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)
+- [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+- [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)
+- [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)
+- [Recordset: Dynamically Binding Data Columns (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)
+- [CRecordset Class](../../mfc/reference/crecordset-class.md)
+- [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)

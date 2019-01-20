@@ -47,10 +47,10 @@ See the example for [_chsize](chsize.md).
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_chsize](chsize.md)<br/>
-[_fileno](fileno.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_stat, _wstat Functions](stat-functions.md)<br/>
-[_stat, _wstat Functions](stat-functions.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_chsize](chsize.md)
+- [_fileno](fileno.md)
+- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)
+- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)
+- [_stat, _wstat Functions](stat-functions.md)
+- [_stat, _wstat Functions](stat-functions.md)

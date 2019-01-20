@@ -80,4 +80,4 @@ After:  BADCFEHGJILKNMPORQTSVUXWZY
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
+- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)

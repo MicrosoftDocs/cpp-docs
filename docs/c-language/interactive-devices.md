@@ -9,6 +9,6 @@ ms.assetid: a15ac95d-faf8-4fcf-80ab-0e346d1a5b5a
 
 Microsoft C defines the keyboard and the display as interactive devices.
 
-## See Also
+## See also
 
-[Environment](../c-language/environment.md)
+- [Environment](../c-language/environment.md)

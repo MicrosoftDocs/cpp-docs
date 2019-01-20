@@ -101,6 +101,6 @@ One of the operands can be of integral type, as long as it is the second operand
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Additive Operators](../c-language/c-additive-operators.md)
+- [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [C Additive Operators](../c-language/c-additive-operators.md)

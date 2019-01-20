@@ -47,9 +47,9 @@ Now, you will associate your MFC control (`m_MyControl`) with a managed event ha
     }
     ```
 
-## See Also
+## See also
 
-[MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate)<br/>
-[BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map)<br/>
-[END_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#end_delegate_map)<br/>
-[EVENT_DELEGATE_ENTRY](../mfc/reference/delegate-and-interface-maps.md#event_delegate_entry)
+- [MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate)
+- [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map)
+- [END_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#end_delegate_map)
+- [EVENT_DELEGATE_ENTRY](../mfc/reference/delegate-and-interface-maps.md#event_delegate_entry)

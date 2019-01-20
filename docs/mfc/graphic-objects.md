@@ -59,7 +59,6 @@ The following code casts a `CPen` object to a Windows handle:
 
 - [Device contexts](../mfc/device-contexts.md)
 
-## See Also
+## See also
 
-[Window Objects](../mfc/window-objects.md)
-
+- [Window Objects](../mfc/window-objects.md)

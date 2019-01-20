@@ -51,7 +51,7 @@ The `__vmx_vmptrld` function is equivalent to the `VMPTRLD` machine instruction.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmptrst](../intrinsics/vmx-vmptrst.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__vmx_vmptrst](../intrinsics/vmx-vmptrst.md)

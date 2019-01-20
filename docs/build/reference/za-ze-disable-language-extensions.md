@@ -43,8 +43,8 @@ For more information about conformance issues with Visual C++, see [Nonstandard 
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLanguageExtensions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)

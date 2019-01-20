@@ -26,6 +26,6 @@ The following topics discuss error handling and notification:
 
 - [Exceptions](../../build/reference/exceptions-c-cpp.md)
 
-## See Also
+## See also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+- [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)

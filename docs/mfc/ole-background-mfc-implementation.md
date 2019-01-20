@@ -32,8 +32,7 @@ In-process servers and object handlers allow implementation of visual editing da
 
 For more information on how the Microsoft Foundation OLE classes implement OLE interfaces, see MFC Technical Notes [38](../mfc/tn038-mfc-ole-iunknown-implementation.md), [39](../mfc/tn039-mfc-ole-automation-implementation.md), and [40](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md).
 
-## See Also
+## See also
 
-[OLE Background](../mfc/ole-background.md)<br/>
-[OLE Background: Implementation Strategies](../mfc/ole-background-implementation-strategies.md)
-
+- [OLE Background](../mfc/ole-background.md)
+- [OLE Background: Implementation Strategies](../mfc/ole-background-implementation-strategies.md)

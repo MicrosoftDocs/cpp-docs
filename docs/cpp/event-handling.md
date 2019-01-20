@@ -25,5 +25,5 @@ Visual C++ includes attributes and keywords for declaring events and event handl
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Keywords](../cpp/keywords-cpp.md)

@@ -90,6 +90,6 @@ The following table lists the flag values for the *lParam* parameter of the AFX_
 |AFX_TOOLTIP_TYPE_TOOLBOX|0x0080|
 |AFX_TOOLTIP_TYPE_ALL|0xFFFF|
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

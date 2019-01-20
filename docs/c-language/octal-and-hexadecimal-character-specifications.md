@@ -29,6 +29,6 @@ For hexadecimal values, you can break the string to show the correct value clear
 "\xab" "c" /* two characters */
 ```
 
-## See Also
+## See also
 
-[C Character Constants](../c-language/c-character-constants.md)
+- [C Character Constants](../c-language/c-character-constants.md)

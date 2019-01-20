@@ -39,9 +39,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc /openmp concrt-omp-parallel-any-of.cpp**
 
-## See Also
+## See also
 
-[Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
-[Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
-[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)
-
+- [Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)
+- [Cancellation in the PPL](cancellation-in-the-ppl.md)
+- [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)

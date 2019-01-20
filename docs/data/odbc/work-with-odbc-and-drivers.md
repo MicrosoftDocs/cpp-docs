@@ -20,6 +20,6 @@ ODBC allows you to write applications that are not dependent on just one databas
 
 - [Call ODBC API functions directly in MFC](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

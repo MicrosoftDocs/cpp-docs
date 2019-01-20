@@ -157,7 +157,7 @@ void Track(
 
 This method displays the tooltip control at the position and size specified by *rect*. If the position, size, and text have not changed since the last time this method was called, this method has no effect.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

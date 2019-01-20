@@ -50,6 +50,6 @@ Shifting a negative value to the right yields half the original value, rounded d
 
 Right shifts preserve the sign bit. When a signed integer shifts right, the most-significant bit remains set. When an unsigned integer shifts right, the most-significant bit is cleared.
 
-## See Also
+## See also
 
-[Left Shift and Right Shift Operators (>> and <<)](../cpp/left-shift-and-right-shift-operators-input-and-output.md)
+- [Left Shift and Right Shift Operators (>> and <<)](../cpp/left-shift-and-right-shift-operators-input-and-output.md)

@@ -72,10 +72,9 @@ The following table, [Characteristics of MFC Collection Classes](#_core_characte
 
 3. If marked Yes in this column, a nontemplate collection class is type-safe provided you use it as intended. For example, if you store bytes in a `CByteArray`, the array is type-safe. But if you use it to store characters, its type safety is less certain.
 
-## See Also
+## See also
 
-[Collections](../mfc/collections.md)<br/>
-[Template-Based Classes](../mfc/template-based-classes.md)<br/>
-[How to: Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md)<br/>
-[Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md)
-
+- [Collections](../mfc/collections.md)
+- [Template-Based Classes](../mfc/template-based-classes.md)
+- [How to: Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md)
+- [Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md)

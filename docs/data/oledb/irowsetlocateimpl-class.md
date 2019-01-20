@@ -199,10 +199,10 @@ An array of bookmarks.
 CAtlArray<DBROWCOUNT> m_rgBookmarks;
 ```
 
-## See Also
+## See also
 
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
-[IRowsetLocate:IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms721190(v=vs.85))
-[Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md)<br/>
-[Bookmarks](https://docs.microsoft.com/previous-versions/windows/desktop/ms709728(v=vs.85))
+- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+- [IRowsetLocate:IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms721190(v=vs.85))
+- [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md)
+- [Bookmarks](https://docs.microsoft.com/previous-versions/windows/desktop/ms709728(v=vs.85))

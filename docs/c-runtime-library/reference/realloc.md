@@ -116,7 +116,7 @@ Size of block after realloc of 1000 more longs: 8000
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](calloc.md)<br/>
-[free](free.md)<br/>
-[malloc](malloc.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [calloc](calloc.md)
+- [free](free.md)
+- [malloc](malloc.md)

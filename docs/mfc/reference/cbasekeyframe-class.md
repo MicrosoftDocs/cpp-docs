@@ -160,6 +160,6 @@ Represents a Windows Animation API keyframe. When a keyframe is not initialized 
 UI_ANIMATION_KEYFRAME m_keyframe;
 ```
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

@@ -41,8 +41,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 **cl.exe /EHsc parallel-matrix-multiply.cpp**
 
-## See Also
+## See also
 
-[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
-[parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
-
+- [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)
+- [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)

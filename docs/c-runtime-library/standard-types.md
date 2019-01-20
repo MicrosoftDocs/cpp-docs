@@ -91,6 +91,6 @@ The Microsoft run-time library defines the following standard types and typedefs
 |`wctype_t` integer|Can represent all characters of any language character set.|WCHAR.H,<br /><br /> CRTDEFS.H|
 |`wint_t` integer|Type of data object that can hold any wide character or wide end-of-file value.|WCHAR.H,<br /><br /> CRTDEFS.H|
 
-## See Also
+## See also
 
-[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)
+- [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)

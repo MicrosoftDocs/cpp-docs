@@ -63,6 +63,6 @@ This topic discusses how to compile existing MFC and ATL programs to target the 
 
 1. For the file that contains DllMain and anything it calls, in **Solution Explorer**, right-click the file and then click **Properties**. Under **Configuration Properties**, expand the node next to **C/C++** and select **General**. In the right pane, under **Project Defaults**, set **Compile with Common Language Runtime support** to **No Common Language Runtime support**.
 
-## See Also
+## See also
 
-[Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)
+- [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)

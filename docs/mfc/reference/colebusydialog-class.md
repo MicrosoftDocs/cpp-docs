@@ -175,8 +175,8 @@ Members of this structure can be modified directly or through member functions.
 
 For more information, see the [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) structure in the Windows SDK.
 
-## See Also
+## See also
 
-[COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleDialog Class](../../mfc/reference/coledialog-class.md)
+- [COleDialog Class](../../mfc/reference/coledialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleDialog Class](../../mfc/reference/coledialog-class.md)

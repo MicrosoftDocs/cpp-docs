@@ -248,10 +248,9 @@ A reference to a location where the light-weight task will be biased towards exe
 
 This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[Scheduler Class](scheduler-class.md)<br/>
-[PolicyElementKey](concurrency-namespace-enums.md)<br/>
-[Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-
+- [concurrency Namespace](concurrency-namespace.md)
+- [Scheduler Class](scheduler-class.md)
+- [PolicyElementKey](concurrency-namespace-enums.md)
+- [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)

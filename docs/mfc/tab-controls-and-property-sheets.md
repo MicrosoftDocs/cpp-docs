@@ -14,8 +14,7 @@ Property sheets are multiple-page dialogs or "tab dialogs" that can display up t
 
 Property sheets can be easily implemented using the MFC class [CPropertySheet](../mfc/reference/cpropertysheet-class.md).
 
-## See Also
+## See also
 
-[Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CTabCtrl](../mfc/using-ctabctrl.md)
+- [Controls](../mfc/controls-mfc.md)

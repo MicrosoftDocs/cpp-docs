@@ -135,5 +135,5 @@ Hi, Dad. It's Dave.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)

@@ -17,7 +17,6 @@ When the main window closes, the application closes. If there are modified unsav
 
 - [Creating document frame windows](../mfc/creating-document-frame-windows.md)
 
-## See Also
+## See also
 
-[Using Frame Windows](../mfc/using-frame-windows.md)
-
+- [Using Frame Windows](../mfc/using-frame-windows.md)

@@ -97,7 +97,6 @@ The next step involves creating two new string resources that will provide a typ
 
 After you have made the necessary modifications rebuild your project and use Test Container to test the new property page. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access the test container.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

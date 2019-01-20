@@ -100,8 +100,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc scheduling-protocol.cpp**
 
-## See Also
+## See also
 
-[Schedule Groups](../../parallel/concrt/schedule-groups.md)<br/>
-[Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)
-
+- [Schedule Groups](../../parallel/concrt/schedule-groups.md)
+- [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)

@@ -21,5 +21,5 @@ The following routines are available:
 
 ## See also
 
-[Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)<br/>
-[Compiler COM Support](../cpp/compiler-com-support.md)
+- [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)
+- [Compiler COM Support](../cpp/compiler-com-support.md)

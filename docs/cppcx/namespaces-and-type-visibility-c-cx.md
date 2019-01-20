@@ -48,6 +48,6 @@ The C++/CX define certain types in these namespaces as part of the projection of
 |Platform::Collections|Contains the concrete collection classes that implement the Windows Runtime collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, collection.h, not in platform.winmd.|
 |Platform::Details|Contains types that are used by the compiler and are not meant for public consumption.|
 
-## See Also
+## See also
 
-[Type System (C++/CX)](../cppcx/type-system-c-cx.md)
+- [Type System (C++/CX)](../cppcx/type-system-c-cx.md)

@@ -10,6 +10,6 @@ ms.assetid: bca3fc78-0347-41bd-9e3e-94d646104bad
 
 Any number of null characters can be appended to a binary stream.
 
-## See Also
+## See also
 
-[Library Functions](../c-language/library-functions.md)
+- [Library Functions](../c-language/library-functions.md)

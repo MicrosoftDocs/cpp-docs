@@ -121,8 +121,8 @@ An interface to the thread proxy that is about to enter the `Dispatch` method on
 
 You are expected to save the parameter `pThreadProxy` and return it on a call to the `GetProxy` method. The Resource Manager guarantees that the thread proxy associated with the execution context will not change while the thread proxy is executing the `Dispatch` method.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[IScheduler Structure](ischeduler-structure.md)<br/>
-[IThreadProxy Structure](ithreadproxy-structure.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [IScheduler Structure](ischeduler-structure.md)
+- [IThreadProxy Structure](ithreadproxy-structure.md)

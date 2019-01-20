@@ -20,4 +20,4 @@ Because C macros expand into a single logical line, avoid using assembly-languag
 
 ## See also
 
-[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>
+- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)

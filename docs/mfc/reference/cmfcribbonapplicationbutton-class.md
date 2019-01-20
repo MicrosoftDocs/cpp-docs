@@ -95,8 +95,8 @@ void SetImage(HBITMAP hBmp);
 
 Use this method to assign a new image to the ribbon application button after you create the button. The application button is located in the upper-left corner of the application window.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonButton Class](../../mfc/reference/cmfcribbonbutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCRibbonButton Class](../../mfc/reference/cmfcribbonbutton-class.md)

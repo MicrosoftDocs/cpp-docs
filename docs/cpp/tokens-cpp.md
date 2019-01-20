@@ -42,4 +42,4 @@ Because the parser creates the longest token possible from the input stream, it 
 
 ## See also
 
-[Lexical Conventions](../cpp/lexical-conventions.md)
+- [Lexical Conventions](../cpp/lexical-conventions.md)

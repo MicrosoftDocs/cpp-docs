@@ -438,10 +438,10 @@ Specifies the new transparent color.
 
 The transparent color is required to display transparent images. Any occurrence of this color in an image is painted with the background color instead.  There is no blending of background and foreground images.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)<br/>
-[CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)<br/>
-[CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)
+- [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)
+- [CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md)

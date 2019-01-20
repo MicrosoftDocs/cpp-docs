@@ -645,7 +645,7 @@ In addition to the restrictions for named unions, anonymous unions are subject t
 
 ## See also
 
-[Classes and Structs](../cpp/classes-and-structs-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[class](../cpp/class-cpp.md)<br/>
-[struct](../cpp/struct-cpp.md)
+- [Classes and Structs](../cpp/classes-and-structs-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [class](../cpp/class-cpp.md)
+- [struct](../cpp/struct-cpp.md)

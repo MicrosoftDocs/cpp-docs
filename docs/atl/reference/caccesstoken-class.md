@@ -1125,8 +1125,8 @@ Returns TRUE on success, FALSE on failure.
 
 The primary group is the default group for new objects created while this access token is in effect.
 
-## See Also
+## See also
 
-[ATLSecurity Sample](../../visual-cpp-samples.md)<br/>
-[Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [ATLSecurity Sample](../../visual-cpp-samples.md)
+- [Access Tokens](/windows/desktop/SecAuthZ/access-tokens)
+- [Class Overview](../../atl/atl-class-overview.md)

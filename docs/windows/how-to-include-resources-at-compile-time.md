@@ -62,7 +62,7 @@ Win32
 
 ## See also
 
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)<br/>
-[TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)<br/>
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Editors](../windows/resource-editors.md)
+- [TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)
+- [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

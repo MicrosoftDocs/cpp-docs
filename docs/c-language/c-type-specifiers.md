@@ -69,4 +69,4 @@ You can create additional type specifiers with **typedef** declarations, as desc
 
 ## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+- [Declarations and Types](../c-language/declarations-and-types.md)

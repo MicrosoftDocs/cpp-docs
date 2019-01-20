@@ -10,7 +10,6 @@ After the dialog box and all of its controls are created but just before the dia
 
 If you want to set your dialog box's background color (and that of all other dialog boxes in your application), see [Setting the Dialog Box's Background Color](../mfc/setting-the-dialog-boxs-background-color.md).
 
-## See Also
+## See also
 
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

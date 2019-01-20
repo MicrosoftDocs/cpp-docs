@@ -24,4 +24,4 @@ The type is a synonym for [errc](../standard-library/system-error-enums.md#errc)
 
 ## See also
 
-[<system_error>](../standard-library/system-error.md)<br/>
+- [<system_error>](../standard-library/system-error.md)

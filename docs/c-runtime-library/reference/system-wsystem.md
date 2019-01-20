@@ -98,8 +98,8 @@ Line two.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[_flushall](flushall.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)
+- [exit, _Exit, _exit](exit-exit-exit.md)
+- [_flushall](flushall.md)
+- [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)

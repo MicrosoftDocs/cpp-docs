@@ -60,6 +60,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [getc, getwc](getc-getwc.md)
+- [putc, putwc](putc-putwc.md)

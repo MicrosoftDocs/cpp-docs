@@ -85,6 +85,6 @@ See the example for [vsprintf](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprin
 
 ## See also
 
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
-[_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l](scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md)<br/>
-[_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)<br/>
+- [vprintf Functions](../../c-runtime-library/vprintf-functions.md)
+- [_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l](scprintf-p-scprintf-p-l-scwprintf-p-scwprintf-p-l.md)
+- [_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md)

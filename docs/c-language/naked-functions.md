@@ -48,6 +48,6 @@ __declspec( naked ) int func();   /* Error--naked attribute not */
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[C Function Definitions](../c-language/c-function-definitions.md)
+- [C Function Definitions](../c-language/c-function-definitions.md)

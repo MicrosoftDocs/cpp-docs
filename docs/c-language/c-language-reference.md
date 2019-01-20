@@ -20,6 +20,6 @@ For additional reference material on C++ and the preprocessor, see:
 
 Compiler and linker options are documented in the [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
-## See Also
+## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)

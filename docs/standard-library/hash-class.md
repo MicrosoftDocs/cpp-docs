@@ -53,7 +53,7 @@ int main()
 
 ## See also
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
-[unordered_multimap Class](../standard-library/unordered-multimap-class.md)<br/>
-[unordered_multiset Class](../standard-library/unordered-multiset-class.md)<br/>
-[<unordered_set>](../standard-library/unordered-set.md)<br/>
+- [<unordered_map>](../standard-library/unordered-map.md)
+- [unordered_multimap Class](../standard-library/unordered-multimap-class.md)
+- [unordered_multiset Class](../standard-library/unordered-multiset-class.md)
+- [<unordered_set>](../standard-library/unordered-set.md)

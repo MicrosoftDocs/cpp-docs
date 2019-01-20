@@ -44,6 +44,6 @@ Azure Blob storage is a service that stores unstructured data in the cloud as ob
 [ ODBC Programmer's Reference](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
 The ODBC interface is designed for use with the C programming language. Use of the ODBC interface spans three areas: SQL statements, ODBC function calls, and C programming.
 
-## See Also
+## See also
 
-[Visual C++](../visual-cpp-in-visual-studio.md)
+- [Visual C++](../visual-cpp-in-visual-studio.md)

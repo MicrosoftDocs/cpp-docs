@@ -47,8 +47,8 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
   > [!NOTE]
   > None of these project properties are changed if they are overridden on the file level.
 
-## See Also
+## See also
 
-[.NET Framework 64-bit Applications](/dotnet/framework/64-bit-apps)<br/>
-[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
-[Debug 64-Bit Applications](/visualstudio/debugger/debug-64-bit-applications)
+- [.NET Framework 64-bit Applications](/dotnet/framework/64-bit-apps)
+- [Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)
+- [Debug 64-Bit Applications](/visualstudio/debugger/debug-64-bit-applications)

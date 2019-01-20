@@ -54,11 +54,11 @@ By default, the compiler defines the following Microsoft-specific symbols.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefineAllPreprocessorDefinitions%2A> or <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefinePreprocessorDefinitions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/J (Default char Type Is unsigned)](../../build/reference/j-default-char-type-is-unsigned.md)<br/>
-[/GR (Enable Run-Time Type Information)](../../build/reference/gr-enable-run-time-type-information.md)<br/>
-[/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)<br/>
-[/MD, /MT, /LD (Use Run-Time Library)](../../build/reference/md-mt-ld-use-run-time-library.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/J (Default char Type Is unsigned)](../../build/reference/j-default-char-type-is-unsigned.md)
+- [/GR (Enable Run-Time Type Information)](../../build/reference/gr-enable-run-time-type-information.md)
+- [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)
+- [/MD, /MT, /LD (Use Run-Time Library)](../../build/reference/md-mt-ld-use-run-time-library.md)

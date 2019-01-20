@@ -233,8 +233,8 @@ void SetLink(LPCTSTR lpszLink);
 *lpszLink*<br/>
 [in] Specifies the hyperlink text.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonButton Class](../../mfc/reference/cmfcribbonbutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCRibbonButton Class](../../mfc/reference/cmfcribbonbutton-class.md)

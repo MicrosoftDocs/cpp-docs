@@ -33,7 +33,6 @@ The following brief example shows both methods of constructing a pen object:
 
 - [Drawing in a View](../mfc/drawing-in-a-view.md)
 
-## See Also
+## See also
 
-[Graphic Objects](../mfc/graphic-objects.md)
-
+- [Graphic Objects](../mfc/graphic-objects.md)

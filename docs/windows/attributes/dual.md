@@ -58,11 +58,11 @@ __interface IStatic : IDispatch
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Attributes by Usage](attributes-by-usage.md)<br/>
-[custom](custom-cpp.md)<br/>
-[dispinterface](dispinterface.md)<br/>
-[object](object-cpp.md)<br/>
-[__interface](../../cpp/interface.md)
+- [IDL Attributes](idl-attributes.md)
+- [Attributes by Usage](attributes-by-usage.md)
+- [custom](custom-cpp.md)
+- [dispinterface](dispinterface.md)
+- [object](object-cpp.md)
+- [__interface](../../cpp/interface.md)

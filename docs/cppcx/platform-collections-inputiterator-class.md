@@ -163,6 +163,6 @@ Another InputIterator.
 
 **true** if the current InputIterator is not equal to *other*; otherwise, **false**.
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)
+- [Platform Namespace](platform-namespace-c-cx.md)

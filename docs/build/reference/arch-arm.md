@@ -41,8 +41,8 @@ When you use [/clr](../../build/reference/clr-common-language-runtime-compilatio
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
 
-## See Also
+## See also
 
-[/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

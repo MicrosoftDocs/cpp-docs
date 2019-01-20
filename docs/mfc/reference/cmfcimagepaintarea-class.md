@@ -145,8 +145,8 @@ void SetMode(IMAGE_EDIT_MODE mode);
 |Parameter|Description|
 |*mode*|[in] An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value that specifies the current drawing mode.|
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCImageEditorDialog Class](../../mfc/reference/cmfcimageeditordialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCImageEditorDialog Class](../../mfc/reference/cmfcimageeditordialog-class.md)

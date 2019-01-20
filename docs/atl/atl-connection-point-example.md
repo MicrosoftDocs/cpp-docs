@@ -14,7 +14,6 @@ When specifying `IPropertyNotifySink` as an outgoing interface, you can use clas
 
 [!code-cpp[NVC_ATL_Windowing#85](../atl/codesnippet/cpp/atl-connection-point-example_2.h)]
 
-## See Also
+## See also
 
-[Connection Point](../atl/atl-connection-points.md)
-
+- [Connection Point](../atl/atl-connection-points.md)

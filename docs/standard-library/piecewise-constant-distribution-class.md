@@ -318,5 +318,5 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
-[piecewise_linear_distribution](../standard-library/piecewise-linear-distribution-class.md)<br/>
+- [\<random>](../standard-library/random.md)
+- [piecewise_linear_distribution](../standard-library/piecewise-linear-distribution-class.md)

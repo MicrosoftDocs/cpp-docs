@@ -16,12 +16,11 @@ Containers and servers do not communicate directly. Instead, they communicate th
 
 Using this means of communication, a container does not need to know the implementation details of the server application. It allows a container to accept items created by any server without having to define the types of servers with which it can work. As a result, the user of a container application can take advantage of future applications and data formats. If these new applications are OLE components, then a compound document will be able to incorporate items created by those applications.
 
-## See Also
+## See also
 
-[OLE Background](../mfc/ole-background.md)<br/>
-[OLE Background: MFC Implementation](../mfc/ole-background-mfc-implementation.md)<br/>
-[Containers](../mfc/containers.md)<br/>
-[Servers](../mfc/servers.md)<br/>
-[Containers: Client Items](../mfc/containers-client-items.md)<br/>
-[Servers: Server Items](../mfc/servers-server-items.md)
-
+- [OLE Background](../mfc/ole-background.md)
+- [OLE Background: MFC Implementation](../mfc/ole-background-mfc-implementation.md)
+- [Containers](../mfc/containers.md)
+- [Servers](../mfc/servers.md)
+- [Containers: Client Items](../mfc/containers-client-items.md)
+- [Servers: Server Items](../mfc/servers-server-items.md)

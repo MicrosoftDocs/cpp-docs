@@ -275,13 +275,13 @@ int main(int argc, char** argv)
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
-[ferror](ferror.md)<br/>
-[_fileno](fileno.md)<br/>
-[freopen, _wfreopen](freopen-wfreopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_setmode](setmode.md)<br/>
-[_sopen, _wsopen](sopen-wsopen.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [fclose, _fcloseall](fclose-fcloseall.md)
+- [_fdopen, _wfdopen](fdopen-wfdopen.md)
+- [ferror](ferror.md)
+- [_fileno](fileno.md)
+- [freopen, _wfreopen](freopen-wfreopen.md)
+- [_open, _wopen](open-wopen.md)
+- [_setmode](setmode.md)
+- [_sopen, _wsopen](sopen-wsopen.md)

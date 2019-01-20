@@ -21,4 +21,4 @@ Defines the container template class `initializer_list` and several supporting t
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

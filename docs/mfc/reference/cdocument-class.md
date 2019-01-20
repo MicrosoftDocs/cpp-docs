@@ -1130,13 +1130,13 @@ This function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onu
 
 [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/cpp/cdocument-class_9.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample NPP](../../visual-cpp-samples.md)<br/>
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)
+- [MFC Sample SNAPVW](../../visual-cpp-samples.md)
+- [MFC Sample NPP](../../visual-cpp-samples.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)

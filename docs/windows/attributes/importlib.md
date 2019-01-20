@@ -48,11 +48,11 @@ The following code shows an example of how to use **importlib**:
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[Compiler Attributes](compiler-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)<br/>
-[import](import.md)<br/>
-[importidl](importidl.md)<br/>
-[include](include-cpp.md)<br/>
-[includelib](includelib-cpp.md)
+- [Compiler Attributes](compiler-attributes.md)
+- [Stand-Alone Attributes](stand-alone-attributes.md)
+- [import](import.md)
+- [importidl](importidl.md)
+- [include](include-cpp.md)
+- [includelib](includelib-cpp.md)

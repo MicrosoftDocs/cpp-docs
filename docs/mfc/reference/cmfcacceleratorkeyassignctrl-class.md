@@ -141,8 +141,8 @@ void ResetKey();
 
 The function clears the edit control text. This includes any shortcut keys that the user pressed.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCAcceleratorKey Class](../../mfc/reference/cmfcacceleratorkey-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCAcceleratorKey Class](../../mfc/reference/cmfcacceleratorkey-class.md)

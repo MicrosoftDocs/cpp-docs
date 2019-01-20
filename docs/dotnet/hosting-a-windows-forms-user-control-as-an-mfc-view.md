@@ -22,7 +22,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 [How to: Call Properties and Methods of the Windows Forms Control](../dotnet/how-to-call-properties-and-methods-of-the-windows-forms-control.md)
 
-## See Also
+## See also
 
-[Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)<br/>
-[How to: Author Composite Controls](/dotnet/framework/winforms/controls/how-to-author-composite-controls)
+- [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)
+- [How to: Author Composite Controls](/dotnet/framework/winforms/controls/how-to-author-composite-controls)

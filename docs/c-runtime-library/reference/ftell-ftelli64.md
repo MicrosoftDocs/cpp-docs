@@ -89,8 +89,8 @@ Position after trying to read 100 bytes: 100
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[fgetpos](fgetpos.md)<br/>
-[fseek, _fseeki64](fseek-fseeki64.md)<br/>
-[_lseek, _lseeki64](lseek-lseeki64.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [fgetpos](fgetpos.md)
+- [fseek, _fseeki64](fseek-fseeki64.md)
+- [_lseek, _lseeki64](lseek-lseeki64.md)

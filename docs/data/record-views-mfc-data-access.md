@@ -36,7 +36,7 @@ Topics include:
 
 - [Using a Record View](../data/using-a-record-view-mfc-data-access.md)
 
-## See Also
+## See also
 
-[Data Access Programming (MFC/ATL)](../data/data-access-programming-mfc-atl.md)<br/>
-[ODBC Driver List](../data/odbc/odbc-driver-list.md)
+- [Data Access Programming (MFC/ATL)](../data/data-access-programming-mfc-atl.md)
+- [ODBC Driver List](../data/odbc/odbc-driver-list.md)

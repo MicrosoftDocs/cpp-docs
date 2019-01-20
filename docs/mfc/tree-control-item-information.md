@@ -14,8 +14,7 @@ The [GetNextItem](../mfc/reference/ctreectrl-class.md#getnextitem) member functi
 
 The [GetItemRect](../mfc/reference/ctreectrl-class.md#getitemrect) member function retrieves the bounding rectangle for a tree control item. The [GetCount](../mfc/reference/ctreectrl-class.md#getcount) and [GetVisibleCount](../mfc/reference/ctreectrl-class.md#getvisiblecount) member functions retrieve a count of the items in a tree control and a count of the items that are currently visible in the tree control's window, respectively. You can ensure that a particular item is visible by calling the [EnsureVisible](../mfc/reference/ctreectrl-class.md#ensurevisible) member function.
 
-## See Also
+## See also
 
-[Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CTreeCtrl](../mfc/using-ctreectrl.md)
+- [Controls](../mfc/controls-mfc.md)

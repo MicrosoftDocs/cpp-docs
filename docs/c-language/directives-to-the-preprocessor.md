@@ -18,6 +18,6 @@ This statement tells the compiler to replace each occurrence of `MAX` by `100` b
 |`#elif`|`#error`|**#ifndef**|**#pragma**|
 |`#else`|`#if`|`#include`|`#undef`|
 
-## See Also
+## See also
 
-[Source Files and Source Programs](../c-language/source-files-and-source-programs.md)
+- [Source Files and Source Programs](../c-language/source-files-and-source-programs.md)

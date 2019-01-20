@@ -18,7 +18,7 @@ For more information about advanced provider techniques, see the following topic
 
 - [OLE DB Resource Pooling and Services](../../data/oledb/ole-db-resource-pooling-and-services.md)
 
-## See Also
+## See also
 
-[OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

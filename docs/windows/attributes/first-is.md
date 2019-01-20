@@ -61,12 +61,12 @@ requestedit] HRESULT get_I([out, retval]long *i);
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)<br/>
-[last_is](last-is.md)<br/>
-[max_is](max-is.md)<br/>
-[length_is](length-is.md)<br/>
-[size_is](size-is.md)
+- [IDL Attributes](idl-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [Parameter Attributes](parameter-attributes.md)
+- [last_is](last-is.md)
+- [max_is](max-is.md)
+- [length_is](length-is.md)
+- [size_is](size-is.md)

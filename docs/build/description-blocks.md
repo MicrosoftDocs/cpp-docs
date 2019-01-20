@@ -21,6 +21,6 @@ A dependency line specifies one or more targets and zero or more dependents. A t
 
 [Dependents](../build/dependents.md)
 
-## See Also
+## See also
 
-[NMAKE Reference](../build/nmake-reference.md)
+- [NMAKE Reference](../build/nmake-reference.md)

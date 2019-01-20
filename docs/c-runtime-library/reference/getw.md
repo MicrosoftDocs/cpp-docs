@@ -91,5 +91,5 @@ First data word in file: 0x656e694c
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_putw](putw.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_putw](putw.md)

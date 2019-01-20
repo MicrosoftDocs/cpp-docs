@@ -54,8 +54,8 @@ For information on adding resources to managed projects, please see [Resources i
 
 None
 
-## See Also
+## See also
 
-[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[Icons](/windows/desktop/menurc/icons)<br/>
-[Cursors](/windows/desktop/menurc/cursors)
+- [Image Editor for Icons](../windows/image-editor-for-icons.md)
+- [Icons](/windows/desktop/menurc/icons)
+- [Cursors](/windows/desktop/menurc/cursors)

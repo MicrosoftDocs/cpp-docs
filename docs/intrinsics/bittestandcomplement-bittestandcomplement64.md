@@ -91,6 +91,6 @@ Value changed to 0, Result: 1
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

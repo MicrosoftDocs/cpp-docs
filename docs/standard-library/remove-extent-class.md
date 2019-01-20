@@ -63,5 +63,5 @@ remove_extent_t<int[5][10]> == int [10]
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_all_extents Class](../standard-library/remove-all-extents-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [remove_all_extents Class](../standard-library/remove-all-extents-class.md)

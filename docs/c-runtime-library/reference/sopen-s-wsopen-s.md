@@ -140,9 +140,9 @@ See the example for [_locking](locking.md).
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_close](close.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_fsopen, _wfsopen](fsopen-wfsopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [_close](close.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [_fsopen, _wfsopen](fsopen-wfsopen.md)
+- [_open, _wopen](open-wopen.md)

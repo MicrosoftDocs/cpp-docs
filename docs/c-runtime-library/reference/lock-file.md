@@ -112,7 +112,7 @@ eFciornsdt
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_unlock_file](unlock-file.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [_open, _wopen](open-wopen.md)
+- [_unlock_file](unlock-file.md)

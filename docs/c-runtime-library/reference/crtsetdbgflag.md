@@ -194,6 +194,6 @@ int main( )
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
-[_CrtCheckMemory](crtcheckmemory.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)
+- [_CrtCheckMemory](crtcheckmemory.md)

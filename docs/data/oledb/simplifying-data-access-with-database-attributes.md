@@ -186,6 +186,6 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
 };
 ```
 
-## See Also
+## See also
 
-[OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)
+- [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)

@@ -113,8 +113,8 @@ Returns E_NOTIMPL.
 
 See [IOleControl::OnMnemonic](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-onmnemonic) in the Windows SDK.
 
-## See Also
+## See also
 
-[IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)<br/>
-[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)
+- [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -61,4 +61,4 @@ int main()
 
 ## See also
 
-[bind](../standard-library/functional-functions.md#bind)<br/>
+- [bind](../standard-library/functional-functions.md#bind)

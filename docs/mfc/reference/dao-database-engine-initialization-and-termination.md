@@ -58,6 +58,6 @@ For related information, see [Technical Note 54](../../mfc/tn054-calling-dao-dir
 
   **Header** afxdao.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

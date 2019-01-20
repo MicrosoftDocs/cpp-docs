@@ -68,5 +68,5 @@ is_convertible<char, int> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_base_of Class](../standard-library/is-base-of-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_base_of Class](../standard-library/is-base-of-class.md)

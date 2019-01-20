@@ -15,4 +15,4 @@ Returns a substring of *textitem*, starting at *position*. The *textitem* can be
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

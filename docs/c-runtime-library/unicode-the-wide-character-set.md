@@ -13,7 +13,7 @@ A wide character is of type **wchar_t**. A wide-character string is represented 
 
 Generally, wide characters take up more space in memory than multibyte characters but are faster to process. In addition, only one locale can be represented at a time in multibyte encoding, whereas all character sets in the world are represented simultaneously by the Unicode representation.
 
-## See Also
+## See also
 
-[Internationalization](../c-runtime-library/internationalization.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Internationalization](../c-runtime-library/internationalization.md)
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

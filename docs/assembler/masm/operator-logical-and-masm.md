@@ -15,4 +15,4 @@ Replaces *parameter* with its corresponding argument value.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

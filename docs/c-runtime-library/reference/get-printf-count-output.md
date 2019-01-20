@@ -40,4 +40,4 @@ See the example for [_set_printf_count_output](set-printf-count-output.md).
 
 ## See also
 
-[_set_printf_count_output](set-printf-count-output.md)<br/>
+- [_set_printf_count_output](set-printf-count-output.md)

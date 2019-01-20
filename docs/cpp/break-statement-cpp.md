@@ -145,6 +145,6 @@ int main() {
 
 ## See also
 
-[Jump Statements](../cpp/jump-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[continue Statement](../cpp/continue-statement-cpp.md)
+- [Jump Statements](../cpp/jump-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [continue Statement](../cpp/continue-statement-cpp.md)

@@ -44,8 +44,8 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+- [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)
+- [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
+- [Controls](../mfc/controls-mfc.md)

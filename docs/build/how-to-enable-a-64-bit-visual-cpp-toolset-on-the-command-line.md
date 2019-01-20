@@ -25,4 +25,4 @@ Any of the native or cross compiler tools build configurations can be used on th
 
 ## See also
 
-[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+- [Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)

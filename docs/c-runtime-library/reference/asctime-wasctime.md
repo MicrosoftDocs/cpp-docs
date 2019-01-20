@@ -105,11 +105,11 @@ Current date and time: Sun Feb 03 11:38:58 2002
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)<br/>
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
-[_tzset](tzset.md)<br/>
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)<br/>
+- [Time Management](../../c-runtime-library/time-management.md)
+- [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)
+- [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)
+- [gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)
+- [localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)
+- [time, _time32, _time64](time-time32-time64.md)
+- [_tzset](tzset.md)
+- [asctime_s, _wasctime_s](asctime-s-wasctime-s.md)

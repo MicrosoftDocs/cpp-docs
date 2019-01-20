@@ -26,4 +26,4 @@ When the source and target areas overlap, only **memmove** is guaranteed to copy
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

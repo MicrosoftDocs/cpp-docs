@@ -48,10 +48,10 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc call.cpp**
 
-## See Also
+## See also
 
-[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[How to: Use transformer in a Data Pipeline](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br/>
-[call Class](../../parallel/concrt/reference/call-class.md)<br/>
-[transformer Class](../../parallel/concrt/reference/transformer-class.md)
+- [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
+- [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)
+- [How to: Use transformer in a Data Pipeline](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)
+- [call Class](../../parallel/concrt/reference/call-class.md)
+- [transformer Class](../../parallel/concrt/reference/transformer-class.md)

@@ -170,8 +170,8 @@ public:
 };
 ```
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)<br/>
-[Platform::Type Class](platform-type-class.md)<br/>
-[Type System](type-system-c-cx.md)
+- [Platform Namespace](platform-namespace-c-cx.md)
+- [Platform::Type Class](platform-type-class.md)
+- [Type System](type-system-c-cx.md)

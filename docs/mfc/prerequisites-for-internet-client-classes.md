@@ -50,8 +50,8 @@ Some actions taken by an Internet client (reading a file, for example) have prer
 |Open a gopher file.|Establish a gopher connection. Create a gopher locator with [CGopherConnection::CreateLocator](../mfc/reference/cgopherconnection-class.md#createlocator) or find a locator with [CGopherFileFind::GetLocator](../mfc/reference/cgopherfilefind-class.md#getlocator). Call [CGopherConnection::OpenFile](../mfc/reference/cgopherconnection-class.md#openfile).|
 |Read a gopher file.|Open a gopher file. Use [CGopherFile](../mfc/reference/cgopherfile-class.md).|
 
-## See Also
+## See also
 
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[MFC Classes for Creating Internet Client Applications](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
-[Writing an Internet Client Application Using MFC WinInet Classes](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+- [MFC Classes for Creating Internet Client Applications](../mfc/mfc-classes-for-creating-internet-client-applications.md)
+- [Writing an Internet Client Application Using MFC WinInet Classes](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

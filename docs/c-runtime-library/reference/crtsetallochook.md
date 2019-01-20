@@ -74,5 +74,5 @@ For a sample of how to use **_CrtSetAllocHook**, see [crt_dbg2](https://github.c
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtGetAllocHook](crtgetallochook.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_CrtGetAllocHook](crtgetallochook.md)

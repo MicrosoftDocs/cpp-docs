@@ -264,6 +264,6 @@ Overriding properties and targets in this way is equivalent to adding the follow
 
 ## See also
 
-[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br/>
-[.vcxproj and .props file structure](vcxproj-file-structure.md)<br/>
-[Property page XML files](property-page-xml-files.md)<br/>
+- [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)
+- [.vcxproj and .props file structure](vcxproj-file-structure.md)
+- [Property page XML files](property-page-xml-files.md)

@@ -88,12 +88,12 @@ int main( void )
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
-[atexit](atexit.md)<br/>
-[_cexit, _c_exit](cexit-c-exit.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[quick_exit](quick-exit1.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [abort](abort.md)
+- [atexit](atexit.md)
+- [_cexit, _c_exit](cexit-c-exit.md)
+- [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)
+- [_onexit, _onexit_m](onexit-onexit-m.md)
+- [quick_exit](quick-exit1.md)
+- [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)
+- [system, _wsystem](system-wsystem.md)

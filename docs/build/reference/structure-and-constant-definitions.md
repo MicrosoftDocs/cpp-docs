@@ -63,6 +63,6 @@ typedef struct ImgDelayDescr {
     } ImgDelayDescr, * PImgDelayDescr;
 ```
 
-## See Also
+## See also
 
-[Understanding the Helper Function](../../build/reference/understanding-the-helper-function.md)
+- [Understanding the Helper Function](../../build/reference/understanding-the-helper-function.md)

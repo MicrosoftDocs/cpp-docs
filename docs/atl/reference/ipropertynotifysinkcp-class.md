@@ -42,8 +42,8 @@ For more information about using connection points in ATL, see the article [Conn
 
 **Header:** atlctl.h
 
-## See Also
+## See also
 
-[IConnectionPointImpl Class](../../atl/reference/iconnectionpointimpl-class.md)<br/>
-[IConnectionPointContainerImpl Class](../../atl/reference/iconnectionpointcontainerimpl-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [IConnectionPointImpl Class](../../atl/reference/iconnectionpointimpl-class.md)
+- [IConnectionPointContainerImpl Class](../../atl/reference/iconnectionpointcontainerimpl-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -163,8 +163,8 @@ The recordset contains records for those students whose records meet the conditi
 > [!NOTE]
 >  If needed, you can set the value of a parameter data member to Null, using [SetParamNull](../../mfc/reference/crecordset-class.md#setparamnull). You can likewise check whether a parameter data member is Null, using [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull).
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Recordset: Adding, Updating, and Deleting Records (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
-[Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [Recordset: Adding, Updating, and Deleting Records (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
+- [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

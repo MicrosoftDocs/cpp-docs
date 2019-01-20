@@ -55,8 +55,7 @@ CResourceException();
 
 Do not use this constructor directly, but rather call the global function [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception). for more information about exceptions, see the article [Exception Handling in MFC](../exception-handling-in-mfc.md).
 
-## See Also
+## See also
 
-[CException Class](cexception-class.md)<br/>
-[Hierarchy Chart](../hierarchy-chart.md)
-
+- [CException Class](cexception-class.md)
+- [Hierarchy Chart](../hierarchy-chart.md)

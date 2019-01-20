@@ -12,6 +12,6 @@ Similarly, the database classes shield you from having to work much with [SQL](.
 
 For more information, see [ODBC: Calling ODBC API Functions Directly](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) and [SQL: Making Direct SQL Calls (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md).
 
-## See Also
+## See also
 
-[ODBC and MFC](../../data/odbc/odbc-and-mfc.md)
+- [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)

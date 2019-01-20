@@ -105,6 +105,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
+- [Locale](../../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)

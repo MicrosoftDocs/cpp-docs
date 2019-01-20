@@ -151,15 +151,15 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[Stand-Alone Attributes](stand-alone-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[usesgetlasterror](usesgetlasterror.md)<br/>
-[library](/windows/desktop/Midl/library)<br/>
-[helpcontext](helpcontext.md)<br/>
-[helpstring](helpstring.md)<br/>
-[helpfile](helpfile.md)<br/>
-[version](version-cpp.md)
+- [IDL Attributes](idl-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [Stand-Alone Attributes](stand-alone-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [usesgetlasterror](usesgetlasterror.md)
+- [library](/windows/desktop/Midl/library)
+- [helpcontext](helpcontext.md)
+- [helpstring](helpstring.md)
+- [helpfile](helpfile.md)
+- [version](version-cpp.md)

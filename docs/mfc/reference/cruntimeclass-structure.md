@@ -204,13 +204,12 @@ For more information on schema numbers, see the [IMPLEMENT_SERIAL](run-time-obje
 
   See the example for [IsDerivedFrom](#isderivedfrom).
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#getruntimeclass)<br/>
-[CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof)<br/>
-[RUNTIME_CLASS](run-time-object-model-services.md#runtime_class)<br/>
-[IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic)<br/>
-[IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)<br/>
-[IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#getruntimeclass)
+- [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof)
+- [RUNTIME_CLASS](run-time-object-model-services.md#runtime_class)
+- [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic)
+- [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)
+- [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)

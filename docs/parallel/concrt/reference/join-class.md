@@ -247,8 +247,8 @@ Resumes propagation after a reservation has been released.
 virtual void resume_propagation();
 ```
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[choice Class](choice-class.md)<br/>
-[multitype_join Class](multitype-join-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [choice Class](choice-class.md)
+- [multitype_join Class](multitype-join-class.md)

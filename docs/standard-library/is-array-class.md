@@ -65,6 +65,6 @@ is_array<int[5]> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[extent Class](../standard-library/extent-class.md)<br/>
-[rank Class](../standard-library/rank-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [extent Class](../standard-library/extent-class.md)
+- [rank Class](../standard-library/rank-class.md)

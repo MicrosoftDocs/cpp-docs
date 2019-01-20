@@ -262,4 +262,4 @@ See [flush](../standard-library/ostream-functions.md#flush) for an example using
 
 ## See also
 
-[\<ostream>](../standard-library/ostream.md)<br/>
+- [\<ostream>](../standard-library/ostream.md)

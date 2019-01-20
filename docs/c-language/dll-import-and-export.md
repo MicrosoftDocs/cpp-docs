@@ -12,6 +12,6 @@ The dllimport and dllexport storage-class modifiers are Microsoft-specific exten
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[C Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md)
+- [C Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md)

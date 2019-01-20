@@ -298,12 +298,12 @@ Nonzero if the found file has the name "." or "..", which indicates that the fou
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsDots`.
 
-## See Also
+## See also
 
-[CFileFind Class](../../mfc/reference/cfilefind-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CFtpFileFind Class](../../mfc/reference/cftpfilefind-class.md)<br/>
-[CFileFind Class](../../mfc/reference/cfilefind-class.md)<br/>
-[CInternetFile Class](../../mfc/reference/cinternetfile-class.md)<br/>
-[CGopherFile Class](../../mfc/reference/cgopherfile-class.md)<br/>
-[CHttpFile Class](../../mfc/reference/chttpfile-class.md)
+- [CFileFind Class](../../mfc/reference/cfilefind-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CFtpFileFind Class](../../mfc/reference/cftpfilefind-class.md)
+- [CFileFind Class](../../mfc/reference/cfilefind-class.md)
+- [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)
+- [CGopherFile Class](../../mfc/reference/cgopherfile-class.md)
+- [CHttpFile Class](../../mfc/reference/chttpfile-class.md)

@@ -149,4 +149,4 @@ int main()
 
 ## See also
 
-[\<array>](../standard-library/array.md)<br/>
+- [\<array>](../standard-library/array.md)

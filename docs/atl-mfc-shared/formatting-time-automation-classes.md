@@ -20,7 +20,6 @@ For more information, see class [COleVariant](../mfc/reference/colevariant-class
 
 - [Working with SYSTEMTIME](../atl-mfc-shared/date-and-time-systemtime-support.md)
 
-## See Also
+## See also
 
-[Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)
-
+- [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)

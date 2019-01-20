@@ -14,8 +14,7 @@ When the service is run, `_tWinMain` calls `CAtlServiceModuleT::WinMain`, which 
 > [!NOTE]
 >  Failure of `StartServiceCtrlDispatcher` to connect to the service control manager (SCM) probably means that the program is not running as a service. In this case, the program calls `CAtlServiceModuleT::Run` directly so that the program can run as a local server. For more information about running the program as a local server, see [Debugging Tips](../atl/debugging-tips.md).
 
-## See Also
+## See also
 
-[Services](../atl/atl-services.md)<br/>
-[CAtlServiceModuleT::Start](../atl/reference/catlservicemodulet-class.md#start)
-
+- [Services](../atl/atl-services.md)
+- [CAtlServiceModuleT::Start](../atl/reference/catlservicemodulet-class.md#start)

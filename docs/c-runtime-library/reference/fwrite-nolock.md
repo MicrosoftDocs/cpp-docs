@@ -59,6 +59,6 @@ See the example for [fread](fread.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fread](fread.md)<br/>
-[_write](write.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fread](fread.md)
+- [_write](write.md)

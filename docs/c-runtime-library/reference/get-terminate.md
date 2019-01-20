@@ -32,8 +32,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](abort.md)<br/>
-[set_unexpected](set-unexpected-crt.md)<br/>
-[terminate](terminate-crt.md)<br/>
-[unexpected](unexpected-crt.md)<br/>
+- [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)
+- [abort](abort.md)
+- [set_unexpected](set-unexpected-crt.md)
+- [terminate](terminate-crt.md)
+- [unexpected](unexpected-crt.md)

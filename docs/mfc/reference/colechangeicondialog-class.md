@@ -170,8 +170,8 @@ Members of this structure can be modified either directly or through member func
 
 For more information, see the [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) structure in the Windows SDK.
 
-## See Also
+## See also
 
-[COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleDialog Class](../../mfc/reference/coledialog-class.md)
+- [COleDialog Class](../../mfc/reference/coledialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleDialog Class](../../mfc/reference/coledialog-class.md)

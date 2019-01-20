@@ -51,8 +51,7 @@ The following points should be noted when working with these date and time forma
 
 More information on issues related to the DATE and `COleDateTime` types can be found under [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md) and [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md).
 
-## See Also
+## See also
 
-[Date and Time](../atl-mfc-shared/date-and-time.md)<br/>
-[COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md)
-
+- [Date and Time](../atl-mfc-shared/date-and-time.md)
+- [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md)

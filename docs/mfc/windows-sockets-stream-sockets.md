@@ -31,8 +31,7 @@ Using stream sockets can be superior to applications designed to use a datagram 
     > [!NOTE]
     >  If you use class `CSocket`, you must use a stream. An MFC assertion fails if you specify the socket type as **SOCK_DGRAM**.
 
-## See Also
+## See also
 
-[Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
-[Windows Sockets: Background](../mfc/windows-sockets-background.md)
-
+- [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
+- [Windows Sockets: Background](../mfc/windows-sockets-background.md)

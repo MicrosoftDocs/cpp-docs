@@ -13,5 +13,5 @@ The articles in this section of the documentation explain diagnostic error and w
 
 ## See also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
-[Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
+- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

@@ -18,8 +18,7 @@ The easy way to use a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl
 
 If the header control object is embedded in a parent view or dialog class, the control is destroyed when the parent is destroyed.
 
-## See Also
+## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
+- [Controls](../mfc/controls-mfc.md)

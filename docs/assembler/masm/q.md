@@ -15,4 +15,4 @@ In data declarations, a value that the assembler allocates but does not initiali
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

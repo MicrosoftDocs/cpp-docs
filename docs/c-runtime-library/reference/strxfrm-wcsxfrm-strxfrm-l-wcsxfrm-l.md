@@ -104,11 +104,11 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[localeconv](localeconv.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [localeconv](localeconv.md)
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)
+- [strcoll Functions](../../c-runtime-library/strcoll-functions.md)
+- [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)
+- [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)

@@ -24,7 +24,6 @@ These classes provide most of the frame-window functionality you need for your a
 
 - [Changing the styles of a window created by MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
 
-## See Also
+## See also
 
-[Frame Windows](../mfc/frame-windows.md)
-
+- [Frame Windows](../mfc/frame-windows.md)

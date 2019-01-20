@@ -61,5 +61,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[tgamma, tgammaf, tgammal](tgamma-tgammaf-tgammal.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [tgamma, tgammaf, tgammal](tgamma-tgammaf-tgammal.md)

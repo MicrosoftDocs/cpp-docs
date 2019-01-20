@@ -494,7 +494,7 @@ Waits for all asynchronous propagations to complete. This propagator-specific sp
 void wait_for_outstanding_async_sends();
 ```
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[ISource Class](isource-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [ISource Class](isource-class.md)

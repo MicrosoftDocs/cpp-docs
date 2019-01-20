@@ -410,4 +410,4 @@ The "default value" of your object is the property that is retrieved or set when
 
 ## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

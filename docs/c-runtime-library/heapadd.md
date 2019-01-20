@@ -50,13 +50,13 @@ Beginning with Visual C++ version 4.0, the underlying heap structure was moved t
 
 For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
-[Memory Allocation](../c-runtime-library/memory-allocation.md)<br/>
-[free](../c-runtime-library/reference/free.md)<br/>
-[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
-[_heapmin](../c-runtime-library/reference/heapmin.md)<br/>
-[_heapset](../c-runtime-library/heapset.md)<br/>
-[_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
-[malloc](../c-runtime-library/reference/malloc.md)<br/>
-[realloc](../c-runtime-library/reference/realloc.md)
+- [Memory Allocation](../c-runtime-library/memory-allocation.md)
+- [free](../c-runtime-library/reference/free.md)
+- [_heapchk](../c-runtime-library/reference/heapchk.md)
+- [_heapmin](../c-runtime-library/reference/heapmin.md)
+- [_heapset](../c-runtime-library/heapset.md)
+- [_heapwalk](../c-runtime-library/reference/heapwalk.md)
+- [malloc](../c-runtime-library/reference/malloc.md)
+- [realloc](../c-runtime-library/reference/realloc.md)

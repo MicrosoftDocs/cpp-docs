@@ -348,9 +348,8 @@ Destroys the `unbounded_buffer` messaging block.
 ~unbounded_buffer();
 ```
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[overwrite_buffer Class](overwrite-buffer-class.md)<br/>
-[single_assignment Class](single-assignment-class.md)
-
+- [concurrency Namespace](concurrency-namespace.md)
+- [overwrite_buffer Class](overwrite-buffer-class.md)
+- [single_assignment Class](single-assignment-class.md)

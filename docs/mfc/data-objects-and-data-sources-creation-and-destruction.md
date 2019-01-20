@@ -64,8 +64,8 @@ If you have not handed your data source to OLE, then you are responsible for des
 
 For more information, see [Drag and Drop](../mfc/drag-and-drop-ole.md), [Clipboard](../mfc/clipboard.md), and [Manipulating Data Objects and Data Sources](../mfc/data-objects-and-data-sources-manipulation.md).
 
-## See Also
+## See also
 
-[Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
-[COleDataObject Class](../mfc/reference/coledataobject-class.md)<br/>
-[COleDataSource Class](../mfc/reference/coledatasource-class.md)
+- [Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md)
+- [COleDataObject Class](../mfc/reference/coledataobject-class.md)
+- [COleDataSource Class](../mfc/reference/coledatasource-class.md)

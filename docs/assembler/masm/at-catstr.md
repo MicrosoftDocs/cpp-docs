@@ -15,4 +15,4 @@ Macro function that concatenates one or more strings. Returns a string.
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

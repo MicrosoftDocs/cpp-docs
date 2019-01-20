@@ -150,7 +150,7 @@ If you need to release more than one access count of a semaphore, use the second
 
 [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CMultiLock Class](../../mfc/reference/cmultilock-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CMultiLock Class](../../mfc/reference/cmultilock-class.md)

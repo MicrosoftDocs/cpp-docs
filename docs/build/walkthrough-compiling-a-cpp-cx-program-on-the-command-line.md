@@ -55,8 +55,8 @@ To enable compilation for C++/CX, you must use the [/ZW](../build/reference/zw-w
     This is a C++/CX program.
     ```
 
-## See Also
+## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
-[Compiler Options](../build/reference/compiler-options.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Building C/C++ Programs](../build/building-c-cpp-programs.md)
+- [Compiler Options](../build/reference/compiler-options.md)

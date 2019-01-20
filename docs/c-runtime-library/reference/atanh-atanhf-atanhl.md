@@ -81,9 +81,9 @@ atanh( 0.655794 ) = 0.785398
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)
+- [asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)
+- [cosh, coshf, coshl](cosh-coshf-coshl.md)
+- [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)
+- [tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)

@@ -14,8 +14,7 @@ After formatting text for an output device, you can send the output to the devic
 
 You can use the [SetTargetDevice](../mfc/reference/cricheditctrl-class.md#settargetdevice) member function to specify the target device for which a rich edit control formats its text. This function is useful for WYSIWYG (what you see is what you get) formatting, in which an application positions text using the default printer's font metrics instead of the screen's.
 
-## See Also
+## See also
 
-[Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)
+- [Controls](../mfc/controls-mfc.md)

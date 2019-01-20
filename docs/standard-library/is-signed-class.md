@@ -68,5 +68,5 @@ is_signed<float> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_unsigned Class](../standard-library/is-unsigned-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_unsigned Class](../standard-library/is-unsigned-class.md)

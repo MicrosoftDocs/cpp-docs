@@ -791,16 +791,16 @@ Hello, World! (CStringW)
 Hello, World! (basic_string)
 ```
 
-## See Also
+## See also
 
-[ATL and MFC String Conversion Macros](../atl/reference/string-conversion-macros.md)<br/>
-[CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
-[How to: Convert Standard String to System::String](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
-[How to: Convert System::String to Standard String](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
-[How to: Convert System::String to wchar_t* or char\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
-[Programming with CComBSTR](../atl/programming-with-ccombstr-atl.md)<br/>
-[mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>
-[wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)<br/>
-[strcpy_s, wcscpy_s, _mbscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
-[strcat_s, wcscat_s, _mbscat_s](../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md)<br/>
-[pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)
+- [ATL and MFC String Conversion Macros](../atl/reference/string-conversion-macros.md)
+- [CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)
+- [How to: Convert Standard String to System::String](../dotnet/how-to-convert-standard-string-to-system-string.md)
+- [How to: Convert System::String to Standard String](../dotnet/how-to-convert-system-string-to-standard-string.md)
+- [How to: Convert System::String to wchar_t* or char\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)
+- [Programming with CComBSTR](../atl/programming-with-ccombstr-atl.md)
+- [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)
+- [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)
+- [strcpy_s, wcscpy_s, _mbscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)
+- [strcat_s, wcscat_s, _mbscat_s](../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md)
+- [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)

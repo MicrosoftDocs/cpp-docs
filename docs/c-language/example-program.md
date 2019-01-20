@@ -67,6 +67,6 @@ FILE1.C uses defining declarations to initialize the global variables `a` and `b
 
 The lifetime and visibility of identifiers are discussed in [Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md). For more information on functions, see [Functions](../c-language/functions-c.md).
 
-## See Also
+## See also
 
-[Source Files and Source Programs](../c-language/source-files-and-source-programs.md)
+- [Source Files and Source Programs](../c-language/source-files-and-source-programs.md)

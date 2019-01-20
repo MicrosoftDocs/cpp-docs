@@ -337,8 +337,8 @@ The payload of the message.
 
 Because a `choice` messaging block can take inputs with different payload types, you must specify the type of the payload at the point of retrieval. You can determine the type based on the result of the `index` method.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[join Class](join-class.md)<br/>
-[single_assignment Class](single-assignment-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [join Class](join-class.md)
+- [single_assignment Class](single-assignment-class.md)

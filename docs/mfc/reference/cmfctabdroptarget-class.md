@@ -231,9 +231,8 @@ Nonzero if registration was successful; otherwise 0.
 
 This method calls [COleDropTarget::Register](../../mfc/reference/coledroptarget-class.md#register) to register the control for drag-and-drop operations.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md)

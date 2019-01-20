@@ -177,6 +177,6 @@ void f(T&& t, Rest&&... r)
 
 ## See also
 
-[Selection Statements](../cpp/selection-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[switch Statement (C++)](../cpp/switch-statement-cpp.md)
+- [Selection Statements](../cpp/selection-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [switch Statement (C++)](../cpp/switch-statement-cpp.md)

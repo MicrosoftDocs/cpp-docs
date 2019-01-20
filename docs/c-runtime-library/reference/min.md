@@ -64,5 +64,5 @@ The smaller of 10 and 21 is 10
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[__max](max.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [__max](max.md)

@@ -28,6 +28,6 @@ challeng.exe: challeng.obj md4c.obj
   $(link) $(ldebug) $(conflags) -out:challeng.exe $** $(conlibs) lsapi32.lib
 ```
 
-## See Also
+## See also
 
-[Contents of a Makefile](../build/contents-of-a-makefile.md)
+- [Contents of a Makefile](../build/contents-of-a-makefile.md)

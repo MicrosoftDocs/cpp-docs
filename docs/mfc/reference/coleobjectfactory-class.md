@@ -360,8 +360,8 @@ virtual BOOL VerifyUserLicense();
 
 Nonzero if the design-time license is valid; otherwise 0.
 
-## See Also
+## See also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleTemplateServer Class](../../mfc/reference/coletemplateserver-class.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleTemplateServer Class](../../mfc/reference/coletemplateserver-class.md)

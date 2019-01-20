@@ -35,7 +35,6 @@ The last three topics discuss concepts related to developing a service:
 
 - [Debugging Tips](../atl/debugging-tips.md) for ATL services
 
-## See Also
+## See also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)
-
+- [Concepts](../atl/active-template-library-atl-concepts.md)

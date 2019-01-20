@@ -181,6 +181,6 @@ An existing `combinable` object to be copied into this one.
 
 A reference to this `combinable` object.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

@@ -50,6 +50,6 @@ Do not use these macros with classic COM unless you use the `#undef` directive t
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
-[Module Class](module-class.md)
+- [Module Class](module-class.md)

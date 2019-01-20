@@ -19,12 +19,11 @@ In some classes, you may also see the comment `// Advanced Overridables`. These 
 > [!NOTE]
 >  The conventions described in this article also work well, in general, for Automation (formerly known as OLE Automation) methods and properties. Automation methods are similar to MFC operations. Automation properties are similar to MFC attributes. Automation events (supported for ActiveX controls, formerly known as OLE controls) are similar to MFC overridable member functions.
 
-## See Also
+## See also
 
-[Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)<br/>
-[An Example of the Comments](../mfc/an-example-of-the-comments.md)<br/>
-[// Implementation Comment](../mfc/decrement-implementation-comment.md)<br/>
-[// Constructors Comment](../mfc/decrement-constructors-comment.md)<br/>
-[// Attributes Comment](../mfc/decrement-attributes-comment.md)<br/>
-[// Operations Comment](../mfc/decrement-operations-comment.md)
-
+- [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)
+- [An Example of the Comments](../mfc/an-example-of-the-comments.md)
+- [// Implementation Comment](../mfc/decrement-implementation-comment.md)
+- [// Constructors Comment](../mfc/decrement-constructors-comment.md)
+- [// Attributes Comment](../mfc/decrement-attributes-comment.md)
+- [// Operations Comment](../mfc/decrement-operations-comment.md)

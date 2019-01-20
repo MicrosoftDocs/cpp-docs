@@ -58,4 +58,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)

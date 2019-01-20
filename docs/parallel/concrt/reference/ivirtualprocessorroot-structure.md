@@ -139,6 +139,6 @@ virtual unsigned int GetId() const = 0;
 
 An integer identifier.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

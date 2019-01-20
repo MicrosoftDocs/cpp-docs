@@ -198,11 +198,11 @@ Specifies the object pointer that is the value of the new element.
 
 For more detailed remarks, see [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat).
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)<br/>
-[CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)<br/>
-[CMapWordToPtr Class](../../mfc/reference/cmapwordtoptr-class.md)<br/>
-[CMapStringToPtr Class](../../mfc/reference/cmapstringtoptr-class.md)
+- [MFC Sample COLLECT](../../visual-cpp-samples.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)
+- [CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)
+- [CMapWordToPtr Class](../../mfc/reference/cmapwordtoptr-class.md)
+- [CMapStringToPtr Class](../../mfc/reference/cmapstringtoptr-class.md)

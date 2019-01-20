@@ -32,12 +32,11 @@ The activation context is created in [AfxWinInit](../mfc/reference/application-i
 
 The [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) macro activates and deactivates the activation context. `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, to allow MFC code to execute in the proper activation context selected by the User DLL.
 
-## See Also
+## See also
 
-[Activation Contexts](/windows/desktop/SbsCs/activation-contexts)<br/>
-[Application Manifests](/windows/desktop/SbsCs/application-manifests)<br/>
-[Assembly Manifests](/windows/desktop/SbsCs/assembly-manifests)<br/>
-[AfxWinInit](../mfc/reference/application-information-and-management.md#afxwininit)<br/>
-[AfxGetStaticModuleState](reference/extension-dll-macros.md#afxgetstaticmodulestate)<br/>
-[AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state)
-
+- [Activation Contexts](/windows/desktop/SbsCs/activation-contexts)
+- [Application Manifests](/windows/desktop/SbsCs/application-manifests)
+- [Assembly Manifests](/windows/desktop/SbsCs/assembly-manifests)
+- [AfxWinInit](../mfc/reference/application-information-and-management.md#afxwininit)
+- [AfxGetStaticModuleState](reference/extension-dll-macros.md#afxgetstaticmodulestate)
+- [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state)

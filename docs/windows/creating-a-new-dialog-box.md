@@ -47,8 +47,8 @@ For information about how to add resources to managed projects, see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[How to: Create a Resource](../windows/how-to-create-a-resource.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Dialog Editor](../windows/dialog-editor.md)
+- [How to: Create a Resource](../windows/how-to-create-a-resource.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Dialog Editor](../windows/dialog-editor.md)

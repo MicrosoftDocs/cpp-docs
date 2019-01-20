@@ -44,6 +44,6 @@ For more information, see the AMD documentation.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

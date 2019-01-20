@@ -35,8 +35,8 @@ IDD_AboutBox (Finnish - XX33)
 
 Win32
 
-## See Also
+## See also
 
-[How to: Copy Resources](../windows/how-to-copy-resources.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)
+- [How to: Copy Resources](../windows/how-to-copy-resources.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Editors](../windows/resource-editors.md)

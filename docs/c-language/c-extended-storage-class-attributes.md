@@ -35,6 +35,6 @@ The thread, naked, dllimport, and dllexport storage-class attributes are a prope
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+- [Declarations and Types](../c-language/declarations-and-types.md)

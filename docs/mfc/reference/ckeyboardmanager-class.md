@@ -343,11 +343,10 @@ Nonzero if the method is successful; otherwise 0.
 
 Use this function to replace the existing shortcut table with new shortcut keys for several frame window objects. The function receives a document template as a parameter to obtain access to all frame window objects connected to the given document template.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
-[CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)<br/>
-[Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)
+- [CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)
+- [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)

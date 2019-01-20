@@ -102,6 +102,6 @@ Next character in stream = 'a'
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
-[putc, putwc](putc-putwc.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [getc, getwc](getc-getwc.md)
+- [putc, putwc](putc-putwc.md)

@@ -116,5 +116,5 @@ Bessel functions for x = 2.387000:
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_matherr](matherr.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [_matherr](matherr.md)

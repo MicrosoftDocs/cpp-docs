@@ -94,7 +94,7 @@ The size is specified in HIMETRIC units.
 
 See [IQuickActivate::SetContentExtent](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-setcontentextent) in the Windows SDK.
 
-## See Also
+## See also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComControl Class](../../atl/reference/ccomcontrol-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

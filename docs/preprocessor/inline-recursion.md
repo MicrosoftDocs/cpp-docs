@@ -20,8 +20,8 @@ Use this pragma to control functions marked as [inline](../cpp/inline-functions-
 
 The **inline_recursion** pragma controls how recursive functions are expanded. If **inline_recursion** is off, and if an inline function calls itself (either directly or indirectly), the function is expanded only one time. If **inline_recursion** is on, the function is expanded multiple times until it reaches the value set with the [inline_depth](../preprocessor/inline-depth.md) pragma, the default value for recursive functions that is defined by the `inline_depth` pragma, or a capacity limit.
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-[inline_depth](../preprocessor/inline-depth.md)<br/>
-[/Ob (Inline Function Expansion)](../build/reference/ob-inline-function-expansion.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [inline_depth](../preprocessor/inline-depth.md)
+- [/Ob (Inline Function Expansion)](../build/reference/ob-inline-function-expansion.md)

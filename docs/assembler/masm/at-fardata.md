@@ -15,4 +15,4 @@ The name of the segment defined by the [.FARDATA](../../assembler/masm/dot-farda
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

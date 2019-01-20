@@ -32,7 +32,7 @@ For information on adding resources to managed projects, please see [Resources i
 
 MFC or ATL
 
-## See Also
+## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+- [Resource Editors](../windows/resource-editors.md)
+- [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

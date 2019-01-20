@@ -393,8 +393,8 @@ void SetDropDownHeight(int nHeight);
 
 The default height is 150 pixels.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonEdit Class](../../mfc/reference/cmfcribbonedit-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCRibbonEdit Class](../../mfc/reference/cmfcribbonedit-class.md)

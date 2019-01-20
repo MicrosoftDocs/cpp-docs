@@ -70,6 +70,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[frexp](frexp.md)<br/>
-[logb, logbf, logbl, _logb, _logbf](logb-logbf-logbl-logb-logbf.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [frexp](frexp.md)
+- [logb, logbf, logbl, _logb, _logbf](logb-logbf-logbl-logb-logbf.md)

@@ -57,6 +57,6 @@ __declspec( naked ) int func();  // Error--naked attribute not permitted on func
 
 ## See also
 
-[__declspec](../cpp/declspec.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Naked Function Calls](../cpp/naked-function-calls.md)
+- [__declspec](../cpp/declspec.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [Naked Function Calls](../cpp/naked-function-calls.md)

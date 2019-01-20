@@ -48,7 +48,6 @@ For more information, see:
 
 - [Optimizing Control Drawing](../mfc/optimizing-control-drawing.md)
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

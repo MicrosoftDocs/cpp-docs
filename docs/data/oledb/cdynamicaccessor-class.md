@@ -579,10 +579,10 @@ If you want to set string data, use the nontemplated versions of `GetValue`. The
 
 For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CAccessor Class](../../data/oledb/caccessor-class.md)<br/>
-[CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
-[CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [CAccessor Class](../../data/oledb/caccessor-class.md)
+- [CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)
+- [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)

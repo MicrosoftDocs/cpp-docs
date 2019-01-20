@@ -72,6 +72,6 @@ Information retrieved by the [CDaoDatabase::GetRelationInfo](../../mfc/reference
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
-[CDaoRelationFieldInfo Structure](../../mfc/reference/cdaorelationfieldinfo-structure.md)
+- [CDaoRelationFieldInfo Structure](../../mfc/reference/cdaorelationfieldinfo-structure.md)

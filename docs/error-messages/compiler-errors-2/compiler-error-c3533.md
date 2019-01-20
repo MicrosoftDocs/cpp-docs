@@ -35,7 +35,7 @@ The following example yields C3533 in C++14 mode because it declares a template 
 template<auto T> class C {}; // C3533
 ```
 
-## See Also
+## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)<br/>
-[/Zc:auto (Deduce Variable Type)](../../build/reference/zc-auto-deduce-variable-type.md)
+- [auto Keyword](../../cpp/auto-keyword.md)
+- [/Zc:auto (Deduce Variable Type)](../../build/reference/zc-auto-deduce-variable-type.md)

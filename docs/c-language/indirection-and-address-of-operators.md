@@ -66,5 +66,5 @@ Once the function `roundup` is declared, two pointers to `roundup` are declared 
 
 ## See also
 
-[Indirection Operator: &#42;](../cpp/indirection-operator-star.md)<br/>
-[Address-of Operator: &](../cpp/address-of-operator-amp.md)
+- [Indirection Operator: &#42;](../cpp/indirection-operator-star.md)
+- [Address-of Operator: &](../cpp/address-of-operator-amp.md)

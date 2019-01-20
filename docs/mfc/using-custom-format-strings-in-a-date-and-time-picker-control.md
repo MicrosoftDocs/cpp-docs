@@ -22,8 +22,7 @@ The following example code (where *m_dtPicker* is the `CDateTimeCtrl` object) de
 
 In addition to custom format strings, date and time picker controls also support [callback fields](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).
 
-## See Also
+## See also
 
-[Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)
+- [Controls](../mfc/controls-mfc.md)

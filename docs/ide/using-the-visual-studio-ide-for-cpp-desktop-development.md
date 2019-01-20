@@ -48,4 +48,4 @@ Once you've completed these walkthroughs, you're ready to start building your ow
 
 ## See also
 
-[Get started developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio)
+- [Get started developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio)

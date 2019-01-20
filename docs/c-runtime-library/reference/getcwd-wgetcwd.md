@@ -99,7 +99,7 @@ C:\Code
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](chdir-wchdir.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)
+- [_chdir, _wchdir](chdir-wchdir.md)
+- [_mkdir, _wmkdir](mkdir-wmkdir.md)
+- [_rmdir, _wrmdir](rmdir-wrmdir.md)

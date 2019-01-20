@@ -40,12 +40,11 @@ For more details on servers, see:
 
 - [Servers: User-Interface Issues](../mfc/servers-user-interface-issues.md)
 
-## See Also
+## See also
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[Containers](../mfc/containers.md)<br/>
-[Containers: Advanced Features](../mfc/containers-advanced-features.md)<br/>
-[Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Registration](../mfc/registration.md)<br/>
-[Automation Servers](../mfc/automation-servers.md)
-
+- [OLE](../mfc/ole-in-mfc.md)
+- [Containers](../mfc/containers.md)
+- [Containers: Advanced Features](../mfc/containers-advanced-features.md)
+- [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)
+- [Registration](../mfc/registration.md)
+- [Automation Servers](../mfc/automation-servers.md)

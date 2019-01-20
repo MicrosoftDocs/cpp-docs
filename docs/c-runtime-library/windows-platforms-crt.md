@@ -14,4 +14,4 @@ The C run-time libraries for Visual Studio support current versions of Windows a
 
 ## See also
 
-[Compatibility](../c-runtime-library/compatibility.md)
+- [Compatibility](../c-runtime-library/compatibility.md)

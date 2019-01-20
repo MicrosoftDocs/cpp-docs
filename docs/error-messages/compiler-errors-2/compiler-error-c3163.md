@@ -30,6 +30,6 @@ using namespace System;
 // [CLSCompliant(true)] void f() {}
 ```
 
-## See Also
+## See also
 
-[SAL Annotations](../../c-runtime-library/sal-annotations.md)
+- [SAL Annotations](../../c-runtime-library/sal-annotations.md)

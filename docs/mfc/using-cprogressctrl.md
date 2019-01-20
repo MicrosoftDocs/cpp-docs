@@ -21,7 +21,6 @@ When you initially create the progress control, you specify its size and positio
 
 - [Manipulating the Progress Control](../mfc/manipulating-the-progress-control.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

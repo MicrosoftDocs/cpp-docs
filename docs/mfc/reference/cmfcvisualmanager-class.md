@@ -4746,10 +4746,9 @@ void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 
 By default, this feature is disabled.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCVisualManager::GetInstance](#getinstance)<br/>
-[Visualization Manager](../../mfc/visualization-manager.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCVisualManager::GetInstance](#getinstance)
+- [Visualization Manager](../../mfc/visualization-manager.md)

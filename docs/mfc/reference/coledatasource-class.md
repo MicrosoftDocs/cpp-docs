@@ -448,10 +448,10 @@ Puts the data contained in the `COleDataSource` object on the Clipboard after ca
 void SetClipboard();
 ```
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleDataObject Class](../../mfc/reference/coledataobject-class.md)
+- [MFC Sample HIERSVR](../../visual-cpp-samples.md)
+- [MFC Sample OCLIENT](../../visual-cpp-samples.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleDataObject Class](../../mfc/reference/coledataobject-class.md)

@@ -184,7 +184,7 @@ Exchanges the content of two `shared_lock` objects. Effectively the same as `x.s
 
 **Namespace:** std
 
-## See Also
+## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[&lt;mutex>](../standard-library/mutex.md)
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [&lt;mutex>](../standard-library/mutex.md)

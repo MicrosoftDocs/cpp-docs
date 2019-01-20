@@ -28,4 +28,4 @@ See [set_new_handler](../standard-library/new-functions.md#set_new_handler) for 
 
 ## See also
 
-[\<new>](../standard-library/new.md)<br/>
+- [\<new>](../standard-library/new.md)

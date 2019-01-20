@@ -16,9 +16,9 @@ Other uses for recordsets include:
 
 - Containing the results of a predefined query.
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Recordset: Creating and Closing Recordsets (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>
-[Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [Recordset: Creating and Closing Recordsets (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)
+- [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)
+- [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

@@ -361,4 +361,4 @@ AfxOleUnlockControl(_T("MSCAL.Calendar"));
 
 ## See also
 
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
+- [Macros and Globals](mfc-macros-and-globals.md)

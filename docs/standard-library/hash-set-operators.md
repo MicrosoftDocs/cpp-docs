@@ -279,4 +279,4 @@ The hash_multisets s1 and s2 are equal.
 
 ## See also
 
-[<hash_set>](../standard-library/hash-set.md)<br/>
+- [<hash_set>](../standard-library/hash-set.md)

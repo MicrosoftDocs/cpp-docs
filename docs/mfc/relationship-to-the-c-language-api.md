@@ -14,6 +14,6 @@ Because you sometimes need to make native Windows function calls, you should hav
 > [!NOTE]
 >  For an overview of how the MFC Library framework operates, see [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md).
 
-## See Also
+## See also
 
-[General Class Design Philosophy](../mfc/general-class-design-philosophy.md)
+- [General Class Design Philosophy](../mfc/general-class-design-philosophy.md)

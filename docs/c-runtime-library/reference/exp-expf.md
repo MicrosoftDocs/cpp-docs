@@ -85,6 +85,6 @@ exp( 2.302585 ) = 10.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
-[_CIexp](../../c-runtime-library/ciexp.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [log, logf, log10, log10f](log-logf-log10-log10f.md)
+- [_CIexp](../../c-runtime-library/ciexp.md)

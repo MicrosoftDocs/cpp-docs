@@ -134,12 +134,12 @@ Call [CComHeap::Free](#free) to free the memory allocated by this method.
 
 Implemented using [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc).
 
-## See Also
+## See also
 
-[DynamicConsumer Sample](../../visual-cpp-samples.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[CWin32Heap Class](../../atl/reference/cwin32heap-class.md)<br/>
-[CLocalHeap Class](../../atl/reference/clocalheap-class.md)<br/>
-[CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)<br/>
-[CCRTHeap Class](../../atl/reference/ccrtheap-class.md)<br/>
-[IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)
+- [DynamicConsumer Sample](../../visual-cpp-samples.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [CWin32Heap Class](../../atl/reference/cwin32heap-class.md)
+- [CLocalHeap Class](../../atl/reference/clocalheap-class.md)
+- [CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)
+- [CCRTHeap Class](../../atl/reference/ccrtheap-class.md)
+- [IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)

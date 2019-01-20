@@ -378,9 +378,9 @@ A single parameter of the type specified by *vtProp*.
 
 [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/cpp/coledispatchdriver-class_7.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
-[MFC Sample ACDUAL](../../visual-cpp-samples.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [MFC Sample CALCDRIV](../../visual-cpp-samples.md)
+- [MFC Sample ACDUAL](../../visual-cpp-samples.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)

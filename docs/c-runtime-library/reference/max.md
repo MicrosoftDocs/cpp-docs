@@ -45,5 +45,5 @@ For more information, see the example for [__min](min.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[__min](min.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [__min](min.md)

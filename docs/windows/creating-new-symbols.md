@@ -31,7 +31,7 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)<br/>
-[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)
+- [Viewing Resource Symbols](../windows/viewing-resource-symbols.md)
+- [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

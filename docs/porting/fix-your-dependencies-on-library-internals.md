@@ -68,6 +68,6 @@ inline size_t fnv1a_hash_bytes(const unsigned char * first, size_t count) {
 
 ## See also
 
-[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
-[Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md)
+- [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
+- [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)
+- [Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md)

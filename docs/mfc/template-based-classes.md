@@ -87,7 +87,6 @@ The second example is a map based on `CMapStringToOb` — it uses string keys ma
 
 For more information, see [How to Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md).
 
-## See Also
+## See also
 
-[Collections](../mfc/collections.md)
-
+- [Collections](../mfc/collections.md)

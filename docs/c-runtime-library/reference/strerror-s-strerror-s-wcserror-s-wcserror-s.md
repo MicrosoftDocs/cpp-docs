@@ -131,7 +131,7 @@ See the example for [perror](perror-wperror.md).
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)
+- [clearerr](clearerr.md)
+- [ferror](ferror.md)
+- [perror, _wperror](perror-wperror.md)

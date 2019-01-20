@@ -40,6 +40,6 @@ struct student {
 
 When `student` appears after the **struct** keyword, the compiler recognizes it as a structure tag. When `student` appears after a member-selection operator (**->** or **.**), the name refers to the structure member. In other contexts, `student` refers to the structure variable. However, overloading the tag name space is not recommended since it obscures meaning.
 
-## See Also
+## See also
 
-[Program Structure](../c-language/program-structure.md)
+- [Program Structure](../c-language/program-structure.md)

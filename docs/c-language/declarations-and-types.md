@@ -30,6 +30,6 @@ This section describes the declaration and initialization of variables, function
 
 - [Extended storage-class attributes](../c-language/c-extended-storage-class-attributes.md)
 
-## See Also
+## See also
 
-[C Language Reference](../c-language/c-language-reference.md)
+- [C Language Reference](../c-language/c-language-reference.md)

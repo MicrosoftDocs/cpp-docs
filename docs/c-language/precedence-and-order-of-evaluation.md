@@ -71,6 +71,6 @@ In this expression, the equality operator (**==**) has the highest precedence, s
 
 `( p == 0 ) ? ( p += 1 ) : ( p += 2 )`
 
-## See Also
+## See also
 
-[C Operators](../c-language/c-operators.md)
+- [C Operators](../c-language/c-operators.md)

@@ -31,7 +31,6 @@ When an exception is thrown, execution of the current function is stopped and ju
 > [!NOTE]
 >  MFC's default handling of exceptions applies only to pointers to `CException` objects (and objects of `CException`-derived classes). The example above bypasses MFC's exception mechanism.
 
-## See Also
+## See also
 
-[Exception Handling](../mfc/exception-handling-in-mfc.md)
-
+- [Exception Handling](../mfc/exception-handling-in-mfc.md)

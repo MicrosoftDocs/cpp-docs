@@ -48,7 +48,6 @@ For more information about the `CDocument` member functions that enable MAPI, se
 
 - [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
 
-## See Also
+## See also
 
-[MAPI](../mfc/mapi.md)
-
+- [MAPI](../mfc/mapi.md)

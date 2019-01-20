@@ -41,9 +41,9 @@ Retrieving the exit code of [CWinThread](../mfc/reference/cwinthread-class.md) o
 
 Either method allows you to determine why a `CWinThread` object terminated.
 
-## See Also
+## See also
 
-[Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)<br/>
-[_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)<br/>
-[_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>
-[ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread)
+- [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)
+- [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)
+- [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)
+- [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread)

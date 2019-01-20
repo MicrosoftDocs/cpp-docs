@@ -19,4 +19,4 @@ SECTIONREL is available only with COFF object emission.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

@@ -141,6 +141,6 @@ Now I'm done. Do what you will with them
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [_open, _wopen](open-wopen.md)

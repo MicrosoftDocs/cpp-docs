@@ -58,4 +58,4 @@ The right `scoped_allocator_adaptor` object.
 
 ## See also
 
-[<scoped_allocator>](../standard-library/scoped-allocator.md)<br/>
+- [<scoped_allocator>](../standard-library/scoped-allocator.md)

@@ -28,7 +28,7 @@ By default, high-level error-handling properties and methods are exposed by memb
 
 **END C++ Specific**
 
-## See Also
+## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)
+- [#import Directive](../preprocessor/hash-import-directive-cpp.md)

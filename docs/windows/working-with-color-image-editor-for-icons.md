@@ -42,6 +42,6 @@ For information on adding resources to managed projects, please see [Resources i
 
 None
 
-## See Also
+## See also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)
+- [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)

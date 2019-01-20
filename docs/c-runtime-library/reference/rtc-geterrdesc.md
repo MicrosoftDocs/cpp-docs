@@ -43,5 +43,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[_RTC_NumErrors](rtc-numerrors.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>
+- [_RTC_NumErrors](rtc-numerrors.md)
+- [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)

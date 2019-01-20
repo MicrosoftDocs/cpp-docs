@@ -28,6 +28,6 @@ The function is the fundamental modular unit in C. A function is usually designe
 
 - [Parameters](../c-language/parameters.md)
 
-## See Also
+## See also
 
-[C Language Reference](../c-language/c-language-reference.md)
+- [C Language Reference](../c-language/c-language-reference.md)

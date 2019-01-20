@@ -258,4 +258,4 @@ This is called an unnamed or anonymous namespace and it is useful when you want 
 
 ## See also
 
-[Declarations and Definitions](declarations-and-definitions-cpp.md)
+- [Declarations and Definitions](declarations-and-definitions-cpp.md)

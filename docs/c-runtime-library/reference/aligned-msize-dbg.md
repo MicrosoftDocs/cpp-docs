@@ -61,4 +61,4 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)

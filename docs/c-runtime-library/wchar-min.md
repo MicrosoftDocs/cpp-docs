@@ -15,6 +15,6 @@ Minimum value for type `wchar_t`.
 #include <wchar.h>
 ```
 
-## See Also
+## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

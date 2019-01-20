@@ -44,7 +44,6 @@ An exception resulting from a failure to load a Windows resource.
 [CUserException](../mfc/reference/cuserexception-class.md)<br/>
 An exception used to stop a user-initiated operation. Typically, the user has been notified of the problem before this exception is thrown.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

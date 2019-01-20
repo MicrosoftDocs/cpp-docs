@@ -180,12 +180,12 @@ int main( int ac, char* av[] )
 
 **Header:** process.h
 
-## See Also
+## See also
 
-[Process and Environment Control](../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](../c-runtime-library/reference/abort.md)<br/>
-[atexit](../c-runtime-library/reference/atexit.md)<br/>
-[exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)<br/>
-[_spawn, _wspawn Functions](../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](../c-runtime-library/reference/system-wsystem.md)
+- [Process and Environment Control](../c-runtime-library/process-and-environment-control.md)
+- [abort](../c-runtime-library/reference/abort.md)
+- [atexit](../c-runtime-library/reference/atexit.md)
+- [exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)
+- [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)
+- [_spawn, _wspawn Functions](../c-runtime-library/spawn-wspawn-functions.md)
+- [system, _wsystem](../c-runtime-library/reference/system-wsystem.md)

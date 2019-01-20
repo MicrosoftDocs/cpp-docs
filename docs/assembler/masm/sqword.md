@@ -15,6 +15,6 @@ Allocates and optionally initializes 8 signed bytes of storage for each `initial
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[QWORD](../../assembler/masm/qword.md)<br/>
-[DQ](../../assembler/masm/dq.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)
+- [QWORD](../../assembler/masm/qword.md)
+- [DQ](../../assembler/masm/dq.md)

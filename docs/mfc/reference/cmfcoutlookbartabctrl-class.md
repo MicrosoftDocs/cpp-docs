@@ -458,10 +458,10 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md)<br/>
-[CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)<br/>
-[CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md)
+- [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)
+- [CMFCOutlookBarPane Class](../../mfc/reference/cmfcoutlookbarpane-class.md)

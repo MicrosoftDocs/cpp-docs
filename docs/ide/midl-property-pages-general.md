@@ -33,6 +33,6 @@ For information on how to access the **General** property page in the **MIDL** f
 
 For information on how to programmatically access MIDL options for C++ projects, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool> object.
 
-## See Also
+## See also
 
-[MIDL Property Pages](../ide/midl-property-pages.md)
+- [MIDL Property Pages](../ide/midl-property-pages.md)

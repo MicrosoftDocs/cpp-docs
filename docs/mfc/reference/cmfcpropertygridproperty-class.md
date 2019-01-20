@@ -1542,8 +1542,8 @@ void Show(
 *bAdjustLayout*<br/>
 [in] TRUE to recalculate how to draw the label and value of a property and then draw the property; FALSE to use existing calculations to draw the property. The default value is TRUE.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md)

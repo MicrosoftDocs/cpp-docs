@@ -22,8 +22,7 @@ In addition, the MFC WinInet classes provide the following advantages:
 
 - Automatic cleanup of open handles and connections
 
-## See Also
+## See also
 
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[How WinInet Makes It Easier to Create Internet Client Applications](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)
-
+- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+- [How WinInet Makes It Easier to Create Internet Client Applications](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)

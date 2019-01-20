@@ -102,7 +102,6 @@ For a complete description of tags, attributes, and extensions, see the Hypertex
 
 [http://www.w3.org/pub/WWW/MarkUp/](http://www.w3.org/pub/www/markup/)
 
-## See Also
+## See also
 
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-
+- [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)

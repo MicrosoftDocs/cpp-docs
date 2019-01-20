@@ -252,10 +252,10 @@ For related information, see [Generic-Text Mappings in TCHAR.H](../text/generic-
 |`_vtprintf`|`vprintf`|`vprintf`|`vwprintf`|
 |`_vtprintf_s`|`vprintf_s`|`vprintf_s`|`vwprintf_s`|
 
-## See Also
+## See also
 
-[Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
-[Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>
-[Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[A Sample Generic-Text Program](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md)
+- [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)
+- [Data Type Mappings](../c-runtime-library/data-type-mappings.md)
+- [Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)
+- [A Sample Generic-Text Program](../c-runtime-library/a-sample-generic-text-program.md)
+- [Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md)

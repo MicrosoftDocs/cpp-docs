@@ -58,8 +58,8 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fesetexceptflag](fesetexceptflag2.md)<br/>
-[feholdexcept](feholdexcept2.md)<br/>
-[fetestexcept](fetestexcept1.md)<br/>
-[feupdateenv](feupdateenv.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [fesetexceptflag](fesetexceptflag2.md)
+- [feholdexcept](feholdexcept2.md)
+- [fetestexcept](fetestexcept1.md)
+- [feupdateenv](feupdateenv.md)

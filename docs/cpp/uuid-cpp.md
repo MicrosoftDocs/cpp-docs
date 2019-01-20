@@ -34,5 +34,5 @@ The keyword [__uuidof](../cpp/uuidof-operator.md) can be applied to retrieve the
 
 ## See also
 
-[__declspec](../cpp/declspec.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [__declspec](../cpp/declspec.md)
+- [Keywords](../cpp/keywords-cpp.md)

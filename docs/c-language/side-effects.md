@@ -23,6 +23,6 @@ In this example, the value of `x` that is modified is unpredictable. The value o
 
 Since C does not define the order of evaluation of side effects, both evaluation methods discussed above are correct and either may be implemented. To make sure that your code is portable and clear, avoid statements that depend on a particular order of evaluation for side effects.
 
-## See Also
+## See also
 
-[Expression Evaluation](../c-language/expression-evaluation-c.md)
+- [Expression Evaluation](../c-language/expression-evaluation-c.md)

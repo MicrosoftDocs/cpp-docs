@@ -239,6 +239,6 @@ exception_ptr 1: Caught a  myException exception.
 
 ## See also
 
-[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)<br/>
-[/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md)<br/>
-[/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)
+- [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)
+- [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md)
+- [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md)

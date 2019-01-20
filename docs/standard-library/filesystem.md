@@ -114,4 +114,4 @@ For more information and code examples, see [File System Navigation (C++)](../st
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

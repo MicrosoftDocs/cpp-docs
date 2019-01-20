@@ -11,6 +11,6 @@ The core of the Microsoft Foundation Class (MFC) Library is an encapsulation of 
 
 But the MFC Library also supplies a layer of additional application functionality built on the C++ encapsulation of the Windows API. This layer is a working application framework for Windows that provides most of the common user interface expected of programs for Windows, including toolbars, status bars, printing, print preview, database support, and ActiveX support. [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md) explains the framework in detail.
 
-## See Also
+## See also
 
-[General Class Design Philosophy](../mfc/general-class-design-philosophy.md)
+- [General Class Design Philosophy](../mfc/general-class-design-philosophy.md)

@@ -822,4 +822,4 @@ The template function returns `next` decremented `off` times.
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
+- [\<iterator>](../standard-library/iterator.md)

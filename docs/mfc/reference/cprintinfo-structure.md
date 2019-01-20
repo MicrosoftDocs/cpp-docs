@@ -307,14 +307,13 @@ Number of the first page of the document.
 
 Page numbers normally start at 1. This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member.
 
-## See Also
+## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)<br/>
-[CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting)<br/>
-[CView::OnEndPrintPreview](../../mfc/reference/cview-class.md#onendprintpreview)<br/>
-[CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)<br/>
-[CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)<br/>
-[CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
-
+- [MFC Sample DIBLOOK](../../visual-cpp-samples.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)
+- [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting)
+- [CView::OnEndPrintPreview](../../mfc/reference/cview-class.md#onendprintpreview)
+- [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)
+- [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)
+- [CView::OnPrint](../../mfc/reference/cview-class.md#onprint)

@@ -102,9 +102,9 @@ Keep in mind these facts about range-based **for**:
 
 ## See also
 
-[auto](../cpp/auto-cpp.md)<br/>
-[Iteration Statements](../cpp/iteration-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[while Statement (C++)](../cpp/while-statement-cpp.md)<br/>
-[do-while Statement (C++)](../cpp/do-while-statement-cpp.md)<br/>
-[for Statement (C++)](../cpp/for-statement-cpp.md)
+- [auto](../cpp/auto-cpp.md)
+- [Iteration Statements](../cpp/iteration-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [while Statement (C++)](../cpp/while-statement-cpp.md)
+- [do-while Statement (C++)](../cpp/do-while-statement-cpp.md)
+- [for Statement (C++)](../cpp/for-statement-cpp.md)

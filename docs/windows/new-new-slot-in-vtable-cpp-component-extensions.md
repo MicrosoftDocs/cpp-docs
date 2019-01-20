@@ -96,8 +96,8 @@ D::g() called
 E::f() called
 ```
 
-## See Also
+## See also
 
-[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)<br/>
+- [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)
 
-[Override Specifiers](../windows/override-specifiers-cpp-component-extensions.md)
+- [Override Specifiers](../windows/override-specifiers-cpp-component-extensions.md)

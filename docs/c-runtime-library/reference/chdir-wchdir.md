@@ -120,7 +120,7 @@ Directory of c:\windows
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)
+- [_mkdir, _wmkdir](mkdir-wmkdir.md)
+- [_rmdir, _wrmdir](rmdir-wrmdir.md)
+- [system, _wsystem](system-wsystem.md)

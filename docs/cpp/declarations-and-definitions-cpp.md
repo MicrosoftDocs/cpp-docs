@@ -82,5 +82,5 @@ A definition is a unique specification of an object or variable, function, class
 
 ## See also
 
-[Basic Concepts](../cpp/basic-concepts-cpp.md)<br/>
-[Point of Declaration](../cpp/point-of-declaration-in-cpp.md)
+- [Basic Concepts](../cpp/basic-concepts-cpp.md)
+- [Point of Declaration](../cpp/point-of-declaration-in-cpp.md)

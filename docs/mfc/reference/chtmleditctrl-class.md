@@ -119,7 +119,6 @@ Retrieves the URL to a default document to load in the contained WebBrowser cont
 virtual LPCTSTR GetStartDocument();
 ```
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

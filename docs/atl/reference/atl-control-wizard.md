@@ -85,9 +85,8 @@ Provides information about the COM functionality for the object.
 
    Sets the name that containers can use instead of the CLSID of the object. This field is not automatically populated. If you do not manually populate this field, the control may not be available to other tools. For example, ActiveX controls that are generated without a `ProgID` are not available in the **Insert ActiveX Control** dialog box. For more information about the dialog box, see [Insert ActiveX Control Dialog Box](../../windows/insert-activex-control-dialog-box.md).
 
-## See Also
+## See also
 
-[ATL Control](../../atl/reference/adding-an-atl-control.md)<br/>
-[Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)<br/>
-[Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)
-
+- [ATL Control](../../atl/reference/adding-an-atl-control.md)
+- [Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)
+- [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)

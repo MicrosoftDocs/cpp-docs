@@ -48,4 +48,4 @@ This template class describes an engine adaptor that produces values by discardi
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+- [\<random>](../standard-library/random.md)

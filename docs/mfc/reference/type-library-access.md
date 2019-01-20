@@ -69,6 +69,6 @@ This macro must appear in the implementation file for any control class that use
 
 **Header:** afxdisp.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

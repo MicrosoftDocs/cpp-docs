@@ -947,4 +947,4 @@ The type is a synonym for the template parameter _ `Ty`.
 
 ## See also
 
-[<forward_list>](../standard-library/forward-list.md)<br/>
+- [<forward_list>](../standard-library/forward-list.md)

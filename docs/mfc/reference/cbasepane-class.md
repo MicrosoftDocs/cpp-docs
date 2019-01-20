@@ -1846,9 +1846,9 @@ Call this method to manipulate the pane state or exclude the pane from the docki
 
 If you want to continue to use this pane, call either [CBasePane::DockPane](#dockpane) or [CBasePane::FloatPane](#floatpane) before calling this method.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CPane](../../mfc/reference/cbasepane-class.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CPane](../../mfc/reference/cbasepane-class.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)

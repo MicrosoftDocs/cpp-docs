@@ -80,4 +80,4 @@ As an experiment, modify the vector `others` to be a `vector<shared_ptr<Controll
 
 ## See also
 
-[Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)
+- [Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)

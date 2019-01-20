@@ -24,7 +24,6 @@ To implement the effect of the Apply button, the property sheet must tell its ow
 
 For an example of this process, see the MFC General sample [PROPDLG](../visual-cpp-samples.md).
 
-## See Also
+## See also
 
-[Property Sheets](../mfc/property-sheets-mfc.md)
-
+- [Property Sheets](../mfc/property-sheets-mfc.md)

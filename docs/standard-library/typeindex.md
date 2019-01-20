@@ -22,6 +22,6 @@ The `type_index` class wraps a pointer to a `type_info` object to assist in inde
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

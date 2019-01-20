@@ -495,6 +495,6 @@ int main() {
 14
 ```
 
-## See Also
+## See also
 
-[delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md)
+- [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md)

@@ -253,5 +253,5 @@ Sample Output: A
 
 ## See also
 
-[noinline](../cpp/noinline.md)<br/>
-[auto_inline](../preprocessor/auto-inline.md)
+- [noinline](../cpp/noinline.md)
+- [auto_inline](../preprocessor/auto-inline.md)

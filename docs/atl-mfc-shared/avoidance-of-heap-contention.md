@@ -24,7 +24,6 @@ Multiple threads could be running using this same thread procedure but since eac
 
 For a more complicated thread procedure, it may be convenient to store a pointer to the thread's string manager in a thread local storage (TLS) slot. This allows other functions called by the thread procedure to access the thread's string manager.
 
-## See Also
+## See also
 
-[Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)
-
+- [Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)

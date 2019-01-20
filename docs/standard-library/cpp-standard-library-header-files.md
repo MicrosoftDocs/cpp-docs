@@ -31,5 +31,5 @@ Header files for the C++ Standard Library and extensions, by category.
 
 ## See also
 
-[Using C++ Library Headers](../standard-library/using-cpp-library-headers.md)<br/>
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
+- [Using C++ Library Headers](../standard-library/using-cpp-library-headers.md)
+- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

@@ -41,9 +41,9 @@ Select the **Close** button.
 
 None
 
-## See Also
+## See also
 
-[Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)<br/>
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
-[Custom Color Selector Dialog Box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)<br/>
-[Image Editor for Icons](../windows/image-editor-for-icons.md)
+- [Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)
+- [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)
+- [Custom Color Selector Dialog Box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)
+- [Image Editor for Icons](../windows/image-editor-for-icons.md)

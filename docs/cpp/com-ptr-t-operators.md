@@ -10,4 +10,4 @@ For information about the `_com_ptr_t` operators, see [_com_ptr_t Class](../cpp/
 
 ## See also
 
-[_com_ptr_t Class](../cpp/com-ptr-t-class.md)
+- [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

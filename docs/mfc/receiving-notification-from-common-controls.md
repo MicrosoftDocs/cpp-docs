@@ -28,8 +28,7 @@ Add the following code to the body of the notification message handler (in this 
 
 At this point, the mouse cursor location is stored in the `cursorPos` object.
 
-## See Also
+## See also
 
-[Making and Using Controls](../mfc/making-and-using-controls.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Making and Using Controls](../mfc/making-and-using-controls.md)
+- [Controls](../mfc/controls-mfc.md)

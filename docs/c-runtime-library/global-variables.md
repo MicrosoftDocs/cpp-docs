@@ -20,25 +20,25 @@ The Microsoft C run-time library provides the following global variables or macr
 |[_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)|Contains information used by the character-classification functions.|
 |[_pgmptr, _wpgmptr](../c-runtime-library/pgmptr-wpgmptr.md)|Deprecated. Instead, use `_get_pgmptr` or `_get_wpgmptr`.<br /><br /> Initialized at program startup to the fully-qualified or relative path of the program, the full program name, or the program name without its file name extension, depending on how the program was invoked.|
 
-## See Also
+## See also
 
-[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)<br/>
-[__argc, \__argv, \__wargv](../c-runtime-library/argc-argv-wargv.md)<br/>
-[_get_daylight](../c-runtime-library/reference/get-daylight.md)<br/>
-[_get_dstbias](../c-runtime-library/reference/get-dstbias.md)<br/>
-[_get_timezone](../c-runtime-library/reference/get-timezone.md)<br/>
-[_get_tzname](../c-runtime-library/reference/get-tzname.md)<br/>
-[perror](../c-runtime-library/reference/perror-wperror.md)<br/>
-[strerror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)<br/>
-[_get_doserrno](../c-runtime-library/reference/get-doserrno.md)<br/>
-[_set_doserrno](../c-runtime-library/reference/set-doserrno.md)<br/>
-[_get_errno](../c-runtime-library/reference/get-errno.md)<br/>
-[_set_errno](../c-runtime-library/reference/set-errno.md)<br/>
-[_dupenv_s, _wdupenv_s](../c-runtime-library/reference/dupenv-s-wdupenv-s.md)<br/>
-[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md)<br/>
-[getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)<br/>
-[_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md)<br/>
-[_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)<br/>
-[_get_fmode](../c-runtime-library/reference/get-fmode.md)<br/>
-[_set_fmode](../c-runtime-library/reference/set-fmode.md)
+- [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)
+- [Global Constants](../c-runtime-library/global-constants.md)
+- [__argc, \__argv, \__wargv](../c-runtime-library/argc-argv-wargv.md)
+- [_get_daylight](../c-runtime-library/reference/get-daylight.md)
+- [_get_dstbias](../c-runtime-library/reference/get-dstbias.md)
+- [_get_timezone](../c-runtime-library/reference/get-timezone.md)
+- [_get_tzname](../c-runtime-library/reference/get-tzname.md)
+- [perror](../c-runtime-library/reference/perror-wperror.md)
+- [strerror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)
+- [_get_doserrno](../c-runtime-library/reference/get-doserrno.md)
+- [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)
+- [_get_errno](../c-runtime-library/reference/get-errno.md)
+- [_set_errno](../c-runtime-library/reference/set-errno.md)
+- [_dupenv_s, _wdupenv_s](../c-runtime-library/reference/dupenv-s-wdupenv-s.md)
+- [getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md)
+- [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)
+- [_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md)
+- [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)
+- [_get_fmode](../c-runtime-library/reference/get-fmode.md)
+- [_set_fmode](../c-runtime-library/reference/set-fmode.md)

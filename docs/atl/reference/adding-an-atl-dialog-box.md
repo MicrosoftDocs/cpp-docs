@@ -23,8 +23,8 @@ By default, the ATL Dialog Wizard implements a dialog box derived from [CAxDialo
 
 For more information, see [Implementing a Dialog Box](../../atl/implementing-a-dialog-box.md).
 
-## See Also
+## See also
 
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
-[Window Classes](../../atl/atl-window-classes.md)<br/>
-[Message Maps](../../atl/message-maps-atl.md)
+- [Adding a Class](../../ide/adding-a-class-visual-cpp.md)
+- [Window Classes](../../atl/atl-window-classes.md)
+- [Message Maps](../../atl/message-maps-atl.md)

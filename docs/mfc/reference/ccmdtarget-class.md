@@ -474,16 +474,16 @@ void RestoreWaitCursor();
 
 [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample ACDUAL](../../visual-cpp-samples.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CCmdUI Class](../../mfc/reference/ccmdui-class.md)<br/>
-[CDocument Class](../../mfc/reference/cdocument-class.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CWinApp Class](../../mfc/reference/cwinapp-class.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
-[COleDispatchDriver Class](../../mfc/reference/coledispatchdriver-class.md)
+- [MFC Sample ACDUAL](../../visual-cpp-samples.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CCmdUI Class](../../mfc/reference/ccmdui-class.md)
+- [CDocument Class](../../mfc/reference/cdocument-class.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [CWinApp Class](../../mfc/reference/cwinapp-class.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)
+- [COleDispatchDriver Class](../../mfc/reference/coledispatchdriver-class.md)

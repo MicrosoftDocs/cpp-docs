@@ -937,4 +937,4 @@ The character '!' in locale loc2 is not alphabetic.
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
+- [\<locale>](../standard-library/locale.md)

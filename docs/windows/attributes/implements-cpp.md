@@ -476,7 +476,7 @@ public:
 };
 ```
 
-## See Also
+## See also
 
-[Compiler Attributes](compiler-attributes.md)<br/>
-[Class Attributes](class-attributes.md)
+- [Compiler Attributes](compiler-attributes.md)
+- [Class Attributes](class-attributes.md)

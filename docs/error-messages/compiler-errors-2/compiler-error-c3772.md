@@ -49,7 +49,7 @@ class X {
 };
 ```
 
-## See Also
+## See also
 
-[Templates](../../cpp/templates-cpp.md)<br/>
-[Template Specialization](../../cpp/template-specialization-cpp.md)
+- [Templates](../../cpp/templates-cpp.md)
+- [Template Specialization](../../cpp/template-specialization-cpp.md)

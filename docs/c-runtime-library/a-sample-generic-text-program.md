@@ -163,10 +163,10 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
-[Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>
-[Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[Routine Mappings](../c-runtime-library/routine-mappings.md)<br/>
-[Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md)
+- [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)
+- [Data Type Mappings](../c-runtime-library/data-type-mappings.md)
+- [Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)
+- [Routine Mappings](../c-runtime-library/routine-mappings.md)
+- [Using Generic-Text Mappings](../c-runtime-library/using-generic-text-mappings.md)

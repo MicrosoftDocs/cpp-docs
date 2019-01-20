@@ -70,6 +70,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[exp, expf, expl](exp-expf.md)<br/>
-[log2, log2f, log2l](log2-log2f-log2l.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [exp, expf, expl](exp-expf.md)
+- [log2, log2f, log2l](log2-log2f-log2l.md)

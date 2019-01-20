@@ -17,7 +17,7 @@ When creating a multithreaded application, you should be very careful in using m
 
 For more information about creating multithreaded applications, see [Multithreading Topics](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

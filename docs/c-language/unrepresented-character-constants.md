@@ -9,6 +9,6 @@ ms.assetid: 5a710a1c-dba1-49b4-a183-ed94a00a5358
 
 All character constants or escape sequences can be represented in the extended character set.
 
-## See Also
+## See also
 
-[Characters](../c-language/characters.md)
+- [Characters](../c-language/characters.md)

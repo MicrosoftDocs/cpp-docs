@@ -54,8 +54,8 @@ improper_lock() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[critical_section Class](critical-section-class.md)<br/>
-[reader_writer_lock Class](reader-writer-lock-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [critical_section Class](critical-section-class.md)
+- [reader_writer_lock Class](reader-writer-lock-class.md)

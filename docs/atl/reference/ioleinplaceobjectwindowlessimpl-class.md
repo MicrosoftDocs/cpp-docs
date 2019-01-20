@@ -163,7 +163,7 @@ Sets the control class's data member `m_bUIActive` to FALSE. The ATL implementat
 
 See [IOleInPlaceObject::UIDeactivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceobject-uideactivate) in the Windows SDK.
 
-## See Also
+## See also
 
-[CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComControl Class](../../atl/reference/ccomcontrol-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -92,13 +92,13 @@ File could not be opened: No such file or directory
 
 ## See also
 
-[Using abort](../../cpp/using-abort.md)<br/>
-[abort Function](../../c-language/abort-function-c.md)<br/>
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[raise](raise.md)<br/>
-[signal](signal.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[_DEBUG](../../c-runtime-library/debug.md)<br/>
-[_set_abort_behavior](set-abort-behavior.md)
+- [Using abort](../../cpp/using-abort.md)
+- [abort Function](../../c-language/abort-function-c.md)
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)
+- [exit, _Exit, _exit](exit-exit-exit.md)
+- [raise](raise.md)
+- [signal](signal.md)
+- [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)
+- [_DEBUG](../../c-runtime-library/debug.md)
+- [_set_abort_behavior](set-abort-behavior.md)

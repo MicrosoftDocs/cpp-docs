@@ -40,8 +40,8 @@ Custom build steps and custom build tools share the information specified in the
     </PropertyGroup>
     ```
 
-## See Also
+## See also
 
-[Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
-[How to: Use Build Events in MSBuild Projects](../build/how-to-use-build-events-in-msbuild-projects.md)<br/>
-[How to: Add a Custom Build Step to MSBuild Projects](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)
+- [Walkthrough: Using MSBuild to Create a Visual C++ Project](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)
+- [How to: Use Build Events in MSBuild Projects](../build/how-to-use-build-events-in-msbuild-projects.md)
+- [How to: Add a Custom Build Step to MSBuild Projects](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)

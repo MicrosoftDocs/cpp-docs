@@ -64,5 +64,5 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtGetReportHook](crtgetreporthook.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_CrtGetReportHook](crtgetreporthook.md)

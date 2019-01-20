@@ -111,7 +111,7 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[frexp](frexp.md)<br/>
-[ldexp](ldexp.md)<br/>
-[modf, modff, modfl](modf-modff-modfl.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [frexp](frexp.md)
+- [ldexp](ldexp.md)
+- [modf, modff, modfl](modf-modff-modfl.md)

@@ -202,6 +202,6 @@ _ATL_SINGLE_THREADED
 
 Specifies that the object always runs in the primary COM thread. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
 
-## See Also
+## See also
 
-[Macros](../../atl/reference/atl-macros.md)
+- [Macros](../../atl/reference/atl-macros.md)

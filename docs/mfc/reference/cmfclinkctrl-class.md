@@ -138,9 +138,9 @@ A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that contains th
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CLinkCtrl Class](../../mfc/reference/clinkctrl-class.md)<br/>
-[CMFCButton Class](../../mfc/reference/cmfcbutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CLinkCtrl Class](../../mfc/reference/clinkctrl-class.md)
+- [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md)

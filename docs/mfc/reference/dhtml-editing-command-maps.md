@@ -197,6 +197,6 @@ See [HTMLEdit Sample](../../visual-cpp-samples.md).
 
   **Header** afxhtml.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

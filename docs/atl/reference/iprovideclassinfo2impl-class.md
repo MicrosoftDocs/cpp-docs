@@ -128,6 +128,6 @@ static  tihclass
 
 `_tih` manages the type information for the coclass.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

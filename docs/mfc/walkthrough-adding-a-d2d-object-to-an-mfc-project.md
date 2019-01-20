@@ -149,4 +149,4 @@ Build and run the application. It should have a gradient rectangle that changes 
 
 ## See also
 
-[Walkthroughs](../mfc/walkthroughs-mfc.md)
+- [Walkthroughs](../mfc/walkthroughs-mfc.md)

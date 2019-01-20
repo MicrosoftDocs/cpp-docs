@@ -52,7 +52,6 @@ Provides a standard dialog box for selecting a font.
 [CPrintDialog](../mfc/reference/cprintdialog-class.md)<br/>
 Provides a standard dialog box for printing a file.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

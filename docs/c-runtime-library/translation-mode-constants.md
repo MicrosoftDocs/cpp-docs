@@ -27,10 +27,10 @@ The allowed values are:
 
 For more information, see [Text and Binary Mode File I/O](../c-runtime-library/text-and-binary-mode-file-i-o.md) and [File Translation](../c-runtime-library/file-translation-constants.md).
 
-## See Also
+## See also
 
-[_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
-[_pipe](../c-runtime-library/reference/pipe.md)<br/>
-[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
-[_setmode](../c-runtime-library/reference/setmode.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [_open, _wopen](../c-runtime-library/reference/open-wopen.md)
+- [_pipe](../c-runtime-library/reference/pipe.md)
+- [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)
+- [_setmode](../c-runtime-library/reference/setmode.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

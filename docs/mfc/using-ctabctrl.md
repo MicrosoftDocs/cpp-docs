@@ -27,7 +27,6 @@ For more information on tab controls, see [Tab Controls](/windows/desktop/Contro
 
 - [Processing Tab Control Notification Messages](../mfc/processing-tab-control-notification-messages.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

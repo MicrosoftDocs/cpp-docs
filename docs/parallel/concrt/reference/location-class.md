@@ -169,6 +169,6 @@ Operand `location`.
 
 **true** if the two locations are identical, and **false** otherwise.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

@@ -39,7 +39,7 @@ Call the [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelation
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
-[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoRelationInfo Structure](../../mfc/reference/cdaorelationinfo-structure.md)
+- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+- [CDaoRelationInfo Structure](../../mfc/reference/cdaorelationinfo-structure.md)

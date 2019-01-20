@@ -26,6 +26,6 @@ The following flowchart describes how your application will run depending on whe
 
 ![Windows Loader behavior](media/uacflowchart.png "Windows Loader behavior")
 
-## See Also
+## See also
 
-[Security Best Practices](security-best-practices-for-cpp.md)
+- [Security Best Practices](security-best-practices-for-cpp.md)

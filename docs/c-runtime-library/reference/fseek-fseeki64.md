@@ -119,8 +119,8 @@ This is the file 'fseek.out'.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[ftell, _ftelli64](ftell-ftelli64.md)<br/>
-[_lseek, _lseeki64](lseek-lseeki64.md)<br/>
-[rewind](rewind.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [ftell, _ftelli64](ftell-ftelli64.md)
+- [_lseek, _lseeki64](lseek-lseeki64.md)
+- [rewind](rewind.md)

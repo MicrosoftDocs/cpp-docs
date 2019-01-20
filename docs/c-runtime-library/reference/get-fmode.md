@@ -47,7 +47,7 @@ See the example in [_set_fmode](set-fmode.md).
 
 ## See also
 
-[_fmode](../../c-runtime-library/fmode.md)<br/>
-[_set_fmode](set-fmode.md)<br/>
-[_setmode](setmode.md)<br/>
-[Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
+- [_fmode](../../c-runtime-library/fmode.md)
+- [_set_fmode](set-fmode.md)
+- [_setmode](setmode.md)
+- [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)

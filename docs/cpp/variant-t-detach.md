@@ -29,4 +29,4 @@ Extracts and returns the encapsulated `VARIANT`, then clears this `_variant_t` o
 
 ## See also
 
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

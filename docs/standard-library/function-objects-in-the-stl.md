@@ -56,4 +56,4 @@ The last argument to `remove_if` is a function object that returns a boolean val
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

@@ -14,4 +14,4 @@ An attempt was made to access a label through a segment register that was not as
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

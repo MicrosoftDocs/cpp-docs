@@ -138,6 +138,6 @@ crt_ASSERT_macro.c(59) : Assertion failed: p1 == p2
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[assert Macro, _assert, _wassert](assert-macro-assert-wassert.md)<br/>
-[_RPT, _RPTF, _RPTW, _RPTFW Macros](rpt-rptf-rptw-rptfw-macros.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [assert Macro, _assert, _wassert](assert-macro-assert-wassert.md)
+- [_RPT, _RPTF, _RPTW, _RPTFW Macros](rpt-rptf-rptw-rptfw-macros.md)

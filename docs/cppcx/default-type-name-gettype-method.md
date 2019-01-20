@@ -28,6 +28,6 @@ A [Platform::Type](../cppcx/platform-type-class.md)^ object that represents the 
 
 **Header:** vccorlib.h
 
-## See Also
+## See also
 
-[default namespace](../cppcx/default-namespace.md)
+- [default namespace](../cppcx/default-namespace.md)

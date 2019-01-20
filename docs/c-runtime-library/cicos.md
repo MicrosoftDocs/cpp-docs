@@ -30,5 +30,5 @@ The resulting value is pushed onto the top of the floating-point stack.
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)<br/>
+- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+- [cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)

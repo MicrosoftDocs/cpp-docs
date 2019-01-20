@@ -74,10 +74,10 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[c16rtomb, c32rtomb](c16rtomb-c32rtomb1.md)<br/>
-[mbrtowc](mbrtowc.md)<br/>
-[mbsrtowcs](mbsrtowcs.md)<br/>
-[mbsrtowcs_s](mbsrtowcs-s.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [c16rtomb, c32rtomb](c16rtomb-c32rtomb1.md)
+- [mbrtowc](mbrtowc.md)
+- [mbsrtowcs](mbsrtowcs.md)
+- [mbsrtowcs_s](mbsrtowcs-s.md)

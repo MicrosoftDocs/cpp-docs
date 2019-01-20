@@ -90,5 +90,5 @@ __declspec( thread ) int tls_i = 1;
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[C Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [C Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md)

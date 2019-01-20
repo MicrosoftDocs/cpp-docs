@@ -79,4 +79,4 @@ There are several ways to interact with and debug your Linux project.
 
 ## See also
 
-[C++ Debugging Properties (Linux C++)](../linux/prop-pages/debugging-linux.md)
+- [C++ Debugging Properties (Linux C++)](../linux/prop-pages/debugging-linux.md)

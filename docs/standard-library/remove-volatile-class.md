@@ -58,5 +58,5 @@ remove_volatile_t<volatile int> == int
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_volatile Class](../standard-library/add-volatile-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [add_volatile Class](../standard-library/add-volatile-class.md)

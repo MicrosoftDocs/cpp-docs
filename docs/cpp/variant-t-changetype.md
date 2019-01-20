@@ -36,4 +36,4 @@ This member function converts a `_variant_t` object into the indicated `VARTYPE`
 
 ## See also
 
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

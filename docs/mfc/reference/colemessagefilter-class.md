@@ -254,8 +254,8 @@ When a keyboard or mouse message is pending during a call and the call has timed
 
 When the dialogs are disabled, the current "retry reply" is always used for calls to busy applications.
 
-## See Also
+## See also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)

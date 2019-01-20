@@ -50,7 +50,6 @@ For more information, see:
 
 - [Windows Sockets: Converting Strings](../mfc/windows-sockets-converting-strings.md)
 
-## See Also
+## See also
 
-[Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
-
+- [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)

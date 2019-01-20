@@ -124,12 +124,12 @@ After:  *******************************
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbsnbset, _mbsnbset_l](mbsnbset-mbsnbset-l.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
-[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
-[_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)<br/>
+- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [_mbsnbset, _mbsnbset_l](mbsnbset-mbsnbset-l.md)
+- [memset, wmemset](memset-wmemset.md)
+- [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)
+- [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)
+- [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)
+- [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)

@@ -131,4 +131,4 @@ not empty == true
 
 ## See also
 
-[\<functional>](../standard-library/functional.md)<br/>
+- [\<functional>](../standard-library/functional.md)

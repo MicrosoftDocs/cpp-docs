@@ -172,7 +172,6 @@ This function is called by `CMultiLock`'s destructor.
 
 The first form of `Unlock` tries to unlock the synchronization object managed by `CMultiLock`. The second form of `Unlock` tries to unlock the `CSemaphore` objects owned by `CMultiLock`. If `CMultiLock` does not own any locked `CSemaphore` object, the function returns FALSE; otherwise, it returns TRUE. *lCount* and *lpPrevCount* are exactly the same as the parameters of [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). The second form of `Unlock` is rarely applicable to multilock situations.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

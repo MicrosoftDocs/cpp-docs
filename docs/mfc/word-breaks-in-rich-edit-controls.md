@@ -8,8 +8,7 @@ ms.assetid: 641dcf9e-7b40-4dc0-85f7-575a8c142f73
 
 A rich edit control ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) calls a function called a "word break procedure" to find breaks between words and to determine where it can break lines. The control uses this information when performing word-wrap operations and when processing the CTRL+LEFT and CTRL+RIGHT key combinations. An application can send messages to a rich edit control to replace the default word-break procedure, to retrieve word-break information, and to determine what line a given character falls on.
 
-## See Also
+## See also
 
-[Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)
+- [Controls](../mfc/controls-mfc.md)

@@ -144,8 +144,8 @@ CRect GetCommandsFrame() const;
 
 A rectangle that represents the area of the ribbon main panel.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonPanel Class](../../mfc/reference/cmfcribbonpanel-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCRibbonPanel Class](../../mfc/reference/cmfcribbonpanel-class.md)

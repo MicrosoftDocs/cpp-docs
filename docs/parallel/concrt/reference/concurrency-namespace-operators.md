@@ -333,6 +333,6 @@ The behavior of this operator is identical to the equivalent operator for the `v
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

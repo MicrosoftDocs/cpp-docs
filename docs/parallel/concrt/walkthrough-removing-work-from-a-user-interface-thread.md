@@ -214,12 +214,12 @@ When you resize the window, drawing work is performed only for the final window 
 
 [[Top](#top)]
 
-## See Also
+## See also
 
-[Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
-[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
-[Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[Message Passing Functions](../../parallel/concrt/message-passing-functions.md)<br/>
-[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
-[Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
-[MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)
+- [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
+- [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
+- [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)
+- [Message Passing Functions](../../parallel/concrt/message-passing-functions.md)
+- [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)
+- [Cancellation in the PPL](cancellation-in-the-ppl.md)
+- [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)

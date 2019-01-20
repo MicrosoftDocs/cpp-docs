@@ -73,9 +73,9 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[_recalloc_dbg](recalloc-dbg.md)<br/>
-[_aligned_recalloc](aligned-recalloc.md)<br/>
-[_aligned_offset_recalloc](aligned-offset-recalloc.md)<br/>
-[free](free.md)<br/>
-[Link Options](../../c-runtime-library/link-options.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [_recalloc_dbg](recalloc-dbg.md)
+- [_aligned_recalloc](aligned-recalloc.md)
+- [_aligned_offset_recalloc](aligned-offset-recalloc.md)
+- [free](free.md)
+- [Link Options](../../c-runtime-library/link-options.md)

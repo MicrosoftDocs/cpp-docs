@@ -58,6 +58,6 @@ A description of the error.
 
 A new instance of the `out_of_memory` class.
 
-## See Also
+## See also
 
-[Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+- [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

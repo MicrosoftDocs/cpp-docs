@@ -109,8 +109,8 @@ int main(void) {
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_set_fmode](set-fmode.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [_open, _wopen](open-wopen.md)
+- [_set_fmode](set-fmode.md)

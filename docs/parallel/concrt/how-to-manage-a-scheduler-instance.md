@@ -67,8 +67,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc scheduler-instance.cpp**
 
-## See Also
+## See also
 
-[Scheduler Instances](../../parallel/concrt/scheduler-instances.md)<br/>
-[How to: Specify Specific Scheduler Policies](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md)
-
+- [Scheduler Instances](../../parallel/concrt/scheduler-instances.md)
+- [How to: Specify Specific Scheduler Policies](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md)

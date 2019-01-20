@@ -154,4 +154,4 @@ Input is from stdin.
 
 ## See also
 
-[References](../cpp/references-cpp.md)
+- [References](../cpp/references-cpp.md)

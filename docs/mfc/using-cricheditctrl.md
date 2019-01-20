@@ -35,7 +35,6 @@ A rich edit control is a window in which the user can enter and edit text. The t
 
 - [Notifications from a Rich Edit Control](../mfc/notifications-from-a-rich-edit-control.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

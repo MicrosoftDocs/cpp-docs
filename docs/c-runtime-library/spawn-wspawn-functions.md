@@ -181,15 +181,15 @@ child process output
 from SPAWN!
 ```
 
-## See Also
+## See also
 
-[Process and Environment Control](../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](../c-runtime-library/reference/abort.md)<br/>
-[atexit](../c-runtime-library/reference/atexit.md)<br/>
-[_exec, _wexec Functions](../c-runtime-library/exec-wexec-functions.md)<br/>
-[exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_flushall](../c-runtime-library/reference/flushall.md)<br/>
-[_getmbcp](../c-runtime-library/reference/getmbcp.md)<br/>
-[_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)<br/>
-[_setmbcp](../c-runtime-library/reference/setmbcp.md)<br/>
-[system, _wsystem](../c-runtime-library/reference/system-wsystem.md)
+- [Process and Environment Control](../c-runtime-library/process-and-environment-control.md)
+- [abort](../c-runtime-library/reference/abort.md)
+- [atexit](../c-runtime-library/reference/atexit.md)
+- [_exec, _wexec Functions](../c-runtime-library/exec-wexec-functions.md)
+- [exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)
+- [_flushall](../c-runtime-library/reference/flushall.md)
+- [_getmbcp](../c-runtime-library/reference/getmbcp.md)
+- [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)
+- [_setmbcp](../c-runtime-library/reference/setmbcp.md)
+- [system, _wsystem](../c-runtime-library/reference/system-wsystem.md)

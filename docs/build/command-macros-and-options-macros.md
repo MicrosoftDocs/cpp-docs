@@ -17,6 +17,6 @@ Command macros are predefined for Microsoft products. Options macros represent o
 |C++ Compiler|**CXX**|cl|**CXXFLAGS**|
 |Resource Compiler|**RC**|rc|**RFLAGS**|
 
-## See Also
+## See also
 
-[Special NMAKE Macros](../build/special-nmake-macros.md)
+- [Special NMAKE Macros](../build/special-nmake-macros.md)

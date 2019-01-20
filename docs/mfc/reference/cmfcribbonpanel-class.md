@@ -1132,10 +1132,10 @@ A pointer to a focused element or NULL.
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md)<br/>
-[CMFCRibbonBaseElement Class](../../mfc/reference/cmfcribbonbaseelement-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md)
+- [CMFCRibbonBaseElement Class](../../mfc/reference/cmfcribbonbaseelement-class.md)

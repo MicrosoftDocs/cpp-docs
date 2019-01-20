@@ -62,11 +62,11 @@ The **event_receiver** C++ attribute specifies that the class or structure to wh
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[Compiler Attributes](compiler-attributes.md)<br/>
-[event_source](event-source.md)<br/>
-[__event](../../cpp/event.md)<br/>
-[__hook](../../cpp/hook.md)<br/>
-[__unhook](../../cpp/unhook.md)<br/>
-[Class Attributes](class-attributes.md)
+- [Compiler Attributes](compiler-attributes.md)
+- [event_source](event-source.md)
+- [__event](../../cpp/event.md)
+- [__hook](../../cpp/hook.md)
+- [__unhook](../../cpp/unhook.md)
+- [Class Attributes](class-attributes.md)

@@ -141,6 +141,6 @@ The `use_synchronous_execution` method forces the continuation task to run synch
 
 If the antecedent task has already completed when the continuation is attached, the continuation runs synchronously on the context that attaches the continuation.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

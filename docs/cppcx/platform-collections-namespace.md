@@ -52,4 +52,4 @@ This namespace contains the following members.
 
 ## See also
 
-[Platform Namespace](../cppcx/platform-namespace-c-cx.md)
+- [Platform Namespace](../cppcx/platform-namespace-c-cx.md)

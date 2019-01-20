@@ -39,8 +39,8 @@ There are three properties that you can set in the [Properties Window](/visualst
 
 Win32
 
-## See Also
+## See also
 
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
-[Dialog Editor](../windows/dialog-editor.md)<br/>
-[Showing or Hiding the Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)
+- [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
+- [Dialog Editor](../windows/dialog-editor.md)
+- [Showing or Hiding the Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)

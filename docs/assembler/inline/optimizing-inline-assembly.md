@@ -14,4 +14,4 @@ The presence of an `__asm` block in a function affects optimization in several w
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

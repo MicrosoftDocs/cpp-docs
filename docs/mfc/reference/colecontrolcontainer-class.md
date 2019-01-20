@@ -735,9 +735,9 @@ The identifier of the control.
 *lpszString*<br/>
 Pointer to the text of the control.
 
-## See Also
+## See also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleControlSite Class](../../mfc/reference/colecontrolsite-class.md)<br/>
-[COccManager Class](../../mfc/reference/coccmanager-class.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleControlSite Class](../../mfc/reference/colecontrolsite-class.md)
+- [COccManager Class](../../mfc/reference/coccmanager-class.md)

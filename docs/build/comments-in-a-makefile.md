@@ -32,6 +32,6 @@ To specify a literal number sign, precede it with a caret (**^**), as follows:
 DEF = ^#define  #Macro for a C preprocessing directive
 ```
 
-## See Also
+## See also
 
-[Contents of a Makefile](../build/contents-of-a-makefile.md)
+- [Contents of a Makefile](../build/contents-of-a-makefile.md)

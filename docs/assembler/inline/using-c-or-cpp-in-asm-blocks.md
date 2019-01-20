@@ -40,4 +40,4 @@ Within an `__asm` block, you can specify integer constants with either C notatio
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

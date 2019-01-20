@@ -22,7 +22,7 @@ By default, the high-level error-handling methods use the COM support classes [_
 
 **END C++ Specific**
 
-## See Also
+## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)
+- [#import Directive](../preprocessor/hash-import-directive-cpp.md)

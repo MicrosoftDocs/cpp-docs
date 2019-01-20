@@ -28,8 +28,8 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)
+- [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Editors](../windows/resource-editors.md)

@@ -25,4 +25,4 @@ If a [.ELSE](../../assembler/masm/dot-else.md) follows, its statements are execu
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

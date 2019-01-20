@@ -21,10 +21,9 @@ To initialize the application, `WinMain` calls your application object's `InitAp
 > [!NOTE]
 >  Names shown in **bold** in this documentation indicate elements supplied by the Microsoft Foundation Class Library and Visual C++. Names shown in `monospaced` type indicate elements that you create or override.
 
-## See Also
+## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)<br/>
-[CWinApp and the MFC Application Wizard](../mfc/cwinapp-and-the-mfc-application-wizard.md)<br/>
-[Overridable CWinApp Member Functions](../mfc/overridable-cwinapp-member-functions.md)<br/>
-[Special CWinApp Services](../mfc/special-cwinapp-services.md)
-
+- [General MFC Topics](../mfc/general-mfc-topics.md)
+- [CWinApp and the MFC Application Wizard](../mfc/cwinapp-and-the-mfc-application-wizard.md)
+- [Overridable CWinApp Member Functions](../mfc/overridable-cwinapp-member-functions.md)
+- [Special CWinApp Services](../mfc/special-cwinapp-services.md)

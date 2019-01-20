@@ -15,4 +15,4 @@ Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

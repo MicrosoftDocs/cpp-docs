@@ -839,18 +839,18 @@ Returns S_OK if successful; an error value otherwise.
 
 ## See also
 
-[Hierarchy Chart](../hierarchy-chart.md)<br/>
-[Structures, Styles, Callbacks, and Message Maps](structures-styles-callbacks-and-message-maps.md)<br/>
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[Parts and States](/windows/desktop/controls/parts-and-states)<br/>
-[CDC::DrawText](cdc-class.md#drawtext)<br/>
-[DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
-[Desktop Window Manager](/windows/desktop/dwm/dwm-overview)<br/>
-[Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)<br/>
-[UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
-[GetSysColor Function](/windows/desktop/api/winuser/nf-winuser-getsyscolor)<br/>
-[GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)<br/>
-[NONCLIENTMETRICS Structure](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)<br/>
-[AfxRegisterClass](application-information-and-management.md#afxregisterclass)<br/>
-[AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)<br/>
-[SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)
+- [Hierarchy Chart](../hierarchy-chart.md)
+- [Structures, Styles, Callbacks, and Message Maps](structures-styles-callbacks-and-message-maps.md)
+- [COLORREF](/windows/desktop/gdi/colorref)
+- [Parts and States](/windows/desktop/controls/parts-and-states)
+- [CDC::DrawText](cdc-class.md#drawtext)
+- [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)
+- [Desktop Window Manager](/windows/desktop/dwm/dwm-overview)
+- [Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)
+- [UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)
+- [GetSysColor Function](/windows/desktop/api/winuser/nf-winuser-getsyscolor)
+- [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)
+- [NONCLIENTMETRICS Structure](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)
+- [AfxRegisterClass](application-information-and-management.md#afxregisterclass)
+- [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)
+- [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)

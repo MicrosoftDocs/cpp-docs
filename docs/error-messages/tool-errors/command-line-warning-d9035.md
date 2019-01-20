@@ -17,5 +17,5 @@ The specified option still works, but you should update your build configuration
 
 ## See also
 
-[Deprecated and removed compiler options](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options)<br/>
-[Command-Line Warning D9036](command-line-warning-d9036.md)
+- [Deprecated and removed compiler options](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options)
+- [Command-Line Warning D9036](command-line-warning-d9036.md)

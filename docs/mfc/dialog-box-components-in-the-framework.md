@@ -16,8 +16,7 @@ In the MFC framework, a dialog box has two components:
 
    A dialog box is a window and will be attached to a Windows window when visible. When the dialog window is created, the dialog-template resource is used as a template for creating child window controls for the dialog box.
 
-## See Also
+## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-
+- [Dialog Boxes](../mfc/dialog-boxes.md)
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

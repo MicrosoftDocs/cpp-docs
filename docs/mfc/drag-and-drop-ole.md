@@ -26,8 +26,7 @@ For more information about drag and drop, see:
 
 - [Drag and Drop: Customizing](../mfc/drag-and-drop-customizing.md)
 
-## See Also
+## See also
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md)
-
+- [OLE](../mfc/ole-in-mfc.md)
+- [Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md)

@@ -16,8 +16,7 @@ The easiest way to use a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class
 
 If the tab control object is embedded in a parent view or dialog class, the control is destroyed when the parent is destroyed.
 
-## See Also
+## See also
 
-[Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CTabCtrl](../mfc/using-ctabctrl.md)
+- [Controls](../mfc/controls-mfc.md)

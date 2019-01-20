@@ -45,6 +45,6 @@ The data members `szCommand` and `szText` represent the two strings, with `szCom
 
 When this is done, you can add the functionality of [Reading Strings into the OLE DB Provider](../../data/oledb/reading-strings-into-the-ole-db-provider.md).
 
-## See Also
+## See also
 
-[Implementing the Simple Read-Only Provider](../../data/oledb/implementing-the-simple-read-only-provider.md)<br/>
+- [Implementing the Simple Read-Only Provider](../../data/oledb/implementing-the-simple-read-only-provider.md)

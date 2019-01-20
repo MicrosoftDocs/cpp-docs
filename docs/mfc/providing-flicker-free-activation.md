@@ -16,7 +16,6 @@ The code to include this flag is automatically generated if you select the **Fli
 
 If you are using windowless activation, this optimization has no effect.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)
-
+- [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)

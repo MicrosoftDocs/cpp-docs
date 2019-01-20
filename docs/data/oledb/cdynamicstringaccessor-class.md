@@ -109,14 +109,14 @@ The second override form takes the column name as an ANSI string and the third o
 
 If _SECURE_ATL is defined to have a nonzero value, a runtime assertion failure will be generated if the input *data* string is longer than the maximum allowable length of the referenced data column. Otherwise, the input string will be truncated if it is longer than the maximum allowable length.
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CAccessor Class](../../data/oledb/caccessor-class.md)<br/>
-[CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
-[CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)<br/>
-[CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)<br/>
-[CDynamicStringAccessorA Class](../../data/oledb/cdynamicstringaccessora-class.md)<br/>
-[CDynamicStringAccessorW Class](../../data/oledb/cdynamicstringaccessorw-class.md)<br/>
-[CXMLAccessor Class](../../data/oledb/cxmlaccessor-class.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [CAccessor Class](../../data/oledb/caccessor-class.md)
+- [CDynamicParameterAccessor Class](../../data/oledb/cdynamicparameteraccessor-class.md)
+- [CManualAccessor Class](../../data/oledb/cmanualaccessor-class.md)
+- [CDynamicAccessor Class](../../data/oledb/cdynamicaccessor-class.md)
+- [CDynamicStringAccessorA Class](../../data/oledb/cdynamicstringaccessora-class.md)
+- [CDynamicStringAccessorW Class](../../data/oledb/cdynamicstringaccessorw-class.md)
+- [CXMLAccessor Class](../../data/oledb/cxmlaccessor-class.md)

@@ -228,8 +228,7 @@ Call this function to unlock the character buffer of the string data object. Onc
 
 Locking and unlocking is used when the developer must ensure that the string data not be shared. A good example of locking is demonstrated by the [LockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) and [UnlockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) methods of `CSimpleStringT`.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

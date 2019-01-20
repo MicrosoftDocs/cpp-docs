@@ -13,7 +13,7 @@ Any command that you enter in the edit box will be passed through to the tool fo
 
 For information on how to access the **Command Line** property pages, see [Working with Project Properties](../ide/working-with-project-properties.md).
 
-## See Also
+## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
-[.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md)
+- [Property Pages](../ide/property-pages-visual-cpp.md)
+- [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md)

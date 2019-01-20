@@ -12,6 +12,6 @@ The optional *attribute-seq* nonterminal allows you to select a calling conventi
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[C Function Definitions](../c-language/c-function-definitions.md)
+- [C Function Definitions](../c-language/c-function-definitions.md)

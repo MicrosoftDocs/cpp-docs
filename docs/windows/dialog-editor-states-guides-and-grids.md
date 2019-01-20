@@ -131,5 +131,5 @@ Win32
 
 ## See also
 
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
-[Controls (MFC)](../mfc/controls-mfc.md)<br/>
+- [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
+- [Controls (MFC)](../mfc/controls-mfc.md)

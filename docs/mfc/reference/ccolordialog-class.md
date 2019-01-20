@@ -244,10 +244,9 @@ This function is called from within a message handler or `OnColorOK`. The dialog
 
   See the example for [CColorDialog::OnColorOK](#oncolorok).
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
-[MFC Sample DRAWCLI](../../visual-cpp-samples.md)<br/>
-[CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [MFC Sample MDI](../../visual-cpp-samples.md)
+- [MFC Sample DRAWCLI](../../visual-cpp-samples.md)
+- [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

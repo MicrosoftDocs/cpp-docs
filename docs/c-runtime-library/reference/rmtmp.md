@@ -45,7 +45,7 @@ See the example for [tmpfile](tmpfile.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_flushall](flushall.md)<br/>
-[tmpfile](tmpfile.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_flushall](flushall.md)
+- [tmpfile](tmpfile.md)
+- [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)

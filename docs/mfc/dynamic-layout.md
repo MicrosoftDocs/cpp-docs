@@ -137,8 +137,8 @@ The previous procedure is useful for specifying dynamic layout properties for a 
 
 ## See also
 
-[CMFCDynamicLayout Class](../mfc/reference/cmfcdynamiclayout-class.md)<br/>
-[Control Classes](../mfc/control-classes.md)<br/>
-[Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
-[Dialog Editor](../windows/dialog-editor.md)<br/>
-[Dynamic Dialog Layout for MFC in Visual C++ 2015](https://mariusbancila.ro/blog/2015/07/27/dynamic-dialog-layout-for-mfc-in-visual-c-2015/)
+- [CMFCDynamicLayout Class](../mfc/reference/cmfcdynamiclayout-class.md)
+- [Control Classes](../mfc/control-classes.md)
+- [Dialog Box Classes](../mfc/dialog-box-classes.md)
+- [Dialog Editor](../windows/dialog-editor.md)
+- [Dynamic Dialog Layout for MFC in Visual C++ 2015](https://mariusbancila.ro/blog/2015/07/27/dynamic-dialog-layout-for-mfc-in-visual-c-2015/)

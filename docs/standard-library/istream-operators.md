@@ -163,4 +163,4 @@ int main( )
 
 ## See also
 
-[\<istream>](../standard-library/istream.md)<br/>
+- [\<istream>](../standard-library/istream.md)

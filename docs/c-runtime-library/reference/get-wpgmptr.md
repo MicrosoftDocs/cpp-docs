@@ -43,4 +43,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_get_pgmptr](get-pgmptr.md)<br/>
+- [_get_pgmptr](get-pgmptr.md)

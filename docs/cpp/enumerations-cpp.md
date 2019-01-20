@@ -171,5 +171,5 @@ int main()
 
 ## See also
 
-[C Enumeration Declarations](../c-language/c-enumeration-declarations.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [C Enumeration Declarations](../c-language/c-enumeration-declarations.md)
+- [Keywords](../cpp/keywords-cpp.md)

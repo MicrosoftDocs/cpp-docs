@@ -35,4 +35,4 @@ typedef enum memory_order {
 
 ## See also
 
-[\<atomic>](../standard-library/atomic.md)<br/>
+- [\<atomic>](../standard-library/atomic.md)

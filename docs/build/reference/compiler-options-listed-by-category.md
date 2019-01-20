@@ -210,6 +210,6 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 ## See also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+- [C/C++ Building Reference](c-cpp-building-reference.md)
+- [Compiler Options](compiler-options.md)
+- [Setting Compiler Options](setting-compiler-options.md)

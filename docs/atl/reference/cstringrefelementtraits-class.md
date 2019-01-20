@@ -104,7 +104,7 @@ The string element.
 
 Returns a hash value, calculated using the string's contents.
 
-## See Also
+## See also
 
-[CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

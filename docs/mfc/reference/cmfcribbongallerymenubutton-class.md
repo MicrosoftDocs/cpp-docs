@@ -176,9 +176,9 @@ virtual BOOL IsEmptyMenuAllowed() const;
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
-[CMFCRibbonGallery Class](../../mfc/reference/cmfcribbongallery-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)
+- [CMFCRibbonGallery Class](../../mfc/reference/cmfcribbongallery-class.md)

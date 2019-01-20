@@ -11,6 +11,6 @@ ms.assetid: 1ff2f7e9-f29a-4822-9b05-4b4267e80ba3
 
 - [Truncation of Floating-Point Values](../c-language/truncation-of-floating-point-values.md)
 
-## See Also
+## See also
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

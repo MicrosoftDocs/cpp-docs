@@ -33,9 +33,9 @@ This option has the same effect as specifying the file with double quotation mar
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedIncludeFiles%2A>.
 
-## See Also
+## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Specifying the Pathname](../../build/reference/specifying-the-pathname.md)
+- [Output-File (/F) Options](../../build/reference/output-file-f-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Specifying the Pathname](../../build/reference/specifying-the-pathname.md)

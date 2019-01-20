@@ -854,10 +854,10 @@ The number of bytes to be transferred from the buffer. For text-mode files, carr
 
 In addition, see the examples for [CFile::CFile](#cfile) and [CFile::Open](#open).
 
-## See Also
+## See also
 
-[MFC Sample DRAWCLI](../../visual-cpp-samples.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CStdioFile Class](../../mfc/reference/cstdiofile-class.md)<br/>
-[CMemFile Class](../../mfc/reference/cmemfile-class.md)
+- [MFC Sample DRAWCLI](../../visual-cpp-samples.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CStdioFile Class](../../mfc/reference/cstdiofile-class.md)
+- [CMemFile Class](../../mfc/reference/cmemfile-class.md)

@@ -114,7 +114,7 @@ property Array^ Value;
 
 A handle to the current array.
 
-## See Also
+## See also
 
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)<br/>
-[Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)
+- [Platform namespace](../cppcx/platform-namespace-c-cx.md)
+- [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

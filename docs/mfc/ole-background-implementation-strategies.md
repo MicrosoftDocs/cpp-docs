@@ -26,10 +26,9 @@ Depending on your application, there are four possible implementation strategies
 
 Once you have decided on a strategy, you should either read the [Containers](../mfc/containers.md) or [Servers](../mfc/servers.md) articles (depending on the type of application you are writing) or examine the sample programs, or both. The MFC OLE samples [OCLIENT](../visual-cpp-samples.md) and [HIERSVR](../visual-cpp-samples.md) show how to implement the various aspects of containers and servers, respectively. At various points throughout these articles, you will be referred to certain functions in these samples as examples of the techniques being discussed.
 
-## See Also
+## See also
 
-[OLE Background](../mfc/ole-background.md)<br/>
-[Containers: Implementing a Container](../mfc/containers-implementing-a-container.md)<br/>
-[Servers: Implementing a Server](../mfc/servers-implementing-a-server.md)<br/>
-[MFC Application Wizard](../mfc/reference/mfc-application-wizard.md)
-
+- [OLE Background](../mfc/ole-background.md)
+- [Containers: Implementing a Container](../mfc/containers-implementing-a-container.md)
+- [Servers: Implementing a Server](../mfc/servers-implementing-a-server.md)
+- [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md)

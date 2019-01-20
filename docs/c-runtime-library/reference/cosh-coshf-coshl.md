@@ -58,10 +58,10 @@ See the example in [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)
+- [asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)
+- [atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)
+- [_matherr](matherr.md)
+- [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)
+- [tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)

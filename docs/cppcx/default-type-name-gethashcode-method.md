@@ -28,6 +28,6 @@ The hash code for this instance.
 
 **Header:** vccorlib.h
 
-## See Also
+## See also
 
-[default namespace](../cppcx/default-namespace.md)
+- [default namespace](../cppcx/default-namespace.md)

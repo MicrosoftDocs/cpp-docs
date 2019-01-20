@@ -42,7 +42,7 @@ The following topics describe delay loading DLLs:
 
 - [Developing Your Own Helper Function](../../build/reference/developing-your-own-helper-function.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../../build/dlls-in-visual-cpp.md)<br/>
-[Linking](../../build/reference/linking.md)
+- [DLLs in Visual C++](../../build/dlls-in-visual-cpp.md)
+- [Linking](../../build/reference/linking.md)

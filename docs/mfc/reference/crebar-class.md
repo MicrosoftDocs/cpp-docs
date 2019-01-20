@@ -159,9 +159,8 @@ For more information about using `CReBarCtrl` to customize your rebar, see [Usin
 
 [!code-cpp[NVC_MFC_CReBarCtrl#2](../../mfc/reference/codesnippet/cpp/crebar-class_2.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
-[CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [MFC Sample MFCIE](../../visual-cpp-samples.md)
+- [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

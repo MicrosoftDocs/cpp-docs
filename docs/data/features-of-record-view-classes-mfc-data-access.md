@@ -16,7 +16,7 @@ You can do form-based data-access programming with class [CFormView](../mfc/refe
 
 For more information about navigation, see [Record Views: Supporting Navigation in a Record View](../data/supporting-navigation-in-a-record-view-mfc-data-access.md).
 
-## See Also
+## See also
 
-[Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
-[ODBC Driver List](../data/odbc/odbc-driver-list.md)
+- [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)
+- [ODBC Driver List](../data/odbc/odbc-driver-list.md)

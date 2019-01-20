@@ -74,9 +74,9 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 > [!NOTE]
 >  Calling `BeginTrans` again without calling `CommitTrans` or `Rollback` is an error.
 
-## See Also
+## See also
 
-[Transaction (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
-[Transaction: How Transactions Affect Updates (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>
-[CDatabase Class](../../mfc/reference/cdatabase-class.md)<br/>
-[CRecordset Class](../../mfc/reference/crecordset-class.md)
+- [Transaction (ODBC)](../../data/odbc/transaction-odbc.md)
+- [Transaction: How Transactions Affect Updates (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
+- [CDatabase Class](../../mfc/reference/cdatabase-class.md)
+- [CRecordset Class](../../mfc/reference/crecordset-class.md)

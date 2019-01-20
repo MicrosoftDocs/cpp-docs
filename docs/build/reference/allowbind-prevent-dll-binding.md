@@ -29,9 +29,9 @@ You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[BindImage function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)<br/>
-[BindImageEx function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)
+- [BindImage function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)
+- [BindImageEx function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)

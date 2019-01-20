@@ -15,4 +15,4 @@ Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

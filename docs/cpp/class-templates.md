@@ -431,4 +431,4 @@ int main()
 
 ## See also
 
-[Templates](../cpp/templates-cpp.md)
+- [Templates](../cpp/templates-cpp.md)

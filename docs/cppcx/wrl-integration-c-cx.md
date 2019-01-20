@@ -106,4 +106,4 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
 
 ## See also
 
-[Interoperating with Other Languages](interoperating-with-other-languages-c-cx.md)
+- [Interoperating with Other Languages](interoperating-with-other-languages-c-cx.md)

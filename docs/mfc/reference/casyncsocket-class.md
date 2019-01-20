@@ -1759,9 +1759,9 @@ Returns `TRUE` on success, `FALSE` on failure.
 
 This method allocates a socket handle. It does not call [CAsyncSocket::Bind](#bind) to bind the socket to a specified address, so you need to call `Bind` later to bind the socket to a specified address. You can use [CAsyncSocket::SetSockOpt](#setsockopt) to set the socket option before it is bound.
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CSocket Class](../../mfc/reference/csocket-class.md)<br/>
-[CSocketFile Class](../../mfc/reference/csocketfile-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CSocket Class](../../mfc/reference/csocket-class.md)
+- [CSocketFile Class](../../mfc/reference/csocketfile-class.md)

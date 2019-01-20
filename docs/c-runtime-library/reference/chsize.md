@@ -91,7 +91,7 @@ File length after:  329678
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_close](close.md)<br/>
-[_sopen, _wsopen](sopen-wsopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_close](close.md)
+- [_sopen, _wsopen](sopen-wsopen.md)
+- [_open, _wopen](open-wopen.md)

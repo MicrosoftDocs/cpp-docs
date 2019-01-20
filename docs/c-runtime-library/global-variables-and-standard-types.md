@@ -9,7 +9,7 @@ ms.assetid: 8f8bad6f-2b78-4068-a0dc-77d58d978920
 
 The Microsoft run-time library contains definitions for [global variables](../c-runtime-library/global-variables.md), [control flags](../c-runtime-library/control-flags.md), and [standard types](../c-runtime-library/standard-types.md) used by library routines. Access these variables, flags, and types by declaring them in your program or by including the appropriate header files.
 
-## See Also
+## See also
 
-[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

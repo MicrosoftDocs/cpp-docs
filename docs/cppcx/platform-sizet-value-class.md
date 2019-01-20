@@ -50,6 +50,6 @@ An unsigned 32-bit value.
 *value2*<br/>
 Pointer to an unsigned 32-bit value.
 
-## See Also
+## See also
 
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)
+- [Platform namespace](../cppcx/platform-namespace-c-cx.md)

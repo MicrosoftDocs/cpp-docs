@@ -30,6 +30,6 @@ The section also includes reference tables for [Trigraphs](../c-language/trigrap
 
 Operators are symbols (both single characters and character combinations) that specify how values are to be manipulated. Each symbol is interpreted as a single unit, called a token. For more information, see [Operators](../c-language/c-operators.md).
 
-## See Also
+## See also
 
-[C Language Reference](../c-language/c-language-reference.md)
+- [C Language Reference](../c-language/c-language-reference.md)

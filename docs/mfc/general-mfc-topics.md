@@ -46,7 +46,6 @@ For an overview of the MFC reference documentation, see [Microsoft Foundation Cl
 
 For information about ATL, see [Active Template Library Reference](../atl/atl-class-overview.md).
 
-## See Also
+## See also
 
-[Working with Window Objects](../mfc/working-with-window-objects.md)
-
+- [Working with Window Objects](../mfc/working-with-window-objects.md)

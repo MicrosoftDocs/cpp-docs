@@ -47,5 +47,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>
+- [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md)
+- [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)

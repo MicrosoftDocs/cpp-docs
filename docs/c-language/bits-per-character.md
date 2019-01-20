@@ -9,6 +9,6 @@ ms.assetid: ce317fce-67bf-4963-9e6d-13682cda5f3f
 
 The number of bits in a character is represented by the manifest constant **CHAR_BIT**. The LIMITS.H file defines **CHAR_BIT** as 8.
 
-## See Also
+## See also
 
-[Characters](../c-language/characters.md)
+- [Characters](../c-language/characters.md)

@@ -426,15 +426,15 @@ virtual void UpdateColor(COLORREF color);
 
 The `UpdateColor` function changes the currently selected button's color and notifies its parent by sending a WM_COMMAND message with a BN_CLICKED standard notification. Use the [CMFCColorButton::GetColor](#getcolor) method to retrieve the selected color.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCButton Class](../../mfc/reference/cmfcbutton-class.md)<br/>
-[CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md)<br/>
-[CMFCColorButton::OnShowColorPopup](#onshowcolorpopup)<br/>
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[CPalette Class](../../mfc/reference/cpalette-class.md)<br/>
-[CArray Class](../../mfc/reference/carray-class.md)<br/>
-[CList Class](../../mfc/reference/clist-class.md)<br/>
-[CString](../../atl-mfc-shared/reference/cstringt-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md)
+- [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md)
+- [CMFCColorButton::OnShowColorPopup](#onshowcolorpopup)
+- [COLORREF](/windows/desktop/gdi/colorref)
+- [CPalette Class](../../mfc/reference/cpalette-class.md)
+- [CArray Class](../../mfc/reference/carray-class.md)
+- [CList Class](../../mfc/reference/clist-class.md)
+- [CString](../../atl-mfc-shared/reference/cstringt-class.md)

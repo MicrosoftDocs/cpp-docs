@@ -2197,8 +2197,8 @@ Specifies the Application User Model ID.
 
 ### Remarks
 
-## See Also
+## See also
 
-[CWinThread Class](../../mfc/reference/cwinthread-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[How to: Add Restart Manager Support](../../mfc/how-to-add-restart-manager-support.md)
+- [CWinThread Class](../../mfc/reference/cwinthread-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [How to: Add Restart Manager Support](../../mfc/how-to-add-restart-manager-support.md)

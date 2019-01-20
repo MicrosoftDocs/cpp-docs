@@ -62,4 +62,4 @@ These member functions call `CoCreateInstance` to create a new COM object and th
 
 ## See also
 
-[_com_ptr_t Class](../cpp/com-ptr-t-class.md)
+- [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

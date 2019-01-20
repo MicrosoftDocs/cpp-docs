@@ -139,7 +139,7 @@ C:\Program Files\Microsoft Visual Studio 2010\VC\BIN\CL.EXE
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_searchenv, _wsearchenv](searchenv-wsearchenv.md)<br/>
-[getenv, _wgetenv](getenv-wgetenv.md)<br/>
-[_putenv, _wputenv](putenv-wputenv.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)
+- [_searchenv, _wsearchenv](searchenv-wsearchenv.md)
+- [getenv, _wgetenv](getenv-wgetenv.md)
+- [_putenv, _wputenv](putenv-wputenv.md)

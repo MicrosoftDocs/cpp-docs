@@ -89,11 +89,11 @@ rintl(-2.500000) is -3
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
-[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
-[fmod, fmodf](fmod-fmodf.md)<br/>
-[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
-[lround, lroundf, lroundl, llround, llroundf, llroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md)<br/>
-[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
-[rint](rint-rintf-rintl.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [ceil, ceilf, ceill](ceil-ceilf-ceill.md)
+- [floor, floorf, floorl](floor-floorf-floorl.md)
+- [fmod, fmodf](fmod-fmodf.md)
+- [lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)
+- [lround, lroundf, lroundl, llround, llroundf, llroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md)
+- [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)
+- [rint](rint-rintf-rintl.md)

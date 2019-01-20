@@ -58,5 +58,5 @@ Note that when a class or struct has no constructor, you provide the list elemen
 
 ## See also
 
-[Classes and Structs](../cpp/classes-and-structs-cpp.md)<br/>
-[Constructors](../cpp/constructors-cpp.md)
+- [Classes and Structs](../cpp/classes-and-structs-cpp.md)
+- [Constructors](../cpp/constructors-cpp.md)

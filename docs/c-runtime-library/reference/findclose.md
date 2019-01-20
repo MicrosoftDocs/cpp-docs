@@ -39,5 +39,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[System Calls](../../c-runtime-library/system-calls.md)<br/>
-[Filename Search Functions](../../c-runtime-library/filename-search-functions.md)<br/>
+- [System Calls](../../c-runtime-library/system-calls.md)
+- [Filename Search Functions](../../c-runtime-library/filename-search-functions.md)

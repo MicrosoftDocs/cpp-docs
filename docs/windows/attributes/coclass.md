@@ -130,10 +130,10 @@ public:
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[COM Attributes](com-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[appobject](appobject.md)
+- [IDL Attributes](idl-attributes.md)
+- [COM Attributes](com-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [appobject](appobject.md)

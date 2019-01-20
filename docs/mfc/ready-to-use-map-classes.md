@@ -30,7 +30,6 @@ Uses data of type **WORD** to find `CObject` pointers.
 [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)<br/>
 Uses data of type **WORD** to find **void** pointers.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

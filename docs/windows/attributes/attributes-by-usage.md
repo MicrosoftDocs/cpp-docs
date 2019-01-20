@@ -70,8 +70,8 @@ You must observe these rules for defining an interface:
 
 When not specifying the [uuid](uuid-cpp-attributes.md) attribute and using the same interface name in different attribute projects, the same GUID is generated.
 
-## See Also
+## See also
 
-[C++ Attributes for COM and .NET](cpp-attributes-com-net.md)<br/>
-[Attributes by Group](attributes-by-group.md)<br/>
-[Attributes Alphabetical Reference](attributes-alphabetical-reference.md)
+- [C++ Attributes for COM and .NET](cpp-attributes-com-net.md)
+- [Attributes by Group](attributes-by-group.md)
+- [Attributes Alphabetical Reference](attributes-alphabetical-reference.md)

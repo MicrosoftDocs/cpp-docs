@@ -69,6 +69,6 @@ Programmatically, a consumer typically performs the following sequence of operat
     CoUninitialize();
     ```
 
-## See Also
+## See also
 
-[Creating an OLE DB Consumer](../../data/oledb/creating-an-ole-db-consumer.md)
+- [Creating an OLE DB Consumer](../../data/oledb/creating-an-ole-db-consumer.md)

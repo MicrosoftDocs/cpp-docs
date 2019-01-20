@@ -23,8 +23,7 @@ A tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) sends the foll
 |TVN_SELCHANGING|Signals that the selection is about to be changed from one item to another|
 |TVN_SETDISPINFO|Notification to update the information maintained for an item|
 
-## See Also
+## See also
 
-[Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CTreeCtrl](../mfc/using-ctreectrl.md)
+- [Controls](../mfc/controls-mfc.md)

@@ -13,7 +13,6 @@ When a document is closing, the framework first calls its [DeleteContents](../mf
 
 You can override a view's destructor to deallocate any memory you allocated on the heap.
 
-## See Also
+## See also
 
-[Initializing and Cleaning Up Documents and Views](../mfc/initializing-and-cleaning-up-documents-and-views.md)
-
+- [Initializing and Cleaning Up Documents and Views](../mfc/initializing-and-cleaning-up-documents-and-views.md)

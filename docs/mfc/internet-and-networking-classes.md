@@ -15,7 +15,6 @@ The following categories of classes support connectivity.
 
 - [Win32 Internet Classes](../mfc/win32-internet-classes.md)
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

@@ -62,7 +62,7 @@ Returns a `T*` pointer to the start of the memory-mapped file.
 
 Calls [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) and reinterprets the returned pointer as a `T*` where *T* is the type used as the template parameter of this class.
 
-## See Also
+## See also
 
-[CAtlFileMappingBase Class](../../atl/reference/catlfilemappingbase-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CAtlFileMappingBase Class](../../atl/reference/catlfilemappingbase-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -32,4 +32,4 @@ The scoped **enum** defines the values that can be returned by `get_pointer_safe
 
 ## See also
 
-[\<memory>](../standard-library/memory.md)<br/>
+- [\<memory>](../standard-library/memory.md)

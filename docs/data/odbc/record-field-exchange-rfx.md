@@ -33,10 +33,10 @@ The following topics explain the details of using recordset objects:
 
 - [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
-[Database Support, MFC Application Wizard](../../mfc/reference/database-support-mfc-application-wizard.md)<br/>
-[CRecordset Class](../../mfc/reference/crecordset-class.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)
+- [Database Support, MFC Application Wizard](../../mfc/reference/database-support-mfc-application-wizard.md)
+- [CRecordset Class](../../mfc/reference/crecordset-class.md)

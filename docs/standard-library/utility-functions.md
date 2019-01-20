@@ -296,4 +296,4 @@ One advantage of `swap` is that the types of objects that are being stored are d
 
 ## See also
 
-[\<utility>](../standard-library/utility.md)<br/>
+- [\<utility>](../standard-library/utility.md)

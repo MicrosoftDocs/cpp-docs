@@ -42,5 +42,5 @@ The C++ Standard Library algorithms are located in the [\<algorithm>](../standar
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

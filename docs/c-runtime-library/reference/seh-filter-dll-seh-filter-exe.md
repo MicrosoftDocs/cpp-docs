@@ -60,4 +60,4 @@ These methods are called by the exception-filter expression of the [try-except S
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)

@@ -32,7 +32,6 @@ The MFC framework creates document frame windows — and their views and documen
 
 - [The frame window's role in printing and print preview](../mfc/orchestrating-other-window-actions.md)
 
-## See Also
+## See also
 
-[Frame Windows](../mfc/frame-windows.md)
-
+- [Frame Windows](../mfc/frame-windows.md)

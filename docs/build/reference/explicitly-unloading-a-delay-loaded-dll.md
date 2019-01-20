@@ -47,6 +47,6 @@ Important notes on unloading a delay-loaded DLL:
 
 See [Unloading a Delay-Loaded DLL](../../build/reference/unloading-a-delay-loaded-dll.md) for more information.
 
-## See Also
+## See also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+- [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)

@@ -16,8 +16,7 @@ The following map entries correspond to the function prototypes.
 |ON_THREAD_MESSAGE( \<message>, \<memberFxn> )|afx_msg void memberFxn( WPARAM, LPARAM );|
 |ON_REGISTERED_THREAD_MESSAGE( \<nMessageVariable>, \<memberFxn> )|afx_msg void memberFxn( WPARAM, LPARAM );|
 
-## See Also
+## See also
 
-[Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
-[Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-
+- [Message Maps](../../mfc/reference/message-maps-mfc.md)
+- [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)

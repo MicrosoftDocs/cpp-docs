@@ -81,8 +81,8 @@ fffffffffffffff0
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__ll_lshift](../intrinsics/ll-lshift.md)<br/>
-[__ull_rshift](../intrinsics/ull-rshift.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__ll_lshift](../intrinsics/ll-lshift.md)
+- [__ull_rshift](../intrinsics/ull-rshift.md)

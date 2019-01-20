@@ -865,9 +865,9 @@ a CAge at $4D98 40
 a CAge at $4DB8 65
 ```
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CStringList Class](../../mfc/reference/cstringlist-class.md)<br/>
-[CPtrList Class](../../mfc/reference/cptrlist-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CStringList Class](../../mfc/reference/cstringlist-class.md)
+- [CPtrList Class](../../mfc/reference/cptrlist-class.md)

@@ -12,6 +12,6 @@ You can use the MFC Application Wizard or **Add Class** (as described in [Adding
 
 The record view and its recordset are destroyed when you close the document. For more information about record views, see [Record Views](../../data/record-views-mfc-data-access.md). For more information about RFX, see [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
-## See Also
+## See also
 
-[ODBC and MFC](../../data/odbc/odbc-and-mfc.md)
+- [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)

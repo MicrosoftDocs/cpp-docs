@@ -21,11 +21,10 @@ An icon is registered for each document template based on its position in the ap
 
 For example, a document template is the third of three for the application. If there is an Icon resource in the application at index 3, that icon is used for the document template. If not, the icon at index 0 is used as a default.
 
-## See Also
+## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)<br/>
-[Document Template Creation](../mfc/document-template-creation.md)<br/>
-[Document/View Creation](../mfc/document-view-creation.md)<br/>
-[Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)<br/>
-[Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
-
+- [General MFC Topics](../mfc/general-mfc-topics.md)
+- [Document Template Creation](../mfc/document-template-creation.md)
+- [Document/View Creation](../mfc/document-view-creation.md)
+- [Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)
+- [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)

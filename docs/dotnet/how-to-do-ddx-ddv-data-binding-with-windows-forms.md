@@ -74,8 +74,8 @@ m_MyControl.GetControl()->textBox1->Text = "hello";
 
 You can now build and run the application. Notice that any text in the text box will be displayed in a pop-up message box when the application closes.
 
-## See Also
+## See also
 
-[CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md)<br/>
-[DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)<br/>
-[CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange)
+- [CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md)
+- [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)
+- [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange)

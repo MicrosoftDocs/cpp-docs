@@ -19,4 +19,4 @@ Each argument passed to the procedure may be an expression, a register pair, or 
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

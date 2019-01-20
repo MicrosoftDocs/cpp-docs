@@ -85,6 +85,6 @@ For a sample that shows how to use **_putenv_s**, see [getenv_s, _wgetenv_s](get
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[getenv, _wgetenv](getenv-wgetenv.md)<br/>
-[_searchenv, _wsearchenv](searchenv-wsearchenv.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [getenv, _wgetenv](getenv-wgetenv.md)
+- [_searchenv, _wsearchenv](searchenv-wsearchenv.md)

@@ -27,7 +27,6 @@ The following table lists the classes shared between MFC and ATL.
 |[CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)|An amount of time, which is internally stored as the number of seconds in the time span.|atltime.h|
 |[IAtlStringMgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)|Represents the interface to a `CStringT` memory manager.|atlsimpstr.h|
 
-## See Also
+## See also
 
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-
+- [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

@@ -399,8 +399,8 @@ Rvalue references distinguish lvalues from rvalues. They can help you improve th
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)<br/>
-[Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>
-[Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)<br/>
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
+- [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)
+- [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)
+- [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)
+- [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md)
+- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

@@ -14,7 +14,6 @@ As usual in I/O operations, once you finish with a file, you must close it.
 
 If you allocated the [CFile](../mfc/reference/cfile-class.md) object on the frame (as in the example shown in [Opening Files](../mfc/opening-files.md)), the object will automatically be closed and then destroyed when it goes out of scope. Note that deleting the `CFile` object does not delete the physical file in the file system.
 
-## See Also
+## See also
 
-[Files](../mfc/files-in-mfc.md)
-
+- [Files](../mfc/files-in-mfc.md)

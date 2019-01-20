@@ -141,10 +141,10 @@ Assigns the contents of one property set to another property set.
 CDBPropSet& operator =(CDBPropSet& propset) throw();
 ```
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CDBPropIDSet Class](../../data/oledb/cdbpropidset-class.md)<br/>
-[DBPROPSET Structure](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85))
-[DBPROP Structure](https://docs.microsoft.com/previous-versions/windows/desktop/ms717970(v=vs.85))
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [CDBPropIDSet Class](../../data/oledb/cdbpropidset-class.md)
+- [DBPROPSET Structure](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85))
+- [DBPROP Structure](https://docs.microsoft.com/previous-versions/windows/desktop/ms717970(v=vs.85))

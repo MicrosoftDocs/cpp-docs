@@ -19,4 +19,4 @@ Same as [%OUT](../../assembler/masm/percent-out.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

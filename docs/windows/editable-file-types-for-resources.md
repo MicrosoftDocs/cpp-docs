@@ -23,6 +23,6 @@ You can open the following types of files and edit the resources they contain.
 
 Win32
 
-## See Also
+## See also
 
-[Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)

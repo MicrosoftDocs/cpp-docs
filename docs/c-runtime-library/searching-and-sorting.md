@@ -22,6 +22,6 @@ Use the following functions for searching and sorting.
 |[qsort](../c-runtime-library/reference/qsort.md)|Quick sort|
 |[qsort_s](../c-runtime-library/reference/qsort-s.md)|A more secure version of **qsort**|
 
-## See Also
+## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

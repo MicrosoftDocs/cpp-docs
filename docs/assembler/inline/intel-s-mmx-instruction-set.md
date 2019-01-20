@@ -15,4 +15,4 @@ The Visual C++ compiler allows you to use Intel's MMX (multimedia extension) ins
 
 ## See also
 
-[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>
+- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)

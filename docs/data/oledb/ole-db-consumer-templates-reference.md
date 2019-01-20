@@ -126,7 +126,7 @@ Used as an index for accessing data in a rowset.
 [CDBErrorInfo](../../data/oledb/cdberrorinfo-class.md)<br/>
 Used to retrieve OLE DB error information.
 
-## See Also
+## See also
 
-[OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
-[OLE DB Templates](../../data/oledb/ole-db-templates.md)
+- [OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)
+- [OLE DB Templates](../../data/oledb/ole-db-templates.md)

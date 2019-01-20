@@ -120,9 +120,9 @@ A pointer to a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) stru
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md)<br/>
-[CMFCPropertyGridProperty Class](../../mfc/reference/cmfcpropertygridproperty-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md)
+- [CMFCPropertyGridProperty Class](../../mfc/reference/cmfcpropertygridproperty-class.md)

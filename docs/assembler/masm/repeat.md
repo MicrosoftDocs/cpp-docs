@@ -17,4 +17,4 @@ Marks a block that is to be repeated *expression* times. Same as [REPT](../../as
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

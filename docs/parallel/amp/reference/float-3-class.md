@@ -200,6 +200,6 @@ The object used to initialize.
 static const int size = 3;
 ```
 
-## See Also
+## See also
 
-[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

@@ -483,4 +483,4 @@ Pair p1 is greater than or equal to pair p4.
 
 ## See also
 
-[\<utility>](../standard-library/utility.md)<br/>
+- [\<utility>](../standard-library/utility.md)

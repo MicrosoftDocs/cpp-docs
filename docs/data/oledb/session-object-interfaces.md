@@ -33,6 +33,6 @@ The session object creates a rowset object. If the provider supports commands, t
 
 ![Provider conceptual diagram](../../data/oledb/media/vc4u551.gif "Provider conceptual diagram")
 
-## See Also
+## See also
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

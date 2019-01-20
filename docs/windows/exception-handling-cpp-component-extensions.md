@@ -34,6 +34,6 @@ Demonstrates how to catch all unhandled exceptions.
 [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)<br/>
 Describes exception handling in standard C++.
 
-## See Also
+## See also
 
-[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)
+- [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

@@ -155,8 +155,8 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Zs](zs-syntax-check-only.md)|Checks syntax only.|
 |[/ZW](zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|
 
-## See Also
+## See also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+- [C/C++ Building Reference](c-cpp-building-reference.md)
+- [Compiler Options](compiler-options.md)
+- [Setting Compiler Options](setting-compiler-options.md)

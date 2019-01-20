@@ -1210,9 +1210,9 @@ This method calculates how many calendars can fit in the rectangle specified by 
 
 This method sends the [MCM_SIZERECTTOMIN](/windows/desktop/Controls/mcm-sizerecttomin) message, which is described in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDateTimeCtrl Class](../../mfc/reference/cdatetimectrl-class.md)
+- [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDateTimeCtrl Class](../../mfc/reference/cdatetimectrl-class.md)

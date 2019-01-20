@@ -41,6 +41,6 @@ Macros can be undefined from the command line using the `/U` option, followed by
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Preprocessor Directives](../preprocessor/preprocessor-directives.md)
+- [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

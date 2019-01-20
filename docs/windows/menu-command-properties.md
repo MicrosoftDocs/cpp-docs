@@ -27,6 +27,6 @@ The information below is organized according to the **Menu** properties that app
 
 Win32
 
-## See Also
+## See also
 
-[Menu Editor](../windows/menu-editor.md)
+- [Menu Editor](../windows/menu-editor.md)

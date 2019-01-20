@@ -95,8 +95,8 @@ Information retrieved by the [CDaoWorkspace::GetDatabaseInfo](../../mfc/referenc
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
-[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoWorkspace Class](../../mfc/reference/cdaoworkspace-class.md)<br/>
-[CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)
+- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+- [CDaoWorkspace Class](../../mfc/reference/cdaoworkspace-class.md)
+- [CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)

@@ -32,6 +32,6 @@ Now test the methods that are not part of the UI.
 
 To learn more about the various elements and files that make up an ATL DHTML control, see [Identifying the Elements of the DHTML Control Project](../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 
-## See Also
+## See also
 
-[Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)
+- [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)

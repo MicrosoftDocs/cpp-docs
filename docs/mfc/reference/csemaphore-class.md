@@ -82,8 +82,7 @@ To access or release a `CSemaphore` object, create a [CMultiLock](../../mfc/refe
 > [!IMPORTANT]
 >  After creating the `CSemaphore` object, use [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) to ensure that the mutex did not already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.
 
-## See Also
+## See also
 
-[CSyncObject Class](../../mfc/reference/csyncobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [CSyncObject Class](../../mfc/reference/csyncobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

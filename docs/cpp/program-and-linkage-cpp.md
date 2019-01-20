@@ -53,4 +53,4 @@ See [extern](extern-cpp.md) for more information.
 
 ## See also
 
-[Basic Concepts](../cpp/basic-concepts-cpp.md)
+- [Basic Concepts](../cpp/basic-concepts-cpp.md)

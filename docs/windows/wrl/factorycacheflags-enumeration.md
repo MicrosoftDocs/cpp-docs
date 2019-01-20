@@ -31,6 +31,6 @@ By default, the factory caching policy is specified as the [ModuleType](modulety
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
-[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)
+- [Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

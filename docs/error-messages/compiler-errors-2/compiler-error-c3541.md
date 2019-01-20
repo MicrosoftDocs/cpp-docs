@@ -27,8 +27,8 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)<br/>
-[/Zc:auto (Deduce Variable Type)](../../build/reference/zc-auto-deduce-variable-type.md)<br/>
-[typeid](../../windows/typeid-cpp-component-extensions.md)
+- [auto Keyword](../../cpp/auto-keyword.md)
+- [/Zc:auto (Deduce Variable Type)](../../build/reference/zc-auto-deduce-variable-type.md)
+- [typeid](../../windows/typeid-cpp-component-extensions.md)

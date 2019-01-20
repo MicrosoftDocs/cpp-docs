@@ -72,7 +72,7 @@ The termination handler is not called if a process is killed in the middle of ex
 
 ## See also
 
-[Writing a Termination Handler](../cpp/writing-a-termination-handler.md)<br/>
-[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Termination-Handler Syntax](/windows/desktop/Debug/termination-handler-syntax)
+- [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)
+- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [Termination-Handler Syntax](/windows/desktop/Debug/termination-handler-syntax)

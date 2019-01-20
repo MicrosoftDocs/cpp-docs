@@ -229,4 +229,4 @@ An **unsigned __int64** value to be copied into the new `_variant_t` object.
 
 ## See also
 
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

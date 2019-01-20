@@ -39,8 +39,7 @@ For more information, see:
 
 - [Windows Sockets: Datagram Sockets](../mfc/windows-sockets-datagram-sockets.md)
 
-## See Also
+## See also
 
-[Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
-[CAsyncSocket::OnSend](../mfc/reference/casyncsocket-class.md#onsend)
-
+- [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
+- [CAsyncSocket::OnSend](../mfc/reference/casyncsocket-class.md#onsend)

@@ -10,6 +10,6 @@ Use ODBC in environments where multiple users are working with the same ODBC dat
 
 ## In This Section
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

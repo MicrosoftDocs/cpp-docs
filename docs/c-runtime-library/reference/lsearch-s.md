@@ -78,7 +78,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch_s](bsearch-s.md)<br/>
-[_lfind_s](lfind-s.md)<br/>
-[_lsearch](lsearch.md)<br/>
+- [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)
+- [bsearch_s](bsearch-s.md)
+- [_lfind_s](lfind-s.md)
+- [_lsearch](lsearch.md)

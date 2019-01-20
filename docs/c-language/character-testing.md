@@ -18,6 +18,6 @@ The following list describes these functions as they are implemented by the Micr
 |`isprint`|Characters A-Z, a-z, 0 - 9, punctuation, space ASCII 32-126|
 |`isupper`|Characters A-Z ASCII 65-90|
 
-## See Also
+## See also
 
-[Library Functions](../c-language/library-functions.md)
+- [Library Functions](../c-language/library-functions.md)

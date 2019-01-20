@@ -337,4 +337,4 @@ List c1 is greater than or equal to list c2.
 
 ## See also
 
-[\<list>](../standard-library/list.md)<br/>
+- [\<list>](../standard-library/list.md)

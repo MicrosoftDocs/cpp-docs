@@ -30,5 +30,5 @@ The resulting value is pushed onto the top of the floating-point stack.
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)<br/>
+- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+- [sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)

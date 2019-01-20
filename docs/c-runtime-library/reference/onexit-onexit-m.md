@@ -102,7 +102,7 @@ This is executed next.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[atexit](atexit.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[__dllonexit](../../c-runtime-library/dllonexit.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [atexit](atexit.md)
+- [exit, _Exit, _exit](exit-exit-exit.md)
+- [__dllonexit](../../c-runtime-library/dllonexit.md)

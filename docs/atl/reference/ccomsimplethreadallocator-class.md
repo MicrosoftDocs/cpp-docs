@@ -57,7 +57,7 @@ You can override `GetThread` to provide a different method of selection or to ma
 
 `GetThread` is called by [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).
 
-## See Also
+## See also
 
-[CComApartment Class](../../atl/reference/ccomapartment-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComApartment Class](../../atl/reference/ccomapartment-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -20,9 +20,8 @@ The following `OnInitDialog` function sets up a rectangle, then calls `Create` t
 
 After creating the edit object, you can also set the input focus to the control by calling the `SetFocus` member function. Finally, you return 0 from `OnInitDialog` to show that you set the focus. If you return a nonzero value, the dialog manager sets the focus to the first control item in the dialog item list. In most cases, you'll want to add controls to your dialog boxes with the dialog editor.
 
-## See Also
+## See also
 
-[Making and Using Controls](../mfc/making-and-using-controls.md)<br/>
-[Controls](../mfc/controls-mfc.md)<br/>
-[CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
-
+- [Making and Using Controls](../mfc/making-and-using-controls.md)
+- [Controls](../mfc/controls-mfc.md)
+- [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)

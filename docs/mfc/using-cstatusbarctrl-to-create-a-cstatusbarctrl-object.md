@@ -23,8 +23,7 @@ Here is an example of a typical use of [CStatusBarCtrl](../mfc/reference/cstatus
 
 In some cases, the status bar only needs to display a line of text. In this case, make a call to [SetSimple](../mfc/reference/cstatusbarctrl-class.md#setsimple). This puts the status bar control into "simple" mode, which displays a single line of text.
 
-## See Also
+## See also
 
-[Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

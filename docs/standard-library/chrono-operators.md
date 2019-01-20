@@ -390,4 +390,4 @@ The second function returns a value that represents *Left* modulo *Right*.
 
 ## See also
 
-[\<chrono>](../standard-library/chrono.md)<br/>
+- [\<chrono>](../standard-library/chrono.md)

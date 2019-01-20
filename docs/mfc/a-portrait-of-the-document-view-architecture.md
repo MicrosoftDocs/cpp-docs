@@ -28,7 +28,6 @@ In an application with multiple views of the same document — such as a splitte
 
 - [Alternatives to the document/view architecture](../mfc/alternatives-to-the-document-view-architecture.md)
 
-## See Also
+## See also
 
-[Document/View Architecture](../mfc/document-view-architecture.md)
-
+- [Document/View Architecture](../mfc/document-view-architecture.md)

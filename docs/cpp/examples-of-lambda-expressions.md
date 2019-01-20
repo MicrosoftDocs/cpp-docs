@@ -514,13 +514,13 @@ You can also use lambda expressions with the STL/CLR library. For more informati
 
 ## See also
 
-[Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)<br/>
-[Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)<br/>
-[auto](../cpp/auto-cpp.md)<br/>
-[function Class](../standard-library/function-class.md)<br/>
-[find_if](../standard-library/algorithm-functions.md#find_if)<br/>
-[\<algorithm>](../standard-library/algorithm.md)<br/>
-[Function Call](../cpp/function-call-cpp.md)<br/>
-[Templates](../cpp/templates-cpp.md)<br/>
-[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)<br/>
-[STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)
+- [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)
+- [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)
+- [auto](../cpp/auto-cpp.md)
+- [function Class](../standard-library/function-class.md)
+- [find_if](../standard-library/algorithm-functions.md#find_if)
+- [\<algorithm>](../standard-library/algorithm.md)
+- [Function Call](../cpp/function-call-cpp.md)
+- [Templates](../cpp/templates-cpp.md)
+- [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)
+- [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)

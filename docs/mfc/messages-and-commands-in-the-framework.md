@@ -26,7 +26,6 @@ The following topics introduce the key terms used in the rest of the article fam
 
 - [Command targets](../mfc/command-targets.md)
 
-## See Also
+## See also
 
-[Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
-
+- [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)

@@ -128,12 +128,12 @@ When TRUE, indicates that [CRichEditCtrl::StreamIn](../../mfc/reference/crichedi
 BOOL m_bRTF;
 ```
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
-[COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CRichEditView Class](../../mfc/reference/cricheditview-class.md)<br/>
-[CRichEditCntrItem Class](../../mfc/reference/cricheditcntritem-class.md)<br/>
-[COleDocument Class](../../mfc/reference/coledocument-class.md)<br/>
-[CRichEditCtrl Class](../../mfc/reference/cricheditctrl-class.md)
+- [MFC Sample WORDPAD](../../visual-cpp-samples.md)
+- [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CRichEditView Class](../../mfc/reference/cricheditview-class.md)
+- [CRichEditCntrItem Class](../../mfc/reference/cricheditcntritem-class.md)
+- [COleDocument Class](../../mfc/reference/coledocument-class.md)
+- [CRichEditCtrl Class](../../mfc/reference/cricheditctrl-class.md)

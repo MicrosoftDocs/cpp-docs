@@ -61,4 +61,4 @@ int main()
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)

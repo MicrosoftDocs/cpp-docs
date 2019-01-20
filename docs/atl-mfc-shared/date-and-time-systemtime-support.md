@@ -31,6 +31,6 @@ You most likely will not use `CTime` `FILETIME` initialization directly. If you 
 
 - [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)
 
-## See Also
+## See also
 
-[Date and Time](../atl-mfc-shared/date-and-time.md)
+- [Date and Time](../atl-mfc-shared/date-and-time.md)

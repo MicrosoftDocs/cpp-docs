@@ -73,5 +73,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[frexp](frexp.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [frexp](frexp.md)

@@ -116,5 +116,5 @@ Type definition within casts is illegal.
 
 ## See also
 
-[Postfix Expressions](../cpp/postfix-expressions.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Postfix Expressions](../cpp/postfix-expressions.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

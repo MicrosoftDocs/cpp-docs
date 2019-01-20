@@ -88,9 +88,9 @@ The following example demonstrates using these two color properties when paintin
 
 [!code-cpp[NVC_MFC_AxUI#24](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_3.cpp)]
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)<br/>
-[COleControl Class](../mfc/reference/colecontrol-class.md)
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md)
+- [MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)
+- [COleControl Class](../mfc/reference/colecontrol-class.md)

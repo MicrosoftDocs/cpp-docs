@@ -95,9 +95,9 @@ Number of bytes read = 29
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[clearerr](clearerr.md)<br/>
-[feof](feof.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+- [Error Handling](../../c-runtime-library/error-handling-crt.md)
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [clearerr](clearerr.md)
+- [feof](feof.md)
+- [ferror](ferror.md)
+- [perror, _wperror](perror-wperror.md)

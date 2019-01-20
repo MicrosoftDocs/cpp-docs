@@ -225,8 +225,8 @@ STDMETHOD_(ULONG, Release)();
 
 In debug builds, `Release` returns a value that may be useful for diagnostics or testing. In nondebug builds, `Release` always returns 0.
 
-## See Also
+## See also
 
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
-[DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)
+- [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -73,6 +73,6 @@ operator CPoint();
 
 Current value of D2D point.
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

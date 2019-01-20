@@ -149,9 +149,9 @@ In the second method overload syntax, TRUE if the method is successful; otherwis
 
 The image that you specify is not stretched to fit the dialog box client area.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md)<br/>
-[CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md)
+- [CContextMenuManager Class](../../mfc/reference/ccontextmenumanager-class.md)

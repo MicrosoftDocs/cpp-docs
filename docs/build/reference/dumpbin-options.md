@@ -59,7 +59,7 @@ DUMPBIN has the following options:
 
 - [/TLS](../../build/reference/tls.md)
 
-## See Also
+## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-[DUMPBIN Reference](../../build/reference/dumpbin-reference.md)
+- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)
+- [DUMPBIN Reference](../../build/reference/dumpbin-reference.md)

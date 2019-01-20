@@ -125,6 +125,6 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[rand](rand.md)<br/>
-[srand](srand.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [rand](rand.md)
+- [srand](srand.md)

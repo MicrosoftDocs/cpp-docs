@@ -66,7 +66,7 @@ For more information, see [Warnings, /sdl, and improving uninitialized variable 
 
 1. On the **General** page, select the option from the **SDL checks** drop-down list.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

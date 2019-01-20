@@ -89,6 +89,6 @@ Time to do 600000000 empty loops is 1.354 seconds
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[difftime, _difftime32, _difftime64](difftime-difftime32-difftime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+- [Time Management](../../c-runtime-library/time-management.md)
+- [difftime, _difftime32, _difftime64](difftime-difftime32-difftime64.md)
+- [time, _time32, _time64](time-time32-time64.md)

@@ -669,12 +669,12 @@ Call this member function only for toolbars that do not follow *Windows Interfac
 
 [!code-cpp[NVC_MFCListView#8](../../atl/reference/codesnippet/cpp/ctoolbar-class_4.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
-[MFC Sample DOCKTOOL](../../visual-cpp-samples.md)<br/>
-[CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CToolBarCtrl Class](../../mfc/reference/ctoolbarctrl-class.md)<br/>
-[CControlBar Class](../../mfc/reference/ccontrolbar-class.md)
+- [MFC Sample CTRLBARS](../../visual-cpp-samples.md)
+- [MFC Sample DLGCBR32](../../visual-cpp-samples.md)
+- [MFC Sample DOCKTOOL](../../visual-cpp-samples.md)
+- [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CToolBarCtrl Class](../../mfc/reference/ctoolbarctrl-class.md)
+- [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)

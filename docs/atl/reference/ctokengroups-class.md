@@ -253,9 +253,9 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 Casts a value to a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure.
 
-## See Also
+## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
-[CSid Class](../../atl/reference/csid-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Security Global Functions](../../atl/reference/security-global-functions.md)
+- [Security Sample](../../visual-cpp-samples.md)
+- [CSid Class](../../atl/reference/csid-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Security Global Functions](../../atl/reference/security-global-functions.md)

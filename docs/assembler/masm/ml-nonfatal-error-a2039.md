@@ -16,4 +16,4 @@ If multiple physical lines are concatenated with the line-continuation character
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

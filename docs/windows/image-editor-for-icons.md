@@ -40,7 +40,7 @@ For information on adding resources to managed projects, please see [Resources i
 
 None
 
-## See Also
+## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Icons](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)
+- [Resource Editors](../windows/resource-editors.md)
+- [Icons](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)

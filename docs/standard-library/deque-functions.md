@@ -34,4 +34,4 @@ See the example for [deque::swap](../standard-library/deque-class.md#swap).
 
 ## See also
 
-[\<deque>](../standard-library/deque.md)<br/>
+- [\<deque>](../standard-library/deque.md)

@@ -34,7 +34,6 @@ For the same control, you can optimize the control's initialization by overridin
 
 Although `Serialize` and `OnResetState` have been overridden, the `DoPropExchange` function should be kept intact because it is still used for persistence in the property-bag format. It is important to maintain all three of these functions to ensure that the control manages its properties consistently, regardless of which persistence mechanism the container uses.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)
-
+- [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)

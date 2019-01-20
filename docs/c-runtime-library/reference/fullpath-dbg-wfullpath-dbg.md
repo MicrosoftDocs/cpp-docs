@@ -80,6 +80,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_fullpath, _wfullpath](fullpath-wfullpath.md)
+- [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

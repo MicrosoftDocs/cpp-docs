@@ -136,6 +136,6 @@ N   N   N   Y   blah.c       Wed Feb 13 09:21:42 2002       1715
 N   N   N   Y   test.c       Wed Feb 06 14:30:44 2002        312
 ```
 
-## See Also
+## See also
 
-[System Calls](../c-runtime-library/system-calls.md)
+- [System Calls](../c-runtime-library/system-calls.md)

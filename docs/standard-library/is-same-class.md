@@ -79,6 +79,6 @@ is_same<int, const int> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_convertible Class](../standard-library/is-convertible-class.md)<br/>
-[is_base_of Class](../standard-library/is-base-of-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_convertible Class](../standard-library/is-convertible-class.md)
+- [is_base_of Class](../standard-library/is-base-of-class.md)

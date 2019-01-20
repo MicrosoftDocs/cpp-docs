@@ -14,4 +14,4 @@ Inline assembly code can use any MASM expression, which is any combination of op
 
 ## See also
 
-[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>
+- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)

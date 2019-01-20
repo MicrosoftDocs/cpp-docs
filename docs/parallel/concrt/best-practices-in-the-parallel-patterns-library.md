@@ -246,18 +246,17 @@ For more information about lambda expressions, see [Lambda Expressions](../../cp
 
 [[Top](#top)]
 
-## See Also
+## See also
 
-[Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
-[Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
-[Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
-[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
-[Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
-[Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
-[Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
-[How to: Use parallel_invoke to Write a Parallel Sort Routine](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br/>
-[How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br/>
-[How to: Use combinable to Improve Performance](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>
-[Best Practices in the Asynchronous Agents Library](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)<br/>
-[General Best Practices in the Concurrency Runtime](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
-
+- [Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)
+- [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)
+- [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)
+- [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)
+- [Cancellation in the PPL](cancellation-in-the-ppl.md)
+- [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)
+- [Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
+- [How to: Use parallel_invoke to Write a Parallel Sort Routine](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)
+- [How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)
+- [How to: Use combinable to Improve Performance](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)
+- [Best Practices in the Asynchronous Agents Library](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)
+- [General Best Practices in the Concurrency Runtime](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)

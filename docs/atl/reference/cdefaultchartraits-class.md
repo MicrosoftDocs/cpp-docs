@@ -70,6 +70,6 @@ static char CharToUpper(char x);
 *x*<br/>
 The character to convert to uppercase.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

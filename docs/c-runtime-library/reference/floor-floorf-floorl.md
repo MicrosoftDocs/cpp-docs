@@ -96,7 +96,7 @@ The ceil of -2.8 is -2.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
-[round, roundf, roundl](round-roundf-roundl.md)<br/>
-[fmod, fmodf](fmod-fmodf.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [ceil, ceilf, ceill](ceil-ceilf-ceill.md)
+- [round, roundf, roundl](round-roundf-roundl.md)
+- [fmod, fmodf](fmod-fmodf.md)

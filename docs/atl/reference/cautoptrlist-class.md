@@ -66,8 +66,8 @@ The block size, with a default of 10.
 
 The block size is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources.
 
-## See Also
+## See also
 
-[CAtlList Class](../../atl/reference/catllist-class.md)<br/>
-[CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CAtlList Class](../../atl/reference/catllist-class.md)
+- [CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

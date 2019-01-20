@@ -46,7 +46,6 @@ Provides a standard dialog box for opening or saving a file.
 [CRecentFileList](../mfc/reference/crecentfilelist-class.md)<br/>
 Maintains the most recently used (MRU) file list.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

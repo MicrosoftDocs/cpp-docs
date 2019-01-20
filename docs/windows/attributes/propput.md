@@ -36,9 +36,9 @@ See the example for [bindable](bindable.md) for a sample use of **propput**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Method Attributes](method-attributes.md)<br/>
-[propget](propget.md)<br/>
-[propputref](propputref.md)
+- [IDL Attributes](idl-attributes.md)
+- [Method Attributes](method-attributes.md)
+- [propget](propget.md)
+- [propputref](propputref.md)

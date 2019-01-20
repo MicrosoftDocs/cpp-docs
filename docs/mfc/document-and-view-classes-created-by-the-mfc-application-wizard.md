@@ -12,7 +12,6 @@ The document class created by the MFC Application Wizard is derived from class [
 
 Some applications might need more than one document class, view class, or frame-window class. For more information, see [Multiple Document Types, Views, and Frame Windows](../mfc/multiple-document-types-views-and-frame-windows.md).
 
-## See Also
+## See also
 
-[Document/View Architecture](../mfc/document-view-architecture.md)
-
+- [Document/View Architecture](../mfc/document-view-architecture.md)

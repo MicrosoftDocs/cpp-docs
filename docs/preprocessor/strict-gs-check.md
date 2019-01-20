@@ -56,7 +56,7 @@ void ** ReverseArray(void **pData,
 }
 ```
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-[/GS (Buffer Security Check)](../build/reference/gs-buffer-security-check.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [/GS (Buffer Security Check)](../build/reference/gs-buffer-security-check.md)

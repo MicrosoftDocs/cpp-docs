@@ -71,6 +71,6 @@ The result of the bitwise AND is 96 decimal.
 
 ## See also
 
-[Bitwise AND Operator: &](../cpp/bitwise-and-operator-amp.md)<br/>
-[Bitwise Exclusive OR Operator: ^](../cpp/bitwise-exclusive-or-operator-hat.md)<br/>
-[Bitwise Inclusive OR Operator: &#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)
+- [Bitwise AND Operator: &](../cpp/bitwise-and-operator-amp.md)
+- [Bitwise Exclusive OR Operator: ^](../cpp/bitwise-exclusive-or-operator-hat.md)
+- [Bitwise Inclusive OR Operator: &#124;](../cpp/bitwise-inclusive-or-operator-pipe.md)

@@ -34,4 +34,4 @@ See the code example for member function [vector::swap](../standard-library/vect
 
 ## See also
 
-[\<vector>](../standard-library/vector.md)<br/>
+- [\<vector>](../standard-library/vector.md)

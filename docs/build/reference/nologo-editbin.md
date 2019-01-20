@@ -15,6 +15,6 @@ ms.assetid: 909a1909-0c99-4bce-8013-bf161d645f19
 
 This option suppresses display of the EDITBIN copyright message and version number.
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+- [EDITBIN Options](../../build/reference/editbin-options.md)

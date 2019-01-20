@@ -145,13 +145,12 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc parallel-scripts.cpp /link ole32.lib**
 
-## See Also
+## See also
 
-[Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
-[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
-[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
-[Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)<br/>
-[Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
-[Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
-[Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-
+- [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
+- [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
+- [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)
+- [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)
+- [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)
+- [Cancellation in the PPL](cancellation-in-the-ppl.md)
+- [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)

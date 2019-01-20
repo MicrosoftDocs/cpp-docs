@@ -86,8 +86,8 @@ HWND m_hWnd;
 
   See the example for [CWindowDC::CWindowDC](#cwindowdc).
 
-## See Also
+## See also
 
-[CDC Class](../../mfc/reference/cdc-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDC Class](../../mfc/reference/cdc-class.md)
+- [CDC Class](../../mfc/reference/cdc-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDC Class](../../mfc/reference/cdc-class.md)

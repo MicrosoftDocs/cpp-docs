@@ -15,4 +15,4 @@ Returns *expression1* times *expression2*.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

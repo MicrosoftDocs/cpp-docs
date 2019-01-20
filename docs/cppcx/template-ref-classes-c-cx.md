@@ -13,8 +13,8 @@ The following example shows how to declare a private ref class as a template, an
 
 [!code-cpp[cx_templates#01](../cppcx/codesnippet/CPP/templatedemo/class1.h#01)]
 
-## See Also
+## See also
 
-[Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+- [Type System (C++/CX)](../cppcx/type-system-c-cx.md)
+- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

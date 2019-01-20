@@ -48,6 +48,6 @@ Describes how to organize project output files.
 [Building C/C++ Programs](../build/building-c-cpp-programs.md)<br>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
-## See Also
+## See also
 
-[Visual Studio SDK](https://msdn.microsoft.com/vstudio/extend)
+- [Visual Studio SDK](https://msdn.microsoft.com/vstudio/extend)

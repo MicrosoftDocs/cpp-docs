@@ -193,4 +193,4 @@ A reference to this sampler instance.
 
 ## See also
 
-[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

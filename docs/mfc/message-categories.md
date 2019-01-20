@@ -30,7 +30,6 @@ Messages in categories 1 and 2 — Windows messages and control notifications �
 
 Messages in category 3 — commands — can be handled by a wider variety of objects: documents, document templates, and the application object itself in addition to windows and views. When a command directly affects some particular object, it makes sense to have that object handle the command. For example, the Open command on the File menu is logically associated with the application: the application opens a specified document upon receiving the command. So the handler for the Open command is a member function of the application class. For more about commands and how they are routed to objects, see [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md).
 
-## See Also
+## See also
 
-[Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
-
+- [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)

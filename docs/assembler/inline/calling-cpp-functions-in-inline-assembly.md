@@ -16,4 +16,4 @@ You can also call any functions declared with **extern "C"** linkage. This allow
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

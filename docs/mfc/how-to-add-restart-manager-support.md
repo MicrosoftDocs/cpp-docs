@@ -33,11 +33,10 @@ By default, MFC applications created by using the project wizard in Visual Studi
 
 1. Compile and run your application.
 
-## See Also
+## See also
 
-[CDataRecoveryHandler Class](../mfc/reference/cdatarecoveryhandler-class.md)<br/>
-[CWinApp::m_dwRestartManagerSupportFlags](../mfc/reference/cwinapp-class.md#m_dwrestartmanagersupportflags)<br/>
-[CWinApp Class](../mfc/reference/cwinapp-class.md)<br/>
-[CWinApp::m_nAutosaveInterval](../mfc/reference/cwinapp-class.md#m_nautosaveinterval)<br/>
-[CDocument::OnDocumentEvent](../mfc/reference/cdocument-class.md#ondocumentevent)
-
+- [CDataRecoveryHandler Class](../mfc/reference/cdatarecoveryhandler-class.md)
+- [CWinApp::m_dwRestartManagerSupportFlags](../mfc/reference/cwinapp-class.md#m_dwrestartmanagersupportflags)
+- [CWinApp Class](../mfc/reference/cwinapp-class.md)
+- [CWinApp::m_nAutosaveInterval](../mfc/reference/cwinapp-class.md#m_nautosaveinterval)
+- [CDocument::OnDocumentEvent](../mfc/reference/cdocument-class.md#ondocumentevent)

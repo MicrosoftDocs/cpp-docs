@@ -77,7 +77,6 @@ To add a message handler for a reflected window message manually do the followin
 
 For an example of how reflected messages are processed, refer to the MFC ActiveX controls sample [BUTTON](../visual-cpp-samples.md). It demonstrates an `OnOcmCommand` handler that detects the BN_CLICKED notification code and responds by firing (sending) a `Click` event.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

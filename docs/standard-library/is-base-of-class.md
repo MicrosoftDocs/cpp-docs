@@ -71,5 +71,5 @@ is_base_of<derived, base> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_convertible Class](../standard-library/is-convertible-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_convertible Class](../standard-library/is-convertible-class.md)

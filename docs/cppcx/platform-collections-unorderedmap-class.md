@@ -356,9 +356,9 @@ The input iterator of the first element after a range of elements used to initia
 
 ## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)<br/>
-[Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)<br/>
-[Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)<br/>
-[Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md)<br/>
-[Collections](../cppcx/collections-c-cx.md)<br/>
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+- [Platform Namespace](platform-namespace-c-cx.md)
+- [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)
+- [Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)
+- [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md)
+- [Collections](../cppcx/collections-c-cx.md)
+- [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

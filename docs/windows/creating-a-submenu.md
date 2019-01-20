@@ -20,6 +20,6 @@ For information on adding resources to managed projects, please see [Resources i
 
 Win32
 
-## See Also
+## See also
 
-[Menu Editor](../windows/menu-editor.md)
+- [Menu Editor](../windows/menu-editor.md)

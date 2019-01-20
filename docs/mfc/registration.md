@@ -42,10 +42,10 @@ The `ConnectTemplate` function takes three parameters: the server's *CLSID*, a p
 
 If you are writing a miniserver, by definition it will always be launched by a container. You should still parse the command line to check for the "/Embedding" option. The absence of this option on the command line means that the user has tried to launch the miniserver as a stand-alone application. If this occurs, register the server with the system registration database and then display a message box informing the user to launch the miniserver from a container application.
 
-## See Also
+## See also
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[Servers](../mfc/servers.md)<br/>
-[CWinApp::RunAutomated](../mfc/reference/cwinapp-class.md#runautomated)<br/>
-[CWinApp::RunEmbedded](../mfc/reference/cwinapp-class.md#runembedded)<br/>
-[COleTemplateServer Class](../mfc/reference/coletemplateserver-class.md)
+- [OLE](../mfc/ole-in-mfc.md)
+- [Servers](../mfc/servers.md)
+- [CWinApp::RunAutomated](../mfc/reference/cwinapp-class.md#runautomated)
+- [CWinApp::RunEmbedded](../mfc/reference/cwinapp-class.md#runembedded)
+- [COleTemplateServer Class](../mfc/reference/coletemplateserver-class.md)

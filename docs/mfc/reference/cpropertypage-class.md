@@ -531,13 +531,13 @@ The framework keeps track of which pages are "dirty," that is, property pages fo
 
 [!code-cpp[NVC_MFCDocView#127](../../mfc/codesnippet/cpp/cpropertypage-class_17.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
-[MFC Sample PROPDLG](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
-[CDialog Class](../../mfc/reference/cdialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CPropertySheet Class](../../mfc/reference/cpropertysheet-class.md)<br/>
-[CDialog Class](../../mfc/reference/cdialog-class.md)
+- [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)
+- [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)
+- [MFC Sample PROPDLG](../../visual-cpp-samples.md)
+- [MFC Sample SNAPVW](../../visual-cpp-samples.md)
+- [CDialog Class](../../mfc/reference/cdialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CPropertySheet Class](../../mfc/reference/cpropertysheet-class.md)
+- [CDialog Class](../../mfc/reference/cdialog-class.md)

@@ -56,7 +56,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[ftell, _ftelli64](ftell-ftelli64.md)<br/>
-[_lseek, _lseeki64](lseek-lseeki64.md)<br/>
-[rewind](rewind.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [ftell, _ftelli64](ftell-ftelli64.md)
+- [_lseek, _lseeki64](lseek-lseeki64.md)
+- [rewind](rewind.md)

@@ -12,7 +12,6 @@ The following class provides support for retrieving class information:
 
 - [IProvideClassInfo2Impl](../atl/reference/iprovideclassinfo2impl-class.md) Provides access to type information. Retrieves the outgoing IID for the object's default event set.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

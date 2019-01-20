@@ -8,7 +8,6 @@ ms.assetid: 4db838d5-62cf-4123-915a-66e514155c0c
 
 The frame window can respond to dynamic data exchange (DDE) requests to open files from the File Manager (if the file extension is registered or associated with the application). See [Shell Registration](../mfc/special-cwinapp-services.md).
 
-## See Also
+## See also
 
-[Using Frame Windows](../mfc/using-frame-windows.md)
-
+- [Using Frame Windows](../mfc/using-frame-windows.md)

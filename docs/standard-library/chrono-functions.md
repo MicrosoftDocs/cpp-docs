@@ -46,4 +46,4 @@ Unless `To` is an instantiation of [duration](../standard-library/duration-class
 
 ## See also
 
-[\<chrono>](../standard-library/chrono.md)<br/>
+- [\<chrono>](../standard-library/chrono.md)

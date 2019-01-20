@@ -13,6 +13,6 @@ Right shifts preserve the sign bit of signed integral types. When a signed integ
 
 When an unsigned integer shifts right, the most-significant bit is cleared. For example, if 0xF000 is unsigned, the result is 0x7800. Shifting an `unsigned` or positive `int` right 32 times produces 0x00000000.
 
-## See Also
+## See also
 
-[Integers](../c-language/integers.md)
+- [Integers](../c-language/integers.md)

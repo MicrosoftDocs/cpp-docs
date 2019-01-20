@@ -14,11 +14,10 @@ The free threaded marshaler allows direct access to interfaces on your object fr
 
 When using this option, classes must take responsibility for the thread-safety of their data. In addition, objects that aggregate the free threaded marshaler and need to use interface pointers obtained from other objects must take extra steps to ensure that the interfaces are correctly marshaled. Typically this involves storing the interface pointers in the global interface table (GIT) and getting the pointer from the GIT each time it is used. ATL provides the class [CComGITPtr](../atl/reference/ccomgitptr-class.md) to help you use interface pointers stored in the GIT.
 
-## See Also
+## See also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
-[CoCreateFreeThreadedMarshaler](/windows/desktop/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)<br/>
-[IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal)<br/>
-[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
-[In-Process Server Threading Issues](/windows/desktop/com/in-process-server-threading-issues)
-
+- [Concepts](../atl/active-template-library-atl-concepts.md)
+- [CoCreateFreeThreadedMarshaler](/windows/desktop/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)
+- [IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal)
+- [When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)
+- [In-Process Server Threading Issues](/windows/desktop/com/in-process-server-threading-issues)

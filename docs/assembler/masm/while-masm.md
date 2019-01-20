@@ -17,4 +17,4 @@ Repeats assembly of block *statements* as long as *expression* remains true.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

@@ -160,6 +160,6 @@ The number of increments.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
-[File System Navigation (C++)](../standard-library/file-system-navigation.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<filesystem>](../standard-library/filesystem.md)
+- [File System Navigation (C++)](../standard-library/file-system-navigation.md)

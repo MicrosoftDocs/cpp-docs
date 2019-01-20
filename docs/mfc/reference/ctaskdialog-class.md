@@ -1500,9 +1500,9 @@ The values for *wParam* and *lParam* depend on the specific generated message. I
 |TDN_HELP|Not used.|Not used.|
 |TDN_EXPANDO_BUTTON_CLICKED|0 if the expansion area is collapsed; nonzero if the expansion text is displayed.|Not used.|
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Walkthrough: Adding a CTaskDialog to an Application](../../mfc/walkthrough-adding-a-ctaskdialog-to-an-application.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Walkthrough: Adding a CTaskDialog to an Application](../../mfc/walkthrough-adding-a-ctaskdialog-to-an-application.md)

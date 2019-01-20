@@ -10,5 +10,5 @@ The principal limitation to using exception handlers in code is that you cannot 
 
 ## See also
 
-[Writing an Exception Handler](../cpp/writing-an-exception-handler.md)<br/>
-[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+- [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)
+- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

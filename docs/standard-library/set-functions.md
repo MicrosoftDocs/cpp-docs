@@ -70,4 +70,4 @@ See the code example for the member class [multiset::swap](../standard-library/m
 
 ## See also
 
-[\<set>](../standard-library/set.md)<br/>
+- [\<set>](../standard-library/set.md)

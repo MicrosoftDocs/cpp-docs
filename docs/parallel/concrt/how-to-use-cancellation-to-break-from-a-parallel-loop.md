@@ -22,9 +22,9 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc parallel-array-search.cpp**
 
-## See Also
+## See also
 
-[Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
-[Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
-[parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)<br/>
-[cancellation_token_source Class](../../parallel/concrt/reference/cancellation-token-source-class.md)
+- [Cancellation in the PPL](cancellation-in-the-ppl.md)
+- [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)
+- [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
+- [cancellation_token_source Class](../../parallel/concrt/reference/cancellation-token-source-class.md)

@@ -31,8 +31,7 @@ The following map entries on the left correspond to the function prototypes on t
 |ON_WM_ERASEBKGND()|afx_msg BOOL [OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd)(CDC*);|
 |ON_WM_EXITSIZEMOVE()|afx_msg void [OnExitSizeMove](../../mfc/reference/cwnd-class.md#onexitsizemove)();|
 
-## See Also
+## See also
 
-[Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
-[Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-
+- [Message Maps](../../mfc/reference/message-maps-mfc.md)
+- [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)

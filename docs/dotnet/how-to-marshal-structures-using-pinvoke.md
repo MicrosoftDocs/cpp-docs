@@ -121,6 +121,6 @@ int main() {
 [managed] x=50 y=50
 ```
 
-## See Also
+## See also
 
-[Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+- [Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

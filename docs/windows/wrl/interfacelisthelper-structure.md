@@ -87,6 +87,6 @@ The **InterfaceListHelper** template uses template parameter *T0* to define the 
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
-[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)
+- [Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

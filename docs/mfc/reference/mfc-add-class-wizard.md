@@ -108,7 +108,7 @@ In this page, specify the class name, the base class, and file names for the new
 
   See [Document Templates and the Document/View Creation Process](../../mfc/document-templates-and-the-document-view-creation-process.md) for more information.
 
-## See Also
+## See also
 
-[MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>
-[Adding a Class](../../ide/adding-a-class-visual-cpp.md)
+- [MFC Class](../../mfc/reference/adding-an-mfc-class.md)
+- [Adding a Class](../../ide/adding-a-class-visual-cpp.md)

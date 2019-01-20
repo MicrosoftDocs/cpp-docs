@@ -109,8 +109,8 @@ nonexistentvariable = (null)
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
-[_dupenv_s_dbg, _wdupenv_s_dbg](dupenv-s-dbg-wdupenv-s-dbg.md)<br/>
-[getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)<br/>
-[_putenv_s, _wputenv_s](putenv-s-wputenv-s.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [Environmental Constants](../../c-runtime-library/environmental-constants.md)
+- [_dupenv_s_dbg, _wdupenv_s_dbg](dupenv-s-dbg-wdupenv-s-dbg.md)
+- [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)
+- [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md)

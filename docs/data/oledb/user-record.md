@@ -55,6 +55,6 @@ When a user record is created at run time, `GetColumnInfo` uses the *pThis* para
 
 For a more detailed example of how to override `GetColumnInfo` in a user record, see [Dynamically Determining Columns Returned to the Consumer](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
 
-## See Also
+## See also
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

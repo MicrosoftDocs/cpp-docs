@@ -284,5 +284,5 @@ The type definition is a synonym for **int**.
 
 ## See also
 
-[error_category Class](../standard-library/error-category-class.md)<br/>
-[<system_error>](../standard-library/system-error.md)<br/>
+- [error_category Class](../standard-library/error-category-class.md)
+- [<system_error>](../standard-library/system-error.md)

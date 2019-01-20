@@ -45,5 +45,5 @@ Class `CString` uses `_TCHAR` as its base and provides constructors and operator
 
 ## See also
 
-[Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
-[Support for Using wmain](../text/support-for-using-wmain.md)
+- [Text and Strings](../text/text-and-strings-in-visual-cpp.md)
+- [Support for Using wmain](../text/support-for-using-wmain.md)

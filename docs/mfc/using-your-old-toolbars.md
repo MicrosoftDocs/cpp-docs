@@ -23,7 +23,6 @@ You can't edit old-style toolbars with the toolbar resource editor.
 
 - [Working with the toolbar control](../mfc/working-with-the-toolbar-control.md)
 
-## See Also
+## See also
 
-[MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-
+- [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)

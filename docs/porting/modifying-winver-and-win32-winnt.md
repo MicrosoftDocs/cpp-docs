@@ -47,6 +47,6 @@ You can also define this macro by using the `/D` compiler option. For more infor
 
 For more information about the meanings of these macros, see [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers).
 
-## See Also
+## See also
 
-[Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)
+- [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)

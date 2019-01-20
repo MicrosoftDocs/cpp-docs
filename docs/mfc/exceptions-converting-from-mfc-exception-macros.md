@@ -96,4 +96,4 @@ For more information, see [Exceptions: Using MFC Macros and C++ Exceptions](../m
 
 ## See also
 
-[Exception Handling](../mfc/exception-handling-in-mfc.md)<br/>
+- [Exception Handling](../mfc/exception-handling-in-mfc.md)

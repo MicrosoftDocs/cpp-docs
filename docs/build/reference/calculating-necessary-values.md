@@ -34,6 +34,6 @@ CountOfImports(PCImgThunkData pitdBase) {
     }
 ```
 
-## See Also
+## See also
 
-[Understanding the Helper Function](understanding-the-helper-function.md)
+- [Understanding the Helper Function](understanding-the-helper-function.md)

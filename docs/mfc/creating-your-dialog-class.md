@@ -22,8 +22,7 @@ In the .CPP file:
 
 - An override of the [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) member function. Edit this function. It is used for dialog data exchange and validation capabilities as described later in [Dialog data exchange and validation](../mfc/dialog-data-exchange-and-validation.md).
 
-## See Also
+## See also
 
-[Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-
+- [Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md)
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

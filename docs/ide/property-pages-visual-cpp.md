@@ -117,5 +117,5 @@ Notice that a property page only displays the settings at the current level for 
 
 ## See also
 
-[How to: Create and Remove Project Dependencies](/visualstudio/ide/how-to-create-and-remove-project-dependencies)<br>
-[How to: Create and Edit Configurations](/visualstudio/ide/how-to-create-and-edit-configurations)
+- [How to: Create and Remove Project Dependencies](/visualstudio/ide/how-to-create-and-remove-project-dependencies)
+- [How to: Create and Edit Configurations](/visualstudio/ide/how-to-create-and-edit-configurations)

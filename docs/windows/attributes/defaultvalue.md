@@ -59,12 +59,12 @@ __interface IFireTabCtrl : IDispatch {
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)<br/>
-[out](out-cpp.md)<br/>
-[retval](retval.md)<br/>
-[in](in-cpp.md)<br/>
-[pointer_default](pointer-default.md)<br/>
-[unique](unique-cpp.md)
+- [IDL Attributes](idl-attributes.md)
+- [Parameter Attributes](parameter-attributes.md)
+- [out](out-cpp.md)
+- [retval](retval.md)
+- [in](in-cpp.md)
+- [pointer_default](pointer-default.md)
+- [unique](unique-cpp.md)

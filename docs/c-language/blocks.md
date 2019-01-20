@@ -10,6 +10,6 @@ A sequence of declarations, definitions, and statements enclosed within curly br
 
 Note that while all compound statements are enclosed within curly braces, not everything enclosed within curly braces constitutes a compound statement. For example, although the specifications of array, structure, or enumeration elements can appear within curly braces, they are not compound statements.
 
-## See Also
+## See also
 
-[Source Files and Source Programs](../c-language/source-files-and-source-programs.md)
+- [Source Files and Source Programs](../c-language/source-files-and-source-programs.md)

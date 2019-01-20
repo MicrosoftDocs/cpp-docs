@@ -27,8 +27,8 @@ You can change the value of `_fmode` in three ways:
 
 - Change the value of `_fmode` directly by setting it in your program.
 
-## See Also
+## See also
 
-[Global Variables](../c-runtime-library/global-variables.md)<br/>
-[_get_fmode](../c-runtime-library/reference/get-fmode.md)<br/>
-[_set_fmode](../c-runtime-library/reference/set-fmode.md)
+- [Global Variables](../c-runtime-library/global-variables.md)
+- [_get_fmode](../c-runtime-library/reference/get-fmode.md)
+- [_set_fmode](../c-runtime-library/reference/set-fmode.md)

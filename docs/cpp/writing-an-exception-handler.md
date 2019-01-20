@@ -24,4 +24,4 @@ Exception handlers use the try-except statement.
 
 ## See also
 
-[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

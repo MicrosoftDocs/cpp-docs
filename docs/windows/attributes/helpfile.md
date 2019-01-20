@@ -41,12 +41,12 @@ See the example for [module](module-cpp.md) for an example of how to use **helpf
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Interface Attributes](interface-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[Method Attributes](method-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[helpcontext](helpcontext.md)<br/>
-[helpstring](helpstring.md)
+- [IDL Attributes](idl-attributes.md)
+- [Interface Attributes](interface-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [Method Attributes](method-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [helpcontext](helpcontext.md)
+- [helpstring](helpstring.md)

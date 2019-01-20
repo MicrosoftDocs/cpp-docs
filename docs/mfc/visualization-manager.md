@@ -67,5 +67,5 @@ void CMyApp::SetSkin (int index)
 
 ## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
-[CMFCVisualManager Class](../mfc/reference/cmfcvisualmanager-class.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [CMFCVisualManager Class](../mfc/reference/cmfcvisualmanager-class.md)

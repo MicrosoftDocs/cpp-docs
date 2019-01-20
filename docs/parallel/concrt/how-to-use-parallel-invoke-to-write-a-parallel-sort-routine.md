@@ -90,8 +90,7 @@ The parallel versions of some algorithms perform better only when there is suffi
 
 As with any parallel algorithm, we recommend that you profile and tune your code as appropriate.
 
-## See Also
+## See also
 
-[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
-[parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)
-
+- [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
+- [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)

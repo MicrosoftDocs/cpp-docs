@@ -24,8 +24,7 @@ How the list control ([CListCtrl](../mfc/reference/clistctrl-class.md)) is creat
 
 1. Call the control's [Create](../mfc/reference/clistctrl-class.md#create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function (if you're subclassing the control). Set the styles for the control.
 
-## See Also
+## See also
 
-[Using CListCtrl](../mfc/using-clistctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CListCtrl](../mfc/using-clistctrl.md)
+- [Controls](../mfc/controls-mfc.md)

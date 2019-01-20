@@ -1038,15 +1038,15 @@ Returns TRUE on success, FALSE on failure.
 
 This member function emulates the functionality of the BCM_SETTEXTMARGIN message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
-## See Also
+## See also
 
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>
-[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
-[CListBox Class](../../mfc/reference/clistbox-class.md)<br/>
-[CScrollBar Class](../../mfc/reference/cscrollbar-class.md)<br/>
-[CStatic Class](../../mfc/reference/cstatic-class.md)<br/>
-[CBitmapButton Class](../../mfc/reference/cbitmapbutton-class.md)<br/>
-[CDialog Class](../../mfc/reference/cdialog-class.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CComboBox Class](../../mfc/reference/ccombobox-class.md)
+- [CEdit Class](../../mfc/reference/cedit-class.md)
+- [CListBox Class](../../mfc/reference/clistbox-class.md)
+- [CScrollBar Class](../../mfc/reference/cscrollbar-class.md)
+- [CStatic Class](../../mfc/reference/cstatic-class.md)
+- [CBitmapButton Class](../../mfc/reference/cbitmapbutton-class.md)
+- [CDialog Class](../../mfc/reference/cdialog-class.md)

@@ -68,6 +68,6 @@ For example, you might cast a pointer to `CMyDoc`, called `pMyDoc`, to a pointer
 
 If `pMyDoc` does not point to an object derived directly or indirectly from `CDocument`, the macro will ASSERT.
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

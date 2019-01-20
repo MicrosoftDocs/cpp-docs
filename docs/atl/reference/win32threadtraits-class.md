@@ -86,6 +86,6 @@ See [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-c
 
 This function calls `CreateThread` to create the thread.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

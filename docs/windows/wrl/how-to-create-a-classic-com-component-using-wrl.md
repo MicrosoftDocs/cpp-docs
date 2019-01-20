@@ -82,6 +82,6 @@ This document uses standard COM functions to demonstrate that you can use the Wi
 
 [!code-cpp[wrl-classic-com-component#7](../codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_7.cpp)]
 
-## See Also
+## See also
 
-[Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)
+- [Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)

@@ -532,4 +532,4 @@ wp0.expired() == true
 
 ## See also
 
-[shared_ptr Class](../standard-library/shared-ptr-class.md)<br/>
+- [shared_ptr Class](../standard-library/shared-ptr-class.md)

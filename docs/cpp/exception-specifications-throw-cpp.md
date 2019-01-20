@@ -118,5 +118,5 @@ in handler
 
 ## See also
 
-[try, throw, and catch Statements (C++)](../cpp/try-throw-and-catch-statements-cpp.md)<br/>
-[C++ Exception Handling](../cpp/cpp-exception-handling.md)
+- [try, throw, and catch Statements (C++)](../cpp/try-throw-and-catch-statements-cpp.md)
+- [C++ Exception Handling](../cpp/cpp-exception-handling.md)

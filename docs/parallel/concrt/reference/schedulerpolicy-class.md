@@ -187,11 +187,10 @@ The method will throw [invalid_scheduler_policy_value](invalid-scheduler-policy-
 
 Note that this method is not allowed to set the `MinConcurrency` or `MaxConcurrency` policies. To set these values, use the [SetConcurrencyLimits](#setconcurrencylimits) method.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[PolicyElementKey](concurrency-namespace-enums.md)<br/>
-[CurrentScheduler Class](currentscheduler-class.md)<br/>
-[Scheduler Class](scheduler-class.md)<br/>
-[Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-
+- [concurrency Namespace](concurrency-namespace.md)
+- [PolicyElementKey](concurrency-namespace-enums.md)
+- [CurrentScheduler Class](currentscheduler-class.md)
+- [Scheduler Class](scheduler-class.md)
+- [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)

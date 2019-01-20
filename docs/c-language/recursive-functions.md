@@ -36,6 +36,6 @@ int factorial( int num )      /* Function definition */
 }
 ```
 
-## See Also
+## See also
 
-[Function Calls](../c-language/function-calls.md)
+- [Function Calls](../c-language/function-calls.md)

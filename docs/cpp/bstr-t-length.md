@@ -23,4 +23,4 @@ unsigned int length ( ) const throw( );
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+- [_bstr_t Class](../cpp/bstr-t-class.md)

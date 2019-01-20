@@ -111,10 +111,10 @@ WORD m_wCode;
 
 This member is set by the function [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) when an exception is thrown.
 
-## See Also
+## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
-[CException Class](../../mfc/reference/cexception-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleDispatchDriver Class](../../mfc/reference/coledispatchdriver-class.md)<br/>
-[COleException Class](../../mfc/reference/coleexception-class.md)
+- [MFC Sample CALCDRIV](../../visual-cpp-samples.md)
+- [CException Class](../../mfc/reference/cexception-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleDispatchDriver Class](../../mfc/reference/coledispatchdriver-class.md)
+- [COleException Class](../../mfc/reference/coleexception-class.md)

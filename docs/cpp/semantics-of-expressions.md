@@ -108,4 +108,4 @@ The C++ language definition does not currently specify sequence points. Microsof
 
 ## See also
 
-[Expressions](../cpp/expressions-cpp.md)
+- [Expressions](../cpp/expressions-cpp.md)

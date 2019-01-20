@@ -84,8 +84,8 @@ The following code snippet shows how to copy the results of a [DataReader](https
 
 In general, you should avoid exposing a `Platform::Array` type as a property in a ref class because the entire array is returned even when client code is only attempting to access a single element. When you need to expose a sequence container as a property in a public ref class, [Windows::Foundation::IVector](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) is a better choice. In private or internal APIs (which are not published to metadata), consider using a standard C++ container such as [std::vector](../standard-library/vector-class.md).
 
-## See Also
+## See also
 
-[Type System](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+- [Type System](../cppcx/type-system-c-cx.md)
+- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

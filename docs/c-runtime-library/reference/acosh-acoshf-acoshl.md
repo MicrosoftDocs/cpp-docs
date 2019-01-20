@@ -81,9 +81,9 @@ acosh( 1.324609 ) = 0.785398
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)
+- [atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)
+- [cosh, coshf, coshl](cosh-coshf-coshl.md)
+- [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)
+- [tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)

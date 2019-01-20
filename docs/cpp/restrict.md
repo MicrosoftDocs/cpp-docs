@@ -104,6 +104,6 @@ int main()
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[__declspec](../cpp/declspec.md)<br/>
-[__declspec(noalias)](../cpp/noalias.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [__declspec](../cpp/declspec.md)
+- [__declspec(noalias)](../cpp/noalias.md)

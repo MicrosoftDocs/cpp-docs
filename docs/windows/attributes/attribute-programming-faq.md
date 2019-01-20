@@ -233,6 +233,6 @@ If you are going to make a forward declaration of an attributed interface, you m
 
 No, using attributes on a class derived from a class that also uses attributes is not supported.
 
-## See Also
+## See also
 
-[C++ Attributes for COM and .NET](cpp-attributes-com-net.md)
+- [C++ Attributes for COM and .NET](cpp-attributes-com-net.md)

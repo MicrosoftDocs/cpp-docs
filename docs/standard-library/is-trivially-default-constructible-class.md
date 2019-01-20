@@ -47,4 +47,4 @@ A default constructor for a class *Ty* is trivial if:
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

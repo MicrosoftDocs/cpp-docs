@@ -80,5 +80,5 @@ int main() {
 
 ## See also
 
-[Controlling Access to Class Members](member-access-control-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Controlling Access to Class Members](member-access-control-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)

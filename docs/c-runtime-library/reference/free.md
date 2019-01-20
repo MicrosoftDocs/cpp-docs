@@ -53,11 +53,11 @@ See the example for [malloc](malloc.md).
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[_alloca](alloca.md)<br/>
-[calloc](calloc.md)<br/>
-[malloc](malloc.md)<br/>
-[realloc](realloc.md)<br/>
-[_free_dbg](free-dbg.md)<br/>
-[_heapmin](heapmin.md)<br/>
-[_freea](freea.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [_alloca](alloca.md)
+- [calloc](calloc.md)
+- [malloc](malloc.md)
+- [realloc](realloc.md)
+- [_free_dbg](free-dbg.md)
+- [_heapmin](heapmin.md)
+- [_freea](freea.md)

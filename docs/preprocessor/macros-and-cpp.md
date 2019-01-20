@@ -19,7 +19,7 @@ For more information on inline functions, see [inline, __inline, \__forceinline]
 
 For backward compatibility, all preprocessor facilities that existed in ANSI C and in earlier C++ specifications are preserved for Microsoft C++.
 
-## See Also
+## See also
 
-[Predefined Macros](../preprocessor/predefined-macros.md)<br/>
-[Macros (C/C++)](../preprocessor/macros-c-cpp.md)
+- [Predefined Macros](../preprocessor/predefined-macros.md)
+- [Macros (C/C++)](../preprocessor/macros-c-cpp.md)

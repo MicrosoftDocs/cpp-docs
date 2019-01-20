@@ -62,5 +62,5 @@ Process id: 3584
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_mktemp, _wmktemp](mktemp-wmktemp.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_mktemp, _wmktemp](mktemp-wmktemp.md)

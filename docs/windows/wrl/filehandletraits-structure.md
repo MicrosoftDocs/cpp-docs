@@ -30,6 +30,6 @@ struct FileHandleTraits : HANDLETraits;
 
 **Namespace:** Microsoft::WRL::Wrappers::HandleTraits
 
-## See Also
+## See also
 
-[Microsoft::WRL::Wrappers::HandleTraits Namespace](microsoft-wrl-wrappers-handletraits-namespace.md)
+- [Microsoft::WRL::Wrappers::HandleTraits Namespace](microsoft-wrl-wrappers-handletraits-namespace.md)

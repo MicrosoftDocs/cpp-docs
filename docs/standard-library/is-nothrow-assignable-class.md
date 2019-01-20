@@ -36,4 +36,4 @@ The expression `declval<To>() = declval<From>()` must be well-formed and must be
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

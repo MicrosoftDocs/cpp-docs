@@ -15,5 +15,5 @@ Allocates and optionally initializes a word (2 bytes) of storage for each `initi
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[SWORD](../../assembler/masm/sword.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)
+- [SWORD](../../assembler/masm/sword.md)

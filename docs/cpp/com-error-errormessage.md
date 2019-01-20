@@ -29,4 +29,4 @@ Retrieves the appropriate system message text for HRESULT recorded within the `_
 
 ## See also
 
-[_com_error Class](../cpp/com-error-class.md)
+- [_com_error Class](../cpp/com-error-class.md)

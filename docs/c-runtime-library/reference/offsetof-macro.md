@@ -53,4 +53,4 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)

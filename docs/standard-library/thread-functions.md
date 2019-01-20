@@ -93,4 +93,4 @@ inline void yield() noexcept;
 
 ## See also
 
-[\<thread>](../standard-library/thread.md)<br/>
+- [\<thread>](../standard-library/thread.md)

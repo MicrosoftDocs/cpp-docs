@@ -87,9 +87,9 @@ As originally designed, SQL provided only forward scrolling, but ODBC extends sc
 > [!NOTE]
 >  Unlike the MFC DAO classes, the MFC ODBC classes do not provide a set of `Find` functions for locating the next (or previous) record that meets specified criteria.
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[CRecordset::CanScroll](../../mfc/reference/crecordset-class.md#canscroll)<br/>
-[CRecordset::CheckRowsetError](../../mfc/reference/crecordset-class.md#checkrowseterror)<br/>
-[Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [CRecordset::CanScroll](../../mfc/reference/crecordset-class.md#canscroll)
+- [CRecordset::CheckRowsetError](../../mfc/reference/crecordset-class.md#checkrowseterror)
+- [Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)

@@ -81,7 +81,7 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
 For end-to-end samples, see [Samples (MFC Feature Pack)](../visual-cpp-samples.md).
 
-## See Also
+## See also
 
-[Walkthroughs](../mfc/walkthroughs-mfc.md)<br/>
-[Samples (MFC Feature Pack)](../visual-cpp-samples.md)
+- [Walkthroughs](../mfc/walkthroughs-mfc.md)
+- [Samples (MFC Feature Pack)](../visual-cpp-samples.md)

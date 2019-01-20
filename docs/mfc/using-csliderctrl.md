@@ -23,7 +23,6 @@ The slider in a slider control moves in increments that you specify when you cre
 
 - [Slider Notification Messages](../mfc/slider-notification-messages.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

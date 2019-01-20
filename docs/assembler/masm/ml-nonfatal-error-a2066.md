@@ -16,4 +16,4 @@ The **USE32** and **FLAT** attributes must be preceded by the .386 or greater pr
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

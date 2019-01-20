@@ -33,4 +33,4 @@ The __fastcall calling convention
 
 ## See also
 
-[Calling Example: Function Prototype and Call](../cpp/calling-example-function-prototype-and-call.md)
+- [Calling Example: Function Prototype and Call](../cpp/calling-example-function-prototype-and-call.md)

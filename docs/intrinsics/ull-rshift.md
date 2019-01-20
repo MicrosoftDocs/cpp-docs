@@ -73,8 +73,8 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[__ll_lshift](../intrinsics/ll-lshift.md)<br/>
-[__ll_rshift](../intrinsics/ll-rshift.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__ll_lshift](../intrinsics/ll-lshift.md)
+- [__ll_rshift](../intrinsics/ll-rshift.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

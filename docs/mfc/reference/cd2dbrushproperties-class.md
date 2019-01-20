@@ -68,6 +68,6 @@ Initializes the object
 void CommonInit();
 ```
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

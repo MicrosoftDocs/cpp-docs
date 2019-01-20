@@ -16,6 +16,6 @@ These classes provide automatic management of managed classes.
 |[auto_gcroot](../dotnet/auto-gcroot.md)|Embeds a virtual handle in a native type.|
 |[auto_handle](../dotnet/auto-handle.md)|Embeds a virtual handle in a managed type.|
 
-## See Also
+## See also
 
-[C++ Support Library](../dotnet/cpp-support-library.md)
+- [C++ Support Library](../dotnet/cpp-support-library.md)

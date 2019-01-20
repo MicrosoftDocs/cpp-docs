@@ -38,11 +38,11 @@ See [nonbrowsable](nonbrowsable.md) for an example of how to use **object**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Interface Attributes](interface-attributes.md)<br/>
-[dual](dual.md)<br/>
-[dispinterface](dispinterface.md)<br/>
-[custom](custom-cpp.md)<br/>
-[__interface](../../cpp/interface.md)
+- [IDL Attributes](idl-attributes.md)
+- [Interface Attributes](interface-attributes.md)
+- [dual](dual.md)
+- [dispinterface](dispinterface.md)
+- [custom](custom-cpp.md)
+- [__interface](../../cpp/interface.md)

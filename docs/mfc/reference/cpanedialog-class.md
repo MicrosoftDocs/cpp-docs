@@ -188,10 +188,9 @@ Always TRUE.
 
 This method supports the [COccManager](../../mfc/reference/coccmanager-class.md) class, which manages OLE control sites and ActiveX controls. The _AFX_OCC_DIALOG_INFO structure is defined in the afxocc.h header file.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)
+- [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles)

@@ -108,7 +108,7 @@ Object dump complete.
 
 ## See also
 
-[_CrtDoForAllClientObjects](crtdoforallclientobjects.md)<br/>
-[_CrtSetDumpClient](crtsetdumpclient.md)<br/>
-[_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md)<br/>
-[_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md)<br/>
+- [_CrtDoForAllClientObjects](crtdoforallclientobjects.md)
+- [_CrtSetDumpClient](crtsetdumpclient.md)
+- [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md)
+- [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md)

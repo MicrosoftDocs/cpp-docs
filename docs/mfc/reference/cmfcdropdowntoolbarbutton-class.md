@@ -494,12 +494,11 @@ void SetDefaultCommand(UINT uiCmd);
 
 Call this method to specify a default command that the framework executes when the user clicks the button. An item with the command ID specified by *uiCmd* must be located in the parent drop-down toolbar.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
-[CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)<br/>
-[CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
-[Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md)
+- [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)
+- [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)
+- [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)

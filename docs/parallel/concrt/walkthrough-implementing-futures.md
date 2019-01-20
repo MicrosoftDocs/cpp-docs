@@ -81,9 +81,9 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc futures.cpp**
 
-## See Also
+## See also
 
-[Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
-[Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
-[task_group Class](reference/task-group-class.md)<br/>
-[single_assignment Class](../../parallel/concrt/reference/single-assignment-class.md)
+- [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
+- [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)
+- [task_group Class](reference/task-group-class.md)
+- [single_assignment Class](../../parallel/concrt/reference/single-assignment-class.md)

@@ -103,6 +103,6 @@ You might also want to examine the documentation for the specific driver you are
 
 When ODBC Administrator displays the information for creating a new data source for that particular driver, click **Help**. This opens the Help file for that particular driver, which generally contains important information concerning the use of the driver.
 
-## See Also
+## See also
 
-[Data Source (ODBC)](../../data/odbc/data-source-odbc.md)
+- [Data Source (ODBC)](../../data/odbc/data-source-odbc.md)

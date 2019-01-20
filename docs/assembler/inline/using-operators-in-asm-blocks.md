@@ -30,4 +30,4 @@ array[6] = 0;                   /* Store 0 at array + 24 */
 
 ## See also
 
-[Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>
+- [Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)

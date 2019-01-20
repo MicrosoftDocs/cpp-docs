@@ -183,6 +183,6 @@ These examples don't demonstrate all the available options for a `CTaskDialog`, 
 
 ## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[CTaskDialog Class](../mfc/reference/ctaskdialog-class.md)<br/>
-[CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)
+- [Dialog Boxes](../mfc/dialog-boxes.md)
+- [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md)
+- [CTaskDialog::CTaskDialog](../mfc/reference/ctaskdialog-class.md#ctaskdialog)

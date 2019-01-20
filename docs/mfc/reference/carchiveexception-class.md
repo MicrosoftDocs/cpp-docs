@@ -114,11 +114,10 @@ Specifies the name of the file for this exception condition.
 CString m_strFileName;
 ```
 
-## See Also
+## See also
 
-[CException Class](../../mfc/reference/cexception-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CArchive Class](../../mfc/reference/carchive-class.md)<br/>
-[AfxThrowArchiveException](../../mfc/reference/exception-processing.md#afxthrowarchiveexception)<br/>
-[Exception Processing](../../mfc/reference/exception-processing.md)
-
+- [CException Class](../../mfc/reference/cexception-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CArchive Class](../../mfc/reference/carchive-class.md)
+- [AfxThrowArchiveException](../../mfc/reference/exception-processing.md#afxthrowarchiveexception)
+- [Exception Processing](../../mfc/reference/exception-processing.md)

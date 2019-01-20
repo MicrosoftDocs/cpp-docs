@@ -21,7 +21,6 @@ Uses the COM `IStream` interface to provide `CFile` access to compound files. Th
 [CRectTracker](../mfc/reference/crecttracker-class.md)<br/>
 Used to allow moving, resizing, and reorientation of in-place items.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

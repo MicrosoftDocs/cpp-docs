@@ -36,6 +36,6 @@ while ( i >= 0 )
 
 This example copies characters from `string2` to `string1`. If `i` is greater than or equal to 0, `string2[i]` is assigned to `string1[i]` and `i` is decremented. When `i` reaches or falls below 0, execution of the `while` statement terminates.
 
-## See Also
+## See also
 
-[while Statement (C++)](../cpp/while-statement-cpp.md)
+- [while Statement (C++)](../cpp/while-statement-cpp.md)

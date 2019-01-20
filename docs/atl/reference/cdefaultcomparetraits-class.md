@@ -94,6 +94,6 @@ Returns an integer based on the following table:
 
 The default implementation of this function uses the **==**, **\<**, and **>** operators. For objects other than simple data types, this function may need to be overridden.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

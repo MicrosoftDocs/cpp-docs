@@ -832,14 +832,14 @@ If you call `AfxWinInit` yourself, you should declare an instance of a `CWinApp`
 
 ## See also
 
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[CWinApp Class](cwinapp-class.md)<br/>
-[CContextMenuManager Class](ccontextmenumanager-class.md)<br/>
-[CWnd Class](cwnd-class.md)<br/>
-[CFrameWndEx Class](cframewndex-class.md)<br/>
-[CMFCToolBar Class](cmfctoolbar-class.md)<br/>
-[CKeyboardManager Class](ckeyboardmanager-class.md)<br/>
-[CMenuTearOffManager Class](cmenutearoffmanager-class.md)<br/>
-[CMouseManager Class](cmousemanager-class.md)<br/>
-[CShellManager Class](cshellmanager-class.md)<br/>
-[CUserToolsManager Class](cusertoolsmanager-class.md)
+- [Macros and Globals](mfc-macros-and-globals.md)
+- [CWinApp Class](cwinapp-class.md)
+- [CContextMenuManager Class](ccontextmenumanager-class.md)
+- [CWnd Class](cwnd-class.md)
+- [CFrameWndEx Class](cframewndex-class.md)
+- [CMFCToolBar Class](cmfctoolbar-class.md)
+- [CKeyboardManager Class](ckeyboardmanager-class.md)
+- [CMenuTearOffManager Class](cmenutearoffmanager-class.md)
+- [CMouseManager Class](cmousemanager-class.md)
+- [CShellManager Class](cshellmanager-class.md)
+- [CUserToolsManager Class](cusertoolsmanager-class.md)

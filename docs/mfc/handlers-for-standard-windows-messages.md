@@ -26,6 +26,6 @@ How do you determine the proper way to override a given message When the Propert
 
 By convention, the names of these handlers begin with the prefix "On." Some of these handlers take no arguments, while others take several. Some also have a return type other than **void**. The default handlers for all **WM_** messages are documented in the *MFC Reference* as member functions of class `CWnd` whose names begin with "On." The member function declarations in `CWnd` are prefixed with **afx_msg**.
 
-## See Also
+## See also
 
-[Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)
+- [Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)

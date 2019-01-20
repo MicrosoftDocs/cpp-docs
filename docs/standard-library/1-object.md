@@ -83,5 +83,5 @@ int main()
 
 ## See also
 
-[bind](../standard-library/functional-functions.md#bind)<br/>
-[is_placeholder Class](../standard-library/is-placeholder-class.md)<br/>
+- [bind](../standard-library/functional-functions.md#bind)
+- [is_placeholder Class](../standard-library/is-placeholder-class.md)

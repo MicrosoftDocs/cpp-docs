@@ -84,7 +84,6 @@ There are two ways to create type-safe collections with the nontemplate collecti
 
    You can also add new functionality by defining new functions that extend the capabilities of the collection rather than just wrapping existing functionality in type-safe wrappers. For example, the article [Deleting All Objects in a CObject Collection](../mfc/deleting-all-objects-in-a-cobject-collection.md) describes a function to delete all the objects contained in a list. This function could be added to the derived class as a member function.
 
-## See Also
+## See also
 
-[Collections](../mfc/collections.md)
-
+- [Collections](../mfc/collections.md)

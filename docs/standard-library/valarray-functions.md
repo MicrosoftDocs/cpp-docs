@@ -1233,4 +1233,4 @@ The hyperbolic tangent of the initial valarray is:
 
 ## See also
 
-[\<valarray>](../standard-library/valarray.md)<br/>
+- [\<valarray>](../standard-library/valarray.md)

@@ -75,7 +75,6 @@ Provides information about the COM functionality for the object.
 
    Sets the name that containers can use instead of the CLSID of the object.
 
-## See Also
+## See also
 
-[ATL COM+ 1.0 Component](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)
-
+- [ATL COM+ 1.0 Component](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)

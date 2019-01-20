@@ -37,7 +37,7 @@ However, you can add MFC support to existing .rc files that do not have it.
 
 MFC
 
-## See Also
+## See also
 
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Resource Editors](../windows/resource-editors.md)

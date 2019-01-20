@@ -150,8 +150,8 @@ Enter the number of bytes to allocate using _malloca: 1000
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](calloc.md)<br/>
-[malloc](malloc.md)<br/>
-[realloc](realloc.md)<br/>
-[_resetstkoflw](resetstkoflw.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [calloc](calloc.md)
+- [malloc](malloc.md)
+- [realloc](realloc.md)
+- [_resetstkoflw](resetstkoflw.md)

@@ -20,4 +20,4 @@ For more information, see [exit](../c-runtime-library/reference/exit-exit-exit.m
 
 ## See also
 
-[Program Termination](../cpp/program-termination.md)
+- [Program Termination](../cpp/program-termination.md)

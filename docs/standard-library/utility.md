@@ -56,5 +56,5 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

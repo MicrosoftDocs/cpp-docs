@@ -67,5 +67,5 @@ is_abstract<abstract> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_polymorphic Class](../standard-library/is-polymorphic-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_polymorphic Class](../standard-library/is-polymorphic-class.md)

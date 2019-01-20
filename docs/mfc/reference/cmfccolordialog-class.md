@@ -232,8 +232,8 @@ void SetPageTwo(
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCColorPickerCtrl Class](../../mfc/reference/cmfccolorpickerctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCColorPickerCtrl Class](../../mfc/reference/cmfccolorpickerctrl-class.md)

@@ -12,6 +12,6 @@ The source character set is the set of legal characters that can appear in sourc
 > [!NOTE]
 >  **Warning** Because keyboard and console drivers can remap the character set, programs intended for international distribution should check the Country/Region code.
 
-## See Also
+## See also
 
-[Characters](../c-language/characters.md)
+- [Characters](../c-language/characters.md)

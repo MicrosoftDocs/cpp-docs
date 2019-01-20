@@ -32,6 +32,6 @@ For details on creating an .xml file with documentation comments, see the follow
 
 If you need to put XML special characters in the text of a documentation comment, you must use XML entities or a CDATA section.
 
-## See Also
+## See also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+- [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

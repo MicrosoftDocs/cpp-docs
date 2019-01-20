@@ -53,7 +53,7 @@ Returns false.
 
 This method always returns false, and will call `ATLASSERT` with an argument of false if referenced. The purpose of `CSimpleArrayEqualHelperFalse::IsEqual` is to force methods using comparisons to fail in a well-defined manner when equality tests have not been adequately defined.
 
-## See Also
+## See also
 
-[CSimpleArrayEqualHelper Class](../../atl/reference/csimplearrayequalhelper-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CSimpleArrayEqualHelper Class](../../atl/reference/csimplearrayequalhelper-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

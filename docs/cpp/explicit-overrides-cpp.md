@@ -110,4 +110,4 @@ In CMyClass::IMyInt2::mf2(int)
 
 ## See also
 
-[Inheritance](../cpp/inheritance-cpp.md)
+- [Inheritance](../cpp/inheritance-cpp.md)

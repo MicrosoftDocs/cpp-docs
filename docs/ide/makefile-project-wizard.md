@@ -15,9 +15,9 @@ This wizard page describes the current project settings for the project you are 
 
 To change these defaults, click the [Application Settings](../ide/application-settings-makefile-project-wizard.md) tab in the left column of the wizard and make the desired changes.
 
-## See Also
+## See also
 
-[Creating a Makefile Project](../ide/creating-a-makefile-project.md)<br>
-[NMAKE Reference](../build/nmake-reference.md)<br>
-[Special Characters in a Makefile](../build/special-characters-in-a-makefile.md)<br>
-[Contents of a Makefile](../build/contents-of-a-makefile.md)
+- [Creating a Makefile Project](../ide/creating-a-makefile-project.md)
+- [NMAKE Reference](../build/nmake-reference.md)
+- [Special Characters in a Makefile](../build/special-characters-in-a-makefile.md)
+- [Contents of a Makefile](../build/contents-of-a-makefile.md)

@@ -58,10 +58,10 @@ For more information, see [acos, acosf, acosl](acos-acosf-acosl.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [acos, acosf, acosl](acos-acosf-acosl.md)
+- [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)
+- [cos, cosf, cosl](cos-cosf-cosl.md)
+- [_matherr](matherr.md)
+- [sin, sinf, sinl](sin-sinf-sinl.md)
+- [tan, tanf, tanl](tan-tanf-tanl.md)

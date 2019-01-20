@@ -300,4 +300,4 @@ This method effectively returns `scoped_allocator_adaptor(Outer_traits::select_o
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

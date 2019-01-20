@@ -81,6 +81,6 @@ For more information about using the thread attribute, see [Multithreading Topic
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[C Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md)
+- [C Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md)

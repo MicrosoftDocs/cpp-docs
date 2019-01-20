@@ -38,8 +38,8 @@ The steps in implementing an Internet client application vary depending on wheth
 
 - [How do I write an HTTP client application](../mfc/steps-in-a-typical-http-client-application.md)
 
-## See Also
+## See also
 
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[MFC Classes for Creating Internet Client Applications](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
-[Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)
+- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+- [MFC Classes for Creating Internet Client Applications](../mfc/mfc-classes-for-creating-internet-client-applications.md)
+- [Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)

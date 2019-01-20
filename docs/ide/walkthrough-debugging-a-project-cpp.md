@@ -47,7 +47,7 @@ In this walkthrough, you modify the program to fix the problem that you found wh
 **Previous:** [Walkthrough: Testing a Project (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
 **Next:** [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
 
-## See Also
+## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Building C/C++ Programs](../build/building-c-cpp-programs.md)

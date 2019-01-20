@@ -35,4 +35,3 @@ value struct V
        int j;
 };
 ```
-

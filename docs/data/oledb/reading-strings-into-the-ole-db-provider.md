@@ -88,6 +88,6 @@ When this is done, your provider should be ready to compile and run. To test the
 
 When you've successfully tested your provider, you might want to enhance its functionality by implementing additional interfaces. An example is shown in [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md).
 
-## See Also
+## See also
 
-[Implementing the Simple Read-Only Provider](../../data/oledb/implementing-the-simple-read-only-provider.md)<br/>
+- [Implementing the Simple Read-Only Provider](../../data/oledb/implementing-the-simple-read-only-provider.md)

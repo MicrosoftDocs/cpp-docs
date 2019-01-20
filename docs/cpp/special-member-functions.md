@@ -20,4 +20,4 @@ The default copy and move construction and assignment operations perform member-
 
 ## See also
 
-[C++ Language Reference](cpp-language-reference.md)
+- [C++ Language Reference](cpp-language-reference.md)

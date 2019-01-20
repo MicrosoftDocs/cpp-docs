@@ -30,8 +30,7 @@ Additional customization tips can be found in the following topics:
 
 [User-defined Tools](../mfc/user-defined-tools.md)
 
-## See Also
+## See also
 
-[MFC Desktop Applications](../mfc/mfc-desktop-applications.md)<br/>
-[Security Implications of Customization](../mfc/security-implications-of-customization.md)
-
+- [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
+- [Security Implications of Customization](../mfc/security-implications-of-customization.md)

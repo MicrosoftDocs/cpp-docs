@@ -44,8 +44,8 @@ MFC provides the following classes and global functions for writing Internet cli
 
 - [AfxThrowInternetException](reference/internet-url-parsing-globals.md#afxthrowinternetexception)
 
-## See Also
+## See also
 
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)<br/>
-[Writing an Internet Client Application Using MFC WinInet Classes](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
+- [Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)
+- [Writing an Internet Client Application Using MFC WinInet Classes](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

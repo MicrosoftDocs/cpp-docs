@@ -465,10 +465,10 @@ Use this method to put the status bar in the information mode. In this mode, the
 
 When lpszInfo is NULL, the status bar reverts to regular mode.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md)<br/>
-[CMFCRibbonBaseElement Class](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
-[CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md)
+- [CMFCRibbonBaseElement Class](../../mfc/reference/cmfcribbonbaseelement-class.md)
+- [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md)

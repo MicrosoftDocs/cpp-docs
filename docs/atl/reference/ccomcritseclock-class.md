@@ -104,7 +104,7 @@ void Unlock() throw();
 
 If the object is already unlocked, an ASSERT error will occur in debug builds.
 
-## See Also
+## See also
 
-[CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)<br/>
-[CComAutoCriticalSection Class](../../atl/reference/ccomautocriticalsection-class.md)
+- [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)
+- [CComAutoCriticalSection Class](../../atl/reference/ccomautocriticalsection-class.md)

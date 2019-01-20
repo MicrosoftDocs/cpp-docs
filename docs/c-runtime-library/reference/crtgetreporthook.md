@@ -46,5 +46,5 @@ For a sample of how to use **_CrtSetReportHook**, see [report](https://github.co
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtSetReportHook](crtsetreporthook.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_CrtSetReportHook](crtsetreporthook.md)

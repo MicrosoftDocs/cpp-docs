@@ -73,7 +73,7 @@ The following topics provide more information about how the database classes use
 
 - [SQL: Making Direct SQL Calls (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[ODBC Basics](../../data/odbc/odbc-basics.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [ODBC Basics](../../data/odbc/odbc-basics.md)

@@ -53,6 +53,6 @@ extern "C" {
 
 - [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
 
-## See Also
+## See also
 
-[Exporting from a DLL](../build/exporting-from-a-dll.md)
+- [Exporting from a DLL](../build/exporting-from-a-dll.md)

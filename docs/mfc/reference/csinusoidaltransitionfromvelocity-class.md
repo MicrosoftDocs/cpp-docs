@@ -105,6 +105,6 @@ The period of oscillation of the sinusoidal wave in seconds.
 UI_ANIMATION_SECONDS m_period;
 ```
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

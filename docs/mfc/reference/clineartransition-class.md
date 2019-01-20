@@ -105,6 +105,6 @@ The duration of the transition.
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

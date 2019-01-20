@@ -16,4 +16,4 @@ A structure cannot contain instructions, labels, procedures, control-flow direct
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

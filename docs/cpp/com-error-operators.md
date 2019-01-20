@@ -10,4 +10,4 @@ For information about the **_com_error** operators, see [_com_error Class](../cp
 
 ## See also
 
-[_com_error Class](../cpp/com-error-class.md)
+- [_com_error Class](../cpp/com-error-class.md)

@@ -960,10 +960,10 @@ A pointer to a device context.
 
 ### Remarks
 
-## See Also
+## See also
 
-[MFC Sample VIEWEX](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)
+- [MFC Sample VIEWEX](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)

@@ -13,6 +13,6 @@ To understand how a C program works, you must understand the rules that determin
 
 - [Linkage](../c-language/linkage.md)
 
-## See Also
+## See also
 
-[Program Structure](../c-language/program-structure.md)
+- [Program Structure](../c-language/program-structure.md)

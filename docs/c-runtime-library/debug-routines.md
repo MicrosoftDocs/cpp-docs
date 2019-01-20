@@ -95,5 +95,5 @@ Some C run-time functions and C++ operators behave differently when called from 
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Run-Time Error Checking](../c-runtime-library/run-time-error-checking.md)<br/>
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+- [Run-Time Error Checking](../c-runtime-library/run-time-error-checking.md)

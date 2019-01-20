@@ -137,11 +137,11 @@ Call [CLocalHeap::Free](#free) to free the memory allocated by this method.
 
 Implemented using [LocalReAlloc](/windows/desktop/api/winbase/nf-winbase-localrealloc).
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[CComHeap Class](../../atl/reference/ccomheap-class.md)<br/>
-[CWin32Heap Class](../../atl/reference/cwin32heap-class.md)<br/>
-[CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)<br/>
-[CCRTHeap Class](../../atl/reference/ccrtheap-class.md)<br/>
-[IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [CComHeap Class](../../atl/reference/ccomheap-class.md)
+- [CWin32Heap Class](../../atl/reference/cwin32heap-class.md)
+- [CGlobalHeap Class](../../atl/reference/cglobalheap-class.md)
+- [CCRTHeap Class](../../atl/reference/ccrtheap-class.md)
+- [IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)

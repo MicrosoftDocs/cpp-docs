@@ -76,7 +76,6 @@ In the following example, version 1 of this sample control has only a "ReleaseDa
 
 By default, a control "converts" old data to the latest format. For example, if version 2 of a control loads data that was saved by version 1, it will write the version 2 format when it is saved again. If you want the control to save data in the format last read, pass **FALSE** as a third parameter when calling `ExchangeVersion`. This third parameter is optional and is **TRUE** by default.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

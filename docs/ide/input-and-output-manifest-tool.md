@@ -48,8 +48,8 @@ Used with the **-managedassembly** option. This tag causes the category tags to 
 **Enable DPI Awareness**<br/>
 Specifies whether the application is DPI-aware. By default, the setting is **Yes** for MFC projects and **No** otherwise because only MFC projects have built in DPI awareness. You can override the setting to **Yes** if you add code to handle different DPI settings. Your application might appear fuzzy or small if you set it as DPI-aware when it is not.
 
-## See Also
+## See also
 
-[ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br/>
-[Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)<br/>
-[Working with Project Properties](../ide/working-with-project-properties.md)<br/>
+- [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)
+- [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)
+- [Working with Project Properties](../ide/working-with-project-properties.md)

@@ -29,5 +29,5 @@ The compiler issues an appropriate diagnostic message if your use of the `auto` 
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
-[auto Keyword](../../cpp/auto-keyword.md)
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)
+- [auto Keyword](../../cpp/auto-keyword.md)

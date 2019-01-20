@@ -43,4 +43,4 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[_get_wpgmptr](get-wpgmptr.md)<br/>
+- [_get_wpgmptr](get-wpgmptr.md)

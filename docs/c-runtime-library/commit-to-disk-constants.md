@@ -40,9 +40,9 @@ In the resulting executable file, calls to `fflush` write the contents of the bu
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
-[_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
-[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [Stream I/O](../c-runtime-library/stream-i-o.md)
+- [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)
+- [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

@@ -47,7 +47,6 @@ For your convenience, `COleControl` supplies helper functions that access many o
 
 If the value of an ambient property changes (through some action of the container), the `OnAmbientPropertyChanged` member function of the control is called. Override this member function to handle such a notification. The parameter for `OnAmbientPropertyChanged` is the dispatch ID of the affected ambient property. The value of this dispatch ID may be DISPID_UNKNOWN, which indicates that one or more ambient properties has changed, but information about which properties were affected is unavailable.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

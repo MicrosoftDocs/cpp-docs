@@ -70,4 +70,4 @@ Any function prototyped as taking a reference type can accept an object of the s
 
 ## See also
 
-[References](../cpp/references-cpp.md)<br/>
+- [References](../cpp/references-cpp.md)

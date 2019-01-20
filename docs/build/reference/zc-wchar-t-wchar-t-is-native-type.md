@@ -45,4 +45,4 @@ The `wchar_t` built-in type is not supported when you compile C code. For more i
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)

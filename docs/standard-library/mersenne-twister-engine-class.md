@@ -105,4 +105,4 @@ For a code example, see [\<random>](../standard-library/random.md).
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+- [\<random>](../standard-library/random.md)

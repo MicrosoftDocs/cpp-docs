@@ -29,6 +29,6 @@ The "C" locale maps each character in the string to its value as a **wchar_t** (
 
 The ability to issue a language string depends on the code page and language ID support on your computer.
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

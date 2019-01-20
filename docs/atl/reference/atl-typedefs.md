@@ -312,10 +312,10 @@ typedef CUrl* LPURL;
 
 **Header:** atlutil.h
 
-## See Also
+## See also
 
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
-[Functions](../../atl/reference/atl-functions.md)<br/>
-[Global Variables](../../atl/reference/atl-global-variables.md)<br/>
-[Classes and structs](../../atl/reference/atl-classes.md)<br/>
-[Macros](../../atl/reference/atl-macros.md)
+- [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+- [Functions](../../atl/reference/atl-functions.md)
+- [Global Variables](../../atl/reference/atl-global-variables.md)
+- [Classes and structs](../../atl/reference/atl-classes.md)
+- [Macros](../../atl/reference/atl-macros.md)

@@ -650,8 +650,7 @@ void swap(concurrent_vector& _Vector);
 *_Vector*<br/>
 The `concurrent_vector` object to swap contents with.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-
+- [concurrency Namespace](concurrency-namespace.md)
+- [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)

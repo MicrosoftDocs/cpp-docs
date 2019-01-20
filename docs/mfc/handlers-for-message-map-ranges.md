@@ -120,6 +120,6 @@ The `OnButtonClicked` handler for a single **BN_CLICKED** message takes no param
 
 The code shown in the example is typical: converting the value passed to an `int` within the message range and asserting that this is the case. Then you might take some different action depending on which button was clicked.
 
-## See Also
+## See also
 
-[Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)
+- [Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)

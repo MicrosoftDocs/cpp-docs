@@ -15,4 +15,4 @@ Declares a record type consisting of the specified fields. *fieldname* names the
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

@@ -72,6 +72,6 @@ In the next step, you will add a control to your project.
 
 [On to Step 2](../atl/adding-a-control-atl-tutorial-part-2.md)
 
-## See Also
+## See also
 
-[Tutorial](../atl/active-template-library-atl-tutorial.md)
+- [Tutorial](../atl/active-template-library-atl-tutorial.md)

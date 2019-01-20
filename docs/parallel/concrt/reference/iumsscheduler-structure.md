@@ -60,10 +60,10 @@ The completion list interface for the scheduler. There is a single list per sche
 
 The Resource Manager will invoke this method on a scheduler that specifies it wants UMS threads, after the scheduler has requested an initial allocation of resources. The scheduler can use the `IUMSCompletionList` interface to determine when UMS thread proxies have unblocked. It is only valid to access this interface from a thread proxy running on a virtual processor root assigned to the UMS scheduler.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[PolicyElementKey](concurrency-namespace-enums.md)<br/>
-[IScheduler Structure](ischeduler-structure.md)<br/>
-[IUMSCompletionList Structure](iumscompletionlist-structure.md)<br/>
-[IResourceManager Structure](iresourcemanager-structure.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [PolicyElementKey](concurrency-namespace-enums.md)
+- [IScheduler Structure](ischeduler-structure.md)
+- [IUMSCompletionList Structure](iumscompletionlist-structure.md)
+- [IResourceManager Structure](iresourcemanager-structure.md)

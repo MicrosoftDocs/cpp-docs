@@ -109,8 +109,8 @@ Contains the number of rows in the rowset that have already been read.
 ULONG m_nRowsRead;
 ```
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CRowset Class](../../data/oledb/crowset-class.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
+- [CRowset Class](../../data/oledb/crowset-class.md)

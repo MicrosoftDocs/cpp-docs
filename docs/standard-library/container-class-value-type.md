@@ -24,4 +24,4 @@ It is described here as a synonym for the unspecified type `T4` (typically `Allo
 
 ## See also
 
-[Sample Container Class](../standard-library/sample-container-class.md)<br/>
+- [Sample Container Class](../standard-library/sample-container-class.md)

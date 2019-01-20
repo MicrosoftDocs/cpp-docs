@@ -305,6 +305,6 @@ The integer field contains: 1234
 The String field contains: My string
 ```
 
-## See Also
+## See also
 
-[Generics](../windows/generics-cpp-component-extensions.md)
+- [Generics](../windows/generics-cpp-component-extensions.md)

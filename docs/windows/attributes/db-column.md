@@ -103,7 +103,7 @@ class CProducts {
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[OLE DB Consumer Attributes](ole-db-consumer-attributes.md)<br/>
-[Class Attributes](class-attributes.md)
+- [OLE DB Consumer Attributes](ole-db-consumer-attributes.md)
+- [Class Attributes](class-attributes.md)

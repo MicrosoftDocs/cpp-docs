@@ -123,5 +123,5 @@ Win32
 
 ## See also
 
-[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
-[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)<br/>
+- [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)
+- [Viewing Resource Symbols](../windows/viewing-resource-symbols.md)

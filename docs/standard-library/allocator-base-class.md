@@ -301,4 +301,4 @@ typedef Type value_type;
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+- [\<allocators>](../standard-library/allocators-header.md)

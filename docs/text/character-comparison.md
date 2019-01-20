@@ -22,7 +22,7 @@ Use the following tips:
 
    This ensures that both bytes of a double-byte character are compared for equality.
 
-## See Also
+## See also
 
-[MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
-[Buffer Overflow](../text/buffer-overflow.md)
+- [MBCS Programming Tips](../text/mbcs-programming-tips.md)
+- [Buffer Overflow](../text/buffer-overflow.md)

@@ -19,8 +19,7 @@ The [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) class encapsulates th
 
 - [Manipulating the Tool Tip Control](../mfc/manipulating-the-tool-tip-control.md)
 
-## See Also
+## See also
 
-[Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

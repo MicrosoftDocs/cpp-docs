@@ -19,6 +19,6 @@ An equivalent way to specify an output file name is with the [/OUT](../../build/
 
 If you build a DLL, NAME will only affect the DLL name.
 
-## See Also
+## See also
 
-[Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)
+- [Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)

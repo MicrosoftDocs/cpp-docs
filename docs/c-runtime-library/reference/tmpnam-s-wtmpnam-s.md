@@ -133,8 +133,8 @@ C:\Users\LocalUser\AppData\Local\Temp\u19q8.e is safe to use as a temporary file
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_getmbcp](getmbcp.md)<br/>
-[malloc](malloc.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[tmpfile_s](tmpfile-s.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_getmbcp](getmbcp.md)
+- [malloc](malloc.md)
+- [_setmbcp](setmbcp.md)
+- [tmpfile_s](tmpfile-s.md)

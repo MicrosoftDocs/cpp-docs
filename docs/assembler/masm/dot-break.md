@@ -15,4 +15,4 @@ Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.R
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

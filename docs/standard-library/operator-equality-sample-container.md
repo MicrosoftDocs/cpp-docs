@@ -27,4 +27,4 @@ Returns `left.`[size](../standard-library/container-class-size.md) ` == right.si
 
 ## See also
 
-[\<sample container>](../standard-library/sample-container.md)<br/>
+- [\<sample container>](../standard-library/sample-container.md)

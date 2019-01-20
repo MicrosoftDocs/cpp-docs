@@ -67,6 +67,6 @@ Returns a pointer to the [_AtlCreateWndData](../../atl/reference/atlcreatewnddat
 
 This function will extract an existing `_AtlCreateWndData` structure from the list referenced by a module's `_ATL_WIN_MODULE70` structure.
 
-## See Also
+## See also
 
-[Functions](../../atl/reference/atl-functions.md)
+- [Functions](../../atl/reference/atl-functions.md)

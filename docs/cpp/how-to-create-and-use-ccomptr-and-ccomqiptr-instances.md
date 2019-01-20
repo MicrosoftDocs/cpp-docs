@@ -33,4 +33,4 @@ ATL also provides `CComQIPtr`, which has a simpler syntax for querying a COM obj
 
 ## See also
 
-[Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)
+- [Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)

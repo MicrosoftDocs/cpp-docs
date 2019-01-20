@@ -58,6 +58,6 @@ int main()  // main function defined at external level
 
 In this example, there are four levels of visibility: the external level and three block levels. The values are printed to the screen as noted in the comments following each statement.
 
-## See Also
+## See also
 
-[Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md)
+- [Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md)

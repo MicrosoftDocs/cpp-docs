@@ -18,6 +18,6 @@ For more information on the manifest tool, see [Mt.exe](https://msdn.microsoft.c
 
 [Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/advanced-manifest-tool.md)
 
-## See Also
+## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)
+- [Property Pages](../ide/property-pages-visual-cpp.md)

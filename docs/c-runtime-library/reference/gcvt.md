@@ -111,8 +111,8 @@ buffer: '-1.23456789012e-002' (19 chars)
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt](ecvt.md)<br/>
-[_fcvt](fcvt.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)
+- [_ecvt](ecvt.md)
+- [_fcvt](fcvt.md)

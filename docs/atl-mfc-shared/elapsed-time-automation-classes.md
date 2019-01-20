@@ -22,6 +22,6 @@ This procedure shows how to calculate the difference between two `CTime` objects
 
    [!code-cpp[NVC_ATLMFC_Utilities#178](../atl-mfc-shared/codesnippet/cpp/elapsed-time-automation-classes_1.cpp)]
 
-## See Also
+## See also
 
-[Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)
+- [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)

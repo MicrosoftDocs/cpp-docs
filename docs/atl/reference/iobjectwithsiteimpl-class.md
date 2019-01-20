@@ -113,6 +113,6 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
 
 See [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite) in the Windows SDK.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

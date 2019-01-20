@@ -278,7 +278,7 @@ virtual property unsigned int Size;
 
 The number of elements in the Map.
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)<br/>
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+- [Platform Namespace](platform-namespace-c-cx.md)
+- [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

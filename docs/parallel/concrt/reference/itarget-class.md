@@ -184,7 +184,7 @@ When overridden in a derived class, unlinks all source blocks from this `ITarget
 virtual void unlink_sources() = 0;
 ```
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[ISource Class](isource-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [ISource Class](isource-class.md)

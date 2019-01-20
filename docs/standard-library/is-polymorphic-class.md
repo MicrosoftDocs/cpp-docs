@@ -83,5 +83,5 @@ is_polymorphic<throws> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_abstract Class](../standard-library/is-abstract-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_abstract Class](../standard-library/is-abstract-class.md)

@@ -34,8 +34,7 @@ After these modifications have been made, rebuild your project. Your control now
 > [!TIP]
 >  If your stock property pages are not visible (see previous Note), register the DLL by running RegSvr32.exe from the command line with the full path name to the DLL.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Adding Stock Properties](../mfc/mfc-activex-controls-adding-stock-properties.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX Controls: Adding Stock Properties](../mfc/mfc-activex-controls-adding-stock-properties.md)

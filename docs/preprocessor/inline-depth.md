@@ -31,7 +31,7 @@ The **inline_depth** pragma has no effect on functions marked with `__forceinlin
 > [!NOTE]
 > Recursive functions can be substituted inline to a maximum depth of 16 calls.
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-[inline_recursion](../preprocessor/inline-recursion.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [inline_recursion](../preprocessor/inline-recursion.md)

@@ -10,6 +10,6 @@ ms.assetid: 9e1a761d-52f7-4581-a790-3ff97c80f931
 
 The `atexit` function returns zero if successful, or a nonzero value if unsuccessful.
 
-## See Also
+## See also
 
-[Library Functions](../c-language/library-functions.md)
+- [Library Functions](../c-language/library-functions.md)

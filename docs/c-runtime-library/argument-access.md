@@ -19,4 +19,4 @@ The **va_arg**, **va_end**, and **va_start** macros provide access to function a
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

@@ -34,8 +34,7 @@ Encoding in a range of common Internet standards such as uuencode, hexadecimal, 
 |[UUEncode](reference/atl-text-encoding-functions.md#uuencode)|Call this function to uuencode some data.|
 |[UUEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#uuencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
 
-## See Also
+## See also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM Desktop Components](../atl/atl-com-desktop-components.md)
-
+- [Concepts](../atl/active-template-library-atl-concepts.md)
+- [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)

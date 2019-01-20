@@ -57,4 +57,4 @@ int main()
 
 ## See also
 
-[_1 Object](../standard-library/1-object.md)<br/>
+- [_1 Object](../standard-library/1-object.md)

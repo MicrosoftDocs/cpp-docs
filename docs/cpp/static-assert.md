@@ -96,9 +96,9 @@ public:
 
 ## See also
 
-[Assertion and User-Supplied Messages (C++)](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
-[#error Directive (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)<br/>
-[assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
-[Templates](../cpp/templates-cpp.md)<br/>
-[ASCII Character Set](../c-language/ascii-character-set.md)<br/>
-[Declarations and Definitions](declarations-and-definitions-cpp.md)
+- [Assertion and User-Supplied Messages (C++)](../cpp/assertion-and-user-supplied-messages-cpp.md)
+- [#error Directive (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)
+- [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)
+- [Templates](../cpp/templates-cpp.md)
+- [ASCII Character Set](../c-language/ascii-character-set.md)
+- [Declarations and Definitions](declarations-and-definitions-cpp.md)

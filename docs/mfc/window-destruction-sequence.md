@@ -14,7 +14,6 @@ In the MFC framework, when the user closes the frame window, the window's defaul
 
 - [Detaching a CWnd from its HWND](../mfc/detaching-a-cwnd-from-its-hwnd.md)
 
-## See Also
+## See also
 
-[Destroying Window Objects](../mfc/destroying-window-objects.md)
-
+- [Destroying Window Objects](../mfc/destroying-window-objects.md)

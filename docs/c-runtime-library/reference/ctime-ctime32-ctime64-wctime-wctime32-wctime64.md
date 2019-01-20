@@ -108,10 +108,10 @@ The time is Wed Feb 13 16:04:43 2002
 
 ## See also
 
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[asctime, _wasctime](asctime-wasctime.md)<br/>
-[ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)<br/>
-[_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)<br/>
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)<br/>
-[localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+- [Time Management](../../c-runtime-library/time-management.md)
+- [asctime, _wasctime](asctime-wasctime.md)
+- [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)
+- [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md)
+- [gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)
+- [localtime, _localtime32, _localtime64](localtime-localtime32-localtime64.md)
+- [time, _time32, _time64](time-time32-time64.md)

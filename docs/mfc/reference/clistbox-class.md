@@ -1432,14 +1432,14 @@ A return value of 0 or greater specifies the index of an item in the list box an
 
 [!code-cpp[NVC_MFC_CListBox#41](../../mfc/codesnippet/cpp/clistbox-class_41.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CButton Class](../../mfc/reference/cbutton-class.md)<br/>
-[CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>
-[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
-[CScrollBar Class](../../mfc/reference/cscrollbar-class.md)<br/>
-[CStatic Class](../../mfc/reference/cstatic-class.md)
+- [MFC Sample CTRLTEST](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CButton Class](../../mfc/reference/cbutton-class.md)
+- [CComboBox Class](../../mfc/reference/ccombobox-class.md)
+- [CEdit Class](../../mfc/reference/cedit-class.md)
+- [CScrollBar Class](../../mfc/reference/cscrollbar-class.md)
+- [CStatic Class](../../mfc/reference/cstatic-class.md)

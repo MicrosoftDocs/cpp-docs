@@ -126,8 +126,7 @@ Retrieves the name of the default document for this view.
 virtual LPCTSTR GetStartDocument();
 ```
 
-## See Also
+## See also
 
-[HTMLEdit Sample](../../visual-cpp-samples.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [HTMLEdit Sample](../../visual-cpp-samples.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

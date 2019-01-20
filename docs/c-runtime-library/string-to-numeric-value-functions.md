@@ -72,10 +72,10 @@ When the value returned by these functions would cause an overflow or underflow,
 
 `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, and `_wcstoui64` are wide-character versions of `strtod`, `strtol`, `strtoul`, `_strtoi64`, and `_strtoui64`, respectively; the pointer to an end-of-conversion argument to each of these wide-character functions is a wide-character string. Otherwise, each of these wide-character functions behaves identically to its single-byte-character counterpart.
 
-## See Also
+## See also
 
-[Data Conversion](../c-runtime-library/data-conversion.md)<br/>
-[Locale](../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[Floating-Point Support](../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)
+- [Data Conversion](../c-runtime-library/data-conversion.md)
+- [Locale](../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [Floating-Point Support](../c-runtime-library/floating-point-support.md)
+- [atof, _atof_l, _wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)

@@ -57,5 +57,5 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)

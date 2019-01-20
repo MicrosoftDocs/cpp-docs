@@ -102,6 +102,6 @@ The default for Microsoft C is that the Microsoft extensions are enabled. Use th
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[switch Statement (C++)](../cpp/switch-statement-cpp.md)
+- [switch Statement (C++)](../cpp/switch-statement-cpp.md)

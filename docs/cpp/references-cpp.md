@@ -89,6 +89,6 @@ int main() {
 
 ## See also
 
-[Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)<br/>
-[Reference-Type Function Returns](../cpp/reference-type-function-returns.md)<br/>
-[References to Pointers](../cpp/references-to-pointers.md)
+- [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)
+- [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)
+- [References to Pointers](../cpp/references-to-pointers.md)

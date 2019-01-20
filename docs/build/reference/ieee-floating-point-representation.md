@@ -124,4 +124,4 @@ The following are some examples in single-precision format:
 
 ## See also
 
-[Why Floating-Point Numbers May Lose Precision](../../build/reference/why-floating-point-numbers-may-lose-precision.md)
+- [Why Floating-Point Numbers May Lose Precision](../../build/reference/why-floating-point-numbers-may-lose-precision.md)

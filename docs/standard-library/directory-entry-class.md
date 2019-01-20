@@ -265,5 +265,5 @@ The status error code.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<filesystem&gt;](../standard-library/filesystem.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<filesystem&gt;](../standard-library/filesystem.md)

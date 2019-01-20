@@ -45,6 +45,6 @@ For an example about how to use **__if_not_exists**, see [__if_exists Statement]
 
 ## See also
 
-[Selection Statements](../cpp/selection-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[__if_exists Statement](../cpp/if-exists-statement.md)
+- [Selection Statements](../cpp/selection-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [__if_exists Statement](../cpp/if-exists-statement.md)

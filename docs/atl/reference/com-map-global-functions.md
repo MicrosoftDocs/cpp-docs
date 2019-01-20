@@ -69,7 +69,7 @@ BOOL InlineIsEqualUnknown(REFGUID rguid1);
 *rguid1*<br/>
 [in] The GUID to compare to `IID_IUnknown`.
 
-## See Also
+## See also
 
-[Functions](../../atl/reference/atl-functions.md)<br/>
-[COM Map Macros](../../atl/reference/com-map-macros.md)
+- [Functions](../../atl/reference/atl-functions.md)
+- [COM Map Macros](../../atl/reference/com-map-macros.md)

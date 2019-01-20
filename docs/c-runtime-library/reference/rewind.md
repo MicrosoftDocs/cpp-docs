@@ -93,4 +93,4 @@ The values read are: 1 and -37
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)

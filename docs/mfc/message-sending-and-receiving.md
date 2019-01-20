@@ -20,7 +20,6 @@ Each object capable of receiving messages or commands has its own message map th
 
 When a command-target object receives a message or command, it searches its message map for a match. If it finds a handler for the message, it calls the handler. For more information about how message maps are searched, see [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md). Refer again to the figure [Commands in the Framework](../mfc/user-interface-objects-and-command-ids.md).
 
-## See Also
+## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-
+- [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)

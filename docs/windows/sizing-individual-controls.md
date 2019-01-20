@@ -94,5 +94,5 @@ Win32
 
 ## See also
 
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+- [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
+- [Controls](../mfc/controls-mfc.md)

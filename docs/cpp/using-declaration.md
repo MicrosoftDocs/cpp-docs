@@ -320,5 +320,5 @@ public:
 
 ## See also
 
-[Namespaces](../cpp/namespaces-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Namespaces](../cpp/namespaces-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)

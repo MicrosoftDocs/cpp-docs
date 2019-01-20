@@ -83,8 +83,8 @@ Type 'Y' when finished typing keys: Y
 
 ## See also
 
-[Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)<br/>
-[_getche, _getwche](getche-getwche.md)<br/>
-[_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>
+- [Console and Port I/O](../../c-runtime-library/console-and-port-i-o.md)
+- [_getche, _getwche](getche-getwche.md)
+- [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)
+- [getc, getwc](getc-getwc.md)
+- [_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)

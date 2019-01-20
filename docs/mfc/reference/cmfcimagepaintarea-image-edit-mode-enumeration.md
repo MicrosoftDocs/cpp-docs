@@ -45,10 +45,10 @@ When you select a color from an image by using the IMAGE_EDIT_MODE_COLOR drawing
 
 **Header:** afximagepaintarea.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCImagePaintArea Class](../../mfc/reference/cmfcimagepaintarea-class.md)<br/>
-[CMFCImageEditorDialog Class](../../mfc/reference/cmfcimageeditordialog-class.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCImagePaintArea Class](../../mfc/reference/cmfcimagepaintarea-class.md)
+- [CMFCImageEditorDialog Class](../../mfc/reference/cmfcimageeditordialog-class.md)

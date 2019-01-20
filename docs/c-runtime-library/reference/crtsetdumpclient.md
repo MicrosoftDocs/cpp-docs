@@ -59,6 +59,6 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtReportBlockType](crtreportblocktype.md)<br/>
-[_CrtGetDumpClient](crtgetdumpclient.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_CrtReportBlockType](crtreportblocktype.md)
+- [_CrtGetDumpClient](crtgetdumpclient.md)

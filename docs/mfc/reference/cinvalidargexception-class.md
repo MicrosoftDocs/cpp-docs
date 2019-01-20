@@ -55,7 +55,7 @@ CInvalidArgException();
 
 Do not use this constructor directly; call the global function **AfxThrowInvalidArgException**.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CSimpleException Class](../../mfc/reference/csimpleexception-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CSimpleException Class](../../mfc/reference/csimpleexception-class.md)

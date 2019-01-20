@@ -17,8 +17,7 @@ If you choose to support a toolbar, the class also has member variables of type 
 
 These frame-window classes work as created, but to enhance their functionality, you must add member variables and member functions. You may also want to have your window classes handle other Windows messages. For more information, see [Changing the Styles of a Window Created by MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md).
 
-## See Also
+## See also
 
-[Frame-Window Classes](../mfc/frame-window-classes.md)<br/>
-[MFC Program or Control Source and Header Files](../ide/mfc-program-or-control-source-and-header-files.md)
-
+- [Frame-Window Classes](../mfc/frame-window-classes.md)
+- [MFC Program or Control Source and Header Files](../ide/mfc-program-or-control-source-and-header-files.md)

@@ -139,9 +139,9 @@ This code constructs a snapshot, passes it a parameter obtained earlier from the
 > [!TIP]
 >  You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Recordset: Requerying a Recordset (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)<br/>
-[Recordset: Declaring a Class for a Table (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [Recordset: Requerying a Recordset (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)
+- [Recordset: Declaring a Class for a Table (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)
+- [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

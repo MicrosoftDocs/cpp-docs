@@ -43,6 +43,6 @@ The **void** type is an incomplete type that cannot be completed. To complete an
     char a[25]; /* a now has complete type */
     ```
 
-## See Also
+## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+- [Declarations and Types](../c-language/declarations-and-types.md)

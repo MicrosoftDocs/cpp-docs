@@ -204,7 +204,7 @@ virtual bool supports_anonymous_source();
 
 **true** because the block does not postpone offered messages.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[transformer Class](transformer-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [transformer Class](transformer-class.md)

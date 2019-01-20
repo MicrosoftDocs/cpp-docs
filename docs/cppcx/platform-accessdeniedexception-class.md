@@ -30,6 +30,6 @@ If you hit this exception, ensure that you have requested the appropriate capabi
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
-[Platform::COMException Class](../cppcx/platform-comexception-class.md)
+- [Platform::COMException Class](../cppcx/platform-comexception-class.md)

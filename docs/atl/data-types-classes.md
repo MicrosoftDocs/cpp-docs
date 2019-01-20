@@ -16,7 +16,6 @@ The following classes wrap C++ data types:
 
 - [CComCurrency](../atl/reference/ccomcurrency-class.md) Includes methods and operators for creating and managing a `CURRENCY` object.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

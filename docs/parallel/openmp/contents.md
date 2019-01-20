@@ -27,4 +27,4 @@ ms.assetid: b7858099-7d7f-4cd9-9fa0-fba4832f2dd2
 
 ## See also
 
-[C and C++ application program interface](openmp-c-and-cpp-application-program-interface.md)
+- [C and C++ application program interface](openmp-c-and-cpp-application-program-interface.md)

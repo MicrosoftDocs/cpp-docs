@@ -440,9 +440,9 @@ void SetFilter(const CString& strFilter);
 *strFilter*<br/>
 [in] Specifies the filter.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
-[CUserTool Class](../../mfc/reference/cusertool-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)
+- [CUserTool Class](../../mfc/reference/cusertool-class.md)

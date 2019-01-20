@@ -16,4 +16,4 @@ In C++, there are several ways to exit a program:
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)
+- [main: Program Startup](../cpp/main-program-startup.md)

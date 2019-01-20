@@ -44,7 +44,6 @@ You may want a windowless control to be the target of an OLE drag-and-drop opera
 
 [!code-cpp[NVC_MFC_AxOpt#8](../mfc/codesnippet/cpp/providing-windowless-activation_4.cpp)]
 
-## See Also
+## See also
 
-[MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)
-
+- [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)

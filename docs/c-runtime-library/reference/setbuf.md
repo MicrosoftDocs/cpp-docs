@@ -84,8 +84,8 @@ stream2 buffering disabled
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[fflush](fflush.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[setvbuf](setvbuf.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fclose, _fcloseall](fclose-fcloseall.md)
+- [fflush](fflush.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [setvbuf](setvbuf.md)

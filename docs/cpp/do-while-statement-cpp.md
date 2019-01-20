@@ -46,8 +46,8 @@ int main()
 
 ## See also
 
-[Iteration Statements](../cpp/iteration-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[while Statement (C++)](../cpp/while-statement-cpp.md)<br/>
-[for Statement (C++)](../cpp/for-statement-cpp.md)<br/>
-[Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md)
+- [Iteration Statements](../cpp/iteration-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [while Statement (C++)](../cpp/while-statement-cpp.md)
+- [for Statement (C++)](../cpp/for-statement-cpp.md)
+- [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md)

@@ -109,10 +109,10 @@ The **mbsrtowcs_s** function is multithread safe if no function in the current t
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[mbrtowc](mbrtowc.md)<br/>
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
-[mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md)<br/>
-[mbsinit](mbsinit.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [mbrtowc](mbrtowc.md)
+- [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)
+- [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md)
+- [mbsinit](mbsinit.md)

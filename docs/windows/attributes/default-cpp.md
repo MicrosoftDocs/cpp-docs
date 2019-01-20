@@ -96,8 +96,8 @@ The [source](source-cpp.md) attribute also has an example of how to use **defaul
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Class Attributes](class-attributes.md)<br/>
-[coclass](coclass.md)
+- [IDL Attributes](idl-attributes.md)
+- [Class Attributes](class-attributes.md)
+- [coclass](coclass.md)

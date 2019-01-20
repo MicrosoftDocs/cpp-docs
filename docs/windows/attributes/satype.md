@@ -51,9 +51,9 @@ __interface A {
 };
 ```
 
-## See Also
+## See also
 
-[Compiler Attributes](compiler-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)<br/>
-[Method Attributes](method-attributes.md)<br/>
-[id](id.md)
+- [Compiler Attributes](compiler-attributes.md)
+- [Parameter Attributes](parameter-attributes.md)
+- [Method Attributes](method-attributes.md)
+- [id](id.md)

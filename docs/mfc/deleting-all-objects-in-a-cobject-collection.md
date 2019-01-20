@@ -65,7 +65,6 @@ As with the list example above, you can call `RemoveAll` to remove all elements 
 
 You can call `RemoveAll` to remove all elements in a map or `RemoveKey` to remove an individual element with the specified key.
 
-## See Also
+## See also
 
-[Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md)
-
+- [Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md)

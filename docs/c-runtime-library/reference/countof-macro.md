@@ -67,4 +67,4 @@ _countof(arr) = 20 elements
 
 ## See also
 
-[sizeof Operator](../../cpp/sizeof-operator.md)<br/>
+- [sizeof Operator](../../cpp/sizeof-operator.md)

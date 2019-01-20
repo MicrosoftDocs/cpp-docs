@@ -130,9 +130,9 @@ Converted value: 120000
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
-[_ecvt_s](ecvt-s.md)<br/>
-[_gcvt_s](gcvt-s.md)<br/>
-[_fcvt](fcvt.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)
+- [_ecvt_s](ecvt-s.md)
+- [_gcvt_s](gcvt-s.md)
+- [_fcvt](fcvt.md)

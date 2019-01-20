@@ -415,9 +415,9 @@ The preceding declaration is equivalent to the declaration using typedef above.
 
 ## See also
 
-[Function Overloading](../cpp/function-overloading.md)<br/>
-[Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)<br/>
-[Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)<br/>
-[Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)<br/>
-[Default Arguments](../cpp/default-arguments.md)<br/>
-[Inline Functions](../cpp/inline-functions-cpp.md)
+- [Function Overloading](../cpp/function-overloading.md)
+- [Functions with Variable Argument Lists](../cpp/functions-with-variable-argument-lists-cpp.md)
+- [Explicitly Defaulted and Deleted Functions](../cpp/explicitly-defaulted-and-deleted-functions.md)
+- [Argument-Dependent Name (Koenig) Lookup on Functions](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)
+- [Default Arguments](../cpp/default-arguments.md)
+- [Inline Functions](../cpp/inline-functions-cpp.md)

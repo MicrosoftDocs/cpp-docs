@@ -394,6 +394,6 @@ const char32_t* s5 = U"😎 = \U0001F60E is B-)";
 
 ## See also
 
-[Character Sets](../cpp/character-sets.md)<br/>
-[Numeric, Boolean and Pointer Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)<br/>
-[User-Defined Literals](../cpp/user-defined-literals-cpp.md)
+- [Character Sets](../cpp/character-sets.md)
+- [Numeric, Boolean and Pointer Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)
+- [User-Defined Literals](../cpp/user-defined-literals-cpp.md)

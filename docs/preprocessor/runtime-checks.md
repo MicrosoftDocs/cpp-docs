@@ -50,6 +50,6 @@ Using the **runtime_checks** pragma with the empty string (**""**) is a special 
 #pragma runtime_checks( "", restore )
 ```
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

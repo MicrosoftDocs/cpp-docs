@@ -58,6 +58,6 @@ You must also specify **/LTCG** when you specify **/GENPROFILE** or **/FASTGENPR
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md)<br/>
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)
+- [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md)

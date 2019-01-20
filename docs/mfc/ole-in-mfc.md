@@ -63,7 +63,6 @@ Describes the steps necessary to incorporate optional advanced features into exi
 [The Component Object Model](/windows/desktop/com/the-component-object-model)<br/>
 Describes using OLE without MFC.
 
-## See Also
+## See also
 
-[Concepts](../mfc/mfc-concepts.md)
-
+- [Concepts](../mfc/mfc-concepts.md)

@@ -31,7 +31,6 @@ In this page of the MFC Application Wizard, provide or refine the following opti
    |**File new short name**|Sets the name appearing in the standard Windows **New** dialog box, if there is more than one new document template. If your application is an [Automation server](../../mfc/automation-servers.md), this name is used as the short name of your Automation object. By default, the project name.|
    |**File type long name**|Sets the file type name in the system registry. If your application is an Automation server, this name is used as the long name of your Automation object. By default, the project name plus .Document.|
 
-## See Also
+## See also
 
-[MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)
-
+- [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)

@@ -35,4 +35,4 @@ A copy constructor for a class *T* is trivial if it is implicitly declared, the 
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

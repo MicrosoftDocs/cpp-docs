@@ -18,7 +18,6 @@ Thus, you could use the result of **GetStatus** to determine whether to use the 
 
 For related information, see [Serialization](../mfc/serialization-in-mfc.md).
 
-## See Also
+## See also
 
-[Files](../mfc/files-in-mfc.md)
-
+- [Files](../mfc/files-in-mfc.md)

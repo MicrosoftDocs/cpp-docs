@@ -32,10 +32,9 @@ The server code that the application wizard provides falls into several categori
 
 For more information, see [COleServerItem](../mfc/reference/coleserveritem-class.md), [COleServerDoc](../mfc/reference/coleserverdoc-class.md), and [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md) in the *Class Library Reference*.
 
-## See Also
+## See also
 
-[Servers](../mfc/servers.md)<br/>
-[Containers](../mfc/containers.md)<br/>
-[Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Registration](../mfc/registration.md)
-
+- [Servers](../mfc/servers.md)
+- [Containers](../mfc/containers.md)
+- [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)
+- [Registration](../mfc/registration.md)

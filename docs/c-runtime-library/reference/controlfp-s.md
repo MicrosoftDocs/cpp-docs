@@ -155,7 +155,7 @@ Default:  0x9001f
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_clear87, _clearfp](clear87-clearfp.md)<br/>
-[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)<br/>
-[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [_clear87, _clearfp](clear87-clearfp.md)
+- [_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)
+- [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)

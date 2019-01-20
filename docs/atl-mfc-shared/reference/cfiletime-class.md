@@ -451,9 +451,9 @@ static const ULONGLONG Week = Day* 7;
 
 See the example for [CFileTime::Millisecond](#millisecond).
 
-## See Also
+## See also
 
-[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
-[CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+- [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
+- [CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

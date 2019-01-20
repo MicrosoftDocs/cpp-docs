@@ -980,5 +980,5 @@ For more information, see [Checked Iterators](../standard-library/checked-iterat
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [\<iterator>](../standard-library/iterator.md)
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

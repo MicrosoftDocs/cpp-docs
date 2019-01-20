@@ -33,4 +33,4 @@ A type is move assignable if an rvalue reference to the type can be assigned to 
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

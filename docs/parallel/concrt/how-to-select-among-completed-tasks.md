@@ -43,10 +43,10 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc find-employee.cpp**
 
-## See Also
+## See also
 
-[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[Message Passing Functions](../../parallel/concrt/message-passing-functions.md)<br/>
-[choice Class](../../parallel/concrt/reference/choice-class.md)<br/>
-[join Class](../../parallel/concrt/reference/join-class.md)
+- [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
+- [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)
+- [Message Passing Functions](../../parallel/concrt/message-passing-functions.md)
+- [choice Class](../../parallel/concrt/reference/choice-class.md)
+- [join Class](../../parallel/concrt/reference/join-class.md)

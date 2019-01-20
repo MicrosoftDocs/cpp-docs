@@ -107,7 +107,7 @@ Line one.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputs, fputws](fputs-fputws.md)<br/>
-[gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
-[puts, _putws](puts-putws.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fputs, fputws](fputs-fputws.md)
+- [gets, _getws](../../c-runtime-library/gets-getws.md)
+- [puts, _putws](puts-putws.md)

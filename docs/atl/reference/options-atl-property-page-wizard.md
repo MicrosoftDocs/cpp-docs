@@ -30,8 +30,7 @@ Use this page of the wizard to define the threading model and aggregation level 
    |**No**|Create a property page that cannot be aggregated.|
    |**Only**|Create a property page that can only be instantiated through aggregation.|
 
-## See Also
+## See also
 
-[ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md)<br/>
-[Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)
-
+- [ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md)
+- [Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)

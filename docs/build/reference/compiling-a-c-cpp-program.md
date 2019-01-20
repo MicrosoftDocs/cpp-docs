@@ -18,6 +18,6 @@ For information on using the compiler, see the following sections:
 
 For information on choosing the compiler host and target architecture, see [Configure Visual C++ for 64-bit, x64 targets](../../build/configuring-programs-for-64-bit-visual-cpp.md).
 
-## See Also
+## See also
 
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)

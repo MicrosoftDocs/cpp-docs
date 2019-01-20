@@ -52,4 +52,4 @@ These routines convert data from one form to another. Generally these routines e
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

@@ -32,7 +32,6 @@ Like the toolbar, the status-bar object is embedded in its parent frame window a
 
 - [Toolbars (MFC Toolbar Implementation)](../mfc/mfc-toolbar-implementation.md)
 
-## See Also
+## See also
 
-[Status Bars](../mfc/status-bars.md)
-
+- [Status Bars](../mfc/status-bars.md)

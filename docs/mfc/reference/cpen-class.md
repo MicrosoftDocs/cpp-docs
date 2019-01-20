@@ -365,8 +365,8 @@ For more information about using graphic objects, see the article [Graphic Objec
 
 [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]
 
-## See Also
+## See also
 
-[CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CBrush Class](../../mfc/reference/cbrush-class.md)
+- [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CBrush Class](../../mfc/reference/cbrush-class.md)

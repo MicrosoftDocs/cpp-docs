@@ -25,10 +25,10 @@ Provide the information for the project. The options you specify are reflected i
 
    Specifies the command line to run when the user selects **Rebuild** from the **Build** menu. Displayed in the **Rebuild all command line** field on the **Nmake** page of the project's property page.
 
-## See Also
+## See also
 
-[Makefile Project Wizard](../ide/makefile-project-wizard.md)<br>
-[Creating a Makefile Project](../ide/creating-a-makefile-project.md)<br>
-[Visual C++ Project Types](../ide/visual-cpp-project-types.md)<br>
-[Creating Desktop Projects By Using Application Wizards](../ide/creating-desktop-projects-by-using-application-wizards.md)<br>
-[Property Pages](../ide/property-pages-visual-cpp.md)
+- [Makefile Project Wizard](../ide/makefile-project-wizard.md)
+- [Creating a Makefile Project](../ide/creating-a-makefile-project.md)
+- [Visual C++ Project Types](../ide/visual-cpp-project-types.md)
+- [Creating Desktop Projects By Using Application Wizards](../ide/creating-desktop-projects-by-using-application-wizards.md)
+- [Property Pages](../ide/property-pages-visual-cpp.md)

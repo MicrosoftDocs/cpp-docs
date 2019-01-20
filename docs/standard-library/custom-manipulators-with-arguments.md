@@ -16,4 +16,4 @@ This section describes how to create output stream manipulators with one or more
 
 ## See also
 
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
+- [iostream Programming](../standard-library/iostream-programming.md)

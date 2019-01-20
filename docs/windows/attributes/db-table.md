@@ -67,6 +67,6 @@ For an example of this attribute used in an application, see the samples [AtlAge
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[OLE DB Consumer Attributes](ole-db-consumer-attributes.md)
+- [OLE DB Consumer Attributes](ole-db-consumer-attributes.md)

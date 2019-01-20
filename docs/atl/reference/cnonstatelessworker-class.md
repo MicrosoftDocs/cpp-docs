@@ -105,8 +105,8 @@ void Terminate(void* /* pvParam */) throw();
 
 This class does not do any cleanup in `Terminate`.
 
-## See Also
+## See also
 
-[CThreadPool Class](../../atl/reference/cthreadpool-class.md)<br/>
-[Worker Archetype](../../atl/reference/worker-archetype.md)<br/>
-[Classes](../../atl/reference/atl-classes.md)
+- [CThreadPool Class](../../atl/reference/cthreadpool-class.md)
+- [Worker Archetype](../../atl/reference/worker-archetype.md)
+- [Classes](../../atl/reference/atl-classes.md)

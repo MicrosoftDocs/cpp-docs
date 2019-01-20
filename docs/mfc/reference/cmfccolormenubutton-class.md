@@ -498,11 +498,11 @@ void SetColumnsNumber(int nColumns);
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md)<br/>
-[CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)<br/>
-[CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)<br/>
-[CMFCColorButton Class](../../mfc/reference/cmfccolorbutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md)
+- [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)
+- [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)
+- [CMFCColorButton Class](../../mfc/reference/cmfccolorbutton-class.md)

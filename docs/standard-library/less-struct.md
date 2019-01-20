@@ -107,4 +107,4 @@ Sorted vector v1 = (41 6334 11478 15724 18467 19169 26500)
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

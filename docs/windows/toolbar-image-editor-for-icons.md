@@ -95,8 +95,8 @@ On the **View** menu, select **Toolbars** then choose **Image Editor**.
 
 None
 
-## See Also
+## See also
 
-[Colors Window](../windows/colors-window-image-editor-for-icons.md)<br/>
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+- [Colors Window](../windows/colors-window-image-editor-for-icons.md)
+- [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)
+- [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)

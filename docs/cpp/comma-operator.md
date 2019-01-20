@@ -54,6 +54,6 @@ int main () {
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Sequential-Evaluation Operator](../c-language/sequential-evaluation-operator.md)
+- [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Sequential-Evaluation Operator](../c-language/sequential-evaluation-operator.md)

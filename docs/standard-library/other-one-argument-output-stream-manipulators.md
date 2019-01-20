@@ -70,4 +70,4 @@ int main( )
 
 ## See also
 
-[Custom Manipulators with Arguments](../standard-library/custom-manipulators-with-arguments.md)<br/>
+- [Custom Manipulators with Arguments](../standard-library/custom-manipulators-with-arguments.md)

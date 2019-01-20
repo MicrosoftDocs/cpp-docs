@@ -118,9 +118,8 @@ An existing `CFixedStringT` to be copied into this `CFixedStringT` object.
 
 You should be aware that memory exceptions may occur whenever you use the assignment operator because new storage is often allocated to hold the resulting `CFixedStringT` object.
 
-## See Also
+## See also
 
-[CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-
+- [CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

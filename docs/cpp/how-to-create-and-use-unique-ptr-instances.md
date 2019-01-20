@@ -47,5 +47,5 @@ For more examples, see [make_unique](../standard-library/memory-functions.md#mak
 
 ## See also
 
-[Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)<br/>
-[make_unique](../standard-library/memory-functions.md#make_unique)
+- [Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)
+- [make_unique](../standard-library/memory-functions.md#make_unique)

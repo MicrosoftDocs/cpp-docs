@@ -104,9 +104,9 @@ This operator allows you to pass a `CWinFormsView` view to functions that accept
 
   See [CWinFormsView::GetControl](#getcontrol).
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWinFormsControl Class](../../mfc/reference/cwinformscontrol-class.md)<br/>
-[CWinFormsDialog Class](../../mfc/reference/cwinformsdialog-class.md)<br/>
-[CFormView Class](../../mfc/reference/cformview-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWinFormsControl Class](../../mfc/reference/cwinformscontrol-class.md)
+- [CWinFormsDialog Class](../../mfc/reference/cwinformsdialog-class.md)
+- [CFormView Class](../../mfc/reference/cformview-class.md)

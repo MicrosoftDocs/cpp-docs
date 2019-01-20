@@ -19,7 +19,6 @@ Animation controls can only play simple AVI clips, and they do not support sound
 
 - [Notifications Sent by Animation Controls](../mfc/notifications-sent-by-animation-controls.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

@@ -1958,13 +1958,12 @@ TRUE recalculates the ribbon layout; FALSE otherwise.
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CPane Class](../../mfc/reference/cpane-class.md)<br/>
-[CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md)<br/>
-[CMFCRibbonPanel Class](../../mfc/reference/cmfcribbonpanel-class.md)<br/>
-[CMFCRibbonBaseElement Class](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
-[Walkthrough: Updating the MFC Scribble Application](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CPane Class](../../mfc/reference/cpane-class.md)
+- [CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md)
+- [CMFCRibbonPanel Class](../../mfc/reference/cmfcribbonpanel-class.md)
+- [CMFCRibbonBaseElement Class](../../mfc/reference/cmfcribbonbaseelement-class.md)
+- [Walkthrough: Updating the MFC Scribble Application](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

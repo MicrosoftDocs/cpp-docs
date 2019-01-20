@@ -2200,10 +2200,10 @@ The return value is not used.
 
 This member function emulates the functionality of the [TB_SETWINDOWTHEME](/windows/desktop/Controls/tb-setwindowtheme) message, as described in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CToolBar Class](../../mfc/reference/ctoolbar-class.md)
+- [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)
+- [MFC Sample MFCIE](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CToolBar Class](../../mfc/reference/ctoolbar-class.md)

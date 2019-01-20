@@ -798,12 +798,12 @@ The following table shows other member functions that are similar to `CObArray::
 
   See the example for [CObArray::GetData](#getdata).
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CStringArray Class](../../mfc/reference/cstringarray-class.md)<br/>
-[CPtrArray Class](../../mfc/reference/cptrarray-class.md)<br/>
-[CByteArray Class](../../mfc/reference/cbytearray-class.md)<br/>
-[CWordArray Class](../../mfc/reference/cwordarray-class.md)<br/>
-[CDWordArray Class](../../mfc/reference/cdwordarray-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CStringArray Class](../../mfc/reference/cstringarray-class.md)
+- [CPtrArray Class](../../mfc/reference/cptrarray-class.md)
+- [CByteArray Class](../../mfc/reference/cbytearray-class.md)
+- [CWordArray Class](../../mfc/reference/cwordarray-class.md)
+- [CDWordArray Class](../../mfc/reference/cdwordarray-class.md)

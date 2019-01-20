@@ -73,4 +73,4 @@ stdout has not been redirected to a file
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)

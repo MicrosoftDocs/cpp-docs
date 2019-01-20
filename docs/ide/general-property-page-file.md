@@ -26,4 +26,4 @@ For non-Windows projects, see [Linux C++ Property Page Reference](../linux/prop-
 
 ## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)
+- [Property Pages](../ide/property-pages-visual-cpp.md)

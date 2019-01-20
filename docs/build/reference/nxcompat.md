@@ -17,6 +17,6 @@ Indicates that an executable was tested to be compatible with the Windows Data E
 
 For more information, see [/NXCOMPAT (Compatible with Data Execution Prevention)](../../build/reference/nxcompat-compatible-with-data-execution-prevention.md).
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+- [EDITBIN Options](../../build/reference/editbin-options.md)

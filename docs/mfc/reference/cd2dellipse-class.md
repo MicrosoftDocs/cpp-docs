@@ -61,6 +61,6 @@ The center point of the ellipse.
 *sizeRadius*<br/>
 The X-radius and Y-radius of the ellipse.
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

@@ -332,8 +332,8 @@ BOOL PrintSelection() const;
 
 TRUE if only the selected items are to be printed; otherwise FALSE.
 
-## See Also
+## See also
 
-[CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CPrintInfo Structure](../../mfc/reference/cprintinfo-structure.md)
+- [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CPrintInfo Structure](../../mfc/reference/cprintinfo-structure.md)

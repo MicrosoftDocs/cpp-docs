@@ -38,7 +38,6 @@ The view and the item both have `OnDraw` member functions because they draw unde
 
 For more information, see [CView::OnDraw](../mfc/reference/cview-class.md#ondraw), [COleServerItem](../mfc/reference/coleserveritem-class.md), [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#ondraw), and [COleServerDoc::OnGetEmbeddedItem](../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) in the *Class Library Reference*.
 
-## See Also
+## See also
 
-[Servers](../mfc/servers.md)
-
+- [Servers](../mfc/servers.md)

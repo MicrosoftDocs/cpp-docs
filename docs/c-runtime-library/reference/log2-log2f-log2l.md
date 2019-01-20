@@ -71,6 +71,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)<br/>
-[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)
+- [log, logf, log10, log10f](log-logf-log10-log10f.md)

@@ -149,8 +149,8 @@ Your state might include properties like the view type, zoom factor, insertion a
 
 You can use `OnSaveViewState` to store persistent information specific to your view's state. If you override `OnSaveViewState` to store information, you will want to override `OnApplyViewState` to read that information and apply it to your view when it is newly activated.
 
-## See Also
+## See also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDocObjectServerItem Class](../../mfc/reference/cdocobjectserveritem-class.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDocObjectServerItem Class](../../mfc/reference/cdocobjectserveritem-class.md)

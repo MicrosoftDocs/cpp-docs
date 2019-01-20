@@ -38,10 +38,10 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[free](free.md)<br/>
-[_heapadd](../../c-runtime-library/heapadd.md)<br/>
-[_heapchk](heapchk.md)<br/>
-[_heapset](../../c-runtime-library/heapset.md)<br/>
-[_heapwalk](heapwalk.md)<br/>
-[malloc](malloc.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [free](free.md)
+- [_heapadd](../../c-runtime-library/heapadd.md)
+- [_heapchk](heapchk.md)
+- [_heapset](../../c-runtime-library/heapset.md)
+- [_heapwalk](heapwalk.md)
+- [malloc](malloc.md)

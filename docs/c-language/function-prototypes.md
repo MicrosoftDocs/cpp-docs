@@ -74,6 +74,6 @@ void func1( struct S * );
 
 Under **/Ze**, the tag is still entered at global scope.
 
-## See Also
+## See also
 
-[Functions](../c-language/functions-c.md)
+- [Functions](../c-language/functions-c.md)

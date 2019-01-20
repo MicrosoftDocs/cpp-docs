@@ -171,8 +171,8 @@ Time modified : Wed May 07 15:25:11 2003
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_access, _waccess](access-waccess.md)<br/>
-[_chmod, _wchmod](chmod-wchmod.md)<br/>
-[_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
-[_stat, _wstat Functions](stat-functions.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_access, _waccess](access-waccess.md)
+- [_chmod, _wchmod](chmod-wchmod.md)
+- [_filelength, _filelengthi64](filelength-filelengthi64.md)
+- [_stat, _wstat Functions](stat-functions.md)

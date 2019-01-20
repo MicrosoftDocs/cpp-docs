@@ -2653,6 +2653,6 @@ Floating-point value
 
 Returns the integer component of the argument
 
-## See Also
+## See also
 
-[Concurrency::precise_math Namespace](concurrency-precise-math-namespace.md)
+- [Concurrency::precise_math Namespace](concurrency-precise-math-namespace.md)

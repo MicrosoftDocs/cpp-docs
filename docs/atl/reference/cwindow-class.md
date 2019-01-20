@@ -2615,6 +2615,6 @@ BOOL WinHelp(
 
 See [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) in the Windows SDK.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

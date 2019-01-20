@@ -50,7 +50,6 @@ In addition to the window classes provided by the class library, you may need sp
 
 [Creating Windows](../mfc/creating-windows.md) discusses creation of window objects and the windows they manage.
 
-## See Also
+## See also
 
-[Window Objects](../mfc/window-objects.md)
-
+- [Window Objects](../mfc/window-objects.md)

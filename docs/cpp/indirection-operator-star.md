@@ -52,7 +52,7 @@ If the pointer value is invalid, the result is undefined. The following list inc
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Address-of Operator: &](../cpp/address-of-operator-amp.md)<br/>
-[Indirection and Address-of Operators](../c-language/indirection-and-address-of-operators.md)
+- [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Address-of Operator: &](../cpp/address-of-operator-amp.md)
+- [Indirection and Address-of Operators](../c-language/indirection-and-address-of-operators.md)

@@ -20,6 +20,6 @@ To simplify the coding of programs that target the Windows Runtime, the C++/CX c
 |[Platform namespace](../cppcx/platform-namespace-c-cx.md)|Contains descriptions of types that you can use, and also internal types that are used only by the compiler infrastructure.|
 |[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)|Contains descriptions of enhancements and extensions to the Windows Runtime`Windows::Foundation::Collections` namespace.|
 
-## See Also
+## See also
 
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

@@ -60,8 +60,8 @@ The Add Event Wizard adds the following line of code to the control's .IDL file:
 
 This line associates the KeyPress event with its standard dispatch ID and allows the container to anticipate the KeyPress event.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)<br/>
-[COleControl Class](../mfc/reference/colecontrol-class.md)
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)
+- [COleControl Class](../mfc/reference/colecontrol-class.md)

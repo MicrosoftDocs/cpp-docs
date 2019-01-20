@@ -52,5 +52,5 @@ void __stdcall _com_raise_error(HRESULT hr, IErrorInfo* perrinfo) {
 
 ## See also
 
-[Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)<br/>
-[_set_com_error_handler](../cpp/set-com-error-handler.md)
+- [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)
+- [_set_com_error_handler](../cpp/set-com-error-handler.md)

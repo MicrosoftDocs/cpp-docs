@@ -18,8 +18,7 @@ Visual C++ provides two ways to take advantage of the status bar common control.
 
 Either method will give you access to the member functions of the status bar control. When you call `CStatusBar::GetStatusBarCtrl`, it returns a reference to a `CStatusBarCtrl` object so you can use either set of member functions. See [CStatusBar](../mfc/reference/cstatusbar-class.md) for information on constructing and creating a status bar using `CStatusBar`.
 
-## See Also
+## See also
 
-[Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

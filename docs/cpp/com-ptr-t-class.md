@@ -58,4 +58,4 @@ A set of [function templates](../cpp/relational-function-templates.md), not memb
 
 ## See also
 
-[Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)
+- [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)

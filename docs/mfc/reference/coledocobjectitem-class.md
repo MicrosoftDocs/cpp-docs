@@ -277,10 +277,10 @@ Flag specifying under what circumstances the OLE item is saved when it returns t
 
 Does not destroy the client item.
 
-## See Also
+## See also
 
-[MFC Sample MFCBIND](../../visual-cpp-samples.md)<br/>
-[COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>
-[CDocObjectServerItem Class](../../mfc/reference/cdocobjectserveritem-class.md)
+- [MFC Sample MFCBIND](../../visual-cpp-samples.md)
+- [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)
+- [CDocObjectServerItem Class](../../mfc/reference/cdocobjectserveritem-class.md)

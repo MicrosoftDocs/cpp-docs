@@ -3586,12 +3586,11 @@ AFX_IMPORT_DATA static BOOL m_bDontScaleImages;
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md)<br/>
-[CMFCPopupMenuBar Class](../../mfc/reference/cmfcpopupmenubar-class.md)<br/>
-[CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
-[Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md)
+- [CMFCPopupMenuBar Class](../../mfc/reference/cmfcpopupmenubar-class.md)
+- [CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md)
+- [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)

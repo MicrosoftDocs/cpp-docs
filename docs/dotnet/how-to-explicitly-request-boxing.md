@@ -38,6 +38,6 @@ f(Object^ o)
 f(Object^ o)
 ```
 
-## See Also
+## See also
 
-[Boxing](../windows/boxing-cpp-component-extensions.md)
+- [Boxing](../windows/boxing-cpp-component-extensions.md)

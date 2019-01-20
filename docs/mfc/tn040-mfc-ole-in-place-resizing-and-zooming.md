@@ -73,8 +73,7 @@ A server can control (to some degree) what happens during this negotiation. A sp
 
 You can implement custom resizing and still leverage the user interface provided by `COleResizeBar` by overriding the WM_SIZECHILD message in your `COleIPFrameWnd` class. For more information on the specifics of WM_SIZECHILD, see [Technical Note 24](../mfc/tn024-mfc-defined-messages-and-resources.md).
 
-## See Also
+## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)
-
+- [Technical Notes by Number](../mfc/technical-notes-by-number.md)
+- [Technical Notes by Category](../mfc/technical-notes-by-category.md)

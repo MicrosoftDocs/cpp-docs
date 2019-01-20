@@ -71,7 +71,7 @@ TSC_AUX was 0
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
-[__rdtsc](../intrinsics/rdtsc.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__rdtsc](../intrinsics/rdtsc.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

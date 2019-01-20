@@ -64,8 +64,8 @@ Basic UNIX applications, including many CGI applications, should port easily to 
 
 Another option UNIX programmers look at is the Windows POSIX subsystem. However, it only supports POSIX 1003.1, which was the only POSIX version standardized when Windows NT was created. Since then, there has been little demand for extending this subsystem, because most applications have been converted to Win32. The 1003.1 system is of limited interest for fully featured applications, because it does not include many capabilities (such as those in 1003.2, network support, and so on). Full featured applications run under the Windows POSIX subsystem do not have access to Windows features available to Win32 applications, such as memory-mapped files, networking, and graphics. Applications such as VI, LS, and GREP are the main targets for the Windows POSIX subsystem.
 
-## See Also
+## See also
 
-[Visual C++ Porting and Upgrading Guide](visual-cpp-change-history-2003-2015.md)<br/>
-[UNIX](../c-runtime-library/unix.md)<br/>
-[Inference Rules](../build/inference-rules.md)
+- [Visual C++ Porting and Upgrading Guide](visual-cpp-change-history-2003-2015.md)
+- [UNIX](../c-runtime-library/unix.md)
+- [Inference Rules](../build/inference-rules.md)

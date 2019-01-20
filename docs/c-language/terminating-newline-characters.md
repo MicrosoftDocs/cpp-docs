@@ -9,6 +9,6 @@ ms.assetid: ab145180-a098-41b5-8db0-2520272964ba
 
 Stream functions recognize either new line or end of file as the terminating character for a line.
 
-## See Also
+## See also
 
-[Library Functions](../c-language/library-functions.md)
+- [Library Functions](../c-language/library-functions.md)

@@ -14,12 +14,11 @@ Property sheets are implemented with classes [CPropertySheet](../mfc/reference/c
 
 For information on creating and working with property sheets, see the topic [Property Sheets](../mfc/property-sheets-mfc.md).
 
-## See Also
+## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
-[Property Sheets and Property Pages in MFC](../mfc/property-sheets-and-property-pages-in-mfc.md)<br/>
-[Exchanging Data](../mfc/exchanging-data.md)<br/>
-[Creating a Modeless Property Sheet](../mfc/creating-a-modeless-property-sheet.md)<br/>
-[Handling the Apply Button](../mfc/handling-the-apply-button.md)
-
+- [Dialog Boxes](../mfc/dialog-boxes.md)
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+- [Property Sheets and Property Pages in MFC](../mfc/property-sheets-and-property-pages-in-mfc.md)
+- [Exchanging Data](../mfc/exchanging-data.md)
+- [Creating a Modeless Property Sheet](../mfc/creating-a-modeless-property-sheet.md)
+- [Handling the Apply Button](../mfc/handling-the-apply-button.md)

@@ -18,8 +18,7 @@ You can also override member functions of [CDialog](../mfc/reference/cdialog-cla
 
 - [Commonly added member functions](../mfc/commonly-added-member-functions.md)
 
-## See Also
+## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-
+- [Dialog Boxes](../mfc/dialog-boxes.md)
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)

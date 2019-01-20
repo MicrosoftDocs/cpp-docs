@@ -119,9 +119,9 @@ After:  **** is a test of the wmemset function
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memchr, wmemchr](memchr-wmemchr.md)<br/>
-[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)<br/>
+- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)
+- [_memccpy](memccpy.md)
+- [memchr, wmemchr](memchr-wmemchr.md)
+- [memcmp, wmemcmp](memcmp-wmemcmp.md)
+- [memcpy, wmemcpy](memcpy-wmemcpy.md)
+- [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)

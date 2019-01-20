@@ -60,6 +60,6 @@ The output of the example looks like this:
 i = 2147483647, ll = 4611686014132420609
 ```
 
-## See Also
+## See also
 
-[Statements](../c-language/statements-c.md)
+- [Statements](../c-language/statements-c.md)

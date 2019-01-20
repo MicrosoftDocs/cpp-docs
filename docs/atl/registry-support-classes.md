@@ -16,8 +16,7 @@ The following class provides registry support:
 
 [The ATL Registry Component (Registrar)](../atl/atl-registry-component-registrar.md)
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)<br/>
-[Registry Macros](../atl/reference/registry-macros.md)
-
+- [Class Overview](../atl/atl-class-overview.md)
+- [Registry Macros](../atl/reference/registry-macros.md)

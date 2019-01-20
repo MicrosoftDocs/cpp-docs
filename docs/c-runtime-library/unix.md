@@ -18,6 +18,6 @@ If you plan to port your programs to UNIX, follow these guidelines:
     > [!NOTE]
     >  In this version of Visual C++, UNIX compatibility information has been removed from the function descriptions.
 
-## See Also
+## See also
 
-[Compatibility](../c-runtime-library/compatibility.md)
+- [Compatibility](../c-runtime-library/compatibility.md)

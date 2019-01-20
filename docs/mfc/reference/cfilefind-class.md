@@ -776,12 +776,12 @@ You must call [FindNextFile](#findnextfile) at least once before calling `Matche
 
 [!code-cpp[NVC_MFCFiles#35](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_5.cpp)]
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CFtpFileFind Class](../../mfc/reference/cftpfilefind-class.md)<br/>
-[CGopherFileFind Class](../../mfc/reference/cgopherfilefind-class.md)<br/>
-[CInternetFile Class](../../mfc/reference/cinternetfile-class.md)<br/>
-[CGopherFile Class](../../mfc/reference/cgopherfile-class.md)<br/>
-[CHttpFile Class](../../mfc/reference/chttpfile-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CFtpFileFind Class](../../mfc/reference/cftpfilefind-class.md)
+- [CGopherFileFind Class](../../mfc/reference/cgopherfilefind-class.md)
+- [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)
+- [CGopherFile Class](../../mfc/reference/cgopherfile-class.md)
+- [CHttpFile Class](../../mfc/reference/chttpfile-class.md)

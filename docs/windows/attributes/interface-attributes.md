@@ -42,6 +42,6 @@ You must observe these rules for defining an interface:
 
 When not specifying the [uuid](uuid-cpp-attributes.md) attribute and using the same interface name in different attribute projects, the same GUID is generated.
 
-## See Also
+## See also
 
-[Attributes by Usage](attributes-by-usage.md)
+- [Attributes by Usage](attributes-by-usage.md)

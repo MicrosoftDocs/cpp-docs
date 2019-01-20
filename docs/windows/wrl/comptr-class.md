@@ -582,4 +582,3 @@ void Swap(
 
 *r*<br/>
 A `ComPtr`.
-

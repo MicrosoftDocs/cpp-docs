@@ -71,6 +71,6 @@ __declspec ( naked ) func()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Naked Functions](../c-language/naked-functions.md)
+- [Naked Functions](../c-language/naked-functions.md)

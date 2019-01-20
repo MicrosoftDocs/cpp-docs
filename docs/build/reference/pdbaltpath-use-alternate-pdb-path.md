@@ -22,7 +22,7 @@ Use this option to provide an alternate location for the Program Database (.pdb)
 
 The value of *pdb_file_name* can be an arbitrary string, an environment variable, or **%_PDB%**. The linker will expand an environment variable, such as **%SystemRoot%**, to its value. The linker defines the environment variables **%_PDB%** and **%_EXT%**. **%_PDB%** expands to the file name of the actual .pdb file without any path information and **%_EXT%** is the extension of the generated executable.
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)<br/>
-[/PDBPATH](../../build/reference/pdbpath.md)
+- [DUMPBIN Options](../../build/reference/dumpbin-options.md)
+- [/PDBPATH](../../build/reference/pdbpath.md)

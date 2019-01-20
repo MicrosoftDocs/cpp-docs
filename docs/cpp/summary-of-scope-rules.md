@@ -62,4 +62,4 @@ Default parameters are in the scope of the parameter for which they are the defa
 
 ## See also
 
-[Inheritance](../cpp/inheritance-cpp.md)
+- [Inheritance](../cpp/inheritance-cpp.md)

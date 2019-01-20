@@ -41,6 +41,6 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
-[Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)
+- [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

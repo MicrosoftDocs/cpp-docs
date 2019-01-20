@@ -136,6 +136,6 @@ Flags: 0x0
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

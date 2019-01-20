@@ -21,8 +21,7 @@ To create a list control, you need to supply image lists to be used when you ins
 
 However, if you don't plan to display icons in your list view or list control, you don't need image lists.
 
-## See Also
+## See also
 
-[Using CListCtrl](../mfc/using-clistctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CListCtrl](../mfc/using-clistctrl.md)
+- [Controls](../mfc/controls-mfc.md)

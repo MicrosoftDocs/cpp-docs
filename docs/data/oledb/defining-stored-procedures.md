@@ -55,6 +55,6 @@ Also note that you can define a stored procedure using the database attribute [d
 db_command("{ ? = CALL dbo.dt_adduserobject }")
 ```
 
-## See Also
+## See also
 
-[Using Stored Procedures](../../data/oledb/using-stored-procedures.md)
+- [Using Stored Procedures](../../data/oledb/using-stored-procedures.md)

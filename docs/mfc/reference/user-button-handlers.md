@@ -18,7 +18,6 @@ The following map entries correspond to the function prototypes.
 |ON_BN_PAINT( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 |ON_BN_UNHILITE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 
-## See Also
+## See also
 
-[Message Maps](../../mfc/reference/message-maps-mfc.md)
-
+- [Message Maps](../../mfc/reference/message-maps-mfc.md)

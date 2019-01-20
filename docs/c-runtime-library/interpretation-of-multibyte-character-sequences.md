@@ -22,7 +22,7 @@ Most multibyte-character routines in the Microsoft run-time library recognize mu
 |[mbrtoc16, mbrtoc32](../c-runtime-library/reference/mbrtoc16-mbrtoc323.md)|Convert multibyte character to equivalent UTF-16 or UTF-32 character|
 |[c16rtomb, c32rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md)|Convert UTF-16 or UTF-32 character to equivalent multibyte character|
 
-## See Also
+## See also
 
-[Internationalization](../c-runtime-library/internationalization.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Internationalization](../c-runtime-library/internationalization.md)
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

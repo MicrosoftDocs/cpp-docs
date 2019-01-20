@@ -19,6 +19,6 @@ Bitwise operations on signed integers work the same as bitwise operations on uns
 
 The result of the bitwise AND is 96.
 
-## See Also
+## See also
 
-[Integers](../c-language/integers.md)
+- [Integers](../c-language/integers.md)

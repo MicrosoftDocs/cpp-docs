@@ -26,7 +26,6 @@ The following articles discuss ActiveX control properties in more detail:
 
 - [MFC ActiveX Controls: Accessing Ambient Properties](../mfc/mfc-activex-controls-accessing-ambient-properties.md)
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)

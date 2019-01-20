@@ -54,7 +54,7 @@ For an example, see [__shiftleft128](../intrinsics/shiftleft128.md).
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[__shiftleft128](../intrinsics/shiftleft128.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__shiftleft128](../intrinsics/shiftleft128.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -40,4 +40,4 @@ Type information is generated for polymorphic classes only if the [/GR (Enable R
 
 ## See also
 
-[Run-Time Type Information](../cpp/run-time-type-information.md)
+- [Run-Time Type Information](../cpp/run-time-type-information.md)

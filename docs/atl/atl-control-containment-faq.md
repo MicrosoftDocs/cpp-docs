@@ -94,12 +94,12 @@ Here's a summary:
 
 [!code-cpp[NVC_ATL_AxHost#1](../atl/codesnippet/cpp/hosting-activex-controls-using-atl-axhost_1.cpp)]
 
-## See Also
+## See also
 
-[Control Containment FAQ](../atl/atl-control-containment-faq.md)<br/>
-[AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)<br/>
-[AtlAxCreateControlEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)<br/>
-[AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic)<br/>
-[AtlAxCreateControlLicEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)<br/>
-[CAxWindow2T Class](../atl/reference/caxwindow2t-class.md)<br/>
-[IAxWinHostWindowLic Interface](../atl/reference/iaxwinhostwindowlic-interface.md)
+- [Control Containment FAQ](../atl/atl-control-containment-faq.md)
+- [AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)
+- [AtlAxCreateControlEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)
+- [AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic)
+- [AtlAxCreateControlLicEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)
+- [CAxWindow2T Class](../atl/reference/caxwindow2t-class.md)
+- [IAxWinHostWindowLic Interface](../atl/reference/iaxwinhostwindowlic-interface.md)

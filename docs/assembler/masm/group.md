@@ -15,4 +15,4 @@ Add the specified *segments* to the group called *name*.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

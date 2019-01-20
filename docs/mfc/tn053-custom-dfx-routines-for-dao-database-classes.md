@@ -201,8 +201,7 @@ All the remaining operations only deal with using the data cache. The data cache
 > [!TIP]
 > Model your custom DFX routines on the existing DFX routines for standard data types.
 
-## See Also
+## See also
 
-[Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
-[Technical Notes by Category](../mfc/technical-notes-by-category.md)
-
+- [Technical Notes by Number](../mfc/technical-notes-by-number.md)
+- [Technical Notes by Category](../mfc/technical-notes-by-category.md)

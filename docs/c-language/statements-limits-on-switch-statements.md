@@ -9,6 +9,6 @@ ms.assetid: d327ef3f-2b11-4bd6-abfe-539697fd21a7
 
 Microsoft C does not limit the number of **case** values in a **switch** statement. The number is limited only by available memory.
 
-## See Also
+## See also
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

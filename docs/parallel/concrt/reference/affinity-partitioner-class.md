@@ -50,6 +50,6 @@ Constructs an `affinity_partitioner` object.
 affinity_partitioner();
 ```
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

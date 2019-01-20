@@ -107,6 +107,6 @@ ms.assetid: 4158234c-e189-4e25-970f-52a04bc6380a
 &nbsp;&nbsp;&nbsp;&nbsp;**\x** *hexadecimal-digit*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-escape-sequence* *hexadecimal-digit*
 
-## See Also
+## See also
 
-[Lexical Grammar](../c-language/lexical-grammar.md)<br/>
+- [Lexical Grammar](../c-language/lexical-grammar.md)

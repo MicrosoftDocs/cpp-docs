@@ -254,7 +254,7 @@ A variable that exists only in debug builds and is set to true if the dialog box
 bool m_bModal;
 ```
 
-## See Also
+## See also
 
-[CDialogImpl Class](../../atl/reference/cdialogimpl-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CDialogImpl Class](../../atl/reference/cdialogimpl-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

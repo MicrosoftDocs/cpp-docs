@@ -19,4 +19,4 @@ This is the default. Same as [.XALL](../../assembler/masm/dot-xall.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

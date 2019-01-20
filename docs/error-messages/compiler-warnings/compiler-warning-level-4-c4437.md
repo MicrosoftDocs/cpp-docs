@@ -71,8 +71,8 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
-[dynamic_cast Operator](../../cpp/dynamic-cast-operator.md)<br/>
-[vtordisp](../../preprocessor/vtordisp.md)<br/>
-[Compiler Warning (level 1) C4436](../../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)
+- [dynamic_cast Operator](../../cpp/dynamic-cast-operator.md)
+- [vtordisp](../../preprocessor/vtordisp.md)
+- [Compiler Warning (level 1) C4436](../../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)

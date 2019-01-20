@@ -71,4 +71,4 @@ __declspec ( naked ) int main() {
 
 ## See also
 
-[Naked Function Calls](../cpp/naked-function-calls.md)
+- [Naked Function Calls](../cpp/naked-function-calls.md)

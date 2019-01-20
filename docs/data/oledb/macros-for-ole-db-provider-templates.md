@@ -573,10 +573,10 @@ This `Execute` function populates the rowset's data. The ATL Project Wizard crea
 
 The wizard also adds three corresponding entries in the schema map. See [Creating an OLE DB Template Provider](../../data/oledb/creating-an-ole-db-provider.md) for more information about using the wizard to create a provider.
 
-## See Also
+## See also
 
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
-[Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)<br/>
-[OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
-[Macros for OLE DB Provider Templates](../../data/oledb/macros-for-ole-db-provider-templates.md)
+- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+- [Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)
+- [OLE DB Provider Templates Reference](../../data/oledb/ole-db-provider-templates-reference.md)
+- [Macros for OLE DB Provider Templates](../../data/oledb/macros-for-ole-db-provider-templates.md)

@@ -117,4 +117,4 @@ Conformance with the disambiguation rules is required because, by default, C++ a
 
 ## See also
 
-[Name Resolution](../cpp/templates-and-name-resolution.md)
+- [Name Resolution](../cpp/templates-and-name-resolution.md)

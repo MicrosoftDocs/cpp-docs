@@ -77,6 +77,6 @@ namespace graphics;
 
 **Namespace:** Concurrency
 
-## See Also
+## See also
 
-[Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+- [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

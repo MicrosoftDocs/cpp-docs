@@ -36,6 +36,6 @@ See the [idl_module](idl-module.md) example for a sample of how to use **usesget
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)
+- [IDL Attributes](idl-attributes.md)

@@ -31,6 +31,6 @@ The `__vmx_off` function is equivalent to the `VMXOFF` machine instruction. This
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

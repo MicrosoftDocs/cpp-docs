@@ -127,5 +127,5 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Floating-point primitives](../c-runtime-library/reference/floating-point-primitives.md)<br/>
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+- [Floating-point primitives](../c-runtime-library/reference/floating-point-primitives.md)

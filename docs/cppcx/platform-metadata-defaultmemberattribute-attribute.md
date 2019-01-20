@@ -36,6 +36,6 @@ Apply the DefaultMember attribute to a method that will be consumed by a JavaScr
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
-[Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)
+- [Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)

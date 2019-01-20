@@ -31,12 +31,11 @@ The following table shows your role in relation to what the framework does for y
 |Scroll in the recordset using [CRecordset::Move](../../mfc/reference/crecordset-class.md#move) or a menu or toolbar command.|Calls `DoFieldExchange` to transfer data to the field data members from the new current record.|
 |Add, update, and delete records.|Calls `DoFieldExchange` to transfer data to the data source.|
 
-## See Also
+## See also
 
-[Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
-[Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>
-[Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>
-[CRecordset Class](../../mfc/reference/crecordset-class.md)<br/>
-[CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)<br/>
-[Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)
-
+- [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+- [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)
+- [Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)
+- [CRecordset Class](../../mfc/reference/crecordset-class.md)
+- [CFieldExchange Class](../../mfc/reference/cfieldexchange-class.md)
+- [Macros, Global Functions, and Global Variables](../../mfc/reference/mfc-macros-and-globals.md)

@@ -22,6 +22,6 @@ Visual C++ also provides a [menu editor](../windows/menu-editor.md) for creating
 
 - [Sample](../mfc/menu-sample-list.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

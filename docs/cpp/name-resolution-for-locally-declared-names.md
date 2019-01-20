@@ -158,4 +158,4 @@ Base
 
 ## See also
 
-[Name Resolution](../cpp/templates-and-name-resolution.md)
+- [Name Resolution](../cpp/templates-and-name-resolution.md)

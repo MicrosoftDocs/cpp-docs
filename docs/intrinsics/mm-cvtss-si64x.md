@@ -78,7 +78,7 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[__m128d](../cpp/m128d.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__m128d](../cpp/m128d.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

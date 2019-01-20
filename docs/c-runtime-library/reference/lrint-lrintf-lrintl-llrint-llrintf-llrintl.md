@@ -87,4 +87,4 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)

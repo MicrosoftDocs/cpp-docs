@@ -11,4 +11,4 @@ Calling the [abort](../c-runtime-library/reference/abort.md) function causes imm
 
 ## See also
 
-[Additional Termination Considerations](../cpp/additional-termination-considerations.md)
+- [Additional Termination Considerations](../cpp/additional-termination-considerations.md)

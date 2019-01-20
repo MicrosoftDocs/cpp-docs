@@ -1602,11 +1602,11 @@ Returns one of the following enumerated values: AFX_SDT_DEFAULT, AFX_SDT_VS2005,
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[CFrameWndEx Class](../../mfc/reference/cframewndex-class.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [CFrameWndEx Class](../../mfc/reference/cframewndex-class.md)
+- [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)
+- [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md)

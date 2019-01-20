@@ -15,7 +15,6 @@ Provides a destination for diagnostic dumps.
 [CMemoryState](../mfc/reference/cmemorystate-structure.md)<br/>
 Structure that provides snapshots of memory use. Also used to compare earlier and later memory snapshots.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

@@ -473,6 +473,6 @@ The value type of the elements of the texture_view.
 typedef typename const value_type value_type;
 ```
 
-## See Also
+## See also
 
-[Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
+- [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

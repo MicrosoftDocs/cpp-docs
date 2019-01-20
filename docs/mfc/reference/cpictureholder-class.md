@@ -288,7 +288,7 @@ void SetPictureDispatch(LPPICTUREDISP pDisp);
 *pDisp*<br/>
 Pointer to the new `IPictureDisp` interface.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CFontHolder Class](../../mfc/reference/cfontholder-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CFontHolder Class](../../mfc/reference/cfontholder-class.md)

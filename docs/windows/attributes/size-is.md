@@ -41,12 +41,12 @@ See the example for [first_is](first-is.md) for a sample of how to specify a sec
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parameter Attributes](parameter-attributes.md)<br/>
-[first_is](first-is.md)<br/>
-[last_is](last-is.md)<br/>
-[max_is](max-is.md)<br/>
-[length_is](length-is.md)
+- [IDL Attributes](idl-attributes.md)
+- [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)
+- [Parameter Attributes](parameter-attributes.md)
+- [first_is](first-is.md)
+- [last_is](last-is.md)
+- [max_is](max-is.md)
+- [length_is](length-is.md)

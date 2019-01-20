@@ -28,8 +28,7 @@ The following map entries correspond to the function prototypes:
 |ON_WM_XBUTTONDOWN()|afx_msg void [OnXButtonDown](../../mfc/reference/cwnd-class.md#onxbuttondown)( UINT, UINT, CPoint );|
 |ON_WM_XBUTTONUP()|afx_msg void [OnXButtonUp](../../mfc/reference/cwnd-class.md#onxbuttonup)( UINT, UINT, CPoint );|
 
-## See Also
+## See also
 
-[Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
-[Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-
+- [Message Maps](../../mfc/reference/message-maps-mfc.md)
+- [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)

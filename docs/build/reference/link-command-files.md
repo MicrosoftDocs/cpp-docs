@@ -25,7 +25,7 @@ The following command to build a DLL passes the names of object files and librar
 link /dll @objlist.txt @liblist.txt @exports.txt
 ```
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)

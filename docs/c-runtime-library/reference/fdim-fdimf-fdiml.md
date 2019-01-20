@@ -84,6 +84,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)<br/>
-[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [fmax, fmaxf, fmaxl](fmax-fmaxf-fmaxl.md)
+- [abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)

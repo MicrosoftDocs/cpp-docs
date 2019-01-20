@@ -83,9 +83,9 @@ See the example in [_getdrive](getdrive.md).
 
 ## See also
 
-[Directory Control](../../c-runtime-library/directory-control.md)<br/>
-[_chdir, _wchdir](chdir-wchdir.md)<br/>
-[_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
-[_getdrive](getdrive.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_rmdir, _wrmdir](rmdir-wrmdir.md)<br/>
+- [Directory Control](../../c-runtime-library/directory-control.md)
+- [_chdir, _wchdir](chdir-wchdir.md)
+- [_getcwd, _wgetcwd](getcwd-wgetcwd.md)
+- [_getdrive](getdrive.md)
+- [_mkdir, _wmkdir](mkdir-wmkdir.md)
+- [_rmdir, _wrmdir](rmdir-wrmdir.md)

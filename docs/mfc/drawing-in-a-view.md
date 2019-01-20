@@ -30,7 +30,6 @@ The example prints whatever string it gets from the document, centered in the vi
 
 For more examples of how to write `OnDraw`, see the [MFC Samples](../visual-cpp-samples.md).
 
-## See Also
+## See also
 
-[Using Views](../mfc/using-views.md)
-
+- [Using Views](../mfc/using-views.md)

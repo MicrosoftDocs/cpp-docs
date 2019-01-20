@@ -112,8 +112,8 @@ See [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_CrtSetReportMode](crtsetreportmode.md)<br/>
-[_CrtSetReportFile](crtsetreportfile.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[_DEBUG](../../c-runtime-library/debug.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_CrtSetReportMode](crtsetreportmode.md)
+- [_CrtSetReportFile](crtsetreportfile.md)
+- [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)
+- [_DEBUG](../../c-runtime-library/debug.md)

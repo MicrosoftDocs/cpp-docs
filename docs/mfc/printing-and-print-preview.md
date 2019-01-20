@@ -20,6 +20,6 @@ This family of articles explains how printing is implemented in the Microsoft Fo
 
 - [Sample](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

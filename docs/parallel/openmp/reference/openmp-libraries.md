@@ -22,4 +22,4 @@ The OpenMP DLLs are in the Visual C++ redistributable directory and need to be d
 
 ## See also
 
-[Library reference](openmp-library-reference.md)
+- [Library reference](openmp-library-reference.md)

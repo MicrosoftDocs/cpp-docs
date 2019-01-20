@@ -180,7 +180,7 @@ STDMETHOD_ULONG Release();
 
 In non-debug builds, always returns zero. In debug builds, returns a value that may be useful for diagnostics or testing.
 
-## See Also
+## See also
 
-[CComCachedTearOffObject Class](../../atl/reference/ccomcachedtearoffobject-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComCachedTearOffObject Class](../../atl/reference/ccomcachedtearoffobject-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

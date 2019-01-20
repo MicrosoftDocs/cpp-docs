@@ -185,7 +185,6 @@ Add a handler for the `ExitInstance` function and use the following code:
 
 You can now run the program in Debug mode to see the output of the `DumpStatistics` function.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

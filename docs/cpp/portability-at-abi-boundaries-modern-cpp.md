@@ -28,6 +28,6 @@ extern "C" {        // functions using explicit "this"
 
 ## See also
 
-[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
+- [Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

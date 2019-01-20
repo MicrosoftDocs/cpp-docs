@@ -19,4 +19,4 @@ The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *na
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

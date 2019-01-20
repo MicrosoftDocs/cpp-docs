@@ -18,8 +18,7 @@ After creating the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)),
 
 For more information, see [Creating a Tab Control](/windows/desktop/Controls/tab-controls) in the Windows SDK.
 
-## See Also
+## See also
 
-[Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CTabCtrl](../mfc/using-ctabctrl.md)
+- [Controls](../mfc/controls-mfc.md)

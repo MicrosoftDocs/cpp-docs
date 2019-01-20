@@ -58,9 +58,9 @@ See the example for [terminate](terminate-crt.md).
 
 ## See also
 
-[Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](abort.md)<br/>
-[_get_terminate](get-terminate.md)<br/>
-[set_unexpected](set-unexpected-crt.md)<br/>
-[terminate](terminate-crt.md)<br/>
-[unexpected](unexpected-crt.md)<br/>
+- [Exception Handling Routines](../../c-runtime-library/exception-handling-routines.md)
+- [abort](abort.md)
+- [_get_terminate](get-terminate.md)
+- [set_unexpected](set-unexpected-crt.md)
+- [terminate](terminate-crt.md)
+- [unexpected](unexpected-crt.md)

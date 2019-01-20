@@ -32,7 +32,6 @@ For example, to enable the Cut command, you might write a handler something like
 
 - [OLE data objects and data sources and uniform data transfer](../mfc/data-objects-and-data-sources-ole.md)
 
-## See Also
+## See also
 
-[Clipboard](../mfc/clipboard.md)
-
+- [Clipboard](../mfc/clipboard.md)

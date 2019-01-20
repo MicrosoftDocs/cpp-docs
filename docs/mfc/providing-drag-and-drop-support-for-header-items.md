@@ -13,7 +13,6 @@ As with common drag-and-drop functionality, you can extend the default drag-and-
 > [!NOTE]
 >  If you are providing drag-and-drop support for an embedded header control in a list control, see the Extended Style section in the [Changing List Control Styles](../mfc/changing-list-control-styles.md) topic.
 
-## See Also
+## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
-
+- [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)

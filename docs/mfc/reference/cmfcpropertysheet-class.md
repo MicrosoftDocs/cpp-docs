@@ -474,9 +474,9 @@ The following table lists the enumeration values that can be specified in the *l
 |`CMFCPropertySheet::PropSheetLook_OneNoteTabs`|Displays a tab, in the style of Microsoft OneNote, for each property page. The framework displays tabs at the top of the property sheet and scroll arrows if there are more tabs than will fit in a single row.|
 |`CMFCPropertySheet::PropSheetLook_List`|Displays a list at the left side of the property sheet. Each list item corresponds to a property page. The framework displays scroll arrows if there are more list items than will fit in the visible area of the list.|
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCPropertyPage Class](../../mfc/reference/cmfcpropertypage-class.md)<br/>
-[CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCPropertyPage Class](../../mfc/reference/cmfcpropertypage-class.md)
+- [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)

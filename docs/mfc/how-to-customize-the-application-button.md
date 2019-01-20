@@ -47,6 +47,6 @@ The Application menu does not appear on the design surface. To view it, you must
 
 - On the **Ribbon Editor Toolbar**, click **Test Ribbon**.
 
-## See Also
+## See also
 
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+- [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)

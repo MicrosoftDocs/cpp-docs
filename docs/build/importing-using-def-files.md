@@ -50,6 +50,6 @@ Using CONSTANT is more risky because if you forget to use the extra level of ind
 
 The current Visual C++ linker issues a warning if it sees CONSTANT in the .def file to account for this case. The only real reason to use CONSTANT is if you cannot recompile some object file where the header file did not list **__declspec(dllimport)** on the prototype.
 
-## See Also
+## See also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+- [Importing into an Application](../build/importing-into-an-application.md)

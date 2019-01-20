@@ -18,6 +18,6 @@ Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is availabl
 
 - [DUMPBIN options](../../build/reference/dumpbin-options.md)
 
-## See Also
+## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)
+- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)

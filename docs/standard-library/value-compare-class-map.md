@@ -40,6 +40,6 @@ See example for [value_comp](../standard-library/map-class.md#value_comp) for an
 
 ## See also
 
-[binary_function Struct](../standard-library/binary-function-struct.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [binary_function Struct](../standard-library/binary-function-struct.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

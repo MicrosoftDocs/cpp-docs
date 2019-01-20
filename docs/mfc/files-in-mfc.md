@@ -41,9 +41,9 @@ For information about derived `CFile` classes, see the [MFC hierarchy chart](../
 
 - [Store and load CObjects and CObject-derived objects via an archive](../mfc/storing-and-loading-cobjects-via-an-archive.md)
 
-## See Also
+## See also
 
-[Concepts](../mfc/mfc-concepts.md)<br/>
-[General MFC Topics](../mfc/general-mfc-topics.md)<br/>
-[CArchive Class](../mfc/reference/carchive-class.md)<br/>
-[CObject Class](../mfc/reference/cobject-class.md)
+- [Concepts](../mfc/mfc-concepts.md)
+- [General MFC Topics](../mfc/general-mfc-topics.md)
+- [CArchive Class](../mfc/reference/carchive-class.md)
+- [CObject Class](../mfc/reference/cobject-class.md)

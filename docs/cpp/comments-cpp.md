@@ -18,4 +18,4 @@ The comment characters (`/*`, `*/`, and `//`) have no special meaning within a c
 
 ## See also
 
-[Lexical Conventions](../cpp/lexical-conventions.md)
+- [Lexical Conventions](../cpp/lexical-conventions.md)

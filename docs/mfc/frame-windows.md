@@ -65,7 +65,6 @@ Another common arrangement is for the frame window to frame multiple views, usua
 
 - [Controls](../mfc/controls-mfc.md)
 
-## See Also
+## See also
 
-[Windows](../mfc/windows.md)
-
+- [Windows](../mfc/windows.md)

@@ -46,7 +46,7 @@ If a lambda is implicitly or explicitly **constexpr**, and you convert it to a f
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Function Objects in the C++ Standard Library](../standard-library/function-objects-in-the-stl.md)<br/>
-[Function Call](../cpp/function-call-cpp.md)<br/>
-[for_each](../standard-library/algorithm-functions.md#for_each)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Function Objects in the C++ Standard Library](../standard-library/function-objects-in-the-stl.md)
+- [Function Call](../cpp/function-call-cpp.md)
+- [for_each](../standard-library/algorithm-functions.md#for_each)

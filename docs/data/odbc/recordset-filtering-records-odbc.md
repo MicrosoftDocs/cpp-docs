@@ -76,10 +76,10 @@ The quoting shown above conforms to the ODBC specification, but some DBMSs might
 > [!NOTE]
 >  If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, you should not set a filter if your custom string has a **WHERE** clause. For more information about overriding the default SQL, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Recordset: Sorting Records (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)<br/>
-[Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)<br/>
-[Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
-[Recordset: Locking Records (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [Recordset: Sorting Records (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)
+- [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)
+- [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)
+- [Recordset: Locking Records (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

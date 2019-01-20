@@ -898,9 +898,9 @@ You cannot set the validation text of an attached table.
 
 For related information, see the topic "ValidationText Property" in DAO Help.
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)<br/>
-[CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)
+- [CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)

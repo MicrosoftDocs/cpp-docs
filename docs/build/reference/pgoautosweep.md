@@ -151,5 +151,5 @@ Finished generating code
 
 ## See also
 
-[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
-[pgosweep](pgosweep.md)<br/>
+- [Profile-Guided Optimizations](profile-guided-optimizations.md)
+- [pgosweep](pgosweep.md)

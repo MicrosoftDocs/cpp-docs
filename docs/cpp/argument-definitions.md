@@ -63,4 +63,4 @@ int main( int argc, char *argv[], char *envp[] ) {
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)
+- [main: Program Startup](../cpp/main-program-startup.md)

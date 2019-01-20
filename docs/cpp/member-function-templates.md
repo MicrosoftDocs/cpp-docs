@@ -100,4 +100,4 @@ int main()
 
 ## See also
 
-[Function Templates](../cpp/function-templates.md)
+- [Function Templates](../cpp/function-templates.md)

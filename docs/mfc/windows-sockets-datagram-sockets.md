@@ -16,8 +16,7 @@ An example of a datagram socket is an application that keeps system clocks on th
 
 Datagram sockets are better than stream sockets for record-oriented data. For more information about datagram sockets, see the Windows Sockets specification, available in the Windows SDK.
 
-## See Also
+## See also
 
-[Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
-[Windows Sockets: Background](../mfc/windows-sockets-background.md)
-
+- [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
+- [Windows Sockets: Background](../mfc/windows-sockets-background.md)

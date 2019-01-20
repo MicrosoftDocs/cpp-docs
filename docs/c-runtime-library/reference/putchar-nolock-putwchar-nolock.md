@@ -87,6 +87,6 @@ This is the line of output
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](fputc-fputwc.md)<br/>
-[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fputc, fputwc](fputc-fputwc.md)
+- [fgetc, fgetwc](fgetc-fgetwc.md)

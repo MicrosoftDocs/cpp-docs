@@ -74,8 +74,8 @@ The following Win32 functions also open files and pipes:
 
 - [CreateNamedPipe](/windows/desktop/api/winbase/nf-winbase-createnamedpipea)
 
-## See Also
+## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Directory Control](../c-runtime-library/directory-control.md)<br/>
-[System Calls](../c-runtime-library/system-calls.md)<br/>
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+- [Directory Control](../c-runtime-library/directory-control.md)
+- [System Calls](../c-runtime-library/system-calls.md)

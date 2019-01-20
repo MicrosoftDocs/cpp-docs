@@ -68,5 +68,5 @@ typedef BOOL (__stdcall *funcname_ptr)(void * arg1, const char * arg2, DWORD fla
 
 ## See also
 
-[Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)
+- [Keywords](../cpp/keywords-cpp.md)

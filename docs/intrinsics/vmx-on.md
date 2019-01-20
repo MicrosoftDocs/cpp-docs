@@ -46,6 +46,6 @@ The `__vmx_on` function corresponds to the `VMXON` machine instruction. This fun
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

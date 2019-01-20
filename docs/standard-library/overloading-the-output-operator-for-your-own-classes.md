@@ -64,4 +64,4 @@ cout <<"The date is" <<dt <<flush;
 
 ## See also
 
-[Output Streams](../standard-library/output-streams.md)<br/>
+- [Output Streams](../standard-library/output-streams.md)

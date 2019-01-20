@@ -112,6 +112,6 @@ A handle-to-object of type `Array<TArg>^`
 
 [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) and [Platform::Array](../cppcx/platform-array-class.md) are standard C++ class templates, not ref classes.
 
-## See Also
+## See also
 
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)
+- [Platform namespace](../cppcx/platform-namespace-c-cx.md)

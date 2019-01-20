@@ -76,7 +76,6 @@ This article describes how MFC performs frame allocations and heap allocations f
 
    [!code-cpp[NVC_MFC_Utilities#9](../mfc/codesnippet/cpp/memory-management-examples_9.cpp)]
 
-## See Also
+## See also
 
-[Memory Management: Heap Allocation](../mfc/memory-management-heap-allocation.md)
-
+- [Memory Management: Heap Allocation](../mfc/memory-management-heap-allocation.md)

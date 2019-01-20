@@ -476,7 +476,7 @@ Returns TRUE on success, FALSE on failure.
 
 Sets the URL represented by the specified link control item. For more information, see the Win32 message [LM_SETITEM](/windows/desktop/Controls/lm-setitem) in the Windows SDK.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)

@@ -122,4 +122,4 @@ The right `promise` object.
 
 ## See also
 
-[\<future>](../standard-library/future.md)<br/>
+- [\<future>](../standard-library/future.md)

@@ -56,7 +56,6 @@ This code creates MDI child windows without a Maximize button.
 
 - [Window styles](/windows/desktop/winmsg/window-styles)
 
-## See Also
+## See also
 
-[Frame-Window Styles](../mfc/frame-window-styles-cpp.md)
-
+- [Frame-Window Styles](../mfc/frame-window-styles-cpp.md)

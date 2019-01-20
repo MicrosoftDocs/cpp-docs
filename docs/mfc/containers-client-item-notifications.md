@@ -37,9 +37,8 @@ The framework calls `COleClientItem::OnGetItemPosition` when an item is being ac
 
 If an OLE item's position or size changes during in-place editing, the container's information about the item's position and clipping rectangles must be updated and the server must receive information about the changes. The framework calls `COleClientItem::OnChangeItemPosition` for this purpose. The MFC Application Wizard provides an override that calls the base class's function. You should edit the function that the application wizard writes for your `COleClientItem`-derived class so that the function updates any information retained by your client-item object.
 
-## See Also
+## See also
 
-[Containers](../mfc/containers.md)<br/>
-[Containers: Client-Item States](../mfc/containers-client-item-states.md)<br/>
-[COleClientItem::OnChangeItemPosition](../mfc/reference/coleclientitem-class.md#onchangeitemposition)
-
+- [Containers](../mfc/containers.md)
+- [Containers: Client-Item States](../mfc/containers-client-item-states.md)
+- [COleClientItem::OnChangeItemPosition](../mfc/reference/coleclientitem-class.md#onchangeitemposition)

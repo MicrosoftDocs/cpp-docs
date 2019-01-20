@@ -63,4 +63,4 @@ See [operator>>](../standard-library/istream-operators.md#op_gt_gt) for an examp
 
 ## See also
 
-[\<istream>](../standard-library/istream.md)<br/>
+- [\<istream>](../standard-library/istream.md)

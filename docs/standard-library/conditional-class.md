@@ -42,4 +42,4 @@ The template member typedef `conditional<B, T1, T2>::type` evaluates to *T1* whe
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)

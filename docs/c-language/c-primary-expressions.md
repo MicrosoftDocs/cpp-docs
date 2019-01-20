@@ -20,6 +20,6 @@ The operands in expressions are called "primary expressions."
 &nbsp;&nbsp;&nbsp;&nbsp;*assignment-expression*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*<br/>
 
-## See Also
+## See also
 
-[Operands and Expressions](../c-language/operands-and-expressions.md)
+- [Operands and Expressions](../c-language/operands-and-expressions.md)

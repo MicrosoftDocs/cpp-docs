@@ -36,6 +36,6 @@ See the [WCode](../cpp/com-error-wcode.md) member function.
 
 ## See also
 
-[_com_error::WCode](../cpp/com-error-wcode.md)<br/>
-[_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)<br/>
-[_com_error Class](../cpp/com-error-class.md)
+- [_com_error::WCode](../cpp/com-error-wcode.md)
+- [_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)
+- [_com_error Class](../cpp/com-error-class.md)

@@ -1396,10 +1396,10 @@ If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value
 
 A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex).
 
-## See Also
+## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
-[MFC Sample DYNAMENU](../../visual-cpp-samples.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)
+- [MFC Sample CTRLTEST](../../visual-cpp-samples.md)
+- [MFC Sample DYNAMENU](../../visual-cpp-samples.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)

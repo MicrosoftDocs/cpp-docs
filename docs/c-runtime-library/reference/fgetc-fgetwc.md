@@ -112,6 +112,6 @@ Line two.
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fputc, fputwc](fputc-fputwc.md)<br/>
-[getc, getwc](getc-getwc.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fputc, fputwc](fputc-fputwc.md)
+- [getc, getwc](getc-getwc.md)

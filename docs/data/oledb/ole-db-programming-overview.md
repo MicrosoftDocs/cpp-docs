@@ -16,9 +16,9 @@ This is where COM comes in. OLE DB is a set of COM interfaces. By accessing data
 
 Based on the COM specification, OLE DB defines an extensible and maintainable collection of interfaces that factor and encapsulate consistent, reusable portions of DBMS functionality. These interfaces define the boundaries of DBMS components such as row containers, query processors, and transaction coordinators, which enable uniform transactional access to diverse information sources.
 
-## See Also
+## See also
 
-[OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Templates](../../data/oledb/ole-db-templates.md)
+- [OLE DB Programming](../../data/oledb/ole-db-programming.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)
+- [OLE DB Templates](../../data/oledb/ole-db-templates.md)

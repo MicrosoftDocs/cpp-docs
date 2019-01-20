@@ -307,9 +307,8 @@ The payload of the stored message.
 
 This method will wait until a message arrives if no message is currently stored in the `single_assignment` messaging block.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[overwrite_buffer Class](overwrite-buffer-class.md)<br/>
-[unbounded_buffer Class](unbounded-buffer-class.md)
-
+- [concurrency Namespace](concurrency-namespace.md)
+- [overwrite_buffer Class](overwrite-buffer-class.md)
+- [unbounded_buffer Class](unbounded-buffer-class.md)

@@ -43,6 +43,6 @@ int main() {
 
 ## See also
 
-[C++ Built-in Operators, Precedence and Associativity](cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Bitwise Operators](../c-language/c-bitwise-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](cpp-built-in-operators-precedence-and-associativity.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [C Bitwise Operators](../c-language/c-bitwise-operators.md)

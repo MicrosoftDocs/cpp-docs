@@ -38,4 +38,4 @@ For related information, see [Obsolete Calling Conventions](../cpp/obsolete-call
 
 ## See also
 
-[Calling Conventions](../cpp/calling-conventions.md)
+- [Calling Conventions](../cpp/calling-conventions.md)

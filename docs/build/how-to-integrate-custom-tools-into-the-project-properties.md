@@ -29,6 +29,6 @@ This document explains how to create a file in a set directory that contains pro
 
 1. In **Solution Explorer**, right-click a project and then click **Properties**. In the **Property Pages** window, in the left pane, verify that there is a new node with the name of your Rule.
 
-## See Also
+## See also
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)
+- [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)

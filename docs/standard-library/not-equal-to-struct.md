@@ -114,4 +114,4 @@ between v1 & v2 is: ( 0 0 1 0 1 0 )
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

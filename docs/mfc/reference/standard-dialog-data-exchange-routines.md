@@ -642,9 +642,9 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
   **Header** afxdd_.h
 
-## See Also
+## See also
 
-[Standard Dialog Data Validation Routines](standard-dialog-data-validation-routines.md)<br/>
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
-[CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
+- [Standard Dialog Data Validation Routines](standard-dialog-data-validation-routines.md)
+- [Macros and Globals](mfc-macros-and-globals.md)
+- [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)
+- [CDialog::OnInitDialog](cdialog-class.md#oninitdialog)

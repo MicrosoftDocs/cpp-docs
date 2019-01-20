@@ -1506,4 +1506,4 @@ The complex components tanh (vci), where abs (vci) = 1
 
 ## See also
 
-[\<complex>](../standard-library/complex.md)<br/>
+- [\<complex>](../standard-library/complex.md)

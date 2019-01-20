@@ -81,7 +81,7 @@ You can also specify a formal parameter as a constant string reference (that is,
 
 For most function results, you can simply return a `CString` object by value.
 
-## See Also
+## See also
 
-[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
-[CString Argument Passing](../atl-mfc-shared/cstring-argument-passing.md)
+- [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
+- [CString Argument Passing](../atl-mfc-shared/cstring-argument-passing.md)

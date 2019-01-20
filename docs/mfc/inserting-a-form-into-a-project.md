@@ -30,7 +30,6 @@ You may want to perform the following additional steps (not applicable for dialo
 
 1. Create an `OnPrint` member function.
 
-## See Also
+## See also
 
-[Form Views](../mfc/form-views-mfc.md)
-
+- [Form Views](../mfc/form-views-mfc.md)

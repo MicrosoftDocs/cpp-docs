@@ -121,10 +121,10 @@ Attempt to convert a NULL pointer to a wide character:
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)
+- [Locale](../../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+- [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)
+- [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)
+- [wctomb, _wctomb_l](wctomb-wctomb-l.md)

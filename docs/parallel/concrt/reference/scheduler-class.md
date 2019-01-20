@@ -307,10 +307,9 @@ The policy to be set as the default scheduler policy.
 
 If the `SetDefaultSchedulerPolicy` method is called when a default scheduler already exists within the process, the runtime will throw a [default_scheduler_exists](default-scheduler-exists-class.md) exception.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[Scheduler Class](scheduler-class.md)<br/>
-[PolicyElementKey](concurrency-namespace-enums.md)<br/>
-[Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-
+- [concurrency Namespace](concurrency-namespace.md)
+- [Scheduler Class](scheduler-class.md)
+- [PolicyElementKey](concurrency-namespace-enums.md)
+- [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)

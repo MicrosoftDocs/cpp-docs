@@ -12,7 +12,6 @@ In the **Add Class** dialog box, choose **ATL Control**. This will start the [AT
 
 A default HTML page will be created for viewing the control.
 
-## See Also
+## See also
 
-[Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)
-
+- [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)

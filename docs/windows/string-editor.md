@@ -156,10 +156,10 @@ You can use in-place editing to change the ID, value, and caption properties.
 
 Win32
 
-## See Also
+## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Strings](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)<br/>
-[About Strings](/windows/desktop/menurc/about-strings)<br/>
-[Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)
+- [Resource Editors](../windows/resource-editors.md)
+- [Resource Files](../windows/resource-files-visual-studio.md)
+- [Strings](https://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)
+- [About Strings](/windows/desktop/menurc/about-strings)
+- [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)

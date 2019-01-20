@@ -15,4 +15,4 @@ Allocates and optionally initializes a single-precision (4-byte) floating-point 
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

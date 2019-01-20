@@ -52,7 +52,7 @@ __interface IFireTabCtrl
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Data Member Attributes](data-member-attributes.md)
+- [IDL Attributes](idl-attributes.md)
+- [Data Member Attributes](data-member-attributes.md)

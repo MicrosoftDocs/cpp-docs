@@ -54,4 +54,4 @@ The first constructor creates a new object given an HRESULT and optional `IError
 
 ## See also
 
-[_com_error Class](../cpp/com-error-class.md)
+- [_com_error Class](../cpp/com-error-class.md)

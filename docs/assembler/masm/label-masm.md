@@ -17,4 +17,4 @@ Creates a new label by assigning the current location-counter value and the give
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

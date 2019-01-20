@@ -80,8 +80,8 @@ This topic assumes you have previously completed [How to: Create the User Contro
 
    Select the menu option you added. Notice that the method in the .dll is called.
 
-## See Also
+## See also
 
-[Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)<br/>
-[ICommandSource Interface](../mfc/reference/icommandsource-interface.md)<br/>
-[ICommandTarget Interface](../mfc/reference/icommandtarget-interface.md)
+- [Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)
+- [ICommandSource Interface](../mfc/reference/icommandsource-interface.md)
+- [ICommandTarget Interface](../mfc/reference/icommandtarget-interface.md)

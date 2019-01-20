@@ -15,4 +15,4 @@ See the [EXTERNDEF](../../assembler/masm/externdef.md) directive.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

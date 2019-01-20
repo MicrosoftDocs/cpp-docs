@@ -86,9 +86,9 @@ Oldmask = 0x0000
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chmod, _wchmod](chmod-wchmod.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_mkdir, _wmkdir](mkdir-wmkdir.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [_chmod, _wchmod](chmod-wchmod.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [_mkdir, _wmkdir](mkdir-wmkdir.md)
+- [_open, _wopen](open-wopen.md)

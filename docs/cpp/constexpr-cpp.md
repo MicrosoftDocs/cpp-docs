@@ -172,5 +172,5 @@ Visual Studio 2015
 
 ## See also
 
-[Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)<br/>
-[const](../cpp/const-cpp.md)
+- [Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)
+- [const](../cpp/const-cpp.md)

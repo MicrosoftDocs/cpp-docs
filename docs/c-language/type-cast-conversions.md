@@ -42,6 +42,6 @@ A type cast can be an l-value expression as long as the size of the identifier d
 
 You can convert an expression to type `void` with a cast, but the resulting expression can be used only where a value is not required. An object pointer converted to **void** <strong>\*</strong> and back to the original type will return to its original value.
 
-## See Also
+## See also
 
-[Type Conversions](../c-language/type-conversions-c.md)
+- [Type Conversions](../c-language/type-conversions-c.md)

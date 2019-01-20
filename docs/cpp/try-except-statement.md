@@ -158,6 +158,6 @@ world
 
 ## See also
 
-[Writing an Exception Handler](../cpp/writing-an-exception-handler.md)<br/>
-[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)
+- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)

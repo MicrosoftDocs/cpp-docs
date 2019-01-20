@@ -303,8 +303,7 @@ A reference to an integer receiving the upper limit of the specified field in th
 
 This member function implements the behavior of the Win32 message [IPM_SETRANGE](/windows/desktop/Controls/ipm-setrange), as described in the Windows SDK. Use the two parameters, *nLower* and *nUpper*, to indicate the lower and upper limits of the field, instead of the *wRange* parameter used with the Win32 message.
 
-## See Also
+## See also
 
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

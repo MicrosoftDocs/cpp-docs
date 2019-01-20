@@ -10,6 +10,6 @@ ms.assetid: 799460e2-9ae2-4b59-a81c-611df356834f
 
 The `msclr` namespace contains all the classes of the C++ Support Library. For more information on those classes, see [C++ Support Library](../dotnet/cpp-support-library.md).
 
-## See Also
+## See also
 
-[C++ Support Library](../dotnet/cpp-support-library.md)
+- [C++ Support Library](../dotnet/cpp-support-library.md)

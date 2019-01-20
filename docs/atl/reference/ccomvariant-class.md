@@ -464,6 +464,6 @@ HRESULT WriteToStream(IStream* pStream);
 
 A standard HRESULT value.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

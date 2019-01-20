@@ -47,12 +47,12 @@ See the example for [bindable](bindable.md) for an example of how to use **dispi
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)<br/>
-[Attributes by Usage](attributes-by-usage.md)<br/>
-[uuid](uuid-cpp-attributes.md)<br/>
-[dual](dual.md)<br/>
-[custom](custom-cpp.md)<br/>
-[object](object-cpp.md)<br/>
-[__interface](../../cpp/interface.md)
+- [IDL Attributes](idl-attributes.md)
+- [Attributes by Usage](attributes-by-usage.md)
+- [uuid](uuid-cpp-attributes.md)
+- [dual](dual.md)
+- [custom](custom-cpp.md)
+- [object](object-cpp.md)
+- [__interface](../../cpp/interface.md)

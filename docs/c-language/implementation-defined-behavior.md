@@ -13,6 +13,6 @@ This section follows the same order as the ANSI section. Each item covered inclu
 > [!NOTE]
 >  This section describes the U.S. English-language version of the C compiler only. Implementations of Microsoft C for other languages may differ slightly.
 
-## See Also
+## See also
 
-[C Language Reference](../c-language/c-language-reference.md)
+- [C Language Reference](../c-language/c-language-reference.md)

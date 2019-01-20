@@ -205,9 +205,9 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
 
 See [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection).
 
-## See Also
+## See also
 
-[CComSingleThreadModel Class](ccomsinglethreadmodel-class.md)<br/>
-[CComAutoCriticalSection Class](ccomautocriticalsection-class.md)<br/>
-[CComCriticalSection Class](ccomcriticalsection-class.md)<br/>
-[Class Overview](../atl-class-overview.md)
+- [CComSingleThreadModel Class](ccomsinglethreadmodel-class.md)
+- [CComAutoCriticalSection Class](ccomautocriticalsection-class.md)
+- [CComCriticalSection Class](ccomcriticalsection-class.md)
+- [Class Overview](../atl-class-overview.md)

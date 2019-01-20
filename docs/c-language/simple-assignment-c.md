@@ -17,6 +17,6 @@ x = y;
 
 In this example, the value of `y` is converted to type **double** and assigned to `x`.
 
-## See Also
+## See also
 
-[C Assignment Operators](../c-language/c-assignment-operators.md)
+- [C Assignment Operators](../c-language/c-assignment-operators.md)

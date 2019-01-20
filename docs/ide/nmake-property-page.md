@@ -59,7 +59,7 @@ For information about how to access the **NMake** property page, see [Working wi
 
 For information about how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.
 
-## See Also
+## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)<br>
-[How to: Enable IntelliSense for Makefile Projects](../ide/how-to-enable-intellisense-for-makefile-projects.md)
+- [Property Pages](../ide/property-pages-visual-cpp.md)
+- [How to: Enable IntelliSense for Makefile Projects](../ide/how-to-enable-intellisense-for-makefile-projects.md)

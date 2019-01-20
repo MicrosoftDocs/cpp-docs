@@ -48,6 +48,6 @@ Equality operators can compare pointers to members of the same type. In such a c
 
 ## See also
 
-[Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Relational and Equality Operators](../c-language/c-relational-and-equality-operators.md)
+- [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [C Relational and Equality Operators](../c-language/c-relational-and-equality-operators.md)

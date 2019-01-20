@@ -849,9 +849,9 @@ You can get the tool tip control associated with a tab control by making a call 
 
   See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-## See Also
+## See also
 
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CHeaderCtrl Class](../../mfc/reference/cheaderctrl-class.md)<br/>
-[CListCtrl Class](../../mfc/reference/clistctrl-class.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CHeaderCtrl Class](../../mfc/reference/cheaderctrl-class.md)
+- [CListCtrl Class](../../mfc/reference/clistctrl-class.md)

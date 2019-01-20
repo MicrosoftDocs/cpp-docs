@@ -205,9 +205,9 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
-[Interoperability with Other .NET Languages (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)<br/>
-[Managed Types (C++/CLI)](../dotnet/managed-types-cpp-cli.md)<br/>
-[#using Directive](../preprocessor/hash-using-directive-cpp.md)
+- [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+- [Interoperability with Other .NET Languages (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)
+- [Managed Types (C++/CLI)](../dotnet/managed-types-cpp-cli.md)
+- [#using Directive](../preprocessor/hash-using-directive-cpp.md)

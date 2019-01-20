@@ -70,8 +70,8 @@ Returns E_NOTIMPL.
 
 See [IPropertyPage2::EditProperty](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage2-editproperty) in the Windows SDK.
 
-## See Also
+## See also
 
-[IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
-[ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)
+- [ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -52,6 +52,6 @@ Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was sep
 
 2. In the **Target Platform Version** dropdown list, choose **8.1**.
 
-## See Also
+## See also
 
-[Windows Desktop Applications (Visual C++)](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)
+- [Windows Desktop Applications (Visual C++)](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)

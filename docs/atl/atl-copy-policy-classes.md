@@ -67,8 +67,7 @@ VCUE_Copy.h also contains the following specializations of this class: `GenericC
 
 [!code-cpp[NVC_ATL_COM#31](../atl/codesnippet/cpp/atl-copy-policy-classes_2.h)]
 
-## See Also
+## See also
 
-[Implementing a C++ Standard Library-Based Collection](../atl/implementing-an-stl-based-collection.md)<br/>
-[ATLCollections Sample](../visual-cpp-samples.md)
-
+- [Implementing a C++ Standard Library-Based Collection](../atl/implementing-an-stl-based-collection.md)
+- [ATLCollections Sample](../visual-cpp-samples.md)

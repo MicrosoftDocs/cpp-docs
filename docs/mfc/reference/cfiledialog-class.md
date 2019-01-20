@@ -1504,8 +1504,7 @@ This example updates the `CFileDialog` before displaying it. Before updating the
 
 [!code-cpp[NVC_MFC_CFileDialog#1](../../mfc/reference/codesnippet/cpp/cfiledialog-class_7.cpp)]
 
-## See Also
+## See also
 
-[CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

@@ -15,7 +15,7 @@ When it produced the current target, the linker detected <`count`> Windows Runti
 
 - Correct each of the LNK2039 errors in the build according to the suggestion in the error message.
 
-## See Also
+## See also
 
-[Linker Tools Error LNK2039](../../error-messages/tool-errors/linker-tools-error-lnk2039.md)<br/>
-[Linker Tools Errors and Warnings](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)
+- [Linker Tools Error LNK2039](../../error-messages/tool-errors/linker-tools-error-lnk2039.md)
+- [Linker Tools Errors and Warnings](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)

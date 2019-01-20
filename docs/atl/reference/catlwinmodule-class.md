@@ -104,8 +104,8 @@ void* ExtractCreateWndData();
 
 Returns a pointer to the `_AtlCreateWndData` structure previously added with [CAtlWinModule::AddCreateWndData](#addcreatewnddata), or NULL if no object is available.
 
-## See Also
+## See also
 
-[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Module Classes](../../atl/atl-module-classes.md)
+- [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Module Classes](../../atl/atl-module-classes.md)

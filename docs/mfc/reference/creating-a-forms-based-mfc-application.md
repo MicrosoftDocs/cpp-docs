@@ -48,10 +48,9 @@ For more information, see:
 
 - [Application Design Choices](../../mfc/application-design-choices.md)
 
-## See Also
+## See also
 
-[MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
-[Form Views](../../mfc/form-views-mfc.md)<br/>
-[Creating a File Explorer-Style MFC Application](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md)<br/>
-[Creating a Web Browser-Style MFC Application](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)
-
+- [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)
+- [Form Views](../../mfc/form-views-mfc.md)
+- [Creating a File Explorer-Style MFC Application](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md)
+- [Creating a Web Browser-Style MFC Application](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)

@@ -458,6 +458,6 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
   **Header** afxdisp.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

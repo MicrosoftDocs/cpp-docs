@@ -172,6 +172,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This helper function is utilized by [CComModule::GetClassObject](ccommodule-class.md#getclassobject) (obsolete in ATL 7.0) and [CAtlDllModuleT::GetClassObject](catldllmodulet-class.md#getclassobject).
 
-## See Also
+## See also
 
-[Functions](../../atl/reference/atl-functions.md)
+- [Functions](../../atl/reference/atl-functions.md)

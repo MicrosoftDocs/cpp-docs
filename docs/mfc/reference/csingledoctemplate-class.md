@@ -105,14 +105,14 @@ Dynamically allocate a `CSingleDocTemplate` object and pass it to `CWinApp::AddD
 
 [!code-cpp[NVC_MFCDocViewSDI#14](../../mfc/codesnippet/cpp/csingledoctemplate-class_2.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample DOCKTOOL](../../visual-cpp-samples.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CDocument Class](../../mfc/reference/cdocument-class.md)<br/>
-[CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
-[CMultiDocTemplate Class](../../mfc/reference/cmultidoctemplate-class.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[CWinApp Class](../../mfc/reference/cwinapp-class.md)
+- [MFC Sample DOCKTOOL](../../visual-cpp-samples.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [CDocument Class](../../mfc/reference/cdocument-class.md)
+- [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)
+- [CMultiDocTemplate Class](../../mfc/reference/cmultidoctemplate-class.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [CWinApp Class](../../mfc/reference/cwinapp-class.md)

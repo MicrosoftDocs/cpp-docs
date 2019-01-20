@@ -47,6 +47,6 @@ When Microsoft extensions are enabled, you can use the keywords listed above in 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Elements of C](../c-language/elements-of-c.md)
+- [Elements of C](../c-language/elements-of-c.md)

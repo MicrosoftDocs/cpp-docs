@@ -22,6 +22,6 @@ Standard classes are used to support some of the COM types. The classes are defi
 
 ## See also
 
-[Compiler COM Support](../cpp/compiler-com-support.md)<br/>
-[Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)<br/>
-[C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Compiler COM Support](../cpp/compiler-com-support.md)
+- [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)

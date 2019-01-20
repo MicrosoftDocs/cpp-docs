@@ -64,6 +64,6 @@ You can omit the integer portion of the floating-point constant, as shown in the
 75e-2
 ```
 
-## See Also
+## See also
 
-[C Constants](../c-language/c-constants.md)
+- [C Constants](../c-language/c-constants.md)

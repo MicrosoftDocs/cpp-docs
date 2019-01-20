@@ -30,4 +30,4 @@ The main categories of UCRT library routines are:
 
 ## See also
 
-[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
+- [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)

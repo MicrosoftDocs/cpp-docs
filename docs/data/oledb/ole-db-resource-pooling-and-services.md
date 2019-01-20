@@ -16,6 +16,6 @@ Providers that connect to a remote database and can detect whether that connecti
 
 Finally, automatic transaction enlistment generally doesn't work unless it's implemented at the same level that pooling occurs. Providers that support automatic transaction enlistment should support disabling this enlistment by exposing the DBPROP_INIT_OLEDBSERVICES property and disabling enlistment if the DBPROPVAL_OS_TXNENLISTMENT is deselected.
 
-## See Also
+## See also
 
-[Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)
+- [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

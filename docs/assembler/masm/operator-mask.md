@@ -15,4 +15,4 @@ Returns a bit mask in which the bits in *recordfieldname* or *record* are set an
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

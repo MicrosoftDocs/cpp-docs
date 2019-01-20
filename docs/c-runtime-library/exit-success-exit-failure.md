@@ -24,4 +24,4 @@ These are arguments for the [exit](reference/exit-exit-exit.md) and [_exit](refe
 
 ## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

@@ -113,6 +113,6 @@ int main()
 
 ## See also
 
-[\<tuple>](../standard-library/tuple.md)<br/>
-[tuple](../standard-library/tuple-class.md)<br/>
-[tuple_element Class](../standard-library/tuple-element-class-tuple.md)<br/>
+- [\<tuple>](../standard-library/tuple.md)
+- [tuple](../standard-library/tuple-class.md)
+- [tuple_element Class](../standard-library/tuple-element-class-tuple.md)

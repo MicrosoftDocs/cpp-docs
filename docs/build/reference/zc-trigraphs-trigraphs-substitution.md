@@ -31,5 +31,5 @@ For a list of C/C++ trigraphs, and an example that shows how to use trigraphs, s
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
-[Trigraphs](../../c-language/trigraphs.md)<br/>
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)
+- [Trigraphs](../../c-language/trigraphs.md)

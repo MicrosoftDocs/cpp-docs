@@ -37,6 +37,6 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 
 The wizard-generated rowset object implements `IAccessor`, `IRowset`, and `IRowsetInfo` through inheritance. The `IAccessorImpl` binds both output columns. The `IRowset` interface handles fetches rows and data. The `IRowsetInfo` interface handles the rowset properties.
 
-## See Also
+## See also
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+- [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

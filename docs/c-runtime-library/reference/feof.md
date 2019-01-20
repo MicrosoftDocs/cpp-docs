@@ -100,9 +100,9 @@ Number of bytes read = 19
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[clearerr](clearerr.md)<br/>
-[_eof](eof.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+- [Error Handling](../../c-runtime-library/error-handling-crt.md)
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [clearerr](clearerr.md)
+- [_eof](eof.md)
+- [ferror](ferror.md)
+- [perror, _wperror](perror-wperror.md)

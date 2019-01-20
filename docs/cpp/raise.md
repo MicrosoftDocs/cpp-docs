@@ -52,6 +52,6 @@ int main() {
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Event Handling](../cpp/event-handling.md)<br/>
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [Event Handling](../cpp/event-handling.md)
+- [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

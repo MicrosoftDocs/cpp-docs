@@ -16,6 +16,6 @@ The following procedure shows how to create a `COleDateTime` object and initiali
 
    [!code-cpp[NVC_ATLMFC_Utilities#177](../atl-mfc-shared/codesnippet/cpp/current-time-automation-classes_1.cpp)]
 
-## See Also
+## See also
 
-[Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)
+- [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)

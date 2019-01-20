@@ -33,7 +33,7 @@ See [General Property Page (Project)](../../ide/general-property-page-project.md
 
 1. After all the projects are built, run BSCMAKE with all of the .sbr files as input. Wildcards are accepted. For instance, if you had project directories C:\X, C:\Y, and C:\Z with .sbr files in them and you wanted to combine them all into one .bsc file, then use BSCMAKE  C:\X\\\*.sbr C:\Y\\\*.sbr C:\Z\\\*.sbr /o c:\whatever_directory\combined.bsc to build the combined .bsc file.
 
-## See Also
+## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)
+- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)
+- [BSCMAKE Reference](../../build/reference/bscmake-reference.md)

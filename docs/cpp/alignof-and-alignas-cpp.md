@@ -32,4 +32,4 @@ int main()
 
 ## See also
 
-[Alignment](../cpp/alignment-cpp-declarations.md)
+- [Alignment](../cpp/alignment-cpp-declarations.md)

@@ -65,6 +65,6 @@ If `i` is greater than or equal to `j` or less than `j` by 1, it will be increme
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Prefix Increment and Decrement Operators](../c-language/prefix-increment-and-decrement-operators.md)
+- [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Prefix Increment and Decrement Operators](../c-language/prefix-increment-and-decrement-operators.md)

@@ -48,7 +48,7 @@ For compatibility information, see [Compatibility](../../c-runtime-library/compa
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
-[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
-[clog, clogf, clogl](clog-clogf-clogl.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)
+- [clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)
+- [clog, clogf, clogl](clog-clogf-clogl.md)

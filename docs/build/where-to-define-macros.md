@@ -12,6 +12,6 @@ In a makefile or the Tools.ini file, each macro definition must appear on a sepa
 
 In a command line or command file, spaces and tabs delimit arguments and cannot surround the equal sign. If `string` has embedded spaces or tabs, enclose either the string itself or the entire macro in double quotation marks (" ").
 
-## See Also
+## See also
 
-[Defining an NMAKE Macro](../build/defining-an-nmake-macro.md)
+- [Defining an NMAKE Macro](../build/defining-an-nmake-macro.md)

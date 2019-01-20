@@ -112,8 +112,8 @@ Raw Bytes after cast:   Exciting
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Explicit Type Conversion Operator: ()](../cpp/explicit-type-conversion-operator-parens.md)<br/>
-[Casting Operators](../cpp/casting-operators.md)<br/>
-[Cast Operators](../c-language/cast-operators.md)
+- [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Explicit Type Conversion Operator: ()](../cpp/explicit-type-conversion-operator-parens.md)
+- [Casting Operators](../cpp/casting-operators.md)
+- [Cast Operators](../c-language/cast-operators.md)

@@ -30,7 +30,6 @@ The sample abstract for the ATLPages sample, which implements a property page us
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-## See Also
+## See also
 
-[Concepts](../atl/active-template-library-atl-concepts.md)
-
+- [Concepts](../atl/active-template-library-atl-concepts.md)

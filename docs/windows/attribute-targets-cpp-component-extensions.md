@@ -265,6 +265,6 @@ ref class MyClass {};
 value struct MyStruct {};
 ```
 
-## See Also
+## See also
 
-[User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md)
+- [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md)

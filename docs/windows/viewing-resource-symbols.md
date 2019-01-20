@@ -40,4 +40,4 @@ Win32
 
 ## See also
 
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+- [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)

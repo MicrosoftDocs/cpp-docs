@@ -45,6 +45,6 @@ Information about defining and using generic classes.
 [How to: Iterate Over a Generic Collection with for each](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)<br/>
 Using the [for each, in](../dotnet/for-each-in.md) keyword on a generic collection.
 
-## See Also
+## See also
 
-[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)
+- [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

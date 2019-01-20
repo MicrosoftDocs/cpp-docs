@@ -43,7 +43,7 @@ To create an executable file, you must invoke LINK:
 LINK firsti.obj second.obj third.obj /OUT:filename.exe
 ```
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

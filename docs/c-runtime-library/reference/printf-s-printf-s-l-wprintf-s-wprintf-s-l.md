@@ -177,11 +177,11 @@ Address as:   0012FF78
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)
+- [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)
+- [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)
+- [vprintf Functions](../../c-runtime-library/vprintf-functions.md)

@@ -30,7 +30,7 @@ Given the possible combinations of technologies (such as using ADO components wi
 
 - [Microsoft Data Access Technical Articles Overview](https://msdn.microsoft.com/library/ms810811.aspx)
 
-## See Also
+## See also
 
-[OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
-[OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)
+- [OLE DB Programming](../../data/oledb/ole-db-programming.md)
+- [OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)

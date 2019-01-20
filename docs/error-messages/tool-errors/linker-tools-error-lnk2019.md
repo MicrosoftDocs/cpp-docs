@@ -208,4 +208,3 @@ To fix this error, change `unsigned short` to `wchar_t` or `WCHAR`, or compile L
 ## Additional resources
 
 For more information about possible causes and solutions for LNK2001, see the Stack Overflow question [What is an undefined reference/unresolved external symbol error and how do I fix it?](http://stackoverflow.com/q/12573816/2002113).
-

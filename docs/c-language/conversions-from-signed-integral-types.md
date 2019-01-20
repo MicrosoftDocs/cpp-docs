@@ -57,6 +57,6 @@ For the Microsoft 32-bit C compiler, an integer is equivalent to a **long**. Con
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Assignment Conversions](../c-language/assignment-conversions.md)
+- [Assignment Conversions](../c-language/assignment-conversions.md)

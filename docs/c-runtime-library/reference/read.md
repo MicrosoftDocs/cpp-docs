@@ -116,8 +116,8 @@ Read 19 bytes from file
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[fread](fread.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_write](write.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [fread](fread.md)
+- [_open, _wopen](open-wopen.md)
+- [_write](write.md)

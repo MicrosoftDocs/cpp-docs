@@ -209,8 +209,7 @@ typedef CSimpleStringT<TCharType> StringType;
 
 `TCharType` is the character type used to specialize the class template.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

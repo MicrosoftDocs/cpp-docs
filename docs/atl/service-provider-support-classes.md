@@ -12,7 +12,6 @@ The following class provides support for service providers:
 
 - [IServiceProviderImpl](../atl/reference/iserviceproviderimpl-class.md) Locates a service specified by its GUID and returns the interface pointer for the requested interface on the service.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

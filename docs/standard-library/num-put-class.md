@@ -423,6 +423,6 @@ num_put( ) = 1.000,67
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[facet Class](../standard-library/locale-class.md#facet_class)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [\<locale>](../standard-library/locale.md)
+- [facet Class](../standard-library/locale-class.md#facet_class)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

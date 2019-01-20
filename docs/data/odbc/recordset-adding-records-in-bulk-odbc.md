@@ -23,8 +23,8 @@ If the ODBC Cursor Library is loaded or the ODBC driver does not support adding,
 appendOnly | optimizeBulkAdd
 ```
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Recordset: Adding, Updating, and Deleting Records (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
-[Recordset: Locking Records (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [Recordset: Adding, Updating, and Deleting Records (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
+- [Recordset: Locking Records (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

@@ -1445,15 +1445,15 @@ This member function has no effect on a combo box created with the [CBS_SIMPLE](
 
   See the example for [CComboBox::GetDroppedState](#getdroppedstate).
 
-## See Also
+## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CButton Class](../../mfc/reference/cbutton-class.md)<br/>
-[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
-[CListBox Class](../../mfc/reference/clistbox-class.md)<br/>
-[CScrollBar Class](../../mfc/reference/cscrollbar-class.md)<br/>
-[CStatic Class](../../mfc/reference/cstatic-class.md)<br/>
-[CDialog Class](../../mfc/reference/cdialog-class.md)
+- [MFC Sample CTRLBARS](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CButton Class](../../mfc/reference/cbutton-class.md)
+- [CEdit Class](../../mfc/reference/cedit-class.md)
+- [CListBox Class](../../mfc/reference/clistbox-class.md)
+- [CScrollBar Class](../../mfc/reference/cscrollbar-class.md)
+- [CStatic Class](../../mfc/reference/cstatic-class.md)
+- [CDialog Class](../../mfc/reference/cdialog-class.md)

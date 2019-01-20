@@ -52,8 +52,7 @@ The DTN_FORMAT notification is used by the application to request the character 
 > [!NOTE]
 >  The pointer to the **NMDATETIMEFORMAT** structure is found by casting the first parameter of the notification handler to the proper type.
 
-## See Also
+## See also
 
-[Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)
+- [Controls](../mfc/controls-mfc.md)

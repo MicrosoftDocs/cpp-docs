@@ -27,6 +27,6 @@ for ( i = 0; i < 10; line[i++] = 0 )
 
 In this example, the loop expression of the **for** statement `line[i++] = 0` initializes the first 10 elements of `line` to 0. The statement body is a null statement, since no further statements are necessary.
 
-## See Also
+## See also
 
-[Statements](../c-language/statements-c.md)
+- [Statements](../c-language/statements-c.md)

@@ -8,7 +8,6 @@ ms.assetid: 5f34eea8-2bf8-4479-95c7-45e8f443db8f
 
 The frame window orchestrates semimodal states such as context-sensitive help and print preview. For a description of the frame window's role in print preview, see [Printing and Print Preview](../mfc/printing-and-print-preview.md).
 
-## See Also
+## See also
 
-[Using Frame Windows](../mfc/using-frame-windows.md)
-
+- [Using Frame Windows](../mfc/using-frame-windows.md)

@@ -59,8 +59,8 @@ The `_execute_onexit_table` function executes all of the functions in the onexit
 
 The `_initialize_onexit_table`, `_register_onexit_function`, and `_execute_onexit_table` functions are Microsoft specific. For compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
-[atexit](../c-runtime-library/reference/atexit.md)<br/>
-[exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)
+- [atexit](../c-runtime-library/reference/atexit.md)
+- [exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)
+- [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)

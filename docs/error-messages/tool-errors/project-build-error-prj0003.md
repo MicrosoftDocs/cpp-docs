@@ -23,6 +23,6 @@ Possible reasons for this error include:
 
 - For makefile projects, you are missing a command to run on either **Build Command Line** or **Rebuild Command Line**.
 
-## See Also
+## See also
 
-[Project Build Errors and Warnings (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+- [Project Build Errors and Warnings (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

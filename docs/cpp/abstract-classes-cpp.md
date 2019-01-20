@@ -78,4 +78,4 @@ When the object pointed to by `pDerived` is deleted, the destructor for class `d
 
 ## See also
 
-[Inheritance](../cpp/inheritance-cpp.md)
+- [Inheritance](../cpp/inheritance-cpp.md)

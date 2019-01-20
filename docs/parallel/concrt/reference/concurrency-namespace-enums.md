@@ -318,6 +318,6 @@ enum WinRTInitializationType;
 
 **Header:** concrt.h
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

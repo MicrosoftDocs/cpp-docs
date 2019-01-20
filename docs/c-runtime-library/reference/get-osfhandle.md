@@ -43,8 +43,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_close](close.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_dup, _dup2](dup-dup2.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_close](close.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [_dup, _dup2](dup-dup2.md)
+- [_open, _wopen](open-wopen.md)

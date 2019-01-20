@@ -730,9 +730,9 @@ void SetTipText(
 *pszTipText*<br/>
 [in] The new tooltip text.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CPane Class](../../mfc/reference/cpane-class.md)<br/>
-[CStatusBar Class](../../mfc/reference/cstatusbar-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CPane Class](../../mfc/reference/cpane-class.md)
+- [CStatusBar Class](../../mfc/reference/cstatusbar-class.md)

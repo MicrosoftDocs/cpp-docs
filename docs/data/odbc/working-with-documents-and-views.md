@@ -14,6 +14,6 @@ By default, the MFC Application Wizard creates a skeleton application with no da
 
 You can also use the database classes without using the full document/view architecture. For more information, see [MFC: Using Database Classes Without Documents and Views](../../data/mfc-using-database-classes-without-documents-and-views.md).
 
-## See Also
+## See also
 
-[ODBC and MFC](../../data/odbc/odbc-and-mfc.md)
+- [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)

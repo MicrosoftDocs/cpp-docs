@@ -59,6 +59,6 @@ private:
 };
 ```
 
-## See Also
+## See also
 
-[Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+- [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

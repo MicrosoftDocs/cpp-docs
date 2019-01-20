@@ -77,10 +77,10 @@ tan( 0.785398 ) = 1.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[_CItan](../../c-runtime-library/citan.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [acos, acosf, acosl](acos-acosf-acosl.md)
+- [asin, asinf, asinl](asin-asinf-asinl.md)
+- [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)
+- [cos, cosf, cosl](cos-cosf-cosl.md)
+- [sin, sinf, sinl](sin-sinf-sinl.md)
+- [_CItan](../../c-runtime-library/citan.md)

@@ -55,6 +55,6 @@ For a sample of how to use **_CrtCheckMemory**, see [crt_dbg1](https://github.co
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
-[_CrtSetDbgFlag](crtsetdbgflag.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)
+- [_CrtSetDbgFlag](crtsetdbgflag.md)

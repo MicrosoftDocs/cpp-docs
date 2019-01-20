@@ -68,7 +68,7 @@ public:
 };
 ```
 
-## See Also
+## See also
 
-[COM Attributes](com-attributes.md)<br/>
-[registration_script](registration-script.md)
+- [COM Attributes](com-attributes.md)
+- [registration_script](registration-script.md)

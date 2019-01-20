@@ -12,6 +12,6 @@ The window *object* is an object of the C++ `CWnd` class (or a derived class) th
 ![CWnd window object and resulting window](../mfc/media/vc37fj1.gif "CWnd window object and resulting window") <br/>
 Window Object and Windows Window
 
-## See Also
+## See also
 
-[Window Objects](../mfc/window-objects.md)
+- [Window Objects](../mfc/window-objects.md)

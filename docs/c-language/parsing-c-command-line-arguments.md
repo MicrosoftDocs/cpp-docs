@@ -86,6 +86,6 @@ Environment variables:
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[main Function and Program Execution](../c-language/main-function-and-program-execution.md)
+- [main Function and Program Execution](../c-language/main-function-and-program-execution.md)

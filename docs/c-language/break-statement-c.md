@@ -35,6 +35,6 @@ int main() {
 } // Loop exits only when 'Q' is pressed
 ```
 
-## See Also
+## See also
 
-[break Statement](../cpp/break-statement-cpp.md)
+- [break Statement](../cpp/break-statement-cpp.md)

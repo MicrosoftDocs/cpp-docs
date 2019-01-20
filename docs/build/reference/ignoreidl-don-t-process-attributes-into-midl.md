@@ -29,11 +29,11 @@ The /IGNOREIDL option specifies that any [IDL attributes](../../windows/idl-attr
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreEmbeddedIDL%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)<br/>
-[/TLBOUT (Name .TLB File)](../../build/reference/tlbout-name-dot-tlb-file.md)<br/>
-[/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
-[Building an Attributed Program](../../windows/building-an-attributed-program.md)
+- [Setting Linker Options](../../build/reference/setting-linker-options.md)
+- [Linker Options](../../build/reference/linker-options.md)
+- [/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)
+- [/TLBOUT (Name .TLB File)](../../build/reference/tlbout-name-dot-tlb-file.md)
+- [/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)
+- [Building an Attributed Program](../../windows/building-an-attributed-program.md)

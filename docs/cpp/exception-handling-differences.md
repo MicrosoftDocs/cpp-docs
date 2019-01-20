@@ -134,4 +134,4 @@ nSE = 0xc0000094
 
 ## See also
 
-[Mixing C (Structured) and C++ exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)
+- [Mixing C (Structured) and C++ exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)

@@ -61,5 +61,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)

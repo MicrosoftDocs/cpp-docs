@@ -117,8 +117,8 @@ Wrote 36 bytes to file.
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[fwrite](fwrite.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_read](read.md)<br/>
-[_setmode](setmode.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [fwrite](fwrite.md)
+- [_open, _wopen](open-wopen.md)
+- [_read](read.md)
+- [_setmode](setmode.md)

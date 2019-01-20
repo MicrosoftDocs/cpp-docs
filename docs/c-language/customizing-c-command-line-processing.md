@@ -12,6 +12,6 @@ Similarly, if you never access the environment table through the `envp` argument
 
 If your program makes calls to the **_spawn** or **_exec** family of routines in the C run-time library, you should not suppress the environment-processing routine, since this routine is used to pass an environment from the spawning process to the new process.
 
-## See Also
+## See also
 
-[main Function and Program Execution](../c-language/main-function-and-program-execution.md)
+- [main Function and Program Execution](../c-language/main-function-and-program-execution.md)

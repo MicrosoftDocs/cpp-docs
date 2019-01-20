@@ -97,12 +97,12 @@ Here is the running app:
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
 
-## See Also
+## See also
 
-[Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
-[Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
-[Asynchronous programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)<br/>
-[Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)<br/>
-[Quickstart: Connecting using XML HTTP Request (IXMLHTTPRequest2)](/previous-versions/windows/apps/hh770550\(v=win.10\))
-[task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)<br/>
-[task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)
+- [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)
+- [Cancellation in the PPL](cancellation-in-the-ppl.md)
+- [Asynchronous programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)
+- [Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)
+- [Quickstart: Connecting using XML HTTP Request (IXMLHTTPRequest2)](/previous-versions/windows/apps/hh770550\(v=win.10\))
+- [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)
+- [task_completion_event Class](../../parallel/concrt/reference/task-completion-event-class.md)

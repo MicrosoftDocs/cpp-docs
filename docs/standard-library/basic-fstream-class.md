@@ -265,6 +265,6 @@ The member function exchanges the contents of this object and the contents of *r
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [iostream Programming](../standard-library/iostream-programming.md)
+- [iostreams Conventions](../standard-library/iostreams-conventions.md)

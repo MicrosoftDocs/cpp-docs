@@ -14,6 +14,6 @@ This section covers the following topics:
 
 - [Creating an OLE DB Consumer Without Using a Wizard](../../data/oledb/creating-a-consumer-without-using-a-wizard.md)
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)
+- [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

@@ -59,6 +59,6 @@ int y;
 
 In this example, two functions, `f1` and `f2`, and two variables, `x` and `y`, are declared. Later in the program, if the two variables have the same value, the function `f1` is called. Otherwise, `f2` is called.
 
-## See Also
+## See also
 
-[Conditional Operator: ? :](../cpp/conditional-operator-q.md)
+- [Conditional Operator: ? :](../cpp/conditional-operator-q.md)

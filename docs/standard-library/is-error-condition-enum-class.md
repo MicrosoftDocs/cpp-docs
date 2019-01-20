@@ -30,5 +30,5 @@ It is permissible to add specializations to this type for user-defined types.
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[<system_error>](../standard-library/system-error.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [<system_error>](../standard-library/system-error.md)

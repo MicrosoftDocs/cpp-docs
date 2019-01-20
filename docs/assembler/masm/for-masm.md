@@ -21,4 +21,4 @@ Same as [IRP](../../assembler/masm/irp.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

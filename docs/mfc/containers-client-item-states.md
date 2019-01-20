@@ -28,10 +28,10 @@ When an item has been opened in the server's window rather than opened in place 
 
 When an item has been activated in place, it passes, usually only briefly, through the active state. It then enters the UI active state, in which the server has merged its menus, toolbars, and other user-interface components with those of the container. The presence of these user-interface components distinguishes the UI active state from the active state. Otherwise, the active state resembles the UI active state. If the server supports Undo, the server is required to retain the OLE item's undo-state information until it reaches the loaded or open state.
 
-## See Also
+## See also
 
-[Containers](../mfc/containers.md)<br/>
-[Activation](../mfc/activation-cpp.md)<br/>
-[Containers: Client-Item Notifications](../mfc/containers-client-item-notifications.md)<br/>
-[Trackers](../mfc/trackers.md)<br/>
-[CRectTracker Class](../mfc/reference/crecttracker-class.md)
+- [Containers](../mfc/containers.md)
+- [Activation](../mfc/activation-cpp.md)
+- [Containers: Client-Item Notifications](../mfc/containers-client-item-notifications.md)
+- [Trackers](../mfc/trackers.md)
+- [CRectTracker Class](../mfc/reference/crecttracker-class.md)

@@ -52,6 +52,6 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_pipe](pipe.md)<br/>
-[_popen, _wpopen](popen-wpopen.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_pipe](pipe.md)
+- [_popen, _wpopen](popen-wpopen.md)

@@ -29,4 +29,4 @@ Retrieves the encapsulated HRESULT item in a `_com_error` object.
 
 ## See also
 
-[_com_error Class](../cpp/com-error-class.md)
+- [_com_error Class](../cpp/com-error-class.md)

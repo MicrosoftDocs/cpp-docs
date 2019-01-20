@@ -132,6 +132,6 @@ In the previous example, it might be better to use a named constant that conveys
 
 ## See also
 
-[Lexical Conventions](../cpp/lexical-conventions.md)<br/>
-[C++ String Literals](../cpp/string-and-character-literals-cpp.md)<br/>
-[C++ User-Defined Literals](../cpp/user-defined-literals-cpp.md)
+- [Lexical Conventions](../cpp/lexical-conventions.md)
+- [C++ String Literals](../cpp/string-and-character-literals-cpp.md)
+- [C++ User-Defined Literals](../cpp/user-defined-literals-cpp.md)

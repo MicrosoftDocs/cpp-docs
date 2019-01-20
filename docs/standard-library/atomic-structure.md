@@ -653,5 +653,5 @@ This member function atomically stores *Value* in `*this`, within the memory con
 
 ## See also
 
-[\<atomic>](../standard-library/atomic.md)<br/>
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+- [\<atomic>](../standard-library/atomic.md)
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

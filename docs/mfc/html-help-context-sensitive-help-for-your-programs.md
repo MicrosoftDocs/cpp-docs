@@ -9,6 +9,6 @@ ms.assetid: f2eabbbb-0796-43f3-a483-5f7cf00f2e7c
 > [!IMPORTANT]
 >  HTML Help is not supported in this version of MFC.
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

@@ -72,4 +72,4 @@ Because the inline version of `power2` doesn't execute a C `return` statement, i
 
 ## See also
 
-[Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>
+- [Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)

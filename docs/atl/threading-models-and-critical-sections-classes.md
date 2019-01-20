@@ -33,7 +33,6 @@ The following classes define a threading model and critical section:
 
 - [Win32ThreadTraits](../atl/reference/win32threadtraits-class.md) Provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

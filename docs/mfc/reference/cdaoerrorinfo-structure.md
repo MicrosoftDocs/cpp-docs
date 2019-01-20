@@ -51,7 +51,7 @@ Information retrieved by the [CDaoException::GetErrorInfo](../../mfc/reference/c
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
-[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoException Class](../../mfc/reference/cdaoexception-class.md)
+- [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+- [CDaoException Class](../../mfc/reference/cdaoexception-class.md)

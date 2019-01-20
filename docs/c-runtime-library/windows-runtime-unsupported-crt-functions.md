@@ -10,7 +10,7 @@ Many C run-time (CRT) APIs can’t be used in Universal Windows Platform (UWP) a
 
 All CRT APIs are described in the [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md) section of the documentation.
 
-## See Also
+## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

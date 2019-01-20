@@ -737,8 +737,8 @@ void SwapRows(
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CBasePane Class](../../mfc/reference/cbasepane-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CBasePane Class](../../mfc/reference/cbasepane-class.md)

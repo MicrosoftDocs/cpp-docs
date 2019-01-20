@@ -28,8 +28,8 @@ To access this property page dialog box, open the property pages for your projec
 
    `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`
 
-## See Also
+## See also
 
-[ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br>
-[Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)<br>
-[Working with Project Properties](../ide/working-with-project-properties.md)
+- [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)
+- [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)
+- [Working with Project Properties](../ide/working-with-project-properties.md)

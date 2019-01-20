@@ -70,6 +70,6 @@ Win32
 
 ## See also
 
-[Editing in an Accelerator Table](../windows/editing-in-an-accelerator-table.md)<br/>
-[Predefined Accelerator Keys](../windows/predefined-accelerator-keys.md)<br/>
-[Resource Editors](../windows/resource-editors.md)<br/>
+- [Editing in an Accelerator Table](../windows/editing-in-an-accelerator-table.md)
+- [Predefined Accelerator Keys](../windows/predefined-accelerator-keys.md)
+- [Resource Editors](../windows/resource-editors.md)

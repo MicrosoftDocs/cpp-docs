@@ -98,6 +98,6 @@ Blocks execution of all threads in a tile until all threads in a tile have reach
 void wait_with_tile_static_memory_fence() const restrict(amp);
 ```
 
-## See Also
+## See also
 
-[Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+- [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

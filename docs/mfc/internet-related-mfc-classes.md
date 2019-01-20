@@ -58,7 +58,6 @@ For information about Internet-related classes and functions, see:
 
 - [CInternetException](../mfc/reference/cinternetexception-class.md)
 
-## See Also
+## See also
 
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-
+- [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)

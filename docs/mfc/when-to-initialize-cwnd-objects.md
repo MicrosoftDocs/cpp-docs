@@ -14,7 +14,6 @@ You cannot create your own child windows or call any Windows API functions in th
 
 - [Document/view creation](../mfc/document-view-creation.md)
 
-## See Also
+## See also
 
-[Using Frame Windows](../mfc/using-frame-windows.md)
-
+- [Using Frame Windows](../mfc/using-frame-windows.md)

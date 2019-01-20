@@ -29,6 +29,6 @@ A C "source program" is a collection of directives, pragmas, declarations, defin
 
 Source files need not contain executable statements. For example, you may find it useful to place definitions of variables in one source file and then declare references to these variables in other source files that use them. This technique makes the definitions easy to find and update when necessary. For the same reason, constants and macros are often organized into separate files called "include files" or "header files" that can be referenced in source files as required. See the *Preprocessor Reference* for information about [macros](../preprocessor/macros-c-cpp.md) and [include files](../preprocessor/hash-include-directive-c-cpp.md).
 
-## See Also
+## See also
 
-[Program Structure](../c-language/program-structure.md)
+- [Program Structure](../c-language/program-structure.md)

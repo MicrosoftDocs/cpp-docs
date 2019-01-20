@@ -15,4 +15,4 @@ See the [INVOKE](../../assembler/masm/invoke.md) directive.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

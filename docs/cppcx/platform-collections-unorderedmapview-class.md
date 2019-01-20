@@ -232,7 +232,7 @@ The input iterator of the first element in a range of elements used to initializ
 *last*<br/>
 The input iterator of the first element after a range of elements used to initialize the UnorderedMapView.
 
-## See Also
+## See also
 
-[Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)<br/>
-[Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)
+- [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)
+- [Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)

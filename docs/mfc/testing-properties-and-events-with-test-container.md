@@ -41,8 +41,7 @@ At this point you can test your control's properties or events.
 
 1. Specify the destination of event information.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[How to: Debug an ActiveX Control](/visualstudio/debugger/how-to-debug-an-activex-control)
-
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+- [How to: Debug an ActiveX Control](/visualstudio/debugger/how-to-debug-an-activex-control)

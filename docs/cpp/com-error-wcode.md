@@ -29,6 +29,6 @@ The `WCode` method is used to undo a mapping that happens in the COM support cod
 
 ## See also
 
-[_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)<br/>
-[_com_error::WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)<br/>
-[_com_error Class](../cpp/com-error-class.md)
+- [_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)
+- [_com_error::WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)
+- [_com_error Class](../cpp/com-error-class.md)

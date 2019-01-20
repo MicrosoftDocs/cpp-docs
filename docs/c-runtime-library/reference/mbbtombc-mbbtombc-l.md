@@ -58,5 +58,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_mbctombb, _mbctombb_l](mbctombb-mbctombb-l.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [_mbctombb, _mbctombb_l](mbctombb-mbctombb-l.md)

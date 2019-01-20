@@ -58,6 +58,6 @@ You now have a property called `Sides`. In the next step, you will change the dr
 
 [Back to Step 2](../atl/adding-a-control-atl-tutorial-part-2.md) &#124; [On to Step 4](../atl/changing-the-drawing-code-atl-tutorial-part-4.md)
 
-## See Also
+## See also
 
-[Tutorial](../atl/active-template-library-atl-tutorial.md)
+- [Tutorial](../atl/active-template-library-atl-tutorial.md)

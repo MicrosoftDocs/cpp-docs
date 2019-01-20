@@ -25,10 +25,10 @@ typedef CComObjectRootEx<CComObjectThreadModel> CComObjectRoot;
 
 **Header:** atlcom.h
 
-## See Also
+## See also
 
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
-[CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
-[CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
-[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)
+- [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)
+- [CComObject Class](../../atl/reference/ccomobject-class.md)
+- [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

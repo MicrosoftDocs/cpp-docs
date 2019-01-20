@@ -494,6 +494,6 @@ The file attributes to set for the file. For more information, see [SetFileAttri
 
 This wrapper calls the `SetFileAttributesTransacted` function.
 
-## See Also
+## See also
 
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+- [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)

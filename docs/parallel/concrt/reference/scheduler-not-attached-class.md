@@ -50,7 +50,7 @@ scheduler_not_attached() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[Scheduler Class](scheduler-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [Scheduler Class](scheduler-class.md)

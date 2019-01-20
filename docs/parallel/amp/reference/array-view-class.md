@@ -767,6 +767,6 @@ The data type of the elements in both the original [array](array-class.md) objec
 
 The `array_view` object that is constructed.
 
-## See Also
+## See also
 
-[Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+- [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

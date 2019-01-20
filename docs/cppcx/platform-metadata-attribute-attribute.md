@@ -32,6 +32,6 @@ public ref class Attribute abstract : Object
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
-[Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)
+- [Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)

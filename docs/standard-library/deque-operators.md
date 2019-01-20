@@ -339,4 +339,4 @@ Deque c1 is greater than or equal to deque c2.
 
 ## See also
 
-[\<deque>](../standard-library/deque.md)<br/>
+- [\<deque>](../standard-library/deque.md)

@@ -21,4 +21,4 @@ szError1 = psz;
 
 ## See also
 
-[Arrays](../cpp/arrays-cpp.md)
+- [Arrays](../cpp/arrays-cpp.md)

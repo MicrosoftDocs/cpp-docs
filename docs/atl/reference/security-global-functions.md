@@ -368,6 +368,6 @@ If `AtlGetSecurityDescriptor` is to be called many times on many different objec
 
 **Header:** atlsecurity.h
 
-## See Also
+## See also
 
-[Functions](../../atl/reference/atl-functions.md)
+- [Functions](../../atl/reference/atl-functions.md)

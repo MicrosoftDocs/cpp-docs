@@ -27,4 +27,4 @@ There are three main C++ language elements to run-time type information:
 
 ## See also
 
-[Casting](../cpp/casting.md)
+- [Casting](../cpp/casting.md)

@@ -31,4 +31,4 @@ The member functions throw an exception only if a copy operation throws an excep
 
 ## See also
 
-[Sample Container Class](../standard-library/sample-container-class.md)<br/>
+- [Sample Container Class](../standard-library/sample-container-class.md)

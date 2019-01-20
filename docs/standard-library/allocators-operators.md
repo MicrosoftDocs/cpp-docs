@@ -66,4 +66,4 @@ This template operator returns `left.equals(right)`.
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+- [\<allocators>](../standard-library/allocators-header.md)

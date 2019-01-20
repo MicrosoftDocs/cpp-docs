@@ -625,4 +625,4 @@ l5 = 65536
 
 ## See also
 
-[\<iomanip>](../standard-library/iomanip.md)<br/>
+- [\<iomanip>](../standard-library/iomanip.md)

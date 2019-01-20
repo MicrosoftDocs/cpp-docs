@@ -172,5 +172,5 @@ int main() {
 
 ## See also
 
-[Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)<br/>
-[switch Statement (C++)](../cpp/switch-statement-cpp.md)
+- [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)
+- [switch Statement (C++)](../cpp/switch-statement-cpp.md)

@@ -33,6 +33,6 @@ If you need to choose between a function and a macro implementation of a library
 
 - **Type-checking** When you declare a function, the compiler can check the argument types. Because you cannot declare a macro, the compiler cannot check macro argument types; although it can check the number of arguments you pass to a macro.
 
-## See Also
+## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+- [CRT Library Features](../c-runtime-library/crt-library-features.md)

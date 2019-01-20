@@ -63,5 +63,5 @@ The **fpclassify** macro and **fpclassify** functions conform to the ISO C99 and
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)

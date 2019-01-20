@@ -196,4 +196,4 @@ With the preceding interface, several classes can use the services of this funct
 
 ## See also
 
-[Classes and Structs](../cpp/classes-and-structs-cpp.md)
+- [Classes and Structs](../cpp/classes-and-structs-cpp.md)

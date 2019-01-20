@@ -1097,7 +1097,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 The same as [CStockPropImpl::put_Picture](#put_picture), but with a reference count.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)

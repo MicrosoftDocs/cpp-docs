@@ -63,6 +63,6 @@ This function sets **errno** to **ENOMEM** if the memory allocation failed or if
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>
-[_recalloc](recalloc.md)<br/>
-[_aligned_recalloc](aligned-recalloc.md)<br/>
+- [Data Alignment](../../c-runtime-library/data-alignment.md)
+- [_recalloc](recalloc.md)
+- [_aligned_recalloc](aligned-recalloc.md)

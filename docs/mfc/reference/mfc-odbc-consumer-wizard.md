@@ -65,8 +65,7 @@ This wizard sets up an ODBC recordset class and the data bindings necessary to a
 
    Specifies whether all columns in the selected table are bound. If you select this box (default), all columns are bound; if you do not select this box, no columns are bound, and you must bind them manually in the recordset class.
 
-## See Also
+## See also
 
-[MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
-[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
-
+- [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)
+- [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)

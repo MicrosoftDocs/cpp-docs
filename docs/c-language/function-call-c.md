@@ -21,6 +21,6 @@ The *postfix-expression* must evaluate to a function address (for example, a fun
 
 A function-call expression has the value and type of the function's return value. A function cannot return an object of array type. If the function's return type is `void` (that is, the function has been declared never to return a value), the function-call expression also has `void` type. (See [Function Calls](../c-language/function-calls.md) for more information.)
 
-## See Also
+## See also
 
-[Function Call Operator: ()](../cpp/function-call-operator-parens.md)
+- [Function Call Operator: ()](../cpp/function-call-operator-parens.md)

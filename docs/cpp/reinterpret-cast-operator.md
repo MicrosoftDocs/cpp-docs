@@ -73,5 +73,5 @@ The **reinterpret_cast** allows the pointer to be treated as an integral type. T
 
 ## See also
 
-[Casting Operators](../cpp/casting-operators.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Casting Operators](../cpp/casting-operators.md)
+- [Keywords](../cpp/keywords-cpp.md)

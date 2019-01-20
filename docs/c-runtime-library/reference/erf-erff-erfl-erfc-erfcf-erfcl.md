@@ -76,4 +76,4 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)

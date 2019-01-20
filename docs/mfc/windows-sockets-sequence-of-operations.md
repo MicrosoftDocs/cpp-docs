@@ -55,10 +55,9 @@ For more information, see:
 
 - [Windows Sockets: Datagram Sockets](../mfc/windows-sockets-datagram-sockets.md)
 
-## See Also
+## See also
 
-[Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
-[CSocket Class](../mfc/reference/csocket-class.md)<br/>
-[CAsyncSocket::Create](../mfc/reference/casyncsocket-class.md#create)<br/>
-[CAsyncSocket::Close](../mfc/reference/casyncsocket-class.md#close)
-
+- [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
+- [CSocket Class](../mfc/reference/csocket-class.md)
+- [CAsyncSocket::Create](../mfc/reference/casyncsocket-class.md#create)
+- [CAsyncSocket::Close](../mfc/reference/casyncsocket-class.md#close)

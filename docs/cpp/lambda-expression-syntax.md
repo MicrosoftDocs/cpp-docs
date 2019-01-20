@@ -156,11 +156,11 @@ There are 4 even numbers in the vector.
 
 ## See also
 
-[Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)<br/>
-[Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)<br/>
-[generate](../standard-library/algorithm-functions.md#generate)<br/>
-[generate_n](../standard-library/algorithm-functions.md#generate_n)<br/>
-[for_each](../standard-library/algorithm-functions.md#for_each)<br/>
-[Exception Specifications (throw)](../cpp/exception-specifications-throw-cpp.md)<br/>
-[Compiler Warning (level 1) C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md)<br/>
-[Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)
+- [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)
+- [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)
+- [generate](../standard-library/algorithm-functions.md#generate)
+- [generate_n](../standard-library/algorithm-functions.md#generate_n)
+- [for_each](../standard-library/algorithm-functions.md#for_each)
+- [Exception Specifications (throw)](../cpp/exception-specifications-throw-cpp.md)
+- [Compiler Warning (level 1) C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md)
+- [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

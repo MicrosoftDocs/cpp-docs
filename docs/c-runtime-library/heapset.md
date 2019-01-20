@@ -97,10 +97,10 @@ int main( void )
 OK - heap is fine
 ```
 
-## See Also
+## See also
 
-[Memory Allocation](../c-runtime-library/memory-allocation.md)<br/>
-[_heapadd](../c-runtime-library/heapadd.md)<br/>
-[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
-[_heapmin](../c-runtime-library/reference/heapmin.md)<br/>
-[_heapwalk](../c-runtime-library/reference/heapwalk.md)
+- [Memory Allocation](../c-runtime-library/memory-allocation.md)
+- [_heapadd](../c-runtime-library/heapadd.md)
+- [_heapchk](../c-runtime-library/reference/heapchk.md)
+- [_heapmin](../c-runtime-library/reference/heapmin.md)
+- [_heapwalk](../c-runtime-library/reference/heapwalk.md)

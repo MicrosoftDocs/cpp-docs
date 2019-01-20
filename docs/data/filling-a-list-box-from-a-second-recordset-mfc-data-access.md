@@ -55,7 +55,7 @@ This function uses a second recordset, `m_courseSet`, which contains a record fo
 
 The function gets `m_courseSet` from the document and opens it. Then it empties `m_ctlCourseList` and scrolls through `m_courseSet`. For each record, the function calls the combo box's `AddString` member function to add the course ID value from the record. Finally, the code sets the combo box's selection.
 
-## See Also
+## See also
 
-[Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
-[ODBC Driver List](../data/odbc/odbc-driver-list.md)
+- [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)
+- [ODBC Driver List](../data/odbc/odbc-driver-list.md)

@@ -16,6 +16,6 @@ The ATL Control Wizard automates the process of creating a DHTML control. It gen
 
 You can now [test the default control](../atl/testing-the-atl-dhtml-control.md).
 
-## See Also
+## See also
 
-[Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)
+- [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)

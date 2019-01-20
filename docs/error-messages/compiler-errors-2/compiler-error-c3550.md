@@ -11,6 +11,6 @@ only plain 'decltype(auto)' is allowed in this context
 
 If `decltype(auto)` is used as a placeholder for the return type of a function, it must be used by itself. It cannot be used as part of a pointer declaration (`decltype(auto*)`), a reference declaration (`decltype(auto&)`), or any other such qualification.
 
-## See Also
+## See also
 
-[auto](../../cpp/auto-cpp.md)
+- [auto](../../cpp/auto-cpp.md)

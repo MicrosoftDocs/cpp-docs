@@ -30,6 +30,6 @@ const char *what() const throw();
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[logic_error Class](../standard-library/logic-error-class.md)<br/>
-[error_code Class](../standard-library/error-code-class.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [logic_error Class](../standard-library/logic-error-class.md)
+- [error_code Class](../standard-library/error-code-class.md)

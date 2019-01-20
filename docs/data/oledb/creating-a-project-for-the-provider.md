@@ -25,6 +25,6 @@ ms.assetid: 076a75de-1d4b-486a-bcf8-9c0f6b049fa2
 
 1. Click **Finish**.
 
-## See Also
+## See also
 
-[Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)
+- [Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)

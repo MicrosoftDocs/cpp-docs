@@ -14,6 +14,6 @@ Before you release a provider, you should do the following tests, in the order i
 
 1. Run the OLE DB conformance tests (including ADO conformance tests) to show that your provider meets the level 0 standard for OLE DB providers. (For an explanation of level 0, search for **OLE DB Level 0 Conformance Tests** at [OLE DB Programmer's Guide](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). These tests and associated documentation are included with Visual C++ in the Data Access SDK. These tests also help to show that your provider runs well when aggregated by other [service providers](../../data/oledb/ole-db-resource-pooling-and-services.md) and are especially useful if you modify or add properties. For more information about the conformance tests, see the Readme file for the Data Access SDK, which is located on one of the Visual Studio CDs.
 
-## See Also
+## See also
 
-[Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)
+- [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

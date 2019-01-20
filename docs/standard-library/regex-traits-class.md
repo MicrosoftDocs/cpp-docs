@@ -420,13 +420,13 @@ The member function returns the value represented by the character *ch* in the b
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants Class](../standard-library/regex-constants-class.md)<br/>
-[regex_error Class](../standard-library/regex-error-class.md)<br/>
-[\<regex> functions](../standard-library/regex-functions.md)<br/>
-[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> operators](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)<br/>
-[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>
-[regex_traits\<char> Class](../standard-library/regex-traits-char-class.md)<br/>
-[regex_traits\<wchar_t> Class](../standard-library/regex-traits-wchar-t-class.md)<br/>
+- [\<regex>](../standard-library/regex.md)
+- [regex_constants Class](../standard-library/regex-constants-class.md)
+- [regex_error Class](../standard-library/regex-error-class.md)
+- [\<regex> functions](../standard-library/regex-functions.md)
+- [regex_iterator Class](../standard-library/regex-iterator-class.md)
+- [\<regex> operators](../standard-library/regex-operators.md)
+- [regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)
+- [\<regex> typedefs](../standard-library/regex-typedefs.md)
+- [regex_traits\<char> Class](../standard-library/regex-traits-char-class.md)
+- [regex_traits\<wchar_t> Class](../standard-library/regex-traits-wchar-t-class.md)

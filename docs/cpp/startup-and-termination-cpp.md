@@ -9,4 +9,4 @@ Program startup and termination are facilitated by using two functions: [main](.
 
 ## See also
 
-[Basic Concepts](../cpp/basic-concepts-cpp.md)
+- [Basic Concepts](../cpp/basic-concepts-cpp.md)

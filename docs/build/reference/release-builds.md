@@ -24,7 +24,7 @@ This section presents information on why and when you would want to change from 
 
    - [Checking for Memory Overwrites](../../build/reference/checking-for-memory-overwrites.md)
 
-## See Also
+## See also
 
-[Building C++ Projects in Visual Studio](../../ide/building-cpp-projects-in-visual-studio.md)<br/>
-[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+- [Building C++ Projects in Visual Studio](../../ide/building-cpp-projects-in-visual-studio.md)
+- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)

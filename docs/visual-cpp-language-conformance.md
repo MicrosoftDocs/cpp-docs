@@ -309,10 +309,10 @@ The following are not presently parallelized:
 
 ## See also
 
-[C++ Language Reference](cpp/cpp-language-reference.md)<br/>
-[C++ Standard Library](standard-library/cpp-standard-library-reference.md)<br/>
-[C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)<br/>
-[What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-[Visual C++ change history 2003 through 2015](porting/visual-cpp-change-history-2003-2015.md)<br/>
-[Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
-[Visual C++ team blog](https://blogs.msdn.microsoft.com/vcblog/)
+- [C++ Language Reference](cpp/cpp-language-reference.md)
+- [C++ Standard Library](standard-library/cpp-standard-library-reference.md)
+- [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
+- [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md)
+- [Visual C++ change history 2003 through 2015](porting/visual-cpp-change-history-2003-2015.md)
+- [Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md)
+- [Visual C++ team blog](https://blogs.msdn.microsoft.com/vcblog/)

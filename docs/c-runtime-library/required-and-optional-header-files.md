@@ -17,6 +17,6 @@ The description of each run-time routine includes a list of the required and opt
 
 The run-time library header files provide function declarations in the ANSI/ISO C standard recommended style. The compiler performs type checking on any routine reference that occurs after its associated function declaration. Function declarations are especially important for routines that return a value of some type other than `int`, which is the default. Routines that do not specify their appropriate return value in their declaration will be considered by the compiler to return an `int`, which can cause unexpected results. See [Type Checking](../c-runtime-library/type-checking-crt.md) for more information.
 
-## See Also
+## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+- [CRT Library Features](../c-runtime-library/crt-library-features.md)

@@ -575,16 +575,16 @@ Specifies a pointer to a runtime class information structure of the preview view
 
 ### Remarks
 
-## See Also
+## See also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CSingleDocTemplate Class](../../mfc/reference/csingledoctemplate-class.md)<br/>
-[CMultiDocTemplate Class](../../mfc/reference/cmultidoctemplate-class.md)<br/>
-[CDocument Class](../../mfc/reference/cdocument-class.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)<br/>
-[CScrollView Class](../../mfc/reference/cscrollview-class.md)<br/>
-[CEditView Class](../../mfc/reference/ceditview-class.md)<br/>
-[CFormView Class](../../mfc/reference/cformview-class.md)<br/>
-[CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
-[CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CSingleDocTemplate Class](../../mfc/reference/csingledoctemplate-class.md)
+- [CMultiDocTemplate Class](../../mfc/reference/cmultidoctemplate-class.md)
+- [CDocument Class](../../mfc/reference/cdocument-class.md)
+- [CView Class](../../mfc/reference/cview-class.md)
+- [CScrollView Class](../../mfc/reference/cscrollview-class.md)
+- [CEditView Class](../../mfc/reference/ceditview-class.md)
+- [CFormView Class](../../mfc/reference/cformview-class.md)
+- [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)
+- [CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md)

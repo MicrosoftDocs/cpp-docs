@@ -188,12 +188,12 @@ Address as:   0012FF3C
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
-[_set_output_format](../../c-runtime-library/set-output-format.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)
+- [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)
+- [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)
+- [vprintf Functions](../../c-runtime-library/vprintf-functions.md)
+- [_set_output_format](../../c-runtime-library/set-output-format.md)

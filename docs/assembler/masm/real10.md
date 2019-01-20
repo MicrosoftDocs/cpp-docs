@@ -15,4 +15,4 @@ Allocates and optionally initializes a 10-byte floating-point number for each *i
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

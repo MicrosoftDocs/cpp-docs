@@ -18,8 +18,7 @@ You can write the image information to an archive by calling the [Write](../mfc/
 
 The [GetSafeHandle](../mfc/reference/cimagelist-class.md#getsafehandle), [Attach](../mfc/reference/cimagelist-class.md#attach), and [Detach](../mfc/reference/cimagelist-class.md#detach) member functions allow you to manipulate the handle of the image list attached to the `CImageList` object, while the [DeleteImageList](../mfc/reference/cimagelist-class.md#deleteimagelist) member function deletes the image list without destroying the `CImageList` object.
 
-## See Also
+## See also
 
-[Using CImageList](../mfc/using-cimagelist.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CImageList](../mfc/using-cimagelist.md)
+- [Controls](../mfc/controls-mfc.md)

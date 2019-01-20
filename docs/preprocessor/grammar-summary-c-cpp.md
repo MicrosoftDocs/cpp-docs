@@ -15,6 +15,6 @@ The following topics are included:
 
 - [Preprocessor Grammar](../preprocessor/preprocessor-grammar.md)
 
-## See Also
+## See also
 
-[C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)
+- [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)

@@ -50,8 +50,8 @@ The **/Od** command-line argument to the HLSL compiler implicitly applies the **
 
    This property corresponds to the **/D \[definitions]** command-line argument to the HLSL compiler.
 
-## See Also
+## See also
 
-[HLSL Property Pages](../ide/hlsl-property-pages.md)<br>
-[HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)<br>
-[HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)
+- [HLSL Property Pages](../ide/hlsl-property-pages.md)
+- [HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)
+- [HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)

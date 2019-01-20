@@ -24,7 +24,6 @@ The graphic object returned by [SelectObject](../mfc/reference/cdc-class.md#sele
 
 - [Drawing in a View](../mfc/drawing-in-a-view.md)
 
-## See Also
+## See also
 
-[Graphic Objects](../mfc/graphic-objects.md)
-
+- [Graphic Objects](../mfc/graphic-objects.md)

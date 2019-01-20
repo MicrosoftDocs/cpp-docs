@@ -30,6 +30,6 @@ This class is provided solely for completeness because it can be inspected with 
 
 **Namespace:** Platform::Details
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)
+- [Platform Namespace](platform-namespace-c-cx.md)

@@ -28,6 +28,6 @@ A stand-alone attribute does not operate on a C++ keyword but is more like a lin
 |[no_injected_text](no-injected-text.md)|Prevents the compiler from injecting code as a result of attribute use.|
 |[pragma](pragma.md)|Emits the specified string, without the quote characters, into the generated .idl file.|
 
-## See Also
+## See also
 
-[Attributes by Usage](attributes-by-usage.md)
+- [Attributes by Usage](attributes-by-usage.md)

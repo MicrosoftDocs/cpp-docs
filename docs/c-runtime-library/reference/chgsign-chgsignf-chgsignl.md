@@ -46,6 +46,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
-[copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)
+- [copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)

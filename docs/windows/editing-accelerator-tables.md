@@ -99,7 +99,7 @@ You can then scan the list and find the entry.
 
 Win32
 
-## See Also
+## See also
 
-[Accelerator Editor](../windows/accelerator-editor.md)<br/>
-[Resource Editors](../windows/resource-editors.md)
+- [Accelerator Editor](../windows/accelerator-editor.md)
+- [Resource Editors](../windows/resource-editors.md)

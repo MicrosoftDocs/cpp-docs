@@ -103,6 +103,6 @@ Defining macros and constants with the [/D](../build/reference/d-preprocessor-de
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Preprocessor Directives](../preprocessor/preprocessor-directives.md)
+- [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

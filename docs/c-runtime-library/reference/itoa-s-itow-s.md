@@ -187,5 +187,5 @@ base 2: 1111111111111111111111111111111111111111111111111111111111111111 (64 cha
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[_itoa, _itow functions](itoa-itow.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [_itoa, _itow functions](itoa-itow.md)

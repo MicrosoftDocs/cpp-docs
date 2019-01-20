@@ -33,10 +33,10 @@ Visual Studio uses UTF-8 as the internal character encoding during conversion be
 
 1. Choose **OK** to save your changes.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)<br/>
-[/source-charset (Set Source Character Set)](../../build/reference/source-charset-set-source-character-set.md)<br/>
-[/utf-8 (Set Source and Executable character sets to UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)
+- [/source-charset (Set Source Character Set)](../../build/reference/source-charset-set-source-character-set.md)
+- [/utf-8 (Set Source and Executable character sets to UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

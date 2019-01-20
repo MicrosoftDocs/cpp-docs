@@ -37,6 +37,6 @@ This macro is used to set the OLEMISC flags for an ActiveX control. Refer to [IO
 
 [!code-cpp[NVC_ATL_Windowing#124](../../atl/codesnippet/cpp/object-status-macros_1.h)]
 
-## See Also
+## See also
 
-[Macros](../../atl/reference/atl-macros.md)
+- [Macros](../../atl/reference/atl-macros.md)

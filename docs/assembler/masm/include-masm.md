@@ -19,4 +19,4 @@ The *filename* must be enclosed in angle brackets if it includes a backslash, se
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

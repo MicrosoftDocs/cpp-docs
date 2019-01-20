@@ -193,9 +193,9 @@ void SetPath(LPCTSTR lpszPath);
 *lpszPath*<br/>
 A path, which may be absolute or relative, to the property being loaded asynchronously. `CDataPathProperty` uses URLs, not filenames. If you want a `CDataPathProperty` object for a file, prepend `file://` to the path.
 
-## See Also
+## See also
 
-[MFC Sample Image](../../visual-cpp-samples.md)<br/>
-[CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)
+- [MFC Sample Image](../../visual-cpp-samples.md)
+- [CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)

@@ -168,6 +168,6 @@ ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
 
 ## See also
 
-[Calling Conventions](../cpp/calling-conventions.md)<br/>
-[Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)<br/>
-[Obsolete Calling Conventions](../cpp/obsolete-calling-conventions.md)
+- [Calling Conventions](../cpp/calling-conventions.md)
+- [Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)
+- [Obsolete Calling Conventions](../cpp/obsolete-calling-conventions.md)

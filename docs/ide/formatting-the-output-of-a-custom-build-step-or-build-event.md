@@ -36,4 +36,4 @@ For example:
 
 ## See also
 
-[Understanding Custom Build Steps and Build Events](../ide/understanding-custom-build-steps-and-build-events.md)
+- [Understanding Custom Build Steps and Build Events](../ide/understanding-custom-build-steps-and-build-events.md)

@@ -900,5 +900,5 @@ Stack, global, or embedded objects are not enumerated. The pointer passed to `Af
 
 ## See also
 
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[CObject::Dump](cobject-class.md#dump)
+- [Macros and Globals](mfc-macros-and-globals.md)
+- [CObject::Dump](cobject-class.md#dump)

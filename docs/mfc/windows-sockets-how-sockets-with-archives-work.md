@@ -36,7 +36,7 @@ In its "archive compatible" mode, a `CSocketFile` object provides better perform
 
 For more information, see [Windows Sockets: Using Sockets with Archives](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-## See Also
+## See also
 
-[Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
-[CObject::Serialize](../mfc/reference/cobject-class.md#serialize)
+- [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
+- [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)

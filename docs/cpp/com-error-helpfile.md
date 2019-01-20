@@ -29,4 +29,4 @@ Any failure while calling the `IErrorInfo::GetHelpFile` method is ignored.
 
 ## See also
 
-[_com_error Class](../cpp/com-error-class.md)
+- [_com_error Class](../cpp/com-error-class.md)

@@ -17,10 +17,9 @@ The framework supplies implementations of the **New** and **Open** commands (amo
 |Document template|Frame window|
 |Frame window|View|
 
-## See Also
+## See also
 
-[Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
-[Document Template Creation](../mfc/document-template-creation.md)<br/>
-[Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)<br/>
-[Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
-
+- [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)
+- [Document Template Creation](../mfc/document-template-creation.md)
+- [Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)
+- [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)

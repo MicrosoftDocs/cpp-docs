@@ -73,6 +73,6 @@ All debug versions of the [C run-time libraries](../../c-runtime-library/crt-lib
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[_strdup, _wcsdup, _mbsdup](strdup-wcsdup-mbsdup.md)<br/>
-[Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>
+- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)
+- [_strdup, _wcsdup, _mbsdup](strdup-wcsdup-mbsdup.md)
+- [Debug Versions of Heap Allocation Functions](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)

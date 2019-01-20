@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Keywords](../cpp/keywords-cpp.md)

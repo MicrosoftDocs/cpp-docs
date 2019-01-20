@@ -35,6 +35,6 @@ The **InspectableClass** macro can be used only with Windows Runtime types.
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
-[RuntimeClass Class](runtimeclass-class.md)
+- [RuntimeClass Class](runtimeclass-class.md)

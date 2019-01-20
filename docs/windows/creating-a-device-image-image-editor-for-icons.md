@@ -68,10 +68,10 @@ Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ pr
 
 None
 
-## See Also
+## See also
 
-[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
-[Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)<br/>
-[Image Menu](../windows/image-menu-image-editor-for-icons.md)<br/>
-[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
+- [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
+- [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)
+- [Icons and Cursors: Image Resources for Display Devices](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
+- [Image Menu](../windows/image-menu-image-editor-for-icons.md)
+- [Image Editor for Icons](../windows/image-editor-for-icons.md)

@@ -81,10 +81,10 @@ To manage your header cache, navigate to **Tools > Options, Cross Platform > Con
 
 ![Remote Header IntelliSense](media/remote-header-intellisense.png)
 
-## See Also
+## See also
 
-[Working with Project Properties](../ide/working-with-project-properties.md)<br/>
-[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)<br/>
-[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
-[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
-[Build Event Properties (Linux C++)](../linux/prop-pages/build-events-linux.md)
+- [Working with Project Properties](../ide/working-with-project-properties.md)
+- [C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)
+- [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)
+- [Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)
+- [Build Event Properties (Linux C++)](../linux/prop-pages/build-events-linux.md)

@@ -82,11 +82,11 @@ See the example in [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
-[atexit](atexit.md)<br/>
-[exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[system, _wsystem](system-wsystem.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)
+- [abort](abort.md)
+- [atexit](atexit.md)
+- [exit, _Exit, _exit](exit-exit-exit.md)
+- [_onexit, _onexit_m](onexit-onexit-m.md)
+- [_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)
+- [system, _wsystem](system-wsystem.md)

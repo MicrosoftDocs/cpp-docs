@@ -90,6 +90,6 @@ The scheduler to convert.
 *pScheduler*<br/>
 The scheduler pointer to convert.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

@@ -19,7 +19,6 @@ The following categories of classes support data persistence.
 
 - [ODBC Classes](../mfc/odbc-classes.md)
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

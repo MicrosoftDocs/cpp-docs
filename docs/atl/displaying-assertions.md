@@ -10,7 +10,6 @@ If the client connected to your service appears to stop responding, the service 
 
 If you determine that your service is displaying a message box that you cannot see, you may want to set the **Allow Service to Interact with Desktop** option before using the service again. This option is a startup parameter that permits any message boxes displayed by the service to appear on the desktop. To set this option, open the Services Control Panel application, select the service, click **Startup**, and then select the **Allow Service to Interact with Desktop** option.
 
-## See Also
+## See also
 
-[Debugging Tips](../atl/debugging-tips.md)
-
+- [Debugging Tips](../atl/debugging-tips.md)

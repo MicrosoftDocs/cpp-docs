@@ -448,13 +448,13 @@ void UnlockBuffer() const;
 
 Call `UnlockBuffer` after you have finished using the pointer returned by [LockBuffer](#lockbuffer).
 
-## See Also
+## See also
 
-[MFC Sample SUPERPAD](../../visual-cpp-samples.md)<br/>
-[CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
-[CDocument Class](../../mfc/reference/cdocument-class.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
-[CRichEditView Class](../../mfc/reference/cricheditview-class.md)
+- [MFC Sample SUPERPAD](../../visual-cpp-samples.md)
+- [CCtrlView Class](../../mfc/reference/cctrlview-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CEdit Class](../../mfc/reference/cedit-class.md)
+- [CDocument Class](../../mfc/reference/cdocument-class.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [CCtrlView Class](../../mfc/reference/cctrlview-class.md)
+- [CRichEditView Class](../../mfc/reference/cricheditview-class.md)

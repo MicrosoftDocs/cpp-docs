@@ -44,6 +44,6 @@ We recommend the `#include guard` idiom when code must be portable to compilers 
 
 Be careful not to use `#pragma once` or the `#include guard` idiom in header files that are designed to be included multiple times, using preprocessor symbols to control their effects. For an example of this design, see the \<assert.h> header file. Also be careful to manage include paths to avoid creating multiple paths to included files, which can defeat the multiple-include optimization for both `#include guard`s and `#pragma once`.
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

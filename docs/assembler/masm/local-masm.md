@@ -21,4 +21,4 @@ In the second directive, within a procedure definition (**PROC**), **LOCAL** cre
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

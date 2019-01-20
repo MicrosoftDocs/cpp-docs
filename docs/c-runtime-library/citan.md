@@ -30,5 +30,5 @@ The resulting value is pushed onto the top of the floating-point stack.
 
 ## See also
 
-[Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)<br/>
+- [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+- [tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)

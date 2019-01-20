@@ -10,6 +10,6 @@ ms.assetid: 75a0c1f8-6e21-46d5-adaf-899845c15b38
 
 The `cliext` namespace contains all the types of the STL/CLR library. For a list of all these types, and links to more information on the STL/CLR types, see [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md).
 
-## See Also
+## See also
 
-[STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)
+- [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)

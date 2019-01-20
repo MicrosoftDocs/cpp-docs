@@ -35,7 +35,7 @@ For information on adding resources to managed projects, please see [Resources i
 
 MFC or ATL
 
-## See Also
+## See also
 
-[Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)<br/>
-[Toolbar Editor](../windows/toolbar-editor.md)
+- [Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)
+- [Toolbar Editor](../windows/toolbar-editor.md)

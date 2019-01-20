@@ -117,9 +117,9 @@ virtual void OnShow();
 
 If the item is not a DocObject, the default implementation calls [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onopen). Override this function if you want to perform special processing when opening a DocObject item.
 
-## See Also
+## See also
 
-[COleServerItem Class](../../mfc/reference/coleserveritem-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDocObjectServer Class](../../mfc/reference/cdocobjectserver-class.md)<br/>
-[COleDocObjectItem Class](../../mfc/reference/coledocobjectitem-class.md)
+- [COleServerItem Class](../../mfc/reference/coleserveritem-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDocObjectServer Class](../../mfc/reference/cdocobjectserver-class.md)
+- [COleDocObjectItem Class](../../mfc/reference/coledocobjectitem-class.md)

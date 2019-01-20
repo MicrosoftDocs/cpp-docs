@@ -59,7 +59,7 @@ When you call [AddNew](../../mfc/reference/crecordset-class.md#addnew) or [Edit]
 
 [Dynasets](../../data/odbc/dynaset.md) refresh a record's contents as you scroll to the record. [Snapshots](../../data/odbc/snapshot.md) are static representations of the records, so a record's contents are not refreshed unless you call [Requery](../../mfc/reference/crecordset-class.md#requery). To use all the functionality of dynasets, you must be working with an ODBC driver that conforms to the correct level of ODBC API support. For more information, see [ODBC](../../data/odbc/odbc-basics.md) and [Dynaset](../../data/odbc/dynaset.md).
 
-## See Also
+## See also
 
-[Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Recordset: How AddNew, Edit, and Delete Work (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)
+- [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)
+- [Recordset: How AddNew, Edit, and Delete Work (ODBC)](../../data/odbc/recordset-how-addnew-edit-and-delete-work-odbc.md)

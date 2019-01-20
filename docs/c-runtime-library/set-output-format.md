@@ -98,7 +98,7 @@ int main()
 1.211E-005  2.306E-112
 ```
 
-## See Also
+## See also
 
-[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
-[_get_output_format](../c-runtime-library/get-output-format.md)
+- [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)
+- [_get_output_format](../c-runtime-library/get-output-format.md)

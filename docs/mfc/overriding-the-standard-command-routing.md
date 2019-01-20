@@ -14,7 +14,6 @@ In rare cases when you must implement some variation of the standard framework r
 
 If you insert some new object into the routing, its class must be a command-target class. In your overriding versions of `OnCmdMsg`, be sure to call the version that you're overriding. See the [OnCmdMsg](../mfc/reference/ccmdtarget-class.md#oncmdmsg) member function of class `CCmdTarget` in the *MFC Reference* and the versions in such classes as `CView` and `CDocument` in the supplied source code for examples.
 
-## See Also
+## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-
+- [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)

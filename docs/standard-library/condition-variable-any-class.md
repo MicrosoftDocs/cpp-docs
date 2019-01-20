@@ -200,5 +200,5 @@ The third and fourth methods use a pointer to an object of type `xtime` to repla
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[<condition_variable>](../standard-library/condition-variable.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [<condition_variable>](../standard-library/condition-variable.md)

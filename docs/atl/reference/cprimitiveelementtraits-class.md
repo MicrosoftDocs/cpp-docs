@@ -68,7 +68,7 @@ The data type to use for retrieving elements from the collection class object.
 typedef T& OUTARGTYPE;
 ```
 
-## See Also
+## See also
 
-[CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -18,6 +18,6 @@ The following identifiers have no linkage:
 
 If an identifier has no linkage, declaring the same name again (in a declarator or type specifier) in the same scope level generates a symbol redefinition error.
 
-## See Also
+## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+- [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)

@@ -83,11 +83,11 @@ See [memmove](memmove-wmemmove.md) for a sample of how to use **memcpy**.
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memchr, wmemchr](memchr-wmemchr.md)<br/>
-[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
-[memmove, wmemmove](memmove-wmemmove.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
-[strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
-[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>
+- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)
+- [_memccpy](memccpy.md)
+- [memchr, wmemchr](memchr-wmemchr.md)
+- [memcmp, wmemcmp](memcmp-wmemcmp.md)
+- [memmove, wmemmove](memmove-wmemmove.md)
+- [memset, wmemset](memset-wmemset.md)
+- [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)
+- [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)

@@ -16,8 +16,7 @@ To get the selected text in a rich edit control, use the [GetSelText](../mfc/ref
 
 You can search for a string in a rich edit control by using the [FindText](../mfc/reference/cricheditctrl-class.md#findtext) member function The [FINDTEXTEX](/windows/desktop/api/richedit/ns-richedit-_findtextexa) structure used with this function specifies the text range to search and the string to search for. You can also specify such options as whether the search is case-sensitive.
 
-## See Also
+## See also
 
-[Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)
+- [Controls](../mfc/controls-mfc.md)

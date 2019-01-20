@@ -417,9 +417,9 @@ Returns TRUE if the auto hide button is highlighted; otherwise FALSE.
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCAutoHideBar Class](../../mfc/reference/cmfcautohidebar-class.md)<br/>
-[CAutoHideDockSite Class](../../mfc/reference/cautohidedocksite-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCAutoHideBar Class](../../mfc/reference/cmfcautohidebar-class.md)
+- [CAutoHideDockSite Class](../../mfc/reference/cautohidedocksite-class.md)

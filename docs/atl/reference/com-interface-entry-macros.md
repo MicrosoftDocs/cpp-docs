@@ -377,4 +377,3 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 You can use this macro to prevent an interface from being used in a particular case. For example, you can insert this macro into your COM map right before COM_INTERFACE_ENTRY_AGGREGATE_BLIND to prevent a query for the interface from being forwarded to the aggregate's inner unknown.
 
 The interface IID will be constructed by appending *x* to `IID_`. For example, if *x* is `IPersistStorage`, the IID will be `IID_IPersistStorage`.
-

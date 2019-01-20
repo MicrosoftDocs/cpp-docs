@@ -55,8 +55,8 @@ See the example for [realloc](realloc.md).
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](calloc.md)<br/>
-[_expand](expand.md)<br/>
-[malloc](malloc.md)<br/>
-[realloc](realloc.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [calloc](calloc.md)
+- [_expand](expand.md)
+- [malloc](malloc.md)
+- [realloc](realloc.md)

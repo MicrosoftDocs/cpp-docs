@@ -17,8 +17,8 @@ ms.assetid: c2dbc2ea-35ad-45d8-b459-d76ba0089ff7
 
 The maximum size of a user request for memory that can be granted.
 
-## See Also
+## See also
 
-[malloc](../c-runtime-library/reference/malloc.md)<br/>
-[calloc](../c-runtime-library/reference/calloc.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [malloc](../c-runtime-library/reference/malloc.md)
+- [calloc](../c-runtime-library/reference/calloc.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

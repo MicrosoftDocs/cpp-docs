@@ -318,5 +318,5 @@ This is speaker beep number 10...
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [_open, _wopen](open-wopen.md)

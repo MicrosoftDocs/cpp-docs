@@ -27,7 +27,7 @@ If a header file contains a variable declared `extern constexpr`, it must be mar
 
 1. Add **/Zc:externConstexpr** or **/Zc:externConstexpr-** to the **Additional options:** pane.
 
-## See Also
+## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
-[auto Keyword](../../cpp/auto-keyword.md)
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)
+- [auto Keyword](../../cpp/auto-keyword.md)

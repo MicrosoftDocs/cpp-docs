@@ -188,4 +188,4 @@ The template function `swap` executes `left.swap(right)`.
 
 ## See also
 
-[\<ostream>](../standard-library/ostream.md)
+- [\<ostream>](../standard-library/ostream.md)

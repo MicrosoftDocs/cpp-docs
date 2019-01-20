@@ -27,6 +27,6 @@ For more information about these steps, see the [Open Database Connectivity (ODB
 
 In addition to these steps, you need to take extra steps to check function return values, ensure that your program is not waiting for an asynchronous call to finish, and so on. You can simplify these last steps by using the AFX_SQL_ASYNC and AFX_SQL_SYNC macros. For more information, see [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *MFC Reference*.
 
-## See Also
+## See also
 
-[ODBC Basics](../../data/odbc/odbc-basics.md)
+- [ODBC Basics](../../data/odbc/odbc-basics.md)

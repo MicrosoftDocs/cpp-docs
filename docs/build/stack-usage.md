@@ -51,8 +51,8 @@ Visual C++ permits types that have *extended alignment*, which are also known as
 
 The stack that is allocated needs to include space after it for parameters of subsequently called functions, as discussed in [Stack Allocation](#stack-allocation).
 
-## See Also
+## See also
 
-[x64 software conventions](../build/x64-software-conventions.md)<br/>
-[align](../cpp/align-cpp.md)<br/>
-[__declspec](../cpp/declspec.md)
+- [x64 software conventions](../build/x64-software-conventions.md)
+- [align](../cpp/align-cpp.md)
+- [__declspec](../cpp/declspec.md)

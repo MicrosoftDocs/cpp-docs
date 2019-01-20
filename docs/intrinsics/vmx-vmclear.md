@@ -49,8 +49,8 @@ The `__vmx_vmclear` function is equivalent to the `VMCLEAR` machine instruction.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>
-[__vmx_vmresume](../intrinsics/vmx-vmresume.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)
+- [__vmx_vmresume](../intrinsics/vmx-vmresume.md)

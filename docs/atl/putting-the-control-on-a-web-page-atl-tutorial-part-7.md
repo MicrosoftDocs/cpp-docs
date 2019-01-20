@@ -100,6 +100,6 @@ Build the control. Once the build has finished, open PolyCtl.htm in browser view
 
 This concludes the ATL tutorial. For links to more information about ATL, see the [ATL start page](../atl/active-template-library-atl-concepts.md).
 
-## See Also
+## See also
 
-[Tutorial](../atl/active-template-library-atl-tutorial.md)
+- [Tutorial](../atl/active-template-library-atl-tutorial.md)

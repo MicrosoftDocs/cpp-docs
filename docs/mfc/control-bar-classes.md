@@ -49,7 +49,6 @@ A small pop-up window that displays a single line of text describing the purpose
 [CDockState](../mfc/reference/cdockstate-class.md)<br/>
 Handles persistent storage of docking state data for control bars.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

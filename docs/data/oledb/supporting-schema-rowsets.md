@@ -251,6 +251,6 @@ For information about how consumers can use `IDBSchemaRowset` methods, see [Obta
 
 For an example of a provider that supports schema rowsets, see the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample.
 
-## See Also
+## See also
 
-[Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)
+- [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

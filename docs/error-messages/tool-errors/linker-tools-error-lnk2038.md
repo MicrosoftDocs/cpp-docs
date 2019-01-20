@@ -38,4 +38,4 @@ If you see this error when you are trying to configure a third-party library as 
 
 ## See also
 
-[Linker Tools Errors and Warnings](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)
+- [Linker Tools Errors and Warnings](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)

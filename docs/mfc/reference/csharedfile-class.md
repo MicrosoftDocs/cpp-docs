@@ -114,8 +114,8 @@ Specifies whether the memory block is allowed to grow.
 
 If *bAllowGrow* is nonzero, the size of the memory block is increased as necessary, for example, if an attempt is made to write more bytes to the file than were allocated for the memory block.
 
-## See Also
+## See also
 
-[CMemFile Class](../../mfc/reference/cmemfile-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CMemFile Class](../../mfc/reference/cmemfile-class.md)
+- [CMemFile Class](../../mfc/reference/cmemfile-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CMemFile Class](../../mfc/reference/cmemfile-class.md)

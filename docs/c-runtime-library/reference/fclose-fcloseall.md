@@ -57,9 +57,9 @@ See the example for [fopen](fopen-wfopen.md).
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_close](close.md)<br/>
-[_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
-[fflush](fflush.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[freopen, _wfreopen](freopen-wfreopen.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_close](close.md)
+- [_fdopen, _wfdopen](fdopen-wfdopen.md)
+- [fflush](fflush.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [freopen, _wfreopen](freopen-wfreopen.md)

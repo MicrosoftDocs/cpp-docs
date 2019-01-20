@@ -135,6 +135,6 @@ For more information about component categories, including a sample list, see [W
 
 [!code-cpp[NVC_ATL_Windowing#135](../../atl/codesnippet/cpp/category-macros_2.h)]
 
-## See Also
+## See also
 
-[Macros](../../atl/reference/atl-macros.md)
+- [Macros](../../atl/reference/atl-macros.md)

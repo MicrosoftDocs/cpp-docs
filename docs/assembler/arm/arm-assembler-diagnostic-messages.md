@@ -103,5 +103,5 @@ This warning is not emitted when the **-oldit** command-line switch is used.
 
 ## See also
 
-[ARM Assembler Command-Line Reference](../../assembler/arm/arm-assembler-command-line-reference.md)<br/>
-[ARM Assembler Directives](../../assembler/arm/arm-assembler-directives.md)<br/>
+- [ARM Assembler Command-Line Reference](../../assembler/arm/arm-assembler-command-line-reference.md)
+- [ARM Assembler Directives](../../assembler/arm/arm-assembler-directives.md)

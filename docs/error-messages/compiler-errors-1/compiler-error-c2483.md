@@ -26,6 +26,6 @@ __declspec(thread) struct A {
 __declspec(thread) struct B {} b;   // OK
 ```
 
-## See Also
+## See also
 
-[thread](../../cpp/thread.md)
+- [thread](../../cpp/thread.md)

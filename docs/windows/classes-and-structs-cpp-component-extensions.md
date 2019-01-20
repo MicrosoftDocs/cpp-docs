@@ -106,6 +106,6 @@ The **value class** and **value struct** keywords tells the compiler that the va
 
 Compiler option: `/clr`
 
-## See Also
+## See also
 
-[Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)
+- [Component Extensions for .NET and UWP](../windows/component-extensions-for-runtime-platforms.md)

@@ -83,10 +83,10 @@ cos( 1.570796 ) = 0.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
-[_CIsin](../../c-runtime-library/cisin.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [acos, acosf, acosl](acos-acosf-acosl.md)
+- [asin, asinf, asinl](asin-asinf-asinl.md)
+- [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)
+- [cos, cosf, cosl](cos-cosf-cosl.md)
+- [tan, tanf, tanl](tan-tanf-tanl.md)
+- [_CIsin](../../c-runtime-library/cisin.md)

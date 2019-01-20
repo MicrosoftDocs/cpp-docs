@@ -24,4 +24,4 @@ A few restrictions apply to the use of C and C++ symbols:
 
 ## See also
 
-[Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>
+- [Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)

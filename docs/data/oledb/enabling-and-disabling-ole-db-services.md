@@ -10,6 +10,6 @@ The OLE DB Service Component Manager compares the properties specified by the co
 
 In some cases, it might be necessary to disable individual OLE DB services to work well with existing applications that make assumptions about the characteristics of a provider. OLE DB services provide the ability to disable individual services, or all services, either on a connection-by-connection basis or for all applications using a single provider.
 
-## See Also
+## See also
 
-[OLE DB Resource Pooling and Services](../../data/oledb/ole-db-resource-pooling-and-services.md)
+- [OLE DB Resource Pooling and Services](../../data/oledb/ole-db-resource-pooling-and-services.md)

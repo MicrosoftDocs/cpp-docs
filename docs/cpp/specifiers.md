@@ -42,4 +42,4 @@ Because **signed**, **unsigned**, **long**, and **short** all imply **int**, a *
 
 ## See also
 
-[Declarations and Definitions](declarations-and-definitions-cpp.md)
+- [Declarations and Definitions](declarations-and-definitions-cpp.md)

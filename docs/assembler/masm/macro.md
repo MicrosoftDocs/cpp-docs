@@ -21,4 +21,4 @@ A macro function returns *value* to the calling statement.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

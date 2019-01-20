@@ -75,8 +75,8 @@ The remainder of -10.00 / 3.00 is -1.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ldiv, lldiv](ldiv-lldiv.md)<br/>
-[imaxdiv](imaxdiv.md)<br/>
-[fmod, fmodf](fmod-fmodf.md)<br/>
-[remquo, remquof, remquol](remquo-remquof-remquol.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [ldiv, lldiv](ldiv-lldiv.md)
+- [imaxdiv](imaxdiv.md)
+- [fmod, fmodf](fmod-fmodf.md)
+- [remquo, remquof, remquol](remquo-remquof-remquol.md)

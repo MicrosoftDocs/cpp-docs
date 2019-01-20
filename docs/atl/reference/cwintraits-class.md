@@ -95,7 +95,7 @@ Extended styles used for creation of a window. If *dwExStyle* is 0, the template
 
 The extended window styles of the object.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Understanding Window Traits](../../atl/understanding-window-traits.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Understanding Window Traits](../../atl/understanding-window-traits.md)

@@ -24,7 +24,7 @@ When you want to pass information to the **main** function, the parameters are t
 
 See [Using wmain](../c-language/using-wmain.md) for a description of the wide-character version of **main**.
 
-## See Also
+## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)<br/>
-[Parsing C Command-Line Arguments](../c-language/parsing-c-command-line-arguments.md)
+- [main: Program Startup](../cpp/main-program-startup.md)
+- [Parsing C Command-Line Arguments](../c-language/parsing-c-command-line-arguments.md)

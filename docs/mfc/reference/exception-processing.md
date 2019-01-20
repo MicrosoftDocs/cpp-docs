@@ -564,8 +564,8 @@ See the example for [CATCH](#catch).
 
   **Header** afx.h
 
-## See Also
+## See also
 
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[CException Class](cexception-class.md)<br/>
-[CInvalidArgException Class](cinvalidargexception-class.md)
+- [Macros and Globals](mfc-macros-and-globals.md)
+- [CException Class](cexception-class.md)
+- [CInvalidArgException Class](cinvalidargexception-class.md)

@@ -34,9 +34,9 @@ The following sections list all intrinsics that are available on various archite
 
 - [Alphabetical Listing of Intrinsic Functions](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
 
-## See Also
+## See also
 
-[ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)<br/>
-[Microsoft Macro Assembler Reference](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)
+- [ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)
+- [Microsoft Macro Assembler Reference](../assembler/masm/microsoft-macro-assembler-reference.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)

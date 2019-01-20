@@ -113,5 +113,5 @@ If the calling thread does not own the `mutex`, the behavior is undefined.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<mutex>](../standard-library/mutex.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<mutex>](../standard-library/mutex.md)

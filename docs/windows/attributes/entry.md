@@ -41,6 +41,6 @@ See the example for [idl_module](idl-module.md) for an example use of **entry**.
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
-[IDL Attributes](idl-attributes.md)
+- [IDL Attributes](idl-attributes.md)

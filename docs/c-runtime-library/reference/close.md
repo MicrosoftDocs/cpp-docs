@@ -51,9 +51,9 @@ See the example for [_open](open-wopen.md).
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chsize](chsize.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[_dup, _dup2](dup-dup2.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_unlink, _wunlink](unlink-wunlink.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [_chsize](chsize.md)
+- [_creat, _wcreat](creat-wcreat.md)
+- [_dup, _dup2](dup-dup2.md)
+- [_open, _wopen](open-wopen.md)
+- [_unlink, _wunlink](unlink-wunlink.md)

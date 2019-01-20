@@ -93,5 +93,5 @@ sp2->val == 3
 
 ## See also
 
-[enable_shared_from_this::shared_from_this](#shared_from_this)<br/>
-[shared_ptr Class](../standard-library/shared-ptr-class.md)<br/>
+- [enable_shared_from_this::shared_from_this](#shared_from_this)
+- [shared_ptr Class](../standard-library/shared-ptr-class.md)

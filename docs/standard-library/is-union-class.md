@@ -71,5 +71,5 @@ is_union<ints> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_class Class](../standard-library/is-class-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_class Class](../standard-library/is-class-class.md)

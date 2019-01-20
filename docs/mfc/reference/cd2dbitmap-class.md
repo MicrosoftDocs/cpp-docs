@@ -420,6 +420,6 @@ operator ID2D1Bitmap*();
 
 Pointer to an ID2D1Bitmap interface or NULL if object is not initialized yet.
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

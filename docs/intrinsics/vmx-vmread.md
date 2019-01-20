@@ -49,7 +49,7 @@ The `__vmx_vmread` function is equivalent to the `VMREAD` machine instruction. T
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmwrite](../intrinsics/vmx-vmwrite.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [__vmx_vmwrite](../intrinsics/vmx-vmwrite.md)

@@ -186,9 +186,9 @@ void UpdateTooltips();
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolTipCtrl Class](../../mfc/reference/cmfctooltipctrl-class.md)<br/>
-[CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCToolTipCtrl Class](../../mfc/reference/cmfctooltipctrl-class.md)
+- [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md)

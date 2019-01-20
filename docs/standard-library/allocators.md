@@ -115,4 +115,4 @@ For more information on these type definitions and methods, see [allocator Class
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

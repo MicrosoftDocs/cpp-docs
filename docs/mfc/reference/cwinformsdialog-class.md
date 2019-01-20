@@ -136,8 +136,8 @@ inline operator TManagedControl^() const throw();
 
 This operator casts a type as a reference to a Windows Forms control. It is used to pass a `CWinFormsDialog<TManagedControl>` dialog box to functions that accept a pointer to a Windows Forms user control object.
 
-## See Also
+## See also
 
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CWinFormsView Class](../../mfc/reference/cwinformsview-class.md)<br/>
-[CDialog Class](../../mfc/reference/cdialog-class.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CWinFormsView Class](../../mfc/reference/cwinformsview-class.md)
+- [CDialog Class](../../mfc/reference/cdialog-class.md)

@@ -24,8 +24,7 @@ The following table lists the slider control notification messages and the event
 |TB_THUMBTRACK|Slider movement (the user dragged the slider)|
 |TB_TOP|VK_HOME|
 
-## See Also
+## See also
 
-[Using CSliderCtrl](../mfc/using-csliderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CSliderCtrl](../mfc/using-csliderctrl.md)
+- [Controls](../mfc/controls-mfc.md)

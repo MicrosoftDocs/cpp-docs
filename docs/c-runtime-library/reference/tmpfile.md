@@ -79,6 +79,6 @@ Temporary file 3 was created
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[_rmtmp](rmtmp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [_rmtmp](rmtmp.md)
+- [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)

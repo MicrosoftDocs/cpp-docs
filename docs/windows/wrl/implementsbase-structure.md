@@ -32,6 +32,6 @@ The **ImplementsBase** structure is empty by design.
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
-[Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)
+- [Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

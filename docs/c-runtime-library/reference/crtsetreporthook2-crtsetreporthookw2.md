@@ -225,4 +225,4 @@ _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook1) returned 0
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)

@@ -51,6 +51,6 @@ hello, world
 error
 ```
 
-## See Also
+## See also
 
-[Macros (C/C++)](../preprocessor/macros-c-cpp.md)
+- [Macros (C/C++)](../preprocessor/macros-c-cpp.md)

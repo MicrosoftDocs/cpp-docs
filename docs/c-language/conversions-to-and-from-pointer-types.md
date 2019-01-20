@@ -26,6 +26,6 @@ Conversely, an integral type can be converted to a pointer type according to the
 
 An integral constant expression with value 0 or such an expression cast to type **void** <strong>\*</strong> can be converted by a type cast, by assignment, or by comparison to a pointer of any type. This produces a null pointer that is equal to another null pointer of the same type, but this null pointer is not equal to any pointer to a function or to an object. Integers other than the constant 0 can be converted to pointer type, but the result is not portable.
 
-## See Also
+## See also
 
-[Assignment Conversions](../c-language/assignment-conversions.md)
+- [Assignment Conversions](../c-language/assignment-conversions.md)

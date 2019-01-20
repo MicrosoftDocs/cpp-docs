@@ -29,7 +29,7 @@ Allows you to specify the grid settings for your image and displays grid lines o
 
 None
 
-## See Also
+## See also
 
-[Resizing an Image](../windows/resizing-an-image-image-editor-for-icons.md)<br/>
-[Image Editor for Icons](../windows/image-editor-for-icons.md)
+- [Resizing an Image](../windows/resizing-an-image-image-editor-for-icons.md)
+- [Image Editor for Icons](../windows/image-editor-for-icons.md)

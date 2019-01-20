@@ -690,10 +690,10 @@ virtual void UpdateVisibleState(BOOL bDelay);
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[CDockSite Class](../../mfc/reference/cdocksite-class.md)<br/>
-[CPane Class](../../mfc/reference/cpane-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [CDockSite Class](../../mfc/reference/cdocksite-class.md)
+- [CPane Class](../../mfc/reference/cpane-class.md)

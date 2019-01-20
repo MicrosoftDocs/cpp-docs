@@ -14,7 +14,6 @@ The framework searches the message-map table for matches with incoming messages.
 
 - [Mapping ranges of messages, command IDs, or control IDs to one handler](../mfc/handlers-for-message-map-ranges.md)
 
-## See Also
+## See also
 
-[Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
-
+- [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)

@@ -46,6 +46,6 @@ You can also use the backslash (**\\**) as a continuation character. When a newl
 ( (exp) ? (void) 0:_assert( #exp, __FILE__, __LINE__ ) )
 ```
 
-## See Also
+## See also
 
-[C Character Constants](../c-language/c-character-constants.md)
+- [C Character Constants](../c-language/c-character-constants.md)

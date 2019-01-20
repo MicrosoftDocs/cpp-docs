@@ -14,7 +14,6 @@ You can assign one `CString` object to another. However, when you modify one of 
 
 Note in the example that the two `CString` objects are considered "equal" because they represent the same character string. The `CString` class overloads the equality operator (`==`) to compare two `CString` objects based on their value (contents) rather than their identity (address).
 
-## See Also
+## See also
 
-[Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
-
+- [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)

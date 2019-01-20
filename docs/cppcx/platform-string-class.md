@@ -476,6 +476,6 @@ String^ String::ToString();
 
 A `String` object whose value is the same as the current string.
 
-## See Also
+## See also
 
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)
+- [Platform namespace](../cppcx/platform-namespace-c-cx.md)

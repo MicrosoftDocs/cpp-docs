@@ -73,9 +73,9 @@ The number of threads to be created in the EXE module.
 
 Override this method if you want to use a different method for calculating the number of threads. By default, the number of threads is based on the number of processors.
 
-## See Also
+## See also
 
-[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)<br/>
-[Module Classes](../../atl/atl-module-classes.md)
+- [IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)
+- [Module Classes](../../atl/atl-module-classes.md)

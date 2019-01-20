@@ -2019,10 +2019,10 @@ For linked items, the function finds the link source to obtain a new presentatio
 
 For more information, see [IOleLink::Update](/windows/desktop/api/oleidl/nf-oleidl-iolelink-update) in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample MFCBIND](../../visual-cpp-samples.md)<br/>
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
-[CDocItem Class](../../mfc/reference/cdocitem-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COleServerItem Class](../../mfc/reference/coleserveritem-class.md)
+- [MFC Sample MFCBIND](../../visual-cpp-samples.md)
+- [MFC Sample OCLIENT](../../visual-cpp-samples.md)
+- [CDocItem Class](../../mfc/reference/cdocitem-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [COleServerItem Class](../../mfc/reference/coleserveritem-class.md)

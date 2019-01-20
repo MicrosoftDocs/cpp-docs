@@ -34,7 +34,6 @@ Pointer to the next `_AtlCreateWndData` object.
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
-[Classes and structs](../../atl/reference/atl-classes.md)
-
+- [Classes and structs](../../atl/reference/atl-classes.md)

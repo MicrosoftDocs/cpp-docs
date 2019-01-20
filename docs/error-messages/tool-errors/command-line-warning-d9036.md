@@ -15,5 +15,5 @@ Warning D9036 is a continuation of [Command-Line Warning D9035](../../error-mess
 
 ## See also
 
-[Deprecated and removed compiler options](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options)<br/>
-[Command-Line Warning D9035](command-line-warning-d9035.md)
+- [Deprecated and removed compiler options](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options)
+- [Command-Line Warning D9035](command-line-warning-d9035.md)

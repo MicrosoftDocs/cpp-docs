@@ -10,4 +10,4 @@ For information about the **_variant_t** operators, see [_variant_t Class](../cp
 
 ## See also
 
-[_variant_t Class](../cpp/variant-t-class.md)
+- [_variant_t Class](../cpp/variant-t-class.md)

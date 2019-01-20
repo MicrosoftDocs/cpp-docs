@@ -39,7 +39,6 @@ Displays the Change Source dialog box, the standard user interface for changing 
 [COleBusyDialog](../mfc/reference/colebusydialog-class.md)<br/>
 Displays the Server Busy and Server Not Responding dialog boxes, the standard user interface for handling calls to busy applications. Usually displayed automatically by the `COleMessageFilter` implementation.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

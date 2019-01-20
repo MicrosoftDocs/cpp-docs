@@ -58,6 +58,6 @@ For information on adding resources to managed projects, please see [Resources i
 
 None
 
-## See Also
+## See also
 
-[Image Editor for Icons](../windows/image-editor-for-icons.md)
+- [Image Editor for Icons](../windows/image-editor-for-icons.md)

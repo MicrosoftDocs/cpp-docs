@@ -214,6 +214,6 @@ virtual HRESULT ReCreate(CRenderTarget* */);
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-## See Also
+## See also
 
-[Classes](../../mfc/reference/mfc-classes.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

@@ -109,4 +109,4 @@ Namepace: std
 
 ## See also
 
-[Ellipses and Variadic Templates](../cpp/ellipses-and-variadic-templates.md)<br/>
+- [Ellipses and Variadic Templates](../cpp/ellipses-and-variadic-templates.md)

@@ -236,7 +236,7 @@ void SetFont(LPFONT pNewFont);
 *pNewFont*<br/>
 Pointer to the new `IFont` interface.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CPropExchange Class](../../mfc/reference/cpropexchange-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CPropExchange Class](../../mfc/reference/cpropexchange-class.md)

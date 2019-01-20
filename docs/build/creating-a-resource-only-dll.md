@@ -38,7 +38,7 @@ The application that uses the resource-only DLL should call [LoadLibrary](../bui
 
 The application should call `FreeLibrary` when it is finished using the resources.
 
-## See Also
+## See also
 
-[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+- [Working with Resource Files](../windows/working-with-resource-files.md)
+- [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

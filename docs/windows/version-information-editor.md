@@ -68,6 +68,6 @@ Win32
 
 ## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>
-[Version Information (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)
+- [Resource Editors](../windows/resource-editors.md)
+- [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+- [Version Information (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

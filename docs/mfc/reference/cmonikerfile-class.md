@@ -177,8 +177,8 @@ You can use a URL or a filename for the *lpszURL* parameter. For example:
 
 [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/cmonikerfile-class_2.cpp)]
 
-## See Also
+## See also
 
-[COleStreamFile Class](../../mfc/reference/colestreamfile-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)
+- [COleStreamFile Class](../../mfc/reference/colestreamfile-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)

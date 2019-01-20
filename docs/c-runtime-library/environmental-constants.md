@@ -20,6 +20,6 @@ This constant defines the environmental length for strings.
 |--------------|-------------|
 |`_MAX_ENV`|Maximum string size of an environmental string.|
 
-## See Also
+## See also
 
-[Global Constants](../c-runtime-library/global-constants.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

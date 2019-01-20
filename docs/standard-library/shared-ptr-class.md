@@ -836,5 +836,5 @@ sp1.use_count() == 2
 
 ## See also
 
-[weak_ptr Class](../standard-library/weak-ptr-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [weak_ptr Class](../standard-library/weak-ptr-class.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

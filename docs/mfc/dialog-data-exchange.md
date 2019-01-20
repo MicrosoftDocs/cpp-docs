@@ -27,9 +27,8 @@ The `DDX_` and `DDV_` lines are a data map. The sample DDX and DDV functions sho
 
 If the user cancels a modal dialog box, the `OnCancel` member function terminates the dialog box and `DoModal` returns the value **IDCANCEL**. In that case, no data is exchanged between the dialog box and the dialog object.
 
-## See Also
+## See also
 
-[Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
-[Dialog Data Validation](../mfc/dialog-data-validation.md)
-
+- [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)
+- [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+- [Dialog Data Validation](../mfc/dialog-data-validation.md)

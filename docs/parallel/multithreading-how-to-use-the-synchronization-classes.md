@@ -40,6 +40,6 @@ The drawbacks to this approach are that the class will be slightly slower than t
 
 For information about determining which synchronization class to use in different situations, see [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md). For more information about synchronization, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK. For more information about multithreading support in MFC, see [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md).
 
-## See Also
+## See also
 
-[Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)
+- [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

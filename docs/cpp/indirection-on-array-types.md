@@ -10,4 +10,4 @@ Use of the indirection operator (<strong>\*</strong>) on an *n*-dimensional arra
 
 ## See also
 
-[Arrays](../cpp/arrays-cpp.md)
+- [Arrays](../cpp/arrays-cpp.md)

@@ -68,10 +68,10 @@ Thus you can write, maintain, and compile a single source code file to run with 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
-[Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>
-[Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[Routine Mappings](../c-runtime-library/routine-mappings.md)<br/>
-[A Sample Generic-Text Program](../c-runtime-library/a-sample-generic-text-program.md)
+- [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)
+- [Data Type Mappings](../c-runtime-library/data-type-mappings.md)
+- [Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)
+- [Routine Mappings](../c-runtime-library/routine-mappings.md)
+- [A Sample Generic-Text Program](../c-runtime-library/a-sample-generic-text-program.md)

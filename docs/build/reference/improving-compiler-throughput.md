@@ -12,6 +12,6 @@ See [/Yc](../../build/reference/yc-create-precompiled-header-file.md) and [/Yu](
 
 For more information on precompiled headers, see [Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md).
 
-## See Also
+## See also
 
-[Optimizing Your Code](../../build/reference/optimizing-your-code.md)
+- [Optimizing Your Code](../../build/reference/optimizing-your-code.md)

@@ -109,10 +109,10 @@ Here is a second example.
 
 [!code-cpp[NVC_MFCDocView#93](../../mfc/codesnippet/cpp/cmultidoctemplate-class_2.cpp)]
 
-## See Also
+## See also
 
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CSingleDocTemplate Class](../../mfc/reference/csingledoctemplate-class.md)<br/>
-[CWinApp Class](../../mfc/reference/cwinapp-class.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [CSingleDocTemplate Class](../../mfc/reference/csingledoctemplate-class.md)
+- [CWinApp Class](../../mfc/reference/cwinapp-class.md)

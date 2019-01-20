@@ -194,5 +194,5 @@ An associated asynchronous state is ready only if its asynchronous provider has 
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<future>](../standard-library/future.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<future>](../standard-library/future.md)

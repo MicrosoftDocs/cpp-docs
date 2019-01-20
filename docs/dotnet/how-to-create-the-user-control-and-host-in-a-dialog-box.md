@@ -107,6 +107,6 @@ The steps in this article assume that you are creating a dialog-based ([CDialog 
 
    On the **Debug** menu, click **Start without debugging**. The MFC dialog box should display the Windows Forms control.
 
-## See Also
+## See also
 
-[Hosting a Windows Form User Control in an MFC Dialog Box](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)
+- [Hosting a Windows Form User Control in an MFC Dialog Box](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)

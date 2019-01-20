@@ -28,8 +28,8 @@ enum ATL_URL_SCHEME{
 
 **Header:** atlutil.h
 
-## See Also
+## See also
 
-[Concepts](../active-template-library-atl-concepts.md)<br/>
-[CUrl::SetScheme](curl-class.md#setscheme)<br/>
-[CUrl::GetScheme](curl-class.md#getscheme)
+- [Concepts](../active-template-library-atl-concepts.md)
+- [CUrl::SetScheme](curl-class.md#setscheme)
+- [CUrl::GetScheme](curl-class.md#getscheme)

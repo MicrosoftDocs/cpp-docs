@@ -30,6 +30,6 @@ This family of articles explains how to implement support for property sheets in
 
 - [Sample](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

@@ -216,8 +216,8 @@ The new amount of memory to allocate, in bytes.
 
 Returns true if the memory is successfully allocated, false otherwise.
 
-## See Also
+## See also
 
-[CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
-[CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CHeapPtr Class](../../atl/reference/cheapptr-class.md)
+- [CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

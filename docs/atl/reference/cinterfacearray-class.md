@@ -62,9 +62,9 @@ CInterfaceArray() throw();
 
 Initializes the smart pointer array.
 
-## See Also
+## See also
 
-[CAtlArray Class](../../atl/reference/catlarray-class.md)<br/>
-[CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)<br/>
-[CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CAtlArray Class](../../atl/reference/catlarray-class.md)
+- [CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)
+- [CComQIPtrElementTraits Class](../../atl/reference/ccomqiptrelementtraits-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

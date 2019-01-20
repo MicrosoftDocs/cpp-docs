@@ -620,5 +620,5 @@ Note: EpilogStart Index [4] points to the middle of Prolog unwind code (partiall
 
 ## See also
 
-[Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md)<br/>
-[ARM Exception Handling](../build/arm-exception-handling.md)
+- [Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md)
+- [ARM Exception Handling](../build/arm-exception-handling.md)

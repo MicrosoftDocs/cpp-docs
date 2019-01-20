@@ -62,8 +62,8 @@ The walkthrough shows how to use Windows Installer to deploy your application. Y
 
 **Previous:** [Walkthrough: Debugging a Project (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
 
-## See Also
+## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
-[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Building C/C++ Programs](../build/building-c-cpp-programs.md)
+- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

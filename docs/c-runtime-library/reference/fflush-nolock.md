@@ -43,7 +43,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[_flushall](flushall.md)<br/>
-[setvbuf](setvbuf.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fclose, _fcloseall](fclose-fcloseall.md)
+- [_flushall](flushall.md)
+- [setvbuf](setvbuf.md)

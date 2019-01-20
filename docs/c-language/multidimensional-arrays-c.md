@@ -59,6 +59,6 @@ In the first of these statements, the expression `prop[2][1]` is a valid referen
 
 Similarly, the result of the expression `prop[2]` in the second statement `ipp = prop[2];` is a pointer value addressing a two-dimensional array.
 
-## See Also
+## See also
 
-[Subscript Operator:](../cpp/subscript-operator.md)
+- [Subscript Operator:](../cpp/subscript-operator.md)

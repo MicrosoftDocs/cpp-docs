@@ -115,10 +115,10 @@ int_arr1 is equal to int_arr2.
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memchr, wmemchr](memchr-wmemchr.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[memset, wmemset](memset-wmemset.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
+- [Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)
+- [_memccpy](memccpy.md)
+- [memchr, wmemchr](memchr-wmemchr.md)
+- [memcpy, wmemcpy](memcpy-wmemcpy.md)
+- [memset, wmemset](memset-wmemset.md)
+- [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)
+- [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)

@@ -171,11 +171,11 @@ Out of unique filenames.
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_getmbcp](getmbcp.md)<br/>
-[_getpid](getpid.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
-[tmpfile](tmpfile.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [_getmbcp](getmbcp.md)
+- [_getpid](getpid.md)
+- [_open, _wopen](open-wopen.md)
+- [_setmbcp](setmbcp.md)
+- [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)
+- [tmpfile](tmpfile.md)

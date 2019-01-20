@@ -85,9 +85,8 @@ For more information on using `CStringList`, see the article [Collections](../..
 
 **Header:** afxcoll.h
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [MFC Sample COLLECT](../../visual-cpp-samples.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

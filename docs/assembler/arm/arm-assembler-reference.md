@@ -19,5 +19,5 @@ The articles in this section of the documentation provide reference material for
 
 ## See also
 
-[ARM Intrinsics](../../intrinsics/arm-intrinsics.md)<br/>
-[Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)<br/>
+- [ARM Intrinsics](../../intrinsics/arm-intrinsics.md)
+- [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)

@@ -32,6 +32,6 @@ NMAKE options are described in the following table. Options are preceded by eith
 |/X *filename*|Sends NMAKE error output to *filename* instead of standard error. Spaces or tabs can precede *filename*. To send error output to standard output, specify a dash (-) for *filename*. Does not affect output from commands to standard error.|
 |/Y|Disables batch-mode inference rules. When this option is selected, all batch-mode inference rules are treated as regular inference rules.|
 
-## See Also
+## See also
 
-[Running NMAKE](../build/running-nmake.md)
+- [Running NMAKE](../build/running-nmake.md)

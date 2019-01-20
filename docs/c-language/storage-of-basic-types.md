@@ -22,6 +22,6 @@ The following table summarizes the storage associated with each basic type.
 
 The C data types fall into general categories. The "integral types" include `char`, `int`, **short**, **long**, **signed**, `unsigned`, and `enum`. The "floating types" include **float**, **double**, and `long double`. The "arithmetic types" include all floating and integral types.
 
-## See Also
+## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+- [Declarations and Types](../c-language/declarations-and-types.md)

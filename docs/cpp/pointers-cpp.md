@@ -241,5 +241,5 @@ a (add node)  d (display list)  q (quit)
 
 ## See also
 
-[Indirection Operator: *](../cpp/indirection-operator-star.md)<br/>
-[Address-of Operator: &](../cpp/address-of-operator-amp.md)
+- [Indirection Operator: *](../cpp/indirection-operator-star.md)
+- [Address-of Operator: &](../cpp/address-of-operator-amp.md)

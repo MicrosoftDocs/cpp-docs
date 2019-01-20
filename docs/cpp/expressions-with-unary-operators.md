@@ -70,4 +70,4 @@ The *allocation-expression* refers to the **new** operator. The *deallocation-ex
 
 ## See also
 
-[Types of Expressions](../cpp/types-of-expressions.md)
+- [Types of Expressions](../cpp/types-of-expressions.md)

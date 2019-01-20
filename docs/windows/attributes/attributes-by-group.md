@@ -19,8 +19,8 @@ The C++ attributes are organized into the following functional groups.
 
 For information about how to define custom attributes for your .NET Framework application, see [User-Defined Attributes](../user-defined-attributes-cpp-component-extensions.md).
 
-## See Also
+## See also
 
-[C++ Attributes for COM and .NET](cpp-attributes-com-net.md)<br/>
-[Attributes by Usage](attributes-by-usage.md)<br/>
-[Attributes Alphabetical Reference](attributes-alphabetical-reference.md)
+- [C++ Attributes for COM and .NET](cpp-attributes-com-net.md)
+- [Attributes by Usage](attributes-by-usage.md)
+- [Attributes Alphabetical Reference](attributes-alphabetical-reference.md)

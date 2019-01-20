@@ -665,7 +665,7 @@ int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const
 
 Porting Spy++ from the original Visual C++ 6.0 code to the latest compiler took about 20 hours of coding time over the course of about a week. We upgraded directly through eight releases of the product from Visual Studio 6.0 to Visual Studio 2015. This is now the recommended approach for all upgrades on projects large and small.
 
-## See Also
+## See also
 
-[Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
-[Previous case study: COM Spy](../porting/porting-guide-com-spy.md)
+- [Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)
+- [Previous case study: COM Spy](../porting/porting-guide-com-spy.md)

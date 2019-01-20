@@ -275,8 +275,8 @@ The system time to be obtained as an HTTP format string.
 *strTime*<br/>
 A reference to a string variable to receive the HTTP date time as defined in RFC 2616 ([http://www.ietf.org/rfc/rfc2616.txt](http://www.ietf.org/rfc/rfc2616.txt)) and RFC 1123 ([http://www.ietf.org/rfc/rfc1123.txt](http://www.ietf.org/rfc/rfc1123.txt)).
 
-## See Also
+## See also
 
-[Concepts](../active-template-library-atl-concepts.md)<br/>
-[ATL COM Desktop Components](../atl-com-desktop-components.md)<br/>
-[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
+- [Concepts](../active-template-library-atl-concepts.md)
+- [ATL COM Desktop Components](../atl-com-desktop-components.md)
+- [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)

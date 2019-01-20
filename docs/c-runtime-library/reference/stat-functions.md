@@ -211,8 +211,8 @@ Time modified : Thu Feb 07 14:39:36 2002
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_access, _waccess](access-waccess.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_getmbcp](getmbcp.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_access, _waccess](access-waccess.md)
+- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)
+- [_getmbcp](getmbcp.md)
+- [_setmbcp](setmbcp.md)

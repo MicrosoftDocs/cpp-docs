@@ -390,9 +390,9 @@ Now that you've created a DLL and a client application, you can experiment. Try 
 
 When you deploy your app, you must also deploy the DLLs it uses. The simplest way to make the DLLs that you build or that you include from third parties available to your app is to put them in the same directory as your app, also known as *app-local deployment*. For more information about deployment, see [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md).
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)<br/>
-[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>
-[Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
-[Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md)
+- [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+- [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
+- [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)
+- [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md)

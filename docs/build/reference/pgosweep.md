@@ -48,5 +48,5 @@ In this example command, **pgosweep** writes the current profile information for
 
 ## See also
 
-[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
-[PgoAutoSweep](pgoautosweep.md)<br/>
+- [Profile-Guided Optimizations](profile-guided-optimizations.md)
+- [PgoAutoSweep](pgoautosweep.md)

@@ -51,7 +51,6 @@ These classes provide support for heap pointers, smart pointers, and other memor
 
 - [IAtlMemMgr](../atl/reference/iatlmemmgr-class.md) This class represents the interface to a memory manager.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

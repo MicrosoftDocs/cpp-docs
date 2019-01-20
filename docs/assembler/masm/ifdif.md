@@ -19,4 +19,4 @@ If **I** is given, the comparison is case insensitive. See [IF](../../assembler/
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

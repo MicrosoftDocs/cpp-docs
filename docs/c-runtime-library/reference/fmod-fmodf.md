@@ -84,8 +84,8 @@ The remainder of -10.00 / 3.00 is -1.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
-[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
-[_CIfmod](../../c-runtime-library/cifmod.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [ceil, ceilf, ceill](ceil-ceilf-ceill.md)
+- [fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)
+- [floor, floorf, floorl](floor-floorf-floorl.md)
+- [_CIfmod](../../c-runtime-library/cifmod.md)

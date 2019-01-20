@@ -690,10 +690,10 @@ For more information on implementing handler functions for a range of control ID
 
 ## See also
 
-[ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: Message Maps](../tn006-message-maps.md)<br/>
-[COleCmdUI Class](colecmdui-class.md)<br/>
-[COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)<br/>
-[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>
-[User-Defined Handlers](user-defined-handlers.md)<br/>
-[CCmdUI Class](ccmdui-class.md)
+- [ON_COMMAND](message-map-macros-mfc.md#on_command)
+- [TN006: Message Maps](../tn006-message-maps.md)
+- [COleCmdUI Class](colecmdui-class.md)
+- [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)
+- [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)
+- [User-Defined Handlers](user-defined-handlers.md)
+- [CCmdUI Class](ccmdui-class.md)

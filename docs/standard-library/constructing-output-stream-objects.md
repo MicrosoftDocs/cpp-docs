@@ -50,4 +50,4 @@ The `ends` "manipulator" adds the necessary terminating null character to the st
 
 ## See also
 
-[Output Streams](../standard-library/output-streams.md)<br/>
+- [Output Streams](../standard-library/output-streams.md)

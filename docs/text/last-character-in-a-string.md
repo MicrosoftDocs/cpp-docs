@@ -30,7 +30,7 @@ Use the following tips:
 
    This code uses the MBCS functions `_mbsrchr` and `_mbsinc`. Because these functions are MBCS-aware, they can distinguish between a '\\' character and a trail byte '\\'. The code performs some action if the last character in the string is a null ('\0').
 
-## See Also
+## See also
 
-[MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
-[Character Assignment](../text/character-assignment.md)
+- [MBCS Programming Tips](../text/mbcs-programming-tips.md)
+- [Character Assignment](../text/character-assignment.md)

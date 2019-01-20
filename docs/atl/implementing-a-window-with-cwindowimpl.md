@@ -53,7 +53,6 @@ To subclass an existing window, derive a class from `CWindowImpl` and declare a 
 
 Instead of calling `Create`, call `SubclassWindow` and pass it the handle to the existing window you want to subclass. Once the window is subclassed, it will use `CWindowImpl::WindowProc` (or your function that overrides this method) to direct messages to the message map. To detach a subclassed window from your object, call `UnsubclassWindow`. The window's original window procedure will then be restored.
 
-## See Also
+## See also
 
-[Implementing a Window](../atl/implementing-a-window.md)
-
+- [Implementing a Window](../atl/implementing-a-window.md)

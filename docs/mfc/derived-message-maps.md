@@ -25,7 +25,6 @@ If no handler is found in any of the base-class message maps, default processing
 
 To speed message-map matching, the framework caches recent matches on the likelihood that it will receive the same message again. One consequence of this is that the framework processes unhandled messages quite efficiently. Message maps are also more space-efficient than implementations that use virtual functions.
 
-## See Also
+## See also
 
-[How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md)
-
+- [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md)

@@ -476,10 +476,10 @@ The type is a synonym for the template parameter *Elem*.
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_match](../standard-library/regex-functions.md#regex_match)<br/>
-[regex_search](../standard-library/regex-functions.md#regex_search)<br/>
-[regex_replace](../standard-library/regex-functions.md#regex_replace)<br/>
-[regex](../standard-library/regex-typedefs.md#regex)<br/>
-[wregex](../standard-library/regex-typedefs.md#wregex)<br/>
-[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
+- [\<regex>](../standard-library/regex.md)
+- [regex_match](../standard-library/regex-functions.md#regex_match)
+- [regex_search](../standard-library/regex-functions.md#regex_search)
+- [regex_replace](../standard-library/regex-functions.md#regex_replace)
+- [regex](../standard-library/regex-typedefs.md#regex)
+- [wregex](../standard-library/regex-typedefs.md#wregex)
+- [regex_traits Class](../standard-library/regex-traits-class.md)

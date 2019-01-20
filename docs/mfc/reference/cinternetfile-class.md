@@ -375,8 +375,8 @@ A pointer to a string containing the contents to be written.
 
 If any error occurs while writing the data, the function throws a [CInternetException](../../mfc/reference/cinternetexception-class.md) object describing the error.
 
-## See Also
+## See also
 
-[CStdioFile Class](../../mfc/reference/cstdiofile-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)
+- [CStdioFile Class](../../mfc/reference/cstdiofile-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)

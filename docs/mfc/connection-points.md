@@ -47,7 +47,6 @@ Usually, connection points support "multicasting" — the ability to broadcast t
 
 This example retrieves the current set of connections on the `SampleConnPt` connection point with a call to `CConnectionPoint::GetConnections`. It then iterates through the connections and calls `ISampleSink::SinkFunc` on every active connection.
 
-## See Also
+## See also
 
-[MFC COM](../mfc/mfc-com.md)
-
+- [MFC COM](../mfc/mfc-com.md)

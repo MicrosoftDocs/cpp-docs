@@ -108,8 +108,8 @@ int main( void )
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[fclose, _fcloseall](fclose-fcloseall.md)<br/>
-[fflush](fflush.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[setbuf](setbuf.md)<br/>
+- [Stream I/O](../../c-runtime-library/stream-i-o.md)
+- [fclose, _fcloseall](fclose-fcloseall.md)
+- [fflush](fflush.md)
+- [fopen, _wfopen](fopen-wfopen.md)
+- [setbuf](setbuf.md)

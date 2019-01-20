@@ -271,12 +271,12 @@ This method throws a `CFileException*` in response to file system errors.
 
 [!code-cpp[NVC_MFCFiles#40](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_4.cpp)]
 
-## See Also
+## See also
 
-[CFile Class](../../mfc/reference/cfile-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CFile Class](../../mfc/reference/cfile-class.md)<br/>
-[CFile::Duplicate](../../mfc/reference/cfile-class.md#duplicate)<br/>
-[CFile::LockRange](../../mfc/reference/cfile-class.md#lockrange)<br/>
-[CFile::UnlockRange](../../mfc/reference/cfile-class.md#unlockrange)<br/>
-[CNotSupportedException Class](../../mfc/reference/cnotsupportedexception-class.md)
+- [CFile Class](../../mfc/reference/cfile-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CFile Class](../../mfc/reference/cfile-class.md)
+- [CFile::Duplicate](../../mfc/reference/cfile-class.md#duplicate)
+- [CFile::LockRange](../../mfc/reference/cfile-class.md#lockrange)
+- [CFile::UnlockRange](../../mfc/reference/cfile-class.md#unlockrange)
+- [CNotSupportedException Class](../../mfc/reference/cnotsupportedexception-class.md)

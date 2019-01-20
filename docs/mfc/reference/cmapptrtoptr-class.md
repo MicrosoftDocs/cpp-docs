@@ -75,8 +75,7 @@ For more information on `CMapPtrToPtr`, see the article [Collections](../../mfc/
 
 **Header:** afxcoll.h
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)

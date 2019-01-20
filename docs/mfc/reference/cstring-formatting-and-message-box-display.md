@@ -206,7 +206,7 @@ The second form of the function uses the string resource with the ID *nIDPrompt*
 
 [!code-cpp[NVC_MFCWindowing#133](../../mfc/reference/codesnippet/cpp/cstring-formatting-and-message-box-display_4.cpp)]
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)

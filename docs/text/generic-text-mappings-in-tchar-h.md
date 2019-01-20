@@ -77,7 +77,7 @@ RetVal = strrev(szString);
 
 Therefore, you can write, maintain, and compile a single-source code file to run with routines that are specific to any of the three kinds of character sets.
 
-## See Also
+## See also
 
-[Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
-[Using TCHAR.H Data Types with _MBCS Code](../text/using-tchar-h-data-types-with-mbcs-code.md)
+- [Text and Strings](../text/text-and-strings-in-visual-cpp.md)
+- [Using TCHAR.H Data Types with _MBCS Code](../text/using-tchar-h-data-types-with-mbcs-code.md)

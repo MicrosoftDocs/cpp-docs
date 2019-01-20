@@ -233,6 +233,6 @@ The offset of an object is based on the offset of the previous object and the cu
 
 ## See also
 
-[__declspec](../cpp/declspec.md)<br/>
-[Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)<br/>
-[x64 software conventions](../build/x64-software-conventions.md)
+- [__declspec](../cpp/declspec.md)
+- [Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)
+- [x64 software conventions](../build/x64-software-conventions.md)

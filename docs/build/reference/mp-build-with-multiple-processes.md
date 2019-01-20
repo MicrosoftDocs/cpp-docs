@@ -120,6 +120,6 @@ By default, a project build enables the **/Gm** compiler option (incremental bui
 
 ## See also
 
-[#import Directive](../../preprocessor/hash-import-directive-cpp.md)<br/>
-[Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)<br/>
-[/Zf (Faster PDB generation)](zf.md)<br/>
+- [#import Directive](../../preprocessor/hash-import-directive-cpp.md)
+- [Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference)
+- [/Zf (Faster PDB generation)](zf.md)

@@ -56,5 +56,5 @@ class DerivedClass: public BaseClass // compiler error: BaseClass is
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[override Specifier](../cpp/override-specifier.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [override Specifier](../cpp/override-specifier.md)

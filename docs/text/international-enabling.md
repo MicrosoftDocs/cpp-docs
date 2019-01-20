@@ -27,7 +27,7 @@ Most traditional C and C++ code makes assumptions about character and string man
 > [!NOTE]
 >  European and MBCS character sets have some characters, such as accented letters, with character codes greater than 0x80. Because most code uses signed characters, these characters greater than 0x80 are sign-extended when converted to **int**. This is a problem for array indexing because the sign-extended characters, being negative, indexes outside the array. Languages that use MBCS, such as Japanese, are also unique. Because a character might consist of 1 or 2 bytes, you should always manipulate both bytes at the same time.
 
-## See Also
+## See also
 
-[Unicode and MBCS](../text/unicode-and-mbcs.md)<br/>
-[Internationalization Strategies](../text/internationalization-strategies.md)
+- [Unicode and MBCS](../text/unicode-and-mbcs.md)
+- [Internationalization Strategies](../text/internationalization-strategies.md)

@@ -33,4 +33,4 @@ The only form of based addressing acceptable in 32-bit and 64-bit compilations i
 
 ## See also
 
-[Based Pointers](../cpp/based-pointers-cpp.md)
+- [Based Pointers](../cpp/based-pointers-cpp.md)

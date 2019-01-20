@@ -78,4 +78,4 @@ const try_to_lock_t try_to_lock;
 
 ## See also
 
-[\<mutex>](../standard-library/mutex.md)<br/>
+- [\<mutex>](../standard-library/mutex.md)

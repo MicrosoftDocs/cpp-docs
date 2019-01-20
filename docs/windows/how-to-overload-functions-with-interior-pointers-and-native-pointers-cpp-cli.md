@@ -56,6 +56,6 @@ in f( int* pi )
 in f( interior_ptr<int> pi )
 ```
 
-## See Also
+## See also
 
-[interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)
+- [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)

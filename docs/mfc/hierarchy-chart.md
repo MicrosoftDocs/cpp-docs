@@ -21,7 +21,7 @@ The following illustration represents the MFC classes not derived from `CObject`
 
 You can download the complete chart from the following location: [MFC Hierarchy Charts Download](https://aka.ms/hxgg8e).
 
-## See Also
+## See also
 
-[Hierarchy Chart Categories](../mfc/hierarchy-chart-categories.md)<br/>
-[Class Overview](../mfc/class-library-overview.md)
+- [Hierarchy Chart Categories](../mfc/hierarchy-chart-categories.md)
+- [Class Overview](../mfc/class-library-overview.md)

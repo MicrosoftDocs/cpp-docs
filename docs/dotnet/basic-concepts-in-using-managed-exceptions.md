@@ -151,8 +151,8 @@ If an unmanaged type is caught by catch(Object^), it will not destroy the thrown
 
 When throwing or catching unmanaged exceptions, we recommend that you use the [/EHsc](../build/reference/eh-exception-handling-model.md) compiler option instead of **/EHs** or **/EHa**.
 
-## See Also
+## See also
 
-[Exception Handling](../windows/exception-handling-cpp-component-extensions.md)<br/>
-[safe_cast](../windows/safe-cast-cpp-component-extensions.md)<br/>
-[Exception Handling](../cpp/exception-handling-in-visual-cpp.md)
+- [Exception Handling](../windows/exception-handling-cpp-component-extensions.md)
+- [safe_cast](../windows/safe-cast-cpp-component-extensions.md)
+- [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)

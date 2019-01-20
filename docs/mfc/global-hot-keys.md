@@ -12,8 +12,7 @@ A global hot key is associated with a particular nonchild window. It allows the 
 
 Whenever the user presses a global hot key, the window specified receives a [WM_SYSCOMMAND](/windows/desktop/menurc/wm-syscommand) message that specifies **SC_HOTKEY** as the type of the command. This message also activates the window that receives it. Because this message does not include any information on the exact key that was pressed, using this method does not allow distinguishing between different hot keys that may be attached to the same window. The hot key remains valid until the application that sent **WM_SETHOTKEY** exits.
 
-## See Also
+## See also
 
-[Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)
+- [Controls](../mfc/controls-mfc.md)

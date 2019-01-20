@@ -14,6 +14,6 @@ The system function finds the command interpreter, which is typically CMD.EXE in
 
 For more information, see [system, _wsystem](../c-runtime-library/reference/system-wsystem.md).
 
-## See Also
+## See also
 
-[Library Functions](../c-language/library-functions.md)
+- [Library Functions](../c-language/library-functions.md)

@@ -138,7 +138,7 @@ for (int i = 0; i < 4; i++) {
 
 ## See also
 
-[Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)<br/>
-[C++ AMP Overview](../parallel/amp/cpp-amp-overview.md)<br/>
-[parallel_for_each Function (C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)<br/>
-[Walkthrough: Matrix Multiplication](../parallel/amp/walkthrough-matrix-multiplication.md)
+- [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)
+- [C++ AMP Overview](../parallel/amp/cpp-amp-overview.md)
+- [parallel_for_each Function (C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)
+- [Walkthrough: Matrix Multiplication](../parallel/amp/walkthrough-matrix-multiplication.md)

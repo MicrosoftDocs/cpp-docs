@@ -20,6 +20,6 @@ This section covers the following topics:
 
 - [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md)
 
-## See Also
+## See also
 
-[Creating an OLE DB Consumer](../../data/oledb/creating-an-ole-db-consumer.md)
+- [Creating an OLE DB Consumer](../../data/oledb/creating-an-ole-db-consumer.md)

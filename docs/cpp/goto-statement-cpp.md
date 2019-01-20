@@ -91,5 +91,5 @@ Jumped to stop. i = 3
 
 ## See also
 
-[Jump Statements](../cpp/jump-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Jump Statements](../cpp/jump-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)

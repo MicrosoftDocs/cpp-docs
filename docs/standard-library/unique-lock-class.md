@@ -323,5 +323,5 @@ Otherwise, this method calls `unlock` on the associated `mutex` and sets the int
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<mutex>](../standard-library/mutex.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [\<mutex>](../standard-library/mutex.md)

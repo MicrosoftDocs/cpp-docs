@@ -407,10 +407,10 @@ For more information about using graphic objects, see [Graphic Objects](/windows
 
 [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample PROPDLG](../../visual-cpp-samples.md)<br/>
-[CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CBitmap Class](../../mfc/reference/cbitmap-class.md)<br/>
-[CDC Class](../../mfc/reference/cdc-class.md)
+- [MFC Sample PROPDLG](../../visual-cpp-samples.md)
+- [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CBitmap Class](../../mfc/reference/cbitmap-class.md)
+- [CDC Class](../../mfc/reference/cdc-class.md)

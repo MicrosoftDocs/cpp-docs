@@ -10,4 +10,4 @@ For more information about ML nonfatal errors, see [ML Error Messages](../../ass
 
 ## See also
 
-[ML Nonfatal Errors](../../assembler/masm/ml-nonfatal-errors.md)<br/>
+- [ML Nonfatal Errors](../../assembler/masm/ml-nonfatal-errors.md)

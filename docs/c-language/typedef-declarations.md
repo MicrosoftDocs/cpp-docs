@@ -137,6 +137,6 @@ is equivalent to the declaration
 void box( int, int );
 ```
 
-## See Also
+## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+- [Declarations and Types](../c-language/declarations-and-types.md)

@@ -82,4 +82,4 @@ After you open the data source, session, and rowset objects, you can fetch data.
 
 ## See also
 
-[Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)
+- [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

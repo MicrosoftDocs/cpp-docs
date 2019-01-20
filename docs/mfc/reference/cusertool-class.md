@@ -231,9 +231,9 @@ A handle to the loaded icon.
 
 Call this method to load the icon to be displayed on the menu item. This method searches for the icon in the executable file that the tool uses. If it does not have a default icon, the icon provided by [CUserTool::LoadDefaultIcon](#loaddefaulticon) is used instead.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
-[CUserToolsManager Class](../../mfc/reference/cusertoolsmanager-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)
+- [CUserToolsManager Class](../../mfc/reference/cusertoolsmanager-class.md)

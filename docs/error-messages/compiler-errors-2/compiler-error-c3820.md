@@ -15,7 +15,7 @@ The *name* initializer for a managed type must also be managed.
 
 1. Specify a managed initializer method.
 
-## See Also
+## See also
 
-[Initializers](../../cpp/initializers.md)<br/>
-[Additional Startup Considerations](../../cpp/additional-startup-considerations.md)
+- [Initializers](../../cpp/initializers.md)
+- [Additional Startup Considerations](../../cpp/additional-startup-considerations.md)

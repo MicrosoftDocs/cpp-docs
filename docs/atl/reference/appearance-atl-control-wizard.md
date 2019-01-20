@@ -81,8 +81,7 @@ Use this page of the wizard to identify additional user element options for the 
 
    - **Insertable**: Select this option to have your control appear in the **Insert Object** dialog box of applications such as Word and Excel. Your control can then be inserted by any application that supports embedded objects through this dialog box.
 
-## See Also
+## See also
 
-[ATL Control Wizard](../../atl/reference/atl-control-wizard.md)<br/>
-[SUBEDIT Sample: Superclasses a Standard Windows Control](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit)
-
+- [ATL Control Wizard](../../atl/reference/atl-control-wizard.md)
+- [SUBEDIT Sample: Superclasses a Standard Windows Control](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit)

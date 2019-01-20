@@ -74,7 +74,7 @@ Project files are organized into folders in Solution Explorer. Visual C++ create
 
 When you add an item to a project, you add the item to all configurations for that project, regardless of whether or not the item is buildable. For example, if you have a project named MyProject, adding an item adds it to both the Debug and Release project configurations.
 
-## See Also
+## See also
 
-[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)<br>
-[Visual C++ Project Types](../ide/visual-cpp-project-types.md)<br>
+- [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)
+- [Visual C++ Project Types](../ide/visual-cpp-project-types.md)

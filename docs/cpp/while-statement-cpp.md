@@ -55,8 +55,8 @@ The termination condition is evaluated at the top of the loop. If there are no t
 
 ## See also
 
-[Iteration Statements](../cpp/iteration-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[do-while Statement (C++)](../cpp/do-while-statement-cpp.md)<br/>
-[for Statement (C++)](../cpp/for-statement-cpp.md)<br/>
-[Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md)
+- [Iteration Statements](../cpp/iteration-statements-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [do-while Statement (C++)](../cpp/do-while-statement-cpp.md)
+- [for Statement (C++)](../cpp/for-statement-cpp.md)
+- [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md)

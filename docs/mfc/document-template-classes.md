@@ -23,7 +23,6 @@ A template for documents in the single document interface (SDI). SDI application
 [CCreateContext](../mfc/reference/ccreatecontext-structure.md)<br/>
 A structure passed by a document template to window-creation functions to coordinate the creation of document, view, and frame-window objects.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

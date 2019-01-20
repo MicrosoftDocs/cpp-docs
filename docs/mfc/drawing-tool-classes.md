@@ -30,7 +30,6 @@ Encapsulates a GDI color palette for use as an interface between the application
 [CRectTracker](../mfc/reference/crecttracker-class.md)<br/>
 Displays and handles the user interface for resizing and moving rectangular objects.
 
-## See Also
+## See also
 
-[Class Overview](../mfc/class-library-overview.md)
-
+- [Class Overview](../mfc/class-library-overview.md)

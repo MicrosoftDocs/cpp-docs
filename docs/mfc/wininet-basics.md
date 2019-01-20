@@ -54,8 +54,7 @@ When you create a `CInternetSession` object, you can specify a *dwContext* param
 
 For example, if you write an application that creates a connection with an FTP server to read a file and also connects to an HTTP server to get a Web page, you'll have a `CInternetSession` object, two `CInternetConnection` objects (one would be a `CFtpSession` and the other would be a `CHttpSession`), and two `CInternetFile` objects (one for each connection). If you used default values for the *dwContext* parameters, you would not be able to distinguish between the `OnStatusCallback` invocations that indicate progress for the FTP connection and the invocations that indicate progress for the HTTP connection. If you specify a *dwContext* ID, which you can later test for in `OnStatusCallback`, you will know which operation generated the callback.
 
-## See Also
+## See also
 
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
-
+- [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+- [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)

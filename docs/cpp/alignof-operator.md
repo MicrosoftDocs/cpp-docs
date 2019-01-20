@@ -80,5 +80,5 @@ For more information on differences in alignment in code for x86 and x64, see:
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)
+- [Keywords](../cpp/keywords-cpp.md)

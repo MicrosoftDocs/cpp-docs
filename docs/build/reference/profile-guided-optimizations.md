@@ -88,4 +88,4 @@ Examples of **pgomgr** usage.
 
 ## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)
+- [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)

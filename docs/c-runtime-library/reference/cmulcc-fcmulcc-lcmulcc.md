@@ -45,13 +45,13 @@ These functions are Microsoft-specific. The types **_Dcomplex**, **_Fcomplex**, 
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[_Cbuild, _FCbuild, _LCbuild](cbuild-fcbuild-lcbuild.md)<br/>
-[_Cmulcr, _FCmulcr, _LCmulcr](cmulcr-fcmulcr-lcmulcr.md)<br/>
-[norm, normf, norml](norm-normf-norml1.md)<br/>
-[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
-[creal, crealf, creall](creal-crealf-creall.md)<br/>
-[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>
+- [Alphabetical Function Reference](crt-alphabetical-function-reference.md)
+- [_Cbuild, _FCbuild, _LCbuild](cbuild-fcbuild-lcbuild.md)
+- [_Cmulcr, _FCmulcr, _LCmulcr](cmulcr-fcmulcr-lcmulcr.md)
+- [norm, normf, norml](norm-normf-norml1.md)
+- [cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)
+- [conj, conjf, conjl](conj-conjf-conjl.md)
+- [creal, crealf, creall](creal-crealf-creall.md)
+- [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)
+- [carg, cargf, cargl](carg-cargf-cargl.md)
+- [cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)

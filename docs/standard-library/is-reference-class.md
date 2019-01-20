@@ -68,5 +68,5 @@ is_reference<int(&)()> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_pointer Class](../standard-library/is-pointer-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_pointer Class](../standard-library/is-pointer-class.md)

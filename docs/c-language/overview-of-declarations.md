@@ -57,8 +57,8 @@ Type specifiers provide some information about the data types of identifiers. Th
 
 There are two *type-qualifier* terminals: **const** and `volatile`. These qualifiers specify additional properties of types that are relevant only when accessing objects of that type through l-values. For more information on **const** and `volatile`, see [Type Qualifiers](../c-language/type-qualifiers.md). For a definition of l-values, see [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md).
 
-## See Also
+## See also
 
-[C Language Syntax Summary](../c-language/c-language-syntax-summary.md)<br/>
-[Declarations and Types](../c-language/declarations-and-types.md)<br/>
-[Summary of Declarations](../c-language/summary-of-declarations.md)
+- [C Language Syntax Summary](../c-language/c-language-syntax-summary.md)
+- [Declarations and Types](../c-language/declarations-and-types.md)
+- [Summary of Declarations](../c-language/summary-of-declarations.md)

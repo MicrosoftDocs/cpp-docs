@@ -15,7 +15,6 @@ For example, to update a Clear All command in your program's Edit menu, use the 
 
 Like all handlers, the function shows the **afx_msg** keyword. Like all update handlers, it takes one argument, a pointer to a `CCmdUI` object.
 
-## See Also
+## See also
 
-[How to: Update User-Interface Objects](../mfc/how-to-update-user-interface-objects.md)
-
+- [How to: Update User-Interface Objects](../mfc/how-to-update-user-interface-objects.md)

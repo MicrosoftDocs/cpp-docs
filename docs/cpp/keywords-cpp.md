@@ -77,5 +77,5 @@ The **__based** keyword has limited uses for 32-bit and 64-bit target compilatio
 
 ## See also
 
-[Lexical Conventions](../cpp/lexical-conventions.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Lexical Conventions](../cpp/lexical-conventions.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

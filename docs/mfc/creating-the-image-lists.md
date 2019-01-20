@@ -15,8 +15,7 @@ Use class `CImageList` to create one or more image lists (for full-size icons, s
 
 Call [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#setimagelist) for each image list; pass a pointer to the appropriate `CImageList` object.
 
-## See Also
+## See also
 
-[Using CListCtrl](../mfc/using-clistctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CListCtrl](../mfc/using-clistctrl.md)
+- [Controls](../mfc/controls-mfc.md)

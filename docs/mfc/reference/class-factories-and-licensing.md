@@ -166,6 +166,6 @@ If *cch* is -1, this function uses:
 
   **Header** afxctl.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

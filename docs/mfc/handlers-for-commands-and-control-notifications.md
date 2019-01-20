@@ -22,6 +22,6 @@ You might assign this command an ID of **IDC_MY_BUTTON** because it is equivalen
 
 Both categories of messages take no arguments and return no value.
 
-## See Also
+## See also
 
-[Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)
+- [Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)

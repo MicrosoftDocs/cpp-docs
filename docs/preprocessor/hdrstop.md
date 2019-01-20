@@ -68,6 +68,6 @@ __inline Disp( char *szToDisplay )   // Define an inline function
 
 In this example, the **hdrstop** pragma appears after two files have been included and an inline function has been defined. This might, at first, seem to be an odd placement for the pragma. Consider, however, that using the manual precompilation options, `/Yc` and `/Yu`, with the **hdrstop** pragma makes it possible for you to precompile entire source files — even inline code. The Microsoft compiler does not limit you to precompiling only data declarations.
 
-## See Also
+## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

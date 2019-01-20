@@ -33,4 +33,4 @@ bool __uncaught_exception(
 
 ## See also
 
-[try, throw, and catch Statements (C++)](../../cpp/try-throw-and-catch-statements-cpp.md)<br/>
+- [try, throw, and catch Statements (C++)](../../cpp/try-throw-and-catch-statements-cpp.md)

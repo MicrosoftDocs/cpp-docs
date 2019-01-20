@@ -159,7 +159,7 @@ virtual property T Value{
 
 Returns the boxed value with the same type as it originally had before it was boxed.
 
-## See Also
+## See also
 
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)<br/>
-[Boxing](../cppcx/boxing-c-cx.md)
+- [Platform namespace](../cppcx/platform-namespace-c-cx.md)
+- [Boxing](../cppcx/boxing-c-cx.md)

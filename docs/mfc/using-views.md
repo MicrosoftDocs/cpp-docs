@@ -30,10 +30,9 @@ In addition, you may need to override other `CView` member functions in your der
 
 - [Initializing and cleaning up documents and views](../mfc/initializing-and-cleaning-up-documents-and-views.md)
 
-## See Also
+## See also
 
-[Document/View Architecture](../mfc/document-view-architecture.md)<br/>
-[CFormView Class](../mfc/reference/cformview-class.md)<br/>
-[Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
-[Bypassing the Serialization Mechanism](../mfc/bypassing-the-serialization-mechanism.md)
-
+- [Document/View Architecture](../mfc/document-view-architecture.md)
+- [CFormView Class](../mfc/reference/cformview-class.md)
+- [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)
+- [Bypassing the Serialization Mechanism](../mfc/bypassing-the-serialization-mechanism.md)

@@ -227,6 +227,6 @@ See [How to: Instantiate WRL Components Directly](how-to-instantiate-wrl-compone
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
-[Microsoft::WRL Namespace](microsoft-wrl-namespace.md)
+- [Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

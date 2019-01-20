@@ -22,9 +22,9 @@ The lifetime of your application consists of a preprocessing, compile, and run t
 
 ## See also
 
-[#error Directive (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)<br/>
-[assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)<br/>
-[static_assert](../cpp/static-assert.md)<br/>
-[_STATIC_ASSERT Macro](../c-runtime-library/reference/static-assert-macro.md)<br/>
-[Templates](../cpp/templates-cpp.md)
+- [#error Directive (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)
+- [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)
+- [_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)
+- [static_assert](../cpp/static-assert.md)
+- [_STATIC_ASSERT Macro](../c-runtime-library/reference/static-assert-macro.md)
+- [Templates](../cpp/templates-cpp.md)

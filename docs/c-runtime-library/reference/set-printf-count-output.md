@@ -70,4 +70,4 @@ i = 5
 
 ## See also
 
-[_get_printf_count_output](get-printf-count-output.md)<br/>
+- [_get_printf_count_output](get-printf-count-output.md)

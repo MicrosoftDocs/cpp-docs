@@ -261,9 +261,9 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 *bSet*<br/>
 [in] TRUE for mini title bar height; FALSE for default title bar height.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md)
+- [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)

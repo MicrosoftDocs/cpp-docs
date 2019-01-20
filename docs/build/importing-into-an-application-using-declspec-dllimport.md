@@ -43,6 +43,6 @@ class CLASS_DECLSPEC CExampleA : public CObject
 
 - [Mutual imports](../build/mutual-imports.md)
 
-## See Also
+## See also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+- [Importing into an Application](../build/importing-into-an-application.md)

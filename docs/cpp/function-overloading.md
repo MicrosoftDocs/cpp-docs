@@ -562,4 +562,4 @@ double Account::Deposit( double dAmount, char *szPassword )
 
 ## See also
 
-[Functions (C++)](../cpp/functions-cpp.md)
+- [Functions (C++)](../cpp/functions-cpp.md)

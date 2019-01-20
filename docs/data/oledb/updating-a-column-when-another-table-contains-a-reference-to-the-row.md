@@ -8,6 +8,6 @@ ms.assetid: abb5db69-055d-431f-b12d-ad2940a661ba
 
 Some providers can detect which columns in the row change, but many providers can't. As a result, updating a column can result in an error when there's a reference to the row you're trying to update. To solve this problem, create a separate accessor holding only the columns you want to change. Pass the number of that accessor to `SetData`.
 
-## See Also
+## See also
 
-[Using Accessors](../../data/oledb/using-accessors.md)
+- [Using Accessors](../../data/oledb/using-accessors.md)

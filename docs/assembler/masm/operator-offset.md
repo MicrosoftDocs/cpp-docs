@@ -15,4 +15,4 @@ Returns the offset into the relevant segment of *expression*.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

@@ -20,7 +20,7 @@ The following topics provide more information about using ODBC with the database
 
 - [ODBC: Calling ODBC API Functions Directly](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
 
-## See Also
+## See also
 
-[ODBC Basics](../../data/odbc/odbc-basics.md)<br/>
-[ODBC Administrator](../../data/odbc/odbc-administrator.md)
+- [ODBC Basics](../../data/odbc/odbc-basics.md)
+- [ODBC Administrator](../../data/odbc/odbc-administrator.md)

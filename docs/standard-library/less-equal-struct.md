@@ -116,4 +116,4 @@ Sorted vector v1 = (2836 2836 2836 6205 15251 31247 37154 48755)
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+- [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

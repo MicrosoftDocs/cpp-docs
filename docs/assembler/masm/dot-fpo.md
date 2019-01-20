@@ -35,4 +35,4 @@ Indicates the frame type.  See [FPO_DATA](/windows/desktop/api/winnt/ns-winnt-_f
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

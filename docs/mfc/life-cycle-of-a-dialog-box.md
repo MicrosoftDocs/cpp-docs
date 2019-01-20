@@ -38,7 +38,6 @@ For modeless dialog boxes, you may often extract data from the dialog object whi
 
 - [Property sheet dialog boxes](../mfc/property-sheets-and-property-pages-mfc.md)
 
-## See Also
+## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)
-
+- [Dialog Boxes](../mfc/dialog-boxes.md)

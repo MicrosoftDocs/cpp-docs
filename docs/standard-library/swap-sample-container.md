@@ -23,4 +23,4 @@ void swap(
 
 ## See also
 
-[\<sample container>](../standard-library/sample-container.md)<br/>
+- [\<sample container>](../standard-library/sample-container.md)

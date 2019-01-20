@@ -60,6 +60,6 @@ For more compatibility and conformance information, see [Compatibility](../../c-
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
-[fpclassify](fpclassify.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)
+- [fpclassify](fpclassify.md)

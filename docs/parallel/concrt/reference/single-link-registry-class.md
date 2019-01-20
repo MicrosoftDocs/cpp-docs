@@ -151,7 +151,7 @@ virtual ~single_link_registry();
 
 The method throws an [invalid_operation](invalid-operation-class.md) exception if it is called before the link is removed.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[multi_link_registry Class](multi-link-registry-class.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [multi_link_registry Class](multi-link-registry-class.md)

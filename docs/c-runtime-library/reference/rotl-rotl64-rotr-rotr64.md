@@ -101,5 +101,5 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_lrotl, _lrotr](lrotl-lrotr.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [_lrotl, _lrotr](lrotl-lrotr.md)

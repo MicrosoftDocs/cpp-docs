@@ -87,6 +87,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[_ismbc Routines](../../c-runtime-library/ismbc-routines.md)<br/>
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
+- [Character Classification](../../c-runtime-library/character-classification.md)
+- [_ismbc Routines](../../c-runtime-library/ismbc-routines.md)
+- [is, isw Routines](../../c-runtime-library/is-isw-routines.md)

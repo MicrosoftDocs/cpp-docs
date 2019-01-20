@@ -94,9 +94,9 @@ Expanded block to 1024 bytes at 002C12BC
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[calloc](calloc.md)<br/>
-[free](free.md)<br/>
-[malloc](malloc.md)<br/>
-[_msize](msize.md)<br/>
-[realloc](realloc.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [calloc](calloc.md)
+- [free](free.md)
+- [malloc](malloc.md)
+- [_msize](msize.md)
+- [realloc](realloc.md)

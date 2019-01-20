@@ -1871,11 +1871,11 @@ This method updates the task pane caption, adjusts the scroll bar, repositions a
 
 Override this method in a derived class to execute custom code when the framework refreshes the task pane.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCTasksPaneTaskGroup Class](../../mfc/reference/cmfctaskspanetaskgroup-class.md)<br/>
-[CMFCTasksPaneTask Class](../../mfc/reference/cmfctaskspanetask-class.md)<br/>
-[CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)<br/>
-[CMFCVisualManager Class](../../mfc/reference/cmfcvisualmanager-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCTasksPaneTaskGroup Class](../../mfc/reference/cmfctaskspanetaskgroup-class.md)
+- [CMFCTasksPaneTask Class](../../mfc/reference/cmfctaskspanetask-class.md)
+- [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)
+- [CMFCVisualManager Class](../../mfc/reference/cmfcvisualmanager-class.md)

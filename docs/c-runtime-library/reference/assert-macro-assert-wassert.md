@@ -123,10 +123,10 @@ If a debugger is installed, choose the **Debug** button to start the debugger, o
 
 ## See also
 
-[Error Handling](../../c-runtime-library/error-handling-crt.md)<br/>
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
-[raise](raise.md)<br/>
-[signal](signal.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](assert-asserte-assert-expr-macros.md)<br/>
-[_DEBUG](../../c-runtime-library/debug.md)<br/>
+- [Error Handling](../../c-runtime-library/error-handling-crt.md)
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [abort](abort.md)
+- [raise](raise.md)
+- [signal](signal.md)
+- [_ASSERT, _ASSERTE, _ASSERT_EXPR Macros](assert-asserte-assert-expr-macros.md)
+- [_DEBUG](../../c-runtime-library/debug.md)

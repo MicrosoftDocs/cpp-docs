@@ -155,6 +155,6 @@ STDMETHOD(Invoke)(
 
 See [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) in the Windows SDK.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

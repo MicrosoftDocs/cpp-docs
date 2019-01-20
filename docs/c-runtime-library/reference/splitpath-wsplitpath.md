@@ -94,9 +94,9 @@ See the example for [_makepath](makepath-wmakepath.md).
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
-[_getmbcp](getmbcp.md)<br/>
-[_makepath, _wmakepath](makepath-wmakepath.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_fullpath, _wfullpath](fullpath-wfullpath.md)
+- [_getmbcp](getmbcp.md)
+- [_makepath, _wmakepath](makepath-wmakepath.md)
+- [_setmbcp](setmbcp.md)
+- [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md)

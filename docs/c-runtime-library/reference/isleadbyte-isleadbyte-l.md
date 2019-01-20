@@ -56,6 +56,6 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[Byte Classification](../../c-runtime-library/byte-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[_ismbb Routines](../../c-runtime-library/ismbb-routines.md)<br/>
+- [Byte Classification](../../c-runtime-library/byte-classification.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [_ismbb Routines](../../c-runtime-library/ismbb-routines.md)

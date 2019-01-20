@@ -53,7 +53,6 @@ The runtime does not manage exceptions that are thrown by asynchronous agents. F
 
 For an example that shows how to create a basic agent-based application, see [Walkthrough: Creating an Agent-Based Application](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md).
 
-## See Also
+## See also
 
-[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
-
+- [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)

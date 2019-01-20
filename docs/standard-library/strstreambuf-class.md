@@ -462,7 +462,7 @@ The protected virtual member function endeavors to extract the current element `
 
 ## See also
 
-[streambuf](../standard-library/streambuf-typedefs.md#streambuf)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+- [streambuf](../standard-library/streambuf-typedefs.md#streambuf)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [iostream Programming](../standard-library/iostream-programming.md)
+- [iostreams Conventions](../standard-library/iostreams-conventions.md)

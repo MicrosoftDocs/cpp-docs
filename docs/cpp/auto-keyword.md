@@ -26,4 +26,4 @@ The following topics describe the **auto** keyword and the corresponding compile
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)
+- [Keywords](../cpp/keywords-cpp.md)

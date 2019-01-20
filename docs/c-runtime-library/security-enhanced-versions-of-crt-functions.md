@@ -90,6 +90,6 @@ More secure versions of run-time library routines are available. For further inf
 |[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md)|[wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)|Convert a sequence of wide characters to a corresponding sequence of multibyte characters|
 |[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md)|[wctomb_s, _wctomb_s_l](../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)|Convert a wide character to the corresponding multibyte character|
 
-## See Also
+## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+- [CRT Library Features](../c-runtime-library/crt-library-features.md)

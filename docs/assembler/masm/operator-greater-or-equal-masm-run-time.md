@@ -15,4 +15,4 @@ Is greater than or equal to. Used only within [.IF](../../assembler/masm/dot-if.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+- [Operators Reference](../../assembler/masm/operators-reference.md)

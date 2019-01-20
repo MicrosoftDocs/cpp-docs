@@ -182,6 +182,6 @@ The function object that will be called back when this `cancellation_token` is c
 
 A `cancellation_token_registration` object which can be utilized in the `deregister` method to deregister a previously registered callback and prevent it from being made. The method will throw an [invalid_operation](invalid-operation-class.md) exception if it is called on a `cancellation_token` object that was created using the [cancellation_token::none](#none) method.
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

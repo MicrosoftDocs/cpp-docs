@@ -21,7 +21,7 @@ cl /EHsc /LD /wd6001 filename.cpp
 
 To fix the warning, add the **/analyze** command line option. If **/analyze** is not supported on your version of the compiler, remove the invalid warning number from the **/wd** option.
 
-## See Also
+## See also
 
-[Command-Line Errors D8000 Through D9999](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)
+- [Command-Line Errors D8000 Through D9999](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)
+- [Compiler Options](../../build/reference/compiler-options.md)

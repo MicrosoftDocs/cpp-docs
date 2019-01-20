@@ -308,8 +308,8 @@ virtual void Sort(
 *bAdd*<br/>
 [in] A Boolean that specifies whether this method adds the column indicated by *iColumn* to the list of sort columns.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CListCtrl Class](../../mfc/reference/clistctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CListCtrl Class](../../mfc/reference/clistctrl-class.md)

@@ -39,7 +39,6 @@ The following articles discuss topics related to containers, servers, and the me
 
 - [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md)
 
-## See Also
+## See also
 
-[OLE](../mfc/ole-in-mfc.md)
-
+- [OLE](../mfc/ole-in-mfc.md)

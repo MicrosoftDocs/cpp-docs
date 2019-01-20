@@ -30,5 +30,5 @@ This section introduces the fundamental elements of a C++ program. You use these
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Program and linkage](program-and-linkage-cpp.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Program and linkage](program-and-linkage-cpp.md)

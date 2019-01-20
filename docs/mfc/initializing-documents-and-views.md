@@ -10,7 +10,6 @@ Documents are created in two different ways, so your document class must support
 
 Views are created after their documents are created. The best time to initialize a view is after the framework has finished creating the document, frame window, and view. You can initialize your view by overriding the [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) member function of [CView](../mfc/reference/cview-class.md). If you need to reinitialize or adjust anything each time the document changes, you can override [OnUpdate](../mfc/reference/cview-class.md#onupdate).
 
-## See Also
+## See also
 
-[Initializing and Cleaning Up Documents and Views](../mfc/initializing-and-cleaning-up-documents-and-views.md)
-
+- [Initializing and Cleaning Up Documents and Views](../mfc/initializing-and-cleaning-up-documents-and-views.md)

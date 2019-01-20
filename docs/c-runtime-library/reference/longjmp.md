@@ -73,5 +73,5 @@ See the example for [_fpreset](fpreset.md).
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[setjmp](setjmp.md)
+- [Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)
+- [setjmp](setjmp.md)

@@ -46,5 +46,5 @@ The **_set_FMA3_enable** and **_get_FMA3_enable** functions are Microsoft specif
 
 ## See also
 
-[Floating-point support](../../c-runtime-library/floating-point-support.md)<br/>
-[Floating-point migration issues](../../porting/floating-point-migration-issues.md)<br/>
+- [Floating-point support](../../c-runtime-library/floating-point-support.md)
+- [Floating-point migration issues](../../porting/floating-point-migration-issues.md)

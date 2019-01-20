@@ -32,7 +32,7 @@ The information in `_mbctype` and `_mbcasemap` is used internally by [_ismbbkaln
 
 Not for public use.
 
-## See Also
+## See also
 
-[is, isw Routines](../c-runtime-library/is-isw-routines.md)<br/>
-[__pctype_func](../c-runtime-library/pctype-func.md)
+- [is, isw Routines](../c-runtime-library/is-isw-routines.md)
+- [__pctype_func](../c-runtime-library/pctype-func.md)

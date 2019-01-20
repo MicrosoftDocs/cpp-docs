@@ -40,4 +40,4 @@ The **MB_LEN_MAX** macro, defined in \<limits.h>, expands to the maximum length 
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

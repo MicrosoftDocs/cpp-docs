@@ -137,22 +137,22 @@ In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 
 ## See also
 
-[Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Language Strings](../../c-runtime-library/language-strings.md)<br/>
-[Country/Region Strings](../../c-runtime-library/country-region-strings.md)<br/>
-[_free_locale](free-locale.md)<br/>
-[_configthreadlocale](configthreadlocale.md)<br/>
-[setlocale](../../preprocessor/setlocale.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[localeconv](localeconv.md)<br/>
-[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
-[strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)<br/>
-[mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
-[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
-[_setmbcp](setmbcp.md)<br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
-[strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
-[wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
+- [Locale Names, Languages, and Country/Region Strings](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)
+- [Language Strings](../../c-runtime-library/language-strings.md)
+- [Country/Region Strings](../../c-runtime-library/country-region-strings.md)
+- [_free_locale](free-locale.md)
+- [_configthreadlocale](configthreadlocale.md)
+- [setlocale](../../preprocessor/setlocale.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [localeconv](localeconv.md)
+- [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)
+- [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)
+- [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)
+- [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)
+- [_setmbcp](setmbcp.md)
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)
+- [strcoll Functions](../../c-runtime-library/strcoll-functions.md)
+- [strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)
+- [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)
+- [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)
+- [wctomb, _wctomb_l](wctomb-wctomb-l.md)

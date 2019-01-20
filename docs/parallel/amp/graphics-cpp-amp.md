@@ -400,25 +400,25 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/?linkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/?linkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/?linkId=255377). The [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.
 
-## See Also
+## See also
 
-[double_2 Class](../../parallel/amp/reference/double-2-class.md)<br/>
-[double_3 Class](../../parallel/amp/reference/double-3-class.md)<br/>
-[double_4 Class](../../parallel/amp/reference/double-4-class.md)<br/>
-[float_2 Class](../../parallel/amp/reference/float-2-class.md)<br/>
-[float_3 Class](../../parallel/amp/reference/float-3-class.md)<br/>
-[float_4 Class](../../parallel/amp/reference/float-4-class.md)<br/>
-[int_2 Class](../../parallel/amp/reference/int-2-class.md)<br/>
-[int_3 Class](../../parallel/amp/reference/int-3-class.md)<br/>
-[int_4 Class](../../parallel/amp/reference/int-4-class.md)<br/>
-[norm_2 Class](../../parallel/amp/reference/norm-2-class.md)<br/>
-[norm_3 Class](../../parallel/amp/reference/norm-3-class.md)<br/>
-[norm_4 Class](../../parallel/amp/reference/norm-4-class.md)<br/>
-[short_vector Structure](../../parallel/amp/reference/short-vector-structure.md)<br/>
-[short_vector_traits Structure](../../parallel/amp/reference/short-vector-traits-structure.md)<br/>
-[uint_2 Class](../../parallel/amp/reference/uint-2-class.md)<br/>
-[uint_3 Class](../../parallel/amp/reference/uint-3-class.md)<br/>
-[uint_4 Class](../../parallel/amp/reference/uint-4-class.md)<br/>
-[unorm_2 Class](../../parallel/amp/reference/unorm-2-class.md)<br/>
-[unorm_3 Class](../../parallel/amp/reference/unorm-3-class.md)<br/>
-[unorm_4 Class](../../parallel/amp/reference/unorm-4-class.md)
+- [double_2 Class](../../parallel/amp/reference/double-2-class.md)
+- [double_3 Class](../../parallel/amp/reference/double-3-class.md)
+- [double_4 Class](../../parallel/amp/reference/double-4-class.md)
+- [float_2 Class](../../parallel/amp/reference/float-2-class.md)
+- [float_3 Class](../../parallel/amp/reference/float-3-class.md)
+- [float_4 Class](../../parallel/amp/reference/float-4-class.md)
+- [int_2 Class](../../parallel/amp/reference/int-2-class.md)
+- [int_3 Class](../../parallel/amp/reference/int-3-class.md)
+- [int_4 Class](../../parallel/amp/reference/int-4-class.md)
+- [norm_2 Class](../../parallel/amp/reference/norm-2-class.md)
+- [norm_3 Class](../../parallel/amp/reference/norm-3-class.md)
+- [norm_4 Class](../../parallel/amp/reference/norm-4-class.md)
+- [short_vector Structure](../../parallel/amp/reference/short-vector-structure.md)
+- [short_vector_traits Structure](../../parallel/amp/reference/short-vector-traits-structure.md)
+- [uint_2 Class](../../parallel/amp/reference/uint-2-class.md)
+- [uint_3 Class](../../parallel/amp/reference/uint-3-class.md)
+- [uint_4 Class](../../parallel/amp/reference/uint-4-class.md)
+- [unorm_2 Class](../../parallel/amp/reference/unorm-2-class.md)
+- [unorm_3 Class](../../parallel/amp/reference/unorm-3-class.md)
+- [unorm_4 Class](../../parallel/amp/reference/unorm-4-class.md)

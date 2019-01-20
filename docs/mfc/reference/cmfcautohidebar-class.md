@@ -367,10 +367,10 @@ void UpdateVisibleState();
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CPane Class](../../mfc/reference/cpane-class.md)<br/>
-[CAutoHideDockSite Class](../../mfc/reference/cautohidedocksite-class.md)<br/>
-[CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CPane Class](../../mfc/reference/cpane-class.md)
+- [CAutoHideDockSite Class](../../mfc/reference/cautohidedocksite-class.md)
+- [CMFCAutoHideButton Class](../../mfc/reference/cmfcautohidebutton-class.md)

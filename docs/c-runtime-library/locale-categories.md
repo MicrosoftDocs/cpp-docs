@@ -30,11 +30,11 @@ Locale categories are manifest constants used by the localization routines to sp
 
 See [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for an example.
 
-## See Also
+## See also
 
-[localeconv](../c-runtime-library/reference/localeconv.md)<br/>
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[strcoll Functions](../c-runtime-library/strcoll-functions.md)<br/>
-[strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [localeconv](../c-runtime-library/reference/localeconv.md)
+- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)
+- [strcoll Functions](../c-runtime-library/strcoll-functions.md)
+- [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)
+- [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

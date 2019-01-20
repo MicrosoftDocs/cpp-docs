@@ -89,8 +89,8 @@ OK - heap is fine
 
 ## See also
 
-[Memory Allocation](../../c-runtime-library/memory-allocation.md)<br/>
-[_heapadd](../../c-runtime-library/heapadd.md)<br/>
-[_heapmin](heapmin.md)<br/>
-[_heapset](../../c-runtime-library/heapset.md)<br/>
-[_heapwalk](heapwalk.md)<br/>
+- [Memory Allocation](../../c-runtime-library/memory-allocation.md)
+- [_heapadd](../../c-runtime-library/heapadd.md)
+- [_heapmin](heapmin.md)
+- [_heapset](../../c-runtime-library/heapset.md)
+- [_heapwalk](heapwalk.md)

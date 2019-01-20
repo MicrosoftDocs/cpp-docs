@@ -120,8 +120,8 @@ int main()
 
 [About GDI+ Managed Code](/dotnet/framework/winforms/advanced/about-gdi-managed-code)
 
-## See Also
+## See also
 
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+- [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
-<xref:System.Drawing>
+- <xref:System.Drawing>

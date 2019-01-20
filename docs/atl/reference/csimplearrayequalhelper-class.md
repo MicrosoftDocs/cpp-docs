@@ -59,8 +59,8 @@ An object of type T.
 
 Returns true if the elements are equal, false otherwise.
 
-## See Also
+## See also
 
-[CSimpleArray Class](../../atl/reference/csimplearray-class.md)<br/>
-[CSimpleArrayEqualHelperFalse Class](../../atl/reference/csimplearrayequalhelperfalse-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CSimpleArray Class](../../atl/reference/csimplearray-class.md)
+- [CSimpleArrayEqualHelperFalse Class](../../atl/reference/csimplearrayequalhelperfalse-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

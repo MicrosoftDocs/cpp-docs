@@ -50,4 +50,4 @@ the example pushes pointers to `world`, `hello`, and `format`, in that order, an
 
 ## See also
 
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

@@ -113,7 +113,7 @@ Path extracted with _splitpath:
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
-[_splitpath, _wsplitpath](splitpath-wsplitpath.md)<br/>
-[_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md)<br/>
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_fullpath, _wfullpath](fullpath-wfullpath.md)
+- [_splitpath, _wsplitpath](splitpath-wsplitpath.md)
+- [_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md)

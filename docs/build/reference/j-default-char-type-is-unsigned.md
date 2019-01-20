@@ -38,8 +38,8 @@ ANSI C and C++ do not require a specific implementation of the `char` type. This
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Working with Project Properties](../../ide/working-with-project-properties.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [Working with Project Properties](../../ide/working-with-project-properties.md)

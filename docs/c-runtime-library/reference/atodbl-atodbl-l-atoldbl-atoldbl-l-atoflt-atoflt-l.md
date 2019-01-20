@@ -110,7 +110,7 @@ Return value: 3
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)

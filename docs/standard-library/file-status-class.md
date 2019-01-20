@@ -113,6 +113,6 @@ Specified `perms`.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[path Class](../standard-library/path-class.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [path Class](../standard-library/path-class.md)
+- [\<filesystem>](../standard-library/filesystem.md)

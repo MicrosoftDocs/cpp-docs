@@ -14,6 +14,6 @@ The following topics help you install the components that you need to start work
 
 - [Redistribute ODBC components to your customers](../../data/odbc/odbc-basics.md)
 
-## See Also
+## See also
 
-[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+- [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -174,11 +174,10 @@ Always call the [concurrency::agent::done](reference/agent-class.md#done) method
 
 For another example of an agent-based application, see [Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).
 
-## See Also
+## See also
 
-[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[Message Passing Functions](../../parallel/concrt/message-passing-functions.md)<br/>
-[Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)<br/>
-[Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)
-
+- [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
+- [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)
+- [Message Passing Functions](../../parallel/concrt/message-passing-functions.md)
+- [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)
+- [Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)

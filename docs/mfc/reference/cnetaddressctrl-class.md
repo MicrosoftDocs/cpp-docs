@@ -223,8 +223,8 @@ Use the [CNetAddressCtrl::SetAllowType](#setallowtype) method to specify the typ
 
 This message invokes the [NetAddr_SetAllowType](/windows/desktop/api/shellapi/nf-shellapi-netaddr_setallowtype) macro, which is described in the Windows SDK. That macro sends the NCM_SETALLOWTYPE message.
 
-## See Also
+## See also
 
-[CNetAddressCtrl Class](../../mfc/reference/cnetaddressctrl-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CEdit Class](../../mfc/reference/cedit-class.md)
+- [CNetAddressCtrl Class](../../mfc/reference/cnetaddressctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CEdit Class](../../mfc/reference/cedit-class.md)

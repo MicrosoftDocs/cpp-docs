@@ -15,4 +15,4 @@ Allocates and optionally initializes 10 bytes of storage for each `initializer`.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

@@ -96,4 +96,4 @@ If the `full` function of the max class returns **false**, this member function 
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+- [\<allocators>](../standard-library/allocators-header.md)

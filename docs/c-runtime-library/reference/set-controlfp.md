@@ -49,6 +49,6 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_clear87, _clearfp](clear87-clearfp.md)<br/>
-[_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [_clear87, _clearfp](clear87-clearfp.md)
+- [_status87, _statusfp, _statusfp2](status87-statusfp-statusfp2.md)

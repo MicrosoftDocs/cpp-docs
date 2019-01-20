@@ -41,5 +41,5 @@ Inline assembly is not supported on the ARM and x64 processors.  The following t
 
 ## See also
 
-[Compiler Intrinsics and Assembly Language](../../intrinsics/compiler-intrinsics-and-assembly-language.md)<br/>
-[C++ Language Reference](../../cpp/cpp-language-reference.md)<br/>
+- [Compiler Intrinsics and Assembly Language](../../intrinsics/compiler-intrinsics-and-assembly-language.md)
+- [C++ Language Reference](../../cpp/cpp-language-reference.md)

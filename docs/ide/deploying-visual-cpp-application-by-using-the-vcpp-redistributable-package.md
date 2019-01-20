@@ -78,6 +78,6 @@ You must have these components to complete this walkthrough:
       > [!IMPORTANT]
       > To determine which version of the runtime is installed, the installer checks the registry key \HKLM\SOFTWARE\Microsoft\VisualStudio\\\<version>\VC\Runtimes\\<platform>. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
 
-## See Also
+## See also
 
-[Deployment Examples](deployment-examples.md)<br/>
+- [Deployment Examples](deployment-examples.md)

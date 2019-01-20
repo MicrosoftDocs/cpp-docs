@@ -12,7 +12,6 @@ The following class provides support for dual interfaces:
 
 - [IDispatchImpl](../atl/reference/idispatchimpl-class.md) Implements the `IDispatch` portion of a dual interface. For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

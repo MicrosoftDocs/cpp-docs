@@ -12,6 +12,6 @@ The Microsoft C/C++ compiler does not honor user requests for register variables
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Storage-Class Specifiers for Internal-Level Declarations](../c-language/storage-class-specifiers-for-internal-level-declarations.md)
+- [Storage-Class Specifiers for Internal-Level Declarations](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

@@ -214,9 +214,9 @@ See the example in the article [Collections: How to Make a Type-Safe Collection]
 
   **Header** afxtempl.h
 
-## See Also
+## See also
 
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[CMap Class](cmap-class.md)<br/>
-[CList Class](clist-class.md)<br/>
-[CArray Class](carray-class.md)
+- [Macros and Globals](mfc-macros-and-globals.md)
+- [CMap Class](cmap-class.md)
+- [CList Class](clist-class.md)
+- [CArray Class](carray-class.md)

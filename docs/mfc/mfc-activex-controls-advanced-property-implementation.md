@@ -62,9 +62,9 @@ Helper functions exist for the most common predefined SCODEs, such as [COleContr
 
 For more information on reporting exceptions in other areas of the code, see [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) and the section [Handling Errors in Your ActiveX Control](../mfc/mfc-activex-controls-advanced-topics.md) in the article ActiveX Controls: Advanced Topics.
 
-## See Also
+## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)<br/>
-[COleControl Class](../mfc/reference/colecontrol-class.md)
+- [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md)
+- [MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)
+- [COleControl Class](../mfc/reference/colecontrol-class.md)

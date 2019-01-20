@@ -160,4 +160,4 @@ The template function returns `!(left < right)`.
 
 ## See also
 
-[<forward_list>](../standard-library/forward-list.md)<br/>
+- [<forward_list>](../standard-library/forward-list.md)

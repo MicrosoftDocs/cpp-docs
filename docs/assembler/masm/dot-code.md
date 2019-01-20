@@ -21,5 +21,5 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start 
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[.DATA](../../assembler/masm/dot-data.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)
+- [.DATA](../../assembler/masm/dot-data.md)

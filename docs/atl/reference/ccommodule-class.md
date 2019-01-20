@@ -655,6 +655,6 @@ Similar to [UpdateRegistryFromResourceD](#updateregistryfromresourced) except `U
 
 For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)
+- [Class Overview](../../atl/atl-class-overview.md)

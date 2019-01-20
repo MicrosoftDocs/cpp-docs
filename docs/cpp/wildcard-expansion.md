@@ -17,4 +17,4 @@ Command-line arguments are handled by a routine called `_setargv` (or `_wsetargv
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)
+- [main: Program Startup](../cpp/main-program-startup.md)

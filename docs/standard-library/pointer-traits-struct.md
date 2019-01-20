@@ -68,5 +68,5 @@ static pointer pointer_to(element_type& obj);
 
 ## See also
 
-[\<memory>](../standard-library/memory.md)<br/>
-[allocator_traits Class](../standard-library/allocator-traits-class.md)<br/>
+- [\<memory>](../standard-library/memory.md)
+- [allocator_traits Class](../standard-library/allocator-traits-class.md)

@@ -97,4 +97,4 @@ int main( )
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)

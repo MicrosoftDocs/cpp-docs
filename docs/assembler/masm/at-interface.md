@@ -15,4 +15,4 @@ Information about the language parameters (numeric equate).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

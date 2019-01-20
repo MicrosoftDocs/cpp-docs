@@ -76,14 +76,14 @@ Points to the parent or owner window object (of type [CWnd](../../mfc/reference/
 
 See [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) for complete information.
 
-## See Also
+## See also
 
-[CDialog Class](../../mfc/reference/cdialog-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CFileDialog Class](../../mfc/reference/cfiledialog-class.md)<br/>
-[CFontDialog Class](../../mfc/reference/cfontdialog-class.md)<br/>
-[CColorDialog Class](../../mfc/reference/ccolordialog-class.md)<br/>
-[CPageSetupDialog Class](../../mfc/reference/cpagesetupdialog-class.md)<br/>
-[CPrintDialog Class](../../mfc/reference/cprintdialog-class.md)<br/>
-[CFindReplaceDialog Class](../../mfc/reference/cfindreplacedialog-class.md)<br/>
-[COleDialog Class](../../mfc/reference/coledialog-class.md)
+- [CDialog Class](../../mfc/reference/cdialog-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CFileDialog Class](../../mfc/reference/cfiledialog-class.md)
+- [CFontDialog Class](../../mfc/reference/cfontdialog-class.md)
+- [CColorDialog Class](../../mfc/reference/ccolordialog-class.md)
+- [CPageSetupDialog Class](../../mfc/reference/cpagesetupdialog-class.md)
+- [CPrintDialog Class](../../mfc/reference/cprintdialog-class.md)
+- [CFindReplaceDialog Class](../../mfc/reference/cfindreplacedialog-class.md)
+- [COleDialog Class](../../mfc/reference/coledialog-class.md)

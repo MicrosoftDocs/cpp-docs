@@ -19,14 +19,14 @@ EOF is returned by an I/O routine when the end-of-file (or in some cases, an err
 
 WEOF yields the return value, of type **wint_t**, used to signal the end of a wide stream, or to report an error condition.
 
-## See Also
+## See also
 
-[putc, putwc](../c-runtime-library/reference/putc-putwc.md)<br/>
-[ungetc, ungetwc](../c-runtime-library/reference/ungetc-ungetwc.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[fflush](../c-runtime-library/reference/fflush.md)<br/>
-[fclose, _fcloseall](../c-runtime-library/reference/fclose-fcloseall.md)<br/>
-[_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)<br/>
-[_putch, _putwch](../c-runtime-library/reference/putch-putwch.md)<br/>
-[isascii, __isascii, iswascii](../c-runtime-library/reference/isascii-isascii-iswascii.md)<br/>
-[Global Constants](../c-runtime-library/global-constants.md)
+- [putc, putwc](../c-runtime-library/reference/putc-putwc.md)
+- [ungetc, ungetwc](../c-runtime-library/reference/ungetc-ungetwc.md)
+- [scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)
+- [fflush](../c-runtime-library/reference/fflush.md)
+- [fclose, _fcloseall](../c-runtime-library/reference/fclose-fcloseall.md)
+- [_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
+- [_putch, _putwch](../c-runtime-library/reference/putch-putwch.md)
+- [isascii, __isascii, iswascii](../c-runtime-library/reference/isascii-isascii-iswascii.md)
+- [Global Constants](../c-runtime-library/global-constants.md)

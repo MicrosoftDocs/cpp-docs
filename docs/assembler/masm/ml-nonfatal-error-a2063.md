@@ -16,4 +16,4 @@ The **ALIGN** expression must be a power of 2 between 2 and 256, and must be les
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

@@ -15,4 +15,4 @@ The system date in the format mm/dd/yy (text macro).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

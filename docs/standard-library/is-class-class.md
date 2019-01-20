@@ -62,6 +62,6 @@ is_class<int> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_compound Class](../standard-library/is-compound-class.md)<br/>
-[is_union Class](../standard-library/is-union-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_compound Class](../standard-library/is-compound-class.md)
+- [is_union Class](../standard-library/is-union-class.md)

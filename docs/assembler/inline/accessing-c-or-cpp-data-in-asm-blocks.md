@@ -66,4 +66,4 @@ You can access data members in C++ without regard to access restrictions. Howeve
 
 ## See also
 
-[Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>
+- [Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)

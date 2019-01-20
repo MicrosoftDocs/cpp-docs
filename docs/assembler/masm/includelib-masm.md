@@ -19,4 +19,4 @@ The *libraryname* must be enclosed in angle brackets if it includes a backslash,
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+- [Directives Reference](../../assembler/masm/directives-reference.md)

@@ -75,5 +75,5 @@ void f(T1, T2)
 
 ## See also
 
-[Name Resolution](../cpp/templates-and-name-resolution.md)<br/>
-[typename](../cpp/typename.md)
+- [Name Resolution](../cpp/templates-and-name-resolution.md)
+- [typename](../cpp/typename.md)

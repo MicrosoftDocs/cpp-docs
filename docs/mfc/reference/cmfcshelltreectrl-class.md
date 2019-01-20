@@ -260,9 +260,9 @@ This method associates a `CMFCShellListCtrl` with a `CMFCShellTreeCtrl`. These o
 
 Use the method [CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist) to retrieve the `CMFCShellListCtrl` associated with a `CMFCShellTreeCtrl`.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md)<br/>
-[CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md)
+- [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md)

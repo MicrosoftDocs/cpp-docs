@@ -53,5 +53,5 @@ For a sample of how to use **_CrtMemDumpAllObjectsSince**, see [crt_dbg2](https:
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)

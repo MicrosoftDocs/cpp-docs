@@ -22,6 +22,6 @@ Create a status bar in your program by selecting the **Initial Status Bar** opti
 
 - [Display command information in the status bar](../mfc/how-to-display-command-information-in-the-status-bar.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

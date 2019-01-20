@@ -824,12 +824,12 @@ When you are attempting to log in to an ODBC database, such as Microsoft SQL Ser
 
 For related information, see the topic "LoginTimeout Property" in DAO Help.
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)<br/>
-[CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)<br/>
-[CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)<br/>
-[CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)<br/>
-[CDaoException Class](../../mfc/reference/cdaoexception-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CDaoDatabase Class](../../mfc/reference/cdaodatabase-class.md)
+- [CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)
+- [CDaoTableDef Class](../../mfc/reference/cdaotabledef-class.md)
+- [CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)
+- [CDaoException Class](../../mfc/reference/cdaoexception-class.md)

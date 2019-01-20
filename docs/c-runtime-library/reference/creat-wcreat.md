@@ -115,11 +115,11 @@ Created data file.
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[_chmod, _wchmod](chmod-wchmod.md)<br/>
-[_chsize](chsize.md)<br/>
-[_close](close.md)<br/>
-[_dup, _dup2](dup-dup2.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_sopen, _wsopen](sopen-wsopen.md)<br/>
-[_umask](umask.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [_chmod, _wchmod](chmod-wchmod.md)
+- [_chsize](chsize.md)
+- [_close](close.md)
+- [_dup, _dup2](dup-dup2.md)
+- [_open, _wopen](open-wopen.md)
+- [_sopen, _wsopen](sopen-wsopen.md)
+- [_umask](umask.md)

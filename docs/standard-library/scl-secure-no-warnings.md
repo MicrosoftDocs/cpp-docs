@@ -41,4 +41,4 @@ For more information, see [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wal
 
 ## See also
 
-[Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md)<br/>
+- [Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md)

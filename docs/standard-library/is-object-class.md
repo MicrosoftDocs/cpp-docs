@@ -76,5 +76,5 @@ is_object<void> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_function Class](../standard-library/is-function-class.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [is_function Class](../standard-library/is-function-class.md)

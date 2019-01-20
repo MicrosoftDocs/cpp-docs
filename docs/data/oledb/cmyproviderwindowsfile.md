@@ -66,6 +66,6 @@ The directory to search is shown by `m_strCommandText`; this contains the text r
 
 The method creates one entry for each file (corresponding to a row) and places it in the `m_rgRowData` data member. The `CRowsetImpl` class defines the `m_rgRowData` data member. The data in this array is shown the entire table and is used throughout the templates.
 
-## See Also
+## See also
 
-[Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)<br/>
+- [Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)

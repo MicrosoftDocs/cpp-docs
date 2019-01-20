@@ -1640,4 +1640,4 @@ valarray: ( 0 0 0 1 0 1 1 1 0 1 ).
 
 ## See also
 
-[\<valarray>](../standard-library/valarray.md)<br/>
+- [\<valarray>](../standard-library/valarray.md)

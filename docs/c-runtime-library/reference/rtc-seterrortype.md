@@ -55,5 +55,5 @@ All versions of the [C run-time libraries](../../c-runtime-library/crt-library-f
 
 ## See also
 
-[_RTC_GetErrDesc](rtc-geterrdesc.md)<br/>
-[Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)<br/>
+- [_RTC_GetErrDesc](rtc-geterrdesc.md)
+- [Run-Time Error Checking](../../c-runtime-library/run-time-error-checking.md)

@@ -18,8 +18,7 @@ After creating your header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-c
 
 For more information, see [Adding an Item to a Header Control](/windows/desktop/Controls/header-controls) in the Windows SDK.
 
-## See Also
+## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
+- [Controls](../mfc/controls-mfc.md)

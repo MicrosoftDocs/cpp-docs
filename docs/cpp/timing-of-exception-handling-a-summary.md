@@ -35,5 +35,5 @@ When the cause for interruption is an exception, the system must first execute t
 
 ## See also
 
-[Writing a Termination Handler](../cpp/writing-a-termination-handler.md)<br/>
-[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+- [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)
+- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

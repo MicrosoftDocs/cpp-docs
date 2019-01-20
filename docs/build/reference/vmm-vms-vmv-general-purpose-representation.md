@@ -43,8 +43,8 @@ When you specify one of these inheritance-model options, that model is used for 
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

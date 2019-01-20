@@ -27,4 +27,4 @@ The following sample generates C1189. In the sample, the developer issues a cust
 
 ## See also
 
-[#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)
+- [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)

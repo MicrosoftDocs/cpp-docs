@@ -37,8 +37,8 @@ IntelliSense fails to operate in the IDE for Visual C++ makefile projects when c
 
 The next time you open your makefile project in the Visual Studio development environment, run the **Clean Solution** command and then the **Build Solution** command on your makefile project. IntelliSense should work properly in the IDE.
 
-## See Also
+## See also
 
-[Using IntelliSense](/visualstudio/ide/using-intellisense)<br>
-[NMAKE Reference](../build/nmake-reference.md)<br>
-[How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md)
+- [Using IntelliSense](/visualstudio/ide/using-intellisense)
+- [NMAKE Reference](../build/nmake-reference.md)
+- [How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md)

@@ -41,8 +41,7 @@ The MFC Application Wizard simplifies the steps involved in getting your automat
 
 - [Learn more about class COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)
 
-## See Also
+## See also
 
-[Automation](../mfc/automation.md)<br/>
-[MFC Application Wizard](../mfc/reference/mfc-application-wizard.md)
-
+- [Automation](../mfc/automation.md)
+- [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md)

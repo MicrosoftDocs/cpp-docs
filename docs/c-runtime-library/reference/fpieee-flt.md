@@ -129,6 +129,6 @@ int main( void )
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)<br/>
-[_controlfp_s](controlfp-s.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)
+- [_controlfp_s](controlfp-s.md)

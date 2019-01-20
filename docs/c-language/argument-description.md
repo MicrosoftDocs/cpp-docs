@@ -22,6 +22,6 @@ The `envp` parameter is a pointer to an array of null-terminated strings that re
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[main Function and Program Execution](../c-language/main-function-and-program-execution.md)
+- [main Function and Program Execution](../c-language/main-function-and-program-execution.md)

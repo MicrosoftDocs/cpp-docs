@@ -14,7 +14,6 @@ The following classes provide support for tear-off interfaces:
 
 - [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) Implements `IUnknown` for a "cached" tear-off interface.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)
-
+- [Class Overview](../atl/atl-class-overview.md)

@@ -106,6 +106,6 @@ All three functions, `main`, `next`, and `other`, perform the same task: they in
 
 If the variable `i` had not been initialized, it would have been set to 0 automatically. In this case, the values 1, 2, and 3 would have been printed. See [Initialization](../c-language/initialization.md) for information about variable initialization.
 
-## See Also
+## See also
 
-[C Storage Classes](../c-language/c-storage-classes.md)
+- [C Storage Classes](../c-language/c-storage-classes.md)

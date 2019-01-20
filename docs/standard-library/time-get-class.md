@@ -1019,6 +1019,6 @@ The constructor initializes its base object with **locale::**[facet](../standard
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[time_base Class](../standard-library/time-base-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [\<locale>](../standard-library/locale.md)
+- [time_base Class](../standard-library/time-base-class.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

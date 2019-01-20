@@ -33,5 +33,5 @@ An instance of this type predicate holds true if the type *Ty* is a reference to
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)<br/>
+- [<type_traits>](../standard-library/type-traits.md)
+- [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)

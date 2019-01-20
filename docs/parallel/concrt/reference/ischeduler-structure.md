@@ -205,12 +205,12 @@ You should implement this method if you want the Resource Manager to use feedbac
 
 In the absence of statistical information, the Resource Manager will use hardware thread subscription levels to make resource allocation and migration decisions. For more information on subscription levels, see [IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)<br/>
-[PolicyElementKey](concurrency-namespace-enums.md)<br/>
-[SchedulerPolicy Class](schedulerpolicy-class.md)<br/>
-[IExecutionContext Structure](iexecutioncontext-structure.md)<br/>
-[IThreadProxy Structure](ithreadproxy-structure.md)<br/>
-[IVirtualProcessorRoot Structure](ivirtualprocessorroot-structure.md)<br/>
-[IResourceManager Structure](iresourcemanager-structure.md)
+- [concurrency Namespace](concurrency-namespace.md)
+- [PolicyElementKey](concurrency-namespace-enums.md)
+- [SchedulerPolicy Class](schedulerpolicy-class.md)
+- [IExecutionContext Structure](iexecutioncontext-structure.md)
+- [IThreadProxy Structure](ithreadproxy-structure.md)
+- [IVirtualProcessorRoot Structure](ivirtualprocessorroot-structure.md)
+- [IResourceManager Structure](iresourcemanager-structure.md)

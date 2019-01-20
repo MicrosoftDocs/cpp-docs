@@ -84,6 +84,6 @@ The "source character set" is the set of legal characters that can appear in sou
 
 An identifier has "scope," which is the region of the program in which it is known, and "linkage," which determines whether the same name in another scope refers to the same identifier. These topics are explained in [Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md).
 
-## See Also
+## See also
 
-[Elements of C](../c-language/elements-of-c.md)
+- [Elements of C](../c-language/elements-of-c.md)

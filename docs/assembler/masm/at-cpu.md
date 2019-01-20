@@ -15,4 +15,4 @@ A bit mask specifying the processor mode (numeric equate).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

@@ -163,9 +163,9 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Code map and dependency graphs|||read-only|X|
 |Code map debugging||||X|
 
-## See Also
+## See also
 
-[Install Visual Studio](/visualstudio/install/install-visual-studio)<br/>
-[What's New in Visual Studio](/visualstudio/ide/whats-new-in-visual-studio)<br/>
-[Visual C++ Project Types](../ide/visual-cpp-project-types.md)<br/>
-[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686)<br/>
+- [Install Visual Studio](/visualstudio/install/install-visual-studio)
+- [What's New in Visual Studio](/visualstudio/ide/whats-new-in-visual-studio)
+- [Visual C++ Project Types](../ide/visual-cpp-project-types.md)
+- [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686)

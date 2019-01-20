@@ -300,4 +300,3 @@ Destructs a preview control object.
 ```
 virtual ~CMFCPreviewCtrlImpl();
 ```
-

@@ -153,10 +153,10 @@ See the example for [time](time-time32-time64.md).
 
 ## See also
 
-[Locale](../../c-runtime-library/locale.md) <br/>
-[Time Management](../../c-runtime-library/time-management.md) <br/>
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md) <br/>
-[localeconv](localeconv.md) <br/>
-[setlocale, _wsetlocale](setlocale-wsetlocale.md) <br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md) <br/>
-[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
+- [Locale](../../c-runtime-library/locale.md)
+- [Time Management](../../c-runtime-library/time-management.md)
+- [String Manipulation](../../c-runtime-library/string-manipulation-crt.md)
+- [localeconv](localeconv.md)
+- [setlocale, _wsetlocale](setlocale-wsetlocale.md)
+- [strcoll Functions](../../c-runtime-library/strcoll-functions.md)
+- [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)

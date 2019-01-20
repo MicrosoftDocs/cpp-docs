@@ -37,6 +37,6 @@ For general information on build events, see [Understanding Custom Build Steps a
 
 ## See also
 
-[Understanding Custom Build Steps and Build Events](../ide/understanding-custom-build-steps-and-build-events.md)<br>
-[Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)<br>
-[Troubleshooting Build Customizations](../ide/troubleshooting-build-customizations.md)
+- [Understanding Custom Build Steps and Build Events](../ide/understanding-custom-build-steps-and-build-events.md)
+- [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)
+- [Troubleshooting Build Customizations](../ide/troubleshooting-build-customizations.md)

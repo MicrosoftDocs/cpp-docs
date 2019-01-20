@@ -16,8 +16,7 @@ Once the `CStatusBarCtrl` object has been successfully created, use [CStatusBarC
 
 Once the tool tip has been set, it is displayed only if the part has an icon and no text, or if all of the text cannot be displayed inside the part. Tool tips are not supported in simple mode.
 
-## See Also
+## See also
 
-[Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)
+- [Controls](../mfc/controls-mfc.md)

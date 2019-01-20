@@ -47,4 +47,4 @@ The member function `code` returns the stored [error_code](../standard-library/e
 
 ## See also
 
-[<system_error>](../standard-library/system-error.md)<br/>
+- [<system_error>](../standard-library/system-error.md)

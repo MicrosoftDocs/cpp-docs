@@ -15,4 +15,4 @@ A macro function that returns a substring starting at *position*.
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+- [Symbols Reference](../../assembler/masm/symbols-reference.md)

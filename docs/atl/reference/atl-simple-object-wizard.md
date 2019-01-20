@@ -79,7 +79,6 @@ Provides information about the COM functionality for the object.
 
    Sets the name that containers can use instead of the CLSID of the object.
 
-## See Also
+## See also
 
-[ATL Simple Object](../../atl/reference/adding-an-atl-simple-object.md)
-
+- [ATL Simple Object](../../atl/reference/adding-an-atl-simple-object.md)

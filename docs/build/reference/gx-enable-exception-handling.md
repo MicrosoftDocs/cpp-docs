@@ -35,8 +35,8 @@ For more information, see [C++ Exception Handling](../../cpp/cpp-exception-handl
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)

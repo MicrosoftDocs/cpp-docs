@@ -141,6 +141,6 @@ Position for end of file seek = 57
 
 ## See also
 
-[Low-Level I/O](../../c-runtime-library/low-level-i-o.md)<br/>
-[fseek, _fseeki64](fseek-fseeki64.md)<br/>
-[_tell, _telli64](tell-telli64.md)<br/>
+- [Low-Level I/O](../../c-runtime-library/low-level-i-o.md)
+- [fseek, _fseeki64](fseek-fseeki64.md)
+- [_tell, _telli64](tell-telli64.md)

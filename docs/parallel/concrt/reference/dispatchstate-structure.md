@@ -73,6 +73,6 @@ Bits reserved for future information passing.
 unsigned int m_reserved : 31;
 ```
 
-## See Also
+## See also
 
-[concurrency Namespace](concurrency-namespace.md)
+- [concurrency Namespace](concurrency-namespace.md)

@@ -10,7 +10,6 @@ The message loop in the `Run` member function of class `CWinApp` retrieves queue
 
 The important categories of messages are described in [Message Categories](../mfc/message-categories.md).
 
-## See Also
+## See also
 
-[Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
-
+- [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)

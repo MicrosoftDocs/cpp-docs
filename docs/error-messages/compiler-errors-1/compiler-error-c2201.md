@@ -20,6 +20,6 @@ __declspec(dllexport) static void func() {}   // C2201 func() is static
 __declspec(dllexport) void func2() {}   // OK
 ```
 
-## See Also
+## See also
 
-[Types of Linkage](../../cpp/types-of-linkage.md)
+- [Types of Linkage](../../cpp/types-of-linkage.md)

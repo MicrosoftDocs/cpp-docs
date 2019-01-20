@@ -14,4 +14,4 @@ The alignment specified in a structure definition was invalid.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

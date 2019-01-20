@@ -43,6 +43,6 @@ public ref class MyClass {
 };
 ```
 
-## See Also
+## See also
 
-[XML Documentation](../ide/xml-documentation-visual-cpp.md)
+- [XML Documentation](../ide/xml-documentation-visual-cpp.md)

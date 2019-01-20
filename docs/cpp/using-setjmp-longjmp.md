@@ -24,4 +24,4 @@ In portable code, when a `longjmp` call is executed, correct destruction of fram
 
 ## See also
 
-[Mixing C (Structured) and C++ Exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)
+- [Mixing C (Structured) and C++ Exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)

@@ -780,10 +780,10 @@ Call this method to specify the ID for the tear-off bar that is created when the
 
 Call [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) to enable the tear-off menu feature in your application.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
-[CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)<br/>
-[CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)
+- [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)
+- [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md)

@@ -93,9 +93,9 @@ See [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md) and [
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[event_source](../windows/event-source.md)<br/>
-[event_receiver](../windows/event-receiver.md)<br/>
-[__event](../cpp/event.md)<br/>
-[__hook](../cpp/hook.md)<br/>
-[__raise](../cpp/raise.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [event_source](../windows/event-source.md)
+- [event_receiver](../windows/event-receiver.md)
+- [__event](../cpp/event.md)
+- [__hook](../cpp/hook.md)
+- [__raise](../cpp/raise.md)

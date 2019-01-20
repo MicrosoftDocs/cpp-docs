@@ -103,4 +103,4 @@ The compiler issues a warning in this case: `warning C4172: returning address of
 
 ## See also
 
-[References](../cpp/references-cpp.md)
+- [References](../cpp/references-cpp.md)

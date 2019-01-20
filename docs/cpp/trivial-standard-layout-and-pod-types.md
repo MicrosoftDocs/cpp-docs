@@ -189,4 +189,4 @@ A literal type is one whose layout can be determined at compile time. The follow
 
 ## See also
 
-[Basic Concepts](../cpp/basic-concepts-cpp.md)
+- [Basic Concepts](../cpp/basic-concepts-cpp.md)

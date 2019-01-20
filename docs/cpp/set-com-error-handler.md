@@ -87,4 +87,4 @@ Exception raised: Unable to establish the connection!
 
 ## See also
 
-[Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)
+- [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

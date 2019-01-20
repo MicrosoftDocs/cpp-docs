@@ -488,9 +488,9 @@ The Concurrency Visualizer includes support for analyzing performance of C++ AMP
 
 Modulus and division of unsigned integers have significantly better performance than modulus and division of signed integers. We recommend that you use unsigned integers when possible.
 
-## See Also
+## See also
 
-[C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
-[Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)<br/>
-[Reference (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)<br/>
-[Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/?linkid=238472)
+- [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)
+- [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)
+- [Reference (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)
+- [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/?linkid=238472)

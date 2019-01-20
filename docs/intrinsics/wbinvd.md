@@ -31,6 +31,6 @@ This function is only available in kernel mode with a privilege level (CPL) of 0
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

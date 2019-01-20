@@ -8,6 +8,6 @@ ms.assetid: f766acf4-9df8-4b85-8cf6-0be3ffc4c124
 
 Delay-loaded imports can be dumped using [dumpbin /imports](../../build/reference/imports-dumpbin.md) and show up with slightly different information than standard imports. They are segregated into their own section of the /imports dumping and are explicitly labeled as delay-loaded imports. If there is unload information present in the image, that is noted. If there is bind information present, the time/date stamp of the target DLL is noted along with the bound addresses of the imports.
 
-## See Also
+## See also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+- [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)

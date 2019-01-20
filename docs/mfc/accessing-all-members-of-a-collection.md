@@ -55,7 +55,6 @@ The following procedures show how to iterate over the three main types of collec
 
 For more information, see [Deleting All Objects in a CObject Collection](../mfc/deleting-all-objects-in-a-cobject-collection.md).
 
-## See Also
+## See also
 
-[Collections](../mfc/collections.md)
-
+- [Collections](../mfc/collections.md)

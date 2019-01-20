@@ -622,13 +622,13 @@ after Lisa's birthday: A CMapStringToOb with 2 elements
 [Bart] = a CAge at $4654 13
 ```
 
-## See Also
+## See also
 
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)<br/>
-[CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)<br/>
-[CMapStringToPtr Class](../../mfc/reference/cmapstringtoptr-class.md)<br/>
-[CMapStringToString Class](../../mfc/reference/cmapstringtostring-class.md)<br/>
-[CMapWordToOb Class](../../mfc/reference/cmapwordtoob-class.md)<br/>
-[CMapWordToPtr Class](../../mfc/reference/cmapwordtoptr-class.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)
+- [CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)
+- [CMapStringToPtr Class](../../mfc/reference/cmapstringtoptr-class.md)
+- [CMapStringToString Class](../../mfc/reference/cmapstringtostring-class.md)
+- [CMapWordToOb Class](../../mfc/reference/cmapwordtoob-class.md)
+- [CMapWordToPtr Class](../../mfc/reference/cmapwordtoptr-class.md)

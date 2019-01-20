@@ -81,9 +81,9 @@ This template function can be used to implement the `_NewEnum` property of a col
 
 This code creates a **typedef** for `CComEnum` that exposes a vector of VARIANTs through the `IEnumVariant` interface. The `CVariantArrayCollection` class simply specializes `CreateEnumerator` to work with enumerator objects of this type and passes the necessary arguments.
 
-## See Also
+## See also
 
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
-[CComEnumImpl Class](../../atl/reference/ccomenumimpl-class.md)<br/>
-[CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)
+- [CComEnumImpl Class](../../atl/reference/ccomenumimpl-class.md)
+- [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)

@@ -41,9 +41,9 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
-[noexcept (C++)](../../cpp/noexcept-cpp.md)<br/>
-[Exception Specifications (throw) (C++)](../../cpp/exception-specifications-throw-cpp.md)<br/>
-[terminate (exception)](../../standard-library/exception-functions.md#terminate)<br/>
+- [Compiler Options](../../build/reference/compiler-options.md)
+- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [/Zc (Conformance)](../../build/reference/zc-conformance.md)
+- [noexcept (C++)](../../cpp/noexcept-cpp.md)
+- [Exception Specifications (throw) (C++)](../../cpp/exception-specifications-throw-cpp.md)
+- [terminate (exception)](../../standard-library/exception-functions.md#terminate)

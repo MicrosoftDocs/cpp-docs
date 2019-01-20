@@ -153,8 +153,8 @@ Returns true if the memory was successfully allocated, false on failure.
 
 [!code-cpp[NVC_ATL_Utilities#79](../../atl/codesnippet/cpp/cheapptr-class_4.cpp)]
 
-## See Also
+## See also
 
-[CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)<br/>
-[CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)
+- [CCRTAllocator Class](../../atl/reference/ccrtallocator-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)

@@ -214,11 +214,11 @@ STDMETHOD_(ULONG, Release)();
 
 In debug builds, `Release` returns a value that may be useful for diagnostics or testing. In non-debug builds, `Release` always returns 0.
 
-## See Also
+## See also
 
-[CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
-[CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>
-[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)<br/>
-[DECLARE_ONLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_only_aggregatable)<br/>
-[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)<br/>
-[Class Overview](../../atl/atl-class-overview.md)
+- [CComObject Class](../../atl/reference/ccomobject-class.md)
+- [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)
+- [DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)
+- [DECLARE_ONLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_only_aggregatable)
+- [DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)
+- [Class Overview](../../atl/atl-class-overview.md)

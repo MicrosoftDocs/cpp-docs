@@ -49,6 +49,6 @@ MyException
 in finally
 ```
 
-## See Also
+## See also
 
-[Exception Handling](../windows/exception-handling-cpp-component-extensions.md)
+- [Exception Handling](../windows/exception-handling-cpp-component-extensions.md)

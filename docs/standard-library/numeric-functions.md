@@ -580,4 +580,4 @@ int main( )
 
 ## See also
 
-[\<numeric>](../standard-library/numeric.md)<br/>
+- [\<numeric>](../standard-library/numeric.md)

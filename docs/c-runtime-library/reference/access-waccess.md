@@ -111,8 +111,8 @@ File crt_ACCESS.C does not have write permission.
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_chmod, _wchmod](chmod-wchmod.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_stat, _wstat Functions](stat-functions.md)
+- [File Handling](../../c-runtime-library/file-handling.md)
+- [_chmod, _wchmod](chmod-wchmod.md)
+- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)
+- [_open, _wopen](open-wopen.md)
+- [_stat, _wstat Functions](stat-functions.md)

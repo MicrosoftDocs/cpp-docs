@@ -29,4 +29,4 @@ This section explains concepts that are critical to understanding C++. C program
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)

@@ -16,8 +16,7 @@ The "protected" character attribute does not change the appearance of text. If t
 
 Foreground color is a character attribute, but background color is a property of the rich edit control. To set the background color, use the [SetBackgroundColor](../mfc/reference/cricheditctrl-class.md#setbackgroundcolor) member function.
 
-## See Also
+## See also
 
-[Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
-
+- [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)
+- [Controls](../mfc/controls-mfc.md)

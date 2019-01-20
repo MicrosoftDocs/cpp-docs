@@ -17,9 +17,9 @@ ms.assetid: 47641c46-1bad-44fb-8f85-79ae36919f13
 
 Win32
 
-## See Also
+## See also
 
-[Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md)<br/>
-[Symbol Name Restrictions](../windows/symbol-name-restrictions.md)<br/>
-[Symbol Value Restrictions](../windows/symbol-value-restrictions.md)<br/>
-[Predefined Symbol IDs](../windows/predefined-symbol-ids.md)
+- [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md)
+- [Symbol Name Restrictions](../windows/symbol-name-restrictions.md)
+- [Symbol Value Restrictions](../windows/symbol-value-restrictions.md)
+- [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)

@@ -816,14 +816,14 @@ Typically you should not perform any drawing directly from `OnUpdate`. Instead, 
 
 If *lHint* is 0 and *pHint* is NULL, the document has sent a generic update notification. If a view receives a generic update notification, or if it cannot decode the hints, it should invalidate its entire client area.
 
-## See Also
+## See also
 
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
-[CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
-[CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)<br/>
-[CDC Class](../../mfc/reference/cdc-class.md)<br/>
-[CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CDocument Class](../../mfc/reference/cdocument-class.md)
+- [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CWnd Class](../../mfc/reference/cwnd-class.md)
+- [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)
+- [CSplitterWnd Class](../../mfc/reference/csplitterwnd-class.md)
+- [CDC Class](../../mfc/reference/cdc-class.md)
+- [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)
+- [CDocument Class](../../mfc/reference/cdocument-class.md)

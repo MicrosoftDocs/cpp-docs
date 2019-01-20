@@ -15,7 +15,7 @@ ODBC Administrator is automatically installed with the Microsoft Foundation Clas
 
 For information about how to write ODBC Setup and Administration programs for MFC database applications,[Technical Note 48](../../mfc/tn048-writing-odbc-setup-and-administration-programs.md).
 
-## See Also
+## See also
 
-[ODBC Basics](../../data/odbc/odbc-basics.md)<br/>
-[ODBC: Calling ODBC API Functions Directly](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
+- [ODBC Basics](../../data/odbc/odbc-basics.md)
+- [ODBC: Calling ODBC API Functions Directly](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)

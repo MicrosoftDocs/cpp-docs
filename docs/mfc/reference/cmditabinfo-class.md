@@ -217,9 +217,9 @@ void Serialize(CArchive& ar);
 *ar*<br/>
 [in] A [CArchive Class](../../mfc/reference/carchive-class.md) object to serialize.
 
-## See Also
+## See also
 
-[CMDIFrameWndEx Class](../../mfc/reference/cmdiframewndex-class.md)<br/>
-[MDI Tabbed Groups](../../mfc/mdi-tabbed-groups.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)
+- [CMDIFrameWndEx Class](../../mfc/reference/cmdiframewndex-class.md)
+- [MDI Tabbed Groups](../../mfc/mdi-tabbed-groups.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)

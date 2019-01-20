@@ -48,4 +48,4 @@ class launch{
 
 ## See also
 
-[\<future>](../standard-library/future.md)<br/>
+- [\<future>](../standard-library/future.md)

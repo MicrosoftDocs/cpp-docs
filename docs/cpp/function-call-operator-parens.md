@@ -165,6 +165,6 @@ Functions can be called recursively. For more information about function declara
 
 ## See also
 
-[Postfix Expressions](../cpp/postfix-expressions.md)<br/>
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Function Call](../c-language/function-call-c.md)
+- [Postfix Expressions](../cpp/postfix-expressions.md)
+- [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Function Call](../c-language/function-call-c.md)

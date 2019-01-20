@@ -118,4 +118,4 @@ Global-scoped i has the value: 7
 
 ## See also
 
-[Basic Concepts](../cpp/basic-concepts-cpp.md)
+- [Basic Concepts](../cpp/basic-concepts-cpp.md)

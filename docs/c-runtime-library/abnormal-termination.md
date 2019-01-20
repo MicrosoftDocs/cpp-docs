@@ -33,6 +33,6 @@ This is an internal function used to manage unwinding exceptions, and is not int
 |-------------|---------------------|
 |_abnormal_termination|excpt.h|
 
-## See Also
+## See also
 
-[try-finally Statement](../cpp/try-finally-statement.md)
+- [try-finally Statement](../cpp/try-finally-statement.md)

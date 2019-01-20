@@ -82,5 +82,5 @@ int main() {
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[alloc_text](../preprocessor/alloc-text.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [alloc_text](../preprocessor/alloc-text.md)

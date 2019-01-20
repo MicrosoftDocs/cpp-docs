@@ -59,5 +59,5 @@ Type: class std::underflow_error
 
 ## See also
 
-[runtime_error Class](../standard-library/runtime-error-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [runtime_error Class](../standard-library/runtime-error-class.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

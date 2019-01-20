@@ -80,5 +80,5 @@ See [#pragma function](../preprocessor/function-c-cpp.md) for information and an
 
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

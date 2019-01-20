@@ -31,11 +31,11 @@ The following articles cover the two main tasks required for serialization:
 
 The article [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md) describes when serialization is an appropriate input/output technique in database applications.
 
-## See Also
+## See also
 
-[Concepts](../mfc/mfc-concepts.md)<br/>
-[General MFC Topics](../mfc/general-mfc-topics.md)<br/>
-[CArchive Class](../mfc/reference/carchive-class.md)<br/>
-[CObject Class](../mfc/reference/cobject-class.md)<br/>
-[CDocument Class](../mfc/reference/cdocument-class.md)<br/>
-[CFile Class](../mfc/reference/cfile-class.md)
+- [Concepts](../mfc/mfc-concepts.md)
+- [General MFC Topics](../mfc/general-mfc-topics.md)
+- [CArchive Class](../mfc/reference/carchive-class.md)
+- [CObject Class](../mfc/reference/cobject-class.md)
+- [CDocument Class](../mfc/reference/cdocument-class.md)
+- [CFile Class](../mfc/reference/cfile-class.md)

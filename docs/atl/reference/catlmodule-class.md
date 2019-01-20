@@ -330,9 +330,9 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Similar to [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced) except `CAtlModule::UpdateRegistryFromResourceS` creates a static link to the ATL Registry Component (Registrar).
 
-## See Also
+## See also
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[Module Classes](../../atl/atl-module-classes.md)<br/>
-[Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)
+- [_ATL_MODULE](atl-typedefs.md#_atl_module)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [Module Classes](../../atl/atl-module-classes.md)
+- [Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)

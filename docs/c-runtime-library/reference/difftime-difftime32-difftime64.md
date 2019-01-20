@@ -110,6 +110,6 @@ Program takes      3 seconds.
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[Time Management](../../c-runtime-library/time-management.md)<br/>
-[time, _time32, _time64](time-time32-time64.md)<br/>
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [Time Management](../../c-runtime-library/time-management.md)
+- [time, _time32, _time64](time-time32-time64.md)

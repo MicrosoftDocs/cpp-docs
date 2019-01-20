@@ -21,7 +21,6 @@ Use this control to provide the functionality of a combo box without having to m
 
 - [Processing Notification Messages in Extended Combo Box Controls](../mfc/processing-notification-messages-in-extended-combo-box-controls.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

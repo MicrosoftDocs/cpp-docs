@@ -304,8 +304,8 @@ FALSE to first remove all columns from the list of sort columns, and then add th
 
 Use this method to set the sort order of a column. If necessary, this method adds the column to the list of sort columns. The header control uses the sort order to draw a sort arrow that points up or down.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCListCtrl Class](../../mfc/reference/cmfclistctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CMFCListCtrl Class](../../mfc/reference/cmfclistctrl-class.md)

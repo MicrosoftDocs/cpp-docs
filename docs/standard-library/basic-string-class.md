@@ -4714,5 +4714,5 @@ The character ch2 is: H.
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [\<string>](../standard-library/string.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

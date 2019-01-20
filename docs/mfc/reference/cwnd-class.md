@@ -11618,9 +11618,9 @@ virtual void ResizeDynamicLayout();
 
 ### Remarks
 
-## See Also
+## See also
 
-[CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
-[CView Class](../../mfc/reference/cview-class.md)
+- [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)
+- [CView Class](../../mfc/reference/cview-class.md)

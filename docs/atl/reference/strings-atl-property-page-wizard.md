@@ -21,8 +21,7 @@ Provides the text associated with the property page.
 
    Sets the name of the help file that describes how to use the property page. This name should not include a path. When the user presses **Help**, the frame opens the help file in the directory named in the value of the HelpDir key in the property page registry entries under its CLSID.
 
-## See Also
+## See also
 
-[ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md)<br/>
-[Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)
-
+- [ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md)
+- [Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)

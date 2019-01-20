@@ -14,8 +14,7 @@ The following classes provide support for developing Microsoft Management Consol
 
 - [CSnapInPropertyPageImpl](../atl/reference/csnapinpropertypageimpl-class.md) Implements a snap-in property page object.
 
-## See Also
+## See also
 
-[Class Overview](../atl/atl-class-overview.md)<br/>
-[Snap-In Object Macros](../atl/reference/snap-in-object-macros.md)
-
+- [Class Overview](../atl/atl-class-overview.md)
+- [Snap-In Object Macros](../atl/reference/snap-in-object-macros.md)

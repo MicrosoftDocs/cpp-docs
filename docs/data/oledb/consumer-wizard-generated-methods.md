@@ -142,6 +142,6 @@ void CloseDataSource();
 
 The wizard defines the methods `OpenDataSource` and `CloseDataSource`; `OpenDataSource` calls [CDataSource::OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md).
 
-## See Also
+## See also
 
-[Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+- [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

@@ -130,8 +130,8 @@ Returns S_OK.
 
 To first obtain ownership, the thread must call the [Lock](#lock) method. Each call to `Lock` requires a corresponding call to `Unlock` to release ownership of the critical section.
 
-## See Also
+## See also
 
-[CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
-[Class Overview](../../atl/atl-class-overview.md)<br/>
-[CComCritSecLock Class](../../atl/reference/ccomcritseclock-class.md)
+- [CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)
+- [Class Overview](../../atl/atl-class-overview.md)
+- [CComCritSecLock Class](../../atl/reference/ccomcritseclock-class.md)

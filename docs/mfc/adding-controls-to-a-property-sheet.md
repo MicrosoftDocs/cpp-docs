@@ -10,8 +10,8 @@ By default, a property sheet allocates window area for the property pages, the t
 
 You can add controls to the property sheet dialog in the `OnCreate` handler. Accommodating additional controls usually requires expanding the size of the property sheet dialog. After calling the base class **CPropertySheet::OnCreate**, call [GetWindowRect](../mfc/reference/cwnd-class.md#getwindowrect) to get the width and height of the currently allocated property sheet window, expand the rectangle's dimensions, and call [MoveWindow](../mfc/reference/cwnd-class.md#movewindow) to change the size of the property sheet window.
 
-## See Also
+## See also
 
-[Property Sheets](../mfc/property-sheets-mfc.md)<br/>
-[CPropertyPage Class](../mfc/reference/cpropertypage-class.md)<br/>
-[CPropertySheet Class](../mfc/reference/cpropertysheet-class.md)
+- [Property Sheets](../mfc/property-sheets-mfc.md)
+- [CPropertyPage Class](../mfc/reference/cpropertypage-class.md)
+- [CPropertySheet Class](../mfc/reference/cpropertysheet-class.md)

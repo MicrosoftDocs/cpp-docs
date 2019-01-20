@@ -39,7 +39,6 @@ A tree control, represented by the class [CTreeCtrl](../mfc/reference/ctreectrl-
 
 - [Tree Control Notification Messages](../mfc/tree-control-notification-messages.md)
 
-## See Also
+## See also
 
-[Controls](../mfc/controls-mfc.md)
-
+- [Controls](../mfc/controls-mfc.md)

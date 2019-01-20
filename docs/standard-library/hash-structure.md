@@ -22,4 +22,4 @@ struct hash<type_index>
 
 ## See also
 
-[\<typeindex>](../standard-library/typeindex.md)<br/>
+- [\<typeindex>](../standard-library/typeindex.md)

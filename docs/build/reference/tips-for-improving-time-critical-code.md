@@ -124,6 +124,6 @@ Smaller working sets mean better locality of reference, fewer page faults, and m
 
 - To view the size of the working set, use Spy++.
 
-## See Also
+## See also
 
-[Optimizing Your Code](../../build/reference/optimizing-your-code.md)
+- [Optimizing Your Code](../../build/reference/optimizing-your-code.md)

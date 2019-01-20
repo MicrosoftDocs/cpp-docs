@@ -70,8 +70,8 @@ The absolute value of -9223372036854775806 is 9223372036854775806
 
 ## See also
 
-[Data Conversion](../../c-runtime-library/data-conversion.md)<br/>
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>
-[_cabs](cabs.md)<br/>
-[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
+- [Data Conversion](../../c-runtime-library/data-conversion.md)
+- [Floating-Point Support](../../c-runtime-library/floating-point-support.md)
+- [abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)
+- [_cabs](cabs.md)
+- [fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)

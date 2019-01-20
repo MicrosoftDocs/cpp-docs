@@ -57,6 +57,6 @@ To enable compilation for C++/CLI, you must use the [/clr](../build/reference/cl
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
-[Compiler Options](../build/reference/compiler-options.md)
+- [C++ Language Reference](../cpp/cpp-language-reference.md)
+- [Building C/C++ Programs](../build/building-c-cpp-programs.md)
+- [Compiler Options](../build/reference/compiler-options.md)

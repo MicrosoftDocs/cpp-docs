@@ -12,7 +12,7 @@ The MFC OLE sample [OCLIENT](../visual-cpp-samples.md) demonstrates a common int
 
 For more information on implementing trackers in your OLE application, see [Trackers: Implementing Trackers in Your OLE Application](../mfc/trackers-implementing-trackers-in-your-ole-application.md)
 
-## See Also
+## See also
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[COleClientItem Class](../mfc/reference/coleclientitem-class.md)
+- [OLE](../mfc/ole-in-mfc.md)
+- [COleClientItem Class](../mfc/reference/coleclientitem-class.md)

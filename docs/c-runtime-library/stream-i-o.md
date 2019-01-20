@@ -85,7 +85,7 @@ If your program does not explicitly close a stream, the stream is automatically 
 
 Input can follow output directly only with an intervening call to **fflush** or to a file-positioning function (**fseek**, **fsetpos**, or **rewind**). Output can follow input without an intervening call to a file-positioning function if the input operation encounters the end of the file.
 
-## See Also
+## See also
 
-[Input and Output](../c-runtime-library/input-and-output.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+- [Input and Output](../c-runtime-library/input-and-output.md)
+- [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

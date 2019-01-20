@@ -29,6 +29,6 @@ The **Web References** property page contains the following properties:
 
 For information on how to access the **Web Reference** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).
 
-## See Also
+## See also
 
-[Property Pages](../ide/property-pages-visual-cpp.md)
+- [Property Pages](../ide/property-pages-visual-cpp.md)

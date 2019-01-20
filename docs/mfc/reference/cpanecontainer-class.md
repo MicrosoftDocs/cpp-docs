@@ -840,9 +840,9 @@ virtual int StretchPaneContainer(
 
 ### Remarks
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Class](../../mfc/reference/cobject-class.md)<br/>
-[CPaneContainerManager Class](../../mfc/reference/cpanecontainermanager-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CObject Class](../../mfc/reference/cobject-class.md)
+- [CPaneContainerManager Class](../../mfc/reference/cpanecontainermanager-class.md)

@@ -71,6 +71,6 @@ Defines template classes and functions that C++ programs can use to encapsulate 
 
 ## See also
 
-[Code Pages](../c-runtime-library/code-pages.md)<br/>
-[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+- [Code Pages](../c-runtime-library/code-pages.md)
+- [Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

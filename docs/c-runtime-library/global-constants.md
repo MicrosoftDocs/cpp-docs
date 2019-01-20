@@ -35,8 +35,8 @@ The Microsoft run-time library contains definitions for global constants used by
 |[TZNAME_MAX](../c-runtime-library/tzname-max.md)|[_WAIT_CHILD, _WAIT_GRANDCHILD](../c-runtime-library/wait-child-wait-grandchild.md)|
 |[WCHAR_MAX](../c-runtime-library/wchar-max.md)|[WCHAR_MIN](../c-runtime-library/wchar-min.md)|
 
-## See Also
+## See also
 
-[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
-[Global Variables](../c-runtime-library/global-variables.md)<br/>
-[Considerations for Writing Prolog/Epilog Code](../cpp/considerations-for-writing-prolog-epilog-code.md)
+- [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)
+- [Global Variables](../c-runtime-library/global-variables.md)
+- [Considerations for Writing Prolog/Epilog Code](../cpp/considerations-for-writing-prolog-epilog-code.md)

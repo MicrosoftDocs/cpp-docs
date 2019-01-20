@@ -1029,10 +1029,10 @@ TRUE if this method succeeds; otherwise, FALSE.
 
 This method affects only a tab control that displays flat tabs. The scroll bar influences all the tabs at the same time.
 
-## See Also
+## See also
 
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Classes](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md)
+- [Hierarchy Chart](../../mfc/hierarchy-chart.md)
+- [Classes](../../mfc/reference/mfc-classes.md)
+- [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)
+- [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)
+- [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md)

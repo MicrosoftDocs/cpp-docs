@@ -16,4 +16,4 @@ For example, 32-bit registers require [.386](../../assembler/masm/dot-386.md) or
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+- [ML Error Messages](../../assembler/masm/ml-error-messages.md)

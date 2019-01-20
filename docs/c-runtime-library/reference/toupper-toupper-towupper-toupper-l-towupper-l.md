@@ -86,7 +86,7 @@ See the example in [to Functions](../../c-runtime-library/to-functions.md).
 
 ## See also
 
-[is, isw Routines](../../c-runtime-library/is-isw-routines.md)<br/>
-[to Functions](../../c-runtime-library/to-functions.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+- [is, isw Routines](../../c-runtime-library/is-isw-routines.md)
+- [to Functions](../../c-runtime-library/to-functions.md)
+- [Locale](../../c-runtime-library/locale.md)
+- [Interpretation of Multibyte-Character Sequences](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)

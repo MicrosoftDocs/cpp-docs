@@ -32,6 +32,6 @@ The Clipboard is a system service shared by the entire Windows session, so it do
 
 - [Implementing drag and drop (OLE)](../mfc/drag-and-drop-ole.md)
 
-## See Also
+## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+- [User Interface Elements](../mfc/user-interface-elements-mfc.md)

@@ -115,8 +115,8 @@ You can reuse a `CDatabase` object after disconnecting from it, whether you use 
 
 1. Instead of destroying the object, call its `OpenEx` or `Open` member function again.
 
-## See Also
+## See also
 
-[Data Source (ODBC)](../../data/odbc/data-source-odbc.md)<br/>
-[Data Source: Determining the Schema of the Data Source (ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>
-[CRecordset Class](../../mfc/reference/crecordset-class.md)
+- [Data Source (ODBC)](../../data/odbc/data-source-odbc.md)
+- [Data Source: Determining the Schema of the Data Source (ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)
+- [CRecordset Class](../../mfc/reference/crecordset-class.md)

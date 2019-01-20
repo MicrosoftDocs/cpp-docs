@@ -157,7 +157,7 @@ Both constructors initialize the base class by calling [streambuf](../standard-l
 
 ## See also
 
-[iostream](../standard-library/istream-typedefs.md#iostream)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+- [iostream](../standard-library/istream-typedefs.md#iostream)
+- [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+- [iostream Programming](../standard-library/iostream-programming.md)
+- [iostreams Conventions](../standard-library/iostreams-conventions.md)

@@ -34,9 +34,9 @@ The `_ReadWriteBarrier` intrinsic limits the compiler optimizations that can rem
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
-[_ReadBarrier](../intrinsics/readbarrier.md)<br/>
-[_WriteBarrier](../intrinsics/writebarrier.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)
+- [_ReadBarrier](../intrinsics/readbarrier.md)
+- [_WriteBarrier](../intrinsics/writebarrier.md)
+- [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+- [Keywords](../cpp/keywords-cpp.md)

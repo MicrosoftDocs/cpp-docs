@@ -75,6 +75,6 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 ## See also
 
-[dynamic_cast Operator](../cpp/dynamic-cast-operator.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[C++ Exception Handling](../cpp/cpp-exception-handling.md)
+- [dynamic_cast Operator](../cpp/dynamic-cast-operator.md)
+- [Keywords](../cpp/keywords-cpp.md)
+- [C++ Exception Handling](../cpp/cpp-exception-handling.md)

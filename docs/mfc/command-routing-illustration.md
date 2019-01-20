@@ -20,7 +20,6 @@ To illustrate, consider a command message from a Clear All menu item in an MDI a
 
 If the document did not have a handler, it would next route the command to its document template. Then the command would return to the view and then the frame window. Finally, the frame window would check its message map. If that check failed as well, the command would be routed back to the main MDI frame window and then to the application object — the ultimate destination of unhandled commands.
 
-## See Also
+## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-
+- [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)

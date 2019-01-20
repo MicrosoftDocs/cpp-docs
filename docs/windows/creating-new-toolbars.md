@@ -28,6 +28,6 @@ For information on adding resources to managed projects, please see [Resources i
 
 MFC or ATL
 
-## See Also
+## See also
 
-[Toolbar Editor](../windows/toolbar-editor.md)
+- [Toolbar Editor](../windows/toolbar-editor.md)

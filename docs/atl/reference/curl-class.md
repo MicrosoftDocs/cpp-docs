@@ -561,6 +561,6 @@ The user name.
 
 Returns TRUE on success, FALSE on failure.
 
-## See Also
+## See also
 
-[Classes](../../atl/reference/atl-classes.md)
+- [Classes](../../atl/reference/atl-classes.md)

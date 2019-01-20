@@ -127,6 +127,6 @@ The following table lists several useful user-oriented targets.
 > [!NOTE]
 > In Visual Studio 2017, C++ project support for **xsd** files is deprecated. You can still use **Microsoft.VisualC.CppCodeProvider** by adding **CppCodeProvider.dll** manually to the GAC.
 
-## See Also
+## See also
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)
+- [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)

@@ -45,6 +45,6 @@ climb.exe : up.obj
    echo Building bounce.exe...
 ```
 
-## See Also
+## See also
 
-[Targets](../build/targets.md)
+- [Targets](../build/targets.md)

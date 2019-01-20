@@ -45,7 +45,7 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ## See also
 
-[fegetenv](fegetenv1.md)<br/>
-[feclearexcept](feclearexcept1.md)<br/>
-[feholdexcept](feholdexcept2.md)<br/>
-[fesetexceptflag](fesetexceptflag2.md)<br/>
+- [fegetenv](fegetenv1.md)
+- [feclearexcept](feclearexcept1.md)
+- [feholdexcept](feholdexcept2.md)
+- [fesetexceptflag](fesetexceptflag2.md)

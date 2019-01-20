@@ -76,5 +76,5 @@ Unlike braces in C and C++, the braces enclosing an `__asm` block don't affect v
 
 ## See also
 
-[Keywords](../../cpp/keywords-cpp.md)<br/>
-[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>
+- [Keywords](../../cpp/keywords-cpp.md)
+- [Inline Assembler](../../assembler/inline/inline-assembler.md)

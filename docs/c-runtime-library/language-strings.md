@@ -83,7 +83,7 @@ The Microsoft C run-time library implementation also supports these language str
 
 ## See also
 
-[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Country/Region Strings](../c-runtime-library/country-region-strings.md)<br/>
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)
+- [Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)
+- [Country/Region Strings](../c-runtime-library/country-region-strings.md)
+- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)
+- [_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)

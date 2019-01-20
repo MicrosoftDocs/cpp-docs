@@ -40,5 +40,5 @@ Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-fea
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[__debugbreak](../../intrinsics/debugbreak.md)<br/>
+- [Debug Routines](../../c-runtime-library/debug-routines.md)
+- [__debugbreak](../../intrinsics/debugbreak.md)
