@@ -11,7 +11,7 @@ Places a record in an object. The linker checks these records for potential mism
 ## Syntax
 
 ```
-#pragma detect_mismatch( "name", "value"))
+#pragma detect_mismatch("name", "value")
 ```
 
 ## Remarks
