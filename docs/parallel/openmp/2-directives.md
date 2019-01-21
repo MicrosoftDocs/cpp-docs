@@ -9,13 +9,13 @@ Directives are based on `#pragma` directives defined in the C and C++ standards.
 
 ## 2.1 Directive format
 
-The syntax of an OpenMP directive is formally specified by the grammar in [Appendix C](c-openmp-c-and-cpp-grammar.md), and informally as follows:
+The syntax of an OpenMP directive is formally specified by the grammar in [appendix C](c-openmp-c-and-cpp-grammar.md), and informally as follows:
 
 ```cpp
 #pragma omp directive-name  [clause[ [,] clause]...] new-line
 ```
 
-Each directive starts with  `#pragma omp`, to reduce the potential for conflict with other (non-OpenMP or vendor extensions to OpenMP) pragma directives with the same names. The remainder of the directive follows the conventions of the C and C++ standards for compiler directives. In particular, white space can be used before and after the `#`, and sometimes white space must be used to separate the words in a directive. Preprocessing tokens following the `#pragma omp` are subject to macro replacement.
+Each directive starts with  `#pragma omp`, to reduce the potential for conflict with other (non-OpenMP or vendor extensions to OpenMP) pragma directives with the same names. The rest of the directive follows the conventions of the C and C++ standards for compiler directives. In particular, white space can be used before and after the `#`, and sometimes white space must be used to separate the words in a directive. Preprocessing tokens following the `#pragma omp` are subject to macro replacement.
 
 Directives are case-sensitive. The order in which clauses appear in directives isn't significant. Clauses on directives may be repeated as needed, subject to the restrictions listed in the description of each clause. If *variable-list* appears in a clause, it must specify only variables. Only one *directive-name* can be specified per directive.  For example, the following directive isn't allowed:
 
@@ -40,7 +40,7 @@ If vendors define extensions to OpenMP, they may specify additional predefined m
 
 ## 2.3 parallel construct
 
-The following directive defines a parallel region, which is a region of the program that's to be executed by multiple threads in parallel. This is the fundamental construct that starts parallel execution.
+The following directive defines a parallel region, which is a region of the program that's to be executed by many threads in parallel. This directive is the fundamental construct that starts parallel execution.
 
 ```cpp
 #pragma omp parallel [clause[ [, ]clause] ...] new-line   structured-block
@@ -48,26 +48,18 @@ The following directive defines a parallel region, which is a region of the prog
 
 The *clause* is one of the following:
 
-`if(` *scalar-expression* `)`
+- `if(` *scalar-expression* `)`
+- `private(` *variable-list* `)`
+- `firstprivate(` *variable-list* `)`
+- `default(shared | none)`
+- `shared(` *variable-list* `)`
+- `copyin(` *variable-list* `)`
+- `reduction(` *operator* `:`  *variable-list* `)`
+- `num_threads(` *integer-expression* `)`
 
-`private(` *variable-list* `)`
-
-`firstprivate(` *variable-list* `)`
-
-`default(shared | none)`
-
-`shared(` *variable-list* `)`
-
-`copyin(` *variable-list* `)`
-
-`reduction(` *operator* `:`  *variable-list* `)`
-
-`num_threads(` *integer-expression* `)`
-
-When a thread encounters a parallel construct, a team of threads is created if one of the following cases is true:
+When a thread gets to a parallel construct, a team of threads is created if one of the following cases is true:
 
 - No `if` clause is present.
-
 - The `if` expression evaluates to a nonzero value.
 
 This thread becomes the master thread of the team, with a thread number of 0, and all threads in the team, including the master thread, execute the region in parallel. If the value of the `if` expression is zero, the region is serialized.
@@ -80,17 +72,17 @@ To determine the number of threads that are requested, the following rules will 
 
 1. If the environment variable `OMP_NUM_THREADS` is defined, then the value of this environment variable is the number of threads requested.
 
-1. If none of the methods above were used, then the number of threads requested is implementation-defined.
+1. If none of the methods above is used, then the number of threads requested is implementation-defined.
 
-If the `num_threads` clause is present then it supersedes the number of threads requested by the `omp_set_num_threads` library function or the `OMP_NUM_THREADS` environment variable only for the parallel region it's applied to. Subsequent parallel regions aren't affected by it.
+If the `num_threads` clause is present then it supersedes the number of threads requested by the `omp_set_num_threads` library function or the `OMP_NUM_THREADS` environment variable only for the parallel region it's applied to. Later parallel regions aren't affected by it.
 
-The number of threads that execute the parallel region also depends upon whether or not dynamic adjustment of the number of threads is enabled. If dynamic adjustment is disabled, then the requested number of threads will execute the parallel region. If dynamic adjustment is enabled then the requested number of threads is the maximum number of threads that may execute the parallel region.
+The number of threads that execute the parallel region also depends upon whether dynamic adjustment of the number of threads is enabled. If dynamic adjustment is disabled, then the requested number of threads will execute the parallel region. If dynamic adjustment is enabled then the requested number of threads is the maximum number of threads that may execute the parallel region.
 
-If a parallel region is encountered while dynamic adjustment of the number of threads is disabled, and the number of threads requested for the parallel region exceeds the number that the run-time system can supply, the behavior of the program is implementation-defined. An implementation may, for example, interrupt the execution of the program, or it may serialize the parallel region.
+If a parallel region is encountered while dynamic adjustment of the number of threads is disabled, and the number of threads requested for the parallel region is more than the number that the run-time system can supply, the behavior of the program is implementation-defined. An implementation may, for example, interrupt the execution of the program, or it may serialize the parallel region.
 
 The `omp_set_dynamic` library function and the `OMP_DYNAMIC` environment variable can be used to enable and disable dynamic adjustment of the number of threads.
 
-The number of physical processors actually hosting the threads at any given time is implementation-defined. Once created, the number of threads in the team remains constant for the duration of that parallel region. It can be changed either explicitly by the user or automatically by the run-time system from one parallel region to another.
+The number of physical processors actually hosting the threads at any given time is implementation-defined. Once created, the number of threads in the team stays constant for the duration of that parallel region. It can be changed either explicitly by the user or automatically by the run-time system from one parallel region to another.
 
 The statements contained within the dynamic extent of the parallel region are executed by each thread, and each thread can execute a path of statements that's different from the other threads. Directives encountered outside the lexical extent of a parallel region are referred to as orphaned directives.
 
@@ -100,7 +92,7 @@ If a thread in a team executing a parallel region encounters another parallel co
 
 Restrictions to the `parallel` directive are as follows:
 
-- At most one `if` clause can appear on the directive.
+- At most, one `if` clause can appear on the directive.
 
 - It's unspecified whether any side effects inside the if expression or `num_threads` expression occur.
 
@@ -112,7 +104,7 @@ Restrictions to the `parallel` directive are as follows:
 
 ### Cross-references
 
-- `private`, `firstprivate`, `default`, `shared`, `copyin`, and `reduction` clauses, see [section 2.7.2](2-7-2-data-sharing-attribute-clauses.md)
+- `private`, `firstprivate`, `default`, `shared`, `copyin`, and `reduction` clauses ([section 2.7.2](#272-data-sharing-attribute-clauses))
 - [OMP_NUM_THREADS](4-2-omp-num-threads.md) environment variable
 - [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) library function
 - [OMP_DYNAMIC](4-3-omp-dynamic.md) environment variable
@@ -126,11 +118,11 @@ A work-sharing construct distributes the execution of the associated statement a
 
 The sequence of work-sharing constructs and `barrier` directives encountered must be the same for every thread in a team.
 
-OpenMP defines the following work-sharing constructs, and these are described in the sections that follow:
+OpenMP defines the following work-sharing constructs, and these constructs are described in the sections that follow:
 
-- `for` directive
-- `sections` directive
-- `single` directive
+- [for](#241-for-construct) directive
+- [sections](#242-sections-construct) directive
+- [single](#243-single-construct) directive
 
 ### 2.4.1 for construct
 
@@ -142,19 +134,13 @@ The `for` directive identifies an iterative work-sharing construct that specifie
 
 The clause is one of the following:
 
-`private(` *variable-list* `)`
-
-`firstprivate(` *variable-list* `)`
-
-`lastprivate(` *variable-list* `)`
-
-`reduction(` *operator* `:` *variable-list* `)`
-
-`ordered`
-
-`schedule(` *kind* [`,` *chunk_size*] `)`
-
-`nowait`
+- `private(` *variable-list* `)`
+- `firstprivate(` *variable-list* `)`
+- `lastprivate(` *variable-list* `)`
+- `reduction(` *operator* `:` *variable-list* `)`
+- `ordered`
+- `schedule(` *kind* [`,` *chunk_size*] `)`
+- `nowait`
 
 The `for` directive places restrictions on the structure of the corresponding `for` loop. Specifically, the corresponding `for` loop must have canonical shape:
 
@@ -163,59 +149,47 @@ The `for` directive places restrictions on the structure of the corresponding `f
 *init-expr*<br/>
 One of the following:
 
-*var* = *lb*
-
-*integer-type var* = *lb*
+- *var* = *lb*
+- *integer-type var* = *lb*
 
 *incr-expr*<br/>
 One of the following:
 
-++ *var*
-
-*var* ++
-
--- *var*
-
-*var* --
-
-*var* += *incr*
-
-*var* -= *incr*
-
-*var* = *var* + *incr*
-
-*var* = *incr* + *var*
-
-*var* = *var* - *incr*
+- `++` *var*
+- *var* `++`
+- `--` *var*
+- *var* `--`
+- *var* `+=` *incr*
+- *var* `-=` *incr*
+- *var* `=` *var* `+` *incr*
+- *var* `=` *incr* `+` *var*
+- *var* `=` *var* `-` *incr*
 
 *var*<br/>
-A signed integer variable. If this variable would otherwise be shared, it's implicitly made private for the duration of the `for`.   This variable must not be modified within the body of the `for` statement. Unless the variable is specified `lastprivate`, its value after the loop is indeterminate.
+A signed integer variable. If this variable would otherwise be shared, it's implicitly made private for the duration of the `for`. Do not modify this variable within the body of the `for` statement. Unless the variable is specified `lastprivate`, its value after the loop is indeterminate.
 
 *logical-op*<br/>
 One of the following:
 
-\<
-
-\<=
-
-\>
-
-\>=
+- `<`
+- `<=`
+- `>`
+- `>=`
 
 *lb*, *b*, and *incr*<br>
-Loop invariant integer expressions. There's no synchronization during the evaluation of these expressions. Thus, any evaluated side effects produce indeterminate results.
+Loop invariant integer expressions. There's no synchronization during the evaluation of these expressions, so any evaluated side effects produce indeterminate results.
 
-Note that the canonical form allows the number of loop iterations to be computed on entry to the loop. This computation is performed with values in the type of *var*, after integral promotions. In particular, if value of *b* - *lb* + *incr* can't be represented in that type, the result is indeterminate. Further, if *logical-op* is < or \<= then *incr-expr* must cause *var* to increase on each iteration of the loop.   If *logical-op* is > or >= then *incr-expr* must cause *var* to decrease on each iteration of the loop.
+The canonical form allows the number of loop iterations to be computed on entry to the loop. This computation is made with values in the type of *var*, after integral promotions. In particular, if value of *b* `-` *lb* `+` *incr* can't be represented in that type, the result is indeterminate. Further, if *logical-op* is `<` or `<=`, then *incr-expr* must cause *var* to increase on each iteration of the loop.   If *logical-op* is `>` or `>=`, then *incr-expr* must cause *var* to get smaller on each iteration of the loop.
 
-The `schedule` clause specifies how iterations of the `for` loop are divided among threads of the team. The correctness of a program must not depend on which thread executes a particular iteration. The value of *chunk_size*, if specified, must be a loop invariant integer expression with a positive value. There's no synchronization during the evaluation of this expression. Thus, any evaluated side effects produce indeterminate results. The schedule *kind* can be one of the following:
+The `schedule` clause specifies how iterations of the `for` loop are divided among threads of the team. The correctness of a program must not depend on which thread executes a particular iteration. The value of *chunk_size*, if specified, must be a loop invariant integer expression with a positive value. There's no synchronization during the evaluation of this expression, so any evaluated side effects produce indeterminate results. The schedule *kind* can be one of the following values:
 
-TABLE 2-1       `schedule` clause *kind* values
+Table 2-1: `schedule` clause *kind* values
 
 |||
 |-|-|
 |static|When `schedule(static,` *chunk_size* `)` is specified, iterations are divided into chunks of a size specified by *chunk_size*. The chunks are statically assigned to threads in the team in a round-robin fashion in the order of the thread number. When no *chunk_size* is specified, the iteration space is divided into chunks that are approximately equal in size, with one chunk assigned to each thread.|
-|dynamic|When `schedule(dynamic,` *chunk_size* `)` is specified, the iterations are divided into a series of chunks, each containing *chunk_size* iterations. Each chunk is assigned to a thread that's waiting for an assignment. The thread executes the chunk of iterations and then waits for its next assignment, until no chunks remain to be assigned. Note that the last chunk to be assigned may have a smaller number of iterations. When no *chunk_size* is specified, it defaults to 1.|
-|guided|When `schedule(guided,` *chunk_size* `)` is specified, the iterations are assigned to threads in chunks with decreasing sizes. When a thread finishes its assigned chunk of iterations, it's dynamically assigned another chunk, until none remain. For a *chunk_size* of 1, the size of each chunk is approximately the number of unassigned iterations divided by the number of threads. These sizes decrease approximately exponentially to 1. For a *chunk_size* with value *k* greater than 1, the sizes decrease approximately exponentially to *k*, except that the last chunk may have fewer than *k* iterations. When no *chunk_size* is specified, it defaults to 1.|
+|dynamic|When `schedule(dynamic,` *chunk_size* `)` is specified, the iterations are divided into a series of chunks, each containing *chunk_size* iterations. Each chunk is assigned to a thread that's waiting for an assignment. The thread executes the chunk of iterations and then waits for its next assignment, until no chunks remain to be assigned. The last chunk to be assigned may have a smaller number of iterations. When no *chunk_size* is specified, it defaults to 1.|
+|guided|When `schedule(guided,` *chunk_size* `)` is specified, the iterations are assigned to threads in chunks with decreasing sizes. When a thread finishes its assigned chunk of iterations, it's dynamically assigned another chunk, until none is left. For a *chunk_size* of 1, the size of each chunk is approximately the number of unassigned iterations divided by the number of threads. These sizes decrease almost exponentially to 1. For a *chunk_size* with value *k* greater than 1, the sizes decrease almost exponentially to *k*, except that the last chunk may have fewer than *k* iterations. When no *chunk_size* is specified, it defaults to 1.|
 |runtime|When `schedule(runtime)` is specified, the decision regarding scheduling is deferred until runtime. The schedule *kind* and size of the chunks can be chosen at run time by setting the environment variable `OMP_SCHEDULE`. If this environment variable isn't set, the resulting schedule is implementation-defined. When  `schedule(runtime)` is specified, *chunk_size* must not be specified.|
 
 In the absence of an explicitly defined `schedule` clause, the default `schedule` is implementation-defined.
@@ -246,10 +220,10 @@ Restrictions to the `for` directive are as follows:
 
 #### Cross-references
 
-- `private`, `firstprivate`, `lastprivate`, and `reduction` clauses, see [section 2.7.2](2-7-2-data-sharing-attribute-clauses.md)
+- `private`, `firstprivate`, `lastprivate`, and `reduction` clauses ([section 2.7.2](#272-data-sharing-attribute-clauses))
 - [OMP_SCHEDULE](4-1-omp-schedule.md) environment variable
-- [ordered](2-6-6-ordered-construct.md) construct
-- [Appendix D](d-using-the-schedule-clause.md) for more information on using the `schedule` clause
+- [ordered](#266-ordered-construct) construct
+- [schedule](d-using-the-schedule-clause.md) clause
 
 ### 2.4.2 sections construct
 
@@ -267,15 +241,11 @@ The `sections` directive identifies a noniterative work-sharing construct that s
 
 The clause is one of the following:
 
-`private(` *variable-list* `)`
-
-`firstprivate(` *variable-list* `)`
-
-`lastprivate(` *variable-list* `)`
-
-`reduction(` *operator* `:`  *variable-list* `)`
-
-`nowait`
+- `private(` *variable-list* `)`
+- `firstprivate(` *variable-list* `)`
+- `lastprivate(` *variable-list* `)`
+- `reduction(` *operator* `:`  *variable-list* `)`
+- `nowait`
 
 Each section is preceded by a `section` directive, although the `section` directive is optional for the first section. The `section` directives must appear within the lexical extent of the `sections` directive. There's an implicit barrier at the end of a `sections` construct, unless a `nowait` is specified.
 
@@ -287,7 +257,7 @@ Restrictions to the `sections` directive are as follows:
 
 #### Cross-references
 
-- `private`, `firstprivate`, `lastprivate`, and `reduction` clauses, see [section 2.7.2](2-7-2-data-sharing-attribute-clauses.md)
+- `private`, `firstprivate`, `lastprivate`, and `reduction` clauses ([section 2.7.2](#272-data-sharing-attribute-clauses))
 
 ### 2.4.3 single construct
 
@@ -299,34 +269,30 @@ The `single` directive identifies a construct that specifies that the associated
 
 The clause is one of the following:
 
-`private(` *variable-list* `)`
-
-`firstprivate(` *variable-list* `)`
-
-`copyprivate(` *variable-list* `)`
-
-`nowait`
+- `private(` *variable-list* `)`
+- `firstprivate(` *variable-list* `)`
+- `copyprivate(` *variable-list* `)`
+- `nowait`
 
 There's an implicit barrier after the `single` construct unless a `nowait` clause is specified.
 
 Restrictions to the `single` directive are as follows:
 
 - Only a single `nowait` clause can appear on a `single` directive.
-
 - The `copyprivate` clause must not be used with the `nowait` clause.
 
 #### Cross-references
 
-- `private`, `firstprivate`, and `copyprivate` clauses, see [section 2.7.2](2-7-2-data-sharing-attribute-clauses.md)
+- `private`, `firstprivate`, and `copyprivate` clauses ([section 2.7.2](#272-data-sharing-attribute-clauses))
 
 ## 2.5 Combined parallel work-sharing constructs
 
-Combined parallel work-sharing constructs are shortcuts for specifying a parallel region that contains only one work-sharing construct. The semantics of these directives are identical to that of explicitly specifying a `parallel` directive followed by a single work-sharing construct.
+Combined parallel work-sharing constructs are shortcuts for specifying a parallel region that has only one work-sharing construct. The semantics of these directives are the same as explicitly specifying a `parallel` directive followed by a single work-sharing construct.
 
 The following sections describe the combined parallel work-sharing constructs:
 
-- the `parallel for` directive.
-- the `parallel sections` directive.
+- [parallel for](#251-parallel-for-construct) directive
+- [parallel sections](#252-parallel-sections-construct) directive
 
 ### 2.5.1 parallel for construct
 
@@ -336,17 +302,17 @@ The `parallel for` directive is a shortcut for a `parallel` region that contains
 #pragma omp parallel for [clause[[,] clause] ...] new-linefor-loop
 ```
 
-This directive allows all the clauses of the `parallel` directive and the `for` directive, except the `nowait` clause, with identical meanings and restrictions. The semantics are identical to explicitly specifying a `parallel` directive immediately followed by a `for` directive.
+This directive allows all the clauses of the `parallel` directive and the `for` directive, except the `nowait` clause, with identical meanings and restrictions. The semantics are the same as explicitly specifying a `parallel` directive immediately followed by a `for` directive.
 
 #### Cross-references
 
-- [parallel](2-3-parallel-construct.md) directive
-- [for](2-4-1-for-construct.md) directive
-- [Data attribute clauses](2-7-2-data-sharing-attribute-clauses.md)
+- [parallel](#23-parallel-construct) directive
+- [for](#241-for-construct) directive
+- [Data attribute clauses](#272-data-sharing-attribute-clauses)
 
 ### 2.5.2 parallel sections construct
 
-The `parallel sections` directive provides a shortcut form for specifying a `parallel` region containing only a single `sections` directive. The semantics are identical to explicitly specifying a `parallel` directive immediately followed by a `sections` directive. The syntax of the `parallel sections` directive is as follows:
+The `parallel sections` directive provides a shortcut form for specifying a `parallel` region that has only a single `sections` directive. The semantics are the same as explicitly specifying a `parallel` directive immediately followed by a `sections` directive. The syntax of the `parallel sections` directive is as follows:
 
 ```cpp
 #pragma omp parallel sections  [clause[[,] clause] ...] new-line
@@ -362,19 +328,19 @@ The *clause* can be one of the clauses accepted by the `parallel` and `sections`
 
 #### Cross-references
 
-- [parallel](2-3-parallel-construct.md) directive
-- [sections](2-4-2-sections-construct.md) directive
+- [parallel](#23-parallel-construct) directive
+- [sections](#242-sections-construct) directive
 
 ## 2.6 Master and synchronization directives
 
 The following sections describe:
 
-- the `master` construct.
-- the `critical` construct.
-- the `barrier` directive.
-- the `atomic` construct.
-- the `flush` directive.
-- the `ordered` construct.
+- [master](#261-master-construct) construct
+- [critical](#262-critical-construct) construct
+- [barrier](#263-barrier-directive) directive
+- [atomic](#264-atomic-construct) construct
+- [flush](#265-flush-directive) directive
+- [ordered](#266-ordered-construct) construct
 
 ### 2.6.1 master construct
 
@@ -394,7 +360,7 @@ The `critical` directive identifies a construct that restricts execution of the 
 #pragma omp critical [(name)]  new-linestructured-block
 ```
 
-An optional *name* may be used to identify the critical region. Identifiers used to identify a critical region have external linkage and are in a name space which is separate from the name spaces used by labels, tags, members, and ordinary identifiers.
+An optional *name* may be used to identify the critical region. Identifiers used to identify a critical region have external linkage and are in a name space that is separate from the name spaces used by labels, tags, members, and ordinary identifiers.
 
 A thread waits at the beginning of a critical region until no other thread is executing a critical region (anywhere in the program) with the same name. All unnamed `critical` directives map to the same unspecified name.
 
@@ -406,7 +372,7 @@ The `barrier` directive synchronizes all the threads in a team. When encountered
 #pragma omp barrier new-line
 ```
 
-After all threads in the team have encountered the barrier, each thread in the team begins executing the statements after the barrier directive in parallel. Note that because the `barrier` directive doesn't have a C language statement as part of its syntax, there are some restrictions on its placement within a program. See [Appendix C](c-openmp-c-and-cpp-grammar.md) for the formal grammar. The example below illustrates these restrictions.
+After all threads in the team have encountered the barrier, each thread in the team begins executing the statements after the barrier directive in parallel. Because the `barrier` directive doesn't have a C language statement as part of its syntax, there are some restrictions on its placement within a program. See [Appendix C](c-openmp-c-and-cpp-grammar.md) for the formal grammar. The example below illustrates these restrictions.
 
 ```cpp
 /* ERROR - The barrier directive cannot be the immediate
@@ -434,15 +400,11 @@ The `atomic` directive ensures that a specific memory location is updated atomic
 
 The expression statement must have one of the following forms:
 
-*x binop*= *expr*
-
-x++
-
-++x
-
-x--
-
---x
+- *x binop* `=` *expr*
+- *x*`++`
+- `++`*x*
+- *x*`--`
+- `--`*x*
 
 In the preceding expressions:
 
@@ -450,7 +412,7 @@ In the preceding expressions:
 
 - *expr* is an expression with scalar type, and it doesn't reference the object designated by *x*.
 
-- `binop` isn't an overloaded operator and is one of  +, \*, -, /, &, ^, &#124;, <\<, or   >>.
+- *binop* isn't an overloaded operator and is one of `+`, `*`, `-`, `/`, `&`, `^`, `|`, `<<`, or `>>`.
 
 Although it's implementation-defined whether an implementation replaces all `atomic` directives with `critical` directives that have the same unique *name*, the `atomic` directive permits better optimization. Often hardware instructions are available that can perform the atomic update with the least overhead.
 
@@ -494,36 +456,25 @@ If the objects that require synchronization can all be designated by variables, 
 A `flush` directive without a *variable-list* synchronizes all shared objects except inaccessible objects with automatic storage duration. (This is likely to have more overhead than a `flush` with a *variable-list*.) A `flush` directive without a *variable-list* is implied for the following directives:
 
 - `barrier`
-
 - At entry to and exit from `critical`
-
 - At entry to and exit from `ordered`
-
 - At entry to and exit from `parallel`
-
 - At exit from `for`
-
 - At exit from `sections`
-
 - At exit from `single`
-
 - At entry to and exit from `parallel for`
-
 - At entry to and exit from `parallel sections`
 
 The directive isn't implied if a `nowait` clause is present. It should be noted that the `flush` directive isn't implied for any of the following:
 
 - At entry to `for`
-
 - At entry to or exit from `master`
-
 - At entry to `sections`
-
 - At entry to `single`
 
 A reference that accesses the value of an object with a volatile-qualified type behaves as if there were a `flush` directive specifying that object at the previous sequence point. A reference that modifies the value of an object with a volatile-qualified type behaves as if there were a `flush` directive specifying that object at the subsequent sequence point.
 
-Note that because the `flush` directive doesn't have a C language statement as part of its syntax, there are some restrictions on its placement within a program. See [Appendix C](c-openmp-c-and-cpp-grammar.md) for the formal grammar. The example below illustrates these restrictions.
+Because the `flush` directive doesn't have a C language statement as part of its syntax, there are some restrictions on its placement within a program. See [Appendix C](c-openmp-c-and-cpp-grammar.md) for the formal grammar. The example below illustrates these restrictions.
 
 ```cpp
 /* ERROR - The flush directive cannot be the immediate
@@ -553,7 +504,7 @@ The structured block following an `ordered` directive is executed in the order i
 #pragma omp ordered new-linestructured-block
 ```
 
-An `ordered` directive must be within the dynamic extent of a `for` or `parallel for` construct. The `for` or `parallel for` directive to which the `ordered` construct binds must have an `ordered` clause specified as described in [Section 2.4.1](2-4-1-for-construct.md) on page 11. In the execution of a `for` or `parallel for` construct with an `ordered` clause, `ordered` constructs are executed strictly in the order in which they would be executed in a sequential execution of the loop.
+An `ordered` directive must be within the dynamic extent of a `for` or `parallel for` construct. The `for` or `parallel for` directive to which the `ordered` construct binds must have an `ordered` clause specified as described in [section 2.4.1](#241-for-construct). In the execution of a `for` or `parallel for` construct with an `ordered` clause, `ordered` constructs are executed strictly in the order in which they would be executed in a sequential execution of the loop.
 
 Restrictions to the `ordered` directive are as follows:
 
@@ -565,7 +516,7 @@ This section presents a directive and several clauses for controlling the data e
 
 - A `threadprivate` directive (see the following section) is provided to make file- scope, namespace-scope, or static block-scope variables local to a thread.
 
-- Clauses that may be specified on the directives to control the sharing attributes of variables for the duration of the parallel or work-sharing constructs are described in [Section 2.7.2](2-7-2-data-sharing-attribute-clauses.md) on page 25.
+- Clauses that may be specified on the directives to control the sharing attributes of variables for the duration of the parallel or work-sharing constructs are described in [section 2.7.2](#272-data-sharing-attribute-clauses).
 
 ### 2.7.1 threadprivate directive
 
@@ -625,9 +576,8 @@ void f(int n) {
 
 #### Cross-references
 
-- Dynamic threads, see [Section 3.1.7](3-1-7-omp-set-dynamic-function.md) on page 39.
-
-- `OMP_DYNAMIC` environment variable, see [Section 4.3](4-3-omp-dynamic.md) on page 49.
+- [dynamic threads](3-1-7-omp-set-dynamic-function.md)
+- [OMP_DYNAMIC](4-3-omp-dynamic.md) environment variable
 
 ### 2.7.2 Data-sharing attribute clauses
 
@@ -641,14 +591,14 @@ All variables that appear within directive clauses must be visible. Clauses may 
 
 The following sections describe the data-sharing attribute clauses:
 
-- [private](2-7-2-1-private.md)
-- [firstprivate](2-7-2-2-firstprivate.md)
-- [lastprivate](2-7-2-3-lastprivate.md)
-- [shared](2-7-2-4-shared.md)
-- [default](2-7-2-5-default.md)
-- [reduction](2-7-2-6-reduction.md)
-- [copyin](2-7-2-7-copyin.md)
-- [copyprivate](2-7-2-8-copyprivate.md)
+- [private](#2721-private)
+- [firstprivate](#2722-firstprivate)
+- [lastprivate](#2723-lastprivate)
+- [shared](#2724-shared)
+- [default](#2725-default)
+- [reduction](#2726-reduction)
+- [copyin](#2727-copyin)
+- [copyprivate](#2728-copyprivate)
 
 #### 2.7.2.1 private
 
@@ -680,7 +630,7 @@ The `firstprivate` clause provides a superset of the functionality provided by t
 firstprivate(variable-list)
 ```
 
-Variables specified in *variable-list* have `private` clause semantics, as described in [Section 2.7.2.1](2-7-2-1-private.md) on page 25. The initialization or construction happens as if it were done once per thread, prior to the thread's execution of the construct. For a `firstprivate` clause on a parallel construct, the initial value of the new private object is the value of the original object that exists immediately prior to the parallel construct for the thread that encounters it. For a `firstprivate` clause on a work-sharing construct, the initial value of the new private object for each thread that executes the work-sharing construct is the value of the original object that exists prior to the point in time that the same thread encounters the work-sharing construct. In addition, for C++ objects, the new private object for each thread is copy constructed from the original object.
+Variables specified in *variable-list* have `private` clause semantics, as described in [section 2.7.2.1](#2721-private). The initialization or construction happens as if it were done once per thread, prior to the thread's execution of the construct. For a `firstprivate` clause on a parallel construct, the initial value of the new private object is the value of the original object that exists immediately prior to the parallel construct for the thread that encounters it. For a `firstprivate` clause on a work-sharing construct, the initial value of the new private object for each thread that executes the work-sharing construct is the value of the original object that exists prior to the point in time that the same thread encounters the work-sharing construct. In addition, for C++ objects, the new private object for each thread is copy constructed from the original object.
 
 The restrictions to the `firstprivate` clause are as follows:
 
@@ -755,22 +705,22 @@ A variable's default data-sharing attribute can be overridden by using the `priv
 
 This clause performs a reduction on the scalar variables that appear in *variable-list*, with the operator *op*. The syntax of the `reduction` clause is as follows:
 
-> reduction(*op*: *variable-list*)
+`reduction(` *op* `:` *variable-list* `)`
 
 A reduction is typically specified for a statement with one of the following forms:
 
-> *x* = *x* *op* *expr*
-> *x* *binop* = *expr*
-> *x* = *expr* *op* *x*  (except for subtraction)
-> *x*++
-> ++*x*
-> *x*--
-> --*x*
+- *x* `=` *x* *op* *expr*
+- *x* *binop* `=` *expr*
+- *x* `=` *expr* *op* *x*  (except for subtraction)
+- *x*`++`
+- `++`*x*
+- *x*`--`
+- `--`*x*
 
 where:
 
 *x*<br/>
-One of the reduction variables specified in the `list`.
+One of the reduction variables specified in the list.
 
 *variable-list*<br/>
 A comma-separated list of scalar reduction variables.
@@ -779,10 +729,10 @@ A comma-separated list of scalar reduction variables.
 An expression with scalar type that doesn't reference *x*.
 
 *op*<br/>
-Not an overloaded operator but one of +, &#42;, -, &amp;, ^, &#124;, &amp;&amp;, or &#124;&#124;.
+Not an overloaded operator but one of `+`, `*`, `-`, `&`, `^`, `|`, `&&`, or `||`.
 
 *binop*<br/>
-Not an overloaded operator but one of +, &#42;, -, &amp;, ^, or &#124;.
+Not an overloaded operator but one of `+`, `*`, `-`, `&`, `^`, or `|`.
 
 The following is an example of the `reduction` clause:
 
@@ -811,14 +761,14 @@ The following table lists the operators that are valid and their canonical initi
 
 |Operator|Initialization|
 |--------------|--------------------|
-|+|0|
-|&#42;|1|
-|-|0|
-|&amp;|~0|
-|&#124;|0|
-|^|0|
-|&amp;&amp;|1|
-|&#124;&#124;|0|
+|`+`|0|
+|`*`|1|
+|`-`|0|
+|`&`|~0|
+|`|`|0|
+|`^`|0|
+|`&&`|1|
+|`||`|0|
 
 The restrictions to the `reduction` clause are as follows:
 
