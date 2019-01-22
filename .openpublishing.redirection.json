@@ -8468,6 +8468,16 @@
             "source_path": "docs/dotnet/auto-gcroot-tilde-auto-gcroot.md",
             "redirect_url": "/cpp/dotnet/auto-gcroot-class#tilde-auto-gcroot",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-members.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#members",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-attach.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#attach",
+            "redirect_document_id": false
         },        
         {
             "source_path": "docs/windows/srwlock-tilde-srwlock-destructor.md",
