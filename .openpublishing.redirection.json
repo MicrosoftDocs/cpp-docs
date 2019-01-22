@@ -675,7 +675,6 @@
             "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#when-to-precompile-source-code",
             "redirect_document_id": false
         },
-
         {
             "source_path": "docs/build/calling-convention.md",
             "redirect_url": "/cpp/build/x64-calling-convention",
@@ -731,7 +730,6 @@
             "redirect_url": "/cpp/build/x64-calling-convention#setjmplongjmp",
             "redirect_document_id": false
         },
-
         {
             "source_path": "docs/build/overview-of-x64-calling-conventions.md",
             "redirect_url": "/cpp/build/x64-software-conventions#overview-of-x64-calling-conventions",
@@ -782,7 +780,6 @@
             "redirect_url": "/cpp/build/x64-software-conventions#image-format",
             "redirect_document_id": false
         },
-
         {
             "source_path": "docs/build/stack-allocation.md",
             "redirect_url": "/cpp/build/stack-usage#stack-allocation",
@@ -808,7 +805,6 @@
             "redirect_url": "/cpp/build/stack-usage#alloca",
             "redirect_document_id": false
         },
-
         {
             "source_path": "docs/build/unwind-data-for-exception-handling-debugger-support.md",
             "redirect_url": "/cpp/build/exception-handling-x64#unwind-data-for-exception-handling-debugger-support",
@@ -7305,6 +7301,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/specify-project-location-and-source-files.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-debug-configuration-settings.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specify-release-configuration.md",
+            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/intrinsics/index.md",
             "redirect_url": "/cpp/intrinsics/compiler-intrinsics-and-assembly-language",
             "redirect_document_id": false
@@ -10098,6 +10114,646 @@
             "source_path": "docs/windows/windows-desktop-applications-cpp.md",
             "redirect_url": "/cpp/windows/desktop-applications-visual-cpp",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/activatableclass-macros.md",
+            "redirect_url": "/cpp/windows/wrl/activatableclass-macros",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/activateinstance-function.md",
+            "redirect_url": "/cpp/windows/wrl/activateinstance-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/activationfactorycallback-function.md",
+            "redirect_url": "/cpp/windows/wrl/activationfactorycallback-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/activationfactory-class.md",
+            "redirect_url": "/cpp/windows/wrl/activationfactory-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/agileactivationfactory-class.md",
+            "redirect_url": "/cpp/windows/wrl/agileactivationfactory-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/agileeventsource-class.md",
+            "redirect_url": "/cpp/windows/wrl/agileeventsource-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/argtraitshelper-structure.md",
+            "redirect_url": "/cpp/windows/wrl/argtraitshelper-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/argtraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/argtraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/asweak-function.md",
+            "redirect_url": "/cpp/windows/wrl/asweak-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/asyncbase-class.md",
+            "redirect_url": "/cpp/windows/wrl/asyncbase-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/asyncresulttype-enumeration.md",
+            "redirect_url": "/cpp/windows/wrl/asyncresulttype-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/asyncstatusinternal-enumeration.md",
+            "redirect_url": "/cpp/windows/wrl/asyncstatusinternal-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/boolstruct-structure.md",
+            "redirect_url": "/cpp/windows/wrl/boolstruct-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/callback-function-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/callback-function-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/canceltransitionpolicy-enumeration.md",
+            "redirect_url": "/cpp/windows/wrl/canceltransitionpolicy-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/chaininterfaces-structure.md",
+            "redirect_url": "/cpp/windows/wrl/chaininterfaces-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/classfactory-class.md",
+            "redirect_url": "/cpp/windows/wrl/classfactory-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/cloakediid-structure.md",
+            "redirect_url": "/cpp/windows/wrl/cloakediid-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/comparestringordinal-method.md",
+            "redirect_url": "/cpp/windows/wrl/comparestringordinal-method",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/composablebase-class.md",
+            "redirect_url": "/cpp/windows/wrl/composablebase-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/comptr-class.md",
+            "redirect_url": "/cpp/windows/wrl/comptr-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/comptrrefbase-class.md",
+            "redirect_url": "/cpp/windows/wrl/comptrrefbase-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/comptrref-class.md",
+            "redirect_url": "/cpp/windows/wrl/comptrref-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/createactivationfactory-function.md",
+            "redirect_url": "/cpp/windows/wrl/createactivationfactory-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/createclassfactory-function.md",
+            "redirect_url": "/cpp/windows/wrl/createclassfactory-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/creatormap-structure.md",
+            "redirect_url": "/cpp/windows/wrl/creatormap-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/criticalsection-class.md",
+            "redirect_url": "/cpp/windows/wrl/criticalsection-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/criticalsectiontraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/criticalsectiontraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/deferrableeventargs-class.md",
+            "redirect_url": "/cpp/windows/wrl/deferrableeventargs-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/derefhelper-structure.md",
+            "redirect_url": "/cpp/windows/wrl/derefhelper-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/dontusenewusemake-class.md",
+            "redirect_url": "/cpp/windows/wrl/dontusenewusemake-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/enableif-structure.md",
+            "redirect_url": "/cpp/windows/wrl/enableif-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/event-class-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/event-class-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/eventsource-class.md",
+            "redirect_url": "/cpp/windows/wrl/eventsource-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/eventtargetarray-class.md",
+            "redirect_url": "/cpp/windows/wrl/eventtargetarray-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/eventtraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/eventtraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/factorycacheflags-enumeration.md",
+            "redirect_url": "/cpp/windows/wrl/factorycacheflags-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/factorycache-structure.md",
+            "redirect_url": "/cpp/windows/wrl/factorycache-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/filehandletraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/filehandletraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ftmbase-class.md",
+            "redirect_url": "/cpp/windows/wrl/ftmbase-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/getactivationfactory-function.md",
+            "redirect_url": "/cpp/windows/wrl/getactivationfactory-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/getmodulebase-function.md",
+            "redirect_url": "/cpp/windows/wrl/getmodulebase-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/handlenulltraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/handlenulltraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/handlet-class.md",
+            "redirect_url": "/cpp/windows/wrl/handlet-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/handletraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/handletraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/how-to-activate-and-use-a-windows-runtime-component-using-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-complete-asynchronous-operations-using-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/how-to-complete-asynchronous-operations-using-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-create-a-classic-com-component-using-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/how-to-create-a-classic-com-component-using-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-handle-events-using-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/how-to-handle-events-using-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-instantiate-wrl-components-directly.md",
+            "redirect_url": "/cpp/windows/wrl/how-to-instantiate-wrl-components-directly",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/hstring-class.md",
+            "redirect_url": "/cpp/windows/wrl/hstring-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/hstringreference-class.md",
+            "redirect_url": "/cpp/windows/wrl/hstringreference-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/iid-ppv-args-helper-function.md",
+            "redirect_url": "/cpp/windows/wrl/iid-ppv-args-helper-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/implementsbase-structure.md",
+            "redirect_url": "/cpp/windows/wrl/implementsbase-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/implementshelper-structure.md",
+            "redirect_url": "/cpp/windows/wrl/implementshelper-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/implements-structure.md",
+            "redirect_url": "/cpp/windows/wrl/implements-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/inspectableclass-macro.md",
+            "redirect_url": "/cpp/windows/wrl/inspectableclass-macro",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/interfacelisthelper-structure.md",
+            "redirect_url": "/cpp/windows/wrl/interfacelisthelper-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/interfacelist-structure.md",
+            "redirect_url": "/cpp/windows/wrl/interfacelist-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/interfacetraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/interfacetraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/invokehelper-structure.md",
+            "redirect_url": "/cpp/windows/wrl/invokehelper-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/invokemodeoptions-structure.md",
+            "redirect_url": "/cpp/windows/wrl/invokemodeoptions-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/isbaseofstrict-structure.md",
+            "redirect_url": "/cpp/windows/wrl/isbaseofstrict-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/issame-structure.md",
+            "redirect_url": "/cpp/windows/wrl/issame-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/key-wrl-apis-by-category.md",
+            "redirect_url": "/cpp/windows/wrl/key-wrl-apis-by-category",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/makeallocator-class.md",
+            "redirect_url": "/cpp/windows/wrl/makeallocator-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/makeandinitialize-function.md",
+            "redirect_url": "/cpp/windows/wrl/makeandinitialize-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/make-function.md",
+            "redirect_url": "/cpp/windows/wrl/make-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/microsoft-wrl-details-namespace.md",
+            "redirect_url": "/cpp/windows/wrl/microsoft-wrl-details-namespace",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/microsoft-wrl-namespace.md",
+            "redirect_url": "/cpp/windows/wrl/microsoft-wrl-namespace",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/microsoft-wrl-wrappers-details-namespace.md",
+            "redirect_url": "/cpp/windows/wrl/microsoft-wrl-wrappers-details-namespace",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/microsoft-wrl-wrappers-handletraits-namespace.md",
+            "redirect_url": "/cpp/windows/wrl/microsoft-wrl-wrappers-handletraits-namespace",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/microsoft-wrl-wrappers-namespace.md",
+            "redirect_url": "/cpp/windows/wrl/microsoft-wrl-wrappers-namespace",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/mixin-structure.md",
+            "redirect_url": "/cpp/windows/wrl/mixin-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/modulebase-class.md",
+            "redirect_url": "/cpp/windows/wrl/modulebase-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/module-class.md",
+            "redirect_url": "/cpp/windows/wrl/module-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/module-genericreleasenotifier-class.md",
+            "redirect_url": "/cpp/windows/wrl/module-genericreleasenotifier-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/module-methodreleasenotifier-class.md",
+            "redirect_url": "/cpp/windows/wrl/module-methodreleasenotifier-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/module-releasenotifier-class.md",
+            "redirect_url": "/cpp/windows/wrl/module-releasenotifier-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/moduletype-enumeration.md",
+            "redirect_url": "/cpp/windows/wrl/moduletype-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/move-function.md",
+            "redirect_url": "/cpp/windows/wrl/move-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/mutex-class.md",
+            "redirect_url": "/cpp/windows/wrl/mutex-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/mutextraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/mutextraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/nil-structure.md",
+            "redirect_url": "/cpp/windows/wrl/nil-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/operator-equality-operator-microsoft-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/operator-equality-operator-microsoft-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/operator-inequality-operator-microsoft-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/operator-inequality-operator-microsoft-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/operator-less-than-operator-microsoft-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/operator-less-than-operator-microsoft-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/raiseexception-function.md",
+            "redirect_url": "/cpp/windows/wrl/raiseexception-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/removeiunknown-class.md",
+            "redirect_url": "/cpp/windows/wrl/removeiunknown-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/removereference-structure.md",
+            "redirect_url": "/cpp/windows/wrl/removereference-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/roinitializewrapper-class.md",
+            "redirect_url": "/cpp/windows/wrl/roinitializewrapper-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/runtimeclassbase-structure.md",
+            "redirect_url": "/cpp/windows/wrl/runtimeclassbase-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/runtimeclassbaset-structure.md",
+            "redirect_url": "/cpp/windows/wrl/runtimeclassbaset-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/runtimeclass-class.md",
+            "redirect_url": "/cpp/windows/wrl/runtimeclass-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/runtimeclassflags-structure.md",
+            "redirect_url": "/cpp/windows/wrl/runtimeclassflags-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/runtimeclasstype-enumeration.md",
+            "redirect_url": "/cpp/windows/wrl/runtimeclasstype-enumeration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/semaphore-class.md",
+            "redirect_url": "/cpp/windows/wrl/semaphore-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/semaphoretraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/semaphoretraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/simpleactivationfactory-class.md",
+            "redirect_url": "/cpp/windows/wrl/simpleactivationfactory-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/simpleclassfactory-class.md",
+            "redirect_url": "/cpp/windows/wrl/simpleclassfactory-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/srwlock-class.md",
+            "redirect_url": "/cpp/windows/wrl/srwlock-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/srwlockexclusivetraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/srwlockexclusivetraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/srwlocksharedtraits-structure.md",
+            "redirect_url": "/cpp/windows/wrl/srwlocksharedtraits-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/swap-function-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/swap-function-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/synclockt-class.md",
+            "redirect_url": "/cpp/windows/wrl/synclockt-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/synclockwithstatust-class.md",
+            "redirect_url": "/cpp/windows/wrl/synclockwithstatust-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/terminatemap-function.md",
+            "redirect_url": "/cpp/windows/wrl/terminatemap-function",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md",
+            "redirect_url": "/cpp/windows/wrl/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/verifyinheritancehelper-structure.md",
+            "redirect_url": "/cpp/windows/wrl/verifyinheritancehelper-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/verifyinterfacehelper-structure.md",
+            "redirect_url": "/cpp/windows/wrl/verifyinterfacehelper-structure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md",
+            "redirect_url": "/cpp/windows/wrl/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/weakref-class.md",
+            "redirect_url": "/cpp/windows/wrl/weakref-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/weakreference-class.md",
+            "redirect_url": "/cpp/windows/wrl/weakreference-class",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/windows-foundation-namespace.md",
+            "redirect_url": "/cpp/windows/wrl/windows-foundation-namespace",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/windows-runtime-cpp-template-library-wrl.md",
+            "redirect_url": "/cpp/windows/wrl/windows-runtime-cpp-template-library-wrl",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/wrl-reference.md",
+            "redirect_url": "/cpp/windows/wrl/wrl-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-1-scope.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#11-scope",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-2-definition-of-terms.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#12-definition-of-terms",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-3-execution-model.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#13-execution-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-4-compliance.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#14-compliance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-5-normative-references.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#15-normative-references",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/1-6-organization.md",
+            "redirect_url": "/cpp/parallel/openmp/1-introduction#16-organization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/4-1-omp-schedule.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables#41-omp_schedule",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/4-2-omp-num-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables#42-omp_num_threads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/4-3-omp-dynamic.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables#43-omp_dynamic",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/4-4-omp-nested.md",
+            "redirect_url": "/cpp/parallel/openmp/4-environment-variables#44-omp_nested",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/c-1-notation.md",
+            "redirect_url": "/cpp/parallel/openmp/c-openmp-c-and-cpp-grammar#c1-notation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/c-2-rules.md",
+            "redirect_url": "/cpp/parallel/openmp/c-openmp-c-and-cpp-grammar#c2-rules",
+            "redirect_document_id": false
         }
     ]
 }

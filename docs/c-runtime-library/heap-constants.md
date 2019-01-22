@@ -10,7 +10,6 @@ ms.assetid: 3f751bb9-2dc4-486f-b5f5-9061c96d3754
 ## Syntax
 
 ```
-
 #include <malloc.h>
 ```
 

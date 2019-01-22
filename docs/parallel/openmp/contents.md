@@ -7,18 +7,6 @@ ms.assetid: b7858099-7d7f-4cd9-9fa0-fba4832f2dd2
 
 [1. Introduction](../../parallel/openmp/1-introduction.md)
 
-[1.1 Scope](../../parallel/openmp/1-1-scope.md)
-
-[1.2 Definition of Terms](../../parallel/openmp/1-2-definition-of-terms.md)
-
-[1.3 Execution Model](../../parallel/openmp/1-3-execution-model.md)
-
-[1.4 Compliance](../../parallel/openmp/1-4-compliance.md)
-
-[1.5 Normative References](../../parallel/openmp/1-5-normative-references.md)
-
-[1.6 Organization](../../parallel/openmp/1-6-organization.md)
-
 [2. Directives](../../parallel/openmp/2-directives.md)
 
 [2.1 Directive Format](../../parallel/openmp/2-1-directive-format.md)
@@ -125,14 +113,6 @@ ms.assetid: b7858099-7d7f-4cd9-9fa0-fba4832f2dd2
 
 [4. Environment Variables](../../parallel/openmp/4-environment-variables.md)
 
-[4.1 OMP_SCHEDULE](../../parallel/openmp/4-1-omp-schedule.md)
-
-[4.2 OMP_NUM_THREADS](../../parallel/openmp/4-2-omp-num-threads.md)
-
-[4.3 OMP_DYNAMIC](../../parallel/openmp/4-3-omp-dynamic.md)
-
-[4.4 OMP_NESTED](../../parallel/openmp/4-4-omp-nested.md)
-
 [A. Examples](../../parallel/openmp/a-examples.md)
 
 [A.1 Executing a Simple Loop in Parallel](../../parallel/openmp/a-1-executing-a-simple-loop-in-parallel.md)
@@ -200,10 +180,6 @@ ms.assetid: b7858099-7d7f-4cd9-9fa0-fba4832f2dd2
 [B. Stubs for Run-time Library Functions](../../parallel/openmp/b-stubs-for-run-time-library-functions.md)
 
 [C. OpenMP C and C++ Grammar](../../parallel/openmp/c-openmp-c-and-cpp-grammar.md)
-
-[C.1 Notation](../../parallel/openmp/c-1-notation.md)
-
-[C.2 Rules](../../parallel/openmp/c-2-rules.md)
 
 [D. Using the schedule Clause](../../parallel/openmp/d-using-the-schedule-clause.md)
 
