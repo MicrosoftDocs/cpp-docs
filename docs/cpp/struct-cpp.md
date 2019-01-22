@@ -12,7 +12,7 @@ The **struct** keyword defines a structure type and/or a variable of a structure
 ## Syntax
 
 ```
-[template-spec] struct[ms-decl-spec] [tag [: base-list ]]
+[template-spec] struct [ms-decl-spec] [tag [: base-list ]]
 {
    member-list
 } [declarators];
@@ -40,7 +40,7 @@ Optional list of classes or structures this structure will derive its members fr
 List of structure members. Refer to [Class Member Overview](../cpp/class-member-overview.md) for more information. The only difference here is that **struct** is used in place of **class**.
 
 *declarators*<br/>
-Declarator list specifying the names of the structure. Declarator lists declare one or more instances of the structure type. Declarators may include initializer lists if all data members of the class are **public**. Initializer lists are common in structures because data members are **public** by default.  See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.
+Declarator list specifying the names of the structure. Declarator lists declare one or more instances of the structure type. Declarators may include initializer lists if all data members of the structure are **public**. Initializer lists are common in structures because data members are **public** by default.  See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.
 
 ## Remarks
 
