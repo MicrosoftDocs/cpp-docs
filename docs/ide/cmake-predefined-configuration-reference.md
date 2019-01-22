@@ -1,7 +1,7 @@
 ---
 title: "CMake predefined configuration reference"
 ms.description: "Visual Studio provides several predefined build configurations for CMake projects on Linux, Windows, ARM, and IoT."
-ms.date: "11/13/2018"
+ms.date: "01/21/2019"
 helpviewer_keywords: ["CMake redefined configurations"]
 ---
 

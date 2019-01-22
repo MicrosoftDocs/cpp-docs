@@ -1,6 +1,6 @@
 ---
 title: "Configure CMake debugging sessions in Visual Studio"
-ms.date: "11/08/2018"
+ms.date: "01/22/2019"
 helpviewer_keywords: ["CMake debugging"]
 ---
 # Configure CMake debugging sessions
@@ -31,7 +31,7 @@ To customize the debugger settings for any executable CMake target in your proje
 
 As soon as you save the launch.vs.json file, an entry is created in the **Startup Item** dropdown with the new name. By editing the launch.vs.json file, you can create as many debug configurations as you like for any number of CMake targets.
 
-**Visual Studio 2017 version 15.4**: Launch.vs.json supports variables that are declared in CMakeSettings.json (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app:
+Launch.vs.json supports variables that are declared in CMakeSettings.json (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app:
 
 ```json
 {

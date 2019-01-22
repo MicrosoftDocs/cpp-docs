@@ -1,6 +1,6 @@
 ---
 title: "Customize CMake settings in Visual Studio"
-ms.date: "11/08/2018"
+ms.date: "01/22/2019"
 helpviewer_keywords: ["CMake settings"]
 ---
 # Customizing CMake settings
@@ -64,7 +64,7 @@ You can also directly edit CMakeSettings.json to create custom configurations Th
 
 1. **buildRoot**: maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
 
-1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D** *_name_=_value_* to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead. The following example shows how to specify the name-value pairs:
+1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D** *_name_=_value_* to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead. The following example shows how to specify the name-value pairs for the 14.14.26428 MSVC toolset:
 
 ```json
 "variables": [
@@ -126,9 +126,9 @@ usage: ninja [options] [targets...]
 |   -t TOOL  | run a subtool (use -t list to list subtools). terminates toplevel options; further flags are passed to the tool|
 |   -w FLAG  | adjust warnings (use -w list to list warnings)|
 
-## Inherited environments (Visual Studio 2017 version 15.5)
+## Inherited environments
 
-CMakeSettings.json now supports inherited environments. This feature enables you to (1) inherit default environments and (2) create custom environment variables that are passed to CMake.exe when it runs.
+CMakeSettings.json supports inherited environments. This feature enables you to (1) inherit default environments and (2) create custom environment variables that are passed to CMake.exe when it runs.
 
 ```json
   "inheritEnvironments": [ "msvc_x64_x64" ]

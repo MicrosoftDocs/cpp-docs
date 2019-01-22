@@ -1,6 +1,6 @@
 ---
 title: "CMake projects in Visual Studio"
-ms.date: "10/18/2018"
+ms.date: "01/22/2019"
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
@@ -10,15 +10,7 @@ CMake is a cross-platform, open-source tool for defining build processes that ru
 
 In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) to generate MSBuild project files, which the IDE then consumes for IntelliSense, browsing, and compilation.
 
-Visual Studio 2017 introduces rich support for CMake, including cross-platform CMake projects. The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes.
-
-**Visual Studio 2017 version 15.3**: Support is provided for both Ninja and Visual Studio generators.
-
-**Visual Studio 2017 version 15.4**: Support is added for CMake on Linux. For more information, see [Configure a Linux CMake Project](../linux/cmake-linux-project.md).
-
-**Visual Studio 2017 version 15.5**: Support is added for importing an existing CMake cache. Visual Studio automatically extracts customized variables and creates a pre-populated CMakeSettings.json file.
-
-**Visual Studio 2017 version 15.7**: Support is added for disabling automatic cache generation, Targets View in **Solution Explorer**, and single-file compilation.
+Visual Studio 2017 introduces rich support for CMake, including [cross-platform CMake projects](../linux/cmake-linux-project.md). The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can import an existing CMake cache; Visual Studio automatically extracts customized variables and creates a pre-populated CMakeSettings.json file. 
 
 ## Installation
 
@@ -36,7 +28,7 @@ When you choose **File | Open | Folder** to open a folder containing a CMakeList
 
 - **Solution Explorer** displays the folder structure and files.
 
-- Visual Studio runs CMake.exe and generates the CMake cache for the default *configuration*, which is x86 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.  **Visual Studio 2017 version 15.7 and later**: Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
+- Visual Studio runs CMake.exe and optionally generates the CMake cache for the default *configuration*, which is x86 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.
 
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
@@ -44,15 +36,13 @@ You can open folders containing any number of CMake projects. Visual Studio dete
 
 ![CMake project with multiple roots](media/cmake-multiple-roots.png)
 
-**Visual Studio 2017 version 15.7 and later**: You can also view your projects organized logically by targets. Choose **Targets view** from the dropdown in the **Solution Explorer** toolbar:
+You can also view your projects organized logically by targets. Choose **Targets view** from the dropdown in the **Solution Explorer** toolbar:
 
 ![CMake targets view button](media/cmake-targets-view.png)
 
 ## Import an existing cache
 
-When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated [CMakeSettings.json](#cmake_settings) file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new CMakeSettings.json file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file.
-
-**Visual Studio 2017 version 15.7 and later**: you can override automatic cache generation in the **Tools | Options | CMake | General** dialog.
+When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated [CMakeSettings.json](#cmake_settings) file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new CMakeSettings.json file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools | Options | CMake | General** dialog.
 
 Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
 
@@ -134,11 +124,11 @@ If you need more information about the state of the CMake cache to diagnose a pr
 
 - **Generate Cache** forces the generate step to run even if Visual Studio considers the environment up-to-date.
 
-**Visual Studio 2017 version 15.7 and later**: Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
+Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
 
 ## Single File Compilation
 
-**Visual Studio 2017 version 15.7 and later**: To build a single file in a CMake project, right-click on the file in **Solution Explorer** and choose **Compile**. You can also build the file that is currently open in the editor by using the main CMake menu:
+To build a single file in a CMake project, right-click on the file in **Solution Explorer** and choose **Compile**. You can also build the file that is currently open in the editor by using the main CMake menu:
 
 ![CMake single file compilation](media/cmake-single-file-compile.png)
 
