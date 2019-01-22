@@ -1351,26 +1351,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/ide/specify-debug-configuration-settings.md",
-            "redirect_url": "cpp/build/specify-debug-configuration-settings",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/ide/specify-project-location-and-source-files.md",
-            "redirect_url": "cpp/build/specify-project-location-and-source-files",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md",
-            "redirect_url": "cpp/build/specify-project-settings-create-new-project-from-existing-code-files-wizard",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/ide/specify-release-configuration.md",
-            "redirect_url": "cpp/build/specify-release-configuration",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/ide/specifying-build-events.md",
             "redirect_url": "cpp/build/specifying-build-events",
             "redirect_document_id": false
@@ -7287,37 +7267,37 @@
         },
         {
             "source_path": "docs/ide/building-external-projects.md",
-            "redirect_url": "/cpp/ide/non-msbuild-projects",
+            "redirect_url": "/cpp/build/non-msbuild-projects",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/redistributing-database-support-files.md",
-            "redirect_url": "../data/data-access-in-cpp",
+            "redirect_url": "/cpp/data/data-access-in-cpp",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/wizard-support-for-other-languages.md",
-            "redirect_url": "../ide/creating-desktop-projects-by-using-application-wizards",
+            "redirect_url": "/cpp/ide/creating-desktop-projects-by-using-application-wizards",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/specify-project-location-and-source-files.md",
-            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md",
-            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/specify-debug-configuration-settings.md",
-            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/specify-release-configuration.md",
-            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
             "redirect_document_id": false
         },
         {
