@@ -16,6 +16,6 @@ The sign of the remainder is the same as the sign of the dividend. For example,
 -50 %  6 == -2
 ```
 
-## See Also
+## See also
 
 [Integers](../c-language/integers.md)

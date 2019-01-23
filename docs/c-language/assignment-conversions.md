@@ -20,6 +20,6 @@ In assignment operations, the type of the value being assigned is converted to t
 
 Type qualifiers do not affect the allowability of the conversion although a **const** l-value cannot be used on the left side of the assignment.
 
-## See Also
+## See also
 
 [Type Conversions](../c-language/type-conversions-c.md)

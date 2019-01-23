@@ -84,6 +84,6 @@ This example defines a function returning a pointer to an array of characters. T
 
 You need not declare functions with `int` return type before you call them, although prototypes are recommended so that correct type checking for arguments and return values is enabled.
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

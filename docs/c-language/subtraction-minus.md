@@ -12,6 +12,6 @@ When two pointers are subtracted, the difference is converted to a signed integr
 
 When an integer value is subtracted from a pointer value, the subtraction operator converts the integer value (*i*) by multiplying it by the size of the value that the pointer addresses. After conversion, the integer value represents *i* memory positions, where each position has the length specified by the pointer type. When the converted integer value is subtracted from the pointer value, the result is the memory address *i* positions before the original address. The new pointer points to a value of the type addressed by the original pointer value.
 
-## See Also
+## See also
 
 [C Additive Operators](../c-language/c-additive-operators.md)

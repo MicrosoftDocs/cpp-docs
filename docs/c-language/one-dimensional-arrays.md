@@ -46,6 +46,6 @@ For example, suppose the identifier `line` refers to an array of `int` values. T
 
 The subscript expression `line[0]` represents the value of the first element of line, since the offset from the address represented by `line` is 0. Similarly, an expression such as `line[5]` refers to the element offset five positions from line, or the sixth element of the array.
 
-## See Also
+## See also
 
 [Subscript Operator:](../cpp/subscript-operator.md)

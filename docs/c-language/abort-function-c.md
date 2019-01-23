@@ -10,6 +10,6 @@ ms.assetid: caa62d67-ffc4-4481-87a4-0c1e2b0f537c
 
 The **abort** function does not close files that are open or temporary. It does not flush stream buffers. For more information, see [abort](../c-runtime-library/reference/abort.md).
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

@@ -34,6 +34,6 @@ while ( i-- > 0 )
 
 In this example, the statement body is executed while `i` is greater than 0. First `f(i)` is assigned to `x`; then, if `x` is equal to 1, the `continue` statement is executed. The rest of the statements in the body are ignored, and execution resumes at the top of the loop with the evaluation of the loop's test.
 
-## See Also
+## See also
 
 [continue Statement](../cpp/continue-statement-cpp.md)

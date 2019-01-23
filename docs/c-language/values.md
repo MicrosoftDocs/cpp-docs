@@ -13,6 +13,6 @@ The **double** type contains 64 bits: 1 for the sign, 11 for the exponent, and 5
 
 The **long double** type contains 80 bits: 1 for the sign, 15 for the exponent, and 64 for the mantissa. Its range is +/- 1.2E4932 with at least 19 digits of precision. Note that with the Microsoft C compiler, the representation of type **long double** is identical to type **double**.
 
-## See Also
+## See also
 
 [Floating-Point Math](../c-language/floating-point-math.md)

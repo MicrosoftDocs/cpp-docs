@@ -15,6 +15,6 @@ fscanf( fileptr, "%[A-Z]", strptr);
 
 reads any number of characters in the range A-Z into the string to which `strptr` points.
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)
