@@ -372,7 +372,7 @@ The `barrier` directive synchronizes all the threads in a team. When encountered
 #pragma omp barrier new-line
 ```
 
-After all threads in the team have encountered the barrier, each thread in the team begins executing the statements after the barrier directive in parallel. Because the `barrier` directive doesn't have a C language statement as part of its syntax, there are some restrictions on its placement within a program. See [Appendix C](c-openmp-c-and-cpp-grammar.md) for the formal grammar. The example below illustrates these restrictions.
+After all threads in the team have encountered the barrier, each thread in the team begins executing the statements after the barrier directive in parallel. Because the `barrier` directive doesn't have a C language statement as part of its syntax, there are some restrictions on its placement within a program. For more information about the formal grammar, see [appendix C](c-openmp-c-and-cpp-grammar.md). The example below illustrates these restrictions.
 
 ```cpp
 /* ERROR - The barrier directive cannot be the immediate
@@ -401,10 +401,10 @@ The `atomic` directive ensures that a specific memory location is updated atomic
 The expression statement must have one of the following forms:
 
 - *x binop* `=` *expr*
-- *x*`++`
-- `++`*x*
-- *x*`--`
-- `--`*x*
+- *x* `++`
+- `++` *x*
+- *x* `--`
+- `--` *x*
 
 In the preceding expressions:
 
@@ -474,7 +474,7 @@ The directive isn't implied if a `nowait` clause is present. It should be noted 
 
 A reference that accesses the value of an object with a volatile-qualified type behaves as if there were a `flush` directive specifying that object at the previous sequence point. A reference that modifies the value of an object with a volatile-qualified type behaves as if there were a `flush` directive specifying that object at the subsequent sequence point.
 
-Because the `flush` directive doesn't have a C language statement as part of its syntax, there are some restrictions on its placement within a program. See [Appendix C](c-openmp-c-and-cpp-grammar.md) for the formal grammar. The example below illustrates these restrictions.
+Because the `flush` directive doesn't have a C language statement as part of its syntax, there are some restrictions on its placement within a program. For more information about the formal grammar, see [appendix C](c-openmp-c-and-cpp-grammar.md). The example below illustrates these restrictions.
 
 ```cpp
 /* ERROR - The flush directive cannot be the immediate
@@ -712,10 +712,10 @@ A reduction is typically specified for a statement with one of the following for
 - *x* `=` *x* *op* *expr*
 - *x* *binop* `=` *expr*
 - *x* `=` *expr* *op* *x*  (except for subtraction)
-- *x*`++`
-- `++`*x*
-- *x*`--`
-- `--`*x*
+- *x* `++`
+- `++` *x*
+- *x* `--`
+- `--` *x*
 
 where:
 
@@ -747,7 +747,7 @@ for (i=0; i<n; i++) {
 
 As shown in the example, an operator may be hidden inside a function call. The user should be careful that the operator specified in the `reduction` clause matches the reduction operation.
 
-Although the right operand of the &#124;&#124; operator has no side effects in this example, they're permitted, but should be used with care. In this context, a side effect that's guaranteed not to occur during sequential execution of the loop may occur during parallel execution. This difference can occur because the order of execution of the iterations is indeterminate.
+Although the right operand of the `||` operator has no side effects in this example, they're permitted, but should be used with care. In this context, a side effect that's guaranteed not to occur during sequential execution of the loop may occur during parallel execution. This difference can occur because the order of execution of the iterations is indeterminate.
 
 The operator is used to determine the initial value of any private variables used by the compiler for the reduction and to determine the finalization operator. Specifying the operator explicitly allows the reduction statement to be outside the lexical extent of the construct. Any number of `reduction` clauses may be specified on the directive, but a variable may appear in at most one `reduction` clause for that directive.
 
