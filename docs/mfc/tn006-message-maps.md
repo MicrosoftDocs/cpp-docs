@@ -100,7 +100,7 @@ The range of user-defined messages that use this approach must be in the range W
 
 ## Registered Windows Messages
 
-The [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) function is used to define a new window message that is guaranteed to be unique throughout the system. The macro ON_REGISTERED_MESSAGE is used to handle these messages. This macro accepts a name of a *UINT NEAR* variable that contains the registered windows message ID. For example
+The [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) function is used to define a new window message that is guaranteed to be unique throughout the system. The macro ON_REGISTERED_MESSAGE is used to handle these messages. This macro accepts a name of a *UINT NEAR* variable that contains the registered windows message ID. For example
 
 ```cpp
 class CMyWnd : public CMyParentWndClass
