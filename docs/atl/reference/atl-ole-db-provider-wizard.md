@@ -76,7 +76,6 @@ The following table describes the options for the ATL OLE DB Provider Wizard:
 
    The provider's implementation file. You can edit this file's name or select an existing implementation file.
 
-## See Also
+## See also
 
 [ATL OLE DB Provider](../../atl/reference/adding-an-atl-ole-db-provider.md)
-

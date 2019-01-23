@@ -36,7 +36,6 @@ The following class implements a dialog box:
 
 [!code-cpp[NVC_ATL_Windowing#66](../atl/codesnippet/cpp/implementing-a-dialog-box_1.h)]
 
-## See Also
+## See also
 
 [Window Classes](../atl/atl-window-classes.md)
-

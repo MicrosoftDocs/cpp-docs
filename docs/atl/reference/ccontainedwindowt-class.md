@@ -436,7 +436,7 @@ The result of the message processing.
 
 `WindowProc` directs messages to the message map identified by [m_dwMsgMapID](#m_dwmsgmapid). If necessary, `WindowProc` calls [DefWindowProc](#defwindowproc) for additional message processing.
 
-## See Also
+## See also
 
 [CWindow Class](../../atl/reference/cwindow-class.md)<br/>
 [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>

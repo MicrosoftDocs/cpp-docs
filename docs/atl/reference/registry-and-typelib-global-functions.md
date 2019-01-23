@@ -418,7 +418,7 @@ The possible enum values that indicate the operation the function should perform
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
 [Functions](atl-functions.md)<br/>
 [Registry Data Exchange Macros](registry-data-exchange-macros.md)

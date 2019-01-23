@@ -154,7 +154,7 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 
 The first four macro parameters are the same as those for the [SINK_ENTRY_EX](#sink_entry_ex) macro. The final parameter provides type information for the event. CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)<br/>
 [Composite Control Global Functions](../../atl/reference/composite-control-global-functions.md)

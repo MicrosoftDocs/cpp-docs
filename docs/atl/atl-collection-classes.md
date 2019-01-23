@@ -110,7 +110,7 @@ The following samples demonstrate the collection classes:
 
 - [Marquee Sample](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [Collection Classes](../atl/collection-classes.md)

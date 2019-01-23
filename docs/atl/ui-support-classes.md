@@ -24,7 +24,6 @@ The following classes provide general UI support:
 
 [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

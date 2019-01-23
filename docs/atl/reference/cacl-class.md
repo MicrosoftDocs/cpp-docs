@@ -367,7 +367,7 @@ void SetNull() throw();
 
 The `CAcl` can be set to empty or to NULL: the two states are distinct.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

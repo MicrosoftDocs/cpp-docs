@@ -26,6 +26,6 @@ The class [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-clas
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

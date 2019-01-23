@@ -207,6 +207,6 @@ addrinfo* const GetAddrInfoList() const;
 
 Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

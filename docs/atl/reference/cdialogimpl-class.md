@@ -306,7 +306,7 @@ The window procedure.
 
 After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog procedure, and further calls go there.
 
-## See Also
+## See also
 
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

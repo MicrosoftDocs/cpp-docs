@@ -27,7 +27,6 @@ The tutorial is divided into seven steps. You should perform each step in order 
 
 - [Step 7: Putting Your Control on a Web Page](../atl/putting-the-control-on-a-web-page-atl-tutorial-part-7.md)
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

@@ -312,7 +312,7 @@ typedef CUrl* LPURL;
 
 **Header:** atlutil.h
 
-## See Also
+## See also
 
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
 [Functions](../../atl/reference/atl-functions.md)<br/>

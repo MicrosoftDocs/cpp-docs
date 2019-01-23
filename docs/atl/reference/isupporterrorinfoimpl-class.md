@@ -151,6 +151,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 See [IThreadPoolConfig::GetSize](#getsize).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

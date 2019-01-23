@@ -361,6 +361,6 @@ Returns TRUE if successful, FALSE if the index was not valid.
 
 Updates both the key and value pointed to by *nIndex*.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

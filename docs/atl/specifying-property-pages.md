@@ -28,7 +28,7 @@ The following class for a calendar control uses the `ISpecifyPropertyPages` inte
 
 [!code-cpp[NVC_ATL_Windowing#72](../atl/codesnippet/cpp/specifying-property-pages_1.h)]
 
-## See Also
+## See also
 
 [Property Pages](../atl/atl-com-property-pages.md)<br/>
 [ATLPages Sample](../visual-cpp-samples.md)

@@ -175,7 +175,7 @@ The number of elements to relocate.
 
 This static function calls [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), which is sufficient for most data types. If the objects being moved contain pointers to their own members, this static function will need to be overridden.
 
-## See Also
+## See also
 
 [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)<br/>
 [CStringElementTraitsI Class](../../atl/reference/cstringelementtraitsi-class.md)<br/>
