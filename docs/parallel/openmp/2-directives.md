@@ -854,7 +854,7 @@ Dynamic nesting of directives must adhere to the following rules:
 
 - `for`, `sections`, and `single` directives that bind to the same `parallel` aren't allowed to be nested inside each other.
 
-- `critical` directives with the same name aren't allowed to be nested inside each other. Note this restriction isn't sufficient to prevent deadlock.
+- `critical` directives with the same name aren't allowed to be nested inside each other. Note that this restriction isn't sufficient to prevent deadlock.
 
 - `for`, `sections`, and `single` directives aren't permitted in the dynamic extent of `critical`, `ordered`, and `master` regions if the directives bind to the same `parallel` as the regions.
 
