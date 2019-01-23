@@ -124,7 +124,7 @@ TCHAR m_szAutoName[13];
 
 ##  <a name="m_wc"></a>  CWndClassInfo::m_wc
 
-Maintains the window class information in a [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577) structure.
+Maintains the window class information in a [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa) structure.
 
 ```
 WNDCLASSEX m_wc;
