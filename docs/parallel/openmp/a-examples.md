@@ -7,7 +7,7 @@ ms.assetid: c0f6192f-a205-449b-b84c-cb30dbcc8b8f
 
 The following are examples of the constructs defined in this document. A statement following a directive is compound only when necessary, and a non-compound statement is indented from a directive preceding it.
 
-## A.1 Executing a simple loop in parallel
+## A.1 A simple loop in parallel
 
 The following example demonstrates how to parallelize a loop using the [parallel for](2-5-1-parallel-for-construct.md) directive. The loop iteration variable is private by default, so it isn't necessary to specify it explicitly in a private clause.
 
@@ -17,7 +17,7 @@ The following example demonstrates how to parallelize a loop using the [parallel
         b[i] = (a[i] + a[i-1]) / 2.0;
 ```
 
-## A.2 Specifying conditional compilation
+## A.2 Conditional compilation
 
 The following examples illustrate the use of conditional compilation using the OpenMP macro [_OPENMP](2-2-conditional-compilation.md). With OpenMP compilation, the `_OPENMP` macro becomes defined.
 
@@ -35,7 +35,7 @@ The defined preprocessor operator allows more than one macro to be tested in a s
 # endif
 ```
 
-## A.3 Using parallel regions
+## A.3 Parallel regions
 
 The [parallel](2-3-parallel-construct.md) directive can be used in coarse-grain parallel programs. In the following example, each thread in the parallel region decides what part of the global array `x` to work on, based on the thread number:
 
@@ -49,7 +49,7 @@ The [parallel](2-3-parallel-construct.md) directive can be used in coarse-grain 
 }
 ```
 
-## A.4 Using the nowait clause
+## A.4 The nowait clause
 
 If there are many independent loops within a parallel region, you can use the [nowait](2-4-1-for-construct.md) clause to avoid the implied barrier at the end of the `for` directive, as follows:
 
@@ -65,7 +65,7 @@ If there are many independent loops within a parallel region, you can use the [n
 }
 ```
 
-## A.5 Using the critical directive
+## A.5 The critical directive
 
 The following example includes several [critical](2-6-2-critical-construct.md) directives. The example illustrates a queuing model in which a task is dequeued and worked on. To guard against many threads dequeuing the same task, the dequeuing operation must be in a `critical` section. Because the two queues in this example are independent, they're protected by `critical` directives with different names, *xaxis* and *yaxis*.
 
@@ -81,7 +81,7 @@ The following example includes several [critical](2-6-2-critical-construct.md) d
 }
 ```
 
-## A.6 Using the lastprivate clause
+## A.6 The lastprivate clause
 
 Correct execution sometimes depends on the value that the last iteration of a loop assigns to a variable. Such programs must list all such variables as arguments to a [lastprivate](2-7-2-3-lastprivate.md) clause so that the values of the variables are the same as when the loop is executed sequentially.
 
@@ -97,7 +97,7 @@ a[i]=b[i];
 
 In the preceding example, the value of `i` at the end of the parallel region will equal `n-1`, as in the sequential case.
 
-## A.7 Using the reduction clause
+## A.7 The reduction clause
 
 The following example demonstrates the [reduction](2-7-2-6-reduction.md) clause:
 
@@ -110,7 +110,7 @@ The following example demonstrates the [reduction](2-7-2-6-reduction.md) clause:
     }
 ```
 
-## A.8 Specifying parallel sections
+## A.8 Parallel sections
 
 In the following example (for [section 2.4.2](2-4-2-sections-construct.md)), functions *xaxis*, *yaxis*, and *zaxis* can be executed concurrently. The first `section` directive is optional.  All `section` directives need to appear in the lexical extent of the `parallel sections` construct.
 
@@ -126,7 +126,7 @@ In the following example (for [section 2.4.2](2-4-2-sections-construct.md)), fun
 }
 ```
 
-## A.9 Using single directives
+## A.9 Single directives
 
 The following example demonstrates the [single](2-4-3-single-construct.md) directive. In the example, only one thread (usually the first thread that encounters the `single` directive) prints the progress message. The user must not make any assumptions as to which thread will execute the `single` section. All other threads will skip the `single` section and stop at the barrier at the end of the `single` construct. If other threads can proceed without waiting for the thread executing the `single` section, a `nowait` clause can be specified on the `single` directive.
 
@@ -144,7 +144,7 @@ The following example demonstrates the [single](2-4-3-single-construct.md) direc
 }
 ```
 
-## A.10 Specifying sequential ordering
+## A.10 Sequential ordering
 
 [Ordered sections](2-6-6-ordered-construct.md) are useful for sequentially ordering the output from work that's done in parallel. The following program prints out the indexes in sequential order:
 
@@ -159,7 +159,7 @@ void work(int k)
 }
 ```
 
-## A.11 Specifying a fixed number of threads
+## A.11 A fixed number of threads
 
 Some programs rely on a fixed, prespecified number of threads to execute correctly.  Because the default setting for the dynamic adjustment of the number of threads is implementation-defined, such programs can choose to turn off the dynamic threads capability and set the number of threads explicitly to keep portability. The following example shows how to do this using [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md), and [omp_set_num_threads](3-1-1-omp-set-num-threads-function.md):
 
@@ -180,7 +180,7 @@ In this example, the program executes correctly only if it's executed by 16 thre
 
 The number of threads executing a parallel region stays constant during a parallel region, regardless of the dynamic threads setting. The dynamic threads mechanism determines the number of threads to use at the start of the parallel region and keeps it constant for the duration of the region.
 
-## A.12 Using the atomic directive
+## A.12 The atomic directive
 
 The following example avoids race conditions (simultaneous updates of an element of *x* by many threads) by using the [atomic](2-6-4-atomic-construct.md) directive:
 
@@ -198,7 +198,7 @@ The advantage of using the `atomic` directive in this example is that it allows 
 
 The `atomic` directive applies only to the C or C++ statement immediately following it.  As a result, elements of *y* aren't updated atomically in this example.
 
-## A.13 Using the flush directive with a list
+## A.13 A flush directive with a list
 
 The following example uses the `flush` directive for point-to-point synchronization of specific objects between pairs of threads:
 
@@ -234,7 +234,7 @@ float work[NUMBER_OF_THREADS];
 }
 ```
 
-## A.14 Using the flush directive without a list
+## A.14 A flush directive without a list
 
 The following example (for [section 2.6.5](2-6-5-flush-directive.md)) distinguishes the shared objects affected by a `flush` directive with no list from the shared objects that aren't affected:
 
@@ -291,7 +291,7 @@ int main()
 }
 ```
 
-## A.15 Determining the number of threads used
+## A.15 The number of threads used
 
 Consider the following incorrect example (for [section 3.1.2](3-1-2-omp-get-num-threads-function.md)):
 
@@ -314,7 +314,7 @@ The following example shows how to rewrite this program without including a quer
 }
 ```
 
-## A.16 Using locks
+## A.16 Locks
 
 In the following example (for [section 3.2](3-2-lock-functions.md)), the argument to the lock functions should have type `omp_lock_t`, and that there's no need to flush it.  The lock functions cause the threads to be idle while waiting for entry to the first critical section, but to do other work while waiting for entry to the second.  The `omp_set_lock` function blocks, but the `omp_test_lock` function doesn't, allowing the work in `skip()` to be done.
 
@@ -354,7 +354,7 @@ int main() {
 }
 ```
 
-## A.17 Using nestable locks
+## A.17 Nestable locks
 
 The following example (for [section 3.2](3-2-lock-functions.md)) demonstrates how a nestable lock can be used to synchronize updates both to a whole structure and to one of its members.
 
@@ -558,7 +558,7 @@ void wrong6()
 }
 ```
 
-## A.20 Binding of barrier directives
+## A.20 Bind barrier directives
 
 The directive binding rules call for a `barrier` directive to bind to the closest enclosing `parallel` directive. For more information on directive binding, see [section 2.8](2-8-directive-binding.md).
 
@@ -597,7 +597,7 @@ void sub3(int n)
 }
 ```
 
-## A.21 Scoping variables with the private clause
+## A.21 Scope variables with the private clause
 
 The values of `i` and `j` in the following example are undefined on exit from the parallel region:
 
@@ -615,7 +615,7 @@ printf_s("%d %d\n", i, j);
 
 For more information on the `private` clause, see [section 2.7.2.1](2-7-2-1-private.md).
 
-## A.22 Using the default(none) clause
+## A.22 The default(none) clause
 
 The following example distinguishes the variables that are affected by the `default(none)` clause from the variables that aren't:
 
@@ -801,7 +801,7 @@ omp_lock_t *new_lock()
 }
 ```
 
-## A.26 Using the threadprivate directive
+## A.26 The threadprivate directive
 
 The following examples demonstrate how to use the [threadprivate](2-7-1-threadprivate-directive.md) directive to give each thread a separate counter.
 
@@ -830,7 +830,7 @@ int sub()
 }
 ```
 
-## A.27 Use of C99 variable length arrays
+## A.27 C99 variable length arrays
 
 The following example demonstrates how to use C99 Variable Length Arrays (VLAs) in a [firstprivate](2-7-2-2-firstprivate.md) directive.
 
@@ -847,7 +847,7 @@ void f(int m, int C[m][m])
 }
 ```
 
-## A.28 Use of num_threads clause
+## A.28 The num_threads clause
 
 The following example demonstrates the [num_threads](2-3-parallel-construct.md) clause. The parallel region is executed with a maximum of 10 threads.
 
@@ -864,7 +864,7 @@ main()
 }
 ```
 
-## A.29 Use of work-sharing constructs inside a critical construct
+## A.29 Work-sharing constructs inside a critical construct
 
 The following example demonstrates using a work-sharing construct inside a `critical` construct. This example is compliant because the work-sharing construct and the `critical` construct don't bind to the same parallel region.
 
@@ -891,7 +891,7 @@ void f()
 }
 ```
 
-## A.30 Use of reprivatization
+## A.30 Reprivatization
 
 The following example demonstrates the reprivatization of variables. Private variables can be marked `private` again in a nested directive. You don't need to share those variables in the enclosing parallel region.
 

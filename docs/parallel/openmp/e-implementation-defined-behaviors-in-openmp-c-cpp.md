@@ -31,7 +31,7 @@ An implementation is required to define and document its behavior in these cases
 
    In Visual C++, the default schedule type is `static` with no chunk size.
 
-- **ATOMIC:** It's implementation-defined whether an implementation replaces all `atomic` directives with **critical** directives that have the same unique name (see page 20).
+- **ATOMIC:** It's implementation-defined whether an implementation replaces all `atomic` directives with `critical` directives that have the same unique name (see page 20).
 
    In Visual C++, if data modified by [atomic](../../parallel/openmp/reference/atomic.md) isn't on a natural alignment or if it's one or two bytes long, all atomic operations that satisfy that property will use one critical section. Otherwise, critical sections won't be used.
 

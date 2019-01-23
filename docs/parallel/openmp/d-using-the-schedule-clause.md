@@ -1,9 +1,9 @@
 ---
-title: "D. Using the schedule clause"
+title: "D. The schedule clause"
 ms.date: "01/22/2019"
 ms.assetid: bf3d8f51-ea05-4803-bf55-657c12e91efe
 ---
-# D. Using the schedule clause
+# D. The schedule clause
 
 A parallel region has at least one barrier, at its end, and may have additional barriers within it. At each barrier, the other members of the team must wait for the last thread to arrive. To minimize this wait time, shared work should be distributed so that all threads arrive at the barrier at about the same time. If some of that shared work is contained in `for` constructs, the `schedule` clause can be used for this purpose.
 
