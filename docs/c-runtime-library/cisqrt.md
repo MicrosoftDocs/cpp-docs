@@ -2,7 +2,7 @@
 title: "_CIsqrt"
 ms.date: "11/04/2016"
 apiname: ["_CIsqrt"]
-apilocation: ["msvcr90.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcrt.dll", "msvcr110.dll", "msvcr100.dll"]
+apilocation: ["msvcr90.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcrt.dll", "msvcr110.dll", "msvcr100.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CIsqrt", "CIsqrt"]
 helpviewer_keywords: ["CIsqrt intrinsic", "_CIsqrt intrinsic"]

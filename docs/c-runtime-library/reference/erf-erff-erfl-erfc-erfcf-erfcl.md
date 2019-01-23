@@ -1,7 +1,7 @@
 ---
 title: "erf, erff, erfl, erfc, erfcf, erfcl"
 ms.date: "11/19/2018"
-apiname: ["erff", "erfl", "erf"]
+apiname: ["erff", "erfl", "erf", "erfc", "erfcf", "erfcl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["erfl", "erf", "erff"]

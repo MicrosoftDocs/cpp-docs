@@ -2,7 +2,7 @@
 title: "_CItan"
 ms.date: "04/11/2018"
 apiname: ["_CItan"]
-apilocation: ["msvcr100.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcrt.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll"]
+apilocation: ["msvcr100.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcrt.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CItan", "CItan"]
 helpviewer_keywords: ["CItan intrinsic", "_CItan intrinsic"]
