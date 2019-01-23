@@ -6400,6 +6400,136 @@
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
         },
+        {  
+            "source_path": "docs/dotnet/lock-members.md", 
+            "redirect_url": "/cpp/dotnet/lock-class", 
+            "redirect_document_id": false 
+        },
+        {  
+            "source_path": "docs/dotnet/lock-lock.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#lock", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-tilde-lock.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#tilde-lock", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-is-locked.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#is-locked", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-bool.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-bool", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-acquire.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#acquire", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-try-acquire.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#try-acquire", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-release.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#release", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-equality.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-equality", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-inequality.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-inequality", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/marshal-context-marshal-context.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-context", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#tilde-marshal-context", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/marshal-context-marshal-as.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-as", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-members.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-ptr.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#ptr", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-tilde-ptr.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#tilde-ptr", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-attach.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#attach", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-createinstance.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#createInstance", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-detach.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#detach", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-getinterface.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#getInterface", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-queryinterface.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#queryInterface", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-release.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#release", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-operator-assign.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-assign", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-operator-arrow.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-arrow", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-operator-logical-not.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-logical-not", 
+            "redirect_document_id": false 
+        },
+        { 
+            "source_path": "docs/dotnet/ptr-operator-bool.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-bool", 
+            "redirect_document_id": false 
+        }, 
         {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
@@ -9261,6 +9391,66 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/dotnet/auto-handle-auto-handle.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#auto-handle",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-tilde-auto-handle.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#tilde-auto-handle",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-members.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#members",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-get.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#get",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-operator-arrow.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#operator-arrow",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-operator-assign.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#operator-assign",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-operator-auto-handle.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#operator-auto-handle",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-operator-bool.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#operator-bool",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-operator-logical-not.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#operator-logical-not",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-release.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#release",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-reset.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#reset",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/dotnet/auto-handle-swap.md",
+            "redirect_url": "/cpp/dotnet/auto-handle-class#swap",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/windows/activatableclass-macros.md",
             "redirect_url": "/cpp/windows/wrl/activatableclass-macros",
             "redirect_document_id": true
@@ -9900,5 +10090,6 @@
             "redirect_url": "/cpp/parallel/openmp/c-openmp-c-and-cpp-grammar#c2-rules",
             "redirect_document_id": false
         }
+
     ]
 }
