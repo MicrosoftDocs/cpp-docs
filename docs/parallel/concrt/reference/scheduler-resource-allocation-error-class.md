@@ -78,6 +78,6 @@ A descriptive message of the error.
 *_Hresult*<br/>
 The `HRESULT` value of the error that caused the exception.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

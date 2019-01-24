@@ -252,4 +252,3 @@ The use of cancellation is appropriate when each member of a group of related ta
 [structured_task_group Class](../../parallel/concrt/reference/structured-task-group-class.md)
 
 [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
-

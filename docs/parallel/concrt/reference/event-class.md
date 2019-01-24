@@ -159,6 +159,6 @@ If the parameter `_FWaitAll` is set to the value `true` to indicate that all eve
 > [!IMPORTANT]
 > In a Universal Windows Platform (UWP) app, do not call `wait_for_multiple` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

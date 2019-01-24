@@ -68,6 +68,6 @@ void report(const _ProgressType& val) const;
 *val*<br/>
 The payload to report through a progress notification.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

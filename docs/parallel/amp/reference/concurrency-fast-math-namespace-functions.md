@@ -1229,6 +1229,6 @@ Returns the integer component of the argument
 **Header:** amp_math.h
 **Namespace:** Concurrency::fast_math
 
-## See Also
+## See also
 
 [Concurrency::fast_math Namespace](concurrency-fast-math-namespace.md)

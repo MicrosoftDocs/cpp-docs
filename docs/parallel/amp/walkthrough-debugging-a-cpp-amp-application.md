@@ -373,7 +373,7 @@ You run all the threads in a given tile to the line that contains the cursor by 
 
    The 24 threads that were previously blocked at the barrier at line 21 have progressed to line 32. This is shown in the **GPU Threads** window.
 
-## See Also
+## See also
 
 [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md)<br/>
 [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)<br/>

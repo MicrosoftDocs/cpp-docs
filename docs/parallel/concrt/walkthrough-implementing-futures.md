@@ -81,7 +81,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc futures.cpp**
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>

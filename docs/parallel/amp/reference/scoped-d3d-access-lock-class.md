@@ -102,6 +102,6 @@ The accelerator_view from which to move the D3D access lock.
 
 A reference to this `scoped_accelerator_view_lock`.
 
-## See Also
+## See also
 
 [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)

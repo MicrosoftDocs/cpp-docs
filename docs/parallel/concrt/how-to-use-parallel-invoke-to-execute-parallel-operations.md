@@ -68,8 +68,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 **cl.exe /EHsc /MD /DUNICODE /D_AFXDLL parallel-word-mining.cpp**
 
-## See Also
+## See also
 
 [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)
-
