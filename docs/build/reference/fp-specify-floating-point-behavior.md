@@ -64,7 +64,7 @@ The compiler provides three pragma directives to override the floating-point beh
 |-|-|-|-|-|
 |**/fp:fast**|off|off|off|on|
 |**/fp:precise**|on|off|off|on|
-|**/fp:except**|on|on|on|off|
+|**/fp:strict**|on|on|on|off|
 
 ### The default floating point environment
 

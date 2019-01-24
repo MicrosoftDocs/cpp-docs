@@ -102,7 +102,7 @@ The HSTRING that receives the copy.
 
 ### Remarks
 
-This method calls the [WindowsDuplicateString](https://msdn.microsoft.com/library/br224634.aspx) function.
+This method calls the [WindowsDuplicateString](/windows/desktop/api/winstring/nf-winstring-windowsduplicatestring) function.
 
 ## <a name="detach"></a>HString::Detach
 

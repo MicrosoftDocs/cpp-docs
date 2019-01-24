@@ -209,7 +209,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-See [EqualPrefixSid](https://msdn.microsoft.com/library/windows/desktop/aa446621) in the Windows SDK for more details.
+See [EqualPrefixSid](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) in the Windows SDK for more details.
 
 ##  <a name="getlength"></a>  CSid::GetLength
 

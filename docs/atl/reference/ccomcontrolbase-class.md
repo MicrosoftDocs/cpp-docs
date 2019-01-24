@@ -429,7 +429,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
 ### Parameters
 
 *ppFont*<br/>
-A pointer to the container's ambient [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) dispatch interface.
+A pointer to the container's ambient [IFontDisp](/windows/desktop/api/ocidl/nn-ocidl-ifontdisp) dispatch interface.
 
 ### Return Value
 

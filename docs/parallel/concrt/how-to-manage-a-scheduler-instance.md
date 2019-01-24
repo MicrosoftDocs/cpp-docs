@@ -30,7 +30,7 @@ The examples create schedulers that use the default scheduler policies. For an e
 
 1. Pass the handle to the event to the [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) function to wait for the scheduler to shut down.
 
-1. Call the [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) function to close the handle to the event object.
+1. Call the [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) function to close the handle to the event object.
 
 ## Example
 

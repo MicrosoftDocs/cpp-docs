@@ -265,7 +265,7 @@ A combination of the attribute to query and the following flags that specify the
 
 - HTTP_QUERY_FLAG_REQUEST_HEADERS Typically, the application queries the response headers, but an application can also query request headers by using this flag.
 
-- HTTP_QUERY_FLAG_SYSTEMTIME For those headers whose value is a date/time string, such as "Last-Modified-Time," this flag returns the header value as a standard Win32 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that does not require the application to parse the data. If you use this flag, you may want to use the `SYSTEMTIME` override of the function.
+- HTTP_QUERY_FLAG_SYSTEMTIME For those headers whose value is a date/time string, such as "Last-Modified-Time," this flag returns the header value as a standard Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that does not require the application to parse the data. If you use this flag, you may want to use the `SYSTEMTIME` override of the function.
 
 - HTTP_QUERY_FLAG_NUMBER For those headers whose value is a number, such as the status code, this flag returns the data as a 32-bit number.
 
@@ -287,7 +287,7 @@ A reference to the [CString](../../atl-mfc-shared/reference/cstringt-class.md) o
 An index value. See *lpdwIndex*.
 
 *pSysTime*<br/>
-A pointer to a Win32 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure.
+A pointer to a Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.
 
 ### Return Value
 
