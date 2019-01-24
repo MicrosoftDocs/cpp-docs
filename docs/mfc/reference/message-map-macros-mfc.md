@@ -498,7 +498,7 @@ END_MESSAGE_MAP()
 
 ### See Also
 
-[RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)<br/>
+[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>
 [User-Defined Handlers](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE

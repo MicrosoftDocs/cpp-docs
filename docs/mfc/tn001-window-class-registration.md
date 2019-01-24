@@ -21,7 +21,7 @@ This `WNDCLASS` must be registered through one of four means:
 
 - Explicitly by calling the MFC [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) or [AfxRegisterClass](../mfc/reference/application-information-and-management.md#afxregisterclass).
 
-- Explicitly by calling the Windows routine [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586).
+- Explicitly by calling the Windows routine [RegisterClass](/windows/desktop/api/winuser/nf-winuser-registerclassa).
 
 ## WNDCLASS Fields
 

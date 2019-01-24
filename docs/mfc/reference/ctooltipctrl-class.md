@@ -619,7 +619,7 @@ void RelayEvent(LPMSG lpMsg);
 ### Parameters
 
 *lpMsg*<br/>
-Pointer to a [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) structure that contains the message to relay.
+Pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-msg) structure that contains the message to relay.
 
 ### Remarks
 

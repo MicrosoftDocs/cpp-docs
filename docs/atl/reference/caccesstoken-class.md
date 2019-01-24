@@ -170,7 +170,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateImpersonationToken` calls [DuplicateToken](https://msdn.microsoft.com/library/windows/desktop/aa446616) to create a new impersonation token.
+`CreateImpersonationToken` calls [DuplicateToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) to create a new impersonation token.
 
 ##  <a name="createprimarytoken"></a>  CAccessToken::CreatePrimaryToken
 
@@ -607,7 +607,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-Calls the [OpenProcessToken](https://msdn.microsoft.com/library/aa379295) Win32 function.
+Calls the [OpenProcessToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) Win32 function.
 
 ##  <a name="getprofile"></a>  CAccessToken::GetProfile
 
@@ -1039,7 +1039,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](https://msdn.microsoft.com/library/windows/desktop/aa379304) Win32 function.
+When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 function.
 
 ##  <a name="revert"></a>  CAccessToken::Revert
 

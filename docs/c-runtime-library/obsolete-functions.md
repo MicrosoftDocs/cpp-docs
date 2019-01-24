@@ -18,7 +18,7 @@ Certain library functions are obsolete and have more recent equivalents. We reco
 |`_unloaddll`|[FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)|
 |`_getdllprocaddr`|[GetProcAddress](../build/getprocaddress.md)|
 |`_seterrormode`|[SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621)|
-|`_beep`|[Beep](https://msdn.microsoft.com/library/windows/desktop/ms679277)|
+|`_beep`|[Beep](/windows/desktop/api/utilapiset/nf-utilapiset-beep)|
 |`_sleep`|[Sleep](/windows/desktop/api/synchapi/nf-synchapi-sleep)|
 |`_getsystime`|[GetLocalTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getlocaltime)|
 |`_setsystime`|[SetLocalTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-setlocaltime)|
