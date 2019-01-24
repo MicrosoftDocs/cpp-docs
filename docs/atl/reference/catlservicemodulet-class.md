@@ -395,7 +395,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section. The default value is SW_HIDE.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section. The default value is SW_HIDE.
 
 ### Return Value
 
@@ -455,7 +455,7 @@ HRESULT Start(int nShowCmd) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section.
 
 ### Return Value
 
@@ -516,7 +516,7 @@ int WinMain(int nShowCmd) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section.
 
 ### Return Value
 

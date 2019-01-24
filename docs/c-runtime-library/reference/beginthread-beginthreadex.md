@@ -93,7 +93,7 @@ It's safer to use **_beginthreadex** than **_beginthread**. If the thread that's
 
 You can call [_endthread](endthread-endthreadex.md) or **_endthreadex** explicitly to terminate a thread; however, **_endthread** or **_endthreadex** is called automatically when the thread returns from the routine that's passed as a parameter. Terminating a thread with a call to **_endthread** or **_endthreadex** helps ensure correct recovery of resources that are allocated for the thread.
 
-**_endthread** automatically closes the thread handle, whereas **_endthreadex** does not. Therefore, when you use **_beginthread** and **_endthread**, do not explicitly close the thread handle by calling the Win32 [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. This behavior differs from the Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
+**_endthread** automatically closes the thread handle, whereas **_endthreadex** does not. Therefore, when you use **_beginthread** and **_endthread**, do not explicitly close the thread handle by calling the Win32 [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) API. This behavior differs from the Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
 
 > [!NOTE]
 > For an executable file linked with Libcmt.lib, do not call the Win32 **ExitThread** API so that you don't prevent the run-time system from reclaiming allocated resources. **_endthread** and **_endthreadex** reclaim allocated thread resources and then call **ExitThread**.

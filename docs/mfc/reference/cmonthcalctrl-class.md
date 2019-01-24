@@ -320,7 +320,7 @@ BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object or a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object. Receives the current time.
 
 *pDateTime*<br/>
-A pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will receive the currently-selected date information. This parameter must be a valid address and cannot be NULL.
+A pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that will receive the currently-selected date information. This parameter must be a valid address and cannot be NULL.
 
 ### Return Value
 
@@ -487,7 +487,7 @@ A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-clas
 A reference to a `COleDateTime` or `CTime` object containing the maximum date allowed.
 
 *pMinRange*<br/>
-A pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
 A pointer to a `SYSTEMTIME` structure containing the date at the highest end of the range.
@@ -533,10 +533,10 @@ DWORD GetRange(
 ### Parameters
 
 *pMinRange*<br/>
-A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
-A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the highest end of the range.
+A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the highest end of the range.
 
 ### Return Value
 
@@ -582,7 +582,7 @@ A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-clas
 A reference to a `COleDateTime` or `CTime` object containing the maximum date allowed.
 
 *pMinRange*<br/>
-A pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
 A pointer to a `SYSTEMTIME` structure containing the date at the highest end of the range.
@@ -613,7 +613,7 @@ BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) or [CTime](../../atl-mfc-shared/reference/ctime-class.md) object indicating the current day.
 
 *pDateTime*<br/>
-A pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will receive the date information. This parameter must be a valid address and cannot be NULL.
+A pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that will receive the date information. This parameter must be a valid address and cannot be NULL.
 
 ### Return Value
 
@@ -887,7 +887,7 @@ BOOL SetCurSel(const CTime& refDateTime);
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) or [CTime](../../atl-mfc-shared/reference/ctime-class.md) object indicating the currently-selected month calendar control.
 
 *pDateTime*<br/>
-Pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that contains the date to be set as the current selection.
+Pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that contains the date to be set as the current selection.
 
 ### Return Value
 
@@ -1072,7 +1072,7 @@ BOOL SetRange(
 ### Parameters
 
 *pMinRange*<br/>
-A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
 A pointer to a `COleDateTime` object, a `CTime` object, or `SYSTEMTIME` structure containing the date at the highest end of the range.
@@ -1110,7 +1110,7 @@ BOOL SetSelRange(
 ### Parameters
 
 *pMinRange*<br/>
-A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
 A pointer to a `COleDateTime` object, a `CTime` object, or `SYSTEMTIME` structure containing the date at the highest end of the range.
@@ -1139,7 +1139,7 @@ void SetToday(const CTime* pDateTime);
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object that contains the current date.
 
 *pDateTime*<br/>
-In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the current date information. In the third version, a pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that contains the current date information.
+In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the current date information. In the third version, a pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that contains the current date information.
 
 ### Remarks
 
