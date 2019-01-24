@@ -6400,136 +6400,136 @@
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
         },
-        {  
-            "source_path": "docs/dotnet/lock-members.md", 
-            "redirect_url": "/cpp/dotnet/lock-class", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-members.md",
+            "redirect_url": "/cpp/dotnet/lock-class",
+            "redirect_document_id": false
         },
-        {  
-            "source_path": "docs/dotnet/lock-lock.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#lock", 
-            "redirect_document_id": false 
-        }, 
-        { 
-            "source_path": "docs/dotnet/lock-tilde-lock.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#tilde-lock", 
-            "redirect_document_id": false 
-        }, 
-        { 
-            "source_path": "docs/dotnet/lock-is-locked.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#is-locked", 
-            "redirect_document_id": false 
-        }, 
-        { 
-            "source_path": "docs/dotnet/lock-operator-bool.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#operator-bool", 
-            "redirect_document_id": false 
-        }, 
-        { 
-            "source_path": "docs/dotnet/lock-acquire.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#acquire", 
-            "redirect_document_id": false 
-        }, 
-        { 
-            "source_path": "docs/dotnet/lock-try-acquire.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#try-acquire", 
-            "redirect_document_id": false 
-        }, 
-        { 
-            "source_path": "docs/dotnet/lock-release.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#release", 
-            "redirect_document_id": false 
-        }, 
-        { 
-            "source_path": "docs/dotnet/lock-operator-equality.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#operator-equality", 
-            "redirect_document_id": false 
-        }, 
-        { 
-            "source_path": "docs/dotnet/lock-operator-inequality.md", 
-            "redirect_url": "/cpp/dotnet/lock-class#operator-inequality", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-lock.md",
+            "redirect_url": "/cpp/dotnet/lock-class#lock",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/marshal-context-marshal-context.md", 
-            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-context", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-tilde-lock.md",
+            "redirect_url": "/cpp/dotnet/lock-class#tilde-lock",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md", 
-            "redirect_url": "/cpp/dotnet/marshal-context-class#tilde-marshal-context", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-is-locked.md",
+            "redirect_url": "/cpp/dotnet/lock-class#is-locked",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/marshal-context-marshal-as.md", 
-            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-as", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-operator-bool.md",
+            "redirect_url": "/cpp/dotnet/lock-class#operator-bool",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-members.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-acquire.md",
+            "redirect_url": "/cpp/dotnet/lock-class#acquire",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-ptr.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#ptr", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-try-acquire.md",
+            "redirect_url": "/cpp/dotnet/lock-class#try-acquire",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-tilde-ptr.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#tilde-ptr", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-release.md",
+            "redirect_url": "/cpp/dotnet/lock-class#release",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-attach.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#attach", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-operator-equality.md",
+            "redirect_url": "/cpp/dotnet/lock-class#operator-equality",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-createinstance.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#createInstance", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/lock-operator-inequality.md",
+            "redirect_url": "/cpp/dotnet/lock-class#operator-inequality",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-detach.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#detach", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/marshal-context-marshal-context.md",
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-context",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-getinterface.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#getInterface", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md",
+            "redirect_url": "/cpp/dotnet/marshal-context-class#tilde-marshal-context",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-queryinterface.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#queryInterface", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/marshal-context-marshal-as.md",
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-as",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-release.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#release", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/ptr-members.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-operator-assign.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-assign", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/ptr-ptr.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#ptr",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-operator-arrow.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-arrow", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/ptr-tilde-ptr.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#tilde-ptr",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-operator-logical-not.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-logical-not", 
-            "redirect_document_id": false 
+        {
+            "source_path": "docs/dotnet/ptr-attach.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#attach",
+            "redirect_document_id": false
         },
-        { 
-            "source_path": "docs/dotnet/ptr-operator-bool.md", 
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-bool", 
-            "redirect_document_id": false 
-        }, 
+        {
+            "source_path": "docs/dotnet/ptr-createinstance.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#createInstance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/ptr-detach.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#detach",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/ptr-getinterface.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#getInterface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/ptr-queryinterface.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#queryInterface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/ptr-release.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/ptr-operator-assign.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/ptr-operator-arrow.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-arrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/ptr-operator-logical-not.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-logical-not",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/ptr-operator-bool.md",
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-bool",
+            "redirect_document_id": false
+        },
         {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
@@ -8561,6 +8561,71 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/dotnet/auto-gcroot-auto-gcroot.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#auto-gcroot",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-get.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#get",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-arrow.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-arrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-assign.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-assign",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-auto-gcroot.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-auto-gcroot",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-bool.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-bool",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-operator-logical-not.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#operator-logical-not",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-release.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#release",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-reset.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#reset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-swap.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#swap",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-tilde-auto-gcroot.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#tilde-auto-gcroot",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-members.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#members",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/dotnet/auto-gcroot-attach.md",
+            "redirect_url": "/cpp/dotnet/auto-gcroot-class#attach",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/srwlock-tilde-srwlock-destructor.md",
             "redirect_url": "/cpp/windows/srwlock-class#tilde-srwlock",
             "redirect_document_id": false
@@ -10089,7 +10154,156 @@
             "source_path": "docs/parallel/openmp/c-2-rules.md",
             "redirect_url": "/cpp/parallel/openmp/c-openmp-c-and-cpp-grammar#c2-rules",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-1-directive-format.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#21-directive-format",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-2-conditional-compilation.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#22-conditional-compilation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-3-parallel-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#23-parallel-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-4-work-sharing-constructs.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#24-work-sharing-constructs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-4-1-for-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#241-for-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-4-2-sections-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#242-sections-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-4-3-single-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#243-single-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-5-combined-parallel-work-sharing-constructs.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#25-combined-parallel-work-sharing-constructs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-5-1-parallel-for-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#251-parallel-for-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-5-2-parallel-sections-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#252-parallel-sections-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-6-master-and-synchronization-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#26-master-and-synchronization-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-6-1-master-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#261-master-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-6-2-critical-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#262-critical-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-6-3-barrier-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#263-barrier-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-6-4-atomic-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#264-atomic-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-6-5-flush-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#265-flush-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-6-6-ordered-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#266-ordered-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-data-environment.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#27-data-environment",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-1-threadprivate-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#271-threadprivate-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-data-sharing-attribute-clauses.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#272-data-sharing-attribute-clauses",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-1-private.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#2721-private",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-2-firstprivate.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#2722-firstprivate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-3-lastprivate.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#2723-lastprivate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-4-shared.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#2724-shared",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-5-default.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#2725-default",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-6-reduction.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#2726-reduction",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-7-copyin.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#2727-copyin",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-7-2-8-copyprivate.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#2728-copyprivate",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-8-directive-binding.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#28-directive-binding",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/2-9-directive-nesting.md",
+            "redirect_url": "/cpp/parallel/openmp/2-directives#29-directive-nesting",
+            "redirect_document_id": false
         }
-
     ]
 }

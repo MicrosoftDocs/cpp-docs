@@ -25,7 +25,7 @@ The following table lists structures that are called from various member functio
 |[CDaoQueryDefInfo Structure](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Structure](/windows/desktop/api/wingdi/ns-wingdi-_rgndata)|
 |[CDaoRelationFieldInfo Structure](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR Structure](/windows/desktop/winsock/sockaddr-2)|
 |[CDaoRelationInfo Structure](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN Structure](/windows/desktop/winsock/sockaddr-2)|
-|[CDaoTableDefInfo Structure](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME Structure](https://msdn.microsoft.com/library/windows/desktop/ms724950)
+|[CDaoTableDefInfo Structure](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME Structure](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime)
 |[CDaoWorkspaceInfo Structure](../../mfc/reference/cdaoworkspaceinfo-structure.md)|[WINDOWPLACEMENT Structure](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement)|
 |[CODBCFieldInfo Structure](../../mfc/reference/codbcfieldinfo-structure.md)|[WINDOWPOS Structure](/windows/desktop/api/winuser/ns-winuser-tagwindowpos)
 |[COLORADJUSTMENT Structure](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment)|[WSADATA Structure](/windows/desktop/api/winsock2/ns-winsock2-wsadata)|
@@ -35,7 +35,7 @@ The following table lists structures that are called from various member functio
 |[DEVNAMES Structure](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames)||
 |[DHtmlUrlEventMapEntry Structure](../../mfc/reference/dhtmlurleventmapentry-structure.md)||
 |[DRAWITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct)||
-|[FILETIME Structure](https://msdn.microsoft.com/library/windows/desktop/ms724284)||
+|[FILETIME Structure](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)||
 
 ## See Also
 

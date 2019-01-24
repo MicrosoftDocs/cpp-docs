@@ -236,7 +236,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Pointer to a [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) structure that contains the message to be checked.
+Pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-msg) structure that contains the message to be checked.
 
 ### Return Value
 

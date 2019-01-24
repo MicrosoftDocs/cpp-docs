@@ -57,7 +57,7 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] Identifies the window that owns the dialog box.
 
 *lpDialogProc*<br/>
-[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
+[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -104,7 +104,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] Identifies the window that owns the dialog box.
 
 *lpDialogProc*<br/>
-[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
+[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
