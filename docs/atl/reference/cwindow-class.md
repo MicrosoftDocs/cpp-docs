@@ -366,7 +366,7 @@ HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
 
 ### Remarks
 
-See [ChildWindowFromPointEx](https://msdn.microsoft.com/library/windows/desktop/ms632677) in the Windows SDK.
+See [ChildWindowFromPointEx](/windows/desktop/api/winuser/nf-winuser-childwindowfrompointex) in the Windows SDK.
 
 ##  <a name="clienttoscreen"></a>  CWindow::ClientToScreen
 
@@ -514,7 +514,7 @@ HDWP DeferWindowPos(
 
 ### Remarks
 
-See [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) in the Windows SDK.
+See [DeferWindowPos](/windows/desktop/api/winuser/nf-winuser-deferwindowpos) in the Windows SDK.
 
 ##  <a name="destroywindow"></a>  CWindow::DestroyWindow
 
@@ -1301,7 +1301,7 @@ If the text is successfully copied, the return value is TRUE; otherwise, the ret
 
 ### Remarks
 
-See [GetWindowText](https://msdn.microsoft.com/library/windows/desktop/ms633520) in the Windows SDK.
+See [GetWindowText](/windows/desktop/api/winuser/nf-winuser-getwindowtexta) in the Windows SDK.
 
 The second version of this method allows you to store the text in a BSTR; the third version allows you to store the result in a [CString](../../atl-mfc-shared/reference/cstringt-class.md), since `CSimpleString` is the base class of `CString`.
 
@@ -2474,7 +2474,7 @@ BOOL SetWindowText(LPCTSTR lpszString) throw();
 
 ### Remarks
 
-See [SetWindowText](https://msdn.microsoft.com/library/windows/desktop/ms633546) in the Windows SDK.
+See [SetWindowText](/windows/desktop/api/winuser/nf-winuser-setwindowtexta) in the Windows SDK.
 
 ### Example
 

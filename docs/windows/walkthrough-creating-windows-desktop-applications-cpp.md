@@ -98,7 +98,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    );
    ```
 
-   For information about the parameters and return value of this function, see [WinMain entry point](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   For information about the parameters and return value of this function, see [WinMain entry point](/windows/desktop/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
    > What are all those extra words, such as `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **__declspec** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press **Ctrl**+**K**, **Ctrl**+**I** for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
@@ -127,7 +127,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
 ### To add functionality to the WinMain function
 
-1. In the `WinMain` function, you populate a structure of type [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577). The structure contains information about the window, for example, the application icon, the background color of the window, the name to display in the title bar, and importantly, a function pointer to your window procedure. The following example shows a typical `WNDCLASSEX` structure.
+1. In the `WinMain` function, you populate a structure of type [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa). The structure contains information about the window, for example, the application icon, the background color of the window, the name to display in the title bar, and importantly, a function pointer to your window procedure. The following example shows a typical `WNDCLASSEX` structure.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -146,7 +146,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   For information about the fields of the structure above, see [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577).
+   For information about the fields of the structure above, see [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa).
 
 1. Register the `WNDCLASSEX` with Windows so that it knows about your window and how to send messages to it. Use the [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type.
 
@@ -228,7 +228,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    return (int) msg.wParam;
    ```
 
-   For more information about the structures and functions in the message loop, see [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
+   For more information about the structures and functions in the message loop, see [MSG](/windows/desktop/api/winuser/ns-winuser-msg), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
 
    At this point, the `WinMain` function should resemble the following code.
 
