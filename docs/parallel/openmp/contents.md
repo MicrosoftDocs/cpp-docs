@@ -11,46 +11,6 @@ ms.assetid: b7858099-7d7f-4cd9-9fa0-fba4832f2dd2
 
 [3. Run-time Library Functions](../../parallel/openmp/3-run-time-library-functions.md)
 
-[3.1 Execution Environment Functions](../../parallel/openmp/3-1-execution-environment-functions.md)
-
-[3.1.1 omp_set_num_threads Function](../../parallel/openmp/3-1-1-omp-set-num-threads-function.md)
-
-[3.1.2 omp_get_num_threads Function](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md)
-
-[3.1.3 omp_get_max_threads Function](../../parallel/openmp/3-1-3-omp-get-max-threads-function.md)
-
-[3.1.4 omp_get_thread_num Function](../../parallel/openmp/3-1-4-omp-get-thread-num-function.md)
-
-[3.1.5 omp_get_num_procs Function](../../parallel/openmp/3-1-5-omp-get-num-procs-function.md)
-
-[3.1.6 omp_in_parallel Function](../../parallel/openmp/3-1-6-omp-in-parallel-function.md)
-
-[3.1.7 omp_set_dynamic Function](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md)
-
-[3.1.8 omp_get_dynamic Function](../../parallel/openmp/3-1-8-omp-get-dynamic-function.md)
-
-[3.1.9 omp_set_nested Function](../../parallel/openmp/3-1-9-omp-set-nested-function.md)
-
-[3.1.10 omp_get_nested Function](../../parallel/openmp/3-1-10-omp-get-nested-function.md)
-
-[3.2 Lock Functions](../../parallel/openmp/3-2-lock-functions.md)
-
-[3.2.1 omp_init_lock and omp_init_nest_lock Functions](../../parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md)
-
-[3.2.2 omp_destroy_lock and omp_destroy_nest_lock Functions](../../parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md)
-
-[3.2.3 omp_set_lock and omp_set_nest_lock Functions](../../parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md)
-
-[3.2.4 omp_unset_lock and omp_unset_nest_lock Functions](../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md)
-
-[3.2.5 omp_test_lock and omp_test_nest_lock Functions](../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md)
-
-[3.3 Timing Routines](../../parallel/openmp/3-3-timing-routines.md)
-
-[3.3.1 omp_get_wtime Function](../../parallel/openmp/3-3-1-omp-get-wtime-function.md)
-
-[3.3.2 omp_get_wtick Function](../../parallel/openmp/3-3-2-omp-get-wtick-function.md)
-
 [4. Environment Variables](../../parallel/openmp/4-environment-variables.md)
 
 [A. Examples](../../parallel/openmp/a-examples.md)
