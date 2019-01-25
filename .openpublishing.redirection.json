@@ -10304,6 +10304,106 @@
             "source_path": "docs/parallel/openmp/2-9-directive-nesting.md",
             "redirect_url": "/cpp/parallel/openmp/2-directives#29-directive-nesting",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-execution-environment-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#31-execution-environment-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#32-lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-3-timing-routines.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#33-timing-routines",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-1-omp-set-num-threads-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#311-omp_set_num_threads-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-2-omp-get-num-threads-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#312-omp_get_num_threads-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-3-omp-get-max-threads-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#313-omp_get_max_threads-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-4-omp-get-thread-num-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#314-omp_get_thread_num-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-5-omp-get-num-procs-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#315-omp_get_num_procs-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-6-omp-in-parallel-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#316-omp_in_parallel-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-7-omp-set-dynamic-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#317-omp_set_dynamic-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-8-omp-get-dynamic-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#318-omp_get_dynamic-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-9-omp-set-nested-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#319-omp_set_nested-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-10-omp-get-nested-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#3110-omp_get_nested-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#321-omp_init_lock-and-omp_init_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#322-omp_destroy_lock-and-omp_destroy_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#323-omp_set_lock-and-omp_set_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#324-omp_unset_lock-and-omp_unset_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#325-omp_test_lock-and-omp_test_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-3-1-omp-get-wtime-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#331-omp_get_wtime-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-3-2-omp-get-wtick-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#332-omp_get_wtick-function",
+            "redirect_document_id": false
         }
     ]
 }
