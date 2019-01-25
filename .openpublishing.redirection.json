@@ -10512,7 +10512,7 @@
         },
         {
             "source_path": "docs/parallel/openmp/a-22-using-the-default-none-clause.md",
-            "redirect_url": "/cpp/parallel/openmp/a-examples#a22-the-default(none)-clause",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a22-the-defaultnone-clause",
             "redirect_document_id": false
         },
         {
