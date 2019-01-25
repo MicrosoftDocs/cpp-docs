@@ -533,7 +533,7 @@ By default, this mode is disabled.
 > [!NOTE]
 >  This function must be called before [CMFCOutlookBar::Create](#create).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

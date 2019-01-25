@@ -59,9 +59,8 @@ The module information stored in the `AFX_EXTENSION_MODULE` structure can be cop
 
 **Header:** afx.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [AfxInitExtensionModule](extension-dll-macros.md#afxinitextensionmodule)<br/>
 [AfxTermExtensionModule](extension-dll-macros.md#afxtermextensionmodule)
-

@@ -22,9 +22,8 @@ To add classes derived from Microsoft Foundation Class (MFC) library classes to 
 
 1. Click **Finish** to close the wizard and view the new class in Class View. You can also view the files created by the wizard in **Solution Explorer**.
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Class Overview](../../mfc/class-library-overview.md)
-

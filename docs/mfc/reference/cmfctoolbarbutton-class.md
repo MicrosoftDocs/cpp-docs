@@ -1589,7 +1589,7 @@ Use the [CMFCToolBarButton::SetVisible](#setvisible) method to set the general v
 
 This method calls the [CMFCToolBarButton::OnShow](#onshow) method after it updates the visibility state of the button.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -50,7 +50,6 @@ Implementing this feature is a four-step process.
 
 1. Rebuild the project. A Circ control will be created dynamically whenever the application's view is created.
 
-## See Also
+## See also
 
 [ActiveX Control Containers](../mfc/activex-control-containers.md)
-

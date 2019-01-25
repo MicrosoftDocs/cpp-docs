@@ -195,8 +195,7 @@ Applications must use the Win32 `GetWinMetaFileBits` function to convert an enha
 
 The filename for the enhanced metafile should use the .EMF extension.
 
-## See Also
+## See also
 
 [CDC Class](../../mfc/reference/cdc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

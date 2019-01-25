@@ -295,4 +295,3 @@ You are responsible for determining the cause based on the operating-system erro
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [CInternetException Class](cinternetexception-class.md)<br/>
 [AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
-

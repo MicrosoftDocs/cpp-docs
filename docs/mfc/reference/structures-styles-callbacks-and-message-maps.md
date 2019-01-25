@@ -30,4 +30,3 @@ Lists the classes in the MFC Library according to category.
 
 [MFC Samples](../../visual-cpp-samples.md)<br/>
 Provides links to samples that demonstrate using the MFC Library.
-

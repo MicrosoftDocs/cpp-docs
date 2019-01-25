@@ -31,7 +31,7 @@ Two other articles discuss events in detail:
 
 - [MFC ActiveX Controls: Adding Custom Events](../mfc/mfc-activex-controls-adding-custom-events.md)
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)<br/>

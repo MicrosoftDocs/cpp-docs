@@ -816,7 +816,7 @@ Typically you should not perform any drawing directly from `OnUpdate`. Instead, 
 
 If *lHint* is 0 and *pHint* is NULL, the document has sent a generic update notification. If a view receives a generic update notification, or if it cannot decode the hints, it should invalidate its entire client area.
 
-## See Also
+## See also
 
 [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

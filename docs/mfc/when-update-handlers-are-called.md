@@ -16,7 +16,6 @@ It is possible to disable the default disabling of user-interface objects. For m
 
 Menu initialization is automatic in the framework, occurring when the application receives a WM_INITMENUPOPUP message. During the idle loop, the framework searches the command routing for button update handlers in much the same way as it does for menus.
 
-## See Also
+## See also
 
 [How to: Update User-Interface Objects](../mfc/how-to-update-user-interface-objects.md)
-

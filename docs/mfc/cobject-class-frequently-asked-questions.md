@@ -15,6 +15,6 @@ This section covers questions on class `CObject`.
 
 - [What does it cost me to derive a class from CObject](what-does-it-cost-me-to-derive-a-class-from-cobject-q.md)
 
-## See Also
+## See also
 
 [Using CObject](../mfc/using-cobject.md)

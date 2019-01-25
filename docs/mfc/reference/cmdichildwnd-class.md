@@ -261,7 +261,7 @@ The handle of an accelerator resource.
 
 Call this function to set the menu and accelerator resources used by the MDI child window object.
 
-## See Also
+## See also
 
 [MFC Sample MDI](../../visual-cpp-samples.md)<br/>
 [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>

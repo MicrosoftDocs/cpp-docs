@@ -74,4 +74,3 @@ Describes the fundamentals about how to use windows in MFC.
 
 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)<br/>
 Provides reference material for the MFC Library. MFC is a set of classes that constitute an application framework, which is the framework of an application written for the Windows API.
-

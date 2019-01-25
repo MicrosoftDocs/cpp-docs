@@ -22,7 +22,6 @@ An MDI frame window also works in conjunction with the current MDI child window,
 
 - [Frame-window styles](../mfc/frame-window-styles-cpp.md)
 
-## See Also
+## See also
 
 [Using Frame Windows](../mfc/using-frame-windows.md)
-

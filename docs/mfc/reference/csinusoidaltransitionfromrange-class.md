@@ -144,6 +144,6 @@ The slope at the start of the transition.
 UI_ANIMATION_SLOPE m_slope;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -448,7 +448,7 @@ void UnlockBuffer() const;
 
 Call `UnlockBuffer` after you have finished using the pointer returned by [LockBuffer](#lockbuffer).
 
-## See Also
+## See also
 
 [MFC Sample SUPERPAD](../../visual-cpp-samples.md)<br/>
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>

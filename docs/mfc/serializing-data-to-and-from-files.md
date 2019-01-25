@@ -30,7 +30,6 @@ The framework responds automatically to the File menu's Open, Save, and Save As 
 
 In general, class-type data should be able to serialize itself. That is, when you pass an object to an archive, the object should know how to write itself to the archive and how to read itself from the archive. MFC provides support for making classes serializable in this way. If you design a class to define a data type and you intend to serialize data of that type, design for serialization.
 
-## See Also
+## See also
 
 [Using Documents](../mfc/using-documents.md)
-

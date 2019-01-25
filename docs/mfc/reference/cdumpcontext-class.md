@@ -249,7 +249,7 @@ If you are dumping a primitive type or simple `CObject` that contains no pointer
 
 [!code-cpp[NVC_MFC_Utilities#16](../../mfc/codesnippet/cpp/cdumpcontext-class_6.cpp)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CFile Class](../../mfc/reference/cfile-class.md)<br/>

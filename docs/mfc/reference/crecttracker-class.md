@@ -439,7 +439,7 @@ This function will capture the mouse until the user releases the left mouse butt
 
 Tracking is performed with a rubber-band-type selection from the lower-right handle. If inverting is allowed, the rectangle can be sized by dragging either up and to the left or down and to the right.
 
-## See Also
+## See also
 
 [MFC Sample TRACKER](../../visual-cpp-samples.md)<br/>
 [MFC Sample DRAWCLI](../../visual-cpp-samples.md)<br/>

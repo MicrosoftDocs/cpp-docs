@@ -310,7 +310,7 @@ This method sets the control text.
 
 This method redefines [CWnd::SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

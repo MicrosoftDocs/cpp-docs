@@ -27,10 +27,9 @@ The preceding figures also suggest the points at which you can override member f
 
 In most cases, your override should call the base class version. For more information, see the named member functions of classes [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md), [CFrameWnd](../mfc/reference/cframewnd-class.md), and [CWinApp](../mfc/reference/cwinapp-class.md) in the MFC Library Reference.
 
-## See Also
+## See also
 
 [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [Document Template Creation](../mfc/document-template-creation.md)<br/>
 [Document/View Creation](../mfc/document-view-creation.md)<br/>
 [Relationships Among MFC Objects](../mfc/relationships-among-mfc-objects.md)
-

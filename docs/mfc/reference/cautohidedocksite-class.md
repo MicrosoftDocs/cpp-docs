@@ -226,7 +226,7 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 
 This method searches for the row that contains *pAutoHideToolbar*. It calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on that row. If *pAutoHideToolbar* is not found or it is NULL, this method calls `CMFCAutoHideBar.UnSetAutoHideMode` for all the `CMFCAutoHideBar` objects on the `CAutoHideDockSite`.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

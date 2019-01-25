@@ -18,7 +18,6 @@ Implements OLE server verbs specifically for Active document servers.
 [COleDocObjectItem](../mfc/reference/coledocobjectitem-class.md)<br/>
 Implements Active document containment.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

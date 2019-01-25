@@ -54,8 +54,7 @@ You may also want to support some of the following features in your container ap
 
    For more information, see [Containers: Advanced Features](../mfc/containers-advanced-features.md).
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Containers: Client Items](../mfc/containers-client-items.md)
-

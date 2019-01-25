@@ -163,7 +163,7 @@ If the `CCriticalSection` is being used stand-alone, `Unlock` must be called imm
 
   See the example for [CCriticalSection::Lock](#lock).
 
-## See Also
+## See also
 
 [CSyncObject Class](../../mfc/reference/csyncobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

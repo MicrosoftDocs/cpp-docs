@@ -207,8 +207,7 @@ The ON_UPDATE_COMMAND_UI handler can call:
 
 Customization can be done through standard window manager APIs.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

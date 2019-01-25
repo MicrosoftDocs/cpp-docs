@@ -29,6 +29,6 @@ In other words, each module is responsible for correctly switching between modul
 
 - [Window procedures](../mfc/window-procedure-entry-points.md)
 
-## See Also
+## See also
 
 [General MFC Topics](../mfc/general-mfc-topics.md)

@@ -91,7 +91,7 @@ This error value may be a system error code, found in WINERROR.H, or an error va
 
 For a list of Win32 error codes, see [Error Codes](/windows/desktop/Debug/system-error-codes). For a list of Internet-specific error messages, see  . Both topics are in the Windows SDK.
 
-## See Also
+## See also
 
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

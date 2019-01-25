@@ -1307,7 +1307,7 @@ void UpdateShadow(LPRECT lprectScreen = NULL);
 
 Call this method when a pop-up menu that has a shadow overlaps an animated image.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

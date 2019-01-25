@@ -1107,7 +1107,7 @@ Specifies how the control site is to be shown. It must be one of the following v
 
 Nonzero if the window was previously visible; 0 if the window was previously hidden.
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

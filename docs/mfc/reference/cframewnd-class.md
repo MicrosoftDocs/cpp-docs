@@ -1165,7 +1165,7 @@ void ShowOwnedWindows(BOOL bShow);
 *bShow*<br/>
 Specifies whether the owned windows are to be shown or hidden.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

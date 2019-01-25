@@ -919,7 +919,7 @@ Pointer to the new name of the item.
 
 The name must be unique within the document. When a server application is called to edit a linked item, the application uses this name to find the item. You do not need to call this function for embedded items.
 
-## See Also
+## See also
 
 [MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [CDocItem Class](../../mfc/reference/cdocitem-class.md)<br/>

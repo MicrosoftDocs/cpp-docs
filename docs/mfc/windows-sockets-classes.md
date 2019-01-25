@@ -18,7 +18,6 @@ Higher level abstraction derived from `CAsyncSocket`. It operates synchronously.
 [CSocketFile](../mfc/reference/csocketfile-class.md)<br/>
 Provides a `CFile` interface to a Windows Socket.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

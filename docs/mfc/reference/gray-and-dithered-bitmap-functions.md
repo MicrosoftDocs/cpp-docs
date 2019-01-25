@@ -197,6 +197,6 @@ The source bitmap is copied to the destination bitmap with a two-color (*cr1* an
 
 **Header:** afxwin.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

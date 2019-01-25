@@ -105,6 +105,6 @@ The absolute value of the variable's velocity.
 DOUBLE m_dblSpeed;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

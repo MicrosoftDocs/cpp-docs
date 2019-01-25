@@ -735,7 +735,7 @@ The identifier of the control.
 *lpszString*<br/>
 Pointer to the text of the control.
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -194,7 +194,7 @@ Nonzero if scrolling is allowed, otherwise 0.
 
 Zero-based index of the drag list box item.
 
-## See Also
+## See also
 
 [MFC Sample TSTCON](../../visual-cpp-samples.md)<br/>
 [CListBox Class](../../mfc/reference/clistbox-class.md)<br/>

@@ -14,8 +14,7 @@ If you create a toolbar using `CToolBarCtrl`, you can implement tool tips for th
 
 The `CToolTipCtrl` class provides the functionality of the Windows common tool tip control. A single tool tip control can provide information for more than one tool. A tool is either a window, such as a child window or control, or an application-defined rectangular area within a window's client area. The [CMFCToolTipCtrl](../mfc/reference/cmfctooltipctrl-class.md) class derives from `CToolTipCtrl` and provides additional visual styles and functionality.
 
-## See Also
+## See also
 
 [Using CToolTipCtrl](../mfc/using-ctooltipctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

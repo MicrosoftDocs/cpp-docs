@@ -292,10 +292,9 @@ The default implementation also sets [m_bShowSplash](#m_bshowsplash) to TRUE onl
 
 Override this function in your derived class to handle other flag and parameter values.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline)<br/>
 [CWinApp::ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand)
-

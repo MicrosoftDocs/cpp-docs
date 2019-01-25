@@ -26,8 +26,7 @@ An application can use member functions to retrieve the dimensions of a slider c
 
 If a slider control has the TBS_ENABLESELRANGE style, the user can select a range of contiguous values from it. A number of member functions allow the selection range to be adjusted dynamically. The [SetSelection](../mfc/reference/csliderctrl-class.md#setselection) member function sets the starting and ending positions of a selection. When the user has finished setting a selection range, an application can retrieve the settings by using the [GetSelection](../mfc/reference/csliderctrl-class.md#getselection) member function. To clear a user's selection, use the [ClearSel](../mfc/reference/csliderctrl-class.md#clearsel) member function.
 
-## See Also
+## See also
 
 [Using CSliderCtrl](../mfc/using-csliderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

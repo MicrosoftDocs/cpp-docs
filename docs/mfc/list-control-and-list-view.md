@@ -26,8 +26,7 @@ To obtain a reference to the `CListCtrl` underlying a `CListView`, call `GetList
 
 This topic describes both ways to use the list control.
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

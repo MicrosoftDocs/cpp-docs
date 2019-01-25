@@ -116,7 +116,7 @@ Pointer to a `RECT` structure or a `CRect` object containing the in-place frame 
 
 Layout of control bars in the container window differs from that performed by a non-OLE frame window. The non-OLE frame window calculates the positions of control bars and other objects from a given frame-window size, as in a call to [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout). The client area is what remains after space for control bars and other objects is subtracted. A `COleIPFrameWnd` window, on the other hand, positions toolbars in accordance with a given client area. In other words, `CFrameWnd::RecalcLayout` works "from the outside in," whereas `COleIPFrameWnd::RepositionFrame` works "from the inside out."
 
-## See Also
+## See also
 
 [MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>

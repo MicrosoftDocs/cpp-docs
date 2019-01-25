@@ -99,7 +99,7 @@ CMemFile m_Cache;
 
 A memory file is stored in RAM rather than on disk.
 
-## See Also
+## See also
 
 [CDataPathProperty Class](../../mfc/reference/cdatapathproperty-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

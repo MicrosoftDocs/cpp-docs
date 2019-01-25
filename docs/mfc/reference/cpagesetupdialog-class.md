@@ -371,9 +371,8 @@ Nonzero value if handled; otherwise 0.
 
 Override this function to customize the drawing of the image. If you override this function and return TRUE, you must draw the entire image. If you override this function and return FALSE, the entire default image is drawn by the framework.
 
-## See Also
+## See also
 
 [MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

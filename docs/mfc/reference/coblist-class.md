@@ -865,7 +865,7 @@ a CAge at $4D98 40
 a CAge at $4DB8 65
 ```
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -136,7 +136,7 @@ In `m_strStateNativeOrigin`: "State:S0022,Native:207,Origin:[Microsoft][ODBC SQL
 
 In `m_strError`: "Invalid column name 'ColName'"
 
-## See Also
+## See also
 
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

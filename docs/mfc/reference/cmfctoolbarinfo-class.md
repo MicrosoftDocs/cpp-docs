@@ -106,7 +106,7 @@ Specifies a resource ID for all the regular menu item images of a toolbar.
 UINT m_uiMenuResID;
 ```
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

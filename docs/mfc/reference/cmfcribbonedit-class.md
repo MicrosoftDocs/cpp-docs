@@ -675,7 +675,7 @@ TRUE to set the width for floating mode; FALSE to set the width for regular mode
 
 The `CMFCRibbonEdit` control has two widths depending on its display mode: floating mode and regular mode.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

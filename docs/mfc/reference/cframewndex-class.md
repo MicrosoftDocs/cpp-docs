@@ -1933,7 +1933,7 @@ The help command. For a list of possible values see [WinHelp](/windows/desktop/a
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

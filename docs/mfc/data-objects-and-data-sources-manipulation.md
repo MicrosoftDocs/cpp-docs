@@ -76,7 +76,7 @@ The user can now insert data into the document just like for any other data in t
 
 - [Clipboard](../mfc/clipboard.md)
 
-## See Also
+## See also
 
 [Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
 [COleDataObject Class](../mfc/reference/coledataobject-class.md)<br/>

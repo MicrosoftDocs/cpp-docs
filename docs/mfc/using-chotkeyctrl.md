@@ -21,7 +21,6 @@ Use a hot key control to get a user's input for which hot key to associate with 
 
 - [Thread-Specific Hot Keys](../mfc/thread-specific-hot-keys.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

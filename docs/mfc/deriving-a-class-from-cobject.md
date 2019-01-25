@@ -48,7 +48,6 @@ Normally, however, you may want to override some of `CObject`'s member functions
 
 The article [Specifying Levels of Functionality](../mfc/specifying-levels-of-functionality.md) describes how to specify other levels of functionality, including run-time class information, dynamic object creation, and serialization.
 
-## See Also
+## See also
 
 [Using CObject](../mfc/using-cobject.md)
-

@@ -101,7 +101,7 @@ BOOL IsInitDlgCompleted() const;
 
 True if the initialization function for this dialog has completed.
 
-## See Also
+## See also
 
 [MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
 [MFC Sample VIEWEX](../../visual-cpp-samples.md)<br/>

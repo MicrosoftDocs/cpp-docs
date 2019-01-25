@@ -219,8 +219,7 @@ A file exception will be thrown if the open fails and *pError* is not NULL.
 
 For more information, see [IStorage::OpenStream](/windows/desktop/api/objidl/nf-objidl-istorage-openstream) in the Windows SDK.
 
-## See Also
+## See also
 
 [CFile Class](../../mfc/reference/cfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

@@ -14,7 +14,6 @@ See the following sample programs that illustrate common controls:
 
 - [CTRLTEST](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

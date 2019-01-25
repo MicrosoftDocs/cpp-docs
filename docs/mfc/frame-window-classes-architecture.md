@@ -25,7 +25,6 @@ The base class for an MDI application's document frame windows.
 [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)<br/>
 Provides the frame window for a view when a server document is being edited in place.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

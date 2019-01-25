@@ -139,7 +139,7 @@ If you parameterize your recordset class, you should add DFX calls for all param
 
 In general, each group of DFX function calls associated with field data members or parameter data members must be preceded by a call to `SetFieldType`. The *nFieldType* parameter of each `SetFieldType` call identifies the type of the data members represented by the DFX function calls that follow the `SetFieldType` call.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)

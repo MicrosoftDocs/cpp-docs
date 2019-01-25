@@ -30,7 +30,6 @@ The following table shows MFC's view classes and their relationships to one anot
 
 To use these classes in your application, derive the application's view classes from them. For related information, see [Scrolling and Scaling Views](../mfc/scrolling-and-scaling-views.md). For more information on the database classes, see [Overview: Database Programming](../data/data-access-programming-mfc-atl.md).
 
-## See Also
+## See also
 
 [Using Views](../mfc/using-views.md)
-
