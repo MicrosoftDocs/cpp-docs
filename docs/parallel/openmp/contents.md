@@ -9,66 +9,6 @@ ms.assetid: b7858099-7d7f-4cd9-9fa0-fba4832f2dd2
 
 [2. Directives](../../parallel/openmp/2-directives.md)
 
-[2.1 Directive Format](../../parallel/openmp/2-1-directive-format.md)
-
-[2.2 Conditional Compilation](../../parallel/openmp/2-2-conditional-compilation.md)
-
-[2.3 parallel Construct](../../parallel/openmp/2-3-parallel-construct.md)
-
-[2.4 Work-sharing Constructs](../../parallel/openmp/2-4-work-sharing-constructs.md)
-
-[2.4.1 for Construct](../../parallel/openmp/2-4-1-for-construct.md)
-
-[2.4.2 sections Construct](../../parallel/openmp/2-4-2-sections-construct.md)
-
-[2.4.3 single Construct](../../parallel/openmp/2-4-3-single-construct.md)
-
-[2.5 Combined Parallel Work-sharing Constructs](../../parallel/openmp/2-5-combined-parallel-work-sharing-constructs.md)
-
-[2.5.1 parallel for Construct](../../parallel/openmp/2-5-1-parallel-for-construct.md)
-
-[2.5.2 parallel sections Construct](../../parallel/openmp/2-5-2-parallel-sections-construct.md)
-
-[2.6 Master and Synchronization Directives](../../parallel/openmp/2-6-master-and-synchronization-directives.md)
-
-[2.6.1 master Construct](../../parallel/openmp/2-6-1-master-construct.md)
-
-[2.6.2 critical Construct](../../parallel/openmp/2-6-2-critical-construct.md)
-
-[2.6.3 barrier Directive](../../parallel/openmp/2-6-3-barrier-directive.md)
-
-[2.6.4 atomic Construct](../../parallel/openmp/2-6-4-atomic-construct.md)
-
-[2.6.5 flush Directive](../../parallel/openmp/2-6-5-flush-directive.md)
-
-[2.6.6 ordered Construct](../../parallel/openmp/2-6-6-ordered-construct.md)
-
-[2.7 Data Environment](../../parallel/openmp/2-7-data-environment.md)
-
-[2.7.1 threadprivate Directive](../../parallel/openmp/2-7-1-threadprivate-directive.md)
-
-[2.7.2 Data-Sharing Attribute Clauses](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md)
-
-[2.7.2.1 private](../../parallel/openmp/2-7-2-1-private.md)
-
-[2.7.2.2 firstprivate](../../parallel/openmp/2-7-2-2-firstprivate.md)
-
-[2.7.2.3 lastprivate](../../parallel/openmp/2-7-2-3-lastprivate.md)
-
-[2.7.2.4 shared](../../parallel/openmp/2-7-2-4-shared.md)
-
-[2.7.2.5 default](../../parallel/openmp/2-7-2-5-default.md)
-
-[2.7.2.6 reduction](../../parallel/openmp/2-7-2-6-reduction.md)
-
-[2.7.2.7 copyin](../../parallel/openmp/2-7-2-7-copyin.md)
-
-[2.7.2.8 copyprivate](../../parallel/openmp/2-7-2-8-copyprivate.md)
-
-[2.8 Directive Binding](../../parallel/openmp/2-8-directive-binding.md)
-
-[2.9 Directive Nesting](../../parallel/openmp/2-9-directive-nesting.md)
-
 [3. Run-time Library Functions](../../parallel/openmp/3-run-time-library-functions.md)
 
 [4. Environment Variables](../../parallel/openmp/4-environment-variables.md)

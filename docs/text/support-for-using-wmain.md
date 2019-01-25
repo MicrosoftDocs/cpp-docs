@@ -24,4 +24,4 @@ Similarly, if your program uses a **wmain** function, a wide-character environme
 
 [Support for Unicode](../text/support-for-unicode.md)<br/>
 [Unicode Programming Summary](../text/unicode-programming-summary.md)<br/>
-[WinMain Function](https://msdn.microsoft.com/library/windows/desktop/ms633559)
+[WinMain Function](/windows/desktop/api/winbase/nf-winbase-winmain)
