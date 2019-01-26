@@ -9,7 +9,7 @@ The following are examples of the constructs defined in this document. A stateme
 
 ## A.1 A simple loop in parallel
 
-The following example demonstrates how to parallelize a loop using the [parallel for](2-5-1-parallel-for-construct.md) directive. The loop iteration variable is private by default, so it isn't necessary to specify it explicitly in a private clause.
+The following example demonstrates how to parallelize a loop using the [parallel for](2-directives.md#251-parallel-for-construct) directive. The loop iteration variable is private by default, so it isn't necessary to specify it explicitly in a private clause.
 
 ```cpp
 #pragma omp parallel for
@@ -19,7 +19,7 @@ The following example demonstrates how to parallelize a loop using the [parallel
 
 ## A.2 Conditional compilation
 
-The following examples illustrate the use of conditional compilation using the OpenMP macro [_OPENMP](2-2-conditional-compilation.md). With OpenMP compilation, the `_OPENMP` macro becomes defined.
+The following examples illustrate the use of conditional compilation using the OpenMP macro [_OPENMP](2-directives.md#22-conditional-compilation). With OpenMP compilation, the `_OPENMP` macro becomes defined.
 
 ```cpp
 # ifdef _OPENMP
@@ -37,7 +37,7 @@ The defined preprocessor operator allows more than one macro to be tested in a s
 
 ## A.3 Parallel regions
 
-The [parallel](2-3-parallel-construct.md) directive can be used in coarse-grain parallel programs. In the following example, each thread in the parallel region decides what part of the global array `x` to work on, based on the thread number:
+The [parallel](2-directives.md#23-parallel-construct) directive can be used in coarse-grain parallel programs. In the following example, each thread in the parallel region decides what part of the global array `x` to work on, based on the thread number:
 
 ```cpp
 #pragma omp parallel shared(x, npoints) private(iam, np, ipoints)
@@ -51,7 +51,7 @@ The [parallel](2-3-parallel-construct.md) directive can be used in coarse-grain 
 
 ## A.4 The nowait clause
 
-If there are many independent loops within a parallel region, you can use the [nowait](2-4-1-for-construct.md) clause to avoid the implied barrier at the end of the `for` directive, as follows:
+If there are many independent loops within a parallel region, you can use the [nowait](2-directives.md#241-for-construct) clause to avoid the implied barrier at the end of the `for` directive, as follows:
 
 ```cpp
 #pragma omp parallel
@@ -67,7 +67,7 @@ If there are many independent loops within a parallel region, you can use the [n
 
 ## A.5 The critical directive
 
-The following example includes several [critical](2-6-2-critical-construct.md) directives. The example illustrates a queuing model in which a task is dequeued and worked on. To guard against many threads dequeuing the same task, the dequeuing operation must be in a `critical` section. Because the two queues in this example are independent, they're protected by `critical` directives with different names, *xaxis* and *yaxis*.
+The following example includes several [critical](2-directives.md#262-critical-construct) directives. The example illustrates a queuing model in which a task is dequeued and worked on. To guard against many threads dequeuing the same task, the dequeuing operation must be in a `critical` section. Because the two queues in this example are independent, they're protected by `critical` directives with different names, *xaxis* and *yaxis*.
 
 ```cpp
 #pragma omp parallel shared(x, y) private(x_next, y_next)
@@ -83,7 +83,7 @@ The following example includes several [critical](2-6-2-critical-construct.md) d
 
 ## A.6 The lastprivate clause
 
-Correct execution sometimes depends on the value that the last iteration of a loop assigns to a variable. Such programs must list all such variables as arguments to a [lastprivate](2-7-2-3-lastprivate.md) clause so that the values of the variables are the same as when the loop is executed sequentially.
+Correct execution sometimes depends on the value that the last iteration of a loop assigns to a variable. Such programs must list all such variables as arguments to a [lastprivate](2-directives.md#2723-lastprivate) clause so that the values of the variables are the same as when the loop is executed sequentially.
 
 ```cpp
 #pragma omp parallel
@@ -99,7 +99,7 @@ In the preceding example, the value of `i` at the end of the parallel region wil
 
 ## A.7 The reduction clause
 
-The following example demonstrates the [reduction](2-7-2-6-reduction.md) clause:
+The following example demonstrates the [reduction](2-directives.md#2726-reduction) clause:
 
 ```cpp
 #pragma omp parallel for private(i) shared(x, y, n) \
@@ -112,7 +112,7 @@ The following example demonstrates the [reduction](2-7-2-6-reduction.md) clause:
 
 ## A.8 Parallel sections
 
-In the following example (for [section 2.4.2](2-4-2-sections-construct.md)), functions *xaxis*, *yaxis*, and *zaxis* can be executed concurrently. The first `section` directive is optional.  All `section` directives need to appear in the lexical extent of the `parallel sections` construct.
+In the following example (for [section 2.4.2](2-directives.md#242-sections-construct)), functions *xaxis*, *yaxis*, and *zaxis* can be executed concurrently. The first `section` directive is optional.  All `section` directives need to appear in the lexical extent of the `parallel sections` construct.
 
 ```cpp
 #pragma omp parallel sections
@@ -128,7 +128,7 @@ In the following example (for [section 2.4.2](2-4-2-sections-construct.md)), fun
 
 ## A.9 Single directives
 
-The following example demonstrates the [single](2-4-3-single-construct.md) directive. In the example, only one thread (usually the first thread that encounters the `single` directive) prints the progress message. The user must not make any assumptions as to which thread will execute the `single` section. All other threads will skip the `single` section and stop at the barrier at the end of the `single` construct. If other threads can proceed without waiting for the thread executing the `single` section, a `nowait` clause can be specified on the `single` directive.
+The following example demonstrates the [single](2-directives.md#243-single-construct) directive. In the example, only one thread (usually the first thread that encounters the `single` directive) prints the progress message. The user must not make any assumptions as to which thread will execute the `single` section. All other threads will skip the `single` section and stop at the barrier at the end of the `single` construct. If other threads can proceed without waiting for the thread executing the `single` section, a `nowait` clause can be specified on the `single` directive.
 
 ```cpp
 #pragma omp parallel
@@ -146,7 +146,7 @@ The following example demonstrates the [single](2-4-3-single-construct.md) direc
 
 ## A.10 Sequential ordering
 
-[Ordered sections](2-6-6-ordered-construct.md) are useful for sequentially ordering the output from work that's done in parallel. The following program prints out the indexes in sequential order:
+[Ordered sections](2-directives.md#266-ordered-construct) are useful for sequentially ordering the output from work that's done in parallel. The following program prints out the indexes in sequential order:
 
 ```cpp
 #pragma omp for ordered schedule(dynamic)
@@ -161,7 +161,7 @@ void work(int k)
 
 ## A.11 A fixed number of threads
 
-Some programs rely on a fixed, prespecified number of threads to execute correctly.  Because the default setting for the dynamic adjustment of the number of threads is implementation-defined, such programs can choose to turn off the dynamic threads capability and set the number of threads explicitly to keep portability. The following example shows how to do this using [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md), and [omp_set_num_threads](3-1-1-omp-set-num-threads-function.md):
+Some programs rely on a fixed, prespecified number of threads to execute correctly.  Because the default setting for the dynamic adjustment of the number of threads is implementation-defined, such programs can choose to turn off the dynamic threads capability and set the number of threads explicitly to keep portability. The following example shows how to do this using [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function), and [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function):
 
 ```cpp
 omp_set_dynamic(0);
@@ -182,7 +182,7 @@ The number of threads executing a parallel region stays constant during a parall
 
 ## A.12 The atomic directive
 
-The following example avoids race conditions (simultaneous updates of an element of *x* by many threads) by using the [atomic](2-6-4-atomic-construct.md) directive:
+The following example avoids race conditions (simultaneous updates of an element of *x* by many threads) by using the [atomic](2-directives.md#264-atomic-construct) directive:
 
 ```cpp
 #pragma omp parallel for shared(x, y, index, n)
@@ -194,7 +194,7 @@ The following example avoids race conditions (simultaneous updates of an element
     }
 ```
 
-The advantage of using the `atomic` directive in this example is that it allows updates of two different elements of x to occur in parallel. If a [critical](2-6-2-critical-construct.md) directive is used instead, then all updates to elements of *x* are executed serially (though not in any guaranteed order).
+The advantage of using the `atomic` directive in this example is that it allows updates of two different elements of x to occur in parallel. If a [critical](2-directives.md#262-critical-construct) directive is used instead, then all updates to elements of *x* are executed serially (though not in any guaranteed order).
 
 The `atomic` directive applies only to the C or C++ statement immediately following it.  As a result, elements of *y* aren't updated atomically in this example.
 
@@ -236,7 +236,7 @@ float work[NUMBER_OF_THREADS];
 
 ## A.14 A flush directive without a list
 
-The following example (for [section 2.6.5](2-6-5-flush-directive.md)) distinguishes the shared objects affected by a `flush` directive with no list from the shared objects that aren't affected:
+The following example (for [section 2.6.5](2-directives.md#265-flush-directive)) distinguishes the shared objects affected by a `flush` directive with no list from the shared objects that aren't affected:
 
 ```cpp
 // omp_flush_without_list.c
@@ -293,7 +293,7 @@ int main()
 
 ## A.15 The number of threads used
 
-Consider the following incorrect example (for [section 3.1.2](3-1-2-omp-get-num-threads-function.md)):
+Consider the following incorrect example (for [section 3.1.2](3-run-time-library-functions.md#312-omp_get_num_threads-function)):
 
 ```cpp
 np = omp_get_num_threads(); // misplaced
@@ -316,7 +316,7 @@ The following example shows how to rewrite this program without including a quer
 
 ## A.16 Locks
 
-In the following example (for [section 3.2](3-2-lock-functions.md)), the argument to the lock functions should have type `omp_lock_t`, and that there's no need to flush it.  The lock functions cause the threads to be idle while waiting for entry to the first critical section, but to do other work while waiting for entry to the second.  The `omp_set_lock` function blocks, but the `omp_test_lock` function doesn't, allowing the work in `skip()` to be done.
+In the following example (for [section 3.2](3-run-time-library-functions.md#32-lock-functions)), the argument to the lock functions should have type `omp_lock_t`, and that there's no need to flush it.  The lock functions cause the threads to be idle while waiting for entry to the first critical section, but to do other work while waiting for entry to the second.  The `omp_set_lock` function blocks, but the `omp_test_lock` function doesn't, allowing the work in `skip()` to be done.
 
 ```cpp
 // omp_using_locks.c
@@ -356,7 +356,7 @@ int main() {
 
 ## A.17 Nestable locks
 
-The following example (for [section 3.2](3-2-lock-functions.md)) demonstrates how a nestable lock can be used to synchronize updates both to a whole structure and to one of its members.
+The following example (for [section 3.2](3-run-time-library-functions.md#32-lock-functions)) demonstrates how a nestable lock can be used to synchronize updates both to a whole structure and to one of its members.
 
 ```cpp
 #include <omp.h>
@@ -401,7 +401,7 @@ void f(pair *p)
 
 ## A.18 Nested for directives
 
-The following example of `for` [directive nesting](2-9-directive-nesting.md) is compliant because the inner and outer `for` directives bind to different parallel regions:
+The following example of `for` [directive nesting](2-directives.md#29-directive-nesting) is compliant because the inner and outer `for` directives bind to different parallel regions:
 
 ```cpp
 #pragma omp parallel default(shared)
@@ -444,7 +444,7 @@ void work1(int i, int n)
 
 ## A.19 Examples showing incorrect nesting of work-sharing directives
 
-The examples in this section illustrate the [directive nesting](2-9-directive-nesting.md) rules.
+The examples in this section illustrate the [directive nesting](2-directives.md#29-directive-nesting) rules.
 
 The following example is noncompliant because the inner and outer `for` directives are nested and bind to the same `parallel` directive:
 
@@ -560,7 +560,7 @@ void wrong6()
 
 ## A.20 Bind barrier directives
 
-The directive binding rules call for a `barrier` directive to bind to the closest enclosing `parallel` directive. For more information on directive binding, see [section 2.8](2-8-directive-binding.md).
+The directive binding rules call for a `barrier` directive to bind to the closest enclosing `parallel` directive. For more information on directive binding, see [section 2.8](2-directives.md#28-directive-binding).
 
 In the following example, the call from *main* to *sub2* is compliant because the `barrier` (in *sub3*) binds to the parallel region in *sub2*. The call from *main* to *sub1* is compliant because the `barrier` binds to the parallel region in subroutine *sub2*.  The call from *main* to *sub3* is compliant because the `barrier` doesn't bind to any parallel region and is ignored. Also, the `barrier` only synchronizes the team of threads in the enclosing parallel region and not all the threads created in *sub1*.
 
@@ -613,7 +613,7 @@ j = 2;
 printf_s("%d %d\n", i, j);
 ```
 
-For more information on the `private` clause, see [section 2.7.2.1](2-7-2-1-private.md).
+For more information on the `private` clause, see [section 2.7.2.1](2-directives.md#2721-private).
 
 ## A.22 The default(none) clause
 
@@ -652,13 +652,13 @@ void fun(int a) {
 }
 ```
 
-For more information on the `default` clause, see [section 2.7.2.5](2-7-2-5-default.md).
+For more information on the `default` clause, see [section 2.7.2.5](2-directives.md#2725-default).
 
 ## A.23 Examples of the ordered directive
 
 It's possible to have many ordered sections with a `for` specified with the `ordered` clause. The first example is noncompliant because the API specifies the following rule:
 
-"An iteration of a loop with a `for` construct must not execute the same `ordered` directive more than once, and it must not execute more than one `ordered` directive." (See [section 2.6.6](2-6-6-ordered-construct.md).)
+"An iteration of a loop with a `for` construct must not execute the same `ordered` directive more than once, and it must not execute more than one `ordered` directive." (See [section 2.6.6](2-directives.md#266-ordered-construct).)
 
 In this noncompliant example, all iterations execute two ordered sections:
 
@@ -702,7 +702,7 @@ for (i=0; i<n; i++)
 
 ## A.24 Example of the private clause
 
-The [private](2-7-2-1-private.md) clause of a parallel region is only in effect for the lexical extent of the region, not for the dynamic extent of the region.  Therefore, in the example that follows, any uses of the variable *a* within the `for` loop in the routine *f* refers to a private copy of *a*, while a usage in routine *g* refers to the global *a*.
+The [private](2-directives.md#2721-private) clause of a parallel region is only in effect for the lexical extent of the region, not for the dynamic extent of the region.  Therefore, in the example that follows, any uses of the variable *a* within the `for` loop in the routine *f* refers to a private copy of *a*, while a usage in routine *g* refers to the global *a*.
 
 ```cpp
 int a;
@@ -729,7 +729,7 @@ void g(int k, int n)
 
 ## A.25 Examples of the copyprivate data attribute clause
 
-**Example 1:** The [copyprivate](2-7-2-8-copyprivate.md) clause can be used to broadcast values acquired by a single thread directly to all instances of the private variables in the other threads.
+**Example 1:** The [copyprivate](2-directives.md#2728-copyprivate) clause can be used to broadcast values acquired by a single thread directly to all instances of the private variables in the other threads.
 
 ```cpp
 float x, y;
@@ -803,7 +803,7 @@ omp_lock_t *new_lock()
 
 ## A.26 The threadprivate directive
 
-The following examples demonstrate how to use the [threadprivate](2-7-1-threadprivate-directive.md) directive to give each thread a separate counter.
+The following examples demonstrate how to use the [threadprivate](2-directives.md#271-threadprivate-directive) directive to give each thread a separate counter.
 
 ### Example 1
 
@@ -832,7 +832,7 @@ int sub()
 
 ## A.27 C99 variable length arrays
 
-The following example demonstrates how to use C99 Variable Length Arrays (VLAs) in a [firstprivate](2-7-2-2-firstprivate.md) directive.
+The following example demonstrates how to use C99 Variable Length Arrays (VLAs) in a [firstprivate](2-directives.md#2722-firstprivate) directive.
 
 > [!NOTE]
 > Variable length arrays aren't currently supported in Visual C++.
@@ -849,7 +849,7 @@ void f(int m, int C[m][m])
 
 ## A.28 The num_threads clause
 
-The following example demonstrates the [num_threads](2-3-parallel-construct.md) clause. The parallel region is executed with a maximum of 10 threads.
+The following example demonstrates the [num_threads](2-directives.md#23-parallel-construct) clause. The parallel region is executed with a maximum of 10 threads.
 
 ```cpp
 #include <omp.h>
@@ -911,7 +911,7 @@ int i, a;
 
 ## A.31 Thread-safe lock functions
 
-The following C++ example demonstrates how to initialize an array of locks in a parallel region by using [omp_init_lock](3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md).
+The following C++ example demonstrates how to initialize an array of locks in a parallel region by using [omp_init_lock](3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions).
 
 ```cpp
 // A_13_omp_init_lock.cpp

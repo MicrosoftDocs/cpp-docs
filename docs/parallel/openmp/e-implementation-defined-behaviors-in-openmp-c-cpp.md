@@ -33,28 +33,28 @@ An implementation is required to define and document its behavior in these cases
 
 - **ATOMIC:** It's implementation-defined whether an implementation replaces all `atomic` directives with `critical` directives that have the same unique name (see page 20).
 
-   In Visual C++, if data modified by [atomic](../../parallel/openmp/reference/atomic.md) isn't on a natural alignment or if it's one or two bytes long, all atomic operations that satisfy that property will use one critical section. Otherwise, critical sections won't be used.
+   In Visual C++, if data modified by [atomic](reference/openmp-directives.md#atomic) isn't on a natural alignment or if it's one or two bytes long, all atomic operations that satisfy that property will use one critical section. Otherwise, critical sections won't be used.
 
-- **[omp_get_num_threads](3-1-2-omp-get-num-threads-function.md):** If the number of threads hasn't been explicitly set by the user, the default is implementation-defined (see page 9).
+- **[omp_get_num_threads](3-run-time-library-functions.md#312-omp_get_num_threads-function):** If the number of threads hasn't been explicitly set by the user, the default is implementation-defined (see page 9).
 
    In Visual C++, the default number of threads is equal to the number of processors.
 
-- **[omp_set_dynamic](3-1-7-omp-set-dynamic-function.md):** The default for dynamic thread adjustment is implementation-defined.
+- **[omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function):** The default for dynamic thread adjustment is implementation-defined.
 
    In Visual C++, the default is `FALSE`.
 
-- **[omp_set_nested](3-1-9-omp-set-nested-function.md):** When nested parallelism is enabled, the number of threads used to execute nested parallel regions is implementation-defined.
+- **[omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function):** When nested parallelism is enabled, the number of threads used to execute nested parallel regions is implementation-defined.
 
    In Visual C++, the number of threads is determined by the operating system.
 
-- [OMP_SCHEDULE](4-1-omp-schedule.md) environment variable: The default value for this environment variable is implementation-defined.
+- [OMP_SCHEDULE](4-environment-variables.md#41-omp_schedule) environment variable: The default value for this environment variable is implementation-defined.
 
    In Visual C++, schedule type is `static` with no chunk size.
 
-- [OMP_NUM_THREADS](4-2-omp-num-threads.md) environment variable: If no value is specified for the `OMP_NUM_THREADS` environment variable, or if the value specified isn't a positive integer, or if the value is greater than the maximum number of threads the system can support, the number of threads to use is implementation-defined.
+- [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) environment variable: If no value is specified for the `OMP_NUM_THREADS` environment variable, or if the value specified isn't a positive integer, or if the value is greater than the maximum number of threads the system can support, the number of threads to use is implementation-defined.
 
    In Visual C++, if value specified is zero or less, the number of threads is equal to the number of processors.  If value is greater than 64, the number of threads is 64.
 
-- [OMP_DYNAMIC](4-3-omp-dynamic.md) environment variable: The default value is implementation-defined.
+- [OMP_DYNAMIC](4-environment-variables.md#43-omp_dynamic) environment variable: The default value is implementation-defined.
 
    In Visual C++, the default is `FALSE`.
