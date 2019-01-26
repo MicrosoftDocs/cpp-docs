@@ -15,14 +15,14 @@ This error can be caused by omitting an equal sign (=) on a complex initializati
 
 The following sample generates C2054:
 
-```
+```c
 // C2054.c
 int array1[] { 1, 2, 3 };   // C2054, missing =
 ```
 
 Possible resolution:
 
-```
+```c
 // C2054b.c
 int main() {
    int array2[] = { 1, 2, 3 };

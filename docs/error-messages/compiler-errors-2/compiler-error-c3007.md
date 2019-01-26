@@ -13,7 +13,7 @@ An OpenMP directive had an argument, but the directive does not take an argument
 
 The following sample generates C3007:
 
-```
+```c
 // C3007.c
 // compile with: /openmp
 int main()

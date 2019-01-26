@@ -44,7 +44,7 @@ When a program is not run from the command line, `_pgmptr` might be initialized 
 
 The following program demonstrates the use of `_pgmptr`.
 
-```
+```c
 // crt_pgmptr.c
 // compile with: /W3
 // The following program demonstrates the use of _pgmptr.
