@@ -43,7 +43,7 @@ The `omp_set_num_threads` function sets the default number of threads to use for
 void omp_set_num_threads(int num_threads);
 ```
 
-The value of the parameter *num_threads* must be a positive integer. Its effect depends upon whether dynamic adjustment of the number of threads is enabled. For a comprehensive set of rules about the interaction between the `omp_set_num_threads` function and dynamic adjustment of threads, see Section 2.3.
+The value of the parameter *num_threads* must be a positive integer. Its effect depends upon whether dynamic adjustment of the number of threads is enabled. For a comprehensive set of rules about the interaction between the `omp_set_num_threads` function and dynamic adjustment of threads, see [section 2.3](2-directives.md#23-parallel-construct).
 
 This function has the effects described above when called from a portion of the program where the `omp_in_parallel` function returns zero. If it's called from a portion of the program where the `omp_in_parallel` function returns a nonzero value, the behavior of this function is undefined.
 
@@ -54,7 +54,7 @@ This call has precedence over the `OMP_NUM_THREADS` environment variable. The de
 - [omp_set_dynamic](#317-omp_set_dynamic-function) function
 - [omp_get_dynamic](#318-omp_get_dynamic-function) function
 - [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) environment variable
-- [num_threads](2-3-parallel-construct.md) clause
+- [num_threads](2-directives.md#23-parallel-construct) clause
 
 ### 3.1.2 omp_get_num_threads function
 
@@ -72,8 +72,8 @@ If the number of threads hasn't been explicitly set by the user, the default is 
 #### Cross-references
 
 - [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads)
-- [num_threads](2-3-parallel-construct.md)
-- [parallel](2-3-parallel-construct.md)
+- [num_threads](2-directives.md#23-parallel-construct)
+- [parallel](2-directives.md#23-parallel-construct)
 
 ### 3.1.3 omp_get_max_threads function
 
@@ -101,7 +101,7 @@ The `omp_get_max_threads` function's return value can be used to dynamically all
 - [omp_get_num_threads](#312-omp_get_num_threads-function)
 - [omp_set_num_threads](#311-omp_set_num_threads-function)
 - [omp_set_dynamic](#317-omp_set_dynamic-function)
-- [num_threads](2-3-parallel-construct.md)
+- [num_threads](2-directives.md#23-parallel-construct)
 
 ### 3.1.4 omp_get_thread_num function
 
