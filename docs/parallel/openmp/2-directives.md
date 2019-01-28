@@ -105,12 +105,12 @@ Restrictions to the `parallel` directive are as follows:
 ### Cross-references
 
 - `private`, `firstprivate`, `default`, `shared`, `copyin`, and `reduction` clauses ([section 2.7.2](#272-data-sharing-attribute-clauses))
-- [OMP_NUM_THREADS](4-2-omp-num-threads.md) environment variable
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) library function
-- [OMP_DYNAMIC](4-3-omp-dynamic.md) environment variable
-- [omp_set_nested](3-1-9-omp-set-nested-function.md) function
-- [OMP_NESTED](4-4-omp-nested.md) environment variable
-- [omp_set_num_threads](3-1-1-omp-set-num-threads-function.md) library function
+- [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) environment variable
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) library function
+- [OMP_DYNAMIC](4-environment-variables.md#43-omp_dynamic) environment variable
+- [omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function) function
+- [OMP_NESTED](4-environment-variables.md#44-omp_nested) environment variable
+- [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function) library function
 
 ## 2.4 Work-sharing constructs
 
@@ -221,7 +221,7 @@ Restrictions to the `for` directive are as follows:
 #### Cross-references
 
 - `private`, `firstprivate`, `lastprivate`, and `reduction` clauses ([section 2.7.2](#272-data-sharing-attribute-clauses))
-- [OMP_SCHEDULE](4-1-omp-schedule.md) environment variable
+- [OMP_SCHEDULE](4-environment-variables.md#41-omp_schedule) environment variable
 - [ordered](#266-ordered-construct) construct
 - [schedule](d-using-the-schedule-clause.md) clause
 
@@ -514,7 +514,7 @@ Restrictions to the `ordered` directive are as follows:
 
 This section presents a directive and several clauses for controlling the data environment during the execution of parallel regions, as follows:
 
-- A `threadprivate` directive (see the following section) is provided to make file- scope, namespace-scope, or static block-scope variables local to a thread.
+- A [threadprivate](#271-threadprivate-directive) directive is provided to make file- scope, namespace-scope, or static block-scope variables local to a thread.
 
 - Clauses that may be specified on the directives to control the sharing attributes of variables for the duration of the parallel or work-sharing constructs are described in [section 2.7.2](#272-data-sharing-attribute-clauses).
 
@@ -576,8 +576,8 @@ void f(int n) {
 
 #### Cross-references
 
-- [dynamic threads](3-1-7-omp-set-dynamic-function.md)
-- [OMP_DYNAMIC](4-3-omp-dynamic.md) environment variable
+- [dynamic threads](3-run-time-library-functions.md#317-omp_set_dynamic-function)
+- [OMP_DYNAMIC](4-environment-variables.md#43-omp_dynamic) environment variable
 
 ### 2.7.2 Data-sharing attribute clauses
 
