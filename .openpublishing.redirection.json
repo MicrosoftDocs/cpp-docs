@@ -10404,6 +10404,161 @@
             "source_path": "docs/parallel/openmp/3-3-2-omp-get-wtick-function.md",
             "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#332-omp_get_wtick-function",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-1-executing-a-simple-loop-in-parallel.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a1-a-simple-loop-in-parallel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-2-specifying-conditional-compilation.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a2-conditional-compilation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-3-using-parallel-regions.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a3-parallel-regions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-4-using-the-nowait-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a4-the-nowait-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-5-using-the-critical-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a5-the-critical-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-6-using-the-lastprivate-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a6-the-lastprivate-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-7-using-the-reduction-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a7-the-reduction-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-8-specifying-parallel-sections.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a8-parallel-sections",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-9-using-single-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a9-single-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-10-specifying-sequential-ordering.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a10-sequential-ordering",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-11-specifying-a-fixed-number-of-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a11-a-fixed-number-of-threads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-12-using-the-atomic-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a12-the-atomic-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-13-using-the-flush-directive-with-a-list.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a13-a-flush-directive-with-a-list",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-14-using-the-flush-directive-without-a-list.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a14-a-flush-directive-without-a-list",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-15-determining-the-number-of-threads-used.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a15-the-number-of-threads-used",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-16-using-locks.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a16-locks",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-17-using-nestable-locks.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a17-nestable-locks",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-18-nested-for-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a18-nested-for-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-19-examples-showing-incorrect-nesting-of-work-sharing-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a19-examples-showing-incorrect-nesting-of-work-sharing-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-20-binding-of-barrier-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a20-bind-barrier-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-21-scoping-variables-with-the-private-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a21-scope-variables-with-the-private-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-22-using-the-default-none-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a22-the-defaultnone-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-23-examples-of-the-ordered-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a23-examples-of-the-ordered-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-24-example-of-the-private-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a24-example-of-the-private-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-25-examples-of-the-copyprivate-data-attribute-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a25-examples-of-the-copyprivate-data-attribute-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-26-using-the-threadprivate-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a26-the-threadprivate-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-27-use-of-c99-variable-length-arrays.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a27-c99-variable-length-arrays",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-28-use-of-num-threads-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a28-the-num_threads-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-29-use-of-work-sharing-constructs-inside-a-critical-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a29-work-sharing-constructs-inside-a-critical-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-30-use-of-reprivatization.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a30-reprivatization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-31-thread-safe-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a31-thread-safe-lock-functions",
+            "redirect_document_id": false
         }
     ]
 }

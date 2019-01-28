@@ -40,14 +40,14 @@ setenv OMP_SCHEDULE "dynamic"
 
 ### Cross-references
 
-- [for](2-4-1-for-construct.md) directive
-- [parallel for](2-5-1-parallel-for-construct.md) directive
+- [for](2-directives.md#241-for-construct) directive
+- [parallel for](2-directives.md#251-parallel-for-construct) directive
 
 ## 4.2 OMP_NUM_THREADS
 
 The `OMP_NUM_THREADS` environment variable sets the default number of threads to use during execution. `OMP_NUM_THREADS` is ignored if that number is explicitly changed by calling the `omp_set_num_threads` library routine. It's also ignored if there's an explicit `num_threads` clause on a `parallel` directive.
 
-The value of the `OMP_NUM_THREADS` environment variable must be a positive integer. Its effect depends upon whether dynamic adjustment of the number of threads is enabled. For a comprehensive set of rules about the interaction between the `OMP_NUM_THREADS` environment variable and dynamic adjustment of threads, see Section 2.3.
+The value of the `OMP_NUM_THREADS` environment variable must be a positive integer. Its effect depends upon whether dynamic adjustment of the number of threads is enabled. For a comprehensive set of rules about the interaction between the `OMP_NUM_THREADS` environment variable and dynamic adjustment of threads, see [section 2.3](2-directives.md#23-parallel-construct).
 
 The number of threads to use is implementation-defined if:
 
@@ -63,9 +63,9 @@ setenv OMP_NUM_THREADS 16
 
 ### Cross-references
 
-- [num_threads](2-3-parallel-construct.md) clause
-- [omp_set_num_threads](3-1-1-omp-set-num-threads-function.md) function
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) function
+- [num_threads](2-directives.md#23-parallel-construct) clause
+- [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function) function
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) function
 
 ## 4.3 OMP_DYNAMIC
 
@@ -81,8 +81,8 @@ setenv OMP_DYNAMIC TRUE
 
 ### Cross-references
 
-- [Parallel regions](2-3-parallel-construct.md)
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) function
+- [Parallel regions](2-directives.md#23-parallel-construct)
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) function
 
 ## 4.4 OMP_NESTED
 
@@ -96,4 +96,4 @@ setenv OMP_NESTED TRUE
 
 ### Cross-reference
 
-- [omp_set_nested](3-1-9-omp-set-nested-function.md) function
+- [omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function) function
