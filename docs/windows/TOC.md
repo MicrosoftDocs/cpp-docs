@@ -70,8 +70,6 @@
 ####### [Editing Control Properties](editing-control-properties.md)
 ####### [Deleting a Control](deleting-a-control.md)
 ####### [Viewing and Adding ActiveX Controls to a Dialog Box](viewing-and-adding-activex-controls-to-a-dialog-box.md)
-######## [Insert ActiveX Control Dialog Box](insert-activex-control-dialog-box.md)
-######## [Editing Properties for an ActiveX Control](editing-properties-for-an-activex-control.md)
 ####### [Adding Event Handlers for Dialog Box Controls](adding-event-handlers-for-dialog-box-controls.md)
 ####### [Default Control Events](default-control-events.md)
 ####### [Defining Member Variables for Dialog Controls](defining-member-variables-for-dialog-controls.md)
