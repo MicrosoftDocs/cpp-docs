@@ -7271,6 +7271,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/accelerator-key-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-modifier-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-type-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/id-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
