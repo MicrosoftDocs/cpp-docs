@@ -7326,6 +7326,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/creating-a-new-custom-or-data-resource.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-binary-data.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-binary-data.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/opening-a-resource-for-binary-editing.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
