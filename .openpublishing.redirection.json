@@ -7271,6 +7271,61 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/accelerator-key-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-modifier-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-type-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/id-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-an-entry-to-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-multiple-accelerator-keys.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-an-entry-from-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-in-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-an-entry-in-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/associating-an-accelerator-key-with-a-menu-item.md",
+            "redirect_url": "/cpp/windows/predefined-accelerator-keys",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
