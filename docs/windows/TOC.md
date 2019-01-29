@@ -67,7 +67,6 @@
 ##### [Controls in Dialog Boxes](controls-in-dialog-boxes.md)
 ###### [Adding, Editing, or Deleting Controls](adding-editing-or-deleting-controls.md)
 ####### [Adding a Control to a Dialog Box](adding-a-control-to-a-dialog-box.md)
-####### [Sizing a Control While You Add It](sizing-a-control-while-you-add-it.md)
 ####### [Editing Control Properties](editing-control-properties.md)
 ####### [Deleting a Control](deleting-a-control.md)
 ####### [Viewing and Adding ActiveX Controls to a Dialog Box](viewing-and-adding-activex-controls-to-a-dialog-box.md)

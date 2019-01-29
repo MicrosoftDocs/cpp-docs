@@ -2,12 +2,12 @@
 title: "Adding a Control to a Dialog Box (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.editors.dialog.dialog"]
-helpviewer_keywords: ["dialog boxes [C++], adding controls to", "Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes", "controls [C++], adding multiple"]
+helpviewer_keywords: ["dialog boxes [C++], adding controls to", "Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes", "controls [C++], adding multiple", "dialog box controls [C++], size", "controls [C++], sizing"]
 ms.assetid: b2a26d19-093f-49ca-93da-fef00dfbb381
 ---
 # Adding a Control to a Dialog Box (C++)
 
-The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog** editor. To add controls to your new dialog box, drag controls from the **Toolbox** to the dialog box you're creating (for more information, see [Adding a Control to a Dialog Box](adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.
+The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog** editor. To add controls to your new dialog box, drag controls from the **Toolbox** to the dialog box you're creating. You can then move the controls around or change their size and shape.
 
 The standard controls available in the **Toolbox** are:
 
@@ -75,13 +75,13 @@ For information on adding resources to managed projects, see [Resources in Deskt
 
 1. Ensure that the dialog box tabbed window is the current document in the editor frame. If a dialog isn't the current document, you won't see the **Dialog Editor Tab** in the **Toolbox**.
 
-1. On the [Dialog Editor Tab](../windows/dialog-editor-tab-toolbox.md) of the [Toolbox Window](/visualstudio/ide/reference/toolbox), select the control you want, then:
+1. On the **Dialog Editor** tab of the [Toolbox Window](/visualstudio/ide/reference/toolbox), select the control you want, then:
 
-   - Click the dialog box at the location where you want to place the control. The control appears where you've clicked. For information, see [Adding Multiple Controls](../windows/adding-multiple-controls.md).
+   - Select the dialog box at the location where you want to place the control. The control appears where you've selected.
 
        \- or -
 
-   - Drag and drop the control from the **Toolbox** window to the location on your dialog box. For more information, see [Sizing a Control While You Add It](../windows/sizing-a-control-while-you-add-it.md).
+   - Drag and drop the control from the **Toolbox** window to the location on your dialog box.
 
        \- or -
 
@@ -95,6 +95,22 @@ For information on adding resources to managed projects, see [Resources in Deskt
 
 1. Press **Esc** to stop placing controls.
 
+## To size a control while you add it
+
+1. Select a control in the [Toolbox Window](/visualstudio/ide/reference/toolbox).
+
+1. Place your cursor (which appears as cross hairs) where you want the upper-left corner of the new control to be on your dialog box.
+
+1. Select and hold down the mouse button to anchor the upper-left corner of your control on the dialog box, then drag the cursor to the right and down until the control is the size you want.
+
+   > [!NOTE]
+   > You can actually anchor any of the four corners of the control you're drawing. This procedure used the upper-left corner as an example.
+
+1. Release the mouse button. The control settles onto the dialog box in the size you specified.
+
+   > [!TIP]
+   > You can resize the control after dropping it onto the dialog box by moving the sizing handles on the border of the control. For more information, see [Sizing Individual Controls](../windows/sizing-individual-controls.md).
+
 ## Requirements
 
 Win32
@@ -103,10 +119,7 @@ Win32
 
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
 [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
-
-## See Also
-
+[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
 [Controls](../mfc/controls-mfc.md)<br/>
 [Control Classes](../mfc/control-classes.md)<br/>
 [Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>

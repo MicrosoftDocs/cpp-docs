@@ -7356,6 +7356,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/sizing-a-control-while-you-add-it.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
