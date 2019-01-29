@@ -1,5 +1,5 @@
 ---
-title: "Predefined Accelerator Keys (C++)"
+title: "Accelerator Keys (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.editors.accelerator"]
 helpviewer_keywords: ["accelerator keys", "keyboard shortcuts", "keyboard shortcuts [C++], predefined", "menus [C++], shortcut keys", "keyboard shortcuts [C++], menu association"]
