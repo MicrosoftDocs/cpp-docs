@@ -7406,6 +7406,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/arranging-push-buttons-along-the-right-or-bottom-of-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/centering-controls-in-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/evening-the-spacing-between-controls.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
