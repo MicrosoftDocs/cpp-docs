@@ -38,27 +38,27 @@ When you create a dialog box, four margins are provided. Margins are modified gu
 
 ### To create a guide
 
-1. Within the ruler, click once to create a guide. (One click creates a new guide; double-clicking launches the **Guide Settings** dialog box in which you can specify guide settings.)
+Within the ruler, click once to create a guide. (One click creates a new guide; double-clicking launches the **Guide Settings** dialog box in which you can specify guide settings.)
 
 ### To set a guide
 
-1. On the dialog box, click the guide and drag it to a new position. (You can also click the arrow in the ruler to drag the associated guide.)
+On the dialog box, click the guide and drag it to a new position. (You can also click the arrow in the ruler to drag the associated guide.)
 
-   The coordinates of the guide are displayed in the status bar at the bottom of the window and in the ruler. Move the pointer over the arrow in the ruler to display the exact position of the guide.
+The coordinates of the guide are displayed in the status bar at the bottom of the window and in the ruler. Move the pointer over the arrow in the ruler to display the exact position of the guide.
 
 ### To delete a guide
 
-1. Drag the guide out of the dialog box.
+Drag the guide out of the dialog box.
 
 \- or -
 
-    Drag the corresponding arrow off the ruler.
+Drag the corresponding arrow off the ruler.
 
 ### To move margins
 
-1. Drag the margin to the new position.
+Drag the margin to the new position.
 
-   To make a margin disappear, move the margin to a zero position. To bring back the margin, place the pointer over the margin's zero position and move the margin into position.
+To make a margin disappear, move the margin to a zero position. To bring back the margin, place the pointer over the margin's zero position and move the margin into position.
 
 ## Align controls on a guide
 
@@ -88,11 +88,11 @@ You can use special keys in conjunction with the mouse to disable the snapping e
 
 ### To disable the snapping effect of the guides
 
-1. Drag the control while holding down the **Alt** key.
+Drag the control while holding down the **Alt** key.
 
 ### To move guides without moving the snapped controls
 
-1. Drag the guide while holding down the **Shift** key.
+Drag the guide while holding down the **Shift** key.
 
 ### To turn off the guides
 
@@ -105,7 +105,7 @@ You can use special keys in conjunction with the mouse to disable the snapping e
 
 \- or -
 
-    On the **Format** menu, select **Toggle Guides**.
+On the **Format** menu, select **Toggle Guides**.
 
 ## Modify the layout grid
 
