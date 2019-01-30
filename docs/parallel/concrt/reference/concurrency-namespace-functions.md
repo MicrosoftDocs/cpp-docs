@@ -49,7 +49,7 @@ For more information about which scenarios in your application could benefit fro
 
 An asynchronous send operation, which schedules a task to propagate the data to the target block.
 
-```
+```cpp
 template <class T>
 bool asend(
     _Inout_ ITarget<T>* _Trg,
@@ -94,7 +94,7 @@ inline __declspec(noreturn) void __cdecl cancel_current_task();
 
 Clears the concurrent queue, destroying any currently enqueued elements. This method is not concurrency-safe.
 
-```
+```cpp
 template<typename T, class _Ax>
 void concurrent_queue<T, _Ax>::clear();
 ```
@@ -109,7 +109,7 @@ void concurrent_queue<T, _Ax>::clear();
 
 Creates a Windows Runtime asynchronous construct based on a user supplied lambda or function object. The return type of `create_async` is one of either `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, or `IAsyncOperationWithProgress<TResult, TProgress>^` based on the signature of the lambda passed to the method.
 
-```
+```cpp
 template<typename _Function>
 __declspec(noinline) auto create_async(const _Function& _Func)
     -> decltype(ref new details::_AsyncTaskGeneratorThunk<_Function>(_Func));
@@ -165,7 +165,7 @@ Multiple subsequent calls to this method will return the same instance of the Re
 
 Creates a PPL [task](task-class.md) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.
 
-```
+```cpp
 template<typename T>
 __declspec(noinline) auto create_task(T _Param, const task_options& _TaskOptions = task_options())
     -> task<typename details::_TaskTypeFromParam<T>::T>;
@@ -338,7 +338,7 @@ Use this method to obtain an identifier for your scheduler before you pass an `I
 
 ##  <a name="internal_assign_iterators"></a>  internal_assign_iterators
 
-```
+```cpp
 template<typename T, class _Ax>
 template<class _I>
 void concurrent_vector<T, _Ax>::internal_assign_iterators(
@@ -390,7 +390,7 @@ For more information, see [Cancellation](../../../parallel/concrt/exception-hand
 
 Constructs a `choice` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.
 
-```
+```cpp
 template<typename T1, typename T2, typename... Ts>
 choice<std::tuple<T1, T2, Ts...>> make_choice(
     Scheduler& _PScheduler,
@@ -443,7 +443,7 @@ A `choice` message block with two or more input sources.
 
 Constructs a `greedy multitype_join` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.
 
-```
+```cpp
 template<typename T1, typename T2, typename... Ts>
 multitype_join<std::tuple<T1, T2, Ts...>,greedy> make_greedy_join(
     Scheduler& _PScheduler,
@@ -496,7 +496,7 @@ A `greedy multitype_join` message block with two or more input sources.
 
 Constructs a `non_greedy multitype_join` messaging block from an optional `Scheduler` or `ScheduleGroup` and two or more input sources.
 
-```
+```cpp
 template<typename T1, typename T2, typename... Ts>
 multitype_join<std::tuple<T1, T2, Ts...>>
     make_join(
@@ -550,7 +550,7 @@ A `non_greedy multitype_join` message block with two or more input sources.
 
 A factory method for creating a `task_handle` object.
 
-```
+```cpp
 template <class _Function>
 task_handle<_Function> make_task(const _Function& _Func);
 ```
@@ -575,7 +575,7 @@ This function is useful when you need to create a `task_handle` object with a la
 
 Arranges the elements in a specified range into a nondescending order, or according to an ordering criterion specified by a binary predicate, in parallel. This function is semantically similar to `std::sort` in that it is a compare-based, unstable, in-place sort except that it needs `O(n)` additional space, and requires default initialization for the elements being sorted.
 
-```
+```cpp
 template<typename _Random_iterator>
 inline void parallel_buffered_sort(
     const _Random_iterator& _Begin,
@@ -662,7 +662,7 @@ The algorithm divides the input range into two chunks and successively divides e
 
 `parallel_for` iterates over a range of indices and executes a user-supplied function at each iteration, in parallel.
 
-```
+```cpp
 template <typename _Index_type, typename _Function, typename _Partitioner>
 void parallel_for(
     _Index_type first,
@@ -741,7 +741,7 @@ For more information, see [Parallel Algorithms](../../../parallel/concrt/paralle
 
 `parallel_for_each` applies a specified function to each element within a range, in parallel. It is semantically equivalent to the `for_each` function in the `std` namespace, except that iteration over the elements is performed in parallel, and the order of iteration is unspecified. The argument `_Func` must support a function call operator of the form `operator()(T)` where the parameter `T` is the item type of the container being iterated over.
 
-```
+```cpp
 template <typename _Iterator, typename _Function>
 void parallel_for_each(
     _Iterator first,
@@ -789,7 +789,7 @@ For more information, see [Parallel Algorithms](../../../parallel/concrt/paralle
 
 Executes the function objects supplied as parameters in parallel, and blocks until they have finished executing. Each function object could be a lambda expression, a pointer to function, or any object that supports the function call operator with the signature `void operator()()`.
 
-```
+```cpp
 template <typename _Function1, typename _Function2>
 void parallel_invoke(
     const _Function1& _Func1,
@@ -988,7 +988,7 @@ For more information, see [Parallel Algorithms](../../../parallel/concrt/paralle
 
 Arranges elements in a specified range into an non descending order using a radix sorting algorithm. This is a stable sort function which requires a projection function that can project elements to be sorted into unsigned integer-like keys. Default initialization is required for the elements being sorted.
 
-```
+```cpp
 template<typename _Random_iterator>
 inline void parallel_radixsort(
     const _Random_iterator& _Begin,
@@ -1071,7 +1071,7 @@ The algorithm divides the input range into two chunks and successively divides e
 
 Computes the sum of all elements in a specified range by computing successive partial sums, or computes the result of successive partial results similarly obtained from using a specified binary operation other than sum, in parallel. `parallel_reduce` is semantically similar to `std::accumulate`, except that it requires the binary operation to be associative, and requires an identity value instead of an initial value.
 
-```
+```cpp
 template<typename _Forward_iterator>
 inline typename std::iterator_traits<_Forward_iterator>::value_type parallel_reduce(
     _Forward_iterator _Begin,
@@ -1144,7 +1144,7 @@ For the third overload, the identity value type must be the same as the reductio
 
 Arranges the elements in a specified range into a nondescending order, or according to an ordering criterion specified by a binary predicate, in parallel. This function is semantically similar to `std::sort` in that it is a compare-based, unstable, in-place sort.
 
-```
+```cpp
 template<typename _Random_iterator>
 inline void parallel_sort(
     const _Random_iterator& _Begin,
@@ -1190,7 +1190,7 @@ The algorithm divides the input range into two chunks and successively divides e
 
 Applies a specified function object to each element in a source range, or to a pair of elements from two source ranges, and copies the return values of the function object into a destination range, in parallel. This functional is semantically equivalent to `std::transform`.
 
-```
+```cpp
 template <typename _Input_iterator1,
     typename _Output_iterator,
     typename _Unary_operator>
@@ -1317,7 +1317,7 @@ For more information, see [Parallel Algorithms](../../../parallel/concrt/paralle
 
 A general receive implementation, allowing a context to wait for data from exactly one source and filter the values that are accepted.
 
-```
+```cpp
 template <class T>
 T receive(
     _Inout_ ISource<T>* _Src,
@@ -1369,7 +1369,7 @@ For more information, see [Message Passing Functions](../../../parallel/concrt/m
 
 Executes a function object immediately and synchronously in the context of a given cancellation token.
 
-```
+```cpp
 template<typename _Function>
 void run_with_cancellation_token(
     const _Function& _Func,
@@ -1395,7 +1395,7 @@ Any interruption points in the function object will be triggered when the `cance
 
 A synchronous send operation, which waits until the target either accepts or declines the message.
 
-```
+```cpp
 template <class T>
 bool send(_Inout_ ITarget<T>* _Trg, const T& _Data);
 
@@ -1473,7 +1473,7 @@ Programatically modifying the process affinity after this method has been invoke
 
 Exchanges the elements of two `concurrent_vector` objects.
 
-```
+```cpp
 template<typename T, class _Ax>
 inline void swap(
     concurrent_vector<T, _Ax>& _A,
@@ -1502,7 +1502,7 @@ This method is not concurrency-safe. You must ensure that no other threads are p
 
 ##  <a name="task_from_exception"></a>  task_from_exception
 
-```
+```cpp
 template<typename _TaskType, typename _ExType>
 task<_TaskType> task_from_exception(
     _ExType _Exception,
@@ -1523,7 +1523,7 @@ task<_TaskType> task_from_exception(
 
 ##  <a name="task_from_result"></a>  task_from_result
 
-```
+```cpp
 template<typename T>
 task<T> task_from_result(
     T _Param,
@@ -1549,7 +1549,7 @@ inline task<void> task_from_result(
 
 Associates the given name to the message block or agent in the ETW trace.
 
-```
+```cpp
 template <class T>
 void Trace_agents_register_name(
     _Inout_ T* _PObject,
@@ -1571,7 +1571,7 @@ The name for the given object.
 
 A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return **false**.
 
-```
+```cpp
 template <class T>
 bool try_receive(_Inout_ ISource<T>* _Src, T& _value);
 
@@ -1634,7 +1634,7 @@ If this method is called on a Concurrency Runtime scheduler context, the schedul
 
 Creates a task that will complete successfully when all of the tasks supplied as arguments complete successfully.
 
-```
+```cpp
 template <typename _Iterator>
 auto when_all(
     _Iterator _Begin,
@@ -1674,7 +1674,7 @@ For more information, see [Task Parallelism](../../../parallel/concrt/task-paral
 
 Creates a task that will complete successfully when any of the tasks supplied as arguments completes successfully.
 
-```
+```cpp
 template<typename _Iterator>
 auto when_any(
     _Iterator _Begin,

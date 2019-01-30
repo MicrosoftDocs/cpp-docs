@@ -10,7 +10,7 @@ short_vector_traits allows retrival of the underlying vector length and scalar t
 
 ## Syntax
 
-```
+```cpp
 template<
     typename T
 >

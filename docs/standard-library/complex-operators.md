@@ -11,7 +11,7 @@ helpviewer_keywords: ["std::operator!= (complex)", "std::operator&gt;&gt; (compl
 
 Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
-```
+```cpp
 template <class Type>
 bool operator!=(
     const complex<Type>& left,

@@ -11,7 +11,7 @@ The `concurrent_unordered_set` class is an concurrency-safe container that contr
 
 ## Syntax
 
-```
+```cpp
 template <typename K,
     typename _Hasher = std::hash<K>,
     typename key_equality = std::equal_to<K>,

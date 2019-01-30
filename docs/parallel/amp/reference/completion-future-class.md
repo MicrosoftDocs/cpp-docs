@@ -138,7 +138,7 @@ Chains a callback function object to the `completion_future` object to be execut
 
 ### Syntax
 
-```
+```cpp
 template <typename _Functor>
 void then(const _Functor & _Func ) const;
 ```
@@ -195,7 +195,7 @@ Blocks until the associated asynchronous operation completes or the time that's 
 
 ### Syntax
 
-```
+```cpp
 template <
     class _Rep,
     class _Period
@@ -231,7 +231,7 @@ Blocks until the associated asynchronous operation completes or until the curren
 
 ### Syntax
 
-```
+```cpp
 template <
     class _Clock,
     class _Duration

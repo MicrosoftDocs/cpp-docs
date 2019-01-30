@@ -11,7 +11,7 @@ The basic message envelope containing the data payload being passed between mess
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class message : public ::Concurrency::details::_Runtime_object;
 ```

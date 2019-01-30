@@ -11,7 +11,7 @@ An `ordered_message_processor` is a `message_processor` that allows message bloc
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class ordered_message_processor : public message_processor<T>;
 ```

@@ -11,7 +11,7 @@ The `concurrent_unordered_map` class is a concurrency-safe container that contro
 
 ## Syntax
 
-```
+```cpp
 template <typename K,
     typename _Element_type,
     typename _Hasher = std::hash<K>,

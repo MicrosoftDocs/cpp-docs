@@ -11,7 +11,7 @@ The `message_processor` class is the abstract base class for processing of `mess
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class message_processor;
 ```

@@ -11,7 +11,7 @@ The `ITarget` class is the interface for all target blocks. Target blocks consum
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class ITarget;
 ```

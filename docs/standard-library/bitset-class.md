@@ -1480,7 +1480,7 @@ The member function throws an [out_of_range](../standard-library/out-of-range-cl
 
 Converts a bitset object to a string representation.
 
-```
+```cpp
 template <class charT = char, class traits = char_traits<charT>, class Allocator = allocator<charT> >
    basic_string<charT, traits, Allocator> to_string(charT zero = charT('0'), charT one = charT('1')) const;
 ```

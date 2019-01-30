@@ -11,7 +11,7 @@ The `network_link_registry` abstract base class manages the links between source
 
 ## Syntax
 
-```
+```cpp
 template<class _Block>
 class network_link_registry;
 ```

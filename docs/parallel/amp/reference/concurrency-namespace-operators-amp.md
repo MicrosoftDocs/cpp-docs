@@ -15,7 +15,7 @@ ms.assetid: 77f1ae17-1eb2-480d-8fe5-66d4c24bb91e
 
 Determines whether the specified arguments are equal.
 
-```
+```cpp
 template <
     int _Rank,
     template <int> class _Tuple_type
@@ -44,7 +44,7 @@ One of the tuples to compare.
 
 Determines whether the specified arguments are not equal.
 
-```
+```cpp
 template <
     int _Rank,
     template <int> class _Tuple_type
@@ -73,7 +73,7 @@ One of the tuples to compare.
 
 Computes the component-wise sum of the specified arguments.
 
-```
+```cpp
 template <
     int _Rank,
     template <int> class _Tuple_type
@@ -118,7 +118,7 @@ The component-wise sum of the specified arguments.
 
 Computes the component-wise difference between the specified arguments.
 
-```
+```cpp
 template <
     int _Rank,
     template <int> class _Tuple_type
@@ -163,7 +163,7 @@ The component-wise difference between the specified arguments.
 
 Computes the component-wise product of the specified arguments.
 
-```
+```cpp
 template <
     int _Rank,
     template <int> class _Tuple_type
@@ -200,7 +200,7 @@ The component-wise product of the specified arguments.
 
 Computes the component-wise quotient of the specified arguments.
 
-```
+```cpp
 template <
     int _Rank,
     template <int> class _Tuple_type
@@ -237,7 +237,7 @@ The component-wise quotient of the specified arguments.
 
 Computes the modulus of the first specified argument by the second specified argument.
 
-```
+```cpp
 template <
     int _Rank,
     template <int> class _Tuple_type

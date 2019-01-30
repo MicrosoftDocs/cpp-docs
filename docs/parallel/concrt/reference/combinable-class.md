@@ -11,7 +11,7 @@ The `combinable<T>` object is intended to provide thread-private copies of data,
 
 ## Syntax
 
-```
+```cpp
 template<typename T>
 class combinable;
 ```
@@ -111,7 +111,7 @@ Destroys a `combinable` object.
 
 Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor.
 
-```
+```cpp
 template<typename _Function>
 T combine(_Function _FnCombine) const;
 ```
@@ -132,7 +132,7 @@ The final result of combining all the thread-private sub-computations.
 
 Computes a final value from the set of thread-local sub-computations by calling the supplied combine functor once per thread-local sub-computation. The final result is accumulated by the function object.
 
-```
+```cpp
 template<typename _Function>
 void combine_each(_Function _FnCombine) const;
 ```

@@ -81,7 +81,7 @@ For more information, see [Cancellation](../cancellation-in-the-ppl.md).
 
 Schedules a task on the `task_group` object. If a `task_handle` object is passed as a parameter to `run`, the caller is responsible for managing the lifetime of the `task_handle` object. The version of the method that takes a reference to a function object as a parameter involves heap allocation inside the runtime which may be perform less well than using the version that takes a reference to a `task_handle` object. The version which takes the parameter `_Placement` causes the task to be biased towards executing at the location specified by that parameter.
 
-```
+```cpp
 template<
    typename _Function
 >
@@ -139,7 +139,7 @@ The method throws an [invalid_multiple_scheduling](invalid-multiple-scheduling-c
 
 Schedules a task to be run inline on the calling context with the assistance of the `task_group` object for full cancellation support. The function then waits until all work on the `task_group` object has either completed or been canceled. If a `task_handle` object is passed as a parameter to `run_and_wait`, the caller is responsible for managing the lifetime of the `task_handle` object.
 
-```
+```cpp
 template<
    class _Function
 >

@@ -11,7 +11,7 @@ The `ISource` class is the interface for all source blocks. Source blocks propag
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class ISource;
 ```

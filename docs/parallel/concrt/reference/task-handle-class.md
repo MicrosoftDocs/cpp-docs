@@ -11,7 +11,7 @@ The `task_handle` class represents an individual parallel work item. It encapsul
 
 ## Syntax
 
-```
+```cpp
 template<
     typename _Function
 >

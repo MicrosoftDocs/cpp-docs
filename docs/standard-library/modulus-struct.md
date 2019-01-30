@@ -11,7 +11,7 @@ A predefined function object that performs the modulus division operation (`oper
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct modulus : public binary_function <Type, Type, Type>
 {

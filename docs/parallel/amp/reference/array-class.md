@@ -11,7 +11,7 @@ Represents a data container used to move data to an accelerator.
 
 ## Syntax
 
-```
+```cpp
 template <typename value_type, int _Rank>
 friend class array;
 ```
@@ -645,7 +645,7 @@ Reinterprets the array through a one-dimensional array_view, which optionally ma
 
 ### Syntax
 
-```
+```cpp
 template <typename _Value_type2>
 array_view<_Value_type2,1> reinterpret_as() restrict(amp,cpu);
 
@@ -786,7 +786,7 @@ Returns a subsection of the `array` object that is at the specified origin and, 
 
 Reinterprets this array as an [array_view](array-view-class.md) of a different rank.
 
-```
+```cpp
 template <int _New_rank>
 array_view<value_type,_New_rank> view_as(
     const Concurrency::extent<_New_rank>& _View_extent) restrict(amp,cpu);

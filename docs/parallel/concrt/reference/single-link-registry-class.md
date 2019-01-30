@@ -11,7 +11,7 @@ The `single_link_registry` object is a `network_link_registry` that manages only
 
 ## Syntax
 
-```
+```cpp
 template<class _Block>
 class single_link_registry : public network_link_registry<_Block>;
 ```

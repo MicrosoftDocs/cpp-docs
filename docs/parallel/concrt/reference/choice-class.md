@@ -11,7 +11,7 @@ A `choice` messaging block is a multi-source, single-target block that represent
 
 ## Syntax
 
-```
+```cpp
 template<
     class T
 >
@@ -317,7 +317,7 @@ This method does not need to be called from the destructor because destructor fo
 
 Gets the message whose index was selected by the `choice` messaging block.
 
-```
+```cpp
 template <
     typename _Payload_type
 >

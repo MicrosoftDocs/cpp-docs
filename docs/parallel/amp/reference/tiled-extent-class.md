@@ -10,7 +10,7 @@ A `tiled_extent` object is an `extent` object of one to three dimensions that su
 
 ### Syntax
 
-```
+```cpp
 template <
     int _Dim0,
     int _Dim1,

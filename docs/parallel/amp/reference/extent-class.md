@@ -11,7 +11,7 @@ Represents a vector of *N* integer values that specify the bounds of an *N*-dime
 
 ### Syntax
 
-```
+```cpp
 template <int _Rank>
 class extent;
 ```
@@ -359,7 +359,7 @@ unsigned int size() const restrict(amp,cpu);
 
 Produces a tiled_extent object with the specified tile dimensions.
 
-```
+```cpp
 template <int _Dim0>
 tiled_extent<_Dim0> tile() const ;
 

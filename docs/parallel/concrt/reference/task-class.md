@@ -11,7 +11,7 @@ The Parallel Patterns Library (PPL) `task` class. A `task` object represents wor
 
 ## Syntax
 
-```
+```cpp
 template <>
 class task<void>;
 
@@ -247,7 +247,7 @@ For more information, see [Task Parallelism](../../../parallel/concrt/task-paral
 
 Adds a continuation task to this task.
 
-```
+```cpp
 template<typename _Function>
 __declspec(
     noinline) auto then(const _Function& _Func) const -> typename details::_ContinuationTypeTraits<_Function,

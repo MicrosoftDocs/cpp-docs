@@ -11,7 +11,7 @@ The `target_block` class is an abstract base class that provides basic link mana
 
 ## Syntax
 
-```
+```cpp
 template<class _SourceLinkRegistry, class _MessageProcessorType = ordered_message_processor<typename _SourceLinkRegistry::type::source_type>>
 class target_block : public ITarget<typename _SourceLinkRegistry::type::source_type>;
 ```

@@ -10,7 +10,7 @@ Provides writeonly access to a texture.
 
 ## Syntax
 
-```
+```cpp
 template <
     typename value_type,
     int _Rank

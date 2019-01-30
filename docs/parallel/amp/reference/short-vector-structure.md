@@ -10,7 +10,7 @@ short_vector provides metaprogramming definitions which are useful for programmi
 
 ## Syntax
 
-```
+```cpp
 template<
     typename _Scalar_type,
     int _Size

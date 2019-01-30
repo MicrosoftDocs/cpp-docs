@@ -11,7 +11,7 @@ Defines an *N*-dimensional index pographics-cpp-amp.md.
 
 ## Syntax
 
-```
+```cpp
 template <int _Rank>
 class index;
 ```

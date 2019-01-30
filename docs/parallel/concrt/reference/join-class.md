@@ -11,7 +11,7 @@ A `join` messaging block is a single-target, multi-source, ordered `propagator_b
 
 ## Syntax
 
-```
+```cpp
 template<class T,
     join_type _Jtype = non_greedy>
 class join : public propagator_block<single_link_registry<ITarget<std::vector<T>>>,

@@ -10,7 +10,7 @@ An `unbounded_buffer` messaging block is a multi-target, multi-source, ordered `
 
 ## Syntax
 
-```
+```cpp
 template<
    class             _Type
 >

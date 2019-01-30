@@ -11,7 +11,7 @@ A `single_assignment` messaging block is a multi-target, multi-source, ordered `
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class single_assignment : public propagator_block<multi_link_registry<ITarget<T>>, multi_link_registry<ISource<T>>>;
 ```

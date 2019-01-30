@@ -11,7 +11,7 @@ The progress reporter class allows reporting progress notifications of a specifi
 
 ## Syntax
 
-```
+```cpp
 template<typename _ProgressType>
 class progress_reporter;
 ```

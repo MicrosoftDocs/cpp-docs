@@ -11,7 +11,7 @@ Provides an index into a [tiled_extent](tiled-extent-class.md) object. This clas
 
 ## Syntax
 
-```
+```cpp
 template <
     int _Dim0,
     int _Dim1 = 0,

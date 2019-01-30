@@ -8,7 +8,7 @@ ms.assetid: 9f57ba7a-e050-4ea6-80c6-8b5a38e958f5
 
 ## Syntax
 
-```
+```cpp
 template<class _T>
 _T&& declval();
 ```

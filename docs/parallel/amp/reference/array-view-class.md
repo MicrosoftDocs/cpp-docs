@@ -11,7 +11,7 @@ Represents an N-dimensional view over the data held in another container.
 
 ## Syntax
 
-```
+```cpp
 template <
     typename value_type,
     int _Rank = 1
@@ -527,7 +527,7 @@ Reinterprets the array_view through a one-dimensional array_view, which as an op
 
 ### Syntax
 
-```
+```cpp
 template <
     typename _Value_type2
 >
@@ -738,7 +738,7 @@ typedef typenamevalue_type value_type;
 
 Reinterprets this `array_view` as an `array_view` of a different rank.
 
-```
+```cpp
 template <
     int _New_rank
 >

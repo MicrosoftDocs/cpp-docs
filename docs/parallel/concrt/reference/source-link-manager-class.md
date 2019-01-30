@@ -11,7 +11,7 @@ The `source_link_manager` object manages messaging block network links to `ISour
 
 ## Syntax
 
-```
+```cpp
 template<class _LinkRegistry>
 class source_link_manager;
 ```

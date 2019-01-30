@@ -165,7 +165,7 @@ The `cancellation_token` to compare.
 
 Registers a callback function with the token. If and when the token is canceled, the callback will be made. Note that if the token is already canceled at the point where this method is called, the callback will be made immediately and synchronously.
 
-```
+```cpp
 template<typename _Function>
 ::Concurrency::cancellation_token_registration register_callback(const _Function& _Func) const;
 ```

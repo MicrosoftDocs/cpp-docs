@@ -11,7 +11,7 @@ The `concurrent_queue` class is a sequence container class that allows first-in,
 
 ## Syntax
 
-```
+```cpp
 template<typename T, class _Ax>
 class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4;
 ```

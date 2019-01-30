@@ -16,7 +16,7 @@ ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
 
 Creates a task that will complete successfully when either of the tasks supplied as arguments completes successfully.
 
-```
+```cpp
 template<typename ReturnType>
 task<ReturnType> operator||(
     const task<ReturnType>& lhs,
@@ -60,7 +60,7 @@ If both of the tasks are canceled or throw exceptions, the returned task will co
 
 Creates a task that will complete succesfully when both of the tasks supplied as arguments complete successfully.
 
-```
+```cpp
 template<typename ReturnType>
 task<std::vector<ReturnType>>  operator&&(
     const task<ReturnType>& lhs,
@@ -109,7 +109,7 @@ If one of the tasks is canceled or throws an exception, the returned task will c
 
 Tests if the `concurrent_vector` object on the left side of the operator is equal to the `concurrent_vector` object on the right side.
 
-```
+```cpp
 template<typename T, class A1, class A2>
 inline bool operator== (
     const concurrent_vector<T, A1>& _A,
@@ -147,7 +147,7 @@ This method is not concurrency-safe with respect to other methods that could mod
 
 Tests if the `concurrent_vector` object on the left side of the operator is not equal to the `concurrent_vector` object on the right side.
 
-```
+```cpp
 template<typename T, class A1, class A2>
 inline bool operator!= (
     const concurrent_vector<T, A1>& _A,
@@ -185,7 +185,7 @@ This method is not concurrency-safe with respect to other methods that could mod
 
 Tests if the `concurrent_vector` object on the left side of the operator is less than the `concurrent_vector` object on the right side.
 
-```
+```cpp
 template<typename T, class A1, class A2>
 inline bool operator<(
     const concurrent_vector<T, A1>& _A,
@@ -223,7 +223,7 @@ This method is not concurrency-safe with respect to other methods that could mod
 
 Tests if the `concurrent_vector` object on the left side of the operator is less than or equal to the `concurrent_vector` object on the right side.
 
-```
+```cpp
 template<typename T, class A1, class A2>
 inline bool operator<= (
     const concurrent_vector<T, A1>& _A,
@@ -261,7 +261,7 @@ This method is not concurrency-safe with respect to other methods that could mod
 
 Tests if the `concurrent_vector` object on the left side of the operator is greater than the `concurrent_vector` object on the right side.
 
-```
+```cpp
 template<typename T, class A1, class A2>
 inline bool operator>(
     const concurrent_vector<T, A1>& _A,
@@ -299,7 +299,7 @@ This method is not concurrency-safe with respect to other methods that could mod
 
 Tests if the `concurrent_vector` object on the left side of the operator is greater than or equal to the `concurrent_vector` object on the right side.
 
-```
+```cpp
 template<typename T, class A1, class A2>
 inline bool operator>= (
     const concurrent_vector<T, A1>& _A,

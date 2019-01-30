@@ -37,7 +37,7 @@ The IUnknown interface pointer corresponding to the D3D sampler state that repre
 
 Gets the Direct3D texture interface underlying the specified [texture](texture-class.md) object.
 
-```
+```cpp
 template<
     typename value_type,
     int _Rank
@@ -96,7 +96,7 @@ A sampler represents the provided D3D sampler state.
 
 Creates a [texture](texture-class.md) object by using the specified parameters.
 
-```
+```cpp
 template<
     typename value_type,
     int _Rank

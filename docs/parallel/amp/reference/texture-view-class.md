@@ -10,7 +10,7 @@ Provides read access and write access to a texture. `texture_view` can only be u
 
 ## Syntax
 
-```
+```cpp
 template<typename value_type,int _Rank>
 class texture_view;
 

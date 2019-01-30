@@ -10,7 +10,7 @@ A texture is a data aggregate on an `accelerator_view` in the extent domain. It 
 
 ## Syntax
 
-```
+```cpp
 template <typename value_type,  int _Rank>
 class texture;
 ```

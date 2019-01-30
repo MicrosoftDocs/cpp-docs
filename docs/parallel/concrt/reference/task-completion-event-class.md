@@ -11,7 +11,7 @@ The `task_completion_event` class allows you to delay the execution of a task un
 
 ## Syntax
 
-```
+```cpp
 template<typename _ResultType>
 class task_completion_event;
 
@@ -84,7 +84,7 @@ In the presence of multiple or concurrent calls to `set`, only the first call wi
 
 Propagates an exception to all tasks associated with this event.
 
-```
+```cpp
 template<typename _E>
 __declspec(noinline) bool set_exception(_E _Except) const;
 

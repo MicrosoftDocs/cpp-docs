@@ -11,7 +11,7 @@ A predefined function object that performs the logical not operation (`operator!
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct logical_not : public unary_function<Type, bool>
 {

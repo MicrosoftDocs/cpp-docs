@@ -212,7 +212,7 @@ Returns The location of the first set bit
 
 Get the Direct3D buffer interface underlying the specified array.
 
-```
+```cpp
 template<
     typename value_type,
     int _Rank
@@ -359,7 +359,7 @@ The result of `_X` \* `_Y` + `_Z`.
 
 Create an array from a Direct3D buffer interface pointer.
 
-```
+```cpp
 template<
     typename value_type,
     int _Rank

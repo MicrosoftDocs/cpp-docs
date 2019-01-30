@@ -11,7 +11,7 @@ A predefined function object that performs the multiplication operation (binary 
 
 ## Syntax
 
-```
+```cpp
 template <class Type = void>
 struct multiplies : public binary_function <Type, Type, Type>
 {

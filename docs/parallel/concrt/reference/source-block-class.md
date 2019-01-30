@@ -11,7 +11,7 @@ The `source_block` class is an abstract base class for source-only blocks. The c
 
 ## Syntax
 
-```
+```cpp
 template<class _TargetLinkRegistry, class _MessageProcessorType = ordered_message_processor<typename _TargetLinkRegistry::type::type>>
 class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 ```

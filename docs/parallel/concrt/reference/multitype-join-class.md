@@ -11,7 +11,7 @@ A `multitype_join` messaging block is a multi-source, single-target messaging bl
 
 ## Syntax
 
-```
+```cpp
 template<
     typename T,
     join_type _Jtype = non_greedy

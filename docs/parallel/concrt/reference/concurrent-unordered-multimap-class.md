@@ -11,7 +11,7 @@ The `concurrent_unordered_multimap` class is an concurrency-safe container that 
 
 ## Syntax
 
-```
+```cpp
 template <typename K,
     typename _Element_type,
     typename _Hasher = std::hash<K>,

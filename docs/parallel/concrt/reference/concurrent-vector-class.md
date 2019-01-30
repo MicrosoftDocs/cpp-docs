@@ -11,7 +11,7 @@ The `concurrent_vector` class is a sequence container class that allows random a
 
 ## Syntax
 
-```
+```cpp
 template<typename T, class _Ax>
 class concurrent_vector: protected details::_Allocator_base<T,
     _Ax>,

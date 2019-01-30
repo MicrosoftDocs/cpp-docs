@@ -11,7 +11,7 @@ The `propagator_block` class is an abstract base class for message blocks that a
 
 ## Syntax
 
-```
+```cpp
 template<class _TargetLinkRegistry, class _SourceLinkRegistry, class _MessageProcessorType = ordered_message_processor<typename _TargetLinkRegistry::type::type>>
 class propagator_block : public source_block<_TargetLinkRegistry,
     _MessageProcessorType>,

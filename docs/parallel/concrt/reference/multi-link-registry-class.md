@@ -11,7 +11,7 @@ The `multi_link_registry` object is a `network_link_registry` that manages multi
 
 ## Syntax
 
-```
+```cpp
 template<class _Block>
 class multi_link_registry : public network_link_registry<_Block>;
 ```

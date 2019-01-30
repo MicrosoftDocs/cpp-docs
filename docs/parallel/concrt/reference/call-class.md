@@ -11,7 +11,7 @@ A `call` messaging block is a multi-source, ordered `target_block` that invokes 
 
 ## Syntax
 
-```
+```cpp
 template<class T, class _FunctorType = std::function<void(T const&)>>
 class call : public target_block<multi_link_registry<ISource<T>>>;
 ```

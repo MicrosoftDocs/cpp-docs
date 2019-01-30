@@ -11,7 +11,7 @@ A `timer` messaging block is a single-target `source_block` capable of sending a
 
 ## Syntax
 
-```
+```cpp
 template<class T>
 class timer : public Concurrency::details::_Timer, public source_block<single_link_registry<ITarget<T>>>;
 ```

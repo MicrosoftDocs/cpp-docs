@@ -11,7 +11,7 @@ A `transformer` messaging block is a single-target, multi-source, ordered `propa
 
 ## Syntax
 
-```
+```cpp
 template<class _Input, class _Output>
 class transformer : public propagator_block<single_link_registry<ITarget<_Output>>,
     multi_link_registry<ISource<_Input>>>;

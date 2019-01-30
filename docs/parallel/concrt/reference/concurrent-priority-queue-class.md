@@ -11,7 +11,7 @@ The `concurrent_priority_queue` class is a container that allows multiple thread
 
 ## Syntax
 
-```
+```cpp
 template <typename T,
     typename _Compare= std::less<T>,
     typename _Ax = std::allocator<T>
