@@ -7381,6 +7381,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/aligning-controls-on-a-guide.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-and-setting-guides-and-margins.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/disabling-guides.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/guide-settings-dialog-box.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modifying-the-layout-grid.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
