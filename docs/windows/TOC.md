@@ -74,8 +74,6 @@
 ####### [Default Control Events](default-control-events.md)
 ####### [Defining Member Variables for Dialog Controls](defining-member-variables-for-dialog-controls.md)
 ###### [Selecting Controls](selecting-controls.md)
-####### [Selecting Multiple Controls](selecting-multiple-controls.md)
-####### [Specifying the Dominant Control](specifying-the-dominant-control.md)
 ###### [Sizing Individual Controls](sizing-individual-controls.md)
 ###### [Making Controls the Same Width, Height, or Size](making-controls-the-same-width-height-or-size.md)
 ###### [Setting the Size of the Combo Box and Its Drop-Down List](setting-the-size-of-the-combo-box-and-its-drop-down-list.md)
