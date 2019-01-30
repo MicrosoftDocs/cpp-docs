@@ -7326,6 +7326,61 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/creating-a-new-custom-or-data-resource.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-binary-data.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-binary-data.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/opening-a-resource-for-binary-editing.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-multiple-controls.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/dialog-editor-tab-toolbox.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/sizing-a-control-while-you-add-it.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-properties-for-an-activex-control.md",
+            "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/insert-activex-control-dialog-box.md",
+            "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/selecting-multiple-controls.md",
+            "redirect_url": "/cpp/windows/selecting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/specifying-the-dominant-control.md",
+            "redirect_url": "/cpp/windows/selecting-controls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
