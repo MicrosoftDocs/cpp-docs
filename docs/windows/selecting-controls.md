@@ -6,11 +6,11 @@ ms.assetid: 27f05450-4550-4229-9f4c-2c9e06365596
 ---
 # Selecting Controls
 
-Select controls to size, align, move, copy, or delete them, and then perform the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+Select controls to size, align, move, copy, or delete them, and then complete the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
 
-When a control is selected, it has a shaded border around it with solid (active) or hollow (inactive) "sizing handles," small squares that appear in the selection border. When multiple controls are selected, the dominant control has solid sizing handles; all the other selected controls have hollow sizing handles.
+When a control is selected, it has a shaded border around it with solid (active) or hollow (inactive) "sizing handles," small squares that appear in the selection border. When multiple controls are selected, the dominant control has solid sizing handles and all the other selected controls have hollow sizing handles.
 
-When you are sizing or aligning multiple controls, the **Dialog** editor uses the "dominant control" to determine how the other controls are sized or aligned. By default, the dominant control is the first control selected.
+When you're sizing or aligning multiple controls, the **Dialog** editor uses the "dominant control" to determine how the other controls are sized or aligned. By default, the dominant control is the first control selected.
 
 For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
@@ -24,11 +24,11 @@ For information on adding resources to managed projects, see [Resources in Deskt
 
    \- or -
 
-- Hold down the **Shift** key and select the controls you'd like to include in the selection.
+   Hold down the **Shift** key and select the controls you'd like to include in the selection.
 
    \- or -
 
-- Hold down the **Ctrl** key and select the controls you'd like to include in the selection.
+   Hold down the **Ctrl** key and select the controls you'd like to include in the selection.
 
 ## To remove a control from a group of selected controls or to add a control to a group of selected controls
 
