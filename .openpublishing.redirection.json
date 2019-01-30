@@ -7401,6 +7401,116 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/accelerator-key-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-modifier-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-type-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/id-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-an-entry-to-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-multiple-accelerator-keys.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-an-entry-from-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-in-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-an-entry-in-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/associating-an-accelerator-key-with-a-menu-item.md",
+            "redirect_url": "/cpp/windows/predefined-accelerator-keys",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-new-custom-or-data-resource.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-binary-data.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-binary-data.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/opening-a-resource-for-binary-editing.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-multiple-controls.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/dialog-editor-tab-toolbox.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/sizing-a-control-while-you-add-it.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-properties-for-an-activex-control.md",
+            "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/insert-activex-control-dialog-box.md",
+            "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/selecting-multiple-controls.md",
+            "redirect_url": "/cpp/windows/selecting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/specifying-the-dominant-control.md",
+            "redirect_url": "/cpp/windows/selecting-controls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
