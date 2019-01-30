@@ -22,7 +22,7 @@ The **Guide Settings** dialog box has the following properties:
 |---|---|
 |**Layout guides**|Displays the settings for the layout guides.|
 |**None**|Hides layout tools.|
-|**Rulers and guides**|When enabled, adds rulers to the layout tools; guides can be placed in the rulers. The default guides are the margins, which can be moved by dragging. Select the rulers to place a guide. Controls "snap" to guides when the controls are moved over or next to them. Controls also move with a guide once they're attached to it. When a control is attached to a guide on each side, and a guide is moved, the control is resized.|
+|**Rulers and guides**|When enabled, adds rulers to the layout tools; guides can be placed in the rulers. The default guides are the margins, which can be moved by dragging. Select the rulers to place a guide. Controls "snap" to guides when the controls are moved over or next to them. Controls also move with a guide once they're attached to it. When a control is attached to a guide on each side, and a guide is moved, the control resizes.|
 |**Grid**|Creates a layout grid. New controls will automatically align to the grid.|
 |**Grid spacing**|Displays the settings for the grid spacing in dialog box units (DLUs).|
 |**Width: DLUs**|Sets the width of the layout grid in DLUs. A horizontal DLU is the average width of the dialog box font divided by four.|
@@ -32,7 +32,7 @@ For information on adding resources to managed projects, see [Resources in Deskt
 
 ## Create and set guides and margins
 
-Whether you're moving controls, adding controls, or rearranging a current layout, guides can help you align controls accurately within a dialog box. Guides appear as blue dotted lines across the dialog box displayed in the editor and corresponding arrows in the rulers (at the top and along the left side of the **Dialog** editor).
+Whether you're moving controls, adding controls, or rearranging a current layout, guides can help you align controls accurately within a dialog box. Guides appear as blue dotted lines across the dialog box displayed in the editor and corresponding arrows in the rulers at the top and along the left side of the **Dialog** editor.
 
 When you create a dialog box, four margins are provided. Margins are modified guides, appearing as blue dotted lines.
 
@@ -52,7 +52,7 @@ When you create a dialog box, four margins are provided. Margins are modified gu
 
 \- or -
 
-   Drag the corresponding arrow off the ruler.
+    Drag the corresponding arrow off the ruler.
 
 ### To move margins
 
@@ -62,7 +62,7 @@ When you create a dialog box, four margins are provided. Margins are modified gu
 
 ## Align controls on a guide
 
-The sizing handles of controls snap to guides when the controls are moved, and guides snap to controls (if there are no controls previously snapped to the guide). When a guide is moved, controls that are snapped to it move as well. Controls snapped to more than one guide are resized when one of the guides is moved.
+The sizing handles of controls snap to guides when the controls are moved, and guides snap to controls if there are no controls previously snapped to the guide. When a guide is moved, controls that are snapped to it move as well. Controls snapped to more than one guide are resized when one of the guides is moved.
 
 The tick marks in the rulers that determine the spacing of guides and controls are defined by dialog units (DLUs). A DLU is based on the size of the dialog box font, normally 8-point MS Shell Dlg. A horizontal DLU is the average width of the dialog box font divided by four. A vertical DLU is the average height of the font divided by eight.
 
@@ -105,7 +105,7 @@ You can use special keys in conjunction with the mouse to disable the snapping e
 
 \- or -
 
-   On the **Format** menu, select **Toggle Guides**.
+    On the **Format** menu, select **Toggle Guides**.
 
 ## Modify the layout grid
 
@@ -123,7 +123,7 @@ When you're placing or arranging controls in a dialog box, you can use the layou
 
 1. From the **Format** menu, choose **Guide Settings**.
 
-1. In the **Guide Settings** dialog box, type the height and width in DLUs for the cells in the grid. The minimum height or width is 4 DLUs. For more information on DLUs, see [The Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md).
+1. In the **Guide Settings** dialog box, type the height and width in DLUs for the cells in the grid. The minimum height or width is 4 DLUs. For more information on DLUs, see [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md).
 
 ## Requirements
 
@@ -131,6 +131,5 @@ Win32
 
 ## See also
 
-[Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)<br/>
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
 [Controls (MFC)](../mfc/controls-mfc.md)<br/>
