@@ -109,8 +109,6 @@
 ####### [Grid Settings Dialog Box (Image Editor for Icons)](grid-settings-dialog-box-image-editor-for-icons.md)
 ###### [Toolbar (Image Editor for Icons)](toolbar-image-editor-for-icons.md)
 ###### [Window Panes (Image Editor for Icons)](window-panes-image-editor-for-icons.md)
-####### [Changing the Magnification Factor (Image Editor for Icons)](changing-the-magnification-factor-image-editor-for-icons.md)
-####### [Displaying or Hiding the Pixel Grid (Image Editor for Icons)](displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md)
 ##### [Working with Color (Image Editor for Icons)](working-with-color-image-editor-for-icons.md)
 ###### [Selecting Foreground or Background Colors (Image Editor for Icons)](selecting-foreground-or-background-colors-image-editor-for-icons.md)
 ###### [Filling a Bounded Area of an Image with a Color (Image Editor for Icons)](filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons.md)
