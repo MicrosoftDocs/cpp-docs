@@ -90,8 +90,6 @@
 ###### [Testing a Dialog Box](testing-a-dialog-box.md)
 ##### [Accelerator Keys for the Dialog Editor](accelerator-keys-for-the-dialog-editor.md)
 ##### [Troubleshooting the Dialog Editor](troubleshooting-the-dialog-editor.md)
-###### [Adding Controls to a Dialog Causes the Dialog to No Longer Function](adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md)
-###### [Using the RichEdit 1.0 Control with MFC](using-the-richedit-1-0-control-with-mfc.md)
 ##### [Defining Member Variables for Dialog Controls](defining-member-variables-for-dialog-controls.md)
 #### [Image Editor for Icons](image-editor-for-icons.md)
 ##### [Editing Graphical Resources (Image Editor for Icons)](editing-graphical-resources-image-editor-for-icons.md)
