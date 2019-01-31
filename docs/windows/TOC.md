@@ -118,7 +118,6 @@
 ###### [Customizing or Changing Colors (Image Editor for Icons)](customizing-or-changing-colors-image-editor-for-icons.md)
 ###### [Saving and Loading Different Color Palettes (Image Editor for Icons)](saving-and-loading-different-color-palettes-image-editor-for-icons.md)
 ###### [Colors Window (Image Editor for Icons)](colors-window-image-editor-for-icons.md)
-####### [Displaying or Hiding the Colors Window (Image Editor for Icons)](displaying-or-hiding-the-colors-window-image-editor-for-icons.md)
 ##### [Icons and Cursors: Image Resources for Display Devices (Image Editor for Icons)](icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)
 ###### [Creating a Device Image (Image Editor for Icons)](creating-a-device-image-image-editor-for-icons.md)
 ####### [New <Device> Image Type Dialog Box (Image Editor for Icons)](new-device-image-type-dialog-box-image-editor-for-icons.md)
