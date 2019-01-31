@@ -116,7 +116,6 @@
 ###### [Choosing a Transparent or Opaque Background (Image Editor for Icons)](choosing-a-transparent-or-opaque-background-image-editor-for-icons.md)
 ###### [Inverting the Colors in a Selection (Image Editor for Icons)](inverting-the-colors-in-a-selection-image-editor-for-icons.md)
 ###### [Customizing or Changing Colors (Image Editor for Icons)](customizing-or-changing-colors-image-editor-for-icons.md)
-####### [Custom Color Selector Dialog Box (Image Editor for Icons)](custom-color-selector-dialog-box-image-editor-for-icons.md)
 ###### [Saving and Loading Different Color Palettes (Image Editor for Icons)](saving-and-loading-different-color-palettes-image-editor-for-icons.md)
 ####### [Load Palette Colors Dialog Box (Image Editor for Icons)](load-palette-colors-dialog-box-image-editor-for-icons.md)
 ###### [Colors Window (Image Editor for Icons)](colors-window-image-editor-for-icons.md)
