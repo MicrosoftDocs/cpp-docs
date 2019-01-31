@@ -7421,6 +7421,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md",
+            "redirect_url": "/cpp/windows/troubleshooting-the-dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/using-the-richedit-1-0-control-with-mfc.md",
+            "redirect_url": "/cpp/windows/troubleshooting-the-dialog-editor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
