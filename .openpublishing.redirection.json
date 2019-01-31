@@ -7486,6 +7486,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/load-palette-colors-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/saving-and-loading-different-color-palettes-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
