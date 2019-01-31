@@ -37,11 +37,7 @@ To access this dialog box, open the [Image Editor](../windows/window-panes-image
 
 Opens the **Text Tool Font** dialog box, in which you can change the font, style, or size of the cursor font. Changes are applied to the text displayed in the **Text** area.
 
-Use this dialog box for:
-
-- [Changing the Font of Text on an Image](../windows/changing-the-font-of-text-on-an-image-image-editor-for-icons.md)
-
-To access this dialog box, select the **Font** button in the **Text Tool** dialog box.
+To access this dialog box, select the **Font** button in the **Text Tool** dialog box. The properties available are:
 
 |Property|Description|
 |---|---|
@@ -51,15 +47,9 @@ To access this dialog box, select the **Font** button in the **Text Tool** dialo
 |**Sample**|Shows a sample of how text will appear with the specified font settings.|
 |**Script**|Lists the available language scripts for the specified font. When you select a different language script, the character set for that language becomes available for creating multilingual documents.|
 
-Use this dialog for:
-
 #### To change the font of text on an image
 
-The following procedure is an example of how to:
-
-- Add text to an icon in a Windows Application
-
-- Manipulate the font of your text
+The following procedure is an example of how to add text to an icon in a Windows application and manipulate the font of your text.
 
 1. Create a C++ Windows Forms Application. For details, see [Creating a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5). An *app.ico* file is added to your project by default.
 
