@@ -7381,6 +7381,76 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/aligning-controls-on-a-guide.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-and-setting-guides-and-margins.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/disabling-guides.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/guide-settings-dialog-box.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modifying-the-layout-grid.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/arranging-push-buttons-along-the-right-or-bottom-of-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/centering-controls-in-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/evening-the-spacing-between-controls.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md",
+            "redirect_url": "/cpp/windows/troubleshooting-the-dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/using-the-richedit-1-0-control-with-mfc.md",
+            "redirect_url": "/cpp/windows/troubleshooting-the-dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/cropping-or-extending-an-entire-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/resizing-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resizing-an-entire-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/resizing-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/shrinking-or-stretching-an-entire-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/resizing-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/shrinking-or-stretching-part-of-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/resizing-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
