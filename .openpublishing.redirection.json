@@ -7496,6 +7496,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/new-device-image-type-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/custom-image-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/open-device-image-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
