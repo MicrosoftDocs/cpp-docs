@@ -7451,6 +7451,66 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/displaying-or-hiding-the-toolbar-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/toolbar-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/text-tool-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/toolbar-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/text-tool-font-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/toolbar-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-font-of-text-on-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/toolbar-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-magnification-factor-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/window-panes-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/window-panes-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/custom-color-selector-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/customizing-or-changing-colors-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/load-palette-colors-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/saving-and-loading-different-color-palettes-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/colors-window-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/new-device-image-type-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/custom-image-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/open-device-image-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
