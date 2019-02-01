@@ -1,6 +1,6 @@
 ---
 title: "isnan, _isnan, _isnanf"
-ms.date: "04/05/2018"
+ms.date: "01/31/2019"
 apiname: ["_isnan", "_isnanf", "isnan"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -64,5 +64,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[_finite, _finitef](finite-finitef.md)<br/>
+[fpclassify](fpclassify.md)<br/>
 [_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
+[isfinite, _finite, _finitef](finite-finitef.md)<br/>
+[isinf](isinf.md)<br/>
+[isnormal](isnormal.md)<br/>
