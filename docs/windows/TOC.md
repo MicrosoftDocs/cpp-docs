@@ -129,8 +129,6 @@
 ##### [Accelerator Keys (Image Editor for Icons)](accelerator-keys-image-editor-for-icons.md)
 #### [Menu Editor](menu-editor.md)
 ##### [Creating a Menu](creating-a-menu.md)
-###### [Inserting a New Menu Between Existing Menus](inserting-a-new-menu-between-existing-menus.md)
-###### [Adding Commands to a Menu](adding-commands-to-a-menu.md)
 ##### [Deleting Menus and Menu Commands](deleting-menus-and-menu-commands.md)
 ##### [Creating a Submenu](creating-a-submenu.md)
 ##### [Creating Pop-up Menus](creating-pop-up-menus.md)
