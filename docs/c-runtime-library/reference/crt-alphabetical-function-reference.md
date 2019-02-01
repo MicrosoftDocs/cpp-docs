@@ -1,6 +1,6 @@
 ---
 title: "UCRT alphabetical function reference"
-ms.date: "04/11/2018"
+ms.date: "01/31/2019"
 f1_keywords: ["vc.tables.runtime"]
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
 ---
@@ -1192,13 +1192,27 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 
 [_isdigit_l](isdigit-iswdigit-isdigit-l-iswdigit-l.md)
 
+[isfinite](finite-finitef.md)
+
 [isgraph](isgraph-iswgraph-isgraph-l-iswgraph-l.md)
 
 [_isgraph_l](isgraph-iswgraph-isgraph-l-iswgraph-l.md)
 
+[isgreater](floating-point-ordering.md)
+
+[isgreaterequal](floating-point-ordering.md)
+
+[isinf](isinf.md)
+
 [isleadbyte](isleadbyte-isleadbyte-l.md)
 
 [_isleadbyte_l](isleadbyte-isleadbyte-l.md)
+
+[isless](floating-point-ordering.md)
+
+[islessequal](floating-point-ordering.md)
+
+[islessgreater](floating-point-ordering.md)
 
 [islower](islower-iswlower-islower-l-iswlower-l.md)
 
@@ -1334,6 +1348,8 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 
 [_isnanf](isnan-isnan-isnanf.md)
 
+[isnormal](isnormal.md)
+
 [isprint](isprint-iswprint-isprint-l-iswprint-l.md)
 
 [_isprint_l](isprint-iswprint-isprint-l-iswprint-l.md)
@@ -1345,6 +1361,8 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 [isspace](isspace-iswspace-isspace-l-iswspace-l.md)
 
 [_isspace_l](isspace-iswspace-isspace-l-iswspace-l.md)
+
+[isunordered](floating-point-ordering.md)
 
 [isupper](isupper-isupper-l-iswupper-iswupper-l.md)
 
@@ -1614,6 +1632,8 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 
 [_mbclen](mbclen-mblen-mblen-l.md)
 
+[_mbclen_l](mbclen-mblen-mblen-l.md)
+
 [_mbctohira](mbctohira-mbctohira-l-mbctokata-mbctokata-l.md)
 
 [_mbctohira_l](mbctohira-mbctohira-l-mbctokata-mbctokata-l.md)
@@ -1654,11 +1674,15 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 
 [_mbscat_s](strcat-s-wcscat-s-mbscat-s.md)
 
+[_mbscat_s_l](strcat-s-wcscat-s-mbscat-s.md)
+
 [_mbschr](strchr-wcschr-mbschr-mbschr-l.md)
 
 [_mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)
 
 [_mbscmp](strcmp-wcscmp-mbscmp.md)
+
+[_mbscmp_l](strcmp-wcscmp-mbscmp.md)
 
 [_mbscoll](strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)
 
@@ -1667,6 +1691,8 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 [_mbscpy](strcpy-wcscpy-mbscpy.md)
 
 [_mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)
+
+[_mbscpy_s_l](strcpy-s-wcscpy-s-mbscpy-s.md)
 
 [_mbscspn](strcspn-wcscspn-mbscspn-mbscspn-l.md)
 
@@ -2259,6 +2285,8 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 [setvbuf](setvbuf.md)
 
 [signal](signal.md)
+
+[signbit](signbit.md)
 
 [sin](sin-sinf-sinl.md)
 

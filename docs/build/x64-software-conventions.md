@@ -133,7 +133,7 @@ _declspec(align(8)) struct {
 #### Example 3
 
 ```C
-// Total size = 22 bytes, alignment = 4 bytes (doubleword).
+// Total size = 12 bytes, alignment = 4 bytes (doubleword).
 
 _declspec(align(4)) struct {
     char a;       // +0; size = 1 byte
