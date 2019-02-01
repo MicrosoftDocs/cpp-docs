@@ -111,7 +111,7 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Multiplies a floating-point number by an integral power of **FLT_RADIX**
 [_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|Sets the floating-point control word
 [_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|Enables or disables SSE2 instructions
-[signbit](signbit.md)|Tests the sign bit of a floating-point value
+[signbit](../c-runtime-library/reference/signbit.md)|Tests the sign bit of a floating-point value
 [sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|Computes the sine
 [sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Computes the hyperbolic sine
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Computes the square root

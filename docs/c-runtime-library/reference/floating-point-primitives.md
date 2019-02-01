@@ -9,7 +9,7 @@ helpviewer_keywords: ["_dclass", "_ldclass", "_fdclass", "_dsign", "_ldsign", "_
 ---
 # Floating-point primitives
 
-Microsoft-specific primitive functions that are used to implement some standard C runtime library (CRT) floating-point functions. They are documented here for completeness, but are not recommended for use. Some of these functions are noted as unused, because they are known to have issues in precision, exception handling, and conformance to IEEE-754 behavior. They exist in the library only for backward compatibility. For correct behavior, portability, and adherence to standards, prefer the standard floating-point functions over these functions.
+Microsoft-specific primitive functions that are used to implement some standard C runtime library (CRT) floating-point functions. They're documented here for completeness, but aren't recommended for use. Some of these functions are noted as unused, because they're known to have issues in precision, exception handling, and conformance to IEEE-754 behavior. They exist in the library only for backward compatibility. For correct behavior, portability, and adherence to standards, prefer the standard floating-point functions over these functions.
 
 ## _dclass, _ldclass, _fdclass
 
@@ -84,7 +84,7 @@ These floating-point primitives take two arguments, *x* and *y*, and return a va
 | **_FP_EQ** | *x* can be considered equal to *y* |
 | **_FP_GT** | *x* can be considered greater than *y* |
 
-These primitives implement the **isgreater**, **isgreaterequal**, **isless**, **islessequal**, **islessgreater**, and **isunordered** macros and functions in the CRT.
+These primitives implement the [isgreater, isgreaterequal, isless, islessequal, islessgreater, and isunordered](floating-point-ordering.md) macros and functions in the CRT.
 
 ## _dtest, _ldtest, _fdtest
 
@@ -135,7 +135,7 @@ An exponent as an integral type.
 
 ### Remarks
 
-These floating-point primitives take a pointer to a floating-point value *px* and an exponent value *exp*, and remove the fractional part of the floating point value below the given exponent, if possible. The value returned is the result of **fpclassify** on the input value in *px*, if the operation can't be performed because the input value is a NaN or infinity, and on the output value in *px* if it can.
+These floating-point primitives take a pointer to a floating-point value *px* and an exponent value *exp*, and remove the fractional part of the floating-point value below the given exponent, if possible. The value returned is the result of **fpclassify** on the input value in *px* if it's a NaN or infinity, and on the output value in *px* otherwise.
 
 ## _dscale, _ldscale, _fdscale
 
@@ -157,7 +157,7 @@ An exponent as an integral type.
 
 ### Remarks
 
-These floating-point primitives take a pointer to a floating-point value *px* and an exponent value *exp*, and scale the value in *px* by 2<sup>*exp*</sup>, if possible. The value returned is the result of **fpclassify** on the input value in *px*, if the operation can't be performed because the input value is a NaN or infinity, and on the output value in *px* if it can. Prefer the [ldexp, ldexpf, and ldexpl](ldexp.md) functions for portability.
+These floating-point primitives take a pointer to a floating-point value *px* and an exponent value *exp*, and scale the value in *px* by 2<sup>*exp*</sup>, if possible. The value returned is the result of **fpclassify** on the input value in *px* if it's a NaN or infinity, and on the output value in *px* otherwise. For portability, prefer the [ldexp, ldexpf, and ldexpl](ldexp.md) functions.
 
 ## _dunscale, _ldunscale, _fdunscale
 
@@ -179,7 +179,7 @@ Pointer to a floating-point argument.
 
 ### Remarks
 
-These floating-point primitives break down the floating-point value pointed at by *px* into a significand (mantissa) and an exponent, if possible. The significand is scaled such that the absolute value is greater than or equal to 0.5 and less than 1.0. The exponent is the value *n* where the original floating point value is equal to the scaled significandx times 2<sup>n</sup>. The integer exponent *n* is stored at the location pointed to by *pexp*. The value returned is the result of **fpclassify** on the input value in *px*, if the operation can't be performed because the input value is a NaN or infinity, and on the output value in *px* if it can. Prefer the [frexp, frexpf, frexpl](frexp.md) functions for portability.
+These floating-point primitives break down the floating-point value pointed at by *px* into a significand (mantissa) and an exponent, if possible. The significand is scaled such that the absolute value is greater than or equal to 0.5 and less than 1.0. The exponent is the value *n*, where the original floating-point value is equal to the scaled significand times 2<sup>*n*</sup>. This integer exponent *n* is stored at the location pointed to by *pexp*. The value returned is the result of **fpclassify** on the input value in *px* if it's a NaN or infinity, and on the output value otherwise. For portability, prefer the [frexp, frexpf, frexpl](frexp.md) functions.
 
 ## _dexp, _ldexp, _fdexp
 
@@ -204,7 +204,7 @@ An exponent as an integral type.
 
 ### Remarks
 
-These floating-point primitives construct a floating-point value in the location pointed at by *px* equal to *y* * 2<sup>*exp*</sup>. The value returned is the result of **fpclassify** on the input value in *y*, if the operation can't be performed because the input value is a NaN or infinity, and on the output value in *px* if it can. Prefer the [ldexp, ldexpf, and ldexpl](ldexp.md) functions for portability.
+These floating-point primitives construct a floating-point value in the location pointed at by *px* equal to *y* * 2<sup>*exp*</sup>. The value returned is the result of **fpclassify** on the input value in *y* if it's a NaN or infinity, and on the output value in *px* otherwise. For portability, prefer the [ldexp, ldexpf, and ldexpl](ldexp.md) functions.
 
 ## _dnorm, _fdnorm
 
@@ -222,7 +222,7 @@ Pointer to the bitwise representation of a floating-point value expressed as an 
 
 ### Remarks
 
-These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, accordingly. The value is passed as the bitwise representation of the floating point type converted to an array of **unsigned** **short** through the `_double_val`, `_ldouble_val`, or `_float_val` type punning union declared in math.h. The return value is the result of **fpclassify** on the input floating-point value, if the operation can't be performed because the input value is a NaN or infinity, and on the output floating-point value if it can.
+These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **unsigned** **short** through the `_double_val`, `_ldouble_val`, or `_float_val` type punning union declared in math.h. The return value is the result of **fpclassify** on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
 
 ## _dpoly, _ldpoly, _fdpoly
 
@@ -247,7 +247,7 @@ Order of the polynomial to evaluate.
 
 ### Remarks
 
-These floating-point primitives return the evaluation of *x* in the polynomial of order *n* whose coefficients are represented by the corresponding constant values in *table*. For example, if *table*\[0] = 3.0, *table*\[1] = 4.0, *table*\[2] = 5.0, and *n* = 2, it represents the polynomial 5.0x<sup>2</sup> + 4.0x + 3.0. If this polynomial is evaluated for *x* of 2.0, the result is 31.0. These functions are not used internally.
+These floating-point primitives return the evaluation of *x* in the polynomial of order *n* whose coefficients are represented by the corresponding constant values in *table*. For example, if *table*\[0] = 3.0, *table*\[1] = 4.0, *table*\[2] = 5.0, and *n* = 2, it represents the polynomial 5.0x<sup>2</sup> + 4.0x + 3.0. If this polynomial is evaluated for *x* of 2.0, the result is 31.0. These functions aren't used internally.
 
 ## _dlog, _dlog, _dlog
 
@@ -269,7 +269,7 @@ Flag that controls the base to use, 0 for base *e* and non-zero for base 10.
 
 ### Remarks
 
-These floating-point primitives return the natural log of *x*, ln(*x*) or log<sub>*e*</sub>(*x*), when *base_flag* is 0, and the log base 10 of *x*, or log<sub>10</sub>(*x*), when *base_flag* is non-zero. These functions are not used internally. Prefer the functions [log, logf, logl, log10, log10f, log10l](log-logf-log10-log10f.md) for portability.
+These floating-point primitives return the natural log of *x*, ln(*x*) or log<sub>*e*</sub>(*x*), when *base_flag* is 0. They return the log base 10 of *x*, or log<sub>10</sub>(*x*), when *base_flag* is non-zero. These functions aren't used internally. For portability, prefer the functions [log, logf, logl, log10, log10f, and log10l](log-logf-log10-log10f.md).
 
 ## _dsin, _ldsin, _fdsin
 
@@ -291,7 +291,7 @@ Quadrant offset of 0, 1, 2, or 3 to use to produce `sin`, `cos`, `-sin`, and `-c
 
 ### Remarks
 
-These floating-point primitives return the sine of *x* offset by the *quadrant* modulo 4. Effectively, they return the sine, cosine, -sine, and -cosine of *x* when *quadrant* modulo 4 is 0, 1, 2, or 3, respectively. These functions are not used internally. Prefer the [sin, sinf, sinl](sin-sinf-sinl.md) and [cos, cosf, cosl](cos-cosf-cosl.md) functions for portability.
+These floating-point primitives return the sine of *x* offset by the *quadrant* modulo 4. Effectively, they return the sine, cosine, -sine, and -cosine of *x* when *quadrant* modulo 4 is 0, 1, 2, or 3, respectively. These functions aren't used internally. For portability, prefer the [sin, sinf, sinl](sin-sinf-sinl.md), [cos, cosf, and cosl](cos-cosf-cosl.md) functions.
 
 ## Requirements
 

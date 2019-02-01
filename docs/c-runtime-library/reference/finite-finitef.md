@@ -40,11 +40,11 @@ The floating-point value to test.
 
 ## Return Value
 
-**isfinite**, **_finite**, and **_finitef** return a nonzero value  (**isfinite** returns **true** in C++ code) if the argument *x* is finite; that is, if -INF < *x* < +INF. They return 0 (**isfinite** returns **false** in C++ code) if the argument is infinite or a NAN. Both normal and subnormal floating-point values are considered finite.
+**isfinite**, **_finite**, and **_finitef** return a non-zero value if the argument *x* is finite, that is, if -INF < *x* < +INF. They return 0 or **false** if the argument is infinite or a NAN. Both normal and subnormal floating-point values are considered finite.
 
 ## Remarks
 
-**isfinite** is a macro when compiled as C, and an inline template function when compiled as C++. The **_finite** and **_finitef** functions are Microsoft specific. The **_finitef** function is only available when compiled for x86, ARM, or ARM64 platforms.
+**isfinite** is a macro when compiled as C, and an inline template function when compiled as C++. The **_finite** and **_finitef** functions are Microsoft-specific. The **_finitef** function is only available when compiled for x86, ARM, or ARM64 platforms.
 
 ## Requirements
 
