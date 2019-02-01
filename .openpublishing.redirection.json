@@ -7516,6 +7516,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/inserting-a-new-menu-between-existing-menus.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-commands-to-a-menu.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
