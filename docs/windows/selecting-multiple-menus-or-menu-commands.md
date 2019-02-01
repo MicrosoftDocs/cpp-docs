@@ -10,7 +10,7 @@ For information on adding resources to managed projects, see [Resources in Deskt
 
 ## To select multiple menu commands
 
-You can select multiple menu names or menu commands to perform bulk operations such as deleting or changing properties.
+You can select multiple menu names or menu commands to run bulk operations such as deleting or changing properties.
 
 While holding down the **Ctrl** key, select the menus or submenu commands you want.
 
@@ -34,7 +34,7 @@ You can move or copy menus and menu commands using the drag-and-drop method or b
 
 1. From the shortcut menu, choose **Cut** (to move) or **Copy**.
 
-1. If you are moving the items to another menu resource or resource script file, [open it in another window](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
+1. If you're moving the items to another menu resource or resource script file, [open it in another window](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
 1. Select the position of the menu or menu command you want to move or copy to.
 
