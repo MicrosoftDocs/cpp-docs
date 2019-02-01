@@ -12,7 +12,7 @@ For information on adding resources to managed projects, see [Resources in Deskt
 
 You can select multiple menu names or menu commands to perform bulk operations such as deleting or changing properties.
 
-1. While holding down the **Ctrl** key, select the menus or submenu commands you want.
+While holding down the **Ctrl** key, select the menus or submenu commands you want.
 
 ## To move and copy menus and menu commands
 
