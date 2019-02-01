@@ -40,7 +40,7 @@ The floating-point value to test.
 
 ## Return Value
 
-**isfinite**, **_finite**, and **_finitef** return a non-zero value if the argument *x* is finite, that is, if -INF < *x* < +INF. They return 0 or **false** if the argument is infinite or a NAN. Both normal and subnormal floating-point values are considered finite.
+**isfinite**, **_finite**, and **_finitef** return a non-zero value if the argument *x* is finite. They return 0 or **false** if the argument is infinite or a NAN. Both normal and subnormal values are considered finite.
 
 ## Remarks
 
