@@ -132,8 +132,6 @@
 ##### [Deleting Menus and Menu Commands](deleting-menus-and-menu-commands.md)
 ##### [Creating a Submenu](creating-a-submenu.md)
 ##### [Creating Pop-up Menus](creating-pop-up-menus.md)
-###### [Connecting a Pop-up Menu to Your Application](connecting-a-pop-up-menu-to-your-application.md)
-###### [Viewing a Menu as a Pop-up Menu](viewing-a-menu-as-a-pop-up-menu.md)
 ##### [Selecting Multiple Menus or Menu Commands](selecting-multiple-menus-or-menu-commands.md)
 ##### [Moving and Copying Menus and Menu Commands](moving-and-copying-menus-and-menu-commands.md)
 ##### [Associating a Menu Command with an Accelerator Key](associating-a-menu-command-with-an-accelerator-key.md)
