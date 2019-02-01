@@ -7536,6 +7536,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/moving-and-copying-menus-and-menu-commands.md",
+            "redirect_url": "/cpp/windows/selecting-multiple-menus-or-menu-commands",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-menus-and-menu-commands.md",
+            "redirect_url": "/cpp/windows/selecting-multiple-menus-or-menu-commands",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
