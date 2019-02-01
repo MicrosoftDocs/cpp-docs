@@ -7526,6 +7526,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/connecting-a-pop-up-menu-to-your-application.md",
+            "redirect_url": "/cpp/windows/creating-pop-up-menus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-a-menu-as-a-pop-up-menu.md",
+            "redirect_url": "/cpp/windows/creating-pop-up-menus",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
