@@ -26,7 +26,7 @@ inline bool isnormal(
 *x*<br/>
 The floating-point value to test.
 
-## Return Value
+## Return value
 
 **isnormal** returns a nonzero value  (**true** in C++ code) if the argument *x* is both finite and not subnormal. **isnormal** returns 0 (**false** in C++ code) if the argument is a subnormal, an infinity, or a NAN.
 

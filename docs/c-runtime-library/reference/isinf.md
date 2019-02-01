@@ -26,7 +26,7 @@ inline bool isinf(
 *x*<br/>
 The floating-point value to test.
 
-## Return Value
+## Return value
 
 **isinf** returns a nonzero value  (**true** in C++ code) if the argument *x* is a positive or negative infinity. **isinf** returns 0 (**false** in C++ code) if the argument is finite or a NAN. Both normal and subnormal floating-point values are considered finite.
 

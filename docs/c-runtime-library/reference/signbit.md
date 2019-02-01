@@ -33,13 +33,13 @@ inline bool signbit(
 *x*<br/>
 The floating-point value to test.
 
-## Return Value
+## Return value
 
 **signbit** returns a non-zero value (**true** in C++) if the argument *x* is negative or negative infinity. It returns 0 (**false** in C++) if the argument is non-negative, positive infinity, or a NAN.
 
 ## Remarks
 
-**signbit** is a macro when compiled as C, and an overloaded function when compiled as C++.
+**signbit** is a macro when compiled as C, and an overloaded inline function when compiled as C++.
 
 ## Requirements
 
