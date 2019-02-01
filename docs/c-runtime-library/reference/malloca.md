@@ -29,7 +29,7 @@ Bytes to be allocated from the stack.
 
 The **_malloca** routine returns a **void** pointer to the allocated space, which is guaranteed to be suitably aligned for storage of any type of object. If *size* is 0, **_malloca** allocates a zero-length item and returns a valid pointer to that item.
 
-If *size* is greater than **_ALLOCA_S_THRESHOLD**, then **_malloca** will attempt to allocate on the heap and return a null pointer if the space cannot be allocated. If *size* is less than or equal to **_ALLOCA_S_THRESHOLD**, then **_malloca** will attempt to allocate on the stack and a stack overflow exception will be generated if the space cannot be allocated. The stack overflow exception is not a C++ exception; it is a structured exception. Instead of using C++ exception handling, you must use [Structured Exception Handling](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
+If *size* is greater than **_ALLOCA_S_THRESHOLD**, then **_malloca** attempts to allocate on the heap, and returns a null pointer if the space can't be allocated. If *size* is less than or equal to **_ALLOCA_S_THRESHOLD**, then **_malloca** attempts to allocate on the stack, and a stack overflow exception is generated if the space can't be allocated. The stack overflow exception isn't a C++ exception; it's a structured exception. Instead of using C++ exception handling, you must use [Structured Exception Handling](../../cpp/structured-exception-handling-c-cpp.md) (SEH) to catch this exception.
 
 ## Remarks
 
