@@ -10,6 +10,8 @@ ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
 > [!NOTE]
 > The **Resource Window** is not available in Express editions.
 
+For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
+
 ## To create a standard menu
 
 1. From the **View** menu, select **Resource View** and then right-click on the **Menu** heading and choose **Add Resource**. Choose **Menu**.
@@ -30,8 +32,6 @@ ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
 
    > [!NOTE]
    > To create a single-item menu on the menu bar, set the **Popup** property to **False**.
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## To insert a new menu between existing menus
 
