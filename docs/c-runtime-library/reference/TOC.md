@@ -223,6 +223,7 @@
 ## [_findclose](findclose.md)
 ## [_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64](findfirst-functions.md)
 ## [_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64](findnext-functions.md)
+## [Floating-point primitives](floating-point-primitives.md)
 ## [floor, floorf, floorl](floor-floorf-floorl.md)
 ## [flushall](posix-flushall.md)
 ## [_flushall](flushall.md)
