@@ -7556,6 +7556,36 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/finding-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-or-deleting-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-a-string-from-one-resource-file-to-another.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-caption-property-of-multiple-strings.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-formatting-or-special-characters-to-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
