@@ -138,7 +138,6 @@
 #### [Toolbar Editor](toolbar-editor.md)
 ##### [Creating New Toolbars](creating-new-toolbars.md)
 ##### [Converting Bitmaps to Toolbars](converting-bitmaps-to-toolbars.md)
-###### [New Toolbar Resource Dialog Box](new-toolbar-resource-dialog-box.md)
 ##### [Creating, Moving, and Editing Toolbar Buttons](creating-moving-and-editing-toolbar-buttons.md)
 ###### [Creating a New Toolbar Button](creating-a-new-toolbar-button.md)
 ###### [Moving a Toolbar Button](moving-a-toolbar-button.md)
