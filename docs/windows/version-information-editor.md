@@ -57,7 +57,7 @@ You can sort the information sequence of the string block by clicking either the
 
 ## To access version information from within your program
 
-1. If you want to access the version information from within your program, use the [GetFileVersionInfo](/windows/desktop/api/winver/nf-winver-getfileversioninfoa) function and the [VerQueryValue](/windows/desktop/api/winver/nf-winver-verqueryvaluea) function.
+If you want to access the version information from within your program, use the [GetFileVersionInfo](/windows/desktop/api/winver/nf-winver-getfileversioninfoa) function and the [VerQueryValue](/windows/desktop/api/winver/nf-winver-verqueryvaluea) function.
 
    > [!NOTE]
    > While using the **Version Information** editor, in many instances you can right-click to display a shortcut menu of resource-specific commands. For example, if you select while pointing to a block header entry, the shortcut menu shows the **New Version Block Info** and **Delete Version Block Info** commands.
