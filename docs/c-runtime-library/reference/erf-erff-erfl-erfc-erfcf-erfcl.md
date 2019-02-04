@@ -1,11 +1,11 @@
 ---
 title: "erf, erff, erfl, erfc, erfcf, erfcl"
-ms.date: "11/19/2018"
-apiname: ["erff", "erfl", "erf"]
+ms.date: "01/31/2019"
+apiname: ["erff", "erfl", "erf", "erfc", "erfcf", "erfcl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: ["erfl", "erf", "erff"]
-helpviewer_keywords: ["erfl function", "erff function", "erf function"]
+f1_keywords: ["erfl", "erf", "erff", "erfc", "erfcf", "erfcl"]
+helpviewer_keywords: ["erfl function", "erff function", "erf function", "erfcl function", "erfcf function", "erfc function"]
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
 ---
 # erf, erff, erfl, erfc, erfcf, erfcl

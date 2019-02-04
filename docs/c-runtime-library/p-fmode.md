@@ -2,7 +2,7 @@
 title: "__p__fmode"
 ms.date: "11/04/2016"
 apiname: ["__p__fmode"]
-apilocation: ["msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll"]
+apilocation: ["msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__p__fmode"]
 helpviewer_keywords: ["__p__fmode"]

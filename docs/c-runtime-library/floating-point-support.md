@@ -1,6 +1,6 @@
 ---
 title: "Math and floating-point support"
-ms.date: "04/06/2018"
+ms.date: "01/31/2019"
 f1_keywords: ["c.math"]
 helpviewer_keywords: ["floating-point numbers, math routines", "math routines", "floating-point numbers"]
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
@@ -59,7 +59,6 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [fesetround](../c-runtime-library/reference/fegetround-fesetround2.md)|Sets the specified floating-point rounding mode
 [fetestexcept](../c-runtime-library/reference/fetestexcept1.md)|Determines which floating-point exception status flags are set
 [feupdateenv](../c-runtime-library/reference/feupdateenv.md)|Restores a floating-point environment then raises previous exceptions
-[_finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|Determines whether a value is finite
 [floor, floorf, floorl](../c-runtime-library/reference/floor-floorf-floorl.md)|Computes the floor
 [fma, fmaf, fmal](../c-runtime-library/reference/fma-fmaf-fmal.md)|Computes a fused multiply-add
 [fmax, fmaxf, fmaxl](../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)|Computes the maximum of the arguments
@@ -77,7 +76,11 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [ilogb, ilogbf, ilogbl](../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md)|Computes the integer base-2 exponent
 [imaxabs](../c-runtime-library/reference/imaxabs.md)|Computes the absolute value of an integer type
 [imaxdiv](../c-runtime-library/reference/imaxdiv.md)|Computes the quotient and the remainder of two integer values
+[isfinite, _finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|Determines whether a value is finite
+[isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered](../c-runtime-library/reference/floating-point-ordering.md)|Compare the order of two floating point values
+[isinf](../c-runtime-library/reference/isinf.md)|Determines whether a floating-point value is infinite
 [isnan, _isnan, _isnanf](../c-runtime-library/reference/isnan-isnan-isnanf.md)|Tests a floating-point value for NaN
+[isnormal](../c-runtime-library/reference/isnormal.md)|Tests whether a floating-point value is both finite and not subnormal
 [_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Computes the Bessel function
 [ldexp, ldexpf, ldexpl](../c-runtime-library/reference/ldexp.md)|Computes x*2<sup>n</sup>
 [lgamma, lgammaf, lgammal](../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)|Computes the natural logarithm of the absolute value of the gamma function
@@ -108,6 +111,7 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 [scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|Multiplies a floating-point number by an integral power of **FLT_RADIX**
 [_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|Sets the floating-point control word
 [_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|Enables or disables SSE2 instructions
+[signbit](../c-runtime-library/reference/signbit.md)|Tests the sign bit of a floating-point value
 [sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|Computes the sine
 [sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Computes the hyperbolic sine
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Computes the square root
@@ -124,3 +128,4 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 ## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Floating-point primitives](../c-runtime-library/reference/floating-point-primitives.md)<br/>
