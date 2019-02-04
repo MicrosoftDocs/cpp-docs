@@ -7511,6 +7511,86 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/using-the-256-color-palette-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-256-color-icon-or-cursor-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/inserting-a-new-menu-between-existing-menus.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-commands-to-a-menu.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/connecting-a-pop-up-menu-to-your-application.md",
+            "redirect_url": "/cpp/windows/creating-pop-up-menus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-a-menu-as-a-pop-up-menu.md",
+            "redirect_url": "/cpp/windows/creating-pop-up-menus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-and-copying-menus-and-menu-commands.md",
+            "redirect_url": "/cpp/windows/selecting-multiple-menus-or-menu-commands",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-menus-and-menu-commands.md",
+            "redirect_url": "/cpp/windows/selecting-multiple-menus-or-menu-commands",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/associating-menu-commands-with-status-bar-text-in-mfc-applications.md",
+            "redirect_url": "/cpp/windows/associating-a-menu-command-with-an-accelerator-key",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/assigning-access-keys-to-menu-commands.md",
+            "redirect_url": "/cpp/windows/associating-a-menu-command-with-an-accelerator-key",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-or-deleting-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-a-string-from-one-resource-file-to-another.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-caption-property-of-multiple-strings.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-formatting-or-special-characters-to-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/new-toolbar-resource-dialog-box.md",
+            "redirect_url": "/cpp/windows/converting-bitmaps-to-toolbars",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
