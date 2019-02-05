@@ -7661,6 +7661,41 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/adding-a-control-to-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-control-properties.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-control.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-and-adding-activex-controls-to-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-event-handlers-for-dialog-box-controls.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/default-control-events.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/defining-member-variables-for-dialog-controls.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
