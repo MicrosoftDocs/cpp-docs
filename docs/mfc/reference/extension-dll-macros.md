@@ -326,14 +326,8 @@ MFC extension DLLs need to call [AfxInitExtensionModule](#afxinitextensionmodule
 
 **Header:** afxdll_.h
 
-## See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxInitExtensionModule](#afxinitextensionmodule)<br/>
-[AfxGetStaticModuleState](#afxgetstaticmodulestate)<br/>
 [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
-[AFX_MANAGE_STATE](#afx_manage_state)<br/>
 [Managing the State Data of MFC Modules](../managing-the-state-data-of-mfc-modules.md)<br/>
-[AfxSetAmbientActCtx](#setambientactctx)<br/>
-[AfxTermExtensionModule](#afxtermextensionmodule)<br/>
-[AfxGetAmbientActCtx](#afxgetambientactctx)
