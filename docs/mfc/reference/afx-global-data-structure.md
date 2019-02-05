@@ -848,7 +848,6 @@ Returns S_OK if successful; an error value otherwise.
 [Desktop Window Manager](/windows/desktop/dwm/dwm-overview)<br/>
 [Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)<br/>
 [UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
-[AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport)<br/>
 [GetSysColor Function](/windows/desktop/api/winuser/nf-winuser-getsyscolor)<br/>
 [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)<br/>
 [NONCLIENTMETRICS Structure](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)<br/>
