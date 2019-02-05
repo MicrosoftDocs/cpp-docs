@@ -7716,6 +7716,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/creating-a-dialog-box-that-users-cannot-exit.md",
+            "redirect_url": "/cpp/windows/creating-a-new-dialog-box",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/changing-the-names-of-symbol-header-files.md",
             "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
             "redirect_document_id": false
