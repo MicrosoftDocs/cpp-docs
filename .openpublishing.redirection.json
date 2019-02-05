@@ -7716,6 +7716,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/changing-the-names-of-symbol-header-files.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-a-symbol-s-numeric-value.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/symbol-value-restrictions.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/symbol-name-restrictions.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
