@@ -27,7 +27,7 @@ You can avoid exporting classes by defining a DLL that defines a class with virt
 
 C4275 can be ignored in Visual C++ if you are deriving from a type in the C++ Standard Library, compiling a debug release (**/MTd**) and where the compiler error message refers to _Container_base.
 
-```
+```cpp
 // C4275.cpp
 // compile with: /EHsc /MTd /W2 /c
 #include <vector>
