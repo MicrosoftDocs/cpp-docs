@@ -7751,6 +7751,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/resource-symbols-dialog-box.md",
+            "redirect_url": "/cpp/windows/viewing-resource-symbols",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
