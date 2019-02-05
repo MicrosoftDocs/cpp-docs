@@ -359,9 +359,6 @@ AfxOleUnlockControl(_T("MSCAL.Calendar"));
 
 **Header:** afxwin.h
 
-## See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxOleLockControl](#afxolelockcontrol)<br/>
-[AfxOleUnlockControl](#afxoleunlockcontrol)
-
