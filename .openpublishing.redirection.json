@@ -7631,6 +7631,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/editing-a-string-in-a-version-information-resource.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-version-information-for-another-language.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-version-information-block.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accessing-version-information-from-within-your-program.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
