@@ -898,10 +898,7 @@ Stack, global, or embedded objects are not enumerated. The pointer passed to `Af
 
 [!code-cpp[NVC_MFCCollections#116](../../mfc/codesnippet/cpp/diagnostic-services_19.cpp)]
 
-## See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
-[VERIFY](#verify)<br/>
-[ATLENSURE](#altensure)<br/>
-[ASSERT](#assert)<br/>
 [CObject::Dump](cobject-class.md#dump)
