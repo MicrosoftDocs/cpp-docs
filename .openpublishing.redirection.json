@@ -7651,6 +7651,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/changing-the-properties-of-a-resource.md",
+            "redirect_url": "/cpp/windows/viewing-and-editing-resources-in-a-resource-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/previewing-resources.md",
+            "redirect_url": "/cpp/windows/viewing-and-editing-resources-in-a-resource-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-a-resource.md",
+            "redirect_url": "/cpp/windows/viewing-and-editing-resources-in-a-resource-editor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
