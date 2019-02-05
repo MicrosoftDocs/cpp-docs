@@ -33,7 +33,6 @@
 ##### [How to: Open a Manifest Resource](how-to-open-a-manifest-resource.md)
 ### [Symbols: Resource Identifiers](symbols-resource-identifiers.md)
 #### [Viewing Resource Symbols](viewing-resource-symbols.md)
-##### [Resource Symbols Dialog Box](resource-symbols-dialog-box.md)
 #### [Creating New Symbols](creating-new-symbols.md)
 #### [Changing Unassigned Symbols](changing-unassigned-symbols.md)
 #### [Deleting Unassigned Symbols](deleting-unassigned-symbols.md)
