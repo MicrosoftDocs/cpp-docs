@@ -51,7 +51,7 @@ Always check the return value to see whether the pointer is NULL before you perf
 
 **fopen** supports Unicode file streams. To open a Unicode file, pass a **ccs** flag that specifies the desired encoding to **fopen**, as follows.
 
-> **FILE *fp = fopen("newfile.txt", "rt+, ccs=**_encoding_**");**
+> **FILE \*fp = fopen("newfile.txt", "rt+, ccs=**_encoding_**");**
 
 Allowed values of *encoding* are **UNICODE**, **UTF-8**, and **UTF-16LE**.
 
