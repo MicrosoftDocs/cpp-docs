@@ -1,7 +1,7 @@
 ---
 title: "_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64"
 ms.date: "11/04/2016"
-apiname: ["_findfirst", "_wfindfirst"]
+apiname: ["_findfirst", "_wfindfirst", "_findfirst32", "_wfindfirst32", "_findfirst32i64", "_wfindfirst32i64", "_findfirst64", "_wfindfirst64", "_findfirst64i32", "_wfindfirst64i32", "_findfirsti64", "_wfindfirsti64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["findfirst32i64", "wfindfirst32i64", "tfindfirst64", "_findfirst64i32", "_wfindfirst32i64", "_wfindfirsti64", "wfindfirst", "_tfindfirsti64", "findfirst32", "_tfindfirst32", "_findfirsti64", "findfirst", "wfindfirst64", "wfindfirst32", "tfindfirst32", "_wfindfirst64i32", "findfirst64i32", "tfindfirst64i32", "_wfindfirst", "findfirsti64", "_findfirst32i64", "wfindfirst64i32", "_wfindfirst32", "_findfirst32", "_tfindfirst32i64", "tfindfirst", "_tfindfirst64i32", "findfirst64", "_tfindfirst", "_findfirst64", "_tfindfirst64", "tfindfirst32i64", "_findfirst", "_wfindfirst64"]

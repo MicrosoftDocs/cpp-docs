@@ -1,19 +1,19 @@
 ---
-title: "strcpy_s, wcscpy_s, _mbscpy_s"
-ms.date: "03/22/2086"
-apiname: ["wcscpy_s", "_mbscpy_s", "strcpy_s"]
+title: "strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l"
+ms.date: "01/22/2019"
+apiname: ["wcscpy_s", "_mbscpy_s", "_mbscpy_s_l", "strcpy_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: ["strcpy_s", "_mbscpy_s", "_tcscpy_s", "wcscpy_s"]
-helpviewer_keywords: ["strcpy_s function", "_tcscpy_s function", "_mbscpy_s function", "copying strings", "strings [C++], copying", "tcscpy_s function", "wcscpy_s function"]
+f1_keywords: ["strcpy_s", "_mbscpy_s", "_mbscpy_s_l", "_tcscpy_s", "wcscpy_s"]
+helpviewer_keywords: ["strcpy_s function", "_tcscpy_s function", "_mbscpy_s function", "_mbscpy_s_l function", "copying strings", "strings [C++], copying", "tcscpy_s function", "wcscpy_s function"]
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
 ---
-# strcpy_s, wcscpy_s, _mbscpy_s
+# strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 
 Copies a string. These versions of [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbscpy_s** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscpy_s** and **_mbscpy_s_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -32,6 +32,12 @@ errno_t _mbscpy_s(
    unsigned char *dest,
    rsize_t dest_size,
    const unsigned char *src
+);
+errno_t _mbscpy_s_l(
+   unsigned char *dest,
+   rsize_t dest_size,
+   const unsigned char *src,
+   _locale_t locale
 );
 ```
 
@@ -52,6 +58,12 @@ errno_t _mbscpy_s(
    unsigned char (&dest)[size],
    const unsigned char *src
 ); // C++ only
+template <size_t size>
+errno_t _mbscpy_s_l(
+   unsigned char (&dest)[size],
+   const unsigned char *src,
+   _locale_t locale
+); // C++ only
 ```
 
 ### Parameters
@@ -64,6 +76,9 @@ Size of the destination string buffer in **char** units for narrow and multi-byt
 
 *src*<br/>
 Null-terminated source string buffer.
+
+*locale*<br/>
+Locale to use.
 
 ## Return Value
 
@@ -81,7 +96,7 @@ Zero if successful; otherwise, an error.
 
 The **strcpy_s** function copies the contents in the address of *src*, including the terminating null character, to the location that's specified by *dest*. The destination string must be large enough to hold the source string and its terminating null character. The behavior of **strcpy_s** is undefined if the source and destination strings overlap.
 
-**wcscpy_s** is the wide-character version of **strcpy_s**, and **_mbscpy_s** is the multibyte-character version. The arguments of **wcscpy_s** are wide-character strings; those of **_mbscpy_s** are multibyte-character strings. These three functions behave identically otherwise.
+**wcscpy_s** is the wide-character version of **strcpy_s**, and **_mbscpy_s** is the multibyte-character version. The arguments of **wcscpy_s** are wide-character strings; those of **_mbscpy_s** and **_mbscpy_s_l** are multibyte-character strings. These functions behave identically otherwise. **_mbscpy_s_l** is identical to **_mbscpy_s** except that it uses the locale parameter passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *dest* or *src* is a null pointer, or if the destination string size *dest_size* is too small, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL** when *dest* or *src* is a null pointer, and they return **ERANGE** and set **errno** to **ERANGE** when the destination string is too small.
 
@@ -173,8 +188,8 @@ String = Hello world from wcscpy_s and wcscat_s!
 ## See also
 
 [String Manipulation](../../c-runtime-library/string-manipulation-crt.md) <br/>
-[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md) <br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md) <br/>
+[strcat, wcscat, _mbscat, _mbscat_l](strcat-wcscat-mbscat.md) <br/>
+[strcmp, wcscmp, _mbscmp, _mbscmp_l](strcmp-wcscmp-mbscmp.md) <br/>
 [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) <br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) <br/>
 [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md) <br/>

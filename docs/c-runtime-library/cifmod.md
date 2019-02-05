@@ -2,7 +2,7 @@
 title: "_CIfmod"
 ms.date: "11/04/2016"
 apiname: ["_CIfmod"]
-apilocation: ["msvcrt.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll"]
+apilocation: ["msvcrt.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CIfmod", "CIfmod"]
 helpviewer_keywords: ["CIfmod intrinsic", "_CIfmod intrinsic"]
