@@ -7741,6 +7741,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/mfc-database-programming-symbols.md",
+            "redirect_url": "/cpp/windows/mfc-predefined-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mfc-windows-programming-symbols.md",
+            "redirect_url": "/cpp/windows/mfc-predefined-symbols",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false

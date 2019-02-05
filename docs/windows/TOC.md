@@ -43,8 +43,6 @@
 #### [Predefined Symbol IDs](predefined-symbol-ids.md)
 ##### [ATL Predefined Symbols](atl-predefined-symbols.md)
 ##### [MFC Predefined Symbols](mfc-predefined-symbols.md)
-###### [MFC Database Programming Symbols](mfc-database-programming-symbols.md)
-###### [MFC Windows Programming Symbols](mfc-windows-programming-symbols.md)
 ##### [Win32 Predefined Symbols](win32-predefined-symbols.md)
 ### [Resource Editors](resource-editors.md)
 #### [Viewing and Editing Resources in a Resource Editor](viewing-and-editing-resources-in-a-resource-editor.md)
