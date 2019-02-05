@@ -290,10 +290,9 @@ You are responsible for determining the cause based on the operating-system erro
 
 **Header:** afxinet.h
 
-## See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [CInternetException Class](cinternetexception-class.md)<br/>
-[THROW](#throw)<br/>
 [AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
 
