@@ -511,14 +511,9 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 
 **Header**: afxdisp.h
 
-## See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)<br/>
-[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)<br/>
-[IMPLEMENT_OLECTLTYPE](#implement_olectltype)<br/>
-[BEGIN_PROPPAGEIDS](#begin_proppageids)<br/>
-[END_PROPPAGEIDS](#end_proppageids)<br/>
-[DECLARE_OLECREATE](#declare_olecreate)<br/>
 [CLSID Key](/windows/desktop/com/clsid-key-hklm)
 
