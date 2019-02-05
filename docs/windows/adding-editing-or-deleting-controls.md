@@ -67,11 +67,11 @@ You can add custom controls to the dialog box by selecting the **Custom Control*
 
    Select the dialog box at the location where you want to place the control. The control appears where you've selected.
 
-       \- or -
+   \- or -
 
    Drag and drop the control from the **Toolbox** window to the location on your dialog box.
 
-       \- or -
+   \- or -
 
    Double-click the control in the **Toolbox** window (it appears on your dialog box) then reposition the control to the location you prefer.
 
@@ -204,7 +204,7 @@ On the **Edit** menu, select **Delete**.
 
 Win32
 
-## See Also
+## See also
 
 [Controls in Dialog Boxes](controls-in-dialog-boxes.md)<br/>
 [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
