@@ -7591,6 +7591,136 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/creating-a-new-toolbar-button.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/copying-buttons-from-a-toolbar.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/inserting-a-space-between-buttons-on-a-toolbar.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/removing-space-between-buttons-on-a-toolbar.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/toolbar-button-properties.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-a-string-in-a-version-information-resource.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-version-information-for-another-language.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-version-information-block.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accessing-version-information-from-within-your-program.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-a-resource.md",
+            "redirect_url": "/cpp/windows/viewing-and-editing-resources-in-a-resource-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/previewing-resources.md",
+            "redirect_url": "/cpp/windows/viewing-and-editing-resources-in-a-resource-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-a-control-to-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-control-properties.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-control.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-and-adding-activex-controls-to-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-event-handlers-for-dialog-box-controls.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/default-control-events.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/defining-member-variables-for-dialog-controls.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/specifying-the-location-and-size-of-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/testing-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/making-controls-the-same-width-height-or-size.md",
+            "redirect_url": "/cpp/windows/sizing-individual-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/setting-the-size-of-the-combo-box-and-its-drop-down-list.md",
+            "redirect_url": "/cpp/windows/sizing-individual-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/setting-the-width-of-a-horizontal-scroll-bar.md",
+            "redirect_url": "/cpp/windows/sizing-individual-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-dialog-box-that-users-cannot-exit.md",
+            "redirect_url": "/cpp/windows/creating-a-new-dialog-box",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
