@@ -830,10 +830,10 @@ If you call `AfxWinInit` yourself, you should declare an instance of a `CWinApp`
 
   **Header** afxwin.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CWinApp Class](../../mfc/reference/cwinapp-class.md)<br/>
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[CWinApp Class](cwinapp-class.md)<br/>
 [CContextMenuManager Class](ccontextmenumanager-class.md)<br/>
 [CWnd Class](cwnd-class.md)<br/>
 [CFrameWndEx Class](cframewndex-class.md)<br/>
