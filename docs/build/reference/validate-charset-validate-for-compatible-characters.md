@@ -29,7 +29,7 @@ Visual Studio uses UTF-8 as the internal character encoding during conversion be
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
-1. In **Advanced Options**, add the **/validate-charset** option, and specify your preferred encoding.
+1. In **Additional Options**, add the **/validate-charset** option, and specify your preferred encoding.
 
 1. Choose **OK** to save your changes.
 

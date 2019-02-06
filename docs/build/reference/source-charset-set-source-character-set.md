@@ -39,7 +39,7 @@ If you want to set both the source character set and the execution character set
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
-1. In **Advanced Options**, add the **/source-charset** option, and specify your preferred encoding.
+1. In **Additional Options**, add the **/source-charset** option, and specify your preferred encoding.
 
 1. Choose **OK** to save your changes.
 
