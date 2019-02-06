@@ -76,7 +76,6 @@
 ###### [Converting an Image From One Format to Another (Image Editor for Icons)](converting-an-image-from-one-format-to-another-image-editor-for-icons.md)
 ###### [Editing an Image Outside of a Project (Image Editor for Icons)](editing-an-image-outside-of-a-project-image-editor-for-icons.md)
 ###### [Image Menu (Image Editor for Icons)](image-menu-image-editor-for-icons.md)
-####### [Grid Settings Dialog Box (Image Editor for Icons)](grid-settings-dialog-box-image-editor-for-icons.md)
 ###### [Toolbar (Image Editor for Icons)](toolbar-image-editor-for-icons.md)
 ###### [Window Panes (Image Editor for Icons)](window-panes-image-editor-for-icons.md)
 ##### [Working with Color (Image Editor for Icons)](working-with-color-image-editor-for-icons.md)
