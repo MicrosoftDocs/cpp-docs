@@ -1,7 +1,7 @@
 ---
 title: "Install the C++ Linux workload in Visual Studio"
 description: "Describes how to download, install, and setup the Linux workload for C++ in Visual Studio."
-ms.date: "10/12/2018"
+ms.date: "02/06/2019"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 ---
 
@@ -49,7 +49,7 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
 
 1. At a shell prompt on your Linux computer, run:
 
-   `sudo dnf install openssh-server g++ gdb gdbserver zip`
+   `sudo dnf install openssh-server gcc-g++ gdb gdb-gdbserver zip`
 
    You may be prompted for your root password due to the sudo command.  If so, enter it and continue. Once complete, the required services and tools are installed.
 
