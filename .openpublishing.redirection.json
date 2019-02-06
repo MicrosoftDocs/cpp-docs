@@ -7801,6 +7801,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/grid-settings-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
