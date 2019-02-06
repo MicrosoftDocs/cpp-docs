@@ -6,12 +6,12 @@ helpviewer_keywords: ["CMake in Visual C++"]
 
 # CppProperties.json schema reference
 
-Open Folder projects that don't use CMake can store project configuration settings in a CppProperties.json file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) The Visual Studio IDE uses CppProperties.json for IntelliSense and code navigation. A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. 
+Open Folder projects that don't use CMake can store project configuration settings in a `CppProperties.json` file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) The Visual Studio IDE uses `CppProperties.json` for IntelliSense and code navigation. A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. 
 
 
 ## Default configurations
 
-Visual Studio provides predefined configurations for x86 and x64 Debug and Release. By default, your project has an x86-Debug configuration in CppProperties.json. To add a new configuration, right click on the CppProperties.json file in **Solution Explorer** and choose **Add Configuration**:
+Visual Studio provides predefined configurations for x86 and x64 Debug and Release. By default, your project has an x86-Debug configuration in `CppProperties.json`. To add a new configuration, right click on the `CppProperties.json` file in **Solution Explorer** and choose **Add Configuration**:
 
 ![Open Folder add configuration](media/open-folder-add-config.png "Open Folder add new configuration")
 
@@ -114,7 +114,7 @@ A configuration may have any of the following properties:
 ## Custom configurations
 
 
-You can customize any of the default configuations in CppProperties.json, or create new configurations. Each will appear in the configuration dropdown:
+You can customize any of the default configuations in `CppProperties.json`, or create new configurations. Each will appear in the configuration dropdown:
 
 ```json
 {
@@ -133,7 +133,7 @@ You can customize any of the default configuations in CppProperties.json, or cre
 
 ## System environment variables 
 
-CppProperties.json supports system environment variable expansion for include paths and other property values. The syntax is `${env.FOODIR}` to expand an environment variable `%FOODIR%`. The following system-defined variables are also supported:
+ `CppProperties.json` supports system environment variable expansion for include paths and other property values. The syntax is `${env.FOODIR}` to expand an environment variable `%FOODIR%`. The following system-defined variables are also supported:
 
 |Variable Name|Description|
 |-----------|-----------------|
@@ -156,7 +156,7 @@ When the Linux workload is installed, the following environments are available f
 
 ## Custom environment variables
 
-You can define custom environment variables in CppProperties.json either globally or per-configuration. The following example shows how default and custom environment variables can be declared and used. The global **environments** property declares a variable named **INCLUDE** that can be used by any configuration:
+You can define custom environment variables in `CppProperties.json` either globally or per-configuration. The following example shows how default and custom environment variables can be declared and used. The global **environments** property declares a variable named **INCLUDE** that can be used by any configuration:
 
 ```json
 {
@@ -246,19 +246,19 @@ You can also define an **environments** property inside a configuration, so that
 }
 ```
 
-All custom and default environment variables are also available in tasks.vs.json and launch.vs.json.
+All custom and default environment variables are also available in `tasks.vs.json` and `launch.vs.json`.
 
 #### Build-in macros
 
-You have access to the following built-in macros inside CppProperties.json:
+You have access to the following built-in macros inside `CppProperties.json`:
 
 |||
 |-|-|
 |`${workspaceRoot}`| the full path to the workspace folder|
-|`${projectRoot}`| the full path to the folder where CppProperties.json is placed|
+|`${projectRoot}`| the full path to the folder where `CppProperties.json` is placed|
 |`${vsInstallDir}`| the full path to the folder where the running instance of VS 2017 is installed|
 
-For example, if your project has an include folder and also includes windows.h and other common headers from the Windows SDK, you may want to update your CppProperties.json configuration file with these includes:
+For example, if your project has an include folder and also includes windows.h and other common headers from the Windows SDK, you may want to update your `CppProperties.json` configuration file with these includes:
 
 ```json
 {

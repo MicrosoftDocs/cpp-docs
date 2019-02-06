@@ -4,7 +4,7 @@ description: This tutorial shows how to set up, compile, and debug a C++ open-so
 author: mikeblome
 ms.service: #Required; service per approved list.
 ms.topic: tutorial
-ms.date: 01/21/2019
+ms.date: 02/08/2019
 ms.author: mblome
 ---
 
@@ -16,7 +16,7 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 > * clone an open-source CMake project from GitHub
-> * open the project in Visual Studio, 
+> * open the project in Visual Studio 
 > * build and debug an executable target on Windows
 > * add a connection to a Linux machine
 > * build and debug the same target on Linux
@@ -26,13 +26,13 @@ In this tutorial, you learn how to:
 - Set up Visual Studio for Cross Platform C++ Development
     - First you need to have [Visual Studio installed](https://visualstudio.microsoft.com/vs/). Next, confirm that you have the **Desktop development with C++** and **Linux development with C++ workloads** installed. This minimal install is only 3 GB, depending on your download speed installation shouldn't take more than 10 minutes.
 - Set up a Linux machine for Cross Platform C++ Development
-    - Visual Studio doesn't require any specific distribution of Linux. The OS can be running on a physical machine, in a VM, the cloud, or the Windows Subsystem for Linux (WSL). However, for this tutorial, WSL isn't recommended because it's intended primarily for command line operations.
+    - Visual Studio doesn't require any specific distribution of Linux. The OS can be running on a physical machine, in a VM, the cloud, or the Windows Subsystem for Linux (WSL). However, for this tutorial a graphical environment is required; therefore WSL isn't recommended because it's intended primarily for command line operations.
     - The tools that Visual Studio requires on the Linux machine are: C++ compilers, GDB, ssh, and zip. On Debian based systems, you can install these dependencies as follows.
     
     ```cmd
     - sudo apt install -y openssh-server build-essential gdb zip
     ```
-    - Visual Studio requires that the Linux machine have a recent version of CMake that has server mode enabled (at least 3.8). Microsoft produces a universal build of CMake that you can install on any Linux distro. We recommend using this build to ensure that you have the latest features. You can get the CMake binaries from here. Go to that page and download the version that matches your system architecture on your Linux machine, then mark it as an executable:
+    - Visual Studio requires that the Linux machine have a recent version of CMake that has server mode enabled (at least 3.8). Microsoft produces a universal build of CMake that you can install on any Linux distro. We recommend using this build to ensure that you have the latest features. You can get the CMake binaries from [the Microsoft fork of the CMake repo](https://github.com/Microsoft/CMake/releases) on GitHub. Go to that page and download the version that matches your system architecture on your Linux machine, then mark it as an executable:
     
     ```cmd
     wget <path to binary>
@@ -56,7 +56,7 @@ git clone https://github.com/bulletphysics/bullet3.git
 
 ```
 
-1. From the Visual Studio main menu, choose **File > Open > CMake** and navigate to the CMakeLiasts.txt file in the root of the bullet3 repo that you just downloaded.
+1. From the Visual Studio main menu, choose **File > Open > CMake** and navigate to the CMakeLists.txt file in the root of the bullet3 repo that you just downloaded.
 
 ![Visual Studio menu for File > Open > CMake](media/cmake-open-cmake.png)
 
@@ -74,7 +74,7 @@ This view shows you exactly what is on disk, not a logical or filtered view. By 
 
 When you open a folder that uses CMake, Visual Studio automatically generates the CMake cache. This operation might take a few moments, depending on the size of your project. 
 
-1. Monitor the status of the cache generation process in the output window. When the operation is complete, it says "Target info extraction done".
+1. In the **Output Window**, select **Show output from** and then choose **CMake** to monitor the status of the cache generation process. When the operation is complete, it says "Target info extraction done".
 
 ![Visual Studio Output window showing output from CMake](media/cmake-bullet3-output-window.png)
 
@@ -98,10 +98,11 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
   
 1. In **Solution Explorer**, select AppBasicExampleGui and expand it. 
 2. Open the file `BasicExample.cpp`. 
-3. Set a breakpoint that will be hit when you click in the running application. The click event is handled in a method within a helper class. To quickly get there 
-    a. select `CommonRigidBodyBase` that the struct `BasicExample` is derived from around line 30.
-    b.  right-click and choose **Go to Definition**. Now you are in the header CommonRigidBodyBase.h. 
-    c. In the browser view above, your source you should see that you are in the `CommonRigidBodyBase`. To the right, you can select members to examine. Click the drop-down and select `mouseButtonCallback` to go to the definition of that function in the header.
+3. Set a breakpoint that will be hit when you click in the running application. The click event is handled in a method within a helper class. To quickly get there:
+
+    1. select `CommonRigidBodyBase` that the struct `BasicExample` is derived from around line 30.
+    1. right-click and choose **Go to Definition**. Now you are in the header CommonRigidBodyBase.h. 
+    1. In the browser view above, your source you should see that you are in the `CommonRigidBodyBase`. To the right, you can select members to examine. Click the drop-down and select `mouseButtonCallback` to go to the definition of that function in the header.
 
 ![Visual Studio member list toolbar](media/cmake-bullet3-member-list-toolbar.png)
 
@@ -138,9 +139,11 @@ This dialog shows all the configurations that are included with Visual Studio, a
 
 ![Launch configuration drop-down with X64-Debug and Linux-Debug options](media/cmake-bullet3-linux-configuration-item.png)
 
-Since this is the first time you are connecting to a Linux system, the **Connect to Remote System** dialog will appear.
+If this is the first time you are connecting to a Linux system, the **Connect to Remote System** dialog will appear.
 
 ![Visual Studio Connect to Remote System dialog](media/cmake-bullet3-connection-manager.png)
+
+If you have already added a remote connection you can open this window by navigating to **Tools > Options > Cross Platform > Connection Manager**.
  
 3. Provide the connection information to your Linux machine and click **Connect**. Visual Studio adds that machine as to CMakeSettings.json as your default for **Linux-Debug**. It will also pull down the headers from your remote machine so that you get IntelliSense specific to that machine when you use it. Now Visual Studio will send your files to the remote machine, then generate the CMake cache there, and when that is done Visual Studio will be configured for using the same source base with that remote Linux machine. These steps may take some time depending on the speed of your network and power of your remote machine. You will know this is complete when the message "Target info extraction done" appears in the CMake output window.
 
@@ -179,6 +182,11 @@ In this tutorial, you have seen a code base cloned directly from GitHub, and bui
 
 Learn more about configuring  and debugging CMake projects in Visual Studio:
 > [!div class="nextstepaction"]
+> [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)<br/>
+> [Configure a Linux CMake project](../linux/cmake-linux-project.md)
+> [Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)
+> [Customize CMake build settings](customize-cmake-settings.md)
 > [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
+> [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project)
 > [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
-
+> 

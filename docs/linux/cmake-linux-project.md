@@ -17,7 +17,7 @@ First, make sure you have the **Linux development with C++** workload installed,
 
 The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
-This topic assumes you have read [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md). 
+This topic assumes you have read [CMake Tools for Visual Studio](../ide/cmake-tools-for-visual-cpp.md). 
 
 > [!NOTE]
 > The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). In Visual Studio 2019 the prebuilt binaries can be automatically deployed (see [Download prebuilt CMake binaries](#download-prebuilt-cmake-binaries)).
@@ -67,7 +67,9 @@ To customize your program’s command line arguments, right-click on the executa
 ## Configure CMake settings for Linux
 
 A CMakeSettings.json file in a CMake Linux project can specify all the properties listed in [Customize CMake settings](../ide/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine. 
-To change the default CMake settings, choose **CMake | Change CMake Settings | CMakeLists.txt** from the main menu, or right-click CMakeSettings.txt in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new `CMakeSettings.json` file in your root project folder. The following example shows the default configuration for Linux-Debug based on the previous code example:
+To change the default CMake settings, choose **CMake | Change CMake Settings | CMakeLists.txt** from the main menu, or right-click CMakeSettings.txt in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new `CMakeSettings.json` file in your root project folder. You can open the file using the **CMake Settings** editor or modify the file directly. 
+
+The following example shows the default configuration for Linux-Debug based on the previous code example:
 
 ```json
 {
@@ -133,4 +135,10 @@ If a valid CMake is not found on the remote machine an infobar will appear and p
 ## See Also
 
 [Working with Project Properties](../ide/working-with-project-properties.md)<br/>
-[CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)
+[CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)<br/>
+[Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>
+[Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)<br/>
+[Customize CMake settings](customize-cmake-settings.md)<br/>
+[Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/>
+[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project)<br/>
+[CMake predefined configuration reference](cmake-predefined-configuration-reference.md)<br/>
