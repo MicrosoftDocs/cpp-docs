@@ -693,7 +693,7 @@ The number of characters required for a buffer that could hold encoded data of *
 
 This uuencoding implementation follows the POSIX P1003.2b/D11 specification.
 
-### See Also
+## See Also
 
-[Concepts](../../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+[Concepts](../active-template-library-atl-concepts.md)<br/>
+[ATL COM Desktop Components](../atl-com-desktop-components.md)

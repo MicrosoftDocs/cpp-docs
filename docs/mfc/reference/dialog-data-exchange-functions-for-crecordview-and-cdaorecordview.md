@@ -505,10 +505,6 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
 **Header:** afxdao.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)
-
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText
 
 The `DDX_FieldText` function manages the transfer of **int**, **short**, **long**, DWORD, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **BOOL**, or **BYTE** data between an edit box control and the field data members of a recordset.
@@ -657,4 +653,4 @@ The following `DoDataExchange` function for a [CRecordView](../../mfc/reference/
 
 ## See Also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Macros and Globals](mfc-macros-and-globals.md)

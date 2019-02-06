@@ -44,10 +44,6 @@ Make sure this call occurs before any base-class call or any added code which ac
 
 **Header:** \<afxdll_.h>
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)
-
 ##  <a name="afx_odbc_call"></a>  AFX_ODBC_CALL
 
 Use this macro to call any ODBC API function that may return `SQL_STILL_EXECUTING`.
