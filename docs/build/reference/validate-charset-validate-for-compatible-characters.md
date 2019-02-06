@@ -1,6 +1,6 @@
 ---
 title: "/validate-charset (Validate for compatible characters)"
-ms.date: "11/04/2016"
+ms.date: "02/06/2019"
 f1_keywords: ["/validate-charset", "validate-charset"]
 helpviewer_keywords: ["/validate-charset compiler option"]
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
@@ -29,7 +29,7 @@ Visual Studio uses UTF-8 as the internal character encoding during conversion be
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
-1. In **Advanced Options**, add the **/validate-charset** option, and specify your preferred encoding.
+1. In **Additional Options**, add the **/validate-charset** option, and specify your preferred encoding.
 
 1. Choose **OK** to save your changes.
 
