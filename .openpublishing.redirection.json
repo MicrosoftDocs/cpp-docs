@@ -7791,6 +7791,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-open-a-resource-script-file-in-text-format.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false

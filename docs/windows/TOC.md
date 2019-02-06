@@ -12,8 +12,6 @@
 ### [Resource Files (Visual Studio)](resource-files-visual-studio.md)
 #### [How to: Create a Resource Script File](how-to-create-a-resource-script-file.md)
 #### [How to: Create a Resource](how-to-create-a-resource.md)
-#### [How to: Open a Resource Script File Outside of a Project (Standalone)](how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)
-#### [How to: Open a Resource Script File in Text Format](how-to-open-a-resource-script-file-in-text-format.md)
 #### [How to: Add MFC Support to Resource Script Files](how-to-add-mfc-support-to-resource-script-files.md)
 #### [How to: Include Resources at Compile Time](how-to-include-resources-at-compile-time.md)
 #### [How to: Copy Resources](how-to-copy-resources.md)
