@@ -17,7 +17,6 @@
 #### [How to: Add MFC Support to Resource Script Files](how-to-add-mfc-support-to-resource-script-files.md)
 #### [How to: Include Resources at Compile Time](how-to-include-resources-at-compile-time.md)
 #### [How to: Copy Resources](how-to-copy-resources.md)
-##### [How to: Change the Language or Condition of a Resource While Copying](how-to-change-the-language-or-condition-of-a-resource-while-copying.md)
 #### [How to: Search for Symbols in Resources](how-to-search-for-symbols-in-resources.md)
 #### [How to: Use Resource Templates](how-to-use-resource-templates.md)
 #### [How to: Import and Export Resources](how-to-import-and-export-resources.md)
