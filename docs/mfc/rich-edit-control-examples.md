@@ -1,6 +1,6 @@
 ---
 title: "Rich Edit Control Examples"
-ms.date: "11/04/2016"
+ms.date: "02/06/2019"
 ms.assetid: ac98bf45-ca74-459c-9b3e-df278a67a00f
 ---
 # Rich Edit Control Examples
