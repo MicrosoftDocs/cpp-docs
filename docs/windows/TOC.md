@@ -24,7 +24,6 @@
 #### [Editing Managed Resource Files](editing-managed-resource-files.md)
 #### [Files Affected by Resource Editing](files-affected-by-resource-editing.md)
 #### [Manifest Resources](manifest-resources.md)
-##### [How to: Open a Manifest Resource](how-to-open-a-manifest-resource.md)
 ### [Symbols: Resource Identifiers](symbols-resource-identifiers.md)
 #### [Viewing Resource Symbols](viewing-resource-symbols.md)
 #### [Creating New Symbols](creating-new-symbols.md)
