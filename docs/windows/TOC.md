@@ -16,8 +16,6 @@
 #### [How to: Open a Resource Script File in Text Format](how-to-open-a-resource-script-file-in-text-format.md)
 #### [How to: Add MFC Support to Resource Script Files](how-to-add-mfc-support-to-resource-script-files.md)
 #### [How to: Include Resources at Compile Time](how-to-include-resources-at-compile-time.md)
-##### [Resource Includes Dialog Box](resource-includes-dialog-box.md)
-##### [How to: Specify Include Directories for Resources](how-to-specify-include-directories-for-resources.md)
 #### [How to: Copy Resources](how-to-copy-resources.md)
 ##### [How to: Change the Language or Condition of a Resource While Copying](how-to-change-the-language-or-condition-of-a-resource-while-copying.md)
 #### [How to: Search for Symbols in Resources](how-to-search-for-symbols-in-resources.md)
