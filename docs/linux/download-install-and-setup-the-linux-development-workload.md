@@ -49,7 +49,7 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
 
 1. At a shell prompt on your Linux computer, run:
 
-   `sudo dnf install openssh-server g++ gdb gdbserver zip`
+   `sudo dnf install openssh-server gcc-g++ gdb gdb-gdbserver zip`
 
    You may be prompted for your root password due to the sudo command.  If so, enter it and continue. Once complete, the required services and tools are installed.
 
