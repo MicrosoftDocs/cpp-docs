@@ -277,11 +277,6 @@ For more information, see [How to: Do DDX/DDV Data Binding with Windows Forms](.
 
 **Header:** afxwinforms.h
 
-### See Also
-
-[CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
-[CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
-
 ##  <a name="ddx_ipaddress"></a>  DDX_IPAddress
 
 The `DDX_IPAddress` function manages the transfer of data between an IP Address control and a data member of the control view object.
@@ -649,5 +644,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## See Also
 
-[Standard Dialog Data Validation Routines](../../mfc/reference/standard-dialog-data-validation-routines.md)<br/>
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Standard Dialog Data Validation Routines](standard-dialog-data-validation-routines.md)<br/>
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
+[CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
