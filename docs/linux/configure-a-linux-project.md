@@ -84,7 +84,7 @@ To manage your header cache, navigate to **Tools > Options, Cross Platform > Con
 ## See Also
 
 [Working with Project Properties](../ide/working-with-project-properties.md)<br/>
-[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)<br/>
-[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)<br/>
-[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)<br/>
-[Build Event Properties (Linux C++)](../linux/prop-pages/build-events-linux.md)
+[C++ General Properties (Linux C++)](prop-pages/general-linux.md)<br/>
+[VC++ Directories (Linux C++)](prop-pages/directories-linux.md)<br/>
+[Copy Sources Project Properties (Linux C++)](prop-pages/copy-sources-project.md)<br/>
+[Build Event Properties (Linux C++)](prop-pages/build-events-linux.md)

@@ -55,5 +55,5 @@ C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 [Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)<br/>
 [Customize CMake build settings](customize-cmake-settings.md)<br/>
 [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/>
-[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project)<br/>
+[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
 [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)<br/>

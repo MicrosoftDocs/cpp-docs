@@ -144,9 +144,11 @@ If you have installed CMake from the Visual Studio Installer, you can run it fro
   
 ## See Also
 
+[Tutorial: Create C++ cross-platform projects in Visual Studio](get-started-linux-cmake.md)<br/>
 [Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>
 [Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)<br/>
-[Customize CMake settings](customize-cmake-settings.md)<br/>
+[Customize CMake build settings](customize-cmake-settings.md)<br/>
+[CMakeSettings.json reference](cmakesettings-reference.md)<br/>
 [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/>
-[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project)<br/>
+[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)<br/>
 [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)<br/>

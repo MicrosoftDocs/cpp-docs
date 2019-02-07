@@ -136,9 +136,8 @@ If a valid CMake is not found on the remote machine an infobar will appear and p
 
 [Working with Project Properties](../ide/working-with-project-properties.md)<br/>
 [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)<br/>
-[Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>
-[Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)<br/>
+[Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md)<br/>
 [Customize CMake settings](customize-cmake-settings.md)<br/>
 [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/>
-[Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project)<br/>
+[Deploy, run, and debug your Linux project](deploy-run-and-debug-your-linux-project)<br/>
 [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)<br/>

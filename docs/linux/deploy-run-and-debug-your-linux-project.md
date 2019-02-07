@@ -6,7 +6,7 @@ ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 ---
 # Deploy, run, and debug your Linux project
 
-Once you have created a Linux C++ project in Visual Studio and you have connected to the project using the [Linux Connection Manager](../linux/connect-to-your-remote-linux-computer.md), you can run and debug the project. You compile, execute, and debug the code on the remote target.
+Once you have created a Linux C++ project in Visual Studio and you have connected to the project using the [Linux Connection Manager](connect-to-your-remote-linux-computer.md), you can run and debug the project. You compile, execute, and debug the code on the remote target.
 
 There are several ways to interact with and debug your Linux project.
 
@@ -27,7 +27,7 @@ There are several ways to interact with and debug your Linux project.
    - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system, which is more compatible if the local version of GDB is not compatible with the version installed on the target computer. |
 
    > [!NOTE]
-   > If you are unable to hit breakpoints in gdbserver debugging mode, try gdb mode. gdb must first be [installed](../linux/download-install-and-setup-the-linux-development-workload.md) on the remote target.
+   > If you are unable to hit breakpoints in gdbserver debugging mode, try gdb mode. gdb must first be [installed](download-install-and-setup-the-linux-development-workload.md) on the remote target.
 
 1. Select the remote target using the standard **Debug** toolbar in Visual Studio.
 
@@ -35,7 +35,7 @@ There are several ways to interact with and debug your Linux project.
 
    ![Remote target](media/remote_target.png)
 
-   If you have not yet connected to the remote target, you will see an instruction to use [Linux Connection Manager](../linux/connect-to-your-remote-linux-computer.md) to connect to the remote target.
+   If you have not yet connected to the remote target, you will see an instruction to use [Linux Connection Manager](connect-to-your-remote-linux-computer.md) to connect to the remote target.
 
    ![Remote Architecture](media/architecture.png)
 
@@ -79,4 +79,4 @@ There are several ways to interact with and debug your Linux project.
 
 ## See also
 
-[C++ Debugging Properties (Linux C++)](../linux/prop-pages/debugging-linux.md)
+[C++ Debugging Properties (Linux C++)](prop-pages/debugging-linux.md)

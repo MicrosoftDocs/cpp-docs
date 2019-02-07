@@ -16,6 +16,7 @@
 ## [Configure a Linux CMake project](../linux/cmake-linux-project.md)
 ## [Customize CMake build settings](customize-cmake-settings.md)
 ## [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
+## [CMakeSettings.json reference](cmakesettings-reference.md)
 ## [CMake predefined configuration schema reference](cmake-predefined-configuration-reference.md)
 # [MSBuild Projects](creating-and-managing-visual-cpp-projects.md)
 ## [Project Types in Visual C++](visual-cpp-project-types.md)

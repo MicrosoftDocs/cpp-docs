@@ -187,6 +187,6 @@ Learn more about configuring  and debugging CMake projects in Visual Studio:
 > [Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)
 > [Customize CMake build settings](customize-cmake-settings.md)
 > [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
-> [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project)
+> [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)
 > [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
 > 
