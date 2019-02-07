@@ -20,7 +20,7 @@ True-color images can also be created. However, true color samples don't appear 
 
 You can save customized color palettes on disk and reload them as needed. The color palette you used most recently is saved in the Registry and automatically loaded the next time you start Visual Studio.
 
-## Selecting Foreground or Background Colors
+## Select foreground or background colors
 
 Except for the **Eraser**, tools on the **Image Editor** toolbar draw with the current foreground or background color when you press the left or right mouse button, respectively.
 
@@ -49,7 +49,7 @@ The Image editor provides the **Fill** tool for filling any enclosed image area 
 
 1. Select the left or right mouse button to fill with the foreground color or the background color, respectively.
 
-## Picking up a Color from an Image to Use Elsewhere
+## Pick up a color from an image to use elsewhere
 
 The **Select Color**, or color-pickup, tool makes any color on the image the current foreground color or background color, depending on whether you press the left or the right mouse button. To cancel the **Select Color** tool, choose another tool.
 
@@ -67,7 +67,7 @@ The **Select Color**, or color-pickup, tool makes any color on the image the cur
 
 1. Draw using the left mouse button for the foreground color, or the right mouse button for the background color.
 
-## Choosing a Transparent or Opaque Background
+## Choose a transparent or opaque background
 
 When you move or copy a selection from an image, any pixels in the selection that match the current background color are, by default, transparent and they don't obscure pixels in the target location.
 
@@ -90,7 +90,7 @@ On the **Image** menu, select or clear **Draw Opaque**.
 
 You can change the background color while a selection is already in effect to change which parts of the image are transparent.
 
-## Inverting the Colors in a Selection
+## Invert the colors in a selection
 
 The **Image** editor provides a convenient way to invert colors in the selected part of the image so you can tell how an image would appear with inverted colors.
 
@@ -98,14 +98,14 @@ The **Image** editor provides a convenient way to invert colors in the selected 
 
 On the **Image** menu, select **Invert Colors**.
 
-## Customizing or Changing Colors
+## Customize or change colors
 
 The **Image** editor's **Colors** palette initially displays 16 standard colors. With displayed colors, you can also create your own custom colors. You can then [save and load a customized Color palette](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).
 
 The **Custom Color Selector** dialog box allows you to customize the colors you use for your image. The following properties included are:
 
 |Property|Description|
-|---|---|
+|--------------------------|--------------------------|
 |**Gradient Color Display**|Changes the values of a selected color. Position the crosshair on the color you want to change. Then move the slider up or down to change the luminosity or RGB values of the color.|
 |**Luminosity Bar**|Sets the luminosity for the color you select in the **Gradient Color Display** box. Select and drag the white arrow up the bar for greater brightness or down for less. The **Color** box displays the color you've selected and the effect of the luminosity you set.|
 |**Color**|Lists the hue (color wheel value) of the color you're defining. Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
@@ -130,7 +130,7 @@ The **Custom Color Selector** dialog box allows you to customize the colors you 
 
 1. Select **OK** to add the new color.
 
-## Saving and Loading Different Color Palettes
+## Save and load different color palettes
 
 You can save and load a **Colors** palette that contains customized colors. (By default, the **Colors** palette most recently used is automatically loaded when you start Visual Studio.)
 
@@ -140,7 +140,7 @@ You can save and load a **Colors** palette that contains customized colors. (By 
 Use the **Load Palette Colors** dialog box to load special color palettes to use in your C++ project. The following properties included are:
 
 |Property|Description|
-|---|---|
+|-----------------|-----------------|
 |**Look in**|Specifies the location where you want to locate a file or folder. Select the arrow to choose another location, or select the folder icon on the toolbar to move up levels.|
 |**File name**|Provides a space for you to type the name of the file you want to open. To quickly find a file you've previously opened, select the file name in the drop-down list, if available.<br/><br/>If you're searching for a file, you can use asterisks (*) as wildcards. For example, you can type \*.\* to see a list of all files. You can also type the full path of a file, for example, C:\My Documents\MyColorPalette.pal or \\\NetworkServer\MyFolder\MyColorPalette.pal.|
 |**Files of type**|Lists the types of files to display. Palette (*.pal) is the default file type for color palettes.|
