@@ -27,7 +27,7 @@ By default, Visual Studio detects a byte-order mark to determine if the source f
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
-1. In **Advanced Options**, add the **/utf-8** option, and specify your preferred encoding.
+1. In **Additional Options**, add the **/utf-8** option to specify your preferred encoding.
 
 1. Choose **OK** to save your changes.
 

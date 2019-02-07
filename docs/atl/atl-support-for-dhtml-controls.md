@@ -12,7 +12,7 @@ Using ATL, you can create a control with Dynamic HTML (DHTML) capability. An ATL
 
 - Specifies, using HTML, the user interface (UI) of the DHTML control.
 
-- Accesses the WebBrowser object and its methods through its interface, [IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx).
+- Accesses the WebBrowser object and its methods through its interface, [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127\(v=vs.85\)).
 
 - Manages communication between C++ code and HTML.
 
