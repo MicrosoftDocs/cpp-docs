@@ -7721,6 +7721,66 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/changing-the-names-of-symbol-header-files.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-a-symbol-s-numeric-value.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/symbol-value-restrictions.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/symbol-name-restrictions.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mfc-database-programming-symbols.md",
+            "redirect_url": "/cpp/windows/mfc-predefined-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mfc-windows-programming-symbols.md",
+            "redirect_url": "/cpp/windows/mfc-predefined-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resource-symbols-dialog-box.md",
+            "redirect_url": "/cpp/windows/viewing-resource-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/add-resource-dialog-box.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/new-custom-resource-dialog-box.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resource-view-window.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resource-includes-dialog-box.md",
+            "redirect_url": "/cpp/windows/how-to-include-resources-at-compile-time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-specify-include-directories-for-resources.md",
+            "redirect_url": "/cpp/windows/how-to-include-resources-at-compile-time",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
