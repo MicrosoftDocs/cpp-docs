@@ -47,6 +47,18 @@ Produces an output file that can be used with the Performance Tools profiler.
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Profile%2A>.
 
+### To set this linker option within Visual Studio CMake project
+
+1. Open the CMakeLists.txt in the project root directory.
+
+1. Add code lines below
+
+```
+SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/PROFILE")
+```
+
+1. Rebuild your solution.
+
 ## See Also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
