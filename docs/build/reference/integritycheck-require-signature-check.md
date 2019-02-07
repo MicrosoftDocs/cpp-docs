@@ -15,7 +15,7 @@ Specifies that the digital signature of the binary image must be checked at load
 
 By default, **/INTEGRITYCHECK** is off.
 
-The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or executable file—a flag for the memory manager to check for a digital signature in order to load the image in Windows. This option must be set for both 32-bit and 64-bit DLLs that implement kernel-mode code loaded by certain Windows features, and is recommended for all device drivers on Windows Vista, Windows 7, Windows 8, Windows Server 2008, and Windows Server 2012. Versions of Windows prior to Windows Vista ignore this flag. For more information, see [Forced Integrity Signing of Portable Executable (PE) files](http://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx).
+The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or executable file—a flag for the memory manager to check for a digital signature in order to load the image in Windows. This option must be set for both 32-bit and 64-bit DLLs that implement kernel-mode code loaded by certain Windows features, and is recommended for all device drivers on Windows Vista, Windows 7, Windows 8, Windows Server 2008, and Windows Server 2012. Versions of Windows prior to Windows Vista ignore this flag. For more information, see [Forced Integrity Signing of Portable Executable (PE) files](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx).
 
 ### To set this linker option in Visual Studio
 
@@ -33,6 +33,6 @@ The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or execut
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>
-[Forced Integrity Signing of Portable Executable (PE) files](http://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
+[Forced Integrity Signing of Portable Executable (PE) files](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
 [Kernel-Mode Code Signing Walkthrough](https://msdn.microsoft.com/windows/hardware/gg487328.aspx)<br/>
 [AppInit DLLs in Windows 7 and Windows Server 2008](https://msdn.microsoft.com/windows/hardware/gg463040.aspx)
