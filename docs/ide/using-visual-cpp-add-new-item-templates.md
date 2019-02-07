@@ -25,7 +25,7 @@ The following table is an alphabetical list of Visual C++ Add New Item templates
 |Header File (.h)|Creates a C++ header file.|
 |HTML Page (.htm)|Creates a blank HTML file.|
 |Icon File (.ico)|Creates a Win32 icon file.|
-|Installer Class|Adds a class that inherits from the [Installer Class](https://msdn.microsoft.com/library/system.configuration.install.installer.aspx) using CLR features.|
+|Installer Class|Adds a class that inherits from the <xref:system.configuration.install.installer> using CLR features.|
 |MIDL File (.idl)|Creates an Interface Definition Language file.|
 |Module-Definition File (.def)|Creates a DLL export definition file.|
 |Property Sheet (.props)|Creates a Visual C++ property sheet file.|

@@ -133,7 +133,7 @@ virtual BOOL Create(
 Specifies the slider control's style. Apply any combination of [slider control styles](/windows/desktop/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
 
 *rect*<br/>
-Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the slider control's parent window, usually a `CDialog`. It must not be NULL.
@@ -175,7 +175,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the slider control's style. Apply any combination of [slider control styles](/windows/desktop/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.

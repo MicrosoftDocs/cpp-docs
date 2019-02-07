@@ -553,7 +553,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Points to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
+Points to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
 
 ### Remarks
 

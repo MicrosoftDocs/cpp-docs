@@ -335,7 +335,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the edit control's style. Apply a combination of the window styles listed in the **Remarks** section of [Create](#create) and [edit control styles](/windows/desktop/Controls/edit-control-styles), described in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.

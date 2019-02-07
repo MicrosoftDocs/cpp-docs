@@ -311,4 +311,4 @@ int main()
 
 [File and Stream I-O](/dotnet/standard/io/index)
 
-[System.IO namespace](https://msdn.microsoft.com/library/system.io.aspx)
+<xref:system.io>

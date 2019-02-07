@@ -7,7 +7,7 @@ ms.assetid: eac4755e-1668-42e1-958e-a35620c385ae
 ---
 # IDBCreateCommandImpl Class
 
-Provides an implementation of the [IDBCreateCommand](https://docs.microsoft.com/previous-versions/windows/desktop/ms711625(v=vs.85)) interface.
+Provides an implementation of the [IDBCreateCommand](/previous-versions/windows/desktop/ms711625(v=vs.85)) interface.
 
 ## Syntax
 
@@ -55,7 +55,7 @@ STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
 
 #### Parameters
 
-See [IDBCreateCommand::CreateCommand](https://docs.microsoft.com/previous-versions/windows/desktop/ms709772(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBCreateCommand::CreateCommand`:
 

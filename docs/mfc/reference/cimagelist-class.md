@@ -615,13 +615,13 @@ A pointer to the destination device context. You must delete this [CDC](../../mf
 The zero-based index of the image to be drawn.
 
 *pt*<br/>
-A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y- coordinates where the image will be drawn.
+A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure containing the x- and y- coordinates where the image will be drawn.
 
 *sz*<br/>
 A [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure indicating the size of the image to be drawn.
 
 *ptOrigin*<br/>
-A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.
+A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.
 
 *fStyle*<br/>
 Flag specifying the drawing style and, optionally, the overlay image. See the Remarks section for information on the overlay image. The MFC default implementation, ILD_NORMAL, draws the image using the background color for the image list. If the background color is the CLR_NONE value, the image is drawn transparently using a mask.
@@ -798,7 +798,7 @@ static CImageList* PASCAL GetDragImage(
 ### Parameters
 
 *lpPoint*<br/>
-Address of a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the current drag position.
+Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that receives the current drag position.
 
 *lpPointHotSpot*<br/>
 Address of a `POINT` structure that receives the offset of the drag image relative to the drag position.
