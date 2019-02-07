@@ -6400,136 +6400,136 @@
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
         },
-        {
-            "source_path": "docs/dotnet/lock-members.md",
-            "redirect_url": "/cpp/dotnet/lock-class",
-            "redirect_document_id": false
+        {  
+            "source_path": "docs/dotnet/lock-members.md", 
+            "redirect_url": "/cpp/dotnet/lock-class", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-lock.md",
-            "redirect_url": "/cpp/dotnet/lock-class#lock",
-            "redirect_document_id": false
+        {  
+            "source_path": "docs/dotnet/lock-lock.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#lock", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-tilde-lock.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#tilde-lock", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-is-locked.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#is-locked", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-bool.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-bool", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-acquire.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#acquire", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-try-acquire.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#try-acquire", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-release.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#release", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-equality.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-equality", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-inequality.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-inequality", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-tilde-lock.md",
-            "redirect_url": "/cpp/dotnet/lock-class#tilde-lock",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/marshal-context-marshal-context.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-context", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-is-locked.md",
-            "redirect_url": "/cpp/dotnet/lock-class#is-locked",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#tilde-marshal-context", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-operator-bool.md",
-            "redirect_url": "/cpp/dotnet/lock-class#operator-bool",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/marshal-context-marshal-as.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-as", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-acquire.md",
-            "redirect_url": "/cpp/dotnet/lock-class#acquire",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-members.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-try-acquire.md",
-            "redirect_url": "/cpp/dotnet/lock-class#try-acquire",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-ptr.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#ptr", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-release.md",
-            "redirect_url": "/cpp/dotnet/lock-class#release",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-tilde-ptr.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#tilde-ptr", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-operator-equality.md",
-            "redirect_url": "/cpp/dotnet/lock-class#operator-equality",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-attach.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#attach", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-operator-inequality.md",
-            "redirect_url": "/cpp/dotnet/lock-class#operator-inequality",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-createinstance.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#createInstance", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/marshal-context-marshal-context.md",
-            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-context",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-detach.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#detach", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md",
-            "redirect_url": "/cpp/dotnet/marshal-context-class#tilde-marshal-context",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-getinterface.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#getInterface", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/marshal-context-marshal-as.md",
-            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-as",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-queryinterface.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#queryInterface", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-members.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-release.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#release", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-ptr.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#ptr",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-operator-assign.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-assign", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-tilde-ptr.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#tilde-ptr",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-operator-arrow.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-arrow", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-attach.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#attach",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-operator-logical-not.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-logical-not", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-createinstance.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#createInstance",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-detach.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#detach",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-getinterface.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#getInterface",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-queryinterface.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#queryInterface",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-release.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#release",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-operator-assign.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-assign",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-operator-arrow.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-arrow",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-operator-logical-not.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-logical-not",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-operator-bool.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-bool",
-            "redirect_document_id": false
-        },
+        { 
+            "source_path": "docs/dotnet/ptr-operator-bool.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-bool", 
+            "redirect_document_id": false 
+        }, 
         {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
@@ -7778,6 +7778,106 @@
         {
             "source_path": "docs/windows/how-to-specify-include-directories-for-resources.md",
             "redirect_url": "/cpp/windows/how-to-include-resources-at-compile-time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-change-the-language-or-condition-of-a-resource-while-copying.md",
+            "redirect_url": "/cpp/windows/how-to-copy-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-open-a-manifest-resource.md",
+            "redirect_url": "/cpp/windows/manifest-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-open-a-resource-script-file-in-text-format.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/grid-settings-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/selecting-foreground-or-background-colors-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/picking-up-a-color-from-an-image-to-use-elsewhere-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/inverting-the-colors-in-a-selection-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/customizing-or-changing-colors-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/colors-window-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-device-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-an-image-for-a-different-display-device-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/copying-a-device-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-device-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-transparent-or-inverse-regions-in-device-images.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/setting-a-cursor-s-hot-spot-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
             "redirect_document_id": false
         },
         {
@@ -11070,5 +11170,6 @@
             "redirect_url": "/cpp/parallel/openmp/a-examples#a31-thread-safe-lock-functions",
             "redirect_document_id": false
         }
+
     ]
 }

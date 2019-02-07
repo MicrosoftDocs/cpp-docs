@@ -228,11 +228,6 @@ For more information, see Technical Note [TN006: Message Maps]tm006-message-maps
 
 Header file: afxmsg_.h
 
-### See Also
-
-[ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: Message Maps](../tn006-message-maps.md)
-
 ## <a name="on_control"></a>  ON_CONTROL
 
 Indicates which function will handle a custom-control notification message.
@@ -453,11 +448,6 @@ Dispatches the Edit Undo command. Implemented as:
 
 **Header:** afxdocob.h
 
-### See Also
-
-[COleCmdUI Class](colecmdui-class.md)<br/>
-[COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)
-
 ## <a name="on_registered_message"></a>  ON_REGISTERED_MESSAGE
 
 The Windows `RegisterWindowMessage` function is used to define a new window message that is guaranteed to be unique throughout the system.
@@ -495,11 +485,6 @@ END_MESSAGE_MAP()
 ### Requirements
 
 **Header:** afxmsg_.h
-
-### See Also
-
-[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>
-[User-Defined Handlers](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE
 
@@ -580,10 +565,6 @@ For more information and examples, see [Message Handling and Mapping Topics](../
 ### Requirements
 
 **Header:** afxole.h
-
-### See Also
-
-[CCmdUI Class](ccmdui-class.md)
 
 ## <a name="on_command_range"></a>  ON_COMMAND_RANGE
 
@@ -706,3 +687,13 @@ For more information on implementing handler functions for a range of control ID
 ### Requirements
 
 **Header:** afxmsg_.h
+
+## See also
+
+[ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
+[TN006: Message Maps](../tn006-message-maps.md)<br/>
+[COleCmdUI Class](colecmdui-class.md)<br/>
+[COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)<br/>
+[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>
+[User-Defined Handlers](user-defined-handlers.md)<br/>
+[CCmdUI Class](ccmdui-class.md)
