@@ -15,6 +15,6 @@ When you type `lib` with no other input, LIB displays a usage statement that sum
 
 Error and warning messages issued by LIB have the form LNK*nnnn*. The LINK, DUMPBIN, and EDITBIN tools also use this range of errors. Help is available by selecting the error in the Output window and pressing F1.
 
-## See Also
+## See also
 
 [Overview of LIB](../../build/reference/overview-of-lib.md)

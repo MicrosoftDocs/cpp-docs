@@ -18,6 +18,6 @@ Specify two angle brackets (<<) in the command where *filename* is to appear. Th
 
 When the command is run, the angle brackets are replaced by *filename*, if specified, or by a unique NMAKE-generated name. If specified, *filename* must follow angle brackets without a space or tab. A path is permitted. No extension is required or assumed. If *filename* is specified, the file is created in the current or specified directory, overwriting any existing file by that name; otherwise, it is created in the TMP directory (or the current directory, if the TMP environment variable is not defined). If a previous *filename* is reused, NMAKE replaces the previous file.
 
-## See Also
+## See also
 
 [Inline Files in a Makefile](../build/inline-files-in-a-makefile.md)

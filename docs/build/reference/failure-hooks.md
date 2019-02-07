@@ -30,6 +30,6 @@ If the notification is **dliFailGetProc**, the hook function can return:
 
 - A valid proc address (import function address), if the failure hook succeeded in getting the address itself.
 
-## See Also
+## See also
 
 [Error Handling and Notification](../../build/reference/error-handling-and-notification.md)

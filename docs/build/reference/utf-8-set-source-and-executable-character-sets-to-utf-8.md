@@ -31,7 +31,7 @@ By default, Visual Studio detects a byte-order mark to determine if the source f
 
 1. Choose **OK** to save your changes.
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>

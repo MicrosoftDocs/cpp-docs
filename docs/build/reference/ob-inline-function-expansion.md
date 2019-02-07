@@ -49,7 +49,7 @@ You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) direc
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.InlineFunctionExpansion%2A>.
 
-## See Also
+## See also
 
 [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)<br/>

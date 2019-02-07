@@ -27,7 +27,7 @@ By default, this information is sent by the linker to the Output window. On the 
 
 1. This linker option cannot be changed programmatically.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

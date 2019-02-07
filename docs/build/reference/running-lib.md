@@ -66,6 +66,6 @@ Treat warnings as errors. See [/WX (Treat Linker Warnings as Errors)](../../buil
 
 Other options apply only to specific modes of LIB. These options are discussed in the sections describing each mode.
 
-## See Also
+## See also
 
 [LIB Reference](../../build/reference/lib-reference.md)

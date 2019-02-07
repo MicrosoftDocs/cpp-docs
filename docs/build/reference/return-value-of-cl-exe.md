@@ -42,6 +42,6 @@ cl /W4 t.cpp
 :end
 ```
 
-## See Also
+## See also
 
 [Compiler Command-Line Syntax](../../build/reference/compiler-command-line-syntax.md)

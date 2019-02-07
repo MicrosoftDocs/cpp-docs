@@ -19,6 +19,6 @@ An equivalent way to specify *filename* is with the [/STUB](../../build/referenc
 
 STUB is valid in a module definition file only when building a VxD.
 
-## See Also
+## See also
 
 [Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)

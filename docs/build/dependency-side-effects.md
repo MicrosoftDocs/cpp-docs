@@ -41,6 +41,6 @@ bounce.exe : up.obj
 # invokes an inference rule
 ```
 
-## See Also
+## See also
 
 [Targets](../build/targets.md)

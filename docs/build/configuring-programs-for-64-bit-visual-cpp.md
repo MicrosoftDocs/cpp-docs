@@ -34,6 +34,6 @@ This section contains topics about targeting 64-bit x64 hardware with the Visual
 
 [x64 (amd64) Intrinsics List](../intrinsics/x64-amd64-intrinsics-list.md)
 
-## See Also
+## See also
 
 [Building C/C++ Programs](building-c-cpp-programs.md)

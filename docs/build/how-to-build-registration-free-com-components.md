@@ -20,7 +20,7 @@ Registration-free COM components are COM components that have manifests built in
 
 1. Build the solution.
 
-## See Also
+## See also
 
 [Isolated Applications](/windows/desktop/SbsCs/isolated-applications)<br/>
 [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)<br/>

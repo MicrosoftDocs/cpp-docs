@@ -14,6 +14,6 @@ In a dependency line, specify zero or more dependents after the colon (:) or dou
 
 [Search paths for dependents](../build/search-paths-for-dependents.md)
 
-## See Also
+## See also
 
 [Description Blocks](../build/description-blocks.md)

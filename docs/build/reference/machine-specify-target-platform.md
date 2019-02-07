@@ -31,7 +31,7 @@ Usually, you don't have to specify the /MACHINE option. LINK infers the machine 
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

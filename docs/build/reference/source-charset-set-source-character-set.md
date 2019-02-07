@@ -43,7 +43,7 @@ If you want to set both the source character set and the execution character set
 
 1. Choose **OK** to save your changes.
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>

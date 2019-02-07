@@ -34,7 +34,7 @@ From the command line you can specify as many response file options (for example
 
 - This compiler option cannot be changed programmatically.
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

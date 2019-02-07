@@ -21,7 +21,7 @@ Visual C++ provides the following command-line tools for viewing or manipulating
 
 - [ERRLOOK](../../build/reference/value-edit-control.md), the Error Lookup utility, retrieves a system error message or module error message based on the value entered.
 
-## See Also
+## See also
 
 [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
 [Decorated Names](../../build/reference/decorated-names.md)<br/>

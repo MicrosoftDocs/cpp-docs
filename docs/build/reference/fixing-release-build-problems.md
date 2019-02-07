@@ -18,7 +18,7 @@ You may receive compiler warnings during an optimized (release) build that you d
 
 - [Check for Memory Overwrite](../../build/reference/checking-for-memory-overwrites.md)
 
-## See Also
+## See also
 
 [Release Builds](../../build/reference/release-builds.md)<br/>
 [Common Problems When Creating a Release Build](../../build/reference/common-problems-when-creating-a-release-build.md)<br/>

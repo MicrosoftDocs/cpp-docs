@@ -26,7 +26,7 @@ Resembles the [/DELAYSIGN](../../build/reference/delaysign-partially-sign-an-ass
 
 1. In the **Windows Metadata Delay Sign** drop-down list box, select the option you want.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)
