@@ -7891,6 +7891,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/creating-new-toolbars.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/converting-bitmaps-to-toolbars.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-moving-and-editing-toolbar-buttons.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-tool-tip-for-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
