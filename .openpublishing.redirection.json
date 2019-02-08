@@ -7881,6 +7881,46 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/creating-a-submenu.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-pop-up-menus.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-new-toolbars.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/converting-bitmaps-to-toolbars.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-moving-and-editing-toolbar-buttons.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-tool-tip-for-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-add-mfc-support-to-resource-script-files.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/files-affected-by-resource-editing.md",
+            "redirect_url": "/cpp/windows/editable-file-types-for-resources",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
