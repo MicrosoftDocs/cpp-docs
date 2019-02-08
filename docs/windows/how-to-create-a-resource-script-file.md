@@ -1,8 +1,8 @@
 ---
 title: "How to: Create a Resource Script File (C++)"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.editors.resource"]
-helpviewer_keywords: ["rc files [C++], creating", ".rc files [C++], creating", "resource script files [C++], creating", "resources [C++], viewing", "rc files [C++], viewing resources", ".rc files [C++], viewing resources", "resource script files [C++], viewing resources", "resource script files [C++], opening in text format", ".rc files [C++], opening in text format", "rc files [C++], opening in text format"]
+f1_keywords: ["vc.editors.resource", "vc.resvw.add.MFC"]
+helpviewer_keywords: ["rc files [C++], creating", ".rc files [C++], creating", "resource script files [C++], creating", "resources [C++], viewing", "rc files [C++], viewing resources", ".rc files [C++], viewing resources", "resource script files [C++], viewing resources", "resource script files [C++], opening in text format", ".rc files [C++], opening in text format", "rc files [C++], opening in text format", "rc files [C++], adding MFC support", ".rc files [C++], adding MFC support", "MFC, adding support to resource scripts files", "resource script files [C++], adding MFC support"]
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
 ---
 # How to: Create a Resource Script File (C++)
@@ -10,7 +10,7 @@ ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
 > [!NOTE]
 > The **Resource Editor** is not available in Express editions.
 >
-> This material applies to Windows desktop applications. Projects in .NET languages do not use resource script files. For more information, see [Resource Files](../windows/resource-files-visual-studio.md), for more information.
+> This material applies to Windows desktop applications. Projects in .NET languages do not use resource script files. For more information, see [Resource Files](../windows/resource-files-visual-studio.md).
 
 ## To create a new resource script (.rc) file
 
@@ -103,11 +103,39 @@ You can easily open the resource file in text format to view all the resources i
 
 1. From the shortcut menu, choose **Open with...**, then select **Source Code (Text) Editor**.
 
+## To add MFC Support to resource script files
+
+Normally, when you build an MFC application for Windows using the [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md), the wizard generates a basic set of files (including a resource script (.rc) file) that contains the core features of the Microsoft Foundation classes (MFC). However, if you're editing an .rc file for a Windows application that isn't based on MFC, the following features specific to the MFC framework aren't available:
+
+- MFC code wizards
+
+- Menu prompt strings
+
+- List contents for combo box controls
+
+- ActiveX control hosting
+
+However, you can add MFC support to existing .rc files that don't have it.
+
+> [!NOTE]
+> These steps require MFC.
+
+### To add MFC support to .rc files
+
+1. Open the resource script file.
+
+1. In [Resource View](../windows/resource-view-window.md), highlight the resources folder (for example, MFC.rc).
+
+1. In the [Properties window](/visualstudio/ide/reference/properties-window), set the **MFC Mode** property to **True**.
+
+   > [!NOTE]
+   > In addition to setting this flag, the .rc file must be part of an MFC project. For example, just setting **MFC Mode** to **True** on an .rc file in a Win32 project won't give you any of the MFC features.
+
 ## Requirements
 
 Win32
 
-## See Also
+## See also
 
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)
