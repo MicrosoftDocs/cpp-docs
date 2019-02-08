@@ -19,7 +19,6 @@
 #### [How to: Import and Export Resources](how-to-import-and-export-resources.md)
 #### [Editable File Types for Resources](editable-file-types-for-resources.md)
 #### [Editing Managed Resource Files](editing-managed-resource-files.md)
-#### [Files Affected by Resource Editing](files-affected-by-resource-editing.md)
 #### [Manifest Resources](manifest-resources.md)
 ### [Symbols: Resource Identifiers](symbols-resource-identifiers.md)
 #### [Viewing Resource Symbols](viewing-resource-symbols.md)

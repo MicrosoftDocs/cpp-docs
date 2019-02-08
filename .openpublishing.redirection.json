@@ -7916,6 +7916,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/files-affected-by-resource-editing.md",
+            "redirect_url": "/cpp/windows/editable-file-types-for-resources",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
