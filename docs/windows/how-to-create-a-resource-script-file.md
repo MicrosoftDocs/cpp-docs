@@ -118,7 +118,7 @@ Normally, when you build an MFC application for Windows using the [MFC Applicati
 However, you can add MFC support to existing .rc files that don't have it.
 
 > [!NOTE]
-> These steps requires MFC.
+> These steps require MFC.
 
 ### To add MFC support to .rc files
 
