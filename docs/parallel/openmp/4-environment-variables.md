@@ -25,7 +25,7 @@ ksh:
 DOS:  
 `set OMP_SCHEDULE="dynamic"`
 
-## 4.1 OMP_SCHEDULE
+## <a name="4.1-OMP_SCHEDULE"></a>4.1 OMP_SCHEDULE
 
 `OMP_SCHEDULE` applies only to `for` and `parallel for` directives that have the schedule type `runtime`. The schedule type and chunk size for all such loops can be set at run time. Set this environment variable to any recognized schedule type and to an optional *chunk_size*.
 
@@ -43,7 +43,7 @@ setenv OMP_SCHEDULE "dynamic"
 - [for](2-directives.md#241-for-construct) directive
 - [parallel for](2-directives.md#251-parallel-for-construct) directive
 
-## 4.2 OMP_NUM_THREADS
+## <a name="4.2-OMP_NUM_THREADS"></a>4.2 OMP_NUM_THREADS
 
 The `OMP_NUM_THREADS` environment variable sets the default number of threads to use during execution. `OMP_NUM_THREADS` is ignored if that number is explicitly changed by calling the `omp_set_num_threads` library routine. It's also ignored if there's an explicit `num_threads` clause on a `parallel` directive.
 
@@ -67,7 +67,7 @@ setenv OMP_NUM_THREADS 16
 - [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function) function
 - [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) function
 
-## 4.3 OMP_DYNAMIC
+## <a name="4.3-OMP_DYNAMIC"></a>4.3 OMP_DYNAMIC
 
 The `OMP_DYNAMIC` environment variable enables or disables dynamic adjustment of the number of threads available for the execution of parallel regions. `OMP_DYNAMIC` is ignored when dynamic adjustment is explicitly enabled or disabled by calling the `omp_set_dynamic` library routine. Its value must be `TRUE` or `FALSE`.
 
@@ -84,7 +84,7 @@ setenv OMP_DYNAMIC TRUE
 - [Parallel regions](2-directives.md#23-parallel-construct)
 - [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) function
 
-## 4.4 OMP_NESTED
+## <a name="4.4-OMP_NESTED"></a>4.4 OMP_NESTED
 
 The `OMP_NESTED` environment variable enables or disables nested parallelism unless nested parallelism is enabled or disabled by calling the `omp_set_nested` library routine. If `OMP_NESTED` is set to `TRUE`, nested parallelism is enabled. If `OMP_NESTED` is set to `FALSE`, nested parallelism is disabled. The default value is `FALSE`.
 
