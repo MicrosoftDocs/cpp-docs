@@ -7921,6 +7921,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/deleting-unassigned-symbols.md",
+            "redirect_url": "/cpp/windows/changing-unassigned-symbols",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
