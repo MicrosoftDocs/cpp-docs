@@ -6,7 +6,7 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMake projects in Visual Studio
 
-CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. THis article assumes you are familiar with CMake. You can learn more about it at [Build, Test and Package Your Software With CMake](https://cmake.org/).
+CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. This article assumes you are familiar with CMake. You can learn more about it at [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) to generate MSBuild project files, which the IDE then consumes for IntelliSense, browsing, and compilation.
 
@@ -39,6 +39,15 @@ You can open folders containing any number of CMake projects. Visual Studio dete
 You can also view your projects organized logically by targets. Choose **Targets view** from the dropdown in the **Solution Explorer** toolbar:
 
 ![CMake targets view button](media/cmake-targets-view.png)
+
+Visual Studio uses a file called `CMakeSettings.json` to store environment variables or command-line options for Cmake.exe. `CMakeSettings.json` also enables you to define and store multiple CMake build configurations and conveniently switch between them in the IDE. 
+
+Otherwise, use the `CMakeLists.txt` just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
+
+If you need to pass arguments to an executable at debug time, you can use another file called `launch.vs.json`. In some scenarios, Visual Studio will automatically generate these files; you can edit them manually. You can also create the file yourself.
+
+> [!NOTE]
+> For other kinds of Open Folder projects, two additional JSON files are used: `CppProperties.json` and `tasks.vs.json`. Neither of these are relevant for CMake projects.
 
 ## Import an existing cache
 
