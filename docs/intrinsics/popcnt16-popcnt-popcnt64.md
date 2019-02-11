@@ -46,7 +46,7 @@ The number of one bits in the `value` parameter.
 
 ## Remarks
 
-Each of these intrinsics generates the `popcnt` instruction.  The size of the value that the `popcnt` instruction returns is the same as the size of its parameter.  In 32-bit mode there are no 64-bit general-purpose registers, hence no 64-bit `popcnt`.
+Each of these intrinsics generates the `popcnt` instruction. In 32-bit mode there are no 64-bit general-purpose registers, hence no 64-bit `popcnt`.
 
 To determine hardware support for the `popcnt` instruction, call the `__cpuid` intrinsic with `InfoType=0x00000001` and check bit 23 of `CPUInfo[2] (ECX)`. This bit is 1 if the instruction is supported, and 0 otherwise. If you run code that uses this intrinsic on hardware that does not support the `popcnt` instruction, the results are unpredictable.
 
