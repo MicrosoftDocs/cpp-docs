@@ -1791,7 +1791,7 @@ A trigraph consists of two consecutive question marks (??) followed by a unique 
 
 **New Common Language Runtime (CLR) Option /clr:nostdlib.** A new option is added for `/clr` (Common Language Runtime Compilation). If different versions of the same libraries are included, a compile error is issued. The new option lets you exclude the default CLR libraries so that your program can use a specified version.
 
-**New pragma directive detect_mistmatch.** The pragma directive detect_mismatch lets you put a tag in your files that is compared to other tags that have the same name. If there are multiple values for the same name, the linker issues an error.
+**New pragma directive detect_mismatch.** The pragma directive detect_mismatch lets you put a tag in your files that is compared to other tags that have the same name. If there are multiple values for the same name, the linker issues an error.
 
 **XOP Intrinsics, FMA4 Intrinsics, and LWP Intrinsics.** New intrinsic functions have been added to support the XOP Intrinsics Added for Visual Studio 2010 SP1, FMA4 Intrinsics Added for Visual Studio 2010 SP1, and LWP Intrinsics Added for Visual Studio 2010 SP1 processor technologies. Use __cpuid, __cpuidex to determine which processor technologies are supported on a particular computer.
 

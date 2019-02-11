@@ -25,7 +25,7 @@ The following terms are used in this document:
 
 - construct
 
-  A construct is a statement. It consists of a directive, followed by a structured block. Some directives aren't part of a construct. (See *openmp-directive* in [Appendix C](c-openmp-c-and-cpp-grammar.md)).
+  A construct is a statement. It consists of a directive, followed by a structured block. Some directives aren't part of a construct. (See *openmp-directive* in [appendix C](c-openmp-c-and-cpp-grammar.md)).
 
 - directive
 
@@ -111,7 +111,7 @@ The OpenMP C and C++ API is an extension to the base language that's supported b
 
 All standard C and C++ library functions and built-in functions (that is, functions of which the compiler has specific knowledge) must be thread-safe. Unsynchronized use of thread-safe functions by different threads inside a parallel region doesn't produce undefined behavior. However, the behavior might not be the same as in a serial region. (A random number generation function is an example.)
 
-The OpenMP C/C++ API specifies that certain behavior is *implementation-defined.* A conforming OpenMP implementation is required to define and document its behavior in these cases. For a list of implementation-defined behaviors, see [Appendix E](e-implementation-defined-behaviors-in-openmp-c-cpp.md).
+The OpenMP C/C++ API specifies that certain behavior is *implementation-defined.* A conforming OpenMP implementation is required to define and document its behavior in these cases. For a list of implementation-defined behaviors, see [appendix E](e-implementation-defined-behaviors-in-openmp-c-cpp.md).
 
 ## 1.5 Normative references
 
@@ -128,4 +128,4 @@ Where this OpenMP API specification refers to C, reference is made to the base l
 - [Run-time library functions](3-run-time-library-functions.md)
 - [Environment variables](4-environment-variables.md)
 - [Implementation-defined behaviors in OpenMP C/C++](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
-- [New features in OpenMP C/C++ Version 2.0](f-new-features-and-clarifications-in-version-2-0.md)
+- [New features in OpenMP C/C++ version 2.0](f-new-features-and-clarifications-in-version-2-0.md)

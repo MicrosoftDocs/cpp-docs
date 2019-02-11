@@ -1,6 +1,6 @@
 ---
-title: "c16rtomb, c32rtomb1"
-ms.date: "11/04/2016"
+title: "c16rtomb, c32rtomb"
+ms.date: "01/22/2018"
 apiname: ["c16rtomb", "c32rtomb"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"

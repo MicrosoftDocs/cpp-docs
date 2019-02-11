@@ -2,7 +2,7 @@
 title: "_CIatan2"
 ms.date: "11/04/2016"
 apiname: ["_CIatan2"]
-apilocation: ["msvcr80.dll", "msvcrt.dll", "msvcr120.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr100.dll", "msvcr90.dll"]
+apilocation: ["msvcr80.dll", "msvcrt.dll", "msvcr120.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr100.dll", "msvcr90.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CIatan2", "_CIatan2"]
 helpviewer_keywords: ["_CIatan2 intrinsic", "CIatan2 intrinsic"]

@@ -102,7 +102,7 @@ CFileTime(ULONGLONG nTime) throw();
 ### Parameters
 
 *ft*<br/>
-A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure.
+A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure.
 
 *nTime*<br/>
 The date and time expressed as a 64-bit value.
@@ -453,7 +453,7 @@ See the example for [CFileTime::Millisecond](#millisecond).
 
 ## See Also
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

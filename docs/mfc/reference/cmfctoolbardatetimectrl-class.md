@@ -37,7 +37,7 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 |[CMFCToolBarDateTimeCtrl::GetDateTimeCtrl](#getdatetimectrl)|Returns a pointer to the date and time picker control.|
 |[CMFCToolBarDateTimeCtrl::GetHwnd](#gethwnd)|Retrieves the window handle that is associated with the toolbar button. (Overrides [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd).)|
 |`CMFCToolBarDateTimeCtrl::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|
-|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|Gets the selected time from a date and time picker control and puts it in a specified [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure.|
+|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|Gets the selected time from a date and time picker control and puts it in a specified [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.|
 |[CMFCToolBarDateTimeCtrl::GetTimeAll](#gettimeall)|Returns the selected time from the time picker control button that has a specified command ID.|
 |[CMFCToolBarDateTimeCtrl::HaveHotBorder](#havehotborder)|Determines whether a border of the button is displayed when a user selects the button. (Overrides [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|
 |[CMFCToolBarDateTimeCtrl::NotifyCommand](#notifycommand)|Specifies whether the button processes the [WM_COMMAND](/windows/desktop/menurc/wm-command) message. (Overrides [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|
@@ -219,7 +219,7 @@ This method overrides the [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfct
 
 ##  <a name="gettime"></a>  CMFCToolBarDateTimeCtrl::GetTime
 
-Gets the selected time from the associated date and time picker control and puts it in a specified [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure
+Gets the selected time from the associated date and time picker control and puts it in a specified [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure
 
 ```
 BOOL GetTime(COleDateTime& timeDest) const;
@@ -233,7 +233,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 [out] In the first overload, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second overload, a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.
 
 *pTimeDest*<br/>
-[out] A pointer to the [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the system time information. Must not be NULL.
+[out] A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
 
 ### Return Value
 
@@ -270,7 +270,7 @@ static DWORD GetTimeAll(
 [out] In the first overload, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second overload, a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.
 
 *pTimeDest*<br/>
-[out] A pointer to the [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the system time information. Must not be NULL.
+[out] A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
 
 ### Return Value
 
@@ -514,7 +514,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 [in] In the first version, a reference to a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that contains the time to which the control will be set. In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that contains the time to which the control will be set.
 
 *pTimeNew*<br/>
-[in] A pointer to the [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that contains the time to which the control will be set.
+[in] A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that contains the time to which the control will be set.
 
 ### Return Value
 
@@ -551,7 +551,7 @@ static BOOL SetTimeAll(
 [in] In the first version, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that contains the time to which the control will be set. In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that contains the time to which the control will be set.
 
 *pTimeNew*<br/>
-[in] A pointer to the [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that contains the time to which the control will be set.
+[in] A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that contains the time to which the control will be set.
 
 ### Return Value
 

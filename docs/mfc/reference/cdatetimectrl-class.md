@@ -311,7 +311,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 In the first version, a reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second version, a reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.
 
 *pTimeDest*<br/>
-A pointer to the [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the system time information. Must not be NULL.
+A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
 
 ### Return Value
 
@@ -541,7 +541,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object containing the to which the control will be set.
 
 *pTimeNew*<br/>
-In the second version above, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the time to which the control will be set. In the third version above, a pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the time to which the control will be set.
+In the second version above, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the time to which the control will be set. In the third version above, a pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the time to which the control will be set.
 
 ### Return Value
 

@@ -2,7 +2,7 @@
 title: "_CIsin"
 ms.date: "04/10/2018"
 apiname: ["_CIsin"]
-apilocation: ["msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll"]
+apilocation: ["msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CIsin", "_CIsin"]
 helpviewer_keywords: ["_CIsin intrinsic", "CIsin intrinsic"]

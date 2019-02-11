@@ -357,12 +357,6 @@ This function is called when invalid arguments are used.
 
 **Header:** afx.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[CInvalidArgException Class](cinvalidargexception-class.md)<br/>
-[THROW](#throw)
-
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException
 
 Throws a memory exception.
@@ -572,5 +566,6 @@ See the example for [CATCH](#catch).
 
 ## See Also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CException Class](../../mfc/reference/cexception-class.md)
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[CException Class](cexception-class.md)<br/>
+[CInvalidArgException Class](cinvalidargexception-class.md)
