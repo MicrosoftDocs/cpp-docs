@@ -1,12 +1,12 @@
 ---
 title: "CMakeSettings.json schema reference"
-ms.date: "02/06/2019"
+ms.date: "02/11/2019"
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMakeSettings.json schema reference
 
-The `cmakesettings.json` file contains information that specify how Visual Studio should interact with CMake to build a project for a specified platform.
+The `cmakesettings.json` file contains information that specifies how Visual Studio should interact with CMake to build a project for a specified platform. Use this file to store information such as environment variables or arguments for the cmake.exe command line.
 
 ## Environments
 
@@ -31,7 +31,9 @@ The `environments` array contains a list of `items` of type `object` which defin
 
 ## Configurations
 
-The `configurations` array consists of objects that represent CMake configurations that apply to the CMakeLists.txt file in the same folder. A `configuration` has these properties:
+The `configurations` array consists of objects that represent CMake configurations that apply to the CMakeLists.txt file in the same folder. You can use these objects to define multiple build configurations and conveniently switch between them in the IDE. 
+
+A `configuration` has these properties:
 - `name`: names the configuration.
 - `description`: description of this configuration that will appear in menus.
 - `generator`: specifies CMake generator to use for this configuration. May be one of:
@@ -89,7 +91,7 @@ The `configurations` array consists of objects that represent CMake configuratio
 - `remoteCopySourcesMethod`: specifies the method to copy files to the remote machine. May be "rsync" or "sftp".
 - `remoteCMakeListsRoot`: specifies the directory on the remote machine which contains the CMake project. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `remoteBuildRoot`: specifies the directory on the remote machine in which CMake generates build scripts for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
-- `remoteInstallRoot`: specifies the directory on the remote machine in which CMake generates install targets for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, ${env.VARIABLE}.
+- `remoteInstallRoot`: specifies the directory on the remote machine in which CMake generates install targets for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, and `${env.VARIABLE}` where `VARIABLE` is an environment variable that has been defined at the system, user, or session level.
 - `remoteCopySources`: A `boolean` that specifies whether Visual Studio should copy source files to the remote machine. The default is true. Set to false if you manage file synchronization yourself.
 - `remoteCopyBuildOutput`: A `boolean` that specifies whether to copy the build outputs from the remote system.
 - `rsyncCommandArgs`: specifies a set of additional command line options passed to rsync.
