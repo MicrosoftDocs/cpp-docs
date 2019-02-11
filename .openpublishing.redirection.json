@@ -7961,7 +7961,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/windows/how-to-import-export-resources.md",
+            "source_path": "docs/windows/how-to-import-and-export-resources.md",
             "redirect_url": "/cpp/windows/how-to-copy-resources",
             "redirect_document_id": false
         },

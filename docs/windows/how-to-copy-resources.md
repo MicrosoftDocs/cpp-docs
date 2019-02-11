@@ -59,7 +59,7 @@ The language and condition of a resource are shown in parentheses after the name
 IDD_AboutBox (Finnish - XX33)
 ```
 
-#### To copy an existing resource and change its language or condition
+To copy an existing resource and change its language or condition:
 
 1. In the .rc file or in the [Resource View](../windows/resource-view-window.md) window, right-click the resource you want to copy.
 
