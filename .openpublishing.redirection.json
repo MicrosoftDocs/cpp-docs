@@ -7956,6 +7956,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/editing-managed-resource-files.md",
+            "redirect_url": "/cpp/windows/how-to-copy-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-import-export-resources.md",
+            "redirect_url": "/cpp/windows/how-to-copy-resources",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
