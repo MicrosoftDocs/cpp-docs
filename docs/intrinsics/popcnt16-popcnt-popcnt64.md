@@ -9,7 +9,7 @@ ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
 
 **Microsoft Specific**
 
-Counts the number of one bits (population count) in a 16-, 32-, or 64-byte unsigned integer.
+Counts the number of one bits (population count) in a 16-, 32-, or 64-bit unsigned integer.
 
 ## Syntax
 
@@ -46,7 +46,7 @@ The number of one bits in the `value` parameter.
 
 ## Remarks
 
-Each of these intrinsics generates the `popcnt` instruction.  The size of the value that the `popcnt` instruction returns is the same as the size of its argument.  In 32-bit mode there are no 64-bit general-purpose registers, hence no 64-bit `popcnt`.
+Each of these intrinsics generates the `popcnt` instruction. In 32-bit mode there are no 64-bit general-purpose registers, hence no 64-bit `popcnt`.
 
 To determine hardware support for the `popcnt` instruction, call the `__cpuid` intrinsic with `InfoType=0x00000001` and check bit 23 of `CPUInfo[2] (ECX)`. This bit is 1 if the instruction is supported, and 0 otherwise. If you run code that uses this intrinsic on hardware that does not support the `popcnt` instruction, the results are unpredictable.
 
