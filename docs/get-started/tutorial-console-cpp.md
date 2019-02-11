@@ -9,7 +9,7 @@ ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
 # Create a C++ console app project
 
-The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create in Visual Studio in this step.
+The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create in Visual Studio in this article.
 
 ## Prerequisites
 
@@ -378,7 +378,7 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 
 Congratulations! You've completed the code for the calculator app, and built and debugged it in Visual Studio.
 
-   ![Calculator console application](./media/calculator-app.gif "Calculator console application")
+![Calculator console application](./media/calculator-app.gif "Calculator console application")
 
 ## Next steps
 
