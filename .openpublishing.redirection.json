@@ -7926,6 +7926,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/dialog-editor-states-guides-and-grids.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/grouping-radio-buttons-on-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/aligning-groups-of-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-tab-order-of-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
