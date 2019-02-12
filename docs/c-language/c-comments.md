@@ -69,6 +69,6 @@ The default for Microsoft C is that the Microsoft extensions are enabled. Use /Z
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Tokens](../c-language/c-tokens.md)

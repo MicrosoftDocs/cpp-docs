@@ -16,6 +16,6 @@ ms.assetid: d2693900-f4e2-4820-b7de-085d51827aee
 *s-char*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;any member of the source character set except the double-quotation mark ("), backslash (\\), or newline character escape-sequence
 
-## See Also
+## See also
 
 [Lexical Grammar](../c-language/lexical-grammar.md)

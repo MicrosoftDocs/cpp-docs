@@ -14,6 +14,6 @@ ms.assetid: 546c2961-5d37-4ef9-a0ce-74e7550e3899
 
 - [External Definitions](../c-language/external-definitions.md)
 
-## See Also
+## See also
 
 [C Language Syntax Summary](../c-language/c-language-syntax-summary.md)

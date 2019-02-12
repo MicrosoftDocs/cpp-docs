@@ -26,6 +26,6 @@ Unary operators appear before their operand and associate from right to left.
 *unary-operator*: one of
 **& \* + -** `~` **!**
 
-## See Also
+## See also
 
 [C Operators](../c-language/c-operators.md)

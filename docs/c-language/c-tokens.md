@@ -28,6 +28,6 @@ In a C source program, the basic element recognized by the compiler is the "toke
 
 The keywords, identifiers, constants, string literals, and operators described in this section are examples of tokens. Punctuation characters such as brackets (**[ ]**), braces (**{ }**), parentheses ( **( )** ), and commas (**,**) are also tokens.
 
-## See Also
+## See also
 
 [Elements of C](../c-language/elements-of-c.md)

@@ -18,6 +18,6 @@ ms.assetid: 341d8297-03eb-4351-9ed0-138ec59b375c
 |**default**|**goto**|**sizeof**|**volatile**|
 |**do**|**if**|**static**|**while**|
 
-## See Also
+## See also
 
 [Lexical Grammar](../c-language/lexical-grammar.md)
