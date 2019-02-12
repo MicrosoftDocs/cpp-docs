@@ -22,8 +22,6 @@
 ##### [Win32 Predefined Symbols](win32-predefined-symbols.md)
 ### [Resource Editors](resource-editors.md)
 #### [Accelerator Editor](accelerator-editor.md)
-##### [Setting Accelerator Properties](setting-accelerator-properties.md)
-##### [Editing Accelerator Tables](editing-accelerator-tables.md)
 ##### [Accelerator Keys](predefined-accelerator-keys.md)
 #### [Binary Editor](binary-editor.md)
 #### [Dialog Editor](dialog-editor.md)
