@@ -7981,6 +7981,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/viewing-resource-symbols.md",
+            "redirect_url": "/cpp/windows/creating-new-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/opening-the-resource-editor-for-a-given-symbol.md",
+            "redirect_url": "/cpp/windows/creating-new-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-resource-symbols.md",
+            "redirect_url": "/cpp/windows/creating-new-symbols",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
