@@ -7971,6 +7971,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/editable-file-types-for-resources.md",
+            "redirect_url": "/cpp/windows/resource-files-visual-studio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/manifest-resources.md",
+            "redirect_url": "/cpp/windows/resource-files-visual-studio",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false

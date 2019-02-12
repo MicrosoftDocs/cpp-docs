@@ -13,8 +13,6 @@
 #### [How to: Create Resources](how-to-create-a-resource-script-file.md)
 #### [How to: Manage Resources](how-to-copy-resources.md)
 #### [How to: Include Resources at Compile Time](how-to-include-resources-at-compile-time.md)
-#### [Editable File Types for Resources](editable-file-types-for-resources.md)
-#### [Manifest Resources](manifest-resources.md)
 ### [Symbols: Resource Identifiers](symbols-resource-identifiers.md)
 #### [Viewing Resource Symbols](viewing-resource-symbols.md)
 #### [Creating New Symbols](creating-new-symbols.md)
