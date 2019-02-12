@@ -21,7 +21,6 @@
 ##### [MFC Predefined Symbols](mfc-predefined-symbols.md)
 ##### [Win32 Predefined Symbols](win32-predefined-symbols.md)
 ### [Resource Editors](resource-editors.md)
-#### [Viewing and Editing Resources in a Resource Editor](viewing-and-editing-resources-in-a-resource-editor.md)
 #### [Accelerator Editor](accelerator-editor.md)
 ##### [Setting Accelerator Properties](setting-accelerator-properties.md)
 ##### [Editing Accelerator Tables](editing-accelerator-tables.md)
