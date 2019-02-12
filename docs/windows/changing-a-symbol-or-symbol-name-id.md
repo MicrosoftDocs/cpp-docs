@@ -1,32 +1,21 @@
 ---
-title: "Changing a Symbol"
+title: "How to: Manage Symbols"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.editors.symbol.changing", "vc.editors.symbol.restrictions.name", "vc.editors.symbol.changing.value", "vc.editors.symbol.restrictions.value", "vc.editors.symbol.changing.header"]
-helpviewer_keywords: ["symbol names", "symbols [C++], names", "restrictions, symbol names", "numeric values", "symbols [C++], numeric values", "numeric values, changing symbols", "symbols [C++], value restrictions", "restrictions, symbol values", "resource files [C++], multiple", "Resource Includes dialog box [C++]", "symbol header files [C++], changing names", "symbols [C++], symbol header files", "Resource.h"]
+f1_keywords: ["vc.editors.symbol.changing", "vc.editors.symbol.restrictions.name", "vc.editors.symbol.changing.value", "vc.editors.symbol.restrictions.value", "vc.editors.symbol.changing.header", "vc.editors.symbol.changing.unassigned", "vc.editors.symbol.shared.calculated"]
+helpviewer_keywords: ["symbol names", "symbols [C++], names", "restrictions, symbol names", "numeric values", "symbols [C++], numeric values", "numeric values, changing symbols", "symbols [C++], value restrictions", "restrictions, symbol values", "resource files [C++], multiple", "Resource Includes dialog box [C++]", "symbol header files [C++], changing names", "symbols [C++], symbol header files", "Resource.h", "symbols [C++], unassigned", "Change Symbol dialog box [C++]", "unassigned symbols", "symbols [C++], deleting", "symbols [C++], read-only", "symbols [C++], shared", "symbols [C++], calculated", "read-only symbols", "symbol directives", "calculated symbols", "shared symbols"]
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
 ---
-# Changing a Symbol
+# How to: Manage Symbols
+
+## Changing a Symbol
 
 When you create a new resource or resource object, the development environment assigns it a default symbol name, for example, IDD_DIALOG1. You can use the [Properties Window](/visualstudio/ide/reference/properties-window) to change the default symbol name or to change the name of any symbol already associated with a resource.
 
-For symbols associated with a single resource, you can also use the **Properties** window to change the symbol value. You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the value of symbols not currently assigned to a resource. For more information, see [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md).
+For symbols associated with a single resource, you can also use the **Properties** window to change the symbol value. You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the value of symbols not currently assigned to a resource.
 
 Normally all symbol definitions are saved in `Resource.h`. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.
 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
-
-## To change a resource's symbol name (ID)
-
-1. In [Resource View](../windows/resource-view-window.md), select the resource.
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
-
-1. In the **Properties** window, type a new symbol name or select from the list of existing symbols in the **ID** box.
-
-   If you type a new symbol name, it is automatically assigned a value.
-
-You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the names of symbols not currently assigned to a resource. For more information, see [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md).
 
 ### Symbol name restrictions
 
@@ -56,20 +45,18 @@ Symbol names have descriptive prefixes that indicate the kind of resource or obj
 |Strings|IDS_|String in the string table|
 |MFC|AFX_|Reserved for predefined MFC symbols|
 
-## To change a symbol value assigned to a single resource or object
+### To change a resource's symbol name (ID)
 
 1. In [Resource View](../windows/resource-view-window.md), select the resource.
 
    > [!NOTE]
    > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
-1. In the **Properties** window, type the symbol name followed by an equal sign and an integer in the **ID** box, for example:
+1. In the **Properties** window, type a new symbol name or select from the list of existing symbols in the **ID** box.
 
-    ```
-    IDC_EDITNAME=5100
-    ```
+   If you type a new symbol name, it is automatically assigned a value.
 
-The new value is stored in the symbol header file the next time you save the project. Only the symbol name remains visible in the ID box; the equal sign and value are not displayed after they are validated.
+You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the names of symbols not currently assigned to a resource.
 
 ### Symbol value restrictions
 
@@ -108,6 +95,27 @@ Here are some limitations of symbol values:
 
 For more information on number ranges, see [TN023: Standard MFC Resources](../mfc/tn023-standard-mfc-resources.md).
 
+### To change a symbol value assigned to a single resource or object
+
+1. In [Resource View](../windows/resource-view-window.md), select the resource.
+
+   > [!NOTE]
+   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+
+1. In the **Properties** window, type the symbol name followed by an equal sign and an integer in the **ID** box, for example:
+
+    ```
+    IDC_EDITNAME=5100
+    ```
+
+The new value is stored in the symbol header file the next time you save the project. Only the symbol name remains visible in the ID box; the equal sign and value are not displayed after they are validated.
+
+
+
+
+
+
+
 ## To change the name of the resource symbol header file
 
 1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file and choose [Resource Includes](../windows/resource-includes-dialog-box.md) from the shortcut menu.
@@ -117,11 +125,79 @@ For more information on number ranges, see [TN023: Standard MFC Resources](../mf
 
 1. In the **Symbol header file** box, type the new name for the include file.
 
+
+# Changing or Deleting Unassigned Symbols
+
+While in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md), you can edit or delete existing symbols that aren't already assigned to a resource or object.
+
+## To change an unassigned symbol
+
+1. In the **Name** box, select the unassigned symbol, and choose **Change**.
+
+1. Edit the symbol's name or value in the boxes provided in the **Change Symbol** dialog box.
+
+   > [!NOTE]
+   > To change a symbol that *is* assigned to a resource or object, you must use the resource editor or **Properties** window. For more information, see [Changing a Symbol or Symbol Name](../windows/changing-a-symbol-or-symbol-name-id.md).
+
+## To delete an unassigned (unused) symbol
+
+In the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md), select the symbol that you want to delete, and choose **Delete**.
+
+   > [!NOTE]
+   > Before deleting an unused symbol in a resource file, make sure it is not used elsewhere in the program or by resource files included at compile time.
+
+# Including Shared (Read-Only) or Calculated Symbols
+
+The first time the development environment reads a resource file created by another application, it marks all included header files as read-only. Subsequently, you can use the [Resource Includes dialog box](../windows/resource-includes-dialog-box.md) to add additional read-only symbol header files.
+
+One reason you may want to use read-only symbol definitions is for symbol files that you plan to share among several projects.
+
+You can also use included symbol files when you have existing resources with symbol definitions that use expressions rather than simple integers to define the symbol value. For example:
+
+```cpp
+#define   IDC_CONTROL1 2100
+#define   IDC_CONTROL2 (IDC_CONTROL1+1)
+```
+
+The environment will correctly interpret these calculated symbols as long as:
+
+- The calculated symbols are placed in a read-only symbols file.
+
+- Your resource file contains resources to which these calculated symbols are already assigned.
+
+- A numeric expression is expected.
+
+> [!NOTE]
+> If a string or a numeric expression is expected, then the expression is not evaluated.
+
+### To include shared (read-only) symbols in your resource file
+
+1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file and choose [Resource Includes](../windows/resource-includes-dialog-box.md) from the shortcut menu.
+
+   > [!NOTE]
+   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+
+1. In the **Read-only symbol directives** box, use the `#include` compiler directive to specify the file where you want the read-only symbols to be kept.
+
+   Do not call the file `Resource.h`, since that is the filename normally used by the main symbol header file.
+
+   > [!NOTE]
+   > **Important** What you type in the Read-Only symbol directives box is included in the resource file exactly as you type it. Make sure what you type does not contain any spelling or syntax errors.
+
+   Use the **Read-only symbol directives** box to include files with symbol definitions only. Do not include resource definitions; otherwise, duplicate resource definitions will be created when the file is saved.
+
+1. Place the symbols in the file you specified.
+
+   The symbols in files included in this way are evaluated each time you open your resource file, but they are not replaced on the disk when you save your file.
+
+1. Select **OK**.
+
 ## Requirements
 
 Win32
 
 ## See also
 
+[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
 [Viewing Resource Symbols](../windows/viewing-resource-symbols.md)<br/>
