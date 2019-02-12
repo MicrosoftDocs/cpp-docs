@@ -1,6 +1,6 @@
 ---
 title: "Macros and Global Functions for OLE DB Consumer Templates"
-ms.date: "11/04/2016"
+ms.date: "02/11/2019"
 f1_keywords: ["vc.templates.ole", "ATL.AtlTraceErrorRecords", "ATL::AtlTraceErrorRecords", "AtlTraceErrorRecords", "BEGIN_ACCESSOR", "BEGIN_ACCESSOR_MAP", "END_ACCESSOR", "END_ACCESSOR_MAP", "BEGIN_COLUMN_MAP", "BLOB_ENTRY", "BLOB_ENTRY_LENGTH", "BLOB_ENTRY_LENGTH_STATUS", "BLOB_ENTRY_STATUS", "BLOB_NAME", "BLOB_NAME_LENGTH", "BLOB_NAME_LENGTH_STATUS", "BLOB_NAME_STATUS", "BOOKMARK_ENTRY", "COLUMN_ENTRY", "COLUMN_ENTRY_EX", "COLUMN_ENTRY_LENGTH", "COLUMN_ENTRY_LENGTH_STATUS", "COLUMN_ENTRY_PS", "COLUMN_ENTRY_PS_LENGTH", "COLUMN_ENTRY_PS_LENGTH_STATUS", "COLUMN_ENTRY_PS_STATUS", "COLUMN_ENTRY_STATUS", "COLUMN_ENTRY_TYPE", "COLUMN_ENTRY_TYPE_SIZE", "COLUMN_NAME", "COLUMN_NAME_EX", "COLUMN_NAME_LENGTH", "COLUMN_NAME_LENGTH_STATUS", "COLUMN_NAME_PS", "COLUMN_NAME_PS_LENGTH", "COLUMN_NAME_PS_LENGTH_STATUS", "COLUMN_NAME_PS_STATUS", "COLUMN_NAME_STATUS", "COLUMN_NAME_TYPE", "COLUMN_NAME_TYPE_PS", "COLUMN_NAME_TYPE_SIZE", "COLUMN_NAME_TYPE_STATUS", "END_COLUMN_MAP", "DEFINE_COMMAND", "DEFINE_COMMAND_EX", "BEGIN_PARAM_MAP", "END_PARAM_MAP", "SET_PARAM_TYPE"]
 helpviewer_keywords: ["OLE DB consumer templates, macros", "macros, OLE DB consumer template", "AtlTraceErrorRecords function", "BEGIN_ACCESSOR macro, syntax", "BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR_MAP macro", "END_ACCESSOR macro", "END_ACCESSOR_MAP macro", "BEGIN_COLUMN_MAP macro", "BLOB_ENTRY macro", "BLOB_ENTRY_LENGTH macro", "BLOB_ENTRY_LENGTH_STATUS macro", "BLOB_ENTRY_STATUS macro", "BLOB_NAME macro", "BLOB_NAME_LENGTH macro", "BLOB_NAME_LENGTH_STATUS macro", "BLOB_NAME_STATUS macro", "BOOKMARK_ENTRY macro", "COLUMN_ENTRY macro", "COLUMN_ENTRY_EX macro", "COLUMN_ENTRY_LENGTH macro", "COLUMN_ENTRY_LENGTH_STATUS macro", "COLUMN_ENTRY_PS macro", "COLUMN_ENTRY_PS_LENGTH macro", "COLUMN_ENTRY_PS_LENGTH_STATUS macro", "COLUMN_ENTRY_PS_STATUS macro", "COLUMN_ENTRY_STATUS macro", "COLUMN_ENTRY_TYPE macro", "COLUMN_ENTRY_TYPE_SIZE macro", "COLUMN_NAME macro", "COLUMN_NAME_EX macro", "COLUMN_NAME_LENGTH macro", "COLUMN_NAME_LENGTH_STATUS macro", "COLUMN_NAME_PS macro", "COLUMN_NAME_PS_LENGTH macro", "COLUMN_NAME_PS_LENGTH_STATUS macro", "COLUMN_NAME_PS_STATUS macro", "COLUMN_NAME_STATUS macro", "COLUMN_NAME_TYPE macro", "COLUMN_NAME_TYPE_PS macro", "COLUMN_NAME_TYPE_SIZE macro", "COLUMN_NAME_TYPE_STATUS macro", "END_COLUMN_MAP macro", "DEFINE_COMMAND macro", "DEFINE_COMMAND_EX macro", "BEGIN_PARAM_MAP macro", "END_PARAM_MAP macro", "SET_PARAM_TYPE macro"]
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
@@ -96,11 +96,7 @@ inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);
 
 #### Remarks
 
-If *hErr* is not S_OK, `AtlTraceErrorRecords` dumps OLE DB Error Record information to the dump device (the **Debug** tab of the Output window or a file). The Error Record information, which is obtained from the provider, includes row number, source, description, help file, context, and GUID for each error record entry. `AtlTraceErrorRecords` dumps this information only in debug builds. In release builds, it is an empty stub that is optimized out.
-
-#### See Also
-
-[CDBErrorInfo Class](../../data/oledb/cdberrorinfo-class.md)
+If *hErr* is not S_OK, `AtlTraceErrorRecords` dumps OLE DB Error Record information to the dump device (the **Debug** tab of the Output window or a file). The Error Record information, which is obtained from the provider, includes row number, source, description, help file, context, and GUID for each error record entry. `AtlTraceErrorRecords` dumps this information only in debug builds. In release builds, it is an empty stub that is optimized out. For more information, see [CDBErrorInfo Class](../../data/oledb/cdberrorinfo-class.md).
 
 ### <a name="begin_accessor"></a> BEGIN_ACCESSOR
 
@@ -567,10 +563,7 @@ END_COLUMN_MAP()
 };
 ```
 
-#### See Also
-
-[CBookmark Class](../../data/oledb/cbookmark-class.md)<br/>
-[DBPROP_BOOKMARKS](https://docs.microsoft.com/previous-versions/windows/desktop/ms709728(v=vs.85))
+For more information, see [Using Bookmarks](using-bookmarks.md) and [CBookmark Class](../../data/oledb/cbookmark-class.md).
 
 ### <a name="column_entry"></a> COLUMN_ENTRY
 
@@ -1538,7 +1531,7 @@ END_COLUMN_MAP()
 
 **Header:** atldbcli.h
 
-## See Also
+## See also
 
 [Macros and Global Functions for OLE DB Consumer Templates](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
