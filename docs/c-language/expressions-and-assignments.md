@@ -24,6 +24,6 @@ This section describes how to form expressions and to assign values in the C lan
 
 - [Type casts](../c-language/type-cast-conversions.md)
 
-## See Also
+## See also
 
 [C Language Reference](../c-language/c-language-reference.md)

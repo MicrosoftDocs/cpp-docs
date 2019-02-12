@@ -16,6 +16,6 @@ While an individual quoted string cannot be longer than 2048 bytes, a string lit
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C String Literals](../c-language/c-string-literals.md)

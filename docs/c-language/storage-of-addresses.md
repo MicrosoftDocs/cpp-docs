@@ -14,6 +14,6 @@ For the Microsoft C compiler, **sizeof(char \*)** is equal to **sizeof(int \*)**
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Pointer Declarations](../c-language/pointer-declarations.md)

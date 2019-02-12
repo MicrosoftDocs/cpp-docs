@@ -40,6 +40,6 @@ When compiling with the /Ze compiler option, functions declared within a block u
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)
