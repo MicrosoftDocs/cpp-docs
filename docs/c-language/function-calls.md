@@ -81,6 +81,6 @@ The function `work` calls the selected function from inside the **for** loop by 
 
 One argument, `i`, is passed to the called function.
 
-## See Also
+## See also
 
 [Functions](../c-language/functions-c.md)

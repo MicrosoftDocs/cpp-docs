@@ -28,6 +28,6 @@ For specific information about the syntax for extended storage-class modifiers, 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

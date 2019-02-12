@@ -132,6 +132,6 @@ Unnamed enumerator data types can also be declared. The name of the data type is
 enum { yes, no } response;
 ```
 
-## See Also
+## See also
 
 [Enumerations](../cpp/enumerations-cpp.md)

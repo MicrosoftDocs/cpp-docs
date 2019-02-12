@@ -3,10 +3,6 @@ title: "Selecting Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Dialog Editor [C++], selecting controls", "dominant controls", "dialog box controls [C++], selecting in editor", "controls [C++], selecting", "size, controls", "controls [C++], dominant", "controls [C++], removing from groups", "Dialog Editor [C++], dominant control"]
 ms.assetid: 27f05450-4550-4229-9f4c-2c9e06365596
-ms.author: Michael.Blome
-ms.topic: tutorial
-ms.service: cpp
-author: mikeblome
 ---
 # Selecting Controls
 

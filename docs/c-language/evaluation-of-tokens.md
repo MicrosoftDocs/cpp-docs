@@ -20,6 +20,6 @@ The C compiler treats a CTRL+Z character as an end-of-file indicator. It ignores
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Tokens](../c-language/c-tokens.md)

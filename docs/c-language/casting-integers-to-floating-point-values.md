@@ -12,6 +12,6 @@ When an integral number is cast to a floating-point value that cannot exactly re
 
 For example, casting an **unsigned long** (with 32 bits of precision) to a **float** (whose mantissa has 23 bits of precision) rounds the number to the nearest multiple of 256. The **long** values 4,294,966,913 to 4,294,967,167 are all rounded to the **float** value 4,294,967,040.
 
-## See Also
+## See also
 
 [Floating-Point Math](../c-language/floating-point-math.md)

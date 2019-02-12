@@ -79,7 +79,7 @@ enum color { red, white, green } col;
 
 These statements declare an enumeration variable named `col` with the tag `color`. At any time, the variable may contain an integer value of 0, 1, or 2, which represents one of the elements of the enumeration set `color`: the color red, white, or green, respectively. If `col` contains 0 when the **if** statement is executed, any statements depending on the **if** will be executed.
 
-## See Also
+## See also
 
 [Relational Operators: \<, >, \<=, and >=](../cpp/relational-operators-equal-and-equal.md)<br/>
 [Equality Operators: == and !=](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)
