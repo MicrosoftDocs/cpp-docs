@@ -7981,6 +7981,41 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/viewing-resource-symbols.md",
+            "redirect_url": "/cpp/windows/creating-new-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/opening-the-resource-editor-for-a-given-symbol.md",
+            "redirect_url": "/cpp/windows/creating-new-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-unassigned-symbols.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/including-shared-read-only-or-calculated-symbols.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-and-editing-resources-in-a-resource-editor.md",
+            "redirect_url": "/cpp/windows/resource-editors",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/setting-accelerator-properties.md",
+            "redirect_url": "/cpp/windows/accelerator-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-accelerator-tables.md",
+            "redirect_url": "/cpp/windows/accelerator-editor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
