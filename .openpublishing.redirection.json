@@ -7926,6 +7926,61 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/dialog-editor-states-guides-and-grids.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/grouping-radio-buttons-on-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/aligning-groups-of-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-tab-order-of-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-create-a-resource.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-use-resource-templates.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-managed-resource-files.md",
+            "redirect_url": "/cpp/windows/how-to-copy-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-import-and-export-resources.md",
+            "redirect_url": "/cpp/windows/how-to-copy-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-search-for-symbols-in-resources.md",
+            "redirect_url": "/cpp/windows/how-to-include-resources-at-compile-time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editable-file-types-for-resources.md",
+            "redirect_url": "/cpp/windows/resource-files-visual-studio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/manifest-resources.md",
+            "redirect_url": "/cpp/windows/resource-files-visual-studio",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
