@@ -1,6 +1,6 @@
 ---
 title: "How to: Manage Symbols"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.symbol.changing", "vc.editors.symbol.restrictions.name", "vc.editors.symbol.changing.value", "vc.editors.symbol.restrictions.value", "vc.editors.symbol.changing.header", "vc.editors.symbol.changing.unassigned", "vc.editors.symbol.shared.calculated"]
 helpviewer_keywords: ["symbol names", "symbols [C++], names", "restrictions, symbol names", "numeric values", "symbols [C++], numeric values", "numeric values, changing symbols", "symbols [C++], value restrictions", "restrictions, symbol values", "resource files [C++], multiple", "Resource Includes dialog box [C++]", "symbol header files [C++], changing names", "symbols [C++], symbol header files", "Resource.h", "symbols [C++], unassigned", "Change Symbol dialog box [C++]", "unassigned symbols", "symbols [C++], deleting", "symbols [C++], read-only", "symbols [C++], shared", "symbols [C++], calculated", "read-only symbols", "symbol directives", "calculated symbols", "shared symbols"]
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
@@ -13,12 +13,10 @@ For symbols associated with a single resource, you can also use the **Properties
 
 Normally all symbol definitions are saved in `Resource.h`. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.
 
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
-
 > [!NOTE]
 > If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
-## Symbol name restrictions
+## Symbol Name Restrictions
 
 The restrictions on symbol names are as follows:
 
@@ -56,7 +54,7 @@ Symbol names have descriptive prefixes that indicate the kind of resource or obj
 
 You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the names of symbols not currently assigned to a resource.
 
-## Symbol value restrictions
+## Symbol Value Restrictions
 
 A symbol value can be any integer expressed in the normal manner for #define preprocessor directives. Here are some examples of symbol values:
 
@@ -105,7 +103,7 @@ For more information on number ranges, see [TN023: Standard MFC Resources](../mf
 
 The new value is stored in the symbol header file the next time you save the project. Only the symbol name remains visible in the ID box; the equal sign and value aren't displayed after they're validated.
 
-## Change or delete unassigned symbols
+## Change or Delete Symbols
 
 While in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md), you can edit or delete existing symbols that aren't already assigned to a resource or object.
 
@@ -125,7 +123,7 @@ In the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md),
    > [!NOTE]
    > Before deleting an unused symbol in a resource file, make sure it is not used elsewhere in the program or by resource files included at compile time.
 
-## Include shared (read-only) or calculated symbols
+## Include Symbols
 
 The first time the development environment reads a resource file created by another application, it marks all included header files as read-only. Though you can use the [Resource Includes dialog box](../windows/resource-includes-dialog-box.md) to add additional read-only symbol header files.
 
@@ -178,8 +176,8 @@ The environment will correctly interpret these calculated symbols as long as:
 
 Win32
 
-## See also
+## See Also
 
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
+[Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
+[Create Symbols](../windows/creating-new-symbols.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
-[Viewing Resource Symbols](../windows/viewing-resource-symbols.md)<br/>

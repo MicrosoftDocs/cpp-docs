@@ -1,11 +1,11 @@
 ---
-title: "Symbols: Resource Identifiers (C++)"
-ms.date: "11/04/2016"
+title: "Resource Identifiers (Symbols) (C++)"
+ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.symbol.identifiers"]
 helpviewer_keywords: ["symbols [C++], resource identifiers", "symbols [C++], creating", "resource symbols", "symbols [C++], editing", "resource editors [C++], resource symbols"]
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
 ---
-# Symbols: Resource Identifiers (C++)
+# Resource Identifiers (Symbols) (C++)
 
 A symbol is a resource identifier (ID) that consists of two parts: a text string (symbol name) mapped to an integer value (symbol value). For example:
 
@@ -24,27 +24,11 @@ When you create a new resource or resource object, the [resource editors](../win
 
 As your application grows in size and sophistication, so does its number of resources and symbols. Tracking large numbers of symbols scattered throughout several files can be difficult. The [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) simplifies symbol management by offering a central tool through which you can:
 
-- [View Resource Symbols](../windows/viewing-resource-symbols.md)
+- [Create Symbols](../windows/creating-new-symbols.md)
 
-- [Create New Symbols](../windows/creating-new-symbols.md)
-
-- [Change Unassigned Symbols](../windows/changing-unassigned-symbols.md)
-
-- [Delete Unassigned Symbols](../windows/deleting-unassigned-symbols.md)
-
-- [Open the Resource Editor for a Given Symbol](../windows/opening-the-resource-editor-for-a-given-symbol.md)
-
-- [Change a Symbol or Symbol Name (ID)](../windows/changing-a-symbol-or-symbol-name-id.md)
-
-- [Change a Symbol's Numeric Value](../windows/changing-a-symbol-s-numeric-value.md)
-
-- [Change the Names of Symbol Header Files](../windows/changing-the-names-of-symbol-header-files.md)
-
-- [Include Shared (Read-Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md)
+- [Manage Symbols](../windows/changing-a-symbol-or-symbol-name-id.md)
 
 - [View Predefined Symbol IDs](../windows/predefined-symbol-ids.md)
-
-For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## Requirements
 
@@ -52,6 +36,6 @@ Win32
 
 ## See Also
 
-[How to: Search for Symbols in Resources](../windows/how-to-search-for-symbols-in-resources.md)<br/>
+[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
+[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Resource Editors](../windows/resource-editors.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)
