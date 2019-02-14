@@ -8061,6 +8061,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/selecting-multiple-menus-or-menu-commands.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/associating-a-menu-command-with-an-accelerator-key.md",
+            "redirect_url": "/cpp/windows/menu-command-properties",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
