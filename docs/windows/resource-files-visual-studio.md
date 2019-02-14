@@ -108,5 +108,5 @@ Win32
 ## See Also
 
 [Working with Resource Files](../windows/working-with-resource-files.md)<br/>
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
+[Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
 [Resource Editors](../windows/resource-editors.md)<br/>

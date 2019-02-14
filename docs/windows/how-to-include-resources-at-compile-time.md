@@ -30,7 +30,7 @@ You can use the **Resource Includes** dialog box in a C++ project to modify the 
 To open the **Resource Includes** dialog box, right-click an .rc file in [Resource View](../windows/resource-view-window.md), then choose **Resource Includes** from the shortcut menu. See following properties:
 
 |Property|Description|
-|---|---------|
+|--|----|
 |**Symbol header file**|Allows you to change the name of the header file where the symbol definitions for your resource file are stored. For more information, see [Changing the Names of Symbol Header Files](../windows/changing-the-names-of-symbol-header-files.md).|
 |**Read-only symbol directives**|Enables you to include header files that contain symbols that shouldn't be modified during an editing session. For example, you can include a symbol file that is shared among several projects. You can also include MFC .h files. For more information, see [Including Shared (Read-Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md).|
 |**Compile-time directives**|Allows you to include resource files that are created and edited separately from the resources in your main resource file, contain compile-time directives (such as those directives that conditionally include resources), or contain resources in a custom format. You can also use the **Compile-time directives box** to include standard MFC resource files.|

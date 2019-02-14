@@ -7,7 +7,7 @@ ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
 ---
 # How to: Manage Resources (C++)
 
-## To copy resources
+## Copy Resources
 
 You can copy resources from one file to another without changing them or you can change the language or condition of a resource while copying it.
 
@@ -43,7 +43,7 @@ You can use the drag-and-drop method between .rc files that are open [outside of
    > [!NOTE]
    > To avoid conflicts with symbol names or values in the existing file, Visual C++ may change the transferred resource's symbol value or symbol name and value when you copy it to the new file.
 
-### To change the language or condition of a resource while copying
+### Change the language or condition of a resource while copying
 
 While copying in a resource, you can change its language property or condition property, or both.
 
@@ -57,7 +57,7 @@ The language and condition of a resource are shown in parentheses after the name
 IDD_AboutBox (Finnish - XX33)
 ```
 
-To copy an existing resource and change its language or condition:
+#### To copy an existing resource and change its language or condition
 
 1. In the .rc file or in the [Resource View](../windows/resource-view-window.md) window, right-click the resource you want to copy.
 
@@ -67,11 +67,11 @@ To copy an existing resource and change its language or condition:
 
    - In the **Condition** box, type the condition.
 
-## To edit managed resource files
+## Edit Resources
 
 Managed resource files (.resx) are XML files. When you add a managed resource file to your project from the **Add New Item** dialog box, the **Managed Resources Editor** opens by default.
 
-## To import and export resources
+## Import and Export Resources
 
 You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML files, and custom resources for use in Visual C++. You can export the same types of files from a Visual C++ project to separate files that can be used outside the development environment.
 

@@ -22,7 +22,7 @@ For information on manually adding resource files to managed projects, accessing
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>
 Describes resource files and how they're used in Windows desktop applications. Also provides links to articles that describe how to use resource files.
 
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)<br/>
+[Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
 Describes symbols and provides information on using the **Resource Symbols** dialog box to manage symbols in your projects.
 
 [Resource Editors](../windows/resource-editors.md)<br/>
