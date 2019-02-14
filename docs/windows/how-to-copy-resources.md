@@ -1,15 +1,13 @@
 ---
 title: "How to: Manage Resources (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 f1_keywords: ["vc.resvw.resource.copying", "vs.resvw.resource.copying", "vc.resvw.resource.changing", "vb.xmldesigner.data", "vs.resvw.resource.importing", "vc.resvw.resource.importing"]
 helpviewer_keywords: ["resources [C++], moving between files", "resources [C++], copying", "resource files [C++], copying or moving resources between", "resource files [C++], tiling", ".rc files [C++], copying resources between", "rc files [C++], copying resources between", "Language property [C++]", ".resx files [C++], editing", "resource files [C++], editing", "resx files [C++], editing", "resources [C++], exporting", "graphics [C++], exporting", "graphics [C++], importing", "resources [C++], importing", "bitmaps [C++], importing and exporting", "toolbars [C++], importing", "images [C++], importing", "toolbars [C++], exporting", "cursors [C++], importing and exporting", "images [C++], exporting"]
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
 ---
 # How to: Manage Resources (C++)
 
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
-
-## To copy resources
+## Copy Resources
 
 You can copy resources from one file to another without changing them or you can change the language or condition of a resource while copying it.
 
@@ -45,7 +43,7 @@ You can use the drag-and-drop method between .rc files that are open [outside of
    > [!NOTE]
    > To avoid conflicts with symbol names or values in the existing file, Visual C++ may change the transferred resource's symbol value or symbol name and value when you copy it to the new file.
 
-### To change the language or condition of a resource while copying
+### Change the language or condition of a resource while copying
 
 While copying in a resource, you can change its language property or condition property, or both.
 
@@ -59,23 +57,21 @@ The language and condition of a resource are shown in parentheses after the name
 IDD_AboutBox (Finnish - XX33)
 ```
 
-To copy an existing resource and change its language or condition:
+#### To copy an existing resource and change its language or condition
 
 1. In the .rc file or in the [Resource View](../windows/resource-view-window.md) window, right-click the resource you want to copy.
 
-1. Choose **Insert Copy** from the shortcut menu.
-
-1. In the **Insert Resource Copy** dialog box:
+1. Choose **Insert Copy** from the shortcut menu and set the following:
 
    - For the **Language** list box, select the language.
 
    - In the **Condition** box, type the condition.
 
-## To edit managed resource files
+## Edit Resources
 
 Managed resource files (.resx) are XML files. When you add a managed resource file to your project from the **Add New Item** dialog box, the **Managed Resources Editor** opens by default.
 
-## To import and export resources
+## Import and Export Resources
 
 You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML files, and custom resources for use in Visual C++. You can export the same types of files from a Visual C++ project to separate files that can be used outside the development environment.
 
@@ -99,9 +95,7 @@ You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML
 
 1. In **Resource** view, right-click the resource you want to export.
 
-1. Select **Export** on the shortcut menu.
-
-1. In the **Export Resource** dialog box, accept the current file name or type a new one.
+1. Select **Export** on the shortcut menu and accept the current file name or type a new one.
 
 1. Navigate to the folder where you want to save the file and choose **Export**.
 
@@ -109,7 +103,8 @@ You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML
 
 Win32
 
-## See also
+## See Also
 
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)
+[Create Resources](../windows/how-to-create-a-resource-script-file.md)<br/>
+[Include Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md)<br/>

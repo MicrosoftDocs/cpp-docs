@@ -9,7 +9,7 @@
 ## [Creating an Empty Windows Desktop Application](creating-an-empty-windows-desktop-application.md)
 ## [Adding Files to an Empty Win32 Applications](adding-files-to-an-empty-win32-applications.md)
 ## [Working with Resource Files](working-with-resource-files.md)
-### [Resource Files (Visual Studio)](resource-files-visual-studio.md)
+### [Resource Files](resource-files-visual-studio.md)
 #### [How to: Create Resources](how-to-create-a-resource-script-file.md)
 #### [How to: Manage Resources](how-to-copy-resources.md)
 #### [How to: Include Resources at Compile Time](how-to-include-resources-at-compile-time.md)
