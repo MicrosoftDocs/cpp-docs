@@ -2,7 +2,7 @@
 title: "Adding, Editing, or Deleting Controls"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.editors.dialog.dialog", "vc.controls.activex", "vc.editors.dialog.insertActiveXControls"]
-helpviewer_keywords: ["Dialog Editor [C++], creating controls", "dialog boxes [C++], adding controls to", "Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes", "controls [C++], adding multiple", "dialog box controls [C++], size", "controls [C++], sizing", "dialog boxes [C++], adding ActiveX controls", "ActiveX controls [C++], adding to dialog boxes", "Insert ActiveX Control dialog box [C++]", "controls [C++], editing properties", "ActiveX controls [C++], properties", "controls [C++], undoing changes", "controls [C++], editing properties", "dialog box controls [C++], editing properties", "dialog box controls [C++], deleting", "controls [C++], deleting", "Dialog Editor [C++], default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls [C++], events", "member variables, defining for controls", "variables, dialog box control member variables", "controls [C++], member variables", "Dialog Editor [C++], defining member variables for controls"]
+helpviewer_keywords: ["Dialog Editor [C++], creating controls", "dialog boxes [C++], adding controls to", "Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes", "controls [C++], adding multiple", "dialog box controls [C++], size", "controls [C++], sizing", "dialog boxes [C++], adding ActiveX controls", "ActiveX controls [C++], adding to dialog boxes", "Insert ActiveX Control dialog box [C++]", "controls [C++], editing properties", "ActiveX controls [C++], properties", "controls [C++], undoing changes", "controls [C++], editing properties", "dialog box controls [C++], editing properties", "dialog box controls [C++], deleting", "controls [C++], deleting", "Dialog Editor [C++], default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls [C++], events", "member variables, defining for controls", "variables, dialog box control member variables", "controls [C++], member variables", "Dialog Editor [C++], defining member variables for controls", "controls [C++], troubleshooting", "Dialog Editor [C++], troubleshooting", "dialog boxes [C++], troubleshooting", "InitCommonControls", "RichEdit 1.0 control", "rich edit controls [C++], RichEdit 1.0"]
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 ---
 # Adding, Editing, or Deleting Controls
@@ -12,44 +12,6 @@ Using the **Dialog** editor, you can add, resize, edit, and delete controls in d
 The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog** editor. You can also customize the **Toolbox** window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox) and [Show or hide the Toolbox window](showing-or-hiding-the-dialog-editor-toolbar.md).
 
 You can use the shortcut menu in the **Dialog** editor to quickly add registered ActiveX controls to a dialog box, and you can add ActiveX controls to the **Toolbox** for quick access.
-
-The standard controls available in the **Toolbox** with default events are:
-
-|Control name|Default event|
-|---|---|
-|[Button control](../mfc/reference/cbutton-class.md)|BN_CLICKED|
-|[Check Box control](../mfc/reference/styles-used-by-mfc.md#button-styles)|BN_CLICKED|
-|[Combo Box control](../mfc/reference/ccombobox-class.md)|CBN_SELCHANGE|
-|[Edit control](../mfc/reference/cedit-class.md)|EN_CHANGE|
-|Group box|(Not applicable)|
-|[List Box control](../mfc/reference/clistbox-class.md)|LBN_SELCHANGE|
-|[Radio Button control](../mfc/reference/styles-used-by-mfc.md#button-styles)|BN_CLICKED|
-|[Static Text control](../mfc/reference/cstatic-class.md)|(Not applicable)|
-|[Picture control](../mfc/reference/cpictureholder-class.md)|(Not applicable)|
-|[Rich Edit 2.0 control](../mfc/using-cricheditctrl.md)|EN_CHANGE|
-|[Scroll bar control](../mfc/reference/cscrollbar-class.md)|NM_THEMECHANGED|
-
-For more information on using the **RichEdit 1.0** control with MFC, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md) and [Rich Edit Control Examples](../mfc/rich-edit-control-examples.md).
-
-The [Windows Common Controls](../mfc/controls-mfc.md) available in the **Toolbox** provide increased functionality in your application. They include:
-
-|Control name|Default event|
-|---|---|
-|[Slider control](../mfc/slider-control-styles.md)|NM_CUSTOMDRAW|
-|[Spin control](../mfc/using-cspinbuttonctrl.md)|UDN_DELTAPOS|
-|[Progress control](../mfc/styles-for-the-progress-control.md)|NM_CUSTOMDRAW|
-|[Hot Key control](../mfc/using-a-hot-key-control.md)|NM_OUTOFMEMORY|
-|[List control](../mfc/list-control-and-list-view.md)|LVN_ITEMCHANGE|
-|[Tree control](../mfc/tree-control-styles.md)|TVN_SELCHANGE|
-|[Tab control](../mfc/tab-controls-and-property-sheets.md)|TCN_SELCHANGE|
-|[Animation control](../mfc/using-an-animation-control.md)|ACN_START|
-|[Date Time Picker control](../mfc/creating-the-date-and-time-picker-control.md)|DTN_DATETIMECHANGE|
-|[Month Calendar control](../mfc/month-calendar-control-examples.md)|MCN_SELCHANGE|
-|[IP Address control](../mfc/reference/cipaddressctrl-class.md)|IPN_FIELDCHANGED|
-|[Extended Combo Box control](../mfc/creating-an-extended-combo-box-control.md)||
-|[Custom control](custom-controls-in-the-dialog-editor.md)|TTN_GETDISPINFO|
-
-For more information, see [Control Classes](../mfc/control-classes.md), [Dialog Box Classes](../mfc/dialog-box-classes.md), and [Scroll-Bar Styles](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles).
 
 For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
@@ -200,14 +162,53 @@ On the **Edit** menu, select **Delete**.
    > [!TIP]
    > While using the **Dialog** editor, in many instances, you can click the right mouse button to display a shortcut menu of frequently used commands.
 
+## Known issue
+
+After adding a common control or rich edit control to a dialog box, it won't appear when you test the dialog box or the dialog itself won't appear.
+
+To see an example of the problem:
+
+1. Create a Win32 project, modifying the application settings so you create a Windows application (not a console app).
+
+1. In [Resource View](../windows/resource-view-window.md), double-click on the .rc file.
+
+1. Under the dialog option, double-click the **About** box.
+
+1. Add an **IP Address Control** to the dialog box.
+
+1. Save and **Rebuild all**.
+
+1. Execute the program.
+
+1. On the dialog box's **Help** menu, click the **About** command; no dialog box is displayed.
+
+Currently, the **Dialog** editor doesn't automatically add code to your project when you drag and drop the following common controls or rich edit controls onto a dialog box. Nor does Visual Studio provide an error or warning when this problem occurs. To fix, add the code for the control manually.
+
+||||
+|-|-|-|
+|Slider Control|Tree Control|Date Time Picker|
+|Spin Control|Tab Control|Month Calendar|
+|Progress Control|Animation Control|IP Address Control|
+|Hot Key|Rich Edit Control|Extended Combo Box|
+|List Control|Rich Edit 2.0 Control|Custom Control|
+
+To use common controls on a dialog box, you need to call [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) or `AFXInitCommonControls` before you create the dialog box.
+
+To use RichEdit controls, you must call `LoadLibrary`. For more information, see [About Rich Edit Controls](/windows/desktop/Controls/about-rich-edit-controls) in the Windows SDK and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).
+
+> [!NOTE]
+> To use a RichEdit control with MFC, you must first call [AfxInitRichEdit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) to load the RichEdit 2.0 Control (RICHED20.DLL), or call [AfxInitRichEdit](../mfc/reference/application-information-and-management.md#afxinitrichedit) to load the older RichEdit 1.0 Control (RICHED32.DLL).
+>
+> You may use the current [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) class with the older RichEdit 1.0 control, but `CRichEditCtrl` is only designed to support the RichEdit 2.0 control. Because RichEdit 1.0 and RichEdit 2.0 are similar, most methods will work. However, note there are some differences between the 1.0 and 2.0 controls, so some methods might work incorrectly or not work at all.
+
 ## Requirements
 
 Win32
 
 ## See also
 
+[Dialog Editor](../windows/dialog-editor.md)<br/>
 [Controls in Dialog Boxes](controls-in-dialog-boxes.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>
 
 <!-- excluded links

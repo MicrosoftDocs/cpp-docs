@@ -1,8 +1,8 @@
 ---
 title: "Arrangement of Controls on Dialog Boxes (C++)| Microsoft Docs"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.editors.dialog.grouping"]
-helpviewer_keywords: ["controls [C++], positioning", "dialog box controls [C++], placement", "Dialog Editor [C++], arranging controls", "Dialog Editor [C++], guides and margins", "guides, clearing", "guides", "dialog box controls [C++], placement", "controls [C++], guides and margins", "guides, creating", "guides, moving", "margins, moving", "DLUs (dialog units)", "controls [C++], aligning", "Dialog Editor [C++], snap to guides", "guides, tick mark interval", "dialog box controls [C++], placement", "guides, aligning controls", "dialog units (DLUs)", "snap to guides (Dialog editor)", "controls [C++], sizing", "tick mark interval in Dialog editor", "controls [C++], snap to guides/grid", "guides, disabling snapping", "controls [C++], snap to guides/grid", "controls [C++], layout grid", "snap to layout grid", "grids, turning on or off", "layout grid in Dialog Editor", "grids, changing size", "grid spacing", "guides, settings", "layout grid in Dialog Editor", "controls [C++], snap to guides/grid", "Guide Settings dialog box (Dialog editor)", "controls [C++], aligning", "controls [C++], positioning", "Space Evenly command", "dialog box controls [C++], placement", "Center in Dialog command", "Arrange Buttons command", "buttons, arranging push buttons in dialog boxes", "push buttons", "member variables, adding to radio button groups", "variables, dialog box control member variables", "dialog box controls [C++], grouping radio buttons", "grouping controls", "radio buttons [C++], grouping on dialog boxes", "controls [C++], tab order", "focus, tab order", "tab controls [C++], tab order", "Tabstop property for controls", "controls [C++], focus", "dialog box controls [C++], tab order"]
+f1_keywords: ["vc.editors.dialog.grouping", "vc.editors.dialog.combo"]
+helpviewer_keywords: ["controls [C++], positioning", "dialog box controls [C++], placement", "Dialog Editor [C++], arranging controls", "Dialog Editor [C++], guides and margins", "guides, clearing", "guides", "dialog box controls [C++], placement", "controls [C++], guides and margins", "guides, creating", "guides, moving", "margins, moving", "DLUs (dialog units)", "controls [C++], aligning", "Dialog Editor [C++], snap to guides", "guides, tick mark interval", "dialog box controls [C++], placement", "guides, aligning controls", "dialog units (DLUs)", "snap to guides (Dialog editor)", "controls [C++], sizing", "tick mark interval in Dialog editor", "controls [C++], snap to guides/grid", "guides, disabling snapping", "controls [C++], snap to guides/grid", "controls [C++], layout grid", "snap to layout grid", "grids, turning on or off", "layout grid in Dialog Editor", "grids, changing size", "grid spacing", "guides, settings", "layout grid in Dialog Editor", "controls [C++], snap to guides/grid", "Guide Settings dialog box (Dialog editor)", "controls [C++], aligning", "controls [C++], positioning", "Space Evenly command", "dialog box controls [C++], placement", "Center in Dialog command", "Arrange Buttons command", "buttons, arranging push buttons in dialog boxes", "push buttons", "member variables, adding to radio button groups", "variables, dialog box control member variables", "dialog box controls [C++], grouping radio buttons", "grouping controls", "radio buttons [C++], grouping on dialog boxes", "controls [C++], tab order", "focus, tab order", "tab controls [C++], tab order", "Tabstop property for controls", "controls [C++], focus", "dialog box controls [C++], tab order", "Dialog Editor [C++], selecting controls", "dominant controls", "dialog box controls [C++], selecting in editor", "controls [C++], selecting", "size, controls", "controls [C++], dominant", "controls [C++], removing from groups", "Dialog Editor [C++], dominant control", "Size to Content command", "size, controls", "text, autosizing controls to fit text", "controls [C++], sizing", "Make Same Size command", "combo boxes, sizing", "list controls [C++], scroll bar width", "CListBox::SetHorizontalExtent", "controls [C++], scroll bar", "scroll bars [C++], displaying in controls", "horizontal scroll bar width", "CListBox class, scroll bar width", "scroll bars [C++], width"]
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
 ---
 # Arrangement of Controls on Dialog Boxes (C++)
@@ -56,7 +56,7 @@ The sizing handles of controls snap to guides when the controls are moved, and g
 
 The tick marks in the rulers that determine the spacing of guides and controls are defined by dialog units (DLUs). A DLU is based on the size of the dialog box font, normally 8-point MS Shell Dlg. A horizontal DLU is the average width of the dialog box font divided by four. A vertical DLU is the average height of the font divided by eight.
 
-#### To size a group of controls with guides
+To size a group of controls with guides:
 
 1. Snap one side of the control (or controls) to a guide.
 
@@ -66,7 +66,7 @@ The tick marks in the rulers that determine the spacing of guides and controls a
 
 1. Move either guide to size the control (or controls).
 
-#### To change the intervals of the tick marks
+To change the intervals of the tick marks:
 
 1. From the **Format** menu, choose **Guide Settings**.
 
@@ -76,32 +76,23 @@ The tick marks in the rulers that determine the spacing of guides and controls a
 
 You can use special keys in conjunction with the mouse to disable the snapping effect of the guides. Using the **Alt** key disables the snapping effects of the guide selected. Moving a guide with the **Shift** key prevents snapped controls from moving with the guide.
 
-#### To disable the snapping effect of the guides
+- To disable the snapping effect of the guides, drag the control while holding down the **Alt** key.
 
-Drag the control while holding down the **Alt** key.
+- To move guides without moving the snapped controls, drag the guide while holding down the **Shift** key.
 
-#### To move guides without moving the snapped controls
-
-Drag the guide while holding down the **Shift** key.
-
-#### To turn off the guides
-
-1. From the **Format** menu, choose **Guide Settings**.
-
-1. In the **Guide Settings** dialog box, under **Layout Guides**, select **None**.
+- To turn off the guides, from the **Format** menu, choose **Guide Settings**. Then in the **Guide Settings** dialog box, under **Layout Guides**, select **None**.
 
    > [!NOTE]
    > You can also double-click the ruler bar to access the **Guide Settings** dialog box.
 
-\- or -
-
-On the **Format** menu, select **Toggle Guides**.
+> [!TIP]
+> A shortcut to turn off guides is on the **Format** menu, select **Toggle Guides**.
 
 ### Modify the layout grid
 
 When you're placing or arranging controls in a dialog box, you can use the layout grid for more precise positioning. When the grid is turned on, controls appear to "snap to" the dotted lines of the grid as if magnetized. You can turn this "snap to grid" feature on and off and change the size of the layout grid cells.
 
-#### To turn the layout grid on or off
+To turn the layout grid on or off:
 
 1. From the **Format** menu, choose **Guide Settings**.
 
@@ -109,11 +100,120 @@ When you're placing or arranging controls in a dialog box, you can use the layou
 
    You can still control the grid in individual **Dialog** editor windows using the **Toggle Grid** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
 
-#### To change the size of the layout grid
+To change the size of the layout grid:
 
 1. From the **Format** menu, choose **Guide Settings**.
 
 1. In the **Guide Settings** dialog box, type the height and width in DLUs for the cells in the grid. The minimum height or width is 4 DLUs.
+
+## Selecting Controls
+
+Select controls to size, align, move, copy, or delete them, and then complete the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+
+When a control is selected, it has a shaded border around it with solid (active) or hollow (inactive) "sizing handles," small squares that appear in the selection border. When multiple controls are selected, the dominant control has solid sizing handles and all the other selected controls have hollow sizing handles.
+
+When you're sizing or aligning multiple controls, the **Dialog** editor uses the "dominant control" to determine how the other controls are sized or aligned. By default, the dominant control is the first control selected.
+
+### To select multiple controls
+
+1. In the [Toolbox Window](/visualstudio/ide/reference/toolbox), select the **Pointer** tool.
+
+1. Use one of the following steps to make your selection:
+
+   - Drag the pointer to draw a selection box around the controls you want to select in your dialog box. When you release the mouse button, all controls inside and intersecting the selection box are selected.
+
+   - Hold down the **Shift** key and select the controls you'd like to include in the selection.
+
+   - Hold down the **Ctrl** key and select the controls you'd like to include in the selection.
+
+### To remove a control from a group of selected controls or to add a control to a group of selected controls
+
+With a group of controls selected, hold down the **Shift** key and select the control you want to remove from or add to the existing selection.
+
+   > [!NOTE]
+   > Holding down the **Ctrl** key and selecting a control within a selection will make that control the dominant control in that selection.
+
+### To specify the dominant control
+
+Hold down the **Ctrl** key and select the control you want to use to influence the size or location of other controls *first*.
+
+> [!NOTE]
+> The sizing handles of the dominant control are solid while the handles of subordinate controls are hollow. All further resizing or alignment is based on the dominant control.
+
+### To change the dominant control
+
+1. Clear the current selection by clicking outside all the currently selected controls.
+
+1. Repeat the previous procedure, selecting a different control first.
+
+## Sizing Controls
+
+Use the sizing handles to resize a control. When the pointer is positioned on a sizing handle, it changes shape to indicate the directions in which the control can be resized. Active sizing handles are solid; if a sizing handle is hollow, the control can't be resized along that axis.
+
+You can also change the size of a control by snapping the control to guides or margins, or by moving one snapped control and guide away from another.
+
+### To size an individual control
+
+1. Select the control.
+
+1. Drag the sizing handles to change the size of the control:
+
+   - Sizing handles at the top and sides change the horizontal or vertical size.
+
+   - Sizing handles at the corners change both horizontal and vertical size.
+
+   > [!TIP]
+   > You can resize the control one dialog unit (DLU) at a time by holding down the **Shift** key and using the **Right Arrow** and **Down Arrow** keys.
+
+### To automatically size a control to fit the text within it
+
+Choose **Size to Content** from the **Format** menu or right-click the control and choose **Size to Content** from the shortcut menu.
+
+### To make controls the same width, height, or size
+
+You can resize a group of controls based on the size of the dominant control.
+
+1. Select the controls you want to resize.
+
+   The control selected first in the series is the dominant control. The final size of the controls in the group depends on the size of the dominant control.
+
+1. From the **Format** menu, choose **Make Same Size**, then choose **Both**, **Height**, or **Width**.
+
+### To set the size of the combo box and its drop-down list
+
+You can size a combo box when you add it to the dialog box. You can also specify the size of the drop-down list box. For more information, see [Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md).
+
+#### To size a combo box
+
+1. Select the combo-box control in your dialog box.
+
+   Initially, only the right and left sizing handles are active.
+
+1. Use the sizing handles to set the width of the combo box.
+
+You can also set the vertical size of the drop-down portion of the combo box.
+
+#### To set the size of the combo box drop-down list
+
+1. Select the drop-down arrow button at the right of the combo box.
+
+   ![Arrow on a combo box in an MFC project](../mfc/media/vccomboboxarrow.gif "vcComboBoxArrow")
+
+   The outline of the control changes to show the size of the combo box with the drop-down list area extended.
+
+1. Use the lower sizing handle to change the initial size of the drop-down list area.
+
+   ![Combo&#45;box sizing in an MFC project](../mfc/media/vccomboboxsizing.gif "vcComboBoxSizing")
+
+1. Select the drop-down arrow again to close the drop-down list portion of the combo box.
+
+### To set the width of a horizontal scroll bar and make it appear
+
+When you add a list box with a horizontal scroll bar to a dialog box using MFC classes, the scroll bar won't automatically appear in your application.
+
+Set a maximum width for the widest element by calling [CListBox::SetHorizontalExtent](../mfc/reference/clistbox-class.md#sethorizontalextent) in your code.
+
+   Without this value set, the scroll bar won't appear, even when the items in the list box are wider than the box.
 
 ## Group radio buttons on a dialog box
 
@@ -148,29 +248,22 @@ You can have more than one group of radio buttons on a dialog box, and each grou
 
 1. You can now modify your code to specify which radio button should appear selected. For example, `m_radioBox1 = 0;` selects the first radio button in the group.
 
-## Align groups of controls
+## To align groups of controls
 
-The following procedures show you how to align controls:
-
-### To align groups of controls
-
-1. [Select the controls](../windows/selecting-multiple-controls.md) you want to align. Be sure to select the control that you want to be the dominant control first or set it to be the dominant control before executing the alignment or sizing command.
+1. Select the controls you want to align. Be sure to select the control that you want to be the dominant control first or set it to be the dominant control before executing the alignment or sizing command.
 
    The final position of the group of controls depends on the position of the dominant control. For more information on selecting the dominant control, see [Specifying the Dominant Control](../windows/specifying-the-dominant-control.md).
 
 1. From the **Format** menu, choose **Align**, and then choose one of the following alignments:
 
-   - `Lefts`: aligns the selected controls along their left sides.
-
-   - `Centers`: aligns the selected controls horizontally along their center points.
-
-   - `Rights`: aligns the selected controls along their right sides.
-
-   - `Tops`: aligns the selected controls along their top edges.
-
-   - `Middles`: aligns the selected controls vertically along their middle points.
-
-   - `Bottoms`: aligns the selected controls along their bottom edges.
+   |Value|Description|
+   |-----|-----------|
+   |`Lefts`|Aligns the selected controls along their left sides.|
+   |`Centers`|Aligns the selected controls horizontally along their center points.|
+   |`Rights`|Aligns the selected controls along their right sides.|
+   |`Tops`|Aligns the selected controls along their top edges.|
+   |`Middles`|Aligns the selected controls vertically along their middle points.|
+   |`Bottoms`|Aligns the selected controls along their bottom edges.|
 
 ### To even the spacing between controls
 
@@ -205,55 +298,6 @@ The **Dialog** editor enables you to space controls evenly between the outermost
    - `Bottom`: aligns push buttons along the bottom edge of the dialog box.
 
        If you select a control other than a push button, its position isn't affected.
-
-## Change the tab order of controls
-
-The tab order is the order in which the **Tab** key moves the input focus from one control to the next within a dialog box. Usually the tab order proceeds from left to right and from top to bottom in a dialog box. Each control has a **Tabstop** property that determines whether a control receives input focus.
-
-### To set input focus for a control
-
-In the [Properties Window](/visualstudio/ide/reference/properties-window), select **True** or **False** in the **Tabstop** property.
-
-Even controls that don't have the **Tabstop** property set to **True** need to be part of the tab order. Tab order is important, for example, when you [define access keys (mnemonics)](../windows/defining-mnemonics-access-keys.md) for controls that don't have captions. Static text that contains an access key for a related control must immediately precede the related control in the tab order.
-
-> [!NOTE]
-> If your dialog box contains overlapping controls, changing the tab order may change the way the controls are displayed. Controls that come later in the tab order are always displayed on top of any overlapping controls that precede them in the tab order.
-
-### To view the current tab order for all controls in a dialog box
-
-On the **Format** menu, select **Tab Order**.
-
-\- or -
-
-- Press **Ctrl** + **D**.
-
-### To change the tab order for all controls in a dialog box
-
-1. On the **Format** menu, select **Tab Order**.
-
-   A number in the upper-left corner of each control shows its place in the current tab order.
-
-1. Set the tab order by clicking each control in the order you want the **Tab** key to follow.
-
-1. Press **Enter** to exit **Tab Order** mode.
-
-   > [!TIP]
-   > Once you enter **Tab Order** mode, you can press **Esc** or **Enter** to disable the ability to change the tab order.
-
-### To change the tab order for two or more controls
-
-1. From the **Format** menu, choose **Tab Order**.
-
-1. Specify where the change in order will begin. First hold down the **Ctrl** key and select the control, then select the one where you want the changed order to begin.
-
-   For example, if you want to change the order of controls `7` through `9`, hold down **Ctrl**, then select control `6` first.
-
-   > [!NOTE]
-   > To set a specific control to number `1` (first in the tab order), double-click the control.
-
-1. Release the **Ctrl** key, then select the controls in the order you want the **Tab** key to follow from that point.
-
-1. Press **Enter** to exit **Tab Order** mode.
 
 For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
