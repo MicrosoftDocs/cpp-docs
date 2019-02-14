@@ -1,18 +1,38 @@
 ---
 title: "How to: Create Resources (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.resource", "vc.resvw.add.MFC", "vs.resourceview.F1", "vc.editors.insertresource", "vc.editors.newcustomresource"]
 helpviewer_keywords: ["rc files [C++], creating", ".rc files [C++], creating", "resource script files [C++], creating", "resources [C++], viewing", "rc files [C++], viewing resources", ".rc files [C++], viewing resources", "resource script files [C++], viewing resources", "resource script files [C++], opening in text format", ".rc files [C++], opening in text format", "rc files [C++], opening in text format", "rc files [C++], adding MFC support", ".rc files [C++], adding MFC support", "MFC, adding support to resource scripts files", "resource script files [C++], adding MFC support", "toolbars [C++], resources", "resource toolbars", "resources [C++], creating", "Resource View window", "resources [C++], adding", "Add Resource dialog box [C++]", "Custom Resource Type dialog box [C++]", "language-specific template files [C++]", "resource templates", "rct files [C++]", "templates, resource templates", "resources [C++], templates", ".rct files [C++]"]
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
 ---
 # How to: Create Resources (C++)
 
+The **Resource View** window displays resource files included in your projects. Expanding the top folder (for example, *Project1.rc*) shows the resource types within that file and expanding each resource type shows the individual resources of that type.
+
+> [!TIP]
+> To open the resource view window, select **Resource View** on the **View** menu (or use **Ctrl** + **Shift** + **E**).
+>
+> You can also use right-click on the **Resource View** window to launch a shortcut menu of commands or double-click on the title bar to dock or undock the window. Right-clicking the title bar gives additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
+
+The **Resource View** windows includes the **Add Resource** dialog box with the following properties to add resources to a C++ Windows desktop application project:
+
+|Property|Description|
+|---|---------|
+|**Resource Type**|Specifies the kind of resource you want to create.<br/><br/>You can expand the cursor and dialog box resource categories to reveal additional resources. These resources are located in ...\Microsoft Visual Studio \<version\>\VC\VCResourceTemplates\\<LCID\>\mfc.rct. If you add .rct files, either put them in this directory or specify another [include path](../windows/how-to-specify-include-directories-for-resources.md). The resources in those files then appear at the second level under the appropriate category. There's no preset limit to the number of .rct files you can add.<br/><br/>The resources shown at the top level in the tree control are the default resources that are provided by Visual Studio.|
+|**New**|Creates a resource based on the type selected in the **Resource Type** box and opens the resource in the appropriate editor. For example, if you create a dialog resource, it opens in the [dialog editor](../windows/dialog-editor.md).|
+|**Import**|Opens the **Import** dialog box where you can navigate to the resource you want to import into your current project. You can import a bitmap, icon, cursor, HTML, sound (.WAV), or custom resource file.|
+|**Custom**|Opens the **New Custom Resource** dialog box where you can create a custom resource. Custom resources are only edited in the binary editor.|
+
+The **Add Resource** dialog box includes the **New Custom Resource** dialog box with the following property to create a new custom resource in a C++ project:
+
+|Property|Description|
+|---|---------|
+|**Resource Type**|Provides a text box to enter the name of a custom resource type. Visual C++ automatically capitalizes the name when you exit the **New Custom Resource** dialog box.|
+
 > [!NOTE]
 > The **Resource Editor** or **Resource View** isn't available in Express editions.
->
-> This information doesn't apply to resources in Windows desktop applications or Universal Windows Platform apps. Projects in .NET languages don't use resource script files. For information on adding resources to managed projects, see [Resource files](../windows/resource-files-visual-studio.md), [App resources and the resource management system](/windows/uwp/app-resources/), and [Resources in desktop apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
 
-## Create a resource script
+## Resource Scripts
 
 Before you create and add new resources to your project, you must first create a resource script (.rc file).
 
@@ -28,16 +48,16 @@ Before you create and add new resources to your project, you must first create a
 
 1. On the **Project** menu, select **Add New Item**.
 
-1. In the **Add New Item** dialog box, select the **Visual C++** folder then choose **Resource File (.rc)** in the right pane.
+1. Select the **Visual C++** folder, then choose **Resource File (.rc)** in the right pane.
 
-1. Provide a name for your resource script in the **Name** text box, then select **Open**.
+1. Provide a name for your resource script in the **Name** text box and select **Open**.
 
 ### To open a resource script
 
-You can view resources in a resource script without having a project open. The script file will open in a document window as opposed to opening in the **Resource View** window (as it does when the file is open inside a project).
+You can view resources in a resource script without having a project open. The script file will open in a document window as opposed to the **Resource View** window.
 
 > [!NOTE]
-> Some commands are available only when the file is opened standalone (outside of a project). Opening a file standalone means opening it without first loading the project.
+> Some commands are only available when the file is opened standalone (outside of a project). Opening a file standalone means opening it without first loading the project.
 >
 > For example, to save a file in a different format or as a different file name (as the **Save As** command is unavailable for the file inside a project). If you open the project first using **File** > **Open** > **Project**, these commands aren't available.
 
@@ -45,7 +65,7 @@ To open a resource script outside of a project:
 
 1. From the **File** menu, select **Open**, then choose **File**.
 
-1. In the **Open File** dialog box, navigate to the resource script file, highlight the file, and choose **Open**.
+1. Navigate to the resource script file, highlight the file, and choose **Open**.
 
 To open multiple resource scripts outside of a project:
 
@@ -53,13 +73,13 @@ To open multiple resource scripts outside of a project:
 
 1. From the **File** menu, choose **Open**, then select **File**.
 
-1. In the **Open File** dialog box, navigate to the first resource script file you want to open (*Source1.rc*), highlight the file, and choose **Open**.
+1. Navigate to the first resource script file you want to open (*Source1.rc*), highlight the file, and choose **Open**.
 
 1. Repeat the previous step to open the second .rc file (*Source2.rc*).
 
-   The .rc files are now open in separate documents windows.
+   Both .rc files are now open in separate documents windows.
 
-1. When both .rc files are open, in the **Window** menu (or right-click one of the .rc files) choose **New Horizontal Tab Group** or **New Vertical Tab Group**.
+1. Use the **Window** menu (or right-click one of the .rc files) and choose **New Horizontal Tab Group** or **New Vertical Tab Group**.
 
    The windows are now tiled so you can view them simultaneously.
 
@@ -70,7 +90,7 @@ You can easily open the resource file in text format to view all the resources i
 > [!NOTE]
 > The resource editors do not directly read .rc or `resource.h` files. The resource compiler compiles them into .aps files, which are consumed by the resource editors. This file is a compile step and only stores symbolic data. As with a normal compile process, information that is not symbolic (for example, comments) is discarded during the compile process. Whenever the .aps file gets out of synch with the .rc file, the .rc file is regenerated (for example, when you save, the resource editor overwrites the .rc file and the `resource.h` file). Any changes to the resources themselves remain incorporated in the .rc file, but comments are lost once the .rc file is overwritten. For information on how to preserve comments, see [Include resources at compile time](../windows/how-to-include-resources-at-compile-time.md).
 
-To open a resource script file in text format:
+### To open a resource script file in text format
 
 1. From the **File** menu select **Open**, then choose **File**.
 
@@ -78,22 +98,45 @@ To open a resource script file in text format:
 
 1. Highlight the file, then select the drop-down arrow on the **Open** button (on the right side of the button).
 
-1. Choose **Open With** from the drop-down menu.
-
-1. In the **Open With** dialog box, select **Source Code (Text) Editor**.
+1. Choose **Open With** from the drop-down menu and select **Source Code (Text) Editor**.
 
 1. From the **Open As** drop-down list, select **Text**.
 
    The resource opens in the **Source Code** editor.
 
 > [!TIP]
-> A shortcut is to right-click the .rc file in **Solution Explorer**, choose **Open with...** and select **Source Code (Text) Editor**.
+> A shortcut here is to right-click the .rc file in **Solution Explorer**, choose **Open with...** and select **Source Code (Text) Editor**.
+
+## Resources
+
+You can create a resource as a new default resource (a resource that isn't based on a template) or as a resource patterned after a template.
+
+When you create a new resource, Visual C++ assigns a unique name to it, for example, `IDD_Dialog1`. You can customize this resource ID by editing the properties for the resource either in the associated resource editor or in the [Properties Window](/visualstudio/ide/reference/properties-window).
+
+> [!NOTE]
+> Don't specify a resource name or ID that is reserved by Visual Studio. Reserved names are DESIGNINFO, HWB, and TEXTINCLUDE, and the reserved ID is 255.
+
+### To create a resource
+
+You can create a new resource using the following:
+
+- In **Resource View**, select your .rc file, then use **Edit** > **Add Resource** and choose the type of resource to add to your project.
+
+   > [!TIP]
+   > You can also right-click the .rc file in **Resource View** and choose **Add Resource** from the shortcut menu.
+
+- In **Solution Explorer**, right-click the project folder, select **Add** > **Add Resource** and choose the type of resource to add to your project.
+
+   > [!NOTE]
+   > If you don't already have an .rc file in your project, this step will create one. You can then repeat this step to add specific resource types to the new .rc file.
+
+- In [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the class, select **Add** > **Add Resource** and choose the type of resource to add to your project.
+
+- In the **Project** menu, select **Add Resource**.
 
 ### To add MFC support
 
-Normally, if you build a Microsoft Foundation Class (MFC) application for Windows using the [MFC application wizard](../mfc/reference/mfc-application-wizard.md), the wizard generates a basic set of files (including a resource script (.rc) file) that contains core features of the MFC. However, when editing an .rc file for a Windows application not based on MFC, the following MFC features aren't available:
-
-Some features specific to MFC include MFC code wizards, menu prompt strings, list contents for combo box controls, and ActiveX control hosting.
+Normally, if you build a Microsoft Foundation Class (MFC) application for Windows using the [MFC application wizard](../mfc/reference/mfc-application-wizard.md), the wizard generates a basic set of files (including a resource script (.rc) file) that contains core features of the MFC. However, when editing an .rc file for a Windows application not based on MFC, the following MFC-specific features aren't available: MFC code wizards, menu prompt strings, list contents for combo box controls, and ActiveX control hosting.
 
 To add MFC support to a resource script file:
 
@@ -106,56 +149,7 @@ To add MFC support to a resource script file:
    > [!NOTE]
    > In addition to setting this property, the .rc file must be part of an MFC project. For example, just setting **MFC Mode** to **True** on an .rc file in a Win32 project won't give you MFC features.
 
-## Create a resource
-
-You can create a resource as a new default resource (a resource that isn't based on a template) or as a resource patterned after a template.
-
-When you create a new resource, Visual C++ assigns a unique name to it, for example, `IDD_Dialog1`. You can customize this resource ID by editing the properties for the resource either in the associated resource editor or in the [Properties Window](/visualstudio/ide/reference/properties-window).
-
-> [!NOTE]
-> Don't specify a resource name or ID that is reserved by Visual Studio. Reserved names are DESIGNINFO, HWB, and TEXTINCLUDE, and the reserved ID is 255.
-
-The **Resource View** window displays resource files included in your projects. Expanding the top folder (for example, *Project1.rc*) shows the resource types within that file and expanding each resource type shows the individual resources of that type.
-
-> [!TIP]
-> To open the resource view window, select **Resource View** on the **View** menu (or use **Ctrl** + **Shift** + **E**).
->
-> Use right-click on the **Resource View** window to launch a shortcut menu of commands or double-click on the title bar to dock or undock the window. Right-clicking the title bar gives additional commands that allow you to control the behavior of the window. For more information, see [Windows Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
-
-Use the **Add Resource** dialog box to add resources to a C++ Windows desktop application project with the following properties:
-
-|Property|Description|
-|-|-|
-|**Resource Type**|Specifies the kind of resource you want to create.<br/><br/>You can expand the cursor and dialog box resource categories to reveal additional resources. These resources are located in ...\Microsoft Visual Studio \<version\>\VC\VCResourceTemplates\\<LCID\>\mfc.rct. If you add .rct files, either put them in this directory or specify another [include path](../windows/how-to-specify-include-directories-for-resources.md). The resources in those files then appear at the second level under the appropriate category. There's no preset limit to the number of .rct files you can add.<br/><br/>The resources shown at the top level in the tree control are the default resources that are provided by Visual Studio.|
-|**New**|Creates a resource based on the type selected in the **Resource Type** box and opens the resource in the appropriate editor. For example, if you create a dialog resource, it opens in the [dialog editor](../windows/dialog-editor.md).|
-|**Import**|Opens the **Import** dialog box where you can navigate to the resource you want to import into your current project. You can import a bitmap, icon, cursor, HTML, sound (.WAV), or custom resource file.|
-|**Custom**|Opens the **New Custom Resource** dialog box where you can create a custom resource. Custom resources are only edited in the binary editor.|
-
-Use the **New Custom Resource** dialog box to create a new custom resource in a C++ project with the following property:
-
-|Property|Description|
-|-|-|
-|**Resource Type**|Provides a text box to enter the name of a custom resource type. Visual C++ automatically capitalizes the name when you exit the **New Custom Resource** dialog box.|
-
-### To create a new resource
-
-You can create a new resource using the following:
-
-- In **Resource View**, select your .rc file, then select the **Edit** menu and choose **Add Resource**. In the **Add Resource** dialog box, choose the type of resource you'd like to add to your project.
-
-   > [!TIP]
-   > You can also right-click the .rc file in **Resource View** and choose **Add Resource** from the shortcut menu.
-
-- In **Solution Explorer**, right-click the project folder and select **Add**, then choose **Add Resource** on the shortcut menu. In the **Add Resource** dialog box, choose the type of resource you'd like to add to your project.
-
-   > [!NOTE]
-   > If you don't already have an .rc file in your project, this step will create one. You can then repeat this step to add specific resource types to the new .rc file.
-
-- In [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click your class and choose **Add**. Select **Add Resource** from the shortcut menu and choose the type of resource you'd like to add to your project.
-
-- In the **Project** menu, choose **Add Resource**.
-
-## Create a resource template
+## Resource Templates
 
 A resource template is a customized resource that you've saved as an .rct file. A resource template then serves as a starting point for creating resources. Resource templates save time in developing additional resources or groups of resources that share features, such as standard controls or repeated elements. For example, if you want to include a help button with a company logo icon in several dialog boxes, create a new dialog box template and customize it with the help button and the logo.
 
@@ -171,9 +165,9 @@ After customizing the resource template, save your changes in the template folde
 
 1. In **Solution Explorer**, right-click your project.
 
-1. From the shortcut menu, select **Add**, then choose **Add New Item**.
+1. From the shortcut menu, select **Add** > **Add New Item**.
 
-1. In the **Add New Item** dialog box, in the **Templates:** pane, select **Resource Template File (.rct)**.
+1. In the **Templates:** pane, select **Resource Template File (.rct)**.
 
 1. Provide a name and location for your new .rct file and choose **Open**.
 
@@ -183,6 +177,16 @@ After customizing the resource template, save your changes in the template folde
 
    You can customize these resources and save the .rct file.
 
+### To create a new resource from a template
+
+1. In the **Resource View** pane, right-click the .rc file and choose **Add Resource** from the shortcut menu.
+
+1. Select the plus sign (**+**) next to a resource to expand the resource node and view all templates available for that resource.
+
+1. Double-click the template you want to use.
+
+1. Modify the added resource as needed in its resource editor.
+
 ### To convert an existing resource file to a template
 
 1. Open the .rc file as a stand-alone file.
@@ -191,22 +195,12 @@ After customizing the resource template, save your changes in the template folde
 
 1. Specify a location and choose **OK**.
 
-### To create a new resource from a template
-
-1. In the **Resource View** pane, right-click the .rc file and choose **Add Resource** from the shortcut menu.
-
-1. In the **Add Resource** dialog box, select the plus sign (**+**) next to a resource to expand the resource node and view all templates available for that resource.
-
-1. Double-click the template you want to use.
-
-1. Modify the added resource as needed in its resource editor.
-
 ## Requirements
 
 Win32
 
-## See also
+## See Also
 
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
+[Manage Resources](../windows/how-to-copy-resources.md)<br/>
+[Include Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md)<br/>
