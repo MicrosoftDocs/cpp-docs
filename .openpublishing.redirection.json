@@ -8016,6 +8016,51 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/showing-or-hiding-the-dialog-editor-toolbar.md",
+            "redirect_url": "/cpp/windows/dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/switching-between-dialog-box-controls-and-code.md",
+            "redirect_url": "/cpp/windows/dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-keys-for-the-dialog-editor.md",
+            "redirect_url": "/cpp/windows/dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/testing-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/creating-a-new-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/custom-controls-in-the-dialog-editor.md",
+            "redirect_url": "/cpp/windows/controls-in-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/troubleshooting-the-dialog-editor.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-values-to-a-combo-box-control.md",
+            "redirect_url": "/cpp/windows/defining-mnemonics-access-keys",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/selecting-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/sizing-individual-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
