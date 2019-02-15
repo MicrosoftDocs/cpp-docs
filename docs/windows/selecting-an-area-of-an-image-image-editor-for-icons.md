@@ -1,11 +1,11 @@
 ---
-title: "Editing an Image"
-ms.date: "11/04/2016"
+title: "How to: Edit an Image"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.editing", "vc.editors.image.editing"]
 helpviewer_keywords: ["Image editor [C++], image selection", "Image editor [C++], selecting images", "images [C++], selecting", "cursors [C++], selecting areas of", "Image editor [C++], editing images", "Clipboard [C++], pasting", "images [C++], editing", "images [C++], deleting selected parts", "images [C++], copying selected parts", "images [C++], moving selected parts", "images [C++], dragging and replicating selected parts", "images [C++], pasting into", "graphics [C++], editing", "Image editor [C++], flipping and rotating images", "images [C++], flipping", "images [C++], rotating", "Image editor [C++], resizing images", "graphics [C++], resizing", "images [C++], resizing", "resizing images", "size [C++], images", "images [C++], cropping", "images [C++], extending", "Image editor [C++], cropping or extending images", "Image editor [C++], shrinking and stretching images", "images [C++], stretching", "images [C++], shrinking", "bitmaps [C++], shrinking", "bitmaps [C++], stretching", "Image editor [C++], editing images", "images [C++], editing", "images [C++], properties", "Image editor [C++], Properties window", "Properties window, image editor"]
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
 ---
-# Editing an Image
+# How to: Edit an Image
 
 You can use selection tools to define an area of an image that you want to cut, copy, clear, resize, invert, or move. With the **Rectangle Selection** tool you can define and select a rectangular region of the image. With the **Irregular Selection** tool you can draw a freehand outline of the area you want to select for the cut, copy, or other operation.
 
@@ -14,9 +14,7 @@ You can use selection tools to define an area of an image that you want to cut, 
 
 You can also create a custom brush from a selection. For more information, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).
 
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
-
-## Selecting an image
+## Select an Image
 
 1. On the **Image Editor** toolbar (or from the **Image** menu, **Tools** command), choose the selection tool you want.
 
@@ -30,7 +28,7 @@ For information on adding resources to managed projects, see [Resources in Deskt
 
 1. Select the image outside of the current selection. The selection border changes focus and encompasses the whole image once again.
 
-## Editing Parts of an Image
+## Edit Parts of an Image
 
 You can perform standard editing operations — cutting, copying, clearing, and moving — on a [selection](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), whether the selection is the entire image or just a part of it. Because the **Image** editor uses the **Windows Clipboard**, you can transfer images between the **Image** editor and other applications for Windows.
 
@@ -77,7 +75,7 @@ From the **Edit** menu, choose **Delete**.
 
 For more information on drawing with a selection, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).
 
-## Flipping an Image
+## Flip an Image
 
 You can flip or rotate an image to either create a mirror image of the original, turn the image upside down, or rotate the image to the right 90 degrees at a time.
 
@@ -90,7 +88,7 @@ You can flip or rotate an image to either create a mirror image of the original,
    > [!NOTE]
    > You can also use the [accelerator (shortcut) keys](../windows/accelerator-keys-image-editor-for-icons.md) for these commands or access the commands from the shortcut menu (click outside the image while in the Image editor).
 
-## Resizing an Image
+## Resize an Image
 
 The behavior of the **Image** editor while resizing an image depends on whether you've [selected](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) the entire image or just part of it.
 
@@ -143,7 +141,7 @@ Normally, the **Image** editor crops or enlarges an image when you resize it by 
 
 1. Drag one of the sizing handles until the selection is the right size.
 
-## Editing an Image Outside of a Project
+## Edit an Image Outside of a Project
 
 You can open and edit images in the development environment just as you would in any graphics application. The images you work with need not be part of a Visual Studio project for stand-alone editing.
 
@@ -155,7 +153,7 @@ You can open and edit images in the development environment just as you would in
 
 1. Locate and open the image you want to edit.
 
-## Changing Image Properties
+## Change Image Properties
 
 You can set or modify properties of an image using the [Properties window](/visualstudio/ide/reference/properties-window).
 
