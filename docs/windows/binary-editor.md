@@ -17,12 +17,17 @@ To open the **Binary Editor**, first choose **File** > **New** > **File** from t
 > [!CAUTION]
 > Editing resources such as dialog boxes, images, or menus in the Binary editor is dangerous. Incorrect editing could corrupt the resource, making it unreadable in its native editor.
 
+![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
+Binary Data for a Dialog Box Displayed in the Binary Editor
+
+Only certain ASCII values are represented in the Binary editor (0x20 through 0x7E). Extended characters are displayed as periods in the ASCII Value section of the Binary editor (the right panel). The "printable" characters are ASCII values 32 through 126.
+
 > [!TIP]
 > While using the **Binary** editor, in many instances, you can right-click to display a shortcut menu of resource-specific commands. The commands available depend on what your cursor is pointing to. For example, if you click while pointing to the **Binary** editor with selected hexadecimal values, the shortcut menu shows the **Cut**, **Copy**, and **Paste** commands.
 
 ## How-To
 
-With the **Binary** editor, see the following actions:
+The **Binary** editor enables you:
 
 ### To open a Windows desktop resource for binary editing
 
@@ -43,11 +48,6 @@ With the **Binary** editor, see the following actions:
 
    > [!NOTE]
    > You can use the [Image editor](../windows/image-editor-for-icons.md) and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.
-
-![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
-Binary Data for a Dialog Box Displayed in the Binary Editor
-
-Only certain ASCII values are represented in the Binary editor (0x20 through 0x7E). Extended characters are displayed as periods in the ASCII Value section of the Binary editor (the right panel). The "printable" characters are ASCII values 32 through 126.
 
 > [!NOTE]
 > If you want to use the **Binary** editor on a resource already being edited in another editor window, close the other editor window first.

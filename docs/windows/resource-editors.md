@@ -27,7 +27,7 @@ The appropriate editor opens automatically when you create or open a resource.
 |[Version Information Editor](../windows/version-information-editor.md)|Version information in Visual C++ projects.|
 
 > [!NOTE]
-> If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+> If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 ## View and Edit Resources
 
@@ -43,9 +43,6 @@ Resources can also be edited outside of the project, see [How to: Open a Resourc
 ### To edit the properties of a resource
 
 1. In [Resource View](../windows/resource-view-window.md), right-click the resource you want to edit and choose **Properties** from the shortcut menu.
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 1. In the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your resource.
 
@@ -66,9 +63,6 @@ You can access Win32 resources in the [Resource View](../windows/resource-view-w
 1. If the **Resource View** window isn't the top-most window, select the **Resource View** tab to bring it to the top.
 
 1. From **Resource View**, expand the folder for the project that contains resources you want to view. For example, if you want to view a dialog resource, expand the **Dialog** folder.
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 1. Double-click the resource, for example, **IDD_ABOUTBOX**.
 
@@ -109,9 +103,6 @@ The visual preview function doesn't apply to resources: Accelerator, Manifest, S
 ### To preview resources
 
 1. In [Resource View](../windows/resource-view-window.md) or a document window, select your resource, for example, `IDD_ABOUTBOX`.
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 1. In the [Properties window](/visualstudio/ide/reference/properties-window), select the **Property Pages** button.
 

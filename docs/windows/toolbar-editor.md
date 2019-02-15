@@ -16,20 +16,6 @@ Toolbar Editor
 
 The **Toolbar** editor is similar to the **Image** editor in functionality. The menu items, graphic tools, and bitmap grid are the same as those in the **Image** editor. There's a menu command on the **Image** menu to allow you to switch between the **Toolbar** editor and the **Image** editor. For more information on using the **Graphics** toolbar, **Colors** palette, or **Image** menu, see [Image Editor](../windows/image-editor-for-icons.md).
 
-## How-To
-
-With the **Toolbar** editor, you can:
-
-### To create new toolbars
-
-1. In **Resource** view, right-click your .rc file, then choose **Add Resource** from the shortcut menu. (If you have an existing toolbar in your .rc file, you can simply right-click the **Toolbar** folder and select **Insert Toolbar** from the shortcut menu.)
-
-1. In the **Add Resource** dialog box, select **Toolbar** in the **Resource Type** list, then choose **New**.
-
-   If a plus sign (**+**) appears next to the **Toolbar** resource type, it means that toolbar templates are available. Select the plus sign to expand the list of templates, select a template, and choose **New**.
-
-### To convert bitmaps to toolbar resources
-
 You can create a new toolbar in a C++ project by converting a bitmap. The graphic from the bitmap converts to the button images for a toolbar. Usually the bitmap contains several button images on a single bitmap, with one image for each button. Images can be any size as the default is 16 pixels wide and the height of the image. You can specify the size of the button images in the **New Toolbar Resource** dialog box when you choose **Toolbar Editor** from the **Image** menu while in the Image editor.
 
 The **New Toolbar Resource** dialog box allows you to specify the width and height of the buttons you're adding to a toolbar resource in a C++ project. The default is 16 × 15 pixels.
@@ -43,7 +29,32 @@ The dialog box has the following properties:
 |**Button Width**|Provides a space for you to enter the width for the toolbar buttons you're converting from a bitmap resource to a toolbar resource. The images are cropped to the width and height specified, and the colors are adjusted to use standard toolbar colors (16 colors).|
 |**Button Height**|Provides a space for you to enter the height for the toolbar buttons you're converting from a bitmap resource to a toolbar resource. The images are cropped to the width and height specified, and the colors are adjusted to use standard toolbar colors (16 colors).|
 
-#### To convert bitmaps to a toolbar
+By default, a new or blank button is displayed at the right end of the toolbar. You can move this button before editing it. When you create a new button, another blank button appears to the right of the edited button. When you save a toolbar, the blank button isn't saved.
+
+The properties of a toolbar button are:
+
+|Property|Description|
+|--------------|-----------------|
+|**ID**|Defines the ID for the button. The drop-down list provides common **ID** names.|
+|**Width**|Sets the width of the button. 16 pixels is recommended.|
+|**Height**|Sets the height of the button. The height of one button changes the height of all buttons on the toolbar. 15 pixels is recommended.|
+|**Prompt**|Defines the message displayed in the status bar. Adding \n and a name adds a ToolTip to that toolbar button. For more information, see [Creating a ToolTip](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
+
+**Width** and **Height** apply to all buttons. A bitmap that is used to create a toolbar has a maximum width of 2048. So if you set the button width to 512, you can only have four buttons and if you set the width to 513, you can only have three buttons.
+
+## How-To
+
+The **Toolbar** editor enables you:
+
+### To create new toolbars
+
+1. In **Resource** view, right-click your .rc file, then choose **Add Resource** from the shortcut menu. (If you have an existing toolbar in your .rc file, you can simply right-click the **Toolbar** folder and select **Insert Toolbar** from the shortcut menu.)
+
+1. In the **Add Resource** dialog box, select **Toolbar** in the **Resource Type** list, then choose **New**.
+
+   If a plus sign (**+**) appears next to the **Toolbar** resource type, it means that toolbar templates are available. Select the plus sign to expand the list of templates, select a template, and choose **New**.
+
+### To convert bitmaps to toolbar resources
 
 1. Open an existing bitmap resource in the [Image editor](../windows/image-editor-for-icons.md). (If the bitmap isn't already in your .rc file, right-click the .rc file, choose **Import** from the shortcut menu, navigate to the bitmap you want to add to your .rc file, then select **Open**.)
 
@@ -60,22 +71,7 @@ You can also change the command IDs of the buttons on the new toolbar by using t
 
 ### To create, move, and edit toolbar buttons
 
-You can easily create, move, copy, and edit toolbar buttons.
-
-By default, a new or blank button is displayed at the right end of the toolbar. You can move this button before editing it. When you create a new button, another blank button appears to the right of the edited button. When you save a toolbar, the blank button isn't saved.
-
-The properties of a toolbar button are:
-
-|Property|Description|
-|--------------|-----------------|
-|**ID**|Defines the ID for the button. The drop-down list provides common **ID** names.|
-|**Width**|Sets the width of the button. 16 pixels is recommended.|
-|**Height**|Sets the height of the button. The height of one button changes the height of all buttons on the toolbar. 15 pixels is recommended.|
-|**Prompt**|Defines the message displayed in the status bar. Adding \n and a name adds a ToolTip to that toolbar button. For more information, see [Creating a ToolTip](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
-
-**Width** and **Height** apply to all buttons. A bitmap that is used to create a toolbar has a maximum width of 2048. So if you set the button width to 512, you can only have four buttons and if you set the width to 513, you can only have three buttons.
-
-See the following actions:
+You can easily create, move, copy, and edit toolbar buttons:
 
 #### To create a new toolbar button
 
