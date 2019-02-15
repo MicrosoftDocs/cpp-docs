@@ -1,6 +1,6 @@
 ---
 title: "MFC Predefined Symbols"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 helpviewer_keywords: ["MFC symbols", "symbols [C++], MFC", "MFC database programming symbols", "symbols [C++], MFC", "databases [C++], MFC programming model", "Windows programming MFC symbols [C++]"]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
 ---
@@ -266,7 +266,8 @@ These symbols are also part of the MFC support files, but they support standard 
 
 MFC
 
-## See also
+## See Also
 
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+[ATL Predefined Symbols](../windows/atl-predefined-symbols.md)<br/>
+[Win32 Predefined Symbols](../windows/win32-predefined-symbols.md)<br/>

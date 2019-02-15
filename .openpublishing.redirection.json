@@ -8061,6 +8061,86 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/selecting-multiple-menus-or-menu-commands.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/associating-a-menu-command-with-an-accelerator-key.md",
+            "redirect_url": "/cpp/windows/menu-command-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/image-menu-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/toolbar-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/window-panes-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/saving-bitmaps-as-gifs-or-jpegs-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/converting-an-image-from-one-format-to-another-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/drawing-lines-or-closed-figures-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/using-a-drawing-tool-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-custom-brush-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/using-a-drawing-tool-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-parts-of-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/flipping-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resizing-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-image-properties-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-graphical-resources-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/activationfactory-activationfactory-constructor.md",
             "redirect_url": "/cpp/windows/activationfactory-class#activationfactory",
             "redirect_document_id": false
