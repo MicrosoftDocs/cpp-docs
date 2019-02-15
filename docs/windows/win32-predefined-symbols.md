@@ -1,6 +1,6 @@
 ---
 title: "Win32 Predefined Symbols"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 helpviewer_keywords: ["Win32 [C++], predefined symbols", "symbols [C++], Win32 predefined", "Windows API [C++], predefined symbols"]
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
 ---
@@ -32,4 +32,5 @@ Win32
 ## See Also
 
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+[MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)<br/>
+[ATL Predefined Symbols](../windows/atl-predefined-symbols.md)<br/>

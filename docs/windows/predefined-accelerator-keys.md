@@ -1,13 +1,11 @@
 ---
 title: "Accelerator Keys (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.accelerator"]
 helpviewer_keywords: ["accelerator keys", "keyboard shortcuts", "keyboard shortcuts [C++], predefined", "menus [C++], shortcut keys", "keyboard shortcuts [C++], menu association"]
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
 ---
 # Accelerator Keys (C++)
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
 
 ## Predefined Accelerator Keys
 
@@ -67,7 +65,7 @@ There are a number of predefined accelerator keys that may be part of a Windows 
 |VK_XBUTTON1|Windows: X1 mouse button|
 |VK_XBUTTON2|Windows: X2 mouse button|
 
-## Associating an Accelerator Key with a Menu Item
+## Accelerator Key Association
 
 Many times, you want a menu item and a keyboard combination to issue the same program command. You do this by assigning the same resource identifier (ID) to the menu item and to an entry in your application's accelerator table. You then edit the menu item's caption to show the name of the accelerator. For more information on menu items and accelerator keys, see [Associating a Menu Item with an Accelerator Key](../windows/associating-a-menu-command-with-an-accelerator-key.md).
 
@@ -78,4 +76,3 @@ Win32
 ## See Also
 
 [Accelerator Editor](../windows/accelerator-editor.md)<br/>
-[Resource Editors](../windows/resource-editors.md)

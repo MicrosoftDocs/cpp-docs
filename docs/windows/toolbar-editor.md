@@ -1,6 +1,6 @@
 ---
 title: "Toolbar Editor (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.toolbar.F1", "vc.editors.toolbar", "vc.editors.newtoolbarresource"]
 helpviewer_keywords: ["resource editors [C++], Toolbar editor", "editors, toolbars", "toolbars [C++], editing", "Toolbar editor", "toolbars [C++], creating", "Toolbar editor [C++], creating new toolbars", "Insert Resource", "bitmaps [C++], converting to toolbars", "Toolbar editor [C++], converting bitmaps", "toolbars [C++], converting bitmaps", "New Toolbar Resource dialog box [C++]", "buttons [C++], custom toolbars", "toolbar buttons [C++], editing", "buttons", "toolbar buttons [C++], creating", "Toolbar editor [C++], creating buttons", "toolbar buttons [C++], button image", "toolbar buttons [C++], creating", "toolbar buttons (in Toolbar editor)", "toolbar buttons [C++], moving", "Toolbar editor [C++], moving buttons", "Toolbar editor [C++], copying buttons", "toolbars [C++], copying buttons", "toolbar buttons [C++], copying", "toolbar buttons [C++], deleting", "Toolbar editor [C++], deleting buttons", "Toolbar editor [C++], spacing toolbar buttons", "toolbar buttons [C++], space between buttons", "toolbar controls [MFC], command ID", "toolbar buttons [C++], setting properties", "Toolbar editor [C++], toolbar button properties", "command IDs, toolbar buttons", "size, toolbar buttons", "toolbar buttons [C++], setting properties", "Toolbar editor [C++], toolbar button properties", "status bars [C++], active toolbar button text", "command IDs, toolbar buttons", "width, toolbar buttons", "tool tips [C++], adding to toolbar buttons", "\n in tool tip", "toolbar buttons [C++], tool tips", "buttons [C++], tool tips", "Toolbar editor [C++], creating tool tips"]
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
@@ -16,23 +16,6 @@ Toolbar Editor
 
 The **Toolbar** editor is similar to the **Image** editor in functionality. The menu items, graphic tools, and bitmap grid are the same as those in the **Image** editor. There's a menu command on the **Image** menu to allow you to switch between the **Toolbar** editor and the **Image** editor. For more information on using the **Graphics** toolbar, **Colors** palette, or **Image** menu, see [Image Editor](../windows/image-editor-for-icons.md).
 
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
-
-With the **Toolbar** editor, you can:
-
-## Create new toolbars
-
-1. In **Resource** view, right-click your .rc file, then choose **Add Resource** from the shortcut menu. (If you have an existing toolbar in your .rc file, you can simply right-click the **Toolbar** folder and select **Insert Toolbar** from the shortcut menu.)
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
-
-1. In the **Add Resource** dialog box, select **Toolbar** in the **Resource Type** list, then choose **New**.
-
-   If a plus sign (**+**) appears next to the **Toolbar** resource type, it means that toolbar templates are available. Select the plus sign to expand the list of templates, select a template, and choose **New**.
-
-## Convert bitmaps to toolbar resources
-
 You can create a new toolbar in a C++ project by converting a bitmap. The graphic from the bitmap converts to the button images for a toolbar. Usually the bitmap contains several button images on a single bitmap, with one image for each button. Images can be any size as the default is 16 pixels wide and the height of the image. You can specify the size of the button images in the **New Toolbar Resource** dialog box when you choose **Toolbar Editor** from the **Image** menu while in the Image editor.
 
 The **New Toolbar Resource** dialog box allows you to specify the width and height of the buttons you're adding to a toolbar resource in a C++ project. The default is 16 × 15 pixels.
@@ -45,25 +28,6 @@ The dialog box has the following properties:
 |---|---|
 |**Button Width**|Provides a space for you to enter the width for the toolbar buttons you're converting from a bitmap resource to a toolbar resource. The images are cropped to the width and height specified, and the colors are adjusted to use standard toolbar colors (16 colors).|
 |**Button Height**|Provides a space for you to enter the height for the toolbar buttons you're converting from a bitmap resource to a toolbar resource. The images are cropped to the width and height specified, and the colors are adjusted to use standard toolbar colors (16 colors).|
-
-### To convert bitmaps to a toolbar
-
-1. Open an existing bitmap resource in the [Image editor](../windows/image-editor-for-icons.md). (If the bitmap isn't already in your .rc file, right-click the .rc file, choose **Import** from the shortcut menu, navigate to the bitmap you want to add to your .rc file, then select **Open**.)
-
-1. From the **Image** menu, choose **Toolbar Editor**.
-
-   The **New Toolbar Resource** dialog box appears. You can change the width and height of the icon images to match the bitmap. The toolbar image is then displayed in the Toolbar editor.
-
-1. To finish the conversion, change the command **ID** of the button using the [Properties window](/visualstudio/ide/reference/properties-window). Type the new **ID** or select an **ID** from the drop-down list.
-
-   > [!TIP]
-   > The **Properties** window contains a pushpin button in the title bar. Selecting this button enables or disables **Auto Hide** for the window. To quickly cycle through all the toolbar button properties without having to reopen the individual property windows, turn **Auto Hide** off so the **Properties** window stays stationary.
-
-You can also change the command IDs of the buttons on the new toolbar by using the [Properties window](/visualstudio/ide/reference/properties-window).
-
-## Create, move, and edit toolbar buttons
-
-You can easily create, move, copy, and edit toolbar buttons.
 
 By default, a new or blank button is displayed at the right end of the toolbar. You can move this button before editing it. When you create a new button, another blank button appears to the right of the edited button. When you save a toolbar, the blank button isn't saved.
 
@@ -78,14 +42,40 @@ The properties of a toolbar button are:
 
 **Width** and **Height** apply to all buttons. A bitmap that is used to create a toolbar has a maximum width of 2048. So if you set the button width to 512, you can only have four buttons and if you set the width to 513, you can only have three buttons.
 
-See the following actions:
+## How-To
 
-### To create a new toolbar button
+The **Toolbar** editor enables you:
+
+### To create new toolbars
+
+1. In **Resource** view, right-click your .rc file, then choose **Add Resource** from the shortcut menu. (If you have an existing toolbar in your .rc file, you can simply right-click the **Toolbar** folder and select **Insert Toolbar** from the shortcut menu.)
+
+1. In the **Add Resource** dialog box, select **Toolbar** in the **Resource Type** list, then choose **New**.
+
+   If a plus sign (**+**) appears next to the **Toolbar** resource type, it means that toolbar templates are available. Select the plus sign to expand the list of templates, select a template, and choose **New**.
+
+### To convert bitmaps to toolbar resources
+
+1. Open an existing bitmap resource in the [Image editor](../windows/image-editor-for-icons.md). (If the bitmap isn't already in your .rc file, right-click the .rc file, choose **Import** from the shortcut menu, navigate to the bitmap you want to add to your .rc file, then select **Open**.)
+
+1. From the **Image** menu, choose **Toolbar Editor**.
+
+   The **New Toolbar Resource** dialog box appears. You can change the width and height of the icon images to match the bitmap. The toolbar image is then displayed in the Toolbar editor.
+
+1. To finish the conversion, change the command **ID** of the button using the [Properties window](/visualstudio/ide/reference/properties-window). Type the new **ID** or select an **ID** from the drop-down list.
+
+   > [!TIP]
+   > The **Properties** window contains a pushpin button in the title bar. Selecting this button enables or disables **Auto Hide** for the window. To quickly cycle through all the toolbar button properties without having to reopen the individual property windows, turn **Auto Hide** off so the **Properties** window stays stationary.
+
+You can also change the command IDs of the buttons on the new toolbar by using the [Properties window](/visualstudio/ide/reference/properties-window).
+
+### To create, move, and edit toolbar buttons
+
+You can easily create, move, copy, and edit toolbar buttons:
+
+#### To create a new toolbar button
 
 1. In [Resource view](../windows/resource-view-window.md) expand the resource folder (for example, *Project1.rc*).
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 1. Expand the **Toolbar** folder and select a toolbar to edit.
 
@@ -97,7 +87,7 @@ See the following actions:
 
 You can also copy and paste an image onto a toolbar as a new button.
 
-### To add an image to a toolbar as a button
+#### To add an image to a toolbar as a button
 
 1. In [Resource View](../windows/resource-view-window.md), open the toolbar by double-clicking it.
 
@@ -114,21 +104,21 @@ You can also copy and paste an image onto a toolbar as a new button.
 
    The image will appear on your toolbar as a new button.
 
-### To move a toolbar button
+#### To move a toolbar button
 
 In the **Toolbar View** pane, drag the button that you want to move to its new location on the toolbar.
 
-### To copy buttons from a toolbar
+#### To copy buttons from a toolbar
 
 1. Hold down the **Ctrl** key.
 
 1. In the **Toolbar View** pane, drag the button to either its new location on the toolbar or to a location on another toolbar.
 
-### To delete a toolbar button
+#### To delete a toolbar button
 
 Select the toolbar button and drag it off the toolbar.
 
-### To insert or remove space between buttons on a toolbar
+#### To insert or remove space between buttons on a toolbar
 
 In general, to insert a space between buttons, drag them away from one another on the toolbar. To remove space, drag them towards each other.
 
@@ -142,13 +132,13 @@ In general, to insert a space between buttons, drag them away from one another o
 > [!NOTE]
 > If there's no space on the side of the button that you're dragging away from, and you drag the button more than halfway past the adjacent button, the **Toolbar** editor also inserts a space on the opposite side of the button that you're dragging.
 
-### To change the properties of a toolbar button
+#### To change the properties of a toolbar button
 
 1. In a C++ project, select the toolbar button.
 
 1. Type the new ID in the **ID** property in the [Properties Window](/visualstudio/ide/reference/properties-window), or use the drop-down list to select a new **ID**.
 
-### To create a tool tip for a toolbar button
+#### To create a tool tip for a toolbar button
 
 1. Select the toolbar button.
 
@@ -175,7 +165,7 @@ If you want this effect using the **Toolbar** editor, you set the **Prompt** pro
 
 MFC or ATL
 
-## See also
+## See Also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>

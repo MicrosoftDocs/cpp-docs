@@ -2,7 +2,7 @@
 title: "Creating Menus (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.editors.menu"]
-helpviewer_keywords: ["mnemonics [C++], associating menu items", "menus [C++], associating commands with mnemonic keys", "menus [C++], creating", "menus [C++], adding items", "commands [C++], adding to menus", "menu items, adding to menus", "submenus", "submenus [C++], creating", "menus [C++], creating", "context menus [C++], Menu Editor", "pop-up menus [C++], creating", "menus [C++], pop-up", "menus [C++], creating", "shortcut menus [C++], creating", "pop-up menus [C++], displaying", "pop-up menus [C++], connecting to applications", "context menus [C++], connecting to applications", "shortcut menus [C++], connecting to applications", "pop-up menus"]
+helpviewer_keywords: ["mnemonics [C++], associating menu items", "menus [C++], associating commands with mnemonic keys", "menus [C++], creating", "menus [C++], adding items", "commands [C++], adding to menus", "menu items, adding to menus", "submenus", "submenus [C++], creating", "menus [C++], creating", "context menus [C++], Menu Editor", "pop-up menus [C++], creating", "menus [C++], pop-up", "menus [C++], creating", "shortcut menus [C++], creating", "pop-up menus [C++], displaying", "pop-up menus [C++], connecting to applications", "context menus [C++], connecting to applications", "shortcut menus [C++], connecting to applications", "pop-up menus", "menu commands [C++], selecting", "menus [C++], selecting", "commands [C++], menu commands", "commands [C++], copying on menus", "menu items, moving", "commands [C++], moving on menus", "menu items, copying", "menu items, deleting", "commands [C++], deleting from menus", "menus [C++], deleting"]
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
 ---
 # Creating Menus (C++)
@@ -12,7 +12,7 @@ ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
 
 For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
-## To create a standard menu
+## Create a standard menu
 
 1. From the **View** menu, select **Resource View** and then right-click on the **Menu** heading and choose **Add Resource**. Choose **Menu**.
 
@@ -33,7 +33,7 @@ For information on adding resources to managed projects, see [Resources in Deskt
    > [!NOTE]
    > To create a single-item menu on the menu bar, set the **Popup** property to **False**.
 
-## To create a submenu
+## Create a submenu
 
 1. Select the menu command for which you want to create a submenu.
 
@@ -49,7 +49,7 @@ Select an existing menu name and press the **Insert** key. The **New Item** box 
 
 Right-click on the menu bar and choose **Insert New** from the shortcut menu.
 
-## To add commands to a menu
+## Add commands to a menu
 
 1. Create a menu.
 
@@ -78,7 +78,7 @@ Right-click on the menu bar and choose **Insert New** from the shortcut menu.
 
    The new item box is selected so you can create additional menu commands.
 
-## To create pop-up menus
+## Create pop-up menus
 
 [Pop-up menus](../mfc/menus-mfc.md) display frequently used commands. They can be context sensitive to the location of the pointer. Using pop-up menus in your application requires building the menu itself and then connecting it to application code.
 
@@ -124,6 +124,52 @@ Right-click the menu and choose **View as Popup** from the shortcut menu.
 
    > [!NOTE]
    > To change back to the menu-bar view, click **View as Popup** again (which removes the check mark and returns your menu-bar view).
+
+## Edit multiple menus or menu commands
+
+### To select multiple menu commands
+
+You can select multiple menu names or menu commands to run bulk operations such as deleting or changing properties.
+
+While holding down the **Ctrl** key, select the menus or submenu commands you want.
+
+### To move and copy menus and menu commands
+
+You can move or copy menus and menu commands using the drag-and-drop method or by using commands on the shortcut menu (right-click menu).
+
+#### To move or copy menus or menu commands using the drag-and-drop method
+
+1. Drag or copy the item you want to move to:
+
+   - A new location on the current menu.
+
+   - A different menu. (You can navigate to other menus by dragging the mouse pointer over them.)
+
+1. Drop the menu command when the insertion guide shows the position you want.
+
+#### To move or copy menus or menu commands using shortcut menu commands
+
+1. Right-click one or more menus or menu commands.
+
+1. From the shortcut menu, choose **Cut** (to move) or **Copy**.
+
+1. If you're moving the items to another menu resource or resource script file, [open it in another window](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
+
+1. Select the position of the menu or menu command you want to move or copy to.
+
+1. From the shortcut menu, choose **Paste**. The moved or copied item is placed before the item you select.
+
+   > [!NOTE]
+   > You can also drag, copy, and paste to other menus in other menu windows.
+
+### To delete a menu or menu command
+
+1. Right-click the menu name or command.
+
+1. Choose **Delete** from the shortcut menu.
+
+   > [!NOTE]
+   > Similarly, you can use the shortcut menu to perform other actions such as Copy, Cut, Paste, Insert New, Insert Separator, Edit IDs, View as Pop-up, Check Mnemonics, etc.
 
 ## Requirements
 
