@@ -1,6 +1,6 @@
 ---
 title: "Using a Drawing Tool"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.drawing"]
 helpviewer_keywords: ["Image editor [C++], selecting drawing tools", "Image editor [C++], toolbar", "drawing tools", "Image editor [C++], drawing lines", "shapes, drawing", "colors [C++], brush", "brushes, colors", "brushes, creating custom", "images [C++], creating custom brushes", "graphics [C++], custom brushes", "custom brushes"]
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
@@ -87,11 +87,7 @@ A custom brush is a rectangular portion of an image that you pick up and use lik
 
 1. [Select the part of the image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) that you want to use for a brush.
 
-1. Holding the **Shift** key down, choose in the selection and drag it across the image.
-
-   \- or -
-
-1. From the **Image** menu, choose **Use Selection as Brush**.
+1. Hold the **Shift** key down, choose in the selection and drag it across the image. Or from the **Image** menu, choose **Use Selection as Brush**.
 
    Your selection becomes a custom brush that distributes the colors in the selection across the image. Copies of the selection are left along the dragging path. The more slowly you drag, the more copies are made.
 
@@ -120,13 +116,11 @@ Press the **Plus Sign** (**+**) key to double the brush size, or the **Minus Sig
 
 Press **Esc** or choose another drawing tool.
 
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
-
 ## Requirements
 
 None
 
-## See also
+## See Also
 
 [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>

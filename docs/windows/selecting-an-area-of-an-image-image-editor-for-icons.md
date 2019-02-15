@@ -1,6 +1,6 @@
 ---
 title: "Editing an Image"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.editing", "vc.editors.image.editing"]
 helpviewer_keywords: ["Image editor [C++], image selection", "Image editor [C++], selecting images", "images [C++], selecting", "cursors [C++], selecting areas of", "Image editor [C++], editing images", "Clipboard [C++], pasting", "images [C++], editing", "images [C++], deleting selected parts", "images [C++], copying selected parts", "images [C++], moving selected parts", "images [C++], dragging and replicating selected parts", "images [C++], pasting into", "graphics [C++], editing", "Image editor [C++], flipping and rotating images", "images [C++], flipping", "images [C++], rotating", "Image editor [C++], resizing images", "graphics [C++], resizing", "images [C++], resizing", "resizing images", "size [C++], images", "images [C++], cropping", "images [C++], extending", "Image editor [C++], cropping or extending images", "Image editor [C++], shrinking and stretching images", "images [C++], stretching", "images [C++], shrinking", "bitmaps [C++], shrinking", "bitmaps [C++], stretching", "Image editor [C++], editing images", "images [C++], editing", "images [C++], properties", "Image editor [C++], Properties window", "Properties window, image editor"]
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
@@ -13,8 +13,6 @@ You can use selection tools to define an area of an image that you want to cut, 
 > See the **Rectangle Selection** and **Irregular Selection** tools pictured in [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) or view the tool tips associated with each button on the **Image Editor** toolbar.
 
 You can also create a custom brush from a selection. For more information, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## Selecting an image
 

@@ -1,6 +1,6 @@
 ---
 title: "Working with Color (Image Editor for Icons)"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.color", "vc.editors.customcolorselector", "vc.editors.loadcolorpalette", "vc.editors.colorswindow"]
 helpviewer_keywords: ["images [C++], background colors", "Image editor [C++], Colors Palette", "colors [C++], image", "Colors Palette, Image editor", "palettes, Image editor colors", "foreground colors [C++], Image editor", "colors [C++]", "Image editor [C++], colors", "colors [C++], Image editor", "colors [C++], image", "images [C++], colors", "Image editor [C++], colors", "Fill tool", "colors [C++], image", "images [C++], colors", "colors [C++], selection tools", "Image editor [C++], colors", "Select Color tool", "dithered color, Image editor", "Custom Color Selector dialog box [C++]", "Image editor [C++], Colors Palette", "colors [C++], image", "bitmaps [C++], colors", "images [C++], colors", "HSL values", "Colors Palette, Image editor", "RGB color values", "Adjust Colors command [C++]", "Image editor [C++], dithered color", "Image editor [C++], Colors Palette", "Colors Palette, Image editor", "colors [C++], inverting", "colors [C++]", "Color Indicator", "colors [C++], Colors window", "Colors window, hiding colors", "Show Colors Window command", "Colors window, displaying colors", "color palettes [C++]", "palettes", "palettes, Image editor", "colors [C++], Image editor", "Image editor [C++], palettes", "color palettes", "Load Palette Colors dialog box [C++]", "opaque backgrounds [C++]", "colors [C++], image", "Image editor [C++], transparent or opague backgrounds", "images [C++], transparency", "images [C++], opaque background", "colors [C++], image", "Image editor [C++], color inversion", "images [C++], colors", "colors [C++], inverting"]
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
@@ -24,13 +24,9 @@ You can save customized color palettes on disk and reload them as needed. The co
 
 Except for the **Eraser**, tools on the **Image Editor** toolbar draw with the current foreground or background color when you press the left or right mouse button, respectively.
 
-### To select a foreground color
+- To select a foreground color, with the left mouse button, select the color you want on the **Colors** palette.
 
-With the left mouse button, select the color you want on the **Colors** palette.
-
-### To select a background color
-
-With the right mouse button, select the color you want on the **Colors** palette.
+- To select a background color, with the right mouse button, select the color you want on the **Colors** palette.
 
 ## Filling a Bounded Area of an Image with a Color
 
@@ -41,7 +37,7 @@ The Image editor provides the **Fill** tool for filling any enclosed image area 
 
 ### To use the fill tool
 
-1. On the **Image Editor** toolbar (or the **Image** menu, **Tools** command), select the **Fill** tool.
+1. On the **Image Editor** toolbar (or use **Image** > **Tools**), select the **Fill** tool.
 
 1. If necessary, choose drawing colors: In the [Colors palette](../windows/colors-window-image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
 
@@ -80,9 +76,9 @@ You can switch from a transparent background (the default) to an opaque backgrou
 
 In the **Image Editor** toolbar, select the **Option** selector, and then choose the appropriate background:
 
-   - `Opaque Background (O)`: Existing image is obscured by all parts of the selection.
+- `Opaque Background (O)`: Existing image is obscured by all parts of the selection.
 
-   - `Transparent Background (T)`: Existing image shows through parts of the selection that match the current background color.
+- `Transparent Background (T)`: Existing image shows through parts of the selection that match the current background color.
 
    \- or -
 
@@ -94,9 +90,7 @@ You can change the background color while a selection is already in effect to ch
 
 The **Image** editor provides a convenient way to invert colors in the selected part of the image so you can tell how an image would appear with inverted colors.
 
-### To invert colors in the current selection
-
-On the **Image** menu, select **Invert Colors**.
+To invert colors in the current selection, on the **Image** menu, select **Invert Colors**.
 
 ## Customize or change colors
 
@@ -175,29 +169,15 @@ The **Colors** window has two parts:
 
 You can use the **Colors** window with the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md).
 
-### To display the Colors window
+- To display the **Colors** window, right-click in an **Image Editor** pane and choose **Show Colors Window**, or select **Show Colors Window** on the [Image menu](../windows/image-menu-image-editor-for-icons.md).
 
-Right-click in an **Image Editor** pane and choose **Show Colors Window** from the shortcut menu.
-
-   \- or -
-
-Select **Show Colors Window** on the [Image menu](../windows/image-menu-image-editor-for-icons.md).
-
-### To hide the Colors window
-
-Unpin the window. This action will allow the window to auto hide when it's not in use.
-
-\- or -
-
-Select the **Close** button.
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
+- To hide the **Colors** window, unpin the window (this action will allow the window to auto hide when it's not in use) or select the **Close** button.
 
 ## Requirements
 
 None
 
-## See also
+## See Also
 
 [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)<br/>

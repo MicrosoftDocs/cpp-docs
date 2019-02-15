@@ -1,6 +1,6 @@
 ---
 title: "Dialog Editor (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.dialog.dialog", "vc.editors.dialog.F1", "vc.editors.dialog"]
 helpviewer_keywords: ["resource editors [C++], Dialog editor", "editors, dialog boxes", "Dialog editor", "dialog boxes [C++], editing", "controls [C++], showing or hiding Dialog editor toolbar", "toolbars [C++], showing", "toolbars [C++], hiding", "Dialog Editor [C++], showing or hiding toolbar", "events [C++], viewing for controls", "Windows messages [C++], controls", "messages [C++], viewing for dialog boxes", "Dialog Editor [C++], accessing code", "code [C++], switching from Dialog Editor", "controls [C++], jumping to code", "Dialog Editor [C++], switching between controls and code", "Dialog Editor [C++], shortcut keys"]
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
@@ -13,28 +13,18 @@ One of the first steps in making a new dialog box (or dialog box template) is ad
 
 You can store a dialog box as a template so you can reuse it. You can also easily switch between designing the dialog box and editing the code that implements it.
 
-It's also possible to edit properties of single or multiple controls in the Dialog editor. You can change the tab order, that is, the order in which controls gain focus when the **Tab** key is pressed, or you can define an access key (a key combination) that allows users to choose a control using the keyboard. For a list of preset access keys, see [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md).
+It's also possible to edit properties of single or multiple controls in the Dialog editor. You can change the tab order, that is, the order in which controls gain focus when the **Tab** key is pressed, or you can define an access key (a key combination) that allows users to choose a control using the keyboard.
 
 The **Dialog** editor also allows you to use custom controls, including ActiveX controls. In addition, you can edit a [form view](../mfc/reference/cformview-class.md), [Record Views](../data/record-views-mfc-data-access.md), or [Dialog Bars](../mfc/dialog-bars.md).
 
 Starting with Visual Studio 2015, you can use the dialog editor to define dynamic layouts, which specify how controls move and resize when the user resizes a dialog. For more information, see [Dynamic Layout](../mfc/dynamic-layout.md).
 
-- [Creating a New Dialog Box](../windows/creating-a-new-dialog-box.md)
-
-- [Creating a Dialog Box that Users Can't Exit at Run Time](../windows/creating-a-dialog-box-that-users-cannot-exit.md)
+- [How To: Create a Dialog Box](../windows/creating-a-new-dialog-box.md)
 
 - [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
 
-- [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)
-
-- [Testing a Dialog Box](../windows/testing-a-dialog-box.md)
-
-- [Troubleshooting the Dialog Editor](../windows/troubleshooting-the-dialog-editor.md)
-
    > [!TIP]
-   > While using the **Dialog** editor, in many instances, you can click the right mouse button to display a shortcut menu of frequently used commands.
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
+   > While using the **Dialog** editor, in many instances, you can select the right mouse button to display a shortcut menu of frequently used commands.
 
 ## Dialog Editor Toolbar
 
@@ -107,7 +97,7 @@ Below are the default accelerator keys for the Dialog editor commands. To change
 
 Win32
 
-## See also
+## See Also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>

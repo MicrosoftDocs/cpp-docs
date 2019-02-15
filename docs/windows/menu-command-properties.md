@@ -1,6 +1,6 @@
 ---
 title: "Menu Command Properties (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 helpviewer_keywords: ["menu items, properties", "keyboard shortcuts [C++], menu association", "commands [C++], associating menu commands with accelerator keys", "menu commands [C++], associating with keyboard shortcuts", "status bars [C++], associating menu items", "menus [C++], status bar text", "access keys [C++], checking", "menus [C++], shortcut keys", "keyboard shortcuts [C++], command assignments", "access keys [C++], assigning", "mnemonics [C++], adding to menus", "keyboard shortcuts [C++], uniqueness checking", "mnemonics [C++], uniqueness checking", "Check Mnemonics command"]
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
 ---
@@ -26,8 +26,6 @@ The information below is organized according to the **Menu** properties that app
 ## Associate menu commands
 
 There are often times you want a menu command and a keyboard combination to issue the same program command. Identical commands are issued by using the **Menu** editor to assign the same resource identifier to the menu command and to an entry in your application's accelerator table. You then edit the [Caption](../windows/menu-command-properties.md) of the menu command to show the name of the accelerator key.
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ### To associate a menu command with an accelerator key
 

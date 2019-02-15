@@ -1,6 +1,6 @@
 ---
 title: "Creating Menus (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.menu"]
 helpviewer_keywords: ["mnemonics [C++], associating menu items", "menus [C++], associating commands with mnemonic keys", "menus [C++], creating", "menus [C++], adding items", "commands [C++], adding to menus", "menu items, adding to menus", "submenus", "submenus [C++], creating", "menus [C++], creating", "context menus [C++], Menu Editor", "pop-up menus [C++], creating", "menus [C++], pop-up", "menus [C++], creating", "shortcut menus [C++], creating", "pop-up menus [C++], displaying", "pop-up menus [C++], connecting to applications", "context menus [C++], connecting to applications", "shortcut menus [C++], connecting to applications", "pop-up menus", "menu commands [C++], selecting", "menus [C++], selecting", "commands [C++], menu commands", "commands [C++], copying on menus", "menu items, moving", "commands [C++], moving on menus", "menu items, copying", "menu items, deleting", "commands [C++], deleting from menus", "menus [C++], deleting"]
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
@@ -9,8 +9,6 @@ ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
 
 > [!NOTE]
 > The **Resource Window** is not available in Express editions.
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## Create a standard menu
 
@@ -175,6 +173,6 @@ You can move or copy menus and menu commands using the drag-and-drop method or b
 
 Win32
 
-## See also
+## See Also
 
 [Menu Editor](../windows/menu-editor.md)
