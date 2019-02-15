@@ -1,6 +1,6 @@
 ---
 title: "Binary Editor (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.binary.F1", "vc.editors.binary"]
 helpviewer_keywords: ["editors, Binary", "resources [C++], editing", "resource editors [C++], Binary editor", "Binary editor", "binary data, editing", "resources [C++], opening for binary editing", "binary data", "hexadecimal bytes in binary data", "strings [C++], searching for", "file searches [C++]", "binary data, finding", "ASCII characters, finding in binary data", "custom resources [C++]", "data resources [C++]", "resources [C++], creating"]
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
@@ -12,33 +12,33 @@ ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
 
 The Binary editor allows you to edit any resource at the binary level in either hexadecimal or ASCII format. You can also use the [Find command](/visualstudio/ide/reference/find-command) to search for either ASCII strings or hexadecimal bytes. You should use the **Binary** editor only when you need to view or make minor changes to custom resources or resource types not supported by the Visual Studio environment.
 
-To open the **Binary Editor**, first choose **File** > **New** > **File** from the main menu, select the file you want to edit, then click on the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
+To open the **Binary Editor**, first choose **File** > **New** > **File** from the main menu, select the file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
 
 > [!CAUTION]
 > Editing resources such as dialog boxes, images, or menus in the Binary editor is dangerous. Incorrect editing could corrupt the resource, making it unreadable in its native editor.
 
+![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
+Binary Data for a Dialog Box Displayed in the Binary Editor
+
+Only certain ASCII values are represented in the Binary editor (0x20 through 0x7E). Extended characters are displayed as periods in the ASCII Value section of the Binary editor (the right panel). The "printable" characters are ASCII values 32 through 126.
+
 > [!TIP]
 > While using the **Binary** editor, in many instances, you can right-click to display a shortcut menu of resource-specific commands. The commands available depend on what your cursor is pointing to. For example, if you click while pointing to the **Binary** editor with selected hexadecimal values, the shortcut menu shows the **Cut**, **Copy**, and **Paste** commands.
 
-## Binary Editor How-To
+## How-To
 
-With the **Binary** editor, see the following actions:
+The **Binary** editor enables you:
 
-### To open a resource for binary editing
-
-#### To open a Windows desktop resource
+### To open a Windows desktop resource for binary editing
 
 1. In [Resource View](../windows/resource-view-window.md), select the specific resource file you want to edit.
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 1. Right-click the resource and click **Open Binary Data** from the shortcut menu.
 
    > [!NOTE]
    > If you use the [Resource View](../windows/resource-view-window.md) window to open a resource with a format that Visual Studio does not recognize (such as RCDATA or a custom resource), the resource is automatically opened in the **Binary** editor.
 
-#### To open a managed resource
+### To open a managed resource for binary editing
 
 1. In **Solution Explorer**, select the specific resource file you want to edit.
 
@@ -49,15 +49,10 @@ With the **Binary** editor, see the following actions:
    > [!NOTE]
    > You can use the [Image editor](../windows/image-editor-for-icons.md) and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.
 
-![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
-Binary Data for a Dialog Box Displayed in the Binary Editor
-
-Only certain ASCII values are represented in the Binary editor (0x20 through 0x7E). Extended characters are displayed as periods in the ASCII Value section of the Binary editor (the right panel). The "printable" characters are ASCII values 32 through 126.
-
 > [!NOTE]
 > If you want to use the **Binary** editor on a resource already being edited in another editor window, close the other editor window first.
 
-### To edit a resource in the Binary editor
+### To edit a resource
 
 1. Select the byte you want to edit.
 
@@ -78,9 +73,7 @@ You can search for either ASCII strings or hexadecimal bytes. For example, to fi
 
 1. In the **Find What** box, select a previous search string from the drop-down list or type the data you want to find.
 
-1. Select any of the **Find** options.
-
-1. Select **Find Next**.
+1. Select any of the **Find** options and choose **Find Next**.
 
 ### To create a new custom or data resource
 
@@ -106,12 +99,6 @@ Another way to create a custom resource is to import an external file as the cus
 
 > [!NOTE]
 > Creating new custom or data resources requires Win32.
-
-## Managed Resources
-
-You can use the [Image editor](../windows/image-editor-for-icons.md) and the **Binary** editor to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.
-
-For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## Requirements
 

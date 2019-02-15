@@ -1,6 +1,6 @@
 ---
 title: "Accelerator Editor (C++)"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.accelerator.F1", "vc.editors.accelerator"]
 helpviewer_keywords: ["accelerator tables [C++], editing", "tables [C++], accelerator key", "accelerator keys [C++]", "resource editors [C++], Accelerator editor", "keyboard shortcuts [C++], Accelerator editor", "accelerator properties", "properties [C++], accelerator properties", "Type property", "Key property", "Modifier property", "VIRTKEY", "Key property", "ID property", "accelerator tables [C++], editing", "keyboard shortcuts [C++], editing in an accelerator table", "searching, in accelarator tables", "accelerator tables [C++], finding entries", "accelerator tables [C++], adding entries", "New Accelerator command", "accelerator tables [C++], deleting entries", "keyboard shortcuts [C++], deleting entry from accelerator table", "accelerator tables [C++], copying entries", "rc files [C++], moving an accelerator table entry", ".rc files [C++], moving accelerator table entries", "accelerator tables [C++], moving entries", "keyboard shortcuts [C++], property changing", "accelerator tables [C++], changing properties"]
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
@@ -21,9 +21,7 @@ For a list of pre-defined accelerator keys, see [Predefined Accelerator Keys](..
    > [!NOTE]
    > Windows does not allow you to create empty accelerator tables. If you create an accelerator table with no entries, it is deleted automatically when you save the table.
 
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
-
-## Accelerator properties
+## Accelerator Properties
 
 You can set accelerator properties in the [Properties window](/visualstudio/ide/reference/properties-window) at any time. You can also use the **Accelerator** editor to modify the accelerator properties in the accelerator table. Changes made using the **Properties** window or the **Accelerator** editor have the same result: edits are immediately reflected in the accelerator table.
 
@@ -83,14 +81,11 @@ The **Type** property determines whether the shortcut key combination associated
 > [!NOTE]
 > If you want to enter a value into the accelerator table and have the value be treated as ASCII/ANSI, simply click the **Type** for the entry in the table and select ASCII from the drop down list. However, if you use the **Next Key Typed** command (**Edit** menu) to specify the `Key`, you must change the **Type** property from VIRTKEY to ASCII *before* entering the `Key` code.
 
-## Accelerator tables
+## Accelerator Tables
 
 In a C++ project, you can edit an accelerator table directly with in-place editing in the **Accelerator** editor.
 
 The procedures below refer to the use of standard property pages, however, both in-place editing and the property page method have the same result. Changes made using property pages or using in-place editing are immediately reflected in the accelerator table.
-
-> [!NOTE]
-> If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 ### To edit in an accelerator table
 
@@ -174,9 +169,7 @@ You can then scan the list and find the entry.
 
 Win32
 
-## See also
+## See Also
 
-[Resource Editors](../windows/resource-editors.md)
-
-[Editing in an Accelerator Table](../windows/editing-in-an-accelerator-table.md)<br/>
+[Resource Editors](../windows/resource-editors.md)<br/>
 [Predefined Accelerator Keys](../windows/predefined-accelerator-keys.md)<br/>
