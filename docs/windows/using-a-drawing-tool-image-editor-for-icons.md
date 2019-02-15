@@ -1,13 +1,15 @@
 ---
-title: "Using a Drawing Tool"
+title: "How to: Use a Drawing Tool"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.drawing"]
 helpviewer_keywords: ["Image editor [C++], selecting drawing tools", "Image editor [C++], toolbar", "drawing tools", "Image editor [C++], drawing lines", "shapes, drawing", "colors [C++], brush", "brushes, colors", "brushes, creating custom", "images [C++], creating custom brushes", "graphics [C++], custom brushes", "custom brushes"]
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
 ---
-# Using a Drawing Tool
+# How to: Use a Drawing Tool
 
 The **Image** editor's freehand drawing and erasing tools all work in the same way: you select the tool and, if necessary, [select foreground and background colors](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.
+
+## Drawing Tools
 
 When you select the **Eraser** tool, **Brush** tool, or **Airbrush** tool, the option selector displays that tool's options.
 
@@ -16,7 +18,7 @@ When you select the **Eraser** tool, **Brush** tool, or **Airbrush** tool, the o
 
 You can select drawing tools from either the **Image Editor** toolbar or the **Image** menu.
 
-## To select and use a drawing tool from the Image Editor toolbar
+### To select and use a drawing tool from the Image Editor toolbar
 
 1. Select a button on the **Image Editor** toolbar.
 
@@ -47,7 +49,7 @@ You can select drawing tools from either the **Image Editor** toolbar or the **I
 
 1. On the cascading submenu, choose the tool you wish to use.
 
-## Drawing Lines or Closed Figures
+## Lines or Closed Figures
 
 The Image editor tools for drawing lines and closed figures all work in the same way: you place the insertion point at one point and drag to another. For lines, these points are the endpoints. For closed figures, these points are opposite corners of a rectangle bounding the figure.
 
@@ -79,7 +81,7 @@ Lines are drawn in a width determined by the current brush selection, and framed
 
 1. Drag the pointer to the diagonally opposite corner.
 
-## Create a Custom Brush
+## Custom Brushes
 
 A custom brush is a rectangular portion of an image that you pick up and use like one of the **Image** editor's ready-made brushes. All operations you can perform on a selection, you can perform on a custom brush as well.
 

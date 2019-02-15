@@ -1,10 +1,10 @@
 ---
-title: "Menu Command Properties (C++)"
+title: "Menu Commands (C++)"
 ms.date: "02/15/2019"
 helpviewer_keywords: ["menu items, properties", "keyboard shortcuts [C++], menu association", "commands [C++], associating menu commands with accelerator keys", "menu commands [C++], associating with keyboard shortcuts", "status bars [C++], associating menu items", "menus [C++], status bar text", "access keys [C++], checking", "menus [C++], shortcut keys", "keyboard shortcuts [C++], command assignments", "access keys [C++], assigning", "mnemonics [C++], adding to menus", "keyboard shortcuts [C++], uniqueness checking", "mnemonics [C++], uniqueness checking", "Check Mnemonics command"]
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
 ---
-# Menu Command Properties (C++)
+# Menu Commands (C++)
 
 The information below is organized according to the **Menu** properties that appear in the [Properties Window](/visualstudio/ide/reference/properties-window) when you select a menu command. These are listed alphabetically although the **Properties** window also enables you to view these properties by category.
 
@@ -23,7 +23,7 @@ The information below is organized according to the **Menu** properties that app
 |**Right to Left Order**|Allows menu commands to display right to left when the interface is localized to any language that reads right-to-left, such as Hebrew or Arabic.|
 |**Separator**|If **True**, the menu command is a separator. Type: **Bool**. Default: **False**.|
 
-## Associate menu commands
+## Associate Menu Commands
 
 There are often times you want a menu command and a keyboard combination to issue the same program command. Identical commands are issued by using the **Menu** editor to assign the same resource identifier to the menu command and to an entry in your application's accelerator table. You then edit the [Caption](../windows/menu-command-properties.md) of the menu command to show the name of the accelerator key.
 
@@ -37,13 +37,13 @@ There are often times you want a menu command and a keyboard combination to issu
 
    - Type the name of the modifier key (**Ctrl**, **Alt**, or **Shift**) followed by a plus sign (**+**) and the name, letter, or symbol of the additional key.
 
-       For example, to assign **Ctrl**+**O** to the **Open** command on the **File** menu, you modify the menu command's **Caption** so that it looks like the following text:
+   For example, to assign **Ctrl**+**O** to the **Open** command on the **File** menu, you modify the menu command's **Caption** so that it looks like the following text:
 
-        ```
-        &Open...\tCtrl+O
-        ```
+   ```
+   &Open...\tCtrl+O
+   ```
 
-       The menu command in the **Menu** editor is updated to reflect the new caption as you type it.
+   The menu command in the **Menu** editor is updated to reflect the new caption as you type it.
 
 1. [Create the accelerator-table entry](../windows/adding-an-entry-to-an-accelerator-table.md) in the **Accelerator** editor and assign it the same identifier as the menu command. Use a key combination that you think will be easy to remember.
 
@@ -76,5 +76,4 @@ Win32
 ## See Also
 
 [Menu Editor](../windows/menu-editor.md)<br/>
-[Adding Commands to a Menu](../windows/adding-commands-to-a-menu.md)<br/>
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
