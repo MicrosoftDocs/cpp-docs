@@ -10,15 +10,15 @@ The **#error** directive emits a user-specified error message at compile time an
 
 ## Syntax
 
-```
-#errortoken-string
+```c
+#error token-string
 ```
 
 ## Remarks
 
 The error message that this directive emits includes the *token-string* parameter. The *token-string* parameter is not subject to macro expansion. This directive is most useful during preprocessing for notifying the developer of a program inconsistency or the violation of a constraint. The following example demonstrates error processing during preprocessing:
 
-```
+```c
 #if !defined(__cplusplus)
 #error C++ compiler required.
 #endif
