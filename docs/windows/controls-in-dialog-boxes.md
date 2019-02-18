@@ -1,6 +1,6 @@
 ---
 title: "Controls in Dialog Boxes (C++)| Microsoft Docs"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 f1_keywords: ["Custom Control"]
 helpviewer_keywords: ["controls [C++], dialog boxes", "dialog box controls [C++], about dialog box controls", "dialog box controls", "controls [C++], templates", "custom controls [C++], dialog boxes", "custom controls [C++]", "dialog box controls [C++], custom (user) controls", "Dialog Editor [C++], custom controls"]
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
@@ -15,25 +15,11 @@ When you add a control to a dialog box or reposition it, its final placement may
 
 Once you have added a control to the dialog box, you can change properties such as its caption in the [Properties Window](/visualstudio/ide/reference/properties-window). You can select multiple controls and change their properties all at once.
 
-- [Adding, Editing, or Deleting Controls](adding-editing-or-deleting-controls.md)
+- [How To: Add, Edit, or Delete Controls](adding-editing-or-deleting-controls.md)
 
-- [Selecting Controls](../windows/selecting-controls.md)
+- [How To: Arrange Controls](../windows/arrangement-of-controls-on-dialog-boxes.md)
 
-- [Sizing Individual Controls](../windows/sizing-individual-controls.md)
-
-- [Making Controls the Same Width, Height, or Size](../windows/making-controls-the-same-width-height-or-size.md)
-
-- [Setting the Size of the Combo Box and Its Drop-Down List](setting-the-size-of-the-combo-box-and-its-drop-down-list.md)
-
-- [Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md)
-
-- [Setting the Width of a Horizontal Scroll Bar](../windows/setting-the-width-of-a-horizontal-scroll-bar.md)
-
-- [The Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)
-
-- [Defining Mnemonics (Access Keys)](../windows/defining-mnemonics-access-keys.md)
-
-- [Specifying the Location and Size of a Dialog Box](../windows/specifying-the-location-and-size-of-a-dialog-box.md)
+- [How To: Define Control Access and Values](../windows/defining-mnemonics-access-keys.md)
 
 The standard controls available in the **Toolbox** with default events are:
 
@@ -73,7 +59,7 @@ The [Windows Common Controls](../mfc/controls-mfc.md) available in the **Toolbox
 
 For more information, see [Control Classes](../mfc/control-classes.md), [Dialog Box Classes](../mfc/dialog-box-classes.md), and [Scroll-Bar Styles](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles).
 
-## Custom controls
+## Custom Controls
 
 The Dialog editor lets you use existing "custom" or "user" controls in a dialog box template.
 
@@ -95,8 +81,6 @@ For these custom controls, you are limited to:
 - Typing a 32-bit hexadecimal value that sets the control's style.
 
 - Setting the extended style.
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## Requirements
 
