@@ -68,7 +68,7 @@ For **vsprintf**, `vswprintf`, `_vsnprintf` and `_vsnwprintf`, if copying occurs
 > [!IMPORTANT]
 >  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns). If using the secure versions of these functions (either the **_s** or **_p** suffixes), a user-supplied format string could trigger an invalid parameter exception if the user-supplied string contains invalid formatting characters.
 
-## See Also
+## See also
 
 [Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

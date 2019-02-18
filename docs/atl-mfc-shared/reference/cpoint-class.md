@@ -327,11 +327,10 @@ Use the unary operator to negate a point. For example, using the unary operator 
 
 [!code-cpp[NVC_ATLMFC_Utilities#34](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_7.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample MDI](../../visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [POINT Structure](/windows/desktop/api/windef/ns-windef-tagpoint)<br/>
 [CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CSize Class](../../atl-mfc-shared/reference/csize-class.md)
-

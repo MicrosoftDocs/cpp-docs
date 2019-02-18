@@ -33,7 +33,7 @@ The output file that you specify in the project has no effect on the name that t
 
 You can view and edit the project's properties in its property page. See [Setting Visual C++ Project Properties](../ide/working-with-project-properties.md) for information about displaying the property page.
 
-## See Also
+## See also
 
 [Makefile Project Wizard](../ide/makefile-project-wizard.md)<br/>
 [Special Characters in a Makefile](../build/special-characters-in-a-makefile.md)<br/>

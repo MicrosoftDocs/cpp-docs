@@ -51,6 +51,6 @@ You need the following components to complete this walkthrough:
 
 1. In the solution folder, locate the setup.exe program that was built from the deployment project. You can copy this file (and the .msi file) to install the application and its required library files on another computer. Run the setup program on a second computer that doesn't have the Visual C++ libraries.
 
-## See Also
+## See also
 
 [Deployment Examples](deployment-examples.md)<br/>

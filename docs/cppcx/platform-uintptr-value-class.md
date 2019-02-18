@@ -26,6 +26,6 @@ public value struct UintPtr
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

@@ -163,7 +163,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Code map and dependency graphs|||read-only|X|
 |Code map debugging||||X|
 
-## See Also
+## See also
 
 [Install Visual Studio](/visualstudio/install/install-visual-studio)<br/>
 [What's New in Visual Studio](/visualstudio/ide/whats-new-in-visual-studio)<br/>

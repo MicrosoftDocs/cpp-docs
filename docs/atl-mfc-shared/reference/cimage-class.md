@@ -1600,7 +1600,7 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 }
 ```
 
-## See Also
+## See also
 
 [MMXSwarm Sample](../../visual-cpp-samples.md)<br/>
 [SimpleImage Sample](../../visual-cpp-samples.md)<br/>

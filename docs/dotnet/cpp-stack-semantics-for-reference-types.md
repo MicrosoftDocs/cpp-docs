@@ -104,6 +104,6 @@ int main() {
 13
 ```
 
-## See Also
+## See also
 
 [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)

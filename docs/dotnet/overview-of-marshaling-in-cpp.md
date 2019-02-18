@@ -63,7 +63,7 @@ The marshaling library is extensible so that you can add your own marshaling typ
 
 In earlier versions, you could marshal data by using [Platform Invoke](/dotnet/framework/interop/consuming-unmanaged-dll-functions). For more information about `PInvoke`, see [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md).
 
-## See Also
+## See also
 
 [C++ Support Library](../dotnet/cpp-support-library.md)<br/>
 [How to: Extend the Marshaling Library](../dotnet/how-to-extend-the-marshaling-library.md)

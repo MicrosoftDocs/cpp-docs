@@ -10,6 +10,6 @@ If you examine the library header files, you may notice some unusual annotations
 
 For more information about using SAL annotations in Visual Studio, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
-## See Also
+## See also
 
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

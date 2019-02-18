@@ -25,7 +25,7 @@ Use the following tips:
 
 - When designing your application, decide which strings can be localized. If in doubt, assume that any given string will be localized. As such, do not mix strings that can be localized with those that cannot.
 
-## See Also
+## See also
 
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
 [Incrementing and Decrementing Pointers](../text/incrementing-and-decrementing-pointers.md)

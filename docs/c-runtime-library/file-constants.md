@@ -29,7 +29,7 @@ The file constants are as follows:
 | `_O_TRUNC`  | Opens and truncates an existing file to zero length; the file must have write permission. The contents of the file are destroyed. If this flag is given, you cannot specify `_O_RDONLY`.  |
 | `_O_WRONLY`  | Opens file for writing only; if this flag is given, neither `_O_RDONLY` nor `_O_RDWR` can be given.  |
 
-## See Also
+## See also
 
 [_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
 [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>

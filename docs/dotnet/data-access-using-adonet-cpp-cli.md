@@ -700,7 +700,7 @@ For information on security issues involving ADO.NET, see [Securing ADO.NET Appl
 |-------------|-----------------|
 |[ADO.NET](/dotnet/framework/data/adonet/index)|Provides an overview of ADO.NET, a set of classes that expose data access services to the .NET programmer.|
 
-## See Also
+## See also
 
 [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 

@@ -44,6 +44,6 @@ The following table is an alphabetical list of Visual C++ Add New Item templates
 |XML Schema File (.xsd)|Creates a file that is used to define a schema for XML documents.|
 |XSLT File (.xslt)|Creates a file used to transform XML documents.|
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)

@@ -32,6 +32,6 @@ int main() {
 14
 ```
 
-## See Also
+## See also
 
 [Boxing](../windows/boxing-cpp-component-extensions.md)

@@ -35,6 +35,6 @@ The %LIBPATH% environment variable specifies the default path to search for .win
 
 When you use **/ZW**, the compiler automatically links to the DLL version of the C Runtime (CRT). Linking to the static library version is not allowed, and any use of CRT functions that are not allowed in a Universal Windows Platform app will cause a compile-time error.
 
-## See Also
+## See also
 
 [Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)

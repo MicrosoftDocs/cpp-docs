@@ -234,6 +234,6 @@ The first version of the assignment operator copies a handle to a reference type
 
 The assignment operation automatically persists the context of the current Agile object.
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

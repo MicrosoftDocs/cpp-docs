@@ -19,6 +19,6 @@ Furthermore, associative containers such as [set](../dotnet/set-stl-clr.md) and 
 
 Like reference types, value types and handles to reference types that are to be inserted into an associative container must have a comparison operator such as `operator<` defined. The requirements for a public copy constructor, public assignment operator, and a public destructor do not exist for value types or handles to reference types.
 
-## See Also
+## See also
 
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

@@ -199,6 +199,6 @@ const GUID& Platform::Guid::operator();
 
 A [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931).
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

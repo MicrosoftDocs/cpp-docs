@@ -111,6 +111,6 @@ Platform::String^ ToString();
 
 A name of the type as specified in its metadata.
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

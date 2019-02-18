@@ -223,6 +223,6 @@ If you want to consume native APIs in a static library from a UWP app, and you h
 
 9. Test the component by adding a reference to it from a UWP app project, and add some code to call the public APIs you created.
 
-## See Also
+## See also
 
 [Porting to the Universal Windows Platform](../porting/porting-to-the-universal-windows-platform-cpp.md)

@@ -163,7 +163,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
 [Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>

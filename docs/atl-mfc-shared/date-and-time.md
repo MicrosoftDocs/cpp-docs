@@ -22,8 +22,7 @@ MFC supports several different ways of working with dates and times. These inclu
 
 - [Date and Time: Database Support](../atl-mfc-shared/date-and-time-database-support.md)
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

@@ -126,6 +126,6 @@ int main() {
 after calling struct S
 ```
 
-## See Also
+## See also
 
 [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)

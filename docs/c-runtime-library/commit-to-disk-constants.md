@@ -40,7 +40,7 @@ In the resulting executable file, calls to `fflush` write the contents of the bu
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
 [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>

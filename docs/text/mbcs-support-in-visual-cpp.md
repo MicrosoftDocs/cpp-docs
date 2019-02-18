@@ -37,7 +37,7 @@ To change the default locale at source code compile time, use [#pragma setlocale
 
 The Visual C++ Windows-based tools, such as Spy++ and the resource editing tools, fully support IME strings.
 
-## See Also
+## See also
 
 [Support for Multibyte Character Sets (MBCSs)](../text/support-for-multibyte-character-sets-mbcss.md)<br/>
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)

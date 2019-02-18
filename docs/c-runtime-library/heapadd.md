@@ -50,7 +50,7 @@ Beginning with Visual C++ version 4.0, the underlying heap structure was moved t
 
 For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Memory Allocation](../c-runtime-library/memory-allocation.md)<br/>
 [free](../c-runtime-library/reference/free.md)<br/>

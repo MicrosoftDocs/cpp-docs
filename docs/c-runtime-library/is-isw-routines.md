@@ -319,7 +319,7 @@ int main( void )
 7f            AS  C                              .
 ```
 
-## See Also
+## See also
 
 [Character Classification](../c-runtime-library/character-classification.md)<br/>
 [Locale](../c-runtime-library/locale.md)<br/>

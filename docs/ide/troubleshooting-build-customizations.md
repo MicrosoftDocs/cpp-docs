@@ -22,6 +22,6 @@ If your custom build steps or events are not behaving as you expect, there are s
 
 - Run custom build steps and build events individually to check their behavior.
 
-## See Also
+## See also
 
 [Understanding Custom Build Steps and Build Events](../ide/understanding-custom-build-steps-and-build-events.md)

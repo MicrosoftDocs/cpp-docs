@@ -623,7 +623,7 @@ The `CArchive` object that you want to update.
 
 The updated `CArchive` object.
 
-## See Also
+## See also
 
 [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
 [_ftime_s, _ftime32_s, _ftime64_s](../../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)<br/>

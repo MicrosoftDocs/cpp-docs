@@ -87,10 +87,9 @@ wcout << (const wchar_t*) cs << endl;
 
 Without the cast, `cs` is treated as a `void*` and `wcout` prints the address of the object. This behavior is caused by subtle interactions between template argument deduction and overload resolution which are in themselves correct and conformant with the C++ standard.
 
-## See Also
+## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 [Template Specialization](../cpp/template-specialization-cpp.md)<br/>
 [How to: Convert Between Various String Types](../text/how-to-convert-between-various-string-types.md)
-

@@ -11,6 +11,6 @@ The **_crtDbgFlag** flag consists of five bit fields that control how memory all
 
 For more information about using this flag in conjunction with other debug functions, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details).
 
-## See Also
+## See also
 
 [Control Flags](../c-runtime-library/control-flags.md)

@@ -56,6 +56,6 @@ By default, all precompiled code is specified in the files stdafx.h and stdafx.c
 
 For more information, see [Porting from UNIX to Win32](../porting/porting-from-unix-to-win32.md).
 
-## See Also
+## See also
 
 [Building C/C++ Programs](../build/building-c-cpp-programs.md)
