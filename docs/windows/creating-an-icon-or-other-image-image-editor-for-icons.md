@@ -1,11 +1,11 @@
 ---
-title: "Creating an Icon or Other Image"
-ms.date: "11/04/2016"
+title: "How To: Create an Icon or Other Image"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.bitmap", "vc.editors.icon", "vc.editors.newimagetype", "vc.editors.customimage", "vc.editors.opendeviceimage", "vc.editors.image.editing", "vc.editors.image.editing"]
 helpviewer_keywords: ["bitmaps [C++]", "images [C++], creating", "resources [C++], creating images", "bitmaps [C++], creating", "graphics [C++], creating", "Image editor [C++], creating images", "cursors [C++], creating", "image resources [C++], display devices", "icons [C++], creating", "cursors [C++], types", "icons [C++]", "Image editor [C++], icons and cursors", "cursors [C++]", "display devices [C++], creating icons for", "cursors [C++], hot spots", "icons [C++], types", "icons [C++], creating", "display devices [C++], creating image", "images [C++], creating for display devices", "icons [C++], inserting", "New <Device> Image Type dialog box [C++]", "Custom Image dialog box [C++]", "Open <Device> Image dialog box [C++]", "New Device Image command", "display devices [C++], adding images", "cursors [C++], adding", "icons, adding", "display devices [C++], copying images", "cursors [C++], copying", "icons, copying", "cursors [C++], deleting", "display devices [C++], deleting device image", "icons, erasing", "icons, deleting", "cursors [C++], undoing changes", "icons, undoing changes", "cursors [C++], screen regions", "inverse colors [C++], device images", "transparent regions, device images", "transparency, device images", "Image editor [C++], device images", "inverse regions, device images", "cursors [C++], transparent regions", "screen colors", "regions, transparent", "icons [C++], transparent regions", "display devices [C++], transparent and screen regions", "transparent regions in devices", "regions, inverse", "colors [C++], Image editor", "device projects [C++], transparent images", "icons [C++], screen regions", "256-color palette", "cursors [C++], color", "colors [C++], icons", "colors [C++], cursors", "icons, color", "colors [C++], icons and cursors", "color palettes, 256-color", "palettes, 256-color", "cursors [C++], hot spots", "hot spots", ".gif files [C++], saving bitmaps as", "jpg files [C++], saving bitmaps as", "jpeg files [C++], saving bitmaps as", ".jpg files [C++], saving bitmaps as", "Image editor [C++], converting image formats", "gif files [C++], saving bitmaps as", "bitmaps [C++], converting formats", ".jpeg files [C++], saving bitmaps as", "graphics [C++], converting formats", "images [C++], converting formats", "images [C++], stand-alone editing", "Image editor [C++], converting image formats", "graphics [C++], converting formats", "images [C++], converting formats"]
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
 ---
-# Creating an Icon or Other Image
+# How To: Create an Icon or Other Image
 
 You can create a new image (bitmap, icon, cursor, or toolbar), then use the Image editor to customize its appearance. You can also create a new bitmap patterned after a [template](../windows/how-to-use-resource-templates.md).
 
@@ -44,13 +44,9 @@ When you create a new icon or cursor resource, the **Image** editor first create
 
 When you open the icon or cursor resource in the [Image editor](../windows/image-editor-for-icons.md), the image most closely matching the current display device is opened by default.
 
-#### New &lt;Device&gt; Image Type dialog box
-
 The **New &lt;Device&gt; Image Type** dialog box enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, select **New Image Type** on the **Image** menu. The following properties included are **Target Image Type** and **Custom**.
 
-##### Target Image Type
-
-Lists the available image types. Select the image type you want to open:
+The **Target Image Type** property lists the available image types. Select the image type you want to open:
 
 ||||
 |-|-|-|
@@ -64,9 +60,7 @@ Lists the available image types. Select the image type you want to open:
 > [!NOTE]
 > Any existing images will not be displayed in this list.
 
-##### Custom
-
-Opens the **Custom Image** dialog box in which you can create a new image with a custom size and number of colors.
+The **Custom** property opens the **Custom Image** dialog box in which you can create a new image with a custom size and number of colors.
 
 The **Custom Image** dialog box enables you to create a new image with a custom size and number of colors. The following properties included are:
 
@@ -75,8 +69,6 @@ The **Custom Image** dialog box enables you to create a new image with a custom 
 |**Width**|Provides a space for you to enter the width of the custom image in pixels (1 - 512, limit of 2048).|
 |**Height**|Provides a space for you to enter the height for the custom image in pixels (1 - 512, limit of 2048).|
 |**Colors**|Provides a space for you to choose the number of colors for the custom image: 2, 16, or 256.|
-
-#### Open &lt;Device&gt; Image dialog box
 
 Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ projects. It lists existing device images in the current resource (images that are part of the current resource). The following property included is:
 
@@ -95,13 +87,13 @@ Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ pr
 
    If a plus sign (**+**) appears next to the image resource type in the **Insert Resource** dialog box, it means that toolbar templates are available. Select the plus sign to expand the list of templates, select a template, and choose **New**.
 
-### Add an image for a different display device
+### To add an image for a different display device
 
 1. On the **Image** menu, select **New Device Image** (or right-click in the **Image Editor** pane and choose **New Device Image** from the shortcut menu).
 
 1. Select the type of image you want to add. You can also select **Custom** to create an icon whose size isn't available in the default list.
 
-### Copy a device image
+### To copy a device image
 
 1. On the **Image** menu, select **Open Device Image** and choose an image from the current images list. For example, choose the 32 × 32, 16-color version of an icon.
 
@@ -111,14 +103,14 @@ Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ pr
 
 1. Paste the icon image (**Ctrl**+**V**) from one **Image Editor** window to the other. If you're pasting a larger size into a smaller size, you can use the icon handles to resize the image.
 
-### Delete a device image
+### To delete a device image
 
 While the icon image is displayed in the **Image** editor, select **Delete Device Image** from the **Image** menu. When you delete the last icon image in the resource, the resource is also deleted.
 
    > [!NOTE]
    > When you press the **Del** key, the images and colors you have drawn on an icon are deleted but the icon remains; you can now redesign it. If you press **Del** by mistake, you can press **Ctrl**+**Z** to undo the action.
 
-### Create transparent or inverse regions in device images
+### To create transparent or inverse regions in device images
 
 In the [Image editor](../windows/image-editor-for-icons.md), the initial icon or cursor image has a transparent attribute. Although icon and cursor images are rectangular, many don't appear so because parts of the image are transparent; the underlying image on the screen shows through the icon or cursor. When you drag an icon, parts of the image may appear in an inverted color. You create this effect by setting the screen color and inverse color in the [Colors window](../windows/colors-window-image-editor-for-icons.md).
 
@@ -255,13 +247,11 @@ You can open GIF or JPEG images in the **Image** editor and save them as bitmaps
    > [!NOTE]
    > Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources. For more information, see [Creating Resource Files](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) in the *.NET Framework Developer's Guide*.
 
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
-
 ## Requirements
 
 None
 
-## See also
+## See Also
 
 [Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
 [Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>

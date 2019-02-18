@@ -1,11 +1,11 @@
 ---
-title: "Creating a Dialog Box (C++)"
-ms.date: "11/04/2016"
+title: "How To: Create a Dialog Box (C++)"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.dialog"]
 helpviewer_keywords: ["dialog boxes [C++], creating", "Dialog Editor [C++], creating dialog boxes", "modal dialog boxes [C++], logon screens", "logon screens", "Test Dialog command", "testing, dialog boxes", "dialog boxes [C++], testing", "dialog boxes [C++], size", "dialog boxes [C++], positioning"]
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
 ---
-# Creating a Dialog Box (C++)
+# How To: Create a Dialog Box (C++)
 
 The location and size of a C++ dialog box, and the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.
 
@@ -23,8 +23,6 @@ When you're designing a dialog box, you can also simulate and test its run-time 
    > Connections to dialog box code made by using wizards are not included in the simulation.
 
 When you test a dialog box, it typically displays at a location that's relative to the main program window. If you've set the dialog box's **Absolute Align** property to **True**, the dialog box displays at a position that's relative to the upper-left corner of the screen.
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## To create a new dialog box
 
@@ -66,7 +64,7 @@ There are three properties that you can set in the [Properties Window](/visualst
 
 1. When the **Dialog** editor is the active window, on the menu bar, choose **Format** > **Test Dialog**.
 
-1. To end the simulation, press **Esc**, or just choose the **Close** button in the dialog box you're testing.
+1. To end the simulation, press **Esc** or select the **Close** button in the dialog box you're testing.
 
 ## Requirements
 
