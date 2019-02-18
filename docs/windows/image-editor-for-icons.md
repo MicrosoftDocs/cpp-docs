@@ -1,11 +1,11 @@
 ---
-title: "Image Editor for Icons"
-ms.date: "10/17/2018"
+title: "Image Editor for Icons (C++)"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1", "vc.editors.bitmap", "vc.editors.dialog.GridSettings", "vc.editors.gridsettings", "vc.editors.bitmap", "vc.editors.icon", "vc.editors.texttool", "vc.editors.bitmap", "vc.editors.icon"]
 helpviewer_keywords: ["editors, images", "resource editors [C++], graphics", "Image editor [C++]", "resource editors [C++], Image editor", "Image menu", "Grid Settings dialog box [C++]", "Graphics toolbar", "Image editor [C++], toolbar", "Image editor [C++], Option selector", "Properties window", "Option selector, Image editor", "toolbars [C++], showing", "toolbars [C++], hiding", "text, adding to an image", "Text Tool dialog box [C++]", "Text Tool Font dialog box [C++]", "fonts, changing on an image", "text, on images", "graphics editor [C++]", "Image editor [C++], panes", "Image editor [C++], magnification", "grids, pixel", "pixel grid, Image editor", "Image editor [C++], pixel grid", "Image editor [C++], grid settings", "grid settings, Image editor"]
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 ---
-# Image Editor for Icons
+# Image Editor for Icons (C++)
 
 When you click on an image file (such as .ico, .bmp, .png) in Solution Explorer, the image opens in the Image Editor in the same way that code files open in the Code Editor. When an Image Editor tab is active, you see toolbars with many tools for creating and editing images. Along with bitmaps, icons, and cursors, you can edit images in GIF or JPEG format using commands on the **Image** menu and tools on the **Image Editor** toolbar.
 
@@ -190,13 +190,11 @@ You can download at no cost the **Visual Studio Image Library** that contains ma
 
 You can use the **Image** editor and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors don't support editing embedded resources.
 
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
-
 ## Requirements
 
 None
 
-## See also
+## See Also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 [Icons](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)

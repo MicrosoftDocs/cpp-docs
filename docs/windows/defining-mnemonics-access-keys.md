@@ -1,13 +1,11 @@
 ---
 title: "Defining Control Access and Values"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.dialog.combo"]
 helpviewer_keywords: ["access keys [C++], adding", "keyboard shortcuts [C++], controls", "dialog box controls [C++], mnemonics", "access keys [C++], checking", "mnemonics [C++], checking for duplicate", "mnemonics", "mnemonics [C++], dialog box controls", "keyboard shortcuts [C++], uniqueness checking", "Check Mnemonics command", "controls [C++], access keys", "access keys [C++]", "combo boxes [C++], Data property", "controls [C++], testing values in combo boxes", "combo boxes [C++], adding values", "combo boxes [C++], previewing values", "Data property", "combo boxes [C++], testing values"]
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
 ---
 # Defining Control Access and Values
-
-For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## Change the tab order of controls
 
@@ -24,11 +22,7 @@ Even controls that don't have the **Tabstop** property set to **True** need to b
 
 ### To view the current tab order for all controls in a dialog box
 
-On the **Format** menu, select **Tab Order**.
-
-\- or -
-
-- Press **Ctrl** + **D**.
+Go to the **Format** menu and select **Tab Order**, or press **Ctrl** + **D**.
 
 ### To change the tab order for all controls in a dialog box
 
@@ -36,7 +30,7 @@ On the **Format** menu, select **Tab Order**.
 
    A number in the upper-left corner of each control shows its place in the current tab order.
 
-1. Set the tab order by clicking each control in the order you want the **Tab** key to follow.
+1. Set the tab order by selecting each control in the order you want the **Tab** key to follow.
 
 1. Press **Enter** to exit **Tab Order** mode.
 
@@ -66,9 +60,9 @@ Normally, keyboard users move the input focus from one control to another in a d
 
 1. Select the control on the dialog box.
 
-2. In the [Properties Window](/visualstudio/ide/reference/properties-window), in the **Caption** property, type a new name for the control, typing an ampersand (`&`) in front of the letter you want as the access key for that control. For example, `&Radio1`.
+1. In the [Properties Window](/visualstudio/ide/reference/properties-window), in the **Caption** property, type a new name for the control, typing an ampersand (`&`) in front of the letter you want as the access key for that control. For example, `&Radio1`.
 
-3. Press **Enter**.
+1. Press **Enter**.
 
    An underline appears in the displayed caption to indicate the access key, for example, **R**adio1.
 
@@ -76,17 +70,14 @@ Normally, keyboard users move the input focus from one control to another in a d
 
 1. Make a caption for the control by using a **Static Text** control in the [Toolbox](/visualstudio/ide/reference/toolbox).
 
-2. In the static text caption, type an ampersand (`&`) in front of the letter you want as the access key.
+1. In the static text caption, type an ampersand (`&`) in front of the letter you want as the access key.
 
-3. Make sure the static text control immediately precedes the control it labels in the tab order.
+1. Make sure the static text control immediately precedes the control it labels in the tab order.
 
-All the access keys within a dialog box should be unique.
+> [!NOTE]
+> All the access keys within a dialog box should be unique. To check for duplicate access keys, go to the **Format** menu and select **Check Mnemonics**.
 
-### To check for duplicate access keys
-
-1. On the **Format** menu, click **Check Mnemonics**.
-
-## Add values to a combo box control
+## Combo Box Values
 
 You can add values to a combo box control as long as you have the **Dialog** editor open.
 
@@ -95,7 +86,7 @@ You can add values to a combo box control as long as you have the **Dialog** edi
 
 ### To enter values into a combo box control
 
-1. Select the combo box control by clicking on it.
+1. Choose the combo box control by selecting it.
 
 1. In the [Properties Window](/visualstudio/ide/reference/properties-window), scroll down to the **Data** property.
 
@@ -105,7 +96,7 @@ You can add values to a combo box control as long as you have the **Dialog** edi
 1. Select the value area for the **Data** property and type in your data values, separated by semicolons.
 
    > [!NOTE]
-   > Do not put spaces between values because spaces interfere with alphabetizing in the drop-down list.
+   > Don't put spaces between values because spaces interfere with alphabetizing in the drop-down list.
 
 1. Press **Enter** when you are finished adding values.
 
@@ -122,11 +113,45 @@ After entering values in the **Data** property, select the **Test** button on th
 
    Press **Esc** to return to the **Dialog box** editor.
 
+   You can now modify your code to specify which radio button should appear selected. For example, `m_radioBox1 = 0;` selects the first radio button in the group.
+   You can now modify your code to specify which radio button should appear selected. For example, `m_radioBox1 = 0;` selects the first radio button in the group.
+
+## Radio Button Values
+
+When you add radio buttons to a dialog box, treat them as a group by setting a **Group** property in the **Properties** window for the first button in the group. A control ID for that radio button then appears in the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md), allowing you to add a member variable for the group of radio buttons.
+
+You can have more than one group of radio buttons on a dialog box. Add each group using the following procedure.
+
+### To add a group of radio buttons to a dialog box
+
+1. Select the radio button control in the [Toolbox Window](/visualstudio/ide/reference/toolbox) and choose the location in the dialog box where to place the control.
+
+1. Repeat the above step to add as many radio buttons as you need. Make sure the radio buttons in the group are consecutive in the tab order.
+
+1. In the [Properties Window](/visualstudio/ide/reference/properties-window), set the **Group** property of the *first* radio button in the tab order to **True**.
+
+   Changing the **Group** property to **True** adds the WS_GROUP style to the button's entry in the dialog object of the resource script and prevents the user can from selecting more than one radio button at a time in the button group (if the user selects one radio button, the others in the group are cleared).
+
+   > [!NOTE]
+   > Only the first radio button in the group should have the **Group** property set to **True**. If you have additional controls that are not part of the button group, set the **Group** property of the first control *that is outside the group* to **True** as well. You can quickly identify the first control outside of the group by using **Ctrl**+**D** to view the tab order.
+
+### To add a member variable for the radio button group
+
+1. Right-click the first radio button control in the tab order (the dominant control and the one with the **Group** property set to **True**) and choose **Add Variable** from the shortcut menu.
+
+1. In the [Add Member Variable wizard](../ide/add-member-variable-wizard.md), select the **Control variable** check box, then select the **Value** radio button.
+
+1. In the **Variable name** box, type a name for the new member variable.
+
+1. In the **Variable type** list box, select **int** or type *int*.
+
+   You can now modify your code to specify which radio button should appear selected. For example, `m_radioBox1 = 0;` selects the first radio button in the group.
+
 ## Requirements
 
 Win32
 
-## See also
+## See Also
 
 [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
 [Controls](../mfc/controls-mfc.md)
