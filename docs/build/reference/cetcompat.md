@@ -1,6 +1,6 @@
 ---
 title: "/CETCOMPAT (Control-flow Enforcement Technology compatible)"
-ms.date: "02/01/2019"
+ms.date: "02/19/2019"
 f1_keywords: ["/CETCOMPAT"]
 helpviewer_keywords: ["/CETCOMPAT linker option", "/CETCOMPAT"]
 ---
