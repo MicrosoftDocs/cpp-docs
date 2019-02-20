@@ -7,7 +7,7 @@ ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
 ---
 # binder2nd Class
 
-A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value.
+A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

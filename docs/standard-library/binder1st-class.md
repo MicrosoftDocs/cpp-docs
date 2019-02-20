@@ -7,7 +7,7 @@ ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
 ---
 # binder1st Class
 
-A template class providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value.
+A template class providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

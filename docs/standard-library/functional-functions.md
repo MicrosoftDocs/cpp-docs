@@ -9,12 +9,23 @@ ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
 
 ||||
 |-|-|-|
-|[bind](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|
-|[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|
-|[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|
-|[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[not1](#not1)|
-|[not2](#not2)|[not_fn](#not_fn)|[ptr_fun](#ptr_fun)|
-|[ref](#ref)|[swap](#swap)|
+| [bind](#bind) | [bit_and](#bit_and) | [bit_not](#bit_not) |
+| [bit_or](#bit_or) | [bit_xor](#bit_xor) | [cref](#cref) |
+| [mem_fn](#mem_fn) | [not_fn](#not_fn) | [ref](#ref) |
+| [swap](#swap) | | |
+
+The following functions are deprecated in C++11 and removed in C++17:
+
+||||
+|-|-|-|
+|[bind1st](#bind1st)|[bind2nd](#bind2nd)|[mem_fun](#mem_fun)|
+|[mem_fun_ref](#mem_fun_ref)|[ptr_fun](#ptr_fun)||
+
+The following functions are deprecated in C++17:
+
+|||
+|-|-|
+|[not1](#not1)|[not2](#not2)|
 
 ## <a name="bind"></a>  bind
 
@@ -119,7 +130,7 @@ int main()
 
 ## <a name="bind1st"></a>  bind1st
 
-A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.
+A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Operation, class Type>
@@ -213,7 +224,7 @@ The number of elements in v1 less than 10 is: 2.
 
 ## <a name="bind2nd"></a>  bind2nd
 
-A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value.
+A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Operation, class Type>
@@ -348,7 +359,7 @@ The `bit_and` functor is restricted to integral types for the basic data types, 
 
 ## <a name="bit_not"></a>  bit_not
 
-A predefined function object that performs the bitwise complement (NOT) operation (unary `operator~`) on its argument.
+A predefined function object that performs the bitwise complement (NOT) operation (unary `operator~`) on its argument. Added in C++14.
 
 ```cpp
 template <class Type = void>
@@ -585,7 +596,7 @@ int main()
 
 ## <a name="mem_fun"></a>  mem_fun
 
-Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments.
+Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Result, class Type>
@@ -672,7 +683,7 @@ int main( )
 
 ## <a name="mem_fun_ref"></a>  mem_fun_ref
 
-Helper template functions used to construct function object adaptors for member functions when initialized by using reference arguments.
+Helper template functions used to construct function object adaptors for member functions when initialized by using reference arguments. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Result, class Type>
@@ -925,11 +936,11 @@ Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
 
 ## <a name="not_fn"></a> not_fn
 
-Intended as a generic replacement for negation function wrappers `std::not1` and `std::not2`, this function template creates a forwarding call wrapper that returns the logical negation of the result of its contained callable object. It preserves the const qualification and value category behavior of the wrapped function object. This template function is new in C++17, and replaces the deprecated `std::not1`, `std::not2`, `std::unary_negate` and `std::binary_negate`.
+The `not_fn` function template takes a callable object and returns a callable object. When the returned callable object is later invoked with some arguments, it passes them to the original callable object, and logically negates the result. It preserves the const qualification and value category behavior of the wrapped callable object. `not_fn` is new in C++17, and replaces the deprecated `std::not1`, `std::not2`, `std::unary_negate` and `std::binary_negate`.
 
 ```cpp
 template <class Callable>
-unspecified not_fn(Callable&& func);
+/* unspecified */ not_fn(Callable&& func);
 ```
 
 ### Parameters
@@ -952,16 +963,16 @@ public:
    call_wrapper(call_wrapper const&) = default;
 
    template<class... Args>
-     auto operator()(Args&&...) & -> decltype(!declval<result_of_t<FD&(Args...)>>());
+     auto operator()(Args&&...) & -> decltype(!declval<invoke_result_t<FD&(Args...)>>());
 
    template<class... Args>
-     auto operator()(Args&&...) const& -> decltype(!declval<result_of_t<FD const&(Args...)>>());
+     auto operator()(Args&&...) const& -> decltype(!declval<invoke_result_t<FD const&(Args...)>>());
 
    template<class... Args>
-     auto operator()(Args&&...) && -> decltype(!declval<result_of_t<FD(Args...)>>());
+     auto operator()(Args&&...) && -> decltype(!declval<invoke_result_t<FD(Args...)>>());
 
    template<class... Args>
-     auto operator()(Args&&...) const&& -> decltype(!declval<result_of_t<FD const(Args...)>>());
+     auto operator()(Args&&...) const&& -> decltype(!declval<invoke_result_t<FD const(Args...)>>());
 
 private:
   FD fd;
@@ -973,10 +984,10 @@ The explicit constructor on the callable object *func* requires type `std::decay
 The wrapper exposes call operators distinguished by lvalue or rvalue reference category and const qualification as shown here,
 
 ```cpp
-template<class... Args> auto operator()(Args&&... args) & -> decltype(!declval<result_of_t<FD&(Args...)>>());
-template<class... Args> auto operator()(Args&&... args) const& -> decltype(!declval<result_of_t<FD const&(Args...)>>());
-template<class... Args> auto operator()(Args&&... args) && -> decltype(!declval<result_of_t<FD(Args...)>>());
-template<class... Args> auto operator()(Args&&... args) const&& -> decltype(!declval<result_of_t<FD const(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) & -> decltype(!declval<invoke_result_t<FD&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const& -> decltype(!declval<invoke_result_t<FD const&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) && -> decltype(!declval<invoke_result_t<FD(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const&& -> decltype(!declval<invoke_result_t<FD const(Args...)>>());
 ```
 
 The first two are equivalent to `return !INVOKE(fd, std::forward<Args>(args)...)`, and the second two are equivalent to `return !INVOKE(std::move(fd), std::forward<Args>(args)...)`.
@@ -989,54 +1000,43 @@ The first two are equivalent to `return !INVOKE(fd, std::forward<Args>(args)...)
 #include <vector>
 #include <algorithm>
 #include <functional>
-#include <cstdlib>
 #include <iostream>
 
 int main()
 {
-    using namespace std;
-    vector <int> v1;
+    std::vector<int> v1 = { 99, 6264, 41, 18467, 6334, 26500, 19169 };
+    auto divisible_by_3 = [](int i){ return i % 3 == 0; };
 
-    int i;
-    v1.push_back( 6262 );
-    v1.push_back( 6262 );
-    for ( i = 0 ; i < 5 ; i++ )
+    std::cout << "Vector v1 = ( " ;
+    for (const auto& item : v1)
     {
-        v1.push_back(rand());
+        std::cout << item << " ";
     }
+    std::cout << ")" << std::endl;
 
-    cout << "Original vector v1 = ( " ;
-    for (const auto& item : v1)
-        cout << item << " ";
-    cout << ")" << endl;
+    // Count the number of vector elements divisible by 3.
+    int divisible =
+        std::count_if(v1.begin(), v1.end(), divisible_by_3);
+    std::cout << "Elements divisible by three: "
+        << divisible << std::endl;
 
-    // To sort in ascending order,
-    // use default binary predicate less<>()
-    sort(v1.begin(), v1.end());
-    cout << "Sorted vector v1 = ( " ;
-    for (const auto& item : v1)
-        cout << item << " ";
-    cout << ")" << endl;
-
-    // To sort in descending order,
-    // use the helper function not_fn
-    sort(v1.begin(), v1.end(), not_fn(less<>()));
-    cout << "Resorted vector v1 = ( " ;
-    for (const auto& item : v1)
-        cout << item << " ";
-    cout << ")" << endl;
+    // Count the number of vector elements not divisible by 3.
+    int not_divisible =
+        std::count_if(v1.begin(), v1.end(), std::not_fn(divisible_by_3));
+    std::cout << "Elements not divisible by three: "
+        << not_divisible << std::endl;
 }
 ```
 
 ```Output
-Original vector v1 = ( 6262 6262 41 18467 6334 26500 19169 )
-Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )
-Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
+Vector v1 = ( 99 6264 41 18467 6334 26500 19169 )
+Elements divisible by three: 2
+Elements not divisible by three: 5
 ```
 
 ## <a name="ptr_fun"></a>  ptr_fun
 
-Helper template functions used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions.
+Helper template functions used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Arg, class Result>

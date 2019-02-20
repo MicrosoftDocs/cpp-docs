@@ -7,7 +7,7 @@ ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
 ---
 # binary_negate Class
 
-A template class providing a member function that negates the return value of a specified binary function.
+A template class providing a member function that negates the return value of a specified binary function. Deprecated in C++17.
 
 ## Syntax
 

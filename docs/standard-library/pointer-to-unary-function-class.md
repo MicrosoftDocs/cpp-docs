@@ -7,7 +7,7 @@ ms.assetid: 05600207-b916-4759-beca-6b6facd2d6f6
 ---
 # pointer_to_unary_function Class
 
-Converts a unary function pointer into an adaptable unary function.
+Converts a unary function pointer into an adaptable unary function. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

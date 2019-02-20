@@ -7,7 +7,7 @@ ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
 ---
 # binary_function Struct
 
-An empty base struct that defines types that may be inherited by derived classes that provides a binary function object.
+An empty base struct that defines types that may be inherited by derived classes that provides a binary function object. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

@@ -7,7 +7,7 @@ ms.assetid: 250fac30-9663-4133-9051-6303f76ea259
 ---
 # const_mem_fun1_t Class
 
-An adapter class that allows a **const** member function that takes a single argument to be called as a binary function object when initialized with a pointer argument.
+An adapter class that allows a **const** member function that takes a single argument to be called as a binary function object when initialized with a pointer argument. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

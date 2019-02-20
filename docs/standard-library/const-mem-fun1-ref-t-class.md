@@ -7,7 +7,7 @@ ms.assetid: 8220d373-fa1c-44be-a21d-96d49b3ea6bb
 ---
 # const_mem_fun1_ref_t Class
 
-An adapter class that allows a **const** member function that takes a single argument to be called as a binary function object when initialized with a reference argument.
+An adapter class that allows a **const** member function that takes a single argument to be called as a binary function object when initialized with a reference argument. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

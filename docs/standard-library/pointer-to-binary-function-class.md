@@ -7,7 +7,7 @@ ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
 ---
 # pointer_to_binary_function Class
 
-Converts a binary function pointer into an adaptable binary function.
+Converts a binary function pointer into an adaptable binary function. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

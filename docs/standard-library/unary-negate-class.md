@@ -7,7 +7,7 @@ ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
 ---
 # unary_negate Class
 
-A template class providing a member function that negates the return value of a specified unary function.
+A template class providing a member function that negates the return value of a specified unary function. Deprecated in C++17.
 
 ## Syntax
 

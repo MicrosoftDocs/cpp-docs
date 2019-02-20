@@ -7,7 +7,7 @@ ms.assetid: f169d381-019b-4a0e-a9a3-54da6d948270
 ---
 # const_mem_fun_t Class
 
-An adapter class that allows a const member function that takes no arguments to be called as a unary function object when initialized with a reference argument.
+An adapter class that allows a const member function that takes no arguments to be called as a unary function object when initialized with a reference argument. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 
