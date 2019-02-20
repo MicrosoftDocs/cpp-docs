@@ -27,6 +27,6 @@ y = z = ( f( x ) + 3 );   /* A function-call expression        */
 
 In the last statement, the function-call expression, the value of the expression, which includes any value returned by the function, is increased by 3 and then assigned to both the variables `y` and `z`.
 
-## See Also
+## See also
 
 [Statements](../c-language/statements-c.md)

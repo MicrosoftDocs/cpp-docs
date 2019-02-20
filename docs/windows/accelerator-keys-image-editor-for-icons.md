@@ -1,6 +1,6 @@
 ---
 title: "Accelerator Keys (C++ Image Editor for Icons)"
-ms.date: "11/04/2016"
+ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.bitmap", "vc.editors.icon"]
 helpviewer_keywords: ["accelerator keys", "Image editor [C++], accelerator keys"]
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
@@ -51,8 +51,6 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 |Image.UseSelectionAsBrush|**Ctrl** + **U**|Draws using the current selection as a brush.|
 |Image.ZoomIn|**Ctrl** + **Shift** + **.** (period)<br /><br /> - or -<br /><br /> **Ctrl** + **Up Arrow**|Increases the magnification for the current view.|
 |Image.ZoomOut|**Ctrl** + **,** (comma)<br /><br /> - or -<br /><br /> **Ctrl** + **Down Arrow**|Reduces the magnification of the current view.|
-
-For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## Requirements
 

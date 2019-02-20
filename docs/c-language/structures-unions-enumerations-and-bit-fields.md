@@ -15,6 +15,6 @@ ms.assetid: 53f72553-c716-41fb-8384-89dc6712ee2a
 
 - [The enum Type](../c-language/enum-type.md)
 
-## See Also
+## See also
 
 [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

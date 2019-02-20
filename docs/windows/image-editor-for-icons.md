@@ -1,17 +1,22 @@
 ---
-title: "Image Editor for Icons"
-ms.date: "10/17/2018"
-f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1"]
-helpviewer_keywords: ["editors, images", "resource editors [C++], graphics", "Image editor [C++]", "resource editors [C++], Image editor"]
+title: "Image Editor for Icons (C++)"
+ms.date: "02/15/2019"
+f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1", "vc.editors.bitmap", "vc.editors.dialog.GridSettings", "vc.editors.gridsettings", "vc.editors.bitmap", "vc.editors.icon", "vc.editors.texttool", "vc.editors.bitmap", "vc.editors.icon"]
+helpviewer_keywords: ["editors, images", "resource editors [C++], graphics", "Image editor [C++]", "resource editors [C++], Image editor", "Image menu", "Grid Settings dialog box [C++]", "Graphics toolbar", "Image editor [C++], toolbar", "Image editor [C++], Option selector", "Properties window", "Option selector, Image editor", "toolbars [C++], showing", "toolbars [C++], hiding", "text, adding to an image", "Text Tool dialog box [C++]", "Text Tool Font dialog box [C++]", "fonts, changing on an image", "text, on images", "graphics editor [C++]", "Image editor [C++], panes", "Image editor [C++], magnification", "grids, pixel", "pixel grid, Image editor", "Image editor [C++], pixel grid", "Image editor [C++], grid settings", "grid settings, Image editor"]
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 ---
-# Image Editor for Icons
+# Image Editor for Icons (C++)
 
-When you click on an image file (such as .ico, .bmp, .png) in Solution Explorer, the image opens in the Image Editor in the same way that code files open in the Code Editor. When an Image Editor tab is active, you see toolbars with many tools for creating and editing images. In addition to bitmaps, icons, and cursors, you can edit images in GIF or JPEG format using commands on the **Image** menu and tools on the **Image Editor** toolbar.
+When you click on an image file (such as .ico, .bmp, .png) in Solution Explorer, the image opens in the Image Editor in the same way that code files open in the Code Editor. When an Image Editor tab is active, you see toolbars with many tools for creating and editing images. Along with bitmaps, icons, and cursors, you can edit images in GIF or JPEG format using commands on the **Image** menu and tools on the **Image Editor** toolbar.
+
+Graphical resources are the images you define for your application. You can draw freehand or draw using shapes. You can select parts of an image for editing, flipping or resizing, or you can create a custom brush from a selected part of an image and draw with that brush. You can define image properties, save images in different formats, and convert images from one format to another.
+
+In addition to creating new graphical resources, you can [import existing images](../windows/how-to-import-and-export-resources.md) for editing and then add them to your project. You can also open and edit images that are not part of a project for [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md).
+
+> [!NOTE]
+> Using the **Image Editor**, you can view 32-bit images, but you cannot edit them.
 
 With the Image editor, you can:
-
-- [Edit Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)
 
 - [Work with Color](../windows/working-with-color-image-editor-for-icons.md)
 
@@ -26,15 +31,164 @@ The **Image Editor** window can be adjusted to fit your needs and preferences. Y
 > [!NOTE]
 > Using the **Image Editor**, you can view 32-bit images, but you cannot edit them.
 
+## Image Menu
+
+The **Image** menu, which appears only when the **Image** editor is active, has commands for editing images, managing color palettes, and setting **Image Editor** window options. Also, commands for using device images are available when working with icons and cursors.
+
+|Command|Description|
+|---|---|
+|**Invert Colors**|Inverts your colors. For more information, see [Inverting the Colors in a Selection](../windows/inverting-the-colors-in-a-selection-image-editor-for-icons.md).|
+|**Flip Horizontal**|Flips the image or selection horizontally. For more information, see [Flipping an Image](../windows/flipping-an-image-image-editor-for-icons.md).|
+|**Flip Vertical**|Flips the image or selection vertically. For more information, see [Flipping an Image](../windows/flipping-an-image-image-editor-for-icons.md).|
+|**Rotate 90 Degrees**|Rotates the image or selection 90 degrees. For more information, see [Flipping an Image](../windows/flipping-an-image-image-editor-for-icons.md).|
+|**Show Colors Window**|Opens the [Colors window](../windows/colors-window-image-editor-for-icons.md), in which you can choose the colors to use for your image. For more information, see [Working with Color](../windows/working-with-color-image-editor-for-icons.md).|
+|**Use Selection as Brush**|Enables you to create a custom brush from a portion of an image. Your selection becomes a custom brush that distributes the colors in the selection across the image. Copies of the selection are left along the dragging path. The more slowly you drag, the more copies are made. For more information, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).|
+|**Copy and Outline Selection**|Creates a copy of the current selection and outlines it. If the background color is contained in the current selection, it will be excluded if you've [transparent](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md) selected.
+|**Adjust Colors**|Opens the [Custom Color Selector](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md), which allows you to customize the colors you use for your image. For more information, see [Customizing or Changing Colors](../windows/customizing-or-changing-colors-image-editor-for-icons.md).|
+|**Load Palette**|Opens the [Load Color Palette dialog box](../windows/load-palette-colors-dialog-box-image-editor-for-icons.md), which enables you to load palette colors previously saved to a .pal file.|
+|**Save Palette**|Saves the palette colors to a .pal file.|
+|**Draw Opaque**|When selected, makes the current selection opaque. When cleared, makes the current selection transparent. For more information, see [Choosing an Opaque or Transparent Background](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).|
+|**Toolbar Editor**|Opens the [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md).|
+|**Grid Settings**|Opens the **Grid Settings** dialog box in which you can specify grids for your image.|
+|**New Image Type**|Opens the [New \<Device> Image Type dialog box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md). A single icon resource can contain several images of different sizes and windows can use the appropriate icon size depending on how it's going to be displayed. A new device type doesn't modify the size of the icon, but rather creates a new image within the icon. Only applies to icons and cursors.|
+|**Current Icon/Cursor Image Type**|Opens a submenu that lists the first available cursor or icon images (the first nine). The last command on the submenu, **More...**, opens the [Open \<Device> Image dialog box](../windows/open-device-image-dialog-box-image-editor-for-icons.md).|
+|**Delete Image Type**|Deletes the selected device image.|
+|**Tools**|Launches a submenu that contains all the tools available from the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md).|
+
+The **Grid Settings** dialog box allows you to specify the grid settings for your image and displays grid lines over the edited image. The lines are useful for editing the image, but aren't saved as part of the image itself.
+
+|Property|Description|
+|---|---|
+|**Pixel grid**|When checked, displays a grid around each pixel in the Image editor. The grid appears only at 4× and higher resolutions.|
+|**Tile grid**|When selected, displays a grid around blocks of pixels in the Image editor, specified by the grid spacing values.|
+|**Width**|Specifies the width of each tile block. This property is useful when drawing bitmaps containing multiple images that are arranged at regular intervals.|
+|**Height**|Specifies the height of each tile block. This property is useful when drawing bitmaps containing multiple images that are arranged at regular intervals.|
+
+## Toolbar
+
+The **Image Editor** toolbar contains tools for drawing, painting, entering text, erasing, and manipulating views. It also contains an option selector, with which you can select options for using each tool. For example, you can choose from various brush widths, magnification factors, and line styles.
+
+> [!NOTE]
+> All tools available on the **Image Editor** toolbar are also available from the **Image** menu (under the **Tools** command).
+
+![Image Editor toolbar](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")
+Image Editor Toolbar
+
+To use the **Image Editor** toolbar and **Option** selector, select the tool or option that you want.
+
+> [!TIP]
+> Tool tips appear when you hover your cursor over a toolbar button. These tips can help you identify the function of each button.
+
+With the **Option** selector you can specify the width of a line, brush stroke, and more. The icon on the **Option** selector button changes depending on which tool you've selected.
+
+![Drawing&#45;shape selector on the Image Editor toolbar](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")
+Option Selector on the Image Editor Toolbar
+
+### Use the Text Tool dialog box
+
+Use the **Text Tool** dialog box to add text to a cursor, bitmap, or icon resource.
+
+To access this dialog box, open the [Image Editor](../windows/window-panes-image-editor-for-icons.md). Select **Tools** from the **Image** menu, and then select the **Text Tool** command.
+
+#### Font button
+
+Opens the **Text Tool Font** dialog box, in which you can change the font, style, or size of the cursor font. Changes are applied to the text displayed in the **Text** area.
+
+To access this dialog box, select the **Font** button in the **Text Tool** dialog box. The properties available are:
+
+|Property|Description|
+|---|---|
+|**Font**|Lists the available fonts.|
+|**Font Style**|Lists the available styles for the specified font.|
+|**Size**|Lists the available point sizes for the specified font.|
+|**Sample**|Shows a sample of how text will appear with the specified font settings.|
+|**Script**|Lists the available language scripts for the specified font. When you select a different language script, the character set for that language becomes available for creating multilingual documents.|
+
+To change the font of text on an image:
+
+The following procedure is an example of how to add text to an icon in a Windows application and manipulate the font of your text.
+
+1. Create a C++ Windows Forms Application. For details, see [Creating a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5). An *app.ico* file is added to your project by default.
+
+1. In **Solution Explorer**, double-click the file *app.ico*. The [Image Editor](../windows/image-editor-for-icons.md) will open.
+
+1. From the **Image** menu, select **Tools** and then select **Text Tool**. The **Text Tool** dialog box will appear.
+
+1. In the **Text Tool** dialog box, type *C++* in the empty text area. This text will appear in a resizable box located in the upper left corner of *app.ico*, in the **Image Editor**.
+
+1. In the **Image Editor**, drag the resizable box to the center of app.ico, to improve the readability of your text.
+
+1. In the **Text Tool** dialog box, select the **Font** button. The **Text Tool Font** dialog box will appear.
+
+1. In the **Text Tool Font** dialog box, select **Times New Roman** from the list of available fonts that are listed in the **Font** list box.
+
+1. Select **Bold** from the list of available font styles listed in the **Font style** list box.
+
+1. Select **10** from the list of available point sizes listed in the **Size** list box.
+
+1. Select the **OK** button. The **Text Tool Font** dialog box will close and the new font settings will apply to your text.
+
+1. Select the **Close** button on the **Text Tool** dialog box. The resizable box around your text will disappear from the **Image Editor**.
+
+#### Text area
+
+Displays the text that appears as part of the resource. Initially this area is empty.
+
+> [!NOTE]
+> If **Transparent Background** is set, only the text will be placed into the image. If **Opaque Background** is set, a bounding rectangle, filled with the [background color](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md), will be placed behind the text. For more information, see [Choosing Opaque and Transparent Backgrounds](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).
+
+You can right-click on the **Text Tool** dialog box to access a default shortcut menu that contains a list of standard Windows commands.
+
+### To display or hide the Image Editor toolbar
+
+Since many of the drawing tools are available from the [keyboard](../windows/accelerator-keys-image-editor-for-icons.md), it's sometimes useful to hide the **Image Editor** toolbar.
+
+On the **View** menu, select **Toolbars** then choose **Image Editor**.
+
+   > [!NOTE]
+   > Elements from this toolbar will appear unavailable when an image file from the current project or solution is not open in the **Image Editor**. See [Creating an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), for information on adding image files to your projects.
+
+## Window Panes
+
+The **Image Editor** window typically displays an image in two panes separated by a splitter bar. One view is actual size and the other is enlarged (the default enlargement factor is 6). The views in these two panes are updated automatically: changes you make in one pane are immediately shown in the other. The two panes make it easy for you to work on an enlarged view of your image, in which you can distinguish individual pixels and, at the same time, observe the effect of your work on the actual-size view of the image.
+
+The left pane uses as much space as is needed (up to half of the **Image** window) to display the 1:1 magnification view (the default) of your image. The right pane displays the zoomed image (6:1 magnification by default). You can change the magnification in each pane using the **Magnify** tool on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) or by using the accelerator keys.
+
+You can enlarge the smaller pane of the **Image Editor** window and use the two panes to show different regions of a large image. Select inside the pane to choose it.
+
+You can change the relative sizes of the panes by positioning the pointer on the split bar and moving the split bar to the right or left. The split bar can move all the way to either side if you want to work on only one pane.
+
+If the **Image Editor** pane is enlarged by a factor of 4 or greater, you can display a pixel grid that delimits the individual pixels in the image.
+
+### To change the magnification factor
+
+By default, the **Image** editor displays the view in the left pane at actual size and the view in the right pane at 6 times actual size. The magnification factor (seen in the status bar at the bottom of the workspace) is the ratio between the actual size of the image and the displayed size. The default factor is 6 and the range is from 1 to 10.
+
+1. Select the **Image Editor** pane whose magnification factor you want to change.
+
+1. On the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md), select the arrow to the right of the [Magnify tool](../windows/toolbar-image-editor-for-icons.md) and select the magnification-factor from the submenu: **1X**, **2X**, **6X**, or **8X**.
+
+   > [!NOTE]
+   > To select a magnification factor other than those listed in the **Magnify** tool, use the accelerator keys.
+
+### To display or hide the pixel grid
+
+For all **Image Editor** panes with a magnification factor of 4 or greater, you can display a grid that delimits the individual pixels in the image.
+
+1. On the **Image** menu, select **Grid Settings**.
+
+1. Select the **Pixel Grid** check box to display the grid, or clear the box to hide the grid.
+
+> [!TIP]
+> Tool tips appear when you hover your cursor over a toolbar button. These tips can help you identify the function of each button.
+
 ## Visual Studio Image Library
 
-You can download at no cost the **Visual Studio Image Library** which contains many animations, bitmaps, and icons that you can use in your applications. For more information about how to download the library, see [The Visual Studio Image Library](/visualstudio/designers/the-visual-studio-image-library).
+You can download at no cost the **Visual Studio Image Library** that contains many animations, bitmaps, and icons that you can use in your applications. For more information about how to download the library, see [The Visual Studio Image Library](/visualstudio/designers/the-visual-studio-image-library).
 
 ## Managed Resources
 
-You can use the **Image** editor and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.
-
-For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
+You can use the **Image** editor and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors don't support editing embedded resources.
 
 ## Requirements
 

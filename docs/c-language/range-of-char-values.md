@@ -11,6 +11,6 @@ All signed character values range from -128 to 127. All unsigned character value
 
 The /J compiler option changes the default from **signed** to `unsigned`.
 
-## See Also
+## See also
 
 [Characters](../c-language/characters.md)

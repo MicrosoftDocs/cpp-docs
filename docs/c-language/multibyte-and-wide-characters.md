@@ -18,6 +18,6 @@ The wide-character-string literal `L"hello"` becomes an array of six integers of
 
 The Unicode specification is the specification for wide characters. The run-time library routines for translating between multibyte and wide characters include `mbstowcs`, `mbtowc`, `wcstombs`, and `wctomb`.
 
-## See Also
+## See also
 
 [C Identifiers](../c-language/c-identifiers.md)

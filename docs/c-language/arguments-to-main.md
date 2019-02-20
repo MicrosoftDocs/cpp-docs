@@ -27,6 +27,6 @@ A program invoked with no command-line arguments will receive a value of one for
 
 The parameters **argc** and **argv** are modifiable and retain their last-stored values between program startup and program termination.
 
-## See Also
+## See also
 
 [Environment](../c-language/environment.md)

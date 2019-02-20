@@ -14,6 +14,6 @@ The compiler uses the prototype to compare the types of arguments in subsequent 
 
 A function call passes execution control from the calling function to the called function. The arguments, if any, are passed by value to the called function. Execution of a `return` statement in the called function returns control and possibly a value to the calling function.
 
-## See Also
+## See also
 
 [Functions](../c-language/functions-c.md)

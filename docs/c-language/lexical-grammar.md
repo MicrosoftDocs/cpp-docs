@@ -20,6 +20,6 @@ ms.assetid: cb5847fa-aef3-47f5-8825-97c2bf4a3d87
 
 - [Punctuators](../c-language/punctuators.md)
 
-## See Also
+## See also
 
 [C Language Syntax Summary](../c-language/c-language-syntax-summary.md)

@@ -10,6 +10,6 @@ If the declaration of a file-scope identifier for an object or a function contai
 
 Within one translation unit, each instance of an identifier with internal linkage denotes the same identifier or function. Internally linked identifiers are unique to a translation unit.
 
-## See Also
+## See also
 
 [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)

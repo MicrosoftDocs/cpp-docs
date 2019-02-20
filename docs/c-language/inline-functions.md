@@ -28,7 +28,6 @@ Functions using `__inline` should not be confused with inline assembler code. Se
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [inline, __inline, \__forceinline](../cpp/inline-functions-cpp.md)
-

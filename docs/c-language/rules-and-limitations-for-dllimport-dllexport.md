@@ -87,6 +87,6 @@ ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [DLL Import and Export Functions](../c-language/dll-import-and-export-functions.md)

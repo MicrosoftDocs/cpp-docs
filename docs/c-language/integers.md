@@ -16,6 +16,6 @@ ms.assetid: 4ea91011-5b88-41f8-ab3c-c0bca57c6987
 
 - [Right Shifts](../c-language/right-shifts.md)
 
-## See Also
+## See also
 
 [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
