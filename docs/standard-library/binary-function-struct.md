@@ -1,7 +1,7 @@
 ---
 title: "binary_function Struct"
-ms.date: "11/04/2016"
-f1_keywords: ["functional/std::binary"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::binary_function"]
 helpviewer_keywords: ["binary_function class"]
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
 ---
