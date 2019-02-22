@@ -3,7 +3,7 @@ title: vcpkg-- A C++ package manager for Windows, Linux and MacOS
 description: vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows.
 author: mikeblome
 ms.author: mblome
-ms.date: 05/14/2018
+ms.date: "02/22/2019"
 ms.technology: ["cpp-ide"]
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
 ---
@@ -25,7 +25,7 @@ If you create a vcpkg clone with private libraries in the ports collection, you 
 
 ## Installation
 
-Clone the vcpkg repo from GitHub: https://github.com/Microsoft/vcpkg. You can download to any folder location you prefer.
+Clone the vcpkg repo from GitHub: [https://github.com/Microsoft/vcpkg](https://github.com/Microsoft/vcpkg). You can download to any folder location you prefer.
 
 Run the bootstrapper in the root folder:
 
