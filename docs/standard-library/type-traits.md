@@ -1,6 +1,6 @@
 ---
 title: "&lt;type_traits&gt;"
-ms.date: "11/04/2016"
+ms.date: "02/21/2019"
 f1_keywords: ["<type_traits>"]
 helpviewer_keywords: ["typetrait header", "type_traits"]
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4

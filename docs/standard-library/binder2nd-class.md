@@ -1,7 +1,7 @@
 ---
 title: "binder2nd Class"
-ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::binder2nd"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::binder2nd"]
 helpviewer_keywords: ["binder2nd class"]
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
 ---

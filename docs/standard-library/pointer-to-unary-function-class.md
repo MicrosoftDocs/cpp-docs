@@ -1,7 +1,7 @@
 ---
 title: "pointer_to_unary_function Class"
-ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::pointer_to_unary"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::pointer_to_unary"]
 helpviewer_keywords: ["pointer_to_unary_function function", "pointer_to_unary_function class"]
 ms.assetid: 05600207-b916-4759-beca-6b6facd2d6f6
 ---

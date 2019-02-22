@@ -1,13 +1,13 @@
 ---
 title: "unary_negate Class"
-ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::unary_negate"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::unary_negate"]
 helpviewer_keywords: ["unary_negate class"]
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
 ---
 # unary_negate Class
 
-A template class providing a member function that negates the return value of a specified unary function. Deprecated in C++17.
+A template class providing a member function that negates the return value of a specified unary function. Deprecated in C++17 in favor of [not_fn](functional-functions.md#not_fn).
 
 ## Syntax
 

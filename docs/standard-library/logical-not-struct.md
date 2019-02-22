@@ -1,7 +1,7 @@
 ---
 title: "logical_not Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::logical_not"]
+f1_keywords: ["functional/std::logical_not"]
 helpviewer_keywords: ["logical_not class", "logical_not struct"]
 ms.assetid: 892db678-31da-4540-974b-17b05efc0849
 ---

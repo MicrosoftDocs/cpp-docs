@@ -1,6 +1,6 @@
 ---
 title: "result_of Class"
-ms.date: "11/04/2016"
+ms.date: "02/21/2019"
 f1_keywords: ["type_traits/std::result_of", "type_traits/std::result_of_t", "type_traits/std::result_of::type"]
 helpviewer_keywords: ["std::result_of", "std::result_of_t", "std::result_of::type"]
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be

@@ -1,7 +1,7 @@
 ---
 title: "mem_fun1_ref_t Class"
-ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::mem_fun1_ref_t"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::mem_fun1_ref_t"]
 helpviewer_keywords: ["mem_fun1_ref_t class"]
 ms.assetid: 7d6742f6-19ba-4523-b3c8-0e5b8f11464f
 ---

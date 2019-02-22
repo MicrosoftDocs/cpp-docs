@@ -1,7 +1,7 @@
 ---
 title: "const_mem_fun1_ref_t Class"
-ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::const_mem_fun1_ref_t"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::const_mem_fun1_ref_t"]
 helpviewer_keywords: ["const_mem_fun1_ref_t class"]
 ms.assetid: 8220d373-fa1c-44be-a21d-96d49b3ea6bb
 ---

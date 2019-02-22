@@ -1,7 +1,7 @@
 ---
 title: "&lt;functional&gt; functions"
-ms.date: "01/17/2019"
-f1_keywords: ["functional/std::bind", "xfunctional/std::bind1st", "xfunctional/std::bind2nd", "xfunctional/std::bit_and", "xfunctional/std::bit_not", "xfunctional/std::bit_or", "xfunctional/std::bit_xor", "functional/std::cref", "type_traits/std::cref", "xfunctional/std::mem_fn", "xfunctional/std::mem_fun_ref", "xfunctional/std::not1", "xfunctional/std::not2", "functional/std::not_fn", "xfunctional/std::ptr_fun", "functional/std::ref", "functional/std::swap"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::bind", "functional/std::bind1st", "functional/std::bind2nd", "functional/std::bit_and", "functional/std::bit_not", "functional/std::bit_or", "functional/std::bit_xor", "functional/std::cref", "type_traits/std::cref", "functional/std::mem_fn", "functional/std::mem_fun_ref", "functional/std::not1", "functional/std::not2", "functional/std::not_fn", "functional/std::ptr_fun", "functional/std::ref", "functional/std::swap"]
 helpviewer_keywords: ["std::bind [C++]", "std::bind1st", "std::bind2nd", "std::bit_and [C++]", "std::bit_not [C++]", "std::bit_or [C++]", "std::bit_xor [C++]", "std::cref [C++]"]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
 ---
@@ -531,69 +531,6 @@ cref(i) = 1
 cref(neg)(i) = -1
 ```
 
-## <a name="mem_fn"></a> mem_fn
-
-Generates a simple call wrapper.
-
-```cpp
-template <class Ret, class Ty>
-unspecified mem_fn(Ret Ty::*pm);
-```
-
-### Parameters
-
-*Ret*<br/>
-The return type of the wrapped function.
-
-*Ty*<br/>
-The type of the member function pointer.
-
-### Remarks
-
-The template function returns a simple call wrapper `cw`, with a weak result type, such that the expression `cw(t, a2, ..., aN)` is equivalent to `INVOKE(pm, t, a2, ..., aN)`. It does not throw any exceptions.
-
-The returned call wrapper is derived from `std::unary_function<cv Ty*, Ret>` (hence defining the nested type `result_type` as a synonym for *Ret* and the nested type `argument_type` as a synonym for `cv Ty*`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes no arguments.
-
-The returned call wrapper is derived from `std::binary_function<cv Ty*, T2, Ret>` (hence defining the nested type `result_type` as a synonym for *Ret*, the nested type `first argument_type` as a synonym for `cv Ty*`, and the nested type `second argument_type` as a synonym for `T2`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes one argument, of type `T2`.
-
-### Example
-
-```cpp
-// std__functional__mem_fn.cpp
-// compile with: /EHsc
-#include <functional>
-#include <iostream>
-
-class Funs
-    {
-public:
-    void square(double x)
-        {
-        std::cout << x << "^2 == " << x * x << std::endl;
-        }
-
-    void product(double x, double y)
-        {
-        std::cout << x << "*" << y << " == " << x * y << std::endl;
-        }
-    };
-
-int main()
-    {
-    Funs funs;
-
-    std::mem_fn(&Funs::square)(funs, 3.0);
-    std::mem_fn(&Funs::product)(funs, 3.0, 2.0);
-
-    return (0);
-    }
-```
-
-```Output
-3^2 == 9
-3*2 == 6
-```
-
 ## <a name="invoke"></a> invoke
 
 Invokes any callable object with the given arguments. Added in C++17.
@@ -701,9 +638,72 @@ int main()
 }
 ```
 
+## <a name="mem_fn"></a> mem_fn
+
+Generates a simple call wrapper.
+
+```cpp
+template <class Ret, class Ty>
+unspecified mem_fn(Ret Ty::*pm);
+```
+
+### Parameters
+
+*Ret*<br/>
+The return type of the wrapped function.
+
+*Ty*<br/>
+The type of the member function pointer.
+
+### Remarks
+
+The template function returns a simple call wrapper `cw`, with a weak result type, such that the expression `cw(t, a2, ..., aN)` is equivalent to `INVOKE(pm, t, a2, ..., aN)`. It does not throw any exceptions.
+
+The returned call wrapper is derived from `std::unary_function<cv Ty*, Ret>` (hence defining the nested type `result_type` as a synonym for *Ret* and the nested type `argument_type` as a synonym for `cv Ty*`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes no arguments.
+
+The returned call wrapper is derived from `std::binary_function<cv Ty*, T2, Ret>` (hence defining the nested type `result_type` as a synonym for *Ret*, the nested type `first argument_type` as a synonym for `cv Ty*`, and the nested type `second argument_type` as a synonym for `T2`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes one argument, of type `T2`.
+
+### Example
+
+```cpp
+// std__functional__mem_fn.cpp
+// compile with: /EHsc
+#include <functional>
+#include <iostream>
+
+class Funs
+    {
+public:
+    void square(double x)
+        {
+        std::cout << x << "^2 == " << x * x << std::endl;
+        }
+
+    void product(double x, double y)
+        {
+        std::cout << x << "*" << y << " == " << x * y << std::endl;
+        }
+    };
+
+int main()
+    {
+    Funs funs;
+
+    std::mem_fn(&Funs::square)(funs, 3.0);
+    std::mem_fn(&Funs::product)(funs, 3.0, 2.0);
+
+    return (0);
+    }
+```
+
+```Output
+3^2 == 9
+3*2 == 6
+```
+
 ## <a name="mem_fun"></a> mem_fun
 
-Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments. Deprecated in C++11, removed in C++17.
+Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments. Deprecated in C++11 in favor of [mem_fn](#mem_fn) and [bind](#bind), and removed in C++17.
 
 ```cpp
 template <class Result, class Type>
