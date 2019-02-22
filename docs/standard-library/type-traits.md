@@ -32,14 +32,18 @@ template <class T>
 using add_const_t = typename add_const<T>::type;
 ```
 
-|||||
-|-|-|-|-|
-| add_const_t | add_cv_t | add_lvalue_reference_t | add_pointer_t |
-| add_rvalue_reference_t | add_volatile_t | aligned_storage_t | aligned_union_t |
-| common_type_t | conditional_t | decay_t | enable_if_t |
-| invoke_result_t | make_signed_t | make_unsigned_t | remove_all_extents_t |
-| remove_const_t | remove_cv_t | remove_extent_t | remove_pointer_t |
-| remove_reference_t | remove_volatile_t | result_of_t | underlying_type_t |
+These are the provided aliases for the `type` members:
+
+||||
+|-|-|-|
+| add_const_t | add_cv_t | add_lvalue_reference_t |
+| add_pointer_t | add_rvalue_reference_t | add_volatile_t |
+| aligned_storage_t | aligned_union_t | common_type_t |
+| conditional_t | decay_t | enable_if_t |
+| invoke_result_t | make_signed_t | make_unsigned_t |
+| remove_all_extents_t | remove_const_t | remove_cv_t |
+| remove_extent_t | remove_pointer_t | remove_reference_t |
+| remove_volatile_t | result_of_t | underlying_type_t |
 
 ### Classes
 
