@@ -1,6 +1,6 @@
 ---
 title: "STL/CLR Library Reference"
-ms.date: 09/18/2018"
+ms.date: 09/18/2018
 ms.topic: "reference"
 helpviewer_keywords: ["STL/CLR Library", "STL/CLR, redistribution", "cliext directory"]
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
