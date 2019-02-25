@@ -25,7 +25,7 @@ ksh:
 DOS:  
 `set OMP_SCHEDULE="dynamic"`
 
-## 4.1 OMP_SCHEDULE
+## <a name="41-omp_schedule"></a>4.1 OMP_SCHEDULE
 
 `OMP_SCHEDULE` applies only to `for` and `parallel for` directives that have the schedule type `runtime`. The schedule type and chunk size for all such loops can be set at run time. Set this environment variable to any recognized schedule type and to an optional *chunk_size*.
 
@@ -40,14 +40,14 @@ setenv OMP_SCHEDULE "dynamic"
 
 ### Cross-references
 
-- [for](2-4-1-for-construct.md) directive
-- [parallel for](2-5-1-parallel-for-construct.md) directive
+- [for](2-directives.md#241-for-construct) directive
+- [parallel for](2-directives.md#251-parallel-for-construct) directive
 
-## 4.2 OMP_NUM_THREADS
+## <a name="42-omp_num_threads"></a>4.2 OMP_NUM_THREADS
 
 The `OMP_NUM_THREADS` environment variable sets the default number of threads to use during execution. `OMP_NUM_THREADS` is ignored if that number is explicitly changed by calling the `omp_set_num_threads` library routine. It's also ignored if there's an explicit `num_threads` clause on a `parallel` directive.
 
-The value of the `OMP_NUM_THREADS` environment variable must be a positive integer. Its effect depends upon whether dynamic adjustment of the number of threads is enabled. For a comprehensive set of rules about the interaction between the `OMP_NUM_THREADS` environment variable and dynamic adjustment of threads, see Section 2.3.
+The value of the `OMP_NUM_THREADS` environment variable must be a positive integer. Its effect depends upon whether dynamic adjustment of the number of threads is enabled. For a comprehensive set of rules about the interaction between the `OMP_NUM_THREADS` environment variable and dynamic adjustment of threads, see [section 2.3](2-directives.md#23-parallel-construct).
 
 The number of threads to use is implementation-defined if:
 
@@ -63,11 +63,11 @@ setenv OMP_NUM_THREADS 16
 
 ### Cross-references
 
-- [num_threads](2-3-parallel-construct.md) clause
-- [omp_set_num_threads](3-1-1-omp-set-num-threads-function.md) function
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) function
+- [num_threads](2-directives.md#23-parallel-construct) clause
+- [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function) function
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) function
 
-## 4.3 OMP_DYNAMIC
+## <a name="43-omp_dynamic"></a>4.3 OMP_DYNAMIC
 
 The `OMP_DYNAMIC` environment variable enables or disables dynamic adjustment of the number of threads available for the execution of parallel regions. `OMP_DYNAMIC` is ignored when dynamic adjustment is explicitly enabled or disabled by calling the `omp_set_dynamic` library routine. Its value must be `TRUE` or `FALSE`.
 
@@ -81,10 +81,10 @@ setenv OMP_DYNAMIC TRUE
 
 ### Cross-references
 
-- [Parallel regions](2-3-parallel-construct.md)
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) function
+- [Parallel regions](2-directives.md#23-parallel-construct)
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) function
 
-## 4.4 OMP_NESTED
+## <a name="44-omp_nested"></a>4.4 OMP_NESTED
 
 The `OMP_NESTED` environment variable enables or disables nested parallelism unless nested parallelism is enabled or disabled by calling the `omp_set_nested` library routine. If `OMP_NESTED` is set to `TRUE`, nested parallelism is enabled. If `OMP_NESTED` is set to `FALSE`, nested parallelism is disabled. The default value is `FALSE`.
 
@@ -96,4 +96,4 @@ setenv OMP_NESTED TRUE
 
 ### Cross-reference
 
-- [omp_set_nested](3-1-9-omp-set-nested-function.md) function
+- [omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function) function

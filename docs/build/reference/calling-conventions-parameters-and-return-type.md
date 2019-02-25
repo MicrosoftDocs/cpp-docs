@@ -1,6 +1,6 @@
 ---
 title: "Calling Conventions, Parameters, and Return Type"
-ms.date: "11/04/2016"
+ms.date: "02/13/2019"
 helpviewer_keywords: ["calling conventions, helper functions", "helper functions, calling conventions", "helper functions, return types"]
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
 ---
@@ -18,12 +18,12 @@ FARPROC WINAPI __delayLoadHelper2(
 ### Parameters
 
 *pidd*<br/>
-A `const` pointer to a `ImgDelayDescr` (see delayimp.h) that contains the offsets of various import-related data, a timestamp for binding information, and a set of attributes that provide further information about the descriptor content. Currently there is only one attribute, `dlattrRva`, which indicates that the addresses in the descriptor are relative virtual addresses (as opposed to virtual addresses).
+A `const` pointer to a `ImgDelayDescr` that contains the offsets of various import-related data, a timestamp for binding information, and a set of attributes that provide further information about the descriptor content. Currently there's only one attribute, `dlattrRva`, which indicates that the addresses in the descriptor are relative virtual addresses. For more information, see the declarations in *delayimp.h*.
 
 For the definition of the `PCImgDelayDescr` structure, see [Structure and Constant Definitions](structure-and-constant-definitions.md).
 
 *ppfnIATEntry*<br/>
-A pointer to the slot in the delay load import address table (IAT) to be updated with the address of the imported function. The helper routine needs to store the same value that it will be returning into this location.
+A pointer to the slot in the delay load import address table (IAT) that's updated with the address of the imported function. The helper routine needs to store the same value that it returns into this location.
 
 ## Expected Return Values
 
@@ -37,11 +37,11 @@ If the function fails, it raises an exception and returns 0. Three types of exce
 
 - Failure of `GetProcAddress`.
 
-It is your responsibility to handle these exceptions.
+It's your responsibility to handle these exceptions.
 
 ## Remarks
 
-The calling convention for the helper function is `__stdcall`. The type of the return value is not relevant, so FARPROC is used. This function has C linkage.
+The calling convention for the helper function is `__stdcall`. The type of the return value isn't relevant, so FARPROC is used. This function has C linkage.
 
 The return value of the delay load helper needs to be stored in the passed-in function pointer location, unless you want your helper routine to be used as a notification hook. In that case, your code is responsible for finding the appropriate function pointer to return. The thunk code the linker generates then takes that return value as the real target of the import and jumps directly to it.
 
@@ -122,10 +122,10 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 
 /*
 and then at global scope somewhere
-PfnDliHook __pfnDliNotifyHook2 = delayHook;
+const PfnDliHook __pfnDliNotifyHook2 = delayHook;
 */
 ```
 
-## See Also
+## See also
 
 [Understanding the Helper Function](understanding-the-helper-function.md)

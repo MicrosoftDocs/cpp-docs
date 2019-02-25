@@ -70,10 +70,6 @@ Returns TRUE on success, FALSE on failure.
 
 Behaves like the current version of [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla) but does not require WinInet or Internet Explorer to be installed.
 
-### See Also
-
-[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
-
 ## <a name="atlcombineurl"></a> AtlCombineUrl
 
 Call this function to combine a base URL and a relative URL into a single, canonical URL.
@@ -281,5 +277,6 @@ A reference to a string variable to receive the HTTP date time as defined in RFC
 
 ## See Also
 
-[Concepts](../../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+[Concepts](../active-template-library-atl-concepts.md)<br/>
+[ATL COM Desktop Components](../atl-com-desktop-components.md)<br/>
+[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)

@@ -56,4 +56,4 @@ You might not want to use documents and views at all. In that case, see [MFC: Us
 
 ## See Also
 
-[MFC Database Classes(../data/mfc-database-classes-odbc-and-dao.md)
+[MFC Database Classes](../data/mfc-database-classes-odbc-and-dao.md)

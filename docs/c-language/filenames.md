@@ -11,6 +11,6 @@ A file specification can include an optional drive letter (always followed by a 
 
 For more information, see [Naming a File](/windows/desktop/FileIO/naming-a-file) for more information.
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

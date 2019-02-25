@@ -1,6 +1,6 @@
 ---
 title: "Predefined Symbol IDs"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 helpviewer_keywords: ["symbols [C++], predefined IDs", "predefined symbol IDs"]
 ms.assetid: 91a5d610-1a04-47e8-b8a4-63ad650a90df
 ---
@@ -27,4 +27,6 @@ Win32, MFC, or ATL
 
 ## See Also
 
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+[Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
+[Create Symbols](../windows/creating-new-symbols.md)<br/>
+[Manage Symbols](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>

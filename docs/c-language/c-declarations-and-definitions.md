@@ -22,6 +22,6 @@ int count( double f ) {}
 
 The variables `var` and `val` can be used in the `find` and `count` functions; no further declarations are needed. But these names are not visible (cannot be accessed) in `main`.
 
-## See Also
+## See also
 
 [Source Files and Source Programs](../c-language/source-files-and-source-programs.md)

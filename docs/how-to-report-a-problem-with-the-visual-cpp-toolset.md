@@ -1,7 +1,7 @@
 ---
 title: "How to report a problem with the Visual C++ toolset"
 ms.date: "06/21/2018"
-ms.technology: ["cpp-ide"]
+ms.technology: "cpp-ide"
 author: "corob-msft"
 ms.author: "corob"
 ---

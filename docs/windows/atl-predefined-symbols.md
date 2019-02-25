@@ -1,6 +1,6 @@
 ---
 title: "ATL Predefined Symbols"
-ms.date: "11/04/2016"
+ms.date: "02/14/2019"
 helpviewer_keywords: ["symbols [C++], ATL predefined", "ATL symbols"]
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
 ---
@@ -28,4 +28,5 @@ ATL
 ## See Also
 
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
-[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)
+[MFC Predefined Symbols](../windows/mfc-predefined-symbols.md)<br/>
+[Win32 Predefined Symbols](../windows/win32-predefined-symbols.md)<br/>

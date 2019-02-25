@@ -37,6 +37,6 @@ func_two( (x--, y + 2), z );
 
 In the function call to `func_one`, three arguments, separated by commas, are passed: `x`, `y + 2`, and `z`. In the function call to `func_two`, parentheses force the compiler to interpret the first comma as the sequential-evaluation operator. This function call passes two arguments to `func_two`. The first argument is the result of the sequential-evaluation operation `(x--, y + 2)`, which has the value and type of the expression `y + 2`; the second argument is `z`.
 
-## See Also
+## See also
 
 [Comma Operator: ,](../cpp/comma-operator.md)

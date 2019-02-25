@@ -7235,136 +7235,136 @@
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
         },
-        {
-            "source_path": "docs/dotnet/lock-members.md",
-            "redirect_url": "/cpp/dotnet/lock-class",
-            "redirect_document_id": false
+        {  
+            "source_path": "docs/dotnet/lock-members.md", 
+            "redirect_url": "/cpp/dotnet/lock-class", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-lock.md",
-            "redirect_url": "/cpp/dotnet/lock-class#lock",
-            "redirect_document_id": false
+        {  
+            "source_path": "docs/dotnet/lock-lock.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#lock", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-tilde-lock.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#tilde-lock", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-is-locked.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#is-locked", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-bool.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-bool", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-acquire.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#acquire", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-try-acquire.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#try-acquire", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-release.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#release", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-equality.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-equality", 
+            "redirect_document_id": false 
+        }, 
+        { 
+            "source_path": "docs/dotnet/lock-operator-inequality.md", 
+            "redirect_url": "/cpp/dotnet/lock-class#operator-inequality", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-tilde-lock.md",
-            "redirect_url": "/cpp/dotnet/lock-class#tilde-lock",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/marshal-context-marshal-context.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-context", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-is-locked.md",
-            "redirect_url": "/cpp/dotnet/lock-class#is-locked",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#tilde-marshal-context", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-operator-bool.md",
-            "redirect_url": "/cpp/dotnet/lock-class#operator-bool",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/marshal-context-marshal-as.md", 
+            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-as", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-acquire.md",
-            "redirect_url": "/cpp/dotnet/lock-class#acquire",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-members.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-try-acquire.md",
-            "redirect_url": "/cpp/dotnet/lock-class#try-acquire",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-ptr.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#ptr", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-release.md",
-            "redirect_url": "/cpp/dotnet/lock-class#release",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-tilde-ptr.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#tilde-ptr", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-operator-equality.md",
-            "redirect_url": "/cpp/dotnet/lock-class#operator-equality",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-attach.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#attach", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/lock-operator-inequality.md",
-            "redirect_url": "/cpp/dotnet/lock-class#operator-inequality",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-createinstance.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#createInstance", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/marshal-context-marshal-context.md",
-            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-context",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-detach.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#detach", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/marshal-context-tilde-marshal-context.md",
-            "redirect_url": "/cpp/dotnet/marshal-context-class#tilde-marshal-context",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-getinterface.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#getInterface", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/marshal-context-marshal-as.md",
-            "redirect_url": "/cpp/dotnet/marshal-context-class#marshal-as",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-queryinterface.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#queryInterface", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-members.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-release.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#release", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-ptr.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#ptr",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-operator-assign.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-assign", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-tilde-ptr.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#tilde-ptr",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-operator-arrow.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-arrow", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-attach.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#attach",
-            "redirect_document_id": false
+        { 
+            "source_path": "docs/dotnet/ptr-operator-logical-not.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-logical-not", 
+            "redirect_document_id": false 
         },
-        {
-            "source_path": "docs/dotnet/ptr-createinstance.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#createInstance",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-detach.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#detach",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-getinterface.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#getInterface",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-queryinterface.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#queryInterface",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-release.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#release",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-operator-assign.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-assign",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-operator-arrow.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-arrow",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-operator-logical-not.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-logical-not",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/dotnet/ptr-operator-bool.md",
-            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-bool",
-            "redirect_document_id": false
-        },
+        { 
+            "source_path": "docs/dotnet/ptr-operator-bool.md", 
+            "redirect_url": "/cpp/dotnet/com-ptr-class#operator-bool", 
+            "redirect_document_id": false 
+        }, 
         {
             "source_path": "docs/error-messages/compiler-errors-1/index.md",
             "redirect_url": "/cpp/error-messages/compiler-errors-1/compiler-fatal-errors-c999-through-c1999",
@@ -8103,6 +8103,881 @@
         {
             "source_path": "docs/windows/index.md",
             "redirect_url": "/cpp/windows/overview-of-windows-programming-in-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-key-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-modifier-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-type-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/id-property.md",
+            "redirect_url": "/cpp/windows/setting-accelerator-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-an-entry-to-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-multiple-accelerator-keys.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-an-entry-from-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-in-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-an-entry-in-an-accelerator-table.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file.md",
+            "redirect_url": "/cpp/windows/editing-accelerator-tables",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/associating-an-accelerator-key-with-a-menu-item.md",
+            "redirect_url": "/cpp/windows/predefined-accelerator-keys",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-new-custom-or-data-resource.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-binary-data.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-binary-data.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/opening-a-resource-for-binary-editing.md",
+            "redirect_url": "/cpp/windows/binary-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-multiple-controls.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/dialog-editor-tab-toolbox.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/sizing-a-control-while-you-add-it.md",
+            "redirect_url": "/cpp/windows/adding-a-control-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-properties-for-an-activex-control.md",
+            "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/insert-activex-control-dialog-box.md",
+            "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/selecting-multiple-controls.md",
+            "redirect_url": "/cpp/windows/selecting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/specifying-the-dominant-control.md",
+            "redirect_url": "/cpp/windows/selecting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/aligning-controls-on-a-guide.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-and-setting-guides-and-margins.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/disabling-guides.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/guide-settings-dialog-box.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/modifying-the-layout-grid.md",
+            "redirect_url": "/cpp/windows/dialog-editor-states-guides-and-grids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/arranging-push-buttons-along-the-right-or-bottom-of-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/centering-controls-in-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/evening-the-spacing-between-controls.md",
+            "redirect_url": "/cpp/windows/aligning-groups-of-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md",
+            "redirect_url": "/cpp/windows/troubleshooting-the-dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/using-the-richedit-1-0-control-with-mfc.md",
+            "redirect_url": "/cpp/windows/troubleshooting-the-dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/cropping-or-extending-an-entire-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/resizing-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resizing-an-entire-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/resizing-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/shrinking-or-stretching-an-entire-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/resizing-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/shrinking-or-stretching-part-of-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/resizing-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/displaying-or-hiding-the-toolbar-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/toolbar-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/text-tool-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/toolbar-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/text-tool-font-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/toolbar-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-font-of-text-on-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/toolbar-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-magnification-factor-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/window-panes-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/displaying-or-hiding-the-pixel-grid-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/window-panes-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/custom-color-selector-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/customizing-or-changing-colors-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/load-palette-colors-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/saving-and-loading-different-color-palettes-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/colors-window-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/new-device-image-type-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/custom-image-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/open-device-image-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-device-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/using-the-256-color-palette-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-a-256-color-icon-or-cursor-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/inserting-a-new-menu-between-existing-menus.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-commands-to-a-menu.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/connecting-a-pop-up-menu-to-your-application.md",
+            "redirect_url": "/cpp/windows/creating-pop-up-menus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-a-menu-as-a-pop-up-menu.md",
+            "redirect_url": "/cpp/windows/creating-pop-up-menus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-and-copying-menus-and-menu-commands.md",
+            "redirect_url": "/cpp/windows/selecting-multiple-menus-or-menu-commands",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-menus-and-menu-commands.md",
+            "redirect_url": "/cpp/windows/selecting-multiple-menus-or-menu-commands",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/associating-menu-commands-with-status-bar-text-in-mfc-applications.md",
+            "redirect_url": "/cpp/windows/associating-a-menu-command-with-an-accelerator-key",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/assigning-access-keys-to-menu-commands.md",
+            "redirect_url": "/cpp/windows/associating-a-menu-command-with-an-accelerator-key",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/finding-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-or-deleting-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-a-string-from-one-resource-file-to-another.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-caption-property-of-multiple-strings.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-formatting-or-special-characters-to-a-string.md",
+            "redirect_url": "/cpp/windows/string-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/new-toolbar-resource-dialog-box.md",
+            "redirect_url": "/cpp/windows/converting-bitmaps-to-toolbars",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-new-toolbar-button.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/moving-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/copying-buttons-from-a-toolbar.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/inserting-a-space-between-buttons-on-a-toolbar.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/removing-space-between-buttons-on-a-toolbar.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/toolbar-button-properties.md",
+            "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-a-string-in-a-version-information-resource.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-version-information-for-another-language.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-version-information-block.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accessing-version-information-from-within-your-program.md",
+            "redirect_url": "/cpp/windows/version-information-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-properties-of-a-resource.md",
+            "redirect_url": "/cpp/windows/viewing-and-editing-resources-in-a-resource-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/previewing-resources.md",
+            "redirect_url": "/cpp/windows/viewing-and-editing-resources-in-a-resource-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-a-control-to-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-control-properties.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-control.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-and-adding-activex-controls-to-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-event-handlers-for-dialog-box-controls.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/default-control-events.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/defining-member-variables-for-dialog-controls.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/specifying-the-location-and-size-of-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/testing-a-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/making-controls-the-same-width-height-or-size.md",
+            "redirect_url": "/cpp/windows/sizing-individual-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/setting-the-size-of-the-combo-box-and-its-drop-down-list.md",
+            "redirect_url": "/cpp/windows/sizing-individual-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/setting-the-width-of-a-horizontal-scroll-bar.md",
+            "redirect_url": "/cpp/windows/sizing-individual-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-dialog-box-that-users-cannot-exit.md",
+            "redirect_url": "/cpp/windows/creating-a-new-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-names-of-symbol-header-files.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-a-symbol-s-numeric-value.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/symbol-value-restrictions.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/symbol-name-restrictions.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mfc-database-programming-symbols.md",
+            "redirect_url": "/cpp/windows/mfc-predefined-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/mfc-windows-programming-symbols.md",
+            "redirect_url": "/cpp/windows/mfc-predefined-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resource-symbols-dialog-box.md",
+            "redirect_url": "/cpp/windows/viewing-resource-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/add-resource-dialog-box.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/new-custom-resource-dialog-box.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resource-view-window.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resource-includes-dialog-box.md",
+            "redirect_url": "/cpp/windows/how-to-include-resources-at-compile-time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-specify-include-directories-for-resources.md",
+            "redirect_url": "/cpp/windows/how-to-include-resources-at-compile-time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-change-the-language-or-condition-of-a-resource-while-copying.md",
+            "redirect_url": "/cpp/windows/how-to-copy-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-open-a-manifest-resource.md",
+            "redirect_url": "/cpp/windows/manifest-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-open-a-resource-script-file-in-text-format.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/grid-settings-dialog-box-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/selecting-foreground-or-background-colors-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/filling-a-bounded-area-of-an-image-with-a-color-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/picking-up-a-color-from-an-image-to-use-elsewhere-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/inverting-the-colors-in-a-selection-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/customizing-or-changing-colors-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/colors-window-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-menu-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-device-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-an-image-for-a-different-display-device-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/copying-a-device-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-a-device-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-transparent-or-inverse-regions-in-device-images.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-256-color-icon-or-cursor-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/setting-a-cursor-s-hot-spot-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-submenu.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-pop-up-menus.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-new-toolbars.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/converting-bitmaps-to-toolbars.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-moving-and-editing-toolbar-buttons.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-tool-tip-for-a-toolbar-button.md",
+            "redirect_url": "/cpp/windows/toolbar-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-add-mfc-support-to-resource-script-files.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/files-affected-by-resource-editing.md",
+            "redirect_url": "/cpp/windows/editable-file-types-for-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/deleting-unassigned-symbols.md",
+            "redirect_url": "/cpp/windows/changing-unassigned-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/dialog-editor-states-guides-and-grids.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/grouping-radio-buttons-on-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/aligning-groups-of-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-the-tab-order-of-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-create-a-resource.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-use-resource-templates.md",
+            "redirect_url": "/cpp/windows/how-to-create-a-resource-script-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-managed-resource-files.md",
+            "redirect_url": "/cpp/windows/how-to-copy-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-import-and-export-resources.md",
+            "redirect_url": "/cpp/windows/how-to-copy-resources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/how-to-search-for-symbols-in-resources.md",
+            "redirect_url": "/cpp/windows/how-to-include-resources-at-compile-time",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editable-file-types-for-resources.md",
+            "redirect_url": "/cpp/windows/resource-files-visual-studio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/manifest-resources.md",
+            "redirect_url": "/cpp/windows/resource-files-visual-studio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-resource-symbols.md",
+            "redirect_url": "/cpp/windows/creating-new-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/opening-the-resource-editor-for-a-given-symbol.md",
+            "redirect_url": "/cpp/windows/creating-new-symbols",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-unassigned-symbols.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/including-shared-read-only-or-calculated-symbols.md",
+            "redirect_url": "/cpp/windows/changing-a-symbol-or-symbol-name-id",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/viewing-and-editing-resources-in-a-resource-editor.md",
+            "redirect_url": "/cpp/windows/resource-editors",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/setting-accelerator-properties.md",
+            "redirect_url": "/cpp/windows/accelerator-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-accelerator-tables.md",
+            "redirect_url": "/cpp/windows/accelerator-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/showing-or-hiding-the-dialog-editor-toolbar.md",
+            "redirect_url": "/cpp/windows/dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/switching-between-dialog-box-controls-and-code.md",
+            "redirect_url": "/cpp/windows/dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/accelerator-keys-for-the-dialog-editor.md",
+            "redirect_url": "/cpp/windows/dialog-editor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/testing-a-dialog-box.md",
+            "redirect_url": "/cpp/windows/creating-a-new-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/custom-controls-in-the-dialog-editor.md",
+            "redirect_url": "/cpp/windows/controls-in-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/troubleshooting-the-dialog-editor.md",
+            "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/adding-values-to-a-combo-box-control.md",
+            "redirect_url": "/cpp/windows/defining-mnemonics-access-keys",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/selecting-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/sizing-individual-controls.md",
+            "redirect_url": "/cpp/windows/arrangement-of-controls-on-dialog-boxes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/selecting-multiple-menus-or-menu-commands.md",
+            "redirect_url": "/cpp/windows/creating-a-menu",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/associating-a-menu-command-with-an-accelerator-key.md",
+            "redirect_url": "/cpp/windows/menu-command-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/image-menu-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/toolbar-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/window-panes-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/saving-bitmaps-as-gifs-or-jpegs-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/converting-an-image-from-one-format-to-another-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/drawing-lines-or-closed-figures-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/using-a-drawing-tool-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-custom-brush-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/using-a-drawing-tool-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-parts-of-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/flipping-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/resizing-an-image-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/changing-image-properties-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/selecting-an-area-of-an-image-image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/editing-graphical-resources-image-editor-for-icons.md",
+            "redirect_url": "/cpp/windows/image-editor-for-icons",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/creating-a-menu.md",
+            "redirect_url": "/cpp/windows/menu-editor",
             "redirect_document_id": false
         },
         {
@@ -11139,6 +12014,262 @@
             "source_path": "docs/parallel/openmp/2-9-directive-nesting.md",
             "redirect_url": "/cpp/parallel/openmp/2-directives#29-directive-nesting",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-execution-environment-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#31-execution-environment-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#32-lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-3-timing-routines.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#33-timing-routines",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-1-omp-set-num-threads-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#311-omp_set_num_threads-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-2-omp-get-num-threads-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#312-omp_get_num_threads-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-3-omp-get-max-threads-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#313-omp_get_max_threads-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-4-omp-get-thread-num-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#314-omp_get_thread_num-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-5-omp-get-num-procs-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#315-omp_get_num_procs-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-6-omp-in-parallel-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#316-omp_in_parallel-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-7-omp-set-dynamic-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#317-omp_set_dynamic-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-8-omp-get-dynamic-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#318-omp_get_dynamic-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-9-omp-set-nested-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#319-omp_set_nested-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-1-10-omp-get-nested-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#3110-omp_get_nested-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#321-omp_init_lock-and-omp_init_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#322-omp_destroy_lock-and-omp_destroy_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#323-omp_set_lock-and-omp_set_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#324-omp_unset_lock-and-omp_unset_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#325-omp_test_lock-and-omp_test_nest_lock-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-3-1-omp-get-wtime-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#331-omp_get_wtime-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/3-3-2-omp-get-wtick-function.md",
+            "redirect_url": "/cpp/parallel/openmp/3-run-time-library-functions#332-omp_get_wtick-function",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-1-executing-a-simple-loop-in-parallel.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a1-a-simple-loop-in-parallel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-2-specifying-conditional-compilation.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a2-conditional-compilation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-3-using-parallel-regions.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a3-parallel-regions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-4-using-the-nowait-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a4-the-nowait-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-5-using-the-critical-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a5-the-critical-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-6-using-the-lastprivate-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a6-the-lastprivate-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-7-using-the-reduction-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a7-the-reduction-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-8-specifying-parallel-sections.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a8-parallel-sections",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-9-using-single-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a9-single-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-10-specifying-sequential-ordering.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a10-sequential-ordering",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-11-specifying-a-fixed-number-of-threads.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a11-a-fixed-number-of-threads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-12-using-the-atomic-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a12-the-atomic-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-13-using-the-flush-directive-with-a-list.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a13-a-flush-directive-with-a-list",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-14-using-the-flush-directive-without-a-list.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a14-a-flush-directive-without-a-list",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-15-determining-the-number-of-threads-used.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a15-the-number-of-threads-used",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-16-using-locks.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a16-locks",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-17-using-nestable-locks.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a17-nestable-locks",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-18-nested-for-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a18-nested-for-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-19-examples-showing-incorrect-nesting-of-work-sharing-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a19-examples-showing-incorrect-nesting-of-work-sharing-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-20-binding-of-barrier-directives.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a20-bind-barrier-directives",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-21-scoping-variables-with-the-private-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a21-scope-variables-with-the-private-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-22-using-the-default-none-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a22-the-defaultnone-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-23-examples-of-the-ordered-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a23-examples-of-the-ordered-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-24-example-of-the-private-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a24-example-of-the-private-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-25-examples-of-the-copyprivate-data-attribute-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a25-examples-of-the-copyprivate-data-attribute-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-26-using-the-threadprivate-directive.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a26-the-threadprivate-directive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-27-use-of-c99-variable-length-arrays.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a27-c99-variable-length-arrays",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-28-use-of-num-threads-clause.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a28-the-num_threads-clause",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-29-use-of-work-sharing-constructs-inside-a-critical-construct.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a29-work-sharing-constructs-inside-a-critical-construct",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-30-use-of-reprivatization.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a30-reprivatization",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/a-31-thread-safe-lock-functions.md",
+            "redirect_url": "/cpp/parallel/openmp/a-examples#a31-thread-safe-lock-functions",
+            "redirect_document_id": false
         }
+
     ]
 }

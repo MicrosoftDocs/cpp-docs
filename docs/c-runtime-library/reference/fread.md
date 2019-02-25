@@ -112,7 +112,7 @@ Contents of buffer = zyxwvutsrqponmlkjihgfedcb
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[Text and Binary File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br />
-[fopen](fopen-wfopen.md)<br />
+[Text and Binary File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
+[fopen](fopen-wfopen.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

@@ -59,6 +59,6 @@ The order and type of parameters, including any use of the ellipsis notation, mu
 
 The compiler performs the usual arithmetic conversions independently on each parameter and on each argument, if necessary. After conversion, no parameter is shorter than an `int`, and no parameter has **float** type unless the parameter type is explicitly specified as **float** in the prototype. This means, for example, that declaring a parameter as a `char` has the same effect as declaring it as an `int`.
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

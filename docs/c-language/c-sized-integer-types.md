@@ -21,6 +21,6 @@ The first three types of sized integers are synonyms for the ANSI types that hav
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Storage of Basic Types](../c-language/storage-of-basic-types.md)

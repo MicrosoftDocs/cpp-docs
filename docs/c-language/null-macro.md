@@ -10,6 +10,6 @@ ms.assetid: 6800f7a4-88a7-442f-87ed-e618e83a0b16
 
 Several include files define the NULL macro as `((void *)0)`.
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

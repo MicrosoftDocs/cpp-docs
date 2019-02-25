@@ -33,6 +33,6 @@ The expression statement contains a C expression that can contain the arithmetic
 
 Any C statement can begin with an identifying label consisting of a name and a colon. Since only the `goto` statement recognizes statement labels, statement labels are discussed with `goto`. See [The goto and Labeled Statements](../c-language/goto-and-labeled-statements-c.md) for more information.
 
-## See Also
+## See also
 
 [Statements](../c-language/statements-c.md)

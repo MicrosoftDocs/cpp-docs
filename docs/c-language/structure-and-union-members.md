@@ -66,6 +66,6 @@ list[8].b = 12;
 
 This statement shows how to select an individual structure member from an array of structures.
 
-## See Also
+## See also
 
 [Member Access Operators: . and ->](../cpp/member-access-operators-dot-and.md)

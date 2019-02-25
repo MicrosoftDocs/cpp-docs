@@ -18,6 +18,6 @@ Exercise care when providing imported inline functions. For example, if you upda
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [DLL Import and Export Functions](../c-language/dll-import-and-export-functions.md)

@@ -42,6 +42,6 @@ Old-style function declarations also generate warnings if you subsequently decla
 
 The next section, [C Function Definitions](../c-language/c-function-definitions.md), shows the syntax for function definitions, including the old-style syntax. The nonterminal for the list of parameters in the old-style syntax is *identifier-list*.
 
-## See Also
+## See also
 
 [Overview of Functions](../c-language/overview-of-functions.md)

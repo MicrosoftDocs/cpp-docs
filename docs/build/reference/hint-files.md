@@ -9,7 +9,7 @@ ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
 
 A *hint file* helps the Visual Studio integrated development environment (IDE) interpret Visual C++ identifiers, such as the names of functions and macros. When you open a Visual C++ project, the IDE's *parsing system* analyzes the code in each source file in the project and gathers information about every identifier. Then the IDE uses that information to support features such as the **Class View** browser and the **Navigation Bar**.
 
-The parsing system, which is introduced in Visual C++ 2010, understands C/C++ syntax but can misinterpret a statement that contains a macro. The statement can be misinterpreted if the macro causes the source code to be syntactically incorrect as written. The statement can become syntactically correct when the source code is compiled and the preprocesser replaces the [macro identifier](../../preprocessor/hash-define-directive-c-cpp.md) with its definition. The parsing system works without having to build the project because it uses hint files to interpret macros. Therefore, a browsing feature such as **Class View** is immediately available.
+The parsing system, which is introduced in Visual C++ 2010, understands C/C++ syntax but can misinterpret a statement that contains a macro. The statement can be misinterpreted if the macro causes the source code to be syntactically incorrect as written. The statement can become syntactically correct when the source code is compiled and the preprocessor replaces the [macro identifier](../../preprocessor/hash-define-directive-c-cpp.md) with its definition. The parsing system works without having to build the project because it uses hint files to interpret macros. Therefore, a browsing feature such as **Class View** is immediately available.
 
 A hint file contains user-customizable *hints*, which have the same syntax as C/C++ macro definitions. Visual C++ includes a built-in hint file that is sufficient for most projects, but you can create your own hint files to improve the way Visual Studio handles identifiers.
 
@@ -86,7 +86,7 @@ Hints use the following syntax.
 
 |Syntax|Meaning|
 |------------|-------------|
-|`#define` *hint-name* *replacement-string*<br /><br /> `#define` *hint-name* `(` *parameter*, ...`)`*replacement-string*|A preprocesser directive that defines a new hint or redefines an existing hint. After the directive, the preprocessor replaces each occurrence of *hint-name* in source code with *replacement-string*.<br /><br /> The second syntax form defines a function-like hint. If a function-like hint occurs in source code, the preprocessor first replaces each occurrence of *parameter* in *replacement-string* with the corresponding argument in source code, and then replaces *hint-name* with *replacement-string*.|
+|`#define` *hint-name* *replacement-string*<br /><br /> `#define` *hint-name* `(` *parameter*, ...`)`*replacement-string*|A preprocessor directive that defines a new hint or redefines an existing hint. After the directive, the preprocessor replaces each occurrence of *hint-name* in source code with *replacement-string*.<br /><br /> The second syntax form defines a function-like hint. If a function-like hint occurs in source code, the preprocessor first replaces each occurrence of *parameter* in *replacement-string* with the corresponding argument in source code, and then replaces *hint-name* with *replacement-string*.|
 |`@<`|A hint-file specific *replacement-string* that indicates the start of a set of map elements.|
 |`@=`|A hint-file specific *replacement-string* that indicates an intermediate map element. A map can have multiple map elements.|
 |`@>`|A hint-file specific *replacement-string* that indicates the end of a set of map elements.|
@@ -309,6 +309,7 @@ The following notes apply to the preceding list.
 
 ## See Also
 
+<<<<<<< HEAD:docs/build/reference/hint-files.md
 [File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
@@ -316,3 +317,12 @@ The following notes apply to the preceding list.
 [Message Maps](../../mfc/reference/message-maps-mfc.md)<br>
 [Message Map Macros](../../atl/reference/message-map-macros-atl.md)<br>
 [Object Map Macros](../../atl/reference/object-map-macros.md)
+=======
+[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
+[#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>
+[#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)<br>
+[SAL Annotations](../c-runtime-library/sal-annotations.md)<br>
+[Message Maps](../mfc/reference/message-maps-mfc.md)<br>
+[Message Map Macros](../atl/reference/message-map-macros-atl.md)<br>
+[Object Map Macros](../atl/reference/object-map-macros.md)
+>>>>>>> master:docs/ide/hint-files.md

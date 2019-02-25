@@ -8,7 +8,7 @@ ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 
 This article contains a categorical list of compiler options. For an alphabetical list, see [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md).
 
-### Optimization
+## Optimization
 
 |Option|Purpose|
 |------------|-------------|
@@ -24,7 +24,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Oy](oy-frame-pointer-omission.md)|Omits frame pointer. (x86 only)|
 |[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specified architecture, or for a range of architectures.|
 
-### Code generation
+## Code generation
 
 |Option|Purpose|
 |------------|-------------|
@@ -65,7 +65,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|Selects how the volatile keyword is interpreted.|
 
-### Output files
+## Output files
 
 |Option|Purpose|
 |------------|-------------|
@@ -80,7 +80,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Fp](fp-name-dot-pch-file.md)|Specifies a precompiled header file name.|
 |[/FR, /Fr](fr-fr-create-dot-sbr-file.md)|Name generated .sbr browser files.|
 
-### Preprocessor
+## Preprocessor
 
 |Option|Purpose|
 |------------|-------------|
@@ -98,7 +98,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/u](u-u-undefine-symbols.md)|Removes all predefined macros.|
 |[/X](x-ignore-standard-include-paths.md)|Ignores the standard include directory.|
 
-### Language
+## Language
 
 |Option|Purpose|
 |------------|-------------|
@@ -122,7 +122,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Zs](zs-syntax-check-only.md)|Checks syntax only.|
 |[/ZW](zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|
 
-### Linking
+## Linking
 
 |Option|Purpose|
 |------------|-------------|
@@ -136,7 +136,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/MT](md-mt-ld-use-run-time-library.md)|Compiles to create a multithreaded executable file, by using LIBCMT.lib.|
 |[/MTd](md-mt-ld-use-run-time-library.md)|Compiles to create a debug multithreaded executable file, by using LIBCMTD.lib.|
 
-### Miscellaneous
+## Miscellaneous
 
 |Option|Purpose|
 |------------|-------------|
@@ -188,7 +188,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/permissive-](permissive-standards-conformance.md)|Set standard-conformance mode.|
 |[/std](std-specify-language-standard-version.md)|C++ standard version compatibility selector.|
 
-### Deprecated and removed compiler options
+## Deprecated and removed compiler options
 
 |Option|Purpose|
 |------------|-------------|

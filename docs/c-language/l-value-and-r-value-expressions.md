@@ -45,6 +45,6 @@ The default for Microsoft C is that the Microsoft extensions are enabled. Use th
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Operands and Expressions](../c-language/operands-and-expressions.md)

@@ -1,6 +1,6 @@
 ---
 title: "/source-charset (Set Source Character Set)"
-ms.date: "11/04/2016"
+ms.date: "02/06/2019"
 f1_keywords: ["source-charset", "/source-charset"]
 helpviewer_keywords: ["/execution-charset compiler option"]
 ms.assetid: d3c5bf7f-526d-4ee4-acc5-c1a02a4fc481
@@ -39,7 +39,7 @@ If you want to set both the source character set and the execution character set
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
-1. In **Advanced Options**, add the **/source-charset** option, and specify your preferred encoding.
+1. In **Additional Options**, add the **/source-charset** option, and specify your preferred encoding.
 
 1. Choose **OK** to save your changes.
 
