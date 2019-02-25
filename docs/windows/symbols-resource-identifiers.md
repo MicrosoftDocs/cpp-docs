@@ -17,12 +17,12 @@ Symbol names are most often referred to as identifiers.
 
 Symbols provide a descriptive way of referring to resources and user-interface objects, both in your source code and while you're working with them in the resource editors. You can view and manipulate symbols in one convenient place using the [Resource Symbols dialog box](../windows/viewing-resource-symbols.md).
 
-When you create a new resource or resource object, the [resource editors](../windows/resource-editors.md) provide a default name for the resource, for example, `IDC_RADIO1`, and assign a value to it. The name-plus-value definition is stored in the Resource.h file.
+When you create a new resource or resource object, the [resource editors](../windows/resource-editors.md) provide a default name for the resource, for example, `IDC_RADIO1`, and assign a value to it. The name-plus-value definition is stored in the `Resource.h` file.
 
 > [!NOTE]
 > When you are copying resources or resource objects from one .rc file to another, Visual C++ may change the transferred resource's symbol value, or symbol name and value, to avoid conflicts with symbol names or values in the existing file.
 
-As your application grows in size and sophistication, so does its number of resources and symbols. Tracking large numbers of symbols scattered throughout several files can be difficult. The [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) simplifies symbol management by offering a central tool through which you can:
+As your application grows in size and sophistication, so does its number of resources and symbols. Tracking large numbers of symbols scattered throughout several files can be difficult. The **Resource Symbols** dialog box simplifies symbol management by offering a central tool through which you can:
 
 - [Create Symbols](../windows/creating-new-symbols.md)
 
