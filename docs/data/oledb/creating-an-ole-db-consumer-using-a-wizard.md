@@ -6,7 +6,7 @@ ms.assetid: efefd4c0-4491-4072-aa9b-59545641efb3
 ---
 # Creating an OLE DB Consumer Using a Wizard
 
-This procedure demonstrates how you can use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard* to generate an OLE DB Templates consumer and then modify the main code of the console application to retrieve and display data from a database table.
+This procedure demonstrates how you can use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard** to generate an OLE DB Templates consumer and then modify the main code of the console application to retrieve and display data from a database table.
 
 The last two sections explain the wizard-generated OLE DB consumer code.
 
