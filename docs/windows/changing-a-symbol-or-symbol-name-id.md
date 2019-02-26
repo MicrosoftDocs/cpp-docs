@@ -7,14 +7,14 @@ ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
 ---
 # How to: Manage Symbols
 
-When you create a new resource or resource object, the development environment assigns it a default symbol name, for example, IDD_DIALOG1. You can use the [Properties Window](/visualstudio/ide/reference/properties-window) to change the default symbol name or to change the name of any symbol already associated with a resource.
+When you create a new resource or resource object, the development environment assigns it a default symbol name, for example, `IDD_DIALOG1`. You can use the [Properties Window](/visualstudio/ide/reference/properties-window) to change the default symbol name or to change the name of any symbol already associated with a resource.
 
 For symbols associated with a single resource, you can also use the **Properties** window to change the symbol value. You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the value of symbols not currently assigned to a resource.
 
 Normally all symbol definitions are saved in `Resource.h`. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.
 
 > [!NOTE]
-> If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+> If your project doesn't already contain an .rc file, see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
 
 ## Symbol Name Restrictions
 
@@ -30,14 +30,14 @@ The restrictions on symbol names are as follows:
 
 - Symbol names aren't case-sensitive, but the case of the first symbol definition is preserved. The header file that defines the symbols is used by both the resource compiler/editor and C++ program(s) to refer resources defined in a resource file. For two symbol names that differ only in case, the C++ program will see two separate symbols while the resource compiler/editor will see both names as referring to one single symbol.
 
-   > [!NOTE]
-   > If you do not follow the standard symbol name scheme (ID*_[keyword]) outlined below, and your symbol name happens to be the same as a keyword known to the resource script compiler, trying to build the resource script file will result in seemingly random error generation that is difficult to diagnose. To prevent this, adhere to the standard naming scheme.
+> [!NOTE]
+> If you don't follow the standard symbol name scheme (ID*_[keyword]) outlined below and your symbol name happens to be the same as a keyword known to the resource script compiler, trying to build the resource script file will result in seemingly random error generation that is difficult to diagnose. To prevent this, adhere to the standard naming scheme.
 
-Symbol names have descriptive prefixes that indicate the kind of resource or object they represent. These descriptive prefixes begin with the text combination ID. The Microsoft Foundation Class Library (MFC) uses the symbol naming conventions shown in the following table.
+Symbol names have descriptive prefixes that indicate the kind of resource or object they represent. These descriptive prefixes begin with the text combination ID. The Microsoft Foundation Class library (MFC) uses the symbol naming conventions shown in the following table:
 
 |Category|Prefix|Use|
 |--------------|------------|---------|
-|Resources|IDR_ IDD_ IDC_ IDI_ IDB_|Accelerator or menu (and associated or custom resources) Dialog box Cursor Icon Bitmap|
+|Resources|IDR_, IDD_, IDC_, IDI_, IDB_|Accelerator or menu (and associated or custom resources), dialog box, cursor, icon, bitmap|
 |Menu items|ID_|Menu item|
 |Commands|ID_|Command|
 |Controls and child windows|IDC_|Control|
@@ -52,11 +52,12 @@ Symbol names have descriptive prefixes that indicate the kind of resource or obj
 
    If you type a new symbol name, it's automatically assigned a value.
 
-You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the names of symbols not currently assigned to a resource.
+> [!NOTE]
+> You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the names of symbols not currently assigned to a resource.
 
 ## Symbol Value Restrictions
 
-A symbol value can be any integer expressed in the normal manner for #define preprocessor directives. Here are some examples of symbol values:
+A symbol value can be any integer expressed in the normal manner for `#define` preprocessor directives. Here are some examples of symbol values:
 
 ```
 18
@@ -79,15 +80,13 @@ Here are some limitations of symbol values:
     #define IDC_MYEDIT  IDC_OTHEREDIT  //not supported
     ```
 
-- You can't use preprocessor macros with arguments as value definitions. For example:
+- You can't use preprocessor macros with arguments as value definitions. The following example isn't a valid expression regardless of what `ID` evaluates to at compile time:
 
     ```cpp
     #define   IDD_ABOUT  ID(7) //not supported
     ```
 
-   isn't a valid expression regardless of what `ID` evaluates to at compile time.
-
-- Your application may have an existing file containing symbols defined with expressions. For more information on how to include the symbols as read-only symbols, see [Using Shared (Read Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md).
+- Your application may have an existing file containing symbols defined with expressions.
 
 For more information on number ranges, see [TN023: Standard MFC Resources](../mfc/tn023-standard-mfc-resources.md).
 
@@ -101,7 +100,7 @@ For more information on number ranges, see [TN023: Standard MFC Resources](../mf
     IDC_EDITNAME=5100
     ```
 
-The new value is stored in the symbol header file the next time you save the project. Only the symbol name remains visible in the ID box; the equal sign and value aren't displayed after they're validated.
+   The new value is stored in the symbol header file the next time you save the project. Only the symbol name remains visible in the ID box and the equal sign and value aren't displayed after they're validated.
 
 ## Change or Delete Symbols
 
@@ -114,14 +113,14 @@ While in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-bo
 1. Edit the symbol's name or value in the boxes provided in the **Change Symbol** dialog box.
 
    > [!NOTE]
-   > To change a symbol that *is* assigned to a resource or object, you must use the resource editor or **Properties** window.
+   > To change a symbol that's assigned to a resource or object, you must use the resource editor or **Properties** window.
 
 ### To delete an unassigned (unused) symbol
 
 In the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md), select the symbol that you want to delete, and choose **Delete**.
 
-   > [!NOTE]
-   > Before deleting an unused symbol in a resource file, make sure it is not used elsewhere in the program or by resource files included at compile time.
+> [!NOTE]
+> Before deleting an unused symbol in a resource file, make sure it's not used elsewhere in the program or by resource files included at compile time.
 
 ## Include Symbols
 
@@ -156,9 +155,9 @@ The environment will correctly interpret these calculated symbols as long as:
    Don't call the file `Resource.h`, since that is the filename normally used by the main symbol header file.
 
    > [!NOTE]
-   > **Important** What you type in the Read-Only symbol directives box is included in the resource file exactly as you type it. Make sure what you type does not contain any spelling or syntax errors.
+   > What you type in the **Read-Only symbol directives** box is included in the resource file exactly as you type it. Make sure what you type does not contain any spelling or syntax errors.
 
-   Use the **Read-only symbol directives** box to include files with symbol definitions only. Don't include resource definitions; otherwise, duplicate resource definitions will be created when the file is saved.
+   Use the **Read-only symbol directives** box to include files with symbol definitions only. Don't include resource definitions, else duplicate resource definitions will be created when the file is saved.
 
 1. Place the symbols in the file you specified.
 
@@ -179,5 +178,5 @@ Win32
 ## See Also
 
 [Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
-[Create Symbols](../windows/creating-new-symbols.md)<br/>
+[How to: Create Symbols](../windows/creating-new-symbols.md)<br/>
 [Predefined Symbol IDs](../windows/predefined-symbol-ids.md)<br/>
