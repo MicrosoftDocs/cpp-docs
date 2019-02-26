@@ -83,7 +83,7 @@ Exception raised: Unable to establish the connection!
 
 **Header:** \<comdef.h>
 
-**Lib:** If the **wchar_t is Native Type** compiler option is on, use comsuppw.lib or comsuppwd.lib. If **wchar_t is Native Type** is off, use comsupp.lib. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+**Lib:** If the **/Zc:wchar_t** compiler option is specified (the default), use comsuppw.lib or comsuppwd.lib. If the **/Zc:wchar_t-** compiler option is specified, use comsupp.lib. For more information, including how to set this option in the IDE, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ## See also
 
