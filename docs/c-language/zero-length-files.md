@@ -10,6 +10,6 @@ ms.assetid: f0725a4e-7a39-4b1e-ba23-58171250919e
 
 Files with a length of zero are permitted.
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

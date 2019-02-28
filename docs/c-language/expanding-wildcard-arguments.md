@@ -20,7 +20,7 @@ The wildcards are expanded in the same manner as operating system commands. (See
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Link Options](../c-runtime-library/link-options.md)<br/>
 [main Function and Program Execution](../c-language/main-function-and-program-execution.md)

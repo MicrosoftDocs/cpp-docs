@@ -8,6 +8,6 @@ ms.assetid: ed0bb253-e64b-4716-892e-ff0031e11cc5
 
 The `long double` type is identical to the [double](../c-language/type-double.md) type.
 
-## See Also
+## See also
 
 [Storage of Basic Types](../c-language/storage-of-basic-types.md)

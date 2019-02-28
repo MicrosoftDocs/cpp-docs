@@ -13,6 +13,6 @@ The **assert** function prints a diagnostic message and calls the **abort** rout
 
 where *filename* is the name of the source file and *linenumber* is the line number of the assertion that failed in the source file. No action is taken if *expression* is true (nonzero).
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

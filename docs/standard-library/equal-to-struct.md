@@ -1,7 +1,7 @@
 ---
 title: "equal_to Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::equal_to"]
+f1_keywords: ["functional/std::equal_to"]
 helpviewer_keywords: ["equal_to function", "equal_to struct"]
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
 ---

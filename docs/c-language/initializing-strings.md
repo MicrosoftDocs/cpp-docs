@@ -43,6 +43,6 @@ In Microsoft C, string literals can be up to 2048 bytes in length.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Initialization](../c-language/initialization.md)

@@ -27,6 +27,6 @@ The syntax conventions use different font attributes for different components of
 
 A colon (**:**) following a nonterminal introduces its definition. Alternative definitions are listed on separate lines, except when prefaced with the words "one of."
 
-## See Also
+## See also
 
 [C Language Syntax Summary](../c-language/c-language-syntax-summary.md)

@@ -22,6 +22,6 @@ Variables declared in a function body, known as *local variables*, have **auto**
 
 A **return** statement containing an expression must be executed if the function is to return a value. The return value of a function is undefined if no **return** statement is executed or if the **return** statement does not include an expression.
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

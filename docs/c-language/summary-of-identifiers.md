@@ -17,6 +17,6 @@ ms.assetid: 2fe74b88-79e4-4e09-9d87-c258905ec31a
 *digit*: one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
-## See Also
+## See also
 
 [Lexical Grammar](../c-language/lexical-grammar.md)

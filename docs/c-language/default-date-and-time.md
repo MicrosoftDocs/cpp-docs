@@ -10,6 +10,6 @@ ms.assetid: 2a00a772-94f9-4513-a76b-63441456c1e6
 
 When the operating system does not provide the date and time of translation, the default values for `__DATE__` and `__TIME__` are `May 03 1957` and `17:00:00`.
 
-## See Also
+## See also
 
 [Preprocessing Directives](../c-language/preprocessing-directives.md)

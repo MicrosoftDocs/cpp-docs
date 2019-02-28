@@ -12,6 +12,6 @@ The regular character constant, 'ab' has the integer value (int)0x6162. When the
 
 The multibyte character constant is read as above and this is converted to a wide-character constant using the `mbtowc` run-time function. If the result is not a valid wide-character constant, an error is issued. In any event, the number of bytes examined by the `mbtowc` function is limited to the value of `MB_CUR_MAX`.
 
-## See Also
+## See also
 
 [Characters](../c-language/characters.md)

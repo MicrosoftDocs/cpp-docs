@@ -32,6 +32,6 @@ Note that the information in the above table may differ in future implementation
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Floating-Point Constants](../c-language/c-floating-point-constants.md)

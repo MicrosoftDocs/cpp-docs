@@ -13,6 +13,6 @@ Microsoft C produces error messages in the form:
 
 where *filename* is the name of the source file in which the error was encountered; *line-number* is the line number at which the compiler detected the error; *diagnostic* is either "error" or "warning"; *number* is a unique four-digit number (preceded by a **C**, as noted in the syntax) that identifies the error or warning; *message* is an explanatory message.
 
-## See Also
+## See also
 
 [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
