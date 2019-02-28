@@ -15,7 +15,7 @@ The most common way to access reflection features is through the <xref:System.Ob
 > [!NOTE]
 > Reflection on an .exe built with the Visual C++ compiler is only allowed if the .exe is built with the **/clr:pure** or **/clr:safe** compiler options. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unavailable in Visual Studio 2017. See [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information.
 
-For more information, see <xref:system.reflection>
+For more information, see <xref:System.Reflection>
 
 ## Example: GetType
 
@@ -156,9 +156,9 @@ public:
 
 ## Example: inspection of assemblies
 
-If the code above is compiled into a DLL called vcpp_reflection_6.dll, you can then use reflection to inspect the contents of this assembly. This involves using the static reflection API function <xref:system.reflection.assembly.load> to load the assembly. This function returns the address of an **Assembly** object that can then be queried about the modules and types within.
+If the code above is compiled into a DLL called vcpp_reflection_6.dll, you can then use reflection to inspect the contents of this assembly. This involves using the static reflection API function xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType to load the assembly. This function returns the address of an **Assembly** object that can then be queried about the modules and types within.
 
-Once the reflection system successfully loads the assembly, an array of **Type** objects is retrieved with the <xref:system.reflection.assembly.gettypes> function. Each array element contains information about a different type, although in this case, only one class is defined. Using a loop, each **Type** in this array is queried about the type members using the **Type::GetMembers** function. This function returns an array of **MethodInfo** objects, each object containing information about the member function, data member, or property in the type.
+Once the reflection system successfully loads the assembly, an array of **Type** objects is retrieved with the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> function. Each array element contains information about a different type, although in this case, only one class is defined. Using a loop, each **Type** in this array is queried about the type members using the **Type::GetMembers** function. This function returns an array of **MethodInfo** objects, each object containing information about the member function, data member, or property in the type.
 
 Note that the list of methods includes the functions explicitly defined in **TestClass** and the functions implicitly inherited from the **System::Object** class. As part of being described in .NET rather than in Visual C++ syntax, properties appear as the underlying data member accessed by the get/set functions. The get/set functions appear in this list as regular methods. Reflection is supported through the common language runtime, not by the Visual C++ compiler.
 

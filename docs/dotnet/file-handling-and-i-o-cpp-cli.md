@@ -311,4 +311,4 @@ int main()
 
 [File and Stream I-O](/dotnet/standard/io/index)
 
-<xref:system.io>
+<xref:System.IO>

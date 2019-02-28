@@ -14,7 +14,7 @@ When you use the Console Application template to create a project, it automatica
 
 - References to these .NET Framework namespaces:
 
-   - <xref:system.appdomainmanager.appdomainmanager>—Contains fundamental classes and base classes that define commonly used values and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.
+   - <xref:System.AppDomainManager.AppDomainManager%2A>—Contains fundamental classes and base classes that define commonly used values and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.
 
    - mscorlib—The assembly DLL that supports .NET Framework development.
 
