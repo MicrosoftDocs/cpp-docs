@@ -11,12 +11,12 @@ MFC projects always include several header files that support windows. These are
 ```cpp
 #include <afxwin.h>      //MFC core and standard components
 #include <afxext.h>      //MFC extensions
-#include <afxdisp.h      //MFC automation classes
+#include <afxdisp.h>      //MFC automation classes
 #include <afxdtctl.h>   //MFC support for Internet Explorer common controls
 #include <afxcmn.h>      //MFC support for Windows common controls.
 ```
 
-The header files include symbol ID values for MFC common values. These symbols are only available when you're working in an MFC project. The AFX_ prefix is followed by the standard symbol name prefixes.
+The header files include symbol ID values for MFC common values. These symbols are only available when you're working in an MFC project. The `AFX_` prefix is followed by the standard symbol name prefixes.
 
 |||
 |-|-|
@@ -199,7 +199,7 @@ The header files include symbol ID values for MFC common values. These symbols a
 |AFX_IDS_UPDATING_ITEMS|AFX_IDS_USER_EXCEPTION|
 |AFX_IDS_VERB_EDIT|AFX_IDS_VERB_PROPERTIES|
 
-## MFC database programming symbols
+## MFC Database Programming
 
 The symbols in this table only appear in an MFC project when database support has been added. They support the MFC connection to SQL servers and database programming.
 
@@ -220,9 +220,11 @@ The symbols in this table only appear in an MFC project when database support ha
 |AFX_IDP_SQL_SNAPSHOT_ NOT_SUPPORTED|AFX_IDP_SQL_SQL_CONFORMANCE|
 |AFX_IDP_SQL_SQL_NO_TOTAL|AFX_IDP_SQL_UPDATE_DELETE_FAILED|
 
-## MFC Windows programming symbols
+## MFC Windows Programming
 
-These symbols are also part of the MFC support files, but they support standard Windows application functions and actions. These symbols are used with menus. When you are working with menus in the **Menu Editor**, these symbols will appear in the **Property Window** associated with common menu commands. For instance, if your application has a **File** menu with an **Exit** command, that command will be associated with the symbol ID_APP_EXIT in the [Properties window](/visualstudio/ide/reference/properties-window).
+These symbols are also part of the MFC support files, but they support standard Windows application functions and actions. These symbols are used with menus.
+
+When you're working with menus in the **Menu Editor**, these symbols will appear in the **Property Window** associated with common menu commands. For instance, if your application has a **File** menu with an **Exit** command, that command will be associated with the symbol ID_APP_EXIT in the [Properties window](/visualstudio/ide/reference/properties-window).
 
 ||||
 |-|-|-|
