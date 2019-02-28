@@ -1,8 +1,8 @@
 ---
 title: "is_function Class"
-ms.date: "11/04/2016"
-f1_keywords: ["type_traits/std::is"]
-helpviewer_keywords: ["is_function class", "is"]
+ms.date: "02/21/2019"
+f1_keywords: ["type_traits/std::is_function"]
+helpviewer_keywords: ["is_function class", "is_function"]
 ms.assetid: e5c0dbcd-829b-415f-853f-8c5be47c5040
 ---
 # is_function Class
