@@ -2,7 +2,7 @@
 title: "vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l"
 ms.date: "11/04/2016"
 apiname: ["_vswprintf_s_l", "vsprintf_s", "vswprintf_s", "_vsprintf_s_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["vswprintf_s", "vsprintf_s", "_vstprintf_s"]
 helpviewer_keywords: ["_vstprintf_s_l function", "vsprintf_s_l function", "_vstprintf_s function", "vswprintf_s function", "vstprintf_s function", "vstprintf_s_l function", "vswprintf_s_l function", "vsprintf_s function", "_vsprintf_s_l function", "formatted text [C++]", "_vswprintf_s_l function"]
