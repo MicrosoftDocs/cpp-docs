@@ -2,7 +2,7 @@
 title: "strtoul, _strtoul_l, wcstoul, _wcstoul_l"
 ms.date: "11/04/2016"
 apiname: ["_wcstoul_l", "_strtoul_l", "strtoul", "wcstoul"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["strtoul", "_tcstoul", "wcstoul"]
 helpviewer_keywords: ["_wcstoul_l function", "_tcstoul function", "_strtoul_l function", "string conversion, to integers", "wcstoul function", "strtoul function", "wcstoul_l function", "strtoul_l function", "tcstoul function"]
