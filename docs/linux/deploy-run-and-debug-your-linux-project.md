@@ -18,13 +18,13 @@ There are several ways to interact with and debug your Linux project.
 
 1. Select debugging mode in the **Debugging** property page.
 
-   GDB is used to debug applications running on Linux.  However, this can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
+   GDB is used to debug applications running on Linux. GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
 
    ![GDB options](media/settings_debugger.png)
 
-   - In **gdbserver** mode, GDB is run locally which connects to gdbserver running on the remote system.  Note that this is the only mode which the Linux Console window supports.
+   - In **gdbserver** mode, GDB is run locally, which connects to gdbserver on the remote system.  Note that this is the only mode that the Linux Console window supports.
 
-   - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system, which is more compatible if the local version of GDB is not compatible with the version installed on the target computer. |
+   - In **gdb** mode, the Visual Studio debugger drives GDB on the remote system. This is a better option if the local version of GDB is not compatible with the version installed on the target computer. |
 
    > [!NOTE]
    > If you are unable to hit breakpoints in gdbserver debugging mode, try gdb mode. gdb must first be [installed](download-install-and-setup-the-linux-development-workload.md) on the remote target.
@@ -51,7 +51,7 @@ There are several ways to interact with and debug your Linux project.
 
    ![Hit a breakpoint](media/hit_breakpoint.png)
 
-   Now, you can interact with the application in it's current state, view variables, and step through code by pressing command keys such as **F10** or **F11**.
+   Now, you can interact with the application in its current state, view variables, and step through code by pressing command keys such as **F10** or **F11**.
 
 1. If you want to use the Linux Console to interact with your app, select **Debug > Linux Console**.
 
@@ -63,7 +63,7 @@ There are several ways to interact with and debug your Linux project.
 
 ## Configure other debugging options
 
-- Command line arguments can be passed to the executable using the **Program Arguments** item in the project's **Debugging** property page.
+- Command-line arguments can be passed to the executable using the **Program Arguments** item in the project's **Debugging** property page.
 
    ![Program Arguments](media/settings_programarguments.png)
 
