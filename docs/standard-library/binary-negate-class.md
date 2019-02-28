@@ -1,13 +1,13 @@
 ---
 title: "binary_negate Class"
-ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::binary_negate"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::binary_negate"]
 helpviewer_keywords: ["binary_negate class"]
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
 ---
 # binary_negate Class
 
-A template class providing a member function that negates the return value of a specified binary function.
+A template class providing a member function that negates the return value of a specified binary function. Deprecated in C++17 in favor of [not_fn](functional-functions.md#not_fn).
 
 ## Syntax
 
