@@ -30,7 +30,7 @@ public value struct Guid
 
 ### Remarks
 
-For an example of how to generate a new `Platform::Guid` using the Windows function [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid), see [WinRT component: How to generate a GUID?](https://www.eternalcoding.com/?p=383)
+To generate a new `Platform::Guid`, use the [Windows::Foundation::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid#Windows_Foundation_GuidHelper_CreateNewGuid) static method.
 
 ### Requirements
 
@@ -133,6 +133,11 @@ The second `Platform::Guid` to compare.
 ### Return Value
 
 True if the two `Platform::Guid` instances are equal.
+
+### Remarks
+
+Prefer using the `==` operator instead of the
+[Windows::Foundation::GuidHelper::Equals](/uwp/api/windows.foundation.guidhelper.equals) static method.
 
 ## <a name="operator-inequality"></a> Guid::operator!= Operator
 

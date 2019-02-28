@@ -1,7 +1,7 @@
 ---
 title: "multiplies Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::multiplies"]
+f1_keywords: ["functional/std::multiplies"]
 helpviewer_keywords: ["multiplies class", "multiplies struct"]
 ms.assetid: ec85e8af-70ad-44ad-90f0-d961a5847864
 ---

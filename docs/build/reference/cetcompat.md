@@ -1,6 +1,6 @@
 ---
 title: "/CETCOMPAT (Control-flow Enforcement Technology compatible)"
-ms.date: "02/01/2019"
+ms.date: "02/19/2019"
 f1_keywords: ["/CETCOMPAT"]
 helpviewer_keywords: ["/CETCOMPAT linker option", "/CETCOMPAT"]
 ---
@@ -15,7 +15,7 @@ Specifies whether to mark an executable image as compatible with Control-flow En
 ## Arguments
 
 **NO**<br/>
-Specifies that the executalbe should not be marked compatible with CET.
+Specifies that the executable should not be marked compatible with CET.
 
 ## Remarks
 
@@ -35,7 +35,7 @@ The **/CETCOMPAT** option is available beginning in the Visual Studio 2019 Previ
 
 ### To set this linker option programmatically
 
-- This option does not have a programmatic equivalent.
+This option does not have a programmatic equivalent.
 
 ## See also
 

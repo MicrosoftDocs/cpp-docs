@@ -49,6 +49,6 @@ Any member of the source character set except the single quotation mark (**'**),
 
 *hexadecimal-escape-sequence hexadecimal-digit*
 
-## See Also
+## See also
 
 [C Constants](../c-language/c-constants.md)

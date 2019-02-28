@@ -16,6 +16,6 @@ Type conversions depend on the specified operator and the type of the operand or
 
 A character, a short integer, or an integer bit field, all either signed or not, or an object of enumeration type, can be used in an expression wherever an integer can be used. If an `int` can represent all the values of the original type, then the value is converted to `int`; otherwise, it is converted to `unsigned int`. This process is called "integral promotion." Integral promotions preserve value. That is, the value after promotion is guaranteed to be the same as before the promotion. See [Usual Arithmetic Conversions](../c-language/usual-arithmetic-conversions.md) for more information.
 
-## See Also
+## See also
 
 [Expressions and Assignments](../c-language/expressions-and-assignments.md)

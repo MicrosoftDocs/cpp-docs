@@ -1,7 +1,7 @@
 ---
 title: "greater Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::greater"]
+f1_keywords: ["functional/std::greater"]
 helpviewer_keywords: ["greater struct", "greater function"]
 ms.assetid: ebc348e1-edcd-466b-b21a-db95bd8f9079
 ---

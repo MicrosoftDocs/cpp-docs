@@ -1,7 +1,7 @@
 ---
 title: "plus Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::plus"]
+f1_keywords: ["functional/std::plus"]
 helpviewer_keywords: ["plus class", "plus struct"]
 ms.assetid: 4594abd5-b2f2-4fac-9b6b-fc9a2723f8cf
 ---
