@@ -1,13 +1,13 @@
 ---
 title: "mem_fun_ref_t Class"
-ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::mem_fun_ref_t"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::mem_fun_ref_t"]
 helpviewer_keywords: ["mem_fun_ref_t class"]
 ms.assetid: 7dadcac3-8d33-4e4b-a792-81bd53d3df39
 ---
 # mem_fun_ref_t Class
 
-An adapter class that allows a `non_const` member function that takes no arguments to be called as a unary function object when initialized with a reference argument.
+An adapter class that allows a `non_const` member function that takes no arguments to be called as a unary function object when initialized with a reference argument. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 
