@@ -144,7 +144,7 @@ int main()
 
     // Convert the wchar_t string to a char* string. Record
     // the length of the original string and add 1 to it to
-    // origsize for the terminating null character.
+    // account for the terminating null character.
     size_t origsize = wcslen(orig) + 1;
     size_t convertedChars = 0;
 
