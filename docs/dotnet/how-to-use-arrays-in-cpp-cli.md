@@ -496,7 +496,7 @@ int main() {
 
 Unlike standard C++ arrays, managed arrays are implicitly derived from an array base class from which they inherit common behavior. An example is the `Sort` method, which can be used to order the items in any array.
 
-For arrays that contain basic intrinsic types, you can call the `Sort` method. You can override the sort criteria, and doing so is required when you want to sort for arrays of complex types. In this case, the array element type must implement the <xref:System.IComparable.CompareTo> method.
+For arrays that contain basic intrinsic types, you can call the `Sort` method. You can override the sort criteria, and doing so is required when you want to sort for arrays of complex types. In this case, the array element type must implement the <xref:System.IComparable.CompareTo%2A> method.
 
 ```cpp
 // array_sort.cpp
@@ -513,7 +513,7 @@ int main() {
 
 ## Sorting arrays by using custom criteria
 
-To sort arrays that contain basic intrinsic types, just call the `Array::Sort` method. However, to sort arrays that contain complex types or to override the default sort criteria, override the <xref:System.IComparable.CompareTo> method.
+To sort arrays that contain basic intrinsic types, just call the `Array::Sort` method. However, to sort arrays that contain complex types or to override the default sort criteria, override the <xref:System.IComparable.CompareTo%2A> method.
 
 In the following example, a structure named `Element` is derived from <xref:System.IComparable>, and written to provide a <xref:System.IComparable.CompareTo%2A> method that uses the average of two integers as the sort criterion.
 

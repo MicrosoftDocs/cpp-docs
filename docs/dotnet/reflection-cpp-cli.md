@@ -10,7 +10,7 @@ Reflection allows known data types to be inspected at runtime. Reflection allows
 
 Note that the assembly name provided is the strong name (see [Creating and Using Strong-Named Assemblies](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)), which includes the assembly version, culture, and signing information. Note also that the name of the namespace in which the data type is defined can be retrieved, along with the name of the base class.
 
-The most common way to access reflection features is through the <xref:System.Object.GetType%2A> method. This method is provided by <xref:system.object>, from which all garbage-collected classes derive.
+The most common way to access reflection features is through the <xref:System.Object.GetType%2A> method. This method is provided by <xref:System.Object?displayProperty=nameWithType>, from which all garbage-collected classes derive.
 
 > [!NOTE]
 > Reflection on an .exe built with the Visual C++ compiler is only allowed if the .exe is built with the **/clr:pure** or **/clr:safe** compiler options. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unavailable in Visual Studio 2017. See [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information.
