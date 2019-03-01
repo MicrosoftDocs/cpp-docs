@@ -53,7 +53,6 @@ When you are finished storing or loading data to or from the `CArchive` object, 
 
    [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]
 
-## See Also
+## See also
 
 [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)
-

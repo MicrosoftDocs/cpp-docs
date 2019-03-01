@@ -298,7 +298,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 See [UnmapViewOfFile](/windows/desktop/api/memoryapi/nf-memoryapi-unmapviewoffile) in the Windows SDK for more details.
 
-## See Also
+## See also
 
 [CAtlFileMapping Class](../../atl/reference/catlfilemapping-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

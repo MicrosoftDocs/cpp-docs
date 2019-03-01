@@ -86,7 +86,6 @@ Note that if an active document only supports a single view, then the active doc
 
 A view object can also be a command target. By implementing `IOleCommandTarget` a view can receive commands that originate in the container's user interface (such as **New**, **Open**, **Save As**, **Print** on the **File** menu; and **Copy**, **Paste**, **Undo** on the **Edit** menu). For more information, see [Message Handling and Command Targets](../mfc/message-handling-and-command-targets.md).
 
-## See Also
+## See also
 
 [Active Document Containment](../mfc/active-document-containment.md)
-

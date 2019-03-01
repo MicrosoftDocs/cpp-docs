@@ -40,7 +40,6 @@ The header control is usually divided into parts, called "header items," each be
 
 - [Processing Header-Control Notifications](../mfc/processing-header-control-notifications.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

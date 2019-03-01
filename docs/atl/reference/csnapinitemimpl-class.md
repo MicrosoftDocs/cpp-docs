@@ -501,6 +501,6 @@ Specifies a toolbar button state. If this state is to be set, return TRUE. This 
 
 - BUTTONPRESSED The button is being pressed.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

@@ -14,7 +14,6 @@ This article explains how to create an object dynamically at run time. The proce
 
    [!code-cpp[NVC_MFCCObjectSample#6](../mfc/codesnippet/cpp/dynamic-object-creation_1.cpp)]
 
-## See Also
+## See also
 
 [Using CObject](../mfc/using-cobject.md)
-

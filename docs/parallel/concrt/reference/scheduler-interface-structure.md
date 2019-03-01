@@ -40,6 +40,6 @@ virtual void schedule(
 void*) = 0;
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

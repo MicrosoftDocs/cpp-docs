@@ -18,8 +18,7 @@ A slider control can display a selection range only if you specify the TBS_ENABL
 
 By default, the length of a slider control's slider varies as the selection range changes. If the slider control has the TBS_FIXEDLENGTH style, the length of the slider remains the same even if the selection range changes. A slider control that has the TBS_NOTHUMB style does not include a slider.
 
-## See Also
+## See also
 
 [Using CSliderCtrl](../mfc/using-csliderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

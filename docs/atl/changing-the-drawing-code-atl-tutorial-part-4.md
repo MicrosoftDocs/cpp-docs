@@ -149,7 +149,7 @@ In the next step, you will add an event.
 
 [Back to Step 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md) &#124; [On to Step 5](../atl/adding-an-event-atl-tutorial-part-5.md)
 
-## See Also
+## See also
 
 [Tutorial](../atl/active-template-library-atl-tutorial.md)<br/>
 [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md)

@@ -16,7 +16,6 @@ The following classes support thread pooling:
 
 - [CComSimpleThreadAllocator](../atl/reference/ccomsimplethreadallocator-class.md) Manages thread selection for an EXE module.
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

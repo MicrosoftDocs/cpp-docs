@@ -500,7 +500,7 @@ A [SizeSettings](#sizesettings_structure) value that encapsulates the requested 
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

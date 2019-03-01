@@ -26,7 +26,6 @@ The frame window also positions the status bar within its client area and manage
 
 Each frame window maintains an optional accelerator table that does keyboard accelerator translation for you automatically. This mechanism makes it easy to define accelerator keys (also called shortcut keys) that invoke menu commands.
 
-## See Also
+## See also
 
 [Using Frame Windows](../mfc/using-frame-windows.md)
-

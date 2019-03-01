@@ -320,6 +320,6 @@ void SetModified(BOOL bChanged = TRUE);
 
 The property sheet keeps track of which pages are "dirty," that is, property pages for which you have called `SetModified( TRUE )`. The **Apply Now** button will always be enabled if you call `SetModified( TRUE )` for one of the pages. The **Apply Now** button will be disabled when you call `SetModified( FALSE )` for one of the pages, but only if none of the other pages is "dirty."
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

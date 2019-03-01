@@ -20,10 +20,9 @@ A container application is an application that can incorporate embedded or linke
 
 [Advanced Features of Containers](../mfc/containers-advanced-features.md)
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Servers](../mfc/servers.md)<br/>
 [Activation](../mfc/activation-cpp.md)<br/>
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)
-

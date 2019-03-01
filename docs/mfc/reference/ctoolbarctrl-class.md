@@ -2200,7 +2200,7 @@ The return value is not used.
 
 This member function emulates the functionality of the [TB_SETWINDOWTHEME](/windows/desktop/Controls/tb-setwindowtheme) message, as described in the Windows SDK.
 
-## See Also
+## See also
 
 [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>

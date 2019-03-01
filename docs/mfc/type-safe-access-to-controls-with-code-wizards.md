@@ -23,9 +23,8 @@ Here the member variable *m_Checkbox* serves the same purpose as the member func
 
 For more information about controls, see [Controls](../mfc/controls-mfc.md).
 
-## See Also
+## See also
 
 [Type-Safe Access to Controls in a Dialog Box](../mfc/type-safe-access-to-controls-in-a-dialog-box.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Type-Safe Access to Controls Without Code Wizards](../mfc/type-safe-access-to-controls-without-code-wizards.md)
-

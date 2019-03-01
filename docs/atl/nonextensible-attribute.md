@@ -11,7 +11,6 @@ If a dual interface will not be extended at run time (that is, you won't provide
 
 For more information on the **nonextensible** attribute and an example, see [nonextensible](../windows/nonextensible.md).
 
-## See Also
+## See also
 
 [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md)
-

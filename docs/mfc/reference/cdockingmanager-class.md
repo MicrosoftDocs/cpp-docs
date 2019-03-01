@@ -1602,7 +1602,7 @@ Returns one of the following enumerated values: AFX_SDT_DEFAULT, AFX_SDT_VS2005,
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

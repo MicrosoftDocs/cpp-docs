@@ -293,6 +293,6 @@ The index object.
 static const int rank = _Rank;
 ```
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

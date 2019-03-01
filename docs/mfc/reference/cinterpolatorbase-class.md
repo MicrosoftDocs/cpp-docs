@@ -237,6 +237,6 @@ The velocity of the variable at the start of the transition.
 
 If the method succeeds, it returns S_OK. It returns E_FAIL if CCustomInterpolator is not set, or custom implementation returns FALSE from the SetInitialValueAndVelocity method.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

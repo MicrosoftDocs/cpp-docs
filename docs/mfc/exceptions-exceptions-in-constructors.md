@@ -12,7 +12,6 @@ When throwing an exception in a constructor, the memory for the object itself ha
 
 For more information, see [Exceptions: Freeing Objects in Exceptions](../mfc/exceptions-freeing-objects-in-exceptions.md).
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

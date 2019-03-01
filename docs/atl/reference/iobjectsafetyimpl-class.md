@@ -112,7 +112,7 @@ The implementation returns E_NOINTERFACE for any interface not supported by the 
 
 See [IObjectSafety::SetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768225.aspx) in the Windows SDK.
 
-## See Also
+## See also
 
 [IObjectSafety Interface](https://msdn.microsoft.com/library/aa768224.aspx)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

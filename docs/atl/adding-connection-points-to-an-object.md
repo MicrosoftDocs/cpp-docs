@@ -52,7 +52,6 @@ In either case, the Implement Connection Point Wizard uses a type library to do 
 
    - Use the **importlib** instruction on that type library.
 
-## See Also
+## See also
 
 [Connection Point](../atl/atl-connection-points.md)
-

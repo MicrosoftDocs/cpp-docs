@@ -227,7 +227,7 @@ The command ID of the message to be sent.
 ### Remarks
 
 This method synchronously sends the message mapped to the ID specified by command. It calls CWnd::SendMessage to place the message in the window's message queue and waits until that window procedure has processed the message before returning.
-## See Also
+## See also
 
 [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
 [ICommandTarget Interface](../../mfc/reference/icommandtarget-interface.md)

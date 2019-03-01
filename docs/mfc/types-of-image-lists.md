@@ -12,8 +12,7 @@ One of the overloads of the `Create` member function takes a flag to indicate wh
 
 When a nonmasked image is drawn, it is simply copied into the target device context; that is, it is drawn over the existing background color of the device context. When a masked image is drawn, the bits of the image are combined with the bits of the mask, typically producing transparent areas in the bitmap where the background color of the target device context shows through. You can specify several drawing styles when drawing a masked image. For example, you can specify that the image be dithered to indicate a selected object.
 
-## See Also
+## See also
 
 [Using CImageList](../mfc/using-cimagelist.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -73,7 +73,7 @@ CMFCWindowsManagerDialog(
 
 For more information about visual managers, see [Visualization Manager](../../mfc/visualization-manager.md).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

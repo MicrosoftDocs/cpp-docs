@@ -90,7 +90,7 @@ Use this page of the [MFC Application Wizard](../../mfc/reference/mfc-applicatio
   |**Use MFC in a shared DLL**|Links the MFC library to an application as a shared DLL. The application makes calls to the MFC library at run time. This option reduces the disk and memory requirements of applications that consist of multiple executable files that use the MFC library. Both Win32 and MFC applications can call functions in your DLL (default)|
   |**Use MFC in a static library**|Links an application to the static MFC library at build time.|
 
-## See Also
+## See also
 
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
 [File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md)

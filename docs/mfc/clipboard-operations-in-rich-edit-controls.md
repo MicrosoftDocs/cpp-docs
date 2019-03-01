@@ -16,8 +16,7 @@ You can also use `CanPaste` to determine whether any available Clipboard format 
 
 Rich edit controls register two Clipboard formats: rich-text format and a format called RichEdit Text and Objects. An application can register these formats by using the [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function, specifying the **CF_RTF** and **CF_RETEXTOBJ** values.
 
-## See Also
+## See also
 
 [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

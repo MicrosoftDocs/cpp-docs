@@ -310,7 +310,7 @@ Use this method to customize the list of colors that are used when the auto colo
 
 Use [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) to enable or disable the auto color feature.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

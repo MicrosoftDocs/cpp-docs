@@ -21,7 +21,6 @@ Aggregation delegates `IUnknown` calls, providing a pointer to the outer object'
 > [!NOTE]
 > If you use and release an interface from the aggregated object during `FinalConstruct`, you should add the [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) macro to the definition of your class object.
 
-## See Also
+## See also
 
 [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)
-

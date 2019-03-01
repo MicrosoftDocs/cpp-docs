@@ -35,6 +35,6 @@ To help you even more, the Microsoft Foundation Class Library provides a file ca
 
 The MFC Application Wizard, the Visual C++ wizards, resource editors, and the MFC framework do a lot of work for you and make managing your code much easier. The bulk of your application-specific code is in your document and view classes.
 
-## See Also
+## See also
 
 [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md)

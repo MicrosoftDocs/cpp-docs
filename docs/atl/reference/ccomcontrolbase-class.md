@@ -1484,7 +1484,7 @@ Value of the data member [CComControlBase::m_bRequiresSave](#m_brequiressave).
 
 `SetDirty(TRUE)` should be called to flag that the control has changed since it was last saved. The value of `m_bRequiresSave` is retrieved with [CComControlBase::GetDirty](#getdirty).
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

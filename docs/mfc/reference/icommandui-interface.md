@@ -125,6 +125,6 @@ This property sets the text of the user interface item for this command. Set Tex
 
 **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
-## See Also
+## See also
 
 [CCmdUI Class](../../mfc/reference/ccmdui-class.md)

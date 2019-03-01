@@ -41,9 +41,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc /openmp concrt-omp-count-primes.cpp**
 
-## See Also
+## See also
 
 [Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
 [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)
-

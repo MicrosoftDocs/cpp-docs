@@ -261,7 +261,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 See the example for [CRBMultiMap::CRBMultiMap](#crbmultimap).
 
-## See Also
+## See also
 
 [CRBTree Class](../../atl/reference/crbtree-class.md)<br/>
 [CAtlMap Class](../../atl/reference/catlmap-class.md)<br/>

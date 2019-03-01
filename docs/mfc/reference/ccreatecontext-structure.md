@@ -54,7 +54,7 @@ For more information on `CCreateContext`, see the MFC sample [VIEWEX](../../visu
 
 **Header:** afxext.h
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create)<br/>
@@ -63,4 +63,3 @@ For more information on `CCreateContext`, see the MFC sample [VIEWEX](../../visu
 [CSplitterWnd::Create](../../mfc/reference/csplitterwnd-class.md#create)<br/>
 [CSplitterWnd::CreateView](../../mfc/reference/csplitterwnd-class.md#createview)<br/>
 [CWnd::Create](../../mfc/reference/cwnd-class.md#create)
-

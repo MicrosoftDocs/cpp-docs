@@ -952,6 +952,6 @@ See [IAxWinHostWindow::CreateControlEx](#createcontrolex) for a description of t
 
 See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

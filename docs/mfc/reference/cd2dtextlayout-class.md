@@ -264,6 +264,6 @@ Text range to which this change applies
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -27,7 +27,6 @@ This page of the wizard identifies the interfaces that the control supports. By 
    |**\<**|Removes the interface name currently selected in the **Supported** list.|
    |**\<\<**|Removes all interface names currently listed in the **Supported** list.|
 
-## See Also
+## See also
 
 [ATL Control Wizard](../../atl/reference/atl-control-wizard.md)
-

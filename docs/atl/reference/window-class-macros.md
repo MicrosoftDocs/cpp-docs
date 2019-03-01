@@ -132,7 +132,6 @@ This macro allows you to specify the class parameters of a new window class, who
 
 If you want to use the default styles and background color, use the [DECLARE_WND_CLASS](#declare_wnd_class) macro. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 
-## See Also
+## See also
 
 [Macros](atl-macros.md)
-

@@ -6653,7 +6653,7 @@ Nonzero if the function is successful; otherwise 0.
 
 This function is successful only if the current pen is a geometric pen created by the second version of `CreatePen` member function, or if the pen is created with the first version of `CreatePen` and has a width, in device units, of greater than 1. The device context must contain a closed path. Any Bzier curves in the path are converted to sequences of straight lines approximating the widened curves. As such, no Bzier curves remain in the path after `WidenPath` is called.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

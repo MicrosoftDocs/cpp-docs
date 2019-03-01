@@ -212,10 +212,9 @@ else
 }
 ```
 
-## See Also
+## See also
 
 [CObject Class](cobject-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
 [Exception Processing](exception-processing.md)<br/>
 [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/p/?linkid=128045)
-

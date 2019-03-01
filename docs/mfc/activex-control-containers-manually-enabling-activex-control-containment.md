@@ -27,7 +27,6 @@ To support ActiveX controls, you must add one line of code to two of your projec
 
 After you have completed these steps, rebuild your project by clicking **Build** on the **Build** menu.
 
-## See Also
+## See also
 
 [ActiveX Control Containers](../mfc/activex-control-containers.md)
-

@@ -52,7 +52,6 @@ The following line is added to the control's .IDL file:
 
 This line assigns the Refresh method a specific ID number.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-

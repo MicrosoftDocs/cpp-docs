@@ -16,7 +16,6 @@ Do not use the C++ **delete** operator to destroy a frame window or view. Instea
 
 - [Detaching a CWnd from its HWND](../mfc/detaching-a-cwnd-from-its-hwnd.md)
 
-## See Also
+## See also
 
 [Destroying Window Objects](../mfc/destroying-window-objects.md)
-

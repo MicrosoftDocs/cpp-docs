@@ -20,7 +20,6 @@ The following topics correspond to the map entries.
 |[S](../../mfc/reference/wm-messages-s.md)|ON_WM_SETCURSOR through ON_WM_SYSKEYUP|
 |[T - Z](../../mfc/reference/wm-messages-t-z.md)|ON_WM_TIMECHANGE through ON_WM_WININICHANGE|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

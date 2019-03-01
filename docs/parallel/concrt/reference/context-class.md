@@ -281,9 +281,8 @@ This method will result in the process' default scheduler being created and/or a
 
 This function is new in Visual Studio 2015 and is identical to the [Yield](#yield) function but does not conflict with the Yield macro in Windows.h.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Scheduler Class](scheduler-class.md)<br/>
 [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

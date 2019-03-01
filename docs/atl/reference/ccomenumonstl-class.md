@@ -90,7 +90,7 @@ This template function can be used to implement the `_NewEnum` property of a col
 
 This code creates a **typedef** for `CComEnumOnSTL` that exposes a vector of `CComVariant`s by means of the `IEnumVariant` interface. The `CVariantCollection` class simply specializes `CreateSTLEnumerator` to work with enumerator objects of this type.
 
-## See Also
+## See also
 
 [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
 [ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../visual-cpp-samples.md)<br/>

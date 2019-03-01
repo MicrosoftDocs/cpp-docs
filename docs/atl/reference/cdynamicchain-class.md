@@ -174,7 +174,7 @@ TRUE if the message map is successfully added to the collection. Otherwise, FALS
 
 If the *dwChainID* value already exists in the collection, its associated object and message map are replaced by *pObject* and *dwMsgMapID*, respectively. Otherwise, a new entry is added.
 
-## See Also
+## See also
 
 [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

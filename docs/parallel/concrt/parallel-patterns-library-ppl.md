@@ -51,4 +51,3 @@ Each iteration of the loop requires a different amount of time to finish. The pe
 |[Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)|Describes the various parallel containers and objects that are provided by the PPL.|
 |[Cancellation in the PPL](cancellation-in-the-ppl.md)|Explains how to cancel the work that is being performed by a parallel algorithm.|
 |[Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)|Describes the Concurrency Runtime, which simplifies parallel programming, and contains links to related topics.|
-

@@ -43,7 +43,6 @@ The ATL Control Wizard generates a control with default code in both the HTML re
 
 See [Creating an ATL DHTML Control](../atl/creating-an-atl-dhtml-control.md) to get started building a DHTML control. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access Test Container.
 
-## See Also
+## See also
 
 [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)
-

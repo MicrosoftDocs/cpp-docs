@@ -555,7 +555,7 @@ This member function implements the behavior of the Win32 message [DTM_SETSYSTEM
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#8](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_13.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

@@ -45,9 +45,8 @@ The visual manager determines the appearance of buttons in each state. See [Visu
 
 **Header:** afxtoolbarbutton.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [Visualization Manager](../../mfc/visualization-manager.md)
-

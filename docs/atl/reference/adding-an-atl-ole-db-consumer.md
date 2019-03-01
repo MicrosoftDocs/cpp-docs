@@ -23,6 +23,6 @@ Use this wizard to add an ATL OLE DB consumer to a project. An ATL OLE DB consum
 
 1. Click **Finish** to close the wizard. The newly created OLE DB consumer code will be inserted in your project.
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)

@@ -186,7 +186,7 @@ STDMETHOD_(ULONG, Release)();
 
 In non-debug builds, always returns 0. In debug builds, returns a value that may be useful for diagnostics or testing.
 
-## See Also
+## See also
 
 [CComTearOffObject Class](../../atl/reference/ccomtearoffobject-class.md)<br/>
 [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>

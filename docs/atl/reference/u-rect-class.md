@@ -69,6 +69,6 @@ A `RECT` pointer.
 
 The argument to the pointer constructor is stored directly without conversion.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

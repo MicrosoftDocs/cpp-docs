@@ -149,7 +149,7 @@ In the second method overload syntax, TRUE if the method is successful; otherwis
 
 The image that you specify is not stretched to fit the dialog box client area.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

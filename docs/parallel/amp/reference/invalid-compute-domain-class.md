@@ -59,6 +59,6 @@ A description of the error.
 
 An instance of the `invalid_compute_domain` class
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

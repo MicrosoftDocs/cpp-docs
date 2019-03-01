@@ -44,7 +44,7 @@ Sometimes you may want `OnPreparePrinting` to perform different initialization d
 
 The `CPrintInfo` structure also contains a member named *m_strPageDesc*, which is used to format the strings displayed at the bottom of the screen in single-page and multiple-page modes. By default these strings are of the form "Page *n*" and "Pages *n* - *m*," but you can modify *m_strPageDesc* from within `OnPreparePrinting` and set the strings to something more elaborate. See [CPrintInfo Structure](../mfc/reference/cprintinfo-structure.md) in the *MFC Reference* for more information.
 
-## See Also
+## See also
 
 [Printing and Print Preview](../mfc/printing-and-print-preview.md)<br/>
 [Printing](../mfc/printing.md)<br/>

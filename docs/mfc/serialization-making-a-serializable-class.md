@@ -75,7 +75,6 @@ The following example shows how to use IMPLEMENT_SERIAL for a class, `CPerson`, 
 
 Once you have a serializable class, you can serialize objects of the class, as discussed in the article [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md).
 
-## See Also
+## See also
 
 [Serialization](../mfc/serialization-in-mfc.md)
-

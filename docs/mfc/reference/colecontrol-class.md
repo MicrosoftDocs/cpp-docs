@@ -3871,7 +3871,7 @@ The return value of the message dispatched.
 
 Call this function to dispatch specific messages through the control's message map.
 
-## See Also
+## See also
 
 [MFC Sample CIRC3](../../visual-cpp-samples.md)<br/>
 [MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>

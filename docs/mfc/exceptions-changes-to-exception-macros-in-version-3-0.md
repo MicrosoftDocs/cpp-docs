@@ -50,7 +50,6 @@ Using **THROW** in the catch block causes the pointer `e` to be deleted, so that
 
 For more information, see [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

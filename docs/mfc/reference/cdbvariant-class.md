@@ -206,7 +206,7 @@ Stores a pointer to a wide [CString](../../atl-mfc-shared/reference/cstringt-cla
 
 The `m_pstringW` data member belongs to a union. Before accessing `m_pstringW`, first check the value of [CDBVariant::m_dwType](#m_dwtype). If `m_dwType` is set to DBVT_WSTRING, then `m_pstringW` contains a valid pointer; otherwise, accessing `m_pstringW` will produce unreliable results.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CRecordset Class](../../mfc/reference/crecordset-class.md)

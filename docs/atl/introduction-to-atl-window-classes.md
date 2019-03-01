@@ -30,7 +30,6 @@ In addition to specific window classes, ATL provides several classes designed to
 
 - [CWinTraits](../atl/reference/cwintraits-class.md) and [CWinTraitsOR](../atl/reference/cwintraitsor-class.md) provide a simple method of standardizing the traits of an ATL window object.
 
-## See Also
+## See also
 
 [Window Classes](../atl/atl-window-classes.md)
-

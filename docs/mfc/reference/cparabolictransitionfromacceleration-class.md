@@ -118,6 +118,6 @@ The velocity of the animation variable at the end of the transition.
 DOUBLE m_dblFinalVelocity;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

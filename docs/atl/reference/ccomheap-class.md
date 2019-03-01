@@ -134,7 +134,7 @@ Call [CComHeap::Free](#free) to free the memory allocated by this method.
 
 Implemented using [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc).
 
-## See Also
+## See also
 
 [DynamicConsumer Sample](../../visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

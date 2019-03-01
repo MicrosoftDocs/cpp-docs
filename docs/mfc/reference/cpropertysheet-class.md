@@ -774,7 +774,7 @@ Call `SetWizardMode` before calling [DoModal](#domodal). After you call `SetWiza
 
 [!code-cpp[NVC_MFCDocView#142](../../mfc/codesnippet/cpp/cpropertysheet-class_15.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>

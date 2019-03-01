@@ -49,8 +49,7 @@ The addition of some common controls to a dialog box will cause the dialog box t
 
 - [Use dialog data exchange (DDX)](../mfc/dialog-data-exchange-and-validation.md)
 
-## See Also
+## See also
 
 [Making and Using Controls](../mfc/making-and-using-controls.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

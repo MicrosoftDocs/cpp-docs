@@ -27,7 +27,6 @@ Discusses design reasons for not making an event interface a dual interface.
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

@@ -170,6 +170,6 @@ A processor-specific spin wait used in destructors of message blocks to make sur
 virtual void wait();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

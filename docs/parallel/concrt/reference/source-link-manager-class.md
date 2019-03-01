@@ -200,7 +200,7 @@ Destroys the `source_link_manager` object.
 ~source_link_manager();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [single_link_registry Class](single-link-registry-class.md)<br/>

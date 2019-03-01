@@ -19,8 +19,7 @@ To use the GDI objects you've created, select them into the printer device conte
 
 To deallocate these GDI objects, override the [OnEndPrinting](../mfc/reference/cview-class.md#onendprinting) member function. The framework calls this function at the end of each print job, giving you the opportunity to deallocate printing-specific GDI objects before the application returns to other tasks.
 
-## See Also
+## See also
 
 [Printing](../mfc/printing.md)<br/>
 [How Default Printing Is Done](../mfc/how-default-printing-is-done.md)
-

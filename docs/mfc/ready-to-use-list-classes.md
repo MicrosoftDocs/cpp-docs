@@ -18,7 +18,6 @@ Stores pointers to **void** (generic pointers) in a linked list.
 [CStringList](../mfc/reference/cstringlist-class.md)<br/>
 Stores `CString` objects in a linked list.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

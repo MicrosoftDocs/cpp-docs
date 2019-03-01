@@ -255,9 +255,8 @@ A browser has options for safety level, configurable by the user. Because Web pa
 
 - Scripting and persistence occur without warning.
 
-## See Also
+## See also
 
 [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
 [MFC ActiveX Controls: Licensing an ActiveX Control](../mfc/mfc-activex-controls-licensing-an-activex-control.md)
-

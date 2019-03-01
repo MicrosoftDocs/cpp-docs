@@ -1432,7 +1432,7 @@ A return value of 0 or greater specifies the index of an item in the list box an
 
 [!code-cpp[NVC_MFC_CListBox#41](../../mfc/codesnippet/cpp/clistbox-class_41.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

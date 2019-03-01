@@ -11618,7 +11618,7 @@ virtual void ResizeDynamicLayout();
 
 ### Remarks
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

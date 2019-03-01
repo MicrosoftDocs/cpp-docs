@@ -36,7 +36,6 @@ You must have an existing MFC project that has code that uses the MFC ribbon cla
 
 1. Build the project and run the program.
 
-## See Also
+## See also
 
 [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
-

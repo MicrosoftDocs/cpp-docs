@@ -101,7 +101,7 @@ A pointer to the IID of *T*.
 
 Returns a pointer to the updated `CComQIPtr` object.
 
-## See Also
+## See also
 
 [CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)<br/>
 [CComQIPtr::CComQIPtr](#ccomqiptr)<br/>

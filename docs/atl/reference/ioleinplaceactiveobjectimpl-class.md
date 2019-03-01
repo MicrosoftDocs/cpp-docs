@@ -171,7 +171,7 @@ S_FALSE if the message was not translated.
 
 See [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) in the Windows SDK.
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>

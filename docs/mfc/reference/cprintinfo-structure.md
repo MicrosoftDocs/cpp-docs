@@ -307,7 +307,7 @@ Number of the first page of the document.
 
 Page numbers normally start at 1. This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member.
 
-## See Also
+## See also
 
 [MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
@@ -317,4 +317,3 @@ Page numbers normally start at 1. This value is stored in the `CPrintDialog` obj
 [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)<br/>
 [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)<br/>
 [CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
-

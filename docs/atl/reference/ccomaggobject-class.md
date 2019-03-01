@@ -214,7 +214,7 @@ STDMETHOD_(ULONG, Release)();
 
 In debug builds, `Release` returns a value that may be useful for diagnostics or testing. In non-debug builds, `Release` always returns 0.
 
-## See Also
+## See also
 
 [CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
 [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>

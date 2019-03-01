@@ -309,7 +309,7 @@ Should return FALSE if this file name can not be passed further to the file dial
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

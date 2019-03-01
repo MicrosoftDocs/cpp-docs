@@ -173,6 +173,6 @@ If the array is to be accessed from a Visual C++ program, it is recommended that
 
 The upper bound depends on the number of elements and the lower bound value. For example, if the lower bound is 0 and the number of elements is 10, the upper bound will automatically be set to 9.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

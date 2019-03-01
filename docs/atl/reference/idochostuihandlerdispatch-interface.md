@@ -56,7 +56,6 @@ The definition of this interface is available as IDL or C++, as shown below.
 |IDL|ATLIFace.idl|
 |C++|ATLIFace.h (also included in ATLBase.h)|
 
-## See Also
+## See also
 
 [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx)
-

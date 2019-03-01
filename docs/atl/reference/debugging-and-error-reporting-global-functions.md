@@ -211,8 +211,7 @@ If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure inste
 
 **Header:** atldef.h
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Debugging and Error Reporting Macros](../../atl/reference/debugging-and-error-reporting-macros.md)
-

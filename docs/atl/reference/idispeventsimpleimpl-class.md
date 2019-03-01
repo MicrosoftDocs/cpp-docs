@@ -258,7 +258,7 @@ Once the connection is broken, events will no longer be routed to the handler fu
 
 `Unavise` breaks a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface).
 
-## See Also
+## See also
 
 [_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)<br/>
 [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)<br/>

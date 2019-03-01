@@ -84,6 +84,6 @@ HRESULT Unlock() throw();
 
 Returns S_OK.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

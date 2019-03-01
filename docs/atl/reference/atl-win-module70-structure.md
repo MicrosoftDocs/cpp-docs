@@ -42,7 +42,6 @@ Used to track window class registrations so that they can be properly unregister
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)
-

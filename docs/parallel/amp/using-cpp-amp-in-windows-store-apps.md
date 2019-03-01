@@ -107,7 +107,7 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
     });
 ```
 
-## See Also
+## See also
 
 [Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

@@ -68,8 +68,7 @@ Finally, the Add Method Wizard adds the stub function `CSampleCtrl::PtInCircle` 
 
 [!code-cpp[NVC_MFC_AxUI#21](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-methods_4.cpp)]
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [Class View and Object Browser Icons](/visualstudio/ide/class-view-and-object-browser-icons)
-

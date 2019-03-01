@@ -35,7 +35,6 @@ In an SDI application, step 1 is performed once, when the document is first crea
 
 - [Cleaning Up Documents and Views](../mfc/cleaning-up-documents-and-views.md)
 
-## See Also
+## See also
 
 [Document/View Architecture](../mfc/document-view-architecture.md)
-

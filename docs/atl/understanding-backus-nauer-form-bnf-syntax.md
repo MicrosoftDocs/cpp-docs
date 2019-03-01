@@ -90,7 +90,6 @@ val 'testhex' = d '&H55'
 
 specifies that the key name `testhex` is a DWORD value set to hexadecimal 55 (decimal 85). Note this format adheres to the **&H** notation as found in the Visual Basic specification.
 
-## See Also
+## See also
 
 [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)
-

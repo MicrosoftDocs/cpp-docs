@@ -151,6 +151,6 @@ Called by [CComAutoThreadModule::Unlock](../../atl/reference/ccomautothreadmodul
 
 The lock count on the thread is used for statistical purposes.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

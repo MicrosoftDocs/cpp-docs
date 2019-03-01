@@ -19,6 +19,6 @@ ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
 
 The only `CWinApp` member function that you must override is `InitInstance`.
 
-## See Also
+## See also
 
 [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)

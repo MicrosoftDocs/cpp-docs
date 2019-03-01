@@ -106,6 +106,6 @@ A standard HRESULT value.
 
 See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)

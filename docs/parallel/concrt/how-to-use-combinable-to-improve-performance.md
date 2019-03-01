@@ -57,7 +57,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 For an example that uses map and reduce operations to produce the same results, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
-## See Also
+## See also
 
 [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [combinable Class](../../parallel/concrt/reference/combinable-class.md)<br/>

@@ -122,7 +122,7 @@ The address of the previously associated [CAccessToken](../../atl/reference/cacc
 
 If this method is called for the purposes that include the reversion of an impersonation of the `CAccessToken` object, the [Detach](#detach) method should be used instead.
 
-## See Also
+## See also
 
 [ATLSecurity Sample](../../visual-cpp-samples.md)<br/>
 [Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>

@@ -84,8 +84,7 @@ Extended styles used for creation of a window.
 
 A combination of extended styles that are passed in *dwExStyle* and default ones specified by `t_dwExStyle`, using the logical OR operator
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Understanding Window Traits](../../atl/understanding-window-traits.md)
-

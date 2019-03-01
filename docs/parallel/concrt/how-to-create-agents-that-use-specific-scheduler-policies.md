@@ -44,8 +44,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc permute-strings.cpp**
 
-## See Also
+## See also
 
 [Scheduler Policies](../../parallel/concrt/scheduler-policies.md)<br/>
 [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)
-

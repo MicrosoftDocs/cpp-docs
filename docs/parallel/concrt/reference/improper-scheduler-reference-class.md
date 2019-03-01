@@ -50,7 +50,7 @@ improper_scheduler_reference() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Scheduler Class](scheduler-class.md)

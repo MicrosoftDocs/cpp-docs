@@ -48,7 +48,7 @@ Information retrieved by the [CDaoQueryDef::GetParameterInfo](../../mfc/referenc
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)

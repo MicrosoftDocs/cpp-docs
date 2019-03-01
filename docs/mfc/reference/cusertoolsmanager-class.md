@@ -440,7 +440,7 @@ void SetFilter(const CString& strFilter);
 *strFilter*<br/>
 [in] Specifies the filter.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

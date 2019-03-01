@@ -17,7 +17,6 @@ A property sheet is a special kind of dialog box that is generally used to modif
 > [!NOTE]
 >  When you are trying to show a property sheet by using `CPropertySheet::DoModal`, the system might generate a first-chance exception. This exception occurs because the system is trying to change the [Window Styles](../mfc/reference/styles-used-by-mfc.md#window-styles) of the object before the object has been created. For more information about this exception, and also how to avoid it or handle it, see [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal).
 
-## See Also
+## See also
 
 [Property Sheets](../mfc/property-sheets-mfc.md)
-

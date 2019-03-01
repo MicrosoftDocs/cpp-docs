@@ -2042,7 +2042,7 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
   See the example for [CanUndo](#canundo).
 
-## See Also
+## See also
 
 [MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

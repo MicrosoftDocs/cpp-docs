@@ -44,6 +44,6 @@ Returns TRUE if the object has been signaled.
 
 This is useful if you want to wait for an object's event to happen and be notified of it happening, but allow window messages to be dispatched while waiting.
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)

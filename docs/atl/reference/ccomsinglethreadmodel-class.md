@@ -159,6 +159,6 @@ typedef CComSingleThreadModel ThreadModelNoCS;
 
 See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

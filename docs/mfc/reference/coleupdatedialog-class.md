@@ -107,7 +107,7 @@ Completion status for the dialog box. One of the following values:
 
 All links and/or embeddings are updated unless the user selects the Cancel button.
 
-## See Also
+## See also
 
 [MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleLinksDialog Class](../../mfc/reference/colelinksdialog-class.md)<br/>

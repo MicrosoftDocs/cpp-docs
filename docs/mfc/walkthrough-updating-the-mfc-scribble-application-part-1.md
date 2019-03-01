@@ -254,7 +254,7 @@ A *visual manager* is a global object that controls all drawing for an applicati
 
 You've modified the classic Scribble 1.0 MFC sample to use the **Ribbon Designer**. Now go to [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md).
 
-## See Also
+## See also
 
 [Walkthroughs](../mfc/walkthroughs-mfc.md)<br/>
 [Walkthrough: Updating the MFC Scribble Application (Part 2)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)

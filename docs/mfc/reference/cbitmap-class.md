@@ -483,9 +483,8 @@ The previous bitmap dimensions. Height is in the `cy` member variable of the `CS
 
 The GDI does not use these values except to return them when an application calls the [GetBitmapDimension](#getbitmapdimension) member function.
 
-## See Also
+## See also
 
 [MFC Sample MDI](../../visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

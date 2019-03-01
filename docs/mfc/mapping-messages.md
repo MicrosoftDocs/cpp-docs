@@ -10,7 +10,6 @@ Each framework class that can receive messages or commands has its own "message 
 
 In spite of the name "message map," message maps handle both messages and commands — all three categories of messages listed in [Message Categories](../mfc/message-categories.md).
 
-## See Also
+## See also
 
 [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
-

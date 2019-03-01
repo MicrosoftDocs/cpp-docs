@@ -180,9 +180,8 @@ Call this method to search for a map element with a key that exactly matches the
 
 [!code-cpp[NVC_MFCCollections#74](../../mfc/codesnippet/cpp/cmapstringtostring-class_2.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
