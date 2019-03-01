@@ -25,6 +25,6 @@ _T&& declval();
 
 **Namespace:** stdx
 
-## See Also
+## See also
 
 [stdx Namespace](stdx-namespace.md)

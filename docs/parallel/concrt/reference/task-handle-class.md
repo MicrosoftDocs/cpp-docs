@@ -91,7 +91,7 @@ Destroys the `task_handle` object.
 ~task_handle();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [task_group Class](task-group-class.md)<br/>

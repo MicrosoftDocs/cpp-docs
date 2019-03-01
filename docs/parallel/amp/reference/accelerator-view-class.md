@@ -322,6 +322,6 @@ Destroys the accelerator_view object.
 
 ### Return Value
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

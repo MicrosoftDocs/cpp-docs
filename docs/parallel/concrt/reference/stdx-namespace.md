@@ -24,7 +24,6 @@ namespace stdx;
 
 **Header:** ppltasks.h
 
-## See Also
+## See also
 
 [Reference](reference-concurrency-runtime.md)
-

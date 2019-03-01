@@ -169,7 +169,7 @@ The maximum number of links that the `multi_link_registry` object can hold.
 
 After a bound is set, unlinking an entry will cause the `multi_link_registry` object to enter an immutable state where further calls to `add` will throw an `invalid_link_target` exception.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [single_link_registry Class](single-link-registry-class.md)

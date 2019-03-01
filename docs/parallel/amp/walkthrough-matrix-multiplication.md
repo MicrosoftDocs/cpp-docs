@@ -287,7 +287,7 @@ void main() {
 
 4. Choose the **Space** bar to exit the application.
 
-## See Also
+## See also
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Walkthrough: Debugging a C++ AMP Application](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)

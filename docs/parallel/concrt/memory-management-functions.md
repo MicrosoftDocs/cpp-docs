@@ -25,8 +25,7 @@ Use the `Alloc` and `Free` functions when you allocate and free a fixed set of a
 
 For an example that uses the `Alloc` and `Free` functions to improve memory performance, see [How to: Use Alloc and Free to Improve Memory Performance](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [How to: Use Alloc and Free to Improve Memory Performance](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
-

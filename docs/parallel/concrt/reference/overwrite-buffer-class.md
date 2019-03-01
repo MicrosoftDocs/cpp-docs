@@ -324,7 +324,7 @@ The payload of the currently stored message.
 
 The value stored in the `overwrite_buffer` could change immediately after this method returns. This method will wait until a message arrives if no message is currently stored in the `overwrite_buffer`.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [unbounded_buffer Class](unbounded-buffer-class.md)<br/>

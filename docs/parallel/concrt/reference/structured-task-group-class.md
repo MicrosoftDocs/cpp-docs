@@ -210,7 +210,7 @@ After this function returns, the `structured_task_group` object is considered in
 
 In the non-exceptional path of execution, you have a mandate to call either this method or the `run_and_wait` method before the destructor of the `structured_task_group` executes.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [task_group Class](task-group-class.md)<br/>

@@ -270,6 +270,6 @@ The tuple to modulo by.
 
 The result of the first specified argument modulus the second specified argument.
 
-## See Also
+## See also
 
 [Concurrency Namespace ](concurrency-namespace-cpp-amp.md)

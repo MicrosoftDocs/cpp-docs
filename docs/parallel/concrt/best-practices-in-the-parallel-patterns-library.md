@@ -246,7 +246,7 @@ For more information about lambda expressions, see [Lambda Expressions](../../cp
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
@@ -260,4 +260,3 @@ For more information about lambda expressions, see [Lambda Expressions](../../cp
 [How to: Use combinable to Improve Performance](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>
 [Best Practices in the Asynchronous Agents Library](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)<br/>
 [General Best Practices in the Concurrency Runtime](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
-

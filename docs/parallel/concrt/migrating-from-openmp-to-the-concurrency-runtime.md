@@ -53,10 +53,9 @@ Given an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-w
 [How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
 Given an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) loop that uses the [reduction](../../parallel/openmp/reference/reduction.md) clause, demonstrates how to convert it to use the Concurrency Runtime.
 
-## See Also
+## See also
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)<br/>
 [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
-

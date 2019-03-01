@@ -112,6 +112,6 @@ Constructs a `task_completion_event` object.
 task_completion_event();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

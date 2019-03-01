@@ -123,7 +123,7 @@ When called by a thread proxy backed by a regular Windows thread, `YieldToSystem
 
 `YieldToSystem` must be called on the `IThreadProxy` interface that represents the currently executing thread or the results are undefined.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IExecutionContext Structure](iexecutioncontext-structure.md)<br/>

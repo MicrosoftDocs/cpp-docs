@@ -658,6 +658,6 @@ inline void tile_static_memory_fence(const tile_barrier& _Barrier) restrict(amp)
 *_Barrier*<br/>
 A tile_barrier object.
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

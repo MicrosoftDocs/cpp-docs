@@ -53,7 +53,7 @@ A chain of `IUMSUnblockNotification` interfaces.
 
 The returned notifications are invalid once the execution contexts are rescheduled.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IUMSScheduler Structure](iumsscheduler-structure.md)<br/>

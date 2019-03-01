@@ -103,7 +103,6 @@ namespace Concurrency;
 
 **Header:** amp.h
 
-## See Also
+## See also
 
 [Reference (C++ AMP)](reference-cpp-amp.md)
-

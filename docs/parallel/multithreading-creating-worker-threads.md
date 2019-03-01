@@ -81,6 +81,6 @@ AfxBeginThread(MyThreadProc, pNewObject);
 
 - [Multithreading: Creating User-Interface Threads](multithreading-creating-user-interface-threads.md)
 
-## See Also
+## See also
 
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

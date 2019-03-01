@@ -33,4 +33,3 @@ Functions in the `precise_math` namespace are C99 compliant. Both single-precisi
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 C++ AMP accelerates the execution of your C++ code by taking advantage of the data-parallel hardware that's commonly present as a graphics processing unit (GPU) on a discrete graphics card.
-

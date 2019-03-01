@@ -60,7 +60,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc carmichael-primes.cpp**
 
-## See Also
+## See also
 
 [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

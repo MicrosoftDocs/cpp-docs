@@ -574,6 +574,6 @@ Other data source.
 *_Rank*<br/>
 The rank of the section.
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

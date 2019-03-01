@@ -108,4 +108,3 @@ Compares the behavior of the synchronization data structures to those provided b
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 Describes the Concurrency Runtime, which simplifies parallel programming, and contains links to related topics.
-
