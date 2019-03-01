@@ -92,7 +92,7 @@ Returns a pointer to the updated `CComPtr` object
 
 This operation AddRefs the new object and releases the existing object, if one exists.
 
-## See Also
+## See also
 
 [CComPtr::CComPtr](#ccomptr)<br/>
 [CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)<br/>

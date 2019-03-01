@@ -198,7 +198,7 @@ See the documentation for the base class [CRBTree](../../atl/reference/crbtree-c
 
 [!code-cpp[NVC_ATL_Utilities#84](../../atl/codesnippet/cpp/crbmap-class_4.cpp)]
 
-## See Also
+## See also
 
 [CRBTree Class](../../atl/reference/crbtree-class.md)<br/>
 [CAtlMap Class](../../atl/reference/catlmap-class.md)<br/>

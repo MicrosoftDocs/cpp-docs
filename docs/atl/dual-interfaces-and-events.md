@@ -13,7 +13,6 @@ While it is possible to design an event interface as a dual, there are a number 
 
 There are further reasons to avoid dual event interfaces; neither Visual Basic nor Internet Explorer support them.
 
-## See Also
+## See also
 
 [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md)
-

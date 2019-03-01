@@ -38,7 +38,6 @@ During the parsing of the script, the Registrar expands `'%MODULE%, 1'` to `c:\m
 >
 >  When building a project that outputs a DLL, ATL will not add quotation marks to the path name if **%MODULE%** or **%MODULE_RAW%** is used.
 
-## See Also
+## See also
 
 [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)
-

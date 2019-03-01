@@ -55,9 +55,8 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
    |**Free-threaded marshaler**|Creates a free-threaded marshaler object to marshal interface pointers efficiently between threads in the same process. Available to object specifying **Both** as the threading model.|
    |**IObjectWithSite** (IE object support)|Implements [IObjectWithSiteImpl](../../atl/reference/iobjectwithsiteimpl-class.md), which provides a simple way to support communication between an object and its site in a container.|
 
-## See Also
+## See also
 
 [ATL Simple Object Wizard](../../atl/reference/atl-simple-object-wizard.md)<br/>
 [ATL Simple Object](../../atl/reference/adding-an-atl-simple-object.md)<br/>
 [In-Process Server Threading Issues](/windows/desktop/com/in-process-server-threading-issues)
-

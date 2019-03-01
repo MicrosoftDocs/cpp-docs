@@ -110,6 +110,6 @@ Next, you will add a custom property to the control.
 
 [Back to Step 1](../atl/creating-the-project-atl-tutorial-part-1.md) &#124; [On to Step 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)
 
-## See Also
+## See also
 
 [Tutorial](../atl/active-template-library-atl-tutorial.md)

@@ -38,7 +38,6 @@ You can use an `IDispatchImpl` base class to provide an implementation of a disp
 > [!NOTE]
 >  ATL offers the [IDispEventImpl](../atl/reference/idispeventimpl-class.md) and [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) classes to help you implement dispinterfaces without requiring a type library containing the definition of a compatible dual interface.
 
-## See Also
+## See also
 
 [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md)
-

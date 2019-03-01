@@ -222,7 +222,7 @@ typedef tihclass _tihclass;
 
 By default, the class is `CComTypeInfoHolder`. `CComTypeInfoHolder` manages the type information for the class.
 
-## See Also
+## See also
 
 [_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)<br/>
 [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)<br/>

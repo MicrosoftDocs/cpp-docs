@@ -630,7 +630,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 The *bCopy* flag is taken into account when elements of type BSTR or VARIANT are added to an array. The default value of TRUE ensures that a new copy is made of the data when the element is added to the array.
 
-## See Also
+## See also
 
 [SAFEARRAY Data Type](/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)<br/>
 [CComSafeArray::Create](#create)<br/>

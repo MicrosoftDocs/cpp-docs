@@ -16,9 +16,8 @@ ATL provides three types of message handler functions:
 |[CommandHandler](../atl/commandhandler.md)|[COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler)|
 |[NotifyHandler](../atl/notifyhandler.md)|[NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)|
 
-## See Also
+## See also
 
 [Implementing a Window](../atl/implementing-a-window.md)<br/>
 [Message Maps](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](/windows/desktop/controls/wm-notify)
-

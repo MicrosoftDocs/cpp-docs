@@ -60,6 +60,6 @@ Returns the hash value.
 
 The default hashing algorithm is very simple: the return value is the element number. Override this function if a more complicated algorithm is required.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

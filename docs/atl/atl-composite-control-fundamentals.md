@@ -20,9 +20,8 @@ The ATL Project Wizard and **Add Class** dialog box automate the process of crea
 
 - [Building and testing the ATL project](../atl/building-and-testing-the-atl-project.md)
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [Composite Control Global Functions](../atl/reference/composite-control-global-functions.md)<br/>
 [Composite Control Macros](../atl/reference/composite-control-macros.md)
-

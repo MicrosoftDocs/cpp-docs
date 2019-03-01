@@ -167,7 +167,7 @@ Reserved.
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-## See Also
+## See also
 
 [CAtlModule Class](../../atl/reference/catlmodule-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

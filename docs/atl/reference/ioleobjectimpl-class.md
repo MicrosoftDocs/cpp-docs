@@ -770,7 +770,7 @@ Returns S_OK.
 
 See [IOleObject::Update](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-update) in the Windows SDK.
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>

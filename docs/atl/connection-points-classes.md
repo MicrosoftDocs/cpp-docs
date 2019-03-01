@@ -32,9 +32,8 @@ The following classes provide support for connection points:
 
 [Event Handling and ATL](../atl/event-handling-and-atl.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)<br/>
 [Connection Point Macros](../atl/reference/connection-point-macros.md)<br/>
 [Connection Point Global Functions](../atl/reference/connection-point-global-functions.md)
-

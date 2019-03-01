@@ -62,6 +62,6 @@ Next, modify the HTML resource to invoke the methods you created. You will add t
 
 You can now build and [test the modified DHTML control](../atl/testing-the-modified-atl-dhtml-control.md).
 
-## See Also
+## See also
 
 [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)

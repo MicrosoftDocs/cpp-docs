@@ -42,7 +42,6 @@ Used to coordinate access to internal data in multithreaded situations.
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)
-

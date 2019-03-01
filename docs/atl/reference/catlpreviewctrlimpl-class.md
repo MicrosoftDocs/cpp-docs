@@ -288,6 +288,6 @@ Specifies whether the control should be redrawn.
 
 ### Remarks
 
-## See Also
+## See also
 
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)

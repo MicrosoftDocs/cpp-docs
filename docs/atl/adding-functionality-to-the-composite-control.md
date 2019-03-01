@@ -21,7 +21,6 @@ After inserting an ActiveX control in the dialog resource, right-click the contr
 
 Connection points for ActiveX controls on the composite control are automatically connected and disconnected via calls to [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).
 
-## See Also
+## See also
 
 [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)
-

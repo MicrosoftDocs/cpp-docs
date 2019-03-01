@@ -35,7 +35,6 @@ You change the settings for a particular object with the Applications page. Simp
 
 - The Endpoints page lists the set of protocols and endpoints available for use by clients of the selected DCOM server.
 
-## See Also
+## See also
 
 [Services](../atl/atl-services.md)
-

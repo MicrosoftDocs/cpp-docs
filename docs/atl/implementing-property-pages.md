@@ -36,7 +36,7 @@ For an example property page implementation, see [Example: Implementing a Proper
 > [!NOTE]
 > If you want to host ActiveX controls in your property page, you will need to change the derivation of your wizard-generated class. Replace **CDialogImpl\<CYourClass>** with **CAxDialogImpl\<CYourClass>** in the list of base classes.
 
-## See Also
+## See also
 
 [Property Pages](../atl/atl-com-property-pages.md)<br/>
 [ATLPages Sample](../visual-cpp-samples.md)

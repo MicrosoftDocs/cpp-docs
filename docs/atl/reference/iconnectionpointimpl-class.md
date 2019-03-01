@@ -139,7 +139,7 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 
 See [IConnectionPoint::Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) in the Windows SDK.
 
-## See Also
+## See also
 
 [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -16,7 +16,6 @@ Class [CWindowImpl](../atl/reference/cwindowimpl-class.md) allows you to impleme
 
 - How to [implement a window with CWindowImpl](../atl/implementing-a-window-with-cwindowimpl.md).
 
-## See Also
+## See also
 
 [Window Classes](../atl/atl-window-classes.md)
-

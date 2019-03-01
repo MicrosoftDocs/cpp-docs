@@ -62,7 +62,7 @@ CAutoPtrArray() throw();
 
 Initializes the smart pointer array.
 
-## See Also
+## See also
 
 [CAtlArray Class](../../atl/reference/catlarray-class.md)<br/>
 [CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)<br/>

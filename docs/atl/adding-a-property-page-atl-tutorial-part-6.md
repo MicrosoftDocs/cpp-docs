@@ -140,6 +140,6 @@ Next, you will put your control on a Web page.
 
 [Back to Step 5](../atl/adding-an-event-atl-tutorial-part-5.md) &#124; [On to Step 7](../atl/putting-the-control-on-a-web-page-atl-tutorial-part-7.md)
 
-## See Also
+## See also
 
 [Tutorial](../atl/active-template-library-atl-tutorial.md)

@@ -526,7 +526,7 @@ Returns the service's return value.
 
 This method processes the command line (with [CAtlServiceModuleT::ParseCommandLine](#parsecommandline)) and then starts the service (using [CAtlServiceModuleT::Start](#start)).
 
-## See Also
+## See also
 
 [CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

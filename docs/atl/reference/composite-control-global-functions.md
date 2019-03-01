@@ -521,7 +521,7 @@ The example below shows how you might define an event sink class, `CEasySink`, t
 
 [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Composite Control Macros](../../atl/reference/composite-control-macros.md)

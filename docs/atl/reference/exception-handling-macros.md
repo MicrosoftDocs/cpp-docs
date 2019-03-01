@@ -60,6 +60,6 @@ _ATLTRY
 
 Used in conjunction with [_ATLCATCH](#_atlcatch) or [_ATLCATCHALL](#_atlcatchall). Resolves to the C++ symbol [try](../../cpp/try-throw-and-catch-statements-cpp.md).
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)
