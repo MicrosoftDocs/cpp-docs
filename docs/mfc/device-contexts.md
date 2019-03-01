@@ -38,7 +38,6 @@ In such a case, you can use a [CClientDC](../mfc/reference/cclientdc-class.md) d
 
 - [Coordinate spaces and transformations](/windows/desktop/gdi/coordinate-spaces-and-transformations)
 
-## See Also
+## See also
 
 [Window Objects](../mfc/window-objects.md)
-

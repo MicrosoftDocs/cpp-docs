@@ -642,7 +642,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
   **Header** afxdd_.h
 
-## See Also
+## See also
 
 [Standard Dialog Data Validation Routines](standard-dialog-data-validation-routines.md)<br/>
 [Macros and Globals](mfc-macros-and-globals.md)<br/>

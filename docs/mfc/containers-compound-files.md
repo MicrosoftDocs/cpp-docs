@@ -65,7 +65,7 @@ After successfully creating an application that has a document class derived fro
 
 In the *OLE Programmer's Reference*, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream), [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage), and [ILockBytes](/windows/desktop/api/objidl/nn-objidl-ilockbytes).
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Containers: User-Interface Issues](../mfc/containers-user-interface-issues.md)<br/>

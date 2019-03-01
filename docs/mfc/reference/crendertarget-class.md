@@ -1030,6 +1030,6 @@ Pointer to CD2DResource object.
 
 TRUE is object if valid; otherwise FALSE.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -143,7 +143,7 @@ Each class derived from `CCtrlView` adds its own functionality to its override o
 
 For more information on changing window styles, see the [Changing the Styles of a Window Created by MFC](../../mfc/changing-the-styles-of-a-window-created-by-mfc.md).
 
-## See Also
+## See also
 
 [CView Class](../../mfc/reference/cview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -45,7 +45,7 @@ If you want to predefine some tools on the application startup, you must overrid
 
 1. For each tool, set its text label by setting `CUserTool::m_strLabel` and set its command by calling `CUserTool::SetCommand`. The default implementation of [CUserTool Class](../mfc/reference/cusertool-class.md) automatically retrieves available icons from the program that is specified in the call to `SetCommand`.
 
-## See Also
+## See also
 
 [Customization for MFC](../mfc/customization-for-mfc.md)<br/>
 [CUserTool Class](../mfc/reference/cusertool-class.md)<br/>

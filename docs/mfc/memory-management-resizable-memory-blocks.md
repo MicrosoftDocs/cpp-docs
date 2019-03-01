@@ -11,7 +11,6 @@ The **new** and **delete** operators, described in the article [Memory Managemen
 > [!IMPORTANT]
 >  Mixing the **new** and **delete** operators with the resizable memory-allocation functions on the same memory block will result in corrupted memory in the Debug version of MFC. You should not use **realloc** on a memory block allocated with **new**. Likewise, you should not allocate a memory block with the **new** operator and delete it with **free**, or use the **delete** operator on a block of memory allocated with **malloc**.
 
-## See Also
+## See also
 
 [Memory Management: Heap Allocation](../mfc/memory-management-heap-allocation.md)
-

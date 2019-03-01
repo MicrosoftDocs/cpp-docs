@@ -58,7 +58,6 @@ In the most generic cases, the `IContinueCallback::FContinue` function is called
 
 `FContinue`, however, is not used in the context of `IPrint::Print`; rather, printing uses `IContinueCallback::FContinuePrint`. Any printing object should periodically call `FContinuePrinting` passing the number of pages that have been printing, the number of the page being printed, and an additional string describing the print status that the client may choose to display to the user (such as "Page 5 of 19").
 
-## See Also
+## See also
 
 [Active Document Containers](../mfc/active-document-containers.md)
-

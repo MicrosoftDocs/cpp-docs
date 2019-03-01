@@ -84,6 +84,6 @@ virtual ~CFolderPickerDialog();
 
 ### Remarks
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

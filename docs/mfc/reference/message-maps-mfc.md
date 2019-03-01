@@ -53,7 +53,6 @@ Although message-map macros are important, you generally won't have to use them 
 
 However, message maps are an important part of the Microsoft Foundation Class Library. You should understand what they do, and documentation is provided for them.
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-

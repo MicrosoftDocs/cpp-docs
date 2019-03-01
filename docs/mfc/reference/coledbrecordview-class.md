@@ -147,7 +147,6 @@ The Application Wizard creates a menu resource with First Record, Last Record, N
 
 If you move past the last record in the recordset, the record view continues to display the last record. If you move backward past the first record, the record view continues to display the first record.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

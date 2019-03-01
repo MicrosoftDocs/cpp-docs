@@ -29,7 +29,6 @@ The portion of the macro concerned with managing the global state is:
 
 In this expression, *m_pModuleState* is assumed to be a member variable of the containing object. It is implemented by the `CCmdTarget` base class and is initialized to the appropriate value by `COleObjectFactory`, when the object is instantiated.
 
-## See Also
+## See also
 
 [Managing the State Data of MFC Modules](../mfc/managing-the-state-data-of-mfc-modules.md)
-

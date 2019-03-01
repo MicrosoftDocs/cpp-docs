@@ -35,8 +35,7 @@ To properly handle this message, you must determine how many months day state in
 
    The example converts the *pNMHDR* pointer to the proper type, then determines how many months of information are being requested (`pDayState->cDayState`). For each month, the current bitfield (`pDayState->prgDayState[i]`) is initialized to zero and then the needed dates are set (in this case, the 15th of each month).
 
-## See Also
+## See also
 
 [Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

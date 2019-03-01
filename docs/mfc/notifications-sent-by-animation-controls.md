@@ -10,8 +10,7 @@ An animation control ([CAnimateCtrl](../mfc/reference/canimatectrl-class.md)) se
 
 The [ACN_START](/windows/desktop/Controls/acn-start) message is sent when the animation control has started playing a clip. The [ACN_STOP](/windows/desktop/Controls/acn-stop) message is sent when the animation control has finished or stopped playing a clip.
 
-## See Also
+## See also
 
 [Using CAnimateCtrl](../mfc/using-canimatectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

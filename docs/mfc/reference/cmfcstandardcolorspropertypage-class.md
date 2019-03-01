@@ -53,7 +53,7 @@ The `CMFCColorDialog` class uses this class to display the standard color proper
 
 **Header:** afxstandardcolorspropertypage.h
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -14,7 +14,6 @@ Trackers provide a graphical interface to enable users to interact with OLE clie
 
 The article also covers the use of styles with trackers. In addition, it makes several references to the MFC OLE sample [OCLIENT](../visual-cpp-samples.md).
 
-## See Also
+## See also
 
 [Trackers](../mfc/trackers.md)
-

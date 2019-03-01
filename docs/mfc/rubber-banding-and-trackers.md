@@ -18,7 +18,7 @@ If you want to allow reversible orientation of the tracker during rubber-banding
 
 For more information, see [Container Client Items](../mfc/containers-client-items.md) and [Customizing Drag and Drop](../mfc/drag-and-drop-customizing.md).
 
-## See Also
+## See also
 
 [Trackers: Implementing Trackers in Your OLE Application](../mfc/trackers-implementing-trackers-in-your-ole-application.md)<br/>
 [CRectTracker Class](../mfc/reference/crecttracker-class.md)

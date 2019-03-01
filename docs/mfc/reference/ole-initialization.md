@@ -64,6 +64,6 @@ Call this function to initialize the OLE support for an MFC application. When th
 
 **Header:** afxdisp.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

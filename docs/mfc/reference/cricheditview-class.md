@@ -1180,7 +1180,7 @@ Override this function to modify the way the rich edit view responds to changes 
 
 [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/cpp/cricheditview-class_13.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>

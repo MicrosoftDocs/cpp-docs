@@ -91,7 +91,6 @@ The MFC General sample [DOCKTOOL](../visual-cpp-samples.md) shows how to use mem
 
 - [Using your old toolbars](../mfc/using-your-old-toolbars.md)
 
-## See Also
+## See also
 
 [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-

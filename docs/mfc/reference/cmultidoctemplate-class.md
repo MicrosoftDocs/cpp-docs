@@ -109,7 +109,7 @@ Here is a second example.
 
 [!code-cpp[NVC_MFCDocView#93](../../mfc/codesnippet/cpp/cmultidoctemplate-class_2.cpp)]
 
-## See Also
+## See also
 
 [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -180,7 +180,7 @@ The first statement in the following code example demonstrates the [CSplitButton
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/csplitbutton-class_1.cpp)]
 
-## See Also
+## See also
 
 [CSplitButton Class](../../mfc/reference/csplitbutton-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

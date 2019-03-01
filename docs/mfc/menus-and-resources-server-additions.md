@@ -51,8 +51,7 @@ Only one string table addition is necessary in a server application — a string
 
 The same additions apply for miniservers as those listed above for full-servers. Because a miniserver cannot be run in stand-alone mode, its main menu is much smaller. The main menu created by the application wizard has only a File menu, containing only the items Exit and About. Embedded and in-place menus and accelerators for miniservers are the same as those for full-servers.
 
-## See Also
+## See also
 
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md)
-

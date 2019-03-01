@@ -2175,7 +2175,7 @@ The *lParam1* and *lParam2* parameters correspond to the `lParam` member of the 
 
 [!code-cpp[NVC_MFC_CTreeCtrl#39](../../mfc/reference/codesnippet/cpp/ctreectrl-class_47.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

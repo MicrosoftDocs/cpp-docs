@@ -76,7 +76,7 @@ Points to the parent or owner window object (of type [CWnd](../../mfc/reference/
 
 See [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) for complete information.
 
-## See Also
+## See also
 
 [CDialog Class](../../mfc/reference/cdialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

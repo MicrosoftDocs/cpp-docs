@@ -219,7 +219,7 @@ A pointer to the [CGopherFile](../../mfc/reference/cgopherfile-class.md) object 
 
 Override the *dwContext* default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CGopherConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the operation with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.
 
-## See Also
+## See also
 
 [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -212,9 +212,8 @@ The `AddRef` and `Release` methods in the `IPropertyNotifySink` interface keep t
 
 After these changes have been made to your project, rebuild the project and use Test Container to test the interface. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access the test container.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Controls: Using Pictures in an ActiveX Control](../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)<br/>
 [MFC ActiveX Controls: Using Stock Property Pages](../mfc/mfc-activex-controls-using-stock-property-pages.md)
-

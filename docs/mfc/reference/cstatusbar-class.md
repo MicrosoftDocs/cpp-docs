@@ -466,7 +466,7 @@ After you call `SetPaneText`, you must add a UI update handler to display the ne
 
 [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/cpp/cstatusbar-class_3.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
 [MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>

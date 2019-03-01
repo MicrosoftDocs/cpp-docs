@@ -557,4 +557,3 @@ For more information about DDV, see [Dialog Data Exchange and Validation](../dia
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [DDX_Slider](standard-dialog-data-exchange-routines.md#ddx_slider)<br/>
 [DDX_FieldSlider](dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md#ddx_fieldslider)
-

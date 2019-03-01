@@ -22,7 +22,7 @@ The following table shows the steps you might perform in a typical FTP client ap
 |Handle exceptions.|Use the [CInternetException](../mfc/reference/cinternetexception-class.md) class.|Handles all common Internet exception types.|
 |End the FTP session.|Dispose of the [CInternetSession](../mfc/reference/cinternetsession-class.md) object.|Automatically cleans up open file handles and connections.|
 
-## See Also
+## See also
 
 [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)<br/>

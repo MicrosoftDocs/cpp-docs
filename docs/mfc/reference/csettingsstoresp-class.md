@@ -131,7 +131,7 @@ TRUE if successful; FALSE if the class identified by *pRTI* is not derived from 
 
 You can use the [CSettingsStoreSP Class](../../mfc/reference/csettingsstoresp-class.md) to derive classes from `CSettingsStore`. Use the method `SetRuntimeClass` if you want to create objects of a custom class that is derived from `CSettingsStore`.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

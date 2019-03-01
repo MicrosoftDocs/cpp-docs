@@ -261,7 +261,7 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 *bSet*<br/>
 [in] TRUE for mini title bar height; FALSE for default title bar height.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

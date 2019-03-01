@@ -58,8 +58,7 @@ Use this wizard to add an MFC class from an available type library. The wizard c
 
    The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class declaration should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
 
-## See Also
+## See also
 
 [MFC Class from a Type Library](../../mfc/reference/adding-an-mfc-class-from-a-type-library.md)<br/>
 [Automation Clients: Using Type Libraries](../../mfc/automation-clients-using-type-libraries.md)
-

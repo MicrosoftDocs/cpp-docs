@@ -10,8 +10,7 @@ An application sets a thread-specific hot key ([CHotKeyCtrl](../mfc/reference/ch
 
 Note that the shift state flags used in the call to `RegisterHotKey` are not the same as those returned by the [GetHotKey](../mfc/reference/chotkeyctrl-class.md#gethotkey) member function; you'll have to translate these flags before calling `RegisterHotKey`.
 
-## See Also
+## See also
 
 [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

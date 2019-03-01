@@ -217,7 +217,7 @@ void Serialize(CArchive& ar);
 *ar*<br/>
 [in] A [CArchive Class](../../mfc/reference/carchive-class.md) object to serialize.
 
-## See Also
+## See also
 
 [CMDIFrameWndEx Class](../../mfc/reference/cmdiframewndex-class.md)<br/>
 [MDI Tabbed Groups](../../mfc/mdi-tabbed-groups.md)<br/>

@@ -120,7 +120,7 @@ This example shows several calls to RFX functions with accompanying calls to `Se
 
 [!code-cpp[NVC_MFCDatabase#33](../../mfc/codesnippet/cpp/cfieldexchange-class_1.cpp)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CRecordset Class](../../mfc/reference/crecordset-class.md)

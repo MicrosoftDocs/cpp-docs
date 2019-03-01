@@ -407,7 +407,7 @@ For more information about using graphic objects, see [Graphic Objects](/windows
 
 [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample PROPDLG](../../visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>

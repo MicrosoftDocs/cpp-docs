@@ -18,7 +18,6 @@ The framework automatically creates most of the windows you need in a framework 
 
 - [Working with window objects](../mfc/working-with-window-objects.md)
 
-## See Also
+## See also
 
 [Window Objects](../mfc/window-objects.md)
-

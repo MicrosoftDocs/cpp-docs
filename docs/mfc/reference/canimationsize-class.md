@@ -274,6 +274,6 @@ Specifies new default size.
 
 Use this function to set a default value to animation object. This methods assigns default values to Width and Height of animation size. It also recreates underlying COM objects if they have been created. If you subscribed this animation object to events (ValueChanged or IntegerValueChanged), you need to re-enable these events.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

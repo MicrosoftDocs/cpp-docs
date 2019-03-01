@@ -14,8 +14,7 @@ Dialog data exchange (DDX) is an easy way to initialize the controls in your dia
 
 - [Dialog data validation](../mfc/dialog-data-validation.md)
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

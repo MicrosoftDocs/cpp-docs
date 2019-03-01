@@ -46,7 +46,6 @@ To use a property sheet in your application, complete the following steps:
 
 For an example of how to use property sheets, see the MFC General sample [PROPDLG](../visual-cpp-samples.md).
 
-## See Also
+## See also
 
 [Property Sheets](../mfc/property-sheets-mfc.md)
-

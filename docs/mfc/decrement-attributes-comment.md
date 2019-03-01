@@ -13,7 +13,7 @@ In the sample listing from class `CStdioFile`, under [An Example of the Comments
 > [!NOTE]
 >  Large classes, such as `CDC` and `CWnd`, may have so many members that simply listing all the attributes in one group would not add much to clarity. In such cases, the class library uses other comments as headings to further delineate the members. For example, `CDC` uses `// Device-Context Functions`, `// Drawing Tool Functions`, `// Drawing Attribute Functions`, and more. Groups that represent attributes will follow the usual syntax described above. Many OLE classes have an implementation section called `// Interface Maps`.
 
-## See Also
+## See also
 
 [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)<br/>
 [An Example of the Comments](../mfc/an-example-of-the-comments.md)<br/>
@@ -21,4 +21,3 @@ In the sample listing from class `CStdioFile`, under [An Example of the Comments
 [// Constructors Comment](../mfc/decrement-constructors-comment.md)<br/>
 [// Operations Comment](../mfc/decrement-operations-comment.md)<br/>
 [// Overridables Comment](../mfc/decrement-overridables-comment.md)
-

@@ -95,7 +95,7 @@ The default implementation of `OnPrepareDC` sets *m_bContinuePrinting* to **FALS
 
 - [Allocating GDI resources](../mfc/allocating-gdi-resources.md)
 
-## See Also
+## See also
 
 [Printing](../mfc/printing.md)<br/>
 [CView Class](../mfc/reference/cview-class.md)<br/>

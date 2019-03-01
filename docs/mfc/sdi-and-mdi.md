@@ -15,6 +15,6 @@ SDI applications allow only one open document frame window at a time. MDI applic
 
 For more information, see [Documents, Views, and the Framework](../mfc/documents-views-and-the-framework.md).
 
-## See Also
+## See also
 
 [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md)

@@ -344,7 +344,7 @@ You must set the mapping mode to any of the Windows mapping modes except MM_ISOT
 
 [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/cpp/cscrollview-class_6.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
 [CView Class](../../mfc/reference/cview-class.md)<br/>

@@ -1469,7 +1469,7 @@ The second overload shifts the virtual rectangle by the amount that is specified
 
 The third overload sets the virtual rectangle by using the current position of the pane and the size that is specified by *sizeNew*.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

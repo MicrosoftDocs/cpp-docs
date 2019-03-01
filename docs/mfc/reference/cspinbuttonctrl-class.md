@@ -363,7 +363,7 @@ The member function `SetRange32` sets the 32-bit range for the spin button contr
 > [!NOTE]
 >  The default range for the spin button has the maximum set to zero (0) and the minimum set to 100. Because the maximum value is less than the minimum value, clicking the up arrow will decrease the position and clicking the down arrow will increase it. Use `CSpinButtonCtrl::SetRange` to adjust these values.
 
-## See Also
+## See also
 
 [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

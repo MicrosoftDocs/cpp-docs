@@ -486,7 +486,7 @@ This code fragment sends the content of a string to a DLL named MFCISAPI.DLL on 
 
 [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/cpp/chttpfile-class_1.cpp)]
 
-## See Also
+## See also
 
 [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -351,7 +351,7 @@ Members of this structure can be modified directly or through member functions.
 
 For more information, see the [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) structure in the Windows SDK.
 
-## See Also
+## See also
 
 [MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>

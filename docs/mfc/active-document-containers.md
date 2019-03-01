@@ -73,7 +73,6 @@ The container's frame object is, for the most part, the same frame that is used 
 
 An active document container can augment the frame by adding `IOleCommandTarget`. This allows it to receive commands that originate in the active document's user interface in the same way that this interface can allow a container to send the same commands (such as **File New**, **Open**, **Save As**, **Print**; **Edit Copy**, **Paste**, **Undo**, and others) to an active document. For more information, see [Command Targets](../mfc/message-handling-and-command-targets.md).
 
-## See Also
+## See also
 
 [Active Document Containment](../mfc/active-document-containment.md)
-
