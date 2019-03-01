@@ -2,7 +2,7 @@
 title: "isfinite, _finite, _finitef"
 ms.date: "01/31/2019"
 apiname: ["_finite", "_finitef"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["isfinite", "finite", "_finite", "_finitef", "math/isfinite", "math/_finite", "math/_finitef", "float/_finite"]
 helpviewer_keywords: ["finite function", "_finite function", "_finitef function"]
