@@ -10,6 +10,6 @@ ms.assetid: 238307b3-c580-4280-ac6f-51345a2365bc
 
 Writing to a text stream does not truncate the file beyond that point.
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

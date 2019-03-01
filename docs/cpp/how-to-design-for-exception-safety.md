@@ -115,5 +115,5 @@ The built-in types are all no-fail, and the Standard Library types support the b
 
 ## See also
 
-[Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Errors and Exception Handling (Modern C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [How to: Interface Between Exceptional and Non-Exceptional Code](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)

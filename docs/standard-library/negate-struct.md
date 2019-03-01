@@ -1,7 +1,7 @@
 ---
 title: "negate Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::negate"]
+f1_keywords: ["functional/std::negate"]
 helpviewer_keywords: ["negate struct", "negate class"]
 ms.assetid: 8a372686-786e-4262-b37c-ca13dc11e62f
 ---

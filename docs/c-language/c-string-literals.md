@@ -34,6 +34,6 @@ char *amessage = "This is a string literal.";
 
 All escape codes listed in the [Escape Sequences](../c-language/escape-sequences.md) table are valid in string literals. To represent a double quotation mark in a string literal, use the escape sequence **\\"**. The single quotation mark (**'**) can be represented without an escape sequence. The backslash (**\\**) must be followed with a second backslash (**\\\\**) when it appears within a string. When a backslash appears at the end of a line, it is always interpreted as a line-continuation character.
 
-## See Also
+## See also
 
 [Elements of C](../c-language/elements-of-c.md)

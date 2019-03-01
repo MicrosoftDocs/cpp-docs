@@ -2266,7 +2266,7 @@ Handle to the parent window whose child windows are to be searched.
 Handle to a child window. The search begins with the next child window in the Z order. The child window must be a direct child window of *hwndParent*, not just a descendant window.
 
 *lpszClass*<br/>
-Pointer to a null-terminated string that specifies the class name or a class atom created by a previous call to the [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586) or [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa).
+Pointer to a null-terminated string that specifies the class name or a class atom created by a previous call to the [RegisterClass](/windows/desktop/api/winuser/nf-winuser-registerclassa) or [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa).
 
 *lpszWindow*<br/>
 Pointer to a null-terminated string that specifies the window name (the window's title). If this parameter is NULL, all window names match.
@@ -5202,7 +5202,7 @@ afx_msg void OnCancelMode();
 
 If the `CWnd` object has the focus, its `OnCancelMode` member function is called when a dialog box or message box is displayed. This gives the `CWnd` the opportunity to cancel modes such as mouse capture.
 
-The default implementation responds by calling the [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) Windows function. Override this member function in your derived class to handle other modes.
+The default implementation responds by calling the [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) Windows function. Override this member function in your derived class to handle other modes.
 
 ##  <a name="oncapturechanged"></a>  CWnd::OnCaptureChanged
 
@@ -5219,7 +5219,7 @@ A pointer to the window to gain mouse capture
 
 ### Remarks
 
-A window receives this message even if it calls [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) itself. An application should not attempt to set the mouse capture in response to this message. When it receives this message, a window should redraw itself, if necessary, to reflect the new mouse-capture state.
+A window receives this message even if it calls [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) itself. An application should not attempt to set the mouse capture in response to this message. When it receives this message, a window should redraw itself, if necessary, to reflect the new mouse-capture state.
 
 See the Windows SDK for information on the `ReleaseCapture` Windows function.
 
@@ -6299,7 +6299,7 @@ afx_msg void OnHotKey(
 
 ### Remarks
 
-This method receives the [WM_HOTKEY](/windows/desktop/inputdev/wm-hotkey) notification, which is described in the Windows SDK. This message is placed at the top of the message queue associated with the thread that registered the hot key. Use the [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) function to register a system-wide hot key.
+This method receives the [WM_HOTKEY](/windows/desktop/inputdev/wm-hotkey) notification, which is described in the Windows SDK. This message is placed at the top of the message queue associated with the thread that registered the hot key. Use the [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey) function to register a system-wide hot key.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -8648,7 +8648,7 @@ Specifies whether the window's extended or nonextended styles have changed. This
 - GWL_STYLE The window's nonextended styles have changed.
 
 *lpStyleStruct*<br/>
-Points to a [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) structure that contains the new styles for the window. An application can examine the styles, but it can not change them.
+Points to a [STYLESTRUCT](/windows/desktop/api/winuser/ns-winuser-stylestruct) structure that contains the new styles for the window. An application can examine the styles, but it can not change them.
 
 ### Remarks
 
@@ -8675,7 +8675,7 @@ Specifies whether the window's extended or nonextended styles have changed. This
 - GWL_STYLE The window's nonextended styles have changed.
 
 *lpStyleStruct*<br/>
-Points to a [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) structure that contains the new styles for the window. An application can examine the styles and change them.
+Points to a [STYLESTRUCT](/windows/desktop/api/winuser/ns-winuser-stylestruct) structure that contains the new styles for the window. An application can examine the styles and change them.
 
 ### Remarks
 
@@ -10224,7 +10224,7 @@ If [SW_INVALIDATE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) and [
 
 If the window has the [WS_CLIPCHILDREN](/windows/desktop/api/winuser/nf-winuser-createwindowa) style, the returned areas specified by *prgnUpdate* and *lpRectUpdate* represent the total area of the scrolled window that must be updated, including any areas in child windows that need updating.
 
-If the [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) flag is specified, Windows will not properly update the screen if part of a child window is scrolled. The part of the scrolled child window that lies outside the source rectangle will not be erased and will not be redrawn properly in its new destination. Use the [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) Windows function to move child windows that do not lie completely within the *lpRectScroll* rectangle. The cursor is repositioned if the SW_SCROLLCHILDREN flag is set and the caret rectangle intersects the scroll rectangle.
+If the [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) flag is specified, Windows will not properly update the screen if part of a child window is scrolled. The part of the scrolled child window that lies outside the source rectangle will not be erased and will not be redrawn properly in its new destination. Use the [DeferWindowPos](/windows/desktop/api/winuser/nf-winuser-deferwindowpos) Windows function to move child windows that do not lie completely within the *lpRectScroll* rectangle. The cursor is repositioned if the SW_SCROLLCHILDREN flag is set and the caret rectangle intersects the scroll rectangle.
 
 All input and output coordinates (for *lpRectScroll*, *lpRectClip*, *lpRectUpdate*, and *prgnUpdate*) are assumed to be in client coordinates, regardless of whether the window has the CS_OWNDC or CS_CLASSDC class style. Use the [LPtoDP](/windows/desktop/api/wingdi/nf-wingdi-lptodp) and [DPtoLP](/windows/desktop/api/wingdi/nf-wingdi-dptolp) Windows functions to convert to and from logical coordinates, if necessary.
 
@@ -10427,7 +10427,7 @@ A pointer to the window object that previously received all mouse input. It is N
 
 ### Remarks
 
-When `CWnd` no longer requires all mouse input, the application should call the [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) function so that other windows can receive mouse input.
+When `CWnd` no longer requires all mouse input, the application should call the [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) function so that other windows can receive mouse input.
 
 While mouse input is captured, no WM_NCHITTEST or WM_SETCURSOR messages are sent to the active window.
 

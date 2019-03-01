@@ -19,6 +19,6 @@ Signed integers are represented in two's-complement form. The most-significant b
 > [!NOTE]
 >  The int and unsigned int type specifiers are widely used in C programs because they allow a particular machine to handle integer values in the most efficient way for that machine. However, since the sizes of the int and unsigned int types vary, programs that depend on a specific int size may not be portable to other machines. To make programs more portable, you can use expressions with the sizeof operator (as discussed in [The sizeof Operator](../c-language/sizeof-operator-c.md)) instead of hard-coded data sizes.
 
-## See Also
+## See also
 
 [Storage of Basic Types](../c-language/storage-of-basic-types.md)

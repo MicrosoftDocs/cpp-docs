@@ -2,7 +2,7 @@
 title: "strcpy, wcscpy, _mbscpy"
 ms.date: "11/04/2016"
 apiname: ["strcpy", "wcscpy", "_mbscpy"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_mbscpy", "_ftcscpy", "wcscpy", "_tcscpy", "strcpy"]
 helpviewer_keywords: ["strcpy function", "tcscpy function", "ftcscpy function", "mbscpy function", "wcscpy function", "copying strings", "strings [C++], copying", "_tcscpy function", "_ftcscpy function", "_mbscpy function"]

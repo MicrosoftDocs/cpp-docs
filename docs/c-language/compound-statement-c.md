@@ -42,6 +42,6 @@ if ( i > 0 )
 
 In this example, if `i` is greater than 0, all statements inside the compound statement are executed in order.
 
-## See Also
+## See also
 
 [Statements](../c-language/statements-c.md)

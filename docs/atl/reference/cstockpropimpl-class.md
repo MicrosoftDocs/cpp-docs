@@ -493,7 +493,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
 ### Parameters
 
 *ppPicture*<br/>
-Variable that receives a pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
+Variable that receives a pointer to the picture's properties. See [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) for more details.
 
 ### Return Value
 
@@ -939,7 +939,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
 ### Parameters
 
 *pPicture*<br/>
-A pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
+A pointer to the picture's properties. See [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) for more details.
 
 ### Return Value
 
@@ -1087,7 +1087,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 ### Parameters
 
 *pPicture*<br/>
-A pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
+A pointer to the picture's properties. See [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) for more details.
 
 ### Return Value
 

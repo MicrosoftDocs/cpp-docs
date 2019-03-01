@@ -51,7 +51,7 @@ void __addgsqword(
 
 ## Remarks
 
-These intrinsics are available in kernel mode only, and these routines are only available as intrinsics.
+These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 

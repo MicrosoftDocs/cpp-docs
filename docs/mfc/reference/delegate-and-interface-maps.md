@@ -42,10 +42,6 @@ This macro marks the beginning of a list of delegate entries, which compose a de
 
 **Header:** msclr\event.h
 
-### See Also
-
-[How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
-
 ##  <a name="begin_interface_map"></a>BEGIN_INTERFACE_MAP
 
 Begins the definition of the interfaced map when used in the implementation file.
@@ -101,10 +97,6 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
-### See Also
-
-[How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
-
 ##  <a name="commanduihandler"></a>CommandUIHandler
 
 Registers callback methods with a user interface update command message.
@@ -133,11 +125,6 @@ For more information on using Windows Forms, see [Using a Windows Form User Cont
 
 **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
-### See Also
-
-[How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
-[CommandHandler](#commandhandler)
-
 ##  <a name="end_delegate_map"></a>END_DELEGATE_MAP
 
 Ends a delegate map.
@@ -156,10 +143,6 @@ This macro marks the end of a list of delegate entries, which compose a delegate
 
 **Header:** msclr\event.h
 
-### See Also
-
-[How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
-
 ##  <a name="end_interface_map"></a>END_INTERFACE_MAP
 
 Ends the interface map in the implementation file.
@@ -177,11 +160,6 @@ For more information about interface maps, see [Technical Note 38](../tn038-mfc-
 ### Requirements
 
 **Header:** afxwin.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[BEGIN_INTERFACE_MAP](#begin_interface_map)
 
 ##  <a name="event_delegate_entry"></a>EVENT_DELEGATE_ENTRY
 
@@ -221,12 +199,6 @@ END_DELEGATE_MAP()
 ### Requirements
 
 **Header:** msclr\event.h
-
-### See Also
-
-[MAKE_DELEGATE](#make_delegate)<br/>
-[BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
-[END_DELEGATE_MAP](#end_delegate_map)
 
 ##  <a name="interface_part"></a>INTERFACE_PART
 
@@ -297,9 +269,8 @@ void CMyView::OnInitialUpdate()
 
 **Header:** msclr\event.h
 
-### See Also
+## See also
 
-[BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
-[END_DELEGATE_MAP](#end_delegate_map)<br/>
-[EVENT_DELEGATE_ENTRY](#event_delegate_entry)
-
+[How to: Sink Windows Forms Events from Native C++ Classes](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)<br/>
+[How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
+[Macros and Globals](mfc-macros-and-globals.md)<br/>

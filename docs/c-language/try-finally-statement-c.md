@@ -41,6 +41,6 @@ See the example for the [try-except statement](../c-language/try-except-statemen
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [try-finally Statement](../cpp/try-finally-statement.md)

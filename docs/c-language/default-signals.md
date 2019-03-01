@@ -10,6 +10,6 @@ ms.assetid: db9fc17b-75c0-4d33-86be-c536584bbede
 
 Signals are set to their default status when a program begins running.
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

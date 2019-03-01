@@ -22,6 +22,6 @@ Although an identifier with a global lifetime exists throughout the execution of
 
 Memory can be allocated as needed (dynamic) if created through the use of special library routines such as `malloc`. Since dynamic memory allocation uses library routines, it is not considered part of the language. See the [malloc](../c-runtime-library/reference/malloc.md) function in the *Run-Time Library Reference*.
 
-## See Also
+## See also
 
 [Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md)

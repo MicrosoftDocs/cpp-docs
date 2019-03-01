@@ -1,7 +1,7 @@
 ---
 title: "logical_and Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::logical_and"]
+f1_keywords: ["functional/std::logical_and"]
 helpviewer_keywords: ["logical_and class", "logical_and struct"]
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
 ---

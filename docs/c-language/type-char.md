@@ -14,6 +14,6 @@ Character values of type `unsigned char` have a range from 0 to 0xFF hexadecimal
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Storage of Basic Types](../c-language/storage-of-basic-types.md)

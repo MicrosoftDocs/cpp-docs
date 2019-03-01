@@ -51,6 +51,6 @@ This list describes how to use **const** and `volatile`.
 
 - An item can be both **const** and `volatile`, in which case the item could not be legitimately modified by its own program, but could be modified by some asynchronous process.
 
-## See Also
+## See also
 
 [Declarations and Types](../c-language/declarations-and-types.md)

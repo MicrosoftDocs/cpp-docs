@@ -9,6 +9,6 @@ ms.assetid: a8895b95-5504-4e30-9ad2-2498bd5c23ed
 
 Bit fields can be signed or unsigned. Plain bit fields are treated as signed.
 
-## See Also
+## See also
 
 [Structures, Unions, Enumerations, and Bit Fields](../c-language/structures-unions-enumerations-and-bit-fields.md)
