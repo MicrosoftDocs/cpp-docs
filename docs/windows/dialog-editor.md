@@ -7,28 +7,30 @@ ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
 ---
 # Dialog Editor (C++)
 
-The **Dialog** editor allows you to create or edit dialog box resources. You open the dialog editor by double-clicking on a dialog’s .rc file in the **Resource View** window (**View** > **Resource View**). Note that **Resource View** is not available in Express editions.
+The **Dialog Editor** allows you to create or edit dialog box resources. You open the editor by double-clicking on a dialog’s .rc file in the **Resource View** window, or go to menu **View** > **Resource View**.
 
-One of the first steps in making a new dialog box (or dialog box template) is adding controls to the dialog box. In the **Dialog** editor, you can arrange controls to fit a certain size, shape, or alignment, or you can move them around to work within the dialog box. It's also easy to delete a control.
+One of the first steps in making a new dialog box or dialog box template, is adding controls. In the **Dialog Editor**, you can arrange controls to fit a certain size, shape, or alignment, or you can move them around to work within the dialog box. It's also easy to delete a control.
 
 You can store a dialog box as a template so you can reuse it. You can also easily switch between designing the dialog box and editing the code that implements it.
 
-It's also possible to edit properties of single or multiple controls in the Dialog editor. You can change the tab order, that is, the order in which controls gain focus when the **Tab** key is pressed, or you can define an access key (a key combination) that allows users to choose a control using the keyboard.
+It's also possible to edit properties of single or multiple controls in the **Dialog Editor**. You can change the tab order, that is, the order in which controls gain focus when the **Tab** key is pressed, or you can define an access key or key combination that allows users to choose a control using the keyboard.
 
-The **Dialog** editor also allows you to use custom controls, including ActiveX controls. In addition, you can edit a [form view](../mfc/reference/cformview-class.md), [Record Views](../data/record-views-mfc-data-access.md), or [Dialog Bars](../mfc/dialog-bars.md).
+The **Dialog Editor** also allows you to use custom controls, including ActiveX controls. You can also edit a [form view](../mfc/reference/cformview-class.md), [Record Views](../data/record-views-mfc-data-access.md), or [Dialog Bars](../mfc/dialog-bars.md).
 
-Starting with Visual Studio 2015, you can use the dialog editor to define dynamic layouts, which specify how controls move and resize when the user resizes a dialog. For more information, see [Dynamic Layout](../mfc/dynamic-layout.md).
+Starting with Visual Studio 2015, you can use the **Dialog Editor** to define dynamic layouts, which specify how controls move and resize when the user resizes a dialog. For more information, see [Dynamic Layout](../mfc/dynamic-layout.md).
 
-- [How To: Create a Dialog Box](../windows/creating-a-new-dialog-box.md)
+For more information on resources, see how to [Create a Dialog Box](../windows/creating-a-new-dialog-box.md) and [Manage Dialog Box Controls](../windows/controls-in-dialog-boxes.md).
 
-- [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
-
-   > [!TIP]
-   > While using the **Dialog** editor, in many instances, you can select the right mouse button to display a shortcut menu of frequently used commands.
+> [!TIP]
+> While using the **Dialog Editor**, in many instances, you can select the right mouse button to display a shortcut menu of frequently used commands.
 
 ## Dialog Editor Toolbar
 
-When you open the **Dialog** editor in a C++ project, the **Dialog Editor** toolbar automatically appears at the top of your solution.
+- To show or hide the **Dialog Editor** toolbar, go to menu **View** > **Toolbars** > **Dialog Editor**.
+
+   When you open the **Dialog Editor** in a C++ project, the **Dialog Editor** toolbar automatically appears at the top of your solution, however, if you explicitly close the toolbar, you'll need to invoke it the next time you open the **Dialog Editor**. You can toggle its display by selecting it from the list of available toolbars and windows.
+
+The **Dialog Editor** toolbar contains buttons for arranging the layout of controls on the dialog box, for example size and alignment. **Dialog Editor** toolbar buttons correspond to commands on the **Format** menu.
 
 |Icon|Meaning|Icon|Meaning|
 |----------|-------------|----------|-------------|
@@ -39,15 +41,6 @@ When you open the **Dialog** editor in a C++ project, the **Dialog Editor** tool
 |![Align Bottoms button](../mfc/media/vcdialogeditoralignbottoms.png "vcDialogEditorAlignBottoms")|Align Bottoms|![Make Same Size button](../mfc/media/vcdialogeditorsamesize.png "vcDialogEditorSameSize")|Make Same Size|
 |![Center Vertical button](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|Vertical|![Toggle Grid button](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|Toggle Grid|
 |![Center Horizontal button](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|Horizontal|![Toggle Guides button](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|Toggle Guides|
-
-The **Dialog Editor** toolbar contains buttons for arranging the layout of controls on the dialog box, for example size and alignment. **Dialog Editor** toolbar buttons correspond to commands on the **Format** menu.
-
-When you are in the **Dialog** editor, you can toggle the display of the **Dialog Editor** toolbar by selecting it from the list of available toolbars and windows.
-
-- To show or hide the dialog editor toolbar, on the **View** menu, select **Toolbars**, then choose **Dialog Editor** from the submenu.
-
-   > [!NOTE]
-   > The **Dialog Editor** toolbar is displayed by default when you open a dialog box resource in the Dialog editor; however, if you explicitly close the toolbar, you will need to invoke it the next time you open a dialog box resource.
 
 ## Switch Between Dialog Box Controls and Code
 
@@ -68,10 +61,15 @@ With a control selected, click the **ControlEvents** button or the **Messages** 
 
 ## Accelerator Keys
 
-Below are the default accelerator keys for the Dialog editor commands. To change shortcut keys, select **Options** on the **Tools** menu, then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+- To change shortcut keys, go to menu **Tools** > **Options**, and choose **Keyboard** under the **Environment** folder.
 
-> [!NOTE]
-> The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+   For more information, see [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+
+- To change your settings, go to menu **Tools** > **Import and Export Settings**.
+
+   The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in **Help** depending on your active settings or edition.  For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+
+Below are the default accelerator keys for the **Dialog Editor** commands.  
 
 |Command|Keys|Description|
 |-------------|----------|-----------------|
@@ -100,9 +98,10 @@ Win32
 ## See Also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
-[How to: Create a Resource](../windows/how-to-create-a-resource.md)<br/>
+[How to: Create a Dialog Box](../windows/creating-a-new-dialog-box.md)<br/>
+[Dialog Box Controls](../windows/controls-in-dialog-boxes.md)<br/>
+<!--
 [Controls](../mfc/controls-mfc.md)<br/>
 [Control Classes](../mfc/control-classes.md)<br/>
 [Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
+[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)-->

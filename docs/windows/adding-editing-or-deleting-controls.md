@@ -1,22 +1,22 @@
 ---
-title: "How To: Add, Edit, or Delete Controls"
+title: "How To: Add, Edit, or Delete Controls (C++)"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.dialog.dialog", "vc.controls.activex", "vc.editors.dialog.insertActiveXControls"]
 helpviewer_keywords: ["Dialog Editor [C++], creating controls", "dialog boxes [C++], adding controls to", "Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes", "controls [C++], adding multiple", "dialog box controls [C++], size", "controls [C++], sizing", "dialog boxes [C++], adding ActiveX controls", "ActiveX controls [C++], adding to dialog boxes", "Insert ActiveX Control dialog box [C++]", "controls [C++], editing properties", "ActiveX controls [C++], properties", "controls [C++], undoing changes", "controls [C++], editing properties", "dialog box controls [C++], editing properties", "dialog box controls [C++], deleting", "controls [C++], deleting", "Dialog Editor [C++], default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls [C++], events", "member variables, defining for controls", "variables, dialog box control member variables", "controls [C++], member variables", "Dialog Editor [C++], defining member variables for controls", "controls [C++], troubleshooting", "Dialog Editor [C++], troubleshooting", "dialog boxes [C++], troubleshooting", "InitCommonControls", "RichEdit 1.0 control", "rich edit controls [C++], RichEdit 1.0"]
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 ---
-# How To: Add, Edit, or Delete Controls
+# How To: Add, Edit, or Delete Controls (C++)
 
-Using the **Dialog** editor, you can add, resize, edit, and delete controls in dialog boxes. You can also edit the properties of a control, such as its ID, or whether it's initially visible at run time.
+Using the **Dialog Editor**, you can add, resize, edit, and delete controls in dialog boxes. You can also edit the properties of a control, such as its ID, or whether it's initially visible at run time.
 
-The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog** editor. You can also customize the **Toolbox** window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox) and [Show or hide the Toolbox window](showing-or-hiding-the-dialog-editor-toolbar.md).
+The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog Editor**. You can also customize the **Toolbox** window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox) and [Show or hide the Toolbox window](showing-or-hiding-the-dialog-editor-toolbar.md).
 
 > [!TIP]
-> While using the **Dialog** editor, in many instances, you can select the right mouse button to display a shortcut menu of frequently used commands.
+> While using the **Dialog Editor**, in many instances, you can select the right mouse button to display a shortcut menu of frequently used commands.
 
 ## Add Controls
 
-To add controls to your new dialog box, drag controls from the **Toolbox** to the dialog box you're creating. You can then move the controls around or change their size and shape.
+- To add controls to your new dialog box, drag controls from the **Toolbox** to the dialog box you're creating. You can then move the controls around or change their size and shape.
 
 You can add custom controls to the dialog box by selecting the **Custom Control** icon in the **Toolbox** and dragging it to your dialog box. To add a **Syslink** control, add a custom control, then change the control's **Class** property to **Syslink**. This action will cause the properties to refresh and show the **Syslink** control properties. For information on the MFC wrapper class, see [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
 
@@ -72,7 +72,7 @@ You can add custom controls to the dialog box by selecting the **Custom Control*
 
 ### To undo changes to the properties of a control
 
-1. Make sure the control has focus in the **Dialog** editor.
+1. Make sure the control has focus in the **Dialog Editor**.
 
 1. Choose **Undo** from the **Edit** menu (if focus isn't on the control, the **Undo** command will be unavailable).
 
@@ -91,7 +91,7 @@ To define a member variable for any dialog box control except buttons, you can u
 
 1. Type the appropriate information in the **Add Member Variable** wizard. For more information, see [Dialog Data Exchange](../mfc/dialog-data-exchange.md).
 
-1. Select **OK** to return to the **Dialog** editor.
+1. Select **OK** to return to the **Dialog Editor**.
 
    > [!TIP]
    > To jump from any dialog box control to its existing handler, double-click the control.
@@ -124,7 +124,7 @@ For an example of the problem:
 
 1. On the dialog box's **Help** menu, select the **About** command and observe no dialog box is displayed.
 
-Currently, the **Dialog** editor doesn't automatically add code to your project when you drag and drop the following common controls or rich edit controls onto a dialog box. Nor does Visual Studio provide an error or warning when this problem occurs. To fix, add the code for the control manually.
+Currently, the **Dialog Editor** doesn't automatically add code to your project when you drag and drop the following common controls or rich edit controls onto a dialog box. Nor does Visual Studio provide an error or warning when this problem occurs. To fix, add the code for the control manually.
 
 ||||
 |-|-|-|
@@ -147,13 +147,11 @@ To use RichEdit controls, you must call `LoadLibrary`. For more information, see
 
 Visual Studio enables you to insert ActiveX controls into your dialog box. For more information, see [MFC ActiveX Controls](../mfc/mfc-activex-controls.md) and [ActiveX Control Containers](../mfc/activex-control-containers.md).
 
-You can use the shortcut menu in the **Dialog** editor to quickly add registered ActiveX controls to a dialog box, and you can add ActiveX controls to the **Toolbox** for quick access.
-
-The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls into your dialog box while using the [Dialog editor](../windows/dialog-editor.md). This dialog contains the following properties:
+The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls into your dialog box while using the [Dialog Editor](../windows/dialog-editor.md). This dialog contains the following properties:
 
 |Property|Description|
 |---|---|
-|**ActiveX Control**|Displays a list of Active X controls. Inserting a control from this dialog box doesn't generate a wrapper class. If you need a wrapper class, use [Class View](/visualstudio/ide/viewing-the-structure-of-code) to create one (for more information, see [Adding a Class](../ide/adding-a-class-visual-cpp.md)). If an Active X control doesn't appear in this dialog box, try installing the control according to the vendor's instructions.|
+|**ActiveX Control**|Displays a list of ActiveX controls.<br/><br/>Inserting a control from this dialog box doesn't generate a wrapper class. If you need a wrapper class, use [Class View](/visualstudio/ide/viewing-the-structure-of-code) to create one, see [Adding a Class](../ide/adding-a-class-visual-cpp.md).<br/><br/>If an ActiveX control doesn't appear in this dialog box, try installing the control according to the vendor's instructions.|
 |**Path**|Displays the file in which the ActiveX control is found.|
 
 > [!CAUTION]
@@ -161,9 +159,9 @@ The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls
 
 #### To add an ActiveX control
 
-1. Open a dialog box in the **Dialog** editor.
+1. Open a dialog box in the **Dialog Editor**.
 
-1. Right-click anywhere in the body of the dialog box and on the shortcut menu, select **Insert ActiveX Control**.
+1. Right-click anywhere in the body of the dialog box and select **Insert ActiveX Control**.
 
    The **Insert ActiveX Control** dialog box appears, showing all the ActiveX controls on your system. At the bottom of the dialog box, the path to the ActiveX Control file appears.
 
@@ -171,33 +169,29 @@ The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls
 
    The control appears in the dialog box, where you can edit it or create handlers for it just as you would any other control.
 
-> [!NOTE]
-> You can add ActiveX controls to the **Toolbox** window for easy access.
+> [!TIP]
+> You can also use the shortcut menu in the **Dialog Editor** to quickly add registered ActiveX controls to a dialog box, or add ActiveX controls to the **Toolbox** window for easy access.
 
 #### To edit properties for an ActiveX control
 
-ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. Properties for ActiveX controls are displayed in the **Properties** window. Also, any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box (to view the **Property Page** for a specific ActiveX control, click the **Property Page** button in the [Properties Window](/visualstudio/ide/reference/properties-window)).
+ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. These properties are displayed in the **Properties** window, including any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box (to view the **Property Page** for a specific ActiveX control, select the **Property Page** button in the [Properties Window](/visualstudio/ide/reference/properties-window)).
 
 Various tabs are displayed in the property page for an ActiveX control, depending on the property sheets that come as part of the ActiveX control.
 
 > [!NOTE]
 > The following procedure applies to using the property page to edit ActiveX controls. You can also browse and edit ActiveX properties in the new **Properties** window.
 
-1. Select the **ActiveX** control.
-
-1. On the **View** menu, select **Property Page** and view the properties.
-
-1. Make changes as needed in the property page.
+- Select the **ActiveX** control and go to menu **View** > **Property Page** to view the properties. Then make changes as needed in the property page.
 
 ## Requirements
 
 Win32
 
-## See also
+## See Also
 
-[Dialog Editor](../windows/dialog-editor.md)<br/>
-[Controls in Dialog Boxes](controls-in-dialog-boxes.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
+[Manage Dialog Box Controls](controls-in-dialog-boxes.md)<br/>
+[How To: Layout Controls](arrangement-of-controls-on-dialog-boxes.md)<br/>
+[How to: Define Control Access and Values](defining-mnemonics-access-keys.md)<br/>
 
 <!-- excluded links
 [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)<br/>

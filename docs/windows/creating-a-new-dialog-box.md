@@ -5,24 +5,11 @@ f1_keywords: ["vc.editors.dialog"]
 helpviewer_keywords: ["dialog boxes [C++], creating", "Dialog Editor [C++], creating dialog boxes", "modal dialog boxes [C++], logon screens", "logon screens", "Test Dialog command", "testing, dialog boxes", "dialog boxes [C++], testing", "dialog boxes [C++], size", "dialog boxes [C++], positioning"]
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
 ---
-# How To: Create a Dialog Box (C++)
+# How to: Create a Dialog Box (C++)
 
 The location and size of a C++ dialog box, and the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.
 
-When you're designing a dialog box, you can also simulate and test its run-time behavior without compiling your program. In this mode, you can:
 
-- Type text, select from combo-box lists, turn options on or off, and choose commands.
-
-- Test the tab order.
-
-- Test the grouping of controls such as radio buttons and check boxes.
-
-- Test the keyboard shortcuts for controls in the dialog box.
-
-   > [!NOTE]
-   > Connections to dialog box code made by using wizards are not included in the simulation.
-
-When you test a dialog box, it typically displays at a location that's relative to the main program window. If you've set the dialog box's **Absolute Align** property to **True**, the dialog box displays at a position that's relative to the upper-left corner of the screen.
 
 ## To create a new dialog box
 
@@ -35,7 +22,7 @@ When you test a dialog box, it typically displays at a location that's relative 
 
    If a plus sign (**+**) appears next to the **Dialog** resource type, it means that dialog box templates are available. Select the plus sign to expand the list of templates, select a template, and choose **New**.
 
-   The new dialog box opens in the **Dialog** editor.
+   The new dialog box opens in the **Dialog Editor**.
 
    You can also [open existing dialog boxes in the Dialog Box editor for editing](../windows/viewing-and-editing-resources-in-a-resource-editor.md).
 
@@ -58,11 +45,30 @@ To enable testing of this kind of dialog box, the test dialog box function detec
 
 ## To specify the location and size of a dialog box
 
-There are three properties that you can set in the [Properties Window](/visualstudio/ide/reference/properties-window) to specify where a dialog box will appear onscreen. The **Center** property is Boolean; if you set the value to **True**, the dialog box will always appear in the center of the screen. If you set it to **False**, you can then set the **XPos** and **YPos** properties to explicitly define where onscreen the dialog box will appear. The position properties are offset values from the upper left-hand corner of the viewing area, which is defined as `{X=0, Y=0}`. The position is also based on the **Absolute Align** property: if **True**, the coordinates are relative to the screen; if **False**, the coordinates are relative to the dialog owner's window.
+There are three properties that you can set in the [Properties Window](/visualstudio/ide/reference/properties-window) to specify where a dialog box will appear onscreen.
+
+- The **Center** property is Boolean, if you set the value to **True**, the dialog box will always appear in the center of the screen. If you set this property to **False**, you can then set the **XPos** and **YPos** properties.
+- The **XPos** and **YPos** properties are used to explicitly define where onscreen the dialog box will appear. These position properties are offset values from the upper left-hand corner of the viewing area, which is defined as `{X=0, Y=0}`.
+- The position is also based on the **Absolute Align** property. If **True**, the coordinates are relative to the screen. If **False**, the coordinates are relative to the dialog owner's window.
 
 ## To test a dialog box
 
-1. When the **Dialog** editor is the active window, on the menu bar, choose **Format** > **Test Dialog**.
+When you're designing a dialog box, you can also simulate and test its run-time behavior without compiling your program. In this mode, you can:
+
+- Type text, select from combo-box lists, turn options on or off, and choose commands.
+
+- Test the tab order.
+
+- Test the grouping of controls such as radio buttons and check boxes.
+
+- Test the keyboard shortcuts for controls in the dialog box.
+
+> [!NOTE]
+> Connections to dialog box code made by using wizards are not included in the simulation.
+
+When you test a dialog box, it typically displays at a location that's relative to the main program window. If you've set the dialog box **Absolute Align** property to **True**, the dialog box displays at a position that's relative to the upper-left corner of the screen.
+
+1. When the **Dialog Editor** is the active window, go to menu **Format** > **Test Dialog**.
 
 1. To end the simulation, press **Esc** or select the **Close** button in the dialog box you're testing.
 
@@ -70,9 +76,7 @@ There are three properties that you can set in the [Properties Window](/visualst
 
 Win32
 
-## See also
+## See Also
 
-[How to: Create a Resource](../windows/how-to-create-a-resource.md)<br/>
-[Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)<br/>
-[Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)<br/>
+[How to: Manage Dialog Box Controls](../windows/controls-in-dialog-boxes.md)<br/>

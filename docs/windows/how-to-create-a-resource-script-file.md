@@ -15,9 +15,6 @@ You can create resources for your project by:
 
 - Using a resource template to create customized resources.
 
-> [!NOTE]
-> The **Resource Editor** and **Resource View** aren't available in Express editions.
-
 ## Use Resource Script Files
 
 Before you create and add new resources to your project, you must first create a resource script (.rc) file.

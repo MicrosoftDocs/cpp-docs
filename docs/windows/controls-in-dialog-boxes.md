@@ -1,11 +1,11 @@
 ---
-title: "Controls in Dialog Boxes (C++)| Microsoft Docs"
+title: "Dialog Box Controls (C++)| Microsoft Docs"
 ms.date: "02/15/2019"
 f1_keywords: ["Custom Control"]
 helpviewer_keywords: ["controls [C++], dialog boxes", "dialog box controls [C++], about dialog box controls", "dialog box controls", "controls [C++], templates", "custom controls [C++], dialog boxes", "custom controls [C++]", "dialog box controls [C++], custom (user) controls", "Dialog Editor [C++], custom controls"]
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
 ---
-# Controls in Dialog Boxes (C++)
+# Dialog Box Controls (C++)
 
 You can add controls to a dialog box using the [Dialog Editor tab](../windows/dialog-editor-tab-toolbox.md) in the [Toolbox window](/visualstudio/ide/reference/toolbox), which enables you to choose the control you want and drag it onto the dialog box. By default, the Toolbox window is set to auto hide. It appears as a tab on the left margin of your solution when the Dialog editor is open. However, you can pin the **Toolbox** window into position by clicking the **Auto Hide** button in the upper right corner of the window. For more information on how to control the behavior of this window, see [Window Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
@@ -17,7 +17,7 @@ Once you have added a control to the dialog box, you can change properties such 
 
 - [How To: Add, Edit, or Delete Controls](adding-editing-or-deleting-controls.md)
 
-- [How To: Arrange Controls](../windows/arrangement-of-controls-on-dialog-boxes.md)
+- [How To: Layout Controls](../windows/arrangement-of-controls-on-dialog-boxes.md)
 
 - [How To: Define Control Access and Values](../windows/defining-mnemonics-access-keys.md)
 
@@ -86,9 +86,11 @@ For these custom controls, you are limited to:
 
 Win32
 
-## See also
+## See Also
 
+[Dialog Editor](../windows/dialog-editor.md)<br/>
+
+<!--
 [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
 [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
-[Dialog Editor](../windows/dialog-editor.md)<br/>
-[Controls](../mfc/controls-mfc.md)<br/>
+[Controls](../mfc/controls-mfc.md)<br/>-->

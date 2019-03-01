@@ -20,6 +20,9 @@ Resources can be composed of a wide range of elements, like:
 
 You can add new resources to your project and modify those resources using the appropriate resource editor. Most Visual C++ wizards will automatically generate an .rc file for your project.
 
+> [!NOTE]
+> The **Resource Editors** and **Resource View** aren't available in Express editions.
+
 To manually add resource files to managed projects, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). This article includes how to access resources, display static resources, and assign resource strings to properties.
 
 To globalize and localize resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
