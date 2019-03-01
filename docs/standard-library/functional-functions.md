@@ -1057,7 +1057,7 @@ Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
 
 ## <a name="not_fn"></a> not_fn
 
-The `not_fn` function template takes a callable object and returns a callable object. When the returned callable object is later invoked with some arguments, it passes them to the original callable object, and logically negates the result. It preserves the const qualification and value category behavior of the wrapped callable object. `not_fn` is new in C++17, and replaces the deprecated `std::not1`, `std::not2`, `std::unary_negate` and `std::binary_negate`.
+The `not_fn` function template takes a callable object and returns a callable object. When the returned callable object is later invoked with some arguments, it passes them to the original callable object, and logically negates the result. It preserves the const qualification and value category behavior of the wrapped callable object. `not_fn` is new in C++17, and replaces the deprecated `std::not1`, `std::not2`, `std::unary_negate`, and `std::binary_negate`.
 
 ```cpp
 template <class Callable>
