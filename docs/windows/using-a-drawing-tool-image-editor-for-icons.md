@@ -7,22 +7,20 @@ ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
 ---
 # How to: Use a Drawing Tool
 
-The **Image** editor's freehand drawing and erasing tools all work in the same way: you select the tool and, if necessary, [select foreground and background colors](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.
+The **Image Editor** has freehand drawing and erasing tools that all work in the same way. You select the tool and, if necessary, [select foreground and background colors](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.
 
 ## Drawing Tools
 
-When you select the **Eraser** tool, **Brush** tool, or **Airbrush** tool, the option selector displays that tool's options.
-
-> [!TIP]
-> Instead of using the **Eraser** tool, you may find it more convenient to draw in the background color with one of the drawing tools.
-
-You can select drawing tools from either the **Image Editor** toolbar or the **Image** menu.
+You can select drawing tools from either the **Image Editor** toolbar or the **Image** menu. When you select the **Eraser** tool, **Brush** tool, or **Airbrush** tool, the option selector displays that tool's options.
 
 ### To select and use a drawing tool from the Image Editor toolbar
 
 1. Select a button on the **Image Editor** toolbar.
 
    - The **Eraser** tool paints over the image with the current background color when you press the left mouse button.
+
+      > [!TIP]
+      > Instead of using the **Eraser** tool, you may find it more convenient to draw in the background color with one of the drawing tools.
 
    - The **Pencil** tool draws freehand in a constant width of one pixel.
 
@@ -45,19 +43,19 @@ You can select drawing tools from either the **Image Editor** toolbar or the **I
 
 ### To select and use a drawing tool from the Image menu
 
-1. Select the **Image** menu and select the **Tools** command.
+1. Go to menu **Image** > **Tools**.
 
 1. On the cascading submenu, choose the tool you wish to use.
 
 ## Lines or Closed Figures
 
-The Image editor tools for drawing lines and closed figures all work in the same way: you place the insertion point at one point and drag to another. For lines, these points are the endpoints. For closed figures, these points are opposite corners of a rectangle bounding the figure.
+The **Image Editor** tools for drawing lines and closed figures all work in the same way: you place the insertion point at one point and drag to another. For lines, these points are the endpoints. For closed figures, these points are opposite corners of a rectangle bounding the figure.
 
 Lines are drawn in a width determined by the current brush selection, and framed figures are drawn in a width determined by the current width selection. Lines and all figures, both framed and filled, are drawn in the current foreground color if you press the left mouse button, or in the current background color if you press the right mouse button.
 
 ### To draw a line
 
-1. On the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) (or from the **Image** menu, **Tools** command), choose the **Line** tool.
+1. Use the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) or go to menu **Image**> **Tools** and choose the **Line** tool.
 
 1. If necessary, select colors and a brush:
 
@@ -71,7 +69,7 @@ Lines are drawn in a width determined by the current brush selection, and framed
 
 ### To draw a closed figure
 
-1. On the **Image Editor** toolbar (or from the **Image** menu, **Tools** command), select a **Closed-Figure Drawing** tool.
+1. Use the **Image Editor** toolbar or go to menu **Image** > **Tools** and select a **Closed-Figure Drawing** tool.
 
    The **Closed-Figure Drawing** tools create figures as indicated on their respective buttons.
 
@@ -83,13 +81,13 @@ Lines are drawn in a width determined by the current brush selection, and framed
 
 ## Custom Brushes
 
-A custom brush is a rectangular portion of an image that you pick up and use like one of the **Image** editor's ready-made brushes. All operations you can perform on a selection, you can perform on a custom brush as well.
+A custom brush is a rectangular portion of an image that you pick up and use like one of the **Image Editor**'s ready-made brushes. All operations you can perform on a selection, you can perform on a custom brush as well.
 
 ### To create a custom brush from a portion of an image
 
 1. [Select the part of the image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) that you want to use for a brush.
 
-1. Hold the **Shift** key down, choose in the selection and drag it across the image. Or from the **Image** menu, choose **Use Selection as Brush**.
+1. Hold the **Shift** key down, choose in the selection and drag it across the image, or go to menu **Image** > **Use Selection as Brush**.
 
    Your selection becomes a custom brush that distributes the colors in the selection across the image. Copies of the selection are left along the dragging path. The more slowly you drag, the more copies are made.
 
@@ -124,7 +122,8 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[Working with Color](../windows/working-with-color-image-editor-for-icons.md)
+[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-editor-for-icons.md)<br/>
+[How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[How to: Work with Color](../windows/working-with-color-image-editor-for-icons.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

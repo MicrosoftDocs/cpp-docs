@@ -7,18 +7,15 @@ ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
 ---
 # How To: Create an Icon or Other Image
 
-You can create a new image (bitmap, icon, cursor, or toolbar), then use the Image editor to customize its appearance. You can also create a new bitmap patterned after a [template](../windows/how-to-use-resource-templates.md).
+You can create a new image, bitmap, icon, cursor, or toolbar, and then use the **Image Editor** to customize its appearance. You can also create a new bitmap patterned after a [resource template](../windows/how-to-use-resource-templates.md).
 
 ## Icons and Cursors: Image Resources for Display Devices
 
-Icons and cursors are graphical resources that can contain multiple images in different sizes and color schemes for different types of display devices. Also, a cursor has a "hot spot," the location Windows uses to track its position. Both icons and cursors are created and edited using the **Image** editor, as are bitmaps and other images.
+Icons and cursors are graphical resources that can contain multiple images in different sizes and color schemes for different types of display devices. A cursor also has a hot spot, the location Windows uses to track its position. Both icons and cursors are created and edited using the **Image Editor**, as are bitmaps and other images.
 
-When you create a new icon or cursor, the **Image** editor first creates an image of a standard type. The image is initially filled with the screen (transparent) color. If the image is a cursor, the hot spot is initially the upper-left corner (coordinates 0,0).
+When you create a new icon or cursor, the **Image Editor** first creates an image of a standard type. The image is initially filled with the screen (transparent) color. If the image is a cursor, the hot spot is initially the upper-left corner with coordinates `0,0`.
 
-By default, the **Image** editor supports the creation of additional images for the devices shown in the following table. You can create images for other devices by typing width, height, and color-count parameters into the [Custom Image dialog box](custom-image-dialog-box-image-editor-for-icons.md).
-
-> [!NOTE]
-> Using the **Image Editor**, you can view 32-bit images, but you cannot edit them.
+By default, the **Image Editor** supports the creation of additional images for the devices shown in the following table. You can create images for other devices by typing width, height, and color-count parameters into the **Custom Image** dialog box.
 
 |Color|Width (pixels)|Height (pixels)|
 |-----------|----------------------|-----------------------|
@@ -40,13 +37,13 @@ By default, the **Image** editor supports the creation of additional images for 
 
 ### Create a device image (icon or cursor)
 
-When you create a new icon or cursor resource, the **Image** editor first creates an image in a specific style (32 × 32, 16 colors for icons and 32 × 32, Monochrome for cursors). You can then add images in different sizes and styles to the initial icon or cursor and edit each additional image, as needed, for the different display devices. You can also edit an image by using a cut-and-paste operation from an existing image type or from a bitmap created in a graphics program.
+When you create a new icon or cursor resource, the **Image Editor** first creates an image in a specific style (32 × 32, 16 colors for icons and 32 × 32, Monochrome for cursors). You can then add images in different sizes and styles to the initial icon or cursor and edit each additional image, as needed, for the different display devices. You can also edit an image by using a cut-and-paste operation from an existing image type or from a bitmap created in a graphics program.
 
-When you open the icon or cursor resource in the [Image editor](../windows/image-editor-for-icons.md), the image most closely matching the current display device is opened by default.
+When you open the icon or cursor resource in the [Image Editor](../windows/image-editor-for-icons.md), the image most closely matching the current display device is opened by default.
 
-The **New &lt;Device&gt; Image Type** dialog box enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, select **New Image Type** on the **Image** menu. The following properties included are **Target Image Type** and **Custom**.
+The **New &lt;Device&gt; Image Type** dialog box enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, go to menu **Image** > **New Image Type**. The following properties included are **Target Image Type** and **Custom**.
 
-The **Target Image Type** property lists the available image types. Select the image type you want to open:
+The **Target Image Type** property lists the available image types where you select the image type you want to open:
 
 ||||
 |-|-|-|
@@ -78,7 +75,7 @@ Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ pr
 
 #### To create a new icon or cursor
 
-1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource** from the shortcut menu. (If you already have an existing image resource in your .rc file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor** from the shortcut menu.)
+1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource**. If you already have an existing image resource in your .rc file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
 
    > [!NOTE]
    > If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
@@ -89,13 +86,13 @@ Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ pr
 
 ### To add an image for a different display device
 
-1. On the **Image** menu, select **New Device Image** (or right-click in the **Image Editor** pane and choose **New Device Image** from the shortcut menu).
+1. Go to menu **Image** > **New Device Image**, or right-click in the **Image Editor** pane and choose **New Device Image**.
 
 1. Select the type of image you want to add. You can also select **Custom** to create an icon whose size isn't available in the default list.
 
 ### To copy a device image
 
-1. On the **Image** menu, select **Open Device Image** and choose an image from the current images list. For example, choose the 32 × 32, 16-color version of an icon.
+1. Go to menu **Image** > **Open Device Image** and choose an image from the current images list. For example, choose the 32 × 32, 16-color version of an icon.
 
 1. Copy the currently displayed icon image (**Ctrl**+**C**).
 
@@ -105,23 +102,23 @@ Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ pr
 
 ### To delete a device image
 
-While the icon image is displayed in the **Image** editor, select **Delete Device Image** from the **Image** menu. When you delete the last icon image in the resource, the resource is also deleted.
+While the icon image is displayed in the **Image Editor**, go to menu **Image** > **Delete Device Image**. When you delete the last icon image in the resource, the resource is also deleted.
 
-   > [!NOTE]
-   > When you press the **Del** key, the images and colors you have drawn on an icon are deleted but the icon remains; you can now redesign it. If you press **Del** by mistake, you can press **Ctrl**+**Z** to undo the action.
+> [!NOTE]
+> When you press the **Del** key, the images and colors you have drawn on an icon are deleted but the icon remains and you can now redesign it. If you press **Del** by mistake, press **Ctrl**+**Z** to undo the action.
 
 ### To create transparent or inverse regions in device images
 
-In the [Image editor](../windows/image-editor-for-icons.md), the initial icon or cursor image has a transparent attribute. Although icon and cursor images are rectangular, many don't appear so because parts of the image are transparent; the underlying image on the screen shows through the icon or cursor. When you drag an icon, parts of the image may appear in an inverted color. You create this effect by setting the screen color and inverse color in the [Colors window](../windows/colors-window-image-editor-for-icons.md).
+In the [Image Editor](../windows/image-editor-for-icons.md), the initial icon or cursor image has a transparent attribute. Although icon and cursor images are rectangular, many don't appear so because parts of the image are transparent and the underlying image on the screen shows through the icon or cursor. When you drag an icon, parts of the image may appear in an inverted color. You create this effect by setting the screen color and inverse color in the [Colors window](../windows/colors-window-image-editor-for-icons.md).
 
 The screen and inverse colors you apply to icons and cursors either shape and color the derived image or assign inverse regions. The colors indicate parts of the image that have those attributes. You can change the colors that represent the screen-color and inverse-color attributes in editing. These changes don't affect the appearance of the icon or cursor in your application.
 
 > [!NOTE]
-> The dialog boxes and menu commands you see might differ from those described in **Help** depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+> The dialog boxes and menu commands you see might differ from those described in **Help** depending on your active settings or edition. To change your settings, go to menu **Tools** > **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 #### To create transparent or inverse regions
 
-1. In the **Colors** window, select the **Screen-Color** selector or the **Inverse-Color** selector.
+1. In the **Colors** window, choose the selector **Screen-Color** or **Inverse-Color**.
 
 1. Apply the screen or inverse color onto your image using a drawing tool. For more information on drawing tools, see [Using a Drawing Tool](using-a-drawing-tool-image-editor-for-icons.md).
 
@@ -138,20 +135,18 @@ The screen and inverse colors you apply to icons and cursors either shape and co
 
 ### Use the 256-color palette
 
-Using the **Image** editor, icons and cursors can be sized large (64 × 64) with a 256-color palette to choose from. After creating the resource, a device image style is selected.
+Using the **Image Editor**, icons and cursors can be sized large (64 × 64) with a 256-color palette to choose from. After creating the resource, a device image style is selected.
 
 #### To create a 256-color icon or cursor
 
-1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource** from the shortcut menu. (If you already have an existing image resource in your .rc file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor** from the shortcut menu.)
+1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource**. If you already have an existing image resource in your .rc file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
 
    > [!NOTE]
    > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 1. In the [Insert Resource dialog box](../windows/add-resource-dialog-box.md), select **Icon** or **Cursor** and choose **New**.
 
-1. On the **Image** menu, select **New Device Image**.
-
-1. Select the 256-color image style you want.
+1. Go to menu **Image** > **New Device Image** and select the 256-color image style you want.
 
 #### To choose a color from the 256-color palette for large icons
 
@@ -168,7 +163,7 @@ To draw with a selection from the 256-color palette, you need to select the colo
 
 ### Set a cursor&#39;s hot spot
 
-The hot spot of a cursor is the point to which Windows refers in tracking the cursor's position. By default, the hot spot is set to the upper-left corner of the cursor (coordinates 0,0). The **Hotspot** property in the [Properties window](/visualstudio/ide/reference/properties-window) shows the hot spot coordinates.
+The hot spot of a cursor is the point to which Windows refers in tracking the cursor's position. By default, the hot spot is set to the upper-left corner of the cursor with coordinates `0,0`. The **Hotspot** property in the [Properties window](/visualstudio/ide/reference/properties-window) shows the hot spot coordinates.
 
 #### To set a cursor's hot spot
 
@@ -178,27 +173,22 @@ The hot spot of a cursor is the point to which Windows refers in tracking the cu
 
    The **Hotspot** property in the **Properties** window displays the new coordinates.
 
-   > [!TIP]
-   > Tool tips appear when you hover your cursor over a toolbar button. These tips can help you identify the function of each button.
-
-## Saving Bitmaps as GIFs or JPEGs
+### To create and save a bitmap as a .gif or .jpeg
 
 When you create a bitmap, the image is created in bitmap format (.bmp). You can, however, save the image as a GIF or JPEG or in other graphic formats.
 
 > [!NOTE]
-> This process does not apply to icons and cursors.
+> This process doesn't apply to icons and cursors.
 
-### To create and save a bitmap as a .gif or .jpeg
-
-1. From the **File** menu, choose **Open**, then select **File**.
+1. Go to menu **File** > **Open**, then select **File**.
 
 1. In the **New File dialog box**, choose the **Visual C++** folder, then select **Bitmap File (.bmp)** in the **Templates** box and select **Open**.
 
-   The bitmap opens in the **Image** editor.
+   The bitmap opens in the **Image Editor**.
 
 1. Make changes to your new bitmap as needed.
 
-1. With the bitmap still open in the **Image** editor, choose **Save *filename*.bmp As** on the **File** menu.
+1. With the bitmap still open in the **Image Editor**, go to menu **File** > **Save *filename*.bmp As**.
 
 1. In the **Save File As** dialog box, type the name you want to give the file and the extension that denotes the file format you want in the **File Name** box. For example, *myfile.gif*.
 
@@ -207,23 +197,21 @@ When you create a bitmap, the image is created in bitmap format (.bmp). You can,
 
 1. Select **Save**.
 
-## Converting an Image From One Format to Another
-
-You can open GIF or JPEG images in the **Image** editor and save them as bitmaps. Also, you can open a bitmap file and save it as a GIF or JPEG. Images you work with need not be part of a project for editing in the development environment (see [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).
-
 ### To convert an image from one format to another
 
-1. Open the image in the **Image** editor.
+You can open GIF or JPEG images in the **Image Editor** and save them as bitmaps. Also, you can open a bitmap file and save it as a GIF or JPEG. Images you work with need not be part of a project for editing in the development environment (see [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).
 
-1. From the **File** menu, choose **Save *filename* As**.
+1. Open the image in the **Image Editor**.
+
+1. Go to menu **File** > **Save *filename* As**.
 
 1. In the **Save File As** dialog box, in the **File name** box, type the file name and the extension that denotes the format you want.
 
 1. Select **Save**.
 
-## To add a new image resource to an unmanaged C++ project
+### To add a new image resource to an unmanaged C++ project
 
-1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource** from the shortcut menu. (If you already have an existing image resource in your .rc file, such as a cursor, you can simply right-click the **Cursor** folder and select **Insert Cursor** from the shortcut menu.)
+1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource**. If you already have an existing image resource in your .rc file, such as a cursor, you can simply right-click the **Cursor** folder and select **Insert Cursor**.
 
    > [!NOTE]
    > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
@@ -232,9 +220,9 @@ You can open GIF or JPEG images in the **Image** editor and save them as bitmaps
 
    If a plus sign (**+**) appears next to the image resource type in the **Insert Resource** dialog box, it means that toolbar templates are available. Select the plus sign to expand the list of templates, select a template, and choose **New**.
 
-## To add a new image resource to a project in a .NET programming language
+### To add a new image resource to a project in a .NET programming language
 
-1. In **Solution Explorer**, right-click the project folder (for example, `WindowsApplication1`).
+1. In **Solution Explorer**, right-click the project folder (for example, *WindowsApplication1*).
 
 1. From the shortcut menu, select **Add**, then choose **Add New Item**.
 
@@ -242,10 +230,7 @@ You can open GIF or JPEG images in the **Image** editor and save them as bitmaps
 
 1. In the **Templates** pane, choose the resource type you'd like to add to your project.
 
-   The resource is added to your project in **Solution Explorer** and the resource opens in the [Image editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).
-
-   > [!NOTE]
-   > Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources. For more information, see [Creating Resource Files](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) in the *.NET Framework Developer's Guide*.
+   The resource is added to your project in **Solution Explorer** and the resource opens in the [Image editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the **Image Editor** to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).
 
 ## Requirements
 
@@ -253,11 +238,13 @@ None
 
 ## See Also
 
+[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
+[How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[How to: Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[How to: Work with Color](../windows/working-with-color-image-editor-for-icons.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+<!--
 [Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
 [Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
-[Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>
-[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[Image Menu](../windows/image-menu-image-editor-for-icons.md)<br/>
 [Icons](/windows/desktop/menurc/icons)<br/>
-[Cursors](/windows/desktop/menurc/cursors)<br/>
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Cursors](/windows/desktop/menurc/cursors)<br/>-->

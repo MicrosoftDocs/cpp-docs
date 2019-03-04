@@ -13,10 +13,7 @@ All colors for monochrome and 16-color images are shown in the **Colors** palett
 
 When working with 256-color icon and cursor images, the **Colors** property in the [Properties window](/visualstudio/ide/reference/properties-window) is used. For more information, see [Creating a 256-color icon or cursor](creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).
 
-> [!NOTE]
-> Using the **Image Editor**, you can view 32-bit images, but you cannot edit them.
-
-True-color images can also be created. However, true color samples don't appear in the full palette in the **Colors** window; they appear only in the foreground or background color indicator area. True colors are created using the [Custom Color Selector dialog box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md).
+True-color images can also be created. However, true color samples don't appear in the full palette in the **Colors** window; they appear only in the foreground or background color indicator area. True colors are created using the **Custom Color Selector** dialog box.
 
 You can save customized color palettes on disk and reload them as needed. The color palette you used most recently is saved in the Registry and automatically loaded the next time you start Visual Studio.
 
@@ -27,14 +24,14 @@ The **Colors** window has two parts:
 - The **Color Indicator**, which shows the foreground and background colors and selectors for screen and inverse color.
 
    ![Colors window](../windows/media/vccolorswindow.gif "vcColorsWindow")<br/>
-   Colors Window
+   **Colors** window
 
 > [!NOTE]
 > The **Screen color** and **Inverse color** tools are only available for icons and cursors.
 
 You can use the **Colors** window with the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md).
 
-- To display the **Colors** window, right-click in an **Image Editor** pane and choose **Show Colors Window**, or select **Show Colors Window** on the [Image menu](../windows/image-menu-image-editor-for-icons.md).
+- To display the **Colors** window, right-click in an **Image Editor** pane and choose **Show Colors Window**, or go to menu [Image](../windows/image-menu-image-editor-for-icons.md) > **Show Colors Window**.
 
 - To hide the **Colors** window, unpin the window (this action will allow the window to auto hide when it's not in use) or select the **Close** button.
 
@@ -44,28 +41,28 @@ The **Custom Color Selector** dialog box allows you to customize the colors you 
 
 |Property|Description|
 |--------------------------|--------------------------|
-|**Gradient Color Display**|Changes the values of a selected color. Position the crosshair on the color you want to change. Then move the slider up or down to change the luminosity or RGB values of the color.|
-|**Luminosity Bar**|Sets the luminosity for the color you select in the **Gradient Color Display** box. Select and drag the white arrow up the bar for greater brightness or down for less. The **Color** box displays the color you've selected and the effect of the luminosity you set.|
-|**Color**|Lists the hue (color wheel value) of the color you're defining. Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
-|**Hue**|Lists the hue (color wheel value) of the color you're defining. Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
-|**Sat**|Specifies the saturation value of the color you're defining. Saturation is the amount of color in a specified hue. Values range from 0 to 240.|
-|**Lum**|Lists the luminosity (brightness) of the color you're defining. Values range from 0 to 240.|
-|**Red**|Specifies the red value of the color you're defining. Values range from 0 to 255.|
-|**Green**|Specifies the green value of the color you're defining. Values range from 0 to 255.|
-|**Blue**|Specifies the blue value of the color you're defining. Values range from 0 to 255.|
+|**Gradient Color Display**|Changes the values of a selected color.<br/><br/>Position the crosshair on the color you want to change and move the slider up or down to change the luminosity or RGB values of the color.|
+|**Luminosity Bar**|Sets the luminosity for the color you select in the **Gradient Color Display** box.<br/><br/>Select and drag the white arrow up the bar for greater brightness or down for less. The **Color** box displays the color you've selected and the effect of the luminosity you set.|
+|**Color**|Lists the hue (color wheel value) of the color you're defining.<br/><br/>Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
+|**Hue**|Lists the hue (color wheel value) of the color you're defining.<br/><br/>Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
+|**Sat**|Specifies the saturation value of the color you're defining.<br/><br/>Saturation is the amount of color in a specified hue. Values range from 0 to 240.|
+|**Lum**|Lists the luminosity (brightness) of the color you're defining.<br/><br/>Values range from 0 to 240.|
+|**Red**|Specifies the red value of the color you're defining.<br/><br/>Values range from 0 to 255.|
+|**Green**|Specifies the green value of the color you're defining.<br/><br/>Values range from 0 to 255.|
+|**Blue**|Specifies the blue value of the color you're defining.<br/><br/>Values range from 0 to 255.|
 
-You can save and load a **Colors** palette that contains customized colors. (By default, the **Colors** palette most recently used is automatically loaded when you start Visual Studio.)
+You can save and load a **Colors** palette that contains customized colors. By default, the **Colors** palette most recently used is automatically loaded when you start Visual Studio.
 
 > [!TIP]
-> Since the **Image** editor has no means to restore the default **Colors** palette, you should save the default **Colors** palette under a name such as *standard.pal* or *default.pal* so that you can easily restore the default settings.
+> Since the **Image Editor** has no means to restore the default **Colors** palette, you should save the default **Colors** palette under a name such as *standard.pal* or *default.pal* so that you can easily restore the default settings.
 
 Use the **Load Palette Colors** dialog box to load special color palettes to use in your C++ project. The following properties included are:
 
 |Property|Description|
 |-----------------|-----------------|
-|**Look in**|Specifies the location where you want to locate a file or folder. Select the arrow to choose another location, or select the folder icon on the toolbar to move up levels.|
-|**File name**|Provides a space for you to type the name of the file you want to open. To quickly find a file you've previously opened, select the file name in the drop-down list, if available.<br/><br/>If you're searching for a file, you can use asterisks (*) as wildcards. For example, you can type \*.\* to see a list of all files. You can also type the full path of a file, for example, C:\My Documents\MyColorPalette.pal or \\\NetworkServer\MyFolder\MyColorPalette.pal.|
-|**Files of type**|Lists the types of files to display. Palette (*.pal) is the default file type for color palettes.|
+|**Look in**|Specifies the location where you want to locate a file or folder.<br/><br/>Select the arrow to choose another location, or select the folder icon on the toolbar to move up levels.|
+|**File name**|Provides a space for you to type the name of the file you want to open.<br/><br/>To quickly find a file you've previously opened, select the file name in the drop-down list, if available.<br/><br/>If you're searching for a file, you can use asterisks (*) as wildcards. For example, you can type \*.\* to see a list of all files. You can also type the full path of a file, for example, *C:\My Documents\MyColorPalette.pal* or *\\\NetworkServer\MyFolder\MyColorPalette.pal*.|
+|**Files of type**|Lists the types of files to display.<br/><br/>Palette (*.pal) is the default file type for color palettes.|
 
 ## How To
 
@@ -79,16 +76,16 @@ Except for the **Eraser**, tools on the **Image Editor** toolbar draw with the c
 
 ### To fill a bounded area of an image with a color
 
-The Image editor provides the **Fill** tool for filling any enclosed image area with the current drawing color or the current background color.
+The **Image Editor** provides the **Fill** tool for filling any enclosed image area with the current drawing color or the current background color.
 
 > [!TIP]
 > Tool tips appear when you hover your cursor over a toolbar button. These tips can help you identify the function of each button.
 
 ### To use the fill tool
 
-1. On the **Image Editor** toolbar (or use **Image** > **Tools**), select the **Fill** tool.
+1. Use the **Image Editor** toolbar or go to menu **Image** > **Tools** and select the **Fill** tool.
 
-1. If necessary, choose drawing colors: In the [Colors palette](../windows/colors-window-image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
+1. If necessary, choose drawing colors. In the [Colors palette](../windows/colors-window-image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
 
 1. Move the **Fill** tool to the area you want to fill.
 
@@ -98,17 +95,12 @@ The Image editor provides the **Fill** tool for filling any enclosed image area 
 
 The **Select Color**, or color-pickup, tool makes any color on the image the current foreground color or background color, depending on whether you press the left or the right mouse button. To cancel the **Select Color** tool, choose another tool.
 
-> [!TIP]
-> Tool tips appear when you hover your cursor over a toolbar button. These tips can help you identify the function of each button.
-
-#### To pick up a color
-
-1. On the **Image Editor** toolbar (or from the **Image** menu, **Tools** command), select the **Select Color** tool.
+1. Use the **Image Editor** toolbar or go to menu **Image** > **Tools** and select the **Select Color** tool.
 
 1. Select the color you want to pick up from the image.
 
    > [!NOTE]
-   > After you pick up a color, the **Image** editor reactivates the most recently used tool.
+   > After you pick up a color, the **Image Editor** reactivates the most recently used tool.
 
 1. Draw using the left mouse button for the foreground color, or the right mouse button for the background color.
 
@@ -116,7 +108,7 @@ The **Select Color**, or color-pickup, tool makes any color on the image the cur
 
 When you move or copy a selection from an image, any pixels in the selection that match the current background color are, by default, transparent and they don't obscure pixels in the target location.
 
-You can switch from a transparent background (the default) to an opaque background, and back again. When you use a selection tool, the **Transparent Background** and **Opaque Background** options appear in the **Option** selector on the **Image Editor** toolbar (as seen below).
+You can switch from a transparent background (the default) to an opaque background, and back again. When you use a selection tool, the **Transparent Background** and **Opaque Background** options appear in the **Option** selector on the **Image Editor** toolbar.
 
 ![Background options &#45; opaque or transparent](../windows/media/vcimageeditoropaqtranspback.gif "Background options &#45; opaque or transparent")<br/>
 **Transparent and Opaque Options** on the **Image Editor Toolbar**
@@ -125,25 +117,24 @@ You can switch from a transparent background (the default) to an opaque backgrou
 
 In the **Image Editor** toolbar, select the **Option** selector, and then choose the appropriate background:
 
-- `Opaque Background (O)`: Existing image is obscured by all parts of the selection.
+- **Opaque Background (O)**: Existing image is obscured by all parts of the selection.
 
-- `Transparent Background (T)`: Existing image shows through parts of the selection that match the current background color.
+- **Transparent Background (T)**: Existing image shows through parts of the selection that match the current background color.
 
-   \- or -
-
-On the **Image** menu, select or clear **Draw Opaque**.
+> [!TIP]
+> For a shortcut, on the **Image** menu, select or clear **Draw Opaque**.
 
 You can change the background color while a selection is already in effect to change which parts of the image are transparent.
 
 ### To invert the colors in a selection
 
-The **Image** editor provides a convenient way to invert colors in the selected part of the image so you can tell how an image would appear with inverted colors.
+The **Image Editor** provides a convenient way to invert colors in the selected part of the image so you can tell how an image would appear with inverted colors.
 
-To invert colors in the current selection, on the **Image** menu, select **Invert Colors**.
+To invert colors in the current selection, go to menu **Image** > **Invert Colors**.
 
 ### To customize or change colors on the colors palette
 
-1. From the **Image** menu, choose **Adjust Colors**.
+1. Go to menu **Image** > **Adjust Colors**.
 
 1. In the **Custom Color Selector** dialog box, define the color by typing RGB or HSL values in the appropriate text boxes or choose a color in the **Gradient Color Display** box.
 
@@ -157,7 +148,7 @@ To invert colors in the current selection, on the **Image** menu, select **Inver
 
 ### To save a custom colors palette
 
-1. From the **Image** menu, choose **Save Palette**.
+1. Go to menu **Image** > **Save Palette**.
 
 1. Navigate to the directory where you want to save the palette, and type a name for the palette.
 
@@ -165,7 +156,7 @@ To invert colors in the current selection, on the **Image** menu, select **Inver
 
 ### To load a custom colors palette
 
-1. From the **Image** menu, choose **Load Palette**.
+1. Go to menu **Image** > **Load Palette**.
 
 1. In the **Load Color Palette** dialog box, navigate to the correct directory and select the palette you want to load. **Color** palettes are saved with a .pal file extension.
 
@@ -175,8 +166,8 @@ None
 
 ## See Also
 
-[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
-[Creating Transparent or Inverse Regions in Device Images](../windows/creating-transparent-or-inverse-regions-in-device-images.md)<br/>
-[Custom Color Selector Dialog Box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)<br/>
 [Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[Image Menu](../windows/image-menu-image-editor-for-icons.md)<br/>
+[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-editor-for-icons.md)<br/>
+[How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[How to: Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
