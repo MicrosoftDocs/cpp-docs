@@ -13,6 +13,6 @@ Exposes the same functionality as the [/HEAP](../../build/reference/heap-set-hea
 /HEAP:reserve[,commit]
 ```
 
-## See Also
+## See also
 
 [Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)

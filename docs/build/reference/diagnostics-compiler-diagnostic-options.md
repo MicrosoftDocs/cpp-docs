@@ -39,7 +39,7 @@ The **/diagnostics** option is available starting in Visual Studio 2017.
 
 1. Use the dropdown control in the **Diagnostics Format** field to select a diagnostics display option. Choose **OK** or **Apply** to save your changes.
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

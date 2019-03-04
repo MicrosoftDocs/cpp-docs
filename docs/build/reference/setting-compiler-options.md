@@ -32,7 +32,7 @@ Compiler options are processed "left to right," and when a conflict is detected,
 
 - [CL Invokes the Linker](../../build/reference/cl-invokes-the-linker.md)
 
-## See Also
+## See also
 
 [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)

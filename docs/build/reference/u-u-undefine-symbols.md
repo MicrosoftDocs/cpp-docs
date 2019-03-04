@@ -54,7 +54,7 @@ By default, the compiler defines the following Microsoft-specific symbols.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefineAllPreprocessorDefinitions%2A> or <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UndefinePreprocessorDefinitions%2A>.
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>

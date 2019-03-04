@@ -68,6 +68,6 @@ The standard MFC static link libraries are named according to the convention des
 
 - [MFC extension DLLs](../build/extension-dlls-overview.md)
 
-## See Also
+## See also
 
 [Kinds of DLLs](../build/kinds-of-dlls.md)

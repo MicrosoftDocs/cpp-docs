@@ -30,7 +30,7 @@ For more information, see:
 
 - [Migration Tips](/windows/desktop/WinProg64/migration-tips)
 
-## See Also
+## See also
 
 [Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)

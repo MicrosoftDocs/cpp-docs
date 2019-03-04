@@ -43,7 +43,7 @@ If you do not specify `filename`, the .sbr file gets the same base name as the s
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>.
 
-## See Also
+## See also
 
 [Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)<br/>

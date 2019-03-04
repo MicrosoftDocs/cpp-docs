@@ -17,6 +17,6 @@ This option displays public symbols defined in a library. Specify the 1 argument
 
 Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
 [DUMPBIN Options](../../build/reference/dumpbin-options.md)

@@ -28,7 +28,7 @@ To use NMAKE, you must run it in a Developer Command Prompt window. A Developer 
 
 [Makefile preprocessing](../build/makefile-preprocessing.md)
 
-## See Also
+## See also
 
 [Build C/C++ code on the command line](../build/building-on-the-command-line.md)<br/>
 [C/C++ Build Tools](../build/reference/c-cpp-build-tools.md)<br/>

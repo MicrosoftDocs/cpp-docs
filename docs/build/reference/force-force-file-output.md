@@ -41,7 +41,7 @@ If a module is compiled with **/clr**, **/FORCE** will not create an image.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

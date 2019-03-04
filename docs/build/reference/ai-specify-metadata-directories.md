@@ -34,7 +34,7 @@ Only one directory can be passed to an **/AI** invocation. Specify one **/AI** o
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalUsingDirectories%2A>.
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>

@@ -51,7 +51,7 @@ The following command line preprocesses file `ADD.C`, preserves comments, and di
 CL /EP /C ADD.C
 ```
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

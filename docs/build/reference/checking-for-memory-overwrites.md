@@ -21,6 +21,6 @@ if(_heapchk()!=_HEAPOK)
 
 If this function ever fails, you need to isolate at which point the heap was corrupted.
 
-## See Also
+## See also
 
 [Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)

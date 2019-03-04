@@ -58,6 +58,6 @@ You cannot change the VC++ directories settings if you run [devenv /resetsetting
 
 Migrate VC++ directories settings from a .vssettings file that is created by an earlier release of Visual C++. Open the **Tools** menu, click **Import and Export Settings**, select **Import selected environment settings**, and then follow the directions in the wizard. Or when you start Visual Studio for the first time, on the **Choose Default Environment Settings** dialog box, select **Migrate my eligible settings from a previous version and apply them in addition to the default settings selected below**.
 
-## See Also
+## See also
 
 [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)

@@ -17,6 +17,6 @@ target.lib :: four.c five.c
     lib target four.obj five.obj
 ```
 
-## See Also
+## See also
 
 [Targets](../build/targets.md)

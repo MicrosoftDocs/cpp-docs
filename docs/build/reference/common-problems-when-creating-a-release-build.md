@@ -42,7 +42,7 @@ The lack of debugging information removes the padding from your application. In 
 
 Depending on the nature of certain segments of code, the optimizing compiler might generate unexpected code. This is the least likely cause of release build problems, but it does arise on occasion. For a solution, see [Optimizing Your Code](../../build/reference/optimizing-your-code.md).
 
-## See Also
+## See also
 
 [Release Builds](../../build/reference/release-builds.md)<br/>
 [Fixing Release Build Problems](../../build/reference/fixing-release-build-problems.md)
