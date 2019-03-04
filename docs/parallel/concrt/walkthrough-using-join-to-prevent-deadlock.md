@@ -142,7 +142,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>

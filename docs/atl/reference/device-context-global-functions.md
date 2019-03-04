@@ -42,6 +42,6 @@ If *hdc* is not NULL and *ptd* is NULL, the function returns the existing *hdc*.
 
 **Header:** atlwin.h
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)

@@ -89,8 +89,7 @@ In some rare cases you might want to customize the contents of the standard fram
 > [!NOTE]
 >  Do not modify the resources directly in the standard .rc files. Doing so will modify the resources available in every application, not just in the one you are currently working on.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

@@ -863,7 +863,7 @@ virtual void SetText(LPCTSTR lpszText);
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -65,7 +65,6 @@ This topic lists options for additional features for your application, such as H
 
    Specifies the number of files to be listed on the most recently used list. The default number is 4.
 
-## See Also
+## See also
 
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)
-

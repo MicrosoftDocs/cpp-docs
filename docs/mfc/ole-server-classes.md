@@ -34,7 +34,6 @@ Used to create documents using the framework's document/view architecture. A `CO
 [COleException](../mfc/reference/coleexception-class.md)<br/>
 An exception resulting from a failure in OLE processing. This class is used by both containers and servers.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

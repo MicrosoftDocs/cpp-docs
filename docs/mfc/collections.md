@@ -94,8 +94,7 @@ The Characteristics of MFC Collection Classes table in [Recommendations for Choo
 
 - [Deleting All Objects in a CObject Collection](../mfc/deleting-all-objects-in-a-cobject-collection.md)
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

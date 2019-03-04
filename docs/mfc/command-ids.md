@@ -12,7 +12,6 @@ For example, a Clear All item in the Edit menu might be assigned an ID such as *
 
 When you create your own menus in the Visual C++ menu editor, it is a good idea to follow the class library's naming convention as illustrated by **ID_FILE_OPEN**. [Standard Commands](../mfc/standard-commands.md) explains the standard commands defined by the class library.
 
-## See Also
+## See also
 
 [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)
-

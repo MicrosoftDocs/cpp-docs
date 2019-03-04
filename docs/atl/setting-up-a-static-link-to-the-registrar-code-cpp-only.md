@@ -16,6 +16,6 @@ The simplest way to set up static linking assumes you have specified [DECLARE_RE
 
 1. Recompile.
 
-## See Also
+## See also
 
 [Registry Component (Registrar)](../atl/atl-registry-component-registrar.md)

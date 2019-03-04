@@ -84,7 +84,7 @@ Finally, the implementations of the `GetCircleOffset` and `SetCircleOffset` func
 
 Note that the Add Property Wizard automatically adds a call, to [SetModifiedFlag](../mfc/reference/colecontrol-class.md#setmodifiedflag), to the body of the Set function. Calling this function marks the control as modified. If a control has been modified, its new state will be saved when the container is saved. This function should be called whenever a property, saved as part of the control's persistent state, changes value.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md)<br/>

@@ -97,7 +97,7 @@ Here is the running app:
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
 
-## See Also
+## See also
 
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>

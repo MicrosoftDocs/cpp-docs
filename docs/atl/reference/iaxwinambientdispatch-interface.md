@@ -655,10 +655,9 @@ A standard HRESULT value.
 
 The ATL host object implementation uses VARIANT_TRUE as the default value of this property.
 
-## See Also
+## See also
 
 [IAxWinAmbientDispatchEx Interface](../../atl/reference/iaxwinambientdispatchex-interface.md)<br/>
 [IAxWinHostWindow Interface](../../atl/reference/iaxwinhostwindow-interface.md)<br/>
 [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
-

@@ -52,7 +52,6 @@ The advantage of registering the control directly is that you do not need to inv
 
 You should register MFCx0.DLL.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-

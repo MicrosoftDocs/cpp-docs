@@ -253,7 +253,7 @@ Returns a pointer to the object data type defined in the class template.
 
 See the example in the [CAutoPtr Overview](../../atl/reference/cautoptr-class.md).
 
-## See Also
+## See also
 
 [CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
 [CAutoVectorPtr Class](../../atl/reference/cautovectorptr-class.md)<br/>

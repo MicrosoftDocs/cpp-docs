@@ -77,7 +77,6 @@ Sets additional miscellaneous support for the control.
 
 - **Licensed**: Adds support to the control for [licensing](/windows/desktop/com/licensing). Licensed controls can only be hosted if the client machine has the correct license.
 
-## See Also
+## See also
 
 [ATL Control Wizard](../../atl/reference/atl-control-wizard.md)
-

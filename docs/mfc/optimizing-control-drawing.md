@@ -35,7 +35,7 @@ Finally, to eliminate unnecessary `SelectObject` calls, modify `OnDraw` as follo
 
 [!code-cpp[NVC_MFC_AxOpt#20](../mfc/codesnippet/cpp/optimizing-control-drawing_6.cpp)]
 
-## See Also
+## See also
 
 [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)<br/>
 [COleControl Class](../mfc/reference/colecontrol-class.md)<br/>
@@ -43,4 +43,3 @@ Finally, to eliminate unnecessary `SelectObject` calls, modify `OnDraw` as follo
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Control Wizard](../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [MFC ActiveX Controls: Painting an ActiveX Control](../mfc/mfc-activex-controls-painting-an-activex-control.md)
-

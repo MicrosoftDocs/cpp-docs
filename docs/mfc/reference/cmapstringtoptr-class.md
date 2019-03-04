@@ -73,8 +73,7 @@ When a `CMapStringToPtr` object is deleted, or when its elements are removed, th
 
 **Header:** afxcoll.h
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

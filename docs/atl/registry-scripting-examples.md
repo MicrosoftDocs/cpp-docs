@@ -100,7 +100,6 @@ HKEY_CURRENT_USER
 > [!NOTE]
 > In a Registrar script, 4K is the maximum token size. (A token is any recognizable element in the syntax.) In the previous scripting example, `HKCR`, `HKEY_CURRENT_USER`, `'MyVeryOwnKey'`, and `'HowGoesIt'` are all tokens.
 
-## See Also
+## See also
 
 [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)
-

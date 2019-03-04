@@ -280,6 +280,6 @@ Nonzero if the type library was successfully unregistered; otherwise 0.
 
   **Header** afxdisp.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

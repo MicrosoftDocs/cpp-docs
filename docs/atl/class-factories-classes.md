@@ -20,8 +20,7 @@ The following classes implement or support a class factory:
 
 - [CComCoClass](../atl/reference/ccomcoclass-class.md) Defines the class factory for the object.
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)<br/>
 [Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)
-

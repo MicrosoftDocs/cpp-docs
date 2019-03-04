@@ -332,7 +332,7 @@ BOOL PrintSelection() const;
 
 TRUE if only the selected items are to be printed; otherwise FALSE.
 
-## See Also
+## See also
 
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

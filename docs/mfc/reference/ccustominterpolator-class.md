@@ -285,6 +285,6 @@ The velocity of the variable at the start of the transition.
 
 The basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

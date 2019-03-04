@@ -69,6 +69,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 When `SetAmbientDispatch` is called with a pointer to a new interface, this new interface will be used to invoke any properties or methods asked for by the hosted control, if those properties are not already provided by [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md).
 
-## See Also
+## See also
 
 [IAxWinAmbientDispatch Interface](../../atl/reference/iaxwinambientdispatch-interface.md)

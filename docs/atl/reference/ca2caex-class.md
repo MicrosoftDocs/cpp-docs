@@ -124,7 +124,7 @@ operator LPCSTR() const throw();
 
 Returns the text string as type LPCSTR.
 
-## See Also
+## See also
 
 [CA2AEX Class](../../atl/reference/ca2aex-class.md)<br/>
 [CA2WEX Class](../../atl/reference/ca2wex-class.md)<br/>

@@ -179,8 +179,7 @@ return lpszT; // CString makes copy
 
 The macros are easy to use and easy to insert into your code, but as you can tell from the caveats above, you need to be careful when using them.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

@@ -1958,7 +1958,7 @@ TRUE recalculates the ribbon layout; FALSE otherwise.
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
@@ -1967,4 +1967,3 @@ TRUE recalculates the ribbon layout; FALSE otherwise.
 [CMFCRibbonPanel Class](../../mfc/reference/cmfcribbonpanel-class.md)<br/>
 [CMFCRibbonBaseElement Class](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
 [Walkthrough: Updating the MFC Scribble Application](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
-

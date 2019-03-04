@@ -61,5 +61,4 @@ The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/p/?linkid=3
 
 The OLE section of the Windows SDK contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.
 
-## See Also
-
+## See also

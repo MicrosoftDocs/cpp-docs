@@ -27,9 +27,8 @@ VBScript and other scripting languages connect controls and add interactive func
 
 HTML extensions, such as the object tag, have been added to support controls and scripting.
 
-## See Also
+## See also
 
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
 [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)<br/>
 [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
-

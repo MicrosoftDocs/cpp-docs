@@ -143,8 +143,8 @@ int main()
     wcout << orig << _T(" (wchar_t *)") << endl;
 
     // Convert the wchar_t string to a char* string. Record
-    //.the length of the original string and add 1 to it to
-    //.account for the terminating null character.
+    // the length of the original string and add 1 to it to
+    // account for the terminating null character.
     size_t origsize = wcslen(orig) + 1;
     size_t convertedChars = 0;
 
@@ -189,7 +189,7 @@ int main()
         cout << printstr << endl;
         // The following line of code is an easier way to
         // display wide character strings:
-        // wcout << (LPCTSTR) ccombstr << endl;
+        wcout << (LPCTSTR) ccombstr << endl;
     }
 
     // Convert a wide wchar_t string to a multibyte CStringA,
@@ -516,7 +516,7 @@ int main()
     bstrt += _T(" (_bstr_t)");
     wcout << bstrt << endl;
 
-    // Convert to a wide character_bstr_t string from
+    // Convert to a wide character _bstr_t string from
     // a wide character CStringW string.
     bstr_t bstrtw(origw);
     bstrtw += " (_bstr_t)";
@@ -536,8 +536,8 @@ int main()
     // Convert to a wide character CComBSTR string from
     // a wide character CStringW string.
     CComBSTR ccombstrw(origw);
+    
     // Append the type of string to it, and display the result.
-
     if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
     {
         CW2A printstrw(ccombstrw);
@@ -619,7 +619,7 @@ int main()
     string orig("Hello, World!");
     cout << orig << " (basic_string)" << endl;
 
-    // Convert a wide char basic_string string to a multibyte char*
+    // Convert a wide character basic_string string to a multibyte char*
     // string. To be safe, we allocate two bytes for each character
     // in the original string, including the terminating null.
     const size_t newsize = (strlen(orig.c_str()) + 1)*2;

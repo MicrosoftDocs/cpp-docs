@@ -33,8 +33,7 @@ In addition to the **TTN_NEEDTEXT** notification, a tool tip control can send th
 
 For an example handler function and more information about enabling tool tips, see [Tool Tips](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
 
-## See Also
+## See also
 
 [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

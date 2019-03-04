@@ -62,6 +62,6 @@ virtual ITopologyExecutionResource *GetNext() const = 0;
 
 An interface to the next execution resource in enumeration order. If there are no more nodes in enumeration order of the node to which this execution resource belongs, this method will return the value `NULL`.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

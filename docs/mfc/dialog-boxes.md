@@ -54,6 +54,6 @@ Most dialog boxes are modal, which require the user to close the dialog box befo
 
 - [Samples](../mfc/dialog-sample-list.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

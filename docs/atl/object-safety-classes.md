@@ -16,7 +16,6 @@ The following class provides support for object safety:
 
 [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

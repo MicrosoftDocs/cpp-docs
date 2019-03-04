@@ -141,7 +141,7 @@ The Concurrency Runtime does not support the use of concurrency objects in a sha
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>

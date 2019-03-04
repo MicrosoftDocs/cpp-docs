@@ -2,7 +2,7 @@
 title: "isupper, _isupper_l, iswupper, _iswupper_l"
 ms.date: "11/04/2016"
 apiname: ["isupper", "iswupper", "_iswupper_l", "_isupper_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["isupper", "_istupper", "iswupper"]
 helpviewer_keywords: ["istupper function", "iswupper function", "isupper_l function", "_isupper_l function", "iswupper_l function", "_istupper function", "_iswupper_l function", "isupper function"]

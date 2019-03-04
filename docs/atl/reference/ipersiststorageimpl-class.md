@@ -156,7 +156,7 @@ Returns S_OK.
 
 See [IPersistStorage:SaveCompleted](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-savecompleted) in the Windows SDK.
 
-## See Also
+## See also
 
 [Storages and Streams](/windows/desktop/Stg/storages-and-streams)<br/>
 [IPersistStreamInitImpl Class](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>

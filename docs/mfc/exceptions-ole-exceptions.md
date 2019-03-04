@@ -30,7 +30,6 @@ The difference between these two classes is the amount of information they provi
 
 Two global functions correspond to the two OLE exception classes: [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) and [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception). Use them to throw general OLE exceptions and OLE dispatch exceptions, respectively.
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

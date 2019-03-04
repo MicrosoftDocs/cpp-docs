@@ -336,4 +336,3 @@ In this example, which assumes that it is acceptable to allocate O(N) space duri
 [parallel_buffered_sort Function](reference/concurrency-namespace-functions.md#parallel_buffered_sort)
 
 [parallel_radixsort Function](reference/concurrency-namespace-functions.md#parallel_radixsort)
-

@@ -37,7 +37,6 @@ The following table lists structures that are called from various member functio
 |[DRAWITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct)||
 |[FILETIME Structure](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)||
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-

@@ -891,7 +891,7 @@ This member function implements the behavior of the Win32 macro [HDM_SETORDERARR
 
   See the example for [CHeaderCtrl::GetOrderArray](#getorderarray).
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

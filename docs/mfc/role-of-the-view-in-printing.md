@@ -16,7 +16,6 @@ The view:
 
 For more information about printing and about the view's role in printing, see [Printing and Print Preview](../mfc/printing-and-print-preview.md).
 
-## See Also
+## See also
 
 [Using Views](../mfc/using-views.md)
-

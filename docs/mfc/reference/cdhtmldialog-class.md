@@ -1405,9 +1405,8 @@ Returns E_NOTIMPL.
 
 This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::UpdateUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\)), as described in the Windows SDK.
 
-## See Also
+## See also
 
 [MFC Sample DHtmlExplore](../../visual-cpp-samples.md)<br/>
 [DDX_DHtml Helper Macros](#ddx_dhtml_helper_macros)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

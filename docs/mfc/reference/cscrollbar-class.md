@@ -396,7 +396,7 @@ An application should not call this function to hide a scroll bar while processi
 
   See the example for [CScrollBar::Create](#create).
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -12,7 +12,7 @@ In the sample listing from class `CStdioFile`, in [An Example of the Comments](.
 
 As with attributes, operations can be further subdivided.
 
-## See Also
+## See also
 
 [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)<br/>
 [An Example of the Comments](../mfc/an-example-of-the-comments.md)<br/>
@@ -20,4 +20,3 @@ As with attributes, operations can be further subdivided.
 [// Constructors Comment](../mfc/decrement-constructors-comment.md)<br/>
 [// Attributes Comment](../mfc/decrement-attributes-comment.md)<br/>
 [// Overridables Comment](../mfc/decrement-overridables-comment.md)
-

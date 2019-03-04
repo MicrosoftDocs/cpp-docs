@@ -161,7 +161,7 @@ The file and path of the Universal Resource Locator (URL).
 
 `GetFileURL` is similar to the member function [CFileFind::GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath), except that it returns the URL in the form `ftp://moose/dir/file.txt`.
 
-## See Also
+## See also
 
 [CFileFind Class](../../mfc/reference/cfilefind-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

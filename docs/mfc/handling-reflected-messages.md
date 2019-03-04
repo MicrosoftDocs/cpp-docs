@@ -18,6 +18,6 @@ Message reflection lets you reuse your `CWnd`-derived classes more readily. Mess
 
 - [Implement message reflection for an ActiveX control](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)
 
-## See Also
+## See also
 
 [Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)

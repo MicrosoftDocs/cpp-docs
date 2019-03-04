@@ -46,9 +46,8 @@ If you use the Visual Studio IDE to build a new MFC application that uses Window
 #endif
 ```
 
-## See Also
+## See also
 
 [General MFC Topics](../mfc/general-mfc-topics.md)<br/>
 [Hierarchy Chart](../mfc/hierarchy-chart.md)<br/>
 [Deprecated ANSI APIs](../mfc/deprecated-ansi-apis.md)
-

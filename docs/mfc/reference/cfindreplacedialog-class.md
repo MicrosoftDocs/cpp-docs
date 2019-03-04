@@ -324,7 +324,7 @@ BOOL SearchDown() const;
 
 Nonzero if the user wants the search to proceed in a downward direction; 0 if the user wants the search to proceed in an upward direction.
 
-## See Also
+## See also
 
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

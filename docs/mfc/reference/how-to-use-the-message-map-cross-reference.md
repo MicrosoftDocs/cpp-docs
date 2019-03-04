@@ -19,7 +19,6 @@ The following terms are used:
 |"message" and "wNotifyCode"|Windows message IDs as defined in WINDOWS.H.|
 |nMessageVariable|Name of a variable that contains the return value from the `RegisterWindowMessage` Windows function.|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

@@ -88,6 +88,6 @@ The value used to initialize.
 *_Other*<br/>
 The object used to initialize.
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

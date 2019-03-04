@@ -78,7 +78,6 @@ For more information, see Windows Sockets Specification: **ntohs**, **ntohl**, *
 
 - [Windows Sockets: Using Class CAsyncSocket](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-## See Also
+## See also
 
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
-

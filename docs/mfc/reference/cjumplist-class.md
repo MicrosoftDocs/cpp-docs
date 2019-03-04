@@ -321,6 +321,6 @@ void SetAppID(LPCTSTR strAppID);
 *strAppID*<br/>
 A string that specifies the Application User Model ID.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -4154,10 +4154,9 @@ This function also arranges the list view control if it has the LVS_AUTOARRANGE 
 
   See the example for [CListCtrl::GetSelectedCount](#getselectedcount).
 
-## See Also
+## See also
 
 [MFC Sample ROWLIST](../../visual-cpp-samples.md)<br/>
 [CWnd Class](cwnd-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
 [CImageList Class](cimagelist-class.md)
-

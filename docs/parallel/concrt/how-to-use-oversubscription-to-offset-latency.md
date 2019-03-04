@@ -70,8 +70,7 @@ The following example modifies the body of the `download` method to use RAII to 
 
 [!code-cpp[concrt-download-oversubscription#3](../../parallel/concrt/codesnippet/cpp/how-to-use-oversubscription-to-offset-latency_3.cpp)]
 
-## See Also
+## See also
 
 [Contexts](../../parallel/concrt/contexts.md)<br/>
 [Context::Oversubscribe Method](reference/context-class.md#oversubscribe)
-

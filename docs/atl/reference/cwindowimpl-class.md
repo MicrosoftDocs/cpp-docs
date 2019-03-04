@@ -355,7 +355,7 @@ The result of the message processing.
 
 You can override `WindowProc` to provide a different mechanism for handling messages.
 
-## See Also
+## See also
 
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>

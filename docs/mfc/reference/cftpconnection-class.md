@@ -503,7 +503,7 @@ The *pstrDirName* parameter can be either a partially or fully qualified filenam
 
 Use [GetCurrentDirectory](#getcurrentdirectory) to determine an FTP server's current working directory. Do not assume that the remote system has connected you to the root directory.
 
-## See Also
+## See also
 
 [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

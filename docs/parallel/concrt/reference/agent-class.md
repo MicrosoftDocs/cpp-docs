@@ -265,6 +265,6 @@ An agent task is completed when the agent enters the `agent_canceled` or `agent_
 
 If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

@@ -1262,7 +1262,7 @@ void SetText(LPCTSTR lpszText);
 *lpszText*<br/>
 [in] Pointer to a string that contains the text for the edit box.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
@@ -1270,4 +1270,3 @@ void SetText(LPCTSTR lpszText);
 [CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-

@@ -14,7 +14,6 @@ There are two approaches to making a connection between a control in a dialog bo
 
 - [With Code Wizards](../mfc/type-safe-access-to-controls-with-code-wizards.md)
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)
-

@@ -347,7 +347,7 @@ Valid styles are:
 
 For information on these styles, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).
 
-## See Also
+## See also
 
 [MFC Sample TSTCON](../../visual-cpp-samples.md)<br/>
 [CListBox Class](../../mfc/reference/clistbox-class.md)<br/>

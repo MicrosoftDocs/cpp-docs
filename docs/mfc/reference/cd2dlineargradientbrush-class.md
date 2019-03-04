@@ -257,6 +257,6 @@ void SetStartPoint(CD2DPointF point);
 *point*<br/>
 The starting two-dimensional coordinates of the linear gradient, in the brush's coordinate space
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

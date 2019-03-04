@@ -2340,8 +2340,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method sends the [IDM UNORDERLIST command ID](/previous-versions/aa769987\(v=vs.85\)) to the WebBrowser control.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [HTMLEdit Sample](../../visual-cpp-samples.md)
-

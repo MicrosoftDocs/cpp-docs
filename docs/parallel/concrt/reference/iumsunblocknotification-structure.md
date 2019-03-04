@@ -58,7 +58,7 @@ virtual IUMSUnblockNotification* GetNextUnblockNotification() = 0;
 
 The next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IUMSScheduler Structure](iumsscheduler-structure.md)<br/>

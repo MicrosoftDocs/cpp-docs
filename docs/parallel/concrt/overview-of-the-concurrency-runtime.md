@@ -133,4 +133,3 @@ The Concurrency Runtime is declared in the [Concurrency](../../parallel/concrt/r
 The Concurrency Runtime is provided as part of the C Runtime Library (CRT). For more information about how to build an application that uses the CRT, see [CRT Library Features](../../c-runtime-library/crt-library-features.md).
 
 [[Top](#top)]
-

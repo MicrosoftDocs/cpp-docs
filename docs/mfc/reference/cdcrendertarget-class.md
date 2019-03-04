@@ -161,6 +161,6 @@ operator ID2D1DCRenderTarget*();
 
 Pointer to an ID2D1DCRenderTarget interface or NULL if object is not initialized yet.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

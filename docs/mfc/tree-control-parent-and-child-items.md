@@ -16,8 +16,7 @@ A tree control sends a [TVN_ITEMEXPANDING](/windows/desktop/Controls/tvn-itemexp
 
 When a list of child items is expanded, it is indented relative to the parent item. You can set the amount of indentation by using the [SetIndent](../mfc/reference/ctreectrl-class.md#setindent) member function or retrieve the current amount by using the [GetIndent](../mfc/reference/ctreectrl-class.md#getindent) member function.
 
-## See Also
+## See also
 
 [Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

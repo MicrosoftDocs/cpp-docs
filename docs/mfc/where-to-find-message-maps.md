@@ -19,7 +19,6 @@ The message map consists of a collection of macros. Two macros, [BEGIN_MESSAGE_M
 
 When you use the Add Class wizard to create a new class, it provides a message map for the class. Alternatively, you can create a message map manually using the source code editor.
 
-## See Also
+## See also
 
 [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md)
-

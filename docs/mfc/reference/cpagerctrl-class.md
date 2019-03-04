@@ -562,9 +562,8 @@ void SetScrollPos(int iPos);
 
 This method sends the [PGM_SETPOS](/windows/desktop/Controls/pgm-setpos) message, which is described in the Windows SDK.
 
-## See Also
+## See also
 
 [CPagerCtrl Class](../../mfc/reference/cpagerctrl-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Pager Controls](/windows/desktop/Controls/pager-controls)
-

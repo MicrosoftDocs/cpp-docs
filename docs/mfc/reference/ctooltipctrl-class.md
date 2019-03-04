@@ -854,7 +854,7 @@ ID of the tool.
 *nIDText*<br/>
 ID of the string resource that contains the text for the tool.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -138,7 +138,7 @@ A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that contains th
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

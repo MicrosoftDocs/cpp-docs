@@ -979,6 +979,6 @@ REFLECTED_NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 *func*<br/>
 [in] The name of the message-handler function.
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

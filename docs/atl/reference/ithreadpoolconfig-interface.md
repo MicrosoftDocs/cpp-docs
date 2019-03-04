@@ -126,7 +126,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 See [IThreadPoolConfig::GetSize](#getsize).
 
-## See Also
+## See also
 
 [Classes](../../atl/reference/atl-classes.md)<br/>
 [CThreadPool Class](../../atl/reference/cthreadpool-class.md)

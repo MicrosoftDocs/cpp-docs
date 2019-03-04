@@ -26,7 +26,6 @@ The date and time picker control ([CDateTimeCtrl](../mfc/reference/cdatetimectrl
 
 - [Processing Notification Messages in Date and Time Picker Controls](../mfc/processing-notification-messages-in-date-and-time-picker-controls.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

@@ -77,6 +77,6 @@ Provides links to the various libraries provided with Visual C++, including ATL,
 [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio.md)<br/>
 Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.
 
-## See Also
+## See also
 
 [MFC and ATL](mfc-and-atl.md)

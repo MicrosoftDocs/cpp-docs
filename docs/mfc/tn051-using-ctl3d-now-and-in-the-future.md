@@ -9,8 +9,7 @@ ms.assetid: ab517a13-a137-4a60-8039-be92a632b76b
 
 This technical note, which previously discussed CTL3D and MFC, is now obsolete. The 3D effect for controls is automatically implemented by MFC.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

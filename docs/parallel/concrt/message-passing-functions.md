@@ -58,7 +58,7 @@ For examples that use the `send` and `asend`, and `receive` functions, see the f
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
@@ -66,4 +66,3 @@ For examples that use the `send` and `asend`, and `receive` functions, see the f
 [asend Function](reference/concurrency-namespace-functions.md#asend)<br/>
 [receive Function](reference/concurrency-namespace-functions.md#receive)<br/>
 [try_receive Function](reference/concurrency-namespace-functions.md#try_receive)
-

@@ -20,7 +20,6 @@ If the window's **FWS_ADDTOTITLE** style bit is set (which it is by default), th
 
 - [Window styles](../mfc/reference/styles-used-by-mfc.md#window-styles)
 
-## See Also
+## See also
 
 [Frame Windows](../mfc/frame-windows.md)
-

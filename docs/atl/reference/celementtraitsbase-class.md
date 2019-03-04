@@ -115,6 +115,6 @@ The number of elements to relocate.
 
 This method calls [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), which is sufficient for most data types. If the objects being moved contain pointers to their own members, this method will need to be overridden.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

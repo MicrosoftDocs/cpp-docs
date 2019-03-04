@@ -2,7 +2,7 @@
 title: "_makepath_s, _wmakepath_s"
 ms.date: "11/04/2016"
 apiname: ["_wmakepath_s", "_makepath_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_wmakepath_s", "makepath_s", "_makepath_s", "wmakepath_s"]
 helpviewer_keywords: ["_makepath_s function", "wmakepath_s function", "paths", "_wmakepath_s function", "makepath_s function"]

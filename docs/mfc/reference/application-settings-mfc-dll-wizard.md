@@ -39,8 +39,7 @@ Select whether your MFC DLL should support automation and whether it should supp
 
    When your MFC DLL with Windows sockets support is created, [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) initializes support for sockets and the MFC header file StdAfx.h includes AfxSock.h.
 
-## See Also
+## See also
 
 [MFC DLL Wizard](../../mfc/reference/mfc-dll-wizard.md)<br/>
 [Creating an MFC DLL Project](../../mfc/reference/creating-an-mfc-dll-project.md)
-

@@ -249,7 +249,7 @@ Returns a pointer to the newly allocated memory block.
 
 If *p* is NULL, it's assumed that the memory block has not yet been allocated and [CWin32Heap::Allocate](#allocate) is called, with an argument of *nBytes*.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [IAtlMemMgr Class](../../atl/reference/iatlmemmgr-class.md)<br/>

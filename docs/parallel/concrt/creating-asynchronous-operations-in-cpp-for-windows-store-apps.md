@@ -182,6 +182,6 @@ The following illustration shows the results of the `CommonWords` app.
 
 In this example, it’s possible to support cancellation because the `task` objects that support `create_async` use an implicit cancellation token. Define your work function to take a `cancellation_token` object if your tasks need to respond to cancellation in a cooperative manner. For more info about cancellation in the PPL, see [Cancellation in the PPL](cancellation-in-the-ppl.md)
 
-## See Also
+## See also
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)

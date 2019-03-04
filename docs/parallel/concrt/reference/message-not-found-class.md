@@ -50,8 +50,7 @@ message_not_found() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Asynchronous Message Blocks](../../../parallel/concrt/asynchronous-message-blocks.md)
-

@@ -50,7 +50,7 @@ invalid_multiple_scheduling() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [task_handle Class](task-handle-class.md)<br/>

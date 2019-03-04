@@ -21,8 +21,7 @@ For more information, see the linker topic [/ENTRY (Entry-Point Symbol)](../buil
 
 Using the linker option /OPT:NOWIN98 can further reduce a default ATL control by 10K, at the expense of increased loading time on Windows 98 systems. For more information on linking options, see [/OPT (Optimizations)](../build/reference/opt-optimizations.md).
 
-## See Also
+## See also
 
 [Programming with ATL and C Run-Time Code](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)
-

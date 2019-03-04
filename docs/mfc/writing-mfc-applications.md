@@ -32,8 +32,7 @@ The following articles also provide instructions to help you start your programm
 
 - [WinInet Basics](../mfc/wininet-basics.md)
 
-## See Also
+## See also
 
 [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-

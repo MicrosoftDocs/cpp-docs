@@ -325,7 +325,7 @@ Stops the animation that you assigned to the status bar pane.
 void StopAnimation();
 ```
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

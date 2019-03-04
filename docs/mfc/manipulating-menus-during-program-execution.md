@@ -10,7 +10,6 @@ Use class `CMenu` to manipulate menus and menu items on the fly. `CMenu` encapsu
 
 See the overview for class [CMenu](../mfc/reference/cmenu-class.md) for details.
 
-## See Also
+## See also
 
 [Menus](../mfc/menus-mfc.md)
-

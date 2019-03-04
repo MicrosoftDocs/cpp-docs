@@ -26,6 +26,6 @@ If you are using `IDispEventImpl` as a base class of a composite control, the ev
 
 The `IDispEventImpl` and `IDispEventSimpleImpl` classes manage the cookie for you.
 
-## See Also
+## See also
 
 [Event Handling](../atl/event-handling-and-atl.md)

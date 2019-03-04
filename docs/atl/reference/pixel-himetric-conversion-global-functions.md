@@ -68,6 +68,6 @@ extern void AtlPixelToHiMetric(
 
 **Header:** atlwin.h
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)

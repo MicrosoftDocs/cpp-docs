@@ -262,8 +262,7 @@ A reference to a variable that will be populated with the highest priority eleme
 
 **true** if a value was popped, **false** otherwise.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-

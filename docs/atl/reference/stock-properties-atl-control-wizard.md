@@ -23,7 +23,6 @@ This page of the wizard identifies the stock properties supported for the contro
 |**\<**|Removes the property name currently selected in the **Supported** list.|
 |**\<\<**|Removes all property names currently listed in the **Supported** list.|
 
-## See Also
+## See also
 
 [ATL Control Wizard](../../atl/reference/atl-control-wizard.md)
-

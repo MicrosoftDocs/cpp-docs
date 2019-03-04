@@ -40,6 +40,6 @@ For more information about handle maps, see [Technical Note 3](../mfc/tn003-mapp
 
 MFC provides a number of classes that allow threads to synchronize access to objects to maintain thread safety. Usage of these classes is described in [Multithreading: How to Use the Synchronization Classes](multithreading-how-to-use-the-synchronization-classes.md) and [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md). For more information about these objects, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK.
 
-## See Also
+## See also
 
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

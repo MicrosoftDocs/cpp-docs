@@ -99,8 +99,7 @@ BOOL PromptTraceFlags(TracerData FAR* lpData);
 
 The structures used by the API are not derived from MFC classes and are defined in the API header. This reduces the complexity of the interface between the DLL and the application and makes the DLL usable by C programs.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

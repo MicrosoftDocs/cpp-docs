@@ -45,7 +45,6 @@ For a discussion of what is still called OLE versus what is now called active te
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)
-

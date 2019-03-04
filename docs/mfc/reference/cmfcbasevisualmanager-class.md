@@ -378,7 +378,7 @@ void UpdateSystemColors();
 
 For internal use only.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

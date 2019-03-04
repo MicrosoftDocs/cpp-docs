@@ -162,7 +162,7 @@ virtual void UnbindContext(_Inout_ IExecutionContext* pContext) = 0;
 *pContext*<br/>
 The execution context to disassociate from its thread proxy.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IScheduler Structure](ischeduler-structure.md)<br/>

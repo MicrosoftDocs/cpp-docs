@@ -52,7 +52,6 @@ Wrapper for the OLE automation type **DATE**. Represents date and time values.
 [COleVariant](../mfc/reference/colevariant-class.md)<br/>
 Wrapper for the OLE automation type **VARIANT**. Data in **VARIANT**s can be stored in many formats.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

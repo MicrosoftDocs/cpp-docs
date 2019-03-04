@@ -25,8 +25,7 @@ As stated previously, all modifications to properties of the month calendar cont
 
 Once the font has been changed, with a call to `CDateTimeCtrl::SetMonthCalFont`, the new font is stored and used the next time a month calendar is to be displayed.
 
-## See Also
+## See also
 
 [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

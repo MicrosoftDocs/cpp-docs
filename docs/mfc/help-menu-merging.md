@@ -40,7 +40,6 @@ When the object calls `IOleInPlaceFrame::SetMenu`, before displaying the merged 
 
 Finally, when it is time to disassemble the menu, the object removes the inserted **Help** menu in addition to removing the other inserted menus. When the container removes its menus, it will remove its **Help** menu in addition to the other menus that it has inserted.
 
-## See Also
+## See also
 
 [Active Document Containers](../mfc/active-document-containers.md)
-

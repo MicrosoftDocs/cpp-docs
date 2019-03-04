@@ -1406,7 +1406,7 @@ The *lpszEntry* parameter is the name of a registry entry located under the defa
 
 If the key specified by *lspzEntry* does not exist, this method will create it.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

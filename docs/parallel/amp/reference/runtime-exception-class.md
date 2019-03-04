@@ -123,6 +123,6 @@ The `runtime_exception` object to copy.
 
 A reference to this `runtime_exception` object.
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

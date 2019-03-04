@@ -24,7 +24,6 @@ The following classes provide support for COM collections and enumerations:
 
 [ATL Collections and Enumerators](../atl/atl-collections-and-enumerators.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

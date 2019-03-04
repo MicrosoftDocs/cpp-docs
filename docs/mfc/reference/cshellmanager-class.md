@@ -294,7 +294,7 @@ HRESULT ItemFromPath(
 
 Returns NOERROR if successful; an OLE-defined error value.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

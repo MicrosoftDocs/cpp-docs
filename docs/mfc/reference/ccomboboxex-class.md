@@ -430,7 +430,7 @@ The return value is not used.
 
 This member function emulates the functionality of the [CBEM_SETWINDOWTHEME](/windows/desktop/Controls/cbem-setwindowtheme) message, as described in the Windows SDK.
 
-## See Also
+## See also
 
 [MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
 [CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>

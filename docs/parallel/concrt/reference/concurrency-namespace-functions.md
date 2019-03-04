@@ -1721,6 +1721,6 @@ A task that completes successfully when any one of the input tasks has completed
 
 For more information, see [Task Parallelism](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

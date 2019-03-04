@@ -22,7 +22,6 @@ Problems with resources in DLLs will occur if the `AFX_MANAGE_STATE` macro is no
 
 `AFX_MANAGE_STATE` does not need to be put into every function in the DLL. For example, `InitInstance` can be called by the MFC code in the application without `AFX_MANAGE_STATE` because MFC automatically shifts the module state before `InitInstance` and then switches it back after `InitInstance` returns. The same is true for all message-map handlers. Regular MFC DLLs actually have a special master window procedure that automatically switches the module state before routing any message.
 
-## See Also
+## See also
 
 [Managing the State Data of MFC Modules](../mfc/managing-the-state-data-of-mfc-modules.md)
-

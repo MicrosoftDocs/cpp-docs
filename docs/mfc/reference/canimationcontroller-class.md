@@ -1024,6 +1024,6 @@ virtual void UpdateAnimationManager();
 
 Calling this method advances the animation manager to current time, changing statuses of storyboards as necessary and updating any animation variables to appropriate interpolated values. Internally this method calls IUIAnimationTimer::GetTime(timeNow) and IUIAnimationManager::Update(timeNow). Override this method in a derived class to customize this behavior.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

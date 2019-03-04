@@ -16,7 +16,6 @@ See the following sample programs that illustrate creating, editing, and updatin
 
 - [DYNAMENU](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [Menus](../mfc/menus-mfc.md)
-

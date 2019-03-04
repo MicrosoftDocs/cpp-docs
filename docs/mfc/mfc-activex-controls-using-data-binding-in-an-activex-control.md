@@ -117,7 +117,6 @@ In addition to a data-bound get/set method, you can also create a [bindable stoc
 
 You can now build the project, which will register the control. When you insert the control in a dialog box, the **Data Field** and **Data Source** properties will have been added and you can now select a data source and field to display in the control.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-

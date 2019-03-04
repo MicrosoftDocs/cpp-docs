@@ -16,8 +16,7 @@ You can use the [IsSimple](../mfc/reference/cstatusbarctrl-class.md#issimple) fu
 > [!NOTE]
 >  If the status bar object is being changed from nonsimple to simple, or vice versa, the window is immediately redrawn and, if applicable, any defined parts are automatically restored.
 
-## See Also
+## See also
 
 [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-
