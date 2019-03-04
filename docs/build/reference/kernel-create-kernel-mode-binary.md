@@ -88,7 +88,7 @@ The **/kernel** option and the **/driver** option operate independently and neit
 
 1. In the **Additional options** box, add `/kernel` or `/kernel-`.
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

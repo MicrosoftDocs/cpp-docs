@@ -29,7 +29,7 @@ The /MAPINFO option tells the linker to include the specified information in a m
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapExports%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

@@ -59,7 +59,7 @@ Other linker options that affect assembly generation are:
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EmbedManagedResourceFile%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

@@ -51,7 +51,7 @@ int main() {
 213
 ```
 
-## See Also
+## See also
 
 [LINK Input Files](../../build/reference/link-input-files.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

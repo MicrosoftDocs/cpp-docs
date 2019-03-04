@@ -31,7 +31,7 @@ Use this option to prevent LINK from linking a reference to `_main` into the DLL
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ResourceOnlyDLL%2A>.
 
-## See Also
+## See also
 
 [Creating a Resource-Only DLL](../../build/creating-a-resource-only-dll.md)<br/>
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>

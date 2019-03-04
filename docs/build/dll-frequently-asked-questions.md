@@ -58,6 +58,6 @@ DLLs that are implicitly linked to an application are loaded when the applicatio
 
 One possible cause of the memory leak is that MFC creates temporary objects that are used inside message handler functions. In MFC applications, these temporary objects are automatically cleaned up in the `CWinApp::OnIdle()` function that is called in between processing messages. However, in MFC dynamic-link libraries (DLLs), the `OnIdle()` function is not automatically called. As a result, temporary objects are not automatically cleaned up. To clean up temporary objects, the DLL must explicitly call `OnIdle(1)` periodically.
 
-## See Also
+## See also
 
 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

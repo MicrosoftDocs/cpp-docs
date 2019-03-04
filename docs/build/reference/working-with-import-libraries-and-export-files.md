@@ -14,6 +14,6 @@ In most situations, you do not need to use LIB to create your import library. Wh
 
 However, when a DLL exports to a program that it also imports from, whether directly or indirectly, you must use LIB to create one of the import libraries. When LIB creates an import library, it also creates an export file. You must use the export file when linking one of the DLLs.
 
-## See Also
+## See also
 
 [LIB Reference](../../build/reference/lib-reference.md)

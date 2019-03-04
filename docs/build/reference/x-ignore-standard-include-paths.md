@@ -41,7 +41,7 @@ In the following command, `/X` tells the compiler to ignore locations specified 
 CL /X /I \ALT\INCLUDE MAIN.C
 ```
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

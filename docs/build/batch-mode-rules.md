@@ -80,6 +80,6 @@ foo4.cpp
 Generating Code...
 ```
 
-## See Also
+## See also
 
 [Inference Rules](../build/inference-rules.md)

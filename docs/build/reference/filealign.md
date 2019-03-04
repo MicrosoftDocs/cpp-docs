@@ -38,7 +38,7 @@ Use [DUMPBIN](dumpbin-reference.md) to see information about sections in your ou
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

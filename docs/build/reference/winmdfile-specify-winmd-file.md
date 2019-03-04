@@ -26,7 +26,7 @@ Use the value that is specified in `filename` to override the default .winmd fil
 
 1. In the **Windows Metadata File** box, enter the file location.
 
-## See Also
+## See also
 
 [/WINMD (Generate Windows Metadata)](../../build/reference/winmd-generate-windows-metadata.md)<br/>
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>

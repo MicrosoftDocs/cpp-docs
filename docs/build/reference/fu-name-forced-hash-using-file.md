@@ -38,7 +38,7 @@ For information about how to create an assembly or module for the common languag
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedUsingFiles%2A>.
 
-## See Also
+## See also
 
 [Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)<br/>

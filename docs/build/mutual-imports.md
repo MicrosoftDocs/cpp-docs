@@ -110,6 +110,6 @@ class CExampleA : public CObject
 
 - [The LIB utility and the /DEF option](../build/reference/lib-reference.md)
 
-## See Also
+## See also
 
 [Importing and Exporting](../build/importing-and-exporting.md)

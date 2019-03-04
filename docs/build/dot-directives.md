@@ -29,6 +29,6 @@ To add additional suffixes to the end of the list, specify
 
 where *suffixlist* is a list of the additional suffixes, separated by one or more spaces or tabs. To see the current setting of **.SUFFIXES**, run NMAKE with /P.
 
-## See Also
+## See also
 
 [NMAKE Reference](../build/nmake-reference.md)

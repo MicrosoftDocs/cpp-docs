@@ -72,6 +72,6 @@ PfnDliHook   __pfnDliFailureHook2;
 
 The notifications pass in a **DelayLoadInfo** structure to the hook function along with the notification value. This data is identical to that used by the delay load helper routine. The notification value will be one of the values defined in [Structure and Constant Definitions](../../build/reference/structure-and-constant-definitions.md).
 
-## See Also
+## See also
 
 [Error Handling and Notification](../../build/reference/error-handling-and-notification.md)

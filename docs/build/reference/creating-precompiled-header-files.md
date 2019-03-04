@@ -312,7 +312,7 @@ int main( void )
 }
 ```
 
-## See Also
+## See also
 
 [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)

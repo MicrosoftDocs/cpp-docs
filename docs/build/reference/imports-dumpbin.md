@@ -25,6 +25,6 @@ The output displayed by this option is similar to the [/EXPORTS](../../build/ref
 
 Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
 [DUMPBIN Options](../../build/reference/dumpbin-options.md)

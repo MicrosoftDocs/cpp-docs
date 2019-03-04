@@ -244,6 +244,6 @@ $(_VC_MANIFEST_BASENAME).auto.manifest :
 # end of makefile.targ.inc
 ```
 
-## See Also
+## See also
 
 [Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-cpp-programs.md)

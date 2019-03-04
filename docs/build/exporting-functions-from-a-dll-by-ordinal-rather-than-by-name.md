@@ -18,6 +18,6 @@ The simplest way to export functions from your DLL is to export them by name. Th
 
 - [Use __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
 
-## See Also
+## See also
 
 [Exporting from a DLL](../build/exporting-from-a-dll.md)

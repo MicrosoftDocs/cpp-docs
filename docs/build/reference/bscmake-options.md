@@ -61,6 +61,6 @@ The following command line tells BSCMAKE to do a full build of MAIN.bsc from thr
 BSCMAKE /n /S toolbox.h /o main.bsc file1.sbr file2.sbr file3.sbr
 ```
 
-## See Also
+## See also
 
 [BSCMAKE Reference](../../build/reference/bscmake-reference.md)

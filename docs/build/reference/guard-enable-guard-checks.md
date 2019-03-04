@@ -29,7 +29,7 @@ The /GUARD:CF option must be specified to both the compiler and linker to create
 
 1. In **Additional Options**, enter `/GUARD:CF`.
 
-## See Also
+## See also
 
 [/guard (Enable Control Flow Guard)](../../build/reference/guard-enable-control-flow-guard.md)<br/>
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>

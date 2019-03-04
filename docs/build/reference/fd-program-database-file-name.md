@@ -47,7 +47,7 @@ This command line creates a .pdb file named PROG.pdb and an .idb file named PROG
 CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 ```
 
-## See Also
+## See also
 
 [Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)<br/>

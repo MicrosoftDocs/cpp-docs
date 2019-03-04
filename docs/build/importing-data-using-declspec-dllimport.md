@@ -45,6 +45,6 @@ To export the data automatically from the DLL, use this declaration:
 __declspec(dllexport) ULONG ulDataInDLL;
 ```
 
-## See Also
+## See also
 
 [Importing into an Application](../build/importing-into-an-application.md)

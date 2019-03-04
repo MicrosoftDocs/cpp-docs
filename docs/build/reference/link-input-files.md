@@ -36,7 +36,7 @@ LINK uses the following types of input files:
 
 - [.ilk files](../../build/reference/dot-ilk-files-as-linker-input.md)
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)
