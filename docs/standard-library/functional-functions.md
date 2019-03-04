@@ -615,22 +615,25 @@ int main()
 {
     Demo d{ 42 };
     Demo * pd{ &d };
+    auto pmf = &Demo::difference;
+    auto pmd = &Demo::n_;
 
-    // Invoke a function object (call operator).
+    // Invoke a function object, like calling d( 3, -7 )
     std::invoke( d, 3, -7 );
 
-    // Invoke a member function or pointer to member function:
+    // Invoke a member function, like calling
+    // d.difference( 29 ) or (d.*pmf)( 29 )
     std::invoke( &Demo::difference, d, 29 );
-    std::invoke( &Demo::difference, pd, 13 );
+    std::invoke( pmf, pd, 13 );
 
-    // Invoke a data member on an object or pointer to object:
+    // Invoke a data member, like access to d.n_ or d.*pmd
     std::cout << "d.n_: " << std::invoke( &Demo::n_, d ) << "\n";
-    std::cout << "pd->n_: " << std::invoke( &Demo::n_, pd ) << "\n";
+    std::cout << "pd->n_: " << std::invoke( pmd, pd ) << "\n";
 
-    // Invoke a stand-alone (free) function:
+    // Invoke a stand-alone (free) function
     std::invoke( divisible_by_3, 42 );
 
-    // Invoke a lambda:
+    // Invoke a lambda
     auto divisible_by_7 = []( int const i ) {
         std::cout << i << ( i % 7 == 0 ? " is" : " isn't" )
             << " divisible by 7.\n";
@@ -1054,7 +1057,7 @@ Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
 
 ## <a name="not_fn"></a> not_fn
 
-The `not_fn` function template takes a callable object and returns a callable object. When the returned callable object is later invoked with some arguments, it passes them to the original callable object, and logically negates the result. It preserves the const qualification and value category behavior of the wrapped callable object. `not_fn` is new in C++17, and replaces the deprecated `std::not1`, `std::not2`, `std::unary_negate` and `std::binary_negate`.
+The `not_fn` function template takes a callable object and returns a callable object. When the returned callable object is later invoked with some arguments, it passes them to the original callable object, and logically negates the result. It preserves the const qualification and value category behavior of the wrapped callable object. `not_fn` is new in C++17, and replaces the deprecated `std::not1`, `std::not2`, `std::unary_negate`, and `std::binary_negate`.
 
 ```cpp
 template <class Callable>
