@@ -245,7 +245,7 @@ void GetItemRect(
 Index of the indicator whose rectangle coordinates are to be retrieved.
 
 *lpRect*<br/>
-Points to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that will receive the coordinates of the indicator specified by *nIndex*.
+Points to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that will receive the coordinates of the indicator specified by *nIndex*.
 
 ### Remarks
 

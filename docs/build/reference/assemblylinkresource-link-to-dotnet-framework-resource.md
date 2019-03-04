@@ -24,7 +24,7 @@ Linked resources are public in the assembly when created with the linker.
 
 /ASSEMBLYLINKRESOURCE requires that the compilation include [/clr](../../build/reference/clr-common-language-runtime-compilation.md); [/LN](../../build/reference/ln-create-msil-module.md) or [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md) is not allowed with /ASSEMBLYLINKRESOURCE.
 
-If *filename* is a .NET Framework resource file created, for example, by [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) or in the development environment, it can be accessed with members in the **System.Resources** namespace. For more information, see [System.Resources.ResourceManager](https://msdn.microsoft.com/library/system.resources.resourcemanager.aspx). For all other resources, use the **GetManifestResource**\* methods in the **System.Reflection.Assembly** class to access the resource at run time.
+If *filename* is a .NET Framework resource file created, for example, by [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) or in the development environment, it can be accessed with members in the **System.Resources** namespace. For more information, see [System.Resources.ResourceManager](/dotnet/api/system.resources.resourcemanager). For all other resources, use the **GetManifestResource**\* methods in the **System.Reflection.Assembly** class to access the resource at run time.
 
 *filename* can be any file format. For example, you may want to make a native DLL part of the assembly, so it can be installed into the Global Assembly Cache and accessed from managed code in the assembly.
 

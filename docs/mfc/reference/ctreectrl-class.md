@@ -151,7 +151,7 @@ virtual BOOL Create(
 Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.
 
 *rect*<br/>
-Specifies the tree view control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the tree view control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the tree view control's parent window, usually a `CDialog`. It must not be NULL.
@@ -197,7 +197,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -723,7 +723,7 @@ BOOL GetItemPartRect(
 |---------------|-----------------|
 |*hItem*|[in] Handle to a tree-view control item.|
 |*nPart*|[in] Identifier for the part. Must be set to TVGIPR_BUTTON.|
-|*lpRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the part specified by *hItem* and *nPart*.|
+|*lpRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. If this method is successful, the structure receives the rectangle coordinates of the part specified by *hItem* and *nPart*.|
 
 ### Return Value
 
@@ -764,7 +764,7 @@ BOOL GetItemRect(
 The handle of a tree view control item.
 
 *lpRect*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle. The coordinates are relative to the upper-left corner of the tree view control.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle. The coordinates are relative to the upper-left corner of the tree view control.
 
 *bTextOnly*<br/>
 If this parameter is nonzero, the bounding rectangle includes only the text of the item. Otherwise it includes the entire line that the item occupies in the tree view control.
