@@ -824,7 +824,7 @@ When you are attempting to log in to an ODBC database, such as Microsoft SQL Ser
 
 For related information, see the topic "LoginTimeout Property" in DAO Help.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

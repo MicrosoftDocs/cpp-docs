@@ -379,6 +379,6 @@ The next-to-most-significant component of the tiled extent.
 *_Dim2*<br/>
 The least significant component of the tiled extent.
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

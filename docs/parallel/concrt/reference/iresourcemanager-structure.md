@@ -164,7 +164,7 @@ virtual unsigned int Release() = 0;
 
 The resulting reference count.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [ISchedulerProxy Structure](ischedulerproxy-structure.md)<br/>

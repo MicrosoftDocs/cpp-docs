@@ -378,6 +378,6 @@ The parameter *vtSrc* must be VT_BSTR (UNICODE) or VT_BSTRT (ANSI). `SetString` 
 
 A DAO recordset in a non-UNICODE build expects strings to be ANSI. Thus, for DAO functions that use `COleVariant` objects, if you are not creating a UNICODE recordset, you must use the **COleVariant::COleVariant(** *lpszSrc* **,** *vtSrc* **)** form of constructor with *vtSrc* set to VT_BSTRT (ANSI) or use `SetString` with *vtSrc* set to VT_BSTRT to make ANSI strings. For example, the `CDaoRecordset` functions [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) and [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) use `COleVariant` objects as parameters. These objects must be ANSI if the DAO recordset is not UNICODE.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

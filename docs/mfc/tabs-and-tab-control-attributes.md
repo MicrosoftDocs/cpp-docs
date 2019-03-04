@@ -16,8 +16,7 @@ The following code clears the state of all tab items and then modifies the state
 
 For more information about tab attributes, see [Tabs and Tab Attributes](/windows/desktop/Controls/tab-controls) in the Windows SDK. For more information about adding tabs to a tab control, see [Adding Tabs to a Tab Control](../mfc/adding-tabs-to-a-tab-control.md) later in this topic.
 
-## See Also
+## See also
 
 [Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

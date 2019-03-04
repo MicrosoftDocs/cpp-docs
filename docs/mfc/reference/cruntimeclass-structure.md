@@ -204,7 +204,7 @@ For more information on schema numbers, see the [IMPLEMENT_SERIAL](run-time-obje
 
   See the example for [IsDerivedFrom](#isderivedfrom).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#getruntimeclass)<br/>
@@ -213,4 +213,3 @@ For more information on schema numbers, see the [IMPLEMENT_SERIAL](run-time-obje
 [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic)<br/>
 [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)<br/>
 [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)
-

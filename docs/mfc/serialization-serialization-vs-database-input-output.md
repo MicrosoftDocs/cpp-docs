@@ -12,7 +12,6 @@ This article explains when to use document objects and serialization for file-ba
 
 - [Handling the File menu in database applications](../mfc/file-menu-in-an-mfc-database-application.md)
 
-## See Also
+## See also
 
 [Serialization](../mfc/serialization-in-mfc.md)
-

@@ -29,7 +29,6 @@ See the following sample programs that illustrate using MFC's document/view arch
 
 - [OCLIENT](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [Document/View Architecture](../mfc/document-view-architecture.md)
-

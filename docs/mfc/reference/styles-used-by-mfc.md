@@ -308,7 +308,7 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 |WS_EX_TRANSPARENT|Specifies that a window created with this style is to be transparent. That is, any windows that are beneath the window are not obscured by the window. A window created with this style receives WM_PAINT messages only after all sibling windows beneath it have been updated.|
 |WS_EX_WINDOWEDGE|Specifies that a window has a border with a raised edge.|
 
-## See Also
+## See also
 
 [MFC Class Overview](../../mfc/class-library-overview.md)<br/>
 [CWnd::Create](../../mfc/reference/cwnd-class.md#create)<br/>

@@ -55,7 +55,7 @@ bool (T const &)
 
 To eliminate the unnecessary copying of data, use the second form when you have an aggregate type that is transmitted by value.
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Walkthrough: Creating a Dataflow Agent](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>

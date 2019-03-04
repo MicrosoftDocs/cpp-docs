@@ -83,8 +83,7 @@ In the case of C++ Windows objects that do perform auto-cleanup, you must call `
 
 After calling `DestroyWindow` on a non-auto-cleanup object, the C++ object will still be around, but *m_hWnd* will be NULL. After calling `DestroyWindow` on an auto-cleanup object, the C++ object will be gone, freed by the C++ delete operator in the auto-cleanup implementation of `PostNcDestroy`.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

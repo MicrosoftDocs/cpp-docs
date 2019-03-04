@@ -211,11 +211,10 @@ The Active Template Library (ATL) includes the following classes and structs. To
 |[_U_STRINGorID](../../atl/reference/u-stringorid-class.md)|This argument adapter class allows either resource names (LPCTSTRs) or resource IDs (UINTs) to be passed to a function without requiring the caller to convert the ID to a string using the MAKEINTRESOURCE macro.|atlwin.h|
 |[Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md)|This class provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.|atlbase.h|
 
-## See Also
+## See also
 
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Global Variables](../../atl/reference/atl-global-variables.md)<br/>
 [Typedefs](../../atl/reference/atl-typedefs.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)
-

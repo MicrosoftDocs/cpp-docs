@@ -25,8 +25,7 @@ Many of the settings for a spin button ([CSpinButtonCtrl](../mfc/reference/cspin
 
 - **Arrow Keys** Causes the spin button to increment or decrement the position when the UP ARROW and DOWN ARROW keys are pressed. Associated with the UDS_ARROWKEYS style.
 
-## See Also
+## See also
 
 [Using CSpinButtonCtrl](../mfc/using-cspinbuttonctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

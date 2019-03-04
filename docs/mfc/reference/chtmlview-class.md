@@ -2035,10 +2035,9 @@ void Stop();
 
 Applies to Internet Explorer and WebBrowser.
 
-## See Also
+## See also
 
 [MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
 [CFormView Class](../../mfc/reference/cformview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx)
-

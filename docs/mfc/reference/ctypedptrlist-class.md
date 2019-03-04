@@ -349,7 +349,7 @@ You must ensure that your POSITION value represents a valid position in the list
 
 For more detailed remarks, see [CObList::SetAt](../../mfc/reference/coblist-class.md#setat).
 
-## See Also
+## See also
 
 [MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

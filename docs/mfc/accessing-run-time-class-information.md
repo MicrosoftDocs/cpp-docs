@@ -42,7 +42,6 @@ One use of run-time class information is in the dynamic creation of objects. Thi
 
 For more detailed information on serialization and run-time class information, see the articles [Files in MFC](../mfc/files-in-mfc.md) and [Serialization](../mfc/serialization-in-mfc.md).
 
-## See Also
+## See also
 
 [Using CObject](../mfc/using-cobject.md)
-

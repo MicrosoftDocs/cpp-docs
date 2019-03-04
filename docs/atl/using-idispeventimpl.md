@@ -49,8 +49,7 @@ The following code appears in NotSoSimple.h. The relevant code is noted by comme
 
 [!code-cpp[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/cpp/using-idispeventimpl_2.h)]
 
-## See Also
+## See also
 
 [Event Handling](../atl/event-handling-and-atl.md)<br/>
 [ATLEventHandling Sample](../visual-cpp-samples.md)
-

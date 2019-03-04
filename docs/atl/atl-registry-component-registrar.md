@@ -23,4 +23,3 @@ Lists the steps to set up static linking to the Registrar.
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
-

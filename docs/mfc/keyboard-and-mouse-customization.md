@@ -58,10 +58,9 @@ In addition, this kind of attack can bypass user interface safeguards. For examp
 
 To guard against this kind of attack, add code to your application command handler to verify that a command is valid before it is executed. Do not depend on the user interface to prevent a command from being sent to the application.
 
-## See Also
+## See also
 
 [Customization for MFC](../mfc/customization-for-mfc.md)<br/>
 [CKeyboardManager Class](../mfc/reference/ckeyboardmanager-class.md)<br/>
 [CMouseManager Class](../mfc/reference/cmousemanager-class.md)<br/>
 [Security Implications of Customization](../mfc/security-implications-of-customization.md)
-

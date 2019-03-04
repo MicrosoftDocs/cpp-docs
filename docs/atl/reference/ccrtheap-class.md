@@ -129,7 +129,7 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CCRTHeap::Free](#free) to free the memory allocated by this method. Implemented using [realloc](../../c-runtime-library/reference/realloc.md).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComHeap Class](../../atl/reference/ccomheap-class.md)<br/>

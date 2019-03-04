@@ -36,7 +36,6 @@ The document is particularly involved in managing data. Store your data, normall
 
 - [The DeleteContents member function](../mfc/reference/cdocument-class.md#deletecontents)
 
-## See Also
+## See also
 
 [Document/View Architecture](../mfc/document-view-architecture.md)
-

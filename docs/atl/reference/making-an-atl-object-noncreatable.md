@@ -25,7 +25,7 @@ You can change the attributes of an ATL-based COM object so that a client cannot
     }
     ```
 
-## See Also
+## See also
 
 [ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual C++ Project Types](../../ide/visual-cpp-project-types.md)<br/>

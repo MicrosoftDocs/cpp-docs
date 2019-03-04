@@ -224,6 +224,6 @@ Returns E_NOTIMPL.
 
 See [IDataObject::SetData](/windows/desktop/api/objidl/nf-objidl-idataobject-setdata) in the Windows SDK.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

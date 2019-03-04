@@ -42,7 +42,7 @@ The result of message processing. 0 if successful.
 
 For an example of using this message handler in a message map, see [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler).
 
-## See Also
+## See also
 
 [Implementing a Window](../atl/implementing-a-window.md)<br/>
 [Message Maps](../atl/message-maps-atl.md)<br/>

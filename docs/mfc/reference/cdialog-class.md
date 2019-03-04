@@ -514,10 +514,9 @@ void SetHelpID(UINT nIDR);
 *nIDR*<br/>
 Specifies the context-sensitive help ID.
 
-## See Also
+## See also
 
 [MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
 [MFC Sample DLGTEMPL](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

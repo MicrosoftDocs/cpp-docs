@@ -33,7 +33,6 @@ The wizard inserts into the header file a [message map](../../atl/message-maps-a
 
    The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class implementation should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
 
-## See Also
+## See also
 
 [ATL Dialog Box](../../atl/reference/adding-an-atl-dialog-box.md)
-

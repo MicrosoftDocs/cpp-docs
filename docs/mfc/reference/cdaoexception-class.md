@@ -191,7 +191,7 @@ This is an OLE code. You will seldom need to use this value because, in almost a
 
 For information about SCODE, see the topic [Structure of OLE Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK. The SCODE data type maps to the HRESULT data type.
 
-## See Also
+## See also
 
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

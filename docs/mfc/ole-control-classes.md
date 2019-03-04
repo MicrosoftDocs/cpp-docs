@@ -50,7 +50,6 @@ Allows an Active document to receive commands that originate in its container's 
 [COleSafeArray](../mfc/reference/colesafearray-class.md)<br/>
 Works with arrays of arbitrary type and dimension.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

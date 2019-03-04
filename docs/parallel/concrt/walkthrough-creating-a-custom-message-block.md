@@ -198,7 +198,7 @@ Copy the example code and paste it in a Visual Studio project, or paste the defi
 
 **cl.exe /EHsc priority_buffer.cpp**
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

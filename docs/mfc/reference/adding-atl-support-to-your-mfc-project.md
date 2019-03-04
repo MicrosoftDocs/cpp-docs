@@ -30,7 +30,7 @@ If you have already created an MFC-based application, then you can add support f
 
 For more information about how adding ATL support changes your MFC project's code, see [Details of ATL Support Added by the ATL Wizard](../../mfc/reference/details-of-atl-support-added-by-the-atl-wizard.md)
 
-## See Also
+## See also
 
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

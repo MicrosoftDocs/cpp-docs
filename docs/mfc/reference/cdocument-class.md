@@ -1130,7 +1130,7 @@ This function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onu
 
 [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/cpp/cdocument-class_9.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
 [MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>

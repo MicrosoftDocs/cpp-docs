@@ -30,7 +30,6 @@ Stores elements of type **WORD** in an array.
 [CStringArray](../mfc/reference/cstringarray-class.md)<br/>
 Stores `CString` objects in an array.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

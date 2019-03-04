@@ -94,6 +94,6 @@ operator CSize();
 
 Current value of D2D size.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

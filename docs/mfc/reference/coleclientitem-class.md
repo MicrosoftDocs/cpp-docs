@@ -2019,7 +2019,7 @@ For linked items, the function finds the link source to obtain a new presentatio
 
 For more information, see [IOleLink::Update](/windows/desktop/api/oleidl/nf-oleidl-iolelink-update) in the Windows SDK.
 
-## See Also
+## See also
 
 [MFC Sample MFCBIND](../../visual-cpp-samples.md)<br/>
 [MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>

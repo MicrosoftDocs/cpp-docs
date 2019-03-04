@@ -448,7 +448,7 @@ Puts the data contained in the `COleDataSource` object on the Clipboard after ca
 void SetClipboard();
 ```
 
-## See Also
+## See also
 
 [MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>

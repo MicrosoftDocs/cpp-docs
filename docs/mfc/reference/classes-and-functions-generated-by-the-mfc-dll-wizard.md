@@ -16,7 +16,6 @@ The code that the MFC DLL Wizard generates depends on the kind of DLL you are cr
 |[Extension](../../build/extension-dlls-overview.md)|Window Sockets|None|`DllMain`|
 |[Regular](../../build/regular-dlls-dynamically-linked-to-mfc.md)|Window Sockets|Application class derived from `CWinApp`|`InitInstance` contains call to `AfxSocketInit`|
 
-## See Also
+## See also
 
 [MFC DLL Wizard](../../mfc/reference/mfc-dll-wizard.md)
-

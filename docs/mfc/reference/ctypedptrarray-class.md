@@ -302,7 +302,7 @@ The object pointer to be added to this array. A **NULL** value is allowed.
 
 For more detailed remarks, see [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow).
 
-## See Also
+## See also
 
 [MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

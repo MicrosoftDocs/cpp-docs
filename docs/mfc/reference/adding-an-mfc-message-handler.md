@@ -14,7 +14,7 @@ By using the Properties window to define message- and event-handling functions, 
 > [!NOTE]
 >  You can add a message handler to an ATL class using the Properties window; however, some results may vary. For more information, see the ATL topic [Adding an ATL Message Handler](../../atl/adding-an-atl-message-handler.md).
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
@@ -23,4 +23,3 @@ By using the Properties window to define message- and event-handling functions, 
 [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)<br/>
 [Dialog Editor](../../windows/dialog-editor.md)
-

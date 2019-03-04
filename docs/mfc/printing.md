@@ -46,7 +46,6 @@ The following articles discuss how the framework supports printing and print pre
 
 - [Print preview](../mfc/print-preview-architecture.md)
 
-## See Also
+## See also
 
 [Printing and Print Preview](../mfc/printing-and-print-preview.md)
-

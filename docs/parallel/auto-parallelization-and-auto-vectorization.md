@@ -103,7 +103,7 @@ For more information about reason codes and messages, see [Vectorizer and Parall
 
 For an example showing how the vectorizer works in practice, see [Project Austin Part 2 of 6: Page Curling](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)
 
-## See Also
+## See also
 
 [loop](../preprocessor/loop.md)<br/>
 [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>

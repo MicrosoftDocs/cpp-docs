@@ -94,10 +94,9 @@ Server applications should create a new toolbar and store its bitmap in a separa
 
 This toolbar is loaded in your `COleIPFrameWnd`-derived class, created for you by the application wizard. The status bar is handled by the container application. For more information on the implementation of in-place frame windows, see [Servers: Implementing a Server](../mfc/servers-implementing-a-server.md).
 
-## See Also
+## See also
 
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Activation](../mfc/activation-cpp.md)<br/>
 [Servers](../mfc/servers.md)<br/>
 [Containers](../mfc/containers.md)
-

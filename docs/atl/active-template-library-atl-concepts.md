@@ -94,4 +94,3 @@ Provides an overview on using attributes to simplify COM programming plus a list
 
 [ATL Class Overview](../atl/atl-class-overview.md)<br/>
 Provides reference information and links to the ATL classes.
-

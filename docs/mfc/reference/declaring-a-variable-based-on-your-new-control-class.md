@@ -33,7 +33,7 @@ Once you have created an MFC control class, you can declare a variable based on 
 
 10. Click **OK**.
 
-## See Also
+## See also
 
 [Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

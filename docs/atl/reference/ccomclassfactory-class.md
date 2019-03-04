@@ -94,7 +94,7 @@ A standard HRESULT value.
 
 Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be created quickly.
 
-## See Also
+## See also
 
 [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>

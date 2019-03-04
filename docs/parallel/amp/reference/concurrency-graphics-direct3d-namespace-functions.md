@@ -160,6 +160,6 @@ Returns a vector of 4 sums. Each sum corresponds to the masked sum of absolute d
 
 **Namespace:** Concurrency::graphics::direct3d
 
-## See Also
+## See also
 
 [Concurrency::graphics::direct3d Namespace](concurrency-graphics-direct3d-namespace.md)

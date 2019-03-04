@@ -203,7 +203,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method is called by [CAtlDllModuleT::DllGetClassObject](#dllgetclassobject) and is included for backward compatibility.
 
-## See Also
+## See also
 
 [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)<br/>
 [CAtlExeModuleT Class](../../atl/reference/catlexemodulet-class.md)<br/>

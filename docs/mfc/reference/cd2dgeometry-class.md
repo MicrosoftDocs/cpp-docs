@@ -553,6 +553,6 @@ The maximum bounds on the distance between points in the polygonal approximation
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

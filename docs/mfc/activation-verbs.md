@@ -20,9 +20,8 @@ Any verbs other than the primary verb must be invoked through a submenu command 
 
 The verbs a server application supports are listed in the Windows registration database. If your server application is written with the Microsoft Foundation Class Library, it will automatically register all verbs when the server is started. If not, you should register them during the server application's initialization phase. For more information, see the article [Registration](../mfc/registration.md).
 
-## See Also
+## See also
 
 [Activation](../mfc/activation-cpp.md)<br/>
 [Containers](../mfc/containers.md)<br/>
 [Servers](../mfc/servers.md)
-

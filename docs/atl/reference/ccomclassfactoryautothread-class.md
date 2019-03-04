@@ -104,7 +104,7 @@ When using `CComClassFactoryAutoThread`, `_Module` typically refers to the globa
 
 Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be quickly created.
 
-## See Also
+## See also
 
 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
 [CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)<br/>

@@ -24,7 +24,6 @@ To create a spin control and an edit control buddy window, in Visual Studio, fir
 
 - [Spin Button Member Functions](../mfc/spin-button-member-functions.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

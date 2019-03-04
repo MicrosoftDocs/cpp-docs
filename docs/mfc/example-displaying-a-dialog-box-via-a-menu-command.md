@@ -75,7 +75,7 @@ The procedures use the following names and values:
 
          [!code-cpp[NVC_MFCControlLadenDialog#48](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_7.cpp)]
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Modal and Modeless Dialog Boxes](../mfc/modal-and-modeless-dialog-boxes.md)

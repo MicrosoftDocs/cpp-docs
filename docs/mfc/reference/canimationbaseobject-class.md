@@ -437,6 +437,6 @@ Specifies the custom data.
 
 Use this method to associate a custom data with an animation object. This data may be retrieved later at runtime by GetUserData.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

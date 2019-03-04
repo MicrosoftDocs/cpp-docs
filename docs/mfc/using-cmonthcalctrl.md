@@ -22,7 +22,6 @@ The month calendar control ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class
 
 - [Setting the Day State of a Month Calendar Control](../mfc/setting-the-day-state-of-a-month-calendar-control.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

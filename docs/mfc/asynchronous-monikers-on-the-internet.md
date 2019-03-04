@@ -50,8 +50,7 @@ The MFC classes `CDataPathProperty` and [CCachedDataPathProperty](../mfc/referen
 
 For information about downloading asynchronously in an ActiveX control, see [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md).
 
-## See Also
+## See also
 
 [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-

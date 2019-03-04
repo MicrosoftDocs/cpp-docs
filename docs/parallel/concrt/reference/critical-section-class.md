@@ -176,7 +176,7 @@ Unlocks the critical section.
 void unlock();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [reader_writer_lock Class](reader-writer-lock-class.md)

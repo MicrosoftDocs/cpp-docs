@@ -31,7 +31,7 @@ You can use one of the ATL code wizards to add an object or a control to your AT
 
    Alternately, if you attempt to add an ATL object to your MFC project without previously adding ATL support, Visual Studio prompts you to specify whether you want ATL support added to your project. Click **Yes** to add ATL support to the project and open the selected ATL wizard.
 
-## See Also
+## See also
 
 [ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual C++ Project Types](../../ide/visual-cpp-project-types.md)<br/>

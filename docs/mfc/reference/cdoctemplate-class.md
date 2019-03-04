@@ -575,7 +575,7 @@ Specifies a pointer to a runtime class information structure of the preview view
 
 ### Remarks
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

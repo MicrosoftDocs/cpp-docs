@@ -48,6 +48,6 @@ The following is a list of class constants:
 
 **Header:** afxdisp.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

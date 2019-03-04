@@ -115,10 +115,9 @@ The following table shows the important methods that are defined by the `Schedul
 
 For basic examples of how to create and manage a scheduler instance, see [How to: Manage a Scheduler Instance](../../parallel/concrt/how-to-manage-a-scheduler-instance.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [How to: Manage a Scheduler Instance](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
 [Scheduler Policies](../../parallel/concrt/scheduler-policies.md)<br/>
 [Schedule Groups](../../parallel/concrt/schedule-groups.md)
-

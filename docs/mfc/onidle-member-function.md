@@ -16,6 +16,6 @@ The Message Loop
 
 For more information about what you can do in the idle loop, see [Idle Loop Processing](../mfc/idle-loop-processing.md).
 
-## See Also
+## See also
 
 [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)

@@ -1038,7 +1038,7 @@ Returns TRUE on success, FALSE on failure.
 
 This member function emulates the functionality of the BCM_SETTEXTMARGIN message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

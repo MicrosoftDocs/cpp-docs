@@ -39,7 +39,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 **cl.exe /EHsc task-delay.cpp**
 
-## See Also
+## See also
 
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)<br/>
@@ -50,4 +50,3 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 [call Class](../../parallel/concrt/reference/call-class.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [Cancellation in the PPL](cancellation-in-the-ppl.md)
-

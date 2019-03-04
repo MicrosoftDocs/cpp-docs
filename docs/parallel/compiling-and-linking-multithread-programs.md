@@ -30,6 +30,6 @@ Programs are compiled multithreaded by default.
     CL BOUNCE.C
     ```
 
-## See Also
+## See also
 
 [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

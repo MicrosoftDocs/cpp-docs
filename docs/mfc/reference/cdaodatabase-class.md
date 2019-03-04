@@ -833,7 +833,7 @@ The default value for query timeouts is 60 seconds. Not all databases support th
 
 For related information, see the topic "QueryTimeout Property" in DAO Help.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

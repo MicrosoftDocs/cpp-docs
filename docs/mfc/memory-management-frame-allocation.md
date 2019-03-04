@@ -18,7 +18,6 @@ When an object is defined as a frame variable, its constructor is automatically 
 
 The key advantage of allocating objects on the frame is that they are automatically deleted. When you allocate your objects on the frame, you don't have to worry about forgotten objects causing memory leaks. (For details on memory leaks, see the article [Detecting Memory Leaks in MFC](/previous-versions/visualstudio/visual-studio-2010/c99kz476).) A disadvantage of frame allocation is that frame variables cannot be used outside their scope. Another factor in choosing frame allocation versus heap allocation is that for large structures and objects, it is often better to use the heap instead of the stack for storage since stack space is often limited.
 
-## See Also
+## See also
 
 [Memory Management](../mfc/memory-management.md)
-

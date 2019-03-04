@@ -62,7 +62,6 @@ Some of the more important OLE topics are covered in the following articles:
 
 For general OLE information not found in the above articles, search for OLE in MSDN.
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)
-

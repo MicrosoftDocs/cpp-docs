@@ -235,7 +235,7 @@ When overridden in a derived class, unlinks all target blocks from this `ISource
 virtual void unlink_targets() = 0;
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [ITarget Class](itarget-class.md)

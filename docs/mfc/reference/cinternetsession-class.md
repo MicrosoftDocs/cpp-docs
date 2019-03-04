@@ -588,7 +588,7 @@ Indicates various caching options. The default is set to 0. The possible values 
 
 If the operation was successful, a value of TRUE is returned. If an error occurred, a value of FALSE is returned. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

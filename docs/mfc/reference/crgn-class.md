@@ -790,8 +790,7 @@ Unlike [CreateRectRgn](#createrectrgn), however, it does not allocate any additi
 
 Use this function instead of the `CreateRectRgn` member function to avoid calls to the local memory manager.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

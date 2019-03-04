@@ -25,8 +25,7 @@ In the wizard, you can add more than one class in a type library. Likewise, you 
 
 The wizard creates an MFC class, derived from [COleDispatchDriver](../../mfc/reference/coledispatchdriver-class.md), for each interface you add from the selected type library. `COleDispatchDriver` implements the client side of OLE automation.
 
-## See Also
+## See also
 
 [Automation Clients](../../mfc/automation-clients.md)<br/>
 [Automation Clients: Using Type Libraries](../../mfc/automation-clients-using-type-libraries.md)
-

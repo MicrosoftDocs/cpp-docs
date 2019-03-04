@@ -61,6 +61,6 @@ For a general description of `CObject` functionality, see the article [Deriving 
 
 For more details on how to enable serialization when you derive your class from `CObject`, see the articles [Files in MFC](../mfc/files-in-mfc.md) and [Serialization](../mfc/serialization-in-mfc.md).
 
-## See Also
+## See also
 
 [Deriving a Class from CObject](../mfc/deriving-a-class-from-cobject.md)

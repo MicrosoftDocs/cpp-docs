@@ -723,7 +723,7 @@ A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object 
 
 This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips), as described in the Windows SDK. When a slider control is created with the TBS_TOOLTIPS style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](/windows/desktop/Controls/trackbar-control-styles) in the Windows SDK.
 
-## See Also
+## See also
 
 [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

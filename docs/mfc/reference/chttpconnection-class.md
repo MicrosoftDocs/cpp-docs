@@ -197,7 +197,7 @@ Override the `dwContext` default to set the context identifier to a value of you
 
 Exceptions may be thrown with this function.
 
-## See Also
+## See also
 
 [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

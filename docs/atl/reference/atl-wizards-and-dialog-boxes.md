@@ -22,4 +22,3 @@ The Active Template Library (ATL) wizards generate boilerplate code for various 
 |[ATL COM+ 1.0 Component](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)|Creates a basic ATL COM+ 1.0 component|
 |[ATL Active Server Page Component](../../atl/reference/adding-an-atl-active-server-page-component.md)|Creates a basic ATL Active Server Page component.|
 |[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)|Links to the ATL documentation.|
-

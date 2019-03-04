@@ -214,7 +214,7 @@ When you resize the window, drawing work is performed only for the final window 
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

@@ -144,7 +144,7 @@ Returns zero.
 
 In debug mode, calls `_ASSERTE`.
 
-## See Also
+## See also
 
 [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
 [CComObject Class](../../atl/reference/ccomobject-class.md)<br/>

@@ -741,7 +741,7 @@ V  m_value;
 *V*<br/>
 The value element type.
 
-## See Also
+## See also
 
 [Marquee Sample](../../visual-cpp-samples.md)<br/>
 [UpdatePV Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>

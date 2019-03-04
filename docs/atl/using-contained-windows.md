@@ -25,7 +25,6 @@ Following is an example of a container class with two contained windows:
 
 For more information about contained windows, see the [SUBEDIT](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) sample.
 
-## See Also
+## See also
 
 [Window Classes](../atl/atl-window-classes.md)
-

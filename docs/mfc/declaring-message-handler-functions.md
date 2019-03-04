@@ -16,7 +16,6 @@ Certain rules and conventions govern the names of your message-handler functions
 
 - [Handling reflected messages](../mfc/handling-reflected-messages.md)
 
-## See Also
+## See also
 
 [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
-

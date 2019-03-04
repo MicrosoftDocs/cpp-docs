@@ -96,7 +96,7 @@ Reference to an [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) st
 
 For more information, see [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) in the Windows SDK.
 
-## See Also
+## See also
 
 [MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
 [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>

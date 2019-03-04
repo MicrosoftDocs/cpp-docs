@@ -28,7 +28,6 @@ The following classes provide general support for ATL controls:
 
 [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

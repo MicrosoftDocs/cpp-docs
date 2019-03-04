@@ -36,6 +36,6 @@ For more information about MFC multithreading support, see the following topics:
 
 - [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md)
 
-## See Also
+## See also
 
 [Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)

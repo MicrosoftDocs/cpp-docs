@@ -84,7 +84,7 @@ The following completed example shows code that uses a lightweight task to call 
 
 ### Comments
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Scheduler Class](../../parallel/concrt/reference/scheduler-class.md)

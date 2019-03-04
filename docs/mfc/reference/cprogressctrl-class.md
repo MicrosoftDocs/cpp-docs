@@ -558,9 +558,8 @@ The step increment is set by the `CProgressCtrl::SetStep` member function.
 
 [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_16.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

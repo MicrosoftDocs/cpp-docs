@@ -36,7 +36,6 @@ By default, the application contains no compound document support. If you accept
   |**Active document container**|Indicates the application can contain active documents within its frame. Active documents may include, for example, Internet Explorer documents, or Office documents such as Microsoft Word files or Excel spreadsheets. See [Active Document Containment](../../mfc/active-document-containment.md) for more information.|
   |**Support for compound files**|Does not serialize the container application's documents using the compound-file format. This option forces the loading of an entire file containing objects into memory. Incremental saves to individual objects are not available. If one object is changed and subsequently saved, then all objects in the file are saved.|
 
-## See Also
+## See also
 
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)
-

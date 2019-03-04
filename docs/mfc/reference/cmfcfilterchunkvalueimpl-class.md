@@ -645,6 +645,6 @@ S_OK if successful; otherwise an error code.
 
 ### Remarks
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

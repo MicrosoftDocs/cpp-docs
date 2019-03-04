@@ -38,4 +38,3 @@ The Concurrency Runtime provides a default scheduler so that you do not have to 
 |[Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Describes how to use various parallel patterns, for example, parallel algorithms, in your applications.|
 |[Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)|Describes how to use asynchronous agents in your applications.|
 |[Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)|Describes the Concurrency Runtime, which simplifies parallel programming, and contains links to related topics.|
-

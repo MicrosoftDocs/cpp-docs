@@ -44,4 +44,3 @@ Describes how to create a custom message block type that orders incoming message
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 Introduces the concurrent programming framework for Visual C++.
-

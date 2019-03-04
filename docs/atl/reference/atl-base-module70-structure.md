@@ -58,7 +58,6 @@ Array used to search for resources in all the resource instances of which ATL is
 
 **Header:** atlcore.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)
-

@@ -11,4 +11,3 @@ This family of articles covers the MFC implementation of Windows Sockets. MFC su
 ## In This Section
 
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
-

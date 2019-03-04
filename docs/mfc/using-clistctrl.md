@@ -44,7 +44,6 @@ For related information, see [About List-View Controls](/windows/desktop/Control
 
 - [Destroying the List Control](../mfc/destroying-the-list-control.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

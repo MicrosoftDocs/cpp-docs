@@ -31,7 +31,6 @@ Once you have successfully registered your interest in receiving events, methods
 
 Be careful to avoid reference cycles when handling events.
 
-## See Also
+## See also
 
 [Event Handling](../atl/event-handling-and-atl.md)
-

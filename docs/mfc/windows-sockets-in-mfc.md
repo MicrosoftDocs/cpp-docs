@@ -59,7 +59,6 @@ For more information about Windows Sockets, see:
 
 - [Windows Sockets: Ports and Socket Addresses](../mfc/windows-sockets-ports-and-socket-addresses.md)
 
-## See Also
+## See also
 
 [Windows Sockets](../mfc/windows-sockets.md)
-

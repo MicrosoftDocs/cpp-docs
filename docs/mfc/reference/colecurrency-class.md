@@ -552,7 +552,7 @@ For a brief description of these status values, see the following list:
 > [!CAUTION]
 >  This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to null or invalid. Note that the assignment operator ( [operator =](#operator_eq)) and [SetCurrency](#setcurrency) do set the status to of the object based on the source value(s).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleVariant Class](../../mfc/reference/colevariant-class.md)

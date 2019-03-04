@@ -79,7 +79,7 @@ HRESULT m_hr;
 
 The data member that stores the error condition. The HRESULT value is set by the constructor, [CAtlException::CAtlException](#catlexception).
 
-## See Also
+## See also
 
 [AtlThrow](debugging-and-error-reporting-global-functions.md#atlthrow)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

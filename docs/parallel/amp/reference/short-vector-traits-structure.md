@@ -111,6 +111,6 @@ short_vector_traits();
 static int const size = 1;
 ```
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

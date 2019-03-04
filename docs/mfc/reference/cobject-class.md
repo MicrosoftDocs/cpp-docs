@@ -352,7 +352,6 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#13](../../mfc/codesnippet/cpp/cobject-class_10.cpp)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-
