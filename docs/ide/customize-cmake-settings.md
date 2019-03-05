@@ -1,6 +1,6 @@
 ---
 title: "Customize CMake build settings in Visual Studio"
-ms.date: "02/08/2019"
+ms.date: "03/05/2019"
 helpviewer_keywords: ["CMake build settings"]
 ---
 # Customize CMake build settings
@@ -42,9 +42,9 @@ You can also directly edit  `CMakeSettings.json` to create custom configurations
 
 ```
 
-1. **name**: the name that appears in the C++ configuration dropdown. The `${name}` macro enables you to use this value when composing other property values such as paths. For an example, see the **buildRoot** definition in  `CMakeSettings.json`.
+- **name**: the name that appears in the C++ configuration dropdown. The `${name}` macro enables you to use this value when composing other property values such as paths. For an example, see the **buildRoot** definition in  `CMakeSettings.json`.
 
-1. **generator**: maps to the CMake **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, when composing other property values. Visual Studio currently supports the following CMake generators:
+- **generator**: maps to the CMake **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, when composing other property values. Visual Studio currently supports the following CMake generators:
 
     - "Ninja"
     - "Visual Studio 14 2015"
@@ -64,9 +64,9 @@ You can also directly edit  `CMakeSettings.json` to create custom configurations
     "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
     ```
 
-1. **buildRoot**: maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
+- **buildRoot**: maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
 
-1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D** *_name_=_value_* to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead. The following example shows how to specify the name-value pairs for the 14.14.26428 MSVC toolset:
+- **variables**: contains a name-value pair of CMake variables that will get passed as **-D** *_name_=_value_* to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead. The following example shows how to specify the name-value pairs for the 14.14.26428 MSVC toolset:
 
 ```json
 "variables": [
@@ -81,13 +81,13 @@ You can also directly edit  `CMakeSettings.json` to create custom configurations
   ]
 ```
 
-1. **cmakeCommandArgs**: specifies any additional switches you want to pass to CMake.exe.
+- **cmakeCommandArgs**: specifies any additional switches you want to pass to CMake.exe.
 
-1. **configurationType**: defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo".
+- **configurationType**: defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo".
 
-1. **ctestCommandArgs**: specifies additional switches to pass to CTest when running tests.
+- **ctestCommandArgs**: specifies additional switches to pass to CTest when running tests.
 
-1. **buildCommandArgs**: specifies additional switches to pass to the underlying build system. For example, passing -v when using the Ninja generator forces Ninja to output command lines.
+- **buildCommandArgs**: specifies additional switches to pass to the underlying build system. For example, passing -v when using the Ninja generator forces Ninja to output command lines.
 
 Additional settings are available for CMake Linux projects. See [Configure a CMake Linux project](../linux/cmake-linux-project.md).
 

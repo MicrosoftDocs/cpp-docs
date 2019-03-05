@@ -1,6 +1,6 @@
 ---
 title: "CMakeSettings.json schema reference"
-ms.date: "02/11/2019"
+ms.date: "03/05/2019"
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---

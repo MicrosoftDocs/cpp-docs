@@ -1,6 +1,6 @@
 ---
 title: "CppProperties.json schema reference"
-ms.date: "11/18/2018"
+ms.date: "03/05/2019"
 helpviewer_keywords: ["CMake in Visual C++"]
 ---
 
@@ -97,19 +97,19 @@ For properties that have a set of allowable values, the code editor shows the av
 
 
 
-## Configuation properties
+## Configuration properties
 
 A configuration may have any of the following properties:
 
 |||
 |-|-|
-|`name`|the configuration name that appears in the C++ configuration dropdown|
-|`includePath`|the list of folders that should be specified in the include path (maps to /I for most compilers)|
-|`defines`|the list of macros that should be defined (maps to /D for most compilers)|
-|`compilerSwitches`|one or more additional switches that can influence IntelliSense behavior|
-|`forcedInclude`|header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
-|`undefines`|the list of macros to be undefined (maps to /U for MSVC)|
-|`intelliSenseMode`|the IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- msvc-x86 (default)<br/>- msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+|`name`|The configuration name that appears in the C++ configuration dropdown|
+|`includePath`|The list of folders that should be specified in the include path (maps to /I for most compilers)|
+|`defines`|The list of macros that should be defined (maps to /D for most compilers)|
+|`compilerSwitches`|One or more additional switches that can influence IntelliSense behavior|
+|`forcedInclude`|Header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
+|`undefines`|The list of macros to be undefined (maps to /U for MSVC)|
+|`intelliSenseMode`|The IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- msvc-x86 (default)<br/>- msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
 
 ## Custom configurations
 

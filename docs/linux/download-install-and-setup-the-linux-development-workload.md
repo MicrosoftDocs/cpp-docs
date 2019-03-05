@@ -1,11 +1,11 @@
 ---
 title: "Install the C++ Linux workload in Visual Studio"
 description: "Describes how to download, install, and setup the Linux workload for C++ in Visual Studio."
-ms.date: "02/06/2019"
+ms.date: "03/05/2019"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 ---
 
-# Download, install, and setup the Linux workload
+# Download, install, and set up the Linux workload
 
 You can use the Visual Studio 2017 IDE in Windows to create, edit and debug C++ projects that execute on a Linux physical computer, virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about). 
 
