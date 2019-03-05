@@ -93,7 +93,7 @@ HRESULT GetProperties(ULONG ulPropIDSets,
 
 #### Parameters
 
-See [IDBProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714344(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
+See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
 ### Return Value
 
@@ -185,10 +185,10 @@ HRESULT Open(LPCSTR szProgID,
 [in] The `CLSID` of the data provider.
 
 *pPropSet*<br/>
-[in] A pointer to an array of [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
 *nPropertySets*<br/>
-[in] The number of [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument.
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument.
 
 *pName*<br/>
 [in] The name of the database to which to connect.
@@ -200,7 +200,7 @@ HRESULT Open(LPCSTR szProgID,
 [in] The user's password.
 
 *nInitMode*<br/>
-[in] Database initialization mode. See [Initialization Properties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723127(v=vs.85))in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If *nInitMode* is zero, no initialization mode is included in the property set used to open the connection.
+[in] Database initialization mode. See [Initialization Properties](/previous-versions/windows/desktop/ms723127(v=vs.85))in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If *nInitMode* is zero, no initialization mode is included in the property set used to open the connection.
 
 *szProgID*<br/>
 [in] A program identifier.
@@ -245,7 +245,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 *szFileName*<br/>
 [in] The name of a file, usually a data source connection (.UDL) file.
 
-For more information about data link files (.udl files), see [Data Link API Overview](https://docs.microsoft.com/previous-versions/windows/desktop/ms718102(v=vs.85)) in the Windows SDK.
+For more information about data link files (.udl files), see [Data Link API Overview](/previous-versions/windows/desktop/ms718102(v=vs.85)) in the Windows SDK.
 
 ### Return Value
 
@@ -340,10 +340,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 [in] Program ID of a data provider.
 
 *pPropset*<br/>
-[in] A pointer to an array of [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK. If the data source object is initialized, the properties must belong to the Data Source property group. If the same property is specified more than once in *pPropset*, then which value is used is provider-specific. If *ulPropSets* is zero, this parameter is ignored.
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK. If the data source object is initialized, the properties must belong to the Data Source property group. If the same property is specified more than once in *pPropset*, then which value is used is provider-specific. If *ulPropSets* is zero, this parameter is ignored.
 
 *ulPropSets*<br/>
-[in] The number of [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument. If this is zero, the provider ignores *pPropset*.
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument. If this is zero, the provider ignores *pPropset*.
 
 ### Return Value
 

@@ -20,6 +20,6 @@ Macro substitution is case sensitive and is literal; *string1* and *string2* can
 
 No spaces or tabs precede the colon; any after the colon are interpreted as literal. If *string2* is null, all occurrences of *string1* are deleted from the macro's definition string.
 
-## See Also
+## See also
 
 [Using an NMAKE Macro](../build/using-an-nmake-macro.md)

@@ -20,6 +20,6 @@ In a dependency line, specify one or more targets, using any valid filename, dir
 
 [Dependency side effects](../build/dependency-side-effects.md)
 
-## See Also
+## See also
 
 [Description Blocks](../build/description-blocks.md)

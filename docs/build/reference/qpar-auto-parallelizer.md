@@ -34,7 +34,7 @@ For information about how to enable output messages for the auto-parallelizer, s
 
 - Use the code example in <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
 [/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>

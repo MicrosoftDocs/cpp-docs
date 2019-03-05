@@ -1,7 +1,7 @@
 ---
 title: "Compiler Errors C2100 through C2199"
 ms.date: "11/17/2017"
-f1_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2131", "C2136", "C2176", "C2187", "C2189"]
+f1_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2136", "C2176", "C2187", "C2189"]
 helpviewer_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2131", "C2136", "C2176", "C2187", "C2189"]
 ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
 ---
@@ -46,7 +46,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C2128](compiler-error-c2128.md)|'*function*': alloc_text/same_seg applicable only to functions with C linkage|
 |[Compiler Error C2129](compiler-error-c2129.md)|static function '*identifier*' declared but not defined|
 |[Compiler Error C2130](compiler-error-c2130.md)|#line expected a string containing the filename, found '*token*'|
-|Compiler Error C2131|expression did not evaluate to a constant|
+|[Compiler Error C2131](compiler-error-c2131.md)|expression did not evaluate to a constant|
 |[Compiler Error C2132](compiler-error-c2132.md)|syntax error: unexpected identifier|
 |[Compiler Error C2133](compiler-error-c2133.md)|'*identifier*': unknown size|
 |[Compiler Error C2134](compiler-error-c2134.md)|'*function*': call does not result in a constant expression|

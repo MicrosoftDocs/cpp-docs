@@ -17,6 +17,6 @@ This option displays COFF line numbers. Line numbers exist in an object file if 
 
 Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
 [DUMPBIN Options](../../build/reference/dumpbin-options.md)

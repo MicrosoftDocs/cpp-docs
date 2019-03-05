@@ -166,11 +166,11 @@ See the following descriptions of the individual operators:
 
 - **operator +(** *point* **)**
 
-  This operation offsets (moves) a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) (or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) value by this `CSize` value. The `cx` and `cy` members of this `CSize` value are added to the `x` and `y` data members of the `POINT` value. It is analogous to the version of [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) that takes a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) parameter.
+  This operation offsets (moves) a [POINT](/previous-versions/dd162805\(v=vs.85\)) (or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) value by this `CSize` value. The `cx` and `cy` members of this `CSize` value are added to the `x` and `y` data members of the `POINT` value. It is analogous to the version of [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) that takes a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) parameter.
 
 - **operator +(** *lpRect* **)**
 
-   This operation offsets (moves) a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) (or [CRect](../../atl-mfc-shared/reference/crect-class.md)) value by this `CSize` value. The `cx` and `cy` members of this `CSize` value are added to the `left`, `top`, `right`, and `bottom` data members of the `RECT` value. It is analogous to the version of [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) that takes a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) parameter.
+   This operation offsets (moves) a [RECT](/previous-versions/dd162897\(v=vs.85\)) (or [CRect](../../atl-mfc-shared/reference/crect-class.md)) value by this `CSize` value. The `cx` and `cy` members of this `CSize` value are added to the `left`, `top`, `right`, and `bottom` data members of the `RECT` value. It is analogous to the version of [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) that takes a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) parameter.
 
 ### Example
 
@@ -197,11 +197,11 @@ The fourth operator, the unary minus, changes the sign of the `CSize` value. See
 
 - **operator -(** *point* **)**
 
-  This operation offsets (moves) a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) value by the additive inverse of this `CSize` value. The `cx` and `cy` of this `CSize` value are subtracted from the `x` and `y` data members of the `POINT` value. It is analogous to the version of [CPoint::operator -](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) that takes a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) parameter.
+  This operation offsets (moves) a [POINT](/previous-versions/dd162805\(v=vs.85\)) or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) value by the additive inverse of this `CSize` value. The `cx` and `cy` of this `CSize` value are subtracted from the `x` and `y` data members of the `POINT` value. It is analogous to the version of [CPoint::operator -](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) that takes a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) parameter.
 
 - **operator -(** *lpRect* **)**
 
-  This operation offsets (moves) a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) or [CRect](../../atl-mfc-shared/reference/crect-class.md) value by the additive inverse of this `CSize` value. The `cx` and `cy` members of this `CSize` value are subtracted from the `left`, `top`, `right`, and `bottom` data members of the `RECT` value. It is analogous to the version of [CRect::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) that takes a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) parameter.
+  This operation offsets (moves) a [RECT](/previous-versions/dd162897\(v=vs.85\)) or [CRect](../../atl-mfc-shared/reference/crect-class.md) value by the additive inverse of this `CSize` value. The `cx` and `cy` members of this `CSize` value are subtracted from the `left`, `top`, `right`, and `bottom` data members of the `RECT` value. It is analogous to the version of [CRect::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) that takes a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) parameter.
 
 - **operator -()**
 

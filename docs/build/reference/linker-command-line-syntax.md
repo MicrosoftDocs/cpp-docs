@@ -23,7 +23,7 @@ To pass a file to the linker, specify the filename on the command line after the
 
 link.exe returns zero for success (no errors).  Otherwise, the linker returns the error number that stopped the link.  For example, if the linker generates LNK1104, the linker returns 1104.  Accordingly, the lowest error number returned on an error by the linker is 1000.  A return value of 128 represents a configuration problem with either the operating system or a .config file; the loader didn’t load either link.exe or c2.dll.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

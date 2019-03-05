@@ -26,7 +26,7 @@ Resembles the [/KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-c
 
 1. In the **Windows Metadata Key Container** box, enter the location.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

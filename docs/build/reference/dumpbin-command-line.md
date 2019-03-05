@@ -19,7 +19,7 @@ When you run DUMPBIN on a file without specifying an option, DUMPBIN displays th
 
 When you type the command `dumpbin` without any other command-line input, DUMPBIN displays a usage statement that summarizes its options.
 
-## See Also
+## See also
 
 [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
 [DUMPBIN Reference](../../build/reference/dumpbin-reference.md)

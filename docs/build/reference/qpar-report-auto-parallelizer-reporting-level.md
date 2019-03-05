@@ -35,7 +35,7 @@ Messages are reported to stdout. If no informational messages are reported, then
 
 - Use the code example in <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)<br/>

@@ -30,6 +30,6 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 - [MFC extension DLLs](../build/extension-dlls-overview.md)
 
-## See Also
+## See also
 
 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

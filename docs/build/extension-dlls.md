@@ -113,6 +113,6 @@ If your MFC extension DLL needs to maintain extra data for each application, you
 
 - [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
-## See Also
+## See also
 
 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

@@ -32,7 +32,7 @@ An accessor class.
 |||
 |-|-|
 |[CStreamRowset](#cstreamrowset)|Constructor. Instantiates and initializes the `CStreamRowset` object.|
-|[Close](#close)|Releases the [ISequentialStream](https://docs.microsoft.com/previous-versions/windows/desktop/ms718035(v=vs.85)) interface pointer in the class.|
+|[Close](#close)|Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) interface pointer in the class.|
 
 ## Remarks
 
@@ -65,7 +65,7 @@ CStreamRowset();
 
 ## <a name="close"></a> CStreamRowset::Close
 
-Releases the [ISequentialStream](https://docs.microsoft.com/previous-versions/windows/desktop/ms718035(v=vs.85)) interface pointer in the class.
+Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) interface pointer in the class.
 
 ### Syntax
 

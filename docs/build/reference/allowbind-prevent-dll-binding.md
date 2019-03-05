@@ -29,7 +29,7 @@ You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)<br/>

@@ -16,6 +16,6 @@ You can create an .sbr file without performing a full compile. For example, you 
 
 The build process can be more efficient if the .sbr files are first packed to remove unreferenced definitions. The compiler automatically packs .sbr files.
 
-## See Also
+## See also
 
 [Building a .Bsc File](../../build/reference/building-a-dot-bsc-file.md)

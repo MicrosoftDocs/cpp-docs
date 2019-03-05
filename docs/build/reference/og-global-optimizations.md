@@ -77,7 +77,7 @@ For related information, see [/Oi (Generate Intrinsic Functions)](../../build/re
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
 

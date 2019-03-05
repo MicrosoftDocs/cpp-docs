@@ -22,7 +22,7 @@ The build system in Visual Studio allows the manifest to be embedded in the fina
 
 The manifest is embedded inside the final binary as a text resource and it can be viewed by opening the final binary as a file in Visual Studio. To ensure that the manifest points to the correct libraries, follow the steps described in [Understanding the Dependencies of a Visual C++ Application](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md) or follow the suggestions described in the [Troubleshooting](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md) section.
 
-## See Also
+## See also
 
 [How to: Embed a Manifest Inside a C/C++ Application](../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md)<br/>
 [About Private Assemblies](/windows/desktop/SbsCs/about-private-assemblies-)<br/>

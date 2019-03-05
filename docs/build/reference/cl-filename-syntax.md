@@ -11,6 +11,6 @@ CL accepts files with names that follow FAT, HPFS, or NTFS naming conventions. A
 
 The filename extension determines how files are processed. C and C++ files, which have the extension .c, .cxx, or .cpp, are compiled. Other files, including .obj files, libraries (.lib), and module-definition (.def) files, are passed to the linker without being processed.
 
-## See Also
+## See also
 
 [Compiler Command-Line Syntax](../../build/reference/compiler-command-line-syntax.md)

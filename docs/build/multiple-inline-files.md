@@ -22,6 +22,6 @@ inlinetext
 
 For each file, specify one or more lines of inline text followed by a closing line containing the delimiter. Begin the second file's text on the line following the delimiting line for the first file.
 
-## See Also
+## See also
 
 [Inline Files in a Makefile](../build/inline-files-in-a-makefile.md)

@@ -57,6 +57,6 @@ For DLLs to be called by programs written in Visual Basic, the alias technique s
 
 - [Decorated names](../build/reference/decorated-names.md)
 
-## See Also
+## See also
 
 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

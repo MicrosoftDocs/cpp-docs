@@ -84,6 +84,6 @@ For an example of how to write, build, and use a regular MFC DLL, see the sample
 
 - [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
-## See Also
+## See also
 
 [Kinds of DLLs](../build/kinds-of-dlls.md)

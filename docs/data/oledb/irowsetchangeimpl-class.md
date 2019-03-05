@@ -7,7 +7,7 @@ ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
 ---
 # IRowsetChangeImpl Class
 
-The OLE DB Templates implementation of the [IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85)) interface in the OLE DB specification.
+The OLE DB Templates implementation of the [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) interface in the OLE DB specification.
 
 ## Syntax
 
@@ -90,7 +90,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### Parameters
 
-See [IRowsetChange::DeleteRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::InsertRow
 
@@ -107,7 +107,7 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 
 #### Parameters
 
-See [IRowsetChange::InsertRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms716921(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="setdata"></a> IRowsetChangeImpl::SetData
 
@@ -123,7 +123,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### Parameters
 
-See [IRowsetChange::SetData](https://docs.microsoft.com/previous-versions/windows/desktop/ms721232(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::FlushData
 

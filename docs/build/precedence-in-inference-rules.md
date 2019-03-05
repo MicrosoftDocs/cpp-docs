@@ -14,6 +14,6 @@ If an inference rule is multiply defined, NMAKE uses the highest-precedence defi
 
 1. A predefined inference rule.
 
-## See Also
+## See also
 
 [Inference Rules](../build/inference-rules.md)

@@ -33,7 +33,7 @@ ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ManifestFile%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)
