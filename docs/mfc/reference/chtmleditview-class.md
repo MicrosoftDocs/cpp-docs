@@ -90,7 +90,7 @@ Points to a null-terminated character string that represents the window name.
 Specifies the window style attributes. By default, the WS_VISIBLE and WS_CHILD Windows styles are set.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
 
 *pParentWnd*<br/>
 A pointer to the parent window of the control.
@@ -116,7 +116,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 ### Parameters
 
 *ppDocument*<br/>
-The [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface.
+The [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) interface.
 
 ##  <a name="getstartdocument"></a>  CHtmlEditView::GetStartDocument
 

@@ -14,7 +14,7 @@ A DHTML control is similar to any ATL control, except:
 
 - It creates an HTML resource for the control UI.
 
-- It allows access to the DHTML object model through the member variable `m_spBrowser`, which is a smart pointer of type [IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx). Use this pointer to access any part of the DHTML object model.
+- It allows access to the DHTML object model through the member variable `m_spBrowser`, which is a smart pointer of type [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127\(v=vs.85\)). Use this pointer to access any part of the DHTML object model.
 
 The following graphic illustrates the relationship between your DLL, the DHTML control, the Web browser, and the HTML resource.
 
