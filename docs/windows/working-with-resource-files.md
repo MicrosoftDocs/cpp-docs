@@ -9,7 +9,7 @@ ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
 > [!WARNING]
 > This section applies to Windows desktop applications written in C++.
 >
-> For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](/windows/uwp/app-resources/), or on adding resources to C++/CLI (managed) projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
+> For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](/windows/uwp/app-resources/), or on adding resources to C++/CLI (managed) projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the .NET Framework Developer's Guide.
 
 Resources can be composed of a wide range of elements, like:
 
