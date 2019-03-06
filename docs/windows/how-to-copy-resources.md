@@ -7,12 +7,6 @@ ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
 ---
 # How to: Manage Resources (C++)
 
-You can manage resources for your project by:
-
-- Copying and editing resources.
-
-- Importing and exporting resources.
-
 ## Copy and Edit Resources
 
 You can copy resources from one file to another without changing them, or changing the language or condition of a resource while copying it.
@@ -22,7 +16,7 @@ You can easily copy resources from an existing resource or executable file to yo
 > [!NOTE]
 > Visual C++ includes sample resource files that you can use in your own application. For more information, see [CLIPART: Common Resources](https://github.com/Microsoft/VCSamples).
 
-You can use the drag-and-drop method between .rc files that are open outside of the project.
+You can't drag and drop, copy, cut, or paste between resource files in the project (**Resource View**) and stand-alone .rc files open in document windows. You could do this in previous versions of the product. Only use the drag-and-drop method between .rc files that are open outside of the project.
 
 ### To copy resources
 
@@ -46,9 +40,6 @@ You can use the drag-and-drop method between .rc files that are open outside of 
       1. Right-click the resource file into which you'd like to paste the resource (for example, *Source2.rc*) and choose **Paste**.
 
 > [!NOTE]
-> You can't drag and drop, copy, cut, or paste between resource files in the project (**Resource View**) and stand-alone .rc files (those open in document windows). You could do this in previous versions of the product.
-
-> [!NOTE]
 > To avoid conflicts with symbol names or values in the existing file, Visual C++ may change the transferred resource's symbol value or symbol name and value when you copy it to the new file.
 
 While copying in a resource, you can change its language property or condition property, or both.
@@ -63,17 +54,17 @@ The language and condition of a resource are shown in parentheses after the name
 IDD_AboutBox (Finnish - XX33)
 ```
 
-To copy an existing resource and change its language or condition
+### To copy an existing resource and change its language or condition
 
-1. In the .rc file or in the [Resource View](../windows/resource-view-window.md) window, right-click the resource you want to copy and choose **Insert Copy**. Then set the following:
+In the *.rc* file or in the [Resource View](../windows/resource-view-window.md) window, right-click the resource you want to copy and choose **Insert Copy**. Then set the following:
 
-   - For the **Language** list box, select the language.
+- For the **Language** list box, select the language.
 
-   - In the **Condition** box, type the condition.
+- In the **Condition** box, type the condition.
 
 ### To edit resources
 
-Managed resource files (.resx) are XML files. When you add a managed resource file to your project from the **Add New Item** dialog box, the **Managed Resources Editor** opens by default.
+Managed resource (.resx) files are XML files. When you add a managed resource file to your project from the **Add New Item** dialog box, the **Managed Resources Editor** opens by default.
 
 ## Import and Export Resources
 

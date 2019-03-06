@@ -224,7 +224,7 @@ The symbols in this table only appear in an MFC project when database support ha
 
 These symbols are also part of the MFC support files, but they support standard Windows application functions and actions. These symbols are used with menus.
 
-When you're working with menus in the **Menu Editor**, these symbols will appear in the **Property Window** associated with common menu commands. For instance, if your application has a **File** menu with an **Exit** command, that command will be associated with the symbol ID_APP_EXIT in the [Properties window](/visualstudio/ide/reference/properties-window).
+When you're working with menus in the **Menu Editor**, these symbols will appear in the **Property** window associated with common menu commands. For instance, if your application has a **File** menu with an **Exit** command, that command will be associated with the symbol ID_APP_EXIT in the [Properties window](/visualstudio/ide/reference/properties-window).
 
 ||||
 |-|-|-|
