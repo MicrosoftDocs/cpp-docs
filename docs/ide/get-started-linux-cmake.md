@@ -152,15 +152,15 @@ Because this is a desktop application, you need to provide some additional confi
 1. In the CMake Targets view, right-click AppBasicExampleGui and choose **Debug and Launch Settings** to open the launch.vs.json file that is in the hidden **.vs** subfolder. This file is local to your development environment. You can move it into the root of your project if you wish to check it in and save it with your team. In this file a configuration has been added for AppBasicExampleGui. These default settings work in most cases, but because this is a desktop application you need to provide some additional information to launch the program in a way you can see it on our Linux machine. 
 2. You need to know the value of the environment variable `DISPLAY` on your Linux machine, run this command to get it.
 
-```cmd
+    ```cmd
     echo $DISPLAY
-```
+    ```
 
     In the configuration for AppBasicExampleGui there is a parameter array "pipeArgs". Within there is a line "${debuggerCommand}". This is the command that launches gdb on the remote machine. Visual Studio needs to export the display into this context before that command runs. For example, if the value of your display :1, modify that line as follows:
 
-```cmd
+    ```cmd
     "export DISPLAY=:1;${debuggerCommand}",
-```
+    ```
 3. Now in order to launch and debug our application, choose the **Select Startup Item** drop-down in the toolbar and choose AppBasicExampleGui. Now press that button or hit **F5**. This will build the application and its dependencies on the remote Linux machine then launch it with the Visual Studio debugger attached. On your remote Linux machine, you should see an application window appear.
 
 4. Move your mouse into the application window, click a button, and the breakpoint will be hit. Program execution pauses, Visual Studio comes back to the foreground, and you will be at your breakpoint. You should also see a Linux Console Window appear in Visual Studio. This window provides output from the remote Linux machine, and it can also accept input for `stdin`. Like any Visual Studio window, it can be docked where you prefer to see it and its position will be persisted in future sessions.
