@@ -172,7 +172,7 @@ The new resource instance.
 
 Returns the updated resource instance.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Module Classes](../../atl/atl-module-classes.md)

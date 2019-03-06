@@ -763,8 +763,7 @@ size_type unsafe_max_bucket_count() const;
 
 The maximum number of buckets in this container.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-

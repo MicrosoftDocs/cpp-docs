@@ -34,7 +34,7 @@ Use the /LIBPATH option to override the environment library path. The linker wil
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalLibraryDirectories%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

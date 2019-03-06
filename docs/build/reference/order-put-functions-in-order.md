@@ -57,7 +57,7 @@ The **/ORDER** option disables incremental linking. You may see linker warning [
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.FunctionOrder%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

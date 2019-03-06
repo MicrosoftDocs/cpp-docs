@@ -16,6 +16,6 @@ Expressions can use operators that act on constant values, exit codes from comma
 
 [Executing a program in preprocessing](executing-a-program-in-preprocessing.md)
 
-## See Also
+## See also
 
 [Makefile Preprocessing](makefile-preprocessing.md)

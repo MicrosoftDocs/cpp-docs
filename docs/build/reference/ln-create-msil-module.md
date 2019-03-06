@@ -39,7 +39,7 @@ The MSVC linker accepts .netmodule files as input and the output file produced b
 
 - This compiler option cannot be changed programmatically.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

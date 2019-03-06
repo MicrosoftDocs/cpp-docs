@@ -99,6 +99,6 @@ Object entry macros are placed at global scope in the project to provide support
 
 OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO allows you to specify that an object should be registered and initialized (see [OBJECT_ENTRY_AUTO](#object_entry_auto) for more information), but it should not be creatable via `CoCreateInstance`.
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

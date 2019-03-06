@@ -185,6 +185,6 @@ The sink to which the path geometry's contents are copied. Modifying this sink d
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

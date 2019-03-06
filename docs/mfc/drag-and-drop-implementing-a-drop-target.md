@@ -34,7 +34,7 @@ For more information, see:
 
 - [Manipulating OLE Data Objects and Data Sources](../mfc/data-objects-and-data-sources-manipulation.md)
 
-## See Also
+## See also
 
 [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md)<br/>
 [COleDropTarget Class](../mfc/reference/coledroptarget-class.md)

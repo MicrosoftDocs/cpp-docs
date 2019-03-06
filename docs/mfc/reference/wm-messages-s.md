@@ -28,8 +28,7 @@ The following map entries correspond to the function prototypes.
 |ON_WM_SYSKEYDOWN( )|afx_msg void [OnSysKeyDown](../../mfc/reference/cwnd-class.md#onsyskeydown)( UINT, UINT, UINT );|
 |ON_WM_SYSKEYUP( )|afx_msg void [OnSysKeyUp](../../mfc/reference/cwnd-class.md#onsyskeyup)( UINT, UINT, UINT );|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
 [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-

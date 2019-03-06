@@ -127,7 +127,7 @@ HWND Create(
 [in] The handle to the parent or owner window.
 
 *rect*<br/>
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
+[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
 
 *szWindowName*<br/>
 [in] Specifies the name of the window. The default value is NULL.
@@ -355,7 +355,7 @@ The result of the message processing.
 
 You can override `WindowProc` to provide a different mechanism for handling messages.
 
-## See Also
+## See also
 
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>

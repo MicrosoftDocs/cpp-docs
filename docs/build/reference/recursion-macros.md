@@ -14,6 +14,6 @@ Use recursion macros to call NMAKE recursively. Recursive sessions inherit comma
 |**MAKEDIR**|Current directory when NMAKE was invoked.|
 |**MAKEFLAGS**|Options currently in effect. Use as `/$(MAKEFLAGS)`.  Note, /F is not included.|
 
-## See Also
+## See also
 
 [Special NMAKE Macros](special-nmake-macros.md)

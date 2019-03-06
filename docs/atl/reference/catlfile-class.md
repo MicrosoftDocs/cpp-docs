@@ -425,7 +425,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 The first three forms call [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile), the last calls [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) to write data to the file. Use [CAtlFile::Seek](#seek) to move the file pointer.
 
-## See Also
+## See also
 
 [Marquee Sample](../../visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

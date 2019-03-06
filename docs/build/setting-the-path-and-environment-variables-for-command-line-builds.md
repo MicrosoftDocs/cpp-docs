@@ -17,7 +17,7 @@ To see which environment variables are set by a developer command prompt shortcu
 > [!NOTE]
 >  Several command-line tools or tool options may require Administrator permission. If you have permission issues when you use them, we recommend that you open the developer command prompt window by using the **Run as Administrator** option. On Windows 10, right-click to open the shortcut menu for the command prompt window, then choose **More**, **Run as administrator**.
 
-## See Also
+## See also
 
 [Use the MSVC toolset from the command line](building-on-the-command-line.md)<br/>
 [MSVC linker reference](reference/linking.md)<br/>

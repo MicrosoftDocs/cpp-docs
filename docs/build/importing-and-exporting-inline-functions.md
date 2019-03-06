@@ -29,6 +29,6 @@ One feature of an imported inline function is that you can take its address in C
 
 - [Import into an application using __declspec(dllimport)](importing-into-an-application-using-declspec-dllimport.md)
 
-## See Also
+## See also
 
 [Importing and Exporting](importing-and-exporting.md)

@@ -56,7 +56,7 @@ void CWebView::OnInitialUpdate()
 }
 ```
 
-## See Also
+## See also
 
 [MFC Sample MFCIE](https://github.com/Microsoft/VCSamples)<br/>
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>

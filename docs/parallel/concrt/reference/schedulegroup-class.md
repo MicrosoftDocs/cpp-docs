@@ -136,10 +136,9 @@ A void pointer to the data that will be passed as a parameter to the body of the
 
 Calling the `ScheduleTask` method implicitly places a reference count on the schedule group which is removed by the runtime at an appropriate time after the task executes.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [CurrentScheduler Class](currentscheduler-class.md)<br/>
 [Scheduler Class](scheduler-class.md)<br/>
 [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

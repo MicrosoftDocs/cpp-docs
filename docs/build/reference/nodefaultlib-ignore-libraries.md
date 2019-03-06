@@ -44,7 +44,7 @@ If you use /NODEFAULTLIB, for example, to build your program without the C run-t
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreDefaultLibraryNames%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreAllDefaultLibraries%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

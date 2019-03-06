@@ -20,6 +20,6 @@ Use this wizard to add an ATL OLE DB provider to a project. An ATL OLE DB provid
 
 1. Click **Finish** to close the wizard, which will insert the newly created OLE DB provider code in your project.
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)

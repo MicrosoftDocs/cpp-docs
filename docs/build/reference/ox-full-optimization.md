@@ -53,7 +53,7 @@ To apply all available file-level optimizations for release builds, we recommend
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
 
-## See Also
+## See also
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

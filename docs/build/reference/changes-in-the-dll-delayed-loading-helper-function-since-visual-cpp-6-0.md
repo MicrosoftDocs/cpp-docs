@@ -43,6 +43,6 @@ If you defined your own helper function and are using the current version of Vis
 
 The linker can load all imports from a DLL that you specified to be delay loaded. See [Loading All Imports for a Delay-Loaded DLL](loading-all-imports-for-a-delay-loaded-dll.md) for more information.
 
-## See Also
+## See also
 
 [Understanding the Helper Function](understanding-the-helper-function.md)

@@ -39,7 +39,7 @@ Global symbols in a mapfile usually have one or more leading underscores because
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [Output-File (/F) Options](output-file-f-options.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

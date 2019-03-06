@@ -102,6 +102,6 @@ operator CRect();
 
 Current value of D2D rectangle.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

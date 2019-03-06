@@ -88,7 +88,7 @@ The **/kernel** option and the **/driver** option operate independently and neit
 
 1. In the **Additional options** box, add `/kernel` or `/kernel-`.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

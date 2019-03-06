@@ -28,6 +28,6 @@ For more information about non-MFC DLLs, see [Dynamic-Link Libraries](/windows/d
 
 - [MFC extension DLLs: Overview](extension-dlls-overview.md)
 
-## See Also
+## See also
 
 [Kinds of DLLs](kinds-of-dlls.md)

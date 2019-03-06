@@ -73,6 +73,6 @@ Note that MFC itself uses DEF files to export functions and classes from the MFC
 
 - [Mutual imports](mutual-imports.md)
 
-## See Also
+## See also
 
 [Exporting from a DLL](exporting-from-a-dll.md)

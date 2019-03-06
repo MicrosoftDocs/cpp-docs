@@ -53,7 +53,7 @@ The **/QIfist** option is deprecated starting in Visual Studio 2005. The compile
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

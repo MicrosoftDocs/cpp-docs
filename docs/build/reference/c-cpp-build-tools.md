@@ -24,7 +24,7 @@ Visual C++ provides the following command-line utilities for viewing or manipula
 
 - [BSCMAKE.EXE](bscmake-reference.md) (provided for backward compatibility only) builds a browse information file (.bsc) that contains information about the symbols (classes, functions, data, macros, and types) in your program. You view this information in browse windows within the development environment. (A .bsc file can also be built in the development environment.)
 
-## See Also
+## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
 [Decorated Names](decorated-names.md)<br/>

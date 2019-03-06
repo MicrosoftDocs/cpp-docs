@@ -294,6 +294,6 @@ void SetSegmentFlags(D2D1_PATH_SEGMENT vertexFlags);
 *vertexFlags*<br/>
 Stroke and join options to be applied to new segments added to the geometry sink.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

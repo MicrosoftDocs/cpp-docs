@@ -494,5 +494,6 @@ typedef struct _RUNTIME_FUNCTION {
     ((PVOID)((PULONG)GetLanguageSpecificData(info) + 1)
 ```
 
-## See Also
+## See also
 
+[x64 software conventions](../build/x64-software-conventions.md)

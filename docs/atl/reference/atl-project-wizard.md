@@ -37,11 +37,10 @@ Additionally, consider these tasks when you create and enhance an ATL project:
 
 You can specify project properties (for example, [whether to link statically to the CRT](../../atl/programming-with-atl-and-c-run-time-code.md)) in the [Project Properties](../../build/reference/general-property-page-project.md) page, and you can set [build configurations](/visualstudio/ide/understanding-build-configurations) for an ATL project.
 
-## See Also
+## See also
 
 [Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
 [Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Tutorial](../../atl/active-template-library-atl-tutorial.md)
-

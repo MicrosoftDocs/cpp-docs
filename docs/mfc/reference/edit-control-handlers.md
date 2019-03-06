@@ -20,7 +20,6 @@ The following map entries correspond to the function prototype.
 |ON_EN_UPDATE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 |ON_EN_VSCROLL( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

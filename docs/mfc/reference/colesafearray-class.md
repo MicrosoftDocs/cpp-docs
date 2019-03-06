@@ -688,7 +688,7 @@ void Unlock();
 
 This function is called after access to the data in an array is finished. On error, it throws a [COleException](../../mfc/reference/coleexception-class.md).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleVariant Class](../../mfc/reference/colevariant-class.md)<br/>

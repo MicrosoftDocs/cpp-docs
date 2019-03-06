@@ -20,8 +20,7 @@ The following paragraphs list several specific notifications and their uses:
 
 - EN_SELCHANGE An application can detect when the current selection changes by processing the EN_SELCHANGE notification message. The notification message specifies a [SELCHANGE](/windows/desktop/api/richedit/ns-richedit-_selchange) structure containing information about the new selection.
 
-## See Also
+## See also
 
 [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

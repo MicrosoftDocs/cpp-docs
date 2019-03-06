@@ -16,7 +16,6 @@ In related topics, you will read what the framework does as it initializes and r
 
 For more information, see [Class CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md) and [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md).
 
-## See Also
+## See also
 
 [Building on the Framework](../mfc/building-on-the-framework.md)
-

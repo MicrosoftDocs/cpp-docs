@@ -24,7 +24,6 @@ We recommend any of these three ways to close the vulnerabilities in the registr
 
 - You can also disable customizations in your application.
 
-## See Also
+## See also
 
 [Customization for MFC](../mfc/customization-for-mfc.md)
-

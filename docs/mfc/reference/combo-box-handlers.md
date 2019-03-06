@@ -23,7 +23,6 @@ The following map entries correspond to the function prototypes.
 |ON_CBN_SELENDOK( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 |ON_CBN_SETFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

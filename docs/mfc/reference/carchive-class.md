@@ -825,7 +825,7 @@ The terminating null character ('\0') is not written to the file; nor is a newli
 
 [!code-cpp[NVC_MFCSerialization#30](../../mfc/codesnippet/cpp/carchive-class_23.cpp)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CFile Class](../../mfc/reference/cfile-class.md)<br/>

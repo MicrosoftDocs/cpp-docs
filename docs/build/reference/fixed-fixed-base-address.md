@@ -35,7 +35,7 @@ Specify /FIXED:NO to generate a relocation section in the program.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

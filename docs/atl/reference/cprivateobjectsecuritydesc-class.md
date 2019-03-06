@@ -261,7 +261,7 @@ Returns true on success, false on failure.
 
 The second method permits specifying the object type GUID of the object or controlling how ACEs are inherited.
 
-## See Also
+## See also
 
 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

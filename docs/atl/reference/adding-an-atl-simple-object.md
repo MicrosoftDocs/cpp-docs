@@ -23,7 +23,7 @@ You can define COM interfaces for your new ATL object when you first create it, 
 
 1. Click **Finish** to add the object to your project.
 
-## See Also
+## See also
 
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Adding a New Interface in an ATL Project](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>

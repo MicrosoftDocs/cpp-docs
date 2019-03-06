@@ -89,7 +89,7 @@ For more information, see [Code Analysis for C/C++ Overview](/visualstudio/code-
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnablePREfast%2A>.
 
-## See Also
+## See also
 
 - [MSVC Compiler Options](compiler-options.md)
 - [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

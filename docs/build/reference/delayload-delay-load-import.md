@@ -32,7 +32,7 @@ The [/DELAY](delay-delay-load-import-settings.md) option specifies binding and l
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.DelayLoadDLLs%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

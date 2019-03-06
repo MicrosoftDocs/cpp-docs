@@ -24,6 +24,6 @@ You can define [your own macros](defining-an-nmake-macro.md) or use NMAKE's [pre
 
 [Special NMAKE macros](special-nmake-macros.md)
 
-## See Also
+## See also
 
 [NMAKE Reference](nmake-reference.md)

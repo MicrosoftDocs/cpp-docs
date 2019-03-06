@@ -20,7 +20,6 @@ An MFC ODBC consumer consists of an ODBC recordset class and data bindings neces
 
 1. Click **Finish** to close the wizard, which will insert the newly created ODBC consumer code in your project.
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
-

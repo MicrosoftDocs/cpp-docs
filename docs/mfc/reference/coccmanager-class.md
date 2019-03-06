@@ -368,7 +368,7 @@ If there are no ActiveX controls in the template, NULL is returned *.*
 
 Override this function to customize this process.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleControlSite Class](../../mfc/reference/colecontrolsite-class.md)<br/>

@@ -51,6 +51,6 @@ You can extend the target platform further by creating a custom platform toolset
 
 1. Choose the **OK** button.
 
-## See Also
+## See also
 
 [MSBuild on the command line - C++](msbuild-visual-cpp.md)

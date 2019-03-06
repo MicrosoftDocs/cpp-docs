@@ -6,7 +6,7 @@ ms.assetid: 305a1103-0c87-40c8-94bc-7fbbdd52ae32
 ---
 # Receiving Notifications
 
-OLE DB provides interfaces for receiving notifications when events occur. These are described in [OLE DB Object Notifications](https://docs.microsoft.com/previous-versions/windows/desktop/ms725406(v=vs.85)) in the **OLE DB Programmer's Reference**. Setup of these events uses the standard COM connection-point mechanism. For example, an ATL object that wants to retrieve events through `IRowsetNotify` implements the `IRowsetNotify` interface by adding `IRowsetNotify` to the class-derived list and exposing it through a COM_INTERFACE_ENTRY macro.
+OLE DB provides interfaces for receiving notifications when events occur. These are described in [OLE DB Object Notifications](/previous-versions/windows/desktop/ms725406(v=vs.85)) in the **OLE DB Programmer's Reference**. Setup of these events uses the standard COM connection-point mechanism. For example, an ATL object that wants to retrieve events through `IRowsetNotify` implements the `IRowsetNotify` interface by adding `IRowsetNotify` to the class-derived list and exposing it through a COM_INTERFACE_ENTRY macro.
 
 `IRowsetNotify` has three methods, which can be called at various times. If you want to respond to only one of these methods, you can use the [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) class, which returns E_NOTIMPL for the methods you aren't interested in.
 

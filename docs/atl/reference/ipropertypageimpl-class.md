@@ -323,7 +323,7 @@ HRESULT TranslateAccelerator(MSG* pMsg);
 
 See [IPropertyPage::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) in the Windows SDK.
 
-## See Also
+## See also
 
 [IPropertyPage2Impl Class](../../atl/reference/ipropertypage2impl-class.md)<br/>
 [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>

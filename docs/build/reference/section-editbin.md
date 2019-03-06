@@ -49,6 +49,6 @@ To control *alignment*, specify the character **A** followed by one of the follo
 
 Specify the `attributes` and *alignment* characters as a string with no white space. The characters are not case sensitive.
 
-## See Also
+## See also
 
 [EDITBIN Options](editbin-options.md)

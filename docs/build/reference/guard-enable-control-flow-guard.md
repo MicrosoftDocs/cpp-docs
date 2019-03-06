@@ -40,7 +40,7 @@ Code compiled by using **/guard:cf** can be linked to libraries and object files
 
 1. In the dropdown control, choose **Yes** to enable Control Flow Guard, or **No** to disable it.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

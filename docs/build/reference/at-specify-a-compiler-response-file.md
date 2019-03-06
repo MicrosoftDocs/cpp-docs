@@ -34,7 +34,7 @@ From the command line you can specify as many response file options (for example
 
 - This compiler option cannot be changed programmatically.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

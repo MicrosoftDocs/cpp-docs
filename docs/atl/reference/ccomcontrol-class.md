@@ -210,7 +210,7 @@ Returns an integer value specifying one of the menu-item values listed under [Me
 
 `MessageBox` is useful both during development and as an easy way to display an error or warning message to the user.
 
-## See Also
+## See also
 
 [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

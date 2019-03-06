@@ -77,6 +77,6 @@ Because the `event` class behaves cooperatively, the scheduler can reallocate pr
 
 For more information about tasks, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-## See Also
+## See also
 
 [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)

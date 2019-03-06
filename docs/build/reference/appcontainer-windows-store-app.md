@@ -33,7 +33,7 @@ The /APPCONTAINER option was introduced in Windows 8.
 
 1. In **Additional Options**, enter `/APPCONTAINER` or `/APPCONTAINER:NO`.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

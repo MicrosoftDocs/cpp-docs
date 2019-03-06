@@ -26,6 +26,6 @@ You can change side-by-side assembly dependencies after an application has been 
 
 In Visual Studio 2005 and Visual Studio 2008, redistributable libraries such as ATL, MFC, CRT, Standard C++, OpenMP, and MSDIA were deployed as shared side-by-side assemblies to the native assembly cache. In the current version, the redistributable libraries use central deployment. By default, all applications that are built by using Visual C++ are built with the manifest embedded in the final binary, and the manifest describes the dependencies of the binary on the Visual C++ libraries. To understand manifest generation for Visual C++ applications, see [Understanding Manifest Generation for C/C++ Programs](understanding-manifest-generation-for-c-cpp-programs.md). A manifest is not required for applications that are statically linked to the libraries that they use, or that use local deployment. For more information about deployment, see [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md).
 
-## See Also
+## See also
 
 [Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

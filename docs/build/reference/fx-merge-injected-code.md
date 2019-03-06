@@ -60,7 +60,7 @@ If your program includes a header file that uses injected code, **/Fx** generate
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExpandAttributedSource%2A>.
 
-## See Also
+## See also
 
 [Output-File (/F) Options](output-file-f-options.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

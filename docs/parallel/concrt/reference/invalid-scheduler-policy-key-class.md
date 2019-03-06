@@ -50,7 +50,7 @@ invalid_scheduler_policy_key() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [SchedulerPolicy Class](schedulerpolicy-class.md)

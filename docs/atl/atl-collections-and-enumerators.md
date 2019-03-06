@@ -33,7 +33,6 @@ Provides links to conceptual topics on how to program using the Active Template 
 [ATLCollections Sample](../visual-cpp-samples.md)<br/>
 A sample that demonstrates the use of `ICollectionOnSTLImpl` and `CComEnumOnSTL`, and the implementation of custom copy policy classes.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

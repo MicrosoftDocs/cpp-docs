@@ -38,7 +38,7 @@ Because the incremental linker does not support the Windows metadata included in
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.MinimalRebuild%2A>.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

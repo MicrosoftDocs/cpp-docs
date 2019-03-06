@@ -23,6 +23,6 @@ if (FAILED(__HrLoadAllImportsForDll("delay1.dll"))) {
 }
 ```
 
-## See Also
+## See also
 
 [Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

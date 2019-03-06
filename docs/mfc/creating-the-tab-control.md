@@ -46,8 +46,7 @@ Clear the **TCS_EX_FLATSEPARATORS** style from a `CTabCtrl` object with the foll
 
 This will remove the separators that appear between the buttons of your `CTabCtrl` object.
 
-## See Also
+## See also
 
 [Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -28,6 +28,6 @@ You can debug a release build of an application.
 
    For more information, see [Optimizing Your Code](optimizing-your-code.md).
 
-## See Also
+## See also
 
 [Fixing Release Build Problems](fixing-release-build-problems.md)

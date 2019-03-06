@@ -1387,10 +1387,9 @@ void CCustSet::DoFieldExchange(CDaoFieldExchange* pFX)
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [CRecordset::DoFieldExchange](crecordset-class.md#dofieldexchange)<br/>
 [CRecordset::DoBulkFieldExchange](crecordset-class.md#dobulkfieldexchange)<br/>
 [CDaoRecordset::DoFieldExchange](cdaorecordset-class.md#dofieldexchange)
-

@@ -29,7 +29,7 @@ You can add a new interface to your control in one of two ways: manually or usin
 
 1. Implement methods on the interface.
 
-## See Also
+## See also
 
 [ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)<br/>

@@ -62,7 +62,7 @@ The following example can be added inside of the Project element of the myprojec
 </PropertyGroup>
 ```
 
-## See Also
+## See also
 
 [MSBuild on the command line - C++](msbuild-visual-cpp.md)<br/>
 [Walkthrough: Using MSBuild to Create a Visual C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)

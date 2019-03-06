@@ -23,6 +23,6 @@ You can add or remove the NET or CD qualifiers:
 
 - Use !NET and !CD to reverse the effects of NET and CD.
 
-## See Also
+## See also
 
 [EDITBIN Options](editbin-options.md)

@@ -35,7 +35,7 @@ CL /Ob2 /Og MYAPP.C /link LIBC.LIB
 
 Note that the command line and the command-file commands are effectively combined.
 
-## See Also
+## See also
 
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [MSVC Compiler Options](reference/compiler-options.md)

@@ -26,7 +26,7 @@ Creating an MFC container program using the [MFC Application Wizard](../../mfc/r
 
 1. [MFC ActiveX controls](../../mfc/mfc-activex-controls.md)
 
-## See Also
+## See also
 
 [Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)
 

@@ -30,7 +30,7 @@ See [@ (Specify a Compiler Response File)](at-specify-a-compiler-response-file.m
 
 - This linker option cannot be changed programmatically.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

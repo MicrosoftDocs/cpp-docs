@@ -74,7 +74,7 @@ For more information on using `CDWordArray`, see the article [Collections](../..
 
 **Header:** afxcoll.h
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

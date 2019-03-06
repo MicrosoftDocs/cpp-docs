@@ -26,7 +26,7 @@ Resembles the [/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)
 
 1. In the **Windows Metadata Key File** box, enter the file location.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

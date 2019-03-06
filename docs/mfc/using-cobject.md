@@ -27,11 +27,10 @@ ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
 
 - See a list of [CObject Frequently Asked Questions](../mfc/cobject-class-frequently-asked-questions.md)
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)<br/>
 [CRuntimeClass Structure](../mfc/reference/cruntimeclass-structure.md)<br/>
 [Files](../mfc/files-in-mfc.md)<br/>
 [Serialization](../mfc/serialization-in-mfc.md)
-

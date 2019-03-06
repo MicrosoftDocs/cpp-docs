@@ -15,6 +15,6 @@ ms.assetid: 84715050-c907-4118-8cff-2973411ae931
 
 The /TSAWARE option to the EDITBIN utility allows you to modify a program image the same way as if you had used the [/TSAWARE](tsaware-create-terminal-server-aware-application.md) linker option.
 
-## See Also
+## See also
 
 [EDITBIN Options](editbin-options.md)

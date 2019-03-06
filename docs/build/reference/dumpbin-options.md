@@ -59,7 +59,7 @@ DUMPBIN has the following options:
 
 - [/TLS](tls.md)
 
-## See Also
+## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 [DUMPBIN Reference](dumpbin-reference.md)

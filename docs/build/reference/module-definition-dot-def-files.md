@@ -36,7 +36,7 @@ See the following sections for more information:
 
 - [Reserved words](reserved-words.md)
 
-## See Also
+## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
 [MSVC Linker Options](linker-options.md)

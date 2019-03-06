@@ -26,6 +26,6 @@ struct adopt_d3d_access_lock_t;
 
 **Namespace:** concurrency::direct3d
 
-## See Also
+## See also
 
 [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)

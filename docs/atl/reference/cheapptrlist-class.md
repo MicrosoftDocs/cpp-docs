@@ -68,7 +68,7 @@ The block size.
 
 The block size is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources.
 
-## See Also
+## See also
 
 [CAtlList Class](../../atl/reference/catllist-class.md)<br/>
 [CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>

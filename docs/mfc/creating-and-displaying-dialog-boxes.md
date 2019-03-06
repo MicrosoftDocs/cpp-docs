@@ -17,7 +17,6 @@ Creating a dialog object is a two-phase operation. First, construct the dialog o
 
 You can, if you want, create your dialog box from an [in-memory dialog template](../mfc/using-a-dialog-template-in-memory.md) that you have constructed rather than from a dialog template resource. This is an advanced topic, however.
 
-## See Also
+## See also
 
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

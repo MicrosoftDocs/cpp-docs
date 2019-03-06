@@ -25,9 +25,9 @@ In a `/clr` compilation, **new** indicates that a virtual member will get a new 
 
 **new** causes the newslot modifier to be added to the IL for the function.  For more information about newslot, see:
 
-- [MethodInfo.GetBaseDefinition Method](https://msdn.microsoft.com/library/system.reflection.methodinfo.getbasedefinition.aspx)
+- <xref:System.Reflection.MethodInfo.GetBaseDefinition?displayProperty=nameWithType>
 
-- [MethodAttributes Enumeration](https://msdn.microsoft.com/library/system.reflection.methodattributes.aspx)
+- <xref:System.Reflection.MethodAttributes?displayProperty=nameWithType>
 
 ### Requirements
 

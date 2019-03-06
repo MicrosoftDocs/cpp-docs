@@ -41,7 +41,7 @@ When you use [/clr](clr-common-language-runtime-compilation.md) to compile, **/a
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
 
-## See Also
+## See also
 
 [/arch (Minimum CPU Architecture)](arch-minimum-cpu-architecture.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

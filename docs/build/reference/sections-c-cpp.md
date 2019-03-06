@@ -52,6 +52,6 @@ The `CLASS` keyword is supported for compatibility, but is ignored.
 
 An equivalent way to specify section attributes is with the [/SECTION](section-specify-section-attributes.md) option.
 
-## See Also
+## See also
 
 [Rules for Module-Definition Statements](rules-for-module-definition-statements.md)

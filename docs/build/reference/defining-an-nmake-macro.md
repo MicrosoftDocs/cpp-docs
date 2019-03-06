@@ -29,6 +29,6 @@ The `string` can be any sequence of zero or more characters. A null string conta
 
 [Precedence in macro definitions](precedence-in-macro-definitions.md)
 
-## See Also
+## See also
 
 [Macros and NMAKE](macros-and-nmake.md)

@@ -36,7 +36,7 @@ EDITBIN has the following options:
 |[/TSAWARE](tsaware.md)|Specifies that the app is designed to run in a multi-user environment.|
 |[/VERSION](version.md)|Sets the version number in the header.|
 
-## See Also
+## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 [EDITBIN Reference](editbin-reference.md)

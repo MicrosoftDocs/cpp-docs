@@ -18,6 +18,6 @@ EDITBIN is not available for use on files produced with the [/GL](gl-whole-progr
 
 - [EDITBIN options](editbin-options.md)
 
-## See Also
+## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)

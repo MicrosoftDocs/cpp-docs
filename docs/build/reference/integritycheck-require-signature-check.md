@@ -29,7 +29,7 @@ The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or execut
 
 1. In **Additional Options**, enter `/INTEGRITYCHECK` or `/INTEGRITYCHECK:NO`.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>

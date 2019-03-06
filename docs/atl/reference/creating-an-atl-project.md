@@ -24,7 +24,7 @@ The easiest way to create an ATL project is to use the ATL Project Wizard, locat
 
 Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ Projects](../../build/reference/file-types-created-for-visual-cpp-projects.md). For more information about the configurations for the new ATL project, and how to change them, see [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md).
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Property Pages](../../build/reference/property-pages-visual-cpp.md)

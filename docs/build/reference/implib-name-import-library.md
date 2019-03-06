@@ -40,7 +40,7 @@ LINK ignores /IMPLIB when an import library is not being created. If no exports 
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ImportLibrary%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

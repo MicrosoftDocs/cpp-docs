@@ -665,7 +665,7 @@ If the DACL is NULL and the SE_DACL_PRESENT control bit is not set in the input 
 
 This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).
 
-## See Also
+## See also
 
 [Security Sample](../../visual-cpp-samples.md)<br/>
 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>

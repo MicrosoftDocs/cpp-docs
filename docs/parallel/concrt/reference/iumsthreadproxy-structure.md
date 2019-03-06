@@ -103,7 +103,7 @@ virtual CriticalRegionType GetCriticalRegionType() const = 0;
 
 The type of critical region the thread proxy is within.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IUMSScheduler Structure](iumsscheduler-structure.md)

@@ -161,7 +161,7 @@ Note that the header file Afxdllx.h contains special definitions for structures 
 
 A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](/windows/desktop/Dlls/using-thread-local-storage-in-a-dynamic-link-library) in the Windows SDK. Note that the sample contains an entry-point function called `LibMain`, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.
 
-## See Also
+## See also
 
 [DLLs in Visual C++](dlls-in-visual-cpp.md)<br/>
 [DllMain entry point](/windows/desktop/Dlls/dllmain)<br/>

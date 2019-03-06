@@ -282,9 +282,8 @@ A pointer to the string containing the name of the file that caused the exceptio
 
 [!code-cpp[NVC_MFCFiles#29](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_6.cpp)]
 
-## See Also
+## See also
 
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Exception Processing](../../mfc/reference/exception-processing.md)
-

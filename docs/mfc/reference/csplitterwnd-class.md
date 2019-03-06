@@ -960,7 +960,7 @@ A pointer to a device context.
 
 ### Remarks
 
-## See Also
+## See also
 
 [MFC Sample VIEWEX](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

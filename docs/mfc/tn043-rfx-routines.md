@@ -148,7 +148,7 @@ When writing your own **RFX_** function, you will often be able to use `CFieldEx
 
 It is important to call `IsFieldType` at the start of your RFX function, and return immediately if it returns FALSE. This mechanism keeps parameter operations from being performed on *outputColumns*, and vice versa (like calling `BindParam` on an *outputColumn*). In addition, `IsFieldType` automatically keeps track of the count of *outputColumns* (*m_nFields*) and params (*m_nParams*).
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)

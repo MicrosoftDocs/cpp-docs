@@ -17,6 +17,6 @@ This option dumps the IMAGE_LOAD_CONFIG_DIRECTORY structure, an optional structu
 
 Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
 [DUMPBIN Options](dumpbin-options.md)

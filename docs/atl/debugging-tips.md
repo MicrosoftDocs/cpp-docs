@@ -14,7 +14,6 @@ The following topics outline some useful steps for debugging your service:
 
 - [Running the Program as a Local Server](../atl/running-the-program-as-a-local-server.md)
 
-## See Also
+## See also
 
 [Services](../atl/atl-services.md)
-

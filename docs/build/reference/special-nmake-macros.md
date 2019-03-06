@@ -16,6 +16,6 @@ NMAKE provides several special macros to represent various filenames and command
 
 - [Environment-Variable Macros](environment-variable-macros.md)
 
-## See Also
+## See also
 
 [Macros and NMAKE](macros-and-nmake.md)

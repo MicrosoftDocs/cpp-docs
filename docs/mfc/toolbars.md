@@ -20,7 +20,7 @@ The toolbar family of articles describes MFC toolbars and how to create and use 
 
 - [Sample](../mfc/toolbar-sample-list.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
 [Toolbar Editor](../windows/toolbar-editor.md)

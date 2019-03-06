@@ -33,7 +33,7 @@ The /MERGE option is useful for creating VxDs and overriding the compiler-genera
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergeSections%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

@@ -1,7 +1,7 @@
 ---
 title: "&lt;functional&gt; functions"
-ms.date: "11/04/2016"
-f1_keywords: ["functional/std::bind", "xfunctional/std::bind1st", "xfunctional/std::bind2nd", "xfunctional/std::bit_and", "xfunctional/std::bit_not", "xfunctional/std::bit_or", "xfunctional/std::bit_xor", "functional/std::cref", "type_traits/std::cref", "xfunctional/std::mem_fn", "xfunctional/std::mem_fun_ref", "xfunctional/std::not1", "xfunctional/std::not2", "xfunctional/std::ptr_fun", "functional/std::ref", "functional/std::swap"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::bind", "functional/std::bind1st", "functional/std::bind2nd", "functional/std::bit_and", "functional/std::bit_not", "functional/std::bit_or", "functional/std::bit_xor", "functional/std::cref", "type_traits/std::cref", "functional/std::mem_fn", "functional/std::mem_fun_ref", "functional/std::not1", "functional/std::not2", "functional/std::not_fn", "functional/std::ptr_fun", "functional/std::ref", "functional/std::swap"]
 helpviewer_keywords: ["std::bind [C++]", "std::bind1st", "std::bind2nd", "std::bit_and [C++]", "std::bit_not [C++]", "std::bit_or [C++]", "std::bit_xor [C++]", "std::cref [C++]"]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
 ---
@@ -9,28 +9,39 @@ ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
 
 ||||
 |-|-|-|
-|[bind](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|
-|[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|
-|[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|
-|[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[not1](#not1)|
-|[not2](#not2)|[ptr_fun](#ptr_fun)|[ref](#ref)|
-|[swap](#swap)|
+| [bind](#bind) | [bit_and](#bit_and) | [bit_not](#bit_not) |
+| [bit_or](#bit_or) | [bit_xor](#bit_xor) | [cref](#cref) |
+| [invoke](#invoke) | [mem_fn](#mem_fn) | [not_fn](#not_fn) |
+| [ref](#ref) | [swap](#swap) | |
 
-## <a name="bind"></a>  bind
+These functions are deprecated in C++11 and removed in C++17:
+
+||||
+|-|-|-|
+| [bind1st](#bind1st) | [bind2nd](#bind2nd) | [mem_fun](#mem_fun) |
+| [mem_fun_ref](#mem_fun_ref) | [ptr_fun](#ptr_fun) | |
+
+These functions are deprecated in C++17:
+
+|||
+|-|-|
+| [not1](#not1) | [not2](#not2) |
+
+## <a name="bind"></a> bind
 
 Binds arguments to a callable object.
 
 ```cpp
-template <class Fty, class T1, class T2, ..., class TN>
-unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
+template <class FT, class T1, class T2, ..., class TN>
+unspecified bind(FT fn, T1 t1, T2 t2, ..., TN tN);
 
-template <class Ret, class Fty, class T1, class T2, ..., class TN>
-unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
+template <class RTy, class FT, class T1, class T2, ..., class TN>
+unspecified bind(FT fn, T1 t1, T2 t2, ..., TN tN);
 ```
 
 ### Parameters
 
-*Fty*<br/>
+*Fey*<br/>
 The type of the object to call.
 
 *TN*<br/>
@@ -44,11 +55,11 @@ The Nth call argument.
 
 ### Remarks
 
-The types `Fty, T1, T2, ..., TN` must be copy constructible, and `INVOKE(fn, t1, ..., tN)` must be a valid expression for some values `w1, w2, ..., wN`.
+The types `FT, T1, T2, ..., TN` must be copy-constructible, and `INVOKE(fn, t1, ..., tN)` must be a valid expression for some values `w1, w2, ..., wN`.
 
-The first template function returns a forwarding call wrapper `g` with a weak result type. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN, `[result_of](../standard-library/result-of-class.md)`<Fty cv (V1, V2, ..., VN)>::type)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list.
+The first template function returns a forwarding call wrapper `g` with a weak result type. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN, `[invoke_result](../standard-library/invoke-result-class.md)`<FT cv (V1, V2, ..., VN)>::type)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list.
 
-The second template function returns a forwarding call wrapper `g` with a nested type `result_type` that is a synonym for `Ret`. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN, Ret)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list and with a specified return type.
+The second template function returns a forwarding call wrapper `g` with a nested type `result_type` that is a synonym for `RTy`. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN, RTy)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list and with a specified return type.
 
 The values of the bound arguments `v1, v2, ..., vN` and their corresponding types `V1, V2, ..., VN` depend on the type of the corresponding argument `ti` of type `Ti` in the call to `bind` and the cv-qualifiers `cv` of the call wrapper `g` as follows:
 
@@ -56,15 +67,15 @@ if `ti` is of type `reference_wrapper<T>` the argument `vi` is `ti.get()` and it
 
 if the value of `std::is_bind_expression<Ti>::value` is **true** the argument `vi` is `ti(u1, u2, ..., uM)` and its type `Vi` is `result_of<Ti` `cv` `(U1&, U2&, ..., UN&>::type`;
 
-if the value `j` of `std::is_placeholder<Ti>::value` is not zero the argument `vi` is `uj` and its type `Vi` is `Uj&`;
+if the value `j` of `std::is_placeholder<Ti>::value` isn't zero the argument `vi` is `uj` and its type `Vi` is `Uj&`;
 
 otherwise the argument `vi` is `ti` and its type `Vi` is `Ti` `cv` `&`.
 
 For example, given a function `f(int, int)` the expression `bind(f, _1, 0)` returns a forwarding call wrapper `cw` such that `cw(x)` calls `f(x, 0)`. The expression `bind(f, 0, _1)` returns a forwarding call wrapper `cw` such that `cw(x)` calls `f(0, x)`.
 
-The number of arguments in a call to `bind` in addition to the argument `fn` must be equal to the number of arguments that can be passed to the callable object `fn`. Thus, `bind(cos, 1.0)` is correct, and both `bind(cos)` and `bind(cos, _1, 0.0)` are incorrect.
+The number of arguments in a call to `bind` and the argument `fn` must be equal to the number of arguments that can be passed to the callable object `fn`. For example, `bind(cos, 1.0)` is correct, and both `bind(cos)` and `bind(cos, _1, 0.0)` are incorrect.
 
-The number of arguments in the function call to the call wrapper returned by `bind` must be at least as large as the highest numbered value of `is_placeholder<PH>::value` for all of the placeholder arguments in the call to `bind`. Thus, `bind(cos, _2)(0.0, 1.0)` is correct (and returns `cos(1.0)`), and `bind(cos, _2)(0.0)` is incorrect.
+The number of arguments in the function call to the call wrapper returned by `bind` must be at least as large as the highest numbered value of `is_placeholder<PH>::value` for all of the placeholder arguments in the call to `bind`. For example, `bind(cos, _2)(0.0, 1.0)` is correct (and returns `cos(1.0)`), and `bind(cos, _2)(0.0)` is incorrect.
 
 ### Example
 
@@ -117,9 +128,9 @@ int main()
 3^2 == 9
 ```
 
-## <a name="bind1st"></a>  bind1st
+## <a name="bind1st"></a> bind1st
 
-A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.
+A helper template function that creates an adaptor to convert a binary function object into a unary function object. It binds the first argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Operation, class Type>
@@ -140,9 +151,9 @@ The unary function object that results from binding the first argument of the bi
 
 ### Remarks
 
-Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.
+Function binders are a kind of function adaptor. Because they return function objects, they can be used in certain types of function composition to construct more complicated and powerful expressions.
 
-If *func* is an object of type `Operation` and `c` is a constant, then `bind1st` ( `func`, `c`) is equivalent to the [binder1st](../standard-library/binder1st-class.md) class constructor `binder1st`< `Operation`> ( `func`, `c`) and is more convenient.
+If *func* is an object of type `Operation` and `c` is a constant, then `bind1st( func, c )` is the same as the [binder1st](../standard-library/binder1st-class.md) class constructor `binder1st<Operation>( func, c )`, and is more convenient to use.
 
 ### Example
 
@@ -211,9 +222,9 @@ The number of elements in v1 greater than 5 is: 4.
 The number of elements in v1 less than 10 is: 2.
 ```
 
-## <a name="bind2nd"></a>  bind2nd
+## <a name="bind2nd"></a> bind2nd
 
-A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value.
+A helper template function that creates an adaptor to convert a binary function object into a unary function object. It binds the second argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Operation, class Type>
@@ -230,13 +241,13 @@ The value to which the second argument of the binary function object is to be bo
 
 ### Return Value
 
-The unary function object that results from binding the second argument of the binary function object to the value *right*.
+The unary function object result of binding the second argument of the binary function object to *right*.
 
 ### Remarks
 
-Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.
+Function binders are a kind of function adaptor. Because they return function objects, they can be used in certain types of function composition to construct more complicated and powerful expressions.
 
-If *func* is an object of type `Operation` and `c` is a constant, then `bind2nd` ( `func`, `c` ) is equivalent to the [binder2nd](../standard-library/binder2nd-class.md) class constructor **binder2nd\<Operation>** ( `func`, `c` ) and more convenient.
+If *func* is an object of type `Operation` and `c` is a constant, then `bind2nd( func, c )` is the same as the [binder2nd](../standard-library/binder2nd-class.md) class constructor `binder2nd<Operation>( func, c )`, and more convenient to use.
 
 ### Example
 
@@ -305,9 +316,9 @@ The number of elements in v1 greater than 15 is: 2.
 The number of elements in v1 less than 10 is: 2.
 ```
 
-## <a name="bit_and"></a>  bit_and
+## <a name="bit_and"></a> bit_and
 
-A predefined function object that performs the bitwise AND operation (binary `operator&`) on its arguments.
+A predefined function object that does a bitwise AND operation (binary `operator&`) on its arguments.
 
 ```cpp
 template <class Type = void>
@@ -346,9 +357,9 @@ The result of `Left & Right`. The specialized template does perfect forwarding o
 
 The `bit_and` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator&`.
 
-## <a name="bit_not"></a>  bit_not
+## <a name="bit_not"></a> bit_not
 
-A predefined function object that performs the bitwise complement (NOT) operation (unary `operator~`) on its argument.
+A predefined function object that does a bitwise complement (NOT) operation (unary `operator~`) on its argument. Added in C++14.
 
 ```cpp
 template <class Type = void>
@@ -362,7 +373,7 @@ template <>
 struct bit_not<void>
 {
     template <class Type>
-    auto operator()(Type&& Right) const  ->  decltype(~std::forward<Type>(Right));
+    auto operator()(Type&& Right) const -> decltype(~std::forward<Type>(Right));
 };
 ```
 
@@ -382,9 +393,9 @@ The result of `~ Right`. The specialized template does perfect forwarding of the
 
 The `bit_not` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator~`.
 
-## <a name="bit_or"></a>  bit_or
+## <a name="bit_or"></a> bit_or
 
-A predefined function object that performs the bitwise OR operation (`operator|`) on its arguments.
+A predefined function object that does a bitwise OR operation (`operator|`) on its arguments.
 
 ```cpp
 template <class Type = void>
@@ -400,7 +411,7 @@ struct bit_or<void>
 {
     template <class T, class U>
     auto operator()(T&& Left, U&& Right) const
-        ->  decltype(std::forward<T>(Left) | std::forward<U>(Right));
+        -> decltype(std::forward<T>(Left) | std::forward<U>(Right));
 };
 ```
 
@@ -423,9 +434,9 @@ The result of `Left | Right`. The specialized template does perfect forwarding o
 
 The `bit_or` functor is restricted to integral types for the basic data types, or to user-defined types that implement `operator|`.
 
-## <a name="bit_xor"></a>  bit_xor
+## <a name="bit_xor"></a> bit_xor
 
-A predefined function object that performs the bitwise XOR operation (binary `operator^`) on its arguments.
+A predefined function object that does a bitwise XOR operation (binary `operator^`) on its arguments.
 
 ```cpp
 template <class Type = void>
@@ -464,7 +475,7 @@ The result of `Left ^ Right`. The specialized template does perfect forwarding o
 
 The `bit_xor` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator^`.
 
-## <a name="cref"></a>  cref
+## <a name="cref"></a> cref
 
 Constructs a const `reference_wrapper` from an argument.
 
@@ -520,18 +531,139 @@ cref(i) = 1
 cref(neg)(i) = -1
 ```
 
-## <a name="mem_fn"></a>  mem_fn
+## <a name="invoke"></a> invoke
 
-Generates a simple call wrapper.
+Invokes any callable object with the given arguments. Added in C++17.
 
 ```cpp
-template <class Ret, class Ty>
-unspecified mem_fn(Ret Ty::*pm);
+template <class Callable, class... Args>
+invoke_result_t<Callable, Args...>
+    invoke(Callable&& fn, Args&&... args) noexcept(/* specification */);
 ```
 
 ### Parameters
 
-*Ret*<br/>
+*Callable*<br/>
+The type of the object to call.
+
+*Args*<br/>
+The types of the call arguments.
+
+*fn*<br/>
+The object to call.
+
+*args*<br/>
+The call arguments.
+
+*specification*<br/>
+The **noexcept** specification `std::is_nothrow_invocable_v<Callable, Args>)`.
+
+### Remarks
+
+Invokes the callable object *fn* using the parameters *args*. Effectively, `INVOKE(std::forward<Callable>(fn), std::forward<Args>(args)...)`, where the pseudo-function `INVOKE(f, t1, t2, ..., tN)` means one of the following things:
+
+- `(t1.*f)(t2, ..., tN)` when `f` is a pointer to member function of class `T` and `t1` is an object of type `T` or a reference to an object of type `T` or a reference to an object of a type derived from `T`. That is, when `std::is_base_of<T, std::decay_t<decltype(t1)>>::value` is true.
+
+- `(t1.get().*f)(t2, ..., tN)` when `f` is a pointer to member function of class `T` and `std::decay_t<decltype(t1)>` is a specialization of `std::reference_wrapper`.
+
+- `((*t1).*f)(t2, ..., tN)` when `f` is a pointer to member function of class `T` and `t1` isn't one of the previous types.
+
+- `t1.*f` when N == 1 and `f` is a pointer to member data of a class `T` and `t1` is an object of type `T` or a reference to an object of type `T` or a reference to an object of a type derived from `T`.  That is, when `std::is_base_of<T, std::decay_t<decltype(t1)>>::value` is true.
+
+- `t1.get().*f` when N == 1 and `f` is a pointer to member data of a class `T` and `std::decay_t<decltype(t1)>` is a specialization of `std::reference_wrapper`.
+
+- `(*t1).*f` when N == 1 and `f` is a pointer to member data of a class `T` and `t1` isn't one of the previous types.
+
+- `f(t1, t2, ..., tN)` in all other cases.
+
+For information on the result type of a callable object, see [invoke_result](invoke-result-class.md). For predicates on callable types, see [is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r classes](is-invocable-classes.md).
+
+### Example
+
+```cpp
+// functional_invoke.cpp
+// compile using: cl /EHsc /std:c++17 functional_invoke.cpp
+#include <functional>
+#include <iostream>
+
+struct Demo
+{
+    int n_;
+
+    Demo(int const n) : n_{n} {}
+
+    void operator()( int const i, int const j ) const
+    {
+        std::cout << "Demo operator( " << i << ", "
+            << j << " ) is " << i * j << "\n";
+    }
+
+    void difference( int const i ) const
+    {
+        std::cout << "Demo.difference( " << i << " ) is "
+            << n_ - i << "\n";
+    }
+};
+
+void divisible_by_3(int const i)
+{
+    std::cout << i << ( i % 3 == 0 ? " is" : " isn't" )
+        << " divisible by 3.\n";
+}
+
+int main()
+{
+    Demo d{ 42 };
+    Demo * pd{ &d };
+    auto pmf = &Demo::difference;
+    auto pmd = &Demo::n_;
+
+    // Invoke a function object, like calling d( 3, -7 )
+    std::invoke( d, 3, -7 );
+
+    // Invoke a member function, like calling
+    // d.difference( 29 ) or (d.*pmf)( 29 )
+    std::invoke( &Demo::difference, d, 29 );
+    std::invoke( pmf, pd, 13 );
+
+    // Invoke a data member, like access to d.n_ or d.*pmd
+    std::cout << "d.n_: " << std::invoke( &Demo::n_, d ) << "\n";
+    std::cout << "pd->n_: " << std::invoke( pmd, pd ) << "\n";
+
+    // Invoke a stand-alone (free) function
+    std::invoke( divisible_by_3, 42 );
+
+    // Invoke a lambda
+    auto divisible_by_7 = []( int const i ) {
+        std::cout << i << ( i % 7 == 0 ? " is" : " isn't" )
+            << " divisible by 7.\n";
+        };
+    std::invoke( divisible_by_7, 42 );
+}
+```
+
+```Output
+Demo operator( 3, -7 ) is -21
+Demo.difference( 29 ) is 13
+Demo.difference( 13 ) is 29
+d.n_: 42
+pd->n_: 42
+42 is divisible by 3.
+42 is divisible by 7.
+```
+
+## <a name="mem_fn"></a> mem_fn
+
+Generates a simple call wrapper.
+
+```cpp
+template <class RTy, class Ty>
+unspecified mem_fn(RTy Ty::*pm);
+```
+
+### Parameters
+
+*RTy*<br/>
 The return type of the wrapped function.
 
 *Ty*<br/>
@@ -539,11 +671,11 @@ The type of the member function pointer.
 
 ### Remarks
 
-The template function returns a simple call wrapper `cw`, with a weak result type, such that the expression `cw(t, a2, ..., aN)` is equivalent to `INVOKE(pm, t, a2, ..., aN)`. It does not throw any exceptions.
+The template function returns a simple call wrapper `cw`, with a weak result type, such that the expression `cw(t, a2, ..., aN)` is the same as `INVOKE(pm, t, a2, ..., aN)`. It doesn't throw any exceptions.
 
-The returned call wrapper is derived from `std::unary_function<cv Ty*, Ret>` (hence defining the nested type `result_type` as a synonym for *Ret* and the nested type `argument_type` as a synonym for `cv Ty*`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes no arguments.
+The returned call wrapper is derived from `std::unary_function<cv Ty*, RTy>` (and defining the nested type `result_type` as a synonym for *RTy* and the nested type `argument_type` as a synonym for `cv Ty*`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes no arguments.
 
-The returned call wrapper is derived from `std::binary_function<cv Ty*, T2, Ret>` (hence defining the nested type `result_type` as a synonym for *Ret*, the nested type `first argument_type` as a synonym for `cv Ty*`, and the nested type `second argument_type` as a synonym for `T2`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes one argument, of type `T2`.
+The returned call wrapper is derived from `std::binary_function<cv Ty*, T2, RTy>` (and defining the nested type `result_type` as a synonym for *RTy*, the nested type `first argument_type` as a synonym for `cv Ty*`, and the nested type `second argument_type` as a synonym for `T2`) only if the type *Ty* is a pointer to member function with cv-qualifier `cv` that takes one argument, of type `T2`.
 
 ### Example
 
@@ -583,27 +715,27 @@ int main()
 3*2 == 6
 ```
 
-## <a name="mem_fun"></a>  mem_fun
+## <a name="mem_fun"></a> mem_fun
 
-Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments.
+Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments. Deprecated in C++11 for [mem_fn](#mem_fn) and [bind](#bind), and removed in C++17.
 
 ```cpp
 template <class Result, class Type>
-mem_fun_t<Result, Type> mem_fun (Result(Type::* pmem)());
+mem_fun_t<Result, Type> mem_fun (Result(Type::* pMem)());
 
 template <class Result, class Type, class Arg>
-mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pmem)(Arg));
+mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pMem)(Arg));
 
 template <class Result, class Type>
-const_mem_fun_t<Result, Type> mem_fun(Result (Type::* pmem)() const);
+const_mem_fun_t<Result, Type> mem_fun(Result (Type::* pMem)() const);
 
 template <class Result, class Type, class Arg>
-const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pmem)(Arg) const);
+const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pMem)(Arg) const);
 ```
 
 ### Parameters
 
-*pmem*<br/>
+*pMem*<br/>
 A pointer to the member function of class `Type` to be converted to a function object.
 
 ### Return Value
@@ -670,27 +802,27 @@ int main( )
 }
 ```
 
-## <a name="mem_fun_ref"></a>  mem_fun_ref
+## <a name="mem_fun_ref"></a> mem_fun_ref
 
-Helper template functions used to construct function object adaptors for member functions when initialized by using reference arguments.
+Helper template functions used to construct function object adaptors for member functions when initialized by using reference arguments. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Result, class Type>
-mem_fun_ref_t<Result, Type> mem_fun_ref(Result (Type::* pmem)());
+mem_fun_ref_t<Result, Type> mem_fun_ref(Result (Type::* pMem)());
 
 template <class Result, class Type, class Arg>
-mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (Type::* pmem)(Arg));
+mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (Type::* pMem)(Arg));
 
 template <class Result, class Type>
-const_mem_fun_ref_t<Result, Type> mem_fun_ref(Result Type::* pmem)() const);
+const_mem_fun_ref_t<Result, Type> mem_fun_ref(Result Type::* pMem)() const);
 
 template <class Result, class Type, class Arg>
-const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* pmem)(Arg) const);
+const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* pMem)(Arg) const);
 ```
 
 ### Parameters
 
-*pmem*<br/>
+*pMem*<br/>
 A pointer to the member function of class `Type` to be converted to a function object.
 
 ### Return Value
@@ -775,18 +907,18 @@ The original values stored in v2 are: 1 2 3 4 5 6 7 8 9 10 11 12 13
 With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13
 ```
 
-## <a name="not1"></a>  not1
+## <a name="not1"></a> not1
 
-Returns the complement of a unary predicate.
+Returns the complement of a unary predicate. Deprecated for [not_fn](#not_fn) in C++17.
 
 ```cpp
 template <class UnaryPredicate>
-unary_negate<UnaryPredicate> not1(const UnaryPredicate& pred);
+unary_negate<UnaryPredicate> not1(const UnaryPredicate& predicate);
 ```
 
 ### Parameters
 
-*pred*<br/>
+*predicate*<br/>
 The unary predicate to be negated.
 
 ### Return Value
@@ -795,7 +927,7 @@ A unary predicate that is the negation of the unary predicate modified.
 
 ### Remarks
 
-If a `unary_negate` is constructed from a unary predicate **Pred**( *x*), then it returns **!Pred**( *x*).
+If a `unary_negate` is constructed from a unary predicate `predicate( x )`, then it returns `!predicate( x )`.
 
 ### Example
 
@@ -847,9 +979,9 @@ The number of elements in v1 greater than 10 is: 5.
 The number of elements in v1 not greater than 10 is: 3.
 ```
 
-## <a name="not2"></a>  not2
+## <a name="not2"></a> not2
 
-Returns the complement of a binary predicate.
+Returns the complement of a binary predicate. Deprecated for [not_fn](#not_fn) in C++17.
 
 ```cpp
 template <class BinaryPredicate>
@@ -867,7 +999,7 @@ A binary predicate that is the negation of the binary predicate modified.
 
 ### Remarks
 
-If a `binary_negate` is constructed from a binary predicate **BinPred**( *x*, *y*), then it returns ! **BinPred**( *x*, *y*).
+If a `binary_negate` is constructed from a binary predicate `binary_predicate( x, y )`, then it returns `!binary_predicate( x, y )`.
 
 ### Example
 
@@ -923,9 +1055,109 @@ Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )
 Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
 ```
 
-## <a name="ptr_fun"></a>  ptr_fun
+## <a name="not_fn"></a> not_fn
 
-Helper template functions used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions.
+The `not_fn` function template takes a callable object and returns a callable object. When the returned callable object is later invoked with some arguments, it passes them to the original callable object, and logically negates the result. It preserves the const qualification and value category behavior of the wrapped callable object. `not_fn` is new in C++17, and replaces the deprecated `std::not1`, `std::not2`, `std::unary_negate`, and `std::binary_negate`.
+
+```cpp
+template <class Callable>
+/* unspecified */ not_fn(Callable&& func);
+```
+
+### Parameters
+
+*func*<br/>
+A callable object used to construct the forwarding call wrapper.
+
+### Remarks
+
+The template function returns a call wrapper like `return call_wrapper(std::forward<Callable>(func))`, based on this exposition-only class:
+
+```cpp
+class call_wrapper
+{
+   using FD = decay_t<Callable>;
+   explicit call_wrapper(Callable&& func);
+
+public:
+   call_wrapper(call_wrapper&&) = default;
+   call_wrapper(call_wrapper const&) = default;
+
+   template<class... Args>
+     auto operator()(Args&&...) & -> decltype(!declval<invoke_result_t<FD&(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) const& -> decltype(!declval<invoke_result_t<FD const&(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) && -> decltype(!declval<invoke_result_t<FD(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) const&& -> decltype(!declval<invoke_result_t<FD const(Args...)>>());
+
+private:
+  FD fd;
+};
+```
+
+The explicit constructor on the callable object *func* requires type `std::decay_t<Callable>` to satisfy the requirements of `MoveConstructible`, and `is_constructible_v<FD, Callable>` must be true. It initializes the wrapped callable object `fd` from `std::forward<Callable>(func)`, and throws any exception thrown by construction of `fd`.
+
+The wrapper exposes call operators distinguished by lvalue or rvalue reference category and const qualification as shown here:
+
+```cpp
+template<class... Args> auto operator()(Args&&... args) & -> decltype(!declval<invoke_result_t<FD&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const& -> decltype(!declval<invoke_result_t<FD const&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) && -> decltype(!declval<invoke_result_t<FD(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const&& -> decltype(!declval<invoke_result_t<FD const(Args...)>>());
+```
+
+The first two are the same as `return !std::invoke(fd, std::forward<Args>(args)...)`. The second two are the same as `return !std::invoke(std::move(fd), std::forward<Args>(args)...)`.
+
+### Example
+
+```cpp
+// functional_not_fn_.cpp
+// compile with: /EHsc /std:c++17
+#include <vector>
+#include <algorithm>
+#include <functional>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v1 = { 99, 6264, 41, 18467, 6334, 26500, 19169 };
+    auto divisible_by_3 = [](int i){ return i % 3 == 0; };
+
+    std::cout << "Vector v1 = ( " ;
+    for (const auto& item : v1)
+    {
+        std::cout << item << " ";
+    }
+    std::cout << ")" << std::endl;
+
+    // Count the number of vector elements divisible by 3.
+    int divisible =
+        std::count_if(v1.begin(), v1.end(), divisible_by_3);
+    std::cout << "Elements divisible by three: "
+        << divisible << std::endl;
+
+    // Count the number of vector elements not divisible by 3.
+    int not_divisible =
+        std::count_if(v1.begin(), v1.end(), std::not_fn(divisible_by_3));
+    std::cout << "Elements not divisible by three: "
+        << not_divisible << std::endl;
+}
+```
+
+```Output
+Vector v1 = ( 99 6264 41 18467 6334 26500 19169 )
+Elements divisible by three: 2
+Elements not divisible by three: 5
+```
+
+## <a name="ptr_fun"></a> ptr_fun
+
+Helper template functions used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions. Deprecated in C++11, removed in C++17.
 
 ```cpp
 template <class Arg, class Result>
@@ -948,13 +1180,13 @@ The second template function returns binary function [pointer_to_binary_function
 
 ### Remarks
 
-A function pointer is a function object and may be passed to any C++ Standard Library algorithm that is expecting a function as a parameter, but it is not adaptable. To use it with an adaptor, such as binding a value to it or using it with a negator, it must be supplied with the nested types that make such an adaptation possible. The conversion of unary and binary function pointers by the `ptr_fun` helper function allows the function adaptors to work with unary and binary function pointers.
+A function pointer is a function object. It may be passed to any algorithm that expects a function as a parameter, but it isn't adaptable. Information about its nested types is required to use it with an adaptor, for example, to bind a value to it or to negate it. The conversion of unary and binary function pointers by the `ptr_fun` helper function allows the function adaptors to work with unary and binary function pointers.
 
 ### Example
 
 [!code-cpp[functional_ptr_fun#1](../standard-library/codesnippet/CPP/functional-functions_1.cpp)]
 
-## <a name="ref"></a>  ref
+## <a name="ref"></a> ref
 
 Constructs a `reference_wrapper` from an argument.
 
@@ -1046,18 +1278,18 @@ tiger lion cougar
 tiger cougar
 ```
 
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 Swaps two `function` objects.
 
 ```cpp
-template <class Fty>
-void swap(function<Fty>& f1, function<Fty>& f2);
+template <class FT>
+void swap(function<FT>& f1, function<FT>& f2);
 ```
 
 ### Parameters
 
-*Fty*<br/>
+*FT*<br/>
 The type controlled by the function objects.
 
 *f1*<br/>

@@ -57,8 +57,7 @@ The following code is from Simple.cpp:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#4](../atl/codesnippet/cpp/using-idispeventsimpleimpl_3.cpp)]
 
-## See Also
+## See also
 
 [Event Handling](../atl/event-handling-and-atl.md)<br/>
 [ATLEventHandling Sample](../visual-cpp-samples.md)
-

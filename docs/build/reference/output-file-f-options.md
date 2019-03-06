@@ -31,7 +31,7 @@ The output-file options create or rename output files. They affect all C or C++ 
 
 - [/Fx (Merge Injected Code)](fx-merge-injected-code.md)
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

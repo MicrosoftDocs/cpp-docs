@@ -83,7 +83,7 @@ Undecoration of :- "?func1@a@@AAEXH@Z"
 is :- "private: void __thiscall a::func1(int)"
 ```
 
-## See Also
+## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 [Using extern to Specify Linkage](../../cpp/using-extern-to-specify-linkage.md)

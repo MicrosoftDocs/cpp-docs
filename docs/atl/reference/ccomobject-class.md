@@ -164,7 +164,7 @@ STDMETHOD_(ULONG, Release)();
 
 This function returns the new decremented reference count on the object. In debug builds, the return value may be useful for diagnostics or testing. In non-debug builds, `Release` always returns 0.
 
-## See Also
+## See also
 
 [CComAggObject Class](../../atl/reference/ccomaggobject-class.md)<br/>
 [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>

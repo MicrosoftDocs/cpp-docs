@@ -12,7 +12,6 @@ When you use **new** and **delete** instead of **malloc** and **free**, you are 
 
 Note that the total size of objects allocated on the heap is limited only by your system's available virtual memory.
 
-## See Also
+## See also
 
 [Memory Management](../mfc/memory-management.md)
-

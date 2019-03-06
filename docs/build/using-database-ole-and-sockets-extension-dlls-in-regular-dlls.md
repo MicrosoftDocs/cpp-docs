@@ -139,6 +139,6 @@ BOOL CYourRegularDLL::InitInstance()
 
 - [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)
 
-## See Also
+## See also
 
 [MFC extension DLLs](extension-dlls.md)

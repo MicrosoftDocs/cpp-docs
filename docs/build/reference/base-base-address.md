@@ -54,7 +54,7 @@ Another way to set the base address is by using the *BASE* argument in a [NAME](
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.BaseAddress%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

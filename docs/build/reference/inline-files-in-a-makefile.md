@@ -18,6 +18,6 @@ An inline file contains text you specify in the makefile. Its name can be used i
 
 [Multiple inline files](multiple-inline-files.md)
 
-## See Also
+## See also
 
 [Commands in a Makefile](commands-in-a-makefile.md)

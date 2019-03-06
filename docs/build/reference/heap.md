@@ -23,6 +23,6 @@ The optional `commit` argument is subject to interpretation by the operating sys
 
 Specify the `reserve` and `commit` values in decimal or C-language hexadecimal or octal notation. For example, a value of 1 MB can be specified as 1048576 in decimal, or as 0x100000 in hexadecimal, or as 04000000 in octal.
 
-## See Also
+## See also
 
 [EDITBIN Options](editbin-options.md)

@@ -10,7 +10,6 @@ Dialog boxes are windows, so they can handle Windows messages if you supply the 
 
 See [Mapping Windows Messages to Your Dialog Class](../mfc/mapping-windows-messages-to-your-class.md) for more information.
 
-## See Also
+## See also
 
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

@@ -28,6 +28,6 @@ Use the following to determine whether you need to use a .netmodule or a .obj fi
 
 - If your modules will be used to build a managed library, and if one or more modules input to the linker will be produced with just /clr, use .obj files as module input to the linker and generate a .dll (assembly).  If you want to expose managed types from the library and if you also want C++ applications to consume the native types in the library, your library will consist of the .obj files for the libraries component modules (you will also want to ship the .h files for each module, so they can be referenced with #include from source code).
 
-## See Also
+## See also
 
 [.netmodule Files as Linker Input](netmodule-files-as-linker-input.md)

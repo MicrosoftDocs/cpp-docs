@@ -31,7 +31,7 @@ You can use the [Print Progress Messages (/VERBOSE)](verbose-print-progress-mess
 
 LINK issues error and warning messages in the form LNK*nnnn*. This error prefix and range of numbers are also used by LIB, DUMPBIN, and EDITBIN.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

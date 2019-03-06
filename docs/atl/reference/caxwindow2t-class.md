@@ -206,7 +206,7 @@ CAxWindow2T<TBase>& operator= (HWND hWnd);
 *hWnd*<br/>
 A handle of an existing window.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Control Containment FAQ](../../atl/atl-control-containment-faq.md)

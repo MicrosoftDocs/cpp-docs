@@ -10,6 +10,6 @@ The default linker behavior is to create a bindable import address table for the
 
 If you never intend to bind the DLL's delay-loaded imports, specifying [/delay](delay-delay-load-import-settings.md):nobind on the linker's command line will prevent the bound import address table from being generated and consuming space in the image file.
 
-## See Also
+## See also
 
 [Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

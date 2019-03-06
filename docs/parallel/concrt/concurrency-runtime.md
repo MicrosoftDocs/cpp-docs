@@ -95,7 +95,6 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 |[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/p/?linkid=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|
 |[Parallel Programming](/dotnet/standard/parallel-programming/index)|Teaches you about the parallel programming model that is available in the .NET Framework.|
 
-## See Also
+## See also
 
 [Reference](../../parallel/concrt/reference/reference-concurrency-runtime.md)
-

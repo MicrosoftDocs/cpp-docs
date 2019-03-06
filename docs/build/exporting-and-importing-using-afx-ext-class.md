@@ -113,6 +113,6 @@ Because MFC always uses the `AFX_DATA` symbol on data items it defines within it
 
 - [Mutual imports](mutual-imports.md)
 
-## See Also
+## See also
 
 [Exporting from a DLL](exporting-from-a-dll.md)

@@ -27,7 +27,7 @@ The following command line sends a mapfile to the printer:
 CL /FmPRN HELLO.CPP
 ```
 
-## See Also
+## See also
 
 [Output-File (/F) Options](output-file-f-options.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

@@ -95,8 +95,7 @@ The table below briefly describes each of the Windows common controls, including
 
 For information about Windows common controls in the Windows SDK, see [Common Controls](/windows/desktop/Controls/common-controls-intro).
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)
-

@@ -41,7 +41,6 @@ When you handle the `TTN_NEEDTEXT` notification message, specify the string to b
 
 - Copy the identifier of a string resource to the *lpszText* member, and copy the handle of the instance that contains the resource to the *hinst* member.
 
-## See Also
+## See also
 
 [Tool Tips in Windows Not Derived from CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
-

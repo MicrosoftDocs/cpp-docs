@@ -109,6 +109,6 @@ Destroys a multipage DHTML dialog object.
 virtual ~CMultiPageDHtmlDialog();
 ```
 
-## See Also
+## See also
 
 [CDHtmlDialog Class](../../mfc/reference/cdhtmldialog-class.md)

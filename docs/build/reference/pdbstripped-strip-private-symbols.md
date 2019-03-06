@@ -52,7 +52,7 @@ If you do not create a PDB file, /PDBSTRIPPED is ignored.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StripPrivateSymbols%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

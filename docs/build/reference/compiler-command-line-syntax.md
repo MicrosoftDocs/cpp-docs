@@ -29,6 +29,6 @@ For information about the return value of cl.exe, see [Return Value of cl.exe](r
 > [!NOTE]
 >  The command-line input limit of 1024 characters is not guaranteed to remain the same in future releases of Windows.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](reference/compiler-options.md)

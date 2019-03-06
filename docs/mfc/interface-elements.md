@@ -58,7 +58,6 @@ The [CMFCBaseTabCtrl Class](../mfc/reference/cmfcbasetabctrl-class.md) implement
 
 The Outlook bar control is also based on tabbed bars. The [CMFCOutlookBar Class](../mfc/reference/cmfcoutlookbar-class.md) is derived from `CBaseTabbedPane`. For more information about how to use Outlook bar, see [CMFCOutlookBar Class](../mfc/reference/cmfcoutlookbar-class.md).
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)
-

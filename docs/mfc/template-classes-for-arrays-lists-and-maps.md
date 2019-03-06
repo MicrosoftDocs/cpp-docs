@@ -29,7 +29,6 @@ Template class for type-safe lists of pointers.
 [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md)<br/>
 Template class for type-safe maps with pointers.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

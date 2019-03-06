@@ -40,7 +40,7 @@ If you are unsure whether you should use the `declspec(novtable)` modifier, you 
 
 in stdafx.h, before all other ATL header files are included.
 
-## See Also
+## See also
 
 [ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)<br/>
@@ -48,4 +48,3 @@ in stdafx.h, before all other ATL header files are included.
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [novtable](../../cpp/novtable.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
-

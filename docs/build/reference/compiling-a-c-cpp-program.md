@@ -37,6 +37,6 @@ Compiler options are processed "left to right," and when a conflict is detected,
 
 For information on choosing the compiler host and target architecture, see [Configure C++ projects for 64-bit, x64 targets](../configuring-programs-for-64-bit-visual-cpp.md).
 
-## See Also
+## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)

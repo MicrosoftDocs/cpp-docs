@@ -296,7 +296,7 @@ int main( void )
 }
 ```
 
-## See Also
+## See also
 
 [C/C++ Building Reference](reference/c-cpp-building-reference.md)<br/>
 [MSVC Compiler Options](reference/compiler-options.md)

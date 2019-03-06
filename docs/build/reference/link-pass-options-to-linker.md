@@ -38,7 +38,7 @@ The **/link** option and its linker options must appear after any file names and
 
 - This compiler option cannot be changed programmatically.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

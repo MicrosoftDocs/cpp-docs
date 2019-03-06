@@ -33,7 +33,7 @@ The /RELEASE option is set by default when the [/SUBSYSTEM:NATIVE](subsystem-spe
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SetChecksum%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

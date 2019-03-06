@@ -12,6 +12,6 @@ Enclose long filenames in double quotation marks, as follows:
 all : "VeryLongFileName.exe"
 ```
 
-## See Also
+## See also
 
 [Contents of a Makefile](contents-of-a-makefile.md)

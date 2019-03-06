@@ -77,10 +77,6 @@ For related information, see [/Oi (Generate Intrinsic Functions)](oi-generate-in
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
-
-[/O Options (Optimize Code)](o-options-optimize-code.md)
-
-[MSVC Compiler Options](compiler-options.md)
+## See also
 
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

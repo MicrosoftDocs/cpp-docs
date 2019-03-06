@@ -192,6 +192,6 @@ operator ID2D1Layer* ();
 
 Pointer to an ID2D1Layer interface or NULL if object is not initialized yet.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

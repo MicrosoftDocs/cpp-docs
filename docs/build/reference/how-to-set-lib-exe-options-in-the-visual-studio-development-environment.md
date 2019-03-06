@@ -16,6 +16,6 @@ ms.assetid: b00da2bb-19e2-4078-a912-0d2e9294d7a7
 
 1. Modify properties as needed.
 
-## See Also
+## See also
 
 [LIB Reference](lib-reference.md)

@@ -28,6 +28,6 @@ BSCMAKE main.sbr file1.sbr file2.sbr
 
 For related information, see [BSCMAKE Command File](bscmake-command-file-response-file.md) and [BSCMAKE Options](bscmake-options.md).
 
-## See Also
+## See also
 
 [BSCMAKE Reference](bscmake-reference.md)

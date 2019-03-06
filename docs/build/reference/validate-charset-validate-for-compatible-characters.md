@@ -33,7 +33,7 @@ Visual Studio uses UTF-8 as the internal character encoding during conversion be
 
 1. Choose **OK** to save your changes.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>

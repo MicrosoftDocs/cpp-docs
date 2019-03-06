@@ -12,6 +12,6 @@ BSCMAKE can build a new browse information file from newly created .sbr files. I
 
 - [How BSCMAKE builds a .bsc file](how-bscmake-builds-a-dot-bsc-file.md)
 
-## See Also
+## See also
 
 [BSCMAKE Reference](bscmake-reference.md)

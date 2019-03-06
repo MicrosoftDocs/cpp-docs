@@ -26,7 +26,7 @@ Resembles the [/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-as
 
 1. In the **Windows Metadata Key Container** box, enter the location.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

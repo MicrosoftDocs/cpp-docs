@@ -24,6 +24,6 @@ leap.exe : jump.obj
    echo Building...
 ```
 
-## See Also
+## See also
 
 [Targets](targets.md)

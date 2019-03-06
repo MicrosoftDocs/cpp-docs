@@ -43,7 +43,7 @@ To create an executable file, you must invoke LINK:
 LINK firsti.obj second.obj third.obj /OUT:filename.exe
 ```
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

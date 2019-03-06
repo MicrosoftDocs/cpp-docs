@@ -50,6 +50,6 @@ Using `__declspec(dllexport)` is convenient because you do not have to worry abo
 
 - [Decorated names](reference/decorated-names.md)
 
-## See Also
+## See also
 
 [Exporting from a DLL](exporting-from-a-dll.md)

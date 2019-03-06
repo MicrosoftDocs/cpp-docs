@@ -54,7 +54,7 @@ It will be necessary for you to use single-threading, for example, if your CLR p
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.CLRThreadAttribute%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

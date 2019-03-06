@@ -730,7 +730,7 @@ You can recreate a BSTR from the contents of the stream using the [ReadFromStrea
 
 [!code-cpp[NVC_ATL_Utilities#45](../../atl/codesnippet/cpp/ccombstr-class_18.cpp)]
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [ATL and MFC String Conversion Macros](string-conversion-macros.md)

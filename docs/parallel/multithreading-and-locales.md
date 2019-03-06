@@ -425,7 +425,7 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## See Also
+## See also
 
 [Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)<br/>
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>

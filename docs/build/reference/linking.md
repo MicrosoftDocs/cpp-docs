@@ -75,7 +75,7 @@ The LINK tool uses the following environment variables:
 
 - TMP, to specify a directory when linking OMF or .res files.
 
-## See Also
+## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)
 [MSVC Linker Options](linker-options.md)

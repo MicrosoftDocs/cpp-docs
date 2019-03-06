@@ -41,7 +41,7 @@ If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](headers.md) will 
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TerminalServerAware%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>

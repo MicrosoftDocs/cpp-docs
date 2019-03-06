@@ -22,7 +22,7 @@ There are constraints regarding the delay loading of imports.
 
 - Custom calling conventions (such as using condition codes on x86 architectures) are not supported. Also, the floating-point registers are not saved on any platform. If your custom helper routine or hook routines use floating-point types, they need to completely save and restore the floating-point state on machines with register calling conventions with floating-point parameters. Be careful about delay loading the CRT DLL if you call CRT functions that take floating-point parameters on a numeric data processor (NDP) stack in the help function.
 
-## See Also
+## See also
 
 [Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)<br/>
 [LoadLibrary function](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)<br/>

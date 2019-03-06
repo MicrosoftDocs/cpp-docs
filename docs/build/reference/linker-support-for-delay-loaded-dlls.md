@@ -10,7 +10,7 @@ The MSVC linker now supports the delayed loading of DLLs. This relieves you of t
 
 Before Visual C++ 6.0, the only way to load a DLL at run time was by using **LoadLibrary** and **GetProcAddress**; the operating system would load the DLL when the executable or DLL using it was loaded.
 
-Beginning with Visual C++ 6.0, when statically linking with a DLL, the linker provides options to delay load the DLL until the program calls a function in that DLL.
+Beginning with Visual C++ 6.0, when implicitly linking with a DLL, the linker provides options to delay load the DLL until the program calls a function in that DLL.
 
 An application can delay load a DLL using the [/DELAYLOAD (Delay Load Import)](delayload-delay-load-import.md) linker option with a helper function (default implementation provided by Visual C++). The helper function will load the DLL at run time by calling **LoadLibrary** and **GetProcAddress** for you.
 
@@ -42,7 +42,7 @@ The following topics describe delay loading DLLs:
 
 - [Developing Your Own Helper Function](developing-your-own-helper-function.md)
 
-## See Also
+## See also
 
 [DLLs in Visual C++](../dlls-in-visual-cpp.md)<br/>
 [MSVC linker reference](linking.md)

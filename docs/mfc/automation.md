@@ -64,6 +64,6 @@ The **VARIANT** type is encapsulated in the [COleVariant](../mfc/reference/colev
 
 - [Write automation clients in C++](../mfc/automation-clients.md)
 
-## See Also
+## See also
 
 [MFC COM](../mfc/mfc-com.md)

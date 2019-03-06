@@ -43,7 +43,7 @@ The following table lists the options for lib.exe, with a link to more informati
 |**/VERBOSE**|   Displays details about the progress of the session, including names of the .obj files being added.<br/><br/>For more information see [Running LIB](running-lib.md).|
 |**/WX**|   Treat warnings as errors.<br/><br/>For more information see [Running LIB](running-lib.md).|
 
-## See Also
+## See also
 
 [LIB Reference](lib-reference.md)<br/>
 [LIB Input Files](lib-input-files.md)<br/>

@@ -26,6 +26,6 @@ To specify part of a predefined filename macro, append a macro modifier and encl
 |**F**|Base name plus extension|
 |**R**|Drive plus directory plus base name|
 
-## See Also
+## See also
 
 [Special NMAKE Macros](special-nmake-macros.md)

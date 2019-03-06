@@ -19,6 +19,6 @@ CMDS = cls^
 dir
 ```
 
-## See Also
+## See also
 
 [Defining an NMAKE Macro](defining-an-nmake-macro.md)

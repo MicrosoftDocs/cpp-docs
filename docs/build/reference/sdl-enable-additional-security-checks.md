@@ -66,7 +66,7 @@ For more information, see [Warnings, /sdl, and improving uninitialized variable 
 
 1. On the **General** page, select the option from the **SDL checks** drop-down list.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

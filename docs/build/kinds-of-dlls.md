@@ -58,6 +58,6 @@ Prior to version 4.0, Visual C++ only supported two kinds of DLLs that used MFC:
 
 - [MFC extension DLLs: Overview](extension-dlls-overview.md)
 
-## See Also
+## See also
 
 [DLLs in Visual C++](dlls-in-visual-cpp.md)

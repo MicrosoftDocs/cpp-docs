@@ -72,7 +72,7 @@ r = t + d;     // This should produce the same overall result
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
 
-## See Also
+## See also
 
 [/arch (Minimum CPU Architecture)](arch-minimum-cpu-architecture.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

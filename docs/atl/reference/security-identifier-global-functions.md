@@ -313,6 +313,6 @@ Returns the SECURITY_WORLD_RID SID.
 CSid World() throw(...);
 ```
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)

@@ -15,7 +15,7 @@ The architecture options specify the architecture for code generation. Select th
 
 - [/arch (ARM)](arch-arm.md)
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

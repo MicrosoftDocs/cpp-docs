@@ -13,6 +13,6 @@ Exposes the same functionality as the [/HEAP](heap-set-heap-size.md) linker opti
 /HEAP:reserve[,commit]
 ```
 
-## See Also
+## See also
 
 [Rules for Module-Definition Statements](rules-for-module-definition-statements.md)

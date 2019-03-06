@@ -38,8 +38,7 @@ See the following topics for details to get you started:
 
 - [Internet Security](../mfc/internet-security-cpp.md)
 
-## See Also
+## See also
 
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
 [Internet Information by Task](../mfc/internet-information-by-task.md)
-

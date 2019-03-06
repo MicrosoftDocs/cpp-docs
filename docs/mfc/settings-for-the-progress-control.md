@@ -14,8 +14,7 @@ To set the position, use [SetPos](../mfc/reference/cprogressctrl-class.md#setpos
 
 To step the current position of the progress control, use [StepIt](../mfc/reference/cprogressctrl-class.md#stepit). To set the amount of each step, use [SetStep](../mfc/reference/cprogressctrl-class.md#setstep)
 
-## See Also
+## See also
 
 [Using CProgressCtrl](../mfc/using-cprogressctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

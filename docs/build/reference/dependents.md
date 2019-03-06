@@ -17,6 +17,6 @@ Dumps the names of the DLLs from which the image imports functions. Does not dum
 
 Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
 [DUMPBIN Options](dumpbin-options.md)

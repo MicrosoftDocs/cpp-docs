@@ -27,6 +27,6 @@ The following syntax rules apply to all statements in a .def file. Other rules t
 
 - If a string argument matches a [reserved word](reserved-words.md), it must be enclosed in double quotation marks (").
 
-## See Also
+## See also
 
 [Module-Definition (.Def) Files](module-definition-dot-def-files.md)

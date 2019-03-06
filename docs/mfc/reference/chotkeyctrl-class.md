@@ -127,7 +127,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the hot key control's style. Apply any combination of control styles. For more information, see [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -295,8 +295,7 @@ Array of flags that specifies the key combination to use when the user enters an
 
 When a user enters an invalid key combination, as defined by flags specified in *wInvalidComb*, the system uses the OR operator to combine the keys entered by the user with the flags specified in *wModifiers*. The resulting key combination is converted into a string and then displayed in the hot key control.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

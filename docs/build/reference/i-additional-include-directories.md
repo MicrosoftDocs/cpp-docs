@@ -52,7 +52,7 @@ The following command looks for the include files requested by MAIN.c in the fol
 CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
 ```
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

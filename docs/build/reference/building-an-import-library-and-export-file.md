@@ -39,6 +39,6 @@ Adds the specified *symbol* to the symbol table. This option is useful for forci
 
 Note that if you create your import library in a preliminary step, before creating your .dll, you must pass the same set of object files when building the .dll, as you passed when building the import library.
 
-## See Also
+## See also
 
 [Working with Import Libraries and Export Files](working-with-import-libraries-and-export-files.md)

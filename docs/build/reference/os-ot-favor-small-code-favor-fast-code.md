@@ -79,7 +79,7 @@ sub    eax, ecx
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.FavorSizeOrSpeed%2A>.
 
-## See Also
+## See also
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

@@ -26,8 +26,7 @@ How the date and time picker control is created depends on whether you are using
 
 1. Call the control's [Create](../mfc/reference/ctabctrl-class.md#create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function (if you're subclassing the control). Set the styles for the control.
 
-## See Also
+## See also
 
 [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

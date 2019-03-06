@@ -81,7 +81,7 @@ The second value.
 
 Returns true if the values are equal, false otherwise.
 
-## See Also
+## See also
 
 [CSimpleMapEqualHelperFalse Class](../../atl/reference/csimplemapequalhelperfalse-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

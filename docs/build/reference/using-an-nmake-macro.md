@@ -22,6 +22,6 @@ No spaces are allowed. The parentheses are optional if *macroname* is a single c
 
 [Macro substitution](macro-substitution.md)
 
-## See Also
+## See also
 
 [Macros and NMAKE](macros-and-nmake.md)

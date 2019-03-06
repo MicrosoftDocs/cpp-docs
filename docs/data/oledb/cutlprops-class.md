@@ -89,7 +89,7 @@ virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
 The index into the property-set array; zero if there is only one property set.
 
 *pDBProp*<br/>
-The property ID and new value in a [DBPROP](https://docs.microsoft.com/previous-versions/windows/desktop/ms717970(v=vs.85)) structure.
+The property ID and new value in a [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) structure.
 
 ### Return Value
 
@@ -151,7 +151,7 @@ virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
 The index into the property-set array; zero if there is only one property set.
 
 *pDBProp*<br/>
-The property ID and new value in a [DBPROP](https://docs.microsoft.com/previous-versions/windows/desktop/ms717970(v=vs.85)) structure.
+The property ID and new value in a [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) structure.
 
 ### Return Value
 

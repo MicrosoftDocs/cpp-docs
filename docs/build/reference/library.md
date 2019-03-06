@@ -21,6 +21,6 @@ The BASE=*address* argument sets the base address that the operating system uses
 
 Remember to use the [/DLL](dll-build-a-dll.md) linker option when you build a DLL.
 
-## See Also
+## See also
 
 [Rules for Module-Definition Statements](rules-for-module-definition-statements.md)

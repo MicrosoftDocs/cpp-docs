@@ -20,6 +20,6 @@ If a macro has multiple definitions, NMAKE uses the highest-precedence definitio
 
 Use /E to cause macros inherited from environment variables to override makefile macros with the same name. Use **!UNDEF** to override a command line.
 
-## See Also
+## See also
 
 [Defining an NMAKE Macro](defining-an-nmake-macro.md)

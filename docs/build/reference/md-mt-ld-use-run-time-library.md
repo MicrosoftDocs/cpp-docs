@@ -50,7 +50,7 @@ For more about DLLs, see [DLLs in Visual C++](../dlls-in-visual-cpp.md).
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.RuntimeLibrary%2A>.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

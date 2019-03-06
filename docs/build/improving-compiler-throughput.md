@@ -12,6 +12,6 @@ See [/Yc](reference/yc-create-precompiled-header-file.md) and [/Yu](reference/yu
 
 For more information on precompiled headers, see [Precompiled Header Files](creating-precompiled-header-files.md).
 
-## See Also
+## See also
 
 [Optimizing Your Code](optimizing-your-code.md)

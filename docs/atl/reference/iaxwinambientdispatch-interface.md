@@ -57,7 +57,7 @@ interface IAxWinAmbientDispatch : IDispatch
 
 This interface is exposed by ATL's ActiveX control hosting objects. Call the methods on this interface to set the ambient properties available to the hosted control or to specify other aspects of the container's behavior. To supplement the properties provided by `IAxWinAmbientDispatch`, use [IAxWinAmbientDispatchEx](../../atl/reference/iaxwinambientdispatchex-interface.md).
 
-[AXHost](https://msdn.microsoft.com/library/system.windows.forms.axhost.aspx) will try to load type information about `IAxWinAmbientDispatch` and `IAxWinAmbientDispatchEx` from the typelib that contains the code.
+<xref:System.Windows.Forms.AxHost> will try to load type information about `IAxWinAmbientDispatch` and `IAxWinAmbientDispatchEx` from the typelib that contains the code.
 
 If you are linking to ATL90.dll, **AXHost** will load the type information from the typelib in the DLL.
 
@@ -655,10 +655,9 @@ A standard HRESULT value.
 
 The ATL host object implementation uses VARIANT_TRUE as the default value of this property.
 
-## See Also
+## See also
 
 [IAxWinAmbientDispatchEx Interface](../../atl/reference/iaxwinambientdispatchex-interface.md)<br/>
 [IAxWinHostWindow Interface](../../atl/reference/iaxwinhostwindow-interface.md)<br/>
 [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
-

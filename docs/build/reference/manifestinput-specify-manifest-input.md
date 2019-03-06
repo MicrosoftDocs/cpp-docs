@@ -24,7 +24,7 @@ The **/MANIFESTINPUT** option specifies the path of an input file to use to crea
 
 This option can’t be set directly in Visual Studio. Instead, use the **Additional Manifest Files** property of the project to specify additional manifest files to include. For more information, see [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](input-and-output-manifest-tool.md).
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

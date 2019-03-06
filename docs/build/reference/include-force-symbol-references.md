@@ -40,7 +40,7 @@ Specifying a symbol with this option overrides the removal of that symbol by [/O
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ForceSymbolReferences%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

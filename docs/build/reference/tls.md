@@ -17,6 +17,6 @@ If a program does not use thread local storage, its image will not contain a TLS
 
 IMAGE_TLS_DIRECTORY is defined in winnt.h.
 
-## See Also
+## See also
 
 [DUMPBIN Options](dumpbin-options.md)

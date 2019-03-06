@@ -10,7 +10,6 @@ A modal dialog box closes when the user chooses one of its buttons, typically th
 
 To arrange for closing and deleting a modeless dialog box, override `PostNcDestroy` and invoke the **delete** operator on the **this** pointer. [Destroying the Dialog Box](../mfc/destroying-the-dialog-box.md) explains what happens next.
 
-## See Also
+## See also
 
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

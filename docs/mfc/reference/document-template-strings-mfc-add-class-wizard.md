@@ -63,7 +63,7 @@ Produces strings associated with the forms and documents that are read and used 
 
    Indicates the project's document class. By default, this class is the main application's document class, as listed in the [Review Generated Classes](../../mfc/reference/generated-classes-mfc-application-wizard.md) page of the MFC Application Wizard. You can select another document class from the list, if you have added other document classes in the project.
 
-## See Also
+## See also
 
 [MFC Add Class Wizard](../../mfc/reference/mfc-add-class-wizard.md)<br/>
 [MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>

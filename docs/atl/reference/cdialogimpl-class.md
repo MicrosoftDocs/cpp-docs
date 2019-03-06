@@ -101,7 +101,7 @@ HWND Create(
 [in] The handle to the owner window.
 
 **RECT&** *rect*
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the dialog's size and position.
+[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the dialog's size and position.
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -306,7 +306,7 @@ The window procedure.
 
 After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog procedure, and further calls go there.
 
-## See Also
+## See also
 
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -40,7 +40,7 @@ To specify DLLs to delay load, use the [/DELAYLOAD](delayload-delay-load-import.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.DelayLoadDLLs%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

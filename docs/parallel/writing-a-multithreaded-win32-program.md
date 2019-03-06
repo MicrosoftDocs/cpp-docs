@@ -44,6 +44,6 @@ Because each thread has its own stack, you can avoid potential collisions over d
 
 Win32 also provides Thread-Local Storage (TLS) to store per-thread data. For more information, see [Thread Local Storage (TLS)](thread-local-storage-tls.md).
 
-## See Also
+## See also
 
 [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

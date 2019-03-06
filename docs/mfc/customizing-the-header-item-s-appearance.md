@@ -24,8 +24,7 @@ Here is a sampling of the styles you can set, and their purpose:
 
 For more information about these properties, see [Items](/windows/desktop/Controls/header-controls) in the Windows SDK. For information about adding items to a header control, see [Adding Items to the Header Control](../mfc/adding-items-to-the-header-control.md).
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -60,6 +60,6 @@ strcpy_s( buf, sizeOfBuffer, "Hello, World" );
 free( buf );
 ```
 
-## See Also
+## See also
 
 [Fixing Release Build Problems](fixing-release-build-problems.md)

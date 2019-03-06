@@ -141,7 +141,7 @@ GetLastError for application call failed (127).
 GetLastError for system call succeeded (183).
 ```
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

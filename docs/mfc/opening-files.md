@@ -29,9 +29,8 @@ The following example shows how to create a new file with read/write permission 
 > [!NOTE]
 >  This example creates and opens a file. If there are problems, the `Open` call can return a `CFileException` object in its last parameter, as shown here. The TRACE macro prints both the file name and a code indicating the reason for failure. You can call the `AfxThrowFileException` function if you require more detailed error reporting.
 
-## See Also
+## See also
 
 [CFile Class](../mfc/reference/cfile-class.md)<br/>
 [CFile::Open](../mfc/reference/cfile-class.md#open)<br/>
 [Files](../mfc/files-in-mfc.md)
-

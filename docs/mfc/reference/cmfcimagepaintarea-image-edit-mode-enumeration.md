@@ -45,7 +45,7 @@ When you select a color from an image by using the IMAGE_EDIT_MODE_COLOR drawing
 
 **Header:** afximagepaintarea.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

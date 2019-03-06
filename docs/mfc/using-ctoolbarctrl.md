@@ -23,7 +23,6 @@ You can use the toolbar control ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-cl
 
 - [Customizing the Appearance of a Toolbar Control](../mfc/customizing-the-appearance-of-a-toolbar-control.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

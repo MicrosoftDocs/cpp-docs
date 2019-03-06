@@ -24,6 +24,6 @@ The Microsoft Library Manager (LIB.exe) creates and manages a library of Common 
 
 - [Working with Import Libraries and Export Files](working-with-import-libraries-and-export-files.md)
 
-## See Also
+## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)

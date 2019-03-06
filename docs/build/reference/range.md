@@ -35,6 +35,6 @@ In this example, **/range** is used to modify the display of the **/disasm** opt
 dumpbin /disasm /range:4219334,0x004061CD t.exe
 ```
 
-## See Also
+## See also
 
 [DUMPBIN Options](dumpbin-options.md)

@@ -55,8 +55,7 @@ CMemoryException();
 
 Do not use this constructor directly, but rather call the global function [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). this global function can succeed in an out-of-memory situation because it constructs the exception object in previously allocated memory. for more information about exception processing, see the article [exceptions](../exception-handling-in-mfc.md).
 
-## See Also
+## See also
 
 [CException Class](cexception-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)
-

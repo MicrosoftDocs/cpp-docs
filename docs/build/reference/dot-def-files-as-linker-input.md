@@ -8,7 +8,7 @@ ms.assetid: ecb32d7c-e3be-4782-85a1-1c77d30f6e59
 
 See [Module-definition (.def) files](module-definition-dot-def-files.md) for more information. Use the [/DEF](def-specify-module-definition-file.md) option to specify the .def file name.
 
-## See Also
+## See also
 
 [LINK Input Files](link-input-files.md)<br/>
 [MSVC Linker Options](linker-options.md)

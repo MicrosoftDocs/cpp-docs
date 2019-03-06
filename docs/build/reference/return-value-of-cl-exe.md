@@ -42,6 +42,6 @@ cl /W4 t.cpp
 :end
 ```
 
-## See Also
+## See also
 
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

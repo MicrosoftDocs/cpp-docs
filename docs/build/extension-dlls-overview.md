@@ -32,6 +32,6 @@ Note that the term AFXDLL is no longer used in the Visual C++ documentation. An 
 
 - [Creating an MFC DLL](../mfc/reference/mfc-dll-wizard.md)
 
-## See Also
+## See also
 
 [Kinds of DLLs](kinds-of-dlls.md)

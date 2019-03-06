@@ -18,6 +18,6 @@ Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files pro
 
 - [DUMPBIN options](dumpbin-options.md)
 
-## See Also
+## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)

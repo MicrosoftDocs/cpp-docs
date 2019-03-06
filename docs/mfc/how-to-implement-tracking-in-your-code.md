@@ -46,7 +46,6 @@ The `CRectTracker` class provides several different cursor shapes used to indica
 
 [!code-cpp[NVC_MFCOClient#5](../mfc/codesnippet/cpp/how-to-implement-tracking-in-your-code_5.cpp)]
 
-## See Also
+## See also
 
 [Trackers: Implementing Trackers in Your OLE Application](../mfc/trackers-implementing-trackers-in-your-ole-application.md)
-

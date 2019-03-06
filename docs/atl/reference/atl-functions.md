@@ -50,7 +50,7 @@ Provide support for registering and unregistering server objects in the object m
 [WinModule Global Functions](../../atl/reference/winmodule-global-functions.md)<br/>
 Provide support for `_AtlCreateWndData` structure operations.
 
-## See Also
+## See also
 
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
 [Macros](../../atl/reference/atl-macros.md)<br/>

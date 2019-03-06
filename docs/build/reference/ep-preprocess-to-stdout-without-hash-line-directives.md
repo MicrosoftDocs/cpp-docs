@@ -51,7 +51,7 @@ The following command line preprocesses file `ADD.C`, preserves comments, and di
 CL /EP /C ADD.C
 ```
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

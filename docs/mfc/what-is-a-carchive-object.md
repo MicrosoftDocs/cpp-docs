@@ -15,7 +15,6 @@ When an archive stores objects to a file, the archive attaches the `CRuntimeClas
 
 As data is serialized to an archive, the archive accumulates the data until its buffer is full. Then the archive writes its buffer to the `CFile` object pointed to by the `CArchive` object. Similarly, as you read data from an archive, it reads data from the file to its buffer and then from the buffer to your deserialized object. This buffering reduces the number of times a hard disk is physically read, thus improving your application's performance.
 
-## See Also
+## See also
 
 [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)
-

@@ -57,6 +57,6 @@ Describes MSBuild tasks. Especially note these tasks, which are specific to Visu
 |[How to: Integrate Custom Tools into the Project Properties](how-to-integrate-custom-tools-into-the-project-properties.md)|Demonstrates how to add options for a custom tool to the project properties.|
 |[How to: Modify the Target Framework and Platform Toolset](how-to-modify-the-target-framework-and-platform-toolset.md)|Demonstrates how to compile a project for multiple frameworks or toolsets.|
 
-## See Also
+## See also
 
 [Use the MSVC toolset from the command line](building-on-the-command-line.md)

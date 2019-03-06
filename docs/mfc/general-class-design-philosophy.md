@@ -35,7 +35,6 @@ For more on the design of the MFC Library, see:
 
 - [Relationship to the C-Language API](../mfc/relationship-to-the-c-language-api.md)
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

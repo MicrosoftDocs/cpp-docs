@@ -33,7 +33,7 @@ By default, **/WX** is not in effect. To treat linker warnings as errors, specif
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

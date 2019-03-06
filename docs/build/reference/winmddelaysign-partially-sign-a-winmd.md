@@ -26,7 +26,7 @@ Resembles the [/DELAYSIGN](delaysign-partially-sign-an-assembly.md) linker optio
 
 1. In the **Windows Metadata Delay Sign** drop-down list box, select the option you want.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

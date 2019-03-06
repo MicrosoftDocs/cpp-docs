@@ -34,7 +34,6 @@ Encapsulates a handle to storage for a binary large object (BLOB), such as a bit
 [CDBVariant](../mfc/reference/cdbvariant-class.md)<br/>
 Allows you to store a value without worrying about the value's data type. `CDBVariant` tracks the data type of the current value, which is stored in a union.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

@@ -31,7 +31,7 @@ If an application was linked with /LARGEADDRESSAWARE, DUMPBIN [/HEADERS](headers
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LargeAddressAware%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

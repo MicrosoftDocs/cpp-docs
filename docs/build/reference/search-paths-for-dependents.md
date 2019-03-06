@@ -18,6 +18,6 @@ Each dependent has an optional search path, specified as follows:
 
 NMAKE looks for a dependent first in the current directory, and then in directories in the order specified. A macro can specify part or all of a search path. Enclose directory names in braces ({ }); separate multiple directories with a semicolon (;). No spaces or tabs are allowed.
 
-## See Also
+## See also
 
 [Dependents](dependents.md)

@@ -18,6 +18,6 @@ NMAKE assumes an inferred dependent for a target if an applicable inference rule
 
 Inferred dependents can cause unexpected side effects. If the target's description block contains commands, NMAKE executes those commands instead of the commands in the rule.
 
-## See Also
+## See also
 
 [Inference Rules](inference-rules.md)

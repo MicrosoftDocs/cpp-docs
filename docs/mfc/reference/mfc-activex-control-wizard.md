@@ -50,9 +50,8 @@ This wizard page describes the current application settings for the MFC ActiveX 
 
 - The control is based on no existing Windows control, activates when it becomes visible, has a user interface, and includes an **About** dialog box. You can change these default settings on the [Control Settings](../../mfc/reference/control-settings-mfc-activex-control-wizard.md) page.
 
-## See Also
+## See also
 
 [Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
 [Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)<br/>
 [Concepts](../../atl/active-template-library-atl-concepts.md)
-

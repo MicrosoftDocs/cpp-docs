@@ -33,8 +33,7 @@ The following map entries on the left correspond to the function prototypes on t
 |ON_WM_MOVE()|afx_msg void [OnMove](../../mfc/reference/cwnd-class.md#onmove)(int, int);|
 |ON_WM_MOVING()|afx_msg void [OnMoving](../../mfc/reference/cwnd-class.md#onmoving)(UINT, LPRECT);|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
 [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-

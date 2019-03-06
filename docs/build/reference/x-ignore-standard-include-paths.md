@@ -41,7 +41,7 @@ In the following command, `/X` tells the compiler to ignore locations specified 
 CL /X /I \ALT\INCLUDE MAIN.C
 ```
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

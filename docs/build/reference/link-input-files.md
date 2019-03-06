@@ -36,7 +36,7 @@ LINK uses the following types of input files:
 
 - [.ilk files](dot-ilk-files-as-linker-input.md)
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

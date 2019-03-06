@@ -651,6 +651,6 @@ The following `DoDataExchange` function for a [CRecordView](../../mfc/reference/
 
   **Header** afxdao.h
 
-## See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)

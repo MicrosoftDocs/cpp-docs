@@ -29,6 +29,6 @@ Additionally, if the incorrect bits are set in the grAttrs field, the exception 
 
 See [Structure and Constant Definitions](structure-and-constant-definitions.md) for more information.
 
-## See Also
+## See also
 
 [Error Handling and Notification](error-handling-and-notification.md)

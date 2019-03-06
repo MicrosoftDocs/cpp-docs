@@ -40,7 +40,7 @@ For more information, see [.pdb Files as Linker Input](dot-pdb-files-as-linker-i
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ProgramDatabaseFile%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

@@ -26,7 +26,7 @@ Specifies behavior for manifest lookup.
 
 When isolation is disabled for an executable, the Windows loader doesn't try to find an application manifest for the newly created process. The new process doesn't have a default activation context, even if there is a manifest in the executable itself or if there is a manifest that has the name *executable-name*.exe.manifest.
 
-## See Also
+## See also
 
 [EDITBIN Options](editbin-options.md)<br/>
 [/ALLOWISOLATION (Manifest Lookup)](allowisolation-manifest-lookup.md)<br/>

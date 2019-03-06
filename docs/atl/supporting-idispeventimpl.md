@@ -67,7 +67,6 @@ After your object is finished with the external interfaces, the outgoing interfa
 
 Because of the unique nature of COM objects, this procedure varies, in detail and execution, between implementations. These details are beyond the scope of this topic and are not addressed.
 
-## See Also
+## See also
 
 [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)
-

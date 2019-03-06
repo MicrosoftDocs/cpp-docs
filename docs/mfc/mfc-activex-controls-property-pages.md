@@ -102,7 +102,7 @@ After you have the property page control inserted, you need to establish a link 
 |`DDP_Radio`|A radio button with a control property.|
 |`DDP_Text`|Text with a control property.|
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [COlePropertyPage Class](../mfc/reference/colepropertypage-class.md)

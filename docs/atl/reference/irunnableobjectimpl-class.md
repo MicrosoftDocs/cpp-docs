@@ -132,7 +132,7 @@ The ATL implementation returns S_OK.
 
 See [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl-irunnableobject-setcontainedobject) in the Windows SDK.
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

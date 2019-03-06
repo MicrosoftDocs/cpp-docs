@@ -43,7 +43,7 @@ CRestrictions<CAccessor<CColumnsInfo>
 
 The [CRestrictions](../../data/oledb/crestrictions-class.md) class supplies the restriction support. After you create an instance of the schema rowset, call [CRestrictions::Open](../../data/oledb/crestrictions-open.md). This method returns a result set based on the restrictions that you specify.
 
-To specify restrictions, refer to [Appendix B: Schema Rowsets](https://docs.microsoft.com/previous-versions/windows/desktop/ms712921(v=vs.85)) and look up the rowset that you're using. For example, `CColumns` corresponds to the [COLUMNS Rowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms723052(v=vs.85)\(v%3dvs.85\)); that topic lists the restriction columns in the COLUMNS rowset: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. You must follow that order in specifying your restrictions.
+To specify restrictions, refer to [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921(v=vs.85)) and look up the rowset that you're using. For example, `CColumns` corresponds to the [COLUMNS Rowset](/previous-versions/windows/desktop/ms723052(v=vs.85)\(v%3dvs.85\)); that topic lists the restriction columns in the COLUMNS rowset: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. You must follow that order in specifying your restrictions.
 
 So, for example, if you want to restrict by table name, TABLE_NAME is the third restriction column, and then call `Open`, specifying the wanted table name as the third restriction parameter, as shown in the following example.
 
@@ -73,7 +73,7 @@ So, for example, if you want to restrict by table name, TABLE_NAME is the third 
 
 For the reference of the schema rowset, typedef classes provided in the OLE DB Templates (see [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).
 
-For more information about OLE DB schema rowsets, including restriction columns, see [Appendix B: Schema Rowsets](https://docs.microsoft.com/previous-versions/windows/desktop/ms712921(v=vs.85)) in the **OLE DB Programmer's Reference**.
+For more information about OLE DB schema rowsets, including restriction columns, see [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921(v=vs.85)) in the **OLE DB Programmer's Reference**.
 
 For more complex examples of how to use schema rowset classes, see the [CatDB](https://github.com/Microsoft/VCSamples) and [DBViewer](https://github.com/Microsoft/VCSamples) samples.
 

@@ -18,8 +18,7 @@ There are several member functions available for the spin control ([CSpinButtonC
 
 - **Range** You can change the maximum and minimum positions for the spin button. By default, the maximum is set to 0, and the minimum is set to 100. Since the default maximum is less than the default minimum, the actions of the arrow buttons is counter-intuitive. Typically, you will set the range using the [SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) member function. To query the range use [GetRange](../mfc/reference/cspinbuttonctrl-class.md#getrange).
 
-## See Also
+## See also
 
 [Using CSpinButtonCtrl](../mfc/using-cspinbuttonctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

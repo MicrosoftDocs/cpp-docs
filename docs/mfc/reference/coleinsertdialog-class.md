@@ -276,7 +276,7 @@ Members of this structure can be modified either directly or through member func
 
 For more information, see the [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) structure in the Windows SDK.
 
-## See Also
+## See also
 
 [MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>

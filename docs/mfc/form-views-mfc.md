@@ -51,6 +51,6 @@ For more information, see:
 
 - [Inserting a Form into a Project](../mfc/inserting-a-form-into-a-project.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

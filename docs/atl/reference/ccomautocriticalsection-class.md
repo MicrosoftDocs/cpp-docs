@@ -66,7 +66,7 @@ The destructor.
 
 The destructor calls [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection), which releases all system resources used by the critical section object.
 
-## See Also
+## See also
 
 [CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

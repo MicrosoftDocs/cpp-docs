@@ -129,6 +129,6 @@ Unlike in this example, in most cases you should call `LoadLibrary` and `FreeLib
 
 - [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
-## See Also
+## See also
 
 [DLLs in Visual C++](dlls-in-visual-cpp.md)

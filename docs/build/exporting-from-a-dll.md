@@ -44,6 +44,6 @@ When exporting functions with either method, make sure to use the [__stdcall](..
 
 - [Mutual imports](mutual-imports.md)
 
-## See Also
+## See also
 
 [Importing and Exporting](importing-and-exporting.md)

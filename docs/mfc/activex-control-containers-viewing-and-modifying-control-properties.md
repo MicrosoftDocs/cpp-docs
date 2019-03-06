@@ -28,7 +28,6 @@ The first step in viewing the control's properties is to add an instance of the 
 
 Use the **Properties** dialog box to modify and test new properties immediately.
 
-## See Also
+## See also
 
 [ActiveX Control Containers](../mfc/activex-control-containers.md)
-

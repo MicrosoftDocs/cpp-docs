@@ -50,6 +50,6 @@ The following topics describe the helper function:
 
 - [Unloading a Delay-Loaded DLL](explicitly-unloading-a-delay-loaded-dll.md)
 
-## See Also
+## See also
 
 [Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

@@ -23,7 +23,7 @@ If you are adding a property page for a control, your control must support the [
 
 Once you create a property page for a control, you must provide the [PROP_PAGE](property-map-macros.md#prop_page) entry in the property map for the control.
 
-## See Also
+## See also
 
 [Property Pages](../../atl/atl-com-property-pages.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>

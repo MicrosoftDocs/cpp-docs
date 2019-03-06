@@ -21,9 +21,8 @@ The application class is placed in the project header and main source files. The
 
 The standard implementations and message map supplied are adequate for many purposes, but you can modify them as needed. The most interesting of these implementations is the `InitInstance` member function. Typically, you will add code to the skeletal implementation of `InitInstance`.
 
-## See Also
+## See also
 
 [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)<br/>
 [Overridable CWinApp Member Functions](../mfc/overridable-cwinapp-member-functions.md)<br/>
 [Special CWinApp Services](../mfc/special-cwinapp-services.md)
-

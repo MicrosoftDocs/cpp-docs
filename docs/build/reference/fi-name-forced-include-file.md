@@ -33,7 +33,7 @@ This option has the same effect as specifying the file with double quotation mar
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedIncludeFiles%2A>.
 
-## See Also
+## See also
 
 [Output-File (/F) Options](output-file-f-options.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

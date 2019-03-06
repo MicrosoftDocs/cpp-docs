@@ -35,7 +35,7 @@ The following command line preprocesses PROGRAM.cpp, preserves comments, adds [#
 CL /P /FiMYPROCESS.I PROGRAM.CPP
 ```
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [/P (Preprocess to a File)](p-preprocess-to-a-file.md)<br/>

@@ -294,7 +294,7 @@ Unlinks all source blocks from this `propagator_block` object.
 virtual void unlink_sources();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [source_block Class](source-block-class.md)<br/>

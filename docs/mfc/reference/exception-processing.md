@@ -564,7 +564,7 @@ See the example for [CATCH](#catch).
 
   **Header** afx.h
 
-## See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [CException Class](cexception-class.md)<br/>

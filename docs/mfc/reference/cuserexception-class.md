@@ -41,7 +41,7 @@ For more information on using `CUserException`, see the article [Exception Handl
 
 **Header:** afxwin.h
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CException Class](../../mfc/reference/cexception-class.md)

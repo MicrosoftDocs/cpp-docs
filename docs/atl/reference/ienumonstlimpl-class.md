@@ -207,6 +207,6 @@ STDMETHOD(Skip)(ULONG celt);
 
 A standard HRESULT value.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

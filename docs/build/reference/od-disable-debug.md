@@ -33,7 +33,7 @@ This option is the default. Because **/Od** suppresses code movement, it simplif
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
 
-## See Also
+## See also
 
 [/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

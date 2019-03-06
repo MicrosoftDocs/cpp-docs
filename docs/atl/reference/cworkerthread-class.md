@@ -256,7 +256,7 @@ To reuse the object, call [CWorkerThread::Initialize](#initialize) after calling
 
 Note that calling `Shutdown` on an object initialized with a pointer to another `CWorkerThread` object has no effect and always returns S_OK.
 
-## See Also
+## See also
 
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [Classes](../../atl/reference/atl-classes.md)<br/>

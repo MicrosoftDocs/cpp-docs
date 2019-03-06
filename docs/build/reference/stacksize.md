@@ -19,6 +19,6 @@ An equivalent way to set the stack is with the [Stack Allocations](stack-stack-a
 
 This option has no effect on DLLs.
 
-## See Also
+## See also
 
 [Rules for Module-Definition Statements](rules-for-module-definition-statements.md)

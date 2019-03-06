@@ -100,7 +100,6 @@ After you have implemented metafile rendering for the control, use Test Containe
 
    A separate window appears in which the metafile is displayed. You can change the size of this window to see how scaling affects the control's metafile. You can close this window at any time.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-

@@ -27,7 +27,7 @@ Displays a listing of compiler options to standard output.
 
 - This compiler option cannot be changed programmatically.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

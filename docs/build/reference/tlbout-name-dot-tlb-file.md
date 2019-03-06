@@ -41,7 +41,7 @@ If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](idlo
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TypeLibraryFile%2A>.
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>

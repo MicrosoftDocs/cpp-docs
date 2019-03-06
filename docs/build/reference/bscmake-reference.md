@@ -32,6 +32,6 @@ This section includes the following topics:
 
 - [BSCMAKE exit codes](bscmake-exit-codes.md)
 
-## See Also
+## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)

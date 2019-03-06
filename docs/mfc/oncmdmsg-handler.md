@@ -13,7 +13,6 @@ Each command-target class may override the `OnCmdMsg` member function. The overr
 
 The default `CCmdTarget` implementation of `OnCmdMsg` uses the message map of the command-target class to search for a handler function for each command message it receives — in the same way that standard messages are searched. If it finds a match, it calls the handler. Message-map searching is explained in [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md).
 
-## See Also
+## See also
 
 [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-

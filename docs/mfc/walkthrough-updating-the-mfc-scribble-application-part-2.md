@@ -328,7 +328,7 @@ Next, initialize the color and width of the pens. Finally, save and load a color
 
 You've updated the MFC Scribble application. Use this walkthrough as a guide when you modify your existing applications.
 
-## See Also
+## See also
 
 [Walkthroughs](../mfc/walkthroughs-mfc.md)<br/>
 [Walkthrough: Updating the MFC Scribble Application (Part 1)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

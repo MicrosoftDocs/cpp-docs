@@ -14,6 +14,6 @@ You can control the NMAKE session by using preprocessing directives and expressi
 
 [Expressions in makefile preprocessing](expressions-in-makefile-preprocessing.md)
 
-## See Also
+## See also
 
 [NMAKE Reference](nmake-reference.md)

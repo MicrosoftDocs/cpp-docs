@@ -44,7 +44,7 @@ CL passes the names of the .obj files, along with the name MYGRAPH.lib, to the l
 
 1. In MOD2.obj, the references to `myline` and `mycircle` are resolved using the definitions in MYGRAPH.lib.
 
-## See Also
+## See also
 
 [MSVC Compiler Options](reference/compiler-options.md)<br/>
 [Setting Compiler Options](compiler-command-line-syntax.md)

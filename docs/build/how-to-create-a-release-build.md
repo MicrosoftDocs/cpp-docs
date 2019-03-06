@@ -12,6 +12,6 @@ ms.assetid: 6a4c89b1-48f0-44d2-8703-ca0a4b0351bf
 
 1. On the **Build** menu, click **Build**.
 
-## See Also
+## See also
 
 [Release Builds](release-builds.md)

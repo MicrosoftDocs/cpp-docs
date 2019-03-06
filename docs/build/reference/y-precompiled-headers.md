@@ -21,7 +21,7 @@ The following compiler options affect the generation and use of precompiled head
 
 For details on working with precompiled headers, see [Precompiled Header Files](../creating-precompiled-header-files.md).
 
-## See Also
+## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

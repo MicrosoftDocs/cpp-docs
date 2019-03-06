@@ -48,6 +48,6 @@ An inference rule applies to a dependency only if paths specified in the depende
         $(CC) $(CFLAGS) $<
 ```
 
-## See Also
+## See also
 
 [Defining a Rule](defining-a-rule.md)

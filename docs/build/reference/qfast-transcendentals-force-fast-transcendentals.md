@@ -35,7 +35,7 @@ This option is incompatible with **/fp:strict**. See [/fp (Specify Floating-Poin
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>

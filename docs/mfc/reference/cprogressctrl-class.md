@@ -105,7 +105,7 @@ Specifies the progress bar control's style. Apply any combination of window styl
 - PBS_SMOOTH Displays gradual, smooth filling in the progress bar control. Without this flag, the control will fill with blocks.
 
 *rect*<br/>
-Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the *pParentWnd*.
+Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the *pParentWnd*.
 
 *pParentWnd*<br/>
 Specifies the progress bar control's parent window, usually a `CDialog`. It must not be NULL.
@@ -147,7 +147,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the progress bar control's style. Apply any combination of window styles described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -558,9 +558,8 @@ The step increment is set by the `CProgressCtrl::SetStep` member function.
 
 [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_16.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

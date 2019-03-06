@@ -87,6 +87,6 @@ One of the standard HRESULT values.
 
 This function is safe to call even if your control does not support connection points.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

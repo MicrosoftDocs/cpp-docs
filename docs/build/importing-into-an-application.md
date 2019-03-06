@@ -22,6 +22,6 @@ You can import functions into an application using two methods:
 
 - [Import Using DEF Files](importing-using-def-files.md)
 
-## See Also
+## See also
 
 [Importing and Exporting](importing-and-exporting.md)

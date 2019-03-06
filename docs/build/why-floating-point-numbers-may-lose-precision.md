@@ -53,6 +53,6 @@ They are not equal! The value of c is  2.4679999352 or 2.468000
 
 For EPSILON, you can use the constants FLT_EPSILON, which is defined for float as 1.192092896e-07F, or DBL_EPSILON, which is defined for double as 2.2204460492503131e-016. You need to include float.h for these constants. These constants are defined as the smallest positive number x, such that x+1.0 is not equal to 1.0. Because this is a very small number, you should employ user-defined tolerance for calculations involving very large numbers.
 
-## See Also
+## See also
 
 [Optimizing Your Code](optimizing-your-code.md)

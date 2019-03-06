@@ -30,7 +30,7 @@ The CL compiler automatically calls LINK unless you specify the /c option. CL pr
 
 For more information, see [MSVC Compiler Options](compiler-options.md).
 
-## See Also
+## See also
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)

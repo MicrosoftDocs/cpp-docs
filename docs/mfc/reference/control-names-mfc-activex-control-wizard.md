@@ -73,7 +73,7 @@ Specify the names for the control class and property page class, the type names,
 
    *ProjectName.NewShortName*PropPage.1
 
-## See Also
+## See also
 
 [MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [Application Settings, MFC ActiveX Control Wizard](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>

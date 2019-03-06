@@ -36,7 +36,6 @@ You cannot re-throw the current exception from within a **try** block that is in
 
 For more information, see [Exceptions: Examining Exception Contents](../mfc/exceptions-examining-exception-contents.md).
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

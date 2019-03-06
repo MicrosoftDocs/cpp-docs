@@ -643,7 +643,7 @@ You must ensure that your POSITION value represents a valid position in the list
 
 [!code-cpp[NVC_MFCCollections#55](../../mfc/codesnippet/cpp/clist-class_21.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>

@@ -19,6 +19,6 @@ NMAKE returns the following exit codes:
 |4|System error — out of memory|
 |255|Target is not up-to-date (issued only when /Q is used)|
 
-## See Also
+## See also
 
 [Running NMAKE](running-nmake.md)

@@ -32,6 +32,6 @@ namespace direct3d;
 
 **Namespace:** Concurrency::graphics
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)
