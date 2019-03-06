@@ -10,11 +10,11 @@ ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
 > [!CAUTION]
 > Editing resources such as dialog boxes, images, or menus in the **Binary Editor** is dangerous. Incorrect editing could corrupt the resource, making it unreadable in its native editor.
 
-The **Binary Editor** allows you to edit any resource at the binary level in either hexadecimal or ASCII format. You can also use the [Find command](/visualstudio/ide/reference/find-command) to search for either ASCII strings or hexadecimal bytes. Use the **Binary Editor** only when you need to view or make minor changes to custom resources or resource types not supported by the Visual Studio environment.
+The **Binary Editor** allows you to edit any resource at the binary level in either hexadecimal or ASCII format. You can also use the [Find command](/visualstudio/ide/reference/find-command) to search for either ASCII strings or hexadecimal bytes. Use the **Binary Editor** only when you need to view or make minor changes to custom resources or resource types not supported by the Visual Studio environment. The **Binary Editor** is not available in Express editions.
 
-To open the **Binary Editor** on a new file, go to menu **File** > **New** > **File**, select the type of file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
+- To open the **Binary Editor** on a new file, go to menu **File** > **New** > **File**, select the type of file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
 
-To open the **Binary Editor** on an existing file, go to menu **File** > **Open** > **File**, select the file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
+- To open the **Binary Editor** on an existing file, go to menu **File** > **Open** > **File**, select the file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
 
    ![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
    Binary data for a dialog box displayed in the **Binary Editor**
@@ -22,9 +22,7 @@ To open the **Binary Editor** on an existing file, go to menu **File** > **Open*
 Only certain ASCII values are represented in the **Binary Editor** (0x20 through 0x7E). Extended characters are displayed as periods in the right panel ASCII value section of the **Binary Editor**. The printable characters are ASCII values 32 through 126.
 
 > [!TIP]
-> While using the **Binary Editor**, in many instances you can right-click to display a shortcut menu of resource-specific commands. The commands available depend on what your cursor is pointing to. For example, if you click while pointing to the **Binary Editor** with selected hexadecimal values, the shortcut menu shows the **Cut**, **Copy**, and **Paste** commands.
-
-The **Binary Editor** is not available in Express editions.
+> While using the **Binary Editor**, in many instances you can right-click to display a shortcut menu of resource-specific commands. The commands available depend on what your cursor is pointing to. For example, if you right-click while pointing to the **Binary Editor** with selected hexadecimal values, the shortcut menu shows the **Cut**, **Copy**, and **Paste** commands.
 
 ## How To
 
@@ -32,12 +30,12 @@ The **Binary Editor** enables you:
 
 ### To open a Windows desktop resource for binary editing
 
-1. In [Resource View](../windows/resource-view-window.md), select the specific resource file you want to edit.
+1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), select the specific resource file you want to edit.
 
 1. Right-click the resource and select **Open Binary Data**.
 
 > [!NOTE]
-> If you use the [Resource View](../windows/resource-view-window.md) window to open a resource with a format that Visual Studio doesn't recognize, such as RCDATA or a custom resource, the resource is automatically opened in the **Binary Editor**.
+> If you use the **Resource View** window to open a resource with a format that Visual Studio doesn't recognize, such as RCDATA or a custom resource, the resource is automatically opened in the **Binary Editor**.
 
 ### To open a managed resource for binary editing
 
@@ -52,8 +50,7 @@ The **Binary Editor** enables you:
 
 ### To edit a resource
 
-> [!NOTE]
-> If you want to use the **Binary Editor** on a resource already being edited in another editor window, close the other editor window first.
+If you want to use the **Binary Editor** on a resource already being edited in another editor window, close the other editor window first.
 
 1. Select the byte you want to edit.
 
@@ -70,7 +67,7 @@ The **Binary Editor** enables you:
 
 You can search for either ASCII strings or hexadecimal bytes. For example, to find *Hello*, you can search for either the string *Hello* or its hexadecimal value, *48 65 6C 6C 6F*.
 
-1. From the **Edit** menu, choose [Find](/visualstudio/ide/reference/find-command).
+1. Go to menu **Edit** > [Find](/visualstudio/ide/reference/find-command).
 
 1. In the **Find What** box, select a previous search string from the drop-down list or type the data you want to find.
 

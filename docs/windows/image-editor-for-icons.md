@@ -18,17 +18,7 @@ You can also use the **Image Editor** and the [Binary Editor](binary-editor.md) 
 
 In addition to creating new graphical resources, you can [import existing images](/windows/how-to-copy-resources#import-and-export-resources) for editing and then add them to your project. You can also open and edit images that are not part of a project for [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md).
 
-With the **Image Editor**, see:
-
-- [How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-editor-for-icons.md)
-
-- [How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)
-
-- [How to: Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md)
-
-- [How to: Work with Color](../windows/working-with-color-image-editor-for-icons.md)
-
-- [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)
+For information on the **Image Editor**, see how to [Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md), [Work with Color](../windows/working-with-color-image-editor-for-icons.md), and [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md).
 
 > [!NOTE]
 > Download at no cost the **Visual Studio Image Library** that contains many animations, bitmaps, and icons that you can use in your applications. For more information about how to download the library, see the [Visual Studio Image Library](/visualstudio/designers/the-visual-studio-image-library).
@@ -53,7 +43,7 @@ The **Image** menu, which appears only when the **Image Editor** is active, has 
 |**Toolbar Editor**|Opens the [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md).|
 |**Grid Settings**|Opens the **Grid Settings** dialog box in which you can specify grids for your image.|
 |**New Image Type**|Opens the [New \<Device> Image Type dialog box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md).<br/><br/>A single icon resource can contain several images of different sizes and windows can use the appropriate icon size depending on how it's going to be displayed. A new device type doesn't modify the size of the icon, but rather creates a new image within the icon. Only applies to icons and cursors.|
-|**Current Icon/Cursor Image Type**|Opens a submenu that lists the first nine available cursor or icon images. The last command on the submenu, **More...**, opens the [Open \<Device> Image dialog box](../windows/open-device-image-dialog-box-image-editor-for-icons.md).|
+|**Current Icon/Cursor Image Type**|Opens a submenu that lists the first nine available cursor or icon images. The last command on the submenu, **More**, opens the [Open \<Device> Image dialog box](../windows/open-device-image-dialog-box-image-editor-for-icons.md).|
 |**Delete Image Type**|Deletes the selected device image.|
 |**Tools**|Launches a submenu that contains all the tools available from the **Image Editor** toolbar.|
 
@@ -80,10 +70,10 @@ All tools available on the **Image Editor** toolbar are also available from the 
 
 Since many of the drawing tools are available from the [keyboard](../windows/accelerator-keys-image-editor-for-icons.md), it's sometimes useful to hide the **Image Editor** toolbar.
 
-To display or hide the **Image Editor** toolbar, go to menu **View** > **Toolbars** and choose **Image Editor**.
+- To display or hide the **Image Editor** toolbar, go to menu **View** > **Toolbars** and choose **Image Editor**.
 
 > [!NOTE]
-> Elements from this toolbar will appear unavailable when an image file from the current project or solution isn't open in the **Image Editor**. See [Creating an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), for information on adding image files to your projects.
+> Elements from this toolbar will appear unavailable when an image file from the current project or solution isn't open in the **Image Editor**.
 
 ### Option selector
 
@@ -178,9 +168,6 @@ For all **Image Editor** panes with a magnification factor of 4 or greater, you 
 1. Go to menu **Image** > **Grid Settings**.
 
 1. Select the **Pixel Grid** check box to display the grid, or clear the box to hide the grid.
-
-> [!TIP]
-> Tool tips appear when you hover your cursor over a toolbar button. These tips can help you identify the function of each button.
 
 ## Requirements
 

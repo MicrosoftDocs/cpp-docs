@@ -22,7 +22,7 @@ The **String Editor** enables you:
 
 ### To find a string resource in the string table
 
-1. Open the string table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Go to menu **Edit** > **Find and Replace** and choose **Find**.
 
@@ -43,9 +43,9 @@ You can quickly insert or delete entries into the string table using the **Strin
 
 The **String Editor** makes sure you don't use an ID that's already in use. If you select an ID already in use, the **String Editor** will notify you and then assign a generic unique ID, for example `IDS_STRING58113`.
 
-To add a string table entry:
+#### To add a string table entry
 
-1. Open the string table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Right-click within the string table and choose **New String**.
 
@@ -58,7 +58,7 @@ To add a string table entry:
    > [!NOTE]
    > Null strings aren't allowed in Windows string tables. If you create an entry in the string table that's a null string, you'll receive a message asking you to **Please enter a string for this table entry**.
 
-To delete a string table entry:
+#### To delete a string table entry
 
 Select the entry you want to delete and do one of the following:
 
@@ -76,7 +76,7 @@ Select the entry you want to delete and do one of the following:
 
 1. Place the cursor in the target **String Editor** window.
 
-1. In the .rc file to which you want to move the string, right-click and choose **Paste**.
+1. In the *.rc* file to which you want to move the string, right-click and choose **Paste**.
 
 > [!NOTE]
 > If the **ID** or **Value** of the moved string conflicts with an existing **ID** or **value** in the destination file, either that **ID** or the **Value** of the moved string changes.
@@ -88,9 +88,9 @@ You can use in-place editing to change the **ID**, **Value**, and **Caption** pr
 > [!NOTE]
 >  You can also edit a string's properties in the [Properties window](/visualstudio/ide/reference/properties-window).
 
-To change a string or its identifier:
+#### To change a string or its identifier
 
-1. Open the string table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Select the string you want to edit and double-click the **ID**, **Value**, or **Caption** column, then you can:
 
@@ -100,9 +100,9 @@ To change a string or its identifier:
 
    - Type edits in the **Caption** column.
 
-To change the caption property of multiple string resources:
+#### To change the caption property of multiple string resources
 
-1. Open the string table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Select the strings you want to change by holding down the **Ctrl** key as you select each one.
 
@@ -112,7 +112,7 @@ To change the caption property of multiple string resources:
 
 ### To add formatting or special characters to a string resource
 
-1. Open the string table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
 
 1. Select the string you want to modify.
 

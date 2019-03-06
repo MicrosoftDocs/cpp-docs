@@ -88,13 +88,11 @@ For information on enlarging the drop-down portion of a combo box, see [Setting 
 
 ### To test the appearance of values in a combo box
 
-After entering values in the **Data** property, select the **Test** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+1. After entering values in the **Data** property, select the **Test** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
 
-   Try scrolling down the entire value list. Values appear exactly as they are typed in the **Data** property in the **Properties** window. There is no spelling or capitalization checking.
+1. Try scrolling down the entire value list. Values appear exactly as they are typed in the **Data** property in the **Properties** window. There is no spelling or capitalization checking.
 
-   Press **Esc** to return to the **Dialog box** editor.
-
-   You can now modify your code to specify which radio button should appear selected. For example, `m_radioBox1 = 0;` selects the first radio button in the group.
+1. Press **Esc** to return to the **Dialog box** editor.
 
 ## Radio Button Values
 
@@ -117,7 +115,7 @@ You can have more than one group of radio buttons on a dialog box. Add each grou
 
 ### To add a member variable for the radio button group
 
-1. Right-click the first radio button control in the tab order (the dominant control and the one with the **Group** property set to **True**) and choose **Add Variable** from the shortcut menu.
+1. Right-click the first radio button control in the tab order (the dominant control and the one with the **Group** property set to **True**) and choose **Add Variable**.
 
 1. In the [Add Member Variable wizard](../ide/add-member-variable-wizard.md), select the **Control variable** check box, then select the **Value** radio button.
 

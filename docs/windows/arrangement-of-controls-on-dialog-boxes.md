@@ -17,11 +17,11 @@ The location, height, and width of the current control are displayed in the lowe
 
 You can arrange controls on dialog boxes with the **Dialog Editor** in one of three different states:
 
-- With guides and margins on, set as default
+- With guides and margins on, set as default.
 
-- With the layout grid on
+- With the layout grid on.
 
-- Without any snap or alignment features
+- Without any snap or alignment features.
 
 The [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) contains buttons that control the state.
 
@@ -33,11 +33,11 @@ The **Guide Settings** dialog box has the following properties:
 |---|---|
 |**Layout guides**|Displays the settings for the layout guides.|
 |**None**|Hides layout tools.|
-|**Rulers and guides**|When enabled, adds rulers to the layout tools and allows guides to be placed in the rulers.<br/><br/>The default guides are the margins.|
-|**Grid**|Creates a layout grid.<br/><br/>New controls will automatically align to the grid.|
+|**Rulers and guides**|When enabled, adds rulers to the layout tools and allows guides to be placed in the rulers. The default guides are the margins.|
+|**Grid**|Creates a layout grid. New controls will automatically align to the grid.|
 |**Grid spacing**|Displays the settings for the grid spacing in dialog box units (DLUs).|
-|**Width: DLUs**|Sets the width of the layout grid in DLUs.<br/><br/>A horizontal DLU is the average width of the dialog box font divided by 4.|
-|**Height: DLUs**|Sets the height of the layout grid in DLUs.<br/><br/>A vertical DLU is the average height of the dialog box font divided by 8.|
+|**Width: DLUs**|Sets the width of the layout grid in DLUs. A horizontal DLU is the average width of the dialog box font divided by 4.|
+|**Height: DLUs**|Sets the height of the layout grid in DLUs. A vertical DLU is the average height of the dialog box font divided by 8.|
 
 ### Guides and Margins
 
@@ -53,9 +53,9 @@ When you create a dialog box, four modified guides called margins are provided, 
 
 Guides appear as blue dotted lines across the dialog box displayed in the editor and corresponding arrows in the rulers at the top and along the left side of the **Dialog Editor**. The sizing handles of controls snap to guides when the controls are moved, and guides snap to controls if there are no controls previously snapped to the guide. When a guide is moved, controls that are snapped to it move as well. Controls snapped to more than one guide are resized when one of the guides is moved.
 
-- To create a guide, within the ruler, select once to create a guide, or double-click to launch the **Guide Settings** dialog box where you can specify guide settings.
+- To create a guide within the ruler, select once to create a guide, or double-click to launch the **Guide Settings** dialog box where you can specify guide settings.
 
-- To set a guide, on the dialog box, select the guide and drag it to a new position, or select the arrow in the ruler to drag the associated guide.
+- To set a guide on the dialog box, select the guide and drag it to a new position, or select the arrow in the ruler to drag the associated guide.
 
    The coordinates of the guide are displayed in the status bar at the bottom of the window and in the ruler or move the pointer over the arrow in the ruler to display the exact position of the guide.
 
@@ -71,7 +71,7 @@ When you're placing or arranging controls in a dialog box, use the layout grid f
 
 - To turn the layout grid on or off, go to menu **Format** > **Guide Settings** and select or clear the **Grid** button.
 
-   You can still control the grid in individual **Dialog Editor** windows using the **Toggle Grid** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+   You can still control the grid in individual **Dialog Editor** windows using the **Toggle Grid** button on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
 
 - To change the size of the layout grid, go to menu **Format** > **Guide Settings** and type the height and width in DLUs for the cells in the grid. The minimum height or width is 4.
 
@@ -138,7 +138,7 @@ Use the sizing handles to resize a control. When the pointer is positioned on a 
 
    If necessary with multiple controls, size each to snap to the second guide.
 
-### Combo Box
+### Other Controls
 
 You can size a combo box when you add it to the dialog box. You can also specify the size of the drop-down list box. For more information, see [Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md).
 

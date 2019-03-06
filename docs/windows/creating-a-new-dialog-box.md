@@ -9,14 +9,16 @@ ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
 
 The location and size of a C++ dialog box, and the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.
 
+> [!NOTE]
+> If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
+## How To
 
-## To create a new dialog box
+The **Dialog Editor** enables you:
 
-1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Add Resource** from the shortcut menu.
+### To create a new dialog box
 
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file and select **Add Resource**.
 
 1. In the **Add Resource** dialog box, select **Dialog** in the **Resource Type** list, then choose **New**.
 
@@ -24,9 +26,9 @@ The location and size of a C++ dialog box, and the location and size of controls
 
    The new dialog box opens in the **Dialog Editor**.
 
-   You can also [open existing dialog boxes in the Dialog Box editor for editing](../windows/viewing-and-editing-resources-in-a-resource-editor.md).
+You can also open existing dialog boxes in the Dialog Box editor for editing.
 
-## To create a dialog box that a user can't exit
+### To create a dialog box that a user can't exit
 
 You can create a runtime dialog box that a user can't exit. This kind of dialog box is useful for logons, and for application or document locks.
 
@@ -38,22 +40,30 @@ You can create a runtime dialog box that a user can't exit. This kind of dialog 
 
    At run time, a user can't exit a modal dialog box that has these characteristics.
 
-To enable testing of this kind of dialog box, the test dialog box function detects when **Esc** is pressed. (**Esc** is also known as the VK_ESCAPE virtual key.) No matter how the dialog box is designed to behave at run time, you can end test mode by pressing **Esc**.
+To enable testing of this kind of dialog box, the test dialog box function detects when **Esc** is pressed. **Esc** is also known as the VK_ESCAPE virtual key. No matter how the dialog box is designed to behave at run time, you can end test mode by pressing **Esc**.
 
 > [!NOTE]
 > For MFC applications, to create a dialog box that users cannot exit, you must override the default behavior of `OnOK` and `OnCancel` because even if you delete the associated buttons, the dialog box can still be dismissed by pressing **Enter** or **Esc**.
 
-## To specify the location and size of a dialog box
+### To specify the location and size of a dialog box
 
-There are three properties that you can set in the [Properties Window](/visualstudio/ide/reference/properties-window) to specify where a dialog box will appear onscreen.
+There are properties you can set in the [Properties Window](/visualstudio/ide/reference/properties-window) to specify where a dialog box will appear onscreen.
 
-- The **Center** property is Boolean, if you set the value to **True**, the dialog box will always appear in the center of the screen. If you set this property to **False**, you can then set the **XPos** and **YPos** properties.
-- The **XPos** and **YPos** properties are used to explicitly define where onscreen the dialog box will appear. These position properties are offset values from the upper left-hand corner of the viewing area, which is defined as `{X=0, Y=0}`.
-- The position is also based on the **Absolute Align** property. If **True**, the coordinates are relative to the screen. If **False**, the coordinates are relative to the dialog owner's window.
+- The Boolean **Center** property.
 
-## To test a dialog box
+   If you set the value to **True**, the dialog box will always appear in the center of the screen. If you set this property to **False**, you can then set the **XPos** and **YPos** properties.
 
-When you're designing a dialog box, you can also simulate and test its run-time behavior without compiling your program. In this mode, you can:
+- The **XPos** and **YPos** properties that are used to explicitly define where onscreen the dialog box will appear.
+
+   These position properties are offset values from the upper left-hand corner of the viewing area, which is defined as `{X=0, Y=0}`.
+
+- The **Absolute Align** property that affects position.
+
+   If **True**, the coordinates are relative to the screen. If **False**, the coordinates are relative to the dialog owner's window.
+
+### To test a dialog box
+
+When you're designing a dialog box, you can simulate and test its run-time behavior without compiling your program. In this mode, you can:
 
 - Type text, select from combo-box lists, turn options on or off, and choose commands.
 
@@ -64,7 +74,7 @@ When you're designing a dialog box, you can also simulate and test its run-time 
 - Test the keyboard shortcuts for controls in the dialog box.
 
 > [!NOTE]
-> Connections to dialog box code made by using wizards are not included in the simulation.
+> Connections to dialog box code made by using wizards aren't included in the simulation.
 
 When you test a dialog box, it typically displays at a location that's relative to the main program window. If you've set the dialog box **Absolute Align** property to **True**, the dialog box displays at a position that's relative to the upper-left corner of the screen.
 

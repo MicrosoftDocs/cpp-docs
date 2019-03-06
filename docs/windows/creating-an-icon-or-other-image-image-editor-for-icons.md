@@ -41,6 +41,9 @@ When you create a new icon or cursor resource, the **Image Editor** first create
 
 When you open the icon or cursor resource in the [Image Editor](../windows/image-editor-for-icons.md), the image most closely matching the current display device is opened by default.
 
+> [!NOTE]
+> If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+
 The **New &lt;Device&gt; Image Type** dialog box enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, go to menu **Image** > **New Image Type**. The following properties included are **Target Image Type** and **Custom**.
 
 The **Target Image Type** property lists the available image types where you select the image type you want to open:
@@ -75,10 +78,7 @@ Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ pr
 
 #### To create a new icon or cursor
 
-1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource**. If you already have an existing image resource in your .rc file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
 
 1. In the [Insert Resource dialog box](../windows/add-resource-dialog-box.md), select **Icon** or **Cursor** and choose **New**. For icons, this action creates an icon resource with a 32 × 32, 16-color icon. For cursors, a 32 × 32, Monochrome (2-color) image is created.
 
@@ -139,10 +139,7 @@ Using the **Image Editor**, icons and cursors can be sized large (64 × 64) with
 
 #### To create a 256-color icon or cursor
 
-1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource**. If you already have an existing image resource in your .rc file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
 
 1. In the [Insert Resource dialog box](../windows/add-resource-dialog-box.md), select **Icon** or **Cursor** and choose **New**.
 
@@ -161,11 +158,9 @@ To draw with a selection from the 256-color palette, you need to select the colo
    > [!NOTE]
    > The initial palette used for 256-color images matches the palette returned by the `CreateHalftonePalette` Windows API. All icons intended for the Windows shell should use this palette to prevent flicker during palette realization.
 
-### Set a cursor&#39;s hot spot
+### To set a cursor's hot spot
 
 The hot spot of a cursor is the point to which Windows refers in tracking the cursor's position. By default, the hot spot is set to the upper-left corner of the cursor with coordinates `0,0`. The **Hotspot** property in the [Properties window](/visualstudio/ide/reference/properties-window) shows the hot spot coordinates.
-
-#### To set a cursor's hot spot
 
 1. On the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md), choose the **Set Hotspot** tool.
 
@@ -211,10 +206,7 @@ You can open GIF or JPEG images in the **Image Editor** and save them as bitmaps
 
 ### To add a new image resource to an unmanaged C++ project
 
-1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file, then choose **Insert Resource**. If you already have an existing image resource in your .rc file, such as a cursor, you can simply right-click the **Cursor** folder and select **Insert Cursor**.
-
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can simply right-click the **Cursor** folder and select **Insert Cursor**.
 
 1. In the [Insert Resource dialog box](../windows/add-resource-dialog-box.md), select the type of image resource you'd like to create (**Bitmap**, for example) then choose **New**.
 
@@ -230,7 +222,7 @@ You can open GIF or JPEG images in the **Image Editor** and save them as bitmaps
 
 1. In the **Templates** pane, choose the resource type you'd like to add to your project.
 
-   The resource is added to your project in **Solution Explorer** and the resource opens in the [Image editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the **Image Editor** to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).
+   The resource is added to your project in **Solution Explorer** and the resource opens in the [Image Editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the **Image Editor** to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).
 
 ## Requirements
 

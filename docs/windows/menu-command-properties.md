@@ -12,40 +12,40 @@ The information below is organized according to the **Menu** properties that app
 |--------------|-----------------|
 |**Break**|Can be one of these values:<br/>  - **None**: No break. This is the default.<br/>  - **Column**: For static menus, this value places the menu command on a new line.<br/>      For pop-up menus, this value places the menu command in a new column with no dividing line between the columns.<br/>      Setting this property affects the appearance of the menu only at run time, not in the menu editor.<br />   - **Bar**: Same as **Column** except, for pop-up menus, this value separates the new column from the old column with a vertical line.<br/>      Setting this property affects the appearance of the menu only at run time, not in the **Menu Editor**.|
 |**Caption**|The text that labels the menu command (the menu name). To make one of the letters in the caption of a menu command the mnemonic key, precede it with an ampersand (&).|
-|**Checked**|If **True**, the menu command is initially checked.<br/><br/>Type: **Bool**. Default: **False**.|
+|**Checked**|If **True**, the menu command is initially checked. Type: **Bool**. Default: **False**.|
 |**Enabled**|If **False**, the menu item is disabled.|
-|**Grayed**|If **True**, the menu command is initially grayed and inactive.<br/><br/>Type: **Bool**. Default: **False**.|
-|**Help**|Aligns menu item to the right.<br/><br/>For example, the **Help** menu command is always on the right in all Windows applications. If you set this property on a menu item, that item will appear at the very far right and at the very end of the menu. Applies to top-level items.<br/><br/>Default: **False**.|
-|**ID**|A symbol defined in the header file.<br/><br/>You may use any symbol that is commonly available in any of the editors, even though the [Properties Window](/visualstudio/ide/reference/properties-window) does not provide a drop-down list for you to select from.<br/><br/>Type: **Symbol**, **Integer**, or **Quoted String**.|
-|**Popup**|If **True**, the menu command is a pop-up menu.<br/><br/>Type: **Bool**. Default: **True** for top-level menus on a menu bar, otherwise **False**.|
+|**Grayed**|If **True**, the menu command is initially grayed and inactive. Type: **Bool**. Default: **False**.|
+|**Help**|Aligns menu item to the right. Default: **False**.<br/><br/>For example, the **Help** menu command is always on the right in all Windows applications. If you set this property on a menu item, that item will appear at the very far right and at the very end of the menu. Applies to top-level items.|
+|**ID**|A symbol defined in the header file. Type: **Symbol**, **Integer**, or **Quoted String**.<br/><br/>You may use any symbol that is commonly available in any of the editors, even though the [Properties Window](/visualstudio/ide/reference/properties-window) does not provide a drop-down list for you to select from.|
+|**Popup**|If **True**, the menu command is a pop-up menu. Type: **Bool**. Default: **True** for top-level menus on a menu bar, otherwise **False**.|
 |**Prompt**|Contains text to appear in the status bar when this menu command is highlighted. The text is placed in the string table with the same identifier as the menu command.<br/><br/>This property is available for any type of project, but the run-time functionality is MFC specific.|
-|**Right to Left Justify**|Right-justifies the menu command on the menu bar at run time.<br/><br/>Type: **Bool**. Default: **False**.|
+|**Right to Left Justify**|Right-justifies the menu command on the menu bar at run time. Type: **Bool**. Default: **False**.|
 |**Right to Left Order**|Allows menu commands to display right to left when the interface is localized to any language that reads right-to-left, such as Hebrew or Arabic.|
-|**Separator**|If **True**, the menu command is a separator.<br/><br/>Type: **Bool**. Default: **False**.|
+|**Separator**|If **True**, the menu command is a separator. Type: **Bool**. Default: **False**.|
 
 ## Associate Menu Commands
 
 There are often times you want a menu command and a keyboard combination to issue the same program command. Identical commands are issued by using the **Menu Editor** to assign the same resource identifier to the menu command and to an entry in your application's accelerator table. You then edit the [Caption](../windows/menu-command-properties.md) of the menu command to show the name of the accelerator key.
 
-- To associate a menu command with an accelerator key:
+### To associate a menu command with an accelerator key
 
-   1. In the **Menu Editor**, select the menu command you want.
+1. In the **Menu Editor**, select the menu command you want.
 
-   1. In the [Properties Window](/visualstudio/ide/reference/properties-window), add the name of the accelerator key to the **Caption** property:
+1. In the [Properties Window](/visualstudio/ide/reference/properties-window), add the name of the accelerator key to the **Caption** property:
 
-      - Following the menu caption, type the escape sequence for a tab (\t), so that all the menu's accelerator keys are left aligned.
+   - Following the menu caption, type the escape sequence for a tab (\t), so that all the menu's accelerator keys are left aligned.
 
-      - Type the name of the modifier key (**Ctrl**, **Alt**, or **Shift**) followed by a plus sign (**+**) and the name, letter, or symbol of the additional key.
+   - Type the name of the modifier key (**Ctrl**, **Alt**, or **Shift**) followed by a plus sign (**+**) and the name, letter, or symbol of the additional key.
 
-      For example, to assign **Ctrl**+**O** to the **Open** command on the **File** menu, you modify the menu command's **Caption** so that it looks like the following text:
+   For example, to assign **Ctrl**+**O** to the **Open** command on the **File** menu, you modify the menu command's **Caption** so that it looks like the following text:
 
-      ```
-      &Open...\tCtrl+O
-      ```
+   ```
+   &Open...\tCtrl+O
+   ```
 
-      The menu command in the **Menu Editor** is updated to reflect the new caption as you type it.
+   The menu command in the **Menu Editor** is updated to reflect the new caption as you type it.
 
-   1. [Create the accelerator-table entry](../windows/adding-an-entry-to-an-accelerator-table.md) in the **Accelerator** editor and assign it the same identifier as the menu command. Use a key combination that you think will be easy to remember.
+1. [Create the accelerator-table entry](../windows/adding-an-entry-to-an-accelerator-table.md) in the **Accelerator** editor and assign it the same identifier as the menu command. Use a key combination that you think will be easy to remember.
 
 Your MFC application can display descriptive text for each of the menu commands a user may select. Display descriptive text by assigning a text string to each menu command using the **Prompt** property in the **Properties** window. If you have a string in the [string table](../windows/string-editor.md) whose ID is the same as the command, an MFC application will automatically display this string resource in the status bar of the running application when a user hovers over a menu item.
 
@@ -60,7 +60,7 @@ In a C++ project, you can assign an access key (a mnemonic that allows the user 
    The menu item will provide a visible cue that one of the letters has a shortcut key assigned to it. The letter following the ampersand will appear underlined (contingent on the operating system).
 
 > [!NOTE]
-> Make sure all the access keys on a menu are unique by right-clicking your menu and choosing **Check Mnemonics** from the shortcut menu.
+> Make sure all the access keys on a menu are unique by right-clicking your menu and choosing **Check Mnemonics**.
 
 ## Requirements
 

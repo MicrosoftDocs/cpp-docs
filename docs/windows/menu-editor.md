@@ -16,94 +16,100 @@ Menus allow you to arrange commands in a logical and easy-to-find fashion. With 
 
 The **Menu Editor** enables you:
 
-- To create a standard menu:
+### To create a standard menu
 
-   1. Go to menu **View** > **Resource View** and right-click on the **Menu** heading. Choose **Add Resource**, then **Menu**.
+1. Go to menu **View** > **Resource View** and right-click on the **Menu** heading. Choose **Add Resource**, then **Menu**.
 
-   1. Select the **New Item** box (the rectangle that contains *Type Here*) on the menu bar.
+1. Select the **New Item** box (the rectangle that contains *Type Here*) on the menu bar.
 
-      ![New Item box in the menu editor](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
-      New Item Box
+   ![New Item box in the menu editor](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
+   **New Item** box
 
-   1. Type a name for your new menu, for example, *File*.
+1. Type a name for your new menu, for example, *File*.
 
-      The text you type appears in both the **Menu Editor** and in the **Caption** box in the [Properties Window](/visualstudio/ide/reference/properties-window). You can edit the properties for your new menu in either location.
+   The text you type appears in both the **Menu Editor** and in the **Caption** box in the [Properties Window](/visualstudio/ide/reference/properties-window). You can edit the properties for your new menu in either location.
 
-      Once you have given your new menu a name on the menu bar, the new-item box shifts to the right (to allow you to add another menu), and another new-item box opens below your first menu so you can add menu commands to it.
+   Once you have given your new menu a name on the menu bar, the new-item box shifts to the right (to allow you to add another menu), and another new-item box opens below your first menu so you can add menu commands to it.
 
-      ![Expanded New Item box](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")<br/>
-      New Item Box with Focus Shifted After You Type Menu Name
+   ![Expanded New Item box](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")<br/>
+   **New Item** box with focus shifted after you type menu name
 
    > [!NOTE]
    > To create a single-item menu on the menu bar, set the **Popup** property to **False**.
 
-- To create a submenu:
+### To create a submenu
 
-   1. Select the menu command for which you want to create a submenu.
+1. Select the menu command for which you want to create a submenu.
 
-   1. In the **New Item** box that appears to the right, type the name of the new menu command. This new command will appear first on the submenu menu.
+1. In the **New Item** box that appears to the right, type the name of the new menu command. This new command will appear first on the submenu menu.
 
-   1. Add additional menu commands to the submenu menu.
+1. Add additional menu commands to the submenu menu.
 
-- To insert a new menu between existing menus, select an existing menu name and press the **Insert** key, or right-click on the menu bar and choose **Insert New**.
+### To insert a new menu between existing menus
+
+Select an existing menu name and press the **Insert** key, or right-click on the menu bar and choose **Insert New**.
 
    The **New Item** box is inserted before the selected item.
 
-- To add commands to a menu:
+### To add commands to a menu
 
-   1. Create a menu. Then select a menu name, for example, **File**.
+1. Create a menu. Then select a menu name, for example, **File**.
 
-      Each menu will expand and expose a new item box for commands. For example, you can add the commands **New**, **Open**, and **Close** to a **File** menu.
+   Each menu will expand and expose a new item box for commands. For example, you can add the commands **New**, **Open**, and **Close** to a **File** menu.
 
-   1. In the new item box, type a name for the new menu command.
-
-      > [!NOTE]
-      > The text you type appears in both the **Menu Editor** and in the **Caption** box in the [Properties Window](/visualstudio/ide/reference/properties-window). You can edit the properties for your new menu in either location.
-
-      > [!TIP]
-      > You can define a mnemonic key (hot key) that allows the user to select the menu command. Type an ampersand (`&`) in front of a letter to specify it as the mnemonic. The user can select the menu command by typing that letter.
-
-   1. In the **Properties** window, select the menu command properties that apply. For details, see [Menu Command Properties](../windows/menu-command-properties.md).
-
-   1. In the **Prompt** box in the **Properties** window, type the prompt string you want to appear in your application's status bar.
-
-      This step creates an entry in the string table with the same resource identifier as the menu command you created.
-
-      > [!NOTE]
-      > Prompts can only apply to menu items with a **Popup** property of **True**. For example, top-level menu items can have prompts if they have sub-menu items. The purpose of a **Prompt** is to indicate what will happen if a user selects the menu item.
-
-   1. Press **Enter** to complete the menu command.
-
-      The new item box is selected so you can create additional menu commands.
-
-- To select multiple menu commands to run bulk operations such as deleting or changing properties, while holding down the **Ctrl** key, select the menus or submenu commands you want.
-
-- To move and copy menus and menu commands:
-
-   - Use the drag-and-drop method:
-
-      1. Drag or copy the item you want to move to:
-
-         - A new location on the current menu.
-
-         - A different menu. You can navigate to other menus by dragging the mouse pointer over them.
-
-      1. Drop the menu command when the insertion guide shows the position you want.
-
-   - Use shortcut menu commands:
-
-      1. Right-click one or more menus or menu commands, then choose **Cut** (to move) or **Copy**.
-
-      1. If you're moving the items to another menu resource or resource script file, [open it in another window](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
-
-      1. Select the position of the menu or menu command you want to move or copy to.
-
-      1. From the shortcut menu, choose **Paste**. The moved or copied item is placed before the item you select.
+1. In the new item box, type a name for the new menu command.
 
    > [!NOTE]
-   > You can also drag, copy, and paste to other menus in other menu windows.
+   > The text you type appears in both the **Menu Editor** and in the **Caption** box in the [Properties Window](/visualstudio/ide/reference/properties-window). You can edit the properties for your new menu in either location.
 
-- To delete a menu or menu command, right-click the menu name or command and choose **Delete**.
+   > [!TIP]
+   > You can define a mnemonic key (hot key) that allows the user to select the menu command. Type an ampersand (`&`) in front of a letter to specify it as the mnemonic. The user can select the menu command by typing that letter.
+
+1. In the **Properties** window, select the menu command properties that apply. For details, see [Menu Command Properties](../windows/menu-command-properties.md).
+
+1. In the **Prompt** box in the **Properties** window, type the prompt string you want to appear in your application's status bar.
+
+   This step creates an entry in the string table with the same resource identifier as the menu command you created.
+
+   > [!NOTE]
+   > Prompts can only apply to menu items with a **Popup** property of **True**. For example, top-level menu items can have prompts if they have sub-menu items. The purpose of a **Prompt** is to indicate what will happen if a user selects the menu item.
+
+1. Press **Enter** to complete the menu command.
+
+   The new item box is selected so you can create additional menu commands.
+
+### To select multiple menu commands to run bulk operations such as deleting or changing properties
+
+While holding down the **Ctrl** key, select the menus or submenu commands you want.
+
+### To move and copy menus and menu commands
+
+- Use the drag-and-drop method:
+
+   1. Drag or copy the item you want to move to:
+
+      - A new location on the current menu.
+
+      - A different menu. You can navigate to other menus by dragging the mouse pointer over them.
+
+   1. Drop the menu command when the insertion guide shows the position you want.
+
+- Use shortcut menu commands:
+
+   1. Right-click one or more menus or menu commands, then choose **Cut** (to move) or **Copy**.
+
+   1. If you're moving the items to another menu resource or resource script file, [open it in another window](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
+
+   1. Select the position of the menu or menu command you want to move or copy to.
+
+   1. From the shortcut menu, choose **Paste**. The moved or copied item is placed before the item you select.
+
+> [!NOTE]
+> You can also drag, copy, and paste to other menus in other menu windows.
+
+### To delete a menu or menu command
+
+Right-click the menu name or command and choose **Delete**.
 
 > [!NOTE]
 > Similarly, you can use the shortcut menu to perform other actions such as Copy, Cut, Paste, Insert New, Insert Separator, Edit IDs, View as Pop-up, Check Mnemonics, etc.

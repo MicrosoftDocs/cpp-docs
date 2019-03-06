@@ -37,26 +37,26 @@ You can use the **Colors** window with the [Image Editor toolbar](../windows/too
 
 The **Colors** palette initially displays 16 standard colors. With displayed colors, you can also create your own custom colors. You can then save and load a customized Color palette.
 
-The **Custom Color Selector** dialog box allows you to customize the colors you use for your image. The following properties included are:
+The **Custom Color Selector** dialog box allows you to customize the colors you use for your image with the following properties:
 
 |Property|Description|
 |--------------------------|--------------------------|
 |**Gradient Color Display**|Changes the values of a selected color.<br/><br/>Position the crosshair on the color you want to change and move the slider up or down to change the luminosity or RGB values of the color.|
 |**Luminosity Bar**|Sets the luminosity for the color you select in the **Gradient Color Display** box.<br/><br/>Select and drag the white arrow up the bar for greater brightness or down for less. The **Color** box displays the color you've selected and the effect of the luminosity you set.|
-|**Color**|Lists the hue (color wheel value) of the color you're defining.<br/><br/>Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
-|**Hue**|Lists the hue (color wheel value) of the color you're defining.<br/><br/>Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
-|**Sat**|Specifies the saturation value of the color you're defining.<br/><br/>Saturation is the amount of color in a specified hue. Values range from 0 to 240.|
-|**Lum**|Lists the luminosity (brightness) of the color you're defining.<br/><br/>Values range from 0 to 240.|
-|**Red**|Specifies the red value of the color you're defining.<br/><br/>Values range from 0 to 255.|
-|**Green**|Specifies the green value of the color you're defining.<br/><br/>Values range from 0 to 255.|
-|**Blue**|Specifies the blue value of the color you're defining.<br/><br/>Values range from 0 to 255.|
+|**Color**|Lists the hue (color wheel value) of the color you're defining. Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
+|**Hue**|Lists the hue (color wheel value) of the color you're defining. Values range from 0 to 240, where 0 is red, 60 is yellow, 120 is green, 180 is cyan, 200 is magenta, and 240 is blue.|
+|**Sat**|Specifies the saturation value of the color you're defining. Saturation is the amount of color in a specified hue. Values range from 0 to 240.|
+|**Lum**|Lists the luminosity (brightness) of the color you're defining. Values range from 0 to 240.|
+|**Red**|Specifies the red value of the color you're defining. Values range from 0 to 255.|
+|**Green**|Specifies the green value of the color you're defining. Values range from 0 to 255.|
+|**Blue**|Specifies the blue value of the color you're defining. Values range from 0 to 255.|
 
 You can save and load a **Colors** palette that contains customized colors. By default, the **Colors** palette most recently used is automatically loaded when you start Visual Studio.
 
 > [!TIP]
 > Since the **Image Editor** has no means to restore the default **Colors** palette, you should save the default **Colors** palette under a name such as *standard.pal* or *default.pal* so that you can easily restore the default settings.
 
-Use the **Load Palette Colors** dialog box to load special color palettes to use in your C++ project. The following properties included are:
+Use the **Load Palette Colors** dialog box to load special color palettes to use in your C++ project with following properties:
 
 |Property|Description|
 |-----------------|-----------------|
@@ -77,9 +77,6 @@ Except for the **Eraser**, tools on the **Image Editor** toolbar draw with the c
 ### To fill a bounded area of an image with a color
 
 The **Image Editor** provides the **Fill** tool for filling any enclosed image area with the current drawing color or the current background color.
-
-> [!TIP]
-> Tool tips appear when you hover your cursor over a toolbar button. These tips can help you identify the function of each button.
 
 ### To use the fill tool
 
@@ -167,7 +164,7 @@ None
 ## See Also
 
 [Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-editor-for-icons.md)<br/>
+[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
 [How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
 [How to: Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
 [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

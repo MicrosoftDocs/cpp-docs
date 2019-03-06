@@ -13,6 +13,9 @@ The **Image Editor** has freehand drawing and erasing tools that all work in the
 
 You can select drawing tools from either the **Image Editor** toolbar or the **Image** menu. When you select the **Eraser** tool, **Brush** tool, or **Airbrush** tool, the option selector displays that tool's options.
 
+> [!TIP]
+>  Tool tips appear when you hover your cursor over the buttons on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md). These tips will help you identify the specific buttons mentioned here.
+
 ### To select and use a drawing tool from the Image Editor toolbar
 
 1. Select a button on the **Image Editor** toolbar.
@@ -24,18 +27,15 @@ You can select drawing tools from either the **Image Editor** toolbar or the **I
 
    - The **Pencil** tool draws freehand in a constant width of one pixel.
 
-   - The **option selector determines the Brush tool's shape and size**.
+   - The **Brush** tool has various shapes and sizes.
 
    - The **Airbrush** tool randomly distributes color pixels around the center of the brush.
-
-        > [!TIP]
-        >  Tool tips appear when you hover your cursor over the buttons on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md). These tips will help you identify the specific buttons mentioned here.
 
 1. If necessary, select colors and a brush:
 
    - In the [Colors palette](../windows/colors-window-image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
 
-   - In the [Options Selector](../windows/toolbar-image-editor-for-icons.md), select a shape representing the brush you want to use.
+   - In the [Options selector](../windows/toolbar-image-editor-for-icons.md), select a shape representing the brush you want to use.
 
 1. Point to the place on the image where you want to start drawing or painting. The pointer changes shape according to the tool you selected.
 
@@ -85,7 +85,7 @@ A custom brush is a rectangular portion of an image that you pick up and use lik
 
 ### To create a custom brush from a portion of an image
 
-1. [Select the part of the image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) that you want to use for a brush.
+1. Select the part of the image that you want to use for a brush.
 
 1. Hold the **Shift** key down, choose in the selection and drag it across the image, or go to menu **Image** > **Use Selection as Brush**.
 
@@ -100,9 +100,9 @@ You can use the custom brush like a stamp or a stencil to create different speci
 
 ### To draw custom brush shapes in the background color
 
-1. [Select an opaque or transparent background](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).
+1. Select an opaque or transparent background.
 
-1. [Set the background color](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) to the color in which you want to draw.
+1. Set the background color to the color in which you want to draw.
 
 1. Position the custom brush where you want to draw.
 
@@ -123,7 +123,7 @@ None
 ## See Also
 
 [Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-editor-for-icons.md)<br/>
+[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
 [How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
 [How to: Work with Color](../windows/working-with-color-image-editor-for-icons.md)<br/>
 [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

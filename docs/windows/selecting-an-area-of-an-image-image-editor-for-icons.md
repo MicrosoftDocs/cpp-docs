@@ -14,7 +14,11 @@ You can use selection tools to define an area of an image that you want to cut, 
 
 You can also create a custom brush from a selection. For more information, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).
 
-## Select an Image
+## How To
+
+To edit an image, see how:
+
+### To select an image
 
 1. Use the **Image Editor** toolbar or go to menu **Image** > **Tools** and choose the selection tool you want.
 
@@ -24,21 +28,21 @@ You can also create a custom brush from a selection. For more information, see [
 
 1. Release the mouse button. The selection border encloses the selected area.
 
-### To select an entire image
+#### To select an entire image
 
-1. Select the image outside of the current selection. The selection border changes focus and encompasses the whole image once again.
+Select the image outside of the current selection. The selection border changes focus and encompasses the whole image once again.
 
-## Edit Parts of an Image
+### To edit parts of an image
 
 You can perform standard editing operations — cutting, copying, clearing, and moving — on a [selection](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), whether the selection is the entire image or just a part of it. Because the **Image Editor** uses the **Windows Clipboard**, you can transfer images between the **Image Editor** and other applications for Windows.
 
 In addition, you can resize the selection, whether it includes the entire image or just a part.
 
-### To cut the current selection and move it to the clipboard
+#### To cut the current selection and move it to the clipboard
 
 Go to menu **Edit** > **Cut**.
 
-### To copy the selection
+#### To copy the selection
 
 1. Position the pointer inside the selection border or anywhere on it except the sizing handles.
 
@@ -46,7 +50,7 @@ Go to menu **Edit** > **Cut**.
 
 1. To copy the selection into the image at its current location, select outside the selection cursor.
 
-### To paste the clipboard contents into an image
+#### To paste the clipboard contents into an image
 
 1. Go to menu **Edit** > **Paste**.
 
@@ -56,16 +60,16 @@ Go to menu **Edit** > **Cut**.
 
 1. To anchor the image at its new location, select outside of the selection border.
 
-### To delete the current selection without moving it to the clipboard
+#### To delete the current selection without moving it to the clipboard
 
 Go to menu **Edit** > **Delete**.
 
    The original area of the selection is filled with the current background color.
 
 > [!NOTE]
-> You can access the **Cut**, **Copy**, **Paste**, and **Delete** commands by right clicking in the **Resource View** window.
+> You can access the **Cut**, **Copy**, **Paste**, and **Delete** commands by right-clicking in the **Resource View** window.
 
-### To move the selection
+#### To move the selection
 
 1. Position the pointer inside the selection border or anywhere on it except the sizing handles.
 
@@ -75,7 +79,7 @@ Go to menu **Edit** > **Delete**.
 
 For more information on drawing with a selection, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).
 
-## Flip an Image
+### To flip an image
 
 You can flip or rotate an image to either create a mirror image of the original, turn the image upside down, or rotate the image to the right 90 degrees at a time.
 
@@ -88,7 +92,7 @@ You can flip or rotate an image to either create a mirror image of the original,
    > [!NOTE]
    > You can also use the [accelerator (shortcut) keys](../windows/accelerator-keys-image-editor-for-icons.md) for these commands or access the commands from the shortcut menu (select outside the image while in the **Image Editor**).
 
-## Resize an Image
+### To resize an image
 
 The behavior of the **Image Editor** while resizing an image depends on whether you've [selected](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) the entire image or just part of it.
 
@@ -104,7 +108,7 @@ Sizing handles
 > [!NOTE]
 > If you have the **Tile Grid** option selected in the [Grid Settings dialog box](../windows/grid-settings-dialog-box-image-editor-for-icons.md), then resizing snaps to the next tile grid line. If only the **Pixel Grid** option is selected (the default setting), resizing snaps to the next available pixel.
 
-### To resize an entire image using the properties window
+#### To resize an entire image using the properties window
 
 1. Open the image whose properties you want to change.
 
@@ -117,7 +121,7 @@ Sizing handles
    > [!NOTE]
    > You can use the **Width** and **Height** properties to resize only the entire image, not to resize a partial selection.
 
-### To crop or extend an entire image
+#### To crop or extend an entire image
 
 1. Select the entire image.
 
@@ -127,7 +131,7 @@ Sizing handles
 
 Normally, the **Image Editor** crops or enlarges an image when you resize it by moving a sizing handle. If you hold down the **Shift** key as you move a sizing handle, the **Image Editor** shrinks or stretches the image.
 
-### To shrink or stretch an entire image
+#### To shrink or stretch an entire image
 
 1. Select the entire image.
 
@@ -135,17 +139,15 @@ Normally, the **Image Editor** crops or enlarges an image when you resize it by 
 
 1. Hold down the **Shift** key and drag a sizing handle until the image is the right size.
 
-### To shrink or stretch part of an image
+#### To shrink or stretch part of an image
 
 1. Select the part of the image you want to resize. For more information, see [Selecting an Area of the Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md).
 
 1. Drag one of the sizing handles until the selection is the right size.
 
-## Edit an Image Outside of a Project
+### To edit an image outside of a project
 
-You can open and edit images in the development environment just as you would in any graphics application. The images you work with need not be part of a Visual Studio project for stand-alone editing.
-
-### To open a bitmap for stand-alone editing
+You can open and edit images in the development environment just as you would in any graphics application, for example opening a bitmap for stand-alone editing. The images you work with need not be part of a Visual Studio project.
 
 1. Go to menu **File** > **Open**.
 
@@ -153,11 +155,9 @@ You can open and edit images in the development environment just as you would in
 
 1. Locate and open the image you want to edit.
 
-## Change Image Properties
+### To change image properties
 
 You can set or modify properties of an image using the [Properties window](/visualstudio/ide/reference/properties-window).
-
-### To change an image's properties
 
 1. Open the image in the **Image Editor**.
 
@@ -168,7 +168,7 @@ You can set or modify properties of an image using the [Properties window](/visu
    |**Colors**|Specifies the color scheme for the image. Select **Monochrome**, **16**, or **256**, or **True Color**.<br/><br/>If you've already drawn the image with a 16-color palette, selecting **Monochrome** causes substitutions of black and white for the colors in the image. Contrast is not always maintained: for example, adjacent areas of red and green are both converted to black.|
    |**Filename**|Specifies the name of the image file.<br/><br/>By default, Visual Studio assigns a base filename created by removing the first four characters ("IDB_") from the default resource identifier (IDB_BITMAP1) and adding the appropriate extension. The file name for the image in this example would be *BITMAP1.bmp*. You could rename it *MYBITMAP1.bmp*.|
    |**Height**|Sets the height of the image (in pixels). The default value is 48.<br/><br/>The image is cropped or blank space is added below the existing image.|
-   |**ID**|Sets the resource's identifier.<br/><br/>For an image, Microsoft Visual Studio, by default, assigns the next available identifier in a series: IDB_BITMAP1, IDB_BITMAP2, and so forth.<br/><br/>Similar names are used for icons and cursors.|
+   |**ID**|Sets the resource's identifier.<br/><br/>For an image, Microsoft Visual Studio, by default, assigns the next available identifier in a series: IDB_BITMAP1, IDB_BITMAP2, and so forth. Similar names are used for icons and cursors.|
    |**Palette**|Changes color properties.<br/><br/>Double-click to select a color and display the [Custom Color Selector dialog box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md). Define the color by typing RGB or HSL values in the appropriate text boxes.|
    |**SaveCompressed**|Indicates whether the image is in a compressed format. This property is read-only.<br/><br/>Visual Studio doesn't allow you to save images in a compressed format, so for any images created in Visual Studio, this property will be **False**. If you open a compressed image (created in another program) in Visual Studio, this property will be **True**. If you save a compressed image using Visual Studio, it will be uncompressed and this property will revert back to **False**.|
    |**Width**|Sets the width of the image (in pixels). The default value for bitmaps is 48.<br/><br/>The image is cropped or blank space is added to the right of the existing image.|
@@ -180,7 +180,7 @@ None
 ## See Also
 
 [Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-editor-for-icons.md)<br/>
+[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
 [How to: Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
 [How to: Work with Color](../windows/working-with-color-image-editor-for-icons.md)<br/>
 [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
