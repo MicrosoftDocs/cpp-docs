@@ -1,11 +1,11 @@
 ---
-title: "Connect to your remote Linux computer  in Visual Studio"
+title: "Connect to your remote Linux computer in Visual Studio"
 description: "How to connect to a remote Linux machine from inside a Visual Studio C++ project."
 ms.date: "07/20/2018"
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
 ---
 
-# Connect to Your remote Linux computer
+# Connect to your remote Linux computer
 
 When building a C++ Linux project in Visual Studio, Linux code is copied to your remote Linux computer and then compiled based on Visual Studio settings. To set up this remote connection:
 
