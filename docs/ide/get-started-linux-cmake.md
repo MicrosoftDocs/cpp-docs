@@ -179,13 +179,22 @@ In this tutorial, you have seen a code base cloned directly from GitHub, and bui
 
 ## Next steps
 
-Learn more about configuring  and debugging CMake projects in Visual Studio:
+Learn more about configuring and debugging CMake projects in Visual Studio:
+
 > [!div class="nextstepaction"]
-> [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)<br/>
+
+> [CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)
+
 > [Configure a Linux CMake project](../linux/cmake-linux-project.md)
+
 > [Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)
+
 > [Customize CMake build settings](customize-cmake-settings.md)
+
 > [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
+
 > [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)
+
 > [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
+
 > 
