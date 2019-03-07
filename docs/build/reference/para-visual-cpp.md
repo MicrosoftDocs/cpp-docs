@@ -1,5 +1,5 @@
 ---
-title: "\<para>"
+title: "&lt;para>"
 ms.date: "11/04/2016"
 f1_keywords: ["<para>", "para"]
 helpviewer_keywords: ["<para> C++ XML tag", "para C++ XML tag"]

@@ -1,5 +1,5 @@
 ---
-title: "\<permission> (C++ documentation comments)"
+title: "&lt;permission> (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["permission", "<permission>"]
 helpviewer_keywords: ["<permission> C++ XML tag", "permission C++ XML tag"]

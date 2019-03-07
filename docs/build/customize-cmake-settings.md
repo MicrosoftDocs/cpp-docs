@@ -229,7 +229,7 @@ In the next example, the x86-Debug configuration defines its own value for the *
 
 ## See Also
 
-[CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)<br/>
+[CMake Tools for Visual C++](cmake-tools-for-visual-cpp.md)<br/>
 [Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>
 [Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)<br/>
 [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/>

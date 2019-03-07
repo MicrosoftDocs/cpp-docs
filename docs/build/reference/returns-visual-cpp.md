@@ -1,5 +1,5 @@
 ---
-title: "\<returns> (C++ Documentation Comments)"
+title: "&lt;returns> (C++ Documentation Comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["returns", "<returns>"]
 helpviewer_keywords: ["returns C++ XML tag", "<returns> C++ XML tag"]
