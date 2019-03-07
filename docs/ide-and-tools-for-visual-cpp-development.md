@@ -1,21 +1,18 @@
 ---
-title: "Overview of C++ development in Visual Studio"
+title: "Welcome to the Visual Studio IDE | C++"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
-ms.date: "12/18/2018"
+ms.date: "03/08/2019"
 helpviewer_keywords: ["Visual C++, development tools"]
-ms.assetid: 56eabafb-1956-4f0f-bec5-29b887763559
 ---
-# Overview of C++ development in Visual Studio
+# Welcome to the Visual Studio IDE | C++
 
-As part of the Visual Studio Integrated Development Environment (IDE), Microsoft Visual C++ (MSVC) shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the code editor, and the debugger, are documented under [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or JavaScript. A few windows or tools are only available in Visual Studio Professional or Visual Studio Enterprise editions.
+As part of the Visual Studio Integrated Development Environment (IDE), Microsoft Visual C++ (MSVC) shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the code editor, and the debugger, are documented under [Visual Studio IDE](/visualstudbuild/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or JavaScript. A few windows or tools are only available in Visual Studio Professional or Visual Studio Enterprise editions.
 
-In addition to shared tools in the Visual Studio IDE, MSVC has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md).
+In addition to shared tools in the Visual Studio IDE, MSVC has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [Visual C++ Tools and Features in Visual Studio Editions](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).
 
 ## Create projects
 
 A *project* is basically a set of source code files and resources such as images or data files that are built into an executable file.
-
-Visual Studio 2015 provides support for MSBuild projects. You can download Visual Studio extensions for other build systems such as Qt or CMake.
 
 Visual Studio 2017 provides support for any build system or custom build tools that you wish to use, with full support for IntelliSense, browsing and debugging:
 
@@ -44,7 +41,7 @@ If your program has a user interface, you can use a designer to quickly populate
 
 For more information about designing a user interface for a Universal Windows Platform app, see  [Design and UI](https://developer.microsoft.com/windows/design).
 
-For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](windows/windows-desktop-applications-cpp.md).
+For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md).
 
 ## Write code
 
@@ -54,22 +51,22 @@ After you create a project, all the project files are displayed in the **Solutio
 
 The code editor is a specialized word processor for C++ source code. It color-codes language keywords, method and variable names, and other elements of your code to make the code more readable and easier to understand.
 
-For more information, see [Writing and refactoring code](ide/writing-and-refactoring-code-cpp.md).
+For more information, see [Writing and refactoring code](build/writing-and-refactoring-code-cpp.md).
 
 ## Add and edit resources
 
 The term *resource* includes things such as dialogs, icons, images, localizable strings, splash screens, database connection strings, or any arbitrary data that you want to include in the executable file.
 
-For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](windows/working-with-resource-files.md).
+For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](../windows/working-with-resource-files.md).
 
 ## Build (compile and link)
 
 Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
-For more information about MSBuild configurations, see [Set compiler and build properties](build/working-with-project-properties.md).
+For more information about MSBuild configurations, see [Working with Project Properties](build/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](build/building-cpp-projects-in-visual-studio.md).
 
-You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](build/building-on-the-command-line.md) and [C/C++ Building Reference](build/reference/c-cpp-building-reference.md).
+You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
 ## Debug
 
@@ -95,28 +92,16 @@ Visual Studio includes static code analysis tools that can detect potential prob
 
 You can deploy both traditional desktop applications and UWP apps to customers through the Microsoft Store. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Publish Windows apps and games](/windows/uwp/publish/).
 
-You can also deploy a native C++ desktop to another computer  For more information, see [Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md).
+You can also deploy a native C++ desktop to another computer  For more information, see [Deploying Desktop Applications](build/deploying-native-desktop-applications-visual-cpp.md).
 
 For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers),
 
-## In this section
+## Next steps
 
-|||
-|-|-|
-|[Writing and refactoring code (C++)](writing-and-refactoring-code-cpp.md)| How to use the C++ code editor to write, refactor and navigate your code.|
-|[Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|
-|[C++ Open Folder projects in Visual Studio](build/non-msbuild-projects.md).|Describes how to use any arbitrary C++ build system from Visual Studio.|
-|[CMake projects in Visual C++](build/cmake-tools-for-visual-cpp.md).|Describes how to build CMake projects in Visual Studio.|
-|[Creating and managing MSBuild-based projects](build/creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ MSBuild-based projects in Visual Studio and links to other articles that explain how to create and manage them.|
-|[Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|
-|[Adding Functionality with Code Wizards (C++)](adding-functionality-with-code-wizards-cpp.md)| Add classes, files, or user interface elements to a project by using wizards to guide you.|
-|[XML Documentation (Visual C++)](build/reference/xml-documentation-visual-cpp.md)| Create XML documentation for your APIs.|
-|[Building C/C++ Projects in Visual Studio](build/building-c-cpp-programs.md)|How to use the Visual Studio IDE to build projects.|
+Explore Visual Studio further by following along with one of these introductory articles:
 
-## Related Articles
+> [!div class="nextstepaction"]
+> [Learn to use the code editor](/visualstudio/get-started/tutorial-editor)
 
-|||
-|-|-|
-|[Building C/C++ Projects in Visual Studio](build/building-c-cpp-programs.md)|In-depth information about building C++ projects.|
-|[Visual C++ Porting and Upgrading Guide](porting/visual-cpp-porting-and-upgrading-guide.md)|Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.|
-|[Visual C++](visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|
+> [!div class="nextstepaction"]
+> [Learn about projects and solutions](/visualstudio/get-started/tutorial-projects-solutions)
