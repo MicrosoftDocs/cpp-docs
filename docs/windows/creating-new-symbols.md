@@ -9,24 +9,27 @@ ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
 
 When you're beginning a new project, you may find it convenient to map out the symbol names you need before creating the resources to which they'll be assigned.
 
+> [!NOTE]
+> If your project doesn't already contain an .rc file, please see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
+
 The **Resource Symbols** dialog box allows you to add new resource symbols, change the symbols that are displayed, or skip to the location in the source code where a symbol is in use.
 
 The dialog box contains the following properties:
 
 |Property|Description|
 |--------------------------|------------------------------------------|
-|**Name**|Displays the name of the symbol. For more information, see [Symbol Name Restrictions](../windows/symbol-name-restrictions.md).|
-|**Value**|Displays the numeric value of the symbol. For more information, see [Symbol Value Restrictions](../windows/symbol-value-restrictions.md).|
-|**In Use**|When selected, specifies that the symbol is being used by one or more resources. The resource or resources are listed in the Used by box.|
-|**Show read-only symbols**|When selected, displays read-only resources. By default, the **Resource Symbol** dialog box displays only the modifiable resources in your resource script file, but with this option selected, modifiable resources appear in bold text and read-only resources appear in plain text.|
-|**Used by**|Displays the resource or resources using the symbol selected in the symbols list. To move to the editor for a given resource, select the resource in the **Used By** box and choose **View Use**.|
-|**New**|Opens the **New Symbol** dialog box, which enables you to define the name and, if necessary, a value for a new symbolic resource identifier.|
-|**Change**|Opens the **Change Symbol** dialog box, which allows you to change the name or value of a symbol. If the symbol is for a control or resource in use, the symbol can be changed only from the corresponding resource editor. For more information, see [Manage Symbols](../windows/changing-unassigned-symbols.md).|
+|**Name**|Displays the name of the symbol.<br/><br/>For more information, see [Symbol Name Restrictions](../windows/symbol-name-restrictions.md).|
+|**Value**|Displays the numeric value of the symbol.<br/><br/>For more information, see [Symbol Value Restrictions](../windows/symbol-value-restrictions.md).|
+|**In Use**|When selected, specifies that the symbol is being used by one or more resources.<br/><br/>The resource or resources are listed in the **Used by** box.|
+|**Show read-only symbols**|When selected, displays read-only resources.<br/><br/>By default, the **Resource Symbol** dialog box displays only the modifiable resources in your resource script file, but with this option selected, modifiable resources appear in bold text and read-only resources appear in plain text.|
+|**Used by**|Displays the resource or resources using the symbol selected in the symbols list.<br/><br/>To move to the editor for a given resource, select the resource in the **Used by** box and choose **View Use**.|
+|**New**|Opens the **New Symbol** dialog box that enables you to define the name and, if necessary, a value for a new symbolic resource identifier.|
+|**Change**|Opens the **Change Symbol** dialog box that allows you to change the name or value of a symbol.<br/><br/>If the symbol is for a control or resource in use, the symbol can be changed only from the corresponding resource editor. For more information, see [Manage Symbols](../windows/changing-unassigned-symbols.md).|
 |**View Use**|Opens the resource that contains the symbol in the corresponding resource editor.|
 
 ## Create Symbols
 
-To create a new symbol:
+### To create a new symbol
 
 1. In the **Resource Symbols** dialog box, choose **New**.
 
@@ -39,23 +42,18 @@ To create a new symbol:
 > [!NOTE]
 > If you type a symbol name that already exists, a message box appears stating that a symbol with that name is already defined. You can't define two or more symbols with the same name, but you can define different symbols with the same numeric value.
 
-To view resource symbols:
+## To view resource symbols
 
-1. In [Resource View](../windows/resource-view-window.md), right-click your .rc file.
+In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file and select **Resource Symbols** to view a resource symbol table in the **Resource Symbols** dialog box.
 
-   > [!NOTE]
-   > If your project doesn't already contain an .rc file, please see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
+> [!NOTE]
+> To see predefined symbols, check the **Show read-only symbols** check box.
 
-1. Select **Resource Symbols** from the shortcut menu to view a resource symbol table in the **Resource Symbols** dialog box.
-
-   > [!NOTE]
-   > To see predefined symbols, check the **Show read-only symbols** check box.
-
-To open the resource editor for a given symbol:
+### To open the resource editor for a given symbol
 
 When you're browsing symbols in the **Resource Symbols**, you may want more information on how a particular symbol is used. The **View Use** button provides a quick way to get this information.
 
-1. Select a symbol in the **Name** box of the **Resource Symbols** dialog box.
+1. In the **Resource Symbols** dialog box in the **Name** box, select a symbol.
 
 1. In the **Used By** box, select the resource type that interests you.
 
