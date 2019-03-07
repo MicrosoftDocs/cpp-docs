@@ -1,11 +1,11 @@
 ---
 title: "Configure a C++ Linux project in Visual Studio"
-ms.date: "09/18/2018"
+ms.date: "11/12/2018"
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
 # Configure a Linux Project
 
-This topic describes how to configure a C++ Linux project in Visual Studio. For information about CMake Linux Projects in Visual Studio, see [Configure a Linux CMake Project ](cmake-linux-project.md).
+This topic describes how to configure a C++ Linux project that is based on a Linux project template in Visual Studio. For information about CMake Linux Projects in Visual Studio, see [Configure a Linux CMake Project ](cmake-linux-project.md).
 
 ## General settings
 

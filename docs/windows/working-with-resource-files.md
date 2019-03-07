@@ -9,7 +9,7 @@ ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
 > [!WARNING]
 > This section applies to Windows desktop applications written in C++.
 >
-> For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](/windows/uwp/app-resources/), or on adding resources to C++/CLI (managed) projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
+> For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](/windows/uwp/app-resources/), or on adding resources to C++/CLI (managed) projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the .NET Framework Developer's Guide.
 
 Resources can be composed of a wide range of elements, like:
 
@@ -19,6 +19,9 @@ Resources can be composed of a wide range of elements, like:
 - Menu and dialog box resources.
 
 You can add new resources to your project and modify those resources using the appropriate resource editor. Most Visual C++ wizards will automatically generate an .rc file for your project.
+
+> [!NOTE]
+> The **Resource Editors** and **Resource View** aren't available in Express editions.
 
 To manually add resource files to managed projects, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). This article includes how to access resources, display static resources, and assign resource strings to properties.
 

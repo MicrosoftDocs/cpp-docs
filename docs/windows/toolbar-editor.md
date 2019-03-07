@@ -51,7 +51,7 @@ The **Toolbar Editor** enables you:
 
 ### To create new toolbars
 
-1. In **Resource** view, right-click your .rc file and choose **Add Resource**. If you have an existing toolbar in your .rc file, you can right-click the **Toolbar** folder and select **Insert Toolbar**.
+1. In **Resource View**, right-click your *.rc* file and choose **Add Resource**. If you have an existing toolbar in your *.rc* file, you can right-click the **Toolbar** folder and select **Insert Toolbar**.
 
 1. In the **Add Resource** dialog box, select **Toolbar** in the **Resource Type** list, then choose **New**.
 
@@ -59,7 +59,7 @@ The **Toolbar Editor** enables you:
 
 ### To convert bitmaps to toolbar resources
 
-1. Open an existing bitmap resource in the [Image Editor](../windows/image-editor-for-icons.md). If the bitmap isn't already in your .rc file, right-click the .rc file and choose **Import**, then navigate to the bitmap you want to add to your .rc file and select **Open**.
+1. Open an existing bitmap resource in the [Image Editor](../windows/image-editor-for-icons.md). If the bitmap isn't already in your *.rc* file, right-click the *.rc* file and choose **Import**, then navigate to the bitmap you want to add to your *.rc* file and select **Open**.
 
 1. Go to menu **Image** > **Toolbar Editor**.
 
@@ -74,44 +74,42 @@ The **Toolbar Editor** enables you:
 
 ### To manage toolbar buttons
 
-To create a new toolbar button:
+#### To create a new toolbar button
 
-1. In [Resource view](../windows/resource-view-window.md) expand the resource folder (for example, *Project1.rc*).
+1. In [Resource View](../windows/resource-view-window.md) expand the resource folder (for example, *Project1.rc*).
 
 1. Expand the **Toolbar** folder and select a toolbar to edit, then do one of the following:
 
    - Assign an ID to the blank button at the right end of the toolbar. You can do so by editing the **ID** property in the [Properties Window](/visualstudio/ide/reference/properties-window). For example, you may want to give a toolbar button the same ID as a menu option. In this case, use the drop-down list box to select the **ID** of the menu option.
 
-   - Select the blank button at the right end of the toolbar (in the **Toolbar View** pane) and begin drawing. A default button command ID is assigned (ID_BUTTON\<n>).
+   - Select the blank button at the right end of the toolbar in the **Toolbar View** pane and begin drawing. A default button command ID is assigned (ID_BUTTON\<n>).
 
-You can also copy and paste an image onto a toolbar as a new button.
-
-To add an image to a toolbar as a button:
+#### To add an image to a toolbar as a button
 
 1. In [Resource View](../windows/resource-view-window.md), open the toolbar by double-clicking it.
 
 1. Next, open the image you'd like to add to your toolbar.
 
    > [!NOTE]
-   > If you open the image in Visual Studio, it will open in the **Image** editor. You can also open the image in other graphics programs.
+   > If you open the image in Visual Studio, it will open in the **Image Editor**. You can also open the image in other graphics programs.
 
-1. From the **Edit** menu, choose **Copy**.
+1. Go to menu **Edit** > **Copy**.
 
 1. Switch to your toolbar by selecting its tab at the top of the source window.
 
-1. From the **Edit** menu, choose **Paste**.
+1. Go to menu **Edit** > **Paste**.
 
    The image will appear on your toolbar as a new button.
 
-To move a toolbar button:
+#### To move a toolbar button
 
 In the **Toolbar View** pane, drag the button that you want to move to its new location on the toolbar.
 
-To copy buttons from a toolbar, hold down the **Ctrl** key and in the **Toolbar View** pane, drag the button to either its new location on the toolbar or to a location on another toolbar.
+- To copy buttons from a toolbar, hold down the **Ctrl** key and in the **Toolbar View** pane, drag the button to either its new location on the toolbar or to a location on another toolbar.
 
-To delete a toolbar button, select the toolbar button and drag it off the toolbar.
+- To delete a toolbar button, select the toolbar button and drag it off the toolbar.
 
-To insert or remove space between buttons on a toolbar, either drag them away from or towards one another on the toolbar.
+- To insert or remove space between buttons on a toolbar, either drag them away from or towards one another on the toolbar.
 
 |Action|Step|
 |------|------|
@@ -123,19 +121,19 @@ To insert or remove space between buttons on a toolbar, either drag them away fr
 > [!NOTE]
 > If there's no space on the side of the button that you're dragging away from and you drag the button more than halfway past the adjacent button, the **Toolbar Editor** inserts a space on the opposite side of the button that you're dragging.
 
-To change the properties of a toolbar button:
+#### To change the properties of a toolbar button
 
 1. In a C++ project, select the toolbar button.
 
 1. Type the new ID in the **ID** property in the [Properties Window](/visualstudio/ide/reference/properties-window), or use the drop-down list to select a new **ID**.
 
-To create a tool tip for a toolbar button:
+#### To create a tool tip for a toolbar button
 
 1. Select the toolbar button.
 
 1. In the [Properties Window](/visualstudio/ide/reference/properties-window), in the **Prompt** field, add a description of the button for the status bar and after the message, add `\n` and the tool tip name.
 
-For example, see the tool tip for the **Print** button in **WordPad**:
+For example, to see the tool tip for the **Print** button in **WordPad**:
 
 1. Open **WordPad**.
 

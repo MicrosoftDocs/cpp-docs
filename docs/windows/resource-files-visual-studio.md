@@ -95,9 +95,9 @@ To view the version and type information contained in a manifest resource, open 
 
 1. Expand the **Resource Files** folder, then:
 
-   - To open in the text editor, double-click the .manifest file.
+   - To open in the text editor, double-click the *.manifest* file.
 
-   - To open in another editor, right-click the .manifest file and select **Open With...**. Specify the editor to use and choose **Open**.
+   - To open in another editor, right-click the *.manifest* file and select **Open With**. Specify the editor to use and select **Open**.
 
 ## Requirements
 

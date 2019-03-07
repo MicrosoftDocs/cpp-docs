@@ -7,10 +7,10 @@ ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
 ---
 # Accelerator Keys (C++ Image Editor for Icons)
 
-Below are the accelerator keys for the Image editor commands that are bound to keys by default. To change accelerator keys, click **Options** on the **Tools** menu, and then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+Below are the accelerator keys for the Image editor commands that are bound to keys by default. To change accelerator keys, go to menu **Tools** > **Options** and choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
 
 > [!NOTE]
-> The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+> The options available in dialog boxes, and the names and locations of menu commands you see, might differ from what is described in Help depending on your active settings or edition. To change your settings, go to menu **Tools** > **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 |Command|Keys|Description|
 |-------------|----------|-----------------|
@@ -58,4 +58,8 @@ None
 
 ## See Also
 
-[Image Editor for Icons](../windows/image-editor-for-icons.md)
+[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
+[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[How to: Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[How to: Work with Color](../windows/working-with-color-image-editor-for-icons.md)<br/>

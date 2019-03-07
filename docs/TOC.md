@@ -20,7 +20,6 @@
 # [Data Access](data/data-access-in-cpp.md)
 # [Text and Strings](text/text-and-strings-in-visual-cpp.md)
 # [vcpkg: A Package Manager for C++](vcpkg.md)
-
 # [Configure and compile C++ projects](build/building-c-cpp-programs.md)
 # [Port and Upgrade C++ Code](porting/visual-cpp-porting-and-upgrading-guide.md)
 # [Security Best Practices for C++](security/security-best-practices-for-cpp.md)
