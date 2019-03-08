@@ -27,7 +27,7 @@ The MFC Application Wizard generates the appropriate classes and files for any o
 
 ### To create an MFC application using the MFC Application Wizard
 
-1. Follow the instructions in the help topic [Create a C++ console app project](../get-started/tutorial-console-cpp.md).
+1. Follow the instructions in the help topic [Create a C++ console app project](../../get-started/tutorial-console-cpp.md).
 
 1. In the **New Project** dialog box, select **MFC Application** in the Templates pane to open the wizard.
 

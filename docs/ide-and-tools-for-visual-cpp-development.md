@@ -92,7 +92,7 @@ Visual Studio includes static code analysis tools that can detect potential prob
 
 You can deploy both traditional desktop applications and UWP apps to customers through the Microsoft Store. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Publish Windows apps and games](/windows/uwp/publish/).
 
-You can also deploy a native C++ desktop to another computer  For more information, see [Deploying Desktop Applications](build/deploying-native-desktop-applications-visual-cpp.md).
+You can also deploy a native C++ desktop to another computer  For more information, see [Deploying Desktop Applications](ide/deploying-native-desktop-applications-visual-cpp.md).
 
 For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers),
 

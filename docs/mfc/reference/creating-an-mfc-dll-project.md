@@ -14,7 +14,7 @@ An MFC DLL is a binary file that acts as a shared library of functions that can 
 
 ### To create an MFC DLL Project using the MFC DLL Wizard
 
-1. Follow the instructions in the help topic [Create a C++ console app project](../get-started/tutorial-console-cpp.md).
+1. Follow the instructions in the help topic [Create a C++ console app project](../../get-started/tutorial-console-cpp.md).
 
 **Note** In the **New Project** dialog box, select the `MFC DLL` icon in the Templates pane to open the MFC DLL Wizard.
 
