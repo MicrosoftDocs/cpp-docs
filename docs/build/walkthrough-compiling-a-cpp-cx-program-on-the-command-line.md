@@ -57,5 +57,5 @@ To enable compilation for C++/CX, you must use the [/ZW](reference/zw-windows-ru
 
 ## See also
 
-[Building C/C++ Projects in Visual Studio](building-c-cpp-programs.md)<br/>
+[Projects and build systems](building-c-cpp-programs.md)<br/>
 [MSVC Compiler Options](reference/compiler-options.md)

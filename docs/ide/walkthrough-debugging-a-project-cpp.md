@@ -50,4 +50,4 @@ In this walkthrough, you modify the program to fix the problem that you found wh
 ## See Also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Projects in Visual Studio](../build/building-c-cpp-programs.md)<br/>
+[Projects and build systems](../build/building-c-cpp-programs.md)<br/>

@@ -54,4 +54,4 @@ In this walkthrough, you watch the value of a variable as the program runs and d
 ## See Also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Projects in Visual Studio](../build/building-c-cpp-programs.md)<br/>
+[Projects and build systems](../build/building-c-cpp-programs.md)<br/>

@@ -64,4 +64,4 @@ How to create a new Visual Studio project from a loose collection of source file
 
 ## See Also
 
-[Building C/C++ Projects in Visual Studio](building-c-cpp-programs.md)<br>
+[Projects and build systems](building-c-cpp-programs.md)<br>

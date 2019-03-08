@@ -55,5 +55,5 @@ To enable compilation for C++/CLI, you must use the [/clr](reference/clr-common-
 ## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Projects in Visual Studio](building-c-cpp-programs.md)<br/>
+[Projects and build systems](building-c-cpp-programs.md)<br/>
 [MSVC Compiler Options](reference/compiler-options.md)

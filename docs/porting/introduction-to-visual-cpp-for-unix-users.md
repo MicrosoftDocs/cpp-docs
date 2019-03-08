@@ -58,4 +58,4 @@ For more information, see [Porting from UNIX to Win32](../porting/porting-from-u
 
 ## See Also
 
-[Building C/C++ Projects in Visual Studio](../build/building-c-cpp-programs.md)
+[Projects and build systems](../build/building-c-cpp-programs.md)
