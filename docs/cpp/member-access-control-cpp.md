@@ -230,6 +230,6 @@ Access along paths of an inheritance graph
 
 In the figure, a name declared in class `VBase` is always reached through class `RightPath`. The right path is more accessible because `RightPath` declares `VBase` as a public base class, whereas `LeftPath` declares `VBase` as private.
 
-## See Also
+## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)

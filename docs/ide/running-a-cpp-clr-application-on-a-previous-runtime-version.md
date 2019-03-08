@@ -14,6 +14,6 @@ At run time, the app.config file must have a name of the form *filename.ext*.con
 
 If you specify more than one runtime version and the application runs on a computer that has more than one installed runtime version, the application uses the first version that is specified in the config file and is installed.
 
-## See Also
+## See also
 
 [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

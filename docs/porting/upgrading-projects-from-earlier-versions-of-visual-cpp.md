@@ -25,7 +25,7 @@ Data sources are contained in a separate database project so that you can more e
 
 For information about how to update the targeted Windows versions, see [Modifying WINVER and _WIN32_WINNT](../porting/modifying-winver-and-win32-winnt.md).
 
-## See Also
+## See also
 
 [Build System Changes](../build/build-system-changes.md)<br/>
 [What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md)<br/>

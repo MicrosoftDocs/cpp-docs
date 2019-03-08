@@ -334,6 +334,6 @@ T %
 T &
 ```
 
-## See Also
+## See also
 
 [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)

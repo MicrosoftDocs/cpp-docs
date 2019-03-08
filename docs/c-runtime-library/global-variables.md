@@ -20,7 +20,7 @@ The Microsoft C run-time library provides the following global variables or macr
 |[_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)|Contains information used by the character-classification functions.|
 |[_pgmptr, _wpgmptr](../c-runtime-library/pgmptr-wpgmptr.md)|Deprecated. Instead, use `_get_pgmptr` or `_get_wpgmptr`.<br /><br /> Initialized at program startup to the fully-qualified or relative path of the program, the full program name, or the program name without its file name extension, depending on how the program was invoked.|
 
-## See Also
+## See also
 
 [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)<br/>

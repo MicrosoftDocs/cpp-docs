@@ -24,7 +24,7 @@ These routines access, modify, and obtain information about the directory struct
 |[_rmdir, _wrmdir](../c-runtime-library/reference/rmdir-wrmdir.md)|Remove directory|
 |[_searchenv, _wsearchenv](../c-runtime-library/reference/searchenv-wsearchenv.md), [_searchenv_s, _wsearchenv_s](../c-runtime-library/reference/searchenv-s-wsearchenv-s.md)|Search for given file on specified paths|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [File Handling](../c-runtime-library/file-handling.md)<br/>

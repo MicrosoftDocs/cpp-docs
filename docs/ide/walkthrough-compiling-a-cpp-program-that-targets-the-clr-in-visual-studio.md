@@ -69,7 +69,7 @@ These topics assume that you understand the fundamentals of the C++ language.
 **Previous:** [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 **Next:** [Walkthrough: Compile a C Program on the Command Line](../build/walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
 
-## See Also
+## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>

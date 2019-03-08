@@ -13,6 +13,6 @@ Provides a mechanism to automate taking a lock that synchronizes access to an ob
 
 [lock](../dotnet/lock.md)
 
-## See Also
+## See also
 
 [C++ Support Library](../dotnet/cpp-support-library.md)

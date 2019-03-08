@@ -165,7 +165,7 @@ Call [IAtlStringMgr::Free](#free) to free the memory allocated by this method.
 > [!NOTE]
 > For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

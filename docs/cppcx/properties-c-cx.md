@@ -29,7 +29,7 @@ Note that a property cannot be initialized in a member list. You can of course i
 
 [!code-cpp[cx_properties#01](../cppcx/codesnippet/CPP/cx_properties/class1.h#01)]
 
-## See Also
+## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>

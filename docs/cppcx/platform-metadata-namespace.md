@@ -39,6 +39,6 @@ Although this namespace is intended for internal use, browsers can display the f
 
 **Namespace:** Platform::Metadata
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

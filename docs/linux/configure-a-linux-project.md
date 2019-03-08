@@ -81,7 +81,7 @@ To manage your header cache, navigate to **Tools > Options, Cross Platform > Con
 
 ![Remote Header IntelliSense](media/remote-header-intellisense.png)
 
-## See Also
+## See also
 
 [Working with Project Properties](../ide/working-with-project-properties.md)<br/>
 [C++ General Properties (Linux C++)](prop-pages/general-linux.md)<br/>

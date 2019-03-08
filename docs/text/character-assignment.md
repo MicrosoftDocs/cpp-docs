@@ -34,7 +34,7 @@ while( *sz2 )
 }
 ```
 
-## See Also
+## See also
 
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
 [Character Comparison](../text/character-comparison.md)

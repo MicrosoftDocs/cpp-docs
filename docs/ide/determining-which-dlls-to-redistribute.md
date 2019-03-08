@@ -48,7 +48,7 @@ For more information about how to redistribute these DLLs with your application,
 
 Typically, you do not have to redistribute system DLLs because they are part of the operating system. However, there might be exceptions, for example, when your application will run on several versions of Microsoft operating systems. In this case, be sure to read the corresponding license terms. Also, try to get the system DLLs upgraded either through Windows Update, service packs or by using redistributable packages made available by Microsoft.
 
-## See Also
+## See also
 
 [Choosing a Deployment Method](../ide/choosing-a-deployment-method.md)
 

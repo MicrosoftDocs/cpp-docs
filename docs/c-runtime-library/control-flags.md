@@ -17,6 +17,6 @@ The debug version of the Microsoft C run-time library uses the following flags t
 
 These flags can be defined with a /D command-line option or with a `#define` directive. When the flag is defined with `#define`, the directive must appear before the header file include statement for the routine declarations.
 
-## See Also
+## See also
 
 [Global Variables and Standard Types](../c-runtime-library/global-variables-and-standard-types.md)

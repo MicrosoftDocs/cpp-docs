@@ -23,4 +23,3 @@ To create a new Linux project in Visual Studio, do the following:
    | **Console Application (Linux)** | Project targeted for any Linux computer with sample code written to output text to the console
    | **Empty Project (Linux)**       | Project targeted for any Linux computer with no sample code written
    | **Makefile Project (Linux)**    | Project targeted for any Linux computer which will be built using a standard Makefile build system
-

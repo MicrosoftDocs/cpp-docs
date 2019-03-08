@@ -399,6 +399,6 @@ int main() {
 6.8
 ```
 
-## See Also
+## See also
 
 [property](../windows/property-cpp-component-extensions.md)

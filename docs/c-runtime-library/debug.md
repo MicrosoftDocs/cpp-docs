@@ -11,6 +11,6 @@ The compiler defines `_DEBUG` when you specify the /MTd or /MDd option. These op
 
 For more information, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).
 
-## See Also
+## See also
 
 [Control Flags](../c-runtime-library/control-flags.md)

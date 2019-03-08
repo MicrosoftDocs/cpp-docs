@@ -28,6 +28,6 @@ Thus, positioning within a binary stream is well defined, except for positioning
 
 A byte stream treats a file as a sequence of bytes. Within the program, the stream looks like the same sequence of bytes, except for the possible alterations described above.
 
-## See Also
+## See also
 
 [Files and Streams](../c-runtime-library/files-and-streams.md)

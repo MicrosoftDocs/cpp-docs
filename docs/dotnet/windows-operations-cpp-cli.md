@@ -463,6 +463,6 @@ You can use the .NET Framework to access the registry with the <xref:Microsoft.W
 
 <xref:System.Environment>
 
-## See Also
+## See also
 
 [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

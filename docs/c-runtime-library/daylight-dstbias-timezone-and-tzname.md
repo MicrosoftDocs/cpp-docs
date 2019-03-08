@@ -39,7 +39,7 @@ On a call to `_ftime`, `localtime`, or `_tzset`, the values of `_daylight`, `_ds
 |`_tzname[0]`|Time-zone name derived from the `TZ` environment variable. The default value is "PST".|
 |`_tzname[1]`|DST zone name derived from the `TZ` environment variable. The default value is "PDT" (Pacific daylight time).|
 
-## See Also
+## See also
 
 [Global Variables](../c-runtime-library/global-variables.md)<br/>
 [_get_daylight](../c-runtime-library/reference/get-daylight.md)<br/>

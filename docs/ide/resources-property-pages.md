@@ -13,6 +13,6 @@ For information on how to access the **Resources** property pages, see [Working 
 
 To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
 
-## See Also
+## See also
 
 [Property Pages](../ide/property-pages-visual-cpp.md)

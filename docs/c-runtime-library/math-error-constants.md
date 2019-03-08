@@ -28,7 +28,7 @@ These errors, described as follows, correspond to the exception types defined in
 |`_TLOSS`|Total loss of significance occurred.|
 |`_UNDERFLOW`|Result is too small to be represented.|
 
-## See Also
+## See also
 
 [_matherr](../c-runtime-library/reference/matherr.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

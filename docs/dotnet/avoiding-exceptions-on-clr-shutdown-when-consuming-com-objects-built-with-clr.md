@@ -10,6 +10,6 @@ Once the common language runtime (CLR) enters shutdown mode, native functions ha
 
 To resolve this, ensure that destructors called from Release methods only contain native code.
 
-## See Also
+## See also
 
 [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)

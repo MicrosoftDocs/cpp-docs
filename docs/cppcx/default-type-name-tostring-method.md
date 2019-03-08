@@ -28,6 +28,6 @@ A string that represents the current object.
 
 **Header:** vccorlib.h
 
-## See Also
+## See also
 
 [default namespace](../cppcx/default-namespace.md)

@@ -60,6 +60,6 @@ The location of output files can be a major issue when deploying to a production
 
 1. The location of project output settings can be found in the project's **Property Pages**. Expand the node next to **Configuration Properties** and select **General**. The output location is specified next to **Output Directory**. For more information, see [General Property Page (Project)](../ide/general-property-page-project.md).
 
-## See Also
+## See also
 
 [Visual C++ Project Types](../ide/visual-cpp-project-types.md)

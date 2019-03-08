@@ -56,6 +56,6 @@ int main() {
 11111111-2222-3333-4455-555555555555
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

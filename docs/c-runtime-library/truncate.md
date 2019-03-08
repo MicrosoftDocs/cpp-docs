@@ -76,6 +76,6 @@ truncation occurred!
 '1234'
 ```
 
-## See Also
+## See also
 
 [Global Constants](../c-runtime-library/global-constants.md)

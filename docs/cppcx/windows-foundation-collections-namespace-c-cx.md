@@ -34,4 +34,3 @@ namespace Windows {
 **Header:** collection.h
 
 **Namespace:** Windows::Foundation::Collections
-

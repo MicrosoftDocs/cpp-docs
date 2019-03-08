@@ -170,7 +170,7 @@ public:
 };
 ```
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Platform::Type Class](platform-type-class.md)<br/>

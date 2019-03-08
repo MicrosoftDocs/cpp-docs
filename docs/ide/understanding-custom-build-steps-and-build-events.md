@@ -50,7 +50,7 @@ Build events and custom build steps run in the following order along with other 
 
 The `custom build step on the project` and a `post-build event` run sequentially after all other build processes finish.
 
-## See Also
+## See also
 
 [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)<br>
 [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)

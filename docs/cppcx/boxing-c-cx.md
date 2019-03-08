@@ -30,7 +30,7 @@ In a C# XAML client, you can consume it like this:
     var result = obj.Multiply(a,b); //result = null
 ```
 
-## See Also
+## See also
 
 [Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Casting (C++/CX)](../cppcx/casting-c-cx.md)<br/>

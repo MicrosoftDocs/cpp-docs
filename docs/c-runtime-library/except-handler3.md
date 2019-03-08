@@ -45,6 +45,6 @@ If an exception should be dismissed, returns `DISPOSITION_DISMISS`. If the excep
 
 If this method finds an appropriate exception handler, it passes the exception to the handler. In this situation, this method does not return to the code that called it and the return value is irrelevant.
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

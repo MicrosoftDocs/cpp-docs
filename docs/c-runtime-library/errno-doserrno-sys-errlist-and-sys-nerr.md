@@ -91,7 +91,7 @@ All `errno` values in the following table are predefined constants in \<errno.h>
 
 The `_doserrno`, `_sys_errlist`, and `_sys_nerr` macros are Microsoft extensions. For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Global Variables](../c-runtime-library/global-variables.md)<br/>
 [errno Constants](../c-runtime-library/errno-constants.md)<br/>

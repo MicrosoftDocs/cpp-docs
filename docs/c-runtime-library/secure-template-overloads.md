@@ -78,7 +78,7 @@ strcpy_s(szBuf, "test"); // doesn't compile; you have to change it to
                          // strcpy_s(szBuf, 10, "test");
 ```
 
-## See Also
+## See also
 
 [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md)<br/>
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

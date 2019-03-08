@@ -35,6 +35,6 @@ The object to compare.
 
 **Header:** vccorlib.h
 
-## See Also
+## See also
 
 [default namespace](../cppcx/default-namespace.md)

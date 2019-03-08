@@ -2227,6 +2227,6 @@ The following linker switches have been added:
 
 The .SAFESEH directive and `/safeseh` ml.exe option were added.
 
-## See Also
+## See also
 
 [Visual C++ Porting and Upgrading Guide](visual-cpp-porting-and-upgrading-guide.md)
