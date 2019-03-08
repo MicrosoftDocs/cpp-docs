@@ -959,6 +959,12 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md",
+            "redirect_url": "cpp/dotnet/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio",
+            "redirect_document_id": false
+        },
+        
+        {
             "source_path": "docs/ide/web-references-property-page.md",
             "redirect_url": "cpp/build/reference/web-references-property-page",
             "redirect_document_id": false
