@@ -181,7 +181,7 @@ The parameter structure used to construct the distribution.
 
 ### Remarks
 
-**Precondition:** `0.0 ≤ stddev`
+**Precondition:** `0.0 < stddev`
 
 The first constructor constructs an object whose stored `mean` value holds the value *mean* and whose stored `stddev` value holds the value *stddev*.
 
@@ -216,7 +216,7 @@ The `param_type` structure used to compare.
 
 ### Remarks
 
-**Precondition:** `0.0 ≤ stddev`
+**Precondition:** `0.0 < stddev`
 
 This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.
 
