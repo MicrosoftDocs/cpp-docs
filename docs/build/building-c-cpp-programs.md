@@ -1,12 +1,12 @@
 ---
-title: "Building C/C++ Projects in Visual Studio"
+title: "C/C++ Projects and build systems in Visual Studio"
 ms.description: "Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system."
 ms.date: "12/08/2018"
 f1_keywords: ["vcbuilding", "buildingaprogramVC"]
 helpviewer_keywords: ["builds [C++]", "Visual C++ projects, building", "projects [C++], building", "builds [C++], options", "Visual C++, build options"]
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ---
-# Building C/C++ projects in Visual Studio
+# C/C++ Projects and build systems in Visual Studio
 
 You can use Visual Studio 2017 to edit, compile and build any C++ code base with full IntelliSense support without having to convert that code into a Visual Studio project or compile with the MSVC toolset. For example, you can edit a cross-platform CMake project in Visual Studio on a Windows machine, then compile it for Linux using g++ on a remote Linux machine.
 

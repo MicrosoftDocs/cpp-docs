@@ -231,7 +231,7 @@ These notes apply to the preceding list:
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
 [SAL Annotations](../../c-runtime-library/sal-annotations.md)<br>

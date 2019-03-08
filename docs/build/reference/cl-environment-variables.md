@@ -13,7 +13,7 @@ The CL tool uses the following environment variables:
 
 - INCLUDE, which must point to the \include subdirectory of your Visual C++ installation.
 
-- LIBPATH, which specifies directories to search for metadata files referenced with [#using](../preprocessor/hash-using-directive-cpp.md). See `#using` for more information on LIBPATH.
+- LIBPATH, which specifies directories to search for metadata files referenced with [#using](../../preprocessor/hash-using-directive-cpp.md). See `#using` for more information on LIBPATH.
 
 You can set the CL or \_CL\_ environment variable using the following syntax:
 
@@ -26,7 +26,7 @@ You can use these environment variables to define the files and options you use 
 
 You cannot use the /D option to define a symbol that uses an equal sign (=). You can substitute the number sign (#) for an equal sign. In this way, you can use the CL or \_CL\_ environment variables to define preprocessor constants with explicit values—for example, `/DDEBUG#1` to define `DEBUG=1`.
 
-For related information, see [Set Environment Variables](../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
+For related information, see [Set Environment Variables](../setting-the-path-and-environment-variables-for-command-line-builds.md).
 
 ## Examples
 
