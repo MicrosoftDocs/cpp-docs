@@ -44,7 +44,6 @@ See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLanguag
 ## See also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
 [/Zc (Conformance)](zc-conformance.md)<br/>
 [/permissive- (Standards conformance)](permissive-standards-conformance.md)<br/>
 [/std (Specify Language Standard Version)](std-specify-language-standard-version.md)<br/>

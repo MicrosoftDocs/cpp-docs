@@ -41,7 +41,7 @@ If your program has a user interface, you can use a designer to quickly populate
 
 For more information about designing a user interface for a Universal Windows Platform app, see  [Design and UI](https://developer.microsoft.com/windows/design).
 
-For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md).
+For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](windows/windows-desktop-applications-cpp.md).
 
 ## Write code
 
@@ -51,22 +51,22 @@ After you create a project, all the project files are displayed in the **Solutio
 
 The code editor is a specialized word processor for C++ source code. It color-codes language keywords, method and variable names, and other elements of your code to make the code more readable and easier to understand.
 
-For more information, see [Writing and refactoring code](build/writing-and-refactoring-code-cpp.md).
+For more information, see [Writing and refactoring code](ide/writing-and-refactoring-code-cpp.md).
 
 ## Add and edit resources
 
 The term *resource* includes things such as dialogs, icons, images, localizable strings, splash screens, database connection strings, or any arbitrary data that you want to include in the executable file.
 
-For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](../windows/working-with-resource-files.md).
+For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](windows/working-with-resource-files.md).
 
 ## Build (compile and link)
 
 Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
-For more information about MSBuild configurations, see [Working with Project Properties](build/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](build/building-cpp-projects-in-visual-studio.md).
+For more information about MSBuild configurations, see [Working with Project Properties](build/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](build/building-c-cpp-programs.md).
 
-You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
+You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](build/building-on-the-command-line.md) and [C/C++ Building Reference](build/reference/c-cpp-building-reference.md).
 
 ## Debug
 

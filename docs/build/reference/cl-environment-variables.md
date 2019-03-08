@@ -51,4 +51,4 @@ This has the same effect as the following command line:
 ## See also
 
 [Setting Compiler Options](compiler-command-line-syntax.md)<br/>
-[MSVC Compiler Options](reference/compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)

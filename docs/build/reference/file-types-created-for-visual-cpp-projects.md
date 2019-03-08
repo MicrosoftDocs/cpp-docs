@@ -24,7 +24,7 @@ This topic describes all the types of files that are associated with Visual Stud
 
 - [Hint Files](hint-files.md)
 
-When you [create a Visual Studio project](../creating-desktop-projects-by-using-application-wizards.md), you might be creating a new solution, or you might be adding a project to a solution. Non-trivial applications are commonly developed with multiple projects in a solution.
+When you create a Visual Studio project, you might be creating a new solution, or you might be adding a project to a solution. Non-trivial applications are commonly developed with multiple projects in a solution.
 
 Projects usually produce either an EXE or a DLL. Projects can be dependent on each other; during the build process, the Visual Studio environment checks dependencies both within and between projects. Each project has core source code, and depending on the kind of project, it may have many other files containing various aspects of the project. The contents of these files are indicated by the file extension. The Visual Studio development environment uses the file extensions to determine how to handle the file contents during a build.
 

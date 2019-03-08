@@ -79,13 +79,13 @@ Starting in Visual Studio 2017 version 15.8 there are several features to identi
 
 - There's a Quick Action to create a hint file that includes the highlighted macro, or if there's an existing hint file, to add the macro to the hint file.
 
-![Highlighted Macro.](../ide/media/hint-squiggle-and-actions.png "Hint squiggle and Quick Actions")
+![Highlighted Macro.](media/hint-squiggle-and-actions.png "Hint squiggle and Quick Actions")
 
 After executing either of the Quick Actions, the parser reparses the files affected by the hint file.
 
 By default, the problem macro is highlighted as a suggestion. The highlight can be changed to something more noticeable, such as a red or green squiggle. Use the **Macros in Skipped Browsing Regions** option in the **Code Squiggles** section under **Tools** > **Options** > **Text Editor** > **C/C++** > **View**.
 
-![Macros in Skipped Browsing Regions Option.](../ide/media/skipped-regions-squiggle-option.png "Skipped regions squiggle option.")
+![Macros in Skipped Browsing Regions Option.](media/skipped-regions-squiggle-option.png "Skipped regions squiggle option.")
 
 ## Display Browsing Database Errors
 
@@ -129,9 +129,9 @@ For a depiction of how hints are gathered, see the [Example](#example) section.
 
 ### Syntax
 
-You create and delete hints by using the same syntax as the preprocessor directives to create and delete macros. In fact, the parsing system uses the C/C++ preprocessor to evaluate the hints. For more information about the preprocessor directives, see [#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md) and [#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md).
+You create and delete hints by using the same syntax as the preprocessor directives to create and delete macros. In fact, the parsing system uses the C/C++ preprocessor to evaluate the hints. For more information about the preprocessor directives, see [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md) and [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md).
 
-The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These hint-file specific replacement strings are only used in *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, `MFC` uses maps to create [message maps](../mfc/reference/message-maps-mfc.md), and `ATL` uses maps to create [object maps](../atl/reference/object-map-macros.md). The hint-file specific replacement strings mark the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
+The only unusual syntax elements are the `@<`, `@=`, and `@>` replacement strings. These hint-file specific replacement strings are only used in *map* macros. A map is a set of macros that relate data, functions, or events to other data, functions, or event handlers. For example, `MFC` uses maps to create [message maps](../../mfc/reference/message-maps-mfc.md), and `ATL` uses maps to create [object maps](../../atl/reference/object-map-macros.md). The hint-file specific replacement strings mark the starting, intermediate, and ending elements of a map. Only the name of a map macro is significant. Therefore, each replacement string intentionally hides the implementation of the macro.
 
 Hints use this syntax:
 
@@ -231,8 +231,8 @@ These notes apply to the preceding list:
 
 ## See Also
 
-[File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
-[#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>
-[#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)<br>
-[SAL Annotations](../c-runtime-library/sal-annotations.md)<br>
+[File Types Created for Visual C++ Projects](../file-types-created-for-visual-cpp-projects.md)<br>
+[#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
+[#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
+[SAL Annotations](../../c-runtime-library/sal-annotations.md)<br>
 

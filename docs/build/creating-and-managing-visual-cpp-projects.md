@@ -13,7 +13,7 @@ A *Visual Studio project* is a project based on the MSBuild build system. MSBuil
 
 You can create C++ projects by choosing **File &#124; New &#124; Project**, then choosing Visual C++ in the left pane. In the center pane you see a list of project templates: 
 
-   ![Project Templates](../ide/media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+   ![Project Templates](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
 
 For more information about all the default project templates that are included in Visual Studio, see [C++ project templates in Visual Studio](reference/visual-cpp-project-types.md). You can create your own project templates. For more information, see [How to: Create project templates](/visualstudio/ide/how-to-create-project-templates).
 
@@ -41,7 +41,7 @@ To compile and run the new project, press **F5** or click the *debug dropdown* w
 
 A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning does not. All errors and warnings will appear both in the Output Window and in the Error List when you build the project. 
 
-   ![Output window and error list](../ide/media/vs2017-output-error-list.png) "Visual Studio 2017 error List")
+   ![Output window and error list](media/vs2017-output-error-list.png) "Visual Studio 2017 error List")
 
 In the Error List, you can press **F1** on a highlighted error to go to its documentation topic.
 

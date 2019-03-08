@@ -50,7 +50,7 @@ You can disable all Microsoft-specific extensions to C++ by using the `/Za` comp
 
 The Microsoft C and C++ compilers provide options for precompiling any C or C++ code, including inline code. Using this performance feature, you can compile a stable body of code, store the compiled state of the code in a file, and, during subsequent compilations, combine the precompiled code with code that is still under development. Each subsequent compilation is faster because the stable code does not need to be recompiled.
 
-By default, all precompiled code is specified in the files stdafx.h and stdafx.cpp. The **New Project** wizard will automatically create these files for you unless you deselect the **Precompiled header** option. For more information on precompiled headers, see [Creating Precompiled Header Files](../build/reference/creating-precompiled-header-files.md).
+By default, all precompiled code is specified in the files stdafx.h and stdafx.cpp. The **New Project** wizard will automatically create these files for you unless you deselect the **Precompiled header** option. For more information on precompiled headers, see [Creating Precompiled Header Files](../build/creating-precompiled-header-files.md).
 
 ## Related Sections
 
