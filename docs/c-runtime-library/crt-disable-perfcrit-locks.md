@@ -19,6 +19,6 @@ Disables performance-critical locking in I/O operations.
 
 Defining this symbol can improve performance in single-threaded I/O-bound programs by forcing all I/O operations to assume a single-threaded I/O model. For more information, see [Multithreaded Libraries Performance](../c-runtime-library/multithreaded-libraries-performance.md).
 
-## See Also
+## See also
 
 [Global Constants](../c-runtime-library/global-constants.md)

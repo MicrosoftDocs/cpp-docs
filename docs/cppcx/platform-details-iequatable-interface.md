@@ -30,6 +30,6 @@ This interface is provided solely for completeness because it can be inspected w
 
 **Namespace:** Platform::Details
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

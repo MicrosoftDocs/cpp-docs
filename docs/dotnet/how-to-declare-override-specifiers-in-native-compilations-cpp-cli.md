@@ -79,6 +79,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Override Specifiers](../windows/override-specifiers-cpp-component-extensions.md)

@@ -44,6 +44,6 @@ Internal CRT functions are implementation-specific and subject to change with ea
 |-------------|---------------------|
 |`___mb_cur_max_func`, `___mb_cur_max_l_func`, `__p___mb_cur_max`|\<ctype.h>, \<stdlib.h>|
 
-## See Also
+## See also
 
 [MB_CUR_MAX](../c-runtime-library/mb-cur-max.md)

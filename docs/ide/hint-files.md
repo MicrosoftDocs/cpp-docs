@@ -229,7 +229,7 @@ These notes apply to the preceding list:
 
 - The `#undef` hint in the `A2` directory removed the hints for `OBRACE` and `CBRACE` in the `Debug` directory hint file.
 
-## See Also
+## See also
 
 [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)<br>
 [#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)<br>

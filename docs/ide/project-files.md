@@ -110,7 +110,7 @@ The following sample .vcxproj file was produced by specifying a **Win32 Console 
 </Project>
 ```
 
-## See Also
+## See also
 
 [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)<br>
 [Working with Project Properties](../ide/working-with-project-properties.md)

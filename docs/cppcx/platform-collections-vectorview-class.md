@@ -261,7 +261,7 @@ The first element in a sequence of objects that are used to initialize the curre
 *last*<br/>
 The last element in a sequence of objects that are used to initialize the current VectorView. The type of `last` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

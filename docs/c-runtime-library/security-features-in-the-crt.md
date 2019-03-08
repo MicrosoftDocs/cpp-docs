@@ -60,7 +60,7 @@ Some of the security features include the following:
 
 - `Format string syntax checking`. Invalid strings are detected, for example, using incorrect type field characters in `printf` format strings.
 
-## See Also
+## See also
 
 [Parameter Validation](../c-runtime-library/parameter-validation.md)<br/>
 [Secure Template Overloads](../c-runtime-library/secure-template-overloads.md)<br/>

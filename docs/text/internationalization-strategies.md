@@ -22,7 +22,7 @@ Depending on your target operating systems and markets, you have several interna
 
 The remainder of these topics focus on writing completely portable code that you can build as Unicode or as MBCS.
 
-## See Also
+## See also
 
 [Unicode and MBCS](../text/unicode-and-mbcs.md)<br/>
 [Locales and Code Pages](../text/locales-and-code-pages.md)

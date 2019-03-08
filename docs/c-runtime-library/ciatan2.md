@@ -28,7 +28,7 @@ The resulting value is pushed onto the top of the stack.
 
 **Platform:** x86
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)

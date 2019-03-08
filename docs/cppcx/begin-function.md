@@ -57,6 +57,6 @@ The VectorIterator object that is returned by begin is a proxy iterator that sto
 
 **Namespace:** Windows::Foundation::Collections
 
-## See Also
+## See also
 
 [Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)

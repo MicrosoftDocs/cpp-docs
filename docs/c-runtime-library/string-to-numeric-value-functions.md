@@ -72,7 +72,7 @@ When the value returned by these functions would cause an overflow or underflow,
 
 `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, and `_wcstoui64` are wide-character versions of `strtod`, `strtol`, `strtoul`, `_strtoi64`, and `_strtoui64`, respectively; the pointer to an end-of-conversion argument to each of these wide-character functions is a wide-character string. Otherwise, each of these wide-character functions behaves identically to its single-byte-character counterpart.
 
-## See Also
+## See also
 
 [Data Conversion](../c-runtime-library/data-conversion.md)<br/>
 [Locale](../c-runtime-library/locale.md)<br/>

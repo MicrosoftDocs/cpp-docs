@@ -28,6 +28,6 @@ Describes how to deploy a Visual C++ application by copying files to its folder.
 
    The application runs successfully because the Visual C++ libraries are available in the application-local folder.
 
-## See Also
+## See also
 
 [Deployment Examples](deployment-examples.md)<br/>

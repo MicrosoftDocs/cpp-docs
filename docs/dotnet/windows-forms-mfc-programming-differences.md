@@ -46,6 +46,6 @@ The following MFC view or document and command routing features have no equivale
 
    MFC has a command update mechanism. Therefore, the active view or document is responsible for the state of the UI elements (for example, enabling or disabling a menu item or tool button, and checked states). Windows Forms has no equivalent of a command update mechanism.
 
-## See Also
+## See also
 
 [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)

@@ -13,6 +13,6 @@ The C run-time routines assume that the direction flag is cleared. If you are us
 
 The C Run-Time library functions, such as the string-manipulation and buffer-manipulation routines, expect the direction flag to be clear.
 
-## See Also
+## See also
 
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

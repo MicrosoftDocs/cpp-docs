@@ -60,6 +60,6 @@ Returns the value that was originally stored in this object.
 
 For an example, see [Boxing](../cppcx/boxing-c-cx.md).
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

@@ -68,7 +68,7 @@ Thus you can write, maintain, and compile a single source code file to run with 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
 [Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>

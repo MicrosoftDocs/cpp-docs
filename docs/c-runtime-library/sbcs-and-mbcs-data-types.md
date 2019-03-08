@@ -22,7 +22,7 @@ Because some SBCS string-handling functions take (signed) **char**<strong>\*</st
 
 1. Use the type-safe statically linked library functions in TCHAR.H. To do so, define the constant **_NO_INLINING** on the command line. This is the slowest method, but the most type-safe.
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

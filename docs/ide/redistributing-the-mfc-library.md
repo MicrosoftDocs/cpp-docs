@@ -37,6 +37,6 @@ For more information about how to localize MFC applications, see [TN057: Localiz
 
 You can redistribute MFC localization DLLs by deploying the MFC DLL in your application local folder. For more information about how to redistribute Visual C++ libraries, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).
 
-## See Also
+## See also
 
 [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md)

@@ -24,6 +24,6 @@ In this header file:
 
 [swap Function (auto_gcroot)](../dotnet/swap-function-auto-gcroot.md)
 
-## See Also
+## See also
 
 [C++ Support Library](../dotnet/cpp-support-library.md)

@@ -171,6 +171,6 @@ namespace N {
 }
 ```
 
-## See Also
+## See also
 
 [XML Documentation](../ide/xml-documentation-visual-cpp.md)

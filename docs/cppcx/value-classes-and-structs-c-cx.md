@@ -139,7 +139,7 @@ public:
 };
 ```
 
-## See Also
+## See also
 
 [Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>

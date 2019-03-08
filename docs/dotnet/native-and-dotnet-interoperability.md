@@ -19,5 +19,4 @@ Discusses how to use the MFC Windows Forms support classes to host Windows Forms
 [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md)<br/>
 Describes how non-CLR DLLs can be used from .NET applications.
 
-## See Also
-
+## See also

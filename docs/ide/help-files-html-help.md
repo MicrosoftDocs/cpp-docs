@@ -18,6 +18,6 @@ The following files are created when you add the HTML Help type of Help support 
 |Afxprint.htm|*Projname*\hlp|HTML Help Topics|Contains the help topics for the printing commands.|
 |*.jpg; \*.gif|*Projname*\hlp\Images|Resource Files|Contain images for the different generated help file topics.|
 
-## See Also
+## See also
 
 [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)

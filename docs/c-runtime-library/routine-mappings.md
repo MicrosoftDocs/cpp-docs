@@ -252,7 +252,7 @@ For related information, see [Generic-Text Mappings in TCHAR.H](../text/generic-
 |`_vtprintf`|`vprintf`|`vprintf`|`vwprintf`|
 |`_vtprintf_s`|`vprintf_s`|`vprintf_s`|`vwprintf_s`|
 
-## See Also
+## See also
 
 [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
 [Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>

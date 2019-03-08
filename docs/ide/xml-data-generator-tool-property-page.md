@@ -27,6 +27,6 @@ For information on how to access the **XML Data Generator Tool** property page, 
 
 For information on how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>
 
-## See Also
+## See also
 
 [Property Pages](../ide/property-pages-visual-cpp.md)
