@@ -30,7 +30,7 @@ The project templates included in Visual Studio depend on the product version an
 |Project template|Description|
 |----------------------|-----------------------------|
 |Empty Project|An empty project for creating an application, library, or DLL. You must add any code or resources required.|
-|[Makefile Project](creating-a-makefile-project.md)|A project that wraps a Windows makefile in a Visual Studio project. (To open a makefile as-is in Visual Studio, use [Open Folder](../non-msbuild-projects.md).|
+|[Makefile Project](creating-a-makefile-project.md)|A project that wraps a Windows makefile in a Visual Studio project. (To open a makefile as-is in Visual Studio, use [Open Folder](../open-folder-projects-cpp.md).|
 |Shared Items Project|A project used for sharing code files or resource files between multiple projects. This project type does not produce an executable file.|
 
 ### ATL

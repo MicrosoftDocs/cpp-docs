@@ -17,7 +17,7 @@ First, make sure you have the **Linux development with C++** workload installed,
 
 The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
-This topic assumes you have read [CMake Tools for Visual Studio](../build/cmake-tools-for-visual-cpp.md). 
+This topic assumes you have read [CMake Tools for Visual Studio](../build/cmake-projects-in-visual-studio.md). 
 
 > [!NOTE]
 > The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). In Visual Studio 2019 the prebuilt binaries can be automatically deployed (see [Download prebuilt CMake binaries](#download-prebuilt-cmake-binaries)).
@@ -62,7 +62,7 @@ To provide IntelliSense support for remote headers, Visual Studio automatically 
 
 To debug your code on the remote system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects in Visual C++](../build/non-msbuild-projects.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
+To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
 
 ## Configure CMake settings for Linux
 
@@ -135,7 +135,7 @@ If a valid CMake is not found on the remote machine an infobar will appear and p
 ## See Also
 
 [Working with Project Properties](../build/working-with-project-properties.md)<br/>
-[CMake Tools for Visual C++](../build/cmake-tools-for-visual-cpp.md)<br/>
+[CMake Projects in Visual Studio](../build/cmake-projects-in-visual-studio.md)<br/>
 [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md)<br/>
 [Customize CMake settings](../build/customize-cmake-settings.md)<br/>
 [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md)<br/>

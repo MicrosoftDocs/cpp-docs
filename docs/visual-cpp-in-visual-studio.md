@@ -64,11 +64,14 @@ Information about samples.
 
 ## C++ development tools
 
-[IDE and Development Tools](ide/ide-and-tools-for-visual-cpp-development.md)<br/>
+[Overview of C++ Development in Visual Studio](overview-of-cpp-development.md)<br/>
 How to use the Visual Studio IDE to create projects, edit code, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
 
-[Compilers and Build Tools](build/building-c-cpp-programs.md)<br/>
-Microsoft C++ compiler and linker options, error messages, command-line examples, configurating for different platforms, and build reference topics.
+[Projects and Build Systems](build/building-c-cpp-programs.md)<br/>
+How to create and configure Visual Studio C++ projects, CMake projects, and other kinds of projects with MSVC compiler and linker options.
+
+[Writing and refactoring C++ code](ide/writing-and-refactoring-code.md)<br/>
+How to use the productivity features in the C++ editor to refactor, navigate and write code.
 
 [Debugging Native Code](/visualstudio/debugger/debugging-native-code)<br/>
 Use the Visual Studio debugger with C++ projects.

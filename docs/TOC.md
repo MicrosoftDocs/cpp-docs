@@ -1,6 +1,6 @@
 # [Visual C++ in Visual Studio 2017](visual-cpp-in-visual-studio.md)
 # [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md)
-# [Overview of C++ development in Visual Studio](ide-and-tools-for-visual-cpp-development.md)
+# [Overview of C++ development in Visual Studio](overview-of-cpp-development.md)
 # Visual C++ Tutorial
 ## [Install C++ support in Visual Studio](build/vscpp-step-0-installation.md)
 ## [Create a C++ console app project](build/vscpp-step-1-create.md)
@@ -14,6 +14,7 @@
 # [C Runtime Library](c-runtime-library/c-run-time-library-reference.md)
 # [C++ Standard Library](standard-library/cpp-standard-library-reference.md)
 # [Projects and Build Systems](build/building-c-cpp-programs.md)
+# [Writing and refactoring code](writing-and-refactoring-code-cpp.md)
 # [Windows Development](windows/overview-of-windows-programming-in-cpp.md)
 # [Linux Development](linux/download-install-and-setup-the-linux-development-workload.md)
 # [Cloud and Web Programming in Visual C++](cloud/cloud-and-web-programming-in-visual-cpp.md)

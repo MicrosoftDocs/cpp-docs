@@ -13,7 +13,7 @@ If you have an existing makefile project, you have these choices if you want to 
 
 - Create a makefile project in Visual Studio that uses your existing makefile to configure a .vcxproj file that Visual Studio will use for IntelliSense. (You will not have all the IDE features that you get with a native MSBuild project.) See [To create a makefile project](#create_a_makefile_project) below.
 - Use the **Create New Project from Existing Code Files** wizard to create a native MSBuild project from your source code. The original makefile will not be used after this. For more information, see [How to: Create a C++ Project from Existing Code](../how-to-create-a-cpp-project-from-existing-code.md).
-- **Visual Studio 2017 and later**: Use the **Open Folder** feature to edit and build a makefile project as-is without any involvement of the MSBuild system. For more information, see [Open Folder projects in Visual C++](../non-msbuild-projects.md).
+- **Visual Studio 2017 and later**: Use the **Open Folder** feature to edit and build a makefile project as-is without any involvement of the MSBuild system. For more information, see [Open Folder projects for C++](../open-folder-projects-cpp.md).
 
 ## <a name="create_a_makefile_project"> To create a makefile project with the makefile project template
 

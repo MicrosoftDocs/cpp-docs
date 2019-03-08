@@ -54,7 +54,7 @@ C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 ```
 ## See also
 
-[CMake Tools for Visual C++](cmake-tools-for-visual-cpp.md)<br/>
+[CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>
 [Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>
 [Connect to your remote Linux computer](../linux/connect-to-your-remote-linux-computer.md)<br/>
 [Customize CMake build settings](customize-cmake-settings.md)<br/>
