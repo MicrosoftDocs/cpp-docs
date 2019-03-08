@@ -41,7 +41,7 @@ The following command line creates an object file named THIS.obj in an existing 
 CL /FoB:\OBJECT\ THIS.C
 ```
 
-## See Also
+## See also
 
 [Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)<br/>

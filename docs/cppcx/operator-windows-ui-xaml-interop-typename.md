@@ -5,7 +5,7 @@ ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
 ---
 # operator Windows::UI::Xaml::Interop::TypeName
 
-Enables conversion from `Platform::Type` to [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx).
+Enables conversion from `Platform::Type` to [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename).
 
 ## Syntax
 
@@ -15,11 +15,11 @@ Operator TypeName(Platform::Type^ type);
 
 ### Return Value
 
-Returns a [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) when given a `Platform::Type^`.
+Returns a [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename) when given a `Platform::Type^`.
 
 ### Remarks
 
-`TypeName` is the language-neutral Windows Runtime struct for representing type information. [Platform::Type](../cppcx/platform-type-class.md) is specific to C++ and can’t be passed across the application binary interface (ABI). Here's one use of `TypeName`, in the [Navigate](https://msdn.microsoft.com/library/windows/apps/hh702394.aspx) function:
+`TypeName` is the language-neutral Windows Runtime struct for representing type information. [Platform::Type](../cppcx/platform-type-class.md) is specific to C++ and can’t be passed across the application binary interface (ABI). Here's one use of `TypeName`, in the [Navigate](/uwp/api/windows.ui.xaml.controls.frame.navigate) function:
 
 ```
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);

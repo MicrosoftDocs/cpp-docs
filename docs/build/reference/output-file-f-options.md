@@ -31,7 +31,7 @@ The output-file options create or rename output files. They affect all C or C++ 
 
 - [/Fx (Merge Injected Code)](../../build/reference/fx-merge-injected-code.md)
 
-## See Also
+## See also
 
 [Compiler Options](../../build/reference/compiler-options.md)<br/>
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

@@ -41,7 +41,7 @@ The `__AVX__` preprocessor symbol is defined when the **/arch:AVX** compiler opt
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
 
-## See Also
+## See also
 
 [/arch (Minimum CPU Architecture)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)<br/>

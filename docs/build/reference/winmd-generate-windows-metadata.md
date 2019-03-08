@@ -35,7 +35,7 @@ By default, the output file name has the form *binaryname*.winmd. To specify a d
 
 1. In the **Generate Windows Metadata** drop-down list box, select the option you want.
 
-## See Also
+## See also
 
 [Walkthrough: Creating a Simple Windows Runtime component and calling it from JavaScript](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)<br/>
 [Introduction to Microsoft Interface Definition Language 3.0](/uwp/midl-3/intro)<br/>

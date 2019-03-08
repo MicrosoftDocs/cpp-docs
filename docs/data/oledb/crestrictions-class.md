@@ -77,7 +77,7 @@ One of the standard HRESULT values.
 
 You can specify a maximum of seven restrictions on a schema rowset.
 
-See [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) for information about the defined restrictions on each schema rowset.
+See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) for information about the defined restrictions on each schema rowset.
 
 ## See Also
 

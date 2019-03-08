@@ -39,7 +39,7 @@ Multiple levels of parallelism can be specified for a build. The msbuild.exe swi
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
 [Linker Options](../../build/reference/linker-options.md)<br/>
 [Setting Linker Options](../../build/reference/setting-linker-options.md)

@@ -18,6 +18,6 @@ After you create the import library (.lib) and the export file (.exp) for the pr
 
 Finally, link the program you began with. In the LINK command, specify the objects and libraries for the program, the .exp file that LIB created for the program, and the import library or libraries for the exports used by the program. To continue the example, the LINK command for ONE.dll contains ONE.exp and TWO.lib, as well as the objects and libraries that go into ONE.dll. Do not specify the .def file or /EXPORT specifications in the LINK command; these are not needed, because the export definitions are contained in the .exp file. When you link using an .exp file, LINK does not create an import library, because it assumes that one was created when the .exp file was created.
 
-## See Also
+## See also
 
 [Working with Import Libraries and Export Files](../../build/reference/working-with-import-libraries-and-export-files.md)

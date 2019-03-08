@@ -64,7 +64,7 @@ UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::C
 
 ## <a name="first"></a>  UnorderedMapView::First Method
 
-Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) element in the unordered map.
 
 ### Syntax
 
@@ -122,7 +122,7 @@ The value that is paired with the `key`. The type of the return value is typenam
 
 ## <a name="size"></a>  UnorderedMapView::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMapView.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) elements in the UnorderedMapView.
 
 ### Syntax
 

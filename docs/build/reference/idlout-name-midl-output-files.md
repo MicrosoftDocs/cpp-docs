@@ -53,7 +53,7 @@ If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc7
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergedIDLBaseFileName%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)<br/>

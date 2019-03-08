@@ -136,7 +136,7 @@ Pointer to the window that contains the tool.
 ID of the string resource that contains the text for the tool.
 
 *lpRectTool*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure containing coordinates of the tool's bounding rectangle. The coordinates are relative to the upper-left corner of the client area of the window identified by *pWnd*.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure containing coordinates of the tool's bounding rectangle. The coordinates are relative to the upper-left corner of the client area of the window identified by *pWnd*.
 
 *nIDTool*<br/>
 ID of the tool.
@@ -174,7 +174,7 @@ BOOL AdjustRect(
 ### Parameters
 
 *lprc*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that holds either a tool tip window rectangle or a text display rectangle.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that holds either a tool tip window rectangle or a text display rectangle.
 
 *bLarger*<br/>
 If TRUE, *lprc* is used to specify a text-display rectangle, and it receives the corresponding window rectangle. If FALSE, *lprc* is used to specify a window rectangle, and it receives the corresponding text display rectangle.
@@ -379,7 +379,7 @@ void GetMargin(LPRECT lprc) const;
 ### Parameters
 
 *lprc*<br/>
-Address of a `RECT` structure that will receive the margin information. The members of the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure do not define a bounding rectangle. For the purpose of this message, the structure members are interpreted as follows:
+Address of a `RECT` structure that will receive the margin information. The members of the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure do not define a bounding rectangle. For the purpose of this message, the structure members are interpreted as follows:
 
 |Member|Representation|
 |------------|--------------------|
@@ -793,7 +793,7 @@ Pointer to the window that contains the tool.
 ID of the tool.
 
 *lpRect*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the new bounding rectangle.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the new bounding rectangle.
 
 ##  <a name="setwindowtheme"></a>  CToolTipCtrl::SetWindowTheme
 

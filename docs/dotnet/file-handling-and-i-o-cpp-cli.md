@@ -307,8 +307,6 @@ int main()
 
 ## See also
 
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
-
-[File and Stream I-O](/dotnet/standard/io/index)
-
-[System.IO namespace](https://msdn.microsoft.com/library/system.io.aspx)
+[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+[File and Stream I/O](/dotnet/standard/io/index)<br/>
+[System.IO namespace](/dotnet/api/system.io)

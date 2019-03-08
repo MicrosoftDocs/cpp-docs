@@ -457,7 +457,7 @@ int main()
 
 ### Remarks
 
-You can use the .NET Framework to access the registry with the <xref:Microsoft.Win32.Registry> and [RegistryKey](https://msdn.microsoft.com/library/microsoft.win32.registrykey.aspx) classes, which are both defined in the <xref:Microsoft.Win32> namespace. The **Registry** class is a container for static instances of the <xref:Microsoft.Win32.RegistryKey> class. Each instance represents a root registry node. The instances are <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, and <xref:Microsoft.Win32.Registry.Users>.
+You can use the .NET Framework to access the registry with the <xref:Microsoft.Win32.Registry> and <xref:Microsoft.Win32.RegistryKey> classes, which are both defined in the <xref:Microsoft.Win32> namespace. The **Registry** class is a container for static instances of the <xref:Microsoft.Win32.RegistryKey> class. Each instance represents a root registry node. The instances are <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, and <xref:Microsoft.Win32.Registry.Users>.
 
 ## Related Sections
 

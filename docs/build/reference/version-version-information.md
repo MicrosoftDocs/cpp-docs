@@ -40,7 +40,7 @@ Another way to insert a version number is with the [VERSION](../../build/referen
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Version%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

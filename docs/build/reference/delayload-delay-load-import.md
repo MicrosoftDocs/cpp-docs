@@ -32,7 +32,7 @@ The [/DELAY](../../build/reference/delay-delay-load-import-settings.md) option s
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.DelayLoadDLLs%2A>.
 
-## See Also
+## See also
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
 [Linker Options](../../build/reference/linker-options.md)

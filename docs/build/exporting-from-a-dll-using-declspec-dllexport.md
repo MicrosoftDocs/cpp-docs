@@ -68,6 +68,6 @@ As a reference, search through the Win32 Winbase.h header file. It contains exam
 
 - [Mutual imports](../build/mutual-imports.md)
 
-## See Also
+## See also
 
 [Exporting from a DLL](../build/exporting-from-a-dll.md)

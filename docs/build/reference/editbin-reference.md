@@ -18,6 +18,6 @@ EDITBIN is not available for use on files produced with the [/GL](../../build/re
 
 - [EDITBIN options](../../build/reference/editbin-options.md)
 
-## See Also
+## See also
 
 [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)

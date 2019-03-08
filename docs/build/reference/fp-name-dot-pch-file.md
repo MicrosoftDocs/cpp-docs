@@ -51,7 +51,7 @@ The following command specifies the use of a precompiled header file named MYPCH
 CL /YuMYAPP.H /FpMYPCH.PCH PROG.CPP
 ```
 
-## See Also
+## See also
 
 [Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
 [Compiler Options](../../build/reference/compiler-options.md)<br/>

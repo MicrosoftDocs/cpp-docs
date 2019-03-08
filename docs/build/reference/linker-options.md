@@ -123,7 +123,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 
 For more information, see [Compiler-Controlled LINK Options](../../build/reference/compiler-controlled-link-options.md).
 
-## See Also
+## See also
 
 [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)<br/>
 [Setting Linker Options](../../build/reference/setting-linker-options.md)

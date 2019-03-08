@@ -32,6 +32,6 @@ This section includes the following topics:
 
 - [BSCMAKE exit codes](../../build/reference/bscmake-exit-codes.md)
 
-## See Also
+## See also
 
 [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)

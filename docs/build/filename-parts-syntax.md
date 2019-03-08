@@ -30,6 +30,6 @@ For example, if the filename is c:\prog.exe:
 
 - %&#124;eF will be exe
 
-## See Also
+## See also
 
 [Commands in a Makefile](../build/commands-in-a-makefile.md)
