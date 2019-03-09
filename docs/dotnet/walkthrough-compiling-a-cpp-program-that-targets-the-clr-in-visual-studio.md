@@ -41,7 +41,7 @@ These topics assume that you understand the fundamentals of the C++ language.
 
 1. Click in the newly created tab in Visual Studio and type a valid Visual C++ program, or copy and paste one of the sample programs.
 
-   For example, you can use the [How to: Write a Text File (C++/CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md) sample program (in the **File Handling and I/O** node of the Programming Guide).
+   For example, you can use the [How to: Write a Text File (C++/CLI)](how-to-write-a-text-file-cpp-cli.md) sample program (in the **File Handling and I/O** node of the Programming Guide).
 
    If you use the sample program, notice that you use the `gcnew` keyword instead of `new` when creating a .NET object, and that `gcnew` returns a handle (`^`) rather than a pointer (`*`):
 
@@ -67,4 +67,4 @@ These topics assume that you understand the fundamentals of the C++ language.
 ## See Also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+[Projects and build systems](../build/projects-and-build-systems.md)<br/>

@@ -36,7 +36,7 @@ If the lock has already been acquired, this method acquires the lock anyway and 
 
 **Source:** mlock.c
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [_unlock](../c-runtime-library/unlock.md)

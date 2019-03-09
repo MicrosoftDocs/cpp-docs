@@ -27,6 +27,6 @@ For information on how to access the **Output** property page in the **MIDL** fo
 
 For information on how to programmatically access MIDL options for C++ projects, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>.
 
-## See Also
+## See also
 
 [MIDL Property Pages](midl-property-pages.md)

@@ -13,7 +13,7 @@ Any command that you enter in the edit box will be passed through to the tool fo
 
 For information on how to access the **Command Line** property pages, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-## See Also
+## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)<br>
 [.Lib Files as Linker Input](dot-lib-files-as-linker-input.md)

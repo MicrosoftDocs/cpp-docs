@@ -28,7 +28,7 @@ The `sig` argument must be one of the manifest constants listed below (defined i
 |SIGTERM|Termination request sent to the program. The default action terminates the calling program with exit code 3.  |
 |SIG_ERR|A return type from a signal indicating an error has occurred.  |
 
-## See Also
+## See also
 
 [signal](../c-runtime-library/reference/signal.md)<br/>
 [raise](../c-runtime-library/reference/raise.md)<br/>

@@ -111,9 +111,9 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/vms](vmm-vms-vmv-general-purpose-representation.md)|Declares single inheritance.|
 |[/vmv](vmm-vms-vmv-general-purpose-representation.md)|Declares virtual inheritance.|
 |[/Z7](z7-zi-zi-debug-information-format.md)|Generates C 7.0-compatible debugging information.|
-|[/Za](za-ze-disable-language-extensions.md)|Disables language extensions.|
+|[/Za](za-ze-disable-language-extensions.md)|Disables C89 language extensions.|
 |[/Zc](zc-conformance.md)|Specifies standard behavior under [/Ze](za-ze-disable-language-extensions.md).|
-|[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|
+|[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables C89 language extensions.|
 |[/Zf](zf.md)|Improves PDB generation time in parallel builds.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue. (x86 only)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|

@@ -132,7 +132,7 @@ Your Linux distro may have an older version of CMake. The CMake support in Visua
 **Visual Studio 2019**<br/>
 If a valid CMake is not found on the remote machine an infobar will appear and provide an option to automatically deploy the prebuilt CMake binaries. The binaries will be installed to `~/.vs/cmake`. After deploying the binaries, your project will automatically regenerate. Note that if the CMake specified by the `cmakeExecutable` field in `CMakeSettings.json` is invalid (doesn't exist or is an unsupported version) and the prebuilt binaries are present Visual Studio will ignore `cmakeExecutable` and use the prebuilt binaries.
 
-## See Also
+## See also
 
 [Working with Project Properties](../build/working-with-project-properties.md)<br/>
 [CMake Projects in Visual Studio](../build/cmake-projects-in-visual-studio.md)<br/>

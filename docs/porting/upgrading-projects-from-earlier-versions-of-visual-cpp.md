@@ -28,17 +28,11 @@ For information about how to update the targeted Windows versions, see [Modifyin
 ## In this section
 
 [Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md)<br/>
-
 [Modifying WINVER and _WIN32_WINNT](modifying-winver-and-win32-winnt.md)<br/>
-
 [Fix your dependencies on library internals](fix-your-dependencies-on-library-internals.md)<br/>
-
 [Floating-point migration issues](floating-point-migration-issues.md)<br/>
-
 [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)<br/>
-
 [Visual C++ features deprecated in Visual Studio 2019 preview](features-deprecated-in-visual-studio.md)<br/>
-
 [Build System Changes](build-system-changes.md)<br/>
 
 ## See Also

@@ -17,6 +17,6 @@ ms.assetid: 39cf5196-250a-459d-ae90-ce3d99f79039
 
 This is the maximum number of files that can be opened simultaneously. `FOPEN_MAX` is the ANSI-compatible name. `_SYS_OPEN` is provided for compatibility with existing code.
 
-## See Also
+## See also
 
 [Global Constants](../c-runtime-library/global-constants.md)

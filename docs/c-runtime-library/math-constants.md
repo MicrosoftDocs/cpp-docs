@@ -41,6 +41,6 @@ Math Constants are not defined in Standard C/C++. To use them, you must first de
 
 The file ATLComTime.h includes math.h when your project is built in Release mode. If you use one or more of the math constants in a project that also includes ATLComTime.h, you must define `_USE_MATH_DEFINES` before you include ATLComTime.h.
 
-## See Also
+## See also
 
 [Global Constants](../c-runtime-library/global-constants.md)

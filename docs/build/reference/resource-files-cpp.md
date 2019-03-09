@@ -21,6 +21,6 @@ See [Working with Resources](../../windows/working-with-resource-files.md) for m
 |Toolbar.bmp|*Projname*\res|Resource Files|The bitmap file representing the application or control in a toolbar or palette. This bitmap is included in the project's resource file. The initial toolbar and status bar are constructed in the **CMainFrame** class.|
 |ribbon.mfcribbon-ms|*Projname*\res|Resource Files|The resource file that contains the XML code that defines the buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer (MFC)](../../mfc/ribbon-designer-mfc.md).|
 
-## See Also
+## See also
 
 [File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)

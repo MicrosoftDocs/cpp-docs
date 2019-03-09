@@ -92,7 +92,7 @@ Some of THESE letters are Capitals.
 sOME OF these LETTERS ARE cAPITALS.
 ```
 
-## See Also
+## See also
 
 [Data Conversion](../c-runtime-library/data-conversion.md)<br/>
 [Locale](../c-runtime-library/locale.md)<br/>

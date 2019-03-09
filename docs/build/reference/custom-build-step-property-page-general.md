@@ -45,6 +45,6 @@ For the Linux version of this page, see [Custom Build Step Properties (Linux C++
 
 1. Modify the settings.
 
-## See Also
+## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)

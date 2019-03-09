@@ -18,7 +18,7 @@ All of these files are located in the *Projname* directory, and in either the He
 |StdAfx.cpp|Includes the files StdAfx.h and Atlimpl.cpp.|
 |StdAfx.h|Includes the ATL header files.|
 
-## See Also
+## See also
 
 [File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
 [MFC Program or Control Source and Header Files](mfc-program-or-control-source-and-header-files.md)<br>

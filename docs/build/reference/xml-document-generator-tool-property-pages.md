@@ -29,7 +29,6 @@ The XML Document Generator Tool property page exposes the functionality of xdcma
 
    If your project has a dependency on a .lib project in the solution, you can process .xdc files from the .lib project into the .xml files for the current project.
 
-## See Also
+## See also
 
-[C++ project property page reference](property-pages-visual-cpp.md)<br>
 [C++ project property page reference](property-pages-visual-cpp.md)

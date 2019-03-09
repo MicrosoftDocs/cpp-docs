@@ -59,6 +59,6 @@ For information about how to access the **NMake** property page, see [Set C++ co
 
 For information about how to programmatically access members of this object, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.
 
-## See Also
+## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)<br>

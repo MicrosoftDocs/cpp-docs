@@ -95,7 +95,7 @@ Note that input longer than 20 characters will overrun the line buffer and almos
 Hello there!The line entered was: Hello there!
 ```
 
-## See Also
+## See also
 
 [Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
 [fgets, fgetws](../c-runtime-library/reference/fgets-fgetws.md)<br/>

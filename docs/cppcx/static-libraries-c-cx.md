@@ -25,6 +25,6 @@ If you consume a static library that creates public `ref` classes, public interf
 
 You can safely ignore the warning only if the static library is not producing Windows Runtime components that are consumed outside the library itself. If the library doesn’t consume a component that it defines, then the linker can optimize away the implementation even though the public metadata contains the type information. This means that public components in a static library will compile but will not activate at run time. For this reason, any Windows Runtime component that's intended for consumption by other components or apps must be implemented in a dynamic-link library (DLL).
 
-## See Also
+## See also
 
 [Threading and Marshaling](../cppcx/threading-and-marshaling-c-cx.md)

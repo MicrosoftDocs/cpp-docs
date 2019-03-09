@@ -34,6 +34,6 @@ Use the [public enum class](../windows/enum-class-cpp-component-extensions.md) k
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

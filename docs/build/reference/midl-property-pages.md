@@ -16,6 +16,6 @@ The **MIDL** node contains several property pages. To access them. right-click o
 
 For information on how to programmatically access MIDL options for C++ projects, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>
 
-## See Also
+## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)

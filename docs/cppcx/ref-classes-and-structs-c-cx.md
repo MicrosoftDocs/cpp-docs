@@ -121,7 +121,7 @@ The following example shows how to expose a public ref class that derives from o
 
 [!code-cpp[cx_classes#09](../cppcx/codesnippet/CPP/classesstructs/class1.h#09)]
 
-## See Also
+## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Value classes and structs](../cppcx/value-classes-and-structs-c-cx.md)<br/>

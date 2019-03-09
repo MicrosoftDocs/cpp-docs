@@ -25,7 +25,7 @@ The **Managed Resources** property page contains the following properties:
 
 For information on how to access the **Managed Resources** property page, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-## See Also
+## See also
 
 [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-)<br>
 [C++ project property page reference](property-pages-visual-cpp.md)<br>

@@ -30,7 +30,7 @@ For some code pages and corresponding character sets, the order of characters in
 
 Because the `coll` functions collate strings lexicographically for comparison, whereas the `cmp` functions simply test for string equality, the `coll` functions are much slower than the corresponding `cmp` versions. Therefore, the `coll` functions should be used only when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the string comparison.
 
-## See Also
+## See also
 
 [Locale](../c-runtime-library/locale.md)<br/>
 [String Manipulation](../c-runtime-library/string-manipulation-crt.md)<br/>

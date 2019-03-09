@@ -100,6 +100,6 @@ The summary for this other type.
 </doc>
 ```
 
-## See Also
+## See also
 
 [XML Documentation](xml-documentation-visual-cpp.md)

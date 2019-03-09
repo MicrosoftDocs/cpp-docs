@@ -19,4 +19,3 @@ There is one coding scenario that will pass the compiler but that will result in
 ## See also
 
 - [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
-

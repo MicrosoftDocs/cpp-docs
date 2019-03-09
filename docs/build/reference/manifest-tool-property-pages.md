@@ -18,6 +18,6 @@ For more information on the manifest tool, see [Mt.exe](/windows/desktop/sbscs/m
 
 [Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](advanced-manifest-tool.md)
 
-## See Also
+## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)

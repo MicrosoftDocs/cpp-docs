@@ -17,7 +17,6 @@ Class [CStringT](../atl-mfc-shared/reference/cstringt-class.md) is a template cl
 
 - [CFixedStringT: An Example of a Custom String Manager](../atl-mfc-shared/cfixedstringt-example-of-a-custom-string-manager.md)
 
-## See Also
+## See also
 
 [CustomString sample](../visual-cpp-samples.md)
-

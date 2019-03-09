@@ -59,6 +59,6 @@ Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process docu
 class MyClass {};
 ```
 
-## See Also
+## See also
 
 [XML Documentation](xml-documentation-visual-cpp.md)

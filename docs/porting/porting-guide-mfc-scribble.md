@@ -79,7 +79,7 @@ Now that you've migrated to Visual Studio 2017, you might want to make some chan
 
 Scribble was a small and simple Windows desktop application, and it wasn't hard to convert. Many small, simple apps convert just as easily to the new version.  For more complex applications, with many more lines of code, older legacy code that might not be up to modern engineering standards, multiple projects and libraries, custom build steps, or for complex scripted automated builds, it will take more time to upgrade. Continue with the [next example](../porting/porting-guide-com-spy.md), an ATL/COM application called COM Spy.
 
-## See Also
+## See also
 
 [Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [Next Example: COM Spy](../porting/porting-guide-com-spy.md)

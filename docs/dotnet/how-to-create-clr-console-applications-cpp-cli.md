@@ -52,7 +52,7 @@ When you use the Console Application template to create a project, it automatica
 
 1. Choose the **OK** button.
 
-## See Also
+## See also
 
 [CLR Projects](../build/reference/files-created-for-clr-projects.md)
 

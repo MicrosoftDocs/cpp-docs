@@ -29,6 +29,6 @@ The **Web References** property page contains the following properties:
 
 For information on how to access the **Web Reference** property page, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-## See Also
+## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)

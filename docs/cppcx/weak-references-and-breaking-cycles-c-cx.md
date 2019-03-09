@@ -47,5 +47,4 @@ Class1::Class1()
 
 When an event handler throws `DisconnectedException`, it causes the event to remove the handler from the subscriber list.
 
-## See Also
-
+## See also

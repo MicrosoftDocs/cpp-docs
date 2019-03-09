@@ -132,6 +132,6 @@ ghi abc def
 333.333300 2.22 0.100
 ```
 
-## See Also
+## See also
 
 [Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)

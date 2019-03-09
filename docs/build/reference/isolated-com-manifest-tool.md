@@ -32,7 +32,7 @@ To access this property page dialog box, open the property pages for your projec
 
    Uses the /replacements option to specify the full path to the file that contains values for replaceable strings in the .rgs file.
 
-## See Also
+## See also
 
 [Isolated Applications](/windows/desktop/SbsCs/isolated-applications)<br>
 [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)<br>

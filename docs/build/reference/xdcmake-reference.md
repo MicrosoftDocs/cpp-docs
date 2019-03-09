@@ -45,6 +45,6 @@ Visual Studio will invoke xdcmake.exe automatically when building a project. You
 
 See [Recommended Tags for Documentation Comments](recommended-tags-for-documentation-comments-visual-cpp.md) for more information on adding documentation comments to source code files.
 
-## See Also
+## See also
 
 [XML Documentation](xml-documentation-visual-cpp.md)

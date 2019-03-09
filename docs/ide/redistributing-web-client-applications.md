@@ -10,6 +10,6 @@ If your application uses the MFC classes implementing the WebBrowser control (fo
 
 Installing the latest version of Internet Explorer also ensures that the target computer has the latest common control files. For more information, see [Install and Deploy Internet Explorer 11](/internet-explorer/ie11-deploy-guide/install-and-deploy-ie11).
 
-## See Also
+## See also
 
 [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

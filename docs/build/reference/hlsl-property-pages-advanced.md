@@ -18,7 +18,7 @@ To configure the following properties of the HLSL compiler (fxc.exe), use its **
 
    **Yes (/WX)** to treat all compiler warnings as errors; otherwise, **No**.
 
-## See Also
+## See also
 
 [HLSL Property Pages](hlsl-property-pages.md)<br>
 [HLSL Property Pages: General](hlsl-property-pages-general.md)<br>

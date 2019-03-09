@@ -12,6 +12,6 @@ You can use merge modules to enable the installation of redistributable Visual C
 
 We recommend that you not use merge modules except when you don't have to service your application and you don't have dependencies on more than one version of the DLLs. Merge modules for different versions of the same DLL cannot be included in one installer, and merge modules make it difficult to service DLLs independently of your application. Instead, we recommend that you install a Visual C++ Redistributable Package.
 
-## See Also
+## See also
 
 [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md)

@@ -341,6 +341,6 @@ These functions and function macros are used to implement the CRT and the C++ St
 |_Xbad_alloc|
 |_Xlength_error|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

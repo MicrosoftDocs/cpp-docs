@@ -25,7 +25,7 @@ All of these files are located in the *Projname* directory, and in either the He
 |Mainfrm.cpp, Mainfrm.h|Derive the **CMainFrame** class from either [CFrameWnd](../../mfc/reference/cframewnd-class.md) (for SDI applications) or [CMDIFrameWnd](../../mfc/reference/cmdiframewnd-class.md) (for MDI applications). The **CMainFrame** class handles the creation of toolbar buttons and the status bar, if the corresponding options are selected in the application wizard's **Application Options** page (step 4 of 6). For information on using **CMainFrame**, see [The Frame-Window Classes Created by the Application Wizard](../../mfc/frame-window-classes-created-by-the-application-wizard.md).|
 |Childfrm.cpp, Childfrm.h|Derive the **CChildFrame** class from [CMDIChildWnd](../../mfc/reference/cmdichildwnd-class.md). The **CChildFrame** class is used for MDI document frame windows. These files are always created if you select the MDI option.|
 
-## See Also
+## See also
 
 [File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
 [ATL Program or Control Source and Header Files](atl-program-or-control-source-and-header-files.md)<br>

@@ -152,6 +152,6 @@ For information on .NET programming in Visual C++ see:
 
 - [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
 
-## See Also
+## See also
 
 [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)

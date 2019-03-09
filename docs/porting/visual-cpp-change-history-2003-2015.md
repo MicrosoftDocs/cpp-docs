@@ -3516,6 +3516,6 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - The compiler now reports unreachable code (C4702).
 
-## See Also
+## See also
 
 [What's New for Visual C++ in Visual Studio](../what-s-new-for-visual-cpp-in-visual-studio.md)

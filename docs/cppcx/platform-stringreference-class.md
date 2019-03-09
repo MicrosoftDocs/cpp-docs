@@ -182,6 +182,6 @@ The number of elements in `__strArg`.
 
 The first version of this constructor is the default constructor. The second version initializes a new `StringReference` instance class from the object that's specified by the `__fstrArg` parameter. The third and fourth overloads initialize a new `StringReference` instance from an array of char16 values. char16 represents a 16-bit UNICODE text character.
 
-## See Also
+## See also
 
 [Platform::StringReference Class](../cppcx/platform-stringreference-class.md)

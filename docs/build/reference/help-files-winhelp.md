@@ -26,6 +26,6 @@ You can add WinHelp support to an MFC ActiveX Control project by selecting **Gen
 |Makehelp.bat|*Projname*|Source Files|Used by the system to build the Help project when the project is compiled.|
 |Bullet.bmp|*Projname*|Resource Files|Used by standard Help file topics to represent bulleted lists.|
 
-## See Also
+## See also
 
 [File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)

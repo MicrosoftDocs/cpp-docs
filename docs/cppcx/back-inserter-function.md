@@ -40,6 +40,6 @@ An iterator.
 
 **Namespace:** Windows::Foundation::Collections
 
-## See Also
+## See also
 
 [Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)

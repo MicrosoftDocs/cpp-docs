@@ -13,6 +13,6 @@ Supports calling functions in a specific application domain.
 
 [call_in_appdomain Function](../dotnet/call-in-appdomain-function.md)
 
-## See Also
+## See also
 
 [C++ Support Library](../dotnet/cpp-support-library.md)

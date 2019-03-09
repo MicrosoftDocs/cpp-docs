@@ -123,6 +123,6 @@ WeakReference wr(mc);
 MyClass^ copy2 = wr.Resolve<MyClass>();
 ```
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)
