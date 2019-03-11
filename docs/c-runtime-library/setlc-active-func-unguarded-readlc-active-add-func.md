@@ -33,6 +33,6 @@ Although the internal CRT functions `___setlc_active_func` and `___unguarded_rea
 |-------------|---------------------|
 |`___setlc_active_func`, `___unguarded_readlc_active_add_func`|none|
 
-## See Also
+## See also
 
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)

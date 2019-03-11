@@ -106,4 +106,3 @@ The vector v2 = ( -0 1 -4 5 -8 9 )
 The result of the element-wise equal_to comparison
 between v1 & v2 is: ( 1 1 0 1 0 1 )
 ```
-

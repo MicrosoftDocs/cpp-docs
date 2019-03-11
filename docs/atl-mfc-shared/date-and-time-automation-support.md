@@ -32,6 +32,6 @@ The CRT correctly calculates a difference of 23 hours. `COleDateTimeSpan` calcul
 
 [!code-cpp[NVC_ATLMFC_Utilities#176](../atl-mfc-shared/codesnippet/cpp/date-and-time-automation-support_1.cpp)]
 
-## See Also
+## See also
 
 [Date and Time](../atl-mfc-shared/date-and-time.md)

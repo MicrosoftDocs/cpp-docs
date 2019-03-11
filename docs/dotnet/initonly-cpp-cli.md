@@ -27,6 +27,6 @@ ref struct Y1 {
 };
 ```
 
-## See Also
+## See also
 
 [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)

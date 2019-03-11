@@ -120,7 +120,7 @@ Key: 42.00 Value: 42
 Key: 74.00 Value: 74
 ```
 
-## See Also
+## See also
 
 [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)<br/>
 [adapter (STL/CLR)](../dotnet/adapter-stl-clr.md)<br/>

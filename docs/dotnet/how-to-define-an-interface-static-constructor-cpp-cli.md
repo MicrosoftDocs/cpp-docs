@@ -45,6 +45,6 @@ in MyInterface static constructor
 99
 ```
 
-## See Also
+## See also
 
 [interface class](../windows/interface-class-cpp-component-extensions.md)

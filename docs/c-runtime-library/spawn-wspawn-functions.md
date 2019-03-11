@@ -181,7 +181,7 @@ child process output
 from SPAWN!
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../c-runtime-library/reference/abort.md)<br/>

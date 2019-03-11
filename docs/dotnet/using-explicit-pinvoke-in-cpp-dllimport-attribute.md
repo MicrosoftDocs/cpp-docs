@@ -28,6 +28,6 @@ The result is a managed entry point for each native DLL function that contains t
 
 - [How to: Marshal Embedded Pointers Using PInvoke](../dotnet/how-to-marshal-embedded-pointers-using-pinvoke.md)
 
-## See Also
+## See also
 
 [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md)

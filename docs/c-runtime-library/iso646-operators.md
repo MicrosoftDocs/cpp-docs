@@ -23,7 +23,7 @@ Provides readable alternatives to certain operators or punctuators. The standard
 |[xor](../c-runtime-library/reference/xor.md)|An alternative to the ^ operator.|
 |[xor_eq](../c-runtime-library/reference/xor-eq.md)|An alternative to the ^= operator.|
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

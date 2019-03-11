@@ -24,7 +24,7 @@ The `mode` argument determines the action taken by the calling process before an
 |`_P_NOWAIT`, `_P_NOWAITO`|Continues to execute calling process concurrently with new process (asynchronous `_spawn`).|
 |`_P_DETACH`|Continues to execute calling process; new process is run in background with no access to console or keyboard. Calls to `_cwait` against new process will fail. This is an asynchronous `_spawn`.|
 
-## See Also
+## See also
 
 [_spawn, _wspawn Functions](../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

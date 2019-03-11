@@ -67,7 +67,7 @@ For more compatibility information, see [Compatibility](../c-runtime-library/com
 
 All versions of the [C run-time libraries](../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)<br/>
 [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)

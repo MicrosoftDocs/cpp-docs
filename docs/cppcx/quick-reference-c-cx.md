@@ -40,6 +40,6 @@ When you build on the command line, use the **/ZW** compiler option to build a U
 |Parameterized types|templates|`generic <typename` *T* `> interface class` *identifier* `{}`<br /><br /> `generic <typename` *T* `> delegate` *[return-type]* *delegate-identifier* `() {}`|Declares a parameterized interface class.<br /><br /> Declares a parameterized delegate.|
 |Nullable value types|`boost::optional<T>`|[Platform::IBox \<T>](../cppcx/platform-ibox-interface.md)|Enables variables of scalar types and value structs to have a value of `nullptr`.|
 
-## See Also
+## See also
 
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

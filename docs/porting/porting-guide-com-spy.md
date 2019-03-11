@@ -158,7 +158,7 @@ private void button1_Click(object sender, EventArgs e)
 
 This ran without problems, and with COM Spy up and running and configured to monitor the `Dog` component, lots of data appears showing the activity.
 
-## See Also
+## See also
 
 [Porting and Upgrading: Examples and Case Studies](../porting/porting-and-upgrading-examples-and-case-studies.md)<br/>
 [Next Example: Spy++](../porting/porting-guide-spy-increment.md)<br/>

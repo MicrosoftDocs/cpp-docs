@@ -56,7 +56,7 @@ When you take this approach, you must be careful to ensure that appropriate data
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

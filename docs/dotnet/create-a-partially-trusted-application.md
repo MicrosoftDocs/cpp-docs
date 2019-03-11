@@ -22,7 +22,7 @@ If your application does not use any functionality of the C-Runtime Library and 
 
 1. Add one of the ptrustm libraries to the linker input dependencies. Use ptrustm.lib if you are building your application in release mode. For debug mode, use ptrustmd.lib. For information on how to do this using the Visual Studio development environment or programmatically, see [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md).
 
-## See Also
+## See also
 
 [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)<br/>
 [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md)<br/>

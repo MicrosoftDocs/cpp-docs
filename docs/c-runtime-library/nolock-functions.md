@@ -46,7 +46,7 @@ Use _nolock functions only if your program is truly single-threaded or if it doe
 
 [_ungetch_nolock, _ungetwch_nolock](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
 
-## See Also
+## See also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

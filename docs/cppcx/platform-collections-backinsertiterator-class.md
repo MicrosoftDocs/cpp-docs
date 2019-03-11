@@ -135,6 +135,6 @@ By design, the first syntax example pre-increments the current BackInsertIterato
 
 However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#dereference-operator).
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

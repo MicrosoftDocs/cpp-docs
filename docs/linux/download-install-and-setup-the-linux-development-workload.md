@@ -68,5 +68,3 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
 ## Ensure you have CMake 3.8 on the remote Linux machine
 
 Your Linux distro may have an older version of CMake. The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries to your Linux machine at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
-
-

@@ -97,7 +97,7 @@ int main( void )
 OK - heap is fine
 ```
 
-## See Also
+## See also
 
 [Memory Allocation](../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../c-runtime-library/heapadd.md)<br/>

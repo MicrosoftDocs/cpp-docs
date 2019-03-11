@@ -44,6 +44,6 @@ This code tests for possible buffer overflow in the loop test, using `_mbclen` t
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );
 ```
 
-## See Also
+## See also
 
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)

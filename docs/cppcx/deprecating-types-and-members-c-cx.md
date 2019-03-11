@@ -48,7 +48,7 @@ The following table lists the constructs to which the Deprecated attribute may b
 |struct field|
 |parameterized constructor|
 
-## See Also
+## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>

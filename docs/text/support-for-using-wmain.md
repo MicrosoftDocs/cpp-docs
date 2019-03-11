@@ -20,7 +20,7 @@ If your program uses a **main** function, the multibyte-character environment is
 
 Similarly, if your program uses a **wmain** function, a wide-character environment is created at program startup and is pointed to by the `_wenviron` global variable. An MBCS (ASCII) environment is created on the first call to `_putenv` or `getenv` and is pointed to by the `_environ` global variable.
 
-## See Also
+## See also
 
 [Support for Unicode](../text/support-for-unicode.md)<br/>
 [Unicode Programming Summary](../text/unicode-programming-summary.md)<br/>

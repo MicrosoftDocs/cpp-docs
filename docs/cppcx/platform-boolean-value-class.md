@@ -30,6 +30,6 @@ Boolean has the Equals(), GetHashCode(), and ToString() methods derived from the
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

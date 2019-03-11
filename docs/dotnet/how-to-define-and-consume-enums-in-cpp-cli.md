@@ -128,6 +128,6 @@ int main() {
 True
 ```
 
-## See Also
+## See also
 
 [enum class](../windows/enum-class-cpp-component-extensions.md)

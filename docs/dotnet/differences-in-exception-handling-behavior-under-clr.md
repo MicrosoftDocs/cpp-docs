@@ -267,7 +267,7 @@ In my_trans_func.
 Caught an SEH exception with exception code: e0000101
 ```
 
-## See Also
+## See also
 
 [Exception Handling](../windows/exception-handling-cpp-component-extensions.md)<br/>
 [safe_cast](../windows/safe-cast-cpp-component-extensions.md)<br/>

@@ -611,6 +611,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Arrays](../windows/arrays-cpp-component-extensions.md)

@@ -791,7 +791,7 @@ Hello, World! (CStringW)
 Hello, World! (basic_string)
 ```
 
-## See Also
+## See also
 
 [ATL and MFC String Conversion Macros](../atl/reference/string-conversion-macros.md)<br/>
 [CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
