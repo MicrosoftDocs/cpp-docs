@@ -1,7 +1,6 @@
 ---
 title: "ATL Class Overview"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.atl.classes"]
 helpviewer_keywords: ["classes [C++], ATL", "ATL, class reference"]
 ms.assetid: c38ac93d-c3a2-4ce7-8153-f1d34c0f0fa6
 ---

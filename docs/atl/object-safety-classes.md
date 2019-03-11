@@ -2,7 +2,6 @@
 title: "Object Safety Classes (ATL)| Microsoft Docs"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.objects.safety"]
 helpviewer_keywords: ["safety classes", "object safety classes"]
 ms.assetid: 00060b28-49e2-4ec1-9a22-f501e07821d6
 ---

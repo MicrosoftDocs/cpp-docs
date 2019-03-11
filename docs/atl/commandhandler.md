@@ -2,7 +2,6 @@
 title: "CommandHandler"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["CommandHandler"]
 helpviewer_keywords: ["CommandHandler function"]
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
 ---

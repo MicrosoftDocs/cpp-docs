@@ -2,7 +2,6 @@
 title: "Error Information Classe  (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.errors"]
 helpviewer_keywords: ["error handling, error information classes", "error handling, classes", "error information, classes"]
 ms.assetid: ba40c8fb-81fd-4f61-8f47-fa2cb540e274
 ---

@@ -2,7 +2,6 @@
 title: "Windows Support Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.windows"]
 helpviewer_keywords: ["ATL, windows", "windows [C++], ATL"]
 ms.assetid: 750b14d5-d787-4d2b-9728-ac199ccad489
 ---

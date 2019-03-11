@@ -1,7 +1,6 @@
 ---
 title: "Support for Multibyte Character Sets (MBCSs)"
 ms.date: "11/04/2016"
-f1_keywords: ["_mbcs"]
 helpviewer_keywords: ["MBCS [C++], about MBCS", "character sets [C++], multibyte", "multibyte characters [C++]", "MBCS [C++]"]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
 ---
