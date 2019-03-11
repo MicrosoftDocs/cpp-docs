@@ -22,7 +22,7 @@ By default, LIB names the output file using the base name of the first object or
 The following options apply to building and modifying a library:
 
 **/LIBPATH:** *dir*<br/>
-Overrides the environment library path. For details, see the description of the LINK [/LIBPATH](../../build/reference/libpath-additional-libpath.md) option.
+Overrides the environment library path. For details, see the description of the LINK [/LIBPATH](libpath-additional-libpath.md) option.
 
 **/LIST**<br/>
 Displays information about the output library to standard output. The output can be redirected to a file. You can use /LIST to determine the contents of an existing library without modifying it.
@@ -31,7 +31,7 @@ Displays information about the output library to standard output. The output can
 When building an import library, specifies the name of the DLL for which the import library is being built.
 
 **/NODEFAULTLIB**<br/>
-Removes one or more default libraries from the list of libraries it searches when resolving external references. See [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) for more information.
+Removes one or more default libraries from the list of libraries it searches when resolving external references. See [/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) for more information.
 
 **/OUT:** *filename*<br/>
 Overrides the default output filename. By default, the output library is created in the current directory, with the base name of the first library or object file on the command line and the extension .lib.
@@ -40,7 +40,7 @@ Overrides the default output filename. By default, the output library is created
 Omits the specified *object* from the output library. LIB creates an output library by combining all objects (whether in object files or libraries), and then deleting any objects specified with /REMOVE.
 
 **/SUBSYSTEM:**{**CONSOLE** &#124; **EFI_APPLICATION** &#124; **EFI_BOOT_SERVICE_DRIVER** &#124; **EFI_ROM** &#124; **EFI_RUNTIME_DRIVER** &#124; **NATIVE** &#124; **POSIX** &#124; **WINDOWS** &#124; **WINDOWSCE**}[,#[.##]]<br/>
-Tells the operating system how to run a program created by linking to the output library. For more information, see the description of the LINK [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) option.
+Tells the operating system how to run a program created by linking to the output library. For more information, see the description of the LINK [/SUBSYSTEM](subsystem-specify-subsystem.md) option.
 
 LIB options specified on the command line are not case sensitive.
 
@@ -59,4 +59,4 @@ You can use LIB to perform the following library-management tasks:
 
 ## See also
 
-[LIB Reference](../../build/reference/lib-reference.md)
+[LIB Reference](lib-reference.md)

@@ -47,4 +47,4 @@ __declspec(dllexport) ULONG ulDataInDLL;
 
 ## See also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+[Importing into an Application](importing-into-an-application.md)

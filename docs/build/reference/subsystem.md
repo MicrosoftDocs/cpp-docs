@@ -55,10 +55,10 @@ The optional `major` and `minor` values specify the minimum required version of 
 
 - The values of `major` and `minor` must be from 0 through 65,535.
 
-The choice of subsystem affects the default starting address for the program. For more information, see [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md), the linker /ENTRY:*function* option.
+The choice of subsystem affects the default starting address for the program. For more information, see [/ENTRY (Entry-Point Symbol)](entry-entry-point-symbol.md), the linker /ENTRY:*function* option.
 
-For more information, including the minimum and default values for the major and minor version numbers for each subsystem, see the [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) linker option.
+For more information, including the minimum and default values for the major and minor version numbers for each subsystem, see the [/SUBSYSTEM](subsystem-specify-subsystem.md) linker option.
 
 ## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

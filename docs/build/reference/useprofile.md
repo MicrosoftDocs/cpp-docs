@@ -31,7 +31,7 @@ The **/USEPROFILE** linker option is new in Visual Studio 2015.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Optimization** property page.
 
@@ -49,5 +49,5 @@ The **/USEPROFILE** linker option is new in Visual Studio 2015.
 
 [/GENPROFILE and /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md)<br/>
-[Environment Variables for Profile-Guided Optimizations](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
+[Profile-Guided Optimizations](../profile-guided-optimizations.md)<br/>
+[Environment Variables for Profile-Guided Optimizations](../environment-variables-for-profile-guided-optimizations.md)<br/>

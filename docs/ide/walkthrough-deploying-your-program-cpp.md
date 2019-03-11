@@ -65,5 +65,5 @@ The walkthrough shows how to use Windows Installer to deploy your application. Y
 ## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+[Projects and build systems](../build/building-c-cpp-programs.md)<br/>
 [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)<br/>

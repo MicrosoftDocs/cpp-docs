@@ -13,11 +13,11 @@ ms.assetid: 533d2bce-f9b7-4fea-ae1c-0b4864c9d10b
 
 ## Remarks
 
-The /MAPINFO option tells the linker to include the specified information in a mapfile, which is created if you specify the [/MAP](../../build/reference/map-generate-mapfile.md) option.  EXPORTS tells the linker to include exported functions.
+The /MAPINFO option tells the linker to include the specified information in a mapfile, which is created if you specify the [/MAP](map-generate-mapfile.md) option.  EXPORTS tells the linker to include exported functions.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -31,5 +31,5 @@ The /MAPINFO option tells the linker to include the specified information in a m
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

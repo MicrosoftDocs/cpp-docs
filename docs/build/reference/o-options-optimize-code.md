@@ -9,25 +9,25 @@ ms.assetid: 77997af9-5555-4b3d-aa57-6615b27d4d5d
 
 The **/O** options control various optimizations that help you create code for maximum speed or minimum size.
 
-- [/O1](../../build/reference/o1-o2-minimize-size-maximize-speed.md) sets a combination of optimizations that generate minimum size code.
+- [/O1](o1-o2-minimize-size-maximize-speed.md) sets a combination of optimizations that generate minimum size code.
 
-- [/O2](../../build/reference/o1-o2-minimize-size-maximize-speed.md) sets a combination of optimizations that optimizes code for maximum speed.
+- [/O2](o1-o2-minimize-size-maximize-speed.md) sets a combination of optimizations that optimizes code for maximum speed.
 
-- [/Ob](../../build/reference/ob-inline-function-expansion.md) controls inline function expansion.
+- [/Ob](ob-inline-function-expansion.md) controls inline function expansion.
 
-- [/Od](../../build/reference/od-disable-debug.md) disables optimization, to speed compilation and simplify debugging.
+- [/Od](od-disable-debug.md) disables optimization, to speed compilation and simplify debugging.
 
-- [/Og](../../build/reference/og-global-optimizations.md) enables global optimizations.
+- [/Og](og-global-optimizations.md) enables global optimizations.
 
-- [/Oi](../../build/reference/oi-generate-intrinsic-functions.md) generates intrinsic functions for appropriate function calls.
+- [/Oi](oi-generate-intrinsic-functions.md) generates intrinsic functions for appropriate function calls.
 
-- [/Os](../../build/reference/os-ot-favor-small-code-favor-fast-code.md) tells the compiler to favor optimizations for size over optimizations for speed.
+- [/Os](os-ot-favor-small-code-favor-fast-code.md) tells the compiler to favor optimizations for size over optimizations for speed.
 
-- [/Ot](../../build/reference/os-ot-favor-small-code-favor-fast-code.md) (a default setting) tells the compiler to favor optimizations for speed over optimizations for size.
+- [/Ot](os-ot-favor-small-code-favor-fast-code.md) (a default setting) tells the compiler to favor optimizations for speed over optimizations for size.
 
-- [/Ox](../../build/reference/ox-full-optimization.md) is a combination option that selects several of the optimizations with an emphasis on speed. It is a strict subset of the **/O2** optimizations.
+- [/Ox](ox-full-optimization.md) is a combination option that selects several of the optimizations with an emphasis on speed. It is a strict subset of the **/O2** optimizations.
 
-- [/Oy](../../build/reference/oy-frame-pointer-omission.md) suppresses the creation of frame pointers on the call stack for quicker function calls.
+- [/Oy](oy-frame-pointer-omission.md) suppresses the creation of frame pointers on the call stack for quicker function calls.
 
 ## Remarks
 
@@ -35,5 +35,5 @@ You can combine multiple **/O** options into a single option statement. For exam
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

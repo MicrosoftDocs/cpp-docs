@@ -16,4 +16,4 @@ In the header of the DLL file or executable file, this option sets a flag that r
 
 ## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

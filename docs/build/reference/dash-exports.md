@@ -15,8 +15,8 @@ ms.assetid: 2971ab7e-4ee6-478b-9c85-cda42a4ce1bf
 
 This option displays all definitions exported from an executable file or DLL.
 
-Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
 ## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

@@ -89,4 +89,4 @@ Following these rules allows the unwind code to determine that an epilog is curr
 
 ## See also
 
-[x64 software conventions](../build/x64-software-conventions.md)
+[x64 Software Conventions](x64-software-conventions.md)

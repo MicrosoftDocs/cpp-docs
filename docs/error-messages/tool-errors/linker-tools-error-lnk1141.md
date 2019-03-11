@@ -9,7 +9,7 @@ ms.assetid: 83b78606-6dd3-43a7-88e2-152f5359cbd8
 
 failure during build of exports file
 
-[LINK](../../build/reference/linker-command-line-syntax.md) could not build the exports (.exp) file.
+[LINK](../../build/reference/linking.md) could not build the exports (.exp) file.
 
 Causes of this error include system problems such as insufficient memory and syntax errors in options or module-definition statements.
 

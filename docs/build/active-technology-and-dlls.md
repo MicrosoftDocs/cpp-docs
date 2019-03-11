@@ -16,4 +16,4 @@ If you are writing an Automation server and your server has no user interface, y
 
 ## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[DLLs in Visual C++](dlls-in-visual-cpp.md)

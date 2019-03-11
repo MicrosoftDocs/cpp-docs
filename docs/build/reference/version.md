@@ -19,4 +19,4 @@ The whole number part of the version number, the portion to the left of the deci
 
 ## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

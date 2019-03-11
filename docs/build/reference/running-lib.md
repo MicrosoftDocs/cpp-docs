@@ -38,7 +38,7 @@ The following options apply to all modes of LIB:
 
 If lib.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
 
-For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
 
 > **/LTCG**
 
@@ -62,10 +62,10 @@ Displays details about the progress of the session, including names of the .obj 
 
 > **/WX**[**:NO**]
 
-Treat warnings as errors. See [/WX (Treat Linker Warnings as Errors)](../../build/reference/wx-treat-linker-warnings-as-errors.md) for more information.
+Treat warnings as errors. See [/WX (Treat Linker Warnings as Errors)](wx-treat-linker-warnings-as-errors.md) for more information.
 
 Other options apply only to specific modes of LIB. These options are discussed in the sections describing each mode.
 
 ## See also
 
-[LIB Reference](../../build/reference/lib-reference.md)
+[LIB Reference](lib-reference.md)

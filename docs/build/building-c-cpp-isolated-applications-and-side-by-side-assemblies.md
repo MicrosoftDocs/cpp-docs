@@ -14,19 +14,19 @@ This section discusses how you can build your C/C++ application as an isolated a
 
 ## In This Section
 
-[Concepts of Isolated Applications and Side-by-side Assemblies](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)
+[Concepts of Isolated Applications and Side-by-side Assemblies](concepts-of-isolated-applications-and-side-by-side-assemblies.md)
 
-[Building C/C++ Isolated Applications](../build/building-c-cpp-isolated-applications.md)
+[Building C/C++ Isolated Applications](building-c-cpp-isolated-applications.md)
 
-[Building C/C++ Side-by-side Assemblies](../build/building-c-cpp-side-by-side-assemblies.md)
+[Building C/C++ Side-by-side Assemblies](building-c-cpp-side-by-side-assemblies.md)
 
-[How to: Build Registration-Free COM Components](../build/how-to-build-registration-free-com-components.md)
+[How to: Build Registration-Free COM Components](how-to-build-registration-free-com-components.md)
 
-[How to: Build Isolated Applications to Consume COM Components](../build/how-to-build-isolated-applications-to-consume-com-components.md)
+[How to: Build Isolated Applications to Consume COM Components](how-to-build-isolated-applications-to-consume-com-components.md)
 
-[Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+[Understanding Manifest Generation for C/C++ Programs](understanding-manifest-generation-for-c-cpp-programs.md)
 
-[Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 
 ## Related Sections
 

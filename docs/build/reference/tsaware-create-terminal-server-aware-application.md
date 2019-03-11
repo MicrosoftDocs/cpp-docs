@@ -21,15 +21,15 @@ If an application is Terminal Server aware, it must neither rely on INI files no
 
 If you use /TSAWARE and your application still uses INI files, the files will be shared by all users of the system. If that is acceptable, you can still link your application with /TSAWARE; otherwise you need to use /TSAWARE:NO.
 
-The /TSAWARE option is enabled by default for Windows and console applications. See [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) and [/VERSION](../../build/reference/version-version-information.md) for information.
+The /TSAWARE option is enabled by default for Windows and console applications. See [/SUBSYSTEM](subsystem-specify-subsystem.md) and [/VERSION](version-version-information.md) for information.
 
 /TSAWARE is not valid for drivers, VxDs, or DLLs.
 
-If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](../../build/reference/headers.md) will display information to that effect.
+If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](headers.md) will display information to that effect.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -43,7 +43,7 @@ If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](../../build/refer
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
 [Storing User-Specific Information](/windows/desktop/TermServ/storing-user-specific-information)<br/>
 [Legacy Applications in a Terminal Services Environment](https://msdn.microsoft.com/library/aa382957.aspx)

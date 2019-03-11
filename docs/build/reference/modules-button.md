@@ -10,4 +10,4 @@ Click the **Modules** button to bring up the **Additional Modules for Error Sear
 
 ## See also
 
-[Value Edit Control](../../build/reference/value-edit-control.md)
+[Value Edit Control](value-edit-control.md)

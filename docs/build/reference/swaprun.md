@@ -25,4 +25,4 @@ You can add or remove the NET or CD qualifiers:
 
 ## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

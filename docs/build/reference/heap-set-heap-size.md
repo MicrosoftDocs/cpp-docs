@@ -21,11 +21,11 @@ The optional `commit` argument specifies the amount of physical memory to alloca
 
 Specify the *reserve* and `commit` values in decimal or C-language notation.
 
-This functionality is also available via a module definition file with [HEAPSIZE](../../build/reference/heapsize.md).
+This functionality is also available via a module definition file with [HEAPSIZE](heapsize.md).
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -39,5 +39,5 @@ This functionality is also available via a module definition file with [HEAPSIZE
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

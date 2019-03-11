@@ -197,7 +197,7 @@ The default kernel mode stack in Windows is six pages (24k). Pay extra attention
 
 ## Stack walking
 
-Code within Windows is compiled with frame pointers enabled ([/Oy-](../build/reference/oy-frame-pointer-omission.md)) to enable fast stack walking. The upshot of this is that x29 (fp) in general points to the next link in the chain, which is an {fp,lr} pair indicating the pointer to the previous frame on the stack and the return address. Third-party code is encouraged to enable frame pointers as well in order to allow for improved profiling and tracing.
+Code within Windows is compiled with frame pointers enabled ([/Oy-](reference/oy-frame-pointer-omission.md)) to enable fast stack walking. The upshot of this is that x29 (fp) in general points to the next link in the chain, which is an {fp,lr} pair indicating the pointer to the previous frame on the stack and the return address. Third-party code is encouraged to enable frame pointers as well in order to allow for improved profiling and tracing.
 
 ## Exception unwinding
 
@@ -215,5 +215,5 @@ Note that the cycle counter here is a true cycle counter, not a wall clock, and 
 
 ## See also
 
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)<br/>
-[ARM64 exception handling](../build/arm64-exception-handling.md)
+[Common Visual C++ ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM64 exception handling](arm64-exception-handling.md)
