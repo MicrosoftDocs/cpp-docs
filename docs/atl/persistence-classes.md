@@ -2,7 +2,6 @@
 title: "Persistence Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.persistence"]
 helpviewer_keywords: ["persistence classes", "persistence, classes"]
 ms.assetid: a6a2b6b2-52bc-471c-b78a-de58363128bb
 ---

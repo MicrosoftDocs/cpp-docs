@@ -1,7 +1,6 @@
 ---
 title: "ATL Services"
 ms.date: "11/04/2016"
-f1_keywords: ["CServiceModule"]
 helpviewer_keywords: ["CServiceModule class", "COM objects, ATL", "services, ATL", "ATL services"]
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
 ---

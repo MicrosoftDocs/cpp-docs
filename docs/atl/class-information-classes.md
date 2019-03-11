@@ -2,7 +2,6 @@
 title: "Class Information Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.classes.info"]
 helpviewer_keywords: ["class information, retrieving"]
 ms.assetid: 39365025-f24a-41ae-87ab-4ae8ed085b98
 ---

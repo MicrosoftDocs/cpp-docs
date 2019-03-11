@@ -1,7 +1,6 @@
 ---
 title: "CAtlServiceModuleT::Run Function"
 ms.date: "11/04/2016"
-f1_keywords: ["CServiceModule::Run", "CServiceModule.Run", "CSecurityDescriptor"]
 helpviewer_keywords: ["ATL services, security"]
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
 ---
