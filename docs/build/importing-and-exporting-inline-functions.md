@@ -1,10 +1,10 @@
 ---
-title: "Importing and Exporting Inline Functions"
+title: "Importing and exporting inline functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting functions [C++], inline functions", "inline functions [C++], importing", "DLLs [C++], importing", "importing functions [C++]", "DLLs [C++], exporting from", "importing inline functions [C++]", "inline functions [C++], exporting", "functions [C++], importing", "functions [C++], exporting"]
 ms.assetid: 89f488f8-b078-40fe-afd7-80bd7840057b
 ---
-# Importing and Exporting Inline Functions
+# Importing and exporting inline functions
 
 Imported functions can be defined as inline. The effect is roughly the same as defining a standard function inline; calls to the function are expanded into inline code, much like a macro. This is principally useful as a way of supporting C++ classes in a DLL that might inline some of their member functions for efficiency.
 
@@ -15,20 +15,20 @@ One feature of an imported inline function is that you can take its address in C
 
 ## What do you want to do?
 
-- [Export from a DLL](../build/exporting-from-a-dll.md)
+- [Export from a DLL](exporting-from-a-dll.md)
 
-- [Export from a DLL using .DEF files](../build/exporting-from-a-dll-using-def-files.md)
+- [Export from a DLL using .DEF files](exporting-from-a-dll-using-def-files.md)
 
-- [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [Export from a DLL using __declspec(dllexport)](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx-ext-class.md)
+- [Export and import using AFX_EXT_CLASS](exporting-and-importing-using-afx-ext-class.md)
 
-- [Export C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [Export C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [Import into an application using __declspec(dllimport)](importing-into-an-application-using-declspec-dllimport.md)
 
 ## See also
 
-[Importing and Exporting](../build/importing-and-exporting.md)
+[Importing and Exporting](importing-and-exporting.md)

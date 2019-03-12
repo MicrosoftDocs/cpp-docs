@@ -54,4 +54,5 @@ When you use the Console Application template to create a project, it automatica
 
 ## See also
 
-[CLR Projects](../ide/files-created-for-clr-projects.md)
+[CLR Projects](../build/reference/files-created-for-clr-projects.md)
+

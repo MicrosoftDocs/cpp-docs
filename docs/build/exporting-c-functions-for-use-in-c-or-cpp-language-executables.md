@@ -35,24 +35,24 @@ extern "C" {
 
 ## What do you want to do?
 
-- [Export from a DLL using .def files](../build/exporting-from-a-dll-using-def-files.md)
+- [Export from a DLL using .def files](exporting-from-a-dll-using-def-files.md)
 
-- [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [Export from a DLL using __declspec(dllexport)](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [Export and import using AFX_EXT_CLASS](../build/exporting-and-importing-using-afx-ext-class.md)
+- [Export and import using AFX_EXT_CLASS](exporting-and-importing-using-afx-ext-class.md)
 
-- [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [Import into an application using __declspec(dllimport)](importing-into-an-application-using-declspec-dllimport.md)
 
-- [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)
+- [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)
 
 ## What do you want to know more about?
 
-- [Decorated names](../build/reference/decorated-names.md)
+- [Decorated names](reference/decorated-names.md)
 
 - [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
 
 ## See also
 
-[Exporting from a DLL](../build/exporting-from-a-dll.md)
+[Exporting from a DLL](exporting-from-a-dll.md)

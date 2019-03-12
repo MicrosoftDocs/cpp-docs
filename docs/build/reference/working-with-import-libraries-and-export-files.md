@@ -16,4 +16,4 @@ However, when a DLL exports to a program that it also imports from, whether dire
 
 ## See also
 
-[LIB Reference](../../build/reference/lib-reference.md)
+[LIB Reference](lib-reference.md)

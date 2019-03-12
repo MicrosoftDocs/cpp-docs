@@ -1,11 +1,11 @@
 ---
-title: "Importing into an Application Using __declspec(dllimport)"
+title: "Import into an application using __declspec(dllimport)"
 ms.date: "11/04/2016"
 f1_keywords: ["__declspec", "dllimport"]
 helpviewer_keywords: ["__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
 ---
-# Importing into an Application Using __declspec(dllimport)
+# Import into an application using __declspec(dllimport)
 
 A program that uses public symbols defined by a DLL is said to import them. When you create header files for applications that use your DLLs to build with, use **__declspec(dllimport)** on the declarations of the public symbols. The keyword **__declspec(dllimport)** works whether you export with .def files or with the **__declspec(dllexport)** keyword.
 
@@ -35,14 +35,14 @@ class CLASS_DECLSPEC CExampleA : public CObject
 
 ## What do you want to do?
 
-- [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)
+- [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)
 
 ## What do you want to know more about?
 
-- [Importing and exporting inline functions](../build/importing-and-exporting-inline-functions.md)
+- [Importing and exporting inline functions](importing-and-exporting-inline-functions.md)
 
-- [Mutual imports](../build/mutual-imports.md)
+- [Mutual imports](mutual-imports.md)
 
 ## See also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+[Importing into an Application](importing-into-an-application.md)

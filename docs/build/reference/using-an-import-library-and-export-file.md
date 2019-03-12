@@ -20,4 +20,4 @@ Finally, link the program you began with. In the LINK command, specify the objec
 
 ## See also
 
-[Working with Import Libraries and Export Files](../../build/reference/working-with-import-libraries-and-export-files.md)
+[Working with Import Libraries and Export Files](working-with-import-libraries-and-export-files.md)

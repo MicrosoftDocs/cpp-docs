@@ -27,7 +27,7 @@ The **/CETCOMPAT** option is available beginning in the Visual Studio 2019 Previ
 
 ### To set the /CETCOMPAT linker option in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -39,5 +39,4 @@ This option does not have a programmatic equivalent.
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Linker Options](linker-options.md)

@@ -40,11 +40,11 @@ You can also use [pack](../../preprocessor/pack.md) to control structure packing
 
 - [__unaligned](../../cpp/unaligned.md)
 
-- [Examples of Structure Alignment](../../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
+- [/ALIGN (Section Alignment)](align-section-alignment.md)
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **C/C++** > **Code Generation** property page.
 
@@ -56,5 +56,5 @@ You can also use [pack](../../preprocessor/pack.md) to control structure packing
 
 ## See also
 
-- [Compiler Options](../../build/reference/compiler-options.md)
-- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [MSVC Compiler Options](compiler-options.md)
+- [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

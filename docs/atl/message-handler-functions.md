@@ -2,7 +2,6 @@
 title: "Message Handler Functions"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["NOFITY_HANDLER"]
 helpviewer_keywords: ["MESSAGE_HANDLER macro", "COMMAND_HANDLER macro", "CommandHandler method", "MessageHandler method", "NotifyHandler method", "message maps, ATL", "NOTIFY_HANDLER macro, message handler functions", "ATL, message handlers"]
 ms.assetid: 2007a8c5-0143-42f1-91ab-809f235f9d50
 ---

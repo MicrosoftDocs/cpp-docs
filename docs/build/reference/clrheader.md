@@ -16,13 +16,13 @@ Display CLR-specific information.
 ### Arguments
 
 *file*<br/>
-An image file built with [/clr](../../build/reference/clr-common-language-runtime-compilation.md).
+An image file built with [/clr](clr-common-language-runtime-compilation.md).
 
 ## Remarks
 
 **/CLRHEADER** displays information about the .NET headers used in any managed program. The output shows the location and size, in bytes, of the .NET header and sections in the header.
 
-Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
 When **/CLRHEADER** is used on a file that was compiled with /clr, there will be a **clr Header:** section in the dumpbin output. The value of **flags** indicates which /clr option was used:
 
@@ -34,4 +34,4 @@ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual St
 
 ## See also
 
-- [DUMPBIN Options](../../build/reference/dumpbin-options.md)
+- [DUMPBIN Options](dumpbin-options.md)

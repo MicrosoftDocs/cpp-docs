@@ -23,7 +23,7 @@ By default, Visual Studio detects a byte-order mark to determine if the source f
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
@@ -33,8 +33,8 @@ By default, Visual Studio detects a byte-order mark to determine if the source f
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)<br/>
-[/source-charset (Set Source Character Set)](../../build/reference/source-charset-set-source-character-set.md)<br/>
-[/validate-charset (Validate for compatible characters)](../../build/reference/validate-charset-validate-for-compatible-characters.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[/execution-charset (Set Execution Character Set)](execution-charset-set-execution-character-set.md)<br/>
+[/source-charset (Set Source Character Set)](source-charset-set-source-character-set.md)<br/>
+[/validate-charset (Validate for compatible characters)](validate-charset-validate-for-compatible-characters.md)

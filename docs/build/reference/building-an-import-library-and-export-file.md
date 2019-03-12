@@ -41,4 +41,4 @@ Note that if you create your import library in a preliminary step, before creati
 
 ## See also
 
-[Working with Import Libraries and Export Files](../../build/reference/working-with-import-libraries-and-export-files.md)
+[Working with Import Libraries and Export Files](working-with-import-libraries-and-export-files.md)

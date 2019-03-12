@@ -2,7 +2,6 @@
 title: "Utility Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.classes.utility"]
 helpviewer_keywords: ["utility classes"]
 ms.assetid: 33d5da9d-89a5-49f9-a873-a26499299d17
 ---

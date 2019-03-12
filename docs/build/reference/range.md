@@ -37,4 +37,4 @@ dumpbin /disasm /range:4219334,0x004061CD t.exe
 
 ## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

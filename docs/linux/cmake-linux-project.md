@@ -17,7 +17,7 @@ First, make sure you have the **Linux development with C++** workload installed,
 
 The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
 
-This topic assumes you have read [CMake Tools for Visual Studio](../ide/cmake-tools-for-visual-cpp.md). 
+This topic assumes you have read [CMake Tools for Visual Studio](../build/cmake-projects-in-visual-studio.md). 
 
 > [!NOTE]
 > The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant download the latest prebuilt binaries at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases). In Visual Studio 2019 the prebuilt binaries can be automatically deployed (see [Download prebuilt CMake binaries](#download-prebuilt-cmake-binaries)).
@@ -62,11 +62,11 @@ To provide IntelliSense support for remote headers, Visual Studio automatically 
 
 To debug your code on the remote system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects in Visual C++](../ide/non-msbuild-projects.md) and [Configure CMake debugging sessions](../ide/configure-cmake-debugging-sessions.md).
+To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
 
 ## Configure CMake settings for Linux
 
-A CMakeSettings.json file in a CMake Linux project can specify all the properties listed in [Customize CMake settings](../ide/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine. 
+A CMakeSettings.json file in a CMake Linux project can specify all the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine. 
 To change the default CMake settings, choose **CMake | Change CMake Settings | CMakeLists.txt** from the main menu, or right-click CMakeSettings.txt in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new `CMakeSettings.json` file in your root project folder. You can open the file using the **CMake Settings** editor or modify the file directly. 
 
 The following example shows the default configuration for Linux-Debug based on the previous code example:
@@ -134,10 +134,10 @@ If a valid CMake is not found on the remote machine an infobar will appear and p
 
 ## See also
 
-[Working with Project Properties](../ide/working-with-project-properties.md)<br/>
-[CMake Tools for Visual C++](../ide/cmake-tools-for-visual-cpp.md)<br/>
+[Working with Project Properties](../build/working-with-project-properties.md)<br/>
+[CMake Projects in Visual Studio](../build/cmake-projects-in-visual-studio.md)<br/>
 [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md)<br/>
-[Customize CMake settings](../ide/customize-cmake-settings.md)<br/>
-[Configure CMake debugging sessions](../ide/configure-cmake-debugging-sessions.md)<br/>
+[Customize CMake settings](../build/customize-cmake-settings.md)<br/>
+[Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md)<br/>
 [Deploy, run, and debug your Linux project](deploy-run-and-debug-your-linux-project.md)<br/>
-[CMake predefined configuration reference](../ide/cmake-predefined-configuration-reference.md)<br/>
+[CMake predefined configuration reference](../build/cmake-predefined-configuration-reference.md)<br/>

@@ -68,4 +68,4 @@ Another option UNIX programmers look at is the Windows POSIX subsystem. However,
 
 [Visual C++ Porting and Upgrading Guide](visual-cpp-change-history-2003-2015.md)<br/>
 [UNIX](../c-runtime-library/unix.md)<br/>
-[Inference Rules](../build/inference-rules.md)
+[Inference Rules](../build/reference/inference-rules.md)

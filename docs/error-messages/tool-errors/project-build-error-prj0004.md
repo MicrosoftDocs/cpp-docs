@@ -15,4 +15,4 @@ One or more properties were specified in such a way as to make the syntax of the
 
 - Your computer may be low on free disk space.
 
-You may want to review the settings for the tool by looking at the [Command Line property page](../../ide/command-line-property-pages.md).
+You may want to review the settings for the tool by looking at the [Command Line property page](../../build/reference/command-line-property-pages.md).

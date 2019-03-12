@@ -1,4 +1,4 @@
-# [Visual C++ Language Reference (C++/CX)](visual-c-language-reference-c-cx.md)
+# [C++/CX Language Reference](visual-c-language-reference-c-cx.md)
 ## [Quick Reference (C++/CX)](quick-reference-c-cx.md)
 ## [Type System (C++/CX)](type-system-c-cx.md)
 ### [Namespaces and Type Visibility (C++/CX )](namespaces-and-type-visibility-c-cx.md)

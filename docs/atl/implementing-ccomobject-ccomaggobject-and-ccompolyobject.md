@@ -1,7 +1,6 @@
 ---
 title: "Implementing CComObject, CComAggObject, and CComPolyObject"
 ms.date: "11/04/2016"
-f1_keywords: ["CComPolyObject", "CComAggObject", "CComObject"]
 helpviewer_keywords: ["CComPolyObject class, implementing", "CreateInstance method", "CComAggObject class", "CComObject class, implementing"]
 ms.assetid: 5aabe938-104d-492e-9c41-9f7fb1c62098
 ---

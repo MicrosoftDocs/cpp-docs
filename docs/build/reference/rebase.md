@@ -13,7 +13,7 @@ ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b
 
 ## Remarks
 
-This option sets the base addresses for the specified files. EDITBIN assigns new base addresses in a contiguous address space according to the size of each file rounded up to the nearest 64 KB. For details about base addresses, see the [Base Address](../../build/reference/base-base-address.md) (/BASE) linker option.
+This option sets the base addresses for the specified files. EDITBIN assigns new base addresses in a contiguous address space according to the size of each file rounded up to the nearest 64 KB. For details about base addresses, see the [Base Address](base-base-address.md) (/BASE) linker option.
 
 Specify the program's executable files and DLLs in the *files* argument on the EDITBIN command line in the order in which they are to be based. You can optionally specify one or more *modifiers*, each separated by a comma (**,**):
 
@@ -25,4 +25,4 @@ Specify the program's executable files and DLLs in the *files* argument on the E
 
 ## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

@@ -20,5 +20,5 @@ An executable that has the **/APPCONTAINER** option set can only be run in an ap
 
 ## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)<br/>
+[EDITBIN Options](editbin-options.md)<br/>
 [What's a Universal Windows App?](/windows/uwp/get-started/universal-application-platform-guide)

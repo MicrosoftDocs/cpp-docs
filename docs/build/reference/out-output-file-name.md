@@ -22,11 +22,11 @@ The /OUT option overrides the default name and location of the program that the 
 
 By default, the linker forms the file name using the base name of the first .obj file specified and the appropriate extension (.exe or .dll).
 
-This option the default base name for a .mapfile or import library. For details, see [Generate Mapfile](../../build/reference/map-generate-mapfile.md) (/MAP) and [/IMPLIB](../../build/reference/implib-name-import-library.md).
+This option the default base name for a .mapfile or import library. For details, see [Generate Mapfile](map-generate-mapfile.md) (/MAP) and [/IMPLIB](implib-name-import-library.md).
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -40,5 +40,5 @@ This option the default base name for a .mapfile or import library. For details,
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

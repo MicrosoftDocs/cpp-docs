@@ -27,8 +27,8 @@ The exception codes thrown are the standard VcppException(ERROR_SEVERITY_ERROR, 
 
 Additionally, if the incorrect bits are set in the grAttrs field, the exception ERROR_INVALID_PARAMETER is thrown. This exception is, for all intents and purposes, fatal.
 
-See [Structure and Constant Definitions](../../build/reference/structure-and-constant-definitions.md) for more information.
+See [Structure and Constant Definitions](structure-and-constant-definitions.md) for more information.
 
 ## See also
 
-[Error Handling and Notification](../../build/reference/error-handling-and-notification.md)
+[Error Handling and Notification](error-handling-and-notification.md)

@@ -37,7 +37,7 @@ You can turn the warning off globally in command line builds by using the **/wd4
 
 To turn off the warning for an entire project in the Visual Studio IDE:
 
-- Open the **Property Pages** dialog for your project. For information on how to use the Property Pages dialog, see [Property Pages](../../ide/property-pages-visual-cpp.md).
+- Open the **Property Pages** dialog for your project. For information on how to use the Property Pages dialog, see [Property Pages](../../build/reference/property-pages-visual-cpp.md).
 - Select the **Configuration Properties**, **C/C++**, **Advanced** page.
 - Edit the **Disable Specific Warnings** property to add `4996`. Choose **OK** to apply your changes.
 
@@ -45,7 +45,7 @@ You can also use preprocessor macros to turn off certain specific classes of dep
 
 To define a preprocessor macro in Visual Studio:
 
-- Open the **Property Pages** dialog for your project. For information on how to use the Property Pages dialog, see [Property Pages](../../ide/property-pages-visual-cpp.md).
+- Open the **Property Pages** dialog for your project. For information on how to use the Property Pages dialog, see [Property Pages](../../build/reference/property-pages-visual-cpp.md).
 - Expand **Configuration Properties > C/C++ > Preprocessor**.
 - In the **Preprocessor Definitions** property, add the macro name. Choose **OK** to save, and then rebuild your project.
 

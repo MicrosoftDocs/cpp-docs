@@ -17,11 +17,11 @@ Prevents the compiler from searching for include files in directories specified 
 
 ## Remarks
 
-You can use this option with the [/I (Additional Include Directories)](../../build/reference/i-additional-include-directories.md) (**/I**`directory`) option.
+You can use this option with the [/I (Additional Include Directories)](i-additional-include-directories.md) (**/I**`directory`) option.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -43,5 +43,5 @@ CL /X /I \ALT\INCLUDE MAIN.C
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

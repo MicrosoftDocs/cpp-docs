@@ -1,7 +1,6 @@
 ---
 title: "Using Replaceable Parameters (ATL Registrar)"
 ms.date: "11/04/2016"
-f1_keywords: ["AddReplacement", "ClearReplacements"]
 helpviewer_keywords: ["%MODULE%"]
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
 ---
