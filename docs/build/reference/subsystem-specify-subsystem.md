@@ -29,7 +29,7 @@ Win32 character-mode application. The operating system provides a console for co
 The Extensible Firmware Interface subsystems. See the EFI specification for more information. For examples, see the Intel Web site. The minimum version and default version is 1.0.
 
 **NATIVE**<br/>
-Kernel mode drivers for Windows NT. This option is usually reserved for Windows system components. If [/DRIVER:WDM](../../build/reference/driver-windows-nt-kernel-mode-driver.md) is specified, NATIVE is the default.
+Kernel mode drivers for Windows NT. This option is usually reserved for Windows system components. If [/DRIVER:WDM](driver-windows-nt-kernel-mode-driver.md) is specified, NATIVE is the default.
 
 **POSIX**<br/>
 Application that runs with the POSIX subsystem in Windows NT.
@@ -60,7 +60,7 @@ The optional minimum and default *major* and *minor* version numbers for the sub
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the Linker folder.
 
@@ -74,5 +74,5 @@ The optional minimum and default *major* and *minor* version numbers for the sub
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

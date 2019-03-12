@@ -3,8 +3,6 @@
   items:
   - name: Overview
     items:
-    - name: About Visual Studio 2017
-      href: visual-studio-ide-cpp.md
     - name: About the code editor
       href: /visualstudio/get-started/tutorial-editor
     - name: About projects and solutions

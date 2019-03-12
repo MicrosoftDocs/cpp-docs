@@ -21,7 +21,7 @@ If a header file contains a variable declared `extern constexpr`, it must be mar
 
 ### To set this compiler option in Visual Studio
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -29,5 +29,5 @@ If a header file contains a variable declared `extern constexpr`, it must be mar
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>
 [auto Keyword](../../cpp/auto-keyword.md)

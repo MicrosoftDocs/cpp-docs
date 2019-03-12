@@ -1,8 +1,8 @@
 ---
 title: "BSCMAKE Warning BK4502"
 ms.date: "11/04/2016"
-f1_keywords: ["BK4502", "BK1513"]
-helpviewer_keywords: ["BK1513", "BK4502"]
+f1_keywords: ["BK4502"]
+helpviewer_keywords: ["BK4502"]
 ms.assetid: ee412ec8-df03-4cdb-91ee-5d609ded8691
 ---
 # BSCMAKE Warning BK4502

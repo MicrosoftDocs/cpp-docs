@@ -10,5 +10,5 @@ You can specify a .res file when linking a program. The .res file is created by 
 
 ## See also
 
-[LINK Input Files](../../build/reference/link-input-files.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[LINK Input Files](link-input-files.md)<br/>
+[MSVC Linker Options](linker-options.md)

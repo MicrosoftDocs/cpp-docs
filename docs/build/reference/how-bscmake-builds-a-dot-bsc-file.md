@@ -18,4 +18,4 @@ BSCMAKE looks for a .bsc file that has the name specified with the /o option. If
 
 ## See also
 
-[Building a .Bsc File](../../build/reference/building-a-dot-bsc-file.md)
+[Building a .Bsc File](building-a-dot-bsc-file.md)

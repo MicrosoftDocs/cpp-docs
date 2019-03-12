@@ -2,7 +2,6 @@
 title: "Connection Points Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.connection"]
 helpviewer_keywords: ["classes [C++], connection points", "connection points classes"]
 ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
 ---

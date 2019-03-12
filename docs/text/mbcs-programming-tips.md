@@ -1,7 +1,6 @@
 ---
 title: "MBCS Programming Tips"
 ms.date: "11/04/2016"
-f1_keywords: ["_mbcs"]
 helpviewer_keywords: ["programming [C++], MBCS", "character sets [C++], multibyte", "MBCS [C++], programming", "multibyte characters [C++]"]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
 ---

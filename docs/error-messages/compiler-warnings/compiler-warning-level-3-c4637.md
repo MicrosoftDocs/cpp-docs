@@ -9,7 +9,7 @@ ms.assetid: 5fd347c1-2de9-408f-9136-1bf1ff273622
 
 XML document comment target: \<include> tag discarded.  reason
 
-The syntax of an [\<include>](../../ide/include-visual-cpp.md) tag was not correct.
+The syntax of an [\<include>](../../build/reference/include-visual-cpp.md) tag was not correct.
 
 The following sample generates C4637:
 

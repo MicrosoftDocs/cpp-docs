@@ -1,7 +1,6 @@
 ---
 title: "CAtlServiceModuleT::ServiceMain Function"
 ms.date: "11/04/2016"
-f1_keywords: ["ServiceMain", "CServiceModule::ServiceMain", "CServiceModule.ServiceMain"]
 helpviewer_keywords: ["ServiceMain method"]
 ms.assetid: f21408c1-1919-4dec-88d8-bf5b39ac9808
 ---

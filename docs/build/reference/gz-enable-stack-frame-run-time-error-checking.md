@@ -7,7 +7,7 @@ ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c
 ---
 # /GZ (Enable Stack Frame Run-Time Error Checking)
 
-Performs the same operations as the [/RTC (Run-Time Error Checks)](../../build/reference/rtc-run-time-error-checks.md) option. Deprecated.
+Performs the same operations as the [/RTC (Run-Time Error Checks)](rtc-run-time-error-checks.md) option. Deprecated.
 
 ## Syntax
 
@@ -17,13 +17,13 @@ Performs the same operations as the [/RTC (Run-Time Error Checks)](../../build/r
 
 ## Remarks
 
-**/GZ** is only for use in a nonoptimized ([/Od (Disable (Debug))](../../build/reference/od-disable-debug.md)) build.
+**/GZ** is only for use in a nonoptimized ([/Od (Disable (Debug))](od-disable-debug.md)) build.
 
-**/GZ** is deprecated since Visual Studio 2005; use [/RTC (Run-Time Error Checks)](../../build/reference/rtc-run-time-error-checks.md) instead. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).
+**/GZ** is deprecated since Visual Studio 2005; use [/RTC (Run-Time Error Checks)](rtc-run-time-error-checks.md) instead. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -37,5 +37,5 @@ Performs the same operations as the [/RTC (Run-Time Error Checks)](../../build/r
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

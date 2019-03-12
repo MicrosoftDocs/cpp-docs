@@ -19,5 +19,5 @@ When you type the command `editbin` without any other command-line input, EDITBI
 
 ## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-[EDITBIN Reference](../../build/reference/editbin-reference.md)
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
+[EDITBIN Reference](editbin-reference.md)

@@ -37,7 +37,7 @@ We need the full version information and the target architecture of the toolset 
 
 #### To report the full version of the compiler you're using
 
-1. Open the **Developer Command Prompt** that matches the Visual Studio version and configuration architecture used to build your project. For example, if you build by using Visual Studio 2017 on x64 for x64 targets, choose **x64 Native Tools Command Prompt for VS 2017**. For more information, see [Developer command prompt shortcuts](build/building-on-the-command-line.md#developer-command-prompt-shortcuts).
+1. Open the **Developer Command Prompt** that matches the Visual Studio version and configuration architecture used to build your project. For example, if you build by using Visual Studio 2017 on x64 for x64 targets, choose **x64 Native Tools Command Prompt for VS 2017**. For more information, see [Developer command prompt shortcuts](build/building-on-the-command-line.md#developer_command_prompt_shortcuts).
 
 1. In the developer command prompt console window, enter the command **cl /Bv**.
 

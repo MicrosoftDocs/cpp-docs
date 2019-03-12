@@ -20,7 +20,7 @@ FARPROC WINAPI __delayLoadHelper2(
 *pidd*<br/>
 A `const` pointer to a `ImgDelayDescr` that contains the offsets of various import-related data, a timestamp for binding information, and a set of attributes that provide further information about the descriptor content. Currently there's only one attribute, `dlattrRva`, which indicates that the addresses in the descriptor are relative virtual addresses. For more information, see the declarations in *delayimp.h*.
 
-For the definition of the `PCImgDelayDescr` structure, see [Structure and Constant Definitions](../../build/reference/structure-and-constant-definitions.md).
+For the definition of the `PCImgDelayDescr` structure, see [Structure and Constant Definitions](structure-and-constant-definitions.md).
 
 *ppfnIATEntry*<br/>
 A pointer to the slot in the delay load import address table (IAT) that's updated with the address of the imported function. The helper routine needs to store the same value that it returns into this location.
@@ -128,4 +128,4 @@ const PfnDliHook __pfnDliNotifyHook2 = delayHook;
 
 ## See also
 
-[Understanding the Helper Function](../../build/reference/understanding-the-helper-function.md)
+[Understanding the Helper Function](understanding-the-helper-function.md)

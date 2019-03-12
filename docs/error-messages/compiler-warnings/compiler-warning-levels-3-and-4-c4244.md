@@ -1,8 +1,6 @@
 ---
 title: "Compiler Warning (levels 3 and 4) C4244"
 ms.date: "11/04/2016"
-f1_keywords: ["C4244"]
-helpviewer_keywords: ["C4244"]
 ms.assetid: f116bb09-c479-4b4e-a647-fe629a1383f6
 ---
 # Compiler Warning (levels 3 and 4) C4244

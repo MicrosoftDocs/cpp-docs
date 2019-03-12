@@ -17,7 +17,7 @@ Deprecated. Enables synchronous exception handling using the assumption that fun
 
 ## Remarks
 
-**/GX** is deprecated. Use the equivalent [/EHsc](../../build/reference/eh-exception-handling-model.md) option instead. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).
+**/GX** is deprecated. Use the equivalent [/EHsc](eh-exception-handling-model.md) option instead. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
 
 By default, **/EHsc**, the equivalent of **/GX**, is in effect when you compile by using the Visual Studio development environment. When using the command line tools, no exception handling is specified. This is the equivalent of **/GX-**.
 
@@ -25,7 +25,7 @@ For more information, see [C++ Exception Handling](../../cpp/cpp-exception-handl
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. In the navigation pane, choose **Configuration Properties**, **C/C++**, **Command Line**.
 
@@ -37,6 +37,6 @@ For more information, see [C++ Exception Handling](../../cpp/cpp-exception-handl
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[/EH (Exception Handling Model)](eh-exception-handling-model.md)

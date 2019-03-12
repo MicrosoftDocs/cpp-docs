@@ -2,7 +2,6 @@
 title: "Dual Interfaces Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.interfaces.dual"]
 helpviewer_keywords: ["dual interfaces, classes", "dual interfaces"]
 ms.assetid: c2b1b165-ff39-4e4a-a683-91eca9158304
 ---

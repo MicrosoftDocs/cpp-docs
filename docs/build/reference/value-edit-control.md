@@ -10,4 +10,4 @@ To use the control, enter a value, paste it from the Clipboard, or drag and drop
 
 ## See also
 
-[ERRLOOK Reference](../../build/reference/errlook-reference.md)
+[ERRLOOK Reference](errlook-reference.md)

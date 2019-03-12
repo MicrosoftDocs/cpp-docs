@@ -22,13 +22,13 @@ The MFC library itself is available, in either static link libraries or in a num
 
 ### What do you want to know more about?
 
-- [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)
+- [Non-MFC DLLs: Overview](non-mfc-dlls-overview.md)
 
-- [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Regular MFC DLLs statically linked to MFC](regular-dlls-statically-linked-to-mfc.md)
 
-- [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Regular MFC DLLs dynamically linked to MFC](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC extension DLLs: Overview](../build/extension-dlls-overview.md)
+- [MFC extension DLLs: Overview](extension-dlls-overview.md)
 
 - [Which kind of DLL to use](#_core_which_kind_of_dll_to_use)
 
@@ -50,14 +50,14 @@ Prior to version 4.0, Visual C++ only supported two kinds of DLLs that used MFC:
 
 ### What do you want to know more about?
 
-- [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)
+- [Non-MFC DLLs: Overview](non-mfc-dlls-overview.md)
 
-- [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Regular MFC DLLs statically linked to MFC](regular-dlls-statically-linked-to-mfc.md)
 
-- [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Regular MFC DLLs dynamically linked to MFC](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC extension DLLs: Overview](../build/extension-dlls-overview.md)
+- [MFC extension DLLs: Overview](extension-dlls-overview.md)
 
 ## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[DLLs in Visual C++](dlls-in-visual-cpp.md)

@@ -19,7 +19,7 @@ Causes the compiler to process `#pragma`[omp](../../preprocessor/omp.md).
 
 `#pragma omp` is used to specify [Directives](../../parallel/openmp/reference/openmp-directives.md) and [Clauses](../../parallel/openmp/reference/openmp-clauses.md). If **/openmp** is not specified in a compilation, the compiler ignores OpenMP clauses and directives. [OpenMP Function](../../parallel/openmp/reference/openmp-functions.md) calls are processed by the compiler even if **/openmp** is not specified.
 
-Applications compiled with **/openmp** and **/clr** can only be run in a single application domain process; multiple application domains are not supported. That is, when the module constructor (.cctor) is run, it will detect the process is compiled with **/openmp** and if the application is being loaded into a non-default runtime. For more information, see [appdomain](../../cpp/appdomain.md), [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
+Applications compiled with **/openmp** and **/clr** can only be run in a single application domain process; multiple application domains are not supported. That is, when the module constructor (.cctor) is run, it will detect the process is compiled with **/openmp** and if the application is being loaded into a non-default runtime. For more information, see [appdomain](../../cpp/appdomain.md), [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
 
 If you attempt to load an application compiled with **/openmp** and **/clr** into a non-default application domain, a <xref:System.TypeInitializationException> exception will be thrown outside the debugger and a OpenMPWithMultipleAppdomainsException exception will be thrown in the debugger.
 
@@ -35,7 +35,7 @@ Microsoft advises that you do not write **/openmp** applications that allows par
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 
@@ -103,5 +103,5 @@ int main(int argc, char* argv[]) {
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

@@ -1,7 +1,6 @@
 ---
 title: "CAtlServiceModuleT::Handler Function"
 ms.date: "11/04/2016"
-f1_keywords: ["CServiceModule::Handler", "CServiceModule.Handler", "Handler"]
 helpviewer_keywords: ["Handler method"]
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
 ---

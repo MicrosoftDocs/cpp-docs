@@ -44,5 +44,5 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

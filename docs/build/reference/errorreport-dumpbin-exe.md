@@ -15,8 +15,8 @@ ms.assetid: 51178c43-4f95-4fda-8f97-50a257d1c948
 
 If dumpbin.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
 
-For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
 
 ## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

@@ -80,7 +80,7 @@ The compiler does not make copies of vulnerable parameters in the following situ
 
 - Functions that do not contain a GS buffer.
 
-- Optimizations ([/O options](../../build/reference/o-options-optimize-code.md)) are not enabled.
+- Optimizations ([/O options](o-options-optimize-code.md)) are not enabled.
 
 - Functions that have a variable argument list (...).
 
@@ -100,7 +100,7 @@ Even if you use **/GS**, always try to write secure code that has no buffer over
 
 1. In **Solution Explorer**, right-click the project and then click **Properties**.
 
-   For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+   For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. In the **Property Pages** dialog box, click the **C/C++** folder.
 
@@ -141,5 +141,5 @@ int main() {
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
