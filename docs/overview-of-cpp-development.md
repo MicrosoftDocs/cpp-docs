@@ -64,7 +64,7 @@ For more information on adding and editing resources in native desktop C++ proje
 Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
-For more information about MSBuild configurations, see [Working with Project Properties](build/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](build/building-c-cpp-programs.md).
+For more information about MSBuild configurations, see [Working with Project Properties](build/working-with-project-properties.md) and [Projects and build systems](build/projects-and-build-systems-cpp.md).
 
 You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](build/building-on-the-command-line.md) and [C/C++ Building Reference](build/reference/c-cpp-building-reference.md).
 
