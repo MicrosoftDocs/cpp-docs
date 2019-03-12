@@ -35,7 +35,7 @@ Discusses the preprocessor, which prepares source files for the compiler by tran
 [Understanding Custom Build Steps and Build Events](../understanding-custom-build-steps-and-build-events.md)<br/>
 Discusses customizing the build process.
 
-[Building a C/C++ Program](../building-c-cpp-programs.md)<br/>
+[Building a C/C++ Program](../projects-and-build-systems-cpp.md)<br/>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
