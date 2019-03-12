@@ -123,17 +123,17 @@ BOOL CYourRegularDLL::InitInstance()
 
 ### What do you want to do?
 
-- [Initialize an MFC extension DLL](../build/run-time-library-behavior.md#initializing-extension-dlls)
+- [Initialize an MFC extension DLL](run-time-library-behavior.md#initializing-extension-dlls)
 
-- [Initialize regular MFC DLLs](../build/run-time-library-behavior.md#initializing-regular-dlls)
+- [Initialize regular MFC DLLs](run-time-library-behavior.md#initializing-regular-dlls)
 
 ### What do you want to know more about?
 
-- [MFC extension DLLs](../build/extension-dlls.md)
+- [MFC extension DLLs](extension-dlls.md)
 
-- [Regular MFC DLLs Statically Linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Regular MFC DLLs Statically Linked to MFC](regular-dlls-statically-linked-to-mfc.md)
 
-- [Regular MFC DLLs Dynamically Linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Regular MFC DLLs Dynamically Linked to MFC](regular-dlls-dynamically-linked-to-mfc.md)
 
 - [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
@@ -141,4 +141,4 @@ BOOL CYourRegularDLL::InitInstance()
 
 ## See also
 
-[MFC extension DLLs](../build/extension-dlls.md)
+[MFC extension DLLs](extension-dlls.md)

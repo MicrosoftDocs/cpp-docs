@@ -1,7 +1,6 @@
 ---
 title: "Generic-Text Mappings in tchar.h"
 ms.date: "11/04/2016"
-f1_keywords: ["tchar.h"]
 helpviewer_keywords: ["mapping generic-text", "generic-text mappings [C++]", "character sets [C++], generic-text mappings", "Unicode [C++], generic-text mappings", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
 ---

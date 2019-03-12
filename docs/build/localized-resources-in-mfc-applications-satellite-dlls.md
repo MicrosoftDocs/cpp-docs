@@ -6,7 +6,7 @@ ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
 ---
 # Localized Resources in MFC Applications: Satellite DLLs
 
-MFC version 7.0 and later provides enhanced support for satellite DLLs, a feature that helps in creating applications localized for multiple languages. A satellite DLL is a [resource-only DLL](../build/creating-a-resource-only-dll.md) that contains an application's resources localized for a particular language. When the application begins executing, MFC automatically loads the localized resource most appropriate for the environment. For example, you could have an application with English language resources with two satellite DLLs, one containing a French translation of your resources and the other containing a German translation. When the application is run on an English language system, it uses the English resources. If run on a French system, it uses the French resources; if run on a German system, it uses the German resources.
+MFC version 7.0 and later provides enhanced support for satellite DLLs, a feature that helps in creating applications localized for multiple languages. A satellite DLL is a [resource-only DLL](creating-a-resource-only-dll.md) that contains an application's resources localized for a particular language. When the application begins executing, MFC automatically loads the localized resource most appropriate for the environment. For example, you could have an application with English language resources with two satellite DLLs, one containing a French translation of your resources and the other containing a German translation. When the application is run on an English language system, it uses the English resources. If run on a French system, it uses the French resources; if run on a German system, it uses the German resources.
 
 To support localized resources in an MFC application, MFC attempts to load a satellite DLL containing resources localized to a specific language. Satellite DLLs are named *ApplicationNameXXX*.dll, where *ApplicationName* is the name of the .exe or .dll using MFC, and *XXX* is the three-letter code for the language of the resources (for example, 'ENU' or 'DEU').
 
@@ -38,5 +38,5 @@ If none of these DLLs are found, MFC uses the resources in LangExample.exe.
 
 ## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)<br/>
+[DLLs in Visual C++](dlls-in-visual-cpp.md)<br/>
 [TN057: Localization of MFC Components](../mfc/tn057-localization-of-mfc-components.md)

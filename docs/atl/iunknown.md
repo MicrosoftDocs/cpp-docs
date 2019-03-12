@@ -2,7 +2,6 @@
 title: "IUnknown"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["IUnknown"]
 helpviewer_keywords: ["COM interfaces, base interface", "IUnknown interface"]
 ms.assetid: e6b85472-e54b-4b8c-b19f-4454d6c05a8f
 ---

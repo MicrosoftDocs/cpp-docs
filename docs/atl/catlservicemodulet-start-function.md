@@ -1,7 +1,6 @@
 ---
 title: "CAtlServiceModuleT::Start Function"
 ms.date: "11/04/2016"
-f1_keywords: ["CServiceModule.Start", "CServiceModule::Start"]
 helpviewer_keywords: ["Start method"]
 ms.assetid: b5193a23-41bc-42d2-8d55-3eb43dc62238
 ---

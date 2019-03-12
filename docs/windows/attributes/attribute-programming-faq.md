@@ -113,7 +113,7 @@ You may have a nonattributed ATL project, which has an .idl file, and you may wa
 
 ##  <a name="vcconattributeprogrammmingfaqanchor6"></a> How can I use an .idl file in an attributed project?
 
-You may have a .idl file that you want to use in your ATL attributed project. In this case, you would use the [importidl](importidl.md) attribute, compile the .idl file to a .h file (see the [MIDL Property Pages](../../ide/midl-property-pages.md) in the project's **Property Pages** dialog box), and then include the .h file in your project.
+You may have a .idl file that you want to use in your ATL attributed project. In this case, you would use the [importidl](importidl.md) attribute, compile the .idl file to a .h file (see the [MIDL Property Pages](../../build/reference/midl-property-pages.md) in the project's **Property Pages** dialog box), and then include the .h file in your project.
 
 ##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Can I modify code that is injected by an attribute?
 

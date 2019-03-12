@@ -24,5 +24,5 @@ The value of *pdb_file_name* can be an arbitrary string, an environment variable
 
 ## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)<br/>
-[/PDBPATH](../../build/reference/pdbpath.md)
+[DUMPBIN Options](dumpbin-options.md)<br/>
+[/PDBPATH](pdbpath.md)

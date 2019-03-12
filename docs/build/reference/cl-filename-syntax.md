@@ -13,4 +13,4 @@ The filename extension determines how files are processed. C and C++ files, whic
 
 ## See also
 
-[Compiler Command-Line Syntax](../../build/reference/compiler-command-line-syntax.md)
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

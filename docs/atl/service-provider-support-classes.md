@@ -2,7 +2,6 @@
 title: "Service Provider Support Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.service"]
 helpviewer_keywords: ["service provider support classes"]
 ms.assetid: 190f598e-fb32-4d37-adf1-21de395b04d9
 ---

@@ -117,7 +117,7 @@ This section lists additional programming constructs, and topics that pertain to
 |[Type Forwarding (C++/CLI)](../windows/type-forwarding-cpp-cli.md)|Enables the movement of a type in a shipping assembly to another assembly so that client code does not have to be recompiled.|
 |[User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md)|Demonstrates user-defined attributes.|
 |[#using Directive](../preprocessor/hash-using-directive-cpp.md)|Imports external assemblies.|
-|[XML Documentation](../ide/xml-documentation-visual-cpp.md)|Explains XML-based code documentation by using [/doc (Process Documentation Comments) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md)|
+|[XML Documentation](../build/reference/xml-documentation-visual-cpp.md)|Explains XML-based code documentation by using [/doc (Process Documentation Comments) (C/C++)](../build/reference/doc-process-documentation-comments-c-cpp.md)|
 
 ## See Also
 

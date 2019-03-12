@@ -23,13 +23,13 @@ Specifies the name of the .tlb file created by the MIDL compiler. No file extens
 
 The /TLBOUT option specifies the name and extension of the .tlb file.
 
-The MIDL compiler is called by the Visual C++ linker when linking projects that have the [module](../../windows/module-cpp.md) attribute.
+The MIDL compiler is called by the MSVC linker when linking projects that have the [module](../../windows/module-cpp.md) attribute.
 
-If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](../../build/reference/idlout-name-midl-output-files.md) *filename*. If /IDLOUT is not specified, the .tlb file will be called vc70.tlb.
+If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](idlout-name-midl-output-files.md) *filename*. If /IDLOUT is not specified, the .tlb file will be called vc70.tlb.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -43,8 +43,8 @@ If /TLBOUT is not specified, the .tlb file will get its name from [/IDLOUT](../.
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
-[/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
+[/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>
 [Building an Attributed Program](../../windows/building-an-attributed-program.md)

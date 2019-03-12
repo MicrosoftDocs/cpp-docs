@@ -31,7 +31,7 @@ For more information about conformance issues with Visual C++, see [Nonstandard 
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. In the navigation pane, choose **Configuration Properties** > **C/C++** > **Language**.
 
@@ -44,7 +44,6 @@ See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLanguag
 ## See also
 
 [Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
 [/Zc (Conformance)](zc-conformance.md)<br/>
 [/permissive- (Standards conformance)](permissive-standards-conformance.md)<br/>
 [/std (Specify Language Standard Version)](std-specify-language-standard-version.md)<br/>

@@ -29,6 +29,6 @@ CL /FmPRN HELLO.CPP
 
 ## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

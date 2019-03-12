@@ -17,4 +17,4 @@ This option suppresses display of the EDITBIN copyright message and version numb
 
 ## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

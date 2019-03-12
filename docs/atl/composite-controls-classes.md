@@ -2,7 +2,6 @@
 title: "Composite Controls Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.controls.composite"]
 helpviewer_keywords: ["composite controls, C++", "composite controls classes"]
 ms.assetid: 9e8d65c4-d631-4500-a28b-6d42c35aba26
 ---

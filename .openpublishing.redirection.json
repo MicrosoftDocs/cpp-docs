@@ -106,323 +106,283 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/advantages-of-using-dlls.md",
-            "redirect_url": "/cpp/build/dlls-in-visual-cpp#advantages-of-using-dlls",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/determining-which-linking-method-to-use.md",
-            "redirect_url": "/cpp/build/linking-an-executable-to-a-dll#determining-which-linking-method-to-use",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/differences-between-applications-and-dlls.md",
-            "redirect_url": "/cpp/build/dlls-in-visual-cpp#differences-between-applications-and-dlls",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/index.md",
-            "redirect_url": "/cpp/build/building-c-cpp-programs",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/initializing-a-dll.md",
-            "redirect_url": "/cpp/build/run-time-library-behavior#initializing-a-dll",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/initializing-extension-dlls.md",
-            "redirect_url": "/cpp/build/run-time-library-behavior#initializing-extension-dlls",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/initializing-non-mfc-dlls.md",
-            "redirect_url": "/cpp/build/run-time-library-behavior#initializing-non-mfc-dlls",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/initializing-regular-dlls.md",
-            "redirect_url": "/cpp/build/run-time-library-behavior#initializing-regular-dlls",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/linking-explicitly.md",
-            "redirect_url": "/cpp/build/linking-an-executable-to-a-dll#linking-explicitly",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/linking-implicitly.md",
-            "redirect_url": "/cpp/build/linking-an-executable-to-a-dll#linking-implicitly",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/naming-conventions-for-mfc-dlls.md",
-            "redirect_url": "/cpp/mfc/mfc-library-versions#mfc-static-library-naming-conventions",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/search-path-used-by-windows-to-locate-a-dll.md",
-            "redirect_url": "/cpp/build/dlls-in-visual-cpp",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute.md",
-            "redirect_url": "/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute",
+            "source_path": "docs/build/building-c-cpp-programs.md",
+            "redirect_url": "cpp/build/projects-and-build-systems-cpp",
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/build/reference/consistency-rules-for-per-file-use-of-precompiled-headers.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#consistency-rules-for-per-file-use-of-precompiled-headers",
+            "source_path": "docs/build/batch-mode-rules.md",
+            "redirect_url": "cpp/build/reference/batch-mode-rules",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/consistency-rules-for-yc-and-yu.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#consistency-rules-for-yc-and-yu",
+            "source_path": "docs/build/command-macros-and-options-macros.md",
+            "redirect_url": "cpp/build/reference/command-macros-and-options-macros",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/example-code-for-pch.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#example-code-for-pch",
+            "source_path": "docs/build/command-modifiers.md",
+            "redirect_url": "cpp/build/reference/command-modifiers",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/index.md",
-            "redirect_url": "/cpp/build/reference/c-cpp-building-reference",
+            "source_path": "docs/build/commands-in-a-makefile.md",
+            "redirect_url": "cpp/build/reference/commands-in-a-makefile",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/pch-files-in-the-build-process.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#pch-files-in-the-build-process",
+            "source_path": "docs/build/comments-in-a-makefile.md",
+            "redirect_url": "cpp/build/reference/comments-in-a-makefile",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/pogosafemode.md",
-            "redirect_url": "/cpp/build/reference/environment-variables-for-profile-guided-optimizations#pogosafemode",
+            "source_path": "docs/build/contents-of-a-makefile.md",
+            "redirect_url": "cpp/build/reference/contents-of-a-makefile",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/precompiled-header-consistency-rules.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#precompiled-header-consistency-rules",
+            "source_path": "docs/build/creating-inline-file-text.md",
+            "redirect_url": "cpp/build/reference/creating-inline-file-text",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/sample-makefile-for-pch.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#sample-makefile-for-pch",
+            "source_path": "docs/build/cumulative-dependencies.md",
+            "redirect_url": "cpp/build/reference/cumulative-dependencies",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/tools-for-manual-profile-guided-optimization.md",
-            "redirect_url": "/cpp/build/reference/profile-guided-optimizations",
+            "source_path": "docs/build/defining-a-rule.md",
+            "redirect_url": "cpp/build/reference/defining-a-rule",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/two-choices-for-precompiling-code.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#two-choices-for-precompiling-code",
+            "source_path": "docs/build/defining-an-nmake-macro.md",
+            "redirect_url": "cpp/build/reference/defining-an-nmake-macro",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/using-precompiled-headers-in-a-project.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#using-precompiled-headers-in-a-project",
+            "source_path": "docs/build/dependency-side-effects.md",
+            "redirect_url": "cpp/build/reference/dependency-side-effects",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/vcprofile-alloc-scale.md",
-            "redirect_url": "/cpp/build/reference/environment-variables-for-profile-guided-optimizations#vcprofileallocscale",
+            "source_path": "docs/build/dependents.md",
+            "redirect_url": "cpp/build/reference/dependents",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/vcprofile-path.md",
-            "redirect_url": "/cpp/build/reference/environment-variables-for-profile-guided-optimizations#vcprofilepath",
+            "source_path": "docs/build/description-blocks.md",
+            "redirect_url": "cpp/build/reference/description-blocks",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/reference/when-to-precompile-source-code.md",
-            "redirect_url": "/cpp/build/reference/creating-precompiled-header-files#when-to-precompile-source-code",
+            "source_path": "docs/build/dot-directives.md",
+            "redirect_url": "cpp/build/reference/dot-directives",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/calling-convention.md",
-            "redirect_url": "/cpp/build/x64-calling-convention",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/build/parameter-passing.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#parameter-passing",
+            "source_path": "docs/build/environment-variable-macros.md",
+            "redirect_url": "cpp/build/reference/environment-variable-macros",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/varargs.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#varargs",
+            "source_path": "docs/build/executing-a-program-in-preprocessing.md",
+            "redirect_url": "cpp/build/reference/executing-a-program-in-preprocessing",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/unprototyped-functions.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#unprototyped-functions",
+            "source_path": "docs/build/exit-codes-from-nmake.md",
+            "redirect_url": "cpp/build/reference/exit-codes-from-nmake",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/return-values-cpp.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#return-values",
+            "source_path": "docs/build/expressions-in-makefile-preprocessing.md",
+            "redirect_url": "cpp/build/reference/expressions-in-makefile-preprocessing",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/caller-callee-saved-registers.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#callercallee-saved-registers",
+            "source_path": "docs/build/filename-macros.md",
+            "redirect_url": "cpp/build/reference/filename-macros",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/function-pointers.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#function-pointers",
+            "source_path": "docs/build/filename-parts-syntax.md",
+            "redirect_url": "cpp/build/reference/filename-parts-syntax",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/floating-point-support-for-older-code-visual-cpp.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#floating-point-support-for-older-code",
+            "source_path": "docs/build/inference-rules.md",
+            "redirect_url": "cpp/build/reference/inference-rules",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/fpcsr.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#fpcsr",
+            "source_path": "docs/build/inferred-dependents-and-rules.md",
+            "redirect_url": "cpp/build/reference/inferred-dependents-and-rules",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/mxcsr.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#mxcsr",
+            "source_path": "docs/build/inferred-dependents.md",
+            "redirect_url": "cpp/build/reference/inferred-dependents",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/setjmp-longjump.md",
-            "redirect_url": "/cpp/build/x64-calling-convention#setjmplongjmp",
+            "source_path": "docs/build/inline-files-in-a-makefile.md",
+            "redirect_url": "cpp/build/reference/inline-files-in-a-makefile",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/overview-of-x64-calling-conventions.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#overview-of-x64-calling-conventions",
+            "source_path": "docs/build/long-filenames-in-a-makefile.md",
+            "redirect_url": "cpp/build/reference/long-filenames-in-a-makefile",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/types-and-storage.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#types-and-storage",
+            "source_path": "docs/build/macro-substitution.md",
+            "redirect_url": "cpp/build/reference/macro-substitution",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/scalar-types.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#scalar-types",
+            "source_path": "docs/build/macros-and-nmake.md",
+            "redirect_url": "cpp/build/reference/macros-and-nmake",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/aggregates-and-unions.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#aggregates-and-unions",
+            "source_path": "docs/build/makefile-preprocessing-directives.md",
+            "redirect_url": "cpp/build/reference/makefile-preprocessing-directives",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/examples-of-structure-alignment.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#examples-of-structure-alignment",
+            "source_path": "docs/build/makefile-preprocessing-operators.md",
+            "redirect_url": "cpp/build/reference/makefile-preprocessing-operators",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/bitfields.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#bitfields",
+            "source_path": "docs/build/makefile-preprocessing.md",
+            "redirect_url": "cpp/build/reference/expressions-in-makefile-preprocessing",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/conflicts-with-the-x86-compiler.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#conflicts-with-the-x86-compiler",
+            "source_path": "docs/build/msbuild-visual-cpp-overview.md",
+            "redirect_url": "cpp/build/reference/msbuild-visual-cpp-overview",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/register-usage.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#register-usage",
+            "source_path": "docs/build/multiple-inline-files.md",
+            "redirect_url": "cpp/build/reference/multiple-inline-files",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/intrinsics-and-inline-assembly.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#intrinsics-and-inline-assembly",
+            "source_path": "docs/build/multiple-targets.md",
+            "redirect_url": "cpp/build/reference/multiple-targets",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/image-format.md",
-            "redirect_url": "/cpp/build/x64-software-conventions#image-format",
+            "source_path": "docs/build/nmake-options.md",
+            "redirect_url": "cpp/build/reference/nmake-options",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/stack-allocation.md",
-            "redirect_url": "/cpp/build/stack-usage#stack-allocation",
+            "source_path": "docs/build/nmake-reference.md",
+            "redirect_url": "cpp/build/reference/nmake-reference",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/dynamic-parameter-stack-area-construction.md",
-            "redirect_url": "/cpp/build/stack-usage#dynamic-parameter-stack-area-construction",
+            "source_path": "docs/build/null-and-undefined-macros.md",
+            "redirect_url": "cpp/build/reference/null-and-undefined-macros",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/function-types.md",
-            "redirect_url": "/cpp/build/stack-usage#function-types",
+            "source_path": "docs/build/precedence-in-inference-rules.md",
+            "redirect_url": "cpp/build/reference/precedence-in-inference-rules",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/malloc-alignment.md",
-            "redirect_url": "/cpp/build/stack-usage#malloc-alignment",
+            "source_path": "docs/build/precedence-in-macro-definitions.md",
+            "redirect_url": "cpp/build/reference/precedence-in-macro-definitions",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/alloca.md",
-            "redirect_url": "/cpp/build/stack-usage#alloca",
+            "source_path": "docs/build/predefined-rules.md",
+            "redirect_url": "cpp/build/reference/predefined-rules",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/unwind-data-for-exception-handling-debugger-support.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#unwind-data-for-exception-handling-debugger-support",
+            "source_path": "docs/build/pseudotargets.md",
+            "redirect_url": "cpp/build/reference/pseudotargets",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/struct-runtime-function.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#struct-runtime_function",
+            "source_path": "docs/build/recursion-macros.md",
+            "redirect_url": "cpp/build/reference/recursion-macros",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/struct-unwind-code.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#struct-unwind_code",
+            "source_path": "docs/build/reusing-inline-files.md",
+            "redirect_url": "cpp/build/reference/reusing-inline-files",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/struct-unwind-info.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#struct-unwind_info",
+            "source_path": "docs/build/running-nmake.md",
+            "redirect_url": "cpp/build/reference/running-nmake",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/chained-unwind-info-structures.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#chained-unwind-info-structures",
+            "source_path": "docs/build/sample-makefile.md",
+            "redirect_url": "cpp/build/reference/sample-makefile",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/unwind-procedure.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#unwind-procedure",
+            "source_path": "docs/build/search-paths-for-dependents.md",
+            "redirect_url": "cpp/build/reference/search-paths-for-dependents",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/language-specific-handler.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#language-specific-handler",
+            "source_path": "docs/build/search-paths-in-rules.md",
+            "redirect_url": "cpp/build/reference/search-paths-in-rules",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/unwind-helpers-for-masm.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#unwind-helpers-for-masm",
+            "source_path": "docs/build/special-characters-in-a-makefile.md",
+            "redirect_url": "cpp/build/reference/special-characters-in-a-makefile",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/raw-pseudo-operations.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#raw-pseudo-operations",
+            "source_path": "docs/build/special-characters-in-macros.md",
+            "redirect_url": "cpp/build/reference/special-characters-in-macros",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/masm-macros.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#masm-macros",
+            "source_path": "docs/build/special-nmake-macros.md",
+            "redirect_url": "cpp/build/reference/special-nmake-macros",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/build/unwind-data-definitions-in-c.md",
-            "redirect_url": "/cpp/build/exception-handling-x64#unwind-data-definitions-in-c",
+            "source_path": "docs/build/specifying-an-inline-file.md",
+            "redirect_url": "cpp/build/reference/specifying-an-inline-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/targets-in-multiple-description-blocks.md",
+            "redirect_url": "cpp/build/reference/targets-in-multiple-description-blocks",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/targets.md",
+            "redirect_url": "cpp/build/reference/multiple-targets",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/tools-ini-and-nmake.md",
+            "redirect_url": "cpp/build/reference/tools-ini-and-nmake",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/using-an-nmake-macro.md",
+            "redirect_url": "cpp/build/reference/using-an-nmake-macro",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/build/where-to-define-macros.md",
+            "redirect_url": "cpp/build/reference/where-to-define-macros",
             "redirect_document_id": false
         },
         {
@@ -608,6 +568,445 @@
         {
             "source_path": "docs/c-runtime-library/size-specification.md",
             "redirect_url": "/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions#size",
+            "redirect_document_id": false
+        },      
+        {
+            "source_path": "docs/ide/adding-references-in-visual-cpp-projects.md",
+            "redirect_url": "cpp/build/adding-references-in-visual-cpp-projects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/advanced-manifest-tool.md",
+            "redirect_url": "cpp/build/reference/advanced-manifest-tool",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/atl-program-or-control-source-and-header-files.md",
+            "redirect_url": "cpp/build/reference/atl-program-or-control-source-and-header-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/c-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/c-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/cmake-tools-for-visual-cpp.md",
+            "redirect_url": "cpp/build/cmake-projects-in-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/get-started-linux-cmake.md",
+            "redirect_url": "cpp/build/get-started-linux-cmake",
+            "redirect_document_id": true
+        },        {
+            "source_path": "docs/ide/customize-cmake-settings.md",
+            "redirect_url": "cpp/build/customize-cmake-settings",
+            "redirect_document_id": true
+        },        {
+            "source_path": "docs/ide/configure-cmake-debugging-sessions.md",
+            "redirect_url": "cpp/build/cconfigure-cmake-debugging-sessions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/cmakesettings-reference.md",
+            "redirect_url": "cpp/build/cmakesettings-reference.md",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/cmake-predefined-configuration-reference.md",
+            "redirect_url": "cpp/build/cmake-predefined-configuration-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/code-visual-cpp.md",
+            "redirect_url": "cpp/build/floating-point-support-for-older-code-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/command-line-property-pages.md",
+            "redirect_url": "cpp/build/reference/command-line-property-pages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/common-macros-for-build-commands-and-properties.md",
+            "redirect_url": "cpp/build/reference/common-macros-for-build-commands-and-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/creating-a-makefile-project.md",
+            "redirect_url": "cpp/build/reference/creating-a-makefile-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/creating-and-managing-visual-cpp-projects.md",
+            "redirect_url": "cpp/build/creating-and-managing-visual-cpp-projects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/custom-build-step-property-page-general.md",
+            "redirect_url": "cpp/build/reference/custom-build-step-property-page-general",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/delimiters-for-visual-cpp-documentation-tags.md",
+            "redirect_url": "cpp/build/reference/delimiters-for-visual-cpp-documentation-tags",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/dot-xml-file-processing.md",
+            "redirect_url": "cpp/build/reference/dot-xml-file-processing",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/example-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/example-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/exception-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/exception-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/file-types-created-for-visual-cpp-projects.md",
+            "redirect_url": "cpp/build/reference/file-types-created-for-visual-cpp-projects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/files-created-for-clr-projects.md",
+            "redirect_url": "cpp/build/reference/files-created-for-clr-projects",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/formatting-the-output-of-a-custom-build-step-or-build-event.md",
+            "redirect_url": "cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/general-manifest-tool-configuration-properties.md",
+            "redirect_url": "cpp/build/reference/general-manifest-tool-configuration-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/general-property-page-file.md",
+            "redirect_url": "cpp/build/reference/general-property-page-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/general-property-page-project.md",
+            "redirect_url": "cpp/build/reference/general-property-page-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/help-files-html-help.md",
+            "redirect_url": "cpp/build/reference/help-files-html-help",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/help-files-winhelp.md",
+            "redirect_url": "cpp/build/reference/help-files-winhelp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/hint-files.md",
+            "redirect_url": "cpp/build/reference/hint-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/hlsl-property-pages-advanced.md",
+            "redirect_url": "cpp/build/reference/hlsl-property-pages-advanced",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/hlsl-property-pages-general.md",
+            "redirect_url": "cpp/build/reference/hlsl-property-pages-general",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/hlsl-property-pages-output-files.md",
+            "redirect_url": "cpp/build/reference/hlsl-property-pages-output-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/hlsl-property-pages.md",
+            "redirect_url": "cpp/build/reference/hlsl-property-pages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/how-to-create-a-cpp-project-from-existing-code.md",
+            "redirect_url": "cpp/build/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/how-to-organize-project-output-files-for-builds.md",
+            "redirect_url": "cpp/build/how-to-organize-project-output-files-for-builds",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/ide-and-tools-for-visual-cpp-development.md",
+            "redirect_url": "cpp/overview-of-cpp-development",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/include-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/include-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/input-and-output-manifest-tool.md",
+            "redirect_url": "cpp/build/reference/input-and-output-manifest-tool",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/isolated-com-manifest-tool.md",
+            "redirect_url": "cpp/build/reference/isolated-com-manifest-tool",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/linker-property-pages.md",
+            "redirect_url": "cpp/build/reference/linker-property-pages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/list-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/list-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/managed-resources-property-page.md",
+            "redirect_url": "cpp/build/reference/managed-resources-property-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/manifest-tool-property-pages.md",
+            "redirect_url": "cpp/build/reference/manifest-tool-property-pages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/mfc-program-or-control-source-and-header-files.md",
+            "redirect_url": "cpp/build/reference/mfc-program-or-control-source-and-header-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/midl-property-pages-advanced.md",
+            "redirect_url": "cpp/build/reference/midl-property-pages-advanced",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/midl-property-pages-general.md",
+            "redirect_url": "cpp/build/reference/midl-property-pages-general",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/midl-property-pages-output.md",
+            "redirect_url": "cpp/build/reference/midl-property-pages-output",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/midl-property-pages.md",
+            "redirect_url": "cpp/build/reference/midl-property-pages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/nmake-property-page.md",
+            "redirect_url": "cpp/build/reference/nmake-property-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/non-msbuild-projects.md",
+            "redirect_url": "cpp/build/open-folder-projects-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/cppproperties-schema-reference.md",
+            "redirect_url": "cpp/build/cppproperties-schema-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/tasks-vs-json-schema-reference-cpp.md",
+            "redirect_url": "cpp/build/tasks-vs-json-schema-reference-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/para-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/para-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/param-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/param-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/paramref-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/paramref-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/permission-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/permission-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/precompiled-header-files.md",
+            "redirect_url": "cpp/build/creating-precompiled-header-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/project-and-solution-files.md",
+            "redirect_url": "cpp/build/reference/project-and-solution-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/project-files.md",
+            "redirect_url": "cpp/build/reference/project-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/property-page-xml-files.md",
+            "redirect_url": "cpp/build/reference/property-page-xml-files",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/property-pages-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/property-pages-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/recommended-tags-for-documentation-comments-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/recommended-tags-for-documentation-comments-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/remarks-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/remarks-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/resource-files-cpp.md",
+            "redirect_url": "cpp/build/reference/resource-files-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/resources-property-pages.md",
+            "redirect_url": "cpp/build/reference/resources-property-pages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/returns-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/returns-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/see-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/see-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/seealso-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/seealso-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specifying-build-events.md",
+            "redirect_url": "cpp/build/specifying-build-events",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/specifying-custom-build-tools.md",
+            "redirect_url": "cpp/build/specifying-custom-build-tools",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/summary-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/summary-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/troubleshooting-build-customizations.md",
+            "redirect_url": "cpp/build/troubleshooting-build-customizations",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/understanding-custom-build-steps-and-build-events.md",
+            "redirect_url": "cpp/build/understanding-custom-build-steps-and-build-events",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/using-visual-cpp-add-new-item-templates.md",
+            "redirect_url": "cpp/build/reference/using-visual-cpp-add-new-item-templates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/value-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/value-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/vcpp-directories-property-page.md",
+            "redirect_url": "cpp/build/reference/vcpp-directories-property-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/vcxproj-file-structure.md",
+            "redirect_url": "cpp/build/reference/vcxproj-file-structure",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/visual-cpp-project-types.md",
+            "redirect_url": "cpp/build/reference/visual-cpp-project-types",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md",
+            "redirect_url": "cpp/dotnet/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio",
+            "redirect_document_id": false
+        },
+        
+        {
+            "source_path": "docs/ide/web-references-property-page.md",
+            "redirect_url": "cpp/build/reference/web-references-property-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/working-with-project-properties.md",
+            "redirect_url": "cpp/build/working-with-project-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/xdcmake-reference.md",
+            "redirect_url": "cpp/build/reference/xdcmake-reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/xml-data-generator-tool-property-page.md",
+            "redirect_url": "cpp/build/reference/xml-data-generator-tool-property-page",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/xml-document-generator-tool-property-pages.md",
+            "redirect_url": "cpp/build/reference/xml-document-generator-tool-property-pages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/xml-documentation-visual-cpp.md",
+            "redirect_url": "cpp/build/reference/xml-documentation-visual-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/how-to-enable-intellisense-for-makefile-projects.md",
+            "redirect_url": "/cpp/build/reference/creating-a-makefile-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/makefile-project-wizard.md",
+            "redirect_url": "/cpp/build/reference/creating-a-makefile-project",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/application-settings-makefile-project-wizard.md",
+            "redirect_url": "/cpp/build/reference/creating-a-makefile-project",
             "redirect_document_id": false
         },
         {
@@ -6562,37 +6961,37 @@
         },
         {
             "source_path": "docs/ide/building-external-projects.md",
-            "redirect_url": "/cpp/ide/non-msbuild-projects",
+            "redirect_url": "/cpp/build/open-folder-projects-cpp",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/redistributing-database-support-files.md",
-            "redirect_url": "../data/data-access-in-cpp",
+            "redirect_url": "/cpp/data/data-access-in-cpp",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/wizard-support-for-other-languages.md",
-            "redirect_url": "../ide/creating-desktop-projects-by-using-application-wizards",
+            "redirect_url": "/cpp/ide/creating-desktop-projects-by-using-application-wizards",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/specify-project-location-and-source-files.md",
-            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md",
-            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/specify-debug-configuration-settings.md",
-            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/specify-release-configuration.md",
-            "redirect_url": "../ide/how-to-create-a-cpp-project-from-existing-code",
+            "redirect_url": "/cpp/build/how-to-create-a-cpp-project-from-existing-code",
             "redirect_document_id": false
         },
         {

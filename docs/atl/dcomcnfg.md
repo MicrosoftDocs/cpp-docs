@@ -1,7 +1,6 @@
 ---
 title: "DCOMCNFG"
 ms.date: "11/04/2016"
-f1_keywords: ["DCOMCNFG"]
 helpviewer_keywords: ["DCOMCNFG utility", "DCOM, configuring in ATL"]
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
 ---

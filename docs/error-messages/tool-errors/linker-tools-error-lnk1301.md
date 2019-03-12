@@ -21,7 +21,7 @@ For more information, see:
 
 - [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)
 
-- [Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md)
+- [Profile-Guided Optimizations](../../build/profile-guided-optimizations.md)
 
 ### To correct this error
 

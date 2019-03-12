@@ -19,11 +19,11 @@ The **/POGOSAFEMODE** option sets the instrumented build to use safe mode. This 
 
 By default, PGO profiling operates in fast mode. **/POGOSAFEMODE** is only required if you want to use safe mode.
 
-To run PGO profiling in safe mode, you must use either **/GENPROFILE:EXACT** (preferred), or use the environment variable [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md) or the linker switch **/POGOSAFEMODE**, depending on the system. If you are performing the profiling on an x64 computer, you must use the linker switch. If you are performing the profiling on an x86 computer, you may use the linker switch or define the environment variable to any value before you start the PGO instrumentation process.
+To run PGO profiling in safe mode, you must use either **/GENPROFILE:EXACT** (preferred), or use the environment variable [PogoSafeMode](../environment-variables-for-profile-guided-optimizations.md) or the linker switch **/POGOSAFEMODE**, depending on the system. If you are performing the profiling on an x64 computer, you must use the linker switch. If you are performing the profiling on an x86 computer, you may use the linker switch or define the environment variable to any value before you start the PGO instrumentation process.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Optimization** property page.
 
@@ -41,5 +41,5 @@ To run PGO profiling in safe mode, you must use either **/GENPROFILE:EXACT** (pr
 
 [/GENPROFILE and /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md)<br/>
-[Environment Variables for Profile-Guided Optimizations](../../build/reference/environment-variables-for-profile-guided-optimizations.md)<br/>
+[Profile-Guided Optimizations](../profile-guided-optimizations.md)<br/>
+[Environment Variables for Profile-Guided Optimizations](../environment-variables-for-profile-guided-optimizations.md)<br/>

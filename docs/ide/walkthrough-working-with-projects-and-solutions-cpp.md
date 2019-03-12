@@ -213,4 +213,4 @@ Congratulations, you've successfully built an app project and solution. Continue
 ## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+[Projects and build systems](../build/building-c-cpp-programs.md)<br/>

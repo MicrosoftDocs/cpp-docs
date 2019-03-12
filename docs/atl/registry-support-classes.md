@@ -2,7 +2,6 @@
 title: "Registry Support Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.registry"]
 helpviewer_keywords: ["registry support classes, ATL", "ATL, registry", "registry support classes"]
 ms.assetid: 4203c346-77a9-42bf-8683-a3c3351cc490
 ---

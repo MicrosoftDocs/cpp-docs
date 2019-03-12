@@ -1,7 +1,6 @@
 ---
 title: "Implementing a Window with CWindowImpl"
 ms.date: "11/04/2016"
-f1_keywords: ["CWindowImpl"]
 helpviewer_keywords: ["ATL, windows", "windows [C++], subclassing", "windows [C++], superclassing", "windows [C++], ATL", "subclassing ATL window classes", "superclassing, ATL"]
 ms.assetid: 3fc40550-f1d6-4702-8b7c-4cf682b6a855
 ---

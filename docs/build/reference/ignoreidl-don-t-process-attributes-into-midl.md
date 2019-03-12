@@ -17,7 +17,7 @@ The /IGNOREIDL option specifies that any [IDL attributes](../../windows/idl-attr
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -31,9 +31,9 @@ The /IGNOREIDL option specifies that any [IDL attributes](../../windows/idl-attr
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[/IDLOUT (Name MIDL Output Files)](../../build/reference/idlout-name-midl-output-files.md)<br/>
-[/TLBOUT (Name .TLB File)](../../build/reference/tlbout-name-dot-tlb-file.md)<br/>
-[/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
+[/IDLOUT (Name MIDL Output Files)](idlout-name-midl-output-files.md)<br/>
+[/TLBOUT (Name .TLB File)](tlbout-name-dot-tlb-file.md)<br/>
+[/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>
 [Building an Attributed Program](../../windows/building-an-attributed-program.md)

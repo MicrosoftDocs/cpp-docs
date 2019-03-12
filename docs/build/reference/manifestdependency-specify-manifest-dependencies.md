@@ -15,7 +15,7 @@ ms.assetid: e4b68313-33a2-4c3e-908e-ac2b9f7d6a73
 
 /MANIFESTDEPENDENCY lets you specify attributes that will be placed in the \<dependency> section of the manifest file.
 
-See [/MANIFEST (Create Side-by-Side Assembly Manifest)](../../build/reference/manifest-create-side-by-side-assembly-manifest.md) for information on how to create a manifest file.
+See [/MANIFEST (Create Side-by-Side Assembly Manifest)](manifest-create-side-by-side-assembly-manifest.md) for information on how to create a manifest file.
 
 For more information on the \<dependency> section of the manifest file, see [Publisher Configuration Files](/windows/desktop/SbsCs/publisher-configuration-files).
 
@@ -51,7 +51,7 @@ The linker will collect /MANIFESTDEPENDENCY comments, eliminate duplicate entrie
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Manifest File** property page.
 
@@ -63,5 +63,5 @@ The linker will collect /MANIFESTDEPENDENCY comments, eliminate duplicate entrie
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

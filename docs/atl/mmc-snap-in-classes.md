@@ -2,7 +2,6 @@
 title: "MMC Snap-In Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.MMC"]
 helpviewer_keywords: ["MMC Snap-In classes"]
 ms.assetid: 4af1d5af-687f-48b1-b2c5-fa252241b4d6
 ---

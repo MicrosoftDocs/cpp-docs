@@ -12,5 +12,5 @@ LINK also uses a PDB to hold debugging information for the .exe file or the .dll
 
 ## See also
 
-[LINK Input Files](../../build/reference/link-input-files.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[LINK Input Files](link-input-files.md)<br/>
+[MSVC Linker Options](linker-options.md)

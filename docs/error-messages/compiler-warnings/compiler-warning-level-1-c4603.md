@@ -13,4 +13,4 @@ The macro specified by the *identifier* placeholder is either different or no lo
 
 ## See Also
 
-[Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)
+[Creating Precompiled Header Files](../../build/creating-precompiled-header-files.md)

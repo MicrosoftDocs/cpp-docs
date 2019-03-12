@@ -16,4 +16,4 @@ BSCMAKE returns an exit code (also called a return code or error code) to the op
 
 ## See also
 
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)
+[BSCMAKE Reference](bscmake-reference.md)

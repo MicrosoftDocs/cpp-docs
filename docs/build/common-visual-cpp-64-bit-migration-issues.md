@@ -26,11 +26,11 @@ The %x (hex `int` format) `printf` modifier will not work as expected on a 64-bi
 
 For more information, see:
 
-- [Compiler Options](../build/reference/compiler-options.md)
+- [MSVC Compiler Options](reference/compiler-options.md)
 
 - [Migration Tips](/windows/desktop/WinProg64/migration-tips)
 
 ## See also
 
-[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[Configure C++ projects for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)
