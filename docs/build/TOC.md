@@ -1,4 +1,4 @@
-# [Building C/C++ Projects](building-c-cpp-programs.md)
+# [Projects and build systems](projects-and-build-systems-cpp.md)
 # [Visual Studio Projects - C++](creating-and-managing-visual-cpp-projects.md)
 ## [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md)
 ### [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md)
