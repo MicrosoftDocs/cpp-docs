@@ -108,7 +108,7 @@ The following example generates a C1083 error when the header file `"test.h"` do
 #include "stdio.h"  // OK
 ```
 
-For information about how to build C/C++ projects in the IDE or on the command line, and information about setting environment variables, see [Projects and build systems](../../build/building-c-cpp-programs.md).
+For information about how to build C/C++ projects in the IDE or on the command line, and information about setting environment variables, see [Projects and build systems](../../build/projects-and-build-systems-cpp.md).
 
 ## See also
 
