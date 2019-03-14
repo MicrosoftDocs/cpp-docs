@@ -28,10 +28,20 @@ These versions of the compiler introduced new warnings:
 | Visual C++ 2017 version 15.6 | 19.13.26128.0 |
 | Visual C++ 2017 version 15.7 | 19.14.26428.0 |
 | Visual C++ 2017 version 15.8 | 19.15.26726.0 |
+| Visual C++ 2017 version 15.9 | 19.16.26926.0 |
+| Visual C++ 2019 RC | 19.20.27004.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings which match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the __/Wv__ compiler option. The __/Wv__ option can't suppress warnings that are not listed, which predate the specified versions of the compiler.
+
+## Warnings introduced in Visual C++ 2019 RC (compiler version 19.20.27004.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.15__.
+
+|||
+|-|-|
+C4848 | support for standard attribute 'no\_unique\_address' in C++17 and earlier is a vendor extension
 
 ## Warnings introduced in Visual C++ 2017 version 15.8 (compiler version 19.15.26726.0)
 
@@ -39,7 +49,25 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 |||
 |-|-|
-C5046|'*function*' : Symbol involving type with internal linkage not defined|
+C4643 | Forward declaring '*identifier*' in namespace std is not permitted by the C++ Standard.
+C4644 | usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+C4845 | '\_\_declspec(no\_init\_all)' is ignored if '/d1initall\[0\|1\|2\|3]' was not specified on the command line
+C4846 | '*value*' is not a valid argument for '/d1initall': command-line flag ignored
+C4847 | '\_\_declspec(no\_init\_all)' can only be applied to a function, a class type, or a local variable: ignored
+C4866 | compiler may not enforce left-to-right evaluation order for call to '*function*'
+C5046 | '*function*' : Symbol involving type with internal linkage not defined
+C5047 | use of nonstandard \_\_if\_exists with modules is not supported
+C5048 | Use of macro '*macroname*' may result in non-deterministic output
+C5049 | '*string*': Embedding a full path may result in machine-dependent output
+C5050 | Possible incompatible environment while importing module '*module_name*': *issue*
+C5100 | \_\_VA\_ARGS\_\_ is reserved for use in variadic macros
+C5101 | use of preprocessor directive in function-like macro argument list is undefined behavior
+C5102 | ignoring invalid command-line macro definition '*value*'
+C5103 | pasting '*token1*' and '*token2*' does not result in a valid preprocessing token
+C5104 | found '*string1*#*string2*' in macro replacement list, did you mean '*string1*""#*string2*'?
+C5105 | macro expansion producing 'defined' has undefined behavior
+C5106 | macro redefined with different parameter names
+C5107 | missing terminating '*char*' character
 
 ## Warnings introduced in Visual C++ 2017 version 15.7 (compiler version 19.14.26428.0)
 
