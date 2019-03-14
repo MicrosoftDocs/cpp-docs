@@ -162,5 +162,5 @@ The MSVC compiler includes a C Runtime Library (CRT) that is compatible with the
 ## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Projects and build systems](building-c-cpp-programs.md)<br/>
+[Projects and build systems](projects-and-build-systems-cpp.md)<br/>
 [MSVC Compiler Options](reference/compiler-options.md)
