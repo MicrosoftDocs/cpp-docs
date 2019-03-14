@@ -67,7 +67,7 @@ Information about samples.
 [Overview of C++ Development in Visual Studio](overview-of-cpp-development.md)<br/>
 How to use the Visual Studio IDE to create projects, edit code, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
 
-[Projects and Build Systems](build/building-c-cpp-programs.md)<br/>
+[Projects and Build Systems](build/projects-and-build-systems-cpp.md)<br/>
 How to create and configure Visual Studio C++ projects, CMake projects, and other kinds of projects with MSVC compiler and linker options.
 
 [Writing and refactoring C++ code](ide/writing-and-refactoring-code-cpp.md)<br/>
