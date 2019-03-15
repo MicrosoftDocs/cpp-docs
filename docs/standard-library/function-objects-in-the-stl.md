@@ -1,6 +1,6 @@
 ---
 title: "Function Objects in the C++ Standard Library"
-ms.date: "11/04/2016"
+ms.date: "03/15/2019"
 helpviewer_keywords: ["functors", "C++ Standard Library, functors", "C++ Standard Library, function objects", "function objects"]
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
 ---
@@ -23,6 +23,14 @@ public:
         return a < b;
     }
 };
+
+int main()
+{
+    Functor f;
+    int a = 5;
+    int b = 7;
+    int ans = f(a, b);
+}
 ```
 
 The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it is actually calling operator() of the Functor type. This similarity between calling a function object and a function is how the term function object came about.
