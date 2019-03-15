@@ -1,8 +1,8 @@
 ---
 title: "Compiler Warnings C4800 Through C5999"
-ms.date: "10/24/2018"
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5045"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5045"]
+ms.date: "03/14/2019"
+f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5045", "C5046", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5105", "C5106", "C5107"]
+helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5045", "C5046", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5105", "C5106", "C5107"]
 ---
 # Compiler Warnings C4800 Through C5999
 
@@ -14,7 +14,12 @@ The articles in this section of the documentation explain a subset of the warnin
 
 |Warning|Message|
 |-------------|-------------|
+::: moniker range="< vs-2019"
 |[Compiler Warning (level 3) C4800](compiler-warning-level-3-c4800.md)|'*type*': forcing value to bool 'true' or 'false' (performance warning)|
+::: moniker-end
+::: moniker range=">= vs-2019"
+|[Compiler Warning (level 4) C4800](compiler-warning-level-3-c4800.md)| Implicit conversion from '*type*' to bool. Possible information loss |
+::: moniker-end
 |[Compiler Warning (level 1) C4803](compiler-warning-level-1-c4803.md)|'*method*': the raise method has a different storage class from that of the event, '*event*'|
 |[Compiler Warning (level 1) C4804](compiler-warning-level-1-c4804.md)|'*operation*': unsafe use of type 'bool' in operation|
 |[Compiler Warning (level 1) C4805](compiler-warning-level-1-c4805.md)|'*operation*': unsafe mix of type '*type1*' and type '*type2*' in operation|
@@ -45,6 +50,10 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 4) C4842|the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases|
 |Compiler warning C4843|'*type1*': An exception handler of reference to array or function type is unreachable, use '*type2*' instead|
 |Compiler warning C4844|'export module *module_name*;' is now the preferred syntax for declaring a module interface|
+| Compiler warning (level 4) C4845 | '\_\_declspec(no\_init\_all)' is ignored if '/d1initall\[0\|1\|2\|3]' was not specified on the command line |
+| Compiler warning (level 4) C4846 | '*value*' is not a valid argument for '/d1initall': command-line flag ignored |
+| Compiler warning (level 4) C4847 | '\_\_declspec(no\_init\_all)' can only be applied to a function, a class type, or a local variable: ignored |
+| Compiler warning (level 1) C4848 | support for standard attribute 'no\_unique\_address' in C++17 and earlier is a vendor extension |
 |[Compiler warning (level 4) C4866](c4866.md)| compiler may not enforce left-to-right evaluation order for call to *operator_name*|
 |[Compiler Warning (Error) C4867](compiler-warning-c4867.md)|'*function*': function call missing argument list; use '*call*' to create a pointer to member|
 |[Compiler Warning (level 4) C4868](compiler-warning-c4868.md)|'_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list|
@@ -144,3 +153,15 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 4) C5044|An argument to command-line option *option* points to a path '*path*' that does not exist|
 |[Compiler warning C5045](c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified|
 |[Compiler warning (level 2) C5046](c5046.md)|'*function*' : Symbol involving type with internal linkage not defined|
+| Compiler warning (level 1) C5047 | use of nonstandard \_\_if\_exists with modules is not supported |
+| Compiler warning (level 1) C5048 | Use of macro '*macroname*' may result in non-deterministic output |
+| Compiler warning (level 1) C5049 | '*string*': Embedding a full path may result in machine-dependent output |
+| Compiler warning (level 1) C5050 | Possible incompatible environment while importing module '*module_name*': *issue* |
+| Compiler warning (level 1) C5100 | \_\_VA\_ARGS\_\_ is reserved for use in variadic macros |
+| Compiler warning (level 1) C5101 | use of preprocessor directive in function-like macro argument list is undefined behavior |
+| Compiler warning (level 1) C5102 | ignoring invalid command-line macro definition '*value*' |
+| Compiler warning (level 1) C5103 | pasting '*token1*' and '*token2*' does not result in a valid preprocessing token |
+| Compiler warning (level 1) C5104 | found '*string1*#*string2*' in macro replacement list, did you mean '*string1*""#*string2*'? |
+| Compiler warning (level 1) C5105 | macro expansion producing 'defined' has undefined behavior |
+| Compiler warning (level 1) C5106 | macro redefined with different parameter names |
+| Compiler warning (level 1) C5107 | missing terminating '*char*' character |
