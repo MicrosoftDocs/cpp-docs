@@ -1,8 +1,6 @@
 ---
 title: "TN070: MFC Window Class Names"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.classes"]
-helpviewer_keywords: ["window class names [MFC]", "TN070 [MFC]"]
+ms.date: "11/04/2016"helpviewer_keywords: ["window class names [MFC]", "TN070 [MFC]"]
 ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
 ---
 # TN070: MFC Window Class Names

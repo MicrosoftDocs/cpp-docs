@@ -1,8 +1,6 @@
 ---
 title: "Exception Processing"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros.exceptions"]
-helpviewer_keywords: ["macros [MFC], exception handling", "DAO (Data Access Objects), exceptions [MFC]", "OLE exceptions [MFC], MFC functions", "exceptions [MFC], processing", "exception macros [MFC]", "termination functions, MFC", "MFC, exceptions", "exceptions [MFC], MFC throwing functions"]
+ms.date: "11/04/2016"helpviewer_keywords: ["macros [MFC], exception handling", "DAO (Data Access Objects), exceptions [MFC]", "OLE exceptions [MFC], MFC functions", "exceptions [MFC], processing", "exception macros [MFC]", "termination functions, MFC", "MFC, exceptions", "exceptions [MFC], MFC throwing functions"]
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
 ---
 # Exception Processing

@@ -1,8 +1,6 @@
 ---
 title: "Type Casting of MFC Class Objects"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros.classes"]
-helpviewer_keywords: ["macros [MFC], type casting", "pointers [MFC], type casting", "type casts [MFC]", "casting types [MFC]", "macros [MFC], casting pointers"]
+ms.date: "11/04/2016"helpviewer_keywords: ["macros [MFC], type casting", "pointers [MFC], type casting", "type casts [MFC]", "casting types [MFC]", "macros [MFC], casting pointers"]
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
 ---
 # Type Casting of MFC Class Objects

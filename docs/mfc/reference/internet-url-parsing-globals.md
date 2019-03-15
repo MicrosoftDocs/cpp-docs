@@ -1,8 +1,6 @@
 ---
 title: "Internet URL Parsing Globals and Helpers"
-ms.date: "04/03/2017"
-f1_keywords: ["vc.mfc.macros.isapi"]
-helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]
+ms.date: "04/03/2017"helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
 ---
 # Internet URL Parsing Globals and Helpers

@@ -1,8 +1,6 @@
 ---
 title: "TN050: MFC-OLE Common Dialogs (MFCUIx32)"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.ole"]
-helpviewer_keywords: ["MFCUIx32", "TN050"]
+ms.date: "11/04/2016"helpviewer_keywords: ["MFCUIx32", "TN050"]
 ms.assetid: 397c92f7-e7c8-49fb-97bc-f5602ec744b8
 ---
 # TN050: MFC/OLE Common Dialogs (MFCUIx32)

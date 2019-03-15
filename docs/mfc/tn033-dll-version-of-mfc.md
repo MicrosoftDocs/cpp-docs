@@ -1,8 +1,6 @@
 ---
 title: "TN033: DLL Version of MFC"
-ms.date: "06/28/2018"
-f1_keywords: ["vc.mfc.dll"]
-helpviewer_keywords: ["MFC DLLs [MFC], writing MFC extension DLLS", "AFXDLL library", "DLLs [MFC], MFC", "DLL version of MFC [MFC]", "TN033"]
+ms.date: "06/28/2018"helpviewer_keywords: ["MFC DLLs [MFC], writing MFC extension DLLS", "AFXDLL library", "DLLs [MFC], MFC", "DLL version of MFC [MFC]", "TN033"]
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
 ---
 # TN033: DLL Version of MFC

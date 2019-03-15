@@ -1,8 +1,6 @@
 ---
 title: "Run-Time Object Model Services"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros"]
-helpviewer_keywords: ["run-time object model services macros"]
+ms.date: "11/04/2016"helpviewer_keywords: ["run-time object model services macros"]
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
 ---
 # Run-Time Object Model Services

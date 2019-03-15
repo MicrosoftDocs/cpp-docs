@@ -1,8 +1,6 @@
 ---
 title: "Dispatch Maps"
-ms.date: "06/20/2018"
-f1_keywords: ["vc.mfc.macros.maps"]
-helpviewer_keywords: ["dispatch maps [MFC], macros", "dispatch maps [MFC]", "dispatch map macros [MFC]"]
+ms.date: "06/20/2018"helpviewer_keywords: ["dispatch maps [MFC], macros", "dispatch maps [MFC]", "dispatch map macros [MFC]"]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
 ---
 # Dispatch Maps

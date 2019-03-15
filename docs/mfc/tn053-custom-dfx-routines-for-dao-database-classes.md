@@ -1,8 +1,6 @@
 ---
 title: "TN053: Custom DFX Routines for DAO Database Classes"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.dfx"]
-helpviewer_keywords: ["MFC, DAO and", "database classes [MFC], DAO", "DAO [MFC], MFC", "DFX (DAO record field exchange) [MFC], custom routines", "TN053", "DAO [MFC], classes", "DFX (DAO record field exchange) [MFC]", "custom DFX routines [MFC]"]
+ms.date: "11/04/2016"helpviewer_keywords: ["MFC, DAO and", "database classes [MFC], DAO", "DAO [MFC], MFC", "DFX (DAO record field exchange) [MFC], custom routines", "TN053", "DAO [MFC], classes", "DFX (DAO record field exchange) [MFC]", "custom DFX routines [MFC]"]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
 ---
 # TN053: Custom DFX Routines for DAO Database Classes

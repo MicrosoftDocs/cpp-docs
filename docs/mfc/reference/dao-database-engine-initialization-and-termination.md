@@ -1,8 +1,6 @@
 ---
 title: "DAO Database Engine Initialization and Termination"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros.data"]
-helpviewer_keywords: ["DAO (Data Access Objects), termination", "DAO (Data Access Objects), initialization"]
+ms.date: "11/04/2016"helpviewer_keywords: ["DAO (Data Access Objects), termination", "DAO (Data Access Objects), initialization"]
 ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
 ---
 # DAO Database Engine Initialization and Termination

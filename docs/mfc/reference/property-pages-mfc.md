@@ -1,8 +1,6 @@
 ---
 title: "Property Pages (MFC)"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros"]
-helpviewer_keywords: ["property page data transfer functions in MFC", "property pages [MFC], global MFC functions"]
+ms.date: "11/04/2016"helpviewer_keywords: ["property page data transfer functions in MFC", "property pages [MFC], global MFC functions"]
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
 ---
 # Property Pages (MFC)
