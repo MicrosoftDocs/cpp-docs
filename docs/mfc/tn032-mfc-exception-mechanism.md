@@ -1,6 +1,7 @@
 ---
 title: "TN032: MFC Exception Mechanism"
-ms.date: "11/04/2016"helpviewer_keywords: ["TN032", "MFC, exceptions", "CException class [MFC], using"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["TN032", "MFC, exceptions", "CException class [MFC], using"]
 ms.assetid: 0271f0aa-82cb-47a2-b7ea-e88126fc7e43
 ---
 # TN032: MFC Exception Mechanism

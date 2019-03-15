@@ -1,6 +1,7 @@
 ---
 title: "TN048: Writing ODBC Setup and Administration Programs for MFC Database Applications"
-ms.date: "11/04/2016"helpviewer_keywords: ["installing ODBC", "ODBC, installing", "setup, ODBC setup programs", "TN048", "ODBC, and MFC", "MFC, database applications"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["installing ODBC", "ODBC, installing", "setup, ODBC setup programs", "TN048", "ODBC, and MFC", "MFC, database applications"]
 ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
 ---
 # TN048: Writing ODBC Setup and Administration Programs for MFC Database Applications

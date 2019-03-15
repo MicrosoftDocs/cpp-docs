@@ -1,6 +1,7 @@
 ---
 title: "MFC Technical Notes"
-ms.date: "11/04/2016"helpviewer_keywords: ["MFC, technical notes", "technical notes, MFC", "technical notes [MFC]"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["MFC, technical notes", "technical notes, MFC", "technical notes [MFC]"]
 ms.assetid: 8aa01d66-0b07-4d0a-a080-4bb00c7baaac
 ---
 # MFC Technical Notes

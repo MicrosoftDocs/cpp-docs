@@ -1,6 +1,7 @@
 ---
 title: "Event Sink Maps"
-ms.date: "11/04/2016"helpviewer_keywords: ["event sink maps [MFC]"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["event sink maps [MFC]"]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
 ---
 # Event Sink Maps

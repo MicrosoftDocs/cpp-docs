@@ -1,6 +1,7 @@
 ---
 title: "Type Library Access"
-ms.date: "11/04/2016"helpviewer_keywords: ["type libraries [MFC], accessing"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["type libraries [MFC], accessing"]
 ms.assetid: a03fa7f0-86c2-4119-bf81-202916fb74b3
 ---
 # Type Library Access

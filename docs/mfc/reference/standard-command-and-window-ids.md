@@ -1,6 +1,7 @@
 ---
 title: "Standard Command and Window IDs"
-ms.date: "11/04/2016"helpviewer_keywords: ["standard command and Window IDs"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["standard command and Window IDs"]
 ms.assetid: 0424805c-fff8-4531-8f0c-15cfb13aa612
 ---
 # Standard Command and Window IDs

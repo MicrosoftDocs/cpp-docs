@@ -1,6 +1,7 @@
 ---
 title: "Class Factories and Licensing"
-ms.date: "11/04/2016"helpviewer_keywords: ["class factories [MFC], and licensing"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["class factories [MFC], and licensing"]
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
 ---
 # Class Factories and Licensing

@@ -1,6 +1,7 @@
 ---
 title: "CString Formatting and Message-Box Display"
-ms.date: "11/04/2016"helpviewer_keywords: ["CString objects [MFC], formatting and message boxes"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["CString objects [MFC], formatting and message boxes"]
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
 ---
 # CString Formatting and Message-Box Display

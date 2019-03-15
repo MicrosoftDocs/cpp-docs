@@ -1,6 +1,7 @@
 ---
 title: "Connection Maps"
-ms.date: "11/04/2016"helpviewer_keywords: ["connection maps"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["connection maps"]
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
 ---
 # Connection Maps

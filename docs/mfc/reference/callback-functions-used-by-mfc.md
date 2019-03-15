@@ -1,6 +1,7 @@
 ---
 title: "Callback Functions Used by MFC"
-ms.date: "11/04/2016"helpviewer_keywords: ["callback functions [MFC], MFC", "MFC, callback functions", "functions [MFC], callback", "callback functions [MFC]"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["callback functions [MFC], MFC", "MFC, callback functions", "functions [MFC], callback", "callback functions [MFC]"]
 ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
 ---
 # Callback Functions Used by MFC

@@ -1,6 +1,7 @@
 ---
 title: "TN046: Commenting Conventions for the MFC Classes"
-ms.date: "11/04/2016"helpviewer_keywords: ["TN046"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["TN046"]
 ms.assetid: 0d6ff3c9-4a5d-44df-b121-be4b0a649947
 ---
 # TN046: Commenting Conventions for the MFC Classes

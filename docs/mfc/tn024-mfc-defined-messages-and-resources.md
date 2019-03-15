@@ -1,6 +1,7 @@
 ---
 title: "TN024: MFC-Defined Messages and Resources"
-ms.date: "11/04/2016"helpviewer_keywords: ["resources [MFC]", "Windows messages [MFC], MFC-defined", "messages [MFC], MFC", "TN024"]
+ms.date: "11/04/2016"
+helpviewer_keywords: ["resources [MFC]", "Windows messages [MFC], MFC-defined", "messages [MFC], MFC", "TN024"]
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
 ---
 # TN024: MFC-Defined Messages and Resources
