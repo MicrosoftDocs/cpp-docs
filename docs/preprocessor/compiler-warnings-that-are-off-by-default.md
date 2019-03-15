@@ -6,7 +6,7 @@ ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
 # Compiler warnings that are off by default
 
-The compiler includes warnings that are turned off by default, because most developers don't want to see them. In some cases, they represent a stylistic choice, or are common idioms in older code, or take advantage of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. Some of these warnings may be very noisy in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).
+The compiler supports warnings that are turned off by default, because most developers don't find them useful. In some cases, they warn about a stylistic choice, or about common idioms in older code. Other warnings are about use of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. If enabled, some of these warnings may appear many times in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).
 
 ## Enable warnings that are off by default
 
@@ -26,7 +26,7 @@ You can enable warnings that are normally off by default by using one of the fol
 
 - [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
-   This enables warning *nnnn* at level *L*.
+   This option enables warning *nnnn* at level *L*.
 
 ## Warnings that are off by default
 
@@ -107,9 +107,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C4774 (level 4)|'*string*' : format string expected in argument *number* is not a string literal|
 |C4777 (level 4)|'*function*' : format string '*string*' requires an argument of type '*type1*', but variadic argument *number* has type '*type2*'|
 |C4786 (level 3)|'*symbol*' : object name was truncated to '*number*' characters in the debug information|
-::: moniker range=">= vs-2019"
 | [C4800](../error-messages/compiler-warnings/compiler-warning-level-3-c4800.md) (level 4) | Implicit conversion from '*type*' to bool. Possible information loss <sup>16.0</sup> |
-::: moniker-end
 |[C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (level 4)|'*bytes*' bytes padding added after construct '*member_name*'|
 | [C4822](../error-messages/compiler-warnings/compiler-warning-level-1-c4822.md) (level 1) | '*member*': local class member function does not have a body |
 |C4826 (level 2)|Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior.|

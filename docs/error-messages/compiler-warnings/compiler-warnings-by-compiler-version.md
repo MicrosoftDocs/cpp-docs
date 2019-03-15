@@ -29,9 +29,7 @@ These versions of the compiler introduced new warnings:
 | Visual C++ 2017 version 15.7 | 19.14.26428.0 |
 | Visual C++ 2017 version 15.8 | 19.15.26726.0 |
 | Visual C++ 2017 version 15.9 | 19.16.26926.0 |
-::: moniker range=">= vs-2019"
-| Visual C++ 2019 RC | 19.20.27004.0 |
-::: moniker-end
+| Visual C++ 2019 RTM | 19.20.27004.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings that match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
 
@@ -48,6 +46,8 @@ These warnings and all warnings in later versions are suppressed by using the co
 C4848 | support for standard attribute 'no\_unique\_address' in C++17 and earlier is a vendor extension
 
 ::: moniker-end
+::: moniker range=">= vs-2017"
+
 
 ## Warnings introduced in Visual C++ 2017 version 15.8 (compiler version 19.15.26726.0)
 
@@ -137,6 +137,8 @@ C4468|'fallthrough': attribute must be followed by a case label or a default lab
 C4698|'*feature*' is for evaluation purposes only and is subject to change or removal in future updates.
 C4839|non-standard use of class '*class*' as an argument to a variadic function
 C4840|non-portable use of class '*class*' as an argument to a variadic function
+
+::: moniker-end
 
 ## Warnings introduced in Visual C++ 2015 Update 3 (compiler version 19.00.24215.1)
 
