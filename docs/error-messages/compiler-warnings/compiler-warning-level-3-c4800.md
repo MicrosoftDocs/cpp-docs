@@ -17,7 +17,13 @@ C4800 is a level 3 warning in Visual Studio 2015 and earlier:
 
 This warning is generated when a value that is not `bool` is implicitly converted into type `bool`. Typically, this message is caused by assigning `int` variables to `bool` variables where the `int` variable contains only values **true** and **false**, and could be redeclared as type `bool`. If you cannot rewrite the expression to use type `bool`, then you can add "`!=0`" to the expression, which gives the expression type `bool`. Casting the expression to type `bool` does not disable the warning, which is by design.
 
-This warning is off by default in Visual Studio 2019. Use __/w__*n*__4800__ to enable C4800 as a level *n* warning, or [/Wall](../../build/reference/compiler-option-warning-level.md) to enable all warnings that are off by default. For more information, see [Compiler Warnings That Are Off By Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+::: moniker range=">= vs-2017"
+This warning is not emitted in Visual Studio 2017.
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+This warning is off by default starting in Visual Studio 2019. Use __/w__*n*__4800__ to enable C4800 as a level *n* warning, or [/Wall](../../build/reference/compiler-option-warning-level.md) to enable all warnings that are off by default. For more information, see [Compiler Warnings That Are Off By Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+::: moniker-end
 
 ## Example
 
