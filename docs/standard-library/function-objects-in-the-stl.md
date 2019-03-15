@@ -33,7 +33,7 @@ int main()
 }
 ```
 
-The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it is actually calling operator() of the Functor type. This similarity between calling a function object and a function is how the term function object came about.
+The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it's actually calling operator() of the Functor type. This similarity between calling a function object and a function is how the term function object came about.
 
 ## Function Objects and Containers
 
@@ -46,7 +46,7 @@ template <class Key,
 class set
 ```
 
-The second template argument is the function object `less`. This function object returns **true** if the first parameter passed to it is less than the second parameter passed. Since some containers sort their elements, the container needs a way of comparing two elements, and this is accomplished using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
+The second template argument is the function object `less`. This function object returns **true** if the first parameter is less than the second parameter. Since some containers sort their elements, the container needs a way of comparing two elements. The comparison is done by using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
 
 ## Function Objects and Algorithms
 
