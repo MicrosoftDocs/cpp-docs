@@ -5,7 +5,8 @@ helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
 # Compiler warnings that are off by default
-The compiler includes warnings that are turned off by default, because most developers don't want to see them. In some cases, they represent a stylistic choice, or are common idioms in older code, or take advantage of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. Some of these warnings may be very noisy in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).
+
+The compiler supports warnings that are turned off by default, because most developers don't find them useful. In some cases, they warn about a stylistic choice, or about common idioms in older code. Other warnings are about use of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. If enabled, some of these warnings may appear many times in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).
 
 ## Enable warnings that are off by default
 
@@ -25,7 +26,7 @@ You can enable warnings that are normally off by default by using one of the fol
 
 - [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
-   This enables warning *nnnn* at level *L*.
+   This option enables warning *nnnn* at level *L*.
 
 ## Warnings that are off by default
 
@@ -35,7 +36,8 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |-|-|
 |[C4061](../error-messages/compiler-warnings/compiler-warning-level-4-c4061.md) (level 4)|enumerator '*identifier*' in a switch of enum '*enumeration*' is not explicitly handled by a case label|
 |[C4062](../error-messages/compiler-warnings/compiler-warning-level-4-c4062.md) (level 4)|enumerator '*identifier*' in a switch of enum '*enumeration*' is not handled|
-|C4191 (level 3)|'*operator*': unsafe conversion from '*type_of_expression*' to '*type_required*'|
+| [C4165](../error-messages/compiler-warnings/compiler-warning-level-1-c4165.md) (level 1) | 'HRESULT' is being converted to 'bool'; are you sure this is what you want? |
+| [C4191](../error-messages/compiler-warnings/compiler-warning-level-3-c4191.md) (level 3)|'*operator*': unsafe conversion from '*type_of_expression*' to '*type_required*'|
 |[C4242](../error-messages/compiler-warnings/compiler-warning-level-4-c4242.md) (level 4)|'*identifier*': conversion from '*type1*' to '*type2*', possible loss of data|
 |[C4254](../error-messages/compiler-warnings/compiler-warning-level-4-c4254.md) (level 4)|'*operator*': conversion from '*type1*' to '*type2*', possible loss of data|
 |[C4255](../error-messages/compiler-warnings/compiler-warning-level-4-c4255.md) (level 4)|'*function*': no function prototype given: converting '()' to '(void)'|
@@ -89,6 +91,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |[C4626](../error-messages/compiler-warnings/compiler-warning-level-4-c4626.md) (level 4)|'derived class': assignment operator could not be generated because a base class assignment operator is inaccessible|
 |[C4628](../error-messages/compiler-warnings/compiler-warning-level-1-c4628.md) (level 1)|digraphs not supported with -Ze. Character sequence '*digraph*' not interpreted as alternate token for '*char*'|
 |[C4640](../error-messages/compiler-warnings/compiler-warning-level-3-c4640.md) (level 3)|'*instance*': construction of local static object is not thread-safe|
+| C4643 (level 4) | Forward declaring '*identifier*' in namespace std is not permitted by the C++ Standard. <sup>15.8</sup> |
 |C4647 (level 3)|behavior change: __is_pod(*type*) has different value in previous versions|
 |C4654 (level 4)|Code placed before include of precompiled header line will be ignored. Add code to precompiled header. <sup>14.1</sup>|
 |[C4668](../error-messages/compiler-warnings/compiler-warning-level-4-c4668.md) (level 4)|'*symbol*' is not defined as a preprocessor macro, replacing with '0' for '*directives*'|
@@ -104,7 +107,9 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C4774 (level 4)|'*string*' : format string expected in argument *number* is not a string literal|
 |C4777 (level 4)|'*function*' : format string '*string*' requires an argument of type '*type1*', but variadic argument *number* has type '*type2*'|
 |C4786 (level 3)|'*symbol*' : object name was truncated to '*number*' characters in the debug information|
+| [C4800](../error-messages/compiler-warnings/compiler-warning-level-3-c4800.md) (level 4) | Implicit conversion from '*type*' to bool. Possible information loss <sup>16.0</sup> |
 |[C4820](../error-messages/compiler-warnings/compiler-warning-level-4-c4820.md) (level 4)|'*bytes*' bytes padding added after construct '*member_name*'|
+| [C4822](../error-messages/compiler-warnings/compiler-warning-level-1-c4822.md) (level 1) | '*member*': local class member function does not have a body |
 |C4826 (level 2)|Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior.|
 |C4837 (level 4)|trigraph detected: '??*character*' replaced by '*character*'|
 |C4841 (level 4)|non-standard extension used: compound member designator used in offsetof|
@@ -142,6 +147,10 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 <sup>15.3</sup> This warning is available starting in Visual Studio 2017 version 15.3.<br/>
 <sup>15.5</sup> This warning is available starting in Visual Studio 2017 version 15.5.<br/>
 <sup>15.7</sup> This warning is available starting in Visual Studio 2017 version 15.7.<br/>
+<sup>15.8</sup> This warning is available starting in Visual Studio 2017 version 15.8.<br/>
+::: moniker range=">= vs-2019"
+<sup>16.0</sup> This warning is available starting in Visual Studio 2019 RTM.<br/>
+::: moniker-end
 <sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.<br/>
 
 ## Warnings off by default in earlier versions

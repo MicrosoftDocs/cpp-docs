@@ -5,7 +5,7 @@ helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting
 ---
 # Compiler Warnings by compiler version
 
-The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible.
+The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This option is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible.
 
 These versions of the compiler introduced new warnings:
 
@@ -28,10 +28,26 @@ These versions of the compiler introduced new warnings:
 | Visual C++ 2017 version 15.6 | 19.13.26128.0 |
 | Visual C++ 2017 version 15.7 | 19.14.26428.0 |
 | Visual C++ 2017 version 15.8 | 19.15.26726.0 |
+| Visual C++ 2017 version 15.9 | 19.16.26926.0 |
+| Visual C++ 2019 RTM | 19.20.27004.0 |
 
-You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings which match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
+You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings that match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the __/Wv__ compiler option. The __/Wv__ option can't suppress warnings that are not listed, which predate the specified versions of the compiler.
+
+::: moniker range=">= vs-2019"
+
+## Warnings introduced in Visual C++ 2019 RC (compiler version 19.20.27004.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.15__.
+
+|||
+|-|-|
+C4848 | support for standard attribute 'no\_unique\_address' in C++17 and earlier is a vendor extension
+
+::: moniker-end
+::: moniker range=">= vs-2017"
+
 
 ## Warnings introduced in Visual C++ 2017 version 15.8 (compiler version 19.15.26726.0)
 
@@ -39,7 +55,25 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 |||
 |-|-|
-C5046|'*function*' : Symbol involving type with internal linkage not defined|
+C4643 | Forward declaring '*identifier*' in namespace std is not permitted by the C++ Standard.
+C4644 | usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead
+C4845 | '\_\_declspec(no\_init\_all)' is ignored if '/d1initall\[0\|1\|2\|3]' was not specified on the command line
+C4846 | '*value*' is not a valid argument for '/d1initall': command-line flag ignored
+C4847 | '\_\_declspec(no\_init\_all)' can only be applied to a function, a class type, or a local variable: ignored
+C4866 | compiler may not enforce left-to-right evaluation order for call to '*function*'
+C5046 | '*function*': Symbol involving type with internal linkage not defined
+C5047 | use of nonstandard \_\_if\_exists with modules is not supported
+C5048 | Use of macro '*macroname*' may result in non-deterministic output
+C5049 | '*string*': Embedding a full path may result in machine-dependent output
+C5050 | Possible incompatible environment while importing module '*module_name*': *issue*
+C5100 | \_\_VA\_ARGS\_\_ is reserved for use in variadic macros
+C5101 | use of preprocessor directive in function-like macro argument list is undefined behavior
+C5102 | ignoring invalid command-line macro definition '*value*'
+C5103 | pasting '*token1*' and '*token2*' does not result in a valid preprocessing token
+C5104 | found '*string1*#*string2*' in macro replacement list, did you mean '*string1*""#*string2*'?
+C5105 | macro expansion producing 'defined' has undefined behavior
+C5106 | macro redefined with different parameter names
+C5107 | missing terminating '*char*' character
 
 ## Warnings introduced in Visual C++ 2017 version 15.7 (compiler version 19.14.26428.0)
 
@@ -103,6 +137,8 @@ C4468|'fallthrough': attribute must be followed by a case label or a default lab
 C4698|'*feature*' is for evaluation purposes only and is subject to change or removal in future updates.
 C4839|non-standard use of class '*class*' as an argument to a variadic function
 C4840|non-portable use of class '*class*' as an argument to a variadic function
+
+::: moniker-end
 
 ## Warnings introduced in Visual C++ 2015 Update 3 (compiler version 19.00.24215.1)
 
@@ -375,12 +411,12 @@ C4581|deprecated behavior: '"*name*"' replaced with '*name*' to process attribut
 C4606|#pragma warning: '*number*' ignored; Code Analysis warnings are not associated with warning levels
 C4631|MSXML or XPath unavailable, XML document comments will not be processed. *description*
 C4632|XML document comment: *description* - access denied: *description*
-C4633|XML document comment*description*: error: *description*
-C4634|XML document comment*description*: cannot be applied: *description*
-C4635|XML document comment*description*: badly-formed XML: *description*
-C4636|XML document comment*description*: tag requires non-empty '*description*' attribute.
-C4637|XML document comment*description*: \<include> tag discarded. *description*
-C4638|XML document comment*description*: reference to unknown symbol '*description*'.
+C4633|XML document comment *description*: error: *description*
+C4634|XML document comment *description*: cannot be applied: *description*
+C4635|XML document comment *description*: badly-formed XML: *description*
+C4636|XML document comment *description*: tag requires non-empty '*description*' attribute.
+C4637|XML document comment *description*: \<include> tag discarded. *description*
+C4638|XML document comment *description*: reference to unknown symbol '*description*'.
 C4639|MSXML error, XML document comments will not be processed. *description*
 C4641|XML document comment has an ambiguous cross reference:
 C4678|base class '*declaration*' is less accessible than '*name*'
