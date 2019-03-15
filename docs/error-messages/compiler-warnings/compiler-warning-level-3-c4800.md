@@ -15,7 +15,7 @@ Visual Studio 2019 and later:
 C4800 is a level 3 warning in Visual Studio 2015 and earlier:
 > '*type*' : forcing value to bool 'true' or 'false' (performance warning)
 
-This warning is generated when a value that is not `bool` is implicitly converted into type `bool`. Typically, this message is caused by assigning `int` variables to `bool` variables where the `int` variable contains only values **true** and **false**, and could be redeclared as type `bool`. If you cannot rewrite the expression to use type `bool`, then you can add "`!=0`" to the expression, which gives the expression type `bool`. Casting the expression to type `bool` does not disable the warning, which is by design.
+This warning is generated when a value is implicitly converted into type `bool`. Typically, this message is caused by assigning `int` variables to `bool` variables where the `int` variable contains only values **true** and **false**, and could be redeclared as type `bool`. If you can't rewrite the expression to use type `bool`, then you can add "`!=0`" to the expression, which gives the expression type `bool`. Casting the expression to type `bool` doesn't disable the warning, which is by design.
 
 ::: moniker range=">= vs-2017"
 This warning is not emitted in Visual Studio 2017.
