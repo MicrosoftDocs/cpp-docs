@@ -5,7 +5,7 @@ helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting
 ---
 # Compiler Warnings by compiler version
 
-The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible.
+The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This option is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible.
 
 These versions of the compiler introduced new warnings:
 
@@ -33,7 +33,7 @@ These versions of the compiler introduced new warnings:
 | Visual C++ 2019 RC | 19.20.27004.0 |
 ::: moniker-end
 
-You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings which match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
+You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings that match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the __/Wv__ compiler option. The __/Wv__ option can't suppress warnings that are not listed, which predate the specified versions of the compiler.
 
@@ -61,7 +61,7 @@ C4845 | '\_\_declspec(no\_init\_all)' is ignored if '/d1initall\[0\|1\|2\|3]' wa
 C4846 | '*value*' is not a valid argument for '/d1initall': command-line flag ignored
 C4847 | '\_\_declspec(no\_init\_all)' can only be applied to a function, a class type, or a local variable: ignored
 C4866 | compiler may not enforce left-to-right evaluation order for call to '*function*'
-C5046 | '*function*' : Symbol involving type with internal linkage not defined
+C5046 | '*function*': Symbol involving type with internal linkage not defined
 C5047 | use of nonstandard \_\_if\_exists with modules is not supported
 C5048 | Use of macro '*macroname*' may result in non-deterministic output
 C5049 | '*string*': Embedding a full path may result in machine-dependent output
@@ -409,12 +409,12 @@ C4581|deprecated behavior: '"*name*"' replaced with '*name*' to process attribut
 C4606|#pragma warning: '*number*' ignored; Code Analysis warnings are not associated with warning levels
 C4631|MSXML or XPath unavailable, XML document comments will not be processed. *description*
 C4632|XML document comment: *description* - access denied: *description*
-C4633|XML document comment*description*: error: *description*
-C4634|XML document comment*description*: cannot be applied: *description*
-C4635|XML document comment*description*: badly-formed XML: *description*
-C4636|XML document comment*description*: tag requires non-empty '*description*' attribute.
-C4637|XML document comment*description*: \<include> tag discarded. *description*
-C4638|XML document comment*description*: reference to unknown symbol '*description*'.
+C4633|XML document comment *description*: error: *description*
+C4634|XML document comment *description*: cannot be applied: *description*
+C4635|XML document comment *description*: badly-formed XML: *description*
+C4636|XML document comment *description*: tag requires non-empty '*description*' attribute.
+C4637|XML document comment *description*: \<include> tag discarded. *description*
+C4638|XML document comment *description*: reference to unknown symbol '*description*'.
 C4639|MSXML error, XML document comments will not be processed. *description*
 C4641|XML document comment has an ambiguous cross reference:
 C4678|base class '*declaration*' is less accessible than '*name*'

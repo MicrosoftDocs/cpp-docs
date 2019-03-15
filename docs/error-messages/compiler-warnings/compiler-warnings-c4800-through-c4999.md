@@ -14,10 +14,7 @@ The articles in this section of the documentation explain a subset of the warnin
 
 |Warning|Message|
 |-------------|-------------|
-::: moniker range="< vs-2019"
-|[Compiler Warning (level 3) C4800](compiler-warning-level-3-c4800.md)|'*type*': forcing value to bool 'true' or 'false' (performance warning)| ::: moniker-end
-::: moniker range=">= vs-2019"
-|[Compiler Warning (level 4) C4800](compiler-warning-level-3-c4800.md)| Implicit conversion from '*type*' to bool. Possible information loss | ::: moniker-end
+|[Compiler Warning (level 4) C4800](compiler-warning-level-3-c4800.md)| Implicit conversion from '*type*' to bool. Possible information loss |
 |[Compiler Warning (level 1) C4803](compiler-warning-level-1-c4803.md)|'*method*': the raise method has a different storage class from that of the event, '*event*'|
 |[Compiler Warning (level 1) C4804](compiler-warning-level-1-c4804.md)|'*operation*': unsafe use of type 'bool' in operation|
 |[Compiler Warning (level 1) C4805](compiler-warning-level-1-c4805.md)|'*operation*': unsafe mix of type '*type1*' and type '*type2*' in operation|
