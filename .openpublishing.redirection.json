@@ -7595,6 +7595,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/standard-library/system-error-typedefs.md",
+            "redirect_url": "/cpp/standard-library/system-error-enums#errc",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/text/index.md",
             "redirect_url": "/cpp/text/text-and-strings-in-visual-cpp",
             "redirect_document_id": false
