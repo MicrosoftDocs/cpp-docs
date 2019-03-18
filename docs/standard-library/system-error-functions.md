@@ -1,6 +1,6 @@
 ---
 title: "&lt;system_error&gt; functions"
-ms.date: "11/04/2016"
+ms.date: "03/15/2019"
 f1_keywords: ["system_error/std::generic_category", "system_error/std::make_error_code", "system_error/std::make_error_condition", "system_error/std::system_category"]
 ms.assetid: 57d6f15f-f0b7-4e2f-80fe-31d3c320ee33
 helpviewer_keywords: ["std::generic_category", "std::make_error_code", "std::make_error_condition", "std::system_category"]
@@ -10,14 +10,14 @@ helpviewer_keywords: ["std::generic_category", "std::make_error_code", "std::mak
 ||||
 |-|-|-|
 |[generic_category](#generic_category)|[make_error_code](#make_error_code)|[make_error_condition](#make_error_condition)|
-|[system_category](#system_category)|
+|[system_category](#system_category)|||
 
-## <a name="generic_category"></a>  generic_category
+## <a name="generic_category"></a> generic_category
 
 Represents the category for generic errors.
 
 ```cpp
-extern const error_category& generic_category();
+const error_category& generic_category() noexcept;
 ```
 
 ### Remarks
@@ -29,14 +29,13 @@ The `generic_category` object is an implementation of [error_category](../standa
 Creates an error code object.
 
 ```cpp
-error_code make_error_code(generic_errno _Errno);
+error_code make_error_code(std::errc error) noexcept;
 ```
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Errno*|The enumeration value to store in the error code object.|
+*error*\
+The `std::errc` enumeration value to store in the error code object.
 
 ### Return Value
 
@@ -49,14 +48,13 @@ The error code object.
 Creates an error condition object.
 
 ```cpp
-error_condition make_error_condition(generic_errno _Errno);
+error_condition make_error_condition(std::errc error) noexcept;
 ```
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Errno*|The enumeration value to store in the error condition object.|
+*error*\
+The `std::errc` enumeration value to store in the error code object.
 
 ### Return Value
 
@@ -69,7 +67,7 @@ The error condition object.
 Represents the category for errors caused by low-level system overflows.
 
 ```cpp
-extern const error_category& system_category();
+const error_category& system_category() noexcept;
 ```
 
 ### Remarks
@@ -78,4 +76,4 @@ The `system_category` object is an implementation of [error_category](../standar
 
 ## See also
 
-[<system_error>](../standard-library/system-error.md)<br/>
+[\<system_error>](../standard-library/system-error.md)<br/>

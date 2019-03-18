@@ -405,7 +405,6 @@
 #### [<system_error> functions](system-error-functions.md)
 #### [<system_error> operators](system-error-operators.md)
 #### [<system_error> enums](system-error-enums.md)
-#### [<system_error> typedefs](system-error-typedefs.md)
 #### [error_category Class](error-category-class.md)
 #### [error_code Class](error-code-class.md)
 #### [error_condition Class](error-condition-class.md)
