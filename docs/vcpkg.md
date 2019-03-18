@@ -3,7 +3,7 @@ title: vcpkg-- A C++ package manager for Windows, Linux and MacOS
 description: vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows.
 author: mikeblome
 ms.author: mblome
-ms.date: "02/22/2019"
+ms.date: "03/18/2019"
 ms.technology: "cpp-ide"
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
 ---
@@ -13,7 +13,7 @@ vcpkg is a command-line package manager that greatly simplifies the acquisition 
 
 ## Simple yet flexible
 
-With a single command, you can download sources and build a library. vcpkg is itself an open-source project, available on GitHub. You can customize your private clone(s) in any way you like. For example, you can specify different libraries, or different versions of libraries than what are found in the public catalog. You can have multiple clones of vcpkg on a single machine, each one producing custom sets of libraries and/or compilation switches, etc. Each clone is a self-contained, x-copyable environment with its own copy of vcpkg.exe that operates only on its own hierarchy. vcpkg is not added to any environment variables, and has no dependency on the Windows Registry or Visual Studio.
+With a single command, you can download sources and build a library. vcpkg is itself an open-source project, available on GitHub. You can customize your private clone(s) in any way you like. For example, you can specify different libraries, or different versions of libraries than what are found in the public catalog. You can have multiple clones of vcpkg on a single machine, each one producing custom sets of libraries and/or compilation switches, etc. Each clone is a self-contained environment with its own copy of vcpkg.exe that operates only on its own hierarchy. vcpkg is not added to any environment variables, and has no dependency on the Windows Registry or Visual Studio.
 
 ## Sources not binaries
 
