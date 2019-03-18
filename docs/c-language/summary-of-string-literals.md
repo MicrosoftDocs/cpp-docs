@@ -6,8 +6,8 @@ ms.assetid: d2693900-f4e2-4820-b7de-085d51827aee
 # Summary of String Literals
 
 *string-literal*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**'** *s-char-sequence*<sub>opt</sub> **'**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**L'** *s-char-sequence*sub>opt</sub> **'**
+&nbsp;&nbsp;&nbsp;&nbsp;**"** *s-char-sequence*<sub>opt</sub> **"**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**L"** *s-char-sequence*sub>opt</sub> **"**
 
 *s-char-sequence*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*s-char*<br/>
