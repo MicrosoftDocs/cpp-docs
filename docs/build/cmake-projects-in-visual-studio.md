@@ -73,7 +73,7 @@ Not everything in the cache is imported.  Properties such as the generator and t
 
 To build a CMake project, you have these choices:
 
-1. Select the target in the **Debug** dropdown and press **F5**, or click the **Run** (green triangle) button. The project automatically builds first, just like a Visual Studio solution.
+1. In the toolbar, find the **Targets** dropdown--it is probably showing "Linux-Debug" by default. Select the desired target and press **F5**, or click the **Run** (green triangle) button on the toolbar. The project automatically builds first, just like a Visual Studio solution.
 
 1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
 
