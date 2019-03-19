@@ -73,7 +73,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **Floating point conformance**
 
-   Many changes to the math library have been made to improve conformance to the IEEE-754 and C11 Annex F specifications with respect to special case inputs such as NaNs and infinities. For example, quiet NaN inputs, which were often treated as errors in previous versions of the library, are no longer treated as errors. See [IEEE 754 Standard](http://grouper.ieee.org/groups/754) and Annex F of the [C11 Standard](http://www.iso-9899.info/wiki/The_Standard).
+   Many changes to the math library have been made to improve conformance to the IEEE-754 and C11 Annex F specifications with respect to special case inputs such as NaNs and infinities. For example, quiet NaN inputs, which were often treated as errors in previous versions of the library, are no longer treated as errors. See [IEEE 754 Standard](https://standards.ieee.org/standard/754-2008.html) and Annex F of the [C11 Standard](http://www.iso-9899.info/wiki/The_Standard).
 
    These changes won't cause compile-time errors, but might cause programs to behave differently and more correctly according to the standard.
 
