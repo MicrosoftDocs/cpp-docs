@@ -21,12 +21,12 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler Warning (level 1) C4005](../../error-messages/compiler-warnings/compiler-warning-level-1-c4005.md)|'identifier': macro redefinition|
 |[Compiler warning (level 1) C4006](compiler-warning-level-1-c4006.md)|#undef expected an identifier|
 |[Compiler Warning (level 2) C4007](../../error-messages/compiler-warnings/compiler-warning-level-2-c4007.md)|'function': must be 'attribute'|
-|Compiler warning (level 3) C4008|'function': 'atribute' attribute ignored|
+|[Compiler warning (level 3) C4008](compiler-warning-levels-2-and-3-c4008.md)|'function': 'attribute' attribute ignored|
 |[Compiler Warning (level 1) C4010](../../error-messages/compiler-warnings/compiler-warning-level-1-c4010.md)|single-line comment contains line-continuation character|
 |[Compiler Warning (level 3) C4013](../../error-messages/compiler-warnings/compiler-warning-level-3-c4013.md)|'function' undefined; assuming extern returning int|
 |[Compiler Warning (level 1) C4015](../../error-messages/compiler-warnings/compiler-warning-level-1-c4015.md)|'identifer': type of bit field must be integral|
 |[Compiler Warning (level 3) C4018](../../error-messages/compiler-warnings/compiler-warning-level-3-c4018.md)|'expression': signed/unsigned mismatch|
-|Compiler warning (level 4) C4019|empty statement at global scope|
+|[Compiler warning (level 4) C4019](compiler-warning-level-4-c4019.md)|empty statement at global scope|
 |[Compiler Warning (level 1) C4020](../../error-messages/compiler-warnings/compiler-warning-level-1-c4020.md)|'function': too many actual parameters|
 |[Compiler Warning (level 1) C4022](../../error-messages/compiler-warnings/compiler-warning-level-1-c4022.md)|'function': pointer mismatch for actual parameter 'parameter number'|
 |Compiler warning (level 1) C4023|'function': based pointer passed to unprototyped function: parameter 'parameter_number'|
@@ -51,7 +51,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler Warning (level 1) C4048](../../error-messages/compiler-warnings/compiler-warning-level-1-c4048.md)|different array subscripts: 'identifier1' and 'identifier2'|
 |[Compiler Warning (level 1) C4049](../../error-messages/compiler-warnings/compiler-warning-level-1-c4049.md)|compiler limit: terminating line number emission|
 |Compiler warning (level 1) C4051|type conversion; possible loss of data|
-|Compiler warning (level 4) C4052|function declarations different; one contains variable arguments|
+|[Compiler warning (level 4) C4052](compiler-warning-level-1-c4052.md)|function declarations different; one contains variable arguments|
 |[Compiler warning (level 4) C4053](compiler-warning-level-4-c4053.md)|one void operand for '?:'|
 |[Compiler warning (level 1) C4055](compiler-warning-level-1-c4055.md)|'conversion' : from data pointer '*type1*' to function pointer '*type2*'|
 |[Compiler Warning (level 2) C4056](../../error-messages/compiler-warnings/compiler-warning-level-2-c4056.md)|overflow in floating-point constant arithmetic|
@@ -130,7 +130,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1) C4158](compiler-warning-level-1-c4158.md)|assuming #pragma pointers_to_members(full_generality, 'inheritance_type')|
 |[Compiler Warning (level 3) C4159](../../error-messages/compiler-warnings/compiler-warning-level-3-c4159.md)|#pragma 'pragma'(pop,...): has popped previously pushed identifier 'identifier'|
 |[Compiler warning (level 1) C4160](compiler-warning-level-1-c4160.md)|#pragma 'pragma'(pop,...): did not find previously pushed identifier 'identifier'|
-|Compiler warning (level 3) C4161|#pragma 'pragma'(pop...): more pops than pushes|
+|[Compiler warning (level 3) C4161](compiler-warning-level-3-c4161.md)|#pragma 'pragma'(pop...): more pops than pushes|
 |[Compiler Warning (level 1) C4162](../../error-messages/compiler-warnings/compiler-warning-level-1-c4162.md)|'identifier': no function with C linkage found|
 |[Compiler warning (level 1) C4163](compiler-warning-level-1-c4163.md)|'identifier': not available as an intrinsic function|
 |[Compiler warning (level 1) C4164](compiler-warning-level-1-c4164.md)|'function': intrinsic function not declared|
