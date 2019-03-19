@@ -26,12 +26,6 @@ The [UNIX Custom Application Migration Guide](https://technet.microsoft.com/libr
 
 The [Unix Migration Project Guide](https://technet.microsoft.com/library/bb656287.aspx) supplements the UNIX Custom Application Migration Guide by providing high-level help on migrating substantial projects from UNIX to Win32. The Guide provides advice on issues to consider at each stage of project migration.
 
-### Microsoft Windows Services for UNIX (SFU)
-
-Microsoft Windows Services for UNIX (SFU) provides a full range of cross-platform services for integrating Windows into existing UNIX-based environments. Services for UNIX provides file sharing, remote access and administration, password synchronization, common directory management, a common set of utilities, and a shell.
-
-[Windows Services for UNIX](http://www.microsoft.com/downloads/details.aspx?FamilyID=896c9688-601b-44f1-81a4-02878ff11778&displaylang=en)
-
 ### InteropSystems.com
 
 [http://www.interopsystems.com/](http://www.interopsystems.com/)
