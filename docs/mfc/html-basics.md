@@ -100,7 +100,7 @@ Life is good.
 
 For a complete description of tags, attributes, and extensions, see the Hypertext Markup Language (HTML) specification:
 
-[http://www.w3.org/pub/WWW/MarkUp/](http://www.w3.org/pub/www/markup/)
+[Latest published version of HTML](https://www.w3.org/TR/html/) at W3C.org.
 
 ## See also
 

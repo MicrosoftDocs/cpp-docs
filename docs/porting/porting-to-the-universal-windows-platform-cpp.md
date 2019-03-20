@@ -68,7 +68,7 @@ If you have a DLL or a Windows Runtime Component that already works with Windows
 
 ### To port a Windows 8.1 Runtime Component to the UWP
 
-1. In the **New Project** dialog in Visual Studio 2017, locate the **Windows Universal** node. If you don't see this node, install the [Tools for Windows 10](http://go.microsoft.com/fwlink/p/?LinkID=617903) first. Choose the **Windows Runtime Component** template, give a name for your component, and choose the **OK** button. The component name will be used as the namespace name, so you might want to use the same name as your old projects' namespace. This requires that you create the project in a different folder from the old one. If you choose a different name, you can update the namespace name in the generated code files.
+1. In the **New Project** dialog in Visual Studio 2017, locate the **Windows Universal** node. If you don't see this node, install the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) first. Choose the **Windows Runtime Component** template, give a name for your component, and choose the **OK** button. The component name will be used as the namespace name, so you might want to use the same name as your old projects' namespace. This requires that you create the project in a different folder from the old one. If you choose a different name, you can update the namespace name in the generated code files.
 
 1. Close the project.
 
