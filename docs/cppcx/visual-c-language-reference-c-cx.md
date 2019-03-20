@@ -26,7 +26,7 @@ By using C++/CX, you can create:
 |-|-|
 |[Quick Reference](../cppcx/quick-reference-c-cx.md)|Table of keywords and operators for C++/CX.|
 |[Type System](../cppcx/type-system-c-cx.md)|Describes basic C++/CX types and programming constructs, and how to utilize C++/CX to consume and create Windows Runtime types.|
-|[Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)|Discusses how to use the IDE to build apps and link to static libraries aned DLLs.|
+|[Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)|Discusses how to use the IDE to build apps and link to static libraries and DLLs.|
 |[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)|Discusses how components that are written by using C++/CX can be used with components that are written in JavaScript, any managed language, or the Windows Runtime C++ Template Library.|
 |[Threading and Marshaling](../cppcx/threading-and-marshaling-c-cx.md)|Discusses how to specify the threading and marshaling behavior of components that you create.|
 |[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)|Reference documentation for the default namespace, the Platform namespace, Platform::Collections, and related namespaces.|

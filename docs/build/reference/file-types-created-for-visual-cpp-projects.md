@@ -37,7 +37,7 @@ The following table shows common files in a Visual Studio project, and identifie
 |.atp|Project|Application template project file.|
 |.bmp, .dib, .gif, .jpg, .jpe, .png|Resource|General image files.|
 |.bsc|Compiling|The browser code file.|
-|.cpp; .c|Source|Main source code files for your application.|
+|.cpp, .c|Source|Main source code files for your application.|
 |.cur|Resource|Cursor bitmap graphic file.|
 |.dbp|Project|Database project file.|
 |.disco|Source|The dynamic discovery document file. Handles XML Web service discovery.|

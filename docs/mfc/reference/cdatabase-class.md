@@ -140,7 +140,7 @@ void Cancel();
 
 ### Remarks
 
-Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function [SQLSetConnectOption](/sql/odbc/reference/syntax/sqlsetconnectoption-function). For more information, see [Asynchronous Execution](/sql/odbc/reference/develop-app/asynchronous-execution).
+Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asynchronous operation, you must directly call the ODBC API function [SQLSetConnectOption](/sql/odbc/reference/syntax/sqlsetconnectoption-function). For more information, see [Asynchronous Execution](/sql/odbc/reference/develop-app/asynchronous-execution).
 
 ##  <a name="cantransact"></a>  CDatabase::CanTransact
 

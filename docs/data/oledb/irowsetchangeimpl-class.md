@@ -56,7 +56,7 @@ The storage unit for all row handles held by the provider.
 
 |||
 |-|-|
-|[FlushData](#flushdata)|Overidden by provider to commit data to its store.|
+|[FlushData](#flushdata)|Overridden by provider to commit data to its store.|
 
 ## Remarks
 
@@ -127,7 +127,7 @@ See [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::FlushData
 
-Overidden by provider to commit data to its store.
+Overridden by provider to commit data to its store.
 
 ### Syntax
 

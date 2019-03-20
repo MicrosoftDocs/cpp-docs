@@ -125,7 +125,7 @@ usage: ninja [options] [targets...]
 |   -n       | dry run (don't run commands but act like they succeeded)|
 |   -v       | show all command lines while building|
 |   -d MODE  | enable debugging (use -d list to list modes)|
-|   -t TOOL  | run a subtool (use -t list to list subtools). terminates toplevel options; further flags are passed to the tool|
+|   -t TOOL  | run a subtool (use -t list to list subtools). terminates top-level options; further flags are passed to the tool|
 |   -w FLAG  | adjust warnings (use -w list to list warnings)|
 
 ## Inherited environments
