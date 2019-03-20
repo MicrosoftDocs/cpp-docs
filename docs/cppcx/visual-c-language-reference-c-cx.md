@@ -18,7 +18,7 @@ By using C++/CX, you can create:
 
 - C++ Windows Runtime components that can be consumed by JavaScript-based Windows apps. For more information, see [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
-- Windows DirectX games and graphics-intensive apps. For more information, see [Create a simple UWP Game with DirectX](/windows/uwp/gaming/tutorial--create-your-first-metro-style-directx-game).
+- Windows DirectX games and graphics-intensive apps. For more information, see [Create a simple UWP Game with DirectX](/windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game).
 
 ## Related articles
 

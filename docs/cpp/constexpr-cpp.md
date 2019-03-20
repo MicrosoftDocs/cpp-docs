@@ -93,7 +93,7 @@ constexpr float exp(float x, int n)
 
 ## extern constexpr
 
-The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler option causes the compiler to apply [external linkage]() to variables declared by using **extern constexpr**. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to **constexpr** variables even if the **extern** keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6. and is off by default. The /permissive- option does not enable /Zc:externConstexpr.
+The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler option causes the compiler to apply [external linkage](../c-language/external-linkage.md) to variables declared by using **extern constexpr**. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to **constexpr** variables even if the **extern** keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6. and is off by default. The /permissive- option does not enable /Zc:externConstexpr.
 
 ## Example
 

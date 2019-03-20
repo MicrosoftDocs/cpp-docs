@@ -22,7 +22,7 @@ The **String Editor** enables you:
 
 ### To find a string resource in the string table
 
-1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the string table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Go to menu **Edit** > **Find and Replace** and choose **Find**.
 
@@ -45,7 +45,7 @@ The **String Editor** makes sure you don't use an ID that's already in use. If y
 
 #### To add a string table entry
 
-1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the string table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Right-click within the string table and choose **New String**.
 
@@ -90,7 +90,7 @@ You can use in-place editing to change the **ID**, **Value**, and **Caption** pr
 
 #### To change a string or its identifier
 
-1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the string table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Select the string you want to edit and double-click the **ID**, **Value**, or **Caption** column, then you can:
 
@@ -102,7 +102,7 @@ You can use in-place editing to change the **ID**, **Value**, and **Caption** pr
 
 #### To change the caption property of multiple string resources
 
-1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the string table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Select the strings you want to change by holding down the **Ctrl** key as you select each one.
 
@@ -112,7 +112,7 @@ You can use in-place editing to change the **ID**, **Value**, and **Caption** pr
 
 ### To add formatting or special characters to a string resource
 
-1. Open the string table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the string table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Select the string you want to modify.
 

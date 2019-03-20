@@ -35,7 +35,7 @@ You can sort the information sequence of the string block by selecting either th
 
 ### To add version information for another language (new version info block)
 
-1. Open a version information resource by double-clicking it in [Resource View](../windows/resource-view-window.md).
+1. Open a version information resource by double-clicking it in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Right-click within the version information table and choose **New Version Info Block**.
 
@@ -45,7 +45,7 @@ You can sort the information sequence of the string block by selecting either th
 
 ### To delete a version information block
 
-1. Open the version information resource by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+1. Open the version information resource by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Right-click the block header you wish to delete and choose **Delete Version Info Block**.
 

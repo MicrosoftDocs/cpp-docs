@@ -90,7 +90,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### Parameters
 
-See [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::InsertRow
 
