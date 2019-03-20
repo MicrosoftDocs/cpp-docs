@@ -22,16 +22,6 @@ The Visual C++ stringizing operator does not behave correctly when it is used wi
 
 The following example shows a macro definition that includes the stringizing operator and a main function that invokes the macro:
 
-Such invocations would be expanded during preprocessing, producing the following code:
-
-```cpp
-int main() {
-   printf_s( "In quotes in the printf function call\n" "\n" );
-   printf_s( "\"In quotes when printed to the screen\"\n" "\n" );
-   printf_s( "\"This: \\\" prints an escaped double quote\"" "\n" );
-}
-```
-
 ```cpp
 // stringizer.cpp
 #include <stdio.h>
