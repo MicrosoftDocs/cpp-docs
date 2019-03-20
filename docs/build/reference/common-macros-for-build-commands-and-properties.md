@@ -13,7 +13,7 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 
 To display all of the currently available macros, in the **Property Pages** dialog, under **VC++ Directories**, choose the drop-down arrow at the end of a property row. Click on **Edit** and then in the edit dialog box, choose the **Macros** button. The current set of properties and macros visible to Visual Studio is listed along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [C++ project property page reference](property-pages-visual-cpp.md).
 
-![VC++ macros button](media/vcppdir_libdir_macros.png "Macros menu")
+![VC++ macros button](../media/vcppdir_libdir_macros.png "Macros menu")
 
 ## List of common macros
 
