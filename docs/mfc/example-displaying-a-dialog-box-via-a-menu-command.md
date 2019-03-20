@@ -37,16 +37,16 @@ The procedures use the following names and values:
 
 1. Add the following include statement to CDisplayDialogDoc.cpp (or CDisplayDialogApp.cpp) after the existing include statements:
 
-```cpp
-#include "TestDialog.h"
-```
+   ```cpp
+   #include "TestDialog.h"
+   ```
 
 1. Add the following code to `OnViewTest` to implement the function:
 
-```cpp
-CTestDialog testdlg;
-testdlg.DoModal();  
-```
+   ```cpp
+   CTestDialog testdlg;
+   testdlg.DoModal();  
+   ```
 
 ### To display a modeless dialog box
 
@@ -56,46 +56,46 @@ testdlg.DoModal();
 
    - Declare the dialog box class preceding the first class declaration:
 
-```cpp
-class CTestDialog;
-```
+   ```cpp
+   class CTestDialog;
+   ```
 
    - Declare a pointer to the dialog box after the Attributes public section:
 
-```cpp
-CTestDialog* m_pTestDlg;
-```
+   ```cpp
+   CTestDialog* m_pTestDlg;
+   ```
 
 1. Edit DisplayDialogView.cpp:
 
    - Add the following include statement after the existing include statements:
 
-```cpp
-#include "TestDialog.h"
-```
+   ```cpp
+   #include "TestDialog.h"
+   ```
 
    - Add the following code to the constructor:
 
-```cpp
-m_pTestDlg = NULL;
-```
+   ```cpp
+   m_pTestDlg = NULL;
+   ```
 
    - Add the following code to the destructor:
 
-```cpp
-delete m_pTestDlg;
-```
+   ```cpp
+   delete m_pTestDlg;
+   ```
 
    - Add the following code to `OnViewTest` to implement the function:
 
-```cpp
-if (NULL == m_pTestDlg)
-{
-   m_pTestDlg = new CTestDialog(this);
-   m_pTestDlg->Create(CTestDialog::IDD, this);
-}
-m_pTestDlg->ShowWindow(SW_SHOW); 
-```
+   ```cpp
+   if (NULL == m_pTestDlg)
+   {
+      m_pTestDlg = new CTestDialog(this);
+      m_pTestDlg->Create(CTestDialog::IDD, this);
+   }
+   m_pTestDlg->ShowWindow(SW_SHOW); 
+   ```
 
 ## See also
 
