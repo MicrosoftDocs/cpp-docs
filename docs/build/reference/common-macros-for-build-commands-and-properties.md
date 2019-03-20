@@ -1,17 +1,19 @@
 ---
-title: "Common macros for build commands and properties"
+title: "Common macros for MSBuild commands and properties"
 ms.date: "03/20/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles", "VC.Project.VCCLCompilerTool.XMLDocumentationFileName"]
 helpviewer_keywords: ["$(FrameworkSDKDir) macro", "ProjectName macro $(ProjectName)", "DevEnvDir macro $(DevEnvDir)", "$(DevEnvDir) macro", "TargetPath macro $(TargetPath)", "VSInstallDir macro $(VSInstallDir)", "$(InputFileName) macro", "$(SolutionFileName) macro", "macros [C++], build macros", "InputFileName macro $(InputFileName)", "$(VCInstallDir) macro", "$(IntDir) macro", "$(ConfigurationName) macro", "SolutionDir macro $(SolutionDir)", "$(TargetPath) macro", "$(Inherit) macro", "$(SolutionPath) macro", "WebDeployRoot macro $(WebDeployRoot)", "WebDeployPath macro $(WebDeployPath)", "StopEvaluating macro $(StopEvaluating)", "$(RootNamespace) macro", "$(WebDeployRoot) macro", "ProjectPath macro $(ProjectPath)", "$(ProjectPath) macro", "$(InputDir) macro", "SolutionName macro $(SolutionName)", "ProjectExt macro $(ProjectExt)", "$(TargetExt) macro", "$(ProjectFileName) macro", "TargetName macro $(TargetName)", "$(References) macro", "References macro $(References)", "TargetExt macro $(TargetExt)", "ProjectDir macro $(ProjectDir)", "$(TargetDir) macro", "SolutionExt macro $(SolutionExt)", "$(SolutionDir) macro", "ProjectFileName macro $(ProjectFileName)", "VCInstallDir macro $(VCInstallDir)", "$(InputExt) macro", "$(TargetFileName) macro", "$(SolutionExt) macro", "PlatformName macro $(PlatformName)", "IntDir macro $(IntDir)", "$(FrameworkVersion) macro", "$(ProjectDir) macro", "build macros [C++]", "InputPath macro $(InputPath)", "$(VSInstallDir) macro", "$(WebDeployPath) macro", "TargetFileName macro $(TargetFileName)", "NoInherit macro $(NoInherit)", "ConfigurationName macro $(ConfigurationName)", "$(ProjectExt) macro", "TargetDir macro $(TargetDir)", "InputName macro $(InputName)", "$(ProjectName) macro", "FrameworkSDKDir macro $(FrameworkSDKDir)", "$(ParentName) macro", "InputExt macro $(InputExt)", "$(SafeRootNamespace) macro", "InputDir macro $(InputDir)", "$(FxCopDir) macro", "$(RemoteMachine) macro", "Inherit macro $(Inherit)", "FrameworkVersion macro $(FrameworkVersion)", "$(StopEvaluating) macro", "$(OutDir) macro", "FrameworkDir macro $(FrameworkDir)", "SolutionFileName macro $(SolutionFileName)", "$(NoInherit) macro", "RemoteMachine macro $(RemoteMachine)", "properties [C++], build property macros", "$(TargetName) macro", "$(SolutionName) macro", "$(InputPath) macro", "ParentName macro $(ParentName)", "OutDir macro $(OutDir)", "SafeRootNamespace macro $(SafeRootNamespace)", "FxCopDir macro $(FxCopDir)", "$(InputName) macro", "RootNamespace macro $(RootNamespace)", "builds [C++], macros", "$(FrameworkDir) macro", "$(PlatformName) macro", "$(PlatformShortName) macro","SolutionPath macro $(SolutionPath)"]
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
 ---
-# Common macros for build commands and properties
+# Common macros for MSBuild commands and properties
 
-Depending on your installation options, Visual Studio can make hundreds of macros available to you. These correspond to the MSBuild properties that are set by default, or in .props or .targets files, or in your project settings. You can use these macros anywhere in a project's **Property Pages** dialog box where strings are accepted. These macros are not case sensitive.
+Depending on your installation options, Visual Studio can make hundreds of macros available to you in a Visual Studio project (based on MSBuild). These correspond to the MSBuild properties that are set by default, or in .props or .targets files, or in your project settings. You can use these macros anywhere in a project's **Property Pages** dialog box where strings are accepted. These macros are not case sensitive.
 
 ## View the current properties and macros
 
 To display all of the currently available macros, in the **Property Pages** dialog, under **VC++ Directories**, choose the drop-down arrow at the end of a property row. Click on **Edit** and then in the edit dialog box, choose the **Macros** button. The current set of properties and macros visible to Visual Studio is listed along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [C++ project property page reference](property-pages-visual-cpp.md).
+
+![VC++ macros button](media/vcppdir_libdir_macros.png "Macros menu")
 
 ## List of common macros
 
