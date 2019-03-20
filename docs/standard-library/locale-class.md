@@ -1,6 +1,6 @@
 ---
 title: "locale Class"
-ms.date: "11/04/2016"
+ms.date: "03/19/2019"
 f1_keywords: ["xlocale/std::locale", "xlocale/std::locale::category", "xlocale/std::locale::combine", "xlocale/std::locale::name", "xlocale/std::locale::classic", "xlocale/std::locale::global", "xlocale/std::locale::operator( )", "xlocale/std::locale::facet", "xlocale/std::locale::id"]
 helpviewer_keywords: ["std::locale [C++]", "std::locale [C++], category", "std::locale [C++], combine", "std::locale [C++], name", "std::locale [C++], classic", "std::locale [C++], global", "std::locale [C++], facet", "std::locale [C++], id"]
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
@@ -380,10 +380,14 @@ The previous locale was: C
 
 The member class provides a unique facet identification used as an index for looking up facets in a locale.
 
-class id { protected:    id();
-   private:    id(const id&)
-   // not defined void operator=(const id&)  // not defined    };
-
+```cpp
+class id 
+{
+   protected:    id();
+   private:      id(const id&)
+   void operator=(const id&)  // not defined    
+};
+```
 ### Remarks
 
 The member class describes the static member object required by each unique locale facet. Note that you cannot copy or assign an object of class `id`.

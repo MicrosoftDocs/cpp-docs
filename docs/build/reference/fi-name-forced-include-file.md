@@ -27,7 +27,7 @@ This option has the same effect as specifying the file with double quotation mar
 
 1. Click the **Advanced** property page.
 
-1. Modify the **Force Includes** property.
+1. Modify the **Forced Include File** property.
 
 ### To set this compiler option programmatically
 
