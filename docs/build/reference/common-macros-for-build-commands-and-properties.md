@@ -11,11 +11,11 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 
 ## View the current properties and macros
 
-To display the currently available macros, on any property page in the **Property Pages** dialog, choose the drop-down arrow at the end of a property row. If **Edit** is available, choose it, and then in the edit dialog box, choose the **Macros** button. The current set of properties and macros visible to Visual Studio is listed along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [C++ project property page reference](property-pages-visual-cpp.md).
+To display all of the the currently available macros, in the **Property Pages** dialog, under **VC++ Directories**, choose the drop-down arrow at the end of a property row. Click on **Edit** and then in the edit dialog box, choose the **Macros** button. The current set of properties and macros visible to Visual Studio is listed along with the current value for each. For more information, see the **Specifying User-Defined Values** section of [C++ project property page reference](property-pages-visual-cpp.md).
 
 ## List of common macros
 
-This table describes a commonly used subset of the available macros. This list is far from exhaustive. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see [MSBuild Properties](/visualstudio/msbuild/msbuild-properties).
+This table describes a commonly used subset of the available macros; there are many more not listed here. Go to the **Macros** dialog as to see all of the properties and their current values in your project. For details on how MSBuild property definitions are created and used as macros in .props, .targets, and .vcxproj files, see [MSBuild Properties](/visualstudio/msbuild/msbuild-properties).
 
 |Macro|Description|
 |-----------|-----------------|
@@ -28,6 +28,7 @@ This table describes a commonly used subset of the available macros. This list i
 |**$(IntDir)**|Path to the directory specified for intermediate files. If this is a relative path, intermediate files go to this path appended to the project directory. This path should have a trailing slash. This resolves to the value for the **Intermediate Directory** property. Do not use **$(OutDir)** to define this property.|
 |**$(OutDir)**|Path to the output file directory. If this is a  relative path, output files go to this path appended to the project directory. This path should have a trailing slash. This resolves to the value for the **Output Directory** property. Do not use **$(IntDir)** to define this property.|
 |**$(Platform)**|The name of current project platform, for example, "Win32".|
+|**$(PlatformShortName)**|The short name of current architecture, for example, "x86" or "x64".|
 |**$(ProjectDir)**|The directory of the project (defined as drive + path); includes the trailing backslash '\\'.|
 |**$(ProjectExt)**|The file extension of the project. It includes the '.' before the file extension.|
 |**$(ProjectFileName)**|The file name of the project (defined as base name + file extension).|
