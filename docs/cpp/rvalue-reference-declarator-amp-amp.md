@@ -212,7 +212,7 @@ void g(MemoryBlock&&)
 MemoryBlock&& f(MemoryBlock&& block)
 {
    g(block);
-   return block;
+   return move(block);
 }
 
 int main()
