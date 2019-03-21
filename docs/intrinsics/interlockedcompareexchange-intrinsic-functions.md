@@ -154,7 +154,7 @@ The return value is the initial value of the `Destination` pointer.
 
 `_InterlockedCompareExchange` performs an atomic comparison of the `Destination` value with the `Comparand` value. If the `Destination` value is equal to the `Comparand` value, the `Exchange` value is stored in the address specified by `Destination`. Otherwise, no operation is performed.
 
-`_InterlockedCompareExchange` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedCompareExchange](/windows/desktop/api/winbase/nf-winbase-interlockedcompareexchange) function.
+`_InterlockedCompareExchange` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedCompareExchange](/windows/desktop/api/winnt/nf-winnt-interlockedcompareexchange) function.
 
 There are several variations on `_InterlockedCompareExchange` that vary based on the data types they involve and whether processor-specific acquire or release semantics is used.
 

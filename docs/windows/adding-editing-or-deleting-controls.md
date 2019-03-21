@@ -108,7 +108,7 @@ After adding a common control or rich edit control to a dialog box, it won't app
 
 1. Create a Win32 project, modifying the application settings so you create a Windows application (not a console app).
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), double-click on the *.rc* file.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), double-click on the *.rc* file.
 
 1. Under the dialog option, double-click the **About** box.
 

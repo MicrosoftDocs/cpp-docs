@@ -8,7 +8,7 @@ ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
 
 Virtually all database products, SQL and NoSQL, provide an interface for native C++ applications. The industry standard interface is ODBC which is supported by all major SQL database products and many NoSQL products. For non-Microsoft products, consult the vendor for more information. Third-party libraries with various license terms are also available.
 
-Since 2011 Microsoft has aligned on ODBC as the standard for native applications to connecting to Microsoft SQL Server databases, both on-premises and in the cloud. For more information, see [Data Access Programming \(MFC-ATL\)](data-access-programming-mfc-atl.md). C++/CLI libraries can use either the native ODBC drivers or ADO.NET. For more information, see [Data Access Using ADO.NET (C++/CLI)](/dotnet/data-access-using-adonet-cpp-cli.md) and [Accessing data in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
+Since 2011 Microsoft has aligned on ODBC as the standard for native applications to connecting to Microsoft SQL Server databases, both on-premises and in the cloud. For more information, see [Data Access Programming \(MFC-ATL\)](data-access-programming-mfc-atl.md). C++/CLI libraries can use either the native ODBC drivers or ADO.NET. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md) and [Accessing data in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
 
 ## In This Section
 

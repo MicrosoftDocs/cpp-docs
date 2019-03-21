@@ -1180,7 +1180,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 ### Parameters
 
 *pInfo*<br/>
-Address of a [DOCHOSTUIINFO](/previous-versions/aa770044\(v=vs.85\)) structure that receives the host's UI capabilities.
+Address of a [DOCHOSTUIINFO](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa770044\(v=vs.85\)) structure that receives the host's UI capabilities.
 
 ### Return Value
 
