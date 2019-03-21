@@ -48,7 +48,7 @@ Symbol names have descriptive prefixes that indicate the kind of resource or obj
 
 ### To change a symbol name (ID)
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), select the resource.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), select the resource.
 
 1. In the **Properties** window, type a new symbol name or select from the list of existing symbols in the **ID** box.
 
@@ -92,7 +92,7 @@ Some limitations of symbol values are:
 
 ### To change a symbol value
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), select the resource.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), select the resource.
 
 1. In the **Properties** window, type the symbol name followed by an equal sign and an integer in the **ID** box, for example:
 
@@ -148,7 +148,7 @@ The environment will correctly interpret these calculated symbols as long as:
 
 ### To include shared (read-only) symbols in your resource file
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file and select [Resource Includes](../windows/resource-includes-dialog-box.md).
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file and select [Resource Includes](../windows/resource-includes-dialog-box.md).
 
 1. In the **Read-only symbol directives** box, use the `#include` compiler directive to specify the file where you want the read-only symbols to be kept.
 
@@ -167,7 +167,7 @@ The environment will correctly interpret these calculated symbols as long as:
 
 ### To change the name of the resource symbol header file
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file and choose [Resource Includes](../windows/resource-includes-dialog-box.md).
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file and choose [Resource Includes](../windows/resource-includes-dialog-box.md).
 
 1. In the **Symbol header file** box, type the new name for the include file.
 

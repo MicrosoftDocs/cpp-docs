@@ -74,7 +74,7 @@ Provides links to samples that demonstrate how to use MFC.
 [Visual C++ Libraries Reference](../standard-library/cpp-standard-library-reference.md)<br/>
 Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the C++ Standard Library.
 
-[Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio.md)<br/>
+[Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.
 
 ## See also

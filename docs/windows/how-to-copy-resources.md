@@ -20,7 +20,7 @@ You can't drag and drop, copy, cut, or paste between resource files in the proje
 
 ### To copy resources
 
-1. Open both resource files stand-alone (see how to [to open a resource script file](/how-to-create-a-resource-script-file#use-resource-script-files)). For example, open *Source1.rc* and *Source2.rc*.
+1. Open both resource files stand-alone. (See [Use resource script files](how-to-create-a-resource-script-file.md#use-resource-script-files)). For example, open *Source1.rc* and *Source2.rc*.
 
 1. Inside the first .rc file, either:
 
@@ -56,7 +56,7 @@ IDD_AboutBox (Finnish - XX33)
 
 ### To copy an existing resource and change its language or condition
 
-In the *.rc* file or in the [Resource View](../windows/resource-view-window.md) window, right-click the resource you want to copy and choose **Insert Copy**. Then set the following:
+In the *.rc* file or in the [Resource View](how-to-create-a-resource-script-file.md#create-resources) window, right-click the resource you want to copy and choose **Insert Copy**. Then set the following:
 
 - For the **Language** list box, select the language.
 
@@ -75,7 +75,7 @@ You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML
 
 ### To import a resource into the resource script file
 
-1. In [Resource View](../windows/resource-view-window.md) right-click the node of the resource script (.rc) file to which you want to add a resource and select **Import**.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources) right-click the node of the resource script (.rc) file to which you want to add a resource and select **Import**.
 
 1. Locate and choose the file name of the bitmap (.bmp), icon (.ico), cursor (.cur), html file (.htm), or other file to import.
 
@@ -86,7 +86,7 @@ You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML
 
 ### To export a resource for use outside of Visual C++
 
-1. In [Resource View](../windows/resource-view-window.md), right-click the resource you want to export and select **Export**. You can accept the current file name or type a new one.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click the resource you want to export and select **Export**. You can accept the current file name or type a new one.
 
 1. Navigate to the folder where you want to save the file and select **Export**.
 

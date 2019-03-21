@@ -40,13 +40,13 @@ Resources can also be edited outside of the project without having the project o
 > [!NOTE]
 > Properties of a resource can be modified using the **Properties** window.
 
-- To edit the properties of a resource, in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click the resource you want to edit and choose **Properties**.  Then, in the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your resource.
+- To edit the properties of a resource, in [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click the resource you want to edit and choose **Properties**.  Then, in the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your resource.
 
 - To undo a change made to the properties of a resource, make sure your resource has focus in **Resource View** and choose **Undo** from the **Edit** menu.
 
 ### Win32 Resources
 
-You can access Win32 resources in the [Resource View](/windows/how-to-create-a-resource-script-file#create-resources) pane.
+You can access Win32 resources in the [Resource View](how-to-create-a-resource-script-file.md#create-resources) pane.
 
 #### To view a Win32 resource in a resource editor
 
@@ -90,7 +90,7 @@ The following resources don't provide a visual preview: Accelerator, Manifest, S
 
 ### To preview resources
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources) or a document window, select your resource, for example, **IDD_ABOUTBOX**.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources) or a document window, select your resource, for example, **IDD_ABOUTBOX**.
 
 1. In the [Properties window](/visualstudio/ide/reference/properties-window), select the **Property Pages** button.
 

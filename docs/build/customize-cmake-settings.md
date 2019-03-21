@@ -46,19 +46,19 @@ You can also directly edit  `CMakeSettings.json` to create custom configurations
 
 - **generator**: maps to the CMake **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, when composing other property values. Visual Studio currently supports the following CMake generators:
 
-    - "Ninja"
-    - "Visual Studio 14 2015"
-    - "Visual Studio 14 2015 ARM"
-    - "Visual Studio 14 2015 Win64"
-    - "Visual Studio 15 2017"
-    - "Visual Studio 15 2017 ARM"
-    - "Visual Studio 15 2017 Win64"
+  - "Ninja"
+  - "Visual Studio 14 2015"
+  - "Visual Studio 14 2015 ARM"
+  - "Visual Studio 14 2015 Win64"
+  - "Visual Studio 15 2017"
+  - "Visual Studio 15 2017 ARM"
+  - "Visual Studio 15 2017 Win64"
 
-    Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate a Visual Studio project instead.
+  Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate a Visual Studio project instead.
 
-    To specify a Visual Studio generator, open the  `CMakeSettings.json` from the main menu by choosing **CMake | Change CMake Settings**. Delete “Ninja” and type “V”. This activates IntelliSense, which enables you to choose the generator you want.
+  To specify a Visual Studio generator, open the  `CMakeSettings.json` from the main menu by choosing **CMake | Change CMake Settings**. Delete “Ninja” and type “V”. This activates IntelliSense, which enables you to choose the generator you want.
 
-    When the active configuration specifies a Visual Studio generator, by default MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the  `CMakeSettings.json` file, you can specify additional [MSBuild command line arguments](../build/msbuild-visual-cpp-overview.md) to be passed to the build system via the `buildCommandArgs` property:
+  When the active configuration specifies a Visual Studio generator, by default MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the  `CMakeSettings.json` file, you can specify additional [MSBuild command line arguments](../build/reference/msbuild-visual-cpp-overview.md) to be passed to the build system via the `buildCommandArgs` property:
     
     ```json
     "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
@@ -125,7 +125,7 @@ usage: ninja [options] [targets...]
 |   -n       | dry run (don't run commands but act like they succeeded)|
 |   -v       | show all command lines while building|
 |   -d MODE  | enable debugging (use -d list to list modes)|
-|   -t TOOL  | run a subtool (use -t list to list subtools). terminates toplevel options; further flags are passed to the tool|
+|   -t TOOL  | run a subtool (use -t list to list subtools). terminates top-level options; further flags are passed to the tool|
 |   -w FLAG  | adjust warnings (use -w list to list warnings)|
 
 ## Inherited environments
