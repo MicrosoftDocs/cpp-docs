@@ -149,7 +149,7 @@ After this operation, the string value of the underlying HSTRING handle is destr
 Initializes a new instance of the `HString` class.
 
 ```cpp
-HString(HSTRING hstr = nullptr) throw();
+HString() throw();
 HString(HString&& other) throw();
 ```
 
