@@ -167,6 +167,6 @@ void SetTimeout(DWORD dwTimeout);
 *dwTimeout*<br/>
 The time in milliseconds that this class will wait for the named pipe to become available.
 
-## See Also
+## See also
 
 [Classes](../../atl/reference/atl-classes.md)

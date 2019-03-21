@@ -14,7 +14,6 @@ Once you add the control, you need to add a member variable (of the ActiveX cont
 
 Once you have added the member variable a class, referred to as a wrapper class, is automatically generated and added to your project. This class is used as an interface between the control container and the embedded control.
 
-## See Also
+## See also
 
 [ActiveX Control Containers](../mfc/activex-control-containers.md)
-

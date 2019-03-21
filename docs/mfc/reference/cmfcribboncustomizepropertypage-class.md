@@ -112,7 +112,7 @@ virtual void OnOK();
 
 The default implementation applies the options selected in the **Customize** dialog box to the Quick Access Toolbar.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

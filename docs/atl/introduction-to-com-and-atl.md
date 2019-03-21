@@ -27,4 +27,3 @@ Provides links to conceptual topics on how to program using the Active Template 
 
 [ATL Class Overview](../atl/atl-class-overview.md)<br/>
 Provides reference information and links to the ATL classes.
-

@@ -222,6 +222,6 @@ void SetColor(D2D1_COLOR_F color);
 *color*<br/>
 The color of this solid color brush
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

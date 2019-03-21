@@ -243,7 +243,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### Property Value/Return Value
 
-A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
+A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) and [CollectionChange Enumeration](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## .NET Framework Equivalent
 
@@ -266,7 +266,7 @@ The key portion of the key-value pair. The type of *key* is typename *K*.
 
 ## <a name="size"></a>  Map::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the Map.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) elements in the Map.
 
 ### Syntax
 
@@ -278,7 +278,7 @@ virtual property unsigned int Size;
 
 The number of elements in the Map.
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

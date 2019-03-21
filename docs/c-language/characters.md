@@ -21,6 +21,6 @@ ms.assetid: 4f42680f-42fd-4356-adae-735dc18c6727
 
 - [Range of char Values](../c-language/range-of-char-values.md)
 
-## See Also
+## See also
 
 [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

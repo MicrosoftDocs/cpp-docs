@@ -11,7 +11,7 @@ XML document comment: cannot be applied:  reason
 
 XML documentation tags can not be applied to all C++ constructs.  For example, you cannot add a documentation comment to a namespace or template.
 
-For more information, see [XML Documentation](../../ide/xml-documentation-visual-cpp.md).
+For more information, see [XML Documentation](../../build/reference/xml-documentation-visual-cpp.md).
 
 ## Example
 

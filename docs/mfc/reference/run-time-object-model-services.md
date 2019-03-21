@@ -516,4 +516,3 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)<br/>
 [CLSID Key](/windows/desktop/com/clsid-key-hklm)
-

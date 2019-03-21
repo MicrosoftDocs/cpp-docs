@@ -113,7 +113,7 @@ Line Length = 16
 Text = A line of input.
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getch, _getwch](../c-runtime-library/reference/getch-getwch.md)

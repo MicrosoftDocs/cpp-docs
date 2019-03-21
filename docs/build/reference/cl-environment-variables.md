@@ -20,13 +20,13 @@ You can set the CL or \_CL\_ environment variable using the following syntax:
 > SET CL=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 > SET \_CL\_=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 
-For details on the arguments to the CL and \_CL\_ environment variables, see [Compiler Command-Line Syntax](../../build/reference/compiler-command-line-syntax.md).
+For details on the arguments to the CL and \_CL\_ environment variables, see [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md).
 
 You can use these environment variables to define the files and options you use most often and use the command line to define specific files and options for specific purposes. The CL and \_CL\_ environment variables are limited to 1024 characters (the command-line input limit).
 
 You cannot use the /D option to define a symbol that uses an equal sign (=). You can substitute the number sign (#) for an equal sign. In this way, you can use the CL or \_CL\_ environment variables to define preprocessor constants with explicit values—for example, `/DDEBUG#1` to define `DEBUG=1`.
 
-For related information, see [Set Environment Variables](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
+For related information, see [Set Environment Variables](../setting-the-path-and-environment-variables-for-command-line-builds.md).
 
 ## Examples
 
@@ -48,7 +48,7 @@ This has the same effect as the following command line:
 
 > CL FILE1.C FILE2.C FILE3.OBJ
 
-## See Also
+## See also
 
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)
+[Setting Compiler Options](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Options](compiler-options.md)

@@ -669,7 +669,7 @@ Call this member function only for toolbars that do not follow *Windows Interfac
 
 [!code-cpp[NVC_MFCListView#8](../../atl/reference/codesnippet/cpp/ctoolbar-class_4.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
 [MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>

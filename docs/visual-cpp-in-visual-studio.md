@@ -1,8 +1,8 @@
 ---
-title: "Visual C++ in Visual Studio"
+title: "C++ in Visual Studio"
 description: "Visual C++ is the name for the Microsoft C++ compiler, code editor, and related tools in the Visual Studio IDE. Use Visual C++ to develop programs for Windows, Linux, Android and iOS."
 ms.date: "09/26/2018"
-ms.technology: ["cpp-ide"]
+ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 author: "mikeblome"
 ms.author: "mblome"
@@ -64,11 +64,14 @@ Information about samples.
 
 ## C++ development tools
 
-[IDE and Development Tools](ide/ide-and-tools-for-visual-cpp-development.md)<br/>
+[Overview of C++ Development in Visual Studio](overview-of-cpp-development.md)<br/>
 How to use the Visual Studio IDE to create projects, edit code, link to libraries, compile, debug, create unit tests, do static analysis, deploy, and more.
 
-[Compilers and Build Tools](build/building-c-cpp-programs.md)<br/>
-Microsoft C++ compiler and linker options, error messages, command-line examples, configurating for different platforms, and build reference topics.
+[Projects and Build Systems](build/projects-and-build-systems-cpp.md)<br/>
+How to create and configure Visual Studio C++ projects, CMake projects, and other kinds of projects with MSVC compiler and linker options.
+
+[Writing and refactoring C++ code](ide/writing-and-refactoring-code-cpp.md)<br/>
+How to use the productivity features in the C++ editor to refactor, navigate and write code.
 
 [Debugging Native Code](/visualstudio/debugger/debugging-native-code)<br/>
 Use the Visual Studio debugger with C++ projects.

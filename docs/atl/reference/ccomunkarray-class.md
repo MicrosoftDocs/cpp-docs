@@ -177,7 +177,7 @@ The cookie referencing the `IUnknown` pointer to be removed from the array.
 
 Returns TRUE if the pointer is removed, FALSE otherwise.
 
-## See Also
+## See also
 
 [CComDynamicUnkArray Class](../../atl/reference/ccomdynamicunkarray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

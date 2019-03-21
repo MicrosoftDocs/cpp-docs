@@ -51,6 +51,6 @@ The format string can handle single-byte or wide character input regardless of w
 
 To scan strings with `scanf` functions, and `wscanf` functions, use the above table with format type-specifiers `s` and `S` instead of `c` and `C`.
 
-## See Also
+## See also
 
 [scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)

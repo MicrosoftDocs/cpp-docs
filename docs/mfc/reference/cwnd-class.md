@@ -1865,10 +1865,10 @@ BOOL DrawAnimatedRects(
 Specifies the type of animation. If you specify IDANI_CAPTION, the window caption will animate from the position specified by *lprcFrom* to the position specified by *lprcTo*. The effect is similar to minimizing or maximizing a window.
 
 *lprcFrom*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the location and size of the icon or minimized window.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the location and size of the icon or minimized window.
 
 *lprcTo*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the location and size of the restored window
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the location and size of the restored window
 
 ### Return Value
 
@@ -11618,7 +11618,7 @@ virtual void ResizeDynamicLayout();
 
 ### Remarks
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

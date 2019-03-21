@@ -16,22 +16,22 @@ Note that the term AFXDLL is no longer used in the Visual C++ documentation. An 
 
 ## What do you want to do?
 
-- [Initialize an MFC extension DLL](../build/run-time-library-behavior.md#initializing-extension-dlls)
+- [Initialize an MFC extension DLL](run-time-library-behavior.md#initializing-extension-dlls)
 
 ## What do you want to know more about?
 
-- [MFC extension DLLs](../build/extension-dlls.md)
+- [MFC extension DLLs](extension-dlls.md)
 
-- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
-- [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)
+- [Non-MFC DLLs: Overview](non-mfc-dlls-overview.md)
 
-- [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Regular MFC DLLs statically linked to MFC](regular-dlls-statically-linked-to-mfc.md)
 
-- [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Regular MFC DLLs dynamically linked to MFC](regular-dlls-dynamically-linked-to-mfc.md)
 
 - [Creating an MFC DLL](../mfc/reference/mfc-dll-wizard.md)
 
-## See Also
+## See also
 
-[Kinds of DLLs](../build/kinds-of-dlls.md)
+[Kinds of DLLs](kinds-of-dlls.md)

@@ -78,8 +78,7 @@ The following example modifies the body of the work function that is passed to t
 
 [!code-cpp[concrt-cooperative-semaphore#8](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_8.cpp)]
 
-## See Also
+## See also
 
 [Contexts](../../parallel/concrt/contexts.md)<br/>
 [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)
-

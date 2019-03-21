@@ -20,7 +20,7 @@ Use the following functions to customize the way your program does run-time erro
 |[_RTC_SetErrorFunc](../c-runtime-library/reference/rtc-seterrorfunc.md)|Designates a function as the handler for reporting run-time error checks.|
 |[_RTC_SetErrorType](../c-runtime-library/reference/rtc-seterrortype.md)|Associates an error that is detected by run-time error checks with a type.|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [/RTC (Run-Time Error Checks)](../build/reference/rtc-run-time-error-checks.md)<br/>

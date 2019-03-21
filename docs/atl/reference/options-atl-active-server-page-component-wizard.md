@@ -45,8 +45,7 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
    |**Connection points**|Enables connection points for your object by making your object's class derive from [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md).|
    |**Free-threaded marshaler**|Creates a free-threaded marshaler object to marshal interface pointers efficiently between threads in the same process. Available to object specifying either **Both** or **Free** as the threading model.|
 
-## See Also
+## See also
 
 [ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
 [ATL Active Server Page Component](../../atl/reference/adding-an-atl-active-server-page-component.md)
-

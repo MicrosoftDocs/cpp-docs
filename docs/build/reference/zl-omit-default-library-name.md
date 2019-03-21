@@ -17,13 +17,13 @@ Omits the default C runtime library name from the .obj file. By default, the com
 
 ## Remarks
 
-For more information on the default library, see [Use Run-Time Library](../../build/reference/md-mt-ld-use-run-time-library.md).
+For more information on the default library, see [Use Run-Time Library](md-mt-ld-use-run-time-library.md).
 
 You can use **/Zl** to compile .obj files you plan to put into a library. Although omitting the library name saves only a small amount of space for a single .obj file, the total space saved is significant in a library that contains many object modules.
 
 This option is an advanced option. Setting this option removes certain C Runtime library support that may be required by your application, resulting in link-time errors if your application depends on this support. If you use this option you must provide the required components in some other way.
 
-Use [/NODEFAULTLIB (Ignore Libraries)](../../build/reference/nodefaultlib-ignore-libraries.md). to direct the linker to ignore library references in all .obj files.
+Use [/NODEFAULTLIB (Ignore Libraries)](nodefaultlib-ignore-libraries.md). to direct the linker to ignore library references in all .obj files.
 
 For more information, see [CRT Library Features](../../c-runtime-library/crt-library-features.md).
 
@@ -43,7 +43,7 @@ void Test() {
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -55,7 +55,7 @@ void Test() {
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitDefaultLibName%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

@@ -11,8 +11,7 @@ The COM technique of marshaling allows interfaces exposed by an object in one pr
 > [!NOTE]
 >  Marshaling is typically not necessary when an interface provided by an object is being used in the same process as the object. However, marshaling may be needed between threads.
 
-## See Also
+## See also
 
 [Introduction to COM](../atl/introduction-to-com.md)<br/>
 [Marshaling Details](/windows/desktop/com/marshaling-details)
-

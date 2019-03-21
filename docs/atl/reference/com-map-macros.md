@@ -49,7 +49,7 @@ Ends the definition of your COM interface map.
 END_COM_MAP()
 ```
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)<br/>
 [COM Map Global Functions](../../atl/reference/com-map-global-functions.md)

@@ -224,7 +224,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 *pWndList*<br/>
 [in] Pointer to a property grid control object.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

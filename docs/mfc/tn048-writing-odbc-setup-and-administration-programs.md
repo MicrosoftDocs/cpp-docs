@@ -40,8 +40,7 @@ To display a dialog box with which a user can add, modify, and delete data sourc
 
 For more information, see ODBC SDK *Programmer's Reference,* Chapter 23, Setup DLL Function Reference, and Chapter 24, Installer DLL Function Reference.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

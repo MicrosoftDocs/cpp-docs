@@ -65,8 +65,7 @@ Most of the changes to string tables for container applications correspond to th
 |IDP_OLE_INIT_FAILED|OLE initialization failed. Make sure that the OLE libraries are the correct version.|
 |IDP_FAILED_TO_CREATE|Failed to create object. Make sure that the object is entered in the system registry.|
 
-## See Also
+## See also
 
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md)
-

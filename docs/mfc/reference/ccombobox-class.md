@@ -1445,7 +1445,7 @@ This member function has no effect on a combo box created with the [CBS_SIMPLE](
 
   See the example for [CComboBox::GetDroppedState](#getdroppedstate).
 
-## See Also
+## See also
 
 [MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

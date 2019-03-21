@@ -15,7 +15,7 @@ Notice from the `CStdioFile` listing under [An Example of the Comments](../mfc/a
 > [!NOTE]
 >  You may find comments of the remaining types either above or below the `// Implementation` comment. In either case, they describe the kinds of members declared below them. If they occur below the `// Implementation` comment, you should assume that the members may change in future versions of MFC.
 
-## See Also
+## See also
 
 [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)<br/>
 [An Example of the Comments](../mfc/an-example-of-the-comments.md)<br/>
@@ -23,4 +23,3 @@ Notice from the `CStdioFile` listing under [An Example of the Comments](../mfc/a
 [// Attributes Comment](../mfc/decrement-attributes-comment.md)<br/>
 [// Operations Comment](../mfc/decrement-operations-comment.md)<br/>
 [// Overridables Comment](../mfc/decrement-overridables-comment.md)
-

@@ -116,6 +116,6 @@ The amount of time by which to hold the variable at its final value.
 UI_ANIMATION_SECONDS m_hold;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

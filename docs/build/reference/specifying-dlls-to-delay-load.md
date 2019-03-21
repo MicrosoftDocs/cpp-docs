@@ -6,7 +6,7 @@ ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
 ---
 # Specifying DLLs to Delay Load
 
-You can specify which DLLs to delay load with the [/delayload](../../build/reference/delayload-delay-load-import.md):`dllname` linker option. If you do not plan to use your own version of a helper function, you must also link your program with delayimp.lib (for desktop applications) or dloadhelper.lib (for store apps).
+You can specify which DLLs to delay load with the [/delayload](delayload-delay-load-import.md):`dllname` linker option. If you do not plan to use your own version of a helper function, you must also link your program with delayimp.lib (for desktop applications) or dloadhelper.lib (for store apps).
 
 The following is a simple example of delay loading a DLL:
 
@@ -25,6 +25,6 @@ int main() {
 
 Build the DEBUG version of the project. Step through the code using the debugger and you will notice that user32.dll is loaded only when you make the call to `MessageBox`.
 
-## See Also
+## See also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

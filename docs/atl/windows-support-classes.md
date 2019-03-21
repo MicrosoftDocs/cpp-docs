@@ -2,7 +2,6 @@
 title: "Windows Support Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.windows"]
 helpviewer_keywords: ["ATL, windows", "windows [C++], ATL"]
 ms.assetid: 750b14d5-d787-4d2b-9728-ac199ccad489
 ---
@@ -44,9 +43,8 @@ The following classes provide support for windows:
 
 [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)<br/>
 [Message Map Macros](../atl/reference/message-map-macros-atl.md)<br/>
 [Window Class Macros](../atl/reference/window-class-macros.md)
-

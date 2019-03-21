@@ -16,7 +16,6 @@ Many controls do not need to be active the entire time they are visible in a con
 
 The **OLEMISC_ACTIVATEWHENVISIBLE** flag is automatically omitted if you turn off the **Activate When Visible** option in the [Control Settings](../mfc/reference/control-settings-mfc-activex-control-wizard.md) page of the MFC ActiveX Control Wizard when you create your control.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)
-

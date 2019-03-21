@@ -2,7 +2,6 @@
 title: "NotifyHandler"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["NotifyHandler"]
 helpviewer_keywords: ["NotifyHandler function"]
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
 ---
@@ -38,7 +37,7 @@ The result of message processing. 0 if successful.
 
 For an example of using this message handler in a message map, see [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).
 
-## See Also
+## See also
 
 [Implementing a Window](../atl/implementing-a-window.md)<br/>
 [Message Maps](../atl/message-maps-atl.md)<br/>

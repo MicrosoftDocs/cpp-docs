@@ -2,7 +2,7 @@
 title: "longjmp"
 ms.date: "08/14/2018"
 apiname: ["longjmp"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["longjmp"]
 helpviewer_keywords: ["restoring stack environment and execution locale", "longjmp function"]

@@ -32,8 +32,7 @@ In either case, the embedded control object is created when the view or dialog o
 
 For more information, see [Creating a Header Control](/windows/desktop/Controls/header-controls) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

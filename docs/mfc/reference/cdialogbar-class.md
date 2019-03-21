@@ -129,7 +129,7 @@ If you specify the CBRS_TOP or CBRS_BOTTOM alignment style, the dialog bar's wid
 
 [!code-cpp[NVC_MFCMessageMaps#13](../../mfc/reference/codesnippet/cpp/cdialogbar-class_1.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>

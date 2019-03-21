@@ -35,8 +35,7 @@ The following map entries on the left correspond to the function prototypes on t
 |ON_WM_NEXTMENU()|afx_msg void [OnNextMenu](../../mfc/reference/cwnd-class.md#onnextmenu)(UINT, LPMDINEXTMENU);|
 |ON_WM_NOTIFYFORMAT()|afx_msg UINT [OnNotifyFormat](../../mfc/reference/cwnd-class.md#onnotifyformat)(CWnd*, UINT);|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
 [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-

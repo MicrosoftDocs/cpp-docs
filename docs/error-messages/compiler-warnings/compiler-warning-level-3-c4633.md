@@ -9,7 +9,7 @@ ms.assetid: 6d76f268-ba8c-448b-8e83-b903a18b583b
 
 XML document comment target: error:  reason
 
-A name passed to the [\<param>](../../ide/param-visual-cpp.md) tag was not found by the compiler.
+A name passed to the [\<param>](../../build/reference/param-visual-cpp.md) tag was not found by the compiler.
 
 The following sample generates C4633:
 

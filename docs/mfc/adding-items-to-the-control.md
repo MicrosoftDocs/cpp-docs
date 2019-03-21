@@ -16,8 +16,7 @@ Other versions of `InsertItem` take one or more separate values, corresponding t
 
 For more information, see [Adding List-View Items and Subitems](/windows/desktop/Controls/using-list-view-controls).
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

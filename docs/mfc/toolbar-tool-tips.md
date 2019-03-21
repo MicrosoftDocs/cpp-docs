@@ -53,7 +53,6 @@ A feature related to tool tips is "flyby" status bar updating. By default, the m
 
 - [Using your old toolbars](../mfc/using-your-old-toolbars.md)
 
-## See Also
+## See also
 
 [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-

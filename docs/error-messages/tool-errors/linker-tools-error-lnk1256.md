@@ -1,7 +1,7 @@
 ---
 title: "Linker Tools Error LNK1256"
 ms.date: "11/04/2016"
-f1_keywords: ["xml", "LNK1256"]
+f1_keywords: ["LNK1256"]
 helpviewer_keywords: ["LNK1256"]
 ms.assetid: 55b64b2b-a56b-436c-a55e-ec9c6dcb050e
 ---

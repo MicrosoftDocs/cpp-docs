@@ -2,7 +2,7 @@
 title: "mbstowcs, _mbstowcs_l"
 ms.date: "11/04/2016"
 apiname: ["mbstowcs", "_mbstowcs_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["mbstowcs"]
 helpviewer_keywords: ["_mbstowcs_l function", "mbstowcs_l function", "mbstowcs function"]

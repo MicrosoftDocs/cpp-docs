@@ -16,7 +16,6 @@ When you select an active document of another application type, the Binder's int
 
 There are, of course, other possible types of containers beside Binders. File Explorer uses the typical dual-pane interface in which the left pane uses a tree control to display a hierarchical list of directories in a drive or network, while the right pane displays the files contained in the currently selected directory. An Internet browser-type of container (such as Microsoft Internet Explorer), rather than using a dual-pane interface, usually has a single frame and provides navigation using hyperlinks.
 
-## See Also
+## See also
 
 [Active Document Containment](../mfc/active-document-containment.md)
-

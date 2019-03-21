@@ -39,15 +39,15 @@ In general, we highly recommend that you use Visual Studio 2017 even if you need
 
 1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you are having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
-   ![Download and install the Visual Studio Installer](../build/media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
+   ![Download and install the Visual Studio Installer](media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
 
 1. The installer presents you with a list of workloads, which are groups of related options for specific development areas. Support for C++ is now part of optional workloads that aren't installed by default.
 
-   ![Desktop development with C++ workload](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
+   ![Desktop development with C++ workload](media/desktop-development-with-cpp.png "Desktop development with C++")
 
    For C++, select the **Desktop development with C++** workload and then choose **Install**.
 
-   ![Install the Desktop development with C++ workload](../build/media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
+   ![Install the Desktop development with C++ workload](media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
 
 1. When the installation completes, choose the **Launch** button to start Visual Studio.
 
@@ -55,13 +55,13 @@ In general, we highly recommend that you use Visual Studio 2017 even if you need
 
    It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 
-   ![Visual Studio 2017 sign in](../build/media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
+   ![Visual Studio 2017 sign in](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
 
    Visual Studio starts much faster when you run it again.
 
 1. When Visual Studio opens, check to see if the flag icon in the title bar is highlighted:
 
-   ![Visual Studio 2017 notification flag](../build/media/vscpp-first-start-page-flag.png "Visual Studio 2017 notification flag")
+   ![Visual Studio 2017 notification flag](media/vscpp-first-start-page-flag.png "Visual Studio 2017 notification flag")
 
    If it is highlighted, select it to open the **Notifications** window. If there are any updates available for Visual Studio, we recommend you install them now. Once the installation is complete, restart Visual Studio.
 

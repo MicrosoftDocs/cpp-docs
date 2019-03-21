@@ -84,7 +84,7 @@ The following example demonstrates how to construct a `CMFCRibbonCustomizeDialog
 
 The constructor instantiates a [CMFCRibbonCustomizePropertyPage Class](../../mfc/reference/cmfcribboncustomizepropertypage-class.md) object and adds it to the collection of property sheet pages.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

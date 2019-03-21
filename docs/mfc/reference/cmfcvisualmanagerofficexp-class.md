@@ -43,7 +43,7 @@ The following example demonstrates how to use `CMFCVisualManagerOfficeXP`. This 
 
 **Header:** afxvisualmanagerofficexp.h
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

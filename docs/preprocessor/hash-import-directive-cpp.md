@@ -107,7 +107,7 @@ The following compiler optimizations come with the **#import** directive:
 
 - When **#import** is processed, the compiler first checks if the header exists and is up to date. If yes, then it does not need to be re-created.
 
-The **#import** directive also participates in minimal rebuild and can be placed in a precompiled header file. See [Creating Precompiled Header Files](../build/reference/creating-precompiled-header-files.md) for more information.
+The **#import** directive also participates in minimal rebuild and can be placed in a precompiled header file. See [Creating Precompiled Header Files](../build/creating-precompiled-header-files.md) for more information.
 
 ###  <a name="_predir_the_primary_type_library_header_file"></a> Primary Type Library Header File
 The primary type library header file consists of seven sections:

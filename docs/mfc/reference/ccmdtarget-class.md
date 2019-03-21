@@ -121,7 +121,7 @@ Pointer to the [MSG](/windows/desktop/api/winuser/ns-winuser-msg) structure desc
 Handle of the document window containing the object.
 
 *lpRect*<br/>
-Pointer to the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.
+Pointer to the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.
 
 ### Return Value
 
@@ -474,7 +474,7 @@ void RestoreWaitCursor();
 
 [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample ACDUAL](../../visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>

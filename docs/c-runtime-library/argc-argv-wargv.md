@@ -40,7 +40,7 @@ For portable code, we recommend you use the arguments passed to `main` to get th
 
 `__argc`, `__argv`, and `__wargv` are Microsoft extensions. For compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Global Variables](../c-runtime-library/global-variables.md)<br/>
 [main: Program Startup](../cpp/main-program-startup.md)<br/>

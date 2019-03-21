@@ -703,7 +703,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 
 Before Windows Vista, applications that accessed the registry usually used the **HKEY_CLASSES_ROOT** node. However, with Windows Vista or later operating systems, you must run an application in elevated mode to write to HKCR.
 
-This method enables your application to read and write to the registry without running in elevated mode by redirecting registry access from HKCR to HKCU. For more information, see [Linker Property Pages](../../ide/linker-property-pages.md).
+This method enables your application to read and write to the registry without running in elevated mode by redirecting registry access from HKCR to HKCU. For more information, see [Linker Property Pages](../../build/reference/linker-property-pages.md).
 
 If you enable registry redirection, the framework redirects access from HKCR to **HKEY_CURRENT_USER\Software\Classes**. Only the MFC and ATL frameworks are affected by the redirection.
 

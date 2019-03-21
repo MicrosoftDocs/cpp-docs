@@ -30,6 +30,6 @@ Between consecutive "sequence points" an object's value can be modified only onc
 
 - The expression in a `return` statement. The expression is completely evaluated and all side effects complete before control returns to the calling function.
 
-## See Also
+## See also
 
 [Expression Evaluation](../c-language/expression-evaluation-c.md)

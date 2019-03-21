@@ -238,6 +238,6 @@ When using the DDX_DHtml_Img_Src macro to retrieve the src property for an IMAGE
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLIMGELEMENT_SRC dispatch ID.
 
-## See Also
+## See also
 
 [CDHtmlDialog Class](../../mfc/reference/cdhtmldialog-class.md)

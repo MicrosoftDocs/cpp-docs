@@ -112,7 +112,7 @@ void RemoveAll();
 
 This function removes from this instance all the commands that the previous calls to [CMFCRibbonQuickAccessToolBarDefaultState::AddCommand](#addcommand) added.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

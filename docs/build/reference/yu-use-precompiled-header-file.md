@@ -32,7 +32,7 @@ The compiler treats all code occurring before the .h file as precompiled. It ski
 
 On the command line, no space is allowed between **/Yu** and `filename`.
 
-When you specify the **/Yu** option without a file name, your source program must contain a [#pragma hdrstop](../../preprocessor/hdrstop.md) pragma that specifies the file name of the precompiled header, .pch file. In this case, the compiler will use the precompiled header (.pch file) named by [/Fp (Name .Pch File)](../../build/reference/fp-name-dot-pch-file.md). The compiler skips to the location of that pragma, restores the compiled state from the precompiled header file specified by the pragma, and then compiles only code that follows the pragma. If **#pragma hdrstop** does not specify a file name, the compiler looks for a file with a name derived from the base name of the source file with a .pch extension. You can also use the **/Fp** option to specify a different .pch file.
+When you specify the **/Yu** option without a file name, your source program must contain a [#pragma hdrstop](../../preprocessor/hdrstop.md) pragma that specifies the file name of the precompiled header, .pch file. In this case, the compiler will use the precompiled header (.pch file) named by [/Fp (Name .Pch File)](fp-name-dot-pch-file.md). The compiler skips to the location of that pragma, restores the compiled state from the precompiled header file specified by the pragma, and then compiles only code that follows the pragma. If **#pragma hdrstop** does not specify a file name, the compiler looks for a file with a name derived from the base name of the source file with a .pch extension. You can also use the **/Fp** option to specify a different .pch file.
 
 If you specify the **/Yu** option without a file name and fail to specify a **hdrstop** pragma, an error message is generated and the compilation is unsuccessful.
 
@@ -42,15 +42,15 @@ Because .pch files contain information about the machine environment as well as 
 
 For more information on precompiled headers, see:
 
-- [/Y (Precompiled Headers)](../../build/reference/y-precompiled-headers.md)
+- [/Y (Precompiled Headers)](y-precompiled-headers.md)
 
-- [Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)
+- [Precompiled Header Files](../creating-precompiled-header-files.md)
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Specify [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) on a .cpp file in your project.
+1. Specify [/Yc (Create Precompiled Header File)](yc-create-precompiled-header-file.md) on a .cpp file in your project.
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -75,7 +75,7 @@ If the following code:
 
 is compiled with the command line `CL /YuMYAPP.H PROG.CPP`, the compiler does not process the three include statements but uses precompiled code from MYAPP.pch, thereby saving the time involved in preprocessing all three of the files (and any files they might include).
 
-You can use the [/Fp (Name .Pch File)](../../build/reference/fp-name-dot-pch-file.md) option with the **/Yu** option to specify the name of the .pch file if the name is different from either the file name argument to **/Yc** or the base name of the source file, as in the following:
+You can use the [/Fp (Name .Pch File)](fp-name-dot-pch-file.md) option with the **/Yu** option to specify the name of the .pch file if the name is different from either the file name argument to **/Yc** or the base name of the source file, as in the following:
 
 ```
 CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
@@ -83,7 +83,7 @@ CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
 
 This command specifies a precompiled header file named MYPCH.pch. The compiler uses its contents to restore the precompiled state of all header files up to and including MYAPP.h. The compiler then compiles the code that occurs after the MYAPP.h **include** statement.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

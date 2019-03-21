@@ -622,7 +622,7 @@ after Lisa's birthday: A CMapStringToOb with 2 elements
 [Bart] = a CAge at $4654 13
 ```
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

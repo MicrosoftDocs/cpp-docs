@@ -1,7 +1,6 @@
 ---
 title: "Specifying Property Pages (ATL)"
 ms.date: "11/04/2016"
-f1_keywords: ["ISpecifyPropertyPages"]
 helpviewer_keywords: ["ISpecifyPropertyPages method", "property pages, specifying"]
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
 ---
@@ -28,7 +27,7 @@ The following class for a calendar control uses the `ISpecifyPropertyPages` inte
 
 [!code-cpp[NVC_ATL_Windowing#72](../atl/codesnippet/cpp/specifying-property-pages_1.h)]
 
-## See Also
+## See also
 
 [Property Pages](../atl/atl-com-property-pages.md)<br/>
 [ATLPages Sample](../visual-cpp-samples.md)

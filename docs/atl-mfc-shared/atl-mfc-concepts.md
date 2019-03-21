@@ -13,7 +13,6 @@ This section provides conceptual and task-based topics to help you program using
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 Describes how to manage string data in applications.
 
-## See Also
+## See also
 
 [ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)
-

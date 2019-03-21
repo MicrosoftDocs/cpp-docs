@@ -21,8 +21,7 @@ To create a lightweight task, call the [concurrency::ScheduleGroup::ScheduleTask
 
 For an example that demonstrates how to adapt existing code to use a lightweight task, see [Walkthrough: Adapting Existing Code to Use Lightweight Tasks](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Walkthrough: Adapting Existing Code to Use Lightweight Tasks](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
-

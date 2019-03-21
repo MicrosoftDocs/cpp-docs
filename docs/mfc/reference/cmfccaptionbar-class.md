@@ -661,7 +661,7 @@ The text label is aligned as specified by the *textAlignment* parameter. It can 
 
 - ALIGN_CENTER
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

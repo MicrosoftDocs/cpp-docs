@@ -25,7 +25,7 @@ There are four methods for exporting a definition, listed in recommended order o
 
 1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) in the source code
 
-1. An [EXPORTS](../../build/reference/exports.md) statement in a .def file
+1. An [EXPORTS](exports.md) statement in a .def file
 
 1. An /EXPORT specification in a LINK command
 
@@ -33,7 +33,7 @@ There are four methods for exporting a definition, listed in recommended order o
 
 All these methods can be used in the same program. When LINK builds a program that contains exports, it also creates an import library, unless an .exp file is used in the build.
 
-LINK uses decorated forms of identifiers. The compiler decorates an identifier when it creates the .obj file. If *entryname* is specified to the linker in its undecorated form (as it appears in the source code), LINK attempts to match the name. If it cannot find a unique match, LINK issues an error message. Use the [DUMPBIN](../../build/reference/dumpbin-reference.md) tool to get the [decorated name](../../build/reference/decorated-names.md) form of an identifier when you need to specify it to the linker.
+LINK uses decorated forms of identifiers. The compiler decorates an identifier when it creates the .obj file. If *entryname* is specified to the linker in its undecorated form (as it appears in the source code), LINK attempts to match the name. If it cannot find a unique match, LINK issues an error message. Use the [DUMPBIN](dumpbin-reference.md) tool to get the [decorated name](decorated-names.md) form of an identifier when you need to specify it to the linker.
 
 > [!NOTE]
 > Do not specify the decorated form of C identifiers that are declared `__cdecl` or `__stdcall`.
@@ -47,7 +47,7 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -57,7 +57,7 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

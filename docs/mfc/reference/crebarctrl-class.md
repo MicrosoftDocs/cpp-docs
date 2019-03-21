@@ -155,7 +155,7 @@ virtual BOOL Create(
 Specifies the combination of rebar control styles applied to the control. See [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK for a list of supported styles.
 
 *rect*<br/>
-A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, which is the position and size of the rebar control.
+A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, which is the position and size of the rebar control.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the rebar control. It must not be NULL.
@@ -203,7 +203,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the combination of rebar control styles applied to the control. For a list of supported styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -289,7 +289,7 @@ void GetBandBorders(
 Zero-based index of the band for which the borders will be retrieved.
 
 *prc*<br/>
-A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the band borders. If the rebar control has the RBS_BANDBORDERS style, each member of this structure will receive the number of pixels, on the corresponding side of the band, that constitute the border. If the rebar control does not have the RBS_BANDBORDERS style, only the left member of this structure receives valid information. For a description of rebar control styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK.
+A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the band borders. If the rebar control has the RBS_BANDBORDERS style, each member of this structure will receive the number of pixels, on the corresponding side of the band, that constitute the border. If the rebar control does not have the RBS_BANDBORDERS style, only the left member of this structure receives valid information. For a description of rebar control styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK.
 
 ##  <a name="getbandcount"></a>  CReBarCtrl::GetBandCount
 
@@ -484,7 +484,7 @@ BOOL GetRect(
 Zero-based index of a band in the rebar control.
 
 *prc*<br/>
-A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the bounds of the rebar band.
+A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the bounds of the rebar band.
 
 ### Return Value
 
@@ -1033,8 +1033,7 @@ Nonzero if successful; otherwise zero.
 
 Note that this member function uses a `CRect` object as a parameter, rather than a `RECT` structure.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

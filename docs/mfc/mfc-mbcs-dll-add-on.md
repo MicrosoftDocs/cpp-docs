@@ -16,4 +16,3 @@ Support for MFC and its multibyte character set (MBCS) libraries requires an add
 ## See also
 
 [MFC Library Versions](../mfc/mfc-library-versions.md)
-

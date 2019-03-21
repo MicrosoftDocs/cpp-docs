@@ -34,6 +34,6 @@ The pointer `vpBuffer` is assigned the address of memory allocated at some later
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

@@ -22,11 +22,11 @@ The linker option or options to be passed to the linker.
 
 ## Remarks
 
-The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linkeroptions`. For more information, see [Setting Linker Options](../../build/reference/setting-linker-options.md).
+The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linkeroptions`. For more information, see [MSVC linker reference](linking.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -38,7 +38,7 @@ The **/link** option and its linker options must appear after any file names and
 
 - This compiler option cannot be changed programmatically.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

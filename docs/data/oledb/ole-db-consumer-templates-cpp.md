@@ -14,7 +14,7 @@ The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The
 
 - Native C/C++ data types for OLE DB programming.
 
-To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you aren't familiar with OLE DB, see [OLE DB Programmer's Reference](https://docs.microsoft.com/previous-versions/windows/desktop/ms718124(v=vs.85)).
+To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you aren't familiar with OLE DB, see [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server).
 
 The OLE DB Templates support the existing OLE DB object model rather than adding a new object model. The top-layer classes in the OLE DB Consumer Templates parallel the components defined in the OLE DB specification. The design of the OLE DB Consumer Templates includes advanced features such as multiple accessors on a rowset. The use of templates and multiple inheritance makes the library small and flexible.
 
@@ -50,5 +50,5 @@ For more information, see the following topics:
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [Data Access](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Documentation](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
-[OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)
+[OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
+[Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)

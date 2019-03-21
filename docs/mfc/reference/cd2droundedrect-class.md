@@ -54,6 +54,6 @@ source rectangle
 *sizeRadius*<br/>
 radius size
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

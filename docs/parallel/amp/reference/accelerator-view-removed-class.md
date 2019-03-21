@@ -80,6 +80,6 @@ Returns an HRESULT error code indicating the cause of the `accelerator_view` obj
 HRESULT get_view_removed_reason() const throw();
 ```
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -17,7 +17,6 @@ If you need to circumvent the object-`HWND` relationship, MFC provides another `
 
 - [Allocating and deallocating window memory](../mfc/allocating-and-deallocating-window-memory.md)
 
-## See Also
+## See also
 
 [Window Objects](../mfc/window-objects.md)
-

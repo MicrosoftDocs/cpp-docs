@@ -5,7 +5,7 @@ ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
 ---
 # Configuring Programs for Windows XP
 
-Because Visual Studio supports multiple platform toolsets, you can target operating systems and runtime libraries that are not supported by the default toolset. For example, by switching the platform toolset, you can use the C++11, C++14, and C++17 language enhancements supported by the Visual C++ compiler in Visual Studio to create apps that target Windows XP and Windows Server 2003. You can also use older platform toolsets to maintain binary-compatible legacy code and still take advantage of the latest features of the Visual Studio IDE.
+Because Visual Studio supports multiple platform toolsets, you can target operating systems and runtime libraries that are not supported by the default toolset. For example, by switching the platform toolset, you can use the C++11, C++14, and C++17 language enhancements supported by the MSVC compiler in Visual Studio to create apps that target Windows XP and Windows Server 2003. You can also use older platform toolsets to maintain binary-compatible legacy code and still take advantage of the latest features of the Visual Studio IDE.
 
 ## Install the Windows XP platform toolset
 

@@ -94,11 +94,10 @@ The second group of articles describes [frame windows](../mfc/frame-windows.md)â
 
 - [Change the styles of a window created by MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Toolbars](../mfc/toolbars.md)<br/>
 [Status Bars](../mfc/status-bars.md)<br/>
 [Dialog Bars](../mfc/dialog-bars.md)
-

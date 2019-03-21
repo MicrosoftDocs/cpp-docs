@@ -16,7 +16,7 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 
 ## Remarks
 
-**/sdl** enables a superset of the baseline security checks provided by [/GS](../../build/reference/gs-buffer-security-check.md) and overrides **/GS-**. By default, **/sdl** is off. **/sdl-** disables the additional security checks.
+**/sdl** enables a superset of the baseline security checks provided by [/GS](gs-buffer-security-check.md) and overrides **/GS-**. By default, **/sdl** is off. **/sdl-** disables the additional security checks.
 
 ## Compile-time Checks
 
@@ -60,13 +60,13 @@ For more information, see [Warnings, /sdl, and improving uninitialized variable 
 
 #### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **C/C++** folder.
 
 1. On the **General** page, select the option from the **SDL checks** drop-down list.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

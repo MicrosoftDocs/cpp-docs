@@ -404,7 +404,7 @@ The types are defined by the `CMFCColorPickerCtrl::COLORTYPE` enumeration. The p
 
 To specify a color picker control type, call this method before the Windows control is created.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

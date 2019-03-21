@@ -232,7 +232,7 @@ void SetRange(
 
 Use this method to define the range of the progress bar by setting minimum and maximum values.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

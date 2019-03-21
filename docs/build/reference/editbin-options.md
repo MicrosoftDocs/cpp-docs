@@ -15,28 +15,28 @@ EDITBIN has the following options:
 
 |Option|Purpose|
 |------------|-------------|
-|[/ALLOWBIND](../../build/reference/allowbind.md)|Specifies whether a DLL can be bound.|
-|[/ALLOWISOLATION](../../build/reference/allowisolation.md)|Specifies DLL or executable file manifest lookup behavior.|
-|[/APPCONTAINER](../../build/reference/appcontainer.md)|Specifies whether the app must run within an AppContainer—for example, a UWP app.|
-|[/BIND](../../build/reference/bind.md)|Sets the addresses for the entry points in the specified objects to speed load time.|
-|[/DYNAMICBASE](../../build/reference/dynamicbase.md)|Specifies whether the DLL or executable image can be randomly rebased at load-time by using address space layout randomization (ASLR).|
-|[/ERRORREPORT](../../build/reference/errorreport-editbin-exe.md)|Reports internal errors to Microsoft.|
-|[/HEAP](../../build/reference/heap.md)|Sets the size of the executable image’s heap in bytes.|
-|[/HIGHENTROPYVA](../../build/reference/highentropyva.md)|Specifies whether the DLL or executable image supports high entropy (64-bit) address space layout randomization (ASLR).|
-|[/INTEGRITYCHECK](../../build/reference/integritycheck.md)|Specifies whether to check the digital signature at load time.|
-|[/LARGEADDRESSAWARE](../../build/reference/largeaddressaware.md)|Specifies whether the object supports addresses that are larger than two gigabytes.|
-|[/NOLOGO](../../build/reference/nologo-editbin.md)|Suppresses the EDITBIN startup banner.|
-|[/NXCOMPAT](../../build/reference/nxcompat.md)|Specifies whether the executable image is compatible with Windows Data Execution Prevention.|
-|[/REBASE](../../build/reference/rebase.md)|Sets the base addresses for the specified objects.|
-|[/RELEASE](../../build/reference/release.md)|Sets the checksum in the header.|
-|[/SECTION](../../build/reference/section-editbin.md)|Overrides the attributes of a section.|
-|[/STACK](../../build/reference/stack.md)|Sets the size of the executable image’s stack in bytes.|
-|[/SUBSYSTEM](../../build/reference/subsystem.md)|Specifies the execution environment.|
-|[/SWAPRUN](../../build/reference/swaprun.md)|Specifies that the executable image must be copied to the swap file, and then run from there.|
-|[/TSAWARE](../../build/reference/tsaware.md)|Specifies that the app is designed to run in a multi-user environment.|
-|[/VERSION](../../build/reference/version.md)|Sets the version number in the header.|
+|[/ALLOWBIND](allowbind.md)|Specifies whether a DLL can be bound.|
+|[/ALLOWISOLATION](allowisolation.md)|Specifies DLL or executable file manifest lookup behavior.|
+|[/APPCONTAINER](appcontainer.md)|Specifies whether the app must run within an AppContainer—for example, a UWP app.|
+|[/BIND](bind.md)|Sets the addresses for the entry points in the specified objects to speed load time.|
+|[/DYNAMICBASE](dynamicbase.md)|Specifies whether the DLL or executable image can be randomly rebased at load-time by using address space layout randomization (ASLR).|
+|[/ERRORREPORT](errorreport-editbin-exe.md)|Reports internal errors to Microsoft.|
+|[/HEAP](heap.md)|Sets the size of the executable image’s heap in bytes.|
+|[/HIGHENTROPYVA](highentropyva.md)|Specifies whether the DLL or executable image supports high entropy (64-bit) address space layout randomization (ASLR).|
+|[/INTEGRITYCHECK](integritycheck.md)|Specifies whether to check the digital signature at load time.|
+|[/LARGEADDRESSAWARE](largeaddressaware.md)|Specifies whether the object supports addresses that are larger than two gigabytes.|
+|[/NOLOGO](nologo-editbin.md)|Suppresses the EDITBIN startup banner.|
+|[/NXCOMPAT](nxcompat.md)|Specifies whether the executable image is compatible with Windows Data Execution Prevention.|
+|[/REBASE](rebase.md)|Sets the base addresses for the specified objects.|
+|[/RELEASE](release.md)|Sets the checksum in the header.|
+|[/SECTION](section-editbin.md)|Overrides the attributes of a section.|
+|[/STACK](stack.md)|Sets the size of the executable image’s stack in bytes.|
+|[/SUBSYSTEM](subsystem.md)|Specifies the execution environment.|
+|[/SWAPRUN](swaprun.md)|Specifies that the executable image must be copied to the swap file, and then run from there.|
+|[/TSAWARE](tsaware.md)|Specifies that the app is designed to run in a multi-user environment.|
+|[/VERSION](version.md)|Sets the version number in the header.|
 
-## See Also
+## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-[EDITBIN Reference](../../build/reference/editbin-reference.md)
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
+[EDITBIN Reference](editbin-reference.md)

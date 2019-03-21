@@ -17,7 +17,7 @@ Specify one or more files for the objects or images to be changed, and one or mo
 
 When you type the command `editbin` without any other command-line input, EDITBIN displays a usage statement that summarizes its options.
 
-## See Also
+## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-[EDITBIN Reference](../../build/reference/editbin-reference.md)
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
+[EDITBIN Reference](editbin-reference.md)

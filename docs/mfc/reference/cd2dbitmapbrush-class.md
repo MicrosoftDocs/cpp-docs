@@ -350,6 +350,6 @@ void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 *interpolationMode*<br/>
 The interpolation mode used when the brush bitmap is scaled or rotated
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

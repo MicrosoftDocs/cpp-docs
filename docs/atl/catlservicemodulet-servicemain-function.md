@@ -1,7 +1,6 @@
 ---
 title: "CAtlServiceModuleT::ServiceMain Function"
 ms.date: "11/04/2016"
-f1_keywords: ["ServiceMain", "CServiceModule::ServiceMain", "CServiceModule.ServiceMain"]
 helpviewer_keywords: ["ServiceMain method"]
 ms.assetid: f21408c1-1919-4dec-88d8-bf5b39ac9808
 ---
@@ -17,8 +16,7 @@ At startup, a service should also inform the SCM of its current status. It does 
 
 Now, `CAtlServiceModuleT::Run` is called to perform the main work of the service. `Run` continues to execute until the service is stopped.
 
-## See Also
+## See also
 
 [Services](../atl/atl-services.md)<br/>
 [CAtlServiceModuleT::ServiceMain](../atl/reference/catlservicemodulet-class.md#servicemain)
-

@@ -120,8 +120,7 @@ virtual void SetText(LPCTSTR lpszText);
 *lpszText*<br/>
 A pointer to the text to be used with the command.
 
-## See Also
+## See also
 
 [CCmdUI Class](../../mfc/reference/ccmdui-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

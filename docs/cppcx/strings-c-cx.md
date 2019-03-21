@@ -67,4 +67,3 @@ void GetDecodedStrings(std::vector<std::wstring> strings)
     }
 }
 ```
-

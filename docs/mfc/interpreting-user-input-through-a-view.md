@@ -28,7 +28,6 @@ For example, your application might need to implement direct mouse drawing in th
 
 Your view might also handle certain menu commands, such as those from the Edit menu to cut, copy, paste, or delete selected data using the Clipboard. Such a handler would call some of the Clipboard-related member functions of class `CWnd` to transfer a selected data item to or from the Clipboard.
 
-## See Also
+## See also
 
 [Using Views](../mfc/using-views.md)
-

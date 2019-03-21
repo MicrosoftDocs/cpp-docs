@@ -122,8 +122,7 @@ Points to a null-teminated string that specifies the name of a section in the in
 
 The profile name is the section of the application's .INI file or the registry that contains the control bar's state information. `SaveState` also saves the current screen size. You can retrieve control bar information from the registry or .INI file with `LoadState`.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

@@ -209,7 +209,7 @@ operator T*() const throw();
 
 Returns a pointer to the object data type defined in the class template.
 
-## See Also
+## See also
 
 [CAutoPtr Class](../../atl/reference/cautoptr-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

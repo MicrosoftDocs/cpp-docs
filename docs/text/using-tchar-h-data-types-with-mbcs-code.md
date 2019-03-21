@@ -1,7 +1,7 @@
 ---
 title: "Using TCHAR.H Data Types with _MBCS Code"
 ms.date: "11/04/2016"
-f1_keywords: ["tchar.h", "TCHAR"]
+f1_keywords: ["TCHAR"]
 helpviewer_keywords: ["mapping generic-text", "generic-text data types [C++]", "generic-text mappings [C++]", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
 ---
@@ -52,6 +52,6 @@ Following are three solutions for preventing this type conflict (and the C compi
 
    When you take this approach, you must be careful to ensure use of appropriate data types for string arguments and string return values. You can use type casting to ensure proper type matching or you can use the `_TXCHAR` generic-text data type. `_TXCHAR` maps to type **char** in SBCS code but maps to type **unsigned char** in MBCS code. For more information about generic-text macros, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the *Run-Time Library Reference*.
 
-## See Also
+## See also
 
 [Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md)

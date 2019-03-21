@@ -271,7 +271,7 @@ This method throws a `CFileException*` in response to file system errors.
 
 [!code-cpp[NVC_MFCFiles#40](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_4.cpp)]
 
-## See Also
+## See also
 
 [CFile Class](../../mfc/reference/cfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

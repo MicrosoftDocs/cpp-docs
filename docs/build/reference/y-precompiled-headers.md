@@ -9,19 +9,19 @@ ms.assetid: 1df5726a-8ebe-42c3-b618-d2f5e1ce8673
 
 The following compiler options affect the generation and use of precompiled headers:
 
-- [/Y- (Ignore Precompiled Header Options)](../../build/reference/y-ignore-precompiled-header-options.md)
+- [/Y- (Ignore Precompiled Header Options)](y-ignore-precompiled-header-options.md)
 
-- [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md)
+- [/Yc (Create Precompiled Header File)](yc-create-precompiled-header-file.md)
 
-- [/Yd (Place Debug Information in Object File)](../../build/reference/yd-place-debug-information-in-object-file.md)
+- [/Yd (Place Debug Information in Object File)](yd-place-debug-information-in-object-file.md)
 
-- [/Yl (Inject PCH Reference for Debug Library)](../../build/reference/yl-inject-pch-reference-for-debug-library.md)
+- [/Yl (Inject PCH Reference for Debug Library)](yl-inject-pch-reference-for-debug-library.md)
 
-- [/Yu (Use Precompiled Header File)](../../build/reference/yu-use-precompiled-header-file.md)
+- [/Yu (Use Precompiled Header File)](yu-use-precompiled-header-file.md)
 
-For details on working with precompiled headers, see [Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md).
+For details on working with precompiled headers, see [Precompiled Header Files](../creating-precompiled-header-files.md).
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

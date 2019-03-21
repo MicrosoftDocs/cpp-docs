@@ -1,7 +1,6 @@
 ---
 title: "Unicode and MBCS"
 ms.date: "11/04/2016"
-f1_keywords: ["_mbcs"]
 helpviewer_keywords: ["MBCS [C++], Unicode", "MFC [C++], character sets", "character sets [C++], multibyte", "run-time libraries [C++], language portability", "character sets [C++], Unicode", "Unicode [C++], MFC and C run-time functions", "multibyte characters [C++]", "runtime [C++], language portability"]
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
 ---
@@ -26,7 +25,7 @@ The Microsoft Foundation Classes (MFC) library, the C run-time library for Visua
 
 By definition, the ASCII character set is a subset of all multibyte-character sets. In many multibyte character sets, each character in the range 0x00 - 0x7F is identical to the character that has the same value in the ASCII character set. For example, in both ASCII and MBCS character strings, the 1-byte NULL character ('\0') has value 0x00 and indicates the terminating null character.
 
-## See Also
+## See also
 
 [Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
 [International Enabling](../text/international-enabling.md)

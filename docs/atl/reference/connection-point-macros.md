@@ -90,7 +90,7 @@ For more information about connection points in ATL, see the article [Connection
 
 [!code-cpp[NVC_ATL_Windowing#128](../../atl/codesnippet/cpp/connection-point-macros_3.h)]
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)<br/>
 [Connection Point Global Functions](../../atl/reference/connection-point-global-functions.md)

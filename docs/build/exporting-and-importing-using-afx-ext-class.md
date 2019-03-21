@@ -7,7 +7,7 @@ ms.assetid: 6b72cb2b-e92e-4ecd-bcab-c335e1d1cfde
 ---
 # Exporting and Importing Using AFX_EXT_CLASS
 
-[MFC extension DLLs](../build/extension-dlls-overview.md) use the macro **AFX_EXT_CLASS** to export classes; the executables that link to the MFC extension DLL use the macro to import classes. With the **AFX_EXT_CLASS** macro, the same header files that are used to build the MFC extension DLL can be used with the executables that link to the DLL.
+[MFC extension DLLs](extension-dlls-overview.md) use the macro **AFX_EXT_CLASS** to export classes; the executables that link to the MFC extension DLL use the macro to import classes. With the **AFX_EXT_CLASS** macro, the same header files that are used to build the MFC extension DLL can be used with the executables that link to the DLL.
 
 In the header file for your DLL, add the **AFX_EXT_CLASS** keyword to the declaration of your class as follows:
 
@@ -91,28 +91,28 @@ Because MFC always uses the `AFX_DATA` symbol on data items it defines within it
 
 ### What do you want to do?
 
-- [Export from a DLL using .def files](../build/exporting-from-a-dll-using-def-files.md)
+- [Export from a DLL using .def files](exporting-from-a-dll-using-def-files.md)
 
-- [Export from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [Export from a DLL using __declspec(dllexport)](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [Export C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [Export C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Export C functions for use in C or C++-language executables](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [Export C functions for use in C or C++-language executables](exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [Import into an application using __declspec(dllimport)](importing-into-an-application-using-declspec-dllimport.md)
 
-- [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)
+- [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)
 
 ### What do you want to know more about?
 
-- [Decorated names](../build/reference/decorated-names.md)
+- [Decorated names](reference/decorated-names.md)
 
-- [Importing and exporting inline functions](../build/importing-and-exporting-inline-functions.md)
+- [Importing and exporting inline functions](importing-and-exporting-inline-functions.md)
 
-- [Mutual imports](../build/mutual-imports.md)
+- [Mutual imports](mutual-imports.md)
 
-## See Also
+## See also
 
-[Exporting from a DLL](../build/exporting-from-a-dll.md)
+[Exporting from a DLL](exporting-from-a-dll.md)

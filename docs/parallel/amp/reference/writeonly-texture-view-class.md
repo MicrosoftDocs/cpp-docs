@@ -155,6 +155,6 @@ The type of the elements in the texture.
 *_Src*<br/>
 The texture that is used to create the `writeonly_texture_view`.
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

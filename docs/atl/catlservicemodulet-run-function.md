@@ -1,7 +1,6 @@
 ---
 title: "CAtlServiceModuleT::Run Function"
 ms.date: "11/04/2016"
-f1_keywords: ["CServiceModule::Run", "CServiceModule.Run", "CSecurityDescriptor"]
 helpviewer_keywords: ["ATL services, security"]
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
 ---
@@ -15,11 +14,10 @@ If you do not want the service to specify its own security, override `PreMessage
 
 Once security is specified, the object is registered with COM so that new clients can connect to the program. Finally, the program tells the service control manager (SCM) that it is running and the program enters a message loop. The program remains running until it posts a quit message upon service shutdown.
 
-## See Also
+## See also
 
 [Services](../atl/atl-services.md)<br/>
 [CSecurityDesc Class](../atl/reference/csecuritydesc-class.md)<br/>
 [CSid Class](../atl/reference/csid-class.md)<br/>
 [CDacl Class](../atl/reference/cdacl-class.md)<br/>
 [CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#run)
-

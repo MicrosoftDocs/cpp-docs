@@ -27,8 +27,7 @@ The following list describes the various notifications sent by the date and time
 
 - DTN_WMKEYDOWN Notifies the parent when the user types in a callback field. Handle this notification to emulate the same keyboard response supported for non-callback fields in a date and time picker control. For more information on this notification, see [Supporting Callback Fields in a DTP Control](/windows/desktop/Controls/date-and-time-picker-controls) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

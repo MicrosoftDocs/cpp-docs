@@ -7,7 +7,7 @@ ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
 ---
 # /Fi (Preprocess Output File Name)
 
-Specifies the name of the output file to which the [/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md) compiler option writes preprocessed output.
+Specifies the name of the output file to which the [/P (Preprocess to a File)](p-preprocess-to-a-file.md) compiler option writes preprocessed output.
 
 ## Syntax
 
@@ -35,8 +35,8 @@ The following command line preprocesses PROGRAM.cpp, preserves comments, adds [#
 CL /P /FiMYPROCESS.I PROGRAM.CPP
 ```
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md)<br/>
-[Specifying the Pathname](../../build/reference/specifying-the-pathname.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[/P (Preprocess to a File)](p-preprocess-to-a-file.md)<br/>
+[Specifying the Pathname](specifying-the-pathname.md)

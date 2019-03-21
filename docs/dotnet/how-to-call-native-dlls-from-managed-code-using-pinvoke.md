@@ -42,6 +42,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

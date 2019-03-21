@@ -14,7 +14,6 @@ See the following sample programs that illustrate using MFC's toolbars:
 
 - [DOCKTOOL](../visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [Toolbars](../mfc/toolbars.md)
-

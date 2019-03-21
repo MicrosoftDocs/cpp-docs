@@ -17,7 +17,6 @@ There are five categories of child window notification messages:
 |[Edit Control Handlers](../../mfc/reference/edit-control-handlers.md)|Handlers for edit control notification codes.|
 |[List Box Handlers](../../mfc/reference/list-box-handlers.md)|Handlers for list box notification codes.|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

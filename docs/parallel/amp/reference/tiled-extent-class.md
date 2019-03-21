@@ -210,6 +210,6 @@ static const int tile_dim2 = _Dim2;
 __declspec(property(get= get_tile_extent)) Concurrency::extent<rank> tile_extent;
 ```
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

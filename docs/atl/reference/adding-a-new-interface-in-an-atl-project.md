@@ -29,11 +29,10 @@ You can add a new interface to your control in one of two ways: manually or usin
 
 1. Implement methods on the interface.
 
-## See Also
+## See also
 
 [ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ Project Types](../../ide/visual-cpp-project-types.md)<br/>
-[Creating Desktop Projects By Using Application Wizards](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)<br/>
 [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)

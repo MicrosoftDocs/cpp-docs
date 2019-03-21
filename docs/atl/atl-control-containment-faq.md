@@ -94,7 +94,7 @@ Here's a summary:
 
 [!code-cpp[NVC_ATL_AxHost#1](../atl/codesnippet/cpp/hosting-activex-controls-using-atl-axhost_1.cpp)]
 
-## See Also
+## See also
 
 [Control Containment FAQ](../atl/atl-control-containment-faq.md)<br/>
 [AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)<br/>

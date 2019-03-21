@@ -24,11 +24,11 @@ The /FU switch takes just one file name. To specify multiple files, use /FU with
 
 If you are using C++/CLI and are referencing metadata to use the [Friend Assemblies](../../dotnet/friend-assemblies-cpp.md) feature, you can't use **/FU**. You must reference the metadata in code by using `#using`—together with the `[as friend]` attribute. Friend assemblies are not supported in Visual C++ component extensions C++/CX.
 
-For information about how to create an assembly or module for the common language runtime (CLR), see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md). For information about how to build in C++/CX, see [Building apps and libraries](../../cppcx/building-apps-and-libraries-c-cx.md).
+For information about how to create an assembly or module for the common language runtime (CLR), see [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md). For information about how to build in C++/CX, see [Building apps and libraries](../../cppcx/building-apps-and-libraries-c-cx.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
 
@@ -38,8 +38,8 @@ For information about how to create an assembly or module for the common languag
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedUsingFiles%2A>.
 
-## See Also
+## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

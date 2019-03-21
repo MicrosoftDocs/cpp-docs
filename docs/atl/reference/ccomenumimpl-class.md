@@ -272,7 +272,7 @@ A standard HRESULT value.
 
 Returns E_INVALIDARG if *celt* is zero, returns S_FALSE if less than *celt* elements are returned, returns S_OK otherwise.
 
-## See Also
+## See also
 
 [IEnumOnSTLImpl Class](../../atl/reference/ienumonstlimpl-class.md)<br/>
 [CComEnum Class](../../atl/reference/ccomenum-class.md)<br/>

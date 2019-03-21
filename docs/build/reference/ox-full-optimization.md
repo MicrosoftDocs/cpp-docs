@@ -15,35 +15,35 @@ The **/Ox** compiler option enables a combination of optimizations that favor sp
 
 ## Remarks
 
-The **/Ox** compiler option enables the **/O** compiler options that favor speed. The **/Ox** compiler option does not include the additional [/GF (Eliminate Duplicate Strings)](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy (Enable Function-Level Linking)](../../build/reference/gy-enable-function-level-linking.md) options enabled by [/O1 or /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md). The additional options applied by **/O1** and **/O2** can cause pointers to strings or to functions to share a target address, which can affect debugging and strict language conformance. The **/Ox** option is an easy way to enable most optimizations without including **/GF** and **/Gy**. For more information, see the descriptions of the [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy](../../build/reference/gy-enable-function-level-linking.md) options.
+The **/Ox** compiler option enables the **/O** compiler options that favor speed. The **/Ox** compiler option does not include the additional [/GF (Eliminate Duplicate Strings)](gf-eliminate-duplicate-strings.md) and [/Gy (Enable Function-Level Linking)](gy-enable-function-level-linking.md) options enabled by [/O1 or /O2 (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md). The additional options applied by **/O1** and **/O2** can cause pointers to strings or to functions to share a target address, which can affect debugging and strict language conformance. The **/Ox** option is an easy way to enable most optimizations without including **/GF** and **/Gy**. For more information, see the descriptions of the [/GF](gf-eliminate-duplicate-strings.md) and [/Gy](gy-enable-function-level-linking.md) options.
 
 The **/Ox** compiler option is the same as using the following options in combination:
 
-- [/Ob (Inline Function Expansion)](../../build/reference/ob-inline-function-expansion.md), where the option parameter is 2 (**/Ob2**)
+- [/Ob (Inline Function Expansion)](ob-inline-function-expansion.md), where the option parameter is 2 (**/Ob2**)
 
-- [/Og (Global Optimizations)](../../build/reference/og-global-optimizations.md)
+- [/Og (Global Optimizations)](og-global-optimizations.md)
 
-- [/Oi (Generate Intrinsic Functions)](../../build/reference/oi-generate-intrinsic-functions.md)
+- [/Oi (Generate Intrinsic Functions)](oi-generate-intrinsic-functions.md)
 
-- [/Ot (Favor Fast Code)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md)
+- [/Ot (Favor Fast Code)](os-ot-favor-small-code-favor-fast-code.md)
 
-- [/Oy (Frame-Pointer Omission)](../../build/reference/oy-frame-pointer-omission.md)
+- [/Oy (Frame-Pointer Omission)](oy-frame-pointer-omission.md)
 
 **/Ox** is mutually exclusive from:
 
-- [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md)
+- [/O1 (Minimize Size)](o1-o2-minimize-size-maximize-speed.md)
 
-- [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md)
+- [/O2 (Maximize Speed)](o1-o2-minimize-size-maximize-speed.md)
 
-- [/Od (Disable (Debug))](../../build/reference/od-disable-debug.md)
+- [/Od (Disable (Debug))](od-disable-debug.md)
 
-You can cancel the bias toward speed of the **/Ox** compiler option if you specify **/Oxs**, which combines the **/Ox** compiler option with [/Os (Favor Small Code)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). The combined options favor smaller code size.  The **/Oxs** option is exactly the same as specifying **/Ox** **/Os** when the options appear in that order.
+You can cancel the bias toward speed of the **/Ox** compiler option if you specify **/Oxs**, which combines the **/Ox** compiler option with [/Os (Favor Small Code)](os-ot-favor-small-code-favor-fast-code.md). The combined options favor smaller code size.  The **/Oxs** option is exactly the same as specifying **/Ox** **/Os** when the options appear in that order.
 
-To apply all available file-level optimizations for release builds, we recommend you specify [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Ox**, and [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Oxs**. For even more optimization in release builds, also consider the [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md) linker option.
+To apply all available file-level optimizations for release builds, we recommend you specify [/O2 (Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) instead of **/Ox**, and [/O1 (Minimize Size)](o1-o2-minimize-size-maximize-speed.md) instead of **/Oxs**. For even more optimization in release builds, also consider the [/GL (Whole Program Optimization)](gl-whole-program-optimization.md) compiler option and [/LTCG (Link-time Code Generation)](ltcg-link-time-code-generation.md) linker option.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Under **Configuration Properties**, open **C/C++** and then choose the **Optimization** property page.
 
@@ -53,8 +53,8 @@ To apply all available file-level optimizations for release builds, we recommend
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
 
-## See Also
+## See also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

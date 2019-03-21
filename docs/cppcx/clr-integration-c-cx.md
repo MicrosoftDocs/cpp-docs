@@ -63,6 +63,6 @@ When the Visual C++ or C# compilers read a .winmd file, they automatically map c
 
 IReference\<T> in the Windows Runtime maps to Nullable\<T> in .NET.
 
-## See Also
+## See also
 
 [Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)

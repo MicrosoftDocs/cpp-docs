@@ -35,4 +35,3 @@ Describes the various synchronization primitives that the Concurrency Runtime pr
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 Describes how to use the Task Scheduler to adjust the performance of your applications.
-

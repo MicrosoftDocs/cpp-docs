@@ -10,8 +10,7 @@ As users click tabs or buttons, the tab control ([CTabCtrl](../mfc/reference/cta
 
 Process WM_NOTIFY messages from the tab control in your view or dialog class. Use the Properties window to create an [OnChildNotify](../mfc/reference/cwnd-class.md#onchildnotify) handler function with a switch statement based on which notification message is being handled. For a list of the notifications a tab control can send to its parent window, see the **Notifications** section of [Tab Control Reference](/windows/desktop/controls/tab-control-reference) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

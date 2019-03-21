@@ -503,6 +503,6 @@ In the following example (taken from the [ASYNC](../../visual-cpp-samples.md) sa
 
 [!code-cpp[NVC_ATL_Windowing#87](../../atl/codesnippet/cpp/cbindstatuscallback-class_2.h)]
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

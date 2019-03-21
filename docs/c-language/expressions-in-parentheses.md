@@ -29,6 +29,6 @@ The compiler is free to evaluate the two sides of the multiplication in any orde
 
 Exceptions resulting from side effects are discussed in [Side Effects](../c-language/side-effects.md).
 
-## See Also
+## See also
 
 [C Primary Expressions](../c-language/c-primary-expressions.md)

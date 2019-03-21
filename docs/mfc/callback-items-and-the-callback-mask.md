@@ -26,8 +26,7 @@ In addition to defining callback items, you can also modify the control's callba
 
 For further information on retrieving and setting this mask, see [CListCtrl::GetCallbackMask](../mfc/reference/clistctrl-class.md#getcallbackmask) and [CListCtrl::SetCallbackMask](../mfc/reference/clistctrl-class.md#setcallbackmask).
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

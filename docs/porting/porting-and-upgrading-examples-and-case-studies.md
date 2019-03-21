@@ -17,6 +17,6 @@ Here, you can read about what it took to migrate some modest samples and tools t
 
 - [Spy++](../porting/porting-guide-spy-increment.md) is an application that inspects and provides information about UI elements in running applications.
 
-## See Also
+## See also
 
 [Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)

@@ -8,7 +8,7 @@ ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 
 This article contains a categorical list of compiler options. For an alphabetical list, see [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md).
 
-### Optimization
+## Optimization
 
 |Option|Purpose|
 |------------|-------------|
@@ -24,7 +24,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Oy](oy-frame-pointer-omission.md)|Omits frame pointer. (x86 only)|
 |[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specified architecture, or for a range of architectures.|
 
-### Code generation
+## Code generation
 
 |Option|Purpose|
 |------------|-------------|
@@ -65,7 +65,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|Selects how the volatile keyword is interpreted.|
 
-### Output files
+## Output files
 
 |Option|Purpose|
 |------------|-------------|
@@ -80,7 +80,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Fp](fp-name-dot-pch-file.md)|Specifies a precompiled header file name.|
 |[/FR, /Fr](fr-fr-create-dot-sbr-file.md)|Name generated .sbr browser files.|
 
-### Preprocessor
+## Preprocessor
 
 |Option|Purpose|
 |------------|-------------|
@@ -98,7 +98,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/u](u-u-undefine-symbols.md)|Removes all predefined macros.|
 |[/X](x-ignore-standard-include-paths.md)|Ignores the standard include directory.|
 
-### Language
+## Language
 
 |Option|Purpose|
 |------------|-------------|
@@ -111,9 +111,9 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/vms](vmm-vms-vmv-general-purpose-representation.md)|Declares single inheritance.|
 |[/vmv](vmm-vms-vmv-general-purpose-representation.md)|Declares virtual inheritance.|
 |[/Z7](z7-zi-zi-debug-information-format.md)|Generates C 7.0-compatible debugging information.|
-|[/Za](za-ze-disable-language-extensions.md)|Disables language extensions.|
+|[/Za](za-ze-disable-language-extensions.md)|Disables C89 language extensions.|
 |[/Zc](zc-conformance.md)|Specifies standard behavior under [/Ze](za-ze-disable-language-extensions.md).|
-|[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|
+|[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables C89 language extensions.|
 |[/Zf](zf.md)|Improves PDB generation time in parallel builds.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue. (x86 only)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
@@ -122,7 +122,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Zs](zs-syntax-check-only.md)|Checks syntax only.|
 |[/ZW](zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|
 
-### Linking
+## Linking
 
 |Option|Purpose|
 |------------|-------------|
@@ -136,7 +136,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/MT](md-mt-ld-use-run-time-library.md)|Compiles to create a multithreaded executable file, by using LIBCMT.lib.|
 |[/MTd](md-mt-ld-use-run-time-library.md)|Compiles to create a debug multithreaded executable file, by using LIBCMTD.lib.|
 
-### Miscellaneous
+## Miscellaneous
 
 |Option|Purpose|
 |------------|-------------|
@@ -188,7 +188,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/permissive-](permissive-standards-conformance.md)|Set standard-conformance mode.|
 |[/std](std-specify-language-standard-version.md)|C++ standard version compatibility selector.|
 
-### Deprecated and removed compiler options
+## Deprecated and removed compiler options
 
 |Option|Purpose|
 |------------|-------------|
@@ -211,5 +211,5 @@ This article contains a categorical list of compiler options. For an alphabetica
 ## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>

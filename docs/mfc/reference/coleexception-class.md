@@ -95,9 +95,8 @@ For more information on SCODE, see [Structure of COM Error Codes](/windows/deskt
 
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-## See Also
+## See also
 
 [MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

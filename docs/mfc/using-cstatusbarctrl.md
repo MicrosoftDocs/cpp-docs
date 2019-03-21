@@ -23,7 +23,6 @@ You can use the status bar control ([CStatusBarCtrl](../mfc/reference/cstatusbar
 
 - [Using Tooltips in a CStatusBarCtrl Object](../mfc/using-tooltips-in-a-cstatusbarctrl-object.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

@@ -30,7 +30,7 @@ Isolated applications are applications that have manifests built into the progra
 
 1. Build the solution.
 
-## See Also
+## See also
 
 [Isolated Applications](/windows/desktop/SbsCs/isolated-applications)<br/>
 [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)

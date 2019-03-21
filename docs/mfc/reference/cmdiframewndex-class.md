@@ -1866,7 +1866,7 @@ virtual void WinHelp(
 
 This method overrides [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

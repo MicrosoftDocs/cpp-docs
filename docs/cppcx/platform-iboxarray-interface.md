@@ -57,6 +57,6 @@ Returns the value that was originally stored in this object.
 
 For an example, see [Boxing](../cppcx/boxing-c-cx.md).
 
-## See Also
+## See also
 
 [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

@@ -20,7 +20,6 @@ You can customize the appearance and contents of new items when they are created
 
 - [Using image lists with header controls](../mfc/using-image-lists-with-header-controls.md)
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
-

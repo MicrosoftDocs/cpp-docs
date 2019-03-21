@@ -58,6 +58,6 @@ else
 
 The braces surrounding the inner **if** statement in this example make the **else** clause part of the outer **if** statement. If `i` is less than or equal to 0, `i` is assigned to `x`.
 
-## See Also
+## See also
 
 [if-else Statement (C++)](../cpp/if-else-statement-cpp.md)

@@ -2,7 +2,6 @@
 title: "Properties and Property Pages Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.properties"]
 helpviewer_keywords: ["property pages, classes", "properties [ATL], classes", "properties [ATL]"]
 ms.assetid: 31616f98-69f8-48b2-8d58-b8e7d1c2b2d8
 ---
@@ -30,8 +29,7 @@ The following classes support properties and property pages:
 
 [ATL COM Property Pages](../atl/atl-com-property-pages.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)<br/>
 [Property Map Macros](../atl/reference/property-map-macros.md)
-

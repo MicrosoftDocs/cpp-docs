@@ -13,7 +13,6 @@ The following map entry corresponds to the function prototype.
 |---------------|------------------------|
 |ON_CONTROL( \<wNotifyCode>, \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

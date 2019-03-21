@@ -102,6 +102,6 @@ struct short_vector<double, 4>;
 short_vector();
 ```
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

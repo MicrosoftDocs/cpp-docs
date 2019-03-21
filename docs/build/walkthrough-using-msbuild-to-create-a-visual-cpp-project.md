@@ -257,8 +257,8 @@ To rebuild your project with the Visual C++ 11.0 Windows XP toolset, type the fo
 
 MSBuild provides various ways to customize your build process. The following topics show how to add custom build steps, tools, and events to your MSBuild project:
 
-- [How to: Add a Custom Build Step to MSBuild Projects](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)
+- [How to: Add a Custom Build Step to MSBuild Projects](how-to-add-a-custom-build-step-to-msbuild-projects.md)
 
-- [How to: Add Custom Build Tools to MSBuild Projects](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)
+- [How to: Add Custom Build Tools to MSBuild Projects](how-to-add-custom-build-tools-to-msbuild-projects.md)
 
-- [How to: Use Build Events in MSBuild Projects](../build/how-to-use-build-events-in-msbuild-projects.md)
+- [How to: Use Build Events in MSBuild Projects](how-to-use-build-events-in-msbuild-projects.md)

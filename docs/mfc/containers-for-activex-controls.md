@@ -46,7 +46,6 @@ The following are non-Microsoft applications that support ActiveX control contai
 
 - NCompass Plug-in for Netscape Navigator
 
-## See Also
+## See also
 
 [ActiveX Control Containers](../mfc/activex-control-containers.md)
-

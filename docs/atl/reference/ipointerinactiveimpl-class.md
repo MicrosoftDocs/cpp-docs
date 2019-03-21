@@ -111,6 +111,6 @@ Returns E_NOTIMPL.
 
 See [IPointerInactive::OnInactiveSetCursor](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-oninactivesetcursor) in the Windows SDK.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

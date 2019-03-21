@@ -123,7 +123,7 @@ A standard HRESULT value.
 
 [!code-cpp[NVC_ATL_Windowing#92](../../atl/codesnippet/cpp/connection-point-global-functions_3.h)]
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Connection Point Macros](../../atl/reference/connection-point-macros.md)

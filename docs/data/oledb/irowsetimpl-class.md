@@ -69,7 +69,7 @@ Storage unit for all row handles held by the provider.
 
 ## Remarks
 
-[IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms720986(v=vs.85)) is the base rowset interface.
+[IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) is the base rowset interface.
 
 ## <a name="addrefrows"></a> IRowsetImpl::AddRefRows
 
@@ -86,7 +86,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 
 #### Parameters
 
-See [IRowset::AddRefRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="createrow"></a> IRowsetImpl::CreateRow
 
@@ -129,7 +129,7 @@ STDMETHOD(GetData )(HROW hRow,
 
 #### Parameters
 
-See [IRowset::GetData](https://docs.microsoft.com/previous-versions/windows/desktop/ms716988(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowset::GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IRowset::GetData`:
 
@@ -162,7 +162,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 
 ### Return Value
 
-The [DBSTATUS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) flags for the column.
+The [DBSTATUS](/previous-versions/windows/desktop/ms722617(v=vs.85)) flags for the column.
 
 ## <a name="getnextrows"></a> IRowsetImpl::GetNextRows
 
@@ -180,7 +180,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 
 #### Parameters
 
-See [IRowset::GetNextRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms709827(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="irowsetimpl"></a> IRowsetImpl::IRowsetImpl
 
@@ -212,7 +212,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 
 #### Parameters
 
-See [IRowset::AddRefRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -234,7 +234,7 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 
 #### Parameters
 
-See [IRowset::ReleaseRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="restartposition"></a> IRowsetImpl::RestartPosition
 
@@ -248,7 +248,7 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 
 #### Parameters
 
-See [IRowset::RestartPosition](https://docs.microsoft.com/previous-versions/windows/desktop/ms712877(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
@@ -269,7 +269,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
 #### Parameters
 
 *statusFlags*<br/>
-The [DBSTATUS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) flags to set for the column.
+The [DBSTATUS](/previous-versions/windows/desktop/ms722617(v=vs.85)) flags to set for the column.
 
 *currentRow*<br/>
 The current row.

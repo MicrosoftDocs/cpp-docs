@@ -96,7 +96,7 @@ virtual BOOL Create(
 The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for a list of windows styles.
 
 *rect*<br/>
-A reference to the IP Address Control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+A reference to the IP Address Control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 A pointer to the IP Address Control's parent window. It must not be NULL.
@@ -140,7 +140,7 @@ Specifies the extended style of the control being created. For a list of extende
 The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for a list of windows styles.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -303,8 +303,7 @@ A reference to an integer receiving the upper limit of the specified field in th
 
 This member function implements the behavior of the Win32 message [IPM_SETRANGE](/windows/desktop/Controls/ipm-setrange), as described in the Windows SDK. Use the two parameters, *nLower* and *nUpper*, to indicate the lower and upper limits of the field, instead of the *wRange* parameter used with the Win32 message.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

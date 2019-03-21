@@ -248,6 +248,6 @@ const index<rank> tile_origin
 __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
 ```
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

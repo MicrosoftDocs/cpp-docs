@@ -39,7 +39,6 @@ Your **catch** block must delete an exception when:
 
 For more information, see [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md).
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

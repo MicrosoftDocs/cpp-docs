@@ -171,6 +171,6 @@ A reference to the object to be compared.
 
 The result of the comparison between *m_T* and *rSrc*.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

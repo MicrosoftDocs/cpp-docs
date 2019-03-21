@@ -53,8 +53,7 @@ The LVN_ODFINDITEM notification message is sent by the virtual list control when
 
 You should be prepared to search for an item that matches the information given by the list view control. You should return the index of the item if successful, or -1 if no matching item is found.
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

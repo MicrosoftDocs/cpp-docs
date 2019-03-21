@@ -298,7 +298,7 @@ Nonzero if the found file has the name "." or "..", which indicates that the fou
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsDots`.
 
-## See Also
+## See also
 
 [CFileFind Class](../../mfc/reference/cfilefind-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

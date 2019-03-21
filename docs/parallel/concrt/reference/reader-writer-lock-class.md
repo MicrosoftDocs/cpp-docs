@@ -203,7 +203,7 @@ void unlock();
 
 If there are writers waiting on the lock, the release of the lock will always go to the next writer in FIFO order. This lock is biased towards writers and can starve readers under a continuous load of writers.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [critical_section Class](critical-section-class.md)

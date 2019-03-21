@@ -21,13 +21,13 @@ This option speeds function calls, because no frame pointers need to be set up a
 
 If your code requires frame-based addressing, you can specify the **/Oy-** option after the **/Ox** option or use [optimize](../../preprocessor/optimize.md) with the "**y**" and **off** arguments to gain maximum optimization with frame-based addressing. The compiler detects most situations where frame-based addressing is required (for instance, with the `_alloca` and `setjmp` functions and with structured exception handling).
 
-The [/Ox (Enable Most Speed Optimizations)](../../build/reference/ox-full-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) options imply **/Oy**. Specifying **/Oy-** after the **/Ox**, **/O1**, or **/O2** option disables **/Oy**, whether it is explicit or implied.
+The [/Ox (Enable Most Speed Optimizations)](ox-full-optimization.md) and [/O1, /O2 (Minimize Size, Maximize Speed)](o1-o2-minimize-size-maximize-speed.md) options imply **/Oy**. Specifying **/Oy-** after the **/Ox**, **/O1**, or **/O2** option disables **/Oy**, whether it is explicit or implied.
 
-The **/Oy** compiler option makes using the debugger more difficult because the compiler suppresses frame pointer information. If you specify a debug compiler option ([/Z7, /Zi, /ZI](../../build/reference/z7-zi-zi-debug-information-format.md)), we recommend that you specify the **/Oy-** option after any other optimization compiler options.
+The **/Oy** compiler option makes using the debugger more difficult because the compiler suppresses frame pointer information. If you specify a debug compiler option ([/Z7, /Zi, /ZI](z7-zi-zi-debug-information-format.md)), we recommend that you specify the **/Oy-** option after any other optimization compiler options.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Optimization** property page.
 
@@ -37,8 +37,8 @@ The **/Oy** compiler option makes using the debugger more difficult because the 
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.OmitFramePointers%2A>.
 
-## See Also
+## See also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>

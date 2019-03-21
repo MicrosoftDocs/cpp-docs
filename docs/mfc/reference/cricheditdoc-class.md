@@ -128,7 +128,7 @@ When TRUE, indicates that [CRichEditCtrl::StreamIn](../../mfc/reference/crichedi
 BOOL m_bRTF;
 ```
 
-## See Also
+## See also
 
 [MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
 [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)<br/>

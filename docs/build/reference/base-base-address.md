@@ -16,9 +16,9 @@ Specifies the base address for a program.
 ## Remarks
 
 > [!NOTE]
-> For security reasons, Microsoft recommends you use the [/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md) option instead of specifying base addresses for your executables. This generates an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature of Windows. The /DYNAMICBASE option is on by default.
+> For security reasons, Microsoft recommends you use the [/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md) option instead of specifying base addresses for your executables. This generates an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature of Windows. The /DYNAMICBASE option is on by default.
 
-The /BASE option sets a base address for the program, overriding the default location for an .exe  or DLL file. The default base address for an .exe file is 0x400000 for 32-bit images or 0x140000000 for 64-bit images. For a DLL, the default base address is 0x10000000 for 32-bit images or 0x180000000 for 64-bit images. On operating systems that do not support address space layout randomization (ASLR), or when the /DYNAMICBASE:NO option was set, the operating system first attempts to load a program at its specified or default base address. If sufficient space is not available there, the system relocates the program. To prevent relocation, use the [/FIXED](../../build/reference/fixed-fixed-base-address.md) option.
+The /BASE option sets a base address for the program, overriding the default location for an .exe  or DLL file. The default base address for an .exe file is 0x400000 for 32-bit images or 0x140000000 for 64-bit images. For a DLL, the default base address is 0x10000000 for 32-bit images or 0x180000000 for 64-bit images. On operating systems that do not support address space layout randomization (ASLR), or when the /DYNAMICBASE:NO option was set, the operating system first attempts to load a program at its specified or default base address. If sufficient space is not available there, the system relocates the program. To prevent relocation, use the [/FIXED](fixed-fixed-base-address.md) option.
 
 The linker issues an error if *address* is not a multiple of 64K. You can optionally specify the size of the program; the linker issues a warning if the program can't fit in the size you specified.
 
@@ -40,11 +40,11 @@ If the file that contains these lines is called DLLS.txt, the following example 
 link dlltwo.obj /dll /base:@dlls.txt,two
 ```
 
-Another way to set the base address is by using the *BASE* argument in a [NAME](../../build/reference/name-c-cpp.md) or [LIBRARY](../../build/reference/library.md) statement. The /BASE and [/DLL](../../build/reference/dll-build-a-dll.md) options together are equivalent to the **LIBRARY** statement.
+Another way to set the base address is by using the *BASE* argument in a [NAME](name-c-cpp.md) or [LIBRARY](library.md) statement. The /BASE and [/DLL](dll-build-a-dll.md) options together are equivalent to the **LIBRARY** statement.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
@@ -54,7 +54,7 @@ Another way to set the base address is by using the *BASE* argument in a [NAME](
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.BaseAddress%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

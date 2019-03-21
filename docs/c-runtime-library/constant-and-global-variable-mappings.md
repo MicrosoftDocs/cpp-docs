@@ -17,7 +17,7 @@ These generic-text constant, global variable, and standard-type mappings are def
 |`_tenviron`|`_environ`|`_environ`|`_wenviron`|
 |`_tpgmptr`|`_pgmptr`|`_pgmptr`|`_wpgmptr`|
 
-## See Also
+## See also
 
 [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
 [Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>

@@ -90,6 +90,6 @@ int32 IntPtr::ToInt32();
 
 A 32-bit integer.
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

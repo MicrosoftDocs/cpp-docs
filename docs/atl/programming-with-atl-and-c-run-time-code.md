@@ -27,7 +27,6 @@ Provides details on how the VCRuntime and CRT startup code works.
 [C Run-Time Libraries](../c-runtime-library/crt-library-features.md)<br/>
 Discusses the various .lib files that comprise the C run-time libraries and lists their associated compiler options and preprocessor directives.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

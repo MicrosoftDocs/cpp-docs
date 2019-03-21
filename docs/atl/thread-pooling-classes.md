@@ -2,7 +2,6 @@
 title: "Thread Pooling Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.threads.pooling"]
 helpviewer_keywords: ["thread pooling, classes", "threading [ATL], pooling", "pooling worker threads"]
 ms.assetid: 01fa2c1c-12ae-4781-b772-0a74b6365a8c
 ---
@@ -16,7 +15,6 @@ The following classes support thread pooling:
 
 - [CComSimpleThreadAllocator](../atl/reference/ccomsimplethreadallocator-class.md) Manages thread selection for an EXE module.
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

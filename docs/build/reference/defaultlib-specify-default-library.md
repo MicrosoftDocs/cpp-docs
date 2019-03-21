@@ -22,11 +22,11 @@ The name of a library to search when resolving external references.
 
 The **/DEFAULTLIB** option adds one *library* to the list of libraries that LINK searches when resolving references. A library specified with **/DEFAULTLIB** is searched after libraries specified explicitly on the command line and before default libraries named in .obj files.
 
-When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](../../build/reference/nodefaultlib-ignore-libraries.md) option overrides all **/DEFAULTLIB**:*library* options. The **/NODEFAULTLIB**:*library* option overrides **/DEFAULTLIB**:*library* when the same *library* name is specified in both.
+When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](nodefaultlib-ignore-libraries.md) option overrides all **/DEFAULTLIB**:*library* options. The **/NODEFAULTLIB**:*library* option overrides **/DEFAULTLIB**:*library* when the same *library* name is specified in both.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -38,5 +38,5 @@ When used without arguments, the [/NODEFAULTLIB (Ignore All Default Libraries)](
 
 ## See also
 
-- [Setting Linker Options](../../build/reference/setting-linker-options.md)
-- [Linker Options](../../build/reference/linker-options.md)
+- [MSVC linker reference](linking.md)
+- [MSVC Linker Options](linker-options.md)

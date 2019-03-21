@@ -13,7 +13,7 @@ You can add an event to the class implementing the dialog box using the [Propert
 
 **To add an event handler to a dialog box control:**
 
-1. Double-click the dialog box resource in [Resource View](../windows/resource-view-window.md) to open the dialog box resource that contains the control in the [dialog editor](../windows/dialog-editor.md).
+1. Double-click the dialog box resource in [Resource View](../windows/how-to-create-a-resource-script-file.md#create-resources) to open the dialog box resource that contains the control in the [dialog editor](../windows/dialog-editor.md).
 
 1. Right-click the control for which you want to handle the notification event.
 

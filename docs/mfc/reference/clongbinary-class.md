@@ -81,7 +81,7 @@ Stores a Windows HGLOBAL handle to the actual binary large object data.
 HGLOBAL m_hData;
 ```
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

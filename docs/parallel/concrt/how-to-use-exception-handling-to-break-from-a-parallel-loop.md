@@ -60,7 +60,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc task-tree-search.cpp**
 
-## See Also
+## See also
 
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
 [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
@@ -69,4 +69,3 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 [task_group Class](reference/task-group-class.md)<br/>
 [structured_task_group Class](../../parallel/concrt/reference/structured-task-group-class.md)<br/>
 [parallel_for_each Function](reference/concurrency-namespace-functions.md#parallel_for_each)
-

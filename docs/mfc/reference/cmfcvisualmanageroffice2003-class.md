@@ -2414,7 +2414,7 @@ If a `CMFCVisualManagerOffice2003` object uses a global theme, it draws the GUI 
 
 If a `CMFCVisualManagerOffice2003` object does not use a global theme, it draws the GUI elements by using the [CMFCVisualManagerOfficeXP Class](../../mfc/reference/cmfcvisualmanagerofficexp-class.md).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

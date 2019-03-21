@@ -416,7 +416,7 @@ Calls [CAtlFile::Write](../../atl/reference/catlfile-class.md#write).
 
 See the example for [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CAtlFile Class](../../atl/reference/catlfile-class.md)

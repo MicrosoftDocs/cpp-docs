@@ -27,7 +27,6 @@ The easiest way to access an ActiveX control from within its control container a
 
 1. Click **Finish** to accept your choices and exit the Add Member Variable Wizard.
 
-## See Also
+## See also
 
 [ActiveX Control Containers](../mfc/activex-control-containers.md)
-

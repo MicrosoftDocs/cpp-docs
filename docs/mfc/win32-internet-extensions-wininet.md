@@ -36,8 +36,7 @@ The following topics provide steps for performing typical WinInet tasks:
 
 - [Steps in a Typical HTTP Client Application](../mfc/steps-in-a-typical-http-client-application.md)
 
-## See Also
+## See also
 
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
 [WinInet Basics](../mfc/wininet-basics.md)
-

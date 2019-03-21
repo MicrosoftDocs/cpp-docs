@@ -1,7 +1,7 @@
 ---
 title: "What's New for Visual C++ in Visual Studio"
 ms.date: "11/15/2017"
-ms.technology: ["cpp-ide"]
+ms.technology: "cpp-ide"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: "mikeblome"
 ms.author: "mblome"
@@ -309,7 +309,7 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 
 ## Non-MSBuild projects with Open Folder
 
-Visual Studio 2017 introduces the **Open Folder** feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it much simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With **Open Folder** you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects in Visual C++](ide/non-msbuild-projects.md).
+Visual Studio 2017 introduces the **Open Folder** feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it much simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With **Open Folder** you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects for C++](build/open-folder-projects-cpp.md).
 
 - Improvements to the Open Folder experience. You can customize the experience through these .json files:
   - CppProperties.json to customize the IntelliSense and browsing experience.
@@ -324,7 +324,7 @@ Visual Studio 2017 introduces the **Open Folder** feature, which enables you to 
 
 ## CMake support via Open Folder
 
-Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md). Opening CMake projects with **Open Folder** automatically configures the environment for C++ editing, building and debugging.
+Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual C++](build/cmake-projects-in-visual-studio.md). Opening CMake projects with **Open Folder** automatically configures the environment for C++ editing, building and debugging.
 
 - C++ IntelliSense works without the need to create a CppProperties.json file in the root folder. Along with this, we've added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
 
@@ -336,7 +336,7 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
 **Visual Studio 2017 version 15.5**: Support added for importing existing CMake caches.
 
-**Visual Studio 2017 version 15.7**: Support added for CMake 3.11, code analysis in CMake projects, Targets view in Solution Explorer, options for cache generation, and single file compilation. For more information, see [CMake Support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) and [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md).
+**Visual Studio 2017 version 15.7**: Support added for CMake 3.11, code analysis in CMake projects, Targets view in Solution Explorer, options for cache generation, and single file compilation. For more information, see [CMake Support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) and [CMake projects in Visual C++](build/cmake-projects-in-visual-studio.md).
 
 ## Windows desktop development with C++
 

@@ -63,7 +63,7 @@ An existing `CComHeapPtr` object.
 
 The heap pointer can optionally be created using an existing `CComHeapPtr` object. If so, the new `CComHeapPtr` object assumes responsibility for managing the new pointer and resources.
 
-## See Also
+## See also
 
 [CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
 [CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)<br/>

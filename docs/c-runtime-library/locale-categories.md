@@ -30,7 +30,7 @@ Locale categories are manifest constants used by the localization routines to sp
 
 See [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for an example.
 
-## See Also
+## See also
 
 [localeconv](../c-runtime-library/reference/localeconv.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

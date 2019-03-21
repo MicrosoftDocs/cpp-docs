@@ -56,6 +56,6 @@ The following table lists the `DEVMODE` and `TEXTMETRIC` string conversion macro
 |DEVMODET2OLE|TEXTMETRICT2OLE|
 |DEVMODEW2A|TEXTMETRICW2A|
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

@@ -26,12 +26,6 @@ The [UNIX Custom Application Migration Guide](https://technet.microsoft.com/libr
 
 The [Unix Migration Project Guide](https://technet.microsoft.com/library/bb656287.aspx) supplements the UNIX Custom Application Migration Guide by providing high-level help on migrating substantial projects from UNIX to Win32. The Guide provides advice on issues to consider at each stage of project migration.
 
-### Microsoft Windows Services for UNIX (SFU)
-
-Microsoft Windows Services for UNIX (SFU) provides a full range of cross-platform services for integrating Windows into existing UNIX-based environments. Services for UNIX provides file sharing, remote access and administration, password synchronization, common directory management, a common set of utilities, and a shell.
-
-[Windows Services for UNIX](http://www.microsoft.com/downloads/details.aspx?FamilyID=896c9688-601b-44f1-81a4-02878ff11778&displaylang=en)
-
 ### InteropSystems.com
 
 [http://www.interopsystems.com/](http://www.interopsystems.com/)
@@ -64,8 +58,8 @@ Basic UNIX applications, including many CGI applications, should port easily to 
 
 Another option UNIX programmers look at is the Windows POSIX subsystem. However, it only supports POSIX 1003.1, which was the only POSIX version standardized when Windows NT was created. Since then, there has been little demand for extending this subsystem, because most applications have been converted to Win32. The 1003.1 system is of limited interest for fully featured applications, because it does not include many capabilities (such as those in 1003.2, network support, and so on). Full featured applications run under the Windows POSIX subsystem do not have access to Windows features available to Win32 applications, such as memory-mapped files, networking, and graphics. Applications such as VI, LS, and GREP are the main targets for the Windows POSIX subsystem.
 
-## See Also
+## See also
 
 [Visual C++ Porting and Upgrading Guide](visual-cpp-change-history-2003-2015.md)<br/>
 [UNIX](../c-runtime-library/unix.md)<br/>
-[Inference Rules](../build/inference-rules.md)
+[Inference Rules](../build/reference/inference-rules.md)

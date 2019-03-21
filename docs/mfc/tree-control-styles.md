@@ -19,8 +19,7 @@ The **TVS_EDITLABELS** style makes it possible for the user to edit the labels o
 
 The **TVS_NOTOOLTIPS** style disables the automatic tool tip feature of tree view controls. This feature automatically displays a tool tip, containing the title of the item under the mouse cursor, if the entire title is not currently visible.
 
-## See Also
+## See also
 
 [Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

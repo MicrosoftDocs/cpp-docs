@@ -1,7 +1,7 @@
 ---
 title: "How to report a problem with the Visual C++ toolset"
 ms.date: "06/21/2018"
-ms.technology: ["cpp-ide"]
+ms.technology: "cpp-ide"
 author: "corob-msft"
 ms.author: "corob"
 ---
@@ -37,7 +37,7 @@ We need the full version information and the target architecture of the toolset 
 
 #### To report the full version of the compiler you're using
 
-1. Open the **Developer Command Prompt** that matches the Visual Studio version and configuration architecture used to build your project. For example, if you build by using Visual Studio 2017 on x64 for x64 targets, choose **x64 Native Tools Command Prompt for VS 2017**. For more information, see [Developer command prompt shortcuts](build/building-on-the-command-line.md#developer-command-prompt-shortcuts).
+1. Open the **Developer Command Prompt** that matches the Visual Studio version and configuration architecture used to build your project. For example, if you build by using Visual Studio 2017 on x64 for x64 targets, choose **x64 Native Tools Command Prompt for VS 2017**. For more information, see [Developer command prompt shortcuts](build/building-on-the-command-line.md#developer_command_prompt_shortcuts).
 
 1. In the developer command prompt console window, enter the command **cl /Bv**.
 
@@ -392,4 +392,3 @@ To maintain your privacy and keep your sensitive information out of public view,
 We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a much richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You'll need to create a GitHub account if you don't have one already, but once you do, you can see all of our documentation issues, their status, and get notifications when changes are made for the issue you reported. For more information, see [A New Feedback System Is Coming to docs.microsoft.com](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 When you create a documentation issue on GitHub by using the documentation feedback button, the issue is automatically filled in with some information about the page you created the issue on, so we know where the problem is located. Please don't edit this information. Just append the details about what's wrong and, if you like, a suggested fix. [Our documentation is open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to actually make a fix and propose it yourself, you can do that. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) on GitHub.
-

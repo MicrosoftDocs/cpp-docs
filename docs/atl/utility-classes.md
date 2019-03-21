@@ -2,7 +2,6 @@
 title: "Utility Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.classes.utility"]
 helpviewer_keywords: ["utility classes"]
 ms.assetid: 33d5da9d-89a5-49f9-a873-a26499299d17
 ---
@@ -24,7 +23,6 @@ The following MFC-independent utility classes are provided:
 
 - [_U_RECT](../atl/reference/u-rect-class.md) An argument adapter class that allows either `RECT` pointers or references to be passed to a function that is implemented in terms of pointers.
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

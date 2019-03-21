@@ -30,7 +30,7 @@ An application that consists of multiple libraries and executables, each potenti
 
 ## Importing Your Existing Code
 
-You can use the C++ compiler to build existing code that is set up to compile with or without a makefile and put it into a Visual Studio project. For more information, see [How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md).
+You can use the C++ compiler to build existing code that is set up to compile with or without a makefile and put it into a Visual Studio project. For more information, see [How to: Create a C++ Project from Existing Code](../build/how-to-create-a-cpp-project-from-existing-code.md).
 
 ## Creating a New Project
 
@@ -50,12 +50,12 @@ You can disable all Microsoft-specific extensions to C++ by using the `/Za` comp
 
 The Microsoft C and C++ compilers provide options for precompiling any C or C++ code, including inline code. Using this performance feature, you can compile a stable body of code, store the compiled state of the code in a file, and, during subsequent compilations, combine the precompiled code with code that is still under development. Each subsequent compilation is faster because the stable code does not need to be recompiled.
 
-By default, all precompiled code is specified in the files stdafx.h and stdafx.cpp. The **New Project** wizard will automatically create these files for you unless you deselect the **Precompiled header** option. For more information on precompiled headers, see [Creating Precompiled Header Files](../build/reference/creating-precompiled-header-files.md).
+By default, all precompiled code is specified in the files stdafx.h and stdafx.cpp. The **New Project** wizard will automatically create these files for you unless you deselect the **Precompiled header** option. For more information on precompiled headers, see [Creating Precompiled Header Files](../build/creating-precompiled-header-files.md).
 
 ## Related Sections
 
 For more information, see [Porting from UNIX to Win32](../porting/porting-from-unix-to-win32.md).
 
-## See Also
+## See also
 
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)
+[Projects and build systems](../build/projects-and-build-systems-cpp.md)

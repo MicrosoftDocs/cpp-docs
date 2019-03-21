@@ -26,7 +26,6 @@ Implementing other Edit menu commands, such as Undo (**ID_EDIT_UNDO**) and Redo 
 
 - [Using the OLE Clipboard mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
 
-## See Also
+## See also
 
 [Clipboard](../mfc/clipboard.md)
-

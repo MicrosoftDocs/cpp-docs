@@ -647,4 +647,3 @@ inline void UnquoteSpaces(wchar_t* pszPath);
 ### Remarks
 
 See [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa) for details.
-

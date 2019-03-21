@@ -17,8 +17,7 @@ Rich edit controls support almost all of the operations and notification message
 
 For more information on notifications, see [Notifications from a Rich Edit Control](../mfc/notifications-from-a-rich-edit-control.md) later in this topic.
 
-## See Also
+## See also
 
 [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -350,7 +350,7 @@ void wait_for_async_sends();
 
 This method is used by message block destructors to ensure all asynchronous operations have had time to finish before destroying the block.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [ITarget Class](itarget-class.md)

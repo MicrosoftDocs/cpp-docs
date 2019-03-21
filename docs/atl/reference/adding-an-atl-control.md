@@ -26,7 +26,7 @@ Using the **ATL Control Wizard**, you can create one of three types of controls:
 
 Additionally, you can reduce the size of the control and remove interfaces that are not used by most containers by selecting **Minimal control** on the **Options** page of the wizard.
 
-## See Also
+## See also
 
 [Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)

@@ -58,7 +58,7 @@ You can get the decorated form of a symbol name after you compile the source fil
 
 #### To use a listing to view decorated names
 
-1. Generate a listing by compiling the source file that contains the data, object, or function definition or prototype with the [Listing File Type](../../build/reference/fa-fa-listing-file.md) compiler option set to Assembly with Source Code (**/FAs**).
+1. Generate a listing by compiling the source file that contains the data, object, or function definition or prototype with the [Listing File Type](fa-fa-listing-file.md) compiler option set to Assembly with Source Code (**/FAs**).
 
    For example, enter `cl /c /FAs example.cpp` at a developer command prompt to generate a listing file, example.asm.
 
@@ -83,7 +83,7 @@ Undecoration of :- "?func1@a@@AAEXH@Z"
 is :- "private: void __thiscall a::func1(int)"
 ```
 
-## See Also
+## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 [Using extern to Specify Linkage](../../cpp/using-extern-to-specify-linkage.md)

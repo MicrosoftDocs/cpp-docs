@@ -93,4 +93,3 @@ See [IAxWinHostWindow::CreateControlEx](../../atl/reference/iaxwinhostwindow-int
 ### Example
 
 See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.
-

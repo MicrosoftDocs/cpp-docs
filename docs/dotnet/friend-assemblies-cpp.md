@@ -177,6 +177,6 @@ int main() {
 Class1::Test_Public
 ```
 
-## See Also
+## See also
 
 [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

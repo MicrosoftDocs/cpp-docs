@@ -14,10 +14,9 @@ For example, if you are working in a word processor document and create a linked
 
 Every OLE item, whether embedded or linked, has a type associated with it based on the application that created it. For example, a Microsoft Paintbrush item is one type of item, and a Microsoft Excel item is another type. Some applications, however, can create more than one item type. For example, Microsoft Excel can create worksheet items, chart items, and macrosheet items. Each of these items can be uniquely identified by the system using a Class Identifier or **CLSID**.
 
-## See Also
+## See also
 
 [OLE Background](../mfc/ole-background.md)<br/>
 [OLE Background: Containers and Servers](../mfc/ole-background-containers-and-servers.md)<br/>
 [Containers: Client Items](../mfc/containers-client-items.md)<br/>
 [Servers: Server Items](../mfc/servers-server-items.md)
-

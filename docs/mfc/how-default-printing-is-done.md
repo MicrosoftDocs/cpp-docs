@@ -18,7 +18,6 @@ However, there are some significant differences between printing and screen disp
 
 That protocol is described in the article [Multipage Documents](../mfc/multipage-documents.md).
 
-## See Also
+## See also
 
 [Printing](../mfc/printing.md)
-

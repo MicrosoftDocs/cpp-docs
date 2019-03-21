@@ -174,7 +174,7 @@ For more information about asynchronous agents, see [Asynchronous Agents](../../
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
@@ -182,4 +182,3 @@ For more information about asynchronous agents, see [Asynchronous Agents](../../
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)
-

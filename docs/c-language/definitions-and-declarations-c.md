@@ -51,6 +51,6 @@ Dllimport int j;          /* a declaration. */
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [DLL Import and Export Functions](../c-language/dll-import-and-export-functions.md)

@@ -347,7 +347,6 @@ You can use message reservation when you implement your own custom message block
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
-

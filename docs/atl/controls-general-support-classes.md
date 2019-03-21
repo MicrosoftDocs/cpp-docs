@@ -2,7 +2,6 @@
 title: "ATL Controls: General Support Classes"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.controls"]
 helpviewer_keywords: ["controls [ATL]", "general support classes"]
 ms.assetid: cf73f1d2-7542-48e3-b8c8-9d3abf29f85b
 ---
@@ -28,7 +27,6 @@ The following classes provide general support for ATL controls:
 
 [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

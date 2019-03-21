@@ -73,7 +73,6 @@ Maintains the list of OLE client items that are in a `CRichEditView`.
 [CRichEditCntrItem](../mfc/reference/cricheditcntritem-class.md)<br/>
 Provides client-side access to an OLE item stored in a `CRichEditView`.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

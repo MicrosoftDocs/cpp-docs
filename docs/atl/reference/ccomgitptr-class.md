@@ -260,7 +260,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Removes the interface from the GIT.
 
-## See Also
+## See also
 
 [Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
 [Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>

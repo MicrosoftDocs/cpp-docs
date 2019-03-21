@@ -865,7 +865,7 @@ virtual void ShowCommandMessageString(UINT uiCmdId);
 
 This method sends the WM_SETMESSAGESTRING message to the owner of the color bar control.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

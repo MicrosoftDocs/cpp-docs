@@ -34,8 +34,7 @@ The following example demonstrates this procedure by swapping the selected and u
 
 [!code-cpp[NVC_MFCControlLadenDialog#13](../mfc/codesnippet/cpp/setting-the-images-for-an-individual-item_2.cpp)]
 
-## See Also
+## See also
 
 [Using CComboBoxEx](../mfc/using-ccomboboxex.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

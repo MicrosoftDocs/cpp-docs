@@ -22,7 +22,7 @@ The `_cwait` function can be used by any process to wait for any other process (
 |`_WAIT_CHILD`|Calling process waits until specified new process terminates.|
 |`_WAIT_GRANDCHILD`|Calling process waits until specified new process, and all processes created by that new process, terminate.|
 
-## See Also
+## See also
 
 [_cwait](../c-runtime-library/reference/cwait.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

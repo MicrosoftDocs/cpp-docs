@@ -32,7 +32,7 @@ The translation modes are as follows:
 
 If **t** or **b** is not given in *mode*, the translation mode is defined by the default-mode variable [_fmode](../c-runtime-library/fmode.md). For more information about using text and binary modes, see [Text and Binary Mode File I/O](../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-## See Also
+## See also
 
 [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
 [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)<br/>

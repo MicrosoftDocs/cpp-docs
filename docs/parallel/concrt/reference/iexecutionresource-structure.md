@@ -121,7 +121,7 @@ Virtual processor roots, too, can be returned to the Resource Manager by invokin
 
 `invalid_operation` is thrown if the parameter `pScheduler` is different from the scheduler that this execution resource was created for, or, with a standalone execution resource, if the current thread is different from the thread that created the thread subscription.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IVirtualProcessorRoot Structure](ivirtualprocessorroot-structure.md)

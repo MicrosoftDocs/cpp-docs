@@ -20,7 +20,6 @@ Follow these guidelines in using the Clipboard:
 
 - [Use the Windows Clipboard mechanism](../mfc/clipboard-using-the-windows-clipboard.md)
 
-## See Also
+## See also
 
 [Clipboard](../mfc/clipboard.md)
-

@@ -80,7 +80,7 @@ This structure stores pertinent information used to render the appearance of an 
 
 **Header:** atlctl.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)<br/>
 [IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)<br/>

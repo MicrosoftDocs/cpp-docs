@@ -124,7 +124,7 @@ Alternately, your COM object can delegate to MFC's implementation by calling `Cr
 
 [CAsyncMonikerFile::Open](#open) calls `CreateBindStatusCallback`.
 
-For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](https://msdn.microsoft.com/library/ie/ms775060) interface and [How Asynchronous Binding and Storage Work](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). For a discussion of aggregation, see [Aggregation](/windows/desktop/com/aggregation). All three topics are in the Windows SDK.
+For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) interface and [How Asynchronous Binding and Storage Work](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). For a discussion of aggregation, see [Aggregation](/windows/desktop/com/aggregation). All three topics are in the Windows SDK.
 
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo
 
@@ -388,7 +388,7 @@ You can use a URL or a filename for the *lpszURL* parameter. For example:
 
 [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/casyncmonikerfile-class_3.cpp)]
 
-## See Also
+## See also
 
 [CMonikerFile Class](../../mfc/reference/cmonikerfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

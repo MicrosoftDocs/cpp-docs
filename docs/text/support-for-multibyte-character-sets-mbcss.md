@@ -1,7 +1,6 @@
 ---
 title: "Support for Multibyte Character Sets (MBCSs)"
 ms.date: "11/04/2016"
-f1_keywords: ["_mbcs"]
 helpviewer_keywords: ["MBCS [C++], about MBCS", "character sets [C++], multibyte", "multibyte characters [C++]", "MBCS [C++]"]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
 ---
@@ -57,7 +56,7 @@ For international portability, code your program with [Unicode](../text/support-
 
 - [Learn about generic-text mappings for byte-width portability](../text/generic-text-mappings-in-tchar-h.md)
 
-## See Also
+## See also
 
 [Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
 [MBCS Support in Visual C++](../text/mbcs-support-in-visual-cpp.md)

@@ -1871,7 +1871,7 @@ This method updates the task pane caption, adjusts the scroll bar, repositions a
 
 Override this method in a derived class to execute custom code when the framework refreshes the task pane.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

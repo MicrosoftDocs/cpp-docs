@@ -30,8 +30,7 @@ The following map entries on the left correspond to the function prototypes on t
 |ON_WM_CREATE()|afx_msg int [OnCreate](../../mfc/reference/cwnd-class.md#oncreate)(LPCREATESTRUCT);|
 |ON_WM_CTLCOLOR()|afx_msg HBRUSH [OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor)(CDC\*, CWnd\*, UINT);|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)<br/>
 [Handlers for WM_ Messages](../../mfc/reference/handlers-for-wm-messages.md)
-

@@ -412,7 +412,7 @@ void SetItemTypes(SHCONTF nTypes);
 
 For more information about the list of item types, see [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -59,7 +59,6 @@ To handle the Paste Special option on the Edit menu, see the topic [Dialog Boxes
 
 - [OLE](../mfc/ole-background.md)
 
-## See Also
+## See also
 
 [Clipboard: Using the OLE Clipboard Mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
-

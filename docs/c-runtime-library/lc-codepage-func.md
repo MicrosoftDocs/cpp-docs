@@ -36,7 +36,7 @@ Internal CRT functions are implementation-specific and subject to change with ea
 |-------------|---------------------|
 |`___lc_codepage_func`|crt\src\setlocal.h|
 
-## See Also
+## See also
 
 [_get_current_locale](../c-runtime-library/reference/get-current-locale.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

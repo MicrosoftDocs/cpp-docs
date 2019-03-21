@@ -10,11 +10,15 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
 
 ## System Requirements
 
-- Windows 7, Windows 8, Windows Server 2008 R2, or Windows Server 2012
+- Windows 7 or later
+
+- Windows Server 2008 R2 or later
 
 - DirectX 11 Feature Level 11.0 or later hardware
 
 - For debugging on the software emulator, Windows 8 or Windows Server 2012 is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).
+
+- Note: AMP is currently not supported on ARM64.
 
 ## Introduction
 
@@ -488,7 +492,7 @@ The Concurrency Visualizer includes support for analyzing performance of C++ AMP
 
 Modulus and division of unsigned integers have significantly better performance than modulus and division of signed integers. We recommend that you use unsigned integers when possible.
 
-## See Also
+## See also
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)<br/>

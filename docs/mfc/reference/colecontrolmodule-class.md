@@ -37,8 +37,7 @@ For more information on using the `COleControlModule` class, see the [CWinApp](.
 
 **Header:** afxctl.h
 
-## See Also
+## See also
 
 [MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

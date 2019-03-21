@@ -32,6 +32,6 @@ filename /regserver
 
 where `filename` is the name of the executable file.
 
-## See Also
+## See also
 
 [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md)

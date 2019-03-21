@@ -105,7 +105,6 @@ To see the inheritance of a class, use the [Class Hierarchy Chart](../mfc/hierar
 
 In addition to the classes listed in this overview, the MFC Library contains a number of global functions, global variables, and macros. There is an overview and detailed listing of these in the topic [MFC Macros and Globals](../mfc/reference/mfc-macros-and-globals.md), which follows the alphabetical reference to the MFC classes.
 
-## See Also
+## See also
 
 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)
-

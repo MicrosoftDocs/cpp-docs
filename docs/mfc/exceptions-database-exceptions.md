@@ -60,7 +60,6 @@ For a discussion of the error information returned by a `CDaoException` object, 
 
 When you are working with Microsoft Jet (.mdb) databases, and in most cases when you are working with ODBC, there will be only one error object. In the rare case when you are using an ODBC data source and there are multiple errors, you can loop through DAO's Errors collection based on the number of errors returned by [CDaoException::GetErrorCount](../mfc/reference/cdaoexception-class.md#geterrorcount). Each time through the loop, call [CDaoException::GetErrorInfo](../mfc/reference/cdaoexception-class.md#geterrorinfo) to refill the `m_pErrorInfo` data member.
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

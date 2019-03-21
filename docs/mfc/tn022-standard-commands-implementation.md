@@ -429,8 +429,7 @@ Currently there is no standard implementation for these indicators.
 
 If you choose to implement these indicators, we recommend you use these indicator IDs and maintaining the ordering of the indicators in your status bar (that is, in this order: EXT, CAP, NUM, SCRL, OVR, REC).
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

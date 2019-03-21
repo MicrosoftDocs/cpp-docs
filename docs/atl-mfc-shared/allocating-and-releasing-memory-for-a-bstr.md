@@ -27,10 +27,9 @@ In general, the rules for allocating and releasing memory allocated for `BSTR`s 
 
    [!code-cpp[NVC_ATLMFC_Utilities#196](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_5.cpp)]
 
-## See Also
+## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)<br/>
 [SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)<br/>
 [SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
-

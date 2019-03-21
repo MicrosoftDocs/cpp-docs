@@ -20,13 +20,13 @@ The amount of padding to add to the beginning of each function in bytes. On x86 
 
 ## Remarks
 
-In order for the linker to produce a hotpatchable image, the .obj files must have been compiled with [/hotpatch (Create Hotpatchable Image)](../../build/reference/hotpatch-create-hotpatchable-image.md).
+In order for the linker to produce a hotpatchable image, the .obj files must have been compiled with [/hotpatch (Create Hotpatchable Image)](hotpatch-create-hotpatchable-image.md).
 
 When you compile and link an image with a single invocation of cl.exe, **/hotpatch** implies **/functionpadmin**.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -38,5 +38,5 @@ When you compile and link an image with a single invocation of cl.exe, **/hotpat
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

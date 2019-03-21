@@ -19,6 +19,19 @@
       - name: C/C++ Preprocessor
         tocHref: /cpp/preprocessor/
         topicHref: /cpp/c-cpp-preprocessor-reference
+      - name: Compiler Intrinsics and Assembly Language
+        tocHref: /cpp/intrinsics/
+        topicHref: /cpp/intrinsics/compiler-intrinsics-and-assembly-language
+        items:
+        - name: ARM
+          tocHref: /cpp/assembler/arm/
+          topicHref: /cpp/assembler/arm/arm-assembler-reference
+        - name: Inline assembler
+          tocHref: /cpp/assembler/inline/
+          topicHref: /cpp/assembler/inline-assembler
+        - name: MASM
+          tocHref: /cpp/assembler/masm/
+          topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
       - name: C Runtime Library
         tocHref: /cpp/c-runtime-library/
         topicHref: /cpp/c-runtime-library/c-run-time-library-reference
@@ -76,21 +89,21 @@
         - name: ODBC
           tocHref: /cpp/data/odbc/
           topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-      - name: IDE and Tools
-        tocHref: /cpp/ide/
-        topicHref: /cpp/ide/ide-and-tools-for-visual-cpp-development
+      - name: Edit, navigate and refactor code
+        tocHref: /cpp/ide
+        topicHref: /cpp/overview-of-cpp-development
         items:
         - name: IDE
           tocHref: /cpp/ide/
           topicHref: /cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development
-        - name: Building
-          tocHref: /cpp/build/
-          tocHref: /cpp/build/building-c-cpp-programs
+      - name: Building C/C++ Projects
+        tocHref: /cpp/build/
+        tocHref: /cpp/build/building-c-cpp-programs
+        items:
+        - name: Build Reference
+          tocHref: /cpp/build/reference/
+          topicHref: /cpp/build/reference/c-cpp-building-reference
           items:
-          - name: Build Reference
-            tocHref: /cpp/build/reference/
-            topicHref: /cpp/build/reference/c-cpp-building-reference
-            items:
             - name: Compiler Errors
               tocHref: /cpp/error-messages/compiler-errors-1/
               topicHref: /cpp/compiler-errors-1/c-cpp-build-errors
@@ -100,19 +113,6 @@
             - name: Other Tools
               tocHref: /cpp/error-messages/tool-errors/
               topicHref: /cpp/error-messages/tool-errors/vectorizer-and-parallelizer-messages
-        - name: Compiler Intrinsics and Assembly Language
-          tocHref: /cpp/intrinsics/
-          topicHref: /cpp/intrinsics/compiler-intrinsics-and-assembly-language
-          items:
-          - name: ARM
-            tocHref: /cpp/assembler/arm/
-            topicHref: /cpp/assembler/arm/arm-assembler-reference
-          - name: Inline assembler
-            tocHref: /cpp/assembler/inline/
-            topicHref: /cpp/assembler/inline-assembler
-          - name: MASM
-            tocHref: /cpp/assembler/masm/
-            topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
       - name: Porting and Upgrading
         tocHref: /cpp/porting/
         topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide

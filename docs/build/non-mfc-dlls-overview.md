@@ -12,22 +12,22 @@ For more information about non-MFC DLLs, see [Dynamic-Link Libraries](/windows/d
 
 ## What do you want to do?
 
-- [Walkthrough: Creating and Using a Dynamic Link Library](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
+- [Walkthrough: Creating and Using a Dynamic Link Library](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)
 
-- [Export from a DLL](../build/exporting-from-a-dll.md)
+- [Export from a DLL](exporting-from-a-dll.md)
 
-- [Link an executable to a DLL](../build/linking-an-executable-to-a-dll.md)
+- [Link an executable to a DLL](linking-an-executable-to-a-dll.md)
 
-- [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)
+- [Initialize a DLL](run-time-library-behavior.md#initializing-a-dll)
 
 ## What do you want to know more about?
 
-- [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Regular MFC DLLs statically linked to MFC](regular-dlls-statically-linked-to-mfc.md)
 
-- [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Regular MFC DLLs dynamically linked to MFC](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC extension DLLs: Overview](../build/extension-dlls-overview.md)
+- [MFC extension DLLs: Overview](extension-dlls-overview.md)
 
-## See Also
+## See also
 
-[Kinds of DLLs](../build/kinds-of-dlls.md)
+[Kinds of DLLs](kinds-of-dlls.md)

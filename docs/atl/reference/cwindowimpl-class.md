@@ -1,7 +1,7 @@
 ---
 title: "CWindowImpl Class"
 ms.date: "11/04/2016"
-f1_keywords: ["CWindowImpl", "ATLWIN/ATL::CWindowImpl", "ATLWIN/ATL::CWindowImpl::Create", "ATLWIN/ATL::DefWindowProc", "ATLWIN/ATL::GetCurrentMessage", "ATLWIN/ATL::GetWindowProc", "ATLWIN/ATL::OnFinalMessage", "ATLWIN/ATL::SubclassWindow", "ATLWIN/ATL::UnsubclassWindow", "ATLWIN/ATL::GetWndClassInfo", "ATLWIN/ATL::WindowProc", "ATLWIN/ATL::m_pfnSuperWindowProc"]
+f1_keywords: ["CWindowImpl", "ATLWIN/ATL::CWindowImpl", "ATLWIN/ATL::CWindowImpl::Create", "ATLWIN/ATL::CWindowImpl::DefWindowProc", "ATLWIN/ATL::CWindowImpl::GetCurrentMessage", "ATLWIN/ATL::CWindowImpl::GetWindowProc", "ATLWIN/ATL::CWindowImpl::OnFinalMessage", "ATLWIN/ATL::CWindowImpl::SubclassWindow", "ATLWIN/ATL::CWindowImpl::UnsubclassWindow", "ATLWIN/ATL::CWindowImpl::GetWndClassInfo", "ATLWIN/ATL::CWindowImpl::WindowProc", "ATLWIN/ATL::CWindowImpl::m_pfnSuperWindowProc"]
 helpviewer_keywords: ["CWindowImpl class", "subclassing windows, ATL"]
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
 ---
@@ -127,7 +127,7 @@ HWND Create(
 [in] The handle to the parent or owner window.
 
 *rect*<br/>
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
+[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
 
 *szWindowName*<br/>
 [in] Specifies the name of the window. The default value is NULL.
@@ -355,7 +355,7 @@ The result of the message processing.
 
 You can override `WindowProc` to provide a different mechanism for handling messages.
 
-## See Also
+## See also
 
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>

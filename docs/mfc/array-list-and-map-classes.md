@@ -15,7 +15,6 @@ Lists are similar to arrays but are stored very differently. Each element in a l
 
 Maps relate a key value to a data value. For instance, the key of a map could be a string and the data a pointer into a list. You would ask the map to give you the pointer associated with a particular string. Map lookups are fast because maps use hash tables for key lookups. Adding and deleting items is also fast. Maps are often used with other data structures as auxiliary indices. MFC uses a special kind of map called a [message map](../mfc/mapping-messages.md) to map Windows messages to a pointer to the handler function for that message.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

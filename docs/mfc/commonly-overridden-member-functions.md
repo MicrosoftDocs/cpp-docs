@@ -26,7 +26,7 @@ The following table lists the most likely member functions to override in your `
 
 For more information about these member functions, see class [CDialog](../mfc/reference/cdialog-class.md) in the *MFC Reference* and the discussion on [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md).
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Commonly Added Member Functions](../mfc/commonly-added-member-functions.md)

@@ -1351,7 +1351,7 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
 [!code-cpp[NVC_MFC_CEdit#25](../../mfc/reference/codesnippet/cpp/cedit-class_27.cpp)]
 
-## See Also
+## See also
 
 [MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
 [MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>

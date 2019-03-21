@@ -1,7 +1,7 @@
 ---
 title: "Supported Platforms (Visual C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: "cpp-tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 ms.assetid: 0d893056-4008-411a-b3d1-5f57fd7da95c
 author: "mikeblome"
@@ -37,4 +37,4 @@ For information about how to set the target platform configuration, see [How to:
 ## See also
 
 - [Visual C++ Tools and Features in Visual Studio Editions](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)
-- [Getting Started](/visualstudio/ide/getting-started-with-visual-cpp-in-visual-studio)
+- [Getting Started](/visualstudio/ide/getting-started-with-cpp-in-visual-studio)

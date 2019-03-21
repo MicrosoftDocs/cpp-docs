@@ -74,6 +74,6 @@ If the function fails, the return value is -1. To get extended error information
 
 This method handles all interaction with the user while the dialog box is active. This is what makes the dialog box modal; that is, the user cannot interact with other windows until the dialog box is closed.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

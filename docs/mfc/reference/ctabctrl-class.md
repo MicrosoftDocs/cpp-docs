@@ -96,7 +96,7 @@ void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 Indicates which operation to perform. If this parameter is TRUE, *lpRect* specifies a display rectangle and receives the corresponding window rectangle. If this parameter is FALSE, *lpRect* specifies a window rectangle and receives the corresponding display rectangle.
 
 *lpRect*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that specifies the given rectangle and receives the calculated rectangle.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that specifies the given rectangle and receives the calculated rectangle.
 
 ### Example
 
@@ -120,7 +120,7 @@ virtual BOOL Create(
 Specifies the tab control's style. Apply any combination of [tab control styles](/windows/desktop/Controls/tab-control-styles), described in the Windows SDK. See **Remarks** for a list of window styles that you can also apply to the control.
 
 *rect*<br/>
-Specifies the tab control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the tab control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the tab control's parent window, usually a `CDialog`. It must not be NULL.
@@ -176,7 +176,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the tab control's style. Apply any combination of [tab control styles](/windows/desktop/Controls/tab-control-styles), described in the Windows SDK. See **Remarks** in [Create](#create) for a list of window styles that you can also apply to the control.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -412,7 +412,7 @@ BOOL GetItemRect(int nItem,   LPRECT lpRect) const;
 Zero-based index of the tab item.
 
 *lpRect*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle of the tab. These coordinates use the viewport's current mapping mode.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle of the tab. These coordinates use the viewport's current mapping mode.
 
 ### Return Value
 
@@ -849,7 +849,7 @@ You can get the tool tip control associated with a tab control by making a call 
 
   See the example for [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol).
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

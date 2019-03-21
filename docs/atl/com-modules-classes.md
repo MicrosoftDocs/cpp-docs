@@ -2,7 +2,6 @@
 title: "COM Modules Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.COM"]
 helpviewer_keywords: ["COM modules classes"]
 ms.assetid: 0a8a82dd-a153-47cd-9bbe-1a1ad5d1a6ff
 ---
@@ -32,8 +31,7 @@ The following classes provide support for a COM module:
 
 [ATL Module Classes](../atl/atl-module-classes.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)<br/>
 [Module Classes](../atl/atl-module-classes.md)
-

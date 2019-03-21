@@ -51,7 +51,6 @@ Gets a gopher "locator" from a gopher server, determines the locator's type, and
 [CInternetException](../mfc/reference/cinternetexception-class.md)<br/>
 Represents an exception condition related to an Internet operation.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

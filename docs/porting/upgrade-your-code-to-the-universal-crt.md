@@ -37,7 +37,7 @@ App-local deployment of the UCRT is supported, though not recommended for both p
 
 Many functions were added or updated in the UCRT to improve ISO C99 conformance, and to address code quality and security issues. In some cases, this required breaking changes to the library. If your code compiled cleanly when using an older version of the CRT but breaks when compiled using the UCRT, you must change your code to take advantage of these updates and features. For a detailed listing of the breaking changes and updates to the CRT found in the Universal CRT, see the [C Runtime Library (CRT)](visual-cpp-change-history-2003-2015.md#BK_CRT) section of the Visual C++ change history. It includes a list of affected headers and functions that you can use to identify the changes needed in your code.
 
-## See Also
+## See also
 
 [Visual C++ Porting and Upgrading Guide](visual-cpp-porting-and-upgrading-guide.md)<br/>
 [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>

@@ -1548,7 +1548,7 @@ You must undock a pane before you perform any external operation that is not per
 
 The framework automatically undocks panes before they are destroyed.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

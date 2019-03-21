@@ -40,6 +40,6 @@ Choosing which synchronization access class to use is even simpler. If your appl
 
 For information about how the synchronization classes are used, see [Multithreading: How to Use the Synchronization Classes](multithreading-how-to-use-the-synchronization-classes.md). For information about synchronization, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK. For information about multithreading support in MFC, see [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md).
 
-## See Also
+## See also
 
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

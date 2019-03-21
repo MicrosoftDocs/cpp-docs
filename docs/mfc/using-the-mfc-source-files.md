@@ -38,7 +38,6 @@ Topics covered in this family of articles include:
 
 - [The // Overridables comment](../mfc/decrement-overridables-comment.md)
 
-## See Also
+## See also
 
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

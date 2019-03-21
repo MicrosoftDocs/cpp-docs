@@ -1,6 +1,6 @@
 ---
 title: "STL/CLR Library Reference"
-ms.date: 09/18/2018"
+ms.date: 09/18/2018
 ms.topic: "reference"
 helpviewer_keywords: ["STL/CLR Library", "STL/CLR, redistribution", "cliext directory"]
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
@@ -52,6 +52,6 @@ In addition, this section also describes the following components of STL/CLR:
 |[set (STL/CLR)](../dotnet/set-stl-clr.md)|[stack (STL/CLR)](../dotnet/stack-stl-clr.md)|
 |[utility (STL/CLR)](../dotnet/utility-stl-clr.md)|[vector (STL/CLR)](../dotnet/vector-stl-clr.md)|
 
-## See Also
+## See also
 
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

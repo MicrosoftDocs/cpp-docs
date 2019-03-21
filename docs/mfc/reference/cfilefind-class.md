@@ -776,7 +776,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `Matche
 
 [!code-cpp[NVC_MFCFiles#35](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_5.cpp)]
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

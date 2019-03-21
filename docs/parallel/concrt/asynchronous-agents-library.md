@@ -81,4 +81,3 @@ Describes how to use various parallel patterns, such as parallel algorithms, in 
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 Describes the Concurrency Runtime, which simplifies parallel programming, and contains links to related topics.
-

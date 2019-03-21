@@ -1,7 +1,7 @@
 ---
 title: "divides Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::divides"]
+f1_keywords: ["functional/std::divides"]
 helpviewer_keywords: ["divides struct", "divides class"]
 ms.assetid: b9cf8e9c-6981-43a6-a6a3-8f761987dd7a
 ---

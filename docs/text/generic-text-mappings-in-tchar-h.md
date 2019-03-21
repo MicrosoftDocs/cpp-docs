@@ -1,7 +1,6 @@
 ---
 title: "Generic-Text Mappings in tchar.h"
 ms.date: "11/04/2016"
-f1_keywords: ["tchar.h"]
 helpviewer_keywords: ["mapping generic-text", "generic-text mappings [C++]", "character sets [C++], generic-text mappings", "Unicode [C++], generic-text mappings", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
 ---
@@ -77,7 +76,7 @@ RetVal = strrev(szString);
 
 Therefore, you can write, maintain, and compile a single-source code file to run with routines that are specific to any of the three kinds of character sets.
 
-## See Also
+## See also
 
 [Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
 [Using TCHAR.H Data Types with _MBCS Code](../text/using-tchar-h-data-types-with-mbcs-code.md)
