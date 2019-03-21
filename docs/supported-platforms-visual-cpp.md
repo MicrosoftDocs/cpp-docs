@@ -37,4 +37,4 @@ For information about how to set the target platform configuration, see [How to:
 ## See also
 
 - [Visual C++ Tools and Features in Visual Studio Editions](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)
-- [Getting Started](/visualstudio/ide/getting-started-with-visual-cpp-in-visual-studio)
+- [Getting Started](/visualstudio/ide/getting-started-with-cpp-in-visual-studio)

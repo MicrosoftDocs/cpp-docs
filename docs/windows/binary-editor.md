@@ -30,7 +30,7 @@ The **Binary Editor** enables you:
 
 ### To open a Windows desktop resource for binary editing
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), select the specific resource file you want to edit.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), select the specific resource file you want to edit.
 
 1. Right-click the resource and select **Open Binary Data**.
 

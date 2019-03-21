@@ -81,7 +81,7 @@ The procedures below refer to the use of standard property pages, however, both 
 
 ### To edit in an accelerator table
 
-1. Open the accelerator table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the accelerator table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Select an entry in the table and select to activate in-place editing.
 
@@ -97,7 +97,7 @@ The procedures below refer to the use of standard property pages, however, both 
 
 ### To find an entry in an open accelerator table
 
-1. Open the accelerator table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the accelerator table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Select a column head to sort the contents of the column alphabetically. For example, select **ID** to display all the IDs in your accelerator table alphabetically.
 
@@ -105,7 +105,7 @@ The procedures below refer to the use of standard property pages, however, both 
 
 ### To add an entry to an accelerator table
 
-1. Open the accelerator table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the accelerator table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Right-click within the accelerator table and choose **New Accelerator**, or select the empty row entry at the bottom of the table.
 
@@ -120,7 +120,7 @@ The procedures below refer to the use of standard property pages, however, both 
 
 ### To delete an entry from an accelerator table
 
-1. Open the accelerator table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the accelerator table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Select the entry you want to delete, or hold down the **Ctrl** or **Shift** key while selecting to choose multiple entries.
 
@@ -142,7 +142,7 @@ The procedures below refer to the use of standard property pages, however, both 
 
 ### To change the properties of multiple accelerator keys
 
-1. Open the accelerator table by double-clicking its icon in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources).
+1. Open the accelerator table by double-clicking its icon in [Resource View](how-to-create-a-resource-script-file.md#create-resources).
 
 1. Select the accelerator keys you want to change by holding down the **Ctrl** key as you select each one.
 

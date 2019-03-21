@@ -56,7 +56,7 @@ The storage unit for all row handles held by the provider.
 
 |||
 |-|-|
-|[FlushData](#flushdata)|Overidden by provider to commit data to its store.|
+|[FlushData](#flushdata)|Overridden by provider to commit data to its store.|
 
 ## Remarks
 
@@ -90,7 +90,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### Parameters
 
-See [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::InsertRow
 
@@ -127,7 +127,7 @@ See [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::FlushData
 
-Overidden by provider to commit data to its store.
+Overridden by provider to commit data to its store.
 
 ### Syntax
 

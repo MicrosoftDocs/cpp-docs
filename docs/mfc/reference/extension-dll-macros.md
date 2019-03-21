@@ -14,9 +14,9 @@ ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
 |[AfxNetInitModule](#afxnetinitmodule)|Provides MFC Sockets support from a regular MFC DLL that is dynamically linked to MFC.|
 |[AfxGetAmbientActCtx](#afxgetambientactctx)|Gets the current state of the per-module state flag.|
 |[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Sets the module state before initialization and/or to restore the previous module state after cleanup.|
-|[AfxInitExtensionModule]()#afxinitextensionmodule|Initializes the DLL.|
+|[AfxInitExtensionModule](#afxinitextensionmodule)|Initializes the DLL.|
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|set the per-module state flag, which affects the WinSxS behavior of MFC.|
-|[AfxTermExtensionModule]()#afxtermextensionmodule)|Allows MFC to cleanup the MFC extension DLL when each process detaches from the DLL.|
+|[AfxTermExtensionModule](#afxtermextensionmodule)|Allows MFC to cleanup the MFC extension DLL when each process detaches from the DLL.|
 
 ## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
 

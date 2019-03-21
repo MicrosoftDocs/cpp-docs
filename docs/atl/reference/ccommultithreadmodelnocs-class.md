@@ -101,7 +101,7 @@ See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithr
 
 ##  <a name="decrement"></a>  CComMultiThreadModelNoCS::Decrement
 
-This static function calls the Win32 function [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement), which decrements the value of the variable pointed to by *p*.
+This static function calls the Win32 function [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement), which decrements the value of the variable pointed to by *p*.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw();
@@ -122,7 +122,7 @@ If the result of the decrement is 0, then `Decrement` returns 0. If the result o
 
 ##  <a name="increment"></a>  CComMultiThreadModelNoCS::Increment
 
-This static function calls the Win32 function [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement), which increments the value of the variable pointed to by *p*.
+This static function calls the Win32 function [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement), which increments the value of the variable pointed to by *p*.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();

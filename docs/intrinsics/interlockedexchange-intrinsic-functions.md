@@ -118,7 +118,7 @@ Returns the initial value pointed to by `Target`.
 
 ## Remarks
 
-`_InterlockedExchange` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedExchange](/windows/desktop/api/winbase/nf-winbase-interlockedexchange) function.
+`_InterlockedExchange` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedExchange](/windows/desktop/api/winnt/nf-winnt-interlockedexchange) function.
 
 There are several variations on `_InterlockedExchange` that vary based on the data types they involve and whether processor-specific acquire or release semantics is used.
 

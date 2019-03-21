@@ -68,7 +68,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler Warning (level 1) C4269](../../error-messages/compiler-warnings/compiler-warning-level-1-c4269.md)|'*identifier*': 'const' automatic data initialized with compiler generated default constructor produces unreliable results|
 |[Compiler Warning (level 1) C4272](../../error-messages/compiler-warnings/compiler-warning-level-1-c4272.md)|'*function*': is marked __declspec(dllimport); must specify native calling convention when importing a function.|
 |[Compiler Warning (level 1) C4273](../../error-messages/compiler-warnings/compiler-warning-level-1-c4273.md)|'*function*': inconsistent dll linkage|
-|Compiler warning (level 1) C4274|#ident ignored; see documentation for #pragma comment(exestr, 'string')|
+|[Compiler warning (level 1) C4274](compiler-warning-level-1-c4274.md)|#ident ignored; see documentation for #pragma comment(exestr, 'string')|
 |[Compiler Warning (level 2) C4275](../../error-messages/compiler-warnings/compiler-warning-level-2-c4275.md)|non dll-interface '*classkey*' '*identifier1*' used as base for dll-interface '*classkey*' '*identifier2*'|
 |[Compiler Warning (level 1) C4276](../../error-messages/compiler-warnings/compiler-warning-level-1-c4276.md)|'*function*': no prototype provided; assumed no parameters|
 |Compiler warning (level 1) C4277|imported item '*classname*::*member*' exists as both data member and function member; data member ignored|
@@ -105,7 +105,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler Warning (level 1) C4313](../../error-messages/compiler-warnings/compiler-warning-level-1-c4313.md)|'*function*': '*format_specifier*' in format string conflicts with argument '*argument_number*' of type '*type*'|
 |Compiler warning C4314|expected pragma parameter to be '32' or '64'|
 |Compiler warning (level 4) C4315|'*classname*': 'this' pointer for member '*member*' may not be aligned '*alignment*' as expected by the constructor|
-|Compiler warning (level 3) C4316|'*identifier*': object allocated on the heap may not be aligned '*alignment*'|
+|[Compiler warning (level 3) C4316](compiler-warning-level-3-c4316.md)|'*identifier*': object allocated on the heap may not be aligned '*alignment*'|
 |Compiler warning (level 1) C4317|'*printf_family*' : not enough arguments passed for format string|
 |Compiler warning C4318|passing constant zero as the length to memset|
 |[Compiler Warning (level 1) C4319](../../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md)|'*operator*': zero extending '*type1*' to '*type2*' of greater size|
@@ -128,7 +128,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler Warning (level 4) C4339](../../error-messages/compiler-warnings/compiler-warning-level-4-c4339.md)|'*type*': use of undefined type detected in 'WinRT&#124;CLR' meta-data - use of this type may lead to a runtime exception|
 |[Compiler Warning (level 1) C4340](../../error-messages/compiler-warnings/compiler-warning-level-1-c4340.md)|'*value*': value wrapped from positive to negative value|
 |[Compiler Warning (level 1) C4342](../../error-messages/compiler-warnings/compiler-warning-level-1-c4342.md)|behavior change: '*function*' called, but a member operator was called in previous versions|
-|Compiler warning (level 4) C4343|#pragma optimize("g",off) overrides /Og option|
+|[Compiler warning (level 4) C4343](compiler-warning-level-4-c4343.md)|#pragma optimize("g",off) overrides /Og option|
 |[Compiler Warning (level 1) C4344](../../error-messages/compiler-warnings/compiler-warning-level-1-c4344.md)|behavior change: use of explicit template arguments results in call to '*function*'|
 |[Compiler Warning (level 1) C4346](../../error-messages/compiler-warnings/compiler-warning-level-1-c4346.md)|'*name*': dependent name is not a type|
 |[Compiler Warning (level 1) C4348](../../error-messages/compiler-warnings/compiler-warning-level-1-c4348.md)|'*type*': redefinition of default parameter: parameter '*parameter_number*'|
@@ -149,7 +149,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler Warning (level 1) C4369](../../error-messages/compiler-warnings/compiler-warning-level-1-c4369.md)|'*enumerator*':  enumerator value '*value*' cannot be represented as '*type*', value is '*new_value*'|
 |Compiler warning C4370|'*classname*': layout of class has changed from a previous version of the compiler due to better packing|
 |[Compiler warning (level 3) C4371](../../error-messages/compiler-warnings/c4371.md)|'*classname*': layout of class may have changed from a previous version of the compiler due to better packing of member '*member*'|
-|Compiler warning (level 3) C4373|'*derived_class*::*function*': virtual function overrides '*base_class*::*function*', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers|
+|[Compiler warning (level 3) C4373](compiler-warning-level-3-c4373.md)|'*derived_class*::*function*': virtual function overrides '*base_class*::*function*', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers|
 |[Compiler Warning (level 1) C4374](../../error-messages/compiler-warnings/compiler-warning-level-1-c4374.md)|'*function1*': interface method will not be implemented by non-virtual method '*function2*'|
 |[Compiler Warning (level 1) C4375](../../error-messages/compiler-warnings/compiler-warning-level-1-c4375.md)|non-public method '*method2*' does not override '*method2*'|
 |[Compiler Warning (level 1) C4376](../../error-messages/compiler-warnings/compiler-warning-level-1-c4376.md)|access specifier '*old_specifier*:' is no longer supported: please use '*new_specifier*:' instead|
@@ -170,7 +170,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler Warning (level 1) C4393](../../error-messages/compiler-warnings/compiler-warning-level-1-c4393.md)|'*variable*': const has no effect on '*literal*' data member; ignored|
 |[Compiler Warning C4394](../../error-messages/compiler-warnings/compiler-warning-c4394.md)|'*function*': per-appdomain symbol should not be marked with __declspec('dllexport')|
 |[Compiler Warning (level 1) C4395](../../error-messages/compiler-warnings/compiler-warning-level-1-c4395.md)|'*function*': member function will be invoked on a copy of the initonly data member '*member*'|
-|Compiler warning (level 2) C4396|'*function*': the inline specifier cannot be used when a friend declaration refers to a specialization of a function template|
+|[Compiler warning (level 2) C4396](compiler-warning-level-2-c4396.md)|'*function*': the inline specifier cannot be used when a friend declaration refers to a specialization of a function template|
 |[Compiler Warning (level 1) C4397](../../error-messages/compiler-warnings/compiler-warning-level-1-c4397.md)|DefaultCharSetAttribute is ignored|
 |[Compiler Warning (level 3) C4398](../../error-messages/compiler-warnings/compiler-warning-level-3-c4398.md)|'*variable*': per-process global object might not work correctly with multiple appdomains; consider using __declspec(appdomain)|
 |[Compiler Warning (level 1) C4399](../../error-messages/compiler-warnings/compiler-warning-level-1-c4399.md)|'*symbol*': per-process symbol should not be marked with __declspec('dllimport') when compiled with /clr:pure|
