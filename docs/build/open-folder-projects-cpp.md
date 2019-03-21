@@ -1,6 +1,6 @@
 ---
 title: "Open Folder support for C++ build systems in Visual Studio"
-ms.date: "01/21/2019"
+ms.date: "03/21/2019"
 helpviewer_keywords: ["Open Folder Projects in Visual C++"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
