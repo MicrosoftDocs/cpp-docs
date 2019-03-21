@@ -10,7 +10,7 @@ CMake is a cross-platform, open-source tool for defining build processes that ru
 
 In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) to generate MSBuild project files, which the IDE then consumes for IntelliSense, browsing, and compilation.
 
-Visual Studio 2017 introduces rich support for CMake, including [cross-platform CMake projects](../linux/cmake-linux-project.md). The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can import an existing CMake cache; Visual Studio automatically extracts customized variables and creates a pre-populated `CMakeSettings.json` file. 
+Visual Studio 2017 introduces rich support for CMake, including [cross-platform CMake projects](../linux/cmake-linux-project.md). The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can import an existing CMake cache; Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file. 
 
 ## Installation
 
@@ -40,18 +40,18 @@ You can also view your projects organized logically by targets. Choose **Targets
 
 ![CMake targets view button](media/cmake-targets-view.png)
 
-Visual Studio uses a file called `CMakeSettings.json` to store environment variables or command-line options for Cmake.exe. `CMakeSettings.json` also enables you to define and store multiple CMake build configurations and conveniently switch between them in the IDE. 
+Visual Studio uses a file called **CMakeSettings.json** to store environment variables or command-line options for Cmake.exe. **CMakeSettings.json** also enables you to define and store multiple CMake build configurations and conveniently switch between them in the IDE. 
 
-Otherwise, use the `CMakeLists.txt` just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
+Otherwise, use the **CMakeLists.txt** just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
 
-If you need to pass arguments to an executable at debug time, you can use another file called `launch.vs.json`. In some scenarios, Visual Studio will automatically generate these files; you can edit them manually. You can also create the file yourself.
+If you need to pass arguments to an executable at debug time, you can use another file called **launch.vs.json**. In some scenarios, Visual Studio will automatically generate these files; you can edit them manually. You can also create the file yourself.
 
 > [!NOTE]
-> For other kinds of Open Folder projects, two additional JSON files are used: `CppProperties.json` and `tasks.vs.json`. Neither of these are relevant for CMake projects.
+> For other kinds of Open Folder projects, two additional JSON files are used: **CppProperties.json** and **tasks.vs.json**. Neither of these are relevant for CMake projects.
 
 ## Import an existing cache
 
-When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated [ `CMakeSettings.json`](#cmake_settings) file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  `CMakeSettings.json` file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools | Options | CMake | General** dialog.
+When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated [ **CMakeSettings.json**](#cmake_settings) file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  **CMakeSettings.json** file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools | Options | CMake | General** dialog.
 
 Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
 
@@ -81,7 +81,7 @@ To build a CMake project, you have these choices:
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
 
-You can customize build configurations, environment variables, command line arguments, and other settings without modifying the CMakeLists.txt file by using the  `CMakeSettings.json` file. For more information, see [Customize CMake settings](customize-cmake-settings.md).
+You can customize build configurations, environment variables, command line arguments, and other settings without modifying the CMakeLists.txt file by using the  **CMakeSettings.json** file. For more information, see [Customize CMake settings](customize-cmake-settings.md).
 
 As you would expect, build results are shown in the **Output Window** and **Error List**.
 
@@ -97,7 +97,7 @@ To debug a CMake project, choose the desired configuration and press **F5**, or 
 
 The **Run** or **F5** commands first build the project if changes have been made since the previous build.
 
-You can customize a CMake debugging session by setting properties in the `launch.vs.json` file. For more information, see [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md).
+You can customize a CMake debugging session by setting properties in the **launch.vs.json** file. For more information, see [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md).
 
 
 ## Editing CMakeLists.txt files
@@ -113,13 +113,13 @@ As soon as you save the file, the configuration step automatically runs again an
 
 ## CMake configure step
 
-When significant changes are made to the  `CMakeSettings.json` or to CMakeLists.txt files, Visual Studio automatically reruns the CMake configure step. If the configure step finishes without errors, the information that is collected is available in C++ IntelliSense and language services and also in build and debug operations.
+When significant changes are made to the  **CMakeSettings.json** or to CMakeLists.txt files, Visual Studio automatically reruns the CMake configure step. If the configure step finishes without errors, the information that is collected is available in C++ IntelliSense and language services and also in build and debug operations.
 
 When multiple CMake projects use the same CMake configuration name (for example, x86-Debug), all of them are configured and built (in their own build root folder) when that configuration is selected. You can debug the targets from all of the CMake projects that participate in that CMake configuration.
 
    ![CMake Build Only menu item](media/cmake-build-only.png "CMake Build Only menu item")
 
-To limit builds and debug sessions to a subset of the projects in the workspace, create a new configuration with a unique name in the  `CMakeSettings.json` file and apply it to those projects only. When that configuration is selected, the IntelliSense and build and debug commands are enabled only for those specified projects.
+To limit builds and debug sessions to a subset of the projects in the workspace, create a new configuration with a unique name in the  **CMakeSettings.json** file and apply it to those projects only. When that configuration is selected, the IntelliSense and build and debug commands are enabled only for those specified projects.
 
 ## Troubleshooting CMake cache errors
 

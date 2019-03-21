@@ -43,7 +43,7 @@ IntelliSense and browsing behavior partly depends on the active build configurat
       "includePath": [ "include" ],
       "defines": [ "_DEBUG" ],
       "compilerSwitches": "/std:c++17",
-      "intelliSenseMode": "msvc-x64",
+      "intelliSenseMode": "windows-msvc-x64",
       "forcedInclude": [ "pch.h" ],
       "undefines": []
     }
@@ -58,7 +58,7 @@ You can automate build scripts or any other external operations on the files you
 
 ![Open Folder Configure Tasks](media/open-folder-config-tasks.png)
 
-This creates (or opens) the `tasks.vs.json` file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (cmd.exe on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
+This creates (or opens) the **tasks.vs.json** file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (cmd.exe on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
 
 ```json
 {
@@ -81,7 +81,7 @@ For more information, see [Tasks.vs.json schema reference](tasks-vs-json-schema-
 
 ### Configure debugging parameters with launch.vs.json
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing `launch.vs.json` file, or if none exists, it will create a new file prepopulated with the information about the program you have selected.
+To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing **launch.vs.json** file, or if none exists, it will create a new file prepopulated with the information about the program you have selected.
 
 To specify additional arguments, just add them in the `args` JSON array as shown in the following example:
 
