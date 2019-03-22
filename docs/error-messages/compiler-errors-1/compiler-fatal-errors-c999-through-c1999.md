@@ -16,7 +16,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Error|Message|
 |-----------|-------------|
 |[Fatal Error C999](../../error-messages/compiler-errors-1/fatal-error-c999.md)|UNKNOWN MESSAGE Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
-|[Fatal Error C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|An internal error has occurred in the compiler.<br /><br /> (compiler file '*file*', line *number*)<br /><br /> To work around this problem, try simplifying or changing the program near the locations listed above. Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
+|[Fatal Error C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)|An internal error has occurred in the compiler.<br /> (compiler file '*file*', line *number*)<br /> To work around this problem, try simplifying or changing the program near the locations listed above. Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
 |[Fatal Error C1002](../../error-messages/compiler-errors-1/fatal-error-c1002.md)|compiler is out of heap space in pass 2|
 |[Fatal Error C1003](../../error-messages/compiler-errors-1/fatal-error-c1003.md)|error count exceeds *number*; stopping compilation|
 |[Fatal Error C1004](../../error-messages/compiler-errors-1/fatal-error-c1004.md)|unexpected end-of-file found|
@@ -24,7 +24,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Fatal Error C1007](../../error-messages/compiler-errors-1/fatal-error-c1007.md)|unrecognized flag '*string*' in '*option*'|
 |[Fatal Error C1008](../../error-messages/compiler-errors-1/fatal-error-c1008.md)|no input file specified|
 |[Fatal Error C1009](../../error-messages/compiler-errors-1/fatal-error-c1009.md)|compiler limit: macros nested too deeply|
-|[Fatal Error C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|unexpected end of file while looking for precompiled header. Did you forget to add '#include <*file*>' to your source?|
+|[Fatal Error C1010](../../error-messages/compiler-errors-1/fatal-error-c1010.md)|unexpected end of file while looking for precompiled header. Did you forget to add '#include \<*file*>' to your source?|
 |[Fatal Error C1012](fatal-error-c1012.md)|unmatched parenthesis: missing '*character*"|
 |[Fatal Error C1013](fatal-error-c1013.md)|compiler limit: too many open parentheses|
 |[Fatal Error C1014](fatal-error-c1014.md)|too many include files: depth = *number*|
