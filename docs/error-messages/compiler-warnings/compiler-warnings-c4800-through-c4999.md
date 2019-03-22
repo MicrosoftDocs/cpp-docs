@@ -13,7 +13,7 @@ The articles in this section of the documentation explain a subset of the warnin
 ## Warning messages
 
 |Warning|Message|
-|-------------|-------------|
+|-------------|------------|
 |[Compiler Warning (level 4) C4800](compiler-warning-level-3-c4800.md)| Implicit conversion from '*type*' to bool. Possible information loss |
 |[Compiler Warning (level 1) C4803](compiler-warning-level-1-c4803.md)|'*method*': the raise method has a different storage class from that of the event, '*event*'|
 |[Compiler Warning (level 1) C4804](compiler-warning-level-1-c4804.md)|'*operation*': unsafe use of type 'bool' in operation|
