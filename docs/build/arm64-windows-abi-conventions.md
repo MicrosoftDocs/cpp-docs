@@ -185,7 +185,7 @@ For return-by-value that cannot be passed via registers, the caller shall reserv
 
 Following the ABI put forth by ARM, the stack must remain 16-byte aligned at all times. AArch64 contains a hardware feature that generates stack alignment faults whenever an SP-relative load or store is done and the SP is not 16-byte aligned. Windows runs with this feature enabled at all times.
 
-Functions which allocate 4k or more worth of stack must ensure that each page prior to the final page is touched in order, thus ensuring no code can “leap over” the guard pages that Windows uses to expand the stack. Typically this is done by the `__chkstk` helper, which has a custom calling convention that passes the total stack allocation divided by 16 in x8.
+Functions which allocate 4k or more worth of stack must ensure that each page prior to the final page is touched in order, thus ensuring no code can “leap over” the guard pages that Windows uses to expand the stack. Typically this is done by the `__chkstk` helper, which has a custom calling convention that passes the total stack allocation divided by 16 in x15.
 
 ## Red zone
 
