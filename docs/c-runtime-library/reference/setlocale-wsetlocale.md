@@ -242,8 +242,8 @@ int main()
     unsigned        threadID;
     unsigned char   str[BUFF_SIZE];
 
-    // Configure per-thread locale to cause all subsequently created
-    // threads to have their own locale.
+    // Enable per-thread locale causes all subsequent locale
+    // setting changes in this thread to only affect this thread.
     _configthreadlocale(_ENABLE_PER_THREAD_LOCALE);
 
     // Set the locale of the main thread to US English.
