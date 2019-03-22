@@ -28,7 +28,7 @@ The following table shows the keywords for built-in Visual C++ types, which are 
 |-----------------------|-------------------------|
 |**void**|<xref:System.Void?displayProperty=nameWithType>|
 |**bool**|<xref:System.Boolean?displayProperty=nameWithType>|
-|**signed char** (see [/J](../build/reference/j-default-char-type-is-unsigned.md) for more information)|<xref:System.SByte?displayProperty=nameWithType>|
+|**signed char** |<xref:System.SByte?displayProperty=nameWithType>|
 |**unsigned char**|<xref:System.Byte?displayProperty=nameWithType>|
 |**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|
 |**short** and **signed short**|<xref:System.Int16?displayProperty=nameWithType>|
@@ -39,6 +39,8 @@ The following table shows the keywords for built-in Visual C++ types, which are 
 |**unsigned __int64**|<xref:System.UInt64?displayProperty=nameWithType>|
 |**float**|<xref:System.Single?displayProperty=nameWithType>|
 |**double** and **long double**|<xref:System.Double?displayProperty=nameWithType>|
+
+For more information about the compiler option to default to signed or unsigned **char**, see [/J (Default char type Is unsigned)](../build/reference/j-default-char-type-is-unsigned.md).
 
 ## <a name="version_issues"></a> Version Issues for Value Types Nested in Native Types
 
