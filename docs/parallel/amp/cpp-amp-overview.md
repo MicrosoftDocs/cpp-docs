@@ -436,7 +436,7 @@ void MathExample() {
     parallel_for_each(
         logs.extent,
         [=] (index<1> idx) restrict(amp) {
-            logs[idx] = concurrency::fast_math::log10(logs[idx]);
+            logs[idx] = concurrency::fast_math::log10(numbers[idx]);
         }
     );
 
