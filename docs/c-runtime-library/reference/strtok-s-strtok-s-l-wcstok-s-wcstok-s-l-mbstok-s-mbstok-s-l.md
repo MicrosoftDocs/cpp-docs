@@ -50,7 +50,7 @@ unsigned char* _mbstok_s(
    char** context
 );
 
-unsigned char* _mbstok_s(
+unsigned char* _mbstok_s_l(
    unsigned char* str,
    const unsigned char* delimiters,
    char** context,
