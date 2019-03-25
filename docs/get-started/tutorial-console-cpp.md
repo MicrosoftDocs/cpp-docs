@@ -2,7 +2,7 @@
 title: Create a C++ console app project
 description: "Create a Hello World console app in Visual C++"
 ms.custom: "mvc"
-ms.date: 12/12/2017
+ms.date: 03/25/2019
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -17,7 +17,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Create your app project
 
-Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps, and manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
+Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It also manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
 
 1. On the menubar in Visual Studio, choose **File** > **New** > **Project**. The **New Project** window opens.
 
@@ -27,7 +27,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
    ![The New Project dialog](./media/calculator-new-project-dialog.png "The New Project dialog")
 
-   This creates an empty C++ Windows console application. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code, which should look like this:
+   An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
     ```cpp
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
@@ -118,11 +118,11 @@ Now let's turn the code in this template into a calculator app.
 
 1. To save the file, enter **Ctrl+S**, or choose the **Save** icon near the top of the IDE, the floppy disk icon in the toolbar under the menu bar.
 
-1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and choose **Start Without Debugging**. If you get a **This project is out of date** pop-up, you may select **Do not show this dialog again**, and then choose **Yes** to build your application. You should see a console window pop up with the text specified in the code.
+1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and choose **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then choose **Yes** to build your application. You should see a console window appear that displays the text specified in the code.
 
    ![Build and start your application](./media/calculator-first-launch.gif "Build and start your application")
 
-1. Close the console window when you are done.
+1. Close the console window when you're done.
 
 [I ran into a problem.](#edit-the-code-issues)
 
@@ -132,15 +132,15 @@ It's time to add some math logic.
 
 ### To add a Calculator class
 
-1. Go to the **Project** menu and choose **Add Class**. In the **Class Name** edit box, enter *Calculator*. Choose **OK**. This adds two new files to your project. To save all your changed files at once, press **Ctrl+Shift+S**. This is a keyboard shortcut for **File** > **Save All**. There is also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
+1. Go to the **Project** menu and choose **Add Class**. In the **Class Name** edit box, enter *Calculator*. Choose **OK**. Two new files get added to your project. To save all your changed files at once, press **Ctrl+Shift+S**. It's a keyboard shortcut for **File** > **Save All**. There's also a toolbar button for **Save All**, an icon of two floppy disks, found beside the **Save** button. In general, it's good practice to do **Save All** frequently, so you don't miss any files when you save.
 
    ![Create the Calculator class](./media/calculator-create-class.gif "Create the Calculator class")
 
-   A class is like a blueprint for an object that does something. In this case, we define a calculator and how it should work. The **Add Class** wizard you used above created .h and .cpp files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: choose **View** > **Solution Explorer**.
+   A class is like a blueprint for an object that does something. In this case, we define a calculator and how it should work. The **Add Class** wizard you used above created .h and .cpp files that have the same name as the class. You can see a full list of your project files in the **Solution Explorer** window, visible on the side of the IDE. If the window isn't visible, you can open it from the menu bar: choose **View** > **Solution Explorer**.
 
    ![Solution Explorer](./media/calculator-solution-explorer.png "Solution Explorer")
 
-   You should now have three tabs open in the editor: *CalculatorTutorial.cpp*, *Calculator.h*, and *Calculator.cpp*. If you accidentally close one of them, you can re-open it by double-clicking it in the **Solution Explorer** window.
+   You should now have three tabs open in the editor: *CalculatorTutorial.cpp*, *Calculator.h*, and *Calculator.cpp*. If you accidentally close one of them, you can reopen it by double-clicking it in the **Solution Explorer** window.
 
 1. In **Calculator.h**, remove the `Calculator();` and `~Calculator();` lines that were generated, since you won't need them here. Next, add the following line of code so the file now looks like this:
 
@@ -160,7 +160,7 @@ It's time to add some math logic.
    > - The two lines you deleted declared a *constructor* and *destructor* for the class. For a simple class like this one, the compiler creates them for you, and their uses are beyond the scope of this tutorial.
    > - It's good practice to organize your code into different files based on what it does, so it's easy to find the code you need later. In our case, we define the `Calculator` class separately from the file containing the `main()` function, but we plan to reference the `Calculator` class in `main()`.
 
-1. You'll see a green squiggle appear under `Calculate`. This is because we haven't defined the `Calculate` function in the .cpp file. Hover over the word, click the lightbulb that pops up, and choose **Create definition of 'Calculate' in Calculator.cpp**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *Calculator.cpp*.
+1. You'll see a green squiggle appear under `Calculate`. It's because we haven't defined the `Calculate` function in the .cpp file. Hover over the word, click the lightbulb that pops up, and choose **Create definition of 'Calculate' in Calculator.cpp**. A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *Calculator.cpp*.
 
    ![Create definition of Calculate](./media/calculator-create-definition.gif "Create definition of Calculate")
 
@@ -262,51 +262,51 @@ Since the user is free to type anything into the console window, let's make sure
 
 ### To run the app in the debugger
 
-1. Set a breakpoint on the `result = c.Calculate(x, oper, y);` line, just after the user was asked for input. To do this, click in the gray vertical bar along the left edge of the editor window next to the line so a red dot appears.
+1. Set a breakpoint on the `result = c.Calculate(x, oper, y);` line, just after the user was asked for input. To set the breakpoint, click next to the line in the gray vertical bar along the left edge of the editor window. A red dot appears.
 
    ![Set a breakpoint](./media/calculator-set-breakpoint.gif "Set a breakpoint")
 
-   Now when we debug the program, it always pauses execution at that line. But we already have a rough idea that the program works for simple cases, and we don't want to pause execution every time, so let's make the breakpoint conditional.
+   Now when we debug the program, it always pauses execution at that line. We already have a rough idea that the program works for simple cases. Since we don't want to pause execution every time, let's make the breakpoint conditional.
 
-1. Right-click the red dot that represents the breakpoint, and choose **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Choose the **Close** button when you are done; the condition is saved automatically.
+1. Right-click the red dot that represents the breakpoint, and choose **Conditions**. In the edit box for the condition, enter `(y == 0) && (oper == '/')`. Choose the **Close** button when you're done. The condition is saved automatically.
 
    ![Set a conditional breakpoint](./media/calculator-conditional-breakpoint.gif "Set a conditional breakpoint")
 
    Now we pause execution at the breakpoint specifically if a division by 0 is attempted.
 
-1. To debug the program, press **F5** or choose the **Local Windows Debugger** button (the toolbar button that has the green arrow icon). In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers; `cin` is smart enough to parse the input appropriately.
+1. To debug the program, press **F5**, or choose the **Local Windows Debugger** toolbar button that has the green arrow icon. In your console app, if you enter something like "5 - 0", the program behaves normally and keeps running. However, if you type "10 / 0", it pauses at the breakpoint. You can even put any number of spaces between the operator and numbers; `cin` is smart enough to parse the input appropriately.
 
    ![Pause at the conditional breakpoint](./media/calculator-debug-conditional.gif "Pause at the conditional breakpoint")
 
 ### Useful windows in the debugger
 
-Whenever you debug your code, you may notice that some new windows appear. These windows can assist your debugging experience. Take a look at the **Autos** window. The **Autos** window shows you the current values of variables used at least 3 lines before and up to the current line.
+Whenever you debug your code, you may notice that some new windows appear. These windows can assist your debugging experience. Take a look at the **Autos** window. The **Autos** window shows you the current values of variables used at least three lines before and up to the current line.
 
    ![The Autos window](./media/calculator-autos.png "The Autos window")
 
-To see all of the variables from that function, switch to the **Locals** window. You can actually modify the values of these variables on the fly while debugging, to see what effect they would have on the program. In this case, we'll leave them alone.
+To see all of the variables from that function, switch to the **Locals** window. You can actually modify the values of these variables while debugging, to see what effect they would have on the program. In this case, we'll leave them alone.
 
    ![The Locals window](./media/calculator-locals.png "The Locals window")
 
-You can also just hover over variables in the code itself to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first before trying this.
+You can also just hover over variables in the code itself to see their current values where the execution is currently paused. Make sure the editor window is in focus by clicking on it first.
 
    ![Hover to view current variable values](./media/calculator-hover-tooltip.gif "Hover to view current variable values")
 
 ### To continue debugging
 
-1. The yellow line on the left shows the current point of execution. This is currently on a line that calls `Calculate`, so press **F11** to **Step Into** the function. You'll find yourself in the body of the `Calculate` function. Be careful with **Step Into**; if you do it too much you may waste a lot of time, as it goes into any code you use on the line you are on, including standard library functions.
+1. The yellow line on the left shows the current point of execution. The current line calls `Calculate`, so press **F11** to **Step Into** the function. You'll find yourself in the body of the `Calculate` function. Be careful with **Step Into**; if you do it too much, you may waste a lot of time. It goes into any code you use on the line you are on, including standard library functions.
 
-1. Now that the point of execution is at the start of the `Calculate` function, press **F10** to move to the next line in the program's execution. This is also known as **Step Over**. You can use **Step Over** to move from line to line, without delving into the details of what is occurring in each part of the line. In general you should use **Step Over** instead of **Step Into**, unless you want to dive more deeply into code that is being called from elsewhere (as you did to reach the body of `Calculate`).
+1. Now that the point of execution is at the start of the `Calculate` function, press **F10** to move to the next line in the program's execution. **F10** is also known as **Step Over**. You can use **Step Over** to move from line to line, without delving into the details of what is occurring in each part of the line. In general you should use **Step Over** instead of **Step Into**, unless you want to dive more deeply into code that is being called from elsewhere (as you did to reach the body of `Calculate`).
 
 1. Continue using **F10** to **Step Over** each line until you get back to the `main()` function in the other file, and stop on the `cout` line.
 
    ![Step out of Calculate and check result](./media/calculator-undefined-zero.gif "Step out of Calculate and check result")
 
-1. It looks like the program is doing what is expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. You'll see its value is listed as "inf". This doesn't look right, so let's fix this. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays this:
+1. It looks like the program is doing what is expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. You'll see its value is listed as "inf", which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
    ![The result of divide by zero](./media/calculator-divide-by-zero-fail.png "The result of divide by zero")
 
-   This happens because division by zero is undefined, so the program doesn't have a numerical answer to the requested operation.
+   This result happens because division by zero is undefined, so the program doesn't have a numerical answer to the requested operation.
 
 ### To fix the "divide by zero" error
 
@@ -326,9 +326,9 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 
     int main()
     {
-        double x = 0.0
-        double y = 0.0
-        double result = 0.0
+        double x = 0.0;
+        double y = 0.0;
+        double result = 0.0;
         char oper = '+';
 
         cout << "Calculator Console Application" << endl << endl;
@@ -354,7 +354,7 @@ Let's handle division by zero more gracefully, so a user can understand the prob
     }
     ```
 
-1. Now press **F5** once. This continues program execution all the way until it has to pause to ask for user input. Enter `10 / 0` again. Now, a more helpful message is printed. The user is asked for more input, and the program continues executing normally.
+1. Now press **F5** once. Program execution continues all the way until it has to pause to ask for user input. Enter `10 / 0` again. Now, a more helpful message is printed. The user is asked for more input, and the program continues executing normally.
 
    ![The final result after changes](./media/calculator-final-verification.gif "The final result after changes")
 

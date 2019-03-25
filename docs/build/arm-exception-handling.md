@@ -214,7 +214,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 }
 ```
 
-Athough the prologue and each epilogue has an index into the unwind codes, the table is shared between them. It is not uncommon that they can all share the same unwind codes. We recommend that compiler writers optimize for this case, because the largest index that can be specified is 255, and that limits the total number of unwind codes possible for a particular function.
+Although the prologue and each epilogue has an index into the unwind codes, the table is shared between them. It is not uncommon that they can all share the same unwind codes. We recommend that compiler writers optimize for this case, because the largest index that can be specified is 255, and that limits the total number of unwind codes possible for a particular function.
 
 ### Unwind Codes
 

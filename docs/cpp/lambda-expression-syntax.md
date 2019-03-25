@@ -1,6 +1,6 @@
 ---
 title: "Lambda Expression Syntax"
-ms.date: "11/04/2016"
+ms.date: "03/25/2019"
 helpviewer_keywords: ["lambda expressions [C++], syntax"]
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
 ---
@@ -32,7 +32,7 @@ using namespace std;
 
 int main()
 {
-   // Create a vector object that contains 10 elements.
+   // Create a vector object that contains 9 elements.
    vector<int> v;
    for (int i = 1; i < 10; ++i) {
       v.push_back(i);
@@ -56,8 +56,6 @@ int main()
         << " even numbers in the vector." << endl;
 }
 ```
-
-### Output
 
 ```Output
 1 is odd
@@ -122,7 +120,7 @@ private:
 
 int main()
 {
-    // Create a vector object that contains 10 elements.
+    // Create a vector object that contains 9 elements.
     vector<int> v;
     for (int i = 1; i < 10; ++i) {
         v.push_back(i);
@@ -138,8 +136,6 @@ int main()
         << " even numbers in the vector." << endl;
 }
 ```
-
-## Output
 
 ```Output
 1 is odd
