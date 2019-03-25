@@ -22,15 +22,25 @@ char *strtok(
    char *strToken,
    const char *strDelimit
 );
+char *strtok_l(
+   char *strToken,
+   const char *strDelimit,
+   _locale_t locale
+);
 wchar_t *wcstok(
    wchar_t *strToken,
    const wchar_t *strDelimit
+);
+wchar_t *wcstok_l(
+   wchar_t *strToken,
+   const wchar_t *strDelimit,
+   _locale_t locale
 );
 unsigned char *_mbstok(
    unsigned char*strToken,
    const unsigned char *strDelimit
 );
-unsigned char *_mbstok(
+unsigned char *_mbstok_l(
    unsigned char*strToken,
    const unsigned char *strDelimit,
    _locale_t locale
