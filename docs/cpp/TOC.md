@@ -318,6 +318,7 @@
 ### [__declspec](declspec.md)
 #### [align](align-cpp.md)
 #### [allocate](allocate.md)
+#### [allocator](allocator.md)
 #### [appdomain](appdomain.md)
 #### [code_seg (__declspec)](code-seg-declspec.md)
 #### [deprecated](deprecated-cpp.md)
