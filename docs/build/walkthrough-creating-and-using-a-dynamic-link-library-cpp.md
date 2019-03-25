@@ -288,9 +288,11 @@ Next, to call the MathLibrary functions in your source code, your project must i
 
 1. Double-click in the top pane of the **Additional Include Directories** dialog box to enable an edit control.
 
-1. In the edit control, specify the path to the location of the **MathLibrary.h** header file. In this case, you can use a relative path:
+1. In the edit control, specify the path to the location of the **MathLibrary.h** header file. In this case, you can use a relative path from the folder that contains your .cpp files in the client project to the folder that contains the .h file in the DLL project. If your client project is in a separate solution in the same folder as the DLL solution, the relative path should look like this:
 
    `..\..\MathLibrary\MathLibrary`
+
+   If your DLL and client projects are in the same solution, or the solutions are in different folders, then you must adjust the relative path accordingly.
 
    ![Add the header location to the Additional Include Directories property](media/mathclient-additional-include-directories.png "Add the header location to the Additional Include Directories property")
 
