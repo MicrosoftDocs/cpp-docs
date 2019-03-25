@@ -53,8 +53,6 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
     //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
     ```
 
-[I ran into a problem.](#create-your-app-project-issues)
-
 ## Verify that your new app builds and runs
 
 The template for a new windows console application creates a simple C++ "Hello World" app. At this point, you can see how Visual Studio builds and runs the apps you create right from the IDE.
@@ -123,8 +121,6 @@ Now let's turn the code in this template into a calculator app.
    ![Build and start your application](./media/calculator-first-launch.gif "Build and start your application")
 
 1. Close the console window when you're done.
-
-[I ran into a problem.](#edit-the-code-issues)
 
 ## Add code to do some math
 
