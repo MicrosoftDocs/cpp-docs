@@ -1,6 +1,6 @@
 ---
 title: "Compiler Error C2059"
-ms.date: "11/04/2016"
+ms.date: "03/26/2019"
 f1_keywords: ["C2059"]
 helpviewer_keywords: ["C2059"]
 ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
@@ -25,7 +25,7 @@ To determine the cause of the error, examine not only the line that's listed in 
 
 If the error message occurs on a symbol that immediately follows a `typedef` variable, make sure that the variable is defined in the source code.
 
-C2059 is raised when a preprocessor definition is used in an enum class definition, as shown in this example:
+C2059 is raised when a preprocessor symbol name is re-used. In the following example, the compiler sees **BAR.FOO** as the number zero, which is not valid as an enum element name:
 
 ```cpp
 #define FOO 0
