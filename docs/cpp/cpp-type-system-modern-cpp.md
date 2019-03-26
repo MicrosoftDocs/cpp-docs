@@ -96,9 +96,7 @@ When you define a **class**, **struct**, **union**, or **enum**, that construct 
 
 - The compiler has no built-in knowledge of a user-defined type. It learns of the type when it first encounters the definition during the compilation process.
 
-- You specify what operations can be performed on your type, and how it can be converted to other types, by defining (through overloading) the appropriate operators, either as class members or non-member functions. For more information, see [Function Overloading](function-overloading.md).
-
-- They do not have to be statically typed (the rule that an object's type never changes). Through the mechanisms of *inheritance* and *polymorphism*, a variable declared as a user-defined type of class (referred to as an object instance of a class) might have a different type at run-time than at compile time. For more information, see [Inheritance](../cpp/inheritance-cpp.md).
+- You specify what operations can be performed on your type, and how it can be converted to other types, by defining (through overloading) the appropriate operators, either as class members or non-member functions. For more information, see [Function Overloading](function-overloading.md)
 
 ## Pointer types
 
