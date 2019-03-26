@@ -25,6 +25,17 @@ To determine the cause of the error, examine not only the line that's listed in 
 
 If the error message occurs on a symbol that immediately follows a `typedef` variable, make sure that the variable is defined in the source code.
 
+C2059 is raised when a preprocessor definition is used in an enum class definition, as shown in this example:
+
+```cpp
+#define FOO 0
+
+enum class BAR {
+	BAZ,
+	FOO // error C2059
+};
+```
+
 You may get C2059 if a symbol evaluates to nothing, as can occur when **/D**`symbol`**=** is used to compile.
 
 ```
