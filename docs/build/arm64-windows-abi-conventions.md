@@ -215,7 +215,7 @@ The 16-byte area immediately below the current stack pointer is reserved for use
 
 ## Kernel stack
 
-The default kernel mode stack in Windows is six pages (24k). Pay extra attention to functions with large stack buffers in kernel mode. An ill-timed interrupt could come in with little headroom and create a stack panic bugcheck.
+The default kernel mode stack in Windows is six pages (24k). Pay extra attention to functions with large stack buffers in kernel mode. An ill-timed interrupt could come in with little headroom and create a stack panic bug check.
 
 ## Stack walking
 
