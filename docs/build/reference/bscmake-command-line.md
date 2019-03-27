@@ -6,6 +6,9 @@ ms.assetid: 8006e8cf-8bfe-4c23-868a-b0a25e6bbf0f
 ---
 # BSCMAKE Command Line
 
+> [!WARNING]
+> Although BSCMAKE is still installed with Visual Studio, it is no longer used by the IDE. Since Visual Studio 2008, browse and symbol information is stored automatically in a SQL Server .sdf file in the solution folder.
+
 To run BSCMAKE, use the following command line syntax:
 
 ```
