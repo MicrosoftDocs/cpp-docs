@@ -25,18 +25,18 @@ To determine the cause of the error, examine not only the line that's listed in 
 
 If the error message occurs on a symbol that immediately follows a `typedef` variable, make sure that the variable is defined in the source code.
 
-C2059 is raised when a preprocessor symbol name is re-used. In the following example, the compiler sees **BAR.FOO** as the number zero, which is not valid as an enum element name:
+C2059 is raised when a preprocessor symbol name is re-used as an identifier. In the following example, the compiler sees `DIGITS.ONE` as the number 1, which is not valid as an enum element name:
 
 ```cpp
-#define FOO 0
+#define ONE 1
 
-enum class BAR {
-	BAZ,
-	FOO // error C2059
+enum class DIGITS {
+	ZERO,
+	ONE // error C2059
 };
 ```
 
-You may get C2059 if a symbol evaluates to nothing, as can occur when **/D**`symbol`**=** is used to compile.
+You may get C2059 if a symbol evaluates to nothing, as can occur when **/D**_symbol_**=** is used to compile.
 
 ```
 // C2059a.cpp
