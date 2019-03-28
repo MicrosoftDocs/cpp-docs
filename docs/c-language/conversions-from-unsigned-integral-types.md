@@ -6,7 +6,7 @@ ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
 ---
 # Conversions from Unsigned Integral Types
 
-An unsigned integer is converted to a shorter unsigned or signed integer by truncating the high-order bits, or to a longer unsigned or signed integer by zero-extending. For more information, see the [Conversions from Unsigned Integral Types](#conversions-from-unsigned-integral-types) table.
+An unsigned integer is converted to a shorter unsigned or signed integer by truncating the high-order bits, or to a longer unsigned or signed integer by zero-extending. For more information, see the [Conversions from unsigned integral types table](#conversions-from-unsigned-integral-types-table).
 
 When the value with integral type is demoted to a signed integer with smaller size, or an unsigned integer is converted to its corresponding signed integer, the value is unchanged if it can be represented in the new type. However, the value it represents changes if the sign bit is set, as in the following example.
 
@@ -24,7 +24,7 @@ Unsigned values are converted in a way that preserves their value and is not rep
 
 The following table summarizes conversions from unsigned integral types.
 
-## Conversions from unsigned integral types
+## Conversions from unsigned integral types table
 
 |From|To|Method|
 |----------|--------|------------|

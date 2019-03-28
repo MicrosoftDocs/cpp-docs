@@ -52,9 +52,9 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |[set](#set)|Sets all the bits in a `bitset` to 1 or sets a bit at a specified position to 1.|
 |[size](#size)|Returns the number of bits in a `bitset` object.|
 |[test](#test)|Tests whether the bit at a specified position in a `bitset` is set to 1.|
-|[to_string](#bitset::to_string)|Converts a `bitset` object to a string representation.|
-|[to_ullong](#bitset::to_ullong)|Returns the sum of the bit values in the `bitset` as an **unsigned long long**.|
-|[to_ulong](#bitset::to_ulong)|Converts a `bitset` object to the **unsigned long** that would generate the sequence of bits contained if used to initialize the `bitset`.|
+|[to_string](#to_string)|Converts a `bitset` object to a string representation.|
+|[to_ullong](#to_ullong)|Returns the sum of the bit values in the `bitset` as an **unsigned long long**.|
+|[to_ulong](#to_ulong)|Converts a `bitset` object to the **unsigned long** that would generate the sequence of bits contained if used to initialize the `bitset`.|
 
 ### Member Classes
 
@@ -1471,7 +1471,7 @@ The position of the bit in the bitset to be tested for its value.
 
 The member function throws an [out_of_range](../standard-library/out-of-range-class.md)
 
-## bitset::to_string
+## <a name="to_string"></a> bitset::to_string
 
 Converts a bitset object to a string representation.
 
@@ -1519,7 +1519,7 @@ The string returned from the bitset b1
   by the member function to_string( ) is: 00111.
 ```
 
-## bitset::to_ullong
+## <a name="to_ullong"></a> bitset::to_ullong
 
 Returns an **unsigned long long** value that contains the same bits set as the contents of the bitset object.
 
@@ -1539,7 +1539,7 @@ Throws an [overflow_error](overflow-error-class.md) object if any bit in the bit
 
 Returns the sum of the bit values that are in the bit sequence as an **unsigned long long**.
 
-## bitset::to_ulong
+## <a name="to_ulong"></a> bitset::to_ulong
 
 Converts a bitset object to the integer that would generate the sequence of bits contained if used to initialize the bitset.
 
