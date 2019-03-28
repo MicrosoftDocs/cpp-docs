@@ -1,6 +1,6 @@
 ---
 title: "CMFCVisualManagerWindows7 Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::OnFillMenuImageRect"]
 helpviewer_keywords: ["CMFCVisualManagerWindows7 Class [MFC]"]
 ms.assetid: e8d87df1-0c09-4b58-8ade-4e911f796e42
@@ -22,7 +22,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |Name|Description|
 |----------|-----------------|
 |[CMFCVisualManagerWindows7::CMFCVisualManagerWindows7](#cmfcvisualmanagerwindows7)|Default constructor.|
-|[CMFCVisualManagerWindows7::~CMFCVisualManagerWindows7](#cmfcvisualmanagerwindows7__~cmfcvisualmanagerwindows7)|Default destructor.|
+|[CMFCVisualManagerWindows7::~CMFCVisualManagerWindows7](#_dtorcmfcvisualmanagerwindows7)|Default destructor.|
 
 ### Public Methods
 
@@ -30,7 +30,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |----------|-----------------|
 |`CMFCVisualManagerWindows7::CleanStyle`|Clears the current visual style and resets the default visual style.|
 |`CMFCVisualManagerWindows7::CleanUp`|Clears all of the objects in the user interface and resets the menus.|
-|`CMFCVisualManagerWindows7::DrawNcBtn`|Draws a button in the non-client area on the frame. The framework uses this method to draw minimize, maximize, close and restore buttons in the upper right corner of the window frame. This method is not called when the program uses a non-Aero theme.|
+|`CMFCVisualManagerWindows7::DrawNcBtn`|Draws a button in the non-client area on the frame. The framework uses this method to draw minimize, maximize, close and restore buttons in the upper right corner of the window frame. This method is only called when the program uses an `Aero` theme.|
 |`CMFCVisualManagerWindows7::DrawNcText`|Draws text in the non-client area on the frame. The framework uses this method to draw the application title in the title bar at the top of the frame window.|
 |`CMFCVisualManagerWindows7::DrawSeparator`|Draws a separator on the [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md).|
 |`CMFCVisualManagerWindows7::GetRibbonBar`|Retrieves the [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md) associated with the user interface.|
@@ -161,7 +161,7 @@ The framework calls this method when it fills area around a menu item image.
 virtual void OnFillMenuImageRect(
     CDC* pDC,
     CMFCToolBarButton* pButton,
-    CRect rect,
+    CRect rectangle,
     CMFCVisualManager::AFX_BUTTON_STATE state);
 ```
 
@@ -173,7 +173,7 @@ virtual void OnFillMenuImageRect(
 *pButton*<br/>
 [in] A pointer to a `CMFCToolBarButton`. The framework fills the background for this button.
 
-*rect*<br/>
+*rectangle*<br/>
 [in] A rectangle that specifies the boundaries of the menu button image area.
 
 *state*<br/>

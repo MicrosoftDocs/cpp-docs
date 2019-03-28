@@ -386,6 +386,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/reference/floating-point-optimization.md",
+            "redirect_url": "/cpp/build/reference/fp-specify-floating-point-behavior",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/c-language/index.md",
             "redirect_url": "/cpp/c-language/c-language-reference",
             "redirect_document_id": false

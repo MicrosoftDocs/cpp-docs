@@ -1,7 +1,7 @@
 ---
 title: "Set C++ compiler and build properties in Visual Studio"
 description: "Use the Visual Studio IDE to change C++ compiler and linker options and other build settings."
-ms.date: "12/10/2018"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
 ---
@@ -55,7 +55,7 @@ The following illustration shows the property pages for a Visual C++ project. In
 
 ![Project property pages](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
-You can use the Property Editor to view the values of all available macros. Macros are discussed in the [Property page macros](#bkmkPropertiesVersusMacros) section later in this article.)
+You can use the Property Editor to view the values of all available macros.
 
 ### Predefined macros
 
@@ -69,7 +69,7 @@ Has the syntax `%(name)`. For a file, an item macro applies only to that file—
 
 You can create *user-defined macros* to use as variables in project builds. For example, you could create a user-defined macro that provides a value to a custom build step or a custom build tool. A user-defined macro is a name/value pair. In a project file, use the **$(**<em>name</em>**)** notation to access the value.
 
-A user-defined macro is stored in a property sheet. If your project does not already contain a property sheet, you can create one by following the steps under [Share or resuse Visual Studio C++ project settings](#bkmkPropertySheets).
+A user-defined macro is stored in a property sheet. If your project does not already contain a property sheet, you can create one by following the steps under [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md).
 
 #### To create a user-defined macro
 
@@ -118,7 +118,7 @@ In the right pane, modify the **Environment** or **Merge Environment** project s
 
 ## In this section
 
-[Share or resuse Visual Studio project settings](create-reusable-property-configurations.md)<br/>
+[Share or reuse Visual Studio project settings](create-reusable-property-configurations.md)<br/>
 How to create a .props file with custom build settings that can be shared or resused.
 
 [Project property inheritance](project-property-inheritance.md)<br/>

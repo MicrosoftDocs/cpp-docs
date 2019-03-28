@@ -3,6 +3,8 @@ title: "Overview of C++ development in Visual Studio"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
 ms.date: "03/08/2019"
 helpviewer_keywords: ["Visual C++, development tools"]
+author: "corob-msft"
+ms.author: "corob"
 ---
 # Overview of C++ development in Visual Studio
 

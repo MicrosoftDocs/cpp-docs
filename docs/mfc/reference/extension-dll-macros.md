@@ -1,6 +1,6 @@
 ---
 title: "Macros and Functions for Managing DLLs"
-ms.date: "04/03/2017"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["module macros in MFC"]
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
 ---
@@ -13,10 +13,10 @@ ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
 |[AfxOleInitModule](#afxoleinitmodule)|Provides OLE support from a regular MFC DLL that is dynamically linked to MFC.|
 |[AfxNetInitModule](#afxnetinitmodule)|Provides MFC Sockets support from a regular MFC DLL that is dynamically linked to MFC.|
 |[AfxGetAmbientActCtx](#afxgetambientactctx)|Gets the current state of the per-module state flag.|
-|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Sets the module state before initialization and/or to restore the previous module state after cleanup.|
+|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Sets the module state before initialization and/or to restore the previous module state after clean up.|
 |[AfxInitExtensionModule](#afxinitextensionmodule)|Initializes the DLL.|
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|set the per-module state flag, which affects the WinSxS behavior of MFC.|
-|[AfxTermExtensionModule](#afxtermextensionmodule)|Allows MFC to cleanup the MFC extension DLL when each process detaches from the DLL.|
+|[AfxTermExtensionModule](#afxtermextensionmodule)|Allows MFC to clean up the MFC extension DLL when each process detaches from the DLL.|
 
 ## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
 
@@ -72,7 +72,7 @@ This swaps the current module state with the state returned from [AfxGetStaticMo
 For more information on module states and MFC, see "Managing the State Data of MFC Modules" in [Creating New Documents, Windows, and Views](../creating-new-documents-windows-and-views.md) and [Technical Note 58](../tn058-mfc-module-state-implementation.md).
 
 > [!NOTE]
->  When MFC creates an activation context for an assembly, it uses [AfxWinInit](#afxwininit) to create the context and `AFX_MANAGE_STATE` to activate and deactivate it. Note also that `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, in order to allow MFC code to execute in the proper activation context selected by the User DLL. For more information, see [Support for Activation Contexts in the MFC Module State](../support-for-activation-contexts-in-the-mfc-module-state.md).
+>  When MFC creates an activation context for an assembly, it uses [AfxWinInit](application-information-and-management.md#afxwininit) to create the context and `AFX_MANAGE_STATE` to activate and deactivate it. Note also that `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, in order to allow MFC code to execute in the proper activation context selected by the User DLL. For more information, see [Support for Activation Contexts in the MFC Module State](../support-for-activation-contexts-in-the-mfc-module-state.md).
 
 ### Requirements
 
@@ -144,7 +144,7 @@ The context of a module is determined from its manifest, usually embedded in mod
 
 ## <a name="afxgetstaticmodulestate"></a> AfxGetStaticModuleState
 
-Call this function to set the module state before initialization and/or to restore the previous module state after cleanup.
+Call this function to set the module state before initialization and/or to restore the previous module state after clean up.
 
 ### Syntax
 
@@ -174,7 +174,7 @@ For more information on module states and MFC, see "Managing the State Data of M
 
 **Header:** afxstat_.h
 
-## <a name="afxinitextensionmodule"></a> AfxInitExtensionModule
+## AfxInitExtensionModule
 
 Call this function in an MFC extension DLL's `DllMain` to initialize the DLL.
 
@@ -221,7 +221,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 `AfxInitExtensionModule` makes a copy of the DLL's HMODULE and captures the DLL's runtime-classes (`CRuntimeClass` structures) as well as its object factories (`COleObjectFactory` objects) for use later when the `CDynLinkLibrary` object is created.
 MFC extension DLLs need to do two things in their `DllMain` function:
 
-- Call [AfxInitExtensionModule](#_mfc_afxinitextensionmodule) and check the return value.
+- Call [AfxInitExtensionModule](#afxinitextensionmodule) and check the return value.
 
 - Create a `CDynLinkLibrary` object if the DLL will be exporting [CRuntimeClass Structure](cruntimeclass-structure.md) objects or has its own custom resources.
 
@@ -268,7 +268,7 @@ BOOL CMFCListViewApp::InitInstance()
 
 ## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
 
-Call this function to allow MFC to cleanup the MFC extension DLL when each process detaches from the DLL (which happens when the process exits, or when the DLL is unloaded as a result of a `AfxFreeLibrary` call).
+Call this function to allow MFC to clean up the MFC extension DLL when each process detaches from the DLL (which happens when the process exits, or when the DLL is unloaded as a result of a `AfxFreeLibrary` call).
 
 ### Syntax
 
@@ -282,7 +282,7 @@ void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = 
 A reference to the [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) structure that contains the state of MFC extension DLL module.
 
 *bAll*<br/>
-If TRUE, cleanup all MFC extension DLL modules. Otherwise, cleanup only the current DLL module.
+If TRUE, clean up all MFC extension DLL modules. Otherwise, clean up only the current DLL module.
 
 ### Remarks
 
