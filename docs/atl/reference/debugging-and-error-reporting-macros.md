@@ -1,6 +1,6 @@
 ---
 title: "Debugging and Error Reporting Macros"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE"]
 helpviewer_keywords: ["macros, error reporting"]
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
@@ -16,7 +16,7 @@ These macros provide useful debugging and trace facilities.
 |[ATLASSERT](#atlassert)|Performs the same functionality as the [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) macro found in the C run-time library.|
 |[ATLENSURE](#atlensure)|Performs parameters validation. Call `AtlThrow` if needed|
 |[ATLTRACENOTIMPL](#atltracenotimpl)|Sends a message to the dump device that the specified function is not implemented.|
-|[ATLTRACE](#alttrace)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|
+|[ATLTRACE](#atltrace)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels. Included for backward compatibility.|
 |[ATLTRACE2](#atltrace2)|Reports warnings to an output device, such as the debugger window, according to the indicated flags and levels.|
 
 ##  <a name="_atl_debug_interfaces"></a>  _ATL_DEBUG_INTERFACES

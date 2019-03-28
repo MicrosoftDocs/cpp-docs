@@ -1,6 +1,6 @@
 ---
 title: "CDHtmlDialog Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CDHtmlDialog", "AFXDHTML/CDHtmlDialog", "AFXDHTML/CDHtmlDialog::CDHtmlDialog", "AFXDHTML/CDHtmlDialog::CanAccessExternal", "AFXDHTML/CDHtmlDialog::CreateControlSite", "AFXDHTML/CDHtmlDialog::DDX_DHtml_AxControl", "AFXDHTML/CDHtmlDialog::DDX_DHtml_CheckBox", "AFXDHTML/CDHtmlDialog::DDX_DHtml_ElementText", "AFXDHTML/CDHtmlDialog::DDX_DHtml_Radio", "AFXDHTML/CDHtmlDialog::DDX_DHtml_SelectIndex", "AFXDHTML/CDHtmlDialog::DDX_DHtml_SelectString", "AFXDHTML/CDHtmlDialog::DDX_DHtml_SelectValue", "AFXDHTML/CDHtmlDialog::DestroyModeless", "AFXDHTML/CDHtmlDialog::EnableModeless", "AFXDHTML/CDHtmlDialog::FilterDataObject", "AFXDHTML/CDHtmlDialog::GetControlDispatch", "AFXDHTML/CDHtmlDialog::GetControlProperty", "AFXDHTML/CDHtmlDialog::GetCurrentUrl", "AFXDHTML/CDHtmlDialog::GetDHtmlDocument", "AFXDHTML/CDHtmlDialog::GetDropTarget", "AFXDHTML/CDHtmlDialog::GetElement", "AFXDHTML/CDHtmlDialog::GetElementHtml", "AFXDHTML/CDHtmlDialog::GetElementInterface", "AFXDHTML/CDHtmlDialog::GetElementProperty", "AFXDHTML/CDHtmlDialog::GetElementText", "AFXDHTML/CDHtmlDialog::GetEvent", "AFXDHTML/CDHtmlDialog::GetExternal", "AFXDHTML/CDHtmlDialog::GetHostInfo", "AFXDHTML/CDHtmlDialog::GetOptionKeyPath", "AFXDHTML/CDHtmlDialog::HideUI", "AFXDHTML/CDHtmlDialog::IsExternalDispatchSafe", "AFXDHTML/CDHtmlDialog::LoadFromResource", "AFXDHTML/CDHtmlDialog::Navigate", "AFXDHTML/CDHtmlDialog::OnBeforeNavigate", "AFXDHTML/CDHtmlDialog::OnDocumentComplete", "AFXDHTML/CDHtmlDialog::OnDocWindowActivate", "AFXDHTML/CDHtmlDialog::OnFrameWindowActivate", "AFXDHTML/CDHtmlDialog::OnInitDialog", "AFXDHTML/CDHtmlDialog::OnNavigateComplete", "AFXDHTML/CDHtmlDialog::ResizeBorder", "AFXDHTML/CDHtmlDialog::SetControlProperty", "AFXDHTML/CDHtmlDialog::SetElementHtml", "AFXDHTML/CDHtmlDialog::SetElementProperty", "AFXDHTML/CDHtmlDialog::SetElementText", "AFXDHTML/CDHtmlDialog::SetExternalDispatch", "AFXDHTML/CDHtmlDialog::SetHostFlags", "AFXDHTML/CDHtmlDialog::ShowContextMenu", "AFXDHTML/CDHtmlDialog::ShowUI", "AFXDHTML/CDHtmlDialog::TranslateAccelerator", "AFXDHTML/CDHtmlDialog::TranslateUrl", "AFXDHTML/CDHtmlDialog::UpdateUI", "AFXDHTML/CDHtmlDialog::m_bUseHtmlTitle", "AFXDHTML/CDHtmlDialog::m_nHtmlResID", "AFXDHTML/CDHtmlDialog::m_pBrowserApp", "AFXDHTML/CDHtmlDialog::m_spHtmlDoc", "AFXDHTML/CDHtmlDialog::m_strCurrentUrl", "AFXDHTML/CDHtmlDialog::m_szHtmlResID"]
 helpviewer_keywords: ["CDHtmlDialog [MFC], CDHtmlDialog", "CDHtmlDialog [MFC], CanAccessExternal", "CDHtmlDialog [MFC], CreateControlSite", "CDHtmlDialog [MFC], DDX_DHtml_AxControl", "CDHtmlDialog [MFC], DDX_DHtml_CheckBox", "CDHtmlDialog [MFC], DDX_DHtml_ElementText", "CDHtmlDialog [MFC], DDX_DHtml_Radio", "CDHtmlDialog [MFC], DDX_DHtml_SelectIndex", "CDHtmlDialog [MFC], DDX_DHtml_SelectString", "CDHtmlDialog [MFC], DDX_DHtml_SelectValue", "CDHtmlDialog [MFC], DestroyModeless", "CDHtmlDialog [MFC], EnableModeless", "CDHtmlDialog [MFC], FilterDataObject", "CDHtmlDialog [MFC], GetControlDispatch", "CDHtmlDialog [MFC], GetControlProperty", "CDHtmlDialog [MFC], GetCurrentUrl", "CDHtmlDialog [MFC], GetDHtmlDocument", "CDHtmlDialog [MFC], GetDropTarget", "CDHtmlDialog [MFC], GetElement", "CDHtmlDialog [MFC], GetElementHtml", "CDHtmlDialog [MFC], GetElementInterface", "CDHtmlDialog [MFC], GetElementProperty", "CDHtmlDialog [MFC], GetElementText", "CDHtmlDialog [MFC], GetEvent", "CDHtmlDialog [MFC], GetExternal", "CDHtmlDialog [MFC], GetHostInfo", "CDHtmlDialog [MFC], GetOptionKeyPath", "CDHtmlDialog [MFC], HideUI", "CDHtmlDialog [MFC], IsExternalDispatchSafe", "CDHtmlDialog [MFC], LoadFromResource", "CDHtmlDialog [MFC], Navigate", "CDHtmlDialog [MFC], OnBeforeNavigate", "CDHtmlDialog [MFC], OnDocumentComplete", "CDHtmlDialog [MFC], OnDocWindowActivate", "CDHtmlDialog [MFC], OnFrameWindowActivate", "CDHtmlDialog [MFC], OnInitDialog", "CDHtmlDialog [MFC], OnNavigateComplete", "CDHtmlDialog [MFC], ResizeBorder", "CDHtmlDialog [MFC], SetControlProperty", "CDHtmlDialog [MFC], SetElementHtml", "CDHtmlDialog [MFC], SetElementProperty", "CDHtmlDialog [MFC], SetElementText", "CDHtmlDialog [MFC], SetExternalDispatch", "CDHtmlDialog [MFC], SetHostFlags", "CDHtmlDialog [MFC], ShowContextMenu", "CDHtmlDialog [MFC], ShowUI", "CDHtmlDialog [MFC], TranslateAccelerator", "CDHtmlDialog [MFC], TranslateUrl", "CDHtmlDialog [MFC], UpdateUI", "CDHtmlDialog [MFC], m_bUseHtmlTitle", "CDHtmlDialog [MFC], m_nHtmlResID", "CDHtmlDialog [MFC], m_pBrowserApp", "CDHtmlDialog [MFC], m_spHtmlDoc", "CDHtmlDialog [MFC], m_strCurrentUrl", "CDHtmlDialog [MFC], m_szHtmlResID"]
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
@@ -22,7 +22,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |Name|Description|
 |----------|-----------------|
 |[CDHtmlDialog::CDHtmlDialog](#cdhtmldialog)|Constructs a CDHtmlDialog object.|
-|[CDHtmlDialog::~CDHtmlDialog](#cdhtmldialog__~cdhtmldialog)|Destroys a CDHtmlDialog object.|
+|[CDHtmlDialog::~CDHtmlDialog](#_dtorcdhtmldialog)|Destroys a CDHtmlDialog object.|
 
 ### Public Methods
 
@@ -234,7 +234,7 @@ Exchanges data between a member variable and the property value of an ActiveX co
 void DDX_DHtml_AxControl(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT& var);
 
 void DDX_DHtml_AxControl(
@@ -252,7 +252,7 @@ A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) objec
 *szId*<br/>
 The value of the object tag's ID parameter in the HTML source for the ActiveX control.
 
-*dispid*<br/>
+*dispId*<br/>
 The dispatch ID of the property with which you want to exchange data.
 
 *szPropName*<br/>
@@ -299,43 +299,43 @@ Exchanges data between a member variable and any HTML element property on an HTM
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     CString& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     short& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     int& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     long& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     DWORD& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     float& value);
 
 void DDX_DHtml_ElementText(
     CDataExchange* pDX,
     LPCTSTR szId,
-    DISPID dispid,
+    DISPID dispId,
     double& value);
 ```
 
@@ -347,7 +347,7 @@ A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) objec
 *szId*<br/>
 The value that you specified for the HTML control's ID parameter.
 
-*dispid*<br/>
+*dispId*<br/>
 The dispatch ID of the HTML element with which you want to exchange data.
 
 *value*<br/>
@@ -392,7 +392,7 @@ void DDX_DHtml_SelectIndex(
 A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.
 
 *szId*<br/>
-The value that you specified for the HTML control's id parameter.
+The value that you specified for the HTML control's `id` parameter.
 
 *value*<br/>
 The value being exchanged.
@@ -533,11 +533,11 @@ VARIANT GetControlProperty(
 
 VARIANT GetControlProperty(
     LPCTSTR szId,
-    DISPID dispid);
+    DISPID dispId);
 
 VARIANT GetControlProperty(
     IDispatch* pdispControl,
-    DISPID dispid);
+    DISPID dispId);
 ```
 
 ### Parameters
@@ -551,7 +551,7 @@ The name of a property in the default locale of the current user.
 *pdispControl*<br/>
 The `IDispatch` pointer of an ActiveX control.
 
-*dispid*<br/>
+*dispId*<br/>
 The dispatch ID of a property.
 
 ### Return Value
@@ -685,7 +685,7 @@ template <class Q> HRESULT GetElementInterface(
 
 HRESULT GetElementInterface(
     LPCTSTR szElementId,
-    REFIID riid,
+    REFIID refiid,
     void** ppvObj);
 ```
 
@@ -697,7 +697,7 @@ The ID of an HTML element.
 *ppvObj*<br/>
 Address of a pointer that will be filled with the requested interface pointer if the element is found and the query succeeds.
 
-*riid*<br/>
+*refiid*<br/>
 The interface ID (IID) of the requested interface.
 
 ### Return Value
@@ -710,12 +710,12 @@ A standard HRESULT value.
 
 ##  <a name="getelementproperty"></a>  CDHtmlDialog::GetElementProperty
 
-Retrieves the value of the property identified by *dispid* from the HTML element identified by *szElementId*.
+Retrieves the value of the property identified by *dispId* from the HTML element identified by *szElementId*.
 
 ```
 VARIANT GetElementProperty(
     LPCTSTR szElementId,
-    DISPID dispid);
+    DISPID dispId);
 ```
 
 ### Parameters
@@ -723,7 +723,7 @@ VARIANT GetElementProperty(
 *szElementId*<br/>
 The ID of an HTML element.
 
-*dispid*<br/>
+*dispId*<br/>
 The dispatch ID of a property.
 
 ### Return Value
@@ -1034,7 +1034,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-This member function is CDHtmlDialog's implemention of [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)), as described in the Windows SDK.
+This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)), as described in the Windows SDK.
 
 ##  <a name="onframewindowactivate"></a>  CDHtmlDialog::OnFrameWindowActivate
 
@@ -1128,12 +1128,12 @@ Sets the property of an ActiveX control to a new value.
 ```
 void SetControlProperty(
     LPCTSTR szElementId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 
 void SetControlProperty(
     IDispatch* pdispControl,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 
 void SetControlProperty(
@@ -1147,7 +1147,7 @@ void SetControlProperty(
 *szElementId*<br/>
 The HTML ID of an ActiveX control.
 
-*dispid*<br/>
+*dispId*<br/>
 The dispatch ID of the property to set.
 
 *pVar*<br/>
@@ -1191,7 +1191,7 @@ Sets a property of an HTML element.
 ```
 void SetElementProperty(
     LPCTSTR szElementId,
-    DISPID dispid,
+    DISPID dispId,
     VARIANT* pVar);
 ```
 
@@ -1200,7 +1200,7 @@ void SetElementProperty(
 *szElementId*<br/>
 The ID of an HTML element.
 
-*dispid*<br/>
+*dispId*<br/>
 The dispatch ID of the property to set.
 
 *pVar*<br/>

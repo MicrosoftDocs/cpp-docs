@@ -1,6 +1,6 @@
 ---
 title: "#import Directive (C++)"
-ms.date: "10/18/2018"
+ms.date: "03/27/2019"
 f1_keywords: ["#import"]
 helpviewer_keywords: [".tlh files", "#import directive", "import directive (#import)", "tlh files", "tlbid switch", "preprocessor, directives", "COM, type library header file"]
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
@@ -146,7 +146,7 @@ using namespace MyLib;
 
 immediately after the **#import** statement in the source code.
 
-The namespace can be suppressed by using the [no_namespace](#_predir_no_namespace) attribute of the **#import** directive. However, suppressing the namespace may lead to name collisions. The namespace can also be renamed by the [rename_namespace](#_predir_rename_namespace) attribute.
+The namespace can be suppressed by using the [no_namespace](no-namespace.md)) attribute of the **#import** directive. However, suppressing the namespace may lead to name collisions. The namespace can also be renamed by the [rename_namespace](rename-namespace.md) attribute.
 
 The compiler provides the full path to any type library dependency required by the type library it is currently processing. The path is written, in the form of comments, into the type library header (.TLH) that the compiler generates for each processed type library.
 
