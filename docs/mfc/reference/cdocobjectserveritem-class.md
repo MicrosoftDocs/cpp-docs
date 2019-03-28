@@ -108,7 +108,7 @@ Specifies the verb to execute. For possible values, see [IOleObject::DoVerb](/wi
 
 ### Remarks
 
-The default implementation calls the [OnShow](#onshow) member function if the item is a DocObject and the OLEIVERB_INPLACEACTIVATE or OLEIVERB_SHOW is specified. If the item is not a DocObject or a different verb is specified, the default implementation calls [COleServerItem::OnDoVerb](../../mfc/reference/coleserveritem-class.md#OnDoVerb).
+The default implementation calls the [OnShow](#onshow) member function if the item is a DocObject and the OLEIVERB_INPLACEACTIVATE or OLEIVERB_SHOW is specified. If the item is not a DocObject or a different verb is specified, the default implementation calls [COleServerItem::OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb).
 
 ##  <a name="onhide"></a>  CDocObjectServerItem::OnHide
 
