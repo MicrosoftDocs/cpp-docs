@@ -1,6 +1,6 @@
 ---
 title: "CDataConnection Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["ATL::CDataConnection", "ATL.CDataConnection", "CDataConnection", "CDataConnection.CDataConnection", "ATL.CDataConnection.CDataConnection", "CDataConnection::CDataConnection", "ATL::CDataConnection::CDataConnection", "CDataConnection.Copy", "ATL.CDataConnection.Copy", "ATL::CDataConnection::Copy", "CDataConnection::Copy", "CDataConnection.Open", "ATL.CDataConnection.Open", "CDataConnection::Open", "ATL::CDataConnection::Open", "CDataConnection.OpenNewSession", "ATL.CDataConnection.OpenNewSession", "ATL::CDataConnection::OpenNewSession", "OpenNewSession", "CDataConnection::OpenNewSession", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataSource&", "CDataConnection.operatorCDataSource&", "operatorCDataSource&", "CDataConnection::operatorCDataSource&", "CDataSource*", "CDataConnection::operatorCDataSource*", "CDataConnection.operatorCDataSource*", "operatorCDataSource*", "CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&", "CDataConnection.operatorCSession*", "CDataConnection::operatorCSession*", "operatorCSession*", "CSession*"]
 helpviewer_keywords: ["CDataConnection class", "CDataConnection class, constructor", "Copy method", "Open method", "OpenNewSession method", "BOOL operator", "operator bool", "BOOL operator", "operator bool", "CDataSource& operator", "operator & (CDataSource)", "CDataSource* operator", "operator * (CDataSource)", "operator CSession&", "CSession& operator", "operator CSession*", "CSession* operator"]
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
@@ -52,7 +52,7 @@ With `CDataConnection`, you only need to create a connection object, pass it an 
 > [!NOTE]
 >  If you are creating a database application that needs to handle multiple sessions, you will need to use [OpenNewSession](../../data/oledb/cdataconnection-opennewsession.md).
 
-## <a name="#cdataconnection"></a> CDataConnection::CDataConnection
+## <a name="cdataconnection"></a> CDataConnection::CDataConnection
 
 Instantiates and initializes a `CDataConnection` object.
 
@@ -74,7 +74,7 @@ The first override creates a new `CDataConnection` object with default settings.
 
 The second override creates a new `CDataConnection` object with settings equivalent to the data connection object you specify.
 
-## <a name="#copy"></a> CDataConnection::Copy
+## <a name="copy"></a> CDataConnection::Copy
 
 Creates a copy of an existing data connection.
 
@@ -89,7 +89,7 @@ CDataConnection& Copy(const CDataConnection & ds) throw();
 *ds*<br/>
 [in] A reference to an existing data connection to copy.
 
-## <a name="#open"></a> CDataConnection::Open
+## <a name="open"></a> CDataConnection::Open
 
 Opens a connection to a data source using an initialization string.
 
@@ -108,7 +108,7 @@ HRESULT Open(LPCOLESTR szInitString) throw();
 
 A standard HRESULT.
 
-## <a name="#opennewsession"></a> CDataConnection::OpenNewSession
+## <a name="opennewsession"></a> CDataConnection::OpenNewSession
 
 Opens a new session using the current connection object's data source.
 

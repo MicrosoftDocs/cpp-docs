@@ -1,6 +1,6 @@
 ---
 title: "Function Overloading"
-ms.date: "11/19/2018"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["function overloading [C++], about function overloading", "function overloading", "declaring functions [C++], overloading"]
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 ---
@@ -23,7 +23,7 @@ You can overload both member functions and non-member functions. The following t
 |Use of **typedef** names|No|
 |Unspecified array bounds|No|
 |**const** or **volatile**|Yes, when applied to entire function|
-|[ref-qualifier](#ref-qualifier)|Yes|
+|[Ref-qualifiers](#ref-qualifiers)|Yes|
 
 ## Example
 

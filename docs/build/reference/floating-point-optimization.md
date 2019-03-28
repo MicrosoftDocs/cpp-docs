@@ -1,9 +1,12 @@
 ---
 title: "MSVC floating point optimization"
-ms.date: "03/09/2018"
+ms.date: "03/26/2019"
 ms.topic: "conceptual"
 ---
 # Microsoft Visual C++ floating-point optimization
+
+> [!Note]
+> This article exists for historical interest. The current documentation for floating-point optimization is found in [/fp (Specify Floating-Point Behavior)](fp-specify-floating-point-behavior.md).
 
 Get a handle on optimizing floating-point code using the Microsoft C++ compiler's method of managing floating-point semantics. Create fast programs while ensuring that only safe optimizations are performed on floating-point code.
 
@@ -183,7 +186,7 @@ To explicitly request the fp:precise mode using the command-line compiler, use t
 
 > cl /fp:precise source.cpp
 
-This instructs the compiler to use fp:precise semantics when generating code for the source.cpp file. The fp:precise model can also be invoked on a function-by-function basis using the [float_control compiler pragma](#the-float-control-pragma).
+This instructs the compiler to use fp:precise semantics when generating code for the source.cpp file. The fp:precise model can also be invoked on a function-by-function basis using the [float_control compiler pragma](#the-float_control-pragma).
 
 Under the fp:precise mode, the compiler never performs any optimizations that perturb the accuracy of floating-point computations. The compiler will always round correctly at assignments, typecasts and function calls, and intermediate rounding will be consistently performed at the same precision as the FPU registers. Safe optimizations, such as contractions, are enabled by default. Exception semantics and FPU environment sensitivity are disabled by default.
 
@@ -191,9 +194,9 @@ Under the fp:precise mode, the compiler never performs any optimizations that pe
 |-|-|
 |Rounding semantics|Explicit rounding at assignments, typecasts, and function calls. Intermediate expressions will be evaluated at register precision.|
 |Algebraic transformations|Strict adherence to non-associative, non-distributive floating-point algebra, unless a transformation is guaranteed to always produce the same results.|
-|Contractions|Permitted by default. For more information, see section [The fp_contract pragma](#the-fp-contract-pragma).|
+|Contractions|Permitted by default. For more information, see section [The fp_contract pragma](#the-fp_contract-pragma).|
 |Order of floating-point evaluation|The compiler may reorder the evaluation of floating-point expressions provided that the final results are not altered.|
-|FPU environment access|Disabled by default. For more information, see section [The fenv_access pragma](#the-fenv-access-pragma). The default precision and rounding mode is assumed.|
+|FPU environment access|Disabled by default. For more information, see section [The fenv_access pragma](#the-fenv_access-pragma). The default precision and rounding mode is assumed.|
 |Floating-point exception semantics|Disabled by default. For more information, see [/fp:except](fp-specify-floating-point-behavior.md).|
 
 ### Rounding semantics for floating-point expressions under fp:precise
@@ -319,7 +322,7 @@ c = symsqr( tmp3, z);
 
 |Processor|Rounding precision for intermediate expressions|
 |-|-|
-|x86|Intermediate expressions are computed at the default 53-bit precision with an extended range provided by a 16-bit exponent. When these 53:16 values are "spilled" to memory (as can happen during a function call), the extended exponent range will be narrowed to 11-bits. That is, spilled values are cast to the standard double precision format with only an 11-bit exponent.<br/>A user may switch to extended 64-bit precision for intermediate rounding by altering the floating-point control word using `_controlfp` and by enabling FPU environment access (see [The fenv_access pragma](#the-fenv-access-pragma)). However, when extended precision register-values are spilled to memory, the intermediate results will still be rounded to double precision.<br/>This particular semantic is subject to change.|
+|x86|Intermediate expressions are computed at the default 53-bit precision with an extended range provided by a 16-bit exponent. When these 53:16 values are "spilled" to memory (as can happen during a function call), the extended exponent range will be narrowed to 11-bits. That is, spilled values are cast to the standard double precision format with only an 11-bit exponent.<br/>A user may switch to extended 64-bit precision for intermediate rounding by altering the floating-point control word using `_controlfp` and by enabling FPU environment access (see [The fenv_access pragma](#the-fenv_access-pragma)). However, when extended precision register-values are spilled to memory, the intermediate results will still be rounded to double precision.<br/>This particular semantic is subject to change.|
 |amd64|FP semantics on amd64 are somewhat different from other platforms. For performance reasons, intermediate operations are computed at the widest precision of either operand instead of at the widest precision available.  To force computations to be computed using a wider precision than the operands, users need to introduce a cast operation on at least one operand in a sub-expression.<br/>This particular semantic is subject to change.|
 
 ### Algebraic transformations under fp:precise
@@ -621,7 +624,7 @@ etc...
 
 Under fp:precise, optimizations that reorder expression evaluation may change the points at which certain errors occur. Programs accessing the status word should enable FPU environment access by using the `fenv_access` compiler pragma.
 
-For more information, see section [The fenv_access pragma](#the-fenv-access-pragma).
+For more information, see section [The fenv_access pragma](#the-fenv_access-pragma).
 
 ### Floating-point exception semantics under fp:precise
 
@@ -639,7 +642,7 @@ The fp:fast floating-point mode is enabled using the [/fp:fast](fp-specify-float
 
 This example instructs the compiler to use fp:fast semantics when generating code for the source.cpp file. The fp:fast model can also be invoked on a function-by-function basis using the `float_control` compiler pragma.
 
-For more information, see section [The float_control pragma](#the-float-control-pragma).
+For more information, see section [The float_control pragma](#the-float_control-pragma).
 
 Under the fp:fast mode, the compiler may perform optimizations that alter the accuracy of floating-point computations. The compiler may not round correctly at assignments, typecasts or function calls, and intermediate rounding will not always be performed. Floating-point specific optimizations, such as contractions, are always enabled. Floating-point exception semantics and FPU environment sensitivity are disabled and unavailable.
 
@@ -823,7 +826,7 @@ The fp:strict floating-point mode is enabled using the [/fp:strict](fp-specify-f
 
 This example instructs the compiler to use fp:strict semantics when generating code for the source.cpp file. The fp:strict model can also be invoked on a function-by-function basis using the `float_control` compiler pragma.
 
-For more information, see section [The float_control pragma](#the-float-control-pragma).
+For more information, see section [The float_control pragma](#the-float_control-pragma).
 
 Under the fp:strict mode, the compiler never performs any optimizations that perturb the accuracy of floating-point computations. The compiler will always round correctly at assignments, typecasts and function calls, and intermediate rounding will be consistently performed at the same precision as the FPU registers. Floating-point exception semantics and FPU environment sensitivity are enabled by default. Certain optimizations, such as contractions, are disabled because the compiler cannot guarantee correctness in every case.
 
@@ -840,7 +843,7 @@ Under the fp:strict mode, the compiler never performs any optimizations that per
 
 By default, floating-point exception semantics are enabled under the fp:strict model. To disable these semantics, use either the **/fp:except-** switch or introduce a `float_control(except, off)` pragma.
 
-For more information, see sections [Enabling floating-point exception semantics](#enabling-floating-point-exception-semantics) and [The float_control Pragma](#the-float-control-pragma).
+For more information, see sections [Enabling floating-point exception semantics](#enabling-floating-point-exception-semantics) and [The float_control Pragma](#the-float_control-pragma).
 
 ## The fenv_access pragma
 

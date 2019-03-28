@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::InputIterator Class"
-ms.date: "12/30/2016"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::InputIterator::InputIterator"]
 helpviewer_keywords: ["InputIterator Class"]
@@ -45,7 +45,7 @@ The typename of the InputIterator template class.
 |Name|Description|
 |----------|-----------------|
 |[InputIterator::operator!= Operator](#operator-inequality)|Indicates whether the current InputIterator is not equal to a specified InputIterator.|
-|[InputIterator::operator* Operator](#operator-decrement)|Retrieves a reference to the element specified by the current InputIterator.|
+|[InputIterator::operator* Operator](#operator-dereference)|Retrieves a reference to the element specified by the current InputIterator.|
 |[InputIterator::operator++ Operator](#operator-increment)|Increments the current InputIterator.|
 |[InputIterator::operator== Operator](#operator-equality)|Indicates whether the current InputIterator is equal to a specified InputIterator.|
 |[InputIterator::operator-> Operator](#operator-arrow)|Retrieves the address of the element referenced by the current InputIterator.|

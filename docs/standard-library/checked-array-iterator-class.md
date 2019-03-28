@@ -1,6 +1,6 @@
 ---
 title: "checked_array_iterator Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["iterator/checked_array_iterator", "iterator/stdext::checked_array_iterator::difference_type", "iterator/stdext::checked_array_iterator::pointer", "iterator/stdext::checked_array_iterator::reference", "iterator/stdext::checked_array_iterator::base"]
 helpviewer_keywords: ["stdext::checked_array_iterator [C++], difference_type", "stdext::checked_array_iterator [C++], pointer", "stdext::checked_array_iterator [C++], reference", "stdext::checked_array_iterator [C++], base"]
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
@@ -480,7 +480,7 @@ See [checked_array_iterator::operator&lt;](#op_lt) for a code sample.
 
 For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-## <a name="lt_eq"></a>  checked_array_iterator::operator&lt;=
+## <a name="op_lt_eq"></a>  checked_array_iterator::operator&lt;=
 
 Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.
 
@@ -499,7 +499,7 @@ See [checked_array_iterator::operator&gt;=](#op_gt_eq) for a code sample.
 
 For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-## <a name="gt_eq"></a>  checked_array_iterator::operator&gt;=
+## <a name="op_gt_eq"></a>  checked_array_iterator::operator&gt;=
 
 Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.
 
@@ -682,7 +682,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator--"></a>  checked_array_iterator::operator--
+## <a name="operator--"></a>  checked_array_iterator::operator--
 
 Decrements the `checked_array_iterator` to the previous element.
 
@@ -826,7 +826,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator-_eq"></a>  checked_array_iterator::operator-=
+## <a name="operator-_eq"></a>  checked_array_iterator::operator-=
 
 Decrements a specified offset from a `checked_array_iterator`.
 
@@ -875,7 +875,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator-"></a>  checked_array_iterator::operator-
+## <a name="operator-"></a>  checked_array_iterator::operator-
 
 Decrements an offset from an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.
 
@@ -895,8 +895,6 @@ The offset to be decremented from the `checked_array_iterator`.
 A `checked_array_iterator` addressing the offset element.
 
 ### Remarks
-
-See [checked_array_iterator::operator-](#operator-) for a code sample.
 
 For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 

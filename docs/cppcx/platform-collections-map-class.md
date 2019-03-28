@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::Map Class"
-ms.date: "01/18/2018"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
@@ -78,7 +78,7 @@ For more information, see [Collections](../cppcx/collections-c-cx.md).
 |||
 |-|-|
 |Name|Description|
-|[Map::MapChanged](#mapchanged-event.md) `event`|Occurs when the Map changes.|
+|[Map::MapChanged](#mapchanged) event|Occurs when the Map changes.|
 
 ## Inheritance Hierarchy
 

@@ -1,6 +1,6 @@
 ---
 title: "Run-Time Object Model Services"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["vc.mfc.macros"]
 helpviewer_keywords: ["run-time object model services macros"]
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
@@ -356,7 +356,7 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 
 **Header:** afxdisp.h
 
-## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
+## IMPLEMENT_OLECTLTYPE
 
 Implements the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
 

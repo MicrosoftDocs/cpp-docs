@@ -1,6 +1,6 @@
 ---
 title: "CSid Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CSid", "ATLSECURITY/ATL::CSid", "ATLSECURITY/ATL::CSid::CSidArray", "ATLSECURITY/ATL::CSid::CSid", "ATLSECURITY/ATL::CSid::AccountName", "ATLSECURITY/ATL::CSid::Domain", "ATLSECURITY/ATL::CSid::EqualPrefix", "ATLSECURITY/ATL::CSid::GetLength", "ATLSECURITY/ATL::CSid::GetPSID", "ATLSECURITY/ATL::CSid::GetPSID_IDENTIFIER_AUTHORITY", "ATLSECURITY/ATL::CSid::GetSubAuthority", "ATLSECURITY/ATL::CSid::GetSubAuthorityCount", "ATLSECURITY/ATL::CSid::IsValid", "ATLSECURITY/ATL::CSid::LoadAccount", "ATLSECURITY/ATL::CSid::Sid", "ATLSECURITY/ATL::CSid::SidNameUse"]
 helpviewer_keywords: ["CSid class"]
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
@@ -63,8 +63,8 @@ class CSid
 |-|-|
 |[operator ==](#operator_eq_eq)|Tests two security descriptor objects for equality|
 |[operator !=](#operator_neq)|Tests two security descriptor objects for inequality|
-|[operator \<](#operator_lt_)|Compares relative value of two security descriptor objects.|
-|[operator >](#operator_gt_)|Compares relative value of two security descriptor objects.|
+|[operator \<](#operator_lt)|Compares relative value of two security descriptor objects.|
+|[operator >](#operator_gt)|Compares relative value of two security descriptor objects.|
 |[operator \<=](#operator_lt__eq)|Compares relative value of two security descriptor objects.|
 |[operator >=](#operator_gt__eq)|Compares relative value of two security descriptor objects.|
 

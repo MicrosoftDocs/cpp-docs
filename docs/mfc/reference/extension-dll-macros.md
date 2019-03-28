@@ -1,6 +1,6 @@
 ---
 title: "Macros and Functions for Managing DLLs"
-ms.date: "04/03/2017"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["module macros in MFC"]
 ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
 ---
@@ -72,7 +72,7 @@ This swaps the current module state with the state returned from [AfxGetStaticMo
 For more information on module states and MFC, see "Managing the State Data of MFC Modules" in [Creating New Documents, Windows, and Views](../creating-new-documents-windows-and-views.md) and [Technical Note 58](../tn058-mfc-module-state-implementation.md).
 
 > [!NOTE]
->  When MFC creates an activation context for an assembly, it uses [AfxWinInit](#afxwininit) to create the context and `AFX_MANAGE_STATE` to activate and deactivate it. Note also that `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, in order to allow MFC code to execute in the proper activation context selected by the User DLL. For more information, see [Support for Activation Contexts in the MFC Module State](../support-for-activation-contexts-in-the-mfc-module-state.md).
+>  When MFC creates an activation context for an assembly, it uses [AfxWinInit](application-information-and-management.md#afxwininit) to create the context and `AFX_MANAGE_STATE` to activate and deactivate it. Note also that `AFX_MANAGE_STATE` is enabled for static MFC libraries, as well as MFC DLLs, in order to allow MFC code to execute in the proper activation context selected by the User DLL. For more information, see [Support for Activation Contexts in the MFC Module State](../support-for-activation-contexts-in-the-mfc-module-state.md).
 
 ### Requirements
 
@@ -174,7 +174,7 @@ For more information on module states and MFC, see "Managing the State Data of M
 
 **Header:** afxstat_.h
 
-## <a name="afxinitextensionmodule"></a> AfxInitExtensionModule
+## AfxInitExtensionModule
 
 Call this function in an MFC extension DLL's `DllMain` to initialize the DLL.
 
@@ -221,7 +221,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 `AfxInitExtensionModule` makes a copy of the DLL's HMODULE and captures the DLL's runtime-classes (`CRuntimeClass` structures) as well as its object factories (`COleObjectFactory` objects) for use later when the `CDynLinkLibrary` object is created.
 MFC extension DLLs need to do two things in their `DllMain` function:
 
-- Call [AfxInitExtensionModule](#_mfc_afxinitextensionmodule) and check the return value.
+- Call [AfxInitExtensionModule](#afxinitextensionmodule) and check the return value.
 
 - Create a `CDynLinkLibrary` object if the DLL will be exporting [CRuntimeClass Structure](cruntimeclass-structure.md) objects or has its own custom resources.
 

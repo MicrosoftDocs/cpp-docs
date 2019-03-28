@@ -1,6 +1,6 @@
 ---
 title: "task_handle Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["task_handle", "PPL/concurrency::task_handle", "PPL/concurrency::task_handle::task_handle"]
 helpviewer_keywords: ["task_handle class"]
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
@@ -29,7 +29,7 @@ The type of the function object that will be invoked to execute the work represe
 
 |Name|Description|
 |----------|-----------------|
-|[task_handle](#ctor)|Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.|
+|[task_handle](#task_handle)|Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.|
 |[~task_handle Destructor](#dtor)|Destroys the `task_handle` object.|
 
 ### Public Operators
@@ -66,7 +66,7 @@ The function call operator that the runtime invokes to perform the work of the t
 void operator()() const;
 ```
 
-##  <a name="task_handle__ctor"></a> task_handle
+## task_handle
 
 Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.
 

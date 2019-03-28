@@ -1,6 +1,6 @@
 ---
 title: "CFixedStringT Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CFixedStringT", "CSTRINGT/ATL::CFixedStringT", "CSTRINGT/ATL::CFixedStringT::CFixedStringT"]
 helpviewer_keywords: ["CFixedStringT class", "shared classes, CFixedStringT"]
 ms.assetid: 6d4171ba-3104-493a-a6cc-d515f4ba9a4b
@@ -36,7 +36,7 @@ The number of characters stored in the buffer.
 
 |Name|Description|
 |----------|-----------------|
-|[CFixedStringT::operator =](#eq)|Assigns a new value to a `CFixedStringT` object.|
+|[CFixedStringT::operator =](#operator_eq)|Assigns a new value to a `CFixedStringT` object.|
 
 ## Remarks
 
@@ -93,7 +93,7 @@ A pointer to the memory manager of the `CFixedStringT` object. For more informat
 
 Because the constructors copy the input data into new allocated storage, you should be aware that memory exceptions may result. Note that some of these constructors act as conversion functions.
 
-##  <a name="operator__eq"></a>  CFixedStringT::operator =
+##  <a name="operator_eq"></a>  CFixedStringT::operator =
 
 Reinitializes an existing `CFixedStringT` object with new data.
 
