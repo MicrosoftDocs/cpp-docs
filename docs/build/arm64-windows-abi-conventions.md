@@ -181,27 +181,21 @@ Integral values are returned in x0.
 
 Floating-point values are returned in s0/d0/v0 as appropriate.
 
-Types returned by value are handled differently depending on whether they have certain properties.
+Types returned by value are handled differently depending on whether they have certain properties. Types which have all of these properties,
 
-Types are given a "C" return style if they are aggregate by the C++14 standard definition. That is,
-
-- they have no user-provided constructors, no private or protected non-static data members, no base classes, and no virtual functions,
+- they're *aggregate* by the C++14 standard definition, that is, they have no user-provided constructors, no private or protected non-static data members, no base classes, and no virtual functions, and
 - they have a trivial copy constructor, and
-- they have a trivial destructor.
+- they have a trivial destructor,
 
-All other types are given a "C++" return style.
+use the following return style:
 
-### C return style
+- Types less than or equal to 8 bytes are returned in x0.
+- Types less than or equal to 16 bytes are returned in x0 and x1, with x0 containing the lower-order 8 bytes.
+- For types greater than 16 bytes, the caller shall reserve a block of memory of sufficient size and alignment to hold the result. The address of the memory block shall be passed as an additional argument to the function in x8. The callee may modify the result memory block at any point during the execution of the subroutine. The callee isn't required to preserve the value stored in x8.
 
-Types less than or equal to 8 bytes are returned in x0.
+All other types use this convention:
 
-Types less than or equal to 16 bytes are returned in x0 and x1, with x0 containing the lower-order 8 bytes.
-
-For types greater than 16 bytes, the caller shall reserve a block of memory of sufficient size and alignment to hold the result. The address of the memory block shall be passed as an additional argument to the function in x8. The callee may modify the result memory block at any point during the execution of the subroutine. The callee isn't required to preserve the value stored in x8.
-
-### C++ return style
-
-The caller shall reserve a block of memory of sufficient size and alignment to hold the result. The address of the memory block shall be passed as an additional argument to the function in x0, or x1 if $this is passed in x0. The callee may modify the result memory block at any point during the execution of the subroutine. The callee returns the address of the memory block in x0.
+- The caller shall reserve a block of memory of sufficient size and alignment to hold the result. The address of the memory block shall be passed as an additional argument to the function in x0, or x1 if $this is passed in x0. The callee may modify the result memory block at any point during the execution of the subroutine. The callee returns the address of the memory block in x0.
 
 ## Stack
 
