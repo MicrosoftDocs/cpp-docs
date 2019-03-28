@@ -38,8 +38,8 @@ class CAnimationBaseObject : public CObject;
 |[CAnimationBaseObject::GetAutodestroyTransitions](#getautodestroytransitions)|Tells whether related transition are destroyed automatically.|
 |[CAnimationBaseObject::GetGroupID](#getgroupid)|Returns current Group ID.|
 |[CAnimationBaseObject::GetObjectID](#getobjectid)|Returns current Object ID.|
-|[CAnimationBaseObject::GetUserData](#getuserdata)|Returns user defined data.|
-|[CAnimationBaseObject::SetAutodestroyTransitions](#setautodestroytransitions)|Sets a flag that orders to automatically destroy transitions.|
+|[CAnimationBaseObject::GetUserData](#getuserdata)|Returns user-defined data.|
+|[CAnimationBaseObject::SetAutodestroyTransitions](#setautodestroytransitions)|Sets a flag to automatically destroy transitions.|
 |[CAnimationBaseObject::SetID](#setid)|Sets new IDs.|
 |[CAnimationBaseObject::SetUserData](#setuserdata)|Sets user-defined data.|
 
@@ -57,12 +57,12 @@ class CAnimationBaseObject : public CObject;
 |[CAnimationBaseObject::m_bAutodestroyTransitions](#m_bautodestroytransitions)|Specifies whether related transitions should be automatically destroyed.|
 |[CAnimationBaseObject::m_dwUserData](#m_dwuserdata)|Stores user-defined data.|
 |[CAnimationBaseObject::m_nGroupID](#m_ngroupid)|Specifies the Group ID of the animation object.|
-|[CAnimationBaseObject::m_nObjectID](#m_nobjectid)|Specifes the Object ID of the animation object.|
+|[CAnimationBaseObject::m_nObjectID](#m_nobjectid)|Specifies the Object ID of the animation object.|
 |[CAnimationBaseObject::m_pParentController](#m_pparentcontroller)|A pointer to the parent animation controller.|
 
 ## Remarks
 
-This class implements basic methods for all animation objects. An animation object can represent a value, point, size, rectangle or color in an application, as well as any custom entity. Animation objects are stored in animation groups (see CAnimationGroup). Each group can be animated separately and can be treated as an analogue of storyboard. An animation object encapsulates one or more animation variables (see CAnimationVariable), depending on its logical representation. For example, CAnimationRect contains four animation variables - one variable for each side of rectangle. Each animation object class exposes overloaded AddTransition method, which should be used to apply transitions to encapsulated animation variables. An animation object can be identified by Object ID (optionally) and by Group ID. A Group ID is necessary in order to place an animation object to correct group, but if a Group ID is not specified, an object is placed in the default group with ID 0. If you call SetID with different GroupID, an animation object will be moved to another group (a new group is created if necessary).
+This class implements basic methods for all animation objects. An animation object can represent a value, point, size, rectangle, or color in an application, as well as any custom entity. Animation objects are stored in animation groups (see CAnimationGroup). Each group can be animated separately and can be treated as an analog of storyboard. An animation object encapsulates one or more animation variables (see CAnimationVariable), depending on its logical representation. For example, CAnimationRect contains four animation variables - one variable for each side of rectangle. Each animation object class exposes overloaded AddTransition method, which should be used to apply transitions to encapsulated animation variables. An animation object can be identified by Object ID (optionally) and by Group ID. A Group ID is necessary in order to place an animation object to correct group, but if a Group ID is not specified, an object is placed in the default group with ID 0. If you call SetID with different GroupID, an animation object will be moved to another group (a new group is created if necessary).
 
 ## Inheritance Hierarchy
 
@@ -98,7 +98,7 @@ virtual BOOL ApplyTransitions(
 A pointer to a storyboard.
 
 *bDependOnKeyframes*<br/>
-With FALSE this method adds only those transitions that do not depend on keyframes.
+When FALSE, this method adds only those transitions that do not depend on keyframes.
 
 ### Return Value
 
@@ -172,7 +172,7 @@ TRUE if the animation variable is contained in the animation object; otherwise F
 
 ### Remarks
 
-This method can be used to determine whether an animation variable specified by pVariable is contained within an animation object. An animation object, depending on its type, may contain several animation variables. For example, CAnimationColor contains three variables, one for each color component (red, green and blue). When a value of animation variable has changed, Windows Animation API sends ValueChanged or IntegerValueChanged events (if enabled), and the parameter of this event is a pointer to interface IUIAnimationVariable of animation variable. This method helps to obtain a pointer to animation from a pointer to contained COM object.
+This method can be used to determine whether an animation variable specified by pVariable is contained within an animation object. An animation object, depending on its type, may contain several animation variables. For example, CAnimationColor contains three variables, one for each color component (red, green, and blue). When a value of animation variable has changed, Windows Animation API sends ValueChanged or IntegerValueChanged events (if enabled), and the parameter of this event is a pointer to interface IUIAnimationVariable of animation variable. This method helps to obtain a pointer to animation from a pointer to contained COM object.
 
 ##  <a name="createtransitions"></a>  CAnimationBaseObject::CreateTransitions
 
@@ -253,17 +253,17 @@ Collects pointers to contained animation variables.
 ```
 virtual void GetAnimationVariableList(
     CList<CAnimationVariable*,
-    CAnimationVariable*>& lst) = 0;
+    CAnimationVariable*>& list) = 0;
 ```
 
 ### Parameters
 
-*lst*<br/>
+*list*<br/>
 A list that must be filled with animation variables contained in an animation object.
 
 ### Remarks
 
-This is a pure virtual method that must be overridden in a derived class. An animation object, depending on its type, contains one or more animation variables. For example, CAnimationPoint contains two variables, for X and Y coordinates respectively. The base class CAnimationBaseObject implements some generic methods, which act on a list of animation variables: ApplyTransitions, ClearTransitions, EnableValueChangedEvent, EnableIntegerValueChangedEvent. These methods call GetAnimationVariableList, which is filled in a derived class with actual animation variables contained in a particular animation object, then loop over the list and perform necessary actions. If you create a custom animation object, you must add to lst all animation variables contained in that object.
+This pure virtual method must be overridden in a derived class. An animation object, depending on its type, contains one or more animation variables. For example, CAnimationPoint contains two variables, for X and Y coordinates respectively. The base class CAnimationBaseObject implements some generic methods, which act on a list of animation variables: ApplyTransitions, ClearTransitions, EnableValueChangedEvent, EnableIntegerValueChangedEvent. These methods call GetAnimationVariableList, which is filled in a derived class with actual animation variables contained in a particular animation object, then loop over the list and perform necessary actions. If you create a custom animation object, you must add to *list* all animation variables contained in that object.
 
 ##  <a name="getautodestroytransitions"></a>  CAnimationBaseObject::GetAutodestroyTransitions
 
@@ -315,7 +315,7 @@ Use this method to retrieve Object ID. It's 0 if Object ID has not been set expl
 
 ##  <a name="getuserdata"></a>  CAnimationBaseObject::GetUserData
 
-Returns user defined data.
+Returns user-defined data.
 
 ```
 DWORD GetUserData() const;
@@ -355,7 +355,7 @@ UINT32 m_nGroupID;
 
 ##  <a name="m_nobjectid"></a>  CAnimationBaseObject::m_nObjectID
 
-Specifes the Object ID of the animation object.
+Specifies the Object ID of the animation object.
 
 ```
 UINT32 m_nObjectID;
@@ -371,7 +371,7 @@ CAnimationController* m_pParentController;
 
 ##  <a name="setautodestroytransitions"></a>  CAnimationBaseObject::SetAutodestroyTransitions
 
-Sets a flag that orders to automatically destroy transitions.
+Sets a flag to automatically destroy transitions.
 
 ```
 void SetAutodestroyTransitions(BOOL bValue);
@@ -406,7 +406,7 @@ Specifies new Group ID.
 
 ### Remarks
 
-Allows to change Object ID and Group ID. If the new Group ID differs from the current ID, an animation object is moved to another group (a new group will be created, if necessary).
+Allows you to change Object ID and Group ID. If the new Group ID differs from the current ID, an animation object is moved to another group (a new group will be created, if necessary).
 
 ##  <a name="setparentanimationobjects"></a>  CAnimationBaseObject::SetParentAnimationObjects
 
@@ -418,7 +418,7 @@ virtual void SetParentAnimationObjects();
 
 ### Remarks
 
-This is a helper that can be used to establish relationship between animation variables, contained in an animation object, and their container. It loops over animation variables and sets a back pointer to a parent animation object to each animation variable. In the current implementation the actual relationship is established in CAnimationBaseObject::ApplyTransitions, therefore back pointers are not set until you call CAnimationGroup::Animate. Knowing the relationship may be helpful when you processing events and need to get a parent animation object from CAnimationVariable (use CAnimationVariable::GetParentAnimationObject).
+This helper can be used to establish a relationship between animation variables contained in an animation object, and their container. It loops over animation variables and sets a back pointer to a parent animation object to each animation variable. In the current implementation, the actual relationship is established in CAnimationBaseObject::ApplyTransitions, therefore back pointers are not set until you call CAnimationGroup::Animate. Knowing the relationship may be helpful when you processing events and need to get a parent animation object from CAnimationVariable. Use CAnimationVariable::GetParentAnimationObject.
 
 ##  <a name="setuserdata"></a>  CAnimationBaseObject::SetUserData
 

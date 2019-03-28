@@ -40,13 +40,13 @@ The number of characters stored in the buffer.
 
 ## Remarks
 
-This class is an example of a custom string class based on `CStringT`. Although quite similar, the two classes differ in implementation. The major differences between `CFixedStringT` and `CStringT` are:
+This class is an example of a custom string class based on `CStringT`. Although similar, the two classes differ in implementation. The major differences between `CFixedStringT` and `CStringT` are:
 
 - The initial character buffer is allocated as part of the object and has size *t_nChars*. This allows the `CFixedString` object to occupy a contiguous memory chunk for performance purposes. However, if the contents of a `CFixedStringT` object grows beyond *t_nChars*, the buffer is allocated dynamically.
 
 - The character buffer for a `CFixedStringT` object is always the same length ( *t_nChars*). There is no limitation on buffer size for `CStringT` objects.
 
-- The memory manager for `CFixedStringT` is customized such that sharing of a [CStringData](../../atl-mfc-shared/reference/cstringdata-class.md) object between two or more `CFixedStringT` objectsis not allowed. `CStringT` objects do not have this limitation.
+- The memory manager for `CFixedStringT` is customized such that sharing of a [CStringData](../../atl-mfc-shared/reference/cstringdata-class.md) object between two or more `CFixedStringT` objects is not allowed. `CStringT` objects do not have this limitation.
 
 For more information on the customization of `CFixedStringT` and memory management for string objects in general, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
@@ -71,19 +71,19 @@ Constructs a `CFixedStringT` object.
 ```
 CFixedStringT() throw();
 explicit CFixedStringT(IAtlStringMgr* pStringMgr) throw();
-CFixedStringT(const CFixedStringT<StringType, t_nChars>& str);
-CFixedStringT(const StringType& str);
-CFixedStringT(const StringType::XCHAR* psz);
-explicit CFixedStringT(const StringType::YCHAR* psz);
-explicit CFixedStringT(const unsigned char* psz);
+CFixedStringT(const CFixedStringT<StringType, t_nChars>& strSrc);
+CFixedStringT(const StringType& strSrc);
+CFixedStringT(const StringType::XCHAR* pszSrc);
+explicit CFixedStringT(const StringType::YCHAR* pszSrc);
+explicit CFixedStringT(const unsigned char* pszSrc);
 ```
 
 ### Parameters
 
-*psz*<br/>
+*pszSrc*<br/>
 A null-terminated string to be copied into this `CFixedStringT` object.
 
-*str*<br/>
+*strSrc*<br/>
 An existing `CFixedStringT` object to be copied into this `CFixedStringT` object.
 
 *pStringMgr*<br/>
@@ -91,7 +91,7 @@ A pointer to the memory manager of the `CFixedStringT` object. For more informat
 
 ### Remarks
 
-Because the constructors copy the input data into new allocated storage, you should be aware that memory exceptions may result. Note that some of these constructors act as conversion functions.
+Because the constructors copy the input data into new allocated storage, you should be aware that memory exceptions may result. Some of these constructors act as conversion functions.
 
 ##  <a name="operator_eq"></a>  CFixedStringT::operator =
 
@@ -99,19 +99,19 @@ Reinitializes an existing `CFixedStringT` object with new data.
 
 ```
 CFixedStringT<StringType, t_nChars>& operator=(
-    const CFixedStringT<StringType, t_nChars>& str);
-CFixedStringT<StringType, t_nChars>& operator=(const char* psz);
-CFixedStringT<StringType, t_nChars>& operator=(const wchar_t* psz);
-CFixedStringT<StringType, t_nChars>& operator=(const unsigned char* psz);
-CFixedStringT<StringType, t_nChars>& operator=(const StringType& str);
+    const CFixedStringT<StringType, t_nChars>& strSrc);
+CFixedStringT<StringType, t_nChars>& operator=(const char* pszSrc);
+CFixedStringT<StringType, t_nChars>& operator=(const wchar_t* pszSrc);
+CFixedStringT<StringType, t_nChars>& operator=(const unsigned char* pszSrc);
+CFixedStringT<StringType, t_nChars>& operator=(const StringType& strSrc);
 ```
 
 ### Parameters
 
-*str*<br/>
+*pszSrc*<br/>
 A null-terminated string to be copied into this `CFixedStringT` object.
 
-*psz*<br/>
+*strSrc*<br/>
 An existing `CFixedStringT` to be copied into this `CFixedStringT` object.
 
 ### Remarks

@@ -7,7 +7,7 @@ ms.assetid: 34e3ee18-aab6-4c39-9294-de869e1f7820
 ---
 # CD2DResource Class
 
-An abstract class that provides a interface for creating and managing D2D resources such as brushes, layers, and texts.
+An abstract class that provides an interface for creating and managing D2D resources such as brushes, layers, and texts.
 
 ## Syntax
 
@@ -43,7 +43,7 @@ class CD2DResource : public CObject;
 
 |Name|Description|
 |----------|-----------------|
-|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|Resource will be destoyed by owner (CRenderTarget)|
+|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|Resource will be destroyed by owner (CRenderTarget)|
 |[CD2DResource::m_pParentTarget](#m_pparenttarget)|Pointer to the parent CRenderTarget)|
 
 ## Inheritance Hierarchy
@@ -133,7 +133,7 @@ TRUE if resource is valid; otherwise FALSE.
 
 ##  <a name="m_bisautodestroy"></a>  CD2DResource::m_bIsAutoDestroy
 
-Resource will be destoyed by owner (CRenderTarget)
+Resource will be destroyed by owner (CRenderTarget)
 
 ```
 BOOL m_bIsAutoDestroy;

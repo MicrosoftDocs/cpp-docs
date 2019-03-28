@@ -7,7 +7,7 @@ ms.assetid: d364d27e-f512-4b12-9872-c2a17c78ab1f
 ---
 # CJumpList Class
 
-A `CJumpList` is the list of shortcuts revealed when you right click on an icon in the task bar.
+A `CJumpList` is the list of shortcuts revealed when you right-click on an icon in the task bar.
 
 ## Syntax
 
@@ -150,7 +150,7 @@ BOOL AddTask(IShellLink* pShellLink);
 Specifies the target task path.
 
 *strCommandLineArgs*<br/>
-Specifies command line arguments of the executable specified by strTargetExecutablePath.
+Specifies command-line arguments of the executable specified by *strTargetExecutablePath*.
 
 *strTitle*<br/>
 Task name that will be displayed in the Destination List.

@@ -32,7 +32,7 @@ The type of the value in the key-value pair.
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default, [std::less\<K>](../standard-library/less-struct.md).
 
 *__is_valid_winrt_type()*
-A compiler generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
+A compiler-generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
 
 ### Remarks
 
@@ -40,7 +40,7 @@ Allowed types are:
 
 - integers
 
-- interface class ^
+- interface class^
 
 - public ref class^
 
@@ -223,7 +223,7 @@ The typename of the current Map.
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map.
 
 *m*<br/>
-A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.
+A reference or [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.
 
 *first*<br/>
 The input iterator of the first element in a range of elements used to initialize the current Map.

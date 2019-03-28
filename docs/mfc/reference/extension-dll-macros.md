@@ -13,10 +13,10 @@ ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
 |[AfxOleInitModule](#afxoleinitmodule)|Provides OLE support from a regular MFC DLL that is dynamically linked to MFC.|
 |[AfxNetInitModule](#afxnetinitmodule)|Provides MFC Sockets support from a regular MFC DLL that is dynamically linked to MFC.|
 |[AfxGetAmbientActCtx](#afxgetambientactctx)|Gets the current state of the per-module state flag.|
-|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Sets the module state before initialization and/or to restore the previous module state after cleanup.|
+|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Sets the module state before initialization and/or to restore the previous module state after clean up.|
 |[AfxInitExtensionModule](#afxinitextensionmodule)|Initializes the DLL.|
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|set the per-module state flag, which affects the WinSxS behavior of MFC.|
-|[AfxTermExtensionModule](#afxtermextensionmodule)|Allows MFC to cleanup the MFC extension DLL when each process detaches from the DLL.|
+|[AfxTermExtensionModule](#afxtermextensionmodule)|Allows MFC to clean up the MFC extension DLL when each process detaches from the DLL.|
 
 ## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
 
@@ -144,7 +144,7 @@ The context of a module is determined from its manifest, usually embedded in mod
 
 ## <a name="afxgetstaticmodulestate"></a> AfxGetStaticModuleState
 
-Call this function to set the module state before initialization and/or to restore the previous module state after cleanup.
+Call this function to set the module state before initialization and/or to restore the previous module state after clean up.
 
 ### Syntax
 
@@ -268,7 +268,7 @@ BOOL CMFCListViewApp::InitInstance()
 
 ## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
 
-Call this function to allow MFC to cleanup the MFC extension DLL when each process detaches from the DLL (which happens when the process exits, or when the DLL is unloaded as a result of a `AfxFreeLibrary` call).
+Call this function to allow MFC to clean up the MFC extension DLL when each process detaches from the DLL (which happens when the process exits, or when the DLL is unloaded as a result of a `AfxFreeLibrary` call).
 
 ### Syntax
 
@@ -282,7 +282,7 @@ void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = 
 A reference to the [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) structure that contains the state of MFC extension DLL module.
 
 *bAll*<br/>
-If TRUE, cleanup all MFC extension DLL modules. Otherwise, cleanup only the current DLL module.
+If TRUE, clean up all MFC extension DLL modules. Otherwise, clean up only the current DLL module.
 
 ### Remarks
 

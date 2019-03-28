@@ -35,7 +35,7 @@ class CAnimationController : public CObject;
 |[CAnimationController::CreateKeyframe](#createkeyframe)|Overloaded. Creates a keyframe that depends on transition and adds it to the specified group.|
 |[CAnimationController::EnableAnimationManagerEvent](#enableanimationmanagerevent)|Sets or releases a handler to call when animation manager's status changes.|
 |[CAnimationController::EnableAnimationTimerEventHandler](#enableanimationtimereventhandler)|Sets or releases a handler for timing events and handler for timing updates.|
-|[CAnimationController::EnablePriorityComparisonHandler](#enableprioritycomparisonhandler)|Sets or releases the priority comparison handler to call to determine whether a scheduled storyboard can be cancelled, concluded, trimmed or compressed.|
+|[CAnimationController::EnablePriorityComparisonHandler](#enableprioritycomparisonhandler)|Sets or releases the priority comparison handler to call to determine whether a scheduled storyboard can be canceled, concluded, trimmed or compressed.|
 |[CAnimationController::EnableStoryboardEventHandler](#enablestoryboardeventhandler)|Sets or releases a handler for storyboard status and update events.|
 |[CAnimationController::FindAnimationGroup](#findanimationgroup)|Overloaded. Finds an animation group by its storyboard.|
 |[CAnimationController::FindAnimationObject](#findanimationobject)|Finds animation object containing a specified animation variable.|
@@ -297,7 +297,7 @@ When the handlers are set (enabled) Windows Animation API calls OnAnimationTimer
 
 ##  <a name="enableprioritycomparisonhandler"></a>  CAnimationController::EnablePriorityComparisonHandler
 
-Sets or releases the priority comparison handler to call to determine whether a scheduled storyboard can be cancelled, concluded, trimmed or compressed.
+Sets or releases the priority comparison handler to call to determine whether a scheduled storyboard can be canceled, concluded, trimmed or compressed.
 
 ```
 virtual BOOL EnablePriorityComparisonHandler(DWORD dwHandlerType);

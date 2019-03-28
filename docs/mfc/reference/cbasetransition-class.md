@@ -27,7 +27,7 @@ class CBaseTransition : public CObject;
 
 |Name|Description|
 |----------|-----------------|
-|[CBaseTransition::CBaseTransition](#cbasetransition)|Constructs a base transtion object.|
+|[CBaseTransition::CBaseTransition](#cbasetransition)|Constructs a base transition object.|
 |[CBaseTransition::~CBaseTransition](#_dtorcbasetransition)|The destructor. Called when a transition object is being destroyed.|
 
 ### Public Methods
@@ -124,7 +124,7 @@ Applies the transition to the related variable in the storyboard. If the start k
 
 ##  <a name="cbasetransition"></a>  CBaseTransition::CBaseTransition
 
-Constructs a base transtion object.
+Constructs a base transition object.
 
 ```
 CBaseTransition();
@@ -182,7 +182,7 @@ A valid pointer to a keyframe, or NULL if a transition should not be inserted be
 
 ### Remarks
 
-This method can be used to access a keyframe object that was previously set by SetKeyframes. It's called by top level code when transitions are being added to storyboard.
+This method can be used to access a keyframe object that was previously set by SetKeyframes. It's called by top-level code when transitions are being added to storyboard.
 
 ##  <a name="getrelatedvariable"></a>  CBaseTransition::GetRelatedVariable
 
@@ -214,7 +214,7 @@ A valid pointer to a keyframe, or NULL if a transition should not start after a 
 
 ### Remarks
 
-This method can be used to access a keyframe object that was previously set by SetKeyframes. It's called by top level code when transitions are being added to storyboard.
+This method can be used to access a keyframe object that was previously set by SetKeyframes. It's called by top-level code when transitions are being added to storyboard.
 
 ##  <a name="gettransition"></a>  CBaseTransition::GetTransition
 
@@ -274,7 +274,7 @@ Returns TRUE if a transition has been added to a storyboard, otherwise FALSE.
 
 ### Remarks
 
-This flag is set internally when the top level code adds transitions to storyboard.
+This flag is set internally when the top-level code adds transitions to storyboard.
 
 ##  <a name="m_badded"></a>  CBaseTransition::m_bAdded
 

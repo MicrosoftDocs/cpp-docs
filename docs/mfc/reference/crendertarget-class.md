@@ -386,7 +386,7 @@ Draws the outline of a rectangle that has the specified dimensions and stroke st
 
 ```
 void DrawRectangle(
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pBrush,
     FLOAT fStrokeWidth = 1.0,
     ID2D1StrokeStyle* strokeStyle = NULL);
@@ -394,7 +394,7 @@ void DrawRectangle(
 
 ### Parameters
 
-*rect*<br/>
+*rectangle*<br/>
 The dimensions of the rectangle to draw, in device-independent pixels
 
 *pBrush*<br/>
@@ -439,7 +439,7 @@ Draws the specified text using the format information provided by an IDWriteText
 ```
 void DrawText(
     const CString& strText,
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pForegroundBrush,
     CD2DTextFormat* textFormat = NULL,
     D2D1_DRAW_TEXT_OPTIONS options = D2D1_DRAW_TEXT_OPTIONS_NONE,
@@ -451,7 +451,7 @@ void DrawText(
 *strText*<br/>
 A pointer to an array of Unicode characters to draw.
 
-*rect*<br/>
+*rectangle*<br/>
 The size and position of the area in which the text is drawn.
 
 *pForegroundBrush*<br/>
@@ -598,13 +598,13 @@ Paints the interior of the specified rectangle.
 
 ```
 void FillRectangle(
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pBrush);
 ```
 
 ### Parameters
 
-*rect*<br/>
+*rectangle*<br/>
 The dimension of the rectangle to paint, in device-independent pixels.
 
 *pBrush*<br/>
@@ -883,7 +883,7 @@ void PushAxisAlignedClip(
 The size and position of the clipping area, in device-independent pixels.
 
 *mode*<br/>
-The antialiasing mode that is used to draw the edges of clip rects that have subpixel boundaries, and to blend the clip with the scene contents. The blending is performed once when the PopAxisAlignedClip method is called, and does not apply to each primitive within the layer.
+The antialiasing mode that is used to draw the edges of clip rectangles that have subpixel boundaries, and to blend the clip with the scene contents. The blending is performed once when the PopAxisAlignedClip method is called, and does not apply to each primitive within the layer.
 
 ##  <a name="pushlayer"></a>  CRenderTarget::PushLayer
 

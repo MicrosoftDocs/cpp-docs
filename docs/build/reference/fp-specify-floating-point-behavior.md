@@ -258,4 +258,3 @@ Under **/O2** **/fp:fast** the generated code is simplified, because all type ca
 
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
-[MSVC floating point optimization](floating-point-optimization.md)<br/>

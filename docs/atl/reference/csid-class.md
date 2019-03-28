@@ -96,7 +96,7 @@ Returns the LPCTSTR pointing to the name of the account.
 
 This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).
 
-If no account name for the `SID` can be found, `AccountName` returns an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as a logon `SID` that identifies a logon session.
+If no account name for the `SID` can be found, `AccountName` returns an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as an `SID` that identifies a sign-in session.
 
 ##  <a name="csid"></a>  CSid::CSid
 
@@ -187,7 +187,7 @@ Returns the `LPCTSTR` pointing to the domain.
 
 This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).
 
-If no account name for the `SID` can be found, `Domain` returns the domain as an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as a logon `SID` that identifies a logon session.
+If no account name for the `SID` can be found, `Domain` returns the domain as an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as an `SID` that identifies a sign-in session.
 
 ##  <a name="equalprefix"></a>  CSid::EqualPrefix
 

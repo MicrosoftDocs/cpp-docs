@@ -68,12 +68,12 @@ Initializes a new instance of the InputIterator class.
 
 ```
 InputIterator();
-explicit InputIterator(Windows::Foundation::Collections<X>^ iter);
+explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 ```
 
 ### Parameters
 
-*iter*<br/>
+*iterator*<br/>
 An iterator object.
 
 ## <a name="operator-arrow"></a>  InputIterator::operator-&gt; Operator

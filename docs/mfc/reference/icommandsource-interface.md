@@ -177,7 +177,7 @@ The beginning index of the command ID range.
 The ending index of the command ID range.
 ### Remarks
 
-This method removes a group of message handlers, mapped to the command IDs specifed by cmdIDMin and cmdIDMax, from the command source object.
+This method removes a group of message handlers, mapped to the command IDs specified by cmdIDMin and cmdIDMax, from the command source object.
 
 ## <a name="removecommandrangeuihandler"></a> ICommandSource::RemoveCommandRangeUIHandler
 
@@ -196,7 +196,7 @@ The beginning index of the command ID range.
 The ending index of the command ID range.
 ### Remarks
 
-This method removes a group of user interface command message handlers, mapped to the command IDs specifed by cmdIDMin and cmdIDMax, from the command source object.
+This method removes a group of user interface command message handlers, mapped to the command IDs specified by cmdIDMin and cmdIDMax, from the command source object.
 
 ## <a name="removecommanduihandler"></a> ICommandSource::RemoveCommandUIHandler
 
