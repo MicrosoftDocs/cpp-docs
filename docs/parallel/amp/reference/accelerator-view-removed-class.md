@@ -1,8 +1,8 @@
 ---
 title: "accelerator_view_removed Class"
-ms.date: "11/04/2016"
-f1_keywords: ["accelerator_view_removed", "AMPRT/accelerator_view_removed", "AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed", "AMPRT/Concurrency::accelerator_view_removed:get_view_removed_reason"]
-helpviewer_keywords: ["AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed Class"]
+ms.date: "03/27/2019"
+f1_keywords: ["accelerator_view_removed", "AMPRT/accelerator_view_removed", "AMPRT/Concurrency::accelerator_view_removed::accelerator_view_removed", "AMPRT/Concurrency::accelerator_view_removed::get_view_removed_reason"]
+helpviewer_keywords: ["AMPRT/Concurrency::accelerator_view_removed::accelerator_view_removed Class"]
 ms.assetid: 262446de-311c-454e-a5ed-e2aaced0d88a
 ---
 # accelerator_view_removed Class
@@ -51,26 +51,26 @@ Initializes a new instance of the [accelerator_view_removed](accelerator-view-re
 
 ```
 explicit accelerator_view_removed(
-    const char * _Message,
-    HRESULT _View_removed_reason ) throw();
+    const char * message,
+    HRESULT view_removed_reason ) throw();
 
 explicit accelerator_view_removed(
-    HRESULT _View_removed_reason ) throw();
+    HRESULT view_removed_reason ) throw();
 ```
 
 ### Parameters
 
-*_Message*<br/>
+*message*<br/>
 A description of the error.
 
-*_View_removed_reason*<br/>
+*view_removed_reason*<br/>
 An HRESULT error code indicating the cause of removal of the `accelerator_view` object.
 
 ### Return Value
 
-A new instance of the accelerator_view_removed class.
+A new instance of the `accelerator_view_removed` class.
 
-## <a name="get_view_removed_reason_method"></a> get_view_removed_reason
+## get_view_removed_reason
 
 Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.
 

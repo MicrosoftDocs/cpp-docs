@@ -1,6 +1,6 @@
 ---
 title: "raw_method_prefix"
-ms.date: "10/18/2018"
+ms.date: "03/27/2019"
 f1_keywords: ["raw_method_prefix"]
 helpviewer_keywords: ["raw_method_prefix attribute"]
 ms.assetid: 71490313-af78-4bb2-b28a-eee67950d30b
@@ -27,7 +27,7 @@ The prefix to be used.
 Low-level properties and methods are exposed by member functions named with a default prefix of **raw_** to avoid name collisions with the high-level error-handling member functions.
 
 > [!NOTE]
-> The effects of the **raw_method_prefix** attribute will not be changed by the presence of the [raw_interfaces_only](#_predir_raw_interfaces_only) attribute. The **raw_method_prefix** always takes precedence over `raw_interfaces_only` in specifying a prefix. If both attributes are used in the same `#import` statement, then the prefix specified by the **raw_method_prefix** attribute is used.
+> The effects of the **raw_method_prefix** attribute will not be changed by the presence of the [raw_interfaces_only](raw-interfaces-only.md) attribute. The **raw_method_prefix** always takes precedence over `raw_interfaces_only` in specifying a prefix. If both attributes are used in the same `#import` statement, then the prefix specified by the **raw_method_prefix** attribute is used.
 
 **END C++ Specific**
 

@@ -1,6 +1,6 @@
 ---
 title: "move_iterator Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["iterator/std::move_iterator", "iterator/std::move_iterator::iterator_type", "iterator/std::move_iterator::iterator_category", "iterator/std::move_iterator::value_type", "iterator/std::move_iterator::difference_type", "iterator/std::move_iterator::pointer", "iterator/std::move_iterator::reference", "iterator/std::move_iterator::base"]
 helpviewer_keywords: ["std::move_iterator [C++]", "std::move_iterator [C++], iterator_type", "std::move_iterator [C++], iterator_category", "std::move_iterator [C++], value_type", "std::move_iterator [C++], difference_type", "std::move_iterator [C++], pointer", "std::move_iterator [C++], reference", "std::move_iterator [C++], base"]
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
@@ -153,7 +153,7 @@ Returns the new current element.
 
 The operator adds *_Off* to the stored iterator. Then returns `*this`.
 
-## <a name="move_iterator__operator-_eq"></a>  move_iterator::operator-=
+## <a name="operator-_eq"></a>  move_iterator::operator-=
 
 Moves across a specified number of previous elements. This operator subtracts an offset from the stored iterator.
 
@@ -212,7 +212,7 @@ reference operator[](difference_type _Off) const;
 
 The operator returns `(reference)*(*this + _Off)`.
 
-## <a name="move_iterator__operator--"></a>  move_iterator::operator--
+## <a name="operator--"></a>  move_iterator::operator--
 
 Pre- and postdecrement member operators perform a decrement on the stored iterator.
 
@@ -229,7 +229,7 @@ The first member operator (predecrement) decrements the stored iterator. Then re
 
 The second (postdecrement) operator makes a copy of `*this`, evaluates `--*this`. Then returns the copy.
 
-## <a name="move_iterator__operator-"></a>  move_iterator::operator-
+## <a name="operator-"></a>  move_iterator::operator-
 
 Decrements the stored iterator and returns the indicated value.
 

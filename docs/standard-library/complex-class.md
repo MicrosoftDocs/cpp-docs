@@ -1,6 +1,6 @@
 ---
 title: "complex Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["complex/std::complex::value_type", "complex/std::complex::imag", "complex/std::complex::real"]
 helpviewer_keywords: ["std::complex [C++], value_type", "std::complex [C++], imag", "std::complex [C++], real"]
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
@@ -391,7 +391,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="complex__operator-_eq"></a>  complex::operator-=
+## <a name="operator-_eq"></a>  complex::operator-=
 
 Subtracts a number from a target complex number, where the number subtracted may be complex or of the same type as are the real and imaginary parts of the complex number to which it is added.
 
