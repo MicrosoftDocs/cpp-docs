@@ -184,7 +184,7 @@ Floating-point values are returned in s0/d0/v0 as appropriate.
 Types returned by value are handled differently depending on whether they have certain properties. Types which have all of these properties,
 
 - they're *aggregate* by the C++14 standard definition, that is, they have no user-provided constructors, no private or protected non-static data members, no base classes, and no virtual functions, and
-- they have a trivial copy constructor, and
+- they have a trivial copy-assignment operator, and
 - they have a trivial destructor,
 
 use the following return style:
