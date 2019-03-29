@@ -48,7 +48,7 @@ These are the assumptions made in the exception handling description:
 
 ![stack frame layout](media/arm64-exception-handling-stack-frame.png "stack frame layout")
 
-For frame chained functions, the fp and lr pair can be saved at any position in the local variable area depending on optimization considerations. The goal is to maximize the number of locals that can be reached by one single instruction based on frame pointer (r29) or stack pointer (sp). However for `alloca` functions, it must be chained and r29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register aave areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<r29, lr> pair) and outgoing parameter size, respectively.
+For frame chained functions, the fp and lr pair can be saved at any position in the local variable area depending on optimization considerations. The goal is to maximize the number of locals that can be reached by one single instruction based on frame pointer (r29) or stack pointer (sp). However for `alloca` functions, it must be chained and r29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register save areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<r29, lr> pair) and outgoing parameter size, respectively.
 
 1. Chained, #localsz \<= 512
 
@@ -261,7 +261,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 }
 ```
 
-It should be noted that although the prolog and each epilog has its own index into the unwind codes, the table is shared between them, and it is entirely possible (and not altogether uncommon) that they can all share the same codes (see Example 2 in Appendix A below). Compiler writers should optimize for this case, in particular because the largest index that can be specified is 255, thus limiting the total number of unwind codes for a particular function.
+It should be noted that although the prolog and each epilog has its own index into the unwind codes, the table is shared between them, and it is entirely possible (and not altogether uncommon) that they can all share the same codes (see Example 2 in the Examples section below). Compiler writers should optimize for this case, in particular because the largest index that can be specified is 255, thus limiting the total number of unwind codes for a particular function.
 
 ### Unwind codes
 
@@ -334,7 +334,7 @@ The fields are as follows:
 
 - **Function Start RVA** is the 32-bit RVA of the start of the function.
 - **Flag** is a 2-bit field as described above, with the following meanings:
-  - 00 = packed unwind data not used; remaining bits point to .xdata record, below
+  - 00 = packed unwind data not used; remaining bits point to an .xdata record
   - 01 = packed unwind data used as described below with single prolog and epilog at the beginning and end of the scope
   - 10 = packed unwind data used as described below for code without any prolog and epilog; this is useful for describing separated function segments.
   - 11 = reserved;
@@ -347,7 +347,7 @@ The fields are as follows:
   - 11 = chained function, a store/load pair instruction is used in prolog/epilog \<r29,lr>
 - **H** is a 1-bit flag indicating whether the function homes the integer parameter registers (r0-r7) by storing them at the very start of the function. (0=does not home registers, 1=homes registers).
 - **RegI** is a 4-bit field indicating the number of non-volatile INT registers (r19-r28) saved in the canonical stack location.
-- **RegF** is a 3-bit field indicating the number of non-volatile FP registers (d8-d15) saved in the canonical stack location. (0=no FP register is saved, m>0: m+1 FP registers are saved). For function save only one FP register, packed unwind data cannot be applied.
+- **RegF** is a 3-bit field indicating the number of non-volatile FP registers (d8-d15) saved in the canonical stack location. (RegF=0: no FP register is saved; RegF>0: RegF+1 FP registers are saved). Packed unwind data cannot be used for function that save only one FP register.
 
 Canonical prologs that fall into categories 1, 2 (without outgoing parameter area), 3 and 4 in section above can be represented by packed unwind format.  The epilogs for canonical functions follow a very similar form, except **H** has no effect, the `set_fp` instruction is omitted, and the order of steps as well as instructions in each step are reversed in epilog. The algorithm for packed xdata follows these steps, detailed in the following table:
 
@@ -380,7 +380,7 @@ Step #|Flag values|# of instructions|Opcode|Unwind Code
 
 \*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first stp for the floating-point does the predecrement.
 
-\*\*\* No instruction corresponding to `mov r29, sp` is present in the epilog. If a function requires restoration of sp from r29 then we cannot use packed unwind data.
+\*\*\* No instruction corresponding to `mov r29, sp` is present in the epilog. Packed unwind data cannot be used if a function requires restoration of sp from r29.
 
 ### Unwinding partial prologs and epilogs
 
