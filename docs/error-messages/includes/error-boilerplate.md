@@ -7,4 +7,4 @@ To get help on a particular diagnostic message in Visual Studio, select it in th
 
 You may find additional assistance for errors and warnings in Microsoft's public forums. You can search for the error or warning number on the [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) site. You may also search for errors and warnings and ask questions on [Stack Overflow](http://stackoverflow.com/) to find solutions.
 
-For links to additional help and community resources, see [Visual C++ Help and Community](../../visual-cpp-help-and-community.md).
+For links to additional help and community resources, see [Visual C++ Help and Community](../../overview/visual-cpp-help-and-community.md).

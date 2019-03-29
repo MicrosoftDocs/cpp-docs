@@ -11,7 +11,7 @@ ms.assetid: a24cd0c9-262f-46e5-9488-1c01f945933d
 
 A property or event definition used syntax from a version before Visual Studio 2005.
 
-For more information, see [property](../../windows/property-cpp-component-extensions.md).
+For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
 ## Example
 

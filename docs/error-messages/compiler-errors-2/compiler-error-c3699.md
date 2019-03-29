@@ -28,7 +28,7 @@ int main() {
 
 ## Example
 
-A trivial property cannot have reference type. See [property](../../windows/property-cpp-component-extensions.md) for more information. The following sample generates C3699.
+A trivial property cannot have reference type. See [property](../../extensions/property-cpp-component-extensions.md) for more information. The following sample generates C3699.
 
 ```
 // C3699_b.cpp

@@ -11,7 +11,7 @@ ms.assetid: ec2adf3b-d7a1-4005-bb0c-5d219df78dc8
 
 An unmanaged class can have a constructor with parameters that have default values and the compiler will use this as the default constructor. A class marked with the `value` keyword will not use a constructor with default values for its parameters as a default constructor.
 
-For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md).
+For more information, see [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md).
 
 The following sample generates C4534:
 

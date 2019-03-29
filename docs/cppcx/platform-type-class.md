@@ -8,7 +8,7 @@ ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
 ---
 # Platform::Type Class
 
-Contains run-time information about a type—specifically, a string name and a typecode. Obtained by calling [Object::GetType](../cppcx/platform-object-class.md#gettype) on any object or using the [typeid](../windows/typeid-cpp-component-extensions.md) operator on a class or struct name.
+Contains run-time information about a type—specifically, a string name and a typecode. Obtained by calling [Object::GetType](../cppcx/platform-object-class.md#gettype) on any object or using the [typeid](../extensions/typeid-cpp-component-extensions.md) operator on a class or struct name.
 
 ## Syntax
 

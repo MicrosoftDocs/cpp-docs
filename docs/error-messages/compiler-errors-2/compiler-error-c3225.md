@@ -11,7 +11,7 @@ generic type argument for 'arg' cannot be 'type', it must be a value type or han
 
 The generic type argument was not of the correct type.
 
-For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 

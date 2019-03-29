@@ -13,7 +13,7 @@ ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
 
 Only types in an assembly can be forwarded.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

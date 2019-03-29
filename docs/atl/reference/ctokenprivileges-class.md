@@ -312,7 +312,7 @@ Casts a value to a pointer to the [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/
 
 ## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
+[Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)<br/>
 [LUID](/windows/desktop/api/winnt/ns-winnt-_luid)<br/>
 [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)<br/>

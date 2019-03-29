@@ -11,7 +11,7 @@ ms.assetid: e23b0e5c-c704-4e67-a868-bf02c2055d85
 
 You cannot use type forwarding on a generic class.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

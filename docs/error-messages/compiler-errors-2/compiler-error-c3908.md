@@ -11,7 +11,7 @@ access level less restrictive than 'construct'
 
 A property accessor method (get or set) cannot have less restrictive access than the access specified on the property itself.  Similarly, for event accessor methods.
 
-For more information, see [property](../../windows/property-cpp-component-extensions.md) and [event](../../windows/event-cpp-component-extensions.md).
+For more information, see [property](../../extensions/property-cpp-component-extensions.md) and [event](../../extensions/event-cpp-component-extensions.md).
 
 The following sample generates C3908:
 

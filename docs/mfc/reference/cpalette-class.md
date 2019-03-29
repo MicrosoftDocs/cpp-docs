@@ -298,7 +298,7 @@ For more information on the Windows structure `PALETTEENTRY`, see [PALETTEENTRY]
 
 ## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC Sample DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPalette::GetPaletteEntries](#getpaletteentries)<br/>

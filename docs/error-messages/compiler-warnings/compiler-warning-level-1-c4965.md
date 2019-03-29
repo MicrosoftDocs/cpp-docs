@@ -11,7 +11,7 @@ implicit box of integer 0; use nullptr or explicit cast
 
 Visual C++ features implicit boxing of value types. An instruction that resulted in a null assignment using Managed Extensions for C++ now becomes an assignment to a boxed int.
 
-For more information, see [Boxing](../../windows/boxing-cpp-component-extensions.md).
+For more information, see [Boxing](../../extensions/boxing-cpp-component-extensions.md).
 
 ## Example
 

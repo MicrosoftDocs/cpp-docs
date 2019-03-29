@@ -29,9 +29,9 @@ When you update your Visual C++ projects, if you have set the project's **Linker
 
 Because the UCRT is now a Microsoft Windows operating system component, it is included as part of the operating system in Windows 10 and is available through Windows Update for older operating systems, Windows Vista through Windows 8.1. A redistributable version is available for Windows XP. As an operating system component, UCRT updates and servicing are managed by Windows Update independently of Visual Studio and Microsoft C++ compiler  versions. Because the UCRT is a Windows component, for security and ease of updates, and a smaller image size, we strongly recommend central deployment of the UCRT for your app.
 
-You can use the UCRT on any version of Windows supported by Visual Studio 2015 or Visual Studio 2017. You can redistribute it using a vcredist package for supported versions of Windows other than Windows 10. The vcredist packages include the UCRT components and automatically install them on Windows operating systems that do not have them installed by default. For more information, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).
+You can use the UCRT on any version of Windows supported by Visual Studio 2015 or Visual Studio 2017. You can redistribute it using a vcredist package for supported versions of Windows other than Windows 10. The vcredist packages include the UCRT components and automatically install them on Windows operating systems that do not have them installed by default. For more information, see [Redistributing Visual C++ Files](../windows/redistributing-visual-cpp-files.md).
 
-App-local deployment of the UCRT is supported, though not recommended for both performance and security reasons. The DLLs for app-local deployment are included as part of the Windows SDK, under the **redist** subdirectory. The DLLs required include ucrtbase.dll and a set of **APISet forwarder** DLLs named api-ms-win-_subset_.dll. The set of DLLs required on each operating system varies, so we recommended that you include all of the DLLs when you use app-local deployment. For additional details and caveats about app-local deployment, see [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md).
+App-local deployment of the UCRT is supported, though not recommended for both performance and security reasons. The DLLs for app-local deployment are included as part of the Windows SDK, under the **redist** subdirectory. The DLLs required include ucrtbase.dll and a set of **APISet forwarder** DLLs named api-ms-win-_subset_.dll. The set of DLLs required on each operating system varies, so we recommended that you include all of the DLLs when you use app-local deployment. For additional details and caveats about app-local deployment, see [Deployment in Visual C++](../windows/deployment-in-visual-cpp.md).
 
 ## Changes to the Universal CRT functions and macros
 
@@ -43,4 +43,4 @@ Many functions were added or updated in the UCRT to improve ISO C99 conformance,
 [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)<br/>
-[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)
+[C++ conformance improvements in Visual Studio 2017](../overview/cpp-conformance-improvements-2017.md)

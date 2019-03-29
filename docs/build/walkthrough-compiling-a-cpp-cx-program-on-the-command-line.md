@@ -5,7 +5,7 @@ ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
 ---
 # Walkthrough: Compiling a C++/CX Program on the Command Line
 
-You can create Visual C++ programs that target the Windows Runtime and build them on the command line. Visual C++ supports Visual C++ component extensions (C++/CX), which has additional types and operators to target the Windows Runtime programming model. You can use C++/CX to build apps for Universal Windows Platform (UWP), Windows Phone 8.1, and Windows desktop. For more information, see [A Tour of C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) and [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).
+You can create Visual C++ programs that target the Windows Runtime and build them on the command line. Visual C++ supports Visual C++ component extensions (C++/CX), which has additional types and operators to target the Windows Runtime programming model. You can use C++/CX to build apps for Universal Windows Platform (UWP), Windows Phone 8.1, and Windows desktop. For more information, see [A Tour of C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) and [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).
 
 In this walkthrough, you use a text editor to create a basic C++/CX program, and then compile it on the command line. (You can use your own C++/CX program instead of typing the one that's shown, or you can use a C++/CX code sample from another help article. This technique is useful for building and testing small modules that have no UI elements.)
 

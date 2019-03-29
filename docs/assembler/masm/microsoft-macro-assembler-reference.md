@@ -33,7 +33,7 @@ Information about how to create output files for x64.
 
 ## Related Sections
 
-[Visual C++](../../visual-cpp-in-visual-studio.md)<br/>
+[Visual C++](../../overview/visual-cpp-in-visual-studio.md)<br/>
 Provides links to different areas of the Visual Studio and Visual C++ documentation.
 
 ## See also

@@ -497,4 +497,4 @@ int main() {
 
 ## See also
 
-[delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md)
+[delegate  (C++ Component Extensions)](../extensions/delegate-cpp-component-extensions.md)

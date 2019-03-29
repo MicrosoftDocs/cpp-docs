@@ -140,7 +140,7 @@ In some cases, the CLR can shutdown before your managed code is finished running
 
 ## Using New Visual C++ Features
 
-After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).
+After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).
 
 If you used Managed Extensions for C++, you can convert your code to use the new syntax. For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).
 
@@ -150,7 +150,7 @@ For information on .NET programming in Visual C++ see:
 
 - [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)
 
-- [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+- [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)
 
 ## See also
 

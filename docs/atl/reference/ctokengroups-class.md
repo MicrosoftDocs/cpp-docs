@@ -255,7 +255,7 @@ Casts a value to a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-w
 
 ## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
+[Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [CSid Class](../../atl/reference/csid-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

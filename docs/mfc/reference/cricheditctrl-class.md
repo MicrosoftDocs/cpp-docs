@@ -115,7 +115,7 @@ For more information on using `CRichEditCtrl`, see:
 
 - [Using CRichEditCtrl](../../mfc/using-cricheditctrl.md)
 
-For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.
+For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../overview/visual-cpp-samples.md) sample application.
 
 ## Inheritance Hierarchy
 
@@ -2044,7 +2044,7 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
 ## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CEdit Class](../../mfc/reference/cedit-class.md)<br/>

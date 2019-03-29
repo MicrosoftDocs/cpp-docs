@@ -87,8 +87,8 @@ An overview of modern C++ programming practices for writing safe, correct and ef
 
 ## Related Sections
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)<br/>
-Reference material on using Visual C++ to target the common language runtime.
+[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)<br/>
+Reference material on using Visual C++ to target .NET.
 
 [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md)<br/>
 Compiler options, linker options, and other build tools.

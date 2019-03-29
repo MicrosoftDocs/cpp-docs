@@ -11,7 +11,7 @@ ms.assetid: fc4c9dcd-16cf-4eee-a1ac-c43e7c29e443
 
 The compiler encountered more than one property with the same name. Each property in a type must have a unique name.
 
-For more information, see [property](../../windows/property-cpp-component-extensions.md).
+For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
 ## Example
 

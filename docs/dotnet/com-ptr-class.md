@@ -26,7 +26,7 @@ COM interface.
 
 A `com::ptr` can also be used as a local function variable to simplify various COM tasks and to automate lifetime management.
 
-A `com::ptr` can't be used directly as a function parameter; use a [Tracking reference operator](../windows/tracking-reference-operator-cpp-component-extensions.md) or a [Handle to object operator (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md) instead.
+A `com::ptr` can't be used directly as a function parameter; use a [Tracking reference operator](../extensions/tracking-reference-operator-cpp-component-extensions.md) or a [Handle to object operator (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) instead.
 
 A `com::ptr` can't be directly returned from a function; use a handle instead.
 

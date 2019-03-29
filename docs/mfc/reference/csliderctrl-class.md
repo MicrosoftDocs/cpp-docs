@@ -725,7 +725,7 @@ This member function implements the behavior of the Win32 message [TBM_SETTOOLTI
 
 ## See also
 
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CProgressCtrl Class](../../mfc/reference/cprogressctrl-class.md)

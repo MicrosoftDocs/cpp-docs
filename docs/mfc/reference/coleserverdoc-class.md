@@ -859,7 +859,7 @@ This function calls the `OnUpdate` member function for each of the document's it
 
 ## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [COleLinkingDoc Class](../../mfc/reference/colelinkingdoc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDocument Class](../../mfc/reference/coledocument-class.md)<br/>

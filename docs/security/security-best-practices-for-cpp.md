@@ -37,7 +37,7 @@ The C Runtime Library (CRT) has been augmented to include secure versions of fun
 
 ## SafeInt Library
 
-[SafeInt Library](../windows/safeint-library.md) helps prevent integer overflows and other exploitable errors that might occur when the application performs mathematical operations. The `SafeInt` library includes the [SafeInt Class](../windows/safeint-class.md), the [SafeIntException Class](../windows/safeintexception-class.md), and several [SafeInt Functions](../windows/safeint-functions.md).
+[SafeInt Library](../safeint/safeint-library.md) helps prevent integer overflows and other exploitable errors that might occur when the application performs mathematical operations. The `SafeInt` library includes the [SafeInt Class](../safeint/safeint-class.md), the [SafeIntException Class](../safeint/safeintexception-class.md), and several [SafeInt Functions](../safeint/safeint-functions.md).
 
 The `SafeInt` class protects against integer overflow and divide-by-zero exploits. You can use it to handle comparisons between values of different types. It provides two error handling policies. The default policy is for the `SafeInt` class to throw a `SafeIntException` class exception to report why a mathematical operation cannot be completed. The second policy is for the `SafeInt` class to stop program execution. You can also define a custom policy.
 

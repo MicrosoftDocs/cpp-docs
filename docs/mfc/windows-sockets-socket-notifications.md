@@ -34,7 +34,7 @@ During an operation such as receiving or sending data, a `CSocket` object become
 > [!NOTE]
 >  In `CSocket`, the `OnConnect` notification function is never called. For connections, you call `Connect`, which will return when the connection is completed (either successfully or in error). How connection notifications are handled is an MFC implementation detail.
 
-For details about each notification function, see the function under class `CAsyncSocket` in the *MFC Reference*. For source code and information about MFC samples, see [MFC Samples](../visual-cpp-samples.md).
+For details about each notification function, see the function under class `CAsyncSocket` in the *MFC Reference*. For source code and information about MFC samples, see [MFC Samples](../overview/visual-cpp-samples.md).
 
 For more information, see:
 

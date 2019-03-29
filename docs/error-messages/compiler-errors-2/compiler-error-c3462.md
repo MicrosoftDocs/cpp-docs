@@ -11,7 +11,7 @@ ms.assetid: 56b75f35-9fad-42d9-a969-eeca5d709bec
 
 The TypeForwardedTo attribute must be applied to a type in referenced metadata.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

@@ -15,7 +15,7 @@ Check the number of parameters in your `get` and `set` methods against property 
 
 - The number of parameters of the `set` method must be one more than the number of dimensions of the property.
 
-For more information, see [property](../../windows/property-cpp-component-extensions.md).
+For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
 ## Example
 

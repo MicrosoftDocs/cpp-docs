@@ -25,7 +25,7 @@ Describes what OLE DB is and discusses Universal Data Access in OLE DB.
 [OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)<br/>
 Provides links to the Windows SDK documentation on OLE DB.
 
-[OLE DB Templates Samples](../../visual-cpp-samples.md)<br/>
+[OLE DB Templates Samples](../../overview/visual-cpp-samples.md)<br/>
 Provides links to the OLE DB Templates samples that show how to use OLE DB in your projects.
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

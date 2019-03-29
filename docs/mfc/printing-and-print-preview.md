@@ -18,7 +18,7 @@ This family of articles explains how printing is implemented in the Microsoft Fo
 
 - [Print preview architecture](../mfc/print-preview-architecture.md)
 
-- [Sample](../visual-cpp-samples.md)
+- [Sample](../overview/visual-cpp-samples.md)
 
 ## See also
 

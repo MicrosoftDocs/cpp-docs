@@ -71,6 +71,9 @@ Discusses how to use the C/C++ compiler and build tools directly from the comman
 [Building DLLs in Visual Studio](dlls-in-visual-cpp.md)
 How to create, debug and deploy C/C++ DLLs (shared libraries) in Visual Studio.
 
+[Walkthrough: Creating and Using a Static Library](walkthrough-creating-and-using-a-static-library-cpp.md)
+How to create a .lib binary file.
+
 [Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.
 

@@ -40,4 +40,4 @@ f(Object^ o)
 
 ## See also
 
-[Boxing](../windows/boxing-cpp-component-extensions.md)
+[Boxing](../extensions/boxing-cpp-component-extensions.md)

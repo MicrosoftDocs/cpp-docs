@@ -353,7 +353,7 @@ For more information, see the [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns
 
 ## See also
 
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)

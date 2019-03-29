@@ -9,7 +9,7 @@ ms.assetid: 5d450f8b-6cef-4452-a0c4-2076e967451d
 
 'type' : invalid operand for operator
 
-An invalid parameter was passed to the [typeid](../../windows/typeid-cpp-component-extensions.md) operator. The parameter must be a managed type.
+An invalid parameter was passed to the [typeid](../../extensions/typeid-cpp-component-extensions.md) operator. The parameter must be a managed type.
 
 Note that the compiler uses aliases for native types that map to types in the common language runtime.
 
