@@ -195,7 +195,7 @@ A path, which may be absolute or relative, to the property being loaded asynchro
 
 ## See also
 
-[MFC Sample Image](../../visual-cpp-samples.md)<br/>
+[MFC Sample Image](../../overview/visual-cpp-samples.md)<br/>
 [CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)

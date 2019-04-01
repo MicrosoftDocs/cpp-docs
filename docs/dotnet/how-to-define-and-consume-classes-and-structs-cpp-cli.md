@@ -89,7 +89,7 @@ int main() {
 
 An *implicitly abstract class* can't be instantiated. A class is implicitly abstract if the base type of the class is an interface and the class does not implement all of the interface's member functions.
 
-If you are unable to construct objects from a class that's derived from an interface, the reason might be that the class is implicitly abstract. For more information about abstract classes, see [abstract](../windows/abstract-cpp-component-extensions.md).
+If you are unable to construct objects from a class that's derived from an interface, the reason might be that the class is implicitly abstract. For more information about abstract classes, see [abstract](../extensions/abstract-cpp-component-extensions.md).
 
 The following code example demonstrates that the `MyClass` class cannot be instantiated because function `MyClass::func2` is not implemented. To enable the example to compile, uncomment `MyClass::func2`.
 
@@ -221,7 +221,7 @@ This table summarizes the effect of the various access specifiers:
 |public|Member is accessible inside and outside the assembly.  See [public](../cpp/public-cpp.md) for more information.|
 |private|Member is not accessible, neither inside nor outside the assembly.  See [private](../cpp/private-cpp.md) for more information.|
 |protected|Member is accessible inside and outside the assembly, but only to derived types.  See [protected](../cpp/protected-cpp.md) for more information.|
-|internal|Member is public inside the assembly but private outside the assembly.  `internal` is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).|
+|internal|Member is public inside the assembly but private outside the assembly.  `internal` is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../extensions/context-sensitive-keywords-cpp-component-extensions.md).|
 |public protected -or- protected public|Member is public inside the assembly but protected outside the assembly.|
 |private protected -or- protected private|Member is protected inside the assembly but private outside the assembly.|
 
@@ -491,9 +491,9 @@ These different semantics of the `this` pointer can cause unexpected behavior wh
 
 For more information, see
 
-- [Handle to Object Operator (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)
+- [Handle to Object Operator (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)
 
-- [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)
+- [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md)
 
 ```cpp
 // compile with: /clr
@@ -789,7 +789,7 @@ Code that's written in Visual C++ and compiled by using **/clr** runs a type's d
 
 - The object is a member in an object whose destructor is running.
 
-- You call the [delete](../cpp/delete-operator-cpp.md) operator on a handle ([Handle to Object Operator (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)).
+- You call the [delete](../cpp/delete-operator-cpp.md) operator on a handle ([Handle to Object Operator (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)).
 
 - You explicitly call the destructor.
 
@@ -836,7 +836,7 @@ After an object's finalizer runs, finalizers in any base classes are also called
 
 If a finalizer deletes a native pointer in a managed type, you must ensure that references to or through the native pointer are not prematurely collected; call the destructor on the managed type instead of using <xref:System.GC.KeepAlive%2A>.
 
-At compile time, you can detect whether a type has a finalizer or a destructor. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).
+At compile time, you can detect whether a type has a finalizer or a destructor. For more information, see [Compiler Support for Type Traits](../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
 
 The next sample shows two types, one that has unmanaged resources and one that has managed resources that are deterministically released.
 
@@ -906,5 +906,5 @@ int main() {
 
 ## See also
 
-[Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)<br/>
-[Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)
+[Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)<br/>
+[Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)

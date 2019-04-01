@@ -197,7 +197,7 @@ int main() {
 
 ## Example: C++/CLI type deduction failure
 
-This error can occur when calling a generic function, if the intended type argument cannot be deduced from the parameters used. For more information, see [Generic Functions (C++/CLI)](../../windows/generic-functions-cpp-cli.md).
+This error can occur when calling a generic function, if the intended type argument cannot be deduced from the parameters used. For more information, see [Generic Functions (C++/CLI)](../../extensions/generic-functions-cpp-cli.md).
 
 ```cpp
 // C2065_b.cpp

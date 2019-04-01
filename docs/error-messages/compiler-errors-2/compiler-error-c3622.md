@@ -9,7 +9,7 @@ ms.assetid: 02836f78-0cf2-4947-b87e-710187d81014
 
 'class' : a class declared as 'keyword' cannot be instantiated
 
-An attempt was made to instantiate a class marked as [abstract](../../windows/abstract-cpp-component-extensions.md). A class marked as `abstract` can be a base class, but it cannot be instantiated.
+An attempt was made to instantiate a class marked as [abstract](../../extensions/abstract-cpp-component-extensions.md). A class marked as `abstract` can be a base class, but it cannot be instantiated.
 
 ## Example
 

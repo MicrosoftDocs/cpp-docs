@@ -8,7 +8,7 @@ ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
 
 MFC supports views that scroll and views that are automatically scaled to the size of the frame window that displays them. Class `CScrollView` supports both kinds of views.
 
-For more information about scrolling and scaling, see class [CScrollView](../mfc/reference/cscrollview-class.md) in the *MFC Reference*. For a scrolling example, see the [Scribble sample](../visual-cpp-samples.md).
+For more information about scrolling and scaling, see class [CScrollView](../mfc/reference/cscrollview-class.md) in the *MFC Reference*. For a scrolling example, see the [Scribble sample](../overview/visual-cpp-samples.md).
 
 ## What do you want to know more about
 

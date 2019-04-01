@@ -53,7 +53,7 @@ The `CMFCPopupMenuBar` is created at the same time as a [CMFCPopupMenu Class](..
 
 ## Example
 
-The following example demonstrates how to initialize a `CMFCPopupMenuBar` object from a `CMFCPopupMenu` object. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).
+The following example demonstrates how to initialize a `CMFCPopupMenuBar` object from a `CMFCPopupMenu` object. This code snippet is part of the [Draw Client sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#7](../../mfc/reference/codesnippet/cpp/cmfcpopupmenubar-class_1.cpp)]
 

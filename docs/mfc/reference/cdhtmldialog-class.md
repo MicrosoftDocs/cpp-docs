@@ -1407,6 +1407,6 @@ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::Upd
 
 ## See also
 
-[MFC Sample DHtmlExplore](../../visual-cpp-samples.md)<br/>
+[MFC Sample DHtmlExplore](../../overview/visual-cpp-samples.md)<br/>
 [DDX_DHtml Helper Macros](#ddx_dhtml_helper_macros)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

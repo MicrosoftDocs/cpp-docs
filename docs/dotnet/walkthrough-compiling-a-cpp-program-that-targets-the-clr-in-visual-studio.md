@@ -47,7 +47,7 @@ These topics assume that you understand the fundamentals of the C++ language.
 
    `StreamWriter^ sw = gcnew StreamWriter(fileName);`
 
-   For more information on the new Visual C++ syntax, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).
+   For more information on the new Visual C++ syntax, see [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).
 
 1. On the **Build** menu, click **Build Solution**.
 

@@ -49,7 +49,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
 
 ## Remarks
 
-For an example of an Outlook bar, see the [OutlookDemo Sample: MFC OutlookDemo Application](../../visual-cpp-samples.md).
+For an example of an Outlook bar, see the [OutlookDemo Sample: MFC OutlookDemo Application](../../overview/visual-cpp-samples.md).
 
 ## Implementing the Outlook Bar
 
@@ -254,7 +254,7 @@ See [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) for t
 
 ### Example
 
-The following example demonstrates how to use the `Create` method of the `CMFCOutlookBar` class. This code snippet is part of the [Outlook Multi Views sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `Create` method of the `CMFCOutlookBar` class. This code snippet is part of the [Outlook Multi Views sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_OutlookMultiViews#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_1.h)]
 [!code-cpp[NVC_MFC_OutlookMultiViews#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_2.cpp)]

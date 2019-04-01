@@ -10,7 +10,7 @@ A custom attribute is a strongly typed technique that allows the user to extend 
 
 For information on defining new custom attributes, see,
 
-- [User-Defined Attributes](../user-defined-attributes-cpp-component-extensions.md)
+- [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md)
 
 - [attribute](attribute.md) (deprecated syntax).
 

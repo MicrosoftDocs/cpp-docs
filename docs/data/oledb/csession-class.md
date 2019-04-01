@@ -174,6 +174,6 @@ For more information, see [ITransactionLocal::StartTransaction](/previous-versio
 
 ## See Also
 
-[CatDB](../../visual-cpp-samples.md)<br/>
+[CatDB](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

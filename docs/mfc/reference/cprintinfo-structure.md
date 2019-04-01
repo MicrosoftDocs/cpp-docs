@@ -309,7 +309,7 @@ Page numbers normally start at 1. This value is stored in the `CPrintDialog` obj
 
 ## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC Sample DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)<br/>
 [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting)<br/>

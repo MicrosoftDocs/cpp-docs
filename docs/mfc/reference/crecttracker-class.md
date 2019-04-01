@@ -441,8 +441,8 @@ Tracking is performed with a rubber-band-type selection from the lower-right han
 
 ## See also
 
-[MFC Sample TRACKER](../../visual-cpp-samples.md)<br/>
-[MFC Sample DRAWCLI](../../visual-cpp-samples.md)<br/>
+[MFC Sample TRACKER](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DRAWCLI](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleResizeBar Class](../../mfc/reference/coleresizebar-class.md)<br/>
 [CRect Class](../../atl-mfc-shared/reference/crect-class.md)

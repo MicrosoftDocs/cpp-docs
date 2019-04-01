@@ -360,8 +360,8 @@ For more information, see [RevokeDragDrop](/windows/desktop/api/ole2/nf-ole2-rev
 
 ## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDropSource Class](../../mfc/reference/coledropsource-class.md)

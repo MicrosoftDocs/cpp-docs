@@ -161,6 +161,6 @@ For more information about using `CReBarCtrl` to customize your rebar, see [Usin
 
 ## See also
 
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

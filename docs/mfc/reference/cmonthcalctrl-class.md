@@ -1212,7 +1212,7 @@ This method sends the [MCM_SIZERECTTOMIN](/windows/desktop/Controls/mcm-sizerect
 
 ## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDateTimeCtrl Class](../../mfc/reference/cdatetimectrl-class.md)

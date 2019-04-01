@@ -131,7 +131,7 @@ If you specify the CBRS_TOP or CBRS_BOTTOM alignment style, the dialog bar's wid
 
 ## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CFormView Class](../../mfc/reference/cformview-class.md)<br/>

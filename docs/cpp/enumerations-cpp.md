@@ -10,7 +10,7 @@ ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
 An enumeration is a user-defined type that consists of a set of named integral constants that are known as enumerators.
 
 > [!NOTE]
->  This article covers the ISO Standard C++ Language **enum** type and the scoped (or strongly-typed) **enum class** type which is introduced in C++11. For information about the **public enum class** or **private enum class** types in C++/CLI and C++/CX, see [enum class](../windows/enum-class-cpp-component-extensions.md).
+>  This article covers the ISO Standard C++ Language **enum** type and the scoped (or strongly-typed) **enum class** type which is introduced in C++11. For information about the **public enum class** or **private enum class** types in C++/CLI and C++/CX, see [enum class](../extensions/enum-class-cpp-component-extensions.md).
 
 ## Syntax
 

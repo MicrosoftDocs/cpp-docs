@@ -297,7 +297,7 @@ A value from the DROPEFFECT enumerated type, which indicates the type of drop th
 
 - DROPEFFECT_MOVE for MK_ALT Creates a copy of the dropped object and delete the original object. This is typically the default drop effect, when the view can accept this data object.
 
-For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).
+For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### Remarks
 
@@ -351,7 +351,7 @@ A value from the DROPEFFECT enumerated type, which indicates the type of drop th
 
 - DROPEFFECT_MOVE for MK_ALT Creates a copy of the dropped object and delete the original object. This is typically the default drop effect, when the view can accept the data object.
 
-For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).
+For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### Remarks
 
@@ -391,7 +391,7 @@ A value from the DROPEFFECT enumerated type, which indicates the type of drop th
 
 - DROPEFFECT_SCROLL Indicates that a drag scroll operation is about to occur or is occurring in the target view.
 
-For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).
+For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### Remarks
 
@@ -818,7 +818,7 @@ If *lHint* is 0 and *pHint* is NULL, the document has sent a generic update noti
 
 ## See also
 
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

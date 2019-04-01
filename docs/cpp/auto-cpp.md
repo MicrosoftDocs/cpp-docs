@@ -43,7 +43,7 @@ To use the **auto** keyword, use it instead of a type to declare a variable, and
 
 The initialization expression can be an assignment (equal-sign syntax), a direct initialization (function-style syntax), an [operator new](new-operator-cpp.md) expression, or the initialization expression can be the *for-range-declaration* parameter in a [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) statement. For more information, see [Initializers](../cpp/initializers.md) and the code examples later in this document.
 
-The **auto** keyword is a placeholder for a type, but it is not itself a type. Therefore, the **auto** keyword cannot be used in casts or operators such as [sizeof](../cpp/sizeof-operator.md) and [typeid](../windows/typeid-cpp-component-extensions.md).
+The **auto** keyword is a placeholder for a type, but it is not itself a type. Therefore, the **auto** keyword cannot be used in casts or operators such as [sizeof](../cpp/sizeof-operator.md) and (for C++/CLI) [typeid](../extensions/typeid-cpp-component-extensions.md).
 
 ## Usefulness
 
@@ -124,7 +124,7 @@ The following table lists the restrictions on the use of the **auto** keyword, a
 |[C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md)|A symbol cannot be used before it is initialized. In practice, this means that a variable cannot be used to initialize itself.|
 |[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|You cannot cast to a type that is declared with the **auto** keyword.|
 |[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|All the symbols in a declarator list that is declared with the **auto** keyword must resolve to the same type. For more information, see [Declarations and Definitions](declarations-and-definitions-cpp.md).|
-|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|The [sizeof](../cpp/sizeof-operator.md) and [typeid](../windows/typeid-cpp-component-extensions.md) operators cannot be applied to a symbol that is declared with the **auto** keyword.|
+|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|The [sizeof](../cpp/sizeof-operator.md) and [typeid](../extensions/typeid-cpp-component-extensions.md) operators cannot be applied to a symbol that is declared with the **auto** keyword.|
 
 ## Examples
 
@@ -216,7 +216,7 @@ int main()
 [Keywords](../cpp/keywords-cpp.md)<br/>
 [/Zc:auto (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [sizeof Operator](../cpp/sizeof-operator.md)<br/>
-[typeid](../windows/typeid-cpp-component-extensions.md)<br/>
+[typeid](../extensions/typeid-cpp-component-extensions.md)<br/>
 [operator new](new-operator-cpp.md)<br/>
 [Declarations and Definitions](declarations-and-definitions-cpp.md)<br/>
 [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)<br/>

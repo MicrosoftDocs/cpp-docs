@@ -1132,9 +1132,9 @@ This function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onu
 
 ## See also
 
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample NPP](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample NPP](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>

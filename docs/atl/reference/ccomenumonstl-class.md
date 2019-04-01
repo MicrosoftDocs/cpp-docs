@@ -93,7 +93,7 @@ This code creates a **typedef** for `CComEnumOnSTL` that exposes a vector of `CC
 ## See also
 
 [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
-[ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../visual-cpp-samples.md)<br/>
+[ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>

@@ -109,7 +109,7 @@ All links and/or embeddings are updated unless the user selects the Cancel butto
 
 ## See also
 
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [COleLinksDialog Class](../../mfc/reference/colelinksdialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleLinksDialog Class](../../mfc/reference/colelinksdialog-class.md)

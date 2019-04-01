@@ -9,7 +9,7 @@ ms.assetid: e4757596-e2aa-4314-b01e-5c4bfd2110e9
 
 'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must have a public parameterless constructor
 
-A generic type was instantiated incorrectly. Check the type definition. For more information, see  [Generics](../../windows/generics-cpp-component-extensions.md).
+A generic type was instantiated incorrectly. Check the type definition. For more information, see  [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 

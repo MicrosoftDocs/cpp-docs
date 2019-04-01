@@ -11,7 +11,7 @@ This article explains the changes that need to be made to the menus and other re
 
 In container applications, two types of changes need to be made: modifications to existing resources to support OLE visual editing and addition of new resources used for in-place activation. If you use the application wizard to create your container application, these steps will be done for you, but they may require some customization.
 
-If you do not use the application wizard, you may want to look at OCLIENT.RC, the resource script for the OCLIENT sample application, to see how these changes are implemented. See the MFC OLE sample [OCLIENT](../visual-cpp-samples.md).
+If you do not use the application wizard, you may want to look at OCLIENT.RC, the resource script for the OCLIENT sample application, to see how these changes are implemented. See the MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md).
 
 Topics covered in this article include:
 
@@ -44,7 +44,7 @@ Small changes to a container application's accelerator table resources are neces
 |--------|---------|----------|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|
 
-The second change is to create a new accelerator table that corresponds to the new menu resource created for in-place activation. This table has entries for the File and Window menus in addition to the VK_ESCAPE entry above. The following example is the accelerator table created for in-place activation in the MFC sample [CONTAINER](../visual-cpp-samples.md):
+The second change is to create a new accelerator table that corresponds to the new menu resource created for in-place activation. This table has entries for the File and Window menus in addition to the VK_ESCAPE entry above. The following example is the accelerator table created for in-place activation in the MFC sample [CONTAINER](../overview/visual-cpp-samples.md):
 
 |ID|Key|Type|
 |--------|---------|----------|

@@ -159,7 +159,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
 - The wizard created an Outlook bar with both a **Folders** pane and a **Calendar** pane. It probably doesn't make sense to have a **Calendar** pane in an **Explorer** window, so remove that pane now.
 
-- The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../visual-cpp-samples.md).
+- The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../overview/visual-cpp-samples.md).
 
 ## See also
 

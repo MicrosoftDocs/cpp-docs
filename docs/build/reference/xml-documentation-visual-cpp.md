@@ -34,4 +34,4 @@ If you need to put XML special characters in the text of a documentation comment
 
 ## See also
 
-[Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](../../extensions/component-extensions-for-runtime-platforms.md)

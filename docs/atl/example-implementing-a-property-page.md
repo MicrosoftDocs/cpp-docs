@@ -8,7 +8,7 @@ ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
 
 This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface.
 
-The example is based on the [ATLPages sample](../visual-cpp-samples.md).
+The example is based on the [ATLPages sample](../overview/visual-cpp-samples.md).
 
 To complete this example, you will:
 
@@ -157,4 +157,4 @@ When you run this macro, the property page will be displayed showing the file na
 ## See also
 
 [Property Pages](../atl/atl-com-property-pages.md)<br/>
-[ATLPages Sample](../visual-cpp-samples.md)
+[ATLPages Sample](../overview/visual-cpp-samples.md)

@@ -365,7 +365,7 @@ The member function `SetRange32` sets the 32-bit range for the spin button contr
 
 ## See also
 
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CSliderCtrl Class](../../mfc/reference/csliderctrl-class.md)

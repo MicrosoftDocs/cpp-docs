@@ -4156,7 +4156,7 @@ This function also arranges the list view control if it has the LVS_AUTOARRANGE 
 
 ## See also
 
-[MFC Sample ROWLIST](../../visual-cpp-samples.md)<br/>
+[MFC Sample ROWLIST](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](cwnd-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
 [CImageList Class](cimagelist-class.md)

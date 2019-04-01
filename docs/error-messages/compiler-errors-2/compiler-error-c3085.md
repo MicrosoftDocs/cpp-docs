@@ -9,7 +9,7 @@ ms.assetid: 1ac40bf2-f63e-439e-8921-47e6dadc8354
 
 'constructor': a constructor cannot be 'keyword'
 
-A constructor was declared incorrectly. See [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md) for more information.
+A constructor was declared incorrectly. See [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md) for more information.
 
 ## Example
 

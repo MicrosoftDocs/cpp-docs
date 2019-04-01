@@ -179,4 +179,4 @@ Class1::Test_Public
 
 ## See also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)

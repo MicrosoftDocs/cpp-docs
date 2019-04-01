@@ -9,7 +9,7 @@ ms.assetid: 5bf96279-043c-4981-9d02-b4550071b192
 
 'typeid' used on managed or WinRT type 'type', use 'operator' instead
 
-You cannot apply the [typeid](../../cpp/typeid-operator.md) operator to a managed or WinRT type; use [typeid](../../windows/typeid-cpp-component-extensions.md) instead.
+You cannot apply the [typeid](../../cpp/typeid-operator.md) operator to a managed or WinRT type; use [typeid](../../extensions/typeid-cpp-component-extensions.md) instead.
 
 The following sample generates C3185 and shows how to fix it:
 

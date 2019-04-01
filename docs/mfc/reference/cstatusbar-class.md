@@ -468,8 +468,8 @@ After you call `SetPaneText`, you must add a UI update handler to display the ne
 
 ## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CStatusBarCtrl Class](../../mfc/reference/cstatusbarctrl-class.md)<br/>

@@ -1353,8 +1353,8 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
 ## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](cwnd-class.md)<br/>
