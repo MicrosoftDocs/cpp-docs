@@ -671,9 +671,9 @@ Call this member function only for toolbars that do not follow *Windows Interfac
 
 ## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
-[MFC Sample DOCKTOOL](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DOCKTOOL](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CToolBarCtrl Class](../../mfc/reference/ctoolbarctrl-class.md)<br/>

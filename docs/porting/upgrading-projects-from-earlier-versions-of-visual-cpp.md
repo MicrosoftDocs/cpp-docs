@@ -37,6 +37,6 @@ For information about how to update the targeted Windows versions, see [Modifyin
 
 ## See Also
 
-[What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[What's New for Visual C++ in Visual Studio 2017](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [Nonstandard Behavior](../cpp/nonstandard-behavior.md)

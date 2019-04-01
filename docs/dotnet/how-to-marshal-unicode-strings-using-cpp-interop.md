@@ -19,7 +19,7 @@ This topic demonstrates how Unicode strings can be passed from a managed to an u
 
 ## Example
 
-To pass a Unicode string from a managed to an unmanaged function, the PtrToStringChars function (declared in Vcclr.h) can be used to access in the memory where the managed string is stored. Because this address will be passed to a native function, it is important that the memory be pinned with [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md) to prevent the string data from being relocated, should a garbage collection cycle take place while the unmanaged function executes.
+To pass a Unicode string from a managed to an unmanaged function, the PtrToStringChars function (declared in Vcclr.h) can be used to access in the memory where the managed string is stored. Because this address will be passed to a native function, it is important that the memory be pinned with [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) to prevent the string data from being relocated, should a garbage collection cycle take place while the unmanaged function executes.
 
 ```
 // MarshalUnicode1.cpp

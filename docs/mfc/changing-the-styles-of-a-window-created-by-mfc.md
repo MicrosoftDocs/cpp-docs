@@ -26,7 +26,7 @@ To change the default window attributes used by a framework application created 
 
 [!code-cpp[NVC_MFCDocView#15](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_1.cpp)]
 
-The [CTRLBARS](../visual-cpp-samples.md) sample application demonstrates this technique for changing window attributes. Depending on what your application changes in `PreCreateWindow`, it may be necessary to call the base class implementation of the function.
+The [CTRLBARS](../overview/visual-cpp-samples.md) sample application demonstrates this technique for changing window attributes. Depending on what your application changes in `PreCreateWindow`, it may be necessary to call the base class implementation of the function.
 
 The following discussion covers the SDI case and the [MDI case](#_core_the_mdi_case).
 

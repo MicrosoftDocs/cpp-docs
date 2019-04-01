@@ -124,6 +124,6 @@ If this method is called for the purposes that include the reversion of an imper
 
 ## See also
 
-[ATLSecurity Sample](../../visual-cpp-samples.md)<br/>
+[ATLSecurity Sample](../../overview/visual-cpp-samples.md)<br/>
 [Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

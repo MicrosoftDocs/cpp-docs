@@ -136,7 +136,7 @@ Implemented using [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combasea
 
 ## See also
 
-[DynamicConsumer Sample](../../visual-cpp-samples.md)<br/>
+[DynamicConsumer Sample](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CWin32Heap Class](../../atl/reference/cwin32heap-class.md)<br/>
 [CLocalHeap Class](../../atl/reference/clocalheap-class.md)<br/>

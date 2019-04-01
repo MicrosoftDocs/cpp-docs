@@ -586,7 +586,7 @@ The *nGrowBy* parameter affects internal memory allocation while the array is gr
 
 ## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CObArray Class](../../mfc/reference/cobarray-class.md)<br/>

@@ -208,6 +208,6 @@ void SizeToContent();
 
 ## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
 [CButton Class](../../mfc/reference/cbutton-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

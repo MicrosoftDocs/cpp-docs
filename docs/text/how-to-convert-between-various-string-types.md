@@ -803,4 +803,4 @@ Hello, World! (basic_string)
 [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)<br/>
 [strcpy_s, wcscpy_s, _mbscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
 [strcat_s, wcscat_s, _mbscat_s](../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md)<br/>
-[pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)
+[pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md)

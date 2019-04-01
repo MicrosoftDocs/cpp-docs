@@ -59,5 +59,5 @@ Covers the MFC implementation of Windows Sockets.
 [MFC Reference](../mfc/mfc-desktop-applications.md)<br/>
 Provides reference material for the MFC Library, a set of classes that constitute an application framework, which is the framework of an application written for the Windows API.
 
-[MFC Samples](../visual-cpp-samples.md)<br/>
+[MFC Samples](../overview/visual-cpp-samples.md)<br/>
 Provides links to samples that show how to use MFC in desktop applications, DLLs, database applications, controls, Web applications, and more.

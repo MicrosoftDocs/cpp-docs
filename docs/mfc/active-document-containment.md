@@ -24,7 +24,7 @@ Users of an active document container application can create active documents (c
 
 ## Sample Programs
 
-- The [MFCBIND](../visual-cpp-samples.md) sample illustrates the implementation of an active document container application.
+- The [MFCBIND](../overview/visual-cpp-samples.md) sample illustrates the implementation of an active document container application.
 
 ## See also
 

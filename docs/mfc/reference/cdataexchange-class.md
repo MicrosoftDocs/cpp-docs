@@ -208,7 +208,7 @@ For more information on writing your own DDX and DDV routines, see [Technical No
 
 ## See also
 
-[MFC Sample VIEWEX](../../visual-cpp-samples.md)<br/>
+[MFC Sample VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd::DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange)<br/>
 [CWnd::UpdateData](../../mfc/reference/cwnd-class.md#updatedata)

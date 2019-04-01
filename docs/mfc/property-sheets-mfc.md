@@ -28,7 +28,7 @@ This family of articles explains how to implement support for property sheets in
 
 - [Class CPropertyPage](../mfc/reference/cpropertypage-class.md)
 
-- [Sample](../visual-cpp-samples.md)
+- [Sample](../overview/visual-cpp-samples.md)
 
 ## See also
 

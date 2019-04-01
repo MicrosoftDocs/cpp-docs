@@ -22,4 +22,4 @@ While it is normal to derive your own dialog classes from `CDialog`, you do not 
 ## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
-[Sample](../visual-cpp-samples.md)
+[Sample](../overview/visual-cpp-samples.md)

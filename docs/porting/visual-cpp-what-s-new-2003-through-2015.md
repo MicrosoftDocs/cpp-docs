@@ -8,7 +8,7 @@ ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
 This page gathers all the "What's New" pages for all versions of Visual C++ from Visual Studio 2015 back to 2003. This information is provided as a convenience in case it might be useful when upgrading from earlier versions of Visual C++.
 
 > [!NOTE]
-> For information about Visual Studio 2017, see [What's new for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio 2017](../cpp-conformance-improvements-2017.md).
+> For information about Visual Studio 2017, see [What's new for Visual C++ in Visual Studio 2017](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio 2017](../overview/cpp-conformance-improvements-2017.md).
 
 ## What's New for C++ in Visual Studio 2015
 

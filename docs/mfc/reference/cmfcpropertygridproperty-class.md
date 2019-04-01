@@ -129,7 +129,7 @@ A property object can represent data types such as strings, dates, and Boolean o
 
 ## Example
 
-The following example demonstrates how to construct a `CMFCPropertyGridProperty` object. The example also demonstrates how to use various methods in the `CMFCPropertyGridProperty` class to add an option, add a sub-item, enable a property, and show a property. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct a `CMFCPropertyGridProperty` object. The example also demonstrates how to use various methods in the `CMFCPropertyGridProperty` class to add an option, add a sub-item, enable a property, and show a property. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#27](../../mfc/reference/codesnippet/cpp/cmfcpropertygridproperty-class_1.cpp)]
 

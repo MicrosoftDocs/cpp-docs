@@ -11,7 +11,7 @@ ms.assetid: 7c4cda28-ec96-4d04-937b-36dbd9944722
 
 When defining a non-trivial property, the accessor functions can be either static or instance, but not both.
 
-See [property](../../windows/property-cpp-component-extensions.md) for more information.
+See [property](../../extensions/property-cpp-component-extensions.md) for more information.
 
 ## Example
 

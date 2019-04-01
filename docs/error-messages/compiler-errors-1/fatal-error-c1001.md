@@ -15,4 +15,4 @@ You can often fix an optimization problem by removing one or more optimization o
 
 If optimizations are not responsible for the error, try rewriting the line where the error is reported, or several lines of code surrounding that line. To see the code the way the compiler sees it after preprocessing, you can use the [/P (Preprocess to a file)](../../build/reference/p-preprocess-to-a-file.md) option.
 
-For more information about how to isolate the source of the error and how to report an internal compiler error to Microsoft, see [How to Report a Problem with the Visual C++ Toolset](../../how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+For more information about how to isolate the source of the error and how to report an internal compiler error to Microsoft, see [How to Report a Problem with the Visual C++ Toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).

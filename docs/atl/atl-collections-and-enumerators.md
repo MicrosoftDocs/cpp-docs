@@ -30,7 +30,7 @@ An extended example that walks you through the implementation of a C++ Standard 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-[ATLCollections Sample](../visual-cpp-samples.md)<br/>
+[ATLCollections Sample](../overview/visual-cpp-samples.md)<br/>
 A sample that demonstrates the use of `ICollectionOnSTLImpl` and `CComEnumOnSTL`, and the implementation of custom copy policy classes.
 
 ## See also

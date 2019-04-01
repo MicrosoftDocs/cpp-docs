@@ -63,7 +63,7 @@ int main() {
 zip == 20100
 ```
 
-The next sample shows that taking the address of a tracking reference returns an [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md), and shows how to modify and access data through a tracking reference.
+The next sample shows that taking the address of a tracking reference returns an [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md), and shows how to modify and access data through a tracking reference.
 
 ```cpp
 // tracking_reference_data.cpp
@@ -336,4 +336,4 @@ T &
 
 ## See also
 
-[Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)
+[Tracking Reference Operator](../extensions/tracking-reference-operator-cpp-component-extensions.md)

@@ -1434,7 +1434,7 @@ A return value of 0 or greater specifies the index of an item in the list box an
 
 ## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

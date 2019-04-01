@@ -11,7 +11,7 @@ ms.assetid: 61bd3e41-a86b-42c0-be89-d992d3906ff1
 
 An override specifier was used on a member of native type, which is not allowed.
 
-For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 ## Example
 

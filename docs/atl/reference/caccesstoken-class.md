@@ -1127,6 +1127,6 @@ The primary group is the default group for new objects created while this access
 
 ## See also
 
-[ATLSecurity Sample](../../visual-cpp-samples.md)<br/>
+[ATLSecurity Sample](../../overview/visual-cpp-samples.md)<br/>
 [Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

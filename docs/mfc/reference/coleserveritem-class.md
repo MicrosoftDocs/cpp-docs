@@ -921,7 +921,7 @@ The name must be unique within the document. When a server application is called
 
 ## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CDocItem Class](../../mfc/reference/cdocitem-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>

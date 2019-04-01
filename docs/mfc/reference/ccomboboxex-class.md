@@ -432,7 +432,7 @@ This member function emulates the functionality of the [CBEM_SETWINDOWTHEME](/wi
 
 ## See also
 
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CComboBox Class](../../mfc/reference/ccombobox-class.md)

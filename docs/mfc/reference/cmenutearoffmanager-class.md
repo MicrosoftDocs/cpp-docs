@@ -44,7 +44,7 @@ In order to use tear-off menus in your application, you must have a `CMenuTearOf
 
 ## Example
 
-The following example demonstrates how to construct and initialize a `CMenuTearOffManager` object by calling the `CWinAppEX::EnableTearOffMenus` method. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct and initialize a `CMenuTearOffManager` object by calling the `CWinAppEX::EnableTearOffMenus` method. This code snippet is part of the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]
 

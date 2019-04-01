@@ -308,8 +308,8 @@ The `IDataObject` was associated with the `COleDataObject` by calling `Attach` o
 
 ## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDataSource Class](../../mfc/reference/coledatasource-class.md)<br/>
 [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>

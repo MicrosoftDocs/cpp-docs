@@ -2021,8 +2021,8 @@ For more information, see [IOleLink::Update](/windows/desktop/api/oleidl/nf-olei
 
 ## See also
 
-[MFC Sample MFCBIND](../../visual-cpp-samples.md)<br/>
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample MFCBIND](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CDocItem Class](../../mfc/reference/cdocitem-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleServerItem Class](../../mfc/reference/coleserveritem-class.md)

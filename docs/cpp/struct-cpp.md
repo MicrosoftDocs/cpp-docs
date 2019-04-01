@@ -48,7 +48,7 @@ A structure type is a user-defined composite type. It is composed of fields or m
 
 In C++, a structure is the same as a class except that its members are **public** by default.
 
-For information on managed classes and structs, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).
+For information on managed classes and structs in C++/CLI, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ## Using a Structure
 

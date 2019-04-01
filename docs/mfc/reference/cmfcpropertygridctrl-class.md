@@ -145,7 +145,7 @@ The following illustrations depict a property grid control that displays propert
 
 ## Example
 
-The following example demonstrates how to configure a property grid control object by using various methods in the `CMFCPropertyGridCtrl` class. The example demonstrates how to enable the header control, enable the description area, and set the appearance of the property grid control. The example also shows how to set the alphabetic mode for the control whereby the control sorts all the properties it contains by their property name, and how to set the custom colors for various elements of the property grid control. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to configure a property grid control object by using various methods in the `CMFCPropertyGridCtrl` class. The example demonstrates how to enable the header control, enable the description area, and set the appearance of the property grid control. The example also shows how to set the alphabetic mode for the control whereby the control sorts all the properties it contains by their property name, and how to set the custom colors for various elements of the property grid control. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#14](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#16](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_2.cpp)]
@@ -328,7 +328,7 @@ To create a property grid control, first call [CMFCPropertyGridCtrl::CMFCPropert
 
 ### Example
 
-The following example demonstrates how to use the `Create` method in `CMFCPropertyGridCtrl` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `Create` method in `CMFCPropertyGridCtrl` class. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#15](../../mfc/reference/codesnippet/cpp/cmfcpropertygridctrl-class_6.cpp)]
 

@@ -9,7 +9,7 @@ ms.assetid: 2c0c59e3-d025-4d97-8da2-fa27df1402fc
 
 'function' : a private virtual method of a ref class or value class should be marked 'sealed'
 
-Since a private virtual member function of a managed class or struct cannot be accessed or overridden, it should be marked [sealed](../../windows/sealed-cpp-component-extensions.md).
+Since a private virtual member function of a managed class or struct cannot be accessed or overridden, it should be marked [sealed](../../extensions/sealed-cpp-component-extensions.md).
 
 ## Example
 

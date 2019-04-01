@@ -45,7 +45,7 @@ ms.author: "mblome"
                 </a>
             </li>
             <li>
-                <a href="/cpp/what-s-new-for-visual-cpp-in-visual-studio">
+                <a href="/cpp/what-s-new-for-overview/visual-cpp-in-visual-studio.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

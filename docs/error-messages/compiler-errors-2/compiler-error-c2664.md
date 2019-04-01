@@ -181,7 +181,7 @@ int main( ) {
 
 ## Example
 
-An enum variable is not converted to its underlying type such that a function call will be satisfied. For more information, see [enum class](../../windows/enum-class-cpp-component-extensions.md). The following sample generates C2664 and shows how to fix it.
+An enum variable is not converted to its underlying type such that a function call will be satisfied. For more information, see [enum class](../../extensions/enum-class-cpp-component-extensions.md). The following sample generates C2664 and shows how to fix it.
 
 ```
 // C2664f.cpp

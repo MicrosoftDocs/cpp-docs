@@ -170,7 +170,7 @@ Visual C++ and the Resource Compiler support multiple .RC files in the same proj
 
 - If you want to maintain a resource with a text editor in a human-readable form, you should keep it in a .RC file separate from the one Visual C++ edits.
 
-- If you need to keep a user-defined resource in a binary or text form that is interpretable by another specialized data editor, then you should keep it in a separate .RC file so Visual C++ does not change the format to hexadecimal data. The .WAV (sound) file resources in the MFC Advanced Concepts sample [SPEAKN](../visual-cpp-samples.md) are a good example.
+- If you need to keep a user-defined resource in a binary or text form that is interpretable by another specialized data editor, then you should keep it in a separate .RC file so Visual C++ does not change the format to hexadecimal data. The .WAV (sound) file resources in the MFC Advanced Concepts sample [SPEAKN](../overview/visual-cpp-samples.md) are a good example.
 
 You can #include a SECOND.RC in the Compile-Time Directives in the Set Includes dialog box:
 

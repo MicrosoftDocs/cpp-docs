@@ -197,6 +197,6 @@ Use the first form of the function if you want to check which interface to get t
 
 ## See Also
 
-[DBViewer](../../visual-cpp-samples.md)<br/>
+[DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)
