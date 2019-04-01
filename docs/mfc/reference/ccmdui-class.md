@@ -203,6 +203,6 @@ A pointer to a text string.
 
 ## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)

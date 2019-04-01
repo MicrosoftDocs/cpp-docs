@@ -128,7 +128,7 @@ Usually, `CMFCToolBarFontComboBox` objects store the list of available fonts in 
 
 ### Example
 
-The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]
 

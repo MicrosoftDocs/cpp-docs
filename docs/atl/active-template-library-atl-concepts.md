@@ -80,7 +80,7 @@ Provides code for manipulating paths and URLs in the form of [CPathT](../atl/ref
 
 ## Related Sections
 
-[ATL Samples](../visual-cpp-samples.md)<br/>
+[ATL Samples](../overview/visual-cpp-samples.md)<br/>
 Provides descriptions of and links to the ATL sample programs.
 
 [Creating an ATL Project](../atl/reference/creating-an-atl-project.md)<br/>

@@ -11,7 +11,7 @@ ms.assetid: 7a9c9eaf-08ef-442d-94a0-e457beee8549
 
 An invalid attribute target was specified.
 
-For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example
 

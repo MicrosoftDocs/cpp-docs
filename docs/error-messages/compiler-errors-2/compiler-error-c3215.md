@@ -11,7 +11,7 @@ ms.assetid: d0d16007-8885-42e0-b086-2d3a61f348c5
 
 A constraint was specified more than once.
 
-For more information on generics, see [Generics](../../windows/generics-cpp-component-extensions.md).
+For more information on generics, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 The following sample generates C3215:
 

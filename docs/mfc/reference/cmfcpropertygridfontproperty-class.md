@@ -88,7 +88,7 @@ A `CMFCPropertyGridFontProperty` object represents a font property in a property
 
 ### Example
 
-The following example demonstrates how construct an object of the `CMFCPropertyGridFontProperty` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how construct an object of the `CMFCPropertyGridFontProperty` class. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#26](../../mfc/reference/codesnippet/cpp/cmfcpropertygridfontproperty-class_1.cpp)]
 

@@ -70,8 +70,8 @@ Alternatively, perhaps you now have new requirements, or you can foresee the nee
 |Title|Description|
 |-----------|-----------------|
 |[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual C++.|
-|[What's New for The C++ compiler in Visual Studio 2017 RC](../what-s-new-for-visual-cpp-in-visual-studio.md)|Changes in the IDE and tools from Visual Studio 2015 to Visual Studio 2017|
-|[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)|Standards conformance improvements from Visual Studio 2015 to Visual Studio 2017|
+|[What's New for The C++ compiler in Visual Studio 2017 RC](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|Changes in the IDE and tools from Visual Studio 2015 to Visual Studio 2017|
+|[C++ conformance improvements in Visual Studio 2017](../overview/cpp-conformance-improvements-2017.md)|Standards conformance improvements from Visual Studio 2015 to Visual Studio 2017|
 |[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Visual C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code.|
 |[Visual C++ What's New 2003 through 2015](visual-cpp-what-s-new-2003-through-2015.md)|All the "what's new" information for Visual C++ from Visual Studio 2003 through Visual Studio 2015.|
 |[Porting 3rd-party libraries](porting-third-party-libraries.md)|How to use the **vcpkg** command line tool to port older open-source libraries to versions compiled with more recent Visual C++ toolsets.|
@@ -82,4 +82,4 @@ Alternatively, perhaps you now have new requirements, or you can foresee the nee
 
 ## See also
 
-[Visual C++](../visual-cpp-in-visual-studio.md)
+[Visual C++](../overview/visual-cpp-in-visual-studio.md)

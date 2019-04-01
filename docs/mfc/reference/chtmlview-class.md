@@ -2037,7 +2037,7 @@ Applies to Internet Explorer and WebBrowser.
 
 ## See also
 
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CFormView Class](../../mfc/reference/cformview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [IWebBrowser2](/windows/desktop/api/exdisp/nn-exdisp-iwebbrowser2)

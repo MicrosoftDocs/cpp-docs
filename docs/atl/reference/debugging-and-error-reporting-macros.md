@@ -207,7 +207,7 @@ ATLTRACE2(
 
 ### Remarks
 
-The short form of ATLTRACE2 writes a string to the debugger's output window. The second form of ATLTRACE2 also writes output to the debugger's output window, but is subject to the settings of the ATL/MFC Trace Tool (see [ATLTraceTool Sample](../../visual-cpp-samples.md)). For example, if you set *level* to 4 and the ATL/MFC Trace Tool to level 0, you will not see the message. *level* can be 0, 1, 2, 3, or 4. The default, 0, reports only the most serious problems.
+The short form of ATLTRACE2 writes a string to the debugger's output window. The second form of ATLTRACE2 also writes output to the debugger's output window, but is subject to the settings of the ATL/MFC Trace Tool (see [ATLTraceTool Sample](../../overview/visual-cpp-samples.md)). For example, if you set *level* to 4 and the ATL/MFC Trace Tool to level 0, you will not see the message. *level* can be 0, 1, 2, 3, or 4. The default, 0, reports only the most serious problems.
 
 The *category* parameter lists the trace flags to set. These flags correspond to the types of methods for which you want to report. The tables below list the valid trace flags you can use for the *category* parameter.
 

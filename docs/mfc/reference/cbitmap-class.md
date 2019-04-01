@@ -485,6 +485,6 @@ The GDI does not use these values except to return them when an application call
 
 ## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

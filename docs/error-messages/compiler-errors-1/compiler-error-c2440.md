@@ -159,7 +159,7 @@ int main() {
 
 ## Example
 
-C2440 can also occur if you try to create an instance of a Visual C++ array whose type is a <xref:System.Array>.  For more information, see [Arrays](../../windows/arrays-cpp-component-extensions.md).  The next sample generates C2440:
+C2440 can also occur if you try to create an instance of a Visual C++ array whose type is a <xref:System.Array>.  For more information, see [Arrays](../../extensions/arrays-cpp-component-extensions.md).  The next sample generates C2440:
 
 ```cpp
 // C2440e.cpp

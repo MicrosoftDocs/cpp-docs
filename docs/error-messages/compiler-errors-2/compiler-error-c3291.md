@@ -9,7 +9,7 @@ ms.assetid: ed2e9f89-8dbc-4387-bc26-cc955e840858
 
 'default' : cannot be the name of a trivial property
 
-A trivial property cannot be named `default`. See [property](../../windows/property-cpp-component-extensions.md) for more information.
+A trivial property cannot be named `default`. See [property](../../extensions/property-cpp-component-extensions.md) for more information.
 
 ## Example
 

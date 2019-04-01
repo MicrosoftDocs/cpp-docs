@@ -102,13 +102,13 @@ The following diagram shows the class hierarchy for the CTraits classes.
 
 The following samples demonstrate the collection classes:
 
-- [MMXSwarm Sample](../visual-cpp-samples.md)
+- [MMXSwarm Sample](../overview/visual-cpp-samples.md)
 
-- [DynamicConsumer Sample](../visual-cpp-samples.md)
+- [DynamicConsumer Sample](../overview/visual-cpp-samples.md)
 
 - [UpdatePV Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)
 
-- [Marquee Sample](../visual-cpp-samples.md)
+- [Marquee Sample](../overview/visual-cpp-samples.md)
 
 ## See also
 

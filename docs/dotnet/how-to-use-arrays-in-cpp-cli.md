@@ -613,4 +613,4 @@ int main() {
 
 ## See also
 
-[Arrays](../windows/arrays-cpp-component-extensions.md)
+[Arrays](../extensions/arrays-cpp-component-extensions.md)

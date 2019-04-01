@@ -11,7 +11,7 @@ ms.assetid: e2b844d0-4920-412f-99fd-cd8051c4aa41
 
 The compiler found more than one forward type declaration for the same type. Only one declaration per type is allowed.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

@@ -65,7 +65,7 @@ Documents, their associated views, and the frame windows that frame the views ar
 
 - [Using database classes without documents and views](../data/mfc-using-database-classes-without-documents-and-views.md)
 
-- [Samples](../visual-cpp-samples.md)
+- [Samples](../overview/visual-cpp-samples.md)
 
 ## See also
 

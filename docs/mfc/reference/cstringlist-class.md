@@ -87,6 +87,6 @@ For more information on using `CStringList`, see the article [Collections](../..
 
 ## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

@@ -79,9 +79,9 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
 [How to: Customize the Application Button](../mfc/how-to-customize-the-application-button.md)
 
-For end-to-end samples, see [Samples (MFC Feature Pack)](../visual-cpp-samples.md).
+For end-to-end samples, see [Samples (MFC Feature Pack)](../overview/visual-cpp-samples.md).
 
 ## See also
 
 [Walkthroughs](../mfc/walkthroughs-mfc.md)<br/>
-[Samples (MFC Feature Pack)](../visual-cpp-samples.md)
+[Samples (MFC Feature Pack)](../overview/visual-cpp-samples.md)

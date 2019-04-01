@@ -10,7 +10,7 @@ ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
 Designates a null pointer constant of type `std::nullptr_t`, which is convertible to any raw pointer type.  Although you can use the keyword **nullptr** without including any headers, if your code uses the type `std::nullptr_t`, then you must define it by including the header `<cstddef>`.
 
 > [!NOTE]
->  The **nullptr** keyword is also defined in C++/CLI for managed code applications and is not interchangeable with the ISO Standard C++ keyword. If your code might be compiled by using the [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option, which targets managed code, then use `__nullptr` in any line of code where you must guarantee that the compiler uses the native C++ interpretation. For more information, see [nullptr](../windows/nullptr-cpp-component-extensions.md).
+>  The **nullptr** keyword is also defined in C++/CLI for managed code applications and is not interchangeable with the ISO Standard C++ keyword. If your code might be compiled by using the [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option, which targets managed code, then use `__nullptr` in any line of code where you must guarantee that the compiler uses the native C++ interpretation. For more information, see [nullptr](../extensions/nullptr-cpp-component-extensions.md).
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Avoid using NULL or zero (`0`) as a null pointer constant; **nullptr** is less v
 ## See also
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[nullptr](../windows/nullptr-cpp-component-extensions.md)
+[nullptr](../extensions/nullptr-cpp-component-extensions.md)(C++/CLI)

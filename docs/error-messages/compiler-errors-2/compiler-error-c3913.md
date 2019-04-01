@@ -11,7 +11,7 @@ default property must be indexed
 
 A default property was defined incorrectly.
 
-For more information, see [property](../../windows/property-cpp-component-extensions.md).
+For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
 The following sample generates C3913:
 

@@ -337,6 +337,6 @@ For more information about using graphic objects, see [Graphic Objects](/windows
 
 ## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

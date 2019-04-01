@@ -105,7 +105,7 @@ The static [Type::GetTypeCode](../cppcx/platform-type-class.md#gettypecode) can 
 
 The [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename) class is used in the Windows APIs as a language-independent way of passing type information between Windows components and apps. The T[Platform::Type Class](../cppcx/platform-type-class.md) has operators for converting between `Type` and `TypeName`.
 
-Use the [typeid](../windows/typeid-cpp-component-extensions.md) operator to return a `Platform::Type` object for a class name, for example when navigating between XAML pages:
+Use the [typeid](../extensions/typeid-cpp-component-extensions.md) operator to return a `Platform::Type` object for a class name, for example when navigating between XAML pages:
 
 ```
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
