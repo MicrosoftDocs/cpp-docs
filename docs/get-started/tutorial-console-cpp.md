@@ -1,4 +1,5 @@
 ---
+title: Create a C++ console app project
 moniker-range: ">=vs-2015"
 ---
 ::: moniker range=">=vs-2019"

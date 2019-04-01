@@ -13,7 +13,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Prerequisites
 
-- Have Visual Studio with the **Desktop development with C++** workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).
+- Have Visual Studio with the **Desktop development with C++** workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio](../../build/vscpp-step-0-installation.md).
 
 ## Create your app project
 
@@ -298,7 +298,7 @@ You can also just hover over variables in the code itself to see their current v
 
    ![Step out of Calculate and check result](./media/calculator-undefined-zero.gif "Step out of Calculate and check result")
 
-1. It looks like the program is doing what is expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. You'll see its value is listed as "inf", which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
+   It looks like the program is doing what is expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. You'll see its value is listed as "inf", which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
    ![The result of divide by zero](./media/calculator-divide-by-zero-fail.png "The result of divide by zero")
 
