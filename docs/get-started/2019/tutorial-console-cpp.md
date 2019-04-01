@@ -84,7 +84,6 @@ Now let's turn the code in this template into a calculator app.
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
     //
 
-    #include "pch.h"
     #include <iostream>
 
     using namespace std;
@@ -168,7 +167,6 @@ It's time to add some math logic.
 1. Switch to the *Calculator.cpp* file in the editor window. Remove the `Calculator()` and `~Calculator()` sections (as you did in the .h file) and add the following code to `Calculate()`:
 
     ```cpp
-    #include "pch.h"
     #include "Calculator.h"
 
     double Calculator::Calculate(double x, char oper, double y)
@@ -206,7 +204,6 @@ If you build and run the code again at this point, it will still exit after aski
     // CalculatorTutorial.cpp : This file contains the 'main' function. Program execution begins and ends there.
     //
 
-    #include "pch.h"
     #include <iostream>
     #include "Calculator.h"
 
@@ -374,8 +371,6 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 ## The finished app
 
 Congratulations! You've completed the code for the calculator app, and built and debugged it in Visual Studio.
-
-![Calculator console application](./2019/media/calculator-app.gif "Calculator console application")
 
 ## Next steps
 
