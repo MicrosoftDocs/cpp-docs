@@ -426,6 +426,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/unwind-data-for-exception-handling-debugger-support.md",
+            "redirect_url": "/cpp/build/exception-handling-x64",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/using-an-nmake-macro.md",
             "redirect_url": "/cpp/build/reference/using-an-nmake-macro",
             "redirect_document_id": false
@@ -654,11 +659,13 @@
             "source_path": "docs/ide/get-started-linux-cmake.md",
             "redirect_url": "/cpp/build/get-started-linux-cmake",
             "redirect_document_id": true
-        },        {
+        },
+        {
             "source_path": "docs/ide/customize-cmake-settings.md",
             "redirect_url": "/cpp/build/customize-cmake-settings",
             "redirect_document_id": true
-        },        {
+        },
+        {
             "source_path": "docs/ide/configure-cmake-debugging-sessions.md",
             "redirect_url": "/cpp/build/cconfigure-cmake-debugging-sessions",
             "redirect_document_id": true
@@ -744,8 +751,18 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/getting-started-with-cpp-in-visual-studio.md",
+            "redirect_url": "/cpp/overview/getting-started-with-cpp-in-visual-studio",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/ide/general-property-page-file.md",
             "redirect_url": "/cpp/build/reference/general-property-page-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/general-property-page-project.md",
+            "redirect_url": "/cpp/build/reference/general-property-page-project",
             "redirect_document_id": false
         },
         {
