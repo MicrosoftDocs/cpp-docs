@@ -18,7 +18,7 @@ If you haven't downloaded and installed Visual Studio and the Visual C++ tools y
 Welcome to Visual Studio 2019! In this version, it's easy to choose and install just the features you need. And because of its reduced minimum footprint, it installs quickly and with less system impact.
 
 > [!NOTE]
-> This topic applies to Visual Studio on Windows. For Visual Studio for Mac, see [Install Visual Studio for Mac](/visualstudio/mac/installation/).
+> This topic applies to installation of Visual Studio on Windows. [Visual Studio Code](https://code.visualstudio.com/) is a lightweight, cross-platform development environment that runs on Windows, Mac, and Linux systems. The Microsoft [C/C++ for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension supports IntelliSense, debugging, code formatting, auto-completion. Visual Studio for Mac doesn't support Microsoft C++, but does support .NET languages and cross-platform development. For installation instructions, see [Install Visual Studio for Mac](/visualstudio/mac/installation/).
 
 Want to know more about what else is new in this version? See the Visual Studio [release notes](/visualstudio/releases/2019/release-notes/).
 
@@ -34,7 +34,7 @@ Before you begin installing Visual Studio:
 
 1. Reboot. The reboot ensures that any pending installs or updates don't hinder the Visual Studio install.
 
-1. Free up space. Remove unneeded files and applications from your %SystemDrive% by, for example, running the Disk Cleanup app. 
+1. Free up space. Remove unneeded files and applications from your %SystemDrive% by, for example, running the Disk Cleanup app.
 
 For questions about running previous versions of Visual Studio side by side with Visual Studio 2019, see the [Visual Studio 2019 Platform Targeting and Compatibility](/visualstudio/releases/2019/compatibility/) page.
 
@@ -61,15 +61,19 @@ Run the bootstrapper file to install the Visual Studio Installer. This new light
 
 ### Step 4 - Choose workloads
 
-After the installer is installed, you can use it to customize your installation by selecting the feature sets—or workloads—that you want. Here's how.
+After the installer is installed, you can use it to customize your installation by selecting the *workloads*, or feature sets, that you want. Here's how.
 
 1. Find the workload you want in the **Installing Visual Studio** screen.
 
-   ![Visual Studio 2019: Install a workload](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019: Install a workload](../get-started/media/vs-installer-workloads.png)
 
-   For example, choose the "C++ for desktop development" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
+   For core C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
-1. After you choose the workload(s) you want, choose **Install**.
+   Additional workloads support other kinds of C++ development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
+
+   The **Installation details** pane lists the included and optional components installed by each workload. You can select or deselect optional components in this list. For example, to support development by using the Visual Studio 2017 or 2015 compiler toolsets, choose the MSVC v141 or MSVC v140 optional components. You can add support for MFC, the experimental Modules language extension, IncrediBuild, and more.
+
+1. After you choose the workload(s) and optional components you want, choose **Install**.
 
     Next, status screens appear that show the progress of your Visual Studio installation.
 
@@ -80,13 +84,13 @@ After the installer is installed, you can use it to customize your installation 
 
 If you don't want to use the Workloads feature to customize your Visual Studio installation, or you want to add more components than a workload installs, you can do so by installing or adding individual components from the **Individual components** tab. Choose what you want, and then follow the prompts.
 
-  ![Visual Studio 2019 - Install individual components](media/vs-2019/vs-installer-individual-components.png "Install Visual Studio individual components")
+  ![Visual Studio 2019 - Install individual components](../get-started/media/vs-installer-individual-components.png "Install Visual Studio individual components")
 
 ## Step 6 - Install language packs (Optional)
 
 By default, the installer program tries to match the language of the operating system when it runs for the first time. To install Visual Studio in a language of your choosing, choose the **Language packs** tab from the Visual Studio Installer, and then follow the prompts.
 
-  ![Visual Studio 2019 - Install language packs](media/vs-2019/vs-installer-language-packs.png "Install Visual Studio language packs")
+  ![Visual Studio 2019 - Install language packs](../get-started/media/vs-installer-language-packs.png "Install Visual Studio language packs")
 
 ### Change the installer language from the command line
 
@@ -96,7 +100,7 @@ Another way that you can change the default language is by running the installer
 
 You can reduce the installation footprint of Visual Studio on your system drive. You can choose to move the download cache, shared components, SDKs, and tools to different drives, and keep Visual Studio on the drive that runs it the fastest.
 
-  ![Visual Studio 2019 - Change installation locations](media/vs-2019/vs-installer-installation-locations.png "Change the installation location")
+  ![Visual Studio 2019 - Change installation locations](../get-started/media/vs-installer-installation-locations.png "Change the installation location")
 
 > [!IMPORTANT]
 > You can select a different drive only when you first install Visual Studio. If you've already installed it and want to change drives, you must uninstall Visual Studio and then reinstall it.
@@ -111,7 +115,7 @@ For more information, see the [Select installation locations](change-installatio
 
 1. In the search box, enter the type of app you want to create to see a list of available templates. The list of templates depends on the workload(s) that you chose during installation. To see different templates, choose different workloads.
 
-   You can also filter your search for a specific programming language by using the **Language** drop-down list. You can filter by using the **Platform** list and the **Project type** list, too. 
+   You can also filter your search for a specific programming language by using the **Language** drop-down list. You can filter by using the **Platform** list and the **Project type** list, too.
 
 1. Visual Studio opens your new project, and you're ready to code!
 
@@ -191,14 +195,5 @@ When Visual Studio is running, you are ready to continue to the next step.
 
 > [!div class="nextstepaction"]
 > [Create a C++ project](vscpp-step-1-create.md)
-
-## See also
-
-* [Update Visual Studio](update-visual-studio.md)
-* [Modify Visual Studio](modify-visual-studio.md)
-* [Uninstall Visual Studio](uninstall-visual-studio.md)
-* [Create an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
-* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Install Visual Studio for Mac](/visualstudio/mac/installation)
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />
