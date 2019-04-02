@@ -1,21 +1,23 @@
 ---
-title: "New features"
+title: "SIMD Extension"
 ms.date: "03/20/2019"
-helpviewer_keywords: ["OpenMP in Visual C++, new features", "explicit parallelization, new features"]
+helpviewer_keywords: ["SIMD", "OpenMP in Visual C++, new features", "explicit parallelization, new features"]
 ---
 
-# New features
+# SIMD Extension
 
-Visual C++ currently supports the OpenMP 2.0 standard, however with Visual Studio 2019, new features such as SIMD will be introduced.
-
-To try these features, use the `-openmp:experimental` switch. This switch enables the additional OpenMP features not available under `-openmp`.
+Visual C++ currently supports the OpenMP 2.0 standard, however Visual Studio 2019 also offers SIMD functionality.
 
 > [!NOTE]
-> The `-openmp:experimental` switch subsumes the `-openmp` switch meaning it's compatible with all OpenMP 2.0 features.
+> To use SIMD, compile with `-openmp:experimental`. This switch enables additional OpenMP features not available with the `-openmp` switch.
+>
+> The `-openmp:experimental` switch also subsumes `-openmp`, meaning all OpenMP 2.0 features are included with its use.
+
+For more information, see [SIMD Extension to C++ OpenMP in Visual Studio](https://devblogs.microsoft.com/cppblog/simd-extension-to-c-openmp-in-visual-studio/).
 
 ## OpenMP SIMD in Visual C++
 
-OpenMP SIMD, first introduced in the OpenMP 4.0 standard, targets loop vectorization. By annotating a loop with the `simd` directive, the compiler can ignore vector dependencies and vectorize the loop as much as possible. The compiler respects users’ intention to have multiple loop iterations executed simultaneously.
+OpenMP SIMD, introduced in the OpenMP 4.0 standard, targets making vector-friendly loops. By using the `simd` directive before a loop, the compiler can ignore vector dependencies and make the loop as vector-friendly as possible. The compiler respects users’ intention to have multiple loop iterations executed simultaneously.
 
 ```c
     #pragma omp simd
@@ -27,26 +29,15 @@ OpenMP SIMD, first introduced in the OpenMP 4.0 standard, targets loop vectoriza
     }
 ```
 
-Visual C++ already provides similar non-OpenMP loop pragmas like `#pragma vector` and `#pragma ivdep`, however with OpenMP SIMD, the compiler can do more, such as:
+Visual C++ already provides similar non-OpenMP loop pragmas like `#pragma vector` and `#pragma ivdep`, however with OpenMP SIMD, the compiler can do more, like:
 
-- Always allowed to ignore any vector dependencies that are present.
+- Always allowed to ignore present vector dependencies.
 - `/fp:fast` is enabled within the loop.
-- Outer loops and loops with function calls are vectorizable.
-- Nested loops can be coalesced into one loop and vectorized.
-- Hybrid acceleration with `#pragma omp for simd` to enable coarse-grained multi-threading and fine-grained vectorization.  
+- Outer loops and loops with function calls are vector-friendly.
+- Nested loops can be coalesced into one loop and made vector-friendly.
+- Hybrid acceleration with `#pragma omp for simd` to enable coarse-grained multi-threading and fine-grained vectors.  
 
-For loops that aren't vectorized, the compiler issues a message for each:
-
-```cmd
-    cl -O2 -openmp:experimental mycode.cpp
-```
-
-```Output
-    mycode.cpp(84) : info C5002: Omp simd loop not vectorized due to reason '1200'
-    mycode.cpp(90) : info C5002: Omp simd loop not vectorized due to reason '1200'
-```
-
-For loops that are vectorized, the compiler is silent unless a vectorization logging switch is provided:
+For vector-friendly loops, the compiler remains silent unless you use a vector-support log switch:
 
 ```cmd
     cl -O2 -openmp:experimental -Qvec-report:2 mycode.cpp
@@ -58,7 +49,20 @@ For loops that are vectorized, the compiler is silent unless a vectorization log
     mycode.cpp(96) : info C5001: Omp simd loop vectorized
 ```
 
-In addition, the OpenMP SIMD directive takes the following clauses to further enhance the vectorization:
+For non-vector-friendly loops, the compiler issues each a message:
+
+```cmd
+    cl -O2 -openmp:experimental mycode.cpp
+```
+
+```Output
+    mycode.cpp(84) : info C5002: Omp simd loop not vectorized due to reason '1200'
+    mycode.cpp(90) : info C5002: Omp simd loop not vectorized due to reason '1200'
+```
+
+### Clauses
+
+The OpenMP SIMD directive can also take the following clauses to enhance vector-support:
 
 |Directive|Description|
 |---|---|
@@ -72,15 +76,9 @@ In addition, the OpenMP SIMD directive takes the following clauses to further en
 |`collapse(n)`|Coalescing loop nest.|
 
 > [!NOTE]
-> None of the SIMD clauses are effective in Visual Studio 2019. They'll be parsed but ignored by the compiler with a warning issued for user's awareness.
+> Non-effective SIMD clauses are parsed and ignored by the compiler with a warning.
 >
-> For example, the compiler will issue:
->
-> ```Output
->    warning C4849: OpenMP 'simdlen' clause ignored in 'simd' directive
-> ```
->
-> for the code:
+> For example, use of the following code issues a warning:
 >
 > ```c
 >    #pragma omp simd simdlen(8)
@@ -91,12 +89,17 @@ In addition, the OpenMP SIMD directive takes the following clauses to further en
 >        bar(i);
 >    }
 > ```
+>
+> ```Output
+>    warning C4849: OpenMP 'simdlen' clause ignored in 'simd' directive
+> ```
+
 
 ### Example
   
-The OpenMP SIMD directive provides users a way to dictate the compiler to vectorize a loop. By annotating a loop with the OpenMP SIMD directive, users intend to have multiple loop iterations executed simultaneously.
+The OpenMP SIMD directive provides users a way to dictate the compiler make loops vector-friendly. By annotating a loop with the OpenMP SIMD directive, users intend to have multiple loop iterations executed simultaneously.
 
-For example, the following loop is annotated with the OpenMP SIMD directive. There is no perfect parallelism among loop iterations since there is a backward dependency from a[i] to a[i-1], but because of the SIMD directive the compiler is still allowed to pack consecutive iterations of the first statement into one vector instruction and run them in parallel.
+For example, the following loop is annotated with the OpenMP SIMD directive. There's no perfect parallelism among loop iterations since there is a backward dependency from a[i] to a[i-1], but because of the SIMD directive the compiler is still allowed to pack consecutive iterations of the first statement into one vector instruction and run them in parallel.
 
 ```c
     #pragma omp simd
@@ -108,7 +111,7 @@ For example, the following loop is annotated with the OpenMP SIMD directive. The
     }
 ```
 
-Therefore, the following transformed vector form of the loop is legal because the compiler keeps the sequential behavior of each original loop iteration. In other words, `a[i]` is executed after `a[-1]`, `b[i]` is after `a[i]` and the call to `bar` happens last.
+Therefore, the following transformed vector form of the loop is **legal** because the compiler keeps the sequential behavior of each original loop iteration. In other words, `a[i]` is executed after `a[-1]`, `b[i]` is after `a[i]` and the call to `bar` happens last.
 
 ```c
     for (i = 0; i < count; i+=4)
@@ -122,7 +125,7 @@ Therefore, the following transformed vector form of the loop is legal because th
     }
 ```
 
-It's illegal to move the memory reference `*c` out of the loop if it may alias with `a[i]` or `b[i]`. It's also illegal to reorder the statements inside one original iteration if it breaks the sequential dependency. As an example, the following transformed loop is not legal.
+It's **not legal** to move the memory reference `*c` out of the loop if it may alias with `a[i]` or `b[i]`. It's also not legal to reorder the statements inside one original iteration if it breaks the sequential dependency. For example, the following transformed loop is not legal:
 
 ```c
     c = b;
@@ -137,12 +140,6 @@ It's illegal to move the memory reference `*c` out of the loop if it may alias w
         bar(i+3);
     }
 ```
-
-## Feedback
-
-We encourage you to try out this new feature. If you see an OpenMP SIMD loop that you expect to be vectorized, but isn't or the generated code isn't optimal, please let us know via [email](mailto:visualcpp@microsoft.com), [Twitter](twitter.com/visualc), or [Developer Community](https://developercommunity.visualstudio.com).
-
-Moving forward, we'd also love to hear your need of OpenMP functionalities missing in Visual Studio.
 
 ## See also
 
