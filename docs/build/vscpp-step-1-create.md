@@ -2,7 +2,7 @@
 title: Create a C++ console app project
 description: "Create a Hello World console app in Visual C++"
 ms.custom: "mvc"
-ms.date: 12/12/2017
+ms.date: 04/02/2019
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -21,17 +21,23 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 ::: moniker range=">=vs-2019"
 
-1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog.
+1. In Visual Studio, open the **File** menu and choose **New** > **Project** to open the **Create a new Project** dialog. Select the **Console App** template, and then choose **Next**.
 
-   ![Open the New Project dialog](media/vscpp-file-new-project.gif "Open the New Project dialog")
+   ![Create a new project](media/vs2019-choose-console-app.png "Open the Create a new project dialog")
 
-1. In the **New Project** dialog, select **Installed**, **Visual C++** if it isn't selected already, and then choose the **Empty Project** template. In the **Name** field, enter *HelloWorld*. Choose **OK** to create the project.
+1. In the **Configure your new project** dialog, enter *HelloWorld* in the **Project name** edit box. Choose **Create** to create the project.
 
-   ![Name and create the new project](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
+   ![Name and create the new project](media/vs2019-configure-new-project-hello-world.png "Name and create the new project")
+
+   Visual Studio creates a new project, ready for you to add and edit your source code. By default, the Console App template fills in your source code with a "Hello World" app:
+
+   ![Hello World project in the IDE](media/vs2019-hello-world-code.png "Hello World project in the IDE")
+
+   When the code looks like this in the editor, you're ready to go on to the next step and build your app.
 
 ::: moniker-end
 
-::: moniker range="<vs-2019"
+::: moniker range="<=vs-2017"
 
 1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **New Project** dialog.
 
@@ -40,8 +46,6 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 1. In the **New Project** dialog, select **Installed**, **Visual C++** if it isn't selected already, and then choose the **Empty Project** template. In the **Name** field, enter *HelloWorld*. Choose **OK** to create the project.
 
    ![Name and create the new project](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
-
-::: moniker-end
 
 Visual Studio creates a new, empty project, ready for you to specialize for the kind of app you want to create and to add your source code files. You'll do that next.
 
@@ -95,10 +99,14 @@ When the code looks like this in the editor, you're ready to go on to the next s
 
 [I ran into a problem.](#add-a-source-code-file-issues)
 
+::: moniker-end
+
 ## Next Steps
 
 > [!div class="nextstepaction"]
 > [Build and run a C++ project](vscpp-step-2-build.md)
+
+::: moniker range="<=vs-2017"
 
 ## Troubleshooting guide
 
@@ -135,5 +143,7 @@ If you accidentally closed the source code file editor window, to open it again,
 If red squiggles appear under anything in the source code editor, check that your code matches the example in spelling, punctuation, and case. Case is significant in C++ code.
 
 [Go back](#add-code-to-the-source-file).
+
+::: moniker-end
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />
