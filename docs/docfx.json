@@ -9,6 +9,8 @@
         "group": "group-vc2015",
         "src": ".",
         "exclude": [
+          "**/2019/**",
+          "**/2017/**",
           "**/obj/**",
           "vcppdocs/**",
           "**/includes/**"
