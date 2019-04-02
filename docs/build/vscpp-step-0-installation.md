@@ -1,5 +1,5 @@
 ---
-title: Install C++ support in Visual Studio 2017
+title: Install C++ support in Visual Studio
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
 ms.date: "004/02/2019"
