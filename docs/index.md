@@ -45,7 +45,7 @@ ms.author: "mblome"
                 </a>
             </li>
             <li>
-                <a href="/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio.md">
+                <a href="/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -219,7 +219,7 @@ ms.author: "mblome"
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/build/building-cpp-projects-in-visual-studio">
+                                <a href="/cpp/build/projects-and-build-systems-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
