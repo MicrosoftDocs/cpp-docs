@@ -94,7 +94,7 @@ By default, the installer program tries to match the language of the operating s
 
 ### Change the installer language from the command line
 
-Another way that you can change the default language is by running the installer from the command line. For example, you can force the installer to run in English by using the following command: `vs_installer.exe --locale en-US`. The installer will remember this setting when it is run the next time. The installer supports the following language tokens: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru, and tr-tr.
+Another way that you can change the default language is by running the installer from the command line. For example, you can force the installer to run in English by using the following command: `vs_installer.exe --locale en-US`. The installer will remember this setting when it's run the next time. The installer supports the following language tokens: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru, and tr-tr.
 
 ### Step 7 - Change the installation location (Optional)
 
@@ -145,7 +145,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
    >[!Tip]
    > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) or [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
-1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you are having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
+1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you're having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
    ![Download and install the Visual Studio Installer](media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
 
@@ -159,7 +159,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 1. When the installation completes, choose the **Launch** button to start Visual Studio.
 
-   The first time you run Visual Studio, you are asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to.
+   The first time you run Visual Studio, you're asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to.
 
    It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 
@@ -171,7 +171,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    ![Visual Studio 2017 notification flag](media/vscpp-first-start-page-flag.png "Visual Studio 2017 notification flag")
 
-   If it is highlighted, select it to open the **Notifications** window. If there are any updates available for Visual Studio, we recommend you install them now. Once the installation is complete, restart Visual Studio.
+   If it's highlighted, select it to open the **Notifications** window. If there are any updates available for Visual Studio, we recommend you install them now. Once the installation is complete, restart Visual Studio.
 
 ::: moniker-end
 
@@ -185,7 +185,7 @@ In general, we highly recommend that you use Visual Studio 2017 even if you need
 
 ::: moniker-end
 
-When Visual Studio is running, you are ready to continue to the next step.
+When Visual Studio is running, you're ready to continue to the next step.
 
 ## Next Steps
 
