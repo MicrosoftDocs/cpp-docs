@@ -2,7 +2,7 @@
 title: Install C++ support in Visual Studio
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
-ms.date: "004/02/2019"
+ms.date: "04/02/2019"
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
