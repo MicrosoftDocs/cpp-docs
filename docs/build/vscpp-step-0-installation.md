@@ -2,16 +2,130 @@
 title: Install C++ support in Visual Studio 2017
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
-ms.date: "11/19/2018"
+ms.date: "004/02/2019"
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
 # Install C++ support in Visual Studio
 
-If you haven't downloaded and installed Visual Studio 2017 and the Visual C++ tools yet, here's how to get started.
+If you haven't downloaded and installed Visual Studio and the Visual C++ tools yet, here's how to get started.
 
-## Prerequisites
+::: moniker range="vs-2019"
+
+## Visual Studio 2019 Installation
+
+Welcome to Visual Studio 2019! In this version, it's easy to choose and install just the features you need. And because of its reduced minimum footprint, it installs quickly and with less system impact.
+
+> [!NOTE]
+> This topic applies to Visual Studio on Windows. For Visual Studio for Mac, see [Install Visual Studio for Mac](/visualstudio/mac/installation/).
+
+Want to know more about what else is new in this version? See the Visual Studio [release notes](/visualstudio/releases/2019/release-notes/).
+
+Ready to install? We'll walk you through it, step-by-step.
+
+### Step 1 - Make sure your computer is ready for Visual Studio
+
+Before you begin installing Visual Studio:
+
+1. Check the [system requirements](/visualstudio/releases/2019/system-requirements). These requirements help you know whether your computer supports Visual Studio 2019.
+
+1. Apply the latest Windows updates. These updates ensure that your computer has both the latest security updates and the required system components for Visual Studio.
+
+1. Reboot. The reboot ensures that any pending installs or updates don't hinder the Visual Studio install.
+
+1. Free up space. Remove unneeded files and applications from your %SystemDrive% by, for example, running the Disk Cleanup app. 
+
+For questions about running previous versions of Visual Studio side by side with Visual Studio 2019, see the [Visual Studio 2019 Platform Targeting and Compatibility](/visualstudio/releases/2019/compatibility/) page.
+
+### Step 2 - Download Visual Studio
+
+Next, download the Visual Studio bootstrapper file. To do so, choose the following button, choose the edition of Visual Studio that you want, choose **Save**, and then choose **Open folder**.
+
+ > [!div class="button"]
+ > [Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
+
+### Step 3 - Install the Visual Studio installer
+
+Run the bootstrapper file to install the Visual Studio Installer. This new lightweight installer includes everything you need to both install and customize Visual Studio.
+
+1. From your **Downloads** folder, double-click the bootstrapper that matches or is similar to one of the following files:
+
+   * **vs_community.exe** for Visual Studio Community
+   * **vs_professional.exe** for Visual Studio Professional
+   * **vs_enterprise.exe** for Visual Studio Enterprise
+
+   If you receive a User Account Control notice, choose **Yes**.
+
+1. We'll ask you to acknowledge the Microsoft [License Terms](https://visualstudio.microsoft.com/license-terms/) and the Microsoft [Privacy Statement](https://privacy.microsoft.com/privacystatement). Choose **Continue**.
+
+### Step 4 - Choose workloads
+
+After the installer is installed, you can use it to customize your installation by selecting the feature sets—or workloads—that you want. Here's how.
+
+1. Find the workload you want in the **Installing Visual Studio** screen.
+
+   ![Visual Studio 2019: Install a workload](../install/media/vs-2019/vs-installer-workloads.png)
+
+   For example, choose the "C++ for desktop development" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
+
+1. After you choose the workload(s) you want, choose **Install**.
+
+    Next, status screens appear that show the progress of your Visual Studio installation.
+
+> [!TIP]
+> At any time after installation, you can install workloads or components that you didn't install initially. If you have Visual Studio open, go to **Tools** > **Get Tools and Features...** which opens the Visual Studio Installer. Or, open **Visual Studio Installer** from the Start menu. From there, you can choose the workloads or components that you wish to install. Then, choose **Modify**.
+
+## Step 5 - Choose individual components (Optional)
+
+If you don't want to use the Workloads feature to customize your Visual Studio installation, or you want to add more components than a workload installs, you can do so by installing or adding individual components from the **Individual components** tab. Choose what you want, and then follow the prompts.
+
+  ![Visual Studio 2019 - Install individual components](media/vs-2019/vs-installer-individual-components.png "Install Visual Studio individual components")
+
+## Step 6 - Install language packs (Optional)
+
+By default, the installer program tries to match the language of the operating system when it runs for the first time. To install Visual Studio in a language of your choosing, choose the **Language packs** tab from the Visual Studio Installer, and then follow the prompts.
+
+  ![Visual Studio 2019 - Install language packs](media/vs-2019/vs-installer-language-packs.png "Install Visual Studio language packs")
+
+### Change the installer language from the command line
+
+Another way that you can change the default language is by running the installer from the command line. For example, you can force the installer to run in English by using the following command: `vs_installer.exe --locale en-US`. The installer will remember this setting when it is run the next time. The installer supports the following language tokens: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru, and tr-tr.
+
+### Step 7 - Change the installation location (Optional)
+
+You can reduce the installation footprint of Visual Studio on your system drive. You can choose to move the download cache, shared components, SDKs, and tools to different drives, and keep Visual Studio on the drive that runs it the fastest.
+
+  ![Visual Studio 2019 - Change installation locations](media/vs-2019/vs-installer-installation-locations.png "Change the installation location")
+
+> [!IMPORTANT]
+> You can select a different drive only when you first install Visual Studio. If you've already installed it and want to change drives, you must uninstall Visual Studio and then reinstall it.
+
+For more information, see the [Select installation locations](change-installation-locations.md) page.
+
+## Step 8 - Start developing
+
+1. After Visual Studio installation is complete, choose the **Launch** button to get started developing with Visual Studio.
+
+1. On the start window, choose **Create a new project**.
+
+1. In the search box, enter the type of app you want to create to see a list of available templates. The list of templates depends on the workload(s) that you chose during installation. To see different templates, choose different workloads.
+
+   You can also filter your search for a specific programming language by using the **Language** drop-down list. You can filter by using the **Platform** list and the **Project type** list, too. 
+
+1. Visual Studio opens your new project, and you're ready to code!
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+## Visual Studio 2017 Installation
+
+In Visual Studio 2017, it's easy to choose and install just the features you need. And because of its reduced minimum footprint, it installs quickly and with less system impact.
+
+### Prerequisites
 
 - A broadband internet connection. The Visual Studio installer can download several gigabytes of data.
 
@@ -21,13 +135,7 @@ If you haven't downloaded and installed Visual Studio 2017 and the Visual C++ to
 
 For details on the disk space and operating system requirements, see [Visual Studio Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-vs). The installer reports how much disk space is required for the options you select.
 
-## Visual Studio 2015 Installation
-
-To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. To add C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
-
-In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
-
-## Visual Studio 2017 Installation
+### Download and install
 
 1. Download the latest Visual Studio 2017 installer for Windows.
 
@@ -65,11 +173,32 @@ In general, we highly recommend that you use Visual Studio 2017 even if you need
 
    If it is highlighted, select it to open the **Notifications** window. If there are any updates available for Visual Studio, we recommend you install them now. Once the installation is complete, restart Visual Studio.
 
+::: moniker-end
+
+::: moniker range="<vs-2017"
+
+## Visual Studio 2015 Installation
+
+To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. To add C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
+
+In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
+
+::: moniker-end
+
 When Visual Studio is running, you are ready to continue to the next step.
 
 ## Next Steps
 
 > [!div class="nextstepaction"]
 > [Create a C++ project](vscpp-step-1-create.md)
+
+## See also
+
+* [Update Visual Studio](update-visual-studio.md)
+* [Modify Visual Studio](modify-visual-studio.md)
+* [Uninstall Visual Studio](uninstall-visual-studio.md)
+* [Create an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Install Visual Studio for Mac](/visualstudio/mac/installation)
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />
