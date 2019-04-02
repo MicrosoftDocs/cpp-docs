@@ -9,7 +9,7 @@ ms.author: "mblome"
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="./build/vscpp-step-0-install.md">
+                <a href="/cpp/build/vscpp-step-0-install.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -27,7 +27,7 @@ ms.author: "mblome"
                 </a>
             </li>
             <li>
-                <a href="./get-started/tutorial-console-cpp.md">
+                <a href="/cpp/get-started/tutorial-console-cpp.md">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -45,7 +45,7 @@ ms.author: "mblome"
                 </a>
             </li>
             <li>
-                <a href="./overview/what-s-new-for-visual-cpp-in-visual-studio.md">
+                <a href="/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -74,7 +74,7 @@ ms.author: "mblome"
                         <a href="#workloads1">Workloads</a>
                         <ul id="workloads1" class="cardsC">
                             <li>
-                                <a href="/cpp/windows/universal-windows-apps-cpp">
+                                <a href="/cpp/cppcx/universal-windows-apps-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -219,7 +219,7 @@ ms.author: "mblome"
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/ide/building-cpp-projects-in-visual-studio">
+                                <a href="/cpp/build/projects-and-build-systems-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -276,7 +276,7 @@ ms.author: "mblome"
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/ide/deploying-native-desktop-applications-visual-cpp">
+                                <a href="/cpp/windows/deploying-native-desktop-applications-visual-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -363,7 +363,7 @@ ms.author: "mblome"
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/windows/component-extensions-for-runtime-platforms">
+                                <a href="/cpp/extensions/component-extensions-for-runtime-platforms">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -439,7 +439,7 @@ ms.author: "mblome"
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/windows/windows-runtime-cpp-template-library-wrl">
+                                <a href="/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
