@@ -13,11 +13,25 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 ## Prerequisites
 
-- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio 2017](vscpp-step-0-installation.md).
+- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
 
 ## Create your app project
 
 Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps, and manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog.
+
+   ![Open the New Project dialog](media/vscpp-file-new-project.gif "Open the New Project dialog")
+
+1. In the **New Project** dialog, select **Installed**, **Visual C++** if it isn't selected already, and then choose the **Empty Project** template. In the **Name** field, enter *HelloWorld*. Choose **OK** to create the project.
+
+   ![Name and create the new project](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
+
+::: moniker-end
+
+::: moniker range="<vs-2019"
 
 1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **New Project** dialog.
 
@@ -26,6 +40,8 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 1. In the **New Project** dialog, select **Installed**, **Visual C++** if it isn't selected already, and then choose the **Empty Project** template. In the **Name** field, enter *HelloWorld*. Choose **OK** to create the project.
 
    ![Name and create the new project](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
+
+::: moniker-end
 
 Visual Studio creates a new, empty project, ready for you to specialize for the kind of app you want to create and to add your source code files. You'll do that next.
 
