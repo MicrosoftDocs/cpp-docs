@@ -1,6 +1,6 @@
 ---
 title: "MFC Library Versions"
-ms.date: "1/09/2018"
+ms.date: "04-01-2019"
 helpviewer_keywords: ["class libraries [MFC], building versions", "version information [MFC], MFC library", "MFC class library", "MFC class library, building", "MFC libraries", "MFC, library versions", "libraries [MFC], versions"]
 ---
 # MFC Library Versions
@@ -116,7 +116,7 @@ The import libraries needed to build applications or MFC extension DLLs that use
 
 If you are dynamically linking to the shared DLL version of MFC, whether it is from an application or from an MFC extension DLL, you must include the matching MFC*version*.DLL or MFC*version*U.DLL when you deploy your product.
 
-For a list of Visual C++ DLLs that can be distributed with your applications, see [Distributable Code for Microsoft Visual Studio 2017 and Microsoft Visual Studio 2017 SDK (Includes Utilities and BuildServer Files)](http://go.microsoft.com/fwlink/p/?LinkId=823098).
+For a list of Visual C++ DLLs that can be distributed with your applications, see [Distributable Code for Microsoft Visual Studio 2017 and Microsoft Visual Studio 2017 SDK (Includes Utilities and BuildServer Files)](/visualstudio/productinfo/2017-redistribution-vs) or [Distributable Code for Visual Studio 2019](/visualstudio/releases/2019/redistribution).
 
 For more information on MBCS and Unicode support in MFC, see [Unicode and Multibyte Character Set (MBCS) Support](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md).
 
