@@ -1,6 +1,53 @@
 {
     "redirections": [
         {
+            "source_path": "docs/cpp-conformance-improvements-2017.md",
+            "redirect_url": "/cpp/overview/cpp-conformance-improvements-2017",
+            "redirect_document_id": true
+        },
+
+        {
+            "source_path": "docs/how-to-report-a-problem-with-the-visual-cpp-toolset.md",
+            "redirect_url": "/cpp/overview/how-to-report-a-problem-with-the-visual-cpp-toolset",
+            "redirect_document_id": true
+        },
+
+        {
+            "source_path": "docs/overview-of-cpp-development.md",
+            "redirect_url": "/cpp/overview/overview-of-cpp-development",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/supported-platforms-visual-cpp.md.md",
+            "redirect_url": "/cpp/overview/supported-platforms-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-cpp-help-and-community.md",
+            "redirect_url": "/cpp/overview/visual-cpp-help-and-community",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-cpp-in-visual-studio.md",
+            "redirect_url": "/cpp/overview/visual-cpp-in-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-cpp-language-conformance.md",
+            "redirect_url": "/cpp/overview/visual-cpp-language-conformance",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-cpp-samples.md",
+            "redirect_url": "/cpp/overview//visual-cpp-samples",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/ide/visual-cpp-tools-and-features-in-visual-studio-editions.md",
+            "redirect_url": "/cpp/overview/visual-cpp-tools-and-features-in-visual-studio-editions",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/vcpkg.md",
             "redirect_url": "/cpp/build/vcpkg",
             "redirect_document_id": true
