@@ -105,8 +105,6 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 > [!IMPORTANT]
 > You can select a different drive only when you first install Visual Studio. If you've already installed it and want to change drives, you must uninstall Visual Studio and then reinstall it.
 
-For more information, see the [Select installation locations](change-installation-locations.md) page.
-
 ## Step 8 - Start developing
 
 1. After Visual Studio installation is complete, choose the **Launch** button to get started developing with Visual Studio.
@@ -118,8 +116,6 @@ For more information, see the [Select installation locations](change-installatio
    You can also filter your search for a specific programming language by using the **Language** drop-down list. You can filter by using the **Platform** list and the **Project type** list, too.
 
 1. Visual Studio opens your new project, and you're ready to code!
-
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ::: moniker-end
 
@@ -135,7 +131,7 @@ In Visual Studio 2017, it's easy to choose and install just the features you nee
 
 - A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 for the best development experience. Make sure that the latest updates are applied to your system before you install Visual Studio.
 
-- Enough free disk space. Visual Studio requires at least 7GB of disk space, and can take 50GB or more if many common options are installed. We recommend you install it on your C: drive.
+- Enough free disk space. Visual Studio requires at least 7 GB of disk space, and can take 50 GB or more if many common options are installed. We recommend you install it on your C: drive.
 
 For details on the disk space and operating system requirements, see [Visual Studio Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-vs). The installer reports how much disk space is required for the options you select.
 
