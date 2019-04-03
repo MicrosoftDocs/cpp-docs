@@ -9,7 +9,7 @@ ms.author: "mblome"
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="/cpp/build/vscpp-step-0-install">
+                <a href="/cpp/build/vscpp-step-0-installation">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
