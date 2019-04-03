@@ -24,13 +24,13 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
 ### New compiler options
 
-- [/permissive-](../../build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio 2017](../../cpp-conformance-improvements.md).
+- [/permissive-](../../build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio](../cpp-conformance-improvements.md).
 
 - [/diagnostics](../../build/reference/diagnostics-compiler-diagnostic-options.md): Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
 
 - [/debug:fastlink](../../build/reference/debug-generate-debug-info.md): Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not copying all debug information into the PDB file. The PDB file instead points to the debug information for the object and library files used to create the executable. See [Faster C++ build cycle in VS "15" with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) and [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
 
-- Visual Studio 2017 allows using [/sdl](../../build/reference/sdl-enable-additional-security-checks.md) with [/await](../build/reference/await-enable-coroutine-support.md). We removed the [/RTC](../../build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
+- Visual Studio 2017 allows using [/sdl](../../build/reference/sdl-enable-additional-security-checks.md) with [/await](../../build/reference/await-enable-coroutine-support.md). We removed the [/RTC](../../build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
 
    **Visual Studio 2017 version 15.3**:
 
@@ -59,7 +59,7 @@ Visual C++ runtime performance continues to improve due to better generated code
 
 The Microsoft C++ compiler supports Intel's AVX-512, including the Vector Length instructions that bring new functions in AVX-512 to 128- and 256-bit wide registers.
 
-The [/Zc:noexceptTypes-](../../build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](../../cpp-conformance-improvements.md#noexcept_removal).
+The [/Zc:noexceptTypes-](../../build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](../cpp-conformance-improvements.md#noexcept_removal).
 
 **Visual Studio 2017 version 15.7**:
 
