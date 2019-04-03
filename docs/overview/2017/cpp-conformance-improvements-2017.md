@@ -330,6 +330,45 @@ void bar(A<0> *p)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` in order to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
+## <a name="improvements_159"></a> Improvements in Visual Studio 2017 version 15.9
+
+### Left-to-right evaluation order for operators ->*, [], >>, and <<
+
+Starting in C++17, the operands of the operators ->*, [], >>, and \<\< must be evaluated in left-to-right order. There are two cases in which the compiler is unable to guarantee this order:
+- when one of the operand expressions is an object passed by value or contains an object passed by value, or
+- when compiled by using **/clr**, and one of the operands is a field of an object or an array element.
+
+The compiler emits warning [C4866](https://docs.microsoft.com/cpp/error-messages/compiler-warnings/c4866?view=vs-2017) when it can't guarantee left-to-right evaluation. This warning is only generated if **/std:c++17** or later is specified, as the left-to-right order requirement of these operators was introduced in C++17.
+
+To resolve this warning, first consider whether left-to-right evaluation of the operands is necessary, such as when evaluation of the operands might produce order-dependent side-effects. In many cases, the order in which operands are evaluated does not have an observable effect. If the order of evaluation must be left-to-right, consider whether you can pass the operands by const reference instead. This change eliminates the warning in the following code sample.
+
+```cpp
+// C4866.cpp
+// compile with: /w14866 /std:c++17
+
+class HasCopyConstructor
+{
+public:
+    int x;
+
+    HasCopyConstructor(int x) : x(x) {}
+    HasCopyConstructor(const HasCopyConstructor& h) : x(h.x) { }
+};
+
+int operator>>(HasCopyConstructor a, HasCopyConstructor b) { return a.x >> b.x; }
+
+// This version of operator>> does not trigger the warning:
+// int operator>>(const HasCopyConstructor& a, const HasCopyConstructor& b) { return a.x >> b.x; }
+
+int main()
+{
+    HasCopyConstructor a{ 1 };
+    HasCopyConstructor b{ 2 };
+
+    a>>b;        // C4866 for call to operator>>
+};
+```
+
 ## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), [15.8](#update_158), and [15.9](#update_159)
 
 ### Copy-list-initialization
