@@ -9,7 +9,7 @@ ms.author: "mblome"
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="/cpp/build/vscpp-step-0-install.md">
+                <a href="/cpp/build/vscpp-step-0-install">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -27,7 +27,7 @@ ms.author: "mblome"
                 </a>
             </li>
             <li>
-                <a href="/cpp/get-started/tutorial-console-cpp.md">
+                <a href="/cpp/get-started/tutorial-console-cpp">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
