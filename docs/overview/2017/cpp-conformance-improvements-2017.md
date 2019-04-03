@@ -1042,7 +1042,7 @@ To fix the problem, either change the `f(S)` signature or remove it.
 
 ### C5038: order of initialization in initializer lists
 
-Class members are initialized in the order they are declared, not the order they appear in initializer lists. Previous versions of the compiler did not warn when the order of the initializer list differed from the order of declaration. This could lead to undefined runtime behavior if the intialization of one member depended on another member in the list already being initialized. In the following example, Visual Studio 2017 version 15.3 (with **/Wall**) raises "warning C5038: data member 'A::y' will be initialized after data member 'A::x'":
+Class members are initialized in the order they are declared, not the order they appear in initializer lists. Previous versions of the compiler did not warn when the order of the initializer list differed from the order of declaration. This could lead to undefined runtime behavior if the initialization of one member depended on another member in the list already being initialized. In the following example, Visual Studio 2017 version 15.3 (with **/Wall**) raises "warning C5038: data member 'A::y' will be initialized after data member 'A::x'":
 
 ```cpp
 struct A
