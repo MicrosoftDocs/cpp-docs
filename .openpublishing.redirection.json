@@ -2,7 +2,7 @@
     "redirections": [
         {
             "source_path": "docs/cpp-conformance-improvements-2017.md",
-            "redirect_url": "/cpp/overview/cpp-conformance-improvements-2017",
+            "redirect_url": "/cpp/overview/cpp-conformance-improvements",
             "redirect_document_id": true
         },
 
@@ -40,6 +40,11 @@
         {
             "source_path": "docs/visual-cpp-samples.md",
             "redirect_url": "/cpp/overview//visual-cpp-samples",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/what-s-new-for-visual-cpp-in-visual-studio.md",
+            "redirect_url": "/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio",
             "redirect_document_id": true
         },
         {
@@ -7720,7 +7725,7 @@
         },
         {
             "source_path": "docs/top/cpp-conformance-improvements-2017.md",
-            "redirect_url": "/cpp/cpp-conformance-improvements-2017",
+            "redirect_url": "/cpp/overview/cpp-conformance-improvements",
             "redirect_document_id": false
         },
         {
@@ -7730,7 +7735,7 @@
         },
         {
             "source_path": "docs/top/how-to-report-a-problem-with-the-visual-cpp-toolset.md",
-            "redirect_url": "/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset",
+            "redirect_url": "/cpp/overview/how-to-report-a-problem-with-the-visual-cpp-toolset",
             "redirect_document_id": false
         },
         {
@@ -7755,27 +7760,27 @@
         },
         {
             "source_path": "docs/top/supported-platforms-visual-cpp.md",
-            "redirect_url": "/cpp/supported-platforms-visual-cpp",
+            "redirect_url": "/cpp/overview/supported-platforms-visual-cpp",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/top/visual-cpp-help-and-community.md",
-            "redirect_url": "/cpp/visual-cpp-help-and-community",
+            "redirect_url": "/cpp/overview/visual-cpp-help-and-community",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/top/visual-cpp-in-visual-studio.md",
-            "redirect_url": "/cpp/visual-cpp-in-visual-studio",
+            "redirect_url": "/cpp/overview/visual-cpp-in-visual-studio",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/top/visual-cpp-samples.md",
-            "redirect_url": "/cpp/visual-cpp-samples",
+            "redirect_url": "/cpp/overview/visual-cpp-samples",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/top/what-s-new-for-visual-cpp-in-visual-studio.md",
-            "redirect_url": "/cpp/what-s-new-for-visual-cpp-in-visual-studio",
+            "redirect_url": "/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio",
             "redirect_document_id": false
         },
         {
