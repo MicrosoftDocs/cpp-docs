@@ -105,7 +105,7 @@ For example, the `/Zc:forScope` switch was introduced early in the history of MS
 
 One example of a common compiler error you might see when upgrading is when a non-const argument is passed to a const parameter. Older versions of the compiler did not always flag this as an error. For more information, see [The compiler's more strict conversions](porting-guide-spy-increment.md#stricter_conversions).
 
-For more information on specific conformance improvements, see [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) and [C++ conformance improvements in Visual Studio 2017](../overview/cpp-conformance-improvements-2017.md).
+For more information on specific conformance improvements, see [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) and [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md).
 
 ## Errors involving \<stdint.h> integral types
 
@@ -121,7 +121,7 @@ The [/showIncludes](../build/reference/showincludes-list-include-files.md) compi
 
 Many changes have been made to the C runtime over the years. Many secure versions of functions have been added, and some have been removed. Also, as described earlier in this article, Microsoft’s implementation of the CRT was refactored in Visual Studio 2015 into new binaries and associated .lib files.
 
-If an error involves a CRT function, search [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) or [C++ conformance improvements in Visual Studio 2017](../overview/cpp-conformance-improvements-2017.md) to see if those topics contain any additional information. If the error is LNK2019, unresolved external, make sure the function has not been removed. Otherwise, if you are sure that the function still exists, and the calling code is correct, check to see whether your project uses `/NODEFAULTLIB`. If so you need to update the list of libraries so that the project uses the new universal (UCRT) libraries. See the section above on Library and dependencies for more information.
+If an error involves a CRT function, search [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) or [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md) to see if those topics contain any additional information. If the error is LNK2019, unresolved external, make sure the function has not been removed. Otherwise, if you are sure that the function still exists, and the calling code is correct, check to see whether your project uses `/NODEFAULTLIB`. If so you need to update the list of libraries so that the project uses the new universal (UCRT) libraries. See the section above on Library and dependencies for more information.
 
 If the error involves `printf` or `scanf`, make sure that you are not privately defining either function without including stdio.h. If so, either remove the private definitions or link to legacy\_stdio\_definitions.lib. You can set this in the **Property Pages** dialog under **Configuration Properties** > **Linker** > **Input**, in the **Additional Dependencies** property. If you are linking with Windows SDK 8.1 or earlier, then add legacy\_stdio\_definitions.lib.
 
@@ -155,7 +155,7 @@ For more information, see [Updating the Target Windows Version](porting-guide-sp
 
 ## ATL / MFC
 
-ATL and MFC are relatively stable APIs but changes are made occasionally. See the [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) for more information and [What's New for Visual C++ in Visual Studio 2017](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) and [C++ conformance improvements in Visual Studio 2017](../overview/cpp-conformance-improvements-2017.md).
+ATL and MFC are relatively stable APIs but changes are made occasionally. See the [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md) for more information and [What's New for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) and [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md).
 
 ### LNK 2005 _DllMain@12 already defined in MSVCRTD.lib
 
@@ -176,4 +176,4 @@ For more information, see [Porting from MBCS to Unicode](porting-guide-spy-incre
 ## See also
 
 [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[C++ conformance improvements in Visual Studio 2017](../overview/cpp-conformance-improvements-2017.md)
+[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)

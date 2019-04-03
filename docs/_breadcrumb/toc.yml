@@ -8,7 +8,7 @@
     items:
     - name: Documentation
       tocHref: /cpp/
-      topicHref: /cpp/visual-cpp-in-visual-studio
+      topicHref: /cpp/overview/visual-cpp-in-visual-studio
       items:
       - name: C++ Language
         tocHref: /cpp/cpp/
