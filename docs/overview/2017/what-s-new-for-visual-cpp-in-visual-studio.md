@@ -20,30 +20,30 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
 **Visual Studio 2017 version 15.5**: The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)
 
-**Visual Studio 2017 version 15.7**: The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) and [Microsoft C++ Language Conformance](visual-cpp-language-conformance.md).
+**Visual Studio 2017 version 15.7**: The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) and [Microsoft C++ Language Conformance](../visual-cpp-language-conformance.md).
 
 ### New compiler options
 
-- [/permissive-](../build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md).
+- [/permissive-](../../build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio 2017](../../cpp-conformance-improvements-2017.md).
 
-- [/diagnostics](../build/reference/diagnostics-compiler-diagnostic-options.md): Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
+- [/diagnostics](../../build/reference/diagnostics-compiler-diagnostic-options.md): Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
 
-- [/debug:fastlink](../build/reference/debug-generate-debug-info.md): Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not copying all debug information into the PDB file. The PDB file instead points to the debug information for the object and library files used to create the executable. See [Faster C++ build cycle in VS "15" with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) and [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
+- [/debug:fastlink](../../build/reference/debug-generate-debug-info.md): Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not copying all debug information into the PDB file. The PDB file instead points to the debug information for the object and library files used to create the executable. See [Faster C++ build cycle in VS "15" with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) and [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
 
-- Visual Studio 2017 allows using [/sdl](../build/reference/sdl-enable-additional-security-checks.md) with [/await](../build/reference/await-enable-coroutine-support.md). We removed the [/RTC](../build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
+- Visual Studio 2017 allows using [/sdl](../../build/reference/sdl-enable-additional-security-checks.md) with [/await](../build/reference/await-enable-coroutine-support.md). We removed the [/RTC](../../build/reference/rtc-run-time-error-checks.md) limitation with Coroutines.
 
    **Visual Studio 2017 version 15.3**:
 
-- [/std:c++14 and /std:c++latest](../build/reference/std-specify-language-standard-version.md): These compiler options enable you to opt-in to specific versions of the ISO C++ programming language in a project. Most of the new draft standard features are guarded by the **/std:c++latest** option.
+- [/std:c++14 and /std:c++latest](../../build/reference/std-specify-language-standard-version.md): These compiler options enable you to opt-in to specific versions of the ISO C++ programming language in a project. Most of the new draft standard features are guarded by the **/std:c++latest** option.
 
-- [/std:c++17](../build/reference/std-specify-language-standard-version.md) enables the set of C++17 features implemented by the compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17. To enable those features, use **/std:c++latest**.
+- [/std:c++17](../../build/reference/std-specify-language-standard-version.md) enables the set of C++17 features implemented by the compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17. To enable those features, use **/std:c++latest**.
 
 ### Codegen, security, diagnostics and versioning
 
 This release brings several improvements in optimization, code generation, toolset versioning, and diagnostics. Some notable improvements include:
 
 - Improved code generation of loops: Support for automatic vectorization of division of constant integers, better identification of memset patterns.
-- Improved code security: Improved emission of buffer overrun compiler diagnostics, and [/guard:cf](../build/reference/guard-enable-control-flow-guard.md) now guards switch statements that generate jump tables.
+- Improved code security: Improved emission of buffer overrun compiler diagnostics, and [/guard:cf](../../build/reference/guard-enable-control-flow-guard.md) now guards switch statements that generate jump tables.
 - Versioning: The value of the built-in preprocessor macro **\_MSC\_VER** is now being monotonically updated at every Visual C++ toolset update. For more information, see [Visual C++ Compiler Version](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/).
 - New toolset layout: The compiler and related build tools have a new location and directory structure on your development machine. The new layout enables side-by-side installations of multiple versions of the compiler. For more information, see [Compiler Tools Layout in Visual Studio "15"](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
 - Improved diagnostics: The output window now shows the column where an error occurs. For more information, see [C++ compiler diagnostics improvements in VS "15" Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
@@ -55,15 +55,15 @@ Additional improvements to diagnostics in the compiler. For more information, se
 
 **Visual Studio 2017 version 15.5**:
 
-Visual C++ runtime performance continues to improve due to better generated code quality. This means that you can simply recompile your code, and your app runs faster. Some of the compiler optimizations are brand new, such as the vectorization of conditional scalar stores, the combining of calls `sin(x)` and `cos(x)` into a new `sincos(x)`, and the elimination of redundant instructions from the SSA Optimizer. Other compiler optimizations are improvements to existing functionality such as vectorizer heuristics for conditional expressions, better loop optimizations, and float min/max codegen. The linker has a new and faster **/OPT:ICF** implementation which can result in up to 9% link time speedups, and there are other perf fixes in incremental linking. For more information, see [/OPT (Optimizations)](../build/reference/opt-optimizations.md) and [/INCREMENTAL (Link Incrementally)](../build/reference/incremental-link-incrementally.md).
+Visual C++ runtime performance continues to improve due to better generated code quality. This means that you can simply recompile your code, and your app runs faster. Some of the compiler optimizations are brand new, such as the vectorization of conditional scalar stores, the combining of calls `sin(x)` and `cos(x)` into a new `sincos(x)`, and the elimination of redundant instructions from the SSA Optimizer. Other compiler optimizations are improvements to existing functionality such as vectorizer heuristics for conditional expressions, better loop optimizations, and float min/max codegen. The linker has a new and faster **/OPT:ICF** implementation which can result in up to 9% link time speedups, and there are other perf fixes in incremental linking. For more information, see [/OPT (Optimizations)](../../build/reference/opt-optimizations.md) and [/INCREMENTAL (Link Incrementally)](../../build/reference/incremental-link-incrementally.md).
 
 The Microsoft C++ compiler supports Intel's AVX-512, including the Vector Length instructions that bring new functions in AVX-512 to 128- and 256-bit wide registers.
 
-The [/Zc:noexceptTypes-](../build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](../cpp-conformance-improvements-2017.md#noexcept_removal).
+The [/Zc:noexceptTypes-](../../build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](../../cpp-conformance-improvements-2017.md#noexcept_removal).
 
 **Visual Studio 2017 version 15.7**:
 
-- New compiler switch [/Qspectre ](../build/reference/qspectre.md) to help mitigate against speculative execution side-channel attacks. See [Spectre mitigations in MSVC](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc/) for more information.
+- New compiler switch [/Qspectre ](../../build/reference/qspectre.md) to help mitigate against speculative execution side-channel attacks. See [Spectre mitigations in MSVC](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc/) for more information.
 - New diagnostic warning for Spectre migitation. See [Spectre diagnostic in Visual Studio 2017 Version 15.7 Preview 4](https://blogs.msdn.microsoft.com/vcblog/2018/04/20/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/) for more information.
 - A new value for /Zc, **/Zc:__cplusplus**, enables correct reporting of the C++ standard support. For example, when the switch is set and the compiler is in /std:c++17 mode the value expands to **201703L**. See [MSVC now correctly reports __cplusplus](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/) for more information.
 
@@ -95,12 +95,12 @@ For a complete list of Standard Library improvments see the [Standard Library Fi
 
 #### C++17 features
 
-Several additional C++17 features have been implemented. For more information, see [Visual C++ Language Conformance](../cpp-conformance-improvements-2017.md#improvements_153).
+Several additional C++17 features have been implemented. For more information, see [Visual C++ Language Conformance](../cpp-conformance-improvements.md#improvements_153).
 
 #### Other new features
 
 - Implemented P0602R0 "variant and optional should propagate copy/move triviality".
-- The Standard Library now officially tolerates dynamic RTTI being disabled via the [/GR-](../build/reference/gr-enable-run-time-type-information.md) option. Both `dynamic_pointer_cast()` and `rethrow_if_nested()` inherently require `dynamic_cast`, so the Standard Library now marks them as `=delete` under **/GR-**.
+- The Standard Library now officially tolerates dynamic RTTI being disabled via the [/GR-](../../build/reference/gr-enable-run-time-type-information.md) option. Both `dynamic_pointer_cast()` and `rethrow_if_nested()` inherently require `dynamic_cast`, so the Standard Library now marks them as `=delete` under **/GR-**.
 - Even when dynamic RTTI has been disabled via **/GR-**, "static RTTI" (in the form of `typeid(SomeType)`) is still available and powers several Standard Library components. The Standard Library now supports disabling this too, via **/D\_HAS\_STATIC\_RTTI=0**. Note that this will disable `std::any`, the `target()` and `target_type()` member functions of `std::function`, and the `get_deleter()` friend member function of `std::shared_ptr` and `std::weak_ptr`.
 
 #### Correctness fixes in Visual Studio 2017 version 15.3
@@ -165,7 +165,7 @@ Several additional C++17 features have been implemented. For more information, s
 
 ### Visual Studio 2017 version 15.5
 
-Several Standard Library features have been added, deprecated or removed in accordance with the C++17 standard. For more information see [C++ conformance improvements in Visual Studio](../cpp-conformance-improvements-2017.md#improvements_155).
+Several Standard Library features have been added, deprecated or removed in accordance with the C++17 standard. For more information see [C++ conformance improvements in Visual Studio](../cpp-conformance-improvements.md#improvements_155).
 
 #### New experimental features
 
@@ -233,13 +233,13 @@ Several Standard Library features have been added, deprecated or removed in acco
 - constexpr char_traits
 - deduction guides for STL
 
-See [Visual C++ language conformance](visual-cpp-language-conformance.md) for more information.
+See [Visual C++ language conformance](../visual-cpp-language-conformance.md) for more information.
 
 ## Other Libraries
 
 ### Open source library support
 
-**Vcpkg** is an open-source command line tool that greatly simplifies the process of acquiring and building open source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg: A package manager for C++](../build/vcpkg.md).
+**Vcpkg** is an open-source command line tool that greatly simplifies the process of acquiring and building open source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg: A package manager for C++](../../build/vcpkg.md).
 
 **Visual Studio 2017 version 15.5**:
 
@@ -309,7 +309,7 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 
 ## Non-MSBuild projects with Open Folder
 
-Visual Studio 2017 introduces the **Open Folder** feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it much simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With **Open Folder** you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md).
+Visual Studio 2017 introduces the **Open Folder** feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it much simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With **Open Folder** you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects for C++](../../build/open-folder-projects-cpp.md).
 
 - Improvements to the Open Folder experience. You can customize the experience through these .json files:
   - CppProperties.json to customize the IntelliSense and browsing experience.
@@ -324,7 +324,7 @@ Visual Studio 2017 introduces the **Open Folder** feature, which enables you to 
 
 ## CMake support via Open Folder
 
-Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md). Opening CMake projects with **Open Folder** automatically configures the environment for C++ editing, building and debugging.
+Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual Studio](../../build/cmake-projects-in-visual-studio.md). Opening CMake projects with **Open Folder** automatically configures the environment for C++ editing, building and debugging.
 
 - C++ IntelliSense works without the need to create a CppProperties.json file in the root folder. Along with this, we've added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
 
@@ -336,7 +336,7 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
 **Visual Studio 2017 version 15.5**: Support added for importing existing CMake caches.
 
-**Visual Studio 2017 version 15.7**: Support added for CMake 3.11, code analysis in CMake projects, Targets view in Solution Explorer, options for cache generation, and single file compilation. For more information, see [CMake Support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) and [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md).
+**Visual Studio 2017 version 15.7**: Support added for CMake 3.11, code analysis in CMake projects, Targets view in Solution Explorer, options for cache generation, and single file compilation. For more information, see [CMake Support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) and [CMake projects in Visual Studio](../../build/cmake-projects-in-visual-studio.md).
 
 ## Windows desktop development with C++
 
@@ -360,14 +360,14 @@ Improvements have been made in cross-platform code sharing and type visualizatio
 
 - The Linux workload has added support for **rsync** as an alternative to **sftp** for synchronizing files to remote Linux machines.
 - Support is added for cross compilation targeting ARM microcontrollers. To enable this in the installation, choose the **Linux development with C++** workload and select the option for **Embedded and IoT Development**. This adds the ARM GCC cross compilation tools and Make to your installation. For more information, see [ARM GCC Cross Compilation in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2017/10/23/arm-gcc-cross-compilation-in-visual-studio/).
-- Support added for CMake. You can now work on your existing CMake code base without having to convert it to a Visual Studio project. For more information, see [Configure a Linux CMake Project](../linux/cmake-linux-project.md).
+- Support added for CMake. You can now work on your existing CMake code base without having to convert it to a Visual Studio project. For more information, see [Configure a Linux CMake Project](../../linux/cmake-linux-project.md).
 - Support added for running remote tasks. This capability allows you to run any command on a remote system that is defined in Visual Studio’s Connection Manager. Remote tasks also provide the capability to copy files to the remote system.
-For more information, see [Configure a Linux CMake Project](../linux/cmake-linux-project.md).
+For more information, see [Configure a Linux CMake Project](../../linux/cmake-linux-project.md).
 
 **Visual Studio 2017 version 15.7**:
 
 - Various improvements to Linux workload scenarios. For more information, see [Linux C++ Workload improvements to the Project System, Linux Console Window, rsync and Attach to Process](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/).
-- IntelliSense for headers on remote Linux connections. For more information, see [IntelliSense for Remote Linux Headers](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/intellisense-for-remote-linux-headers/) and [Configure a Linux CMake Project](../linux/cmake-linux-project.md).
+- IntelliSense for headers on remote Linux connections. For more information, see [IntelliSense for Remote Linux Headers](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/intellisense-for-remote-linux-headers/) and [Configure a Linux CMake Project](../../linux/cmake-linux-project.md).
 
 ## Game development with C++
 
@@ -415,7 +415,7 @@ Some warning numbers you may find in 15.3 are no longer available in 15.5. These
 
 **Visual Studio 2017 version 15.7**:
 
-- Support added for [/analyze:ruleset](../build/reference/analyze-code-analysis.md) which enables you to specify which code analysis rules to run.
+- Support added for [/analyze:ruleset](../../build/reference/analyze-code-analysis.md) which enables you to specify which code analysis rules to run.
 - Support added for additional C++ Core Guidelines rules.  For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## Unit testing
