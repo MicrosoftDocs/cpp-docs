@@ -35,7 +35,7 @@ As soon as you save the  **launch.vs.json** file, an entry is created in the **S
 
 ## Support for CMakeSettings variables
 
- **Launch.vs.json** supports variables that are declared in **CMakeSettings.json** (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app:
+ **Launch.vs.json** supports variables that are declared in **CMakeSettings.json** (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app for a local project:
 
 ```json
 {
@@ -52,6 +52,13 @@ When you run the app, the value of `currentDir` is something similar to
 ```cmd
 C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 ```
+
+The key 'cwd' sets the current directory of the launching app for a remote project. The default value is '${debugInfo.defaultWorkingDirectory}' which evaluates to 
+
+```cmd
+/var/tmp/src/bfc6f7f4-4f0f-8b35-80d7-9198fa973fb9/Linux-Debug
+```
+
 ## See also
 
 [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>
