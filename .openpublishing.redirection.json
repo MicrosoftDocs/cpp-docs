@@ -2,7 +2,7 @@
     "redirections": [
         {
             "source_path": "docs/cpp-conformance-improvements-2017.md",
-            "redirect_url": "/cpp/overview/cpp-conformance-improvements-2017",
+            "redirect_url": "/cpp/overview/cpp-conformance-improvements",
             "redirect_document_id": true
         },
 
@@ -40,6 +40,11 @@
         {
             "source_path": "docs/visual-cpp-samples.md",
             "redirect_url": "/cpp/overview//visual-cpp-samples",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/what-s-new-for-visual-cpp-in-visual-studio.md",
+            "redirect_url": "/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio",
             "redirect_document_id": true
         },
         {

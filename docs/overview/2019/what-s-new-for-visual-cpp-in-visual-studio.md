@@ -21,7 +21,7 @@ Visual Studio 2019 brings many updates and fixes to the Microsoft C++ environmen
 
 - [C++20 P1008R1 - prohibiting aggregates with user-declared constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1008r1.pdf) is also complete.
 
-- Enhanced support for C++17 features, plus experimental support for C++20 features such as modules and coroutines. For detailed information, see [C++ Conformance Improvements in Visual Studio 2019](cpp-conformance-improvements-2019.md).
+- Enhanced support for C++17 features, plus experimental support for C++20 features such as modules and coroutines. For detailed information, see [C++ Conformance Improvements in Visual Studio 2019](../cpp-conformance-improvements.md).
 
 - The C++ compiler switch `/Gm` is now deprecated. Consider disabling the `/Gm` switch in your build scripts if it's explicitly defined. However, you can also safely ignore the deprecation warning for `/Gm`, because it's not treated as an error when using "Treat warnings as errors" (`/WX`).
 
