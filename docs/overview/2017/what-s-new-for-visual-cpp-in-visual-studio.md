@@ -64,7 +64,7 @@ The [/Zc:noexceptTypes-](../../build/reference/zc-noexcepttypes.md) option can b
 **Visual Studio 2017 version 15.7**:
 
 - New compiler switch [/Qspectre ](../../build/reference/qspectre.md) to help mitigate against speculative execution side-channel attacks. See [Spectre mitigations in MSVC](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc/) for more information.
-- New diagnostic warning for Spectre migitation. See [Spectre diagnostic in Visual Studio 2017 Version 15.7 Preview 4](https://blogs.msdn.microsoft.com/vcblog/2018/04/20/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/) for more information.
+- New diagnostic warning for Spectre mitigation. See [Spectre diagnostic in Visual Studio 2017 Version 15.7 Preview 4](https://blogs.msdn.microsoft.com/vcblog/2018/04/20/spectre-diagnostic-in-visual-studio-2017-version-15-7-preview-4/) for more information.
 - A new value for /Zc, **/Zc:__cplusplus**, enables correct reporting of the C++ standard support. For example, when the switch is set and the compiler is in /std:c++17 mode the value expands to **201703L**. See [MSVC now correctly reports __cplusplus](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/msvc-now-correctly-reports-__cplusplus/) for more information.
 
 ## C++ Standard Library improvements
@@ -89,7 +89,7 @@ The [/Zc:noexceptTypes-](../../build/reference/zc-noexcepttypes.md) option can b
 - Slightly improved compiler diagnostics for incorrect `bind()` calls.
 - Improved the performance of `std::string` and `std::wstring` move constructors by more than three times.
 
-For a complete list of Standard Library improvments see the [Standard Library Fixes In VS 2017 RTM](https://blogs.msdn.microsoft.com/vcblog/2017/02/06/stl-fixes-in-vs-2017-rtm/).
+For a complete list of Standard Library improvements see the [Standard Library Fixes In VS 2017 RTM](https://blogs.msdn.microsoft.com/vcblog/2017/02/06/stl-fixes-in-vs-2017-rtm/).
 
 ### Visual Studio 2017 version 15.3
 
@@ -222,7 +222,7 @@ Several Standard Library features have been added, deprecated or removed in acco
 
 ### Visual Studio 2017 version 15.7
 
-- support for parallel algorithms is no longer experiemental
+- support for parallel algorithms is no longer experimental
 - a new implementation of \<filesystem>
 - elementary string conversions (partial)
 - std::launder()
@@ -346,7 +346,7 @@ To successfully create Win32 projects in the C++ desktop workload, you must inst
 
 **Visual Studio 2017 version 15.5**:
 
-The Visual C++ Build tools (previously available as a standalone product) are now included as a workload in the Visual Studio Installer. This workload installs only the tools required to build C++ projects without installing the Visual Studio IDE. Both the v140 and v141 toolsets are included. The v141 toolset contains the lastest improvements in Visual Studio 2017 version 15.5. For more information, see [Visual Studio Build Tools now include the VS2017 and VS2015 MSVC Toolsets](https://blogs.msdn.microsoft.com/vcblog/2017/11/02/visual-studio-build-tools-now-include-the-vs2017-and-vs2015-msvc-toolsets/).
+The Visual C++ Build tools (previously available as a standalone product) are now included as a workload in the Visual Studio Installer. This workload installs only the tools required to build C++ projects without installing the Visual Studio IDE. Both the v140 and v141 toolsets are included. The v141 toolset contains the latest improvements in Visual Studio 2017 version 15.5. For more information, see [Visual Studio Build Tools now include the VS2017 and VS2015 MSVC Toolsets](https://blogs.msdn.microsoft.com/vcblog/2017/11/02/visual-studio-build-tools-now-include-the-vs2017-and-vs2015-msvc-toolsets/).
 
 ## Linux development with C++
 
