@@ -1,5 +1,5 @@
 # [OpenMP in Visual C++](openmp-in-visual-cpp.md)
-# [New features](openmp-simd.md)
+# [SIMD Extension](openmp-simd.md)
 # [OpenMP C and C++ Application Program Interface](openmp-c-and-cpp-application-program-interface.md)
 ## [Introduction](1-introduction.md)
 ## [Directives](2-directives.md)
