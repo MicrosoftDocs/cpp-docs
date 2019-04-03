@@ -8,7 +8,7 @@ ms.author: "mblome"
 ---
 # C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#update_159)
 
-With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
+With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
 ## C++11
 
@@ -44,31 +44,31 @@ Range-based for loops no longer require that begin() and end() return objects of
 
 ### constexpr lambdas
 
-Lambda expressions may now be used in constant expressions. For more information, see [constexpr lambda expressions in C++](cpp/lambda-expressions-constexpr.md).
+Lambda expressions may now be used in constant expressions. For more information, see [constexpr lambda expressions in C++](../../cpp/lambda-expressions-constexpr.md).
 
 ### if constexpr in function templates
 
-A function template may contain `if constexpr` statements to enable compile-time branching. For more information, see [if constexpr statements](cpp/if-else-statement-cpp.md#if_constexpr).
+A function template may contain `if constexpr` statements to enable compile-time branching. For more information, see [if constexpr statements](../../cpp/if-else-statement-cpp.md#if_constexpr).
 
 ### Selection statements with initializers
 
-An `if` statement may include an initializer that introduces a variable at block scope within the statement itself. For more information, see [if statements with initializer](cpp/if-else-statement-cpp.md#if_with_init).
+An `if` statement may include an initializer that introduces a variable at block scope within the statement itself. For more information, see [if statements with initializer](../../cpp/if-else-statement-cpp.md#if_with_init).
 
 ### [[maybe_unused]] and [[nodiscard]] attributes
 
-New attributes to silence warnings when an entity is not used, or to create a warning if the return value of a function call is discarded. For more information, see [Attributes in C++](cpp/attributes.md).
+New attributes to silence warnings when an entity is not used, or to create a warning if the return value of a function call is discarded. For more information, see [Attributes in C++](../../cpp/attributes.md).
 
 ### Using attribute namespaces without repetition
 
-New syntax to enable only a single namespace identifier in an attribute list. For more information, see [Attributes in C++](cpp/attributes.md).
+New syntax to enable only a single namespace identifier in an attribute list. For more information, see [Attributes in C++](../../cpp/attributes.md).
 
 ### Structured bindings
 
-It is now possible in a single declaration to store a value with individual names for its components, when the value is an array, a std::tuple or std::pair, or has all public non-static data members. For more information, see [Structured Bindings](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) and [Returning multiple values from a function](cpp/functions-cpp.md#multi_val).
+It is now possible in a single declaration to store a value with individual names for its components, when the value is an array, a std::tuple or std::pair, or has all public non-static data members. For more information, see [Structured Bindings](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) and [Returning multiple values from a function](../../cpp/functions-cpp.md#multi_val).
 
 ### Construction rules for enum class values
 
-There is now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf) and [Enumerations](cpp/enumerations-cpp.md#no_enumerators).
+There is now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf) and [Enumerations](../../cpp/enumerations-cpp.md#no_enumerators).
 
 ### Capturing \*this by value
 
@@ -82,7 +82,7 @@ The `*this` object in a lambda expression may now be captured by value. This ena
 
 The `register` keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the register Keyword](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html).
 
-For the complete list of conformance improvements up through Visual Studio 2015 Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/library/mt723604.aspx).
+For the complete list of conformance improvements up through Visual Studio 2015 Update 3, see [Visual C++ What's New 2003 through 2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
 
 ## <a name="improvements_155"></a>  Improvements in Visual Studio 2017 version 15.5
 
@@ -90,7 +90,7 @@ Features marked with [14] are available unconditionally even in **/std:c++14** m
 
 ### New compiler switch for extern constexpr
 
-In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio 2017 version 15.5, a new compiler switch, [/Zc:externConstexpr](build/reference/zc-externconstexpr.md), enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
+In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio 2017 version 15.5, a new compiler switch, [/Zc:externConstexpr](../../build/reference/zc-externconstexpr.md), enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
 
 ### Removing Dynamic Exception Specifications
 
@@ -202,7 +202,7 @@ struct B : A {
 B b(42L); // now calls B(int)
 ```
 
-For more information, see [Constructors](cpp/constructors-cpp.md#inheriting_constructors).
+For more information, see [Constructors](../../cpp/constructors-cpp.md#inheriting_constructors).
 
 ### C++17 Extended aggregate initialization
 
@@ -910,7 +910,7 @@ The warning is excluded under **/Wv:18** and is on by default under warning leve
 
 ### std::is_convertible for array types
 
-Previous versions of the compiler gave incorrect results for [std::is_convertible](standard-library/is-convertible-class.md) for array types. This required library writers to special-case the Microsoft Visual C++ compiler when using the `std::is_convertible<...>` type trait. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
+Previous versions of the compiler gave incorrect results for [std::is_convertible](../../standard-library/is-convertible-class.md) for array types. This required library writers to special-case the Microsoft Visual C++ compiler when using the `std::is_convertible<...>` type trait. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
 
 ```cpp
 #include <type_traits>
@@ -931,7 +931,7 @@ static_assert(std::is_convertible<Array, Array&>::value, "");
 
 ### Private destructors and std::is_constructible
 
-Previous versions of the compiler ignored whether a destructor was private when deciding the result of [std::is_constructible](standard-library/is-constructible-class.md). It now considers them. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
+Previous versions of the compiler ignored whether a destructor was private when deciding the result of [std::is_constructible](../../standard-library/is-constructible-class.md). It now considers them. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
 
 ```cpp
 #include <type_traits>
@@ -1619,7 +1619,7 @@ The compiler changes in Visual Studio 2017 version 15.8 all fall under the categ
 
 ### typename on unqualified identifiers
 
-In [/permissive-](build/reference/permissive-standards-conformance.md) mode,  spurious `typename` keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 *'T': 'typename' keyword must be followed by a qualified name*:
+In [/permissive-](../../build/reference/permissive-standards-conformance.md) mode,  spurious `typename` keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 *'T': 'typename' keyword must be followed by a qualified name*:
 
 ```cpp
 template <typename T>
@@ -1630,9 +1630,9 @@ To fix the error, simply change the second line to `using  X = T;`.
 
 ### __declspec() on right side of alias template definitions
 
-[__declspec](cpp/declspec.md) is no longer permitted on the right-hand-side of an alias template definition. This was previously accepted by the compiler but was completely ignored, and would never result in a deprecation warning when the alias was used.
+[__declspec](../../cpp/declspec.md) is no longer permitted on the right-hand-side of an alias template definition. This was previously accepted by the compiler but was completely ignored, and would never result in a deprecation warning when the alias was used.
 
-The standard C++ attribute [\[\[deprecated\]\]](cpp/attributes.md) may be used instead, and will be respected as of Visual Studio 2017 version 15.6. The following code now produces C2760 *syntax error: unexpected token '__declspec', expected 'type specifier'*:
+The standard C++ attribute [\[\[deprecated\]\]](../../cpp/attributes.md) may be used instead, and will be respected as of Visual Studio 2017 version 15.6. The following code now produces C2760 *syntax error: unexpected token '__declspec', expected 'type specifier'*:
 
 ```cpp
 template <typename T>
@@ -1670,7 +1670,7 @@ struct S : Base<T> {
 
 To fix the error, change the `return` statement to `return this->base_value;`.
 
-**Note:** In the Boost python library, there has been for a long time an MSVC-specific workaround for a template forward declaration in [unwind_type.hpp](https://github.com/boostorg/python/blame/develop/include/boost/python/detail/unwind_type.hpp). Under [/permissive-](build/reference/permissive-standards-conformance.md) mode starting with Visual Studio 2017 version 15.8 (_MSC_VER=1915), the MSVC compiler does argument-dependent name lookup (ADL) correctly and is consistent with other compilers, making this workaround guard unnecessary. In order to avoid this error *C3861: 'unwind_type': identifier not found*, see [PR 229](https://github.com/boostorg/python/pull/229) in the Boostorg repo to update the header file. We have already patched the [vcpkg](vcpkg.md) Boost package, so if you get or upgrade your Boost sources from vcpkg then you do not need to apply the patch separately.
+**Note:** In the Boost python library, there has been for a long time an MSVC-specific workaround for a template forward declaration in [unwind_type.hpp](https://github.com/boostorg/python/blame/develop/include/boost/python/detail/unwind_type.hpp). Under [/permissive-](../../build/reference/permissive-standards-conformance.md) mode starting with Visual Studio 2017 version 15.8 (_MSC_VER=1915), the MSVC compiler does argument-dependent name lookup (ADL) correctly and is consistent with other compilers, making this workaround guard unnecessary. In order to avoid this error *C3861: 'unwind_type': identifier not found*, see [PR 229](https://github.com/boostorg/python/pull/229) in the Boostorg repo to update the header file. We have already patched the [vcpkg](../../build/vcpkg.md) Boost package, so if you get or upgrade your Boost sources from vcpkg then you do not need to apply the patch separately.
 
 ### forward declarations and definitions in namespace std
 
@@ -1694,7 +1694,7 @@ To fix the error, use an **include** directive rather than a forward declaration
 
 ### Constructors that delegate to themselves
 
-The C++ Standard suggests that a compiler should emit a diagnostic when a delegating constructor delegates to itself. The Microsoft C++ compiler in [/std:c++17](build/reference/std-specify-language-standard-version.md) and [/std:c++latest](build/reference/std-specify-language-standard-version.md) modes now raises C7535: *'X::X': delegating constructor calls itself*.
+The C++ Standard suggests that a compiler should emit a diagnostic when a delegating constructor delegates to itself. The Microsoft C++ compiler in [/std:c++17](../../build/reference/std-specify-language-standard-version.md) and [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) modes now raises C7535: *'X::X': delegating constructor calls itself*.
 
 Without this error, the following program will compile but will generate an infinite loop:
 
@@ -1719,9 +1719,9 @@ public:
 
 ### offsetof with constant expressions
 
-[offsetof](c-runtime-library/reference/offsetof-macro.md) has traditionally been implemented using a macro that requires a [reinterpret_cast](cpp/reinterpret-cast-operator.md). This is illegal in contexts that require a constant expression, but the Microsoft C++ compiler has traditionally allowed it. The offsetof macro that is shipped as part of the STL correctly uses a compiler intrinsic (**__builtin_offsetof**), but many people have used the macro trick to define their own **offsetof**.
+[offsetof](../../c-runtime-library/reference/offsetof-macro.md) has traditionally been implemented using a macro that requires a [reinterpret_cast](../../cpp/reinterpret-cast-operator.md). This is illegal in contexts that require a constant expression, but the Microsoft C++ compiler has traditionally allowed it. The offsetof macro that is shipped as part of the STL correctly uses a compiler intrinsic (**__builtin_offsetof**), but many people have used the macro trick to define their own **offsetof**.
 
-In Visual Studio 2017 version 15.8, the compiler constrains the areas that these reinterpret_casts can appear in the default mode in order to help code conform to standard C++ behavior. Under [/permissive-](build/reference/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an offsetof in places that require constant expressions may result in code that issues warning C4644 *usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead* or C2975 *invalid template argument, expected compile-time constant expression*.
+In Visual Studio 2017 version 15.8, the compiler constrains the areas that these reinterpret_casts can appear in the default mode in order to help code conform to standard C++ behavior. Under [/permissive-](../../build/reference/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an offsetof in places that require constant expressions may result in code that issues warning C4644 *usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead* or C2975 *invalid template argument, expected compile-time constant expression*.
 
 The following code raises C4644 in **/default** and **/std:c++17** modes, and C2975 in **/permissive-** mode:
 
