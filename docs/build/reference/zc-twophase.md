@@ -146,7 +146,7 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 
 Under **/Zc:twoPhase-** and in older compilers, the compiler only requires the `template` keyword on line 2. By default, and in conformance mode, the compiler now also requires the `template` keyword on line 4 to indicate that `T::X<T>` is a template. Look for code that is missing this keyword, and supply it to make your code conform to the standard.
 
-For more information about conformance issues, see [C++ conformance improvements in Visual Studio](../../overview/cpp-conformance-improvements-2017.md) and [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
+For more information about conformance issues, see [C++ conformance improvements in Visual Studio](../../overview/cpp-conformance-improvements.md) and [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
