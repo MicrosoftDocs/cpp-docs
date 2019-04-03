@@ -627,7 +627,7 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-**Visual Studio 2017 version 15.7 and later**: The **using** statement in **/std:C++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](../overview/cpp-conformance-improvements-2017.md#improvements_157).
+**Visual Studio 2017 version 15.7 and later**: The **using** statement in **/std:C++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](../overview/cpp-conformance-improvements.md#improvements_157).
 
 A class template can inherit all the constructors from a type argument if that type specifies a base class:
 

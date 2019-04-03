@@ -9,7 +9,7 @@ ms.author: "mblome"
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="/visualstudio/install/install-visual-studio">
+                <a href="/cpp/build/vscpp-step-0-installation">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -27,7 +27,7 @@ ms.author: "mblome"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                <a href="/cpp/get-started/tutorial-console-cpp">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -55,7 +55,7 @@ ms.author: "mblome"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>What’s new for C++ in Visual Studio 2017</h3>
+                                    <h3>What’s new for C++ in Visual Studio</h3>
                                 </div>
                             </div>
                         </div>

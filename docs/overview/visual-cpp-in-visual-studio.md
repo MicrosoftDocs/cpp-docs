@@ -19,14 +19,14 @@ Microsoft Visual C++, usually shortened to Visual C++ or MSVC, is the name for t
 
 ## What's New and Conformance History
 
-[What's New for C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-Find out what’s new in Visual Studio 2017.
+[What's New for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+Find out what’s new in Visual Studio.
 
 [What's New for C++ in Visual Studio 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
 Find out what was new in C++ for each version of Visual Studio from 2003 through 2015.
 
-[C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)<br/>
-Learn about C++ conformance improvements in Visual Studio 2017.
+[C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)<br/>
+Learn about C++ conformance improvements in Visual Studio.
 
 [Visual C++ language conformance](visual-cpp-language-conformance.md)<br/>
 A list of conformance status by feature in the MSVC C++ compiler.
