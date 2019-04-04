@@ -111,6 +111,6 @@ int main() {
 10
 ```
 
-## See Also
+## See also
 
 [Generics](generics-cpp-component-extensions.md)

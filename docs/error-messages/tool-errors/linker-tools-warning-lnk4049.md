@@ -64,7 +64,7 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [Linker Tools Warning LNK4217](../../error-messages/tool-errors/linker-tools-warning-lnk4217.md)<br/>
 [dllexport, dllimport](../../cpp/dllexport-dllimport.md)

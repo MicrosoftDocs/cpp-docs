@@ -70,6 +70,6 @@ END_PARAM_MAP()
 };
 ```
 
-## See Also
+## See also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

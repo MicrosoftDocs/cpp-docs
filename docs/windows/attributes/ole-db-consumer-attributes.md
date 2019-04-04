@@ -16,6 +16,6 @@ The OLE DB consumer attributes inject code, based on the [OLE DB Consumer Templa
 |[db_source](db-source.md)|Creates and encapsulates a connection, through a provider, to a data source.|
 |[db_table](db-table.md)|Opens an OLE DB table.|
 
-## See Also
+## See also
 
 [Attributes by Group](attributes-by-group.md)

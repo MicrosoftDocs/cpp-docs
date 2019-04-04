@@ -110,6 +110,6 @@ See [How to: Instantiate WRL Components Directly](how-to-instantiate-wrl-compone
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
 [Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

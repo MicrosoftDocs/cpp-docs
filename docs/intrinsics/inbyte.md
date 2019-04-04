@@ -42,6 +42,6 @@ The byte read from the specified port.
 
 This routine is only available as an intrinsic.
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

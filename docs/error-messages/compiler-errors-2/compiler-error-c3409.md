@@ -59,7 +59,7 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [attribute](../../windows/attributes-alphabetical-reference.md)<br/>
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)<br/>

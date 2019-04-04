@@ -122,7 +122,7 @@ void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
 
 For more information about record field exchange (RFX), see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). For more information about using parameters, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) and [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)<br/>

@@ -66,7 +66,7 @@ In a C++ project, you can assign an access key (a mnemonic that allows the user 
 
 Win32
 
-## See Also
+## See also
 
 [Menu Editor](../windows/menu-editor.md)<br/>
 

@@ -57,7 +57,7 @@ For more information, see:
 
 - [OLE DB Programming](../../data/oledb/ole-db-programming.md)
 
-## See Also
+## See also
 
 [Data Access](../data-access-in-cpp.md)<br/>
 [OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>

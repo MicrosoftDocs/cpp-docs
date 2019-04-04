@@ -34,7 +34,7 @@ The `_ReadBarrier` intrinsic limits the compiler optimizations that can remove o
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

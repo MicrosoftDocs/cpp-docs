@@ -93,6 +93,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Arrays](arrays-cpp-component-extensions.md)

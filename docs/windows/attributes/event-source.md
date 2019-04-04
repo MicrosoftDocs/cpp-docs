@@ -58,7 +58,7 @@ The **event_source** C++ attribute specifies that the class or structure to whic
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [event_receiver](event-receiver.md)<br/>

@@ -50,6 +50,6 @@ Defines a data member of the type specified by the second template parameter if 
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
 [Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

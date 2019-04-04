@@ -54,7 +54,7 @@ int main(void)
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>

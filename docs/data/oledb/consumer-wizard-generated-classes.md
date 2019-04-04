@@ -171,6 +171,6 @@ Most of the injected code is the same as or similar to the templated version. Th
 
 For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
 
-## See Also
+## See also
 
 [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

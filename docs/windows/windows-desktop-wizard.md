@@ -75,6 +75,6 @@ Once you have created a Windows desktop application, you can add generic C++ cla
 
 You can view the files the wizard creates for your project in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file, `ReadMe.txt`. For more information about the file types, [File Types Created for Visual C++ Projects](../build/reference/file-types-created-for-visual-cpp-projects.md).
 
-## See Also
+## See also
 
 [Visual C++ Project Types](../build/reference/visual-cpp-project-types.md)

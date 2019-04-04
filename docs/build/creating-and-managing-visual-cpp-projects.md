@@ -62,6 +62,6 @@ How to add any arbitrary command to the build process at specified points.
 [Create a project from existing code](how-to-create-a-cpp-project-from-existing-code.md)<br/>
 How to create a new Visual Studio project from a loose collection of source files.
 
-## See Also
+## See also
 
 [Projects and build systems](projects-and-build-systems-cpp.md)<br>

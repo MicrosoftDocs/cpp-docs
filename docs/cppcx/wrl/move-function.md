@@ -43,6 +43,6 @@ For more information, see the **Move Semantics** section of [Rvalue Reference De
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
 [Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

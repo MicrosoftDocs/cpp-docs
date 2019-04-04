@@ -153,7 +153,7 @@ Normally, when you're working in the **Menu Editor**, a menu resource is display
 
 Win32
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 [Menu Commands](../windows/menu-command-properties.md)<br/>
