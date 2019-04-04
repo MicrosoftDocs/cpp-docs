@@ -264,6 +264,6 @@ The following sections describe the Microsoft-specific intrinsic functions avail
 
 [__writemsr](../intrinsics/writemsr.md)
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

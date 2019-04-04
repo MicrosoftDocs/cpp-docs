@@ -33,7 +33,7 @@ Hints to the compiler to ignore vector dependencies for this loop. Use this in c
 
 To use the **loop** pragma, place it immediately before—not in—a loop definition. The pragma takes effect for the scope of the loop that follows it. You can apply multiple pragmas to a loop, in any order, but you must state each one in a separate pragma statement.
 
-## See Also
+## See also
 
 [Auto-Parallelization and Auto-Vectorization](../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

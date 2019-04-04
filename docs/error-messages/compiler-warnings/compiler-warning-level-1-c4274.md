@@ -18,7 +18,7 @@ The `#ident` directive, which inserts a user-specified string in the object or e
 
 - Remove the `#ident "`*string*`"` directive.
 
-## See Also
+## See also
 
 [comment (C/C++)](../../preprocessor/comment-c-cpp.md)<br/>
 [Linker Tools Warning LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)<br/>

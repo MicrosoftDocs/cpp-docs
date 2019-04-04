@@ -22,6 +22,6 @@ If an out-of-date dependency has no commands, and if [.SUFFIXES](dot-directives.
 
 [Precedence in inference rules](precedence-in-inference-rules.md)
 
-## See Also
+## See also
 
 [NMAKE Reference](nmake-reference.md)

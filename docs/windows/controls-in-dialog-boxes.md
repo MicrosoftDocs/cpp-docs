@@ -84,7 +84,7 @@ For these custom controls, you are limited to:
 
 Win32
 
-## See Also
+## See also
 
 [Dialog Editor](../windows/dialog-editor.md)<br/>
 

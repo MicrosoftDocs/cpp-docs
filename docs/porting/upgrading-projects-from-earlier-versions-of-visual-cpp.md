@@ -35,7 +35,7 @@ For information about how to update the targeted Windows versions, see [Modifyin
 [Visual C++ features deprecated in Visual Studio 2019 preview](features-deprecated-in-visual-studio.md)<br/>
 [Build System Changes](build-system-changes.md)<br/>
 
-## See Also
+## See also
 
 [What's New for Visual C++ in Visual Studio 2017](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>

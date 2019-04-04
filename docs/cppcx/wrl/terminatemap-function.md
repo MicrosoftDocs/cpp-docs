@@ -44,6 +44,6 @@ Shuts down the class factories in the specified module.
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
 [Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

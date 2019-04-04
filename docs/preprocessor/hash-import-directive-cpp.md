@@ -177,7 +177,7 @@ For more information, see [#import Attributes](../preprocessor/hash-import-attri
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)<br/>
 [Compiler COM Support](../cpp/compiler-com-support.md)

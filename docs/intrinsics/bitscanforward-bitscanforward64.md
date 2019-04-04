@@ -95,6 +95,6 @@ Mask: 12 Index: 2
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

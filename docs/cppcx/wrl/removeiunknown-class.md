@@ -50,6 +50,6 @@ By default, COM methods provide virtual `QueryInterface`, `AddRef`, and `Release
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
 [Microsoft::WRL::Details Namespace](microsoft-wrl-details-namespace.md)

@@ -47,6 +47,6 @@ The following code fragment uses the **message** pragma to display messages duri
 #pragma message("")
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

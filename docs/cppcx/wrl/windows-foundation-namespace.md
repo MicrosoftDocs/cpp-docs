@@ -31,6 +31,6 @@ namespace Windows::Foundation;
 
 **Namespace:** Windows
 
-## See Also
+## See also
 
 [Windows UWP Namespaces](/uwp/api/)

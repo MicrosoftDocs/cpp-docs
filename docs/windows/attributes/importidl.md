@@ -48,7 +48,7 @@ You may want to use **importidl**, for example, if you want to use a hand-coded 
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)<br/>

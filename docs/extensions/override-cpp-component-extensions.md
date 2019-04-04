@@ -73,7 +73,7 @@ ref struct X : public I1 {
 
 Compiler option: `/clr`
 
-## See Also
+## See also
 
 [override Specifier](../cpp/override-specifier.md)<br/>
 [Override Specifiers](override-specifiers-cpp-component-extensions.md)

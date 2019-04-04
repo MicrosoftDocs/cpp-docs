@@ -94,6 +94,6 @@ The following attributes apply to the [typedef](../../cpp/aliases-and-typedefs-c
 |[version](version-cpp.md)|Identifies a particular version among multiple versions of a class.|
 |[vi_progid](vi-progid.md)|Specifies a version-independent form of the ProgID.|
 
-## See Also
+## See also
 
 [Attributes by Usage](attributes-by-usage.md)

@@ -227,7 +227,7 @@ In the next example, the x86-Debug configuration defines its own value for the *
 }
 ```
 
-## See Also
+## See also
 
 [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>
 [Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>

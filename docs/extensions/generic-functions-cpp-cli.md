@@ -170,7 +170,7 @@ My function returned an int: 2003
 My function returned a string: Hello generic functions!
 ```
 
-## See Also
+## See also
 
 [Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)<br/>
 [Generics](generics-cpp-component-extensions.md)

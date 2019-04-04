@@ -14,7 +14,7 @@ For information on defining new custom attributes, see,
 
 - [attribute](attribute.md) (deprecated syntax).
 
-## See Also
+## See also
 
 [attribute](attribute.md)<br/>
 [Custom Attributes (C++)](custom-attributes-cpp.md)

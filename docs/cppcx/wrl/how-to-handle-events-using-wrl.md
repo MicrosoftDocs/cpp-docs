@@ -81,6 +81,6 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 `cl.exe wrl-consume-events.cpp runtimeobject.lib`
 
-## See Also
+## See also
 
 [Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)
