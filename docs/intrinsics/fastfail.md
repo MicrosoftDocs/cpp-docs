@@ -57,6 +57,6 @@ Support for the native fast fail mechanism began in Windows 8. Windows operating
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

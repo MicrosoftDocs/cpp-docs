@@ -75,7 +75,7 @@ When a wizard writes a constructor for your class, it also initializes the [m_nF
 
 For more information and examples, see [Record Field Exchange: Using RFX](../../data/odbc/record-field-exchange-using-rfx.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Declaring a Class for a Table (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>

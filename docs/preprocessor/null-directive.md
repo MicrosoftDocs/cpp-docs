@@ -13,6 +13,6 @@ The null preprocessor directive is a single number sign (**#**) alone on a line.
 #
 ```
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

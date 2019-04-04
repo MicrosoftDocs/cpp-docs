@@ -213,15 +213,15 @@ This data is broken into four sections:
 
    e. **Epilog Count** is a 5-bit field that has two meanings, depending on the state of **E** bit:
 
-      1. If **E** is set to 0: it specifies the count of the total number of exception scopes described in section 2. If more than 31 scopes exist in the function, then the **Code Words** field must be set to 0 to indicate that an extension word is required.
+      1. If **E** is set to 0: it specifies the count of the total number of epilog scopes described in section 2. If more than 31 scopes exist in the function, then the **Code Words** field must be set to 0 to indicate that an extension word is required.
 
       2. If **E** is set to 1, then this field specifies the index of the first unwind code that describes the one and only epilog.
 
-   f. **Code Words** is a 5-bit field that specifies the number of 32-bit words needed to contain all of the unwind codes in section 4. If more than 31 words are required (i.e., more than 124 unwind code bytes), then this field must be set to 0 to indicate that an extension word is required.
+   f. **Code Words** is a 5-bit field that specifies the number of 32-bit words needed to contain all of the unwind codes in section 3. If more than 31 words are required (i.e., more than 124 unwind code bytes), then this field must be set to 0 to indicate that an extension word is required.
 
    g. **Extended Epilog Count** and **Extended Code Words** are 16-bit and 8-bit fields, respectively, that provide more space for encoding an unusually large number of epilogs or an unusually large number of unwind code words. The extension word containing these fields is only present if both the **Epilog Count** and **Code Words** fields in the first header word are set to 0.
 
-1. After the exception data, if **Epilog Count** is not zero, is a list of information about epilog scopes, packed one to a word, and stored in order of increasing starting offset. Each scope contains the following bits:
+1. After the header and optional extended header described above, if **Epilog Count** is not zero, is a list of information about epilog scopes, packed one to a word, and stored in order of increasing starting offset. Each scope contains the following bits:
 
    a. **Epilog Start Offset** is an 18-bit field describing the offset in bytes, divided by 4, of the epilog relative to the start of the function
 
@@ -231,7 +231,7 @@ This data is broken into four sections:
 
 1. After the list of epilog scopes comes an array of bytes that contain unwind codes, described in detail in a later section. This array is padded at the end to the nearest full word boundary. The bytes are stored in little-endian order so that they can be directly fetched in little-endian mode.
 
-1. Finally, after the unwind code bytes (and if the **X** bit in the header was set to 1) comes the exception handler information. This consists of a single **Exception Handler RVA** providing the address of the exception handler itself, followed immediately by a variable-length amount of data required by the exception handler.
+1. Finally, after the unwind code bytes, if the **X** bit in the header was set to 1, comes the exception handler information. This consists of a single **Exception Handler RVA** providing the address of the exception handler itself, followed immediately by a variable-length amount of data required by the exception handler.
 
 The .xdata record above is designed such that it is possible to fetch the first 8 bytes and from that compute the full size of the record (minus the length of the variable-sized exception data that follows). The following code snippet computes the record size:
 

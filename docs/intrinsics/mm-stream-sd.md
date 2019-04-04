@@ -76,7 +76,7 @@ d[0] = -1, d[1] = 1
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
 [_mm_stream_ss](../intrinsics/mm-stream-ss.md)<br/>
 [_mm_store_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_sd)<br/>

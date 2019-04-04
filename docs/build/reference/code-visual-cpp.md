@@ -30,6 +30,6 @@ Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process docu
 
 See the [\<example>](example-visual-cpp.md) topic for an example of how to use the \<code> tag.
 
-## See Also
+## See also
 
 [XML Documentation](xml-documentation-visual-cpp.md)

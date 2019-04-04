@@ -31,6 +31,6 @@ The `__halt` function is equivalent to the `HLT` machine instruction, and is ava
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

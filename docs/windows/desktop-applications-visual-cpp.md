@@ -48,6 +48,6 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 |[Hilo: Developing C++ Applications for Windows 7](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
 |[Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)|Describes key features of Windows desktop programming in C++.|
 
-## See Also
+## See also
 
 [Visual C++](../overview/visual-cpp-in-visual-studio.md)

@@ -64,7 +64,7 @@ These topics assume that you understand the fundamentals of the C++ language.
    > [!NOTE]
    > Choosing the empty CLR project template automatically set the `/clr` compiler option. To verify this, right-click the project in **Solution Explorer** and clicking **Properties**, and then check the **Common Language Runtime support** option in the **General** node of **Configuration Properties**.
 
-## See Also
+## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [Projects and build systems](../build/projects-and-build-systems-cpp.md)<br/>

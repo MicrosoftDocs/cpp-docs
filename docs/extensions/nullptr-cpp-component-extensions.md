@@ -215,7 +215,7 @@ int main() {
 
 Compiler option: (Not required; supported by all code generation options, including `/ZW` and `/clr`)
 
-## See Also
+## See also
 
 [Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)<br/>
 [nullptr](../cpp/nullptr.md)

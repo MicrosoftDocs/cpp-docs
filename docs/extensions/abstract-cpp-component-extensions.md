@@ -91,6 +91,6 @@ public:
 };
 ```
 
-## See Also
+## See also
 
 [Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)

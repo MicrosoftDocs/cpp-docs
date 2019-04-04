@@ -193,7 +193,7 @@ For example, if the first `Update` call were missing from the above code, row 10
 
 Finally, one main reason to defer changes is to be able to undo them. Calling [CRowset::Undo](../../data/oledb/crowset-undo.md) rolls back the state of the local change cache to the state of the data store before any pending changes were made. It's important to note that `Undo` doesn't roll back the state of the local cache by one step (the state before only the latest change); instead, it clears the local cache for that row. Also, `Undo` affects only the current row.
 
-## See Also
+## See also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)<br/>
 [CRowset Class](../../data/oledb/crowset-class.md)<br/>

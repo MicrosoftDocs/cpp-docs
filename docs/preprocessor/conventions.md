@@ -16,6 +16,6 @@ The conventions use different font attributes for different components of the sy
 
 A colon (**:**) following a nonterminal introduces its definition. Alternative definitions are listed on separate lines.
 
-## See Also
+## See also
 
 [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

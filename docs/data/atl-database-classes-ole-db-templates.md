@@ -22,7 +22,7 @@ Note that the MFC library contains one class, [COleDBRecordView](../mfc/referenc
 
 For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming).
 
-## See Also
+## See also
 
 [Creating an OLE DB Consumer](../data/oledb/creating-an-ole-db-consumer.md)<br/>
 [Creating an OLE DB Provider](../data/oledb/creating-an-ole-db-provider.md)<br/>

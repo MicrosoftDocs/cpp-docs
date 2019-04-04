@@ -82,7 +82,7 @@ f[2] = -3, f[3] = 3
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
 [_mm_stream_sd](../intrinsics/mm-stream-sd.md)<br/>
 [_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)<br/>

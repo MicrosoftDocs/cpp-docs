@@ -76,7 +76,7 @@ This code causes `MYFLOT` and `MYDUB` and the *text* entry to be placed in the g
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)

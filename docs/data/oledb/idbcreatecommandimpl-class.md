@@ -63,7 +63,7 @@ Some parameters correspond to *OLE DB Programmer's Reference* parameters of diff
 |--------------------------------|------------------------------------------------|
 |*ppvCommand*|*ppCommand*|
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
