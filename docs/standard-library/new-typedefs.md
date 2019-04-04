@@ -20,7 +20,7 @@ typedef void (*new_handler)();
 
 ### Remarks
 
-This type of handler function is called by **operatornew** or `operator new[]` when they cannot satisfy a request for additional storage.
+This type of handler function is called by **operator new** or `operator new[]` when they cannot satisfy a request for additional storage.
 
 ### Example
 

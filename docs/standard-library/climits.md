@@ -19,6 +19,30 @@ Includes the Standard C library header \<limits.h> and adds the associated names
 
 Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
 
+## Definitions
+
+```cpp
+    #define CHAR_BIT
+    #define SCHAR_MIN
+    #define SCHAR_MAX
+    #define UCHAR_MAX
+    #define CHAR_MIN
+    #define CHAR_MAX
+    #define MB_LEN_MAX
+    #define SHRT_MIN
+    #define SHRT_MAX
+    #define USHRT_MAX
+    #define INT_MIN
+    #define INT_MAX
+    #define UINT_MAX
+    #define LONG_MIN
+    #define LONG_MAX
+    #define ULONG_MAX
+    #define LLONG_MIN
+    #define LLONG_MAX
+    #define ULLONG_MAX
+```
+
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>

@@ -14,6 +14,39 @@ Includes the Standard C library header \<stdint.h> and adds the associated names
 #include <cstdint>
 ```
 
+## Types
+
+```cpp
+    namespace std { using int8_t = signed integer type; // optional
+    using int16_t = signed integer type; // optional
+    using int32_t = signed integer type; // optional
+    using int64_t = signed integer type; // optional
+    using int_fast8_t = signed integer type;
+    using int_fast16_t = signed integer type;
+    using int_fast32_t = signed integer type;
+    using int_fast64_t = signed integer type;
+    using int_least8_t = signed integer type;
+    using int_least16_t = signed integer type;
+    using int_least32_t = signed integer type;
+    using int_least64_t = signed integer type;
+    using intmax_t = signed integer type;
+    using intptr_t = signed integer type; // optional
+    using uint8_t = unsigned integer type; // optional
+    using uint16_t = unsigned integer type; // optional
+    using uint32_t = unsigned integer type; // optional
+    using uint64_t = unsigned integer type; // optional
+    using uint_fast8_t = unsigned integer type;
+    using uint_fast16_t = unsigned integer type;
+    using uint_fast32_t = unsigned integer type;
+    using uint_fast64_t = unsigned integer type;
+    using uint_least8_t = unsigned integer type;
+    using uint_least16_t = unsigned integer type;
+    using uint_least32_t = unsigned integer type;
+    using uint_least64_t = unsigned integer type;
+    using uintmax_t = unsigned integer type;
+    using uintptr_t = unsigned integer type; // optional
+```
+
 ## Remarks
 
 Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
