@@ -41,7 +41,7 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 
 See [first_is](first-is.md) for an example of how to specify a section of an array.
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>

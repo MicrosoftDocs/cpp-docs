@@ -46,6 +46,6 @@ If a class is derived from both Windows Runtime and class COM interfaces, the cl
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## See also
 
 [Microsoft::WRL Namespace](microsoft-wrl-namespace.md)

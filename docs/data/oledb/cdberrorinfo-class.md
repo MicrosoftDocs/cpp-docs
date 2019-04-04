@@ -195,7 +195,7 @@ A standard HRESULT.
 
 Use the first form of the function if you want to check which interface to get the error information from. Otherwise, use the second form.
 
-## See Also
+## See also
 
 [DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>

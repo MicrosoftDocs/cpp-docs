@@ -103,7 +103,7 @@ The following resources don't provide a visual preview: Accelerator, Manifest, S
 
 None
 
-## See Also
+## See also
 
 [Working with Resource Files](../windows/working-with-resource-files.md)<br/>
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>

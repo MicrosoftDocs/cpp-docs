@@ -101,6 +101,6 @@ Note that [idl_quote](idl-quote.md) lets you use MIDL constructs that are not su
 |[vi_progid](vi-progid.md)|Specifies a version-independent form of the ProgID.|
 |[wire_marshal](wire-marshal.md)|Specifies a data type that will be used for transmission instead of an application-specific data type.|
 
-## See Also
+## See also
 
 [Attributes by Group](attributes-by-group.md)

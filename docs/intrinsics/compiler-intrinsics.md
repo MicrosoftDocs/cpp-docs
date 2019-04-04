@@ -34,7 +34,7 @@ The following sections list all intrinsics that are available on various archite
 
 - [Alphabetical Listing of Intrinsic Functions](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
 
-## See Also
+## See also
 
 [ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)<br/>
 [Microsoft Macro Assembler Reference](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>

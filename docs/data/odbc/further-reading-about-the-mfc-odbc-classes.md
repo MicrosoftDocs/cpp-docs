@@ -44,7 +44,7 @@ A good place to start your reading is with [Recordset (ODBC)](../../data/odbc/re
 
 In the *MFC Reference*, see [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), and [CDBException](../../mfc/reference/cdbexception-class.md).
 
-## See Also
+## See also
 
 [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)<br/>
 [Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

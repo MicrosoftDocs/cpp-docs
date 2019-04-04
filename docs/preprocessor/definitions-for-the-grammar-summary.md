@@ -16,6 +16,6 @@ An optional component is indicated by the subscripted <sub>opt</sub>. For exampl
 
 **{** *expression*<sub>opt</sub> **}**
 
-## See Also
+## See also
 
 [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

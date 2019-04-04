@@ -59,7 +59,7 @@ If you want to access the version information from within your program, use the 
 
 Win32
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 <!--

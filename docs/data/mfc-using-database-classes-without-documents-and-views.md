@@ -99,6 +99,6 @@ Because no document owns the `CRecordset` object, you probably want to store it 
 
 - Using recordset objects as you would within the context of a document or a view. Create recordsets in the member functions of your application or frame-window objects.
 
-## See Also
+## See also
 
 [MFC Database Classes](../data/mfc-database-classes-odbc-and-dao.md)

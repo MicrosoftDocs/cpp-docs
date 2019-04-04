@@ -22,6 +22,6 @@ You can retrieve the value for *macro_name* with `pop_macro`.
 
 See [pop_macro](../preprocessor/pop-macro.md) for a sample.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

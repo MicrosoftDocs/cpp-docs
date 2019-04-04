@@ -39,7 +39,7 @@ This document shows two examples. The first example uses the `Make` function to 
 
    [!code-cpp[wrl-logger-makeandinitialize#2](../codesnippet/CPP/how-to-instantiate-wrl-components-directly_4.cpp)]
 
-## See Also
+## See also
 
 [Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
 [Microsoft::WRL::Make](make-function.md)<br/>

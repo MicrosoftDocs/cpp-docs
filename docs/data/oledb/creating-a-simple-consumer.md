@@ -91,6 +91,6 @@ The wizard generates a command class and a user record class, as shown in [Consu
 > [!NOTE]
 > This line prevents the consumer application from compiling and reminds you to check your connection string for hard-coded passwords. After checking your connection string, you can remove this line of code.
 
-## See Also
+## See also
 
 [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

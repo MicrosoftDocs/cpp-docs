@@ -45,7 +45,7 @@ If you are not using the ODBC cursor library, you might encounter a problem when
 
 If you are using the ODBC cursor library with the MFC ODBC database classes and the Microsoft SQL Server ODBC driver, an **ASSERT** might occur along with a `CDBException` if a call to `CRecordset::Update` follows a call to `CRecordset::Requery`. Instead, call `CRecordset::Close` and `CRecordset::Open` rather than `CRecordset::Requery`. Another solution is not to use the ODBC cursor library, because the SQL Server and the SQL Server ODBC driver provide native support for cursors natively and the ODBC cursor library is not needed.
 
-## See Also
+## See also
 
 [SQL](../../data/odbc/sql.md)<br/>
 [SQL: Making Direct SQL Calls (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)

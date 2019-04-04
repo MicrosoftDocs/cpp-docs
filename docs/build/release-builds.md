@@ -18,6 +18,6 @@ A release build uses optimizations. When you use optimizations to create a relea
 [Checking for Memory Overwrites](checking-for-memory-overwrites.md)<br/>
 [Optimizing Your Code](optimizing-your-code.md)<br/>
 
-## See Also
+## See also
 
 [C/C++ Building Reference](reference/c-cpp-building-reference.md)

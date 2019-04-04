@@ -25,6 +25,6 @@ The `IRowset` interface actually handles data retrieval. The consumer first call
 
 The *RowsetInterface* parameter allows you to also use the `IRowsetLocate` or `IRowsetScroll` interface. The `IRowsetLocate` and `IRowsetScroll` interfaces both inherit from `IRowset`. Therefore, the OLE DB provider templates must provide special handling for these interfaces. If you want to use either of these interfaces, you need to use this parameter.
 
-## See Also
+## See also
 
 [Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)<br/>

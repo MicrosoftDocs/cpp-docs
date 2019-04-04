@@ -136,7 +136,7 @@ An understanding of the fundamentals of the C++ language.
     a / b = 0.0747475
     ```
 
-## See Also
+## See also
 
 [Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 [Desktop Applications (Visual C++)](../windows/desktop-applications-visual-cpp.md)<br/>

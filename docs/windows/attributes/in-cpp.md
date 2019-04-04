@@ -36,7 +36,7 @@ See [bindable](bindable.md) for an example of how to use **in**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Parameter Attributes](parameter-attributes.md)<br/>

@@ -151,7 +151,7 @@ If you have installed CMake from the Visual Studio Installer, you can run it fro
 
 1. Run CMake to build/configure your app.
   
-## See Also
+## See also
 
 [Tutorial: Create C++ cross-platform projects in Visual Studio](get-started-linux-cmake.md)<br/>
 [Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>

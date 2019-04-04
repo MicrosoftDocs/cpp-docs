@@ -15,6 +15,6 @@ The *name* data member that is declared with the [literal](../../extensions/lite
 
 1. Check that the declared literal data member is a supported type.
 
-## See Also
+## See also
 
 [literal](../../extensions/literal-cpp-component-extensions.md)

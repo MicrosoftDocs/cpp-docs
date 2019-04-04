@@ -14,6 +14,6 @@ The example is presented in two parts:
 
 - The second part shows how to [enhance the simple read-only provider](../../data/oledb/enhancing-the-simple-read-only-provider.md) by adding the `IRowsetLocate` interface.
 
-## See Also
+## See also
 
 [Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)<br/>

@@ -24,6 +24,6 @@ Using a [CRecordset](../../mfc/reference/crecordset-class.md) object at run time
 
 When you finish using the recordset object, you close and destroy it. For more information about recordsets, see [Recordset (ODBC)](../../data/odbc/recordset-odbc.md).
 
-## See Also
+## See also
 
 [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)

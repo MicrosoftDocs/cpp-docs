@@ -26,6 +26,6 @@ Other features you can use in a makefile are [wildcards](wildcards-and-nmake.md)
 
 For a sample, see [Sample Makefile](sample-makefile.md).
 
-## See Also
+## See also
 
 [NMAKE Reference](nmake-reference.md)

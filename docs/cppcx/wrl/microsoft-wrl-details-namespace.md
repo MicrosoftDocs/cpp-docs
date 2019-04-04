@@ -77,7 +77,7 @@ namespace Microsoft::WRL::Details;
 
 **Namespace:** Microsoft::WRL::Details
 
-## See Also
+## See also
 
 [Microsoft::WRL Namespace](microsoft-wrl-namespace.md)<br/>
 [Microsoft::WRL::Wrappers Namespace](microsoft-wrl-wrappers-namespace.md)

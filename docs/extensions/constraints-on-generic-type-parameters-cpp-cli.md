@@ -189,6 +189,6 @@ where A : C
 ref struct SampleClass {};
 ```
 
-## See Also
+## See also
 
 [Generics](generics-cpp-component-extensions.md)

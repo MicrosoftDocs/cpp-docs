@@ -91,7 +91,7 @@ return _hr; \
 
 **End Microsoft specific**
 
-## See Also
+## See also
 
 [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [C Pragmas](../c-language/c-pragmas.md)<br/>

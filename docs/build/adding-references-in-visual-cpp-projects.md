@@ -155,7 +155,7 @@ The following properties are found on COM and .NET assembly references, and cann
 
    Displays the version of the referenced assembly.
 
-## See Also
+## See also
 
 [C++ project property page reference](reference/property-pages-visual-cpp.md)<br>
 [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md)
