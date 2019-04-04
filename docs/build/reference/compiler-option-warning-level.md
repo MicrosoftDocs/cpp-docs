@@ -57,7 +57,7 @@ The [build errors documentation](../../error-messages/compiler-errors-1/c-cpp-bu
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. To set the **/W0**, **/W1**, **/W2**, **/W3**, **/W4**, **/Wall**m **/Wv**, **/WX** or **/WX-** options, select the **Configuration Properties** > **C/C++** > **General** property page.
+1. To set the **/W0**, **/W1**, **/W2**, **/W3**, **/W4**, **/Wall**, **/Wv**, **/WX** or **/WX-** options, select the **Configuration Properties** > **C/C++** > **General** property page.
 
    - To set the **/W0**, **/W1**, **/W2**, **/W3**, **/W4**, or **/Wall** options, modify the **Warning Level** property.
 
