@@ -1,0 +1,82 @@
+---
+title: "&lt;string_view&gt; typedefs"
+ms.date: "11/04/2016"
+f1_keywords: ["string_view/std::string_view", "string_view/std::u16string_view", "string_view/std::u32string_view", "string_view/std::wstring_view"]
+---
+# &lt;string_view&gt; typedefs
+
+||||
+|-|-|-|
+|[string_view](#string_view)|[u16string_view](#u16string_view)|[u32string_view](#u32string_view)|
+|[wstring_view](#wstring_view)|
+
+## <a name="string_view"></a> string_view
+
+A type that describes a specialization of the template class [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type **string_view**.
+
+```cpp
+typedef basic_string_view<char, char_traits<char>> string_view;
+```
+
+### Remarks
+
+The following are equivalent declarations:
+
+```cpp
+string_view str("");
+
+basic_string_view<char> str("");
+```
+
+For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
+
+## <a name="u16string_view"></a> u16string_view
+
+A type that describes a specialization of the template class [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type `char16_t`.
+
+```cpp
+typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16string;
+```
+
+### Remarks
+
+For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
+
+## <a name="u32string_view"></a> u32string_view
+
+A type that describes a specialization of the template class [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type `char32_t`.
+
+```cpp
+typedef basic_string<char32_t, char_traits<char32_t>> u32string;
+```
+
+### Remarks
+
+For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
+
+## <a name="wstring_view"></a>  wstring_view
+
+A type that describes a specialization of the template class [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type **wchar_t**.
+
+```cpp
+typedef basic_string_view<wchar_t, char_traits<wchar_t>> wstring;
+```
+
+### Remarks
+
+The following are equivalent declarations:
+
+```cpp
+wstring wstr(L"");
+
+basic_string_view<wchar_t> wstr(L"");
+```
+
+For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
+
+> [!NOTE]
+> The size of **wchar_t** is implementation-defined. If your code depends on **wchar_t** to be a certain size, check your platform's implementation (for example, with `sizeof(wchar_t)`). If you need a string_view character type with a width that is guaranteed to remain the same on all platforms, use [string_view](../standard-library/string-view-typedefs.md#string_view), [u16string_view](../standard-library/string-view-typedefs.md#u16string_view), or [u32string_view](../standard-library/string-view-typedefs.md#u32string_view).
+
+## See also
+
+[\<string_view>](../standard-library/string-view.md)<br/>
