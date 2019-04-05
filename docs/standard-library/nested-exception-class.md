@@ -5,7 +5,7 @@ f1_keywords: ["exception/std::bad_exception"]
 helpviewer_keywords: ["bad_exception class"]
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
 ---
-# bad_exception Class
+# nested_exception Class
 
 The class describes an exception that can be thrown from an unexpected handler.
 
@@ -13,22 +13,17 @@ The class describes an exception that can be thrown from an unexpected handler.
 
 ```cpp
 class nested_exception {
-    public: nested_exception();
-    nested_exception(const nested_exception&) noexcept = default;
-    nested_exception& operator=(const nested_exception&) noexcept = default;
-    virtual ~nested_exception() = default; // access functions [[noreturn]]
-    void rethrow_nested() const;
-    exception_ptr nested_ptr() const noexcept; 
+    public:
+        nested_exception();
+        nested_exception(const nested_exception&) = default;
+        nested_exception& operator=(const nested_exception&) = default;
+        virtual ~nested_exception() = default; // access functions
+        [[noreturn]] void rethrow_nested() const;
+        exception_ptr nested_ptr() const;
 };
 
-template<class T> [[noreturn]] void throw_with_nested(T&& t); template <class E> void rethrow_if_nested(const E& e);
-
-
-template<class T> [[noreturn]] void throw_with_nested(T&& t); template <class E> void rethrow_if_nested(const E& e);
-} 
-
-    void rethrow_nested() const;
-
+template<class T> [[noreturn]] void throw_with_nested(T&& t);
+template <class E> void rethrow_if_nested(const E& e);
 ```
 
 ## Remarks
