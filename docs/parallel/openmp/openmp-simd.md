@@ -6,18 +6,18 @@ helpviewer_keywords: ["SIMD", "OpenMP in Visual C++, new features", "explicit pa
 
 # SIMD Extension
 
-Visual C++ currently supports the OpenMP 2.0 standard, however Visual Studio 2019 also offers SIMD functionality.
+Visual C++ currently supports the OpenMP 2.0 standard, however Visual Studio 2019 also now offers SIMD functionality.
 
 > [!NOTE]
-> To use SIMD, compile with `-openmp:experimental`. This switch enables additional OpenMP features not available with the `-openmp` switch.
+> To use SIMD, compile with the `-openmp:experimental` switch that enables additional OpenMP features not available when using the `-openmp` switch.
 >
-> The `-openmp:experimental` switch also subsumes `-openmp`, meaning all OpenMP 2.0 features are included with its use.
+> The `-openmp:experimental` switch subsumes `-openmp`, meaning all OpenMP 2.0 features are included in its use.
 
 For more information, see [SIMD Extension to C++ OpenMP in Visual Studio](https://devblogs.microsoft.com/cppblog/simd-extension-to-c-openmp-in-visual-studio/).
 
 ## OpenMP SIMD in Visual C++
 
-OpenMP SIMD, introduced in the OpenMP 4.0 standard, targets making vector-friendly loops. By using the `simd` directive before a loop, the compiler can ignore vector dependencies and make the loop as vector-friendly as possible. The compiler respects users’ intention to have multiple loop iterations executed simultaneously.
+OpenMP SIMD, introduced in the OpenMP 4.0 standard, targets making vector-friendly loops. By using the `simd` directive before a loop, the compiler can ignore vector dependencies, make the loop as vector-friendly as possible, and respect the users’ intention to have multiple loop iterations executed simultaneously.
 
 ```c
     #pragma omp simd
@@ -29,7 +29,7 @@ OpenMP SIMD, introduced in the OpenMP 4.0 standard, targets making vector-friend
     }
 ```
 
-Visual C++ already provides similar non-OpenMP loop pragmas like `#pragma vector` and `#pragma ivdep`, however with OpenMP SIMD, the compiler can do more, like:
+Visual C++ provides similar non-OpenMP loop pragmas like `#pragma vector` and `#pragma ivdep`, however with OpenMP SIMD, the compiler can do more, like:
 
 - Always allowed to ignore present vector dependencies.
 - `/fp:fast` is enabled within the loop.
@@ -94,12 +94,11 @@ The OpenMP SIMD directive can also take the following clauses to enhance vector-
 >    warning C4849: OpenMP 'simdlen' clause ignored in 'simd' directive
 > ```
 
-
 ### Example
   
 The OpenMP SIMD directive provides users a way to dictate the compiler make loops vector-friendly. By annotating a loop with the OpenMP SIMD directive, users intend to have multiple loop iterations executed simultaneously.
 
-For example, the following loop is annotated with the OpenMP SIMD directive. There's no perfect parallelism among loop iterations since there is a backward dependency from a[i] to a[i-1], but because of the SIMD directive the compiler is still allowed to pack consecutive iterations of the first statement into one vector instruction and run them in parallel.
+For example, the following loop is annotated with the OpenMP SIMD directive. There's no perfect parallelism among loop iterations since there's a backward dependency from a[i] to a[i-1], but because of the SIMD directive the compiler is still allowed to pack consecutive iterations of the first statement into one vector instruction and run them in parallel.
 
 ```c
     #pragma omp simd
@@ -125,7 +124,7 @@ Therefore, the following transformed vector form of the loop is **legal** becaus
     }
 ```
 
-It's **not legal** to move the memory reference `*c` out of the loop if it may alias with `a[i]` or `b[i]`. It's also not legal to reorder the statements inside one original iteration if it breaks the sequential dependency. For example, the following transformed loop is not legal:
+It's **not legal** to move the memory reference `*c` out of the loop if it may alias with `a[i]` or `b[i]`. It's also not legal to reorder the statements inside one original iteration if it breaks the sequential dependency. For example, the following transformed loop isn't legal:
 
 ```c
     c = b;
