@@ -48,8 +48,9 @@ Some of the functions declared in this header are replaceable. The implementatio
 |[operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)|The function called by a new expression to allocate storage for an array of objects.|
 
 ### Enums
+
 |-|-|
-|[align_val_t](../standard-library/new-operators.md
+|[align_val_t](../standard-library/new-operators.md#op_align_val_t)||
 
 ### Classes
 

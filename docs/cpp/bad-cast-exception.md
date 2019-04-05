@@ -26,6 +26,9 @@ public:
    bad_cast(const char * _Message = "bad cast");
    bad_cast(const bad_cast &);
    virtual ~bad_cast();
+
+   bad_cast& operator=(const bad_cast&) noexcept;
+   const char* what() const noexcept override;
 };
 ```
 

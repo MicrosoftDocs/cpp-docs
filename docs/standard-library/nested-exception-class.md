@@ -1,5 +1,5 @@
 ---
-title: "bad_exception Class"
+title: "nested_exception Class"
 ms.date: "11/04/2016"
 f1_keywords: ["exception/std::bad_exception"]
 helpviewer_keywords: ["bad_exception class"]
@@ -12,12 +12,23 @@ The class describes an exception that can be thrown from an unexpected handler.
 ## Syntax
 
 ```cpp
-class bad_exception    : public exception {};
+class nested_exception {
+    public: nested_exception();
+    nested_exception(const nested_exception&) noexcept = default;
+    nested_exception& operator=(const nested_exception&) noexcept = default;
+    virtual ~nested_exception() = default; // access functions [[noreturn]]
+    void rethrow_nested() const;
+    exception_ptr nested_ptr() const noexcept; 
+};
 
-bad_exception();
-bad_exception(const bad_exception&);
-bad_exception& operator=(const bad_exception&);
-const char* what() const override;
+template<class T> [[noreturn]] void throw_with_nested(T&& t); template <class E> void rethrow_if_nested(const E& e);
+
+
+template<class T> [[noreturn]] void throw_with_nested(T&& t); template <class E> void rethrow_if_nested(const E& e);
+} 
+
+    void rethrow_nested() const;
+
 ```
 
 ## Remarks

@@ -44,16 +44,18 @@ The third function is called by a placement delete expression corresponding to a
 
 See [operator new](../standard-library/new-operators.md#op_new) for an example that use **operator delete**.
 
-## <a name="op_delete_arr"></a> operator delete[]
+## <a name="op_delete_arr"></a>  operator delete[]
 
 The function called by a delete expression to deallocate storage for an array of objects.
 
 ```cpp
 void operator delete[](void* ptr) throw();
 
-void operator delete[](void *, void*) throw();
+void operator delete[](void *,
+    void*) throw();
 
-void operator delete[](void* ptr, const std::nothrow_t&) throw();
+void operator delete[](void* ptr,
+    const std::nothrow_t&) throw();
 ```
 
 ### Parameters
@@ -127,7 +129,7 @@ The third function is called by a placement **new** expression, of the form **ne
 
 To free storage allocated by **operator new**, call [operator delete](../standard-library/new-operators.md#op_delete).
 
-For information on throwing or non-throwing behavior of new, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
+For information on throwing or nonthrowing behavior of new, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
 
 ### Example
 

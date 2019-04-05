@@ -10,11 +10,11 @@ helpviewer_keywords: ["std::current_exception [C++]", "std::get_terminate [C++]"
 ||||
 |-|-|-|
 |[current_exception](#current_exception)|[get_terminate](#get_terminate)|[get_unexpected](#get_unexpected)|
-|[make_exception_ptr](#make_exception_ptr)|[rethrow_exception](#rethrow_exception)|[set_terminate](#set_terminate)|
-|[set_unexpected](#set_unexpected)|[terminate](#terminate)|[uncaught_exception](#uncaught_exception)|
-|[unexpected](#unexpected)|
+|[make_exception_ptr](#make_exception_ptr)|[rethrow_exception](#rethrow_exception)|[rethrow_if_nested](#rethrow_if_nested)|
+|[set_terminate](#set_terminate)|[set_unexpected](#set_unexpected)|][throw_if_nested](#throw_if_nested)|
+|[terminate](#terminate)|[uncaught_exception](#uncaught_exception)|[unexpected](#unexpected)|
 
-## <a name="current_exception"></a>  current_exception
+## <a name="current_exception"></a> current_exception
 
 Obtains a smart pointer to the current exception.
 
@@ -142,7 +142,14 @@ Obtains the current `unexpected_handler` function.
 unexpected_handler get_unexpected();
 ```
 
-## <a name="set_unexpected"></a>  set_unexpected
+## <a name="rethrow_if_nested"> rethrow_if_nested
+
+```cpp
+template <class E> 
+void rethrow_if_nested(const E& e);
+```
+
+## <a name="set_unexpected"></a> set_unexpected
 
 Establishes a new `unexpected_handler` to be when an unexpected exception is encountered.
 
@@ -207,6 +214,13 @@ A terminate handler may not return to its caller. At program startup, the termin
 ### Example
 
 See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of `terminate`.
+
+## <a name="throw_if_nested"> throw_if_nested
+
+```cpp
+template <class T> [[noreturn]]
+void throw_with_nested(T&& t);
+```
 
 ## <a name="uncaught_exception"></a>  uncaught_exception
 
