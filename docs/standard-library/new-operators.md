@@ -1,19 +1,27 @@
 ---
-title: "&lt;new&gt; operators"
+title: "&lt;new&gt; operators and enums"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::operator delete", "new/std::operator new"]
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 ---
-# &lt;new&gt; operators
+# &lt;new&gt; operators and enums
 
 ||||
 |-|-|-|
-|[operator delete](#op_delete)|[operator delete[]](#op_delete_arr)|[operator new](#op_new)|
-|[operator new[]](#op_new_arr)|
+|[enum align_val_t](#op_align_val_t)|[operator delete](#op_delete)|[operator delete[]](#op_delete_arr)|
+|[operator new](#op_new)|[operator new[]](#op_new_arr)||
 
-## <a name="op_delete"></a>  operator delete
 
-The function called by a delete expression to deallocate storage for individual of objects.
+
+## <a name="op_align_val_t"></a> enum align_val_t
+
+```cpp
+    enum class align_val_t : size_t {};
+```
+
+## <a name="op_delete"></a> operator delete
+
+The function called by a delete expression to de-allocate storage for individual of objects.
 
 ```cpp
 void operator delete(void* ptr) throw();
@@ -49,11 +57,11 @@ See [operator new](../standard-library/new-operators.md#op_new) for an example t
 The function called by a delete expression to deallocate storage for an array of objects.
 
 ```cpp
-void operator delete[](void* ptr) throw();
-
-void operator delete[](void *, void*) throw();
-
-void operator delete[](void* ptr, const std::nothrow_t&) throw();
+    void operator delete[](void* ptr) throw();
+    
+    void operator delete[](void *, void*) throw();
+    
+    void operator delete[](void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### Parameters
