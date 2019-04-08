@@ -1,6 +1,6 @@
 ---
 title: "/Z7, /Zi, /ZI (Debug Information Format)"
-ms.date: "02/22/2018"
+ms.date: "04/08/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.DebugInformationFormat", "/ZI", "/Zi", "/Z7", "VC.Project.VCCLWCECompilerTool.DebugInformationFormat"]
 helpviewer_keywords: ["C7 compatible compiler option [C++]", "Debug Information Format compiler option", "ZI compiler option", "-Zi compiler option [C++]", "/ZI compiler option [C++]", "Z7 compiler option [C++]", "debugging [C++], debug information files", "Zi compiler option [C++]", "/Zi compiler option [C++]", "program database compiler option [C++]", "full symbolic debugging information", "/Z7 compiler option [C++]", "line numbers only compiler option [C++]", "cl.exe compiler, debugging options", "-Z7 compiler option [C++]"]
 ---
@@ -26,7 +26,7 @@ The **/Z7** option produces object files that also contain full symbolic debuggi
 
 For distributors of debug versions of third-party libraries, there is an advantage to not having a PDB file. However, the object files for any precompiled headers are necessary during the library link phase, and for debugging. If there is only type information (and no code) in the .pch object file, you must also use the [/Yl (Inject PCH Reference for Debug Library)](yl-inject-pch-reference-for-debug-library.md) option, which is enabled by default, when you build the library.
 
-The [/Gm (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option is not available when **/Z7** is specified.
+The deprecated [/Gm (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option is not available when **/Z7** is specified.
 
 ### /Zi
 

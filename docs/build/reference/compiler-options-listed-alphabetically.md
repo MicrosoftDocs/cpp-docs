@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed Alphabetically"
-ms.date: "08/20/2018"
+ms.date: "04/08/2019"
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler Options Listed Alphabetically
@@ -53,7 +53,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/GH](gh-enable-pexit-hook-function.md)|Calls hook function `_pexit`.|
 |[/Gh](gh-enable-penter-hook-function.md)|Calls hook function `_penter`.|
 |[/GL](gl-whole-program-optimization.md)|Enables whole program optimization.|
-|[/Gm](gm-enable-minimal-rebuild.md)|Enables minimal rebuild.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
 |[/GR](gr-enable-run-time-type-information.md)|Enables run-time type information (RTTI).|
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|Uses the `__fastcall` calling convention (x86 only).|
 |[/GS](gs-buffer-security-check.md)|Buffers security check.|
