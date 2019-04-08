@@ -13,6 +13,20 @@ Includes the Standard C library header \<setjmp.h> and adds the associated names
 
 ```cpp
 #include <csetjmp>
+
+using jmp_buf = see below;
+```
+
+## Functions
+
+```cpp
+[[noreturn]] void longjmp(jmp_buf env, int val);
+```
+
+## Definitions
+
+```cpp
+#define setjmp(env)
 ```
 
 ## Remarks

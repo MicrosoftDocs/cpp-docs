@@ -19,6 +19,12 @@ Includes the Standard C library header \<assert.h> and adds the associated names
 
 Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
 
+## Definitions
+
+```cpp
+    #define assert(E)
+```
+
 ## See also
 
 [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>

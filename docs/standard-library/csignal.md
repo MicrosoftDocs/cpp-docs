@@ -13,6 +13,31 @@ Includes the Standard C library header \<signal.h> and adds the associated names
 
 ```cpp
 #include <csignal>
+
+using sig_atomic_t = see below;
+
+extern using signal-handler = void(int);
+```
+
+## Functions
+
+```cpp
+signal-handler* signal(int sig, signal-handler* func);
+int raise(int sig);
+```
+
+## Definitions
+
+```cpp
+#define SIG_DFL
+#define SIG_ERR
+#define SIG_IGN
+#define SIGABRT
+#define SIGFPE
+#define SIGILL
+#define SIGINT
+#define SIGSEGV
+#define SIGTERM
 ```
 
 ## Remarks

@@ -13,11 +13,22 @@ Includes the Standard C library header \<stdarg.h> and adds the associated names
 
 ```cpp
 #include <cstdarg>
+
+namespace std { using va_list = see below; }
 ```
 
 ## Remarks
 
 Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
+
+## Definitions
+
+```cpp
+    #define va_arg(V, P)
+    #define va_copy(VDST, VSRC)
+    #define va_end(V)
+    #define va_start(V, P)
+```
 
 ## See also
 

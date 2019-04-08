@@ -13,6 +13,10 @@ Represents the abstract, common base for objects that describes a category of er
 
 ```cpp
 class error_category;
+
+constexpr error_category() noexcept;
+virtual ~error_category();
+error_category(const error_category&) = delete
 ```
 
 ## Remarks
@@ -31,13 +35,16 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 |-|-|
 |[default_error_condition](#default_error_condition)|Stores the error code value for an error condition object.|
 |[equivalent](#equivalent)|Returns a value that specifies whether error objects are equivalent.|
+|[generic_category](#generic)||
 |[message](#message)|Returns the name of the specified error code.|
 |[name](#name)|Returns the name of the category.|
+|[system_category](#system)||
 
 ### Operators
 
 |Operator|Description|
 |-|-|
+|[operator=](#op_as)||
 |[operator==](#op_eq_eq)|Tests for equality between `error_category` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_category` objects.|
 |[operator<](#op_lt)|Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.|
@@ -98,6 +105,12 @@ The first member function returns `*this == _Cond.category() && _Cond.value() ==
 
 The second member function returns `*this == _Code.category() && _Code.value() == _Errval`.
 
+## <a name="generic"></a> generic_category
+
+```cpp
+    const error_category& generic_category();
+```
+
 ## <a name="message"></a>  error_category::message
 
 Returns the name of the specified error code.
@@ -130,7 +143,12 @@ virtual const char *name() const = 0;
 
 Returns the name of the category as a null-terminated byte string.
 
-### Remarks
+## <a name="op_as"></a>  error_category::operator=
+
+```cpp
+    error_category& operator=(const error_category&) = delete;
+```
+
 
 ## <a name="op_eq_eq"></a>  error_category::operator==
 
@@ -197,6 +215,12 @@ bool operator<(const error_category& right) const;
 ### Remarks
 
 The member operator returns `this < &right`.
+
+## <a name="system"></a> system_category
+
+```cpp
+    const error_category& system_category();
+```
 
 ## <a name="value_type"></a>  error_category::value_type
 
