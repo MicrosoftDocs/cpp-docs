@@ -11,11 +11,9 @@ Controls the collection of browse information or dependency information from wit
 
 ## Syntax
 
-```
-#pragma component( browser, { on | off }[, references [, name ]] )
-#pragma component( minrebuild, on | off )
-#pragma component( mintypeinfo, on | off )
-```
+> **#pragma component( browser,** { **on** | **off** }[**,** **references** [**,** *name* ]] **)** \
+> **#pragma component( minrebuild, on** | **off )** \
+> **#pragma component( mintypeinfo, on** | **off )**
 
 ## Remarks
 
