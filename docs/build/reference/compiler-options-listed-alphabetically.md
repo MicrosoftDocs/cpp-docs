@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed Alphabetically"
-ms.date: "08/20/2018"
+ms.date: "04/08/2019"
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler Options Listed Alphabetically
@@ -38,7 +38,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Fe](fe-name-exe-file.md)|Renames the executable file.|
 |[/FI](fi-name-forced-include-file.md)|Preprocesses the specified include file.|
 |[/Fi](fi-preprocess-output-file-name.md)|Sets the preprocessed output file name.|
-|[/Fm](fm-name-mapfile.md)|Creates a mapfile.|
+|[/Fm](fm-name-mapfile.md)|Creates a map file.|
 |[/Fo](fo-object-file-name.md)|Creates an object file.|
 |[/fp](fp-specify-floating-point-behavior.md)|Specify floating-point behavior.|
 |[/Fp](fp-name-dot-pch-file.md)|Specifies a precompiled header file name.|
@@ -53,7 +53,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/GH](gh-enable-pexit-hook-function.md)|Calls hook function `_pexit`.|
 |[/Gh](gh-enable-penter-hook-function.md)|Calls hook function `_penter`.|
 |[/GL](gl-whole-program-optimization.md)|Enables whole program optimization.|
-|[/Gm](gm-enable-minimal-rebuild.md)|Enables minimal rebuild.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
 |[/GR](gr-enable-run-time-type-information.md)|Enables run-time type information (RTTI).|
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|Uses the `__fastcall` calling convention (x86 only).|
 |[/GS](gs-buffer-security-check.md)|Buffers security check.|
@@ -69,7 +69,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
 |[/HELP](help-compiler-command-line-help.md)|Lists the compiler options.|
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile).|
-|[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hotpatchable image.|
+|[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hot-patchable image.|
 |[/I](i-additional-include-directories.md)|Searches a directory for include files.|
 |[/J](j-default-char-type-is-unsigned.md)|Changes the default `char` type.|
 |[/JMC](jmc.md)|Supports native C++ Just My Code debugging.|
@@ -90,7 +90,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Od](od-disable-debug.md)|Disables optimization.|
 |[/Og](og-global-optimizations.md)|Deprecated. Uses global optimizations.|
 |[/Oi](oi-generate-intrinsic-functions.md)|Generates intrinsic functions.|
-|[/openmp](openmp-enable-openmp-2-0-support.md)|Enables [#pragma omp](../../preprocessor/omp.md) in source code.|
+|[/openmp](openmp-enable-openmp-2-0-support.md)|Enables the [`#pragma omp`](../../preprocessor/omp.md) directive in source code.|
 |[/Os](os-ot-favor-small-code-favor-fast-code.md)|Favors small code.|
 |[/Ot](os-ot-favor-small-code-favor-fast-code.md)|Favors fast code.|
 |[/Ox](ox-full-optimization.md)|Uses maximum optimization (/Ob2gity /Gs).|
