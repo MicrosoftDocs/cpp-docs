@@ -17,17 +17,17 @@ Warning LNK4049 is a more general version of [Linker Tools Warning LNK4217](link
 
 The common cases where LNK4049 is generated instead of LNK4217 are:
 
-- Performing incremental linking by using the [/INCREMENTAL](../../build/reference/incremental-link-incrementally.md) option.
+- When using the [/INCREMENTAL](../../build/reference/incremental-link-incrementally.md) option.
 
-- Performing whole-program optimization by using the [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) option.
+- When using the [/LTCG](../../build/reference/ltcg-link-time-code-generation.md) option.
 
-To resolve LNK4049, try one of the following:
+To resolve LNK4049, try one of the following procedures:
 
-- Remove the `__declspec(dllimport)` name declaration from the forward declaration of the symbol which triggered LNK4049. You can search for symbols within a binary image by using the **DUMPBIN** utility. The **DUMPBIN /SYMBOLS** switch displays the COFF symbol table of the image. For more information on the **DUMPBIN** utility, see [DUMPBIN Reference](../../build/reference/dumpbin-reference.md).
+- Remove the `__declspec(dllimport)` modifier from the forward declaration of the symbol that triggered LNK4049. You can search for symbols within a binary image by using the **DUMPBIN** utility. The **DUMPBIN /SYMBOLS** switch displays the COFF symbol table of the image. For more information on the **DUMPBIN** utility, see [DUMPBIN Reference](../../build/reference/dumpbin-reference.md).
 
-- Temporarily disable incremental linking and whole-program optimization. Recompiling the application will generate Warning LNK4217, which will include the name of the function from which the imported symbol was referenced. Remove the `__declspec(dllimport)` declaration from the imported symbol and re-enable incremental linking or whole-program optimization as required.
+- Temporarily disable incremental linking and whole-program optimization. When recompiled, the application generates Warning LNK4217, which includes the name of the function which references the imported symbol. Remove the `__declspec(dllimport)` declaration from the imported symbol and re-enable incremental linking or whole-program optimization as required.
 
-Although the final generated code will behave correctly, the code generated to call the imported function is less efficient than calling the function directly. This warning doesn't appear when you compile by using the option [/clr](../../build/reference/clr-common-language-runtime-compilation.md).
+Although the final generated code behaves correctly, the code generated to call the imported function is less efficient than calling the function directly. This warning doesn't appear when you compile by using the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) option.
 
 For more information on import and export data declarations, see [dllexport, dllimport](../../cpp/dllexport-dllimport.md).
 
@@ -45,7 +45,7 @@ __declspec(dllexport) int func()
 }
 ```
 
-The second module generates an object file containing a forward declaration to the function exported in the first module, along with a call to this function inside the `main` function. Linking this module with the first module will generate LNK4049. Removing the `__declspec(dllimport)` declaration will resolve the warning.
+The second module generates an object file containing a forward declaration to the function exported in the first module, along with a call to this function inside the `main` function. Linking this module with the first module will generate LNK4049. Remove the `__declspec(dllimport)` modifier from the declaration to resolve the warning.
 
 ```cpp
 // LNK4049b.cpp

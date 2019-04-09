@@ -13,7 +13,7 @@ ms.assetid: 280dc03e-5933-4e8d-bb8c-891fbe788738
 
 `symbol` is the symbol name that's defined within the image. `function` is the function that's importing the symbol.
 
-This warning will not appear when you compile by using the option [/clr](../../build/reference/clr-common-language-runtime-compilation.md).
+This warning doesn't appear when you compile by using the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) option.
 
 LNK4217 can also occur if you attempt to link two modules together, when instead you should compile the second module with the import library of the first module.
 
