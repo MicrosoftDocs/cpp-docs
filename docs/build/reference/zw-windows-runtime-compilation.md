@@ -1,6 +1,6 @@
 ---
 title: "/ZW (Windows Runtime Compilation)"
-ms.date: "11/04/2016"
+ms.date: "04/08/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.CompileAsWinRT", "/zw"]
 helpviewer_keywords: ["/ZW", "-ZW compiler option", "/ZW compiler option", "-ZW", "Windows Runtime compiler option"]
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
@@ -31,7 +31,7 @@ When you specify the **/ZW** option, the compiler supports these features:
 
 - Automatic reference-counting of Windows Runtime objects, and automatic discarding of an object when its reference count goes to zero.
 
-Because the incremental linker does not support the Windows metadata included in .obj files by using the **/ZW** option, the [/Gm (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option is incompatible with **/ZW**.
+Because the incremental linker does not support the Windows metadata included in .obj files by using the **/ZW** option, the deprecated [/Gm (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option is incompatible with **/ZW**.
 
 For more information, see [Visual C++ Language Reference](../../cppcx/visual-c-language-reference-c-cx.md).
 

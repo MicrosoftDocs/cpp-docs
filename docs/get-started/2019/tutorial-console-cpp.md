@@ -29,6 +29,9 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
    ![Choose the Console App template](./media/calc-vs2019-choose-console-app.png "Choose the Console App template")
 
+   > [!Important]
+   > Make sure you choose the C++ version of the **Console App** template. It has the **C++**, **Windows**, and **Console** tags, and the icon has "++" in the corner.
+
 1. In the **Configure your new project** dialog box, select the **Project name** edit box, name your new project *CalculatorTutorial*, then choose **Create**.
 
    ![Name your project in the Configure your new project dialog](./media/calc-vs2019-name-your-project.png "Name your project in the Configure your new project dialog")
