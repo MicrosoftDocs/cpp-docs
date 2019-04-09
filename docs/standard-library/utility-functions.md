@@ -9,8 +9,23 @@ helpviewer_keywords: ["std::exchange [C++]", "std::forward [C++]", "std::make_pa
 
 ||||
 |-|-|-|
-|[exchange](#exchange)|[forward](#forward)|[get Function &lt;utility&gt;](#get)|
-|[make_pair](#make_pair)|[move](#move)|[swap](#swap)|
+|[as_const](#asconst)|[declval](#declval)|[exchange](#exchange)|
+|[forward](#forward)|[from_chars](#fromchars)|[get Function &lt;utility&gt;](#get)|
+|[make_pair](#make_pair)|[move](#move)|[move_if_noexcept](#moveif)|
+|[swap](#swap)|[to_chars](#tochars)||
+
+## <a name="asconst"></a>  as_const
+
+```cpp
+    template <class T> constexpr add_const_t<T>& as_const(T& t) noexcept;
+    template <class T> void as_const(const T&&) = delete;
+```
+
+## <a name="exchange"></a> declval
+
+```cpp
+template <class T> add_rvalue_reference_t<T> declval() noexcept;  // as unevaluated operand
+```
 
 ## <a name="exchange"></a>  exchange
 
@@ -97,6 +112,18 @@ You must specify an explicit template argument to call `forward`.
 `forward` does not forward its argument. Instead, by conditionally casting its argument to an rvalue reference if it was originally an rvalue or rvalue reference, `forward` enables the compiler to perform overload resolution with knowledge of the forwarded argument's original type. The apparent type of an argument to a forwarding function might be different than its original type—for example, when an rvalue is used as an argument to a function and is bound to a parameter name; having a name makes it an lvalue, regardless of whether the value actually exists as an rvalue— `forward` restores the rvalue-ness of the argument.
 
 Restoring the rvalue-ness of an argument's original value in order to perform overload resolution is known as *perfect forwarding*. Perfect forwarding enables a template function to accept an argument of either reference type and to restore its rvalue-ness when it's necessary for correct overload resolution. By using perfect forwarding, you can preserve move semantics for rvalues and avoid having to provide overloads for functions that vary only by the reference type of their arguments.
+
+## <a name="fromchars"></a> from_chars
+
+```cpp
+    from_chars_result from_chars(const char* first, const char* last, see below& value, int base = 10);
+
+    from_chars_result from_chars(const char* first, const char* last, float& value, chars_format fmt = chars_format::general); 
+
+    from_chars_result from_chars(const char* first, const char* last, double& value, chars_format fmt = chars_format::general); 
+
+    from_chars_result from_chars(const char* first, const char* last, long double& value, chars_format fmt = chars_format::general);
+```
 
 ## <a name="get"></a>  get
 
@@ -274,6 +301,12 @@ The template argument *Type* is not intended to be specified explicitly, but to 
 
 If the value passed in *Arg* is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Do not refer to the value passed in *Arg* by its name or address after it's been moved.
 
+## <a name="moveif"></a>  move_if_noexcept
+
+```cpp
+template <class T> constexpr conditional_t< !is_nothrow_move_constructible_v<T> && is_copy_constructible_v<T>, const T&, T&&> move_if_noexcept(T& x) noexcept;
+```
+
 ## <a name="swap"></a>  swap
 
 Exchanges the elements of two [pair Structure](../standard-library/pair-structure.md) objects.
@@ -293,6 +326,21 @@ void swap(pair<T, U>& left, pair<T, U>& right);
 ### Remarks
 
 One advantage of `swap` is that the types of objects that are being stored are determined automatically by the compiler and do not have to be explicitly specified. Don't use explicit template arguments such as `swap<int, int>(1, 2)` when you use `swap` because it is unnecessarily verbose and adds complex rvalue reference problems that might cause compilation failure.
+
+## <a name="tochars"></a> tochars
+
+```cpp
+    to_chars_result to_chars(char* first, char* last, see below value, int base = 10);
+    to_chars_result to_chars(char* first, char* last, float value); 
+    to_chars_result to_chars(char* first, char* last, double value); 
+    to_chars_result to_chars(char* first, char* last, long double value);
+    to_chars_result to_chars(char* first, char* last, float value, chars_format fmt); 
+    to_chars_result to_chars(char* first, char* last, double value, chars_format fmt); 
+    to_chars_result to_chars(char* first, char* last, long double value, chars_format fmt);
+    to_chars_result to_chars(char* first, char* last, float value, chars_format fmt, int precision); 
+    to_chars_result to_chars(char* first, char* last, double value, chars_format fmt, int precision); 
+    to_chars_result to_chars(char* first, char* last, long double value, chars_format fmt, int precision);
+```
 
 ## See also
 
