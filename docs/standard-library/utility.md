@@ -19,12 +19,6 @@ Defines C++ Standard Library types, functions, and operators that help to constr
 
 Pairs are widely used in the C++ Standard Library. They are required both as the arguments and return values for various functions and as element types for containers such as [map class](../standard-library/map-class.md) and [multimap class](../standard-library/multimap-class.md). The \<utility> header is automatically included by \<map> to assist in managing their key/value pair type elements.
 
-### Variables
-
-|Variable|Description|
-|-|-|
-|[piecewise_contruct](../standard-library/utility-variables.md#piecewise)||
-
 ### Classes
 
 |Class|Description|
@@ -65,7 +59,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 |[identity](../standard-library/identity-structure.md)||
 |[integer_sequence](../standard-library/integer-sequence-class.md)||
 |[pair](../standard-library/pair-structure.md)|A type that provides for the ability to treat two objects as a single object.|
-|[piecewise_contruct_t](../standard-library/piecewise-construct-t-structure.md)||
+|[piecewise_construct_t](../standard-library/piecewise-construct-t-structure.md)||
 |[to_chars_result](../standard-library/to-chars-result-structure.md)||
 
 ## See also

@@ -21,7 +21,7 @@ helpviewer_keywords: ["std::exchange [C++]", "std::forward [C++]", "std::make_pa
     template <class T> void as_const(const T&&) = delete;
 ```
 
-## <a name="exchange"></a> declval
+## <a name="declval"></a> declval
 
 ```cpp
 template <class T> add_rvalue_reference_t<T> declval() noexcept;  // as unevaluated operand
