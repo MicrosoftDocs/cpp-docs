@@ -7,57 +7,67 @@ ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
 ---
 # &lt;cstddef&gt;
 
-Includes the Standard C library header \<stddef.h> and adds the associated names to the `std` namespace.
+Includes the C standard library header \<stddef.h> and adds associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
 
 > [!NOTE]
-> `cstddef` doesn't include **wchar_t** but does include the type **byte**.
+> \<cstddef> includes type **byte** and doesn't include type **wchar_t**.
 
 ## Syntax
 
 ```cpp
-    #include <cstddef>
+#include <cstddef>
 ```
 
-## Types
+## Namespace and Macros
 
 ```cpp
-    ptrdiff_t = see below;
-    using size_t = see below;
-    using max_align_t = see below;
+namespace std {
+    using ptrdiff_t = see definition;
+    using size_t = see definition;
+    using max_align_t = see definition;
     using nullptr_t = decltype(nullptr);
+}
+
+#define NULL  // an implementation-defined null pointer constant
+#define offsetof(type, member-designator)
 ```
 
-## Enums
+### Parameters
+
+*ptrdiff_t*<br/>
+An implementation-defined signed integer type that can hold the difference of two subscripts in an array object.
+
+*size_t*<br/>
+An implementation-defined unsigned integer type that is large enough to contain the size in bytes of any object.
+
+*max_align_t*<br/>
+A POD type whose alignment requirement is at least as great as that of every scalar type, and whose alignment requirement is supported in every context.
+
+*nullptr_t*<br/>
+A synonym for the type of a **nullptr** expression. Although a **nullptr** address can't be taken, the address of another *nullptr_t* object that is an lvalue can be taken.
+
+## byte Class
 
 ```cpp
-    enum class byte : unsigned char {};
+enum class byte : unsigned char {};
+
+template <class IntType>
+    constexpr byte& operator<<=(byte& b, IntType shift) noexcept;
+    constexpr byte operator<<(byte b, IntType shift) noexcept;
+    constexpr byte& operator>>=(byte& b, IntType shift) noexcept;
+    constexpr byte operator>>(byte b, IntType shift) noexcept;
+
+constexpr byte& operator|=(byte& left, byte right) noexcept;
+constexpr byte operator|(byte left, byte right) noexcept;
+constexpr byte& operator&=(byte& left, byte right) noexcept;
+constexpr byte operator&(byte left, byte right) noexcept;
+constexpr byte& operator^=(byte& left, byte right) noexcept;
+constexpr byte operator^(byte left, byte right) noexcept;
+constexpr byte operator~(byte b) noexcept;
+
+template <class IntType>
+    IntType to_integer(byte b) noexcept;
 ```
-
-## Operators
-
-```cpp
-    template <class IntType> byte& operator<<=(byte& b, IntType shift)
-    template <class IntType> byte operator<<(byte b, IntType shift) noexcept;
-    template <class IntType> byte& operator>>=(byte& b, IntType shift) noexcept;
-    template <class IntType> byte operator>>(byte b, IntType shift) noexcept;
-    byte& operator|=(byte& l, byte r) noexcept;
-    byte operator|(byte l, byte r) noexcept;
-    byte& operator&=(byte& l, byte r) noexcept;
-    byte operator&(byte l, byte r) noexcept;
-    byte& operator^=(byte& l, byte r) noexcept;
-    byte operator^(byte l, byte r) noexcept;
-    byte operator~(byte b) noexcept;
-```
-
-## Functions
-
-```cpp
-    template <class IntType> IntType to_integer(byte b) noexcept;
-```
-
-## Remarks
-
-Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
 
 ## See also
 

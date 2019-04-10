@@ -19,7 +19,7 @@ class numeric_limits
 ### Parameters
 
 *Type*<br/>
-The fundamental element data type whose properties are being tested or queried or set.
+The fundamental element data type whose properties are being tested or queried or set. *Type* can also be declared **const**, **volatile**, or **const volatile**.
 
 ## Remarks
 
@@ -38,7 +38,7 @@ For an arbitrary specialization, no members have meaningful values. A member obj
 |[has_denorm](#has_denorm)|Tests whether a type allows denormalized values.|
 |[has_denorm_loss](#has_denorm_loss)|Tests whether loss of accuracy is detected as a denormalization loss rather than as an inexact result.|
 |[has_infinity](#has_infinity)|Tests whether a type has a representation for positive infinity.|
-|[has_quiet_NaN](#has_quiet_nan)|Tests whether a type has a representation for a quiet not a number (NAN), which is nonsignaling.|
+|[has_quiet_NaN](#has_quiet_nan)|Tests whether a type has a representation for a quiet not a number (NAN), which is non-signaling.|
 |[has_signaling_NaN](#has_signaling_nan)|Tests whether a type has a representation for signaling not a number (NAN).|
 |[infinity](#infinity)|The representation for positive infinity for a type, if available.|
 |[is_bounded](#is_bounded)|Tests if the set of values that a type may represent is finite.|

@@ -24,17 +24,30 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[addressof](../standard-library/memory-functions.md#addressof)|Gets the true address of an object.|
 |[align](../standard-library/memory-functions.md#align)|Returns a pointer to a range of a given size, based on the provided alignment and starting address.|
 |[allocate_shared](../standard-library/memory-functions.md#allocate_shared)|Creates a `shared_ptr` to objects that are allocated and constructed for a given type with a specified allocator.|
+|[atomic_compare_exchange_strong](../standard-library/memory-functions.md#atomic_compare_exchange_strong)||
+|[atomic_compare_exchange_strong_explicit](../standard-library/memory-functions.md#atomic_compare_exchange_strong_explicit)||
+|[atomic_compare_exchange_weak](../standard-library/memory-functions.md#atomic_compare_exchange_weak)||
+|[atomic_compare_exchange_weak_explicit](../standard-library/memory-functions.md#atomic_compare_exchange_weak_explicit)||
+|[atomic_exchange](../standard-library/memory-functions.md#atomic_exchange)||
+|[atomic_exchange_explicit](../standard-library/memory-functions.md#atomic_exchange_explicit)||
+|[atomic_is_lock_free](../standard-library/memory-functions.md#atomic_is_lock_free)||
+|[atomic_load](../standard-library/memory-functions.md#atomic_load)||
+|[atomic_load_explicit](../standard-library/memory-functions.md#atomic_load_explicit)||
+|[atomic_store](../standard-library/memory-functions.md#atomic_store)||
+|[atomic_store_explicit](../standard-library/memory-functions.md#atomic_store_explicit)||
 |[const_pointer_cast](../standard-library/memory-functions.md#const_pointer_cast)|Const cast to `shared_ptr`.|
 |[declare_no_pointers](../standard-library/memory-functions.md#declare_no_pointers)|Informs a garbage collector that the characters starting at a specified address and falling within the indicated block size contain no traceable pointers.|
 |[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|Informs garbage collection that the indicated address is to allocated storage and is reachable.|
 |[default_delete](../standard-library/memory-functions.md#default_delete)|Deletes objects allocated with `operator new`. Suitable for use with `unique_ptr`.|
+|[destroy_at](../standard-library/memory-functions.md#destroy_at)||
+|[destroy](../standard-library/memory-functions.md#destroy)||
+|[destroy_n](../standard-library/memory-functions.md#destroy_n)||
 |[dynamic_pointer_cast](../standard-library/memory-functions.md#dynamic_pointer_cast)|Dynamic cast to `shared_ptr`.|
 |[get_deleter](../standard-library/memory-functions.md#get_deleter)|Get deleter from `shared_ptr`.|
 |[get_pointer_safety](../standard-library/memory-functions.md#get_pointer_safety)|Returns the type of pointer safety assumed by any garbage collector.|
 |[get_temporary_buffer](../standard-library/memory-functions.md#get_temporary_buffer)|Allocates temporary storage for a sequence of elements that does not exceed a specified number of elements.|
 |[make_shared](../standard-library/memory-functions.md#make_shared)|Creates and returns a `shared_ptr` that points to the allocated object constructed from zero or more arguments using the default allocator.|
 |[make_unique](../standard-library/memory-functions.md#make_unique)|Creates and returns a [unique_ptr](../standard-library/unique-ptr-class.md) that points to the allocated object constructed from zero or more arguments.|
-|[owner_less](../standard-library/memory-functions.md#owner_less)|Allows ownership-based mixed comparisons of shared and weak pointers.|
 |[pointer_safety](../standard-library/memory-enums.md#pointer_safety)|An enumeration of all the possible return values for `get_pointer_safety`.|
 |[return_temporary_buffer](../standard-library/memory-functions.md#return_temporary_buffer)|Deallocates the temporary memory that was allocated using the `get_temporary_buffer` template function.|
 |[static_pointer_cast](../standard-library/memory-functions.md#static_pointer_cast)|Static cast to `shared_ptr`.|
@@ -43,8 +56,14 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[undeclare_reachable](../standard-library/memory-functions.md#undeclare_reachable)|Informs a `garbage_collector` that a specified memory location is not reachable.|
 |[uninitialized_copy](../standard-library/memory-functions.md#uninitialized_copy)|Copies objects from a specified input range into an uninitialized destination range.|
 |[uninitialized_copy_n](../standard-library/memory-functions.md#uninitialized_copy_n)|Creates a copy of a specified number of elements from an input iterator. The copies are put in a forward iterator.|
+|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)||
+|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)||
 |[uninitialized_fill](../standard-library/memory-functions.md#uninitialized_fill)|Copies objects of a specified value into an uninitialized destination range.|
 |[uninitialized_fill_n](../standard-library/memory-functions.md#uninitialized_fill_n)|Copies objects of a specified value into specified number of elements an uninitialized destination range.|
+|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)||
+|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)||
+|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)||
+|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)||
 
 ### Operators
 
@@ -72,6 +91,13 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[shared_ptr](../standard-library/shared-ptr-class.md)|Wraps a reference-counted smart pointer around a dynamically allocated object.|
 |[unique_ptr](../standard-library/unique-ptr-class.md)|Stores a pointer to an owned object. The pointer is owned by no other `unique_ptr`. The `unique_ptr` is destroyed when the owner is destroyed.|
 |[weak_ptr](../standard-library/weak-ptr-class.md)|Wraps a weakly linked pointer.|
+
+### Structures
+
+|Structure|Description|
+|-|-|
+|[default_delete](../standard-library/default-delete-structure.md)||
+|[owner_less](../standard-library/memory-functions.md#owner_less)|Allows ownership-based mixed comparisons of shared and weak pointers.|
 
 ### Specializations
 

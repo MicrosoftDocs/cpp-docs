@@ -78,6 +78,12 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |[operator&#124;=](#op_or_eq)|Performs a bitwise combination of bitsets with the inclusive `OR` operation.|
 |[operator~](#op_not)|Inverts all the bits in a target `bitset` and returns the result.|
 
+### Structures
+
+|Structure|Description|
+|-|-|
+|[hash](#hash)||
+
 ## Requirements
 
 **Header:** \<bitset>
@@ -487,6 +493,13 @@ After flipping the fourth bit, the bitset becomes: ( 10001 )
 00111  The bit flipped is in position 2.
 01111  The bit flipped is in position 3.
 11111  The bit flipped is in position 4.
+```
+
+## <a name="hash"></a>  bitset::hash
+
+```cpp
+template <class T> struct hash;
+template <size_t N> struct hash<bitset<N>>;
 ```
 
 ## <a name="none"></a>  bitset::none
