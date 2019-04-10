@@ -46,7 +46,7 @@ The object whose value is copied or moved into val.
 
 ### Remarks
 
-For complex types, `exchange` avoids copying the old value when a move constructor is available, avoids copying the new value if it’s a temporary object or is moved, and accepts any type as the new value, using any available converting assignment operator. The exchange function is different from [std::swap](../standard-library/algorithm-functions.md#swap) in that the left argument is not moved or copied to the right argument.
+For complex types, `exchange` avoids copying the old value when a move constructor is available, avoids copying the new value if it’s a temporary object or is moved, and accepts any type as the new value, using any available converting assignment operator. The exchange function is different from [std::swap](../standard-library/algorithm-functions.md#swap) in that the left argument isn't moved or copied to the right argument.
 
 ### Example
 
@@ -109,9 +109,9 @@ Returns an rvalue reference to *Arg* if the value passed in *Arg* was originally
 
 You must specify an explicit template argument to call `forward`.
 
-`forward` does not forward its argument. Instead, by conditionally casting its argument to an rvalue reference if it was originally an rvalue or rvalue reference, `forward` enables the compiler to perform overload resolution with knowledge of the forwarded argument's original type. The apparent type of an argument to a forwarding function might be different than its original type—for example, when an rvalue is used as an argument to a function and is bound to a parameter name; having a name makes it an lvalue, regardless of whether the value actually exists as an rvalue— `forward` restores the rvalue-ness of the argument.
+`forward` doesn't forward its argument. Instead, by conditionally casting its argument to an rvalue reference if it was originally an rvalue or rvalue reference, `forward` enables the compiler to perform overload resolution with knowledge of the forwarded argument's original type. The apparent type of an argument to a forwarding function might be different than its original type—for example, when an rvalue is used as an argument to a function and is bound to a parameter name; having a name makes it an lvalue, with whatever value actually exists as an rvalue— `forward` restores the rvalue-ness of the argument.
 
-Restoring the rvalue-ness of an argument's original value in order to perform overload resolution is known as *perfect forwarding*. Perfect forwarding enables a template function to accept an argument of either reference type and to restore its rvalue-ness when it's necessary for correct overload resolution. By using perfect forwarding, you can preserve move semantics for rvalues and avoid having to provide overloads for functions that vary only by the reference type of their arguments.
+Restoring the rvalue-ness of an argument's original value to do overload resolution is known as *perfect forwarding*. Perfect forwarding enables a template function to accept an argument of either reference type and to restore its rvalue-ness when it's necessary for correct overload resolution. By using perfect forwarding, you can preserve move semantics for rvalues and avoid having to provide overloads for functions that vary only by the reference type of their arguments.
 
 ## <a name="fromchars"></a> from_chars
 
@@ -173,7 +173,7 @@ constexpr T2&& get(pair<T1, T2>&& Pr) noexcept;
 ### Parameters
 
 *Index*<br/>
-The 0-based index of the designated element.
+The 0-based index of the chosen element.
 
 *T1*<br/>
 The type of the first pair element.
@@ -190,7 +190,7 @@ The template functions each return a reference to an element of its `pair` argum
 
 For the indexed overloads, if the value of *Index* is 0 the functions return `pr.first` and if the value of *Index* is 1 the functions return `pr.second`. The type `RI` is the type of the returned element.
 
-For the overloads that do not have an Index parameter, the element to return is deduced by the type argument. Calling `get<T>(Tuple)` will produce a compiler error if *pr* contains more or less than one element of type T.
+For the overloads that don't have an Index parameter, the element to return is deduced by the type argument. Calling `get<T>(Tuple)` will produce a compiler error if *pr* contains more or less than one element of type T.
 
 ### Example
 
@@ -261,11 +261,11 @@ In the returned `pair` object, `T` is determined as follows:
 
 - If the input type `T` is `reference_wrapper<X>`, the returned type `T` is `X&`.
 
-- Otherwise, the returned type `T` is `decay<T>::type`. If [decay Class](../standard-library/decay-class.md) is not supported, the returned type `T` is the same as the input type `T`.
+- Otherwise, the returned type `T` is `decay<T>::type`. If [decay Class](../standard-library/decay-class.md) isn't supported, the returned type `T` is the same as the input type `T`.
 
 The returned type `U` is similarly determined from the input type `U`.
 
-One advantage of `make_pair` is that the types of objects that are being stored are determined automatically by the compiler and do not have to be explicitly specified. Don't use explicit template arguments such as `make_pair<int, int>(1, 2)` when you use `make_pair` because it is unnecessarily verbose and adds complex rvalue reference problems that might cause compilation failure. For this example, the correct syntax would be `make_pair(1, 2)`
+One advantage of `make_pair` is that the types of objects that are being stored are determined automatically by the compiler and don't have to be explicitly specified. Don't use explicit template arguments such as `make_pair<int, int>(1, 2)` when you use `make_pair` because it's verbose and adds complex rvalue reference problems that might cause compilation failure. For this example, the correct syntax would be `make_pair(1, 2)`
 
 The `make_pair` helper function also makes it possible to pass two values to a function that requires a pair as an input parameter.
 
@@ -295,11 +295,11 @@ constexpr typename remove_reference<Type>::type&& move(Type&& Arg) noexcept;
 
 ### Remarks
 
-The template argument *Type* is not intended to be specified explicitly, but to be deduced from the type of the value passed in *Arg*. The type of *Type* is further adjusted according to the reference collapsing rules.
+The template argument *Type* isn't intended to be specified explicitly, but to be deduced from the type of the value passed in *Arg*. The type of *Type* is further adjusted according to the reference collapsing rules.
 
-`move` does not move its argument. Instead, by unconditionally casting its argument—which might be an lvalue—to an rvalue reference, it enables the compiler to subsequently move, rather than copy, the value passed in *Arg* if its type is move-enabled. If its type is not move-enabled, it is copied instead.
+`move` doesn't move its argument. Instead, by unconditionally casting its argument—which might be an lvalue—to an rvalue reference, it enables the compiler to subsequently move, rather than copy, the value passed in *Arg* if its type is move-enabled. If its type isn't move-enabled, it's copied instead.
 
-If the value passed in *Arg* is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Do not refer to the value passed in *Arg* by its name or address after it's been moved.
+If the value passed in *Arg* is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Don't refer to the value passed in *Arg* by its name or address after it's been moved.
 
 ## <a name="moveif"></a>  move_if_noexcept
 
@@ -325,7 +325,7 @@ void swap(pair<T, U>& left, pair<T, U>& right);
 
 ### Remarks
 
-One advantage of `swap` is that the types of objects that are being stored are determined automatically by the compiler and do not have to be explicitly specified. Don't use explicit template arguments such as `swap<int, int>(1, 2)` when you use `swap` because it is unnecessarily verbose and adds complex rvalue reference problems that might cause compilation failure.
+One advantage of `swap` is that the types of objects that are being stored are determined automatically by the compiler and don't have to be explicitly specified. Don't use explicit template arguments such as `swap<int, int>(1, 2)` when you use `swap` because it's verbose and adds complex rvalue reference problems that might cause compilation failure.
 
 ## <a name="tochars"></a> tochars
 
