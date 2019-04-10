@@ -9,7 +9,21 @@ helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]
 
 ||||
 |-|-|-|
-|[get](#get)|[make_tuple](#make_tuple)|[tie](#tie)|
+|[apply](#apply)|[forward_as_tuple](#forward)|[get](#get)|
+|[make_from_tuple](#make_from_tuple)|[make_tuple](#make_tuple)|[swap](#swap)|
+|[tie](#tie)|[tuple_cat](#tuple_cat)||
+
+## <a name="apply"></a> apply
+
+```cpp
+template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t);
+```
+
+## <a name="forward"></a> forward_as_tuple
+
+```cpp
+template <class... TTypes> constexpr tuple<TTypes&&...> forward_as_tuple(TTypes&&...) noexcept;
+```
 
 ## <a name="get"></a>  get
 
@@ -92,6 +106,12 @@ int main() {
 0 1.42 Call me Tuple
 ```
 
+## <a name="make_from_tuple"></a>  make_from_tuple
+
+```cpp
+template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
+```
+
 ## <a name="make_tuple"></a>  make_tuple
 
 Makes a `tuple` from element values.
@@ -148,6 +168,12 @@ int main() {
 ```Output
 0 1 2 3
 4 5 6 7
+```
+
+## <a name="swap"></a> swap
+
+```cpp
+template <class... Types> void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept;
 ```
 
 ## <a name="tie"></a>  tie
@@ -207,6 +233,12 @@ int main() {
 ```Output
 0 1 2 3
 0 1 2 3
+```
+
+## <a name="tuple_cat"></a> tuple_cat
+
+```cpp
+template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
 ```
 
 ## See also

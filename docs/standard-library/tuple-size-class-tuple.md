@@ -44,6 +44,10 @@ template <class Tuple>
    struct tuple_size<const volatile Tuple>;
 ```
 
+```cpp
+template <class T> inline constexpr size_t tuple_size_v = tuple_size<T>::value;
+```
+
 ### Parameters
 
 *Tuple*<br/>

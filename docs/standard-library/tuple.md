@@ -22,6 +22,7 @@ Defines a template `tuple` whose instances hold objects of varying types.
 |[tuple](../standard-library/tuple-class.md)|Wraps a fixed-length sequence of elements.|
 |[tuple_element Class](../standard-library/tuple-element-class-tuple.md)|Wraps the type of a `tuple` element.|
 |[tuple_size Class](../standard-library/tuple-size-class-tuple.md)|Wraps `tuple` element count.|
+|[uses_allocator](../standard-library/uses-allocator-structure.md)||
 
 ### Operators
 
@@ -38,9 +39,14 @@ Defines a template `tuple` whose instances hold objects of varying types.
 
 |Function|Description|
 |-|-|
+|[apply](../standard-library/tuple-functions.md#apply)||
+|[forward_as_tuple](../standard-library/tuple-functions.md#forward)||
 |[get](../standard-library/tuple-functions.md#get)|Gets an element from a `tuple` object.|
+|[make_from_tuple](../standard-library/tuple-functions.md#make_from_tuple||
 |[make_tuple](../standard-library/tuple-functions.md#make_tuple)|Makes a `tuple` from element values.|
+|[swap](../standard-library/tuple-functions.md#swap)||
 |[tie](../standard-library/tuple-functions.md#tie)|Makes a `tuple` from element references.|
+|[tuple_cat](../standard-library/tuple-functions.md#tuple_cat)||
 
 ## See also
 
