@@ -229,7 +229,7 @@ This data is broken into four sections:
 
    c. **Epilog Start Index** is a 10-bit (2 more bits than **Extended Code Words**) field indicating the byte index of the first unwind code that describes this epilog.
 
-1. After the list of epilog scopes comes an array of bytes that contain unwind codes, described in detail in a later section. This array is padded at the end to the nearest full word boundary. The bytes are stored in little-endian order so that they can be directly fetched in little-endian mode.
+1. After the list of epilog scopes comes an array of bytes that contain unwind codes, described in detail in a later section. This array is padded at the end to the nearest full word boundary. Unwind codes are written to this array, starting with the one closest to the body of the function, moving towards the edges of the function. The bytes for each unwind code are stored in big-endian order so they can be fetched directly, starting with the most significant byte first, which identifies the operation and the length of the rest of the code.
 
 1. Finally, after the unwind code bytes, if the **X** bit in the header was set to 1, comes the exception handler information. This consists of a single **Exception Handler RVA** providing the address of the exception handler itself, followed immediately by a variable-length amount of data required by the exception handler.
 
