@@ -229,6 +229,7 @@
 ## [Linker Tools Warning LNK4248](linker-tools-warning-lnk4248.md)
 ## [Linker Tools Warning LNK4253](linker-tools-warning-lnk4253.md)
 ## [Linker Tools Warning LNK4254](linker-tools-warning-lnk4254.md)
+## [Linker Tools Warning LNK4286](linker-tools-warning-lnk4286.md)
 # [Profile-Guided Optimization Errors and Warnings](profile-guided-optimization-errors-and-warnings.md)
 ## [Profile-Guided Optimization Warning PG1039](profile-guided-optimization-warning-pg1039.md)
 ## [Profile-Guided Optimization Warning PG1087](profile-guided-optimization-warning-pg1087.md)

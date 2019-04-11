@@ -249,3 +249,5 @@ LINK, LIB, DUMPBIN, and EDITBIN generate these errors and warnings.
 [Linker Tools Warning LNK4253](../../error-messages/tool-errors/linker-tools-warning-lnk4253.md)
 
 [Linker Tools Warning LNK4254](../../error-messages/tool-errors/linker-tools-warning-lnk4254.md)
+
+[Linker Tools Warning LNK4286](../../error-messages/tool-errors/linker-tools-warning-lnk4286.md)
