@@ -170,7 +170,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         mov    sp,x29                       // sp points to top of local area
         ldp    d10,d11,[sp,#64]
         ...
-        ldp    x29,lr,[sp],80               // post-indexed, reload <x29,lr>
+        ldp    x29,lr,[sp],#80              // post-indexed, reload <x29,lr>
     ```
 
 ## ARM64 exception handling information
