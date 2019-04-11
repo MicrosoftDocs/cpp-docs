@@ -57,7 +57,7 @@ int main()
 is_signed<trivial> == false
 is_signed<int> == true
 is_signed<unsigned int> == false
-is_signed<float> == false
+is_signed<float> == true
 ```
 
 ## Requirements
