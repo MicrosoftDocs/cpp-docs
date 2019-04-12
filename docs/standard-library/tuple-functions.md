@@ -10,8 +10,8 @@ helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]
 ||||
 |-|-|-|
 |[apply](#apply)|[forward_as_tuple](#forward)|[get](#get)|
-|[make_from_tuple](#make_from_tuple)|[make_tuple](#make_tuple)|[swap](#swap)|
-|[tie](#tie)|[tuple_cat](#tuple_cat)||
+|[make_from_tuple](#make_from_tuple)|[make_tuple](#make_tuple)|[tie](#tie)|
+|[tuple_cat](#tuple_cat)|||
 
 ## <a name="apply"></a> apply
 
@@ -19,11 +19,24 @@ helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]
 template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t);
 ```
 
+### Remarks
+
+Calls function *F* with a tuple *t*.
+
 ## <a name="forward"></a> forward_as_tuple
 
 ```cpp
-template <class... TTypes> constexpr tuple<TTypes&&...> forward_as_tuple(TTypes&&...) noexcept;
+template <class... TTypes>
+    constexpr tuple<TTypes&&...> forward_as_tuple(TTypes&&...) noexcept;
 ```
+
+### Return Value
+
+Returns `tuple<TTypes&&...>(std::forward<TTypes>(t)...)`.
+
+### Remarks
+
+Constructs a tuple of references to the arguments in *t* suitable for forwarding as arguments to a function.
 
 ## <a name="get"></a>  get
 
@@ -112,6 +125,10 @@ int main() {
 template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
 ```
 
+### Remarks
+
+Same as `return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`.
+
 ## <a name="make_tuple"></a>  make_tuple
 
 Makes a `tuple` from element values.
@@ -170,13 +187,7 @@ int main() {
 4 5 6 7
 ```
 
-## <a name="swap"></a> swap
-
-```cpp
-template <class... Types> void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept;
-```
-
-## <a name="tie"></a>  tie
+## <a name="tie"></a> tie
 
 Makes a `tuple` from element references.
 
@@ -240,6 +251,10 @@ int main() {
 ```cpp
 template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
 ```
+
+### Return Value
+
+A tuple object constructed by initializing the each type element.
 
 ## See also
 
