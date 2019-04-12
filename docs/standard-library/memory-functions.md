@@ -11,12 +11,15 @@ helpviewer_keywords: ["std::addressof [C++]", "std::align [C++]", "std::allocate
 |-|-|-|
 |[addressof](#addressof)|[align](#align)|[allocate_shared](#allocate_shared)|
 |[const_pointer_cast](#const_pointer_cast)|[declare_no_pointers](#declare_no_pointers)|[declare_reachable](#declare_reachable)|
-|[default_delete](#default_delete)|[dynamic_pointer_cast](#dynamic_pointer_cast)|[get_deleter](#get_deleter)|
+|[default_delete](#default_delete)|[destroy_at](../standard-library/memory-functions.md#destroy_at)|[destroy](../standard-library/memory-functions.md#destroy)|
+|[destroy_n](../standard-library/memory-functions.md#destroy_n)|[dynamic_pointer_cast](#dynamic_pointer_cast)|[get_deleter](#get_deleter)|
 |[get_pointer_safety](#get_pointer_safety)|[get_temporary_buffer](#get_temporary_buffer)|[make_shared](#make_shared)|
 |[make_unique](#make_unique)|[owner_less](#owner_less)|[return_temporary_buffer](#return_temporary_buffer)|
 |[static_pointer_cast](#static_pointer_cast)|[swap (C++ Standard Library)](#swap)|[undeclare_no_pointers](#undeclare_no_pointers)|
 |[undeclare_reachable](#undeclare_reachable)|[uninitialized_copy](#uninitialized_copy)|[uninitialized_copy_n](#uninitialized_copy_n)|
-|[uninitialized_fill](#uninitialized_fill)|[uninitialized_fill_n](#uninitialized_fill_n)|
+|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)|[uninitialized_fill](#uninitialized_fill)|
+|[uninitialized_fill_n](#uninitialized_fill_n)|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)|
+|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)||
 
 ## <a name="addressof"></a>  addressof
 
@@ -233,14 +236,41 @@ The type of elements in the array to be deleted.
 
 The template class describes a `deleter` that deletes scalar objects allocated with **operator new**, suitable for use with template class `unique_ptr`. It also has the explicit specialization `default_delete<Type[]>`.
 
+## <a name="destroy_at"></a> destroy_at
+
+```cpp
+template <class T>
+    void destroy_at(T* location);
+```
+
+Same as `location->~T()`.
+
+## <a name="destroy"></a> destroy
+
+```cpp
+template <class ForwardIterator>
+    void destroy(ForwardIterator first, ForwardIterator last);
+```
+
+Same as `for (; first!=last; ++first) destroy_at(addressof(*first)); `.
+
+## <a name="destroy_n"></a> destroy_n
+
+```cpp
+template <class ForwardIterator, class Size>
+    ForwardIterator destroy_n(ForwardIterator first, Size n);
+```
+
+Same as `for (; n > 0; (void)++first, --n) destroy_at(addressof(*first)); return first;`.
+
 ## <a name="dynamic_pointer_cast"></a>  dynamic_pointer_cast
 
 Dynamic cast to shared_ptr.
 
 ```cpp
 template <class Ty, class Other>
-shared_ptr<Ty>
-dynamic_pointer_cast(const shared_ptr<Other>& sp);
+    shared_ptr<Ty>
+    dynamic_pointer_cast(const shared_ptr<Other>& sp);
 ```
 
 ### Parameters
@@ -1011,13 +1041,47 @@ The template function effectively executes the following:
 
 unless the code throws an exception. In that case, all constructed objects are destroyed and the exception is rethrown.
 
+## <a name="uninitialized_default_construct"></a> uninitialized_default_construct
+
+```cpp
+template <class ForwardIterator>
+    void uninitialized_default_construct(ForwardIterator first, ForwardIterator last); 
+```
+
+### Remarks
+
+Same as:
+
+```cpp
+for (; first != last; ++first)
+    ::new (static_cast<void*>(addressof(*first)))
+        typename iterator_traits<ForwardIterator>::value_type;
+```
+
+## <a name="uninitialized_default_construct_n"></a> uninitialized_default_construct_n
+
+```cpp
+template <class ForwardIterator, class Size>
+    ForwardIterator uninitialized_default_construct_n(ForwardIterator first, Size n)
+```
+
+### Remarks
+
+Same as:
+
+```cpp
+for (; n>0; (void)++first, --n)
+    ::new (static_cast<void*>(addressof(*first)))
+        typename iterator_traits<ForwardIterator>::value_type; return first;
+```
+
 ## <a name="uninitialized_fill"></a>  uninitialized_fill
 
 Copies objects of a specified value into an uninitialized destination range.
 
 ```cpp
 template <class ForwardIterator, class Type>
-void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type& val);
+    void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type& val);
 ```
 
 ### Parameters
@@ -1089,7 +1153,7 @@ Copies objects of a specified value into specified number of elements into an un
 
 ```cpp
 template <class FwdIt, class Size, class Type>
-void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
+    void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
 ```
 
 ### Parameters
@@ -1145,6 +1209,76 @@ int main() {
    for ( i = 0 ; i < N; i++ )
       cout << Array [ i ].get( ) <<  " ";
 }
+```
+
+## <a name="uninitialized_move"></a>  uninitialized_move
+
+```cpp
+template <class InputIterator, class ForwardIterator>
+    ForwardIterator uninitialized_move(InputIterator first, InputIterator last, ForwardIterator result); 
+```
+
+### Remarks
+
+Same as:
+
+```cpp
+for (; first != last; (void)++result, ++first)
+    ::new (static_cast<void*>(addressof(*result)))
+        typename iterator_traits<ForwardIterator>::value_type(std::move(*first)); 
+        return result;
+```
+
+If an exception is thrown, some objects in the range might be left in a valid but unspecified state.
+
+## <a name="uninitialized_move_n"></a>  uninitialized_move_n
+
+```cpp
+template <class InputIterator, class Size, class ForwardIterator>
+    pair<InputIterator, ForwardIterator> uninitialized_move_n(InputIterator first, Size n, ForwardIterator result);
+```
+
+### Remarks
+
+Same as:
+
+```cpp
+for (; n > 0; ++result, (void) ++first, --n)
+    ::new (static_cast<void*>(addressof(*result)))
+        typename iterator_traits<ForwardIterator>::value_type(std::move(*first)); return {first,result};
+```
+
+If an exception is thrown, some objects in the range might be left in a valid but unspecified state.
+
+## <a name="uninitialized_value_construct"></a> uninitialized_value_construct
+
+```cpp
+template <class ForwardIterator>
+    void uninitialized_value_construct(ForwardIterator first, ForwardIterator last);
+```
+
+### Remarks
+
+Same as:
+
+```cpp
+for (; first != last; ++first)
+    ::new (static_cast<void*>(addressof(*first)))
+        typename iterator_traits<ForwardIterator>::value_type();
+```
+
+## <a name="uninitialized_value_construct_n"></a> uninitialized_value_construct_n
+
+```cpp
+template <class ForwardIterator, class Size>
+    ForwardIterator uninitialized_value_construct_n(ForwardIterator first, Size n);
+```
+
+Same as:
+```cpp
+for (; n>0; (void)++first, --n)
+    ::new (static_cast<void*>(addressof(*first)))
+        typename iterator_traits<ForwardIterator>::value_type(); return first;
 ```
 
 ## See also

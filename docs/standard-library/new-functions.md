@@ -37,7 +37,7 @@ A value of type *T\** that points to X.
 
 Also referred to as a pointer optimization barrier.
 
-An invocation of this function may be used in a core constant expression whenever the value of its argument may be used in a core constant expression. A byte of storage is reachable through a pointer value that points to an object Y if it is within the storage occupied by Y, an object that's pointer-interconvertible with Y, or the immediately-enclosing array object if Y is an array element. The program is ill-formed if T is a function type or cv void. If a new object is created in storage occupied by an existing object of the same type, a pointer to the original object can be used to refer to the new object unless the type contains const or reference members; in the latter cases, this function can be used to obtain a usable pointer to the new object.
+Used as a constant expression when the value of its argument may be used in a constant expression. A byte of storage is reachable through a pointer value that points to an object if within the storage occupied by another object, an object with a similar pointer.
 
 ### Example
 

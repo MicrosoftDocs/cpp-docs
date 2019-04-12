@@ -28,9 +28,9 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[declare_no_pointers](../standard-library/memory-functions.md#declare_no_pointers)|Informs a garbage collector that the characters starting at a specified address and falling within the indicated block size contain no traceable pointers.|
 |[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|Informs garbage collection that the indicated address is to allocated storage and is reachable.|
 |[default_delete](../standard-library/memory-functions.md#default_delete)|Deletes objects allocated with `operator new`. Suitable for use with `unique_ptr`.|
-|[destroy_at](../standard-library/memory-functions.md#destroy_at)||
-|[destroy](../standard-library/memory-functions.md#destroy)||
-|[destroy_n](../standard-library/memory-functions.md#destroy_n)||
+|[destroy_at](../standard-library/memory-functions.md#destroy_at)|Shorthand `destroy` method.|
+|[destroy](../standard-library/memory-functions.md#destroy)|Shorthand `destroy` method.|
+|[destroy_n](../standard-library/memory-functions.md#destroy_n)|Shorthand `destroy` method.|
 |[dynamic_pointer_cast](../standard-library/memory-functions.md#dynamic_pointer_cast)|Dynamic cast to `shared_ptr`.|
 |[get_deleter](../standard-library/memory-functions.md#get_deleter)|Get deleter from `shared_ptr`.|
 |[get_pointer_safety](../standard-library/memory-functions.md#get_pointer_safety)|Returns the type of pointer safety assumed by any garbage collector.|
@@ -45,14 +45,14 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[undeclare_reachable](../standard-library/memory-functions.md#undeclare_reachable)|Informs a `garbage_collector` that a specified memory location is not reachable.|
 |[uninitialized_copy](../standard-library/memory-functions.md#uninitialized_copy)|Copies objects from a specified input range into an uninitialized destination range.|
 |[uninitialized_copy_n](../standard-library/memory-functions.md#uninitialized_copy_n)|Creates a copy of a specified number of elements from an input iterator. The copies are put in a forward iterator.|
-|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)||
-|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)||
+|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)|Shorthand `uninitialized_default_construct` method.|
+|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)|Shorthand `uninitialized_construct` method.|
 |[uninitialized_fill](../standard-library/memory-functions.md#uninitialized_fill)|Copies objects of a specified value into an uninitialized destination range.|
 |[uninitialized_fill_n](../standard-library/memory-functions.md#uninitialized_fill_n)|Copies objects of a specified value into specified number of elements an uninitialized destination range.|
-|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)||
-|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)||
-|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)||
-|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)||
+|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)|Shorthand `uninitialized_move` method.|
+|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)|Shorthand `uninitialized_move` method.|
+|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)|Shorthand `uninitialized_value_construct` method.|
+|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)|Shorthand `uninitialized_value_construct` method.|
 
 ### Operators
 

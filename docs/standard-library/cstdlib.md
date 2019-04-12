@@ -7,7 +7,7 @@ ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
 ---
 # &lt;cstdlib&gt;
 
-Includes the Standard C library header \<stdlib.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
+Includes the C Standard library header \<stdlib.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
 
 > [!NOTE]
 > \<stdlib.h> doesn't include the type **wchar_t**.
@@ -123,7 +123,7 @@ Next, all open C streams (as mediated by the function signatures declared in <cs
 
 Finally, control is returned to the host environment. If status is zero or EXIT_SUCCESS, an implementation-defined form of the status successful termination is returned. If status is EXIT_FAILURE, an implementation-defined form of the status unsuccessful termination is returned. Otherwise the status returned is implementation-defined.
 
-### <a name="getevn"></a> getenv
+### <a name="getenv"></a> getenv
 
 ```cpp
 char* getenv(const char* name);
