@@ -8,13 +8,47 @@ ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
 
 |||
 |-|-|
-|[get_new_handler](#get_new_handler)|[nothrow](#nothrow)|
-|[set_new_handler](#set_new_handler)|[set_new_handler](#set_new_handler)|
+|[get_new_handler](#get_new_handler)|[launder](#launder)|
+|[nothrow](#nothrow)|[set_new_handler](#set_new_handler)|
 
 ## <a name="get_new_handler"></a> get_new_handler
 
 ```cpp
 new_handler get_new_handler() noexcept;
+```
+
+## <a name="launder"></a>
+
+```cpp
+template <class T>
+    constexpr T* launder(T* ptr) noexcept;
+```
+
+### Parameters
+
+*ptr*<br/>
+The address of a byte in memory which holds an object whose type is similar to *T*.
+
+### Return Value
+
+A value of type *T\** that points to X.
+
+### Remarks
+
+Also referred to as a pointer optimization barrier.
+
+An invocation of this function may be used in a core constant expression whenever the value of its argument may be used in a core constant expression. A byte of storage is reachable through a pointer value that points to an object Y if it is within the storage occupied by Y, an object that's pointer-interconvertible with Y, or the immediately-enclosing array object if Y is an array element. The program is ill-formed if T is a function type or cv void. If a new object is created in storage occupied by an existing object of the same type, a pointer to the original object can be used to refer to the new object unless the type contains const or reference members; in the latter cases, this function can be used to obtain a usable pointer to the new object.
+
+### Example
+
+```cpp
+struct X { const int n; };
+
+X *p = new X{3};
+const int a = p->n;
+new (p) X{5}; // p does not point to new object because X::n is const
+const int b = p->n; // undefined behavior
+const int c = std::launder(p)->n; // OK
 ```
 
 ## <a name="nothrow"></a> nothrow

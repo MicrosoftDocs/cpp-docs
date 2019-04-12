@@ -7,7 +7,7 @@ ms.assetid: 6429a8e6-5a49-4907-8d56-f4a4ec8131d0
 ---
 # bad_array_new_length Class
 
-The class describes an exception thrown to indicate that an allocation request did not succeed.
+The class describes an exception thrown to indicate that an allocation request did not succeed due to array size less than zero or greater than its limit.
 
 ## Syntax
 

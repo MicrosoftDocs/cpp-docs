@@ -11,8 +11,6 @@ ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 |[enum align_val_t](#op_align_val_t)|[operator delete](#op_delete)|[operator delete[]](#op_delete_arr)|
 |[operator new](#op_new)|[operator new[]](#op_new_arr)||
 
-
-
 ## <a name="op_align_val_t"></a> enum align_val_t
 
 ```cpp

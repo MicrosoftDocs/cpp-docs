@@ -7,7 +7,7 @@ ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
 ---
 # nested_exception Class
 
-The class describes an exception that can be thrown from an unexpected handler.
+The class describes an exception for use with multiple inheritance. It captures the currently handled exception and stores it for later use.
 
 ## Syntax
 
@@ -16,27 +16,48 @@ class nested_exception {
     public:
         nested_exception();
         nested_exception(const nested_exception&) = default;
-        nested_exception& operator=(const nested_exception&) = default;
         virtual ~nested_exception() = default; // access functions
-        [[noreturn]] void rethrow_nested() const;
-        exception_ptr nested_ptr() const;
 };
-
-template<class T> [[noreturn]] void throw_with_nested(T&& t);
-template <class E> void rethrow_if_nested(const E& e);
 ```
 
-## Remarks
+### Operators
 
-[unexpected](../standard-library/exception-functions.md#unexpected) will throw a `bad_exception` instead of terminating or instead of calling another function specified with [set_unexpected](../standard-library/exception-functions.md#set_unexpected) if `bad_exception` is included in the throw list of a function.
+|Operator|Description|
+|-|-|
+|[operator=](#op_as)|Assi|
 
-The value returned by `what` is an implementation-defined C string. None of the member functions throw any exceptions.
+### <a href="op_as"></a> operator=
 
-For a list of members inherited by the `bad_exception` class, see [exception Class](../standard-library/exception-class.md).
+```cpp
+nested_exception& operator=(const nested_exception&) = default;
+```
 
-## Example
+## Functions
 
-See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of [unexpected](../standard-library/exception-functions.md#unexpected) throwing a `bad_exception`.
+|Function|Description|
+|-|-|
+|[rethrow_nested](#rethrow_nested)|Throws the stored exception.|
+|[nested_ptr](#nested_ptr)|Returns the stored exception.|
+
+### <a href="nested_ptr"></a> nested_ptr
+
+```cpp
+exception_ptr nested_ptr() const;
+```
+
+#### Return Value
+
+The stored exception captured by this `nested_exception` object.
+
+### <a href="rethrow_nested"></a> rethrow_nested
+
+```cpp
+[[noreturn]] void rethrow_nested() const;
+```
+
+#### Remarks
+
+If `nested_ptr()` returns a null pointer, the function calls `std::terminate()`. Otherwise, it throws the stored exception captured by `*this`.
 
 ## Requirements
 

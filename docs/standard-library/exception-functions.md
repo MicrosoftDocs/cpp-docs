@@ -146,8 +146,12 @@ unexpected_handler get_unexpected();
 
 ```cpp
 template <class E> 
-void rethrow_if_nested(const E& e);
+    void rethrow_if_nested(const E& e);
 ```
+
+### Remarks
+
+If not a polymorphic class type, or if `nested_exception` is inaccessible or ambiguous, there is no effect. Otherwise, performs a dynamic cast.
 
 ## <a name="set_unexpected"></a> set_unexpected
 
@@ -219,8 +223,12 @@ See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) 
 
 ```cpp
 template <class T> [[noreturn]]
-void throw_with_nested(T&& t);
+    void throw_with_nested(T&& t);
 ```
+
+### Remarks
+
+Throws exception with nested exceptions.
 
 ## <a name="uncaught_exception"></a>  uncaught_exception
 

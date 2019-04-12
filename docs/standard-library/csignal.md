@@ -7,28 +7,24 @@ ms.assetid: d18bcf82-a89a-476c-a6bf-726af956f7c0
 ---
 # &lt;csignal&gt;
 
-Includes the Standard C library header \<signal.h> and adds the associated names to the `std` namespace.
+Includes the C Standard library header \<signal.h> and adds the associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
+
 
 ## Syntax
 
 ```cpp
 #include <csignal>
-
-using sig_atomic_t = see below;
-
-extern using signal-handler = void(int);
 ```
 
-## Functions
+## Namespace and Macros
 
 ```cpp
-signal-handler* signal(int sig, signal-handler* func);
-int raise(int sig);
-```
+namespace std {
+    using sig_atomic_t = see below;
 
-## Definitions
+    extern using signal-handler = void(int);
+}
 
-```cpp
 #define SIG_DFL
 #define SIG_ERR
 #define SIG_IGN
@@ -40,9 +36,12 @@ int raise(int sig);
 #define SIGTERM
 ```
 
-## Remarks
+## Functions
 
-Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
+```cpp
+signal-handler* signal(int sig, signal-handler* func);
+int raise(int sig);
+```
 
 ## See also
 

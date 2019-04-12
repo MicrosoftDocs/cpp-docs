@@ -24,17 +24,6 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[addressof](../standard-library/memory-functions.md#addressof)|Gets the true address of an object.|
 |[align](../standard-library/memory-functions.md#align)|Returns a pointer to a range of a given size, based on the provided alignment and starting address.|
 |[allocate_shared](../standard-library/memory-functions.md#allocate_shared)|Creates a `shared_ptr` to objects that are allocated and constructed for a given type with a specified allocator.|
-|[atomic_compare_exchange_strong](../standard-library/memory-functions.md#atomic_compare_exchange_strong)||
-|[atomic_compare_exchange_strong_explicit](../standard-library/memory-functions.md#atomic_compare_exchange_strong_explicit)||
-|[atomic_compare_exchange_weak](../standard-library/memory-functions.md#atomic_compare_exchange_weak)||
-|[atomic_compare_exchange_weak_explicit](../standard-library/memory-functions.md#atomic_compare_exchange_weak_explicit)||
-|[atomic_exchange](../standard-library/memory-functions.md#atomic_exchange)||
-|[atomic_exchange_explicit](../standard-library/memory-functions.md#atomic_exchange_explicit)||
-|[atomic_is_lock_free](../standard-library/memory-functions.md#atomic_is_lock_free)||
-|[atomic_load](../standard-library/memory-functions.md#atomic_load)||
-|[atomic_load_explicit](../standard-library/memory-functions.md#atomic_load_explicit)||
-|[atomic_store](../standard-library/memory-functions.md#atomic_store)||
-|[atomic_store_explicit](../standard-library/memory-functions.md#atomic_store_explicit)||
 |[const_pointer_cast](../standard-library/memory-functions.md#const_pointer_cast)|Const cast to `shared_ptr`.|
 |[declare_no_pointers](../standard-library/memory-functions.md#declare_no_pointers)|Informs a garbage collector that the characters starting at a specified address and falling within the indicated block size contain no traceable pointers.|
 |[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|Informs garbage collection that the indicated address is to allocated storage and is reachable.|
