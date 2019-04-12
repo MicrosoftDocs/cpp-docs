@@ -12,14 +12,18 @@ helpviewer_keywords: ["std::exchange [C++]", "std::forward [C++]", "std::make_pa
 |[as_const](#asconst)|[declval](#declval)|[exchange](#exchange)|
 |[forward](#forward)|[from_chars](#fromchars)|[get Function &lt;utility&gt;](#get)|
 |[make_pair](#make_pair)|[move](#move)|[move_if_noexcept](#moveif)|
-|[swap](#swap)|[to_chars](#tochars)||
+|[swap](#swap)|||
 
 ## <a name="asconst"></a>  as_const
 
 ```cpp
-    template <class T> constexpr add_const_t<T>& as_const(T& t) noexcept;
-    template <class T> void as_const(const T&&) = delete;
+template <class T> constexpr add_const_t<T>& as_const(T& t) noexcept;
+template <class T> void as_const(const T&&) = delete;
 ```
+
+### Return Value
+
+Returns *T*.
 
 ## <a name="declval"></a> declval
 
@@ -341,6 +345,10 @@ One advantage of `swap` is that the types of objects that are being stored are d
     to_chars_result to_chars(char* first, char* last, double value, chars_format fmt, int precision); 
     to_chars_result to_chars(char* first, char* last, long double value, chars_format fmt, int precision);
 ```
+
+### Remarks
+
+Converts value into a character string by filling the range `[first, last)`, where `[first, last)` is required to be a valid range.
 
 ## See also
 

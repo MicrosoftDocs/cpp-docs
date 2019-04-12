@@ -11,7 +11,10 @@ No description.
 ## Syntax
 
 ```cpp
-struct to_chars_result { char* ptr; error_code ec; };
+struct to_chars_result {
+    char* ptr;
+    error_code ec;
+};
 ```
 
 ## Requirements

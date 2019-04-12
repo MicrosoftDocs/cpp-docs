@@ -30,16 +30,16 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 |Function|Description|
 |-|-|
-|[as_const](../standard-library/utility-functions.md#asconst)||
-|[declval](../standard-library/utility-functions.md#declval)||
-|[exchange](../standard-library/utility-functions.md#exchange)||
+|[as_const](../standard-library/utility-functions.md#asconst)|Returns type.|
+|[declval](../standard-library/utility-functions.md#declval)|Shorthand expression evaluation.|
+|[exchange](../standard-library/utility-functions.md#exchange)|Assigns a new value to an object and returns its old value.|
 |[forward](../standard-library/utility-functions.md#forward)|Preserves the reference type (either `lvalue` or `rvalue`) of the argument from being obscured by perfect forwarding.|
 |[get](../standard-library/utility-functions.md#get)|A function that gets an element from a `pair` object.|
 |[make_pair](../standard-library/utility-functions.md#make_pair)|A template helper function used to construct objects of type `pair`, where the component types are based on the data types passed as parameters.|
 |[move](../standard-library/utility-functions.md#move)|Returns the passed in argument as an `rvalue` reference.|
 |[move_if_noexcept](../standard-library/utility-functions.md#moveif)||
 |[swap](../standard-library/utility-functions.md#swap)|Exchanges the elements of two `pair` objects.|
-|[to_chars](../standard-library/utility-functions.md#tochars)||
+|[to_chars](../standard-library/utility-functions.md#tochars)|Converts value into a character string.|
 
 ### Operators
 
@@ -56,11 +56,11 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 |||
 |-|-|
-|[identity](../standard-library/identity-structure.md)||
-|[integer_sequence](../standard-library/integer-sequence-class.md)||
+|[identity](../standard-library/identity-structure.md)|A struct that provides a type definition as the template parameter.|
+|[integer_sequence](../standard-library/integer-sequence-class.md)|Represents an integer sequence.|
 |[pair](../standard-library/pair-structure.md)|A type that provides for the ability to treat two objects as a single object.|
-|[piecewise_construct_t](../standard-library/piecewise-construct-t-structure.md)||
-|[to_chars_result](../standard-library/to-chars-result-structure.md)||
+|[piecewise_construct_t](../standard-library/piecewise-construct-t-structure.md)|A type used to keep separate constructor and function overloading.|
+|[to_chars_result](../standard-library/to-chars-result-structure.md)|A struct used for `to_chars`.|
 
 ## See also
 
