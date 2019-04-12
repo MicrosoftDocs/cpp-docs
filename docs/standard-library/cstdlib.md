@@ -57,7 +57,7 @@ extern "C++" using compare-pred = int(const void*, const void*);
 |[getenv](#getenv)|See C standard library reference.|
 |[system](#system)|See C standard library reference.|
 
-### <a href="_exit"></a> _Exit
+### <a name="_exit"></a> _Exit
 
 ```cpp
 [[noreturn]] void _Exit(int status) noexcept;
@@ -67,7 +67,7 @@ extern "C++" using compare-pred = int(const void*, const void*);
 
 The program is terminated without executing destructors for objects of automatic, thread, or static storage duration and without calling functions passed to `atexit()`. The function `_Exit` is signal-safe.
 
-### <a href="abort"></a> abort
+### <a name="abort"></a> abort
 
 ```cpp
 [[noreturn]] void abort() noexcept;
@@ -77,7 +77,7 @@ The program is terminated without executing destructors for objects of automatic
 
 The program is terminated without executing destructors for objects of automatic, thread, or static storage duration and without calling functions passed to `atexit()`. The function `abort` is signal-safe.
 
-### <a href="at_quick_exit"></a> at_quick_exit
+### <a name="at_quick_exit"></a> at_quick_exit
 
 ```cpp
 int at_quick_exit(c-atexit-handler * func) noexcept;
@@ -92,7 +92,7 @@ Zero if the registration succeeds, non-zero if it fails.
 
 The `at_quick_exit()` functions register the function pointed to by *func* to be called without arguments when `quick_exit` is called. It's unspecified whether a call to `at_quick_exit()` that doesn't happen before all calls to `quick_exit` will succeed and the `at_quick_exit()` functions do not introduce a data race. The order of registration may be indeterminate if `at_quick_exit` was called from more than one thread and since `at_quick_exit` registrations are distinct from the `atexit` registrations, applications may need to call both registration functions with the same argument. The implementation shall support the registration of at least 32 functions.
 
-### <a href="atexit"></a> atexit
+### <a name="atexit"></a> atexit
 
 ```cpp
 int atexit(c-atexit-handler * func) noexcept;
@@ -107,7 +107,7 @@ The `atexit()` functions register the function pointed to by *func* to be called
 
 Returns zero if the registration succeeds, nonzero if it fails.
 
-### <a href="exit"></a> exit
+### <a name="exit"></a> exit
 
 ```cpp
 [[noreturn]] void exit(int status);
@@ -123,13 +123,13 @@ Next, all open C streams (as mediated by the function signatures declared in <cs
 
 Finally, control is returned to the host environment. If status is zero or EXIT_SUCCESS, an implementation-defined form of the status successful termination is returned. If status is EXIT_FAILURE, an implementation-defined form of the status unsuccessful termination is returned. Otherwise the status returned is implementation-defined.
 
-### <a href="getevn"></a> getenv
+### <a name="getevn"></a> getenv
 
 ```cpp
 char* getenv(const char* name);
 ```
 
-### <a href="quick_exit"></a> quick_exit
+### <a name="quick_exit"></a> quick_exit
 
 ```cpp
 [[noreturn]] void quick_exit(int status) noexcept;
@@ -140,7 +140,7 @@ char* getenv(const char* name);
 Functions registered by calls to `at_quick_exit` are called in the reverse order of their registration, except that a function shall be called after any previously registered functions that had already been called at the time it was registered. Objects shall not be destroyed as a result of calling
 `quick_exit`. If control leaves a registered function called by `quick_exit` because the function doesn't provide a handler for a thrown exception, `std::terminate()` shall be called. A function registered via `at_quick_exit` is invoked by the thread that calls `quick_exit`, which can be a different thread than the one that registered it, so registered functions shouldn't rely on the identity of objects with thread storage duration. After calling registered functions, `quick_exit` shall call `_Exit(status)`. The standard file buffers aren't flushed. The function `quick_exit` is signal-safe when the functions registered with `at_quick_exit` are.
 
-### <a href="system"></a> system
+### <a name="system"></a> system
 
 ```cpp
 int system(const char* string);

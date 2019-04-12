@@ -22,11 +22,7 @@ class nested_exception {
 
 ### Operators
 
-|Operator|Description|
-|-|-|
-|[operator=](#op_as)|Assi|
-
-### <a href="op_as"></a> operator=
+### <a name="op_as"></a> operator=
 
 ```cpp
 nested_exception& operator=(const nested_exception&) = default;
@@ -39,7 +35,7 @@ nested_exception& operator=(const nested_exception&) = default;
 |[rethrow_nested](#rethrow_nested)|Throws the stored exception.|
 |[nested_ptr](#nested_ptr)|Returns the stored exception.|
 
-### <a href="nested_ptr"></a> nested_ptr
+### <a name="nested_ptr"></a> nested_ptr
 
 ```cpp
 exception_ptr nested_ptr() const;
@@ -49,7 +45,7 @@ exception_ptr nested_ptr() const;
 
 The stored exception captured by this `nested_exception` object.
 
-### <a href="rethrow_nested"></a> rethrow_nested
+### <a name="rethrow_nested"></a> rethrow_nested
 
 ```cpp
 [[noreturn]] void rethrow_nested() const;
