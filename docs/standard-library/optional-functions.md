@@ -1,0 +1,36 @@
+---
+title: "&lt;optional&gt; functions"
+ms.date: "11/04/2016"
+f1_keywords: ["optional/std::swap"]
+ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
+---
+# &lt;optional&gt; functions
+
+||
+|-|
+|[swap](#swap)|
+
+## <a name="swap"></a>  swap
+
+Exchanges the elements of two forward lists.
+
+```cpp
+void swap(
+    forward_list <Type, Allocator>& left,
+    forward_list <Type, Allocator>& right);
+```
+
+### Parameters
+
+|Parameter|Description|
+|---------------|-----------------|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
+
+### Remarks
+
+This template function executes `left.swap(right)`.
+
+## See also
+
+[<optional>](../standard-library/optional.md)<br/>
