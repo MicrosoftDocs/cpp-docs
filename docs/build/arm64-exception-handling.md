@@ -38,7 +38,7 @@ These are the assumptions made in the exception handling description:
 
 1. There is no conditional code in epilogs.
 
-1. Dedicated frame pointer register: If the sp is saved in another register (r29) in the prolog, that register remains untouched throughout the function, so that the original sp may be recovered at any time.
+1. Dedicated frame pointer register: If the sp is saved in another register (x29) in the prolog, that register remains untouched throughout the function, so that the original sp may be recovered at any time.
 
 1. Unless the sp is saved in another register, all manipulation of the stack pointer occurs strictly within the prolog and epilog.
 
@@ -48,90 +48,90 @@ These are the assumptions made in the exception handling description:
 
 ![stack frame layout](media/arm64-exception-handling-stack-frame.png "stack frame layout")
 
-For frame chained functions, the fp and lr pair can be saved at any position in the local variable area depending on optimization considerations. The goal is to maximize the number of locals that can be reached by one single instruction based on frame pointer (r29) or stack pointer (sp). However for `alloca` functions, it must be chained and r29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register save areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<r29, lr> pair) and outgoing parameter size, respectively.
+For frame chained functions, the fp and lr pair can be saved at any position in the local variable area depending on optimization considerations. The goal is to maximize the number of locals that can be reached by one single instruction based on frame pointer (x29) or stack pointer (sp). However for `alloca` functions, it must be chained and x29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register save areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<x29, lr> pair) and outgoing parameter size, respectively.
 
 1. Chained, #localsz \<= 512
 
     ```asm
-        stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
-        stp    d8,d9,[sp,16]            // save in FP regs (optional)
-        stp    r0,r1,[sp,32]            // home params (optional)
-        stp    r2,r3,[sp, 48]
-        stp    r4,r5,[sp,64]
-        stp    r6,r7,[sp,72]
-        stp    r29, lr, [sp, -#localsz]!    // save <r29,lr> at bottom of local area
-        mov    r29,sp                   // r29 points to bottom of local
-        sub    sp, #outsz               // (optional for #outsz != 0)
+        stp    x19,x20,[sp,#-96]!        // pre-indexed, save in 1st FP/INT pair
+        stp    d8,d9,[sp,#16]            // save in FP regs (optional)
+        stp    x0,x1,[sp,#32]            // home params (optional)
+        stp    x2,x3,[sp,#48]
+        stp    x4,x5,[sp,#64]
+        stp    x6,x7,[sp,#72]
+        stp    x29,lr,[sp,#-localsz]!   // save <x29,lr> at bottom of local area
+        mov    x29,sp                   // x29 points to bottom of local
+        sub    sp,sp,#outsz             // (optional for #outsz != 0)
     ```
 
 1. Chained, #localsz > 512
 
     ```asm
-        stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
-        stp    d8,d9,[sp,16]            // save in FP regs (optional)
-        stp    r0,r1,[sp,32]            // home params (optional)
-        stp    r2,r3,[sp, 48]
-        stp    r4,r5,[sp,64]
-        stp    r6,r7,[sp,72]
-        sub    sp,#localsz+#outsz       // allocate remaining frame
-        stp    r29, lr, [sp, #outsz]    // save <r29,lr> at bottom of local area
-        add    r29,sp, #outsz           // setup r29 points to bottom of local area
+        stp    x19,x20,[sp,#-96]!        // pre-indexed, save in 1st FP/INT pair
+        stp    d8,d9,[sp,#16]            // save in FP regs (optional)
+        stp    x0,x1,[sp,#32]            // home params (optional)
+        stp    x2,x3,[sp,#48]
+        stp    x4,x5,[sp,#64]
+        stp    x6,x7,[sp,#72]
+        sub    sp,sp,#(localsz+outsz)   // allocate remaining frame
+        stp    x29,lr,[sp,#outsz]       // save <x29,lr> at bottom of local area
+        add    x29,sp,#outsz            // setup x29 points to bottom of local area
     ```
 
 1. Unchained, leaf functions (lr unsaved)
 
     ```asm
-        stp    r19,r20,[sp, -72]!       // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp, 16]
-        str    r23 [sp,32]
-        stp    d8,d9,[sp,40]            // save FP regs (optional)
-        stp    d10,d11,[sp,56]
-        sub    sp,#framesz-72           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]
+        str    x23,[sp,#32]
+        stp    d8,d9,[sp,#40]           // save FP regs (optional)
+        stp    d10,d11,[sp,#56]
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
-   All locals are accessed based on SP. \<r29,lr> points to the previous frame. For frame size \<= 512, the "sub sp, ..." can be optimized away if the regs saved area is moved to the bottom of stack. The downside of that is that it is not consistent with other layouts above, and saved regs take part of the range for pair-regs and pre- and post-indexed offset addressing mode.
+   All locals are accessed based on SP. \<x29,lr> points to the previous frame. For frame size \<= 512, the "sub sp, ..." can be optimized away if the regs saved area is moved to the bottom of stack. The downside of that is that it is not consistent with other layouts above, and saved regs take part of the range for pair-regs and pre- and post-indexed offset addressing mode.
 
 1. Unchained, non-leaf functions (lr is saved in Int saved area)
 
     ```asm
-        stp    r19,r20,[sp,-80]!        // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp,16]          // ...
-        stp    r23, lr,[sp, 32]         // save last Int reg and lr
-        stp    d8,d9,[sp, 48]           // save FP reg-pair (optional)
-        stp    d10,d11,[sp,64]          // ...
-        sub    sp,#framesz-80           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]         // ...
+        stp    x23,lr,[sp,#32]          // save last Int reg and lr
+        stp    d8,d9,[sp,#48]           // save FP reg-pair (optional)
+        stp    d10,d11,[sp,#64]         // ...
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
    Or, with even number saved Int registers,
 
     ```asm
-        stp    r19,r20,[sp,-72]!        // pre-indexed, save in 1st FP/INT reg-pair
-        stp    r21,r22,[sp,16]          // ...
-        str    lr,[sp, 32]              // save lr
-        stp    d8,d9,[sp, 40]           // save FP reg-pair (optional)
-        stp    d10,d11,[sp,56]          // ...
-        sub    sp,#framesz-72           // allocate the remaining local area
+        stp    x19,x20,[sp,#-80]!       // pre-indexed, save in 1st FP/INT reg-pair
+        stp    x21,x22,[sp,#16]         // ...
+        str    lr,[sp,#32]              // save lr
+        stp    d8,d9,[sp,#40]           // save FP reg-pair (optional)
+        stp    d10,d11,[sp,#56]         // ...
+        sub    sp,sp,#(framesz-80)      // allocate the remaining local area
     ```
 
-   Only r19 saved:
+   Only x19 saved:
 
     ```asm
-        sub    sp, sp, #16              // reg save area allocation*
-        stp    r19,lr,[sp,0]            // save r19, lr
-        sub    sp,#framesz-16           // allocate the remaining local area
+        sub    sp,sp,#16                // reg save area allocation*
+        stp    x19,lr,[sp]              // save x19, lr
+        sub    sp,sp,#(framesz-16)      // allocate the remaining local area
     ```
 
    \* The reg save area allocation is not folded into the stp because a pre-indexed reg-lr stp cannot be represented with the unwind codes.
 
-   All locals are accessed based on SP. \<r29> points to the previous frame.
+   All locals are accessed based on SP. \<x29> points to the previous frame.
 
 1. Chained, #framesz \<= 512, #outsz = 0
 
     ```asm
-        stp    r29, lr, [sp, -#framesz]!    // pre-indexed, save <r29,lr>
-        mov    r29,sp                       // r29 points to bottom of stack
-        stp    r19,r20,[sp, #framesz -32]   // save INT pair
-        stp    d8,d9,[sp, #framesz -16]     // save FP pair
+        stp    x29,lr,[sp,#-framesz]!       // pre-indexed, save <x29,lr>
+        mov    x29,sp                       // x29 points to bottom of stack
+        stp    x19,x20,[sp,#(framesz-32)]   // save INT pair
+        stp    d8,d9,[sp,#(framesz-16)]     // save FP pair
     ```
 
    Comparing to #1 prolog above, the advantage is that all register save instructions are ready to be executed right after the only one stack allocating instruction. Thus, there is no anti-dependence on sp that prevents from instruction level parallelism.
@@ -139,38 +139,38 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
 1. Chained, frame size > 512 (optional for functions without alloca)
 
     ```asm
-        stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
-        stp    r19,r20,[sp,16]              // save in INT regs
-        stp    r21,r22,[sp,32]              // ...
-        stp    d8,d9,[sp,48]                // save in FP regs
-        stp    d10,d11,[sp,64]
-        mov    r29,sp                       // r29 points to top of local area
-        sub    sp,#framesz-80               // allocate the remaining local area
+        stp    x29,lr,[sp,#-80]!            // pre-indexed, save <x29,lr>
+        stp    x19,x20,[sp,#16]             // save in INT regs
+        stp    x21,x22,[sp,#32]             // ...
+        stp    d8,d9,[sp,#48]               // save in FP regs
+        stp    d10,d11,[sp,#64]
+        mov    x29,sp                       // x29 points to top of local area
+        sub    sp,sp,#(framesz-80)          // allocate the remaining local area
     ```
 
-   For optimization purpose, r29 can be put at any position in local area to provide a better coverage for "reg-pair" and pre-/post-indexed offset addressing mode. Locals below frame pointers can be accessed based on SP.
+   For optimization purpose, x29 can be put at any position in local area to provide a better coverage for "reg-pair" and pre-/post-indexed offset addressing mode. Locals below frame pointers can be accessed based on SP.
 
 1. Chained, frame size > 4K, with or without alloca(),
 
     ```asm
-        stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
-        stp    r19,r20,[sp,16]              // save in INT regs
-        stp    r21,r22,[sp,32]              // ...
-        stp    d8,d9,[sp,48]                // save in FP regs
-        stp    d10,d11,[sp,64]
-        mov    r29,sp                       // r29 points to top of local area
-        mov    r8, #framesz/16
-        bl     chkstk
-        sub    sp, r8*16                    // allocate remaining frame
+        stp    x29,lr,[sp,#-80]!            // pre-indexed, save <x29,lr>
+        stp    x19,x20,[sp,#16]             // save in INT regs
+        stp    x21,x22,[sp,#32]             // ...
+        stp    d8,d9,[sp,#48]               // save in FP regs
+        stp    d10,d11,[sp,#64]
+        mov    x29,sp                       // x29 points to top of local area
+        mov    x15,#(framesz/16)
+        bl     __chkstk
+        sub    sp,sp,x15,lsl#4              // allocate remaining frame
                                             // end of prolog
         ...
-        sp = alloca                         // more alloca() in body
+        sub    sp,sp,#alloca                // more alloca() in body
         ...
                                             // beginning of epilog
-        mov    sp,r29                       // sp points to top of local area
-        ldp    d10,d11, [sp,64],
+        mov    sp,x29                       // sp points to top of local area
+        ldp    d10,d11,[sp,#64]
         ...
-        ldp    r29, lr, [sp], -80           // post-indexed, reload <r29,lr>
+        ldp    x29,lr,[sp],#80              // post-indexed, reload <x29,lr>
     ```
 
 ## ARM64 exception handling information
@@ -280,22 +280,22 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 |Unwind code|Bits and interpretation|
 |-|-|
 |`alloc_s`|000xxxxx: allocate small stack with size \< 512 (2^5 * 16).|
-|`save_r19r20_x`|    001zzzzz: save \<r19,r20> pair at [sp-#Z*8]!, pre-indexed offset >= -248 |
-|`save_fplr`|        01zzzzzz: save \<r29,lr> pair at [sp+#Z*8],  offset \<= 504. |
-|`save_fplr_x`|        10zzzzzz: save \<r29,lr> pair at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
+|`save_r19r20_x`|    001zzzzz: save \<x19,x20> pair at [sp-#Z*8]!, pre-indexed offset >= -248 |
+|`save_fplr`|        01zzzzzz: save \<x29,lr> pair at [sp+#Z*8],  offset \<= 504. |
+|`save_fplr_x`|        10zzzzzz: save \<x29,lr> pair at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
 |`alloc_m`|        11000xxx'xxxxxxxx: allocate large stack with size \< 16k (2^11 * 16). |
-|`save_regp`|        110010xx'xxzzzzzz: save r(19+#X) pair at [sp+#Z*8], offset \<= 504 |
-|`save_regp_x`|        110011xx'xxzzzzzz: save pair r(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
-|`save_reg`|        110100xx'xxzzzzzz: save reg r(19+#X) at [sp+#Z*8], offset \<= 504 |
-|`save_reg_x`|        1101010x'xxxzzzzz: save reg r(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -256 |
-|`save_lrpair`|         1101011x'xxzzzzzz: save pair \<r19+2*#X,lr> at [sp+#Z*8], offset \<= 504 |
+|`save_regp`|        110010xx'xxzzzzzz: save x(19+#X) pair at [sp+#Z*8], offset \<= 504 |
+|`save_regp_x`|        110011xx'xxzzzzzz: save pair x(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
+|`save_reg`|        110100xx'xxzzzzzz: save reg x(19+#X) at [sp+#Z*8], offset \<= 504 |
+|`save_reg_x`|        1101010x'xxxzzzzz: save reg x(19+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -256 |
+|`save_lrpair`|         1101011x'xxzzzzzz: save pair \<x(19+2*#X),lr> at [sp+#Z*8], offset \<= 504 |
 |`save_fregp`|        1101100x'xxzzzzzz: save pair d(8+#X) at [sp+#Z*8], offset \<= 504 |
 |`save_fregp_x`|        1101101x'xxzzzzzz: save pair d(8+#X), at [sp-(#Z+1)*8]!, pre-indexed offset >= -512 |
 |`save_freg`|        1101110x'xxzzzzzz: save reg d(8+#X) at [sp+#Z*8], offset \<= 504 |
 |`save_freg_x`|        11011110'xxxzzzzz: save reg d(8+#X) at [sp-(#Z+1)*8]!, pre-indexed offset >= -256 |
 |`alloc_l`|         11100000'xxxxxxxx'xxxxxxxx'xxxxxxxx: allocate large stack with size \< 256M (2^24 *16) |
-|`set_fp`|        11100001: set up r29: with: mov r29,sp |
-|`add_fp`|        11100010'xxxxxxxx: set up r29 with: add r29,sp,#x*8 |
+|`set_fp`|        11100001: set up x29: with: mov x29,sp |
+|`add_fp`|        11100010'xxxxxxxx: set up x29 with: add x29,sp,#x*8 |
 |`nop`|            11100011: no unwind operation is required. |
 |`end`|            11100100: end of unwind code. Implies ret in epilog. |
 |`end_c`|        11100101: end of unwind code in current chained scope. |
@@ -341,12 +341,12 @@ The fields are as follows:
 - **Function Length** is an 11-bit field providing the length of the entire function in bytes, divided by 4. If the function is larger than 8k, a full .xdata record must be used instead.
 - **Frame Size** is a 9-bit field indicating the number of bytes of stack that is allocated for this function, divided by 16. Functions that allocate greater than (8k-16) bytes of stack must use a full .xdata record. This includes local variable area, outgoing parameter area, callee-saved Int and FP area, and home parameter area, but excluding dynamic allocation area.
 - **CR** is a 2-bit flag indicating whether the function includes extra instructions to set up a frame chain and return link:
-  - 00 = unchained function, \<r29,lr> pair is not saved in stack.
+  - 00 = unchained function, \<x29,lr> pair is not saved in stack.
   - 01 = unchained function, \<lr> is saved in stack
   - 10 = reserved;
-  - 11 = chained function, a store/load pair instruction is used in prolog/epilog \<r29,lr>
-- **H** is a 1-bit flag indicating whether the function homes the integer parameter registers (r0-r7) by storing them at the very start of the function. (0=does not home registers, 1=homes registers).
-- **RegI** is a 4-bit field indicating the number of non-volatile INT registers (r19-r28) saved in the canonical stack location.
+  - 11 = chained function, a store/load pair instruction is used in prolog/epilog \<x29,lr>
+- **H** is a 1-bit flag indicating whether the function homes the integer parameter registers (x0-x7) by storing them at the very start of the function. (0=does not home registers, 1=homes registers).
+- **RegI** is a 4-bit field indicating the number of non-volatile INT registers (x19-x28) saved in the canonical stack location.
 - **RegF** is a 3-bit field indicating the number of non-volatile FP registers (d8-d15) saved in the canonical stack location. (RegF=0: no FP register is saved; RegF>0: RegF+1 FP registers are saved). Packed unwind data cannot be used for function that save only one FP register.
 
 Canonical prologs that fall into categories 1, 2 (without outgoing parameter area), 3 and 4 in section above can be represented by packed unwind format.  The epilogs for canonical functions follow a very similar form, except **H** has no effect, the `set_fp` instruction is omitted, and the order of steps as well as instructions in each step are reversed in epilog. The algorithm for packed xdata follows these steps, detailed in the following table:
@@ -361,26 +361,26 @@ Step 3: Save FP callee-saved registers.
 
 Step 4: Save input arguments in the home parameter area.
 
-Step 5: Allocate remaining stack, including local area, \<r29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
+Step 5: Allocate remaining stack, including local area, \<x29,lr> pair, and outgoing parameter area. 5a  corresponds to canonical type 1. 5b and 5c are for canonical type 2. 5d and 5e are for both type 3 and type 4.
 
 Step #|Flag values|# of instructions|Opcode|Unwind Code
 -|-|-|-|-
 0|||`#intsz = RegI * 8;`<br/>`if (CR==01) #intsz += 8; // lr`<br/>`#fpsz = RegF * 8;`<br/>`if(RegF) #fpsz += 8;`<br/>`#savsz=((#intsz+#fpsz+8*8*H)+0xf)&~0xf)`<br/>`#locsz = #famsz - #savsz`|
-1|0 < **RegI** <= 10|RegI / 2 + **RegI** % 2|`stp r19,r20,[sp,#savsz]!`<br/>`stp r21,r22,[sp,16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
-2|**CR**==01*|1|`str lr,[sp, #intsz-8]`\*|`save_reg`
-3|0 < **RegF** <=7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2)|`stp d8,d9,[sp, #intsz]`\*\*<br/>`stp d10,d11,[sp, #intsz+16]`<br/>`...`<br/>`str d(8+RegF),[sp, #intsz+#fpsz-8]`|`save_fregp`<br/>`...`<br/>`save_freg`
-4|**H** == 1|4|`stp r0,r1,[sp, #intsz+#fpsz]`<br/>`stp r2,r3,[sp, #intsz+#fpsz+16]`<br/>`stp r4,r5,[sp, #intsz+#fpsz+32]`<br/>`stp r6,r7,[sp, #intsz+#fpsz+48]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
-5a|**CR** == 11 && #locsz<br/> <= 512|2|`stp r29,lr,[sp,-#locsz]!`<br/>`mov r29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
-5b|**CR** == 11 &&<br/>512 < #locsz <= 4088|3|`sub sp,sp, #locsz`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
-5c|**CR** == 11 && #locsz > 4088|4|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`<br/>`stp r29,lr,[sp,0]`<br/>`add r29, sp, 0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
-5d|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz <= 4088|1|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
-5e|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
+1|0 < **RegI** <= 10|RegI / 2 + **RegI** % 2|`stp x19,x20,[sp,#savsz]!`<br/>`stp x21,x22,[sp,#16]`<br/>`...`|`save_regp_x`<br/>`save_regp`<br/>`...`
+2|**CR**==01*|1|`str lr,[sp,#(intsz-8)]`\*|`save_reg`
+3|0 < **RegF** <=7|(RegF + 1) / 2 +<br/>(RegF + 1) % 2)|`stp d8,d9,[sp,#intsz]`\*\*<br/>`stp d10,d11,[sp,#(intsz+16)]`<br/>`...`<br/>`str d(8+RegF),[sp,#(intsz+fpsz-8)]`|`save_fregp`<br/>`...`<br/>`save_freg`
+4|**H** == 1|4|`stp x0,x1,[sp,#(intsz+fpsz)]`<br/>`stp x2,x3,[sp,#(intsz+fpsz+16)]`<br/>`stp x4,x5,[sp,#(intsz+fpsz+32)]`<br/>`stp x6,x7,[sp,#(intsz+fpsz+48)]`|`nop`<br/>`nop`<br/>`nop`<br/>`nop`
+5a|**CR** == 11 && #locsz<br/> <= 512|2|`stp x29,lr,[sp,#-locsz]!`<br/>`mov x29,sp`\*\*\*|`save_fplr_x`<br/>`set_fp`
+5b|**CR** == 11 &&<br/>512 < #locsz <= 4080|3|`sub sp,sp,#locsz`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0`|`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5c|**CR** == 11 && #locsz > 4080|4|`sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`<br/>`stp x29,lr,[sp,0]`<br/>`add x29,sp,0`|`alloc_m`<br/>`alloc_s`/`alloc_m`<br/>`save_fplr`<br/>`set_fp`
+5d|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz <= 4080|1|`sub sp,sp,#locsz`|`alloc_s`/`alloc_m`
+5e|(**CR** == 00 \|\| **CR**==01) &&<br/>#locsz > 4080|2|`sub sp,sp,4080`<br/>`sub sp,sp,#(locsz-4080)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
 
 \* If **CR** == 01 and **RegI** is an odd number, Step 2 and last save_rep in step 1 are merged into one save_regp.
 
 \*\* If **RegI** == **CR** == 0, and **RegF** != 0, the first stp for the floating-point does the predecrement.
 
-\*\*\* No instruction corresponding to `mov r29, sp` is present in the epilog. Packed unwind data cannot be used if a function requires restoration of sp from r29.
+\*\*\* No instruction corresponding to `mov x29,sp` is present in the epilog. Packed unwind data cannot be used if a function requires restoration of sp from x29.
 
 ### Unwinding partial prologs and epilogs
 
@@ -391,16 +391,16 @@ It is more difficult to correctly unwind in the case where an exception or inter
 For example, take this prolog and epilog sequence:
 
 ```asm
-0000:    stp    r29, lr, [sp, -256]!        // save_fplr_x  256 (pre-indexed store)
-0004:    stp    d8,d9,[sp,224]              // save_fregp 0, 224
-0008:    stp    r19,r20,[sp,240]            // save_regp 0, 240
-000c:    mov    r29,sp                      // set_fp
+0000:    stp    x29,lr,[sp,#-256]!          // save_fplr_x  256 (pre-indexed store)
+0004:    stp    d8,d9,[sp,#224]             // save_fregp 0, 224
+0008:    stp    x19,x20,[sp,#240]           // save_regp 0, 240
+000c:    mov    x29,sp                      // set_fp
          ...
-0100:    mov    sp,r29                      // set_fp
-0104:    ldp    r19,r20,[sp,240]            // save_regp 0, 240
+0100:    mov    sp,x29                      // set_fp
+0104:    ldp    x19,x20,[sp,#240]           // save_regp 0, 240
 0108:    ldp    d8,d9,[sp,224]              // save_fregp 0, 224
-010c:    ldp    r29, lr, [sp, -256]!        // save_fplr_x  256 (post-indexed load)
-0110:    ret     lr                         // end
+010c:    ldp    x29,lr,[sp],#256            // save_fplr_x  256 (post-indexed load)
+0110:    ret    lr                          // end
 ```
 
 Next to each opcode is the appropriate unwind code describing this operation. The first thing to note is that the series of unwind codes for the prolog is an exact mirror image of the unwind codes for the epilog (not counting the final instruction of the epilog). This is a common situation, and for this reason the unwind codes for the prolog are always assumed to be stored in reverse order from the prolog's execution order.
@@ -436,9 +436,9 @@ A typical case of function fragments is "code separation" with that compiler may
 - (region 1 : begin)
 
     ```asm
-        stp     r29, lr, [sp, -256]!    // save_fplr_x  256 (pre-indexed store)
-        stp     r19,r20,[sp,240]        // save_regp 0, 240
-        mov     r29,sp                  // set_fp
+        stp     x29,lr,[sp,#-256]!      // save_fplr_x  256 (pre-indexed store)
+        stp     x19,x20,[sp,#240]       // save_regp 0, 240
+        mov     x29,sp                  // set_fp
         ...
     ```
 
@@ -454,9 +454,9 @@ A typical case of function fragments is "code separation" with that compiler may
 
     ```asm
     ...
-        mov     sp,r29                  // set_fp
-        ldp     r19,r20,[sp,240]        // save_regp 0, 240
-        ldp     r29, lr, [sp, -256]!    // save_fplr_x  256 (post-indexed load)
+        mov     sp,x29                  // set_fp
+        ldp     x19,x20,[sp,#240]       // save_regp 0, 240
+        ldp     x29,lr,[sp],#256        // save_fplr_x  256 (post-indexed load)
         ret     lr                      // end
     ```
 
@@ -483,27 +483,27 @@ Another more complicated case of function fragments is "shrink wrapping" with th
 - (region 1 : begin)
 
     ```asm
-        stp     r29, lr, [sp, -256]!    // save_fplr_x  256 (pre-indexed store)
-        stp     r19,r20,[sp,240]        // save_regp 0, 240
-        mov     r29,sp                  // set_fp
+        stp     x29,lr,[sp,#-256]!      // save_fplr_x  256 (pre-indexed store)
+        stp     x19,x20,[sp,#240]       // save_regp 0, 240
+        mov     x29,sp                  // set_fp
         ...
     ```
 
 - (region 2 : begin)
 
     ```asm
-        stp     r21,r22,[sp,224]        // save_regp 2, 224
+        stp     x21,x22,[sp,#224]       // save_regp 2, 224
         ...
-        ldp     r21,r22,[sp,224]        // save_regp 2, 224
+        ldp     x21,x22,[sp,#224]       // save_regp 2, 224
     ```
 
 - (region 2 : end)
 
     ```asm
         ...
-        mov     sp,r29                  // set_fp
-        ldp     r19,r20,[sp,240]        // save_regp 0, 240
-        ldp     r29, lr, [sp, -256]!    // save_fplr_x  256 (post-indexed load)
+        mov     sp,x29                  // set_fp
+        ldp     x19,x20,[sp,#240]       // save_regp 0, 240
+        ldp     x29,lr,[sp],#256        // save_fplr_x  256 (post-indexed load)
         ret     lr                      // end
     ```
 
