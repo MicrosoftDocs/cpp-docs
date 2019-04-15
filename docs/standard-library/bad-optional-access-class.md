@@ -19,4 +19,4 @@ class bad_optional_access : public exception
 
 ## See also
 
-[<optional>](../standard-library/forward-list.md)<br/>
+[\<optional>](../standard-library/optional.md)<br/>
