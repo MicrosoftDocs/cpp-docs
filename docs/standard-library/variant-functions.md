@@ -32,6 +32,14 @@ constexpr add_pointer_t<T> get_if(variant<Types...>*) noexcept;
 template <class T, class... Types>
 constexpr add_pointer_t<const T> get_if(const variant<Types...>*) noexcept;
 
+template <class T, class... Types> constexpr bool holds_alternative(const variant<Types...>&) noexcept;
+
+// 23.7.7, visitation
+template <class Visitor, class... Variants>
+constexpr see below
+visit(Visitor&&, Variants&&...);
+
+
 ||
 |-|
 |[swap](#swap)|

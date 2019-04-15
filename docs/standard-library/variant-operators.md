@@ -7,6 +7,13 @@ helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forwar
 ---
 # &lt;forward_list&gt; operators
 
+template <class... Types> constexpr bool operator==(const variant<Types...>&, const variant<Types...>&);
+template <class... Types> constexpr bool operator!=(const variant<Types...>&, const variant<Types...>&);
+template <class... Types> constexpr bool operator<(const variant<Types...>&, const variant<Types...>&);
+template <class... Types> constexpr bool operator>(const variant<Types...>&, const variant<Types...>&);
+template <class... Types> constexpr bool operator<=(const variant<Types...>&, const variant<Types...>&);
+template <class... Types> constexpr bool operator>=(const variant<Types...>&, const variant<Types...>&);
+
 ||||
 |-|-|-|
 |[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
