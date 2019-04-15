@@ -41,7 +41,7 @@ template<class T> optional(T) -> optional<T>;
 |Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the `optional` with a copy of another `optional`.|
-|[opertaor->](#op_as)|Assign value to `optional`.|
+|[operator->](#op_as)|Assign value to `optional`.|
 |[operator*](#op_mem)|Reference memory of `optional`.|
 |[operator bool](#op_bool)|Return Boolean of `optional` value.|
 
