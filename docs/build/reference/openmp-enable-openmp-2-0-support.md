@@ -25,7 +25,7 @@ Causes the compiler to process [`#pragma omp`](../../preprocessor/omp.md) direct
 
 ## Remarks
 
-`#pragma omp` is used to specify [Directives](../../parallel/openmp/reference/openmp-directives.md) and [Clauses](../../parallel/openmp/reference/openmp-clauses.md). If **/openmp** is not specified in a compilation, the compiler ignores OpenMP clauses and directives. [OpenMP Function](../../parallel/openmp/reference/openmp-functions.md) calls are processed by the compiler even if **/openmp** is not specified.
+`#pragma omp` is used to specify [Directives](../../parallel/openmp/reference/openmp-directives.md) and [Clauses](../../parallel/openmp/reference/openmp-clauses.md). If **/openmp** isn't specified in a compilation, the compiler ignores OpenMP clauses and directives. [OpenMP Function](../../parallel/openmp/reference/openmp-functions.md) calls are processed by the compiler even if **/openmp** isn't specified.
 
 ::: moniker range=">= vs-2019"
 
@@ -33,13 +33,13 @@ The C++ compiler currently supports the OpenMP 2.0 standard. However, Visual Stu
 
 ::: moniker-end
 
-Applications compiled by using both **/openmp** and **/clr** can only be run in a single application domain process; multiple application domains are not supported. That is, when the module constructor (.cctor) is run, it detects if the process is compiled with **/openmp**, and if the application is loaded into a non-default runtime. For more information, see [appdomain](../../cpp/appdomain.md), [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
+Applications compiled by using both **/openmp** and **/clr** can only be run in a single application domain process. Multiple application domains are not supported. That is, when the module constructor (`.cctor`) is run, it detects if the process is compiled using **/openmp**, and if the application is loaded into a non-default runtime. For more information, see [appdomain](../../cpp/appdomain.md), [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
 
-If you attempt to load an application compiled with **/openmp** and **/clr** into a non-default application domain, a <xref:System.TypeInitializationException> exception is thrown outside the debugger, and a `OpenMPWithMultipleAppdomainsException` exception is thrown in the debugger.
+If you attempt to load an application compiled using both **/openmp** and **/clr** into a non-default application domain, a <xref:System.TypeInitializationException> exception is thrown outside the debugger, and a `OpenMPWithMultipleAppdomainsException` exception is thrown in the debugger.
 
 These exceptions can also be raised in the following situations:
 
-- If your application is compiled with **/clr** but not **/openmp**, and is loaded into a non-default application domain, where the process includes an application that was compiled with **/openmp**.
+- If your application is compiled using **/clr** but not **/openmp**, and is loaded into a non-default application domain, where the process includes an application compiled using **/openmp**.
 
 - If you pass your **/clr** application to a utility, such as [regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), which loads its target assemblies into a non-default application domain.
 
@@ -61,11 +61,11 @@ Microsoft doesn't recommend that you write **/openmp** applications that allow p
 
 ## Example
 
-The following sample shows some of the effects of threadpool startup versus using the threadpool after it started up. Assuming an x64, single core, dual processor the threadpool takes about 16ms to startup. After that though there is very little cost for the threadpool.
+The following sample shows some of the effects of thread pool startup versus using the thread pool after it started up. Assuming an x64, single core, dual processor the thread pool takes about 16 ms to start up. After that, there is little cost for the thread pool.
 
-When you compile with **/openmp**, the second call to test2 never runs any longer than if you compile with **/openmp-**, as there is no threadpool startup. At a million iterations the **/openmp** version is faster than the **/openmp-** version for the second call to test2, and at 25 iterations both **/openmp-** and **/openmp** versions register less than the clock granularity.
+When you compile using **/openmp**, the second call to test2 never runs any longer than if you compile using **/openmp-**, as there is no thread pool startup. At a million iterations, the **/openmp** version is faster than the **/openmp-** version for the second call to test2. At 25 iterations, both **/openmp-** and **/openmp** versions register less than the clock granularity.
 
-So if you have only one loop in your application and it runs in less than 15ms (adjusted for the approximate overhead on your machine), **/openmp** may not be appropriate, but if it's anything more than that, you may want to consider using **/openmp**.
+If you have only one loop in your application and it runs in less than 15 ms (adjusted for the approximate overhead on your machine), **/openmp** may not be appropriate. If it's anything more, you may want to consider using **/openmp**.
 
 ```cpp
 // cpp_compiler_options_openmp.cpp
