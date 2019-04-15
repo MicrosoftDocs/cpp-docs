@@ -18,16 +18,16 @@ Defines the class any and several supporting functions and classes.
 
 |Function|Description|
 |-|-|
-|[any_cast](../standard-library/any-functions.md#any_cast)||
-|[make_any](../standard-library/any-functions.md#make_any)||
-|[swap](../standard-library/any-functions.md#swap)|Exchanges the elements of two forward lists.|
+|[any_cast](../standard-library/any-functions.md#any_cast)|Makes an object into an any.|
+|[make_any](../standard-library/any-functions.md#make_any)|Takes values and creates an any object.|
+|[swap](../standard-library/any-functions.md#swap)|Exchanges the elements of two anys.|
 
 ### Classes
 
 |Class|Description|
 |-|-|
 |[any](../standard-library/any-class.md)|Stores any type that satisfies the constructor requirements or has no value.|
-|[bad_any_cast](../standard-library/bad-any-cast-class.md)||
+|[bad_any_cast](../standard-library/bad-any-cast-class.md)|Objects thrown by a failed `any_cast`.|
 
 ## See also
 
