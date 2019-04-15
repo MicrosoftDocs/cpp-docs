@@ -8,28 +8,20 @@ ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
 
 ||
 |-|
-|[swap](#swap)|
+|[make_optional](#make_optional)|
 
-## <a name="swap"></a>  swap
+## <a name="make_optional"></a> make_optional
 
-Exchanges the elements of two forward lists.
+Makes an object optional.
 
 ```cpp
-void swap(
-    forward_list <Type, Allocator>& left,
-    forward_list <Type, Allocator>& right);
+template <class T>
+    constexpr optional<see below> make_optional(T&&);
+template <class T, class... Args>
+    constexpr optional<T> make_optional(Args&&... args);
+template <class T, class U, class... Args>
+    constexpr optional<T> make_optional(initializer_list<U> il, Args&&... args);
 ```
-
-### Parameters
-
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `forward_list`.|
-|*right*|An object of type `forward_list`.|
-
-### Remarks
-
-This template function executes `left.swap(right)`.
 
 ## See also
 

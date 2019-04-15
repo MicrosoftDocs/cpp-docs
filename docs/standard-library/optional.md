@@ -33,15 +33,15 @@ Defines the container template class optional and several supporting templates.
 
 |Function|Description|
 |-|-|
-|[make_optional](../standard-library/optional-functions.md#make_optional)|Exchanges the elements of two forward lists.|
+|[make_optional](../standard-library/optional-functions.md#make_optional)|Makes an object optional.|
 
 ### Classes and Structs
 
 |Class or Struct|Description|
 |-|-|
-|[optional](../standard-library/optional-class.md)|Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of elements, each containing a member of type `Type`.|
-|[nullopt_t]()||
-|[bad_optional_access]()||
+|[optional Class](../standard-library/optional-class.md)|Describes an object that may or may not hold a value.|
+|[nullopt_t Struct](../standard-library/nullopt-t-structure.md)|Describes an object not holding a value.|
+|[bad_optional_access Class](../standard-library/bad-optional-access-class.md)|Describes an object thrown as an exception to report an attempt to access a value not there.|
 
 ## See also
 
