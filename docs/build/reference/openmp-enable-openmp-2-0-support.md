@@ -13,7 +13,7 @@ Causes the compiler to process [`#pragma omp`](../../preprocessor/omp.md) direct
 
 ::: moniker range=">= vs-2019"
 
-> **/openmp**[**:**__experimental__]
+> **/openmp**\[**:**__experimental__]
 
 ::: moniker-end
 
