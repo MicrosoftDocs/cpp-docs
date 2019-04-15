@@ -42,12 +42,12 @@ namespace std {
 
 |Class or Struct|Description|
 |-|-|
-|[bad_variant_access Class](../standard-library/bad-variant-access-class.md)||
-|[monostate Struct](../standard-library/monostate-structure.md)||
-|[variant Class](../standard-library/variant.md)||
-|[variant_alternative Struct](../standard-library/variant-alternative-structure.md)|Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of elements, each containing a member of type `Type`.|
-|[variant_size Struct](../standard-library/variant-size-structure.md)|Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of elements, each containing a member of type `Type`.|
+|[bad_variant_access Class](../standard-library/bad-variant-access-class.md)|Objects thrown to report invalid accesses to the value of a variant object.|
+|[monostate Struct](../standard-library/monostate-structure.md)|An alternative type for a variant to make the variant type default constructible.|
+|[variant Class](../standard-library/variant.md)|An object to either hold a value of one of its alternative types, or no value.|
+|[variant_alternative Struct](../standard-library/variant-alternative-structure.md)|Assists the variant objects.|
+|[variant_size Struct](../standard-library/variant-size-structure.md)|Assists the variant objects.|
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

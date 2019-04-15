@@ -1,59 +1,30 @@
 ---
-title: "type_index Class"
-ms.date: "11/04/2016"
-f1_keywords: ["typeindex/std::type_index"]
-helpviewer_keywords: ["type_index class"]
-ms.assetid: db366119-74cb-43e8-aacf-9679e561fa2f
+title: "variant_alternative Struct"
+ms.date: "04/04/2019"
+f1_keywords: ["variant/std::variant_alternative"]
+helpviewer_keywords: ["variant_alternative struct"]
 ---
-# type_index Class
+# variant_alternative Struct
 
+Assists the variant objects.
+
+## Syntax
+
+```cpp
 template <size_t I, class T>
-struct variant_alternative; // not deﬁned
+    struct variant_alternative; // not defined
 template <size_t I, class T>
-struct variant_alternative<I, const T>;
+    struct variant_alternative<I, const T>;
 template <size_t I, class T>
-struct variant_alternative<I, volatile T>;
+    struct variant_alternative<I, volatile T>;
 template <size_t I, class T>
-struct variant_alternative<I, const volatile T>;
+    struct variant_alternative<I, const volatile T>;
 template <size_t I, class T>
-using variant_alternative_t = typename variant_alternative<I, T>::type;
+    using variant_alternative_t = typename variant_alternative<I, T>::type;
 template <size_t I, class... Types>
-struct variant_alternative<I, variant<Types...>>;
-
-The `type_index` class wraps a pointer to [type_info Class](../cpp/type-info-class.md) to assist in indexing by such objects.
-
-class type_index {
-   public:
-   type_index(const type_info& tinfo);
-   const char *name() const;
-   size_t hash_code() const;
-   bool operator==(const type_info& right) const;
-   bool operator!=(const type_info& right) const;
-   bool operator<(const type_info& right) const;
-   bool operator\<=(const type_info& right) const;
-   bool operator>(const type_info& right) const;
-   bool operator>=(const type_info& right) const;
-   };
-
-The constructor initializes `ptr` to `&tinfo`.
-
-`name` returns `ptr->name()`.
-
-`hash_code` returns `ptr->hash_code().`
-
-`operator==` returns `*ptr == right.ptr`.
-
-`operator!=` returns `!(*this == right)`.
-
-`operator<` returns `*ptr->before(*right.ptr)`.
-
-`operator<=` returns `!(right < *this).`
-
-`operator>` returns `right < *this`.
-
-`operator>=` returns `!(*this < right)`.
+    struct variant_alternative<I, variant<Types...>>;
+```
 
 ## See also
 
-[Run-Time Type Information](../cpp/run-time-type-information.md)<br/>
-[\<typeindex>](../standard-library/typeindex.md)<br/>
+[&lt;variant>](../standard-library/variant.md)
