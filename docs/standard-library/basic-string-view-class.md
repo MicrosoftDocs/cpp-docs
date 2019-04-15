@@ -7,20 +7,32 @@ ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ---
 # basic_string_view Class
 
- The `string_view` family of template specializations was added in C++17 to serve as an efficient way for a function to accept various unrelated string types without having to be templatized on those types. `string_view` describes the minimum common interface necessary to read string data. It provides read-only access to the original data; it does not copy it. It doesn’t require that the data be null-terminated, and doesn’t place any restrictions on the data’s lifetime. 
+ The class template `basic_string_view<charT>` was added in C++17 to serve as a safe and efficient way for a function to accept various unrelated string types without the function having to be templatized on those types. The standard library defines several specializations based on the type of the elements:
  
- A function accepting a `string_view` can be made to work with any string-like type, without making the function into a template, or constraining the function to a particular subset of string types. The only requirement is that an implicit conversion exists from the string type to `string_view`. All the standard string types are implicitly convertible to `string_view`.
+ - `string_view`
+ - `wstring_view`
+ - `u8_string_view`
+ - `u16string_view`
+ - `u32string_view`
 
- The following example shows a non-template function `f` that takes a parameter of type `string_view`. It can be called with arguments of type string, wstring, char*, and winrt::hstring.
+ Use these typedefs in your code to ensure that the implicit conversions from the underlying string types work correctly. In this document, the term "string_view" refers generally to any of these typedefs.
+
+ A `string_view` describes the minimum common interface necessary to read string data. It provides const access to the original data; it makes no copies except for the `copy` function. The data may or may not contain null values ('\0') at any position. A `string_view` has no control over the object's lifetime; therefore it is the caller's responsibility to ensure that the underlying string data valid. 
+ 
+ A function that accepts a parameter of type `string_view` can be made to work with any string-like type, without making the function into a template, or constraining the function to a particular subset of string types. The only requirement is that an implicit conversion exists from the string type to `string_view`. All the standard string types are implicitly convertible to `string_view`.
+
+ The following example shows a non-template function `f` that takes a parameter of type `string_view`. It can be called with arguments of type `std::string`, `std::wstring`, `char*`, and `winrt::hstring`.
 
 ```cpp
-void f(wstring_view); // string_view that uses wchar_t’s
+// string_view that uses elements of wchar_t
+void f(wstring_view); 
 
 // pass a std::wstring:
 std::wstring& s; f(s);
 
 // pass a C-style null-terminated string (string_view is not null-terminated):
-wchar_t* ns = "Hello"; f(ns);
+wchar_t* ns = "Hello"; 
+f(ns);
 
 // pass a C-style character array of len characters (excluding null terminator):
 wchar_t* cs, size_t len; f({cs,len});
@@ -40,64 +52,68 @@ class basic_string_view;
 ### Parameters
 
 *CharType*<br/>
-The data type of a single character to be stored in the string_view. The C++ Standard Library provides specializations of this template class, with the type definitions [string_view](../standard-library/string-view-typedefs.md#string_view) for elements of type **char**, [wstring_view](../standard-library/string-view-typedefs.md#wstring_view), for **wchar_t**, [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) for `char16_t`, and [u32string_view](../standard-library/string-view-typedefs.md#u32string_view) for `char32_t`.
+The data type of the characters that are stored in the string_view. The C++ Standard Library provides the following typedefs for specializations of this template. Use these typedefs rather than explicitly instantiating a basic_string_view<charT>`.
+- [string_view](../standard-library/string-view-typedefs.md#string_view) for elements of type **char** 
+ - [wstring_view](../standard-library/string-view-typedefs.md#wstring_view), for **wchar_t**
+ - [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) for **char16_t**
+ - [u32string_view](../standard-library/string-view-typedefs.md#u32string_view) for **char32_t**.
 
 *Traits*<br/>
-Various important properties of the `CharType` elements in a basic_string_view specialization are described by the class `Traits`. The default value is `char_traits`< `CharType`>.
+Various important properties of the *CharType* elements in a basic_string_view specialization are described by the class *Traits*. The default value is `char_traits`<*CharType*>.
 
 ### Constructors
 
 |Constructor|Description|
 |-|-|
-|[basic_string_view](#basic_string_view)|Constructs a string_view that is empty or initialized by specific characters or that is a copy of all or part of some other string_view object or C-string.|
+|[basic_string_view](#basic_string_view)|Constructs a string_view that is empty or else points to all or part of some other string object or C-string.|
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|[const_iterator](#const_iterator)|A type that provides a random-access iterator that can access and read a **const** element in the string_view.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a string_view.|
-|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a string_view for reading and performing **const** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a random-access iterator that can read any **const** element in the string_view.|
-|[difference_type](#difference_type)|A type that provides the difference between two iterators that refer to elements within the same string_view.|
-|[iterator](#iterator)|A type that provides a random-access iterator that can read or modify any element in a string_view.|
+|[const_iterator](#const_iterator)|Provides a random-access iterator that can read a **const** element in the string_view.|
+|[const_pointer](#const_pointer)|Provides a pointer to a **const** element.|
+|[const_reference](#const_reference)|Provides a reference to a **const** element for reading and performing **const** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|Provides a random-access iterator that can read any **const** element in the string_view.|
+|[difference_type](#difference_type)|Provides the difference between two iterators that refer to elements within the same string_view.|
+|[iterator](#iterator)|Same as const_iterator.|
 |[npos](#npos)|An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.|
-|[pointer](#pointer)|A type that provides a pointer to a character element in a string_view or character array.|
-|[reference](#reference)|A type that provides a reference to an element stored in a string_view.|
-|[reverse_iterator](#reverse_iterator)|A type that provides a random-access iterator that can read or modify an element in a reversed string_view.|
-|[size_type](#size_type)|An unsigned integral type for the number of elements in a string_view.|
-|[traits_type](#traits_type)|A type for the character traits of the elements stored in a string_view.|
-|[value_type](#value_type)|A type that represents the type of characters stored in a string_view.|
+|[pointer](#pointer)|Same as const_pointer.|
+|[reference](#reference)|Same as const_reference.|
+|[reverse_iterator](#reverse_iterator)|Same as const_reverse_iterator.|
+|[size_type](#size_type)|An unsigned integral type for the number of elements.|
+|[traits_type](#traits_type)|A type for the character traits of the elements.|
+|[value_type](#value_type)|Represents the type of characters.|
 
 ### Member functions
 
 |Member function|Description|
 |-|-|
-|[at](#at)|Returns a reference to the element at a specified location in the string_view.|
-|[back](#back)||
-|[begin](#begin)|Returns an iterator addressing the first element in the string_view.|
-|[cbegin](#cbegin)|Returns a const iterator addressing the first element in the string_view.|
-|[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element in a string_view.|
+|[at](#at)|Returns a reference to the element at a specified location.|
+|[back](#back)|Returns a reference to the last element.|
+|[begin](#begin)|Same as [cbegin](#cbegin).|
+|[cbegin](#cbegin)|Returns a const iterator addressing the first element.|
+|[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element.|
 |[copy](#copy)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array. Deprecated. Use basic_string_view::_Copy_s instead.|
-|[compare](#compare)|Compares a string_view with a specified string_view to determine if the two string_views are equal or if one is lexicographically less than the other.|
+|[compare](#compare)|Compares a string_view with a specified string_view to determine if they are equal or if one is lexicographically less than the other.|
 |[crbegin](#crbegin)|Returns a const iterator that addresses the first element in a reversed string_view.|
 |[crend](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed string_view.|
 |[_Copy_s](#copys)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array.|
 |[data](#data)|Converts the contents of a string_view into an array of characters.|
 |[empty](#empty)|Tests whether the string_view contains characters.|
-|[end](#end)|Returns an iterator that addresses the location succeeding the last element in a string_view.|
-|[find](#find)|Searches a string_view in a forward direction for the first occurrence of a substring_view that matches a specified sequence of characters.|
-|[find_first_not_of](#find_first_not_of)|Searches through a string_view for the first character that is not any element of a specified string_view.|
-|[find_first_of](#find_first_of)|Searches through a string_view for the first character that matches any element of a specified string_view.|
-|[find_last_not_of](#find_last_not_of)|Searches through a string_view for the last character that is not any element of a specified string_view.|
-|[find_last_of](#find_last_of)|Searches through a string_view for the last character that is an element of a specified string_view.|
-|[front](#front)|Returns a reference to the first element in a string_view.|
-|[length](#length)|Returns the current number of elements in a string_view.|
+|[end](#end)|Same as [cend](#cend).|
+|[find](#find)|Searches in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
+|[find_first_not_of](#find_first_not_of)|Searches for the first character that is not any element of a specified string_view.|
+|[find_first_of](#find_first_of)|Searches for the first character that matches any element of a specified string_view.|
+|[find_last_not_of](#find_last_not_of)|Searches for the last character that is not any element of a specified string_view.|
+|[find_last_of](#find_last_of)|Searches for the last character that is an element of a specified string_view.|
+|[front](#front)|Returns a reference to the first element.|
+|[length](#length)|Returns the current number of elements.|
 |[max_size](#max_size)|Returns the maximum number of characters a string_view could contain.|
-|[rbegin](#rbegin)|Returns an iterator to the first element in a reversed string_view.|
-|[rend](#rend)|Returns an iterator that points just beyond the last element in a reversed string_view.|
-|[rfind](#rfind)|Searches a string_view in a backward direction for the first occurrence of a substring_view that matches a specified sequence of characters.|
-|[size](#size)|Returns the current number of elements in a string_view.||[swap](#swap)|Exchange the contents of two string_views.|
+|[rbegin](#rbegin)|Same as [crbegin](#crbegin).|
+|[rend](#rend)|Same as [crend](#crend).|
+|[rfind](#rfind)|Searches a string_view in reverse for the first occurrence of a substring that matches a specified sequence of characters.|
+|[size](#size)|Returns the current number of elements.||[swap](#swap)|Exchange the contents of two string_views.|
 
 ## Remarks
 
@@ -113,7 +129,7 @@ References, pointers, and iterators that designate elements of the controlled se
 
 ## <a name="at"></a>  basic_string_view::at
 
-Provides a reference to the character with a specified index in a string_view.
+Provides a reference to the character with a specified index.
 
 ```cpp
 constexpr const_reference at(size_type offset) const;
@@ -126,11 +142,11 @@ The index of the position of the element to be referenced.
 
 ### Return Value
 
-A reference to the character of the string_view at the position specified by the parameter index.
+A reference to the character at the position specified by the parameter index.
 
 ### Remarks
 
-The first element of the string_view has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string_view of length *n* has an *n*th element indexed by the number *n -* 1.
+The first element has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string_view of length *n* has an *n*th element indexed by the number *n -* 1.
 
 ### Example
 
@@ -148,7 +164,7 @@ int main()
 	cout << "The original string_view is: " << str1 << endl;
 
 	// Element access to the const string_views
-	basic_string_view <char>::const_reference refStr2 = str1.at(8);
+	string_view::const_reference refStr2 = str1.at(8);
 
 	cout << "The character with index 8 in the const string_view cstr1 is: "
 		<< refStr2 << "." << endl;
@@ -157,7 +173,7 @@ int main()
 
 ## <a name="back"></a>  basic_string_view::back
 
-Returns a reference to the last element in the string_view.
+Returns a reference to the last element.
 
 ```cpp
 constexpr const_reference back() const;
@@ -165,11 +181,11 @@ constexpr const_reference back() const;
 
 ### Return Value
 
-A reference to the last element of the string_view, which must be non-empty.
+A reference to the last element, which must be non-empty.
 
 ## <a name="basic_string_view"></a>  basic_string_view::basic_string_view
 
-Constructs a string_view that is empty, initialized by specific characters, or is a copy of all or part of another string_view object or C style (null-terminated) string_view.
+Constructs a string_view that is empty, initialized by specific characters, or is a copy of all or part of another string_view object or C style (null-terminated) string.
 
 ```cpp
 constexpr basic_string_view() noexcept;
@@ -189,10 +205,6 @@ The pointer to the character values to be copied into the string_view being cons
 *len*<br/>
 The number of characters to be initialized.
 
-### Return Value
-
-A reference to the string_view object that is being constructed by the constructors.
-
 ### Example
 
 ```cpp
@@ -207,13 +219,13 @@ int main()
 
 	const char* cstr1a = "Hello Out There.";
 
-	// The first member function initializing with a C-string
-	basic_string_view <char> str1a(cstr1a);
+	// Initializing with a C-string
+	string_view str1a(cstr1a);
 	cout << "The string_view initialized by C-string cstr1a is: "
 		<< str1a << "." << endl;
 
-	// The second member function initializing with a C-string and length
-	basic_string_view <char> str2a(cstr1a, 5);
+	// Initializing with a C-string and length
+	string_view str2a(cstr1a, 5);
 	cout << "The string_view initialized by C-string cstr1a is: "
 		<< str2a << "." << endl;
 }
@@ -221,13 +233,26 @@ int main()
 
 ## <a name="begin"></a>  basic_string_view::begin
 
-Returns an iterator addressing the first element in the string_view.
+Same as [cbegin](#cbegin).
 
 ```cpp
 constexpr const_iterator begin() const noexcept;
 ```
 
 ### Return Value
+Returns a const_iterator addressing the first element.
+
+## <a name="cbegin"></a>  basic_string_view::cbegin
+
+Returns a **const** iterator that addresses the first element in the range.
+
+```cpp
+constexpr const_iterator cbegin() const noexcept;
+```
+
+### Return Value
+
+A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 A random-access iterator that addresses the first element of the sequence or just beyond the end of an empty sequence.
 
@@ -242,10 +267,10 @@ A random-access iterator that addresses the first element of the sequence or jus
 int main() {
 	using namespace std;
 	string_view str1("No way out."), str2;
-	basic_string_view <char>::iterator str1_Iter;
+	string_view::iterator str1_Iter;
 
 	str1_Iter = str1.begin();
-	cout << "The first character of the string_view str1 is: "
+	cout << "The first character str1 is: "
 		<< *str1_Iter << endl;
 	cout << "The full original string_view str1 is: " << str1 << endl;
 
@@ -255,32 +280,6 @@ int main() {
 	else
 		cout << "The string_view str2 is not empty." << endl;
 }
-```
-
-## <a name="cbegin"></a>  basic_string_view::cbegin
-
-Returns a **const** iterator that addresses the first element in the range.
-
-```cpp
-constexpr const_iterator cbegin() const noexcept;
-```
-
-### Return Value
-
-A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
-
-### Remarks
-
-With the return value of `cbegin`, the elements in the range cannot be modified.
-
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
-
-```cpp
-auto i1 = Container.begin();
-// i1 is Container<T>::iterator
-auto i2 = Container.cbegin();
-
-// i2 is Container<T>::const_iterator
 ```
 
 ## <a name="cend"></a>  basic_string_view::cend
@@ -332,32 +331,30 @@ constexpr int compare(size_type pos, size_type num, const charT* ptr, size_type 
 ### Parameters
 
 *strv*<br/>
-The string_view that is to be compared to the operand string_view.
+The string_view that is to be compared to this string_view.
 
 *pos*<br/>
-The index of the operand string_view at which the comparison begins.
+The index of this string_view at which the comparison begins.
 
 *num*<br/>
-The maximum number of characters from the operand string_view to be compared.
+The maximum number of characters from this string_view to be compared.
 
 *num2*<br/>
-The maximum number of characters from the parameter string_view to be compared.
+The maximum number of characters from *strv* to be compared.
 
 *offset*<br/>
-The index of the parameter string_view at which the comparison begins.
+The index of *strv* at which the comparison begins.
 
 *ptr*<br/>
-The C-string to be compared to the operand string_view.
+The C-string to be compared to this string_view.
 
 ### Return Value
 
-A negative value if the operand string_view is less than the parameter string_view; zero if the two string_views are equal; or a positive value if the operand string_view is greater than the parameter string_view.
+A negative value if this string_view is less than *strv* or *ptr*; zero if the two character sequences are equal; or a positive value if this string_view is greater than *strv* or *ptr*.
 
 ### Remarks
 
-The `compare` member functions compare either all or part of the parameter and operand string_views depending on which in used.
-
-The comparison performed is case sensitive.
+The `compare` member functions perform a case-sensitive comparison of either all or part of each character sequence.
 
 ### Example
 
@@ -366,211 +363,151 @@ The comparison performed is case sensitive.
 // compile with: /EHsc
 #include <string_view>
 #include <iostream>
+#include <string>
 
-int main( )
+int main()
 {
-   using namespace std;
+	using namespace std;
 
-   // The first member function compares
-   // an operand string_view to a parameter string_view
-   int comp1;
-   string_view s1o( "CAB" );
-   string_view s1p( "CAB" );
-   cout << "The operand string_view is: " << s1o << endl;
-   cout << "The parameter string_view is: " << s1p << endl;
-   comp1 = s1o.compare( s1p );
-   if ( comp1 < 0 )
-      cout << "The operand string_view is less than "
-           << "the parameter string_view." << endl;
-   else if ( comp1 == 0 )
-      cout << "The operand string_view is equal to "
-           << "the parameter string_view." << endl;
-   else
-      cout << "The operand string_view is greater than "
-           << "the parameter string_view." << endl;
-   cout << endl;
 
-   // The second member function compares part of
-   // an operand string_view to a parameter string_view
-   int comp2a, comp2b;
-   string_view s2o( "AACAB" );
-   string_view s2p( "CAB" );
-   cout << "The operand string_view is: " << s2o << endl;
-   cout << "The parameter string_view is: " << s2p << endl;
-   comp2a = s2o.compare(  2 , 3 , s2p );
-   if ( comp2a < 0 )
-      cout << "The last three characters of "
-           << "the operand string_view\n are less than "
-           << "the parameter string_view." << endl;
-   else if ( comp2a == 0 )
-      cout << "The last three characters of "
-           << "the operand string_view\n are equal to "
-           << "the parameter string_view." << endl;
-   else
-      cout << "The last three characters of "
-           << "the operand string_view\n is greater than "
-           << "the parameter string_view." << endl;
+	// The first member function compares
+	// two string_views
+	int comp1;
+	string_view sv_A("CAB");
+	string_view sv_B("CAB");
+	cout << "sv_A: " << sv_A << endl;
+	cout << "sv_B is: " << sv_B << endl;
+	comp1 = sv_A.compare(sv_B);
+	if (comp1 < 0)
+		cout << "sv_A is less than sv_B.\n";
+	else if (comp1 == 0)
+		cout << "sv_A is equal to sv_B.\n";
+	else
+		cout << "sv_A is greater than sv_B." << endl;
 
-   comp2b = s2o.compare(  0 , 3 , s2p );
-   if ( comp2b < 0 )
-      cout << "The first three characters of "
-           << "the operand string_view\n are less than "
-           << "the parameter string_view." << endl;
-   else if ( comp2b == 0 )
-      cout << "The first three characters of "
-           << "the operand string_view\n are equal to "
-           << "the parameter string_view." << endl;
-   else
-      cout << "The first three characters of "
-           << "the operand string_view\n is greater than "
-           << "the parameter string_view." << endl;
-   cout << endl;
+	// The second member function compares part of
+	// an operand string_view to another string_view
+	int comp2a, comp2b;
+	string_view sv_C("AACAB");
+	string_view sv_D("CAB");
+	cout << "sv_C is: " << sv_C << endl;
+	cout << "sv_D is: " << sv_D << endl;
+	comp2a = sv_C.compare(2, 3, sv_D);
+	cout << "The last three characters of "
+		<< "sv_C are ";
+	if (comp2a == 0) { cout << "equal to "; }
+	else if (comp2a < 0) { cout << "less than "; }
+	else { cout << "greater than "; }
+	cout << "sv_D.\n";
+	
+	comp2b = sv_C.compare(0, 3, sv_D);
+	cout << "The first three characters of "
+			<< "sv_C are ";
+	if (comp2b == 0) { cout << "equal to "; }
+	else if (comp2b < 0) { cout << "less than "; }
+	else { cout << "greater than "; }
+	cout << "sv_D.\n";
 
-   // The third member function compares part of
-   // an operand string_view to part of a parameter string_view
-   int comp3a;
-   string_view s3o( "AACAB" );
-   string_view s3p( "DCABD" );
-   cout << "The operand string_view is: " << s3o << endl;
-   cout << "The parameter string_view is: " << s3p << endl;
-   comp3a = s3o.compare(  2 , 3 , s3p , 1 , 3 );
-   if ( comp3a < 0 )
-      cout << "The three characters from position 2 of "
-           << "the operand string_view are less than\n "
-           << "the 3 characters parameter string_view "
-           << "from position 1." << endl;
-   else if ( comp3a == 0 )
-      cout << "The three characters from position 2 of "
-           << "the operand string_view are equal to\n "
-           << "the 3 characters parameter string_view "
-           << "from position 1." << endl;
-   else
-      cout << "The three characters from position 2 of "
-           << "the operand string_view is greater than\n "
-           << "the 3 characters parameter string_view "
-           << "from position 1." << endl;
-   cout << endl;
+	// The third member function compares part of
+	// an operand string_view to part of another string_view
+	int comp3a;
+	string_view sv_E("AACAB");
+	string_view sv_F("DCABD");
+	cout << "sv_E: " << sv_E << endl;
+	cout << "sv_F is: " << sv_F << endl;
+	comp3a = sv_E.compare(2, 3, sv_F, 1, 3);
+	cout << "The three characters from position 2 of "
+		<< "sv_E are ";
+	if (comp3a == 0) { cout << "equal to "; }
+	else if (comp3a < 0) { cout << "less than "; }
+	else { cout << "greater than "; }
+	cout << "the 3 characters of sv_F from position 1.\n";
 
-   // The fourth member function compares
-   // an operand string_view to a parameter C-string
-   int comp4a;
-   string_view s4o( "ABC" );
-   const char* cs4p = "DEF";
-   cout << "The operand string_view is: " << s4o << endl;
-   cout << "The parameter C-string is: " << cs4p << endl;
-   comp4a = s4o.compare( cs4p );
-   if ( comp4a < 0 )
-      cout << "The operand string_view is less than "
-           << "the parameter C-string." << endl;
-   else if ( comp4a == 0 )
-      cout << "The operand string_view is equal to "
-           << "the parameter C-string." << endl;
-   else
-      cout << "The operand string_view is greater than "
-           << "the parameter C-string." << endl;
-   cout << endl;
+	// The fourth member function compares
+	// an operand string_view to a C-string
+	int comp4a;
+	string_view sv_G("ABC");
+	const char* cs_A = "DEF";
+	cout << "sv_G is: " << sv_G << endl;
+	cout << "cs_A is: " << cs_A << endl;
+	comp4a = sv_G.compare(cs_A);
+	cout << "sv_G is ";
+	if (comp4a == 0) { cout << "equal to "; }
+	else if (comp4a < 0) { cout << "less than "; }
+	else { cout << "greater than "; }
+	cout << "cs_A.\n";
 
-   // The fifth member function compares part of
-   // an operand string_view to a parameter C-string
-   int comp5a;
-   string_view s5o( "AACAB" );
-   const char* cs5p = "CAB";
-   cout << "The operand string_view is: " << s5o << endl;
-   cout << "The parameter string_view is: " << cs5p << endl;
-   comp5a = s5o.compare(  2 , 3 , s2p );
-   if ( comp5a < 0 )
-      cout << "The last three characters of "
-           << "the operand string_view\n are less than "
-           << "the parameter C-string." << endl;
-   else if ( comp5a == 0 )
-      cout << "The last three characters of "
-           << "the operand string_view\n are equal to "
-           << "the parameter C-string." << endl;
-   else
-      cout << "The last three characters of "
-           << "the operand string_view\n is greater than "
-           << "the parameter C-string." << endl;
-   cout << endl;
+	// The fifth member function compares part of
+	// an operand string_view to a C-string
+	int comp5a;
+	string_view sv_H("AACAB");
+	const char* cs_B = "CAB";
+	cout << "sv_H is: " << sv_H << endl;
+	cout << "cs_B is: " << cs_B << endl;
+	comp5a = sv_H.compare(2, 3, cs_B);
+	cout << "The last three characters of "
+		<< "sv_H are ";
+	if (comp5a == 0) { cout << "equal to "; }
+	else if (comp5a < 0) { cout << "less than "; }
+	else { cout << "greater than "; }
+	cout << "cs_B.\n";
+	
+	// The sixth member function compares part of
+	// an operand string_view to part of an equal length of
+	// a C-string
+	int comp6a;
+	string_view sv_I("AACAB");
+	const char* cs_C = "ACAB";
+	cout << "sv_I is: " << sv_I << endl;
+	cout << "cs_C: " << cs_C << endl;
+	comp6a = sv_I.compare(1, 3, cs_C, 3);
+	cout << "The 3 characters from position 1 of "
+		<< "sv_I are ";
+	if (comp6a == 0) { cout << "equal to "; }
+	else if (comp6a < 0) { cout << "less than "; }
+	else { cout << "greater than "; }
+	cout << "the first 3 characters of cs_C.\n";
 
-   // The sixth member function compares part of
-   // an operand string_view to part of an equal length of
-   // a parameter C-string
-   int comp6a;
-   string_view s6o( "AACAB" );
-   const char* cs6p = "ACAB";
-   cout << "The operand string_view is: " << s6o << endl;
-   cout << "The parameter C-string is: " << cs6p << endl;
-   comp6a = s6o.compare(  1 , 3 , cs6p , 3 );
-   if ( comp6a < 0 )
-      cout << "The 3 characters from position 1 of "
-           << "the operand string_view are less than\n "
-           << "the first 3 characters of the parameter C-string."
-           << endl;
-   else if ( comp6a == 0 )
-      cout << "The 3 characters from position 2 of "
-           << "the operand string_view are equal to\n "
-           << "the first 3 characters of the parameter C-string."
-           <<  endl;
-   else
-      cout << "The 3 characters from position 2 of "
-           << "the operand string_view is greater than\n "
-           << "the first 3 characters of the parameter C-string."
-           << endl;
-   cout << endl;
 }
 ```
 
 ```Output
-The operand string_view is: CAB
-The parameter string_view is: CAB
-The operand string_view is equal to the parameter string_view.
-
-The operand string_view is: AACAB
-The parameter string_view is: CAB
-The last three characters of the operand string_view
-are equal to the parameter string_view.
-The first three characters of the operand string_view
-are less than the parameter string_view.
-
-The operand string_view is: AACAB
-The parameter string_view is: DCABD
-The three characters from position 2 of the operand string_view are equal to
-the 3 characters parameter string_view from position 1.
-
-The operand string_view is: ABC
-The parameter C-string is: DEF
-The operand string_view is less than the parameter C-string.
-
-The operand string_view is: AACAB
-The parameter string_view is: CAB
-The last three characters of the operand string_view
-are equal to the parameter C-string.
-
-The operand string_view is: AACAB
-The parameter C-string is: ACAB
-The 3 characters from position 2 of the operand string_view are equal to
-the first 3 characters of the parameter C-string.
+sv_A: CAB
+sv_B is: CAB
+sv_A is equal to sv_B.
+sv_C is: AACAB
+sv_D is: CAB
+The last three characters of sv_C are equal to sv_D.
+The first three characters of sv_C are less than sv_D.
+sv_E: AACAB
+sv_F is: DCABD
+The three characters from position 2 of sv_E are equal to the 3 characters of sv_F from position 1.
+sv_G is: ABC
+cs_A is: DEF
+sv_G is less than cs_A.
+sv_H is: AACAB
+cs_B is: CAB
+The last three characters of sv_H are equal to cs_B.
+sv_I is: AACAB
+cs_C: ACAB
+The 3 characters from position 1 of sv_I are equal to the first 3 characters of cs_C.
 ```
 
 ## <a name="const_iterator"></a>  basic_string_view::const_iterator
 
-A type that provides a random-access iterator that can access and read a **const** element in the string_view.
+Provides a random-access iterator that can read a **const** element.
 
 ```cpp
 typedef implementation-defined const_iterator;
 ```
 
-### Remarks
-
-A type `const_iterator` cannot be used to modify the value of a character and is used to iterate through a string_view in a forward direction.
-
 ### Example
 
-See the example for [begin](#begin) for an example of how to declare and use `const_iterator`.
+See the example for [cbegin](#cbegin) for an example of how to declare and use `const_iterator`.
 
 ## <a name="const_pointer"></a>  basic_string_view::const_pointer
 
-A type that provides a pointer to a **const** element in a string_view.
+Provides a pointer to a **const** element.
 
 ```cpp
 typedef typename allocator_type::const_pointer const_pointer;
@@ -580,7 +517,7 @@ typedef typename allocator_type::const_pointer const_pointer;
 
 The type is a synonym for `allocator_type::const_pointer`.
 
-For type `string_view`, it is equivalent to `char*`.
+For type `string_view`, it is equivalent to `char*`, for `wstring_view` it is `wchar_t*`, and so on.
 
 Pointers that are declared const must be initialized when they are declared. Const pointers always point to the same memory location and may point to constant or non-constant data.
 
@@ -592,7 +529,7 @@ Pointers that are declared const must be initialized when they are declared. Con
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    basic_string_view<char>::const_pointer pstr1a = "In Here";
@@ -610,15 +547,13 @@ The C-string cstr1c is: Out There.
 
 ## <a name="const_reference"></a>  basic_string_view::const_reference
 
-A type that provides a reference to a **const** element stored in a string_view for reading and performing **const** operations.
+Provides a reference to a **const** element for reading and performing **const** operations.
 
 ```cpp
 typedef typename allocator_type::const_reference const_reference;
 ```
 
 ### Remarks
-
-A type `const_reference` cannot be used to modify the value of an element.
 
 The type is a synonym for `allocator_type::const_reference`. For string_view `type`, it is equivalent to const `char&`.
 
@@ -628,7 +563,7 @@ See the example for [at](#at) for an example of how to declare and use `const_re
 
 ## <a name="const_reverse_iterator"></a>  basic_string_view::const_reverse_iterator
 
-A type that provides a random-access iterator that can read any **const** element in the string_view.
+Provides a random-access iterator that can read any **const** element.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -636,11 +571,11 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### Remarks
 
-A type `const_reverse_iterator` cannot modify the value of a character and is used to iterate through a string_view in reverse.
+A type `const_reverse_iterator` that is used to iterate in reverse.
 
 ### Example
 
-See the example for [rbegin](#rbegin) for an example of how to declare and use `const_reverse_iterator`.
+See the example for [crbegin](#crbegin) for an example of how to declare and use `const_reverse_iterator`.
 
 ## <a name="copy"></a>  basic_string_view::copy
 
@@ -679,33 +614,33 @@ A null character is not appended to the end of the copy.
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    string_view str1( "Hello World" );
-   basic_string_view <char>::iterator str_Iter;
+   string_view::iterator str_Iter;
    char array1 [ 20 ] = { 0 };
    char array2 [ 10 ] = { 0 };
-   basic_string_view <char>:: pointer array1Ptr = array1;
-   basic_string_view <char>:: value_type *array2Ptr = array2;
+   string_view:: pointer array1Ptr = array1;
+   string_view:: value_type *array2Ptr = array2;
 
    cout << "The original string_view str1 is: ";
-   for ( str_Iter = str1.begin( ); str_Iter != str1.end( ); str_Iter++ )
+   for ( str_Iter = str1.begin(); str_Iter != str1.end(); str_Iter++ )
       cout << *str_Iter;
    cout << endl;
 
-   basic_string_view <char>:: size_type nArray1;
+   string_view:: size_type nArray1;
    // Note: string_view::copy is potentially unsafe, consider
    // using string_view::_Copy_s instead.
-   nArray1 = str1.copy( array1Ptr , 12 );  // C4996
+   nArray1 = str1.copy( array1Ptr, 12 );  // C4996
    cout << "The number of copied characters in array1 is: "
         << nArray1 << endl;
    cout << "The copied characters array1 is: " << array1 << endl;
 
-   basic_string_view <char>:: size_type nArray2;
+   string_view:: size_type nArray2;
    // Note: string_view::copy is potentially unsafe, consider
    // using string_view::_Copy_s instead.
-   nArray2 = str1.copy( array2Ptr , 5 , 6  );  // C4996
+   nArray2 = str1.copy( array2Ptr, 5, 6  );  // C4996
    cout << "The number of copied characters in array2 is: "
            << nArray2 << endl;
    cout << "The copied characters array2 is: " << array2Ptr << endl;
@@ -730,7 +665,7 @@ constexpr const_reverse_iterator crbegin() const noexcept;
 
 ### Return Value
 
-A reverse iterator that points just beyond the end of the string_view. The position designates the beginning of the reverse string_view.
+A reverse iterator that points just beyond the end. The position designates the beginning of the reverse string_view.
 
 ## <a name="crend"></a>  basic_string_view::crend
 
@@ -786,7 +721,7 @@ A null character is not appended to the end of the copy.
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
     using namespace std;
     string_view str1("Hello World");
@@ -839,11 +774,11 @@ A pointer to the first element of the array containing the contents of the strin
 
 ### Remarks
 
-Objects of type string_view belonging to the C++ template class basic_string_view \<char> are not necessarily null terminated. The return type for `data` is not a valid C string, because no null character gets appended. The null character ' \0 ' is used as a special character in a C string to mark the end of the string_view, but has no special meaning in an object of type string_view and may be a part of the string_view object just like any other character.
+A sequence of string_view characters is not necessarily null-terminated. The return type for `data` is not a valid C string, because no null character gets appended. The null character '\0' is used as a special character in a C string to mark the end, but has no special meaning in an object of type string_view and may be a part of the string_view object just like any other character.
 
 There is an automatic conversion from **const char**<strong>\*</strong> into string_views, but the string_view class does not provide for automatic conversions from C-style string_views to objects of type **basic_string_view \<char>**.
 
-The returned string_view should not be modified, because this could invalidate the pointer to the string_view, or deleted, because the string_view has a limited lifetime and is owned by the class string_view.
+The returned character sequence should not be modified or deleted.
 
 ### Example
 
@@ -858,10 +793,10 @@ int main()
 	using namespace std;
 
 	string_view str1("Hello world");
-	cout << "The original string_view object str1 is: "
+	cout << "The original str1 is: "
 		<< str1 << endl;
-	cout << "The length of the string_view object str1 = "
-		<< str1.length() << endl << endl;
+	cout << "The length of str1 = "
+		<< str1.length() << "\n\n";
 
 	// Converting a string_view to an array of characters
 	const char* ptr1 = 0;
@@ -869,21 +804,21 @@ int main()
 	cout << "The modified string_view object ptr1 is: " << ptr1
 		<< endl;
 	cout << "The length of character array str1 = "
-		<< strlen(ptr1) << endl << endl;
+		<< strlen(ptr1) << "\n\n";
 }
 ```
 
 ```Output
-The original string_view object str1 is: Hello world
-The length of the string_view object str1 = 11
+The original str1 is: Hello world
+The length of str1 = 11
 
-The modified string_view object ptr1 is: Hello world
+The modified ptr1 is: Hello world
 The length of character array str1 = 11
 ```
 
 ## <a name="difference_type"></a>  basic_string_view::difference_type
 
-A type that provides the difference between two iterators that refer to elements within the same string_view.
+Provides the difference between two iterators that refer to elements within the same string_view.
 
 ```cpp
 typedef typename difference_type = ptrdiff_t;
@@ -901,12 +836,12 @@ The signed integer type describes an object that can represent the difference be
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    string_view str1( "quintillion" );
    cout << "The original string_view str1 is: " << str1 << endl;
-   basic_string_view <char>::size_type indexChFi, indexChLi;
+   string_view::size_type indexChFi, indexChLi;
 
    indexChFi = str1.find_first_of( "i" );
    indexChLi = str1.find_last_of( "i" );
@@ -962,8 +897,7 @@ int main() {
    if (b1)
       cout << "The string_view object str1 is empty." << endl;
    else
-      cout << "The string_view object str1 is not empty." << endl;
-   cout << endl;
+      cout << "The string_view object str1 is not empty.\n\n";
 
    // An example of an empty string_view object
    string_view str2;
@@ -977,7 +911,7 @@ int main() {
 
 ## <a name="end"></a>  basic_string_view::end
 
-Returns an iterator that addresses the location succeeding the last element in a string_view.
+Returns an iterator that addresses the location succeeding the last element.
 
 ```cpp
 constexpr const_iterator end() const noexcept;
@@ -985,7 +919,7 @@ constexpr const_iterator end() const noexcept;
 
 ### Return Value
 
-Returns a random-access iterator that addresses the location succeeding the last element in a string_view.
+Returns a random-access iterator that addresses the location succeeding the last element.
 
 ### Remarks
 
@@ -1005,13 +939,13 @@ int main()
 {
 	using namespace std;
 	string_view str1("No way out."), str2;
-	basic_string_view <char>::iterator str_Iter, str1_Iter, str2_Iter;
-	basic_string_view <char>::const_iterator str1_cIter;
+	string_view::iterator str_Iter, str1_Iter, str2_Iter;
+	string_view::const_iterator str1_cIter;
 
 	str1_Iter = str1.end();
 	str1_Iter--;
 	str1_Iter--;
-	cout << "The last character-letter of the string_view str1 is: " << *str1_Iter << endl;
+	cout << "The last character-letter of str1 is: " << *str1_Iter << endl;
 	cout << "The full original string_view str1 is: " << str1 << endl;
 
 	// end used to test when an iterator has reached the end of its string_view
@@ -1029,7 +963,7 @@ int main()
 ```
 
 ```Output
-The last character-letter of the string_view str1 is: t
+The last character-letter of str1 is: t
 The full original string_view str1 is: No way out.
 The string_view is now: No way out.
 The string_view str2 is empty.
@@ -1037,7 +971,7 @@ The string_view str2 is empty.
 
 ## <a name="find"></a>  basic_string_view::find
 
-Searches a string_view in a forward direction for the first occurrence of a substring_view that matches a specified sequence of characters.
+Searches a string_view in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.
 
 ```cpp
 constexpr size_type find(basic_string_view str, size_type offset = 0) const noexcept;
@@ -1068,7 +1002,7 @@ The number of characters, counting forward from the first character, in the C-st
 
 ### Return Value
 
-The index of the first character of the substring_view searched for when successful; otherwise `npos`.
+The index of the first character of the substring searched for when successful; otherwise `npos`.
 
 ### Example
 
@@ -1078,17 +1012,17 @@ The index of the first character of the substring_view searched for when success
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
    // The first member function
-   // searches for a single character in a string_view
+   // searches for a single character
    string_view str1( "Hello Everyone" );
    cout << "The original string_view str1 is: " << str1 << endl;
-   basic_string_view <char>::size_type indexCh1a, indexCh1b;
+   string_view::size_type indexCh1a, indexCh1b;
 
-   indexCh1a = str1.find( "e" , 3 );
+   indexCh1a = str1.find( "e", 3 );
    if (indexCh1a != string_view::npos )
       cout << "The index of the 1st 'e' found after the 3rd"
            << " position in str1 is: " << indexCh1a << endl;
@@ -1098,42 +1032,39 @@ int main( )
    indexCh1b = str1.find( "x" );
    if (indexCh1b != string_view::npos )
       cout << "The index of the 'x' found in str1 is: "
-           << indexCh1b << endl << endl;
+           << indexCh1b << "\n\n";
    else
-      cout << "The Character 'x' was not found in str1."
-           << endl << endl;
+      cout << "The Character 'x' was not found in str1.\n\n"
 
    // The second member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str2( "Let me make this perfectly clear." );
    cout << "The original string_view str2 is: " << str2 << endl;
-   basic_string_view <char>::size_type indexCh2a, indexCh2b;
+   string_view::size_type indexCh2a, indexCh2b;
 
    const char *cstr2 = "perfect";
-   indexCh2a = str2.find( cstr2 , 5 );
+   indexCh2a = str2.find( cstr2, 5 );
    if ( indexCh2a != string_view::npos )
       cout << "The index of the 1st element of 'perfect' "
            << "after\n the 5th position in str2 is: "
            << indexCh2a << endl;
    else
-      cout << "The substring_view 'perfect' was not found in str2 ."
-           << endl;
+      cout << "The substring 'perfect' was not found in str2.\n\n";
 
    const char *cstr2b = "imperfectly";
-   indexCh2b = str2.find( cstr2b , 0 );
+   indexCh2b = str2.find( cstr2b, 0 );
    if (indexCh2b != string_view::npos )
       cout << "The index of the 1st element of 'imperfect' "
            << "after\n the 5th position in str3 is: "
            << indexCh2b << endl;
    else
-      cout << "The substring_view 'imperfect' was not found in str2 ."
-           << endl << endl;
+      cout << "The substring 'imperfect' was not found in str2.\n\n";
 
    // The third member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str3( "This is a sample string_view for this program" );
    cout << "The original string_view str3 is: " << str3 << endl;
-   basic_string_view <char>::size_type indexCh3a, indexCh3b;
+   string_view::size_type indexCh3a, indexCh3b;
 
    const char *cstr3a = "sample";
    indexCh3a = str3.find( cstr3a );
@@ -1141,32 +1072,30 @@ int main( )
       cout << "The index of the 1st element of sample "
            << "in str3 is: " << indexCh3a << endl;
    else
-      cout << "The substring_view 'perfect' was not found in str3 ."
-           << endl;
+      cout << "The substring 'perfect' was not found in str3.\n\n";
 
    const char *cstr3b = "for";
-   indexCh3b = str3.find( cstr3b , indexCh3a + 1 , 2 );
+   indexCh3b = str3.find( cstr3b, indexCh3a + 1, 2 );
    if (indexCh3b != string_view::npos )
       cout << "The index of the next occurrence of 'for' is in "
-           << "str3 begins at: " << indexCh3b << endl << endl;
+           << "str3 begins at: " << indexCh3b << "\n\n";
    else
-      cout << "There is no next occurrence of 'for' in str3 ."
-           << endl << endl;
-
+      cout << "There is no next occurrence of 'for' in str3.\n";
+      
    // The fourth member function searches a string_view
-   // for a substring_view as specified by a string_view
+   // for a substring as specified by a string_view
    string_view str4( "clearly this perfectly unclear." );
    cout << "The original string_view str4 is: " << str4 << endl;
-   basic_string_view <char>::size_type indexCh4a, indexCh4b;
+   string_view::size_type indexCh4a, indexCh4b;
 
    string_view str4a( "clear" );
-   indexCh4a = str4.find( str4a , 5 );
+   indexCh4a = str4.find( str4a, 5 );
    if ( indexCh4a != string_view::npos )
       cout << "The index of the 1st element of 'clear' "
            << "after\n the 5th position in str4 is: "
            << indexCh4a << endl;
    else
-      cout << "The substring_view 'clear' was not found in str4 ."
+      cout << "The substring 'clear' was not found in str4 ."
            << endl;
 
    string_view str4b( "clear" );
@@ -1176,8 +1105,7 @@ int main( )
            << "in str4 is: "
            << indexCh4b << endl;
    else
-      cout << "The substring_view 'clear' was not found in str4 ."
-           << endl << endl;
+      cout << "The substring 'clear' was not found in str4 .";
 }
 ```
 
@@ -1189,7 +1117,7 @@ The Character 'x' was not found in str1.
 The original string_view str2 is: Let me make this perfectly clear.
 The index of the 1st element of 'perfect' after
 the 5th position in str2 is: 17
-The substring_view 'imperfect' was not found in str2 .
+The substring 'imperfect' was not found in str2 .
 
 The original string_view str3 is: This is a sample string_view for this program
 The index of the 1st element of sample in str3 is: 10
@@ -1203,7 +1131,7 @@ The index of the 1st element of 'clear' in str4 is: 0
 
 ## <a name="find_first_not_of"></a>  basic_string_view::find_first_not_of
 
-Searches through a string_view for the first character that is not an element of a specified string_view.
+Searches for the first character that is not an element of a specified string_view.
 
 ```cpp
 constexpr size_type find_first_not_of(basic_string_view str, size_type offset = 0) const noexcept;
@@ -1234,7 +1162,7 @@ The number of characters, counting forward from the first character, in the C-st
 
 ### Return Value
 
-The index of the first character of the substring_view searched for when successful; otherwise `npos`.
+The index of the first character of the substring searched for when successful; otherwise `npos`.
 
 ### Example
 
@@ -1244,18 +1172,18 @@ The index of the first character of the substring_view searched for when success
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
    // The first member function
-   // searches for a single character in a string_view
+   // searches for a single character
    string_view str1( "xddd-1234-abcd" );
    cout << "The original string_view str1 is: " << str1 << endl;
-   basic_string_view <char>::size_type indexCh1a, indexCh1b;
-   static const basic_string_view <char>::size_type npos = -1;
+   string_view::size_type indexCh1a, indexCh1b;
+   static const string_view::size_type npos = -1;
 
-   indexCh1a = str1.find_first_not_of( "d" , 2 );
+   indexCh1a = str1.find_first_not_of( "d", 2 );
    if ( indexCh1a != npos )
       cout << "The index of the 1st 'd' found after the 3rd"
            << " position in str1 is: " << indexCh1a << endl;
@@ -1265,25 +1193,24 @@ int main( )
    indexCh1b = str1.find_first_not_of( "x" );
    if (indexCh1b != npos )
       cout << "The index of the 'non x' found in str1 is: "
-           << indexCh1b << endl << endl;
+           << indexCh1b << "\n\n";
    else
-      cout << "The character 'non x' was not found in str1."
-           << endl << endl;
+      cout << "The character 'non x' was not found in str1.\n\n"
 
    // The second member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str2( "BBB-1111" );
    cout << "The original string_view str2 is: " << str2 << endl;
-   basic_string_view <char>::size_type indexCh2a, indexCh2b;
+   string_view::size_type indexCh2a, indexCh2b;
 
    const char *cstr2 = "B1";
-   indexCh2a = str2.find_first_not_of( cstr2 , 6 );
+   indexCh2a = str2.find_first_not_of( cstr2, 6 );
    if ( indexCh2a != npos )
       cout << "The index of the 1st occurrence of an "
            << "element of 'B1' in str2 after\n the 6th "
            << "position is: " << indexCh2a << endl;
    else
-      cout << "Elements of the substring_view 'B1' were not"
+      cout << "Elements of the substring 'B1' were not"
            << "\n found in str2 after the 6th position."
            << endl;
 
@@ -1292,16 +1219,16 @@ int main( )
    if ( indexCh2b != npos )
       cout << "The index of the 1st element of 'B2' "
            << "after\n the 0th position in str2 is: "
-           << indexCh2b << endl << endl;
+           << indexCh2b << "\n\n";
    else
-      cout << "The substring_view 'B2' was not found in str2 ."
-           << endl << endl << endl;
+      cout << "The substring 'B2' was not found in str2 ."
+           << "\n\n" << endl;
 
    // The third member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str3( "444-555-GGG" );
    cout << "The original string_view str3 is: " << str3 << endl;
-   basic_string_view <char>::size_type indexCh3a, indexCh3b;
+   string_view::size_type indexCh3a, indexCh3b;
 
    const char *cstr3a = "45G";
    indexCh3a = str3.find_first_not_of( cstr3a );
@@ -1316,30 +1243,30 @@ int main( )
            << endl;
 
    const char *cstr3b = "45G";
-   indexCh3b = str3.find_first_not_of( cstr3b , indexCh3a + 1 , 2 );
+   indexCh3b = str3.find_first_not_of( cstr3b, indexCh3a + 1, 2 );
    if ( indexCh3b != npos )
       cout << "The index of the second occurrence of an "
            << "element of '45G' in str3\n after the 0th "
-           << "position is: " << indexCh3b << endl << endl;
+           << "position is: " << indexCh3b << "\n\n";
    else
       cout << "Elements in str3 contain only characters "
            << " in the string_view  '45G'. "
            << endl  << endl;
 
    // The fourth member function searches a string_view
-   // for a substring_view as specified by a string_view
+   // for a substring as specified by a string_view
    string_view str4( "12-ab-12-ab" );
    cout << "The original string_view str4 is: " << str4 << endl;
-   basic_string_view <char>::size_type indexCh4a, indexCh4b;
+   string_view::size_type indexCh4a, indexCh4b;
 
    string_view str4a( "ba3" );
-   indexCh4a = str4.find_first_not_of( str4a , 5 );
+   indexCh4a = str4.find_first_not_of( str4a, 5 );
    if (indexCh4a != npos )
       cout << "The index of the 1st non occurrence of an "
            << "element of 'ba3' in str4 after\n the 5th "
            << "position is: " << indexCh4a << endl;
    else
-      cout << "Elements other than those in the substring_view"
+      cout << "Elements other than those in the substring"
            << " 'ba3' were not found in the string_view str4."
            << endl;
 
@@ -1350,7 +1277,7 @@ int main( )
            << "element of '12' in str4 after\n the 0th "
            << "position is: " << indexCh4b << endl;
    else
-      cout << "Elements other than those in the substring_view"
+      cout << "Elements other than those in the substring"
            << " '12' were not found in the string_view str4."
            << endl;
 }
@@ -1362,7 +1289,7 @@ The index of the 1st 'd' found after the 3rd position in str1 is: 4
 The index of the 'non x' found in str1 is: 1
 
 The original string_view str2 is: BBB-1111
-Elements of the substring_view 'B1' were not
+Elements of the substring 'B1' were not
 found in str2 after the 6th position.
 The index of the 1st element of 'B2' after
 the 0th position in str2 is: 3
@@ -1382,7 +1309,7 @@ the 0th position is: 2
 
 ## <a name="find_first_of"></a>  basic_string_view::find_first_of
 
-Searches through a string_view for the first character that matches any element of a specified string_view.
+Searches for the first character that matches any element of a specified string_view.
 
 ```cpp
 constexpr size_type find_first_of(basic_string_view str, size_type offset = 0) const noexcept;
@@ -1413,7 +1340,7 @@ The string_view for which the member function is to search.
 
 ### Return Value
 
-The index of the first character of the substring_view searched for when successful; otherwise `npos`.
+The index of the first character of the substring searched for when successful; otherwise `npos`.
 
 ### Example
 
@@ -1423,18 +1350,18 @@ The index of the first character of the substring_view searched for when success
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
    // The first member function
-   // searches for a single character in a string_view
+   // searches for a single character
    string_view str1( "abcd-1234-abcd-1234" );
    cout << "The original string_view str1 is: " << str1 << endl;
-   basic_string_view <char>::size_type indexCh1a, indexCh1b;
-   static const basic_string_view <char>::size_type npos = -1;
+   string_view::size_type indexCh1a, indexCh1b;
+   static const string_view::size_type npos = -1;
 
-   indexCh1a = str1.find_first_of( "d" , 5 );
+   indexCh1a = str1.find_first_of( "d", 5 );
    if ( indexCh1a != npos )
       cout << "The index of the 1st 'd' found after the 5th"
            << " position in str1 is: " << indexCh1a << endl;
@@ -1444,25 +1371,24 @@ int main( )
    indexCh1b = str1.find_first_of( "x" );
    if ( indexCh1b != npos )
       cout << "The index of the 'x' found in str1 is: "
-           << indexCh1b << endl << endl;
+           << indexCh1b << "\n\n";
    else
-      cout << "The character 'x' was not found in str1."
-           << endl << endl;
+      cout << "The character 'x' was not found in str1.\n\n"
 
    // The second member function searches a string_view
-   // for any element of a substring_view as specified by a C-string
+   // for any element of a substring as specified by a C-string
    string_view str2( "ABCD-1234-ABCD-1234" );
    cout << "The original string_view str2 is: " << str2 << endl;
-   basic_string_view <char>::size_type indexCh2a, indexCh2b;
+   string_view::size_type indexCh2a, indexCh2b;
 
    const char *cstr2 = "B1";
-   indexCh2a = str2.find_first_of( cstr2 , 6 );
+   indexCh2a = str2.find_first_of( cstr2, 6 );
    if ( indexCh2a != npos )
       cout << "The index of the 1st occurrence of an "
            << "element of 'B1' in str2 after\n the 6th "
            << "position is: " << indexCh2a << endl;
    else
-      cout << "Elements of the substring_view 'B1' were not "
+      cout << "Elements of the substring 'B1' were not "
            << "found in str2 after the 10th position."
            << endl;
 
@@ -1471,16 +1397,16 @@ int main( )
    if ( indexCh2b != npos )
       cout << "The index of the 1st element of 'D2' "
            << "after\n the 0th position in str2 is: "
-           << indexCh2b << endl << endl;
+           << indexCh2b << "\n\n";
    else
-      cout << "The substring_view 'D2' was not found in str2 ."
-           << endl << endl << endl;
+      cout << "The substring 'D2' was not found in str2 ."
+           << "\n\n" << endl;
 
    // The third member function searches a string_view
-   // for any element of a substring_view as specified by a C-string
+   // for any element of a substring as specified by a C-string
    string_view str3( "123-abc-123-abc-456-EFG-456-EFG" );
    cout << "The original string_view str3 is: " << str3 << endl;
-   basic_string_view <char>::size_type indexCh3a, indexCh3b;
+   string_view::size_type indexCh3a, indexCh3b;
 
    const char *cstr3a = "5G";
    indexCh3a = str3.find_first_of( cstr3a );
@@ -1489,35 +1415,34 @@ int main( )
            << "element of '5G' in str3 after\n the 0th "
            << "position is: " << indexCh3a << endl;
    else
-      cout << "Elements of the substring_view '5G' were not "
+      cout << "Elements of the substring '5G' were not "
            << "found in str3\n after the 0th position."
            << endl;
 
    const char *cstr3b = "5GF";
-   indexCh3b = str3.find_first_of( cstr3b , indexCh3a + 1 , 2 );
+   indexCh3b = str3.find_first_of( cstr3b, indexCh3a + 1, 2 );
    if (indexCh3b != npos )
       cout << "The index of the second occurrence of an "
            << "element of '5G' in str3\n after the 0th "
-           << "position is: " << indexCh3b << endl << endl;
+           << "position is: " << indexCh3b << "\n\n";
    else
-      cout << "Elements of the substring_view '5G' were not "
-           << "found in str3\n after the first occurrrence."
-           << endl << endl;
+      cout << "Elements of the substring '5G' were not "
+           << "found in str3\n after the first occurrrence.\n\n"
 
    // The fourth member function searches a string_view
-   // for any element of a substring_view as specified by a string_view
+   // for any element of a substring as specified by a string_view
    string_view str4( "12-ab-12-ab" );
    cout << "The original string_view str4 is: " << str4 << endl;
-   basic_string_view <char>::size_type indexCh4a, indexCh4b;
+   string_view::size_type indexCh4a, indexCh4b;
 
    string_view str4a( "ba3" );
-   indexCh4a = str4.find_first_of( str4a , 5 );
+   indexCh4a = str4.find_first_of( str4a, 5 );
    if ( indexCh4a != npos )
       cout << "The index of the 1st occurrence of an "
            << "element of 'ba3' in str4 after\n the 5th "
            << "position is: " << indexCh4a << endl;
    else
-      cout << "Elements of the substring_view 'ba3' were not "
+      cout << "Elements of the substring 'ba3' were not "
            << "found in str4\n after the 0th position."
            << endl;
 
@@ -1528,7 +1453,7 @@ int main( )
            << "element of 'a2' in str4 after\n the 0th "
            << "position is: " << indexCh4b << endl;
    else
-      cout << "Elements of the substring_view 'a2' were not "
+      cout << "Elements of the substring 'a2' were not "
            << "found in str4\n after the 0th position."
            << endl;
 }
@@ -1560,7 +1485,7 @@ the 0th position is: 1
 
 ## <a name="find_last_not_of"></a>  basic_string_view::find_last_not_of
 
-Searches through a string_view for the last character that is not any element of a specified string_view.
+Searches for the last character that is not any element of a specified string_view.
 
 ```cpp
 constexpr size_type find_last_not_of(basic_string_view str, size_type offset = npos) const noexcept;
@@ -1591,7 +1516,7 @@ The number of characters, counting forward from the first character, in the C-st
 
 ### Return Value
 
-The index of the first character of the substring_view searched for when successful; otherwise `npos`.
+The index of the first character of the substring searched for when successful; otherwise `npos`.
 
 ### Example
 
@@ -1601,18 +1526,18 @@ The index of the first character of the substring_view searched for when success
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
    // The first member function
-   // searches for a single character in a string_view
+   // searches for a single character
    string_view str1( "dddd-1dd4-abdd" );
    cout << "The original string_view str1 is: " << str1 << endl;
-   basic_string_view <char>::size_type indexCh1a, indexCh1b;
-   static const basic_string_view <char>::size_type npos = -1;
+   string_view::size_type indexCh1a, indexCh1b;
+   static const string_view::size_type npos = -1;
 
-   indexCh1a = str1.find_last_not_of( "d" , 7 );
+   indexCh1a = str1.find_last_not_of( "d", 7 );
    if ( indexCh1a != npos )
       cout << "The index of the last non 'd'\n found before the "
            << "7th position in str1 is: " << indexCh1a << endl;
@@ -1622,25 +1547,24 @@ int main( )
    indexCh1b = str1.find_last_not_of( "d" );
    if ( indexCh1b != npos )
       cout << "The index of the non 'd' found in str1 is: "
-           << indexCh1b << endl << endl;
+           << indexCh1b << "\n\n";
    else
-      cout << "The Character 'non x' was not found in str1."
-           << endl << endl;
+      cout << "The Character 'non x' was not found in str1.\n\n"
 
    // The second member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str2( "BBB-1111" );
    cout << "The original string_view str2 is: " << str2 << endl;
-   basic_string_view <char>::size_type indexCh2a, indexCh2b;
+   string_view::size_type indexCh2a, indexCh2b;
 
    const char *cstr2 = "B1";
-   indexCh2a = str2.find_last_not_of( cstr2 , 6 );
+   indexCh2a = str2.find_last_not_of( cstr2, 6 );
    if ( indexCh2a != npos )
       cout << "The index of the last occurrence of a "
            << "element\n not of 'B1' in str2 before the 6th "
            << "position is: " << indexCh2a << endl;
    else
-      cout << "Elements not of the substring_view 'B1' were not "
+      cout << "Elements not of the substring 'B1' were not "
            << "\n found in str2 before the 6th position."
            << endl;
 
@@ -1649,17 +1573,16 @@ int main( )
    if ( indexCh2b != npos )
       cout << "The index of the last element not "
            << "in 'B-1'\n is: "
-           << indexCh2b << endl << endl;
+           << indexCh2b << "\n\n";
    else
-      cout << "The elements of the substring_view 'B-1' were "
-           << "not found in str2 ."
-           << endl << endl;
+      cout << "The elements of the substring 'B-1' were "
+           << "not found in str2 .\n\n"
 
    // The third member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str3( "444-555-GGG" );
    cout << "The original string_view str3 is: " << str3 << endl;
-   basic_string_view <char>::size_type indexCh3a, indexCh3b;
+   string_view::size_type indexCh3a, indexCh3b;
 
    const char *cstr3a = "45G";
    indexCh3a = str3.find_last_not_of( cstr3a );
@@ -1674,30 +1597,30 @@ int main( )
            << endl;
 
    const char *cstr3b = "45G";
-   indexCh3b = str3.find_last_not_of( cstr3b , 6 , indexCh3a - 1 );
+   indexCh3b = str3.find_last_not_of( cstr3b, 6, indexCh3a - 1 );
    if (indexCh3b != npos )
       cout << "The index of the penultimate occurrence of an "
            << "element\n not in '45G' in str3 is: "
-           << indexCh3b << endl << endl;
+           << indexCh3b << "\n\n";
    else
       cout << "Elements in str3 contain only characters "
            << " in the string_view '45G'. "
            << endl  << endl;
 
    // The fourth member function searches a string_view
-   // for a substring_view as specified by a string_view
+   // for a substring as specified by a string_view
    string_view str4( "12-ab-12-ab" );
    cout << "The original string_view str4 is: " << str4 << endl;
-   basic_string_view <char>::size_type indexCh4a, indexCh4b;
+   string_view::size_type indexCh4a, indexCh4b;
 
    string_view str4a( "b-a" );
-   indexCh4a = str4.find_last_not_of( str4a , 5 );
+   indexCh4a = str4.find_last_not_of( str4a, 5 );
    if ( indexCh4a != npos )
       cout << "The index of the last occurrence of an "
            << "element not\n in 'b-a' in str4 before the 5th "
            << "position is: " << indexCh4a << endl;
    else
-      cout << "Elements other than those in the substring_view"
+      cout << "Elements other than those in the substring"
            << " 'b-a' were not found in the string_view str4."
            << endl;
 
@@ -1708,7 +1631,7 @@ int main( )
            << "element not in '12'\n in str4 before the end "
            << "position is: " << indexCh4b << endl;
    else
-      cout << "Elements other than those in the substring_view"
+      cout << "Elements other than those in the substring"
            << " '12'\n were not found in the string_view str4."
            << endl;
 }
@@ -1723,7 +1646,7 @@ The index of the non 'd' found in str1 is: 11
 The original string_view str2 is: BBB-1111
 The index of the last occurrence of a element
 not of 'B1' in str2 before the 6th position is: 3
-The elements of the substring_view 'B-1' were not found in str2 .
+The elements of the substring 'B-1' were not found in str2 .
 
 The original string_view str3 is: 444-555-GGG
 The index of the last occurrence of an element in str3
@@ -1740,7 +1663,7 @@ in str4 before the end position is: 10
 
 ## <a name="find_last_of"></a>  basic_string_view::find_last_of
 
-Searches through a string_view for the last character that matches any element of a specified string_view.
+Searches for the last character that matches any element of a specified string_view.
 
 ```cpp
 constexpr size_type find_last_of(basic_string_view str, size_type offset = npos) const noexcept;
@@ -1771,7 +1694,7 @@ The number of characters, counting forward from the first character, in the C-st
 
 ### Return Value
 
-The index of the last character of the substring_view searched for when successful; otherwise `npos`.
+The index of the last character of the substring searched for when successful; otherwise `npos`.
 
 ### Example
 
@@ -1781,18 +1704,18 @@ The index of the last character of the substring_view searched for when successf
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
    // The first member function
-   // searches for a single character in a string_view
+   // searches for a single character
    string_view str1( "abcd-1234-abcd-1234" );
    cout << "The original string_view str1 is: " << str1 << endl;
-   basic_string_view <char>::size_type indexCh1a, indexCh1b;
-   static const basic_string_view <char>::size_type npos = -1;
+   string_view::size_type indexCh1a, indexCh1b;
+   static const string_view::size_type npos = -1;
 
-   indexCh1a = str1.find_last_of( "d" , 14 );
+   indexCh1a = str1.find_last_of( "d", 14 );
    if ( indexCh1a != npos )
       cout << "The index of the last 'd' found before the 14th"
            << " position in str1 is: " << indexCh1a << endl;
@@ -1802,25 +1725,24 @@ int main( )
    indexCh1b = str1.find_first_of( "x" );
    if ( indexCh1b != npos )
       cout << "The index of the 'x' found in str1 is: "
-           << indexCh1b << endl << endl;
+           << indexCh1b << "\n\n";
    else
-      cout << "The character 'x' was not found in str1."
-           << endl << endl;
+      cout << "The character 'x' was not found in str1.\n\n"
 
    // The second member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str2( "ABCD-1234-ABCD-1234" );
    cout << "The original string_view str2 is: " << str2 << endl;
-   basic_string_view <char>::size_type indexCh2a, indexCh2b;
+   string_view::size_type indexCh2a, indexCh2b;
 
    const char *cstr2 = "B1";
-   indexCh2a = str2.find_last_of( cstr2 , 12 );
+   indexCh2a = str2.find_last_of( cstr2, 12 );
    if (indexCh2a != npos )
       cout << "The index of the last occurrence of an "
            << "element of 'B1' in str2 before\n the 12th "
            << "position is: " << indexCh2a << endl;
    else
-      cout << "Elements of the substring_view 'B1' were not "
+      cout << "Elements of the substring 'B1' were not "
            << "found in str2 before the 12th position."
            << endl;
 
@@ -1829,42 +1751,41 @@ int main( )
    if ( indexCh2b != npos )
       cout << "The index of the last element of 'D2' "
            << "after\n the 0th position in str2 is: "
-           << indexCh2b << endl << endl;
+           << indexCh2b << "\n\n";
    else
-      cout << "The substring_view 'D2' was not found in str2 ."
-           << endl << endl << endl;
+      cout << "The substring 'D2' was not found in str2 ."
+           << "\n\n" << endl;
 
    // The third member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str3( "456-EFG-456-EFG" );
    cout << "The original string_view str3 is: " << str3 << endl;
-   basic_string_view <char>::size_type indexCh3a;
+   string_view::size_type indexCh3a;
 
    const char *cstr3a = "5E";
-   indexCh3a = str3.find_last_of( cstr3a , 8 , 8 );
+   indexCh3a = str3.find_last_of( cstr3a, 8, 8 );
    if ( indexCh3a != npos )
       cout << "The index of the last occurrence of an "
            << "element of '5E' in str3 before\n the 8th "
-           << "position is: " << indexCh3a << endl << endl;
+           << "position is: " << indexCh3a << "\n\n";
    else
-      cout << "Elements of the substring_view '5G' were not "
-           << "found in str3\n before the 8th position."
-           << endl << endl;
+      cout << "Elements of the substring '5G' were not "
+           << "found in str3\n before the 8th position.\n\n"
 
    // The fourth member function searches a string_view
-   // for a substring_view as specified by a string_view
+   // for a substring as specified by a string_view
    string_view str4( "12-ab-12-ab" );
    cout << "The original string_view str4 is: " << str4 << endl;
-   basic_string_view <char>::size_type indexCh4a, indexCh4b;
+   string_view::size_type indexCh4a, indexCh4b;
 
    string_view str4a( "ba3" );
-   indexCh4a = str4.find_last_of( str4a , 8 );
+   indexCh4a = str4.find_last_of( str4a, 8 );
    if ( indexCh4a != npos )
       cout << "The index of the last occurrence of an "
            << "element of 'ba3' in str4 before\n the 8th "
            << "position is: " << indexCh4a << endl;
    else
-      cout << "Elements of the substring_view 'ba3' were not "
+      cout << "Elements of the substring 'ba3' were not "
            << "found in str4\n after the 0th position."
            << endl;
 
@@ -1875,7 +1796,7 @@ int main( )
            << "element of 'a2' in str4 before\n the 0th "
            << "position is: " << indexCh4b << endl;
    else
-      cout << "Elements of the substring_view 'a2' were not "
+      cout << "Elements of the substring 'a2' were not "
            << "found in str4\n after the 0th position."
            << endl;
 }
@@ -1905,7 +1826,7 @@ the 0th position is: 9
 
 ## <a name="front"></a>  basic_string_view::front
 
-Returns a reference to the first element in a string_view.
+Returns a reference to the first element.
 
 ```cpp
 constexpr const_reference front() const;
@@ -1913,11 +1834,11 @@ constexpr const_reference front() const;
 
 ### Return Value
 
-A reference to the first element of the string_view, which must be non-empty.
+A reference to the first element, which must be non-empty.
 
 ## <a name="iterator"></a> basic_string_view::iterator
 
-A type that provides a random-access iterator that can access and read a **const** element in the string_view.
+Provides a random-access iterator that can read a **const** element.
 
 ```cpp
 typedef implementation-defined iterator;
@@ -1927,7 +1848,7 @@ using iterator = const_iterator;
 
 ### Remarks
 
-A type `iterator` can be used to modify the value of a character and is used to iterate through a string_view in a forward direction.
+A type `iterator` is used to iterate in a forward direction.
 
 ### Example
 
@@ -1935,7 +1856,7 @@ See the example for [begin](#begin) for an example of how to declare and use `it
 
 ## <a name="length"></a> basic_string_view::length
 
-Returns the current number of elements in a string_view.
+Returns the current number of elements.
 
 ```cpp
 constexpr size_type length() const noexcept;
@@ -1953,20 +1874,20 @@ The member function is the same as [size](#size).
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    string_view str1("Hello world");
    cout << "The original string_view str1 is: " << str1 << endl;
 
    // The size and length member functions differ in name only
-   basic_string_view <char>::size_type sizeStr1, lenStr1;
-   sizeStr1 = str1.size( );
-   lenStr1 = str1.length( );
+   string_view::size_type sizeStr1, lenStr1;
+   sizeStr1 = str1.size();
+   lenStr1 = str1.length();
 
-   basic_string_view <char>::size_type capStr1, max_sizeStr1;
-   capStr1 = str1.capacity( );
-   max_sizeStr1 = str1.max_size( );
+   string_view::size_type capStr1, max_sizeStr1;
+   capStr1 = str1.capacity();
+   max_sizeStr1 = str1.max_size();
 
    // Compare size, length, capacity & max_size of a string_view
    cout << "The current size of original string_view str1 is: "
@@ -1976,15 +1897,15 @@ int main( )
    cout << "The capacity of original string_view str1 is: "
         << capStr1 << "." << endl;
    cout << "The max_size of original string_view str1 is: "
-        << max_sizeStr1 << "." << endl << endl;
+        << max_sizeStr1 << ".\n\n";
 
    str1.erase( 6, 5 );
    cout << "The modified string_view str1 is: " << str1 << endl;
 
-   sizeStr1 = str1.size( );
-   lenStr1 = str1.length( );
-   capStr1 = str1.capacity( );
-   max_sizeStr1 = str1.max_size( );
+   sizeStr1 = str1.size();
+   lenStr1 = str1.length();
+   capStr1 = str1.capacity();
+   max_sizeStr1 = str1.max_size();
 
    // Compare size, length, capacity & max_size of a string_view
    // after erasing part of the original string_view
@@ -2026,20 +1947,20 @@ A exception of type [length_error](../standard-library/length-error-class.md) is
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    string_view str1("Hello world");
    cout << "The original string_view str1 is: " << str1 << endl;
 
    // The size and length member functions differ in name only
-   basic_string_view <char>::size_type sizeStr1, lenStr1;
-   sizeStr1 = str1.size( );
-   lenStr1 = str1.length( );
+   string_view::size_type sizeStr1, lenStr1;
+   sizeStr1 = str1.size();
+   lenStr1 = str1.length();
 
-   basic_string_view <char>::size_type capStr1, max_sizeStr1;
-   capStr1 = str1.capacity( );
-   max_sizeStr1 = str1.max_size( );
+   string_view::size_type capStr1, max_sizeStr1;
+   capStr1 = str1.capacity();
+   max_sizeStr1 = str1.max_size();
 
    // Compare size, length, capacity & max_size of a string_view
    cout << "The current size of original string_view str1 is: "
@@ -2049,15 +1970,15 @@ int main( )
    cout << "The capacity of original string_view str1 is: "
         << capStr1 << "." << endl;
    cout << "The max_size of original string_view str1 is: "
-        << max_sizeStr1 << "." << endl << endl;
+        << max_sizeStr1 << ".\n\n";
 
    str1.erase( 6, 5 );
    cout << "The modified string_view str1 is: " << str1 << endl;
 
-   sizeStr1 = str1.size( );
-   lenStr1 = str1.length( );
-   capStr1 = str1.capacity( );
-   max_sizeStr1 = str1.max_size( );
+   sizeStr1 = str1.size();
+   lenStr1 = str1.length();
+   capStr1 = str1.capacity();
+   max_sizeStr1 = str1.max_size();
 
    // Compare size, length, capacity & max_size of a string_view
    // after erasing part of the original string_view
@@ -2090,7 +2011,7 @@ See the example for [find](#find) for an example of how to declare and use `npos
 
 ## <a name="op_at"></a>  basic_string_view::operator[]
 
-Provides a reference to the character with a specified index in a string_view.
+Provides a reference to the character with a specified index.
 
 ```cpp
 constexpr const_reference operator[](size_type offset) const;
@@ -2103,15 +2024,15 @@ The index of the position of the element to be referenced.
 
 ### Return Value
 
-A reference to the character of the string_view at the position specified by the parameter index.
+A reference to the character at the position specified by the parameter index.
 
 ### Remarks
 
-The first element of the string_view has an index of zero, and the following elements are indexed consecutively by the positive integers, so that a string_view of length *n* has an *n*th element indexed by the number *n* - 1.
+The first element has an index of zero, and the following elements are indexed consecutively by the positive integers, so that a string_view of length *n* has an *n*th element indexed by the number *n* - 1.
 
 `operator[]` is faster than the member function [at](#at) for providing read and write access to the elements of a string_view.
 
-`operator[]` does not check whether the index passed as a parameter is valid, but the member function `at` does and so should be used when the validity is not certain. An invalid index (an index less that zero or greater than or equal to the size of the string_view) passed to the member function `at` throws an [out_of_range](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string_view is a valid index for const string_views and the operator returns the null character when passed this index.
+`operator[]` does not check whether the index passed as an argument is valid, but the member function `at` does and so should be used when the validity is not certain. An invalid index (an index less that zero or greater than or equal to the size of the string_view) passed to the member function `at` throws an [out_of_range](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string_view is a valid index for const string_views and the operator returns the null character when passed this index.
 
 The reference returned may be invalidated by string_view reallocations or modifications for the non- **const** string_views.
 
@@ -2125,7 +2046,7 @@ When compiling with [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debu
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    string_view str1( "Hello world" ), str2( "Goodbye world" );
@@ -2134,8 +2055,8 @@ int main( )
    cout << "The original string_view str2 is: " << str2 << endl;
 
    // Element access to the non-const string_views
-   basic_string_view <char>::reference refStr1 = str1 [6];
-   basic_string_view <char>::reference refStr2 = str2.atif( 3 );
+   string_view::reference refStr1 = str1 [6];
+   string_view::reference refStr2 = str2.atif( 3 );
 
    cout << "The character with an index of 6 in string_view str1 is: "
         << refStr1 << "." << endl;
@@ -2143,8 +2064,8 @@ int main( )
         << refStr2 << "." << endl;
 
    // Element access to the const string_views
-   basic_string_view <char>::const_reference crefStr1 = cstr1[ cstr1.lengthif( ) ];
-   basic_string_view <char>::const_reference crefStr2 = cstr2.atif( 8 );
+   string_view::const_reference crefStr1 = cstr1[ cstr1.lengthif() ];
+   string_view::const_reference crefStr2 = cstr2.atif( 8 );
 
    if ( crefStr1 == '\0' )
       cout << "The null character is returned as a valid reference."
@@ -2177,9 +2098,7 @@ Returns a random-access iterator to the first element in a reversed string_view,
 
 `rbegin` is used with a reversed string_view just as [begin](#begin) is used with a string_view.
 
-If the return value of `rbegin` is assigned to a `const_reverse_iterator`, the string_view object cannot be modified. If the return value of `rbegin` is assigned to a `reverse_iterator`, the string_view object can be modified.
-
-`rbegin` can be used to initialize an iteration through a string_view backwards.
+`rbegin` can be used to initialize an iteration backwards.
 
 ### Example
 
@@ -2189,36 +2108,23 @@ If the return value of `rbegin` is assigned to a `const_reverse_iterator`, the s
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    string_view str1( "Able was I ere I saw Elba" ), str2;
-   basic_string_view <char>::reverse_iterator str_rIter, str1_rIter, str2_rIter;
-   basic_string_view <char>::const_reverse_iterator str1_rcIter;
+   string_view::reverse_iterator str_rIter, str1_rIter, str2_rIter;
+   string_view::const_reverse_iterator str1_rcIter;
 
-   str1_rIter = str1.rbeginif ( );
-   // str1_rIter--;
+   str1_rIter = str1.rbeginif ();
    cout << "The first character-letter of the reversed string_view str1 is: "
         << *str1_rIter << endl;
    cout << "The full reversed string_view str1 is:\n ";
-   for ( str_rIter = str1.rbegin( ); str_rIter != str1.rend( ); str_rIter++ )
+   for ( str_rIter = str1.rbegin(); str_rIter != str1.rend(); str_rIter++ )
       cout << *str_rIter;
    cout << endl;
-
-   // The dereferenced iterator can be used to modify a character
-*str1_rIter = 'A';
-   cout << "The first character-letter of the modified str1 is now: "
-        << *str1_rIter << endl;
-   cout << "The full modified reversed string_view str1 is now:\n ";
-   for ( str_rIter = str1.rbegin( ); str_rIter != str1.rend( ); str_rIter++ )
-      cout << *str_rIter;
-   cout << endl;
-
-   // The following line would be an error because iterator is const
-   // *str1_rcIter = 'A';
 
    // For an empty string_view, begin is equivalent to end
-   if ( str2.rbegin( ) == str2.rendif ( ) )
+   if ( str2.rbegin() == str2.rendif () )
       cout << "The string_view str2 is empty." << endl;
    else
       cout << "The string_viewstr2  is not empty." << endl;
@@ -2237,7 +2143,7 @@ The string_view str2 is empty.
 
 ## <a name="pointer"></a>  basic_string::pointer
 
-A type that provides a pointer to a character element in a string or character array.
+Provides a pointer to a character element in a string or character array.
 
 ```cpp
 typedef typename allocator_type::pointer pointer;
@@ -2260,7 +2166,7 @@ For type `string`, it is equivalent to **char**<strong>\*</strong>.
 #include <string>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    basic_string<char>::pointer pstr1a = "In Here";
@@ -2277,7 +2183,7 @@ The C-string cstr1b is: Out There.
 
 ## <a name="reference"></a>  basic_string::reference
 
-A type that provides a reference to an element stored in a string.
+Provides a reference to an element stored in a string.
 
 ```cpp
 typedef typename allocator_type::reference reference;
@@ -2331,19 +2237,19 @@ The value returned by `rend` should not be dereferenced.
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    string_view str1("Able was I ere I saw Elba"), str2;
-   basic_string_view <char>::reverse_iterator str_rIter, str1_rIter, str2_rIter;
-   basic_string_view <char>::const_reverse_iterator str1_rcIter;
+   string_view::reverse_iterator str_rIter, str1_rIter, str2_rIter;
+   string_view::const_reverse_iterator str1_rcIter;
 
-   str1_rIter = str1.rendif ( );
+   str1_rIter = str1.rendif ();
    str1_rIter--;
    cout << "The last character-letter of the reversed string_view str1 is: "
         << *str1_rIter << endl;
    cout << "The full reversed string_view str1 is:\n ";
-   for ( str_rIter = str1.rbegin( ); str_rIter != str1.rend( ); str_rIter++ )
+   for ( str_rIter = str1.rbegin(); str_rIter != str1.rend(); str_rIter++ )
       cout << *str_rIter;
    cout << endl;
 
@@ -2352,7 +2258,7 @@ int main( )
    cout << "The last character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string_view str1 is now:\n ";
-   for ( str_rIter = str1.rbegin( ); str_rIter != str1.rend( ); str_rIter++ )
+   for ( str_rIter = str1.rbegin(); str_rIter != str1.rend(); str_rIter++ )
       cout << *str_rIter;
    cout << endl;
 
@@ -2360,7 +2266,7 @@ int main( )
    // *str1_rcIter = 'T';
 
    // For an empty string_view, end is equivalent to begin
-   if ( str2.rbegin( ) == str2.rend( ) )
+   if ( str2.rbegin() == str2.rend() )
       cout << "The string_view str2 is empty." << endl;
    else
       cout << "The string_viewstr2  is not empty." << endl;
@@ -2379,7 +2285,7 @@ The string_view str2 is empty.
 
 ## <a name="reverse_iterator"></a>  basic_string_view::reverse_iterator
 
-A type that provides a reference to an element stored in a string_view.
+Provides a reference to an element.
 
 ```cpp
 typedef std::reverse_iterator<iterator> reverse_iterator;
@@ -2390,7 +2296,7 @@ using reverse_iterator = const_reverse_iterator;
 
 ### Remarks
 
-A type `reverse_iterator` can be used to modify the value of a character and is used to iterate through a string_view in reverse.
+A type `reverse_iterator` can be used to modify the value of a character and is used to iterate in reverse.
 
 ### Example
 
@@ -2398,7 +2304,7 @@ See the example for [rbegin](#rbegin) for an example of how to declare and use `
 
 ## <a name="rfind"></a>  basic_string_view::rfind
 
-Searches a string_view in a backward direction for the first occurrence of a substring_view that matches a specified sequence of characters.
+Searches a string_view in reverse for the first occurrence of a substring that matches a specified sequence of characters.
 
 ```cpp
 constexpr size_type rfind(basic_string_view str, size_type offset = npos) const noexcept;
@@ -2429,7 +2335,7 @@ The string_view for which the member function is to search.
 
 ### Return Value
 
-The index of the last occurrence, when searched backwards, of the first character of the substring_view when successful; otherwise `npos`.
+The index of the last occurrence, when searched backwards, of the first character of the substring when successful; otherwise `npos`.
 
 ### Example
 
@@ -2439,18 +2345,18 @@ The index of the last occurrence, when searched backwards, of the first characte
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
    // The first member function
-   // searches for a single character in a string_view
+   // searches for a single character
    string_view str1( "Hello Everyone" );
    cout << "The original string_view str1 is: " << str1 << endl;
-   basic_string_view <char>::size_type indexCh1a, indexCh1b;
-   static const basic_string_view <char>::size_type npos = -1;
+   string_view::size_type indexCh1a, indexCh1b;
+   static const string_view::size_type npos = -1;
 
-   indexCh1a = str1.rfind( "e" , 9 );
+   indexCh1a = str1.rfind( "e", 9 );
    if ( indexCh1a != npos )
       cout << "The index of the 1st 'e' found before the 9th"
            << " position in str1 is: " << indexCh1a << endl;
@@ -2460,42 +2366,40 @@ int main( )
    indexCh1b = str1.rfind( "x" );
    if ( indexCh1b != npos )
       cout << "The index of the 'x' found in str1 is: "
-           << indexCh1b << endl << endl;
+           << indexCh1b << "\n\n";
    else
-      cout << "The character 'x' was not found in str1."
-           << endl << endl;
+      cout << "The character 'x' was not found in str1.\n\n"
 
    // The second member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str2( "Let me make this perfectly clear." );
    cout << "The original string_view str2 is: " << str2 << endl;
-   basic_string_view <char>::size_type indexCh2a, indexCh2b;
+   string_view::size_type indexCh2a, indexCh2b;
 
    const char *cstr2 = "perfect";
-   indexCh2a = str2.rfind( cstr2 , 30 );
+   indexCh2a = str2.rfind( cstr2, 30 );
    if ( indexCh2a != npos )
       cout << "The index of the 1st element of 'perfect' "
            << "before\n the 30th position in str2 is: "
            << indexCh2a << endl;
    else
-      cout << "The substring_view 'perfect' was not found in str2 ."
+      cout << "The substring 'perfect' was not found in str2 ."
            << endl;
 
    const char *cstr2b = "imperfectly";
-   indexCh2b = str2.rfind( cstr2b , 30 );
+   indexCh2b = str2.rfind( cstr2b, 30 );
    if ( indexCh2b != npos )
       cout << "The index of the 1st element of 'imperfect' "
            << "before\n the 5th position in str3 is: "
            << indexCh2b << endl;
    else
-      cout << "The substring_view 'imperfect' was not found in str2 ."
-           << endl << endl;
+      cout << "The substring 'imperfect' was not found in str2 .\n\n"
 
    // The third member function searches a string_view
-   // for a substring_view as specified by a C-string
+   // for a substring as specified by a C-string
    string_view str3( "It is a nice day. I am happy." );
    cout << "The original string_view str3 is: " << str3 << endl;
-   basic_string_view <char>::size_type indexCh3a, indexCh3b;
+   string_view::size_type indexCh3a, indexCh3b;
 
    const char *cstr3a = "nice";
    indexCh3a = str3.rfind( cstr3a );
@@ -2503,32 +2407,31 @@ int main( )
       cout << "The index of the 1st element of 'nice' "
            << "in str3 is: " << indexCh3a << endl;
    else
-      cout << "The substring_view 'nice' was not found in str3 ."
+      cout << "The substring 'nice' was not found in str3 ."
            << endl;
 
    const char *cstr3b = "am";
-   indexCh3b = str3.rfind( cstr3b , indexCh3a + 25 , 2 );
+   indexCh3b = str3.rfind( cstr3b, indexCh3a + 25, 2 );
    if ( indexCh3b != npos )
       cout << "The index of the next occurrance of 'am' in "
-           << "str3 begins at: " << indexCh3b << endl << endl;
+           << "str3 begins at: " << indexCh3b << "\n\n";
    else
-      cout << "There is no next occurrence of 'am' in str3 ."
-           << endl << endl;
+      cout << "There is no next occurrence of 'am' in str3 .\n\n"
 
    // The fourth member function searches a string_view
-   // for a substring_view as specified by a string_view
+   // for a substring as specified by a string_view
    string_view str4( "This perfectly unclear." );
    cout << "The original string_view str4 is: " << str4 << endl;
-   basic_string_view <char>::size_type indexCh4a, indexCh4b;
+   string_view::size_type indexCh4a, indexCh4b;
 
    string_view str4a( "clear" );
-   indexCh4a = str4.rfind( str4a , 15 );
+   indexCh4a = str4.rfind( str4a, 15 );
    if (indexCh4a != npos )
       cout << "The index of the 1st element of 'clear' "
            << "before\n the 15th position in str4 is: "
            << indexCh4a << endl;
    else
-      cout << "The substring_view 'clear' was not found in str4 "
+      cout << "The substring 'clear' was not found in str4 "
            << "before the 15th position." << endl;
 
    string_view str4b( "clear" );
@@ -2538,8 +2441,7 @@ int main( )
            << "in str4 is: "
            << indexCh4b << endl;
    else
-      cout << "The substring_view 'clear' was not found in str4 ."
-           << endl << endl;
+      cout << "The substring 'clear' was not found in str4 .\n\n"
 }
 ```
 
@@ -2551,20 +2453,20 @@ The character 'x' was not found in str1.
 The original string_view str2 is: Let me make this perfectly clear.
 The index of the 1st element of 'perfect' before
 the 30th position in str2 is: 17
-The substring_view 'imperfect' was not found in str2 .
+The substring 'imperfect' was not found in str2 .
 
 The original string_view str3 is: It is a nice day. I am happy.
 The index of the 1st element of 'nice' in str3 is: 8
 The index of the next occurrance of 'am' in str3 begins at: 20
 
 The original string_view str4 is: This perfectly unclear.
-The substring_view 'clear' was not found in str4 before the 15th position.
+The substring 'clear' was not found in str4 before the 15th position.
 The index of the 1st element of 'clear' in str4 is: 17
 ```
 
 ## <a name="size"></a>  basic_string_view::size
 
-Returns the current number of elements in a string_view.
+Returns the number of elements in the underlying string at the time the string_view was constructed.
 
 ```cpp
 constexpr size_type size() const noexcept;
@@ -2573,6 +2475,10 @@ constexpr size_type size() const noexcept;
 ### Return Value
 
 The length of the string_view.
+
+### Remarks
+
+If the length of the underlying string data is changed, then the string_view is no longer valid and can raise `std::out_of_range`.
 
 ### Example
 
@@ -2589,12 +2495,12 @@ int main()
 	cout << "The original string_view str1 is: " << str1 << endl;
 
 	// The size and length member functions differ in name only
-	basic_string_view <char>::size_type sizeStr1, lenStr1;
+	string_view::size_type sizeStr1, lenStr1;
 	sizeStr1 = str1.size();
 	lenStr1 = str1.length();
 
-	basic_string_view <char>::size_type max_sizeStr1;
-	max_sizeStr1 = str1.max_size();
+	string_view::size_type max_sizeStr1;
+	max_sizeStr1 = str1.max_size();max_sizeStr1 = str1.max_size();
 
 	// Compare size, length, capacity & max_size of a string_view
 	cout << "The current size of original string_view str1 is: "
@@ -2602,13 +2508,13 @@ int main()
 	cout << "The current length of original string_view str1 is: "
 		<< lenStr1 << "." << endl;
 	cout << "The max_size of original string_view str1 is: "
-		<< max_sizeStr1 << "." << endl << endl;
+		<< max_sizeStr1 << ".\n\n";
 }
 ```
 
 ## <a name="size_type"></a>  basic_string_view::size_type
 
-An unsigned integer type that can represent the number of elements and indices in a string_view.
+An unsigned integer type that can represent the number of elements.
 
 ```cpp
 typedef typename allocator_type::size_type size_type;
@@ -2633,7 +2539,7 @@ int main()
 	using namespace std;
 	string_view str1("Hello world");
 
-	basic_string_view <char>::size_type sizeStr1, capStr1;
+	string_view::size_type sizeStr1, capStr1;
 	sizeStr1 = str1.size();
 
 	cout << "The current size of string_view str1 is: "
@@ -2648,7 +2554,7 @@ The capacity of string_view str1 is: 15.
 
 ## <a name="substr"></a>  basic_string_view::substr
 
-Copies a substring_view of at most some number of characters from a string_view beginning from a specified position.
+Copies a substring of at most some number of characters from a string_view beginning from a specified position.
 
 ```cpp
 constexpr basic_string_view substr(size_type offset = 0, size_type count = npos) const;
@@ -2657,7 +2563,7 @@ constexpr basic_string_view substr(size_type offset = 0, size_type count = npos)
 ### Parameters
 
 *offset*<br/>
-An index locating the element at the position from which the copy of the string_view is made, with a default value of 0.
+An index locating the element at the position from which the copy is made, with a default value of 0.
 
 *count*<br/>
 The number of characters that are to be copied if they are present.
@@ -2674,20 +2580,19 @@ A string_view object that is a copy of elements of the string_view operand begin
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
    string_view  str1("Heterological paradoxes are persistent.");
-   cout << "The original string_view str1 is: \n " << str1
-        << endl << endl;
+   cout << "The original string_view str1 is: \n " << str1 << "\n\n";
 
-   basic_string_view <char> str2 = str1.substr( 6 , 7 );
-   cout << "The substring_view str1 copied is: " << str2
-        << endl << endl;
+   string_view str2 = str1.substr( 6, 7 );
+   cout << "The substring str1 copied is: " << str2
+ << "\n\n";
 
-   basic_string_view <char> str3 = str1.substr(  );
-   cout << "The default substring_view str3 is: \n " << str3
+   string_view str3 = str1.substr();
+   cout << "The default substring str3 is: \n " << str3
         <<  "\n which is the entire original string_view." << endl;
 }
 ```
@@ -2696,16 +2601,16 @@ int main( )
 The original string_view str1 is:
 Heterological paradoxes are persistent.
 
-The substring_view str1 copied is: logical
+The substring str1 copied is: logical
 
-The default substring_view str3 is:
+The default substring str3 is:
 Heterological paradoxes are persistent.
 which is the entire original string_view.
 ```
 
 ## <a name="swap"></a>  basic_string_view::swap
 
-Exchange the contents of two string_views.
+Exchange the pointers to the underlying string data.
 
 ```cpp
 constexpr void swap(basic_string_view& str) noexcept;
@@ -2714,7 +2619,7 @@ constexpr void swap(basic_string_view& str) noexcept;
 ### Parameters
 
 *str*<br/>
-The source string_view whose elements are to be exchanged with those in the destination string_view.
+The source string_view whose pointer is to be exchanged with that of the destination string_view.
 
 ### Remarks
 
@@ -2736,7 +2641,7 @@ Otherwise, it performs a number of element assignments and constructor calls pro
 #include <string_view>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
@@ -2765,7 +2670,7 @@ The basic_string_view s2 = Tweedledee.
 
 ## <a name="traits_type"></a>  basic_string_view::traits_type
 
-A type for the character traits of the elements stored in a string_view.
+A type for the character traits of the elements.
 
 ```cpp
 using traits_type = traits;
@@ -2783,7 +2688,7 @@ See the example for [copy](../standard-library/char-traits-struct.md#copy) for a
 
 ## <a name="value_type"></a>  basic_string_view::value_type
 
-A type that represents the type of characters stored in a string_view.
+Represents the type of characters.
 
 ```cpp
 typedef typename allocator_type::value_type value_type;
@@ -2792,32 +2697,6 @@ typedef typename allocator_type::value_type value_type;
 ### Remarks
 
 It is equivalent to `traits_type::char_type` and is equivalent to **char** for objects of type `string_view`.
-
-### Example
-
-```cpp
-// basic_string_view_value_type.cpp
-// compile with: /EHsc
-#include <string_view>
-#include <iostream>
-
-int main( )
-{
-   using namespace std;
-
-   basic_string_view<char>::value_type ch1 = 'G';
-
-   char ch2 = 'H';
-
-   cout << "The character ch1 is: " << ch1 << "." << endl;
-   cout << "The character ch2 is: " << ch2 << "." << endl;
-}
-```
-
-```Output
-The character ch1 is: G.
-The character ch2 is: H.
-```
 
 ## See also
 
