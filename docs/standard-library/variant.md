@@ -14,57 +14,10 @@ namespace std {
 class template variant
 template <class... Types> class variant;
 // 23.7.4, variant helper classes
-template <class T>
-struct variant_size; // not deﬁned
-template <class T>
-struct variant_size<const T>;
-template <class T>
-struct variant_size<volatile T>;
-template <class T>
-struct variant_size<const volatile T>;
-template <class T>
-inline constexpr size_t variant_size_v = variant_size<T>::value;
-template <class... Types>
-struct variant_size<variant<Types...>>;
-template <size_t I, class T>
-struct variant_alternative; // not deﬁned
-template <size_t I, class T>
-struct variant_alternative<I, const T>;
-template <size_t I, class T>
-struct variant_alternative<I, volatile T>;
-template <size_t I, class T>
-struct variant_alternative<I, const volatile T>;
-template <size_t I, class T>
-using variant_alternative_t = typename variant_alternative<I, T>::type;
-template <size_t I, class... Types>
-struct variant_alternative<I, variant<Types...>>;
+
 inline constexpr size_t variant_npos = -1;
 // 23.7.5, value access
-template <class T, class... Types>
-constexpr bool holds_alternative(const variant<Types...>&) noexcept;
-template <size_t I, class... Types>
-constexpr variant_alternative_t<I, variant<Types...>>& get(variant<Types...>&);
-template <size_t I, class... Types>
-constexpr variant_alternative_t<I, variant<Types...>>&& get(variant<Types...>&&);
-template <size_t I, class... Types>
-constexpr const variant_alternative_t<I, variant<Types...>>& get(const variant<Types...>&);
-template <size_t I, class... Types>
-constexpr const variant_alternative_t<I, variant<Types...>>&& get(const variant<Types...>&&);
-template <class T, class... Types>
-constexpr T& get(variant<Types...>&);
-template <class T, class... Types> constexpr T&& get(variant<Types...>&&);
-template <class T, class... Types>
-constexpr const T& get(const variant<Types...>&);
-template <class T, class... Types>
-constexpr const T&& get(const variant<Types...>&&);
-template <size_t I, class... Types>
-constexpr add_pointer_t<variant_alternative_t<I, variant<Types...>>> get_if(variant<Types...>*) noexcept;
-template <size_t I, class... Types>
-constexpr add_pointer_t<const variant_alternative_t<I, variant<Types...>>> get_if(const variant<Types...>*) noexcept;
-template <class T, class... Types>
-constexpr add_pointer_t<T> get_if(variant<Types...>*) noexcept;
-template <class T, class... Types>
-constexpr add_pointer_t<const T> get_if(const variant<Types...>*) noexcept;
+
 // 23.7.6, relational operators
 template <class... Types> constexpr bool operator==(const variant<Types...>&, const variant<Types...>&);
 template <class... Types> constexpr bool operator!=(const variant<Types...>&, const variant<Types...>&);
@@ -73,8 +26,21 @@ template <class... Types> constexpr bool operator>(const variant<Types...>&, con
 template <class... Types> constexpr bool operator<=(const variant<Types...>&, const variant<Types...>&);
 template <class... Types> constexpr bool operator>=(const variant<Types...>&, const variant<Types...>&);
 // 23.7.7, visitation
-template <class Visitor, class... Variants> constexpr see below visit(Visitor&&, Variants&&...); // 23.7.8, class monostate struct monostate; // 23.7.9, monostate relational operators constexpr bool operator<(monostate, monostate) noexcept; constexpr bool operator>(monostate, monostate) noexcept; constexpr bool operator<=(monostate, monostate) noexcept; constexpr bool operator>=(monostate, monostate) noexcept; constexpr bool operator==(monostate, monostate) noexcept; constexpr bool operator!=(monostate, monostate) noexcept;
-// 23.7.10, specialized algorithms template <class... Types> void swap(variant<Types...>&, variant<Types...>&) noexcept(see below); // 23.7.11, class bad_variant_access class bad_variant_access;
+template <class Visitor, class... Variants>
+constexpr see below
+visit(Visitor&&, Variants&&...);
+// 23.7.8, class monostate
+struct monostate;
+// 23.7.9, monostate relational operators
+constexpr bool operator<(monostate, monostate) noexcept;
+constexpr bool operator>(monostate, monostate) noexcept;
+constexpr bool operator<=(monostate, monostate) noexcept;
+constexpr bool operator>=(monostate, monostate) noexcept;
+constexpr bool operator==(monostate, monostate) noexcept;
+constexpr bool operator!=(monostate, monostate) noexcept;
+
+// 23.7.11, class bad_variant_access
+class bad_variant_access;
 // 23.7.12, hash support
 template <class T>
 struct hash;
@@ -110,13 +76,16 @@ struct uses_allocator<variant<Types...>, Alloc>;
 
 |Function|Description|
 |-|-|
-|[swap](../standard-library/forward-list-functions.md#swap)|Exchanges the elements of two forward lists.|
+|[get](../standard-library/variant-functions.md#get)|Exchanges the elements of two forward lists.|
+|[get_if](../standard-library/variant-functions.md#get_if)|Exchanges the elements of two forward lists.|
+|[holds_alternative](../standard-library/variant-functions.md#holds_alternative)|Exchanges the elements of two forward lists.|
 
-### Classes
+### Classes and Structs
 
-|Class|Description|
+|Class or Struct|Description|
 |-|-|
-|[forward_list](../standard-library/forward-list-class.md)|Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of elements, each containing a member of type `Type`.|
+|[variant_alternative](../standard-library/variant-alternative-structure.md)|Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of elements, each containing a member of type `Type`.|
+|[variant_size](../standard-library/variant-size-structure.md)|Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of elements, each containing a member of type `Type`.|
 
 ## See also
 

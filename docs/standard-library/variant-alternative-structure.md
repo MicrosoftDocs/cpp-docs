@@ -7,6 +7,19 @@ ms.assetid: db366119-74cb-43e8-aacf-9679e561fa2f
 ---
 # type_index Class
 
+template <size_t I, class T>
+struct variant_alternative; // not deﬁned
+template <size_t I, class T>
+struct variant_alternative<I, const T>;
+template <size_t I, class T>
+struct variant_alternative<I, volatile T>;
+template <size_t I, class T>
+struct variant_alternative<I, const volatile T>;
+template <size_t I, class T>
+using variant_alternative_t = typename variant_alternative<I, T>::type;
+template <size_t I, class... Types>
+struct variant_alternative<I, variant<Types...>>;
+
 The `type_index` class wraps a pointer to [type_info Class](../cpp/type-info-class.md) to assist in indexing by such objects.
 
 class type_index {
