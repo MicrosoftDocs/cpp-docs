@@ -158,4 +158,4 @@ template <class U>
 
 ## See also
 
-[&lt;optional>](../standard-library/optional.md) \
+[&lt;optional>](../standard-library/optional.md)

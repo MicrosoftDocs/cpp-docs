@@ -17,4 +17,4 @@ inline constexpr nullopt_t nullopt(unspecified);
 
 ## See also
 
-[&lt;optional>](../standard-library/optional.md) \
+[&lt;optional>](../standard-library/optional.md)
