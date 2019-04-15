@@ -7280,7 +7280,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/parallel/openmp/openmp-libraries.md",
+            "source_path": "docs/parallel/openmp/reference/openmp-libraries.md",
             "redirect_url": "/cpp/parallel/openmp/reference/openmp-library-reference",
             "redirect_document_id": false
         },
