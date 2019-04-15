@@ -27,7 +27,7 @@ To resolve LNK4049, try one of the following procedures:
 
 - Remove the `__declspec(dllimport)` modifier from the forward declaration of the symbol that triggered LNK4049. You can search for symbols within a binary image by using the **DUMPBIN** utility. The **DUMPBIN /SYMBOLS** switch displays the COFF symbol table of the image. For more information on the **DUMPBIN** utility, see [DUMPBIN Reference](../../build/reference/dumpbin-reference.md).
 
-- Temporarily disable incremental linking and whole-program optimization. When recompiled, the application generates Warning LNK4217, which includes the name of the function which references the imported symbol. Remove the `__declspec(dllimport)` declaration modifier from the imported symbol and re-enable incremental linking or whole-program optimization as required.
+- Temporarily disable incremental linking and whole-program optimization. When recompiled, the application generates Warning LNK4217, which includes the name of the function that references the imported symbol. Remove the `__declspec(dllimport)` declaration modifier from the imported symbol and re-enable incremental linking or whole-program optimization as required.
 
 Although the final generated code behaves correctly, the code generated to call the imported function is less efficient than calling the function directly. This warning doesn't appear when you compile by using the [/clr](../../build/reference/clr-common-language-runtime-compilation.md) option.
 
