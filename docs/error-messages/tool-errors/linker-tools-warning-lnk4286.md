@@ -1,6 +1,6 @@
 ---
 title: "Linker Tools Warning LNK4286"
-ms.date: "04/09/2019"
+ms.date: "04/15/2019"
 f1_keywords: ["LNK4286"]
 helpviewer_keywords: ["LNK4286"]
 ---
@@ -23,5 +23,5 @@ For more information on import and export data declarations, see [dllexport, dll
 ## See also
 
 [Linker Tools Warning LNK4049](linker-tools-warning-lnk4049.md) \
-[Linker Tools Warning LNK4286](linker-tools-warning-lnk4286.md) \
+[Linker Tools Warning LNK4217](linker-tools-warning-lnk4217.md) \
 [dllexport, dllimport](../../cpp/dllexport-dllimport.md)
