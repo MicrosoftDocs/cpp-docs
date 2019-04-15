@@ -1,47 +1,57 @@
 ---
-title: "/openmp (Enable OpenMP 2.0 Support)"
-ms.date: "11/04/2016"
+title: "/openmp (Enable OpenMP Support)"
+ms.date: "04/15/2019"
 f1_keywords: ["/openmp", "VC.Project.VCCLCompilerTool.OpenMP"]
 helpviewer_keywords: ["/openmp compiler option [C++]", "-openmp compiler option [C++]"]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
 ---
-# /openmp (Enable OpenMP 2.0 Support)
+# /openmp (Enable OpenMP Support)
 
-Causes the compiler to process `#pragma`[omp](../../preprocessor/omp.md).
+Causes the compiler to process [`#pragma omp`](../../preprocessor/omp.md) directives in support of OpenMP.
 
 ## Syntax
 
-```
-/openmp
-```
+::: moniker range=">= vs-2019"
+
+> **/openmp**[**:**__experimental__]
+
+::: moniker-end
+
+::: moniker range="<= vs-2017"
+
+> **/openmp**
+
+::: moniker-end
 
 ## Remarks
 
 `#pragma omp` is used to specify [Directives](../../parallel/openmp/reference/openmp-directives.md) and [Clauses](../../parallel/openmp/reference/openmp-clauses.md). If **/openmp** is not specified in a compilation, the compiler ignores OpenMP clauses and directives. [OpenMP Function](../../parallel/openmp/reference/openmp-functions.md) calls are processed by the compiler even if **/openmp** is not specified.
 
-Applications compiled with **/openmp** and **/clr** can only be run in a single application domain process; multiple application domains are not supported. That is, when the module constructor (.cctor) is run, it will detect the process is compiled with **/openmp** and if the application is being loaded into a non-default runtime. For more information, see [appdomain](../../cpp/appdomain.md), [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
+::: moniker range=">= vs-2019"
 
-If you attempt to load an application compiled with **/openmp** and **/clr** into a non-default application domain, a <xref:System.TypeInitializationException> exception will be thrown outside the debugger and a OpenMPWithMultipleAppdomainsException exception will be thrown in the debugger.
+The C++ compiler currently supports the OpenMP 2.0 standard. However, Visual Studio 2019 also now offers SIMD functionality. To use SIMD, compile by using the **/openmp:experimental** option. This option enables both the usual OpenMP features, and additional OpenMP SIMD features not available when using the **/openmp** switch.
+
+::: moniker-end
+
+Applications compiled by using both **/openmp** and **/clr** can only be run in a single application domain process; multiple application domains are not supported. That is, when the module constructor (.cctor) is run, it detects if the process is compiled with **/openmp**, and if the application is loaded into a non-default runtime. For more information, see [appdomain](../../cpp/appdomain.md), [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
+
+If you attempt to load an application compiled with **/openmp** and **/clr** into a non-default application domain, a <xref:System.TypeInitializationException> exception is thrown outside the debugger, and a `OpenMPWithMultipleAppdomainsException` exception is thrown in the debugger.
 
 These exceptions can also be raised in the following situations:
 
-- If your application compiled with **/clr**, but not with **/openmp**, is loaded into a non-default application domain but where the process includes an application that was compiled with **/openmp**.
+- If your application is compiled with **/clr** but not **/openmp**, and is loaded into a non-default application domain, where the process includes an application that was compiled with **/openmp**.
 
-- If you pass your **/clr** application to a utility, such as regasm.exe ([Regasm.exe (Assembly Registration Tool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)), which loads its target assemblies into a non-default application domain.
+- If you pass your **/clr** application to a utility, such as [regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), which loads its target assemblies into a non-default application domain.
 
 The common language runtime's code access security doesn’t work in OpenMP regions. If you apply a CLR code access security attribute outside a parallel region, it won't be in effect in the parallel region.
 
-Microsoft advises that you do not write **/openmp** applications that allows partially trusted callers, using <xref:System.Security.AllowPartiallyTrustedCallersAttribute>, or any CLR code access security attributes.
+Microsoft doesn't recommend that you write **/openmp** applications that allow partially trusted callers, using <xref:System.Security.AllowPartiallyTrustedCallersAttribute>, or any CLR code access security attributes.
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties** node.
-
-1. Expand the **C/C++** node.
-
-1. Select the **Language** property page.
+1. Expand the **Configuration Properties** > **C/C++** > **Language** property page.
 
 1. Modify the **OpenMP Support** property.
 
@@ -57,7 +67,7 @@ When you compile with **/openmp**, the second call to test2 never runs any longe
 
 So if you have only one loop in your application and it runs in less than 15ms (adjusted for the approximate overhead on your machine), **/openmp** may not be appropriate, but if it's anything more than that, you may want to consider using **/openmp**.
 
-```
+```cpp
 // cpp_compiler_options_openmp.cpp
 #include <omp.h>
 #include <stdio.h>
@@ -103,5 +113,6 @@ int main(int argc, char* argv[]) {
 
 ## See also
 
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Options](compiler-options.md) \
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md) \
+[OpenMP in MSVC](../../parallel/openmp/openmp-in-visual-cpp.md)
