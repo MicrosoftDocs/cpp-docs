@@ -1,7 +1,7 @@
 ---
 title: "&lt;string_view&gt; typedefs"
-ms.date: "11/04/2016"
-f1_keywords: ["string_view/std::string_view", "string_view/std::u16string_view", "string_view/std::u32string_view", "string_view/std::wstring_view"]
+ms.date: "04/16/2019"
+f1_keywords: ["xstring/std::string_view", "xstring/std::u16string_view", "xstring/std::u32string_view", "xstring/std::wstring_view"]
 ---
 # &lt;string_view&gt; typedefs
 
@@ -23,9 +23,9 @@ typedef basic_string_view<char, char_traits<char>> string_view;
 The following are equivalent declarations:
 
 ```cpp
-string_view str("");
+string_view str("Hello");
 
-basic_string_view<char> str("");
+basic_string_view<char> str("Hello");
 ```
 
 For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
@@ -67,15 +67,15 @@ typedef basic_string_view<wchar_t, char_traits<wchar_t>> wstring;
 The following are equivalent declarations:
 
 ```cpp
-wstring wstr(L"");
+wstring wstr(L"Hello");
 
-basic_string_view<wchar_t> wstr(L"");
+basic_string_view<wchar_t> wstr(L"Hello");
 ```
 
 For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
 > [!NOTE]
-> The size of **wchar_t** is implementation-defined. If your code depends on **wchar_t** to be a certain size, check your platform's implementation (for example, with `sizeof(wchar_t)`). If you need a string_view character type with a width that is guaranteed to remain the same on all platforms, use [string_view](../standard-library/string-view-typedefs.md#string_view), [u16string_view](../standard-library/string-view-typedefs.md#u16string_view), or [u32string_view](../standard-library/string-view-typedefs.md#u32string_view).
+> The size of **wchar_t** is two bytes on Windows but this is not necessarily the same on all platforms. If you need a string_view wide character type with a width that is guaranteed to remain the same on all platforms, use [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) or [u32string_view](../standard-library/string-view-typedefs.md#u32string_view).
 
 ## See also
 
