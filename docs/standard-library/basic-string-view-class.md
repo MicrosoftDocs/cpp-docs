@@ -75,19 +75,19 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 
 |Type name|Description|
 |-|-|
-|[const_iterator](#const_iterator)|Random-access iterator that can read a **const** element in the string_view.|
-|[const_pointer](#const_pointer)|Pointer to a **const** element.|
-|[const_reference](#const_reference)|Reference to a **const** element.|
-|[const_reverse_iterator](#const_reverse_iterator)|Random-access iterator that can read any element in the string_view.|
-|[difference_type](#difference_type)|Provides the difference between two iterators that refer to elements within the same string_view.|
-|[iterator](#iterator)|Same as const_iterator.|
-|[npos](#npos)|An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.|
-|[pointer](#pointer)|Same as const_pointer.|
-|[reference](#reference)|Same as const_reference.|
-|[reverse_iterator](#reverse_iterator)|Same as const_reverse_iterator.|
-|[size_type](#size_type)|An unsigned integral type for the number of elements.|
-|[traits_type](#traits_type)|A type for the character traits of the elements.|
-|[value_type](#value_type)|Represents the type of characters.|
+|**const_iterator**|Random-access iterator that can read **const** elements.|
+|**const_pointer**|`using const_pointer = const value_type*;`|
+|**const_reference**|`using const_reference = const value_type&;`|
+|**const_reverse_iterator**|`using const_reverse_iterator = reverse_iterator<const_iterator>;`|
+|**difference_type**|`using difference_type = ptrdiff_t;`|
+|**iterator**|`using iterator = const_iterator;`|
+|**npos**|`static constexpr size_type npos = size_type(-1);`|
+|**pointer**|`using pointer = value_type*;`|
+|**reference**|`using reference = value_type&;`|
+|**reverse_iterator**|`using reverse_iterator = const_reverse_iterator;`|
+|**size_type**|`using size_type = size_t;`|
+|**traits_type**|`using traits_type = Traits;`|
+|**value_type**|`using value_type = CharType;`|
 
 ### Member functions
 
@@ -182,7 +182,8 @@ constexpr const_reference back() const;
 A reference to the last non-null element.
 
 ## <a name="basic_string_view"></a>  basic_string_view::basic_string_view
-constructs a string_view.
+
+Constructs a string_view.
 
 ```cpp
 constexpr basic_string_view() noexcept;
@@ -228,32 +229,6 @@ A **const** random-access iterator that points at the first element of the range
 
 A random-access iterator that addresses the first element of the sequence or just beyond the end of an empty sequence.
 
-### Example
-
-```cpp
-// basic_string_view_begin.cpp
-// compile with: /EHsc
-#include <string_view>
-#include <iostream>
-
-int main() {
-    using namespace std;
-    string_view str1("No way out."), str2;
-    string_view::iterator str1_Iter;
-
-    str1_Iter = str1.begin();
-    cout << "The first character str1 is: "
-        << *str1_Iter << endl;
-    cout << "The full original string_view str1 is: " << str1 << endl;
-
-    // For an empty string_view, begin is equivalent to end
-    if (str2.begin() == str2.end())
-        cout << "The string_view str2 is empty." << endl;
-    else
-        cout << "The string_view str2 is not empty." << endl;
-}
-```
-
 ## <a name="cend"></a>  basic_string_view::cend
 
 Returns a **const** iterator that addresses the location just beyond the last element in a range.
@@ -272,7 +247,7 @@ A **const** random-access iterator that points just beyond the end of the range.
 
 ## <a name="compare"></a> basic_string_view::compare
 
-Performs a case sensitive comparison with a specified string_view to determine if the two string_views are equal or if one is lexicographically less than the other.
+Performs a case sensitive comparison with a specified string_view to determine if the two string_views are equal or if one is lexicographically less than the other. The [\<string_view> operators](string-view-operators.md) use this member function to perform comparisons.
 
 ```cpp
 constexpr int compare(basic_string_view strv) const noexcept;
@@ -309,7 +284,7 @@ A negative value if this string_view is less than *strv* or *ptr*; zero if the t
 
 ### Remarks
 
-The `compare` member functions perform a case-sensitive comparison of either all or part of each character sequence.
+The `compare` member functions perform a case-sensitive comparison of either all or part of each character sequence. 
 
 ### Example
 
@@ -447,59 +422,6 @@ cs_C: ACAB
 The 3 characters from position 1 of sv_I are equal to the first 3 characters of cs_C.
 ```
 
-## <a name="const_iterator"></a>  basic_string_view::const_iterator
-
-Provides a random-access iterator that can read a **const** element.
-
-
-## <a name="const_pointer"></a>  basic_string_view::const_pointer
-
-Provides a pointer to a **const** element.
-
-```cpp
-using const_pointer = const value_type*;
-```
-
-### Remarks
-
-The type is a synonym for `allocator_type::const_pointer`.
-
-For type string_view, it is equivalent to `char*`, for `wstring_view` it is `wchar_t*`, and so on.
-
-Pointers that are declared const must be initialized when they are declared. Const pointers always point to the same memory location and may point to constant or non-constant data.
-
-## <a name="const_reference"></a>  basic_string_view::const_reference
-
-Provides a reference to a **const** element for reading and performing **const** operations.
-
-```cpp
-using const_reference = const value_type&;
-```
-
-### Remarks
-
-The type is a synonym for `allocator_type::const_reference`. For string_view `type`, it is equivalent to const `char&`.
-
-### Example
-
-See the example for [at](#at) for an example of how to declare and use `const_reference`.
-
-## <a name="const_reverse_iterator"></a>  basic_string_view::const_reverse_iterator
-
-Provides a random-access iterator that can read any **const** element.
-
-```cpp
-using const_reverse_iterator = reverse_iterator<const_iterator>;
-```
-
-### Remarks
-
-A type `const_reverse_iterator` that is used to iterate in reverse.
-
-### Example
-
-See the example for [crbegin](#crbegin) for an example of how to declare and use `const_reverse_iterator`.
-
 ## <a name="copy"></a>  basic_string_view::copy
 
 Copies at most a specified number of characters from an indexed position in a source string_view to a target character array.
@@ -569,15 +491,6 @@ A pointer to the first element of the array containing the contents of the strin
 
 A sequence of string_view characters is not necessarily null-terminated. The return type for `data` is not a valid C string, because no null character gets appended. The null character '\0' has no special meaning in an object of type string_view and may be a part of the string_view object just like any other character.
 
-
-## <a name="difference_type"></a>  basic_string_view::difference_type
-
-A signed integral type that can represent the difference between two iterators that refer to elements within the same string_view.
-
-```cpp
-using difference_type = ptrdiff_t;
-```
-
 ## <a name="empty"></a>  basic_string_view::empty
 
 Tests whether the string_view contains characters or not.
@@ -642,7 +555,6 @@ The number of characters in *ptr*, counting forward from the first character.
 
 The index of the first character of the substring searched for when successful; otherwise `npos`.
 
-
 ## <a name="find_first_not_of"></a>  basic_string_view::find_first_not_of
 
 Searches for the first character that is not an element of a specified string_view.
@@ -674,7 +586,6 @@ The number of characters, counting forward from the first character, in the C-st
 ### Return Value
 
 The index of the first character of the substring searched for when successful; otherwise `npos`.
-
 
 ## <a name="find_first_of"></a>  basic_string_view::find_first_of
 
@@ -708,7 +619,6 @@ The string_view for which the member function is to search.
 
 The index of the first character of the substring searched for when successful; otherwise `npos`.
 
-
 ## <a name="find_last_not_of"></a>  basic_string_view::find_last_not_of
 
 Searches for the last character that is not any element of a specified string_view.
@@ -739,8 +649,7 @@ The number of characters, counting forward from the first character, in *ptr*.
 
 ### Return Value
 
-The index of the first character of the substring searched for when successful; otherwise `npos`.
-
+The index of the first character of the substring searched for when successful; otherwise `string_view::npos`.
 
 ## <a name="find_last_of"></a>  basic_string_view::find_last_of
 
@@ -786,22 +695,6 @@ constexpr const_reference front() const;
 
 A reference to the first non-null element.
 
-## <a name="iterator"></a> basic_string_view::iterator
-
-Provides a random-access iterator that can read a **const** element.
-
-```cpp
-using iterator = const_iterator;
-```
-
-### Remarks
-
-A type `iterator` is used to iterate in a forward direction.
-
-### Example
-
-See the example for [begin](#begin) for an example of how to declare and use `iterator`.
-
 ## <a name="length"></a> basic_string_view::length
 
 Returns the current number of elements.
@@ -833,18 +726,6 @@ The maximum number of characters a string_view could contain.
 
 A exception of type [length_error](../standard-library/length-error-class.md) is thrown when an operation produces a string_view with a length greater than the maximum size.
 
-## <a name="npos"></a>  basic_string_view::npos
-
-An unsigned integral value that indicates either "not found" or "all remaining characters" when a search function fails.
-
-```cpp
-static constexpr size_type npos = size_type(-1);
-```
-
-### Example
-
-See the example for [find](#find) for an example of how to declare and use `npos`.
-
 ## <a name="op_at"></a>  basic_string_view::operator[]
 
 Provides a reference to the character with a specified index.
@@ -874,7 +755,6 @@ The reference returned may be invalidated if the underlying string data is modif
 
 When compiling with [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string_view. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-
 ## <a name="rbegin"></a>  basic_string_view::rbegin
 
 Returns a const iterator to the first element in a reversed string_view.
@@ -891,25 +771,6 @@ Returns a random-access iterator to the first element in a reversed string_view,
 
 `rbegin` is used with a reversed string_view just as [begin](#begin) is used with a string_view. `rbegin` can be used to initialize an iteration backwards.
 
-## <a name="pointer"></a>  basic_string_view::pointer
-
-Provides a const pointer to a character element in a string_view.
-
-```cpp
-using pointer = value_type*;
-```
-
-
-For type `string`, it is equivalent to char*.
-
-## <a name="reference"></a>  basic_string_view::reference
-
-Provides a const reference to an element stored in a string_view.
-
-```cpp
-using reference = value_type&;
-```
-
 ## <a name="rend"></a>  basic_string_view::rend
 
 Returns a const iterator that points to one past the last element in a reversed string_view.
@@ -925,19 +786,6 @@ A const reverse random-access iterator that points to one past the last element 
 ### Remarks
 
 `rend` is used with a reversed string_view just as [end](#end) is used with a string_view. `rend` can be used to test whether a reverse iterator has reached the end of its string_view. The value returned by `rend` should not be dereferenced.
-
-
-## <a name="reverse_iterator"></a>  basic_string_view::reverse_iterator
-
-Provides a const reference to an element for reverse iteration.
-
-```cpp
-using reverse_iterator = const_reverse_iterator;
-```
-
-### Example
-
-See the example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.
 
 ## <a name="rfind"></a>  basic_string_view::rfind
 
@@ -987,21 +835,6 @@ The length of the string_view.
 
 If the length of the underlying string data is changed, then the string_view is no longer valid and can raise `std::out_of_range`.
 
-
-## <a name="size_type"></a>  basic_string_view::size_type
-
-An unsigned integer type that can represent the number of elements.
-
-```cpp
-using size_type = size_t;
-```
-
-### Remarks
-
-It is equivalent to `allocator_type::size_type`.
-
-For type string_view, it is equivalent to `size_t`.
-
 ## <a name="substr"></a>  basic_string_view::substr
 
 Points to a substring of at most some number of characters from a specified position.
@@ -1046,30 +879,6 @@ If the string_views being swapped have the same allocator object, the `swap` mem
 - Invalidates no references, pointers, or iterators that designate elements in the two string_views.
 
 Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
-
-## <a name="traits_type"></a>  basic_string_view::traits_type
-
-A type for the character traits of the elements.
-
-```cpp
-using traits_type = traits;
-```
-
-### Remarks
-
-The type is a synonym for the second template parameter `Traits`. For type `string_view`, it is equivalent to **char_traits\<char>**.
-
-## <a name="value_type"></a>  basic_string_view::value_type
-
-Represents the type of the character elements.
-
-```cpp
-using value_type = charT;
-```
-
-### Remarks
-
-Equivalent to **char** for objects of type `string_view`, **wchar_t** for `wstring_view`, **char16_t** for `u16string_view` and **char32_t** for `u32string_view`.
 
 ## See also
 
