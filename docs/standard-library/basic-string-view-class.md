@@ -93,8 +93,8 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 
 |Member function|Description|
 |-|-|
-|[at](#at)|Returns a reference to the element at a specified location.|
-|[back](#back)|Returns a reference to the last element.|
+|[at](#at)|Returns a const_reference to the element at a specified location.|
+|[back](#back)|Returns a const_reference to the last element.|
 |[begin](#begin)|Returns a const iterator addressing the first element. (string_views are immutable.)|
 |[cbegin](#cbegin)|Same as [begin](#begin).|
 |[cend](#cend)|Returns a const iterator that points to one past the last element.|
@@ -110,7 +110,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[find_first_of](#find_first_of)|Searches for the first character that matches any element of a specified string_view.|
 |[find_last_not_of](#find_last_not_of)|Searches for the last character that is not any element of a specified string_view.|
 |[find_last_of](#find_last_of)|Searches for the last character that is an element of a specified string_view.|
-|[front](#front)|Returns a reference to the first element.|
+|[front](#front)|Returns a const_reference to the first element.|
 |[length](#length)|Returns the current number of elements.|
 |[max_size](#max_size)|Returns the maximum number of characters a string_view could contain.|
 |[rbegin](#rbegin)|Returns a const iterator that addresses the first element in a reversed string_view.|
@@ -133,7 +133,7 @@ References, pointers, and iterators that designate elements of the controlled se
 
 ## <a name="at"></a>  basic_string_view::at
 
-Returns a reference to the character at the specified 0-based index.
+Returns a const_reference to the character at the specified 0-based index.
 
 ```cpp
 constexpr const_reference at(size_type offset) const;
@@ -146,7 +146,7 @@ The index of the position of the element to be referenced.
 
 ### Return Value
 
-A reference to the character at the position specified by the parameter index.
+a const_reference to the character at the position specified by the parameter index.
 
 ### Remarks
 
@@ -171,7 +171,7 @@ int main()
 
 ## <a name="back"></a>  basic_string_view::back
 
-Returns a reference to the last element.
+Returns a const_reference to the last element.
 
 ```cpp
 constexpr const_reference back() const;
@@ -179,7 +179,7 @@ constexpr const_reference back() const;
 
 ### Return Value
 
-A reference to the last non-null element.
+A const_reference to the last non-null element.
 
 ## <a name="basic_string_view"></a>  basic_string_view::basic_string_view
 
@@ -217,7 +217,7 @@ Returns a const_iterator addressing the first element.
 
 ## <a name="cbegin"></a>  basic_string_view::cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Returns a const_iterator that addresses the first element in the range.
 
 ```cpp
 constexpr const_iterator cbegin() const noexcept;
@@ -227,11 +227,9 @@ constexpr const_iterator cbegin() const noexcept;
 
 A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
-A random-access iterator that addresses the first element of the sequence or just beyond the end of an empty sequence.
-
 ## <a name="cend"></a>  basic_string_view::cend
 
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
+Returns a const_iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 constexpr const_iterator cend() const noexcept;
@@ -243,11 +241,11 @@ A **const** random-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
-`cend` is used to test whether an iterator has passed the end of its range. The value returned by `cend` should not be dereferenced.
+`cend` is used to test whether a const_iterator has passed the end of its range. The value returned by `cend` should not be dereferenced.
 
 ## <a name="compare"></a> basic_string_view::compare
 
-Performs a case sensitive comparison with a specified string_view to determine if the two string_views are equal or if one is lexicographically less than the other. The [\<string_view> operators](string-view-operators.md) use this member function to perform comparisons.
+Performs a case sensitive comparison with a specified string_view (or a convertible string type) to determine if the two objects are equal or if one is lexicographically less than the other. The [\<string_view> operators](string-view-operators.md) use this member function to perform comparisons.
 
 ```cpp
 constexpr int compare(basic_string_view strv) const noexcept;
@@ -276,7 +274,7 @@ The maximum number of characters from *strv* to be compared.
 The index of *strv* at which the comparison begins.
 
 *ptr*<br/>
-The C-string to be compared to this string_view.
+The C string to be compared to this string_view.
 
 ### Return Value
 
@@ -353,7 +351,7 @@ int main()
     cout << "the 3 characters of sv_F from position 1.\n";
 
     // The fourth member function compares
-    // an operand string_view to a C-string
+    // an operand string_view to a C string
     int comp4a;
     string_view sv_G("ABC");
     const char* cs_A = "DEF";
@@ -367,7 +365,7 @@ int main()
     cout << "cs_A.\n";
 
     // The fifth member function compares part of
-    // an operand string_view to a C-string
+    // an operand string_view to a C string
     int comp5a;
     string_view sv_H("AACAB");
     const char* cs_B = "CAB";
@@ -383,7 +381,7 @@ int main()
     
     // The sixth member function compares part of
     // an operand string_view to part of an equal length of
-    // a C-string
+    // a C string
     int comp6a;
     string_view sv_I("AACAB");
     const char* cs_C = "ACAB";
@@ -426,8 +424,6 @@ The 3 characters from position 1 of sv_I are equal to the first 3 characters of 
 
 Copies at most a specified number of characters from an indexed position in a source string_view to a target character array.
 
-This method is potentially unsafe, as it relies on the caller to check that the passed values are correct. Consider using [basic_string_view::_Copy_s](#copys) instead.
-
 ```cpp
 size_type copy(charT* ptr, size_type count, size_type offset = 0) const;
 ```
@@ -453,7 +449,7 @@ A null character is not appended to the end of the copy.
 
 ## <a name="crbegin"></a>  basic_string_view::crbegin
 
-Returns a const iterator that addresses the first element in a reversed string_view.
+Returns a const_reverse_iterator that addresses the first element in a reversed string_view.
 
 ```cpp
 constexpr const_reverse_iterator crbegin() const noexcept;
@@ -461,7 +457,7 @@ constexpr const_reverse_iterator crbegin() const noexcept;
 
 ### Return Value
 
-A reverse iterator that points to one past the end of the sequence.
+A const_reverse_reverse_iterator that points to one past the end of the sequence.
 
 ## <a name="crend"></a>  basic_string_view::crend
 
@@ -473,11 +469,11 @@ constexpr const_reverse_iterator crend() const noexcept;
 
 ### Return Value
 
-Returns a const iterator that addresses one past the end of a reversed string_view.
+Returns a const_reverse_iterator that addresses one past the end of a reversed string_view.
 
 ## <a name="data"></a>  basic_string_view::data
 
-Converts the contents of a string_view into an array of characters.
+Returns a raw non-owning pointer to the character sequence of the object that was used to construct the string_view.
 
 ```cpp
 constexpr value_type *data() const noexcept;
@@ -485,7 +481,7 @@ constexpr value_type *data() const noexcept;
 
 ### Return Value
 
-A pointer to the first element of the array containing the contents of the string_view, or, for an empty array, a non-null pointer that cannot be dereferenced.
+A pointer to the first element of the character array, or, for an empty array, a non-null pointer that cannot be dereferenced.
 
 ### Remarks
 
@@ -509,7 +505,7 @@ The member function is equivalent to [size](#size) == 0.
 
 ## <a name="end"></a>  basic_string_view::end
 
-Returns an iterator that points to one past the last element.
+Returns a random-access const_iterator that points to one past the last element.
 
 ```cpp
 constexpr const_iterator end() const noexcept;
@@ -517,11 +513,11 @@ constexpr const_iterator end() const noexcept;
 
 ### Return Value
 
-Returns a random-access iterator that points to one past the last element.
+Returns a random-access const_iterator that points to one past the last element.
 
 ### Remarks
 
-`end` is used to test whether an iterator has reached the end of its string_view. The value returned by `end` should not be dereferenced.
+`end` is used to test whether a const_iterator has reached the end of its string_view. The value returned by `end` should not be dereferenced.
 
 ## <a name="find"></a>  basic_string_view::find
 
@@ -578,10 +574,10 @@ The character value for which the member function is to search.
 Index of the position at which the search is to begin.
 
 *ptr*<br/>
-The C-string for which the member function is to search.
+The C string for which the member function is to search.
 
 *count*<br/>
-The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
 ### Return Value
 
@@ -607,10 +603,10 @@ The character value for which the member function is to search.
 Index of the position at which the search is to begin.
 
 *ptr*<br/>
-The C-string for which the member function is to search.
+The C string for which the member function is to search.
 
 *count*<br/>
-The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
 *str*<br/>
 The string_view for which the member function is to search.
@@ -642,7 +638,7 @@ The character value for which the member function is to search.
 Index of the position at which the search is to finish.
 
 *ptr*<br/>
-The C-string for which the member function is to search.
+The C string for which the member function is to search.
 
 *count*<br/>
 The number of characters, counting forward from the first character, in *ptr*.
@@ -674,10 +670,10 @@ The character value for which the member function is to search.
 Index of the position at which the search is to finish.
 
 *ptr*<br/>
-The C-string for which the member function is to search.
+The C string for which the member function is to search.
 
 *count*<br/>
-The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
 ### Return Value
 
@@ -685,7 +681,7 @@ The index of the last character of the substring searched for when successful; o
 
 ## <a name="front"></a>  basic_string_view::front
 
-Returns a reference to the first non-null element.
+Returns a const_reference to the first non-null element.
 
 ```cpp
 constexpr const_reference front() const;
@@ -693,7 +689,7 @@ constexpr const_reference front() const;
 
 ### Return Value
 
-A reference to the first non-null element.
+A const_reference to the first non-null element.
 
 ## <a name="length"></a> basic_string_view::length
 
@@ -709,26 +705,23 @@ The member function is the same as [size](#size).
 
 ## <a name="max_size"></a>  basic_string_view::max_size
 
-Returns the maximum number of characters a string_view could contain.
+Returns the maximum number of characters a string_view can contain.
 
 ```cpp
-size_type max_size() const;
-
-...
 constexpr size_type max_size() const noexcept;
 ```
 
 ### Return Value
 
-The maximum number of characters a string_view could contain.
+The maximum number of characters a string_view can contain.
 
 ### Remarks
 
-A exception of type [length_error](../standard-library/length-error-class.md) is thrown when an operation produces a string_view with a length greater than the maximum size.
+A exception of type [length_error](../standard-library/length-error-class.md) is thrown when an operation produces a string_view with a length greater than `max_size()`.
 
 ## <a name="op_at"></a>  basic_string_view::operator[]
 
-Provides a reference to the character with a specified index.
+Provides a const_reference to the character with a specified index.
 
 ```cpp
 constexpr const_reference operator[](size_type offset) const;
@@ -741,7 +734,7 @@ The index of the position of the element to be referenced.
 
 ### Return Value
 
-A reference to the character at the position specified by the parameter index.
+A const_reference to the character at the position specified by the parameter index.
 
 ### Remarks
 
@@ -807,10 +800,10 @@ The character value for which the member function is to search.
 Index of the position at which the search is to begin.
 
 *ptr*<br/>
-The C-string for which the member function is to search.
+The C string for which the member function is to search.
 
 *count*<br/>
-The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
 *str*<br/>
 The string_view for which the member function is to search.
