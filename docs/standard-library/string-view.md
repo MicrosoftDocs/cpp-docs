@@ -6,7 +6,7 @@ ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
 ---
 # &lt;string_view&gt;
 
-Defines the class template `basic_string_view` and related types.
+Defines the class template `basic_string_view` and related types and operators.
 
 For more information about `basic_string_view`, see [basic_string_view Class](../standard-library/basic-string-view-class.md)
 
@@ -31,15 +31,17 @@ The string_view family of template specializations provide an efficient way to p
 
 ### Operators
 
+The \<string_view> operators can compare `string_view` objects to objects of any convertible string types.
+
 |Operator|Description|
 |-|-|
-|[operator!=](../standard-library/string-view-operators.md#op_neq)|Tests if the `string_view` object on the left side of the operator is not equal to the `string_view` object on the right side.|
-|[operator==](../standard-library/string-view-operators.md#op_eq_eq)|Tests if the `string_view` object on the left side of the operator is equal to the `string_view` object on the right side.|
-|[operator<](../standard-library/string-view-operators.md#op_lt)|Tests if the `string_view` object on the left side of the operator is less than to the `string_view` object on the right side.|
-|[operator<=](../standard-library/string-view-operators.md#op_lt_eq)|Tests if the `string_view` object on the left side of the operator is less than or equal to the `string_view` object on the right side.|
+|[operator!=](../standard-library/string-view-operators.md#op_neq)|Tests if the object on the left side of the operator is not equal to the object on the right side.|
+|[operator==](../standard-library/string-view-operators.md#op_eq_eq)|Tests if the object on the left side of the operator is equal to the object on the right side.|
+|[operator<](../standard-library/string-view-operators.md#op_lt)|Tests if the object on the left side of the operator is less than to the object on the right side.|
+|[operator<=](../standard-library/string-view-operators.md#op_lt_eq)|Tests if the object on the left side of the operator is less than or equal to the object on the right side.|
 |[operator<\<](../standard-library/string-view-operators.md#op_lt_lt)|A template function that inserts a `string_view` into the output stream.|
-|[operator>](../standard-library/string-view-operators.md#op_gt)|Tests if the `string_view` object on the left side of the operator is greater than to the `string_view` object on the right side.|
-|[operator>=](../standard-library/string-view-operators.md#op_gt_eq)|Tests if the `string_view` object on the left side of the operator is greater than or equal to the `string_view` object on the right side.|
+|[operator>](../standard-library/string-view-operators.md#op_gt)|Tests if the object on the left side of the operator is greater than to the object on the right side.|
+|[operator>=](../standard-library/string-view-operators.md#op_gt_eq)|Tests if the object on the left side of the operator is greater than or equal to the object on the right side.|
 
 ### Literals
 

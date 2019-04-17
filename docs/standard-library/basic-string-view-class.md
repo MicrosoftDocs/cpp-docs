@@ -13,15 +13,14 @@ The standard library defines several specializations based on the type of the el
 
 -  `string_view`
 -  `wstring_view`
--  `u8_string_view`
 -  `u16string_view`
 -  `u32string_view`
 
 Use these typedefs in your code to ensure that the implicit conversions from the underlying string types work correctly. In this document, the term *string_view* refers generally to any of these typedefs.
 
-A string_view describes the minimum common interface necessary to read string data. It provides const access to the underlying data; it makes no copies (except for the `copy` function). The data may or may not contain null values ('\0') at any position. A string_view has no control over the object's lifetime; therefore it is the caller's responsibility to ensure that the underlying string data valid.
+A string_view describes the minimum common interface necessary to read string data. It provides const access to the underlying data; it makes no copies (except for the `copy` function). The data may or may not contain null values ('\0') at any position. A string_view has no control over the object's lifetime. It is the caller's responsibility to ensure that the underlying string data is valid.
 
-A function that accepts a parameter of type string_view can be made to work with any string-like type, without making the function into a template, or constraining the function to a particular subset of string types. The only requirement is that an implicit conversion exists from the string type to string_view. All the standard string types are implicitly convertible to a string_view that contains the same element type.
+A function that accepts a parameter of type string_view can be made to work with any string-like type, without making the function into a template, or constraining the function to a particular subset of string types. The only requirement is that an implicit conversion exists from the string type to string_view. All the standard string types are implicitly convertible to a string_view that contains the same element type. In other words, a `std::string` is convertible to a `string_view` but not to a `wstring_view`.
 
 The following example shows a non-template function `f` that takes a parameter of type `wstring_view`. It can be called with arguments of type `std::wstring`, `wchar_t*`, and `winrt::hstring`.
 
@@ -30,17 +29,21 @@ The following example shows a non-template function `f` that takes a parameter o
 void f(wstring_view);
 
 // pass a std::wstring:
-std::wstring& s; f(s);
+std::wstring& s;
+f(s);
 
 // pass a C-style null-terminated string (string_view is not null-terminated):
 wchar_t* ns = "Hello";
 f(ns);
 
 // pass a C-style character array of len characters (excluding null terminator):
-wchar_t* cs, size_t len; f({cs,len});
+wchar_t* cs {L"Hello"};
+size_t len { 5 };
+f({cs,len});
 
 // pass a WinRT string
-winrt::hstring hs; f(hs);
+winrt::hstring hs {"Hello"};
+f(hs);
 ```
 
 ## Syntax
@@ -53,11 +56,11 @@ class basic_string_view;
 ### Parameters
 
 *CharType*<br/>
-The data type of the characters that are stored in the string_view. The C++ Standard Library provides the following typedefs for specializations of this template. Use these typedefs rather than explicitly instantiating a `basic_string_view<charT>`.
+The type of the characters that are stored in the string_view. The C++ Standard Library provides the following typedefs for specializations of this template. Use these typedefs rather than explicitly instantiating a `basic_string_view<charT>`.
 - [string_view](../standard-library/string-view-typedefs.md#string_view) for elements of type **char**
--  [wstring_view](../standard-library/string-view-typedefs.md#wstring_view), for **wchar_t**
--  [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) for **char16_t**
--  [u32string_view](../standard-library/string-view-typedefs.md#u32string_view) for **char32_t**.
+- [wstring_view](../standard-library/string-view-typedefs.md#wstring_view), for **wchar_t**
+- [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) for **char16_t**
+- [u32string_view](../standard-library/string-view-typedefs.md#u32string_view) for **char32_t**.
 
 *Traits*<br/>
 Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
@@ -72,10 +75,10 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 
 |Type name|Description|
 |-|-|
-|[const_iterator](#const_iterator)|Provides a random-access iterator that can read a **const** element in the string_view.|
-|[const_pointer](#const_pointer)|Provides a pointer to a **const** element.|
-|[const_reference](#const_reference)|Provides a reference to a **const** element for reading and performing **const** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|Provides a random-access iterator that can read any **const** element in the string_view.|
+|[const_iterator](#const_iterator)|Random-access iterator that can read a **const** element in the string_view.|
+|[const_pointer](#const_pointer)|Pointer to a **const** element.|
+|[const_reference](#const_reference)|Reference to a **const** element.|
+|[const_reverse_iterator](#const_reverse_iterator)|Random-access iterator that can read any element in the string_view.|
 |[difference_type](#difference_type)|Provides the difference between two iterators that refer to elements within the same string_view.|
 |[iterator](#iterator)|Same as const_iterator.|
 |[npos](#npos)|An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.|
@@ -92,14 +95,13 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |-|-|
 |[at](#at)|Returns a reference to the element at a specified location.|
 |[back](#back)|Returns a reference to the last element.|
-|[begin](#begin)|Same as [cbegin](#cbegin).|
-|[cbegin](#cbegin)|Returns a const iterator addressing the first element.|
-|[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element.|
-|[copy](#copy)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array. Deprecated. Use basic_string_view::_Copy_s instead.|
+|[begin](#begin)|Returns a const iterator addressing the first element. (string_views are immutable.)|
+|[cbegin](#cbegin)|Same as [begin](#begin).|
+|[cend](#cend)|Returns a const iterator that points to one past the last element.|
+|[copy](#copy)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array.|
 |[compare](#compare)|Compares a string_view with a specified string_view to determine if they are equal or if one is lexicographically less than the other.|
-|[crbegin](#crbegin)|Returns a const iterator that addresses the first element in a reversed string_view.|
-|[crend](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed string_view.|
-|[_Copy_s](#copys)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array.|
+|[crbegin](#crbegin)|Same as [rbegin](#rbegin).|
+|[crend](#crend)|Same as [rend](#rend).|
 |[data](#data)|Converts the contents of a string_view into an array of characters.|
 |[empty](#empty)|Tests whether the string_view contains characters.|
 |[end](#end)|Same as [cend](#cend).|
@@ -111,10 +113,11 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[front](#front)|Returns a reference to the first element.|
 |[length](#length)|Returns the current number of elements.|
 |[max_size](#max_size)|Returns the maximum number of characters a string_view could contain.|
-|[rbegin](#rbegin)|Same as [crbegin](#crbegin).|
-|[rend](#rend)|Same as [crend](#crend).|
+|[rbegin](#rbegin)|Returns a const iterator that addresses the first element in a reversed string_view.|
+|[rend](#rend)|Returns a const iterator that points to one past the last element in a reversed string_view.|
 |[rfind](#rfind)|Searches a string_view in reverse for the first occurrence of a substring that matches a specified sequence of characters.|
-|[size](#size)|Returns the current number of elements.||[swap](#swap)|Exchange the contents of two string_views.|
+|[size](#size)|Returns the current number of elements.|
+|[swap](#swap)|Exchange the contents of two string_views.|
 
 ## Remarks
 
@@ -179,16 +182,12 @@ constexpr const_reference back() const;
 A reference to the last non-null element.
 
 ## <a name="basic_string_view"></a>  basic_string_view::basic_string_view
-
-Constructs a string_view.
+constructs a string_view.
 
 ```cpp
 constexpr basic_string_view() noexcept;
-
 constexpr basic_string_view(const basic_string_view&) noexcept = default;
-
 constexpr basic_string_view(const charT* str);
-
 constexpr basic_string_view(const charT* str, size_type len);
 ```
 
@@ -269,19 +268,7 @@ A **const** random-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
-`cend` is used to test whether an iterator has passed the end of its range.
-
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
-
-```cpp
-auto i1 = Container.end();
-// i1 is Container<T>::iterator
-auto i2 = Container.cend();
-
-// i2 is Container<T>::const_iterator
-```
-
-The value returned by `cend` should not be dereferenced.
+`cend` is used to test whether an iterator has passed the end of its range. The value returned by `cend` should not be dereferenced.
 
 ## <a name="compare"></a> basic_string_view::compare
 
@@ -289,15 +276,10 @@ Performs a case sensitive comparison with a specified string_view to determine i
 
 ```cpp
 constexpr int compare(basic_string_view strv) const noexcept;
-
 constexpr int compare(size_type pos, size_type num, basic_string_view strv) const;
-
 constexpr int compare(size_type pos, size_type num, basic_string_view strv, size_type offset, size_type num2) const;
-
 constexpr int compare(const charT* ptr) const;
-
 constexpr int compare(size_type pos, size_type num, const charT* ptr) const;
-
 constexpr int compare(size_type pos, size_type num, const charT* ptr, size_type num2) const;
 ```
 
@@ -469,20 +451,13 @@ The 3 characters from position 1 of sv_I are equal to the first 3 characters of 
 
 Provides a random-access iterator that can read a **const** element.
 
-```cpp
-typedef implementation-defined const_iterator;
-```
-
-### Example
-
-See the example for [cbegin](#cbegin) for an example of how to declare and use `const_iterator`.
 
 ## <a name="const_pointer"></a>  basic_string_view::const_pointer
 
 Provides a pointer to a **const** element.
 
 ```cpp
-typedef typename allocator_type::const_pointer const_pointer;
+using const_pointer = const value_type*;
 ```
 
 ### Remarks
@@ -498,7 +473,7 @@ Pointers that are declared const must be initialized when they are declared. Con
 Provides a reference to a **const** element for reading and performing **const** operations.
 
 ```cpp
-typedef typename allocator_type::const_reference const_reference;
+using const_reference = const value_type&;
 ```
 
 ### Remarks
@@ -514,7 +489,7 @@ See the example for [at](#at) for an example of how to declare and use `const_re
 Provides a random-access iterator that can read any **const** element.
 
 ```cpp
-typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
+using const_reverse_iterator = reverse_iterator<const_iterator>;
 ```
 
 ### Remarks
@@ -568,7 +543,7 @@ A reverse iterator that points to one past the end of the sequence.
 
 ## <a name="crend"></a>  basic_string_view::crend
 
-Represents one past the end of a reversed string_view.
+Same as [rend](#rend). 
 
 ```cpp
 constexpr const_reverse_iterator crend() const noexcept;
@@ -600,7 +575,7 @@ A sequence of string_view characters is not necessarily null-terminated. The ret
 A signed integral type that can represent the difference between two iterators that refer to elements within the same string_view.
 
 ```cpp
-typedef typename difference_type = ptrdiff_t;
+using difference_type = ptrdiff_t;
 ```
 
 ## <a name="empty"></a>  basic_string_view::empty
@@ -816,7 +791,6 @@ A reference to the first non-null element.
 Provides a random-access iterator that can read a **const** element.
 
 ```cpp
-typedef implementation-defined iterator;
 using iterator = const_iterator;
 ```
 
@@ -896,57 +870,16 @@ The first element has an index of zero, and the following elements are indexed c
 
 `operator[]` does not check whether the index passed as an argument is valid, but the member function `at` does and so should be used when the validity is not certain. An invalid index (an index less that zero or greater than or equal to the size of the string_view) passed to the member function `at` throws an [out_of_range](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string_view is a valid index for const string_views and the operator returns the null character when passed this index.
 
-The reference returned may be invalidated by string_view reallocations or modifications for the non- **const** string_views.
+The reference returned may be invalidated if the underlying string data is modified or deleted.
 
 When compiling with [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string_view. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-### Example
-
-```cpp
-// basic_string_view_op_ref.cpp
-// compile with: /EHsc
-#include <string_view>
-#include <iostream>
-
-int main()
-{
-   using namespace std;
-   string_view str1( "Hello world" ), str2( "Goodbye world" );
-   const string_view cstr1( "Hello there" ), cstr2( "Goodbye now" );
-
-   // Element access to the non-const string_views
-   string_view::reference refStr1 = str1 [6];
-   string_view::reference refStr2 = str2.atif( 3 );
-
-   cout << "The character with an index of 6 in " << " << str1 << " is: "
-        << refStr1 << "." << endl;
-   cout << "The character with an index of 3 in " << str2 << " is: "
-        << refStr2 << "." << endl;
-
-   // Element access to the const string_views
-   string_view::const_reference crefStr1 = cstr1[ cstr1.lengthif() ];
-   string_view::const_reference crefStr2 = cstr2.atif( 8 );
-
-   if ( crefStr1 == '\0' )
-      cout << "The null character is returned as a valid reference."
-           << endl;
-   else
-      cout << "The null character is not returned." << endl;
-   cout << "The character with index of 8 in the const string_view cstr2 is: "
-        << crefStr2 << "." << endl;
-}
-```
 
 ## <a name="rbegin"></a>  basic_string_view::rbegin
 
-Returns an iterator to the first element in a reversed string_view.
+Returns a const iterator to the first element in a reversed string_view.
 
 ```cpp
-const_reverse_iterator rbegin() const;
-
-reverse_iterator rbegin();
-
-...
 constexpr const_reverse_iterator rbegin() const noexcept;
 ```
 
@@ -956,131 +889,51 @@ Returns a random-access iterator to the first element in a reversed string_view,
 
 ### Remarks
 
-`rbegin` is used with a reversed string_view just as [begin](#begin) is used with a string_view.
+`rbegin` is used with a reversed string_view just as [begin](#begin) is used with a string_view. `rbegin` can be used to initialize an iteration backwards.
 
-`rbegin` can be used to initialize an iteration backwards.
+## <a name="pointer"></a>  basic_string_view::pointer
 
-### Example
-
-```cpp
-// basic_string_view_rbegin.cpp
-// compile with: /EHsc
-#include <string_view>
-#include <iostream>
-
-int main()
-{
-   using namespace std;
-   string_view str1( "Able was I ere I saw Elba" ), str2;
-   string_view::reverse_iterator str_rIter, str1_rIter, str2_rIter;
-   string_view::const_reverse_iterator str1_rcIter;
-
-   str1_rIter = str1.rbeginif ();
-   cout << "The first character-letter of the reversed string_view str1 is: "
-        << *str1_rIter << endl;
-   cout << "The full reversed string_view str1 is:\n ";
-   for ( str_rIter = str1.rbegin(); str_rIter != str1.rend(); str_rIter++ )
-      cout << *str_rIter;
-   cout << endl;
-
-   // For an empty string_view, begin is equivalent to end
-   if ( str2.rbegin() == str2.rendif () )
-      cout << "The string_view str2 is empty." << endl;
-   else
-      cout << "The string_viewstr2  is not empty." << endl;
-}
-```
-
-```Output
-The first character-letter of the reversed string_view str1 is: a
-The full reversed string_view str1 is:
-ablE was I ere I saw elbA
-The first character-letter of the modified str1 is now: A
-The full modified reversed string_view str1 is now:
-AblE was I ere I saw elbA
-The string_view str2 is empty.
-```
-
-## <a name="pointer"></a>  basic_string::pointer
-
-Provides a pointer to a character element in a string or character array.
+Provides a const pointer to a character element in a string_view.
 
 ```cpp
-typedef typename allocator_type::pointer pointer;
-
-...
-using const_pointer = const value_type*;
+using pointer = value_type*;
 ```
 
-### Remarks
-
-The type is a synonym for `allocator_type::pointer`.
 
 For type `string`, it is equivalent to char*.
 
-## <a name="reference"></a>  basic_string::reference
+## <a name="reference"></a>  basic_string_view::reference
 
-Provides a reference to an element stored in a string.
+Provides a const reference to an element stored in a string_view.
 
 ```cpp
-typedef typename allocator_type::reference reference;
-
 using reference = value_type&;
 ```
 
-### Remarks
-
-A type `reference` can be used to modify the value of an element.
-
-The type is a synonym for `allocator_type::reference`.
-
-For type `string`, it is equivalent to `chr&`.
-
-### Example
-
-See the example for [at](#at) for an example of how to declare and use `reference`.
-
 ## <a name="rend"></a>  basic_string_view::rend
 
-Returns an iterator that addresses the location succeeding the last element in a reversed string_view.
+Returns a const iterator that points to one past the last element in a reversed string_view.
 
 ```cpp
-const_reverse_iterator rend() const;
-
-reverse_iterator rend();
-...
-constexpr const_reverse_iterator rend() const noexcept;
+constexpr reverse_iterator rend() const;
 ```
 
 ### Return Value
 
-A reverse random-access iterator that addresses the location succeeding the last element in a reversed string_view.
+A const reverse random-access iterator that points to one past the last element in a reversed string_view.
 
 ### Remarks
 
-`rend` is used with a reversed string_view just as [end](#end) is used with a string_view.
-
-If the return value of `rend` is assigned to a `const_reverse_iterator`, the string_view object cannot be modified. If the return value of `rend` is assigned to a `reverse_iterator`, the string_view object can be modified.
-
-`rend` can be used to test whether a reverse iterator has reached the end of its string_view.
-
-The value returned by `rend` should not be dereferenced.
+`rend` is used with a reversed string_view just as [end](#end) is used with a string_view. `rend` can be used to test whether a reverse iterator has reached the end of its string_view. The value returned by `rend` should not be dereferenced.
 
 
 ## <a name="reverse_iterator"></a>  basic_string_view::reverse_iterator
 
-Provides a reference to an element.
+Provides a const reference to an element for reverse iteration.
 
 ```cpp
-typedef std::reverse_iterator<iterator> reverse_iterator;
-
-...
 using reverse_iterator = const_reverse_iterator;
 ```
-
-### Remarks
-
-A type `reverse_iterator` can be used to modify the value of a character and is used to iterate in reverse.
 
 ### Example
 
@@ -1140,7 +993,7 @@ If the length of the underlying string data is changed, then the string_view is 
 An unsigned integer type that can represent the number of elements.
 
 ```cpp
-typedef typename allocator_type::size_type size_type;
+using size_type = size_t;
 ```
 
 ### Remarks
@@ -1204,23 +1057,19 @@ using traits_type = traits;
 
 ### Remarks
 
-The type is a synonym for the second template parameter `Traits`. For type string_view, it is equivalent to **char_traits\<char>**.
-
-### Example
-
-See the example for [copy](../standard-library/char-traits-struct.md#copy) for an example of how to declare and use `traits_type`.
+The type is a synonym for the second template parameter `Traits`. For type `string_view`, it is equivalent to **char_traits\<char>**.
 
 ## <a name="value_type"></a>  basic_string_view::value_type
 
-Represents the type of characters.
+Represents the type of the character elements.
 
 ```cpp
-typedef typename allocator_type::value_type value_type;
+using value_type = charT;
 ```
 
 ### Remarks
 
-It is equivalent to `traits_type::char_type` and is equivalent to **char** for objects of type string_view.
+Equivalent to **char** for objects of type `string_view`, **wchar_t** for `wstring_view`, **char16_t** for `u16string_view` and **char32_t** for `u32string_view`.
 
 ## See also
 

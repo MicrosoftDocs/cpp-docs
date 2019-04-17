@@ -75,7 +75,7 @@ basic_string_view<wchar_t> wstr(L"Hello");
 For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
 > [!NOTE]
-> The size of **wchar_t** is two bytes on Windows but this is not necessarily the same on all platforms. If you need a string_view wide character type with a width that is guaranteed to remain the same on all platforms, use [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) or [u32string_view](../standard-library/string-view-typedefs.md#u32string_view).
+> The size of **wchar_t** is two bytes on Windows but this is not necessarily the case for all platforms. If you need a string_view wide character type with a width that is guaranteed to remain the same on all platforms, use [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) or [u32string_view](../standard-library/string-view-typedefs.md#u32string_view).
 
 ## See also
 
