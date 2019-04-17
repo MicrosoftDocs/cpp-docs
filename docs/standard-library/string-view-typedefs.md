@@ -12,7 +12,7 @@ f1_keywords: ["xstring/std::string_view", "xstring/std::u16string_view", "xstrin
 
 ## <a name="string_view"></a> string_view
 
-A type that describes a specialization of the template class [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type **string_view**.
+A type that describes a specialization of the class template [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type **string_view**.
 
 ```cpp
 typedef basic_string_view<char, char_traits<char>> string_view;
@@ -32,7 +32,7 @@ For a list of string constructors, see [basic_string::basic_string](../standard-
 
 ## <a name="u16string_view"></a> u16string_view
 
-A type that describes a specialization of the template class [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type `char16_t`.
+A type that describes a specialization of the class template [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type `char16_t`.
 
 ```cpp
 typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16string;
@@ -44,7 +44,7 @@ For a list of string constructors, see [basic_string::basic_string](../standard-
 
 ## <a name="u32string_view"></a> u32string_view
 
-A type that describes a specialization of the template class [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type `char32_t`.
+A type that describes a specialization of the class template [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type `char32_t`.
 
 ```cpp
 typedef basic_string<char32_t, char_traits<char32_t>> u32string;
@@ -56,7 +56,7 @@ For a list of string constructors, see [basic_string::basic_string](../standard-
 
 ## <a name="wstring_view"></a>  wstring_view
 
-A type that describes a specialization of the template class [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type **wchar_t**.
+A type that describes a specialization of the class template [basic_string_view](../standard-library/basic-string-view-class.md) with elements of type **wchar_t**.
 
 ```cpp
 typedef basic_string_view<wchar_t, char_traits<wchar_t>> wstring;

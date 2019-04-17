@@ -1,14 +1,12 @@
 ---
 title: "&lt;string_view&gt;"
-ms.date: "03/18/2019"
+ms.date: "04/18/2019"
 helpviewer_keywords: ["string_view header"]
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
 ---
 # &lt;string_view&gt;
 
-Defines the class template `basic_string_view` and related types and operators.
-
-For more information about `basic_string_view`, see [basic_string_view Class](../standard-library/basic-string-view-class.md)
+Defines the class template `basic_string_view` and related types and operators. 
 
 ## Syntax
 
@@ -18,16 +16,16 @@ For more information about `basic_string_view`, see [basic_string_view Class](..
 
 ## Remarks
 
-The string_view family of template specializations provide an efficient way to pass a read-only, exception-safe, non-owning handle to any sequence of **char**-like objects with the first element of the sequence at position zero. A function parameter of type `string_view` (basic_string_view\<char>)can accept arguments such as `std::string`, char*, or any other string-like class of narrow characters for which an implicit conversion to `string_view` is defined. A parameter of `wstring_view` can accept wchar_t* or any wide-character string object for which an implicit conversion is defined.
+The string_view family of template specializations provide an efficient way to pass a read-only, exception-safe, non-owning handle to the character data of any string-like objects with the first element of the sequence at position zero. A function parameter of type `string_view` (basic_string_view\<char>)can accept arguments such as `std::string`, char*, or any other string-like class of narrow characters for which an implicit conversion to `string_view` is defined. Similarly, a parameter of `wstring_view`, `u16string_view` or `u32string_view` can accept any string type for which an implicit conversion is defined. For more information, see [basic_string_view Class](../standard-library/basic-string-view-class.md).
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|[string_view](../standard-library/string-view-typedefs.md#string_view)|A specialization of the template class `basic_string_view` with elements of type **char** as a `string_view`.|
-|[wstring_view](../standard-library/string-view-typedefs.md#wstring_view)|A specialization of the template class `basic_string_view` with elements of type **wchar_t** as a `wstring_view`.|
-|[u16string_view](../standard-library/string-view-typedefs.md#u16string_view)|A specialization of the template class `basic_string_view` based on elements of type `char16_t`.|
-|[u32string_view](../standard-library/string-view-typedefs.md#u32string_view)|A specialization of the template class `basic_string_view` based on elements of type `char32_t`.|
+|[string_view](../standard-library/string-view-typedefs.md#string_view)|A specialization of the class template `basic_string_view` with elements of type **char** as a `string_view`.|
+|[wstring_view](../standard-library/string-view-typedefs.md#wstring_view)|A specialization of the class template `basic_string_view` with elements of type **wchar_t** as a `wstring_view`.|
+|[u16string_view](../standard-library/string-view-typedefs.md#u16string_view)|A specialization of the class template `basic_string_view` based on elements of type `char16_t`.|
+|[u32string_view](../standard-library/string-view-typedefs.md#u32string_view)|A specialization of the class template `basic_string_view` based on elements of type `char32_t`.|
 
 ### Operators
 
@@ -53,7 +51,7 @@ The \<string_view> operators can compare `string_view` objects to objects of any
 
 |Class|Description|
 |-|-|
-|[basic_string_view Class](../standard-library/basic-string-view-class.md)|A template class that describes objects that can store a sequence of arbitrary character-like objects.|
+|[basic_string_view Class](../standard-library/basic-string-view-class.md)|A class template that describes objects that can store a sequence of arbitrary character-like objects.|
 
 ## Requirements
 
