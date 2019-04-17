@@ -36,7 +36,7 @@ errno_t wcsrtombs_s(
 ### Parameters
 
 *pReturnValue*<br/>
-The size in bytes of the converted string, including the null terminator..
+The size in bytes of the converted string, including the null terminator.
 
 *mbstr*<br/>
 The address of a buffer for the resulting converted multibyte character string.
