@@ -6,7 +6,7 @@ ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
 ---
 # &lt;string_view&gt;
 
-Defines the class template `basic_string_view` and related types and operators. 
+Defines the class template `basic_string_view` and related types and operators. (Requires compiler option **/std:c++17**.)
 
 ## Syntax
 
@@ -52,12 +52,15 @@ The \<string_view> operators can compare `string_view` objects to objects of any
 |Class|Description|
 |-|-|
 |[basic_string_view Class](../standard-library/basic-string-view-class.md)|A class template that describes objects that can store a sequence of arbitrary character-like objects.|
+|[hash](string-view-hash.md)|Function object that produces a hash value for a string_view.|
 
 ## Requirements
 
 - **Header:** \<string_view>
 
 - **Namespace:** std
+
+- **Compiler Option:** std:c++17
 
 ## See also
 

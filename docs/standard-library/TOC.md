@@ -400,6 +400,7 @@
 #### [<string_view> operators](string-view-operators.md)
 #### [<string_view> typedefs](string-view-typedefs.md)
 #### [basic_string_view Class](basic-string-view-class.md)
+#### [hash<string_view> Specialization](string-view-hash.md)
 ### [<strstream>](strstream.md)
 #### [strstreambuf Class](strstreambuf-class.md)
 #### [istrstream Class](istrstream-class.md)
