@@ -81,6 +81,8 @@ The following table lists the intrinsics available on x64 processors. The Techno
 |[__cpuidex](../intrinsics/cpuid-cpuidex.md)||intrin.h|void __cpuidex(int \*a,int b,int c)|
 |[__debugbreak](../intrinsics/debugbreak.md)||intrin.h|void __debugbreak(void)|
 |[_disable](../intrinsics/disable.md)||intrin.h|void _disable(void)|
+|[_div128](../intrinsics/div128.md)||intrin.h|unsigned __int64 _div128(unsigned \__int64 highpart,unsigned \__int64 lowpart,unsigned \__int64 quotient,unsigned \__int64 \*remainder)|
+|[_div64](../intrinsics/div64.md)||intrin.h|unsigned int \_div64(unsigned \__int64 dividend,unsigned int divisor,unsigned int* remainder)|
 |[__emul](../intrinsics/emul-emulu.md)||intrin.h|__int64 [pascal/cdecl] \__emul(int,int)|
 |[__emulu](../intrinsics/emul-emulu.md)||intrin.h|unsigned __int64 [pascal/cdecl]\__emulu(unsigned int,unsigned int)|
 |[_enable](../intrinsics/enable.md)||intrin.h|void _enable(void)|
@@ -1219,6 +1221,8 @@ The following table lists the intrinsics available on x64 processors. The Techno
 |_tzmsk_u32|ABM [1]|ammintrin.h|unsigned int _tzmsk_u32(unsigned int)|
 |_tzmsk_u64|ABM [1]|ammintrin.h|unsigned __int64 _tzmsk_u64(unsigned \__int64)|
 |[__ud2](../intrinsics/ud2.md)||intrin.h|void __ud2(void)|
+|[_udiv128](../intrinsics/udiv128.md)||intrin.h|unsigned __int64 _udiv128(unsigned \__int64 highpart,unsigned \__int64 lowpart,unsigned \__int64 quotient,unsigned \__int64 \*remainder)|
+|[_udiv64](../intrinsics/udiv64.md)||intrin.h|unsigned int \_udiv64(unsigned \__int64 dividend,unsigned int divisor,unsigned int* remainder)|
 |[__ull_rshift](../intrinsics/ull-rshift.md)||intrin.h|unsigned __int64 [pascal/cdecl] \__ull_rshift(unsigned \__int64,int)|
 |[_umul128](../intrinsics/umul128.md)||intrin.h|unsigned __int64 _umul128(unsigned \__int64 multiplier,unsigned \__int64 multiplicand,unsigned \__int64 \*highproduct)|
 |[__umulh](../intrinsics/umulh.md)||intrin.h|unsigned __int64 \__umulh(unsigned \__int64,unsigned \__int64)|

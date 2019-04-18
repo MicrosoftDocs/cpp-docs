@@ -58,6 +58,7 @@ The following table lists the intrinsics available on x86 processors. The Techno
 |[__cpuidex](../intrinsics/cpuid-cpuidex.md)||intrin.h|void __cpuidex(int \*a,int b,int c)|
 |[__debugbreak](../intrinsics/debugbreak.md)||intrin.h|void __debugbreak(void)|
 |[_disable](../intrinsics/disable.md)||intrin.h|void _disable(void)|
+|[_div64](../intrinsics/div64.md)||intrin.h|unsigned int \_div64(unsigned \__int64 dividend,unsigned int divisor,unsigned int* remainder)|
 |[__emul](../intrinsics/emul-emulu.md)||intrin.h|__int64 [pascal/cdecl] \__emul(int,int)|
 |[__emulu](../intrinsics/emul-emulu.md)||intrin.h|unsigned __int64 [pascal/cdecl]\__emulu(unsigned int,unsigned int)|
 |[_enable](../intrinsics/enable.md)||intrin.h|void _enable(void)|
@@ -1230,6 +1231,7 @@ The following table lists the intrinsics available on x86 processors. The Techno
 |[_tzcnt_u32](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_tzcnt_u32)|BMI|ammintrin.h, immintrin.h|unsigned int _tzcnt_u32(unsigned int)|
 |_tzmsk_u32|ABM [1]|ammintrin.h|unsigned int _tzmsk_u32(unsigned int)|
 |[__ud2](../intrinsics/ud2.md)||intrin.h|void __ud2(void)|
+|[_udiv64](../intrinsics/udiv64.md)||intrin.h|unsigned int \_udiv64(unsigned \__int64 dividend,unsigned int divisor,unsigned int* remainder)|
 |[__ull_rshift](../intrinsics/ull-rshift.md)||intrin.h|unsigned __int64 [pascal/cdecl] \__ull_rshift(unsigned \__int64,int)|
 |[__vmx_off](../intrinsics/vmx-off.md)||intrin.h|void __vmx_off(void)|
 |[__vmx_vmptrst](../intrinsics/vmx-vmptrst.md)||intrin.h|void __vmx_vmptrst(unsigned \__int64 \*)|
