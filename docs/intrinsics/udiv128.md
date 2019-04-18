@@ -6,11 +6,7 @@ helpviewer_keywords: ["_udiv128 intrinsic"]
 ---
 # _udiv128
 
-**Microsoft specific**
-
-Divides a 128-bit unsigned integer with the upper 64 bits in *highDividend* and lower 64 bits in *lowDividend* by a 64-bit unsigned integer *divisor*. Stores the remainder in the 64-bit unsigned integer pointed to by *remainder*, and returns the 64 bits of the quotient.
-
-The `_udiv128` intrinsic is available starting in Visual Studio 2019 RTM.
+The `_udiv128` intrinsic divides a 128-bit unsigned integer by a 64-bit unsigned integer. The return value holds the quotient, and the intrinsic returns the remainder through a pointer parameter. `_udiv128` is **Microsoft specific**.
 
 ## Syntax
 
@@ -41,15 +37,19 @@ unsigned __int64 _udiv128(
 
 The 64 bits of the quotient.
 
+## Remarks
+
+Pass the upper 64 bits of the 128-bit dividend in *highDividend*, and the lower 64 bits in *lowDividend*. The intrinsic divides this value by *divisor*. It stores the remainder in the 64-bit unsigned integer pointed to by *remainder*, and returns the 64 bits of the quotient.
+
+The `_udiv128` intrinsic is available starting in Visual Studio 2019 RTM.
+
 ## Requirements
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
 |`_udiv128`|x64|\<immintrin.h>|
 
-**END Microsoft specific**
-
 ## See also
 
-[_div128](../intrinsics/div128.md) \
-[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
+[_div128](div128.md) \
+[Compiler intrinsics](compiler-intrinsics.md)

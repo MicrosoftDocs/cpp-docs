@@ -6,11 +6,7 @@ helpviewer_keywords: ["_udiv64 intrinsic"]
 ---
 # _udiv64
 
-**Microsoft specific**
-
-Divides a 64-bit unsigned integer *dividend* by a 32-bit unsigned integer *divisor*. Stores the remainder in the 32-bit unsigned integer pointed to by *remainder*, and returns the 32 bits of the quotient.
-
-The `_udiv64` intrinsic is available starting in Visual Studio 2019 RTM.
+The `_udiv64` intrinsic divides a 64-bit unsigned integer by a 32-bit unsigned integer. The return value holds the quotient, and the intrinsic returns the remainder through a pointer parameter. `_udiv64` is **Microsoft specific**.
 
 ## Syntax
 
@@ -22,20 +18,26 @@ unsigned int _udiv64(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *dividend*<br/>
-[in] The 64-bit integer to divide.
+[in] The 64-bit unsigned integer to divide.
 
 *divisor*<br/>
-[in] The 32-bit integer to divide by.
+[in] The 32-bit unsigned integer to divide by.
 
 *remainder*<br/>
-[out] The 32-bit integer bits of the remainder.
+[out] The 32-bit unsigned integer remainder.
 
 ## Return value
 
 The 32 bits of the quotient.
+
+## Remarks
+
+The `_udiv64` intrinsic divides *dividend* by *divisor*. It stores the remainder in the 32-bit unsigned integer pointed to by *remainder*, and returns the 32 bits of the quotient.
+
+The `_udiv64` intrinsic is available starting in Visual Studio 2019 RTM.
 
 ## Requirements
 
@@ -43,9 +45,7 @@ The 32 bits of the quotient.
 |---------------|------------------|------------|
 |`_udiv64`|x86, x64|\<immintrin.h>|
 
-**END Microsoft specific**
-
 ## See also
 
-[_div64](../intrinsics/div64.md) \
-[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
+[_div64](div64.md) \
+[Compiler intrinsics](compiler-intrinsics.md)
