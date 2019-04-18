@@ -10,7 +10,7 @@ helpviewer_keywords: ["_udiv128 intrinsic"]
 
 Divides a 128-bit unsigned integer with the upper 64 bits in *highDividend* and lower 64 bits in *lowDividend* by a 64-bit unsigned integer *divisor*. Stores the remainder in the 64-bit unsigned integer pointed to by *remainder*, and returns the 64 bits of the quotient.
 
-This intrinsic is new in Visual Studio 2019.
+The `_udiv128` intrinsic is available starting in Visual Studio 2019 RTM.
 
 ## Syntax
 
