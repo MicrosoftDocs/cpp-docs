@@ -58,7 +58,7 @@ The following table lists the intrinsics available on x86 processors. The Techno
 |[__cpuidex](../intrinsics/cpuid-cpuidex.md)||intrin.h|void __cpuidex(int \*a,int b,int c)|
 |[__debugbreak](../intrinsics/debugbreak.md)||intrin.h|void __debugbreak(void)|
 |[_disable](../intrinsics/disable.md)||intrin.h|void _disable(void)|
-|[_div64](../intrinsics/div64.md)||intrin.h|unsigned int \_div64(unsigned \__int64 dividend, unsigned int divisor, unsigned int* remainder)|
+|[_div64](../intrinsics/div64.md)||intrin.h| int \_div64(\__int64 dividend, int divisor, int* remainder)|
 |[__emul](../intrinsics/emul-emulu.md)||intrin.h|__int64 [pascal/cdecl] \__emul(int,int)|
 |[__emulu](../intrinsics/emul-emulu.md)||intrin.h|unsigned __int64 [pascal/cdecl]\__emulu(unsigned int,unsigned int)|
 |[_enable](../intrinsics/enable.md)||intrin.h|void _enable(void)|
