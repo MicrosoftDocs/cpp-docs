@@ -1,9 +1,8 @@
 ---
 title: "_div64"
-ms.date: "11/04/2016"
+ms.date: "04/17/2019"
 f1_keywords: ["_div64"]
 helpviewer_keywords: ["_div64 intrinsic"]
-ms.assetid: cd2ab093-9ef6-404d-ac34-0bee033882f3
 ---
 # _div64
 

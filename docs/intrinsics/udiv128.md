@@ -1,9 +1,8 @@
 ---
 title: "_udiv128"
-ms.date: "11/04/2016"
+ms.date: "04/17/2019"
 f1_keywords: ["_udiv128"]
 helpviewer_keywords: ["_udiv128 intrinsic"]
-ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
 ---
 # _udiv128
 

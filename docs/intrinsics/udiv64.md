@@ -1,9 +1,8 @@
 ---
 title: "_udiv64"
-ms.date: "11/04/2016"
+ms.date: "04/17/2019"
 f1_keywords: ["_udiv64"]
 helpviewer_keywords: ["_udiv64 intrinsic"]
-ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
 ---
 # _udiv64
 
