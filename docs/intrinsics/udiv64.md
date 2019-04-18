@@ -15,7 +15,7 @@ The `_udiv64` intrinsic is available starting in Visual Studio 2019 RTM.
 ## Syntax
 
 ```C
-unsigned int _umul64(
+unsigned int _udiv64(
    unsigned __int64 dividend,
    unsigned int divisor,
    unsigned int* remainder
