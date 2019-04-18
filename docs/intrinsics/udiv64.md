@@ -10,6 +10,8 @@ helpviewer_keywords: ["_udiv64 intrinsic"]
 
 Divides a 64-bit unsigned integer *dividend* by a 32-bit unsigned integer *divisor*. Stores the remainder in the 32-bit unsigned integer pointed to by *remainder*, and returns the 32 bits of the quotient.
 
+This intrinsic is new in Visual Studio 2019.
+
 ## Syntax
 
 ```C

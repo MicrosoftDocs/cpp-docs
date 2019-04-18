@@ -10,6 +10,8 @@ helpviewer_keywords: ["_div64 intrinsic"]
 
 Divides a 64-bit integer *dividend* by a 32-bit integer *divisor*. Stores the remainder in the 32-bit integer pointed to by *remainder*, and returns the 32 bits of the quotient.
 
+This intrinsic is new in Visual Studio 2019.
+
 ## Syntax
 
 ```C
