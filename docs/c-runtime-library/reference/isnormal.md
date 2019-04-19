@@ -28,7 +28,7 @@ The floating-point value to test.
 
 ## Return value
 
-**isnormal** returns a nonzero value (**true** in C++ code) if the argument *x* is neither zero, subnormal, infinite, nor a NaN; otherwise **isnormal** returns 0 (**false** in C++ code).
+**isnormal** returns a nonzero value (**true** in C++ code) if the argument *x* is neither zero, subnormal, infinite, nor a NaN. Otherwise, **isnormal** returns 0 (**false** in C++ code).
 
 ## Remarks
 
