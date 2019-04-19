@@ -1,7 +1,7 @@
 ---
 title: "basic_string_view Class"
 ms.date: "04/20/2019"
-f1_keywords: ["xstring/std::basic_string_view", "xstring/std::basic_string_view::allocator_type", "xstring/std::basic_string_view::const_iterator", "xstring/std::basic_string_view::const_pointer", "xstring/std::basic_string_view::const_reference", "xstring/std::basic_string_view::const_reverse_iterator", "xstring/std::basic_string_view::difference_type", "xstring/std::basic_string_view::iterator", "xstring/std::basic_string_view::npos", "xstring/std::basic_string_view::pointer", "xstring/std::basic_string_view::reference", "xstring/std::basic_string_view::reverse_iterator", "xstring/std::basic_string_view::size_type", "xstring/std::basic_string_view::traits_type", "xstring/std::basic_string_view::value_type", "xstring/std::basic_string_view::append", "xstring/std::basic_string_view::assign", "xstring/std::basic_string_view::at", "xstring/std::basic_string_view::back", "xstring/std::basic_string_view::begin", "xstring/std::basic_string_view::c_str", "xstring/std::basic_string_view::capacity", "xstring/std::basic_string_view::cbegin", "xstring/std::basic_string_view::cend", "xstring/std::basic_string_view::clear", "xstring/std::basic_string_view::compare", "xstring/std::basic_string_view::copy", "xstring/std::basic_string_view::crbegin", "xstring/std::basic_string_view::crend", "xstring/std::basic_string_view::data", "xstring/std::basic_string_view::empty", "xstring/std::basic_string_view::end", "xstring/std::basic_string_view::erase", "xstring/std::basic_string_view::find", "xstring/std::basic_string_view::find_first_not_of", "xstring/std::basic_string_view::find_first_of", "xstring/std::basic_string_view::find_last_not_of", "xstring/std::basic_string_view::find_last_of", "xstring/std::basic_string_view::front", "xstring/std::basic_string_view::get_allocator", "xstring/std::basic_string_view::insert", "xstring/std::basic_string_view::length", "xstring/std::basic_string_view::max_size", "xstring/std::basic_string_view::pop_back", "xstring/std::basic_string_view::push_back", "xstring/std::basic_string_view::rbegin", "xstring/std::basic_string_view::rend", "xstring/std::basic_string_view::remove_prefix","xstring/std::basic_string_view::remove_suffix", "xstring/std::basic_string_view::replace", "xstring/std::basic_string_view::reserve", "xstring/std::basic_string_view::resize", "xstring/std::basic_string_view::rfind", "xstring/std::basic_string_view::shrink_to_fit", "xstring/std::basic_string_view::size", "xstring/std::basic_string_view::substr", "xstring/std::basic_string_view::swap"]
+f1_keywords: ["xstring/std::basic_string_view", "xstring/std::basic_string_view::allocator_type", "xstring/std::basic_string_view::const_iterator", "xstring/std::basic_string_view::const_pointer", "xstring/std::basic_string_view::const_reference", "xstring/std::basic_string_view::const_reverse_iterator", "xstring/std::basic_string_view::difference_type", "xstring/std::basic_string_view::iterator", "xstring/std::basic_string_view::npos", "xstring/std::basic_string_view::pointer", "xstring/std::basic_string_view::reference", "xstring/std::basic_string_view::reverse_iterator", "xstring/std::basic_string_view::size_type", "xstring/std::basic_string_view::traits_type", "xstring/std::basic_string_view::value_type", "xstring/std::basic_string_view::append", "xstring/std::basic_string_view::assign", "xstring/std::basic_string_view::at", "xstring/std::basic_string_view::back", "xstring/std::basic_string_view::begin", "xstring/std::basic_string_view::c_str", "xstring/std::basic_string_view::capacity", "xstring/std::basic_string_view::cbegin", "xstring/std::basic_string_view::cend", "xstring/std::basic_string_view::clear", "xstring/std::basic_string_view::compare", "xstring/std::basic_string_view::copy", "xstring/std::basic_string_view::_Copy_s", "xstring/std::basic_string_view::crbegin", "xstring/std::basic_string_view::crend", "xstring/std::basic_string_view::data", "xstring/std::basic_string_view::empty", "xstring/std::basic_string_view::end", "xstring/std::basic_string_view::erase", "xstring/std::basic_string_view::find", "xstring/std::basic_string_view::find_first_not_of", "xstring/std::basic_string_view::find_first_of", "xstring/std::basic_string_view::find_last_not_of", "xstring/std::basic_string_view::find_last_of", "xstring/std::basic_string_view::front", "xstring/std::basic_string_view::get_allocator", "xstring/std::basic_string_view::insert", "xstring/std::basic_string_view::length", "xstring/std::basic_string_view::max_size", "xstring/std::basic_string_view::pop_back", "xstring/std::basic_string_view::push_back", "xstring/std::basic_string_view::rbegin", "xstring/std::basic_string_view::rend", "xstring/std::basic_string_view::remove_prefix","xstring/std::basic_string_view::remove_suffix", "xstring/std::basic_string_view::replace", "xstring/std::basic_string_view::reserve", "xstring/std::basic_string_view::resize", "xstring/std::basic_string_view::rfind", "xstring/std::basic_string_view::shrink_to_fit", "xstring/std::basic_string_view::size", "xstring/std::basic_string_view::substr", "xstring/std::basic_string_view::swap"]
 helpviewer_keywords: ["std::basic_string_view", "std::basic_string_view, allocator_type", "std::basic_string_view, const_iterator", "std::basic_string_view, const_pointer", "std::basic_string_view, const_reference", "std::basic_string_view, const_reverse_iterator", "std::basic_string_view, difference_type", "std::basic_string_view, iterator", "std::basic_string_view, npos", "std::basic_string_view, pointer", "std::basic_string_view, reference", "std::basic_string_view, reverse_iterator", "std::basic_string_view, size_type", "std::basic_string_view, traits_type", "std::basic_string_view, value_type", "std::basic_string_view, append", "std::basic_string_view, assign", "std::basic_string_view, at", "std::basic_string_view, back", "std::basic_string_view, begin", "std::basic_string_view, c_str", "std::basic_string_view, capacity", "std::basic_string_view, cbegin", "std::basic_string_view, cend", "std::basic_string_view, clear", "std::basic_string_view, compare", "std::basic_string_view, copy", "std::basic_string_view, crbegin", "std::basic_string_view, crend", "std::basic_string_view, data", "std::basic_string_view, empty", "std::basic_string_view, end", "std::basic_string_view, erase", "std::basic_string_view, find", "std::basic_string_view, find_first_not_of", "std::basic_string_view, find_first_of", "std::basic_string_view, find_last_not_of", "std::basic_string_view, find_last_of", "std::basic_string_view, front", "std::basic_string_view, get_allocator", "std::basic_string_view, insert", "std::basic_string_view, length", "std::basic_string_view, max_size", "std::basic_string_view, pop_back", "std::basic_string_view, push_back", "std::basic_string_view, rbegin", "std::basic_string_view, rend", "std::basic_string_view, remove_prefix","std::basic_string_view, remove_suffix","std::basic_string_view, replace", "std::basic_string_view, reserve", "std::basic_string_view, resize", "std::basic_string_view, rfind", "std::basic_string_view, shrink_to_fit", "std::basic_string_view, size", "std::basic_string_view, substr", "std::basic_string_view, swap"]
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ---
@@ -107,6 +107,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[cbegin](#cbegin)|Same as [begin](#begin).|
 |[cend](#cend)|Returns a const iterator that points to one past the last element.|
 |[copy](#copy)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array.|
+|[_Copy_s](#_copy_s)|Secure CRT copy function.|
 |[compare](#compare)|Compares a string_view with a specified string_view to determine if they are equal or if one is lexicographically less than the other.|
 |[crbegin](#crbegin)|Same as [rbegin](#rbegin).|
 |[crend](#crend)|Same as [rend](#rend).|
@@ -194,11 +195,31 @@ constexpr const_reference back() const;
 
 ### Return Value
 
-A const_reference to the last element.
+A const_reference to the last element in the string_view.
 
 ### Remarks
 
 Throws an exception if the string_view is empty.
+
+Keep in mind that after a string_view is modified, for example by calling `remove_suffix`, then the element returned by this function is no longer the last element in the underlying data.
+
+### Example
+
+A string_view that is constructed with a C string literal does not include the terminating null and therefore in the following example `back` returns 'p' and not '\0'.
+
+```cpp
+char c[] = "Help"; // char[5]
+string_view sv{ c };
+cout << sv.size(); // size() == 4
+cout << sv.back() << endl; // p 
+```
+
+Embedded nulls are treated as any other character:
+
+```cpp
+string_view e = "embedded\0nulls"sv;
+cout << boolalpha << (e.back() == 's'); // true
+```
 
 ## <a name="basic_string_view"></a>  basic_string_view::basic_string_view
 
@@ -221,7 +242,7 @@ The number of characters to include in the view.
 
 ## Remarks
 
-The constructors with a charT parameter assume that the input is null-terminated. 
+The constructors with a charT* parameter assume that the input is null-terminated, but the terminating null is not included in the string_view.
 
 You can also construct a string_view with a literal. See [operator""sv](string-view-operators.md#op_sv).
 
@@ -415,7 +436,7 @@ The 3 characters from position 1 of sv_I are equal to the first 3 characters of 
 
 ## <a name="copy"></a>  basic_string_view::copy
 
-Copies at most a specified number of characters from an indexed position in a source string_view to a target character array.
+Copies at most a specified number of characters from an indexed position in a source string_view to a target character array. We recommend that you use the secure function [basic_string_view::_Copy_s](#_copy_s) instead.
 
 ```cpp
 size_type copy(charT* ptr, size_type count, size_type offset = 0) const;
@@ -439,6 +460,42 @@ The number of characters actually copied.
 ### Remarks
 
 A null character is not appended to the end of the copy.
+
+## <a name="_copy_s"></a>  basic_string_view::_Copy_s
+
+Secure CRT copy function to be used instead of [copy](#copy).
+
+```cpp
+size_type _Copy_s(
+    value_type* dest,
+    size_type dest_size,
+    size_type count,
+    size_type _Off = 0) const;
+```
+
+### Parameters
+
+*dest*<br/>
+The target character array to which the elements are to be copied.
+
+*dest_size*<br/>
+The size of *dest*.
+
+_ *Count*
+The number of characters to be copied, at most, from the source string.
+
+*_Off*<br/>
+The beginning position in the source string from which copies are to be made.
+
+### Return Value
+
+The number of characters actually copied.
+
+### Remarks
+
+A null character is not appended to the end of the copy.
+
+ For more information, see [c-runtime-library/security-features-in-the-crt](../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="crbegin"></a>  basic_string_view::crbegin
 
