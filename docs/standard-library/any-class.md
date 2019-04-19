@@ -6,9 +6,9 @@ helpviewer_keywords: ["any/std::any", "any/std::any::emplace", "any/std::any::ha
 ---
 # any Class
 
-Stores an instance of any type that satisfies the constructor requirements or it has no value, and this is referred to as the state of the class any object.
+Stores an instance of any type that satisfies the constructor requirements or it has no value, which is called the state of the class any object.
 
-The stored instance is called the contained value, and two states are equivalent if either they both have no value, or both have a value and the contained values are equivalent.
+The stored instance is called the contained value. Two states are the same if either they both have no value, or both have a value and the contained values are the same.
 
 ## Syntax
 

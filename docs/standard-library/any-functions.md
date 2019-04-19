@@ -39,7 +39,7 @@ template <class T, class U, class... Args>
 
 ## <a name="swap"></a>  swap
 
-Exchanges the elements of two anys.
+Exchanges the elements of two objects any.
 
 ```cpp
 void swap(any& left, any& right) noexcept;

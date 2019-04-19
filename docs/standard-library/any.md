@@ -20,7 +20,7 @@ Defines the class any and several supporting functions and classes.
 |-|-|
 |[any_cast](../standard-library/any-functions.md#any_cast)|Makes an object into an any.|
 |[make_any](../standard-library/any-functions.md#make_any)|Takes values and creates an any object.|
-|[swap](../standard-library/any-functions.md#swap)|Exchanges the elements of two anys.|
+|[swap](../standard-library/any-functions.md#swap)|Exchanges the elements of two objects any.|
 
 ### Classes
 
