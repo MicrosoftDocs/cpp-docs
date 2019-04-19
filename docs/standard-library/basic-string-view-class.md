@@ -106,7 +106,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[begin](#begin)|Returns a const iterator addressing the first element. (string_views are immutable.)|
 |[cbegin](#cbegin)|Same as [begin](#begin).|
 |[cend](#cend)|Returns a const iterator that points to one past the last element.|
-|[copy](#copy)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array.|
+|[copy](#copy)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array. (Not recommended. Use _Copy_s instead.)|
 |[_Copy_s](#_copy_s)|Secure CRT copy function.|
 |[compare](#compare)|Compares a string_view with a specified string_view to determine if they are equal or if one is lexicographically less than the other.|
 |[crbegin](#crbegin)|Same as [rbegin](#rbegin).|
