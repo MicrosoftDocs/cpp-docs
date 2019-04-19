@@ -6,7 +6,7 @@ helpviewer_keywords: ["std::basic_string_view::operator!=", "std::basic_string_v
 ---
 # &lt;string_view&gt; operators
 
-Use these operators to compare two string_view objects, or a string_view and some other string object (i.e std::string, or char*) for which an implicit converstion is provided. 
+Use these operators to compare two string_view objects, or a string_view and some other string object (for example [std::string](basic-string-class.md), or **char\***) for which an implicit conversion is provided. 
 
 ||||
 |-|-|-|
@@ -95,8 +95,7 @@ The comparison is based on a pairwise lexicographical comparison of the characte
 
 ## <a name="op_lt"></a> operator&lt;
 
-Tests if the object on the left side of the operator is less than to the object on the right side.
-
+Tests if the object on the left side of the operator is less than the object on the right sidestring_view
 ```cpp
 template <class CharType, class Traits>
 bool operator<(
@@ -124,13 +123,13 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**true** if the object on the left side of the operator is lexicographically less than the string_view object on the right side; otherwise **false**.
+**true** if the object on the left side of the operator is lexicographically less than the object on the right side; otherwise **false**.
 
 ### Remarks
 
 An implicit conversion must exist from *convertible_string_type* to the string_view on the other side. 
 
-The comparison is based on a pairwise lexicographical comparison of the character sequences. When the first unequal pair of characters is encountered, the result of that comparison is returned.
+The comparison is based on a pairwise lexicographical comparison of the character sequences. When the first unequal pair of characters is encountered, the result of that comparison is returned. If no unequal characters are found, but one sequence is shorter, the shorter sequence is less than the longer one. In other words, "cat" is less than "cats".
 
 ### Example
 
@@ -193,23 +192,25 @@ See [operator&lt;](#op_lt).
 
 ## <a name="op_lt_lt"></a> operator&lt;&lt;
 
-Writes a string_view into the output stream.
+Writes a string_view into an output stream.
 
 ```cpp
-std::basic_ostream<CharType, CharTraits>& Ostr, const basic_string_view<CharType, CharTraits> Str)
+template <class CharType, class Traits>
+inline basic_ostream<CharType, Traits>& operator<<(
+	basic_ostream<CharType, Traits>& Ostr, const basic_string_view<CharType, Traits> Str);
 ```
 
 ### Parameters
 
 *Ostr*<br/>
-The output stream being written to.
+an output stream being written to.
 
 *Str*<br/>
-The string_view to be entered into the output stream.
+The string_view to be entered into an output stream.
 
 ### Return Value
 
-The output stream being written to.
+an output stream being written to.
 
 ### Remarks
 
@@ -217,7 +218,7 @@ Use this operator to insert the contents of a string_view into an output stream,
 
 ## <a name="op_gt"></a> operator&gt;
 
-Tests if the object on the left side of the operator is greater than to the object on the right side.
+Tests if the object on the left side of the operator is greater than the object on the right side.
 
 ```cpp
 template <class CharType, class Traits>
@@ -296,6 +297,10 @@ Constructs a string_view from a string literal. Requires namespace `std::literal
 ### Example
 
 ```cpp
+
+using namespace std;
+using namespace literals::string_view_literals;
+
 	string_view sv{ "Hello"sv };
 	wstring_view wsv{ L"Hello"sv };
 	u16string_view sv16{ u"Hello"sv };

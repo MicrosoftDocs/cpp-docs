@@ -12,12 +12,11 @@ A template specialization that produces a hash value given a string_view.
 template <class CharType, class Traits>
 struct hash<basic_string_view<CharType, Traits>>
 {
-    typedef basic_string_view<_Elem, _Traits> argument_type;
+    typedef basic_string_view<CharType, Traits> argument_type;
     typedef size_t result_type;
 
     size_t operator()(const basic_string_view<CharType, Traits>) const
         noexcept;
-    }
 };
 ```
 ### Remarks
