@@ -74,12 +74,16 @@ You can also directly edit  `CMakeSettings.json` to create custom configurations
       "name": "CMAKE_CXX_COMPILER",
       "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
     },
+      "type": "FILEPATH"
     {
       "name": "CMAKE_C_COMPILER",
-      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe"
+      "value": "C:/Program Files (x86)/Microsoft Visual Studio/157/Enterprise/VC/Tools/MSVC/14.14.26428/bin/HostX86/x86/cl.exe",
+      "type": "FILEPATH"
     }
   ]
 ```
+
+Note that if you do not define the `"type"`, the "STRING" type will be assumed by default.
 
 - **cmakeCommandArgs**: specifies any additional switches you want to pass to CMake.exe.
 
@@ -203,7 +207,9 @@ In the next example, the x86-Debug configuration defines its own value for the *
       "environments": [
         {
           // Replace the global property entirely.
-          "BuildDir": "D:\\custom-builddir",
+          "BuildDir": "D:\\custom-builddir"
+          // This environment does not specify a namespace, hence by default "env" will be assumed.
+          // "namespace" : "name" would force to reference this variable with "${name.BuildDir}".
         }
       ],
 
