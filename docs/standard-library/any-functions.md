@@ -7,7 +7,7 @@ f1_keywords: ["any/std::any_cast", "any/std::make_any", "any/std::swap"]
 
 ||||
 |-|-|-|
-|[any_cast](#any_cast)|[make_any](#make_any)|[swap](#swap)|Exchanges the elements of two forward lists.|
+|[any_cast](#any_cast)|[make_any](#make_any)|[swap](#swap)|
 
 ## <a name="any_cast"></a>  any_cast
 
