@@ -161,8 +161,8 @@ The cross-platform **vcpkg** command-line tool greatly simplifies the discovery 
 [How to Report a Problem with the Visual C++ Toolset](how-to-report-a-problem-with-the-visual-cpp-toolset.md)<br/>
 Learn how to create effective error reports against the Visual C++ toolset (compiler, linker, and other tools), and ways to submit your report.
 
-[Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)<br/>
-Learn more about new features and the latest information from the developers of [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)].
+Microsoft [C++ Team Blog](https://devblogs.microsoft.com/cppblog/)<br/>
+Learn more about new features and the latest information from the developers of the C++ tools in Visual Studio.
 
 [Visual Studio Developer Community](https://developercommunity.visualstudio.com/)<br/>
 Find out how to get help, file bugs, and make suggestions for Visual Studio.
