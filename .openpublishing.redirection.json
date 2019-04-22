@@ -7384,6 +7384,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/parallel/openmp/contents.md",
+            "redirect_url": "/cpp/parallel/openmp/openmp-c-and-cpp-application-program-interface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/openmp-data-types.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/openmp-libraries.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-library-reference",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/parallel/amp/index.md",
             "redirect_url": "/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism",
             "redirect_document_id": false

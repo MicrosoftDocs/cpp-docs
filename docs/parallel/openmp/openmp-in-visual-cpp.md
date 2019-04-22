@@ -1,6 +1,6 @@
 ---
 title: "OpenMP in Visual C++"
-ms.date: "11/04/2016"
+ms.date: "03/20/2019"
 helpviewer_keywords: ["OpenMP in Visual C++", "explicit parallelization", "explicit parallelization, OpenMP in Visual C++"]
 ms.assetid: 54d8d0da-1f47-4312-9f25-5875c7dc08ed
 ---
@@ -9,12 +9,6 @@ ms.assetid: 54d8d0da-1f47-4312-9f25-5875c7dc08ed
 The OpenMP C and C++ application program interface lets you write applications that effectively use multiple processors. Visual C++ supports the OpenMP 2.0 standard.
 
 ## In This Section
-
-[Directives](../../parallel/openmp/reference/openmp-directives.md)<br/>
-Provides links to directives used in the OpenMP API.
-
-[Clauses](../../parallel/openmp/reference/openmp-clauses.md)<br/>
-Provides links to clauses used in the OpenMP API.
 
 [Library Reference](../../parallel/openmp/reference/openmp-library-reference.md)<br/>
 Provides links to constructs used in the OpenMP API.
