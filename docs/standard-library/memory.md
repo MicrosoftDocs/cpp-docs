@@ -1,9 +1,8 @@
 ---
 title: "&lt;memory&gt;"
-ms.date: "11/04/2016"
+ms.date: "04/04/2019"
 f1_keywords: ["memory/std::<memory>", "<memory>", "std::<memory>"]
 helpviewer_keywords: ["memory header"]
-ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc
 ---
 # &lt;memory&gt;
 
@@ -85,7 +84,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 |Structure|Description|
 |-|-|
-|[default_delete](../standard-library/default-delete-structure.md)||
+|[default_delete](../standard-library/default-delete-struct.md)||
 |[owner_less](../standard-library/memory-functions.md#owner_less)|Allows ownership-based mixed comparisons of shared and weak pointers.|
 
 ### Specializations
