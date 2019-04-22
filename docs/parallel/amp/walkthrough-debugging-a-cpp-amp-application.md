@@ -46,9 +46,7 @@ Before you start this walkthrough:
 
 6. Clear the **Precompiled header** check box, and then choose the **Finish** button.
 
-7. In **Solution Explorer**, delete stdafx.h, targetver.h, and stdafx.cpp from the project.
-
-8. Open AMPMapReduce.cpp and replace its content with the following code.
+7. Open AMPMapReduce.cpp and replace its content with the following code.
 
 ```cpp
     // AMPMapReduce.cpp defines the entry point for the program.

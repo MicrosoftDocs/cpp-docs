@@ -167,7 +167,6 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
 
    ```cpp
    // MathLibrary.cpp : Defines the exported functions for the DLL.
-   #include "stdafx.h"
    #include <utility>
    #include <limits.h>
    #include "MathLibrary.h"
@@ -228,7 +227,6 @@ To verify that everything works so far, compile the dynamic link library. To com
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
-1>stdafx.cpp
 1>MathLibrary.cpp
 1>dllmain.cpp
 1>Generating Code...
