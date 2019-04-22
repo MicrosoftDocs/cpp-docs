@@ -1,3 +1,10 @@
+---
+title: "Customize CMake build settings in Visual Studio 2019"
+ms.date: "04/22/2019"
+helpviewer_keywords: ["CMake build settings"]
+---
+# Customize CMake build settings (Visual Studio 2019)
+
 In Visual Studio 2019 and later, you can add configurations and customize their settings by right-clicking on the project node in **Solution Explorer** and choosing **CMake Settings**.
 
 ![CMake Settings option in Solution Explorer](media/cmake-settings-solution-explorer.png)
@@ -30,7 +37,9 @@ The following settings are available under the **General** heading:
 
 ### Toolset
 ### CMake toolchain file
-### Build root:
+### Build root
+
+- **buildRoot**: maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
 
 ## Command arguments
 
@@ -54,11 +63,28 @@ The following settings are available under the **Command arguments** heading:
 
 These settings enable you to set CMake variables and save them in CMakeSettings.json. They will be passed to CMake at build time and will override whatever values might be in the CMakeLists.txt file.
 
+- **variables**: contains a name-value pair of CMake variables that will get passed as **-D** *_name_=_value_* to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead.
+
 ## Advanced settings
 
 ### CMake generator
+
+- **generator**: maps to the CMake **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, when composing other property values. Visual Studio currently supports the following CMake generators:
+
+  - "Ninja"
+  - "Visual Studio 14 2015"
+  - "Visual Studio 14 2015 ARM"
+  - "Visual Studio 14 2015 Win64"
+  - "Visual Studio 15 2017"
+  - "Visual Studio 15 2017 ARM"
+  - "Visual Studio 15 2017 Win64"
+
+  Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate a Visual Studio project instead.
+
 ### IntelliSense mode
 
-### Install diretory
+For accurate IntelliSense, set this to the appropriate value for your project.
+
+### Install directory
 
 ### CMake executable
