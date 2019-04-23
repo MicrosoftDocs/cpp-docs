@@ -65,8 +65,6 @@ The profile-guided optimizations include these checks and improvements:
 
 - **Memory Intrinsics** - Whether to expand an intrinsic or not depends on whether it's called frequently. An intrinsic can also be optimized based on the block size of moves or copies.
 
-If you use Visual Studio 2013, you can use the automated [Profile Guided Optimization Plug-In](profile-guided-optimization-in-the-performance-and-diagnostics-hub.md) for Visual C++ in the Performance and Diagnostics Hub to simplify and streamline the optimization process within Visual Studio. This plug-in is not available in later versions of Visual Studio.
-
 ## Next steps
 
 Read more about these environment variables, functions, and tools you can use in profile-guided optimizations:
