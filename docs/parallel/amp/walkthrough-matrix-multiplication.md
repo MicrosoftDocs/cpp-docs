@@ -31,7 +31,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 1. From the filtered list of project types, choose **Empty Project** then choose **Next**. In the next page, enter *MatrixMultiply* in the **Name** box to specify a name for the project, and specify the project location if desired.
 
-   ![Name the client project](media/mathclient-project-name-2019.png "Name the client project")
+   ![New console app](../../build/media/mathclient-project-name-2019.png "New console app")
 
 1. Choose the **Create** button to create the client project.
 
