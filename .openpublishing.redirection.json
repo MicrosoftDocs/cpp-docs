@@ -7065,8 +7065,13 @@
         },
         {
             "source_path": "docs/error-messages/tool-errors/index.md",
-            "redirect_url": "/cpp/error-messages/tool-errors/bscmake-errors-bk1500-through-bk4505",
+            "redirect_url": "/cpp/error-messages/tool-errors/tool-errors-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/error-messages/tool-errors/resource-compiler-errors-rw1004-through-rw4004.md",
+            "redirect_url": "/cpp/error-messages/tool-errors/resource-compiler-errors-rc1000-through-rc4413",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/ide/index.md",
