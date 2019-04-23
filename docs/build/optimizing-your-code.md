@@ -1,6 +1,6 @@
 ---
 title: "Optimizing Your Code"
-ms.date: "12/10/2018"
+ms.date: "04/23/2019"
 helpviewer_keywords: ["performance, optimizing code", "optimization", "cl.exe compiler, performance", "optimization, C++ code", "code, optimizing", "performance, compiler"]
 ---
 # Optimizing your code
@@ -11,13 +11,13 @@ By optimizing an executable, you can achieve a balance between fast execution sp
 
 The following topics describe some of the optimization features in the C/C++ language.
 
-[Optimization Pragmas and Keywords](optimization-pragmas-and-keywords.md)<br/>
+[Optimization Pragmas and Keywords](optimization-pragmas-and-keywords.md) \
 A list of keywords and pragmas that you can use in your code to improve performance.
 
-[Compiler Options Listed by Category](reference/compiler-options-listed-by-category.md)<br/>
+[Compiler Options Listed by Category](reference/compiler-options-listed-by-category.md) \
 A list of **/O** compiler options that specifically affect execution speed or code size.
 
-[Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
+[Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md) \
 Rvalue references support the implementation of *move semantics*. If move semantics are used to implement template libraries, the performance of applications that use those templates can significantly improve.
 
 ### The optimize pragma
@@ -40,10 +40,10 @@ Paradoxically, optimizing a program for speed could cause code to run slower. Th
 
 The following topics discuss good programming practices.
 
-[Tips for Improving Time-Critical Code](tips-for-improving-time-critical-code.md)<br/>
+[Tips for Improving Time-Critical Code](tips-for-improving-time-critical-code.md) \
 Better coding techniques can yield better performance. This topic suggests coding techniques that can help you make sure that the time-critical parts of your code perform satisfactorily.
 
-[Optimization Best Practices](optimization-best-practices.md)<br/>
+[Optimization Best Practices](optimization-best-practices.md) \
 Provides general guidelines about how best to optimize your application.
 
 ## Debugging optimized code
@@ -74,20 +74,19 @@ The following topics provide information about how to optimize building, loading
 
 ## In this section
 
-[Optimization Pragmas and Keywords](optimization-pragmas-and-keywords.md)<br/>
-[Improving Compiler Throughput](improving-compiler-throughput.md)<br/>
-[Why Floating-Point Numbers May Lose Precision](why-floating-point-numbers-may-lose-precision.md)<br/>
-[IEEE Floating-Point Representation](ieee-floating-point-representation.md)<br/>
-[Tips for Improving Time-Critical Code](tips-for-improving-time-critical-code.md)<br/>
-[Using Function Name Without () Produces No Code](using-function-name-without-parens-produces-no-code.md)<br/>
-[Optimization Best Practices](optimization-best-practices.md)<br/>
-[Profile-Guided Optimizations](profile-guided-optimizations.md)<br/>
-[Environment Variables for Profile-Guided Optimizations](environment-variables-for-profile-guided-optimizations.md)<br/>
-[PgoAutoSweep](pgoautosweep.md)<br/>
-[pgomgr](pgomgr.md)<br/>
-[pgosweep](pgosweep.md)<br/>
-[How to: Merge Multiple PGO Profiles into a Single Profile](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)<br/>
-[Visual Studio 2013 PGO Add-in in the Performance and Diagnostics Hub](profile-guided-optimization-in-the-performance-and-diagnostics-hub.md)<br/>
+[Optimization Pragmas and Keywords](optimization-pragmas-and-keywords.md) \
+[Improving Compiler Throughput](improving-compiler-throughput.md) \
+[Why Floating-Point Numbers May Lose Precision](why-floating-point-numbers-may-lose-precision.md) \
+[IEEE Floating-Point Representation](ieee-floating-point-representation.md) \
+[Tips for Improving Time-Critical Code](tips-for-improving-time-critical-code.md) \
+[Using Function Name Without () Produces No Code](using-function-name-without-parens-produces-no-code.md) \
+[Optimization Best Practices](optimization-best-practices.md) \
+[Profile-Guided Optimizations](profile-guided-optimizations.md) \
+[Environment Variables for Profile-Guided Optimizations](environment-variables-for-profile-guided-optimizations.md) \
+[PgoAutoSweep](pgoautosweep.md) \
+[pgomgr](pgomgr.md) \
+[pgosweep](pgosweep.md) \
+[How to: Merge Multiple PGO Profiles into a Single Profile](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
 
 ## See also
 
