@@ -1,14 +1,14 @@
 ---
-title: "Profile-Guided Optimizations"
-ms.date: "03/14/2018"
+title: "Profile-guided optimizations"
+ms.date: "04/23/2019"
 helpviewer_keywords: ["profile-guided optimizations", "optimization, profile-guided [C++]"]
 ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc
 ---
-# Profile-Guided Optimizations
+# Profile-guided optimizations
 
-Profile-guided optimization lets you optimize an output file, where the optimizer uses data from test runs of the .exe or .dll file. The data represents the likely performance of the program in a production environment.
+Profile-guided optimization (PGO) lets you optimize a whole executable file, where the optimizer uses data from test runs of the .exe or .dll file. The data represents the likely performance of the program in a production environment.
 
-Profile-guided optimizations are only available for x86 or x64 native targets. Profile-guided optimizations aren't available for output files that run on the common language runtime. Even if you produce an assembly with mixed native and managed code (by using the **/clr** compiler option), you can't use profile-guided optimization on just the native code. If you attempt to build a project with these options set in the IDE, a build error results.
+Profile-guided optimizations are only available for x86 or x64 native targets. Profile-guided optimizations aren't available for executable files that run on the common language runtime. Even if you produce an assembly with mixed native and managed code (by using the **/clr** compiler option), you can't use profile-guided optimization on just the native code. If you attempt to build a project with these options set in the IDE, a build error results.
 
 > [!NOTE]
 > Information that's gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [/Ob (Inline Function Expansion)](reference/ob-inline-function-expansion.md) and [/Os, /Ot (Favor Small Code, Favor Fast Code)](reference/os-ot-favor-small-code-favor-fast-code.md).
@@ -39,7 +39,7 @@ To use profile-guided optimization, follow these steps to optimize your app:
 
    Use both the **/LTCG** and [/USEPROFILE](reference/useprofile.md) linker options to create the optimized image. This step takes as input the `.pgd` file. When you specify **/USEPROFILE**, you can optionally add a **PGD=**_filename_ argument to specify a non-default name or location for the `.pgd` file. You can also specify this name by using the deprecated **/PGD** linker option. The combination of **/LTCG** and **/USEPROFILE** replaces the deprecated **/LTCG:PGOPTIMIZE** and **/LTCG:PGUPDATE** linker options.
 
-It's even possible to create the optimized output file and later determine that additional profiling would be useful to create a more optimized image. If the instrumented image and its `.pgd` file are available, you can do additional test runs and rebuild the optimized image with the newer `.pgd` file, by using the same **/LTCG** and **/USEPROFILE** linker options.
+It's even possible to create the optimized executable file and later determine that additional profiling would be useful to create a more optimized image. If the instrumented image and its `.pgd` file are available, you can do additional test runs and rebuild the optimized image with the newer `.pgd` file, by using the same **/LTCG** and **/USEPROFILE** linker options.
 
 ## Optimizations performed by PGO
 
@@ -69,7 +69,7 @@ The profile-guided optimizations include these checks and improvements:
 
 Read more about these environment variables, functions, and tools you can use in profile-guided optimizations:
 
-[Environment Variables for Profile-Guided Optimizations](environment-variables-for-profile-guided-optimizations.md)<br/>
+[Environment variables for profile-guided optimizations](environment-variables-for-profile-guided-optimizations.md)<br/>
 These variables were used to specify run-time behavior of testing scenarios. They're now deprecated and replaced by new linker options. This document shows you how to move from the environment variables to the linker options.
 
 [PgoAutoSweep](pgoautosweep.md)<br/>
@@ -81,9 +81,9 @@ A command-line utility that writes all profile data to the `.pgc` file, closes t
 [pgomgr](pgomgr.md)<br/>
 A command-line utility that adds profile data from one or more `.pgc` files to the `.pgd` file.
 
-[How to: Merge Multiple PGO Profiles into a Single Profile](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)<br/>
+[How to: Merge multiple PGO profiles into a single profile](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)<br/>
 Examples of **pgomgr** usage.
 
 ## See also
 
-[Additional MSVC Build Tools](reference/c-cpp-build-tools.md)
+[Additional MSVC build tools](reference/c-cpp-build-tools.md)
