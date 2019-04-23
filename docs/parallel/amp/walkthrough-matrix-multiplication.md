@@ -15,9 +15,35 @@ Before you start:
 
 - Read [Using Tiles](../../parallel/amp/using-tiles.md).
 
-- Make sure that Windows 7, Windows 8, Windows Server 2008 R2, or Windows Server 2012 is installed on your computer.
+- Make sure that you are running at least Windows 7, or Windows Server 2008 R2.
 
 ### To create the project
+
+Instructions for creating a new project vary depending on which version of Visual Studio you have installed. Make sure you have the version selector in the upper left set to the correct version.
+
+::: moniker range="vs-2019"
+
+### To create the project in Visual Studio 2019
+
+1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+
+1. From the filtered list of project types, choose **Empty Project** then choose **Next**. In the next page, enter *MatrixMultiply* in the **Name** box to specify a name for the project, and specify the project location if desired.
+
+   ![Name the client project](media/mathclient-project-name-2019.png "Name the client project")
+
+1. Choose the **Create** button to create the client project.
+
+1. In **Solution Explorer**, open the shortcut menu for **Source Files**, and then choose **Add** > **New Item**.
+
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**, enter *MatrixMultiply.cpp* in the **Name** box, and then choose the **Add** button.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To create a project in Visual Studio 2017 or 2015
 
 1. On the menu bar in Visual Studio, choose **File** > **New** > **Project**.
 
@@ -30,6 +56,8 @@ Before you start:
 1. In **Solution Explorer**, open the shortcut menu for **Source Files**, and then choose **Add** > **New Item**.
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**, enter *MatrixMultiply.cpp* in the **Name** box, and then choose the **Add** button.
+
+::: moniker-end
 
 ## Multiplication without tiling
 

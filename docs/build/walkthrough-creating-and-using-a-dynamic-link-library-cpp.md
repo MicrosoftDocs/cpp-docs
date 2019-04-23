@@ -288,7 +288,7 @@ To make use of a DLL, whether your own or a third-party DLL, your client app pro
 
 1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
 
-1. From the filtered list of project types, choose **Console app** then choose **Next**. In the next page, enter `MathClient` in the **Name** box to specify a name for the project, and specify the project location if desired.
+1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `MathClient` in the **Name** box to specify a name for the project, and specify the project location if desired.
 
    ![Name the client project](media/mathclient-project-name-2019.png "Name the client project")
 

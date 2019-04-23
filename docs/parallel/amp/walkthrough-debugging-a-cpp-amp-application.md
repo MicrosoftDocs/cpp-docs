@@ -28,11 +28,33 @@ Before you start this walkthrough:
 
 - Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).
 
-- Make sure you are running Windows 8 or Windows Server 2012 to support debugging on the software emulator.
+- Make sure you are running at least Windows 8 or Windows Server 2012 to support debugging on the software emulator. 
 
 [!INCLUDE[note_settings_general](../../mfc/includes/note_settings_general_md.md)]
 
 ### To create the sample project
+
+The instructions for creating a project vary depending on which version of Visual Studio you are using. Make sure you have the correct version selected in the upper left of this page.
+
+::: moniker range="vs-2019"
+
+### To create the sample project in Visual Studio 2019
+
+1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+
+1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `AMPMapReduce` in the **Name** box to specify a name for the project, and specify the project location if desired.
+
+   ![Name the client project](../build/media/mathclient-project-name-2019.png "Name the client project")
+
+1. Choose the **Create** button to create the client project.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To create the sample project in Visual Studio 2017
 
 1. Start Visual Studio.
 
@@ -47,6 +69,9 @@ Before you start this walkthrough:
 6. Clear the **Precompiled header** check box, and then choose the **Finish** button.
 
 7. In **Solution Explorer**, delete stdafx.h, targetver.h, and stdafx.cpp from the project.
+
+::: moniker-end
+
 
 8. Open AMPMapReduce.cpp and replace its content with the following code.
 
