@@ -28,7 +28,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 ::: moniker range="<=vs-2017"
 
-### To create a UWP static library in Visual Studio 2017
+### To create a UWP static library in Visual Studio 2017 or Visual Studio 2015
 
 1. On the menu bar, choose **File** > **New** > **Project**. Under **Visual C++** > **Windows Universal** choose **Static Library (Universal Windows)**.
 

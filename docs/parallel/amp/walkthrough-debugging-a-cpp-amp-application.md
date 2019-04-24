@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Debugging a C++ AMP Application"
-ms.date: "11/19/2018"
+ms.date: "04/23/2019"
 helpviewer_keywords: ["debugging, C++ Accelerated Massive Parallelism", "C++ AMP, debugging", "C++ Accelerated Massive Parallelism, debugging", "debugging, C++ AMP"]
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
 ---
@@ -54,7 +54,7 @@ The instructions for creating a project vary depending on which version of Visua
 
 ::: moniker range="<=vs-2017"
 
-### To create the sample project in Visual Studio 2017
+### To create the sample project in Visual Studio 2017 or Visual Studio 2015
 
 1. Start Visual Studio.
 
