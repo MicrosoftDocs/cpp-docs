@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Removing Work from a User-Interface Thread"
-ms.date: "11/19/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["user-interface threads, removing work from [Concurrency Runtime]", "removing work from user-interface threads [Concurrency Runtime]"]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
 ---
@@ -46,9 +46,9 @@ This section describes how to create the basic MFC application.
 
 ### To create a Visual C++ MFC application
 
-1. On the **File** menu, click **New**, and then click **Project**.
+1. Use the **MFC Application Wizard** to create an MFC application with all the default settings. See [Walkthrough: Using the New MFC Shell Controls](../../mfc/walkthrough-using-the-new-mfc-shell-controls.md) for instructions on how to open the wizard for your version of Visual Studio.
 
-1. In the **New Project** dialog box, in the **Installed Templates** pane, select **Visual C++**, and then, in the **Templates** pane, select **MFC Application**. Type a name for the project, for example, `Mandelbrot`, and then click **OK** to display the **MFC Application Wizard**.
+1. Type a name for the project, for example, `Mandelbrot`, and then click **OK** to display the **MFC Application Wizard**.
 
 1. In the **Application Type** pane, select **Single document**. Ensure that the **Document/View architecture support** check box is cleared.
 

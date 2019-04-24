@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Creating an Image-Processing Network"
-ms.date: "11/19/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["image-processing networks, creating [Concurrency Runtime]", "creating image-processing networks [Concurrency Runtime]"]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
 ---
