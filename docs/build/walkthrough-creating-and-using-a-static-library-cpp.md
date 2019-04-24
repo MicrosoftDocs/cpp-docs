@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Creating and Using a Static Library (C++)"
 ms.custom: "get-started-article"
-ms.date: "09/18/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["libraries [C++], static", "static libraries [C++]"]
 ms.assetid: 3cc36411-7d66-4240-851e-dacb9a8fd6ac
 ms.author: "corob"
@@ -105,7 +105,7 @@ The instructions for how to create the project vary depending on which version o
 
 ### To create a C++ console app that references the static library in Visual Studio 2019
 
-1. In **Solution Explorer**, right-click on the top  to open the **Create a New Project** dialog box.
+1. In **Solution Explorer**, right-click on the top node for the solution and choose **Add** > **New Project** to open the **Add a New Project** dialog box.
 
 1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
 

@@ -33,9 +33,9 @@ Follow these steps to create your first Windows desktop project and enter the co
 
 ### To create a Windows desktop project in Visual Studio 2019
 
-1. In **Solution Explorer**, right-click on the top  to open the **Create a New Project** dialog box.
+1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Desktop**. 
+1. At the top of the dialog, set **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Desktop**. 
 
 1. From the filtered list of project types, choose **Windows Desktop Wizard** then choose **Next**. In the next page, enter a name for the project, and specify the project location if desired.
 

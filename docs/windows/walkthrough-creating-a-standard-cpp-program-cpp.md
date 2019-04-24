@@ -27,7 +27,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 ### To create a C++ project in Visual Studio 2019
 
-1. In **Solution Explorer**, right-click on the top  to open the **Create a New Project** dialog box.
+1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
 1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
 
