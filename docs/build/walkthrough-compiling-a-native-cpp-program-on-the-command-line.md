@@ -28,11 +28,11 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 ### Open a developer command prompt
 
-1. If you have installed Visual Studio 2017 on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.
+1. If you have installed Visual Studio 2017 or later on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio** folder (not the Visual Studio application). Choose **Developer Command Prompt for VS** to open the command prompt window.
 
    If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu and choose **All apps**. Scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
 
-   If you're using a different version of Visual Studio or are running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+   You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
 1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
@@ -77,7 +77,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 1. Save your work! In Notepad, on the **File** menu, choose **Save**.
 
-   Congratulations, you've created a Visual C++ source file, hello.cpp, that is ready to compile.
+   Congratulations, you've created a C++ source file, hello.cpp, that is ready to compile.
 
 1. Switch back to the developer command prompt window. Enter `dir` at the command prompt to list the contents of the c:\hello directory. You should see the source file hello.cpp in the directory listing, which looks something like:
 

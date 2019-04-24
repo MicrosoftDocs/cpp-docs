@@ -16,7 +16,7 @@ You need the following components to complete this walkthrough:
 
 - An additional computer that doesn't have the Visual C++ libraries.
 
-### To deploy an application by using a setup project
+## Create the setup project
 
 Instructions for creating a setup project vary depending on which version of Visual Studio you have installed. Make sure you have the version selector in the upper left set to the correct version.
 
@@ -26,9 +26,9 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-   ![MFC App project](media/vs2019-mfc-app-new-project.png "Name the client project")
+   ![MFC App project](media/vs2019-mfc-app-new-project.png "New MFC app")
 
-1. At the top of the dialog, type `MFC` in the search box and then choose **MFC App** from the results list. If you do not see it, you will need to launch the Visual Studio Installer program and click on the **C++ Desktop Development workload** tile. Under **Individual Components**, ensure that the MFC component is checked.
+1. At the top of the dialog, type `MFC` in the search box and then choose **MFC App** from the results list. If you do not see it, you will need to launch the Visual Studio Installer program from the Windows Start menu and click on the **C++ Desktop Development workload** tile. Under **Individual Components**, ensure that the MFC component is checked.
 
 1. In the next page, enter a name for the project, and specify the project location if desired.
 
@@ -37,6 +37,8 @@ Instructions for creating a setup project vary depending on which version of Vis
 ::: moniker-end
 
 ::: moniker range="=vs-2017"
+
+### To create the project in Visual Studio 2017
 
 1. Create a new project. On the **File** menu, point to **New**, and then click **Project**.
 
@@ -48,6 +50,8 @@ Instructions for creating a setup project vary depending on which version of Vis
 ::: moniker-end
 
 ::: moniker range="=vs-2015"
+
+### To create the project in Visual Studio 2015
 
 1. Create a new project. On the **File** menu, point to **New**, and then click **Project**.
 
@@ -70,7 +74,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 1. On the Visual Studio menu bar, choose **File** > **Recent Projects and Solutions**, and then choose to reopen your project.
 
-1. On the menu bar, choose **File** > **New** > **Project** to open the **New Project** dialog box. Then in the left pane of the dialog box, expand the **Installed** > **Other Project Types** nodes, and select **Visual Studio Installer**. In the center pane, select **Setup Project**.
+1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box. In the search box, type "Setup" and from the results list choose **Setup Project**.
 
 1. Enter a name for the setup project in the **Name** box. In the **Solution** drop-down list, select **Add to solution**. Choose the **OK** button to create the setup project. A **File Assistant (ProjectName)** tab opens in the editor window.
 
@@ -87,7 +91,6 @@ Instructions for creating a setup project vary depending on which version of Vis
 1. Enter a name for the setup project in the **Name** box. In the **Solution** drop-down list, select **Add to solution**. Choose the **OK** button to create the setup project. A **File Assistant (ProjectName)** tab opens in the editor window.
 
 ::: moniker-end
-
 
 1. Right-click the **Application Folder** node and select **Add** > **Project Output** to open the **Add Project Output Group** dialog box. In the dialog box, select **Primary Output** and click **OK**. A new item named **Primary Output from ProjectName (Active)** appears.
 
