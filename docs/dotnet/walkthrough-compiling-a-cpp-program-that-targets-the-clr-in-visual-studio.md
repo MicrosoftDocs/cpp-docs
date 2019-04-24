@@ -6,28 +6,56 @@ ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
 ---
 # Walkthrough: Compile a C++/CLI Program that Targets the CLR in Visual Studio
 
-By using C++/CLI language extensions you can create C++ programs that use .NET classes and compile them by using the Visual Studio Development Environment.
+By using C++/CLI you can create C++ programs that use .NET classes as well as native C++ types. C++/CLI is intended for use in console applications and in DLLs that wrap native C++ code and make it accessible from .NET programs. To create a Windows user interface based on .NET, use C# or Visual Basic. 
 
 For this procedure, you can type your own C++ program or use one of the sample programs. The sample program that we use in this procedure creates a text file named textfile.txt, and saves it to the project directory.
 
 ## Prerequisites
 
-These topics assume that you understand the fundamentals of the C++ language.
+- An understanding of the fundamentals of the C++ language.
+- In Visual Studio 2017 and later, C++/CLI support is an optional component. To install it, open the **Visual Studio Installer** from the Windows Start menu. Make sure that the **Desktop development with C++** tile is checked, and in the **Optional** components section, also check **C++/CLI Support**.
 
-### To create a new project in Visual Studio and add a new source file
+## Create a new project and add a source file
+
+The following steps vary depending on which version of Visual Studio you are using. Make sure the version selector in the upper left of this page is set correctly.
+
+::: moniker range="vs-2019"
+
+1. In **Solution Explorer**, right-click on the top  to open the **Create a New Project** dialog box.
+
+1. At the top of the dialog, type **CLR** in the search box and then choose **CLR Empty Project** from the results list. 
+
+1. Choose the **Create** button to create the project.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To create a C++/CLI project in Visual Studio 2017
 
 1. Create a new project. On the **File** menu, point to **New**, and then click **Project**.
 
 1. From the Visual C++ project types, click **CLR**, and then click **CLR Empty Project**.
 
-   > [!NOTE]
-   > If the **CLR Empty Project** type is missing (Visual Studio 2017 only), select **Open Visual Studio Installer** in the left pane of the **New Project** dialog box. Install the option located under **Desktop development with C++** in the **Optional** components section, named **C++/CLI Support**.<br/>
+1. Type a project name. By default, the solution that contains the project has the same name as the new project, but you can enter a different name. You can enter a different location for the project if you want.
 
-1. Type a project name.
+1. Click **OK** to create the new project.
 
-   By default, the solution that contains the project has the same name as the new project, but you can enter a different name. You can enter a different location for the project if you want.
+::: moniker-end
 
-   Click **OK** to create the new project.
+::: moniker range="vs-2015"
+
+### To create a C++/CLI project in Visual Studio 2015
+
+1. Create a new project. On the **File** menu, point to **New**, and then click **Project**.
+
+1. From the Visual C++ project types, click **CLR**, and then click **CLR Empty Project**.
+
+1. Type a project name. By default, the solution that contains the project has the same name as the new project, but you can enter a different name. You can enter a different location for the project if you want.
+
+1. Click **OK** to create the new project.
+
+::: moniker-end
 
 1. If **Solution Explorer** isn't visible, click **Solution Explorer** on the **View** menu.
 
@@ -47,7 +75,7 @@ These topics assume that you understand the fundamentals of the C++ language.
 
    `StreamWriter^ sw = gcnew StreamWriter(fileName);`
 
-   For more information on the new Visual C++ syntax, see [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).
+   For more information on C++/CLI syntax, see [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).
 
 1. On the **Build** menu, click **Build Solution**.
 

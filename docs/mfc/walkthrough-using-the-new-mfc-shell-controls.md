@@ -10,9 +10,31 @@ In this walkthrough, you'll create an application that resembles File Explorer. 
 
 ## Prerequisites
 
-This walkthrough assumes that you have set up Visual Studio to use **General Development Settings**. If you're using a different development setting, some Visual Studio windows that we use in this walkthrough might not be displayed by default.
+- In Visual Studio 2017 and later, MFC support is an optional component. To install it, open the Visual Studio Installer from the Windows Start menu. Find the version of Visual Studio you are using and choose the **Modify** button. Make sure the **Desktop Development with C++** tile is checked. Under **Optional Components**, check the **MFC Support** button.
 
-### To create a new MFC application by using the MFC Application Wizard
+- This walkthrough assumes that you have set up Visual Studio to use **General Development Settings**. If you're using a different development setting, some Visual Studio windows that we use in this walkthrough might not be displayed by default.
+
+## To create a new MFC application by using the MFC Application Wizard
+
+These steps vary depending on which version of Visual Studio you are using. Make sure the version selector in the upper left of this page is set correctly.
+
+::: moniker range="vs-2019"
+
+### To create a C++ project in Visual Studio 2019
+
+1. In **Solution Explorer**, right-click on the top to open the **Create a New Project** dialog box.
+
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+
+1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter a name for the project, and specify the project location if desired.
+
+1. Choose the **Create** button to create the project.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To create a C++ project in Visual Studio 2017 or earlier
 
 1. Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.
 
@@ -31,6 +53,8 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
     1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
 
     1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
+
+::: moniker-end
 
 1. Verify that the application was created successfully by building and running it. To build the application, from the **Build** menu select **Build Solution**. If the application builds successfully, run the application by selecting **Start Debugging** from the **Debug** menu.
 
