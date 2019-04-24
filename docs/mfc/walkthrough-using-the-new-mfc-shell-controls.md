@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Using the New MFC Shell Controls"
-ms.date: "09/20/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["shell controls (MFC)"]
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
 ---
@@ -20,21 +20,35 @@ These steps vary depending on which version of Visual Studio you are using. Make
 
 ::: moniker range="vs-2019"
 
-### To create a C++ project in Visual Studio 2019
+### To create an MFC project in Visual Studio 2019
 
-1. In **Solution Explorer**, right-click on the top to open the **Create a New Project** dialog box.
+1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. In the search box at the top, type **MFC** and then choose **MFC App** from the results list. 
 
-1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter a name for the project, and specify the project location if desired.
+1. Click **Next**. In the next page, enter a name for the project, and specify the project location if desired.
 
 1. Choose the **Create** button to create the project.
+
+After **MFC Application Wizard** displays, use the following options:
+
+    1. Choose **Application Type** on the left. Then select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
+
+    1. On the **Compound Document Support** pane, select **None**.
+
+    1. Don't make any changes to the **Document Template Properties** pane.
+
+    1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
+
+    1. On the **Advanced Features** pane, select **ActiveX controls**, **Common Control Manifest**, and **Navigation pane** option. Leave everyuthing else as it is. The **Navigation Pane** option will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
+
+    1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-### To create a C++ project in Visual Studio 2017 or earlier
+### To create an MFC project in Visual Studio 2017 or earlier
 
 1. Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.
 
