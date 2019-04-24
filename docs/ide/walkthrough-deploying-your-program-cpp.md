@@ -18,8 +18,6 @@ The walkthrough shows how to use Windows Installer to deploy your application. Y
 
 - The walkthrough can't be completed in Express editions of Visual Studio.
 
-- If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension, as described in the further steps later. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.
-
 ## To install the Visual Studio setup and deployment project template
 
 The steps in this section vary depending on which version of Visual Studio you have installed. Make sure the version selector in the upper left of this page is set correctly.

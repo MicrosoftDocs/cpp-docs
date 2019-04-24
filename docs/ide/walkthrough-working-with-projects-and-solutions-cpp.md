@@ -22,6 +22,8 @@ To create a project, first choose a project-type template. For each project type
 
 ::: moniker range="vs-2019"
 
+### To create a project in Visual Studio 2019
+
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
 1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
