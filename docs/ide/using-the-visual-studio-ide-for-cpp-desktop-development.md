@@ -1,6 +1,6 @@
 ---
 title: "Using the Visual Studio IDE for C++ Desktop Development"
-ms.date: "03/14/2019"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["IDE [C++]", "Visual Studio IDE [C++]"]
 ms.assetid: d985c230-8e81-49d6-92be-2db9cac8d023
 ---
@@ -16,15 +16,19 @@ These walkthroughs assume that you have installed Visual Studio and the Visual C
 
 If you haven't installed Visual Studio yet, now is the time.
 
+**Visual Studio 2019 Installation**
+
+To get Visual Studio 2019, you can download it from [Visual Studio Downloads](https://www.visualstudio.com/downloads/). Be sure to include the Visual C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
+
 **Visual Studio 2017 Installation**
 
-To get Visual Studio 2017, you can download it from [Visual Studio Downloads](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Be sure to include the Visual C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
+To get Visual Studio 2017, you can download it from [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Be sure to include the Visual C++ development tools when you install Visual Studio, because they are not installed by default. For more information about how to install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio) and set the version selector on the page to **Visual Studio 2017**.
 
 **Visual Studio 2015 Installation**
 
 To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component.
 
-In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
+In general, we highly recommend that you use Visual Studio 2019 even if you need to compile your code using the Visual Studio 2017 or Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 Once your Visual Studio installation is complete, you are ready to continue.
 

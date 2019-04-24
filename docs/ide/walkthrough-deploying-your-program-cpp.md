@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Deploying Your Program (C++)"
-ms.date: "09/14/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["deploying applications [C++], walkthroughs", "setup projects [C++]", "program deployments [C++]", "projects [C++], setup", "projects [C++], deploying programs", "application deployment [C++], walkthroughs"]
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
 ---
@@ -20,7 +20,19 @@ The walkthrough shows how to use Windows Installer to deploy your application. Y
 
 - If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension, as described in the further steps later. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio.
 
-### To install the Visual Studio setup and deployment project template
+## To install the Visual Studio setup and deployment project template
+
+The steps in this section vary depending on which version of Visual Studio you have installed. Make sure the version selector in the upper left of this page is set correctly.
+
+::: moniker range="vs-2019"
+
+### To install the setup and deployment project template for Visual Studio 2019
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To install the setup and deployment project template for Visual Studio 2017 and earlier
 
 1. When you're connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**.
 
