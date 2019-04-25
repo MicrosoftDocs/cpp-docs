@@ -197,7 +197,9 @@ Effectively, it's the same as following rules C.12–C.15 to allocate arguments 
 
 Integral values are returned in x0.
 
-Floating-point values are returned in s0/d0/v0 as appropriate.
+Floating-point values are returned in s0, d0, or v0, as appropriate.
+
+HFA and HVA values are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
 
 Types returned by value are handled differently depending on whether they have certain properties. Types which have all of these properties,
 
