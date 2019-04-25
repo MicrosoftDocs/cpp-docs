@@ -403,6 +403,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/profile-guided-optimization-in-the-performance-and-diagnostics-hub.md",
+            "redirect_url": "/cpp/build/profile-guided-optimizations",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/pseudotargets.md",
             "redirect_url": "/cpp/build/reference/pseudotargets",
             "redirect_document_id": false
@@ -7065,8 +7070,13 @@
         },
         {
             "source_path": "docs/error-messages/tool-errors/index.md",
-            "redirect_url": "/cpp/error-messages/tool-errors/bscmake-errors-bk1500-through-bk4505",
+            "redirect_url": "/cpp/error-messages/tool-errors/tool-errors-overview",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/error-messages/tool-errors/resource-compiler-errors-rw1004-through-rw4004.md",
+            "redirect_url": "/cpp/error-messages/tool-errors/resource-compiler-errors-rc1000-through-rc4413",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/ide/index.md",
@@ -7381,6 +7391,21 @@
         {
             "source_path": "docs/mfc/unicode-in-mfc.md",
             "redirect_url": "/cpp/mfc/mfc-library-versions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/contents.md",
+            "redirect_url": "/cpp/parallel/openmp/openmp-c-and-cpp-application-program-interface",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/openmp-data-types.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/parallel/openmp/reference/openmp-libraries.md",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-library-reference",
             "redirect_document_id": false
         },
         {

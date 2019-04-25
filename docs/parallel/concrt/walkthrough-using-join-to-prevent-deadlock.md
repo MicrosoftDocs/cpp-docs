@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Using join to Prevent Deadlock"
-ms.date: "11/19/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["preventing deadlock with joins [Concurrency Runtime]", "deadlock, preventing [Concurrency Runtime]", "non-greedy joins, example", "join class, example"]
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
 ---
