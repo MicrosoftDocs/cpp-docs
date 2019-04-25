@@ -32,17 +32,17 @@ These steps vary depending on which version of Visual Studio you are using. Make
 
 After **MFC Application Wizard** displays, use the following options:
 
-    1. Choose **Application Type** on the left. Then select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
+  - Choose **Application Type** on the left. Then select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
 
-    1. On the **Compound Document Support** pane, select **None**.
+  - On the **Compound Document Support** pane, select **None**.
 
-    1. Don't make any changes to the **Document Template Properties** pane.
+  - Don't make any changes to the **Document Template Properties** pane.
 
-    1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
+  - On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
 
-    1. On the **Advanced Features** pane, select **ActiveX controls**, **Common Control Manifest**, and **Navigation pane** option. Leave everyuthing else as it is. The **Navigation Pane** option will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
+  - On the **Advanced Features** pane, select **ActiveX controls**, **Common Control Manifest**, and **Navigation pane** option. Leave everyuthing else as it is. The **Navigation Pane** option will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
 
-    1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
+  - We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
 
 ::: moniker-end
 
@@ -54,25 +54,25 @@ After **MFC Application Wizard** displays, use the following options:
 
 1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. After **MFC Application Wizard** displays, use the following options:
 
-    1. On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
+  - On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
 
-    1. On the **Compound Document Support** pane, select **None**.
+  - On the **Compound Document Support** pane, select **None**.
 
-    1. Don't make any changes to the **Document Template Strings** pane.
+  - Don't make any changes to the **Document Template Strings** pane.
 
-    1. On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database.
+  - On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database.
 
-    1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
+  - On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
 
-    1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
+  - On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
 
-    1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
+  - We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
 
 ::: moniker-end
 
-1. Verify that the application was created successfully by building and running it. To build the application, from the **Build** menu select **Build Solution**. If the application builds successfully, run the application by selecting **Start Debugging** from the **Debug** menu.
+Verify that the application was created successfully by building and running it. To build the application, from the **Build** menu select **Build Solution**. If the application builds successfully, run the application by selecting **Start Debugging** from the **Debug** menu.
 
-   The wizard automatically creates an application that has a standard menu bar, a standard toolbar, a standard status bar, and an Outlook bar to the left of the window with a **Folders** view and a **Calendar** view.
+The wizard automatically creates an application that has a standard menu bar, a standard toolbar, a standard status bar, and an Outlook bar to the left of the window with a **Folders** view and a **Calendar** view.
 
 ### To add the shell list control to the document view
 

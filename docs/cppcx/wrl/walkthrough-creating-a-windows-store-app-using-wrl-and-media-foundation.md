@@ -23,7 +23,7 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 ## Prerequisites
 
-- In Visual Studio 2017 and later, UWP support is an optional component. To install it, open the Visual Studio Installer from the Windows Start menu and find your version of Visual Studio. Choose **Modify** and then make sure the **Universal Windows Platform Development** tile is checked. Under **Optional Component** check **C++ Tools for UWP (v141)** for Visual Studio 2017, or **C++ Tools for UWP (v142)** for Visual Studio 2019. Then check the version of the Windows SDK that you want to use. 
+- In Visual Studio 2017 and later, UWP support is an optional component. To install it, open the Visual Studio Installer from the Windows Start menu and find your version of Visual Studio. Choose **Modify** and then make sure the **Universal Windows Platform Development** tile is checked. Under **Optional Components** check **C++ Tools for UWP (v141)** for Visual Studio 2017, or **C++ Tools for UWP (v142)** for Visual Studio 2019. Then check the version of the Windows SDK that you want to use. 
 
 - Experience with the [Windows Runtime](https://msdn.microsoft.com/library/windows/apps/br211377.aspx).
 

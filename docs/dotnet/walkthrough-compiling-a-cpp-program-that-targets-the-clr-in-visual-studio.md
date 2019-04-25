@@ -15,11 +15,13 @@ For this procedure, you can type your own C++ program or use one of the sample p
 - An understanding of the fundamentals of the C++ language.
 - In Visual Studio 2017 and later, C++/CLI support is an optional component. To install it, open the **Visual Studio Installer** from the Windows Start menu. Make sure that the **Desktop development with C++** tile is checked, and in the **Optional** components section, also check **C++/CLI Support**.
 
-## Create a new project and add a source file
+## Create a new project
 
 The following steps vary depending on which version of Visual Studio you are using. Make sure the version selector in the upper left of this page is set correctly.
 
 ::: moniker range="vs-2019"
+
+### To create a C++/CLI project in Visual Studio 2019
 
 1. In **Solution Explorer**, right-click on the top  to open the **Create a New Project** dialog box.
 
@@ -56,6 +58,8 @@ The following steps vary depending on which version of Visual Studio you are usi
 1. Click **OK** to create the new project.
 
 ::: moniker-end
+
+## Add a source file
 
 1. If **Solution Explorer** isn't visible, click **Solution Explorer** on the **View** menu.
 
