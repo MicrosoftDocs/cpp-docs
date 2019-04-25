@@ -31,7 +31,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="vs-2017"
 
 ### To create a C++/CLI project in Visual Studio 2017
 
