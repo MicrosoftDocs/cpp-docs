@@ -45,6 +45,24 @@ Windows running on ARM64 enables the CPU hardware to handle misaligned accesses 
 
 However, accesses to uncached (device) memory still must always be aligned. If code could possibly read or write misaligned data from uncached memory, it must make sure to align all accesses.
 
+Default layout alignment for locals:
+
+| Size in bytes | Alignment in bytes |
+| - | - |
+| 1 | 1 |
+| 2 | 2 |
+| 3, 4 | 4 |
+| > 4 | 8 |
+
+Default layout alignment for globals and statics:
+
+| Size in bytes | Alignment in bytes |
+| - | - |
+| 1 | 1 |
+| 2 - 4 | 4 |
+| 5 - 63 | 8 |
+| >= 64 | 16 |
+
 ## Integer registers
 
 The AArch64 architecture supports 32 integer registers:
