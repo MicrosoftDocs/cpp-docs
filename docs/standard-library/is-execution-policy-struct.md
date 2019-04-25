@@ -22,4 +22,4 @@ template<class T> struct is_execution_policy { see below };
 
 ## See also
 
-[\<execution>](../standard-library/excution.md)
+[\<execution>](../standard-library/execution.md)

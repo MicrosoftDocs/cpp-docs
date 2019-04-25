@@ -25,4 +25,4 @@ During the execution of a parallel algorithm with the `execution::parallel_polic
 
 ## See also
 
-[\<execution>](../standard-library/excution.md)
+[\<execution>](../standard-library/execution.md)
