@@ -199,6 +199,8 @@ Integral values are returned in x0.
 
 Floating-point values are returned in s0/d0/v0 as appropriate.
 
+HFA and HVA values are returned in s0-s3/d0-d3/v0-v3 as appropriate.
+
 Types returned by value are handled differently depending on whether they have certain properties. Types which have all of these properties,
 
 - they're *aggregate* by the C++14 standard definition, that is, they have no user-provided constructors, no private or protected non-static data members, no base classes, and no virtual functions, and
