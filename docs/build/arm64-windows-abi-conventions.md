@@ -51,7 +51,7 @@ Default layout alignment for locals:
 | - | - |
 | 1 | 1 |
 | 2 | 2 |
-| 3, 4| 4 |
+| 3, 4 | 4 |
 | > 4 | 8 |
 
 Default layout alignment for globals and statics:
