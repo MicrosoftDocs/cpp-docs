@@ -144,9 +144,11 @@ The following example shows a sample configuration, which you can use as a start
 
 ```
 
-JSON IntelliSense helps you edit the  `CMakeSettings.json` file:
+JSON IntelliSense helps you edit the `CMakeSettings.json` file:
 
    ![CMake JSON IntelliSense](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
+
+The JSON editor will also inform you when you choose incompatible settings.
 
 For more information about each of the properties in the file, see [CMakeSettings.json schema reference](cmakesettings-reference.md).
 
