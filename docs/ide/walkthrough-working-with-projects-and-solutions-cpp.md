@@ -233,7 +233,7 @@ Next, build the project and run the app.
 
    The **Output** window can show different steps, depending on the build configuration, but if the project build succeeds, the last line should resemble the output shown.
 
-   If your build didn't succeed, compare your code to the code that is shown in the earlier steps. 
+   If your build didn't succeed, compare your code to the code that is shown in the earlier steps.
 
 1. To run the project, on the menu bar, choose **Debug** > **Start Without Debugging**. A console window should appear, and the output should resemble:
 

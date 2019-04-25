@@ -14,7 +14,7 @@ If you haven't installed Visual Studio yet, now is the time. For download links 
 
 These walkthroughs assume that you have installed Visual Studio and the Visual C++ language and components required for Windows Desktop development. We also assume you understand the fundamentals of the C++ language. If you need to learn C++, there are many books and web resources available. One good place to start is the [Get Started](https://isocpp.org/get-started) page of the Standard C++ Foundation website.
 
-If you haven't installed Visual Studio yet, now is the time.
+If you haven't installed Visual Studio yet, now is the time. In general, we highly recommend that you use Visual Studio 2019 even if you need to compile your code using the Visual Studio 2017 or Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 **Visual Studio 2019 Installation**
 
@@ -27,8 +27,6 @@ To get Visual Studio 2017, you can download it from [Download older versions of 
 **Visual Studio 2015 Installation**
 
 To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component.
-
-In general, we highly recommend that you use Visual Studio 2019 even if you need to compile your code using the Visual Studio 2017 or Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 Once your Visual Studio installation is complete, you are ready to continue.
 
