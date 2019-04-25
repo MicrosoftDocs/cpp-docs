@@ -31,7 +31,7 @@ You need the following to complete this walkthrough:
 > Do not use this approach if you intend to edit the project file later by using the Visual Studio IDE. If you create a .vcxproj file manually, the Visual Studio IDE might not be able to edit or load it, especially if the project uses wildcards in project items.
 
 > [!NOTE]
-> Most of the low-level build instructions are contained in the **.targets** and **.props** files that are defined in the VCTargets directory, stored in the property `$(VCTargetsPath)`. The default path for these files in Visual Studio 2019 Enterprise Edition is C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\Common7\\IDE\\VC\\VCTargets\\.
+> Most of the low-level build instructions are contained in the **.targets** and **.props** files that are defined in the VCTargets directory, stored in the property `$(VCTargetsPath)`. The default path for these files in Visual Studio 2019 Enterprise Edition is C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props.
 
 ## Creating the C++ Source Files
 
@@ -73,7 +73,7 @@ An MSBuild project file is an XML file that contains a project root element (`<P
 
 ### To create the MSBuild project file
 
-1. Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root `<Project>` element. Insert the elements in the following procedure steps between the root `<Project>` tags (Use ToolsVersion="15.0" for Visual Studio 2017.):
+1. Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root `<Project>` element. Insert the elements in the following procedure steps between the root `<Project>` tags. (Use ToolsVersion="15.0" if you are using Visual Studio 2017.)
 
     ```xml
     <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -101,7 +101,7 @@ An MSBuild project file is an XML file that contains a project root element (`<P
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-1. Add the following property group element (`<PropertyGroup>`) that specifies two project properties (use v141 for Visual Studio 2017):
+1. Add the following property group element (`<PropertyGroup>`) that specifies two project properties. (Use v141 if you are using Visual Studio 2017.)
 
     ```xml
     <PropertyGroup>

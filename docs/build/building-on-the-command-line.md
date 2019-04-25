@@ -2,7 +2,7 @@
 title: "Use the MSVC toolset from the command line - Visual Studio"
 description: "Use the Microsoft C++ compiler toolchain (MSVC) from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: "04/23/2019"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
@@ -101,9 +101,9 @@ Optionally specifies the Visual Studio compiler toolset to use. By default, the 
 
 1. At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017 and 2019, this is the VC\Auxiliary\Build subdirectory. For Visual Studio 2015, use the VC subdirectory.
 
-1. Enter the command for your preferred developer environment. For example, to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and the Visual Studio 2019 RTM compiler toolset, use this command line:
+1. Enter the command for your preferred developer environment. For example, to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and the Visual Studio 2019 compiler toolset, use this command line:
 
-   `vcvarsall.bat amd64_arm uwp -vcvars_ver=14.10`
+   `vcvarsall.bat amd64_arm uwp`
 
 ## Create your own command prompt shortcut
 
@@ -111,11 +111,11 @@ If you open the Properties dialog for one of the existing developer command prom
 
 `%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"`
 
-The architecture-specific batch files set the *architecture* parameter and call vcvarsall.bat. You can pass the same additional options to these batch files as you would pass to vcvarsall.bat, or you can just call vcvarsall.bat directly. To specify parameters for your own command shortcut, add them to the end of the command in double-quotes. For example, to set up a shortcut to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and the Visual Studio 2017 RTM compiler toolset, use something like this command target in your shortcut:
+The architecture-specific batch files set the *architecture* parameter and call vcvarsall.bat. You can pass the same additional options to these batch files as you would pass to vcvarsall.bat, or you can just call vcvarsall.bat directly. To specify parameters for your own command shortcut, add them to the end of the command in double-quotes. For example, to set up a shortcut to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and a compiler toolset that is earlier than the current version, you need to specify the version number. Use something like this command target in your shortcut:
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=14.10"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=15.0"`
 
-You must adjust the path to reflect your Visual Studio installation directory.
+You must adjust the path to reflect your Visual Studio installation directory. The vcvarsall.bat file has additional information about specific version numbers.
 
 ## Command line tools
 

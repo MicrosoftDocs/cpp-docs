@@ -42,7 +42,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 1. Create a new project. On the **File** menu, point to **New**, and then click **Project**.
 
-1. Use the **MFC ApplicationWizard** to create a new Visual Studio solution. To find the wizard, from the **New Project** dialog box, expand the **Visual C++** node, select **MFC**, select **MFC Application**, enter a name for the project, and then click **OK**. Click **Finish**.
+1. Use the **MFC Application Wizard** to create a new Visual Studio solution. To find the wizard, from the **New Project** dialog box, expand the **Visual C++** node, select **MFC**, select **MFC Application**, enter a name for the project, and then click **OK**. Click **Finish**.
 
    > [!NOTE]
    > If the **MFC Application** type is missing, select **Open Visual Studio Installer** in the left pane of the **New Project** dialog box. Install the option located under **Desktop development with C++** in the **Optional** components section, named **Visual C++ MFC for x86 and x64**.
@@ -55,7 +55,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 1. Create a new project. On the **File** menu, point to **New**, and then click **Project**.
 
-1. Use the **MFC ApplicationWizard** to create a new Visual Studio solution. To find the wizard, from the **New Project** dialog box, expand the **Visual C++** node, select **MFC**, select **MFC Application**, enter a name for the project, and then click **OK**. Click **Finish**.
+1. Use the **MFC Application Wizard** to create a new Visual Studio solution. To find the wizard, from the **New Project** dialog box, expand the **Visual C++** node, select **MFC**, select **MFC Application**, enter a name for the project, and then click **OK**. Click **Finish**.
 
    > [!NOTE]
    > If the **MFC Application** type is missing, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Microsoft Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the **Microsoft Foundation Classes** component under **Visual C++**.
@@ -68,7 +68,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 ::: moniker range="vs-2019"
 
-1. If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you're connected to the Internet, in Visual Studio, choose **Extensions** > **Manage Extensions**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio.
+1. If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you're connected to the Internet, in Visual Studio, choose **Extensions** > **Manage Extensions**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Press **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio.
 
    ![Visual Studio setup project](media/vs2019-extension-dialog-installer-project.png "Name the client project")
 
@@ -82,7 +82,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 ::: moniker range="<=vs-2017"
 
-1. If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you're connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Hit **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio.
+1. If you haven’t already done so, download the Microsoft Visual Studio Installer Projects extension. The extension is free for Visual Studio developers and adds the functionality of the setup and deployment project templates to Visual Studio. When you're connected to the Internet, in Visual Studio, choose **Tools** > **Extensions and Updates**. Under the **Extensions and Updates** dialog, select the **Online** tab and type *Microsoft Visual Studio Installer Projects* in the search box. Press **Enter**, select **Microsoft Visual Studio \<version> Installer Projects**, and click **Download**. Choose to run and install the extension, then restart Visual Studio.
 
 1. On the menu bar, choose **File** > **Recent Projects and Solutions**, and then choose to reopen your project.
 

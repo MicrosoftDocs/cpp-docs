@@ -31,7 +31,7 @@ This walkthrough doesn't cover some common situations. It doesn't show the use o
 
 - A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 for the best development experience.
 
-- A copy of Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now. 
+- A copy of Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
 
    ![Desktop development with C++](media/desktop-development-with-cpp.png "Desktop development with C++")
 
@@ -384,7 +384,7 @@ This code can be compiled, but not linked, because the linker can't find the imp
 
 ### To add the DLL import library to your project
 
-1. Open the **Property Pages** dialog box for the **MathClient** project.
+1. Right-click on the **MathClient** node in **Solution Explorer** to open the **Property Pages** dialog.
 
 1. In the **Configuration** drop-down box, select **All Configurations** if it isn't already selected. This setting ensures that the path is set for both Debug and Release builds.
 
@@ -414,7 +414,7 @@ Your client app can now compile and link successfully, but it still doesn't have
 
 ### To copy the DLL in a post-build event
 
-1. Open the **Property Pages** dialog box for the **MathClient** project if it isn't already open.
+1. Right-click on the **MathClient** node in **Solution Explorer** to open the **Property Pages** dialog.
 
 1. In the Configuration drop-down box, select **All Configurations** if it isn't already selected.
 

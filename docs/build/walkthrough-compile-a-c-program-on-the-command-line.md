@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Compile a C program on the command line"
 ms.custom: "conceptual"
-ms.date: "04/23/2019"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
 ---
@@ -113,7 +113,7 @@ These instructions vary depending on which version of Visual Studio you are usin
 
 1. To compile your program, enter `cl simple.c` at the developer command prompt.
 
-   You can see the executable program name, simple.exe, in the lines of output information that the compiler displays (the version number varies depending on the version of Visual Studio):
+   You can see the executable program name, simple.exe, in the lines of output information that the compiler displays:
 
     ```Output
     c:\simple>cl simple.c

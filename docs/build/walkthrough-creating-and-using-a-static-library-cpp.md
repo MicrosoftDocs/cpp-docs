@@ -28,7 +28,7 @@ An understanding of the fundamentals of the C++ language.
 
 ##  <a name="CreateLibProject"></a> Creating a static library project
 
-The instructions for how to create the project vary depending on which version of Visual Studio you have installed. Make sure you have the correct version set in the upper left of this page.
+The instructions for how to create the project vary depending on whether you are using Visual Studio 2019 or an earlier version. Make sure you have the correct version set in the upper left of this page.
 
 ::: moniker range="vs-2019"
 
