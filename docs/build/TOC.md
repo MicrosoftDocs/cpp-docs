@@ -46,7 +46,6 @@
 #### [pgomgr](pgomgr.md)
 #### [pgosweep](pgosweep.md)
 #### [How to: Merge Multiple PGO Profiles into a Single Profile](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
-#### [Visual Studio 2013 PGO Add-in in the Performance and Diagnostics Hub](profile-guided-optimization-in-the-performance-and-diagnostics-hub.md)
 # [Use the MSVC toolset from the command line](building-on-the-command-line.md)
 ## [Walkthrough: Compile a Native C++ Program on the Command Line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 ## [Walkthrough: Compile a C program on the command line](walkthrough-compile-a-c-program-on-the-command-line.md)

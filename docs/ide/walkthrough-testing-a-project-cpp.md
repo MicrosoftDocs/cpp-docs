@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Testing a Project (C++)"
-ms.date: "09/14/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["project testing [C++]", "testing projects", "projects [C++], testing"]
 ms.assetid: 88cdd377-c5c8-4201-889d-32f5653ebead
 ---

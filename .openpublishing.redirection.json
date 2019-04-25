@@ -403,6 +403,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/build/profile-guided-optimization-in-the-performance-and-diagnostics-hub.md",
+            "redirect_url": "/cpp/build/profile-guided-optimizations",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/build/pseudotargets.md",
             "redirect_url": "/cpp/build/reference/pseudotargets",
             "redirect_document_id": false
