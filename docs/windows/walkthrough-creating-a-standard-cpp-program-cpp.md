@@ -1,21 +1,18 @@
 ---
 title: "Walkthrough: Creating a Standard C++ Program (C++)"
 ms.custom: "get-started-article"
-ms.date: "09/18/2018"
-f1_keywords: ["vcfirstapp", "vccreatefirst"]
+ms.date: "04/25/2019"
 helpviewer_keywords: ["command-line applications [C++], standard", "standard applications [C++]"]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
 ---
 # Walkthrough: Creating a Standard C++ Program (C++)
 
-You can use Visual C++ in the Visual Studio integrated development environment (IDE) to create Standard C++ programs. By following the steps in this walkthrough, you can create a project, add a new file to the project, modify the file to add C++ code, and then compile and run the program by using Visual Studio.
+You can use Visual Studio to create Standard C++ programs. By following the steps in this walkthrough, you can create a project, add a new file to the project, modify the file to add C++ code, and then compile and run the program by using Visual Studio.
 
 You can type your own C++ program or use one of the sample programs. The sample program in this walkthrough is a console application. This application uses the `set` container in the C++ Standard Library.
 
-Visual C++ follows the 2003 C++ Standard, with these major exceptions: two-stage name lookup, exception specifications, and export. Additionally, Visual C++ supports several C++0x features, for example, lambdas, auto, static_assert, rvalue references, and extern templates.
-
 > [!NOTE]
-> If compliance with the standard is required, use the `/Za` compiler option to disable Microsoft extensions to the standard. For more information, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md).
+> If compliance with a specific version of the C++ language standard (i.e. C++14 or C++17) is required, use the `/std:C++14` or `/std:c++17` compiler option. (Visual Studio 2017 and later.)
 
 ## Prerequisites
 
@@ -23,21 +20,59 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 
 ### To create a project and add a source file
 
+The following steps vary depending on which version of Visual Studio you are using. Make sure the version selector in the upper left of this page is set correctly.
+
+::: moniker range="vs-2019"
+
+### To create a C++ project in Visual Studio 2019
+
+1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+
+1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter a name for the project, and specify the project location if desired.
+
+1. Choose the **Create** button to create the project.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### To create a C++ project in Visual Studio 2017
+
 1. Create a project by pointing to **New** on the **File** menu, and then clicking **Project**.
 
 1. In the **Visual C++** project types pane, click **Windows Desktop**, and then click **Windows Console Application**.
 
-   > [!NOTE]
-   > For versions of Visual Studio older than 2017, in the **New Project** dialog box, expand **Installed** > **Templates** > **Visual C++**, and then select **Win32**. In the center pane, select **Win32 Console Application**.
+1. Type a name for the project. By default, the solution that contains the project has the same name as the project, but you can type a different name. You can also type a different location for the project.
 
-   Type a name for the project.
+1. Click **OK** to create the project.
 
-   By default, the solution that contains the project has the same name as the project, but you can type a different name. You can also type a different location for the project.
+::: moniker-end
 
-   Click **OK** to create the project.
+::: moniker range="vs-2015"
 
-   > [!NOTE]
-   > For versions of Visual Studio older than 2017, complete the **Win32 Application Wizard**. Click **Next**, then make sure **Console Application** is selected and uncheck the **Precompiled Headers** box. Click **Finish**.
+### To create a C++ project in Visual Studio 2015
+
+1. Create a project by pointing to **New** on the **File** menu, and then clicking **Project**.
+
+1. In the **Visual C++** project types pane, click **Windows Desktop**, and then click **Windows Console Application**.
+
+1. In the **New Project** dialog box, expand **Installed** > **Templates** > **Visual C++**, and then select **Win32**. In the center pane, select **Win32 Console Application**.
+
+1. Type a name for the project. By default, the solution that contains the project has the same name as the project, but you can type a different name. You can also type a different location for the project.
+
+1. Click **OK** to create the project.
+
+1. Complete the **Win32 Application Wizard**. 
+
+1. Click **Next**, then make sure **Console Application** is selected and uncheck the **Precompiled Headers** box. 
+
+1. Click **Finish**.
+
+::: moniker-end
+
+## Add a new source file
 
 1. If **Solution Explorer** isn't displayed, on the **View** menu, click **Solution Explorer**.
 
