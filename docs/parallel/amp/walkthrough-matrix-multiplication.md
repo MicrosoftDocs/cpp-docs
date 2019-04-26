@@ -144,7 +144,7 @@ A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B
       std::cout << "\n";
      }
    }
-```
+   ```
 
    The AMP code resembles the non-AMP code. The call to `parallel_for_each` starts one thread for each element in `product.extent`, and replaces the `for` loops for row and column. The value of the cell at the row and column is available in `idx`. You can access the elements of an `array_view` object by using either the `[]` operator and an index variable, or the `()` operator and the row and column variables. The example demonstrates both methods. The `array_view::synchronize` method copies the values of the `product` variable back to the `productMatrix` variable.
 
