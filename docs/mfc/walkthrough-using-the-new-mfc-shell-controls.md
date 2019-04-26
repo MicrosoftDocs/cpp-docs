@@ -30,8 +30,8 @@ These steps vary depending on which version of Visual Studio you are using. Make
 
 1. Choose the **Create** button to create the project.
 
-After **MFC Application Wizard** displays, use the following options:
-
+   After **MFC Application Wizard** displays, use the following options:
+ 
   - Choose **Application Type** on the left. Then select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
 
   - On the **Compound Document Support** pane, select **None**.
@@ -52,21 +52,23 @@ After **MFC Application Wizard** displays, use the following options:
 
 1. Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.
 
-1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. After **MFC Application Wizard** displays, use the following options:
+1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. 
+
+   After **MFC Application Wizard** displays, use the following options:
 
   - On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
 
-    - On the **Compound Document Support** pane, select **None**.
+  - On the **Compound Document Support** pane, select **None**.
 
-    - Don't make any changes to the **Document Template Strings** pane.
+  - Don't make any changes to the **Document Template Strings** pane.
 
-    - On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database.
+  - On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database.
 
-    - On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
+  - On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
 
-    - On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
+  - On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
 
-    - We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
+  - We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
 
 ::: moniker-end
 
