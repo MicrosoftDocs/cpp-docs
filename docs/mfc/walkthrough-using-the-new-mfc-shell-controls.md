@@ -32,17 +32,17 @@ These steps vary depending on which version of Visual Studio you are using. Make
 
    After **MFC Application Wizard** displays, use the following options:
  
-  - Choose **Application Type** on the left. Then select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
+   1. Choose **Application Type** on the left. Then select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
 
-  - On the **Compound Document Support** pane, select **None**.
+   1. On the **Compound Document Support** pane, select **None**.
 
-  - Don't make any changes to the **Document Template Properties** pane.
+   1. Don't make any changes to the **Document Template Properties** pane.
 
-  - On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
+   1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
 
-  - On the **Advanced Features** pane, select **ActiveX controls**, **Common Control Manifest**, and **Navigation pane** option. Leave everything else as it is. The **Navigation Pane** option will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
+   1. On the **Advanced Features** pane, select **ActiveX controls**, **Common Control Manifest**, and **Navigation pane** option. Leave everything else as it is. The **Navigation Pane** option will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
 
-  - We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
+   1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
 
 ::: moniker-end
 
@@ -56,19 +56,19 @@ These steps vary depending on which version of Visual Studio you are using. Make
 
    After **MFC Application Wizard** displays, use the following options:
 
-  - On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
+   1. On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
 
-  - On the **Compound Document Support** pane, select **None**.
+   1. On the **Compound Document Support** pane, select **None**.
 
-  - Don't make any changes to the **Document Template Strings** pane.
+   1. Don't make any changes to the **Document Template Strings** pane.
 
-  - On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database.
+   1. On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database.
 
-  - On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
+   1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
 
-  - On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
+   1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
 
-  - We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
+   1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
 
 ::: moniker-end
 
@@ -123,7 +123,7 @@ The wizard automatically creates an application that has a standard menu bar, a 
 
 1. Now we update the `CMFCShellControlsView` class to handle the `WM_CREATE` windows message. Open the **Class View** window and select the `CMFCShellControlsView` class. Right-click and select **Properties**.
 
-    Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
+   Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
 
    In the `OnCreate` method, we'll now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:
 
@@ -195,7 +195,7 @@ The wizard automatically creates an application that has a standard menu bar, a 
 
    Right-click any item in the tree control or in the list control. You get the same context menu as if you were using the real **File Explorer**.
 
-## Next Steps
+## Next steps
 
 - The wizard created an Outlook bar with both a **Folders** pane and a **Calendar** pane. It probably doesn't make sense to have a **Calendar** pane in an **Explorer** window, so remove that pane now.
 
