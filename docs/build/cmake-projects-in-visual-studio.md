@@ -8,11 +8,12 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 
 CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. This article assumes you are familiar with CMake. You can learn more about it at [Build, Test and Package Your Software With CMake](https://cmake.org/). 
 
-CMake has become more and more integrated with Visual Studio over the past few releases. To see the correct information for the version you are using, make sure the version selector in the upper left of this page is set correctly. 
+> [!NOTE]
+> CMake has become more and more integrated with Visual Studio over the past few releases. To see the correct information for the version you are using, make sure the version selector in the upper left of this page is set correctly. 
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 introduces the **CMake Settings editor** and other improvements over Visual Studio 2017. The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can import an existing CMake cache; Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file. 
+Visual Studio 2019 introduces the **CMake Settings editor** and other improvements over Visual Studio 2017. The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can also import an existing CMake cache. 
 
 ## Installation
 
@@ -170,7 +171,7 @@ If you have installed CMake from the Visual Studio Installer, you can run it fro
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 has rich support for CMake, including [cross-platform CMake projects](../linux/cmake-linux-project.md). The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can import an existing CMake cache; Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file. 
+Visual Studio 2017 has rich support for CMake, including [cross-platform CMake projects](../linux/cmake-linux-project.md). The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You also can import an existing CMake cache. 
 
 ## Installation
 

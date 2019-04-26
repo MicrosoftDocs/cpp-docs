@@ -61,7 +61,7 @@ When the active configuration specifies a Visual Studio generator, by default MS
 
    ```json
    "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
-    ```
+   ```
 
 - `configurationType`: specifies the build type configuration for the selected generator. May be one of:
  
@@ -102,7 +102,7 @@ When the active configuration specifies a Visual Studio generator, by default MS
 
 - `cacheRoot`: specifies the path to a CMake cache. This directory should contain an existing CMakeCache.txt file.
 
-Additional settings are available for CMake Linux projects. 
+### Additional settings for CMake Linux projects. 
 
 - `remoteMachineName`: specifies the name of the remote Linux machine that hosts CMake, builds, and the debugger. Use the Connection Manager for adding new Linux machines. Supported macros include `${defaultRemoteMachineName}`.
 - `remoteCopySourcesOutputVerbosity`: specifies the verbosity level of the source copying operation to the remote machine. May be one of ""Normal", "Verbose", or "Diagnostic".
@@ -140,7 +140,8 @@ Note that if you do not define the `"type"`, the "STRING" type will be assumed b
 
 ## Environment variables
 
- `CMakeSettings.json` also supports consuming environment variables in any of its properties mentioned above. The syntax to use is `${env.FOO}` to expand the environment variable %FOO%.
+`CMakeSettings.json` also supports consuming environment variables in any of its properties mentioned above. The syntax to use is `${env.FOO}` to expand the environment variable %FOO%.
+
 You also have access to built-in macros inside this file:
 
 - `${workspaceRoot}` – provides the full path of the workspace folder
