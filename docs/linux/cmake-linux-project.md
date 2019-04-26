@@ -17,6 +17,13 @@ For general information about CMake support in Visual Studio, see [CMake Tools f
 
 First, make sure you have the **Linux development with C++** workload installed, including the CMake component. See [Install the C++ Linux workload in Visual Studio](download-install-and-setup-the-linux-development-workload.md). 
 
+On the Linux machine, make sure that the following are installed: 
+
+- gcc
+- gdb
+- rsync
+- zip 
+
 ::: moniker range="vs-2019"
 
 Linux support for CMake projects requires a recent version of CMake to be installed on the target machine. Often, the version offered by a distribution’s default package manager is not recent enough to support all the IDE’s features. Visual Studio 2019 can automatically install a user local copy of CMake on remote Linux machines that don’t have a recent version of CMake installed. If a compatible version of CMake isn’t detected the first time you build your project, you will see an info-bar offering to install CMake.
