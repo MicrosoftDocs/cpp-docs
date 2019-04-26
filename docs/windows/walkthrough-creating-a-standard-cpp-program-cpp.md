@@ -1,8 +1,7 @@
 ---
 title: "Walkthrough: Creating a Standard C++ Program (C++)"
 ms.custom: "get-started-article"
-ms.date: "09/18/2018"
-f1_keywords: ["vcfirstapp", "vccreatefirst"]
+ms.date: "04/25/2019"
 helpviewer_keywords: ["command-line applications [C++], standard", "standard applications [C++]"]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
 ---
@@ -72,6 +71,8 @@ The following steps vary depending on which version of Visual Studio you are usi
 1. Click **Finish**.
 
 ::: moniker-end
+
+## Add a new source file
 
 1. If **Solution Explorer** isn't displayed, on the **View** menu, click **Solution Explorer**.
 

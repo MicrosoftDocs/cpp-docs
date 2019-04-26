@@ -24,53 +24,58 @@ Before you can build a C or C++ program on the command line, you must verify tha
 > [!NOTE]
 > A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. Some of these values are different for each build configuration. You must set these environment values yourself if you don't use one of the shortcuts. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md). Because the build environment is complex, we strongly recommend you use a developer command prompt shortcut instead of building your own.
 
-## Open a developer command prompt
-
 These instructions vary depending on which version of Visual Studio you are using. Before continuing, make sure that the version selector in the upper left of this page is set correctly.
 
 ::: moniker range="vs-2019"
 
-1. If you have installed Visual Studio 2019 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2019** folder (not the Visual Studio 2019 app). Choose **Developer Command Prompt for VS 2019** to open the command prompt window.
+## Open a developer command prompt in Visual Studio 2019
 
-   If you're using a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+If you have installed Visual Studio 2019 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2019** folder (not the Visual Studio 2019 app). Choose **Developer Command Prompt for VS 2019** to open the command prompt window.
+
+If you're using a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-1. If you have installed Visual Studio 2017 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.
+## Open a developer command prompt in Visual Studio 2017
 
-   If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+If you have installed Visual Studio 2017 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.
+
+If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
 ::: moniker-end
 
 ::: moniker range="vs-2015"
 
-1. If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu, and then scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
+## Open a developer command prompt in Visual Studio 2015
 
-   If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu, and then scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
+
+If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
    
 ::: moniker-end
 
-1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
-   ```Output
-   C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
-   Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86
-   Copyright (C) Microsoft Corporation.  All rights reserved.
+Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
-   usage: cl [ option... ] filename... [ /link linkoption... ]
-   ```
+```Output
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
+Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
 
-   There may be differences in the current directory or version numbers, depending on the version of Visual C++ and any updates installed. If the above output is similar to what you see, then you're ready to build C or C++ programs at the command line.
+usage: cl [ option... ] filename... [ /link linkoption... ]
+```
 
-   > [!NOTE]
-   > If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104 when you run the **cl** command, then either you are not using a developer command prompt, or something is wrong with your installation of Visual C++. You must fix this issue before you can continue.
+There may be differences in the current directory or version numbers, depending on the version of Visual C++ and any updates installed. If the above output is similar to what you see, then you're ready to build C or C++ programs at the command line.
 
-   If you can't find the developer command prompt shortcut, or if you get an error message when you enter `cl`, then your Visual C++ installation may have a problem. If you're using Visual Studio 2017 or later, try reinstalling the **Desktop development with C++** workload in the Visual Studio installer. For details, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md). Or, reinstall the Build Tools from the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/) page. Don't go on to the next section until this works. For more information about installing and troubleshooting Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
+> [!NOTE]
+> If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104 when you run the **cl** command, then either you are not using a developer command prompt, or something is wrong with your installation of Visual C++. You must fix this issue before you can continue.
 
-   > [!NOTE]
-   > Depending on the version of Windows on the computer and the system security configuration, you might have to right-click to open the shortcut menu for the developer command prompt shortcut and then choose **Run as Administrator** to successfully build and run the program that you create by following this walkthrough.
+If you can't find the developer command prompt shortcut, or if you get an error message when you enter `cl`, then your Visual C++ installation may have a problem. If you're using Visual Studio 2017 or later, try reinstalling the **Desktop development with C++** workload in the Visual Studio installer. For details, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md). Or, reinstall the Build Tools from the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/) page. Don't go on to the next section until this works. For more information about installing and troubleshooting Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
+
+> [!NOTE]
+> Depending on the version of Windows on the computer and the system security configuration, you might have to right-click to open the shortcut menu for the developer command prompt shortcut and then choose **Run as Administrator** to successfully build and run the program that you create by following this walkthrough.
 
 ## Create a C source file and compile it on the command line
 
