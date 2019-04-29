@@ -16,11 +16,21 @@ In addition to shared tools in the Visual Studio IDE, MSVC has several tools spe
 
 A *project* is basically a set of source code files and resources such as images or data files that are built into an executable file.
 
-Visual Studio 2017 provides support for any build system or custom build tools that you wish to use, with full support for IntelliSense, browsing and debugging:
+Visual Studio provides support for any build system or custom build tools that you wish to use, with full support for IntelliSense, browsing and debugging:
 
 - **MSBuild** is the native build system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
 
+::: moniker range="vs-2019"
+
+   ![New Project Templates](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 New Project Dialog")
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
    ![Project Templates](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+
+::: moniker-end
 
    In general, you should use these templates for new projects unless you have a specific reason to use CMake or another project system. Some projects have a *wizard* that guides you step-by-step through the process of creating a new project. For more information, see [Creating and managing MSBuild-based projects](../build/creating-and-managing-visual-cpp-projects.md).
 
@@ -31,7 +41,17 @@ Visual Studio 2017 provides support for any build system or custom build tools t
 
 Source control enables you to coordinate work among multiple developers, isolate in-progress work from production code, and backup your source code. Visual Studio supports Git and [Team Foundation Version Control \(TFVC\)](/azure/devops/repos/tfvc/) through its **Team Explorer** window.
 
+::: moniker range="vs-2019"
+
+![Team Explorer](media/vs2019-team-explorer.png "Visual Studio 2017 Team Explorer")
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
 ![Team Explorer](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
+
+::: moniker-end
 
 For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
 
@@ -66,6 +86,7 @@ For more information on adding and editing resources in native desktop C++ proje
 Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
+
 For more information about MSBuild configurations, see [Working with Project Properties](../build/working-with-project-properties.md) and [Projects and build systems](../build/projects-and-build-systems-cpp.md).
 
 You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).

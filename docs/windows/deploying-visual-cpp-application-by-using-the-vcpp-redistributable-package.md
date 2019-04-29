@@ -1,6 +1,6 @@
 ---
 title: "Deploy an App By Using the Redistributable Package (C++)"
-ms.date: "09/17/2018"
+ms.date: "04/23/2019"
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
 ---
