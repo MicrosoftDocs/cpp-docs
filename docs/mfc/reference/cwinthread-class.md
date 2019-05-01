@@ -259,7 +259,7 @@ BOOL m_bAutoDelete;
 
 The `m_bAutoDelete` data member is a public variable of type BOOL.
 
-The value of `m_bAutoDelete` does not affect how the underlying thread handle is closed. The thread handle is always closed when the `CWinThread` object is destroyed.
+The value of `m_bAutoDelete` does not affect how the underlying thread handle is closed, but it will affect the timing of closing the handle. The thread handle is always closed when the `CWinThread` object is destroyed.
 
 ##  <a name="m_hthread"></a>  CWinThread::m_hThread
 
@@ -271,7 +271,9 @@ HANDLE m_hThread;
 
 ### Remarks
 
-The `m_hThread` data member is a public variable of type HANDLE. It is only valid if underlying thread currently exists.
+The `m_hThread` data member is a public variable of type HANDLE. It is only valid if underlying kernel thread object currently exists and the handle has not yet been closed.
+
+The CWinThread destructor will call CloseHandle on this variable. If [m_bAutoDelete](#m_bautodelete) is TRUE when the thread terminates, the CWinThread object will be destroyed, making any pointers to the CWinThread object and its member variables invalid. Therefore, if you intend to use the m_hThread member after starting or resuming the thread execution (such as to wait for it to be signaled), make sure to set m_bAutoDelete to FALSE before allowing thread execution to continue, or it may terminate and destroy the CWinThread object and close the handle before you try to use it.
 
 ##  <a name="m_nthreadid"></a>  CWinThread::m_nThreadID
 
@@ -283,7 +285,8 @@ DWORD m_nThreadID;
 
 ### Remarks
 
-The `m_nThreadID` data member is a public variable of type DWORD. It is only valid if underlying thread currently exists.
+The `m_nThreadID` data member is a public variable of type DWORD. It is only valid if underlying kernel thread object currently exists.
+Also see remarks about [m_hThread](#m_hthread) lifetime.
 
 ### Example
 
