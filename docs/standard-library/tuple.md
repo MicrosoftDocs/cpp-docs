@@ -15,13 +15,21 @@ Defines a template `tuple` whose instances hold objects of varying types.
 #include <tuple>
 ```
 
-### Classes
+### Classes (and Structs)
 
-|Class|Description|
+|Class (or Struct)|Description|
 |-|-|
-|[tuple](../standard-library/tuple-class.md)|Wraps a fixed-length sequence of elements.|
+|[tuple Class](../standard-library/tuple-class.md)|Wraps a fixed-length sequence of elements.|
 |[tuple_element Class](../standard-library/tuple-element-class-tuple.md)|Wraps the type of a `tuple` element.|
 |[tuple_size Class](../standard-library/tuple-size-class-tuple.md)|Wraps `tuple` element count.|
+|[uses_allocator](../standard-library/uses-allocator-structure#tuple.md)||
+
+### Objects
+
+|Object|Description|
+|-|-|
+|[tuple_element_t](../standard-library/tuple-functions.md#tuple_element_t)||
+|[tuple_size_v](../standard-library/tuple-functions.md#tuple_size_v)||
 
 ### Operators
 
@@ -43,6 +51,7 @@ Defines a template `tuple` whose instances hold objects of varying types.
 |[get](../standard-library/tuple-functions.md#get)|Gets an element from a `tuple` object.|
 |[make_from_tuple](../standard-library/tuple-functions.md#make_from_tuple)|Shorthand to make a `tuple`.|
 |[make_tuple](../standard-library/tuple-functions.md#make_tuple)|Makes a `tuple` from element values.|
+|[swap](../standard-library/tuple-functions.md#swap)||
 |[tie](../standard-library/tuple-functions.md#tie)|Makes a `tuple` from element references.|
 |[tuple_cat](../standard-library/tuple-functions.md#tuple_cat)|Constructs a tuple object with a range of the type elements.|
 

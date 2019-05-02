@@ -10,8 +10,9 @@ helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]
 ||||
 |-|-|-|
 |[apply](#apply)|[forward_as_tuple](#forward)|[get](#get)|
-|[make_from_tuple](#make_from_tuple)|[make_tuple](#make_tuple)|[tie](#tie)|
-|[tuple_cat](#tuple_cat)|||
+|[make_from_tuple](#make_from_tuple)|[make_tuple](#make_tuple)|[swap](#swap)|
+|[tie](#tie)|[tuple_cat](#tuple_cat)|[tuple_element_t](#tuple_element_t)|
+|[tuple_size_v](#tuple_size_v)|||
 
 ## <a name="apply"></a> apply
 
@@ -187,6 +188,13 @@ int main() {
 4 5 6 7
 ```
 
+## <a name="swap"></a> swap
+
+```cpp
+template <class... Types>
+void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept(see below );
+```
+
 ## <a name="tie"></a> tie
 
 Makes a `tuple` from element references.
@@ -255,6 +263,20 @@ template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
 ### Return Value
 
 A tuple object constructed by initializing the each type element.
+
+## <a name="tuple_element_t"></a> tuple_element_t
+
+```cpp
+template <size_t I, class T>
+using tuple_element_t = typename tuple_element<I, T>::type;
+```
+
+## <a name="tuple_size_v"></a> tuple_size_v
+
+```cpp
+template <class T>
+inline constexpr size_t tuple_size_v = tuple_size<T>::value;
+```
 
 ## See also
 
