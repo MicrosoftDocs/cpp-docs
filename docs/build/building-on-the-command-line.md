@@ -32,7 +32,7 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 - **x86_x64 Cross Tools Command Prompt** - Sets the environment to use 32-bit, x86-native tools to build 64-bit, x64-native code.
 - **x64_x86 Cross Tools Command Prompt** - Sets the environment to use 64-bit, x64-native tools to build 32-bit, x86-native code.
 
-The actual Start menu folder and shortcut names vary depending on the version of Visual Studio you have installed, and the installation Nickname if you set one. For example, if you have Visual Studio 2017 installed, and you've given it an installation Nickname of *Preview*, the developer command prompt shortcut is named **Developer Command Prompt for VS 2019**, in a folder named **Visual Studio 2019**.
+The actual Start menu folder and shortcut names vary depending on the version of Visual Studio you have installed, and the installation Nickname if you set one. For example, if you have Visual Studio 2019 installed, and you've given it an installation Nickname of *Preview*, the developer command prompt shortcut is named **Developer Command Prompt for VS 2019**, in a folder named **Visual Studio 2019**.
 
 ## <a name="developer_command_prompt"></a> To open a developer command prompt window
 
@@ -44,7 +44,7 @@ An even faster way to open a developer command prompt window is to enter *develo
 
 ## <a name="developer_command_file_locations"></a> Developer command file locations
 
-If you prefer to set the build architecture environment in an existing command prompt window, you can use one of the command files (batch files) created by the installer to set the required environment. We only recommend you do this in a new command prompt window, and we do not recommend you later switch environments in the same command window. The location of these files depends on the version of Visual Studio you have installed, and on location and naming choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit computer is in \Program Files (x86)\Microsoft Visual Studio\2019\\*edition*, where *edition* may be Community, Professional, Enterprise, BuildTools, or another name you supplied. The Visual Studio 2017 location is similar. For Visual Studio 2015, the typical installation location is in \Program Files (x86)\Microsoft Visual Studio 14.0.
+If you prefer to set the build architecture environment in an existing command prompt window, you can use one of the command files (batch files) created by the installer to set the required environment. We only recommend you do this in a new command prompt window, and we do not recommend you later switch environments in the same command window. The location of these files depends on the version of Visual Studio you have installed, and on location and naming choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit computer is in \Program Files (x86)\Microsoft Visual Studio\2019\*edition*, where *edition* may be Community, Professional, Enterprise, BuildTools, or another name you supplied. The Visual Studio 2017 location is similar. For Visual Studio 2015, the typical installation location is in \Program Files (x86)\Microsoft Visual Studio 14.0.
 
 The primary developer command prompt command file, VsDevCmd.bat, is located in the Common7\Tools subdirectory of the installation directory. When no parameters are specified, this sets the environment and the host and target build architecture to use the 32-bit x86-native tools to build 32-bit x86 code.
 
@@ -99,7 +99,7 @@ Optionally specifies the Visual Studio compiler toolset to use. By default, the 
 <a name="vcvarsall"></a>
 #### To set up the build environment in an existing command prompt window
 
-1. At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017 and 2019, this is the VC\Auxiliary\Build subdirectory. For Visual Studio 2015, use the VC subdirectory.
+1. At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017 and Visual Studio 2019, this is the VC\Auxiliary\Build subdirectory. For Visual Studio 2015, use the VC subdirectory.
 
 1. Enter the command for your preferred developer environment. For example, to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and the Visual Studio 2019 compiler toolset, use this command line:
 
