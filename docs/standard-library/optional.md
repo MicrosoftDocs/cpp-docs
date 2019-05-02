@@ -34,14 +34,22 @@ Defines the container template class optional and several supporting templates.
 |Function|Description|
 |-|-|
 |[make_optional](../standard-library/optional-functions.md#make_optional)|Makes an object optional.|
+|[swap](../standard-library/optional-functions.md#swap)||
 
 ### Classes and Structs
 
 |Class or Struct|Description|
 |-|-|
+|[hash]()||
 |[optional Class](../standard-library/optional-class.md)|Describes an object that may or may not hold a value.|
 |[nullopt_t Struct](../standard-library/nullopt-t-structure.md)|Describes an object not holding a value.|
 |[bad_optional_access Class](../standard-library/bad-optional-access-class.md)|Describes an object thrown as an exception to report an attempt to access a value not there.|
+
+### Objects
+
+|Object|Description|
+|-|-|
+|[nullopt](../standard-library/optional-functions.md#nullopt)||
 
 ## See also
 

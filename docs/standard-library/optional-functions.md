@@ -6,9 +6,9 @@ ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
 ---
 # &lt;optional&gt; functions
 
-||
-|-|
-|[make_optional](#make_optional)|
+||||
+|-|-|-|
+|[make_optional](#make_optional)|[nullopt](#nullopt)|[swap](#swap)|
 
 ## <a name="make_optional"></a> make_optional
 
@@ -21,6 +21,19 @@ template <class T, class... Args>
     constexpr optional<T> make_optional(Args&&... args);
 template <class T, class U, class... Args>
     constexpr optional<T> make_optional(initializer_list<U> il, Args&&... args);
+```
+
+## <a name="nullopt"></a> nullopt
+
+```cpp
+inline constexpr nullopt_t nullopt(unspecified );
+```
+
+## <a name="swap"></a> swap
+
+```cpp
+template <class T>
+void swap(optional<T>&, optional<T>&) noexcept(see below );
 ```
 
 ## See also

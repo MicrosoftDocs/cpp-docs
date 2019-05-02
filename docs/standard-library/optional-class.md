@@ -61,7 +61,7 @@ constexpr bool has_value() const noexcept;
 
 ## <a name="optional"></a> optional::optional
 
-Constructs an object of type `optional`.
+Constructs an object of type `optional`. Also includes a destructor.
 
 ```cpp
 constexpr optional() noexcept;
@@ -79,6 +79,8 @@ template <class U>
     explicit optional(const optional<U>&);
 template <class U>
     explicit optional(optional<U>&&);
+
+~optional();
 ```
 
 ## <a name="op_eq"></a>  optional::operator=
