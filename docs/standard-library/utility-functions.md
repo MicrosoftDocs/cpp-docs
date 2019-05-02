@@ -10,9 +10,10 @@ helpviewer_keywords: ["std::exchange [C++]", "std::forward [C++]", "std::make_pa
 ||||
 |-|-|-|
 |[as_const](#asconst)|[declval](#declval)|[exchange](#exchange)|
-|[forward](#forward)|[from_chars](#fromchars)|[get Function &lt;utility&gt;](#get)|
-|[make_pair](#make_pair)|[move](#move)|[move_if_noexcept](#moveif)|
-|[swap](#swap)|||
+|[forward](#forward)|[from_chars](#fromchars)|[get](#get)|
+|[index_sequence](#index_sequence)|[index_sequence_for](#index_sequence_for)|[make_index_sequence](#make_index_sequence)|
+|[make_integer_sequence](#make_integer_sequence)|[make_pair](#make_pair)|[move](#move)|
+|[move_if_noexcept](#moveif)|[swap](#swap)||
 
 ## <a name="asconst"></a>  as_const
 
@@ -117,7 +118,7 @@ You must specify an explicit template argument to call `forward`.
 
 Restoring the rvalue-ness of an argument's original value to do overload resolution is known as *perfect forwarding*. Perfect forwarding enables a template function to accept an argument of either reference type and to restore its rvalue-ness when it's necessary for correct overload resolution. By using perfect forwarding, you can preserve move semantics for rvalues and avoid having to provide overloads for functions that vary only by the reference type of their arguments.
 
-## <a name="fromchars"></a> from_chars
+## <a name="from_chars"></a> from_chars
 
 ```cpp
     from_chars_result from_chars(const char* first, const char* last, see below& value, int base = 10);
@@ -227,6 +228,34 @@ int main()
 }
 ```
 
+## <a name="index_sequence"></a>  index_sequence
+
+```cpp
+template<size_t... I>
+using index_sequence = integer_sequence<size_t, I...>;
+```
+
+## <a name="index_sequence_for"></a>  index_sequence_for
+
+```cpp
+template<class... T>
+using index_sequence_for = make_index_sequence<sizeof...(T)>;
+```
+
+## <a name="make_index_sequence"></a>  make_index_sequence
+
+```cpp
+template<size_t N>
+using make_index_sequence = make_integer_sequence<size_t, N>;
+```
+
+## <a name="make_integer_sequence"></a>  make_integer_sequence
+
+```cpp
+template<class T, T N>
+using make_integer_sequence = integer_sequence<T, see below >;
+```
+
 ## <a name="make_pair"></a>  make_pair
 
 A template function that you can use to construct objects of type `pair`, where the component types are automatically chosen based on the data types that are passed as parameters.
@@ -313,9 +342,14 @@ template <class T> constexpr conditional_t< !is_nothrow_move_constructible_v<T> 
 
 ## <a name="swap"></a>  swap
 
-Exchanges the elements of two [pair Structure](../standard-library/pair-structure.md) objects.
+Exchanges the elements of two type or [pair Structure](../standard-library/pair-structure.md) objects.
 
 ```cpp
+template <class T>
+void swap(T& left, T& right) noexcept(see below );
+template <class T, size_t N>
+void swap(T (&left)[N], T (&right)[N]) noexcept(is_nothrow_swappable_v<T>);
+
 template <class T, class U>
 void swap(pair<T, U>& left, pair<T, U>& right);
 ```
@@ -324,14 +358,14 @@ void swap(pair<T, U>& left, pair<T, U>& right);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*left*|An object of type `pair`.|
-|*right*|An object of type `pair`.|
+|*left*|An object of type or type `pair`.|
+|*right*|An object of type or type `pair`.|
 
 ### Remarks
 
 One advantage of `swap` is that the types of objects that are being stored are determined automatically by the compiler and don't have to be explicitly specified. Don't use explicit template arguments such as `swap<int, int>(1, 2)` when you use `swap` because it's verbose and adds complex rvalue reference problems that might cause compilation failure.
 
-## <a name="tochars"></a> tochars
+## <a name="to_chars"></a> to_chars
 
 ```cpp
     to_chars_result to_chars(char* first, char* last, see below value, int base = 10);

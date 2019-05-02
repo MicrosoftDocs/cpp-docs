@@ -12,6 +12,9 @@ helpviewer_keywords: ["std::operator!= (utility)", "std::operator&gt; (utility)"
 |[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
 |[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
 
+> [!NOTE]
+> Operators using `Type&` are included under `namespace rel_ops`.
+
 ## <a name="op_neq"></a>  operator!=
 
 Tests if the pair object on the left side of the operator is not equal to the pair object on the right side.

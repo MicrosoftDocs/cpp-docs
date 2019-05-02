@@ -19,6 +19,8 @@ struct pair
     T1 first;
     T2 second;
     constexpr pair();
+    pair(const pair&) = default;
+    pair(pair&&) = default;
     constexpr pair(
         const T1& Val1,
         const T2& Val2);
@@ -31,7 +33,20 @@ struct pair
 
     template <class Other1, class Other2>
     constexpr pair(Other1&& Val1, Other2&& Val2);
+
+    template <class... Args1, class... Args2>
+    pair(piecewise_construct_t, tuple<Args1...> first_args, tuple<Args2...> second_args);
+
+    pair& operator=(const pair& p);
+    template<class U1, class U2> pair& operator=(const pair<U1, U2>& p);
+    pair& operator=(pair&& p) noexcept(see below );
+    template<class U1, class U2> pair& operator=(pair<U1, U2>&& p);
+
+    void swap(pair& p) noexcept(see below );
 };
+
+template<class T1, class T2>
+    pair(T1, T2) -> pair<T1, T2>;
 ```
 
 ### Parameters
