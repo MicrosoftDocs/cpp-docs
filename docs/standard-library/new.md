@@ -52,6 +52,7 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 ### Enums
 
+|Enum|Description|
 |-|-|
 |[align_val_t](../standard-library/new-operators.md#op_align_val_t)||
 

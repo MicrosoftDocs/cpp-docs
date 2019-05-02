@@ -20,6 +20,16 @@ struct hash<type_index>
 };
 ```
 
+## Specialized Types
+
+### <a name="system_error"></a> \<system_error>
+
+```cpp
+template <class T> struct hash;
+template <> struct hash<error_code>;
+template <> struct hash<error_condition>;
+```
+
 ## See also
 
 [\<typeindex>](../standard-library/typeindex.md)<br/>

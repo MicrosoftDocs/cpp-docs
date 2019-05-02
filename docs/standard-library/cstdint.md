@@ -47,7 +47,11 @@ namespace std {
     using uintmax_t = unsigned integer type;
     using uintptr_t = unsigned integer type; // optional
 }
+```
 
+## Macros
+
+```cpp
 INT_[FAST LEAST]{8 16 32 64}_MIN
 [U]INT_[FAST LEAST]{8 16 32 64}_MAX
 INT{MAX PTR}_MIN

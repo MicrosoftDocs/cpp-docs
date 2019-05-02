@@ -171,7 +171,7 @@ unsigned long long int strtoull(const char* nptr, char** endptr, int base);
 
 These functions have the semantics specified in the C standard library.
 
-###  Multibyte / wide string and character conversion functions
+##  Multibyte / wide string and character conversion functions
 
 ```cpp
 int mblen(const char* s, size_t n);
@@ -181,11 +181,11 @@ size_t mbstowcs(wchar_t* pwcs, const char* s, size_t n);
 size_t wcstombs(char* s, const wchar_t* pwcs, size_t n);
 ```
 
-#### Remarks
+### Remarks
 
 These functions have the semantics specified in the C standard library.
 
-### Algorithm functions
+## Algorithm functions
 
 ```cpp
 void* bsearch(const void* key, const void* base, size_t nmemb, size_t size, c-compare-pred * compar);
@@ -194,22 +194,22 @@ void qsort(void* base, size_t nmemb, size_t size, c-compare-pred * compar);
 void qsort(void* base, size_t nmemb, size_t size, compare-pred * compar);
 ```
 
-#### Remarks
+### Remarks
 
 These functions have the semantics specified in the C standard library.
 
-### Low-quality random number generation functions
+## Low-quality random number generation functions
 
 ```cpp
 int rand();
 void srand(unsigned int seed);
 ```
 
-#### Remarks
+### Remarks
 
 These functions have the semantics specified in the C standard library.
 
-### Absolute values
+## Absolute values
 
 ```cpp
 int abs(int j);
@@ -227,7 +227,7 @@ ldiv_t ldiv(long int numer, long int denom);
 lldiv_t lldiv(long long int numer, long long int denom);
 ```
 
-#### Remarks
+### Remarks
 
 These functions have the semantics specified in the C standard library.
 

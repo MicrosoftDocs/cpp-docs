@@ -17,7 +17,11 @@ ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
 new_handler get_new_handler() noexcept;
 ```
 
-## <a name="launder"></a>
+### Remarks
+
+Returns the current `new_handler`.
+
+## <a name="launder"></a> launder
 
 ```cpp
 template <class T>

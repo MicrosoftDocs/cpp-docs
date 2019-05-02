@@ -14,6 +14,7 @@ ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
 
 Provides symbolic names for all the error-code macros defined by Posix in `<errno.h>`.
 
+```
 class errc {
    address_family_not_supported = EAFNOSUPPORT,
    address_in_use = EADDRINUSE,
@@ -94,6 +95,7 @@ class errc {
    value_too_large = EOVERFLOW,
    wrong_protocol_type = EPROTOTYPE,
    };
+```
 
 ### Remarks
 

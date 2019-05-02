@@ -9,8 +9,8 @@ helpviewer_keywords: ["std::generic_category", "std::make_error_code", "std::mak
 
 ||||
 |-|-|-|
-|[generic_category](#generic_category)|[make_error_code](#make_error_code)|[make_error_condition](#make_error_condition)|
-|[system_category](#system_category)|||
+|[generic_category](#generic_category)|[is_error_code_enum_v](#is_error_code_enum_v)|[is_error_condition_enum_v](#is_error_condition_enum_v)|
+|[make_error_code](#make_error_code)|[make_error_condition](#make_error_condition)|[system_category](#system_category)|
 
 ## <a name="generic_category"></a> generic_category
 
@@ -23,6 +23,22 @@ const error_category& generic_category() noexcept;
 ### Remarks
 
 The `generic_category` object is an implementation of [error_category](../standard-library/error-category-class.md).
+
+## <a name="is_error_code_enum_v"></a> is_error_code_enum_v
+
+No description.
+
+```cpp
+template <class T> inline constexpr bool is_error_code_enum_v = is_error_code_enum<T>::value;
+```
+
+## <a name="is_error_condition_enum_v"></a> is_error_condition_enum_v
+
+No description.
+
+```cpp
+template <class T> inline constexpr bool is_error_condition_enum_v = is_error_condition_enum<T>::value;
+```
 
 ## <a name="make_error_code"></a>  make_error_code
 

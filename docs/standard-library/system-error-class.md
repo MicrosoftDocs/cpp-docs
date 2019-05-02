@@ -28,8 +28,7 @@ public:
     const error_category& _Errcat,
     const char *_Message);
 const error_code& code() const throw();
-const error_code& code() const throw();
-
+const char* what() const noexcept override;
 };
 ```
 
