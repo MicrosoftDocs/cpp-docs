@@ -1,6 +1,6 @@
 ---
 title: "Upgrading Projects from Earlier Versions of Visual C++"
-ms.date: "11/04/2016"
+ms.date: "05/03/2019"
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 ---

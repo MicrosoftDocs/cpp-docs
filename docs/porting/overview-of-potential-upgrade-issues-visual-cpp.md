@@ -1,6 +1,6 @@
 ---
 title: "Overview of potential upgrade issues (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "05/03/2019"
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
 ---
 # Overview of potential upgrade issues (Visual C++)
@@ -14,15 +14,20 @@ Questions or comments about the upgrade process can be sent to vcupgrade@microso
 
 ## Library and toolset dependencies
 
+> [!NOTE] 
+> This section applies to applications and libraries built with Visual Studio 2013 and earlier. The toolsets used in Visual Studio 2015, Visual Studio 2017 and Visual Studio 2019 are binary compatible. For more information, see [C++ Binary Compatibility between Visual Studio 2015 and Visual Studio 2019](binary-compat-2015-2017.md).
+
 When upgrading an application to a new version of Visual Studio, it is strongly advisable and in many cases necessary to also upgrade all libraries and DLLs that the application links to. This requires either that you have access to the source code, or that the library vendor can provide new binary files compiled with the same major version of the compiler. If one of these conditions is true, then you can skip this section, which deals with the details of binary compatibility. If neither of these are the case, then you might not be able to use the libraries in your upgraded application. The information in this section will help you understand whether you can proceed with the upgrade.
 
 ### Toolset
 
 The .obj and .lib file formats are well-defined and rarely change. Sometimes additions are made to these file formats, but these additions generally do not affect the ability of newer toolsets to consume object files and libraries produced by older toolsets. The one big exception here is if you compile using [/GL (Whole Program Optimization)](../build/reference/gl-whole-program-optimization.md). If you compile using `/GL`, the resulting object file can only be linked using the same toolset that was used to produce it. So, if you produce an object file with `/GL` and using the Visual Studio 2017 (v141) compiler, you must link it using the Visual Studio 2017 (v141) linker. This is because the internal data structures within the object files are not stable across major versions of the toolset and newer toolsets do not understand the older data formats.
 
-C++ does not have a stable application binary interface (ABI). Visual Studio maintains a stable C++ ABI for all minor versions of a release. For example, Visual Studio 2017 and all its updates are binary compatible. But the ABI is not necessarily compatible across major versions of Visual Studio (except for 2015 and 2017, which _are_ binary compatible). That is, we may make breaking changes to C++ type layout, name decoration, exception handling, and other parts of the C++ ABI. Thus, if you have an object file that has external symbols with C++ linkage, that object file may not link correctly with object files produced with a different major version of the toolset. Note that here, "may not work" has many possible outcomes: the link may fail entirely (e.g. if name decoration changed), the link may succeed and things may not work at runtime (e.g. if type layout changed), or things may happen to work in many cases and nothing will go wrong. Note also that while the C++ ABI is not stable, the C ABI and the subset of the C++ ABI required for COM are stable.
+C++ does not have a stable application binary interface (ABI). But Visual Studio maintains a stable C++ ABI for all minor versions of a release. Visual Studio 2015 (v140), Visual Studio 2017 (v141) and Visual Studio 2019 (v142) vary only in their minor version. They all have the same major version number, which is 14. For more information, see [C++ Binary Compatibility between Visual Studio 2015 and Visual Studio 2019](binary-compat-2015-2017.md). 
 
-If you link to an import library, any later version of the Visual Studio redistributable libraries that preserve ABI compatibility may be used at runtime. For example, if your app is compiled and linked using the Visual Studio 2015 Update 3 toolset, you can use any Visual Studio 2017 redistributable, because the 2015 and 2017 libraries have preserved backward binary compatibility. The reverse is not true; you can't use a redistributable for an earlier version of the toolset than you used to build your code, even if they have a compatible ABI.
+If you have an object file that has external symbols with C++ linkage, that object file may not link correctly with object files produced with a different major version of the toolset. Note that here, "may not work" has many possible outcomes: the link may fail entirely (e.g. if name decoration changed), the link may succeed and things may not work at runtime (e.g. if type layout changed), or things may happen to work in many cases and nothing will go wrong. Note also that while the C++ ABI is not stable, the C ABI and the subset of the C++ ABI required for COM are stable.
+
+If you link to an import library, any later version of the Visual Studio redistributable libraries that preserve ABI compatibility may be used at runtime. For example, if your app is compiled and linked using the Visual Studio 2015 Update 3 toolset, you can use any Visual Studio 2017 or Visual Studio 2019 redistributable, because the 2015 and 2017 libraries have preserved backward binary compatibility. The reverse is not true; you can't use a redistributable for an earlier version of the toolset than you used to build your code, even if they have a compatible ABI.
 
 ### Libraries
 
