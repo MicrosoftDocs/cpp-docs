@@ -12,7 +12,6 @@ Defines the template class bitset and two supporting template functions for repr
 ## Syntax
 
 ```
-
 #include <bitset>
 ```
 
@@ -30,7 +29,7 @@ Defines the template class bitset and two supporting template functions for repr
 
 |Class|Description|
 |-|-|
-|[bitset Class](../standard-library/bitset-class.md)|The template class describes a type of object that stores a sequence consisting of a fixed number of bits that provide a compact way of keeping flags for a set of items or conditions.|
+|[bitset](../standard-library/bitset-class.md)|The template class describes a type of object that stores a sequence consisting of a fixed number of bits that provide a compact way of keeping flags for a set of items or conditions.|
 
 ## See also
 
