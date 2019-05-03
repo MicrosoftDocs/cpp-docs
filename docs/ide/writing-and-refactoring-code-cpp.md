@@ -1,5 +1,6 @@
 ---
 title: "Writing and refactoring code (C++)"
+description: "Use the C++ code editor in Visual Studio to format, navigate, understand and refactor your code."
 ms.date: "04/30/2018"
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
 ---

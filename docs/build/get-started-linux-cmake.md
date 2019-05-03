@@ -1,6 +1,6 @@
 ---
 title: Create C++ cross-platform projects in Visual Studio
-description: This tutorial shows how to set up, compile, and debug a C++ open-source CMake project in Visual Studio that targets both Linux and Windows.
+description: "This tutorial shows how to set up, compile, and debug a C++ open-source CMake project in Visual Studio that targets both Linux and Windows."
 author: mikeblome
 ms.topic: tutorial
 ms.date: "03/05/2019"

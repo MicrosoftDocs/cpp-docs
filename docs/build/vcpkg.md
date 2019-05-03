@@ -1,6 +1,6 @@
 ---
 title: vcpkg-- A C++ package manager for Windows, Linux and MacOS
-description: vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows.
+description: "vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows."
 author: mikeblome
 ms.author: mblome
 ms.date: "03/18/2019"
