@@ -8,7 +8,7 @@ f1_keywords: ["variant/std::get", "variant/std::get_if", "variant/std::holds_alt
 ||||
 |-|-|-|
 |[get](#get)|[get_if](#get_if)|[holds_alternative](#holds_alternative)|
-|[visit](#visit)|||
+|[swap](#swap)|[variant_npos](#variant_npos)|[visit](#visit)|
 
 ## <a name="get"></a>  get
 
@@ -55,6 +55,21 @@ Return **true** if a variant exists.
 ```cpp
 template <class T, class... Types>
     constexpr bool holds_alternative(const variant<Types...>&) noexcept;
+```
+
+## <a name="swap"></a>  swap
+
+```cpp
+template <class... Types>
+    void swap(variant<Types...>&, variant<Types...>&) noexcept(see below);
+```
+
+## <a name="variant_npos"></a>  variant_npos
+
+```cpp
+namespace std {
+    inline constexpr size_t variant_npos = -1;
+}
 ```
 
 ## <a name="visit"></a>  visit

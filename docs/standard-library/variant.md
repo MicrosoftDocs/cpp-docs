@@ -12,10 +12,6 @@ A variant object holds and manages a value. If the variant holds a value, that v
 
 ```cpp
 #include <variant>
-
-namespace std {
-    inline constexpr size_t variant_npos = -1;
-}
 ```
 
 ### Operators
@@ -36,17 +32,31 @@ namespace std {
 |[get](../standard-library/variant-functions.md#get)|Gets the variant of an object.|
 |[get_if](../standard-library/variant-functions.md#get_if)|Gets the variant of an object if it exists.|
 |[holds_alternative](../standard-library/variant-functions.md#holds_alternative)|Return **true** if a variant exists.|
+|[swap](../standard-library/variant-functions.md#swap)|Swaps a **variant**.|
 |[visit](../standard-library/variant-functions.md#visit)|Moves to the next **variant**.|
 
-### Classes and Structs
+### Classes
 
-|Class or Struct|Description|
+|Class|Description|
 |-|-|
-|[bad_variant_access Class](../standard-library/bad-variant-access-class.md)|Objects thrown to report invalid accesses to the value of a variant object.|
-|[monostate Struct](../standard-library/monostate-structure.md)|An alternative type for a variant to make the variant type default constructible.|
-|[variant Class](../standard-library/variant.md)|An object to either hold a value of one of its alternative types, or no value.|
-|[variant_alternative Struct](../standard-library/variant-alternative-structure.md)|Assists the variant objects.|
-|[variant_size Struct](../standard-library/variant-size-structure.md)|Assists the variant objects.|
+|[bad_variant_access](../standard-library/bad-variant-access-class.md)|Objects thrown to report invalid accesses to the value of a variant object.|
+|[variant](../standard-library/variant.md)|An object to either hold a value of one of its alternative types, or no value.|
+
+### Structs
+
+|Struct|Description|
+|-|-|
+|[hash](../standard-library/hash-structure.md)||
+|[monostate](../standard-library/monostate-structure.md)|An alternative type for a variant to make the variant type default constructible.|
+|[uses_allocator](../standard-library/uses-allocator-structure.md)||
+|[variant_alternative](../standard-library/variant-alternative-structure.md)|Assists the variant objects.|
+|[variant_size](../standard-library/variant-size-structure.md)|Assists the variant objects.|
+
+### Objects
+
+|Object|Description|
+|-|-|
+|[variant_npos](../standard-library/variant-functions.md#variant_npos)||
 
 ## See also
 

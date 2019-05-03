@@ -27,6 +27,7 @@ template <class... Types>
 |-|-|
 |[emplace](#emplace)|Creates a new contained value.|
 |[index](#index)|Returns the index of a contained value.|
+|[swap](#swap)||
 |[valueless_by_exception](#emplace)|Returns **false** if the variant holds a value.|
 
 ### Operators
@@ -66,7 +67,7 @@ constexpr size_t index() const noexcept;
 
 ## <a name="variant"></a>  variant::variant
 
-Constructs an object of type `variant`.
+Constructs an object of type `variant`. Also includes a destructor.
 
 ```cpp
 constexpr variant() noexcept(see below);
@@ -99,6 +100,8 @@ template <class Alloc, size_t I, class... Args>
     variant(allocator_arg_t, const Al&, in_place_index_t<I>, Args&&...);
 template <class Alloc, size_t I, class U, class... Args>
     variant(allocator_arg_t, const Al&, in_place_index_t<I>, initializer_list<U>, Args&&...);
+
+~variant();
 ```
 
 ### Parameters
@@ -116,6 +119,12 @@ variant& operator=(const variant&);
 variant& operator=(variant&&) noexcept(see below);
 template <class T>
     variant& operator=(T&&) noexcept(see below);
+```
+
+## <a name="swap"></a> variant::swap
+
+```cpp
+void swap(variant&) noexcept(see below);
 ```
 
 ## <a name="valueless"></a>  variant::valueless_by_exception
