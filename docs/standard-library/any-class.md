@@ -46,7 +46,7 @@ class any
 
 ## <a name="any"></a>  any::any
 
-Constructs an object of type `any`.
+Constructs an object of type `any`. Also includes a destructor.
 
 ```cpp
 constexpr any() noexcept;
@@ -58,6 +58,8 @@ template <class T, class... Args>
     explicit any(in_place_type_t<T>, Args&&...);
 template <class T, class U, class... Args>
     explicit any(in_place_type_t<T>, initializer_list<U>, Args&&...);
+
+~any();
 ```
 
 ## <a name="emplace"></a>  any::emplace
