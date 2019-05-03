@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Creating and Using a Static Library (C++)"
+description: Use C++ to create a static library (.lib) in Visual Studio.
 ms.custom: "get-started-article"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["libraries [C++], static", "static libraries [C++]"]
