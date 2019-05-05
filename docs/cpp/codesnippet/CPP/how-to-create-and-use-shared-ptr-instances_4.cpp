@@ -1,16 +1,21 @@
-    vector<shared_ptr<MediaAsset>> assets {
-      make_shared<Song>(L"Himesh Reshammiya", L"Tera Surroor"),
-      make_shared<Song>(L"Penaz Masani", L"Tu Dil De De")),
-      make_shared<Photo>(L"2011-04-06", L"Redmond, WA", L"Soccer field at Microsoft.")
+#include <algorithm>
+#include <iostream>
+#include <memory>
+#include <vector>
+
+    std::vector<std::shared_ptr<MediaAsset>> assets {
+      std::make_shared<Song>(L"Himesh Reshammiya", L"Tera Surroor"),
+      std::make_shared<Song>(L"Penaz Masani", L"Tu Dil De De")),
+      std::make_shared<Photo>(L"2011-04-06", L"Redmond, WA", L"Soccer field at Microsoft.")
     };
 
-    vector<shared_ptr<MediaAsset>> photos;
+    std::vector<std::shared_ptr<MediaAsset>> photos;
 
-    copy_if(assets.begin(), assets.end(), back_inserter(photos), [] (shared_ptr<MediaAsset> p) -> bool
+    std::copy_if(assets.begin(), assets.end(), std::back_inserter(photos), [] (std::shared_ptr<MediaAsset> p) -> bool
     {
         // Use dynamic_pointer_cast to test whether
         // element is a shared_ptr<Photo>.
-        shared_ptr<Photo> temp = dynamic_pointer_cast<Photo>(p);		
+        std::shared_ptr<Photo> temp = std::dynamic_pointer_cast<Photo>(p);		
         return temp.get() != nullptr;
     });
 
@@ -18,5 +23,5 @@
     {
         // We know that the photos vector contains only 
         // shared_ptr<Photo> objects, so use static_cast.
-        wcout << "Photo location: " << (static_pointer_cast<Photo>(p))->location_ << endl;
+        std::wcout << "Photo location: " << (std::static_pointer_cast<Photo>(p))->location_ << endl;
     }
