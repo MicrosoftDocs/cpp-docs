@@ -1,6 +1,6 @@
 ---
 title: "Destructors (C++)"
-ms.date: "11/19/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["objects [C++], destroying", "Visual C++, destructors", "destroying objects, destructors", "~ operator [C++], specifying destructors", "destructors, about destructors", "destructors, C++"]
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
 ---
@@ -14,7 +14,7 @@ Consider the following declaration of a `String` class:
 
 ```cpp
 // spec1_destructors.cpp
-#include <string.h>
+#include <string>
 
 class String {
 public:
@@ -41,8 +41,7 @@ String::String( char *ch ) {
 String::~String() {
    // Deallocate the memory that was previously reserved
    //  for this string.
-   if (_text)
-      delete[] _text;
+   delete[] _text;
 }
 
 int main() {
@@ -102,7 +101,7 @@ When an object goes out of scope or is deleted, the sequence of events in its co
 
 ```cpp
 // order_of_destruction.cpp
-#include <stdio.h>
+#include <cstdio>
 
 struct A1      { virtual ~A1() { printf("A1 dtor\n"); } };
 struct A2 : A1 { virtual ~A2() { printf("A2 dtor\n"); } };
