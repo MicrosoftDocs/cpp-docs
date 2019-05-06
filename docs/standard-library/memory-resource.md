@@ -44,7 +44,7 @@ Defines the container template class memory_resource and its supporting template
 |-|-|
 |[memory_resource Class](../standard-library/memory-resource-class.md)||
 |[monotonic_buffer_resource Class](../standard-library/monotonic-buffer-resource-class.md)||
-|[pool_options Struct](../standard-library/pool-options-struct.md)||
+|[pool_options Struct](../standard-library/pool-options-structure.md)||
 |[synchronized_pool_resource Class](../standard-library/synchronized-pool-resource-class.md)||
 |[unsynchronized_pool_resource Class](../standard-library/unsynchronized-pool-resource-class.md)||
 

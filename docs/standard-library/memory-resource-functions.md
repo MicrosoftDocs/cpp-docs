@@ -9,7 +9,7 @@ helpviewer_keywords: ["std::get_default_resource [C++]", "std::new_delete_resour
 ||||
 |-|-|-|
 |[get_default_resource](#get_default)|[new_delete_resource](#new_delete)|[null_memory_resource](#null_memory)|
-|[polymorphic_allocator](#polymorphic_allocator)|[set_default_resource](#set_default)||
+|[polymorphic_allocator](#poly_alloc)|[set_default_resource](#set_default)||
 
 ## <a name="get_default"></a>  get_default_resource
 
@@ -29,7 +29,7 @@ memory_resource* new_delete_resource() noexcept;
 memory_resource* null_memory_resource() noexcept;
 ```
 
-## <a name="polymorphic_allocator"></a> polymorphic_allocator
+## <a name="poly_alloc"></a> polymorphic_allocator
 
 ```cpp
 template <class Tp>
