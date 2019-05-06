@@ -1,6 +1,6 @@
 ---
 title: "OLE DB Programming"
-ms.date: "05/02/2018"
+ms.date: "05/02/2019"
 helpviewer_keywords: ["OLE DB [C++]", "data access [C++], OLE DB programming", "OLE DB [C++], about OLE DB"]
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
 ---
