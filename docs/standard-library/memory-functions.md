@@ -10,16 +10,20 @@ helpviewer_keywords: ["std::addressof [C++]", "std::align [C++]", "std::allocate
 ||||
 |-|-|-|
 |[addressof](#addressof)|[align](#align)|[allocate_shared](#allocate_shared)|
-|[const_pointer_cast](#const_pointer_cast)|[declare_no_pointers](#declare_no_pointers)|[declare_reachable](#declare_reachable)|
-|[default_delete](#default_delete)|[destroy_at](../standard-library/memory-functions.md#destroy_at)|[destroy](../standard-library/memory-functions.md#destroy)|
-|[destroy_n](../standard-library/memory-functions.md#destroy_n)|[dynamic_pointer_cast](#dynamic_pointer_cast)|[get_deleter](#get_deleter)|
-|[get_pointer_safety](#get_pointer_safety)|[get_temporary_buffer](#get_temporary_buffer)|[make_shared](#make_shared)|
-|[make_unique](#make_unique)|[owner_less](#owner_less)|[return_temporary_buffer](#return_temporary_buffer)|
-|[static_pointer_cast](#static_pointer_cast)|[swap (C++ Standard Library)](#swap)|[undeclare_no_pointers](#undeclare_no_pointers)|
-|[undeclare_reachable](#undeclare_reachable)|[uninitialized_copy](#uninitialized_copy)|[uninitialized_copy_n](#uninitialized_copy_n)|
-|[uninitialized_default_construct](../standard-library/memory-functions.md#uninitialized_default_construct)|[uninitialized_default_construct_n](../standard-library/memory-functions.md#uninitialized_default_construct_n)|[uninitialized_fill](#uninitialized_fill)|
-|[uninitialized_fill_n](#uninitialized_fill_n)|[uninitialized_move](../standard-library/memory-functions.md#uninitialized_move)|[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)|
-|[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)|[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)||
+|[atomic_compare_exchange_strong](#atomic_compare_exchange_strong)|[atomic_compare_exchange_weak](#atomic_compare_exchange_weak)|[atomic_compare_exchange_strong_explicit](#atomic_compare_exchange_strong_explicit)|
+|[atomic_compare_exchange_weak_explicit](#atomic_compare_exchange_weak_explicit)|[atomic_exchange](#atomic_exchange)|[atomic_exchange_explicit](#atomic_exchange_explicit)|
+|[atomic_is_lock_free](#atomic_is_lock_free)|[atomic_load](#atomic_load)|[atomic_load_explicit](#atomic_load_explicit)|
+|[atomic_store](#atomic_store)|[atomic_store_explicit](#atomic_store_explicit)|[const_pointer_cast](#const_pointer_cast)|
+|[declare_no_pointers](#declare_no_pointers)|[declare_reachable](#declare_reachable)|[default_delete](#default_delete)|
+|[destroy_at](#destroy_at)|[destroy](#destroy)|[destroy_n](#destroy_n)|
+|[dynamic_pointer_cast](#dynamic_pointer_cast)|[get_deleter](#get_deleter)|[get_pointer_safety](#get_pointer_safety)|
+|[get_temporary_buffer](#get_temporary_buffer)|[make_shared](#make_shared)|[make_unique](#make_unique)|
+|[owner_less](#owner_less)|[return_temporary_buffer](#return_temporary_buffer)|[static_pointer_cast](#static_pointer_cast)|
+|[swap (C++ Standard Library)](#swap)|[undeclare_no_pointers](#undeclare_no_pointers)|[undeclare_reachable](#undeclare_reachable)|
+|[uninitialized_copy](#uninitialized_copy)|[uninitialized_copy_n](#uninitialized_copy_n)|[uninitialized_default_construct](#uninitialized_default_construct)|
+|[uninitialized_default_construct_n](#uninitialized_default_construct_n)|[uninitialized_fill](#uninitialized_fill)|[uninitialized_fill_n](#uninitialized_fill_n)|
+|[uninitialized_move](#uninitialized_move)|[uninitialized_move_n](#uninitialized_move_n)|[uninitialized_value_construct](#uninitialized_value_construct)|
+|[uninitialized_value_construct_n](#uninitialized_value_construct_n)|[uses_allocator_v](#uses_allocator_v)||
 
 ## <a name="addressof"></a>  addressof
 
@@ -122,6 +126,89 @@ The zero or more arguments that become the objects.
 ### Remarks
 
 The function creates the object `shared_ptr<Type>`, a pointer to `Type(Args...)` as allocated and constructed by *Alloc*.
+
+## <a name="atomic_compare_exchange_strong"></a>  atomic_compare_exchange_strong
+
+```cpp
+template<class T>
+bool atomic_compare_exchange_strong(
+shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w);
+```
+
+## <a name="atomic_compare_exchange_weak"></a>  atomic_compare_exchange_weak
+
+```cpp
+template<class T>
+bool atomic_compare_exchange_weak(
+shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w);
+```
+
+## <a name="atomic_compare_exchange_strong_explicit"></a>  atomic_compare_exchange_strong_explicit
+
+```cpp
+template<class T>
+bool atomic_compare_exchange_strong_explicit(
+shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w,
+memory_order success, memory_order failure);
+```
+
+## <a name="atomic_compare_exchange_weak_explicit"></a>  atomic_compare_exchange_weak_explicit
+
+```cpp
+template<class T>
+bool atomic_compare_exchange_weak_explicit(
+shared_ptr<T>* p, shared_ptr<T>* v, shared_ptr<T> w,
+memory_order success, memory_order failure);
+```
+
+## <a name="atomic_exchange"></a>  atomic_exchange
+
+```cpp
+template<class T>
+shared_ptr<T> atomic_exchange(shared_ptr<T>* p, shared_ptr<T> r);
+```
+
+## <a name="atomic_exchange_explicit"></a>  atomic_exchange_explicit
+
+```cpp
+template<class T>
+shared_ptr<T> atomic_exchange_explicit(shared_ptr<T>* p, shared_ptr<T> r, memory_order mo);
+```
+
+## <a name="atomic_is_lock_free"></a>  atomic_is_lock_free
+
+```cpp
+template<class T>
+bool atomic_is_lock_free(const shared_ptr<T>* p);
+```
+
+## <a name="atomic_load"></a>  atomic_load
+
+```cpp
+template<class T>
+shared_ptr<T> atomic_load(const shared_ptr<T>* p);
+```
+
+## <a name="atomic_load_explicit"></a>  atomic_load_explicit
+
+```cpp
+template<class T>
+shared_ptr<T> atomic_load_explicit(const shared_ptr<T>* p, memory_order mo);
+```
+
+## <a name="atomic_store"></a>  atomic_store
+
+```cpp
+template<class T>
+void atomic_store(shared_ptr<T>* p, shared_ptr<T> r);
+```
+
+## <a name="atomic_store_explicit"></a>  atomic_store_explicit
+
+```cpp
+template<class T>
+void atomic_store_explicit(shared_ptr<T>* p, shared_ptr<T> r, memory_order mo);
+```
 
 ## <a name="const_pointer_cast"></a>  const_pointer_cast
 
@@ -1279,6 +1366,13 @@ Same as:
 for (; n>0; (void)++first, --n)
     ::new (static_cast<void*>(addressof(*first)))
         typename iterator_traits<ForwardIterator>::value_type(); return first;
+```
+
+## <a name="uses_allocator_v"></a> uses_allocator_v
+
+```cpp
+template <class T, class Alloc>
+inline constexpr bool uses_allocator_v = uses_allocator<T, Alloc>::value;
 ```
 
 ## See also

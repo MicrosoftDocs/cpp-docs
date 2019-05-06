@@ -17,6 +17,8 @@ public:
     shared_ptr<Ty>
         shared_from_this();
     shared_ptr<const Ty> shared_from_this() const;
+    weak_ptr<T> weak_from_this() noexcept;
+    weak_ptr<T const> weak_from_this() const noexcept;
 protected:
     enable_shared_from_this();
     enable_shared_from_this(const enable_shared_from_this&);
@@ -89,6 +91,13 @@ int main()
 
 ```Output
 sp2->val == 3
+```
+
+## <a name="weak_from_this"></a>  weak_from_this
+
+```cpp
+weak_ptr<T> weak_from_this() noexcept;
+weak_ptr<T const> weak_from_this() const noexcept;
 ```
 
 ## See also

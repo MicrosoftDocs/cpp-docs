@@ -111,9 +111,16 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 |Function|Description|
 |-|-|
+|[allocate_shared](#allocate_shared)||
+|[const_pointer_cast](#const_pointer_cast)||
+|[dynamic_pointer_cast](#dynamic_pointer_cast)||
 |[get](#get)|Gets address of owned resource.|
+|[get_deleter](#get_deleter)||
+|[make_shared](#make_shared)||
 |[owner_before](#owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|
+|[reinterpret_pointer_cast](#reinterpret_pointer_cast)||
 |[reset](#reset)|Replace owned resource.|
+|[static_pointer_cast](#static_pointer_cast)||
 |[swap](#swap)|Swaps two `shared_ptr` objects.|
 |[unique](#unique)|Tests if owned resource is unique.|
 |[use_count](#use_count)|Counts numbers of resource owners.|
@@ -126,12 +133,34 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 |[shared_ptr::operator*](#op_star)|Gets the designated value.|
 |[shared_ptr::operator=](#op_eq)|Replaces the owned resource.|
 |[shared_ptr::operator-&gt;](#op_arrow)|Gets a pointer to the designated value.|
+|[shared_ptr::operator&lt;&lt;](#op_arrowarrow)||
 
 ## Requirements
 
 **Header:** \<memory>
 
 **Namespace:** std
+
+## <a name="allocate_shared"></a>  allocate_shared
+
+```cpp
+template<class T, class A, class... Args>
+shared_ptr<T> allocate_shared(const A& a, Args&&... args);
+```
+
+## <a name="const_pointer_cast"></a>  const_pointer_cast
+
+```cpp
+template<class T, class U>
+shared_ptr<T> const_pointer_cast(const shared_ptr<U>& r) noexcept;
+```
+
+## <a name="dynamic_pointer_cast"></a>  dynamic_pointer_cast
+
+```cpp
+template<class T, class U>
+shared_ptr<T> dynamic_pointer_cast(const shared_ptr<U>& r) noexcept;
+```
 
 ## <a name="element_type"></a>  shared_ptr::element_type
 
@@ -204,6 +233,20 @@ int main()
 ```Output
 sp0.get() == 0 == true
 *sp1.get() == 5
+```
+
+## <a name="get_deleter"></a>  get_deleter
+
+```cpp
+template<class D, class T>
+D* get_deleter(const shared_ptr<T>& p) noexcept;
+```
+
+## <a name="make_shared"></a>  make_shared
+
+```cpp
+template<class T, class... Args>
+shared_ptr<T> make_shared(Args&&... args);
 ```
 
 ## <a name="op_bool"></a>  shared_ptr::operator bool
@@ -380,6 +423,13 @@ sp0->first == 1
 sp0->second == 2
 ```
 
+## <a name="op_arrowarrow"></a>  shared_ptr::operator&lt;&lt;
+
+```cpp
+template<class E, class T, class Y>
+basic_ostream<E, T>& operator<< (basic_ostream<E, T>& os, const shared_ptr<Y>& p);
+```
+
 ## <a name="owner_before"></a>  shared_ptr::owner_before
 
 Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.
@@ -400,6 +450,13 @@ An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
 ### Remarks
 
 The template member function returns true if `*this` is `ordered before` `ptr`.
+
+## <a name="reinterpret_pointer_cast"></a>  reinterpret_pointer_cast
+
+```cpp
+template<class T, class U>
+shared_ptr<T> reinterpret_pointer_cast(const shared_ptr<U>& r) noexcept;
+```
 
 ## <a name="reset"></a>  shared_ptr::reset
 
@@ -676,6 +733,13 @@ use count == 1
 *sp2 == 5
 use count == 2
 use count == 1
+```
+
+## <a name="static_pointer_cast"></a>  static_pointer_cast
+
+```cpp
+template<class T, class U>
+shared_ptr<T> static_pointer_cast(const shared_ptr<U>& r) noexcept;
 ```
 
 ## <a name="swap"></a>  shared_ptr::swap

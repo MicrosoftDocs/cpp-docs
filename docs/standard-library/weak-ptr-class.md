@@ -364,6 +364,12 @@ Swaps two `weak_ptr` objects.
 void swap(weak_ptr& wp);
 ```
 
+Also includes the specialization.
+
+```cpp
+template<class T> void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
+```
+
 ### Parameters
 
 *wp*<br/>
@@ -468,7 +474,7 @@ wp.use_count() == 2
 
 ## <a name="weak_ptr"></a>  weak_ptr
 
-Constructs a `weak_ptr`.
+Constructs a `weak_ptr`. Also includes a destructor.
 
 ```cpp
 weak_ptr();
@@ -480,6 +486,8 @@ weak_ptr(const weak_ptr<Other>& wp);
 
 template <class Other>
 weak_ptr(const shared_ptr<Other>& sp);
+
+~weak_ptr();
 ```
 
 ### Parameters
