@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Create and use your own Dynamic Link Library (C++)"
+description: "Use C++ to create a Windows dynamic-link library (DLL) in Visual Studio."
 ms.custom: "conceptual"
 ms.date: "04/22/2019"
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
@@ -7,7 +8,7 @@ ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
 ---
 # Walkthrough: Create and use your own Dynamic Link Library (C++)
 
-This step-by-step walkthrough shows how to use the Visual Studio IDE to create your own dynamic link library (DLL) written in C++, and then use it from another C++ app. DLLs are one of the most useful kinds of Windows components. You can use them as a way to share code and resources, to shrink the size of your apps, and to make it easier to service and extend your apps. In this walkthrough, you create a DLL that implements some math functions, and then create a console app that uses the functions from the DLL. Along the way, you get an introduction to some of the programming techniques and conventions used in Windows DLLs.
+This step-by-step walkthrough shows how to use the Visual Studio IDE to create your own dynamic link library (DLL) written in C++, and then use it from another C++ app. DLLs (also known as shared libraries in UNIX-based operating systems) are one of the most useful kinds of Windows components. You can use them as a way to share code and resources, to shrink the size of your apps, and to make it easier to service and extend your apps. In this walkthrough, you create a DLL that implements some math functions, and then create a console app that uses the functions from the DLL. Along the way, you get an introduction to some of the programming techniques and conventions used in Windows DLLs.
 
 This walkthrough covers these tasks:
 
