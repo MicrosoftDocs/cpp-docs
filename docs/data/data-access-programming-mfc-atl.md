@@ -6,7 +6,7 @@ ms.assetid: def97b2c-b5a6-445f-afeb-308050fd4852
 ---
 # Data Access Programming (MFC/ATL)
 
-Over the years, Visual C++ has provided several ways to work with databases. In 2011 Microsoft announced that it is aligning on ODBC as the preferred technology for accessing SQL Server products from native code. ODBC is an industry standard, and by using it you gain maximum portability of your code over multiple platforms and data sources. Most SQL database products and many NoSQL products support ODBC. You can use ODBC directly by calling the low-level ODBC APIs, or you can use the MFC ODBC wrapper classes, or a third-party C++ wrapper library.
+Over the years, Visual C++ has provided several ways to work with databases. In 2011 Microsoft announced that it is aligning on Open Database Connectivity (ODBC) as the preferred technology for accessing SQL Server products from native code. ODBC is an industry standard, and by using it you gain maximum portability of your code over multiple platforms and data sources. Most SQL database products and many NoSQL products support ODBC. You can use ODBC directly by calling the low-level ODBC APIs, or you can use the MFC ODBC wrapper classes, or a third-party C++ wrapper library.
 
 OLE DB is a low-level, high-performance API based on the COM specification, and is only supported on Windows. Use OLE DB if your program is accessing [linked servers](/sql/relational-databases/linked-servers/linked-servers-database-engine). ATL provides OLE DB templates that make it easier to create custom OLE DB providers and consumers. The most recent provider for Microsoft SQL Server can be found in the documentation for the [OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server).
 
