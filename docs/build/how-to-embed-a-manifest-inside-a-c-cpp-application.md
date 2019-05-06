@@ -1,6 +1,6 @@
 ---
 title: "How to: Embed a Manifest Inside a C/C++ Application"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["manifests [C++]", "embedding manifests", "makefiles, updating to embed manifest"]
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
 ---
@@ -54,7 +54,7 @@ clean :
     del MyApp.obj MyApp.exe
 ```
 
-If this script is run unchanged with Visual C++, it successfully creates MyApp.exe. It also creates the external manifest file MyApp.exe.manifest, for use by the operating system to load dependent assemblies at runtime.
+If this script is run unchanged with Visual Studio, it successfully creates MyApp.exe. It also creates the external manifest file MyApp.exe.manifest, for use by the operating system to load dependent assemblies at runtime.
 
 The nmake script for MyLibrary.dll looks very similar:
 

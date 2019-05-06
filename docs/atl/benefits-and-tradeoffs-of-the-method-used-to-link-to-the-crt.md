@@ -1,6 +1,6 @@
 ---
 title: "Benefits and Tradeoffs of the Method Used to Link to the CRT"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["_ATL_MIN_CRT macro"]
 ms.assetid: 49b485f7-9487-49e4-b12a-0f710b620e2b
 ---

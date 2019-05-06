@@ -36,4 +36,4 @@ If Windows cannot load the DLL, the process can attempt to recover from the erro
 
 ## See also
 
-- [DLLs in Visual C++](dlls-in-visual-cpp.md)
+- [Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

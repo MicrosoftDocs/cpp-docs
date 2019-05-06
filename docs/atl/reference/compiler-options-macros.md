@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Macros"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["_ATL_ALL_WARNINGS", "_ATL_APARTMENT_THREADED", "_ATL_CSTRING_EXPLICIT_CONSTRUCTORS ", "_ATL_ENABLE_PTM_WARNING", "_ATL_FREE_THREADED", "_ATL_MULTI_THREADED", "_ATL_NO_AUTOMATIC_NAMESPACE", "_ATL_NO_COM_SUPPORT", "ATL_NO_VTABLE", "ATL_NOINLINE", "_ATL_SINGLE_THREADED"]
 helpviewer_keywords: ["compiler options, macros"]
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
@@ -95,7 +95,7 @@ Define this macro in order to force the use of ANSI C++ standard-compliant synta
 
 ### Remarks
 
-The ATL and MFC libraries have been changed to match the Visual C++ compiler's improved standard C++ compliance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.
+The ATL and MFC libraries have been changed to match the Microsoft C++ compiler's improved standard C++ compliance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.
 
 When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should be C++ standard compliant.
 

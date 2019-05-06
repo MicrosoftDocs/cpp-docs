@@ -77,4 +77,4 @@ You can view the files the wizard creates for your project in **Solution Explore
 
 ## See also
 
-[Visual C++ Project Types](../build/reference/visual-cpp-project-types.md)
+[C++ project types in Visual Studio](../build/reference/visual-cpp-project-types.md)
