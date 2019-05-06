@@ -259,7 +259,7 @@ BOOL m_bAutoDelete;
 
 The `m_bAutoDelete` data member is a public variable of type BOOL.
 
-The value of `m_bAutoDelete` does not affect how the underlying thread handle is closed. The thread handle is always closed when the `CWinThread` object is destroyed.
+The value of `m_bAutoDelete` doesn't affect how the underlying thread handle is closed, but it does affect the timing of closing the handle. The thread handle is always closed when the `CWinThread` object is destroyed.
 
 ##  <a name="m_hthread"></a>  CWinThread::m_hThread
 
@@ -271,7 +271,9 @@ HANDLE m_hThread;
 
 ### Remarks
 
-The `m_hThread` data member is a public variable of type HANDLE. It is only valid if underlying thread currently exists.
+The `m_hThread` data member is a public variable of type HANDLE. It's only valid if underlying kernel thread object currently exists, and the handle hasn't been closed yet.
+
+The CWinThread destructor calls CloseHandle on `m_hThread`. If [m_bAutoDelete](#m_bautodelete) is TRUE when the thread terminates, the CWinThread object is destroyed, which invalidates any pointers to the CWinThread object and its member variables. You may need the `m_hThread` member to check the thread exit value, or to wait for a signal. To keep the CWinThread object and its `m_hThread` member during thread execution and after it terminates, set `m_bAutoDelete` to FALSE before you allow thread execution to continue. Otherwise, the thread may terminate, destroy the CWinThread object, and close the handle before you try to use it. If you use this technique, you are responsible for deletion of the CWinThread object.
 
 ##  <a name="m_nthreadid"></a>  CWinThread::m_nThreadID
 
@@ -283,7 +285,8 @@ DWORD m_nThreadID;
 
 ### Remarks
 
-The `m_nThreadID` data member is a public variable of type DWORD. It is only valid if underlying thread currently exists.
+The `m_nThreadID` data member is a public variable of type DWORD. It's only valid if underlying kernel thread object currently exists.
+Also see remarks about [m_hThread](#m_hthread) lifetime.
 
 ### Example
 
