@@ -118,7 +118,7 @@ If you need to use a specific version of a library that is different from the ve
 
 ## Integrate with Visual Studio Code (Linux/MacOS)
 
-Run **vcpkg integrate install** to configure Visual Studio Code on Linux/MacOS with the location of the vcpkg enlistement and enable IntelliSense on source files.
+Run **vcpkg integrate install** to configure Visual Studio Code on Linux/MacOS with the location of the vcpkg enlistment and enable IntelliSense on source files.
 
 ## Target Linux from Windows via WSL
 
