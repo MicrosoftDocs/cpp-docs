@@ -1,11 +1,13 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "03/22/2019"
+ms.date: "05/07/2019"
 ms.technology: "cpp-language"
 author: "mikeblome"
 ms.author: "mblome"
 ---
-# C++ conformance improvements in Visual Studio 2019
+# C++ conformance improvements in Visual Studio 2019 RTW and version [16.1](#improvements_161)
+
+## Improvements in Visual Studio 2019 RTW
 
 Visual Studio 2019 RTW contains the following conformance improvements, bug fixes and behavior changes in the Microsoft C++ compiler (MSVC).
 
@@ -324,6 +326,136 @@ int main()
     std::printf("%d\n", f());
 }
 ```
+
+## <a name="improvements_161"></a> Improvements in Visual Studio 2019 version 16.1
+
+### char8_t
+
+C++20 adds new character type that is used to represent UTF-8 code units. u8 string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case up until C++17 [P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). The C standard makes similar changes [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Suggestions for char8_t backward compatibility remediation are given in [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). The Microsoft C++ compiler adds support for char8_t in Visual Studio 2019 version 16.1 when you specify the **/Zc:char8_t** compiler option. In the future, it will be supported with [/std:c++latest](../../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **/Zc:char8_t-**.
+
+
+the EDG compiler which powers IntelliSense does not yet support it, so you will see spurious IntelliSense-only errors which do not impact the actual compilation.
+
+#### Example
+
+```cpp
+const char* s = u8"Hello"; //C++17
+const char8_t* s = u8"Hello"; // C++20
+```
+
+### std::type_identity metafunction and std::identity function object
+
+The deprecated std::identity class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md). 
+
+The following example shows the old usage with the std::identity class:
+
+```cpp
+    using T = std::identity<U>::type;
+    T x, y = std::identity<T>{}(x);
+    int x = 42;
+    long y = std::identity<long>{}(x);
+```
+
+@@@@@@TODO@@@@@@ This example shows the ...
+TBD: error C2143: syntax error: missing ';' before '<'
+
+```cpp
+using T = std::type_identity<U>::type;
+T x, y = std::identity{}(x);
+int x = 42;
+long y = static_cast<long>(x);
+```
+
+### Syntax checks for generic lambdas
+
+The new lambda preprocessor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or with or with **/experimental:newLambdaProcessor**. 
+
+Before:
+
+```cpp
+void f() {
+    auto a = [](auto arg) {
+        decltype(arg)::Type t;
+    };
+}
+```
+
+After:
+
+```cpp
+void f() {
+    auto a = [](auto arg) {
+        typename decltype(arg)::Type t;
+    };
+}
+```
+@@@TODO@@@
+error C2760: syntax error: unexpected token '<id-expr>', expected 'id-expression'
+
+### std::atomic conformance
+
+LWG 3012 requires the argument to std::atomic to be copy constructible, move constructible, copy assignable, and move assignable in addition to the previous trivially copyable requirement.
+
+```cpp
+struct S {
+  S() = default;
+  S(const S&) = delete;
+  S(S&&) = default;
+  S& operator=(const S&) = delete;
+  S& operator=(S&) = delete;
+};
+std::atomic<S> s;
+```
+
+After:
+
+```cpp
+struct S {
+  S() = default;
+  S(const S&) = default;
+  S(S&&) = default;
+  S& operator=(const S&) = default;
+  S& operator=(S&) = default;
+}; // or simply struct S {};
+std::atomic<S> s;
+```
+@@@TODO@@@ error C2338: atomic<T> requires T to be trivially copyable, copy constructible, move constructible, copy assignable, and move assignable.
+
+
+### Mac line endings in the editor
+
+'\r' (MacOS line ending) is now recognized in addition to '\r\n' (Windows line ending) and '\n' (Linux line ending). This change is to help compile files with mixed line ending.
+
+
+```cpp
+#include <assert.h>
+#include <string.h>
+
+auto s = "
+"; // this is not a valid string literal
+
+int main()
+{
+	assert(strcmp(s, "\r") == 0);
+}
+
+(assume '\r' follows 'auto s = "' in the file)
+
+```
+After:
+
+```cpp
+#include <assert.h>
+#include <string.h>
+
+auto s = "\r"; // this is what 's' used to have
+
+int main()
+{
+	assert(strcmp(s, "\r") == 0);
+}
+```
+@@@TODO@@@ error C2001: newline in constant
 
 ## See also
 
