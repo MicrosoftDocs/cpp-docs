@@ -2,7 +2,7 @@
 title: "_com_error::operator ="
 ms.date: "11/04/2016"
 f1_keywords: ["_com_error::operator="]
-helpviewer_keywords: ["operator= _com_error objects", "= operator [C++], with specific Visual C++ objects", "operator = _com_error objects"]
+helpviewer_keywords: ["_com_error [C++]"]
 ms.assetid: b9cc4094-d055-450c-b45a-0a95317488f8
 ---
 # _com_error::operator =

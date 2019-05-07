@@ -1,7 +1,7 @@
 ---
 title: "Event Handling in Native C++"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["event handling [C++], Visual C++"]
+ms.date: "05/07/2019"
+helpviewer_keywords: ["event handling [C++]"]
 ms.assetid: e4b9219a-15d8-42fb-83c8-6d2e4e087c8d
 ---
 # Event Handling in Native C++

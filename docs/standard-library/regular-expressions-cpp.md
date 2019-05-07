@@ -1,7 +1,7 @@
 ---
 title: "Regular Expressions (C++)"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["Visual C++, regular expressions", "regular expressions, Visual C++", "regular expressions"]
+helpviewer_keywords: ["regular expressions [C++]"]
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
 ---
 # Regular Expressions (C++)

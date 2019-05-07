@@ -84,7 +84,7 @@ Int MyNamespace::myFunction
 
 ### Template Disambiguation
 
-Visual Studio 2012 enforces the C++98/03/11 standard rules for disambiguation with the "template" keyword. In the following example, Visual C++ 2010 would accept both the nonconforming lines and the conforming lines.  Visual Studio 2012 accepts only the conforming lines.
+Visual Studio 2012 enforces the C++98/03/11 standard rules for disambiguation with the "template" keyword. In the following example, Visual Studio 2010 would accept both the nonconforming lines and the conforming lines.  Visual Studio 2012 accepts only the conforming lines.
 
 ```cpp
 #include <iostream>

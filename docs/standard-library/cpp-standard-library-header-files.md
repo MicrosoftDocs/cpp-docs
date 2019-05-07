@@ -1,7 +1,7 @@
 ---
 title: "C++ Standard Library Header Files"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["header files, C++ Standard Library", "wrappers", "headers, C++ Standard Library", "libraries, C++ header files", "C++ Standard Library, header files", "Visual C++, header files"]
+helpviewer_keywords: ["header files, C++ Standard Library", "C++ Standard Library, header files"]
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
 ---
 # C++ Standard Library Header Files
