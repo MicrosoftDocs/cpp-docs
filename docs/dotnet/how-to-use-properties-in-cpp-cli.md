@@ -251,7 +251,7 @@ int main() {
 
 ## Abstract and sealed properties
 
-Although the [abstract](../extensions/abstract-cpp-component-extensions.md) and [sealed](../extensions/sealed-cpp-component-extensions.md) keywords are specified as valid in the ECMA C++/CLI specification, for the Visual C++ compiler, you cannot specify them on trivial properties, nor on the property declaration of a non-trivial property.
+Although the [abstract](../extensions/abstract-cpp-component-extensions.md) and [sealed](../extensions/sealed-cpp-component-extensions.md) keywords are specified as valid in the ECMA C++/CLI specification, for the Microsoft C++ compiler, you cannot specify them on trivial properties, nor on the property declaration of a non-trivial property.
 
 To declare a sealed or abstract property, you must define a non-trivial property and then specify the `abstract` or `sealed` keyword on the get and set accessor functions.
 

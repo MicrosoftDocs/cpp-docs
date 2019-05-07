@@ -30,7 +30,7 @@ If used without braces, the `__asm` keyword means that the rest of the line is a
 
 Since the `__asm` keyword is a statement separator, you can put assembly instructions on the same line.
 
-Before Visual C++ 2005, the instruction
+Before Visual Studio 2005, the instruction
 
 ```cpp
 __asm int 3

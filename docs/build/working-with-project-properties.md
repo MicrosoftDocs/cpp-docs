@@ -13,7 +13,7 @@ In the IDE, all information that is needed to build a project is exposed as *pro
 
 When you create a project, the system assigns values for various properties. The defaults vary somewhat depending on the kind of project and what options you choose in the app wizard. For example, an ATL project has properties related to MIDL files, but these are absent in a basic console application. The default properties are shown in the General pane in the Property Pages:
 
-![Visual C&#43;&#43; Project Defaults](media/visual-c---project-defaults.png "Visual C++ Project Defaults")
+![Visual C&#43;&#43; Project Defaults](media/visual-c---project-defaults.png "Visual C++ project Defaults")
 
 ## Applying properties to build configurations and target platforms
 
@@ -38,7 +38,7 @@ For more information about setting properties for a Debug build, see:
 
 - [Project settings for a C++ debug configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
 - [Debugger Settings and Preparation](/visualstudio/debugger/debugger-settings-and-preparation)
-- [Debugging Preparation: Visual C++ Project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+- [Debugging Preparation: Visual C++ project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
 - [Specify symbol (.pdb) and source files in the Visual Studio debugger](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)
 
 ## C++ compiler and linker options
@@ -51,7 +51,7 @@ The **Property Pages** dialog box shows only the property pages that are relevan
 
 MSBuild supports the use of compile-time constants called "macros" for certain string values include directories and paths. These are exposed in the property pages, where you can refer to and modify them by using the [Property Editor](#property_editor). 
 
-The following illustration shows the property pages for a Visual C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](project-property-inheritance.md). 
+The following illustration shows the property pages for a Visual Studio C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](project-property-inheritance.md). 
 
 ![Project property pages](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 

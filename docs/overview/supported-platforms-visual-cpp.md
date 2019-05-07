@@ -32,7 +32,7 @@ Apps built by using Visual Studio can be targeted to various platforms, as follo
 
 \*\*\* You can install the **Linux development with C++** workload in the Visual Studio 2017 installer to target Linux platforms. For instructions, see [Download, Install and Setup the Linux Workload](../linux/download-install-and-setup-the-linux-development-workload.md). This toolset compiles your executable on the target machine, so you can build for any supported architecture.
 
-For information about how to set the target platform configuration, see [How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
+For information about how to set the target platform configuration, see [How to: Configure Visual Studio C++ projects to Target 64-Bit, x64 Platforms](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
 
 ## See also
 

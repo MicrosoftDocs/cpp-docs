@@ -13,7 +13,7 @@ Note that the assembly name provided is the strong name (see [Creating and Using
 The most common way to access reflection features is through the <xref:System.Object.GetType%2A> method. This method is provided by <xref:System.Object?displayProperty=nameWithType>, from which all garbage-collected classes derive.
 
 > [!NOTE]
-> Reflection on an .exe built with the Visual C++ compiler is only allowed if the .exe is built with the **/clr:pure** or **/clr:safe** compiler options. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unavailable in Visual Studio 2017. See [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information.
+> Reflection on an .exe built with the Microsoft C++ compiler is only allowed if the .exe is built with the **/clr:pure** or **/clr:safe** compiler options. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unavailable in Visual Studio 2017. See [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information.
 
 For more information, see <xref:System.Reflection>
 
@@ -160,7 +160,7 @@ If the code above is compiled into a DLL called vcpp_reflection_6.dll, you can t
 
 Once the reflection system successfully loads the assembly, an array of **Type** objects is retrieved with the <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> function. Each array element contains information about a different type, although in this case, only one class is defined. Using a loop, each **Type** in this array is queried about the type members using the **Type::GetMembers** function. This function returns an array of **MethodInfo** objects, each object containing information about the member function, data member, or property in the type.
 
-Note that the list of methods includes the functions explicitly defined in **TestClass** and the functions implicitly inherited from the **System::Object** class. As part of being described in .NET rather than in Visual C++ syntax, properties appear as the underlying data member accessed by the get/set functions. The get/set functions appear in this list as regular methods. Reflection is supported through the common language runtime, not by the Visual C++ compiler.
+Note that the list of methods includes the functions explicitly defined in **TestClass** and the functions implicitly inherited from the **System::Object** class. As part of being described in .NET rather than in Visual C++ syntax, properties appear as the underlying data member accessed by the get/set functions. The get/set functions appear in this list as regular methods. Reflection is supported through the common language runtime, not by the Microsoft C++ compiler.
 
 Although you used this code to inspect an assembly that you defined, you can also use this code to inspect .NET assemblies. For example, if you change TestAssembly to mscorlib, then you will see a listing of every type and method defined in mscorlib.dll.
 

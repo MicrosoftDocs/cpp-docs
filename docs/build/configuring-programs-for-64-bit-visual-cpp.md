@@ -10,7 +10,7 @@ This section contains topics about targeting 64-bit x64 hardware with the Visual
 
 ## In This Section
 
-- [How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+- [How to: Configure Visual Studio C++ projects to Target 64-Bit, x64 Platforms](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
 - [How to: Enable a 64-Bit Visual C++ Toolset on the Command Line](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 

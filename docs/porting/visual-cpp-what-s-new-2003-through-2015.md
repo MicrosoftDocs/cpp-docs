@@ -5,7 +5,7 @@ ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
 ---
 # Visual C++ What&#39;s New 2003 through 2015
 
-This page gathers all the "What's New" pages for all versions of Visual C++ from Visual Studio 2015 back to 2003. This information is provided as a convenience in case it might be useful when upgrading from earlier versions of Visual C++.
+This page gathers all the "What's New" pages for all versions of Visual C++ from Visual Studio 2015 back to 2003. This information is provided as a convenience in case it might be useful when upgrading from earlier versions of Visual Studio.
 
 > [!NOTE]
 > For information about the current version of Visual Studio, see [What's new for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio](../overview/cpp-conformance-improvements.md).
@@ -69,7 +69,7 @@ Although these differences can affect your source code or other build artifacts,
     };
    ```
 
-   Previous versions of the Visual C++ compiler accepted this, but now the compiler gives the following error:
+   Previous versions of the Microsoft C++ compiler accepted this, but now the compiler gives the following error:
 
    ```Output
     error C2071: 'S::r': illegal storage class
@@ -1510,7 +1510,7 @@ Although these differences can affect your source code or other build artifacts,
 
 #### Compiler
 
-The Microsoft Visual C++ compiler supports these ISO C++11 language features:
+The MSVC supports these ISO C++11 language features:
 
 - Default template arguments for function templates.
 - Delegating constructors
@@ -1690,7 +1690,7 @@ This improved support for ISO C/C++ standards may require changes to existing co
 ### New in Visual Studio 2012 Update 1
 
 Target Windows XP when you build your C++ code.
-You can use the Visual C++ compiler and libraries to target Windows XP and Windows Server 2003.
+You can use the MSVC and libraries to target Windows XP and Windows Server 2003.
 
 #### Parallel Programming Support
 
@@ -1781,7 +1781,7 @@ Code coverage has been updated to dynamically instrument binaries at runtime. Th
 
 **static_assert Declaration.** A **static_assert** declaration tests a software assertion at compile time, unlike other assertion mechanisms that test at run time. If the assertion fails, the compilation fails and a specified error message is issued.
 
-**nullptr and __nullptr Keywords.** The Visual C++ compiler lets you use the **nullptr** keyword with native code or with managed code. The **nullptr** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **nullptr** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
+**nullptr and __nullptr Keywords.** The MSVC lets you use the **nullptr** keyword with native code or with managed code. The **nullptr** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **nullptr** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
 The Microsoft-specific **__nullptr** keyword has the same meaning as **nullptr**, but it applies to native code only. If you compile native C/C++ code by using the `/clr` compiler option, the compiler cannot determine whether the **nullptr** keyword is a native or a managed term. To make your intention clear to the compiler, use the nullptr keyword to specify the managed term, and **__nullptr** to specify the native term.
 
 **/Zc:trigraphs Compiler Option.** By default, support for trigraphs is disabled. Use the `/Zc:trigraphs` compiler option to enable trigraphs support.
@@ -1795,9 +1795,9 @@ A trigraph consists of two consecutive question marks (??) followed by a unique 
 
 **XOP Intrinsics, FMA4 Intrinsics, and LWP Intrinsics.** New intrinsic functions have been added to support the XOP Intrinsics Added for Visual Studio 2010 SP1, FMA4 Intrinsics Added for Visual Studio 2010 SP1, and LWP Intrinsics Added for Visual Studio 2010 SP1 processor technologies. Use __cpuid, __cpuidex to determine which processor technologies are supported on a particular computer.
 
-### Visual C++ Projects and the Build System
+### Visual Studio C++ projects and the Build System
 
-**MSBuild.** Visual C++ solutions and projects are now built by using MSBuild.exe, which replaces VCBuild.exe. MSBuild is the same flexible, extensible, XML-based build tool that is used by the other Visual Studio languages and project types. Because of this change, Visual C++ project files now use an XML file format and have the .vcxproj file name extension. Visual C++ project files from earlier versions of Visual Studio are automatically converted to the new file format.
+**MSBuild.** Visual C++ solutions and projects are now built by using MSBuild.exe, which replaces VCBuild.exe. MSBuild is the same flexible, extensible, XML-based build tool that is used by the other Visual Studio languages and project types. Because of this change, Visual Studio C++ project files now use an XML file format and have the .vcxproj file name extension. Visual Studio C++ project files from earlier versions of Visual Studio are automatically converted to the new file format.
 
 **VC++ Directories.** The VC++ directories setting is now located in two places. Use project property pages to set per-project values for VC++ directories. Use the **Property Manager** and a property sheet to set global, per-configuration values for VC++ directories.
 
@@ -1928,7 +1928,7 @@ The addition of the YMMWORD data type supports the 256-bit multimedia operands t
 - Intrinsics support newer AMD and Intel processors. Several new intrinsic instructions support the greater functionality in more recent AMD and Intel processors. For more information about the new intrinsics, see **Supplemental Streaming SIMD Extensions 3 Instructions**, **Streaming SIMD Extensions 4 Instructions**, **SSE4A and Advanced Bit Manipulation Intrinsics**, **AES Intrinsics**, **_mm_clmulepi64_si128**, and **__rdtscp**.
 - The `__cpuid` function is updated. The `__cpuid`, `__cpuidex` functions now support several new features from the latest revisions of AMD and Intel processors. The `__cpuidex` intrinsic is new and gathers more information from recent processors.
 - The `/MP` compiler option reduces total build time. The `/MP` option can significantly reduce the total time to compile several source files by creating several processes that compile the files simultaneously. This option is especially useful on computers that support hyperthreading, multiple processors, or multiple cores.
-- The `/Wp64` compiler option and **__w64** keyword are deprecated. The `/Wp64` compiler option and **__w64** keyword, which detect 64-bit portability issues, are deprecated and will be removed in a future version of the compiler. Instead of this compiler option and keyword, use a Visual C++ compiler that targets a 64-bit platform.
+- The `/Wp64` compiler option and **__w64** keyword are deprecated. The `/Wp64` compiler option and **__w64** keyword, which detect 64-bit portability issues, are deprecated and will be removed in a future version of the compiler. Instead of this compiler option and keyword, use a MSVC that targets a 64-bit platform.
 - `/Qfast_transcendentals` generates inline code for transcendental functions.
 - `/Qimprecise_fwaits` removes the fwait commands internal to try blocks when you use the `/fp:except` compiler option.
 

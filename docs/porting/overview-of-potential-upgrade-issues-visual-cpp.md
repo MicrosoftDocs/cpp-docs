@@ -5,7 +5,7 @@ ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
 ---
 # Overview of potential upgrade issues (Visual C++)
 
-Over the years, the Microsoft Visual C++ compiler has undergone many changes, along with changes in the C++ language itself, the C++ Standard Library, the C runtime (CRT), and other libraries such as MFC and ATL. As a result, when upgrading an application from an earlier version of Visual Studio you might encounter compiler and linker errors and warnings in code that previously compiled cleanly. The older the original code base, the greater the potential for such errors. This overview summarizes the most common classes of issues you are likely to encounter, and provides links to more detailed information.
+Over the years, the Microsoft C++ compiler has undergone many changes, along with changes in the C++ language itself, the C++ Standard Library, the C runtime (CRT), and other libraries such as MFC and ATL. As a result, when upgrading an application from an earlier version of Visual Studio you might encounter compiler and linker errors and warnings in code that previously compiled cleanly. The older the original code base, the greater the potential for such errors. This overview summarizes the most common classes of issues you are likely to encounter, and provides links to more detailed information.
 
 > [!NOTE]
 > In the past, we have recommended that upgrades that span several versions of Visual Studio should be performed incrementally one version at a time. We no longer recommend this approach. We have found that it is almost always simpler to upgrade to the most current version of Visual Studio no matter how old the code base.
@@ -99,7 +99,7 @@ The same issue applies also if you use the `/ENTRY` option or the `/NOENTRY` opt
 
 ## Errors due to improved language conformance
 
-The Microsoft Visual C++ compiler has continuously improved its conformance to the C++ standard over the years. Code that compiled in earlier versions might fail to compile in Visual Studio 2017 because the compiler correctly flags an error that it previously ignored or explicitly allowed.
+The Microsoft C++ compiler has continuously improved its conformance to the C++ standard over the years. Code that compiled in earlier versions might fail to compile in Visual Studio 2017 because the compiler correctly flags an error that it previously ignored or explicitly allowed.
 
 For example, the `/Zc:forScope` switch was introduced early in the history of MSVC. It permits non-conforming behavior for loop variables. That switch is now deprecated and might be removed in future versions. It is highly recommended to not use that switch when upgrading your code. For more information, see [/Zc:forScope- is deprecated](porting-guide-spy-increment.md#deprecated_forscope).
 

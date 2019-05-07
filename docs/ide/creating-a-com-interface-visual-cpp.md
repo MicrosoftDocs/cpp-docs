@@ -62,7 +62,7 @@ In Class View and its shortcut menus, you can work with interfaces as follows:
 
 ## Edit a COM interface
 
-By using commands from the Class View shortcut menu, you can define new methods and properties for the COM interfaces in your Visual C++ projects. From the Toolbox, you can also define events for ActiveX controls.
+By using commands from the Class View shortcut menu, you can define new methods and properties for the COM interfaces in your Visual Studio C++ projects. From the Toolbox, you can also define events for ActiveX controls.
 
 For ATL- and MFC-based COM object classes, you can edit the class implementation at the same time that you edit the interface.
 
