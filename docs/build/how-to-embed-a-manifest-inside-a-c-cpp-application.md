@@ -1,12 +1,12 @@
 ---
 title: "How to: Embed a Manifest Inside a C/C++ Application"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["manifests [C++]", "embedding manifests", "makefiles, updating to embed manifest"]
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
 ---
 # How to: Embed a Manifest Inside a C/C++ Application
 
-It is recommended that a C/C++ application (or library) have its manifest embedded inside the final binary because this guarantees correct runtime behavior in most scenarios. By default, Visual Studio tries to embed the manifest when it builds a project from source files; see [Manifest Generation in Visual Studio](manifest-generation-in-visual-studio.md) for more information. However if an application is built by using nmake, some changes to the existing makefile are necessary. This section demonstrates how to change existing makefiles to automatically embed the manifest inside the final binary.
+We recommended that you embed the manifest of your application or library inside the final binary because this guarantees correct runtime behavior in most scenarios. By default, Visual Studio tries to embed the manifest when it builds a project. For more information, see [Manifest Generation in Visual Studio](manifest-generation-in-visual-studio.md). However, if you build your application by using nmake, you have to make some changes to the makefile. This section shows how to change the makefiles so that it automatically embeds the manifest inside the final binary.
 
 ## Two approaches
 
@@ -14,15 +14,19 @@ There are two ways to embed the manifest inside an application or library.
 
 - If you are not doing an incremental build you can directly embed the manifest using a command line similar to the following as a post-build step:
 
-   **mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1**
+   ```cmd
+   mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1
+   ```
 
    or
 
-   **mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**
+   ```cmd
+   mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2
+   ```
 
-   (1 for an EXE, 2 for a DLL.)
+   Use 1 for an EXE and 2 for a DLL.
 
-- If you are doing an incremental build, directly editing the resource as shown here will disable incremental building and cause a full rebuild; therefore a different approach should be taken:
+- If you are doing an incremental build, use the following steps:
 
    - Link the binary to generate the MyApp.exe.manifest file.
 
@@ -54,7 +58,7 @@ clean :
     del MyApp.obj MyApp.exe
 ```
 
-If this script is run unchanged with Visual C++, it successfully creates MyApp.exe. It also creates the external manifest file MyApp.exe.manifest, for use by the operating system to load dependent assemblies at runtime.
+If this script is run unchanged with Visual Studio, it successfully creates MyApp.exe. It also creates the external manifest file MyApp.exe.manifest, for use by the operating system to load dependent assemblies at runtime.
 
 The nmake script for MyLibrary.dll looks very similar:
 
@@ -217,7 +221,7 @@ _VC_MANIFEST_CLEAN=
 ####################################################
 ```
 
-Now create makefile.targ.inc and copy the following into it:
+Now create **makefile.targ.inc** and copy the following into it:
 
 ```
 # makefile.targ.inc - include this at the very bottom of the existing makefile

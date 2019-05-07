@@ -1,8 +1,8 @@
 ---
 title: "String and Character Literals  (C++)"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 f1_keywords: ["R"]
-helpviewer_keywords: ["L constant", "escape sequences", "Null strings, null-terminated strings", "literal strings, C++", "Null strings", "string literals, syntax", "string literals", "literal strings", "strings [C++], string literals", "NULL, character constant", "wide characters, strings"]
+helpviewer_keywords: ["literal strings [C++]", "string literals [C++]"]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
 ---
 # String and Character Literals  (C++)
@@ -310,7 +310,7 @@ Because string literals (not including std:string literals) are constants, tryin
 
 **Microsoft Specific**
 
-In Visual C++ you can use a string literal to initialize a pointer to non-const **char** or **wchar_t**. This is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:
+In Microsoft C++ you can use a string literal to initialize a pointer to non-const **char** or **wchar_t**. This is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:
 
 ```cpp
 wchar_t* str = L"hello";

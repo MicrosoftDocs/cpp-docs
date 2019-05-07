@@ -1,7 +1,6 @@
 ---
 title: "Walkthrough: Using MSBuild to Create a Visual C++ Project"
-ms.date: "09/24/2018"
-f1_keywords: ["msbuild.cpp.walkthrough.createproject"]
+ms.date: "05/06/2019"
 helpviewer_keywords: ["msbuild (c++), walkthrough: create a project"]
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
 ---

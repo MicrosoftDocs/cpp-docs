@@ -34,7 +34,7 @@ You can use one of the ATL code wizards to add an object or a control to your AT
 ## See also
 
 [ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)<br/>
+[C++ project types in Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)

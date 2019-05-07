@@ -96,7 +96,7 @@ Learn how to create DLLs that enable interoperability between native C++ and .NE
 [Linux Programming](../linux/index.md)<br/>
 Use the Visual Studio IDE to code and deploy to a remote Linux machine for compilation with GCC.
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)<br/>
+[Create C/C++ DLLs in Visual Studio](../build/dlls-in-visual-cpp.md)<br/>
 Find out how to use Win32, ATL, and MFC to create Windows desktop DLLs, and provides information about how to compile and register your DLL.
 
 [Parallel Programming](../parallel/parallel-programming-in-visual-cpp.md)<br/>

@@ -1,6 +1,6 @@
 ---
 title: "Using VERIFY Instead of ASSERT"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["assert"]
 helpviewer_keywords: ["ASSERT statements", "debugging [MFC], ASSERT statements", "VERIFY macro", "assertions, troubleshooting ASSERT statements", "debugging assertions", "assertions, debugging"]
 ms.assetid: 4c46397b-3fb1-49c1-a09b-41a72fae3797

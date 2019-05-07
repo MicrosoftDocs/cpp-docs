@@ -44,5 +44,5 @@ The following topics describe delay loading DLLs:
 
 ## See also
 
-[DLLs in Visual C++](../dlls-in-visual-cpp.md)<br/>
+[Create C/C++ DLLs in Visual Studio](../dlls-in-visual-cpp.md)<br/>
 [MSVC linker reference](linking.md)
