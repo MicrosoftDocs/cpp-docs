@@ -11,21 +11,21 @@ These macros control specific compiler features.
 
 |||
 |-|-|
-|[_ATL_ALL_WARNINGS](#_atl_all_warnings)|A symbol which enables errors in projects converted from previous versions of ATL.|
+|[_ATL_ALL_WARNINGS](#_atl_all_warnings)|A symbol that enables errors in projects converted from previous versions of ATL.|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Define if one or more of your objects use apartment threading.|
 |[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Makes certain `CString` constructors explicit, preventing any unintentional conversions.|
-|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro in order to use C++ standard compliant syntax, which generates the C4867 compiler error when a non standard syntax is used to initialize a pointer to a member function.|
+|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro in order to use C++ standard compliant syntax, which generates the C4867 compiler error when a non-standard syntax is used to initialize a pointer to a member function.|
 |[_ATL_FREE_THREADED](#_atl_free_threaded)|Define if one or more of your objects use free or neutral threading.|
 |[_ATL_MULTI_THREADED](#_atl_multi_threaded)|A symbol that indicates the project will have objects that are marked as Both, Free or Neutral. The macro [_ATL_FREE_THREADED](#_atl_free_threaded) should be used instead.|
-|[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|A symbol which prevents the default use of namespace as ATL.|
-|[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|A symbol which prevents COM-related code from being compiled with your project.|
+|[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|A symbol that prevents the default use of namespace as ATL.|
+|[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|A symbol that prevents COM-related code from being compiled with your project.|
 |[ATL_NO_VTABLE](#atl_no_vtable)|A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.|
 |[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function should not be inlined.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|
 
 ##  <a name="_atl_all_warnings"></a>  _ATL_ALL_WARNINGS
 
-A symbol which enables errors in projects converted from previous versions of ATL.
+A symbol that enables errors in projects converted from previous versions of ATL.
 
 ```
 #define _ATL_ALL_WARNINGS
@@ -45,7 +45,7 @@ Before Visual C++ .NET 2002, ATL disabled a lot of warnings and left them disabl
 
 - C4291 'declaration' : no matching operator delete found; memory will not be freed if initialization throws an exception
 
-- C4268 'identifier' : 'const' static/global data initialized with compiler generated default constructor fills the object with zeros
+- C4268 'identifier' : 'const' static/global data initialized with compiler-generated default constructor fills the object with zeros
 
 - C4702 unreachable code
 
@@ -135,7 +135,7 @@ If this symbol is defined, ATL will pull in code that will correctly synchronize
 
 ##  <a name="_atl_no_automatic_namespace"></a>  _ATL_NO_AUTOMATIC_NAMESPACE
 
-A symbol which prevents the default use of namespace as ATL.
+A symbol that prevents the default use of namespace as ATL.
 
 ```
 _ATL_NO_AUTOMATIC_NAMESPACE
@@ -147,7 +147,7 @@ If this symbol is not defined, including atlbase.h will perform **using namespac
 
 ##  <a name="_atl_no_com_support"></a>  _ATL_NO_COM_SUPPORT
 
-A symbol which prevents COM-related code from being compiled with your project.
+A symbol that prevents COM-related code from being compiled with your project.
 
 ```
 _ATL_NO_COM_SUPPORT
