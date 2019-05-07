@@ -109,7 +109,7 @@ The second override form takes the column name as an ANSI string and the third o
 
 If _SECURE_ATL is defined to have a nonzero value, a runtime assertion failure will be generated if the input *data* string is longer than the maximum allowable length of the referenced data column. Otherwise, the input string will be truncated if it is longer than the maximum allowable length.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

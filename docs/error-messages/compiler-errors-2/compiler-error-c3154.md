@@ -11,7 +11,7 @@ Expected ',' before ellipsis. Non-comma separated ellipsis not supported on para
 
 A variable argument function was not declared correctly.
 
-For more information, see [Variable Argument Lists (...) (C++/CLI)](../../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md).
+For more information, see [Variable Argument Lists (...) (C++/CLI)](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 ## Example
 

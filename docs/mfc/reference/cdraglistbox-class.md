@@ -196,7 +196,7 @@ Zero-based index of the drag list box item.
 
 ## See also
 
-[MFC Sample TSTCON](../../visual-cpp-samples.md)<br/>
+[MFC Sample TSTCON](../../overview/visual-cpp-samples.md)<br/>
 [CListBox Class](../../mfc/reference/clistbox-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CListBox Class](../../mfc/reference/clistbox-class.md)

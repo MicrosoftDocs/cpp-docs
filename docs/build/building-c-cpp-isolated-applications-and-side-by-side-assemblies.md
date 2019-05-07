@@ -10,7 +10,7 @@ Visual C++ supports a deployment model for Windows client applications based on 
 
 Building C/C++ programs as isolated applications presents a range of advantages. For example, an isolated application is unaffected when other C/C++ applications install or uninstall Visual C++ libraries. Visual C++ libraries used by isolated applications may still be redistributed in either the application's local folder, or by installation to the native assembly cache (WinSxS); however, servicing of Visual C++ libraries for already deployed applications can be simplified by using a [publisher configuration file](/windows/desktop/SbsCs/publisher-configuration). The isolated application deployment model makes it easier to ensure that C/C++ applications that are running on a specific computer use the most recent version of Visual C++ libraries, while still leaving open the possibility for system administrators and application authors to control explicit version binding of applications to their dependent DLLs.
 
-This section discusses how you can build your C/C++ application as an isolated application and ensure that it binds to Visual C++ libraries using a manifest. The information in this section primarily applies to native, or unmanaged, Visual C++ applications. For information about deploying native applications built with Visual C++, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).
+This section discusses how you can build your C/C++ application as an isolated application and ensure that it binds to Visual C++ libraries using a manifest. The information in this section primarily applies to native, or unmanaged, Visual C++ applications. For information about deploying native applications built with Visual C++, see [Redistributing Visual C++ Files](../windows/redistributing-visual-cpp-files.md).
 
 ## In This Section
 
@@ -32,4 +32,4 @@ This section discusses how you can build your C/C++ application as an isolated a
 
 [Isolated Applications and Side-by-side Assemblies](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal)
 
-[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
+[Deploying Desktop Applications](../windows/deploying-native-desktop-applications-visual-cpp.md)

@@ -39,5 +39,5 @@ For more information on using the `COleControlModule` class, see the [CWinApp](.
 
 ## See also
 
-[MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
+[MFC Sample TESTHELP](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

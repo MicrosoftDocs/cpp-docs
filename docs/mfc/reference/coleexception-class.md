@@ -97,6 +97,6 @@ For more information on SCODE, see [Structure of COM Error Codes](/windows/deskt
 
 ## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
+[MFC Sample CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

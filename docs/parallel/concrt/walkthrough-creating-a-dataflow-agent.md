@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Creating a Dataflow Agent"
-ms.date: "11/19/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["creating dataflow agents [Concurrency Runtime]", "dataflow agents, creating [Concurrency Runtime]"]
 ms.assetid: 9db5ce3f-c51b-4de1-b79b-9ac2a0cbd130
 ---

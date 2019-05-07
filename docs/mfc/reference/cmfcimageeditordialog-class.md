@@ -89,7 +89,7 @@ To modify an image, pass an image pointer to the `CMFCImageEditorDialog` constru
 
 ### Example
 
-The following example demonstrates how to construct an object of the `CMFCImageEditorDialog` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct an object of the `CMFCImageEditorDialog` class. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#8](../../mfc/reference/codesnippet/cpp/cmfcimageeditordialog-class_1.cpp)]
 [!code-cpp[NVC_MFC_NewControls#40](../../mfc/reference/codesnippet/cpp/cmfcimageeditordialog-class_2.cpp)]

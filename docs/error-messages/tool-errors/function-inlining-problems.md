@@ -12,7 +12,7 @@ If you are using function inlining, you must:
 
 - Have inlining turned ON in the header file.
 
-```
+```cpp
 // LNK2019_function_inline.cpp
 // compile with: /c
 // post-build command: lib LNK2019_function_inline.obj
@@ -27,7 +27,7 @@ void _load_config_used::Test() { printf("in Test\n"); }
 
 And then,
 
-```
+```cpp
 // LNK2019_function_inline_2.cpp
 // compile with: LNK2019_function_inline.lib
 struct _load_config_used {
@@ -48,7 +48,7 @@ Mixing inline and non-inline compile options on different modules can sometimes 
 
 Similarly, a project that uses function inlining yet defines the functions in a .cpp file rather than in the header file will also get LNK2019. The header file is included everywhere deemed appropriate, but the functions are only inlined when the .cpp file passes through the compiler; therefore, the linker sees the functions as unresolved externals when used in other modules.
 
-```
+```cpp
 // LNK2019_FIP.h
 struct testclass {
    void PublicStatMemFunc1(void);
@@ -57,7 +57,7 @@ struct testclass {
 
 and then,
 
-```
+```cpp
 // LNK2019_FIP.cpp
 // compile with: /c
 #include "LNK2019_FIP.h"
@@ -66,7 +66,7 @@ inline void testclass::PublicStatMemFunc1(void) {}
 
 and then,
 
-```
+```cpp
 // LNK2019_FIP_2.cpp
 // compile with: LNK2019_FIP.cpp
 // LNK2019 expected
@@ -79,6 +79,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Linker Tools Error LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)

@@ -40,7 +40,7 @@ The following topics are included:
 
 The three class types are structure, class, and union. They are declared using the [struct](../cpp/struct-cpp.md), [class](../cpp/class-cpp.md), and [union](../cpp/unions.md) keywords. The following table shows the differences among the three class types.
 
-For more information on unions, see [Unions](../cpp/unions.md). For information on managed classes and structs, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).
+For more information on unions, see [Unions](../cpp/unions.md). For information on classes and structs in C++/CLI and C++/CX, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ### Access Control and Constraints of Structures, Classes and Unions
 

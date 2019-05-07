@@ -14,7 +14,7 @@ A user-defined conversion can either be implicit or explicit.  A UDC should be i
 
 A native class's constructor can be used to convert a reference or value type to a native class.
 
-For more information about conversions, see [Boxing](../windows/boxing-cpp-component-extensions.md) and [Standard Conversions](../cpp/standard-conversions.md).
+For more information about conversions, see [Boxing](../extensions/boxing-cpp-component-extensions.md) and [Standard Conversions](../cpp/standard-conversions.md).
 
 ```
 // mcpp_User_Defined_Conversions.cpp
@@ -314,4 +314,4 @@ int main() {
 
 ## See also
 
-[Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)
+[Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)

@@ -476,7 +476,7 @@ void RestoreWaitCursor();
 
 ## See also
 
-[MFC Sample ACDUAL](../../visual-cpp-samples.md)<br/>
+[MFC Sample ACDUAL](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CCmdUI Class](../../mfc/reference/ccmdui-class.md)<br/>

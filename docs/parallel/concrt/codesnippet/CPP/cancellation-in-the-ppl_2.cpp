@@ -1,6 +1,7 @@
 // task-basic-cancellation.cpp
 // compile with: /EHsc
 #include <ppltasks.h>
+#include <concrt.h>
 #include <iostream>
 #include <sstream>
 
@@ -23,7 +24,7 @@ int wmain()
     wcout << L"Creating task..." << endl;
 
     // Create a task that performs work until it is canceled.
-    auto t = create_task([]
+    auto t = create_task([&]
     {
         bool moreToDo = true;
         while (moreToDo)

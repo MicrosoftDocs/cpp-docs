@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::BackInsertIterator Class"
-ms.date: "12/30/2016"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::BackInsertIterator::BackInsertIterator"]
 helpviewer_keywords: ["BackInsertIterator Class"]
@@ -133,7 +133,7 @@ A reference to the current BackInsertIterator.
 
 By design, the first syntax example pre-increments the current BackInsertIterator, and the second syntax post-increments the current BackInsertIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
-However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#dereference-operator).
+However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#operator-dereference).
 
 ## See also
 

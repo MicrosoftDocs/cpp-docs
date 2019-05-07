@@ -9,7 +9,7 @@ ms.assetid: feec1225-e6ad-4995-8d96-c22e864a77bd
 
 'type' : is not explicitly declared as abstract but has abstract functions
 
-A type that contains [abstract](../../windows/abstract-cpp-component-extensions.md) functions should itself be marked as abstract.
+A type that contains [abstract](../../extensions/abstract-cpp-component-extensions.md) functions should itself be marked as abstract.
 
 ## Example
 

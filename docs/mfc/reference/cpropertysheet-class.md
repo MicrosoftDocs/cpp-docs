@@ -776,9 +776,9 @@ Call `SetWizardMode` before calling [DoModal](#domodal). After you call `SetWiza
 
 ## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
-[MFC Sample PROPDLG](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample PROPDLG](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

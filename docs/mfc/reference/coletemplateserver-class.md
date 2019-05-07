@@ -155,7 +155,7 @@ For more information, see [Implementing the IDispatch Interface](/previous-versi
 
 ## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [COleObjectFactory Class](../../mfc/reference/coleobjectfactory-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)<br/>

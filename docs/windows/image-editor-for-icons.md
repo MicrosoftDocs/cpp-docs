@@ -173,7 +173,7 @@ For all **Image Editor** panes with a magnification factor of 4 or greater, you 
 
 None
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 

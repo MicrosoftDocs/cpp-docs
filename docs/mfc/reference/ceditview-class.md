@@ -450,7 +450,7 @@ Call `UnlockBuffer` after you have finished using the pointer returned by [LockB
 
 ## See also
 
-[MFC Sample SUPERPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample SUPERPAD](../../overview/visual-cpp-samples.md)<br/>
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CEdit Class](../../mfc/reference/cedit-class.md)<br/>

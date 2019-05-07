@@ -13,7 +13,7 @@ A desktop application is distinct from a Universal Windows Platform (UWP) app, w
 
 In Windows 10 you can package your existing desktop application or COM object as a UWP app and add UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, and package them together in a single package and use Windows APIs to communicate between them.
 
-In Visual Studio 2017 version 15.4 and later, you can create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply with respect to what registry calls or APIs your desktop application uses, but in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows-uwp/porting/desktop-to-uwp-root).
+In Visual Studio 2017 version 15.4 and later, you can create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply with respect to what registry calls or APIs your desktop application uses, but in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
 ### Terminology
 
@@ -48,6 +48,6 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 |[Hilo: Developing C++ Applications for Windows 7](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
 |[Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)|Describes key features of Windows desktop programming in C++.|
 
-## See Also
+## See also
 
-[Visual C++](../visual-cpp-in-visual-studio.md)
+[Visual C++](../overview/visual-cpp-in-visual-studio.md)

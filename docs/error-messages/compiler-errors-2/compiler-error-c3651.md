@@ -11,7 +11,7 @@ ms.assetid: a03e692e-c219-4654-9827-8415cfa5a22d
 
 An explicit override was specified, but the function being overridden was in a type that is not a base type.
 
-For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 The following sample generates C3651:
 

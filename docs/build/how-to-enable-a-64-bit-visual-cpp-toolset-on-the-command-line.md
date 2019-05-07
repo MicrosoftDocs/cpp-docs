@@ -9,7 +9,7 @@ ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
 Visual Studio includes C++ compilers, linkers, and other tools that you can use to create platform-specific versions of your apps that can run on 32-bit, 64-bit, or ARM-based Windows operating systems. Other optional Visual Studio workloads let you use C++ tools to target other platforms, such as iOS, Android, and Linux. The default build architecture uses 32-bit, x86-hosted tools to build 32-bit, x86-native Windows code. However, you probably have a 64-bit computer. You can take advantage of the processor and memory space available to 64-bit code by using the 64-bit, x64-hosted toolset when you build code for x86, x64, or ARM processors.
 
 > [!NOTE]
-> For information about the specific tools that are included with each Visual Studio edition, see [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).
+> For information about the specific tools that are included with each Visual Studio edition, see [Visual C++ Tools and Features in Visual Studio Editions](../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md).
 >
 > For information about how to use the Visual Studio IDE to create 64-bit applications, see [How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
 

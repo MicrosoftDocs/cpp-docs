@@ -24,4 +24,4 @@ The program encountered an unexpected error while performing a memory-management
 
 This error usually occurs if the program inadvertently alters the run-time heap data. However, it can also be caused by an internal error in the runtime or operating-system code.
 
-To fix this issue, check for heap corruption bugs in your code. For more information and examples, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). Next, check that you are using the latest redistributables for your app deployment. For information, see [Deployment in Visual C++](../../ide/deployment-in-visual-cpp.md).
+To fix this issue, check for heap corruption bugs in your code. For more information and examples, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). Next, check that you are using the latest redistributables for your app deployment. For information, see [Deployment in Visual C++](../../windows/deployment-in-visual-cpp.md).

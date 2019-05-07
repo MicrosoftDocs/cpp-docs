@@ -92,5 +92,5 @@ Returns TRUE on success, FALSE on failure.
 
 ## See also
 
-[HTMLEdit Sample](../../visual-cpp-samples.md)<br/>
+[HTMLEdit Sample](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

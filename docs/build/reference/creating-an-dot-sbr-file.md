@@ -6,6 +6,9 @@ ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
 ---
 # Creating an .Sbr File
 
+> [!WARNING]
+> Although BSCMAKE is still installed with Visual Studio, it is no longer used by the IDE. Since Visual Studio 2008, browse and symbol information is stored automatically in a SQL Server .sdf file in the solution folder.
+
 The input files for BSCMAKE are .sbr files. The compiler creates an .sbr file for each object file (.obj) it compiles. When you build or update your browse information file, all .sbr files for your project must be available on disk.
 
 To create an .sbr file with all possible information, specify [/FR](fr-fr-create-dot-sbr-file.md).

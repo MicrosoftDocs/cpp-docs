@@ -8,7 +8,7 @@ ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
 
 This article describes all the breaking changes from Visual Studio 2015 going back to Visual Studio 2003, and in this article the terms "new behavior" or "now" refer to Visual Studio 2015 and later. The terms "old behavior" and "before" refer to Visual Studio 2013 and earlier releases.
 
-For information about Visual Studio 2017, see [What's new for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio 2017](../cpp-conformance-improvements-2017.md).
+For information about the latest version of Visual Studio, see [What's new for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio](../overview/cpp-conformance-improvements.md).
 
 > [!NOTE]
 > There are no binary breaking changes between Visual Studio 2015 and Visual Studio 2017.
@@ -3517,4 +3517,4 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 ## See also
 
-[What's New for Visual C++ in Visual Studio](../what-s-new-for-visual-cpp-in-visual-studio.md)
+[What's New for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)

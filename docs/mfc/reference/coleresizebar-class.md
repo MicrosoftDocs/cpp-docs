@@ -93,7 +93,7 @@ Nonzero if the resize bar was created; otherwise 0.
 
 ## See also
 
-[MFC Sample SUPERPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample SUPERPAD](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)

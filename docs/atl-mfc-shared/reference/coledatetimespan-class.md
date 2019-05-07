@@ -1,6 +1,6 @@
 ---
 title: "COleDateTimeSpan Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::Format", "ATLCOMTIME/ATL::COleDateTimeSpan::GetDays", "ATLCOMTIME/ATL::COleDateTimeSpan::GetHours", "ATLCOMTIME/ATL::COleDateTimeSpan::GetMinutes", "ATLCOMTIME/ATL::COleDateTimeSpan::GetSeconds", "ATLCOMTIME/ATL::COleDateTimeSpan::GetStatus", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalDays", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalHours", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalMinutes", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalSeconds", "ATLCOMTIME/ATL::COleDateTimeSpan::SetDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::SetStatus", "ATLCOMTIME/ATL::COleDateTimeSpan::m_span", "ATLCOMTIME/ATL::COleDateTimeSpan::m_status"]
 helpviewer_keywords: ["timespan", "time span", "shared classes, COleDateTimeSpan", "Date data type, MFC encapsulation of", "COleDateTimeSpan class"]
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
@@ -717,7 +717,7 @@ For a brief description of these status values, see the following list:
 - `COleDateTimeSpan::null` Indicates that this `COleDateTimeSpan` object is null, that is, that no value has been supplied for this object. (This is "null" in the database sense of "having no value," as opposed to the C++ NULL.)
 
    > [!CAUTION]
-   > This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to **null** or **invalid**. Note that the assignment operator ( [operator =](#eq)) and [SetDateTimeSpan](#setdatetimespan) do set the status of the object based on the source value(s).
+   > This function is for advanced programming situations. This function does not alter the data in this object. It will most often be used to set the status to **null** or **invalid**. Note that the assignment operator ([operator =](#operator_eq)) and [SetDateTimeSpan](#setdatetimespan) do set the status of the object based on the source value(s).
 
 ### Example
 

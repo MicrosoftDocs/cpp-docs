@@ -331,7 +331,7 @@ If you set *bRightShadow* to FALSE, the shadow will be drawn underneath and to t
 
 ### Example
 
-The following example demonstrates how to use the `DrawShadow` method of the `CDrawingManager` class. This code snippet is part of the [Prop Sheet Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `DrawShadow` method of the `CDrawingManager` class. This code snippet is part of the [Prop Sheet Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_PropSheetDemo#1](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_1.cpp)]
 
@@ -415,7 +415,7 @@ void FillGradient(
 
 ### Example
 
-The following example demonstrates how to use the `FillGradient` method of the `CDrawingManager` class. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `FillGradient` method of the `CDrawingManager` class. This code snippet is part of the [MS Office 2007 Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#12](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_2.cpp)]
 
@@ -451,7 +451,7 @@ Use *nAngle* to specify the direction of the color gradient. When you specify th
 
 ### Example
 
-The following example demonstrates how to use the `FillGradient2` method of the `CDrawingManager` class. This code snippet is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `FillGradient2` method of the `CDrawingManager` class. This code snippet is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#37](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_3.cpp)]
 

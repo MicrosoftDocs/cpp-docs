@@ -466,7 +466,7 @@ Call this function after calling `DoModal` to determine whether to print only th
 
 ## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC Sample DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPrintInfo Structure](../../mfc/reference/cprintinfo-structure.md)

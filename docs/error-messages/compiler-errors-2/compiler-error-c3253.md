@@ -9,7 +9,7 @@ ms.assetid: da40be26-0f78-4730-8727-ad11cddf8869
 
 'function' : error with explicit override
 
-An explicit override was specified incorrectly. For example, you cannot specify an implementation for an override that you also specify as pure. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+An explicit override was specified incorrectly. For example, you cannot specify an implementation for an override that you also specify as pure. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 The following sample generates C3253:
 

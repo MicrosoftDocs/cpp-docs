@@ -36,6 +36,6 @@ To do these things with the OLE DB Consumer Templates, use the `CManualAccessor`
 
 For an example of a manual accessor, see `CDBListView::CallProcedure` in the [DBVIEWER](https://github.com/Microsoft/VCSamples) sample.
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

@@ -3020,7 +3020,7 @@ CSize GetOutputTabbedTextExtent(
 Points to a character string to be measured. You can also pass a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
 *nCount*<br/>
-Specifies the number of characters in the string. If *nCount* is -1, the length is calculated.
+Specifies the [length of the string](/windows/desktop/gdi/specifying-length-of-text-output-string) pointed to by *lpszString*.
 
 *nTabPositions*<br/>
 Specifies the number of tab-stop positions in the array pointed to by *lpnTabStopPositions*.
@@ -3063,7 +3063,7 @@ CSize GetOutputTextExtent(const CString& str) const;
 Points to a string of characters. You can also pass a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
 *nCount*<br/>
-Specifies the number of characters in the string. If *nCount* is -1, the length is calculated.
+Specifies the [length of the string](/windows/desktop/gdi/specifying-length-of-text-output-string) pointed to by *lpszString*.
 
 *str*<br/>
 A `CString` object that contains the specified characters to be measured.
@@ -3265,7 +3265,7 @@ CSize GetTabbedTextExtent(
 Points to a character string. You can also pass a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
 *nCount*<br/>
-Specifies the number of characters in the string. If *nCount* is -1, the length is calculated.
+Specifies the [length of the string](/windows/desktop/gdi/specifying-length-of-text-output-string) pointed to by *lpszString*.
 
 *nTabPositions*<br/>
 Specifies the number of tab-stop positions in the array pointed to by *lpnTabStopPositions*.
@@ -3683,7 +3683,7 @@ Specifies the procedure-instance address of the application-supplied callback fu
 Specifies a far pointer to data to be passed to the output function. If *lpfnOutput* is NULL, *lpData* must be a long pointer to the string to be output.
 
 *nCount*<br/>
-Specifies the number of characters to be output. If this parameter is 0, `GrayString` calculates the length of the string (assuming that *lpData* is a pointer to the string). If *nCount* is -1 and the function pointed to by *lpfnOutput* returns 0, the image is shown but not dimmed.
+Specifies the number of characters to be output. If this parameter is 0, `GrayString` calculates the length of the string (assuming that *lpData* is a pointer to the string). If *nCount* is 1 and the function pointed to by *lpfnOutput* returns 0, the image is shown but not dimmed.
 
 *x*<br/>
 Specifies the logical x-coordinate of the starting position of the rectangle that encloses the string.
@@ -6487,7 +6487,7 @@ Specifies the logical y-coordinate of the starting point of the string.
 Points to the character string to draw. You can pass either a pointer to an array of characters or a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object for this parameter.
 
 *nCount*<br/>
-Specifies the number of characters in the string. If *nCount* is -1, the length is calculated.
+Specifies the [length of the string](/windows/desktop/gdi/specifying-length-of-text-output-string) pointed to by *lpszString*.
 
 *nTabPositions*<br/>
 Specifies the number of values in the array of tab-stop positions.

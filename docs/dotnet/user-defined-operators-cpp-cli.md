@@ -158,4 +158,4 @@ int main() {
 
 ## See also
 
-[Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)
+[Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)

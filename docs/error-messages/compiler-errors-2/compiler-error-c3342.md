@@ -13,7 +13,7 @@ The compiler found more than one definition of an attribute.
 
 An attribute was defined more than once.
 
-For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example
 

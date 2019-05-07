@@ -41,7 +41,7 @@ See the example for [defaultvalue](defaultvalue.md) for an example of how to use
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)<br/>

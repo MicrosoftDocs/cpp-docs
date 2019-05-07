@@ -87,7 +87,7 @@ To take advantage of extended docking features in MDI applications, derive the M
 
 ## Example
 
-The following example derives a class from `CMDIChildWndEx`. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).
+The following example derives a class from `CMDIChildWndEx`. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#3](../../mfc/codesnippet/cpp/cmdichildwndex-class_1.h)]
 
@@ -317,7 +317,7 @@ When the framework is restoring state later, the document name is read from the 
 
 ### Example
 
-The following example demonstrates the use of the `GetDocumentName` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).
+The following example demonstrates the use of the `GetDocumentName` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/cpp/cmdichildwndex-class_2.cpp)]
 
@@ -488,7 +488,7 @@ This function is used to prevent saving of read-only documents.
 
 ### Example
 
-The following example demonstrates overriding the `IsReadOnly` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).
+The following example demonstrates overriding the `IsReadOnly` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/cpp/cmdichildwndex-class_3.cpp)]
 

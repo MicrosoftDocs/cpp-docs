@@ -18,6 +18,9 @@ Creates .sbr files.
 
 ## Remarks
 
+> [!WARNING]
+> Although BSCMAKE is still installed with Visual Studio, it is no longer used by the IDE. Since Visual Studio 2008, browse and symbol information is stored automatically in a SQL Server .sdf file in the solution folder.
+
 During the build process, the Microsoft Browse Information File Maintenance Utility (BSCMAKE) uses these files to create a .BSC file, which is used to display browse information.
 
 **/FR** creates an .sbr file with complete symbolic information.

@@ -48,7 +48,7 @@ A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object can
 
 ## Example
 
-The following example demonstrates how to create an object of the `CMFCShellListCtrl` class and how to display the parent folder of the currently displayed folder. This code snippet is part of the [Explorer sample](../../visual-cpp-samples.md).
+The following example demonstrates how to create an object of the `CMFCShellListCtrl` class and how to display the parent folder of the currently displayed folder. This code snippet is part of the [Explorer sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_Explorer#1](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_Explorer#2](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_2.cpp)]

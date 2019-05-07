@@ -11,7 +11,7 @@ ms.assetid: b24bd8f8-e04f-4fbb-be57-4feb9165572e
 
 A global attribute was used incorrectly.
 
-For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example
 

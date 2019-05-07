@@ -48,7 +48,7 @@ In turn, you use the `HGLOBAL` handle, `m_hData`, to work with the data itself, 
 > [!CAUTION]
 >  CLongBinary objects cannot be used as parameters in function calls. In addition, their implementation, which calls `::SQLGetData`, necessarily slows scrolling performance for a scrollable snapshot. This might also be true when you use an `::SQLGetData` call yourself to retrieve dynamic schema columns.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>

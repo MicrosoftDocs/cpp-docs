@@ -212,7 +212,7 @@ To insert a special button, such as a combo box or drop-down toolbar, reserve a 
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCToolBar` class. The example shows how to set the text of the window label of the tool bar, set the borders, set the style of the pane, and enable the **Add or Remove Buttons** button that appears on the end of the toolbar. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCToolBar` class. The example shows how to set the text of the window label of the tool bar, set the borders, set the style of the pane, and enable the **Add or Remove Buttons** button that appears on the end of the toolbar. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#8](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_2.cpp)]
@@ -718,7 +718,7 @@ Call this method instead of [CMFCToolBar::Create](#create) when you want to prov
 
 ### Example
 
-The following example demonstrates how to use the `CreateEx` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `CreateEx` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]
@@ -1486,7 +1486,7 @@ The `CRect` object to which *lpRect* points is set to 0 if a button at the speci
 
 ### Example
 
-The following example demonstrates how to use the `GetItemRect` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `GetItemRect` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#9](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_4.cpp)]
@@ -2424,7 +2424,7 @@ The framework calls this method during initialization to load the images that ar
 
 ### Example
 
-The following example demonstrates how to use the `LoadToolBar` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `LoadToolBar` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#7](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_3.cpp)]
@@ -2766,7 +2766,7 @@ Call this method when you want to add toolbar buttons that cannot be loaded from
 
 ### Example
 
-The following example demonstrates how to use the `ReplaceButton` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `ReplaceButton` method in the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#6](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#10](../../mfc/reference/codesnippet/cpp/cmfctoolbar-class_5.cpp)]

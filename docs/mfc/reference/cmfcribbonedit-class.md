@@ -65,7 +65,7 @@ class CMFCRibbonEdit : public CMFCRibbonButton
 
 ## Example
 
-The following example demonstrates how to construct a `CMFCRibbonEdit` object, show spin buttons next to the edit control, and set the text of the edit control. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct a `CMFCRibbonEdit` object, show spin buttons next to the edit control, and set the text of the edit control. This code snippet is part of the [MS Office 2007 Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#7](../../mfc/reference/codesnippet/cpp/cmfcribbonedit-class_1.cpp)]
 

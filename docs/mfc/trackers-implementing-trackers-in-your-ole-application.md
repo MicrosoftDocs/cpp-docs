@@ -12,7 +12,7 @@ Trackers provide a graphical interface to enable users to interact with OLE clie
 
 - [Rubber-Banding and Trackers](../mfc/rubber-banding-and-trackers.md).
 
-The article also covers the use of styles with trackers. In addition, it makes several references to the MFC OLE sample [OCLIENT](../visual-cpp-samples.md).
+The article also covers the use of styles with trackers. In addition, it makes several references to the MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md).
 
 ## See also
 

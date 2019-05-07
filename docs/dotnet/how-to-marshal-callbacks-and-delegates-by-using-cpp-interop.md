@@ -15,7 +15,7 @@ The following code examples use the [managed, unmanaged](../preprocessor/managed
 
 The following example demonstrates how to configure an unmanaged API to trigger a managed delegate. A managed delegate is created and one of the interop methods, <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A>, is used to retrieve the underlying entry point for the delegate. This address is then passed to the unmanaged function, which calls it with no knowledge of the fact that it is implemented as a managed function.
 
-Notice that is it possible, but not necessary, to pin the delegate using [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md) to prevent it from being re-located or disposed of by the garbage collector. Protection from premature garbage collection is needed, but pinning provides more protection than is necessary, as it prevents collection but also prevents relocation.
+Notice that is it possible, but not necessary, to pin the delegate using [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) to prevent it from being re-located or disposed of by the garbage collector. Protection from premature garbage collection is needed, but pinning provides more protection than is necessary, as it prevents collection but also prevents relocation.
 
 If a delegate is re-located by a garbage collection, it will not affect the underlaying managed callback, so <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> is used to add a reference to the delegate, allowing relocation of the delegate, but preventing disposal. Using GCHandle instead of pin_ptr reduces fragmentation potential of the managed heap.
 

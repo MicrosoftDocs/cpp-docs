@@ -180,9 +180,9 @@ One of the standard HRESULT values.
 
 You must call this function before calling [AddParameterEntry](../../data/oledb/cmanualaccessor-addparameterentry.md).
 
-## See Also
+## See also
 
-[DBViewer](../../visual-cpp-samples.md)<br/>
+[DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor Class](../../data/oledb/caccessor-class.md)<br/>

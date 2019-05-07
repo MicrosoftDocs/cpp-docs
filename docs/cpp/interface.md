@@ -42,7 +42,7 @@ __interface IMyInterface {
 };
 ```
 
-For information on managed interfaces, see [interface class](../windows/interface-class-cpp-component-extensions.md).
+For information on managed interfaces, see [interface class](../extensions/interface-class-cpp-component-extensions.md).
 
 Notice that you do not have to explicitly indicate that the `CommitX` and `get_X` functions are pure virtual. An equivalent declaration for the first function would be:
 

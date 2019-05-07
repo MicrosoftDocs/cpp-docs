@@ -11,7 +11,7 @@ ms.assetid: b3dded0f-76c9-42c1-991b-532eb8619661
 
 Use <xref:System.AttributeUsageAttribute> to declare **/clr** attributes. Use `Windows::Foundation::Metadata::AttributeUsageAttribute` to declare Windows Runtime attributes.
 
-For more information about /CLR attributes, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md). For supported attributes in Windows Runtime, see [Windows.Foundation.Metadata namespace](/uwp/api/windows.foundation.metadata)
+For more information about /CLR attributes, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md). For supported attributes in Windows Runtime, see [Windows.Foundation.Metadata namespace](/uwp/api/windows.foundation.metadata)
 
 ## Example
 

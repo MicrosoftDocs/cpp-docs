@@ -1,6 +1,6 @@
 ---
 title: "&lt;map&gt; operators"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["map/std::operator!=", "map/std::operator&gt;", "map/std::operator&gt;=", "map/std::operator&lt;", "map/std::operator&lt;=", "map/std::operator=="]
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
 helpviewer_keywords: ["std::operator!= (map)", "std::operator&gt; (map)", "std::operator&gt;= (map)", "std::operator&lt; (map)", "std::operator&lt;= (map)", "std::operator== (map)"]
@@ -11,8 +11,8 @@ helpviewer_keywords: ["std::operator!= (map)", "std::operator&gt; (map)", "std::
 |-|-|-|
 |[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
 |[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-|[operator!= (multimap)](#op_neq_multimap)|[operator&gt;](#op_gt_multimap)|[operator&gt;=](#op_gt_eq_multimap)|
-|[operator&lt;](#op_lt_multimap)|[operator&lt;=](#op_lt_eq_multimap)|[operator==](#op_eq_eq_multimap)|
+|[operator!= (multimap)](#op_neq_multimap)|[operator&gt; (multimap)](#op_gt_multimap)|[operator&gt;= (multimap)](#op_gt_eq_multimap)|
+|[operator&lt; (multimap)](#op_lt_multimap)|[operator&lt;= (multimap)](#op_lt_eq_multimap)|[operator== (multimap)](#op_eq_eq_multimap)|
 
 ## <a name="op_neq"></a>  operator!=
 
@@ -532,7 +532,7 @@ The multimap m1 is not less than the multimap m3.
 */
 ```
 
-## <a name="eq_multimap"></a>  operator&lt;=
+## <a name="op_lt_eq_multimap"></a>  operator&lt;=
 
 Tests if the multimap object on the left side of the operator is less than or equal to the multimap object on the right side.
 

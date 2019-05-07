@@ -247,7 +247,7 @@ Removes every `ACE` (access-control entry) structure (if any) in the `CDacl` obj
 
 ## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
+[Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [CAcl Class](../../atl/reference/cacl-class.md)<br/>
 [ACLs](/windows/desktop/SecAuthZ/access-control-lists)<br/>
 [ACEs](/windows/desktop/SecAuthZ/access-control-entries)<br/>

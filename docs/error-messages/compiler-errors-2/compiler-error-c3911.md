@@ -11,7 +11,7 @@ ms.assetid: b786da59-0e99-479d-bc0d-551126e940f2
 
 An event's accessor method was not properly declared.
 
-For more information, see [event](../../windows/event-cpp-component-extensions.md).
+For more information, see [event](../../extensions/event-cpp-component-extensions.md).
 
 The following sample generates C3911:
 

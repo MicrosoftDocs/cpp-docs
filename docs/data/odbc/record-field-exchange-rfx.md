@@ -33,7 +33,7 @@ The following topics explain the details of using recordset objects:
 
 - [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>

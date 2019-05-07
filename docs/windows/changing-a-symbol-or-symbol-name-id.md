@@ -175,7 +175,7 @@ The environment will correctly interpret these calculated symbols as long as:
 
 Win32
 
-## See Also
+## See also
 
 [Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
 [How to: Create Symbols](../windows/creating-new-symbols.md)<br/>

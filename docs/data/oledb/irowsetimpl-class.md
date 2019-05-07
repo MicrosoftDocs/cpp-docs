@@ -351,7 +351,7 @@ MapClass m_rgRowHandles;
 
 Row handles are removed by calling `ReleaseRows`. See the [IRowsetImpl overview](../../data/oledb/irowsetimpl-class.md) for the definition of *MapClass*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

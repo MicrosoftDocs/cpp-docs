@@ -140,7 +140,7 @@ Ellipses denote that arguments may be required but that the number and types are
 
 Ellipses, if used, must be declared last in the argument list. For more information about passing a variable number of arguments, see the discussion of [va_arg, va_start, and va_list](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) in the *Run-Time Library Reference*.
 
-For information on default arguments in CLR programming, see [Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md).
+For information on default arguments in CLR programming, see [Variable Argument Lists (...) (C++/CLI)](../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 Default arguments enable you to specify the value an argument should assume if none is supplied in the function call. The following code fragment shows how default arguments work. For more information about restrictions on specifying default arguments, see [Default Arguments](../cpp/default-arguments.md).
 

@@ -1,1 +1,0 @@
-Team Edition for Testers

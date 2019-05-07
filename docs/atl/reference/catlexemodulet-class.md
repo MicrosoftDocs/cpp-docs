@@ -329,7 +329,7 @@ This method can be overridden. If overriding [CAtlExeModuleT::PreMessageLoop](#p
 
 ## See also
 
-[ATLDuck Sample](../../visual-cpp-samples.md)<br/>
+[ATLDuck Sample](../../overview/visual-cpp-samples.md)<br/>
 [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)<br/>
 [CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -11,7 +11,7 @@ ms.assetid: 53a96698-bde4-4447-95b5-b5108291f60c
 
 A function attempted to override a non-existent function.
 
-For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 ## Example
 
