@@ -1,6 +1,6 @@
 ---
 title: "Property Page XML rule files"
-ms.date: "04/27/2017"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["property page XML files"]
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
 ---
@@ -12,7 +12,7 @@ The only scenarios in which you need to understand the internal workings of thes
 
 First, let's open the property pages for a project (right click on the project node in **Solution Explorer** and choose Properties):
 
-![Visual C++ Project Properties](../media/cpp-property-page-2017.png)
+![Visual Studio C++ Project Properties](../media/cpp-property-page-2017.png)
 
 Each node under **Configuration Properties** is called a Rule. A Rule sometimes represents a single tool like the compiler, but in general the term refers to something that has properties, that executes and that may produce some output. Each rule is populated from an xml file in the VCTargets folder. For example, the C/C++ rule that is shown above is populated by `cl.xml'.
 

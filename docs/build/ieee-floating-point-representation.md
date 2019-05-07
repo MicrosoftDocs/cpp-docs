@@ -1,12 +1,12 @@
 ---
 title: "IEEE Floating-Point Representation"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["float keyword", "real*8 value", "floating-point numbers, IEEE representation", "double data type, floating-point representation", "IEEE floating point representation", "real*10 value", "long double", "real*4 value"]
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
 ---
 # IEEE Floating-Point Representation
 
-Microsoft Visual C++ is consistent with the IEEE numeric standards. The IEEE-754 standard describes floating-point formats, a way to represent real numbers in hardware. There are at least five internal formats for floating-point numbers that are representable in hardware targeted by the MSVC compiler, but the compiler only uses two of them. The *single-precision* (4-byte) and *double-precision* (8-byte) formats are used in Visual C++. Single-precision is declared using the keyword **float**. Double-precision is declared using the keyword **double**. The IEEE standard also specifies *half-precision* (2-byte) and *quadruple-precision* (16-byte) formats, as well as an *double-extended-precision* (10-byte) format, which some C and C++ compilers implement as the **long double** data type. In the MSVC compiler, the **long double** data type is treated as a distinct type, but the storage type maps to **double**. There is, however, intrinsic and assembly language support for computations using the other formats, including the double-extended-precision (10-byte) format, where supported by hardware.
+Microsoft C++ (MSVC) is consistent with the IEEE numeric standards. The IEEE-754 standard describes floating-point formats, a way to represent real numbers in hardware. There are at least five internal formats for floating-point numbers that are representable in hardware targeted by the MSVC compiler, but the compiler only uses two of them. The *single-precision* (4-byte) and *double-precision* (8-byte) formats are used in MSVC. Single-precision is declared using the keyword **float**. Double-precision is declared using the keyword **double**. The IEEE standard also specifies *half-precision* (2-byte) and *quadruple-precision* (16-byte) formats, as well as an *double-extended-precision* (10-byte) format, which some C and C++ compilers implement as the **long double** data type. In the MSVC compiler, the **long double** data type is treated as a distinct type, but the storage type maps to **double**. There is, however, intrinsic and assembly language support for computations using the other formats, including the double-extended-precision (10-byte) format, where supported by hardware.
 
 The values are stored as follows:
 

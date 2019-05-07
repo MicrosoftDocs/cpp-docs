@@ -1,6 +1,6 @@
 ---
 title: "Kinds of DLLs"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["MFC DLLs [C++], types", "DLLs [C++], types", "DLLs [C++], MFC"]
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
 ---
@@ -10,9 +10,9 @@ This topic provides information to help you determine the kind of DLL to build.
 
 ##  <a name="_core_the_different_kinds_of_dlls_available_with_visual_c.2b2b"></a> Different Kinds of DLLs Available
 
-Using Visual C++, you can build Win32 DLLs in C or C++ that do not use the Microsoft Foundation Class (MFC) library. You can create a non-MFC DLL project with the Win32 Application Wizard.
+Using Visual Studio, you can build Win32 DLLs in C or C++ that do not use the Microsoft Foundation Class (MFC) library. You can create a non-MFC DLL project with the Win32 Application Wizard.
 
-The MFC library itself is available, in either static link libraries or in a number of DLLs, with the MFC DLL Wizard. If your DLL is using MFC, Visual C++ supports three different DLL development scenarios:
+The MFC library itself is available, in either static link libraries or in a number of DLLs, with the MFC DLL Wizard. If your DLL is using MFC, Visual Studio supports three different DLL development scenarios:
 
 - Building a regular MFC DLL that statically links MFC
 
@@ -34,7 +34,7 @@ The MFC library itself is available, in either static link libraries or in a num
 
 ##  <a name="_core_which_kind_of_dll_to_use"></a> Deciding Which Kind of DLL to Use
 
-If your DLL does not use MFC, use Visual C++ to build a non-MFC Win32 DLL. Linking your DLL to MFC (either statically or dynamically) takes up significant disk space and memory. You should not link to MFC unless your DLL actually uses MFC.
+If your DLL does not use MFC, use Visual Studio to build a non-MFC Win32 DLL. Linking your DLL to MFC (either statically or dynamically) takes up significant disk space and memory. You should not link to MFC unless your DLL actually uses MFC.
 
 If your DLL will be using MFC, and will be used by either MFC or non-MFC applications, you must build either a regular MFC DLL that dynamically links to MFC or a regular MFC DLL that statically links to MFC. In most cases, you probably want to use a regular MFC DLL that dynamically links to MFC because the file size of the DLL will be much smaller and the savings in memory from using the shared version of MFC can be significant. If you statically link to MFC, the file size of your DLL will be larger and potentially take up extra memory because it loads its own private copy of the MFC library code.
 
@@ -45,8 +45,6 @@ One disadvantage to dynamically linking to MFC is that you must distribute the s
 If your DLL will only be used by MFC executables, you have a choice between building a regular MFC DLL or an MFC extension DLL. If your DLL implements reusable classes derived from the existing MFC classes or you need to pass MFC-derived objects between the application and the DLL, you must build an MFC extension DLL.
 
 If your DLL dynamically links to MFC, the MFC DLLs might be redistributed with your DLL. This architecture is particularly useful for sharing the class library between multiple executable files to save disk space and minimize memory usage.
-
-Prior to version 4.0, Visual C++ only supported two kinds of DLLs that used MFC: USRDLLs and AFXDLLs. Regular MFC DLLs statically linked to MFC have the same characteristics as the former USRDLL. MFC extension DLLs have the same characteristics as the former AFXDLLs.
 
 ### What do you want to know more about?
 
@@ -60,4 +58,4 @@ Prior to version 4.0, Visual C++ only supported two kinds of DLLs that used MFC:
 
 ## See also
 
-[DLLs in Visual C++](dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

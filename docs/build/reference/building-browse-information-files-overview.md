@@ -1,14 +1,18 @@
 ---
 title: "Building Browse Information Files: Overview"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: [".bsc files, about .bsc files", "bsc files, about bsc files", "browse information files (.bsc)", "browse information files (.bsc), creating"]
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
 ---
 # Building Browse Information Files: Overview
 
+
+> [!WARNING]
+> Although BSCMAKE is still installed with Visual Studio, it is no longer used by the IDE. Since Visual Studio 2008, browse and symbol information is stored automatically in a SQL Server .sdf file in the solution folder.
+
 To create browse information for symbol browsing, the compiler creates an .sbr file for each source file in your project, then BSCMAKE.EXE concatenates the .sbr files into one .bsc file.
 
-Generating .sbr and .bsc files takes time, so Visual C++ turns these functions off by default. If you want to browse current information, you must turn the browse options on and build your project again.
+Generating .sbr and .bsc files takes time, so Visual Studio turns these functions off by default. If you want to browse current information, you must turn the browse options on and build your project again.
 
 Use [/FR](fr-fr-create-dot-sbr-file.md) or [/Fr](fr-fr-create-dot-sbr-file.md) to tell the compiler to create .sbr files. To create .bsc files, you can call [BSCMAKE](bscmake-command-line.md) from the command line. Using BSCMAKE from the command line gives you more precise control over the manipulation of browse information files. See [BSCMAKE Reference](bscmake-reference.md) for more information.
 

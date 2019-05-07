@@ -26,7 +26,7 @@ This wizard page describes the current application settings for the MFC applicat
 
    - The project is created using the Visual Studio project style and enables visual style switching.
 
-   - The project uses MFC in a shared DLL. For more information, see [DLLs in Visual C++](../../build/dlls-in-visual-cpp.md).
+   - The project uses MFC in a shared DLL. For more information, see [Create C/C++ DLLs in Visual Studio](../../build/dlls-in-visual-cpp.md).
 
 - [Compound Document Support, MFC Application Wizard](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
 
