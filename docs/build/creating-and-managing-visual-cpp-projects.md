@@ -1,7 +1,6 @@
 ---
 title: "Visual Studio Projects - C++"
 ms.date: "12/12/2018"
-f1_keywords: ["vcprojects", "creatingmanagingVC"]
 helpviewer_keywords: ["ATL projects, creating", "Visual C++ projects, creating", "projects [C++], creating", "Visual C++ projects", "ATL projects"]
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
 ---

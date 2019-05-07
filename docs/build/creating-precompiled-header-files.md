@@ -1,7 +1,6 @@
 ---
 title: "Precompiled Header Files"
-ms.date: "12/10/2018"
-f1_keywords: ["pch"]
+ms.date: "05/06/2019"
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 ---
@@ -32,7 +31,7 @@ You can precompile both C and C++ programs. In C++ programming, it is common pra
 
 ## Two Choices for Precompiling Code
 
-With Visual C++, you can precompile any C or C++ code; you are not limited to precompiling only header files.
+You can precompile any C or C++ code; you are not limited to precompiling only header files.
 
 Precompiling requires planning, but it offers significantly faster compilations if you precompile source code other than simple header files.
 
@@ -122,7 +121,7 @@ This table lists compiler options that might trigger an inconsistency warning wh
 
 Previous sections present an overview of precompiled headers: /Yc and /Yu, the /Fp option, and the [hdrstop](../preprocessor/hdrstop.md) pragma. This section describes a method for using the manual precompiled-header options in a project; it ends with an example makefile and the code that it manages.
 
-For another approach to using the manual precompiled-header options in a project, study one of the makefiles located in the MFC\SRC directory that is created during the default setup of Visual C++. These makefiles take a similar approach to the one presented in this section but make greater use of Microsoft Program Maintenance Utility (NMAKE) macros, and offer greater control of the build process.
+For another approach to using the manual precompiled-header options in a project, study one of the makefiles located in the MFC\SRC directory that is created during the default setup of Visual Studio. These makefiles take a similar approach to the one presented in this section but make greater use of Microsoft Program Maintenance Utility (NMAKE) macros, and offer greater control of the build process.
 
 ## PCH Files in the Build Process
 

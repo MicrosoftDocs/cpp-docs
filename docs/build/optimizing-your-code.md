@@ -1,11 +1,11 @@
 ---
 title: "Optimizing Your Code"
-ms.date: "04/23/2019"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["performance, optimizing code", "optimization", "cl.exe compiler, performance", "optimization, C++ code", "code, optimizing", "performance, compiler"]
 ---
 # Optimizing your code
 
-By optimizing an executable, you can achieve a balance between fast execution speed and small code size. This topic discusses some of the mechanisms that Visual C++ provides to help you optimize code.
+By optimizing an executable, you can achieve a balance between fast execution speed and small code size. This topic discusses some of the mechanisms that Visual Studio provides to help you optimize code.
 
 ## Language features
 

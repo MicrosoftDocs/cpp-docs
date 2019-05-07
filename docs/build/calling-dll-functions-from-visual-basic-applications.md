@@ -59,4 +59,4 @@ For DLLs to be called by programs written in Visual Basic, the alias technique s
 
 ## See also
 
-[DLLs in Visual C++](dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

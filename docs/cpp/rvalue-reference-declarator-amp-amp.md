@@ -27,7 +27,7 @@ Rvalue references support the implementation of *move semantics*, which can sign
 
 To implement move semantics, you typically provide a *move constructor,* and optionally a move assignment operator (**operator=**), to your class. Copy and assignment operations whose sources are rvalues then automatically take advantage of move semantics. Unlike the default copy constructor, the compiler does not provide a default move constructor. For more information about how to write a move constructor and how to use it in your application, see [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).
 
-You can also overload ordinary functions and operators to take advantage of move semantics. Visual C++ 2010 introduces move semantics into the C++ Standard Library. For example, the `string` class implements operations that perform move semantics. Consider the following example that concatenates several strings and prints the result:
+You can also overload ordinary functions and operators to take advantage of move semantics. Visual Studio 2010 introduces move semantics into the C++ Standard Library. For example, the `string` class implements operations that perform move semantics. Consider the following example that concatenates several strings and prints the result:
 
 ```cpp
 // string_concatenation.cpp
@@ -43,15 +43,15 @@ int main()
 }
 ```
 
-Before Visual C++ 2010, each call to **operator+** allocates and returns a new temporary `string` object (an rvalue). **operator+** cannot append one string to the other because it does not know whether the source strings are lvalues or rvalues. If the source strings are both lvalues, they might be referenced elsewhere in the program and therefore must not be modified. By using rvalue references, **operator+** can be modified to take rvalues, which cannot be referenced elsewhere in the program. Therefore, **operator+** can now append one string to another. This can significantly reduce the number of dynamic memory allocations that the `string` class must perform. For more information about the `string` class, see [basic_string Class](../standard-library/basic-string-class.md).
+Before Visual Studio 2010, each call to **operator+** allocates and returns a new temporary `string` object (an rvalue). **operator+** cannot append one string to the other because it does not know whether the source strings are lvalues or rvalues. If the source strings are both lvalues, they might be referenced elsewhere in the program and therefore must not be modified. By using rvalue references, **operator+** can be modified to take rvalues, which cannot be referenced elsewhere in the program. Therefore, **operator+** can now append one string to another. This can significantly reduce the number of dynamic memory allocations that the `string` class must perform. For more information about the `string` class, see [basic_string Class](../standard-library/basic-string-class.md).
 
-Move semantics also helps when the compiler cannot use Return Value Optimization (RVO) or Named Return Value Optimization (NRVO). In these cases, the compiler calls the move constructor if the type defines it. For more information about Named Return Value Optimization, see [Named Return Value Optimization in Visual C++ 2005](https://msdn.microsoft.com/library/ms364057.aspx).
+Move semantics also helps when the compiler cannot use Return Value Optimization (RVO) or Named Return Value Optimization (NRVO). In these cases, the compiler calls the move constructor if the type defines it. For more information about Named Return Value Optimization, see [Named Return Value Optimization in Visual Studio 2005](https://msdn.microsoft.com/library/ms364057.aspx).
 
 To better understand move semantics, consider the example of inserting an element into a `vector` object. If the capacity of the `vector` object is exceeded, the `vector` object must reallocate memory for its elements and then copy each element to another memory location to make room for the inserted element. When an insertion operation copies an element, it creates a new element, calls the copy constructor to copy the data from the previous element to the new element, and then destroys the previous element. Move semantics enables you to move objects directly without having to perform expensive memory allocation and copy operations.
 
 To take advantage of move semantics in the `vector` example, you can write a move constructor to move data from one object to another.
 
-For more information about the introduction of move semantics into the C++ Standard Library in Visual C++ 2010, see [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).
+For more information about the introduction of move semantics into the C++ Standard Library in Visual Studio 2010, see [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).
 
 ## Perfect Forwarding
 

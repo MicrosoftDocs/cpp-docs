@@ -1,6 +1,6 @@
 ---
 title: "Examples of Lambda Expressions"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 helpviewer_keywords: ["lambda expressions [C++], examples"]
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
 ---
@@ -54,7 +54,7 @@ Although lambda expressions are most often declared in the body of a function, y
 
 ### Example 2
 
-The Visual C++ compiler binds a lambda expression to its captured variables when the expression is declared instead of when the expression is called. The following example shows a lambda expression that captures the local variable `i` by value and the local variable `j` by reference. Because the lambda expression captures `i` by value, the reassignment of `i` later in the program does not affect the result of the expression. However, because the lambda expression captures `j` by reference, the reassignment of `j` does affect the result of the expression.
+The Microsoft C++ compiler binds a lambda expression to its captured variables when the expression is declared instead of when the expression is called. The following example shows a lambda expression that captures the local variable `i` by value and the local variable `j` by reference. Because the lambda expression captures `i` by value, the reassignment of `i` later in the program does not affect the result of the expression. However, because the lambda expression captures `j` by reference, the reassignment of `j` does affect the result of the expression.
 
 ### Code
 
