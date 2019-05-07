@@ -1,7 +1,7 @@
 ---
 title: "Destructors (C++)"
 ms.date: "05/06/2019"
-helpviewer_keywords: ["objects [C++], destroying", "Visual C++, destructors", "destroying objects, destructors", "~ operator [C++], specifying destructors", "destructors, about destructors", "destructors, C++"]
+helpviewer_keywords: ["objects [C++], destroying", "destructors, C++"]
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
 ---
 # Destructors (C++)
