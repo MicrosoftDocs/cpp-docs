@@ -11,25 +11,25 @@ These versions of the compiler introduced new warnings:
 
 | Product | Compiler version number |
 |-|-|
-| Visual C++ 2002 | 13.00.9466 |
-| Visual C++ 2003 | 13.10.3077 |
-| Visual C++ 2005 | 14.00.50727.762 |
-| Visual C++ 2008 | 15.00.21022.08 |
-| Visual C++ 2010 | 16.00.40219.01 |
-| Visual C++ 2012 | 17.00.51106.1 |
-| Visual C++ 2013 | 18.00.21005.1 |
-| Visual C++ 2015 RTM | 19.00.23026.0 |
-| Visual C++ 2015 Update 1 | 19.00.23506.0 |
-| Visual C++ 2015 Update 2 | 19.00.23918.0 |
-| Visual C++ 2015 Update 3 | 19.00.24215.1 |
-| Visual C++ 2017 RTM | 19.10.25017.0 |
-| Visual C++ 2017 version 15.3 | 19.11.25506.0 |
-| Visual C++ 2017 version 15.5 | 19.12.25830.0 |
-| Visual C++ 2017 version 15.6 | 19.13.26128.0 |
-| Visual C++ 2017 version 15.7 | 19.14.26428.0 |
-| Visual C++ 2017 version 15.8 | 19.15.26726.0 |
-| Visual C++ 2017 version 15.9 | 19.16.26926.0 |
-| Visual C++ 2019 RTM | 19.20.27004.0 |
+| Visual Studio 2002 | 13.00.9466 |
+| Visual Studio 2003 | 13.10.3077 |
+| Visual Studio 2005 | 14.00.50727.762 |
+| Visual Studio 2008 | 15.00.21022.08 |
+| Visual Studio 2010 | 16.00.40219.01 |
+| Visual Studio 2012 | 17.00.51106.1 |
+| Visual Studio 2013 | 18.00.21005.1 |
+| Visual Studio 2015 RTM | 19.00.23026.0 |
+| Visual Studio 2015 Update 1 | 19.00.23506.0 |
+| Visual Studio 2015 Update 2 | 19.00.23918.0 |
+| Visual Studio 2015 Update 3 | 19.00.24215.1 |
+| Visual Studio 2017 RTM | 19.10.25017.0 |
+| Visual Studio 2017 version 15.3 | 19.11.25506.0 |
+| Visual Studio 2017 version 15.5 | 19.12.25830.0 |
+| Visual Studio 2017 version 15.6 | 19.13.26128.0 |
+| Visual Studio 2017 version 15.7 | 19.14.26428.0 |
+| Visual Studio 2017 version 15.8 | 19.15.26726.0 |
+| Visual Studio 2017 version 15.9 | 19.16.26926.0 |
+| Visual Studio 2019 RTM | 19.20.27004.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the `/Wv` option. The compiler reports all warnings that match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, `/Wv:17` reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use `/Wv:19.00.23506`. Use `/Wv:19.11` to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
@@ -37,7 +37,7 @@ The following sections list the warnings introduced by each version of Visual C+
 
 ::: moniker range=">= vs-2019"
 
-## Warnings introduced in Visual C++ 2019 RTW (compiler version 19.20.27004.0)
+## Warnings introduced in Visual Studio 2019 RTW (compiler version 19.20.27004.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.15`.
 
@@ -49,7 +49,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 ::: moniker range=">= vs-2017"
 
 
-## Warnings introduced in Visual C++ 2017 version 15.8 (compiler version 19.15.26726.0)
+## Warnings introduced in Visual Studio 2017 version 15.8 (compiler version 19.15.26726.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.14`.
 
@@ -75,7 +75,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C5106 | `macro redefined with different parameter names` |
 | C5107 | `missing terminating 'char' character` |
 
-## Warnings introduced in Visual C++ 2017 version 15.7 (compiler version 19.14.26428.0)
+## Warnings introduced in Visual Studio 2017 version 15.7 (compiler version 19.14.26428.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.13`.
 
@@ -84,7 +84,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4642 | `'issue': could not import the constraints for generic parameter 'parameter'` |
 | C5045 | `Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified` |
 
-## Warnings introduced in Visual C++ 2017 version 15.6 (compiler version 19.13.26128.0)
+## Warnings introduced in Visual Studio 2017 version 15.6 (compiler version 19.13.26128.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.12`.
 
@@ -92,7 +92,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 |-|-|
 | C5044 | `An argument to command-line option option points to a path 'path' that does not exist` |
 
-## Warnings introduced in Visual C++ 2017 version 15.5 (compiler version 19.12.25830.0)
+## Warnings introduced in Visual Studio 2017 version 15.5 (compiler version 19.12.25830.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.11`.
 
@@ -106,7 +106,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C5042 | `'declaration': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier` |
 | C5043 | `'specification': exception specification does not match previous declaration` |
 
-## Warnings introduced in Visual C++ 2017 version 15.3 (compiler version 19.11.25506.0)
+## Warnings introduced in Visual Studio 2017 version 15.3 (compiler version 19.11.25506.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.10`.
 
@@ -127,7 +127,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C5037 | `'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments` |
 | C5038 | `data member 'member1' will be initialized after data member 'member2'` |
 
-## Warnings introduced in Visual C++ 2017 RTM (compiler version 19.10.25017.0)
+## Warnings introduced in Visual Studio 2017 RTM (compiler version 19.10.25017.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.00`.
 
@@ -140,7 +140,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 ::: moniker-end
 
-## Warnings introduced in Visual C++ 2015 Update 3 (compiler version 19.00.24215.1)
+## Warnings introduced in Visual Studio 2015 Update 3 (compiler version 19.00.24215.1)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.00.23918`.
 
@@ -151,7 +151,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4598 | `'#include <header>': header number number in the source does not match source at that position` |
 | C4599 | `'argument': source argument number number does not match source` |
 
-## Warnings introduced in Visual C++ 2015 Update 2 (compiler version 19.00.23918.0)
+## Warnings introduced in Visual Studio 2015 Update 2 (compiler version 19.00.23918.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.00.23506`.
 
@@ -162,7 +162,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4828 | `The file contains a character starting at offset 0xvalue that is illegal in the current source character set (codepage number).` |
 | C4868 | `compiler may not enforce left-to-right evaluation order in braced initializer list` |
 
-## Warnings introduced in Visual C++ 2015 Update 1 (compiler version 19.00.23506.0)
+## Warnings introduced in Visual Studio 2015 Update 1 (compiler version 19.00.23506.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:19.00.23026`.
 
@@ -173,7 +173,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C5031 | `#pragma warning(pop): likely mismatch, popping warning state pushed in different file` |
 | C5032 | `detected #pragma warning(push) with no corresponding #pragma warning(pop)` |
 
-## Warnings introduced in Visual C++ 2015 RTM (compiler version 19.00.23026.0)
+## Warnings introduced in Visual Studio 2015 RTM (compiler version 19.00.23026.0)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:18`.
 
@@ -232,7 +232,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C5029 | `nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only` |
 | C5030 | `attribute 'attribute' is not recognized` |
 
-## Warnings introduced in Visual C++ 2013 (compiler version 18.00.21005.1)
+## Warnings introduced in Visual Studio 2013 (compiler version 18.00.21005.1)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:17`.
 
@@ -261,7 +261,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4991 | `Warbird: function 'declaration' marked as __forceinline not inlined because protection level of inlinee is greater than the parent` |
 | C4992 | `Warbird: function 'declaration' marked as __forceinline not inlined because it contains inline assembly which cannot be protected` |
 
-## Warnings introduced in Visual C++ 2012 (compiler version 17.00.51106.1)
+## Warnings introduced in Visual Studio 2012 (compiler version 17.00.51106.1)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:16`.
 
@@ -304,7 +304,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4988 | `'type': variable declared outside class/function scope` |
 | C4989 | `'description': type has conflicting definitions.` |
 
-## Warnings introduced in Visual C++ 2010 (compiler version 16.00.40219.01)
+## Warnings introduced in Visual Studio 2010 (compiler version 16.00.40219.01)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:15`.
 
@@ -320,7 +320,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4986 | `'declaration': exception specification does not match previous declaration` |
 | C4987 | `nonstandard extension used: 'throw (...)'` |
 
-## Warnings introduced in Visual C++ 2008 (compiler version 15.00.21022.08)
+## Warnings introduced in Visual Studio 2008 (compiler version 15.00.21022.08)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:14`.
 
@@ -335,7 +335,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4910 | `'type': '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation` |
 | C4985 | `'declaration': attributes not present on previous declaration.` |
 
-## Warnings introduced in Visual C++ 2005 (compiler version 14.00.50727.762)
+## Warnings introduced in Visual Studio 2005 (compiler version 14.00.50727.762)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:13`.
 
@@ -478,7 +478,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4971 | `Argument order: <target object>, <target function> for delegate constructor is deprecated, use <target function>, <target object>` |
 | C4972 | `Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable` |
 
-## Warnings introduced in Visual C++ 2003 (compiler version 13.10.3077)
+## Warnings introduced in Visual Studio 2003 (compiler version 13.10.3077)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:13.00.9466`.
 
@@ -514,7 +514,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4953 | `Inlinee 'description' has been edited since profile data was collected, profile data not used` |
 | C4954 | `'description': not profiled (contains __int64 switch expression)` |
 
-## Warnings introduced in Visual C++ 2002 (compiler version 13.00.9466)
+## Warnings introduced in Visual Studio 2002 (compiler version 13.00.9466)
 
 These warnings and all warnings in later versions are suppressed by using the compiler option `/Wv:12`.
 

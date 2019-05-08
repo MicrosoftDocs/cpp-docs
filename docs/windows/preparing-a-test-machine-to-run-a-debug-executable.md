@@ -18,7 +18,7 @@ There are three ways to deploy debug versions of Visual C++ library DLLs togethe
 - Use local deployment to install a debug version of a particular Visual C++ DLL in the application’s installation directory by using files that are provided in the Program Files or Program Files (x86) directory in \Microsoft Visual Studio \<version>\VC\redist\Debug_NonRedist\\.
 
     > [!NOTE]
-    >  For remote debugging of your application built by using Visual C++ 2005 or Visual C++ 2008 on another computer, you have to deploy debug versions of Visual C++ library DLLs as shared side-by-side assemblies. You can use either a Setup project or Windows Installer to install corresponding merge modules.
+    >  For remote debugging of your application built by using Visual Studio 2005 or Visual Studio 2008 on another computer, you have to deploy debug versions of Visual C++ library DLLs as shared side-by-side assemblies. You can use either a Setup project or Windows Installer to install corresponding merge modules.
 
 - Use the_**Deploy** option in the **Configuration Manager** dialog box in Visual Studio to copy the project output and other files to the remote computer.
 

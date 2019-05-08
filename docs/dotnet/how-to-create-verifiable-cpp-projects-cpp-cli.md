@@ -1,7 +1,7 @@
 ---
 title: "How to: Create Verifiable C++ Projects (C++/CLI)"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["verifiable assemblies [C++], creating", "conversions, C++ projects", "Visual C++ projects"]
+helpviewer_keywords: ["verifiable assemblies [C++], creating", "conversions, C++ projects", "Visual Studio C++ projects"]
 ms.assetid: 4ef2cc1a-e3e5-4d67-8d8d-9c614f8ec5d3
 ---
 # How to: create verifiable C++ projects (C++/CLI)
@@ -11,7 +11,7 @@ Visual C++ application wizards do not create verifiable projects.
 > [!IMPORTANT]
 > Visual Studio 2015 deprecated and Visual Studio 2017 does not support the **/clr:pure** and **/clr:safe** creation of verifiable projects. If you require verifiable code, we recommend you translate your code to C#.
 
-However, if you are using an older version of the Visual C++ compiler toolset that supports **/clr:pure** and **/clr:safe**, projects can be converted to be verifiable. This topic describes how to set project properties and modify project source files to transform your Visual C++ projects to produce verifiable applications.
+However, if you are using an older version of the Microsoft C++ compiler toolset that supports **/clr:pure** and **/clr:safe**, projects can be converted to be verifiable. This topic describes how to set project properties and modify project source files to transform your Visual Studio C++ projects to produce verifiable applications.
 
 ## Compiler and linker settings
 

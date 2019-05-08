@@ -11,7 +11,7 @@ This article contains information about security tools and practices. Using them
 
 ## Visual C++ Security Features
 
-These security features are built into the Visual C++ compiler and linker:
+These security features are built into the Microsoft C++ compiler and linker:
 
 [/guard (Enable Control Flow Guard)](../build/reference/guard-enable-control-flow-guard.md)<br/>
 Causes the compiler to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime.
