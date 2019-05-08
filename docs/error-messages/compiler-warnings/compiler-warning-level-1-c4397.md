@@ -9,7 +9,7 @@ ms.assetid: 6346fdc2-dbbf-4fba-803a-32b0d0a707be
 
 DefaultCharSetAttribute is ignored
 
-<xref:System.Runtime.InteropServices.DefaultCharSetAttribute> is ignored by the Visual C++ compiler. To specify a character set for the DLL, use the CharSet option of DllImport. For more information, see [Using C++ Interop (Implicit PInvoke)](../../dotnet/using-cpp-interop-implicit-pinvoke.md).
+<xref:System.Runtime.InteropServices.DefaultCharSetAttribute> is ignored by the Microsoft C++ compiler. To specify a character set for the DLL, use the CharSet option of DllImport. For more information, see [Using C++ Interop (Implicit PInvoke)](../../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
 ## Example
 

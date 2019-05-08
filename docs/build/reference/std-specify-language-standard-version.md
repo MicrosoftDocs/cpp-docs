@@ -39,10 +39,10 @@ The **/std:c++latest** option enables the post-C++17 language and library featur
 
 The **/std** option in effect during a C++ compilation can be detected by use of the [\_MSVC\_LANG](../../preprocessor/predefined-macros.md) preprocessor macro. For more information, see [Preprocessor Macros](../../preprocessor/predefined-macros.md).
 
-The **/std:c++14** and **/std:c++latest** options are available beginning in Visual C++ 2015 Update 3. The **/std:c++17** option is available beginning in Visual C++ 2017 version 15.3. As noted above, some C++17 standard behavior is enabled by the **/std:c++14** option, but all other C++17 features are enabled by **/std:c++17**.
+The **/std:c++14** and **/std:c++latest** options are available beginning in Visual Studio 2015 Update 3. The **/std:c++17** option is available beginning in Visual Studio 2017 version 15.3. As noted above, some C++17 standard behavior is enabled by the **/std:c++14** option, but all other C++17 features are enabled by **/std:c++17**.
 
 > [!NOTE]
-> Depending on the MSVC compiler version or update level, certain C++14 or C++17 features may not be fully implemented or fully conformant when you specify the **/std:c++14** or **/std:c++17** options. For example, the Visual C++ 2017 RTM compiler does not fully support C++14-conformant `constexpr`, expression SFINAE, or 2-phase name lookup. For an overview of C++ language conformance in Visual C++ by release version, see [Visual C++ Language Conformance](../../overview/visual-cpp-language-conformance.md).
+> Depending on the MSVC compiler version or update level, certain C++14 or C++17 features may not be fully implemented or fully conformant when you specify the **/std:c++14** or **/std:c++17** options. For example, the Visual Studio 2017 RTM compiler does not fully support C++14-conformant `constexpr`, expression SFINAE, or 2-phase name lookup. For an overview of C++ language conformance in Visual C++ by release version, see [Visual C++ Language Conformance](../../overview/visual-cpp-language-conformance.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

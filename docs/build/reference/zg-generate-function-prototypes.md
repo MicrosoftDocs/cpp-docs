@@ -17,7 +17,7 @@ Removed. Creates a function prototype for each function defined in the source fi
 
 ## Remarks
 
-This compiler option is no longer available. It was removed in Visual C++ 2015. This page remains for users of older versions of Visual C++.
+This compiler option is no longer available. It was removed in Visual Studio 2015. This page remains for users of older versions of Visual Studio.
 
 The function prototype includes the function return type and an argument type list. The argument type list is created from the types of the formal parameters of the function. Any function prototypes already present in the source file are ignored.
 
