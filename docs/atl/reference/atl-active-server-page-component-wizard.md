@@ -1,11 +1,18 @@
 ---
 title: "ATL Active Server Page Component Wizard"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.codewiz.class.atl.asp.overview"]
-helpviewer_keywords: ["ASP components, creating in ATL", "ATL Active Server Page Component Wizard"]
+ms.date: "05/09/2019"
+helpviewer_keywords: ["ASP components, creating in ATL"]
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
 ---
 # ATL Active Server Page Component Wizard
+
+::: moniker range="vs-2019"
+
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 This wizard inserts into the project an Active Server Pages (ASP) component. The Microsoft Internet Information Services (IIS) uses ASP components as part of its enhanced Web page development architecture.
 
@@ -77,6 +84,8 @@ Provides information about the COM functionality for the object.
 - **ProgID**
 
    Sets the name that containers can use instead of the CLSID of the object.
+
+::: moniker-end
 
 ## See also
 
