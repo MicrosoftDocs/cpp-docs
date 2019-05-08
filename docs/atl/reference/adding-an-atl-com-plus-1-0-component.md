@@ -1,10 +1,18 @@
 ---
 title: "Adding an ATL COM+ 1.0 Component"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["ATL COM+ 1.0", "ATL projects, adding components", "components [C++], adding ATL COM+ 1.0", "objects [C++], supporting ATL COM+ 1.0"]
+ms.date: "05/09/2019"
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
 ---
 # Adding an ATL COM+ 1.0 Component
+
+
+::: moniker range="vs-2019"
+
+The ATL COM+ 1.0 Component wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 This wizard adds an object to your project that supports COM+ 1.0 services, including transactions.
 
@@ -15,6 +23,8 @@ This wizard adds an object to your project that supports COM+ 1.0 services, incl
 1. On the shortcut menu, click **Add**, and then click **Add Class**.
 
 1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the **Templates** pane, click **ATL COM+ 1.0 Component**, and then click **Open** to display the [ATL COM+ 1.0 Component Wizard](../../atl/reference/atl-com-plus-1-0-component-wizard.md).
+
+::: moniker-end
 
 ## See also
 
