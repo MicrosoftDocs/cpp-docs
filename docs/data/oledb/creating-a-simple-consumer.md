@@ -1,6 +1,6 @@
 ---
 title: "Creating a Simple Consumer"
-ms.date: "05/09/20198"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumers, creating"]
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
 ---
@@ -8,7 +8,7 @@ ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
 
 ::: moniker range="vs-2019"
 
-The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](../../data/oledbcreating-a-consumer-without-using-a-wizard.md).
+The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](oledbcreating-a-consumer-without-using-a-wizard.md).
 
 ::: moniker-end
 

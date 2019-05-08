@@ -19,7 +19,7 @@ Consumers can complete the following kinds of updates on rowset data: setting co
 ## Supporting Update Operations
 
 > [!NOTE]
-> The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](../../data/oledbcreating-a-consumer-without-using-a-wizard.md).
+> The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](oledbcreating-a-consumer-without-using-a-wizard.md).
 
 When you create a consumer with the **ATL OLE DB Consumer Wizard**, you can support the update operations by selecting one or more of the three check boxes **Change**, **Insert**, and **Delete**. If you select these options, the wizard modifies the code appropriately to support the type of changes you choose. However, if you don't use the wizard, you need to set the following rowset properties to `VARIANT_TRUE` to support updates:
 

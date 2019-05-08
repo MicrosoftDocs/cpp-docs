@@ -39,7 +39,7 @@ This page provides options that allow you to specify the level of database suppo
 - **Data Source**
 
    > [!NOTE]
-   > The ATL OLE DB Consumer wizard and MFC ODBC Consumer wizard are not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](../../data/oledbcreating-a-consumer-without-using-a-wizard.md).
+   > The ATL OLE DB Consumer wizard and MFC ODBC Consumer wizard are not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](../../data/oledb/creating-a-consumer-without-using-a-wizard.md).
 
    Click the **Data Source** button to set up a data source using the specified driver or provider and database. If you selected OLE DB in the **Client type** option, this button displays the **Data Link Properties** dialog box. If you selected ODBC in the **Client type** option, this button provides the **Select Data Source** dialog box. This option is available only if you choose to include a database view in your application.
 

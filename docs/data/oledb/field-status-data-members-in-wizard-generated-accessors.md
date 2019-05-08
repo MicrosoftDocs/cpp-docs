@@ -8,7 +8,7 @@ ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
 
 ::: moniker range="vs-2019"
 
-The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](../../data/oledbcreating-a-consumer-without-using-a-wizard.md).
+The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](oledbcreating-a-consumer-without-using-a-wizard.md).
 
 ::: moniker-end
 
