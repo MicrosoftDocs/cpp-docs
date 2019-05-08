@@ -13,4 +13,4 @@ The file name specified in the property *property* for the tool *tool* was inval
 
 You may have used an unknown or invalid macro.
 
-See [Setting Visual Studio C++ project Properties](../../build/working-with-project-properties.md) for information on how to access your project's properties.
+See [Setting Visual C++ Project Properties](../../build/working-with-project-properties.md) for information on how to access your project's properties.

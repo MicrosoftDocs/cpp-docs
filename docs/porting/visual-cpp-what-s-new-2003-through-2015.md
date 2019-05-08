@@ -1510,7 +1510,7 @@ Although these differences can affect your source code or other build artifacts,
 
 #### Compiler
 
-The MSVC supports these ISO C++11 language features:
+MSVC supports these ISO C++11 language features:
 
 - Default template arguments for function templates.
 - Delegating constructors
@@ -1690,7 +1690,7 @@ This improved support for ISO C/C++ standards may require changes to existing co
 ### New in Visual Studio 2012 Update 1
 
 Target Windows XP when you build your C++ code.
-You can use the MSVC and libraries to target Windows XP and Windows Server 2003.
+You can use the Microsoft C++ compiler and libraries to target Windows XP and Windows Server 2003.
 
 #### Parallel Programming Support
 
@@ -1781,7 +1781,7 @@ Code coverage has been updated to dynamically instrument binaries at runtime. Th
 
 **static_assert Declaration.** A **static_assert** declaration tests a software assertion at compile time, unlike other assertion mechanisms that test at run time. If the assertion fails, the compilation fails and a specified error message is issued.
 
-**nullptr and __nullptr Keywords.** The MSVC lets you use the **nullptr** keyword with native code or with managed code. The **nullptr** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **nullptr** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
+**nullptr and __nullptr Keywords.** MSVC lets you use the **nullptr** keyword with native code or with managed code. The **nullptr** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **nullptr** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
 The Microsoft-specific **__nullptr** keyword has the same meaning as **nullptr**, but it applies to native code only. If you compile native C/C++ code by using the `/clr` compiler option, the compiler cannot determine whether the **nullptr** keyword is a native or a managed term. To make your intention clear to the compiler, use the nullptr keyword to specify the managed term, and **__nullptr** to specify the native term.
 
 **/Zc:trigraphs Compiler Option.** By default, support for trigraphs is disabled. Use the `/Zc:trigraphs` compiler option to enable trigraphs support.

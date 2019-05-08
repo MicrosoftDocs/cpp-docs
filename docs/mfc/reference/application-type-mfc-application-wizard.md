@@ -93,4 +93,4 @@ Use this page of the [MFC Application Wizard](../../mfc/reference/mfc-applicatio
 ## See also
 
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
-[File Types Created for Visual Studio C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md)

@@ -23,4 +23,4 @@ See [Working with Resources](../../windows/working-with-resource-files.md) for m
 
 ## See also
 
-[File Types Created for Visual Studio C++ projects](file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ projects](file-types-created-for-visual-cpp-projects.md)

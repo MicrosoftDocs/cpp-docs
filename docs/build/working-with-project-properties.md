@@ -38,7 +38,7 @@ For more information about setting properties for a Debug build, see:
 
 - [Project settings for a C++ debug configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
 - [Debugger Settings and Preparation](/visualstudio/debugger/debugger-settings-and-preparation)
-- [Debugging Preparation: Visual C++ project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+- [Debugging Preparation: Visual C++ Project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
 - [Specify symbol (.pdb) and source files in the Visual Studio debugger](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)
 
 ## C++ compiler and linker options

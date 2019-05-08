@@ -15,7 +15,7 @@ The NEON vector instruction set extensions for ARM provide Single Instruction Mu
 
 NEON intrinsics are supported, as provided in the header file `arm_neon.h`. The MSVC support for NEON intrinsics resembles that of the ARM compiler, which is documented in Appendix G of the [ARM Compiler toolchain, Version 4.1 Compiler Reference](http://go.microsoft.com/fwlink/p/?LinkId=251083) on the ARM Infocenter website.
 
-The primary difference between the MSVC and the ARM compiler is that the MSVC adds `_ex` variants of the `vldX` and `vstX` vector load and store instructions. The `_ex` variants take an additional parameter that specifies the alignment of the pointer argument but are otherwise identical to their non-`_ex` counterparts.
+The primary difference between MSVC and the ARM compiler is that the MSVC adds `_ex` variants of the `vldX` and `vstX` vector load and store instructions. The `_ex` variants take an additional parameter that specifies the alignment of the pointer argument but are otherwise identical to their non-`_ex` counterparts.
 
 ##  <a name="A"></a> ARM-specific Intrinsics Listing
 
