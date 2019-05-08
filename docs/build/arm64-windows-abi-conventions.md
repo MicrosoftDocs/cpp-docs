@@ -59,8 +59,8 @@ Default layout alignment for globals and statics:
 | Size in bytes | Alignment in bytes |
 | - | - |
 | 1 | 1 |
-| 2 - 4 | 4 |
-| 5 - 63 | 8 |
+| 2 - 7 | 4 |
+| 8 - 63 | 8 |
 | >= 64 | 16 |
 
 ## Integer registers

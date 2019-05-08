@@ -1,6 +1,6 @@
 ---
 title: "&lt;chrono&gt;"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 f1_keywords: ["chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "<chrono>", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
 ---
@@ -8,7 +8,7 @@ ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
 
 Include the standard header \<chrono> to define classes and functions that represent and manipulate time durations and time instants.
 
-Beginning in Visual Studio 2015, the implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on QueryPerformanceCounter() and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in Visual C++ `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this is not necessarily the case for other implementations.
+Beginning in Visual Studio 2015, the implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on QueryPerformanceCounter() and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in the Microsoft C++ compiler `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this is not necessarily the case for other implementations.
 
 ## Syntax
 

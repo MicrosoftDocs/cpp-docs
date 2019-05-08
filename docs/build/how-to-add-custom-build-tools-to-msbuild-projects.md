@@ -1,7 +1,6 @@
 ---
 title: "How to: Add Custom Build Tools to MSBuild Projects"
 ms.date: "11/04/2016"
-f1_keywords: ["msbuild.cpp.howto.addcustombuildtools"]
 helpviewer_keywords: ["msbuild (c++), howto: add custom build tools"]
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909
 ---
@@ -42,6 +41,6 @@ Custom build steps and custom build tools share the information specified in the
 
 ## See also
 
-[Walkthrough: Using MSBuild to Create a Visual C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
+[Walkthrough: Using MSBuild to Create a C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
 [How to: Use Build Events in MSBuild Projects](how-to-use-build-events-in-msbuild-projects.md)<br/>
 [How to: Add a Custom Build Step to MSBuild Projects](how-to-add-a-custom-build-step-to-msbuild-projects.md)

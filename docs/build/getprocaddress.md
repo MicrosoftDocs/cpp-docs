@@ -59,4 +59,4 @@ You can only obtain the export ordinal if the DLL you are linking to is built wi
 
 ## See also
 
-[DLLs in Visual C++](dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

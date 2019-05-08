@@ -1,6 +1,6 @@
 ---
 title: "Creating an ATL Project"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["vc.appwiz.ATL.project"]
 helpviewer_keywords: ["ATL projects, creating", "ATL70.DLL", "_ATL_MIN_CRT macro", "distributing files with ATL components"]
 ms.assetid: 061d5f98-f669-440e-9380-42f017a0f9e8

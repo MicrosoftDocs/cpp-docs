@@ -1,7 +1,6 @@
 ---
 title: "MSBuild on the command line - C++"
 ms.date: "12/12/2018"
-f1_keywords: ["MSBuild"]
 helpviewer_keywords: ["MSBuild"]
 ms.assetid: 7a1be7ff-0312-4669-adf2-5f5bf507d560
 ---
@@ -50,7 +49,7 @@ Describes MSBuild tasks. Especially note these tasks, which are specific to Visu
 
 |Term|Definition|
 |----------|----------------|
-|[Walkthrough: Using MSBuild to Create a Visual C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Demonstrates how to create a Visual C++ project using **MSBuild**.|
+|[Walkthrough: Using MSBuild to Create a C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Demonstrates how to create a Visual Studio C++ project using **MSBuild**.|
 |[How to: Use Build Events in MSBuild Projects](how-to-use-build-events-in-msbuild-projects.md)|Demonstrates how to specify an action that occurs at a particuler stage in the build: before the build starts; before the link step starts; or after the build ends.|
 |[How to: Add a Custom Build Step to MSBuild Projects](how-to-add-a-custom-build-step-to-msbuild-projects.md)|Demonstrates how to add a user-defined stage to the build sequence.|
 |[How to: Add Custom Build Tools to MSBuild Projects](how-to-add-custom-build-tools-to-msbuild-projects.md)|Demonstrates how to associate a build tool with a particular file.|

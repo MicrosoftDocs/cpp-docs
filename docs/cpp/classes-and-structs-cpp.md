@@ -1,7 +1,7 @@
 ---
 title: "Classes and Structs (C++)"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["Visual C++, classes", "structures, C++ classes", "user-defined types", "classes [C++]", "user-defined types, C++ classes"]
+ms.date: "05/07/2019"
+helpviewer_keywords: ["C++, classes and structs"]
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
 ---
 # Classes and Structs (C++)

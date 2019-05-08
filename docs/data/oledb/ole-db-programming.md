@@ -1,12 +1,10 @@
 ---
 title: "OLE DB Programming"
-ms.date: "10/22/2018"
+ms.date: "05/02/2019"
 helpviewer_keywords: ["OLE DB [C++]", "data access [C++], OLE DB programming", "OLE DB [C++], about OLE DB"]
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
 ---
 # OLE DB Programming
-
-Microsoft OLE DB is a legacy technology; for new applications it's the required data access API for linked SQL Servers. All other new applications should use ODBC. The current OLE DB provider for SQL Server is SQLNCLI11.DLL. The provider is still shipping in SQL Server 2016. This documentation is intended for developers who are maintaining existing applications that already use OLE DB.
 
 The OLE DB templates are C++ templates that make the high-performance OLE DB database technology easier to use by providing classes that implement many commonly used OLE DB interfaces. This template library is divided into consumer templates and provider templates.
 

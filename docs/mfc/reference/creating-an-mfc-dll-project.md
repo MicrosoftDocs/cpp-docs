@@ -29,7 +29,7 @@ Once your project is created, you can view the files created in **Solution Explo
 
 ## See also
 
-[Visual C++ Project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)<br/>
+[C++ project types in Visual Studio](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Property Pages](../../build/reference/property-pages-visual-cpp.md)
 

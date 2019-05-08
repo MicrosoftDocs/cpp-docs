@@ -1,6 +1,6 @@
 ---
 title: "CL Environment Variables"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["cl"]
 helpviewer_keywords: ["INCLUDE environment variable", "cl.exe compiler, environment variables", "LIBPATH environment variable", "environment variables, CL compiler"]
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
@@ -11,7 +11,7 @@ The CL tool uses the following environment variables:
 
 - CL and \_CL\_, if defined. The CL tool prepends the options and arguments defined in the CL environment variable to the command line arguments, and appends the options and arguments defined in \_CL\_, before processing.
 
-- INCLUDE, which must point to the \include subdirectory of your Visual C++ installation.
+- INCLUDE, which must point to the \include subdirectory of your Visual Studio installation.
 
 - LIBPATH, which specifies directories to search for metadata files referenced with [#using](../../preprocessor/hash-using-directive-cpp.md). See `#using` for more information on LIBPATH.
 

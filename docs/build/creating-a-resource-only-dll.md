@@ -41,4 +41,4 @@ The application should call `FreeLibrary` when it is finished using the resource
 ## See also
 
 [Working with Resource Files](../windows/working-with-resource-files.md)<br/>
-[DLLs in Visual C++](dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

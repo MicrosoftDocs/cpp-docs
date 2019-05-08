@@ -1,13 +1,13 @@
 ---
 title: "C++ Language Reference"
 ms.custom: "index-page"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["language reference", "C++, language reference", "language reference, Visual C++", "Visual C++, language reference"]
+ms.date: "05/06/2019"
+helpviewer_keywords: ["C++, language reference"]
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
 ---
 # C++ Language Reference
 
-This reference explains the C++ programming language as implemented in Microsoft Visual C++. The organization is based on [*The Annotated C++ Reference Manual*](http://www.stroustrup.com/arm.html) by Margaret Ellis and Bjarne Stroustrup and on the ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft-specific implementations of C++ language features are included.
+This reference explains the C++ programming language as implemented in the Microsoft C++ compiler. The organization is based on [*The Annotated C++ Reference Manual*](http://www.stroustrup.com/arm.html) by Margaret Ellis and Bjarne Stroustrup and on the ANSI/ISO C++ International Standard (ISO/IEC FDIS 14882). Microsoft-specific implementations of C++ language features are included.
 
 For an overview of Modern C++ programming practices, see [Welcome Back to C++](welcome-back-to-cpp-modern-cpp.md).
 
@@ -80,7 +80,7 @@ A reference to Microsoft-specific classes and global functions used to support C
 Microsoft extensions to C++.
 
 [Nonstandard Behavior](../cpp/nonstandard-behavior.md)<br/>
-Information about nonstandard behavior of the Visual C++ compiler.
+Information about nonstandard behavior of the Microsoft C++ compiler.
 
 [Welcome Back to C++](welcome-back-to-cpp-modern-cpp.md)<br/>
 An overview of modern C++ programming practices for writing safe, correct and efficient programs.
@@ -88,7 +88,7 @@ An overview of modern C++ programming practices for writing safe, correct and ef
 ## Related Sections
 
 [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)<br/>
-Reference material on using Visual C++ to target .NET.
+Reference material on using the Microsoft C++ compiler to target .NET.
 
 [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md)<br/>
 Compiler options, linker options, and other build tools.
@@ -97,7 +97,7 @@ Compiler options, linker options, and other build tools.
 Reference material on pragmas, preprocessor directives, predefined macros, and the preprocessor.
 
 [Visual C++ Libraries](../standard-library/cpp-standard-library-reference.md)<br/>
-A list of links to the reference start pages for the various Visual C++ libraries.
+A list of links to the reference start pages for the various Microsoft C++ libraries.
 
 ## See also
 
