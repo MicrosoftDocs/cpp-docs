@@ -9,7 +9,7 @@ ms.assetid: dfd035f1-a7a2-40bc-bc92-dc4d7f456767
 
 unexpected end of file while looking for precompiled header. Did you forget to add '#include name' to your source?
 
-An include file specified with [/Yu](../../build/reference/yu-use-precompiled-header-file.md) is not listed in the source file.  This option is enabled by default in most Visual C++ Project types and "stdafx.h" is the default include file specified by this option.
+An include file specified with [/Yu](../../build/reference/yu-use-precompiled-header-file.md) is not listed in the source file.  This option is enabled by default in most Visual Studio C++ project types and "stdafx.h" is the default include file specified by this option.
 
 In the Visual Studio environment, use one of the following methods to resolve this error:
 

@@ -17,7 +17,7 @@ Parse `wchar_t` as a built-in type according to the C++ standard.
 
 If **/Zc:wchar_t** is on, `wchar_t` is a keyword for a built-in integral type in code compiled as C++. If **/Zc:wchar_t-** (with a minus sign) is specified, or in code compiled as C, `wchar_t` is not a built-in type. Instead, `wchar_t` is defined as a `typedef` for `unsigned short` in the canonical header stddef.h. (The Microsoft implementation defines it in another header that is included by stddef.h and other standard headers.)
 
-We do not recommend **/Zc:wchar_t-** because the C++ standard requires that `wchar_t` be a built-in type. Using the `typedef` version can cause portability problems. If you upgrade from earlier versions of Visual C++ and encounter compiler error [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) because the code is trying to implicitly convert a `wchar_t` to `unsigned short`, we recommend that you change the code to fix the error, instead of setting **/Zc:wchar_t-**.
+We do not recommend **/Zc:wchar_t-** because the C++ standard requires that `wchar_t` be a built-in type. Using the `typedef` version can cause portability problems. If you upgrade from earlier versions of Visual Studio and encounter compiler error [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) because the code is trying to implicitly convert a `wchar_t` to `unsigned short`, we recommend that you change the code to fix the error, instead of setting **/Zc:wchar_t-**.
 
 The **/Zc:wchar_t** option is on by default in C++ compilations, and is ignored in C compilations. The [/permissive-](permissive-standards-conformance.md) option does not affect **/Zc:wchar_t**.
 

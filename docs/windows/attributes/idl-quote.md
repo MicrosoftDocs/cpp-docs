@@ -18,7 +18,7 @@ Allows you to use IDL constructs that are not supported in the current version o
 ### Parameters
 
 *text*<br/>
-The attribute name that you intend the Visual C++ compiler to pass through to the generated .idl file without returning a compiler error.
+The attribute name that you intend the Microsoft C++ compiler to pass through to the generated .idl file without returning a compiler error.
 
 ## Remarks
 

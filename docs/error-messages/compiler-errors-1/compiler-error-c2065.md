@@ -214,7 +214,7 @@ int main() {
 
 ## Example: C++/CLI attribute parameters
 
-This error can also be generated as a result of compiler conformance work that was done for Visual C++ 2005: parameter checking for Visual C++ attributes.
+This error can also be generated as a result of compiler conformance work that was done for Visual Studio 2005: parameter checking for Visual C++ attributes.
 
 ```cpp
 // C2065_attributes.cpp

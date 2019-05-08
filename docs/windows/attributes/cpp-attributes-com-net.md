@@ -27,7 +27,7 @@ Attributes extend C++ in directions not currently possible without breaking the 
 
 - Replaces the large amount of IDL code required by a COM component with a few concise attributes.
 
-For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.
+For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Microsoft C++ compiler, which inserts the proper code into the object file.
 
 ```cpp
 [event_receiver(com)]
@@ -57,7 +57,7 @@ Like most C++ constructs, attributes have a set of characteristics that defines 
 
 ## Building an Attributed Program
 
-After you put Visual C++ attributes into your source code, you may want the Visual C++ compiler to produce a type library and .idl file for you. The following linker options help you build .tlb and .idl files:
+After you put Visual C++ attributes into your source code, you may want the Microsoft C++ compiler to produce a type library and .idl file for you. The following linker options help you build .tlb and .idl files:
 
 - [/IDLOUT](../../build/reference/idlout-name-midl-output-files.md)
 

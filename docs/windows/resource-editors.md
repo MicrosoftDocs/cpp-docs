@@ -16,15 +16,15 @@ The appropriate editor opens automatically when you create or open a resource.
 
 |Use the...|To edit...|
 |----------------|----------------|
-|[Accelerator Editor](../windows/accelerator-editor.md)|Accelerator tables in Visual C++ projects.|
+|[Accelerator Editor](../windows/accelerator-editor.md)|Accelerator tables in Visual Studio C++ projects.|
 |[Binary Editor](binary-editor.md)|Binary data information and custom resources in Visual C++, Visual Basic, or Visual C# projects.|
-|[Dialog Editor](../windows/dialog-editor.md)|Dialog boxes in Visual C++ projects.|
+|[Dialog Editor](../windows/dialog-editor.md)|Dialog boxes in Visual Studio C++ projects.|
 |[Image Editor](../windows/image-editor-for-icons.md)|Bitmaps, icons, cursors, and other image files in Visual C++, Visual Basic, or Visual C# projects.|
-|[Menu Editor](../windows/menu-editor.md)|Menu resources in Visual C++ projects.|
+|[Menu Editor](../windows/menu-editor.md)|Menu resources in Visual Studio C++ projects.|
 |[Ribbon Editor](../mfc/ribbon-designer-mfc.md)|Ribbon resources in MFC projects.|
-|[String Editor](../windows/string-editor.md)|String tables in Visual C++ projects.|
-|[Toolbar Editor](../windows/toolbar-editor.md)|Toolbar resources in Visual C++ projects. The **Toolbar Editor** is part of the **Image Editor**.|
-|[Version Information Editor](../windows/version-information-editor.md)|Version information in Visual C++ projects.|
+|[String Editor](../windows/string-editor.md)|String tables in Visual Studio C++ projects.|
+|[Toolbar Editor](../windows/toolbar-editor.md)|Toolbar resources in Visual Studio C++ projects. The **Toolbar Editor** is part of the **Image Editor**.|
+|[Version Information Editor](../windows/version-information-editor.md)|Version information in Visual Studio C++ projects.|
 
 > [!NOTE]
 > If your project doesn't already contain an .rc file, please see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).

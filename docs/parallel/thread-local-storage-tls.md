@@ -6,7 +6,7 @@ ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
 ---
 # Thread Local Storage (TLS)
 
-Thread Local Storage (TLS) is the method by which each thread in a given multithreaded process can allocate locations in which to store thread-specific data. Dynamically bound (run-time) thread-specific data is supported by way of the TLS API ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc).  Win32 and the Visual C++ compiler now support statically bound (load-time) per-thread data in addition to the existing API implementation.
+Thread Local Storage (TLS) is the method by which each thread in a given multithreaded process can allocate locations in which to store thread-specific data. Dynamically bound (run-time) thread-specific data is supported by way of the TLS API ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc).  Win32 and the Microsoft C++ compiler now support statically bound (load-time) per-thread data in addition to the existing API implementation.
 
 ##  <a name="_core_compiler_implementation_for_tls"></a> Compiler Implementation for TLS
 

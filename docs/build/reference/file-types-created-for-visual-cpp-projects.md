@@ -1,5 +1,5 @@
 ---
-title: "File Types Created for Visual C++ Projects"
+title: "File Types Created for Visual Studio C++ projects"
 ms.date: "04/08/2019"
 helpviewer_keywords: ["header files [C++], Visual Studio projects", "ActiveX controls [C++], Help files", "def files", "project items [C++], files", "Visual Studio C++ projects, files and directories", "resource files, created by wizard", "files [C++], extensions", "Help files, for ActiveX controls", "Web projects [C++], adding items", ".def files", "licensing ActiveX controls"]
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
