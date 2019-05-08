@@ -237,7 +237,7 @@ The default implementation does nothing. You must override this function to enab
 
 ## See also
 
-[MFC Sample CIRC](../../visual-cpp-samples.md)<br/>
+[MFC Sample CIRC](../../overview/visual-cpp-samples.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>

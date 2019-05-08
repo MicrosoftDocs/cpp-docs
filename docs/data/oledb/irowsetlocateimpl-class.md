@@ -199,7 +199,7 @@ An array of bookmarks.
 CAtlArray<DBROWCOUNT> m_rgBookmarks;
 ```
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

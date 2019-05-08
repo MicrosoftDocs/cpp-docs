@@ -1,7 +1,7 @@
 ---
 title: "Classes and Structs (C++)"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["Visual C++, classes", "structures, C++ classes", "user-defined types", "classes [C++]", "user-defined types, C++ classes"]
+ms.date: "05/07/2019"
+helpviewer_keywords: ["C++, classes and structs"]
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
 ---
 # Classes and Structs (C++)
@@ -40,7 +40,7 @@ The following topics are included:
 
 The three class types are structure, class, and union. They are declared using the [struct](../cpp/struct-cpp.md), [class](../cpp/class-cpp.md), and [union](../cpp/unions.md) keywords. The following table shows the differences among the three class types.
 
-For more information on unions, see [Unions](../cpp/unions.md). For information on managed classes and structs, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).
+For more information on unions, see [Unions](../cpp/unions.md). For information on classes and structs in C++/CLI and C++/CX, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ### Access Control and Constraints of Structures, Classes and Unions
 

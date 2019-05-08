@@ -72,7 +72,6 @@ public:
 #endif
 
 //MyArray.cpp
-#include "stdafx.h"
 #include <iostream>
 #include "MyArray.h"
 

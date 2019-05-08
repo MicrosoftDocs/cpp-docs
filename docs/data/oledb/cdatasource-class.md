@@ -39,7 +39,7 @@ class CDataSource
 
 One or more database sessions can be created for a single connection. These sessions are represented by `CSession`. You must call [CDataSource::Open](../../data/oledb/cdatasource-open.md) to open the connection before creating a session with `CSession::Open`.
 
-For an example of how to use `CDataSource`, see the [CatDB](../../visual-cpp-samples.md) sample.
+For an example of how to use `CDataSource`, see the [CatDB](../../overview/visual-cpp-samples.md) sample.
 
 ## <a name="close"></a> CDataSource::Close
 
@@ -353,7 +353,7 @@ A standard HRESULT.
 
 This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

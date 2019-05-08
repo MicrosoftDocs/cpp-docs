@@ -358,6 +358,6 @@ After constructing a `CFontDialog` object, you can use `m_cf` to modify various 
 
 ## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

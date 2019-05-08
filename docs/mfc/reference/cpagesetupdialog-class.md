@@ -373,6 +373,6 @@ Override this function to customize the drawing of the image. If you override th
 
 ## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

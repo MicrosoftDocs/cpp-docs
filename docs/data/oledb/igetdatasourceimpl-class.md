@@ -56,7 +56,7 @@ See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443(
 
 Useful if you need to access properties in the data source object.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

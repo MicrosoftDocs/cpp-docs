@@ -351,7 +351,7 @@ For more detailed remarks, see [CObList::SetAt](../../mfc/reference/coblist-clas
 
 ## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPtrList Class](../../mfc/reference/cptrlist-class.md)<br/>
 [CObList Class](../../mfc/reference/coblist-class.md)

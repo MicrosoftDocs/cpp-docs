@@ -11,7 +11,7 @@ ms.assetid: 0ede05dc-4486-4921-8e8c-78ab5a2e09c5
 
 Type forwarding does not work on nested types.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

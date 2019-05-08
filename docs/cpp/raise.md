@@ -17,7 +17,7 @@ __raise method-declarator;
 
 ## Remarks
 
-From managed code, an event can only be raised from within the class where it is defined. See [event](../windows/event-cpp-component-extensions.md) for more information.
+From managed code, an event can only be raised from within the class where it is defined. See [event](../extensions/event-cpp-component-extensions.md) for more information.
 
 The keyword **__raise** causes an error to be emitted if you call a non-event.
 
@@ -54,4 +54,4 @@ int main() {
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
 [Event Handling](../cpp/event-handling.md)<br/>
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)

@@ -263,9 +263,9 @@ Call this function to set the menu and accelerator resources used by the MDI chi
 
 ## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

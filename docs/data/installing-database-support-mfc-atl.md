@@ -9,6 +9,6 @@ ms.assetid: 3820ba96-4fb8-4405-83dd-bb3bc5998667
 Visual C++ does not include any database products. To
 
 
-## See Also
+## See also
 
 [Data Access](data-access-in-cpp.md)

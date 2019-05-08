@@ -1,13 +1,13 @@
 ---
 title: "Additional MSVC Build Tools"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["c.build"]
 helpviewer_keywords: ["builds [C++], C/C++ tools", "tools [C++], build"]
 ms.assetid: 48d9daf4-6bbf-473a-8ce2-bf2923b69f80
 ---
 # Additional MSVC Build Tools
 
-Visual C++ provides the following command-line utilities for viewing or manipulating build output:
+Visual Studio provides the following command-line utilities for viewing or manipulating build output:
 
 
 - [LIB.EXE](lib-reference.md) is used to create and manage a library of Common Object File Format (COFF) object files. It can also be used to create export files and import libraries to reference exported definitions.

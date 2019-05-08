@@ -39,8 +39,8 @@ You can specify project properties (for example, [whether to link statically to 
 
 ## See also
 
-[Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ Project Types](../../build/reference/visual-cpp-project-types.md)<br/>
+[Visual Studio Projects - C++](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++ project types in Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Tutorial](../../atl/active-template-library-atl-tutorial.md)

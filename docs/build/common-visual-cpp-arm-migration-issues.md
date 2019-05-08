@@ -1,11 +1,11 @@
 ---
 title: "Common Visual C++ ARM Migration Issues"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 ms.assetid: 0f4c434e-0679-4331-ba0a-cc15dd435a46
 ---
 # Common Visual C++ ARM Migration Issues
 
-When using Microsoft Visual C++ (MSVC), the same C++ source code might produce different results on the ARM architecture than it does on x86 or x64 architectures.
+When using the Microsoft C++ compiler (MSVC), the same C++ source code might produce different results on the ARM architecture than it does on x86 or x64 architectures.
 
 ## Sources of migration issues
 

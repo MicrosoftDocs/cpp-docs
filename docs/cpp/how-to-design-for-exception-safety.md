@@ -17,7 +17,7 @@ No matter how a function handles an exception, to help guarantee that it is "exc
 
 ### Keep Resource Classes Simple
 
-When you encapsulate manual resource management in classes, use a class that does nothing else to manage each resource; otherwise, you might introduce leaks. Use [smart pointers](../cpp/smart-pointers-modern-cpp.md) when possible, as shown in the following example. This example is intentionally artificial and simplistic to highlight the differences when `shared_ptr` is used.
+When you encapsulate manual resource management in classes, use a class that does nothing except manage a single resource. By keeping the class simple, you reduce the risk of introducing resource leaks. Use [smart pointers](../cpp/smart-pointers-modern-cpp.md) when possible, as shown in the following example. This example is intentionally artificial and simplistic to highlight the differences when `shared_ptr` is used.
 
 ```cpp
 // old-style new/delete version

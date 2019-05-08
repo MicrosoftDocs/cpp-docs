@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Building a Project (C++)"
-ms.date: "09/14/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["building projects [C++]", "projects [C++], building", "project building [C++]"]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
 ---

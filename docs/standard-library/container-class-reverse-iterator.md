@@ -7,7 +7,7 @@ ms.assetid: 1d190c41-56b1-462e-b564-793b2a883c26
 # Container Class::reverse_iterator
 
 > [!NOTE]
-> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+> This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 Describes an object that can serve as a reverse iterator for the controlled sequence.
 

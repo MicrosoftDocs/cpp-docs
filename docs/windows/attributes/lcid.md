@@ -47,7 +47,7 @@ __interface IStatic {
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Parameter Attributes](parameter-attributes.md)

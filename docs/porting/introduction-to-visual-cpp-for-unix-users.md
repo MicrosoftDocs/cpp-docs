@@ -44,7 +44,7 @@ When you create a project, you must name the project. By default, the project na
 
 The Microsoft Visual C++ compiler implements several extensions to the standard C++ programming language to support programming for Windows operating systems. These extensions are used to specify storage class attributes, function calling conventions, and based addressing, among other things. For a complete list of all supported C++ extensions, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
 
-You can disable all Microsoft-specific extensions to C++ by using the `/Za` compiler option. This option is recommended if you want to write code to run on multiple platforms. For more information on the `/Za` compiler option, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md). For more information on C++ compiler conformance, see [Visual C++ Language Conformance](../visual-cpp-language-conformance.md) and [Nonstandard Behavior](../cpp/nonstandard-behavior.md).
+You can disable all Microsoft-specific extensions to C++ by using the `/Za` compiler option. This option is recommended if you want to write code to run on multiple platforms. For more information on the `/Za` compiler option, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md). For more information on C++ compiler conformance, see [Visual C++ Language Conformance](../overview/visual-cpp-language-conformance.md) and [Nonstandard Behavior](../cpp/nonstandard-behavior.md).
 
 ## Precompiled Headers
 

@@ -1,6 +1,6 @@
 ---
 title: "CComSafeArrayBound Class"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["CComSafeArrayBound", "ATLSAFE/ATL::CComSafeArrayBound", "ATLSAFE/ATL::GetCount", "ATLSAFE/ATL::GetLowerBound", "ATLSAFE/ATL::GetUpperBound", "ATLSAFE/ATL::SetCount", "ATLSAFE/ATL::SetLowerBound"]
 helpviewer_keywords: ["CComSafeArrayBound class"]
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
@@ -62,7 +62,7 @@ The lower bound from which the array is numbered.
 
 ### Remarks
 
-If the array is to be accessed from a Visual C++ program, it is recommended that the lower bound be defined as 0. It may be preferable to use a different lower bound value if the array is to be used with other languages, such as Visual Basic.
+If the array is to be accessed from a C++ program, it is recommended that the lower bound be defined as 0. It may be preferable to use a different lower bound value if the array is to be used with other languages, such as Visual Basic.
 
 ##  <a name="getcount"></a>  CComSafeArrayBound::GetCount
 

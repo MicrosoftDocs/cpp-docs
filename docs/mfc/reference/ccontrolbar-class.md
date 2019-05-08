@@ -497,7 +497,7 @@ A pointer to a `CWnd` object.
 
 ## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CToolBar Class](../../mfc/reference/ctoolbar-class.md)<br/>

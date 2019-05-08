@@ -21,7 +21,7 @@ The following classes provide general support for ATL controls:
 
 ## Sample Program
 
-[ATLFire](../visual-cpp-samples.md)
+[ATLFire](../overview/visual-cpp-samples.md)
 
 ## Related Articles
 

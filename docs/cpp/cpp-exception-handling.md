@@ -1,7 +1,7 @@
 ---
 title: "C++ Exception Handling"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["C++ exception handling", "Visual C++, exception handling"]
+helpviewer_keywords: ["C++ exception handling"]
 ms.assetid: 65f80b44-9d0f-4d17-b910-07205a5c5c40
 ---
 # C++ Exception Handling

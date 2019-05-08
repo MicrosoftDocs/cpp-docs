@@ -15,4 +15,4 @@ Some functionality of the compiler may not work on a previous version of the run
 
 To resolve C1211 install the common language runtime that shipped with the compiler you are using.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).

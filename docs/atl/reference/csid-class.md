@@ -551,7 +551,7 @@ Call [CSid::LoadAccount](#loadaccount) to update the `CSid` object before callin
 
 ## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
+[Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)<br/>
 [Operators](../../atl/reference/atl-operators.md)

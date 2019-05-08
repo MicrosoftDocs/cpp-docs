@@ -27,7 +27,7 @@ The type of the *expression* parameter.
 
 ## Remarks
 
-The **decltype** type specifier is supported in Visual C++ 2010 or later versions, and can be used with native or managed code. `decltype(auto)` (C++14) is supported in Visual Studio 2015 and later.
+The **decltype** type specifier is supported in Visual Studio 2010 or later versions, and can be used with native or managed code. `decltype(auto)` (C++14) is supported in Visual Studio 2015 and later.
 
 The compiler uses the following rules to determine the type of the *expression* parameter.
 
@@ -193,6 +193,6 @@ static_assert(test2, "PASS2");
 
 ## Requirements
 
-Visual C++ 2010 or later versions.
+Visual Studio 2010 or later versions.
 
 `decltype(auto)` requires Visual Studio 2015 or later.

@@ -12,7 +12,7 @@ This topic explains how to support movement from record to record in your [CReco
 
 - [User-interface update handlers for scrolling](../data/user-interface-updating-for-record-views-mfc-data-access.md) commands.
 
-## See Also
+## See also
 
 [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Driver List](../data/odbc/odbc-driver-list.md)

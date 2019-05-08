@@ -36,7 +36,7 @@ See the [ref](ref-cpp.md) example for a sample use of **unique**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>

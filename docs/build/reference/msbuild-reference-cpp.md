@@ -33,6 +33,6 @@ How to use precompiled header files and how to create your own custom precompile
 [Visual Studio project property reference](property-pages-visual-cpp.md)<br/>
 Reference documentation for project properties that are set in the Visual Studio IDE.
 
-## See Also
+## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)

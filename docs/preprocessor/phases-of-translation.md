@@ -52,6 +52,6 @@ The compiler issues warnings or errors during phases of translation in which it 
 
 The linker resolves all external references and creates an executable program or DLL by combining one or more separately processed translation units along with standard libraries.
 
-## See Also
+## See also
 
 [Preprocessor](../preprocessor/preprocessor.md)

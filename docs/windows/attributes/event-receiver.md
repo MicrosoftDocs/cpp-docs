@@ -62,7 +62,7 @@ The **event_receiver** C++ attribute specifies that the class or structure to wh
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [event_source](event-source.md)<br/>

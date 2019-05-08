@@ -9,7 +9,7 @@ ms.assetid: 72d8db01-5e6f-4794-8731-76107e8f064a
 
 > 'class': a sealed abstract class cannot have any instance members 'Test'
 
-If a type is marked [sealed](../../windows/sealed-cpp-component-extensions.md) and [abstract](../../windows/abstract-cpp-component-extensions.md), it can only have static members.
+If a type is marked [sealed](../../extensions/sealed-cpp-component-extensions.md) and [abstract](../../extensions/abstract-cpp-component-extensions.md), it can only have static members.
 
 This warning is automatically promoted to an error. If you wish to modify this behavior, use [#pragma warning](../../preprocessor/warning.md).
 

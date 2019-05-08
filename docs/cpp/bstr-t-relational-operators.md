@@ -1,8 +1,8 @@
 ---
 title: "_bstr_t Relational Operators"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 f1_keywords: ["_bstr_t::operator>", "_bstr_t::operator==", "_bstr_t::operator>=", "_bstr_t::operator!=", "_bstr_t::operator<", "_bstr_t::operator<=", "_bstr_t::operator!"]
-helpviewer_keywords: [">= operator [C++], comparing specific objects", "operator<= [C++], bstr", "!= operator", "operator == [C++], bstr", "operator!= [C++], relational operators", "< operator [C++], comparing specific objects", "relational operators [C++], _bstr_t class", "operator== [C++], bstr", "<= operator [C++], with specific objects", "operator <= [C++], bstr", "operator >= [C++], bstr", "operator != [C++], relational operators", "> operator [C++], comparing specific objects", "operator< [C++], bstr", "== operator [C++], with specific Visual C++ objects", "operator>= [C++], bstr", "operator < [C++], bstr", "operator > [C++], bstr"]
+helpviewer_keywords: ["_bstr_t [C++]"]
 ms.assetid: e153da72-37c3-4d8a-b8eb-730d65da64dd
 ---
 # _bstr_t Relational Operators

@@ -2343,4 +2343,4 @@ This method sends the [IDM UNORDERLIST command ID](/previous-versions/aa769987\(
 ## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[HTMLEdit Sample](../../visual-cpp-samples.md)
+[HTMLEdit Sample](../../overview/visual-cpp-samples.md)

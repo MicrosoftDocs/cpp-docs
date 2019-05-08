@@ -147,7 +147,7 @@ If you need to call a predefined query (such as a stored procedure in a Microsof
 
 If a predefined query does not return records, you can use the `CDatabase` member function `ExecuteSQL` directly. For a predefined query that does return records, you must also manually write the RFX calls in `DoFieldExchange` for any columns the procedure returns. The RFX calls must be in the same order and return the same types, as the predefined query. For more information, see [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).
 
-## See Also
+## See also
 
 [SQL: SQL and C++ Data Types (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)<br/>
 [SQL: Making Direct SQL Calls (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)

@@ -131,4 +131,4 @@ Unlike in this example, in most cases you should call `LoadLibrary` and `FreeLib
 
 ## See also
 
-[DLLs in Visual C++](dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

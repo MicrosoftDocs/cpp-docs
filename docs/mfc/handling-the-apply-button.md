@@ -22,7 +22,7 @@ You should call [CPropertyPage::SetModified](../mfc/reference/cpropertypage-clas
 
 To implement the effect of the Apply button, the property sheet must tell its owner, or some other external object in the application, to apply the current settings in the property pages. At the same time, the property sheet should disable the Apply button by calling `CPropertyPage::SetModified( FALSE )` for all pages that applied their modifications to the external object.
 
-For an example of this process, see the MFC General sample [PROPDLG](../visual-cpp-samples.md).
+For an example of this process, see the MFC General sample [PROPDLG](../overview/visual-cpp-samples.md).
 
 ## See also
 

@@ -18,7 +18,7 @@ tells the compiler that the function does not throw any exceptions. However, in 
 ```cpp
 void MyFunction(int i) noexcept;
 ```
-The following table summarizes the Microsoft Visual C++ implementation of exception specifications:
+The following table summarizes the Microsoft C++ implementation of exception specifications:
 
 |Exception specification|Meaning|
 |-----------------------------|-------------|

@@ -58,7 +58,7 @@ type of i = 'System.Int32'
 
 ## Example: typeid
 
-As with the `GetType` method, the [typeid](../windows/typeid-cpp-component-extensions.md) operator returns a pointer to a **Type** object, so this code indicates the type name **System.Int32**. Displaying type names is the most basic feature of reflection, but a potentially more useful technique is to inspect or discover the valid values for enumerated types. This can be done by using the static **Enum::GetNames** function, which returns an array of strings, each containing an enumeration value in text form.  The following sample retrieves an array of strings that describes the value enumeration values for the **Options** (CLR) enum and displays them in a loop.
+As with the `GetType` method, the [typeid](../extensions/typeid-cpp-component-extensions.md) operator returns a pointer to a **Type** object, so this code indicates the type name **System.Int32**. Displaying type names is the most basic feature of reflection, but a potentially more useful technique is to inspect or discover the valid values for enumerated types. This can be done by using the static **Enum::GetNames** function, which returns an array of strings, each containing an enumeration value in text form.  The following sample retrieves an array of strings that describes the value enumeration values for the **Options** (CLR) enum and displays them in a loop.
 
 If a fourth option is added to the **Options** enumeration, this code will report the new option without recompilation, even if the enumeration is defined in a separate assembly.
 

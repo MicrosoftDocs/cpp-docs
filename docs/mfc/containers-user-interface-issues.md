@@ -12,7 +12,7 @@ You must add a number of features to a container application's user interface to
 |------------------------|---------|
 |Menu additions for containers|[Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md)|
 |Additional resources for containers|[Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md)|
-|Painting linked or embedded items|[Container sample](../visual-cpp-samples.md)|
+|Painting linked or embedded items|[Container sample](../overview/visual-cpp-samples.md)|
 |New dialog boxes for containers|[Dialog Boxes in OLE](../mfc/dialog-boxes-in-ole.md)|
 
 ## See also

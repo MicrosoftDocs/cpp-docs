@@ -17,7 +17,7 @@ Dialog Data Exchange and Record Field Exchange
 
 For more information about DDX, see [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md). For more information about RFX, see [Record Field Exchange (RFX)](../data/odbc/record-field-exchange-rfx.md).
 
-## See Also
+## See also
 
 [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Driver List](../data/odbc/odbc-driver-list.md)

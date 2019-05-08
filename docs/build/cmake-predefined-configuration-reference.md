@@ -338,7 +338,7 @@ These options allow you to run commands on the remote system before and after bu
 }
 ```
 
-## See Also
+## See also
 
 [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>
 [Configure a Linux CMake project](../linux/cmake-linux-project.md)<br/>

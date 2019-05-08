@@ -139,7 +139,7 @@ This code constructs a snapshot, passes it a parameter obtained earlier from the
 > [!TIP]
 >  You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Requerying a Recordset (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)<br/>

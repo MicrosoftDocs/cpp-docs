@@ -9,7 +9,7 @@ ms.assetid: 5699c04b-d504-46ce-bf71-c200318fed71
 
 'delegate' : a delegate can only be created from a global function or a member function of a managed or WinRT type
 
-Delegates, declared with the [delegate](../../windows/delegate-cpp-component-extensions.md) keyword, can only be declared at global scope.
+Delegates, declared with the [delegate](../../extensions/delegate-cpp-component-extensions.md) keyword, can only be declared at global scope.
 
 The following sample generates C3353:
 

@@ -1,8 +1,8 @@
 ---
 title: "new and delete Operators"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 f1_keywords: ["delete_cpp", "new"]
-helpviewer_keywords: ["new keyword [C++], dynamic allocation of objects", "nothrownew.obj", "delete keyword [C++], syntax"]
+helpviewer_keywords: ["new keyword [C++]", "delete keyword [C++]"]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 ---
 # new and delete Operators
@@ -74,9 +74,7 @@ The argument supplied in parentheses to **new** is passed to `Blanks::operator n
 Blanks *SomeBlanks = new Blanks;
 ```
 
-In Visual C++ 5.0 and earlier, nonclass types and all arrays (regardless of whether they were of **class** type) allocated using the **new** operator always used the global **operator new** function.
-
-Beginning with Visual C++ 5.0, the compiler supports member array **new** and **delete** operators in a class declaration. For example:
+The compiler supports member array **new** and **delete** operators in a class declaration. For example:
 
 ```cpp
 // spec1_the_operator_new_function2.cpp
@@ -192,7 +190,7 @@ int main( int argc, char *argv[] ) {
 
 The preceding code can be used to detect "memory leakage" — that is, memory that is allocated on the free store but never freed. To perform this detection, the global **new** and **delete** operators are redefined to count allocation and deallocation of memory.
 
-Beginning with Visual C++ 5.0, the compiler supports member array **new** and **delete** operators in a class declaration. For example:
+The compiler supports member array **new** and **delete** operators in a class declaration. For example:
 
 ```cpp
 // spec1_the_operator_delete_function2.cpp
