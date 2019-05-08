@@ -25,7 +25,7 @@ An MFC DLL is a binary file that acts as a shared library of functions that can 
 
 1. Click **Finish** to close the wizard and open your new project in **Solution Explorer**.
 
-Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ Projects](../../build/reference/file-types-created-for-visual-cpp-projects.md).
+Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 ## See also
 

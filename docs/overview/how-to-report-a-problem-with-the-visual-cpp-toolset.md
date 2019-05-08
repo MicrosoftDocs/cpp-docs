@@ -7,7 +7,7 @@ ms.author: "corob"
 ---
 # How to report a problem with the Visual C++ toolset or documentation
 
-If you encounter problems with the Microsoft Visual C++ compiler, linker, or other tools and libraries, we want to know about them. If the issue is in our documentation, we want to know about that, too.
+If you encounter problems with the Microsoft C++ compiler, linker, or other tools and libraries, we want to know about them. If the issue is in our documentation, we want to know about that, too.
 
 ## How to report a C++ toolset issue
 

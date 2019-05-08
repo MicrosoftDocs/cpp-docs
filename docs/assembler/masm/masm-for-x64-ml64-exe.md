@@ -12,13 +12,13 @@ To use MASM to build code for x64 targets on the command line, you must use a de
 
 For information on ml64.exe command line options, see [ML and ML64 Command-Line Reference](../../assembler/masm/ml-and-ml64-command-line-reference.md).
 
-Inline assembler or use of the ASM keyword is not supported for x64 or ARM targets. To port your x86 code that uses inline assembler to x64 or ARM, you can convert your code to C++, use compiler intrinsics, or create assembler-language source files. The Visual C++ compiler supports intrinsics to allow you to use special-function instructions, for example, privileged, bit scan/test, interlocked, and so on, in as close to a cross-platform manner as possible. For information on available intrinsics, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md).
+Inline assembler or use of the ASM keyword is not supported for x64 or ARM targets. To port your x86 code that uses inline assembler to x64 or ARM, you can convert your code to C++, use compiler intrinsics, or create assembler-language source files. The Microsoft C++ compiler supports intrinsics to allow you to use special-function instructions, for example, privileged, bit scan/test, interlocked, and so on, in as close to a cross-platform manner as possible. For information on available intrinsics, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md).
 
-## Add an assembler-language file to a Visual C++ project
+## Add an assembler-language file to a Visual Studio C++ project
 
 The Visual Studio project system supports assembler-language files built by using MASM in your C++ projects. You can create x64 assembler-language source files and build them into object files by using MASM, which supports x64 fully. You can then link these object files to your C++ code built for x64 targets. This is one way to overcome the lack of an x64 inline assembler.
 
-### To add an assembler-language file to an existing Visual C++ project
+### To add an assembler-language file to an existing Visual Studio C++ project
 
 1. Select the project in **Solution Explorer**. On the menu bar, choose **Project**, **Build Customizations**.
 
