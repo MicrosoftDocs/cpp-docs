@@ -14,13 +14,13 @@ If you choose to manually edit a .vcxproj file, be aware of these facts:
 
 1. The structure of the file must follow a prescribed form, which is described in this article.
 
-1. The Visual C++ project system currently does not support wildcards in project items. For example, this is not supported:
+1. The Visual Studio C++ project system currently does not support wildcards in project items. For example, this is not supported:
 
    ```xml
    <ClCompile Include="*.cpp"/>
    ```
 
-1. The Visual C++ project system currently does not support macros in project item paths. For example, this is not supported:
+1. The Visual Studio C++ project system currently does not support macros in project item paths. For example, this is not supported:
 
    ```xml
    <ClCompile Include="$(IntDir)\generated.cpp"/>
@@ -218,7 +218,7 @@ The metadata should have configuration conditions for each configuration, even i
 </ItemGroup>
 ```
 
-The Visual C++ project system currently does not support wildcards in project items.
+The Visual Studio C++ project system currently does not support wildcards in project items.
 
 ```xml
 <ItemGroup>
@@ -226,7 +226,7 @@ The Visual C++ project system currently does not support wildcards in project it
 </ItemGroup>
 ```
 
-The Visual C++ project system currently does not support macros in project items.
+The Visual Studio C++ project system currently does not support macros in project items.
 
 ```xml
 <ItemGroup>

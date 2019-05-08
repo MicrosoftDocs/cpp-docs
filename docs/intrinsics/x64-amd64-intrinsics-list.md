@@ -5,7 +5,7 @@ helpviewer_keywords: ["cl-exe compiler, intrinsics", "intrinsics, x64", "intrins
 ---
 # x64 (amd64) intrinsics list
 
-This document lists intrinsics that the Visual C++ compiler supports when x64 (also referred to as amd64) is targeted.
+This document lists intrinsics that the Microsoft C++ compiler supports when x64 (also referred to as amd64) is targeted.
 
 For information about individual intrinsics, see these resources, as appropriate for the processor you're targeting:
 

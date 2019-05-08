@@ -13,7 +13,7 @@ A C++ attribute cannot be applied to a CLR type. See [C++ Attributes Reference](
 
 For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
-This error can be generated as a result of compiler conformance work that was done for Visual C++ 2005: the [uuid](../../windows/uuid-cpp-attributes.md) attribute is no longer allowed on a user-defined attribute using CLR programming. Use <xref:System.Runtime.InteropServices.GuidAttribute> instead.
+This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: the [uuid](../../windows/uuid-cpp-attributes.md) attribute is no longer allowed on a user-defined attribute using CLR programming. Use <xref:System.Runtime.InteropServices.GuidAttribute> instead.
 
 ## Example
 

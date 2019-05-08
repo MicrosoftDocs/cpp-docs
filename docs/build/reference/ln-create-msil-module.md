@@ -27,7 +27,7 @@ You may want to create modules if you want to take a component-based approach to
 
 The default file extension for a module is .netmodule.
 
-In Visual C++ releases before Visual C++ 2005, a module was created with **/clr:noAssembly**.
+In releases before Visual Studio 2005, a module was created with **/clr:noAssembly**.
 
 The MSVC linker accepts .netmodule files as input and the output file produced by the linker will be an assembly or .netmodule with no run-time dependence on any of the .netmodules that were input to the linker.  For more information, see [.netmodule Files as Linker Input](netmodule-files-as-linker-input.md).
 

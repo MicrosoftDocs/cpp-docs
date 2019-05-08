@@ -70,7 +70,7 @@ The properties in the General section affect the location of files that are crea
 
 - **Platform Toolset**
 
-   Allows the project to target a different version of the Visual C++ libraries and compiler. Visual C++ projects can target either the default toolset installed by Visual Studio, or one of the toolsets installed by several previous versions of Visual Studio, including toolsets that create executables that can run on Windowx XP. For information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
+   Allows the project to target a different version of the Visual C++ libraries and compiler. Visual Studio C++ projects can target either the default toolset installed by Visual Studio, or one of the toolsets installed by several previous versions of Visual Studio, including toolsets that create executables that can run on Windowx XP. For information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - **Enable Managed Incremental Build**
 
