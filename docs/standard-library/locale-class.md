@@ -533,6 +533,8 @@ The name of the current locale is: German_Germany.1252.
 
 ## <a name="op_eq"></a>  locale::operator=
 
+Assigns a locale.
+
 ```cpp
 const locale& operator=(const locale& other) noexcept;
 ```
