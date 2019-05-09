@@ -22,6 +22,9 @@ Defines the container template classes [unordered_map](../standard-library/unord
 #include <unordered_map>
 ```
 
+> [!NOTE]
+> The \<unordered_map> library also uses the `#include <initializer_list>` statement.
+
 ### Classes
 
 |Class|Description|

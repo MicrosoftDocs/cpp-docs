@@ -20,8 +20,10 @@ Defines the container template classes set and multiset and their supporting tem
 
 ```cpp
 #include <set>
-
 ```
+
+> [!NOTE]
+> The \<set> library also uses the `#include <initializer_list>` statement.
 
 ## Members
 

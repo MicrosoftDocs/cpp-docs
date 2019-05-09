@@ -22,6 +22,9 @@ Defines the container template classes [unordered_multiset](../standard-library/
 #include <unordered_set>
 ```
 
+> [!NOTE]
+> The \<unordered_set> library also uses the `#include <initializer_list>` statement.
+
 ### Classes
 
 |Class|Description|

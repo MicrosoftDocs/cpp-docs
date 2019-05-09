@@ -20,8 +20,10 @@ Defines the container template classes map and multimap and their supporting tem
 
 ```cpp
 #include <map>
-
 ```
+
+> [!NOTE]
+> The \<map> library also uses the `#include <initializer_list>` statement.
 
 ## Members
 
