@@ -1,6 +1,6 @@
 ---
 title: "3. Run-time library functions"
-ms.date: "01/17/2019"
+ms.date: "05/09/2019"
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
 ---
 # 3. Run-time library functions
@@ -159,6 +159,13 @@ A call to `omp_set_dynamic` has precedence over the `OMP_DYNAMIC` environment va
 
 The default for the dynamic adjustment of threads is implementation-defined. As a result, user codes that depend on a specific number of threads for correct execution should explicitly disable dynamic threads. Implementations aren't required to provide the ability to dynamically adjust the number of threads, but they're required to provide the interface to support portability across all platforms.
 
+#### Microsoft specific
+
+The current support of `omp_get_dynamic` and `omp_set_dynamic` is as follows: 
+
+- A zero-valued input parameter disables multi-threading and nesting. 
+- A non-zero input parameter means to use the current number of threads. The current number of threads can be the default value or can be user-defined by calling `omp_set_num_threads` or by setting an environment variable.
+
 #### Cross-references
 
 - [omp_get_num_threads](#312-omp_get_num_threads-function)
@@ -175,6 +182,14 @@ int omp_get_dynamic(void);
 ```
 
 If the implementation doesn't implement dynamic adjustment of the number of threads, this function always returns 0.
+
+
+#### Microsoft specific
+
+The current support of `omp_get_dynamic` and `omp_set_dynamic` is as follows:
+
+- A zero-valued input parameter disables multi-threading and nesting. 
+- A non-zero input parameter means to use the current number of threads. The current number of threads can be the default value or can be user-defined by calling `omp_set_num_threads` or by setting an environment variable.
 
 #### Cross-references
 
