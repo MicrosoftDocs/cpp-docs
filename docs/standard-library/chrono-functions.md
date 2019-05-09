@@ -19,6 +19,13 @@ Casts a `duration` object to a specified type.
 ```cpp
 template <class To, class Rep, class Period>
 constexpr To duration_cast(const duration<Rep, Period>& Dur);
+
+template <class ToDuration, class Rep, class Period>
+constexpr ToDuration floor(const duration<Rep, Period>& d);
+template <class ToDuration, class Rep, class Period>
+constexpr ToDuration ceil(const duration<Rep, Period>& d);
+template <class ToDuration, class Rep, class Period>
+constexpr ToDuration round(const duration<Rep, Period>& d);
 ```
 
 ### Return Value
@@ -36,6 +43,16 @@ Casts a [time_point](../standard-library/time-point-class.md) object to a specif
 ```cpp
 template <class To, class Clock, class Duration>
 time_point<Clock, To> time_point_cast(const time_point<Clock, Duration>& Tp);
+
+template <class ToDuration, class Clock, class Duration>
+constexpr time_point<Clock, ToDuration>
+floor(const time_point<Clock, Duration>& tp);
+template <class ToDuration, class Clock, class Duration>
+constexpr time_point<Clock, ToDuration>
+ceil(const time_point<Clock, Duration>& tp);
+template <class ToDuration, class Clock, class Duration>
+constexpr time_point<Clock, ToDuration>
+round(const time_point<Clock, Duration>& tp);
 ```
 
 ### Return Value
