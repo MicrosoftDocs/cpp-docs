@@ -3,12 +3,12 @@ title: "&lt;algorithm&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["algorithm/std::adjacent_find", "algorithm/std::all_of", "algorithm/std::any_of", "algorithm/std::binary_search", "algorithm/std::copy", "algorithm/std::copy_backward", "algorithm/std::copy_if", "algorithm/std::copy_n", "algorithm/std::equal", "algorithm/std::equal_range", "algorithm/std::fill", "algorithm/std::fill_n", "algorithm/std::find", "algorithm/std::find_end", "algorithm/std::find_first_of", "algorithm/std::find_if", "algorithm/std::find_if_not", "algorithm/std::for_each", "algorithm/std::generate", "algorithm/std::generate_n", "algorithm/std::includes", "algorithm/std::inplace_merge", "algorithm/std::is_heap", "algorithm/std::is_heap_until", "algorithm/std::is_partitioned", "algorithm/std::is_permutation", "algorithm/std::is_sorted", "algorithm/std::is_sorted_until", "algorithm/std::iter_swap", "algorithm/std::lexicographical_compare", "algorithm/std::lower_bound", "algorithm/std::make_heap", "algorithm/std::max", "algorithm/std::max_element", "algorithm/std::merge", "algorithm/std::min", "algorithm/std::minmax", "algorithm/std::minmax_element", "algorithm/std::min_element", "algorithm/std::mismatch", "algorithm/std::move", "algorithm/std::move_backward", "algorithm/std::next_permutation", "algorithm/std::none_of", "algorithm/std::nth_element", "algorithm/std::partial_sort", "algorithm/std::partial_sort_copy", "algorithm/std::partition", "algorithm/std::partition_point", "algorithm/std::pop_heap", "algorithm/std::prev_permutation", "algorithm/std::push_heap", "algorithm/std::random_shuffle", "algorithm/std::remove", "algorithm/std::remove_copy", "algorithm/std::remove_copy_if", "algorithm/std::remove_if", "algorithm/std::replace", "algorithm/std::replace_copy", "algorithm/std::replace_copy_if", "algorithm/std::replace_if", "algorithm/std::reverse", "algorithm/std::reverse_copy", "algorithm/std::rotate", "algorithm/std::rotate_copy", "algorithm/std::search", "algorithm/std::search_n", "algorithm/std::set_difference", "algorithm/std::set_intersection", "algorithm/std::set_symmetric_difference", "algorithm/std::set_union", "algorithm/std::shuffle", "algorithm/std::sort", "algorithm/std::sort_heap", "algorithm/std::stable_partition", "algorithm/std::stable_sort", "algorithm/std::swap_ranges", "algorithm/std::transform", "algorithm/std::unique", "algorithm/std::unique_copy", "algorithm/std::upper_bound", "xutility/std::copy", "xutility/std::copy_backward", "xutility/std::copy_n", "xutility/std::count", "xutility/std::equal", "xutility/std::fill", "xutility/std::fill_n", "xutility/std::find", "xutility/std::is_permutation", "xutility/std::lexicographical_compare", "xutility/std::move", "xutility/std::move_backward", "xutility/std::reverse", "xutility/std::rotate", "algorithm/std::count_if", "algorithm/std::partition_copy", "algorithm/std::swap"]
+f1_keywords: ["algorithm/std::adjacent_find", "algorithm/std::all_of", "algorithm/std::any_of", "algorithm/std::binary_search", "algorithm/std::clamp", "algorithm/std::copy", "algorithm/std::copy_backward", "algorithm/std::copy_if", "algorithm/std::copy_n", "algorithm/std::equal", "algorithm/std::equal_range", "algorithm/std::fill", "algorithm/std::fill_n", "algorithm/std::find", "algorithm/std::find_end", "algorithm/std::find_first_of", "algorithm/std::find_if", "algorithm/std::find_if_not", "algorithm/std::for_each", "algorithm/std::generate", "algorithm/std::for_each_n", "algorithm/std::generate_n", "algorithm/std::includes", "algorithm/std::inplace_merge", "algorithm/std::is_heap", "algorithm/std::is_heap_until", "algorithm/std::is_partitioned", "algorithm/std::is_permutation", "algorithm/std::is_sorted", "algorithm/std::is_sorted_until", "algorithm/std::iter_swap", "algorithm/std::lexicographical_compare", "algorithm/std::lower_bound", "algorithm/std::make_heap", "algorithm/std::max", "algorithm/std::max_element", "algorithm/std::merge", "algorithm/std::min", "algorithm/std::minmax", "algorithm/std::minmax_element", "algorithm/std::min_element", "algorithm/std::mismatch", "algorithm/std::move", "algorithm/std::move_backward", "algorithm/std::next_permutation", "algorithm/std::none_of", "algorithm/std::nth_element", "algorithm/std::partial_sort", "algorithm/std::partial_sort_copy", "algorithm/std::partition", "algorithm/std::partition_point", "algorithm/std::pop_heap", "algorithm/std::prev_permutation", "algorithm/std::push_heap", "algorithm/std::random_shuffle", "algorithm/std::remove", "algorithm/std::remove_copy", "algorithm/std::remove_copy_if", "algorithm/std::remove_if", "algorithm/std::replace", "algorithm/std::replace_copy", "algorithm/std::replace_copy_if", "algorithm/std::replace_if", "algorithm/std::reverse", "algorithm/std::reverse_copy", "algorithm/std::rotate", "algorithm/std::rotate_copy", "algorithm/std::sample", "algorithm/std::search", "algorithm/std::search_n", "algorithm/std::set_difference", "algorithm/std::set_intersection", "algorithm/std::set_symmetric_difference", "algorithm/std::set_union", "algorithm/std::shuffle", "algorithm/std::sort", "algorithm/std::sort_heap", "algorithm/std::stable_partition", "algorithm/std::stable_sort", "algorithm/std::swap_ranges", "algorithm/std::transform", "algorithm/std::unique", "algorithm/std::unique_copy", "algorithm/std::upper_bound", "xutility/std::copy", "xutility/std::copy_backward", "xutility/std::copy_n", "xutility/std::count", "xutility/std::equal", "xutility/std::fill", "xutility/std::fill_n", "xutility/std::find", "xutility/std::is_permutation", "xutility/std::lexicographical_compare", "xutility/std::move", "xutility/std::move_backward", "xutility/std::reverse", "xutility/std::rotate", "algorithm/std::count_if", "algorithm/std::partition_copy", "algorithm/std::swap"]
 dev_langs: ["C++"]
 ms.assetid: c10b0c65-410c-4c83-abf8-8b7f61bba8d0
 author: "corob-msft"
 ms.author: "corob"
-helpviewer_keywords: ["std::adjacent_find [C++]", "std::all_of [C++]", "std::any_of [C++]", "std::binary_search [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_if [C++]", "std::copy_n [C++]", "std::equal [C++]", "std::equal_range [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::find_end [C++]", "std::find_first_of [C++]", "std::find_if [C++]", "std::find_if_not [C++]", "std::for_each [C++]", "std::generate [C++]", "std::generate_n [C++]", "std::includes [C++]", "std::inplace_merge [C++]", "std::is_heap [C++]", "std::is_heap_until [C++]", "std::is_partitioned [C++]", "std::is_permutation [C++]", "std::is_sorted [C++]", "std::is_sorted_until [C++]", "std::iter_swap [C++]", "std::lexicographical_compare [C++]", "std::lower_bound [C++]", "std::make_heap [C++]", "std::max [C++]", "std::max_element [C++]", "std::merge [C++]", "std::min [C++]", "std::minmax [C++]", "std::minmax_element [C++]", "std::min_element [C++]", "std::mismatch [C++]", "std::move [C++]", "std::move_backward [C++]", "std::next_permutation [C++]", "std::none_of [C++]", "std::nth_element [C++]", "std::partial_sort [C++]", "std::partial_sort_copy [C++]", "std::partition [C++]", "std::partition_point [C++]", "std::pop_heap [C++]", "std::prev_permutation [C++]", "std::push_heap [C++]", "std::random_shuffle [C++]", "std::remove [C++]", "std::remove_copy [C++]", "std::remove_copy_if [C++]", "std::remove_if [C++]", "std::replace [C++]", "std::replace_copy [C++]", "std::replace_copy_if [C++]", "std::replace_if [C++]", "std::reverse [C++]", "std::reverse_copy [C++]", "std::rotate [C++]", "std::rotate_copy [C++]", "std::search [C++]", "std::search_n [C++]", "std::set_difference [C++]", "std::set_intersection [C++]", "std::set_symmetric_difference [C++]", "std::set_union [C++]", "std::shuffle [C++]", "std::sort [C++]", "std::sort_heap [C++]", "std::stable_partition [C++]", "std::stable_sort [C++]", "std::swap_ranges [C++]", "std::transform [C++]", "std::unique [C++]", "std::unique_copy [C++]", "std::upper_bound [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_n [C++]", "std::count [C++]", "std::equal [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::is_permutation [C++]", "std::lexicographical_compare [C++]", "std::move [C++]", "std::move_backward [C++]", "std::reverse [C++]", "std::rotate [C++]", "std::count_if [C++]", "std::partition_copy [C++]", "std::swap [C++]"]
+helpviewer_keywords: ["std::adjacent_find [C++]", "std::all_of [C++]", "std::any_of [C++]", "std::binary_search [C++]", "std::clamp [C++], "std::copy [C++]", "std::copy_backward [C++]", "std::copy_if [C++]", "std::copy_n [C++]", "std::equal [C++]", "std::equal_range [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::find_end [C++]", "std::find_first_of [C++]", "std::find_if [C++]", "std::find_if_not [C++]", "std::for_each [C++]", "std::for_each_n", "std::generate [C++]", "std::generate_n [C++]", "std::includes [C++]", "std::inplace_merge [C++]", "std::is_heap [C++]", "std::is_heap_until [C++]", "std::is_partitioned [C++]", "std::is_permutation [C++]", "std::is_sorted [C++]", "std::is_sorted_until [C++]", "std::iter_swap [C++]", "std::lexicographical_compare [C++]", "std::lower_bound [C++]", "std::make_heap [C++]", "std::max [C++]", "std::max_element [C++]", "std::merge [C++]", "std::min [C++]", "std::minmax [C++]", "std::minmax_element [C++]", "std::min_element [C++]", "std::mismatch [C++]", "std::move [C++]", "std::move_backward [C++]", "std::next_permutation [C++]", "std::none_of [C++]", "std::nth_element [C++]", "std::partial_sort [C++]", "std::partial_sort_copy [C++]", "std::partition [C++]", "std::partition_point [C++]", "std::pop_heap [C++]", "std::prev_permutation [C++]", "std::push_heap [C++]", "std::random_shuffle [C++]", "std::remove [C++]", "std::remove_copy [C++]", "std::remove_copy_if [C++]", "std::remove_if [C++]", "std::replace [C++]", "std::replace_copy [C++]", "std::replace_copy_if [C++]", "std::replace_if [C++]", "std::reverse [C++]", "std::reverse_copy [C++]", "std::rotate [C++]", "std::rotate_copy [C++]", "std::sample [C++], "std::search [C++]", "std::search_n [C++]", "std::set_difference [C++]", "std::set_intersection [C++]", "std::set_symmetric_difference [C++]", "std::set_union [C++]", "std::shuffle [C++]", "std::sort [C++]", "std::sort_heap [C++]", "std::stable_partition [C++]", "std::stable_sort [C++]", "std::swap_ranges [C++]", "std::transform [C++]", "std::unique [C++]", "std::unique_copy [C++]", "std::upper_bound [C++]", "std::copy [C++]", "std::copy_backward [C++]", "std::copy_n [C++]", "std::count [C++]", "std::equal [C++]", "std::fill [C++]", "std::fill_n [C++]", "std::find [C++]", "std::is_permutation [C++]", "std::lexicographical_compare [C++]", "std::move [C++]", "std::move_backward [C++]", "std::reverse [C++]", "std::rotate [C++]", "std::count_if [C++]", "std::partition_copy [C++]", "std::swap [C++]"]
 ms.workload: ["cplusplus"]
 ---
 # &lt;algorithm&gt; functions
@@ -16,28 +16,30 @@ ms.workload: ["cplusplus"]
 ||||
 |-|-|-|
 |[move](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|
-|[any_of](#any_of)|[binary_search](#binary_search)|[copy](#copy)|
-|[copy_backward](#copy_backward)|[copy_if](#copy_if)|[copy_n](#copy_n)|
-|[count](#count)|[count_if](#count_if)|[equal](#equal)|
-|[equal_range](#equal_range)|[fill](#fill)|[fill_n](#fill_n)|
-|[find](#find)|[find_end](#find_end)|[find_first_of](#find_first_of)|
-|[find_if](#find_if)|[find_if_not](#find_if_not)|[for_each](#for_each)|
-|[generate](#generate)|[generate_n](#generate_n)|[includes](#includes)|
-|[inplace_merge](#inplace_merge)|[is_heap](#is_heap)|[is_heap_until](#is_heap_until)|
-|[is_partitioned](#is_partitioned)|[is_permutation](#is_permutation)|[is_sorted](#is_sorted)|
-|[is_sorted_until](#is_sorted_until)|[iter_swap](#iter_swap)|[lexicographical_compare](#lexicographical_compare)|
-|[lower_bound](#lower_bound)|[make_heap](#make_heap)|[max](#max)|
-|[max_element](#max_element)|[merge](#merge)|[min](#min)|
-|[min_element](#min_element)|[minmax](#minmax)|[minmax_element](#minmax_element)|
-|[mismatch](#mismatch)|[move_backward](#move_backward)|[next_permutation](#next_permutation)|
-|[none_of](#none_of)|[nth_element](#nth_element)|[partial_sort](#partial_sort)|
-|[partial_sort_copy](#partial_sort_copy)|[partition](#partition)|[partition_copy](#partition_copy)|
-|[partition_point](#partition_point)|[pop_heap](#pop_heap)|[prev_permutation](#prev_permutation)|
-|[push_heap](#push_heap)|[random_shuffle](#random_shuffle)|[remove](#remove)|
-|[remove_copy](#remove_copy)|[remove_copy_if](#remove_copy_if)|[remove_if](#remove_if)|
-|[replace](#replace)|[replace_copy](#replace_copy)|[replace_copy_if](#replace_copy_if)|
-|[replace_if](#replace_if)|[reverse](#reverse)|[reverse_copy](#reverse_copy)|
-|[rotate](#rotate)|[rotate_copy](#rotate_copy)|[search](#search)|
+|[any_of](#any_of)|[binary_search](#binary_search)|[clamp](#clamp)|
+|[copy](#copy)|[copy_backward](#copy_backward)|[copy_if](#copy_if)|
+|[copy_n](#copy_n)|[count](#count)|[count_if](#count_if)|
+|[equal](#equal)|[equal_range](#equal_range)|[fill](#fill)|
+|[fill_n](#fill_n)|[find](#find)|[find_end](#find_end)|
+|[find_first_of](#find_first_of)|[find_if](#find_if)|[find_if_not](#find_if_not)|
+|[for_each](#for_each)|[for_each_n](#for_each_n)|[generate](#generate)|
+|[generate_n](#generate_n)|[includes](#includes)|[inplace_merge](#inplace_merge)|
+|[is_heap](#is_heap)|[is_heap_until](#is_heap_until)|[is_partitioned](#is_partitioned)|
+|[is_permutation](#is_permutation)|[is_sorted](#is_sorted)|[is_sorted_until](#is_sorted_until)|
+|[iter_swap](#iter_swap)|[lexicographical_compare](#lexicographical_compare)|
+|[lower_bound](#lower_bound)|
+|[make_heap](#make_heap)|[max](#max)|[max_element](#max_element)|
+|[merge](#merge)|[min](#min)|[min_element](#min_element)|
+|[minmax](#minmax)|[minmax_element](#minmax_element)|[mismatch](#mismatch)|
+|[move_backward](#move_backward)|[next_permutation](#next_permutation)|[none_of](#none_of)|
+|[nth_element](#nth_element)|[partial_sort](#partial_sort)|[partial_sort_copy](#partial_sort_copy)|
+|[partition](#partition)|[partition_copy](#partition_copy)|[partition_point](#partition_point)|
+|[pop_heap](#pop_heap)|[prev_permutation](#prev_permutation)|[push_heap](#push_heap)|
+|[random_shuffle](#random_shuffle)|[remove](#remove)|[remove_copy](#remove_copy)|
+|[remove_copy_if](#remove_copy_if)|[remove_if](#remove_if)|[replace](#replace)|
+|[replace_copy](#replace_copy)|[replace_copy_if](#replace_copy_if)|[replace_if](#replace_if)|
+|[reverse](#reverse)|[reverse_copy](#reverse_copy)|[rotate](#rotate)|
+|[rotate_copy](#rotate_copy)|[sample](#sample)|[search](#search)|
 |[search_n](#search_n)|[set_difference](#set_difference)|[set_intersection](#set_intersection)|
 |[set_symmetric_difference](#set_symmetric_difference)|[set_union](#set_union)|[sort](#sort)|
 |[sort_heap](#sort_heap)|[stable_partition](#stable_partition)|[stable_sort](#stable_sort)|
@@ -339,6 +341,15 @@ int main()
         cout << "There is not an element with a value equivalent to -3 "
         << "under mod_lesser." << endl;
 }
+```
+
+## <a name="clamp"></a>  clamp
+
+```cpp
+template<class T>
+constexpr const T& clamp(const T& v, const T& lo, const T& hi);
+template<class T, class Compare>
+constexpr const T& clamp(const T& v, const T& lo, const T& hi, Compare comp);
 ```
 
 ## <a name="copy"></a>  copy
@@ -1774,6 +1785,16 @@ by the factor 5 gives:
 v1mod2 = ( 40 30 20 10 0 -10 -20 ).
 The average of the elements of v1 is:
 Average ( v1mod2 ) = 10.
+```
+
+## <a name="for_each_n"></a>  for_each_n
+
+```cpp
+template<class InputIterator, class Size, class Function>
+InputIterator for_each_n(InputIterator first, Size n, Function f);
+template<class ExecutionPolicy, class ForwardIterator, class Size, class Function>
+ForwardIterator for_each_n(ExecutionPolicy&& exec, 
+ForwardIterator first, Size n, Function f);
 ```
 
 ## <a name="generate"></a>  generate
@@ -6448,6 +6469,16 @@ int main() {
       iii++;
    }
 }
+```
+
+## <a name="sample"></a>  sample
+
+```cpp
+template<class PopulationIterator, class SampleIterator,
+class Distance, class UniformRandomBitGenerator>
+SampleIterator sample(PopulationIterator first, PopulationIterator last,
+SampleIterator out, Distance n,
+UniformRandomBitGenerator&& g);
 ```
 
 ## <a name="search"></a>  search
