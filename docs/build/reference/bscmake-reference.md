@@ -1,6 +1,6 @@
 ---
 title: "BSCMAKE Reference"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["BSCMAKE, reference", "Microsoft Browse Information Maintenance Utility", "browse windows", "browse information files (.bsc), building", ".bsc files, building", "bsc files, building", "BSCMAKE"]
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
 ---
@@ -11,7 +11,7 @@ ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
 
 The Microsoft Browse Information Maintenance Utility (BSCMAKE.EXE) builds a browse information file (.bsc) from .sbr files created during compilation. Certain third-party tools use .bsc files for code analysis.
 
-When you build your program, you can create a browse information file for your program automatically, using BSCMAKE to build the file. You do not need to know how to run BSCMAKE if you create your browse information file in the Visual C++ development environment. However, you may want to read this topic to understand the choices available.
+When you build your program, you can create a browse information file for your program automatically, using BSCMAKE to build the file. You do not need to know how to run BSCMAKE if you create your browse information file in the Visual Studio development environment. However, you may want to read this topic to understand the choices available.
 
 If you build your program outside of the development environment, you can still create a custom .bsc that you can examine in the environment. Run BSCMAKE on the .sbr files that you created during compilation.
 

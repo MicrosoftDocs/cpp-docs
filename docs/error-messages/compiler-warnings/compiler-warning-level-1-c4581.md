@@ -9,7 +9,7 @@ ms.assetid: 598bcd87-257d-4eb3-94e4-15bb31aadc99
 
 deprecated behavior: '"string1"' replaced with 'string2' to process attribute
 
-This error can be generated as a result of compiler conformance work that was done for Visual C++ 2005: parameter checking for Visual C++ attributes.
+This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: parameter checking for Visual C++ attributes.
 
 In previous versions, attribute values were accepted whether or not they were enclosed in quotation marks. If the value is an enumeration, it must not be enclosed in quotation marks.
 

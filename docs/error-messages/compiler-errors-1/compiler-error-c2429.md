@@ -15,7 +15,7 @@ The error **C2429: language feature 'nested-namespace-definition' requires compi
 
 ```cpp
 // C2429a.cpp
-namespace a::b { int i; } // C2429 starting in Visual C++ 2015 Update 3.
+namespace a::b { int i; } // C2429 starting in Visual Studio 2015 Update 3.
                           // Use /std:c++17 to fix, or do this:
 // namespace a { namespace b { int i; }}
 

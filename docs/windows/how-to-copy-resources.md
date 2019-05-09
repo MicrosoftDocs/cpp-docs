@@ -68,7 +68,7 @@ Managed resource (.resx) files are XML files. When you add a managed resource fi
 
 ## Import and Export Resources
 
-You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML files, and custom resources for use in Visual C++. You can export the same types of files from a Visual C++ project to separate files that can be used outside the development environment.
+You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML files, and custom resources for use in Visual C++. You can export the same types of files from a Visual Studio C++ project to separate files that can be used outside the development environment.
 
 > [!NOTE]
 > Resource types such as accelerators, dialog boxes, and string tables can't be imported or exported because they're not stand-alone file types.

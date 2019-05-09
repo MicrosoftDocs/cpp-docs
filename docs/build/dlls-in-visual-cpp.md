@@ -1,6 +1,6 @@
 ---
 title: "Create C/C++ DLLs in Visual Studio"
-ms.date: "12/10/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["executable files [C++]", "dynamic linking [C++]", "linking [C++], dynamic vs. static", "DLLs [C++]", "DLLs [C++], about DLLs"]
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
 ---
@@ -48,7 +48,7 @@ A potential disadvantage to using DLLs is that the application is not self-conta
 
 ## More information on how to create and use DLLs
 
-The following topics provide detailed information about how to program DLLs in Visual C++.
+The following topics provide detailed information about how to create C/C++ DLLs in Visual Studio.
 
 [Walkthrough: Creating and Using a Dynamic Link Library (C++)](walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)<br/>
 Describes how to create and use a DLL using Visual Studio.

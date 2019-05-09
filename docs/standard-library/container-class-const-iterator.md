@@ -7,7 +7,7 @@ ms.assetid: e68c9e30-fc4c-4c2e-8724-06d1fe8b8ccb
 # Container Class::const_iterator
 
 > [!NOTE]
-> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+> This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 Describes an object that can serve as a constant iterator for the controlled sequence.
 

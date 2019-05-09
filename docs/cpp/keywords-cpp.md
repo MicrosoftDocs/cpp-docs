@@ -2,7 +2,7 @@
 title: "Keywords (C++)"
 ms.custom: "index-page"
 ms.date: "10/10/2018"
-helpviewer_keywords: ["Visual C++, keywords", "keywords [C++]", "__identifer keyword [C++], naming", "Microsoft-specific keywords", "__identifer keyword [C++]"]
+helpviewer_keywords: ["keywords [C++]"]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
 ---
 # Keywords (C++)

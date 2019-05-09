@@ -13,7 +13,7 @@ You used a [using](../../cpp/using-declaration.md) declaration incorrectly.
 
 ## Example
 
-This error can be generated as a result of compiler conformance work that was done for Visual C++ 2005: it is no longer valid to have a `using` declaration to a nested type; you must explicitly qualify each reference you make to the nested type, put the type in a namespace, or create a typedef.
+This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: it is no longer valid to have a `using` declaration to a nested type; you must explicitly qualify each reference you make to the nested type, put the type in a namespace, or create a typedef.
 
 The following sample generates C2885.
 

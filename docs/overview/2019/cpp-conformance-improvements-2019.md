@@ -1,6 +1,7 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "05/07/2019"
+ms.date: "05/13/2019"
+description: "Microsoft C++ in Visual Studio 2019 is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
 ms.author: "mblome"
@@ -347,30 +348,34 @@ const char8_t* s = u8"Hello"; // C++20
 
 The deprecated std::identity class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md). 
 
-The following example shows the old usage with the std::identity class:
+The following example produces deprecation warning C4996 for std::identity (defined in \<type_traits>) in Visual Studio 2017: 
 
 ```cpp
-    using T = std::identity<U>::type;
-    T x, y = std::identity<T>{}(x);
-    int x = 42;
-    long y = std::identity<long>{}(x);
+#include <type_traits>
+
+using T = std::identity<int>::type;
+T x, y = std::identity<T>{}(x);
+int i = 42;
+long j = std::identity<long>{}(i);
 ```
 
-@@@@@@TODO@@@@@@ This example shows the ...
-TBD: error C2143: syntax error: missing ';' before '<'
+The following example shows how to use the new std::identity (defined in \<functional>) together with the new std::type_identity<T>:
 
 ```cpp
-using T = std::type_identity<U>::type;
+#include <type_traits>
+#include <functional>
+
+using T = std::type_identity<int>::type;
 T x, y = std::identity{}(x);
-int x = 42;
-long y = static_cast<long>(x);
+int i = 42;
+long j = static_cast<long>(i);
 ```
 
 ### Syntax checks for generic lambdas
 
 The new lambda preprocessor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or with or with **/experimental:newLambdaProcessor**. 
 
-Before:
+In Visual Studio 2017, this code compiles without warnings, but in Visual Studo 2019 it produces *error C2760: syntax error: unexpected token '\<id-expr>', expected 'id-expression'*
 
 ```cpp
 void f() {
@@ -380,7 +385,7 @@ void f() {
 }
 ```
 
-After:
+The following example shows the correct syntax, now enforced by the compiler:
 
 ```cpp
 void f() {
@@ -389,38 +394,6 @@ void f() {
     };
 }
 ```
-@@@TODO@@@
-error C2760: syntax error: unexpected token '<id-expr>', expected 'id-expression'
-
-### std::atomic conformance
-
-LWG 3012 requires the argument to std::atomic to be copy constructible, move constructible, copy assignable, and move assignable in addition to the previous trivially copyable requirement.
-
-```cpp
-struct S {
-  S() = default;
-  S(const S&) = delete;
-  S(S&&) = default;
-  S& operator=(const S&) = delete;
-  S& operator=(S&) = delete;
-};
-std::atomic<S> s;
-```
-
-After:
-
-```cpp
-struct S {
-  S() = default;
-  S(const S&) = default;
-  S(S&&) = default;
-  S& operator=(const S&) = default;
-  S& operator=(S&) = default;
-}; // or simply struct S {};
-std::atomic<S> s;
-```
-@@@TODO@@@ error C2338: atomic<T> requires T to be trivially copyable, copy constructible, move constructible, copy assignable, and move assignable.
-
 
 ### Mac line endings in the editor
 

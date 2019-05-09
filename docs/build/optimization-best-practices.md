@@ -1,18 +1,18 @@
 ---
 title: "Optimization best practices"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["Visual C++, optimization", "optimization, best practices"]
+ms.date: "05/06/2019"
+helpviewer_keywords: ["C++, optimization", "optimization, best practices"]
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
 ---
 # Optimization best practices
 
-This document describes some best practices for optimization in Visual C++.
+This document describes some best practices for optimizing C++ programs in Visual Studio.
 
 ## Compiler and Linker Options
 
 ### Profile-guided optimization
 
-Visual C++ supports *profile-guided optimization* (PGO). This optimization uses profile data from training executions of an instrumented version of an application to drive later optimization of the application. Using PGO can be time consuming, so it may not be something that every developer uses, but we do recommend using PGO for the final release build of a product. For more information, see [Profile-Guided Optimizations](profile-guided-optimizations.md).
+Visual Studio supports *profile-guided optimization* (PGO). This optimization uses profile data from training executions of an instrumented version of an application to drive later optimization of the application. Using PGO can be time consuming, so it may not be something that every developer uses, but we do recommend using PGO for the final release build of a product. For more information, see [Profile-Guided Optimizations](profile-guided-optimizations.md).
 
 In addition, *Whole Program Optimization* (also knows as Link Time Code Generation) and the **/O1** and **/O2** optimizations have been improved. In general, an application compiled with one of these options will be faster than the same application compiled with an earlier compiler.
 
@@ -85,13 +85,13 @@ Another useful pragma for limiting the depth of inlining is `#pragma inline_dept
 
 ## __restrict and \__assume
 
-There are a couple of keywords in Visual C++ that can help performance: [__restrict](../cpp/extension-restrict.md) and [__assume](../intrinsics/assume.md).
+There are a couple of keywords in Visual Studio that can help performance: [__restrict](../cpp/extension-restrict.md) and [__assume](../intrinsics/assume.md).
 
 First, it should be noted that `__restrict` and `__declspec(restrict)` are two different things. While they are somewhat related, their semantics are different. `__restrict` is a type qualifier, like `const` or `volatile`, but exclusively for pointer types.
 
 A pointer that is modified with `__restrict` is referred to as a *__restrict pointer*. A __restrict pointer is a pointer that can only be accessed through the \__restrict pointer. In other words, another pointer cannot be used to access the data pointed to by the \__restrict pointer.
 
-`__restrict` can be a powerful tool for the Visual C++ optimizer, but use it with great care. If used improperly, the optimizer might perform an optimization that would break your application.
+`__restrict` can be a powerful tool for the Microsoft C++ optimizer, but use it with great care. If used improperly, the optimizer might perform an optimization that would break your application.
 
 The `__restrict` keyword replaces the **/Oa** switch from previous versions.
 

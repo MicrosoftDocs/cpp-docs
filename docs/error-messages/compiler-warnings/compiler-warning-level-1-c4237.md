@@ -9,7 +9,7 @@ ms.assetid: f2e86c4b-80d8-460e-9429-83c5f3f5d7ca
 
 'keyword' keyword is not yet supported, but reserved for future use
 
-A keyword in the C++ specification is not implemented in the Visual C++ compiler, but the keyword is not available as a user-defined symbol.
+A keyword in the C++ specification is not implemented in the Microsoft C++ compiler, but the keyword is not available as a user-defined symbol.
 
 The following sample generates C4237:
 

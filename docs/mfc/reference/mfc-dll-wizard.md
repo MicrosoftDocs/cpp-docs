@@ -27,7 +27,7 @@ You can perform the following tasks and types of enhancements to a basic MFC DLL
 
 ## See also
 
-[Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual Studio Projects - C++](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
 [Property Pages](../../build/reference/property-pages-visual-cpp.md)<br/>
 [Set compiler and build properties](../../build/working-with-project-properties.md)<br/>
 [MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>

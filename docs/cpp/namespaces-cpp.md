@@ -2,7 +2,7 @@
 title: "Namespaces (C++)"
 ms.date: "08/30/2017"
 f1_keywords: ["namespace_CPP", "using_CPP"]
-helpviewer_keywords: ["namespaces [C++], C++", "namespaces [C++]", "namespaces [C++], global", "global namespace", "Visual C++, namespaces"]
+helpviewer_keywords: ["namespaces [C++]"]
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
 ---
 # Namespaces (C++)

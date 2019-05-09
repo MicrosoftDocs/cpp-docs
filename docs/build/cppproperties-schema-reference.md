@@ -1,7 +1,7 @@
 ---
 title: "CppProperties.json schema reference"
 ms.date: "03/21/2019"
-helpviewer_keywords: ["CMake in Visual C++"]
+helpviewer_keywords: ["CMake in Visual Studio"]
 ---
 
 # CppProperties.json schema reference

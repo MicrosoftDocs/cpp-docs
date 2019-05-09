@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Compiling a Native C++ Program on the Command Line"
+description: "Use the Microsoft C++ compiler from a command prompt."
 ms.custom: "conceptual"
 ms.date: "04/23/2019"
 helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling programs [C++]", "command-line applications [C++], native"]

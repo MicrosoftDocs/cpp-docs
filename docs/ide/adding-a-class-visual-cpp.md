@@ -7,7 +7,7 @@ ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
 ---
 # Add a class
 
-To add a class in a Visual C++ project, in **Solution Explorer**, right-click the project, choose **Add**, and then choose **Class**. This opens the [Add Class dialog box](#add-class-dialog-box).
+To add a class in a Visual Studio C++ project, in **Solution Explorer**, right-click the project, choose **Add**, and then choose **Class**. This opens the [Add Class dialog box](#add-class-dialog-box).
 
 When you add a class, you must specify a name that is different from classes that already exist in MFC or ATL. If you specify a name that already exists in either library, the IDE shows an error message.
 
