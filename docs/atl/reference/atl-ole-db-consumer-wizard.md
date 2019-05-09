@@ -1,11 +1,18 @@
 ---
 title: "ATL OLE DB Consumer Wizard"
-ms.date: "08/31/2018"
-f1_keywords: ["vc.codewiz.class.atl.consumer.overview"]
-helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers", "connection strings [C++], OLE DB consumers", "ATL OLE DB Consumer Wizard"]
+ms.date: "05/09/2019"
+helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers"]
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
 ---
 # ATL OLE DB Consumer Wizard
+
+::: moniker range="vs-2019"
+
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 This wizard sets up an OLE DB consumer class with the data bindings necessary to access the specified data source through the specified OLE DB provider.
 
@@ -170,6 +177,8 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
    - **Delete**
 
       Specifies that the consumer support deletion of rows from the rowset.
+
+::: moniker-end
 
 ## See also
 

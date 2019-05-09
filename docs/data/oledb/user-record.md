@@ -1,10 +1,13 @@
 ---
 title: "User Record"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["records, user", "OLE DB providers, user record", "user records", "user records, described", "rowsets, user record"]
 ms.assetid: 9c0d2864-2738-4f62-a750-1016d9c3523f
 ---
 # User Record
+
+> [!NOTE] 
+> The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 The user record provides the code and data structure that represents the column data for a rowset. A user record can be created at compile time or at run time. When you create a provider using the **ATL OLE DB Provider Wizard**, the wizard creates a default user record that looks like this (assuming you specified a provider name [short name] of *MyProvider*):
 
