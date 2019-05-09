@@ -22,6 +22,9 @@ Defines the container template class forward_list and several supporting templat
 #include <forward_list>
 ```
 
+> [!NOTE]
+> The \<forward_list> library also uses the `#include <initializer_list>` statement.
+
 ### Operators
 
 |Operator|Description|

@@ -20,8 +20,10 @@ Defines the container template class deque and several supporting templates.
 
 ```cpp
 #include <deque>
-
 ```
+
+> [!NOTE]
+> The \<deque> library also uses the `#include <initializer_list>` statement.
 
 ### Operators
 

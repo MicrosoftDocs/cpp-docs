@@ -22,6 +22,9 @@ Defines the container template class list and several supporting templates.
 #include <list>
 ```
 
+> [!NOTE]
+> The \<list> library also uses the `#include <initializer_list>` statement.
+
 ### Operators
 
 |Operator|Description|
@@ -32,6 +35,12 @@ Defines the container template class list and several supporting templates.
 |[operator==](../standard-library/list-operators.md#op_eq_eq)|Tests if the list object on the left side of the operator is equal to the list object on the right side.|
 |[operator>](../standard-library/list-operators.md#op_gt)|Tests if the list object on the left side of the operator is greater than the list object on the right side.|
 |[operator>=](../standard-library/list-operators.md#op_gt_eq)|Tests if the list object on the left side of the operator is greater than or equal to the list object on the right side.|
+
+### Functions
+
+|Function|Description|
+|-|-|
+|[swap](../standard-library/list-functions.md#swap)|Exchanges the elements of two lists.|
 
 ### Classes
 

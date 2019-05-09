@@ -18,6 +18,13 @@ Defines the container template class vector and several supporting templates.
 
 The `vector` is a container that organizes elements of a given type in a linear sequence. It enables fast random access to any element, and dynamic additions and removals to and from the sequence. The `vector` is the preferred container for a sequence when random-access performance is at a premium.
 
+```cpp
+#include <vector>
+```
+
+> [!NOTE]
+> The \<vector> library also uses the `#include <initializer_list>` statement.
+
 For more information about the class `vector`, see [vector Class](../standard-library/vector-class.md). For information about the specialization `vector<bool>`, see [vector\<bool> Class](../standard-library/vector-bool-class.md).
 
 ## Syntax
@@ -106,6 +113,7 @@ The second (right) vector in a compare operation.
 
 |||
 |-|-|
+|[hash]()||
 |[vector\<bool> Class](../standard-library/vector-bool-class.md)|A full specialization of the template class vector for elements of type `bool` with an allocator for the underlying type used by the specialization.|
 
 ## Requirements

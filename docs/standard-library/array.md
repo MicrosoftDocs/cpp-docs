@@ -22,6 +22,9 @@ Defines the container template class **array** and several supporting templates.
 #include <array>
 ```
 
+> [!NOTE]
+> The \<array> library also uses the `#include <initializer_list>` statement.
+
 ### Classes
 
 |Class|Description|
