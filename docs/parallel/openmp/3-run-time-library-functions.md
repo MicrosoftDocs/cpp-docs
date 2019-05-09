@@ -202,7 +202,7 @@ When nested parallelism is enabled, the number of threads used to execute nested
 - [OMP_NESTED](4-environment-variables.md#44-omp_nested)
 - [omp_in_parallel](#316-omp_in_parallel-function)
 
-### <a name="3.1.10-omp_get_nested-function"></a>3.1.10 omp_get_nested function
+### <a name="3110-omp_get_nested-function"></a>3.1.10 omp_get_nested function
 
 The `omp_get_nested` function returns a nonzero value if nested parallelism is enabled and 0 if it's disabled. For more information on nested parallelism, see [omp_set_nested](#319-omp_set_nested-function). The format is as follows:
 
