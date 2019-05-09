@@ -22,6 +22,9 @@ Defines facilities for random number generation, allowing creation of uniformly 
 #include <random>
 ```
 
+> [!NOTE]
+> The \<random> library uses the `#include <initializer_list>' statement.
+
 ## Summary
 
 A *random number generator* is an object that produces a sequence of pseudo-random values. A generator that produces values that are uniformly distributed in a specified range is a *Uniform Random Number Generator* (URNG). A template class designed to function as a URNG is referred to as an *engine* if that class has certain common traits, which are discussed later in this article. A URNG can be—and usually is—combined with a *distribution* by passing the URNG as an argument to the distribution's `operator()` to produce values that are distributed in a manner that is defined by the distribution.

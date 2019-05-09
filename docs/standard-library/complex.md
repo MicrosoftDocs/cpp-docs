@@ -75,7 +75,13 @@ Unless otherwise specified, functions that can return multiple values are requir
 |Function|Description|
 |-|-|
 |[abs](../standard-library/complex-functions.md#abs)|Calculates the modulus of a complex number.|
+|[acos](../standard-library/complex-functions.md#acos)||
+|[acosh](../standard-library/complex-functions.md#acosh)||
 |[arg](../standard-library/complex-functions.md#arg)|Extracts the argument from a complex number.|
+|[asin](../standard-library/complex-functions.md#asin)||
+|[asinh](../standard-library/complex-functions.md#asinh)||
+|[atan](../standard-library/complex-functions.md#atan)||
+|[atanh](../standard-library/complex-functions.md#atanh)||
 |[conj](../standard-library/complex-functions.md#conj)|Returns the complex conjugate of a complex number.|
 |[cos](../standard-library/complex-functions.md#cos)|Returns the cosine of a complex number.|
 |[cosh](../standard-library/complex-functions.md#cosh)|Returns the hyperbolic cosine of a complex number.|
@@ -86,6 +92,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 |[norm](../standard-library/complex-functions.md#norm)|Extracts the norm of a complex number.|
 |[polar](../standard-library/complex-functions.md#polar)|Returns the complex number, which corresponds to a specified modulus and argument, in Cartesian form.|
 |[pow](../standard-library/complex-functions.md#pow)|Evaluates the complex number obtained by raising a base that is a complex number to the power of another complex number.|
+|[proj](../standard-library/complex-functions.md#proj)||
 |[real](../standard-library/complex-functions.md#real)|Extracts the real component of a complex number.|
 |[sin](../standard-library/complex-functions.md#sin)|Returns the sine of a complex number.|
 |[sinh](../standard-library/complex-functions.md#sinh)|Returns the hyperbolic sine of a complex number.|

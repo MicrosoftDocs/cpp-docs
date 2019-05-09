@@ -3,7 +3,7 @@ title: "&lt;complex&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["xcomplex/std::abs", "xcomplex/std::acos", "xcomplex/std::acosh", "xcomplex/std::arg", "xcomplex/std::conj", "xcomplex/std::cos", "xcomplex/std::cosh", "xcomplex/std::exp", "xxcomplex/std::imag", "xcomplex/std::log", "xcomplex/std::log10", "xcomplex/std::norm", "xcomplex/std::polar", "xcomplex/std::pow", "xxcomplex/std::real", "xcomplex/std::sin", "xcomplex/std::sinh", "xcomplex/std::sqrt", "xcomplex/std::tan", "xcomplex/std::tanh"]
+f1_keywords: ["xcomplex/std::abs", "xcomplex/std::acos", "xcomplex/std::acosh", "xcomplex/std::arg", "xcomplex/std::asin", "xcomplex/std::asinh", "xcomplex/std::atan", "xcomplex/std::atanh", "xcomplex/std::conj", "xcomplex/std::cos", "xcomplex/std::cosh", "xcomplex/std::exp", "xxcomplex/std::imag", "xcomplex/std::log", "xcomplex/std::log10", "xcomplex/std::norm", "xcomplex/std::polar", "xcomplex/std::pow", "xcomplex/std::proj", "xxcomplex/std::real", "xcomplex/std::sin", "xcomplex/std::sinh", "xcomplex/std::sqrt", "xcomplex/std::tan", "xcomplex/std::tanh"]
 ms.assetid: 58b14e94-0e0c-493e-8237-8b4d685904a2
 helpviewer_keywords: ["std::abs [C++]", "std::arg [C++]", "std::conj [C++]", "std::cos [C++]", "std::cosh [C++]", "std::exp [C++]", "std::imag [C++]", "std::log [C++]", "std::log10", "std::norm [C++]", "std::polar [C++]", "std::pow [C++]", "std::real [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::tan [C++]", "std::tanh [C++]"]
 ---
@@ -11,12 +11,15 @@ helpviewer_keywords: ["std::abs [C++]", "std::arg [C++]", "std::conj [C++]", "st
 
 ||||
 |-|-|-|
-|[abs](#abs)|[arg](#arg)|[conj](#conj)|
+|[abs](#abs)|[acos](#acos)|[acosh](#acosh)|
+|[arg](#arg)|[asin](#asin)|[asinh](#asinh)|
+|[atan](#atan)|[atanh](#atanh)|[conj](#conj)|
 |[cos](#cos)|[cosh](#cosh)|[exp](#exp)|
 |[imag](#imag)|[log](#log)|[log10](#log10)|
 |[norm](#norm)|[polar](#polar)|[pow](#pow)|
-|[real](#real)|[sin](#sin)|[sinh](#sinh)|
-|[sqrt](#sqrt)|[tan](#tan)|[tanh](#tanh)|
+|[proj](#proj)|[real](#real)|[sin](#sin)|
+|[sinh](#sinh)|[sqrt](#sqrt)|[tan](#tan)|
+|[tanh](#tanh)|||
 
 ## <a name="abs"></a>  abs
 
@@ -105,6 +108,18 @@ arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 The complex numbers c2 & c3 have the same principal arguments.
 ```
 
+## <a name="acos"></a>  acos
+
+```cpp
+template<class T> complex<T> acos(const complex<T>&);
+```
+
+## <a name="acosh"></a>  acosh
+
+```cpp
+template<class T> complex<T> acosh(const complex<T>&);
+```
+
 ## <a name="arg"></a>  arg
 
 Extracts the argument from a complex number.
@@ -190,6 +205,30 @@ The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
 arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 The complex numbers c2 & c3 have the same principal arguments.
+```
+
+## <a name="asin"></a>  asin
+
+```cpp
+template<class T> complex<T> asin(const complex<T>&);
+```
+
+## <a name="asinh"></a>  asinh
+
+```cpp
+template<class T> complex<T> asinh(const complex<T>&);
+```
+
+## <a name="atan"></a>  atan
+
+```cpp
+template<class T> complex<T> atan(const complex<T>&);
+```
+
+## <a name="atanh"></a>  atanh
+
+```cpp
+template<class T> complex<T> atanh(const complex<T>&);
 ```
 
 ## <a name="conj"></a>  conj
@@ -1015,6 +1054,12 @@ Complex number returned from double base and complex power:
 ce4 = cb4 ^ cp4 = (4.07903,-8.98725)
 The modulus of ce4 is: 9.8696
 The argument of ce4 is: -1.14473 radians, which is -65.5882 degrees.
+```
+
+## <a name="proj"></a>  proj
+
+```cpp
+template<class T> complex<T> proj(const complex<T>&);
 ```
 
 ## <a name="real"></a>  real

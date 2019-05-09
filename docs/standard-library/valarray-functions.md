@@ -3,20 +3,21 @@ title: "&lt;valarray&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["valarray/std::abs", "valarray/std::acos", "valarray/std::asin", "valarray/std::atan", "valarray/std::atan2", "valarray/std::cos", "valarray/std::cosh", "valarray/std::exp", "valarray/std::log", "valarray/std::log10", "valarray/std::pow", "valarray/std::sin", "valarray/std::sinh", "valarray/std::sqrt", "valarray/std::swap", "valarray/std::tan", "valarray/std::tanh"]
+f1_keywords: ["valarray/std::abs", "valarray/std::acos", "valarray/std::asin", "valarray/std::atan", "valarray/std::atan2", "valarray/std::begin", "valarray/std::cos", "valarray/std::cosh", "valarray/std::end", "valarray/std::exp", "valarray/std::log", "valarray/std::log10", "valarray/std::pow", "valarray/std::sin", "valarray/std::sinh", "valarray/std::sqrt", "valarray/std::swap", "valarray/std::tan", "valarray/std::tanh"]
 ms.assetid: 109778fc-440e-4239-b23e-bafda2b165c2
-helpviewer_keywords: ["std::abs [C++]", "std::acos [C++]", "std::asin [C++]", "std::atan [C++]", "std::atan2", "std::cos [C++]", "std::cosh [C++]", "std::exp [C++]", "std::log [C++]", "std::log10", "std::pow [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::swap [C++]", "std::tan [C++]", "std::tanh [C++]"]
+helpviewer_keywords: ["std::abs [C++]", "std::acos [C++]", "std::asin [C++]", "std::atan [C++]", "std::atan2", "std::begin [C++]", "std::cos [C++]", "std::cosh [C++]", "std::end [C++]", "std::exp [C++]", "std::log [C++]", "std::log10", "std::pow [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::swap [C++]", "std::tan [C++]", "std::tanh [C++]"]
 ---
 # &lt;valarray&gt; functions
 
 ||||
 |-|-|-|
 |[abs](#abs)|[acos](#acos)|[asin](#asin)|
-|[atan](#atan)|[atan2](#atan2)|[cos](#cos)|
-|[cosh](#cosh)|[exp](#exp)|[log](#log)|
-|[log10](#log10)|[pow](#pow)|[sin](#sin)|
-|[sinh](#sinh)|[sqrt](#sqrt)|[swap](#swap)|
-|[tan](#tan)|[tanh](#tanh)|
+|[atan](#atan)|[atan2](#atan2)|[begin](#begin)|
+|[cos](#cos)|[cosh](#cosh)|[end](#end)|
+|[exp](#exp)|[log](#log)|[log10](#log10)|
+|[pow](#pow)|[sin](#sin)|[sinh](#sinh)|
+|[sqrt](#sqrt)|[swap](#swap)|[tan](#tan)|
+|[tanh](#tanh)|||
 
 ## <a name="abs"></a>  abs
 
@@ -389,6 +390,13 @@ The atan2 ( y / x ) of the initial valarrays is:
  -0.785398  radians, which is          -45degrees
 ```
 
+## <a name="begin"></a>  begin
+
+```cpp
+template <class T> unspecified 1 begin(valarray<T>& v);
+template <class T> unspecified 2 begin(const valarray<T>& v);
+```
+
 ## <a name="cos"></a>  cos
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the cosine of the elements of the input valarray.
@@ -547,6 +555,13 @@ The hyperbolic cosine of the initial valarray is:
 2.50918
 5.32275
 11.592
+```
+
+## <a name="end"></a>  end
+
+```cpp
+template <class T> unspecified 1 end(valarray<T>& v);
+template <class T> unspecified 2 end(const valarray<T>& v);
 ```
 
 ## <a name="exp"></a>  exp
