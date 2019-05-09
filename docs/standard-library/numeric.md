@@ -34,9 +34,17 @@ The algorithms extend the actions that are supported by the operations and membe
 |-|-|
 |[accumulate](../standard-library/numeric-functions.md#accumulate)|Computes the sum of all elements in a specified range—including some initial value—by computing successive partial sums, or computes the result of successive partial results that are obtained by using a specified binary operation instead of the sum operation.|
 |[adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference)|Computes the successive differences between each element and its predecessor in an input range and outputs the results to a destination range, or computes the result of a generalized procedure where the difference operation is replaced by another specified binary operation.|
+|[exclusive_scan](../standard-library/numeric-functions.md#exclusive_scan)||
+|[gcd](../standard-library/numeric-functions.md#gcd||
+|[inclusive_scan](../standard-library/numeric-functions.md#inclusive_scan)||
 |[inner_product](../standard-library/numeric-functions.md#inner_product)|Computes the sum of the element-wise product of two ranges and adds it to a specified initial value, or computes the result of a generalized procedure where the sum and product operations are replaced by other specified binary operations.|
 |[iota](../standard-library/numeric-functions.md#iota)|Stores a starting value, beginning with the first element and filling with successive increments of the value (`value++`) in each of the elements in the interval `[first, last)`.|
+|[lcm](../standard-library/numeric-functions.md#lcm||
 |[partial_sum](../standard-library/numeric-functions.md#partial_sum)|Computes a series of sums in an input range from the first element through the *i*th element and stores the result of each sum in the *i*th element of a destination range, or computes the result of a generalized procedure where the sum operation is replaced by another specified binary operation.|
+|[reduce](../standard-library/numeric-functions.md#reduce)||
+|[transform_exclusive_scan](../standard-library/numeric-functions.md#transform_exclusive_scan)||
+|[transform_inclusive_scan](../standard-library/numeric-functions.md#transform_inclusive_scan)||
+|[transform_reduce](../standard-library/numeric-functions.md#transform_reduce)||
 
 ## See also
 

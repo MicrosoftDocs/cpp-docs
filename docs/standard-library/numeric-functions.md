@@ -3,16 +3,19 @@ title: "&lt;numeric&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["numeric/std::accumulate", "numeric/std::adjacent_difference", "numeric/std::inner_product", "numeric/std::iota", "numeric/std::partial_sum"]
+f1_keywords: ["numeric/std::accumulate", "numeric/std::adjacent_difference", "numeric/std::exclusive_scan", "numeric/std::gcd", "numeric/std::inclusive_scan", "numeric/std::inner_product", "numeric/std::iota", "numeric/std::lcm", "numeric/std::partial_sum", "numeric/std::reduce", "numeric/std::transform_exclusive_scan", "numeric/std::transform_inclusive_scan", "numeric/std::transform_reduce"]
 ms.assetid: a4b0449a-c80c-4a1d-8d9f-d7fcd0058f8b
-helpviewer_keywords: ["std::accumulate [C++]", "std::adjacent_difference [C++]", "std::inner_product [C++]", "std::iota [C++]", "std::partial_sum [C++]"]
+helpviewer_keywords: ["std::accumulate [C++]", "std::adjacent_difference [C++]", "std::exclusive_scan [C++]", "std::gcd [C++]", "std::inclusive_scan [C++]", "std::inner_product [C++]", "std::iota [C++]", "std::lcm [C++]", "std::partial_sum [C++]", "std::reduce [C++]", "std::transform_exclusive_scan [C++]", "std::transform_inclusive_scan [C++]", "std::transform_reduce [C++]"]
 ---
 # &lt;numeric&gt; functions
 
 ||||
 |-|-|-|
-|[accumulate](#accumulate)|[adjacent_difference](#adjacent_difference)|[inner_product](#inner_product)|
-|[iota](#iota)|[partial_sum](#partial_sum)|
+|[accumulate](#accumulate)|[adjacent_difference](#adjacent_difference)|[exclusive_scan](#exclusive_scan)|
+|[gcd](#gcd)|[inclusive_scan](#inclusive_scan)|[inner_product](#inner_product)|
+|[iota](#iota)|[lcm](#lcm)|[partial_sum](#partial_sum)|
+|[reduce](#reduce)|[transform_exclusive_scan](#transform_exclusive_scan)|[transform_inclusive_scan](#transform_inclusive_scan)|
+|[transform_reduce](#transform_reduce)|||
 
 ## <a name="accumulate"></a>  accumulate
 
@@ -259,6 +262,69 @@ int main( )
 }
 ```
 
+## <a name="exclusive_scan"></a>  exclusive_scan
+
+```cpp
+template<class InputIterator, class OutputIterator, class T>
+OutputIterator exclusive_scan(InputIterator first, InputIterator last,
+OutputIterator result,
+T init);
+template<class InputIterator, class OutputIterator, class T, class BinaryOperation>
+OutputIterator exclusive_scan(InputIterator first, InputIterator last,
+OutputIterator result,
+T init, BinaryOperation binary_op);
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class T>
+ForwardIterator2 exclusive_scan(ExecutionPolicy&& exec, 
+ForwardIterator1 first, ForwardIterator1 last,
+ForwardIterator2 result,
+T init);
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2, class T,
+class BinaryOperation>
+ForwardIterator2 exclusive_scan(ExecutionPolicy&& exec, 
+ForwardIterator1 first, ForwardIterator1 last,
+ForwardIterator2 result,
+T init, BinaryOperation binary_op);
+```
+
+## <a name="gcd"></a>  gcd
+
+```cpp
+template <class M, class N>
+constexpr common_type_t<M,N> gcd(M m, N n);
+```
+
+## <a name="inclusive_scan"></a>  inclusive_scan
+
+```cpp
+template<class InputIterator, class OutputIterator>
+OutputIterator inclusive_scan(InputIterator first, InputIterator last,
+OutputIterator result);
+template<class InputIterator, class OutputIterator, class BinaryOperation>
+OutputIterator inclusive_scan(InputIterator first, InputIterator last,
+OutputIterator result,
+BinaryOperation binary_op);
+template<class InputIterator, class OutputIterator, class BinaryOperation, class T>
+OutputIterator inclusive_scan(InputIterator first, InputIterator last,
+OutputIterator result,
+BinaryOperation binary_op, T init);
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
+ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
+ForwardIterator1 first, ForwardIterator1 last,
+ForwardIterator2 result);
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
+class BinaryOperation>
+ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
+ForwardIterator1 first, ForwardIterator1 last,
+ForwardIterator2 result,
+BinaryOperation binary_op);
+template<class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
+class BinaryOperation, class T>
+ForwardIterator2 inclusive_scan(ExecutionPolicy&& exec, 
+ForwardIterator1 first, ForwardIterator1 last,
+ForwardIterator2 result,
+BinaryOperation binary_op, T init);
+```
+
 ## <a name="inner_product"></a>  inner_product
 
 Computes the sum of the element-wise product of two ranges and adds it to a specified initial value or computes the result of a generalized procedure where the sum and product binary operations are replaced by other specified binary operations.
@@ -473,6 +539,13 @@ int main(void)
 }
 ```
 
+## <a name="lcm"></a>  lcm
+
+```cpp
+template <class M, class N>
+constexpr common_type_t<M,N> lcm(M m, N n);
+```
+
 ## <a name="partial_sum"></a>  partial_sum
 
 Computes a series of sums in an input range from the first element through the *i*th element and stores the result of each such sum in the *i*th element of a destination range or computes the result of a generalized procedure where the sum operation is replaced by another specified binary operation.
@@ -578,6 +651,129 @@ int main( )
       cout << *LIter1 << " ";
    cout << ")." << endl;
 }
+```
+
+## <a name="reduce"></a>  reduce
+
+```cpp
+template<class InputIterator>
+typename iterator_traits<InputIterator>::value_type
+reduce(InputIterator first, InputIterator last);
+template<class InputIterator, class T>
+T reduce(InputIterator first, InputIterator last, T init);
+template<class InputIterator, class T, class BinaryOperation>
+T reduce(InputIterator first, InputIterator last, T init,
+BinaryOperation binary_op);
+template<class ExecutionPolicy, class ForwardIterator>
+typename iterator_traits<ForwardIterator>::value_type
+reduce(ExecutionPolicy&& exec, 
+ForwardIterator first, ForwardIterator last);
+template<class ExecutionPolicy, class ForwardIterator, class T>
+T reduce(ExecutionPolicy&& exec, 
+ForwardIterator first, ForwardIterator last, T init);
+template<class ExecutionPolicy, class ForwardIterator, class T, class BinaryOperation>
+T reduce(ExecutionPolicy&& exec, 
+ForwardIterator first, ForwardIterator last, T init,
+BinaryOperation binary_op);
+```
+
+## <a name="transform_exclusive_scan"></a>  transform_exclusive_scan
+
+```cpp
+template<class InputIterator, class OutputIterator, class T,
+class BinaryOperation, class UnaryOperation>
+OutputIterator transform_exclusive_scan(InputIterator first, InputIterator last,
+OutputIterator result,
+T init,
+BinaryOperation binary_op,
+UnaryOperation unary_op);
+template<class ExecutionPolicy,
+class ForwardIterator1, class ForwardIterator2, class T,
+class BinaryOperation, class UnaryOperation>
+ForwardIterator2 transform_exclusive_scan(ExecutionPolicy&& exec, 
+ForwardIterator1 first, ForwardIterator1 last,
+ForwardIterator2 result,
+T init,
+BinaryOperation binary_op,
+UnaryOperation unary_op);
+```
+
+## <a name="transform_inclusive_scan"></a>  transform_inclusive_scan
+
+```cpp
+template<class InputIterator, class OutputIterator,
+class BinaryOperation, class UnaryOperation>
+OutputIterator transform_inclusive_scan(InputIterator first, InputIterator last,
+OutputIterator result,
+BinaryOperation binary_op,
+UnaryOperation unary_op);
+template<class InputIterator, class OutputIterator,
+class BinaryOperation, class UnaryOperation, class T>
+OutputIterator transform_inclusive_scan(InputIterator first, InputIterator last,
+OutputIterator result,
+BinaryOperation binary_op,
+UnaryOperation unary_op,
+T init);
+template<class ExecutionPolicy,
+class ForwardIterator1, class ForwardIterator2,
+class BinaryOperation, class UnaryOperation>
+ForwardIterator2 transform_inclusive_scan(ExecutionPolicy&& exec, 
+ForwardIterator1 first, ForwardIterator1 last,
+ForwardIterator2 result,
+BinaryOperation binary_op,
+UnaryOperation unary_op);
+template<class ExecutionPolicy,
+class ForwardIterator1, class ForwardIterator2,
+class BinaryOperation, class UnaryOperation, class T>
+ForwardIterator2 transform_inclusive_scan(ExecutionPolicy&& exec, 
+ForwardIterator1 first, ForwardIterator1 last,
+ForwardIterator2 result,
+BinaryOperation binary_op,
+UnaryOperation unary_op,
+T init);
+```
+
+## <a name="transform_reduce"></a>  transform_reduce
+
+```cpp
+template<class InputIterator1, class InputIterator2, class T>
+T transform_reduce(InputIterator1 first1, InputIterator1 last1,
+InputIterator2 first2,
+T init);
+template<class InputIterator1, class InputIterator2, class T,
+class BinaryOperation1, class BinaryOperation2>
+T transform_reduce(InputIterator1 first1, InputIterator1 last1,
+InputIterator2 first2,
+T init,
+BinaryOperation1 binary_op1,
+BinaryOperation2 binary_op2);
+template<class InputIterator, class T,
+class BinaryOperation, class UnaryOperation>
+T transform_reduce(InputIterator first, InputIterator last,
+T init,
+BinaryOperation binary_op, UnaryOperation unary_op);
+template<class ExecutionPolicy,
+class ForwardIterator1, class ForwardIterator2, class T>
+T transform_reduce(ExecutionPolicy&& exec, 
+ForwardIterator1 first1, ForwardIterator1 last1,
+ForwardIterator2 first2,
+T init);
+template<class ExecutionPolicy,
+class ForwardIterator1, class ForwardIterator2, class T,
+class BinaryOperation1, class BinaryOperation2>
+T transform_reduce(ExecutionPolicy&& exec, 
+ForwardIterator1 first1, ForwardIterator1 last1,
+ForwardIterator2 first2,
+T init,
+BinaryOperation1 binary_op1,
+BinaryOperation2 binary_op2);
+template<class ExecutionPolicy,
+class ForwardIterator, class T,
+class BinaryOperation, class UnaryOperation>
+T transform_reduce(ExecutionPolicy&& exec, 
+ForwardIterator first, ForwardIterator last,
+T init,
+BinaryOperation binary_op, UnaryOperation unary_op);
 ```
 
 ## See also
