@@ -12,10 +12,12 @@ helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::be
 ||||
 |-|-|-|
 |[advance](#advance)|[back_inserter](#back_inserter)|[begin](#begin)|
-|[cbegin](#cbegin)|[cend](#cend)|[distance](#distance)|
-|[end](#end)|[front_inserter](#front_inserter)|[inserter](#inserter)|
-|[make_checked_array_iterator](#make_checked_array_iterator)|[make_move_iterator](#make_move_iterator)|[make_unchecked_array_iterator](#make_unchecked_array_iterator)|
-|[next](#next)|[prev](#prev)|
+|[cbegin](#cbegin)|[cend](#cend)|[crbegin](#crbegin)|
+[crend](#crend)|[data](#data)|[distance](#distance)|
+|[empty](#empty)|[end](#end)|[front_inserter](#front_inserter)|
+|[inserter](#inserter)|[make_checked_array_iterator](#make_checked_array_iterator)|[make_move_iterator](#make_move_iterator)|
+|[make_unchecked_array_iterator](#make_unchecked_array_iterator)|[next](#next)|[prev](#prev)|
+|[rbegin](#rbegin)|[rend](#rend)|[size](#size)|
 
 ## <a name="advance"></a>  advance
 
@@ -330,6 +332,27 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
+## <a name="crbegin"></a>  crbegin
+
+```cpp
+template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));
+```
+
+## <a name="crend"></a>  crend
+
+```cpp
+template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));
+```
+
+## <a name="data"></a>  data
+
+```cpp
+template <class C> constexpr auto data(C& c) -> decltype(c.data());
+template <class C> constexpr auto data(const C& c) -> decltype(c.data());
+template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;
+template <class E> constexpr const E* data(initializer_list<E> il) noexcept;
+```
+
 ## <a name="distance"></a>  distance
 
 Determines the number of increments between the positions addressed by two iterators.
@@ -401,6 +424,14 @@ The list L is: ( -2 0 2 4 6 8 10 12 14 16 ).
 The iterator LPOS initially points to the first element: -2.
 LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.
+```
+
+## <a name="empty"></a>  empty
+
+```cpp
+template <class C> constexpr auto empty(const C& c) -> decltype(c.empty());
+template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;
+template <class E> constexpr bool empty(initializer_list<E> il) noexcept;
 ```
 
 ## <a name="end"></a>  end
@@ -823,6 +854,27 @@ The number of times to iterate.
 ### Remarks
 
 The template function returns `next` decremented `off` times.
+
+## <a name="rbegin"></a>  rbegin
+
+```cpp
+template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());
+template <class C> constexpr auto rbegin(const C& c) -> decltype(c.rbegin());
+```
+
+## <a name="rend"></a>  rend
+
+```cpp
+template <class C> constexpr auto rend(C& c) -> decltype(c.rend());
+template <class C> constexpr auto rend(const C& c) -> decltype(c.rend());
+```
+
+## <a name="size"></a>  size
+
+```cpp
+template <class C> constexpr auto size(const C& c) -> decltype(c.size());
+template <class T, size_t N> constexpr size_t size(const T (&array)[N]) noexcept;
+```
 
 ## See also
 

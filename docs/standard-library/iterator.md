@@ -20,7 +20,6 @@ Defines the iterator primitives, predefined iterators and stream iterators, as w
 
 ```cpp
 #include <iterator>
-
 ```
 
 ## Remarks
@@ -50,8 +49,12 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 |[begin](../standard-library/iterator-functions.md#begin)|Retrieves an iterator to the first element in a specified container.|
 |[cbegin](../standard-library/iterator-functions.md#cbegin)|Retrieves a constant iterator to the first element in a specified container.|
 |[cend](../standard-library/iterator-functions.md#cend)|Retrieves a constant iterator to the element that follows the last element in the specified container.|
+|[crbegin](../standard-library/iterator-functions.md#crbegin)||
+|[crend](../standard-library/iterator-functions.md#crend)||
+|[data](../standard-library/iterator-functions.md#data)||
 |[distance](../standard-library/iterator-functions.md#distance)|Determines the number of increments between the positions addressed by two iterators.|
 |[end](../standard-library/iterator-functions.md#end)|Retrieves an iterator to the element that follows the last element in the specified container.|
+|[empty](../standard-library/iterator-functions.md#empty)||
 |[front_inserter](../standard-library/iterator-functions.md#front_inserter)|Creates an iterator that can insert elements at the front of a specified container.|
 |[inserter](../standard-library/iterator-functions.md#inserter)|An iterator adaptor that adds a new element to a container at a specified point of insertion.|
 |[make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator)|Creates a [checked_array_iterator](../standard-library/checked-array-iterator-class.md) that can be used by other algorithms. **Note:**  This function is a Microsoft extension of the C++ Standard Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension.|
@@ -59,6 +62,9 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 |[make_unchecked_array_iterator](../standard-library/iterator-functions.md#make_unchecked_array_iterator)|Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms. **Note:**  This function is a Microsoft extension of the C++ Standard Library. Code implemented by using this function is not portable to C++ Standard build environments that do not support this Microsoft extension.|
 |[next](../standard-library/iterator-functions.md#next)|Iterates a specified number of times and returns the new iterator position.|
 |[prev](../standard-library/iterator-functions.md#prev)|Iterates in reverse a specified number of times and returns the new iterator position.|
+|[rbegin](../standard-library/iterator-functions.md#rbegin)||
+|[rend](../standard-library/iterator-functions.md#rend)||
+|[size](../standard-library/iterator-functions.md#size)||
 
 ### Operators
 

@@ -20,8 +20,10 @@ Defines the template class stack and two supporting templates.
 
 ```cpp
 #include <stack>
-
 ```
+
+> [!NOTE]
+> The \<stack> library also uses the `#include <initializer_list>` statement.
 
 ### Operators
 
@@ -33,6 +35,12 @@ Defines the template class stack and two supporting templates.
 |[operator==](../standard-library/stack-operators.md#op_eq_eq)|Tests if the stack object on the left side of the operator is equal to the stack object on the right side.|
 |[operator>](../standard-library/stack-operators.md#op_gt)|Tests if the stack object on the left side of the operator is greater than the stack object on the right side.|
 |[operator>=](../standard-library/stack-operators.md#op_gt_eq)|Tests if the stack object on the left side of the operator is greater than or equal to the stack object on the right side.|
+
+### Functions
+
+|Function|Description|
+|-|-|
+|[swap]()||
 
 ### Classes
 

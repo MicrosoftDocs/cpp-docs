@@ -20,8 +20,10 @@ Defines the template classes priority_queue and queue and several supporting tem
 
 ```cpp
 #include <queue>
-
 ```
+
+> [!NOTE]
+> The \<queue> library also uses the `#include <initializer_list>` statement.
 
 ### Operators
 
@@ -33,6 +35,12 @@ Defines the template classes priority_queue and queue and several supporting tem
 |[operator==](../standard-library/queue-operators.md#op_eq_eq)|Tests if the queue object on the left side of the operator is equal to the queue object on the right side.|
 |[operator>](../standard-library/queue-operators.md#op_gt)|Tests if the queue object on the left side of the operator is greater than the queue object on the right side.|
 |[operator>=](../standard-library/queue-operators.md#op_gt_eq)|Tests if the queue object on the left side of the operator is greater than or equal to the queue object on the right side.|
+
+### Functions
+
+|Function|Description|
+|-|-|
+|[swap]()||
 
 ### Classes
 
