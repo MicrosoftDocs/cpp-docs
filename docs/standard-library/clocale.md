@@ -20,12 +20,36 @@ Includes the Standard C library header \<locale.h> and adds the associated names
 
 ```cpp
 #include <clocale>
-
 ```
 
 ## Remarks
 
 Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
+
+## Constants
+
+```cpp
+#define NULL see below
+#define LC_ALL see below
+#define LC_COLLATE see below
+#define LC_CTYPE see below
+#define LC_MONETARY see below
+#define LC_NUMERIC see below
+#define LC_TIME see below
+```
+
+## Structures
+
+```cpp
+struct lconv;
+```
+
+## Functions
+
+```cpp
+char* setlocale(int category, const char* locale);
+lconv* localeconv();
+```
 
 ## See also
 
