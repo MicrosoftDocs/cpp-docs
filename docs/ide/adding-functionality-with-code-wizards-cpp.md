@@ -1,16 +1,25 @@
 ---
 title: "Adding Functionality with Code Wizards (C++)"
-ms.date: "10/03/2018"
-f1_keywords: ["vc.codewiz.classes"]
-helpviewer_keywords: ["code wizards [C++]", "wizards [C++], code", "Visual Studio C++ projects, adding functionality", "projects [C++], adding functionality", "class wizards [C++]"]
+ms.date: "05/09/2019"
+helpviewer_keywords: ["code wizards [C++]"]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
 ---
 # Adding Functionality with Code Wizards (C++)
 
 Once you have created a project, you will want to change or add to that project's functionality. Such tasks include creating new classes, adding new member functions and variables, and adding Automation methods and properties. The code wizards are designed to let you do all these things.
 
-> [!WARNING]
-> Several ATL and MFC code wizards are now deprecated and will be removed in a future version of Visual Studio. These wizards are rarely used. General support for ATL and MFC is not impacted by the removal of these wizards. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+> [!NOTE]
+> The following rarely-used code wizards are removed in Visual Studio 2019. General support for ATL and MFC is not impacted by the removal of these wizards. Sample code for these technologies is archived at Microsoft Docs and the VCSamples GitHub repository.
+
+- ATL COM+ 1.0 Component Wizard
+- ATL Active Server Pages Component Wizard
+- ATL OLE DB Provider Wizard
+- ATL Property Page Wizard
+- ATL OLE DB Consumer Wizard
+- MFC ODBC Consumer
+- MFC class from ActiveX control
+- MFC class from Type Lib.
+
 
 > [!NOTE]
 >  You can now add message handlers and map messages to them and override MFC virtual functions using the [Properties window](/visualstudio/ide/reference/properties-window).
