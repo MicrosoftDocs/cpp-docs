@@ -1,6 +1,6 @@
 ---
 title: "What's New for C++ in Visual Studio 2019"
-ms.date: "05/09/2019"
+ms.date: "05/13/2019"
 ms.technology: "cpp-ide"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: "mikeblome"
@@ -31,17 +31,11 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
 - Implementation of additional C++17 and C++20 library features and correctness fixes. For detailed information, see [C++ Conformance Improvements in Visual Studio 2019](../cpp-conformance-improvements.md).
 
-- Improvements to `std::variant` to make it more optimizer-friendly, resulting in better generated code. Code inlining is now much better with `std::visit`.
-
 - Clang-Format has been applied to the C++ Standard Library headers for improved readability.
 
-- Improved throughput when several standard library features are compiled using `if constexpr`.
+- Because Visual Studio now supports Just My Code for C++, the Standard Library no longer needs to provide the custom machinery for `std::function` and `std::visit` to achieve the same effect. Removing that machinery largely has no user-visible effects, except that the compiler will no longer produce diagnostics that indicate issues on line 15732480 or 16707566 of \<type_traits> or \<variant>.
 
-- Optimized the standard library physical design to avoid compiling parts of the standard library not #include'd, cutting in half the build time of an empty file that includes only \<vector>.
-
-- With the advent of the Just My Code stepping feature, we no longer need to provide bespoke machinery for `std::function` and `std::visit` to achieve the same effect. Removing that machinery largely has no user-visible effects, except that the compiler will no longer produce diagnostics that indicate issues on line 15732480 or 16707566 of <type_traits> or <variant>.
-
-## Performance/throughput fixes
+## Performance/throughput improvements in the compiler and Standard Library
 
 - Build throughput improvements, including the way the linker handles File I/O, and link time in PDB type merging and creation.
 
@@ -62,6 +56,32 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
   - Improved removal of useless struct/class copies, especially for C++ programs that pass by value.
 
   - Improved optimization of code using `memmove`, such as `std::copy` or `std::vector` and `std::string` construction.
+
+- Optimized the Standard Library physical design to avoid compiling parts of the Standard Library not #include'd, cutting in half the build time of an empty file that includes only \<vector>.
+
+- `if constexpr` was applied in more places in the Standard Library for improved throughput and reduced code size in the copy family, permutations like reverse and rotate, and in the parallel algorithms library. 
+
+-The STL now internally uses `if constexpr` to reduce compile times even in C++14 mode.
+
+- The runtime dynamic linking detection for the parallel algorithms library no longer uses an entire page to store the function pointer array. Marking this memory read-only was deemed no longer relevant for security purposes.
+
+- `std::thread`'s constructor no longer waits for the thread to start, and no longer inserts so many layers of function calls between the underlying C library `_beginthreadex` and the supplied callable object. Previously `std::thread` put 6 functions between `_beginthreadex` and the supplied callable object, which has been reduced to only 3 (2 of which are just `std::invoke`). This also resolves an obscure timing bug where `std::thread`'s constructor would hang if the system clock changed at the exact moment a `std::thread` was being created.
+
+- Fixed a performance regression in `std::hash` that we introduced when implementing `std::hash<std::filesystem::path>`.
+
+- Several places the Standard Library used to achieve correctness with catch blocks now use destructors instead. This results in better debugger interaction; exceptions you throw through the Standard Library in the affected locations will now show up as being thrown from their original throw site, rather than our rethrow. Not all Standard Library catch blocks have been eliminated; we expect the number of catch blocks to be reduced in subsequent releases of MSVC.
+
+- Suboptimal codegen in std::bitset caused by a conditional throw inside a noexcept function was fixed by factoring out the throwing path.
+
+- The `std::list` and `std::unordered_meow` family use non-debugging iterators internally in more places.
+
+- Several `std::list` members were changed to reuse list nodes where possible rather than deallocating and reallocating them. For example, given a `list<int>` that already has a size of 3, a call to `assign(4, 1729)` will now overwrite the ints in the first 3 list nodes, and allocate one new list node with the value 1729, rather than deallocating all 3 list nodes and then allocating 4 new list nodes with the value 1729.
+
+- All locations the Standard Library was calling `erase(begin(), end())` were changed to call `clear()` instead.
+
+- `std::vector` now initializes and erases elements more efficiently in certain cases.
+
+- Improvements to `std::variant` to make it more optimizer-friendly, resulting in better generated code. Code inlining is now much better with `std::visit`.
 
 ## C++ IDE
 

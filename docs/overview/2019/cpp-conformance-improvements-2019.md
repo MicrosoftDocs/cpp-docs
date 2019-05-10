@@ -14,8 +14,6 @@ Visual Studio 2019 RTW contains the following conformance improvements, bug fixe
 
 **Note:** C++20 features will be made available in `/std:c++latest` mode until the C++20 implementation is complete for both the compiler and IntelliSense. At that time, the `/std:c++20` compiler mode will be introduced.
 
-## Conformance improvements
-
 ### Improved modules support for templates and error detection
 
 Modules are now officially in the C++20 standard. Improved support was added in Visual Studio 2017 version 15.9. For more information, see [Better template support and error detection in C++ Modules with MSVC 2017 version 15.9](https://devblogs.microsoft.com/cppblog/better-template-support-and-error-detection-in-c-modules-with-msvc-2017-version-15-9/).
@@ -138,17 +136,119 @@ New parallel versions of `is_sorted`, `is_sorted_until`, `is_partitioned`, `set_
 
 ### atomic initialization
 
-[P0883](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0883r1.pdf) "Fixing atomic initialization", changes `std::atomic` to value-initialize the contained T rather than default-initializing it. The fix is enabled when using Clang/LLVM with the Microsoft Standard Library. It is currently disabled for the Microsoft C++ compiler as a workaround for a bug in constexpr processing.
+[P0883 "Fixing atomic initialization"](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0883r1.pdf) changes `std::atomic` to value-initialize the contained T rather than default-initializing it. The fix is enabled when using Clang/LLVM with the Microsoft Standard Library. It is currently disabled for the Microsoft C++ compiler as a workaround for a bug in constexpr processing.
 
 ### remove_cvref and remove_cvref_t
 
-Implemented the `remove_cvref` and `remove_cvref_t` type traits from P0550(http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf). These remove reference-ness and cv-qualification from a type without decaying functions and arrays to pointers (unlike `std::decay` and `std::decay_t` do).
+Implemented the `remove_cvref` and `remove_cvref_t` type traits from [P0550](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf). These remove reference-ness and cv-qualification from a type without decaying functions and arrays to pointers (unlike `std::decay` and `std::decay_t`).
 
-- [P0941R2 - feature-test macros](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0941r2.html) is complete, with support for `__has_cpp_attribute`. Feature-test macros are supported in all Standard modes.
+### Feature-test macros
 
-- [C++20 P1008R1 - prohibiting aggregates with user-declared constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1008r1.pdf) is complete.
+[P0941R2 - feature-test macros](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0941r2.html) is complete, with support for `__has_cpp_attribute`. Feature-test macros are supported in all Standard modes.
 
-## Bug fixes and behavior changes
+### Prohibit aggregates with user-declared constructors
+
+[C++20 P1008R1 - prohibiting aggregates with user-declared constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1008r1.pdf) is complete.
+
+## <a name="improvements_161"></a> Improvements in Visual Studio 2019 version 16.1
+
+### char8_t
+
+C++20 adds a new character type that is used to represent UTF-8 code units. u8 string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case up until C++17 [P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). The C standard makes similar changes in [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Suggestions for char8_t backward compatibility remediation are given in [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). The Microsoft C++ compiler adds support for char8_t in Visual Studio 2019 version 16.1 when you specify the **/Zc:char8_t** compiler option. In the future, it will be supported with [/std:c++latest](../../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **/Zc:char8_t-**. The EDG compiler which powers IntelliSense does not yet support it, so you will see spurious IntelliSense-only errors which do not impact the actual compilation.
+
+#### Example
+
+```cpp
+const char* s = u8"Hello"; //C++17
+const char8_t* s = u8"Hello"; // C++20
+```
+
+### std::type_identity metafunction and std::identity function object
+
+The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md). 
+
+The following example produces deprecation warning C4996 for `std::identity` (defined in \<type_traits>) in Visual Studio 2017: 
+
+```cpp
+#include <type_traits>
+
+using T = std::identity<int>::type;
+T x, y = std::identity<T>{}(x);
+int i = 42;
+long j = std::identity<long>{}(i);
+```
+
+The following example shows how to use the new `std::identity` (defined in \<functional>) together with the new `std::type_identity`:
+
+```cpp
+#include <type_traits>
+#include <functional>
+
+using T = std::type_identity<int>::type;
+T x, y = std::identity{}(x);
+int i = 42;
+long j = static_cast<long>(i);
+```
+
+### Syntax checks for generic lambdas
+
+The new lambda preprocessor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or with or with **/experimental:newLambdaProcessor**. 
+
+In Visual Studio 2017, this code compiles without warnings, but in Visual Studo 2019 it produces *error C2760: syntax error: unexpected token '\<id-expr>', expected 'id-expression'*
+
+```cpp
+void f() {
+    auto a = [](auto arg) {
+        decltype(arg)::Type t;
+    };
+}
+```
+
+The following example shows the correct syntax, now enforced by the compiler:
+
+```cpp
+void f() {
+    auto a = [](auto arg) {
+        typename decltype(arg)::Type t;
+    };
+}
+```
+
+### Mac line endings in the editor
+
+'\r' (Mac line ending) is now recognized in addition to '\r\n' (Windows line ending) and '\n' (Linux line ending). This change is to help compile files with mixed line ending.
+
+```cpp
+#include <assert.h>
+#include <string.h>
+
+auto s = "
+"; // this is not a valid string literal
+
+int main()
+{
+    assert(strcmp(s, "\r") == 0);
+}
+
+(assume '\r' follows 'auto s = "' in the file)
+
+```
+
+After:
+
+```cpp
+#include <assert.h>
+#include <string.h>
+
+auto s = "\r"; // this is what 's' used to have
+
+int main()
+{
+    assert(strcmp(s, "\r") == 0);
+}
+```
+
+## Bug fixes and behavior changes in Visual Studio 2019 RTW
 
 ### Correct diagnostics for basic_string range constructor
 
@@ -170,7 +270,7 @@ for (wchar_t ch : ws)
 }
 ```
 
-### Incorrect calls to += and -= under /clr or /ZW are now correctly detected.
+### Incorrect calls to += and -= under /clr or /ZW are now correctly detected
 
 A bug was introduced in Visual Studio 2017 which caused the compiler to silently ignore errors and generate no code for the invalid calls to += and -= under `/clr` or `/ZW`. The following code compiles without errors in Visual Studio 2017 but in Visual Studio 2019 it correctly raises *error C2845: 'System::String ^': pointer arithmetic not allowed on this type*:
 
@@ -182,6 +282,7 @@ void f(System::String ^s)
     s += E::e; // C2845 in VS2019
 }
 ```
+
 To avoid the error in this example, use the operator with the ToString() method: `s += E::e.ToString();`.
 
 ### Initializers for inline static data members
@@ -210,6 +311,7 @@ struct X
         static inline const int c = 1000;
 };
 ```
+
 ### C4800 reinstated
 
 MSVC used to have a performance warning C4800 about implicit conversion to bool that was too noisy and insuppressible, leading us to remove it in Visual Studio 2017. However, over the lifecycle of Visual Studio 2017 we got a lot of feedback on the useful cases it was solving. We bring back in Visual Studio 2019 a carefully tailored C4800 along with its accompanying C4165, both of which can be easily suppressed with either an explicit cast or comparison to 0 of the appropriate type. C4800 is an off-by-default level 4 warning, and C4165 is an off-by-default level 3 warning. Both are discoverable by using the `/Wall` compiler option.
@@ -225,6 +327,7 @@ bool test(IUnknown* p)
     return hr; // warning C4165: 'HRESULT' is being converted to 'bool'; are you sure this is what you want?
 }
 ```
+
 To avoid the warnings in the previous example, you can write the code like this:
 
 ```cpp
@@ -354,7 +457,7 @@ The iterator debugging feature has been taught to properly unwrap `std::move_ite
 
 ### Fixes for \<xkeycheck.h> keyword enforcement
 
-The Standard Library’s macro-ized keyword enforcement <xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
+The Standard Library’s macro-ized keyword enforcement \<xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
 
 ### Allocator types un-deprecated
 
@@ -390,8 +493,8 @@ Some conditions that would cause `std::linear_congruential_engine` to trigger di
 
 ### Fixes for iterator unwrapping
 
-The iterator unwrapping machinery that was first exposed for programmer-user integration in Visual Studio 2017 15.8 (as described in https://devblogs.microsoft.com/cppblog/stl-features-and-fixes-in-vs-2017-15-8/ ) no longer unwraps iterators derived from standard library iterators. For example, a user that derives from std::vector<int>::iterator and tries to customize behavior now gets their customized behavior when calling standard library algorithms, rather than the behavior of a pointer.
-The unordered container reserve function now actually reserves for N elements, as described in LWG 2156.
+The iterator unwrapping machinery that was first exposed for programmer-user integration in Visual Studio 2017 15.8 (as described in https://devblogs.microsoft.com/cppblog/stl-features-and-fixes-in-vs-2017-15-8/ ) no longer unwraps iterators derived from standard library iterators. For example, a user that derives from `std::vector<int>::iterator` and tries to customize behavior now gets their customized behavior when calling standard library algorithms, rather than the behavior of a pointer.
+The unordered container reserve function now actually reserves for N elements, as described in [LWG 2156](https://cplusplus.github.io/LWG/issue2156).
 
 ### Time handling
 
@@ -401,7 +504,7 @@ The unordered container reserve function now actually reserves for N elements, a
 
 ### Various fixes for containers
 
-- Many STL internal container functions have been made private for an improved IntelliSense experience. Additional fixes to mark members as private are expected in subsequent releases of MSVC.
+- Many Standard Library internal container functions have been made private for an improved IntelliSense experience. Additional fixes to mark members as private are expected in subsequent releases of MSVC.
 
 - Exception safety correctness problems wherein the node-based containers like `list`, `map`, and `unordered_map` would become corrupted were fixed. During a `propagate_on_container_copy_assignment` or `propagate_on_container_move_assignment` reassignment operation, we would free the container’s sentinel node with the old allocator, do the POCCA/POCMA assignment over the old allocator, and then try to acquire the sentinel node from the new allocator. If this allocation failed, the container is corrupted and can’t even be destroyed, as owning a sentinel node is a hard data structure invariant. This was fixed to allocate the new sentinel node from the source container’s allocator before destroying the existing sentinel node.
 
@@ -423,104 +526,7 @@ Fixed a regression in `std::pair`'s assignment operator introduced when implemen
 
 ### Non-deduced contexts for add_const_t
 
-Fixed a minor type traits bug, where `add_const_t` and related functions are supposed to be a non-deduced context. In other words, it should be an alias for `typename add_const<T>::type`, not `const T`.
-
-## <a name="improvements_161"></a> Improvements in Visual Studio 2019 version 16.1
-
-### char8_t
-
-C++20 adds new character type that is used to represent UTF-8 code units. u8 string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case up until C++17 [P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). The C standard makes similar changes [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Suggestions for char8_t backward compatibility remediation are given in [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). The Microsoft C++ compiler adds support for char8_t in Visual Studio 2019 version 16.1 when you specify the **/Zc:char8_t** compiler option. In the future, it will be supported with [/std:c++latest](../../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **/Zc:char8_t-**. The EDG compiler which powers IntelliSense does not yet support it, so you will see spurious IntelliSense-only errors which do not impact the actual compilation.
-
-#### Example
-
-```cpp
-const char* s = u8"Hello"; //C++17
-const char8_t* s = u8"Hello"; // C++20
-```
-
-### std::type_identity metafunction and std::identity function object
-
-The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md). 
-
-The following example produces deprecation warning C4996 for std::identity (defined in \<type_traits>) in Visual Studio 2017: 
-
-```cpp
-#include <type_traits>
-
-using T = std::identity<int>::type;
-T x, y = std::identity<T>{}(x);
-int i = 42;
-long j = std::identity<long>{}(i);
-```
-
-The following example shows how to use the new `std::identity` (defined in \<functional>) together with the new `std::type_identity`:
-
-```cpp
-#include <type_traits>
-#include <functional>
-
-using T = std::type_identity<int>::type;
-T x, y = std::identity{}(x);
-int i = 42;
-long j = static_cast<long>(i);
-```
-
-### Syntax checks for generic lambdas
-
-The new lambda preprocessor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or with or with **/experimental:newLambdaProcessor**. 
-
-In Visual Studio 2017, this code compiles without warnings, but in Visual Studo 2019 it produces *error C2760: syntax error: unexpected token '\<id-expr>', expected 'id-expression'*
-
-```cpp
-void f() {
-    auto a = [](auto arg) {
-        decltype(arg)::Type t;
-    };
-}
-```
-
-The following example shows the correct syntax, now enforced by the compiler:
-
-```cpp
-void f() {
-    auto a = [](auto arg) {
-        typename decltype(arg)::Type t;
-    };
-}
-```
-
-### Mac line endings in the editor
-
-'\r' (Mac line ending) is now recognized in addition to '\r\n' (Windows line ending) and '\n' (Linux line ending). This change is to help compile files with mixed line ending.
-
-```cpp
-#include <assert.h>
-#include <string.h>
-
-auto s = "
-"; // this is not a valid string literal
-
-int main()
-{
-	assert(strcmp(s, "\r") == 0);
-}
-
-(assume '\r' follows 'auto s = "' in the file)
-
-```
-After:
-
-```cpp
-#include <assert.h>
-#include <string.h>
-
-auto s = "\r"; // this is what 's' used to have
-
-int main()
-{
-	assert(strcmp(s, "\r") == 0);
-}
-```
+Fixed a minor type traits bug, where `add_const_t` and related functions are supposed to be a non-deduced context. In other words, `add_const_t` should be an alias for `typename add_const<T>::type`, not `const T`.
 
 ## See also
 
