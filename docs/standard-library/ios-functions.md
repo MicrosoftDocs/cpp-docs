@@ -3,22 +3,24 @@ title: "&lt;ios&gt; functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["xiosbase/std::defaultfloat", "xiosbase/std::boolalpha", "xiosbase/std::dec", "ios/std::fixed", "ios/std::hex", "ios/std::internal", "ios/std::left", "ios/std::noboolalpha", "ios/std::noshowbase", "ios/std::noshowpoint", "ios/std::noshowpos", "ios/std::noskipws", "ios/std::nounitbuf", "ios/std::nouppercase", "ios/std::oct", "ios/std::right", "ios/std::scientific", "ios/std::showbase", "ios/std::showpoint", "ios/std::showpos", "ios/std::skipws", "ios/std::unitbuf", "ios/std::uppercase"]
+f1_keywords: ["xiosbase/std::defaultfloat", "xiosbase/std::boolalpha", "xiosbase/std::dec", "ios/std::fixed", "ios/std::hex", "ios/std::hexfloat", "ios/std::io_errc", "ios/std::internal", "ios/std::iostream_category", "ios/std::is_error_code_enum", "ios/std::left", "ios/std::make_error_code", "ios/std::make_error_condition", "ios/std::noboolalpha", "ios/std::noshowbase", "ios/std::noshowpoint", "ios/std::noshowpos", "ios/std::noskipws", "ios/std::nounitbuf", "ios/std::nouppercase", "ios/std::oct", "ios/std::right", "ios/std::scientific", "ios/std::showbase", "ios/std::showpoint", "ios/std::showpos", "ios/std::skipws", "ios/std::unitbuf", "ios/std::uppercase"]
 ms.assetid: 1382d53f-e531-4b41-adf6-6a1543512e51
-helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::dec [C++]", "std::fixed [C++]", "std::hex [C++]", "std::internal [C++]", "std::left [C++]", "std::noboolalpha [C++]", "std::noshowbase [C++]", "std::noshowpoint [C++]", "std::noshowpos [C++]", "std::noskipws [C++]", "std::nounitbuf [C++]", "std::nouppercase [C++]", "std::oct [C++]", "std::right [C++]", "std::scientific [C++]", "std::showbase [C++]", "std::showpoint [C++]", "std::showpos [C++]", "std::skipws [C++]", "std::unitbuf [C++]", "std::uppercase [C++]"]
+helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::dec [C++]", "std::fixed [C++]", "std::hex [C++]", "std::hexfloat [C++]", "std::io_errc [C++]", "std::internal [C++]", "std::iostream_category [C++]", "std::is_error_code_enum [C++]", "std::left [C++]", "std::make_error_code [C++]", "std::make_error_condition [C++]", "std::noboolalpha [C++]", "std::noshowbase [C++]", "std::noshowpoint [C++]", "std::noshowpos [C++]", "std::noskipws [C++]", "std::nounitbuf [C++]", "std::nouppercase [C++]", "std::oct [C++]", "std::right [C++]", "std::scientific [C++]", "std::showbase [C++]", "std::showpoint [C++]", "std::showpos [C++]", "std::skipws [C++]", "std::unitbuf [C++]", "std::uppercase [C++]"]
 ---
 # &lt;ios&gt; functions
 
 ||||
 |-|-|-|
 |[defaultfloat](#ios_defaultfloat)|[boolalpha](#boolalpha)|[dec](#dec)|
-|[fixed](#fixed)|[hex](#hex)|[internal](#internal)|
-|[left](#left)|[noboolalpha](#noboolalpha)|[noshowbase](#noshowbase)|
+|[fixed](#fixed)|[hex](#hex)|[hexfloat](#hexfloat)|
+|[io_errc](#io_errc)|[internal](#internal)|[iostream_category](#iostream_category)|
+|[is_error_code_enum](#is_error_code_enum)|[left](#left)|[make_error_code](#make_error_code)|
+|[make_error_condition](#make_error_condition)|[noboolalpha](#noboolalpha)|[noshowbase](#noshowbase)|
 |[noshowpoint](#noshowpoint)|[noshowpos](#noshowpos)|[noskipws](#noskipws)|
 |[nounitbuf](#nounitbuf)|[nouppercase](#nouppercase)|[oct](#oct)|
 |[right](#right)|[scientific](#scientific)|[showbase](#showbase)|
 |[showpoint](#showpoint)|[showpos](#showpos)|[skipws](#skipws)|
-|[unitbuf](#unitbuf)|[uppercase](#uppercase)|
+|[unitbuf](#unitbuf)|[uppercase](#uppercase)||
 
 ## <a name="boolalpha"></a>  boolalpha
 
@@ -217,6 +219,20 @@ The manipulator effectively calls `str`**.**[setf](../standard-library/ios-base-
 
 See [dec](../standard-library/ios-functions.md#dec) for an example of how to use `hex`.
 
+## <a name="hexfloat"></a>  hexfloat
+
+```cpp
+ios_base& hexfloat (ios_base& str);
+```
+
+## <a name="io_errc"></a>  io_errc
+
+```cpp
+enum class io_errc {
+    stream = 1
+};
+```
+
 ## <a name="internal"></a>  internal
 
 Causes a number's sign to be left justified and the number to be right justified.
@@ -263,6 +279,18 @@ int main( void )
 -..123.456
 ```
 
+## <a name="is_error_code_enum"></a>  is_error_code_enum
+
+```cpp
+template <> struct is_error_code_enum<io_errc> : public true_type { };
+```
+
+## <a name="iostream_category"></a>  iostream_category
+
+```cpp
+const error_category& iostream_category() noexcept;
+```
+
 ## <a name="left"></a>  left
 
 Causes text that is not as wide as the output width to appear in the stream flush with the left margin.
@@ -304,6 +332,18 @@ int main( )
 ```Output
                    5
 5
+```
+
+## <a name="make_error_code"></a>  make_error_code
+
+```cpp
+error_code make_error_code(io_errc e) noexcept;
+```
+
+## <a name="make_error_condition"></a>  make_error_condition
+
+```cpp
+error_condition make_error_condition(io_errc e) noexcept;
 ```
 
 ## <a name="noboolalpha"></a>  noboolalpha

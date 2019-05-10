@@ -20,7 +20,6 @@ Declares forward references to several template classes used throughout iostream
 
 ```cpp
 #include <iosfwd>
-
 ```
 
 ## Typedefs

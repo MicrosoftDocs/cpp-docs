@@ -20,8 +20,10 @@ Declares objects that control reading from and writing to the standard streams. 
 
 ```cpp
 #include <iostream>
-
 ```
+
+> [!NOTE]
+> The \<iostream> library uses the `#include <ios>`, `#include <streambuf>`, `#include <istream>`, and `#include <ostream>` statements.
 
 ## Remarks
 
