@@ -31,7 +31,7 @@ class unsupported_feature : public runtime_exception;
 
 `unsupported_feature`
 
-## unsupported_feature
+## <a name="unsupported_feature"></a> unsupported_feature
 
   Constructs a new instance of the `unsupported_feature` exception.
 

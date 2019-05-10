@@ -1,10 +1,19 @@
 ---
 title: "Consumer Wizard-Generated Classes"
-ms.date: "10/17/2018"
-helpviewer_keywords: ["attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "command classes in OLE DB consumer", "classes [C++], OLE DB Consumer Wizard-generated", "consumer wizard-generated classes and methods", "user record classes in OLE DB consumer"]
+ms.date: "05/09/2019"
+helpviewer_keywords: ["user record classes in OLE DB consumer"]
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
 ---
 # Consumer Wizard-Generated Classes
+
+
+::: moniker range="vs-2019"
+
+The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 When you use the **ATL OLE DB Consumer Wizard** to generate a consumer, you have the choice of using OLE DB Templates or OLE DB attributes. In both cases, the wizard generates a command class and a user record class. The command class contains code to open the data source and rowset you specified in the wizard. The user record class contains a column map for the database table you selected. However, the generated code differs in each case:
 
@@ -170,6 +179,8 @@ class CProducts : public CCommand<CAccessor<_CProductsAccessor>>
 Most of the injected code is the same as or similar to the templated version. The main differences are in the injected methods, which are described in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).
 
 For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
+
+::: moniker-end
 
 ## See also
 
