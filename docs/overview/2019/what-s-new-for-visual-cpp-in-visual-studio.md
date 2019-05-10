@@ -57,7 +57,7 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
   - Improved optimization of code using `memmove`, such as `std::copy` or `std::vector` and `std::string` construction.
 
-- Optimized the Standard Library physical design to avoid compiling parts of the Standard Library not #include'd, cutting in half the build time of an empty file that includes only \<vector>.
+- Optimized the Standard Library physical design to avoid compiling parts of the Standard Library not #include'd, cutting in half the build time of an empty file that includes only \<vector>. As a result of this change, you may need to add #include directives for headers that were previously indirectly #include'd. For example, code that uses `std::out_of_range` may now need to #include <stdexcept>. Code that uses a stream insertion operator may now need to #include \<ostream>. The benefit is that only translation units actually using <stdexcept> or <ostream> components pay the throughput cost to compile them.
 
 - `if constexpr` was applied in more places in the Standard Library for improved throughput and reduced code size in the copy family, permutations like reverse and rotate, and in the parallel algorithms library. 
 
