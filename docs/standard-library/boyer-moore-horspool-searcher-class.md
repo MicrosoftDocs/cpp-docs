@@ -29,13 +29,13 @@ class BinaryPredicate = equal_to<>>
 
 |Name|Description|
 |----------|-----------------|
-|[boyer_moore_horspool_searcher](#boyer_moore_horspool_searcher)||
+|[boyer_moore_horspool_searcher]()||
 
 ### Operators
 
 |Name|Description|
 |----------|-----------------|
-|[operator()](#op_paren)||
+|[operator()]()||
 
 ## Requirements
 
