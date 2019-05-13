@@ -11,7 +11,7 @@ ms.assetid: 2ee76ea3-77f3-4c2f-9a57-0751823c89fd
 
 An external variable referenced or defined in two files has different types in those files, and the compiler determined that the size of the variable in *file1* differs from the size of the variable in *file2*.
 
-There is an important case when this warning can be emitted for C++. If you declare the same types with the same name in two different files, if those declarations contain virtual functions, and if the declarations are not the same, then the compiler can emit warning C4744 for the virtual function tables. The warning occurs because there are two different sized virtual function tables for the same type, and linker must choose one of them to incorporate into the executable.  It is possible that this can result in your program calling the wrong virtual function.
+There is an important case when this warning can be emitted for C++. If you declare the same types with the same name in two different files, if those declarations contain virtual functions, and if the declarations are not the same, then the compiler can emit warning C4744 for the virtual function tables. The warning occurs because there are two different-sized virtual function tables for the same type, and linker must choose one of them to incorporate into the executable.  It is possible that it can result in your program calling the wrong virtual function.
 
 To resolve this warning, either use the same type definition or use different names for the types or variables.
 
