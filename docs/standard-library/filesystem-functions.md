@@ -20,11 +20,12 @@ These free functions in the [\<filesystem>](../standard-library/filesystem.md) h
 |[is_block_file](#is_block_file)|[is_character_file](#is_character_file)|[is_directory](#is_directory)|
 |[is_empty](#is_empty)|[is_fifo](#is_fifo)|[is_other](#is_other)|
 |[is_regular_file](#is_regular_file)|[is_socket](#is_socket)|[is_symlink](#is_symlink)|
-|[last_write_time](#last_write_time)|[permissions](#permissions)|[read_symlink](#read_symlink)|
-|[remove](#remove)|[remove_all](#remove_all)|[rename](#rename)|
-|[resize_file](#resize_file)|[space](#space)|[status](#status)|
-|[status_known](#status_known)|[swap](#swap)|[symlink_status](#symlink_status)|
-|[system_complete](#system_complete)|[temp_directory_path](#temp_directory_path)|[u8path](#u8path)|
+|[last_write_time](#last_write_time)|[permissions](#permissions)|[proximate](#proximate)|
+|[read_symlink](#read_symlink)|[relative](#relative)|[remove](#remove)|
+|[remove_all](#remove_all)|[rename](#rename)|[resize_file](#resize_file)|
+|[space](#space)|[status](#status)|[status_known](#status_known)|
+|[swap](#swap)|[symlink_status](#symlink_status)|[system_complete](#system_complete)|
+|[temp_directory_path](#temp_directory_path)|[u8path](#u8path)|[weakly_canonical](#weakly_canonical)|
 
 ## <a name="absolute"></a> absolute
 
@@ -385,6 +386,14 @@ The functions set the permissions for the pathname designated by *pval* to `mask
 
 If `mask & perms::add_perms` the functions set the permissions to `status(pval).permissions() | mask & perms::mask`. Otherwise, if `mask & perms::remove_perms` the functions set the permissions to `status(pval).permissions() & ~(mask & perms::mask)`. Otherwise, the functions set the permissions to `mask & perms::mask`.
 
+## <a name="proximate"></a> proximate
+
+```cpp
+path proximate(const path& p, error_code& ec);
+path proximate(const path& p, const path& base = current_path());
+path proximate(const path& p, const path& base, error_code& ec);
+```
+
 ## <a name="read_symlink"></a>  read_symlink
 
 ```cpp
@@ -393,6 +402,14 @@ path read_symlink(const path& pval, error_code& ec);
 ```
 
 The functions report an error and return `path()` if `!is_symlink(pval)`. Otherwise, the functions return an object of type `path` containing the symbolic link.
+
+## <a name="relative"></a> relative
+
+```cpp
+path relative(const path& p, error_code& ec);
+path relative(const path& p, const path& base = current_path());
+path relative(const path& p, const path& base, error_code& ec);
+```
 
 ## <a name="remove"></a>  remove
 
@@ -502,3 +519,10 @@ path u8path(InIt first, InIt last);
 ```
 
 The first function behaves the same as `path(source)` and the second function behaves the same as `path(first, last)` except that the designated source in each case is taken as a sequence of char elements encoded as UTF-8, regardless of the filesystem.
+
+## <a name="weakly_canonical"></a> weakly_canonical
+
+```cpp
+path weakly_canonical(const path& p);
+path weakly_canonical(const path& p, error_code& ec);
+```

@@ -5,7 +5,7 @@ ms.assetid: ff521893-f445-4dc8-a2f6-699185bb7024
 ---
 # &lt;ctgmath&gt;
 
-In effect, includes the C++ Standard Library headers \<ccomplex> and \<cmath>, which provide type-generic math macros equivalent to \<tgmath.h>.
+In effect, includes the C++ Standard Library headers \<complex> and \<cmath>, which provide type-generic math macros equivalent to \<tgmath.h>.
 
 ## Syntax
 
@@ -15,7 +15,7 @@ In effect, includes the C++ Standard Library headers \<ccomplex> and \<cmath>, w
 
 ## Remarks
 
-The functionality of the Standard C library header \<tgmath.h> is provided by overloads in \<ccomplex> and \<cmath>.
+The functionality of the Standard C library header \<tgmath.h> is provided by overloads in \<complex> and \<cmath>.
 
 Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
 

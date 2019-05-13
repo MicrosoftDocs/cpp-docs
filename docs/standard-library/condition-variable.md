@@ -50,6 +50,14 @@ Each class also has two methods that are used to notify a condition variable tha
 
 - `notify_all` wakes up all of the threads that are waiting for the condition variable.
 
+## Functions and Enums
+
+```cpp
+void notify_all_at_thread_exit(condition_variable& cond, unique_lock<mutex> lk);
+
+enum class cv_status { no_timeout, timeout };
+```
+
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>

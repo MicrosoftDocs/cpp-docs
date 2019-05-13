@@ -48,6 +48,7 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 |[mutex Class (C++ Standard Library)](../standard-library/mutex-class-stl.md)|Represents a mutex type. Use objects of this type to enforce mutual exclusion within a program.|
 |[recursive_mutex Class](../standard-library/recursive-mutex-class.md)|Represents a mutex type. In constrast to the `mutex` class, the behavior of calling locking methods for objects that are already locked is well-defined.|
 |[recursive_timed_mutex Class](../standard-library/recursive-timed-mutex-class.md)|Represents a timed mutex type. Use objects of this type to enforce mutual exclusion that has time-limited blocking within a program. Unlike objects of type `timed_mutex`, the effect of calling locking methods for `recursive_timed_mutex` objects is well-defined.|
+|[scoped_lock Class](../standard-library/scoped-lock-class.md)||
 |[timed_mutex Class](../standard-library/timed-mutex-class.md)|Represents a timed mutex type. Use objects of this type to enforce mutual exclusion that has time-limited blocking within a program.|
 |[unique_lock Class](../standard-library/unique-lock-class.md)|Represents a template that can be instantiated to create objects that manage the locking and unlocking of a `mutex`.|
 
@@ -57,6 +58,8 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 |----------|-----------------|
 |[call_once](../standard-library/mutex-functions.md#call_once)|Provides a mechanism for calling a specified callable object exactly once during execution.|
 |[lock](../standard-library/mutex-functions.md#lock)|Attempts to lock all arguments without deadlock.|
+|[swap](../standard-library/mutex-functions.md#swap)||
+|[try_lock](../standard-library/mutex-functions.md#try_lock)||
 
 ### Structs
 

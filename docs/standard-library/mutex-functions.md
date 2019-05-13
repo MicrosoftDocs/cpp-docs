@@ -10,7 +10,8 @@ helpviewer_keywords: ["std::adopt_lock [C++]", "std::call_once [C++]", "std::def
 ||||
 |-|-|-|
 |[adopt_lock](#adopt_lock)|[call_once](#call_once)|[defer_lock](#defer_lock)|
-|[lock](#lock)|[try_to_lock](#try_to_lock)|
+|[lock](#lock)|[swap](#swap)|[try_lock](#try_lock)|
+|[try_to_lock](#try_to_lock)|||
 
 ## <a name="adopt_lock"></a>  adopt_lock Variable
 
@@ -67,6 +68,19 @@ void lock(L1&, L2&, L3&...);
 The arguments to the template function must be *mutex types*, except that calls to `try_lock` might throw exceptions.
 
 The function locks all of its arguments without deadlock by calls to `lock`, `try_lock`, and `unlock`. If a call to `lock` or `try_lock` throws an exception, the function calls `unlock` on any of the mutex objects that were successfully locked before rethrowing the exception.
+
+## <a name="swap"></a>  swap
+
+```cpp
+template <class Mutex>
+void swap(unique_lock<Mutex>& x, unique_lock<Mutex>& y) noexcept;
+```
+
+## <a name="try_lock"></a>  try_lock
+
+```cpp
+template <class L1, class L2, class... L3> int try_lock(L1&, L2&, L3&...);
+```
 
 ## <a name="try_to_lock"></a>  try_to_lock Variable
 

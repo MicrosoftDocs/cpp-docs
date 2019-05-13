@@ -31,6 +31,14 @@ Objects of type `strstream` work with `char` *, which are C strings. Use [\<sstr
 |[ostrstream Class](../standard-library/ostrstream-class.md)|The class describes an object that controls insertion of elements and encoded objects into a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).|
 |[strstream Class](../standard-library/strstream-class.md)|The class describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).|
 
+### Functions
+
+```cpp
+void freeze(bool freezefl = true);
+char* str();
+int pcount();
+```
+
 ## See also
 
 [\<strstream>](../standard-library/strstream.md)<br/>

@@ -7,6 +7,9 @@ ms.assetid: 44ccb8b2-d808-4715-8097-58ba09ab33ed
 
 Includes the Standard C library header \<stdbool.h> and adds the associated names to the `std` namespace.
 
+> [!NOTE]
+> This header has been deprecated in C++ 17.
+
 ## Syntax
 
 ```cpp

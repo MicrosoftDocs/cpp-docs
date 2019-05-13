@@ -9,6 +9,9 @@ ms.assetid: 9d570924-d299-4225-9a58-8c4c820f5903
 
 Includes the Standard C library header \<iso646.h> and adds the associated names to the `std` namespace.
 
+> [!NOTE]
+> Use of this header is unnecessary in C++.
+
 ## Syntax
 
 ```cpp

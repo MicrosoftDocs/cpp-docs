@@ -110,6 +110,7 @@ For more information and code examples, see [File System Navigation (C++)](../st
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](../standard-library/filesystem-functions.md#copy_file) and determines behavior if a destination file already exists.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|An enumeration that specifies options for directory iterators.|
 |[file_type](../standard-library/filesystem-enumerations.md#file_type)|An enumeration for file types.|
+|[perm_options](../standard-library/filesystem-enumerations.md#perm_options)||
 |[perms](../standard-library/filesystem-enumerations.md#perms)|A bitmask type used to convey permissions and options to permissions|
 
 ## See also
