@@ -15,7 +15,7 @@ Visual Studio 2019 brings many updates and fixes to the Microsoft C++ environmen
 
 - Enhanced support for C++17 features and correctness fixes, plus experimental support for C++20 features such as modules and coroutines. For detailed information, see [C++ Conformance Improvements in Visual Studio 2019](../cpp-conformance-improvements.md).
 
-- The `/std:c++latest` option now includes C++20 features that aren't necessarily complete, including initial support for the C++20 operator <=> ("spaceship") for three-way comparison.
+- The `/std:c++latest` option now includes C++20 features that aren't necessarily complete, including initial support for the C++20 operator \<=> ("spaceship") for three-way comparison.
 
 - The C++ compiler switch `/Gm` is now deprecated. Consider disabling the `/Gm` switch in your build scripts if it's explicitly defined. However, you can also safely ignore the deprecation warning for `/Gm`, because it's not treated as an error when using "Treat warnings as errors" (`/WX`).
 
@@ -57,11 +57,11 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
   - Improved optimization of code using `memmove`, such as `std::copy` or `std::vector` and `std::string` construction.
 
-- Optimized the Standard Library physical design to avoid compiling parts of the Standard Library not #include'd, cutting in half the build time of an empty file that includes only \<vector>. As a result of this change, you may need to add #include directives for headers that were previously indirectly #include'd. For example, code that uses `std::out_of_range` may now need to #include <stdexcept>. Code that uses a stream insertion operator may now need to #include \<ostream>. The benefit is that only translation units actually using <stdexcept> or <ostream> components pay the throughput cost to compile them.
+- Optimized the Standard Library physical design to avoid compiling parts of the Standard Library not #include'd, cutting in half the build time of an empty file that includes only \<vector>. As a result of this change, you may need to add #include directives for headers that were previously indirectly included. For example, code that uses `std::out_of_range` may now need to #include \<stdexcept>. Code that uses a stream insertion operator may now need to #include \<ostream>. The benefit is that only translation units actually using \<stdexcept> or \<ostream> components pay the throughput cost to compile them.
 
-- `if constexpr` was applied in more places in the Standard Library for improved throughput and reduced code size in the copy family, permutations like reverse and rotate, and in the parallel algorithms library. 
+- `if constexpr` was applied in more places in the Standard Library for improved throughput and reduced code size in copy operations, in permutations like reverse and rotate, and in the parallel algorithms library. 
 
--The STL now internally uses `if constexpr` to reduce compile times even in C++14 mode.
+- The Standard Library now internally uses `if constexpr` to reduce compile times even in C++14 mode.
 
 - The runtime dynamic linking detection for the parallel algorithms library no longer uses an entire page to store the function pointer array. Marking this memory read-only was deemed no longer relevant for security purposes.
 
@@ -69,15 +69,15 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
 - Fixed a performance regression in `std::hash` that we introduced when implementing `std::hash<std::filesystem::path>`.
 
-- Several places the Standard Library used to achieve correctness with catch blocks now use destructors instead. This results in better debugger interaction; exceptions you throw through the Standard Library in the affected locations will now show up as being thrown from their original throw site, rather than our rethrow. Not all Standard Library catch blocks have been eliminated; we expect the number of catch blocks to be reduced in subsequent releases of MSVC.
+- In several places the Standard Library now uses destructors instead of catch blocks to achieve correctness. This results in better debugger interaction; exceptions you throw through the Standard Library in the affected locations will now show up as being thrown from their original throw site, rather than our rethrow. Not all Standard Library catch blocks have been eliminated; we expect the number of catch blocks to be reduced in subsequent releases of MSVC.
 
-- Suboptimal codegen in std::bitset caused by a conditional throw inside a noexcept function was fixed by factoring out the throwing path.
+- Suboptimal codegen in `std::bitset` caused by a conditional throw inside a noexcept function was fixed by factoring out the throwing path.
 
-- The `std::list` and `std::unordered_meow` family use non-debugging iterators internally in more places.
+- The `std::list` and std::unordered_* family use non-debugging iterators internally in more places.
 
 - Several `std::list` members were changed to reuse list nodes where possible rather than deallocating and reallocating them. For example, given a `list<int>` that already has a size of 3, a call to `assign(4, 1729)` will now overwrite the ints in the first 3 list nodes, and allocate one new list node with the value 1729, rather than deallocating all 3 list nodes and then allocating 4 new list nodes with the value 1729.
 
-- All locations the Standard Library was calling `erase(begin(), end())` were changed to call `clear()` instead.
+- All Standard Library calls to `erase(begin(), end())` were changed to `clear()`.
 
 - `std::vector` now initializes and erases elements more efficiently in certain cases.
 
@@ -214,7 +214,7 @@ The Clang/C2 experimental component has been removed. Use the MSVC toolset for f
 
 **Visual Studio 2019 version 16.1**
 
-New quick fixes for uninitialized variable checks.For more information, see[New code analysis quick fixes for uninitialized memory (C6001) and use before init (C26494) warnings](https://devblogs.microsoft.com/cppblog/new-code-analysis-quick-fixes-for-uninitialized-memory-c6001-and-use-before-init-c26494-warnings/)
+New quick fixes for uninitialized variable checks. For more information, see [New code analysis quick fixes for uninitialized memory (C6001) and use before init (C26494) warnings](https://devblogs.microsoft.com/cppblog/new-code-analysis-quick-fixes-for-uninitialized-memory-c6001-and-use-before-init-c26494-warnings/).
 
 ## Unit testing
 
