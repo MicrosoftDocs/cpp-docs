@@ -25,13 +25,13 @@ class default_searcher {
 
 |Name|Description|
 |----------|-----------------|
-|[default_searcher](#default_searcher)||
+|[default_searcher]()||
 
 ### Operators
 
 |Name|Description|
 |----------|-----------------|
-|[operator()](#op_paren)||
+|[operator()]()||
 
 ## Requirements
 
