@@ -22,7 +22,7 @@ Defines a template `tuple` whose instances hold objects of varying types.
 |[tuple Class](../standard-library/tuple-class.md)|Wraps a fixed-length sequence of elements.|
 |[tuple_element Class](../standard-library/tuple-element-class-tuple.md)|Wraps the type of a `tuple` element.|
 |[tuple_size Class](../standard-library/tuple-size-class-tuple.md)|Wraps `tuple` element count.|
-|[uses_allocator](../standard-library/uses-allocator-structure#tuple.md)||
+|[uses_allocator](../standard-library/uses-allocator-structure.md)||
 
 ### Objects
 
