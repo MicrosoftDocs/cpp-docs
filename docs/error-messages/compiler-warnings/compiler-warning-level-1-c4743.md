@@ -23,7 +23,7 @@ The following sample generates C4743. To compile it, place both files in the sam
 cl /EHsc /W1 /GL /O2 C4743a.cpp C4743b.cpp
 ```
 
-```
+```cpp
 // C4743a.cpp
 class C {
 public:
@@ -38,6 +38,7 @@ void C::f3(void) {}
 C q;
 ```
 
+```cpp
 // C4743b.cpp
 class C {
 public:
