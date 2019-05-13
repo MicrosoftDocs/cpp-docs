@@ -1,19 +1,12 @@
 ---
-title: "__pctype_func | Microsoft Docs"
-ms.custom: ""
+title: "__pctype_func"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["__pctype_func"]
 apilocation: ["msvcrt.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll", "msvcr80.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__pctype_func"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__pctype_func"]
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __pctype_func
 
@@ -40,6 +33,6 @@ The information in the character classification table is for internal use only, 
 |-------------|---------------------|
 |__pctype_func|ctype.h|
 
-## See Also
+## See also
 
 [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)

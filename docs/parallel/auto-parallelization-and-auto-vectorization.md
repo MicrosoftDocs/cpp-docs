@@ -1,14 +1,7 @@
 ---
-title: "Auto-Parallelization and Auto-Vectorization | Microsoft Docs"
-ms.custom: ""
+title: "Auto-Parallelization and Auto-Vectorization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Auto-Parallelization and Auto-Vectorization
 
@@ -110,7 +103,7 @@ For more information about reason codes and messages, see [Vectorizer and Parall
 
 For an example showing how the vectorizer works in practice, see [Project Austin Part 2 of 6: Page Curling](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)
 
-## See Also
+## See also
 
 [loop](../preprocessor/loop.md)<br/>
 [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>

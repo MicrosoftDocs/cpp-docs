@@ -1,16 +1,8 @@
 ---
-title: "ATL Services | Microsoft Docs"
-ms.custom: ""
+title: "ATL Services"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-f1_keywords: ["CServiceModule"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CServiceModule class", "COM objects, ATL", "services, ATL", "ATL services"]
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Services
 
@@ -42,7 +34,6 @@ The last three topics discuss concepts related to developing a service:
 
 - [Debugging Tips](../atl/debugging-tips.md) for ATL services
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

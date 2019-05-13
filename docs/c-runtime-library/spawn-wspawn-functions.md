@@ -1,18 +1,11 @@
 ---
-title: "_spawn, _wspawn Functions | Microsoft Docs"
-ms.custom: ""
+title: "_spawn, _wspawn Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_spawn", "_tspawnlp", "_tspawnlpe", "_tspawnve", "_tspawnvp", "_tspawnvpe", "_tspawnl", "spawn", "_tspawnv", "_tspawnle", "wspawn"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tspawnve function", "_spawn functions", "_tspawnlpe function", "tspawnvpe function", "processes, creating", "tspawnve function", "_tspawnvp function", "spawn functions", "tspawnl function", "tspawnlp function", "_tspawnvpe function", "_tspawnl function", "tspawnvp function", "tspawnv function", "processes, executing new", "_tspawnv function", "tspawnle function", "process creation", "_tspawnlp function", "tspawnlpe function", "_tspawnle function"]
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _spawn, _wspawn Functions
 
@@ -101,7 +94,7 @@ New processes created by calls to `_spawn` routines do not preserve signal setti
 
 If you are calling `_spawn` from a DLL or a GUI application and want to redirect the output to a pipe, you have two options:
 
-- Use the Win32 API to create a pipe, then call [AllocConsole](https://msdn.microsoft.com/library/windows/desktop/ms681944), set the handle values in the startup structure, and call [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
+- Use the Win32 API to create a pipe, then call [AllocConsole](/windows/console/allocconsole), set the handle values in the startup structure, and call [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
 
 - Call [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md) which will create a pipe and invoke the app using **cmd.exe /c** (or **command.exe /c**).
 
@@ -188,7 +181,7 @@ child process output
 from SPAWN!
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../c-runtime-library/reference/abort.md)<br/>

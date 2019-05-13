@@ -1,16 +1,9 @@
 ---
-title: "operator OVERFLOW? | Microsoft Docs"
-ms.custom: ""
+title: "operator OVERFLOW?"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator OVERFLOW?", "OVERFLOW?"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator OVERFLOW?", "OVERFLOW? operator"]
 ms.assetid: 376b2850-993a-4538-b8f1-bd682ff7e91c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator OVERFLOW?
 

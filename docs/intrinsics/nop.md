@@ -1,16 +1,9 @@
 ---
-title: "__nop | Microsoft Docs"
-ms.custom: ""
+title: "__nop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__nop"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nop instruction", "__nop intrinsic"]
 ms.assetid: 7a2a938b-87e0-476d-a348-03ea7635b6b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __nop
 
@@ -28,7 +21,7 @@ void __nop();
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`__nop`|x86, x64|
+|`__nop`|x86, ARM, x64, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -36,9 +29,9 @@ void __nop();
 
 ## Remarks
 
-The `__nop` function is equivalent to the `NOP` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site.
+The `__nop` function is equivalent to the `NOP` machine instruction. For more information on x86 and x64, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site.
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__noop](../intrinsics/noop.md)

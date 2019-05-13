@@ -1,16 +1,9 @@
 ---
-title: "Using Drop-Down Buttons in a Toolbar Control | Microsoft Docs"
-ms.custom: ""
+title: "Using Drop-Down Buttons in a Toolbar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["TBN_DROPDOWN", "TBSTYLE_EX_DRAWDDARROWS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CToolBarCtrl class [MFC], drop-down buttons", "toolbars [MFC], drop-down buttons", "drop-down buttons in toolbars", "TBSTYLE_EX_DRAWDDARROWS", "TBN_DROPDOWN notification [MFC]"]
 ms.assetid: b859f758-d2f6-40d9-9c26-0ff61993b9b2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Drop-Down Buttons in a Toolbar Control
 
@@ -41,8 +34,7 @@ The following procedure illustrates how to implement a drop-down toolbar button 
 
    [!code-cpp[NVC_MFCControlLadenDialog#39](../mfc/codesnippet/cpp/using-drop-down-buttons-in-a-toolbar-control_4.cpp)]
 
-## See Also
+## See also
 
 [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,14 +1,7 @@
 ---
-title: "Compiler Warning (level 1) C4436 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4436"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: 2b54a1fc-c9c6-4cc9-90be-faa44fc715d5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4436
 
@@ -70,7 +63,7 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [dynamic_cast Operator](../../cpp/dynamic-cast-operator.md)<br/>
 [vtordisp](../../preprocessor/vtordisp.md)<br/>

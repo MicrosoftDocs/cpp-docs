@@ -1,15 +1,8 @@
 ---
-title: "Calling C++ Code from DHTML | Microsoft Docs"
-ms.custom: ""
+title: "Calling C++ Code from DHTML"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DHTML, calling C++ code from"]
 ms.assetid: 37329acd-4c22-40ca-a85a-b7480748f75f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Calling C++ Code from DHTML
 
@@ -41,7 +34,6 @@ In the HTML code above, the window external method, `OnClick`, is called as part
 
 See [Modifying the ATL DHTML Control](../atl/modifying-the-atl-dhtml-control.md) for more information about providing your own methods. See [Identifying the Elements of the DHTML Control Project](../atl/identifying-the-elements-of-the-dhtml-control-project.md) for more information about the HTML file.
 
-## See Also
+## See also
 
 [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)
-

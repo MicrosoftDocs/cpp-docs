@@ -1,16 +1,9 @@
 ---
-title: "CMessageMap Class | Microsoft Docs"
-ms.custom: ""
+title: "CMessageMap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CMessageMap", "ATLWIN/ATL::CMessageMap", "ATLWIN/ATL::CMessageMap::ProcessWindowMessage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMessageMap class", "message maps, ATL", "ATL, message handlers"]
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMessageMap Class
 
@@ -91,7 +84,7 @@ TRUE if the message is fully handled; otherwise, FALSE.
 
 Called by the window procedure of a [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) object or of an object that is dynamically chaining to the message map.
 
-## See Also
+## See also
 
 [CDynamicChain Class](../../atl/reference/cdynamicchain-class.md)<br/>
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>

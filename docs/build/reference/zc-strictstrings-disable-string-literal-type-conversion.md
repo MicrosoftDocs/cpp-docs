@@ -1,16 +1,9 @@
 ---
-title: "/Zc:strictStrings (Disable string literal type conversion) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:strictStrings (Disable string literal type conversion)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:strictStrings", "strictStrings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc:strictStrings", "-Zc compiler options (C++)", "strictStrings", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:strictStrings (Disable string literal type conversion)
 
@@ -58,7 +51,7 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -66,4 +59,4 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>

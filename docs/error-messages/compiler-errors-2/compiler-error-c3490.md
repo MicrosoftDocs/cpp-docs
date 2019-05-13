@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3490 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3490"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3490"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3490"]
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3490
 
@@ -60,6 +53,6 @@ class C
 };
 ```
 
-## See Also
+## See also
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

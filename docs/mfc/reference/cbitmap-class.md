@@ -1,16 +1,9 @@
 ---
-title: "CBitmap Class | Microsoft Docs"
-ms.custom: ""
+title: "CBitmap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CBitmap", "AFXWIN/CBitmap", "AFXWIN/CBitmap::CBitmap", "AFXWIN/CBitmap::CreateBitmap", "AFXWIN/CBitmap::CreateBitmapIndirect", "AFXWIN/CBitmap::CreateCompatibleBitmap", "AFXWIN/CBitmap::CreateDiscardableBitmap", "AFXWIN/CBitmap::FromHandle", "AFXWIN/CBitmap::GetBitmap", "AFXWIN/CBitmap::GetBitmapBits", "AFXWIN/CBitmap::GetBitmapDimension", "AFXWIN/CBitmap::LoadBitmap", "AFXWIN/CBitmap::LoadMappedBitmap", "AFXWIN/CBitmap::LoadOEMBitmap", "AFXWIN/CBitmap::SetBitmapBits", "AFXWIN/CBitmap::SetBitmapDimension"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CBitmap [MFC], CBitmap", "CBitmap [MFC], CreateBitmap", "CBitmap [MFC], CreateBitmapIndirect", "CBitmap [MFC], CreateCompatibleBitmap", "CBitmap [MFC], CreateDiscardableBitmap", "CBitmap [MFC], FromHandle", "CBitmap [MFC], GetBitmap", "CBitmap [MFC], GetBitmapBits", "CBitmap [MFC], GetBitmapDimension", "CBitmap [MFC], LoadBitmap", "CBitmap [MFC], LoadMappedBitmap", "CBitmap [MFC], LoadOEMBitmap", "CBitmap [MFC], SetBitmapBits", "CBitmap [MFC], SetBitmapDimension"]
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBitmap Class
 
@@ -126,7 +119,7 @@ Although a bitmap cannot be directly selected for a display device, it can be se
 
 When you finish with the `CBitmap` object created by the `CreateBitmap` function, first select the bitmap out of the device context, then delete the `CBitmap` object.
 
-For more information, see the description of the `bmBits` field in the `BITMAP` structure. The [BITMAP](../../mfc/reference/bitmap-structure.md) structure is described under the [CBitmap::CreateBitmapIndirect](#createbitmapindirect) member function.
+For more information, see the description of the `bmBits` field in the `BITMAP` structure. The [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) structure is described under the [CBitmap::CreateBitmapIndirect](#createbitmapindirect) member function.
 
 ##  <a name="createbitmapindirect"></a>  CBitmap::CreateBitmapIndirect
 
@@ -139,7 +132,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 ### Parameters
 
 *lpBitmap*<br/>
-Points to a [BITMAP](../../mfc/reference/bitmap-structure.md) structure that contains information about the bitmap.
+Points to a [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) structure that contains information about the bitmap.
 
 ### Return Value
 
@@ -257,7 +250,7 @@ int GetBitmap(BITMAP* pBitMap);
 ### Parameters
 
 *pBitMap*<br/>
-Pointer to a [BITMAP Structure](../../mfc/reference/bitmap-structure.md) structure that will receive the image properties. This parameter must not be NULL.
+Pointer to a [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) structure that will receive the image properties. This parameter must not be NULL.
 
 ### Return Value
 
@@ -490,9 +483,8 @@ The previous bitmap dimensions. Height is in the `cy` member variable of the `CS
 
 The GDI does not use these values except to return them when an application calls the [GetBitmapDimension](#getbitmapdimension) member function.
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

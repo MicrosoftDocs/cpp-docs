@@ -1,15 +1,8 @@
 ---
-title: "Program Structure | Microsoft Docs"
-ms.custom: ""
+title: "Program Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["program structure [C++], C", "programs [C++], structure", "C, program structure"]
 ms.assetid: b713b5a1-21a2-4e6f-9481-5f8594f1859e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Program Structure
 
@@ -27,6 +20,6 @@ This section gives an overview of C programs and program execution. Terms and fe
 
 Because this section is an overview, the topics discussed contain introductory material only. See the cross-referenced information for more detailed explanations.
 
-## See Also
+## See also
 
 [C Language Reference](../c-language/c-language-reference.md)

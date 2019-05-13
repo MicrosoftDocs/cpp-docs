@@ -1,16 +1,9 @@
 ---
-title: "Persistence of OLE Controls | Microsoft Docs"
-ms.custom: ""
+title: "Persistence of OLE Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE controls [MFC], persistence", "persistence, OLE controls"]
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Persistence of OLE Controls
 
@@ -651,6 +644,6 @@ This function should be used only by an OLE control that is designed as a direct
 [!code-cpp[NVC_MFCActiveXControl#14](../../mfc/codesnippet/cpp/persistence-of-ole-controls_1.cpp)]
 [!code-cpp[NVC_MFCActiveXControl#15](../../mfc/codesnippet/cpp/persistence-of-ole-controls_2.cpp)]
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

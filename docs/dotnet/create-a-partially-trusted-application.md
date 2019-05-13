@@ -1,15 +1,9 @@
 ---
-title: "How to: Create a Partially Trusted Application (C++/CLI) | Microsoft Docs"
+title: "How to: Create a Partially Trusted Application (C++/CLI)"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["partially trusted applications [C++]", "mixed assemblies [C++], partially trusted applications", "msvcm90[d].dll", "interoperability [C++], partially trusted applications", "interop [C++], partially trusted applications", "/clr compiler option [C++], partially trusted applications"]
 ms.assetid: 4760cd0c-4227-4f23-a7fb-d25b51bf246e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL
 
@@ -28,7 +22,7 @@ If your application does not use any functionality of the C-Runtime Library and 
 
 1. Add one of the ptrustm libraries to the linker input dependencies. Use ptrustm.lib if you are building your application in release mode. For debug mode, use ptrustmd.lib. For information on how to do this using the Visual Studio development environment or programmatically, see [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md).
 
-## See Also
+## See also
 
 [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)<br/>
 [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "&lt;system_error&gt; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "&lt;system_error&gt;"
+ms.date: "03/15/2019"
 f1_keywords: ["<system_error>", "system_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["system_error header"]
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;system_error&gt;
 
@@ -28,12 +21,6 @@ Include the header \<system_error> to define the exception class `system_error` 
 |-|-|
 |[generic_category](../standard-library/system-error-functions.md#generic_category)|Represents the category for generic errors.|
 |[system_category](../standard-library/system-error-functions.md#system_category)|Represents the category for errors caused by low-level system overflows.|
-
-### Typedefs
-
-|Type name|Description|
-|-|-|
-|[generic_errno](../standard-library/system-error-typedefs.md#generic_errno)|A type that represents the enumeration that provides the symbolic names for all the error-code macros defined by Posix in `<errno.h>`.|
 
 ### Functions
 

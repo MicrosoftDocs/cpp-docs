@@ -1,16 +1,9 @@
 ---
-title: "embedded_idl | Microsoft Docs"
-ms.custom: ""
+title: "embedded_idl"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["embedded_idl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["embedded_idl attribute"]
 ms.assetid: f1c1c2e8-3872-4172-8795-8d1288a20452
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # embedded_idl
 
@@ -47,7 +40,7 @@ Can be one of two values:
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

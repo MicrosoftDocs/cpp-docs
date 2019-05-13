@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2779 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2779"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2779"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2779"]
 ms.assetid: 4a00e492-855a-41f3-8a18-5f60ee20c2f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2779
 

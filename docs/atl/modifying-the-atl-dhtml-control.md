@@ -1,15 +1,8 @@
 ---
-title: "Modifying the ATL DHTML Control | Microsoft Docs"
-ms.custom: ""
+title: "Modifying the ATL DHTML Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["HTML controls, modifying", "DHTML controls", "DHTML controls, modifying"]
 ms.assetid: c053f35f-8629-4600-9595-721f5956777a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Modifying the ATL DHTML Control
 
@@ -69,6 +62,6 @@ Next, modify the HTML resource to invoke the methods you created. You will add t
 
 You can now build and [test the modified DHTML control](../atl/testing-the-modified-atl-dhtml-control.md).
 
-## See Also
+## See also
 
 [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)

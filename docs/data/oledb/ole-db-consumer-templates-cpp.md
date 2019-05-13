@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Consumer Templates (C++) | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Consumer Templates (C++)"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["databases [C++], OLE DB templates", "OLE DB consumers [C++], data access", "OLE DB consumer templates [C++]", "databases [C++], consumers"]
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumer Templates (C++)
 
@@ -21,7 +14,7 @@ The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The
 
 - Native C/C++ data types for OLE DB programming.
 
-To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you aren't familiar with OLE DB, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms718124).
+To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you aren't familiar with OLE DB, see [Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server).
 
 The OLE DB Templates support the existing OLE DB object model rather than adding a new object model. The top-layer classes in the OLE DB Consumer Templates parallel the components defined in the OLE DB specification. The design of the OLE DB Consumer Templates includes advanced features such as multiple accessors on a rowset. The use of templates and multiple inheritance makes the library small and flexible.
 
@@ -53,9 +46,9 @@ For more information, see the following topics:
 
 - [Common OLE DB Consumer Scenarios (Examples)](../../data/oledb/working-with-ole-db-consumer-templates.md)
 
-## See Also
+## See also
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [Data Access](../data-access-in-cpp.md)<br/>
-[OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784)<br/>
-[OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643)
+[OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
+[Microsoft OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)

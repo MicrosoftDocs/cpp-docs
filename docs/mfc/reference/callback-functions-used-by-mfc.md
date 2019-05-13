@@ -1,16 +1,9 @@
 ---
-title: "Callback Functions Used by MFC | Microsoft Docs"
-ms.custom: ""
+title: "Callback Functions Used by MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.functions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["callback functions [MFC], MFC", "MFC, callback functions", "functions [MFC], callback", "callback functions [MFC]"]
 ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Callback Functions Used by MFC
 
@@ -41,7 +34,7 @@ int CALLBACK EXPORT ObjectFunc(
 ### Parameters
 
 *lpszLogObject*<br/>
-Points to a [LOGPEN](../../mfc/reference/logpen-structure.md) or [LOGBRUSH](../../mfc/reference/logbrush-structure.md) data structure that contains information about the logical attributes of the object.
+Points to a [LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen) or [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) data structure that contains information about the logical attributes of the object.
 
 *lpData*<br/>
 Points to the application-supplied data passed to the `EnumObjects` function.
@@ -114,10 +107,9 @@ The return value of the abort-handler function is nonzero if the print job is to
 
 The actual name must be exported as described in the Remarks section of [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc).
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](structures-styles-callbacks-and-message-maps.md)<br/>
 [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects)<br/>
 [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)<br/>
 [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring)
-

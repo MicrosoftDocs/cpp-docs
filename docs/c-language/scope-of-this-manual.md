@@ -1,14 +1,7 @@
 ---
-title: "Scope of this Manual | Microsoft Docs"
-ms.custom: ""
+title: "Scope of this Manual"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 406e7cc0-27cb-46b4-b38e-c200f3fddafd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scope of this Manual
 
@@ -16,6 +9,6 @@ C is a flexible language that leaves many programming decisions up to you. In ke
 
 This book does not discuss programming with C++. See [C++ Language Reference](../cpp/cpp-language-reference.md) for information about the C++ language.
 
-## See Also
+## See also
 
 [Organization of the C Language Reference](../c-language/organization-of-the-c-language-reference.md)

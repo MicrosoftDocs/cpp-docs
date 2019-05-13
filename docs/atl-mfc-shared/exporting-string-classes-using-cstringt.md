@@ -1,15 +1,8 @@
 ---
-title: "Exporting String Classes Using CStringT | Microsoft Docs"
-ms.custom: ""
+title: "Exporting String Classes Using CStringT"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStringT class, exporting strings"]
 ms.assetid: bdfc441e-8d2a-461c-9885-46178066c09f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exporting String Classes Using CStringT
 
@@ -53,8 +46,7 @@ There are several caveats:
 
 [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)
 
-## See Also
+## See also
 
 [Using CStringT](../atl-mfc-shared/using-cstringt.md)<br/>
 [Using CString](../atl-mfc-shared/using-cstring.md)
-

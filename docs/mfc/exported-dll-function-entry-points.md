@@ -1,15 +1,8 @@
 ---
-title: "Exported DLL Function Entry Points | Microsoft Docs"
-ms.custom: ""
+title: "Exported DLL Function Entry Points"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["exporting DLLs [MFC], functions", "MFC, managing state data", "state management [MFC], exported DLLs"]
 ms.assetid: 3268666e-d24b-44f2-80e8-7c80f73b93ca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exported DLL Function Entry Points
 
@@ -29,7 +22,6 @@ Problems with resources in DLLs will occur if the `AFX_MANAGE_STATE` macro is no
 
 `AFX_MANAGE_STATE` does not need to be put into every function in the DLL. For example, `InitInstance` can be called by the MFC code in the application without `AFX_MANAGE_STATE` because MFC automatically shifts the module state before `InitInstance` and then switches it back after `InitInstance` returns. The same is true for all message-map handlers. Regular MFC DLLs actually have a special master window procedure that automatically switches the module state before routing any message.
 
-## See Also
+## See also
 
 [Managing the State Data of MFC Modules](../mfc/managing-the-state-data-of-mfc-modules.md)
-

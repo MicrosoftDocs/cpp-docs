@@ -1,16 +1,9 @@
 ---
-title: "discrete_distribution Class | Microsoft Docs"
-ms.custom: ""
+title: "discrete_distribution Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::discrete_distribution", "random/std::discrete_distribution::reset", "random/std::discrete_distribution::probabilities", "random/std::discrete_distribution::param", "random/std::discrete_distribution::min", "random/std::discrete_distribution::max", "random/std::discrete_distribution::operator()", "random/std::discrete_distribution::param_type", "random/std::discrete_distribution::param_type::probabilities", "random/std::discrete_distribution::param_type::operator==", "random/std::discrete_distribution::param_type::operator!="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::discrete_distribution [C++]", "std::discrete_distribution [C++], reset", "std::discrete_distribution [C++], probabilities", "std::discrete_distribution [C++], param", "std::discrete_distribution [C++], min", "std::discrete_distribution [C++], max", "std::discrete_distribution [C++], param_type", "std::discrete_distribution [C++], param_type"]
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # discrete_distribution Class
 
@@ -212,7 +205,7 @@ The default constructor constructs an object whose stored probability value has 
 
 The iterator range constructor that has parameters *firstW* and *lastW* constructs a distribution object by using weight values taken from the iterators over the interval sequence [*firstW*, *lastW*).
 
-The initializer list constructor that has a *weightlist* parameter constructs a distribution object with weights from the intializer list *weightlist*.
+The initializer list constructor that has a *weightlist* parameter constructs a distribution object with weights from the initializer list *weightlist*.
 
 The constructor that has *count*, *low*, *high*, and *weightfunc* parameters constructs a distribution object initialized based on these rules:
 

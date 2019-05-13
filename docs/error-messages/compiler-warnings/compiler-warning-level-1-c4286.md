@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4286 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4286"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4286"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4286"]
 ms.assetid: 93eadd6c-6f36-413b-ba91-c9aa2314685a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4286
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4186 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4186"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4186"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4186"]
 ms.assetid: caf3f7d8-f305-426b-8d4e-2b96f5c269ea
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4186
 

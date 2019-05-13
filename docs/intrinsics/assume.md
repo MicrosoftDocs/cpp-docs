@@ -1,16 +1,9 @@
 ---
-title: "__assume | Microsoft Docs"
-ms.custom: ""
+title: "__assume"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__assume", "_assume", "__assume_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__assume keyword [C++]"]
 ms.assetid: d8565123-b132-44b1-8235-5a8c8bff85a7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __assume
 
@@ -113,7 +106,7 @@ Unfortunately, this use of `assert` prevents the compiler from performing the de
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

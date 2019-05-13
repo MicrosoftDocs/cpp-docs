@@ -1,19 +1,12 @@
 ---
-title: "Input-Output Alternatives | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Input-Output Alternatives"
+ms.date: "05/07/2019"
 helpviewer_keywords: ["I/O [C++], alternatives"]
 ms.assetid: 9f8401c7-d90d-4285-8918-63573df74a80
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Input/Output Alternatives
 
-Visual C++ provides several alternatives for I/O programming:
+The Microsoft C++ compiler provides several alternatives for I/O programming:
 
 - C run-time library direct, unbuffered I/O.
 

@@ -1,16 +1,9 @@
 ---
-title: "messages_base Class | Microsoft Docs"
-ms.custom: ""
+title: "messages_base Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocmes/std::messages_base"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages_base class"]
 ms.assetid: 9aad38c6-4c13-445d-b096-364bd0836efb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # messages_base Class
 

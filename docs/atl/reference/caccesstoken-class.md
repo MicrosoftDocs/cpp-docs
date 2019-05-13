@@ -1,16 +1,9 @@
 ---
-title: "CAccessToken Class | Microsoft Docs"
-ms.custom: ""
+title: "CAccessToken Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAccessToken", "ATLSECURITY/ATL::CAccessToken", "ATLSECURITY/ATL::CAccessToken::Attach", "ATLSECURITY/ATL::CAccessToken::CheckTokenMembership", "ATLSECURITY/ATL::CAccessToken::CreateImpersonationToken", "ATLSECURITY/ATL::CAccessToken::CreatePrimaryToken", "ATLSECURITY/ATL::CAccessToken::CreateProcessAsUser", "ATLSECURITY/ATL::CAccessToken::CreateRestrictedToken", "ATLSECURITY/ATL::CAccessToken::Detach", "ATLSECURITY/ATL::CAccessToken::DisablePrivilege", "ATLSECURITY/ATL::CAccessToken::DisablePrivileges", "ATLSECURITY/ATL::CAccessToken::EnablePrivilege", "ATLSECURITY/ATL::CAccessToken::EnablePrivileges", "ATLSECURITY/ATL::CAccessToken::GetDefaultDacl", "ATLSECURITY/ATL::CAccessToken::GetEffectiveToken", "ATLSECURITY/ATL::CAccessToken::GetGroups", "ATLSECURITY/ATL::CAccessToken::GetHandle", "ATLSECURITY/ATL::CAccessToken::GetImpersonationLevel", "ATLSECURITY/ATL::CAccessToken::GetLogonSessionId", "ATLSECURITY/ATL::CAccessToken::GetLogonSid", "ATLSECURITY/ATL::CAccessToken::GetOwner", "ATLSECURITY/ATL::CAccessToken::GetPrimaryGroup", "ATLSECURITY/ATL::CAccessToken::GetPrivileges", "ATLSECURITY/ATL::CAccessToken::GetProcessToken", "ATLSECURITY/ATL::CAccessToken::GetProfile", "ATLSECURITY/ATL::CAccessToken::GetSource", "ATLSECURITY/ATL::CAccessToken::GetStatistics", "ATLSECURITY/ATL::CAccessToken::GetTerminalServicesSessionId", "ATLSECURITY/ATL::CAccessToken::GetThreadToken", "ATLSECURITY/ATL::CAccessToken::GetTokenId", "ATLSECURITY/ATL::CAccessToken::GetType", "ATLSECURITY/ATL::CAccessToken::GetUser", "ATLSECURITY/ATL::CAccessToken::HKeyCurrentUser", "ATLSECURITY/ATL::CAccessToken::Impersonate", "ATLSECURITY/ATL::CAccessToken::ImpersonateLoggedOnUser", "ATLSECURITY/ATL::CAccessToken::IsTokenRestricted", "ATLSECURITY/ATL::CAccessToken::LoadUserProfile", "ATLSECURITY/ATL::CAccessToken::LogonUser", "ATLSECURITY/ATL::CAccessToken::OpenCOMClientToken", "ATLSECURITY/ATL::CAccessToken::OpenNamedPipeClientToken", "ATLSECURITY/ATL::CAccessToken::OpenRPCClientToken", "ATLSECURITY/ATL::CAccessToken::OpenThreadToken", "ATLSECURITY/ATL::CAccessToken::PrivilegeCheck", "ATLSECURITY/ATL::CAccessToken::Revert", "ATLSECURITY/ATL::CAccessToken::SetDefaultDacl", "ATLSECURITY/ATL::CAccessToken::SetOwner", "ATLSECURITY/ATL::CAccessToken::SetPrimaryGroup"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAccessToken class"]
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAccessToken Class
 
@@ -177,7 +170,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateImpersonationToken` calls [DuplicateToken](https://msdn.microsoft.com/library/windows/desktop/aa446616) to create a new impersonation token.
+`CreateImpersonationToken` calls [DuplicateToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) to create a new impersonation token.
 
 ##  <a name="createprimarytoken"></a>  CAccessToken::CreatePrimaryToken
 
@@ -207,7 +200,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreatePrimaryToken` calls [DuplicateTokenEx](https://msdn.microsoft.com/library/windows/desktop/aa446617) to create a new primary token.
+`CreatePrimaryToken` calls [DuplicateTokenEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) to create a new primary token.
 
 ##  <a name="createprocessasuser"></a>  CAccessToken::CreateProcessAsUser
 
@@ -242,7 +235,7 @@ Pointer to a [PROCESS_INFORMATION](/windows/desktop/api/processthreadsapi/ns-pro
 Pointer to a [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) structure that specifies how the main window for the new process should appear.
 
 *dwCreationFlags*<br/>
-Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) for a list of flags.
+Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) for a list of flags.
 
 *bLoadProfile*<br/>
 If TRUE, the user's profile is loaded with [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).
@@ -265,7 +258,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateProcessAsUser` uses the `CreateProcessAsUser` Win32 function to create a new process that runs in the security context of the user represented by the `CAccessToken` object. See the description of the [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) function for a full discussion of the parameters required.
+`CreateProcessAsUser` uses the `CreateProcessAsUser` Win32 function to create a new process that runs in the security context of the user represented by the `CAccessToken` object. See the description of the [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) function for a full discussion of the parameters required.
 
 For this method to succeed, the `CAccessToken` object must hold AssignPrimaryToken (unless it is a restricted token) and IncreaseQuota privileges.
 
@@ -301,7 +294,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateRestrictedToken` uses the [CreateRestrictedToken](https://msdn.microsoft.com/library/windows/desktop/aa446583) Win32 function to create a new `CAccessToken` object, with restrictions.
+`CreateRestrictedToken` uses the [CreateRestrictedToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) Win32 function to create a new `CAccessToken` object, with restrictions.
 
 > [!IMPORTANT]
 >  When using `CreateRestrictedToken`, ensure the following: the existing token is valid (and not entered by the user) and *SidsToDisable* and *PrivilegesToDelete* are both valid (and not entered by the user). If the method returns FALSE, deny functionality.
@@ -614,7 +607,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-Calls the [OpenProcessToken](https://msdn.microsoft.com/library/aa379295) Win32 function.
+Calls the [OpenProcessToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) Win32 function.
 
 ##  <a name="getprofile"></a>  CAccessToken::GetProfile
 
@@ -1046,7 +1039,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](https://msdn.microsoft.com/library/windows/desktop/aa379304) Win32 function.
+When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 function.
 
 ##  <a name="revert"></a>  CAccessToken::Revert
 
@@ -1132,8 +1125,8 @@ Returns TRUE on success, FALSE on failure.
 
 The primary group is the default group for new objects created while this access token is in effect.
 
-## See Also
+## See also
 
-[ATLSecurity Sample](../../visual-cpp-samples.md)<br/>
+[ATLSecurity Sample](../../overview/visual-cpp-samples.md)<br/>
 [Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

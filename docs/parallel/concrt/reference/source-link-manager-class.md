@@ -1,16 +1,9 @@
 ---
-title: "source_link_manager Class | Microsoft Docs"
-ms.custom: ""
+title: "source_link_manager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["source_link_manager", "AGENTS/concurrency::source_link_manager", "AGENTS/concurrency::source_link_manager::source_link_manager", "AGENTS/concurrency::source_link_manager::add", "AGENTS/concurrency::source_link_manager::begin", "AGENTS/concurrency::source_link_manager::contains", "AGENTS/concurrency::source_link_manager::count", "AGENTS/concurrency::source_link_manager::reference", "AGENTS/concurrency::source_link_manager::register_target_block", "AGENTS/concurrency::source_link_manager::release", "AGENTS/concurrency::source_link_manager::remove", "AGENTS/concurrency::source_link_manager::set_bound"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["source_link_manager class"]
 ms.assetid: 287487cf-e0fe-4c35-aa3c-24f081d1ddae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # source_link_manager Class
 
@@ -207,7 +200,7 @@ Destroys the `source_link_manager` object.
 ~source_link_manager();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [single_link_registry Class](single-link-registry-class.md)<br/>

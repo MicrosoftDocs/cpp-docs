@@ -1,16 +1,9 @@
 ---
-title: "inject_statement | Microsoft Docs"
-ms.custom: ""
+title: "inject_statement"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["inject_statement"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["inject_statement attribute"]
 ms.assetid: 07d6f0f4-d9fb-4e18-aa62-f235f142ff5e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # inject_statement
 
@@ -35,7 +28,7 @@ The text is placed at the beginning of the namespace declaration that wraps the 
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

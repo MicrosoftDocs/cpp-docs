@@ -1,16 +1,9 @@
 ---
-title: "Setting the Day State of a Month Calendar Control | Microsoft Docs"
-ms.custom: ""
+title: "Setting the Day State of a Month Calendar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["MCN_GETDAYSTATE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], setting day state info", "MCN_GETDAYSTATE notification [MFC]", "month calendar controls [MFC], day state info"]
 ms.assetid: 435d1b11-ec0e-4121-9e25-aaa6af812a3c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Setting the Day State of a Month Calendar Control
 
@@ -42,8 +35,7 @@ To properly handle this message, you must determine how many months day state in
 
    The example converts the *pNMHDR* pointer to the proper type, then determines how many months of information are being requested (`pDayState->cDayState`). For each month, the current bitfield (`pDayState->prgDayState[i]`) is initialized to zero and then the needed dates are set (in this case, the 15th of each month).
 
-## See Also
+## See also
 
 [Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

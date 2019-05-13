@@ -1,16 +1,9 @@
 ---
-title: "CA2AEX Class | Microsoft Docs"
-ms.custom: ""
+title: "CA2AEX Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CA2AEX", "ATLCONV/ATL::CA2AEX", "ATLCONV/ATL::CA2AEX::CA2AEX", "ATLCONV/ATL::CA2AEX::m_psz", "ATLCONV/ATL::CA2AEX::m_szBuffer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CA2AEX class"]
 ms.assetid: 57dc65df-d9cf-4a84-99d3-6e031dde3664
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CA2AEX Class
 
@@ -144,7 +137,7 @@ operator LPSTR() const throw();
 
 Returns the text string as type LPSTR.
 
-## See Also
+## See also
 
 [CA2CAEX Class](../../atl/reference/ca2caex-class.md)<br/>
 [CA2WEX Class](../../atl/reference/ca2wex-class.md)<br/>

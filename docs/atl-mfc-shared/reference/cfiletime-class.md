@@ -1,16 +1,9 @@
 ---
-title: "CFileTime Class | Microsoft Docs"
-ms.custom: ""
+title: "CFileTime Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFileTime", "ATLTIME/ATL::CFileTime", "ATLTIME/ATL::CFileTime::CFileTime", "ATLTIME/ATL::CFileTime::GetCurrentTime", "ATLTIME/ATL::CFileTime::GetTime", "ATLTIME/ATL::CFileTime::LocalToUTC", "ATLTIME/ATL::CFileTime::SetTime", "ATLTIME/ATL::CFileTime::UTCToLocal", "ATLTIME/ATL::CFileTime::Day", "ATLTIME/ATL::CFileTime::Hour", "ATLTIME/ATL::CFileTime::Millisecond", "ATLTIME/ATL::CFileTime::Minute", "ATLTIME/ATL::CFileTime::Second", "ATLTIME/ATL::CFileTime::Week"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFileTime class", "shared classes, CFileTime"]
 ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFileTime Class
 
@@ -109,7 +102,7 @@ CFileTime(ULONGLONG nTime) throw();
 ### Parameters
 
 *ft*<br/>
-A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure.
+A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure.
 
 *nTime*<br/>
 The date and time expressed as a 64-bit value.
@@ -458,9 +451,9 @@ static const ULONGLONG Week = Day* 7;
 
 See the example for [CFileTime::Millisecond](#millisecond).
 
-## See Also
+## See also
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

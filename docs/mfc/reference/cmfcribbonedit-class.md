@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonEdit Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonEdit Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonEdit", "AFXRIBBONEDIT/CMFCRibbonEdit", "AFXRIBBONEDIT/CMFCRibbonEdit::CMFCRibbonEdit", "AFXRIBBONEDIT/CMFCRibbonEdit::CanBeStretched", "AFXRIBBONEDIT/CMFCRibbonEdit::CopyFrom", "AFXRIBBONEDIT/CMFCRibbonEdit::CreateEdit", "AFXRIBBONEDIT/CMFCRibbonEdit::DestroyCtrl", "AFXRIBBONEDIT/CMFCRibbonEdit::DropDownList", "AFXRIBBONEDIT/CMFCRibbonEdit::EnableSpinButtons", "AFXRIBBONEDIT/CMFCRibbonEdit::GetCompactSize", "AFXRIBBONEDIT/CMFCRibbonEdit::GetEditText", "AFXRIBBONEDIT/CMFCRibbonEdit::GetIntermediateSize", "AFXRIBBONEDIT/CMFCRibbonEdit::GetTextAlign", "AFXRIBBONEDIT/CMFCRibbonEdit::GetWidth", "AFXRIBBONEDIT/CMFCRibbonEdit::HasCompactMode", "AFXRIBBONEDIT/CMFCRibbonEdit::HasFocus", "AFXRIBBONEDIT/CMFCRibbonEdit::HasLargeMode", "AFXRIBBONEDIT/CMFCRibbonEdit::HasSpinButtons", "AFXRIBBONEDIT/CMFCRibbonEdit::IsHighlighted", "AFXRIBBONEDIT/CMFCRibbonEdit::OnAfterChangeRect", "AFXRIBBONEDIT/CMFCRibbonEdit::OnDraw", "AFXRIBBONEDIT/CMFCRibbonEdit::OnDrawLabelAndImage", "AFXRIBBONEDIT/CMFCRibbonEdit::OnDrawOnList", "AFXRIBBONEDIT/CMFCRibbonEdit::OnEnable", "AFXRIBBONEDIT/CMFCRibbonEdit::OnHighlight", "AFXRIBBONEDIT/CMFCRibbonEdit::OnKey", "AFXRIBBONEDIT/CMFCRibbonEdit::OnLButtonDown", "AFXRIBBONEDIT/CMFCRibbonEdit::OnLButtonUp", "AFXRIBBONEDIT/CMFCRibbonEdit::OnRTLChanged", "AFXRIBBONEDIT/CMFCRibbonEdit::OnShow", "AFXRIBBONEDIT/CMFCRibbonEdit::Redraw", "AFXRIBBONEDIT/CMFCRibbonEdit::SetACCData", "AFXRIBBONEDIT/CMFCRibbonEdit::SetEditText", "AFXRIBBONEDIT/CMFCRibbonEdit::SetTextAlign", "AFXRIBBONEDIT/CMFCRibbonEdit::SetWidth"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonEdit [MFC], CMFCRibbonEdit", "CMFCRibbonEdit [MFC], CanBeStretched", "CMFCRibbonEdit [MFC], CMFCRibbonEdit", "CMFCRibbonEdit [MFC], CopyFrom", "CMFCRibbonEdit [MFC], CreateEdit", "CMFCRibbonEdit [MFC], DestroyCtrl", "CMFCRibbonEdit [MFC], DropDownList", "CMFCRibbonEdit [MFC], EnableSpinButtons", "CMFCRibbonEdit [MFC], GetCompactSize", "CMFCRibbonEdit [MFC], GetEditText", "CMFCRibbonEdit [MFC], GetIntermediateSize", "CMFCRibbonEdit [MFC], GetTextAlign", "CMFCRibbonEdit [MFC], GetWidth", "CMFCRibbonEdit [MFC], HasCompactMode", "CMFCRibbonEdit [MFC], HasFocus", "CMFCRibbonEdit [MFC], HasLargeMode", "CMFCRibbonEdit [MFC], HasSpinButtons", "CMFCRibbonEdit [MFC], IsHighlighted", "CMFCRibbonEdit [MFC], OnAfterChangeRect", "CMFCRibbonEdit [MFC], OnDraw", "CMFCRibbonEdit [MFC], OnDrawLabelAndImage", "CMFCRibbonEdit [MFC], OnDrawOnList", "CMFCRibbonEdit [MFC], OnEnable", "CMFCRibbonEdit [MFC], OnHighlight", "CMFCRibbonEdit [MFC], OnKey", "CMFCRibbonEdit [MFC], OnLButtonDown", "CMFCRibbonEdit [MFC], OnLButtonUp", "CMFCRibbonEdit [MFC], OnRTLChanged", "CMFCRibbonEdit [MFC], OnShow", "CMFCRibbonEdit [MFC], Redraw", "CMFCRibbonEdit [MFC], SetACCData", "CMFCRibbonEdit [MFC], SetEditText", "CMFCRibbonEdit [MFC], SetTextAlign", "CMFCRibbonEdit [MFC], SetWidth"]
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonEdit Class
 
@@ -72,7 +65,7 @@ class CMFCRibbonEdit : public CMFCRibbonButton
 
 ## Example
 
-The following example demonstrates how to construct a `CMFCRibbonEdit` object, show spin buttons next to the edit control, and set the text of the edit control. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct a `CMFCRibbonEdit` object, show spin buttons next to the edit control, and set the text of the edit control. This code snippet is part of the [MS Office 2007 Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#7](../../mfc/reference/codesnippet/cpp/cmfcribbonedit-class_1.cpp)]
 
@@ -682,7 +675,7 @@ TRUE to set the width for floating mode; FALSE to set the width for regular mode
 
 The `CMFCRibbonEdit` control has two widths depending on its display mode: floating mode and regular mode.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,19 +1,12 @@
 ---
-title: "fflush | Microsoft Docs"
-ms.custom: ""
+title: "fflush"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["fflush"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fflush"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["streams, flushing", "flushing", "fflush function"]
 ms.assetid: 8bbc753f-dc74-4e77-b563-74da2835e92b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fflush
 
@@ -88,17 +81,13 @@ int main( void )
 }
 ```
 
-```Output
-
-      This is a test
+```Input
 This is a test
-
+This is a test
 ```
 
 ```Output
-
-      This is a test
-This is a testEnter a sentence of four words with scanf: This is a test
+Enter a sentence of four words with scanf: This is a test
 This
 is
 a

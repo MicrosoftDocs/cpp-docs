@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2879 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2879"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2879"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2879"]
 ms.assetid: ac92b645-2394-49de-8632-43d44e0553ed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2879
 

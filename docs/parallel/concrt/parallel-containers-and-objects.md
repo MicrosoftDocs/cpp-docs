@@ -1,15 +1,8 @@
 ---
-title: "Parallel Containers and Objects | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Parallel Containers and Objects"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["parallel objects", "parallel containers", "concurrent containers"]
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parallel Containers and Objects
 
@@ -25,13 +18,13 @@ This topic describes the following parallel containers and objects in detail.
 
 Concurrent containers:
 
-- [concurrent_vector Class](#ctor)
+- [concurrent_vector Class](#vector)
 
-   - [Differences Between concurrent_vector and vector](#ctor)
+   - [Differences Between concurrent_vector and vector](#vector-differences)
 
-   - [Concurrency-Safe Operations](#ctor)
+   - [Concurrency-Safe Operations](#vector-safety)
 
-   - [Exception Safety](#ctor)
+   - [Exception Safety](#vector-exceptions)
 
 - [concurrent_queue Class](#queue)
 
@@ -93,7 +86,6 @@ The following table shows the common `concurrent_vector` methods and operators t
 
 ||||
 |-|-|-|
-
 |[at](reference/concurrent-vector-class.md#at)|[end](reference/concurrent-vector-class.md#end)|[operator&#91;&#93;](reference/concurrent-vector-class.md#operator_at)|
 |[begin](reference/concurrent-vector-class.md#begin)|[front](reference/concurrent-vector-class.md#front)|[push_back](reference/concurrent-vector-class.md#push_back)|
 |[back](reference/concurrent-vector-class.md#back)|[grow_by](reference/concurrent-vector-class.md#grow_by)|[rbegin](reference/concurrent-vector-class.md#rbegin)|
@@ -104,7 +96,6 @@ Operations that the runtime provides for compatibility with the C++ Standard Lib
 
 |||
 |-|-|
-
 |[assign](reference/concurrent-vector-class.md#assign)|[reserve](reference/concurrent-vector-class.md#reserve)|
 |[clear](reference/concurrent-vector-class.md#clear)|[resize](reference/concurrent-vector-class.md#resize)|
 |[operator=](reference/concurrent-vector-class.md#operator_eq)|[shrink_to_fit](reference/concurrent-vector-class.md#shrink_to_fit)|

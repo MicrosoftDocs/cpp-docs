@@ -1,16 +1,9 @@
 ---
-title: "raw_property_prefixes | Microsoft Docs"
-ms.custom: ""
+title: "raw_property_prefixes"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["raw_property_prefixes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["raw_property_prefixes attribute"]
 ms.assetid: 03a0f48c-c460-4175-a762-9f7f8d84b12f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # raw_property_prefixes
 
@@ -41,7 +34,7 @@ By default, low-level `propget`, `propput`, and `propputref` methods are exposed
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

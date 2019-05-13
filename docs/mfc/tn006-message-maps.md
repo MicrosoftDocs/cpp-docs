@@ -1,16 +1,9 @@
 ---
-title: "TN006: Message Maps | Microsoft Docs"
-ms.custom: ""
+title: "TN006: Message Maps"
 ms.date: "06/25/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.messages.maps"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ON_UPDATE_COMMAND_UI macro [MFC]", "ON_NOTIFY_RANGE macro [MFC]", "ON_COMMAND macro [MFC]", "ON_CONTROL_RANGE macro [MFC]", "ON_REGISTERED_MESSAGE macro [MFC]", "ON_NOTIFY message [MFC]", "ON_COMMAND_RANGE_EX macro [MFC]", "ON_MESSAGE macro [MFC]", "Windows messages [MFC], message maps", "ON_COMMAND_RANGE macro [MFC]", "TN006", "ON_CONTROL macro [MFC]", "ON_COMMAND_EX macro [MFC]", "message maps [MFC], Windows messaging"]
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN006: Message Maps
 
@@ -107,7 +100,7 @@ The range of user-defined messages that use this approach must be in the range W
 
 ## Registered Windows Messages
 
-The [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) function is used to define a new window message that is guaranteed to be unique throughout the system. The macro ON_REGISTERED_MESSAGE is used to handle these messages. This macro accepts a name of a *UINT NEAR* variable that contains the registered windows message ID. For example
+The [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) function is used to define a new window message that is guaranteed to be unique throughout the system. The macro ON_REGISTERED_MESSAGE is used to handle these messages. This macro accepts a name of a *UINT NEAR* variable that contains the registered windows message ID. For example
 
 ```cpp
 class CMyWnd : public CMyParentWndClass
@@ -223,7 +216,7 @@ For advanced usage [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_con
 > [!NOTE]
 > ClassWizard does not support creating an ON_CONTROL or ON_CONTROL_RANGE handler in the user interface. You must manually enter them with the text editor. ClassWizard will parse these entries and let you browse them just like any other message map entries.
 
-The Windows Common Controls use the more powerful [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) for complex control notifications. This version of MFC has direct support for this new message by using the ON_NOTIFY and ON_NOTIFY_RANGE macros. See the product documentation for more information about these macros.
+The Windows Common Controls use the more powerful [WM_NOTIFY](/windows/desktop/controls/wm-notify) for complex control notifications. This version of MFC has direct support for this new message by using the ON_NOTIFY and ON_NOTIFY_RANGE macros. See the product documentation for more information about these macros.
 
 ## See also
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4258 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4258"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4258"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4258"]
 ms.assetid: bbb75e6d-6693-4e62-8ed3-b006a0ec55e3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4258
 

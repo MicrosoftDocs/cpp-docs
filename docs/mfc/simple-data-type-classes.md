@@ -1,16 +1,9 @@
 ---
-title: "Simple Data Type Classes | Microsoft Docs"
-ms.custom: ""
+title: "Simple Data Type Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.data"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["scalar classes [MFC]", "data classes [MFC]", "simple data type classes [MFC]"]
 ms.assetid: 0d591d68-0a33-49e9-8a6d-90c90de5c16a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Simple Data Type Classes
 
@@ -54,7 +47,6 @@ Wrapper for the OLE automation type **CURRENCY**, a fixed-point arithmetic type,
 > [!NOTE]
 >  `CRect`, `CSize`, and `CPoint` are usable in either ATL or MFC applications. In addition, `CStringT` provides an MFC-independent `CString`-like class. For more information on shared utility classes, see [Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md).
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

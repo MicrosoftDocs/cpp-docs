@@ -1,16 +1,9 @@
 ---
-title: "CComMultiThreadModelNoCS Class | Microsoft Docs"
-ms.custom: ""
+title: "CComMultiThreadModelNoCS Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComMultiThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS::AutoCriticalSection", "ATLBASE/ATL::CComMultiThreadModelNoCS::CriticalSection", "ATLBASE/ATL::CComMultiThreadModelNoCS::ThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS::Decrement", "ATLBASE/ATL::CComMultiThreadModelNoCS::Increment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, multithreading", "CComMultiThreadModelNoCS class", "threading [ATL]"]
 ms.assetid: 2b3f7a45-fd72-452c-aaf3-ccdaa621c821
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComMultiThreadModelNoCS Class
 
@@ -108,7 +101,7 @@ See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithr
 
 ##  <a name="decrement"></a>  CComMultiThreadModelNoCS::Decrement
 
-This static function calls the Win32 function [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement), which decrements the value of the variable pointed to by *p*.
+This static function calls the Win32 function [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement), which decrements the value of the variable pointed to by *p*.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw();
@@ -129,7 +122,7 @@ If the result of the decrement is 0, then `Decrement` returns 0. If the result o
 
 ##  <a name="increment"></a>  CComMultiThreadModelNoCS::Increment
 
-This static function calls the Win32 function [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement), which increments the value of the variable pointed to by *p*.
+This static function calls the Win32 function [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement), which increments the value of the variable pointed to by *p*.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();
@@ -176,6 +169,6 @@ Regardless of the class specified for `ThreadModel` (such as `CComMultiThreadMod
 
 See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

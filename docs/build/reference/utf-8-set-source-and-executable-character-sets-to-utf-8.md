@@ -1,16 +1,9 @@
 ---
-title: "-utf-8 (Set Source and Executable character sets to UTF-8) | Microsoft Docs"
-ms.custom: ""
+title: "/utf-8 (Set Source and Executable character sets to UTF-8)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/utf-8"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/utf-8 compiler option"]
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /utf-8 (Set Source and Executable character sets to UTF-8)
 
@@ -30,18 +23,18 @@ By default, Visual Studio detects a byte-order mark to determine if the source f
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
-1. In **Advanced Options**, add the **/utf-8** option, and specify your preferred encoding.
+1. In **Additional Options**, add the **/utf-8** option to specify your preferred encoding.
 
 1. Choose **OK** to save your changes.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)<br/>
-[/source-charset (Set Source Character Set)](../../build/reference/source-charset-set-source-character-set.md)<br/>
-[/validate-charset (Validate for compatible characters)](../../build/reference/validate-charset-validate-for-compatible-characters.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[/execution-charset (Set Execution Character Set)](execution-charset-set-execution-character-set.md)<br/>
+[/source-charset (Set Source Character Set)](source-charset-set-source-character-set.md)<br/>
+[/validate-charset (Validate for compatible characters)](validate-charset-validate-for-compatible-characters.md)

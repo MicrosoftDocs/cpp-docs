@@ -1,15 +1,8 @@
 ---
-title: "MFC Classes | Microsoft Docs"
-ms.custom: ""
+title: "MFC Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, classes", "classes [MFC], MFC"]
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Classes
 
@@ -1011,7 +1004,7 @@ Used for OLE visual editing servers, automation servers, and link containers (ap
 Used for a special case of the OLE Edit Links dialog box, which should be used when you need to update only existing linked or embedded objects in a document.
 
 [COleVariant Class](../../mfc/reference/colevariant-class.md)<br/>
-Encapsulates the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type.
+Encapsulates the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type.
 
 [CPagerCtrl Class](../../mfc/reference/cpagerctrl-class.md)<br/>
 The `CPagerCtrl` class wraps the Windows pager control, which can scroll into view a contained window that does not fit the containing window.
@@ -1098,7 +1091,7 @@ Represents a set of records selected from a data source.
 A view that displays database records in controls.
 
 [CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>
-Similar to a Windows [RECT structure](rect-structure.md).
+Similar to a Windows [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect).
 
 [CRectTracker Class](../../mfc/reference/crecttracker-class.md)<br/>
 Enables an item to be displayed, moved, and resized in different fashions.
@@ -1164,7 +1157,7 @@ Encapsulates a sinusoidal-range transition that has a given range of oscillation
 Encapsulates a sinusoidal-velocity transition that has an amplitude that is determined by the initial velocity of the animation variable.
 
 [CSize Class](../../atl-mfc-shared/reference/csize-class.md)<br/>
-Similar to the Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.
+Similar to the Windows [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure, which implements a relative coordinate or position.
 
 [CSliderCtrl Class](../../mfc/reference/csliderctrl-class.md)<br/>
 Provides the functionality of the Windows common slider control.
@@ -1305,4 +1298,3 @@ Supports arrays of 16-bit words.
 
 [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)<br/>
 Contains links to topics about the classes, global functions, global variables, and macros that make up the MFC Library.
-

@@ -1,21 +1,14 @@
 ---
-title: "Data Sources and Sessions | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Data Sources and Sessions"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["data sources [C++], OLE DB", "connections [C++], data source", "OLE DB consumer templates [C++], data sources"]
 ms.assetid: 6ee52216-e082-4869-a1d6-ce561cfb76e5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Sources and Sessions
 
 The following figure shows the classes that support connecting to and accessing a data source. Each class is based on a standard OLE DB component implementation.
 
-![Data source and session classes](../../data/oledb/media/vcdatasourcesessionclasses.gif "vcdatasourcesessionclasses")
+![Data source and session classes](../../data/oledb/media/vcdatasourcesessionclasses.gif "Data source and session classes") <br/>
 Data Source and Session Classes
 
 The classes are:
@@ -26,6 +19,6 @@ The classes are:
 
 - [CSession](../../data/oledb/csession-class.md) This class instantiates the session object, which represents a single access session to the data source. However, you can create multiple sessions on a data source. For each session, you can create rowsets, commands, and other objects to access data from the data source. The session handles transactions.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

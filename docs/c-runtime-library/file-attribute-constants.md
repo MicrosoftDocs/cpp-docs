@@ -1,23 +1,15 @@
 ---
-title: "File Attribute Constants | Microsoft Docs"
-ms.custom: ""
+title: "File Attribute Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["A_HIDDEN", "_A_NORMAL", "_A_SUBDIR", "_A_RDONLY", "A_NORMAL", "A_SUBDIR", "_A_SYSTEM", "c.constants.file", "_A_HIDDEN", "A_RDONLY", "_A_ARCH", "A_ARCH"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["constants [C++], file attributes", "file attribute constants [C++]", "_A_SYSTEM constant", "files [C++], file attribute constants", "_A_SUBDIR constant", "_A_ARCH constant", "_A_NORMAL constant", "_A_HIDDEN constant", "_A_RDONLY constant"]
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # File Attribute Constants
 
 ## Syntax
 
 ```
-
 #include <io.h>
 ```
 
@@ -38,7 +30,7 @@ The attributes are represented by the following manifest constants:
 
 Multiple constants can be combined with the OR operator (&#124;).
 
-## See Also
+## See also
 
 [Filename Search Functions](../c-runtime-library/filename-search-functions.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

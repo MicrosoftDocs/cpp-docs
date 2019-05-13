@@ -1,14 +1,8 @@
 ---
-title: "Adding a Property to the Control (ATL Tutorial, Part 3) | Microsoft Docs"
+title: "Adding a Property to the Control (ATL Tutorial, Part 3)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding a Property to the Control (ATL Tutorial, Part 3)
 
@@ -64,6 +58,6 @@ You now have a property called `Sides`. In the next step, you will change the dr
 
 [Back to Step 2](../atl/adding-a-control-atl-tutorial-part-2.md) &#124; [On to Step 4](../atl/changing-the-drawing-code-atl-tutorial-part-4.md)
 
-## See Also
+## See also
 
 [Tutorial](../atl/active-template-library-atl-tutorial.md)

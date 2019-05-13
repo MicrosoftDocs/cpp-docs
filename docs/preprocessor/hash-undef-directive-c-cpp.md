@@ -1,16 +1,9 @@
 ---
-title: "#undef Directive (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "#undef Directive (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#undef"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["#undef directive", "undef directive (#undef)", "preprocessor, directives"]
 ms.assetid: 88900e0e-2c19-4a63-b681-f3d3133c24ca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #undef Directive (C/C++)
 Removes (undefines) a name previously created with `#define`.
@@ -48,6 +41,6 @@ Macros can be undefined from the command line using the `/U` option, followed by
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

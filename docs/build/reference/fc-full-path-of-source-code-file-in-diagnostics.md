@@ -1,16 +1,9 @@
 ---
-title: "-FC (Full Path of Source Code File in Diagnostics) | Microsoft Docs"
-ms.custom: ""
+title: "/FC (Full Path of Source Code File in Diagnostics)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.UseFullPaths", "/FC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/FC compiler option [C++]", "-FC compiler option [C++]"]
 ms.assetid: 1f11414e-cb42-421b-be68-9d369aab036b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /FC (Full Path of Source Code File in Diagnostics)
 
@@ -41,13 +34,13 @@ With **/FC**, the diagnostic text would look similar to this diagnostic text:
 
 **/FC** is also needed if you want to see the full path of a file name when using the &#95;&#95;FILE&#95;&#95; macro. See [Predefined Macros](../../preprocessor/predefined-macros.md) for more information on &#95;&#95;FILE&#95;&#95;.
 
-The **/FC** option is implied by **/ZI**. For more information about **/ZI**, see [/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md).
+The **/FC** option is implied by **/ZI**. For more information about **/ZI**, see [/Z7, /Zi, /ZI (Debug Information Format)](z7-zi-zi-debug-information-format.md).
 
 **/FC** outputs full paths in lower case.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
 
@@ -57,7 +50,7 @@ The **/FC** option is implied by **/ZI**. For more information about **/ZI**, se
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UseFullPaths%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

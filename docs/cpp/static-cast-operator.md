@@ -1,16 +1,9 @@
 ---
-title: "static_cast Operator | Microsoft Docs"
-ms.custom: ""
+title: "static_cast Operator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["static_cast_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["static_cast keyword [C++]"]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # static_cast Operator
 
@@ -102,7 +95,7 @@ Any expression can be explicitly converted to type void by the **static_cast** o
 
 The **static_cast** operator cannot cast away the **const**, **volatile**, or **__unaligned** attributes. See [const_cast Operator](../cpp/const-cast-operator.md) for information on removing these attributes.
 
-Due to the danger of performing unchecked casts on top of a relocating garbage collector, the use of **static_cast** should only be in performance-critical code when you are certain it will work correctly. If you must use **static_cast** in release mode, substitute it with [safe_cast](../windows/safe-cast-cpp-component-extensions.md) in your debug builds to ensure success.
+**C++/CLI:** Due to the danger of performing unchecked casts on top of a relocating garbage collector, the use of **static_cast** should only be in performance-critical code when you are certain it will work correctly. If you must use **static_cast** in release mode, substitute it with [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) in your debug builds to ensure success.
 
 ## See also
 

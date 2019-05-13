@@ -1,15 +1,8 @@
 ---
-title: "Developing Your Own Helper Function | Microsoft Docs"
-ms.custom: ""
+title: "Developing Your Own Helper Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["helper functions"]
 ms.assetid: a845429d-68b1-4e14-aa88-f3f5343bd490
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Developing Your Own Helper Function
 
@@ -23,6 +16,6 @@ This is fairly simple since you can essentially use the supplied code as a guide
 
 It will probably be easiest to simply provide a new pointer to a user-supplied notification hook function that receives the same values as the default helper on the notification dliStartProcessing. At that point, the hook function can essentially become the new helper function, as a successful return to the default helper will bypass all further processing in the default helper.
 
-## See Also
+## See also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3333 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3333"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3333"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3333"]
 ms.assetid: 51693978-fba6-435a-a696-74735cc875de
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3333
 

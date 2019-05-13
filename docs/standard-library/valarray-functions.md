@@ -1,9 +1,7 @@
 ---
-title: "&lt;valarray&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;valarray&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
-f1_keywords: ["valarray/std::abs", "valarray/std::acos", "valarray/std::asin", "valarray/std::atan", "valarray/std::atan2", "valarray/std::begin", "valarray/std::cos", "valarray/std::cosh", "valarray/std::end", "valarray/std::exp", "valarray/std::log", "valarray/std::log10", "valarray/std::pow", "valarray/std::sin", "valarray/std::sinh", "valarray/std::sqrt", "valarray/std::swap", "valarray/std::tan", "valarray/std::tanh"]
+f1_keywords: ["valarray/std::abs", "valarray/std::acos", "valarray/std::asin", "valarray/std::atan", "valarray/std::atan2", "valarray/std::cos", "valarray/std::cosh", "valarray/std::exp", "valarray/std::log", "valarray/std::log10", "valarray/std::pow", "valarray/std::sin", "valarray/std::sinh", "valarray/std::sqrt", "valarray/std::swap", "valarray/std::tan", "valarray/std::tanh"]
 ms.assetid: 109778fc-440e-4239-b23e-bafda2b165c2
 helpviewer_keywords: ["std::abs [C++]", "std::acos [C++]", "std::asin [C++]", "std::atan [C++]", "std::atan2", "std::begin [C++]", "std::cos [C++]", "std::cosh [C++]", "std::end [C++]", "std::exp [C++]", "std::log [C++]", "std::log10", "std::pow [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::swap [C++]", "std::tan [C++]", "std::tanh [C++]"]
 ---

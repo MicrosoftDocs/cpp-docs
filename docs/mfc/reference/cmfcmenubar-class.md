@@ -1,16 +1,9 @@
 ---
-title: "CMFCMenuBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCMenuBar Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCMenuBar", "AFXMENUBAR/CMFCMenuBar", "AFXMENUBAR/CMFCMenuBar::AdjustLocations", "AFXMENUBAR/CMFCMenuBar::AllowChangeTextLabels", "AFXMENUBAR/CMFCMenuBar::AllowShowOnPaneMenu", "AFXMENUBAR/CMFCMenuBar::CalcFixedLayout", "AFXMENUBAR/CMFCMenuBar::CalcLayout", "AFXMENUBAR/CMFCMenuBar::CalcMaxButtonHeight", "AFXMENUBAR/CMFCMenuBar::CanBeClosed", "AFXMENUBAR/CMFCMenuBar::CanBeRestored", "AFXMENUBAR/CMFCMenuBar::Create", "AFXMENUBAR/CMFCMenuBar::CreateEx", "AFXMENUBAR/CMFCMenuBar::CreateFromMenu", "AFXMENUBAR/CMFCMenuBar::EnableHelpCombobox", "AFXMENUBAR/CMFCMenuBar::EnableMenuShadows", "AFXMENUBAR/CMFCMenuBar::GetAvailableExpandSize", "AFXMENUBAR/CMFCMenuBar::GetColumnWidth", "AFXMENUBAR/CMFCMenuBar::GetDefaultMenu", "AFXMENUBAR/CMFCMenuBar::GetDefaultMenuResId", "AFXMENUBAR/CMFCMenuBar::GetFloatPopupDirection", "AFXMENUBAR/CMFCMenuBar::GetForceDownArrows", "AFXMENUBAR/CMFCMenuBar::GetHelpCombobox", "AFXMENUBAR/CMFCMenuBar::GetHMenu", "AFXMENUBAR/CMFCMenuBar::GetMenuFont", "AFXMENUBAR/CMFCMenuBar::GetMenuItem", "AFXMENUBAR/CMFCMenuBar::GetRowHeight", "AFXMENUBAR/CMFCMenuBar::GetSystemButton", "AFXMENUBAR/CMFCMenuBar::GetSystemButtonsCount", "AFXMENUBAR/CMFCMenuBar::GetSystemMenu", "AFXMENUBAR/CMFCMenuBar::HighlightDisabledItems", "AFXMENUBAR/CMFCMenuBar::IsButtonExtraSizeAvailable", "AFXMENUBAR/CMFCMenuBar::IsHighlightDisabledItems", "AFXMENUBAR/CMFCMenuBar::IsMenuShadows", "AFXMENUBAR/CMFCMenuBar::IsRecentlyUsedMenus", "AFXMENUBAR/CMFCMenuBar::IsShowAllCommands", "AFXMENUBAR/CMFCMenuBar::IsShowAllCommandsDelay", "AFXMENUBAR/CMFCMenuBar::LoadState", "AFXMENUBAR/CMFCMenuBar::OnChangeHot", "AFXMENUBAR/CMFCMenuBar::OnDefaultMenuLoaded", "AFXMENUBAR/CMFCMenuBar::OnSendCommand", "AFXMENUBAR/CMFCMenuBar::OnSetDefaultButtonText", "AFXMENUBAR/CMFCMenuBar::OnToolHitTest", "AFXMENUBAR/CMFCMenuBar::PreTranslateMessage", "AFXMENUBAR/CMFCMenuBar::RestoreOriginalstate", "AFXMENUBAR/CMFCMenuBar::SaveState", "AFXMENUBAR/CMFCMenuBar::SetDefaultMenuResId", "AFXMENUBAR/CMFCMenuBar::SetForceDownArrows", "AFXMENUBAR/CMFCMenuBar::SetMaximizeMode", "AFXMENUBAR/CMFCMenuBar::SetMenuButtonRTC", "AFXMENUBAR/CMFCMenuBar::SetMenuFont", "AFXMENUBAR/CMFCMenuBar::SetRecentlyUsedMenus", "AFXMENUBAR/CMFCMenuBar::SetShowAllCommands"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCMenuBar [MFC], AdjustLocations", "CMFCMenuBar [MFC], AllowChangeTextLabels", "CMFCMenuBar [MFC], AllowShowOnPaneMenu", "CMFCMenuBar [MFC], CalcFixedLayout", "CMFCMenuBar [MFC], CalcLayout", "CMFCMenuBar [MFC], CalcMaxButtonHeight", "CMFCMenuBar [MFC], CanBeClosed", "CMFCMenuBar [MFC], CanBeRestored", "CMFCMenuBar [MFC], Create", "CMFCMenuBar [MFC], CreateEx", "CMFCMenuBar [MFC], CreateFromMenu", "CMFCMenuBar [MFC], EnableHelpCombobox", "CMFCMenuBar [MFC], EnableMenuShadows", "CMFCMenuBar [MFC], GetAvailableExpandSize", "CMFCMenuBar [MFC], GetColumnWidth", "CMFCMenuBar [MFC], GetDefaultMenu", "CMFCMenuBar [MFC], GetDefaultMenuResId", "CMFCMenuBar [MFC], GetFloatPopupDirection", "CMFCMenuBar [MFC], GetForceDownArrows", "CMFCMenuBar [MFC], GetHelpCombobox", "CMFCMenuBar [MFC], GetHMenu", "CMFCMenuBar [MFC], GetMenuFont", "CMFCMenuBar [MFC], GetMenuItem", "CMFCMenuBar [MFC], GetRowHeight", "CMFCMenuBar [MFC], GetSystemButton", "CMFCMenuBar [MFC], GetSystemButtonsCount", "CMFCMenuBar [MFC], GetSystemMenu", "CMFCMenuBar [MFC], HighlightDisabledItems", "CMFCMenuBar [MFC], IsButtonExtraSizeAvailable", "CMFCMenuBar [MFC], IsHighlightDisabledItems", "CMFCMenuBar [MFC], IsMenuShadows", "CMFCMenuBar [MFC], IsRecentlyUsedMenus", "CMFCMenuBar [MFC], IsShowAllCommands", "CMFCMenuBar [MFC], IsShowAllCommandsDelay", "CMFCMenuBar [MFC], LoadState", "CMFCMenuBar [MFC], OnChangeHot", "CMFCMenuBar [MFC], OnDefaultMenuLoaded", "CMFCMenuBar [MFC], OnSendCommand", "CMFCMenuBar [MFC], OnSetDefaultButtonText", "CMFCMenuBar [MFC], OnToolHitTest", "CMFCMenuBar [MFC], PreTranslateMessage", "CMFCMenuBar [MFC], RestoreOriginalstate", "CMFCMenuBar [MFC], SaveState", "CMFCMenuBar [MFC], SetDefaultMenuResId", "CMFCMenuBar [MFC], SetForceDownArrows", "CMFCMenuBar [MFC], SetMaximizeMode", "CMFCMenuBar [MFC], SetMenuButtonRTC", "CMFCMenuBar [MFC], SetMenuFont", "CMFCMenuBar [MFC], SetRecentlyUsedMenus", "CMFCMenuBar [MFC], SetShowAllCommands"]
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCMenuBar Class
 
@@ -90,7 +83,7 @@ To use a `CMFCMenuBar` object, embed it in the main window frame object. When pr
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCMenuBar` class. The example shows how to set the style of the pane, enable the customize button, enable a Help box, enable shadows for pop-up menus, and update the menu bar. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCMenuBar` class. The example shows how to set the style of the pane, enable the customize button, enable a Help box, enable shadows for pop-up menus, and update the menu bar. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#3](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_2.cpp)]
@@ -290,11 +283,11 @@ Nonzero if the method is successful; otherwise 0.
 
 You should use this function instead of [CMFCMenuBar::Create](#create) when you want to specify styles in addition to the toolbar style. Some frequently used additional styles are TBSTYLE_TRANSPARENT and CBRS_TOP.
 
-For lists of additional styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles), [common control styles](/windows/desktop/Controls/common-control-styles), and [common window styles](https://msdn.microsoft.com/library/windows/desktop/ms632600).
+For lists of additional styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles), [common control styles](/windows/desktop/Controls/common-control-styles), and [common window styles](/windows/desktop/winmsg/window-styles).
 
 ### Example
 
-The following example demonstrates how to use the `CreateEx` method of the `CMFCMenuBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `CreateEx` method of the `CMFCMenuBar` class. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#2](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_3.cpp)]
@@ -981,7 +974,7 @@ static void SetShowAllCommands(BOOL bShowAllCommands = TRUE);
 
 If a menu does not display all the menu commands, it hides the commands that are rarely used. For more information about displaying menu commands, see [CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

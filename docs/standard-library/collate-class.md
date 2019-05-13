@@ -1,16 +1,9 @@
 ---
-title: "collate Class | Microsoft Docs"
-ms.custom: ""
+title: "collate Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["locale/std::collate", "locale/std::collate::char_type", "locale/std::collate::string_type", "locale/std::collate::compare", "locale/std::collate::do_compare", "locale/std::collate::do_hash", "locale/std::collate::do_transform", "locale/std::collate::hash", "locale/std::collate::transform"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::collate [C++]", "std::collate [C++], char_type", "std::collate [C++], string_type", "std::collate [C++], compare", "std::collate [C++], do_compare", "std::collate [C++], do_hash", "std::collate [C++], do_transform", "std::collate [C++], hash", "std::collate [C++], transform"]
 ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # collate Class
 

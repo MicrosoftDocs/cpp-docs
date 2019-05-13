@@ -1,16 +1,9 @@
 ---
-title: "DAO Database Engine Initialization and Termination | Microsoft Docs"
-ms.custom: ""
+title: "DAO Database Engine Initialization and Termination"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.data"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO (Data Access Objects), termination", "DAO (Data Access Objects), initialization"]
 ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DAO Database Engine Initialization and Termination
 
@@ -65,6 +58,6 @@ For related information, see [Technical Note 54](../../mfc/tn054-calling-dao-dir
 
   **Header** afxdao.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

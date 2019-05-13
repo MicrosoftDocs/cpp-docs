@@ -1,14 +1,7 @@
 ---
-title: "Name Resolution for Dependent Types | Microsoft Docs"
-ms.custom: ""
+title: "Name Resolution for Dependent Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Name Resolution for Dependent Types
 
@@ -91,7 +84,7 @@ Int MyNamespace::myFunction
 
 ### Template Disambiguation
 
-Visual Studio 2012 enforces the C++98/03/11 standard rules for disambiguation with the "template" keyword. In the following example, Visual C++ 2010 would accept both the nonconforming lines and the conforming lines.  Visual Studio 2012 accepts only the conforming lines.
+Visual Studio 2012 enforces the C++98/03/11 standard rules for disambiguation with the "template" keyword. In the following example, Visual Studio 2010 would accept both the nonconforming lines and the conforming lines.  Visual Studio 2012 accepts only the conforming lines.
 
 ```cpp
 #include <iostream>

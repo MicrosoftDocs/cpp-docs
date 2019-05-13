@@ -1,15 +1,8 @@
 ---
-title: "How to: Use transformer in a Data Pipeline | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use transformer in a Data Pipeline"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["transformer class, example", "data pipelines, using transformer [Concurrency Runtime]", "using transformer in data pipelines [Concurrency Runtime]"]
 ms.assetid: ca49cb3f-4dab-4b09-a9c9-d3a109ae4c29
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use transformer in a Data Pipeline
 
@@ -52,9 +45,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc data-pipeline.cpp**
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
-

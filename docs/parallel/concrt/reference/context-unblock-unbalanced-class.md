@@ -1,16 +1,9 @@
 ---
-title: "context_unblock_unbalanced Class | Microsoft Docs"
-ms.custom: ""
+title: "context_unblock_unbalanced Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["context_unblock_unbalanced", "CONCRT/concurrency::context_unblock_unbalanced", "CONCRT/concurrency::context_unblock_unbalanced::context_unblock_unbalanced"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["context_unblock_unbalanced class"]
 ms.assetid: a76066c8-19dd-44fa-959a-6941ec1b0d2d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # context_unblock_unbalanced Class
 
@@ -61,6 +54,6 @@ context_unblock_unbalanced() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

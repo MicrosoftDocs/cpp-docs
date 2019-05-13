@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::InputIterator Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
+title: "Platform::Collections::InputIterator Class"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::InputIterator::InputIterator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["InputIterator Class"]
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::InputIterator Class
 
@@ -51,7 +45,7 @@ The typename of the InputIterator template class.
 |Name|Description|
 |----------|-----------------|
 |[InputIterator::operator!= Operator](#operator-inequality)|Indicates whether the current InputIterator is not equal to a specified InputIterator.|
-|[InputIterator::operator* Operator](#operator-decrement)|Retrieves a reference to the element specified by the current InputIterator.|
+|[InputIterator::operator* Operator](#operator-dereference)|Retrieves a reference to the element specified by the current InputIterator.|
 |[InputIterator::operator++ Operator](#operator-increment)|Increments the current InputIterator.|
 |[InputIterator::operator== Operator](#operator-equality)|Indicates whether the current InputIterator is equal to a specified InputIterator.|
 |[InputIterator::operator-> Operator](#operator-arrow)|Retrieves the address of the element referenced by the current InputIterator.|
@@ -74,12 +68,12 @@ Initializes a new instance of the InputIterator class.
 
 ```
 InputIterator();
-explicit InputIterator(Windows::Foundation::Collections<X>^ iter);
+explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 ```
 
 ### Parameters
 
-*iter*<br/>
+*iterator*<br/>
 An iterator object.
 
 ## <a name="operator-arrow"></a>  InputIterator::operator-&gt; Operator
@@ -169,6 +163,6 @@ Another InputIterator.
 
 **true** if the current InputIterator is not equal to *other*; otherwise, **false**.
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

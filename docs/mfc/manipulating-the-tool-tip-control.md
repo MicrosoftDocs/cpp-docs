@@ -1,15 +1,8 @@
 ---
-title: "Manipulating the Tool Tip Control | Microsoft Docs"
-ms.custom: ""
+title: "Manipulating the Tool Tip Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CToolTipCtrl class [MFC], manipulating tool tip attributes", "tool tips [MFC], attributes"]
 ms.assetid: 3600afe5-712a-4b56-8456-96e85fe879af
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Manipulating the Tool Tip Control
 
@@ -33,8 +26,7 @@ In order for the tool tip control to be notified of important messages, such as 
 
 To immediately remove a tool tip window, call the [Pop](../mfc/reference/ctooltipctrl-class.md#pop) member function.
 
-## See Also
+## See also
 
 [Using CToolTipCtrl](../mfc/using-ctooltipctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Controls (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Controls (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows common controls [MFC]", "common controls [MFC]", "controls [MFC]"]
 ms.assetid: b2842884-6435-4b8f-933b-21671bf8af95
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Controls (MFC)
 
@@ -102,8 +95,7 @@ The table below briefly describes each of the Windows common controls, including
 
 For information about Windows common controls in the Windows SDK, see [Common Controls](/windows/desktop/Controls/common-controls-intro).
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
 [Dialog Editor](../windows/dialog-editor.md)
-

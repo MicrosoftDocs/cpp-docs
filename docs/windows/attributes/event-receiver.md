@@ -1,16 +1,9 @@
 ---
-title: "event_receiver (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "event_receiver (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.event_receiver"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event_receiver attribute", "event receivers", "events [C++], event receivers (sinks)", "event handling [C++], attributes", "event handling [C++], creating receiver", "event sinks, creating", "event sinks"]
 ms.assetid: bf8fe770-3ea2-4128-b46b-166222ee4097
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # event_receiver
 
@@ -69,7 +62,7 @@ The **event_receiver** C++ attribute specifies that the class or structure to wh
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [event_source](event-source.md)<br/>

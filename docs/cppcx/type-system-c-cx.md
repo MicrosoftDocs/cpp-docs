@@ -1,13 +1,7 @@
 ---
-title: "Type System (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Type System (C++/CX)"
 ms.date: "02/03/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type System (C++/CX)
 
@@ -179,6 +173,6 @@ Describes how to mark public APIs as deprecated by using the same attribute that
 
 For more information, see [Deprecating types and members](../cppcx/deprecating-types-and-members-c-cx.md).
 
-## See Also
+## See also
 
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

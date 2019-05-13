@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1256 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1256"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-f1_keywords: ["xml", "LNK1256"]
-dev_langs: ["C++"]
+f1_keywords: ["LNK1256"]
 helpviewer_keywords: ["LNK1256"]
 ms.assetid: 55b64b2b-a56b-436c-a55e-ec9c6dcb050e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1256
 

@@ -1,15 +1,8 @@
 ---
-title: "C complex math support | Microsoft Docs"
-ms.custom: ""
+title: "C complex math support"
 ms.date: "03/30/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.complex"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["complex numbers, math routines", "math routines", "complex numbers"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C complex math support
 

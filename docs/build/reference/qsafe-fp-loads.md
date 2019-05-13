@@ -1,13 +1,6 @@
 ---
-title: "/Qsafe_fp_loads | Microsoft Docs"
-ms.custom: ""
+title: "/Qsafe_fp_loads"
 ms.date: "01/24/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Qsafe_fp_loads
 
@@ -23,13 +16,13 @@ Requires integer move instructions for floating-point values and disables certai
 
 **/Qsafe_fp_loads** forces the compiler to use integer move instructions instead of floating-point move instructions to move data between memory and MMX registers. This option also disables register load optimization for floating-point values that can be loaded in multiple control paths when the value may cause an exception on load—for example, a NaN value.
 
-This option is overridden by [/fp:except](../../build/reference/fp-specify-floating-point-behavior.md). **/Qsafe_fp_loads** specifies a subset of the compiler behavior that's specified by **/fp:except**.
+This option is overridden by [/fp:except](fp-specify-floating-point-behavior.md). **/Qsafe_fp_loads** specifies a subset of the compiler behavior that's specified by **/fp:except**.
 
-**/Qsafe_fp_loads** is incompatible with [/clr](../../build/reference/clr-common-language-runtime-compilation.md) and [/fp:fast](../../build/reference/fp-specify-floating-point-behavior.md). For more information about floating point compiler options, see [/fp (Specify Floating-Point Behavior)](../../build/reference/fp-specify-floating-point-behavior.md).
+**/Qsafe_fp_loads** is incompatible with [/clr](clr-common-language-runtime-compilation.md) and [/fp:fast](fp-specify-floating-point-behavior.md). For more information about floating point compiler options, see [/fp (Specify Floating-Point Behavior)](fp-specify-floating-point-behavior.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -41,6 +34,6 @@ This option is overridden by [/fp:except](../../build/reference/fp-specify-float
 
 ## See also
 
-[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

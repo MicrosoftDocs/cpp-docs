@@ -1,16 +1,9 @@
 ---
-title: "Document Template Strings, MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Document Template Strings, MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.doctemp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard, document template strings"]
 ms.assetid: 8109f662-3182-4682-977a-2503321c678a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document Template Strings, MFC Application Wizard
 
@@ -38,7 +31,6 @@ In this page of the MFC Application Wizard, provide or refine the following opti
    |**File new short name**|Sets the name appearing in the standard Windows **New** dialog box, if there is more than one new document template. If your application is an [Automation server](../../mfc/automation-servers.md), this name is used as the short name of your Automation object. By default, the project name.|
    |**File type long name**|Sets the file type name in the system registry. If your application is an Automation server, this name is used as the long name of your Automation object. By default, the project name plus .Document.|
 
-## See Also
+## See also
 
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)
-

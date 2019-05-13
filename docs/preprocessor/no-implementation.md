@@ -1,16 +1,9 @@
 ---
-title: "no_implementation | Microsoft Docs"
-ms.custom: ""
+title: "no_implementation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["no_implementation"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no_implementation attribute"]
 ms.assetid: bdc67785-e131-409c-87bc-f4d2f4abb07b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # no_implementation
 **C++ Specific**
@@ -31,7 +24,7 @@ This attribute is used in conjunction with [implementation_only](../preprocessor
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

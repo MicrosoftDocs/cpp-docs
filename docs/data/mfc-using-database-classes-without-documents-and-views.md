@@ -1,15 +1,8 @@
 ---
-title: "MFC: Using Database Classes Without Documents and Views | Microsoft Docs"
-ms.custom: ""
+title: "MFC: Using Database Classes Without Documents and Views"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC applications [C++], without views", "documents [C++], applications without", "ODBC applications [C++]", "document/view architecture [C++], in databases", "files [C++], MFC", "database classes [C++], MFC", "CRecordView class, using in database applications", "database applications [C++], without views", "database applications [C++], application wizard options", "application wizards [C++], creating database applications", "ODBC [C++], file support in database applications", "ODBC applications [C++], without documents", "database applications [C++], without documents", "user interface [C++], drawing information"]
 ms.assetid: 15bf52d4-91cf-4b1d-8b37-87c3ae70123a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # MFC: Using Database Classes Without Documents and Views
 
@@ -106,6 +99,6 @@ Because no document owns the `CRecordset` object, you probably want to store it 
 
 - Using recordset objects as you would within the context of a document or a view. Create recordsets in the member functions of your application or frame-window objects.
 
-## See Also
+## See also
 
 [MFC Database Classes](../data/mfc-database-classes-odbc-and-dao.md)

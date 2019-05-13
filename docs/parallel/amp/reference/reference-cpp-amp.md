@@ -1,16 +1,9 @@
 ---
-title: "Reference (C++ AMP) | Microsoft Docs"
-ms.custom: ""
+title: "Reference (C++ AMP)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::Reference (C++ AMP)"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, reference"]
 ms.assetid: 372a8aed-8a53-48c9-996f-9c3cf09c9fa8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Reference (C++ AMP)
 
@@ -40,4 +33,3 @@ Functions in the `precise_math` namespace are C99 compliant. Both single-precisi
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 C++ AMP accelerates the execution of your C++ code by taking advantage of the data-parallel hardware that's commonly present as a graphics processing unit (GPU) on a discrete graphics card.
-

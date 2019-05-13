@@ -1,19 +1,12 @@
 ---
-title: "isprint, iswprint, _isprint_l, _iswprint_l | Microsoft Docs"
-ms.custom: ""
+title: "isprint, iswprint, _isprint_l, _iswprint_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["iswprint", "isprint", "_isprint_l", "_iswprint_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["iswprint", "_istprint", "isprint"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_istprint function", "iswprint function", "_iswprint_l function", "isprint_l function", "istprint function", "isprint function", "iswprint_l function", "_isprint_l function"]
 ms.assetid: a8bbcdb0-e8d0-4d8c-ae4e-56d3bdee6ca3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # isprint, iswprint, _isprint_l, _iswprint_l
 

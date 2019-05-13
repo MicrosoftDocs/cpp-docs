@@ -1,16 +1,9 @@
 ---
-title: "IWorkerThreadClient Interface | Microsoft Docs"
-ms.custom: ""
+title: "IWorkerThreadClient Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IWorkerThreadClient", "ATLUTIL/ATL::IWorkerThreadClient", "ATLUTIL/ATL::CloseHandle", "ATLUTIL/ATL::Execute"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IWorkerThreadClient interface"]
 ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IWorkerThreadClient Interface
 
@@ -99,7 +92,7 @@ The following code shows a simple implementation of `IWorkerThreadClient::Execut
 
 [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iworkerthreadclient-interface_2.cpp)]
 
-## See Also
+## See also
 
 [Classes](../../atl/reference/atl-classes.md)<br/>
 [CWorkerThread Class](../../atl/reference/cworkerthread-class.md)

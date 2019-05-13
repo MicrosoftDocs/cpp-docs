@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2113 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2113"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2113"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2113"]
 ms.assetid: cbf52e93-ab14-49b7-9ce8-fb55877602ec
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2113
 

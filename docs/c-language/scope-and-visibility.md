@@ -1,15 +1,8 @@
 ---
-title: "Scope and Visibility | Microsoft Docs"
-ms.custom: ""
+title: "Scope and Visibility"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scope, levels", "visibility", "file scope [C++]"]
 ms.assetid: a019eb7c-66ed-46a7-bc9f-89a963930a56
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scope and Visibility
 
@@ -31,6 +24,6 @@ The declarator or type specifier for an identifier with function-prototype scope
 
 The appropriate declarations for making variables visible in other source files are described in [Storage Classes](../c-language/c-storage-classes.md). However, variables and functions declared at the external level with the **static** storage-class specifier are visible only within the source file in which they are defined. All other functions are globally visible.
 
-## See Also
+## See also
 
 [Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md)

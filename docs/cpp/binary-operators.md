@@ -1,15 +1,8 @@
 ---
-title: "Binary Operators | Microsoft Docs"
-ms.custom: ""
+title: "Binary Operators"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["member-selection operators [C++]", "operators [C++], binary", "binary operators [C++]"]
 ms.assetid: c0e7fbff-bc87-4708-8333-504ac09ee83e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Binary Operators
 

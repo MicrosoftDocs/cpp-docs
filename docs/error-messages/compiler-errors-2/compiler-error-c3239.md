@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3239 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3239"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3239"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3239"]
 ms.assetid: 22a518b7-020f-4f3c-9963-a094667fd1ac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3239
 

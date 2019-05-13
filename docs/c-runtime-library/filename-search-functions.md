@@ -1,17 +1,10 @@
 ---
-title: "Filename Search Functions | Microsoft Docs"
-ms.custom: ""
+title: "Filename Search Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr100.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
-dev_langs: ["C++"]
 helpviewer_keywords: ["file names [C++], searching for", "_find function", "wfind function", "find function", "_wfind function"]
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Filename Search Functions
 
@@ -143,6 +136,6 @@ N   N   N   Y   blah.c       Wed Feb 13 09:21:42 2002       1715
 N   N   N   Y   test.c       Wed Feb 06 14:30:44 2002        312
 ```
 
-## See Also
+## See also
 
 [System Calls](../c-runtime-library/system-calls.md)

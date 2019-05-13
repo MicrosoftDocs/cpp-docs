@@ -1,15 +1,9 @@
 ---
-title: "Introduction to COM and ATL | Microsoft Docs"
+title: "Introduction to COM and ATL"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM, and ATL", "ATL, COM", "COM objects, ATL"]
 ms.assetid: 35d6ae9c-abbb-42f0-9344-33f3c19ac3ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Introduction to COM and ATL
 
@@ -33,4 +27,3 @@ Provides links to conceptual topics on how to program using the Active Template 
 
 [ATL Class Overview](../atl/atl-class-overview.md)<br/>
 Provides reference information and links to the ATL classes.
-

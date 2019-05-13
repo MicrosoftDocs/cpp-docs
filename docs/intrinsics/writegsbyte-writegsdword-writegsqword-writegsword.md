@@ -1,16 +1,9 @@
 ---
-title: "__writegsbyte, __writegsdword, __writegsqword, __writegsword | Microsoft Docs"
-ms.custom: ""
+title: "__writegsbyte, __writegsdword, __writegsqword, __writegsword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__writegsbyte", "__writegsqword", "__writegsdword", "__writegsword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__writegsqword intrinsic", "__writegsbyte intrinsic", "__writegsword intrinsic", "__writegsdword intrinsic"]
 ms.assetid: 7746cf6d-2259-4139-9aab-c07dd75c8037
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writegsbyte, __writegsdword, __writegsqword, __writegsword
 
@@ -21,21 +14,21 @@ Write memory to a location specified by an offset relative to the beginning of t
 ## Syntax
 
 ```
-void __writegsbyte( 
-   unsigned long Offset, 
-   unsigned char Data 
+void __writegsbyte(
+   unsigned long Offset,
+   unsigned char Data
 );
-void __writegsword( 
-   unsigned long Offset, 
-   unsigned short Data 
+void __writegsword(
+   unsigned long Offset,
+   unsigned short Data
 );
-void __writegsdword( 
-   unsigned long Offset, 
-   unsigned long Data 
+void __writegsdword(
+   unsigned long Offset,
+   unsigned long Data
 );
-void __writegsqword( 
-   unsigned long Offset, 
-   unsigned __int64 Data 
+void __writegsqword(
+   unsigned long Offset,
+   unsigned __int64 Data
 );
 ```
 
@@ -60,11 +53,11 @@ void __writegsqword( 
 
 ## Remarks
 
-These intrinsics are available in kernel mode only, and these routines are only available as intrinsics.
+These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

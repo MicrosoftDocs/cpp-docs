@@ -1,15 +1,8 @@
 ---
-title: "Stand-Alone Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "Stand-Alone Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["standalone attributes", "attributes [C++/CLI], standalone"]
 ms.assetid: 0d72e84e-236c-43b3-ac9a-d9b91fcd6794
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Stand-Alone Attributes
 
@@ -35,6 +28,6 @@ A stand-alone attribute does not operate on a C++ keyword but is more like a lin
 |[no_injected_text](no-injected-text.md)|Prevents the compiler from injecting code as a result of attribute use.|
 |[pragma](pragma.md)|Emits the specified string, without the quote characters, into the generated .idl file.|
 
-## See Also
+## See also
 
 [Attributes by Usage](attributes-by-usage.md)

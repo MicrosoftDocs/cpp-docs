@@ -1,16 +1,9 @@
 ---
-title: "forward_iterator_tag Struct | Microsoft Docs"
-ms.custom: ""
+title: "forward_iterator_tag Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xutility/std::forward_iterator_tag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["forward_iterator_tag struct", "forward_iterator_tag class"]
 ms.assetid: 68b633ac-b135-4e9e-837d-14248a262ec5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # forward_iterator_tag Struct
 

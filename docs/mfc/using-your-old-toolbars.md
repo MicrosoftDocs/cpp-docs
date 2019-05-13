@@ -1,16 +1,9 @@
 ---
-title: "Using Your Old Toolbars | Microsoft Docs"
-ms.custom: ""
+title: "Using Your Old Toolbars"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["COldToolBar"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["toolbars [MFC], backward compatibility", "COldToolBar class [MFC]"]
 ms.assetid: 3543257c-8547-43f0-a66a-ee641dc1cf89
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Your Old Toolbars
 
@@ -30,7 +23,6 @@ You can't edit old-style toolbars with the toolbar resource editor.
 
 - [Working with the toolbar control](../mfc/working-with-the-toolbar-control.md)
 
-## See Also
+## See also
 
 [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-

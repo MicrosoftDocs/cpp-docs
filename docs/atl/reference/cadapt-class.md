@@ -1,16 +1,9 @@
 ---
-title: "CAdapt Class | Microsoft Docs"
-ms.custom: ""
+title: "CAdapt Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAdapt", "ATLCOMCLI/ATL::CAdapt", "ATLCOMCLI/ATL::CAdapt::CAdapt", "ATLCOMCLI/ATL::CAdapt::m_T"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["address-of operator", "adapter objects", "& operator, address-of operator", "CAdapt class"]
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAdapt Class
 
@@ -178,6 +171,6 @@ A reference to the object to be compared.
 
 The result of the comparison between *m_T* and *rSrc*.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

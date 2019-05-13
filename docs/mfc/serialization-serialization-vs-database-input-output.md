@@ -1,15 +1,8 @@
 ---
-title: "Serialization: Serialization vs. Database Input-Output | Microsoft Docs"
-ms.custom: ""
+title: "Serialization: Serialization vs. Database Input-Output"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["database applications [MFC], file I/O vs. serialization", "serialization [MFC], vs. database I/O", "I/O [MFC], vs. serialization", "databases [MFC], input/output handling"]
 ms.assetid: f1d23d77-4761-4a52-a7ea-54fc92d347ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Serialization: Serialization vs. Database Input/Output
 
@@ -19,7 +12,6 @@ This article explains when to use document objects and serialization for file-ba
 
 - [Handling the File menu in database applications](../mfc/file-menu-in-an-mfc-database-application.md)
 
-## See Also
+## See also
 
 [Serialization](../mfc/serialization-in-mfc.md)
-

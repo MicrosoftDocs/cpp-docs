@@ -1,16 +1,10 @@
 ---
-title: "Platform::InvalidArgumentException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::InvalidArgumentException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::InvalidArgumentException", "VCCORLIB/Platform::InvalidArgumentException::InvalidArgumentException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::InvalidArgumentException"]
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::InvalidArgumentException Class
 
@@ -36,6 +30,6 @@ For more information, see the [COMException](../cppcx/platform-comexception-clas
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform::COMException Class](../cppcx/platform-comexception-class.md)

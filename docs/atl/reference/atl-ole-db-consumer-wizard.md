@@ -1,18 +1,18 @@
 ---
-title: "ATL OLE DB Consumer Wizard | Microsoft Docs"
-ms.custom: ""
-ms.date: "08/31/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-f1_keywords: ["vc.codewiz.class.atl.consumer.overview"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers", "connection strings [C++], OLE DB consumers", "ATL OLE DB Consumer Wizard"]
+title: "ATL OLE DB Consumer Wizard"
+ms.date: "05/09/2019"
+helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers"]
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL OLE DB Consumer Wizard
+
+::: moniker range="vs-2019"
+
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 This wizard sets up an OLE DB consumer class with the data bindings necessary to access the specified data source through the specified OLE DB provider.
 
@@ -81,13 +81,13 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
       **Other:** In **Connect timeout**, specify the number of seconds of idle time allowed before a timeout occurs. In **Access permissions**, specify the access permissions on the data connection.
 
-       For more information about advanced initialization properties, refer to the documentation provided with each specific OLE DB provider.
+      For more information about advanced initialization properties, refer to the documentation provided with each specific OLE DB provider.
 
    - **All** tab
 
       This tab displays a summary of the initialization properties for the data source and connection you have specified. You can edit these values.
 
-   Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.
+      Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table, view, or stored procedure that the consumer will use.
 
 - **Class**
 
@@ -177,6 +177,8 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
    - **Delete**
 
       Specifies that the consumer support deletion of rows from the rowset.
+
+::: moniker-end
 
 ## See also
 

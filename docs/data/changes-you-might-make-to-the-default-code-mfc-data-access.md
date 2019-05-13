@@ -1,15 +1,8 @@
 ---
-title: "Changes You Might Make to the Default Code  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Changes You Might Make to the Default Code  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["record views [C++], customizing default code"]
 ms.assetid: 9992ed37-a6bf-45a5-a572-5c14e42b6628
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Changes You Might Make to the Default Code  (MFC Data Access)
 
@@ -21,6 +14,6 @@ The [MFC Application Wizard](../mfc/reference/database-support-mfc-application-w
 
 - Pass a customized SQL string to the [Open](../mfc/reference/crecordset-class.md#open) member function. For a discussion of what you can accomplish with this technique , see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
-## See Also
+## See also
 
 [Using a Record View](../data/using-a-record-view-mfc-data-access.md)

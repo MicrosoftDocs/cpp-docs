@@ -1,16 +1,10 @@
 ---
-title: "deque (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "deque (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::deque", "cliext::deque::assign", "cliext::deque::at", "cliext::deque::back", "cliext::deque::back_item", "cliext::deque::begin", "cliext::deque::clear", "cliext::deque::const_iterator", "cliext::deque::const_reference", "cliext::deque::const_reverse_iterator", "cliext::deque::deque", "cliext::deque::difference_type", "cliext::deque::empty", "cliext::deque::end", "cliext::deque::erase", "cliext::deque::front", "cliext::deque::front_item", "cliext::deque::generic_container", "cliext::deque::generic_iterator", "cliext::deque::generic_reverse_iterator", "cliext::deque::generic_value", "cliext::deque::insert", "cliext::deque::iterator", "cliext::deque::operator!=", "cliext::deque::operator[]", "cliext::deque::pop_back", "cliext::deque::pop_front", "cliext::deque::push_back", "cliext::deque::push_front", "cliext::deque::rbegin", "cliext::deque::reference", "cliext::deque::rend", "cliext::deque::resize", "cliext::deque::reverse_iterator", "cliext::deque::size", "cliext::deque::size_type", "cliext::deque::swap", "cliext::deque::to_array", "cliext::deque::value_type", "cliext::deque::operator<", "cliext::deque::operator<=", "cliext::deque::operator=", "cliext::deque::operator==", "cliext::deque::operator>", "cliext::deque::operator>="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["deque class [STL/CLR]", "<deque> header [STL/CLR]", "<cliext/deque> header [STL/CLR]", "assign member [STL/CLR]", "assign member [STL/CLR]", "at member [STL/CLR]", "back member [STL/CLR]", "back_item member [STL/CLR]", "begin member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "deque member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "erase member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "operator!= member [STL/CLR]", "operator member [] [STL/CLR]", "pop_back member [STL/CLR]", "pop_front member [STL/CLR]", "push_back member [STL/CLR]", "push_front member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "resize member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]"]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque (STL/CLR)
 

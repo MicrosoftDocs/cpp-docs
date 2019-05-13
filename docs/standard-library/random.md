@@ -1,16 +1,9 @@
 ---
-title: "&lt;random&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;random&gt;"
 ms.date: "08/24/2017"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<random>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["random header"]
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;random&gt;
 

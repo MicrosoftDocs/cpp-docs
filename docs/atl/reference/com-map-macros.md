@@ -1,16 +1,9 @@
 ---
-title: "COM Map Macros | Microsoft Docs"
-ms.custom: ""
+title: "COM Map Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::BEGIN_COM_MAP", "atlcom/ATL::END_COM_MAP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM interfaces, COM map macros"]
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COM Map Macros
 
@@ -44,7 +37,7 @@ BEGIN_COM_MAP(x)
 
 ### Example
 
-From the ATL [BEEPER](../../visual-cpp-samples.md) sample:
+From the ATL [BEEPER](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]
 
@@ -56,7 +49,7 @@ Ends the definition of your COM interface map.
 END_COM_MAP()
 ```
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)<br/>
 [COM Map Global Functions](../../atl/reference/com-map-global-functions.md)

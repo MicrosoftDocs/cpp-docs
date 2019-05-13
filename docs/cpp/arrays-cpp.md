@@ -1,15 +1,8 @@
 ---
-title: "Arrays (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
+title: "Arrays (C++)"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["declaring arrays [C++], about declaring arrays", "multidimensional arrays [C++]", "arrays [C++]"]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Arrays (C++)
 
@@ -73,8 +66,8 @@ int i2[5][7];
 
 It specifies an array of type **int**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:
 
-![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "vc38RC1")
-Conceptual Layout of Multidimensional Array
+![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "Conceptual layout of a multi&#45;dimensional array") <br/>
+Conceptual layout of a multi-dimensional array
 
 In declarations of multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)), the constant expression that specifies the bounds for the first dimension can be omitted. For example:
 

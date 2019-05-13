@@ -1,16 +1,9 @@
 ---
-title: "Initializing the Parts of a CStatusBarCtrl Object | Microsoft Docs"
-ms.custom: ""
+title: "Initializing the Parts of a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CStatusBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStatusBarCtrl class [MFC], simple mode", "status bars [MFC], declaring parts of", "simple status bars [MFC]", "status bars [MFC], icons", "status bars [MFC], simple mode", "icons, using in status bars", "CStatusBarCtrl class [MFC], declaring parts of"]
 ms.assetid: 60e8f285-d2d8-424a-a6ea-2fc548370303
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializing the Parts of a CStatusBarCtrl Object
 
@@ -24,8 +17,7 @@ The following example initializes an existing `CStatusBarCtrl` object (`m_Status
 
 For more information on setting the mode of a `CStatusBarCtrl` object to simple, see [Setting the Mode of a CStatusBarCtrl Object](../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md).
 
-## See Also
+## See also
 
 [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

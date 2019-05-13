@@ -1,16 +1,9 @@
 ---
-title: "__svm_stgi | Microsoft Docs"
-ms.custom: ""
+title: "__svm_stgi"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__svm_stgi"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__svm_stgi intrinsic", "STGI instruction"]
 ms.assetid: 96488da4-5587-4e99-8674-627a9e51be84
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __svm_stgi
 
@@ -40,7 +33,7 @@ This function supports the interaction of a host's virtual machine monitor with 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__svm_clgi](../intrinsics/svm-clgi.md)

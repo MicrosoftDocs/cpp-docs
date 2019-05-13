@@ -1,16 +1,9 @@
 ---
-title: "runtime_error Class | Microsoft Docs"
-ms.custom: ""
+title: "runtime_error Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["stdexcept/std::runtime_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["runtime_error class"]
 ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # runtime_error Class
 

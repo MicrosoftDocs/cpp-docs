@@ -1,16 +1,9 @@
 ---
-title: "is_unsigned Class | Microsoft Docs"
-ms.custom: ""
+title: "is_unsigned Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_unsigned"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_unsigned class", "is_unsigned"]
 ms.assetid: ba5bec3d-796b-4e54-8595-a3941ec6a8dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_unsigned Class
 
@@ -58,7 +51,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

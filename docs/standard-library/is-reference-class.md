@@ -1,16 +1,9 @@
 ---
-title: "is_reference Class | Microsoft Docs"
-ms.custom: ""
+title: "is_reference Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_reference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_reference class", "is_reference"]
 ms.assetid: 3d9e631f-3092-430c-843e-e914ab58c257
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_reference Class
 
@@ -58,7 +51,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

@@ -1,16 +1,9 @@
 ---
-title: "CStringElementTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CStringElementTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CStringElementTraits", "CSTRINGT/ATL::CStringElementTraits", "CSTRINGT/ATL::CStringElementTraits::INARGTYPE", "CSTRINGT/ATL::CStringElementTraits::OUTARGTYPE", "CSTRINGT/ATL::CStringElementTraits::CompareElements", "CSTRINGT/ATL::CStringElementTraits::CompareElementsOrdered", "CSTRINGT/ATL::CStringElementTraits::CopyElements", "CSTRINGT/ATL::CStringElementTraits::Hash", "CSTRINGT/ATL::CStringElementTraits::RelocateElements"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStringElementTraits class"]
 ms.assetid: 74d7134b-099d-4455-bf91-3e68ccbf95bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStringElementTraits Class
 
@@ -182,7 +175,7 @@ The number of elements to relocate.
 
 This static function calls [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), which is sufficient for most data types. If the objects being moved contain pointers to their own members, this static function will need to be overridden.
 
-## See Also
+## See also
 
 [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)<br/>
 [CStringElementTraitsI Class](../../atl/reference/cstringelementtraitsi-class.md)<br/>

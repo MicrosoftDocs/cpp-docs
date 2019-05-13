@@ -1,16 +1,9 @@
 ---
-title: "CMFCEditBrowseCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCEditBrowseCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFileBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFolderBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::GetMode", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnAfterUpdate", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnBrowse", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnChangeLayout", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCEditBrowseCtrl [MFC], EnableBrowseButton", "CMFCEditBrowseCtrl [MFC], EnableFileBrowseButton", "CMFCEditBrowseCtrl [MFC], EnableFolderBrowseButton", "CMFCEditBrowseCtrl [MFC], GetMode", "CMFCEditBrowseCtrl [MFC], OnAfterUpdate", "CMFCEditBrowseCtrl [MFC], OnBrowse", "CMFCEditBrowseCtrl [MFC], OnChangeLayout", "CMFCEditBrowseCtrl [MFC], OnDrawBrowseButton", "CMFCEditBrowseCtrl [MFC], OnIllegalFileName", "CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage"]
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCEditBrowseCtrl Class
 
@@ -99,7 +92,7 @@ Perform the following steps to incorporate an edit browse control in your applic
 
 ## Example
 
-The following example demonstrates how to use two methods in the `CMFCEditBrowseCtrl` class: `EnableFolderBrowseButton` and `EnableFileBrowseButton`. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use two methods in the `CMFCEditBrowseCtrl` class: `EnableFolderBrowseButton` and `EnableFileBrowseButton`. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#6](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#7](../../mfc/reference/codesnippet/cpp/cmfceditbrowsectrl-class_2.cpp)]
@@ -316,7 +309,7 @@ Should return FALSE if this file name can not be passed further to the file dial
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

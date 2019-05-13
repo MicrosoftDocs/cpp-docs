@@ -1,16 +1,9 @@
 ---
-title: "align (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "align (C++)"
+ms.date: "12/17/2018" 
 f1_keywords: ["align_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["align __declspec keyword", "__declspec keyword [C++], align"]
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # align (C++)
 
@@ -76,9 +69,9 @@ For more information, see:
 
 - [How align Works with Data Packing](#vclrfhowalignworkswithdatapacking)
 
-- [Examples of Structure Alignment](../build/examples-of-structure-alignment.md) (x64 specific)
+- [Examples of Structure Alignment](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
 
-##  <a name="vclrfalignexamples"></a> align Examples
+## <a name="vclrfalignexamples"></a> align Examples
 
 The following examples show how `__declspec(align(#))` affects the size and alignment of data structures. The examples assume the following definitions:
 
@@ -169,7 +162,7 @@ void fn() {
 
 The alignment when memory is allocated on the heap depends on which allocation function is called.  For example, if you use `malloc`, the result depends on the operand size. If *arg* >= 8, the memory returned is 8 byte aligned. If *arg* < 8, the alignment of the memory returned is the first power of 2 less than *arg*. For example, if you use malloc(7), the alignment is 4 bytes.
 
-##  <a name="vclrf_declspecaligntypedef"></a> Defining New Types with __declspec(align(#))
+## <a name="vclrf_declspecaligntypedef"></a> Defining New Types with __declspec(align(#))
 
 You can define a type with an alignment characteristic.
 
@@ -182,7 +175,7 @@ typedef __declspec(align(32)) struct aType bType;
 
 Now, `aType` and `bType` are the same size (8 bytes) but variables of type `bType` are 32-byte aligned.
 
-##  <a name="vclrfthreadlocalstorageallocation"></a> Aligning Data in Thread Local Storage
+## <a name="vclrfthreadlocalstorageallocation"></a> Aligning Data in Thread Local Storage
 
 Static thread-local storage (TLS) created with the `__declspec(thread)` attribute and put in the TLS section in the image works for alignment exactly like normal static data. To create TLS data, the operating system allocates memory the size of the TLS section and respects the TLS section alignment attribute.
 
@@ -205,7 +198,7 @@ struct CACHE_ALIGN S9 {
 __declspec(thread) struct S9 a;
 ```
 
-##  <a name="vclrfhowalignworkswithdatapacking"></a> How align Works with Data Packing
+## <a name="vclrfhowalignworkswithdatapacking"></a> How align Works with Data Packing
 
 The `/Zp` compiler option and the `pack` pragma have the effect of packing data for structure and union members.This example shows how `/Zp` and `__declspec(align(#))` work together:
 
@@ -242,4 +235,4 @@ The offset of an object is based on the offset of the previous object and the cu
 
 [__declspec](../cpp/declspec.md)<br/>
 [Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)<br/>
-[Overview of x64 Calling Conventions](../build/overview-of-x64-calling-conventions.md)
+[x64 software conventions](../build/x64-software-conventions.md)

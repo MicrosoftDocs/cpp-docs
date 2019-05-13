@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3483 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3483"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3483"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3483"]
 ms.assetid: 18b3a2c5-dfc9-4661-9653-08a5798474cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3483
 
@@ -36,6 +29,6 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

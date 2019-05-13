@@ -1,15 +1,8 @@
 ---
-title: "Demotion of Integers | Microsoft Docs"
-ms.custom: ""
+title: "Demotion of Integers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["demoting integers"]
 ms.assetid: 51fb3654-60b0-4de7-80eb-bd910086c18a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Demotion of Integers
 
@@ -33,6 +26,6 @@ assigns the value 0x34 to `y`.
 
 When signed variables are converted to unsigned and vice versa, the bit patterns remain the same. For example, casting -2 (0xFE) to an unsigned value yields 254 (also 0xFE).
 
-## See Also
+## See also
 
 [Integers](../c-language/integers.md)

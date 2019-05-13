@@ -1,17 +1,10 @@
 ---
-title: "How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms | Microsoft Docs"
-ms.custom: ""
+title: "How to: Configure Visual Studio C++ projects to Target 64-Bit, x64 Platforms"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["platforms [C++], 64-bit", "64-bit programming [C++], configuring projects", "project configurations [C++]"]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
-# How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms
+# How to: Configure Visual Studio C++ projects to Target 64-Bit, x64 Platforms
 
 You can use the project configurations in the Visual Studio IDE to set up C++ applications to target 64-bit, x64 platforms. You can also migrate Win32 project settings into a 64-bit project configuration.
 
@@ -19,7 +12,7 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
 
 1. Open the C++ project that you want to configure.
 
-1. Open the property pages for that project. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).
+1. Open the property pages for that project. For more information, see [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md).
 
    > [!NOTE]
    > For .NET projects, make sure that the **Configuration Properties** node, or one of its child nodes, is selected in the **\<Projectname> Property Pages** dialog box; otherwise, the **Configuration Manager** button remains unavailable.
@@ -41,21 +34,20 @@ You can use the project configurations in the Visual Studio IDE to set up C++ ap
 
 - When the **New Solution Platform** dialog box is open while you set up a project to target a 64-bit platform, in the **Copy settings from** drop-down list, select **Win32**. These project settings are automatically updated on the project level:
 
-   - The [/MACHINE](../build/reference/machine-specify-target-platform.md) linker option is set to **/MACHINE:X64**.
+  - The [/MACHINE](reference/machine-specify-target-platform.md) linker option is set to **/MACHINE:X64**.
 
-   - **Register Output** is turned OFF. For more information, see [Linker Property Pages](../ide/linker-property-pages.md).
+  - **Register Output** is turned OFF. For more information, see [Linker Property Pages](reference/linker-property-pages.md).
 
-   - **Target Environment** is set to **/env x64**. For more information, see [MIDL Property Pages: General](../ide/midl-property-pages-general.md).
+  - **Target Environment** is set to **/env x64**. For more information, see [MIDL Property Pages: General](reference/midl-property-pages-general.md).
 
-   - **Validate Parameters** is cleared and reset to the default value. For more information, see [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md).
+  - **Validate Parameters** is cleared and reset to the default value. For more information, see [MIDL Property Pages: Advanced](reference/midl-property-pages-advanced.md).
 
-   - If **Debug Information Format** was set to **/ZI** in the Win32 project configuration, then it is set to **/Zi** in the 64-bit project configuration. For more information, see [/Z7, /Zi, /ZI (Debug Information Format)](../build/reference/z7-zi-zi-debug-information-format.md).
+  - If **Debug Information Format** was set to **/ZI** in the Win32 project configuration, then it is set to **/Zi** in the 64-bit project configuration. For more information, see [/Z7, /Zi, /ZI (Debug Information Format)](reference/z7-zi-zi-debug-information-format.md).
 
-   > [!NOTE]
-   > None of these project properties are changed if they are overridden on the file level.
+  > [!NOTE]
+  > None of these project properties are changed if they are overridden on the file level.
 
-## See Also
+## See also
 
-[.NET Framework 64-bit Applications](/dotnet/framework/64-bit-apps)<br/>
-[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
+[Configure C++ projects for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [Debug 64-Bit Applications](/visualstudio/debugger/debug-64-bit-applications)

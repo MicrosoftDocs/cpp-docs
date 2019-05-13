@@ -1,21 +1,22 @@
 ---
-title: "Implementing a Property Page (ATL) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Implementing a Property Page (ATL)"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["property pages, implementing"]
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Example: Implementing a Property Page
 
+::: moniker range="vs-2019"
+
+The ATL Property Page wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface.
 
-The example is based on the [ATLPages sample](../visual-cpp-samples.md).
+The example is based on the [ATLPages sample](../overview/visual-cpp-samples.md).
 
 To complete this example, you will:
 
@@ -58,7 +59,7 @@ Click **OK** to have the wizard generate your property page.
 
 Now that your property page has been generated, you'll need to add a few controls to the dialog resource representing your page. Add an edit box, a static text control, and a check box and set their IDs as shown below:
 
-![Editing a dialog resource](../atl/media/ppgresourcelabeled.gif "ppgresourcelabeled")
+![Editing a dialog resource](../atl/media/ppgresourcelabeled.gif "Editing a dialog resource")
 
 These controls will be used to display the file name of the document and its read-only status.
 
@@ -161,7 +162,9 @@ End Module
 
 When you run this macro, the property page will be displayed showing the file name and read-only status of the currently active text document. The read-only state of the document only reflects the ability to write to the document in the development environment; it doesn't affect the read-only attribute of the file on disk.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [Property Pages](../atl/atl-com-property-pages.md)<br/>
-[ATLPages Sample](../visual-cpp-samples.md)
+[ATLPages Sample](../overview/visual-cpp-samples.md)

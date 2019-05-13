@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Alloc and Free to Improve Memory Performance | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Alloc and Free to Improve Memory Performance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Alloc and Free, using [Concurrency Runtime]", "Using Alloc and Free [Concurrency Runtime]"]
 ms.assetid: e1fab9e8-a97d-4104-bead-e95958db79f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use Alloc and Free to Improve Memory Performance
 
@@ -57,9 +50,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc allocators.cpp**
 
-## See Also
+## See also
 
 [Memory Management Functions](../../parallel/concrt/memory-management-functions.md)<br/>
 [Alloc Function](reference/concurrency-namespace-functions.md#alloc)<br/>
 [Free Function](reference/concurrency-namespace-functions.md#free)
-

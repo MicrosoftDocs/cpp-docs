@@ -1,21 +1,14 @@
 ---
-title: "ATL Connection Points | Microsoft Docs"
-ms.custom: ""
+title: "ATL Connection Points"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["connections, connection points", "ATL, connection points", "connection points [C++], about connection points"]
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Connection Points
 
 A connectable object is one that supports outgoing interfaces. An outgoing interface allows the object to communicate with a client. For each outgoing interface, the connectable object exposes a connection point. Each outgoing interface is implemented by a client on an object called a sink.
 
-![Connection points](../atl/media/vc2zw31.gif "vc2zw31")
+![Connection points](../atl/media/vc2zw31.gif "Connection points")
 
 Each connection point supports the [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) interface. The connectable object exposes its connection points to the client through the [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer) interface.
 
@@ -35,7 +28,6 @@ Provides an example of declaring a connection point.
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

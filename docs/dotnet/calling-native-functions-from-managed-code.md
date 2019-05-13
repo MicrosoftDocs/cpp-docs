@@ -1,15 +1,8 @@
 ---
-title: "Calling Native Functions from Managed Code | Microsoft Docs"
-ms.custom: ""
+title: "Calling Native Functions from Managed Code"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["native functions called from managed code [C++]", "managed code [C++], interoperability", "platform invoke [C++], interoperability", "interoperabiliy [C++], calling native functions from managed code", "calling native functions from managed code", "interop [C++], calling native functions from managed code"]
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Calling Native Functions from Managed Code
 
@@ -220,6 +213,6 @@ PInvoke has an overhead of between 10 and 30 x86 instructions per call. In addit
 
 For better performance, have fewer PInvoke calls that marshal as much data as possible, instead of more calls that marshal less data per call.
 
-## See Also
+## See also
 
 [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)

@@ -1,10 +1,7 @@
 ---
-title: "&lt;deque&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;deque&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["deque/std::operator!=", "deque/std::operator&gt;", "deque/std::operator&gt;=", "deque/std::operator&lt;", "deque/std::operator&lt;=", "deque/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 482d7c92-54c7-493b-99e6-2a73617481a5
 helpviewer_keywords: ["std::operator!= (deque)", "std::operator&gt; (deque)", "std::operator&gt;= (deque)", "std::operator&lt; (deque)", "std::operator&lt;= (deque)", "std::operator== (deque)"]
 ---
@@ -171,7 +168,6 @@ int main( )
 /* Output:
 Deque c1 is less than or equal to deque c2.
 */
-
 ```
 
 ## <a name="op_eq_eq"></a>  operator==
@@ -229,7 +225,6 @@ int main( )
 The deques are equal.
 The deques are not equal.
 */
-
 ```
 
 ## <a name="op_gt"></a>  operator&gt;
@@ -285,7 +280,6 @@ int main( )
 /* Output:
 Deque c1 is greater than deque c2.
 */
-
 ```
 
 ## <a name="op_gt_eq"></a>  operator&gt;=

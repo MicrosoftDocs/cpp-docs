@@ -1,16 +1,9 @@
 ---
-title: "complex&lt;float&gt; | Microsoft Docs"
-ms.custom: ""
+title: "complex&lt;float&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["complex/std::complex<float>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["complex<float> function"]
 ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # complex&lt;float&gt;
 

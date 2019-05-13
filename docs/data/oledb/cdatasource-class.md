@@ -1,16 +1,9 @@
 ---
-title: "CDataSource Class | Microsoft Docs"
-ms.custom: ""
+title: "CDataSource Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.CDataSource", "ATL::CDataSource", "CDataSource", "ATL::CDataSource::Close", "ATL.CDataSource.Close", "CDataSource::Close", "CDataSource.Close", "ATL::CDataSource::GetInitializationString", "CDataSource.GetInitializationString", "GetInitializationString", "CDataSource::GetInitializationString", "ATL.CDataSource.GetInitializationString", "CDataSource::GetProperties", "ATL.CDataSource.GetProperties", "CDataSource.GetProperties", "ATL::CDataSource::GetProperties", "GetProperties", "ATL::CDataSource::GetProperty", "ATL.CDataSource.GetProperty", "CDataSource.GetProperty", "CDataSource::GetProperty", "ATL::CDataSource::Open", "ATL.CDataSource.Open", "CDataSource::Open", "CDataSource.Open", "CDataSource::OpenFromFileName", "ATL::CDataSource::OpenFromFileName", "OpenFromFileName", "CDataSource.OpenFromFileName", "ATL.CDataSource.OpenFromFileName", "CDataSource.OpenFromInitializationString", "OpenFromInitializationString", "CDataSource::OpenFromInitializationString", "ATL::CDataSource::OpenFromInitializationString", "ATL.CDataSource.OpenFromInitializationString", "CDataSource.OpenWithPromptFileName", "OpenWithPromptFileName", "ATL::CDataSource::OpenWithPromptFileName", "ATL.CDataSource.OpenWithPromptFileName", "CDataSource::OpenWithPromptFileName", "CDataSource::OpenWithServiceComponents", "OpenWithServiceComponents", "CDataSource.OpenWithServiceComponents"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDataSource class", "Close method", "GetInitializationString method", "GetProperties method", "GetProperty method", "Open method", "OpenFromFileName method", "OpenFromInitializationString method", "OpenWithPromptFileName method", "OpenWithServiceComponents method"]
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource Class
 
@@ -46,7 +39,7 @@ class CDataSource
 
 One or more database sessions can be created for a single connection. These sessions are represented by `CSession`. You must call [CDataSource::Open](../../data/oledb/cdatasource-open.md) to open the connection before creating a session with `CSession::Open`.
 
-For an example of how to use `CDataSource`, see the [CatDB](../../visual-cpp-samples.md) sample.
+For an example of how to use `CDataSource`, see the [CatDB](../../overview/visual-cpp-samples.md) sample.
 
 ## <a name="close"></a> CDataSource::Close
 
@@ -65,7 +58,7 @@ Retrieves the initialization string of a data source that is currently open.
 ### Syntax
 
 ```cpp
-HRESULT GetInitializationString(BSTR* pInitializationString, 
+HRESULT GetInitializationString(BSTR* pInitializationString,
    bool bIncludePassword = false) throw();
 ```
 
@@ -92,15 +85,15 @@ Returns the property information requested for the connected data source object.
 ### Syntax
 
 ```cpp
-HRESULT GetProperties(ULONG ulPropIDSets, 
-   constDBPROPIDSET* pPropIDSet, 
-   ULONG* pulPropertySets, 
+HRESULT GetProperties(ULONG ulPropIDSets,
+   constDBPROPIDSET* pPropIDSet,
+   ULONG* pulPropertySets,
    DBPROPSET** ppPropsets) const throw();
 ```
 
 #### Parameters
 
-See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344) in the *OLE DB Programmer's Reference* in the Windows SDK.
+See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
 ### Return Value
 
@@ -117,8 +110,8 @@ Returns the value of a specified property for the connected data source object.
 ### Syntax
 
 ```cpp
-HRESULT GetProperty(const GUID& guid, 
-   DBPROPID propid, 
+HRESULT GetProperty(const GUID& guid,
+   DBPROPID propid,
    VARIANT* pVariant) const throw();
 ```
 
@@ -176,13 +169,13 @@ HRESULT Open(const CEnumerator& enumerator,
 HRESULT Open(HWND hWnd = GetActiveWindow(),
    DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET) throw();
 
-HRESULT Open(LPCWSTR szProgID, 
-   DBPROPSET* pPropSet = NULL, 
+HRESULT Open(LPCWSTR szProgID,
+   DBPROPSET* pPropSet = NULL,
    ULONG nPropertySets = 1) throw();
 
-HRESULT Open(LPCSTR szProgID, 
-   LPCTSTR pName,LPCTSTR pUserName = NULL, 
-   LPCTSTR pPassword = NULL, 
+HRESULT Open(LPCSTR szProgID,
+   LPCTSTR pName,LPCTSTR pUserName = NULL,
+   LPCTSTR pPassword = NULL,
    long nInitMode = 0) throw();
 ```
 
@@ -192,10 +185,10 @@ HRESULT Open(LPCSTR szProgID, 
 [in] The `CLSID` of the data provider.
 
 *pPropSet*<br/>
-[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696) in the *OLE DB Programmer's Reference* in the Windows SDK.
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
 *nPropertySets*<br/>
-[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures passed in the *pPropSet* argument.
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument.
 
 *pName*<br/>
 [in] The name of the database to which to connect.
@@ -207,7 +200,7 @@ HRESULT Open(LPCSTR szProgID, 
 [in] The user's password.
 
 *nInitMode*<br/>
-[in] Database initialization mode. See [Initialization Properties](/previous-versions/windows/desktop/ms723127)in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If *nInitMode* is zero, no initialization mode is included in the property set used to open the connection.
+[in] Database initialization mode. See [Initialization Properties](/previous-versions/windows/desktop/ms723127(v=vs.85))in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If *nInitMode* is zero, no initialization mode is included in the property set used to open the connection.
 
 *szProgID*<br/>
 [in] A program identifier.
@@ -252,7 +245,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 *szFileName*<br/>
 [in] The name of a file, usually a data source connection (.UDL) file.
 
-For more information about data link files (.udl files), see [Data Link API Overview](/previous-versions/windows/desktop/ms718102) in the Windows SDK.
+For more information about data link files (.udl files), see [Data Link API Overview](/previous-versions/windows/desktop/ms718102(v=vs.85)) in the Windows SDK.
 
 ### Return Value
 
@@ -269,7 +262,7 @@ Opens a data source specified by the user-supplied initialization string.
 ### Syntax
 
 ```cpp
-HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString, 
+HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
    bool fPromptForInfo= false) throw();
 ```
 
@@ -298,8 +291,8 @@ This method prompts the user with a dialog box, then opens a data source using t
 ### Syntax
 
 ```cpp
-HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ), 
-   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE, 
+HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
+   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE,
    LPCOLESTR szInitialDirectory = NULL) throw();
 ```
 
@@ -347,10 +340,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 [in] Program ID of a data provider.
 
 *pPropset*<br/>
-[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696) in the *OLE DB Programmer's Reference* in the Windows SDK. If the data source object is initialized, the properties must belong to the Data Source property group. If the same property is specified more than once in *pPropset*, then which value is used is provider-specific. If *ulPropSets* is zero, this parameter is ignored.
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK. If the data source object is initialized, the properties must belong to the Data Source property group. If the same property is specified more than once in *pPropset*, then which value is used is provider-specific. If *ulPropSets* is zero, this parameter is ignored.
 
 *ulPropSets*<br/>
-[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures passed in the *pPropSet* argument. If this is zero, the provider ignores *pPropset*.
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument. If this is zero, the provider ignores *pPropset*.
 
 ### Return Value
 
@@ -360,7 +353,7 @@ A standard HRESULT.
 
 This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -1,15 +1,8 @@
 ---
-title: "Type-Cast Conversions | Microsoft Docs"
-ms.custom: ""
+title: "Type-Cast Conversions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data type conversion [C++], type-cast conversions", "conversions [C++], type-cast", "type casts", "explicit type conversions", "type casts [C++], about type-cast conversion", "type-cast conversions [C++]"]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type-Cast Conversions
 
@@ -49,6 +42,6 @@ A type cast can be an l-value expression as long as the size of the identifier d
 
 You can convert an expression to type `void` with a cast, but the resulting expression can be used only where a value is not required. An object pointer converted to **void** <strong>\*</strong> and back to the original type will return to its original value.
 
-## See Also
+## See also
 
 [Type Conversions](../c-language/type-conversions-c.md)

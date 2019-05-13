@@ -1,19 +1,12 @@
 ---
-title: "_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l | Microsoft Docs"
-ms.custom: ""
+title: "_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_strlwr_l", "_strlwr", "_wcslwr_l", "_mbslwr_l", "_wcslwr", "_mbslwr"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_strlwr", "wcslwr_l", "_ftcslwr", "mbslwr_l", "_mbslwr", "_wcslwr", "strlwr_l", "_tcslwr", "mbslwr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tcslwr function", "_strlwr function", "converting case", "string conversion [C++], case", "mbslwr function", "_strlwr_l function", "strlwr_l function", "_wcslwr function", "ftcslwr function", "strings [C++], case", "_tcslwr_l function", "_wcslwr_l function", "wcslwr_l function", "mbslwr_l function", "tcslwr_l function", "_tcslwr function", "converting case, CRT functions", "_ftcslwr function", "_mbslwr function", "case, converting", "strings [C++], converting case", "_mbslwr_l function"]
 ms.assetid: d279181d-2e7d-401f-ab44-6e7c2786a046
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 

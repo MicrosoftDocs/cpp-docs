@@ -1,15 +1,8 @@
 ---
-title: "loop | Microsoft Docs"
-ms.custom: ""
+title: "loop"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["loop_CPP", "vc-pragma.loop"]
-dev_langs: ["C++"]
 ms.assetid: 6d5bb428-cead-47e7-941d-7513bbb162c7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # loop
 
@@ -40,7 +33,7 @@ Hints to the compiler to ignore vector dependencies for this loop. Use this in c
 
 To use the **loop** pragma, place it immediately before—not in—a loop definition. The pragma takes effect for the scope of the loop that follows it. You can apply multiple pragmas to a loop, in any order, but you must state each one in a separate pragma statement.
 
-## See Also
+## See also
 
 [Auto-Parallelization and Auto-Vectorization](../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

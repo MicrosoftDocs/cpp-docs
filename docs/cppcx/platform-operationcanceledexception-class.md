@@ -1,16 +1,10 @@
 ---
-title: "Platform::OperationCanceledException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::OperationCanceledException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::OperationCanceledException::OperationCanceledException", "VCCORLIB/Platform::OperationCanceledException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OperationCanceledException"]
 ms.assetid: 5351bc20-5408-423a-8169-f09acc8a3fbb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::OperationCanceledException Class
 
@@ -36,6 +30,6 @@ For more information, see the [COMException](../cppcx/platform-comexception-clas
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform::COMException Class](../cppcx/platform-comexception-class.md)

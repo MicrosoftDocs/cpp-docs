@@ -1,15 +1,8 @@
 ---
-title: "Frame-Window Styles (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Frame-Window Styles (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["window styles [MFC]", "PreCreateWindow method, setting window styles", "windows [MFC], MFC", "frame windows [MFC], styles", "MFC, frame windows", "styles [MFC], windows"]
 ms.assetid: fc5058c1-eec8-48d8-9f76-3fc01cfa53f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Frame-Window Styles (C++)
 
@@ -27,7 +20,6 @@ If the window's **FWS_ADDTOTITLE** style bit is set (which it is by default), th
 
 - [Window styles](../mfc/reference/styles-used-by-mfc.md#window-styles)
 
-## See Also
+## See also
 
 [Frame Windows](../mfc/frame-windows.md)
-

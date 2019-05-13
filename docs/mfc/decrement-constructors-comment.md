@@ -1,15 +1,8 @@
 ---
-title: "-- Constructors Comment | Microsoft Docs"
-ms.custom: ""
+title: "-- Constructors Comment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["constructors comment", "declarations, constructors", "MFC source files, Constructors comment", "declaring constructors, code comments", "comments, MFC", "comments, constructors comment", "constructors [MFC], declaring", "instance constructors, code comments"]
 ms.assetid: f400774e-ba85-49ed-85b7-70ef2f7dcb2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # // Constructors Comment
 
@@ -17,11 +10,10 @@ The `// Constructors` section of an MFC class declaration declares constructors 
 
 For example, class `CStdioFile` has three constructors, one of which is shown in the listing under [An Example of the Comments](../mfc/an-example-of-the-comments.md).
 
-## See Also
+## See also
 
 [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)<br/>
 [// Implementation Comment](../mfc/decrement-implementation-comment.md)<br/>
 [// Attributes Comment](../mfc/decrement-attributes-comment.md)<br/>
 [// Operations Comment](../mfc/decrement-operations-comment.md)<br/>
 [// Overridables Comment](../mfc/decrement-overridables-comment.md)
-

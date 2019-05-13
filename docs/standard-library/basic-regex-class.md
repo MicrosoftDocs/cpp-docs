@@ -1,16 +1,9 @@
 ---
-title: "basic_regex Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "basic_regex Class"
+ms.date: "03/27/2019"
 f1_keywords: ["regex/std::basic_regex"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["basic_regex class"]
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # basic_regex Class
 
@@ -87,7 +80,7 @@ These member functions also take an argument `flags` that specifies various opti
 |-|-|
 |[assign](#assign)|Assigns a value to the regular expression object.|
 |[flags](#flags)|Returns syntax option flags.|
-|[get_loc](#get_loc)|Returns the stored locale object.|
+|[getloc](#getloc)|Returns the stored locale object.|
 |[imbue](#imbue)|Alters the stored locale object.|
 |[mark_count](#mark_count)|Returns number of subexpressions matched.|
 |[swap](#swap)|Swaps two regular expression objects.|

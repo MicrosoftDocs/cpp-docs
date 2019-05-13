@@ -1,15 +1,8 @@
 ---
-title: "Creating a Consumer Without Using a Wizard | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/12/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Creating a Consumer Without Using a Wizard"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumers, creating"]
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Consumer Without Using a Wizard
 
@@ -76,6 +69,6 @@ Programmatically, a consumer typically performs the following sequence of operat
     CoUninitialize();
     ```
 
-## See Also
+## See also
 
 [Creating an OLE DB Consumer](../../data/oledb/creating-an-ole-db-consumer.md)

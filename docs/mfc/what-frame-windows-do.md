@@ -1,15 +1,8 @@
 ---
-title: "What Frame Windows Do | Microsoft Docs"
-ms.custom: ""
+title: "What Frame Windows Do"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["frame windows [MFC], about frame windows", "frame windows [MFC], tasks", "MFC, frame windows"]
 ms.assetid: 1148a952-6786-4622-b5a8-68a2d7eae584
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # What Frame Windows Do
 
@@ -33,7 +26,6 @@ The frame window also forwards commands to its views and can respond to notifica
 
 - [Controls](../mfc/controls-mfc.md)
 
-## See Also
+## See also
 
 [Frame Windows](../mfc/frame-windows.md)
-

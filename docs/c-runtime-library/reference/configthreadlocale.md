@@ -1,19 +1,12 @@
 ---
-title: "_configthreadlocale | Microsoft Docs"
-ms.custom: ""
+title: "_configthreadlocale"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_configthreadlocale"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_configthreadlocale", "configthreadlocale"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["configthreadlocale function", "locales, per-thread", "_configthreadlocale function", "per-thread locale", "thread locale"]
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _configthreadlocale
 
@@ -38,11 +31,11 @@ The previous per-thread locale status (**_DISABLE_PER_THREAD_LOCALE** or **_ENAB
 
 The **_configurethreadlocale** function is used to control the use of thread-specific locales. Use one of these *per_thread_locale_type* options to specify or determine the per-thread locale status:
 
-|||
+| Option | Description |
 |-|-|
-**_ENABLE_PER_THREAD_LOCALE**|Make the current thread use a thread-specific locale. Subsequent calls to **setlocale** in this thread affect only the thread's own locale.
-**_DISABLE_PER_THREAD_LOCALE**|Make the current thread use the global locale. Subsequent calls to **setlocale** in this thread affect other threads using the global locale.
-**0**|Retrieves the current setting for this particular thread.
+| **_ENABLE_PER_THREAD_LOCALE** | Make the current thread use a thread-specific locale. Subsequent calls to **setlocale** in this thread affect only the thread's own locale. |
+| **_DISABLE_PER_THREAD_LOCALE** | Make the current thread use the global locale. Subsequent calls to **setlocale** in this thread affect other threads using the global locale. |
+| **0** | Retrieves the current setting for this particular thread. |
 
 These functions affect the behavior of **setlocale**, **_tsetlocale**, **_wsetlocale**, and **_setmbcp**. When per-thread locale is disabled, any subsequent call to **setlocale** or **_wsetlocale** changes the locale of all threads that use the global locale. When per-thread locale is enabled, **setlocale** or **_wsetlocale** only affects the current thread's locale.
 

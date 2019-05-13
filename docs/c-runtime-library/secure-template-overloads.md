@@ -1,16 +1,9 @@
 ---
-title: "Secure Template Overloads | Microsoft Docs"
-ms.custom: ""
+title: "Secure Template Overloads"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES", "_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES", "_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES", "_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES", "_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT", "secure template overloads"]
 ms.assetid: 562741d0-39c0-485e-8529-73d740f29f8f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Secure Template Overloads
 
@@ -85,7 +78,7 @@ strcpy_s(szBuf, "test"); // doesn't compile; you have to change it to
                          // strcpy_s(szBuf, 10, "test");
 ```
 
-## See Also
+## See also
 
 [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md)<br/>
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

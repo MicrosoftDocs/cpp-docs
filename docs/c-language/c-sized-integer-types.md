@@ -1,15 +1,8 @@
 ---
-title: "C Sized Integer Types | Microsoft Docs"
-ms.custom: ""
+title: "C Sized Integer Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sized integer types"]
 ms.assetid: 0d6199b4-d0ab-4e8c-a769-785f5afb92eb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Sized Integer Types
 
@@ -28,6 +21,6 @@ The first three types of sized integers are synonyms for the ANSI types that hav
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Storage of Basic Types](../c-language/storage-of-basic-types.md)

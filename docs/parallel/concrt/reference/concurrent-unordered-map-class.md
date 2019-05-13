@@ -1,16 +1,9 @@
 ---
-title: "concurrent_unordered_map Class | Microsoft Docs"
-ms.custom: ""
+title: "concurrent_unordered_map Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::at", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::unsafe_erase"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_unordered_map class"]
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_map Class
 
@@ -98,7 +91,7 @@ The type that represents the stored allocator object that encapsulates details a
 
 |Name|Description|
 |----------|-----------------|
-|[operator[]](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|
+|[operator\[\]](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|
 |[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.|
 
 ## Remarks
@@ -770,8 +763,7 @@ size_type unsafe_max_bucket_count() const;
 
 The maximum number of buckets in this container.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-

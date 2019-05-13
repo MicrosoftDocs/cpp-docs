@@ -1,16 +1,9 @@
 ---
-title: "CWinFormsView Class | Microsoft Docs"
-ms.custom: ""
+title: "CWinFormsView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CWinFormsView", "AFXWINFORMS/CWinFormsView", "AFXWINFORMS/CWinFormsView::CWinFormsView", "AFXWINFORMS/CWinFormsView::GetControl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CWinFormsView [MFC], CWinFormsView", "CWinFormsView [MFC], GetControl"]
 ms.assetid: d597e397-6529-469b-88f5-7f65a6b9e895
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWinFormsView Class
 
@@ -111,7 +104,7 @@ This operator allows you to pass a `CWinFormsView` view to functions that accept
 
   See [CWinFormsView::GetControl](#getcontrol).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWinFormsControl Class](../../mfc/reference/cwinformscontrol-class.md)<br/>

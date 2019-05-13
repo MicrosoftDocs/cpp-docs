@@ -1,23 +1,21 @@
 ---
-title: "ATL Property Page Wizard | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/03/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
+title: "ATL Property Page Wizard"
+ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.ppg.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding property pages", "ATL Property Page Wizard"]
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Property Page Wizard
 
-This wizard [adds a property page into an ATL project](../../atl/reference/adding-an-atl-property-page.md) or to an MFC project with ATL support. An ATL property page provides a user interface for setting the properties (or calling the methods) of one or more COM objects.
+::: moniker range="vs-2019"
 
-> [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+This wizard [adds a property page into an ATL project](../../atl/reference/adding-an-atl-property-page.md) or to an MFC project with ATL support. An ATL property page provides a user interface for setting the properties (or calling the methods) of one or more COM objects.
 
 ## Remarks
 
@@ -62,9 +60,10 @@ Provides information about the COM functionality for the object.
 
    Sets the name that containers can use instead of the CLSID of the object.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [Options, ATL Property Page Wizard](../../atl/reference/options-atl-property-page-wizard.md)<br/>
 [Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
 [Example: Implementing a Property Page](../../atl/example-implementing-a-property-page.md)
-

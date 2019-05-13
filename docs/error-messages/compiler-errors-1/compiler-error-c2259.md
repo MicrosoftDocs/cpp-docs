@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2259 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2259"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2259"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2259"]
 ms.assetid: e458236f-bdea-4786-9aa6-a98d8bffa5f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2259
 
@@ -49,7 +42,7 @@ There are two possible workarounds for the problem:
 
 - Use the scope resolution operator for the interface methods implemented in the derived class to qualify the implemented method name with the name of the interface.
 
-C2259 can also occur as a result of conformance work that was done in Visual C++ 2005, **/Zc:wchar_t** is now on by default. In this situation, C2599 can be resolved either by compiling with **/Zc:wchar_t-**, to get the behavior from previous versions, or preferably, by updating your types so they are compatible. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+C2259 can also occur as a result of conformance work that was done in Visual Studio 2005, **/Zc:wchar_t** is now on by default. In this situation, C2599 can be resolved either by compiling with **/Zc:wchar_t-**, to get the behavior from previous versions, or preferably, by updating your types so they are compatible. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 The following sample generates C2259:
 

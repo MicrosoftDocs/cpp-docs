@@ -1,19 +1,12 @@
 ---
-title: "compl | Microsoft Docs"
-ms.custom: ""
+title: "compl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["compl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["std::compl", "std.compl", "compl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["compl function"]
 ms.assetid: e03f6fb5-cb8b-4afa-99c0-905f4105fb34
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # compl
 
@@ -22,9 +15,7 @@ An alternative to the ~ operator.
 ## Syntax
 
 ```C
-
 #define compl ~
-
 ```
 
 ## Remarks

@@ -1,15 +1,8 @@
 ---
-title: "Multithread Programs | Microsoft Docs"
-ms.custom: ""
+title: "Multithread Programs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["threading [C++], about threading", "multithreading [C++], about threads"]
 ms.assetid: 02443596-f7e1-48d0-b3a4-39ee0e54e444
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multithread Programs
 
@@ -19,6 +12,6 @@ A process consists of one or more threads and the code, data, and other resource
 
 Each thread in a process operates independently. Unless you make them visible to each other, the threads execute individually and are unaware of the other threads in a process. Threads sharing common resources, however, must coordinate their work by using semaphores or another method of interprocess communication. For more information about synchronizing threads, see [Writing a Multithreaded Win32 Program](writing-a-multithreaded-win32-program.md).
 
-## See Also
+## See also
 
 [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

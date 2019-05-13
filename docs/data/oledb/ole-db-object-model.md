@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Object Model | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Object Model"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, OLE DB object model", "OLE DB, object model"]
 ms.assetid: 1a274a25-c310-4430-a1ec-bd2bd8120eff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Object Model
 
@@ -75,7 +68,7 @@ Any interface on any OLE DB object can generate errors. Errors have additional i
 
 Notifications are used by groups of cooperating consumers sharing a rowset (where sharing means that the consumers are assumed to be working within the same transaction). Notifications enable cooperating consumers sharing a rowset to be informed about actions on the rowset performed by their peers.
 
-## See Also
+## See also
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)

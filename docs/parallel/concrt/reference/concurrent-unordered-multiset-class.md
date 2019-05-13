@@ -1,16 +1,9 @@
 ---
-title: "concurrent_unordered_multiset Class | Microsoft Docs"
-ms.custom: ""
+title: "concurrent_unordered_multiset Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::concurrent_unordered_multiset", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::unsafe_erase"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_unordered_multiset class"]
 ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_multiset Class
 
@@ -698,8 +691,7 @@ size_type unsafe_max_bucket_count() const;
 
 The maximum number of buckets in this container.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-

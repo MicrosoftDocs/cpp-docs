@@ -1,16 +1,9 @@
 ---
-title: "is_integral Class | Microsoft Docs"
-ms.custom: ""
+title: "is_integral Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_integral"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_integral class", "is_integral"]
 ms.assetid: fe9279d0-4495-4e88-bf23-153cc6602397
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_integral Class
 
@@ -58,7 +51,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

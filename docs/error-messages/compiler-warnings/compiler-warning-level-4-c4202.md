@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4202 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4202"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4202"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4202"]
 ms.assetid: 253293aa-97a3-4878-a2e8-c6cc9e20b1cb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4202
 

@@ -1,16 +1,9 @@
 ---
-title: "CVSListBox Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CVSListBox Class"
+ms.date: "11/19/2018"
 f1_keywords: ["CVSListBox", "AFXVSLISTBOX/CVSListBox", "AFXVSLISTBOX/CVSListBox::CVSListBox", "AFXVSLISTBOX/CVSListBox::AddItem", "AFXVSLISTBOX/CVSListBox::EditItem", "AFXVSLISTBOX/CVSListBox::GetCount", "AFXVSLISTBOX/CVSListBox::GetItemData", "AFXVSLISTBOX/CVSListBox::GetItemText", "AFXVSLISTBOX/CVSListBox::GetSelItem", "AFXVSLISTBOX/CVSListBox::RemoveItem", "AFXVSLISTBOX/CVSListBox::SelectItem", "AFXVSLISTBOX/CVSListBox::SetItemData", "AFXVSLISTBOX/CVSListBox::GetListHwnd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CVSListBox [MFC], CVSListBox", "CVSListBox [MFC], AddItem", "CVSListBox [MFC], EditItem", "CVSListBox [MFC], GetCount", "CVSListBox [MFC], GetItemData", "CVSListBox [MFC], GetItemText", "CVSListBox [MFC], GetSelItem", "CVSListBox [MFC], RemoveItem", "CVSListBox [MFC], SelectItem", "CVSListBox [MFC], SetItemData", "CVSListBox [MFC], GetListHwnd"]
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CVSListBox Class
 
@@ -58,7 +51,7 @@ The `CVSListBox` class provides a set of edit buttons that enable the user to cr
 
 The following is a picture of the editable list control. The second list entry, which is titled "Item2", is selected for editing.
 
-![CVSListBox control](../../mfc/reference/media/cvslistbox.png "cvslistbox")
+![CVSListBox control](../../mfc/reference/media/cvslistbox.png "CVSListBox control")
 
 If you use the resource editor to add an editable list control, notice that the **Toolbox** pane of the editor does not provide a predefined editable list control. Instead, add a static control such as the **Group Box** control. The framework uses the static control as a placeholder to specify the size and position of the editable list control.
 
@@ -293,7 +286,7 @@ virtual void SetItemData(
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

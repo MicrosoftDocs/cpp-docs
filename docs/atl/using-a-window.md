@@ -1,15 +1,8 @@
 ---
-title: "Using a Window (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Using a Window (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, windows", "CWindow class, about CWindow class", "windows [C++], ATL"]
 ms.assetid: b3b9cc8e-4287-486b-b080-38852bc2943a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using a Window
 
@@ -19,7 +12,6 @@ Because `CWindow` has only two data member (a window handle and the default dime
 
 In addition to using `CWindow` directly, you can also derive from it to add data or code to your class. ATL itself derives three classes from `CWindow`: [CWindowImpl](../atl/implementing-a-window.md), [CDialogImpl](../atl/implementing-a-dialog-box.md), and [CContainedWindowT](../atl/using-contained-windows.md).
 
-## See Also
+## See also
 
 [Window Classes](../atl/atl-window-classes.md)
-

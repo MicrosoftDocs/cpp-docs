@@ -1,16 +1,9 @@
 ---
-title: "Connection Maps | Microsoft Docs"
-ms.custom: ""
+title: "Connection Maps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.maps"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["connection maps"]
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Connection Maps
 
@@ -274,6 +267,6 @@ Nonzero if a connection was disconnected; otherwise 0.
 
 **Header:** afxctl.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

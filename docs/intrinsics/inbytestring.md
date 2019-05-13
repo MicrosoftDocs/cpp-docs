@@ -1,16 +1,9 @@
 ---
-title: "__inbytestring | Microsoft Docs"
-ms.custom: ""
+title: "__inbytestring"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__inbytestring", "__inbytestring_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rep insb instruction", "__inbytestring intrinsic"]
 ms.assetid: fe549556-e7a3-4af3-8ebf-8a7dc3cb233b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __inbytestring
 
@@ -53,6 +46,6 @@ This routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

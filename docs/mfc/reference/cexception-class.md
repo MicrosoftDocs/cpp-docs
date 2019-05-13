@@ -1,16 +1,9 @@
 ---
-title: "CException Class | Microsoft Docs"
-ms.custom: ""
+title: "CException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CException", "AFX/CException", "AFX/CException::CException", "AFX/CException::Delete", "AFX/CException::ReportError"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CException [MFC], CException", "CException [MFC], Delete", "CException [MFC], ReportError"]
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CException Class
 
@@ -219,10 +212,9 @@ else
 }
 ```
 
-## See Also
+## See also
 
 [CObject Class](cobject-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
 [Exception Processing](exception-processing.md)<br/>
 [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/p/?linkid=128045)
-

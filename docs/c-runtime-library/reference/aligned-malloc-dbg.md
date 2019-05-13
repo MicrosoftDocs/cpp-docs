@@ -1,19 +1,12 @@
 ---
-title: "_aligned_malloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_malloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_malloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_aligned_malloc_dbg", "aligned_malloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_malloc_dbg function", "_aligned_malloc_dbg function"]
 ms.assetid: fb0429c3-685d-4826-9075-2515c5bdc5c6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_malloc_dbg
 
@@ -50,7 +43,7 @@ A pointer to the memory block that was allocated or NULL if the operation failed
 
 ## Remarks
 
-**_aligned_malloc_dbg** is a debug version of the [_aligned_malloc](aligned-malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_aligned_malloc_dbg** is reduced to a call to `_aligned_malloc`. Both `_aligned_malloc` and **_aligned_malloc_dbg** allocate a block of memory in the base heap, but **_aligned_malloc_dbg** offers several debugging features: buffers on either side of the user portion of the block to test for leaks, and *filename*/*linenumber* information to determine the origin of allocation requests.
+**_aligned_malloc_dbg** is a debug version of the [_aligned_malloc](aligned-malloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_aligned_malloc_dbg** is reduced to a call to `_aligned_malloc`. Both `_aligned_malloc` and **_aligned_malloc_dbg** allocate a block of memory in the base heap, but **_aligned_malloc_dbg** offers several debugging features: buffers on either side of the user portion of the block to test for leaks, and *filename*/*linenumber* information to determine the origin of allocation requests. Tracking specific allocation types with a block type parameter is not a supported debug feature for aligned allocations. Aligned allocations will appear as a _NORMAL_BLOCK block type.
 
 **_aligned_malloc_dbg** allocates the memory block with slightly more space than the requested *size*. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. When the block is allocated, the user portion of the block is filled with the value 0xCD and each of the overwrite buffers are filled with 0xFD.
 

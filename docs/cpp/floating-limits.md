@@ -1,15 +1,8 @@
 ---
-title: "Floating Limits | Microsoft Docs"
-ms.custom: ""
+title: "Floating Limits"
 ms.date: "08/03/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ranges, floating-point constants", "floating-point constants, limits", "float.h header file", "limits, floating-point constants", "floating-point numbers [C++]", "floating limits"]
 ms.assetid: fc718652-1f4c-4ed8-af60-0e769637459c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Floating Limits
 

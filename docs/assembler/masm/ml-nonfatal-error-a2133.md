@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2133 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2133"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2133"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2133"]
 ms.assetid: 5ba50911-22c8-43b7-90e2-946fc612e05f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2133
 

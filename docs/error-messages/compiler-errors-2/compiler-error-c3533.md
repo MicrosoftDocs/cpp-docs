@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3533 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3533"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3533"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3533"]
 ms.assetid: a68b1ba5-466e-4190-a1a4-505ccfe548b7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3533
 
@@ -42,7 +35,7 @@ The following example yields C3533 in C++14 mode because it declares a template 
 template<auto T> class C {}; // C3533
 ```
 
-## See Also
+## See also
 
 [auto Keyword](../../cpp/auto-keyword.md)<br/>
 [/Zc:auto (Deduce Variable Type)](../../build/reference/zc-auto-deduce-variable-type.md)

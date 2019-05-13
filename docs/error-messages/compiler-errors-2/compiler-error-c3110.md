@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3110 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3110"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3110"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3110"]
 ms.assetid: 821dc71f-896e-4b2d-af0e-aa9932934b7b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3110
 

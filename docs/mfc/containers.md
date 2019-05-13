@@ -1,15 +1,8 @@
 ---
-title: "Containers | Microsoft Docs"
-ms.custom: ""
+title: "Containers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["containers [MFC]", "OLE containers", "application containers [MFC]", "containers [MFC], OLE container applications", "containers [MFC], container applications"]
 ms.assetid: b19d7c05-4d02-44bd-b76a-4a6c25994a62
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers
 
@@ -27,10 +20,9 @@ A container application is an application that can incorporate embedded or linke
 
 [Advanced Features of Containers](../mfc/containers-advanced-features.md)
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Servers](../mfc/servers.md)<br/>
 [Activation](../mfc/activation-cpp.md)<br/>
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)
-

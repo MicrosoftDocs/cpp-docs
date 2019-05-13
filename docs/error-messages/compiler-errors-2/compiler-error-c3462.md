@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3462 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3462"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3462"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3462"]
 ms.assetid: 56b75f35-9fad-42d9-a969-eeca5d709bec
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3462
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 The TypeForwardedTo attribute must be applied to a type in referenced metadata.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

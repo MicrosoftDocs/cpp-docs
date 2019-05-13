@@ -1,15 +1,8 @@
 ---
-title: "When to Initialize CWnd Objects | Microsoft Docs"
-ms.custom: ""
+title: "When to Initialize CWnd Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["window objects [MFC], when to initialize CWnd", "initializing CWnd objects [MFC]", "initializing objects [MFC], CWnd", "CWnd objects [MFC], when HWND is attached", "HWND, when attached to CWnd object", "CWnd objects [MFC], when to initialize"]
 ms.assetid: 4d31bcb1-73db-4f2f-b71c-89b087569a10
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # When to Initialize CWnd Objects
 
@@ -21,7 +14,6 @@ You cannot create your own child windows or call any Windows API functions in th
 
 - [Document/view creation](../mfc/document-view-creation.md)
 
-## See Also
+## See also
 
 [Using Frame Windows](../mfc/using-frame-windows.md)
-

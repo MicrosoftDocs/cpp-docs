@@ -1,18 +1,11 @@
 ---
-title: "tanh, tanhf, tanhl | Microsoft Docs"
-ms.custom: ""
+title: "tanh, tanhf, tanhl"
 ms.date: "04/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["tanh", "tanhf", "tanhl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["tanh", "tanhf", "tanhl", "_tanhl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tanhl function", "_tanhl function", "tanh function", "tanhf function", "trigonometric functions", "hyperbolic functions"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # tanh, tanhf, tanhl
 

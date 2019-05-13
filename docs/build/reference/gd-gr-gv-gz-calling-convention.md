@@ -1,16 +1,9 @@
 ---
-title: "/Gd, /Gr, /Gv, /Gz (Calling Convention) | Microsoft Docs"
-ms.custom: ""
+title: "/Gd, /Gr, /Gv, /Gz (Calling Convention)"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/gr", "/Gv", "/gz", "/Gd", "VC.Project.VCCLCompilerTool.CallingConvention"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Gd compiler option [C++]", "-Gv compiler option [C++]", "/Gv compiler option [C++]", "-Gr compiler option [C++]", "Gd compiler option [C++]", "Gr compiler option [C++]", "/Gz compiler option [C++]", "-Gz compiler option [C++]", "/Gd compiler option [C++]", "Gz compiler option [C++]", "Gv compiler option [C++]", "/Gr compiler option [C++]"]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Gd, /Gr, /Gv, /Gz (Calling Convention)
 
@@ -35,14 +28,14 @@ These options determine the order in which function arguments are pushed onto th
 
 Functions that take a variable number of arguments must be marked `__cdecl`.
 
-**/Gd**, **/Gr**, **/Gv** and **/Gz** are not compatible with [/clr:safe](../../build/reference/clr-common-language-runtime-compilation.md) or **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+**/Gd**, **/Gr**, **/Gv** and **/Gz** are not compatible with [/clr:safe](clr-common-language-runtime-compilation.md) or **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
 > [!NOTE]
 > By default for x86 processors, C++ member functions use [__thiscall](../../cpp/thiscall.md).
 
 For all processors, a member function that is explicitly marked as `__cdecl`, `__fastcall`, `__vectorcall`, or `__stdcall` uses the specified calling convention if it is not ignored on that architecture. A member function that takes a variable number of arguments always uses the `__cdecl` calling convention.
 
-These compiler options have no effect on the name decoration of C++ methods and functions. Unless declared as `extern "C"`, C++ methods and functions use a different name-decorating scheme. For more information, see [Decorated Names](../../build/reference/decorated-names.md).
+These compiler options have no effect on the name decoration of C++ methods and functions. Unless declared as `extern "C"`, C++ methods and functions use a different name-decorating scheme. For more information, see [Decorated Names](decorated-names.md).
 
 For more information about calling conventions, see [Calling Conventions](../../cpp/calling-conventions.md).
 
@@ -50,7 +43,7 @@ For more information about calling conventions, see [Calling Conventions](../../
 
 On x86 processors, all function arguments are passed on the stack from right to left. On ARM and x64 architectures, some arguments are passed by register and the rest are passed on the stack from right to left. The calling routine pops the arguments from the stack.
 
-For C, the `__cdecl` naming convention uses the function name preceded by an underscore ( `_` ); no case translation is performed. Unless declared as `extern "C"`, C++ functions use a different name-decorating scheme. For more information, see [Decorated Names](../../build/reference/decorated-names.md).
+For C, the `__cdecl` naming convention uses the function name preceded by an underscore ( `_` ); no case translation is performed. Unless declared as `extern "C"`, C++ functions use a different name-decorating scheme. For more information, see [Decorated Names](decorated-names.md).
 
 ## __fastcall Specifics
 
@@ -83,7 +76,7 @@ For C, the `__vectorcall` naming convention uses the function name followed by t
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **C/C++** > **Advanced** property page.
 
@@ -95,5 +88,5 @@ For C, the `__vectorcall` naming convention uses the function name followed by t
 
 ## See also
 
-- [Compiler Options](../../build/reference/compiler-options.md)
-- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [MSVC Compiler Options](compiler-options.md)
+- [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

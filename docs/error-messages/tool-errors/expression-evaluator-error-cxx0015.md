@@ -1,16 +1,9 @@
 ---
-title: "Expression Evaluator Error CXX0015 | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluator Error CXX0015"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["CXX0015"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CXX0015", "CAN0015"]
 ms.assetid: 35efaf77-d578-48d8-bfc5-fdeb2a46a8b5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0015
 

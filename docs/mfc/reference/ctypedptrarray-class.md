@@ -1,16 +1,9 @@
 ---
-title: "CTypedPtrArray Class | Microsoft Docs"
-ms.custom: ""
+title: "CTypedPtrArray Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTypedPtrArray", "AFXTEMPL/CTypedPtrArray", "AFXTEMPL/CTypedPtrArray::Add", "AFXTEMPL/CTypedPtrArray::Append", "AFXTEMPL/CTypedPtrArray::Copy", "AFXTEMPL/CTypedPtrArray::ElementAt", "AFXTEMPL/CTypedPtrArray::GetAt", "AFXTEMPL/CTypedPtrArray::InsertAt", "AFXTEMPL/CTypedPtrArray::SetAt", "AFXTEMPL/CTypedPtrArray::SetAtGrow"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTypedPtrArray [MFC], Add", "CTypedPtrArray [MFC], Append", "CTypedPtrArray [MFC], Copy", "CTypedPtrArray [MFC], ElementAt", "CTypedPtrArray [MFC], GetAt", "CTypedPtrArray [MFC], InsertAt", "CTypedPtrArray [MFC], SetAt", "CTypedPtrArray [MFC], SetAtGrow"]
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTypedPtrArray Class
 
@@ -50,7 +43,7 @@ Type of the elements stored in the base-class array.
 
 |Name|Description|
 |----------|-----------------|
-|[CTypedPtrArray::operator [ ]](#operator_at)|Sets or gets the element at the specified index.|
+|[CTypedPtrArray::operator \[ \]](#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 
@@ -309,9 +302,9 @@ The object pointer to be added to this array. A **NULL** value is allowed.
 
 For more detailed remarks, see [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow).
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPtrArray Class](../../mfc/reference/cptrarray-class.md)<br/>
 [CObArray Class](../../mfc/reference/cobarray-class.md)

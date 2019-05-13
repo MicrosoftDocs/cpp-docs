@@ -1,14 +1,7 @@
 ---
-title: "Explicitly Defaulted and Deleted Functions | Microsoft Docs"
-ms.custom: ""
+title: "Explicitly Defaulted and Deleted Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 5a588478-fda2-4b3f-a279-db3967f5e07e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Explicitly Defaulted and Deleted Functions
 
@@ -37,12 +30,12 @@ This is convenient for simple types, but complex types often define one or more 
    - No move-assignment operator is automatically generated.
 
 > [!NOTE]
->  Additionally, the C++11 standard specifies the following additional rules:
+> Additionally, the C++11 standard specifies the following additional rules:
 >
 > - If a copy constructor or destructor is explicitly declared, then automatic generation of the copy-assignment operator is deprecated.
 > - If a copy-assignment operator or destructor is explicitly declared, then automatic generation of the copy constructor is deprecated.
 >
->  In both cases, Visual Studio continues to automatically generate the necessary functions implicitly, and does not emit a warning.
+> In both cases, Visual Studio continues to automatically generate the necessary functions implicitly, and does not emit a warning.
 
 The consequences of these rules can also leak into object hierarchies. For example, if for any reason a base class fails to have a default constructor that's callable from a deriving class—that is, a **public** or **protected** constructor that takes no parameters—then a class that derives from it cannot automatically generate its own default constructor.
 

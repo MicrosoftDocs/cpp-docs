@@ -1,15 +1,8 @@
 ---
-title: "Compound Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "Compound Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compound statements", "statements, compound"]
 ms.assetid: 32d1bf86-cbbc-42a9-ba3a-1be1c6c7754c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Compound Statement (C)
 
@@ -49,6 +42,6 @@ if ( i > 0 )
 
 In this example, if `i` is greater than 0, all statements inside the compound statement are executed in order.
 
-## See Also
+## See also
 
 [Statements](../c-language/statements-c.md)

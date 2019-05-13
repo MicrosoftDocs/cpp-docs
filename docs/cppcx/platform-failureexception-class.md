@@ -1,16 +1,10 @@
 ---
-title: "Platform::FailureException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::FailureException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::FailureException::FailureException", "VCCORLIB/Platform::FailureException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::FailureException"]
 ms.assetid: 1729cd07-bfc2-448e-9db5-185d5cbf5b81
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::FailureException Class
 
@@ -36,6 +30,6 @@ For more information, see the [COMException](../cppcx/platform-comexception-clas
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform::COMException Class](../cppcx/platform-comexception-class.md)

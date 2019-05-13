@@ -1,16 +1,9 @@
 ---
-title: "ENDM | Microsoft Docs"
-ms.custom: ""
+title: "ENDM"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["ENDM"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ENDM directive"]
 ms.assetid: 697ea303-1e47-4ee9-9e67-77b83c3fe35a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ENDM
 

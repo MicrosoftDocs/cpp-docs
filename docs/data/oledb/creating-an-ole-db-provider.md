@@ -1,15 +1,8 @@
 ---
-title: "Creating an OLE DB Provider | Microsoft Docs"
-ms.custom: ""
+title: "Creating an OLE DB Provider"
 ms.date: "10/13/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, creating", "OLE DB provider templates, creating providers"]
 ms.assetid: f73017c3-c89f-41a6-a306-ea992cf6092c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating an OLE DB Provider
 
@@ -35,7 +28,7 @@ The basic steps are as follows:
    > [!NOTE]
    > By default, the wizards generate code that is OLE DB level 0 compliant. To ensure that your application remains level 0 compliant, do not remove any of the wizard-generated interfaces from the code.
 
-## See Also
+## See also
 
 [CatDB Sample: Data Source Schema Browser](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/catdb)<br/>
 [DBViewer Sample: Database Browser](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer)

@@ -1,15 +1,8 @@
 ---
-title: "Typedef Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Typedef Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarations, typedef", "typedef declarations", "types [C], declarations"]
 ms.assetid: e92a3b82-9269-4bc6-834a-6f431ccac83e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Typedef Declarations
 
@@ -144,6 +137,6 @@ is equivalent to the declaration
 void box( int, int );
 ```
 
-## See Also
+## See also
 
 [Declarations and Types](../c-language/declarations-and-types.md)

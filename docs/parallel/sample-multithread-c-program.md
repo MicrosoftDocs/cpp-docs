@@ -1,14 +1,7 @@
 ---
-title: "Sample Multithread C Program | Microsoft Docs"
-ms.custom: ""
+title: "Sample Multithread C Program"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Sample Multithread C Program
 
@@ -210,6 +203,6 @@ a
 q
 ```
 
-## See Also
+## See also
 
 [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

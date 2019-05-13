@@ -1,15 +1,8 @@
 ---
-title: "Using Tree Controls | Microsoft Docs"
-ms.custom: ""
+title: "Using Tree Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTreeCtrl class [MFC], using", "tree controls [MFC], about tree controls"]
 ms.assetid: 4e92941a-e477-4fb1-b1ce-4abeafbef1c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Tree Controls
 
@@ -29,8 +22,7 @@ Typical usage of a tree control ([CTreeCtrl](../mfc/reference/ctreectrl-class.md
 
 - When you're done with the control, make sure it's properly destroyed. If the tree control is in a dialog box or if it's a view, it and the `CTreeCtrl` object will be destroyed automatically. If not, you need to ensure that both the control and the `CTreeCtrl` object are properly destroyed.
 
-## See Also
+## See also
 
 [Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

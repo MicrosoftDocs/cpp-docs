@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3705 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3705"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3705"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3705"]
 ms.assetid: 8361017d-5782-4214-a9d7-e9825fd29bc8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3705
 

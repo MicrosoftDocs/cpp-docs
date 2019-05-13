@@ -1,16 +1,9 @@
 ---
-title: "CManualAccessor Class | Microsoft Docs"
-ms.custom: ""
+title: "CManualAccessor Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::CManualAccessor", "ATL.CManualAccessor", "CManualAccessor", "ATL::CManualAccessor::AddBindEntry", "ATL.CManualAccessor.AddBindEntry", "CManualAccessor::AddBindEntry", "AddBindEntry", "CManualAccessor.AddBindEntry", "CManualAccessor::AddParameterEntry", "ATL.CManualAccessor.AddParameterEntry", "CManualAccessor.AddParameterEntry", "AddParameterEntry", "ATL::CManualAccessor::AddParameterEntry", "ATL::CManualAccessor::CreateAccessor", "CreateAccessor", "ATL.CManualAccessor.CreateAccessor", "CManualAccessor.CreateAccessor", "CManualAccessor::CreateAccessor", "ATL::CManualAccessor::CreateParameterAccessor", "ATL.CManualAccessor.CreateParameterAccessor", "CManualAccessor.CreateParameterAccessor", "CreateParameterAccessor", "CManualAccessor::CreateParameterAccessor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CManualAccessor class", "AddBindEntry method", "AddParameterEntry method", "CreateAccessor method", "CreateParameterAccessor method"]
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CManualAccessor Class
 
@@ -57,7 +50,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 #### Parameters
 
-See [DBBINDING](/previous-versions/windows/desktop/ms716845) in the *OLE DB Programmer's Reference*.
+See [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 *nOrdinal*<br/>
 [in] Column number.
@@ -98,7 +91,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 
 #### Parameters
 
-See [DBBINDING](/previous-versions/windows/desktop/ms716845) in the *OLE DB Programmer's Reference*.
+See [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 *nOrdinal*<br/>
 [in] Parameter number.
@@ -132,8 +125,8 @@ Allocates memory for the column bind structures and initializes the column data 
 ### Syntax
 
 ```cpp
-HRESULT CreateAccessor(int nBindEntries, 
-  void* pBuffer, 
+HRESULT CreateAccessor(int nBindEntries,
+  void* pBuffer,
    DBLENGTH nBufferSize) throw();
 ```
 
@@ -163,8 +156,8 @@ Allocates memory for the parameter bind structures and initializes the parameter
 ### Syntax
 
 ```cpp
-HRESULT CreateParameterAccessor(int nBindEntries, 
-   void* pBuffer, 
+HRESULT CreateParameterAccessor(int nBindEntries,
+   void* pBuffer,
    DBLENGTH nBufferSize) throw();
 ```
 
@@ -187,9 +180,9 @@ One of the standard HRESULT values.
 
 You must call this function before calling [AddParameterEntry](../../data/oledb/cmanualaccessor-addparameterentry.md).
 
-## See Also
+## See also
 
-[DBViewer](../../visual-cpp-samples.md)<br/>
+[DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor Class](../../data/oledb/caccessor-class.md)<br/>

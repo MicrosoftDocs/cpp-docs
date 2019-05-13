@@ -1,16 +1,9 @@
 ---
-title: "entry (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "entry (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.entry"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["entry attribute"]
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # entry
 
@@ -48,6 +41,6 @@ See the example for [idl_module](idl-module.md) for an example use of **entry**.
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)

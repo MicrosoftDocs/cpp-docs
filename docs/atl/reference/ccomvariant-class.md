@@ -1,16 +1,9 @@
 ---
-title: "CComVariant Class | Microsoft Docs"
-ms.custom: ""
+title: "CComVariant Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComVariant", "ATLCOMCLI/ATL::CComVariant", "ATLCOMCLI/ATL::CComVariant::CComVariant", "ATLCOMCLI/ATL::CComVariant::Attach", "ATLCOMCLI/ATL::CComVariant::ChangeType", "ATLCOMCLI/ATL::CComVariant::Clear", "ATLCOMCLI/ATL::CComVariant::Copy", "ATLCOMCLI/ATL::CComVariant::CopyTo", "ATLCOMCLI/ATL::CComVariant::Detach", "ATLCOMCLI/ATL::CComVariant::GetSize", "ATLCOMCLI/ATL::CComVariant::ReadFromStream", "ATLCOMCLI/ATL::CComVariant::SetByRef", "ATLCOMCLI/ATL::CComVariant::WriteToStream"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VARIANT macro", "CComVariant class", "VARIANT macro, ATL"]
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComVariant Class
 
@@ -83,7 +76,7 @@ HRESULT Attach(VARIANT* pSrc);
 ### Parameters
 
 *pSrc*<br/>
-[in] Points to the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be attached to the object.
+[in] Points to the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be attached to the object.
 
 ### Return Value
 
@@ -227,7 +220,7 @@ HRESULT Copy(const VARIANT* pSrc);
 ### Parameters
 
 *pSrc*<br/>
-[in] A pointer to the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be copied.
+[in] A pointer to the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be copied.
 
 ### Return Value
 
@@ -327,7 +320,7 @@ CComVariant& operator=(char cSrc) throw();
 ### Parameters
 
 *varSrc*<br/>
-[in] The `CComVariant` or [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be assigned to the `CComVariant` object. The contents of the source variant are copied to the destination without conversion.
+[in] The `CComVariant` or [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be assigned to the `CComVariant` object. The contents of the source variant are copied to the destination without conversion.
 
 *bstrSrc*<br/>
 [in] The BSTR to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_BSTR.
@@ -471,6 +464,6 @@ HRESULT WriteToStream(IStream* pStream);
 
 A standard HRESULT value.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

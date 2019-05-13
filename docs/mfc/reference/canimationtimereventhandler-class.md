@@ -1,16 +1,9 @@
 ---
-title: "CAnimationTimerEventHandler Class | Microsoft Docs"
-ms.custom: ""
+title: "CAnimationTimerEventHandler Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPostUpdate", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPreUpdate", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnRenderingTooSlow", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::SetAnimationController"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationTimerEventHandler [MFC], CreateInstance", "CAnimationTimerEventHandler [MFC], OnPostUpdate", "CAnimationTimerEventHandler [MFC], OnPreUpdate", "CAnimationTimerEventHandler [MFC], OnRenderingTooSlow", "CAnimationTimerEventHandler [MFC], SetAnimationController"]
 ms.assetid: 188dea3b-4b5e-4f6b-8df9-09d993a21619
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimationTimerEventHandler Class
 
@@ -124,6 +117,6 @@ void SetAnimationController(CAnimationController* pAnimationController);
 *pAnimationController*<br/>
 A pointer to animation controller, which will receive events.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

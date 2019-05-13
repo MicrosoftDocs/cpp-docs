@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4750 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4750"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4750"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4750"]
 ms.assetid: b0b2c938-7d2a-4c36-8270-7daee15ffee3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4750
 
@@ -54,6 +47,6 @@ int main(void)
 }
 ```
 
-## See Also
+## See also
 
 [_alloca](../../c-runtime-library/reference/alloca.md)

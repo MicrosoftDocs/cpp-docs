@@ -1,16 +1,9 @@
 ---
-title: "Stream I/O | Microsoft Docs"
-ms.custom: ""
+title: "Stream I/O"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.io"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["I/O routines, stream I/O", "I/O [CRT], stream", "stream I/O"]
 ms.assetid: dc7874d3-a91b-456a-9015-4748bb358217
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Stream I/O
 
@@ -92,7 +85,7 @@ If your program does not explicitly close a stream, the stream is automatically 
 
 Input can follow output directly only with an intervening call to **fflush** or to a file-positioning function (**fseek**, **fsetpos**, or **rewind**). Output can follow input without an intervening call to a file-positioning function if the input operation encounters the end of the file.
 
-## See Also
+## See also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

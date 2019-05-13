@@ -1,10 +1,7 @@
 ---
-title: "&lt;valarray&gt; operators | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.topic: "reference"
+title: "&lt;valarray&gt; operators"
+ms.date: "03/27/2019"
 f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/std::operator&amp;", "valarray/std::operator&amp;&amp;", "valarray/std::operator&gt;", "valarray/std::operator&gt;&gt;", "valarray/std::operator&gt;=", "valarray/std::operator&lt;", "valarray/std::operator&lt;&lt;", "valarray/std::operator&lt;=", "valarray/std::operator*", "valarray/std::operator+", "valarray/std::operator-", "valarray/std::operator/", "valarray/std::operator==", "valarray/std::operator^", "valarray/std::operator|", "valarray/std::operator||"]
-dev_langs: ["C++"]
 ms.assetid: 8a53562c-90ab-4eb3-85d3-ada5259d90b0
 helpviewer_keywords: ["std::operator!= (valarray), std::operator&amp; (valarray)", "std::operator&amp;&amp; (valarray)", "std::operator&gt; (valarray)", "std::operator&gt;&gt; (valarray)", "std::operator&gt;= (valarray)", "std::operator&lt; (valarray)", "std::operator&lt;&lt; (valarray)", "std::operator&lt;= (valarray), std::operator== (valarray)"]
 ---
@@ -17,7 +14,7 @@ helpviewer_keywords: ["std::operator!= (valarray), std::operator&amp; (valarray)
 |[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|
 |[operator&lt;=](#op_lt_eq)|[operator*](#op_star)|[operator+](#op_add)|
 |[operator-](#operator-)|[operator/](#op_div)|[operator==](#op_eq_eq)|
-|[operator^](#op_xor)|[operator|](#op_or)|[operator||](#op_lor)|
+|[operator^](#op_xor)|[operator&#124;](#op_or)|[operator&#124;&#124;](#op_lor)|
 
 ## <a name="op_neq"></a>  operator!=
 
@@ -239,7 +236,7 @@ A valarray whose elements are the element-wise combination of the bitwise AND op
 
 A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool** or other, more complex data types.
 
-The bitwise `AND` has the same truth table as the logical `AND` but applies to the data type on the level of the individual bits. The [operator&&](../standard-library/valarray-operators.md#amp) applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise **ANDoperator&**, by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
+The bitwise `AND` has the same truth table as the logical `AND` but applies to the data type on the level of the individual bits. The [operator&&](#op_amp_amp) applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise `AND` [operator&](#op_amp), by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
 
 ### Example
 
@@ -327,7 +324,7 @@ A valarray whose elements are of type bool and are the element-wise combination 
 
 ### Remarks
 
-The logical `ANDoperator&&` applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise version of `AND`, [operator&,](../standard-library/valarray-operators.md#op_amp), by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
+The logical `ANDoperator&&` applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise version of `AND`, [operator&,](#op_amp), by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
 
 ### Example
 

@@ -1,16 +1,9 @@
 ---
-title: "CMFCCaptionBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCCaptionBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCCaptionBar", "AFXCAPTIONBAR/CMFCCaptionBar", "AFXCAPTIONBAR/CMFCCaptionBar::Create", "AFXCAPTIONBAR/CMFCCaptionBar::DoesAllowDynInsertBefore", "AFXCAPTIONBAR/CMFCCaptionBar::EnableButton", "AFXCAPTIONBAR/CMFCCaptionBar::GetAlignment", "AFXCAPTIONBAR/CMFCCaptionBar::GetBorderSize", "AFXCAPTIONBAR/CMFCCaptionBar::GetButtonRect", "AFXCAPTIONBAR/CMFCCaptionBar::GetMargin", "AFXCAPTIONBAR/CMFCCaptionBar::IsMessageBarMode", "AFXCAPTIONBAR/CMFCCaptionBar::RemoveBitmap", "AFXCAPTIONBAR/CMFCCaptionBar::RemoveButton", "AFXCAPTIONBAR/CMFCCaptionBar::RemoveIcon", "AFXCAPTIONBAR/CMFCCaptionBar::RemoveText", "AFXCAPTIONBAR/CMFCCaptionBar::SetBitmap", "AFXCAPTIONBAR/CMFCCaptionBar::SetBorderSize", "AFXCAPTIONBAR/CMFCCaptionBar::SetButton", "AFXCAPTIONBAR/CMFCCaptionBar::SetButtonPressed", "AFXCAPTIONBAR/CMFCCaptionBar::SetButtonToolTip", "AFXCAPTIONBAR/CMFCCaptionBar::SetFlatBorder", "AFXCAPTIONBAR/CMFCCaptionBar::SetIcon", "AFXCAPTIONBAR/CMFCCaptionBar::SetImageToolTip", "AFXCAPTIONBAR/CMFCCaptionBar::SetMargin", "AFXCAPTIONBAR/CMFCCaptionBar::SetText", "AFXCAPTIONBAR/CMFCCaptionBar::OnDrawBackground", "AFXCAPTIONBAR/CMFCCaptionBar::OnDrawBorder", "AFXCAPTIONBAR/CMFCCaptionBar::OnDrawButton", "AFXCAPTIONBAR/CMFCCaptionBar::OnDrawImage", "AFXCAPTIONBAR/CMFCCaptionBar::OnDrawText", "AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarBackground", "AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarBorder", "AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCCaptionBar [MFC], Create", "CMFCCaptionBar [MFC], DoesAllowDynInsertBefore", "CMFCCaptionBar [MFC], EnableButton", "CMFCCaptionBar [MFC], GetAlignment", "CMFCCaptionBar [MFC], GetBorderSize", "CMFCCaptionBar [MFC], GetButtonRect", "CMFCCaptionBar [MFC], GetMargin", "CMFCCaptionBar [MFC], IsMessageBarMode", "CMFCCaptionBar [MFC], RemoveBitmap", "CMFCCaptionBar [MFC], RemoveButton", "CMFCCaptionBar [MFC], RemoveIcon", "CMFCCaptionBar [MFC], RemoveText", "CMFCCaptionBar [MFC], SetBitmap", "CMFCCaptionBar [MFC], SetBorderSize", "CMFCCaptionBar [MFC], SetButton", "CMFCCaptionBar [MFC], SetButtonPressed", "CMFCCaptionBar [MFC], SetButtonToolTip", "CMFCCaptionBar [MFC], SetFlatBorder", "CMFCCaptionBar [MFC], SetIcon", "CMFCCaptionBar [MFC], SetImageToolTip", "CMFCCaptionBar [MFC], SetMargin", "CMFCCaptionBar [MFC], SetText", "CMFCCaptionBar [MFC], OnDrawBackground", "CMFCCaptionBar [MFC], OnDrawBorder", "CMFCCaptionBar [MFC], OnDrawButton", "CMFCCaptionBar [MFC], OnDrawImage", "CMFCCaptionBar [MFC], OnDrawText", "CMFCCaptionBar [MFC], m_clrBarBackground", "CMFCCaptionBar [MFC], m_clrBarBorder", "CMFCCaptionBar [MFC], m_clrBarText"]
 ms.assetid: acb54d5f-14ff-4c96-aeb3-7717cf566d9a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCCaptionBar Class
 
@@ -87,7 +80,7 @@ To enable message bar mode, call [CMFCCaptionBar::Create](#create) and set the f
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCCaptionBar` class. The example shows how to create the caption bar control, set a 3D border of the caption bar, set the distance, in pixels, between the edge of the caption bar elements and the edge of the caption bar control, set the button for the caption bar, set the tooltip for the button, set the text label for the caption bar, set the bitmap image for the caption bar, and set the tooltip for the image in the caption bar. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCCaptionBar` class. The example shows how to create the caption bar control, set a 3D border of the caption bar, set the distance, in pixels, between the edge of the caption bar elements and the edge of the caption bar control, set the button for the caption bar, set the tooltip for the button, set the text label for the caption bar, set the bitmap image for the caption bar, and set the tooltip for the image in the caption bar. This code snippet is part of the [MS Office 2007 Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#1](../../mfc/reference/codesnippet/cpp/cmfccaptionbar-class_1.h)]
 [!code-cpp[NVC_MFC_MSOffice2007Demo#2](../../mfc/reference/codesnippet/cpp/cmfccaptionbar-class_2.cpp)]
@@ -668,7 +661,7 @@ The text label is aligned as specified by the *textAlignment* parameter. It can 
 
 - ALIGN_CENTER
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

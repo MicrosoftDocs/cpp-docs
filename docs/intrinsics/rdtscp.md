@@ -1,16 +1,9 @@
 ---
-title: "__rdtscp | Microsoft Docs"
-ms.custom: ""
+title: "__rdtscp"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__rdtscp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rdtscp intrinsic", "__rdtscp intrinsic", "rdtscp instruction"]
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __rdtscp
 
@@ -78,7 +71,7 @@ TSC_AUX was 0
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
 [__rdtsc](../intrinsics/rdtsc.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

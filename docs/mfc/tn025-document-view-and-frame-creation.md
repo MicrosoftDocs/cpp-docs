@@ -1,16 +1,9 @@
 ---
-title: "TN025: Document, View, and Frame Creation | Microsoft Docs"
-ms.custom: ""
+title: "TN025: Document, View, and Frame Creation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.creation"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], view and frame creation", "TN025"]
 ms.assetid: 09254d72-6e1d-43db-80e9-693887dbeda2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN025: Document, View, and Frame Creation
 
@@ -65,8 +58,7 @@ The `CFrameWnd` is responsible for creating windows in the client area of the fr
 
 For an MDI-Frame window, the client area is filled with the MDICLIENT control which is in turn the parent of all the MDI-Child frame windows. For an SDI-Frame window or an MDI-Child frame window, the client area is usually filled with a `CView`-derived window object. In the case of `CSplitterWnd`, the client area of the view is filled with the `CSplitterWnd` window object, and the `CView`-derived window objects (one per split pane) are created as child windows of the `CSplitterWnd`.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

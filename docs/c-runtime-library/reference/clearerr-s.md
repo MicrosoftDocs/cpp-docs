@@ -1,19 +1,12 @@
 ---
-title: "clearerr_s | Microsoft Docs"
-ms.custom: ""
+title: "clearerr_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["clearerr_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["clearerr_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["error indicator for streams", "resetting stream error indicator", "clearerr_s function"]
 ms.assetid: b74d014d-b7a8-494a-a330-e5ffd5614772
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # clearerr_s
 
@@ -92,15 +85,16 @@ int main( void )
 }
 ```
 
-```Output
+### Input
 
+```Input
 n
-
 ```
 
-```Output
+### Output
 
-      nWrite error: Bad file descriptor
+```Output
+Write error: Bad file descriptor
 Will input cause an error? n
 ```
 

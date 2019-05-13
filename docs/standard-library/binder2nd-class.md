@@ -1,20 +1,13 @@
 ---
-title: "binder2nd Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::binder2nd"]
-dev_langs: ["C++"]
+title: "binder2nd Class"
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::binder2nd"]
 helpviewer_keywords: ["binder2nd class"]
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # binder2nd Class
 
-A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value.
+A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

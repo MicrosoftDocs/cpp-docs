@@ -1,14 +1,8 @@
 ---
-title: "Portability At ABI Boundaries (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Portability At ABI Boundaries (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: abbd405e-3038-427c-8c24-e00598f0936a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Portability At ABI Boundaries (Modern C++)
 
@@ -34,6 +28,6 @@ extern "C" {        // functions using explicit "this"
 
 ## See also
 
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

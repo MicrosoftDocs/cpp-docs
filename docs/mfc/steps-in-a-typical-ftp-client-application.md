@@ -1,15 +1,8 @@
 ---
-title: "Steps in a Typical FTP Client Application | Microsoft Docs"
-ms.custom: ""
+title: "Steps in a Typical FTP Client Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet client applications [MFC], FTP table", "FTP (File Transfer Protocol)", "WinInet classes [MFC], FTP", "FTP (File Transfer Protocol) [MFC], client applications", "Internet applications [MFC], FTP client applications"]
 ms.assetid: 70bed7b5-6040-40d1-bc77-702e63a698f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Steps in a Typical FTP Client Application
 
@@ -29,7 +22,7 @@ The following table shows the steps you might perform in a typical FTP client ap
 |Handle exceptions.|Use the [CInternetException](../mfc/reference/cinternetexception-class.md) class.|Handles all common Internet exception types.|
 |End the FTP session.|Dispose of the [CInternetSession](../mfc/reference/cinternetsession-class.md) object.|Automatically cleans up open file handles and connections.|
 
-## See Also
+## See also
 
 [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)<br/>

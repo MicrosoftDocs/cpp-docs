@@ -1,22 +1,15 @@
 ---
-title: "MFC ActiveX Controls: Property Pages | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "MFC ActiveX Controls: Property Pages"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["DDP_ functions [MFC]", "MFC ActiveX controls [MFC], properties", "property pages [MFC], MFC ActiveX controls", "DoDataExchange method [MFC]", "OLEIVERB_PROPERTIES", "CPropertyPageDialog class [MFC]", "MFC ActiveX controls [MFC], property pages"]
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Property Pages
 
 Property pages allow an ActiveX control user to view and change ActiveX control properties. These properties are accessed by invoking a control properties dialog box, which contains one or more property pages that provide a customized, graphical interface for viewing and editing the control properties.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 ActiveX control property pages are displayed in two ways:
 
@@ -26,7 +19,7 @@ ActiveX control property pages are displayed in two ways:
 
 The properties dialog box (illustrated in the following figure) consists of an area for displaying the current property page, tabs for switching between property pages, and a collection of buttons that perform common tasks such as closing the property page dialog, canceling any changes made, or immediately applying any changes to the ActiveX control.
 
-![Properties dialog box for Circ3](../mfc/media/vc373i1.gif "vc373i1")
+![Properties dialog box for Circ3](../mfc/media/vc373i1.gif "Properties dialog box for Circ3") <br/>
 Properties Dialog Box
 
 This article covers topics related to using property pages in an ActiveX control. These include:
@@ -109,7 +102,7 @@ After you have the property page control inserted, you need to establish a link 
 |`DDP_Radio`|A radio button with a control property.|
 |`DDP_Text`|Text with a control property.|
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [COlePropertyPage Class](../mfc/reference/colepropertypage-class.md)

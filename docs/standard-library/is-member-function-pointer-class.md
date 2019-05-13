@@ -1,16 +1,9 @@
 ---
-title: "is_member_function_pointer Class | Microsoft Docs"
-ms.custom: ""
+title: "is_member_function_pointer Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_member_function_pointer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_member_function_pointer class", "is_member_function_pointer"]
 ms.assetid: 02e372c4-2714-40f2-b376-2e10ca91c8ed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_member_function_pointer Class
 
@@ -67,7 +60,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

@@ -1,16 +1,9 @@
 ---
-title: "/Zc:externConstexpr (Enable extern constexpr variables) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:externConstexpr (Enable extern constexpr variables)"
 ms.date: "02/28/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:externConstexpr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc:externConstexpr compiler option (C++)", "extern constexpr variables (C++)"]
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:externConstexpr (Enable extern constexpr variables)
 
@@ -28,13 +21,13 @@ If a header file contains a variable declared `extern constexpr`, it must be mar
 
 ### To set this compiler option in Visual Studio
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Add **/Zc:externConstexpr** or **/Zc:externConstexpr-** to the **Additional options:** pane.
 
-## See Also
+## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>
 [auto Keyword](../../cpp/auto-keyword.md)

@@ -1,15 +1,9 @@
 ---
-title: "How to: Access Characters in a System::String | Microsoft Docs"
+title: "How to: Access Characters in a System::String"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["characters [C++], accessing in System::String", "examples [C++], strings", "strings [C++], accessing characters"]
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Access Characters in a System::String
 
@@ -19,7 +13,7 @@ You can access characters of a <xref:System.String> object for high-performance 
 
 `PtrToStringChars` returns a <xref:System.Char>, which is an interior pointer (also known as a `byref`). As such, it is subject to garbage collection. You don't have to pin this pointer unless you're going to pass it to a native function.
 
-Consider the following code.  Pinning is not needed because `ppchar` is an interior pointer, and if the garbage collector moves the string it points to, it will also update `ppchar`. Without a [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md), the code will work and not have the potential performance hit caused by pinning.
+Consider the following code.  Pinning is not needed because `ppchar` is an interior pointer, and if the garbage collector moves the string it points to, it will also update `ppchar`. Without a [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md), the code will work and not have the potential performance hit caused by pinning.
 
 If you pass `ppchar` to a native function, then it must be a pinning pointer; the garbage collector will not be able to update any pointers on the unmanaged stack frame.
 
@@ -96,6 +90,6 @@ void deleteNode( ListNode ^ list, Int32 e ) {
 }
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

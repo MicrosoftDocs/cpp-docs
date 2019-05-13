@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1201 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1201"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1201"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1201"]
 ms.assetid: e58b9b9a-2c6f-454d-8719-9773aca765d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1201
 

@@ -1,14 +1,7 @@
 ---
-title: "Using accelerator and accelerator_view Objects | Microsoft Docs"
-ms.custom: ""
+title: "Using accelerator and accelerator_view Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using accelerator and accelerator_view Objects
 
@@ -179,7 +172,7 @@ The device paths of three special accelerators are available as properties of th
 
 The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](/windows/desktop/api/d3d11/nn-d3d11-id3d11device). The [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](reference/concurrency-direct3d-namespace-functions-amp.md#get_device) method takes an `accelerator_view` object and returns an `IUnknown` interface.
 
-## See Also
+## See also
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)<br/>

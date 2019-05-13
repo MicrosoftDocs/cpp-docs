@@ -1,14 +1,7 @@
 ---
-title: "Microsoft-Specific Modifiers | Microsoft Docs"
-ms.custom: ""
+title: "Microsoft-Specific Modifiers"
 ms.date: "08/16/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 22c7178c-f854-47fa-9de6-07d23fda58e1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Microsoft-Specific Modifiers
 
@@ -38,6 +31,6 @@ Many of the Microsoft-specific keywords can be used to modify declarators to for
 |[__unaligned](unaligned.md)|Specifies that a pointer to a type or other data is not aligned..|No|
 |[__vectorcall](vectorcall.md)|The name that follows declares a function that uses registers, including SSE registers, when available, instead of the stack for argument passing.|Yes|
 
-## See Also
+## See also
 
 [C++ Language Reference](cpp-language-reference.md)

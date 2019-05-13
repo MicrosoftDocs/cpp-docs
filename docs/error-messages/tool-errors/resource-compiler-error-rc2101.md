@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2101 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2101"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2101"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2101"]
 ms.assetid: 580f9d74-162f-41e9-9438-ddbe3457c359
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2101
 

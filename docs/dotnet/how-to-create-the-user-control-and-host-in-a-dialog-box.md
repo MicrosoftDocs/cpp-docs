@@ -1,15 +1,9 @@
 ---
-title: "How to: Create the User Control and Host in a Dialog Box | Microsoft Docs"
+title: "How to: Create the User Control and Host in a Dialog Box"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], hosting a Windows Forms Control", "Windows Forms [C++], MFC support"]
 ms.assetid: 03a53032-2f03-4fa2-b567-031615a26011
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create the User Control and Host in a Dialog Box
 
@@ -113,6 +107,6 @@ The steps in this article assume that you are creating a dialog-based ([CDialog 
 
    On the **Debug** menu, click **Start without debugging**. The MFC dialog box should display the Windows Forms control.
 
-## See Also
+## See also
 
 [Hosting a Windows Form User Control in an MFC Dialog Box](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)

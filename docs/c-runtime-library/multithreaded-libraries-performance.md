@@ -1,15 +1,8 @@
 ---
-title: "Multithreaded Libraries Performance | Microsoft Docs"
-ms.custom: ""
+title: "Multithreaded Libraries Performance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["threading [C++], performance", "libraries, multithreaded", "performance, multithreading", "multithreaded libraries"]
 ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Multithreaded Libraries Performance
 
@@ -31,6 +24,6 @@ The performance of the multithreaded libraries has been improved and is close to
 
 - Exposure of the CRT heap handle allows you to enable the Windows Low Fragmentation Heap (LFH) for the CRT heap, which can substantially improve performance in highly scaled scenarios.
 
-## See Also
+## See also
 
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

@@ -1,14 +1,8 @@
 ---
-title: "Concurrency::graphics namespace functions | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency::graphics namespace functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["amp_graphics/Concurrency::fast_math::copy_async", "amp_graphics/Concurrency::fast_math::copy"]
-dev_langs: ["C++"]
 ms.assetid: ace01cd5-29d3-4356-930e-c81a61c5f934
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics namespace functions
 
@@ -296,6 +290,6 @@ An ending iterator into the source container.
 
 **Namespace:** Concurrency::graphics
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

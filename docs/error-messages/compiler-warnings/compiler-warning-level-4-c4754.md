@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4754 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4754"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4754"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4754"]
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4754
 
@@ -18,7 +11,7 @@ Conversion rules for arithmetic operations in a comparison mean that one branch 
 
 The C4754 warning is issued because the result of the comparison is always the same. This indicates that one of the branches of the condition is never executed, most likely because the associated integer expression is incorrect. This code defect often occurs in incorrect integer overflow checks on 64-bit architectures.
 
-Integer conversion rules are complex and there are many subtle pitfalls. As an alternative to fixing each C4754 warning, you can update the code to use the [SafeInt Library](../../windows/safeint-library.md).
+Integer conversion rules are complex and there are many subtle pitfalls. As an alternative to fixing each C4754 warning, you can update the code to use the [SafeInt Library](../../safeint/safeint-library.md).
 
 ## Example
 
@@ -93,7 +86,6 @@ In this case, the fixed code would resemble this:
 // that all the addition operands are 32-bit, so any overflow
 // is detected by the check.
 if (a + (unsigned long)sizeof(unsigned long) < a)
-
 ```
 
 **Note** The line number referred to in compiler warnings is the last line of a statement. In a warning message about a complex conditional statement that's spread over multiple lines, the line that has the code defect may be several lines before the line that's reported. For example:

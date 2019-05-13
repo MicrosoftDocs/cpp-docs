@@ -1,16 +1,9 @@
 ---
-title: "basic_ios Class | Microsoft Docs"
-ms.custom: ""
+title: "basic_ios Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["ios/std::basic_ios", "ios/std::basic_ios::char_type", "ios/std::basic_ios::int_type", "ios/std::basic_ios::off_type", "ios/std::basic_ios::pos_type", "ios/std::basic_ios::traits_type", "ios/std::basic_ios::bad", "ios/std::basic_ios::clear", "ios/std::basic_ios::copyfmt", "ios/std::basic_ios::eof", "ios/std::basic_ios::exceptions", "ios/std::basic_ios::fail", "ios/std::basic_ios::fill", "ios/std::basic_ios::good", "ios/std::basic_ios::imbue", "ios/std::basic_ios::init", "ios/std::basic_ios::move", "ios/std::basic_ios::narrow", "ios/std::basic_ios::rdbuf", "ios/std::basic_ios::rdstate", "ios/std::basic_ios::set_rdbuf", "ios/std::basic_ios::setstate", "ios/std::basic_ios::swap", "ios/std::basic_ios::tie", "ios/std::basic_ios::widen", "ios/std::basic_ios::explicit operator bool"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_ios [C++]", "std::basic_ios [C++], char_type", "std::basic_ios [C++], int_type", "std::basic_ios [C++], off_type", "std::basic_ios [C++], pos_type", "std::basic_ios [C++], traits_type", "std::basic_ios [C++], bad", "std::basic_ios [C++], clear", "std::basic_ios [C++], copyfmt", "std::basic_ios [C++], eof", "std::basic_ios [C++], exceptions", "std::basic_ios [C++], fail", "std::basic_ios [C++], fill", "std::basic_ios [C++], good", "std::basic_ios [C++], imbue", "std::basic_ios [C++], init", "std::basic_ios [C++], move", "std::basic_ios [C++], narrow", "std::basic_ios [C++], rdbuf", "std::basic_ios [C++], rdstate", "std::basic_ios [C++], set_rdbuf", "std::basic_ios [C++], setstate", "std::basic_ios [C++], swap", "std::basic_ios [C++], tie", "std::basic_ios [C++], widen"]
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # basic_ios Class
 
@@ -231,7 +224,6 @@ int main( )
     cout.copyfmt( x );
     cout << i << endl;
 }
-
 ```
 
 ## <a name="eof"></a>  basic_ios::eof
@@ -359,7 +351,6 @@ int main( void )
     cout << boolalpha;
     cout << b << endl;
 }
-
 ```
 
 ## <a name="fill"></a>  basic_ios::fill
@@ -917,7 +908,6 @@ int main( )
     y[0] = wcout.widen( z[0] );
     wcout << &y[0] << endl;
 }
-
 ```
 
 ## <a name="swap"></a>  basic_ios::swap

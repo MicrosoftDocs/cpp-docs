@@ -1,16 +1,9 @@
 ---
-title: "CComboBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CComboBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CComboBox", "AFXWIN/CComboBox", "AFXWIN/CComboBox::CComboBox", "AFXWIN/CComboBox::AddString", "AFXWIN/CComboBox::Clear", "AFXWIN/CComboBox::CompareItem", "AFXWIN/CComboBox::Copy", "AFXWIN/CComboBox::Create", "AFXWIN/CComboBox::Cut", "AFXWIN/CComboBox::DeleteItem", "AFXWIN/CComboBox::DeleteString", "AFXWIN/CComboBox::Dir", "AFXWIN/CComboBox::DrawItem", "AFXWIN/CComboBox::FindString", "AFXWIN/CComboBox::FindStringExact", "AFXWIN/CComboBox::GetComboBoxInfo", "AFXWIN/CComboBox::GetCount", "AFXWIN/CComboBox::GetCueBanner", "AFXWIN/CComboBox::GetCurSel", "AFXWIN/CComboBox::GetDroppedControlRect", "AFXWIN/CComboBox::GetDroppedState", "AFXWIN/CComboBox::GetDroppedWidth", "AFXWIN/CComboBox::GetEditSel", "AFXWIN/CComboBox::GetExtendedUI", "AFXWIN/CComboBox::GetHorizontalExtent", "AFXWIN/CComboBox::GetItemData", "AFXWIN/CComboBox::GetItemDataPtr", "AFXWIN/CComboBox::GetItemHeight", "AFXWIN/CComboBox::GetLBText", "AFXWIN/CComboBox::GetLBTextLen", "AFXWIN/CComboBox::GetLocale", "AFXWIN/CComboBox::GetMinVisible", "AFXWIN/CComboBox::GetTopIndex", "AFXWIN/CComboBox::InitStorage", "AFXWIN/CComboBox::InsertString", "AFXWIN/CComboBox::LimitText", "AFXWIN/CComboBox::MeasureItem", "AFXWIN/CComboBox::Paste", "AFXWIN/CComboBox::ResetContent", "AFXWIN/CComboBox::SelectString", "AFXWIN/CComboBox::SetCueBanner", "AFXWIN/CComboBox::SetCurSel", "AFXWIN/CComboBox::SetDroppedWidth", "AFXWIN/CComboBox::SetEditSel", "AFXWIN/CComboBox::SetExtendedUI", "AFXWIN/CComboBox::SetHorizontalExtent", "AFXWIN/CComboBox::SetItemData", "AFXWIN/CComboBox::SetItemDataPtr", "AFXWIN/CComboBox::SetItemHeight", "AFXWIN/CComboBox::SetLocale", "AFXWIN/CComboBox::SetMinVisibleItems", "AFXWIN/CComboBox::SetTopIndex", "AFXWIN/CComboBox::ShowDropDown"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComboBox [MFC], CComboBox", "CComboBox [MFC], AddString", "CComboBox [MFC], Clear", "CComboBox [MFC], CompareItem", "CComboBox [MFC], Copy", "CComboBox [MFC], Create", "CComboBox [MFC], Cut", "CComboBox [MFC], DeleteItem", "CComboBox [MFC], DeleteString", "CComboBox [MFC], Dir", "CComboBox [MFC], DrawItem", "CComboBox [MFC], FindString", "CComboBox [MFC], FindStringExact", "CComboBox [MFC], GetComboBoxInfo", "CComboBox [MFC], GetCount", "CComboBox [MFC], GetCueBanner", "CComboBox [MFC], GetCurSel", "CComboBox [MFC], GetDroppedControlRect", "CComboBox [MFC], GetDroppedState", "CComboBox [MFC], GetDroppedWidth", "CComboBox [MFC], GetEditSel", "CComboBox [MFC], GetExtendedUI", "CComboBox [MFC], GetHorizontalExtent", "CComboBox [MFC], GetItemData", "CComboBox [MFC], GetItemDataPtr", "CComboBox [MFC], GetItemHeight", "CComboBox [MFC], GetLBText", "CComboBox [MFC], GetLBTextLen", "CComboBox [MFC], GetLocale", "CComboBox [MFC], GetMinVisible", "CComboBox [MFC], GetTopIndex", "CComboBox [MFC], InitStorage", "CComboBox [MFC], InsertString", "CComboBox [MFC], LimitText", "CComboBox [MFC], MeasureItem", "CComboBox [MFC], Paste", "CComboBox [MFC], ResetContent", "CComboBox [MFC], SelectString", "CComboBox [MFC], SetCueBanner", "CComboBox [MFC], SetCurSel", "CComboBox [MFC], SetDroppedWidth", "CComboBox [MFC], SetEditSel", "CComboBox [MFC], SetExtendedUI", "CComboBox [MFC], SetHorizontalExtent", "CComboBox [MFC], SetItemData", "CComboBox [MFC], SetItemDataPtr", "CComboBox [MFC], SetItemHeight", "CComboBox [MFC], SetLocale", "CComboBox [MFC], SetMinVisibleItems", "CComboBox [MFC], SetTopIndex", "CComboBox [MFC], ShowDropDown"]
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComboBox Class
 
@@ -105,7 +98,7 @@ If you want to handle Windows notification messages sent by a combo box to its p
 
 Each message-map entry takes the following form:
 
-**ON_**Notification **(**`id`**,**`memberFxn`**)**
+**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
 
 where `id` specifies the child-window ID of the combo-box control sending the notification and `memberFxn` is the name of the parent member function you have written to handle the notification.
 
@@ -228,7 +221,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 ### Parameters
 
 *lpCompareItemStruct*<br/>
-A long pointer to a [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) structure.
+A long pointer to a [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) structure.
 
 ### Return Value
 
@@ -280,7 +273,7 @@ virtual BOOL Create(
 Specifies the style of the combo box. Apply any combination of [combo-box styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) to the box.
 
 *rect*<br/>
-Points to the position and size of the combo box. Can be a [RECT structure](../../mfc/reference/rect-structure1.md) or a `CRect` object.
+Points to the position and size of the combo box. Can be a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) or a `CRect` object.
 
 *pParentWnd*<br/>
 Specifies the combo box's parent window (usually a `CDialog`). It must not be NULL.
@@ -347,7 +340,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### Parameters
 
 *lpDeleteItemStruct*<br/>
-A long pointer to a Windows [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) structure that contains information about the deleted item. See [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) for a description of this structure.
+A long pointer to a Windows [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) structure that contains information about the deleted item. See [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) for a description of this structure.
 
 ### Remarks
 
@@ -439,7 +432,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.
+A pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -612,7 +605,7 @@ void GetDroppedControlRect(LPRECT lprect) const;
 ### Parameters
 
 *lprect*<br/>
-Points to the [RECT structure](../../mfc/reference/rect-structure1.md) that is to receive the coordinates.
+Points to the [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that is to receive the coordinates.
 
 ### Example
 
@@ -1004,7 +997,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Parameters
 
 *lpMeasureItemStruct*<br/>
-A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.
+A long pointer to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) structure.
 
 ### Remarks
 
@@ -1452,9 +1445,9 @@ This member function has no effect on a combo box created with the [CBS_SIMPLE](
 
   See the example for [CComboBox::GetDroppedState](#getdroppedstate).
 
-## See Also
+## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

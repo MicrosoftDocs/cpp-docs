@@ -1,16 +1,9 @@
 ---
-title: "CRuntimeClass Structure | Microsoft Docs"
-ms.custom: ""
+title: "CRuntimeClass Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRuntimeClass"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRuntimeClass structure [MFC]", "dynamic class information [MFC]", "runtime [MFC], class information", "run-time class [MFC], CRuntimeClass structure"]
 ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRuntimeClass Structure
 
@@ -119,7 +112,6 @@ Call this function to determine if the calling class is derived from the class s
 
 ```
 BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
-
 ```
 
 ### Parameters
@@ -212,7 +204,7 @@ For more information on schema numbers, see the [IMPLEMENT_SERIAL](run-time-obje
 
   See the example for [IsDerivedFrom](#isderivedfrom).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#getruntimeclass)<br/>
@@ -221,4 +213,3 @@ For more information on schema numbers, see the [IMPLEMENT_SERIAL](run-time-obje
 [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic)<br/>
 [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)<br/>
 [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)
-

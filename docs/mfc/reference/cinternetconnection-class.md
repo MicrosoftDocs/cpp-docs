@@ -1,16 +1,9 @@
 ---
-title: "CInternetConnection Class | Microsoft Docs"
-ms.custom: ""
+title: "CInternetConnection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CInternetConnection", "AFXINET/CInternetConnection", "AFXINET/CInternetConnection::CInternetConnection", "AFXINET/CInternetConnection::GetContext", "AFXINET/CInternetConnection::GetServerName", "AFXINET/CInternetConnection::GetSession"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CInternetConnection [MFC], CInternetConnection", "CInternetConnection [MFC], GetContext", "CInternetConnection [MFC], GetServerName", "CInternetConnection [MFC], GetSession"]
 ms.assetid: 62a5d1c3-8471-4e36-a064-48831829b2a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CInternetConnection Class
 
@@ -150,8 +143,7 @@ Use this operator to get the API-level handle for the current Internet session.
 operator HINTERNET() const;
 ```
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

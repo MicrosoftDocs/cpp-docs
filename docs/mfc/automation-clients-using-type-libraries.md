@@ -1,16 +1,9 @@
 ---
-title: "Automation Clients: Using Type Libraries | Microsoft Docs"
-ms.custom: ""
+title: "Automation Clients: Using Type Libraries"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["MkTypLib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["clients, Automation", "dispatch class [MFC]", "Automation clients, type libraries", "type libraries, Automation clients", "ODL (Object Description Language)", "ODL files", "classes [MFC], dispatch", "MkTypLib tool", ".odl files"]
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Automation Clients: Using Type Libraries
 
@@ -49,7 +42,6 @@ Visual C++ automatically maintains this type-library file for you if you chose t
 
    The wizard will then write the code for your dispatch classes using the specified class and file names.
 
-## See Also
+## See also
 
 [Automation Clients](../mfc/automation-clients.md)
-

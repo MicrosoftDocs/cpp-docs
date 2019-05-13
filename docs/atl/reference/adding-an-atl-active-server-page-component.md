@@ -1,15 +1,8 @@
 ---
-title: "Adding an ATL Active Server Page Component | Microsoft Docs"
-ms.custom: ""
+title: "Adding an ATL Active Server Page Component"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ASP components, adding", "ASP components", "ATL, ASP components", "ATL ASP components"]
 ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Active Server Page Component
 
@@ -31,7 +24,7 @@ Active Server Pages components are part of the Internet Information Services arc
 
 1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the **Templates** pane, click **ATL Active Server Page Component**, and then click **Open** to display the [ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md).
 
-## See Also
+## See also
 
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Adding a New Interface in an ATL Project](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Item States Overview | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Item States Overview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["states, CTreeCtrl items", "tree controls [MFC], item states overview", "CTreeCtrl class [MFC], item states"]
 ms.assetid: 2db11ae0-0d87-499d-8c1f-5e0dbe9e94c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Item States Overview
 
@@ -25,8 +18,7 @@ Another example of changing the state would be to set an item's overlay image. T
 
 To set an item's state image, *nStateMask* must include the `TVIS_STATEIMAGEMASK` value, and *nState* must include the one-based index of the state image shifted left 12 bits by using the [INDEXTOSTATEIMAGEMASK](/windows/desktop/api/commctrl/nf-commctrl-indextostateimagemask) macro. The index can be 0 to specify no state image. For more information about overlay and state images, see [Tree Control Image Lists](../mfc/tree-control-image-lists.md).
 
-## See Also
+## See also
 
 [Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

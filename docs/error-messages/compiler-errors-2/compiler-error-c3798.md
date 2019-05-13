@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3798 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3798"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3798"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3798"]
 ms.assetid: b2f8b1d8-8812-49b8-a346-28e48f02ba5c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3798
 
@@ -18,11 +11,11 @@ ms.workload: ["cplusplus"]
 
 A property was declared incorrectly. For more information, see
 
-- [property](../../windows/property-cpp-component-extensions.md)
+- [property](../../extensions/property-cpp-component-extensions.md)
 
-- [abstract](../../windows/abstract-cpp-component-extensions.md)
+- [abstract](../../extensions/abstract-cpp-component-extensions.md)
 
-- [sealed](../../windows/sealed-cpp-component-extensions.md)
+- [sealed](../../extensions/sealed-cpp-component-extensions.md)
 
 ## Example
 

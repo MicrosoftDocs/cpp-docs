@@ -1,19 +1,12 @@
 ---
-title: "_getdcwd, _wgetdcwd | Microsoft Docs"
-ms.custom: ""
+title: "_getdcwd, _wgetdcwd"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_getdcwd", "_wgetdcwd"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wgetdcwd", "getdcwd", "_getdcwd", "tgetdcwd", "_wgetdcwd", "_tgetdcwd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wgetdcwd function", "working directory", "getdcwd function", "_getdcwd function", "_wgetdcwd function", "current working directory", "directories [C++], current working"]
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _getdcwd, _wgetdcwd
 
@@ -39,7 +32,7 @@ wchar_t *_wgetdcwd(
 *drive*<br/>
 A non-negative integer that specifies the drive (0 = default drive, 1 = A, 2 = B, and so on).
 
-If the specified drive is not available, or the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) cannot be determined, the invalid-parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), is invoked.
+If the specified drive isn't available, or the kind of drive (for example, removable, fixed, CD-ROM, RAM disk, or network drive) can't be determined, the invalid-parameter handler is invoked. For more information, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 *buffer*<br/>
 Storage location for the path, or **NULL**.
@@ -49,13 +42,13 @@ If **NULL** is specified, this function allocates a buffer of at least *maxlen* 
 *maxlen*<br/>
 A nonzero positive integer that specifies the maximum length of the path, in characters: **char** for **_getdcwd** and **wchar_t** for **_wgetdcwd**.
 
-If *maxlen* is not greater than zero, the invalid-parameter handler, which is described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), is invoked.
+If *maxlen* is less than or equal to zero, the invalid-parameter handler is invoked. For more information, see [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 ## Return Value
 
 Pointer to a string that represents the full path of the current working directory on the specified drive, or **NULL**, which indicates an error.
 
-If *buffer* is specified as **NULL** and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to **ENOMEM**. If the length of the path,  which includes the terminating null character, exceeds *maxlen*, an error occurs and **errno** is set to **ERANGE**. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+If *buffer* is specified as **NULL** and there is insufficient memory to allocate *maxlen* characters, an error occurs and **errno** is set to **ENOMEM**. If the length of the path including the terminating null character exceeds *maxlen*, an error occurs, and **errno** is set to **ERANGE**. For more information about these error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 

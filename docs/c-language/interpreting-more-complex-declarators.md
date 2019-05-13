@@ -1,15 +1,8 @@
 ---
-title: "Interpreting More Complex Declarators | Microsoft Docs"
-ms.custom: ""
+title: "Interpreting More Complex Declarators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["complex declarators", "interpreting complex declarators"]
 ms.assetid: dd5b7019-c86d-4645-a5cc-21f834de6f4a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interpreting More Complex Declarators
 
@@ -125,6 +118,6 @@ union sign *(*var[5])[5]; /* Array of pointers to arrays
 
 This example shows how the placement of parentheses changes the meaning of the declaration. In this example, `var` is a five-element array of pointers to five-element arrays of pointers to unions. For examples of how to use `typedef` to avoid complex declarations, see [Typedef Declarations](../c-language/typedef-declarations.md).
 
-## See Also
+## See also
 
 [Declarations and Types](../c-language/declarations-and-types.md)

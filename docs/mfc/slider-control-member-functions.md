@@ -1,15 +1,8 @@
 ---
-title: "Slider Control Member Functions | Microsoft Docs"
-ms.custom: ""
+title: "Slider Control Member Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSliderCtrl class [MFC], methods", "slider controls [MFC], member functions"]
 ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Slider Control Member Functions
 
@@ -33,8 +26,7 @@ An application can use member functions to retrieve the dimensions of a slider c
 
 If a slider control has the TBS_ENABLESELRANGE style, the user can select a range of contiguous values from it. A number of member functions allow the selection range to be adjusted dynamically. The [SetSelection](../mfc/reference/csliderctrl-class.md#setselection) member function sets the starting and ending positions of a selection. When the user has finished setting a selection range, an application can retrieve the settings by using the [GetSelection](../mfc/reference/csliderctrl-class.md#getselection) member function. To clear a user's selection, use the [ClearSel](../mfc/reference/csliderctrl-class.md#clearsel) member function.
 
-## See Also
+## See also
 
 [Using CSliderCtrl](../mfc/using-csliderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2031 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2031"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2031"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2031"]
 ms.assetid: d5b11f58-4a00-42be-9062-8fa8728e6306
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2031
 

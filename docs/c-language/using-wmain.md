@@ -1,15 +1,8 @@
 ---
-title: "Using wmain | Microsoft Docs"
-ms.custom: ""
+title: "Using wmain"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["wmain function"]
 ms.assetid: d0300812-adc4-40c6-bba3-b2da25468c80
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using wmain
 
@@ -35,6 +28,6 @@ For more information on the MBCS environment, see [Internationalization](../c-ru
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [main Function and Program Execution](../c-language/main-function-and-program-execution.md)

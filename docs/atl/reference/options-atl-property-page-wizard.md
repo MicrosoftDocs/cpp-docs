@@ -1,18 +1,20 @@
 ---
-title: "Options, ATL Property Page Wizard | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
+title: "Options, ATL Property Page Wizard"
+ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.ppg.options"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Property Page Wizard, options"]
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Options, ATL Property Page Wizard
+
+
+::: moniker range="vs-2019"
+
+The ATL Property Page wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Use this page of the wizard to define the threading model and aggregation level of property page you are creating.
 
@@ -37,8 +39,9 @@ Use this page of the wizard to define the threading model and aggregation level 
    |**No**|Create a property page that cannot be aggregated.|
    |**Only**|Create a property page that can only be instantiated through aggregation.|
 
-## See Also
+::: moniker-end
+
+## See also
 
 [ATL Property Page Wizard](../../atl/reference/atl-property-page-wizard.md)<br/>
 [Strings, ATL Property Page Wizard](../../atl/reference/strings-atl-property-page-wizard.md)
-

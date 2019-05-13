@@ -12,7 +12,7 @@ public:
    {
    }
    
-   // Retrives the message buffer that holds output messages.
+   // Retrieves the message buffer that holds output messages.
    concurrency::unbounded_buffer<int>& output()
    {
       return _output;

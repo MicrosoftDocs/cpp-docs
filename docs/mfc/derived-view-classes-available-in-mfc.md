@@ -1,15 +1,8 @@
 ---
-title: "Derived View Classes Available in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Derived View Classes Available in MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CView class [MFC], classes derived from", "classes [MFC], derived", "derived classes [MFC], view classes", "view classes [MFC], derived"]
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Derived View Classes Available in MFC
 
@@ -37,7 +30,6 @@ The following table shows MFC's view classes and their relationships to one anot
 
 To use these classes in your application, derive the application's view classes from them. For related information, see [Scrolling and Scaling Views](../mfc/scrolling-and-scaling-views.md). For more information on the database classes, see [Overview: Database Programming](../data/data-access-programming-mfc-atl.md).
 
-## See Also
+## See also
 
 [Using Views](../mfc/using-views.md)
-

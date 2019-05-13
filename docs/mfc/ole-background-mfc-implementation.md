@@ -1,16 +1,9 @@
 ---
-title: "OLE Background: MFC Implementation | Microsoft Docs"
-ms.custom: ""
+title: "OLE Background: MFC Implementation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["IMarshall", "IMoniker"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC libraries, implementing", "OLE MFC library implementation", "OLE IMarshal interface", "IMoniker interface, MFC", "IMarshall class [MFC]", "OLE, compound files", "OLE IMoniker interface", "OLE IUnknown"]
 ms.assetid: 2b67016a-d78e-4d60-925f-c28ec8fb6180
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Background: MFC Implementation
 
@@ -39,8 +32,7 @@ In-process servers and object handlers allow implementation of visual editing da
 
 For more information on how the Microsoft Foundation OLE classes implement OLE interfaces, see MFC Technical Notes [38](../mfc/tn038-mfc-ole-iunknown-implementation.md), [39](../mfc/tn039-mfc-ole-automation-implementation.md), and [40](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md).
 
-## See Also
+## See also
 
 [OLE Background](../mfc/ole-background.md)<br/>
 [OLE Background: Implementation Strategies](../mfc/ole-background-implementation-strategies.md)
-

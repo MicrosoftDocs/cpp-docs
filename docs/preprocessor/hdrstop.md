@@ -1,16 +1,9 @@
 ---
-title: "hdrstop | Microsoft Docs"
-ms.custom: ""
+title: "hdrstop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["hdrstop_CPP", "vc-pragma.hdrstop"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["hdrstop pragma", "pragmas, hdrstop"]
 ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # hdrstop
 Gives you additional control over precompilation file names and over the location at which the compilation state is saved.
@@ -75,6 +68,6 @@ __inline Disp( char *szToDisplay )   // Define an inline function
 
 In this example, the **hdrstop** pragma appears after two files have been included and an inline function has been defined. This might, at first, seem to be an odd placement for the pragma. Consider, however, that using the manual precompilation options, `/Yc` and `/Yu`, with the **hdrstop** pragma makes it possible for you to precompile entire source files — even inline code. The Microsoft compiler does not limit you to precompiling only data declarations.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

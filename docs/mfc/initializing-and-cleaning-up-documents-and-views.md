@@ -1,15 +1,8 @@
 ---
-title: "Initializing and Cleaning Up Documents and Views | Microsoft Docs"
-ms.custom: ""
+title: "Initializing and Cleaning Up Documents and Views"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["initializing documents [MFC]", "views [MFC], cleaning up", "documents [MFC], initializing", "documents [MFC], cleaning up", "views [MFC], initializing", "initializing objects [MFC], document objects", "document objects [MFC], life cycle of", "initializing views [MFC]"]
 ms.assetid: 95d6f09b-a047-4079-856a-ae7d0548e9d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializing and Cleaning Up Documents and Views
 
@@ -42,7 +35,6 @@ In an SDI application, step 1 is performed once, when the document is first crea
 
 - [Cleaning Up Documents and Views](../mfc/cleaning-up-documents-and-views.md)
 
-## See Also
+## See also
 
 [Document/View Architecture](../mfc/document-view-architecture.md)
-

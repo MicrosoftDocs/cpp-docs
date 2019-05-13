@@ -1,16 +1,9 @@
 ---
-title: "task_completion_event Class | Microsoft Docs"
-ms.custom: ""
+title: "task_completion_event Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["task_completion_event", "PPLTASKS/concurrency::task_completion_event", "PPLTASKS/concurrency::task_completion_event::task_completion_event", "PPLTASKS/concurrency::task_completion_event::set", "PPLTASKS/concurrency::task_completion_event::set_exception"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["task_completion_event class"]
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # task_completion_event Class
 
@@ -119,6 +112,6 @@ Constructs a `task_completion_event` object.
 task_completion_event();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

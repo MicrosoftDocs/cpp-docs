@@ -1,16 +1,9 @@
 ---
-title: "-D (Preprocessor Definitions) | Microsoft Docs"
-ms.custom: ""
+title: "/D (Preprocessor Definitions)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCNMakeTool.PreprocessorDefinitions", "VC.Project.VCCLCompilerTool.PreprocessorDefinitions", "/d"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor definition symbols", "constants, defining", "macros, compiling", "/D compiler option [C++]", "-D compiler option [C++]", "D compiler option [C++]"]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /D (Preprocessor Definitions)
 
@@ -54,7 +47,7 @@ CL /DTEST=%% TEST.C
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. In the left pane, select **Configuration Properties**, **C/C++**, **Preprocessor**.
 
@@ -87,10 +80,10 @@ int main( )
 TEST defined 1
 ```
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/U, /u (Undefine Symbols)](../../build/reference/u-u-undefine-symbols.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[/U, /u (Undefine Symbols)](u-u-undefine-symbols.md)<br/>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br/>
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)

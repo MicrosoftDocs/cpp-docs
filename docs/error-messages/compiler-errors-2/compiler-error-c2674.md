@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C2674 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2674"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2674"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2674"]
 ms.assetid: 7cbd70d8-d992-44d7-a5cb-dd8cf9c759d2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2674
 
 a generic declaration is not allowed in this context
 
-A generic was declared incorrectly. For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+A generic was declared incorrectly. For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 

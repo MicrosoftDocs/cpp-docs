@@ -1,16 +1,9 @@
 ---
-title: "&lt;cstring&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cstring&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cstring>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<cstring> header", "cstring header"]
 ms.assetid: d665429f-5d39-4712-9c0a-68c8abcc3536
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cstring&gt;
 
@@ -20,7 +13,6 @@ Includes the Standard C library header \<string.h> and adds the associated names
 
 ```cpp
 #include <cstring>
-
 ```
 
 ## Remarks

@@ -1,15 +1,8 @@
 ---
-title: "Linker Tools Error LNK2038 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK2038"
 ms.date: "12/15/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK2038"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2038"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2038
 
@@ -24,9 +17,9 @@ This error can occur when an object file in your project is out-of-date. Before 
 Visual Studio defines the following symbols to prevent the linking of incompatible code, which can cause run-time errors or other unexpected behavior.
 
 - `_MSC_VER`
-   Indicates the major and minor version numbers of the Visual C++ compiler that's used to build an app or library. Code that's compiled by using one version of the Visual C++ compiler is incompatible with code that's compiled by using a version that has different major and minor version numbers. For more information, see `_MSC_VER` in [Predefined Macros](../../preprocessor/predefined-macros.md).
+   Indicates the major and minor version numbers of the Microsoft C++ compiler (MSVC) that's used to build an app or library. Code that's compiled by using one version of the MSVC is incompatible with code that's compiled by using a version that has different major and minor version numbers. For more information, see `_MSC_VER` in [Predefined Macros](../../preprocessor/predefined-macros.md).
 
-   If you're linking to a library that's not compatible with the version of the Visual C++ compiler that you're using, and you cannot acquire or build a compatible version of the library, you can use an earlier version of the compiler to build your project: change the **Platform Toolset** property of the project to the earlier toolset. For more information, see [How to: Modify the Target Framework and Platform Toolset](../../build/how-to-modify-the-target-framework-and-platform-toolset.md).
+   If you're linking to a library that's not compatible with the version of the MSVC that you're using, and you cannot acquire or build a compatible version of the library, you can use an earlier version of the compiler to build your project: change the **Platform Toolset** property of the project to the earlier toolset. For more information, see [How to: Modify the Target Framework and Platform Toolset](../../build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
 - `_ITERATOR_DEBUG_LEVEL`
    Indicates the level of security and debugging features that are enabled in the C++ Standard Library. These features can change the representation of certain C++ Standard Library objects and thereby make them incompatible with those that use different security and debugging features. For more information, see [_ITERATOR_DEBUG_LEVEL](../../standard-library/iterator-debug-level.md).

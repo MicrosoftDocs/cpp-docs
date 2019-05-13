@@ -1,16 +1,9 @@
 ---
-title: "__outdwordstring | Microsoft Docs"
-ms.custom: ""
+title: "__outdwordstring"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__outdwordstring"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["outsd instruction", "__outdwordstring intrinsic", "rep outsd instruction"]
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __outdwordstring
 
@@ -21,10 +14,10 @@ Generates the `rep outsd` instruction, which sends `Count` doublewords starting 
 ## Syntax
 
 ```
-void __outdwordstring( 
-   unsigned short Port, 
-   unsigned long* Buffer, 
-   unsigned long Count 
+void __outdwordstring(
+   unsigned short Port,
+   unsigned long* Buffer,
+   unsigned long Count
 );
 ```
 
@@ -53,6 +46,6 @@ This routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

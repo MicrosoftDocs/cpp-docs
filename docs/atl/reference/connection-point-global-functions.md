@@ -1,16 +1,9 @@
 ---
-title: "Connection Point Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "Connection Point Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::AtlAdvise", "atlbase/ATL::AtlUnadvise", "atlbase/ATL::AtlAdviseSinkMap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], global functions"]
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Connection Point Global Functions
 
@@ -130,7 +123,7 @@ A standard HRESULT value.
 
 [!code-cpp[NVC_ATL_Windowing#92](../../atl/codesnippet/cpp/connection-point-global-functions_3.h)]
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Connection Point Macros](../../atl/reference/connection-point-macros.md)

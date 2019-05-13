@@ -1,16 +1,9 @@
 ---
-title: "CBaseTransition Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CBaseTransition Class"
+ms.date: "03/27/2019"
 f1_keywords: ["CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboard", "AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboardAtKeyframes", "AFXANIMATIONCONTROLLER/CBaseTransition::Clear", "AFXANIMATIONCONTROLLER/CBaseTransition::Create", "AFXANIMATIONCONTROLLER/CBaseTransition::GetEndKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::GetRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::GetStartKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::GetTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::GetType", "AFXANIMATIONCONTROLLER/CBaseTransition::IsAdded", "AFXANIMATIONCONTROLLER/CBaseTransition::SetKeyframes", "AFXANIMATIONCONTROLLER/CBaseTransition::SetRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::m_bAdded", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pEndKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pStartKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::m_transition", "AFXANIMATIONCONTROLLER/CBaseTransition::m_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CBaseTransition [MFC], CBaseTransition", "CBaseTransition [MFC], AddToStoryboard", "CBaseTransition [MFC], AddToStoryboardAtKeyframes", "CBaseTransition [MFC], Clear", "CBaseTransition [MFC], Create", "CBaseTransition [MFC], GetEndKeyframe", "CBaseTransition [MFC], GetRelatedVariable", "CBaseTransition [MFC], GetStartKeyframe", "CBaseTransition [MFC], GetTransition", "CBaseTransition [MFC], GetType", "CBaseTransition [MFC], IsAdded", "CBaseTransition [MFC], SetKeyframes", "CBaseTransition [MFC], SetRelatedVariable", "CBaseTransition [MFC], m_bAdded", "CBaseTransition [MFC], m_pEndKeyframe", "CBaseTransition [MFC], m_pRelatedVariable", "CBaseTransition [MFC], m_pStartKeyframe", "CBaseTransition [MFC], m_transition", "CBaseTransition [MFC], m_type"]
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBaseTransition Class
 
@@ -34,8 +27,8 @@ class CBaseTransition : public CObject;
 
 |Name|Description|
 |----------|-----------------|
-|[CBaseTransition::CBaseTransition](#cbasetransition)|Constructs a base transtion object.|
-|[CBaseTransition::~CBaseTransition](#cbasetransition__~cbasetransition)|The destructor. Called when a transition object is being destroyed.|
+|[CBaseTransition::CBaseTransition](#cbasetransition)|Constructs a base transition object.|
+|[CBaseTransition::~CBaseTransition](#_dtorcbasetransition)|The destructor. Called when a transition object is being destroyed.|
 
 ### Public Methods
 
@@ -131,7 +124,7 @@ Applies the transition to the related variable in the storyboard. If the start k
 
 ##  <a name="cbasetransition"></a>  CBaseTransition::CBaseTransition
 
-Constructs a base transtion object.
+Constructs a base transition object.
 
 ```
 CBaseTransition();
@@ -189,7 +182,7 @@ A valid pointer to a keyframe, or NULL if a transition should not be inserted be
 
 ### Remarks
 
-This method can be used to access a keyframe object that was previously set by SetKeyframes. It's called by top level code when transitions are being added to storyboard.
+This method can be used to access a keyframe object that was previously set by SetKeyframes. It's called by top-level code when transitions are being added to storyboard.
 
 ##  <a name="getrelatedvariable"></a>  CBaseTransition::GetRelatedVariable
 
@@ -221,7 +214,7 @@ A valid pointer to a keyframe, or NULL if a transition should not start after a 
 
 ### Remarks
 
-This method can be used to access a keyframe object that was previously set by SetKeyframes. It's called by top level code when transitions are being added to storyboard.
+This method can be used to access a keyframe object that was previously set by SetKeyframes. It's called by top-level code when transitions are being added to storyboard.
 
 ##  <a name="gettransition"></a>  CBaseTransition::GetTransition
 
@@ -281,7 +274,7 @@ Returns TRUE if a transition has been added to a storyboard, otherwise FALSE.
 
 ### Remarks
 
-This flag is set internally when the top level code adds transitions to storyboard.
+This flag is set internally when the top-level code adds transitions to storyboard.
 
 ##  <a name="m_badded"></a>  CBaseTransition::m_bAdded
 
@@ -382,6 +375,6 @@ enum TRANSITION_TYPE;
 
 A transition type is set in the constructor of specific transition. For example, CSinusoidalTransitionFromRange sets its type to SINUSOIDAL_FROM_RANGE.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -1,16 +1,9 @@
 ---
-title: "Message Handling and Command Targets | Microsoft Docs"
-ms.custom: ""
+title: "Message Handling and Command Targets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["IOleCommandTarget"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["command targets [MFC]", "message handling [MFC], active documents", "IOleCommandTarget interface [MFC]", "command routing [MFC], command targets"]
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Handling and Command Targets
 
@@ -45,7 +38,6 @@ interface IOleCommandTarget : IUnknown
 
 The `QueryStatus` method here tests whether a particular set of commands, the set being identified with a **GUID**, is supported. This call fills an array of **OLECMD** values (structures) with the supported list of commands as well as returning text describing the name of a command and/or status information. When the caller wishes to invoke a command, it can pass the command (and the set **GUID**) to `Exec` along with options and arguments, getting back a return value.
 
-## See Also
+## See also
 
 [Active Document Containers](../mfc/active-document-containers.md)
-

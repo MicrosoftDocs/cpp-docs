@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2357 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2357"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2357"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2357"]
 ms.assetid: d1083945-0ea2-4385-9e66-8c665978806c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2357
 

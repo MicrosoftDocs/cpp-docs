@@ -1,15 +1,8 @@
 ---
-title: "Programmatically Create a Table in an ODBC Data Source | Microsoft Docs"
-ms.custom: ""
+title: "Programmatically Create a Table in an ODBC Data Source"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["programmatically creating ODBC tables [C++]", "tables [C++]", "ODBC data sources, creating tables in", "tables [C++], creating programmatically"]
 ms.assetid: 9ca68fb5-c3df-424a-a75c-e3fb01cc1b18
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Programmatically Creating a Table in an ODBC Data Source
 
@@ -29,6 +22,6 @@ This code example creates a table called "OFFICES" in the Microsoft Access data 
 > [!NOTE]
 >  The field types specified in the **CREATE TABLE** SQL statement might vary according to the ODBC driver that you are using. The Microsoft Query program (distributed with Visual C++ 1.5) is one way to discover what field types are available for a data source. In Microsoft Query, click **File**, click **Table_Definition**, select a table from a data source, and look at the type shown in the **Type** combo box. SQL syntax also exists to create indexes.
 
-## See Also
+## See also
 
 [Data Source (ODBC)](../../data/odbc/data-source-odbc.md)

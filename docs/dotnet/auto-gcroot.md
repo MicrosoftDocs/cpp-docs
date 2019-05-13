@@ -1,16 +1,10 @@
 ---
-title: "auto_gcroot | Microsoft Docs"
-ms.custom: ""
+title: "auto_gcroot"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_gcroot"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_gcroot"]
 ms.assetid: 1084ff0f-3094-4d19-8646-1314c0733355
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot
 
@@ -30,6 +24,6 @@ In this header file:
 
 [swap Function (auto_gcroot)](../dotnet/swap-function-auto-gcroot.md)
 
-## See Also
+## See also
 
 [C++ Support Library](../dotnet/cpp-support-library.md)

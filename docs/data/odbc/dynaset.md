@@ -1,15 +1,8 @@
 ---
-title: "Dynaset | Microsoft Docs"
-ms.custom: ""
+title: "Dynaset"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets, dynasets", "ODBC cursor library [ODBC], dynasets", "keyset-driven cursors in dynasets", "cursors [ODBC], keyset-driven cursors in dynasets", "cursor library [ODBC], dynaset availability", "recordsets [C++], dynasets", "dynasets"]
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynaset
 
@@ -65,6 +58,6 @@ Unlike snapshots, which use intermediate storage maintained by the ODBC cursor l
 
 For a list of ODBC drivers included in this version of Visual C++ and for information about obtaining additional drivers, see [ODBC Driver List](../../data/odbc/odbc-driver-list.md).
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

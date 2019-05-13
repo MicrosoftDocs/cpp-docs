@@ -1,16 +1,9 @@
 ---
-title: ".MODEL | Microsoft Docs"
-ms.custom: ""
+title: ".MODEL"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".MODEL"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".MODEL directive"]
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .MODEL
 
@@ -58,12 +51,12 @@ The following example demonstrates the use of the `.MODEL` directive.
 ```asm
 ; file simple.asm
 ; For x86 (32-bit), assemble with debug information:
-;   ml -c -Zi simple.asm
+;   ml -c -Zi simple.asm
 ; For x64 (64-bit), assemble with debug information:
-;   ml64 -c -DX64 -Zi simple.asm
+;   ml64 -c -DX64 -Zi simple.asm
 ;
 ; In this sample, the 'X64' define excludes source not used
-;  when targeting the x64 architecture
+;  when targeting the x64 architecture
 
 ifndef X64
 .686p
@@ -78,8 +71,8 @@ endif
 ; user code
 
 fxn PROC public
-  xor eax, eax ; zero function return value
-  ret
+  xor eax, eax ; zero function return value
+  ret
 fxn ENDP
 
 end
@@ -88,4 +81,3 @@ end
 ## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-

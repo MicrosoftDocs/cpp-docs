@@ -1,15 +1,8 @@
 ---
-title: "Adding Functionality to the Composite Control | Microsoft Docs"
-ms.custom: ""
+title: "Adding Functionality to the Composite Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handlers [C++], ActiveX controls", "composite controls, handling events", "ActiveX controls [C++], events"]
 ms.assetid: 98f85681-9564-480d-af38-03f9733fe58b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Functionality to the Composite Control
 
@@ -28,7 +21,6 @@ After inserting an ActiveX control in the dialog resource, right-click the contr
 
 Connection points for ActiveX controls on the composite control are automatically connected and disconnected via calls to [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).
 
-## See Also
+## See also
 
 [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)
-

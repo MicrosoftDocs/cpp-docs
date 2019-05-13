@@ -1,19 +1,12 @@
 ---
-title: "_aligned_msize | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_msize"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_msize"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_aligned_msize", "aligned_msize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_msize function", "_aligned_msize function"]
 ms.assetid: 10995edc-2110-4212-9ca9-5e0220a464f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_msize
 

@@ -1,16 +1,9 @@
 ---
-title: "Debugging and Error Reporting Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "Debugging and Error Reporting Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcomcli/ATL::AtlHresultFromLastError", "atlcom/ATL::AtlReportError", "atldef/ATL::AtlThrow"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [ATL], error reporting"]
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Debugging and Error Reporting Global Functions
 
@@ -218,8 +211,7 @@ If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure inste
 
 **Header:** atldef.h
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Debugging and Error Reporting Macros](../../atl/reference/debugging-and-error-reporting-macros.md)
-

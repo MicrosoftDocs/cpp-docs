@@ -1,15 +1,8 @@
 ---
-title: "C Extended Storage-Class Attributes | Microsoft Docs"
-ms.custom: ""
+title: "C Extended Storage-Class Attributes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C]", "extended attributes", "extended storage-class attributes", "storage class specifiers, C storage classes"]
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Extended Storage-Class Attributes
 
@@ -42,6 +35,6 @@ The thread, naked, dllimport, and dllexport storage-class attributes are a prope
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Declarations and Types](../c-language/declarations-and-types.md)

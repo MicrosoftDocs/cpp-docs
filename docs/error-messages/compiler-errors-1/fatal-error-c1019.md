@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1019 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1019"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1019"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1019"]
 ms.assetid: c4f8968b-bc62-4200-b3ca-69d06c163236
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1019
 

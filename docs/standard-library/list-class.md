@@ -1,16 +1,9 @@
 ---
-title: "list Class | Microsoft Docs"
-ms.custom: ""
+title: "list Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["list/std::list", "list/std::list::allocator_type", "list/std::list::const_iterator", "list/std::list::const_pointer", "list/std::list::const_reference", "list/std::list::const_reverse_iterator", "list/std::list::difference_type", "list/std::list::iterator", "list/std::list::pointer", "list/std::list::reference", "list/std::list::reverse_iterator", "list/std::list::size_type", "list/std::list::value_type", "list/std::list::assign", "list/std::list::back", "list/std::list::begin", "list/std::list::cbegin", "list/std::list::cend", "list/std::list::clear", "list/std::list::crbegin", "list/std::list::crend", "list/std::list::emplace", "list/std::list::emplace_back", "list/std::list::emplace_front", "list/std::list::empty", "list/std::list::end", "list/std::list::erase", "list/std::list::front", "list/std::list::get_allocator", "list/std::list::insert", "list/std::list::max_size", "list/std::list::merge", "list/std::list::pop_back", "list/std::list::pop_front", "list/std::list::push_back", "list/std::list::push_front", "list/std::list::rbegin", "list/std::list::remove", "list/std::list::remove_if", "list/std::list::rend", "list/std::list::resize", "list/std::list::reverse", "list/std::list::size", "list/std::list::sort", "list/std::list::splice", "list/std::list::swap", "list/std::list::unique"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::list [C++]", "std::list [C++], allocator_type", "std::list [C++], const_iterator", "std::list [C++], const_pointer", "std::list [C++], const_reference", "std::list [C++], const_reverse_iterator", "std::list [C++], difference_type", "std::list [C++], iterator", "std::list [C++], pointer", "std::list [C++], reference", "std::list [C++], reverse_iterator", "std::list [C++], size_type", "std::list [C++], value_type", "std::list [C++], assign", "std::list [C++], back", "std::list [C++], begin", "std::list [C++], cbegin", "std::list [C++], cend", "std::list [C++], clear", "std::list [C++], crbegin", "std::list [C++], crend", "std::list [C++], emplace", "std::list [C++], emplace_back", "std::list [C++], emplace_front", "std::list [C++], empty", "std::list [C++], end", "std::list [C++], erase", "std::list [C++], front", "std::list [C++], get_allocator", "std::list [C++], insert", "std::list [C++], max_size", "std::list [C++], merge", "std::list [C++], pop_back", "std::list [C++], pop_front", "std::list [C++], push_back", "std::list [C++], push_front", "std::list [C++], rbegin", "std::list [C++], remove", "std::list [C++], remove_if", "std::list [C++], rend", "std::list [C++], resize", "std::list [C++], reverse", "std::list [C++], size", "std::list [C++], sort", "std::list [C++], splice", "std::list [C++], swap", "std::list [C++], unique"]
 ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # list Class
 
@@ -2361,7 +2354,6 @@ int main()
     cout << "c2 = ";
     print(c2);
 }
-
 ```
 
 ```Output

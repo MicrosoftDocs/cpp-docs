@@ -1,15 +1,8 @@
 ---
-title: "Provider Support for Bookmarks | Microsoft Docs"
-ms.custom: ""
+title: "Provider Support for Bookmarks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetLocate class, provider support for bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "IRowsetLocate class", "OLE DB providers, bookmark support"]
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Provider Support for Bookmarks
 
@@ -56,7 +49,7 @@ You also need to hook your map into the `CRowsetImpl` class. Add in the COM_INTE
 
 Finally, handle the `IColumnsInfo::GetColumnsInfo` call. You would normally use the PROVIDER_COLUMN_ENTRY macros to do this. However, a consumer might want to use bookmarks. You must be able to change the columns the provider returns depending on whether the consumer asks for a bookmark.
 
-To handle the `IColumnsInfo::GetColumnsInfo` call, delete the `PROVIDER_COLUMN` map in the `CTextData` class. The PROVIDER_COLUMN_MAP macro defines a function `GetColumnInfo`. You need to define your own `GetColumnInfo` function. The function declaration should look like this:
+To handle the `IColumnsInfo::GetColumnsInfo` call, delete the PROVIDER_COLUMN map in the `CTextData` class. The PROVIDER_COLUMN_MAP macro defines a function `GetColumnInfo`. Define your own `GetColumnInfo` function. The function declaration should look like this:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -74,7 +67,7 @@ class CTextData
 };
 ```
 
-Then, implement the `GetColumnInfo` function in the CustomRS.cpp file as follows:
+Then, implement the `GetColumnInfo` function in the *Custom*RS.cpp file as follows:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -115,7 +108,6 @@ ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols)
                         DBCOLUMNFLAGS_ISBOOKMARK)
          ulCols++;
       }
-
    }
 
    // Next set the other columns up.
@@ -147,9 +139,9 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
 
 `GetColumnInfo` first checks to see whether a property called `DBPROP_IRowsetLocate` is set. OLE DB has properties for each of the optional interfaces off the rowset object. If the consumer wants to use one of these optional interfaces, it sets a property to true. The provider can then check this property and take special action based on it.
 
-In your implementation, you get the property by using the pointer to the command object. The `pThis` pointer represents the rowset or command class. Because you use templates here, you have to pass this in as a `void` pointer or the code does not compile.
+In your implementation, you get the property by using the pointer to the command object. The `pThis` pointer represents the rowset or command class. Because you use templates here, you have to pass this in as a **void** pointer or the code doesn't compile.
 
-Specify a static array to contain the column information. If the consumer does not want the bookmark column, an entry in the array is wasted. You can dynamically allocate this array, but you would need to make sure to destroy it properly. This example defines and uses the macros ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX to insert the information into the array. You can add the macros to the CustomRS.H file as shown in the following code:
+Specify a static array to hold the column information. If the consumer doesn't want the bookmark column, an entry in the array is wasted. You can dynamically allocate this array, but you would need to make sure to destroy it properly. This example defines and uses the macros ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX to insert the information into the array. You can add the macros to the *Custom*RS.H file as shown in the following code:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -232,9 +224,9 @@ HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,
 }
 ```
 
-The **while** loop contains code to call the `Compare` method in the `IRowsetLocate` interface. The code you have should always pass because you are comparing the exact same bookmarks. Also, store one bookmark in a temporary variable so that you can use it after the **while** loop finishes to call the `MoveToBookmark` function in the consumer templates. The `MoveToBookmark` function calls the `GetRowsAt` method in `IRowsetLocate`.
+The **while** loop contains code to call the `Compare` method in the `IRowsetLocate` interface. The code you have should always pass because you're comparing the exact same bookmarks. Also, store one bookmark in a temporary variable so that you can use it after the **while** loop finishes to call the `MoveToBookmark` function in the consumer templates. The `MoveToBookmark` function calls the `GetRowsAt` method in `IRowsetLocate`.
 
-You also need to update the user record in the consumer. Add an entry in the class to handle a bookmark and an entry in the `COLUMN_MAP`:
+You also need to update the user record in the consumer. Add an entry in the class to handle a bookmark and an entry in the COLUMN_MAP:
 
 ```cpp
 ///////////////////////////////////////////////////////////////////////
@@ -259,8 +251,8 @@ END_ACCESSOR_MAP()
 };
 ```
 
-When you have updated the code, you should be able to build and execute the provider with the `IRowsetLocate` interface.
+When you've updated the code, you should be able to build and execute the provider with the `IRowsetLocate` interface.
 
-## See Also
+## See also
 
 [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

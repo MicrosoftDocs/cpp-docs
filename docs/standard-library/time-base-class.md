@@ -1,16 +1,9 @@
 ---
-title: "time_base Class | Microsoft Docs"
-ms.custom: ""
+title: "time_base Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["locale/std::time_base"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["time_base class"]
 ms.assetid: 9ae37f0b-9a42-496e-9870-3d9b71bab8fb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # time_base Class
 

@@ -1,16 +1,9 @@
 ---
-title: "MB_CUR_MAX | Microsoft Docs"
-ms.custom: ""
+title: "MB_CUR_MAX"
 ms.date: "10/18/2017"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["MB_CUR_MAX"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MB_CUR_MAX constant"]
 ms.assetid: fab22609-c14d-4c19-991c-bd09ff30e604
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MB_CUR_MAX
 
@@ -18,7 +11,9 @@ A macro that indicates the maximum number of bytes in a multibyte character for 
 
 ## Syntax
 
-`#include <stdlib.h>`
+```
+#include <stdlib.h>
+```
 
 ## Remarks
 
@@ -26,7 +21,7 @@ Context: ANSI multibyte- and wide-character conversion functions
 
 The value of `MB_CUR_MAX` is the maximum number of bytes in a multibyte character for the current locale.
 
-## See Also
+## See also
 
 [_mbclen, mblen, _mblen_l](../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
 [mbstowcs, _mbstowcs_l](../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>

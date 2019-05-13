@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Working with Large Data Items (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Working with Large Data Items (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["BLOB (binary large object), recordsets", "ODBC recordsets, binary large objects", "recordsets, binary large objects", "binary large objects", "CLongBinary class, using in recordsets"]
 ms.assetid: 3e80b5a8-b6e7-43c6-a816-e54befc513a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Working with Large Data Items (ODBC)
 
@@ -55,7 +48,7 @@ In turn, you use the `HGLOBAL` handle, `m_hData`, to work with the data itself, 
 > [!CAUTION]
 >  CLongBinary objects cannot be used as parameters in function calls. In addition, their implementation, which calls `::SQLGetData`, necessarily slows scrolling performance for a scrollable snapshot. This might also be true when you use an `::SQLGetData` call yourself to retrieve dynamic schema columns.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)<br/>

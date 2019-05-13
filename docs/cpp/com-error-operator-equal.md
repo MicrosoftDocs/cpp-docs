@@ -1,16 +1,9 @@
 ---
-title: "_com_error::operator = | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::operator ="
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::operator="]
-dev_langs: ["C++"]
-helpviewer_keywords: ["operator= _com_error objects", "= operator [C++], with specific Visual C++ objects", "operator = _com_error objects"]
+helpviewer_keywords: ["_com_error [C++]"]
 ms.assetid: b9cc4094-d055-450c-b45a-0a95317488f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::operator =
 

@@ -1,15 +1,8 @@
 ---
-title: "Creating an Active Document Container Application | Microsoft Docs"
-ms.custom: ""
+title: "Creating an Active Document Container Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], containers", "containers [MFC], active document", "active document containers [MFC], creating", "MFC COM, active document containment", "applications [MFC], active document container"]
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an Active Document Container Application
 
@@ -33,15 +26,15 @@ The simplest and most recommended way to create an active document container app
 
 1. Click **Finish**.
 
-9. When the MFC Application Wizard finishes generating the application, open the following files using Solution Explorer:
+1. When the MFC Application Wizard finishes generating the application, open the following files using Solution Explorer:
 
    - *MyProjview.cpp*
 
-10. In *MyProjview.cpp*, make the following changes:
+1. In *MyProjview.cpp*, make the following changes:
 
    - In `CMyProjView::OnPreparePrinting`, replace the function contents with the following code:
 
-         [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
+     [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
    `OnPreparePrinting` provides printing support. This code replaces `DoPreparePrinting`, which is the default print preparation.
 
@@ -55,9 +48,8 @@ The simplest and most recommended way to create an active document container app
 
    The static member functions `COleDocObjectItem::OnPrint` and `COleDocObjectItem::OnPreparePrinting`, as implemented in the previous code, handle this improved printing scheme.
 
-11. Add any implementation of your own and build the application.
+1. Add any implementation of your own and build the application.
 
-## See Also
+## See also
 
 [Active Document Containment](../mfc/active-document-containment.md)
-

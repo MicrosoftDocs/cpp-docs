@@ -1,16 +1,9 @@
 ---
-title: "EXPORTS | Microsoft Docs"
-ms.custom: ""
+title: "EXPORTS"
 ms.date: "09/07/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["EXPORTS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EXPORTS .def file statement"]
 ms.assetid: dbcd7579-b855-44c4-bd27-931e157657f7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EXPORTS
 
@@ -50,9 +43,9 @@ EXPORTS
    func2=other_module.#42
 ```
 
-Because the Visual C++ compiler uses name decoration for C++ functions, you must either use the decorated name *internal_name* or define the exported functions by using `extern "C"` in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (\_) prefix and a suffix composed of the at sign (\@) followed by the number of bytes (in decimal) in the argument list.
+Because the MSVC compiler uses name decoration for C++ functions, you must either use the decorated name *internal_name* or define the exported functions by using `extern "C"` in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (\_) prefix and a suffix composed of the at sign (\@) followed by the number of bytes (in decimal) in the argument list.
 
-To find the decorated names produced by the compiler, use the [DUMPBIN](../../build/reference/dumpbin-reference.md) tool or the linker [/MAP](../../build/reference/map-generate-mapfile.md) option. The decorated names are compiler-specific. If you export the decorated names in the .DEF file, executables that link to the DLL must also be built by using the same version of the compiler. This ensures that the decorated names in the caller match the exported names in the .DEF file.
+To find the decorated names produced by the compiler, use the [DUMPBIN](dumpbin-reference.md) tool or the linker [/MAP](map-generate-mapfile.md) option. The decorated names are compiler-specific. If you export the decorated names in the .DEF file, executables that link to the DLL must also be built by using the same version of the compiler. This ensures that the decorated names in the caller match the exported names in the .DEF file.
 
 You can use \@*ordinal* to specify that a number, and not the function name, goes into the DLL's export table. Many Windows DLLs export ordinals to support legacy code. It was common to use ordinals in 16-bit Windows code, because it can help minimize the size of a DLL. We don’t recommend exporting functions by ordinal unless your DLL’s clients need it for legacy support. Because the .LIB file will contain the mapping between the ordinal and the function, you can use the function name as you normally would in projects that use the DLL.
 
@@ -73,7 +66,7 @@ There are four ways to export a definition, listed in recommended order:
 
 1. An `EXPORTS` statement in a .DEF file
 
-1. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
+1. An [/EXPORT](export-exports-a-function.md) specification in a LINK command
 
 1. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`. The following example shows a #pragma comment directive before a function declaration, where `PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
 
@@ -101,4 +94,4 @@ When you export a variable from a DLL by using a .DEF file, you do not have to s
 
 ## See also
 
-[Rules for Module-Definition Statements](../../build/reference/rules-for-module-definition-statements.md)
+[Rules for Module-Definition Statements](rules-for-module-definition-statements.md)

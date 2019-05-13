@@ -1,19 +1,12 @@
 ---
-title: "freopen_s, _wfreopen_s | Microsoft Docs"
-ms.custom: ""
+title: "freopen_s, _wfreopen_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wfreopen_s", "freopen_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["freopen_s", "_tfreopen_s", "_wfreopen_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tfreopen_s function", "_wfreopen_s function", "file pointers [C++], reassigning", "tfreopen_s function", "wfreopen_s function", "freopen_s function"]
 ms.assetid: ad25a4da-6ad4-476b-a86d-660b221ca84d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # freopen_s, _wfreopen_s
 
@@ -70,12 +63,12 @@ If any of *pFile*, *path*, *mode*, or *stream* are **NULL**, or if *path* is an 
 
 |*mode*|Access|
 |-|-|
-**"r"**|Opens for reading. If the file does not exist or cannot be found, the **freopen_s** call fails.
-**"w"**|Opens an empty file for writing. If the given file exists, its contents are destroyed.
-**"a"**|Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it does not exist.
-**"r+"**|Opens for both reading and writing. The file must exist.
-**"w+"**|Opens an empty file for both reading and writing. If the file exists, its contents are destroyed.
-**"a+"**|Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist.
+| **"r"** | Opens for reading. If the file does not exist or cannot be found, the **freopen_s** call fails. |
+| **"w"** | Opens an empty file for writing. If the given file exists, its contents are destroyed. |
+| **"a"** | Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it does not exist. |
+| **"r+"** | Opens for both reading and writing. The file must exist. |
+| **"w+"** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
+| **"a+"** | Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist. |
 
 Use the **"w"** and **"w+"** types with care, as they can destroy existing files.
 
@@ -87,8 +80,8 @@ When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading 
 
 |*mode* modifier|Translation mode|
 |-|-|
-**t**|Open in text (translated) mode.
-**b**|Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.
+| **t** | Open in text (translated) mode. |
+| **b** | Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed. |
 
 In text (translated) mode, carriage return-linefeed (CR-LF) combinations are translated into single linefeed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with **"a+"**, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and [ftell](ftell-ftelli64.md) to move within a file may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file. The **t** option is a Microsoft extension that should not be used where ANSI portability is desired.
 

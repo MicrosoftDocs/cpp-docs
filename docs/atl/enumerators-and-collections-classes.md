@@ -1,16 +1,9 @@
 ---
-title: "Enumerators and Collections Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Enumerators and Collections Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-f1_keywords: ["vc.atl.enum"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["enumerators, ATL classes"]
 ms.assetid: fcd093b2-98bf-444d-94ab-9a55520a5051
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Enumerators and Collections Classes
 
@@ -30,7 +23,6 @@ The following classes provide support for COM collections and enumerations:
 
 [ATL Collections and Enumerators](../atl/atl-collections-and-enumerators.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

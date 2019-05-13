@@ -1,15 +1,8 @@
 ---
-title: "Spin Button Member Functions | Microsoft Docs"
-ms.custom: ""
+title: "Spin Button Member Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["spin button control, methods", "CSpinButtonCtrl class [MFC], methods"]
 ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Spin Button Member Functions
 
@@ -25,8 +18,7 @@ There are several member functions available for the spin control ([CSpinButtonC
 
 - **Range** You can change the maximum and minimum positions for the spin button. By default, the maximum is set to 0, and the minimum is set to 100. Since the default maximum is less than the default minimum, the actions of the arrow buttons is counter-intuitive. Typically, you will set the range using the [SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) member function. To query the range use [GetRange](../mfc/reference/cspinbuttonctrl-class.md#getrange).
 
-## See Also
+## See also
 
 [Using CSpinButtonCtrl](../mfc/using-cspinbuttonctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

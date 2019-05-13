@@ -1,15 +1,8 @@
 ---
-title: "Input Streams | Microsoft Docs"
-ms.custom: ""
+title: "Input Streams"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["reading data [C++], from input streams", "data [C++], reading from input stream", "input streams", "input stream objects"]
 ms.assetid: f14d8954-8f8c-4c3c-8b99-14ddb3683f94
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Input Streams
 

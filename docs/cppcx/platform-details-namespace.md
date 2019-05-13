@@ -1,16 +1,10 @@
 ---
-title: "Platform::Details Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Details Namespace"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Details"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details Namespace"]
 ms.assetid: e13c1f93-c823-4f0f-a3ee-2429bfd184db
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Details Namespace
 
@@ -53,6 +47,6 @@ Although this namespace is intended for internal use, browsers can display the f
 
 **Namespace:** Platform::Details
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

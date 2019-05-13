@@ -1,16 +1,9 @@
 ---
-title: "TN045: MFC-Database Support for Long Varchar-Varbinary | Microsoft Docs"
-ms.custom: ""
+title: "TN045: MFC-Database Support for Long Varchar-Varbinary"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.data"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN045", "Varbinary data type", "Varchar data type"]
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN045: MFC/Database Support for Long Varchar/Varbinary
 
@@ -115,8 +108,7 @@ In this case, the long data column must be in the select list of the recordset, 
 > [!NOTE]
 >  Because your long data column is not bound by the framework, changes to it will not be handled with `CRecordset::Update` calls. You must create and send the required SQL **INSERT** and **UPDATE** statements yourself.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

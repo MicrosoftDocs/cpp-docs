@@ -1,20 +1,8 @@
 ---
-title: "Managed Types (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Managed Types (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
-helpviewer_keywords: ["data types [C++], managed", "managed data types [C++]", ".NET Framework [C++], managed types", "data types [C++], .NET feature access",
-    "main function, in managed applications", "managed code, main() function",
-    ".NET Framework [C++], C++ equivalents",
-    "__nogc type declarations", "__value keyword, issues when nesting",
-    "equality, testing for",
-    "versioning, diagnosing conflicts", "versioning", "exceptions, diagnosing odd behavior", "compatibility, between assemblies"]
+helpviewer_keywords: ["data types [C++], managed", "managed data types [C++]", ".NET Framework [C++], managed types", "data types [C++], .NET feature access", "main function, in managed applications", "managed code, main() function", ".NET Framework [C++], C++ equivalents", "__nogc type declarations", "__value keyword, issues when nesting", "equality, testing for", "versioning, diagnosing conflicts", "versioning", "exceptions, diagnosing odd behavior", "compatibility, between assemblies"]
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Managed Types (C++/CLI)
 
@@ -38,19 +26,21 @@ The following table shows the keywords for built-in Visual C++ types, which are 
 
 |Visual C++ type|.NET Framework type|
 |-----------------------|-------------------------|
-|**bool**|**System.Boolean**|
-|**signed char** (see [/J](../build/reference/j-default-char-type-is-unsigned.md) for more information)|**System.SByte**|
-|**unsigned char**|**System.Byte**|
-|**wchar_t**|**System.Char**|
-|**double** and **long double**|**System.Double**|
-|**float**|**System.Single**|
-|**int**, **signed int**, **long**, and **signed long**|**System.Int32**|
-|**unsigned int** and **unsigned long**|**System.UInt32**|
-|**__int64** and **signed __int64**|**System.Int64**|
-|**unsigned __int64**|**System.UInt64**|
-|**short** and **signed short**|**System.Int16**|
-|**unsigned short**|**System.UInt16**|
-|**void**|**System.Void**|
+|**void**|<xref:System.Void?displayProperty=nameWithType>|
+|**bool**|<xref:System.Boolean?displayProperty=nameWithType>|
+|**signed char** |<xref:System.SByte?displayProperty=nameWithType>|
+|**unsigned char**|<xref:System.Byte?displayProperty=nameWithType>|
+|**wchar_t**|<xref:System.Char?displayProperty=nameWithType>|
+|**short** and **signed short**|<xref:System.Int16?displayProperty=nameWithType>|
+|**unsigned short**|<xref:System.UInt16?displayProperty=nameWithType>|
+|**int**, **signed int**, **long**, and **signed long**|<xref:System.Int32?displayProperty=nameWithType>|
+|**unsigned int** and **unsigned long**|<xref:System.UInt32?displayProperty=nameWithType>|
+|**__int64** and **signed __int64**|<xref:System.Int64?displayProperty=nameWithType>|
+|**unsigned __int64**|<xref:System.UInt64?displayProperty=nameWithType>|
+|**float**|<xref:System.Single?displayProperty=nameWithType>|
+|**double** and **long double**|<xref:System.Double?displayProperty=nameWithType>|
+
+For more information about the compiler option to default to signed or unsigned **char**, see [/J (Default char type Is unsigned)](../build/reference/j-default-char-type-is-unsigned.md).
 
 ## <a name="version_issues"></a> Version Issues for Value Types Nested in Native Types
 
@@ -217,12 +207,9 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
-[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
-
-[Interoperability with Other .NET Languages (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)
-
-[Managed Types (C++/CLI)](../dotnet/managed-types-cpp-cli.md)
-
+[.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
+[Interoperability with Other .NET Languages (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)<br/>
+[Managed Types (C++/CLI)](../dotnet/managed-types-cpp-cli.md)<br/>
 [#using Directive](../preprocessor/hash-using-directive-cpp.md)

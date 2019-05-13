@@ -1,15 +1,8 @@
 ---
-title: "Event Handling Principles (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Event Handling Principles (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handling, implementing", "event handling, advising event sources", "interfaces, event and event sink", "dual interfaces, event interfaces", "event handling, dual event interfaces"]
 ms.assetid: d17ca7cb-54f2-4658-ab8b-b721ac56801d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Event Handling Principles
 
@@ -38,7 +31,6 @@ Once you have successfully registered your interest in receiving events, methods
 
 Be careful to avoid reference cycles when handling events.
 
-## See Also
+## See also
 
 [Event Handling](../atl/event-handling-and-atl.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Implementation of a Custom String Manager (Advanced Method) | Microsoft Docs"
-ms.custom: ""
+title: "Implementation of a Custom String Manager (Advanced Method)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAtlStringMgr class, using"]
 ms.assetid: 64ab7da9-47c1-4c4a-9cd7-4cc37e7f3f57
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementation of a Custom String Manager (Advanced Method)
 
@@ -29,7 +22,6 @@ The `CStringData` structure comprises four fields:
 
    When allocating a `CStringData` structure, you must set this field to reflect the type of sharing that is allowed for the buffer. For most implementations, set this value to one. This allows the usual copy-on-write sharing behavior. However, if your string manager does not support sharing the string buffer, set this field to a locked state. This forces `CStringT` to only use this buffer for the instance of `CStringT` that allocated it.
 
-## See Also
+## See also
 
 [Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)
-

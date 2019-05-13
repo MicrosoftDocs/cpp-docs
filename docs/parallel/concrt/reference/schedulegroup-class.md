@@ -1,16 +1,9 @@
 ---
-title: "ScheduleGroup Class | Microsoft Docs"
-ms.custom: ""
+title: "ScheduleGroup Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["ScheduleGroup", "CONCRT/concurrency::ScheduleGroup", "CONCRT/concurrency::ScheduleGroup::Id", "CONCRT/concurrency::ScheduleGroup::Reference", "CONCRT/concurrency::ScheduleGroup::Release", "CONCRT/concurrency::ScheduleGroup::ScheduleTask"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ScheduleGroup class"]
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ScheduleGroup Class
 
@@ -143,10 +136,9 @@ A void pointer to the data that will be passed as a parameter to the body of the
 
 Calling the `ScheduleTask` method implicitly places a reference count on the schedule group which is removed by the runtime at an appropriate time after the task executes.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [CurrentScheduler Class](currentscheduler-class.md)<br/>
 [Scheduler Class](scheduler-class.md)<br/>
 [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

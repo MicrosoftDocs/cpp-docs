@@ -1,16 +1,9 @@
 ---
-title: "__movsq | Microsoft Docs"
-ms.custom: ""
+title: "__movsq"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__movsq"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__movsq intrinsic", "rep movsq instruction", "movsq instruction"]
 ms.assetid: be116a6e-2176-4ca4-93b1-9ccf3e7e7835
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __movsq
 
@@ -21,10 +14,10 @@ Generates a repeated Move String (`rep movsq`) instruction.
 ## Syntax
 
 ```
-void __movsq( 
-   unsigned char* Dest, 
-   unsigned char* Source, 
-   size_t Count 
+void __movsq(
+   unsigned char* Dest,
+   unsigned char* Source,
+   size_t Count
 );
 ```
 
@@ -82,6 +75,6 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

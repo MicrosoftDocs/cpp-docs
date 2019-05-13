@@ -1,15 +1,8 @@
 ---
-title: "Creating Asynchronous Operations in C++ for UWP Apps | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Creating Asynchronous Operations in C++ for UWP Apps"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["Windows 8.x apps, creating C++ async operations", "Creating C++ async operations"]
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating Asynchronous Operations in C++ for UWP Apps
 
@@ -50,7 +43,7 @@ The Windows Runtime is a programming interface that you can use to create UWP ap
 
 By using the Windows Runtime, you can use the best features of various programming languages and combine them into one app. For example, you might create your UI in JavaScript and perform the computationally-intensive app logic in a C++ component. The ability to perform these computationally-intensive operations in the background is a key factor in keeping your UI responsive. Because the `task` class is specific to C++, you must use a Windows Runtime interface to communicate asynchronous operations to other components (which might be written in languages other than C++). The Windows Runtime provides four interfaces that you can use to represent asynchronous operations:
 
-[Windows::Foundation::IAsyncAction](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncaction.aspx)<br/>
+[Windows::Foundation::IAsyncAction](/uwp/api/windows.foundation.iasyncaction)<br/>
 Represents an asynchronous action.
 
 [Windows::Foundation::IAsyncActionWithProgress\<TProgress>](https://msdn.microsoft.com/library/windows/apps/br206581.aspx)<br/>
@@ -91,7 +84,7 @@ The following example shows the various ways to create an `IAsyncAction` object 
 
 ##  <a name="example-component"></a> Example: Creating a C++ Windows Runtime Component and Consuming it from C#
 
-Consider an app that uses XAML and C# to define the UI and a C++ Windows Runtime component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four Windows Runtime asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.
+Consider an app that uses XAML and C# to define the UI and a C++ Windows Runtime component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four Windows Runtime asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](/uwp/api/Windows.Foundation.Collections.IVector_T_) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.
 
 [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]
 
@@ -116,14 +109,14 @@ Add the following code to the `MainPage` class in MainPage.xaml. This code defin
 
 These methods use the `async` and `await` keywords to update the UI after the asynchronous operations complete. For information about asynchronous coding in UWP apps, see [Threading and async programming](/windows/uwp/threading-async).
 
-The `getPrimesCancellation` and `cancelGetPrimes` methods work together to enable the user to cancel the operation. When the user chooses the **Cancel** button, the `cancelGetPrimes` method calls [IAsyncOperationWithProgress\<TResult, TProgress>::Cancel](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncinfo.cancel.aspx) to cancel the operation. The Concurrency Runtime, which manages the underlying asynchronous operation, throws an internal exception type that's caught by the Windows Runtime to communicate that cancellation has completed. For more information about the cancellation model, see [Cancellation](../../parallel/concrt/cancellation-in-the-ppl.md).
+The `getPrimesCancellation` and `cancelGetPrimes` methods work together to enable the user to cancel the operation. When the user chooses the **Cancel** button, the `cancelGetPrimes` method calls [IAsyncOperationWithProgress\<TResult, TProgress>::Cancel](/uwp/api/windows.foundation.iasyncinfo.cancel) to cancel the operation. The Concurrency Runtime, which manages the underlying asynchronous operation, throws an internal exception type that's caught by the Windows Runtime to communicate that cancellation has completed. For more information about the cancellation model, see [Cancellation](../../parallel/concrt/cancellation-in-the-ppl.md).
 
 > [!IMPORTANT]
 >  To enable the PPL to correctly report to the Windows Runtime that it has canceled the operation, do not catch this internal exception type. This means that you should also not catch all exceptions (`catch (...)`). If you must catch all exceptions, rethrow the exception to ensure that the Windows Runtime can complete the cancellation operation.
 
 The following illustration shows the `Primes` app after each option has been chosen.
 
-![Windows Runtime Primes app](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")
+![Windows Runtime Primes app](../../parallel/concrt/media/concrt_windows_primes.png "Windows Runtime Primes app")
 
 For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) and [Windows 8 Asynchronous Operations in C++ with PPL](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
 
@@ -147,11 +140,10 @@ You can pass a `task_continuation_context` object to the [task::then](reference/
 The following section shows an app that reads a file from disk, finds the most common words in that file, and then shows the results in the UI. The final operation, updating the UI, occurs on the UI thread.
 
 > [!IMPORTANT]
->  This behavior is specific to UWP apps. For desktop apps, you do not control where continuations run. Instead, the scheduler chooses a worker thread on which to run each continuation.
+> This behavior is specific to UWP apps. For desktop apps, you do not control where continuations run. Instead, the scheduler chooses a worker thread on which to run each continuation.
 
 > [!IMPORTANT]
-
->  Do not call [concurrency::task::wait](reference/task-class.md#wait) in the body of a continuation that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](reference/task-class.md#get) method to receive the result of the antecedent task in a task-based continuation.
+> Do not call [concurrency::task::wait](reference/task-class.md#wait) in the body of a continuation that runs on the STA. Otherwise, the runtime throws [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) because this method blocks the current thread and can cause the app to become unresponsive. However, you can call the [concurrency::task::get](reference/task-class.md#get) method to receive the result of the antecedent task in a task-based continuation.
 
 ##  <a name="example-app"></a> Example: Controlling Execution in a Windows Runtime App with C++ and XAML
 
@@ -186,10 +178,10 @@ Modify the `MainPage` constructor to create a chain of continuation tasks that d
 
 The following illustration shows the results of the `CommonWords` app.
 
-![Windows Runtime CommonWords app](../../parallel/concrt/media/concrt_windows_common_words.png "concrt_windows_common_words")
+![Windows Runtime CommonWords app](../../parallel/concrt/media/concrt_windows_common_words.png "Windows Runtime CommonWords app")
 
 In this example, it’s possible to support cancellation because the `task` objects that support `create_async` use an implicit cancellation token. Define your work function to take a `cancellation_token` object if your tasks need to respond to cancellation in a cooperative manner. For more info about cancellation in the PPL, see [Cancellation in the PPL](cancellation-in-the-ppl.md)
 
-## See Also
+## See also
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)

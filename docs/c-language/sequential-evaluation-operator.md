@@ -1,15 +1,8 @@
 ---
-title: "Sequential-Evaluation Operator | Microsoft Docs"
-ms.custom: ""
+title: "Sequential-Evaluation Operator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], sequential-evaluation", "sequential-evaluation operator", "comma operator"]
 ms.assetid: 587514f4-c8e2-44e9-81a8-7a553ce1453a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Sequential-Evaluation Operator
 
@@ -44,6 +37,6 @@ func_two( (x--, y + 2), z );
 
 In the function call to `func_one`, three arguments, separated by commas, are passed: `x`, `y + 2`, and `z`. In the function call to `func_two`, parentheses force the compiler to interpret the first comma as the sequential-evaluation operator. This function call passes two arguments to `func_two`. The first argument is the result of the sequential-evaluation operation `(x--, y + 2)`, which has the value and type of the expression `y + 2`; the second argument is `z`.
 
-## See Also
+## See also
 
 [Comma Operator: ,](../cpp/comma-operator.md)

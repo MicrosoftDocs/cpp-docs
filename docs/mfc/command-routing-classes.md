@@ -1,16 +1,9 @@
 ---
-title: "Command Routing Classes | Microsoft Docs"
-ms.custom: ""
+title: "Command Routing Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.command"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "command routing [MFC], classes"]
 ms.assetid: 4b50e689-2c54-4e6c-90f0-37333e22b2a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command Routing Classes
 
@@ -24,7 +17,6 @@ Serves as the base class for all classes of objects that can receive and respond
 [CCmdUI](../mfc/reference/ccmdui-class.md)<br/>
 Provides a programmatic interface for updating user-interface objects such as menu items or control-bar buttons. The command target object enables, disables, checks, and/or clears the user-interface object with this object.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

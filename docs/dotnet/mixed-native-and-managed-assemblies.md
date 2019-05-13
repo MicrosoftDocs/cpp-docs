@@ -1,15 +1,8 @@
 ---
-title: "Mixed (Native and Managed) Assemblies | Microsoft Docs"
-ms.custom: ""
+title: "Mixed (Native and Managed) Assemblies"
 ms.date: "09/18/2018"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], mixed assemblies", "/clr compiler option [C++], mixed assemblies", "managed code [C++], interoperability", "interoperability [C++], mixed assemblies", "mixed DLL loading [C++]", "mixed assemblies [C++], about mixed assemblies", "assemblies [C++], mixed", "mixed assemblies [C++]", "native code [C++], .NET interoperatibility"]
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Mixed (native and managed) assemblies
 
@@ -19,7 +12,7 @@ For example, an existing library consisting entirely of native C++ code can be b
 
 Visual C++ only supports the generation of mixed managed assemblies by using the **/clr** compiler option. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017. If you require pure or verifiable managed assemblies, we recommend you create them by using C#.
 
-Earlier versions of the Visual C++ compiler toolset supported the generation of three distinct types of managed assemblies: mixed, pure, and verifiable. The latter two are discussed in [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Earlier versions of the Microsoft C++ compiler toolset supported the generation of three distinct types of managed assemblies: mixed, pure, and verifiable. The latter two are discussed in [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
 ## In this section
 

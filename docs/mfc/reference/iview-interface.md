@@ -1,16 +1,9 @@
 ---
-title: "IView Interface | Microsoft Docs"
-ms.custom: ""
+title: "IView Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["IView", "AFXWINFORMS/IView", "AFXWINFORMS/IView::OnActivateView", "AFXWINFORMS/IView::OnInitialUpdate", "AFXWINFORMS/IView::OnUpdate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["views [MFC]", "IView class [MFC]", "views [MFC], classes"]
 ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IView Interface
 
@@ -74,7 +67,7 @@ void OnUpdate();
 
 This function allows the view to update its display to reflect modifications.
 
-## See Also
+## See also
 
 [CWinFormsView Class](../../mfc/reference/cwinformsview-class.md)<br/>
 [CView Class](../../mfc/reference/cview-class.md)

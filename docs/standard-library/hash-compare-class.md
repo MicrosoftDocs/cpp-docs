@@ -1,16 +1,9 @@
 ---
-title: "hash_compare Class | Microsoft Docs"
-ms.custom: ""
+title: "hash_compare Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["hash_set/stdext::hash_compare"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["hash_compare class"]
 ms.assetid: d502bb59-de57-4585-beb9-00e3a998c0af
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # hash_compare Class
 

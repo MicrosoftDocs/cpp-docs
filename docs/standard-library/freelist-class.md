@@ -1,16 +1,9 @@
 ---
-title: "freelist Class | Microsoft Docs"
-ms.custom: ""
+title: "freelist Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::freelist", "allocators/stdext::freelist::pop", "allocators/stdext::freelist::push"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::freelist", "stdext::freelist [C++], pop", "stdext::freelist [C++], push"]
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # freelist Class
 

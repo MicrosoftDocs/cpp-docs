@@ -1,14 +1,8 @@
 ---
-title: "concurrency namespace constants | Microsoft Docs"
-ms.custom: ""
+title: "concurrency namespace constants"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::AgentEventGuid", "concrt/concurrency::COOPERATIVE_TIMEOUT_INFINITE", "concrt/concurrency::COOPERATIVE_WAIT_TIMEOUT", "concrt/concurrency::ConcRTEventGuid", "concrt/concurrency::ConcRT_ProviderGuid", "concrt/concurrency::INHERIT_THREAD_PRIORITY", "concrt/concurrency::LockEventGuid", "concrt/concurrency::PPLParallelForEventGuid", "concrt/concurrency::PPLParallelForeachEventGuid", "concrt/concurrency::ResourceManagerEventGuid", "concrt/concurrency::ScheduleGroupEventGuid", "concrt/concurrency::VirtualProcessorEventGuid"]
-dev_langs: ["C++"]
 ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrency namespace constants
 
@@ -197,6 +191,6 @@ const __declspec(selectany) GUID VirtualProcessorEventGuid =
     { 0x2f27805f, 0x1676, 0x4ecc, { 0x96, 0xfa, 0x7e, 0xb0, 0x9d, 0x44, 0x30, 0x2f } };
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

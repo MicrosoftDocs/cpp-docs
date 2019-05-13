@@ -1,16 +1,9 @@
 ---
-title: "&lt;ctime&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;ctime&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<ctime>", "std::<ctime>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ctime header"]
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;ctime&gt;
 
@@ -20,7 +13,6 @@ Includes the Standard C library header \<time.h> and adds the associated names t
 
 ```cpp
 #include <ctime>
-
 ```
 
 ## Remarks

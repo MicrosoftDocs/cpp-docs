@@ -1,15 +1,8 @@
 ---
-title: "Template Specialization (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Template Specialization (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["partial specialization of class templates"]
 ms.assetid: f3c67c0b-3875-434a-b8d8-bb47e99cf4f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Template Specialization (C++)
 
@@ -49,8 +42,6 @@ struct S{};
 extern "C" int printf_s(const char*,...);
 
 int main() {
-   S s, *pS;
-   int S::*ptm;
    printf_s("PTS<S>::IsPointer == %d PTS<S>::IsPointerToDataMember == %d\n",
            PTS<S>::IsPointer, PTS<S>:: IsPointerToDataMember);
    printf_s("PTS<S*>::IsPointer == %d PTS<S*>::IsPointerToDataMember ==%d\n"

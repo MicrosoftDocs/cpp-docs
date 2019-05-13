@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3532 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3532"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3532"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3532"]
 ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3532
 
@@ -53,6 +46,6 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [auto Keyword](../../cpp/auto-keyword.md)

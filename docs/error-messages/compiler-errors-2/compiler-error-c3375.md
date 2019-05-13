@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3375 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3375"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3375"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3375"]
 ms.assetid: f1df78c6-e6ca-48f3-8b29-4e1710002bf3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3375
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 A delegate instantiation could have been to a static member function, or as an unbound delegate to an instance function, so the compiler issued this error.
 
-For more information, see [delegate  (C++ Component Extensions)](../../windows/delegate-cpp-component-extensions.md).
+For more information, see [delegate  (C++ Component Extensions)](../../extensions/delegate-cpp-component-extensions.md).
 
 ## Example
 

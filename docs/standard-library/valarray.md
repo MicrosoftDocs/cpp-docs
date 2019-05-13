@@ -1,16 +1,9 @@
 ---
-title: "&lt;valarray&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;valarray&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<valarray>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["valarray header"]
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;valarray&gt;
 
@@ -27,7 +20,7 @@ Defines the template class valarray and numerous supporting template classes and
 
 ## Remarks
 
-These template classes and functions are permitted unusual latitude in the interest of improved performance. Specifically, any function returning type **valarray\<**T1**>** may return an object of some other type T2. In that case, any function that accepts one or more arguments of type **valarray\<**T2**>** must have overloads that accept arbitrary combinations of those arguments, each replaced with an argument of type T2.
+These template classes and functions are permitted unusual latitude in the interest of improved performance. Specifically, any function returning type `valarray<T1>` may return an object of some other type T2. In that case, any function that accepts one or more arguments of type `valarray<T2>` must have overloads that accept arbitrary combinations of those arguments, each replaced with an argument of type T2.
 
 ### Functions
 

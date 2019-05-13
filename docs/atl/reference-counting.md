@@ -1,15 +1,8 @@
 ---
-title: "Reference Counting (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Reference Counting (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["AddRef method [C++], reference counting", "reference counting", "AddRef method [C++]", "reference counts", "references, counting"]
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Reference Counting
 
@@ -28,8 +21,7 @@ Reference counting can also be implemented so that each reference to the object 
 > [!NOTE]
 >  When a `CComObject`-derived object is constructed using the **new** operator, the reference count is 0. Therefore, a call to `AddRef` must be made after successfully creating the `CComObject`-derived object.
 
-## See Also
+## See also
 
 [Introduction to COM](../atl/introduction-to-com.md)<br/>
 [Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)
-

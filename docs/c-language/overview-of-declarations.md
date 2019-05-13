@@ -1,15 +1,8 @@
 ---
-title: "Overview of Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Overview of Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarations, about declarations", "type qualifiers"]
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overview of Declarations
 
@@ -64,7 +57,7 @@ Type specifiers provide some information about the data types of identifiers. Th
 
 There are two *type-qualifier* terminals: **const** and `volatile`. These qualifiers specify additional properties of types that are relevant only when accessing objects of that type through l-values. For more information on **const** and `volatile`, see [Type Qualifiers](../c-language/type-qualifiers.md). For a definition of l-values, see [L-Value and R-Value Expressions](../c-language/l-value-and-r-value-expressions.md).
 
-## See Also
+## See also
 
 [C Language Syntax Summary](../c-language/c-language-syntax-summary.md)<br/>
 [Declarations and Types](../c-language/declarations-and-types.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4632 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4632"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4632"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4632"]
 ms.assetid: 9e35d205-cf21-4e34-8bd5-e1e7b0e2cdd3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4632
 

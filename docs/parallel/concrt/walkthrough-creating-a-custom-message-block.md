@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Creating a Custom Message Block | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Creating a Custom Message Block"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["creating custom message blocks Concurrency Runtime]", "custom message blocks, creating [Concurrency Runtime]"]
 ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating a Custom Message Block
 
@@ -205,7 +198,7 @@ Copy the example code and paste it in a Visual Studio project, or paste the defi
 
 **cl.exe /EHsc priority_buffer.cpp**
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

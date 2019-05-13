@@ -1,16 +1,9 @@
 ---
-title: "db_param (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "db_param (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["db_param attribute"]
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # db_param
 
@@ -37,16 +30,16 @@ The column number (DBCOLUMNINFO ordinal) corresponding to a field in the rowset 
 - DBPARAMIO_NOTPARAM The accessor has no parameters. Setting `eParamIO` to this value in row accessors reminds the user that parameters are ignored.
 
 *dbtype*<br/>
-(Optional) An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251) for the column entry.
+(Optional) An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251(v=vs.85)) for the column entry.
 
 *precision*<br/>
-(Optional) The precision to be used for the column entry. For details, see the description of `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845)
+(Optional) The precision to be used for the column entry. For details, see the description of `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
 *scale*<br/>
-(Optional) The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845)
+(Optional) The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845(v=vs.85))
 
 *status*<br/>
-(Optional) A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*.
+(Optional) A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 *length*<br/>
 (Optional) A member variable used to hold the size of the column in bytes.
@@ -114,6 +107,6 @@ struct CSalesbyYear {
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [OLE DB Consumer Attributes](ole-db-consumer-attributes.md)

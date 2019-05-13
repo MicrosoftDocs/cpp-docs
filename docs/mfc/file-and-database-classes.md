@@ -1,16 +1,9 @@
 ---
-title: "File and Database Classes | Microsoft Docs"
-ms.custom: ""
+title: "File and Database Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.file"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["database classes [MFC], MFC", "database classes [MFC]", "file classes [MFC]"]
 ms.assetid: 580b169c-e26e-4395-b128-5408d08c98fe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # File and Database Classes
 
@@ -26,7 +19,6 @@ The following categories of classes support data persistence.
 
 - [ODBC Classes](../mfc/odbc-classes.md)
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

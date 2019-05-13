@@ -1,15 +1,8 @@
 ---
-title: "abort Function (C) | Microsoft Docs"
-ms.custom: ""
+title: "abort Function (C)"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["abort function"]
 ms.assetid: caa62d67-ffc4-4481-87a4-0c1e2b0f537c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # abort Function (C)
 
@@ -17,6 +10,6 @@ ms.workload: ["cplusplus"]
 
 The **abort** function does not close files that are open or temporary. It does not flush stream buffers. For more information, see [abort](../c-runtime-library/reference/abort.md).
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

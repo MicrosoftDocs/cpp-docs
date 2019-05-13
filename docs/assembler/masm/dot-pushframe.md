@@ -1,16 +1,9 @@
 ---
-title: ".PUSHFRAME | Microsoft Docs"
-ms.custom: ""
+title: ".PUSHFRAME"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".PUSHFRAME"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".PUSHFRAME directive"]
 ms.assetid: 17b123d0-4c6d-4fd2-85eb-798e8ad0a73c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .PUSHFRAME
 

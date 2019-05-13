@@ -1,16 +1,10 @@
 ---
-title: "hash_map (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "hash_map (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::hash_map", "cliext::hash_map::begin", "cliext::hash_map::bucket_count", "cliext::hash_map::clear", "cliext::hash_map::const_iterator", "cliext::hash_map::const_reference", "cliext::hash_map::const_reverse_iterator", "cliext::hash_map::count", "cliext::hash_map::difference_type", "cliext::hash_map::empty", "cliext::hash_map::end", "cliext::hash_map::equal_range", "cliext::hash_map::erase", "cliext::hash_map::find", "cliext::hash_map::generic_container", "cliext::hash_map::generic_iterator", "cliext::hash_map::generic_reverse_iterator", "cliext::hash_map::generic_value", "cliext::hash_map::hash_delegate", "cliext::hash_map::hash_map", "cliext::hash_map::hasher", "cliext::hash_map::insert", "cliext::hash_map::iterator", "cliext::hash_map::key_comp", "cliext::hash_map::key_compare", "cliext::hash_map::key_type", "cliext::hash_map::load_factor", "cliext::hash_map::lower_bound", "cliext::hash_map::make_value", "cliext::hash_map::mapped_type", "cliext::hash_map::max_load_factor", "cliext::hash_map::operator=", "cliext::hash_map::operator", "cliext::hash_map::rbegin", "cliext::hash_map::reference", "cliext::hash_map::rehash", "cliext::hash_map::rend", "cliext::hash_map::reverse_iterator", "cliext::hash_map::size", "cliext::hash_map::size_type", "cliext::hash_map::swap", "cliext::hash_map::to_array", "cliext::hash_map::upper_bound", "cliext::hash_map::value_comp", "cliext::hash_map::value_compare", "cliext::hash_map::value_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<cliext/hash_map> header [STL/CLR]", "<hash_map> header [STL/CLR]", "hash_map class [STL/CLR]", "begin member [STL/CLR]", "bucket_count member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "hash_delegate member [STL/CLR]", "hash_map member [STL/CLR]", "hasher member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "load_factor member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "mapped_type member [STL/CLR]", "max_load_factor member [STL/CLR]", "operator= member [STL/CLR]", "operator member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rehash member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: c3cfc69b-04c6-42ae-a30e-0eda953fe883
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_map (STL/CLR)
 

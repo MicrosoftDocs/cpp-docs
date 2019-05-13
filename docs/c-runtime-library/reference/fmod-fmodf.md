@@ -1,19 +1,12 @@
 ---
-title: "fmod, fmodf, fmodl | Microsoft Docs"
-ms.custom: ""
+title: "fmod, fmodf, fmodl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["fmod", "fmodf", "fmodl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fmod", "_fmodl", "fmodf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["calculating floating-point remainders", "fmodf function", "fmodl function", "fmod function", "floating-point numbers, calculating remainders"]
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fmod, fmodf, fmodl
 

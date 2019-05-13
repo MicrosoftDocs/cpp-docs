@@ -1,16 +1,9 @@
 ---
-title: "_bstr_t::Detach | Microsoft Docs"
-ms.custom: ""
+title: "_bstr_t::Detach"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::Detach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Detach method [C++]"]
 ms.assetid: cc8284bd-f68b-4fff-b2e6-ce8354dabf8b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _bstr_t::Detach
 

@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4099 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4099"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4099"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4099"]
 ms.assetid: 358170a4-07cd-43fe-918f-82c32757ffc5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4099
 

@@ -1,16 +1,9 @@
 ---
-title: "CComClassFactoryAutoThread Class | Microsoft Docs"
-ms.custom: ""
+title: "CComClassFactoryAutoThread Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComClassFactoryAutoThread", "ATLCOM/ATL::CComClassFactoryAutoThread", "ATLCOM/ATL::CComClassFactoryAutoThread::CreateInstance", "ATLCOM/ATL::CComClassFactoryAutoThread::LockServer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactoryAutoThread class"]
 ms.assetid: 22008042-533f-4dd9-bf7e-191ee571f9a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComClassFactoryAutoThread Class
 
@@ -111,7 +104,7 @@ When using `CComClassFactoryAutoThread`, `_Module` typically refers to the globa
 
 Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be quickly created.
 
-## See Also
+## See also
 
 [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
 [CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)<br/>

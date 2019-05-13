@@ -1,15 +1,8 @@
 ---
-title: "-- Operations Comment | Microsoft Docs"
-ms.custom: ""
+title: "-- Operations Comment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Operations comment in MFC source files", "comments, MFC", "MFC source files, Operations comments"]
 ms.assetid: f3bff48d-26be-4db6-8435-9e4d079838c9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # // Operations Comment
 
@@ -19,7 +12,7 @@ In the sample listing from class `CStdioFile`, in [An Example of the Comments](.
 
 As with attributes, operations can be further subdivided.
 
-## See Also
+## See also
 
 [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)<br/>
 [An Example of the Comments](../mfc/an-example-of-the-comments.md)<br/>
@@ -27,4 +20,3 @@ As with attributes, operations can be further subdivided.
 [// Constructors Comment](../mfc/decrement-constructors-comment.md)<br/>
 [// Attributes Comment](../mfc/decrement-attributes-comment.md)<br/>
 [// Overridables Comment](../mfc/decrement-overridables-comment.md)
-

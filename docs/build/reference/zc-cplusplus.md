@@ -1,15 +1,8 @@
 ---
 title: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
-ms.custom: ""
 ms.date: "05/30/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:__cplusplus"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc:__cplusplus compiler option (C++)", "__cplusplus macro (C++)"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:__cplusplus (Enable updated __cplusplus macro)
 
@@ -39,7 +32,7 @@ For finer-grained detection of changes to the compiler toolset, use the [_MSC_VE
 
 ### To set this compiler option in Visual Studio
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 

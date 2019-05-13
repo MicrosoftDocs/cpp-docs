@@ -1,15 +1,8 @@
 ---
-title: "Transaction: How Transactions Affect Updates (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Transaction: How Transactions Affect Updates (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["transactions, updating recordsets", "ODBC recordsets, transactions", "transactions, rolling back", "CommitTrans method", "Rollback method, ODBC transactions"]
 ms.assetid: 9e00bbf4-e9fb-4332-87fc-ec8ac61b3f68
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction: How Transactions Affect Updates (ODBC)
 
@@ -48,7 +41,7 @@ The following table explains the effects of `Rollback` on transactions.
 |`Edit` (without `Update`), then `Rollback`|An unedited version of the current record is stored temporarily. Edits are made to the content of the edit buffer.|Call `Edit` again to restore the unedited version of the record to the edit buffer.|Because `Update` was not called, there were no changes made to the data source.|
 |`Delete` then `Rollback`|Content of the current record is deleted.|Call `Requery` to restore the content of the current record from the data source.|Deletion of data from data source is reversed.|
 
-## See Also
+## See also
 
 [Transaction (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [Transaction (ODBC)](../../data/odbc/transaction-odbc.md)<br/>

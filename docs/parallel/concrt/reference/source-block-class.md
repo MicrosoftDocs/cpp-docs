@@ -1,16 +1,9 @@
 ---
-title: "source_block Class | Microsoft Docs"
-ms.custom: ""
+title: "source_block Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["source_block", "AGENTS/concurrency::source_block", "AGENTS/concurrency::source_block::source_block", "AGENTS/concurrency::source_block::accept", "AGENTS/concurrency::source_block::acquire_ref", "AGENTS/concurrency::source_block::consume", "AGENTS/concurrency::source_block::link_target", "AGENTS/concurrency::source_block::release", "AGENTS/concurrency::source_block::release_ref", "AGENTS/concurrency::source_block::reserve", "AGENTS/concurrency::source_block::unlink_target", "AGENTS/concurrency::source_block::unlink_targets", "AGENTS/concurrency::source_block::accept_message", "AGENTS/concurrency::source_block::async_send", "AGENTS/concurrency::source_block::consume_message", "AGENTS/concurrency::source_block::enable_batched_processing", "AGENTS/concurrency::source_block::initialize_source", "AGENTS/concurrency::source_block::link_target_notification", "AGENTS/concurrency::source_block::process_input_messages", "AGENTS/concurrency::source_block::propagate_output_messages", "AGENTS/concurrency::source_block::propagate_to_any_targets", "AGENTS/concurrency::source_block::release_message", "AGENTS/concurrency::source_block::remove_targets", "AGENTS/concurrency::source_block::reserve_message", "AGENTS/concurrency::source_block::resume_propagation", "AGENTS/concurrency::source_block::sync_send", "AGENTS/concurrency::source_block::unlink_target_notification", "AGENTS/concurrency::source_block::wait_for_outstanding_async_sends"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["source_block class"]
 ms.assetid: fbdd4146-e8d0-42e8-b714-fe633f69ffbf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # source_block Class
 
@@ -501,7 +494,7 @@ Waits for all asynchronous propagations to complete. This propagator-specific sp
 void wait_for_outstanding_async_sends();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [ISource Class](isource-class.md)

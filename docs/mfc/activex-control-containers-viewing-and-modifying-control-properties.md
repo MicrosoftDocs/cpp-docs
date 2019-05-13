@@ -1,15 +1,8 @@
 ---
-title: "ActiveX Control Containers: Viewing and Modifying Control Properties | Microsoft Docs"
-ms.custom: ""
+title: "ActiveX Control Containers: Viewing and Modifying Control Properties"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["properties [MFC], viewing and modifying", "ActiveX control containers [MFC], viewing and modifying properties", "resource editors, viewing and modifying ActiveX controls", "ActiveX controls [MFC], properties", "controls [MFC], properties"]
 ms.assetid: 14ce5152-742b-4e0d-a9ab-c7b456e32918
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Viewing and Modifying Control Properties
 
@@ -35,7 +28,6 @@ The first step in viewing the control's properties is to add an instance of the 
 
 Use the **Properties** dialog box to modify and test new properties immediately.
 
-## See Also
+## See also
 
 [ActiveX Control Containers](../mfc/activex-control-containers.md)
-

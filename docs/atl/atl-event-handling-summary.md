@@ -1,15 +1,8 @@
 ---
-title: "ATL Event Handling Summary | Microsoft Docs"
-ms.custom: ""
+title: "ATL Event Handling Summary"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handling, implementing"]
 ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Event Handling Summary
 
@@ -45,8 +38,7 @@ There are three main ways of advising and unadvising an event source using ATL.
 |[CComCompositeControl::AdviseSinkMap(TRUE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|[CComCompositeControl::AdviseSinkMap(FALSE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|ActiveX controls in Composite controls|No|`CComCompositeControl::AdviseSinkMap` advises all entries in the event sink map. The same function unadvises the entries. This method is called automatically by the `CComCompositeControl` class.|
 |[CAxDialogImpl::AdviseSinkMap(TRUE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|[CAxDialogImpl::AdviseSinkMap(FALSE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|ActiveX controls in a dialog box|No|`CAxDialogImpl::AdviseSinkMap` advises and unadvises all ActiveX controls in the dialog resource. This is done automatically for you.|
 
-## See Also
+## See also
 
 [Event Handling](../atl/event-handling-and-atl.md)<br/>
 [Supporting IDispEventImpl](../atl/supporting-idispeventimpl.md)
-

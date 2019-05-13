@@ -1,16 +1,9 @@
 ---
-title: "#define Directive (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "#define Directive (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#define"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["define directive (#define), syntax", "preprocessor, directives", "define directive (#define)", "#define directive, syntax", "#define directive"]
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #define Directive (C/C++)
 
@@ -110,6 +103,6 @@ Defining macros and constants with the [/D](../build/reference/d-preprocessor-de
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

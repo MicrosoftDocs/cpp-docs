@@ -1,16 +1,9 @@
 ---
-title: "CDaoIndexFieldInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoIndexFieldInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoIndexFieldInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoIndexFieldInfo structure [MFC]", "DAO (Data Access Objects), Index Fields collection"]
 ms.assetid: 097ee8a6-83b1-4db7-8f05-d62a2deefe19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoIndexFieldInfo Structure
 
@@ -46,9 +39,8 @@ Call the `GetIndexInfo` member function of the containing tabledef or recordset 
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoTableDef::GetIndexInfo](../../mfc/reference/cdaotabledef-class.md#getindexinfo)<br/>
 [CDaoRecordset::GetIndexInfo](../../mfc/reference/cdaorecordset-class.md#getindexinfo)
-

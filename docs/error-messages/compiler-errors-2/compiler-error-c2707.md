@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2707 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2707"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2707"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2707"]
 ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2707
 

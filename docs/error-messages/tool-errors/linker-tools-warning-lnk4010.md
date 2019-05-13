@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4010 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4010"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4010"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4010"]
 ms.assetid: 2824cf99-4174-4b60-a6e2-c01e9f1ee52d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4010
 

@@ -1,13 +1,7 @@
 ---
-title: "Delegates (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Delegates (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Delegates (C++/CX)
 
@@ -23,7 +17,7 @@ Delegates are most commonly used in conjunction with events. An event has a dele
 event PrimeFoundHandler^ primeFoundEvent;
 ```
 
-When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](https://msdn.microsoft.com/library/windows/apps/br225997.aspx). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.
+When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](/uwp/api/windows.foundation.typedeventhandler). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.
 
 ## Consuming delegates
 
@@ -130,7 +124,7 @@ If you want your created delegate to be called back on the same thread that it w
 
 If you are familiar with event handlers in .NET, you know that the recommended practice is to make a local copy of an event before you fire it. This avoids race conditions in which an event handler might be removed just before the event is invoked. It isn’t necessary to do this in C++/CX because when event handlers are added or removed a new handler list is created. Because a C++ object increments the reference count on the handler list before invoking an event, it is guaranteed that all handlers will be valid. However, this also means that if you remove an event handler on the consuming thread, that handler might still get invoked if the publishing object is still operating on its copy of the list, which is now out-of-date. The publishing object will not get the updated list until the next time it fires the event.
 
-## See Also
+## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>

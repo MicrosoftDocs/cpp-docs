@@ -1,16 +1,9 @@
 ---
-title: "CDefaultElementTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CDefaultElementTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CDefaultElementTraits", "atlcoll/ATL::CDefaultElementTraits"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDefaultElementTraits class"]
 ms.assetid: ac5ee610-7957-4b7c-92b6-38ff72e4118e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDefaultElementTraits Class
 
@@ -40,6 +33,6 @@ For more information, see [ATL Collection Classes](../../atl/atl-collection-clas
 
 **Header:** atlcoll.h
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

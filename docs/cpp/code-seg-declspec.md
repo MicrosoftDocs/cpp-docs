@@ -1,16 +1,9 @@
 ---
-title: "code_seg (__declspec) | Microsoft Docs"
-ms.custom: ""
+title: "code_seg (__declspec)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["code_seg_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["code_seg __declspec keyword"]
 ms.assetid: ad3c1105-15d3-4e08-b7b9-e4bd9d7b6aa0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # code_seg (__declspec)
 

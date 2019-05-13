@@ -1,16 +1,9 @@
 ---
-title: "CMFCMenuButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCMenuButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::PreTranslateMessage", "AFXMENUBUTTON/CMFCMenuButton::SizeToContent", "AFXMENUBUTTON/CMFCMenuButton::m_bOSMenu", "AFXMENUBUTTON/CMFCMenuButton::m_bRightArrow", "AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed", "AFXMENUBUTTON/CMFCMenuButton::m_hMenu", "AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCMenuButton [MFC], CMFCMenuButton", "CMFCMenuButton [MFC], PreTranslateMessage", "CMFCMenuButton [MFC], SizeToContent", "CMFCMenuButton [MFC], m_bOSMenu", "CMFCMenuButton [MFC], m_bRightArrow", "CMFCMenuButton [MFC], m_bStayPressed", "CMFCMenuButton [MFC], m_hMenu", "CMFCMenuButton [MFC], m_nMenuResult"]
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCMenuButton Class
 
@@ -55,7 +48,7 @@ When you create a `CMFCMenuButton`, you must pass in a handle to the associated 
 
 ## Example
 
-The following example demonstrates how to set the handle of the menu attached to the button, resize the button according to its text and image size, and set the pop-up menu that is displayed by the framework. This code snippet is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to set the handle of the menu attached to the button, resize the button according to its text and image size, and set the pop-up menu that is displayed by the framework. This code snippet is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#39](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_2.cpp)]
@@ -159,7 +152,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-[in] Points to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
+[in] Points to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 
@@ -190,7 +183,7 @@ If you call this function and *bCalcOnly* is TRUE, `SizeToContent` will calculat
 
 The new size of the button is calculated to fit the button text, image, and arrow. The framework also adds in predefined margins of 10 pixels for the horizontal edge and 5 pixels for the vertical edge.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

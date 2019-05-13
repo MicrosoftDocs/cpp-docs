@@ -1,14 +1,7 @@
 ---
-title: "-INTEGRITYCHECK (Require Signature Check) | Microsoft Docs"
-ms.custom: ""
+title: "/INTEGRITYCHECK (Require Signature Check)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /INTEGRITYCHECK (Require Signature Check)
 
@@ -26,7 +19,7 @@ The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or execut
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 
@@ -36,10 +29,10 @@ The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or execut
 
 1. In **Additional Options**, enter `/INTEGRITYCHECK` or `/INTEGRITYCHECK:NO`.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
 [Forced Integrity Signing of Portable Executable (PE) files](http://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
 [Kernel-Mode Code Signing Walkthrough](https://msdn.microsoft.com/windows/hardware/gg487328.aspx)<br/>
 [AppInit DLLs in Windows 7 and Windows Server 2008](https://msdn.microsoft.com/windows/hardware/gg463040.aspx)

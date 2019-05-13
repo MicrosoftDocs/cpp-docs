@@ -1,16 +1,9 @@
 ---
-title: "CKeyFrame Class | Microsoft Docs"
-ms.custom: ""
+title: "CKeyFrame Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboard", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAfterTransition", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAtOffset", "AFXANIMATIONCONTROLLER/CKeyFrame::GetExistingKeyframe", "AFXANIMATIONCONTROLLER/CKeyFrame::GetOffset", "AFXANIMATIONCONTROLLER/CKeyFrame::GetTransition", "AFXANIMATIONCONTROLLER/CKeyFrame::m_offset", "AFXANIMATIONCONTROLLER/CKeyFrame::m_pExistingKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::m_pTransition"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CKeyFrame [MFC], CKeyFrame", "CKeyFrame [MFC], AddToStoryboard", "CKeyFrame [MFC], AddToStoryboardAfterTransition", "CKeyFrame [MFC], AddToStoryboardAtOffset", "CKeyFrame [MFC], GetExistingKeyframe", "CKeyFrame [MFC], GetOffset", "CKeyFrame [MFC], GetTransition", "CKeyFrame [MFC], m_offset", "CKeyFrame [MFC], m_pExistingKeyFrame", "CKeyFrame [MFC], m_pTransition"]
 ms.assetid: d050a562-20f6-4c65-8ce5-ccb3aef1a20e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CKeyFrame Class
 
@@ -242,6 +235,6 @@ Stores a pointer to transtion that begins at this keyframe.
 CBaseTransition* m_pTransition;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

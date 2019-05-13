@@ -1,16 +1,9 @@
 ---
-title: "CMFCCmdUsageCount Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCCmdUsageCount Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCCmdUsageCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::AddCmd", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::GetCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::HasEnoughInformation", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::IsFreqeuntlyUsedCmd", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Reset", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Serialize", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::SetOptions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCCmdUsageCount [MFC], AddCmd", "CMFCCmdUsageCount [MFC], GetCount", "CMFCCmdUsageCount [MFC], HasEnoughInformation", "CMFCCmdUsageCount [MFC], IsFreqeuntlyUsedCmd", "CMFCCmdUsageCount [MFC], Reset", "CMFCCmdUsageCount [MFC], Serialize", "CMFCCmdUsageCount [MFC], SetOptions"]
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCCmdUsageCount Class
 
@@ -221,7 +214,7 @@ This method sets the shared `CMFCCmdUsageCount` class data members `m_nStartCoun
 
 In Debug builds this method generates an assertion failure if the *nMinUsagePercentage* parameter is larger than or equal to 100.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

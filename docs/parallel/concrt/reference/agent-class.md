@@ -1,16 +1,9 @@
 ---
-title: "agent Class | Microsoft Docs"
-ms.custom: ""
+title: "agent Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["agent", "AGENTS/concurrency::agent", "AGENTS/concurrency::agent::agent", "AGENTS/concurrency::agent::cancel", "AGENTS/concurrency::agent::start", "AGENTS/concurrency::agent::status", "AGENTS/concurrency::agent::status_port", "AGENTS/concurrency::agent::wait", "AGENTS/concurrency::agent::wait_for_all", "AGENTS/concurrency::agent::wait_for_one", "AGENTS/concurrency::agent::done", "AGENTS/concurrency::agent::run"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["agent class"]
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # agent Class
 
@@ -272,6 +265,6 @@ An agent task is completed when the agent enters the `agent_canceled` or `agent_
 
 If the parameter `_Timeout` has a value other than the constant `COOPERATIVE_TIMEOUT_INFINITE`, the exception [operation_timed_out](operation-timed-out-class.md) is thrown if the specified amount of time expires before the agent has completed its task.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

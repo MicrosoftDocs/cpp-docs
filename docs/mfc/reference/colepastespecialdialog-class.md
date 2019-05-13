@@ -1,16 +1,9 @@
 ---
-title: "COlePasteSpecialDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "COlePasteSpecialDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog::COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog::AddFormat", "AFXODLGS/COlePasteSpecialDialog::AddLinkEntry", "AFXODLGS/COlePasteSpecialDialog::AddStandardFormats", "AFXODLGS/COlePasteSpecialDialog::CreateItem", "AFXODLGS/COlePasteSpecialDialog::DoModal", "AFXODLGS/COlePasteSpecialDialog::GetDrawAspect", "AFXODLGS/COlePasteSpecialDialog::GetIconicMetafile", "AFXODLGS/COlePasteSpecialDialog::GetPasteIndex", "AFXODLGS/COlePasteSpecialDialog::GetSelectionType", "AFXODLGS/COlePasteSpecialDialog::m_ps"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COlePasteSpecialDialog [MFC], COlePasteSpecialDialog", "COlePasteSpecialDialog [MFC], AddFormat", "COlePasteSpecialDialog [MFC], AddLinkEntry", "COlePasteSpecialDialog [MFC], AddStandardFormats", "COlePasteSpecialDialog [MFC], CreateItem", "COlePasteSpecialDialog [MFC], DoModal", "COlePasteSpecialDialog [MFC], GetDrawAspect", "COlePasteSpecialDialog [MFC], GetIconicMetafile", "COlePasteSpecialDialog [MFC], GetPasteIndex", "COlePasteSpecialDialog [MFC], GetSelectionType", "COlePasteSpecialDialog [MFC], m_ps"]
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COlePasteSpecialDialog Class
 
@@ -358,9 +351,9 @@ Members of this structure can be modified directly or through member functions.
 
 For more information, see the [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) structure in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)

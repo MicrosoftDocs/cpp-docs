@@ -1,16 +1,9 @@
 ---
-title: "basic_filebuf Class | Microsoft Docs"
-ms.custom: ""
+title: "basic_filebuf Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["fstream/std::basic_filebuf", "fstream/std::basic_filebuf::char_type", "fstream/std::basic_filebuf::int_type", "fstream/std::basic_filebuf::off_type", "fstream/std::basic_filebuf::pos_type", "fstream/std::basic_filebuf::traits_type", "fstream/std::basic_filebuf::close", "fstream/std::basic_filebuf::is_open", "fstream/std::basic_filebuf::open", "fstream/std::basic_filebuf::overflow", "fstream/std::basic_filebuf::pbackfail", "fstream/std::basic_filebuf::seekoff", "fstream/std::basic_filebuf::seekpos", "fstream/std::basic_filebuf::setbuf", "fstream/std::basic_filebuf::Swap", "fstream/std::basic_filebuf::sync", "fstream/std::basic_filebuf::uflow", "fstream/std::basic_filebuf::underflow"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_filebuf [C++]", "std::basic_filebuf [C++], char_type", "std::basic_filebuf [C++], int_type", "std::basic_filebuf [C++], off_type", "std::basic_filebuf [C++], pos_type", "std::basic_filebuf [C++], traits_type", "std::basic_filebuf [C++], close", "std::basic_filebuf [C++], is_open", "std::basic_filebuf [C++], open", "std::basic_filebuf [C++], overflow", "std::basic_filebuf [C++], pbackfail", "std::basic_filebuf [C++], seekoff", "std::basic_filebuf [C++], seekpos", "std::basic_filebuf [C++], setbuf", "std::basic_filebuf [C++], Swap", "std::basic_filebuf [C++], sync", "std::basic_filebuf [C++], uflow", "std::basic_filebuf [C++], underflow"]
 ms.assetid: 3196ba5c-bf38-41bd-9a95-70323ddfca1a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # basic_filebuf Class
 
@@ -469,11 +462,11 @@ The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
-If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(*\_Meta*).
 
 ### Remarks
 
-The protected virtual member function puts back an element into the input buffer and then makes it the current element (pointed to by the next pointer). If _ *Meta* **== traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*). The function can put back an element in various ways:
+The protected virtual member function puts back an element into the input buffer and then makes it the current element (pointed to by the next pointer). If *\_Meta* **== traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*). The function can put back an element in various ways:
 
 - If a putback position is available, and the element stored there compares equal to `ch`, it can decrement the next pointer for the input buffer.
 

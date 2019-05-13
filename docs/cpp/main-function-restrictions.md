@@ -1,16 +1,9 @@
 ---
-title: "main Function Restrictions | Microsoft Docs"
-ms.custom: ""
+title: "main Function Restrictions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["Main"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["main function, restrictions on using"]
 ms.assetid: 7b3df731-344b-44a8-850c-11cbcbfbfa83
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # main Function Restrictions
 

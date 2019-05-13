@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Declaring a Class for a Table (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Declaring a Class for a Table (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets, declaring class for tables", "recordsets, declaring classes for tables"]
 ms.assetid: 3fe286c2-3f3d-493d-9d8c-762310939d08
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Declaring a Class for a Table (ODBC)
 
@@ -23,7 +16,7 @@ Other uses for recordsets include:
 
 - Containing the results of a predefined query.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Creating and Closing Recordsets (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>

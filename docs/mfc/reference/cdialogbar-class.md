@@ -1,16 +1,9 @@
 ---
-title: "CDialogBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CDialogBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDialogBar", "AFXEXT/CDialogBar", "AFXEXT/CDialogBar::CDialogBar", "AFXEXT/CDialogBar::Create"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDialogBar [MFC], CDialogBar", "CDialogBar [MFC], Create"]
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDialogBar Class
 
@@ -136,9 +129,9 @@ If you specify the CBRS_TOP or CBRS_BOTTOM alignment style, the dialog bar's wid
 
 [!code-cpp[NVC_MFCMessageMaps#13](../../mfc/reference/codesnippet/cpp/cdialogbar-class_1.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CFormView Class](../../mfc/reference/cformview-class.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "improper_lock Class | Microsoft Docs"
-ms.custom: ""
+title: "improper_lock Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["improper_lock", "CONCRT/concurrency::improper_lock", "CONCRT/concurrency::improper_lock::improper_lock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["improper_lock class"]
 ms.assetid: 8f494942-7748-4a2a-8de2-23414bfe6346
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # improper_lock Class
 
@@ -61,7 +54,7 @@ improper_lock() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [critical_section Class](critical-section-class.md)<br/>

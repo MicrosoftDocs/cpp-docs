@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4532 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4532"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4532"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4532"]
 ms.assetid: 4e2a286a-d233-4106-9f65-29be1a94ca02
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4532
 

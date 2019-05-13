@@ -1,16 +1,9 @@
 ---
-title: "__inbyte | Microsoft Docs"
-ms.custom: ""
+title: "__inbyte"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__inbyte", "__inbyte_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["in instruction", "__inbyte intrinsic"]
 ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __inbyte
 
@@ -49,6 +42,6 @@ The byte read from the specified port.
 
 This routine is only available as an intrinsic.
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

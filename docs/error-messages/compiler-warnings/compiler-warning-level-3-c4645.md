@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4645 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4645"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4645"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4645"]
 ms.assetid: fd7c1ddf-f0d0-4e10-bab9-ccb4c3476298
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4645
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2787 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2787"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2787"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2787"]
 ms.assetid: 34cb57e6-cafe-4ce7-bcc6-53d194629bd0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2787
 

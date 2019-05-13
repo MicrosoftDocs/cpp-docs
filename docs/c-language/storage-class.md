@@ -1,15 +1,8 @@
 ---
-title: "Storage Class | Microsoft Docs"
-ms.custom: ""
+title: "Storage Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["linkage [C++], external", "function storage class", "function specifiers, storage class", "storage classes", "Microsoft-specific storage classes", "external linkage, storage-class specifiers", "static storage class specifiers"]
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Storage Class
 
@@ -47,6 +40,6 @@ When compiling with the /Ze compiler option, functions declared within a block u
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

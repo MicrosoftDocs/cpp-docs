@@ -1,22 +1,15 @@
 ---
-title: "Internet Information by Task | Microsoft Docs"
-ms.custom: ""
+title: "Internet Information by Task"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, Internet applications"]
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Internet Information by Task
 
 The tasks listed in this topic are sorted based on the task you want to accomplish.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 The following categories of tasks are listed in this topic:
 
@@ -48,7 +41,6 @@ The following categories of tasks are listed in this topic:
 
 - [Write a Gopher client application](../mfc/steps-in-a-typical-gopher-client-application.md)
 
-## See Also
+## See also
 
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "switch_type (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "switch_type (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.switch_type"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["switch_type attribute"]
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # switch_type
 
@@ -69,7 +62,7 @@ See the [case](case-cpp.md) example for a sample use of **switch_type**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>

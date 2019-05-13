@@ -1,15 +1,8 @@
 ---
-title: "Issuing a Parameterized Query | Microsoft Docs"
-ms.custom: ""
+title: "Issuing a Parameterized Query"
 ms.date: "10/19/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parameter queries, running using CCommand class"]
 ms.assetid: aedb0fce-52a4-4c97-a5c9-b2114be6c3b0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Issuing a Parameterized Query
 
@@ -77,6 +70,6 @@ END_PARAM_MAP()
 };
 ```
 
-## See Also
+## See also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)

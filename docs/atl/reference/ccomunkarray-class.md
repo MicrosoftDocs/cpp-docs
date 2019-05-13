@@ -1,16 +1,9 @@
 ---
-title: "CComUnkArray Class | Microsoft Docs"
-ms.custom: ""
+title: "CComUnkArray Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComUnkArray", "ATLCOM/ATL::CComUnkArray", "ATLCOM/ATL::CComUnkArray::CComUnkArray", "ATLCOM/ATL::CComUnkArray::Add", "ATLCOM/ATL::CComUnkArray::begin", "ATLCOM/ATL::CComUnkArray::end", "ATLCOM/ATL::CComUnkArray::GetCookie", "ATLCOM/ATL::CComUnkArray::GetUnknown", "ATLCOM/ATL::CComUnkArray::Remove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], managing", "CComUnkArray class"]
 ms.assetid: 5fd4b378-a7b5-4cc1-8866-8ab72a73639e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComUnkArray Class
 
@@ -184,7 +177,7 @@ The cookie referencing the `IUnknown` pointer to be removed from the array.
 
 Returns TRUE if the pointer is removed, FALSE otherwise.
 
-## See Also
+## See also
 
 [CComDynamicUnkArray Class](../../atl/reference/ccomdynamicunkarray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -1,16 +1,9 @@
 ---
-title: "CSimpleArray Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleArray Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::Add", "ATLSIMPCOLL/ATL::CSimpleArray::Find", "ATLSIMPCOLL/ATL::CSimpleArray::GetData", "ATLSIMPCOLL/ATL::CSimpleArray::GetSize", "ATLSIMPCOLL/ATL::CSimpleArray::Remove", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt", "ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleArray class"]
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleArray Class
 
@@ -296,6 +289,6 @@ The value to assign to the specified element.
 
 Returns TRUE if successful, FALSE if the index was not valid.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

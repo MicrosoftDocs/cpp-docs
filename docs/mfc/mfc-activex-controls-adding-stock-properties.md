@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Adding Stock Properties | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Adding Stock Properties"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["BackColor property [MFC]", "properties [MFC], adding stock", "ForeColor property [MFC]", "MFC ActiveX controls [MFC], properties", "foreground colors, ActiveX controls", "foreground colors [MFC]"]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Properties
 
@@ -95,7 +88,7 @@ The following example demonstrates using these two color properties when paintin
 
 [!code-cpp[NVC_MFC_AxUI#24](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_3.cpp)]
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md)<br/>

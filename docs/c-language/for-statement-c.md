@@ -1,15 +1,8 @@
 ---
-title: "for Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "for Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["for keyword [C]"]
 ms.assetid: 560a8de4-19db-4868-9f18-dbe51b17900d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # for Statement (C)
 
@@ -78,6 +71,6 @@ Number of spaces: 4
 Number of tabs: 2
 ```
 
-## See Also
+## See also
 
 [Statements](../c-language/statements-c.md)

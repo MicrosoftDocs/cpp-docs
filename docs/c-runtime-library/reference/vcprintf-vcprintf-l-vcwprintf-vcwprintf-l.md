@@ -1,19 +1,12 @@
 ---
-title: "_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l | Microsoft Docs"
-ms.custom: ""
+title: "_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_vcwprintf", "_vcprintf_l", "_vcwprintf_l", "_vcprintf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_vcwprintf_l", "_vtcprintf", "vcwprintf", "_vcwprintf", "vcprintf_l", "_vcprintf_l", "_vcprintf", "vcprintf", "vcwprintf_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["vcwprintf function", "_vcwprintf_l function", "_vcprintf function", "_vcprintf_l function", "vtcprintf_l function", "vcprintf function", "vcprintf_l function", "_vtcprintf function", "_vcwprintf function", "_vtcprintf_l function", "vcwprintf_l function", "vtcprintf function", "formatted text [C++]"]
 ms.assetid: 4ef8d237-6200-4b66-8731-8c57e5624bb1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l
 

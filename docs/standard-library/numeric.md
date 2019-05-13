@@ -1,16 +1,9 @@
 ---
-title: "&lt;numeric&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;numeric&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<numeric>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<numeric> header"]
 ms.assetid: 6d6ccb94-48cc-479b-b4a9-bd9c78d4896a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;numeric&gt;
 

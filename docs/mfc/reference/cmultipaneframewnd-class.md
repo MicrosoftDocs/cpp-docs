@@ -1,16 +1,9 @@
 ---
-title: "CMultiPaneFrameWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "CMultiPaneFrameWnd Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMultiPaneFrameWnd", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::AddPane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::AddRecentPane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::AdjustLayout", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::AdjustPaneFrames", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CalcExpectedDockedRect", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CanBeAttached", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CanBeDockedToPane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CheckGripperVisibility", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CloseMiniFrame", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::ConvertToTabbedDocument", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::DockFrame", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::DockPane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::DockRecentPaneToMainFrame", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetCaptionText", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetPaneContainerManager", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetFirstVisiblePane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetPane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetPaneCount", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetVisiblePaneCount", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::InsertPane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::LoadState", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnDockToRecentPos", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnKillRollUpTimer", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnPaneRecalcLayout", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnSetRollUpTimer", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnShowPane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::PaneFromPoint", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::RemoveNonValidPanes", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::RemovePane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::ReplacePane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SaveState", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::Serialize", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SetDockState", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SetLastFocusedPane", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SetPreDockState", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::StoreRecentDockSiteInfo", "AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::StoreRecentTabRelatedInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiPaneFrameWnd [MFC], AddPane", "CMultiPaneFrameWnd [MFC], AddRecentPane", "CMultiPaneFrameWnd [MFC], AdjustLayout", "CMultiPaneFrameWnd [MFC], AdjustPaneFrames", "CMultiPaneFrameWnd [MFC], CalcExpectedDockedRect", "CMultiPaneFrameWnd [MFC], CanBeAttached", "CMultiPaneFrameWnd [MFC], CanBeDockedToPane", "CMultiPaneFrameWnd [MFC], CheckGripperVisibility", "CMultiPaneFrameWnd [MFC], CloseMiniFrame", "CMultiPaneFrameWnd [MFC], ConvertToTabbedDocument", "CMultiPaneFrameWnd [MFC], DockFrame", "CMultiPaneFrameWnd [MFC], DockPane", "CMultiPaneFrameWnd [MFC], DockRecentPaneToMainFrame", "CMultiPaneFrameWnd [MFC], GetCaptionText", "CMultiPaneFrameWnd [MFC], GetPaneContainerManager", "CMultiPaneFrameWnd [MFC], GetFirstVisiblePane", "CMultiPaneFrameWnd [MFC], GetPane", "CMultiPaneFrameWnd [MFC], GetPaneCount", "CMultiPaneFrameWnd [MFC], GetVisiblePaneCount", "CMultiPaneFrameWnd [MFC], InsertPane", "CMultiPaneFrameWnd [MFC], LoadState", "CMultiPaneFrameWnd [MFC], OnDockToRecentPos", "CMultiPaneFrameWnd [MFC], OnKillRollUpTimer", "CMultiPaneFrameWnd [MFC], OnPaneRecalcLayout", "CMultiPaneFrameWnd [MFC], OnSetRollUpTimer", "CMultiPaneFrameWnd [MFC], OnShowPane", "CMultiPaneFrameWnd [MFC], PaneFromPoint", "CMultiPaneFrameWnd [MFC], RemoveNonValidPanes", "CMultiPaneFrameWnd [MFC], RemovePane", "CMultiPaneFrameWnd [MFC], ReplacePane", "CMultiPaneFrameWnd [MFC], SaveState", "CMultiPaneFrameWnd [MFC], Serialize", "CMultiPaneFrameWnd [MFC], SetDockState", "CMultiPaneFrameWnd [MFC], SetLastFocusedPane", "CMultiPaneFrameWnd [MFC], SetPreDockState", "CMultiPaneFrameWnd [MFC], StoreRecentDockSiteInfo", "CMultiPaneFrameWnd [MFC], StoreRecentTabRelatedInfo"]
 ms.assetid: 989a548e-0d70-46b7-a513-8cf740e1be3e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMultiPaneFrameWnd Class
 
@@ -80,7 +73,7 @@ For information about deriving a class from the `CPaneFrameWnd` class and creati
 
 ## Example
 
-The following example demonstrates how to retrieve a pointer to a `CMultiPaneFrameWnd` object. This code snippet is part of the [Set Pane Size sample](../../visual-cpp-samples.md).
+The following example demonstrates how to retrieve a pointer to a `CMultiPaneFrameWnd` object. This code snippet is part of the [Set Pane Size sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_SetPaneSize#4](../../mfc/reference/codesnippet/cpp/cmultipaneframewnd-class_1.cpp)]
 
@@ -561,7 +554,7 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

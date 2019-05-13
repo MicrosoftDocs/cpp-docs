@@ -1,15 +1,8 @@
 ---
-title: "SQL | Microsoft Docs"
-ms.custom: ""
+title: "SQL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["database classes [C++], SQL statements", "SQL [C++]", "SQL [C++], ODBC", "ODBC [C++], SQL implementation"]
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # SQL
 
@@ -80,7 +73,7 @@ The following topics provide more information about how the database classes use
 
 - [SQL: Making Direct SQL Calls (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [ODBC Basics](../../data/odbc/odbc-basics.md)

@@ -1,16 +1,9 @@
 ---
-title: "MFC Macros and Globals | Microsoft Docs"
-ms.custom: ""
+title: "MFC Macros and Globals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, global functions and variables", "MFC, macros", "global functions, MFC", "macros, MFC", "global functions [MFC]", "global variables, MFC", "Afx naming convention", "macros"]
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Macros and Globals
 
@@ -117,7 +110,6 @@ The first part of this section briefly discusses each of the previous categories
 > [!NOTE]
 >  Many global functions start with the prefix "Afx", but some, for example, the dialog data exchange (DDX) functions and many of the database functions, do not follow this convention. All global variables start with "afx" as a prefix. Macros do not start with any particular prefix, but they are written in uppercase letters.
 
-## See Also
+## See also
 
 [Class Overview](../../mfc/class-library-overview.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "_fmode | Microsoft Docs"
-ms.custom: ""
+title: "_fmode"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["fmode", "_fmode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["file translation [C++], default mode", "fmode function", "_fmode function"]
 ms.assetid: ac6df9eb-e5cc-4c54-aff3-373c21983118
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _fmode
 
@@ -34,7 +27,7 @@ You can change the value of `_fmode` in three ways:
 
 - Change the value of `_fmode` directly by setting it in your program.
 
-## See Also
+## See also
 
 [Global Variables](../c-runtime-library/global-variables.md)<br/>
 [_get_fmode](../c-runtime-library/reference/get-fmode.md)<br/>

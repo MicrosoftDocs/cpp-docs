@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2378 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2378"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2378"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2378"]
 ms.assetid: 507a91c6-ca72-48df-b3a4-2cf931c86806
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2378
 

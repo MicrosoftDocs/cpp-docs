@@ -1,15 +1,8 @@
 ---
-title: "Punctuators (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Punctuators (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["devlang-cpp"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["punctuators [C++]"]
 ms.assetid: 1521564c-a977-488a-9490-068079897592
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Punctuators (C++)
 

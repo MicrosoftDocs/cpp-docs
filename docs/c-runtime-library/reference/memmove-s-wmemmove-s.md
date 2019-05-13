@@ -1,19 +1,12 @@
 ---
-title: "memmove_s, wmemmove_s | Microsoft Docs"
-ms.custom: ""
+title: "memmove_s, wmemmove_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["wmemmove_s", "memmove_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["wmemmove_s", "memmove_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wmemmove_s function", "memmove_s function"]
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # memmove_s, wmemmove_s
 

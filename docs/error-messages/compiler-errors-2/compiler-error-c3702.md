@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3702 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3702"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3702"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3702"]
 ms.assetid: 14fcc20e-4404-45d7-be54-e4f09332fa5a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3702
 

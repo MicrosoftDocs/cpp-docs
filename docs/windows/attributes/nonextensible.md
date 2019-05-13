@@ -1,16 +1,9 @@
 ---
-title: "nonextensible (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "nonextensible (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.nonextensible"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nonextensible attribute"]
 ms.assetid: c7ef1554-809f-4ea0-a7cd-dc7786d40c3e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # nonextensible
 
@@ -60,7 +53,7 @@ __interface IFireTabCtrl
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)

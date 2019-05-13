@@ -1,16 +1,9 @@
 ---
-title: "CMFCFilterChunkValueImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCFilterChunkValueImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCFilterChunkValueImpl", "AFXWIN/CMFCFilterChunkValueImpl", "AFXWIN/CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl", "AFXWIN/CMFCFilterChunkValueImpl::Clear", "AFXWIN/CMFCFilterChunkValueImpl::CopyChunk", "AFXWIN/CMFCFilterChunkValueImpl::CopyFrom", "AFXWIN/CMFCFilterChunkValueImpl::GetChunkGUID", "AFXWIN/CMFCFilterChunkValueImpl::GetChunkPID", "AFXWIN/CMFCFilterChunkValueImpl::GetChunkType", "AFXWIN/CMFCFilterChunkValueImpl::GetString", "AFXWIN/CMFCFilterChunkValueImpl::GetValue", "AFXWIN/CMFCFilterChunkValueImpl::GetValueNoAlloc", "AFXWIN/CMFCFilterChunkValueImpl::IsValid", "AFXWIN/CMFCFilterChunkValueImpl::SetBoolValue", "AFXWIN/CMFCFilterChunkValueImpl::SetDwordValue", "AFXWIN/CMFCFilterChunkValueImpl::SetFileTimeValue", "AFXWIN/CMFCFilterChunkValueImpl::SetInt64Value", "AFXWIN/CMFCFilterChunkValueImpl::SetIntValue", "AFXWIN/CMFCFilterChunkValueImpl::SetLongValue", "AFXWIN/CMFCFilterChunkValueImpl::SetSystemTimeValue", "AFXWIN/CMFCFilterChunkValueImpl::SetTextValue", "AFXWIN/CMFCFilterChunkValueImpl::SetChunk"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCFilterChunkValueImpl [MFC], CMFCFilterChunkValueImpl", "CMFCFilterChunkValueImpl [MFC], Clear", "CMFCFilterChunkValueImpl [MFC], CopyChunk", "CMFCFilterChunkValueImpl [MFC], CopyFrom", "CMFCFilterChunkValueImpl [MFC], GetChunkGUID", "CMFCFilterChunkValueImpl [MFC], GetChunkPID", "CMFCFilterChunkValueImpl [MFC], GetChunkType", "CMFCFilterChunkValueImpl [MFC], GetString", "CMFCFilterChunkValueImpl [MFC], GetValue", "CMFCFilterChunkValueImpl [MFC], GetValueNoAlloc", "CMFCFilterChunkValueImpl [MFC], IsValid", "CMFCFilterChunkValueImpl [MFC], SetBoolValue", "CMFCFilterChunkValueImpl [MFC], SetDwordValue", "CMFCFilterChunkValueImpl [MFC], SetFileTimeValue", "CMFCFilterChunkValueImpl [MFC], SetInt64Value", "CMFCFilterChunkValueImpl [MFC], SetIntValue", "CMFCFilterChunkValueImpl [MFC], SetLongValue", "CMFCFilterChunkValueImpl [MFC], SetSystemTimeValue", "CMFCFilterChunkValueImpl [MFC], SetTextValue", "CMFCFilterChunkValueImpl [MFC], SetChunk"]
 ms.assetid: 3c833f23-5b88-4d08-9e09-ca6a8aec88bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCFilterChunkValueImpl Class
 
@@ -652,6 +645,6 @@ S_OK if successful; otherwise an error code.
 
 ### Remarks
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

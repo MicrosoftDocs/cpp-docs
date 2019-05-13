@@ -1,16 +1,9 @@
 ---
-title: "Assignment Operators | Microsoft Docs"
-ms.custom: ""
-ms.date: "03/05/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "Assignment Operators"
+ms.date: "03/27/2019"
 f1_keywords: ["=", "*=", "/=", "%=", "+=", "-=", "<<=", ">>=", "&=", "^=", "|="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], C++", "&= operator", "^= operator", "+= operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "-= operator", "/= operator", "<<= operator"]
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Assignment Operators
 
@@ -19,7 +12,7 @@ ms.workload: ["cplusplus"]
 *expression* *assignment-operator* *expression*
 
 *assignment-operator* : one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>=   *=   /=   %=   +=   -=   \<\<=   >>=   &=   ^=   \|=</strong>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>=&nbsp;&nbsp;&nbsp;*=&nbsp;&nbsp;&nbsp;/=&nbsp;&nbsp;&nbsp;%=&nbsp;&nbsp;&nbsp;+=&nbsp;&nbsp;&nbsp;-=&nbsp;&nbsp;&nbsp;\<\<=&nbsp;&nbsp;&nbsp;>>=&nbsp;&nbsp;&nbsp;&=&nbsp;&nbsp;&nbsp;^=&nbsp;&nbsp;&nbsp;\|=</strong>
 
 ## Remarks
 
@@ -31,7 +24,7 @@ Assignment operators store a value in the object designated by the left operand.
 
 All assignment operators in the following table except the = operator are compound assignment operators.
 
-### Assignment Operators
+### Assignment operators table
 
 |Operator|Meaning|
 |--------------|-------------|
@@ -47,7 +40,7 @@ All assignment operators in the following table except the = operator are compou
 |**^=**|Obtain the bitwise exclusive OR of the first and second operands; store the result in the object specified by the first operand.|
 |**\|=**|Obtain the bitwise inclusive OR of the first and second operands; store the result in the object specified by the first operand.|
 
-**Operator Keywords**
+### Operator keywords
 
 Three of the compound assignment operators have text equivalents. They are:
 
@@ -154,7 +147,7 @@ can have one of the following effects:
 
 ## Compound assignment
 
-The compound assignment operators, shown in the table in [Assignment Operators](#assignment-operators), are specified in the form *e1* *op*= *e2*, where *e1* is a modifiable l-value not of **const** type and *e2* is one of the following:
+The compound assignment operators, shown in the [Assignment operators table](#assignment-operators-table), are specified in the form *e1* *op*= *e2*, where *e1* is a modifiable l-value not of **const** type and *e2* is one of the following:
 
 - An arithmetic type
 

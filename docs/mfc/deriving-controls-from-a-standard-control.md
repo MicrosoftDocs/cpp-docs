@@ -1,15 +1,8 @@
 ---
-title: "Deriving Controls from a Standard Control | Microsoft Docs"
-ms.custom: ""
+title: "Deriving Controls from a Standard Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["standard controls [MFC], deriving controls from", "common controls [MFC], deriving from", "derived controls", "controls [MFC], derived", "Windows common controls [MFC], deriving from", "standard controls"]
 ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Deriving Controls from a Standard Control
 
@@ -37,8 +30,7 @@ Using a derived control in a dialog box requires extra work. The types and posit
 
 Because the derived control is embedded in the dialog class, it will be constructed when the dialog box is constructed, and it will be destroyed when the dialog box is destroyed. Compare this code to the example in [Adding Controls By Hand](../mfc/adding-controls-by-hand.md).
 
-## See Also
+## See also
 
 [Making and Using Controls](../mfc/making-and-using-controls.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

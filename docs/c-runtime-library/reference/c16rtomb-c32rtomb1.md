@@ -1,19 +1,12 @@
 ---
-title: "c16rtomb, c32rtomb1 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
+title: "c16rtomb, c32rtomb"
+ms.date: "01/22/2018"
 apiname: ["c16rtomb", "c32rtomb"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["c16rtomb", "c32rtomb", "uchar/c16rtomb", "uchar/c32rtomb"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["c16rtomb function", "c32rtomb function"]
 ms.assetid: 7f5743ca-a90e-4e3f-a310-c73e16f4e14d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # c16rtomb, c32rtomb
 

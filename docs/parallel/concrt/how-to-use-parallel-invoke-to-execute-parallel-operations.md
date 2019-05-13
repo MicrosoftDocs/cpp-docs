@@ -1,15 +1,8 @@
 ---
-title: "How to: Use parallel_invoke to Execute Parallel Operations | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use parallel_invoke to Execute Parallel Operations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parallel_invoke function, example", "calling multiple functions in parallel [Concurrency Runtime]"]
 ms.assetid: a6aea69b-d647-4b7e-bf3b-e6a6a9880072
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use parallel_invoke to Execute Parallel Operations
 
@@ -75,8 +68,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 **cl.exe /EHsc /MD /DUNICODE /D_AFXDLL parallel-word-mining.cpp**
 
-## See Also
+## See also
 
 [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)
-

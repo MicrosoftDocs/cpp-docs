@@ -1,16 +1,9 @@
 ---
-title: "TN031: Control Bars | Microsoft Docs"
-ms.custom: ""
+title: "TN031: Control Bars"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.controls.bars"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["control bars [MFC], styles", "CStatusBar class [MFC], Tech Note 31 usage", "CControlBar class [MFC], Tech Note 31 usage", "CControlBar class [MFC], deriving from", "control bars [MFC], classes [MFC]", "CDialogBar class [MFC], Tech Note 31 usage", "CToolBar class [MFC], Tech Note 31 usage", "TN031", "styles [MFC], control bars"]
 ms.assetid: 8cb895c0-40ea-40ef-90ee-1dd29f34cfd1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN031: Control Bars
 
@@ -127,7 +120,7 @@ All the bitmap buttons in the toolbar are taken from one bitmap. This bitmap mus
 
 Each button must be the same size. The default is the standard 24x22 pixels. Each image/glyph must be the same size and must be side-by-side in the bitmap. The default image/glyph size is 16x15 pixels. Therefore, for a toolbar with 10 buttons (using standard sizes), you need a bitmap that is 160 pixels wide and 15 pixels high.
 
-Each button has one and only one image/glyph. The different button states and styles (for example, pressed, up, down, disabled, disabled down, indeterminate) are algorithmically generated from that one image/glyph. Any color bitmap or DIB can be used in theory. The algorithm for generating the different button states works best if the original image is shades of gray. Look at the standard toolbar buttons and the toolbar button clipart provided in MFC General sample [CLIPART](../visual-cpp-samples.md) for examples.
+Each button has one and only one image/glyph. The different button states and styles (for example, pressed, up, down, disabled, disabled down, indeterminate) are algorithmically generated from that one image/glyph. Any color bitmap or DIB can be used in theory. The algorithm for generating the different button states works best if the original image is shades of gray. Look at the standard toolbar buttons and the toolbar button clipart provided in MFC General sample [CLIPART](../overview/visual-cpp-samples.md) for examples.
 
 The colors used in the toolbar are also consistent with the recommendation of the Windows Interface Application Design Guide. These colors are not hard coded and are changed dynamically in response to user customization in Control Panel.
 
@@ -214,8 +207,7 @@ The ON_UPDATE_COMMAND_UI handler can call:
 
 Customization can be done through standard window manager APIs.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

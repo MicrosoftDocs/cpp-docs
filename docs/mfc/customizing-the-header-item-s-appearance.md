@@ -1,15 +1,8 @@
 ---
-title: "Customizing the Header Item&#39;s Appearance | Microsoft Docs"
-ms.custom: ""
+title: "Customizing the Header Item&#39;s Appearance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["header controls [MFC], customization of items", "CHeaderCtrl class [MFC], customizing the items", "HDS_ styles"]
 ms.assetid: b1e1e326-ec7d-4dbd-a46f-96a3e2055618
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Customizing the Header Item&#39;s Appearance
 
@@ -31,8 +24,7 @@ Here is a sampling of the styles you can set, and their purpose:
 
 For more information about these properties, see [Items](/windows/desktop/Controls/header-controls) in the Windows SDK. For information about adding items to a header control, see [Adding Items to the Header Control](../mfc/adding-items-to-the-header-control.md).
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

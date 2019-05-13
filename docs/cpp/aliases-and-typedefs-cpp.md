@@ -1,15 +1,8 @@
 ---
-title: "Aliases and typedefs (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Aliases and typedefs (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["typedef_cpp"]
-dev_langs: ["C++"]
 ms.assetid: af1c24d2-4bfd-408a-acfc-482e264232f5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Aliases and typedefs (C++)
 
@@ -68,7 +61,6 @@ using func = void(*)(int);
 // func can be assigned to a function pointer value
 void actual_function(int arg) { /* some code */ }
 func fptr = &actual_function;
-
 ```
 
 A limitation of the **typedef** mechanism is that it doesn't work with templates. However, the type alias syntax in C++11 enables the creation of alias templates:
@@ -78,7 +70,6 @@ template<typename T> using ptr = T*;
 
 // the name 'ptr<T>' is now an alias for pointer to T
 ptr<int> ptr_int;
-
 ```
 
 ## Example

@@ -1,15 +1,8 @@
 ---
-title: "Specifying the Pathname | Microsoft Docs"
-ms.custom: ""
+title: "Specifying the Pathname"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["names [C++], compiler output files", "cl.exe compiler, output files", "output files, specifying pathnames"]
 ms.assetid: 7a6595ce-3383-44ae-957a-466bfa29c343
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Specifying the Pathname
 
@@ -34,8 +27,8 @@ The following command line sends a mapfile to the printer:
 CL /FmPRN HELLO.CPP
 ```
 
-## See Also
+## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

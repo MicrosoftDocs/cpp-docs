@@ -1,16 +1,9 @@
 ---
-title: "__alignof Operator | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "__alignof Operator"
+ms.date: "12/17/2018" 
 f1_keywords: ["alignas_cpp", "__alignof_cpp", "alignof_cpp", "__alignof", "_alignof"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["alignas [C++]", "alignment of structures", "__alignof keyword [C++]", "alignof [C++]", "types [C++], alignment requirements"]
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __alignof Operator
 
@@ -77,11 +70,11 @@ For more information on modifying alignment, see:
 
 - [/Zp (Struct Member Alignment)](../build/reference/zp-struct-member-alignment.md)
 
-- [Examples of Structure Alignment](../build/examples-of-structure-alignment.md) (x64 specific)
+- [Examples of Structure Alignment](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
 
 For more information on differences in alignment in code for x86 and x64, see:
 
-- [Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
+- [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
 
 **END Microsoft Specific**
 

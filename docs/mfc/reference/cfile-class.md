@@ -1,16 +1,9 @@
 ---
-title: "CFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CFile Class"
 ms.date: "06/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFile", "AFX/CFile", "AFX/CFile::CFile", "AFX/CFile::Abort", "AFX/CFile::Close", "AFX/CFile::Duplicate", "AFX/CFile::Flush", "AFX/CFile::GetFileName", "AFX/CFile::GetFilePath", "AFX/CFile::GetFileTitle", "AFX/CFile::GetLength", "AFX/CFile::GetPosition", "AFX/CFile::GetStatus", "AFX/CFile::LockRange", "AFX/CFile::Open", "AFX/CFile::Read", "AFX/CFile::Remove", "AFX/CFile::Rename", "AFX/CFile::Seek", "AFX/CFile::SeekToBegin", "AFX/CFile::SeekToEnd", "AFX/CFile::SetFilePath", "AFX/CFile::SetLength", "AFX/CFile::SetStatus", "AFX/CFile::UnlockRange", "AFX/CFile::Write", "AFX/CFile::hFileNull", "AFX/CFile::m_hFile", "AFX/CFile::m_pTM"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFile [MFC], CFile", "CFile [MFC], Abort", "CFile [MFC], Close", "CFile [MFC], Duplicate", "CFile [MFC], Flush", "CFile [MFC], GetFileName", "CFile [MFC], GetFilePath", "CFile [MFC], GetFileTitle", "CFile [MFC], GetLength", "CFile [MFC], GetPosition", "CFile [MFC], GetStatus", "CFile [MFC], LockRange", "CFile [MFC], Open", "CFile [MFC], Read", "CFile [MFC], Remove", "CFile [MFC], Rename", "CFile [MFC], Seek", "CFile [MFC], SeekToBegin", "CFile [MFC], SeekToEnd", "CFile [MFC], SetFilePath", "CFile [MFC], SetLength", "CFile [MFC], SetStatus", "CFile [MFC], UnlockRange", "CFile [MFC], Write", "CFile [MFC], hFileNull", "CFile [MFC], m_hFile", "CFile [MFC], m_pTM"]
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFile Class
 
@@ -861,9 +854,9 @@ The number of bytes to be transferred from the buffer. For text-mode files, carr
 
 In addition, see the examples for [CFile::CFile](#cfile) and [CFile::Open](#open).
 
-## See Also
+## See also
 
-[MFC Sample DRAWCLI](../../visual-cpp-samples.md)<br/>
+[MFC Sample DRAWCLI](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CStdioFile Class](../../mfc/reference/cstdiofile-class.md)<br/>

@@ -1,13 +1,8 @@
 ---
-title: "/Zc:alignedNew (C++17 over-aligned allocation) | Microsoft Docs"
+title: "/Zc:alignedNew (C++17 over-aligned allocation)"
 ms.date: "02/28/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:alignedNew"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc:alignedNew", "Zc:alignedNew", "-Zc:alignedNew"]
-author: "corob-msft"
-ms.author: "corob"
 ---
 # /Zc:alignedNew (C++17 over-aligned allocation)
 
@@ -92,7 +87,7 @@ For information about conformance issues in Visual C++, see [Nonstandard Behavio
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -100,4 +95,4 @@ For information about conformance issues in Visual C++, see [Nonstandard Behavio
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)
+[/Zc (Conformance)](zc-conformance.md)

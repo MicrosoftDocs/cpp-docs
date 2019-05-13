@@ -1,15 +1,9 @@
 ---
-title: "How to: Convert char * String to System::Byte Array | Microsoft Docs"
+title: "How to: Convert char * String to System::Byte Array"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["examples [C++], strings", "arrays [C++], character", "character arrays, converting to System::Byte arrays", "examples [C++], arrays"]
 ms.assetid: de9bc4eb-773c-4796-a496-9b90ca986503
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert char \* String to System::Byte Array
 
@@ -47,6 +41,6 @@ int main() {
 Native String
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

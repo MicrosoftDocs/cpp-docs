@@ -1,16 +1,9 @@
 ---
-title: "&lt;bitset&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;bitset&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<bitset>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<bitset> header", "bitset header"]
 ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt;
 
@@ -21,7 +14,6 @@ Defines the template class bitset and two supporting template functions for repr
 ```
 
 #include <bitset>
-
 ```
 
 ### Operators

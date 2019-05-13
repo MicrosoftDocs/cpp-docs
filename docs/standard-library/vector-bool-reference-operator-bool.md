@@ -1,16 +1,9 @@
 ---
-title: "vector&lt;bool&gt;::reference::operator bool | Microsoft Docs"
-ms.custom: ""
+title: "vector&lt;bool&gt;::reference::operator bool"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["operatorbool", "vector<bool>::reference::operatorbool", "bool", "std::vector<bool>::reference::operatorbool"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BOOL operator", "reference::operator bool"]
 ms.assetid: b0e57869-18cc-4296-9061-da502f30120d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # vector&lt;bool&gt;::reference::operator bool
 

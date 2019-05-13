@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2147 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2147"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2147"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2147"]
 ms.assetid: 09974f06-1731-4e70-b373-f9218e0ee8d9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2147
 

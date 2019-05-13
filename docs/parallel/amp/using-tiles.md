@@ -1,14 +1,7 @@
 ---
-title: "Using Tiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "06/28/2018"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Using Tiles"
+ms.date: "11/19/2018"
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Tiles
 
@@ -28,7 +21,7 @@ To take advantage of tiling, your algorithm must partition the compute domain in
 
 The following diagram represents an 8x9 matrix of data that is arranged in 2x3 tiles.
 
-![8&#45;by&#45;9 matrix divided into 2&#45;by&#45;3 tiles](../../parallel/amp/media/usingtilesmatrix.png "usingtilesmatrix")
+![8&#45;by&#45;9 matrix divided into 2&#45;by&#45;3 tiles](../../parallel/amp/media/usingtilesmatrix.png "8&#45;by&#45;9 matrix divided into 2&#45;by&#45;3 tiles")
 
 The following example displays the global, tile, and local indices of this tiled matrix. An `array_view` object is created by using elements of type `Description`. The `Description` holds the global, tile, and local indices of the element in the matrix. The code in the call to `parallel_for_each` sets the values of the global, tile, and local indices of each element. The output displays the values in the `Description` structures.
 

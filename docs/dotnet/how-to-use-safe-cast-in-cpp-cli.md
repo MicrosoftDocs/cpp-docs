@@ -1,19 +1,12 @@
 ---
-title: "How to: Use safe_cast in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use safe_cast in C++/CLI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["safe_cast keyword [C++], upcasting"]
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use safe_cast in C++/CLI
 
-This article shows how to use safe_cast in C++/CLI applications. For information about safe_cast in C++/CX, see [safe_cast](../windows/safe-cast-cpp-component-extensions.md).
+This article shows how to use safe_cast in C++/CLI applications. For information about safe_cast in C++/CX, see [safe_cast](../extensions/safe-cast-cpp-component-extensions.md).
 
 ## Upcasting
 
@@ -329,6 +322,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
-[safe_cast](../windows/safe-cast-cpp-component-extensions.md)
+[safe_cast](../extensions/safe-cast-cpp-component-extensions.md)

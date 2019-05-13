@@ -1,15 +1,8 @@
 ---
-title: "Adding an ATL COM+ 1.0 Component | Microsoft Docs"
-ms.custom: ""
+title: "Adding an ATL COM+ 1.0 Component"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL COM+ 1.0", "ATL projects, adding components", "components [C++], adding ATL COM+ 1.0", "objects [C++], supporting ATL COM+ 1.0"]
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL COM+ 1.0 Component
 
@@ -23,7 +16,7 @@ This wizard adds an object to your project that supports COM+ 1.0 services, incl
 
 1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the **Templates** pane, click **ATL COM+ 1.0 Component**, and then click **Open** to display the [ATL COM+ 1.0 Component Wizard](../../atl/reference/atl-com-plus-1-0-component-wizard.md).
 
-## See Also
+## See also
 
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Adding a Method](../../ide/adding-a-method-visual-cpp.md)

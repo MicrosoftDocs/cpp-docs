@@ -1,14 +1,7 @@
 ---
-title: "Using C++ AMP in UWP Apps | Microsoft Docs"
-ms.custom: ""
+title: "Using C++ AMP in UWP Apps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 85577298-2c28-4209-9470-eb21048615db
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using C++ AMP in UWP Apps
 
@@ -114,7 +107,7 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
     });
 ```
 
-## See Also
+## See also
 
 [Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

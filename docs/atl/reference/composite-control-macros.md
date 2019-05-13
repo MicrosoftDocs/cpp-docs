@@ -1,16 +1,9 @@
 ---
-title: "Composite Control Macros | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
+title: "Composite Control Macros"
+ms.date: "05/06/2019"
 f1_keywords: ["atlcom/ATL::BEGIN_SINK_MAP", "atlcom/ATL::END_SINK_MAP", "atlcom/ATL::SINK_ENTRY"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["composite controls, macros"]
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Composite Control Macros
 
@@ -161,7 +154,7 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 
 The first four macro parameters are the same as those for the [SINK_ENTRY_EX](#sink_entry_ex) macro. The final parameter provides type information for the event. CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)<br/>
 [Composite Control Global Functions](../../atl/reference/composite-control-global-functions.md)

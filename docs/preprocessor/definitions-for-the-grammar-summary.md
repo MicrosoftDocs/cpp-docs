@@ -1,15 +1,8 @@
 ---
-title: "Definitions for the Grammar Summary | Microsoft Docs"
-ms.custom: ""
+title: "Definitions for the Grammar Summary"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor, definitions", "preprocessor"]
 ms.assetid: cc752dc8-6f4e-4347-a556-e0d9ef4c46bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Definitions for the Grammar Summary
 
@@ -23,6 +16,6 @@ An optional component is indicated by the subscripted <sub>opt</sub>. For exampl
 
 **{** *expression*<sub>opt</sub> **}**
 
-## See Also
+## See also
 
 [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

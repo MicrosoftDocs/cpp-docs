@@ -1,15 +1,8 @@
 ---
-title: "Expressions in Parentheses | Microsoft Docs"
-ms.custom: ""
+title: "Expressions in Parentheses"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parentheses", "expression evaluation, evaluation order", "expressions [C++], evaluating", "parentheses, expressions"]
 ms.assetid: b8636147-6982-408c-9e64-29e40678ee43
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expressions in Parentheses
 
@@ -36,6 +29,6 @@ The compiler is free to evaluate the two sides of the multiplication in any orde
 
 Exceptions resulting from side effects are discussed in [Side Effects](../c-language/side-effects.md).
 
-## See Also
+## See also
 
 [C Primary Expressions](../c-language/c-primary-expressions.md)

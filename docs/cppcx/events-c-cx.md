@@ -1,13 +1,7 @@
 ---
-title: "Events (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Events (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Events (C++/CX)
 
@@ -58,7 +52,7 @@ Multiple handlers may be associated with the same event. The event source sequen
 
 The order in which the event source invokes event handlers on event receivers is not guaranteed and may differ from call to call.
 
-## See Also
+## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Delegates](../cppcx/delegates-c-cx.md)<br/>

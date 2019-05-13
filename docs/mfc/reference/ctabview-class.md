@@ -1,16 +1,9 @@
 ---
-title: "CTabView Class | Microsoft Docs"
-ms.custom: ""
+title: "CTabView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTabView", "AFXTABVIEW/CTabView", "AFXTABVIEW/CTabView::AddView", "AFXTABVIEW/CTabView::FindTab", "AFXTABVIEW/CTabView::GetActiveView", "AFXTABVIEW/CTabView::GetTabControl", "AFXTABVIEW/CTabView::RemoveView", "AFXTABVIEW/CTabView::SetActiveView", "AFXTABVIEW/CTabView::IsScrollBar", "AFXTABVIEW/CTabView::OnActivateView"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTabView [MFC], AddView", "CTabView [MFC], FindTab", "CTabView [MFC], GetActiveView", "CTabView [MFC], GetTabControl", "CTabView [MFC], RemoveView", "CTabView [MFC], SetActiveView", "CTabView [MFC], IsScrollBar", "CTabView [MFC], OnActivateView"]
 ms.assetid: 8e6ecd9d-d28d-432b-8ec8-0446f0204d52
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTabView Class
 
@@ -48,7 +41,7 @@ This class makes it easy to put a tabbed view into a document/view application. 
 
 For example, you might have a document that can be represented in different ways: as a spreadsheet, a chart, an editable form, and so on. You can create individual views drawing the data as needed, insert them into your `CTabView`-derived object and have them tabbed without any additional coding.
 
-[TabbedView Sample: MFC Tabbed View Application](../../visual-cpp-samples.md) illustrates usage of `CTabView`.
+[TabbedView Sample: MFC Tabbed View Application](../../overview/visual-cpp-samples.md) illustrates usage of `CTabView`.
 
 ## Example
 
@@ -216,7 +209,7 @@ TRUE if the specified view was made active, FALSE if the view's index is invalid
 
 For more information see [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "true (C++) | Microsoft Docs"
-ms.custom: ""
+title: "true (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["true_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["true keyword [C++]"]
 ms.assetid: 96be2a70-51c3-4250-9752-874d25a5a11e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # true (C++)
 

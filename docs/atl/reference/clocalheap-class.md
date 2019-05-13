@@ -1,16 +1,9 @@
 ---
-title: "CLocalHeap Class | Microsoft Docs"
-ms.custom: ""
+title: "CLocalHeap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CLocalHeap", "ATLMEM/ATL::CLocalHeap", "ATLMEM/ATL::CLocalHeap::Allocate", "ATLMEM/ATL::CLocalHeap::Free", "ATLMEM/ATL::CLocalHeap::GetSize", "ATLMEM/ATL::CLocalHeap::Reallocate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CLocalHeap class"]
 ms.assetid: 1ffa87a5-5fc8-4f8d-8809-58e87e963bd2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CLocalHeap Class
 
@@ -144,7 +137,7 @@ Call [CLocalHeap::Free](#free) to free the memory allocated by this method.
 
 Implemented using [LocalReAlloc](/windows/desktop/api/winbase/nf-winbase-localrealloc).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComHeap Class](../../atl/reference/ccomheap-class.md)<br/>

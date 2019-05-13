@@ -1,16 +1,9 @@
 ---
-title: "CComboBoxEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CComboBoxEx Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CComboBoxEx", "AFXCMN/CComboBoxEx", "AFXCMN/CComboBoxEx::CComboBoxEx", "AFXCMN/CComboBoxEx::Create", "AFXCMN/CComboBoxEx::CreateEx", "AFXCMN/CComboBoxEx::DeleteItem", "AFXCMN/CComboBoxEx::GetComboBoxCtrl", "AFXCMN/CComboBoxEx::GetEditCtrl", "AFXCMN/CComboBoxEx::GetExtendedStyle", "AFXCMN/CComboBoxEx::GetImageList", "AFXCMN/CComboBoxEx::GetItem", "AFXCMN/CComboBoxEx::HasEditChanged", "AFXCMN/CComboBoxEx::InsertItem", "AFXCMN/CComboBoxEx::SetExtendedStyle", "AFXCMN/CComboBoxEx::SetImageList", "AFXCMN/CComboBoxEx::SetItem", "AFXCMN/CComboBoxEx::SetWindowTheme"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComboBoxEx [MFC], CComboBoxEx", "CComboBoxEx [MFC], Create", "CComboBoxEx [MFC], CreateEx", "CComboBoxEx [MFC], DeleteItem", "CComboBoxEx [MFC], GetComboBoxCtrl", "CComboBoxEx [MFC], GetEditCtrl", "CComboBoxEx [MFC], GetExtendedStyle", "CComboBoxEx [MFC], GetImageList", "CComboBoxEx [MFC], GetItem", "CComboBoxEx [MFC], HasEditChanged", "CComboBoxEx [MFC], InsertItem", "CComboBoxEx [MFC], SetExtendedStyle", "CComboBoxEx [MFC], SetImageList", "CComboBoxEx [MFC], SetItem", "CComboBoxEx [MFC], SetWindowTheme"]
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComboBoxEx Class
 
@@ -119,7 +112,7 @@ virtual BOOL Create(
 Specifies the combination of combo box styles applied to the combo box. See **Remarks** below for more information about styles.
 
 *rect*<br/>
-A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, which is the position and size of the combo box.
+A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, which is the position and size of the combo box.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the combo box (usually a `CDialog`). It must not be NULL.
@@ -179,7 +172,7 @@ Specifies the extended style of the control being created. For a list of extende
 The combo box control's style. See [Create](#create) for a list of styles.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -216,7 +209,7 @@ The number of items remaining in the control. If *iIndex* is invalid, the functi
 
 ### Remarks
 
-This member function implements the functionality of the message [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem), as described in the Windows SDK. When you call DeleteItem, a [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) message with CBEN_DELETEITEM notification will be sent to the parent window.
+This member function implements the functionality of the message [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem), as described in the Windows SDK. When you call DeleteItem, a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message with CBEN_DELETEITEM notification will be sent to the parent window.
 
 ##  <a name="getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl
 
@@ -342,7 +335,7 @@ The index at which the new item was inserted if successful; otherwise -1.
 
 ### Remarks
 
-When you call `InsertItem`, a [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) message with [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) notification will be sent to the parent window.
+When you call `InsertItem`, a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message with [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) notification will be sent to the parent window.
 
 ##  <a name="setextendedstyle"></a>  CComboBoxEx::SetExtendedStyle
 
@@ -437,9 +430,9 @@ The return value is not used.
 
 This member function emulates the functionality of the [CBEM_SETWINDOWTHEME](/windows/desktop/Controls/cbem-setwindowtheme) message, as described in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CComboBox Class](../../mfc/reference/ccombobox-class.md)

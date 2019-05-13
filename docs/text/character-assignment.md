@@ -1,15 +1,8 @@
 ---
-title: "Character Assignment | Microsoft Docs"
-ms.custom: ""
+title: "Character Assignment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["characters [C++], assignments", "MBCS [C++], character assignments"]
 ms.assetid: dcc329cd-92df-4e20-817d-364be62ff28f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Character Assignment
 
@@ -41,7 +34,7 @@ while( *sz2 )
 }
 ```
 
-## See Also
+## See also
 
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
 [Character Comparison](../text/character-comparison.md)

@@ -1,16 +1,9 @@
 ---
-title: "default_scheduler_exists Class | Microsoft Docs"
-ms.custom: ""
+title: "default_scheduler_exists Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["default_scheduler_exists", "CONCRT/concurrency::default_scheduler_exists", "CONCRT/concurrency::default_scheduler_exists::default_scheduler_exists"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["default_scheduler_exists class"]
 ms.assetid: f6e575e2-4e0f-455a-9e06-54f462ce0c1c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # default_scheduler_exists Class
 
@@ -57,6 +50,6 @@ default_scheduler_exists() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

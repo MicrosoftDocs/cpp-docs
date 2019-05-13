@@ -1,14 +1,8 @@
 ---
-title: "Algorithms (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Algorithms (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 6f758d3c-a7c7-4a50-92bb-97b2f6d4ab27
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Algorithms (Modern C++)
 
@@ -75,6 +69,6 @@ It's no secret that the old CRT `rand()` function has many flaws, which have bee
 
 ## See also
 
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "ATL_DRAWINFO Structure | Microsoft Docs"
-ms.custom: ""
+title: "ATL_DRAWINFO Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["ATL::ATL_DRAWINFO", "ATL_DRAWINFO", "ATL.ATL_DRAWINFO"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_DRAWINFO structure"]
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL_DRAWINFO Structure
 
@@ -87,7 +80,7 @@ This structure stores pertinent information used to render the appearance of an 
 
 **Header:** atlctl.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)<br/>
 [IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)<br/>

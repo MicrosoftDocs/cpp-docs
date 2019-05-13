@@ -1,15 +1,8 @@
 ---
-title: "scheduler_interface Structure | Microsoft Docs"
-ms.custom: ""
+title: "scheduler_interface Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["scheduler_interface", "PPLINTERFACE/concurrency::scheduler_interface", "PPLINTERFACE/concurrency::scheduler_interface::scheduler_interface::schedule"]
-dev_langs: ["C++"]
 ms.assetid: 4de61c78-a2c6-4698-bd47-964baf7fa287
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # scheduler_interface Structure
 
@@ -47,6 +40,6 @@ virtual void schedule(
 void*) = 0;
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

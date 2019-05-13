@@ -1,16 +1,9 @@
 ---
-title: "CComClassFactory Class | Microsoft Docs"
-ms.custom: ""
+title: "CComClassFactory Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComClassFactory", "ATLCOM/ATL::CComClassFactory", "ATLCOM/ATL::CComClassFactory::CreateInstance", "ATLCOM/ATL::CComClassFactory::LockServer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactory class"]
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComClassFactory Class
 
@@ -101,7 +94,7 @@ A standard HRESULT value.
 
 Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be created quickly.
 
-## See Also
+## See also
 
 [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>

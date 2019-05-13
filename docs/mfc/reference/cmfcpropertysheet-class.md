@@ -1,16 +1,9 @@
 ---
-title: "CMFCPropertySheet Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CMFCPropertySheet Class"
+ms.date: "11/19/2018"
 f1_keywords: ["CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPage", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPageToTree", "AFXPROPERTYSHEET/CMFCPropertySheet::AddTreeCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::EnablePageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::GetHeaderHeight", "AFXPROPERTYSHEET/CMFCPropertySheet::GetLook", "AFXPROPERTYSHEET/CMFCPropertySheet::GetNavBarWidth", "AFXPROPERTYSHEET/CMFCPropertySheet::GetTab", "AFXPROPERTYSHEET/CMFCPropertySheet::InitNavigationControl", "AFXPROPERTYSHEET/CMFCPropertySheet::OnActivatePage", "AFXPROPERTYSHEET/CMFCPropertySheet::OnDrawPageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::OnRemoveTreePage", "AFXPROPERTYSHEET/CMFCPropertySheet::RemoveCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage", "AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList", "AFXPROPERTYSHEET/CMFCPropertySheet::SetLook"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertySheet [MFC], CMFCPropertySheet", "CMFCPropertySheet [MFC], AddPage", "CMFCPropertySheet [MFC], AddPageToTree", "CMFCPropertySheet [MFC], AddTreeCategory", "CMFCPropertySheet [MFC], EnablePageHeader", "CMFCPropertySheet [MFC], GetHeaderHeight", "CMFCPropertySheet [MFC], GetLook", "CMFCPropertySheet [MFC], GetNavBarWidth", "CMFCPropertySheet [MFC], GetTab", "CMFCPropertySheet [MFC], InitNavigationControl", "CMFCPropertySheet [MFC], OnActivatePage", "CMFCPropertySheet [MFC], OnDrawPageHeader", "CMFCPropertySheet [MFC], OnRemoveTreePage", "CMFCPropertySheet [MFC], RemoveCategory", "CMFCPropertySheet [MFC], RemovePage", "CMFCPropertySheet [MFC], SetIconsList", "CMFCPropertySheet [MFC], SetLook"]
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCPropertySheet Class
 
@@ -77,15 +70,15 @@ Perform the following steps to use the `CMFCPropertySheet` class in your applica
 
 The following illustration depicts a property sheet that is in the style of an embedded Microsoft Outlook toolbar. The Outlook toolbar appears on the left side of the property sheet.
 
-![CMFCPropertySheet color controls](../../mfc/reference/media/cmfcpropertysheet_color.png "cmfcpropertysheet_color")
+![CMFCPropertySheet color controls](../../mfc/reference/media/cmfcpropertysheet_color.png "CMFCPropertySheet color controls")
 
 The following illustration depicts a property sheet that contains a [CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md) object. That object is a property sheet in the style of a standard common controls property sheet.
 
-![CMFCPropertySheet list and property controls](../../mfc/reference/media/cmfcpropertysheet_list.png "cmfcpropertysheet_list")
+![CMFCPropertySheet list and property controls](../../mfc/reference/media/cmfcpropertysheet_list.png "CMFCPropertySheet list and property controls")
 
 The following illustration depicts a property sheet that is in the style of a tree control.
 
-![Peroperty Tree](../../mfc/reference/media/proptree.png "proptree")
+![Property Tree](../../mfc/reference/media/proptree.png "Property Tree")
 
 ## Inheritance Hierarchy
 
@@ -481,7 +474,7 @@ The following table lists the enumeration values that can be specified in the *l
 |`CMFCPropertySheet::PropSheetLook_OneNoteTabs`|Displays a tab, in the style of Microsoft OneNote, for each property page. The framework displays tabs at the top of the property sheet and scroll arrows if there are more tabs than will fit in a single row.|
 |`CMFCPropertySheet::PropSheetLook_List`|Displays a list at the left side of the property sheet. Each list item corresponds to a property page. The framework displays scroll arrows if there are more list items than will fit in the visible area of the list.|
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

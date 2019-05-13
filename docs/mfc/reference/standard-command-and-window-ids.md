@@ -1,16 +1,9 @@
 ---
-title: "Standard Command and Window IDs | Microsoft Docs"
-ms.custom: ""
+title: "Standard Command and Window IDs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["standard command and Window IDs"]
 ms.assetid: 0424805c-fff8-4531-8f0c-15cfb13aa612
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Standard Command and Window IDs
 
@@ -29,6 +22,6 @@ IDs are not individually documented in this reference. You can find more informa
 
 [!code-cpp[NVC_MFC_Utilities#47](../../mfc/codesnippet/cpp/standard-command-and-window-ids_1.h)]
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

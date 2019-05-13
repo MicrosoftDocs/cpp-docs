@@ -1,15 +1,8 @@
 ---
-title: "Property Sheets and Property Pages (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Property Sheets and Property Pages (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], tabs", "property pages [MFC], property sheets", "CPropertyPage class [MFC], property sheets and pages", "CPropertySheet class [MFC], property sheets and pages", "property sheets, propert pages"]
 ms.assetid: de8fea12-6c35-4cef-8625-b8073a379446
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Sheets and Property Pages (MFC)
 
@@ -21,7 +14,7 @@ Property sheets are implemented with classes [CPropertySheet](../mfc/reference/c
 
 For information on creating and working with property sheets, see the topic [Property Sheets](../mfc/property-sheets-mfc.md).
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
@@ -29,4 +22,3 @@ For information on creating and working with property sheets, see the topic [Pro
 [Exchanging Data](../mfc/exchanging-data.md)<br/>
 [Creating a Modeless Property Sheet](../mfc/creating-a-modeless-property-sheet.md)<br/>
 [Handling the Apply Button](../mfc/handling-the-apply-button.md)
-

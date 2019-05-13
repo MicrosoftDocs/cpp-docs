@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3744 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3744"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3744"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3744"]
 ms.assetid: a447d050-80d1-406a-9a6e-f15c527d717c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3744
 

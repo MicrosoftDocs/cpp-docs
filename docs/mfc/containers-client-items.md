@@ -1,15 +1,8 @@
 ---
-title: "Containers: Client Items | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Client Items"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE containers [MFC], client items", "client items and OLE containers"]
 ms.assetid: 231528b5-0744-4f83-8897-083bf55ed087
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Client Items
 
@@ -23,7 +16,7 @@ Every container application should derive at least one class from `COleClientIte
 
 `CDocItem` is the base class for `COleClientItem` and `COleServerItem`. Objects of classes derived from these two act as intermediaries between the OLE item and the client and server applications, respectively. Each time a new OLE item is added to the document, the MFC framework adds a new object of your client application's `COleClientItem`-derived class to the document's collection of `CDocItem` objects.
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Containers: Compound Files](../mfc/containers-compound-files.md)<br/>

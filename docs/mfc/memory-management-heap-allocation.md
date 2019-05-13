@@ -1,15 +1,8 @@
 ---
-title: "Memory Management: Heap Allocation | Microsoft Docs"
-ms.custom: ""
+title: "Memory Management: Heap Allocation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory [MFC], detecting leaks", "delete operator [MFC], using with debug MFC", "heap allocation [MFC], described", "memory allocation [MFC], heap memory", "memory leaks [MFC], detecting", "new operator [MFC], using with debug MFC", "heap allocation [MFC]", "detecting memory leaks [MFC]"]
 ms.assetid: a5d949c6-1b79-476e-9c66-513a558203d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Memory Management: Heap Allocation
 
@@ -19,7 +12,6 @@ When you use **new** and **delete** instead of **malloc** and **free**, you are 
 
 Note that the total size of objects allocated on the heap is limited only by your system's available virtual memory.
 
-## See Also
+## See also
 
 [Memory Management](../mfc/memory-management.md)
-

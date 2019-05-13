@@ -1,15 +1,8 @@
 ---
-title: "ToolBar Control Styles | Microsoft Docs"
-ms.custom: ""
+title: "ToolBar Control Styles"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ToolBar control styles [MFC]"]
 ms.assetid: 0f717eb9-fa32-4263-b852-809238863feb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ToolBar Control Styles
 
@@ -52,9 +45,8 @@ The visual manager determines the appearance of buttons in each state. See [Visu
 
 **Header:** afxtoolbarbutton.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [Visualization Manager](../../mfc/visualization-manager.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2701 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2701"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2701"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2701"]
 ms.assetid: 31cf2ab7-ced9-4f75-aa51-e169e20407fb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2701
 

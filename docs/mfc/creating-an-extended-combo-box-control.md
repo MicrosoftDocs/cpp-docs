@@ -1,15 +1,8 @@
 ---
-title: "Creating an Extended Combo Box Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating an Extended Combo Box Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["extended combo boxes", "CComboBoxEx class [MFC], creating extended combo box controls", "extended combo boxes [MFC], creating"]
 ms.assetid: a964267e-97b6-4e77-9f89-55bb5c68913f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an Extended Combo Box Control
 
@@ -33,8 +26,7 @@ How the extended combo box control is created depends on whether you are using t
 
 1. Call the control's [Create](../mfc/reference/ctabctrl-class.md#create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function. Set the styles for the control.
 
-## See Also
+## See also
 
 [Using CComboBoxEx](../mfc/using-ccomboboxex.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

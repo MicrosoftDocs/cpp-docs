@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0034 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0034"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0034"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0034"]
 ms.assetid: 1da4a55b-231b-4476-8545-6997628fbc00
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0034
 

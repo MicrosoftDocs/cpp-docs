@@ -1,19 +1,12 @@
 ---
-title: "fopen, _wfopen | Microsoft Docs"
-ms.custom: ""
+title: "fopen, _wfopen"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wfopen", "fopen"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fopen", "_wfopen", "_tfopen", "corecrt_wstdio/_wfopen", "stdio/fopen"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["opening files, for file I/O", "wfopen function", "tfopen function", "_tfopen function", "_wfopen function", "files [C++], opening", "fopen function"]
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fopen, _wfopen
 
@@ -58,7 +51,7 @@ Always check the return value to see whether the pointer is NULL before you perf
 
 **fopen** supports Unicode file streams. To open a Unicode file, pass a **ccs** flag that specifies the desired encoding to **fopen**, as follows.
 
-> **FILE *fp = fopen("newfile.txt", "rt+, ccs=**_encoding_**");**
+> **FILE \*fp = fopen("newfile.txt", "rt+, ccs=**_encoding_**");**
 
 Allowed values of *encoding* are **UNICODE**, **UTF-8**, and **UTF-16LE**.
 
@@ -93,12 +86,12 @@ The character string *mode* specifies the kind of access that is requested for t
 
 |*mode*|Access|
 |-|-|
-**"r"**|Opens for reading. If the file does not exist or cannot be found, the **fopen** call fails.
-**"w"**|Opens an empty file for writing. If the given file exists, its contents are destroyed.
-**"a"**|Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it does not exist.
-**"r+"**|Opens for both reading and writing. The file must exist.
-**"w+"**|Opens an empty file for both reading and writing. If the file exists, its contents are destroyed.
-**"a+"**|Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist.
+| **"r"** | Opens for reading. If the file does not exist or cannot be found, the **fopen** call fails. |
+| **"w"** | Opens an empty file for writing. If the given file exists, its contents are destroyed. |
+| **"a"** | Opens for writing at the end of the file (appending) without removing the end-of-file (EOF) marker before new data is written to the file. Creates the file if it does not exist. |
+| **"r+"** | Opens for both reading and writing. The file must exist. |
+| **"w+"** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
+| **"a+"** | Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker is not restored after writing is completed. Creates the file if it does not exist. |
 
 When a file is opened by using the **"a"** access type or the **"a+"** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or [rewind](rewind.md), but is always moved back to the end of the file before any write operation is performed. Therefore, existing data cannot be overwritten.
 
@@ -110,8 +103,8 @@ In addition to the earlier values, the following characters can be appended to *
 
 |*mode* modifier|Translation mode|
 |-|-|
-**t**|Open in text (translated) mode.
-**b**|Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed.
+| **t** | Open in text (translated) mode. |
+| **b** | Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed. |
 
 In text mode, CTRL+Z is interpreted as an EOF character on input. In files that are opened for reading/writing by using **"a+"**, **fopen** checks for a CTRL+Z at the end of the file and removes it, if it is possible. This is done because using [fseek](fseek-fseeki64.md) and **ftell** to move within a file that ends with CTRL+Z may cause [fseek](fseek-fseeki64.md) to behave incorrectly near the end of the file.
 
@@ -125,36 +118,36 @@ The following options can be appended to *mode* to specify additional behaviors.
 
 |*mode* modifier|Behavior|
 |-|-|
-**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called.
-**n**|Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
-**N**|Specifies that the file is not inherited by child processes.
-**S**|Specifies that caching is optimized for, but not restricted to, sequential access from disk.
-**R**|Specifies that caching is optimized for, but not restricted to, random access from disk.
-**T**|Specifies a file as temporary. If possible, it is not flushed to disk.
-**D**|Specifies a file as temporary. It is deleted when the last file pointer is closed.
-**ccs=**_encoding_|Specifies the encoded character set to use (one of **UTF-8**, **UTF-16LE**, or **UNICODE**) for this file. Leave unspecified if you want ANSI encoding.
+| **c** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called. |
+| **n** | Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)). |
+| **N** | Specifies that the file is not inherited by child processes. |
+| **S** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
+| **R** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
+| **T** | Specifies a file as temporary. If possible, it is not flushed to disk. |
+| **D** | Specifies a file as temporary. It is deleted when the last file pointer is closed. |
+| **ccs=**_encoding_ | Specifies the encoded character set to use (one of **UTF-8**, **UTF-16LE**, or **UNICODE**) for this file. Leave unspecified if you want ANSI encoding. |
 
 Valid characters for the *mode* string that is used in **fopen** and **_fdopen** correspond to *oflag* arguments that are used in [_open](open-wopen.md) and [_sopen](sopen-wsopen.md), as follows.
 
-|Characters in *mode* string|Equivalent *oflag* value for _open/_sopen|
+|Characters in *mode* string|Equivalent *oflag* value for \_open/\_sopen|
 |-------------------------------|----------------------------------------------------|
-|**a**|**_O_WRONLY** &#124; **_O_APPEND** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_APPEND**)|
-|**a+**|**_O_RDWR** &#124; **_O_APPEND** (usually **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
-|**r**|**_O_RDONLY**|
-|**r+**|**_O_RDWR**|
-|**w**|**_O_WRONLY** (usually **_O_WRONLY** &#124; **_O_CREAT** &#124;** _O_TRUNC**)|
-|**w+**|**_O_RDWR** (usually **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
-|**b**|**_O_BINARY**|
-|**t**|**_O_TEXT**|
+|**a**|**\_O\_WRONLY** &#124; **\_O\_APPEND** (usually **\_O\_WRONLY** &#124; **\_O\_CREAT** &#124; **\_O\_APPEND**)|
+|**a+**|**\_O\_RDWR** &#124; **\_O\_APPEND** (usually **\_O\_RDWR** &#124; **\_O\_APPEND** &#124; **\_O\_CREAT** )|
+|**r**|**\_O\_RDONLY**|
+|**r+**|**\_O\_RDWR**|
+|**w**|**\_O\_WRONLY** (usually **\_O\_WRONLY** &#124; **\_O\_CREAT** &#124; **\_O\_TRUNC**)|
+|**w+**|**\_O\_RDWR** (usually **\_O\_RDWR** &#124; **\_O\_CREAT** &#124; **\_O\_TRUNC**)|
+|**b**|**\_O\_BINARY**|
+|**t**|**\_O\_TEXT**|
 |**c**|None|
 |**n**|None|
-|**S**|**_O_SEQUENTIAL**|
-|**R**|**_O_RANDOM**|
-|**T**|**_O_SHORTLIVED**|
-|**D**|**_O_TEMPORARY**|
-|**ccs=UNICODE**|**_O_WTEXT**|
-|**ccs=UTF-8**|**_O_UTF8**|
-|**ccs=UTF-16LE**|**_O_UTF16**|
+|**S**|**\_O\_SEQUENTIAL**|
+|**R**|**\_O\_RANDOM**|
+|**T**|**\_O\_SHORTLIVED**|
+|**D**|**\_O\_TEMPORARY**|
+|**ccs=UNICODE**|**\_O\_WTEXT**|
+|**ccs=UTF-8**|**\_O\_UTF8**|
+|**ccs=UTF-16LE**|**\_O\_UTF16**|
 
 If you are using **rb** mode, you do not have to port your code, and if you expect to read most of a large file or are not concerned about network performance, you might also consider whether to use memory mapped Win32 files as an option.
 

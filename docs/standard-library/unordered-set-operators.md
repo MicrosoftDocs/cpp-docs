@@ -1,10 +1,7 @@
 ---
-title: "&lt;unordered_set&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;unordered_set&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
 ---
 # &lt;unordered_set&gt; operators
@@ -71,7 +68,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Output:**
@@ -140,7 +136,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Output:**
@@ -212,7 +207,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Output:**
@@ -284,7 +278,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Output:**

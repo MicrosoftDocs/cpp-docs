@@ -1,16 +1,9 @@
 ---
-title: "CPane Class | Microsoft Docs"
-ms.custom: ""
+title: "CPane Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPane", "AFXPANE/CPane", "AFXPANE/CPane::AdjustSizeImmediate", "AFXPANE/CPane::AllocElements", "AFXPANE/CPane::AllowShowOnPaneMenu", "AFXPANE/CPane::CalcAvailableSize", "AFXPANE/CPane::CalcInsideRect", "AFXPANE/CPane::CalcRecentDockedRect", "AFXPANE/CPane::CalcSize", "AFXPANE/CPane::CanBeDocked", "AFXPANE/CPane::CanBeTabbedDocument", "AFXPANE/CPane::ConvertToTabbedDocument", "AFXPANE/CPane::CopyState", "AFXPANE/CPane::Create", "AFXPANE/CPane::CreateDefaultMiniframe", "AFXPANE/CPane::CreateEx", "AFXPANE/CPane::DockByMouse", "AFXPANE/CPane::DockPane", "AFXPANE/CPane::DockPaneStandard", "AFXPANE/CPane::DockToFrameWindow", "AFXPANE/CPane::DoesAllowSiblingBars", "AFXPANE/CPane::FloatPane", "AFXPANE/CPane::GetAvailableExpandSize", "AFXPANE/CPane::GetAvailableStretchSize", "AFXPANE/CPane::GetBorders", "AFXPANE/CPane::GetClientHotSpot", "AFXPANE/CPane::GetDockSiteRow", "AFXPANE/CPane::GetExclusiveRowMode", "AFXPANE/CPane::GetHotSpot", "AFXPANE/CPane::GetMinSize", "AFXPANE/CPane::GetPaneName", "AFXPANE/CPane::GetVirtualRect", "AFXPANE/CPane::IsChangeState", "AFXPANE/CPane::IsDragMode", "AFXPANE/CPane::IsInFloatingMultiPaneFrameWnd", "AFXPANE/CPane::IsLeftOf", "AFXPANE/CPane::IsResizable", "AFXPANE/CPane::IsTabbed", "AFXPANE/CPane::LoadState", "AFXPANE/CPane::MoveByAlignment", "AFXPANE/CPane::MovePane", "AFXPANE/CPane::OnAfterChangeParent", "AFXPANE/CPane::OnBeforeChangeParent", "AFXPANE/CPane::OnPressCloseButton", "AFXPANE/CPane::OnShowControlBarMenu", "AFXPANE/CPane::RecalcLayout", "AFXPANE/CPane::SaveState", "AFXPANE/CPane::SetActiveInGroup", "AFXPANE/CPane::SetBorders", "AFXPANE/CPane::SetClientHotSpot", "AFXPANE/CPane::SetDockState", "AFXPANE/CPane::SetExclusiveRowMode", "AFXPANE/CPane::SetMiniFrameRTC", "AFXPANE/CPane::SetMinSize", "AFXPANE/CPane::SetVirtualRect", "AFXPANE/CPane::StretchPaneDeferWndPos", "AFXPANE/CPane::ToggleAutoHide", "AFXPANE/CPane::UndockPane", "AFXPANE/CPane::UpdateVirtualRect", "AFXPANE/CPane::OnAfterDock", "AFXPANE/CPane::OnAfterFloat", "AFXPANE/CPane::OnBeforeDock", "AFXPANE/CPane::OnBeforeFloat", "AFXPANE/CPane::m_bHandleMinSize", "AFXPANE/CPane::m_recentDockInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPane [MFC], AdjustSizeImmediate", "CPane [MFC], AllocElements", "CPane [MFC], AllowShowOnPaneMenu", "CPane [MFC], CalcAvailableSize", "CPane [MFC], CalcInsideRect", "CPane [MFC], CalcRecentDockedRect", "CPane [MFC], CalcSize", "CPane [MFC], CanBeDocked", "CPane [MFC], CanBeTabbedDocument", "CPane [MFC], ConvertToTabbedDocument", "CPane [MFC], CopyState", "CPane [MFC], Create", "CPane [MFC], CreateDefaultMiniframe", "CPane [MFC], CreateEx", "CPane [MFC], DockByMouse", "CPane [MFC], DockPane", "CPane [MFC], DockPaneStandard", "CPane [MFC], DockToFrameWindow", "CPane [MFC], DoesAllowSiblingBars", "CPane [MFC], FloatPane", "CPane [MFC], GetAvailableExpandSize", "CPane [MFC], GetAvailableStretchSize", "CPane [MFC], GetBorders", "CPane [MFC], GetClientHotSpot", "CPane [MFC], GetDockSiteRow", "CPane [MFC], GetExclusiveRowMode", "CPane [MFC], GetHotSpot", "CPane [MFC], GetMinSize", "CPane [MFC], GetPaneName", "CPane [MFC], GetVirtualRect", "CPane [MFC], IsChangeState", "CPane [MFC], IsDragMode", "CPane [MFC], IsInFloatingMultiPaneFrameWnd", "CPane [MFC], IsLeftOf", "CPane [MFC], IsResizable", "CPane [MFC], IsTabbed", "CPane [MFC], LoadState", "CPane [MFC], MoveByAlignment", "CPane [MFC], MovePane", "CPane [MFC], OnAfterChangeParent", "CPane [MFC], OnBeforeChangeParent", "CPane [MFC], OnPressCloseButton", "CPane [MFC], OnShowControlBarMenu", "CPane [MFC], OnShowControlBarMenu", "CPane [MFC], RecalcLayout", "CPane [MFC], SaveState", "CPane [MFC], SetActiveInGroup", "CPane [MFC], SetBorders", "CPane [MFC], SetClientHotSpot", "CPane [MFC], SetDockState", "CPane [MFC], SetExclusiveRowMode", "CPane [MFC], SetMiniFrameRTC", "CPane [MFC], SetMinSize", "CPane [MFC], SetVirtualRect", "CPane [MFC], StretchPaneDeferWndPos", "CPane [MFC], ToggleAutoHide", "CPane [MFC], UndockPane", "CPane [MFC], UpdateVirtualRect", "CPane [MFC], OnAfterDock", "CPane [MFC], OnAfterFloat", "CPane [MFC], OnBeforeDock", "CPane [MFC], OnBeforeFloat", "CPane [MFC], m_bHandleMinSize", "CPane [MFC], m_recentDockInfo"]
 ms.assetid: 5c651a64-3c79-4d94-9676-45f6402a6bc5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPane Class
 
@@ -1476,7 +1469,7 @@ The second overload shifts the virtual rectangle by the amount that is specified
 
 The third overload sets the virtual rectangle by using the current position of the pane and the size that is specified by *sizeNew*.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

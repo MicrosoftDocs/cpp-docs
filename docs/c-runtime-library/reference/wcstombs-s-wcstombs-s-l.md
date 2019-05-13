@@ -1,19 +1,12 @@
 ---
-title: "wcstombs_s, _wcstombs_s_l | Microsoft Docs"
-ms.custom: ""
+title: "wcstombs_s, _wcstombs_s_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wcstombs_s_l", "wcstombs_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wcstombs_s", "_wcstombs_s_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wcstombs_s function", "string conversion, wide characters", "wide characters, converting", "_wcstombs_s_l function", "wcstombs_s_l function", "characters, converting", "string conversion, multibyte character strings"]
 ms.assetid: 105f2d33-221a-4f6d-864c-23c1865c42af
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # wcstombs_s, _wcstombs_s_l
 
@@ -60,7 +53,7 @@ errno_t _wcstombs_s_l(
 ### Parameters
 
 *pReturnValue*<br/>
-The number of characters converted.
+The size in bytes of the converted string, including the null terminator.
 
 *mbstr*<br/>
 The address of a buffer for the resulting converted multibyte character string.

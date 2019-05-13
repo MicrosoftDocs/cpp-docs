@@ -1,15 +1,8 @@
 ---
-title: "OLE DB Consumers and Providers | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Consumers and Providers"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, OLE DB data architecture", "OLE DB providers", "OLE DB consumers, OLE DB data architecture", "OLE DB consumers", "OLE DB, data model"]
 ms.assetid: 886cb39d-652b-4557-93f0-4b1b0754d8bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumers and Providers
 
@@ -21,7 +14,7 @@ For roles, a consumer calls methods on OLE DB interfaces; an OLE DB provider imp
 
 OLE DB avoids the terms client and server because these roles don't always make sense, especially in an n-tier situation. Because a consumer could be a component on a tier that serves another component, to call it a client component would be confusing. Also, a provider sometimes acts more like a database driver than a server.
 
-## See Also
+## See also
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)

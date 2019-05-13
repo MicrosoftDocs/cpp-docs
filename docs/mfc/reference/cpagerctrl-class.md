@@ -1,16 +1,9 @@
 ---
-title: "CPagerCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CPagerCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPagerCtrl", "AFXCMN/CPagerCtrl", "AFXCMN/CPagerCtrl::CPagerCtrl", "AFXCMN/CPagerCtrl::Create", "AFXCMN/CPagerCtrl::CreateEx", "AFXCMN/CPagerCtrl::ForwardMouse", "AFXCMN/CPagerCtrl::GetBkColor", "AFXCMN/CPagerCtrl::GetBorder", "AFXCMN/CPagerCtrl::GetButtonSize", "AFXCMN/CPagerCtrl::GetButtonState", "AFXCMN/CPagerCtrl::GetDropTarget", "AFXCMN/CPagerCtrl::GetScrollPos", "AFXCMN/CPagerCtrl::IsButtonDepressed", "AFXCMN/CPagerCtrl::IsButtonGrayed", "AFXCMN/CPagerCtrl::IsButtonHot", "AFXCMN/CPagerCtrl::IsButtonInvisible", "AFXCMN/CPagerCtrl::IsButtonNormal", "AFXCMN/CPagerCtrl::RecalcSize", "AFXCMN/CPagerCtrl::SetBkColor", "AFXCMN/CPagerCtrl::SetBorder", "AFXCMN/CPagerCtrl::SetButtonSize", "AFXCMN/CPagerCtrl::SetChild", "AFXCMN/CPagerCtrl::SetScrollPos"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPagerCtrl [MFC], CPagerCtrl", "CPagerCtrl [MFC], Create", "CPagerCtrl [MFC], CreateEx", "CPagerCtrl [MFC], ForwardMouse", "CPagerCtrl [MFC], GetBkColor", "CPagerCtrl [MFC], GetBorder", "CPagerCtrl [MFC], GetButtonSize", "CPagerCtrl [MFC], GetButtonState", "CPagerCtrl [MFC], GetDropTarget", "CPagerCtrl [MFC], GetScrollPos", "CPagerCtrl [MFC], IsButtonDepressed", "CPagerCtrl [MFC], IsButtonGrayed", "CPagerCtrl [MFC], IsButtonHot", "CPagerCtrl [MFC], IsButtonInvisible", "CPagerCtrl [MFC], IsButtonNormal", "CPagerCtrl [MFC], RecalcSize", "CPagerCtrl [MFC], SetBkColor", "CPagerCtrl [MFC], SetBorder", "CPagerCtrl [MFC], SetButtonSize", "CPagerCtrl [MFC], SetChild", "CPagerCtrl [MFC], SetScrollPos"]
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPagerCtrl Class
 
@@ -106,7 +99,7 @@ virtual BOOL Create(
 |Parameter|Description|
 |---------------|-----------------|
 |*dwStyle*|[in] A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/desktop/Controls/pager-control-styles) to be applied to the control.|
-|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control in client coordinates.|
+|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control in client coordinates.|
 |*pParentWnd*|[in] A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|
 |*nID*|[in] The ID of the control.|
 
@@ -143,7 +136,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[in] A bitwise combination of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function.|
 |*dwStyle*|[in] A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/desktop/Controls/pager-control-styles) to be applied to the control.|
-|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control in client coordinates.|
+|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control in client coordinates.|
 |*pParentWnd*|[in] A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|
 |*nID*|[in] The ID of the control.|
 
@@ -569,9 +562,8 @@ void SetScrollPos(int iPos);
 
 This method sends the [PGM_SETPOS](/windows/desktop/Controls/pgm-setpos) message, which is described in the Windows SDK.
 
-## See Also
+## See also
 
 [CPagerCtrl Class](../../mfc/reference/cpagerctrl-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Pager Controls](/windows/desktop/Controls/pager-controls)
-

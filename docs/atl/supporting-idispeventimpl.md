@@ -1,16 +1,8 @@
 ---
-title: "Supporting IDispEventImpl | Microsoft Docs"
-ms.custom: ""
+title: "Supporting IDispEventImpl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-f1_keywords: ["IDispEventImpl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event sink maps, declaring", "IDispEventImpl class, advising and unadvising", "SINK_ENTRY macro", "type libraries, importing", "ATL, IDispEventImpl support in COM objects", "BEGIN_SINK_MAP macro", "IDispEventImpl class, declaring"]
 ms.assetid: b957f930-6a5b-4598-8e4d-8027759957e7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Supporting IDispEventImpl
 
@@ -74,7 +66,6 @@ After your object is finished with the external interfaces, the outgoing interfa
 
 Because of the unique nature of COM objects, this procedure varies, in detail and execution, between implementations. These details are beyond the scope of this topic and are not addressed.
 
-## See Also
+## See also
 
 [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)
-

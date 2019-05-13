@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Filtering Records (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Filtering Records (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data [MFC], filtering", "recordsets [C++], filtering", "filtering recordsets", "ODBC recordsets [C++], filtering records", "filters [C++], recordset object"]
 ms.assetid: 5c075f37-c837-464d-90c1-d028a9d1c175
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Filtering Records (ODBC)
 
@@ -83,7 +76,7 @@ The quoting shown above conforms to the ODBC specification, but some DBMSs might
 > [!NOTE]
 >  If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, you should not set a filter if your custom string has a **WHERE** clause. For more information about overriding the default SQL, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Sorting Records (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)<br/>

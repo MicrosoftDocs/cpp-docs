@@ -1,15 +1,8 @@
 ---
-title: "/clr Restrictions | Microsoft Docs"
-ms.custom: ""
+title: "/clr Restrictions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["/clr compiler option [C++], restrictions"]
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /clr Restrictions
 
@@ -29,7 +22,7 @@ Note the following restrictions on the use of **/clr**:
 
 - The [naked](../../cpp/naked-cpp.md) [__declspec](../../cpp/declspec.md) modifier is ignored under /clr.
 
-- The translator function set by [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) will affect only catches in unmanaged code. See [Exception Handling](../../windows/exception-handling-cpp-component-extensions.md) for more information.
+- The translator function set by [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) will affect only catches in unmanaged code. See [Exception Handling](../../extensions/exception-handling-cpp-component-extensions.md) for more information.
 
 - The comparison of function pointers is not permitted under **/clr**.
 
@@ -37,36 +30,36 @@ Note the following restrictions on the use of **/clr**:
 
 - The following compiler options are not supported with **/clr**:
 
-  - **/EHsc** and **/EHs** (**/clr** implies **/EHa** (see [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md))
+  - **/EHsc** and **/EHs** (**/clr** implies **/EHa** (see [/EH (Exception Handling Model)](eh-exception-handling-model.md))
 
-  - **/fp:strict** and **/fp:except** (see [/fp (Specify Floating-Point Behavior)](../../build/reference/fp-specify-floating-point-behavior.md))
+  - **/fp:strict** and **/fp:except** (see [/fp (Specify Floating-Point Behavior)](fp-specify-floating-point-behavior.md))
 
-  - [/Zd](../../build/reference/z7-zi-zi-debug-information-format.md)
+  - [/Zd](z7-zi-zi-debug-information-format.md)
 
-  - [/Gm](../../build/reference/gm-enable-minimal-rebuild.md)
+  - [/Gm](gm-enable-minimal-rebuild.md)
 
-  - [/MT](../../build/reference/md-mt-ld-use-run-time-library.md)
+  - [/MT](md-mt-ld-use-run-time-library.md)
 
-  - [/RTC](../../build/reference/rtc-run-time-error-checks.md)
+  - [/RTC](rtc-run-time-error-checks.md)
 
-  - [/ZI](../../build/reference/z7-zi-zi-debug-information-format.md)
+  - [/ZI](z7-zi-zi-debug-information-format.md)
 
-- The combination of the `_STATIC_CPPLIB` preprocessor definition (`/D_STATIC_CPPLIB`) and the **/clr** compiler option is not supported. This is so because the definition would cause your application to link with the static multithreaded C++ Standard Library, which is not supported. For more information, see the [/MD, /MT, /LD (Use Run-Time Library)](../../build/reference/md-mt-ld-use-run-time-library.md) topic.
+- The combination of the `_STATIC_CPPLIB` preprocessor definition (`/D_STATIC_CPPLIB`) and the **/clr** compiler option is not supported. This is so because the definition would cause your application to link with the static multithreaded C++ Standard Library, which is not supported. For more information, see the [/MD, /MT, /LD (Use Run-Time Library)](md-mt-ld-use-run-time-library.md) topic.
 
-- When using **/Zi** with **/clr**, there are performance implications. For more information, see [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md).
+- When using **/Zi** with **/clr**, there are performance implications. For more information, see [/Zi](z7-zi-zi-debug-information-format.md).
 
-- Passing a wide character to a .NET Framework output routine without also specifying [/Zc:wchar_t](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) or without casting the character to `__wchar_t` will cause the output to appear as an `unsigned short int`. For example:
+- Passing a wide character to a .NET Framework output routine without also specifying [/Zc:wchar_t](zc-wchar-t-wchar-t-is-native-type.md) or without casting the character to `__wchar_t` will cause the output to appear as an `unsigned short int`. For example:
 
     ```cpp
     Console::WriteLine(L' ')              // Will output 32.
     Console::WriteLine((__wchar_t)L' ')   // Will output a space.
     ```
 
-- [/GS](../../build/reference/gs-buffer-security-check.md) is ignored when compiling with **/clr**, unless a function is under `#pragma` [unmanaged](../../preprocessor/managed-unmanaged.md) or if the function must be compiled to native, in which case the compiler will generate warning C4793, which is off by default.
+- [/GS](gs-buffer-security-check.md) is ignored when compiling with **/clr**, unless a function is under `#pragma` [unmanaged](../../preprocessor/managed-unmanaged.md) or if the function must be compiled to native, in which case the compiler will generate warning C4793, which is off by default.
 
-- See [/ENTRY](../../build/reference/entry-entry-point-symbol.md) for function signature requirements of a managed application.
+- See [/ENTRY](entry-entry-point-symbol.md) for function signature requirements of a managed application.
 
-- Applications compiled with **/openmp** and **/clr** can only be run in a single appdomain process.  See [/openmp (Enable OpenMP 2.0 Support)](../../build/reference/openmp-enable-openmp-2-0-support.md) for more information.
+- Applications compiled with **/openmp** and **/clr** can only be run in a single appdomain process.  See [/openmp (Enable OpenMP 2.0 Support)](openmp-enable-openmp-2-0-support.md) for more information.
 
 - Functions that take a variable number of arguments (varargs) will be generated as native functions. Any managed data types in the variable argument position will be marshaled to native types. Note that <xref:System.String?displayProperty=fullName> types are actually wide-character strings, but they are marshaled to single-byte character strings. So if a printf specifier is %S (wchar_t*), it will marshal to a %s string instead.
 
@@ -88,4 +81,4 @@ Note the following restrictions on the use of **/clr**:
 
 ## See also
 
-- [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)
+- [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md)

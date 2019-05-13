@@ -1,15 +1,9 @@
 ---
-title: "Casting Operators | Microsoft Docs"
+title: "Casting Operators"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], casting", "casting operators [C++]"]
 ms.assetid: 16240348-26bc-4f77-8eab-57253f00ce52
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Casting Operators
 
@@ -23,7 +17,7 @@ There are several casting operators specific to the C++ language. These operator
 
 - [reinterpret_cast](../cpp/reinterpret-cast-operator.md) Used for simple reinterpretation of bits.
 
-- [safe_cast](../windows/safe-cast-cpp-component-extensions.md) Used to produce verifiable MSIL.
+- [safe_cast](../extensions/safe-cast-cpp-component-extensions.md) Used in C++/CLI to produce verifiable MSIL.
 
 Use **const_cast** and **reinterpret_cast** as a last resort, since these operators present the same dangers as old style casts. However, they are still necessary in order to completely replace old style casts.
 

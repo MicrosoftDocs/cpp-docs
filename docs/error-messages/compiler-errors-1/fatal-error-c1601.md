@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1601 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1601"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1601"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1601"]
 ms.assetid: 25797c39-f085-4d75-9eab-159ecd36ef49
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1601
 

@@ -1,15 +1,8 @@
 ---
-title: "Internet Security (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Internet Security (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["code signing [MFC], Internet security", "sandboxing [MFC]", "digital signatures [MFC], Internet security", "code signing [MFC]", "Web application security [MFC]", "code access security [MFC], Internet security considerations", "security [MFC]", "security [MFC], Internet", "Internet applications [MFC], security", "Web application security [MFC], Internet security approaches"]
 ms.assetid: bf0da697-81bc-41f0-83fa-d7f82ed83df8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Internet Security (C++)
 
@@ -19,8 +12,7 @@ There are two basic approaches to security when developing for the Internet. The
 
 In the first case, you trust that the application will not do any harm and you trust the origin of the application. In the second, digital signatures are used to verify authenticity. Digital signing is an industry standard used to identify and provide details about the publisher of the code. Its technology is based on standards, including RSA and X.509. Browsers typically allow users to choose if they want to download and run code of unknown origin.
 
-## See Also
+## See also
 
 [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Message Passing Functions | Microsoft Docs"
-ms.custom: ""
+title: "Message Passing Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message passing functions"]
 ms.assetid: 42477c9e-a8a6-4dc4-a98e-93c6dc8c4dd0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Passing Functions
 
@@ -65,7 +58,7 @@ For examples that use the `send` and `asend`, and `receive` functions, see the f
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
@@ -73,4 +66,3 @@ For examples that use the `send` and `asend`, and `receive` functions, see the f
 [asend Function](reference/concurrency-namespace-functions.md#asend)<br/>
 [receive Function](reference/concurrency-namespace-functions.md#receive)<br/>
 [try_receive Function](reference/concurrency-namespace-functions.md#try_receive)
-

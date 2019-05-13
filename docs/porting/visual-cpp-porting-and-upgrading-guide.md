@@ -1,14 +1,7 @@
 ---
-title: "Visual C++ Porting and Upgrading Guide | Microsoft Docs"
-ms.custom: ""
+title: "Visual C++ Porting and Upgrading Guide"
 ms.date: "09/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ Porting and Upgrading Guide
 
@@ -64,7 +57,7 @@ In addition to changes that you can't avoid due to compiler errors, some changes
 
 3. You might want to update some code to use new language features that simplify the code, improve the performance of your programs, or update the code to use modern libraries and conform to modern standards and best practices.
 
-Once you've upgraded and tested your project, you might also want to consider improving your code further or plan the future direction of your code, or even reconsider the architecture of your project. Will it receive ongoing development work? Will it be important for your code to run on other platforms?  If so, what platforms?  C++ is a standardized langauge designed with portability and cross-platform development in mind, and yet the code for many Windows applications is strongly tied to the Windows platform. Do you want to refactor your code, to separate out those parts that are more tied to the Windows platform?
+Once you've upgraded and tested your project, you might also want to consider improving your code further or plan the future direction of your code, or even reconsider the architecture of your project. Will it receive ongoing development work? Will it be important for your code to run on other platforms?  If so, what platforms?  C++ is a standardized language designed with portability and cross-platform development in mind, and yet the code for many Windows applications is strongly tied to the Windows platform. Do you want to refactor your code, to separate out those parts that are more tied to the Windows platform?
 
 What about your user interface? If you are using MFC, you might want to update the UI. Are you using any of the newer MFC features that were introduced in 2008 as a Feature Pack? If you just want to give your app a newer look and feel, without rewriting the entire app, you might consider using the ribbon APIs in MFC, or using some of new features of MFC.
 
@@ -76,9 +69,9 @@ Alternatively, perhaps you now have new requirements, or you can foresee the nee
 
 |Title|Description|
 |-----------|-----------------|
-|[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual C++.|
-|[What's New for The C++ compiler in Visual Studio 2017 RC](../what-s-new-for-visual-cpp-in-visual-studio.md)|Changes in the IDE and tools from Visual Studio 2015 to Visual Studio 2017|
-|[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)|Standards conformance improvements from Visual Studio 2015 to Visual Studio 2017|
+|[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual Studio.|
+|[What's New for The C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|Changes in the IDE and tools to the current version of Visual Studio|
+|[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)|Standards conformance improvements from Visual Studio 2015 to Visual Studio|
 |[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Visual C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code.|
 |[Visual C++ What's New 2003 through 2015](visual-cpp-what-s-new-2003-through-2015.md)|All the "what's new" information for Visual C++ from Visual Studio 2003 through Visual Studio 2015.|
 |[Porting 3rd-party libraries](porting-third-party-libraries.md)|How to use the **vcpkg** command line tool to port older open-source libraries to versions compiled with more recent Visual C++ toolsets.|
@@ -87,6 +80,6 @@ Alternatively, perhaps you now have new requirements, or you can foresee the nee
 |[Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)|Provides information for UNIX users who are new to Visual C++ and want to become productive with it.|
 |[Porting from UNIX to Win32](porting-from-unix-to-win32.md)|Discusses options for migrating UNIX applications to Windows.|
 
-## See Also
+## See also
 
-[Visual C++](../visual-cpp-in-visual-studio.md)
+[Visual C++](../overview/visual-cpp-in-visual-studio.md)

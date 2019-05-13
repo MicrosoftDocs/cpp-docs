@@ -1,16 +1,9 @@
 ---
-title: "IPropertyNotifySinkCP Class | Microsoft Docs"
-ms.custom: ""
+title: "IPropertyNotifySinkCP Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IPropertyNotifySinkCP", "atlctl/ATL::IPropertyNotifySinkCP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], managing", "sinks, notifying of changes", "IPropertyNotifySinkCP class"]
 ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IPropertyNotifySinkCP Class
 
@@ -49,7 +42,7 @@ For more information about using connection points in ATL, see the article [Conn
 
 **Header:** atlctl.h
 
-## See Also
+## See also
 
 [IConnectionPointImpl Class](../../atl/reference/iconnectionpointimpl-class.md)<br/>
 [IConnectionPointContainerImpl Class](../../atl/reference/iconnectionpointcontainerimpl-class.md)<br/>

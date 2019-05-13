@@ -1,16 +1,9 @@
 ---
-title: "pointers_to_members | Microsoft Docs"
-ms.custom: ""
+title: "pointers_to_members"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["pointers_to_members_CPP", "vc-pragma.pointers_to_members"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["class members, pointers to", "pragmas, pointers_to_members", "members, pointers to", "pointers_to_members pragma"]
 ms.assetid: 8325428c-c90a-4aed-9e82-cb1dda23f4ca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # pointers_to_members
 
@@ -55,6 +48,6 @@ The *most-general-representation* argument specifies the smallest pointer repres
 
 ## END C++ Specific
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

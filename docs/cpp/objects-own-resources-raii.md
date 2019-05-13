@@ -1,14 +1,8 @@
 ---
-title: "Objects Own Resources (RAII) | Microsoft Docs"
-ms.custom: ""
+title: "Objects Own Resources (RAII)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Objects Own Resources (RAII)
 
@@ -39,6 +33,6 @@ void g() {
 
 ## See also
 
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

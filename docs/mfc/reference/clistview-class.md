@@ -1,16 +1,9 @@
 ---
-title: "CListView Class | Microsoft Docs"
-ms.custom: ""
+title: "CListView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CListView", "AFXCVIEW/CListView", "AFXCVIEW/CListView::CListView", "AFXCVIEW/CListView::GetListCtrl", "AFXCVIEW/CListView::RemoveImageList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListView [MFC], CListView", "CListView [MFC], GetListCtrl", "CListView [MFC], RemoveImageList"]
 ms.assetid: 7626bdb2-a1b8-4eab-b631-6743710a8432
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CListView Class
 
@@ -101,9 +94,9 @@ void RemoveImageList(int nImageList);
 *nImageList*<br/>
 The zero-based index of the image to remove.
 
-## See Also
+## See also
 
-[MFC Sample ROWLIST](../../visual-cpp-samples.md)<br/>
+[MFC Sample ROWLIST](../../overview/visual-cpp-samples.md)<br/>
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)

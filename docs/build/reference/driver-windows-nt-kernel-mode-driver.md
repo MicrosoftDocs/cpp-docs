@@ -1,16 +1,9 @@
 ---
-title: "-DRIVER (Windows NT Kernel Mode Driver) | Microsoft Docs"
-ms.custom: ""
+title: "/DRIVER (Windows NT Kernel Mode Driver)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.driver", "/driver"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["kernel mode driver", "-DRIVER linker option", "DRIVER linker option", "/DRIVER linker option"]
 ms.assetid: aeee8e28-5d97-40f5-ba16-9f370fe8a1b8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DRIVER (Windows NT Kernel Mode Driver)
 
@@ -28,13 +21,13 @@ If **/DRIVER** is not specified, these bits are not set by the linker.
 
 If **/DRIVER** is specified:
 
-- **/FIXED:NO** is in effect. For more information, see [/FIXED (Fixed Base Address)](../../build/reference/fixed-fixed-base-address.md).
+- **/FIXED:NO** is in effect. For more information, see [/FIXED (Fixed Base Address)](fixed-fixed-base-address.md).
 
-- The extension of the output file is set to .sys. Use **/OUT** to change the default filename and extension. For more information, see [/OUT (Output File Name)](../../build/reference/out-output-file-name.md).
+- The extension of the output file is set to .sys. Use **/OUT** to change the default filename and extension. For more information, see [/OUT (Output File Name)](out-output-file-name.md).
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -46,7 +39,7 @@ If **/DRIVER** is specified:
 
 - See [VCLinkerTool.driver Property](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.driver?view=visualstudiosdk-2017#Microsoft_VisualStudio_VCProjectEngine_VCLinkerTool_driver).
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

@@ -1,15 +1,8 @@
 ---
-title: "Type-Safe Access to Controls in a Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Type-Safe Access to Controls in a Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["common controls [MFC], in dialog boxes", "Windows common controls [MFC], in dialog boxes", "safe access to dialog box controls", "dialog boxes [MFC], type-safe access to controls", "controls [MFC], accessing in dialog boxes", "type-safe access to dialog box controls", "MFC dialog boxes [MFC], type-safe access to controls"]
 ms.assetid: 67021025-dd93-4d6a-8bed-a1348fe50685
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type-Safe Access to Controls in a Dialog Box
 
@@ -21,7 +14,6 @@ There are two approaches to making a connection between a control in a dialog bo
 
 - [With Code Wizards](../mfc/type-safe-access-to-controls-with-code-wizards.md)
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)
-

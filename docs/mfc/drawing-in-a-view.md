@@ -1,15 +1,8 @@
 ---
-title: "Drawing in a View | Microsoft Docs"
-ms.custom: ""
+title: "Drawing in a View"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["drawing [MFC], in views", "views [MFC], printing", "views [MFC], updating", "printing [MFC], views", "views [MFC], rendering", "printing views [MFC]", "paint messages in view class [MFC]", "device contexts, screen drawings"]
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Drawing in a View
 
@@ -35,9 +28,8 @@ In this example, you would define the `GetData` function as a member of your der
 
 The example prints whatever string it gets from the document, centered in the view. If the `OnDraw` call is for screen drawing, the `CDC` object passed in *pDC* is a `CPaintDC` whose constructor has already called `BeginPaint`. Calls to drawing functions are made through the device-context pointer. For information about device contexts and drawing calls, see class [CDC](../mfc/reference/cdc-class.md) in the *MFC Reference* and [Working with Window Objects](../mfc/working-with-window-objects.md).
 
-For more examples of how to write `OnDraw`, see the [MFC Samples](../visual-cpp-samples.md).
+For more examples of how to write `OnDraw`, see the [MFC Samples](../overview/visual-cpp-samples.md).
 
-## See Also
+## See also
 
 [Using Views](../mfc/using-views.md)
-

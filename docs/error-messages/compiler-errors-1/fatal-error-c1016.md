@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1016 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1016"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1016"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1016"]
 ms.assetid: 33f45c3e-2d8f-43ad-a445-c412d1d54ce1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1016
 

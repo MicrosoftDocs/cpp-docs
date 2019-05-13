@@ -1,15 +1,8 @@
 ---
-title: "Union Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Union Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["unions", "union keyword [C], declarations", "variant records"]
 ms.assetid: 978c6165-e0ae-4196-afa7-6d94e24f62f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Union Declarations
 
@@ -119,6 +112,6 @@ See [Structure and Union Members](../c-language/structure-and-union-members.md) 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

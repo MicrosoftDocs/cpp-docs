@@ -1,21 +1,14 @@
 ---
-title: "How to: Customize the Application Button | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "How to: Customize the Application Button"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["application button [MFC], customizing"]
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Customize the Application Button
 
 When you click the Application button, a menu of commands is displayed. Typically, the menu contains file-related commands such as **Open**, **Save**, **Print**, and **Exit**.
 
-![MFC Ribbon Application Button](../mfc/media/application_button.png "application_button")
+![MFC Ribbon Application Button](../mfc/media/application_button.png "MFC Ribbon Application Button")
 
 To customize the Application button, open it in the **Properties** window, modify its properties, and then preview the ribbon control.
 
@@ -54,7 +47,6 @@ The Application menu does not appear on the design surface. To view it, you must
 
 - On the **Ribbon Editor Toolbar**, click **Test Ribbon**.
 
-## See Also
+## See also
 
 [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
-

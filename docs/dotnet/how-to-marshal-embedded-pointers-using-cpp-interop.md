@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Embedded Pointers Using C++ Interop | Microsoft Docs"
+title: "How to: Marshal Embedded Pointers Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structures [C++], marshaling embedded pointers", "interop [C++], embedded pointers", "C++ Interop, embedded pointers", "marshaling [C++], embedded pointers", "pointers [C++], marshaling", "data marshaling [C++], embedded pointers"]
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Embedded Pointers Using C++ Interop
 
@@ -17,7 +11,7 @@ The following code examples use the [managed, unmanaged](../preprocessor/managed
 
 ## Example
 
-The following example demonstrates how an unmanaged function that takes a structure containing pointers can be called from a managed function. The managed function creates an instance of the structure and initializes the embedded pointer with the new keyword (instead of the [ref new, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) keyword). Because this allocates the memory on the native heap, there is no need to pin the array to suppress garbage collection. However, the memory must be explicitly deleted to avoid memory leakage.
+The following example demonstrates how an unmanaged function that takes a structure containing pointers can be called from a managed function. The managed function creates an instance of the structure and initializes the embedded pointer with the new keyword (instead of the [ref new, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) keyword). Because this allocates the memory on the native heap, there is no need to pin the array to suppress garbage collection. However, the memory must be explicitly deleted to avoid memory leakage.
 
 ```
 // marshal_embedded_pointer.cpp
@@ -85,6 +79,6 @@ array[8] = 97.754975
 array[9] = 27.370446
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

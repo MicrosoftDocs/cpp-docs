@@ -1,16 +1,9 @@
 ---
-title: "CRichEditView Class | Microsoft Docs"
-ms.custom: ""
+title: "CRichEditView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRichEditView", "AFXRICH/CRichEditView", "AFXRICH/CRichEditView::CRichEditView", "AFXRICH/CRichEditView::AdjustDialogPosition", "AFXRICH/CRichEditView::CanPaste", "AFXRICH/CRichEditView::DoPaste", "AFXRICH/CRichEditView::FindText", "AFXRICH/CRichEditView::FindTextSimple", "AFXRICH/CRichEditView::GetCharFormatSelection", "AFXRICH/CRichEditView::GetDocument", "AFXRICH/CRichEditView::GetInPlaceActiveItem", "AFXRICH/CRichEditView::GetMargins", "AFXRICH/CRichEditView::GetPageRect", "AFXRICH/CRichEditView::GetPaperSize", "AFXRICH/CRichEditView::GetParaFormatSelection", "AFXRICH/CRichEditView::GetPrintRect", "AFXRICH/CRichEditView::GetPrintWidth", "AFXRICH/CRichEditView::GetRichEditCtrl", "AFXRICH/CRichEditView::GetSelectedItem", "AFXRICH/CRichEditView::GetTextLength", "AFXRICH/CRichEditView::GetTextLengthEx", "AFXRICH/CRichEditView::InsertFileAsObject", "AFXRICH/CRichEditView::InsertItem", "AFXRICH/CRichEditView::IsRichEditFormat", "AFXRICH/CRichEditView::OnCharEffect", "AFXRICH/CRichEditView::OnParaAlign", "AFXRICH/CRichEditView::OnUpdateCharEffect", "AFXRICH/CRichEditView::OnUpdateParaAlign", "AFXRICH/CRichEditView::PrintInsideRect", "AFXRICH/CRichEditView::PrintPage", "AFXRICH/CRichEditView::SetCharFormat", "AFXRICH/CRichEditView::SetMargins", "AFXRICH/CRichEditView::SetPaperSize", "AFXRICH/CRichEditView::SetParaFormat", "AFXRICH/CRichEditView::TextNotFound", "AFXRICH/CRichEditView::GetClipboardData", "AFXRICH/CRichEditView::GetContextMenu", "AFXRICH/CRichEditView::IsSelected", "AFXRICH/CRichEditView::OnFindNext", "AFXRICH/CRichEditView::OnInitialUpdate", "AFXRICH/CRichEditView::OnPasteNativeObject", "AFXRICH/CRichEditView::OnPrinterChanged", "AFXRICH/CRichEditView::OnReplaceAll", "AFXRICH/CRichEditView::OnReplaceSel", "AFXRICH/CRichEditView::OnTextNotFound", "AFXRICH/CRichEditView::QueryAcceptData", "AFXRICH/CRichEditView::WrapChanged", "AFXRICH/CRichEditView::m_nBulletIndent", "AFXRICH/CRichEditView::m_nWordWrap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRichEditView [MFC], CRichEditView", "CRichEditView [MFC], AdjustDialogPosition", "CRichEditView [MFC], CanPaste", "CRichEditView [MFC], DoPaste", "CRichEditView [MFC], FindText", "CRichEditView [MFC], FindTextSimple", "CRichEditView [MFC], GetCharFormatSelection", "CRichEditView [MFC], GetDocument", "CRichEditView [MFC], GetInPlaceActiveItem", "CRichEditView [MFC], GetMargins", "CRichEditView [MFC], GetPageRect", "CRichEditView [MFC], GetPaperSize", "CRichEditView [MFC], GetParaFormatSelection", "CRichEditView [MFC], GetPrintRect", "CRichEditView [MFC], GetPrintWidth", "CRichEditView [MFC], GetRichEditCtrl", "CRichEditView [MFC], GetSelectedItem", "CRichEditView [MFC], GetTextLength", "CRichEditView [MFC], GetTextLengthEx", "CRichEditView [MFC], InsertFileAsObject", "CRichEditView [MFC], InsertItem", "CRichEditView [MFC], IsRichEditFormat", "CRichEditView [MFC], OnCharEffect", "CRichEditView [MFC], OnParaAlign", "CRichEditView [MFC], OnUpdateCharEffect", "CRichEditView [MFC], OnUpdateParaAlign", "CRichEditView [MFC], PrintInsideRect", "CRichEditView [MFC], PrintPage", "CRichEditView [MFC], SetCharFormat", "CRichEditView [MFC], SetMargins", "CRichEditView [MFC], SetPaperSize", "CRichEditView [MFC], SetParaFormat", "CRichEditView [MFC], TextNotFound", "CRichEditView [MFC], GetClipboardData", "CRichEditView [MFC], GetContextMenu", "CRichEditView [MFC], IsSelected", "CRichEditView [MFC], OnFindNext", "CRichEditView [MFC], OnInitialUpdate", "CRichEditView [MFC], OnPasteNativeObject", "CRichEditView [MFC], OnPrinterChanged", "CRichEditView [MFC], OnReplaceAll", "CRichEditView [MFC], OnReplaceSel", "CRichEditView [MFC], OnTextNotFound", "CRichEditView [MFC], QueryAcceptData", "CRichEditView [MFC], WrapChanged", "CRichEditView [MFC], m_nBulletIndent", "CRichEditView [MFC], m_nWordWrap"]
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRichEditView Class
 
@@ -99,7 +92,7 @@ A "rich edit control" is a window in which the user can enter and edit text. The
 
 This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.
 
-For an example of using a rich edit view in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.
+For an example of using a rich edit view in an MFC application, see the [WORDPAD](../../overview/visual-cpp-samples.md) sample application.
 
 ## Inheritance Hierarchy
 
@@ -955,7 +948,7 @@ long PrintInsideRect(
 Pointer to a device context for the output area.
 
 *rectLayout*<br/>
-[RECT](../../mfc/reference/rect-structure1.md) or [CRect](../../atl-mfc-shared/reference/crect-class.md) which defines the output area.
+[RECT](/windows/desktop/api/windef/ns-windef-tagrect) or [CRect](../../atl-mfc-shared/reference/crect-class.md) which defines the output area.
 
 *nIndexStart*<br/>
 Zero-based index of the first character to be formatted.
@@ -1187,9 +1180,9 @@ Override this function to modify the way the rich edit view responds to changes 
 
 [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/cpp/cricheditview-class_13.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)<br/>

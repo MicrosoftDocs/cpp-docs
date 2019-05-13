@@ -1,16 +1,9 @@
 ---
-title: "CMFCToolTipInfo Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCToolTipInfo Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCToolTipInfo", "AFXTOOLTIPCTRL/CMFCToolTipInfo", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bBalloonTooltip", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bBoldLabel", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawDescription", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawIcon", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawSeparator", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bRoundedCorners", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bVislManagerTheme", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrBorder", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrFill", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrFillGradient", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrText", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nGradientAngle", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nMaxDescrWidth"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolTipInfo [MFC], m_bBalloonTooltip", "CMFCToolTipInfo [MFC], m_bBoldLabel", "CMFCToolTipInfo [MFC], m_bDrawDescription", "CMFCToolTipInfo [MFC], m_bDrawIcon", "CMFCToolTipInfo [MFC], m_bDrawSeparator", "CMFCToolTipInfo [MFC], m_bRoundedCorners", "CMFCToolTipInfo [MFC], m_bVislManagerTheme", "CMFCToolTipInfo [MFC], m_clrBorder", "CMFCToolTipInfo [MFC], m_clrFill", "CMFCToolTipInfo [MFC], m_clrFillGradient", "CMFCToolTipInfo [MFC], m_clrText", "CMFCToolTipInfo [MFC], m_nGradientAngle", "CMFCToolTipInfo [MFC], m_nMaxDescrWidth"]
 ms.assetid: f9d3d7f8-1f08-4342-a7b2-683860e5d2a5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCToolTipInfo Class
 
@@ -228,7 +221,7 @@ CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

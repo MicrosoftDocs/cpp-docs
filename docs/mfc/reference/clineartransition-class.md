@@ -1,16 +1,9 @@
 ---
-title: "CLinearTransition Class | Microsoft Docs"
-ms.custom: ""
+title: "CLinearTransition Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::Create", "AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CLinearTransition::m_duration"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CLinearTransition [MFC], CLinearTransition", "CLinearTransition [MFC], Create", "CLinearTransition [MFC], m_dblFinalValue", "CLinearTransition [MFC], m_duration"]
 ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CLinearTransition Class
 
@@ -112,6 +105,6 @@ The duration of the transition.
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

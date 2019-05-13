@@ -1,16 +1,9 @@
 ---
-title: "ExitInstance Member Function | Microsoft Docs"
-ms.custom: ""
+title: "ExitInstance Member Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: []
-dev_langs: ["C++"]
 helpviewer_keywords: ["programs [MFC], terminating", "CWinApp class [MFC], ExitInstance", "ExitInstance method [MFC]"]
 ms.assetid: 5bb597bd-8dab-4d49-8bcf-9c45aa8be4a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ExitInstance Member Function
 
@@ -18,6 +11,6 @@ The [ExitInstance](../mfc/reference/cwinapp-class.md#exitinstance) member functi
 
 Override `ExitInstance` if you need special cleanup processing, such as freeing graphics device interface (GDI) resources or deallocating memory used during program execution. Cleanup of standard items such as documents and views, however, is provided by the framework, with other overridable functions for doing special cleanup specific to those objects.
 
-## See Also
+## See also
 
 [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)

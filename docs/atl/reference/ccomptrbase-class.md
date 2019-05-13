@@ -1,16 +1,9 @@
 ---
-title: "CComPtrBase Class | Microsoft Docs"
-ms.custom: ""
+title: "CComPtrBase Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComPtrBase", "ATLCOMCLI/ATL::CComPtrBase", "ATLCOMCLI/ATL::CComPtrBase::Advise", "ATLCOMCLI/ATL::CComPtrBase::Attach", "ATLCOMCLI/ATL::CComPtrBase::CoCreateInstance", "ATLCOMCLI/ATL::CComPtrBase::CopyTo", "ATLCOMCLI/ATL::CComPtrBase::Detach", "ATLCOMCLI/ATL::CComPtrBase::IsEqualObject", "ATLCOMCLI/ATL::CComPtrBase::QueryInterface", "ATLCOMCLI/ATL::CComPtrBase::Release", "ATLCOMCLI/ATL::CComPtrBase::SetSite", "ATLCOMCLI/ATL::CComPtrBase::p"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComPtrBase class"]
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComPtrBase Class
 
@@ -403,6 +396,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 This method calls [AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

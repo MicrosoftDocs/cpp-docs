@@ -1,16 +1,9 @@
 ---
-title: "Exception Handling Routines | Microsoft Docs"
-ms.custom: ""
+title: "Exception Handling Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.exceptions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling, routines"]
 ms.assetid: f60548c6-850a-4e1e-a79b-a2a6a541ab62
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Exception Handling Routines
 
@@ -26,6 +19,6 @@ Use the C++ exception-handling functions to recover from unexpected events durin
 |[terminate](../c-runtime-library/reference/terminate-crt.md)|Called automatically under certain circumstances after exception is thrown. The **terminate** function calls **abort** or a function you specify using **set_terminate**|
 |[unexpected](../c-runtime-library/reference/unexpected-crt.md)|Calls **terminate** or a function you specify using **set_unexpected**. The **unexpected** function is not used in current Microsoft C++ exception-handling implementation|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

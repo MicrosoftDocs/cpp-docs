@@ -1,19 +1,12 @@
 ---
-title: "ctan, ctanf, ctanl | Microsoft Docs"
-ms.custom: ""
+title: "ctan, ctanf, ctanl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["ctan", "ctanf", "ctanl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["ctan", "ctanf", "ctanl", "complex/ctan", "complex/ctanf", "complex/ctanl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ctan function", "ctanf function", "ctanl function"]
 ms.assetid: d3cbd25c-1e93-4a6d-8154-da42921f7223
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ctan, ctanf, ctanl
 

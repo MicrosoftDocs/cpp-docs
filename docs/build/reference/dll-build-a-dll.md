@@ -1,16 +1,9 @@
 ---
-title: "-DLL (Build a DLL) | Microsoft Docs"
-ms.custom: ""
+title: "/DLL (Build a DLL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/dll"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-DLL linker option", "/DLL linker option [C++]", "exporting DLLs [C++], specifying exports", "DLLs [C++], building", "DLL linker option [C++]"]
 ms.assetid: c7685aec-31d0-490f-9503-fb5171a23609
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DLL (Build a DLL)
 
@@ -24,9 +17,9 @@ The /DLL option builds a DLL as the main output file. A DLL usually contains exp
 
 1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) in the source code
 
-1. An [EXPORTS](../../build/reference/exports.md) statement in a .def file
+1. An [EXPORTS](exports.md) statement in a .def file
 
-1. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
+1. An [/EXPORT](export-exports-a-function.md) specification in a LINK command
 
 A program can use more than one method.
 
@@ -38,7 +31,7 @@ Note that if you create your import library in a preliminary step, before creati
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Configuration Properties** folder.
 
@@ -50,7 +43,7 @@ Note that if you create your import library in a preliminary step, before creati
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCPropertySheet.ConfigurationType%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Creating a Dataflow Agent | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Creating a Dataflow Agent"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["creating dataflow agents [Concurrency Runtime]", "dataflow agents, creating [Concurrency Runtime]"]
 ms.assetid: 9db5ce3f-c51b-4de1-b79b-9ac2a0cbd130
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating a Dataflow Agent
 
@@ -83,7 +76,7 @@ The dataflow agent works by creating a network of message buffers, each of which
 
 The following diagram shows the complete dataflow network for the `dataflow_agent` class:
 
-![The dataflow network](../../parallel/concrt/media/concrt_dataflow.png "concrt_dataflow")
+![The dataflow network](../../parallel/concrt/media/concrt_dataflow.png "The dataflow network")
 
 The following table describes the members of the network.
 
@@ -150,7 +143,6 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
-

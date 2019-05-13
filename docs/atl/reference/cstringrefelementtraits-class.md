@@ -1,16 +1,9 @@
 ---
-title: "CStringRefElementTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CStringRefElementTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits::CompareElements", "ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered", "ATLCOLL/ATL::CStringRefElementTraits::Hash"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStringRefElementTraits class"]
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStringRefElementTraits Class
 
@@ -111,7 +104,7 @@ The string element.
 
 Returns a hash value, calculated using the string's contents.
 
-## See Also
+## See also
 
 [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

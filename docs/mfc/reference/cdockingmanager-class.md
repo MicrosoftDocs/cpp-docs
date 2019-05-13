@@ -1,16 +1,9 @@
 ---
-title: "CDockingManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CDockingManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDockingManager", "AFXDOCKINGMANAGER/CDockingManager", "AFXDOCKINGMANAGER/CDockingManager::AddDockSite", "AFXDOCKINGMANAGER/CDockingManager::AddHiddenMDITabbedBar", "AFXDOCKINGMANAGER/CDockingManager::AddMiniFrame", "AFXDOCKINGMANAGER/CDockingManager::AddPane", "AFXDOCKINGMANAGER/CDockingManager::AdjustDockingLayout", "AFXDOCKINGMANAGER/CDockingManager::AdjustPaneFrames", "AFXDOCKINGMANAGER/CDockingManager::AdjustRectToClientArea", "AFXDOCKINGMANAGER/CDockingManager::AlignAutoHidePane", "AFXDOCKINGMANAGER/CDockingManager::AutoHidePane", "AFXDOCKINGMANAGER/CDockingManager::BringBarsToTop", "AFXDOCKINGMANAGER/CDockingManager::BuildPanesMenu", "AFXDOCKINGMANAGER/CDockingManager::CalcExpectedDockedRect", "AFXDOCKINGMANAGER/CDockingManager::Create", "AFXDOCKINGMANAGER/CDockingManager::DeterminePaneAndStatus", "AFXDOCKINGMANAGER/CDockingManager::DisableRestoreDockState", "AFXDOCKINGMANAGER/CDockingManager::DockPane", "AFXDOCKINGMANAGER/CDockingManager::DockPaneLeftOf", "AFXDOCKINGMANAGER/CDockingManager::EnableAutoHidePanes", "AFXDOCKINGMANAGER/CDockingManager::EnableDocking", "AFXDOCKINGMANAGER/CDockingManager::EnableDockSiteMenu", "AFXDOCKINGMANAGER/CDockingManager::EnablePaneContextMenu", "AFXDOCKINGMANAGER/CDockingManager::FindDockSite", "AFXDOCKINGMANAGER/CDockingManager::FindDockSiteByPane", "AFXDOCKINGMANAGER/CDockingManager::FindPaneByID", "AFXDOCKINGMANAGER/CDockingManager::FixupVirtualRects", "AFXDOCKINGMANAGER/CDockingManager::FrameFromPoint", "AFXDOCKINGMANAGER/CDockingManager::GetClientAreaBounds", "AFXDOCKINGMANAGER/CDockingManager::GetDockingMode", "AFXDOCKINGMANAGER/CDockingManager::GetDockSiteFrameWnd", "AFXDOCKINGMANAGER/CDockingManager::GetEnabledAutoHideAlignment", "AFXDOCKINGMANAGER/CDockingManager::GetMiniFrames", "AFXDOCKINGMANAGER/CDockingManager::GetOuterEdgeBounds", "AFXDOCKINGMANAGER/CDockingManager::GetPaneList", "AFXDOCKINGMANAGER/CDockingManager::GetSmartDockingManager", "AFXDOCKINGMANAGER/CDockingManager::GetSmartDockingManagerPermanent", "AFXDOCKINGMANAGER/CDockingManager::GetSmartDockingParams", "AFXDOCKINGMANAGER/CDockingManager::GetSmartDockingTheme", "AFXDOCKINGMANAGER/CDockingManager::HideAutoHidePanes", "AFXDOCKINGMANAGER/CDockingManager::InsertDockSite", "AFXDOCKINGMANAGER/CDockingManager::InsertPane", "AFXDOCKINGMANAGER/CDockingManager::IsDockSiteMenu", "AFXDOCKINGMANAGER/CDockingManager::IsInAdjustLayout", "AFXDOCKINGMANAGER/CDockingManager::IsOLEContainerMode", "AFXDOCKINGMANAGER/CDockingManager::IsPointNearDockSite", "AFXDOCKINGMANAGER/CDockingManager::IsPrintPreviewValid", "AFXDOCKINGMANAGER/CDockingManager::LoadState", "AFXDOCKINGMANAGER/CDockingManager::LockUpdate", "AFXDOCKINGMANAGER/CDockingManager::OnActivateFrame", "AFXDOCKINGMANAGER/CDockingManager::OnClosePopupMenu", "AFXDOCKINGMANAGER/CDockingManager::OnMoveMiniFrame", "AFXDOCKINGMANAGER/CDockingManager::OnPaneContextMenu", "AFXDOCKINGMANAGER/CDockingManager::PaneFromPoint", "AFXDOCKINGMANAGER/CDockingManager::ProcessPaneContextMenuCommand", "AFXDOCKINGMANAGER/CDockingManager::RecalcLayout", "AFXDOCKINGMANAGER/CDockingManager::ReleaseEmptyPaneContainers", "AFXDOCKINGMANAGER/CDockingManager::RemoveHiddenMDITabbedBar", "AFXDOCKINGMANAGER/CDockingManager::RemoveMiniFrame", "AFXDOCKINGMANAGER/CDockingManager::RemovePaneFromDockManager", "AFXDOCKINGMANAGER/CDockingManager::ReplacePane", "AFXDOCKINGMANAGER/CDockingManager::ResortMiniFramesForZOrder", "AFXDOCKINGMANAGER/CDockingManager::SaveState", "AFXDOCKINGMANAGER/CDockingManager::SendMessageToMiniFrames", "AFXDOCKINGMANAGER/CDockingManager::Serialize", "AFXDOCKINGMANAGER/CDockingManager::SetAutohideZOrder", "AFXDOCKINGMANAGER/CDockingManager::SetDockingMode", "AFXDOCKINGMANAGER/CDockingManager::SetDockState", "AFXDOCKINGMANAGER/CDockingManager::SetPrintPreviewMode", "AFXDOCKINGMANAGER/CDockingManager::SetSmartDockingParams", "AFXDOCKINGMANAGER/CDockingManager::ShowDelayShowMiniFrames", "AFXDOCKINGMANAGER/CDockingManager::ShowPanes", "AFXDOCKINGMANAGER/CDockingManager::StartSDocking", "AFXDOCKINGMANAGER/CDockingManager::StopSDocking", "AFXDOCKINGMANAGER/CDockingManager::m_bHideDockingBarsInContainerMode", "AFXDOCKINGMANAGER/CDockingManager::m_dockModeGlobal", "AFXDOCKINGMANAGER/CDockingManager::m_nDockSensitivity", "AFXDOCKINGMANAGER/CDockingManager::m_nTimeOutBeforeDockingBarDock", "AFXDOCKINGMANAGER/CDockingManager::m_nTimeOutBeforeToolBarDock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDockingManager [MFC], AddDockSite", "CDockingManager [MFC], AddHiddenMDITabbedBar", "CDockingManager [MFC], AddMiniFrame", "CDockingManager [MFC], AddPane", "CDockingManager [MFC], AdjustDockingLayout", "CDockingManager [MFC], AdjustPaneFrames", "CDockingManager [MFC], AdjustRectToClientArea", "CDockingManager [MFC], AlignAutoHidePane", "CDockingManager [MFC], AutoHidePane", "CDockingManager [MFC], BringBarsToTop", "CDockingManager [MFC], BuildPanesMenu", "CDockingManager [MFC], CalcExpectedDockedRect", "CDockingManager [MFC], Create", "CDockingManager [MFC], DeterminePaneAndStatus", "CDockingManager [MFC], DisableRestoreDockState", "CDockingManager [MFC], DockPane", "CDockingManager [MFC], DockPaneLeftOf", "CDockingManager [MFC], EnableAutoHidePanes", "CDockingManager [MFC], EnableDocking", "CDockingManager [MFC], EnableDockSiteMenu", "CDockingManager [MFC], EnablePaneContextMenu", "CDockingManager [MFC], FindDockSite", "CDockingManager [MFC], FindDockSiteByPane", "CDockingManager [MFC], FindPaneByID", "CDockingManager [MFC], FixupVirtualRects", "CDockingManager [MFC], FrameFromPoint", "CDockingManager [MFC], GetClientAreaBounds", "CDockingManager [MFC], GetDockingMode", "CDockingManager [MFC], GetDockSiteFrameWnd", "CDockingManager [MFC], GetEnabledAutoHideAlignment", "CDockingManager [MFC], GetMiniFrames", "CDockingManager [MFC], GetOuterEdgeBounds", "CDockingManager [MFC], GetPaneList", "CDockingManager [MFC], GetSmartDockingManager", "CDockingManager [MFC], GetSmartDockingManagerPermanent", "CDockingManager [MFC], GetSmartDockingParams", "CDockingManager [MFC], GetSmartDockingTheme", "CDockingManager [MFC], HideAutoHidePanes", "CDockingManager [MFC], InsertDockSite", "CDockingManager [MFC], InsertPane", "CDockingManager [MFC], IsDockSiteMenu", "CDockingManager [MFC], IsInAdjustLayout", "CDockingManager [MFC], IsOLEContainerMode", "CDockingManager [MFC], IsPointNearDockSite", "CDockingManager [MFC], IsPrintPreviewValid", "CDockingManager [MFC], LoadState", "CDockingManager [MFC], LockUpdate", "CDockingManager [MFC], OnActivateFrame", "CDockingManager [MFC], OnClosePopupMenu", "CDockingManager [MFC], OnMoveMiniFrame", "CDockingManager [MFC], OnPaneContextMenu", "CDockingManager [MFC], PaneFromPoint", "CDockingManager [MFC], ProcessPaneContextMenuCommand", "CDockingManager [MFC], RecalcLayout", "CDockingManager [MFC], ReleaseEmptyPaneContainers", "CDockingManager [MFC], RemoveHiddenMDITabbedBar", "CDockingManager [MFC], RemoveMiniFrame", "CDockingManager [MFC], RemovePaneFromDockManager", "CDockingManager [MFC], ReplacePane", "CDockingManager [MFC], ResortMiniFramesForZOrder", "CDockingManager [MFC], SaveState", "CDockingManager [MFC], SendMessageToMiniFrames", "CDockingManager [MFC], Serialize", "CDockingManager [MFC], SetAutohideZOrder", "CDockingManager [MFC], SetDockingMode", "CDockingManager [MFC], SetDockState", "CDockingManager [MFC], SetPrintPreviewMode", "CDockingManager [MFC], SetSmartDockingParams", "CDockingManager [MFC], ShowDelayShowMiniFrames", "CDockingManager [MFC], ShowPanes", "CDockingManager [MFC], StartSDocking", "CDockingManager [MFC], StopSDocking", "CDockingManager [MFC], m_bHideDockingBarsInContainerMode", "CDockingManager [MFC], m_dockModeGlobal", "CDockingManager [MFC], m_nDockSensitivity", "CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock", "CDockingManager [MFC], m_nTimeOutBeforeToolBarDock"]
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDockingManager Class
 
@@ -125,19 +118,19 @@ The following tips apply to `CDockingManager` objects:
 
 - [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md) supports these docking modes:
 
-    - `AFX_DOCK_TYPE::DT_IMMEDIATE`
+  - `AFX_DOCK_TYPE::DT_IMMEDIATE`
 
-    - `AFX_DOCK_TYPE::DT_STANDARD`
+  - `AFX_DOCK_TYPE::DT_STANDARD`
 
-    - `AFX_DOCK_TYPE::DT_SMART`
+  - `AFX_DOCK_TYPE::DT_SMART`
 
-   These docking modes are defined by [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) and are set by calling [CDockingManager::SetDockingMode](#setdockingmode).
+  These docking modes are defined by [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) and are set by calling [CDockingManager::SetDockingMode](#setdockingmode).
 
 - If you want to create a non-floating, non-resizable pane, call the [CDockingManager::AddPane](#addpane) method. This method registers the pane with the docking manager, which is responsible for the layout of the pane.
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CDockingManager` class to configure a `CDockingManager` object. The example shows how to display an additional button that opens a pop-up menu on the captions of all docking panes and how to set the docking mode of the object. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CDockingManager` class to configure a `CDockingManager` object. The example shows how to display an additional button that opens a pop-up menu on the captions of all docking panes and how to set the docking mode of the object. This code snippet is part of the [Visual Studio Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#24](../../mfc/codesnippet/cpp/cdockingmanager-class_1.cpp)]
 
@@ -1609,7 +1602,7 @@ Returns one of the following enumerated values: AFX_SDT_DEFAULT, AFX_SDT_VS2005,
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

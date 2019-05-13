@@ -1,16 +1,9 @@
 ---
-title: "Application Information and Management | Microsoft Docs"
-ms.custom: ""
+title: "Application Information and Management"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [MFC], managing"]
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application Information and Management
 
@@ -137,10 +130,6 @@ CContextMenuManager* afxContextMenuManager;
 
 **Header:** afxcontextmenumanager.h
 
-### See Also
-
-[CContextMenuManager Class](ccontextmenumanager-class.md)
-
 ##  <a name="afxendthread"></a>  AfxEndThread
 
 Call this function to terminate the currently executing thread.
@@ -208,10 +197,6 @@ The modules are searched in this order:
 ### Requirements
 
 **Header:** afxwin.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)
 
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary
 
@@ -489,11 +474,6 @@ This method is useful when you have to validate that a function or method parame
 
 **Header:** afxpriv.h
 
-### See Also
-
-[CWnd Class](cwnd-class.md)<br/>
-[CFrameWndEx Class](cframewndex-class.md)
-
 ## <a name="afxismfctoolbar"></a> AfxIsMFCToolBar
 
 Determines whether the given window is a toolbar object.
@@ -521,11 +501,6 @@ This method returns `TRUE` if *pWnd* derives from `CMFCToolBar`. This method is 
 
 **Header:** afxpriv.h
 
-### See Also
-
-[CWnd Class](cwnd-class.md)<br/>
-[CMFCToolBar Class](cmfctoolbar-class.md)
-
 ## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
 
 Pointer to the global [keyboard manager](ckeyboardmanager-class.md).
@@ -539,11 +514,6 @@ CKeyboardManager* afxKeyboardManager;
 ### Requirements
 
 **Header:** afxkeyboardmanager.h
-
-### See Also
-
-[Macros, Global Functions, and Global Variables](mfc-macros-and-globals.md)<br/>
-[CKeyboardManager Class](ckeyboardmanager-class.md)
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
@@ -612,10 +582,6 @@ CMenuTearOffManager* g_pTearOffMenuManager;
 
 **Header:** afxmenutearoffmanager.h
 
-### See Also
-
-[CMenuTearOffManager Class](cmenutearoffmanager-class.md)
-
 ## <a name="afxmousemanager"></a>  AfxMouseManager
 
 Pointer to the global [mouse manager](cmousemanager-class.md).
@@ -630,10 +596,6 @@ CMouseManager* afxMouseManager;
 
 **Header:** afxmousemanager.h
 
-### See Also
-
-[CMouseManager Class](cmousemanager-class.md)
-
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass
 
 Use this function to register window classes in a DLL that uses MFC.
@@ -645,7 +607,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 ### Parameters
 
 *lpWndClass*<br/>
-Pointer to a [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.
+Pointer to a [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.
 
 ### Return Value
 
@@ -680,7 +642,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 ### Parameters
 
 *nClassStyle*<br/>
-Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure in the Windows SDK. If NULL, the defaults will be set as follows:
+Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure in the Windows SDK. If NULL, the defaults will be set as follows:
 
 - Sets the mouse style to CS_DBLCLKS, which sends double-click messages to the window procedure when the user double-clicks the mouse.
 
@@ -741,7 +703,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 
 Before Windows Vista, applications that accessed the registry usually used the **HKEY_CLASSES_ROOT** node. However, with Windows Vista or later operating systems, you must run an application in elevated mode to write to HKCR.
 
-This method enables your application to read and write to the registry without running in elevated mode by redirecting registry access from HKCR to HKCU. For more information, see [Linker Property Pages](../../ide/linker-property-pages.md).
+This method enables your application to read and write to the registry without running in elevated mode by redirecting registry access from HKCR to HKCU. For more information, see [Linker Property Pages](../../build/reference/linker-property-pages.md).
 
 If you enable registry redirection, the framework redirects access from HKCR to **HKEY_CURRENT_USER\Software\Classes**. Only the MFC and ATL frameworks are affected by the redirection.
 
@@ -786,10 +748,6 @@ CShellManager* afxShellManager;
 
 **Header:** afxshellmanager.h
 
-### See Also
-
-[CShellManager Class](cshellmanager-class.md)
-
 ##  <a name="afxsocketinit"></a>  AfxSocketInit
 
 Call this function in your `CWinApp::InitInstance` override to initialize Windows Sockets.
@@ -801,7 +759,7 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 ### Parameters
 
 *lpwsaData*<br/>
-A pointer to a [WSADATA](../../mfc/reference/wsadata-structure.md) structure. If *lpwsaData* is not equal to NULL, then the address of the `WSADATA` structure is filled by the call to `WSAStartup`. This function also ensures that `WSACleanup` is called for you before the application terminates.
+A pointer to a [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) structure. If *lpwsaData* is not equal to NULL, then the address of the `WSADATA` structure is filled by the call to `WSAStartup`. This function also ensures that `WSACleanup` is called for you before the application terminates.
 
 ### Return Value
 
@@ -828,10 +786,6 @@ CUserToolsManager* afxUserToolsManager;
 ### Requirements
 
 **Header:** afxusertoolsmanager.h
-
-### See Also
-
-[CUserToolsManager Class](cusertoolsmanager-class.md)
 
 ##  <a name="afxwininit"></a>  AfxWinInit
 
@@ -876,7 +830,16 @@ If you call `AfxWinInit` yourself, you should declare an instance of a `CWinApp`
 
   **Header** afxwin.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CWinApp Class](../../mfc/reference/cwinapp-class.md)
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[CWinApp Class](cwinapp-class.md)<br/>
+[CContextMenuManager Class](ccontextmenumanager-class.md)<br/>
+[CWnd Class](cwnd-class.md)<br/>
+[CFrameWndEx Class](cframewndex-class.md)<br/>
+[CMFCToolBar Class](cmfctoolbar-class.md)<br/>
+[CKeyboardManager Class](ckeyboardmanager-class.md)<br/>
+[CMenuTearOffManager Class](cmenutearoffmanager-class.md)<br/>
+[CMouseManager Class](cmousemanager-class.md)<br/>
+[CShellManager Class](cshellmanager-class.md)<br/>
+[CUserToolsManager Class](cusertoolsmanager-class.md)

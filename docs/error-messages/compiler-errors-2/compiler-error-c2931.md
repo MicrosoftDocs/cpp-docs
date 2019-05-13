@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2931 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2931"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2931"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2931"]
 ms.assetid: 33430407-b149-4ba3-baf8-b0dae1ea3a5d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2931
 

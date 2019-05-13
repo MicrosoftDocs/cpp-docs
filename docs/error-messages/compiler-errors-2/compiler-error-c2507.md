@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2507 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2507"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2507"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2507"]
 ms.assetid: f102aff5-de7d-4c3f-9cac-2ddf9ce02b14
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2507
 

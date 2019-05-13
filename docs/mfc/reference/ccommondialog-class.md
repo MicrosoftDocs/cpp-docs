@@ -1,16 +1,9 @@
 ---
-title: "CCommonDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CCommonDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCommonDialog", "AFXDLGS/CCommonDialog", "AFXDLGS/CCommonDialog::CCommonDialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCommonDialog [MFC], CCommonDialog"]
 ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCommonDialog Class
 
@@ -83,7 +76,7 @@ Points to the parent or owner window object (of type [CWnd](../../mfc/reference/
 
 See [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) for complete information.
 
-## See Also
+## See also
 
 [CDialog Class](../../mfc/reference/cdialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4295 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4295"
 ms.date: "1/09/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4295"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4295"]
 ms.assetid: 20dbff85-9f62-4ca3-8fe9-079d4512006d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4295
 

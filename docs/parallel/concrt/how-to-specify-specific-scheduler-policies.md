@@ -1,15 +1,8 @@
 ---
-title: "How to: Specify Specific Scheduler Policies | Microsoft Docs"
-ms.custom: ""
+title: "How to: Specify Specific Scheduler Policies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["specifying scheduler policies [Concurrency Runtime]", "scheduler policies, specifying [Concurrency Runtime]"]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Specify Specific Scheduler Policies
 
@@ -48,9 +41,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc scheduler-policy.cpp**
 
-## See Also
+## See also
 
 [Scheduler Policies](../../parallel/concrt/scheduler-policies.md)<br/>
 [How to: Manage a Scheduler Instance](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
 [How to: Create Agents that Use Specific Scheduler Policies](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
-

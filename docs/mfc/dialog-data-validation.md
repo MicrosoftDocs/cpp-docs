@@ -1,15 +1,8 @@
 ---
-title: "Dialog Data Validation | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Data Validation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["validating data [MFC], message boxes", "data validation [MFC], dialog boxes", "dialog boxes [MFC], validating data", "validating data [MFC], dialog box data entry", "DDV (dialog data validation) [MFC]", "data validation [MFC], message boxes"]
 ms.assetid: f070c309-2044-4ff2-8c92-1ec1ea84af58
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Data Validation
 
@@ -19,9 +12,8 @@ You can also define your own custom DDX and DDV routines. For details on this an
 
 The [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) will write all of the DDX and DDV calls in the data map for you.
 
-## See Also
+## See also
 
 [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Dialog Data Exchange](../mfc/dialog-data-exchange.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "ATL-MFC Concepts | Microsoft Docs"
-ms.custom: ""
+title: "ATL-MFC Concepts"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC", "ATL"]
 ms.assetid: 4d973f56-8730-4e0b-9522-b5f43bc4548d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL/MFC Concepts
 
@@ -20,7 +13,6 @@ This section provides conceptual and task-based topics to help you program using
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 Describes how to manage string data in applications.
 
-## See Also
+## See also
 
 [ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)
-

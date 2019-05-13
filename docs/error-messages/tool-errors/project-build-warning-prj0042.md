@@ -1,16 +1,9 @@
 ---
-title: "Project Build Warning PRJ0042 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Warning PRJ0042"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0042"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0042"]
 ms.assetid: 682c9999-6f85-409f-b102-00c93243f74f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Warning PRJ0042
 

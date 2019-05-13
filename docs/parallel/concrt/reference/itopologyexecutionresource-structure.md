@@ -1,16 +1,9 @@
 ---
-title: "ITopologyExecutionResource Structure | Microsoft Docs"
-ms.custom: ""
+title: "ITopologyExecutionResource Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["ITopologyExecutionResource", "CONCRTRM/concurrency::ITopologyExecutionResource", "CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetId", "CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetNext"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ITopologyExecutionResource structure"]
 ms.assetid: e36756f7-4cd9-4fa6-ba60-23fea58ef2bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ITopologyExecutionResource Structure
 
@@ -69,6 +62,6 @@ virtual ITopologyExecutionResource *GetNext() const = 0;
 
 An interface to the next execution resource in enumeration order. If there are no more nodes in enumeration order of the node to which this execution resource belongs, this method will return the value `NULL`.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

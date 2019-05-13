@@ -1,16 +1,9 @@
 ---
-title: "operator AND | Microsoft Docs"
-ms.custom: ""
+title: "operator AND"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["And", "operator AND"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator AND", "AND operator"]
 ms.assetid: 6862d248-c169-4db8-a478-9d0ce4fdd1e3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator AND
 

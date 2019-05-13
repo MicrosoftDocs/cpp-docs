@@ -1,15 +1,8 @@
 ---
-title: "Header Items in a Header Control | Microsoft Docs"
-ms.custom: ""
+title: "Header Items in a Header Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["header controls [MFC], header items in", "header items in header controls [MFC]", "CHeaderCtrl class [MFC], header items in", "controls [MFC], header"]
 ms.assetid: ac79ef1f-a671-4ab2-93e9-b1aa016a48bf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Header Items in a Header Control
 
@@ -27,7 +20,6 @@ You can customize the appearance and contents of new items when they are created
 
 - [Using image lists with header controls](../mfc/using-image-lists-with-header-controls.md)
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
-

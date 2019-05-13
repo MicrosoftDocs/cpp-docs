@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonSeparator Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonSeparator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::CMFCRibbonSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::AddToListBox", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::CopyFrom", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::GetRegularSize", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsSeparator", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::IsTabStop", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDraw", "AFXBASERIBBONELEMENT/CMFCRibbonSeparator::OnDrawOnList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonSeparator [MFC], CMFCRibbonSeparator", "CMFCRibbonSeparator [MFC], AddToListBox", "CMFCRibbonSeparator [MFC], CopyFrom", "CMFCRibbonSeparator [MFC], GetRegularSize", "CMFCRibbonSeparator [MFC], IsSeparator", "CMFCRibbonSeparator [MFC], IsTabStop", "CMFCRibbonSeparator [MFC], OnDraw", "CMFCRibbonSeparator [MFC], OnDrawOnList"]
 ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonSeparator Class
 
@@ -222,7 +215,7 @@ virtual void OnDrawOnList(
 |*bIsSelected*|[in] Ignored.|
 |*bHighlighted*|[in] Ignored.|
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -1,17 +1,15 @@
 ---
 layout: HubPage
-ms.topic: conceptual
-title: Visual C++ Documentation | Microsoft Docs
+title: Visual C++ Documentation
 description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
 author: "mikeblome"
 ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="/visualstudio/install/install-visual-studio">
+                <a href="/cpp/build/vscpp-step-0-installation">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -29,7 +27,7 @@ ms.workload: ["cplusplus"]
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
+                <a href="/cpp/get-started/tutorial-console-cpp">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -47,7 +45,7 @@ ms.workload: ["cplusplus"]
                 </a>
             </li>
             <li>
-                <a href="/cpp/what-s-new-for-visual-cpp-in-visual-studio">
+                <a href="/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -57,7 +55,7 @@ ms.workload: ["cplusplus"]
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>What’s new for C++ in Visual Studio 2017</h3>
+                                    <h3>What’s new for C++ in Visual Studio</h3>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +74,7 @@ ms.workload: ["cplusplus"]
                         <a href="#workloads1">Workloads</a>
                         <ul id="workloads1" class="cardsC">
                             <li>
-                                <a href="/cpp/windows/universal-windows-apps-cpp">
+                                <a href="/cpp/cppcx/universal-windows-apps-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -153,7 +151,7 @@ ms.workload: ["cplusplus"]
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/windows/uwp/gaming/e2e">
+                                <a href="/windows/uwp/gaming/e2e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -221,7 +219,7 @@ ms.workload: ["cplusplus"]
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/ide/building-cpp-projects-in-visual-studio">
+                                <a href="/cpp/build/projects-and-build-systems-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -278,7 +276,7 @@ ms.workload: ["cplusplus"]
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/ide/deploying-native-desktop-applications-visual-cpp">
+                                <a href="/cpp/windows/deploying-native-desktop-applications-visual-cpp">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -365,7 +363,7 @@ ms.workload: ["cplusplus"]
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/windows/component-extensions-for-runtime-platforms">
+                                <a href="/cpp/extensions/component-extensions-for-runtime-platforms">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -376,7 +374,7 @@ ms.workload: ["cplusplus"]
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Component Extensions</h3>
-                                                    <p>Component extensions to C++:  C++/CLI for .NET programming and C++/CX for UWP programming.</p>
+                                                    <p>Component extensions to C++: C++/CLI for .NET programming and C++/CX for UWP programming.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -441,7 +439,7 @@ ms.workload: ["cplusplus"]
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/windows/windows-runtime-cpp-template-library-wrl">
+                                <a href="/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

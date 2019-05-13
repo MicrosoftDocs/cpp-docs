@@ -1,16 +1,8 @@
 ---
-title: "ATL Class Overview | Microsoft Docs"
-ms.custom: ""
+title: "ATL Class Overview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-f1_keywords: ["vc.atl.classes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], ATL", "ATL, class reference"]
 ms.assetid: c38ac93d-c3a2-4ce7-8153-f1d34c0f0fa6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Class Overview
 
@@ -38,7 +30,7 @@ Classes in the Active Template Library (ATL) can be categorized as follows:
 
 For additional classes that can be used in ATL projects, see [Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md).
 
-## See Also
+## See also
 
 [Classes and structs](../atl/reference/atl-classes.md)<br/>
 [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)<br/>
@@ -46,4 +38,3 @@ For additional classes that can be used in ATL projects, see [Shared Classes](..
 [Global Variables](../atl/reference/atl-global-variables.md)<br/>
 [Macros](../atl/reference/atl-macros.md)<br/>
 [Typedefs](../atl/reference/atl-typedefs.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "__vmx_vmlaunch | Microsoft Docs"
-ms.custom: ""
+title: "__vmx_vmlaunch"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__vmx_vmlaunch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VMLAUNCH instruction", "__vmx_vmlaunch intrinsic"]
 ms.assetid: 708f7c38-b7c1-4ee7-bfc4-0daeb9cc9360
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __vmx_vmlaunch
 
@@ -49,7 +42,7 @@ The `__vmx_vmlaunch` function is equivalent to the `VMLAUNCH` machine instructio
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmresume](../intrinsics/vmx-vmresume.md)<br/>

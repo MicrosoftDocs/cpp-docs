@@ -1,16 +1,9 @@
 ---
-title: "CMFCStatusBar Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CMFCStatusBar Class"
+ms.date: "11/19/2018"
 f1_keywords: ["CMFCStatusBar", "AFXSTATUSBAR/CMFCStatusBar", "AFXSTATUSBAR/CMFCStatusBar::CalcFixedLayout", "AFXSTATUSBAR/CMFCStatusBar::CommandToIndex", "AFXSTATUSBAR/CMFCStatusBar::Create", "AFXSTATUSBAR/CMFCStatusBar::CreateEx", "AFXSTATUSBAR/CMFCStatusBar::DoesAllowDynInsertBefore", "AFXSTATUSBAR/CMFCStatusBar::EnablePaneDoubleClick", "AFXSTATUSBAR/CMFCStatusBar::EnablePaneProgressBar", "AFXSTATUSBAR/CMFCStatusBar::GetCount", "AFXSTATUSBAR/CMFCStatusBar::GetDrawExtendedArea", "AFXSTATUSBAR/CMFCStatusBar::GetExtendedArea", "AFXSTATUSBAR/CMFCStatusBar::GetItemID", "AFXSTATUSBAR/CMFCStatusBar::GetItemRect", "AFXSTATUSBAR/CMFCStatusBar::GetPaneInfo", "AFXSTATUSBAR/CMFCStatusBar::GetPaneProgress", "AFXSTATUSBAR/CMFCStatusBar::GetPaneStyle", "AFXSTATUSBAR/CMFCStatusBar::GetPaneText", "AFXSTATUSBAR/CMFCStatusBar::GetPaneWidth", "AFXSTATUSBAR/CMFCStatusBar::GetTipText", "AFXSTATUSBAR/CMFCStatusBar::InvalidatePaneContent", "AFXSTATUSBAR/CMFCStatusBar::PreCreateWindow", "AFXSTATUSBAR/CMFCStatusBar::SetDrawExtendedArea", "AFXSTATUSBAR/CMFCStatusBar::SetIndicators", "AFXSTATUSBAR/CMFCStatusBar::SetPaneAnimation", "AFXSTATUSBAR/CMFCStatusBar::SetPaneBackgroundColor", "AFXSTATUSBAR/CMFCStatusBar::SetPaneIcon", "AFXSTATUSBAR/CMFCStatusBar::SetPaneInfo", "AFXSTATUSBAR/CMFCStatusBar::SetPaneProgress", "AFXSTATUSBAR/CMFCStatusBar::SetPaneStyle", "AFXSTATUSBAR/CMFCStatusBar::SetPaneText", "AFXSTATUSBAR/CMFCStatusBar::SetPaneTextColor", "AFXSTATUSBAR/CMFCStatusBar::SetPaneWidth", "AFXSTATUSBAR/CMFCStatusBar::SetTipText", "AFXSTATUSBAR/CMFCStatusBar::OnDrawPane"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCStatusBar [MFC], CalcFixedLayout", "CMFCStatusBar [MFC], CommandToIndex", "CMFCStatusBar [MFC], Create", "CMFCStatusBar [MFC], CreateEx", "CMFCStatusBar [MFC], DoesAllowDynInsertBefore", "CMFCStatusBar [MFC], EnablePaneDoubleClick", "CMFCStatusBar [MFC], EnablePaneProgressBar", "CMFCStatusBar [MFC], GetCount", "CMFCStatusBar [MFC], GetDrawExtendedArea", "CMFCStatusBar [MFC], GetExtendedArea", "CMFCStatusBar [MFC], GetItemID", "CMFCStatusBar [MFC], GetItemRect", "CMFCStatusBar [MFC], GetPaneInfo", "CMFCStatusBar [MFC], GetPaneProgress", "CMFCStatusBar [MFC], GetPaneStyle", "CMFCStatusBar [MFC], GetPaneText", "CMFCStatusBar [MFC], GetPaneWidth", "CMFCStatusBar [MFC], GetTipText", "CMFCStatusBar [MFC], InvalidatePaneContent", "CMFCStatusBar [MFC], PreCreateWindow", "CMFCStatusBar [MFC], SetDrawExtendedArea", "CMFCStatusBar [MFC], SetIndicators", "CMFCStatusBar [MFC], SetPaneAnimation", "CMFCStatusBar [MFC], SetPaneBackgroundColor", "CMFCStatusBar [MFC], SetPaneIcon", "CMFCStatusBar [MFC], SetPaneInfo", "CMFCStatusBar [MFC], SetPaneProgress", "CMFCStatusBar [MFC], SetPaneStyle", "CMFCStatusBar [MFC], SetPaneText", "CMFCStatusBar [MFC], SetPaneTextColor", "CMFCStatusBar [MFC], SetPaneWidth", "CMFCStatusBar [MFC], SetTipText", "CMFCStatusBar [MFC], OnDrawPane"]
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCStatusBar Class
 
@@ -71,26 +64,26 @@ class CMFCStatusBar : public CPane
 
 ## Remarks
 
-The following diagram shows a figure of the status bar from [Status Bar Demo sample](../../visual-cpp-samples.md) application.
+The following diagram shows a figure of the status bar from [Status Bar Demo sample](../../overview/visual-cpp-samples.md) application.
 
-![Example of CMFCStatusBar](../../mfc/reference/media/cmfcstatusbar.png "cmfcstatusbar")
+![Example of CMFCStatusBar](../../mfc/reference/media/cmfcstatusbar.png "Example of CMFCStatusBar")
 
 ## Example
 
-The following example demonstrates the local variables that the application uses to call various methods in the `CMFCStatusBar` class. These variables are declared in StatusBarDemoView.h. The main frame is declared in MainFrm.h, the document is declared in StatusBarDemoDoc.h, and the view is declared in StatusBarDemoView.h. This code snippet is part of the [Status Bar Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates the local variables that the application uses to call various methods in the `CMFCStatusBar` class. These variables are declared in StatusBarDemoView.h. The main frame is declared in MainFrm.h, the document is declared in StatusBarDemoDoc.h, and the view is declared in StatusBarDemoView.h. This code snippet is part of the [Status Bar Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StatusBarDemo#9](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_1.h)]
 
 ## Example
 
-The following example demonstrates how to get a reference to `CMFCStatusBar` object by introducing the `GetStatusBar` method in MainFrm.h and then calling this method from the `GetStatusBar` method in StatusBarDemoView.h. This code snippet is part of the [Status Bar Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to get a reference to `CMFCStatusBar` object by introducing the `GetStatusBar` method in MainFrm.h and then calling this method from the `GetStatusBar` method in StatusBarDemoView.h. This code snippet is part of the [Status Bar Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StatusBarDemo#7](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_2.h)]
 [!code-cpp[NVC_MFC_StatusBarDemo#8](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_3.h)]
 
 ## Example
 
-The following example demonstrates how to call various methods in the `CMFCStatusBar` class in StatusBarDemoView.cpp. The constants are declared in MainFrm.h. The example shows how to set the icon, set the tooltip text of the status bar pane, display a progress bar on the specified pane, assign an animation to the specified pane, set the text and the width of the status bar pane, and set the current progress indicator of the progress bar for the status bar pane. This code snippet is part of the [Status Bar Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to call various methods in the `CMFCStatusBar` class in StatusBarDemoView.cpp. The constants are declared in MainFrm.h. The example shows how to set the icon, set the tooltip text of the status bar pane, display a progress bar on the specified pane, assign an animation to the specified pane, set the text and the width of the status bar pane, and set the current progress indicator of the progress bar for the status bar pane. This code snippet is part of the [Status Bar Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StatusBarDemo#6](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_4.h)]
 [!code-cpp[NVC_MFC_StatusBarDemo#1](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_5.cpp)]
@@ -737,7 +730,7 @@ void SetTipText(
 *pszTipText*<br/>
 [in] The new tooltip text.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

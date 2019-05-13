@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4508 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4508"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4508"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4508"]
 ms.assetid: c05f113b-b789-4df0-a4ef-78bce4767021
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4508
 

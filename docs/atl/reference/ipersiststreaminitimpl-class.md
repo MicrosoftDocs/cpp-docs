@@ -1,16 +1,9 @@
 ---
-title: "IPersistStreamInitImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IPersistStreamInitImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IPersistStreamInitImpl", "ATLCOM/ATL::IPersistStreamInitImpl", "ATLCOM/ATL::IPersistStreamInitImpl::GetClassID", "ATLCOM/ATL::IPersistStreamInitImpl::GetSizeMax", "ATLCOM/ATL::IPersistStreamInitImpl::InitNew", "ATLCOM/ATL::IPersistStreamInitImpl::IsDirty", "ATLCOM/ATL::IPersistStreamInitImpl::Load", "ATLCOM/ATL::IPersistStreamInitImpl::Save"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IPersistStreamInit ATL implementation", "IPersistStreamInitImpl class", "streams, ATL"]
 ms.assetid: ef217c3c-020f-4cf8-871e-ef68e57865b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IPersistStreamInitImpl Class
 
@@ -141,7 +134,7 @@ ATL uses the object's property map to store this information.
 
 See [IPersistStreamInit::Save](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-save) in the Windows SDK.
 
-## See Also
+## See also
 
 [Storages and Streams](/windows/desktop/Stg/storages-and-streams)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

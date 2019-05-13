@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4490 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4490"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4490"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4490"]
 ms.assetid: f9b03ecf-41a1-4f4d-a74c-2c1e88234ccc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4490
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 An override specifier was used incorrectly. For example, you do not override an interface function, you implement it.
 
-For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).
+For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).
 
 ## Example
 

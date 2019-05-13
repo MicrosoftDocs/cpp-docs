@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3556 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3556"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3556"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3556"]
 ms.assetid: 9b002dcc-494e-414f-9587-20c2a0a39333
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3556
 

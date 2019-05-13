@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2318 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2318"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2318"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2318"]
 ms.assetid: 169e30b9-df78-46cb-90bf-576ad3c32fd4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2318
 

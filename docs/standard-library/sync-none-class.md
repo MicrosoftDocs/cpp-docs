@@ -1,16 +1,9 @@
 ---
-title: "sync_none Class | Microsoft Docs"
-ms.custom: ""
+title: "sync_none Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::sync_none", "allocators/stdext::sync_none::allocate", "allocators/stdext::sync_none::deallocate", "allocators/stdext::sync_none::equals"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::sync_none", "stdext::sync_none [C++], allocate", "stdext::sync_none [C++], deallocate", "stdext::sync_none [C++], equals"]
 ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # sync_none Class
 

@@ -1,16 +1,9 @@
 ---
-title: "runtime_checks | Microsoft Docs"
-ms.custom: ""
+title: "runtime_checks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.runtime_checks", "runtime_checks_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["runtime_checks pragma", "pragmas, runtime_checks"]
 ms.assetid: ae50b43f-f88d-47ad-a2db-3389e9e7df5b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # runtime_checks
 Disables or restores the [/RTC](../build/reference/rtc-run-time-error-checks.md) settings.
@@ -57,6 +50,6 @@ Using the **runtime_checks** pragma with the empty string (**""**) is a special 
 #pragma runtime_checks( "", restore )
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

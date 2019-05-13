@@ -1,19 +1,12 @@
 ---
-title: "isleadbyte, _isleadbyte_l | Microsoft Docs"
-ms.custom: ""
+title: "isleadbyte, _isleadbyte_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_isleadbyte_l", "isleadbyte"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_istleadbyte", "_isleadbyte_l", "isleadbyte"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lead bytes", "_isleadbyte_l function", "_istleadbyte function", "istleadbyte function", "isleadbyte function"]
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # isleadbyte, _isleadbyte_l
 

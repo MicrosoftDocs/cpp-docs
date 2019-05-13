@@ -1,16 +1,9 @@
 ---
-title: "num_put Class | Microsoft Docs"
-ms.custom: ""
+title: "num_put Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocnum/std::num_put", "locale/std::num_put::char_type", "locale/std::num_put::iter_type", "locale/std::num_put::do_put", "locale/std::num_put::put"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::num_put [C++]", "std::num_put [C++], char_type", "std::num_put [C++], iter_type", "std::num_put [C++], do_put", "std::num_put [C++], put"]
 ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # num_put Class
 
@@ -249,7 +242,7 @@ virtual iter_type do_put(iter_type next,
 
 behaves the same as the first, except that it generates a Boolean output field from *val*.
 
-A Boolean output field takes one of two forms. If **iosbase**. **flags** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) is **false**, the member function returns `do_put`(_ *Next*, \_ *Iosbase*, \_ *Fill*, ( **long**) `val`), which typically produces a generated sequence of either 0 (for **false**) or 1 (for **true**). Otherwise, the generated sequence is either **fac**. [falsename](../standard-library/numpunct-class.md#falsename)`)` (for **false**), or **fac**. [truename](../standard-library/numpunct-class.md#truename) (for **true**).
+A Boolean output field takes one of two forms. If `iosbase.flags & ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) is **false**, the member function returns `do_put(_Next, _Iosbase, _Fill, (long)val)`, which typically produces a generated sequence of either 0 (for **false**) or 1 (for **true**). Otherwise, the generated sequence is either *fac*.[falsename](../standard-library/numpunct-class.md#falsename) (for **false**), or *fac*.[truename](../standard-library/numpunct-class.md#truename) (for **true**).
 
 The seventh virtual protected member function:
 

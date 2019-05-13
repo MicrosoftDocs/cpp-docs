@@ -1,16 +1,9 @@
 ---
-title: "CDaoFieldInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoFieldInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoFieldInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO (Data Access Objects), Fields collection", "CDaoFieldInfo structure [MFC]"]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoFieldInfo Structure
 
@@ -152,10 +145,9 @@ Information retrieved by the `GetFieldInfo` member function (of the class that c
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoTableDef::GetFieldInfo](../../mfc/reference/cdaotabledef-class.md#getfieldinfo)<br/>
 [CDaoRecordset::GetFieldInfo](../../mfc/reference/cdaorecordset-class.md#getfieldinfo)<br/>
 [CDaoQueryDef::GetFieldInfo](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo)
-

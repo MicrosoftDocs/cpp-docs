@@ -1,19 +1,12 @@
 ---
-title: "_spawnl, _wspawnl | Microsoft Docs"
-ms.custom: ""
+title: "_spawnl, _wspawnl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wspawnl", "_spawnl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["spawnl", "wspawnl", "_wspawnl", "_spawnl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["spawnl function", "processes, creating", "_spawnl function", "processes, executing new", "_wspawnl function", "wspawnl function", "process creation"]
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _spawnl, _wspawnl
 
@@ -60,11 +53,11 @@ The return value from a synchronous **_spawnl** or **_wspawnl** (**_P_WAIT** spe
 
 |||
 |-|-|
-**E2BIG**|Argument list exceeds 1024 bytes.
-**EINVAL**|*mode* argument is invalid.
-**ENOENT**|File or path is not found.
-**ENOEXEC**|Specified file is not executable or has invalid executable-file format.
-**ENOMEM**|Not enough memory is available to execute the new process.
+| **E2BIG** | Argument list exceeds 1024 bytes. |
+| **EINVAL** | *mode* argument is invalid. |
+| **ENOENT** | File or path is not found. |
+| **ENOEXEC** | Specified file is not executable or has invalid executable-file format. |
+| **ENOMEM** | Not enough memory is available to execute the new process. |
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

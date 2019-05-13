@@ -1,16 +1,9 @@
 ---
-title: "/LTCG (Link-time Code Generation) | Microsoft Docs"
-ms.custom: ""
+title: "/LTCG (Link-time Code Generation)"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.LinkTimeCodeGeneration", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization", "/ltcg", "VC.Project.VCCLCompilerTool.WholeProgramOptimization"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["link-time code generation in C++ linker", "/LTCG linker option", "-LTCG linker option", "LTCG linker option"]
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /LTCG (Link-time Code Generation)
 
@@ -36,57 +29,57 @@ These options are deprecated starting in Visual Studio 2015:
 (Optional) Disables link-time code generation. This behavior is the same as when **/LTCG** is not specified on the command line.
 
 **PGINSTRUMENT**<br/>
-(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile Guided Optimization](profile-guided-optimizations.md). The short form of this option is **/LTCG:PGI**.
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and [/GENPROFILE or /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGI**.
 
 **PGOPTIMIZE**<br/>
-(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  [/USEPROFILE](useprofile.md) to build an optimized image. For more information, see [Profile Guided Optimization](../../build/reference/profile-guided-optimizations.md). The short form of this option is **/LTCG:PGO**.
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  [/USEPROFILE](useprofile.md) to build an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGO**.
 
 **PGUPDATE**<br/>
-(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  **/USEPROFILE** to rebuild an optimized image. For more information, see [Profile Guided Optimization](../../build/reference/profile-guided-optimizations.md). The short form of this option is **/LTCG:PGU**.
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **/LTCG** and  **/USEPROFILE** to rebuild an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **/LTCG:PGU**.
 
 ## Remarks
 
-The **/LTCG** option tells the linker to call the compiler and perform whole-program optimization. You can also do profile guided optimization. For more information, see [Profile Guided Optimization](../../build/reference/profile-guided-optimizations.md).
+The **/LTCG** option tells the linker to call the compiler and perform whole-program optimization. You can also do profile guided optimization. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
 With the following exceptions, you cannot add linker options to the PGO combination of **/LTCG** and **/USEPROFILE** that were not specified in the previous PGO initialization combination of **/LTCG** and **/GENPROFILE** options:
 
-- [/BASE](../../build/reference/base-base-address.md)
+- [/BASE](base-base-address.md)
 
-- [/FIXED](../../build/reference/fixed-fixed-base-address.md)
+- [/FIXED](fixed-fixed-base-address.md)
 
 - **/LTCG**
 
-- [/MAP](../../build/reference/map-generate-mapfile.md)
+- [/MAP](map-generate-mapfile.md)
 
-- [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md)
+- [/MAPINFO](mapinfo-include-information-in-mapfile.md)
 
-- [/NOLOGO](../../build/reference/nologo-suppress-startup-banner-linker.md)
+- [/NOLOGO](nologo-suppress-startup-banner-linker.md)
 
-- [/OUT](../../build/reference/out-output-file-name.md)
+- [/OUT](out-output-file-name.md)
 
-- [/PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)
+- [/PGD](pgd-specify-database-for-profile-guided-optimizations.md)
 
-- [/PDB](../../build/reference/pdb-use-program-database.md)
+- [/PDB](pdb-use-program-database.md)
 
-- [/PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)
+- [/PDBSTRIPPED](pdbstripped-strip-private-symbols.md)
 
-- [/STUB](../../build/reference/stub-ms-dos-stub-file-name.md)
+- [/STUB](stub-ms-dos-stub-file-name.md)
 
-- [/VERBOSE](../../build/reference/verbose-print-progress-messages.md)
+- [/VERBOSE](verbose-print-progress-messages.md)
 
 Any linker options that are specified together with the **/LTCG** and **/GENPROFILE** options to initialize PGO do not have to be specified when you build by using **/LTCG** and **/USEPROFILE**; they are implied.
 
 The rest of this article discusses **/LTCG** in terms of link-time code generation.
 
-**/LTCG** is implied with [/GL](../../build/reference/gl-whole-program-optimization.md).
+**/LTCG** is implied with [/GL](gl-whole-program-optimization.md).
 
-The linker invokes link-time code generation if it is passed a module that was compiled by using **/GL** or an MSIL module (see [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md)). If you do not explicitly specify **/LTCG** when you pass **/GL** or MSIL modules to the linker, the linker eventually detects this and restarts the link by using **/LTCG**. Explicitly specify **/LTCG** when you pass **/GL** and MSIL modules to the linker for the fastest possible build performance.
+The linker invokes link-time code generation if it is passed a module that was compiled by using **/GL** or an MSIL module (see [.netmodule Files as Linker Input](netmodule-files-as-linker-input.md)). If you do not explicitly specify **/LTCG** when you pass **/GL** or MSIL modules to the linker, the linker eventually detects this and restarts the link by using **/LTCG**. Explicitly specify **/LTCG** when you pass **/GL** and MSIL modules to the linker for the fastest possible build performance.
 
 For even faster performance, use **/LTCG:INCREMENTAL**. This option tells the linker to only re-optimize the set of files that is affected by a source file change, instead of the entire project. This can significantly reduce the link time required. This is not the same option as incremental linking.
 
-**/LTCG** is not valid for use with [/INCREMENTAL](../../build/reference/incremental-link-incrementally.md).
+**/LTCG** is not valid for use with [/INCREMENTAL](incremental-link-incrementally.md).
 
-When **/LTCG** is used to link modules compiled by using [/Og](../../build/reference/og-global-optimizations.md), [/O1](../../build/reference/o1-o2-minimize-size-maximize-speed.md), [/O2](../../build/reference/o1-o2-minimize-size-maximize-speed.md), or [/Ox](../../build/reference/ox-full-optimization.md), the following optimizations are performed:
+When **/LTCG** is used to link modules compiled by using [/Og](og-global-optimizations.md), [/O1](o1-o2-minimize-size-maximize-speed.md), [/O2](o1-o2-minimize-size-maximize-speed.md), or [/Ox](ox-full-optimization.md), the following optimizations are performed:
 
 - Cross-module inlining
 
@@ -122,7 +115,7 @@ If a function is called through a function pointer, or if a function is called f
 
 ### /LTCG and MSIL Modules
 
-Modules that are compiled by using [/GL](../../build/reference/gl-whole-program-optimization.md) and [/clr](../../build/reference/clr-common-language-runtime-compilation.md) can be used as input to the linker when **/LTCG** is specified.
+Modules that are compiled by using [/GL](gl-whole-program-optimization.md) and [/clr](clr-common-language-runtime-compilation.md) can be used as input to the linker when **/LTCG** is specified.
 
 - **/LTCG** can accept native object files, and mixed native/managed object files (compiled by using **/clr**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
@@ -130,7 +123,7 @@ Modules that are compiled by using [/GL](../../build/reference/gl-whole-program-
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. See [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. See [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **General** property page.
 
@@ -144,5 +137,5 @@ You can also apply **/LTCG** to specific builds by choosing **Build** > **Profil
 
 ## See also
 
-- [Setting Linker Options](../../build/reference/setting-linker-options.md)
-- [Linker Options](../../build/reference/linker-options.md)
+- [MSVC linker reference](linking.md)
+- [MSVC Linker Options](linker-options.md)

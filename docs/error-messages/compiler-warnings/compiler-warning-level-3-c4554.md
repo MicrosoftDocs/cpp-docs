@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4554 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4554"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4554"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4554"]
 ms.assetid: 55bb68f0-2e80-4330-8921-51083c4f8d53
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4554
 

@@ -1,16 +1,9 @@
 ---
-title: "__asm | Microsoft Docs"
-ms.custom: ""
+title: "__asm"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
 f1_keywords: ["__asm", "_asm", "__asm_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__asm keyword [C++], vs. asm blocks", "__asm keyword [C++]"]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __asm
 
@@ -37,7 +30,7 @@ If used without braces, the `__asm` keyword means that the rest of the line is a
 
 Since the `__asm` keyword is a statement separator, you can put assembly instructions on the same line.
 
-Before Visual C++ 2005, the instruction
+Before Visual Studio 2005, the instruction
 
 ```cpp
 __asm int 3

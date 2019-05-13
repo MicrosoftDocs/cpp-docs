@@ -1,16 +1,9 @@
 ---
-title: "CProgressCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CProgressCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CProgressCtrl", "AFXCMN/CProgressCtrl", "AFXCMN/CProgressCtrl::CProgressCtrl", "AFXCMN/CProgressCtrl::Create", "AFXCMN/CProgressCtrl::CreateEx", "AFXCMN/CProgressCtrl::GetBarColor", "AFXCMN/CProgressCtrl::GetBkColor", "AFXCMN/CProgressCtrl::GetPos", "AFXCMN/CProgressCtrl::GetRange", "AFXCMN/CProgressCtrl::GetState", "AFXCMN/CProgressCtrl::GetStep", "AFXCMN/CProgressCtrl::OffsetPos", "AFXCMN/CProgressCtrl::SetBarColor", "AFXCMN/CProgressCtrl::SetBkColor", "AFXCMN/CProgressCtrl::SetMarquee", "AFXCMN/CProgressCtrl::SetPos", "AFXCMN/CProgressCtrl::SetRange", "AFXCMN/CProgressCtrl::SetState", "AFXCMN/CProgressCtrl::SetStep", "AFXCMN/CProgressCtrl::StepIt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CProgressCtrl [MFC], CProgressCtrl", "CProgressCtrl [MFC], Create", "CProgressCtrl [MFC], CreateEx", "CProgressCtrl [MFC], GetBarColor", "CProgressCtrl [MFC], GetBkColor", "CProgressCtrl [MFC], GetPos", "CProgressCtrl [MFC], GetRange", "CProgressCtrl [MFC], GetState", "CProgressCtrl [MFC], GetStep", "CProgressCtrl [MFC], OffsetPos", "CProgressCtrl [MFC], SetBarColor", "CProgressCtrl [MFC], SetBkColor", "CProgressCtrl [MFC], SetMarquee", "CProgressCtrl [MFC], SetPos", "CProgressCtrl [MFC], SetRange", "CProgressCtrl [MFC], SetState", "CProgressCtrl [MFC], SetStep", "CProgressCtrl [MFC], StepIt"]
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CProgressCtrl Class
 
@@ -112,7 +105,7 @@ Specifies the progress bar control's style. Apply any combination of window styl
 - PBS_SMOOTH Displays gradual, smooth filling in the progress bar control. Without this flag, the control will fill with blocks.
 
 *rect*<br/>
-Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the *pParentWnd*.
+Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the *pParentWnd*.
 
 *pParentWnd*<br/>
 Specifies the progress bar control's parent window, usually a `CDialog`. It must not be NULL.
@@ -154,7 +147,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the progress bar control's style. Apply any combination of window styles described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -565,9 +558,8 @@ The step increment is set by the `CProgressCtrl::SetStep` member function.
 
 [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_16.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

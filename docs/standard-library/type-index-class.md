@@ -1,16 +1,9 @@
 ---
-title: "type_index Class | Microsoft Docs"
-ms.custom: ""
+title: "type_index Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["typeindex/std::type_index"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["type_index class"]
 ms.assetid: db366119-74cb-43e8-aacf-9679e561fa2f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # type_index Class
 

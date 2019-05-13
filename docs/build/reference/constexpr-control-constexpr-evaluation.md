@@ -1,16 +1,9 @@
 ---
-title: "-constexpr (Control constexpr evaluation) | Microsoft Docs"
-ms.custom: ""
+title: "/constexpr (Control constexpr evaluation)"
 ms.date: "08/15/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/constexpr", "-constexpr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/constexpr control constexpr evaluation [C++]", "-constexpr control constexpr evaluation [C++]", "constexpr control constexpr evaluation [C++]"]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /constexpr (Control constexpr evaluation)
 
@@ -51,7 +44,7 @@ The **/constexpr** options are available beginning in Visual Studio 2015.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

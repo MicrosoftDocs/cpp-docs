@@ -1,16 +1,9 @@
 ---
-title: "__raise | Microsoft Docs"
-ms.custom: ""
+title: "__raise"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__raise", "__raise_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__raise keyword [C++]"]
 ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __raise
 
@@ -24,7 +17,7 @@ __raise method-declarator;
 
 ## Remarks
 
-From managed code, an event can only be raised from within the class where it is defined. See [event](../windows/event-cpp-component-extensions.md) for more information.
+From managed code, an event can only be raised from within the class where it is defined. See [event](../extensions/event-cpp-component-extensions.md) for more information.
 
 The keyword **__raise** causes an error to be emitted if you call a non-event.
 
@@ -61,4 +54,4 @@ int main() {
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
 [Event Handling](../cpp/event-handling.md)<br/>
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)

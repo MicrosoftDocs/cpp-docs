@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3203 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3203"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3203"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3203"]
 ms.assetid: 6356770e-22c1-434c-91fe-f60b0aa23b91
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3203
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 You passed an invalid argument to a class template or generic. The class template or generic expects a type as a parameter.
 
-This error can be generated as a result of compiler conformance work that was done for Visual C++ 2005: an unspecialized class template can't be used as a template argument in a base class list. To resolve C3203, explicitly add the template type parameter(s) to the template class name when using it as a template parameter in a base class list.
+This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: an unspecialized class template can't be used as a template argument in a base class list. To resolve C3203, explicitly add the template type parameter(s) to the template class name when using it as a template parameter in a base class list.
 
 ```
 // C3203.cpp

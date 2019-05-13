@@ -1,16 +1,9 @@
 ---
-title: "_crtDbgFlag | Microsoft Docs"
-ms.custom: ""
+title: "_crtDbgFlag"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_crtDbgFlag", "crtDbgFlag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory allocation, tracking flag", "crtDbgFlag constant", "_crtDbgFlag constant", "debug heap, tracking memory on", "debug heap, control flags", "enable memory allocation tracking flag", "memory, tracking on the debug heap"]
 ms.assetid: 9e7adb47-8ab9-4e19-81d5-e2f237979973
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _crtDbgFlag
 
@@ -18,6 +11,6 @@ The **_crtDbgFlag** flag consists of five bit fields that control how memory all
 
 For more information about using this flag in conjunction with other debug functions, see [Heap State Reporting Functions](/visualstudio/debugger/crt-debug-heap-details).
 
-## See Also
+## See also
 
 [Control Flags](../c-runtime-library/control-flags.md)

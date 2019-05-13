@@ -1,16 +1,9 @@
 ---
-title: "COleControlModule Class | Microsoft Docs"
-ms.custom: ""
+title: "COleControlModule Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["OleControlModule"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE control modules [MFC]", "MFC ActiveX controls [MFC], OLE control modules", "COleControlModule class [MFC]", "control modules [MFC]"]
 ms.assetid: 0721724d-d4af-4eda-ad34-5a2b27810dd4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleControlModule Class
 
@@ -44,8 +37,7 @@ For more information on using the `COleControlModule` class, see the [CWinApp](.
 
 **Header:** afxctl.h
 
-## See Also
+## See also
 
-[MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
+[MFC Sample TESTHELP](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

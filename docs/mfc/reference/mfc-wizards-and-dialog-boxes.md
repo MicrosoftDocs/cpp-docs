@@ -1,14 +1,7 @@
 ---
-title: "MFC Wizards and Dialog Boxes | Microsoft Docs"
-ms.custom: ""
+title: "MFC Wizards and Dialog Boxes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 2fae0a2c-d147-4468-a547-f7b85df767a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Wizards and Dialog Boxes
 
@@ -29,4 +22,3 @@ The Microsoft Foundation Class (MFC) wizards generate boilerplate code for vario
 |[ATL Support in an MFC Project](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)|Creates headers and macros that are required by the Active Template Library (ATL).|
 |[MFC Class Wizard](../../mfc/reference/mfc-class-wizard.md)|Creates an .h file and a .cpp file.|
 |[MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)|Links to the MFC documentation.|
-

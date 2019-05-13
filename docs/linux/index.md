@@ -1,11 +1,7 @@
 ---
 layout: LandingPage
-ms.topic: conceptual
 title: Linux Development with C++ Documentation
 description: Create and debug applications running on Linux.
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 
 # Linux Development with C++ Documentation
@@ -63,8 +59,8 @@ Use Visual Studio 2017 to create and debug applications running on Linux.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE and Tools for Visual C++ Development</a></p>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual C++</a></h3>
+                        <p><a href="/cpp/overview-of-cpp-development">IDE and Tools for Visual C++ Development</a></p>
                     </div>
                 </div>
             </div>

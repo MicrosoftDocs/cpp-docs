@@ -1,16 +1,9 @@
 ---
-title: "-SWAPRUN | Microsoft Docs"
-ms.custom: ""
+title: "/SWAPRUN"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/swaprun"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/SWAPRUN editbin option", "-SWAPRUN editbin option", "SWAPRUN editbin option"]
 ms.assetid: 6eefd7f3-ca47-48e3-8509-323d27cf4ae7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SWAPRUN
 
@@ -30,6 +23,6 @@ You can add or remove the NET or CD qualifiers:
 
 - Use !NET and !CD to reverse the effects of NET and CD.
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

@@ -1,16 +1,9 @@
 ---
-title: "CAnimationVariable Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CAnimationVariable Class"
+ms.date: "03/27/2019"
 f1_keywords: ["CAnimationVariable", "AFXANIMATIONCONTROLLER/CAnimationVariable", "AFXANIMATIONCONTROLLER/CAnimationVariable::CAnimationVariable", "AFXANIMATIONCONTROLLER/CAnimationVariable::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationVariable::ApplyTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::ClearTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::Create", "AFXANIMATIONCONTROLLER/CAnimationVariable::CreateTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::EnableIntegerValueChangedEvent", "AFXANIMATIONCONTROLLER/CAnimationVariable::EnableValueChangedEvent", "AFXANIMATIONCONTROLLER/CAnimationVariable::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationVariable::GetParentAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationVariable::GetValue", "AFXANIMATIONCONTROLLER/CAnimationVariable::GetVariable", "AFXANIMATIONCONTROLLER/CAnimationVariable::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationVariable::SetParentAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_bAutodestroyTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_dblDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_lstTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_pParentObject", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_variable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationVariable [MFC], CAnimationVariable", "CAnimationVariable [MFC], AddTransition", "CAnimationVariable [MFC], ApplyTransitions", "CAnimationVariable [MFC], ClearTransitions", "CAnimationVariable [MFC], Create", "CAnimationVariable [MFC], CreateTransitions", "CAnimationVariable [MFC], EnableIntegerValueChangedEvent", "CAnimationVariable [MFC], EnableValueChangedEvent", "CAnimationVariable [MFC], GetDefaultValue", "CAnimationVariable [MFC], GetParentAnimationObject", "CAnimationVariable [MFC], GetValue", "CAnimationVariable [MFC], GetVariable", "CAnimationVariable [MFC], SetDefaultValue", "CAnimationVariable [MFC], SetParentAnimationObject", "CAnimationVariable [MFC], m_bAutodestroyTransitions", "CAnimationVariable [MFC], m_dblDefaultValue", "CAnimationVariable [MFC], m_lstTransitions", "CAnimationVariable [MFC], m_pParentObject", "CAnimationVariable [MFC], m_variable"]
 ms.assetid: 506e697e-31a8-4033-a27e-292f4d7b42d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimationVariable Class
 
@@ -29,7 +22,7 @@ class CAnimationVariable;
 |Name|Description|
 |----------|-----------------|
 |[CAnimationVariable::CAnimationVariable](#canimationvariable)|Constructs an animation variable object.|
-|[CAnimationVariable::~CAnimationVariable](#canimationvariable__~canimationvariable)|The destructor. Called when a CAnimationVariable object is being destroyed.|
+|[CAnimationVariable::~CAnimationVariable](#_dtorcanimationvariable)|The destructor. Called when a CAnimationVariable object is being destroyed.|
 
 ### Public Methods
 
@@ -405,6 +398,6 @@ A pointer to an animation object that contains this variable.
 
 This method is called internally to establish one-to-one relationship between an animation variable and an animation object that encapsulates it.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

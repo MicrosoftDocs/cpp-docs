@@ -1,15 +1,8 @@
 ---
-title: "How to: Use parallel_invoke to Write a Parallel Sort Routine | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use parallel_invoke to Write a Parallel Sort Routine"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["task_handle class, example", "task_group class, example", "make_task function, example", "structured_task_group class, example", "improving parallel performance with task groups [Concurrency Runtime]"]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use parallel_invoke to Write a Parallel Sort Routine
 
@@ -97,8 +90,7 @@ The parallel versions of some algorithms perform better only when there is suffi
 
 As with any parallel algorithm, we recommend that you profile and tune your code as appropriate.
 
-## See Also
+## See also
 
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [parallel_invoke Function](reference/concurrency-namespace-functions.md#parallel_invoke)
-

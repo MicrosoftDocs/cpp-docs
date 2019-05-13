@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Building a Project (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/14/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Building a Project (C++)"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["building projects [C++]", "projects [C++], building", "project building [C++]"]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Building a Project (C++)
 
@@ -25,15 +18,15 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
 
 1. In Game.cpp, delete the semicolon in the last line so that it resembles the statement:
 
-    `return 0`
+   `return 0`
 
 1. On the menu bar, choose **Build** > **Build Solution**.
 
 1. A message in the **Error List** window indicates that there was an error in the building of the project. The description looks something like the error message:
 
-    `error C2143: syntax error: missing ';' before '}'`
+   `error C2143: syntax error: missing ';' before '}'`
 
-  To view help information about this error, highlight it in the **Error List** window and then choose the **F1** key.
+   To view help information about this error, highlight it in the **Error List** window and then choose the **F1** key.
 
 1. Add the semicolon back to the end of the line that has the syntax error:
 
@@ -41,7 +34,7 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
 
 1. On the menu bar, choose **Build** > **Build Solution**.
 
-  A message in the **Output** window indicates that the project compiled successfully.
+   A message in the **Output** window indicates that the project compiled successfully.
 
     ```Output
     1>------ Build started: Project: Game, Configuration: Debug Win32 ------
@@ -55,7 +48,7 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
 **Previous:** [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)<br/>
 **Next:** [Walkthrough: Testing a Project (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
 
-## See Also
+## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+[Projects and build systems](../build/projects-and-build-systems-cpp.md)<br/>

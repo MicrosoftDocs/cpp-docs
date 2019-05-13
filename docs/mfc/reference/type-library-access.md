@@ -1,16 +1,9 @@
 ---
-title: "Type Library Access | Microsoft Docs"
-ms.custom: ""
+title: "Type Library Access"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["type libraries [MFC], accessing"]
 ms.assetid: a03fa7f0-86c2-4119-bf81-202916fb74b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type Library Access
 
@@ -76,6 +69,6 @@ This macro must appear in the implementation file for any control class that use
 
 **Header:** afxdisp.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

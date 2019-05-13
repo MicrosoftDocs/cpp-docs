@@ -1,16 +1,9 @@
 ---
-title: "Multithreading: Creating MFC User-Interface Threads | Microsoft Docs"
-ms.custom: ""
+title: "Multithreading: Creating MFC User-Interface Threads"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
 f1_keywords: ["CREATE_SUSPENDED", "SECURITY_ATTRIBUTES"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], user interface threads", "threading [C++], creating threads", "threading [C++], user interface threads", "user interface threads [C++]", "threading [MFC], user interface threads"]
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multithreading: Creating MFC User-Interface Threads
 
@@ -51,6 +44,6 @@ MFC provides two versions of `AfxBeginThread` through parameter overloading: one
 
 - [Processes and Threads](/windows/desktop/ProcThread/processes-and-threads)
 
-## See Also
+## See also
 
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

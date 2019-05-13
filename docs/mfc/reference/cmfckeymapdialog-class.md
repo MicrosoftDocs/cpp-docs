@@ -1,16 +1,9 @@
 ---
-title: "CMFCKeyMapDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCKeyMapDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::DoModal", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::FormatItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::GetCommandKeys", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnInsertItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnPrintHeader", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnPrintItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnSetColumns", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::PrintKeyMap", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::SetColumnsWidth"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCKeyMapDialog [MFC], CMFCKeyMapDialog", "CMFCKeyMapDialog [MFC], DoModal", "CMFCKeyMapDialog [MFC], FormatItem", "CMFCKeyMapDialog [MFC], GetCommandKeys", "CMFCKeyMapDialog [MFC], OnInsertItem", "CMFCKeyMapDialog [MFC], OnPrintHeader", "CMFCKeyMapDialog [MFC], OnPrintItem", "CMFCKeyMapDialog [MFC], OnSetColumns", "CMFCKeyMapDialog [MFC], PrintKeyMap", "CMFCKeyMapDialog [MFC], SetColumnsWidth"]
 ms.assetid: 5feb4942-d636-462d-a162-0104dd320f4e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCKeyMapDialog Class
 
@@ -95,7 +88,7 @@ CMFCKeyMapDialog(
 
 ### Example
 
-The following example demonstrates how to construct an object of the `CMFCKeyMapDialog` class. This example is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct an object of the `CMFCKeyMapDialog` class. This example is part of the [Visual Studio Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#21](../../mfc/codesnippet/cpp/cmfckeymapdialog-class_1.cpp)]
 
@@ -277,7 +270,7 @@ virtual void SetColumnsWidth();
 
 This method sets the internal list control's columns to default widths. First, the width of the shortcut keys column is calculated. Then one-third of the remaining width is allocated to the command column and the remaining two-thirds is allocated to the description column.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

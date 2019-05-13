@@ -1,20 +1,13 @@
 ---
-title: "binder1st Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::binder1st"]
-dev_langs: ["C++"]
+title: "binder1st Class"
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::binder1st"]
 helpviewer_keywords: ["binder1st class"]
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # binder1st Class
 
-A template class providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value.
+A template class providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value. Deprecated in C++11 in favor of [bind](functional-functions.md#bind), and removed in C++17.
 
 ## Syntax
 
@@ -28,7 +21,7 @@ public:
     typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder1st(
-        const Operation& Func,
+        const Operation& binary_fn,
         const typename Operation::first_argument_type& left);
 
     result_type operator()(const argument_type& right) const;
@@ -42,7 +35,7 @@ protected:
 
 ### Parameters
 
-*Func*<br/>
+*binary_fn*<br/>
 The binary function object to be converted to a unary function object.
 
 *left*<br/>
@@ -57,9 +50,9 @@ The unary function object that results from binding the first argument of the bi
 
 ## Remarks
 
-The template class stores a copy of a binary function object *Func* in `op`, and a copy of *left* in `value`. It defines its member function `operator()` as returning **op**( **value**, `right`).
+The template class stores a copy of a binary function object *binary_fn* in `op`, and a copy of *left* in `value`. It defines its member function `operator()` as returning `op( value, right )`.
 
-If *Func* is an object of type `Operation` and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1st) ( `Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `Func`, `c` ) and more convenient.
+If *binary_fn* is an object of type `Operation` and `c` is a constant, then `bind1st( binary_fn, c )` is a more convenient equivalent to `binder1st<Operation>( binary_fn, c )`. For more information, see [bind1st](../standard-library/functional-functions.md#bind1st).
 
 ## Example
 

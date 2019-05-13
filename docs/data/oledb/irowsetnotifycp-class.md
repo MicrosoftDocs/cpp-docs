@@ -1,20 +1,13 @@
 ---
-title: "IRowsetNotifyCP Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetNotifyCP Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["IRowsetNotifyCP", "Fire_OnFieldChange", "ATL::IRowsetNotifyCP::Fire_OnFieldChange", "ATL.IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnFieldChange",  "IRowsetNotifyCP::Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnRowChange", "ATL.IRowsetNotifyCP.Fire_OnRowChange", "Fire_OnRowChange", "ATL::IRowsetNotifyCP::Fire_OnRowChange",    "IRowsetNotifyCP::Fire_OnRowChange", "Fire_OnRowsetChange", "IRowsetNotifyCP::Fire_OnRowsetChange", "IRowsetNotifyCP.Fire_OnRowsetChange", "ATL::IRowsetNotifyCP::Fire_OnRowsetChange", "ATL.IRowsetNotifyCP.Fire_OnRowsetChange"]
-dev_langs: ["C++"]
+f1_keywords: ["IRowsetNotifyCP", "Fire_OnFieldChange", "ATL::IRowsetNotifyCP::Fire_OnFieldChange", "ATL.IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnFieldChange", "IRowsetNotifyCP::Fire_OnFieldChange", "IRowsetNotifyCP.Fire_OnRowChange", "ATL.IRowsetNotifyCP.Fire_OnRowChange", "Fire_OnRowChange", "ATL::IRowsetNotifyCP::Fire_OnRowChange", "IRowsetNotifyCP::Fire_OnRowChange", "Fire_OnRowsetChange", "IRowsetNotifyCP::Fire_OnRowsetChange", "IRowsetNotifyCP.Fire_OnRowsetChange", "ATL::IRowsetNotifyCP::Fire_OnRowsetChange", "ATL.IRowsetNotifyCP.Fire_OnRowsetChange"]
 helpviewer_keywords: ["IRowsetNotifyCP class", "Fire_OnFieldChange method", "Fire_OnRowChange method", "Fire_OnRowsetChange method"]
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP Class
 
-Implements the provider site for the connection point interface [IRowsetNotify](/previous-versions/windows/desktop/ms712959).
+Implements the provider site for the connection point interface [IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85)).
 
 ## Syntax
 
@@ -66,7 +59,7 @@ For detailed information on implementing notifications, see "Supporting Notifica
 
 ## <a name="onfieldchange"></a> IRowsetNotifyCP::Fire_OnFieldChange
 
-Broadcasts an [OnFieldChange](/previous-versions/windows/desktop/ms715961) event to notify consumers of a change to the value of a column.
+Broadcasts an [OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) event to notify consumers of a change to the value of a column.
 
 ### Syntax
 
@@ -82,11 +75,11 @@ HRESULT Fire_OnFieldChange(IRowset* pRowset,
 
 #### Parameters
 
-See [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961) in the *OLE DB Programmer's Reference*.
+See [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="onrowchange"></a> IRowsetNotifyCP::Fire_OnRowChange
 
-Broadcasts an [OnRowChange](/previous-versions/windows/desktop/ms722694) event to all listeners on the connection point `IID_IRowsetNotify` to notify consumers of a change affecting the rows.
+Broadcasts an [OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) event to all listeners on the connection point `IID_IRowsetNotify` to notify consumers of a change affecting the rows.
 
 ### Syntax
 
@@ -101,11 +94,11 @@ HRESULT Fire_OnRowChange(IRowset* pRowset,
 
 #### Parameters
 
-See [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694) in the *OLE DB Programmer's Reference*.
+See [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="onrowsetchange"></a> IRowsetNotifyCP::Fire_OnRowsetChange
 
-Broadcasts an [OnRowsetChange](/previous-versions/windows/desktop/ms722669) event to all listeners on the connection point `IID_IRowsetNotify` to notify consumers of a change affecting the entire rowset.
+Broadcasts an [OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) event to all listeners on the connection point `IID_IRowsetNotify` to notify consumers of a change affecting the entire rowset.
 
 ### Syntax
 
@@ -118,9 +111,9 @@ HRESULT Fire_OnRowsetChange(IRowset* pRowset,
 
 #### Parameters
 
-See [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669) in the *OLE DB Programmer's Reference*.
+See [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

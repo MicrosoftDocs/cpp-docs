@@ -1,16 +1,9 @@
 ---
-title: "-GR (Enable Run-Time Type Information) | Microsoft Docs"
-ms.custom: ""
+title: "/GR (Enable Run-Time Type Information)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/gr", "VC.Project.VCCLWCECompilerTool.RuntimeTypeInfo", "VC.Project.VCCLCompilerTool.RuntimeTypeInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Gr compiler option [C++]", "Gr compiler option [C++]", "RTTI compiler option", "/Gr compiler option [C++]", "enable run-time type information compiler option [C++]"]
 ms.assetid: d1f9f850-dcec-49fd-96ef-e72d01148906
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GR (Enable Run-Time Type Information)
 
@@ -32,7 +25,7 @@ For more information about run-time type checking, see [Run-Time Type Informatio
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -44,7 +37,7 @@ For more information about run-time type checking, see [Run-Time Type Informatio
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.RuntimeTypeInfo%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

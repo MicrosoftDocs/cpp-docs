@@ -1,15 +1,8 @@
 ---
-title: "Using C++ Interop (Implicit PInvoke) | Microsoft Docs"
-ms.custom: ""
+title: "Using C++ Interop (Implicit PInvoke)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["blittable types [C++]", "platform invoke [C++], implicit", "interop [C++], features", "data marshaling [C++], C++ Interop features", "porting [C++], C++ native to .NET", "COM interfaces [C++]", "implicit platform invoke", "examples [C++], interoperability", "types [C++], blittable", "marshaling [C++], C++ Interop features", "platform invoke [C++], examples", "interoperability [C++]", "C++ Interop", "interoperability [C++], Implicit PInvoke", "C++, interop", "C++ COM Interop", ".NET [C++], porting C++ native to"]
 ms.assetid: 5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using C++ Interop (Implicit PInvoke)
 
@@ -127,7 +120,7 @@ Done
 
 - [How to: Wrap Native Class for Use by C#](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
 
-For information on using delegates in an interop scenario, see [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md).
+For information on using delegates in an interop scenario, see [delegate  (C++ Component Extensions)](../extensions/delegate-cpp-component-extensions.md).
 
 ## See also
 

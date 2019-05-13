@@ -1,15 +1,8 @@
 ---
-title: "User Interface Elements (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "User Interface Elements (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, user interface", "user interfaces, creating", "user interfaces"]
 ms.assetid: f5daf2c1-bc08-4b71-9b03-da2c0aab5764
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # User Interface Elements (MFC)
 
@@ -81,4 +74,3 @@ Describes the fundamentals about how to use windows in MFC.
 
 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)<br/>
 Provides reference material for the MFC Library. MFC is a set of classes that constitute an application framework, which is the framework of an application written for the Windows API.
-

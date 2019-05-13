@@ -1,16 +1,9 @@
 ---
-title: "Building an Import Library and Export File | Microsoft Docs"
-ms.custom: ""
+title: "Building an Import Library and Export File"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLibrarianTool.ModuleDefinitionFile", "VC.Project.VCLibrarianTool.ExportNamedFunctions", "VC.Project.VCLibrarianTool.GenerateDebug", "VC.Project.VCLibrarianTool.ForceSymbolReferences"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OUT library manager option", "INCLUDE library manager option", "/DEF library manager option", "exporting data", "import libraries, building", "-INCLUDE library manager option", "/OUT library manager option", "DEF library manager option", "-DEF library manager option", "-OUT library manager option", "/INCLUDE library manager option", "-EXPORT library manager option", "exporting data, export (.exp) files", "/EXPORT library manager option", "EXPORT library manager option", ".lib files", "EXP files"]
 ms.assetid: 2fe4f30a-1dd6-4b05-84b5-0752e1dee354
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Building an Import Library and Export File
 
@@ -46,6 +39,6 @@ Adds the specified *symbol* to the symbol table. This option is useful for forci
 
 Note that if you create your import library in a preliminary step, before creating your .dll, you must pass the same set of object files when building the .dll, as you passed when building the import library.
 
-## See Also
+## See also
 
-[Working with Import Libraries and Export Files](../../build/reference/working-with-import-libraries-and-export-files.md)
+[Working with Import Libraries and Export Files](working-with-import-libraries-and-export-files.md)

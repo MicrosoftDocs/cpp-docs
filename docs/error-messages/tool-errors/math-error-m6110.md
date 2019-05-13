@@ -1,16 +1,9 @@
 ---
-title: "Math Error M6110 | Microsoft Docs"
-ms.custom: ""
+title: "Math Error M6110"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["M6110"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["M6110"]
 ms.assetid: aac9ae37-6a6d-46e9-85d4-dfe03f1c3e11
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Math Error M6110
 

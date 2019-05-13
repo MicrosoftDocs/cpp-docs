@@ -1,19 +1,12 @@
 ---
-title: "rename, _wrename | Microsoft Docs"
-ms.custom: ""
+title: "rename, _wrename"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["rename", "_wrename"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wrename", "_trename", "Rename"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["trename function", "directories [C++], renaming", "renaming directories", "names [C++], changing file", "_trename function", "rename function", "wrename function", "files [C++], renaming", "_wrename function", "names [C++], changing directory", "renaming files"]
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # rename, _wrename
 
@@ -46,9 +39,9 @@ Each of these functions returns 0 if it is successful. On an error, the function
 
 |errno value|Condition|
 |-|-|
-**EACCES**|File or directory specified by *newname* already exists or could not be created (invalid path); or *oldname* is a directory and *newname* specifies a different path.
-**ENOENT**|File or path specified by *oldname* not found.
-**EINVAL**|Name contains invalid characters.
+| **EACCES** | File or directory specified by *newname* already exists or could not be created (invalid path); or *oldname* is a directory and *newname* specifies a different path. |
+| **ENOENT** | File or path specified by *oldname* not found. |
+| **EINVAL** | Name contains invalid characters. |
 
 For other possible return values, see [_doserrno, _errno, syserrlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

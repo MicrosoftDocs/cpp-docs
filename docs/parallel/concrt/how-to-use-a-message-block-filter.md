@@ -1,15 +1,8 @@
 ---
-title: "How to: Use a Message Block Filter | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use a Message Block Filter"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message-block filters, using [Concurrency Runtime]", "using message-block filters [Concurrency Runtime]"]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use a Message Block Filter
 
@@ -62,7 +55,7 @@ bool (T const &)
 
 To eliminate the unnecessary copying of data, use the second form when you have an aggregate type that is transmitted by value.
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Walkthrough: Creating a Dataflow Agent](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "CMenu Class | Microsoft Docs"
-ms.custom: ""
+title: "CMenu Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMenu", "AFXWIN/CMenu", "AFXWIN/CMenu::CMenu", "AFXWIN/CMenu::AppendMenu", "AFXWIN/CMenu::Attach", "AFXWIN/CMenu::CheckMenuItem", "AFXWIN/CMenu::CheckMenuRadioItem", "AFXWIN/CMenu::CreateMenu", "AFXWIN/CMenu::CreatePopupMenu", "AFXWIN/CMenu::DeleteMenu", "AFXWIN/CMenu::DeleteTempMap", "AFXWIN/CMenu::DestroyMenu", "AFXWIN/CMenu::Detach", "AFXWIN/CMenu::DrawItem", "AFXWIN/CMenu::EnableMenuItem", "AFXWIN/CMenu::FromHandle", "AFXWIN/CMenu::GetDefaultItem", "AFXWIN/CMenu::GetMenuContextHelpId", "AFXWIN/CMenu::GetMenuInfo", "AFXWIN/CMenu::GetMenuItemCount", "AFXWIN/CMenu::GetMenuItemID", "AFXWIN/CMenu::GetMenuItemInfo", "AFXWIN/CMenu::GetMenuState", "AFXWIN/CMenu::GetMenuString", "AFXWIN/CMenu::GetSafeHmenu", "AFXWIN/CMenu::GetSubMenu", "AFXWIN/CMenu::InsertMenu", "AFXWIN/CMenu::InsertMenuItem", "AFXWIN/CMenu::LoadMenu", "AFXWIN/CMenu::LoadMenuIndirect", "AFXWIN/CMenu::MeasureItem", "AFXWIN/CMenu::ModifyMenu", "AFXWIN/CMenu::RemoveMenu", "AFXWIN/CMenu::SetDefaultItem", "AFXWIN/CMenu::SetMenuContextHelpId", "AFXWIN/CMenu::SetMenuInfo", "AFXWIN/CMenu::SetMenuItemBitmaps", "AFXWIN/CMenu::SetMenuItemInfo", "AFXWIN/CMenu::TrackPopupMenu", "AFXWIN/CMenu::TrackPopupMenuEx", "AFXWIN/CMenu::m_hMenu"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMenu [MFC], CMenu", "CMenu [MFC], AppendMenu", "CMenu [MFC], Attach", "CMenu [MFC], CheckMenuItem", "CMenu [MFC], CheckMenuRadioItem", "CMenu [MFC], CreateMenu", "CMenu [MFC], CreatePopupMenu", "CMenu [MFC], DeleteMenu", "CMenu [MFC], DeleteTempMap", "CMenu [MFC], DestroyMenu", "CMenu [MFC], Detach", "CMenu [MFC], DrawItem", "CMenu [MFC], EnableMenuItem", "CMenu [MFC], FromHandle", "CMenu [MFC], GetDefaultItem", "CMenu [MFC], GetMenuContextHelpId", "CMenu [MFC], GetMenuInfo", "CMenu [MFC], GetMenuItemCount", "CMenu [MFC], GetMenuItemID", "CMenu [MFC], GetMenuItemInfo", "CMenu [MFC], GetMenuState", "CMenu [MFC], GetMenuString", "CMenu [MFC], GetSafeHmenu", "CMenu [MFC], GetSubMenu", "CMenu [MFC], InsertMenu", "CMenu [MFC], InsertMenuItem", "CMenu [MFC], LoadMenu", "CMenu [MFC], LoadMenuIndirect", "CMenu [MFC], MeasureItem", "CMenu [MFC], ModifyMenu", "CMenu [MFC], RemoveMenu", "CMenu [MFC], SetDefaultItem", "CMenu [MFC], SetMenuContextHelpId", "CMenu [MFC], SetMenuInfo", "CMenu [MFC], SetMenuItemBitmaps", "CMenu [MFC], SetMenuItemInfo", "CMenu [MFC], TrackPopupMenu", "CMenu [MFC], TrackPopupMenuEx", "CMenu [MFC], m_hMenu"]
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMenu Class
 
@@ -472,7 +465,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.
+A pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -482,7 +475,7 @@ See [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) for a descr
 
 ### Example
 
-The following code is from the MFC [CTRLTEST](../../visual-cpp-samples.md) sample:
+The following code is from the MFC [CTRLTEST](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]
 
@@ -1015,7 +1008,7 @@ See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a
 
 ### Example
 
-The following code is from the MFC [CTRLTEST](../../visual-cpp-samples.md) sample:
+The following code is from the MFC [CTRLTEST](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]
 
@@ -1403,10 +1396,10 @@ If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value
 
 A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex).
 
-## See Also
+## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
-[MFC Sample DYNAMENU](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DYNAMENU](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)

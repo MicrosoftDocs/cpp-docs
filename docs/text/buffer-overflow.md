@@ -1,15 +1,8 @@
 ---
-title: "Buffer Overflow | Microsoft Docs"
-ms.custom: ""
+title: "Buffer Overflow"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["buffers [C++], character sizes", "buffer overflows [C++]", "MBCS [C++], buffer overflow"]
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Buffer Overflow
 
@@ -51,6 +44,6 @@ This code tests for possible buffer overflow in the loop test, using `_mbclen` t
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );
 ```
 
-## See Also
+## See also
 
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)

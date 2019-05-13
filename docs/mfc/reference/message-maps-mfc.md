@@ -1,16 +1,9 @@
 ---
-title: "Message Maps (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Message Maps (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.messages"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message maps [MFC], MFC", "Windows messages [MFC], message maps", "messages [MFC], Windows", "MFC, messages"]
 ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Maps (MFC)
 
@@ -60,7 +53,6 @@ Although message-map macros are important, you generally won't have to use them 
 
 However, message maps are an important part of the Microsoft Foundation Class Library. You should understand what they do, and documentation is provided for them.
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-

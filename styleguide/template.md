@@ -183,7 +183,7 @@ Lists should be surrounded by blank lines.
 
 ## Horizontal rule
 
----
+___
 
 ## Tables
 
@@ -363,7 +363,7 @@ And they'll render like this:
 > [!div class="button"]
 [button links](../docs/core/index.md)
 
-You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
+You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices). 
 
 ### Selectors
 
@@ -371,7 +371,7 @@ You can see an example of buttons in action at the [Intune docs](https://docs.mi
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
+You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 
 ### Step-By-Steps
 
@@ -379,4 +379,4 @@ You can see an example of selectors in action at the [Intune docs](https://docs.
 [Pre](../docs/csharp/expression-trees-interpreting.md)
 [Next](../docs/csharp/expression-trees-translating.md)
 
-You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).
+You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2).

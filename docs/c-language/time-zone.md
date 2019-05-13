@@ -1,15 +1,8 @@
 ---
-title: "Time Zone | Microsoft Docs"
-ms.custom: ""
+title: "Time Zone"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["time zones"]
 ms.assetid: ed46f7f2-1e76-493f-bb2f-58b9e6ccce85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Time Zone
 
@@ -17,6 +10,6 @@ ms.workload: ["cplusplus"]
 
 The local time zone is Pacific Standard Time. Microsoft C supports Daylight Saving Time.
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

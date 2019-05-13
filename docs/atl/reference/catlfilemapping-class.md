@@ -1,16 +1,9 @@
 ---
-title: "CAtlFileMapping Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlFileMapping Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlFileMapping", "atlfile/ATL::CAtlFileMapping"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlFileMapping class"]
 ms.assetid: 899fc058-e05e-48b5-aca9-340403bb9e26
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlFileMapping Class
 
@@ -69,7 +62,7 @@ Returns a `T*` pointer to the start of the memory-mapped file.
 
 Calls [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) and reinterprets the returned pointer as a `T*` where *T* is the type used as the template parameter of this class.
 
-## See Also
+## See also
 
 [CAtlFileMappingBase Class](../../atl/reference/catlfilemappingbase-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

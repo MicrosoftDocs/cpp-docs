@@ -1,16 +1,9 @@
 ---
-title: "CComPtr Class | Microsoft Docs"
-ms.custom: ""
+title: "CComPtr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComPtr", "ATLBASE/ATL::CComPtr", "ATLBASE/ATL::CComPtr::CComPtr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComPtr class"]
 ms.assetid: 22d9ea8d-ed66-4c34-940f-141db11e83bd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComPtr Class
 
@@ -99,7 +92,7 @@ Returns a pointer to the updated `CComPtr` object
 
 This operation AddRefs the new object and releases the existing object, if one exists.
 
-## See Also
+## See also
 
 [CComPtr::CComPtr](#ccomptr)<br/>
 [CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)<br/>

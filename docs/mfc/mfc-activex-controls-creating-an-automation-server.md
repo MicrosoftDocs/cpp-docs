@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Creating an Automation Server | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Creating an Automation Server"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Automation servers [MFC], MFC ActiveX controls", "ActiveX controls [MFC], Automation server", "MFC ActiveX controls [MFC], Automation server"]
 ms.assetid: e0c24ed2-d61c-49ad-a4fa-4e1098d1d39b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Creating an Automation Server
 
@@ -45,7 +38,6 @@ You can develop an MFC ActiveX control as an Automation server for the purpose o
 
 If you add methods to the ActiveX control after you use it in an application, you can begin using the latest version of the control in the application by deleting the files that were created when you imported the type library. Then import the type library again.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-

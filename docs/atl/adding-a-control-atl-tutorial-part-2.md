@@ -1,14 +1,8 @@
 ---
-title: "Adding a Control (ATL Tutorial, Part 2) | Microsoft Docs"
+title: "Adding a Control (ATL Tutorial, Part 2)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c9575a75-1064-41f1-9697-7aada560c669
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding a Control (ATL Tutorial, Part 2)
 
@@ -116,6 +110,6 @@ Next, you will add a custom property to the control.
 
 [Back to Step 1](../atl/creating-the-project-atl-tutorial-part-1.md) &#124; [On to Step 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)
 
-## See Also
+## See also
 
 [Tutorial](../atl/active-template-library-atl-tutorial.md)

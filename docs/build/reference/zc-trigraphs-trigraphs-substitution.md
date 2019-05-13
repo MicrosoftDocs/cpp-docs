@@ -1,16 +1,9 @@
 ---
-title: "/Zc:trigraphs (Trigraphs Substitution) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:trigraphs (Trigraphs Substitution)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "/Zc compiler options (C++)", "Conformance compiler options", "Zc compiler options (C++)"]
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:trigraphs (Trigraphs Substitution)
 
@@ -30,7 +23,7 @@ For a list of C/C++ trigraphs, and an example that shows how to use trigraphs, s
 
 ## To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -38,5 +31,5 @@ For a list of C/C++ trigraphs, and an example that shows how to use trigraphs, s
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>
 [Trigraphs](../../c-language/trigraphs.md)<br/>

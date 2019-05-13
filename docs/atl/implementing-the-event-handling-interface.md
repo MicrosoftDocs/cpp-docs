@@ -1,15 +1,8 @@
 ---
-title: "Implementing the Event Handling Interface | Microsoft Docs"
-ms.custom: ""
+title: "Implementing the Event Handling Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, event handling", "event handling, ATL", "interfaces, event and event sink"]
 ms.assetid: eb2a5b33-88dc-4ce3-bee0-c5c38ea050d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing the Event Handling Interface
 
@@ -33,6 +26,6 @@ If you are using `IDispEventImpl` as a base class of a composite control, the ev
 
 The `IDispEventImpl` and `IDispEventSimpleImpl` classes manage the cookie for you.
 
-## See Also
+## See also
 
 [Event Handling](../atl/event-handling-and-atl.md)

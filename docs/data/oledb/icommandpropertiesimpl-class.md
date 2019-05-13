@@ -1,20 +1,13 @@
 ---
-title: "ICommandPropertiesImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "ICommandPropertiesImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl", "ICommandPropertiesImpl::GetProperties", "ICommandPropertiesImpl.GetProperties", "GetProperties", "ICommandPropertiesImpl.SetProperties", "ICommandPropertiesImpl::SetProperties", "SetProperties"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandPropertiesImpl class", "GetProperties method", "SetProperties method"]
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandPropertiesImpl Class
 
-Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044) interface.
+Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044(v=vs.85)) interface.
 
 ## Syntax
 
@@ -56,15 +49,15 @@ Returns all the requested property sets using the command's property map.
 ### Syntax
 
 ```cpp
-STDMETHOD(GetProperties)(const ULONG cPropertyIDSets, 
-   const DBPROPIDSET rgPropertyIDSets[], 
-   ULONG * pcPropertySets, 
+STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
+   const DBPROPIDSET rgPropertyIDSets[],
+   ULONG * pcPropertySets,
    DBPROPSET ** prgPropertySets);
 ```
 
 #### Parameters
 
-See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119) in the *OLE DB Programmer's Reference*.
+See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
@@ -77,15 +70,15 @@ Sets properties for the command object.
 ### Syntax
 
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets, 
+STDMETHOD(SetProperties)(ULONG cPropertySets,
    DBPROPSET rgPropertySets[]);
 ```
 
 #### Parameters
 
-See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497) in the *OLE DB Programmer's Reference*.
+See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

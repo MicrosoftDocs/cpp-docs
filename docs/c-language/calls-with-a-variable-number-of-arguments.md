@@ -1,15 +1,8 @@
 ---
-title: "Calls with a Variable Number of Arguments | Microsoft Docs"
-ms.custom: ""
+title: "Calls with a Variable Number of Arguments"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], function", "arguments [C++], variable number of", "VARARGS.H", "ellipses (...), variable number of arguments", "STDARGS.H", "function calls, arguments", "... ellipsis", "function calls, variable number of arguments"]
 ms.assetid: 8808fb26-4822-42f5-aba3-ac64b54e151b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Calls with a Variable Number of Arguments
 
@@ -25,6 +18,6 @@ This sample declaration is for a function that calls a variable number of argume
 int average( int first, ...);
 ```
 
-## See Also
+## See also
 
 [Function Calls](../c-language/function-calls.md)

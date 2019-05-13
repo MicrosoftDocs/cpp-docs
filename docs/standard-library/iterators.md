@@ -1,15 +1,8 @@
 ---
-title: "Iterators | Microsoft Docs"
-ms.custom: ""
+title: "Iterators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["iterator conventions", "C++ Standard Library, iterator conventions"]
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Iterators
 
@@ -40,7 +33,7 @@ for (auto num : vec)
 
 There are five categories of iterators. In order of increasing power, the categories are:
 
-- **Output**. An *output iterator* `X` can iterate forward over a sequence by using the **++** operator, and can write an element only once, by using the **&ast;** operator.
+- **Output**. An *output iterator* `X` can iterate forward over a sequence by using the **++** operator, and can write an element only once, by using the __\*__ operator.
 
 - **Input**. An *input iterator* `X` can iterate forward over a sequence by using the ++ operator, and can read an element any number of times by using the **&ast;** operator. You can compare input iterators by using the **++** and **!=** operators. After you increment any copy of an input iterator, none of the other copies can safely be compared, dereferenced, or incremented thereafter.
 
@@ -85,7 +78,7 @@ It is important to understand the promises and limitations of each iterator cate
 > [!NOTE]
 > You can avoid using iterators explicitly by using range-for loops. For more information, see [Range-based for statement](../cpp/range-based-for-statement-cpp.md).
 
-Visual C++ now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).
+Microsoft C++ now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).
 
 ## See also
 

@@ -1,16 +1,8 @@
 ---
-title: "How to: Integrate Custom Tools into the Project Properties | Microsoft Docs"
-ms.custom: ""
+title: "How to: Integrate Custom Tools into the Project Properties"
 ms.date: "04/27/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-f1_keywords: ["msbuild.cpp.howto.integratecustomtools"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["msbuild (c++), howto: integrate custom tools"]
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to: Integrate Custom Tools into the Project Properties
 
@@ -36,6 +28,6 @@ This document explains how to create a file in a set directory that contains pro
 
 1. In **Solution Explorer**, right-click a project and then click **Properties**. In the **Property Pages** window, in the left pane, verify that there is a new node with the name of your Rule.
 
-## See Also
+## See also
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)
+[MSBuild on the command line - C++](msbuild-visual-cpp.md)

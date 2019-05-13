@@ -1,16 +1,9 @@
 ---
-title: "CAsyncMonikerFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CAsyncMonikerFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::Close", "AFXOLE/CAsyncMonikerFile::GetBinding", "AFXOLE/CAsyncMonikerFile::GetFormatEtc", "AFXOLE/CAsyncMonikerFile::Open", "AFXOLE/CAsyncMonikerFile::CreateBindStatusCallback", "AFXOLE/CAsyncMonikerFile::GetBindInfo", "AFXOLE/CAsyncMonikerFile::GetPriority", "AFXOLE/CAsyncMonikerFile::OnDataAvailable", "AFXOLE/CAsyncMonikerFile::OnLowResource", "AFXOLE/CAsyncMonikerFile::OnProgress", "AFXOLE/CAsyncMonikerFile::OnStartBinding", "AFXOLE/CAsyncMonikerFile::OnStopBinding"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAsyncMonikerFile [MFC], CAsyncMonikerFile", "CAsyncMonikerFile [MFC], Close", "CAsyncMonikerFile [MFC], GetBinding", "CAsyncMonikerFile [MFC], GetFormatEtc", "CAsyncMonikerFile [MFC], Open", "CAsyncMonikerFile [MFC], CreateBindStatusCallback", "CAsyncMonikerFile [MFC], GetBindInfo", "CAsyncMonikerFile [MFC], GetPriority", "CAsyncMonikerFile [MFC], OnDataAvailable", "CAsyncMonikerFile [MFC], OnLowResource", "CAsyncMonikerFile [MFC], OnProgress", "CAsyncMonikerFile [MFC], OnStartBinding", "CAsyncMonikerFile [MFC], OnStopBinding"]
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAsyncMonikerFile Class
 
@@ -131,7 +124,7 @@ Alternately, your COM object can delegate to MFC's implementation by calling `Cr
 
 [CAsyncMonikerFile::Open](#open) calls `CreateBindStatusCallback`.
 
-For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](https://msdn.microsoft.com/library/ie/ms775060) interface and [How Asynchronous Binding and Storage Work](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). For a discussion of aggregation, see [Aggregation](/windows/desktop/com/aggregation). All three topics are in the Windows SDK.
+For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) interface and [How Asynchronous Binding and Storage Work](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). For a discussion of aggregation, see [Aggregation](/windows/desktop/com/aggregation). All three topics are in the Windows SDK.
 
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo
 
@@ -395,7 +388,7 @@ You can use a URL or a filename for the *lpszURL* parameter. For example:
 
 [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/casyncmonikerfile-class_3.cpp)]
 
-## See Also
+## See also
 
 [CMonikerFile Class](../../mfc/reference/cmonikerfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

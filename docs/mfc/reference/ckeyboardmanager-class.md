@@ -1,16 +1,9 @@
 ---
-title: "CKeyboardManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CKeyboardManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CleanUp", "AFXKEYBOARDMANAGER/CKeyboardManager::FindDefaultAccelerator", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyHandled", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyPrintable", "AFXKEYBOARDMANAGER/CKeyboardManager::IsShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::LoadState", "AFXKEYBOARDMANAGER/CKeyboardManager::ResetAll", "AFXKEYBOARDMANAGER/CKeyboardManager::SaveState", "AFXKEYBOARDMANAGER/CKeyboardManager::ShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::TranslateCharToUpper", "AFXKEYBOARDMANAGER/CKeyboardManager::UpdateAccelTable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CKeyboardManager [MFC], CKeyboardManager", "CKeyboardManager [MFC], CleanUp", "CKeyboardManager [MFC], FindDefaultAccelerator", "CKeyboardManager [MFC], IsKeyHandled", "CKeyboardManager [MFC], IsKeyPrintable", "CKeyboardManager [MFC], IsShowAllAccelerators", "CKeyboardManager [MFC], LoadState", "CKeyboardManager [MFC], ResetAll", "CKeyboardManager [MFC], SaveState", "CKeyboardManager [MFC], ShowAllAccelerators", "CKeyboardManager [MFC], TranslateCharToUpper", "CKeyboardManager [MFC], UpdateAccelTable"]
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CKeyboardManager Class
 
@@ -56,7 +49,7 @@ You should not create a `CKeyboardManager` object manually. It will be created a
 
 ## Example
 
-The following example demonstrates how to retrieve a pointer to a `CKeyboardManager` object from a `CWinAppEx` class, and how to show all the shortcut keys associated with menu commands. This code snippet is part of the [Custom Pages sample](../../visual-cpp-samples.md).
+The following example demonstrates how to retrieve a pointer to a `CKeyboardManager` object from a `CWinAppEx` class, and how to show all the shortcut keys associated with menu commands. This code snippet is part of the [Custom Pages sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_CustomPages#5](../../mfc/reference/codesnippet/cpp/ckeyboardmanager-class_1.cpp)]
 
@@ -181,7 +174,7 @@ Nonzero if the character is printable, zero if it is not.
 
 ### Remarks
 
-This method fails if a call to [GetKeyboardState](https://msdn.microsoft.com/library/windows/desktop/ms646299) fails.
+This method fails if a call to [GetKeyboardState](/windows/desktop/api/winuser/nf-winuser-getkeyboardstate) fails.
 
 ##  <a name="isshowallaccelerators"></a>  CKeyboardManager::IsShowAllAccelerators
 
@@ -350,11 +343,10 @@ Nonzero if the method is successful; otherwise 0.
 
 Use this function to replace the existing shortcut table with new shortcut keys for several frame window objects. The function receives a document template as a parameter to obtain access to all frame window objects connected to the given document template.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
 [CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)<br/>
 [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)
-

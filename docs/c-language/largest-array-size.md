@@ -1,14 +1,7 @@
 ---
-title: "Largest Array Size | Microsoft Docs"
-ms.custom: ""
+title: "Largest Array Size"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 4c782cf6-73f3-40b0-b306-229d22da4ee1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Largest Array Size
 
@@ -16,6 +9,6 @@ ms.workload: ["cplusplus"]
 
 The `size_t` typedef is an `unsigned int` on the 32-bit x86 platform. On 64-bit platforms, the `size_t` typedef is an `unsigned __int64`.
 
-## See Also
+## See also
 
 [Arrays and Pointers](../c-language/arrays-and-pointers.md)

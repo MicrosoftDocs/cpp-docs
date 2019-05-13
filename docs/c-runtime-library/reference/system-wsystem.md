@@ -1,19 +1,12 @@
 ---
-title: "system, _wsystem | Microsoft Docs"
-ms.custom: ""
+title: "system, _wsystem"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["system", "_wsystem"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tsystem", "_wsystem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_wsystem function", "wsystem function", "tsystem function", "_tsystem function", "system function", "commands, executing", "command interpreter"]
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # system, _wsystem
 
@@ -44,10 +37,10 @@ If *command* is **NULL** and the command interpreter is found, returns a nonzero
 
 |||
 |-|-|
-**E2BIG**|The argument list (which is system-dependent) is too big.
-**ENOENT**|The command interpreter cannot be found.
-**ENOEXEC**|The command-interpreter file cannot be executed because the format is not valid.
-**ENOMEM**|Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call was not allocated correctly.
+| **E2BIG** | The argument list (which is system-dependent) is too big. |
+| **ENOENT** | The command interpreter cannot be found. |
+| **ENOEXEC** | The command-interpreter file cannot be executed because the format is not valid. |
+| **ENOMEM** | Not enough memory is available to execute command; or available memory has been corrupted; or a non-valid block exists, which indicates that the process that's making the call was not allocated correctly. |
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about these return codes.
 

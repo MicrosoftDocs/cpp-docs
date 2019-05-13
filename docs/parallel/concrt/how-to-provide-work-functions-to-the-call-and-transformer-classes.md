@@ -1,15 +1,8 @@
 ---
-title: "How to: Provide Work Functions to the call and transformer Classes | Microsoft Docs"
-ms.custom: ""
+title: "How to: Provide Work Functions to the call and transformer Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["call class, example", "using the transformer class [Concurrency Runtime]", "using the call class [Concurrency Runtime]"]
 ms.assetid: df715ce4-8507-41ca-b204-636d11707a73
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Provide Work Functions to the call and transformer Classes
 
@@ -55,7 +48,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc call.cpp**
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

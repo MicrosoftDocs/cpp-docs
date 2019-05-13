@@ -1,16 +1,9 @@
 ---
-title: "managed, unmanaged | Microsoft Docs"
-ms.custom: ""
+title: "managed, unmanaged"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.unmanaged", "managed_CPP", "unmanaged_CPP", "vc-pragma.managed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["managed pragma", "pragmas, unmanaged", "pragmas, managed", "unmanaged pragma"]
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # managed, unmanaged
 Enable function-level control for compiling functions as managed or unmanaged.
@@ -80,6 +73,6 @@ In managed function.
 In unmanaged function.
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

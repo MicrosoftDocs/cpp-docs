@@ -1,16 +1,9 @@
 ---
-title: "Docking and Floating Toolbars | Microsoft Docs"
-ms.custom: ""
+title: "Docking and Floating Toolbars"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CBRS_SIZE_DYNAMIC", "CBRS_SIZE_FIXED"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["size [MFC], toolbars", "size", "frame windows [MFC], toolbar docking", "CBRS_ALIGN_ANY constant [MFC]", "palettes, floating", "toolbars [MFC], docking", "CBRS_SIZE_DYNAMIC constant [MFC]", "floating toolbars", "toolbars [MFC], size", "toolbars [MFC], floating", "fixed-size toolbars", "CBRS_SIZE_FIXED constant [MFC]", "toolbar controls [MFC], wrapping", "toolbars [MFC], wrapping", "floating palettes"]
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Docking and Floating Toolbars
 
@@ -34,7 +27,7 @@ Other topics covered in this article include:
 
 - [Setting wrap positions for a fixed-style toolbar](#_core_setting_wrap_positions_for_a_fixed_style_toolbar)
 
-See the MFC General sample [DOCKTOOL](../visual-cpp-samples.md) for examples.
+See the MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md) for examples.
 
 ##  <a name="_core_enabling_docking_in_a_frame_window"></a> Enabling Docking in a Frame Window
 
@@ -88,7 +81,7 @@ For a toolbar with the size fixed style, designate toolbar button indexes at whi
 
 [!code-cpp[NVC_MFCDocViewSDI#10](../mfc/codesnippet/cpp/docking-and-floating-toolbars_1.cpp)]
 
-The MFC General sample [DOCKTOOL](../visual-cpp-samples.md) shows how to use member functions of classes [CControlBar](../mfc/reference/ccontrolbar-class.md) and [CToolBar](../mfc/reference/ctoolbar-class.md) to manage dynamic layout of a toolbar. See the file EDITBAR.CPP in DOCKTOOL.
+The MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md) shows how to use member functions of classes [CControlBar](../mfc/reference/ccontrolbar-class.md) and [CToolBar](../mfc/reference/ctoolbar-class.md) to manage dynamic layout of a toolbar. See the file EDITBAR.CPP in DOCKTOOL.
 
 ### What do you want to know more about
 
@@ -98,7 +91,6 @@ The MFC General sample [DOCKTOOL](../visual-cpp-samples.md) shows how to use mem
 
 - [Using your old toolbars](../mfc/using-your-old-toolbars.md)
 
-## See Also
+## See also
 
 [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-

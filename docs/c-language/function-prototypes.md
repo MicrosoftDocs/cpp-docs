@@ -1,15 +1,8 @@
 ---
-title: "Function Prototypes | Microsoft Docs"
-ms.custom: ""
+title: "Function Prototypes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function prototypes", "function return types, function prototypes", "data types [C], function return types", "functions [C], return types", "prototypes [C++], function"]
 ms.assetid: d152f8e6-971e-432c-93ca-5a91400653c2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function Prototypes
 
@@ -81,6 +74,6 @@ void func1( struct S * );
 
 Under **/Ze**, the tag is still entered at global scope.
 
-## See Also
+## See also
 
 [Functions](../c-language/functions-c.md)

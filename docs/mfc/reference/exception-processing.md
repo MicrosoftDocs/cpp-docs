@@ -1,16 +1,9 @@
 ---
-title: "Exception Processing | Microsoft Docs"
-ms.custom: ""
+title: "Exception Processing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.exceptions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["macros [MFC], exception handling", "DAO (Data Access Objects), exceptions [MFC]", "OLE exceptions [MFC], MFC functions", "exceptions [MFC], processing", "exception macros [MFC]", "termination functions, MFC", "MFC, exceptions", "exceptions [MFC], MFC throwing functions"]
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exception Processing
 
@@ -108,7 +101,6 @@ Defines a block of code that catches the first exception type thrown in the prec
 
 ```
 CATCH(exception_class, exception_object_pointer_name)
-
 ```
 
 ### Parameters
@@ -242,7 +234,7 @@ For more information on the END_CATCH macro, see the article [Exceptions](../../
 
 ##  <a name="end_catch_all"></a>  END_CATCH_ALL
 
-Marks the end of the last **CATCH_ALL88 or **AND_CATCH_ALL** block.
+Marks the end of the last <strong>CATCH_ALL88 or **AND_CATCH_ALL</strong> block.
 
 ```
 END_CATCH_ALL
@@ -364,12 +356,6 @@ This function is called when invalid arguments are used.
 ### Requirements
 
 **Header:** afx.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[CInvalidArgException Class](cinvalidargexception-class.md)<br/>
-[THROW](#throw)
 
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException
 
@@ -578,7 +564,8 @@ See the example for [CATCH](#catch).
 
   **Header** afx.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CException Class](../../mfc/reference/cexception-class.md)
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[CException Class](cexception-class.md)<br/>
+[CInvalidArgException Class](cinvalidargexception-class.md)

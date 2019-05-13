@@ -1,18 +1,14 @@
 ---
-title: "Walkthrough: Compiling a C++/CX Program on the Command Line | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/24/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Compiling a C++/CX Program on the Command Line"
+ms.date: "04/23/2019"
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compiling a C++/CX Program on the Command Line
 
-You can create Visual C++ programs that target the Windows Runtime and build them on the command line. Visual C++ supports Visual C++ component extensions (C++/CX), which has additional types and operators to target the Windows Runtime programming model. You can use C++/CX to build apps for Universal Windows Platform (UWP), Windows Phone 8.1, and Windows desktop. For more information, see [A Tour of C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) and [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).
+> [!NOTE] 
+> For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API.
+
+The Microsoft C++ compiler (MSVC) supports C++ component extensions (C++/CX), which has additional types and operators to target the Windows Runtime programming model. You can use C++/CX to build apps for Universal Windows Platform (UWP), and Windows desktop. For more information, see [A Tour of C++/CX](https://msdn.microsoft.com/magazine/dn166929.aspx) and [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).
 
 In this walkthrough, you use a text editor to create a basic C++/CX program, and then compile it on the command line. (You can use your own C++/CX program instead of typing the one that's shown, or you can use a C++/CX code sample from another help article. This technique is useful for building and testing small modules that have no UI elements.)
 
@@ -25,11 +21,11 @@ You understand the fundamentals of the C++ language.
 
 ## Compiling a C++/CX Program
 
-To enable compilation for C++/CX, you must use the [/ZW](../build/reference/zw-windows-runtime-compilation.md) compiler option. The Visual C++ compiler generates an .exe file that targets the Windows Runtime, and links to the required libraries.
+To enable compilation for C++/CX, you must use the [/ZW](reference/zw-windows-runtime-compilation.md) compiler option. The MSVC compiler generates an .exe file that targets the Windows Runtime, and links to the required libraries.
 
 #### To compile a C++/CX application on the command line
 
-1. Open a **Developer Command Prompt** window. (On the **Start** window, open **Apps**. Open the **Visual Studio Tools** folder under your version of Visual Studio, and then choose the **Developer Command Prompt** shortcut.) For more information about how to open a Developer Command Prompt window, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md).
+1. Open a **Developer Command Prompt** window. (On the **Start** window, open **Apps**. Open the **Visual Studio Tools** folder under your version of Visual Studio, and then choose the **Developer Command Prompt** shortcut.) For more information about how to open a Developer Command Prompt window, see [Use the MSVC toolset from the command line](building-on-the-command-line.md).
 
    Administrator credentials may be required to successfully compile the code, depending on the computer's operating system and configuration. To run the Command Prompt window as an administrator, open the shortcut menu for **Developer Command Prompt** and then choose **Run as administrator**.
 
@@ -50,9 +46,9 @@ To enable compilation for C++/CX, you must use the [/ZW](../build/reference/zw-w
 
 1. On the menu bar, choose **File** > **Save**.
 
-   You've created a Visual C++ source file that uses the Windows Runtime [Platform namespace](../cppcx/platform-namespace-c-cx.md) namespace.
+   You've created a C++ source file that uses the Windows Runtime [Platform namespace](../cppcx/platform-namespace-c-cx.md) namespace.
 
-1. At the command prompt, enter **cl /EHsc /ZW basiccx.cpp /link /SUBSYSTEM:CONSOLE**. The cl.exe compiler compiles the source code into an .obj file, and then runs the linker to generate an executable program named basiccx.exe. (The [/EHsc](../build/reference/eh-exception-handling-model.md) compiler option specifies the C++ exception-handling model, and the [/link](../build/reference/link-pass-options-to-linker.md) flag specifies a console application.)
+1. At the command prompt, enter **cl /EHsc /ZW basiccx.cpp /link /SUBSYSTEM:CONSOLE**. The cl.exe compiler compiles the source code into an .obj file, and then runs the linker to generate an executable program named basiccx.exe. (The [/EHsc](reference/eh-exception-handling-model.md) compiler option specifies the C++ exception-handling model, and the [/link](reference/link-pass-options-to-linker.md) flag specifies a console application.)
 
 1. To run the basiccx.exe program, at the command prompt, enter **basiccx**.
 
@@ -62,8 +58,7 @@ To enable compilation for C++/CX, you must use the [/ZW](../build/reference/zw-w
     This is a C++/CX program.
     ```
 
-## See Also
+## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
-[Compiler Options](../build/reference/compiler-options.md)
+[Projects and build systems](projects-and-build-systems-cpp.md)<br/>
+[MSVC Compiler Options](reference/compiler-options.md)

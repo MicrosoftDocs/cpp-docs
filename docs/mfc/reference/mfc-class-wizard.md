@@ -1,16 +1,9 @@
 ---
-title: "MFC Class Wizard | Microsoft Docs"
-ms.custom: ""
+title: "MFC Class Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.wizards.classwizard"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wizards (MFC)", "MFC Class Wizard"]
 ms.assetid: 8b0dd867-5d07-4214-99be-2a1c1995e6d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Class Wizard
 
@@ -102,6 +95,6 @@ To open the **MFC Class Wizard**, on the **Project** menu, click **Class Wizard*
 
    To display a definition, double-click an item in the **Methods** list. Or, select an item in the **Methods** list and then click the **Go to Definition** button.
 
-## See Also
+## See also
 
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)

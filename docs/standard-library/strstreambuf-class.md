@@ -1,16 +1,9 @@
 ---
-title: "strstreambuf Class | Microsoft Docs"
-ms.custom: ""
+title: "strstreambuf Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["strstream/std::strstreambuf::freeze", "strstream/std::strstreambuf::overflow", "strstream/std::strstreambuf::pbackfail", "strstream/std::strstreambuf::pcount", "strstream/std::strstreambuf::seekoff", "strstream/std::strstreambuf::seekpos", "strstream/std::strstreambuf::str", "strstream/std::strstreambuf::underflow"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::strstreambuf [C++], freeze", "std::strstreambuf [C++], overflow", "std::strstreambuf [C++], pbackfail", "std::strstreambuf [C++], pcount", "std::strstreambuf [C++], seekoff", "std::strstreambuf [C++], seekpos", "std::strstreambuf [C++], str", "std::strstreambuf [C++], underflow"]
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strstreambuf Class
 
@@ -171,11 +164,11 @@ The character to insert into the buffer, or `EOF`.
 
 ### Return Value
 
-If the function cannot succeed, it returns `EOF`. Otherwise, if _ *Meta* == `EOF`, it returns some value other than `EOF`. Otherwise, it returns \_ *Meta*.
+If the function cannot succeed, it returns `EOF`. Otherwise, if *\_Meta* == `EOF`, it returns some value other than `EOF`. Otherwise, it returns *\_Meta*.
 
 ### Remarks
 
-If _ *Meta* != `EOF`, the protected virtual member function tries to insert the element ( `char`)\_ *Meta* into the output buffer. It can do so in various ways:
+If *\_Meta* != `EOF`, the protected virtual member function tries to insert the element `(char)_Meta` into the output buffer. It can do so in various ways:
 
 - If a write position is available, it can store the element into the write position and increment the next pointer for the output buffer.
 
@@ -196,13 +189,13 @@ The character to insert into the buffer, or `EOF`.
 
 ### Return Value
 
-If the function cannot succeed, it returns `EOF`. Otherwise, if _ *Meta* == `EOF`, it returns some value other than `EOF`. Otherwise, it returns \_ *Meta*.
+If the function cannot succeed, it returns `EOF`. Otherwise, if *\_Meta* == `EOF`, it returns some value other than `EOF`. Otherwise, it returns *\_Meta*.
 
 ### Remarks
 
 The protected virtual member function tries to put back an element into the input buffer, and then make it the current element (pointed to by the next pointer).
 
-If _ *Meta* == `EOF`, the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **ch** = ( `char`)\_ *Meta*. The function can put back an element in various ways:
+If *\_Meta* == `EOF`, the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by `ch = (char)_Meta`. The function can put back an element in various ways:
 
 - If a putback position is available, and the element stored there compares equal to `ch`, it can decrement the next pointer for the input buffer.
 
@@ -274,15 +267,15 @@ The protected virtual member function endeavors to alter the current positions f
 
 The new position is determined as follows:
 
-- If `_Way` == `ios_base::beg`, the new position is the beginning of the stream plus _ *Off*.
+- If `_Way == ios_base::beg`, the new position is the beginning of the stream plus *_Off*.
 
-- If `_Way` == `ios_base::cur`, the new position is the current stream position plus _ *Off*.
+- If `_Way == ios_base::cur`, the new position is the current stream position plus *_Off*.
 
-- If `_Way` == `ios_base::end`, the new position is the end of the stream plus _ *Off*.
+- If `_Way == ios_base::end`, the new position is the end of the stream plus *_Off*.
 
-If `_Which` & **ios_base::in** is nonzero and the input buffer exist, the function alters the next position to read in the input buffer. If `_Which` & **ios_base::out** is also nonzero, `_Way` != **ios_base::cur**, and the output buffer exists, the function also sets the next position to write to match the next position to read.
+If `_Which & ios_base::in` is nonzero and the input buffer exist, the function alters the next position to read in the input buffer. If `_Which & ios_base::out` is also nonzero, `_Way != ios_base::cur`, and the output buffer exists, the function also sets the next position to write to match the next position to read.
 
-Otherwise, if `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function alters the next position to write in the output buffer. Otherwise, the positioning operation fails. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence.
+Otherwise, if `_Which & ios_base::out` is nonzero and the output buffer exists, the function alters the next position to write in the output buffer. Otherwise, the positioning operation fails. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence.
 
 ## <a name="seekpos"></a>  strstreambuf::seekpos
 
@@ -306,7 +299,7 @@ If the function succeeds in altering either or both stream positions, it returns
 
 ### Remarks
 
-The protected virtual member function endeavors to alter the current positions for the controlled streams. For an object of class strstreambuf, a stream position consists purely of a stream offset. Offset zero designates the first element of the controlled sequence. The new position is determined by _ *Sp*.
+The protected virtual member function endeavors to alter the current positions for the controlled streams. For an object of class strstreambuf, a stream position consists purely of a stream offset. Offset zero designates the first element of the controlled sequence. The new position is determined by *_Sp*.
 
 If `_Which` & **ios_base::in** is nonzero and the input buffer exists, the function alters the next position to read in the input buffer. If `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function also sets the next position to write to match the next position to read. Otherwise, if `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function alters the next position to write in the output buffer. Otherwise, the positioning operation fails. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence.
 
@@ -383,7 +376,7 @@ A buffer used for output.
 
 The first constructor stores a null pointer in all the pointers controlling the input buffer, the output buffer, and strstreambuf allocation. It sets the stored strstreambuf mode to make the controlled sequence modifiable and extendable. It also accepts *count* as a suggested initial allocation size.
 
-The second constructor behaves like the first, except that it stores _ *Allocfunc* as the pointer to the function to call to allocate storage and \_ *Freefunc* as the pointer to the function to call to free that storage.
+The second constructor behaves like the first, except that it stores *\_Allocfunc* as the pointer to the function to call to allocate storage and *\_Freefunc* as the pointer to the function to call to free that storage.
 
 The three constructors:
 

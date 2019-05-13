@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1902 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1902"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1902"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1902"]
 ms.assetid: 2dc066cc-fcb1-4725-8bcb-9f44dd0905b7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1902
 

@@ -1,16 +1,9 @@
 ---
-title: "auto_search | Microsoft Docs"
-ms.custom: ""
+title: "auto_search"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["auto_search"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_search attribute"]
 ms.assetid: 0fee2503-cd28-4d8c-b4d5-15ca0a91d2d2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # auto_search
 
@@ -28,7 +21,7 @@ auto_search
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -1,16 +1,9 @@
 ---
-title: "-SYMBOLS | Microsoft Docs"
-ms.custom: ""
+title: "/SYMBOLS"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/symbols"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["symbols, dumping", "public symbols", "symbols, displaying COFF symbol table", "symbol tables", "SYMBOLS dumpbin option", "/SYMBOLS dumpbin option", "-SYMBOLS dumpbin option"]
 ms.assetid: 34bcae90-4561-4c77-a80c-065508dec39a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SYMBOLS
 
@@ -59,8 +52,8 @@ The following description, for lines that begin with a symbol number, describes 
 
 The last column in a numbered line is the symbol name, both decorated and undecorated.
 
-Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

@@ -1,16 +1,9 @@
 ---
-title: "&lt;cctype&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cctype&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cctype>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cctype header"]
 ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cctype&gt;
 
@@ -20,7 +13,6 @@ Includes the Standard C library header \<ctype.h> and adds the associated names 
 
 ```cpp
 #include <cctype>
-
 ```
 
 ## Remarks

@@ -1,16 +1,9 @@
 ---
-title: "CHeapPtrElementTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CHeapPtrElementTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CHeapPtrElementTraits", "ATLCOLL/ATL::CHeapPtrElementTraits", "ATLCOLL/ATL::CHeapPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CHeapPtrElementTraits::OUTARGTYPE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHeapPtrElementTraits class"]
 ms.assetid: 910e0e06-3c8b-4242-bf00-b57eb74fbc77
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHeapPtrElementTraits Class
 
@@ -82,7 +75,7 @@ The data type to use for retrieving elements from the collection class object.
 typedef T *& OUTARGTYPE;
 ```
 
-## See Also
+## See also
 
 [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)<br/>

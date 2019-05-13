@@ -1,16 +1,9 @@
 ---
-title: "-CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls) | Microsoft Docs"
-ms.custom: ""
+title: "/CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/CLRSUPPORTLASTERROR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/CLRSUPPORTLASTERROR linker option", "-CLRSUPPORTLASTERROR linker option"]
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)
 
@@ -62,11 +55,11 @@ You can minimize the performance impact by linking with **/CLRSUPPORTLASTERROR:S
 > [!NOTE]
 >  Preserving the last error is not supported for unmanaged functions that are consumed by CLR code, in the same module.
 
-- For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
+- For more information, see [/clr (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md).
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -148,7 +141,7 @@ GetLastError for application call failed (127).
 GetLastError for system call succeeded (183).
 ```
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

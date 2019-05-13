@@ -1,16 +1,9 @@
 ---
-title: "Creating an MFC ActiveX Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating an MFC ActiveX Control"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.activex.project"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], creating", "ActiveX controls [MFC], creating"]
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an MFC ActiveX Control
 
@@ -23,7 +16,7 @@ The easiest way to create an MFC ActiveX control is to use the [MFC ActiveX Cont
 
 ### To create an MFC ActiveX Control using the MFC ActiveX Control Wizard
 
-1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Follow the instructions in the help topic [Create a C++ console app project](../../get-started/tutorial-console-cpp.md).
 
 1. In the **New Project** dialog box, select the **MFC ActiveX Control** icon in the Templates pane to open the MFC ActiveX Control Wizard.
 
@@ -34,12 +27,12 @@ The easiest way to create an MFC ActiveX control is to use the [MFC ActiveX Cont
 
 1. Click **Finish** to close the wizard and open your new project in the development environment.
 
-After you have created your project, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md).
+After you have created your project, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 After you have created your project, you can use the code wizards to add [functions](../../ide/add-member-function-wizard.md), [variables](../../ide/add-member-variable-wizard.md), [events](../../ide/add-event-wizard.md), [properties](../../ide/names-add-property-wizard.md), and [methods](../../ide/add-method-wizard.md). For more information about customizing your ActiveX control, see [MFC ActiveX Controls](../../mfc/mfc-activex-controls.md).
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Property Pages](../../ide/property-pages-visual-cpp.md)
+[Property Pages](../../build/reference/property-pages-visual-cpp.md)
 

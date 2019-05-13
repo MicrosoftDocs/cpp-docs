@@ -1,16 +1,9 @@
 ---
-title: "Generated Classes, MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Generated Classes, MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.classes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard, generated classes"]
 ms.assetid: 5f33209c-7f01-4f72-8c1c-6f02f507ba9f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Generated Classes, MFC Application Wizard
 
@@ -38,8 +31,8 @@ This topic lists the names of base classes and files that your project generates
 
    The name of the source code file that is associated with the selected class. If the text box is active, you can change the name of the implementation file.
 
-## See Also
+## See also
 
 [Advanced Features, MFC Application Wizard](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
-[File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md)
 

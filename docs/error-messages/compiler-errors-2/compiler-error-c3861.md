@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3861 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3861"
 ms.date: "03/23/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3861"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3861"]
 ms.assetid: 0a1eee30-b3db-41b1-b1e5-35949c3924d7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3861
 

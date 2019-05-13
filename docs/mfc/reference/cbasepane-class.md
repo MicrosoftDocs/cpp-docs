@@ -1,16 +1,9 @@
 ---
-title: "CBasePane Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CBasePane Class"
+ms.date: "11/06/2018"
 f1_keywords: ["CBasePane", "AFXBASEPANE/CBasePane", "AFXBASEPANE/CBasePane::AccNotifyObjectFocusEvent", "AFXBASEPANE/CBasePane::AddPane", "AFXBASEPANE/CBasePane::AdjustDockingLayout", "AFXBASEPANE/CBasePane::AdjustLayout", "AFXBASEPANE/CBasePane::CalcFixedLayout", "AFXBASEPANE/CBasePane::CanAcceptPane", "AFXBASEPANE/CBasePane::CanAutoHide", "AFXBASEPANE/CBasePane::CanBeAttached", "AFXBASEPANE/CBasePane::CanBeClosed", "AFXBASEPANE/CBasePane::CanBeDocked", "AFXBASEPANE/CBasePane::CanBeResized", "AFXBASEPANE/CBasePane::CanBeTabbedDocument", "AFXBASEPANE/CBasePane::CanFloat", "AFXBASEPANE/CBasePane::CanFocus", "AFXBASEPANE/CBasePane::CopyState", "AFXBASEPANE/CBasePane::CreateDefaultMiniframe", "AFXBASEPANE/CBasePane::CreateEx", "AFXBASEPANE/CBasePane::DockPane", "AFXBASEPANE/CBasePane::DockPaneUsingRTTI", "AFXBASEPANE/CBasePane::DockToFrameWindow", "AFXBASEPANE/CBasePane::DoesAllowDynInsertBefore", "AFXBASEPANE/CBasePane::EnableDocking", "AFXBASEPANE/CBasePane::EnableGripper", "AFXBASEPANE/CBasePane::FloatPane", "AFXBASEPANE/CBasePane::get_accHelpTopic", "AFXBASEPANE/CBasePane::get_accSelection", "AFXBASEPANE/CBasePane::GetCaptionHeight", "AFXBASEPANE/CBasePane::GetControlBarStyle", "AFXBASEPANE/CBasePane::GetCurrentAlignment", "AFXBASEPANE/CBasePane::GetDockingMode", "AFXBASEPANE/CBasePane::GetDockSiteFrameWnd", "AFXBASEPANE/CBasePane::GetEnabledAlignment", "AFXBASEPANE/CBasePane::GetMFCStyle", "AFXBASEPANE/CBasePane::GetPaneIcon", "AFXBASEPANE/CBasePane::GetPaneRow", "AFXBASEPANE/CBasePane::GetPaneStyle", "AFXBASEPANE/CBasePane::GetParentDockSite", "AFXBASEPANE/CBasePane::GetParentMiniFrame", "AFXBASEPANE/CBasePane::GetParentTabbedPane", "AFXBASEPANE/CBasePane::GetParentTabWnd", "AFXBASEPANE/CBasePane::GetRecentVisibleState", "AFXBASEPANE/CBasePane::HideInPrintPreviewMode", "AFXBASEPANE/CBasePane::InsertPane", "AFXBASEPANE/CBasePane::IsAccessibilityCompatible", "AFXBASEPANE/CBasePane::IsAutoHideMode", "AFXBASEPANE/CBasePane::IsDialogControl", "AFXBASEPANE/CBasePane::IsDocked", "AFXBASEPANE/CBasePane::IsFloating", "AFXBASEPANE/CBasePane::IsHorizontal", "AFXBASEPANE/CBasePane::IsInFloatingMultiPaneFrameWnd", "AFXBASEPANE/CBasePane::IsMDITabbed", "AFXBASEPANE/CBasePane::IsPaneVisible", "AFXBASEPANE/CBasePane::IsPointNearDockSite", "AFXBASEPANE/CBasePane::IsResizable", "AFXBASEPANE/CBasePane::IsRestoredFromRegistry", "AFXBASEPANE/CBasePane::IsTabbed", "AFXBASEPANE/CBasePane::IsVisible", "AFXBASEPANE/CBasePane::LoadState", "AFXBASEPANE/CBasePane::MoveWindow", "AFXBASEPANE/CBasePane::OnAfterChangeParent", "AFXBASEPANE/CBasePane::OnBeforeChangeParent", "AFXBASEPANE/CBasePane::OnDrawCaption", "AFXBASEPANE/CBasePane::OnMovePaneDivider", "AFXBASEPANE/CBasePane::OnPaneContextMenu", "AFXBASEPANE/CBasePane::OnRemoveFromMiniFrame", "AFXBASEPANE/CBasePane::OnSetAccData", "AFXBASEPANE/CBasePane::PaneFromPoint", "AFXBASEPANE/CBasePane::RecalcLayout", "AFXBASEPANE/CBasePane::RemovePaneFromDockManager", "AFXBASEPANE/CBasePane::SaveState", "AFXBASEPANE/CBasePane::SelectDefaultFont", "AFXBASEPANE/CBasePane::SetControlBarStyle", "AFXBASEPANE/CBasePane::SetDockingMode", "AFXBASEPANE/CBasePane::SetPaneAlignment", "AFXBASEPANE/CBasePane::SetPaneStyle", "AFXBASEPANE/CBasePane::SetWindowPos", "AFXBASEPANE/CBasePane::ShowPane", "AFXBASEPANE/CBasePane::StretchPane", "AFXBASEPANE/CBasePane::UndockPane", "AFXBASEPANE/CBasePane::DoPaint"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CBasePane [MFC], AccNotifyObjectFocusEvent", "CBasePane [MFC], AddPane", "CBasePane [MFC], AdjustDockingLayout", "CBasePane [MFC], AdjustLayout", "CBasePane [MFC], CalcFixedLayout", "CBasePane [MFC], CanAcceptPane", "CBasePane [MFC], CanAutoHide", "CBasePane [MFC], CanBeAttached", "CBasePane [MFC], CanBeClosed", "CBasePane [MFC], CanBeDocked", "CBasePane [MFC], CanBeResized", "CBasePane [MFC], CanBeTabbedDocument", "CBasePane [MFC], CanFloat", "CBasePane [MFC], CanFocus", "CBasePane [MFC], CopyState", "CBasePane [MFC], CreateDefaultMiniframe", "CBasePane [MFC], CreateEx", "CBasePane [MFC], DockPane", "CBasePane [MFC], DockPaneUsingRTTI", "CBasePane [MFC], DockToFrameWindow", "CBasePane [MFC], DoesAllowDynInsertBefore", "CBasePane [MFC], EnableDocking", "CBasePane [MFC], EnableGripper", "CBasePane [MFC], FloatPane", "CBasePane [MFC], get_accHelpTopic", "CBasePane [MFC], get_accSelection", "CBasePane [MFC], GetCaptionHeight", "CBasePane [MFC], GetControlBarStyle", "CBasePane [MFC], GetCurrentAlignment", "CBasePane [MFC], GetDockingMode", "CBasePane [MFC], GetDockSiteFrameWnd", "CBasePane [MFC], GetEnabledAlignment", "CBasePane [MFC], GetMFCStyle", "CBasePane [MFC], GetPaneIcon", "CBasePane [MFC], GetPaneRow", "CBasePane [MFC], GetPaneStyle", "CBasePane [MFC], GetParentDockSite", "CBasePane [MFC], GetParentMiniFrame", "CBasePane [MFC], GetParentTabbedPane", "CBasePane [MFC], GetParentTabWnd", "CBasePane [MFC], GetRecentVisibleState", "CBasePane [MFC], HideInPrintPreviewMode", "CBasePane [MFC], InsertPane", "CBasePane [MFC], IsAccessibilityCompatible", "CBasePane [MFC], IsAutoHideMode", "CBasePane [MFC], IsDialogControl", "CBasePane [MFC], IsDocked", "CBasePane [MFC], IsFloating", "CBasePane [MFC], IsHorizontal", "CBasePane [MFC], IsInFloatingMultiPaneFrameWnd", "CBasePane [MFC], IsMDITabbed", "CBasePane [MFC], IsPaneVisible", "CBasePane [MFC], IsPointNearDockSite", "CBasePane [MFC], IsResizable", "CBasePane [MFC], IsRestoredFromRegistry", "CBasePane [MFC], IsTabbed", "CBasePane [MFC], IsVisible", "CBasePane [MFC], LoadState", "CBasePane [MFC], MoveWindow", "CBasePane [MFC], OnAfterChangeParent", "CBasePane [MFC], OnBeforeChangeParent", "CBasePane [MFC], OnDrawCaption", "CBasePane [MFC], OnMovePaneDivider", "CBasePane [MFC], OnPaneContextMenu", "CBasePane [MFC], OnRemoveFromMiniFrame", "CBasePane [MFC], OnSetAccData", "CBasePane [MFC], PaneFromPoint", "CBasePane [MFC], RecalcLayout", "CBasePane [MFC], RemovePaneFromDockManager", "CBasePane [MFC], SaveState", "CBasePane [MFC], SelectDefaultFont", "CBasePane [MFC], SetControlBarStyle", "CBasePane [MFC], SetDockingMode", "CBasePane [MFC], SetPaneAlignment", "CBasePane [MFC], SetPaneStyle", "CBasePane [MFC], SetWindowPos", "CBasePane [MFC], ShowPane", "CBasePane [MFC], StretchPane", "CBasePane [MFC], UndockPane", "CBasePane [MFC], DoPaint"]
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBasePane Class
 
@@ -155,13 +148,13 @@ The following customization tips pertain to the `CBasePane Class` and any classe
 
 - When you create a pane, you can apply several new styles:
 
-    - AFX_CBRS_FLOAT makes the pane float.
+  - AFX_CBRS_FLOAT makes the pane float.
 
-    - AFX_CBRS_AUTOHIDE enables auto-hide mode.
+  - AFX_CBRS_AUTOHIDE enables auto-hide mode.
 
-    - AFX_CBRS_CLOSE enables the pane to be closed (hidden).
+  - AFX_CBRS_CLOSE enables the pane to be closed (hidden).
 
-   These are flags that you can combine with a bitwise-OR operation.
+  These are flags that you can combine with a bitwise-OR operation.
 
 `CBasePane` implements the following virtual Boolean methods to reflect these flags: [CBasePane::CanBeClosed](#canbeclosed), [CBasePane::CanAutoHide](#canautohide), [CBasePane::CanFloat](#canfloat). You can override them in derived classes to customize their behavior.
 
@@ -181,7 +174,7 @@ The following customization tips pertain to the `CBasePane Class` and any classe
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CBasePane` class. The example demonstrates how to retrieve a pane from the `CFrameWndEx` class and how to set the docking mode, the pane alignment, and the pane style. The code is from the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CBasePane` class. The example demonstrates how to retrieve a pane from the `CFrameWndEx` class and how to set the docking mode, the pane alignment, and the pane style. The code is from the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#2](../../mfc/reference/codesnippet/cpp/cbasepane-class_1.cpp)]
 
@@ -1405,7 +1398,7 @@ A handle to a deferred window position structure, or NULL.
 
 ### Remarks
 
-If you pass NULL as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) or by storing the return value of a previous call to this method.
+If you pass NULL as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) or by storing the return value of a previous call to this method.
 
 ##  <a name="onafterchangeparent"></a>  CBasePane::OnAfterChangeParent
 
@@ -1467,12 +1460,12 @@ This method has no functionality for the `CBasePane` class.
 This method is currently not used.
 
 ```
-virtual void OnMovePaneDivider(CPaneDivider*);
+virtual void OnMovePaneDivider(CPaneDivider* /* unused */);
 ```
 
 ### Parameters
 
-*CPaneDivider\**<br/>
+*unused*<br/>
 [in] Not used.
 
 ##  <a name="onpanecontextmenu"></a>  CBasePane::OnPaneContextMenu
@@ -1853,7 +1846,7 @@ Call this method to manipulate the pane state or exclude the pane from the docki
 
 If you want to continue to use this pane, call either [CBasePane::DockPane](#dockpane) or [CBasePane::FloatPane](#floatpane) before calling this method.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

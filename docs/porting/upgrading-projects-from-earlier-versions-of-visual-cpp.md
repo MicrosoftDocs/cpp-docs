@@ -1,15 +1,9 @@
 ---
-title: "Upgrading Projects from Earlier Versions of Visual C++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Upgrading Projects from Earlier Versions of Visual C++"
+description: "How to upgrade Microsoft C++ projects from older versions of Visual Studio."
+ms.date: "05/03/2019"
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Upgrading Projects from Earlier Versions of Visual C++
 
@@ -32,9 +26,18 @@ Data sources are contained in a separate database project so that you can more e
 
 For information about how to update the targeted Windows versions, see [Modifying WINVER and _WIN32_WINNT](../porting/modifying-winver-and-win32-winnt.md).
 
-## See Also
+## In this section
 
-[Build System Changes](../build/build-system-changes.md)<br/>
-[What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md)<br/>
+[Modifying WINVER and _WIN32_WINNT](modifying-winver-and-win32-winnt.md)<br/>
+[Fix your dependencies on library internals](fix-your-dependencies-on-library-internals.md)<br/>
+[Floating-point migration issues](floating-point-migration-issues.md)<br/>
+[Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)<br/>
+[Visual C++ features deprecated in Visual Studio 2019 preview](features-deprecated-in-visual-studio.md)<br/>
+[Build System Changes](build-system-changes.md)<br/>
+
+## See also
+
+[What's New for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [Nonstandard Behavior](../cpp/nonstandard-behavior.md)

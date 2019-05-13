@@ -1,19 +1,12 @@
 ---
-title: "gets_s, _getws_s | Microsoft Docs"
-ms.custom: ""
+title: "gets_s, _getws_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_getws_s", "gets_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_getws_s", "gets_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["getws_s function", "_getws_s function", "lines, getting", "streams, getting lines", "buffers, avoiding overruns", "buffer overruns", "buffers, buffer overruns", "gets_s function", "standard input, reading from"]
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # gets_s, _getws_s
 

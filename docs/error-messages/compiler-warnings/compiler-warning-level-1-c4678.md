@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4678 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4678"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4678"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4678"]
 ms.assetid: 0c588f34-595d-4e5c-9470-8723fca2cc06
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4678
 

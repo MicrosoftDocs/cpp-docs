@@ -1,16 +1,9 @@
 ---
-title: "&lt;csignal&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;csignal&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<csignal>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["csignal header"]
 ms.assetid: d18bcf82-a89a-476c-a6bf-726af956f7c0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;csignal&gt;
 
@@ -20,7 +13,6 @@ Includes the Standard C library header \<signal.h> and adds the associated names
 
 ```cpp
 #include <csignal>
-
 ```
 
 ## Remarks

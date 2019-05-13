@@ -1,15 +1,8 @@
 ---
-title: "Containers: Implementing a Container | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Implementing a Container"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [OLE], OLE container", "OLE containers [MFC], implementing"]
 ms.assetid: af1e2079-619a-4eac-9327-985ad875823a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Implementing a Container
 
@@ -35,7 +28,7 @@ These features are provided for you automatically when you use the MFC Applicati
 
 1. Implement an `OnSize` message handler to inform an OLE embedded item that it needs to change its rectangle to reflect the change in size of its containing view.
 
-Because the implementation of these features varies dramatically from one application to the next, the application wizard provides only a basic implementation. You will likely have to customize these functions to get your application to function properly. For an example of this, see the [CONTAINER](../visual-cpp-samples.md) sample.
+Because the implementation of these features varies dramatically from one application to the next, the application wizard provides only a basic implementation. You will likely have to customize these functions to get your application to function properly. For an example of this, see the [CONTAINER](../overview/visual-cpp-samples.md) sample.
 
 #### To handle embedded and linked items
 
@@ -43,7 +36,7 @@ Because the implementation of these features varies dramatically from one applic
 
 1. Override `OnChange`, `OnChangeItemPosition`, and `OnGetItemPosition`. These functions handle sizing, positioning, and modifying embedded and linked items.
 
-The application wizard will derive the class for you, but you will likely need to override `OnChange` and the other functions listed with it in step 2 in the preceding procedure. The skeleton implementations need to be customized for most applications, because these functions are implemented differently from one application to the next. For examples of this, see the MFC samples [DRAWCLI](../visual-cpp-samples.md) and [CONTAINER](../visual-cpp-samples.md).
+The application wizard will derive the class for you, but you will likely need to override `OnChange` and the other functions listed with it in step 2 in the preceding procedure. The skeleton implementations need to be customized for most applications, because these functions are implemented differently from one application to the next. For examples of this, see the MFC samples [DRAWCLI](../overview/visual-cpp-samples.md) and [CONTAINER](../overview/visual-cpp-samples.md).
 
 You must add a number of items to the container application's menu structure to support OLE. For more information on these, see [Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md).
 
@@ -61,8 +54,7 @@ You may also want to support some of the following features in your container ap
 
    For more information, see [Containers: Advanced Features](../mfc/containers-advanced-features.md).
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Containers: Client Items](../mfc/containers-client-items.md)
-

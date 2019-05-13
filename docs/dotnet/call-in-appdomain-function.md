@@ -1,16 +1,10 @@
 ---
-title: "call_in_appdomain Function | Microsoft Docs"
-ms.custom: ""
+title: "call_in_appdomain Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["call_in_appdomain"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["call_in_appdomain function"]
 ms.assetid: 9a1a5026-b76b-4cae-a3d4-29badeb9db9c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # call_in_appdomain Function
 

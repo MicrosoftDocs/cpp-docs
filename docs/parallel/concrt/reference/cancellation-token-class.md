@@ -1,16 +1,9 @@
 ---
-title: "cancellation_token Class | Microsoft Docs"
-ms.custom: ""
+title: "cancellation_token Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::cancellation_token", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::deregister_callback", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_cancelable", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_canceled", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::none", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token::register_callback"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token class"]
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # cancellation_token Class
 
@@ -189,6 +182,6 @@ The function object that will be called back when this `cancellation_token` is c
 
 A `cancellation_token_registration` object which can be utilized in the `deregister` method to deregister a previously registered callback and prevent it from being made. The method will throw an [invalid_operation](invalid-operation-class.md) exception if it is called on a `cancellation_token` object that was created using the [cancellation_token::none](#none) method.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

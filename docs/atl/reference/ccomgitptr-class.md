@@ -1,16 +1,9 @@
 ---
-title: "CComGITPtr Class | Microsoft Docs"
-ms.custom: ""
+title: "CComGITPtr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComGITPtr", "ATLBASE/ATL::CComGITPtr", "ATLBASE/ATL::CComGITPtr::CComGITPtr", "ATLBASE/ATL::CComGITPtr::Attach", "ATLBASE/ATL::CComGITPtr::CopyTo", "ATLBASE/ATL::CComGITPtr::Detach", "ATLBASE/ATL::CComGITPtr::GetCookie", "ATLBASE/ATL::CComGITPtr::Revoke", "ATLBASE/ATL::CComGITPtr::m_dwCookie"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComGITPtr class"]
 ms.assetid: af895acb-525a-4555-bb67-b241b7df515b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComGITPtr Class
 
@@ -267,7 +260,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 Removes the interface from the GIT.
 
-## See Also
+## See also
 
 [Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
 [Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>

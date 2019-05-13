@@ -1,18 +1,11 @@
 ---
-title: "_ismbc Routines | Microsoft Docs"
-ms.custom: ""
+title: "_ismbc Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll", "msvcr80.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ismbc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ismbc routines", "_ismbc routines"]
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _ismbc Routines
 
@@ -33,7 +26,7 @@ The output value is affected by the `LC_CTYPE` category setting of the locale; s
 |Routine|Test condition|Code page 932 example|
 |-------------|--------------------|---------------------------|
 |[_ismbcalnum, _ismbcalnum_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alphanumeric|Returns nonzero if and only if `c` is a single-byte representation of an ASCII English letter: See examples for `_ismbcdigit` and `_ismbcalpha`.|
-|[_ismbcalpha, _ismbcalpha\_](../c-runtime-library/reference/ismbcalnum-functions.md)|Alphabetic|Returns nonzero if and only if `c` is a single-byte representation of an ASCII English letter: See examples for `_ismbcupper` and `_ismbclower`; or a katakana letter: 0xA6<=`c`<=0xDF.|
+|[_ismbcalpha, _ismbcalpha_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alphabetic|Returns nonzero if and only if `c` is a single-byte representation of an ASCII English letter: See examples for `_ismbcupper` and `_ismbclower`; or a katakana letter: 0xA6<=`c`<=0xDF.|
 |[_ismbcdigit, _ismbcdigit_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Digit|Returns nonzero if and only if `c` is a single-byte representation of an ASCII digit: 0x30<=`c`<=0x39.|
 |[_ismbcgraph, _ismbcgraph_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Graphic|Returns nonzero if and only if `c` is a single-byte representation of any ASCII or katakana printable character except a white space ( ). See examples for `_ismbcdigit`, `_ismbcalpha`, and `_ismbcpunct`.|
 |[_ismbclegal, _ismbclegal_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Valid multibyte character|Returns nonzero if and only if the first byte of `c` is within ranges 0x81 - 0x9F or 0xE0 - 0xFC, while the second byte is within ranges 0x40 - 0x7E or 0x80 - FC.|
@@ -61,7 +54,7 @@ The following routines are specific to code page 932.
 
 **END Code Page 932 Specific**
 
-## See Also
+## See also
 
 [Character Classification](../c-runtime-library/character-classification.md)<br/>
 [is, isw Routines](../c-runtime-library/is-isw-routines.md)<br/>

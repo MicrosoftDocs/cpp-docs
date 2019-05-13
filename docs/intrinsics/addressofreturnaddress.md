@@ -1,16 +1,9 @@
 ---
-title: "_AddressOfReturnAddress | Microsoft Docs"
-ms.custom: ""
+title: "_AddressOfReturnAddress"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_AddressOfReturnAddress_cpp", "_AddressOfReturnAddress"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_AddressOfReturnAddress intrinsic", "AddressOfReturnAddress intrinsic"]
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _AddressOfReturnAddress
 
@@ -72,7 +65,7 @@ int main() {
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

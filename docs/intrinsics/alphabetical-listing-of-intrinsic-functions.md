@@ -1,15 +1,8 @@
 ---
-title: "Alphabetical Listing of Intrinsic Functions | Microsoft Docs"
-ms.custom: ""
+title: "Alphabetical Listing of Intrinsic Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler intrinsics", "intrinsics, alphabetical list", "intrinsics"]
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Alphabetical Listing of Intrinsic Functions
 
@@ -271,6 +264,6 @@ The following sections describe the Microsoft-specific intrinsic functions avail
 
 [__writemsr](../intrinsics/writemsr.md)
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

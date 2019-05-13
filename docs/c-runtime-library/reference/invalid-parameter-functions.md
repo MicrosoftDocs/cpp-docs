@@ -1,16 +1,11 @@
 ---
-title: "_invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson | Microsoft Docs"
-ms.custom: ""
+title: "_invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 apiname: ["_invalid_parameter", "_invalid_parameter_noinfo", "_invalid_parameter_noinfo_noreturn", "_invoke_watson"]
 apilocation: ["api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CORECRT/_invalid_parameter", "_invalid_parameter", "CORECRT/_invalid_parameter_noinfo", "_invalid_parameter_noinfo", "CORECRT/_invalid_parameter_noinfo_noreturn", "_invalid_parameter_noinfo_noreturn", "CORECRT/_invoke_watson", "_invoke_watson"]
 ms.assetid: a4d6f1fd-ce56-4783-8719-927151a7a814
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson
 

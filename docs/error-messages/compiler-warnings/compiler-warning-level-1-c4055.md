@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4052 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4052"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4055"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4055"]
 ms.assetid: f9955421-16ab-46e5-8f9d-bf1639a519ef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4055
 

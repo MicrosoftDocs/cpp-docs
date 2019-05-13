@@ -1,16 +1,9 @@
 ---
-title: "emitidl (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "emitidl (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.emitidl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["emitidl attribute"]
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # emitidl
 
@@ -64,7 +57,7 @@ Each time the compiler encounters a new file, **emitidl** is implicitly set to *
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)

@@ -1,16 +1,9 @@
 ---
-title: "CBookmark Class | Microsoft Docs"
-ms.custom: ""
+title: "CBookmark Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.CBookmark", "ATL::CBookmark<nSize>", "CBookmark", "ATL.CBookmark<nSize>", "ATL::CBookmark", "CBookmark<0>.CBookmark<0>", "CBookmark::CBookmark", "ATL.CBookmark.CBookmark", "CBookmark.CBookmark", "CBookmark", "ATL::CBookmark<0>::CBookmark<0>", "ATL.CBookmark<0>.CBookmark<0>", "CBookmark<0>::CBookmark<0>", "ATL::CBookmark::CBookmark", "ATL.CBookmark<0>.GetBuffer", "ATL.CBookmark.GetBuffer", "ATL::CBookmark<0>::GetBuffer", "ATL::CBookmark::GetBuffer", "CBookmark.GetBuffer", "ATL::CBookmark<nSize>::GetBuffer", "ATL.CBookmark<nSize>.GetBuffer", "CBookmark<0>.GetBuffer", "CBookmark<nSize>::GetBuffer", "CBookmark<0>::GetBuffer", "CBookmark<nSize>.GetBuffer", "CBookmark::GetBuffer", "CBookmark::GetSize", "ATL.CBookmark<nSize>.GetSize", "CBookmark<nSize>.GetSize", "CBookmark.GetSize", "ATL::CBookmark::GetSize", "CBookmark<0>::GetSize", "ATL::CBookmark<nSize>::GetSize", "ATL.CBookmark<0>.GetSize", "ATL::CBookmark<0>::GetSize", "ATL.CBookmark.GetSize", "CBookmark<0>.GetSize", "CBookmark<nSize>::GetSize", "CBookmark<0>::SetBookmark", "ATL.CBookmark<0>.SetBookmark", "CBookmark<0>.SetBookmark", "SetBookmark", "ATL::CBookmark::SetBookmark", "ATL::CBookmark<0>::SetBookmark", "CBookmark.SetBookmark", "ATL.CBookmark.SetBookmark", "CBookmark::SetBookmark", "CBookmark<0>::operator=", "CBookmark<0>.operator=", "ATL.CBookmark.operator=", "CBookmark::operator=", "ATL.CBookmark<0>.operator=", "ATL::CBookmark<0>::operator=", "CBookmark.operator=", "ATL::CBookmark::operator="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CBookmark class", "CBookmark class, constructor", "GetBuffer method", "GetSize method", "SetBookmark method", "= operator, with OLE DB templates", "operator =, bookmarks", "operator=, bookmarks"]
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBookmark Class
 
@@ -64,7 +57,6 @@ The constructor.
 
 ```cpp
 CBookmark();
- 
 CBookmark(DBLENGTH nSize);
 ```
 
@@ -148,7 +140,7 @@ CBookmark& operator =(const CBookmark& bookmark) throw();
 
 This operator is needed only in `CBookmark<0>`.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

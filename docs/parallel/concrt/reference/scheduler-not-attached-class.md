@@ -1,16 +1,9 @@
 ---
-title: "scheduler_not_attached Class | Microsoft Docs"
-ms.custom: ""
+title: "scheduler_not_attached Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached::scheduler_not_attached"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_not_attached class"]
 ms.assetid: 26001970-b400-463b-be3d-8623359c399a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # scheduler_not_attached Class
 
@@ -57,7 +50,7 @@ scheduler_not_attached() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Scheduler Class](scheduler-class.md)

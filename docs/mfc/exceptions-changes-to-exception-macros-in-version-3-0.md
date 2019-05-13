@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Changes to Exception Macros in Version 3.0 | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Changes to Exception Macros in Version 3.0"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ exception handling [MFC], upgrade considerations", "CATCH macro [MFC]", "exceptions [MFC], what's changed", "THROW_LAST macro [MFC]"]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Changes to Exception Macros in Version 3.0
 
@@ -57,7 +50,6 @@ Using **THROW** in the catch block causes the pointer `e` to be deleted, so that
 
 For more information, see [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

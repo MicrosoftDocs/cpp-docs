@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3182 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3182"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3182"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3182"]
 ms.assetid: f3681266-308e-4990-a979-8eef8920e186
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3182
 

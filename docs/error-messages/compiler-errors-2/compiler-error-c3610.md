@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3610 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3610"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3610"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3610"]
 ms.assetid: 9349a348-9d37-4a00-9eab-481039268d31
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3610
 

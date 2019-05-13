@@ -1,16 +1,9 @@
 ---
-title: "Process and Environment Control | Microsoft Docs"
-ms.custom: ""
+title: "Process and Environment Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.programs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["processes, stopping", "processes, administrative tasks", "parent process", "processes, starting", "environment control routines", "process control routines"]
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Process and Environment Control
 
@@ -40,7 +33,7 @@ Use the process-control routines to start, stop, and manage processes from withi
 |[exit](../c-runtime-library/reference/exit-exit-exit.md)|Call functions registered by **atexit** and **_onexit**, flush all buffers, close all open files, and terminate process|
 |[_exit](../c-runtime-library/reference/exit-exit-exit.md)|Terminate process immediately without calling **atexit** or **_onexit** or flushing buffers|
 |[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md), [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)|Get value of environment variable|
-|[_getpid](../c-runtime-library/reference/getpid.md)|Get process ID number|[System::Diagnostics::Process::Id](https://msdn.microsoft.com/library/system.diagnostics.process.id.aspx)|
+|[_getpid](../c-runtime-library/reference/getpid.md)|Get process ID number|
 |[longjmp](../c-runtime-library/reference/longjmp.md)|Restore saved stack environment; use it to execute a nonlocal **goto**|
 |[_onexit](../c-runtime-library/reference/onexit-onexit-m.md)|Schedule routines for execution at program termination; use for compatibility with Microsoft C/C++ version 7.0 and earlier|
 |[_pclose](../c-runtime-library/reference/pclose.md)|Wait for new command processor and close stream on associated pipe|
@@ -80,6 +73,6 @@ The differences among the functions in the **_exec** family, as well as among th
 |**_execve**, **_spawnve**|No|Array|Pointer to environment table for new process passed as last argument|
 |**_execvp**, **_spawnvp**|Yes|Array|Inherited from calling process|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

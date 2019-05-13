@@ -1,16 +1,9 @@
 ---
-title: "DATE Type | Microsoft Docs"
-ms.custom: ""
+title: "DATE Type"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["DATE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Date data type, implementing", "Date data type", "DATE type", "Date data type, about Date data type", "MFC, date and time", "hour values representation"]
 ms.assetid: 695853ed-b614-4575-b793-b8c287372038
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DATE Type
 
@@ -58,8 +51,7 @@ The following points should be noted when working with these date and time forma
 
 More information on issues related to the DATE and `COleDateTime` types can be found under [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md) and [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md).
 
-## See Also
+## See also
 
 [Date and Time](../atl-mfc-shared/date-and-time.md)<br/>
 [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md)
-

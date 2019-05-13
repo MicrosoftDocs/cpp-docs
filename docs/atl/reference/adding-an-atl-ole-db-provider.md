@@ -1,17 +1,18 @@
 ---
-title: "Adding an ATL OLE DB Provider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Adding an ATL OLE DB Provider"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB, adding ATL OLE DB provider to projects", "ATL projects, adding ATL OLE DB providers", "ATL OLE DB providers"]
 ms.assetid: 26fba1e3-880f-4bc6-90e5-2096a48a3a6c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL OLE DB Provider
+
+::: moniker range="vs-2019"
+
+The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Use this wizard to add an ATL OLE DB provider to a project. An ATL OLE DB provider consists of a data source, session, command, and rowset classes. The project must have been created as an ATL COM application.
 
@@ -27,6 +28,8 @@ Use this wizard to add an ATL OLE DB provider to a project. An ATL OLE DB provid
 
 1. Click **Finish** to close the wizard, which will insert the newly created OLE DB provider code in your project.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)

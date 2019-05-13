@@ -1,19 +1,12 @@
 ---
-title: "_aligned_realloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_realloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_realloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["aligned_realloc_dbg", "_aligned_realloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_aligned_realloc_dbg function", "aligned_realloc_dbg function"]
 ms.assetid: 8aede920-991e-44cd-867f-83dc2165db47
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_realloc_dbg
 
@@ -56,7 +49,7 @@ It is an error to reallocate memory and change the alignment of a block.
 
 ## Remarks
 
-**_aligned_realloc_dbg** is a debug version of the [_aligned_realloc](aligned-realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_aligned_realloc_dbg** is reduced to a call to **_aligned_realloc**. Both **_aligned_realloc** and **_aligned_realloc_dbg** reallocate a memory block in the base heap, but **_aligned_realloc_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
+**_aligned_realloc_dbg** is a debug version of the [_aligned_realloc](aligned-realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_aligned_realloc_dbg** is reduced to a call to **_aligned_realloc**. Both **_aligned_realloc** and **_aligned_realloc_dbg** reallocate a memory block in the base heap, but **_aligned_realloc_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, and *filename*/*linenumber* information to determine the origin of allocation requests. Tracking specific allocation types with a block type parameter is not a supported debug feature for aligned allocations. Aligned allocations will appear as a _NORMAL_BLOCK block type.
 
 **_aligned_realloc_dbg** reallocates the specified memory block with slightly more space than the requested *newSize*. *newSize* might be greater or less than the size of the originally allocated memory block. The additional space is used by the debug heap manager to link the debug memory blocks and to provide the application with debug header information and overwrite buffers. The reallocation might result in moving the original memory block to a different location in the heap, as well as changing the size of the memory block. If the memory block is moved, the contents of the original block are overwritten.
 

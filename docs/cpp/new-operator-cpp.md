@@ -1,22 +1,15 @@
 ---
-title: "new Operator (C++) | Microsoft Docs"
-ms.custom: ""
+title: "new Operator (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["new keyword [C++]"]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # new Operator (C++)
 
 Allocates memory for an object or array of objects of *type-name* from the free store and returns a suitably typed, nonzero pointer to the object.
 
 > [!NOTE]
->  Microsoft C++ Component Extensions provides support for the **new** keyword to add vtable slot entries. For more information, see [new (new slot in vtable)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)
+>  Microsoft C++ Component Extensions provides support for the **new** keyword to add vtable slot entries. For more information, see [new (new slot in vtable)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
 ## Syntax
 
@@ -29,7 +22,7 @@ Allocates memory for an object or array of objects of *type-name* from the free 
 
 If unsuccessful, **new** returns zero or throws an exception; see [The new and delete Operators](../cpp/new-and-delete-operators.md) for more information. You can change this default behavior by writing a custom exception-handling routine and calling the [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) run-time library function with your function name as its argument.
 
-For information on how to create an object on the managed heap, see [gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md).
+For information on how to create an object on the managed heap, see [gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md).
 
 When **new** is used to allocate memory for a C++ class object, the object's constructor is called after the memory is allocated.
 

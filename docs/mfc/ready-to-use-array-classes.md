@@ -1,16 +1,9 @@
 ---
-title: "Ready-to-Use Array Classes | Microsoft Docs"
-ms.custom: ""
+title: "Ready-to-Use Array Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.array"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [MFC], classes", "collection classes [MFC], arrays", "classes [MFC], array"]
 ms.assetid: fdeabf95-2fe7-43a8-8f88-d954133caf52
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use Array Classes
 
@@ -37,7 +30,6 @@ Stores elements of type **WORD** in an array.
 [CStringArray](../mfc/reference/cstringarray-class.md)<br/>
 Stores `CString` objects in an array.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

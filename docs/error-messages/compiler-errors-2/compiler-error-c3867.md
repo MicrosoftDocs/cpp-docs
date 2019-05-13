@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3867 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3867"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3867"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3867"]
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3867
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 You tried to take the address of a member function without qualifying the member function with its class name and the address-of operator.
 
-This error can also be generated as a result of compiler conformance work that was done for Visual C++ 2005: enhanced pointer-to-member conformance. Code that compiled prior to Visual C++ 2005 will now generate C3867.
+This error can also be generated as a result of compiler conformance work that was done for Visual Studio 2005: enhanced pointer-to-member conformance. Code that compiled prior to Visual Studio 2005 will now generate C3867.
 
 ## Example
 

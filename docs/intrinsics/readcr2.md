@@ -1,16 +1,9 @@
 ---
-title: "__readcr2 | Microsoft Docs"
-ms.custom: ""
+title: "__readcr2"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__readcr2"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__readcr2 intrinsic"]
 ms.assetid: d02c97d8-1953-46e7-a79e-a781e2c5bf27
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __readcr2
 
@@ -42,6 +35,6 @@ This intrinsic is only available in kernel mode, and the routine is only availab
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

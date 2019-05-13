@@ -1,15 +1,8 @@
 ---
-title: "Indirection Operator: * | Microsoft Docs"
-ms.custom: ""
+title: "Indirection Operator: *"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["* operator", "indirection operator", "operators [C++], indirection", "indirection operator [C++], syntax"]
 ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Indirection Operator: *
 

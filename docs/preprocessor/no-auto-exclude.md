@@ -1,16 +1,9 @@
 ---
-title: "no_auto_exclude | Microsoft Docs"
-ms.custom: ""
+title: "no_auto_exclude"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["no_auto_exclude"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no_auto_exclude attribute"]
 ms.assetid: 3241ef9c-758a-4e86-bdc5-37da6072430f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # no_auto_exclude
 **C++ Specific**
@@ -29,7 +22,7 @@ Type libraries may include definitions of items defined in system headers or oth
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

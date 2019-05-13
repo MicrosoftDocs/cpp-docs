@@ -1,19 +1,12 @@
 ---
-title: "_set_error_mode | Microsoft Docs"
-ms.custom: ""
+title: "_set_error_mode"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_set_error_mode"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["set_error_mode", "_set_error_mode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_set_error_mode function", "set_error_mode function"]
 ms.assetid: f0807be5-73d1-4a32-a701-3c9bdd139c5c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _set_error_mode
 

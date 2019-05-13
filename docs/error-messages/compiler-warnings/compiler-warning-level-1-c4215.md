@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4215 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4215"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4215"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4215"]
 ms.assetid: f2aab64d-1bab-4f75-95ee-89e1263047b1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4215
 

@@ -1,16 +1,9 @@
 ---
-title: "User-Defined Type Conversions (C++) | Microsoft Docs"
-ms.custom: ""
+title: "User-Defined Type Conversions (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["explicit_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["constructors [C++], and constants", "conversion functions [C++]", "explicit keyword [C++]", "type conversion", "constructors [C++], drawbacks", "conversion constructors", "type conversion [C++], explicit conversion", "coercion [C++]", "conversions [C++], explicit", "objects [C++], converting", "conversion functions [C++], rules for declaring", "declaring functions [C++], conversion functions", "functions [C++], conversion", "converting objects", "constructors [C++], conversion", "conversions [C++], by constructors", "data type conversion [C++], explicit"]
 ms.assetid: d40e4310-a190-4e95-a34c-22c5c20aa0b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # User-Defined Type Conversions (C++)
 

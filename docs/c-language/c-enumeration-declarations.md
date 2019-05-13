@@ -1,15 +1,8 @@
 ---
-title: "C Enumeration Declarations | Microsoft Docs"
-ms.custom: ""
+title: "C Enumeration Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarations, enumerations", "define directive (#define), alternative to", "enumerators, declaring", "#define directive, alternative to", "named constants, enumeration declarations", "declaring enumerations"]
 ms.assetid: bd18f673-4dda-4bc1-92fd-d1ce10074910
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Enumeration Declarations
 
@@ -139,6 +132,6 @@ Unnamed enumerator data types can also be declared. The name of the data type is
 enum { yes, no } response;
 ```
 
-## See Also
+## See also
 
 [Enumerations](../cpp/enumerations-cpp.md)

@@ -1,16 +1,9 @@
 ---
-title: "CAnimationColor Class | Microsoft Docs"
-ms.custom: ""
+title: "CAnimationColor Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationColor::GetB", "AFXANIMATIONCONTROLLER/CAnimationColor::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetG", "AFXANIMATIONCONTROLLER/CAnimationColor::GetR", "AFXANIMATIONCONTROLLER/CAnimationColor::GetValue", "AFXANIMATIONCONTROLLER/CAnimationColor::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationColor::m_bValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_gValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_rValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationColor [MFC], CAnimationColor", "CAnimationColor [MFC], AddTransition", "CAnimationColor [MFC], GetB", "CAnimationColor [MFC], GetDefaultValue", "CAnimationColor [MFC], GetG", "CAnimationColor [MFC], GetR", "CAnimationColor [MFC], GetValue", "CAnimationColor [MFC], SetDefaultValue", "CAnimationColor [MFC], GetAnimationVariableList", "CAnimationColor [MFC], m_bValue", "CAnimationColor [MFC], m_gValue", "CAnimationColor [MFC], m_rValue"]
 ms.assetid: 88bfabd4-efeb-4652-87e8-304253d8e48c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimationColor Class
 
@@ -301,6 +294,6 @@ Specifies new default values for red, green and blue components.
 
 Use this function to set a default value to animation object. This methods assigns default values to color components of animation color. It also recreates underlying COM objects if they have been created. If you subscribed this animation object to events (ValueChanged or IntegerValueChanged), you need to re-enable these events.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -1,19 +1,12 @@
 ---
-title: "_CrtDbgBreak | Microsoft Docs"
-ms.custom: ""
+title: "_CrtDbgBreak"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtDbgBreak"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CrtDbgBreak", "CrtDbgBreak"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CrtDbgBreak function", "_CrtDbgBreak function"]
 ms.assetid: 01f8b4a2-a2c7-4e1f-9f39-e573b4a7871f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtDbgBreak
 

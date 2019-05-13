@@ -1,19 +1,12 @@
 ---
-title: "_get_output_format | Microsoft Docs"
-ms.custom: ""
+title: "_get_output_format"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_get_output_format"]
 apilocation: ["msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll"]
 apitype: "DLLExport"
 f1_keywords: ["get_output_format", "_get_output_format"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["output formatting", "get_output_format function", "_get_output_format function"]
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _get_output_format
 
@@ -44,7 +37,7 @@ The output format flag controls features of formatted I/O. At present the flag h
 
 For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md) in the Introduction.
 
-## See Also
+## See also
 
 [Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "CColumnAccessor Class | Microsoft Docs"
-ms.custom: ""
+title: "CColumnAccessor Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CColumnAccessor", "ATL::CColumnAccessor", "ATL.CColumnAccessor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CColumnAccessor class"]
 ms.assetid: 6ce1e67f-6a20-490d-9326-c168b43eee7e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CColumnAccessor Class
 
@@ -48,7 +41,7 @@ In the injected code, every column is bound as a separate accessor. You should b
 
 **Header:** atldbcli.h
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

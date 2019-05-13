@@ -1,16 +1,9 @@
 ---
-title: "CAxDialogImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "CAxDialogImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl::AdviseSinkMap", "ATLWIN/ATL::CAxDialogImpl::Create", "ATLWIN/ATL::CAxDialogImpl::DestroyWindow", "ATLWIN/ATL::CAxDialogImpl::DoModal", "ATLWIN/ATL::CAxDialogImpl::EndDialog", "ATLWIN/ATL::CAxDialogImpl::GetDialogProc", "ATLWIN/ATL::CAxDialogImpl::GetIDD", "ATLWIN/ATL::CAxDialogImpl::IsDialogMessage", "ATLWIN/ATL::CAxDialogImpl::m_bModal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAxDialogImpl class", "ATL, dialog boxes"]
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAxDialogImpl Class
 
@@ -165,7 +158,7 @@ INT_PTR DoModal(
 ### Parameters
 
 *hWndParent*<br/>
-[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.
+[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 function.
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -243,7 +236,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Pointer to a [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) structure that contains the message to be checked.
+Pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-msg) structure that contains the message to be checked.
 
 ### Return Value
 
@@ -261,7 +254,7 @@ A variable that exists only in debug builds and is set to true if the dialog box
 bool m_bModal;
 ```
 
-## See Also
+## See also
 
 [CDialogImpl Class](../../atl/reference/cdialogimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

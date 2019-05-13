@@ -1,15 +1,8 @@
 ---
-title: "How to: Write a parallel_for_each Loop | Microsoft Docs"
-ms.custom: ""
+title: "How to: Write a parallel_for_each Loop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["writing a parallel_for_each loop [Concurrency Runtime]", "parallel_for_each function, example"]
 ms.assetid: fa9c0ba6-ace0-4f88-8681-c7c1f52aff20
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Write a parallel_for_each Loop
 
@@ -43,8 +36,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 The lambda expression that the example passes to the `parallel_for_each` algorithm uses the `InterlockedIncrement` function to enable parallel iterations of the loop to increment the counter simultaneously. If you use functions such as `InterlockedIncrement` to synchronize access to shared resources, you can present performance bottlenecks in your code. You can use a lock-free synchronization mechanism, for example, the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class, to eliminate simultaneous access to shared resources. For an example that uses the `combinable` class in this manner, see [How to: Use combinable to Improve Performance](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md).
 
-## See Also
+## See also
 
 [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_for_each Function](reference/concurrency-namespace-functions.md#parallel_for_each)
-

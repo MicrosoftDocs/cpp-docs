@@ -1,16 +1,9 @@
 ---
-title: "CComAggObject Class | Microsoft Docs"
-ms.custom: ""
+title: "CComAggObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComAggObject", "ATLCOM/ATL::CComAggObject", "ATLCOM/ATL::CComAggObject::CComAggObject", "ATLCOM/ATL::CComAggObject::AddRef", "ATLCOM/ATL::CComAggObject::CreateInstance", "ATLCOM/ATL::CComAggObject::FinalConstruct", "ATLCOM/ATL::CComAggObject::FinalRelease", "ATLCOM/ATL::CComAggObject::QueryInterface", "ATLCOM/ATL::CComAggObject::Release", "ATLCOM/ATL::CComAggObject::m_contained"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregate objects [C++], in ATL", "aggregation [C++], ATL objects", "CComAggObject class"]
 ms.assetid: 7aa90d69-d399-477b-880d-e2cdf0ef7881
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComAggObject Class
 
@@ -221,7 +214,7 @@ STDMETHOD_(ULONG, Release)();
 
 In debug builds, `Release` returns a value that may be useful for diagnostics or testing. In non-debug builds, `Release` always returns 0.
 
-## See Also
+## See also
 
 [CComObject Class](../../atl/reference/ccomobject-class.md)<br/>
 [CComPolyObject Class](../../atl/reference/ccompolyobject-class.md)<br/>

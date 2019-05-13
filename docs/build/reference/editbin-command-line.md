@@ -1,16 +1,9 @@
 ---
-title: "EDITBIN Command Line | Microsoft Docs"
-ms.custom: ""
+title: "EDITBIN Command Line"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["editbin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EDITBIN program, command line"]
 ms.assetid: 28ff7f92-6c4e-4e7f-86d8-80d5b2f91662
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EDITBIN Command Line
 
@@ -24,7 +17,7 @@ Specify one or more files for the objects or images to be changed, and one or mo
 
 When you type the command `editbin` without any other command-line input, EDITBIN displays a usage statement that summarizes its options.
 
-## See Also
+## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-[EDITBIN Reference](../../build/reference/editbin-reference.md)
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
+[EDITBIN Reference](editbin-reference.md)

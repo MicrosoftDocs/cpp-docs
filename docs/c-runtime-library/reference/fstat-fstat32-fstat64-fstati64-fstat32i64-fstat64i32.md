@@ -1,19 +1,12 @@
 ---
-title: "_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32 | Microsoft Docs"
-ms.custom: ""
+title: "_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_fstat32", "_fstat64", "_fstati64", "_fstat", "_fstat64i32", "_fstat32i64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_fstat32i64", "fstat", "fstat64i32", "_fstat64", "_fstati64", "fstat64", "_fstat32", "fstat32i64", "fstati64", "_fstat", "fstat32", "_fstat64i32"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_fstat64 function", "fstati64 function", "_fstat64i32 function", "_fstat32i64 function", "_fstat32 function", "file information", "fstat64i32 function", "fstat32 function", "fstat function", "fstat64 function", "_fstat function", "_fstati64 function", "fstat32i64 function"]
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 
@@ -66,14 +59,14 @@ The **_fstat** function obtains information about the open file associated with 
 
 |Field|Meaning|
 |-|-|
-**st_atime**|Time of the last file access.
-**st_ctime**|Time of the creation of the file.
-**st_dev**|If a device, *fd*; otherwise 0.
-**st_mode**|Bit mask for file-mode information. The **_S_IFCHR** bit is set if *fd* refers to a device. The **_S_IFREG** bit is set if *fd* refers to an ordinary file. The read/write bits are set according to the file's permission mode. **_S_IFCHR** and other constants are defined in SYS\Stat.h.
-**st_mtime**|Time of the last modification of the file.
-**st_nlink**|Always 1 on non-NTFS file systems.
-**st_rdev**|If a device, *fd*; otherwise 0.
-**st_size**|Size of the file in bytes.
+| **st_atime** | Time of the last file access. |
+| **st_ctime** | Time of the creation of the file. |
+| **st_dev** | If a device, *fd*; otherwise 0. |
+| **st_mode** | Bit mask for file-mode information. The **_S_IFCHR** bit is set if *fd* refers to a device. The **_S_IFREG** bit is set if *fd* refers to an ordinary file. The read/write bits are set according to the file's permission mode. **_S_IFCHR** and other constants are defined in SYS\Stat.h. |
+| **st_mtime** | Time of the last modification of the file. |
+| **st_nlink** | Always 1 on non-NTFS file systems. |
+| **st_rdev** | If a device, *fd*; otherwise 0. |
+| **st_size** | Size of the file in bytes. |
 
 If *fd* refers to a device, the **st_atime**, **st_ctime**, **st_mtime**, and **st_size** fields are not meaningful.
 

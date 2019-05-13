@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3138 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3138"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3138"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3138"]
 ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3138
 

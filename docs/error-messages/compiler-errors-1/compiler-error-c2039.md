@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2039 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2039"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2039"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2039"]
 ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2039
 

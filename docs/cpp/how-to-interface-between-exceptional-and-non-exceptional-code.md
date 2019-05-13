@@ -1,14 +1,9 @@
 ---
-title: "How to: Interface Between Exceptional and Non-Exceptional Code | Microsoft Docs"
+title: "How to: Interface Between Exceptional and Non-Exceptional Code"
 ms.custom: "how-to"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Interface Between Exceptional and Non-Exceptional Code
 
@@ -235,5 +230,5 @@ For more information about lambda expressions, see [Lambda Expressions](../cpp/l
 
 ## See also
 
-[Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Errors and Exception Handling (Modern C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md)<br/>

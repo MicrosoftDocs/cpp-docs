@@ -1,16 +1,9 @@
 ---
-title: "&lt;cmath&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cmath&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cmath>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cmath header"]
 ms.assetid: 80df1dba-60ca-4918-9c2e-fbf446eaa7d6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cmath&gt;
 

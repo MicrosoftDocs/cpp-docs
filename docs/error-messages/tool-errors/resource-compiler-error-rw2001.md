@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RW2001 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RW2001"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RW2001"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RW2001"]
 ms.assetid: 963bdc7d-6ebe-4378-8bbc-47dfcf5d330c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RW2001
 

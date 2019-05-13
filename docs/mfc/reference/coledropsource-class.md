@@ -1,16 +1,9 @@
 ---
-title: "COleDropSource Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDropSource Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDropSource", "AFXOLE/COleDropSource", "AFXOLE/COleDropSource::COleDropSource", "AFXOLE/COleDropSource::GiveFeedback", "AFXOLE/COleDropSource::OnBeginDrag", "AFXOLE/COleDropSource::QueryContinueDrag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDropSource [MFC], COleDropSource", "COleDropSource [MFC], GiveFeedback", "COleDropSource [MFC], OnBeginDrag", "COleDropSource [MFC], QueryContinueDrag"]
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDropSource Class
 
@@ -152,10 +145,9 @@ The default implementation initiates the drop or cancels the drag as follows. It
 
 Because this function is called frequently, it should be optimized as much as possible.
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

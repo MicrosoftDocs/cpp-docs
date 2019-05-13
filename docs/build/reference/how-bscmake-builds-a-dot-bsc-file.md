@@ -1,15 +1,8 @@
 ---
-title: "How BSCMAKE Builds a .Bsc File | Microsoft Docs"
-ms.custom: ""
+title: "How BSCMAKE Builds a .Bsc File"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["browse information files (.bsc), building"]
 ms.assetid: 8512b33e-c856-44a2-87bd-01ab10b52a95
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How BSCMAKE Builds a .Bsc File
 
@@ -23,6 +16,6 @@ BSCMAKE looks for a .bsc file that has the name specified with the /o option. If
 
 - For an incremental build to succeed, the .bsc file must exist. All contributing .sbr files, even empty files, must exist and must be specified on the BSCMAKE command line. If you omit an .sbr file from the command line, BSCMAKE removes its contribution from the file.
 
-## See Also
+## See also
 
-[Building a .Bsc File](../../build/reference/building-a-dot-bsc-file.md)
+[Building a .Bsc File](building-a-dot-bsc-file.md)

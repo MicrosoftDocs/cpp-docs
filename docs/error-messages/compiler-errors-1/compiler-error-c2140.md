@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2140 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2140"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2140"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2140"]
 ms.assetid: d44a0500-002c-4632-9e5e-c71c3a473ec4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2140
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 An invalid type specifier was passed to a type trait.
 
-For more information, see [Compiler Support for Type Traits](../../windows/compiler-support-for-type-traits-cpp-component-extensions.md).
+For more information, see [Compiler Support for Type Traits](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
 
 ## Example
 

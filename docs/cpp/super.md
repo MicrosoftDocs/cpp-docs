@@ -1,16 +1,9 @@
 ---
-title: "__super | Microsoft Docs"
-ms.custom: ""
+title: "__super"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__super_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__super keyword [C++]"]
 ms.assetid: f0957c31-9256-405b-b402-cad182404b5f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __super
 
@@ -32,7 +25,7 @@ All accessible base-class methods are considered during the overload resolution 
 
 **__super** cannot be used with a using declaration. See [using Declaration](../cpp/using-declaration.md) for more information.
 
-With the introduction of [attributes](../windows/cpp-attributes-reference.md) that inject code, your code might contain one or more base classes whose names you may not know but that contain methods that you wish to call.
+With the introduction of [attributes](../windows/attributes/attributes-alphabetical-reference.md) that inject code, your code might contain one or more base classes whose names you may not know but that contain methods that you wish to call.
 
 ## Example
 

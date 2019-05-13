@@ -1,15 +1,8 @@
 ---
-title: "ATL Macros | Microsoft Docs"
-ms.custom: ""
+title: "ATL Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, macros", "macros, ATL"]
 ms.assetid: 788bd803-e7dc-4dc5-9e8d-31649471415b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Macros
 
@@ -72,11 +65,10 @@ Define window class utilities.
 [Windows Messages Macros](../../atl/reference/windows-messages-macros.md)<br/>
 Forward window messages.
 
-## See Also
+## See also
 
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Global Variables](../../atl/reference/atl-global-variables.md)<br/>
 [Classes and structs](../../atl/reference/atl-classes.md)<br/>
 [Typedefs](../../atl/reference/atl-typedefs.md)
-

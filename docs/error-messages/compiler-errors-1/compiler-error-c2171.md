@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2171 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2171"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2171"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2171"]
 ms.assetid: a80343b5-ab3f-4413-b6f1-3ce9d7e519e5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2171
 
@@ -47,8 +40,8 @@ public:
 
    void D() {}
    void DTF() {
-      (*TF)();   // C2171
-      (this->*TF)();   // OK
+      (*TF)();   // C2171
+      (this->*TF)();   // OK
    }
 
    void STF(void (A::*fnc)()) {

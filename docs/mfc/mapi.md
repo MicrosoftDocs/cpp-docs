@@ -1,15 +1,8 @@
 ---
-title: "MAPI | Microsoft Docs"
-ms.custom: ""
+title: "MAPI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["messaging [MFC], client applications", "enabling applications for MAPI [MFC]", "MAPI support in MFC", "e-mail [MFC], enabling", "mail [MFC], enabling your application", "MAPI, MFC", "enabling applications for mail [MFC]"]
 ms.assetid: 193449f7-b131-4ab0-9301-8d4f6cd1e7c4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MAPI
 
@@ -25,9 +18,8 @@ For more information about MAPI, see the articles under Guide in Win32 Messaging
 
 [MAPI Support in MFC](../mfc/mapi-support-in-mfc.md)
 
-## See Also
+## See also
 
 [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)<br/>
 [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)<br/>
 [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
-

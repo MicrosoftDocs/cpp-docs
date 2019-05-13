@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Examining Exception Contents | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Examining Exception Contents"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling [MFC], MFC", "try-catch exception handling [MFC], MFC function exceptions", "catch blocks, MFC function exceptions", "CException class [MFC], class exceptions", "try-catch exception handling [MFC], exception contents", "throwing exceptions [MFC], exception contents"]
 ms.assetid: dfda4782-b969-4f60-b867-cc204ea7f33a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Examining Exception Contents
 
@@ -23,7 +16,6 @@ The following example shows how to examine the contents of a `CFileException`. O
 
 For more information, see [Exceptions: Freeing Objects in Exceptions](../mfc/exceptions-freeing-objects-in-exceptions.md) and [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

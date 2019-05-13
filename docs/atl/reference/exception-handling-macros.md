@@ -1,16 +1,9 @@
 ---
-title: "Exception Handling Macros | Microsoft Docs"
-ms.custom: ""
+title: "Exception Handling Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atldef/ATL::_ATLCATCH", "atldef/ATL::_ATLCATCHALL", "atldef/ATL::_ATLTRY"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling, macros", "C++ exception handling, macros"]
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exception Handling Macros
 
@@ -67,6 +60,6 @@ _ATLTRY
 
 Used in conjunction with [_ATLCATCH](#_atlcatch) or [_ATLCATCHALL](#_atlcatchall). Resolves to the C++ symbol [try](../../cpp/try-throw-and-catch-statements-cpp.md).
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

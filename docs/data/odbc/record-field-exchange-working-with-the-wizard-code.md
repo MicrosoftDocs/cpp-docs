@@ -1,15 +1,8 @@
 ---
-title: "Record Field Exchange: Working with the Wizard Code | Microsoft Docs"
-ms.custom: ""
+title: "Record Field Exchange: Working with the Wizard Code"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DoFieldExchange method, overriding", "Unicode, with database classes", "field data members, declaring", "RFX (ODBC), wizard code", "RFX (ODBC), implementing", "field data members", "ODBC, RFX", "m_nParams data member, initializing", "m_nFields data member", "m_nParams data member", "overriding, DoFieldExchange", "m_nFields data member, initializing"]
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Working with the Wizard Code
 
@@ -127,6 +120,6 @@ m_nFields += 3;
 
 This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.
 
-## See Also
+## See also
 
 [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)

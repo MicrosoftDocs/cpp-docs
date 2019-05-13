@@ -1,15 +1,8 @@
 ---
-title: "unique_lock Class | Microsoft Docs"
-ms.custom: ""
+title: "unique_lock Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["mutex/std::unique_lock"]
-dev_langs: ["C++"]
 ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # unique_lock Class
 

@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1104 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1104"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1104"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1104"]
 ms.assetid: 45bd85c4-77d3-4d3c-b167-49c563aefb4d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1104
 

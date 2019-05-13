@@ -1,20 +1,13 @@
 ---
-title: "IDBCreateSessionImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDBCreateSessionImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IDBCreateSessionImpl", "ATL.IDBCreateSessionImpl", "ATL::IDBCreateSessionImpl", "IDBCreateSessionImpl::CreateSession", "IDBCreateSessionImpl.CreateSession", "CreateSession"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDBCreateSessionImpl class", "CreateSession method"]
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateSessionImpl Class
 
-Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076) interface.
+Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076(v=vs.85)) interface.
 
 ## Syntax
 
@@ -55,16 +48,16 @@ Creates a new session from the data source object and returns the requested inte
 ### Syntax
 
 ```cpp
-STDMETHOD(CreateSession)(IUnknown * pUnkOuter, 
-   REFIID riid, 
+STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
+   REFIID riid,
    IUnknown ** ppDBSession);
 ```
 
 #### Parameters
 
-See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942) in the *OLE DB Programmer's Reference*.
+See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -1,16 +1,9 @@
 ---
-title: "CATSTR | Microsoft Docs"
-ms.custom: ""
+title: "CATSTR"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["CATSTR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CATSTR directive"]
 ms.assetid: ae893190-8247-4435-a74e-de2f00db052f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # CATSTR
 

@@ -1,16 +1,9 @@
 ---
-title: "TN024: MFC-Defined Messages and Resources | Microsoft Docs"
-ms.custom: ""
+title: "TN024: MFC-Defined Messages and Resources"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.messages"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resources [MFC]", "Windows messages [MFC], MFC-defined", "messages [MFC], MFC", "TN024"]
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN024: MFC-Defined Messages and Resources
 
@@ -195,8 +188,7 @@ SendDlgItemMessage(<Control ID>, <Message #>, 0, &<Data>);
 
 This is a very general format, allowing any Windows messages and data content. The Visual C++ resource editor and MFC only support a limited subset of Windows messages: CB_ADDSTRING for the initial list-choices for combo boxes (the data is a text string).
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

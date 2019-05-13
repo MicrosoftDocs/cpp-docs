@@ -1,16 +1,9 @@
 ---
-title: "Template Classes for Arrays, Lists, and Maps | Microsoft Docs"
-ms.custom: ""
+title: "Template Classes for Arrays, Lists, and Maps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.template"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [MFC], classes", "template classes [MFC], for arrays/lists and maps", "list classes [MFC]", "map classes [MFC]", "template classes [MFC]"]
 ms.assetid: a8331c4b-068a-48f8-a629-b8449601e121
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Template Classes for Arrays, Lists, and Maps
 
@@ -36,7 +29,6 @@ Template class for type-safe lists of pointers.
 [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md)<br/>
 Template class for type-safe maps with pointers.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

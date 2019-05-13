@@ -1,16 +1,9 @@
 ---
-title: "Deriving a Class from CObject | Microsoft Docs"
-ms.custom: ""
+title: "Deriving a Class from CObject"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DECLARE_DYNCREATE macro [MFC]", "DECLARE_SERIAL macro [MFC]", "macros [MFC], serialization", "serialization [MFC], macros", "DECLARE_DYNAMIC macro [MFC]", "derived classes [MFC], from CObject", "CObject class [MFC], deriving serializable classes", "CObject class [MFC], deriving from"]
 ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Deriving a Class from CObject
 
@@ -51,11 +44,10 @@ The following table shows the relationship among the macros used to support seri
 
    [!code-cpp[NVC_MFCCObjectSample#1](../mfc/codesnippet/cpp/deriving-a-class-from-cobject_1.h)]
 
-Normally, however, you may want to override some of `CObject`'s member functions to handle the specifics of your new class. For example, you may usually want to override the `Dump` function of `CObject` to provide debugging output for the contents of your class. For details on how to override `Dump`, see the article [Diagnostics: Dumping Object Contents](/previous-versions/visualstudio/visual-studio-2010/sc15kz85). You may also want to override the `AssertValid` function of `CObject` to provide customized testing to validate the consistency of the data members of class objects. For a description of how to override `AssertValid`, see [MFC ASSERT_VALID and CObject::AssertValid](/previous-versions/visualstudio/visual-studio-2010/38z04tfa).
+Normally, however, you may want to override some of `CObject`'s member functions to handle the specifics of your new class. For example, you may usually want to override the `Dump` function of `CObject` to provide debugging output for the contents of your class. For details on how to override `Dump`, see the article [Object Dump Customization](/previous-versions/visualstudio/visual-studio-2010/sc15kz85(v=vs.100)). You may also want to override the `AssertValid` function of `CObject` to provide customized testing to validate the consistency of the data members of class objects. For a description of how to override `AssertValid`, see [MFC ASSERT_VALID and CObject::AssertValid](reference/diagnostic-services.md#assert_valid).
 
 The article [Specifying Levels of Functionality](../mfc/specifying-levels-of-functionality.md) describes how to specify other levels of functionality, including run-time class information, dynamic object creation, and serialization.
 
-## See Also
+## See also
 
 [Using CObject](../mfc/using-cobject.md)
-

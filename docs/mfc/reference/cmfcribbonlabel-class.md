@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonLabel Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonLabel Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::SetACCData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonLabel [MFC], CMFCRibbonLabel", "CMFCRibbonLabel [MFC], SetACCData"]
 ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonLabel Class
 
@@ -99,7 +92,7 @@ virtual BOOL SetACCData(
 
 TRUE if the *data* parameter was successfully populated with the accessibility data of the current ribbon label; otherwise, FALSE.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

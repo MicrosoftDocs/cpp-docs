@@ -1,16 +1,9 @@
 ---
-title: "-STUB (MS-DOS Stub File Name) | Microsoft Docs"
-ms.custom: ""
+title: "/STUB (MS-DOS Stub File Name)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/stub", "VC.Project.VCLinkerTool.DosStub"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Win32 [C++], attaching MS-DOS stub program", "STUB linker option", "MS-DOS stub file name linker option", "/STUB linker option", "Windows API [C++], attaching MS-DOS stub program", "-STUB linker option"]
 ms.assetid: 65221ffe-4f9a-4a14-ac69-3cfb79b40b5f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /STUB (MS-DOS Stub File Name)
 
@@ -41,7 +34,7 @@ When building a virtual device driver, *filename* allows the user to specify a f
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -53,7 +46,7 @@ When building a virtual device driver, *filename* allows the user to specify a f
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

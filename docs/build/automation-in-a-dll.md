@@ -1,15 +1,8 @@
 ---
-title: "Automation in a DLL | Microsoft Docs"
-ms.custom: ""
+title: "Automation in a DLL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DLLs [C++], Automation", "Automation [C++], DLLs"]
 ms.assetid: 2728ecd1-14e2-4ae0-a946-e749e11dbb74
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Automation in a DLL
 
@@ -29,6 +22,6 @@ When you choose the Automation option in the MFC DLL Wizard, the wizard provides
 
 - [Automation Servers](../mfc/automation-servers.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

@@ -1,8 +1,6 @@
 ---
-title: "&lt;utility&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;utility&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["utility/std::exchange", "utility/std::forward", "utility/std::make_pair", "utility/std::move", "utility/std::swap"]
 ms.assetid: b1df38cd-3a59-4098-9c81-83342eb719a4
 helpviewer_keywords: ["std::exchange [C++]", "std::forward [C++]", "std::make_pair [C++]", "std::move [C++]", "std::swap [C++]"]

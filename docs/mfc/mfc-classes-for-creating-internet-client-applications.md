@@ -1,15 +1,8 @@
 ---
-title: "MFC Classes for Creating Internet Client Applications | Microsoft Docs"
-ms.custom: ""
+title: "MFC Classes for Creating Internet Client Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, WinInet classes", "WinInet classes [MFC], classes", "classes [MFC], MFC", "Internet client applications [MFC], MFC", "Internet applications [MFC], MFC"]
 ms.assetid: 67d34117-9839-4f4b-8bb8-0e4a9471c606
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Classes for Creating Internet Client Applications
 
@@ -51,7 +44,7 @@ MFC provides the following classes and global functions for writing Internet cli
 
 - [AfxThrowInternetException](reference/internet-url-parsing-globals.md#afxthrowinternetexception)
 
-## See Also
+## See also
 
 [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)<br/>

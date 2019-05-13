@@ -1,15 +1,8 @@
 ---
-title: "Using an Animation Control | Microsoft Docs"
-ms.custom: ""
+title: "Using an Animation Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [MFC], animation", "CAnimateCtrl class [MFC], animation controls", "animation controls [MFC]"]
 ms.assetid: a009a464-e12d-4112-bf52-04a09b28dd88
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using an Animation Control
 
@@ -27,8 +20,7 @@ Typical usage of an animation control follows the pattern below:
 
 - If the animation control is in a dialog box, it and the `CAnimateCtrl` object will be destroyed automatically. If not, you need to ensure that both the control and the `CAnimateCtrl` object are properly destroyed. Destroying the control automatically closes the AVI clip.
 
-## See Also
+## See also
 
 [Using CAnimateCtrl](../mfc/using-canimatectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

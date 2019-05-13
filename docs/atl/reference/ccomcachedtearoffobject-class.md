@@ -1,16 +1,9 @@
 ---
-title: "CComCachedTearOffObject Class | Microsoft Docs"
-ms.custom: ""
+title: "CComCachedTearOffObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject::CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject::AddRef", "ATLCOM/ATL::CComCachedTearOffObject::FinalConstruct", "ATLCOM/ATL::CComCachedTearOffObject::FinalRelease", "ATLCOM/ATL::CComCachedTearOffObject::QueryInterface", "ATLCOM/ATL::CComCachedTearOffObject::Release", "ATLCOM/ATL::CComCachedTearOffObject::m_contained"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cache, ATL cached tear-off objects", "CComCachedTearOffObject class"]
 ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComCachedTearOffObject Class
 
@@ -193,7 +186,7 @@ STDMETHOD_(ULONG, Release)();
 
 In non-debug builds, always returns 0. In debug builds, returns a value that may be useful for diagnostics or testing.
 
-## See Also
+## See also
 
 [CComTearOffObject Class](../../atl/reference/ccomtearoffobject-class.md)<br/>
 [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>

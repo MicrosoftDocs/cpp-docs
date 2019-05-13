@@ -1,20 +1,13 @@
 ---
-title: "IGetDataSourceImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IGetDataSourceImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IGetDataSourceImpl", "ATL.IGetDataSourceImpl<T>", "ATL.IGetDataSourceImpl", "ATL::IGetDataSourceImpl", "ATL::IGetDataSourceImpl<T>", "GetDataSource", "IGetDataSourceImpl.GetDataSource", "IGetDataSourceImpl::GetDataSource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IGetDataSourceImpl class", "GetDataSource method"]
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IGetDataSourceImpl Class
 
-Provides an implementation of the [IGetDataSource](/previous-versions/windows/desktop/ms709721) object.
+Provides an implementation of the [IGetDataSource](/previous-versions/windows/desktop/ms709721(v=vs.85)) object.
 
 ## Syntax
 
@@ -51,19 +44,19 @@ Returns an interface pointer on the data source object that created the session.
 ### Syntax
 
 ```cpp
-STDMETHOD(GetDataSource)(REFIID riid, 
+STDMETHOD(GetDataSource)(REFIID riid,
    IUnknown ** ppDataSource);
 ```
 
 #### Parameters
 
-See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443) in the *OLE DB Programmer's Reference*.
+See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
 Useful if you need to access properties in the data source object.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

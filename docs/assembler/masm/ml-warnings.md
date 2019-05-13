@@ -1,14 +1,8 @@
 ---
-title: "ML Warnings | Microsoft Docs"
-ms.custom: ""
+title: "ML Warnings"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: 49001bce-3c59-400d-bcfa-7a3989fa3c32
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Warnings
 

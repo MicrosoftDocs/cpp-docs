@@ -1,15 +1,8 @@
 ---
-title: "Structure and Union Members | Microsoft Docs"
-ms.custom: ""
+title: "Structure and Union Members"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["member-selection operators", "structure members, referencing", "-> operator, structure and union members", "dot operator (.)", "referencing structure members", ". operator", "operators [C], member selection", "structure member selection"]
 ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Structure and Union Members
 
@@ -73,6 +66,6 @@ list[8].b = 12;
 
 This statement shows how to select an individual structure member from an array of structures.
 
-## See Also
+## See also
 
 [Member Access Operators: . and ->](../cpp/member-access-operators-dot-and.md)

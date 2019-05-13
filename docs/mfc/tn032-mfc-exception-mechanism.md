@@ -1,16 +1,9 @@
 ---
-title: "TN032: MFC Exception Mechanism | Microsoft Docs"
-ms.custom: ""
+title: "TN032: MFC Exception Mechanism"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.exceptions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN032", "MFC, exceptions", "CException class [MFC], using"]
 ms.assetid: 0271f0aa-82cb-47a2-b7ea-e88126fc7e43
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN032: MFC Exception Mechanism
 
@@ -18,8 +11,7 @@ Previous versions of Visual C++ did not support the standard C++ exception mecha
 
 Refer to [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md) for more information on the differences between the MFC macros and the new C++ keywords.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

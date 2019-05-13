@@ -1,16 +1,9 @@
 ---
-title: "CAccessorRowset Class | Microsoft Docs"
-ms.custom: ""
+title: "CAccessorRowset Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CAccessorRowset", "ATL.CAccessorRowset", "ATL::CAccessorRowset", "CAccessorRowset.Bind", "CAccessorRowset::Bind", "CAccessorRowset::CAccessorRowset", "CAccessorRowset.CAccessorRowset", "CAccessorRowset", "ATL.CAccessorRowset.CAccessorRowset", "ATL::CAccessorRowset::CAccessorRowset", "CAccessorRowset.Close", "CAccessorRowset::Close", "CAccessorRowset::FreeRecordMemory", "CAccessorRowset.FreeRecordMemory", "FreeRecordMemory", "GetColumnInfo", "CAccessorRowset.GetColumnInfo", "CAccessorRowset::GetColumnInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAccessorRowset class", "CAccessorRowset class, methods", "CAccessorRowset class, members", "Bind method", "CAccessorRowset class, constructor", "Close method", "FreeRecordMemory method", "GetColumnInfo method"]
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorRowset Class
 
@@ -46,7 +39,7 @@ A rowset class.
 |[CAccessorRowset](#caccessorrowset)|Constructor.|
 |[Close](#close)|Closes the rowset and any accessors.|
 |[FreeRecordMemory](#freerecordmemory)|Frees any columns in the current record that need to be freed.|
-|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704).|
+|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)).|
 
 ## Remarks
 
@@ -117,7 +110,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 #### Parameters
 
-See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) in the *OLE DB Programmer's Reference*.
+See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -127,9 +120,9 @@ A standard HRESULT.
 
 The user must free the returned column information and string buffer. Use the second version of this method when you use [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) and need to override the bindings.
 
-For more information, see [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704) in the *OLE DB Programmer's Reference*.
+For more information, see [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

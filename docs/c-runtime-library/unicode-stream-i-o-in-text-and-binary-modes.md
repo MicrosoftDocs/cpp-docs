@@ -1,16 +1,9 @@
 ---
-title: "Unicode Stream I/O in Text and Binary Modes | Microsoft Docs"
-ms.custom: ""
+title: "Unicode Stream I/O in Text and Binary Modes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.io"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stream I/O routines", "I/O [CRT], unicode stream", "Unicode, stream I/O routines", "Unicode stream I/O"]
 ms.assetid: 68be0c3e-a9e6-4fd5-b34a-1b5207f0e7d6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unicode Stream I/O in Text and Binary Modes
 
@@ -22,7 +15,7 @@ When a Unicode stream I/O routine (such as **fwprintf**, **fwscanf**, **fgetwc**
 
 However, when a Unicode stream-I/O function operates in binary mode, the file is assumed to be Unicode, and no CR-LF translation or character conversion occurs during input or output. Use the _setmode( _fileno( stdin ), _O_BINARY ); instruction in order to correctly use wcin on a UNICODE text file.
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "&lt;iterator&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;iterator&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<iterator>", "iterator/std::<iterator>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["iterator header"]
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;iterator&gt;
 
@@ -20,7 +13,6 @@ Defines the iterator primitives, predefined iterators and stream iterators, as w
 
 ```cpp
 #include <iterator>
-
 ```
 
 ## Remarks

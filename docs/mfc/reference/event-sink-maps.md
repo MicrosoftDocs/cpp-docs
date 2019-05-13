@@ -1,16 +1,9 @@
 ---
-title: "Event Sink Maps | Microsoft Docs"
-ms.custom: ""
+title: "Event Sink Maps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.maps"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event sink maps [MFC]"]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Event Sink Maps
 
@@ -221,7 +214,6 @@ Use the ON_PROPNOTIFY macro to define an event sink map entry for handling prope
 
 ```
 ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
-
 ```
 
 ### Parameters
@@ -258,7 +250,6 @@ Use the ON_PROPNOTIFY_RANGE macro to define an event sink map entry for handling
 ```
 
 ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
-
 ```
 
 ### Parameters
@@ -292,7 +283,6 @@ The ON_PROPNOTIFY_REFLECT macro, when used in the event sink map of an OLE contr
 ```
 
 ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
-
 ```
 
 ### Parameters
@@ -313,6 +303,6 @@ Pointer to a member function that handles the `OnChanged` notification for this 
 
   **Header** afxdisp.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

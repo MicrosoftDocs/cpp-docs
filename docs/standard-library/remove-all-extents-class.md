@@ -1,16 +1,9 @@
 ---
-title: "remove_all_extents Class | Microsoft Docs"
-ms.custom: ""
+title: "remove_all_extents Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::remove_all_extents"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["remove_all_extents class", "remove_all_extents"]
 ms.assetid: 548dc536-82e7-423a-b8c1-443d66d9632e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # remove_all_extents Class
 

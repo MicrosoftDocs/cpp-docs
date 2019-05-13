@@ -1,16 +1,9 @@
 ---
-title: "_com_error::Source | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::Source"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::Source"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Source method [C++]"]
 ms.assetid: 55353741-fabc-4b0c-9787-b5a69bb189f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::Source
 

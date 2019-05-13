@@ -1,21 +1,17 @@
 ---
-title: "Decorated Names | Microsoft Docs"
-ms.custom: ""
+title: "Decorated Names"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["decorated names, definition", "name decoration [C++]", "names [C++], decorated"]
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Decorated Names
 
 Functions, data, and objects in C and C++ programs are represented internally by their decorated names. A *decorated name* is an encoded string created by the compiler during compilation of an object, data, or function definition. It records calling conventions, types, function parameters and other information together with the name. This name decoration, also known as *name mangling*, helps the linker find the correct functions and objects when linking an executable.
 
-The decorated naming conventions have changed in various versions of Visual C++, and can also be different on different target architectures. To link correctly with source files created by using Visual C++, C and C++ DLLs and libraries should be compiled by using the same compiler toolset, flags, and target architecture.
+The decorated naming conventions have changed in various versions of Visual Studio, and can also be different on different target architectures. To link correctly with source files created by using Visual Studio, C and C++ DLLs and libraries should be compiled by using the same compiler toolset, flags, and target architecture. 
+
+> [!NOTE]
+> Libraries built with Visual Studio 2015 can be consumed by applications built with Visual Studio 2017 or Visual Studio 2019.
 
 ##  <a name="Using"></a> Using decorated names
 
@@ -23,7 +19,7 @@ Normally, you don't have to know the decorated name to write code that compiles 
 
 If you change the function name, class, calling convention, return type, or any parameter, the decorated name also changes. In this case, you must get the new decorated name and use it everywhere the decorated name is specified.
 
-Name decoration is also important when linking to code written in other programming languages or using other compilers. Different compilers use different name decoration conventions. When your executable links to code written in another language, special care must be taken to match the exported and imported names and calling conventions. Assembly language code must use the Visual C++ decorated names and calling conventions to link to source code written using Visual C++.
+Name decoration is also important when linking to code written in other programming languages or using other compilers. Different compilers use different name decoration conventions. When your executable links to code written in another language, special care must be taken to match the exported and imported names and calling conventions. Assembly language code must use the MSVC decorated names and calling conventions to link to source code written using MSVC.
 
 ##  <a name="Format"></a> Format of a C++ decorated name
 
@@ -65,7 +61,7 @@ You can get the decorated form of a symbol name after you compile the source fil
 
 #### To use a listing to view decorated names
 
-1. Generate a listing by compiling the source file that contains the data, object, or function definition or prototype with the [Listing File Type](../../build/reference/fa-fa-listing-file.md) compiler option set to Assembly with Source Code (**/FAs**).
+1. Generate a listing by compiling the source file that contains the data, object, or function definition or prototype with the [Listing File Type](fa-fa-listing-file.md) compiler option set to Assembly with Source Code (**/FAs**).
 
    For example, enter `cl /c /FAs example.cpp` at a developer command prompt to generate a listing file, example.asm.
 
@@ -90,7 +86,7 @@ Undecoration of :- "?func1@a@@AAEXH@Z"
 is :- "private: void __thiscall a::func1(int)"
 ```
 
-## See Also
+## See also
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 [Using extern to Specify Linkage](../../cpp/using-extern-to-specify-linkage.md)

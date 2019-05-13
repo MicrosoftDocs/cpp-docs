@@ -1,19 +1,12 @@
 ---
-title: "kbhit | Microsoft Docs"
-ms.custom: ""
+title: "kbhit"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["kbhit"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["kbhit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["kbhit function"]
 ms.assetid: 73f1eed7-b3ef-4887-8ec6-755367de1d7d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # kbhit
 

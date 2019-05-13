@@ -1,16 +1,9 @@
 ---
-title: "__outbytestring | Microsoft Docs"
-ms.custom: ""
+title: "__outbytestring"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__outbytestring"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rep outsb instruction", "__outbytestring intrinsic", "outsb instruction"]
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __outbytestring
 
@@ -21,10 +14,10 @@ Generates the `rep outsb` instruction,which sends the first `Count` bytes of dat
 ## Syntax
 
 ```
-void __outbytestring( 
-   unsigned short Port, 
-   unsigned char* Buffer, 
-   unsigned long Count 
+void __outbytestring(
+   unsigned short Port,
+   unsigned char* Buffer,
+   unsigned long Count
 );
 ```
 
@@ -53,6 +46,6 @@ This routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

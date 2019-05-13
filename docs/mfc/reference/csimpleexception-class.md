@@ -1,16 +1,9 @@
 ---
-title: "CSimpleException Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleException", "AFX/CSimpleException", "AFX/CSimpleException::CSimpleException", "AFX/CSimpleException::GetErrorMessage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleException [MFC], CSimpleException", "CSimpleException [MFC], GetErrorMessage"]
 ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleException Class
 
@@ -112,9 +105,8 @@ Nonzero if the function is successful; otherwise 0 if no error message text is a
 
 For more information, see [CException::GetErrorMessage](../../mfc/reference/cfileexception-class.md#geterrormessage).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Exception Handling](../../mfc/exception-handling-in-mfc.md)
-

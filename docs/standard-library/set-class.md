@@ -1,16 +1,9 @@
 ---
-title: "set Class | Microsoft Docs"
-ms.custom: ""
+title: "set Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["set/std::set", "set/std::set::allocator_type", "set/std::set::const_iterator", "set/std::set::const_pointer", "set/std::set::const_reference", "set/std::set::const_reverse_iterator", "set/std::set::difference_type", "set/std::set::iterator", "set/std::set::key_compare", "set/std::set::key_type", "set/std::set::pointer", "set/std::set::reference", "set/std::set::reverse_iterator", "set/std::set::size_type", "set/std::set::value_compare", "set/std::set::value_type", "set/std::set::begin", "set/std::set::cbegin", "set/std::set::cend", "set/std::set::clear", "set/std::set::count", "set/std::set::crbegin", "set/std::set::crend", "set/std::set::emplace", "set/std::set::emplace_hint", "set/std::set::empty", "set/std::set::end", "set/std::set::equal_range", "set/std::set::erase", "set/std::set::find", "set/std::set::get_allocator", "set/std::set::insert", "set/std::set::key_comp", "set/std::set::lower_bound", "set/std::set::max_size", "set/std::set::rbegin", "set/std::set::rend", "set/std::set::size", "set/std::set::swap", "set/std::set::upper_bound", "set/std::set::value_comp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::set [C++]", "std::set [C++], allocator_type", "std::set [C++], const_iterator", "std::set [C++], const_pointer", "std::set [C++], const_reference", "std::set [C++], const_reverse_iterator", "std::set [C++], difference_type", "std::set [C++], iterator", "std::set [C++], key_compare", "std::set [C++], key_type", "std::set [C++], pointer", "std::set [C++], reference", "std::set [C++], reverse_iterator", "std::set [C++], size_type", "std::set [C++], value_compare", "std::set [C++], value_type", "std::set [C++], begin", "std::set [C++], cbegin", "std::set [C++], cend", "std::set [C++], clear", "std::set [C++], count", "std::set [C++], crbegin", "std::set [C++], crend", "std::set [C++], emplace", "std::set [C++], emplace_hint", "std::set [C++], empty", "std::set [C++], end", "std::set [C++], equal_range", "std::set [C++], erase", "std::set [C++], find", "std::set [C++], get_allocator", "std::set [C++], insert", "std::set [C++], key_comp", "std::set [C++], lower_bound", "std::set [C++], max_size", "std::set [C++], rbegin", "std::set [C++], rend", "std::set [C++], size", "std::set [C++], swap", "std::set [C++], upper_bound", "std::set [C++], value_comp"]
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # set Class
 
@@ -407,7 +400,7 @@ The key of the elements to be matched from the set.
 
 The member function returns the number of elements in the following range:
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) ).
+\[ lower_bound(*key*), upper_bound(*key*) ).
 
 ### Example
 
@@ -686,7 +679,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  set::emplace_hint
@@ -761,7 +753,6 @@ int main()
     print(s1);
     cout << endl;
 }
-
 ```
 
 ## <a name="empty"></a>  set::empty
@@ -985,7 +976,7 @@ int main()
     cout << "After the 2nd element is deleted, the set s1 is:" << endl;
     printset(s1);
 
-    // Fill in some data to test with, one at a time, using an intializer list
+    // Fill in some data to test with, one at a time, using an initializer list
     myset s2{ "meow", "hiss", "purr", "growl", "yowl" };
 
     cout << "Starting data of set s2 is:" << endl;
@@ -1022,7 +1013,6 @@ int main()
     cout << "After the element with a key of \"E#\" is deleted, the set s3 is:" << endl;
     printset(s3);
 }
-
 ```
 
 ## <a name="find"></a>  set::find
@@ -1109,7 +1099,6 @@ int main()
     findit(s1, 45);
     findit(s1, 6);
 }
-
 ```
 
 ## <a name="get_allocator"></a>  set::get_allocator
@@ -1354,7 +1343,6 @@ int main()
     print(s4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  set::iterator
@@ -1705,14 +1693,14 @@ int main( )
         << *s1_rIter << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a set in a forward order
+   // through a set in a forward order
    cout << "The set is:";
    for ( s1_Iter = s1.begin( ) ; s1_Iter != s1.end( ); s1_Iter++ )
       cout << " " << *s1_Iter;
    cout << endl;
 
    // rbegin can be used to start an iteration
-   // throught a set in a reverse order
+   // through a set in a reverse order
    cout << "The reversed set is:";
    for ( s1_rIter = s1.rbegin( ) ; s1_rIter != s1.rend( ); s1_rIter++ )
       cout << " " << *s1_rIter;
@@ -1818,14 +1806,14 @@ int main() {
         << *s1_rIter << "." << endl;
 
    // end can be used to terminate an iteration
-   // throught a set in a forward order
+   // through a set in a forward order
    cout << "The set is: ";
    for ( s1_Iter = s1.begin( ) ; s1_Iter != s1.end( ); s1_Iter++ )
       cout << *s1_Iter << " ";
    cout << "." << endl;
 
    // rend can be used to terminate an iteration
-   // throught a set in a reverse order
+   // through a set in a reverse order
    cout << "The reversed set is: ";
    for ( s1_rIter = s1.rbegin( ) ; s1_rIter != s1.rend( ); s1_rIter++ )
       cout << *s1_rIter << " ";
@@ -2044,7 +2032,6 @@ int main()
         cout << " " << i;
     cout << endl;
 }
-
 ```
 
 ```Output

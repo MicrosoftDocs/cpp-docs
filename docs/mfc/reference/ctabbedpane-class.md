@@ -1,16 +1,9 @@
 ---
-title: "CTabbedPane Class | Microsoft Docs"
-ms.custom: ""
+title: "CTabbedPane Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTabbedPane", "AFXTABBEDPANE/CTabbedPane", "AFXTABBEDPANE/CTabbedPane::DetachPane", "AFXTABBEDPANE/CTabbedPane::EnableTabAutoColor", "AFXTABBEDPANE/CTabbedPane::FloatTab", "AFXTABBEDPANE/CTabbedPane::GetTabArea", "AFXTABBEDPANE/CTabbedPane::GetTabWnd", "AFXTABBEDPANE/CTabbedPane::HasAutoHideMode", "AFXTABBEDPANE/CTabbedPane::IsTabLocationBottom", "AFXTABBEDPANE/CTabbedPane::ResetTabs", "AFXTABBEDPANE/CTabbedPane::SetTabAutoColors", "AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop", "AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTabbedPane [MFC], DetachPane", "CTabbedPane [MFC], EnableTabAutoColor", "CTabbedPane [MFC], FloatTab", "CTabbedPane [MFC], GetTabArea", "CTabbedPane [MFC], GetTabWnd", "CTabbedPane [MFC], HasAutoHideMode", "CTabbedPane [MFC], IsTabLocationBottom", "CTabbedPane [MFC], ResetTabs", "CTabbedPane [MFC], SetTabAutoColors", "CTabbedPane [MFC], m_bTabsAlwaysTop", "CTabbedPane [MFC], m_pTabWndRTC"]
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTabbedPane Class
 
@@ -317,7 +310,7 @@ Use this method to customize the list of colors that are used when the auto colo
 
 Use [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) to enable or disable the auto color feature.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

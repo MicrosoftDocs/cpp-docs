@@ -1,16 +1,9 @@
 ---
-title: "concurrent_priority_queue Class | Microsoft Docs"
-ms.custom: ""
+title: "concurrent_priority_queue Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::clear", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::empty", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::get_allocator", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::push", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::size", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::swap", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::try_pop"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_priority_queue class"]
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrent_priority_queue Class
 
@@ -269,8 +262,7 @@ A reference to a variable that will be populated with the highest priority eleme
 
 **true** if a value was popped, **false** otherwise.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-

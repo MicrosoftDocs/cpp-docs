@@ -1,16 +1,9 @@
 ---
-title: "Frame Window Classes (Windows) | Microsoft Docs"
-ms.custom: ""
+title: "Frame Window Classes (Windows)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.frame"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["frame window classes [MFC], reference"]
 ms.assetid: 6342ec5f-f922-4da8-a78e-2f5f994c7142
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Frame Window Classes (Windows)
 
@@ -38,7 +31,6 @@ Class `CMenu` provides an interface through which to access your application's m
 [CMenu](../mfc/reference/cmenu-class.md)<br/>
 Encapsulates an `HMENU` handle to the application's menu bar and pop-up menus.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

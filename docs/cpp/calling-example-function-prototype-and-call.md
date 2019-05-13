@@ -1,15 +1,8 @@
 ---
-title: "Calling Example: Function Prototype and Call | Microsoft Docs"
-ms.custom: ""
+title: "Calling Example: Function Prototype and Call"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["calling conventions, examples [C++]", "examples [C++], calling conventions"]
 ms.assetid: e4275d1f-df2e-4bfc-a162-eb43ec69554a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Calling Example: Function Prototype and Call
 

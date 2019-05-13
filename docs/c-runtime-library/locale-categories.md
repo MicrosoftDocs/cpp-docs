@@ -1,25 +1,16 @@
 ---
-title: "Locale Categories | Microsoft Docs"
-ms.custom: ""
+title: "Locale Categories"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["LC_MAX", "LC_MIN", "LC_MONETARY", "LC_TIME", "LC_NUMERIC", "LC_COLLATE", "LC_CTYPE", "LC_ALL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LC_MIN constant", "LC_MONETARY constant", "LC_CTYPE constant", "locale constants", "LC_MAX constant", "LC_ALL constant", "LC_TIME constant", "LC_NUMERIC constant", "LC_COLLATE constant"]
 ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Locale Categories
 
 ## Syntax
 
 ```
-
 #include <locale.h>
-
 ```
 
 ## Remarks
@@ -30,7 +21,7 @@ Locale categories are manifest constants used by the localization routines to sp
 |---------------------|-------------------------------|
 |`LC_ALL`|All locale-specific behavior (all categories)|
 |`LC_COLLATE`|Behavior of `strcoll` and `strxfrm` functions|
-|`LC_CTYPE`|Behavior of character-handling functions (except **isdigit**, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected)|
+|`LC_CTYPE`|Behavior of character-handling functions (except `isdigit`, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected)|
 |`LC_MAX`|Same as `LC_TIME`|
 |`LC_MIN`|Same as `LC_ALL`|
 |`LC_MONETARY`|Monetary formatting information returned by the `localeconv` function|
@@ -39,7 +30,7 @@ Locale categories are manifest constants used by the localization routines to sp
 
 See [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for an example.
 
-## See Also
+## See also
 
 [localeconv](../c-runtime-library/reference/localeconv.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

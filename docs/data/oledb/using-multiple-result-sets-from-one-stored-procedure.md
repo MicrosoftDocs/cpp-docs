@@ -1,15 +1,8 @@
 ---
-title: "Using Multiple Result Sets from One Stored Procedure | Microsoft Docs"
-ms.custom: ""
+title: "Using Multiple Result Sets from One Stored Procedure"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["stored procedures, returning result sets", "multiple result sets"]
 ms.assetid: c450c12c-a76c-4ae4-9675-071a41eeac05
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Multiple Result Sets from One Stored Procedure
 
@@ -25,6 +18,6 @@ Most stored procedures return multiple result sets. Such a stored procedure usua
 
 1. Call `GetNextResult` on the `CCommand` class. If another result rowset is available, `GetNextResult` returns S_OK and you should rebind your columns if you are using a manual accessor. If `GetNextResult` returns an error, there are no further result sets available.
 
-## See Also
+## See also
 
 [Using Stored Procedures](../../data/oledb/using-stored-procedures.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3095 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3095"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3095"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3095"]
 ms.assetid: cde725be-0936-40f6-9e57-e1d7d0710f83
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3095
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 Some attributes are declared such that, multiple occurrences of the attribute cannot be applied to a target.
 
-For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example
 

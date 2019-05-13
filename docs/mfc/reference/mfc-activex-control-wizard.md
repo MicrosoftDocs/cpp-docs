@@ -1,23 +1,16 @@
 ---
-title: "MFC ActiveX Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Control Wizard"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.ctl.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [MFC], MFC", "MFC ActiveX controls [MFC], wizards", "OLE controls [MFC], creating", "MFC ActiveX Control Wizard", "OLE controls [MFC]"]
 ms.assetid: f19d698c-bdc3-4c74-af97-3d6ccb441b75
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Control Wizard
 
 An ActiveX control is a specific type of [automation server](../../mfc/automation-servers.md); it is a reusable component. The application hosting the ActiveX control is the [automation client](../../mfc/automation-clients.md) of that control. If your goal is to create such a reusable component, then use this wizard to create your control. See [MFC ActiveX Controls](../../mfc/mfc-activex-controls.md) for more information.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](../activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](../activex-controls.md).
 
 Alternately, you can create an automation server MFC application using the [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md).
 
@@ -57,9 +50,8 @@ This wizard page describes the current application settings for the MFC ActiveX 
 
 - The control is based on no existing Windows control, activates when it becomes visible, has a user interface, and includes an **About** dialog box. You can change these default settings on the [Control Settings](../../mfc/reference/control-settings-mfc-activex-control-wizard.md) page.
 
-## See Also
+## See also
 
-[Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ Project Types](../../ide/visual-cpp-project-types.md)<br/>
+[Visual Studio Projects - C++](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++ project types in Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
 [Concepts](../../atl/active-template-library-atl-concepts.md)
-

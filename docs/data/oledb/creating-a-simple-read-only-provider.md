@@ -1,19 +1,20 @@
 ---
-title: "Creating a Simple Read-Only Provider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Creating a Simple Read-Only Provider"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB providers, creating", "OLE DB provider templates, creating providers"]
 ms.assetid: ade8ccdd-9ea4-4e46-a964-18460c2a2401
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Simple Read-Only Provider
 
-When you have created an OLE DB provider using the ATL Project Wizard and ATL OLE DB Provider Wizard, you can add other functionality that you want to support. Start designing your provider by examining what kind of data you will be sending to the consumer and under what conditions. It is especially important to determine whether you need to support commands, transactions, and other optional objects. A good design up front will speed implementation and testing.
+::: moniker range="vs-2019"
+
+The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+When you've created an OLE DB provider using the **ATL Project Wizard** and **ATL OLE DB Provider Wizard**, you can add other functionality that you want to support. Start designing your provider by examining what kind of data you'll be sending to the consumer and under what conditions. It's especially important to determine whether you need to support commands, transactions, and other optional objects. A good design up front will speed implementation and testing.
 
 The example is presented in two parts:
 
@@ -21,6 +22,8 @@ The example is presented in two parts:
 
 - The second part shows how to [enhance the simple read-only provider](../../data/oledb/enhancing-the-simple-read-only-provider.md) by adding the `IRowsetLocate` interface.
 
-## See Also
+::: moniker-end
 
-[Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)
+## See also
+
+[Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "concurrent_queue Class | Microsoft Docs"
-ms.custom: ""
+title: "concurrent_queue Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["concurrent_queue", "CONCURRENT_QUEUE/concurrency::concurrent_queue", "CONCURRENT_QUEUE/concurrency::concurrent_queue::concurrent_queue", "CONCURRENT_QUEUE/concurrency::concurrent_queue::clear", "CONCURRENT_QUEUE/concurrency::concurrent_queue::empty", "CONCURRENT_QUEUE/concurrency::concurrent_queue::get_allocator", "CONCURRENT_QUEUE/concurrency::concurrent_queue::push", "CONCURRENT_QUEUE/concurrency::concurrent_queue::try_pop", "CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_begin", "CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_end", "CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_queue class"]
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrent_queue Class
 
@@ -268,6 +261,6 @@ The size of the concurrent queue.
 
 `unsafe_size` is not concurrency-safe and can produce incorrect results if called concurrently with calls to the methods `push`, `try_pop`, and `empty`.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

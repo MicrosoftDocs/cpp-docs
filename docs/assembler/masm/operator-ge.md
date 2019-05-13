@@ -1,16 +1,9 @@
 ---
-title: "operator GE | Microsoft Docs"
-ms.custom: ""
+title: "operator GE"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["GE", "operator GE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["GE operator", "operator GE"]
 ms.assetid: 28804311-174d-42d0-9ce1-2187b81bc844
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator GE
 

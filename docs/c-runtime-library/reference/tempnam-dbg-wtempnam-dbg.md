@@ -1,19 +1,12 @@
 ---
-title: "_tempnam_dbg, _wtempnam_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_tempnam_dbg, _wtempnam_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wtempnam_dbg", "_tempnam_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wtempnam_dbg", "tempnam_dbg", "_tempnam_dbg", "_wtempnam_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["file names [C++], creating temporary", "tempnam_dbg function", "temporary files, creating", "file names [C++], temporary", "wtempnam_dbg function", "_tempnam_dbg function", "_wtempnam_dbg function"]
 ms.assetid: e3760bb4-bb01-4808-b689-2c45af56a170
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _tempnam_dbg, _wtempnam_dbg
 

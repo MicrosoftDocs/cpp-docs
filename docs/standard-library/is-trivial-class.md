@@ -1,16 +1,9 @@
 ---
-title: "is_trivial Class | Microsoft Docs"
-ms.custom: ""
+title: "is_trivial Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_trivial"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivial"]
 ms.assetid: 6beb11d4-2f38-4c7e-9959-ca5d26250df7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_trivial Class
 

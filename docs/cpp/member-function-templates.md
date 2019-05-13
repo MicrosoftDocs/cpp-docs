@@ -1,15 +1,8 @@
 ---
-title: "Member Function Templates | Microsoft Docs"
-ms.custom: ""
+title: "Member Function Templates"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function templates, member functions"]
 ms.assetid: 83d51835-6a27-40ed-997c-7d90dc9182d8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Member Function Templates
 

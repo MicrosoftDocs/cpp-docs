@@ -1,16 +1,9 @@
 ---
-title: "CAtlWinModule Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlWinModule Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlWinModule", "ATLBASE/ATL::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::AddCreateWndData", "ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlWinModule class"]
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlWinModule Class
 
@@ -111,7 +104,7 @@ void* ExtractCreateWndData();
 
 Returns a pointer to the `_AtlCreateWndData` structure previously added with [CAtlWinModule::AddCreateWndData](#addcreatewnddata), or NULL if no object is available.
 
-## See Also
+## See also
 
 [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

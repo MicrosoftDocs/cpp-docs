@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4220 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4220"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4220"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4220"]
 ms.assetid: aba18868-825f-4763-9af6-3296406a80e4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4220
 

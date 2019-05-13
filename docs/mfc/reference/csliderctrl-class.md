@@ -1,16 +1,9 @@
 ---
-title: "CSliderCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CSliderCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSliderCtrl", "AFXCMN/CSliderCtrl", "AFXCMN/CSliderCtrl::CSliderCtrl", "AFXCMN/CSliderCtrl::ClearSel", "AFXCMN/CSliderCtrl::ClearTics", "AFXCMN/CSliderCtrl::Create", "AFXCMN/CSliderCtrl::CreateEx", "AFXCMN/CSliderCtrl::GetBuddy", "AFXCMN/CSliderCtrl::GetChannelRect", "AFXCMN/CSliderCtrl::GetLineSize", "AFXCMN/CSliderCtrl::GetNumTics", "AFXCMN/CSliderCtrl::GetPageSize", "AFXCMN/CSliderCtrl::GetPos", "AFXCMN/CSliderCtrl::GetRange", "AFXCMN/CSliderCtrl::GetRangeMax", "AFXCMN/CSliderCtrl::GetRangeMin", "AFXCMN/CSliderCtrl::GetSelection", "AFXCMN/CSliderCtrl::GetThumbLength", "AFXCMN/CSliderCtrl::GetThumbRect", "AFXCMN/CSliderCtrl::GetTic", "AFXCMN/CSliderCtrl::GetTicArray", "AFXCMN/CSliderCtrl::GetTicPos", "AFXCMN/CSliderCtrl::GetToolTips", "AFXCMN/CSliderCtrl::SetBuddy", "AFXCMN/CSliderCtrl::SetLineSize", "AFXCMN/CSliderCtrl::SetPageSize", "AFXCMN/CSliderCtrl::SetPos", "AFXCMN/CSliderCtrl::SetRange", "AFXCMN/CSliderCtrl::SetRangeMax", "AFXCMN/CSliderCtrl::SetRangeMin", "AFXCMN/CSliderCtrl::SetSelection", "AFXCMN/CSliderCtrl::SetThumbLength", "AFXCMN/CSliderCtrl::SetTic", "AFXCMN/CSliderCtrl::SetTicFreq", "AFXCMN/CSliderCtrl::SetTipSide", "AFXCMN/CSliderCtrl::SetToolTips"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSliderCtrl [MFC], CSliderCtrl", "CSliderCtrl [MFC], ClearSel", "CSliderCtrl [MFC], ClearTics", "CSliderCtrl [MFC], Create", "CSliderCtrl [MFC], CreateEx", "CSliderCtrl [MFC], GetBuddy", "CSliderCtrl [MFC], GetChannelRect", "CSliderCtrl [MFC], GetLineSize", "CSliderCtrl [MFC], GetNumTics", "CSliderCtrl [MFC], GetPageSize", "CSliderCtrl [MFC], GetPos", "CSliderCtrl [MFC], GetRange", "CSliderCtrl [MFC], GetRangeMax", "CSliderCtrl [MFC], GetRangeMin", "CSliderCtrl [MFC], GetSelection", "CSliderCtrl [MFC], GetThumbLength", "CSliderCtrl [MFC], GetThumbRect", "CSliderCtrl [MFC], GetTic", "CSliderCtrl [MFC], GetTicArray", "CSliderCtrl [MFC], GetTicPos", "CSliderCtrl [MFC], GetToolTips", "CSliderCtrl [MFC], SetBuddy", "CSliderCtrl [MFC], SetLineSize", "CSliderCtrl [MFC], SetPageSize", "CSliderCtrl [MFC], SetPos", "CSliderCtrl [MFC], SetRange", "CSliderCtrl [MFC], SetRangeMax", "CSliderCtrl [MFC], SetRangeMin", "CSliderCtrl [MFC], SetSelection", "CSliderCtrl [MFC], SetThumbLength", "CSliderCtrl [MFC], SetTic", "CSliderCtrl [MFC], SetTicFreq", "CSliderCtrl [MFC], SetTipSide", "CSliderCtrl [MFC], SetToolTips"]
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSliderCtrl Class
 
@@ -140,7 +133,7 @@ virtual BOOL Create(
 Specifies the slider control's style. Apply any combination of [slider control styles](/windows/desktop/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
 
 *rect*<br/>
-Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the slider control's parent window, usually a `CDialog`. It must not be NULL.
@@ -182,7 +175,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the slider control's style. Apply any combination of [slider control styles](/windows/desktop/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -730,9 +723,9 @@ A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object 
 
 This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips), as described in the Windows SDK. When a slider control is created with the TBS_TOOLTIPS style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](/windows/desktop/Controls/trackbar-control-styles) in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CProgressCtrl Class](../../mfc/reference/cprogressctrl-class.md)

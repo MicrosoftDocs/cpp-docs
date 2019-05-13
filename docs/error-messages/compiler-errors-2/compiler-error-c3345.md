@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3345 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3345"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3345"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3345"]
 ms.assetid: 1dda4c79-73bb-441b-b939-746154c3afba
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3345
 
@@ -51,7 +44,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 };
 ```
 
-## See Also
+## See also
 
 [__iscsym](../../c-runtime-library/reference/iscsym-functions.md)<br/>
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>

@@ -1,26 +1,19 @@
 ---
-title: "strcmp, wcscmp, _mbscmp | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-apiname: ["wcscmp", "_mbscmp", "strcmp"]
+title: "strcmp, wcscmp, _mbscmp, _mbscmp_l"
+ms.date: "01/22/2019"
+apiname: ["wcscmp", "_mbscmp", "_mbscmp_l", "strcmp"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
-f1_keywords: ["_mbscmp", "wcscmp", "strcmp", "_tcscmp", "_ftcscmp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["tcscmp function", "strcmp function", "strings [C++], comparing", "mbscmp function", "string comparison [C++]", "_mbscmp function", "wcscmp function", "_tcscmp function", "_ftcscmp function", "ftcscmp function"]
+f1_keywords: ["_mbscmp", "_mbscmp_l", "wcscmp", "strcmp", "_tcscmp", "_ftcscmp"]
+helpviewer_keywords: ["tcscmp function", "strcmp function", "strings [C++], comparing", "mbscmp function", "string comparison [C++]", "_mbscmp function", "_mbscmp_l function", "wcscmp function", "_tcscmp function", "_ftcscmp function", "ftcscmp function"]
 ms.assetid: 5d216b57-7a5c-4cb3-abf0-0f4facf4396d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
-# strcmp, wcscmp, _mbscmp
+# strcmp, wcscmp, _mbscmp, _mbscmp_l
 
 Compare strings.
 
 > [!IMPORTANT]
-> **_mbscmp** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscmp** and **_mbscmp_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -37,12 +30,20 @@ int _mbscmp(
    const unsigned char *string1,
    const unsigned char *string2
 );
+int _mbscmp_l(
+   const unsigned char *string1,
+   const unsigned char *string2,
+   _locale_t locale
+);
 ```
 
 ### Parameters
 
 *string1*, *string2*<br/>
 Null-terminated strings to compare.
+
+*locale*<br/>
+Locale to use.
 
 ## Return Value
 
@@ -54,11 +55,11 @@ The return value for each of these functions indicates the ordinal relation of *
 |0|*string1* is identical to *string2*|
 |> 0|*string1* is greater than *string2*|
 
-On a parameter validation error, **_mbscmp** returns **_NLSCMPERROR**, which is defined in \<string.h> and \<mbstring.h>.
+On a parameter validation error, **_mbscmp** and **_mbscmp_l** return **_NLSCMPERROR**, which is defined in \<string.h> and \<mbstring.h>.
 
 ## Remarks
 
-The **strcmp** function performs an ordinal comparison of *string1* and *string2* and returns a value that indicates their relationship. **wcscmp** and **_mbscmp** are, respectively, wide-character and multibyte-character versions of **strcmp**. **_mbscmp** recognizes multibyte-character sequences according to the current multibyte code page and returns **_NLSCMPERROR** on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *string1* or *string2* is a null pointer, **_mbscmp** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbscmp** returns **_NLSCMPERROR** and sets **errno** to **EINVAL**. **strcmp** and **wcscmp** do not validate their parameters. These three functions behave identically otherwise.
+The **strcmp** function performs an ordinal comparison of *string1* and *string2* and returns a value that indicates their relationship. **wcscmp** and **_mbscmp** are, respectively, wide-character and multibyte-character versions of **strcmp**. **_mbscmp** recognizes multibyte-character sequences according to the current multibyte code page and returns **_NLSCMPERROR** on an error. **_mbscmp_l** has the same behavior, but uses the locale parameter that's passed in instead of the current locale. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *string1* or *string2* is a null pointer, **_mbscmp** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbscmp** and **_mbscmp_l** return **_NLSCMPERROR** and set **errno** to **EINVAL**. **strcmp** and **wcscmp** do not validate their parameters. These functions behave identically otherwise.
 
 ### Generic-Text Routine Mappings
 
@@ -72,7 +73,7 @@ In the "C" locale, the order of characters in the character set (ASCII character
 
 In locales for which the character set and the lexicographic character order differ, you can use **strcoll** instead of **strcmp** for lexicographic comparison of strings. Alternatively, you can use **strxfrm** on the original strings, and then use **strcmp** on the resulting strings.
 
-The **strcmp** functions are case-sensitive. **_stricmp**, **_wcsicmp**, and **_mbsicmp** compare strings by first converting them to their lowercase forms. Two strings that contain characters that are located between 'Z' and 'a' in the ASCII table ('[', '\\', ']', '^', '_', and '\`') compare differently, depending on their case. For example, the two strings "ABCDE" and "ABCD^" compare one way if the comparison is lowercase ("abcde" > "abcd^") and the other way ("ABCDE" < "ABCD^") if the comparison is uppercase.
+The **strcmp** functions are case-sensitive. **\_stricmp**, **\_wcsicmp**, and **\_mbsicmp** compare strings by first converting them to their lowercase forms. Two strings that contain characters that are located between 'Z' and 'a' in the ASCII table ('[', '\\', ']', '^', '_', and '\`') compare differently, depending on their case. For example, the two strings "ABCDE" and "ABCD^" compare one way if the comparison is lowercase ("abcde" > "abcd^") and the other way ("ABCDE" < "ABCD^") if the comparison is uppercase.
 
 ## Requirements
 

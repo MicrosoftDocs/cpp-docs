@@ -1,15 +1,8 @@
 ---
-title: "C Floating-Point Constants | Microsoft Docs"
-ms.custom: ""
+title: "C Floating-Point Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["types [C], constants", "floating-point numbers, floating-point constants", "constants, floating-point", "floating-point constants", "floating-point constants, about floating-point constants", "double data type, floating-point constants"]
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Floating-Point Constants
 
@@ -43,7 +36,7 @@ You can omit either the digits before the decimal point (the integer portion of 
 
 The following examples illustrate some forms of floating-point constants and expressions:
 
-```
+```C
 15.75
 1.575E1   /* = 15.75   */
 1575e-2   /* = 15.75   */
@@ -55,22 +48,22 @@ Floating-point constants are positive unless they are preceded by a minus sign (
 
 A floating-point constant without an **f**, **F**, **l**, or **L** suffix has type `double`. If the letter **f** or **F** is the suffix, the constant has type `float`. If suffixed by the letter **l** or **L**, it has type `long double`. For example:
 
-```
-100L  /* Has type long double  */
-100F  /* Has type float        */
+```C
+10.0L  /* Has type long double  */
+10.0F  /* Has type float        */
 ```
 
 Note that the Microsoft C compiler internally represents `long double` the same as type `double`. See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about type `double`, `float`, and `long double`.
 
 You can omit the integer portion of the floating-point constant, as shown in the following examples. The number .75 can be expressed in many ways, including the following:
 
-```
+```C
 .0075e2
 0.075e1
 .075e1
 75e-2
 ```
 
-## See Also
+## See also
 
 [C Constants](../c-language/c-constants.md)

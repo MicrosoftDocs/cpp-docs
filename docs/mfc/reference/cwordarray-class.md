@@ -1,16 +1,9 @@
 ---
-title: "CWordArray Class | Microsoft Docs"
-ms.custom: ""
+title: "CWordArray Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CWordArray", "AFXCOLL/CWordArray", "AFXCOLL/CObArray::CObArray", "AFXCOLL/CObArray::Add", "AFXCOLL/CObArray::Append", "AFXCOLL/CObArray::Copy", "AFXCOLL/CObArray::ElementAt", "AFXCOLL/CObArray::FreeExtra", "AFXCOLL/CObArray::GetAt", "AFXCOLL/CObArray::GetCount", "AFXCOLL/CObArray::GetData", "AFXCOLL/CObArray::GetSize", "AFXCOLL/CObArray::GetUpperBound", "AFXCOLL/CObArray::InsertAt", "AFXCOLL/CObArray::IsEmpty", "AFXCOLL/CObArray::RemoveAll", "AFXCOLL/CObArray::RemoveAt", "AFXCOLL/CObArray::SetAt", "AFXCOLL/CObArray::SetAtGrow", "AFXCOLL/CObArray::SetSize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
 ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWordArray Class
 
@@ -255,7 +248,7 @@ The ending index of the command ID range.
 
 ### Remarks
 
-This method removes a group of message handlers, mapped to the command IDs specifed by *cmdIDMin* and *cmdIDMax*, from the command source object.
+This method removes a group of message handlers, mapped to the command IDs specified by *cmdIDMin* and *cmdIDMax*, from the command source object.
 
 ##  <a name="removecommandrangeuihandler"></a>  ICommandSource::RemoveCommandRangeUIHandler
 
@@ -277,7 +270,7 @@ The ending index of the command ID range.
 
 ### Remarks
 
-This method removes a group of user interface command message handlers, mapped to the command IDs specifed by *cmdIDMin* and *cmdIDMax*, from the command source object.
+This method removes a group of user interface command message handlers, mapped to the command IDs specified by *cmdIDMin* and *cmdIDMax*, from the command source object.
 
 ##  <a name="removecommanduihandler"></a>  ICommandSource::RemoveCommandUIHandler
 
@@ -507,9 +500,8 @@ void OnUpdate();
 
 This function allows the view to update its display to reflect modifications.
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

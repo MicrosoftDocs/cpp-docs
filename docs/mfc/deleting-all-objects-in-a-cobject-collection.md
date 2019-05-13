@@ -1,15 +1,8 @@
 ---
-title: "Deleting All Objects in a CObject Collection | Microsoft Docs"
-ms.custom: ""
+title: "Deleting All Objects in a CObject Collection"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["objects [MFC], deleting in collections", "objects in CObject collections, deleting", "CObject class [MFC], deleting in collection", "collection classes [MFC], deleting all objects", "CObject class collection", "objects in CObject collections", "collection classes [MFC], shared objects"]
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Deleting All Objects in a CObject Collection
 
@@ -72,7 +65,6 @@ As with the list example above, you can call `RemoveAll` to remove all elements 
 
 You can call `RemoveAll` to remove all elements in a map or `RemoveKey` to remove an individual element with the specified key.
 
-## See Also
+## See also
 
 [Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md)
-

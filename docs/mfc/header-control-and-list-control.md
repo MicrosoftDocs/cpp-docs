@@ -1,15 +1,8 @@
 ---
-title: "Header Control and List Control | Microsoft Docs"
-ms.custom: ""
+title: "Header Control and List Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListCtrl class [MFC], with CHeaderCtrl", "CListCtrl class [MFC], header controls", "CHeaderCtrl class [MFC], with CListCtrl", "controls [MFC], header", "header controls [MFC]", "header controls [MFC], list controls used with"]
 ms.assetid: b20194b1-1a6b-4e2f-b890-1b3cca6650bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Header Control and List Control
 
@@ -30,8 +23,7 @@ The embedded header control object can be accessed from either `CListCtrl` or `C
 
 - [Using image lists with header controls](../mfc/using-image-lists-with-header-controls.md)
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

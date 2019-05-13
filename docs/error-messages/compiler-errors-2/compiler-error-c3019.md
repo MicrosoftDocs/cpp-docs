@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3019 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3019"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3019"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3019"]
 ms.assetid: 31a6d9b6-d29f-4499-9ad8-48dd751e87c7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3019
 

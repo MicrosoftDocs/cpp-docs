@@ -1,14 +1,8 @@
 ---
-title: "Concurrency::fast_math namespace functions | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency::fast_math namespace functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["amp_math/Concurrency::fast_math::acos", "amp_math/Concurrency::fast_math::asin", "amp_math/Concurrency::fast_math::asinf", "amp_math/Concurrency::fast_math::atan2", "amp_math/Concurrency::fast_math::atan2f", "amp_math/Concurrency::fast_math::ceil", "amp_math/Concurrency::fast_math::ceilf", "amp_math/Concurrency::fast_math::cosf", "amp_math/Concurrency::fast_math::cosh", "amp_math/Concurrency::fast_math::exp", "amp_math/Concurrency::fast_math::exp2", "amp_math/Concurrency::fast_math::expf", "amp_math/Concurrency::fast_math::fabs", "amp_math/Concurrency::fast_math::floor", "amp_math/Concurrency::fast_math::floorf", "amp_math/Concurrency::fast_math::fmaxf", "amp_math/Concurrency::fast_math::fmin", "amp_math/Concurrency::fast_math::fmod", "amp_math/Concurrency::fast_math::fmodf", "amp_math/Concurrency::fast_math::frexpf", "amp_math/Concurrency::fast_math::isfinite", "amp_math/Concurrency::fast_math::isnan", "amp_math/Concurrency::fast_math::ldexp", "amp_math/Concurrency::fast_math::log", "amp_math/Concurrency::fast_math::log10", "amp_math/Concurrency::fast_math::log2", "amp_math/Concurrency::fast_math::log2f", "amp_math/Concurrency::fast_math::modf", "amp_math/Concurrency::fast_math::modff", "amp_math/Concurrency::fast_math::powf", "amp_math/Concurrency::fast_math::round", "amp_math/Concurrency::fast_math::rsqrt", "amp_math/Concurrency::fast_math::rsqrtf", "amp_math/Concurrency::fast_math::signbitf", "amp_math/Concurrency::fast_math::sin", "amp_math/Concurrency::fast_math::sincosf", "amp_math/Concurrency::fast_math::sinf", "amp_math/Concurrency::fast_math::sinhf", "amp_math/Concurrency::fast_math::sqrt", "amp_math/Concurrency::fast_math::tan", "amp_math/Concurrency::fast_math::tanf", "amp_math/Concurrency::fast_math::tanhf", "amp_math/Concurrency::fast_math::trunc"]
-dev_langs: ["C++"]
 ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency::fast_math namespace functions
 
@@ -1235,6 +1229,6 @@ Returns the integer component of the argument
 **Header:** amp_math.h
 **Namespace:** Concurrency::fast_math
 
-## See Also
+## See also
 
 [Concurrency::fast_math Namespace](concurrency-fast-math-namespace.md)

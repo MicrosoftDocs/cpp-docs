@@ -1,16 +1,9 @@
 ---
-title: "CPrintInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CPrintInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPrintInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPrintInfo structure [MFC]"]
 ms.assetid: 0b3de849-d050-4386-9a14-f4c1a25684f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPrintInfo Structure
 
@@ -82,7 +75,6 @@ Call this function to retrieve the number of the first page to be printed.
 
 ```
 UINT GetFromPage() const;
-
 ```
 
 ### Return Value
@@ -99,7 +91,6 @@ Call this function to retrieve the number of the last page of the document.
 
 ```
 UINT GetMaxPage() const;
-
 ```
 
 ### Return Value
@@ -116,7 +107,6 @@ Call this function to retrieve the number of the first page of the document.
 
 ```
 UINT GetMinPage() const;
-
 ```
 
 ### Return Value
@@ -133,7 +123,6 @@ Call this function to retrieve the offset when printing multiple DocObject items
 
 ```
 UINT GetOffsetPage() const;
-
 ```
 
 ### Return Value
@@ -150,7 +139,6 @@ Call this function to retrieve the number of the last page to be printed.
 
 ```
 UINT GetToPage() const;
-
 ```
 
 ### Return Value
@@ -319,9 +307,9 @@ Number of the first page of the document.
 
 Page numbers normally start at 1. This value is stored in the `CPrintDialog` object referenced by the `m_pPD` member.
 
-## See Also
+## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC Sample DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CView::OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)<br/>
 [CView::OnEndPrinting](../../mfc/reference/cview-class.md#onendprinting)<br/>
@@ -329,4 +317,3 @@ Page numbers normally start at 1. This value is stored in the `CPrintDialog` obj
 [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)<br/>
 [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)<br/>
 [CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
-

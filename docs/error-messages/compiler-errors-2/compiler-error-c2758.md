@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2758 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2758"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2758"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2758"]
 ms.assetid: 1d273034-194c-4926-9869-142d1b219cbe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2758
 

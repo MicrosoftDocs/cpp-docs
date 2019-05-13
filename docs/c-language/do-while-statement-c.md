@@ -1,16 +1,9 @@
 ---
-title: "do-while Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "do-while Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["do", "while"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["do-while keyword [C]"]
 ms.assetid: f2ac20a6-10c7-4a08-b5e3-c3b3639dbeaf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # do-while Statement (C)
 
@@ -43,6 +36,6 @@ do
 
 In this *do-while* statement, the two statements `y = f( x );` and `x--;` are executed, regardless of the initial value of `x`. Then `x > 0` is evaluated. If `x` is greater than 0, the statement body is executed again and `x > 0` is reevaluated. The statement body is executed repeatedly as long as `x` remains greater than 0. Execution of the *do-while* statement terminates when `x` becomes 0 or negative. The body of the loop is executed at least once.
 
-## See Also
+## See also
 
 [do-while Statement (C++)](../cpp/do-while-statement-cpp.md)

@@ -1,16 +1,9 @@
 ---
-title: "sizeof Operator (C) | Microsoft Docs"
-ms.custom: ""
+title: "sizeof Operator (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["sizeof"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sizeof operator"]
 ms.assetid: 70826d03-3451-41e4-bebb-a820ae66d53f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # sizeof Operator (C)
 
@@ -50,7 +43,7 @@ const int string_no = ( sizeof strings ) / ( sizeof strings[0] );
 
 In this example, `strings` is an array of pointers to `char`. The number of pointers is the number of elements in the array, but is not specified. It is easy to determine the number of pointers by using the `sizeof` operator to calculate the number of elements in the array. The **const** integer value `string_no` is initialized to this number. Because it is a **const** value, `string_no` cannot be modified.
 
-## See Also
+## See also
 
 [C Operators](c-operators.md)<br/>
 [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

@@ -1,15 +1,8 @@
 ---
-title: "Tool Tips in Windows Not Derived from CFrameWnd | Microsoft Docs"
-ms.custom: ""
+title: "Tool Tips in Windows Not Derived from CFrameWnd"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["enabling tool tips [MFC]", "TOOLTIPTEXT structure [MFC]", "Help [MFC], tool tips for controls", "TTN_NEEDTEXT message [MFC]", "controls [MFC], tool tips", "handler functions [MFC], tool tips"]
 ms.assetid: cad5ef0f-02e3-4151-ad0d-3d42e6932b0e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tool Tips in Windows Not Derived from CFrameWnd
 
@@ -29,7 +22,6 @@ However, this default handler is not called when the **TTN_NEEDTEXT** notificati
 
 The default tool tips provided for your windows by [CWnd::EnableToolTips](../mfc/reference/cwnd-class.md#enabletooltips) do not have text associated with them. To retrieve text for the tool tip to display, the **TTN_NEEDTEXT** notification is sent to the tool tip control's parent window just before the tool tip window is displayed. If there is no handler for this message to assign some value to the *pszText* member of the **TOOLTIPTEXT** structure, there will be no text displayed for the tool tip.
 
-## See Also
+## See also
 
 [Tool Tips](../mfc/tool-tips.md)
-

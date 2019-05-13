@@ -1,14 +1,7 @@
 ---
-title: "&lt;cfenv&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cfenv&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 6a17ad51-2182-4e91-8108-65997382acd3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cfenv&gt;
 

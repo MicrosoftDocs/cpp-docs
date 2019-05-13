@@ -1,20 +1,13 @@
 ---
-title: "CDBErrorInfo Class | Microsoft Docs"
-ms.custom: ""
+title: "CDBErrorInfo Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo", "ATL::CDBErrorInfo", "ATL.CDBErrorInfo", "ATL.CDBErrorInfo.GetAllErrorInfo", "CDBErrorInfo::GetAllErrorInfo", "ATL::CDBErrorInfo::GetAllErrorInfo", "GetAllErrorInfo", "CDBErrorInfo.GetAllErrorInfo", "CDBErrorInfo::GetBasicErrorInfo", "ATL.CDBErrorInfo.GetBasicErrorInfo", "CDBErrorInfo.GetBasicErrorInfo", "ATL::CDBErrorInfo::GetBasicErrorInfo", "GetBasicErrorInfo", "CDBErrorInfo::GetCustomErrorObject", "ATL.CDBErrorInfo.GetCustomErrorObject", "CDBErrorInfo.GetCustomErrorObject", "ATL::CDBErrorInfo::GetCustomErrorObject", "GetCustomErrorObject", "GetErrorInfo", "ATL.CDBErrorInfo.GetErrorInfo", "CDBErrorInfo.GetErrorInfo", "ATL::CDBErrorInfo::GetErrorInfo", "CDBErrorInfo::GetErrorInfo", "ATL.CDBErrorInfo.GetErrorParameters", "CDBErrorInfo::GetErrorParameters", "ATL::CDBErrorInfo::GetErrorParameters", "CDBErrorInfo.GetErrorParameters", "GetErrorParameters", "CDBErrorInfo.GetErrorRecords", "ATL.CDBErrorInfo.GetErrorRecords", "ATL::CDBErrorInfo::GetErrorRecords", "GetErrorRecords", "CDBErrorInfo::GetErrorRecords"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDBErrorInfo class", "GetAllErrorInfo method", "GetBasicErrorInfo method", "GetCustomErrorObject method", "GetErrorInfo method", "GetErrorParameters method", "GetErrorRecords method"]
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo Class
 
-Provides support for OLE DB error processing using the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112) interface.
+Provides support for OLE DB error processing using the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) interface.
 
 ## Syntax
 
@@ -33,10 +26,10 @@ class CDBErrorInfo
 |||
 |-|-|
 |[GetAllErrorInfo](#getallerrorinfo)|Returns all error information contained in an error record.|
-|[GetBasicErrorInfo](#getbasicerrorinfo)|Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907) to return basic information about the specified error.|
-|[GetCustomErrorObject](#getcustomerrorobject)|Calls [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417) to return a pointer to an interface on a custom error object.|
-|[GetErrorInfo](#geterrorinfo)|Calls [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) to return an `IErrorInfo` interface pointer to the specified record.|
-|[GetErrorParameters](#geterrorparameters)|Calls [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793) to return the error parameters.|
+|[GetBasicErrorInfo](#getbasicerrorinfo)|Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) to return basic information about the specified error.|
+|[GetCustomErrorObject](#getcustomerrorobject)|Calls [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) to return a pointer to an interface on a custom error object.|
+|[GetErrorInfo](#geterrorinfo)|Calls [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) to return an `IErrorInfo` interface pointer to the specified record.|
+|[GetErrorParameters](#geterrorparameters)|Calls [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) to return the error parameters.|
 |[GetErrorRecords](#geterrorrecords)|Gets error records for the specified object.|
 
 ## Remarks
@@ -83,7 +76,7 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
 
 ### Return Value
 
-S_OK if successful. See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) in the *OLE DB Programmer's Reference* for other return values.
+S_OK if successful. See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) in the *OLE DB Programmer's Reference* for other return values.
 
 ### Remarks
 
@@ -95,18 +88,18 @@ The output value of *pbstrDescription* is obtained internally by calling `IError
 
 ## <a name="getbasicerrorinfo"></a> CDBErrorInfo::GetBasicErrorInfo
 
-Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907) to return basic information about the error, such as the return code and provider-specific error number.
+Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) to return basic information about the error, such as the return code and provider-specific error number.
 
 ### Syntax
 
 ```cpp
-HRESULT GetBasicErrorInfo(ULONG ulRecordNum, 
+HRESULT GetBasicErrorInfo(ULONG ulRecordNum,
    ERRORINFO* pErrorInfo) const throw();
 ```
 
 #### Parameters
 
-See [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907) in the *OLE DB Programmer's Reference*.
+See [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -114,18 +107,18 @@ A standard HRESULT.
 
 ## <a name="getcustomerrorobject"></a> CDBErrorInfo::GetCustomErrorObject
 
-Calls [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417) to return a pointer to an interface on a custom error object.
+Calls [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) to return a pointer to an interface on a custom error object.
 
 ### Syntax
 
 ```cpp
-HRESULT GetCustomErrorObject(ULONG ulRecordNum, 
+HRESULT GetCustomErrorObject(ULONG ulRecordNum,
    REFIID riid,IUnknown** ppObject) const throw();
 ```
 
 #### Parameters
 
-See [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417) in the *OLE DB Programmer's Reference*.
+See [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -133,18 +126,18 @@ A standard HRESULT.
 
 ## <a name="geterrorinfo"></a> CDBErrorInfo::GetErrorInfo
 
-Calls [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) to return an [IErrorInfo](/previous-versions/windows/desktop/ms718112) interface pointer to the specified record.
+Calls [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) to return an [IErrorInfo](/previous-versions/windows/desktop/ms718112(v=vs.85)) interface pointer to the specified record.
 
 ### Syntax
 
 ```cpp
-HRESULT GetErrorInfo(ULONG ulRecordNum, 
+HRESULT GetErrorInfo(ULONG ulRecordNum,
    LCID lcid,IErrorInfo** ppErrorInfo) const throw();
 ```
 
 #### Parameters
 
-See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230) in the *OLE DB Programmer's Reference*.
+See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -152,18 +145,18 @@ A standard HRESULT.
 
 ## <a name="geterrorparameters"></a> CDBErrorInfo::GetErrorParameters
 
-Calls [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793) to return the error parameters.
+Calls [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) to return the error parameters.
 
 ### Syntax
 
 ```cpp
-HRESULT GetErrorParameters(ULONG ulRecordNum, 
+HRESULT GetErrorParameters(ULONG ulRecordNum,
    DISPPARAMS* pdispparams) const throw();
 ```
 
 #### Parameters
 
-See [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793) in the *OLE DB Programmer's Reference*.
+See [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -176,8 +169,8 @@ Gets error records for the specified object.
 ### Syntax
 
 ```cpp
-HRESULT GetErrorRecords(IUnknown* pUnk, 
-   const IID& iid, 
+HRESULT GetErrorRecords(IUnknown* pUnk,
+   const IID& iid,
    ULONG* pcRecords) throw();
 
 HRESULT GetErrorRecords(ULONG* pcRecords) throw();
@@ -202,8 +195,8 @@ A standard HRESULT.
 
 Use the first form of the function if you want to check which interface to get the error information from. Otherwise, use the second form.
 
-## See Also
+## See also
 
-[DBViewer](../../visual-cpp-samples.md)<br/>
+[DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

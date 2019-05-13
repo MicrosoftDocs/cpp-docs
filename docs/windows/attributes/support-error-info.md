@@ -1,16 +1,9 @@
 ---
-title: "support_error_info (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "support_error_info (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.support_error_info"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["support_error_info attribute"]
 ms.assetid: 20a2b55c-4738-4b35-a71d-e5e9c3a7e3bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # support_error_info
 
@@ -70,7 +63,7 @@ class CMyClass
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)

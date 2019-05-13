@@ -1,16 +1,9 @@
 ---
-title: "EXTERN (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "EXTERN (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["extern"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EXTERN directive"]
 ms.assetid: 667d703d-3aaf-4139-a586-29bc5dab1aff
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EXTERN (MASM)
 

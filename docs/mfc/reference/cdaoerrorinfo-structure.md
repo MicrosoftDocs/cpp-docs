@@ -1,16 +1,9 @@
 ---
-title: "CDaoErrorInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoErrorInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoErrorInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoErrorInfo structure [MFC]", "DAO (Data Access Objects), Errors collection"]
 ms.assetid: cd37ef71-b0b3-401d-bc2b-540c9147f532
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoErrorInfo Structure
 
@@ -58,7 +51,7 @@ Information retrieved by the [CDaoException::GetErrorInfo](../../mfc/reference/c
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoException Class](../../mfc/reference/cdaoexception-class.md)

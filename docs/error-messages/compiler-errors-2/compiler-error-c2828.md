@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2828 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2828"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2828"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2828"]
 ms.assetid: d8df6ed4-5954-46c2-b59b-52881d4e923d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2828
 

@@ -1,16 +1,9 @@
 ---
-title: "CContextMenuManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CContextMenuManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager::CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager::AddMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuById", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuByName", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuNames", "AFXCONTEXTMENUMANAGER/CContextMenuManager::LoadState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::ResetState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::SaveState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::SetDontCloseActiveMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::ShowPopupMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::TrackPopupMenu"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CContextMenuManager [MFC], CContextMenuManager", "CContextMenuManager [MFC], AddMenu", "CContextMenuManager [MFC], GetMenuById", "CContextMenuManager [MFC], GetMenuByName", "CContextMenuManager [MFC], GetMenuNames", "CContextMenuManager [MFC], LoadState", "CContextMenuManager [MFC], ResetState", "CContextMenuManager [MFC], SaveState", "CContextMenuManager [MFC], SetDontCloseActiveMenu", "CContextMenuManager [MFC], ShowPopupMenu", "CContextMenuManager [MFC], TrackPopupMenu"]
 ms.assetid: 1de20640-243c-47e1-85de-1baa4153bc83
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CContextMenuManager Class
 
@@ -58,7 +51,7 @@ The `CContextMenuManager` can also save and load its state to the Windows regist
 
 ## Example
 
-The following example demonstrates how to add a menu to a `CContextMenuManager` object, and how not to close the active pop-up menu when the `CContextMenuManager` object displays a new pop-up menu. This code snippet is part of the [Custom Pages sample](../../visual-cpp-samples.md).
+The following example demonstrates how to add a menu to a `CContextMenuManager` object, and how not to close the active pop-up menu when the `CContextMenuManager` object displays a new pop-up menu. This code snippet is part of the [Custom Pages sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_CustomPages#4](../../mfc/reference/codesnippet/cpp/ccontextmenumanager-class_1.cpp)]
 
@@ -349,7 +342,7 @@ The menu command ID of the command that the user chooses; 0 if the user closes t
 
 This method functions as a modal call to display a shortcut menu. The application will not continue to the following line in code until the user either closes the shortcut menu or selects a command. An alternative method that you can use to display a shortcut menu is [CContextMenuManager::ShowPopupMenu](#showpopupmenu). That method is not a modal call and will not return the ID of the selected command.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

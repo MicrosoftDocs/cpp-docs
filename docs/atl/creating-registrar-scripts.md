@@ -1,15 +1,8 @@
 ---
-title: "Creating Scripts for ATL Registrar | Microsoft Docs"
-ms.custom: ""
+title: "Creating Scripts for ATL Registrar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scripting, registry scripting", "ATL, registry", "registrar scripts [ATL]", "scripts, Registrar scripts", "scripts, creating"]
 ms.assetid: cbd5024b-8061-4a71-be65-7fee90374a35
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating Registrar Scripts
 
@@ -31,7 +24,6 @@ This article covers the following topics related to the registrar scripts:
 
 - [Invoking Scripts](../atl/invoking-scripts.md)
 
-## See Also
+## See also
 
 [Registry Component (Registrar)](../atl/atl-registry-component-registrar.md)
-

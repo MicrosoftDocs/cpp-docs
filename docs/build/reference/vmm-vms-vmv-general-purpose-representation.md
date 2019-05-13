@@ -1,20 +1,13 @@
 ---
-title: "-vmm, -vms, -vmv (General Purpose Representation) | Microsoft Docs"
-ms.custom: ""
+title: "/vmm, -vms, -vmv (General Purpose Representation)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/vms", "/vmm", "/vmv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Virtual Inheritance compiler option", "general purpose representation compiler options", "vms compiler option [C++]", "vmm compiler option [C++]", "/vmm compiler option [C++]", "-vmm compiler option [C++]", "-vms compiler option [C++]", "/vms compiler option [C++]", "vmv compiler option [C++]", "/vmv compiler option [C++]", "Single Inheritance compiler option", "-vmv compiler option [C++]"]
 ms.assetid: 0fcd7ae0-3031-4c62-a2a8-e154c8685dae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /vmm, /vms, /vmv (General Purpose Representation)
 
-Used when [/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md) is selected as the [representation method](../../build/reference/vmb-vmg-representation-method.md). These options indicate the inheritance model of the not-yet-encountered class definition.
+Used when [/vmb, /vmg (Representation Method)](vmb-vmg-representation-method.md) is selected as the [representation method](vmb-vmg-representation-method.md). These options indicate the inheritance model of the not-yet-encountered class definition.
 
 ## Syntax
 
@@ -38,7 +31,7 @@ When you specify one of these inheritance-model options, that model is used for 
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -50,8 +43,8 @@ When you specify one of these inheritance-model options, that model is used for 
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/vmb, /vmg (Representation Method)](vmb-vmg-representation-method.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

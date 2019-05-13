@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6033 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6033"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6033"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6033"]
 ms.assetid: f9cffdc9-81bd-4a64-a698-02762cbd82c9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6033
 

@@ -1,16 +1,9 @@
 ---
-title: "last_is (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "last_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.last_is"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["last_is attribute"]
 ms.assetid: 9e045ac0-fa38-4249-af55-67bde5d0a58c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # last_is
 
@@ -48,7 +41,7 @@ See [first_is](first-is.md) for an example of how to specify a section of an arr
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "BSCMAKE Error BK1505 | Microsoft Docs"
-ms.custom: ""
+title: "BSCMAKE Error BK1505"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["BK1505"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BK1505"]
 ms.assetid: a25765f8-e950-4ca8-9f16-419d779e2744
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Error BK1505
 

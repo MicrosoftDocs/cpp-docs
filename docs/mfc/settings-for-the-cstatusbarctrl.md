@@ -1,16 +1,9 @@
 ---
-title: "Settings for the CStatusBarCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Settings for the CStatusBarCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CStatusBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["status bar controls [MFC], settings", "CStatusBarCtrl class [MFC], settings"]
 ms.assetid: adeba0c3-17f3-435c-b140-a57845e9ce49
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Settings for the CStatusBarCtrl
 
@@ -29,8 +22,7 @@ You can set the minimum height of a status window's drawing area by calling [Set
 
 You retrieve the widths of the borders of a status window by calling [GetBorders](../mfc/reference/cstatusbarctrl-class.md#getborders). This member function includes the pointer to a three-element array that receives the width of the horizontal border, the vertical border, and the border between rectangles.
 
-## See Also
+## See also
 
 [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

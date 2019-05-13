@@ -1,15 +1,8 @@
 ---
-title: "Best Practices in the Parallel Patterns Library | Microsoft Docs"
-ms.custom: ""
+title: "Best Practices in the Parallel Patterns Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Parallel Patterns Library, practices to avoid", "practices to avoid, Parallel Patterns Library", "best practices, Parallel Patterns Library", "Parallel Patterns Library, best practices"]
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Best Practices in the Parallel Patterns Library
 
@@ -253,7 +246,7 @@ For more information about lambda expressions, see [Lambda Expressions](../../cp
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
@@ -267,4 +260,3 @@ For more information about lambda expressions, see [Lambda Expressions](../../cp
 [How to: Use combinable to Improve Performance](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>
 [Best Practices in the Asynchronous Agents Library](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)<br/>
 [General Best Practices in the Concurrency Runtime](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
-

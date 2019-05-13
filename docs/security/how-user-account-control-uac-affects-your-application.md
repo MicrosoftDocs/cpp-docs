@@ -1,15 +1,8 @@
 ---
-title: "How User Account Control (UAC) Affects Your Application | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "How User Account Control (UAC) Affects Your Application"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["UAC [C++]", "security [C++], User Account Control", "user accounts [C++]", "User Account Control [C++]"]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How User Account Control (UAC) Affects Your Application
 
@@ -19,7 +12,7 @@ User Account Control (UAC) is a feature of Windows Vista in which user accounts 
 
 ## Building Projects after Enabling UAC
 
-If you build a Visual C++ project on Windows Vista with UAC disabled, and you later enable UAC, you must clean and rebuild the project for it to work correctly.
+If you build a Visual Studio C++ project on Windows Vista with UAC disabled, and you later enable UAC, you must clean and rebuild the project for it to work correctly.
 
 ## Applications that Require Administrative Privileges
 
@@ -31,8 +24,8 @@ The second option is to not embed a UAC fragment into the manifest by specifying
 
 The following flowchart describes how your application will run depending on whether UAC is enabled and whether the application has a UAC manifest:
 
-![Windows Vista Loader behavior](media/uacflowchart.png "UACflowchart")
+![Windows Loader behavior](media/uacflowchart.png "Windows Loader behavior")
 
-## See Also
+## See also
 
 [Security Best Practices](security-best-practices-for-cpp.md)

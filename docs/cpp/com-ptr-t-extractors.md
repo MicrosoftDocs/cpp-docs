@@ -1,16 +1,9 @@
 ---
-title: "_com_ptr_t Extractors | Microsoft Docs"
-ms.custom: ""
+title: "_com_ptr_t Extractors"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::operatorInterface&", "_com_ptr_t::operatorbool", "_com_ptr_t::operator->", "_com_ptr_t::operator*"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator Interface& [C++]", "* operator [C++], with specific objects", "operator& [C++]", "operator* [C++]", "-> operator [C++], with specific objects", "& operator [C++], with specific objects", "operator Interface* [C++]", "operator * [C++]", "operator->", "operator bool", "extractors, _com_ptr_t class", "extractors [C++]"]
 ms.assetid: 194b9e0e-123c-49ff-a187-0a7fcd68145a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t Extractors
 
@@ -21,11 +14,11 @@ Extract the encapsulated COM interface pointer.
 ## Syntax
 
 ```
-operator Interface*( ) const throw( ); 
-operator Interface&( ) const; 
-Interface& operator*( ) const; 
-Interface* operator->( ) const; 
-Interface** operator&( ) throw( ); 
+operator Interface*( ) const throw( );
+operator Interface&( ) const;
+Interface& operator*( ) const;
+Interface* operator->( ) const;
+Interface** operator&( ) throw( );
 operator bool( ) const throw( );
 ```
 

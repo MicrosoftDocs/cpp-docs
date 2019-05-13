@@ -1,16 +1,9 @@
 ---
-title: "CHttpFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CHttpFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CHttpFile", "AFXINET/CHttpFile", "AFXINET/CHttpFile::CHttpFile", "AFXINET/CHttpFile::AddRequestHeaders", "AFXINET/CHttpFile::EndRequest", "AFXINET/CHttpFile::GetFileURL", "AFXINET/CHttpFile::GetObject", "AFXINET/CHttpFile::GetVerb", "AFXINET/CHttpFile::QueryInfo", "AFXINET/CHttpFile::QueryInfoStatusCode", "AFXINET/CHttpFile::SendRequest", "AFXINET/CHttpFile::SendRequestEx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHttpFile [MFC], CHttpFile", "CHttpFile [MFC], AddRequestHeaders", "CHttpFile [MFC], EndRequest", "CHttpFile [MFC], GetFileURL", "CHttpFile [MFC], GetObject", "CHttpFile [MFC], GetVerb", "CHttpFile [MFC], QueryInfo", "CHttpFile [MFC], QueryInfoStatusCode", "CHttpFile [MFC], SendRequest", "CHttpFile [MFC], SendRequestEx"]
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHttpFile Class
 
@@ -272,7 +265,7 @@ A combination of the attribute to query and the following flags that specify the
 
 - HTTP_QUERY_FLAG_REQUEST_HEADERS Typically, the application queries the response headers, but an application can also query request headers by using this flag.
 
-- HTTP_QUERY_FLAG_SYSTEMTIME For those headers whose value is a date/time string, such as "Last-Modified-Time," this flag returns the header value as a standard Win32 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that does not require the application to parse the data. If you use this flag, you may want to use the `SYSTEMTIME` override of the function.
+- HTTP_QUERY_FLAG_SYSTEMTIME For those headers whose value is a date/time string, such as "Last-Modified-Time," this flag returns the header value as a standard Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that does not require the application to parse the data. If you use this flag, you may want to use the `SYSTEMTIME` override of the function.
 
 - HTTP_QUERY_FLAG_NUMBER For those headers whose value is a number, such as the status code, this flag returns the data as a 32-bit number.
 
@@ -294,7 +287,7 @@ A reference to the [CString](../../atl-mfc-shared/reference/cstringt-class.md) o
 An index value. See *lpdwIndex*.
 
 *pSysTime*<br/>
-A pointer to a Win32 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure.
+A pointer to a Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.
 
 ### Return Value
 
@@ -493,7 +486,7 @@ This code fragment sends the content of a string to a DLL named MFCISAPI.DLL on 
 
 [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/cpp/chttpfile-class_1.cpp)]
 
-## See Also
+## See also
 
 [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

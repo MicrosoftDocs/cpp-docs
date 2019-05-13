@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2271 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2271"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2271"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2271"]
 ms.assetid: ea47bf57-f55d-4171-8e98-95a71d62820e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2271
 

@@ -1,15 +1,8 @@
 ---
-title: "Standard Commands | Microsoft Docs"
-ms.custom: ""
+title: "Standard Commands"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["File menu", "identifiers [MFC], command IDs", "command IDs, standard commands", "OLE commands", "commands [MFC], standard", "standard command IDs", "Window menu commands", "standard commands", "View menu commands", "Edit menu standard commands", "Help [MFC], menus", "programmer-defined IDs [MFC]"]
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Standard Commands
 
@@ -43,7 +36,6 @@ The framework provides varying levels of support for these commands. Some comman
 
 For more information about the commands supported and the level of implementation provided, see [Technical Note 22](../mfc/tn022-standard-commands-implementation.md). The standard commands are defined in the file AFXRES.H.
 
-## See Also
+## See also
 
 [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)
-

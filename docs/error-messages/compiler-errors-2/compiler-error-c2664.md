@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2664 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2664"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2664"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2664"]
 ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2664
 
@@ -188,7 +181,7 @@ int main( ) {
 
 ## Example
 
-An enum variable is not converted to its underlying type such that a function call will be satisfied. For more information, see [enum class](../../windows/enum-class-cpp-component-extensions.md). The following sample generates C2664 and shows how to fix it.
+An enum variable is not converted to its underlying type such that a function call will be satisfied. For more information, see [enum class](../../extensions/enum-class-cpp-component-extensions.md). The following sample generates C2664 and shows how to fix it.
 
 ```
 // C2664f.cpp

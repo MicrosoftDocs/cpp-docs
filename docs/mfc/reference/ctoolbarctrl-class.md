@@ -1,16 +1,9 @@
 ---
-title: "CToolBarCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CToolBarCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CToolBarCtrl", "AFXCMN/CToolBarCtrl", "AFXCMN/CToolBarCtrl::CToolBarCtrl", "AFXCMN/CToolBarCtrl::AddBitmap", "AFXCMN/CToolBarCtrl::AddButtons", "AFXCMN/CToolBarCtrl::AddString", "AFXCMN/CToolBarCtrl::AddStrings", "AFXCMN/CToolBarCtrl::AutoSize", "AFXCMN/CToolBarCtrl::ChangeBitmap", "AFXCMN/CToolBarCtrl::CheckButton", "AFXCMN/CToolBarCtrl::CommandToIndex", "AFXCMN/CToolBarCtrl::Create", "AFXCMN/CToolBarCtrl::CreateEx", "AFXCMN/CToolBarCtrl::Customize", "AFXCMN/CToolBarCtrl::DeleteButton", "AFXCMN/CToolBarCtrl::EnableButton", "AFXCMN/CToolBarCtrl::GetAnchorHighlight", "AFXCMN/CToolBarCtrl::GetBitmap", "AFXCMN/CToolBarCtrl::GetBitmapFlags", "AFXCMN/CToolBarCtrl::GetButton", "AFXCMN/CToolBarCtrl::GetButtonCount", "AFXCMN/CToolBarCtrl::GetButtonInfo", "AFXCMN/CToolBarCtrl::GetButtonSize", "AFXCMN/CToolBarCtrl::GetColorScheme", "AFXCMN/CToolBarCtrl::GetDisabledImageList", "AFXCMN/CToolBarCtrl::GetDropTarget", "AFXCMN/CToolBarCtrl::GetExtendedStyle", "AFXCMN/CToolBarCtrl::GetHotImageList", "AFXCMN/CToolBarCtrl::GetHotItem", "AFXCMN/CToolBarCtrl::GetImageList", "AFXCMN/CToolBarCtrl::GetInsertMark", "AFXCMN/CToolBarCtrl::GetInsertMarkColor", "AFXCMN/CToolBarCtrl::GetItemRect", "AFXCMN/CToolBarCtrl::GetMaxSize", "AFXCMN/CToolBarCtrl::GetMaxTextRows", "AFXCMN/CToolBarCtrl::GetMetrics", "AFXCMN/CToolBarCtrl::GetPadding", "AFXCMN/CToolBarCtrl::GetPressedImageList", "AFXCMN/CToolBarCtrl::GetRect", "AFXCMN/CToolBarCtrl::GetRows", "AFXCMN/CToolBarCtrl::GetState", "AFXCMN/CToolBarCtrl::GetString", "AFXCMN/CToolBarCtrl::GetStyle", "AFXCMN/CToolBarCtrl::GetToolTips", "AFXCMN/CToolBarCtrl::HideButton", "AFXCMN/CToolBarCtrl::HitTest", "AFXCMN/CToolBarCtrl::Indeterminate", "AFXCMN/CToolBarCtrl::InsertButton", "AFXCMN/CToolBarCtrl::InsertMarkHitTest", "AFXCMN/CToolBarCtrl::IsButtonChecked", "AFXCMN/CToolBarCtrl::IsButtonEnabled", "AFXCMN/CToolBarCtrl::IsButtonHidden", "AFXCMN/CToolBarCtrl::IsButtonHighlighted", "AFXCMN/CToolBarCtrl::IsButtonIndeterminate", "AFXCMN/CToolBarCtrl::IsButtonPressed", "AFXCMN/CToolBarCtrl::LoadImages", "AFXCMN/CToolBarCtrl::MapAccelerator", "AFXCMN/CToolBarCtrl::MarkButton", "AFXCMN/CToolBarCtrl::MoveButton", "AFXCMN/CToolBarCtrl::PressButton", "AFXCMN/CToolBarCtrl::ReplaceBitmap", "AFXCMN/CToolBarCtrl::RestoreState", "AFXCMN/CToolBarCtrl::SaveState", "AFXCMN/CToolBarCtrl::SetAnchorHighlight", "AFXCMN/CToolBarCtrl::SetBitmapSize", "AFXCMN/CToolBarCtrl::SetButtonInfo", "AFXCMN/CToolBarCtrl::SetButtonSize", "AFXCMN/CToolBarCtrl::SetButtonStructSize", "AFXCMN/CToolBarCtrl::SetButtonWidth", "AFXCMN/CToolBarCtrl::SetCmdID", "AFXCMN/CToolBarCtrl::SetColorScheme", "AFXCMN/CToolBarCtrl::SetDisabledImageList", "AFXCMN/CToolBarCtrl::SetDrawTextFlags", "AFXCMN/CToolBarCtrl::SetExtendedStyle", "AFXCMN/CToolBarCtrl::SetHotImageList", "AFXCMN/CToolBarCtrl::SetHotItem", "AFXCMN/CToolBarCtrl::SetImageList", "AFXCMN/CToolBarCtrl::SetIndent", "AFXCMN/CToolBarCtrl::SetInsertMark", "AFXCMN/CToolBarCtrl::SetInsertMarkColor", "AFXCMN/CToolBarCtrl::SetMaxTextRows", "AFXCMN/CToolBarCtrl::SetMetrics", "AFXCMN/CToolBarCtrl::SetOwner", "AFXCMN/CToolBarCtrl::SetPadding", "AFXCMN/CToolBarCtrl::SetPressedImageList", "AFXCMN/CToolBarCtrl::SetRows", "AFXCMN/CToolBarCtrl::SetState", "AFXCMN/CToolBarCtrl::SetStyle", "AFXCMN/CToolBarCtrl::SetToolTips", "AFXCMN/CToolBarCtrl::SetWindowTheme"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CToolBarCtrl [MFC], CToolBarCtrl", "CToolBarCtrl [MFC], AddBitmap", "CToolBarCtrl [MFC], AddButtons", "CToolBarCtrl [MFC], AddString", "CToolBarCtrl [MFC], AddStrings", "CToolBarCtrl [MFC], AutoSize", "CToolBarCtrl [MFC], ChangeBitmap", "CToolBarCtrl [MFC], CheckButton", "CToolBarCtrl [MFC], CommandToIndex", "CToolBarCtrl [MFC], Create", "CToolBarCtrl [MFC], CreateEx", "CToolBarCtrl [MFC], Customize", "CToolBarCtrl [MFC], DeleteButton", "CToolBarCtrl [MFC], EnableButton", "CToolBarCtrl [MFC], GetAnchorHighlight", "CToolBarCtrl [MFC], GetBitmap", "CToolBarCtrl [MFC], GetBitmapFlags", "CToolBarCtrl [MFC], GetButton", "CToolBarCtrl [MFC], GetButtonCount", "CToolBarCtrl [MFC], GetButtonInfo", "CToolBarCtrl [MFC], GetButtonSize", "CToolBarCtrl [MFC], GetColorScheme", "CToolBarCtrl [MFC], GetDisabledImageList", "CToolBarCtrl [MFC], GetDropTarget", "CToolBarCtrl [MFC], GetExtendedStyle", "CToolBarCtrl [MFC], GetHotImageList", "CToolBarCtrl [MFC], GetHotItem", "CToolBarCtrl [MFC], GetImageList", "CToolBarCtrl [MFC], GetInsertMark", "CToolBarCtrl [MFC], GetInsertMarkColor", "CToolBarCtrl [MFC], GetItemRect", "CToolBarCtrl [MFC], GetMaxSize", "CToolBarCtrl [MFC], GetMaxTextRows", "CToolBarCtrl [MFC], GetMetrics", "CToolBarCtrl [MFC], GetPadding", "CToolBarCtrl [MFC], GetPressedImageList", "CToolBarCtrl [MFC], GetRect", "CToolBarCtrl [MFC], GetRows", "CToolBarCtrl [MFC], GetState", "CToolBarCtrl [MFC], GetString", "CToolBarCtrl [MFC], GetStyle", "CToolBarCtrl [MFC], GetToolTips", "CToolBarCtrl [MFC], HideButton", "CToolBarCtrl [MFC], HitTest", "CToolBarCtrl [MFC], Indeterminate", "CToolBarCtrl [MFC], InsertButton", "CToolBarCtrl [MFC], InsertMarkHitTest", "CToolBarCtrl [MFC], IsButtonChecked", "CToolBarCtrl [MFC], IsButtonEnabled", "CToolBarCtrl [MFC], IsButtonHidden", "CToolBarCtrl [MFC], IsButtonHighlighted", "CToolBarCtrl [MFC], IsButtonIndeterminate", "CToolBarCtrl [MFC], IsButtonPressed", "CToolBarCtrl [MFC], LoadImages", "CToolBarCtrl [MFC], MapAccelerator", "CToolBarCtrl [MFC], MarkButton", "CToolBarCtrl [MFC], MoveButton", "CToolBarCtrl [MFC], PressButton", "CToolBarCtrl [MFC], ReplaceBitmap", "CToolBarCtrl [MFC], RestoreState", "CToolBarCtrl [MFC], SaveState", "CToolBarCtrl [MFC], SetAnchorHighlight", "CToolBarCtrl [MFC], SetBitmapSize", "CToolBarCtrl [MFC], SetButtonInfo", "CToolBarCtrl [MFC], SetButtonSize", "CToolBarCtrl [MFC], SetButtonStructSize", "CToolBarCtrl [MFC], SetButtonWidth", "CToolBarCtrl [MFC], SetCmdID", "CToolBarCtrl [MFC], SetColorScheme", "CToolBarCtrl [MFC], SetDisabledImageList", "CToolBarCtrl [MFC], SetDrawTextFlags", "CToolBarCtrl [MFC], SetExtendedStyle", "CToolBarCtrl [MFC], SetHotImageList", "CToolBarCtrl [MFC], SetHotItem", "CToolBarCtrl [MFC], SetImageList", "CToolBarCtrl [MFC], SetIndent", "CToolBarCtrl [MFC], SetInsertMark", "CToolBarCtrl [MFC], SetInsertMarkColor", "CToolBarCtrl [MFC], SetMaxTextRows", "CToolBarCtrl [MFC], SetMetrics", "CToolBarCtrl [MFC], SetOwner", "CToolBarCtrl [MFC], SetPadding", "CToolBarCtrl [MFC], SetPressedImageList", "CToolBarCtrl [MFC], SetRows", "CToolBarCtrl [MFC], SetState", "CToolBarCtrl [MFC], SetStyle", "CToolBarCtrl [MFC], SetToolTips", "CToolBarCtrl [MFC], SetWindowTheme"]
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CToolBarCtrl Class
 
@@ -450,7 +443,7 @@ virtual BOOL Create(
 Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described under **Remarks**.
 
 *rect*<br/>
-Optionally specifies the toolbar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Optionally specifies the toolbar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the toolbar control's parent window. It must not be NULL.
@@ -504,7 +497,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described in the **Remarks** section of [Create](#create).
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -908,7 +901,7 @@ BOOL GetItemRect(
 Zero-based index of the button for which to retrieve information.
 
 *lpRect*<br/>
-Address of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that receives the coordinates of the bounding rectangle.
+Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that receives the coordinates of the bounding rectangle.
 
 ### Return Value
 
@@ -929,7 +922,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 ### Parameters
 
 *pSize*<br/>
-A pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that receives the size of the items.
+A pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that receives the size of the items.
 
 ### Return Value
 
@@ -1025,7 +1018,7 @@ BOOL GetRect(
 The button identifier.
 
 *lpRect*<br/>
-A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure to receive the bounding rectangle information.
+A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to receive the bounding rectangle information.
 
 ### Return Value
 
@@ -1148,7 +1141,7 @@ int HitTest(LPPOINT ppt) const;
 ### Parameters
 
 *ppt*<br/>
-A pointer to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the x-coordinate of the hit test in the `x` member and the y-coordinate of the hit test in the `y` member. The coordinates are relative to the toolbar's client area.
+A pointer to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that contains the x-coordinate of the hit test in the `x` member and the y-coordinate of the hit test in the `y` member. The coordinates are relative to the toolbar's client area.
 
 ### Return Value
 
@@ -1251,7 +1244,7 @@ BOOL InsertMarkHitTest(
 ### Parameters
 
 *ppt*<br/>
-A pointer to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the hit test coordinates, relative to the client area of the toolbar.
+A pointer to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that contains the hit test coordinates, relative to the client area of the toolbar.
 
 *ptbim*<br/>
 A pointer to a [TBINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-tbinsertmark) structure that receives the insertion mark information.
@@ -2118,7 +2111,7 @@ Requested number of rows.
 Tells whether to use more rows or fewer rows if the toolbar cannot be resized to the requested number of rows.
 
 *lpRect*<br/>
-Points to the [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the new bounding rectangle of the toolbar.
+Points to the [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the new bounding rectangle of the toolbar.
 
 ### Remarks
 
@@ -2207,10 +2200,10 @@ The return value is not used.
 
 This member function emulates the functionality of the [TB_SETWINDOWTHEME](/windows/desktop/Controls/tb-setwindowtheme) message, as described in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CToolBar Class](../../mfc/reference/ctoolbar-class.md)

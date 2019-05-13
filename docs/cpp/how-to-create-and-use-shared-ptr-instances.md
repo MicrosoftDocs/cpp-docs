@@ -1,14 +1,9 @@
 ---
-title: "How to: Create and Use shared_ptr Instances | Microsoft Docs"
+title: "How to: Create and Use shared_ptr Instances"
 ms.custom: "how-to"
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
+ms.date: "11/19/2018"
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create and Use shared_ptr Instances
 
@@ -16,33 +11,33 @@ The `shared_ptr` type is a smart pointer in the C++ standard library that is des
 
 The following illustration shows several `shared_ptr` instances that point to one memory location.
 
-[![Shared pointer](../cpp/media/shared_ptr.png "shared_ptr")]
+![Shared pointer diagram](../cpp/media/shared_ptr.png "Shared pointer diagram")
 
-## Example
+## Example 1
 
 Whenever possible, use the [make_shared](../standard-library/memory-functions.md#make_shared) function to create a `shared_ptr` when the memory resource is created for the first time. `make_shared` is exception-safe. It uses the same call to allocate the memory for the control block and the resource, and thereby reduces the construction overhead. If you do not use `make_shared`, then you have to use an explicit new expression to create the object before you pass it to the `shared_ptr` constructor. The following example shows various ways to declare and initialize a `shared_ptr` together with a new object.
 
 [!code-cpp[stl_smart_pointers#1](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]
 
-## Example
+## Example 2
 
 The following example shows how to declare and initialize `shared_ptr` instances that take on shared ownership of an object that has already been allocated by another `shared_ptr`. Assume that `sp2` is an initialized `shared_ptr`.
 
 [!code-cpp[stl_smart_pointers#2](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_2.cpp)]
 
-## Example
+## Example 3
 
 `shared_ptr` is also helpful in C++ Standard Library containers when you are using algorithms that copy elements. You can wrap elements in a `shared_ptr`, and then copy it into other containers with the understanding that the underlying memory is valid as long as you need it, and no longer. The following example shows how to use the `replace_copy_if` algorithm on `shared_ptr` instances in a vector.
 
 [!code-cpp[stl_smart_pointers#4](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]
 
-## Example
+## Example 4
 
 You can use `dynamic_pointer_cast`, `static_pointer_cast`, and `const_pointer_cast` to cast a `shared_ptr`. These functions resemble the `dynamic_cast`, `static_cast`, and `const_cast` operators. The following example shows how to test the derived type of each element in a vector of `shared_ptr` of base classes, and then copy the elements and display information about them.
 
 [!code-cpp[stl_smart_pointers#5](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_4.cpp)]
 
-## Example
+## Example 5
 
 You can pass a `shared_ptr` to another function in the following ways:
 
@@ -58,7 +53,7 @@ You can pass a `shared_ptr` to another function in the following ways:
 
 - Sometimes, for example in a `std:vector<shared_ptr<T>>`, you may have to pass each `shared_ptr` to a lambda expression body or named function object. If the lambda or function is not storing the pointer, then pass the `shared_ptr` by reference to avoid invoking the copy constructor for each element.
 
-## Example
+## Example 6
 
 The following example shows how `shared_ptr` overloads various comparison operators to enable pointer comparisons on the memory that is owned by the `shared_ptr` instances.
 
@@ -66,4 +61,4 @@ The following example shows how `shared_ptr` overloads various comparison operat
 
 ## See also
 
-[Smart Pointers](../cpp/smart-pointers-modern-cpp.md)
+[Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)

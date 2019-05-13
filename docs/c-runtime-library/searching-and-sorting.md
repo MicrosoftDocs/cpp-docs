@@ -1,16 +1,9 @@
 ---
-title: "Searching and Sorting | Microsoft Docs"
-ms.custom: ""
+title: "Searching and Sorting"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.programs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sorting data", "data [CRT], searching", "searching [C++], CRT search functions", "searching [C++]"]
 ms.assetid: 15e984f0-e155-46f5-8542-51c458792f54
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Searching and Sorting
 
@@ -29,6 +22,6 @@ Use the following functions for searching and sorting.
 |[qsort](../c-runtime-library/reference/qsort.md)|Quick sort|
 |[qsort_s](../c-runtime-library/reference/qsort-s.md)|A more secure version of **qsort**|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1052 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1052"
 ms.date: "05/08/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1052"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1052"]
 ms.assetid: f2c09a2f-d3c1-4420-9501-ffcb65caf87b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1052
 

@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C3288 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3288"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3288"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3288"]
 ms.assetid: ed08a540-9751-46e1-9cbe-c51d6a49ffab
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3288
 
 'type' : illegal dereference of a handle type
 
-The compiler detected an illegal dereference of a handle type. You can dereference a handle type and assign it to a reference. For more information, see [Tracking Reference Operator](../../windows/tracking-reference-operator-cpp-component-extensions.md).
+The compiler detected an illegal dereference of a handle type. You can dereference a handle type and assign it to a reference. For more information, see [Tracking Reference Operator](../../extensions/tracking-reference-operator-cpp-component-extensions.md).
 
 ## Example
 

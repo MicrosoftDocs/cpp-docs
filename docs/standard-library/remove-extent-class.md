@@ -1,16 +1,9 @@
 ---
-title: "remove_extent Class | Microsoft Docs"
-ms.custom: ""
+title: "remove_extent Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::remove_extent"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["remove_extent class", "remove_extent"]
 ms.assetid: b9320862-3891-49fc-80bc-571eb2c035cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # remove_extent Class
 

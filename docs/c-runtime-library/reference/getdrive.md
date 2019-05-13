@@ -1,19 +1,12 @@
 ---
-title: "_getdrive | Microsoft Docs"
-ms.custom: ""
+title: "_getdrive"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_getdrive"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_getdrive", "getdrive"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["current disk drive", "getdrive function", "disk drives", "_getdrive function"]
 ms.assetid: e40631a0-8f1a-4897-90ac-e1037ff30bca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _getdrive
 

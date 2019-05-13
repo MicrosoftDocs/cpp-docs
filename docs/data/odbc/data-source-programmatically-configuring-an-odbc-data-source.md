@@ -1,16 +1,9 @@
 ---
-title: "Data Source: Programmatically Configuring an ODBC Data Source | Microsoft Docs"
-ms.custom: ""
+title: "Data Source: Programmatically Configuring an ODBC Data Source"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
 f1_keywords: ["SQLConfigDataSource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC data sources, configuring", "SQLConfigDataSource method example", "ODBC connections, configuring", "configuring ODBC data sources"]
 ms.assetid: b8cabe9b-9e12-4d73-ae36-7cb12dee3213
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Programmatically Configuring an ODBC Data Source
 
@@ -110,6 +103,6 @@ You might also want to examine the documentation for the specific driver you are
 
 When ODBC Administrator displays the information for creating a new data source for that particular driver, click **Help**. This opens the Help file for that particular driver, which generally contains important information concerning the use of the driver.
 
-## See Also
+## See also
 
 [Data Source (ODBC)](../../data/odbc/data-source-odbc.md)

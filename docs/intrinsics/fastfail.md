@@ -1,14 +1,7 @@
 ---
-title: "__fastfail | Microsoft Docs"
-ms.custom: ""
+title: "__fastfail"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 9cd32639-e395-4c75-9f3a-ac3ba7f49921
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __fastfail
 
@@ -42,6 +35,7 @@ Internally, `__fastfail` is implemented by using several architecture-specific m
 |x86|int 0x29|ecx|
 |x64|int 0x29|rcx|
 |ARM|Opcode 0xDEFB|r0|
+|ARM64|Opcode 0xF003|x0|
 
 A fast fail request is self-contained and typically requires just two instructions to execute. Once a fast fail request has been executed the kernel then takes the appropriate action. In user-mode code, there are no memory dependencies beyond the instruction pointer itself when a fast fail event is raised. This maximizes its reliability even if there is severe memory corruption.
 
@@ -57,12 +51,12 @@ Support for the native fast fail mechanism began in Windows 8. Windows operating
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`__fastfail`|x86, x64, ARM|
+|`__fastfail`|x86, x64, ARM, ARM64|
 
 **Header file** \<intrin.h>
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

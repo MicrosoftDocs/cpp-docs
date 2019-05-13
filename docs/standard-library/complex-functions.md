@@ -1,9 +1,7 @@
 ---
-title: "&lt;complex&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;complex&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
-f1_keywords: ["xcomplex/std::abs", "xcomplex/std::acos", "xcomplex/std::acosh", "xcomplex/std::arg", "xcomplex/std::asin", "xcomplex/std::asinh", "xcomplex/std::atan", "xcomplex/std::atanh", "xcomplex/std::conj", "xcomplex/std::cos", "xcomplex/std::cosh", "xcomplex/std::exp", "xxcomplex/std::imag", "xcomplex/std::log", "xcomplex/std::log10", "xcomplex/std::norm", "xcomplex/std::polar", "xcomplex/std::pow", "xcomplex/std::proj", "xxcomplex/std::real", "xcomplex/std::sin", "xcomplex/std::sinh", "xcomplex/std::sqrt", "xcomplex/std::tan", "xcomplex/std::tanh"]
+f1_keywords: ["xcomplex/std::abs", "xcomplex/std::acos", "xcomplex/std::acosh", "xcomplex/std::arg", "xcomplex/std::conj", "xcomplex/std::cos", "xcomplex/std::cosh", "xcomplex/std::exp", "xxcomplex/std::imag", "xcomplex/std::log", "xcomplex/std::log10", "xcomplex/std::norm", "xcomplex/std::polar", "xcomplex/std::pow", "xxcomplex/std::real", "xcomplex/std::sin", "xcomplex/std::sinh", "xcomplex/std::sqrt", "xcomplex/std::tan", "xcomplex/std::tanh"]
 ms.assetid: 58b14e94-0e0c-493e-8237-8b4d685904a2
 helpviewer_keywords: ["std::abs [C++]", "std::arg [C++]", "std::conj [C++]", "std::cos [C++]", "std::cosh [C++]", "std::exp [C++]", "std::imag [C++]", "std::log [C++]", "std::log10", "std::norm [C++]", "std::polar [C++]", "std::pow [C++]", "std::real [C++]", "std::sin [C++]", "std::sinh [C++]", "std::sqrt [C++]", "std::tan [C++]", "std::tanh [C++]"]
 ---

@@ -1,14 +1,7 @@
 ---
-title: "ISO646 Operators | Microsoft Docs"
-ms.custom: ""
+title: "ISO646 Operators"
 ms.date: "04/11/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 93e6d3e7-4889-4d8e-8dcb-c1a6b9bbe0f5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ISO646 Operators
 
@@ -30,7 +23,7 @@ Provides readable alternatives to certain operators or punctuators. The standard
 |[xor](../c-runtime-library/reference/xor.md)|An alternative to the ^ operator.|
 |[xor_eq](../c-runtime-library/reference/xor-eq.md)|An alternative to the ^= operator.|
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

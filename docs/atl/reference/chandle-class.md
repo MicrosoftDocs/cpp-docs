@@ -1,16 +1,9 @@
 ---
-title: "CHandle Class | Microsoft Docs"
-ms.custom: ""
+title: "CHandle Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CHandle", "ATLBASE/ATL::CHandle", "ATLBASE/ATL::CHandle::CHandle", "ATLBASE/ATL::CHandle::Attach", "ATLBASE/ATL::CHandle::Close", "ATLBASE/ATL::CHandle::Detach", "ATLBASE/ATL::CHandle::m_h"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHandle class"]
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHandle Class
 
@@ -180,6 +173,6 @@ operator HANDLE() const throw();
 
 Returns the value stored in [CHandle::m_h](#m_h).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

@@ -1,14 +1,7 @@
 ---
-title: "auto Storage-Class Specifier | Microsoft Docs"
-ms.custom: ""
+title: "auto Storage-Class Specifier"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 8e73f57e-aa92-4e41-91ea-5c8ad2a2b332
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # auto Storage-Class Specifier
 
@@ -16,6 +9,6 @@ The **auto** storage-class specifier declares an automatic variable, a variable 
 
 An internal **static** variable (a static variable with local or block scope) can be initialized with the address of any external or **static** item, but not with the address of another **auto** item, because the address of an **auto** item is not a constant.
 
-## See Also
+## See also
 
 [auto Keyword](../cpp/auto-keyword.md)

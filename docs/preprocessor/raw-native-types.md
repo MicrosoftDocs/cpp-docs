@@ -1,16 +1,9 @@
 ---
-title: "raw_native_types | Microsoft Docs"
-ms.custom: ""
+title: "raw_native_types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["raw_native_types"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["raw_native_types attribute"]
 ms.assetid: 9f38daa8-8dc0-46a5-aff9-f1ff9c1e6f48
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # raw_native_types
 **C++ Specific**
@@ -29,7 +22,7 @@ By default, the high-level error-handling methods use the COM support classes [_
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

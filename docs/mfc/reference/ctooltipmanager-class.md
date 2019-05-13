@@ -1,16 +1,9 @@
 ---
-title: "CTooltipManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CTooltipManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTooltipManager", "AFXTOOLTIPMANAGER/CTooltipManager", "AFXTOOLTIPMANAGER/CTooltipManager::CreateToolTip", "AFXTOOLTIPMANAGER/CTooltipManager::DeleteToolTip", "AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipParams", "AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipText", "AFXTOOLTIPMANAGER/CTooltipManager::UpdateTooltips"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTooltipManager [MFC], CreateToolTip", "CTooltipManager [MFC], DeleteToolTip", "CTooltipManager [MFC], SetTooltipParams", "CTooltipManager [MFC], SetTooltipText", "CTooltipManager [MFC], UpdateTooltips"]
 ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTooltipManager Class
 
@@ -145,7 +138,7 @@ When you call this method, all existing tooltip owners receive the AFX_WM_UPDATE
 
 ### Example
 
-The following example demonstrates how to use the `SetTooltipParams` method of the `CTooltipManager` class. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `SetTooltipParams` method of the `CTooltipManager` class. This code snippet is part of the [Draw Client sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/cpp/ctooltipmanager-class_1.cpp)]
 
@@ -193,7 +186,7 @@ void UpdateTooltips();
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

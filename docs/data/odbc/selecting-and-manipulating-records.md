@@ -1,15 +1,8 @@
 ---
-title: "Selecting and Manipulating Records | Microsoft Docs"
-ms.custom: ""
+title: "Selecting and Manipulating Records"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["records, selecting", "record selection, MFC ODBC classes", "ODBC recordsets, selecting records"]
 ms.assetid: 7f0b3a4a-9941-4475-a612-9ec8d15b7691
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Selecting and Manipulating Records
 
@@ -31,6 +24,6 @@ Using a [CRecordset](../../mfc/reference/crecordset-class.md) object at run time
 
 When you finish using the recordset object, you close and destroy it. For more information about recordsets, see [Recordset (ODBC)](../../data/odbc/recordset-odbc.md).
 
-## See Also
+## See also
 
 [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)

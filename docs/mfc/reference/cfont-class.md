@@ -1,16 +1,9 @@
 ---
-title: "CFont Class | Microsoft Docs"
-ms.custom: ""
+title: "CFont Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFont", "AFXWIN/CFont", "AFXWIN/CFont::CFont", "AFXWIN/CFont::CreateFont", "AFXWIN/CFont::CreateFontIndirect", "AFXWIN/CFont::CreatePointFont", "AFXWIN/CFont::CreatePointFontIndirect", "AFXWIN/CFont::FromHandle", "AFXWIN/CFont::GetLogFont"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFont [MFC], CFont", "CFont [MFC], CreateFont", "CFont [MFC], CreateFontIndirect", "CFont [MFC], CreatePointFont", "CFont [MFC], CreatePointFontIndirect", "CFont [MFC], FromHandle", "CFont [MFC], GetLogFont"]
 ms.assetid: 3fad6bfe-d6ce-4ab9-967a-5ce0aa102800
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFont Class
 
@@ -342,9 +335,8 @@ For more information about using graphic objects, see [Graphic Objects](/windows
 
 [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

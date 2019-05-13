@@ -1,22 +1,15 @@
 ---
-title: "__vectorcall | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "__vectorcall"
+ms.date: "12/17/2018" 
 f1_keywords: ["__vectorcall_cpp", "__vectorcall", "_vectorcall"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__vectorcall keyword", "__vectorcall"]
 ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __vectorcall
 
 **Microsoft Specific**
 
-The **__vectorcall** calling convention specifies that arguments to functions are to be passed in registers, when possible. **__vectorcall** uses more registers for arguments than [__fastcall](../cpp/fastcall.md) or the default [x64 calling convention](../build/overview-of-x64-calling-conventions.md) use. The **__vectorcall** calling convention is only supported in native code on x86 and x64 processors that include Streaming SIMD Extensions 2 (SSE2) and above. Use **__vectorcall** to speed functions that pass several floating-point or SIMD vector arguments and perform operations that take advantage of the arguments loaded in registers. The following list shows the features that are common to the x86 and x64 implementations of **__vectorcall**. The differences are explained later in this article.
+The **__vectorcall** calling convention specifies that arguments to functions are to be passed in registers, when possible. **__vectorcall** uses more registers for arguments than [__fastcall](../cpp/fastcall.md) or the default [x64 calling convention](../build/x64-calling-convention.md) use. The **__vectorcall** calling convention is only supported in native code on x86 and x64 processors that include Streaming SIMD Extensions 2 (SSE2) and above. Use **__vectorcall** to speed functions that pass several floating-point or SIMD vector arguments and perform operations that take advantage of the arguments loaded in registers. The following list shows the features that are common to the x86 and x64 implementations of **__vectorcall**. The differences are explained later in this article.
 
 |Element|Implementation|
 |-------------|--------------------|

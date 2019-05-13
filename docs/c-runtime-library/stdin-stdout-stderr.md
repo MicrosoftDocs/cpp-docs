@@ -1,25 +1,18 @@
 ---
-title: "stdin, stdout, stderr | Microsoft Docs"
-ms.custom: ""
+title: "stdin, stdout, stderr"
 ms.date: "10/23/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["stdin", "stderr", "stdout"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdout function", "standard output stream", "standard error stream", "stdin function", "standard input stream", "stderr function"]
 ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # stdin, stdout, stderr
 
 ## Syntax
 
 ```
-FILE *stdin; 
-FILE *stdout; 
-FILE *stderr; 
+FILE *stdin;
+FILE *stdout;
+FILE *stderr;
 #include <stdio.h>
 ```
 
@@ -41,7 +34,7 @@ These pointers can be used as arguments to functions. Some functions, such as [g
 
 These pointers are constants, and cannot be assigned new values. The [freopen](../c-runtime-library/reference/freopen-wfreopen.md) function can be used to redirect the streams to disk files or to other devices. The operating system allows you to redirect a program's standard input and output at the command level.
 
-## See Also
+## See also
 
 [Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

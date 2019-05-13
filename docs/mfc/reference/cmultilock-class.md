@@ -1,16 +1,9 @@
 ---
-title: "CMultiLock Class | Microsoft Docs"
-ms.custom: ""
+title: "CMultiLock Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMultiLock", "AFXMT/CMultiLock", "AFXMT/CMultiLock::CMultiLock", "AFXMT/CMultiLock::IsLocked", "AFXMT/CMultiLock::Lock", "AFXMT/CMultiLock::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiLock [MFC], CMultiLock", "CMultiLock [MFC], IsLocked", "CMultiLock [MFC], Lock", "CMultiLock [MFC], Unlock"]
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMultiLock Class
 
@@ -179,7 +172,6 @@ This function is called by `CMultiLock`'s destructor.
 
 The first form of `Unlock` tries to unlock the synchronization object managed by `CMultiLock`. The second form of `Unlock` tries to unlock the `CSemaphore` objects owned by `CMultiLock`. If `CMultiLock` does not own any locked `CSemaphore` object, the function returns FALSE; otherwise, it returns TRUE. *lCount* and *lpPrevCount* are exactly the same as the parameters of [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). The second form of `Unlock` is rarely applicable to multilock situations.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

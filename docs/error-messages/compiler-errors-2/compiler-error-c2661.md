@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2661 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2661"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2661"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2661"]
 ms.assetid: 60021467-71cd-451b-9877-23840c69309f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2661
 

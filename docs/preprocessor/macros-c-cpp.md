@@ -1,15 +1,8 @@
 ---
-title: "Macros (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "Macros (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor", "preprocessor, macros", "Visual C++, preprocessor macros"]
 ms.assetid: a7bfc5d4-2537-4fe0-bef0-70cec0b43388
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Macros (C/C++)
 Preprocessing expands macros in all lines that are not preprocessor directives (lines that do not have a **#** as the first non-white-space character) and in parts of some directives that are not skipped as part of a conditional compilation. "Conditional compilation" directives allow you to suppress compilation of parts of a source file by testing a constant expression or identifier to determine which text blocks are passed on to the compiler and which text blocks are removed from the source file during preprocessing.
@@ -32,6 +25,6 @@ For more information, see,
 
 - [Predefined Macros](../preprocessor/predefined-macros.md)
 
-## See Also
+## See also
 
 [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)

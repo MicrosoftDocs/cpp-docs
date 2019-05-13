@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Parallel Containers to Increase Efficiency | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Parallel Containers to Increase Efficiency"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["increasing efficiency with parallel containers [Concurrency Runtime]", "concurrent_queue class, examples", "concurrent_vector class, examples"]
 ms.assetid: bd00046d-e9b6-4ae1-b661-3995f671b867
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use Parallel Containers to Increase Efficiency
 
@@ -67,7 +60,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc carmichael-primes.cpp**
 
-## See Also
+## See also
 
 [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

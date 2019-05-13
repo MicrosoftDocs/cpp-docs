@@ -1,20 +1,13 @@
 ---
-title: "mem_fun1_ref_t Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::mem_fun1_ref_t"]
-dev_langs: ["C++"]
+title: "mem_fun1_ref_t Class"
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::mem_fun1_ref_t"]
 helpviewer_keywords: ["mem_fun1_ref_t class"]
 ms.assetid: 7d6742f6-19ba-4523-b3c8-0e5b8f11464f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # mem_fun1_ref_t Class
 
-An adapter class that allows a `non_const` member function that takes a single argument to be called as a binary function object when initialized with a reference argument.
+An adapter class that allows a `non_const` member function that takes a single argument to be called as a binary function object when initialized with a reference argument. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

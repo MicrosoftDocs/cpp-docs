@@ -1,16 +1,9 @@
 ---
-title: "OLE Drag-and-Drop and Data Transfer Classes | Microsoft Docs"
-ms.custom: ""
+title: "OLE Drag-and-Drop and Data Transfer Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "OLE drag and drop [MFC], and data transfer classes", "drag and drop [MFC], classes", "data transfer [MFC], OLE", "data transfer classes [MFC]"]
 ms.assetid: c8ab2825-ed69-4b88-8ae6-f368b94726b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Drag-and-Drop and Data Transfer Classes
 
@@ -28,7 +21,6 @@ Represents the target of a drag-and-drop operation. A `COleDropTarget` object co
 [COleDataObject](../mfc/reference/coledataobject-class.md)<br/>
 Used as the receiver side to `COleDataSource`. `COleDataObject` objects provide access to the data stored by a `COleDataSource` object.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "noreturn | Microsoft Docs"
-ms.custom: ""
+title: "noreturn"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["noreturn_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], noreturn", "noreturn __declspec keyword"]
 ms.assetid: 9c6517e5-22d7-4051-9974-3d2200ae4d1d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # noreturn
 

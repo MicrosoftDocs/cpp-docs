@@ -1,16 +1,9 @@
 ---
-title: "CGlobalHeap Class | Microsoft Docs"
-ms.custom: ""
+title: "CGlobalHeap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CGlobalHeap", "ATLMEM/ATL::CGlobalHeap", "ATLMEM/ATL::CGlobalHeap::Allocate", "ATLMEM/ATL::CGlobalHeap::Free", "ATLMEM/ATL::CGlobalHeap::GetSize", "ATLMEM/ATL::CGlobalHeap::Reallocate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CGlobalHeap class"]
 ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CGlobalHeap Class
 
@@ -144,7 +137,7 @@ Call [CGlobalHeap::Free](#free) to free the memory allocated by this method.
 
 Implemented using [GlobalReAlloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComHeap Class](../../atl/reference/ccomheap-class.md)<br/>

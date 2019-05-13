@@ -1,15 +1,8 @@
 ---
-title: "Asynchronous Agents | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Asynchronous Agents"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["asynchronous agents", "agents [Concurrency Runtime]"]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Asynchronous Agents
 
@@ -21,7 +14,7 @@ The Agents Library defines the [concurrency::agent](../../parallel/concrt/refere
 
 Agents have a set life cycle. The [concurrency::agent_status](reference/concurrency-namespace-enums.md#agent_status) enumeration defines the various states of an agent. The following illustration is a state diagram that shows how agents progress from one state to another. In this illustration, solid lines represent methods that you call from your application; dotted lines represent methods that are called from the runtime.
 
-![Agent State Diagram](../../parallel/concrt/media/agentstate.png "agentstate")
+![Agent State Diagram](../../parallel/concrt/media/agentstate.png "Agent State Diagram")
 
 The following table describes each state in the `agent_status` enumeration.
 
@@ -60,7 +53,6 @@ The runtime does not manage exceptions that are thrown by asynchronous agents. F
 
 For an example that shows how to create a basic agent-based application, see [Walkthrough: Creating an Agent-Based Application](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md).
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)
-

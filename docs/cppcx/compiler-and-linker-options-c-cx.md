@@ -1,13 +1,7 @@
 ---
-title: "Compiler and Linker options (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Compiler and Linker options (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Compiler and Linker options (C++/CX)
 
@@ -41,6 +35,6 @@ The %LIBPATH% environment variable specifies the default path to search for .win
 
 When you use **/ZW**, the compiler automatically links to the DLL version of the C Runtime (CRT). Linking to the static library version is not allowed, and any use of CRT functions that are not allowed in a Universal Windows Platform app will cause a compile-time error.
 
-## See Also
+## See also
 
 [Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)

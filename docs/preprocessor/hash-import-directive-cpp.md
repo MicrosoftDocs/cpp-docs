@@ -1,16 +1,9 @@
 ---
-title: "#import Directive (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "#import Directive (C++)"
+ms.date: "03/27/2019"
 f1_keywords: ["#import"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".tlh files", "#import directive", "import directive (#import)", "tlh files", "tlbid switch", "preprocessor, directives", "COM, type library header file"]
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #import Directive (C++)
 
@@ -114,7 +107,7 @@ The following compiler optimizations come with the **#import** directive:
 
 - When **#import** is processed, the compiler first checks if the header exists and is up to date. If yes, then it does not need to be re-created.
 
-The **#import** directive also participates in minimal rebuild and can be placed in a precompiled header file. See [Creating Precompiled Header Files](../build/reference/creating-precompiled-header-files.md) for more information.
+The **#import** directive also participates in minimal rebuild and can be placed in a precompiled header file. See [Creating Precompiled Header Files](../build/creating-precompiled-header-files.md) for more information.
 
 ###  <a name="_predir_the_primary_type_library_header_file"></a> Primary Type Library Header File
 The primary type library header file consists of seven sections:
@@ -153,7 +146,7 @@ using namespace MyLib;
 
 immediately after the **#import** statement in the source code.
 
-The namespace can be suppressed by using the [no_namespace](#_predir_no_namespace) attribute of the **#import** directive. However, suppressing the namespace may lead to name collisions. The namespace can also be renamed by the [rename_namespace](#_predir_rename_namespace) attribute.
+The namespace can be suppressed by using the [no_namespace](no-namespace.md)) attribute of the **#import** directive. However, suppressing the namespace may lead to name collisions. The namespace can also be renamed by the [rename_namespace](rename-namespace.md) attribute.
 
 The compiler provides the full path to any type library dependency required by the type library it is currently processing. The path is written, in the form of comments, into the type library header (.TLH) that the compiler generates for each processed type library.
 
@@ -184,7 +177,7 @@ For more information, see [#import Attributes](../preprocessor/hash-import-attri
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)<br/>
 [Compiler COM Support](../cpp/compiler-com-support.md)

@@ -1,23 +1,16 @@
 ---
-title: "Dynamically Binding Columns in Your Provider | Microsoft Docs"
-ms.custom: ""
+title: "Dynamically Binding Columns in Your Provider"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["columns [C++], dynamic column binding", "dynamic column binding", "providers [C++], dynamic column binding"]
 ms.assetid: 45e811e3-f5a7-4627-98cc-bf817c4e556e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynamically Binding Columns in Your Provider
 
 Make sure you really need dynamic column binding. You might need it because:
 
-- Your rowset columns are not defined at compile time.
+- Your rowset columns aren't defined at compile time.
 
-- You support an element such as bookmarks that adds columns.
+- You support an element such as bookmark that adds columns.
 
 ## To implement dynamic column binding
 
@@ -84,6 +77,6 @@ Make sure you really need dynamic column binding. You might need it because:
     }
     ```
 
-## See Also
+## See also
 
 [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

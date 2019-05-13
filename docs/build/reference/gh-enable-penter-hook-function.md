@@ -1,16 +1,9 @@
 ---
-title: "-Gh (Enable _penter Hook Function) | Microsoft Docs"
-ms.custom: ""
+title: "/Gh (Enable _penter Hook Function)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_penter"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Gh compiler option [C++]", "Gh compiler option [C++]", "_penter function", "-Gh compiler option [C++]"]
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Gh (Enable _penter Hook Function)
 
@@ -36,7 +29,7 @@ This declaration is not available for 64-bit projects.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -94,7 +87,7 @@ In a function!
 In a function!
 ```
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

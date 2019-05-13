@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1900 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1900"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1900"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1900"]
 ms.assetid: 3aaa583b-4c1a-45de-aa34-527d806f2cb5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1900
 

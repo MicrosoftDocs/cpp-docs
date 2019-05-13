@@ -1,16 +1,9 @@
 ---
-title: "CRestrictions Class | Microsoft Docs"
-ms.custom: ""
+title: "CRestrictions Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::CRestrictions", "CRestrictions", "ATL.CRestrictions", "CRestrictions.Open", "ATL::CRestrictions::Open", "ATL.CRestrictions.Open", "CRestrictions::Open"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRestrictions class", "Open method"]
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRestrictions Class
 
@@ -84,9 +77,9 @@ One of the standard HRESULT values.
 
 You can specify a maximum of seven restrictions on a schema rowset.
 
-See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) for information about the defined restrictions on each schema rowset.
+See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) for information about the defined restrictions on each schema rowset.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

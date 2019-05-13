@@ -1,16 +1,9 @@
 ---
-title: "-Fo (Object File Name) | Microsoft Docs"
-ms.custom: ""
+title: "/Fo (Object File Name)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Fo", "VC.Project.VCCLCompilerTool.ObjectFile", "VC.Project.VCCLWCECompilerTool.ObjectFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Fo compiler option [C++]", "object files, naming", "/Fo compiler option [C++]", "-Fo compiler option [C++]"]
 ms.assetid: 0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Fo (Object File Name)
 
@@ -28,7 +21,7 @@ If you do not use this option, the object file uses the base name of the source 
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -48,9 +41,9 @@ The following command line creates an object file named THIS.obj in an existing 
 CL /FoB:\OBJECT\ THIS.C
 ```
 
-## See Also
+## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Specifying the Pathname](../../build/reference/specifying-the-pathname.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[Specifying the Pathname](specifying-the-pathname.md)

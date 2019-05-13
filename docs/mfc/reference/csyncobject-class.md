@@ -1,16 +1,9 @@
 ---
-title: "CSyncObject Class | Microsoft Docs"
-ms.custom: ""
+title: "CSyncObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSyncObject", "AFXMT/CSyncObject", "AFXMT/CSyncObject::CSyncObject", "AFXMT/CSyncObject::Lock", "AFXMT/CSyncObject::Unlock", "AFXMT/CSyncObject::m_hObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSyncObject [MFC], CSyncObject", "CSyncObject [MFC], Lock", "CSyncObject [MFC], Unlock", "CSyncObject [MFC], m_hObject"]
 ms.assetid: c62ea6eb-a17b-4e01-aed4-321fc435a5f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSyncObject Class
 
@@ -150,8 +143,7 @@ Default implementation always returns TRUE.
 
 The default implementation of the declaration with two parameters always returns TRUE. This function is called to release access to the synchronization object owned by the calling thread. The second declaration is provided for synchronization objects such as semaphores that allow more than one access of a controlled resource.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

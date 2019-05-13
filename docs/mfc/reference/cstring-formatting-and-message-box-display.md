@@ -1,16 +1,9 @@
 ---
-title: "CString Formatting and Message-Box Display | Microsoft Docs"
-ms.custom: ""
+title: "CString Formatting and Message-Box Display"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros.strings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CString objects [MFC], formatting and message boxes"]
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CString Formatting and Message-Box Display
 
@@ -213,7 +206,7 @@ The second form of the function uses the string resource with the ID *nIDPrompt*
 
 [!code-cpp[NVC_MFCWindowing#133](../../mfc/reference/codesnippet/cpp/cstring-formatting-and-message-box-display_4.cpp)]
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [CStringT Class](../../atl-mfc-shared/reference/cstringt-class.md)

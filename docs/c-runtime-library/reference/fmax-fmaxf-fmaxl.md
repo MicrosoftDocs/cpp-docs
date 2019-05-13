@@ -1,19 +1,12 @@
 ---
-title: "fmax, fmaxf, fmaxl | Microsoft Docs"
-ms.custom: ""
+title: "fmax, fmaxf, fmaxl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["fmax", "fmaxf", "fmaxl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fmax", "fmaxf", "fmaxl", "math/fmax", "math/fmaxf", "math/fmaxl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fmax function", "fmaxf function", "fmaxl function"]
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fmax, fmaxf, fmaxl
 
@@ -46,7 +39,6 @@ long double fmaxl(
    long double x,
    long double y
 );
-
 ```
 
 ### Parameters

@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Returning Error Codes From a Method | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Returning Error Codes From a Method"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "SetNotSupported method, using", "errors [MFC], ActiveX control error codes", "GetNotSupported method [MFC]", "FireError method [MFC]", "SCODE, MFC ActiveX controls", "ThrowError method [MFC]"]
 ms.assetid: 771fb9c9-2413-4dcc-b386-7bc4c4adeafd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Returning Error Codes From a Method
 
@@ -26,7 +19,6 @@ For a list of predefined SCODEs and instructions on defining custom SCODEs, see 
 
 For more information on reporting exceptions in other areas of your code, see [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) and the section [Handling Errors in Your ActiveX Control](../mfc/mfc-activex-controls-advanced-topics.md) in ActiveX Controls: Advanced Topics.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-

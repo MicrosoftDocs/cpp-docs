@@ -1,16 +1,9 @@
 ---
-title: "detect_mismatch | Microsoft Docs"
-ms.custom: ""
+title: "detect_mismatch"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.detect_mismatch", "detect_mismatch_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, detect_mismatch", "detect_mismatch pragma"]
 ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # detect_mismatch
 Places a record in an object. The linker checks these records for potential mismatches.
@@ -18,7 +11,7 @@ Places a record in an object. The linker checks these records for potential mism
 ## Syntax
 
 ```
-#pragma detect_mismatch( "name", "value"))
+#pragma detect_mismatch("name", "value")
 ```
 
 ## Remarks
@@ -45,6 +38,6 @@ int main ()
 
 If you compile both of these files by using the command line `cl pragma_directive_detect_mismatch_a.cpp pragma_directive_detect_mismatch_b.cpp`, you will receive the error `LNK2038`.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

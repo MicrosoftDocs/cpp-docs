@@ -1,16 +1,9 @@
 ---
-title: "CAnimationSize Class | Microsoft Docs"
-ms.custom: ""
+title: "CAnimationSize Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize::CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationSize::GetCX", "AFXANIMATIONCONTROLLER/CAnimationSize::GetCY", "AFXANIMATIONCONTROLLER/CAnimationSize::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationSize::GetValue", "AFXANIMATIONCONTROLLER/CAnimationSize::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationSize::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationSize::m_cxValue", "AFXANIMATIONCONTROLLER/CAnimationSize::m_cyValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationSize [MFC], CAnimationSize", "CAnimationSize [MFC], AddTransition", "CAnimationSize [MFC], GetCX", "CAnimationSize [MFC], GetCY", "CAnimationSize [MFC], GetDefaultValue", "CAnimationSize [MFC], GetValue", "CAnimationSize [MFC], SetDefaultValue", "CAnimationSize [MFC], GetAnimationVariableList", "CAnimationSize [MFC], m_cxValue", "CAnimationSize [MFC], m_cyValue"]
 ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimationSize Class
 
@@ -281,6 +274,6 @@ Specifies new default size.
 
 Use this function to set a default value to animation object. This methods assigns default values to Width and Height of animation size. It also recreates underlying COM objects if they have been created. If you subscribed this animation object to events (ValueChanged or IntegerValueChanged), you need to re-enable these events.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

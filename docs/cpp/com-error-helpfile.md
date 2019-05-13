@@ -1,16 +1,9 @@
 ---
-title: "_com_error::HelpFile | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::HelpFile"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::HelpFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["HelpFile method [C++]"]
 ms.assetid: d2d3a0a1-6b62-4d52-a818-3cfae545a4af
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::HelpFile
 

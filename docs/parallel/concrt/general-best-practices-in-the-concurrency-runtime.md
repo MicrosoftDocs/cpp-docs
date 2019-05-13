@@ -1,15 +1,8 @@
 ---
-title: "General Best Practices in the Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "General Best Practices in the Concurrency Runtime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, general best practices"]
 ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # General Best Practices in the Concurrency Runtime
 
@@ -148,7 +141,7 @@ The Concurrency Runtime does not support the use of concurrency objects in a sha
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Parallel Patterns Library (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>

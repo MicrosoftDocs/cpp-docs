@@ -1,16 +1,9 @@
 ---
-title: "Making an ATL Object Noncreatable | Microsoft Docs"
-ms.custom: ""
+title: "Making an ATL Object Noncreatable"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.ATL.objects"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["noncreatable ATL objects", "ATL projects, noncreatable objects"]
 ms.assetid: 80d0bca2-dea0-4801-9a85-6243124437f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Making an ATL Object Noncreatable
 
@@ -32,11 +25,10 @@ You can change the attributes of an ATL-based COM object so that a client cannot
     }
     ```
 
-## See Also
+## See also
 
 [ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ Project Types](../../ide/visual-cpp-project-types.md)<br/>
-[Creating Desktop Projects By Using Application Wizards](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[C++ project types in Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
 [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)

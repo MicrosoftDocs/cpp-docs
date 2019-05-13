@@ -1,15 +1,9 @@
 ---
-title: "Platform::Collections::Details Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections::Details Namespace"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::Details"]
-dev_langs: ["C++"]
 ms.assetid: d5ac76ee-b568-4841-882f-738ed6fa4f1e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Details Namespace
 
@@ -35,6 +29,6 @@ Members of this namespace are defined in collection.h and are not displayed in O
 
 **Namespace:** Platform::Collection::Details
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

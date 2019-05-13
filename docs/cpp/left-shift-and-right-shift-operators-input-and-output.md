@@ -1,16 +1,9 @@
 ---
-title: "Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;) | Microsoft Docs"
-ms.custom: ""
+title: "Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)"
 ms.date: "08/13/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["<<", ">>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<< operator [C++], with specific objects", "left shift operators [C++]", "right shift operators [C++]", "bitwise-shift operators [C++]", ">> operator", "shift operators [C++]", "operators [C++], shift"]
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)
 
@@ -53,7 +46,7 @@ int main() {
 }
 ```
 
-If you left-shift a signed number so that the sign bit is affected, the result is undefined. The following example shows what happens in Visual C++ when a 1 bit is left-shifted into the sign bit position.
+If you left-shift a signed number so that the sign bit is affected, the result is undefined. The following example shows what happens when a 1 bit is left-shifted into the sign bit position.
 
 ```cpp
 #include <iostream>
@@ -81,7 +74,7 @@ int main() {
 The right-shift operator causes the bit pattern in *shift-expression* to be shifted to the right by the number of positions specified by *additive-expression*. For unsigned numbers, the bit positions that have been vacated by the shift operation are zero-filled. For signed numbers, the sign bit is used to fill the vacated bit positions. In other words, if the number is positive, 0 is used, and if the number is negative, 1 is used.
 
 > [!IMPORTANT]
-> The result of a right-shift of a signed negative number is implementation-dependent. Although Visual C++ uses the sign bit to fill vacated bit positions, there is no guarantee that other implementations also do so.
+> The result of a right-shift of a signed negative number is implementation-dependent. Although the Microsoft C++ compiler uses the sign bit to fill vacated bit positions, there is no guarantee that other implementations also do so.
 
 This example shows right-shift operations using unsigned numbers:
 

@@ -1,15 +1,8 @@
 ---
-title: "One-Dimensional Arrays | Microsoft Docs"
-ms.custom: ""
+title: "One-Dimensional Arrays"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["brackets [ ]", "brackets [ ], arrays", "one-dimensional arrays", "arrays [C++], one-dimensional", "square brackets [ ]", "square brackets [ ], arrays", "subscript expressions"]
 ms.assetid: e28536e5-3b77-46b5-97fd-9b938c771816
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # One-Dimensional Arrays
 
@@ -53,6 +46,6 @@ For example, suppose the identifier `line` refers to an array of `int` values. T
 
 The subscript expression `line[0]` represents the value of the first element of line, since the offset from the address represented by `line` is 0. Similarly, an expression such as `line[5]` refers to the element offset five positions from line, or the sixth element of the array.
 
-## See Also
+## See also
 
 [Subscript Operator:](../cpp/subscript-operator.md)

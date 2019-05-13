@@ -1,16 +1,9 @@
 ---
-title: "Combo Box Handlers | Microsoft Docs"
-ms.custom: ""
+title: "Combo Box Handlers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["ON_CBN_KILLFOCUS", "ON_CBN_ERRSPACE", "ON_CBN_EDITCHANGE", "ON_CBN_CLOSEUP", "ON_CBN_DBLCLK", "ON_CBN_EDITUPDATE", "ON_CBN_DROPDOWN", "ON_CBN_SELENDOK", "ON_CBN_SELCHANGE", "ON_CBN_SETFOCUS", "ON_CBN_SELENDCANCEL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ON_CBN_CLOSEUP", "ON_CBN_SETFOCUS", "ON_CBN_DBLCLK", "ON_CBN_SELENDCANCEL", "ON_CBN_DROPDOWN", "ON_CBN_EDITUPDATE", "ON_CBN_KILLFOCUS", "combo boxes [MFC], handlers", "ON_CBN_EDITCHANGE", "ON_CBN_ERRSPACE", "ON_CBN_SELENDOK", "ON_CBN_SELCHANGE"]
 ms.assetid: 7f092412-01b7-4242-95ec-41ba506b9d71
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Combo Box Handlers
 
@@ -30,7 +23,6 @@ The following map entries correspond to the function prototypes.
 |ON_CBN_SELENDOK( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 |ON_CBN_SETFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

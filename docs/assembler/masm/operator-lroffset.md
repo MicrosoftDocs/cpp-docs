@@ -1,16 +1,9 @@
 ---
-title: "operator LROFFSET | Microsoft Docs"
-ms.custom: ""
+title: "operator LROFFSET"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["LROFFSET", "operator LROFFSET"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator LROFFSET", "LROFFSET operator"]
 ms.assetid: 61ab45d4-7a30-440d-9c11-2a9dfa6ae565
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator LROFFSET
 

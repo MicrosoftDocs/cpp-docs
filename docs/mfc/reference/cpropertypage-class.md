@@ -1,16 +1,9 @@
 ---
-title: "CPropertyPage Class | Microsoft Docs"
-ms.custom: ""
+title: "CPropertyPage Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPropertyPage", "AFXDLGS/CPropertyPage", "AFXDLGS/CPropertyPage::CPropertyPage", "AFXDLGS/CPropertyPage::CancelToClose", "AFXDLGS/CPropertyPage::Construct", "AFXDLGS/CPropertyPage::GetPSP", "AFXDLGS/CPropertyPage::OnApply", "AFXDLGS/CPropertyPage::OnCancel", "AFXDLGS/CPropertyPage::OnKillActive", "AFXDLGS/CPropertyPage::OnOK", "AFXDLGS/CPropertyPage::OnQueryCancel", "AFXDLGS/CPropertyPage::OnReset", "AFXDLGS/CPropertyPage::OnSetActive", "AFXDLGS/CPropertyPage::OnWizardBack", "AFXDLGS/CPropertyPage::OnWizardFinish", "AFXDLGS/CPropertyPage::OnWizardNext", "AFXDLGS/CPropertyPage::QuerySiblings", "AFXDLGS/CPropertyPage::SetModified", "AFXDLGS/CPropertyPage::m_psp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPropertyPage [MFC], CPropertyPage", "CPropertyPage [MFC], CancelToClose", "CPropertyPage [MFC], Construct", "CPropertyPage [MFC], GetPSP", "CPropertyPage [MFC], OnApply", "CPropertyPage [MFC], OnCancel", "CPropertyPage [MFC], OnKillActive", "CPropertyPage [MFC], OnOK", "CPropertyPage [MFC], OnQueryCancel", "CPropertyPage [MFC], OnReset", "CPropertyPage [MFC], OnSetActive", "CPropertyPage [MFC], OnWizardBack", "CPropertyPage [MFC], OnWizardFinish", "CPropertyPage [MFC], OnWizardNext", "CPropertyPage [MFC], QuerySiblings", "CPropertyPage [MFC], SetModified", "CPropertyPage [MFC], m_psp"]
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPropertyPage Class
 
@@ -538,12 +531,12 @@ The framework keeps track of which pages are "dirty," that is, property pages fo
 
 [!code-cpp[NVC_MFCDocView#127](../../mfc/codesnippet/cpp/cpropertypage-class_17.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
-[MFC Sample PROPDLG](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample PROPDLG](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CDialog Class](../../mfc/reference/cdialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPropertySheet Class](../../mfc/reference/cpropertysheet-class.md)<br/>

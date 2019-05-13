@@ -1,16 +1,9 @@
 ---
-title: "_ATL_MODULE70 Structure | Microsoft Docs"
-ms.custom: ""
+title: "_ATL_MODULE70 Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["_ATL_MODULE70", "ATL::_ATL_MODULE70", "ATL._ATL_MODULE70"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_MODULE70 structure", "_ATL_MODULE70 structure"]
 ms.assetid: b059b2c8-dfd1-4ac9-b07d-39df638cc7b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _ATL_MODULE70 Structure
 
@@ -49,7 +42,6 @@ Used to coordinate access to internal data in multithreaded situations.
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "CScrollView Class | Microsoft Docs"
-ms.custom: ""
+title: "CScrollView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CScrollView", "AFXWIN/CScrollView", "AFXWIN/CScrollView::CScrollView", "AFXWIN/CScrollView::CheckScrollBars", "AFXWIN/CScrollView::FillOutsideRect", "AFXWIN/CScrollView::GetDeviceScrollPosition", "AFXWIN/CScrollView::GetDeviceScrollSizes", "AFXWIN/CScrollView::GetScrollPosition", "AFXWIN/CScrollView::GetTotalSize", "AFXWIN/CScrollView::ResizeParentToFit", "AFXWIN/CScrollView::ScrollToPosition", "AFXWIN/CScrollView::SetScaleToFitSize", "AFXWIN/CScrollView::SetScrollSizes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CScrollView [MFC], CScrollView", "CScrollView [MFC], CheckScrollBars", "CScrollView [MFC], FillOutsideRect", "CScrollView [MFC], GetDeviceScrollPosition", "CScrollView [MFC], GetDeviceScrollSizes", "CScrollView [MFC], GetScrollPosition", "CScrollView [MFC], GetTotalSize", "CScrollView [MFC], ResizeParentToFit", "CScrollView [MFC], ScrollToPosition", "CScrollView [MFC], SetScaleToFitSize", "CScrollView [MFC], SetScrollSizes"]
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CScrollView Class
 
@@ -59,7 +52,7 @@ To scroll automatically in response to messages from the keyboard, add a WM_KEYD
 
 You can handle mouse wheel scrolling yourself by overriding the message-mapped [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) and [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) member functions. As they are for `CScrollView`, these member functions support the recommended behaviour for [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel), the wheel rotation message.
 
-To take advantage of automatic scrolling, derive your view class from `CScrollView` instead of from `CView`. When the view is first created, if you want to calculate the size of the scrollable view based on the size of the document, call the `SetScrollSizes` member function from your override of either [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) or [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate). (You must write your own code to query the size of the document. For an example, see the [Scribble sample](../../visual-cpp-samples.md).)
+To take advantage of automatic scrolling, derive your view class from `CScrollView` instead of from `CView`. When the view is first created, if you want to calculate the size of the scrollable view based on the size of the document, call the `SetScrollSizes` member function from your override of either [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) or [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate). (You must write your own code to query the size of the document. For an example, see the [Scribble sample](../../overview/visual-cpp-samples.md).)
 
 The call to the `SetScrollSizes` member function sets the view's mapping mode, the total dimensions of the scroll view, and the amounts to scroll horizontally and vertically. All sizes are in logical units. The logical size of the view is usually calculated from data stored in the document, but in some cases you may want to specify a fixed size. For examples of both approaches, see [CScrollView::SetScrollSizes](#setscrollsizes).
 
@@ -351,9 +344,9 @@ You must set the mapping mode to any of the Windows mapping modes except MM_ISOT
 
 [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/cpp/cscrollview-class_6.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC Sample DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [CView Class](../../mfc/reference/cview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CView Class](../../mfc/reference/cview-class.md)<br/>

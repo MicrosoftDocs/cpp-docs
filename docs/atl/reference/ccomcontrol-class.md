@@ -1,16 +1,9 @@
 ---
-title: "CComControl Class | Microsoft Docs"
-ms.custom: ""
+title: "CComControl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComControl", "ATLCTL/ATL::CComControl", "ATLCTL/ATL::CComControl::CComControl", "ATLCTL/ATL::CComControl::ControlQueryInterface", "ATLCTL/ATL::CComControl::CreateControlWindow", "ATLCTL/ATL::CComControl::FireOnChanged", "ATLCTL/ATL::CComControl::FireOnRequestEdit", "ATLCTL/ATL::CComControl::MessageBox"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["control flags", "CComControlBase class, CComControl class", "stock properties, ATL", "CComControl class", "controls [ATL], control helper functions", "ambient properties", "controls [ATL], properties"]
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComControl Class
 
@@ -59,7 +52,7 @@ The base class that implements windowing functions. Defaults to [CWindowImpl](..
 
 For more information about creating a control, see the [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md). For more information about the ATL Project Wizard, see the article [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md).
 
-For a demonstration of `CComControl` methods and data members, see the [CIRC](../../visual-cpp-samples.md) sample.
+For a demonstration of `CComControl` methods and data members, see the [CIRC](../../overview/visual-cpp-samples.md) sample.
 
 ## Inheritance Hierarchy
 
@@ -217,7 +210,7 @@ Returns an integer value specifying one of the menu-item values listed under [Me
 
 `MessageBox` is useful both during development and as an easy way to display an error or warning message to the user.
 
-## See Also
+## See also
 
 [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

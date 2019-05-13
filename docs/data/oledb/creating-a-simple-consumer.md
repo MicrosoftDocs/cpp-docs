@@ -1,17 +1,18 @@
 ---
-title: "Creating a Simple Consumer | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/09/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Creating a Simple Consumer"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumers, creating"]
 ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Simple Consumer
+
+::: moniker range="vs-2019"
+
+The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard** to generate an OLE DB Templates consumer.
 
@@ -51,18 +52,18 @@ Next, use the **ATL OLE DB Consumer Wizard** to add an OLE DB consumer object.
 
 1. In the **Data Link Properties** dialog box, do the following:
 
-    1. On the **Provider** tab, specify an OLE DB provider.
+   1. On the **Provider** tab, specify an OLE DB provider.
 
-    1. On the **Connection** tab, specify the required information, such as server name, logon ID, and password for your data source and database on the server.
+   1. On the **Connection** tab, specify the required information, such as server name, logon ID, and password for your data source and database on the server.
 
-       > [!NOTE]
-       > There is a security issue with the **Allow saving password** feature of the **Data Link Properties** dialog box. In **Enter information to log on to the server**, there are two radio buttons: **Use Windows NT integrated security** and **Use a specific user name and password**.
+      > [!NOTE]
+      > There is a security issue with the **Allow saving password** feature of the **Data Link Properties** dialog box. In **Enter information to log on to the server**, there are two radio buttons: **Use Windows NT integrated security** and **Use a specific user name and password**.
 
-       > [!NOTE]
-       > If you select **Use a specific user name and password**, you have the option of saving the password (using the **Allow saving password** check box); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option uses Windows NT to verify your identity.
+      > [!NOTE]
+      > If you select **Use a specific user name and password**, you have the option of saving the password (using the **Allow saving password** check box); however, this option is not secure. It is recommended that you select **Use Windows NT integrated security**; this option uses Windows NT to verify your identity.
 
-       > [!NOTE]
-       > If you cannot use Windows NT integrated security, you should use a middle-tier application to prompt the user for the password or to store the password in a location with security mechanisms to help protect it (instead of in source code).
+      > [!NOTE]
+      > If you cannot use Windows NT integrated security, you should use a middle-tier application to prompt the user for the password or to store the password in a location with security mechanisms to help protect it (instead of in source code).
 
    1. After selecting your provider and other settings, click **Test Connection** to verify the selections made on the previous dialog box pages. If the **Results** box reports `Test connection succeeded`, click **OK** to create the data link.
 
@@ -98,6 +99,8 @@ The wizard generates a command class and a user record class, as shown in [Consu
 > [!NOTE]
 > This line prevents the consumer application from compiling and reminds you to check your connection string for hard-coded passwords. After checking your connection string, you can remove this line of code.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

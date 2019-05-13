@@ -1,16 +1,9 @@
 ---
-title: "&lt;csetjmp&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;csetjmp&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<csetjmp>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["csetjmp header"]
 ms.assetid: 8f21fddd-5e9b-4219-a848-581cdd3569d9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;csetjmp&gt;
 
@@ -20,7 +13,6 @@ Includes the Standard C library header \<setjmp.h> and adds the associated names
 
 ```cpp
 #include <csetjmp>
-
 ```
 
 ## Remarks

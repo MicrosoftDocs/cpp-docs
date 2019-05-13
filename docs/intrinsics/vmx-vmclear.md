@@ -1,16 +1,9 @@
 ---
-title: "__vmx_vmclear | Microsoft Docs"
-ms.custom: ""
+title: "__vmx_vmclear"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__vmx_vmclear"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VMCLEAR instruction", "__vmx_vmclear intrinsic"]
 ms.assetid: e3eb98e4-50fc-4c93-9bac-340fd1f0a466
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __vmx_vmclear
 
@@ -56,7 +49,7 @@ The `__vmx_vmclear` function is equivalent to the `VMCLEAR` machine instruction.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>

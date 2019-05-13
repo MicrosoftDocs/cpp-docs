@@ -1,16 +1,9 @@
 ---
-title: "_ReadWriteBarrier | Microsoft Docs"
-ms.custom: ""
+title: "_ReadWriteBarrier"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_ReadWriteBarrier"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ReadWriteBarrier intrinsic", "_ReadWriteBarrier intrinsic"]
 ms.assetid: dd9f58b5-8bb6-494e-bb0f-9fe184f3908d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _ReadWriteBarrier
 
@@ -41,7 +34,7 @@ The `_ReadWriteBarrier` intrinsic limits the compiler optimizations that can rem
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [_ReadBarrier](../intrinsics/readbarrier.md)<br/>
 [_WriteBarrier](../intrinsics/writebarrier.md)<br/>

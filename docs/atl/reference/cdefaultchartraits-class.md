@@ -1,16 +1,9 @@
 ---
-title: "CDefaultCharTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CDefaultCharTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CDefaultCharTraits", "ATLCOLL/ATL::CDefaultCharTraits", "ATLCOLL/ATL::CDefaultCharTraits::CharToLower", "ATLCOLL/ATL::CDefaultCharTraits::CharToUpper"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDefaultCharTraits class"]
 ms.assetid: f94a3934-597f-401d-8513-ed6924ae069a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDefaultCharTraits Class
 
@@ -77,6 +70,6 @@ static char CharToUpper(char x);
 *x*<br/>
 The character to convert to uppercase.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

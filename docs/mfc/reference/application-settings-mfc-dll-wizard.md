@@ -1,16 +1,9 @@
 ---
-title: "Application Settings, MFC DLL Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Application Settings, MFC DLL Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.dll.appset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC DLL Wizard, application settings"]
 ms.assetid: 0a96b94f-ae36-4975-951b-c9ffb3def21c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application Settings, MFC DLL Wizard
 
@@ -46,8 +39,7 @@ Select whether your MFC DLL should support automation and whether it should supp
 
    When your MFC DLL with Windows sockets support is created, [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) initializes support for sockets and the MFC header file StdAfx.h includes AfxSock.h.
 
-## See Also
+## See also
 
 [MFC DLL Wizard](../../mfc/reference/mfc-dll-wizard.md)<br/>
 [Creating an MFC DLL Project](../../mfc/reference/creating-an-mfc-dll-project.md)
-

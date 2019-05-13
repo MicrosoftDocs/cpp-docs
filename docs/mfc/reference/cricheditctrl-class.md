@@ -1,16 +1,9 @@
 ---
-title: "CRichEditCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CRichEditCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRichEditCtrl", "AFXCMN/CRichEditCtrl", "AFXCMN/CRichEditCtrl::CRichEditCtrl", "AFXCMN/CRichEditCtrl::CanPaste", "AFXCMN/CRichEditCtrl::CanRedo", "AFXCMN/CRichEditCtrl::CanUndo", "AFXCMN/CRichEditCtrl::CharFromPos", "AFXCMN/CRichEditCtrl::Clear", "AFXCMN/CRichEditCtrl::Copy", "AFXCMN/CRichEditCtrl::Create", "AFXCMN/CRichEditCtrl::CreateEx", "AFXCMN/CRichEditCtrl::Cut", "AFXCMN/CRichEditCtrl::DisplayBand", "AFXCMN/CRichEditCtrl::EmptyUndoBuffer", "AFXCMN/CRichEditCtrl::FindText", "AFXCMN/CRichEditCtrl::FindWordBreak", "AFXCMN/CRichEditCtrl::FormatRange", "AFXCMN/CRichEditCtrl::GetCharPos", "AFXCMN/CRichEditCtrl::GetDefaultCharFormat", "AFXCMN/CRichEditCtrl::GetEventMask", "AFXCMN/CRichEditCtrl::GetFirstVisibleLine", "AFXCMN/CRichEditCtrl::GetIRichEditOle", "AFXCMN/CRichEditCtrl::GetLimitText", "AFXCMN/CRichEditCtrl::GetLine", "AFXCMN/CRichEditCtrl::GetLineCount", "AFXCMN/CRichEditCtrl::GetModify", "AFXCMN/CRichEditCtrl::GetOptions", "AFXCMN/CRichEditCtrl::GetParaFormat", "AFXCMN/CRichEditCtrl::GetPunctuation", "AFXCMN/CRichEditCtrl::GetRect", "AFXCMN/CRichEditCtrl::GetRedoName", "AFXCMN/CRichEditCtrl::GetSel", "AFXCMN/CRichEditCtrl::GetSelectionCharFormat", "AFXCMN/CRichEditCtrl::GetSelectionType", "AFXCMN/CRichEditCtrl::GetSelText", "AFXCMN/CRichEditCtrl::GetTextLength", "AFXCMN/CRichEditCtrl::GetTextLengthEx", "AFXCMN/CRichEditCtrl::GetTextMode", "AFXCMN/CRichEditCtrl::GetTextRange", "AFXCMN/CRichEditCtrl::GetUndoName", "AFXCMN/CRichEditCtrl::GetWordWrapMode", "AFXCMN/CRichEditCtrl::HideSelection", "AFXCMN/CRichEditCtrl::LimitText", "AFXCMN/CRichEditCtrl::LineFromChar", "AFXCMN/CRichEditCtrl::LineIndex", "AFXCMN/CRichEditCtrl::LineLength", "AFXCMN/CRichEditCtrl::LineScroll", "AFXCMN/CRichEditCtrl::Paste", "AFXCMN/CRichEditCtrl::PasteSpecial", "AFXCMN/CRichEditCtrl::PosFromChar", "AFXCMN/CRichEditCtrl::Redo", "AFXCMN/CRichEditCtrl::ReplaceSel", "AFXCMN/CRichEditCtrl::RequestResize", "AFXCMN/CRichEditCtrl::SetAutoURLDetect", "AFXCMN/CRichEditCtrl::SetBackgroundColor", "AFXCMN/CRichEditCtrl::SetDefaultCharFormat", "AFXCMN/CRichEditCtrl::SetEventMask", "AFXCMN/CRichEditCtrl::SetModify", "AFXCMN/CRichEditCtrl::SetOLECallback", "AFXCMN/CRichEditCtrl::SetOptions", "AFXCMN/CRichEditCtrl::SetParaFormat", "AFXCMN/CRichEditCtrl::SetPunctuation", "AFXCMN/CRichEditCtrl::SetReadOnly", "AFXCMN/CRichEditCtrl::SetRect", "AFXCMN/CRichEditCtrl::SetSel", "AFXCMN/CRichEditCtrl::SetSelectionCharFormat", "AFXCMN/CRichEditCtrl::SetTargetDevice", "AFXCMN/CRichEditCtrl::SetTextMode", "AFXCMN/CRichEditCtrl::SetUndoLimit", "AFXCMN/CRichEditCtrl::SetWordCharFormat", "AFXCMN/CRichEditCtrl::SetWordWrapMode", "AFXCMN/CRichEditCtrl::StopGroupTyping", "AFXCMN/CRichEditCtrl::StreamIn", "AFXCMN/CRichEditCtrl::StreamOut", "AFXCMN/CRichEditCtrl::Undo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRichEditCtrl [MFC], CRichEditCtrl", "CRichEditCtrl [MFC], CanPaste", "CRichEditCtrl [MFC], CanRedo", "CRichEditCtrl [MFC], CanUndo", "CRichEditCtrl [MFC], CharFromPos", "CRichEditCtrl [MFC], Clear", "CRichEditCtrl [MFC], Copy", "CRichEditCtrl [MFC], Create", "CRichEditCtrl [MFC], CreateEx", "CRichEditCtrl [MFC], Cut", "CRichEditCtrl [MFC], DisplayBand", "CRichEditCtrl [MFC], EmptyUndoBuffer", "CRichEditCtrl [MFC], FindText", "CRichEditCtrl [MFC], FindWordBreak", "CRichEditCtrl [MFC], FormatRange", "CRichEditCtrl [MFC], GetCharPos", "CRichEditCtrl [MFC], GetDefaultCharFormat", "CRichEditCtrl [MFC], GetEventMask", "CRichEditCtrl [MFC], GetFirstVisibleLine", "CRichEditCtrl [MFC], GetIRichEditOle", "CRichEditCtrl [MFC], GetLimitText", "CRichEditCtrl [MFC], GetLine", "CRichEditCtrl [MFC], GetLineCount", "CRichEditCtrl [MFC], GetModify", "CRichEditCtrl [MFC], GetOptions", "CRichEditCtrl [MFC], GetParaFormat", "CRichEditCtrl [MFC], GetPunctuation", "CRichEditCtrl [MFC], GetRect", "CRichEditCtrl [MFC], GetRedoName", "CRichEditCtrl [MFC], GetSel", "CRichEditCtrl [MFC], GetSelectionCharFormat", "CRichEditCtrl [MFC], GetSelectionType", "CRichEditCtrl [MFC], GetSelText", "CRichEditCtrl [MFC], GetTextLength", "CRichEditCtrl [MFC], GetTextLengthEx", "CRichEditCtrl [MFC], GetTextMode", "CRichEditCtrl [MFC], GetTextRange", "CRichEditCtrl [MFC], GetUndoName", "CRichEditCtrl [MFC], GetWordWrapMode", "CRichEditCtrl [MFC], HideSelection", "CRichEditCtrl [MFC], LimitText", "CRichEditCtrl [MFC], LineFromChar", "CRichEditCtrl [MFC], LineIndex", "CRichEditCtrl [MFC], LineLength", "CRichEditCtrl [MFC], LineScroll", "CRichEditCtrl [MFC], Paste", "CRichEditCtrl [MFC], PasteSpecial", "CRichEditCtrl [MFC], PosFromChar", "CRichEditCtrl [MFC], Redo", "CRichEditCtrl [MFC], ReplaceSel", "CRichEditCtrl [MFC], RequestResize", "CRichEditCtrl [MFC], SetAutoURLDetect", "CRichEditCtrl [MFC], SetBackgroundColor", "CRichEditCtrl [MFC], SetDefaultCharFormat", "CRichEditCtrl [MFC], SetEventMask", "CRichEditCtrl [MFC], SetModify", "CRichEditCtrl [MFC], SetOLECallback", "CRichEditCtrl [MFC], SetOptions", "CRichEditCtrl [MFC], SetParaFormat", "CRichEditCtrl [MFC], SetPunctuation", "CRichEditCtrl [MFC], SetReadOnly", "CRichEditCtrl [MFC], SetRect", "CRichEditCtrl [MFC], SetSel", "CRichEditCtrl [MFC], SetSelectionCharFormat", "CRichEditCtrl [MFC], SetTargetDevice", "CRichEditCtrl [MFC], SetTextMode", "CRichEditCtrl [MFC], SetUndoLimit", "CRichEditCtrl [MFC], SetWordCharFormat", "CRichEditCtrl [MFC], SetWordWrapMode", "CRichEditCtrl [MFC], StopGroupTyping", "CRichEditCtrl [MFC], StreamIn", "CRichEditCtrl [MFC], StreamOut", "CRichEditCtrl [MFC], Undo"]
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRichEditCtrl Class
 
@@ -122,7 +115,7 @@ For more information on using `CRichEditCtrl`, see:
 
 - [Using CRichEditCtrl](../../mfc/using-cricheditctrl.md)
 
-For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.
+For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../overview/visual-cpp-samples.md) sample application.
 
 ## Inheritance Hierarchy
 
@@ -280,7 +273,7 @@ virtual BOOL Create(
 Specifies the edit control's style. Apply a combination of the window styles listed in the **Remarks** section below, and [edit control styles](/windows/desktop/Controls/edit-control-styles), described in the Windows SDK.
 
 *rect*<br/>
-Specifies the edit control's size and position. Can be a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the edit control's size and position. Can be a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the edit control's parent window (often a [CDialog](../../mfc/reference/cdialog-class.md)). It must not be NULL.
@@ -296,7 +289,7 @@ Nonzero if initialization is successful; otherwise, 0.
 
 You construct a `CRichEditCtrl` object in two steps. First, call the [CRichEditCtrl](#cricheditctrl) constructor, then call `Create`, which creates the Windows edit control and attaches it to the `CRichEditCtrl` object.
 
-When you create a rich edit control with this function, first you must load the necessary common controls library. To load the libary, call the global function [AfxInitRichEdit](application-information-and-management.md#afxinitrichedit), which in turn initializes the common controls library. You need to call `AfxInitRichEdit` only once in your process.
+When you create a rich edit control with this function, first you must load the necessary common controls library. To load the library, call the global function [AfxInitRichEdit](application-information-and-management.md#afxinitrichedit), which in turn initializes the common controls library. You need to call `AfxInitRichEdit` only once in your process.
 
 When `Create` executes, Windows sends the [WM_NCCREATE](../../mfc/reference/cwnd-class.md#onnccreate), [WM_NCCALCSIZE](../../mfc/reference/cwnd-class.md#onnccalcsize), [WM_CREATE](../../mfc/reference/cwnd-class.md#oncreate), and [WM_GETMINMAXINFO](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) messages to the edit control.
 
@@ -342,7 +335,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the edit control's style. Apply a combination of the window styles listed in the **Remarks** section of [Create](#create) and [edit control styles](/windows/desktop/Controls/edit-control-styles), described in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -405,7 +398,7 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 ### Parameters
 
 *pDisplayRect*<br/>
-Pointer to a [RECT](../../mfc/reference/rect-structure1.md) or [CRect](../../atl-mfc-shared/reference/crect-class.md) object specifying the area of the device to display the text.
+Pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) or [CRect](../../atl-mfc-shared/reference/crect-class.md) object specifying the area of the device to display the text.
 
 ### Return Value
 
@@ -826,7 +819,7 @@ void GetRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) or pointer to a [RECT](../../mfc/reference/rect-structure1.md) to receive the formatting rectangle of this `CRichEditCtrl` object.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) or pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) to receive the formatting rectangle of this `CRichEditCtrl` object.
 
 ### Remarks
 
@@ -1708,7 +1701,7 @@ void SetRect(LPCRECT lpRect);
 ### Parameters
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) or pointer to a [RECT](../../mfc/reference/rect-structure1.md) that indicates the new bounds for the formatting rectangle.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) or pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) that indicates the new bounds for the formatting rectangle.
 
 ### Remarks
 
@@ -2049,9 +2042,9 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
   See the example for [CanUndo](#canundo).
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CEdit Class](../../mfc/reference/cedit-class.md)<br/>

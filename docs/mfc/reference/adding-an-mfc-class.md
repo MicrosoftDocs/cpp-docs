@@ -1,16 +1,9 @@
 ---
-title: "Adding an MFC Class | Microsoft Docs"
-ms.custom: ""
+title: "Adding an MFC Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.classes.adding.mfc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [MFC], adding MFC", "MFC, adding classes"]
 ms.assetid: 9a96b67f-40bf-43d4-8872-2f8dfc5404f1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an MFC Class
 
@@ -29,9 +22,8 @@ To add classes derived from Microsoft Foundation Class (MFC) library classes to 
 
 1. Click **Finish** to close the wizard and view the new class in Class View. You can also view the files created by the wizard in **Solution Explorer**.
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Class Overview](../../mfc/class-library-overview.md)
-

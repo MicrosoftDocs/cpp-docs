@@ -1,16 +1,9 @@
 ---
-title: "Checked Iterators | Microsoft Docs"
-ms.custom: ""
+title: "Checked Iterators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["_SECURE_SCL_THROWS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "iterators, checked", "checked iterators"]
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Checked Iterators
 
@@ -188,7 +181,6 @@ int main()
     transform(v.begin(), v.end(), stdext::make_unchecked_array_iterator(p8), [](int n) { return n * 8; });
     print("a8: ", a8);
 }
-
 ```
 
 When you compile this code by using `cl.exe /EHsc /W4 /MTd checked_iterators_3.cpp` the compiler emits a warning, but compiles without error into an executable:

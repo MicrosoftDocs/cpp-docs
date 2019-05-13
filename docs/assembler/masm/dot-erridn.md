@@ -1,16 +1,9 @@
 ---
-title: ".ERRIDN] | Microsoft Docs"
-ms.custom: ""
+title: ".ERRIDN]"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".ERRIDN[[I]]"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".ERRIDN[[I]] directive"]
 ms.assetid: 89507db3-7d40-4a5e-a378-24d30feda9d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .ERRIDN]
 

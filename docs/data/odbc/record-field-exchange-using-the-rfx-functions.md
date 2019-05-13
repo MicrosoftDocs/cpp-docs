@@ -1,15 +1,8 @@
 ---
-title: "Record Field Exchange: Using the RFX Functions | Microsoft Docs"
-ms.custom: ""
+title: "Record Field Exchange: Using the RFX Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [C++], data types", "data types [C++], ODBC record field exchange", "RFX (ODBC) [C++], function syntax and parameters", "DoFieldExchange method, and RFX functions", "ODBC [C++], RFX", "RFX (ODBC) [C++], data types", "function calls, RFX functions"]
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Using the RFX Functions
 
@@ -56,7 +49,7 @@ The class library supplies RFX functions for transferring many different data ty
 
 For more information, see the RFX function documentation under [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *Class Library Reference*. For information about how C++ data types map to SQL data types, see the table ANSI SQL Data Types Mapped to C++ Data Types in [SQL: SQL and C++ Data Types (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md).
 
-## See Also
+## See also
 
 [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>

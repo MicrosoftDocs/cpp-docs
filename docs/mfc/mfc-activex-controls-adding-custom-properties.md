@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Adding Custom Properties | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Adding Custom Properties"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], properties", "properties [MFC], custom"]
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Custom Properties
 
@@ -91,7 +84,7 @@ Finally, the implementations of the `GetCircleOffset` and `SetCircleOffset` func
 
 Note that the Add Property Wizard automatically adds a call, to [SetModifiedFlag](../mfc/reference/colecontrol-class.md#setmodifiedflag), to the body of the Set function. Calling this function marks the control as modified. If a control has been modified, its new state will be saved when the container is saved. This function should be called whenever a property, saved as part of the control's persistent state, changes value.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Controls: Properties](../mfc/mfc-activex-controls-properties.md)<br/>

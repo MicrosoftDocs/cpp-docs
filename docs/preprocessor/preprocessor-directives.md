@@ -1,15 +1,8 @@
 ---
-title: "Preprocessor Directives | Microsoft Docs"
-ms.custom: ""
+title: "Preprocessor Directives"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["directives, preprocessor", "preprocessor, directives"]
 ms.assetid: e0fc4564-b6cf-4a36-bf51-6ccd7abd0a94
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Preprocessor Directives
 

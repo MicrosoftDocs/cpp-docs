@@ -1,16 +1,9 @@
 ---
-title: "IRegistrar Interface | Microsoft Docs"
-ms.custom: ""
+title: "IRegistrar Interface"
 ms.date: "2/1/2017"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IRegistrar", "ATLIFASE/ATL::IRegistrar", "ATLIFASE/ATL::IRegistrar::ResourceRegisterSz", "ATLIFASE/ATL::IRegistrar::ResourceUnregisterSz", "ATLIFASE/ATL::IRegistrar::FileRegister", "ATLIFASE/ATL::IRegistrar::FileUnregister", "ATLIFASE/ATL::IRegistrar::StringRegister", "ATLIFASE/ATL::IRegistrar::StringUnregister", "ATLIFASE/ATL::IRegistrar::ResourceRegister", "ATLIFASE/ATL::IRegistrar::ResourceUnregister"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Iregistrar Interface"]
 ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IRegistrar Interface
 
@@ -125,7 +118,7 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
     /* [in] */ _In_z_ LPCOLESTR szType) = 0;
 ```
 
-## See Also
+## See also
 
 [Using Replaceable Parameters (The Registrar's Preprocessor)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

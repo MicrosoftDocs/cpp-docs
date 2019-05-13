@@ -1,17 +1,11 @@
 ---
-title: "Boxing (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Boxing (C++/CX)"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Boxing (C++/CX)
 
-*Boxing* is wrapping a value type variable such as [Windows::Foundation::DateTime](https://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)—or a fundamental scalar type such as `int`—in a ref class when the variable is passed to a method that takes [Platform::Object^](../cppcx/platform-object-class.md) as its input type.
+*Boxing* is wrapping a value type variable such as [Windows::Foundation::DateTime](/uwp/api/windows.foundation.datetime)—or a fundamental scalar type such as `int`—in a ref class when the variable is passed to a method that takes [Platform::Object^](../cppcx/platform-object-class.md) as its input type.
 
 ## Passing a value type to an Object^ parameter
 
@@ -34,10 +28,9 @@ In a C# XAML client, you can consume it like this:
     int? a = null;
     int? b = 5;
     var result = obj.Multiply(a,b); //result = null
-
 ```
 
-## See Also
+## See also
 
 [Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Casting (C++/CX)](../cppcx/casting-c-cx.md)<br/>

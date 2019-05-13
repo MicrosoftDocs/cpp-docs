@@ -1,16 +1,9 @@
 ---
-title: "CDataPathProperty Class | Microsoft Docs"
-ms.custom: ""
+title: "CDataPathProperty Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDataPathProperty", "AFXCTL/CDataPathProperty", "AFXCTL/CDataPathProperty::CDataPathProperty", "AFXCTL/CDataPathProperty::GetControl", "AFXCTL/CDataPathProperty::GetPath", "AFXCTL/CDataPathProperty::Open", "AFXCTL/CDataPathProperty::ResetData", "AFXCTL/CDataPathProperty::SetControl", "AFXCTL/CDataPathProperty::SetPath"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDataPathProperty [MFC], CDataPathProperty", "CDataPathProperty [MFC], GetControl", "CDataPathProperty [MFC], GetPath", "CDataPathProperty [MFC], Open", "CDataPathProperty [MFC], ResetData", "CDataPathProperty [MFC], SetControl", "CDataPathProperty [MFC], SetPath"]
 ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDataPathProperty Class
 
@@ -200,9 +193,9 @@ void SetPath(LPCTSTR lpszPath);
 *lpszPath*<br/>
 A path, which may be absolute or relative, to the property being loaded asynchronously. `CDataPathProperty` uses URLs, not filenames. If you want a `CDataPathProperty` object for a file, prepend `file://` to the path.
 
-## See Also
+## See also
 
-[MFC Sample Image](../../visual-cpp-samples.md)<br/>
+[MFC Sample Image](../../overview/visual-cpp-samples.md)<br/>
 [CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CAsyncMonikerFile Class](../../mfc/reference/casyncmonikerfile-class.md)

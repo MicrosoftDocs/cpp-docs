@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2788 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2788"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2788"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2788"]
 ms.assetid: 8688fc5c-e652-43b4-b407-9c488c76f2db
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2788
 

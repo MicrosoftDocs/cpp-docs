@@ -1,16 +1,9 @@
 ---
-title: "CStringT Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CStringT Class"
+ms.date: "03/27/2019"
 f1_keywords: ["CStringT", "ATLSTR/ATL::CStringT", "ATLSTR/ATL::CStringT::CStringT", "ATLSTR/ATL::CStringT::AllocSysString", "ATLSTR/ATL::CStringT::AnsiToOem", "ATLSTR/ATL::CStringT::AppendFormat", "ATLSTR/ATL::CStringT::Collate", "ATLSTR/ATL::CStringT::CollateNoCase", "ATLSTR/ATL::CStringT::Compare", "ATLSTR/ATL::CStringT::CompareNoCase", "ATLSTR/ATL::CStringT::Delete", "ATLSTR/ATL::CStringT::Find", "ATLSTR/ATL::CStringT::FindOneOf", "ATLSTR/ATL::CStringT::Format", "ATLSTR/ATL::CStringT::FormatMessage", "ATLSTR/ATL::CStringT::FormatMessageV", "ATLSTR/ATL::CStringT::FormatV", "ATLSTR/ATL::CStringT::GetEnvironmentVariable", "ATLSTR/ATL::CStringT::Insert", "ATLSTR/ATL::CStringT::Left", "ATLSTR/ATL::CStringT::LoadString", "ATLSTR/ATL::CStringT::MakeLower", "ATLSTR/ATL::CStringT::MakeReverse", "ATLSTR/ATL::CStringT::MakeUpper", "ATLSTR/ATL::CStringT::Mid", "ATLSTR/ATL::CStringT::OemToAnsi", "ATLSTR/ATL::CStringT::Remove", "ATLSTR/ATL::CStringT::Replace", "ATLSTR/ATL::CStringT::ReverseFind", "ATLSTR/ATL::CStringT::Right", "ATLSTR/ATL::CStringT::SetSysString", "ATLSTR/ATL::CStringT::SpanExcluding", "ATLSTR/ATL::CStringT::SpanIncluding", "ATLSTR/ATL::CStringT::Tokenize", "ATLSTR/ATL::CStringT::Trim", "ATLSTR/ATL::CStringT::TrimLeft", "ATLSTR/ATL::CStringT::TrimRight", "CSTRINGT/CStringT", "CSTRINGT/CStringT::CStringT", "CSTRINGT/CStringT::AllocSysString", "CSTRINGT/CStringT::AnsiToOem", "CSTRINGT/CStringT::AppendFormat", "CSTRINGT/CStringT::Collate", "CSTRINGT/CStringT::CollateNoCase", "CSTRINGT/CStringT::Compare", "CSTRINGT/CStringT::CompareNoCase", "CSTRINGT/CStringT::Delete", "CSTRINGT/CStringT::Find", "CSTRINGT/CStringT::FindOneOf", "CSTRINGT/CStringT::Format", "CSTRINGT/CStringT::FormatMessage", "CSTRINGT/CStringT::FormatMessageV", "CSTRINGT/CStringT::FormatV", "CSTRINGT/CStringT::GetEnvironmentVariable", "CSTRINGT/CStringT::Insert", "CSTRINGT/CStringT::Left", "CSTRINGT/CStringT::LoadString", "CSTRINGT/CStringT::MakeLower", "CSTRINGT/CStringT::MakeReverse", "CSTRINGT/CStringT::MakeUpper", "CSTRINGT/CStringT::Mid", "CSTRINGT/CStringT::OemToAnsi", "CSTRINGT/CStringT::Remove", "CSTRINGT/CStringT::Replace", "CSTRINGT/CStringT::ReverseFind", "CSTRINGT/CStringT::Right", "CSTRINGT/CStringT::SetSysString", "CSTRINGT/CStringT::SpanExcluding", "CSTRINGT/CStringT::SpanIncluding", "CSTRINGT/CStringT::Tokenize", "CSTRINGT/CStringT::Trim", "CSTRINGT/CStringT::TrimLeft", "CSTRINGT/CStringT::TrimRight"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strings [C++], in ATL", "shared classes, CStringT", "CStringT class"]
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStringT Class
 
@@ -19,13 +12,10 @@ This class represents a `CStringT` object.
 ## Syntax
 
 ```
-
 template<typename BaseType, class StringTraits>
 class CStringT :
-public CSimpleStringT<BaseType,
-                      _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>
-                      ::c_bIsMFCDLLTraits>
-
+    public CSimpleStringT<BaseType,
+        _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>::c_bIsMFCDLLTraits>
 ```
 
 #### Parameters
@@ -42,19 +32,19 @@ The character type of the string class. Can be one of the following:
 *StringTraits*<br/>
 Determines if the string class needs C Run-Time (CRT) Library support and where string resources are located. Can be one of the following:
 
-- **StrTraitATL< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; `char` &#124; **TCHAR > >**
+- **StrTraitATL< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    The class requires CRT support and searches for resource strings in the module specified by `m_hInstResource` (a member of the application's module class).
 
-- **StrTraitATL< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; `char` &#124; **TCHAR > >**
+- **StrTraitATL< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    The class does not require CRT support and searches for resource strings in the module specified by `m_hInstResource` (a member of the application's module class).
 
-- **StrTraitMFC< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; `char` &#124; **TCHAR > >**
+- **StrTraitMFC< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    The class requires CRT support and searches for resource strings using the standard MFC search algorithm.
 
-- **StrTraitMFC< wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; `char` &#124; **TCHAR > >**
+- **StrTraitMFC< wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS< wchar_t** &#124; **char** &#124; **TCHAR > >**
 
    The class does not require CRT support and searches for resource strings using the standard MFC search algorithm.
 
@@ -110,7 +100,7 @@ Determines if the string class needs C Run-Time (CRT) Library support and where 
 
 |||
 |-|-|
-|[operator =](#operator_eq)|Assigns a new value to a `CStringT` object.|
+|[CStringT::operator =](#operator_eq)|Assigns a new value to a `CStringT` object.|
 |[CStringT::operator +](#operator_add)|Concatenates two strings or a character and a string.|
 |[CStringT::operator +=](#operator_add_eq)|Concatenates a new string to the end of an existing string.|
 |[CStringT::operator ==](#operator_eq_eq)|Determines if two strings are logically equal.|
@@ -220,9 +210,9 @@ The newly allocated string.
 
 In MFC programs, a [CMemoryException Class](../../mfc/reference/cmemoryexception-class.md) is thrown if insufficient memory exists. In ATL programs, a [CAtlException](../../atl/reference/catlexception-class.md) is thrown. This function is normally used to return strings for Automation.
 
-Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
+Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
 
-For more information about OLE allocation functions in Windows, see [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.
+For more information about OLE allocation functions in Windows, see [SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.
 
 ### Example
 
@@ -952,6 +942,56 @@ This function is not available if _UNICODE is defined.
 
 See the example for [CStringT::AnsiToOem](#ansitooem).
 
+##  <a name="operator_eq"></a>  CStringT::operator =
+
+Assigns a new value to the string.
+
+```
+CStringT& operator=(const CStringT& strSrc);
+
+template<bool bMFCDLL>
+CStringT& operator=(const CSimpleStringT<BaseType, bMFCDLL>& str);
+
+CStringT& operator=(PCXSTR pszSrc);
+CStringT& operator=(PCYSTR pszSrc);
+CStringT& operator=(const unsigned char* pszSrc);
+CStringT& operator=(XCHAR ch);
+CStringT& operator=(YCHAR ch);
+CStringT& operator=(const VARIANT& var);
+```
+
+### Parameters
+
+*strSrc*<br/>
+A `CStringT` to assign to this string.
+
+*str*<br/>
+A reference to a `CThisSimpleString` object.
+
+*bMFCDLL*<br/>
+A boolean specifying whether the project is an MFC DLL or not.
+
+*BaseType*<br/>
+The string base type.
+
+*var*<br/>
+A variant object to assign to this string.
+
+*ch*<br/>
+An ANSI or Unicode character to assign to the string.
+
+*pszSrc*<br/>
+A pointer to the original string being assigned.
+
+### Remarks
+
+The assignment operator accepts another `CStringT` object, a character pointer, or a single character. You should be aware that memory exceptions can occur whenever you use this operator because new storage can be allocated.
+
+For information on `CThisSimpleString`, see the Remarks section of [CStringT::CStringT](#cstringt).
+
+> [!NOTE]
+> Although it is possible to create `CStringT` instances that contain embedded null characters, we recommend against it. Calling methods and operators on `CStringT` objects that contain embedded null characters can produce unintended results.
+
 ##  <a name="operator_add"></a>  CStringT::operator +
 
 Concatenates two strings or a character and a string.
@@ -1656,9 +1696,8 @@ The `CStringT& TrimRight()` version requires no parameters. It trims any trailin
 
 [!code-cpp[NVC_ATLMFC_Utilities#138](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_42.cpp)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)<br/>
 [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md)
-

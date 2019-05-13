@@ -1,16 +1,9 @@
 ---
-title: "CFileTimeSpan Class | Microsoft Docs"
-ms.custom: ""
+title: "CFileTimeSpan Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::GetTimeSpan", "ATLTIME/ATL::CFileTimeSpan::SetTimeSpan"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["shared classes, CFileTimeSpan", "CFileTimeSpan class"]
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFileTimeSpan Class
 
@@ -299,9 +292,9 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 *nSpan*<br/>
 The new value for the time span in milliseconds.
 
-## See Also
+## See also
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTime Class](../../atl-mfc-shared/reference/cfiletime-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

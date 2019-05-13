@@ -1,16 +1,9 @@
 ---
-title: "CAutoPtrList Class | Microsoft Docs"
-ms.custom: ""
+title: "CAutoPtrList Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList::CAutoPtrList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoPtrList class"]
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAutoPtrList Class
 
@@ -73,7 +66,7 @@ The block size, with a default of 10.
 
 The block size is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources.
 
-## See Also
+## See also
 
 [CAtlList Class](../../atl/reference/catllist-class.md)<br/>
 [CAutoPtrElementTraits Class](../../atl/reference/cautoptrelementtraits-class.md)<br/>

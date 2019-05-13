@@ -1,19 +1,12 @@
 ---
-title: "_getdrives | Microsoft Docs"
-ms.custom: ""
+title: "_getdrives"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_getdrives"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["getdrives", "_getdrives"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_getdrives function", "getdrives function", "disk drives"]
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _getdrives
 
@@ -44,7 +37,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ```C
 // crt_getdrives.c
-// This program retrives and lists out
+// This program retrieves and lists out
 // all the logical drives that are
 // currently mounted on the machine.
 

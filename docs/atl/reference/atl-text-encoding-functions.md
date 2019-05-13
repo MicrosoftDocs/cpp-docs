@@ -1,13 +1,8 @@
 ---
-title: "ATL Text Encoding Functions | Microsoft Docs"
-ms.custom: ""
+title: "ATL Text Encoding Functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::AtlGetHexValue", "atlbase/ATL::AtlGetVersion", "atlenc/ATL::AtlHexDecode", "atlenc/ATL::AtlHexDecodeGetRequiredLength", "atlenc/ATL::AtlHexEncode", "atlenc/ATL::AtlHexEncodeGetRequiredLength", "atlenc/ATL::AtlHexValue", "atlenc/ATL::BEncode", "atlenc/ATL::BEncodeGetRequiredLength", "atlenc/ATL::EscapeXML", "atlenc/ATL::GetExtendedChars", "atlenc/ATL::IsExtendedChar", "atlenc/ATL::QEncode", "atlenc/ATL::QEncodeGetRequiredLength", "atlenc/ATL::QPDecode", "atlenc/ATL::QPDecodeGetRequiredLength", "atlenc/ATL::QPEncode", "atlenc/ATL::QPEncodeGetRequiredLength", "atlenc/ATL::UUDecode", "atlenc/ATL::UUDecodeGetRequiredLength", "atlenc/ATL::UUEncode", "atlenc/ATL::UUEncodeGetRequiredLength"]
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Text Encoding Functions
 
@@ -328,7 +323,7 @@ The length in characters of the caller-allocated buffer.
 *dwFlags*<br/>
 ATL_ESC Flags describing how the conversion is to be performed.
 
-- ATL_ESC_FLAG_NONE Default behavior. Quote marks and apostrophes are not converted.
+- ATL_ESC_FLAG_NONE Default behavior. Quote marks and apostrophes are not converted.
 - ATL_ESC_FLAG_ATTR Quote marks and apostrophes are converted to `&quot;` and `&apos;` respectively.
 
 ### Return Value
@@ -698,7 +693,7 @@ The number of characters required for a buffer that could hold encoded data of *
 
 This uuencoding implementation follows the POSIX P1003.2b/D11 specification.
 
-### See Also
+## See also
 
-[Concepts](../../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+[Concepts](../active-template-library-atl-concepts.md)<br/>
+[ATL COM Desktop Components](../atl-com-desktop-components.md)

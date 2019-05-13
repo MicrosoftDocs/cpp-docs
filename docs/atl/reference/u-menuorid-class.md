@@ -1,16 +1,9 @@
 ---
-title: "_U_MENUorID Class | Microsoft Docs"
-ms.custom: ""
+title: "_U_MENUorID Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["ATL._U_MENUorID", "ATL::_U_MENUorID", "_U_MENUorID"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U_MENUorID class", "_U_MENUorID class"]
 ms.assetid: cfc8032b-61b4-4a68-ba3a-92b82500ccae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _U_MENUorID Class
 
@@ -80,6 +73,6 @@ A menu handle.
 
 The argument to the HMENU constructor is stored directly without conversion.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

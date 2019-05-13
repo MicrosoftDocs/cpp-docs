@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4240 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4240"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4240"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4240"]
 ms.assetid: a2657cdb-18e1-493f-882b-4e10c0bca71d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4240
 

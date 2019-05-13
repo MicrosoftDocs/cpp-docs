@@ -1,16 +1,9 @@
 ---
-title: "IConnectionPointImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IConnectionPointImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl::Advise", "ATLCOM/ATL::IConnectionPointImpl::EnumConnections", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionInterface", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionPointContainer", "ATLCOM/ATL::IConnectionPointImpl::Unadvise", "ATLCOM/ATL::IConnectionPointImpl::m_vec"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], implementing", "IConnectionPointImpl class"]
 ms.assetid: 27992115-3b86-45dd-bc9e-54f32876c557
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IConnectionPointImpl Class
 
@@ -146,7 +139,7 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 
 See [IConnectionPoint::Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) in the Windows SDK.
 
-## See Also
+## See also
 
 [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

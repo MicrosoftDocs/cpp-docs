@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Cancellation to Break from a Parallel Loop | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Cancellation to Break from a Parallel Loop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["writing a parallel search algorithm [Concurrency Runtime]", "parallel search algorithm, writing [Concurrency Runtime]"]
 ms.assetid: 421cd2de-f058-465f-b890-dd8fcc0df273
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use Cancellation to Break from a Parallel Loop
 
@@ -29,7 +22,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc parallel-array-search.cpp**
 
-## See Also
+## See also
 
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
 [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>

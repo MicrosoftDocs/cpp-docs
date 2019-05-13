@@ -1,16 +1,9 @@
 ---
-title: "CComClassFactory2 Class | Microsoft Docs"
-ms.custom: ""
+title: "CComClassFactory2 Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComClassFactory2", "ATLCOM/ATL::CComClassFactory2", "ATLCOM/ATL::CComClassFactory2::CreateInstance", "ATLCOM/ATL::CComClassFactory2::CreateInstanceLic", "ATLCOM/ATL::CComClassFactory2::GetLicInfo", "ATLCOM/ATL::CComClassFactory2::LockServer", "ATLCOM/ATL::CComClassFactory2::RequestLicKey"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactory2 class"]
 ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComClassFactory2 Class
 
@@ -214,7 +207,7 @@ A license key is required for calling [CreateInstanceLic](#createinstancelic) to
 
 Call [GetLicInfo](#getlicinfo) to retrieve the value of `fRuntimeKeyAvail`.
 
-## See Also
+## See also
 
 [CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
 [CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>

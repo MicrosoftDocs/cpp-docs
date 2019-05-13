@@ -1,16 +1,9 @@
 ---
-title: "make_signed Class | Microsoft Docs"
-ms.custom: ""
+title: "make_signed Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::make_signed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["make_signed class", "make_signed"]
 ms.assetid: 686247c0-247c-496b-9b1b-ba9dcd633621
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # make_signed Class
 

@@ -1,16 +1,9 @@
 ---
-title: "CPropertySheet Class | Microsoft Docs"
-ms.custom: ""
+title: "CPropertySheet Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPropertySheet", "AFXDLGS/CPropertySheet", "AFXDLGS/CPropertySheet::CPropertySheet", "AFXDLGS/CPropertySheet::AddPage", "AFXDLGS/CPropertySheet::Construct", "AFXDLGS/CPropertySheet::Create", "AFXDLGS/CPropertySheet::DoModal", "AFXDLGS/CPropertySheet::EnableStackedTabs", "AFXDLGS/CPropertySheet::EndDialog", "AFXDLGS/CPropertySheet::GetActiveIndex", "AFXDLGS/CPropertySheet::GetActivePage", "AFXDLGS/CPropertySheet::GetPage", "AFXDLGS/CPropertySheet::GetPageCount", "AFXDLGS/CPropertySheet::GetPageIndex", "AFXDLGS/CPropertySheet::GetTabControl", "AFXDLGS/CPropertySheet::MapDialogRect", "AFXDLGS/CPropertySheet::OnInitDialog", "AFXDLGS/CPropertySheet::PressButton", "AFXDLGS/CPropertySheet::RemovePage", "AFXDLGS/CPropertySheet::SetActivePage", "AFXDLGS/CPropertySheet::SetFinishText", "AFXDLGS/CPropertySheet::SetTitle", "AFXDLGS/CPropertySheet::SetWizardButtons", "AFXDLGS/CPropertySheet::SetWizardMode", "AFXDLGS/CPropertySheet::m_psh"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPropertySheet [MFC], CPropertySheet", "CPropertySheet [MFC], AddPage", "CPropertySheet [MFC], Construct", "CPropertySheet [MFC], Create", "CPropertySheet [MFC], DoModal", "CPropertySheet [MFC], EnableStackedTabs", "CPropertySheet [MFC], EndDialog", "CPropertySheet [MFC], GetActiveIndex", "CPropertySheet [MFC], GetActivePage", "CPropertySheet [MFC], GetPage", "CPropertySheet [MFC], GetPageCount", "CPropertySheet [MFC], GetPageIndex", "CPropertySheet [MFC], GetTabControl", "CPropertySheet [MFC], MapDialogRect", "CPropertySheet [MFC], OnInitDialog", "CPropertySheet [MFC], PressButton", "CPropertySheet [MFC], RemovePage", "CPropertySheet [MFC], SetActivePage", "CPropertySheet [MFC], SetFinishText", "CPropertySheet [MFC], SetTitle", "CPropertySheet [MFC], SetWizardButtons", "CPropertySheet [MFC], SetWizardMode", "CPropertySheet [MFC], m_psh"]
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPropertySheet Class
 
@@ -560,7 +553,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Points to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
+Points to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
 
 ### Remarks
 
@@ -781,11 +774,11 @@ Call `SetWizardMode` before calling [DoModal](#domodal). After you call `SetWiza
 
 [!code-cpp[NVC_MFCDocView#142](../../mfc/codesnippet/cpp/cpropertysheet-class_15.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
-[MFC Sample PROPDLG](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample PROPDLG](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

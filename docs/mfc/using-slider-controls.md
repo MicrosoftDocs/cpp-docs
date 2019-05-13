@@ -1,15 +1,8 @@
 ---
-title: "Using Slider Controls | Microsoft Docs"
-ms.custom: ""
+title: "Using Slider Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSliderCtrl class [MFC], using", "slider controls", "slider controls [MFC], using"]
 ms.assetid: 2b1a8ac8-2b17-41e1-aa24-83c1fd737049
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Slider Controls
 
@@ -23,8 +16,7 @@ Typical usage of an slider control follows the pattern below:
 
 - When you're done with the control, you need to make sure it's properly destroyed. If the slider control is in a dialog box, it and the `CSliderCtrl` object will be destroyed automatically. If not, you need to ensure that both the control and the `CSliderCtrl` object are properly destroyed.
 
-## See Also
+## See also
 
 [Using CSliderCtrl](../mfc/using-csliderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,15 +1,9 @@
 ---
-title: "How to: Call Properties and Methods of the Windows Forms Control | Microsoft Docs"
+title: "How to: Call Properties and Methods of the Windows Forms Control"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["method calls, Windows Forms", "calling methods, Windows Forms control", "calling properties, Windows Forms control", "Windows Forms controls [C++], methods", "calling properties", "Windows Forms controls [C++], properties"]
 ms.assetid: 6e647d8a-fdaa-4aa1-b3fe-04f15cff8eb3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Call Properties and Methods of the Windows Forms Control
 
@@ -43,6 +37,6 @@ This topic assumes you have previously completed [How to: Create the User Contro
 
    Notice that the text box is now initialized.
 
-## See Also
+## See also
 
 [Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)

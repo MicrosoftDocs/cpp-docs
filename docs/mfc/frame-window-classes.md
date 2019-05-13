@@ -1,15 +1,8 @@
 ---
-title: "Frame-Window Classes | Microsoft Docs"
-ms.custom: ""
+title: "Frame-Window Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["frame window classes [MFC], about frame window classes", "frame window classes [MFC]", "windows [MFC], MDI", "document frame windows [MFC], classes", "single document interface (SDI), frame windows", "window classes [MFC], frame", "MFC, frame windows", "MDI [MFC], frame windows", "classes [MFC], window"]
 ms.assetid: c27e43a7-8ad0-4759-b1b7-43f4725f4132
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Frame-Window Classes
 
@@ -31,7 +24,6 @@ These classes provide most of the frame-window functionality you need for your a
 
 - [Changing the styles of a window created by MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
 
-## See Also
+## See also
 
 [Frame Windows](../mfc/frame-windows.md)
-

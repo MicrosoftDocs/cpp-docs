@@ -1,16 +1,9 @@
 ---
-title: "MFC Support in ATL Projects | Microsoft Docs"
-ms.custom: ""
+title: "MFC Support in ATL Projects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.atl.addmfc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, MFC support"]
 ms.assetid: f90b4276-cb98-4c11-902c-9ebcfe6f954b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Support in ATL Projects
 
@@ -49,9 +42,8 @@ int CProjNameApp::ExitInstance()
 
 You can view the application object class and its `InitInstance` and `ExitInstance` functions in Class View.
 
-## See Also
+## See also
 
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
-

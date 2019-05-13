@@ -1,16 +1,9 @@
 ---
-title: "__writecr3 | Microsoft Docs"
-ms.custom: ""
+title: "__writecr3"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_writecr3"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_writecr3 intrinsic"]
 ms.assetid: 959d49fa-69d5-47cf-88d2-7688367fe38f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writecr3
 
@@ -21,8 +14,8 @@ Writes the value `Data` to the CR3 register.
 ## Syntax
 
 ```
-void writecr3( 
-   unsigned __int64 Data 
+void writecr3(
+   unsigned __int64 Data
 );
 ```
 
@@ -45,6 +38,6 @@ This intrinsic is only available in kernel mode, and the routine is only availab
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

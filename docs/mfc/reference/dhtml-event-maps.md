@@ -1,16 +1,9 @@
 ---
-title: "DHTML Event Maps | Microsoft Docs"
-ms.custom: ""
+title: "DHTML Event Maps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.macros.shared"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event map macros [MFC]", "DHTML [MFC], event map macros", "macros [MFC], DHTML event map", "DHTML events [MFC], event map", "DHTML events [MFC]"]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DHTML Event Maps
 
@@ -436,7 +429,6 @@ Handles (at the document level) the `ondatasetcomplete` event originated by the 
 
 ```
 DHTML_EVENT_ONDATASETCOMPLETE(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -509,7 +501,6 @@ Handles (at the document level) the `onerrorupdate` event originated by the HTML
 
 ```
 DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -535,7 +526,6 @@ Handles (at the document level) the `onfilterchange` event originated by the HTM
 ```
 
 DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -561,7 +551,6 @@ Handles (at the element level) the `onfocus` event. This is a nonbubbling event.
 ```
 
 DHTML_EVENT_ONFOCUS(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -587,7 +576,6 @@ Handles (at the document level) the `onhelp` event originated by the HTML elemen
 ```
 
 DHTML_EVENT_ONHELP(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -613,7 +601,6 @@ Handles (at the document level) the `onkeydown` event originated by the HTML ele
 ```
 
 DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -639,7 +626,6 @@ Handles (at the document level) the `onkeypress` event originated by the HTML el
 ```
 
 DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -665,7 +651,6 @@ Handles (at the document level) the `onkeyup` event originated by the HTML eleme
 ```
 
 DHTML_EVENT_ONKEYUP(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -691,7 +676,6 @@ Handles (at the document level) the `onmousedown` event originated by the HTML e
 ```
 
 DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -717,7 +701,6 @@ Handles (at the document level) the `onmousemove` event originated by the HTML e
 ```
 
 DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -743,7 +726,6 @@ Handles (at the document level) the `onmouseout` event originated by the HTML el
 ```
 
 DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -769,7 +751,6 @@ Handles (at the document level) the `onmouseover` event originated by the HTML e
 ```
 
 DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -795,7 +776,6 @@ Handles (at the document level) the `onmouseup` event originated by the HTML ele
 ```
 
 DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -821,7 +801,6 @@ Handles (at the element level) the `onresize` event. This is a nonbubbling event
 ```
 
 DHTML_EVENT_ONRESIZE(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -847,7 +826,6 @@ Handles (at the document level) the `onrowenter` event originated by the HTML el
 ```
 
 DHTML_EVENT_ONROWENTER(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -873,7 +851,6 @@ Handles (at the document level) the `onrowexit` event originated by the HTML ele
 ```
 
 DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -899,7 +876,6 @@ Handles (at the document level) the `onselectstart` event originated by the HTML
 ```
 
 DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
-
 ```
 
 ### Parameters
@@ -967,7 +943,6 @@ Starts the definition of a DHTML and URL event map in a multipage dialog.
 
 ```
 BEGIN_DHTML_URL_EVENT_MAP()
-
 ```
 
 ### Remarks
@@ -988,7 +963,6 @@ Starts the definition of an embedded DHTML event map in a multipage dialog.
 
 ```
 BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
-
 ```
 
 ### Parameters
@@ -1021,7 +995,6 @@ Starts the definition of a URL event entry map in a multipage dialog.
 
 ```
 BEGIN_URL_ENTRIES(className)
-
 ```
 
 ### Parameters
@@ -1047,7 +1020,6 @@ Declares a DHTML and URL event map in a class definition.
 
 ```
 DECLARE_DHTML_URL_EVENT_MAP()
-
 ```
 
 ### Remarks
@@ -1066,7 +1038,6 @@ Marks the end of a DHTML and URL event map.
 
 ```
 END_DHTML_URL_EVENT_MAP(className)
-
 ```
 
 ### Parameters
@@ -1088,7 +1059,6 @@ Marks the end of an embedded DHTML event map.
 
 ```
 END_EMBED_DHTML_EVENT_MAP()
-
 ```
 
 ### Example
@@ -1105,7 +1075,6 @@ Marks the end of a URL event entry map.
 
 ```
 END_URL_ENTRIES()
-
 ```
 
 ### Example
@@ -1167,6 +1136,6 @@ Must be used in conjunction with [BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_eve
 
 **Header:** afxdhtml.h
 
-### See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)

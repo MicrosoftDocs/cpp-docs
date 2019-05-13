@@ -1,16 +1,9 @@
 ---
-title: "CMFCPopupMenuBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCPopupMenuBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCPopupMenuBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::AdjustSizeImmediate", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::BuildOrigItems", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::CloseDelayedSubMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::ExportToMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::FindDestintationToolBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetCurrentMenuImageSize", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetDefaultMenuId", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetLastCommandIndex", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetOffset", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::ImportFromMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsDropDownListMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsPaletteMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsRibbonPanel", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsRibbonPanelInRegularMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::LoadFromHash", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::RestoreDelayedSubMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetButtonStyle", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetOffset", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::StartPopupMenuTimer", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::m_bDisableSideBarInXPMode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPopupMenuBar [MFC], AdjustSizeImmediate", "CMFCPopupMenuBar [MFC], BuildOrigItems", "CMFCPopupMenuBar [MFC], CloseDelayedSubMenu", "CMFCPopupMenuBar [MFC], ExportToMenu", "CMFCPopupMenuBar [MFC], FindDestintationToolBar", "CMFCPopupMenuBar [MFC], GetCurrentMenuImageSize", "CMFCPopupMenuBar [MFC], GetDefaultMenuId", "CMFCPopupMenuBar [MFC], GetLastCommandIndex", "CMFCPopupMenuBar [MFC], GetOffset", "CMFCPopupMenuBar [MFC], ImportFromMenu", "CMFCPopupMenuBar [MFC], IsDropDownListMode", "CMFCPopupMenuBar [MFC], IsPaletteMode", "CMFCPopupMenuBar [MFC], IsRibbonPanel", "CMFCPopupMenuBar [MFC], IsRibbonPanelInRegularMode", "CMFCPopupMenuBar [MFC], LoadFromHash", "CMFCPopupMenuBar [MFC], RestoreDelayedSubMenu", "CMFCPopupMenuBar [MFC], SetButtonStyle", "CMFCPopupMenuBar [MFC], SetOffset", "CMFCPopupMenuBar [MFC], StartPopupMenuTimer", "CMFCPopupMenuBar [MFC], m_bDisableSideBarInXPMode"]
 ms.assetid: 4c93c459-7f70-4240-8c63-280bb811e374
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCPopupMenuBar Class
 
@@ -60,7 +53,7 @@ The `CMFCPopupMenuBar` is created at the same time as a [CMFCPopupMenu Class](..
 
 ## Example
 
-The following example demonstrates how to initialize a `CMFCPopupMenuBar` object from a `CMFCPopupMenu` object. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).
+The following example demonstrates how to initialize a `CMFCPopupMenuBar` object from a `CMFCPopupMenu` object. This code snippet is part of the [Draw Client sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#7](../../mfc/reference/codesnippet/cpp/cmfcpopupmenubar-class_1.cpp)]
 
@@ -401,7 +394,7 @@ void StartPopupMenuTimer(
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

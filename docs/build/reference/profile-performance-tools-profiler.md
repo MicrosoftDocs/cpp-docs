@@ -1,16 +1,9 @@
 ---
-title: "-PROFILE (Performance Tools Profiler) | Microsoft Docs"
-ms.custom: ""
+title: "/PROFILE (Performance Tools Profiler)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.Profile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-PROFILE linker option", "/PROFILE linker option"]
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /PROFILE (Performance Tools Profiler)
 
@@ -26,13 +19,13 @@ Produces an output file that can be used with the Performance Tools profiler.
 
 /PROFILE implies the following linker options:
 
-- [/OPT:REF](../../build/reference/opt-optimizations.md)
+- [/OPT:REF](opt-optimizations.md)
 
 - /OPT:NOICF
 
-- [/INCREMENTAL:NO](../../build/reference/incremental-link-incrementally.md)
+- [/INCREMENTAL:NO](incremental-link-incrementally.md)
 
-- [/FIXED:NO](../../build/reference/fixed-fixed-base-address.md)
+- [/FIXED:NO](fixed-fixed-base-address.md)
 
 /PROFILE causes the linker to generate a relocation section in the program image.  A relocation section allows the profiler to transform the program image to get profile data.
 
@@ -40,7 +33,7 @@ Produces an output file that can be used with the Performance Tools profiler.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 
@@ -54,7 +47,22 @@ Produces an output file that can be used with the Performance Tools profiler.
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Profile%2A>.
 
+### To set this linker option within Visual Studio CMake project
+
+**CMake** project does not have a **Property Pages**, the linker options can be set by modifing the CMakeLists.txt.
+
+1. Open the CMakeLists.txt in the project root directory.
+
+1. Add code below. For details, see [CMake references](https://cmake.org/cmake/help/v3.0/command/set_target_properties.html)
+
+1. Rebuild your solution.
+
+```
+SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/PROFILE")
+```
+
 ## See Also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)
+

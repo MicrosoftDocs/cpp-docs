@@ -1,16 +1,9 @@
 ---
-title: "UI Support Classes  (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "UI Support Classes  (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-f1_keywords: ["vc.atl.ui"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["user interfaces, support classes", "user interfaces, ATL classes"]
 ms.assetid: 313dfc95-308a-4118-b919-5a3c3673b865
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # UI Support Classes
 
@@ -30,7 +23,6 @@ The following classes provide general UI support:
 
 [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

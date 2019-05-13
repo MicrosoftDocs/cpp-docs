@@ -1,15 +1,8 @@
 ---
-title: "How to: Use combinable to Combine Sets | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use combinable to Combine Sets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["combinable class, example", "combining sets with combinable [Concurrency Runtime]"]
 ms.assetid: 66ffe8e3-6bbb-4e9f-b790-b612922a68a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use combinable to Combine Sets
 
@@ -37,9 +30,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc parallel-combine-primes.cpp**
 
-## See Also
+## See also
 
 [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [combinable Class](../../parallel/concrt/reference/combinable-class.md)<br/>
 [combinable::combine_each Method](reference/combinable-class.md#combine_each)
-

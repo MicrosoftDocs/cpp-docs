@@ -1,16 +1,9 @@
 ---
-title: "operator == (MASM Run Time) | Microsoft Docs"
-ms.custom: ""
+title: "operator == (MASM Run Time)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator =="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator ==", "== operator"]
 ms.assetid: 5412dfa7-8cec-4853-a641-5c9550098b19
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator == (MASM Run Time)
 

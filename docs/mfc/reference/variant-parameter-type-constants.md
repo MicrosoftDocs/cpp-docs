@@ -1,16 +1,9 @@
 ---
-title: "Variant Parameter Type Constants | Microsoft Docs"
-ms.custom: ""
+title: "Variant Parameter Type Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["VTS_YPOS_HIMETRIC", "VTS_PICTURE", "VTS_FONT", "VTS_XPOS_HIMETRIC", "VTS_XPOS_PIXELS", "VTS_XSIZE_HIMETRIC", "VTS_YPOS_PIXELS", "VTS_TRISTATE", "VTS_HANDLE", "VTS_YSIZE_HIMETRIC", "VTS_COLOR", "VTS_OPTEXCLUSIVE", "VTS_YSIZE_PIXELS", "VTS_XSIZE_PIXELS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VTS_XPOS_HIMETRIC constant [MFC]", "VTS_FONT constant [MFC]", "VTS_XPOS_PIXELS constant [MFC]", "VTS_COLOR constant [MFC]", "Variants [MFC]", "VTS_YPOS_PIXELS constant [MFC]", "VTS_YSIZE_HIMETRIC constant [MFC]", "VTS_YPOS_HIMETRIC constant [MFC]", "Variants, parameter type constants", "Variant data constants [MFC]", "VTS_PICTURE constant [MFC]", "VTS_TRISTATE constant [MFC]", "VTS_XSIZE_HIMETRIC constant [MFC]", "VTS_HANDLE constant [MFC]", "VTS_XSIZE_PIXELS constant [MFC]", "VTS_OPTEXCLUSIVE constant [MFC]", "VTS_YSIZE_PIXELS constant [MFC]"]
 ms.assetid: de99c7a9-7aae-4dc4-b723-40c6380543ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Variant Parameter Type Constants
 
@@ -55,6 +48,6 @@ The following is a list of class constants:
 
 **Header:** afxdisp.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

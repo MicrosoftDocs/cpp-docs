@@ -1,14 +1,7 @@
 ---
-title: "Using Lambdas, Function Objects, and Restricted Functions | Microsoft Docs"
-ms.custom: ""
+title: "Using Lambdas, Function Objects, and Restricted Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 25346cc9-869d-4ada-aad3-e2228cad3d6c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Lambdas, Function Objects, and Restricted Functions
 
@@ -156,7 +149,7 @@ void AddArraysWithFunction() {
 
 The restricted function must include `restrict(amp)` and conform to the restrictions that are described in [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md).
 
-## See Also
+## See also
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)<br/>

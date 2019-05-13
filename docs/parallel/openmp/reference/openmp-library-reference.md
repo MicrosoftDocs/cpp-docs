@@ -1,16 +1,9 @@
 ---
-title: "OpenMP library reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/24/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "OpenMP Library Reference"
+ms.date: "03/20/2019"
 ms.assetid: a25188c6-edde-43d0-84b5-780e797b08fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
-# OpenMP library reference
+# OpenMP Library Reference
 
 Provides links to constructs used in the OpenMP API.
 
@@ -18,10 +11,23 @@ The Visual C++ implementation of the OpenMP standard includes the following cons
 
 |Construct|Description|
 |---------------|-----------------|
-|[Libraries](openmp-libraries.md)|Discusses the .lib files that make up the OpenMP run-time libraries in Visual C++.|
-|[Data types](openmp-data-types.md)|Provides links to data types used in the OpenMP API.|
-|[Environment variables](openmp-environment-variables.md)|Provides links to environment variables used in the OpenMP API.|
+|[Directives](openmp-directives.md)|Provides links to directives used in the OpenMP API.|
+|[Clauses](openmp-directives.md)|Provides links to clauses used in the OpenMP API.|
 |[Functions](openmp-functions.md)|Provides links to functions used in the OpenMP API.|
+|[Environment Variables](openmp-environment-variables.md)|Provides links to environment variables used in the OpenMP API.|
+
+The Visual C++ OpenMP run-time library functions are contained in the following libraries.
+
+|OpenMP run-time library|Characteristics|
+|------------------------------|---------------------|
+|VCOMP.LIB|Multithreaded, dynamic link (import library for VCOMP.LIB).|
+|VCOMPD.LIB|Multithreaded, dynamic link (import library for VCOMPD.LID) (debug)|
+
+If _DEBUG is defined in a compilation and if `#include omp.h` is in source code, VCOMPD.LIB will be the default lib, otherwise, VCOMP.LIB will be used.
+
+You can use [/NODEFAULTLIB (ignore libraries)](../../../build/reference/nodefaultlib-ignore-libraries.md) to remove the default lib and explicitly link with the lib of your choice.
+
+The OpenMP DLLs are in the Visual C++ redistributable directory and need to be distributed with applications that use OpenMP.
 
 ## See also
 

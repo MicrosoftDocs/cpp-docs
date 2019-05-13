@@ -1,16 +1,9 @@
 ---
-title: "__ull_rshift | Microsoft Docs"
-ms.custom: ""
+title: "__ull_rshift"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__ull_rshift"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ull_rshift intrinsic", "__ull_rshift intrinsic"]
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __ull_rshift
 
@@ -21,9 +14,9 @@ on x64, shifts a 64-bit value specified by the first parameter to the right by a
 ## Syntax
 
 ```
-unsigned __int64 __ull_rshift( 
-   unsigned __int64 mask,  
-   int nBit 
+unsigned __int64 __ull_rshift(
+   unsigned __int64 mask, 
+   int nBit
 );
 ```
 
@@ -80,7 +73,7 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__ll_lshift](../intrinsics/ll-lshift.md)<br/>
 [__ll_rshift](../intrinsics/ll-rshift.md)<br/>

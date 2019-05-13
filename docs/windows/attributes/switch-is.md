@@ -1,16 +1,9 @@
 ---
-title: "switch_is (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "switch_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.switch_is"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["switch_is attribute"]
 ms.assetid: f1fffe5d-12d2-4e0f-8803-ccb715177d2d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # switch_is
 
@@ -43,7 +36,7 @@ See the [case](case-cpp.md) example for a sample use of **switch_is**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>

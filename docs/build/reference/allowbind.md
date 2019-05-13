@@ -1,16 +1,9 @@
 ---
-title: "-ALLOWBIND | Microsoft Docs"
-ms.custom: ""
+title: "/ALLOWBIND"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/allowbind"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ALLOWBIND editbin option", "/ALLOWBIND editbin option", "-ALLOWBIND editbin option"]
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ALLOWBIND
 
@@ -27,8 +20,8 @@ The **/ALLOWBIND** option sets a bit in a DLL's header that indicates to Bind.ex
 
 Use **/ALLOWBIND:NO** to prevent Bind.exe from binding the DLL.
 
-For more information, see the [/ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md) linker option.
+For more information, see the [/ALLOWBIND](allowbind-prevent-dll-binding.md) linker option.
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)
