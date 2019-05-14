@@ -1,6 +1,6 @@
 ---
 title: "C complex math support"
-ms.date: "03/30/2018"
+ms.date: "05/14/2019"
 f1_keywords: ["c.complex"]
 helpviewer_keywords: ["complex numbers, math routines", "math routines", "complex numbers"]
 ---
