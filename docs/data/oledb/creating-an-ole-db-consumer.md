@@ -12,7 +12,7 @@ The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 You can create an OLE DB Templates consumer with or without the **ATL OLE DB Consumer Wizard**, though using the wizard is the recommended method. A consumer can operate in any application that supports ATL.
 
