@@ -95,7 +95,7 @@
 ## [ATL Collection Classes](atl-collection-classes.md)
 ## [ATL Registry Component (Registrar)](atl-registry-component-registrar.md)
 ### [Creating Registrar Scripts](creating-registrar-scripts.md)
-#### [Understanding Backus Nauer Form (BNF) Syntax](understanding-backus-nauer-form-bnf-syntax.md)
+#### [Understanding Backus-Naur form (BNF) syntax](understanding-backus-naur-form-bnf-syntax.md)
 #### [Understanding Parse Trees](understanding-parse-trees.md)
 #### [Registry Scripting Examples](registry-scripting-examples.md)
 #### [Using Replaceable Parameters (The Registrar's Preprocessor)](using-replaceable-parameters-the-registrar-s-preprocessor.md)
