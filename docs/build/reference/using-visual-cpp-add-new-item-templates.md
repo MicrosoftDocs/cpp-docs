@@ -1,14 +1,14 @@
 ---
 title: "Using Visual C++ Add New Item Templates"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["Add New Item", "Add New Item templates", "Add New Item command", "templates, Add New Item"]
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
 ---
 # Using Visual C++ Add New Item Templates
 
-You can easily add items that are common to Visual C++ projects by using the **Add New Item** command. When you use the **Add New Item** command, the `Add New Item` dialog box appears with a list of item templates, which add the appropriate files to your project.
+You can easily add items that are common to Visual Studio projects by using the **Add New Item** command. When you use the **Add New Item** command, the `Add New Item` dialog box appears with a list of item templates, which add the appropriate files to your project.
 
-The following table is an alphabetical list of Visual C++ Add New Item templates.
+The following table is an alphabetical list of Visual Studio Add New Item templates.
 
 |Template|Description|
 |--------------|-----------------|
@@ -28,7 +28,7 @@ The following table is an alphabetical list of Visual C++ Add New Item templates
 |Installer Class|Adds a class that inherits from the <xref:System.Configuration.Install.Installer> using CLR features.|
 |MIDL File (.idl)|Creates an Interface Definition Language file.|
 |Module-Definition File (.def)|Creates a DLL export definition file.|
-|Property Sheet (.props)|Creates a Visual C++ property sheet file.|
+|Property Sheet (.props)|Creates a property sheet file.|
 |Registration Script (.rgs)|Creates an ATL registration script file.|
 |Report (.rdlc)|Creates a report file.|
 |Resource File (.rc)|Creates a Win32 resource file.|

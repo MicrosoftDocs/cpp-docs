@@ -38,5 +38,5 @@ If none of these DLLs are found, MFC uses the resources in LangExample.exe.
 
 ## See also
 
-[DLLs in Visual C++](dlls-in-visual-cpp.md)<br/>
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)<br/>
 [TN057: Localization of MFC Components](../mfc/tn057-localization-of-mfc-components.md)

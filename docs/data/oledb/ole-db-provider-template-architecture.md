@@ -46,7 +46,7 @@ For more information, see the following topics:
 
 - [The User Record](../../data/oledb/user-record.md)
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Interfaces](/previous-versions/windows/desktop/ms709709(v=vs.85))<br/>

@@ -9,7 +9,7 @@ ms.assetid: 9317b55e-a52e-4b87-b915-5a208d6eda38
 
 'delegate': a delegate may not be defined
 
-A [delegate  (C++ Component Extensions)](../../windows/delegate-cpp-component-extensions.md) can be declared but not defined.
+A [delegate  (C++ Component Extensions)](../../extensions/delegate-cpp-component-extensions.md) can be declared but not defined.
 
 ## Example
 

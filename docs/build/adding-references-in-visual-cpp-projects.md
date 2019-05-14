@@ -11,7 +11,7 @@ Often, a C++ project needs to call functions or access data in a binary file suc
 
 ## Consuming libraries downloaded via vcpkg
 
-To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. See [vcpkg: A C++ package manager for Windows, Linux and MacOS](../vcpkg.md#integrate-with-visual-studio-windows) for more information.
+To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. See [vcpkg: A C++ package manager for Windows, Linux and MacOS](vcpkg.md#integrate-with-visual-studio-windows) for more information.
 
 ## Consuming static libraries
 
@@ -155,7 +155,7 @@ The following properties are found on COM and .NET assembly references, and cann
 
    Displays the version of the referenced assembly.
 
-## See Also
+## See also
 
 [C++ project property page reference](reference/property-pages-visual-cpp.md)<br>
 [Set C++ compiler and build properties in Visual Studio](working-with-project-properties.md)

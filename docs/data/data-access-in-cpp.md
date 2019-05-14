@@ -29,11 +29,11 @@ Connect to Azure SQL Database from C or C++ applications.
 [Microsoft Azure Storage Client Library for C++](https://github.com/Azure/azure-storage-cpp)<br/>
 [Azure Storage](/azure/storage/storage-introduction) is a cloud storage solution for modern applications that rely on durability, availability, and scalability to meet the needs of their customers. Connect to Azure Storage from C++ by using the Azure Storage Client Library for C++.
 
-[ODBC Driver 13.1 for SQL Server - Windows Released](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server)<br/>
-The latest ODBC driver provides robust data access to Microsoft SQL Server 2016 Microsoft Azure SQL Database for C/C++ based applications. Provides support for features including always encrypted, Azure Active Directory, and AlwaysOn Availability Groups. Also available for MacOS and Linux.
+[ODBC Driver for SQL Server](/sql/connect/odbc/microsoft-odbc-driver-for-sql-server)<br/>
+The latest ODBC driver provides robust data access to Microsoft SQL Server and Microsoft Azure SQL Database for C/C++ based applications. Provides support for features including always encrypted, Azure Active Directory, and AlwaysOn Availability Groups. Also available for MacOS and Linux.
 
-[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming)<br/>
-SQL Server Native Client is a stand-alone data access application programming interface (API), used for both OLE DB and ODBC, that supports SQL Server 2005 through SQL Server 2014. New applications should use the ODBC Driver 13.1 for SQL Server.
+[OLE DB Driver for SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)<br/>
+The latest OLE DB driver is a stand-alone data access application programming interface (API) that supports Microsoft SQL Server and Microsoft Azure SQL Database.
 
 [Microsoft Azure C and C++ Developer Center](https://azure.microsoft.com/develop/cpp/)<br/>
 Azure makes it easy to build C++ applications with increased flexibility, scalability and reliability using tools you love.
@@ -44,6 +44,6 @@ Azure Blob storage is a service that stores unstructured data in the cloud as ob
 [ ODBC Programmer's Reference](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
 The ODBC interface is designed for use with the C programming language. Use of the ODBC interface spans three areas: SQL statements, ODBC function calls, and C programming.
 
-## See Also
+## See also
 
-[Visual C++](../visual-cpp-in-visual-studio.md)
+[Visual C++](../overview/visual-cpp-in-visual-studio.md)

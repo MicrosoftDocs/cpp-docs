@@ -7442,7 +7442,7 @@ Contains the x- and y-coordinates of the cursor. These coordinates are always sc
 
 ### Return Value
 
-One of the mouse hit-test enumerated values listed below.
+One of the mouse hit-test enumerated values. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 ### Remarks
 
@@ -7462,7 +7462,7 @@ afx_msg void OnNcLButtonDblClk(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
@@ -7487,7 +7487,7 @@ afx_msg void OnNcLButtonDown(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
@@ -7512,7 +7512,7 @@ afx_msg void OnNcLButtonUp(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.

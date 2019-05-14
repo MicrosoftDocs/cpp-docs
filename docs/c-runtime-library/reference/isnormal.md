@@ -6,7 +6,7 @@ helpviewer_keywords: ["isnormal function"]
 ---
 # isnormal
 
-Determines whether a floating-point value is an infinity.
+Determines whether a floating-point value is a normal value.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ int isnormal(
 template <class FloatingType>
 inline bool isnormal(
    FloatingType x
-) throw(); /* C++-only template function */
+) throw(); /* C++-only function template */
 ```
 
 ### Parameters
@@ -28,11 +28,11 @@ The floating-point value to test.
 
 ## Return value
 
-**isnormal** returns a nonzero value  (**true** in C++ code) if the argument *x* is both finite and not subnormal. **isnormal** returns 0 (**false** in C++ code) if the argument is a subnormal, an infinity, or a NAN.
+**isnormal** returns a nonzero value (**true** in C++ code) if the argument *x* is neither zero, subnormal, infinite, nor a NaN. Otherwise, **isnormal** returns 0 (**false** in C++ code).
 
 ## Remarks
 
-**isnormal** is a macro when compiled as C, and an inline template function when compiled as C++.
+**isnormal** is a macro when compiled as C, and an inline function template when compiled as C++.
 
 ## Requirements
 

@@ -38,7 +38,7 @@ These intrinsics are available only in kernel mode, and the routines are availab
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__readdr](../intrinsics/readdr.md)

@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::VectorIterator Class"
-ms.date: "12/30/2016"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorIterator::VectorIterator"]
 helpviewer_keywords: ["VectorIterator Class"]
@@ -56,11 +56,11 @@ The typename of the VectorIterator template class.
 |[VectorIterator::operator+= Operator](#operator-plus-assign)|Increments the current VectorIterator by the specified displacement.|
 |[VectorIterator::operator< Operator](#operator-less-than)|Indicates whether the current VectorIterator is less than a specified VectorIterator.|
 |[VectorIterator::operator\<= Operator](#operator-less-than-or-equals)|Indicates whether the current VectorIterator is less than or equal to a specified VectorIterator.|
-|[VectorIterator::operator-= Operator](#operator-subtract-assign)|Decrements the current VectorIterator by the specified displacement.|
+|[VectorIterator::operator-= Operator](#operator-minus-equals)|Decrements the current VectorIterator by the specified displacement.|
 |[VectorIterator::operator== Operator](#operator-equality)|Indicates whether the current VectorIterator is equal to a specified VectorIterator.|
 |[VectorIterator::operator> Operator](#operator-greater-than)|Indicates whether the current VectorIterator is greater than a specified VectorIterator.|
 |[VectorIterator::operator-> Operator](#operator-arrow)|Retrieves the address of the element referenced by the current VectorIterator.|
-|[VectorIterator::operator>= Operator](#operator-greater-than-or-equal)|Indicates whether the current VectorIterator is greater than or equal to a specified VectorIterator.|
+|[VectorIterator::operator>= Operator](#operator-greater-than-or-equals)|Indicates whether the current VectorIterator is greater than or equal to a specified VectorIterator.|
 
 ## Inheritance Hierarchy
 

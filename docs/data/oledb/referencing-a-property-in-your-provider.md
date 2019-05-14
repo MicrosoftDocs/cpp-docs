@@ -57,6 +57,6 @@ if (pPropSet)
 }
 ```
 
-## See Also
+## See also
 
 [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

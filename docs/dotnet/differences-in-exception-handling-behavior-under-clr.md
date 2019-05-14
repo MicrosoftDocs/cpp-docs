@@ -269,6 +269,6 @@ Caught an SEH exception with exception code: e0000101
 
 ## See also
 
-[Exception Handling](../windows/exception-handling-cpp-component-extensions.md)<br/>
-[safe_cast](../windows/safe-cast-cpp-component-extensions.md)<br/>
+[Exception Handling](../extensions/exception-handling-cpp-component-extensions.md)<br/>
+[safe_cast](../extensions/safe-cast-cpp-component-extensions.md)<br/>
 [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)

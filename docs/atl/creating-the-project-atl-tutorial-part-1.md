@@ -1,7 +1,7 @@
 ---
 title: "Creating the Project (ATL Tutorial, Part 1)"
 ms.custom: "get-started-article"
-ms.date: "09/26/2018"
+ms.date: "05/06/2019"
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
 ---
 # Creating the Project (ATL Tutorial, Part 1)
@@ -30,9 +30,9 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
 
 ### To create the initial ATL project using the ATL Project Wizard
 
-1. In the Visual Studio development environment, click **New** on the **File** menu, and then click **Project**.
+1. In Visual Studio 2017 and earlier: **File** > **New** > **Project**. The open the **Visual C++** tab and select **MFC/ATL**. Select **ATL Project**.
 
-1. Open the **Visual C++** tab and select **MFC/ATL**. Select **ATL Project**.
+   In Visual Studio 2019: Choose **File** > **New** > **Project**, type "atl" in the search box, and choose **ATL Project**.
 
 1. Type *Polygon* as the project name.
 

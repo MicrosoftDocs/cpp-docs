@@ -89,6 +89,6 @@ You also need to add the following properties to your provider. You only need to
 
 Most of the implementation for the notifications is already embedded in the OLE DB Provider Templates. If you don't add `IRowsetNotifyCP` to your inheritance chain, the compiler removes all that code from your compilation stream, thus making your code size smaller.
 
-## See Also
+## See also
 
 [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

@@ -64,7 +64,7 @@ This reimplementation results in less MFC code for toolbars, because MFC makes u
 > [!TIP]
 >  If you have invested heavily in the older MFC implementation of `CToolBar`, that support is still available. See the article [Using Your Old Toolbars](../mfc/using-your-old-toolbars.md).
 
-Also see the MFC General sample [DOCKTOOL](../visual-cpp-samples.md).
+Also see the MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md).
 
 ##  <a name="_core_the_toolbar_bitmap"></a> The Toolbar Bitmap
 

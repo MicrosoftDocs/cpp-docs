@@ -22,6 +22,14 @@ Schema rowsets allow consumers to get information about a data store without kno
 
 ## ATL OLE DB Provider Wizard Support
 
+::: moniker range="vs-2019"
+
+The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 The **ATL OLE DB Provider Wizard** creates three schema classes in the session header file:
 
 - **C**<em>ShortName</em>**SessionTRSchemaRowset**
@@ -43,6 +51,8 @@ You can customize these classes to handle schema information appropriate to your
 - In **C**<em>ShortName</em>**SessionTRSchemaRowset**, you must fill out the catalog, table, and description fields (`trData.m_szType`, `trData.m_szTable`, and `trData.m_szDesc`). The wizard-generated example uses only one row (table). Other providers might return more than one table.
 
 - In **C**<em>ShortName</em>**SessionColSchemaRowset**, you pass the name of the table as a `DBID`.
+
+::: moniker-end
 
 ## Setting Restrictions
 
@@ -251,6 +261,6 @@ For information about how consumers can use `IDBSchemaRowset` methods, see [Obta
 
 For an example of a provider that supports schema rowsets, see the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample.
 
-## See Also
+## See also
 
 [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

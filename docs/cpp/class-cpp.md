@@ -57,7 +57,7 @@ For more information on classes in general, refer to one of the following topics
 
 - [__virtual_inheritance](../cpp/inheritance-keywords.md)
 
-For information on managed classes and structs, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)
+For information on managed classes and structs in C++/CLI and C++/CX, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 ## Example
 

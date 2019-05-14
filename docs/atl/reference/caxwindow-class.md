@@ -349,7 +349,7 @@ The external `IDocHostUIHandlerDispatch` interface is used by controls that quer
 
 ## See also
 
-[ATLCON Sample](../../visual-cpp-samples.md)<br/>
+[ATLCON Sample](../../overview/visual-cpp-samples.md)<br/>
 [CWindow Class](../../atl/reference/cwindow-class.md)<br/>
 [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

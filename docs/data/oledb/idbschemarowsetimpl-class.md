@@ -249,7 +249,7 @@ This method returns an array of all schema rowsets supported by the provider. Se
 
 The implementation of this function requires the user to have a schema map in the session class. Using the schema map information, it then responds with the array of GUIDs for the schemas in the map. This represents the schemas supported by the provider.
 
-## See Also
+## See also
 
 [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)<br/>
 [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md)<br/>

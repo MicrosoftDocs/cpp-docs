@@ -21,6 +21,6 @@ The `OnMove` member function provides default command handling for all four comm
 > [!NOTE]
 >  Be sure to use these standard command IDs for any user-interface objects associated with the standard record navigation commands.
 
-## See Also
+## See also
 
 [Supporting Navigation in a Record View](../data/supporting-navigation-in-a-record-view-mfc-data-access.md)

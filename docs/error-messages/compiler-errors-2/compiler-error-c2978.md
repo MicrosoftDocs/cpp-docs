@@ -9,7 +9,7 @@ ms.assetid: 5e7bee82-e266-4ccd-ad2e-ee89606ec5bf
 
 syntax error : expected 'keyword1' or 'keyword2'; found type 'keyword3'; non-type parameters are not supported in generics
 
-A generic class was declared incorrectly. See [Generics](../../windows/generics-cpp-component-extensions.md)for more information.
+A generic class was declared incorrectly. See [Generics](../../extensions/generics-cpp-component-extensions.md)for more information.
 
 ## Example
 

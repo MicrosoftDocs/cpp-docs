@@ -490,7 +490,7 @@ This allows the framework to prompt the user to save the document before closing
 
 ## See also
 
-[MFC Sample CONTAINER](../../visual-cpp-samples.md)<br/>
-[MFC Sample MFCBIND](../../visual-cpp-samples.md)<br/>
+[MFC Sample CONTAINER](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MFCBIND](../../overview/visual-cpp-samples.md)<br/>
 [CDocument Class](../../mfc/reference/cdocument-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

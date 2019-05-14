@@ -99,7 +99,7 @@ By default, the ActiveX control classes and tools are installed in the following
 
    Contains the libraries required to develop ActiveX controls with MFC
 
-There are also samples for MFC ActiveX controls. For more information about these samples, see [Controls Samples: MFC-Based ActiveX Controls](../visual-cpp-samples.md)
+There are also samples for MFC ActiveX controls. For more information about these samples, see [Controls Samples: MFC-Based ActiveX Controls](../overview/visual-cpp-samples.md)
 
 ## See also
 

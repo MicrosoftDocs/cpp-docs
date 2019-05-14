@@ -113,7 +113,7 @@ This member is set by the function [AfxThrowOleDispatchException](exception-proc
 
 ## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
+[MFC Sample CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDispatchDriver Class](../../mfc/reference/coledispatchdriver-class.md)<br/>

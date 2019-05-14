@@ -11,7 +11,7 @@ ms.assetid: f233bed7-474e-425f-aad2-7801578169d4
 
 The parameter lists for `function` and the delegate do not match.
 
-For more information, see [delegate  (C++ Component Extensions)](../../windows/delegate-cpp-component-extensions.md).
+For more information, see [delegate  (C++ Component Extensions)](../../extensions/delegate-cpp-component-extensions.md).
 
 The following sample generates C3352:
 

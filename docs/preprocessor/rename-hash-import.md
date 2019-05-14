@@ -50,7 +50,7 @@ This is because the name `GetMyParent` only occurs in the resulting type library
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

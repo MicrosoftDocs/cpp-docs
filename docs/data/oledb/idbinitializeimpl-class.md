@@ -131,7 +131,7 @@ A pointer to implementation object for DB Properties information.
 CUtlPropInfo< T >* m_pCUtlPropInfo;
 ```
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

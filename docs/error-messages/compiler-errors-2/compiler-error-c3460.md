@@ -9,7 +9,7 @@ ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
 
 'type': only a user-defined type can be forwarded
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

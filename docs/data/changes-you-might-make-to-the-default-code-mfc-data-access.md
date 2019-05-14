@@ -14,6 +14,6 @@ The [MFC Application Wizard](../mfc/reference/database-support-mfc-application-w
 
 - Pass a customized SQL string to the [Open](../mfc/reference/crecordset-class.md#open) member function. For a discussion of what you can accomplish with this technique , see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
-## See Also
+## See also
 
 [Using a Record View](../data/using-a-record-view-mfc-data-access.md)

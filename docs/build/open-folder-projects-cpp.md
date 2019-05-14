@@ -1,7 +1,7 @@
 ---
 title: "Open Folder support for C++ build systems in Visual Studio"
 ms.date: "03/21/2019"
-helpviewer_keywords: ["Open Folder Projects in Visual C++"]
+helpviewer_keywords: ["Open Folder Projects in Visual Studio"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # Open Folder projects for C++
@@ -101,7 +101,3 @@ To specify additional arguments, just add them in the `args` JSON array as shown
 ```
 
 When you save this file, the new configuration appears in the Debug Target dropdown and you can select it to start the debugger. You can create as many debug configurations as you like, for any number of executables. If you press **F5** now, the debugger will launch and hit any breakpoint you may have already set. All the familiar debugger windows and their functionality are now available.
-
-## See also
-
-

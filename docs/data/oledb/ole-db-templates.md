@@ -1,6 +1,6 @@
 ---
 title: "OLE DB Templates"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 f1_keywords: ["vc.templates.ole"]
 helpviewer_keywords: ["OLE DB templates"]
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
@@ -25,7 +25,7 @@ Describes what OLE DB is and discusses Universal Data Access in OLE DB.
 [OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)<br/>
 Provides links to the Windows SDK documentation on OLE DB.
 
-[OLE DB Templates Samples](../../visual-cpp-samples.md)<br/>
+[OLE DB Templates Samples](../../overview/visual-cpp-samples.md)<br/>
 Provides links to the OLE DB Templates samples that show how to use OLE DB in your projects.
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
@@ -35,7 +35,7 @@ Discusses conceptual material about the OLE DB Consumer Templates.
 Discusses conceptual material about the OLE DB Provider Templates.
 
 [Creating an OLE DB Consumer](../../data/oledb/creating-an-ole-db-consumer.md)<br/>
-Describes creating an OLE DB Templates consumer either with or without the ATL OLE DB Consumer Wizard.
+Describes creating an OLE DB Templates consumer.
 
 [Creating a Simple Read-Only Provider](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
 Describes creating a simple read-only provider that reads a pair of strings.

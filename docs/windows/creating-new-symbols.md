@@ -65,7 +65,7 @@ When you're browsing symbols in the **Resource Symbols**, you may want more info
 
 Win32
 
-## See Also
+## See also
 
 [Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
 [How to: Manage Symbols](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>

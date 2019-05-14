@@ -15,7 +15,7 @@ The compiler found a token in the position where it expected to find an override
 
 For example, if the unrecognized *specifier* is **_NOEXCEPT**, replace it with the keyword **noexcept**.
 
-For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).
+For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).
 
 ## Example
 

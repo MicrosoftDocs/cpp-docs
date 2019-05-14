@@ -9,7 +9,7 @@ ms.assetid: 84800a87-c8e6-45aa-82ae-02f816dc8d97
 
 'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must be a reference type
 
-A generic type was instantiated incorrectly.  Check the type definition.  For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+A generic type was instantiated incorrectly.  Check the type definition.  For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 

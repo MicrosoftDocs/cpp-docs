@@ -47,4 +47,4 @@ in MyInterface static constructor
 
 ## See also
 
-[interface class](../windows/interface-class-cpp-component-extensions.md)
+[interface class](../extensions/interface-class-cpp-component-extensions.md)

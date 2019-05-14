@@ -11,7 +11,7 @@ ms.assetid: 87461613-6633-430b-b95d-c7cb1bb63776
 
 When you declare a simple property, the compiler generates the get and set accessor methods, and those names are present in the scope of your program.  The compiler-generated names are formed by prepending get_ and set_ to the property name.  Therefore, you cannot declare functions with the same name as the compiler-generated accessors.
 
-See [property](../../windows/property-cpp-component-extensions.md) for more information.
+See [property](../../extensions/property-cpp-component-extensions.md) for more information.
 
 ## Example
 

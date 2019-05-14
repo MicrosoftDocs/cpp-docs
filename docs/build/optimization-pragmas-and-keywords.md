@@ -30,6 +30,6 @@ Several keywords and pragmas that you use in your C or C++ code affect optimizat
 
 - [register Keyword](../cpp/storage-classes-cpp.md#register)
 
-## See Also
+## See also
 
 [Optimizing Your Code](optimizing-your-code.md)

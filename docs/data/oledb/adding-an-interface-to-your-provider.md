@@ -1,10 +1,13 @@
 ---
 title: "Adding an Interface to Your Provider"
-ms.date: "10/29/2018"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB provider templates, object interfaces"]
 ms.assetid: b0fc7cf8-428a-4584-9d64-ce9074d0eb66
 ---
 # Adding an Interface to Your Provider
+
+> [!NOTE]
+> The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 Determine which object you want to add the interface to (usually data source, rowset, command, or session objects created by the **OLE DB Provider Wizard**). It's possible that the object you need to add the interface to is one that your provider doesn't currently support. In that case, run the **ATL OLE DB Provider Wizard** to create the object. Right-click the project in **Class View**, click **Add** > **New Item** from the menu, select **Installed** > **Visual C++** > **ATL**, and then click **ATL OLEDB Provider**. You might want to put the interface code in a separate directory and then copy the files to your provider project.
 
@@ -34,6 +37,6 @@ BEGIN_COM_MAP(CCustomRowset)
 END_COM_MAP()
 ```
 
-## See Also
+## See also
 
 [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

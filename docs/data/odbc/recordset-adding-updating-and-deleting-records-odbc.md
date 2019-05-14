@@ -178,7 +178,7 @@ rsStudent.MoveNext( );
 
 For more information about the effects of the `AddNew`, `Edit`, and `Delete` member functions, see [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Locking Records (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

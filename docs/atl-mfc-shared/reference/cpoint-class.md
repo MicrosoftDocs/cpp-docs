@@ -329,7 +329,7 @@ Use the unary operator to negate a point. For example, using the unary operator 
 
 ## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [POINT Structure](/windows/desktop/api/windef/ns-windef-tagpoint)<br/>
 [CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>

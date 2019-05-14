@@ -25,6 +25,6 @@ In an MFC application, use [AfxFreeLibrary](../mfc/reference/application-informa
 
 ## See also
 
-[DLLs in Visual C++](dlls-in-visual-cpp.md)<br/>
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)<br/>
 [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
 [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

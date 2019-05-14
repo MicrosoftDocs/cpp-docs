@@ -1,6 +1,6 @@
 ---
 title: "runtime_exception Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["runtime_exception", "AMPRT/runtime_exception", "AMPRT/Concurrency::runtime_exception", "AMPRT/Concurrency::runtime_exception::get_error_code"]
 helpviewer_keywords: ["runtime_exception class"]
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
@@ -28,7 +28,7 @@ class runtime_exception : public std::exception;
 
 |Name|Description|
 |----------|-----------------|
-|[get_error_code](#runtime_exception__get_error_code)|Returns the error code that caused the exception.|
+|[get_error_code](#get_error_code)|Returns the error code that caused the exception.|
 
 ### Public Operators
 
@@ -48,7 +48,7 @@ class runtime_exception : public std::exception;
 
 **Namespace:** Concurrency
 
-## <a name="runtime_exception__ctor"></a>  runtime_exception Constructor
+## <a name="ctor"></a>  runtime_exception Constructor
 
 Initializes a new instance of the class.
 
@@ -91,7 +91,7 @@ Destroys the object.
 virtual ~runtime_exception() throw();
 ```
 
-## <a name="runtime_exception__get_error_code"></a>  get_error_code
+## get_error_code
 
 Returns the error code that caused the exception.
 
@@ -105,7 +105,7 @@ HRESULT get_error_code() const throw();
 
 The HRESULT of error that caused the exception.
 
-## <a name="runtime_exception__operator_eq"></a>  operator=
+## <a name="operator_eq"></a>  operator=
   Copies the contents of the specified `runtime_exception` object into this one.
 
 ### Syntax

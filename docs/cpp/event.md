@@ -52,7 +52,7 @@ See [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md) for s
 
 COM events are interfaces. The parameters of a method in an event source interface should be *in* parameters (but this is not rigorously enforced), because an *out* parameter is not useful when multicasting. A level 1 warning will be issued if you use an *out* parameter.
 
-The return type is typically HRESULT or **void**, but can be any integral type, including **enum**. When an event uses an integral return type and an event handler returns a nonzero value, it is an error condition, in which case the event being raised aborts calls to the other delegates. Note that the compiler will automatically mark an event source interface as a [source](../windows/source-cpp.md) in the generated IDL.
+The return type is typically HRESULT or **void**, but can be any integral type, including **enum**. When an event uses an integral return type and an event handler returns a nonzero value, it is an error condition, in which case the event being raised aborts calls to the other delegates. Note that the compiler will automatically mark an event source interface as a [source](../windows/attributes/source-cpp.md) in the generated IDL.
 
 The [__interface](../cpp/interface.md) keyword is always required after **__event** for a COM event source.
 
@@ -65,7 +65,7 @@ See [Event Handling in COM](../cpp/event-handling-in-com.md) for sample code.
 
 ## Managed Events
 
-For information on coding events in the new syntax, see [event](../windows/event-cpp-component-extensions.md).
+For information on coding events in the new syntax, see [event](../extensions/event-cpp-component-extensions.md).
 
 Managed events are data members or methods. When used with an event, the return type of a delegate must be compliant with the [Common Language Specification](/dotnet/standard/language-independence-and-language-independent-components). The return type of the event handler must match the return type of the delegate. For more information on delegates, see [Delegates and Events](../dotnet/delegates-and-events.md). If a managed event is a data member, its type must be a pointer to a delegate.
 
@@ -121,8 +121,8 @@ public:
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
 [Event Handling](../cpp/event-handling.md)<br/>
-[event_source](../windows/event-source.md)<br/>
-[event_receiver](../windows/event-receiver.md)<br/>
+[event_source](../windows/attributes/event-source.md)<br/>
+[event_receiver](../windows/attributes/event-receiver.md)<br/>
 [__hook](../cpp/hook.md)<br/>
 [__unhook](../cpp/unhook.md)<br/>
 [__raise](../cpp/raise.md)

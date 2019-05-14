@@ -1447,7 +1447,7 @@ This member function has no effect on a combo box created with the [CBS_SIMPLE](
 
 ## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

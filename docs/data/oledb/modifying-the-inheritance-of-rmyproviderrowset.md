@@ -43,6 +43,6 @@ class CCustomRowset : public CMyRowsetImpl<CCustomRowset, CCustomWindowsFile, CC
 
 When this is done, you can [dynamically determine columns returned to the consumer](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
 
-## See Also
+## See also
 
 [Enhancing the Simple Read-Only Provider](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

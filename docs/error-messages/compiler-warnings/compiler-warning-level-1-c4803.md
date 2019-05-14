@@ -11,7 +11,7 @@ ms.assetid: 2552f3a6-c418-49f4-98a2-a929857be658
 
 Event methods must have the same storage class as the event declaration. The compiler adjusts the event's methods so that the storage classes are the same.
 
-This warning can occur if you have a class that implements an event from an interface. The compiler does not implicitly generate a raise method for an event in an interface. When you implement that interface in a class, the compiler does implicitly generate a raise method and that method will not be virtual, hence the warning. For more information on events, see [event](../../windows/event-cpp-component-extensions.md).
+This warning can occur if you have a class that implements an event from an interface. The compiler does not implicitly generate a raise method for an event in an interface. When you implement that interface in a class, the compiler does implicitly generate a raise method and that method will not be virtual, hence the warning. For more information on events, see [event](../../extensions/event-cpp-component-extensions.md).
 
 See [warning](../../preprocessor/warning.md) pragma for information on how to turn a warning off.
 

@@ -7,6 +7,9 @@ ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
 ---
 # BSCMAKE Options
 
+> [!WARNING]
+> Although BSCMAKE is still installed with Visual Studio, it is no longer used by the IDE. Since Visual Studio 2008, browse and symbol information is stored automatically in a SQL Server .sdf file in the solution folder.
+
 This section describes the options available for controlling BSCMAKE. Several options control the content of the browse information file by excluding or including certain information. The exclusion options can allow BSCMAKE to run faster and may result in a smaller .bsc file. Option names are case sensitive (except for **/HELP** and **/NOLOGO**).
 
 Only **/NOLOGO** and **/o** are available from within the Visual Studio development environment.  See [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md) for information on access a project's property pages.

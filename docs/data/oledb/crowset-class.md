@@ -294,7 +294,7 @@ A standard HRESULT.
 
 ### Remarks
 
-For an example of how to use this function, see the [MultiRead sample](../../visual-cpp-samples.md).
+For an example of how to use this function, see the [MultiRead sample](../../overview/visual-cpp-samples.md).
 
 ## <a name="getoriginaldata"></a> CRowset::GetOriginalData
 
@@ -695,10 +695,10 @@ This method requires the optional interface `IRowsetUpdate`, which might not be 
 
 A standard HRESULT.
 
-## See Also
+## See also
 
-[DBViewer Sample](../../visual-cpp-samples.md)<br/>
-[MultiRead Sample](../../visual-cpp-samples.md)<br/>
-[MultiRead Attributes Sample](../../visual-cpp-samples.md)<br/>
+[DBViewer Sample](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead Sample](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead Attributes Sample](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

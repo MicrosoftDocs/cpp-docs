@@ -44,7 +44,7 @@ To use a property sheet in your application, complete the following steps:
 
 1. Exchange data between property pages and the owner of the property sheet. This is explained in the article [Exchanging Data](../mfc/exchanging-data.md).
 
-For an example of how to use property sheets, see the MFC General sample [PROPDLG](../visual-cpp-samples.md).
+For an example of how to use property sheets, see the MFC General sample [PROPDLG](../overview/visual-cpp-samples.md).
 
 ## See also
 
