@@ -420,7 +420,7 @@ ms.author: "mblome"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/Microsoft/cpprestsdk">
+                                <a href="/cpp/overview/cloud-and-web-development-cpp.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -430,8 +430,8 @@ ms.author: "mblome"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Networking Libraries</h3>
-                                                    <p>C++ REST SDK (code named Casablanca) open-source library for web programming.</p>
+                                                    <h3>Cloud and Networking Libraries</h3>
+                                                    <p>Use the Microsoft Azure C/C++ SDKs for IoT, storage, and more, and the C++ REST SDK open-source library for web programming.</p>
                                                 </div>
                                             </div>
                                         </div>
