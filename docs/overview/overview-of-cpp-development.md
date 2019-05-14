@@ -8,17 +8,17 @@ ms.author: "corob"
 ---
 # Overview of C++ development in Visual Studio
 
-As part of the Visual Studio Integrated Development Environment (IDE), Microsoft C++ (MSVC) shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the code editor, and the debugger, are documented under [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or JavaScript. A few windows or tools are only available in Visual Studio Professional or Visual Studio Enterprise editions.
+As part of the Visual Studio Integrated Development Environment (IDE), Microsoft C++ (MSVC) shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the code editor, and the debugger, are documented under [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for other languages. A few windows or tools are only available in Visual Studio Professional or Visual Studio Enterprise editions.
 
 In addition to shared tools in the Visual Studio IDE, MSVC has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md).
 
 ## Create projects
 
-A *project* is basically a set of source code files and resources such as images or data files that are built into an executable file.
+A *project* is basically a set of source code files and resources such as images or data files that are built into an executable program or library.
 
-Visual Studio provides support for any build system or custom build tools that you wish to use, with full support for IntelliSense, browsing and debugging:
+Visual Studio provides support for any project system or custom build tools that you wish to use, with full support for IntelliSense, browsing and debugging:
 
-- **MSBuild** is the native build system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
+- **MSBuild** is the native project system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
 
 ::: moniker range="vs-2019"
 
@@ -32,9 +32,10 @@ Visual Studio provides support for any build system or custom build tools that y
 
 ::: moniker-end
 
-   In general, you should use these templates for new projects unless you have a specific reason to use CMake or another project system. Some projects have a *wizard* that guides you step-by-step through the process of creating a new project. For more information, see [Creating and managing MSBuild-based projects](../build/creating-and-managing-visual-cpp-projects.md).
+   In general, you should use these templates for new projects unless you are using CMake or another project system. For more information, see [Creating and managing MSBuild-based projects](../build/creating-and-managing-visual-cpp-projects.md).
 
 - **CMake** is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop development with C++ workload. For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md).
+
 - Any other C++ build system, including a loose collection of files, is supported via the **Open Folder** feature. You create simple JSON files to invoke your build program and configure debugging sessions. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md).
 
 ## Add to source control
@@ -71,9 +72,7 @@ After you create a project, all the project files are displayed in the **Solutio
 
 ![Solution Explorer and code editor](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Solution Explorer and code editor")
 
-The code editor is a specialized word processor for C++ source code. It color-codes language keywords, method and variable names, and other elements of your code to make the code more readable and easier to understand.
-
-For more information, see [Writing and refactoring code](../ide/writing-and-refactoring-code-cpp.md).
+The code editor is a specialized word processor for C++ source code. It color-codes language keywords, method and variable names, and other elements of your code to make the code more readable and easier to understand. It also provides tools for refactoring code, navigating between different files, and understanding how the code is structured. For more information, see [Writing and refactoring code](../ide/writing-and-refactoring-code-cpp.md).
 
 ## Add and edit resources
 
@@ -87,7 +86,7 @@ Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
 
-For more information about MSBuild configurations, see [Working with Project Properties](../build/working-with-project-properties.md) and [Projects and build systems](../build/projects-and-build-systems-cpp.md).
+For more information about configuring builds, see [Working with Project Properties](../build/working-with-project-properties.md) and [Projects and build systems](../build/projects-and-build-systems-cpp.md).
 
 You can also use the compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
@@ -101,7 +100,7 @@ For more information, see [Debugging in Visual Studio](/visualstudio/debugger/de
 
 ## Test
 
-Visual Studio includes unit test frameworks for both native C++ and C++/CLI. Boost.Test, Google Test, and CTest are also supported. Run your tests from the **Test Explorer** window:
+Visual Studio includes the Microsoft Unit Test Framework for C++, as well as support for Boost.Test, Google Test, and CTest. Run your tests from the **Test Explorer** window:
 
 ![Test Explorer](media/cpp-test-explorer-passed.png "Visual Studio 2017 Test Explorer")
 
