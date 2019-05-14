@@ -1,10 +1,10 @@
 ---
-title: "ATL Registrar and Backus Nauer Form (BNF) Syntax"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["BNF notation", "Backus Nauer Form (BNF) syntax"]
+title: "ATL Registrar and Backus-Naur form (BNF) syntax"
+ms.date: "05/14/2019"
+helpviewer_keywords: ["BNF notation", "Backus-Naur form (BNF) syntax"]
 ms.assetid: 994bbef0-9077-4aa8-bdfe-b7e830af9acc
 ---
-# Understanding Backus Nauer Form (BNF) Syntax
+# Understanding Backus-Naur form (BNF) syntax
 
 The scripts used by the ATL Registrar are described in this topic using BNF syntax, which uses the notation shown in the following table.
 
@@ -13,7 +13,7 @@ The scripts used by the ATL Registrar are described in this topic using BNF synt
 |::=|Equivalent|
 |&#124;|OR|
 |X+|One or more Xs.|
-|[X]|X is optional. Optional delimiters are denoted by \[].|
+|\[X]|X is optional. Optional delimiters are denoted by \[].|
 |Any **bold** text|A string literal.|
 |Any *italicized* text|How to construct the string literal.|
 
