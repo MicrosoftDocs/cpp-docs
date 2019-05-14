@@ -12,7 +12,7 @@ This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Use this page of the ATL COM+ 1.0 Component Wizard to specify interface type and additional interfaces to be supported.
 

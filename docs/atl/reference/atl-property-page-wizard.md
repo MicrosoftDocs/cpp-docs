@@ -13,7 +13,7 @@ This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 This wizard [adds a property page into an ATL project](../../atl/reference/adding-an-atl-property-page.md) or to an MFC project with ATL support. An ATL property page provides a user interface for setting the properties (or calling the methods) of one or more COM objects.
 
