@@ -7,7 +7,7 @@ ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
 
 In C++, you have several options for connecting to the web and the cloud.
 
-## Cloud programming options
+## Microsoft Azure SDKs and REST services
 
 - [Microsoft Azure Storage Client Library for C++](https://azure.github.io/azure-storage-cpp/)
 
@@ -24,6 +24,8 @@ In C++, you have several options for connecting to the web and the cloud.
 - [OneDrive and SharePoint in Microsoft Graph](https://dev.onedrive.com/README.htm)
 
   The OneDrive API provides a set of HTTP services to connect your application to files and folders in Office 365 and SharePoint Server 2016.
+
+## Windows and cross-platform networking APIs
 
 - [C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk)
 
